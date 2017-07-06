@@ -1,0 +1,14 @@
+<div class="paging-nav pull-right">
+    {% if page.nav_prev %}
+        <a href="{{page.nav_prev}}" rel="prev">
+            <span class="back-ico">&nbsp;</span>
+            Prev
+        </a>
+    {% endif %}
+    {% if page.nav_next %}
+        <a href="{{page.nav_next}}" rel="next">
+            Next
+            <span class="forward-ico">&nbsp;</span>
+        </a>
+    {% endif %}
+</div>

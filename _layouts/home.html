@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+
+    <link rel="shortcut icon" href="//d563vzkt1q0lu.cloudfront.net/images/favicon.ico">
+		<link rel="stylesheet" href="/css/syntax.css">
+		<link rel="stylesheet" href="/css/main.css?v=2013-09-24">
+
+		<title>{{ site.title }}</title>
+	</head>
+
+	<body class="{{ page.bodyclass }} {{ page.template }}">
+		<div class="is-loading"></div>
+		{% include top_nav_bar.html %}
+
+		<main role="main">
+			{{ content }}
+		</main>
+
+		{% include footer.html %}
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script>window.jQuery || alert('jquery not loaded from CDN')</script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
+		<script src="/js/plugins.js?buster=1"></script>
+		<script src="/js/base.js?buster=2"></script>
+		<script>
+			CB.help.init();
+
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-25691976-6', 'cloud66.com');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>

@@ -5,20 +5,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Cloud 66 Title
+title: Help | Cloud 66
 email: support@cloud66.com
-description: > # this means to ignore newlines until "baseurl:"
-  Cloud 66 Product Support and Knowledgebase.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: cloud66
-github_username:  cloud66
-
 permalink: /:categories/:title.html
+
 collections:
-  documents:
+  rails:
     output: true
-    permalink: /:categories/:name
+    permalink: /:collection/:categories/:name
+    icon: foundicon-idea
 
 # Build settings
 markdown: kramdown
