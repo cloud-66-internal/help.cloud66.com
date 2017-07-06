@@ -1,0 +1,57 @@
+/*****************************************************************************/
+/*
+/* Code
+/*
+/*****************************************************************************/
+
+.article p > code,
+.article p > kbd {
+  background-color: #F7F7F7 !important;
+  color: #000;
+  font-size: 1.6rem !important;
+  border: none;
+  padding: 3px;
+}
+
+/* standard */
+.article pre {
+  font-size: 1.4rem;
+  color: #fff;
+  border: 1px solid #ddd;
+  background-color: #333;
+  padding: 0.3em;
+
+  em {
+    color: #fff;
+  }
+  code {
+    background: transparent;
+  }
+}
+
+.article code {
+  font-size: 1.4rem;
+  color: #fff;
+  border: 1px solid #ddd;
+  background-color: #333;
+  // padding: 0.25em;
+  border-radius: 1px;
+}
+
+.article pre code {
+  border: none;
+}
+
+/* terminal */
+.article pre.terminal,
+.article .highlight pre {
+  overflow: hidden;
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+  padding: 0.4em 0.8em;
+}
+
+.article code {
+  background-color: #333;
+}

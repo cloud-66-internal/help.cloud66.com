@@ -14,11 +14,19 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: cloud66
 github_username:  cloud66
 
+permalink: /:categories/:title.html
+collections:
+  documents:
+    output: true
+    permalink: /:categories/:name
+
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
+
+sass:
+    style:  compressed  # nested|expanded|compact|compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -1,0 +1,91 @@
+/* ===========================================================================================
+ *  FORM ELEMENTS
+ * ============================================================================================ */
+/*
+ *  Fields
+ * --------------------------------------------------------- */
+[type="text"],
+[type="search"] {
+    border: 1px solid #ddd;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+[type="search"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+}
+[type="search"]:focus {
+    outline: none;
+}
+
+
+/*
+ *  Big Inputs!!
+ * --------------------------------------------------------- */
+.search-pri-box {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #aaa;
+
+    .btn-img {
+        position: relative;
+        top: 2px;
+    }
+}
+.input-pri {
+    width: 90%;
+    border: none;
+    font-size: 2.6rem;
+    color: #333;
+    font-weight: bold;
+    padding: 6px;
+}
+.input-pri:focus {
+    outline: none;
+}
+
+/*
+ *  Buttons
+ * --------------------------------------------------------- */
+.btn-img {
+    border: none;
+    background: none;
+    img {
+        display: inline-block;
+    }
+}
+
+/*
+ *  Navbar search
+ * --------------------------------------------------------- */
+ .header-nav-bar {
+    form {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+ .home .top-search,
+ .notfound .top-search { opacity: 0 }
+
+.top-search {
+    border: 1px solid #D1D1D1;
+    padding: 4px 2px;
+    font-size: 1.7rem;
+    width: 192px;
+
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.top-search:focus {
+    border-color: #aaa;
+    width: 342px;
+}
+
+

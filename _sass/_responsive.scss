@@ -1,0 +1,46 @@
+/*
+ *  Handheld devices
+ *  Very minimal rules for handheld devices
+ * --------------------------------------------------------- */
+
+@media ( max-width: 600px ) {
+
+   html {
+    font-size: 52.5%;
+  }
+  .heros a {
+    display: block;
+    margin: 1.8em auto !important;
+    display: none !important;
+  }
+  .search-pri {
+    margin-top: 0 !important;
+  }
+  .container,
+  .crumbs {
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+  }
+  .crumbs  a {
+    padding-left: 1.2em;
+  }
+  .paging-nav a {
+    border-right: none;
+  }
+  .global-nav {
+    display: none !important
+  }
+  .search-pri-box .btn-img  {
+    display: none !important
+  }
+  .lead {
+    font-size: 2.3rem !important;
+    line-height: 28px !important;
+  }
+
+  .back-ico,
+  .forward-ico {
+    display: none !important;
+  }
+
+}

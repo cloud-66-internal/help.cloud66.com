@@ -1,0 +1,31 @@
+/*
+ *  Modules
+ * --------------------------------------------------------- */
+.notice {
+  border-top: 1px solid #e2eaee;
+  border-bottom: 1px solid #e2eaee;
+  background: rgba( 209, 228, 240, 0.3 );
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  margin-left: -12px;
+
+  p:nth-child(2) {
+    margin-top: -0.4em;
+  }
+}
+
+.notice.notice-danger {
+  color: #BC9DD1;
+  background: #FCF2F2 !important;
+  border-top: 1px solid #DFB5B4;
+  border-bottom: 1px solid #DFB5B4;
+
+  .error {
+    background: transparent;
+  }
+}
+.notice.notice-warning {
+  background: #FEFBED !important;
+  border-top: 1px solid #EFE1A7;
+  border-bottom: 1px solid #EFE1A7;
+}

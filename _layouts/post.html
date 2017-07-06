@@ -1,0 +1,104 @@
+---
+layout: default
+bodyclass: post
+---
+
+{% assign current_cat = page.categories %}
+
+<nav class="crumbs container">
+    {% include contents_link.html %}
+    <a rel="home" href="/">
+        <img src="//cdn.cloud66.com/images/logo.svg" alt="Cloud 66" width="40" class="pull-right logo-sml">
+    </a>
+</nav>
+
+<article class="article container">
+
+    <h1 class="article-title">
+        {{ page.title }}
+    </h1>
+
+
+    <p class="lead">
+        {{ page.lead }}
+    </p>
+
+
+    {% if page.legacy %}
+    This is a legacy page
+    {% endif %}
+    {% if page.tags.size > 0 %}
+    <div class="tag-header">
+        This page applies to the following products:
+    </div>
+    <div class="tags">
+        {% for tag in page.tags %}
+            {% if tag contains "product:" %}
+            {% assign parts = tag | split: ":" %}
+            <span class="tag">{{ parts[1] }}</span>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="content-pri">
+        {{ content }}
+    </div>
+
+    <aside class="content-sec  {% if page.nav_sticky %} sticky-nav {% endif %}">
+		{% if page.contents != "false" %}
+		<div class="side-module">
+            <nav class="aside-mod">
+                <h3 class="side-title js-format-cat">
+                    {{ current_cat }}
+                </h3>
+                <ul class="nav-sec">
+                    {% for post in site.categories[current_cat.first] %}
+                        <li>
+                            <a href="{{post.url}}">
+                                {{ post.title }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+		{% endif %}
+        {% if page.so_title %}
+            <div class="side-module">
+                <h3 class="side-title js-format-cat">StackOverflow</h3>
+                <p>
+                    <a href="http://stackoverflow.com/questions/tagged/cloud66+{{page.so_title | downcase}}" target="_blank">
+                        Questions on <b>{{page.so_title}}</b> and Cloud 66
+                    </a>
+                </p>
+            </div>
+        {% endif %}<br/>
+		<aside class="content-sec  {% if page.cloud66_sticky %} sticky-nav {% endif %}">
+		{% if page.cloud66_text %}
+		<div class="side-module">
+			<a href="http://www.cloud66.com/?utm_source=help&utm_medium=web&utm_campaign=help-nav" class="cta">
+			<img src="http://cdn.cloud66.com/images/logo.svg" width="60" style="display:block;margin:0 auto">
+			<div style="text-align:center; line-height:1.8; margin-top:8px">
+				<b>{{page.cloud66_text}} &#10141;</b>
+			</div></a>
+		</div>
+		{% endif %}
+		</aside>
+    </aside>
+
+</article>
+
+
+<div class="crumbs crumbs-bottom container">
+    <nav class="nav-footer">
+    {% include contents_link.html %}
+
+    {% if page.nav %}
+        {% include paging_link.html %}
+    {% endif %}
+    </nav>
+</div>
+
+
+

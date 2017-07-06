@@ -1,0 +1,18 @@
+/* ===========================================================================================
+ *  BASE
+ * ============================================================================================ */
+
+html {
+  font-size: 62.5%;
+  background : $bodycolor;
+  color: $textcolor;
+  overflow-y: scroll;
+  min-height: 100%;
+}
+
+body {
+  font-size:   $base-font-size;
+  font-family: $fontfamily;
+  line-height: $base-line-height;
+}
+
