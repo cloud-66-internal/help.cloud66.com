@@ -24,23 +24,15 @@ bodyclass: post
     </p>
 
 
-    {% if page.legacy %}
-    This is a legacy page
-    {% endif %}
-    {% if page.tags.size > 0 %}
-    <div class="tag-header">
-        This page applies to the following products:
-    </div>
-    <div class="tags">
-        {% for tag in page.tags %}
-            {% if tag contains "product:" %}
-            {% assign parts = tag | split: ":" %}
-            <span class="tag">{{ parts[1] }}</span>
-            {% endif %}
-        {% endfor %}
-    </div>
-    {% endif %}
 
+    <div class="content-pri">
+        {% if page.legacy %}
+        <div class="notice notice-warning">
+            <h3>Important Notice</h3>
+            <p>Contents of this page are for a legacy version of {{ page.collection | capitalize }}</p>
+        </div>
+        {% endif %}
+    </div>
     <div class="content-pri">
         {{ content }}
     </div>
