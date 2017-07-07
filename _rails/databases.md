@@ -11,3 +11,4 @@ permalink: /:collection/:categories/index.html
 Cloud 66 for Rails, supports the following databases:
 
 - [MySQL](mysql.html) 
+- [PostgreSQL](postgres.html)
