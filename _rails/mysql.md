@@ -8,3 +8,5 @@ legacy: false
 ---
 
 {% include databases/mysql.md product="Rails" %}
+
+![Test Images](/assets/test.png)
