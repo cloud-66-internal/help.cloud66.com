@@ -14,7 +14,7 @@ RUN gem install bundler
 RUN bundle config --global frozen 1
 RUN bundle install --without development test
 
-COPY . /usr/src/app
+COPY . /app
 
 ENV DEBIAN_FRONTEND teletype
 
