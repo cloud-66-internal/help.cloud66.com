@@ -17,5 +17,3 @@ RUN bundle install --without development test
 COPY . /app
 
 ENV DEBIAN_FRONTEND teletype
-
-CMD ['jekyll serve']
