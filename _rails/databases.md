@@ -8,7 +8,7 @@ legacy: true
 permalink: /:collection/:categories/index.html
 ---
 
-Cloud 66 for Rails, supports the following databases:
+Cloud 66 for {{ include.product }}, supports the following databases:
 
 - [MySQL](mysql.html) 
 - [PostgreSQL](postgres.html)

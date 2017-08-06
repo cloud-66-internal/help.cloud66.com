@@ -5,16 +5,38 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
+# Jekyl configs
+
 title: Help | Cloud 66
 email: support@cloud66.com
 permalink: /:categories/:title.html
 
 collections:
+  general:
+    output: true
+    permalink: /:collection/:categories/:name
+    icon: foundicon-idea
+  legacy_docker:
+    output: true
+    permalink: /:collection/:categories/:name
+    icon: foundicon-idea
+  maestro:
+    output: true
+    permalink: /:collection/:categories/:name
+    icon: foundicon-idea
+  node:
+    output: true
+    permalink: /:collection/:categories/:name
+    icon: foundicon-idea
   rails:
     output: true
     permalink: /:collection/:categories/:name
     icon: foundicon-idea
-
+  skycap:
+      output: true
+      permalink: /:collection/:categories/:name
+      icon: foundicon-idea
 # Build settings
 markdown: kramdown
 
@@ -32,3 +54,5 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# theme: jekyll-theme-cayman
