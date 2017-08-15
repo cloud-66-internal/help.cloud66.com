@@ -1,0 +1,20 @@
+### Deployment hooks
+
+You can use [deploy hooks](http://help.cloud66.com/deployment/deploy-hooks) to execute your rake task at any point of your deployment.
+
+Simply add a bash script to your stack that contains the rake task: for example, create the file `/.cloud66/scripts/rake_task.sh` as below:
+
+
+
+{%include _inlines/path_to_code %}
+
+
+
+Then, add a deploy&#95;hook to execute the above script on each deploy: create the file `.cloud66/deploy_hooks.yml` as below:
+
+
+
+{%include _inlines/path_to_code %}
+
+
+

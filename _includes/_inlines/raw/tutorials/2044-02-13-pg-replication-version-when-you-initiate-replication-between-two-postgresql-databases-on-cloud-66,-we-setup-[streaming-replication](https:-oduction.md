@@ -1,0 +1,8 @@
+---
+layout: code
+---
+
+production:
+    postgresql:
+        configuration:
+            version: 9.3.6

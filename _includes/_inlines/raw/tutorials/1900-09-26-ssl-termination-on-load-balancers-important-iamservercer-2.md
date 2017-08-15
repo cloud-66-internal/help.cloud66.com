@@ -1,0 +1,5 @@
+---
+layout: code
+---
+
+$ iam-servercertlistbypathx

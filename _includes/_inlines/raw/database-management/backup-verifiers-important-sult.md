@@ -1,0 +1,7 @@
+---
+layout: code
+---
+
+result
+--------
+t
