@@ -7,32 +7,34 @@
  * --------------------------------------------------------- */
 .heros {
 
-    margin-top: 48px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 
     a {
-        width: 8.5em;
         display: inline-block;
-        margin-right: 1.4em;
         outline: none;
-
+        width: 200px;
+        height: 150px;
+        border: 1px solid blue;
+        border-radius: 50px;
         &:hover {
             text-decoration: none;
         }
-
         &:last-child {
             margin-right: 0;
+            margin-top: 10px;
         }
-
         i {
             font-size: 3rem;
-            color: #246EBB;
+            color: blue;
         }
-
         .hero-title {
             margin: 0;
             line-height: 1.6;
-            font-weight: 400;
-            font-size: 1.5rem;
+            font-weight: 900;
+            font-size: 2rem;
+            margin-top: 50px;
+
         }
     }
 }
