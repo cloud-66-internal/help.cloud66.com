@@ -1,4 +1,4 @@
-<!-- post: proc-files_how-to-run-background-processes -->
+<!-- layout:code post: proc-files_how-to-run-background-processes -->
 
 
 worker: rake resque:work QUEUE=*

@@ -1,4 +1,4 @@
-<!-- post: stacks_examples -->
+<!-- layout:code post: stacks_examples -->
 
 
 $ cx stacks list -e staging

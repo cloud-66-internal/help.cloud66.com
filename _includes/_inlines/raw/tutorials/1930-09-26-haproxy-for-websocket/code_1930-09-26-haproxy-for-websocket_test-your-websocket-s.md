@@ -1,4 +1,4 @@
-<!-- post: 1930-09-26-haproxy-for-websocket_test-your-websocket-server -->
+<!-- layout:code post: 1930-09-26-haproxy-for-websocket_test-your-websocket-server -->
 
 
 &lt;html&gt;

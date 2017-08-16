@@ -1,3 +1,3 @@
-<!-- post: env-vars_using-environment-variables -->
+<!-- layout:code post: env-vars_using-environment-variables -->
 
 $ENV_VAR

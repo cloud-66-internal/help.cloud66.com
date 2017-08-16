@@ -1,4 +1,4 @@
-<!-- post: building-a-manifest-file_haproxy -->
+<!-- layout:code post: building-a-manifest-file_haproxy -->
 
 
 production:

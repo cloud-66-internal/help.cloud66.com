@@ -1,4 +1,4 @@
-<!-- post: building-your-service_image -->
+<!-- layout:code post: building-your-service_image -->
 
 
 services:

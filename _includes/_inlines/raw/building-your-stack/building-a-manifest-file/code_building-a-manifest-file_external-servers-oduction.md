@@ -1,4 +1,4 @@
-<!-- post: building-a-manifest-file_external-servers -->
+<!-- layout:code post: building-a-manifest-file_external-servers -->
 
 
 production:

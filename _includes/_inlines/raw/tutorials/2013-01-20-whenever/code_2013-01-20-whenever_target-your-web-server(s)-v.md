@@ -1,4 +1,4 @@
-<!-- post: 2013-01-20-whenever_target-your-web-server(s) -->
+<!-- layout:code post: 2013-01-20-whenever_target-your-web-server(s) -->
 
 
 env :PATH, ENV['PATH']

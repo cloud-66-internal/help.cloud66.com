@@ -1,4 +1,4 @@
-<!-- post: building-a-manifest-file_specify-additional-livelog-files -->
+<!-- layout:code post: building-a-manifest-file_specify-additional-livelog-files -->
 
 
 production:

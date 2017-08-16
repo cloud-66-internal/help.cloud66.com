@@ -1,4 +1,4 @@
-<!-- post: services_result -->
+<!-- layout:code post: services_result -->
 
 
 NAME             VALUE

@@ -1,4 +1,4 @@
-<!-- post: building-a-manifest-file_note -->
+<!-- layout:code post: building-a-manifest-file_note -->
 
 
 production:

@@ -1,4 +1,4 @@
-<!-- post: 2013-01-20-whenever_target-all-servers -->
+<!-- layout:code post: 2013-01-20-whenever_target-all-servers -->
 
 
 env :PATH, ENV['PATH']

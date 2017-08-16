@@ -1,4 +1,4 @@
-<!-- post: getting-started-with-manifest-files_third-level-(1):-config -->
+<!-- layout:code post: getting-started-with-manifest-files_third-level-(1):-config -->
 
 
 production:

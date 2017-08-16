@@ -1,5 +1,4 @@
-<!-- layout: code
-post: buildgrid-settings_user-settings.md -->
+<!-- layout:code post: buildgrid-settings_user-settings.md -->
 
 docker login registry.buildgrid.cx
 > enter username

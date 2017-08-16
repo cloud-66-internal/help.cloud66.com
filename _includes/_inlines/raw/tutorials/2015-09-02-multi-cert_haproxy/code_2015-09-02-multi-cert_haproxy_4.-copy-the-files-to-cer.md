@@ -1,4 +1,4 @@
-<!-- post: 2015-09-02-multi-cert_haproxy_4.-copy-the-files-to-certific -->
+<!-- layout:code post: 2015-09-02-multi-cert_haproxy_4.-copy-the-files-to-certific -->
 
 
 sudo cp /tmp/websitename1.pem /etc/ssl/private/websitename1.pem

@@ -1,4 +1,4 @@
-<!-- post: jobs_examples -->
+<!-- layout:code post: jobs_examples -->
 
 
 $ cx job run -s "My Awesome App" my_job

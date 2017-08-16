@@ -1,4 +1,4 @@
-<!-- post: building-your-service_dockerfile-path -->
+<!-- layout:code post: building-your-service_dockerfile-path -->
 
 
 services:

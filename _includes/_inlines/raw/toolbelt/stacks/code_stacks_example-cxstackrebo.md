@@ -1,4 +1,4 @@
-<!-- post: stacks_example -->
+<!-- layout:code post: stacks_example -->
 
 
 $ cx stack reboot -s mystack

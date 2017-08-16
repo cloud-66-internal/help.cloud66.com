@@ -1,4 +1,4 @@
-<!-- post: building-your-service_git-url -->
+<!-- layout:code post: building-your-service_git-url -->
 
 
 services:

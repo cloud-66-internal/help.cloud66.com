@@ -1,4 +1,4 @@
-<!-- post: asset-pipeline_manifest.yml -->
+<!-- layout:code post: asset-pipeline_manifest.yml -->
 
 
 development:

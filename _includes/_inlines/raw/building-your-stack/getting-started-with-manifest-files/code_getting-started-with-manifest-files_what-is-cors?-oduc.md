@@ -1,4 +1,4 @@
-<!-- post: getting-started-with-manifest-files_what-is-cors? -->
+<!-- layout:code post: getting-started-with-manifest-files_what-is-cors? -->
 
 
 production:

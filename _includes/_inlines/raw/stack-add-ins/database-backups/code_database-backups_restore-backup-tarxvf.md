@@ -1,4 +1,4 @@
-<!-- post: database-backups_restore-backup -->
+<!-- layout:code post: database-backups_restore-backup -->
 
 
 $ tar -xvf 

@@ -1,4 +1,4 @@
-<!-- post: easydeploys_usage -->
+<!-- layout:code post: easydeploys_usage -->
 
 
 $ cx easydeploys list

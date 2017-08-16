@@ -1,5 +1,4 @@
-<!-- layout: code
-post: buildgrid-settings_account-settings-.md -->
+<!-- layout:code post: buildgrid-settings_account-settings-.md -->
 ```
 registry.buildgrid.cx/fantastic/my-stack-prod.my-service:latest
 registry.buildgrid.cx/fantastic/my-stack-prod.web1:latest

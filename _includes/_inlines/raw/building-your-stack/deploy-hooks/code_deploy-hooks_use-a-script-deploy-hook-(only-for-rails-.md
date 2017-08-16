@@ -1,4 +1,4 @@
-<!-- post: deploy-hooks_use-a-script-deploy-hook-(only-for-rails -->
+<!-- layout:code post: deploy-hooks_use-a-script-deploy-hook-(only-for-rails -->
 
 
 production: # Environment

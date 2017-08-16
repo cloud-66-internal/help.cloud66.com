@@ -1,4 +1,4 @@
-<!-- post: containers_example -->
+<!-- layout:code post: containers_example -->
 
 
 $ cx containers exec -s mystack 2844142cbf /bin/bash

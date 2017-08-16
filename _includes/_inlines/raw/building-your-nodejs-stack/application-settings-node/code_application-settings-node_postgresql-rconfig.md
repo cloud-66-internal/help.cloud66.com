@@ -1,4 +1,4 @@
-<!-- post: application-settings-node_postgresql -->
+<!-- layout:code post: application-settings-node_postgresql -->
 
 
 var config = {

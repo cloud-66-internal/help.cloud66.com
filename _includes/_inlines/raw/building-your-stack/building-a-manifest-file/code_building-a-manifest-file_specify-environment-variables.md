@@ -1,4 +1,4 @@
-<!-- post: building-a-manifest-file_specify-environment-variables -->
+<!-- layout:code post: building-a-manifest-file_specify-environment-variables -->
 
 
 production:

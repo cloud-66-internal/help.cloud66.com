@@ -1,4 +1,4 @@
-<!-- post: database-backup_mysql -->
+<!-- layout:code post: database-backup_mysql -->
 
 
 $ export $MYSQL_DB_APP_USERNAME=YOUR_MYSQL_DB_APP_USERNAME

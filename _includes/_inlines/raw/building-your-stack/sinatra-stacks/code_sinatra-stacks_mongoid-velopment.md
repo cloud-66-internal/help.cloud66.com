@@ -1,4 +1,4 @@
-<!-- post: sinatra-stacks_mongoid -->
+<!-- layout:code post: sinatra-stacks_mongoid -->
 
 
 development:

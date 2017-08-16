@@ -1,4 +1,4 @@
-<!-- post: building-a-manifest-file_memcached -->
+<!-- layout:code post: building-a-manifest-file_memcached -->
 
 
 production:

@@ -1,4 +1,4 @@
-<!-- post: services_example -->
+<!-- layout:code post: services_example -->
 
 
 $ cx services info -s mystack my_web_service

@@ -1,4 +1,4 @@
-<!-- post: building-a-manifest-file_processes -->
+<!-- layout:code post: building-a-manifest-file_processes -->
 
 
 production:

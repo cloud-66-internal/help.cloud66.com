@@ -1,4 +1,4 @@
-<!-- post: 2015-07-08-setting-up-custom-livelogs_depending-on-your-req -->
+<!-- layout:code post: 2015-07-08-setting-up-custom-livelogs_depending-on-your-req -->
 
 
 production:   

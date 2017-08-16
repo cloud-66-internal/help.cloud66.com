@@ -1,4 +1,4 @@
-<!-- post: add-ins-jobs_notation -->
+<!-- layout:code post: add-ins-jobs_notation -->
 
 
 cp $1 $2

@@ -1,4 +1,4 @@
-<!-- post: advanced-deploy_what-is-service-configuration? -->
+<!-- layout:code post: advanced-deploy_what-is-service-configuration? -->
 
 
 ---

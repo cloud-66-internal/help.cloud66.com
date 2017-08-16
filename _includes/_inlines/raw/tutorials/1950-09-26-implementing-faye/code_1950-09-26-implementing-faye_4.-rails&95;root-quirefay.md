@@ -1,4 +1,4 @@
-<!-- post: 1950-09-26-implementing-faye_4.-rails&95;root -->
+<!-- layout:code post: 1950-09-26-implementing-faye_4.-rails&95;root -->
 
 
 require 'faye'

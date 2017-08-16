@@ -1,4 +1,4 @@
-<!-- post: mongodb-replica-sets_configure-mongoid -->
+<!-- layout:code post: mongodb-replica-sets_configure-mongoid -->
 
 
 development:

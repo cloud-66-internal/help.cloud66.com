@@ -1,4 +1,4 @@
-<!-- post: deploy-hooks_use-a-snippet-deploy-hook -->
+<!-- layout:code post: deploy-hooks_use-a-snippet-deploy-hook -->
 
 
 production: # Environment

@@ -1,4 +1,4 @@
-<!-- post: scaling_docker-services -->
+<!-- layout:code post: scaling_docker-services -->
 
 
 services:

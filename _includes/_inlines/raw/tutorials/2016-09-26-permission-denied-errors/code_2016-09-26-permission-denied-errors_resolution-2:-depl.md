@@ -1,4 +1,4 @@
-<!-- post: 2016-09-26-permission-denied-errors_resolution-2:-deploy-ho -->
+<!-- layout:code post: 2016-09-26-permission-denied-errors_resolution-2:-deploy-ho -->
 
 
 production:

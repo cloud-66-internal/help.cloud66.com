@@ -1,4 +1,4 @@
-<!-- post: building-your-service_build-command -->
+<!-- layout:code post: building-your-service_build-command -->
 
 
 services:

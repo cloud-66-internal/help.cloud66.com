@@ -1,3 +1,3 @@
-<!-- post: logging_other -->
+<!-- layout:code post: logging_other -->
 
 /var/log

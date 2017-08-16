@@ -1,4 +1,4 @@
-<!-- post: padrino-stacks_mysql-yml -->
+<!-- layout:code post: padrino-stacks_mysql-yml -->
 
 
 production:

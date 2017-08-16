@@ -1,4 +1,4 @@
-<!-- post: deploy-hooks_use-a-command-deploy-hook -->
+<!-- layout:code post: deploy-hooks_use-a-command-deploy-hook -->
 
 
 production: # Environment

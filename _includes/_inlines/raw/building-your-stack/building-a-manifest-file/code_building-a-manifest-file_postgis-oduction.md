@@ -1,4 +1,4 @@
-<!-- post: building-a-manifest-file_postgis -->
+<!-- layout:code post: building-a-manifest-file_postgis -->
 
 
 production:

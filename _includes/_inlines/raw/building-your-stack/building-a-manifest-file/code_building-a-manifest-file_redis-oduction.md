@@ -1,4 +1,4 @@
-<!-- post: building-a-manifest-file_redis -->
+<!-- layout:code post: building-a-manifest-file_redis -->
 
 
 production:

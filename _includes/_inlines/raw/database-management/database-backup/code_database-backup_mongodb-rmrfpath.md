@@ -1,4 +1,4 @@
-<!-- post: database-backup_mongodb -->
+<!-- layout:code post: database-backup_mongodb -->
 
 
 $ rm -rf /path/to/unarchived/folder/YOUR_DATABASE_NAME

@@ -1,4 +1,4 @@
-<!-- post: building-a-manifest-file_linode-nodebalancer -->
+<!-- layout:code post: building-a-manifest-file_linode-nodebalancer -->
 
 
 production:

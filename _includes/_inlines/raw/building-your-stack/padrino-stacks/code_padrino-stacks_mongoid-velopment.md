@@ -1,4 +1,4 @@
-<!-- post: padrino-stacks_mongoid -->
+<!-- layout:code post: padrino-stacks_mongoid -->
 
 
 development:

@@ -1,4 +1,4 @@
-<!-- post: building-a-manifest-file_nginx -->
+<!-- layout:code post: building-a-manifest-file_nginx -->
 
 
 production:

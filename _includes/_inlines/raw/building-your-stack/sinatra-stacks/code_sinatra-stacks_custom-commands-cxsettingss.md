@@ -1,4 +1,4 @@
-<!-- post: sinatra-stacks_custom-commands -->
+<!-- layout:code post: sinatra-stacks_custom-commands -->
 
 
 $ cx settings set -s my_stack custom.build.command "rake db:seed"

@@ -1,4 +1,4 @@
-<!-- post: 1998-12-08-seeding-db_deploy-hook -->
+<!-- layout:code post: 1998-12-08-seeding-db_deploy-hook -->
 
 
 production:

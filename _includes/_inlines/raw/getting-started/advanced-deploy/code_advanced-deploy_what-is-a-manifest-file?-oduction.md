@@ -1,4 +1,4 @@
-<!-- post: advanced-deploy_what-is-a-manifest-file? -->
+<!-- layout:code post: advanced-deploy_what-is-a-manifest-file? -->
 
 
 production:

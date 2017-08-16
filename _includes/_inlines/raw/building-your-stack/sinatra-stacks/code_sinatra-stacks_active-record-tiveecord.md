@@ -1,4 +1,4 @@
-<!-- post: sinatra-stacks_active-record -->
+<!-- layout:code post: sinatra-stacks_active-record -->
 
 
 ActiveRecord::Base.configurations[:development] = {

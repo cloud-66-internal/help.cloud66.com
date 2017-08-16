@@ -1,4 +1,4 @@
-<!-- post: 1993-09-26-running-rake-tasks_deployment-hooks -->
+<!-- layout:code post: 1993-09-26-running-rake-tasks_deployment-hooks -->
 
 
 production:
