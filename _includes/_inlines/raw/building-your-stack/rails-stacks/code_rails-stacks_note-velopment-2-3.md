@@ -1,8 +1,6 @@
----
-layout: code
-post: rails-stacks_note.md
----
+<!-- layout:code post: rails-stacks_note -->
 
+```
 
 development:
   sessions:
@@ -11,3 +9,5 @@ development:
 
       hosts: ["
 :27017"]
+
+```

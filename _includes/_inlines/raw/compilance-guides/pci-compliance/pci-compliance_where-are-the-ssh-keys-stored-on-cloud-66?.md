@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Where are the SSH keys stored on Cloud 66?
 The SSH keys are stored on an isolated storage in Cloud 66 network. The keys are encrypted with a key and are only readable using the secure key.

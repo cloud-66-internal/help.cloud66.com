@@ -1,8 +1,6 @@
----
-layout: code
-post: cloud66-birdseye_get-the-list-of-all-incidents.md
----
+<!-- layout:code post: cloud66-birdseye_get-the-list-of-all-incidents -->
 
+```
 
 [
     {
@@ -42,3 +40,5 @@ post: cloud66-birdseye_get-the-list-of-all-incidents.md
         datacentre: "AMS1"
     }
 ]
+
+```

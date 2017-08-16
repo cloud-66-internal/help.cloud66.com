@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### How To Add Docker Image Repository
 

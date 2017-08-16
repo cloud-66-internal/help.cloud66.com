@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Disable database replication
 

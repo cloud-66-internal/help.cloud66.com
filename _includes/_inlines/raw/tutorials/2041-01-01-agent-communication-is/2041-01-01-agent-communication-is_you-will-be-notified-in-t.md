@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #You will be notified in the case that Cloud 66 is unable to connect to your server for at least 20 minutes. This may happen for the following reasons:
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Use a script deploy hook (Only for Rails/Rack stacks)
 

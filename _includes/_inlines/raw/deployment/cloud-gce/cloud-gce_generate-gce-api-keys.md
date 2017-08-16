@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Generate GCE API keys
 

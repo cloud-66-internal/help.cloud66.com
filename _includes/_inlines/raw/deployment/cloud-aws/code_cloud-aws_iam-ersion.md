@@ -1,8 +1,6 @@
----
-layout: code
-post: cloud-aws_iam.md
----
+<!-- layout:code post: cloud-aws_iam -->
 
+```
 
 {
     "Version": "2012-10-17",
@@ -76,3 +74,5 @@ post: cloud-aws_iam.md
         }
     ]
 }
+
+```

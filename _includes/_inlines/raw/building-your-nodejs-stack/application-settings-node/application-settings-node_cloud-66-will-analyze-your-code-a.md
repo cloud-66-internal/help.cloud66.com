@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #Cloud 66 will analyze your code and detect a few things:
 

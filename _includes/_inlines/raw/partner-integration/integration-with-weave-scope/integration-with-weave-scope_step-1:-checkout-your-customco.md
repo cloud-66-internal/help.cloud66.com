@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Step 1: Checkout your CustomConfig
 

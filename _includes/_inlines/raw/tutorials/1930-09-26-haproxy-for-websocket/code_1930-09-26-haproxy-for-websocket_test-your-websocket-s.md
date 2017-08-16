@@ -1,8 +1,6 @@
----
-layout: code
-post: 1930-09-26-haproxy-for-websocket_test-your-websocket-server.md
----
+<!-- layout:code post: 1930-09-26-haproxy-for-websocket_test-your-websocket-server -->
 
+```
 
 &lt;html&gt;
   &lt;head&gt;
@@ -26,3 +24,5 @@ post: 1930-09-26-haproxy-for-websocket_test-your-websocket-server.md
     &lt;div id=&quot;msg&quot;&gt;&lt;/div&gt;
   &lt;/body&gt;
 &lt;/html&gt;
+
+```

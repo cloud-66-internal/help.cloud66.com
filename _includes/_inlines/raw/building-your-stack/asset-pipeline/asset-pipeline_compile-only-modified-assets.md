@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Compile only modified assets
 

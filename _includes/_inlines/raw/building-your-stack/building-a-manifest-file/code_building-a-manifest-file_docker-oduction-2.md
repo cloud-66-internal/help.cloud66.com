@@ -1,8 +1,6 @@
----
-layout: code
-post: building-a-manifest-file_docker.md
----
+<!-- layout:code post: building-a-manifest-file_docker -->
 
+```
 
 production:
     docker:
@@ -13,3 +11,5 @@ production:
             root_disk_size: 100
             root_disk_type: ssd
             image_keep_count: 15
+
+```

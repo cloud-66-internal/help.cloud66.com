@@ -1,7 +1,7 @@
----
-layout: code
-post: database-backups_redis.md
----
+<!-- layout:code post: database-backups_redis -->
 
+```
 
 $ sudo bluepill cloud66_redis stop || sudo service redis stop
+
+```

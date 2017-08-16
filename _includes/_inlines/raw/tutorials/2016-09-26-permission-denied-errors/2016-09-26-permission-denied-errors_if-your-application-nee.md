@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #If your application needs to write back to your web server then you may have permission errors.
 Your webserver runs under a different user to the user that does your deployment.

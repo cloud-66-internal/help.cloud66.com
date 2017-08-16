@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### 2. DigitalOcean have limited new server creation
 

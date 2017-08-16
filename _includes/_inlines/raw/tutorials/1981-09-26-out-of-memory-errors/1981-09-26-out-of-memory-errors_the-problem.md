@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### The Problem
 When you are deploying your stack (particularly in a non-development environment) asset pipeline compilation takes place during the deployment process.

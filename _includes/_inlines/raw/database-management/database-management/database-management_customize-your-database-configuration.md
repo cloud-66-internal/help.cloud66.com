@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Customize your database configuration
 

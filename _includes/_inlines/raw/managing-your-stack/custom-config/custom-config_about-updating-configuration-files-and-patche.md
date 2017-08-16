@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## About updating configuration files and patches
 

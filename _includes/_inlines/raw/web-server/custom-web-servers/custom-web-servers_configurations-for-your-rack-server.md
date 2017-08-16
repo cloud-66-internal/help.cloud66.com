@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Configurations for your Rack server
 

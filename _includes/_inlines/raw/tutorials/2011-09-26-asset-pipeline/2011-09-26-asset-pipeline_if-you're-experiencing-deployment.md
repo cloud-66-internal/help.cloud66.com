@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #If you're experiencing deployment failures to do with your asset pipeline manifest configurations, this could be due to issues with old assets.
 

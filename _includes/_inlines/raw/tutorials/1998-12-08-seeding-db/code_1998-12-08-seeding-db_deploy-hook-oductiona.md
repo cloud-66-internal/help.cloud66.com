@@ -1,8 +1,6 @@
----
-layout: code
-post: 1998-12-08-seeding-db_deploy-hook.md
----
+<!-- layout:code post: 1998-12-08-seeding-db_deploy-hook -->
 
+```
 
 production:
   after&#95;symlink: # Or use after_rails depending on your application
@@ -12,3 +10,5 @@ production:
       execute: true
       run&#95;on: single&#95;server
       apply&#95;during: build&#95;only      
+
+```

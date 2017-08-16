@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #By default, Cloud66 will not delete servers and other objects created in your cloud after you delete the stack. However, you can change this setting.
 

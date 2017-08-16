@@ -1,8 +1,6 @@
----
-layout: code
-post: deploy-hooks_use-a-snippet-deploy-hook.md
----
+<!-- layout:code post: deploy-hooks_use-a-snippet-deploy-hook -->
 
+```
 
 production: # Environment
     first_thing: # Hook point
@@ -12,3 +10,5 @@ production: # Environment
       - snippet: cloud66/bower
         target: any
         execute: true
+
+```

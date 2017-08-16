@@ -1,8 +1,6 @@
----
-layout: code
-post: meta-data-service_server-meta-data-service.md
----
+<!-- layout:code post: meta-data-service_server-meta-data-service -->
 
+```
 
 {
    "response":{
@@ -193,3 +191,5 @@ post: meta-data-service_server-meta-data-service.md
       "updated_at":"2016-03-11T12:02:33Z"
    }
 }
+
+```

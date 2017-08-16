@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Note
 * Rake tasks are executed using 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### 10. Switch to the new stack
 

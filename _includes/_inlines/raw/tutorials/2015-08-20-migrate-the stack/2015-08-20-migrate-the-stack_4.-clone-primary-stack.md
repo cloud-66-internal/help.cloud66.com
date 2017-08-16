@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### 4. Clone primary stack
 

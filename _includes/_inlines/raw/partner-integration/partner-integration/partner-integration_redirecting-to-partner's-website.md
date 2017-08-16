@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Redirecting to Partner's website
 

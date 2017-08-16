@@ -1,8 +1,6 @@
----
-layout: code
-post: building-a-manifest-file_note.md
----
+<!-- layout:code post: building-a-manifest-file_note -->
 
+```
 
 production:
 	glusterfs:
@@ -23,3 +21,5 @@ production:
 				access_control:
 			  		read: ['web']
 			  		write: ['web']
+
+```

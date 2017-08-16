@@ -1,8 +1,6 @@
----
-layout: code
-post: padrino-stacks_mysql-yml.md
----
+<!-- layout:code post: padrino-stacks_mysql-yml -->
 
+```
 
 ActiveRecord::Base.configurations[:development] = {
   :adapter   => 'mysql2',
@@ -14,3 +12,5 @@ ActiveRecord::Base.configurations[:development] = {
   :password  => ENV['MYSQL_PASSWORD'],
   :host      => ENV['MYSQL_ADDRESS'],
 }
+
+```

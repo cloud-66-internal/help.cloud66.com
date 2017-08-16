@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Generating a management certificate
 

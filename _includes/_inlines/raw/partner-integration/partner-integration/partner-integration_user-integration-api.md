@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## User integration API
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Asset Pipeline Compilation
 

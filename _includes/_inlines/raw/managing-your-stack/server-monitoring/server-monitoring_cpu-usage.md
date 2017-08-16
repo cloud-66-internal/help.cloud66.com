@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### CPU usage
 Contrary to other CPU usage metrics, the [Collectd CPU plugin](https://collectd.org/wiki/index.php/Plugin:CPU) does not collect percentages - instead it collects "jiffies", the units of scheduling.

@@ -1,7 +1,7 @@
----
-layout: code
-post: database-backup_note.md
----
+<!-- layout:code post: database-backup_note -->
 
+```
 
 $ sudo systemctl start mysql 
+
+```

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Configure a GlusterFS replica_count
 

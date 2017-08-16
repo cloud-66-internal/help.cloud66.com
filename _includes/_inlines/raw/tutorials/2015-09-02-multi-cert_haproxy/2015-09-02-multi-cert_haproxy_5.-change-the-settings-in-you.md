@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### 5. Change the settings in your HAproxy config
 

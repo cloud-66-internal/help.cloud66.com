@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### 1. Use a modern DNS provider
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Using a MongoDB replica set in your code
 

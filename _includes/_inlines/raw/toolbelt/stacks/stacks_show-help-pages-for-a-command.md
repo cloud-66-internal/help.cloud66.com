@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Show help pages for a command
 

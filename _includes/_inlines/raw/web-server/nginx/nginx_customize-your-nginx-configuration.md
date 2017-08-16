@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Customize your Nginx configuration
 

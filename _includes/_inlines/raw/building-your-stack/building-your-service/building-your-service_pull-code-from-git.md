@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Pull code from Git
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## About logging with Cloud 66
 

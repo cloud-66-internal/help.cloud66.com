@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Manage your configuration files
 

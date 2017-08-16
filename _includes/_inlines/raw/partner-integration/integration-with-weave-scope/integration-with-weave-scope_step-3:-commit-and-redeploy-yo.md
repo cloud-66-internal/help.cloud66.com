@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Step 3: Commit and redeploy your stack
 

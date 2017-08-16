@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## About configuring your DNS
 

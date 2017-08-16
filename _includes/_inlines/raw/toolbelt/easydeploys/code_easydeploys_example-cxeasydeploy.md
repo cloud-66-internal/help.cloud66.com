@@ -1,7 +1,7 @@
----
-layout: code
-post: easydeploys_example.md
----
+<!-- layout:code post: easydeploys_example -->
 
+```
 
 $ cx easydeploys list
+
+```

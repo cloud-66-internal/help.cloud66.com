@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ##  Final notes on managing storage
 

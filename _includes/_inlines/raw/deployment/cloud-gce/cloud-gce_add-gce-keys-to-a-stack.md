@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Add GCE keys to a stack
 

@@ -1,6 +1,5 @@
----
-layout: code
-post: env-vars_using-environment-variables.md
----
+<!-- layout:code post: env-vars_using-environment-variables -->
 
+```
 $ENV_VAR
+```

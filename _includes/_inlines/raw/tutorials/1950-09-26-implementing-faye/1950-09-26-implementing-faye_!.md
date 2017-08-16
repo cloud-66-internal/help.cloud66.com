@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #!/bin/bash
 sudo gem install thin --no-ri --no-rdoc

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Specify an HAProxy test interval
 

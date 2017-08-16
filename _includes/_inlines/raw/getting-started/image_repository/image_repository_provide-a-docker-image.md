@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Provide a Docker image
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Clone a stack
 

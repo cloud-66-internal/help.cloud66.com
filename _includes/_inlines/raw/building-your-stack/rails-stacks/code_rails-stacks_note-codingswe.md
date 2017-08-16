@@ -1,7 +1,7 @@
----
-layout: code
-post: rails-stacks_note.md
----
+<!-- layout:code post: rails-stacks_note -->
 
+```
 
 encoding: swe7
+
+```

@@ -1,7 +1,7 @@
----
-layout: code
-post: database-backups_note.md
----
+<!-- layout:code post: database-backups_note -->
 
+```
 
 $ sudo service postgresql start
+
+```

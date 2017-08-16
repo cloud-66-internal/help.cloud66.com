@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ###GCE
 `Deleted:` VM Instances, Disks, Forwarding Rules, Target Pools

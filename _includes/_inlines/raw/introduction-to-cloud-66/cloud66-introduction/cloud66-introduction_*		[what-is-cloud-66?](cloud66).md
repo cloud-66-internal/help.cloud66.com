@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #*		[What is Cloud 66?](#cloud66)
 *		[What you'll need](#needed)

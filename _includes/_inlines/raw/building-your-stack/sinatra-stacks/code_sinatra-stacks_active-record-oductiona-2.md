@@ -1,8 +1,6 @@
----
-layout: code
-post: sinatra-stacks_active-record.md
----
+<!-- layout:code post: sinatra-stacks_active-record -->
 
+```
 
 production:
   adapter: postgresql
@@ -14,3 +12,5 @@ production:
 
   database: 
 
+
+```

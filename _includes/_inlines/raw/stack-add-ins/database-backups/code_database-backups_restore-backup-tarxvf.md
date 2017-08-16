@@ -1,9 +1,9 @@
----
-layout: code
-post: database-backups_restore-backup.md
----
+<!-- layout:code post: database-backups_restore-backup -->
 
+```
 
 $ tar -xvf 
   -C 
  
+
+```

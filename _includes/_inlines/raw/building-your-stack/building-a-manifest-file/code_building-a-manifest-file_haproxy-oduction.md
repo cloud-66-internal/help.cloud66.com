@@ -1,8 +1,6 @@
----
-layout: code
-post: building-a-manifest-file_haproxy.md
----
+<!-- layout:code post: building-a-manifest-file_haproxy -->
 
+```
 
 production:
     load_balancer:
@@ -23,3 +21,5 @@ production:
             errorfile&#95;502: /etc/haproxy/errors/502.http
             errorfile&#95;503: /etc/haproxy/errors/503.http
             errorfile&#95;504: /etc/haproxy/errors/504.https
+
+```

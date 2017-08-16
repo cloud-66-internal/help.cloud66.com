@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Redirect between domains with HTTP and HTTPS
 

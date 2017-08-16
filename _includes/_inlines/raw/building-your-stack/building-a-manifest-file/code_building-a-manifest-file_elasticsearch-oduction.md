@@ -1,8 +1,6 @@
----
-layout: code
-post: building-a-manifest-file_elasticsearch.md
----
+<!-- layout:code post: building-a-manifest-file_elasticsearch -->
 
+```
 
 production:
     elasticsearch:
@@ -10,3 +8,5 @@ production:
             version: 0.90.7
             root_disk_size: 100
             root_disk_type: ssd
+
+```

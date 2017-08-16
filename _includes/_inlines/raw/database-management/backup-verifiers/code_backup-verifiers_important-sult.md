@@ -1,9 +1,9 @@
----
-layout: code
-post: backup-verifiers_important.md
----
+<!-- layout:code post: backup-verifiers_important -->
 
+```
 
 result
 --------
 t
+
+```

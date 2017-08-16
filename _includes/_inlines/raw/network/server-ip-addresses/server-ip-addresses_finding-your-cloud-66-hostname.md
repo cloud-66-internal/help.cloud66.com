@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Finding your Cloud 66 hostname
 

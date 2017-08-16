@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Step 2 - Cloud 66 Authenticates
 

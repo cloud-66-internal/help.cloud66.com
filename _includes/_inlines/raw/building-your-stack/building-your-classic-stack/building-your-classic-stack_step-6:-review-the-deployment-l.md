@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Step 6: Review the deployment logs
 

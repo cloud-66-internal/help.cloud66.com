@@ -1,8 +1,6 @@
----
-layout: code
-post: deploy-hooks_use-a-command-deploy-hook.md
----
+<!-- layout:code post: deploy-hooks_use-a-command-deploy-hook -->
 
+```
 
 production: # Environment
     first_thing: # Hook point
@@ -12,3 +10,5 @@ production: # Environment
       - command: apt-get install ncdu -y # Hook type
         target: any # Hook fields
         execute: true  
+
+```

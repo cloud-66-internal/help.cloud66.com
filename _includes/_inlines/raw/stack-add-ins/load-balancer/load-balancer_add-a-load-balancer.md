@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Add a load balancer
 To add a load balancer, access the add-ins menu of your stack and click _Load balancer_.

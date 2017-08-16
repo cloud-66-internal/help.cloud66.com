@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Authorise Cloud 66 to your DigitalOcean
 

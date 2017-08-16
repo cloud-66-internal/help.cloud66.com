@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Generate a Rackspace API key
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Step 3: Define your application properties
 

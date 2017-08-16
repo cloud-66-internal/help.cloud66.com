@@ -1,8 +1,6 @@
----
-layout: code
-post: building-a-manifest-file_docker.md
----
+<!-- layout:code post: building-a-manifest-file_docker -->
 
+```
 
 production:
     docker:
@@ -14,3 +12,5 @@ production:
             root_disk_type: ssd
             image_keep_count: 5
             nameservers: ['8.8.8.8', '8.8.4.4']
+
+```

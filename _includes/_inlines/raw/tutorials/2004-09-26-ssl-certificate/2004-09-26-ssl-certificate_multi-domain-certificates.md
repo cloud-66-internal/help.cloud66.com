@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Multi-domain certificates
 

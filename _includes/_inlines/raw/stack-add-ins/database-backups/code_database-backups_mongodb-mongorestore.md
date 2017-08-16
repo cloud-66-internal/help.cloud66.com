@@ -1,7 +1,7 @@
----
-layout: code
-post: database-backups_mongodb.md
----
+<!-- layout:code post: database-backups_mongodb -->
 
+```
 
 $ mongorestore --drop --db YOUR_DATABASE_NAME  /path/to/database/back 
+
+```

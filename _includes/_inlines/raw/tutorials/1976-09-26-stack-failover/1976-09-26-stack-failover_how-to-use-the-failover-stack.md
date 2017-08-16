@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## How to use the failover stack
 

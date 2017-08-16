@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Control your Rails database migrations
 

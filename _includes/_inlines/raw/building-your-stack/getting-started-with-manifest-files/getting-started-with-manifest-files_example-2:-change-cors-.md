@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Example 2: Change CORS settings
 

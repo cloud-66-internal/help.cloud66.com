@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Build GEOS 3.3.x
 PostGIS 2.0 requires GEOS >= 3.3.2 for topology support, and because Ubuntu 12.0.4 (which Cloud 66 deploys on) only has GEOS 3.2.2 in packages, we need to build it from source. If you don't need topology, you don't *need* to build this component, but it is highly recommended.

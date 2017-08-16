@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #Depending on which gems you're using together with a specific Ruby version, you may see dependency issues such as:
 

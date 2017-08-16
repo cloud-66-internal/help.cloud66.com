@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Configure a MongoDB replica set
 

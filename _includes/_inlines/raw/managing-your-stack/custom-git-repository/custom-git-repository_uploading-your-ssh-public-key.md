@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### Uploading your SSH public key
 

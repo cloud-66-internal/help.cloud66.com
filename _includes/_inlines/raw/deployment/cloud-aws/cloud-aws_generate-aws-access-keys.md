@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Generate AWS access keys
 

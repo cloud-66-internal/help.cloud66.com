@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Manifest.yml
 

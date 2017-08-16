@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ###Packet
 `Deleted:` Devices, Projects

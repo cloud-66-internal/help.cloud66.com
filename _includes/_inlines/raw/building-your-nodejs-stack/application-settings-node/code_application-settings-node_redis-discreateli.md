@@ -1,7 +1,7 @@
----
-layout: code
-post: application-settings-node_redis.md
----
+<!-- layout:code post: application-settings-node_redis -->
 
+```
 
 redis.createClient(6379, process.env.REDIS_URL)
+
+```

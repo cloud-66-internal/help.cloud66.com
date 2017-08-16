@@ -1,8 +1,6 @@
----
-layout: code
-post: mongodb-replica-sets_configure-mongoid.md
----
+<!-- layout:code post: mongodb-replica-sets_configure-mongoid -->
 
+```
 
 development:
 	sessions:
@@ -11,3 +9,5 @@ development:
 			hosts: &lt;%= ENV['MONGODB_ADDRESS'] %&gt;
 			options:
 				consistency: :strong
+
+```

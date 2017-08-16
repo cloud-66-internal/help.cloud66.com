@@ -1,9 +1,9 @@
----
-layout: code
-post: building-a-manifest-file_external-servers.md
----
+<!-- layout:code post: building-a-manifest-file_external-servers -->
 
+```
 
 production:
     mysql:
         server: external
+
+```

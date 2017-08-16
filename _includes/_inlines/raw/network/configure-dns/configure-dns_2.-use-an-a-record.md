@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### 2. Use an A record
 

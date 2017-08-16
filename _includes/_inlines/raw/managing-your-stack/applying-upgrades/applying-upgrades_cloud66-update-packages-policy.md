@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Cloud66 Update Packages Policy
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## How does Cloud 66 determine my server needs a restart?
 

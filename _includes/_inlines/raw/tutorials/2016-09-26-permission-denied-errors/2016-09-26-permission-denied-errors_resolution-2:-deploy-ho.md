@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Resolution 2: Deploy hook
 

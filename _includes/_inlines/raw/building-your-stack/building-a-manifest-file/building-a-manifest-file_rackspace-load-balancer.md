@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### Rackspace load balancer
 

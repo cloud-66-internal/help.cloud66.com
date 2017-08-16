@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Example 1: Specifying a Docker version
 

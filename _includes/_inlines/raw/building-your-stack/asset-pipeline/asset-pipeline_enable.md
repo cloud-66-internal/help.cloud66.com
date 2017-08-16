@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Enable/disable asset pipeline compilation
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #When using Cloud 66 to [deploy to your own servers](http://help.cloud66.com/deployment/registered-servers), you might experience trouble with an existing MySQL installation on your server.
 

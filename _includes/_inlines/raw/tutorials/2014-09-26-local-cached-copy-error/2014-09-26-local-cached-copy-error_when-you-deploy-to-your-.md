@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #When you deploy to your web servers, a cache-copy of your application is automatically kept in the `$STACK_BASE/shared/cached-copy` folder.
 This folder exists to make re-deployments of your application quicker.

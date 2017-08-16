@@ -1,8 +1,6 @@
----
-layout: code
-post: services_result.md
----
+<!-- layout:code post: services_result -->
 
+```
 
 NAME             VALUE
 name             web
@@ -15,3 +13,4 @@ image tag        20150824122440373
 command          bundle exec rails s production
 build command    bundle exec rake db:schema:load
 deploy command
+```

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Commit HAProxy CustomConfig
 

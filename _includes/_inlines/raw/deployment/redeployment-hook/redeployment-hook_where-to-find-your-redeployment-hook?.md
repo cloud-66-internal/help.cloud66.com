@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Where to find your redeployment hook?
 

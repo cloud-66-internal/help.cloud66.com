@@ -1,8 +1,6 @@
----
-layout: code
-post: 2003-09-26-sharing-db_important.md
----
+<!-- layout:code post: 2003-09-26-sharing-db_important -->
 
+```
 
 username: 
 
@@ -12,3 +10,5 @@ hostname:
 
 database: 
 
+
+```

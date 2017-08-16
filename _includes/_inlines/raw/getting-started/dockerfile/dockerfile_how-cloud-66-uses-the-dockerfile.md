@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## How cloud 66 uses the Dockerfile
 

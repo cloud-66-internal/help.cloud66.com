@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Configure HAProxy to use internal IPs
 

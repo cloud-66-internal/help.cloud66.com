@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Re-synchronizing slave with master
 

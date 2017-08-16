@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Build PostGIS
 First we want to download PostGIS, extract it and move into its directory:

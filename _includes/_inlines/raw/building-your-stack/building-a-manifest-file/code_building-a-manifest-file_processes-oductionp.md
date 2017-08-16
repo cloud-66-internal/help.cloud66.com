@@ -1,8 +1,6 @@
----
-layout: code
-post: building-a-manifest-file_processes.md
----
+<!-- layout:code post: building-a-manifest-file_processes -->
 
+```
 
 production:
   procfile_metadata:
@@ -13,3 +11,5 @@ production:
       web_server_stop_signals: usr1, 30, kill
     nsq:
       restart_on_deploy: false
+
+```

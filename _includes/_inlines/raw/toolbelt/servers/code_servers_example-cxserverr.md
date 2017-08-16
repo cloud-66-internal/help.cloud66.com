@@ -1,7 +1,7 @@
----
-layout: code
-post: servers_example.md
----
+<!-- layout:code post: servers_example -->
 
+```
 
 $ $ cx server reboot -s mystack --server lion -e production
+
+```

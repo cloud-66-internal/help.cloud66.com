@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Fine grained access control for your data
 By default Cloud 66 builds a GlusterFS cluster for your stack, creates a default mount point on it and mounts that onto every application server and container of your stack. This is great to start with and for many workloads.

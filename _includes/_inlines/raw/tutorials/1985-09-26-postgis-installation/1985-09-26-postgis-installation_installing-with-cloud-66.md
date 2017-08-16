@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Installing with Cloud 66
 

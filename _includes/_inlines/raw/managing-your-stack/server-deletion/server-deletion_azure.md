@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ###Azure
 `Deleted:` Virtual Machines, Cloud Services, Storage, Traffic Manager

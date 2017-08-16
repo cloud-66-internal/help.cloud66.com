@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Step 5: Define deployment properties
 

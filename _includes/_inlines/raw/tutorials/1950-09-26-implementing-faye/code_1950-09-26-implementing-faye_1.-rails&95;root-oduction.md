@@ -1,8 +1,6 @@
----
-layout: code
-post: 1950-09-26-implementing-faye_1.-rails&95;root.md
----
+<!-- layout:code post: 1950-09-26-implementing-faye_1.-rails&95;root -->
 
+```
 
 production:
     before&#95;rails:
@@ -13,3 +11,5 @@ production:
         sudo: true
         apply&#95;during: build&#95;only
         run&#95;on: all&#95;servers
+
+```

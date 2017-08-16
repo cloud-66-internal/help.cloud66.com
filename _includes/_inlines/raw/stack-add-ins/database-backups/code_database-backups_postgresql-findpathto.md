@@ -1,7 +1,7 @@
----
-layout: code
-post: database-backups_postgresql.md
----
+<!-- layout:code post: database-backups_postgresql -->
 
+```
 
 $ find /path/to/unarchived/folder '(' -name '*.sql' -o -name '*.sql.gz' ')' -type f) 
+
+```

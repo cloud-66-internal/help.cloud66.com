@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### 1. RAILS&#95;ROOT/.cloud66/deploy&#95;hooks.yml
 

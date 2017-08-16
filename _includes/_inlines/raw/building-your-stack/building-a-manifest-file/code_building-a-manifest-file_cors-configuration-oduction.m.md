@@ -1,8 +1,6 @@
----
-layout: code
-post: building-a-manifest-file_cors-configuration.md
----
+<!-- layout:code post: building-a-manifest-file_cors-configuration -->
 
+```
 
 production:
     rails:
@@ -13,3 +11,5 @@ production:
                     methods: 'GET, OPTIONS'
                     headers: 'Custom-Header, Another-Header'
                     credentials: true
+
+```

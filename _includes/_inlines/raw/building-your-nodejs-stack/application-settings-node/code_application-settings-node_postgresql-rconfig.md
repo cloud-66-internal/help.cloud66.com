@@ -1,8 +1,6 @@
----
-layout: code
-post: application-settings-node_postgresql.md
----
+<!-- layout:code post: application-settings-node_postgresql -->
 
+```
 
 var config = {
   user: process.env.POSTGRESDB_USERNAME,
@@ -13,3 +11,5 @@ var config = {
   idleTimeoutMillis: 30000,
 };
 var pool = new pg.Pool(config);
+
+```

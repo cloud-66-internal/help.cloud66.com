@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Why would I need GlusterFS?
 Almost all applications have some sort of data storage needs. As your application grows and runs on multiple servers, you will need to be able to share this data storage between your servers. For example, a web application that allows its users to upload images, will need to store those images on a share storage accessible by all servers. 

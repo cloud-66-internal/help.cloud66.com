@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## About using Google Compute Engine cloud
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Which distributions of Linux are supported?
 
