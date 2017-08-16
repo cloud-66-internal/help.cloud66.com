@@ -5,6 +5,7 @@ title:  "Deployment"
 categories: deployment
 lead: Everything you need to know to set up your Rails deployment
 legacy: false
+next: "http://www.google.com"
 permalink: /:collection/:categories/index.html
 ---
 

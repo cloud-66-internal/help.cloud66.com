@@ -1,6 +1,4 @@
----
-post: 
----
+<!-- post: -->
 
 ## How it works
 1. Tell your friend about Cloud 66.

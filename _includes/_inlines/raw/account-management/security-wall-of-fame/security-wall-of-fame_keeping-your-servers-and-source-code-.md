@@ -1,6 +1,4 @@
----
-post: 
----
+<!-- post: -->
 
 #Keeping your servers and source code safe is our highest priority at Cloud 66, and we want to show our appreciation to the following people who have helped make our platform safer.
 

@@ -1,6 +1,4 @@
----
-post: 
----
+<!-- post: -->
 
 ## Viewing your account notifications
 

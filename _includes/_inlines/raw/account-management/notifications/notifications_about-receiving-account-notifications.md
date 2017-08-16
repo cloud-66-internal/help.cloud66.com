@@ -1,6 +1,4 @@
----
-post: 
----
+<!-- post: -->
 
 ## About receiving account notifications
 

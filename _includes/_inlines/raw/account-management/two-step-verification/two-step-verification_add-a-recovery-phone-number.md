@@ -1,6 +1,4 @@
----
-post: 
----
+<!-- post: -->
 
 ## Add a recovery phone number
 We strongly suggest that you add your phone number on the _Account_ page to recover your account should you at some point not be able to access your verification codes on your phone.
