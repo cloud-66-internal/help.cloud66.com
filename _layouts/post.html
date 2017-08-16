@@ -85,11 +85,13 @@ bodyclass: post
 <div class="crumbs crumbs-bottom container">
     <nav class="nav-footer">
     {% include contents_link.html %}
-
     {% if page.nav %}
         {% include paging_link.html %}
     {% endif %}
     </nav>
+{% for next in page.boop %}
+<div style="float: right; margin-top: -17px">Read next: &nbsp&nbsp&nbsp<a href={{next}} >{{ next }}</a>></div>
+{% endfor %}   
 </div>
 
 
