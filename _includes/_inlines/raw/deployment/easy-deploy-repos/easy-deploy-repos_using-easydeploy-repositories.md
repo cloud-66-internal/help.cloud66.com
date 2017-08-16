@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Using EasyDeploy repositories
 

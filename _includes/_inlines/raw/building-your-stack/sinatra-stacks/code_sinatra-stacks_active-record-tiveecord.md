@@ -1,7 +1,4 @@
----
-layout: code
-post: sinatra-stacks_active-record.md
----
+<!-- post: sinatra-stacks_active-record -->
 
 
 ActiveRecord::Base.configurations[:development] = {

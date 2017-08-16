@@ -1,7 +1,4 @@
----
-layout: code
-post: building-your-service_command.md
----
+<!-- post: building-your-service_command -->
 
 
 services:

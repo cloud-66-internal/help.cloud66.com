@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### What is deployment history?
 Whether working in a team or by yourself, it's always useful to have an overview of your deployment history. This history includes

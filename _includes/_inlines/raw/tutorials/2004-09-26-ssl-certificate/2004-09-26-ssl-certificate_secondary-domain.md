@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 # secondary domain
 server &#123;

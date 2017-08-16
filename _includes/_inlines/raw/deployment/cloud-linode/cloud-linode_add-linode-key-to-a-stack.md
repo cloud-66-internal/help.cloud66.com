@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Add Linode key to a stack
 

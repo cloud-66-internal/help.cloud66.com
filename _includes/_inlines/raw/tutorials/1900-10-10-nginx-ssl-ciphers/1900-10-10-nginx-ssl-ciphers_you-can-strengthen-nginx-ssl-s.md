@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #You can strengthen nginx SSL security by adjusting its SSL cipher settings. You can change this using [CustonConfig](http://help.cloud66.com/managing-your-stack/customconfig). Please remember that the most secure settings (below) is not backward compatible with IE6 and Windows XP clients.
 

@@ -1,7 +1,4 @@
----
-layout: code
-post: getting-started-with-manifest-files_third-level-(2):-server.md
----
+<!-- post: getting-started-with-manifest-files_third-level-(2):-server -->
 
 
 production:

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### What is Cloud 66 Birdseye?
 [Cloud 66 Birdseye](https://birdseye.cloud66.com) is a publicly availably public cloud provider health dashboard.

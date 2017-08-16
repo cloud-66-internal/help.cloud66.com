@@ -1,7 +1,4 @@
----
-layout: code
-post: database-backup_mongodb.md
----
+<!-- post: database-backup_mongodb -->
 
 
 $ tar -xvf /path/to/unarchived/folder/Mongo*.tar.gz -C /path/to/unarchived/folder && find /path/to/unarchived/folder -type f -exec mv -i {} /path/to/unarchived/folder \;

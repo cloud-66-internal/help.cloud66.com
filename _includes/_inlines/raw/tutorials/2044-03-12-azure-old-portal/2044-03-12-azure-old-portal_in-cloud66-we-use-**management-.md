@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #In Cloud66 we use **Management Certificate** for authentication against Azure cloud. So if you want to add an Azure cloud into your Cloud66 account you need to use a [Management Certificate](http://help.cloud66.com/deployment/microsoft-azure-cloud). The issue is there is no place in  **Azure New Portal** for adding management certificates.
 To solve this issue you can use [Azure old portal](http://manage.windowsazure.com/) or if for any reason old portal is not available, you can use following instruction :

@@ -1,7 +1,4 @@
----
-layout: code
-post: advanced-deploy_what-is-service-configuration?.md
----
+<!-- post: advanced-deploy_what-is-service-configuration? -->
 
 
 ---

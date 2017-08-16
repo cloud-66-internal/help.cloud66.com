@@ -1,7 +1,4 @@
----
-layout: code
-post: ssh_example.md
----
+<!-- post: ssh_example -->
 
 
 $ cx ssh -s "My Awesome App" Lion -e production

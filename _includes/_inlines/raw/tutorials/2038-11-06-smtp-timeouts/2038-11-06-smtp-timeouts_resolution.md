@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Resolution
 You have the following options:

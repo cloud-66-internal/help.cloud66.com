@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Database deployment types
 

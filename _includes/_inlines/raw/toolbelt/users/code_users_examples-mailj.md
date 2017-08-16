@@ -1,7 +1,4 @@
----
-layout: code
-post: users_examples.md
----
+<!-- post: users_examples -->
 
 
 Id  Email

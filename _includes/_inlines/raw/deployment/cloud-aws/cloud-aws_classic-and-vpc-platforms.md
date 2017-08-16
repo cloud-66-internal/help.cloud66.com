@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Classic and VPC platforms
 

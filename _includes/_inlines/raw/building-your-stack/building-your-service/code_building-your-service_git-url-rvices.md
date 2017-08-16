@@ -1,7 +1,4 @@
----
-layout: code
-post: building-your-service_git-url.md
----
+<!-- post: building-your-service_git-url -->
 
 
 services:

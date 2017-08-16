@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## About running apps with Thin
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Change the HAProxy endpoint
 

@@ -1,7 +1,4 @@
----
-layout: code
-post: add-ins-jobs_pass-parameters-to-job.md
----
+<!-- post: add-ins-jobs_pass-parameters-to-job -->
 
 
 job command: cp $1 ${2:-/tmp}

@@ -1,7 +1,4 @@
----
-layout: code
-post: padrino-stacks_custom-commands.md
----
+<!-- post: padrino-stacks_custom-commands -->
 
 
 $ cx settings set -s my_stack custom.build.command "rake db:seed"

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Status and uptime
 You can see real-time monitoring of our systems on our [uptime page](http://uptime.cloud66.com), and any issues will be mentioned on our [status page](http://status.cloud66.com/).

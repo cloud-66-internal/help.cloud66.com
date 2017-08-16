@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Adding Redeployment Hooks
 

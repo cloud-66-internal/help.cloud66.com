@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## How can I change my Git repository?
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Redeploy your stack
 

@@ -1,7 +1,4 @@
----
-layout: code
-post: database-backups_mysql.md
----
+<!-- post: database-backups_mysql -->
 
 
 $ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD -e "REVOKE ALL PRIVILEGES ON $MYSQL_DATABASE_NAME.* FROM '$MYSQL_DB_APP_USERNAME'@'localhost';"

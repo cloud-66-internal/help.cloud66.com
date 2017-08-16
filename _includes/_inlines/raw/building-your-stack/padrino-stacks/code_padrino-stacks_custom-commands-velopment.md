@@ -1,7 +1,4 @@
----
-layout: code
-post: padrino-stacks_custom-commands.md
----
+<!-- post: padrino-stacks_custom-commands -->
 
 
 development:

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## WebSocket through a load balancer
 

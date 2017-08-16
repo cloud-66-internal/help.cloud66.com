@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### For Rails/Rack Stacks
 

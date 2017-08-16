@@ -1,7 +1,4 @@
----
-layout: code
-post: services_example.md
----
+<!-- post: services_example -->
 
 
 $ cx services restart -s mystack my_web_service

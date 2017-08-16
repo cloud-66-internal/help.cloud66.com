@@ -1,7 +1,4 @@
----
-layout: code
-post: stacks_example.md
----
+<!-- post: stacks_example -->
 
 
 $ cx stack reboot -s mystack

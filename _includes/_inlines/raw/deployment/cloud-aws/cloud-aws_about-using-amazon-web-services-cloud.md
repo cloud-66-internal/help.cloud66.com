@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## About using Amazon Web Services cloud
 

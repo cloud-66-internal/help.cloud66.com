@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #When you use [database replication](http://help.cloud66.com/database-management/database-replication) with PostgreSQL, we configure [streaming replication](http://wiki.postgresql.org/wiki/Streaming_Replication) between your master and slave databases.
 The first server in the group will be the master server, and the others will be configured as slave servers.

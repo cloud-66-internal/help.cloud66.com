@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Accessing your GlusterFS servers
 GlusterFS servers are added to a new group called _GlusterFS Cluster_ under your stack. These servers are accessible via the usual GlusterFS tooling (available from [GlusterFS website](http://www.gluster.org/)).

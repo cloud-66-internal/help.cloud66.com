@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Build a stack
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #*    [What you'll need](#needed)
 *    [Step 1: Build your stack](#1)

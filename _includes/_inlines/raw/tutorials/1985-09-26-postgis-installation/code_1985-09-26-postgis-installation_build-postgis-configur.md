@@ -1,7 +1,4 @@
----
-layout: code
-post: 1985-09-26-postgis-installation_build-postgis.md
----
+<!-- post: 1985-09-26-postgis-installation_build-postgis -->
 
 
 $ ./configure

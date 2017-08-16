@@ -1,7 +1,4 @@
----
-layout: code
-post: building-a-manifest-file_clouda-load-balancer.md
----
+<!-- post: building-a-manifest-file_clouda-load-balancer -->
 
 
 production:

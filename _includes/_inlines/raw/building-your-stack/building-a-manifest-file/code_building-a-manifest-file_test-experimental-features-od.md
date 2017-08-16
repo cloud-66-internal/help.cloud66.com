@@ -1,7 +1,4 @@
----
-layout: code
-post: building-a-manifest-file_test-experimental-features.md
----
+<!-- post: building-a-manifest-file_test-experimental-features -->
 
 
 production:

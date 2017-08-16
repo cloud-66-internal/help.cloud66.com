@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## How does LiveLogs work?
 

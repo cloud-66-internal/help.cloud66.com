@@ -1,7 +1,4 @@
----
-layout: code
-post: stacks_examples.md
----
+<!-- post: stacks_examples -->
 
 
 $ cx stacks list

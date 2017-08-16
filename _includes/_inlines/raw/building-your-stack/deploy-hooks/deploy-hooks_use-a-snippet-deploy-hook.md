@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Use a snippet deploy hook
 

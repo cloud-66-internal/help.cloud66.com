@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Delete a stack
 

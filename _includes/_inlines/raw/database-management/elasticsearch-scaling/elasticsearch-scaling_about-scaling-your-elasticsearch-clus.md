@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## About scaling your Elasticsearch cluster
 

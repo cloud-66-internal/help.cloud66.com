@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #Depending on your application, you may need to have persisting local storage through multiple deploys by creating a symbolic link to a shared folder.
 

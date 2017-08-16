@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Resolution 1: Configuring the gem
 

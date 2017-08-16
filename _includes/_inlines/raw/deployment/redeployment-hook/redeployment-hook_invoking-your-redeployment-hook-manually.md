@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Invoking your redeployment hook manually
 

@@ -1,7 +1,4 @@
----
-layout: code
-post: building-a-manifest-file_mongodb.md
----
+<!-- post: building-a-manifest-file_mongodb -->
 
 
 production:

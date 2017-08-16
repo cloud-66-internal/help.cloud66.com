@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #If you have a docker stack but your services don't follow the dependencies you've defined, this article is probably for you.
 

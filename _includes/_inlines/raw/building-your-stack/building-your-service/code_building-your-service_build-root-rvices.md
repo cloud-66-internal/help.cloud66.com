@@ -1,7 +1,4 @@
----
-layout: code
-post: building-your-service_build-root.md
----
+<!-- post: building-your-service_build-root -->
 
 
 services:

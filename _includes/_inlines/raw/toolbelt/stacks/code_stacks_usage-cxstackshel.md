@@ -1,7 +1,4 @@
----
-layout: code
-post: stacks_usage.md
----
+<!-- post: stacks_usage -->
 
 
 $ cx stacks help [&lt;command&gt;]

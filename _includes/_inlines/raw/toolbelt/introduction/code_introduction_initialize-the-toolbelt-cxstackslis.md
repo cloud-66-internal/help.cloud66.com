@@ -1,7 +1,4 @@
----
-layout: code
-post: introduction_initialize-the-toolbelt.md
----
+<!-- post: introduction_initialize-the-toolbelt -->
 
 
 $ cx stacks list

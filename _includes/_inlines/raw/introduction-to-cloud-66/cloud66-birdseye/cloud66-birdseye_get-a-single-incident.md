@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Get a single incident
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Define referenced environment variable
 

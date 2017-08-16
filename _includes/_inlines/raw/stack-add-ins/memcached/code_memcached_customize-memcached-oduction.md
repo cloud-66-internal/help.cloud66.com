@@ -1,7 +1,4 @@
----
-layout: code
-post: memcached_customize-memcached.md
----
+<!-- post: memcached_customize-memcached -->
 
 
 production:

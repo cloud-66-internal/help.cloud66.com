@@ -1,7 +1,4 @@
----
-layout: code
-post: building-your-service_dockerfile-path.md
----
+<!-- post: building-your-service_dockerfile-path -->
 
 
 services:

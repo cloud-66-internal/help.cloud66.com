@@ -1,7 +1,4 @@
----
-layout: code
-post: 2012-01-09-nginx-redirect_http.md
----
+<!-- post: 2012-01-09-nginx-redirect_http -->
 
 
 server {

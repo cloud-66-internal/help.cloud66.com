@@ -1,7 +1,4 @@
----
-layout: code
-post: building-a-manifest-file_deploy-to-your-own-server.md
----
+<!-- post: building-a-manifest-file_deploy-to-your-own-server -->
 
 
 production:

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### No Logs or Logs are empty in Logentries
 

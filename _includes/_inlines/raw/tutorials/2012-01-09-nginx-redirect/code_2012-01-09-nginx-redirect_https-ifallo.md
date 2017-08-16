@@ -1,7 +1,4 @@
----
-layout: code
-post: 2012-01-09-nginx-redirect_https.md
----
+<!-- post: 2012-01-09-nginx-redirect_https -->
 
 
 &#123;% if allow_ssl == true %&#125;

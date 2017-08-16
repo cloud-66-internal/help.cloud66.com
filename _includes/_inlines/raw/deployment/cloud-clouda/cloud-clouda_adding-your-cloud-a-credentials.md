@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Adding your Cloud-A credentials
 

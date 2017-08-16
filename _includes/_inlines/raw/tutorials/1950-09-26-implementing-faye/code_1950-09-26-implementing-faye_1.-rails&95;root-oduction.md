@@ -1,7 +1,4 @@
----
-layout: code
-post: 1950-09-26-implementing-faye_1.-rails&95;root.md
----
+<!-- post: 1950-09-26-implementing-faye_1.-rails&95;root -->
 
 
 production:

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## I've restarted, but I still see the notification
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #Although Cloud 66 detects server connectivity issues, we don't currently detect application states in the dashboard.
 There is a lot of complexity around the numerous scenarios possible, and some applications such as APIs may not have a _healthy_ state in the same way that web applications do. Other applications may not be open to the world.

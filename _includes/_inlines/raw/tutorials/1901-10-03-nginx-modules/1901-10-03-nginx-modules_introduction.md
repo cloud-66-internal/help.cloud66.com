@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Introduction
 Nginx is compiled with a specific set of modules during the initial deployment of a stack through Cloud 66. Should you wish to install other modules,

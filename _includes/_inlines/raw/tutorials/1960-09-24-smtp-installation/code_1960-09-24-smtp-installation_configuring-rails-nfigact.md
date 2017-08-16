@@ -1,7 +1,4 @@
----
-layout: code
-post: 1960-09-24-smtp-installation_configuring-rails.md
----
+<!-- post: 1960-09-24-smtp-installation_configuring-rails -->
 
 
 config.action_mailer.delivery_method = :sendmail

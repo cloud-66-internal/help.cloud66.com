@@ -1,7 +1,4 @@
----
-layout: code
-post: integration-with-weave-scope_step-2:-add-the-weavescope-sni.md
----
+<!-- post: integration-with-weave-scope_step-2:-add-the-weavescope-sni -->
 
 
 production: # Environment or your choice

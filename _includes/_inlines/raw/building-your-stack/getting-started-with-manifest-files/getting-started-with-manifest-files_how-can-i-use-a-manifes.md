@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## How can I use a manifest file?
 

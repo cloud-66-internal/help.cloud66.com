@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Redis database
 Ensure that Redis is not running before restoring your backups and use the appropriate method to stop it before proceeding.

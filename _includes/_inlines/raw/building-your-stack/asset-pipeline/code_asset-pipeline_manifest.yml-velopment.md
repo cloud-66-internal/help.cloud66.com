@@ -1,7 +1,4 @@
----
-layout: code
-post: asset-pipeline_manifest.yml.md
----
+<!-- post: asset-pipeline_manifest.yml -->
 
 
 development:

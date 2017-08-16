@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Example
 {% highlight bash %}

@@ -1,7 +1,4 @@
----
-layout: code
-post: deploy-hooks_important.md
----
+<!-- post: deploy-hooks_important -->
 
 
 production: # Environment

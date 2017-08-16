@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### 4. Copy the files to certification files from /tmp to their directory
 

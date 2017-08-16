@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #Cloud 66 supports deployments with the new Phusion Passenger 5 - all new stacks and servers will be using this version. If you have an existing stack that is running on Passenger 4, any newly scaled up servers will be upgraded. If your Nginx configuration is still on the old version, you may see this error message:
 

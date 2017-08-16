@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### 2. Add a CNAME record in your DNS provider dashboard 
 

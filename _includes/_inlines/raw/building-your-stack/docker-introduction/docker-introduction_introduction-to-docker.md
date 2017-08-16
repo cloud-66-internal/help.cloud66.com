@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Introduction to Docker
 

@@ -1,7 +1,4 @@
----
-layout: code
-post: database-backups_postgresql.md
----
+<!-- post: database-backups_postgresql -->
 
 
 $ export $PG_DATABASE_NAME=YOUR_PG_DATABASE_NAME

@@ -1,7 +1,4 @@
----
-layout: code
-post: 2003-09-26-sharing-db_important.md
----
+<!-- post: 2003-09-26-sharing-db_important -->
 
 
 username: 

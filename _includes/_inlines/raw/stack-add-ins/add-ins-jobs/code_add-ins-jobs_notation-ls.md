@@ -1,7 +1,4 @@
----
-layout: code
-post: add-ins-jobs_notation.md
----
+<!-- post: add-ins-jobs_notation -->
 
 
 cp $1 $2

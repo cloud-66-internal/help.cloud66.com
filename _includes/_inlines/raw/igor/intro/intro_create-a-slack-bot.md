@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### Create a Slack bot
 

@@ -1,7 +1,4 @@
----
-layout: code
-post: scaling_docker-services.md
----
+<!-- post: scaling_docker-services -->
 
 
 services:

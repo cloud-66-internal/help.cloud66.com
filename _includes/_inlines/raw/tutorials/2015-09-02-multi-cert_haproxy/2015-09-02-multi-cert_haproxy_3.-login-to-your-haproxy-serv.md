@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### 3. Login to your HAproxy server
 

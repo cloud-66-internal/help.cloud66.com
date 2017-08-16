@@ -1,7 +1,4 @@
----
-layout: code
-post: network-configuration_configure-network-traffic.md
----
+<!-- post: network-configuration_configure-network-traffic -->
 
 
 23.213.76.19

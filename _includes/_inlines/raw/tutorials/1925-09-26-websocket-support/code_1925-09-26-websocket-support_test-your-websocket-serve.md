@@ -1,7 +1,4 @@
----
-layout: code
-post: 1925-09-26-websocket-support_test-your-websocket-server.md
----
+<!-- post: 1925-09-26-websocket-support_test-your-websocket-server -->
 
 
 &#60;html&#62;

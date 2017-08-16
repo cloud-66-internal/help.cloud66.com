@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### Filtering the list
 You can filter the result for the incidents with the following filters:

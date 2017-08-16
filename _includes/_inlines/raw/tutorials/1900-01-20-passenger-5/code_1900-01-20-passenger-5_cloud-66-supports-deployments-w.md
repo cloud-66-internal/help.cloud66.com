@@ -1,7 +1,4 @@
----
-layout: code
-post: 1900-01-20-passenger-5_cloud-66-supports-deployments-with-t.md
----
+<!-- post: 1900-01-20-passenger-5_cloud-66-supports-deployments-with-t -->
 
 
 {% if passenger_supports_cgi_param == true %}

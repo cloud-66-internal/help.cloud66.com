@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Step 4: Review your app configuration
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Who pays for the physical servers?
 

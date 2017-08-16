@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### The basics
 When *rake db:migrate*, or *rake db:structure:load* is executed as part of your deployment, your structure.sql/migrations are executed against your database.

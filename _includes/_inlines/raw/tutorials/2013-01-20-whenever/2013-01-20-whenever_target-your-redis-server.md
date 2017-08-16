@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### Target your Redis server
 

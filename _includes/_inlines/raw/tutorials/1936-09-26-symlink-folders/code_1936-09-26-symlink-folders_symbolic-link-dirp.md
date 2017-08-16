@@ -1,7 +1,4 @@
----
-layout: code
-post: 1936-09-26-symlink-folders_symbolic-link.md
----
+<!-- post: 1936-09-26-symlink-folders_symbolic-link -->
 
 
 mkdir -p $STACK_BASE/shared/uploads

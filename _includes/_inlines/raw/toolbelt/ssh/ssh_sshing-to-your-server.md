@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## SSHing to your server
 

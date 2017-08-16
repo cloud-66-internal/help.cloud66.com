@@ -1,7 +1,4 @@
----
-layout: code
-post: rails-stacks_note.md
----
+<!-- post: rails-stacks_note -->
 
 
 development:

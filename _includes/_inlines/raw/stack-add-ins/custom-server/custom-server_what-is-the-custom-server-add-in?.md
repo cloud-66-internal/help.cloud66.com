@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### What is the custom server add-in?
 Adding a custom server to your stack allows you to manage your own services while still benefiting from the Cloud 66 ecosystem.

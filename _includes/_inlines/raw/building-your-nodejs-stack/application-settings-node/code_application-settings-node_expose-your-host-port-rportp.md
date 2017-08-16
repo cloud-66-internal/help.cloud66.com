@@ -1,7 +1,4 @@
----
-layout: code
-post: application-settings-node_expose-your-host-port.md
----
+<!-- post: application-settings-node_expose-your-host-port -->
 
 
 var port = process.env.PORT || 8080;

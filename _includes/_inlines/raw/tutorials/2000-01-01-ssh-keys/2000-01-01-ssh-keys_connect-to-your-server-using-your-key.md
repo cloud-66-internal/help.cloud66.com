@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Connect to your server using your key
 

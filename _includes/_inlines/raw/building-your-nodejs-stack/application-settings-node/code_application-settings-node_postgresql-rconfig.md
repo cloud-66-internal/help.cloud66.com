@@ -1,7 +1,4 @@
----
-layout: code
-post: application-settings-node_postgresql.md
----
+<!-- post: application-settings-node_postgresql -->
 
 
 var config = {

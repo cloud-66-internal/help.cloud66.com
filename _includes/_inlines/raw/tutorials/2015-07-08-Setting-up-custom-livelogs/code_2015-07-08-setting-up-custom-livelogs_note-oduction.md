@@ -1,7 +1,4 @@
----
-layout: code
-post: 2015-07-08-setting-up-custom-livelogs_note.md
----
+<!-- post: 2015-07-08-setting-up-custom-livelogs_note -->
 
 
 production:   

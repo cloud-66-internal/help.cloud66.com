@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### 1. Your DigitalOcean account has reached the default 5-server limit
 

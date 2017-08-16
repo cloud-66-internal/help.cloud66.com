@@ -1,7 +1,4 @@
----
-layout: code
-post: padrino-stacks_mongoid.md
----
+<!-- post: padrino-stacks_mongoid -->
 
 
 development:

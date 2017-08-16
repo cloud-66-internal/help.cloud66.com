@@ -1,7 +1,4 @@
----
-layout: code
-post: containers_example.md
----
+<!-- post: containers_example -->
 
 
 $ cx containers list -s My_Awesome_App

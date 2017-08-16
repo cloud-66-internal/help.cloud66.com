@@ -1,7 +1,4 @@
----
-layout: code
-post: databases_example.md
----
+<!-- post: databases_example -->
 
 
 $ cx databases promote-slave -s "My Awesome App" my_slave_server_name

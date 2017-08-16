@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Use a command deploy hook
 

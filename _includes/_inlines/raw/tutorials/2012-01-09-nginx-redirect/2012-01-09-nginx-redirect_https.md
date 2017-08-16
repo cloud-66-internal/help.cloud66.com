@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### HTTPS
 The above method will not work for HTTPS traffic, because visitors from domain A will be expecting SSL certificates for that domain, not those of domain B.

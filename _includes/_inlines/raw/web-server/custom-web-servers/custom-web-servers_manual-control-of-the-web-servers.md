@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Manual control of the web servers
 

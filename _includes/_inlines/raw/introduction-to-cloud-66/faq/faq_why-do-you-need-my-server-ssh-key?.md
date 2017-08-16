@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Why do you need my server SSH key?
 

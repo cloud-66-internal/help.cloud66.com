@@ -1,7 +1,4 @@
----
-layout: code
-post: cloud66-starter_get-started.md
----
+<!-- post: cloud66-starter_get-started -->
 
 
  Cloud 66 Starter ~ (c) 2015 Cloud 66

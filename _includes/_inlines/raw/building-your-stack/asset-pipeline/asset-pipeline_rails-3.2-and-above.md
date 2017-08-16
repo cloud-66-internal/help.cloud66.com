@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### Rails 3.2 and above
 If you are running Rails 3.2 or later, you can use [Turbo Sprockets](https://github.com/ndbroadbent/turbo-sprockets-rails3), which speeds up deployments by only compiling changed assets.

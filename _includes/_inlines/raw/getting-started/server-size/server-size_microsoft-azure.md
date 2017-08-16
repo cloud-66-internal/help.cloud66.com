@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Microsoft Azure
 - A0

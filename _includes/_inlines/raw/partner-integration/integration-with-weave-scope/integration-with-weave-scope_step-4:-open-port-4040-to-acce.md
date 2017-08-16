@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Step 4: Open port 4040 to access Weave Scope
 

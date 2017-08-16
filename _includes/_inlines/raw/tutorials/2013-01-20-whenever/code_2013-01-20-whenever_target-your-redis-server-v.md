@@ -1,7 +1,4 @@
----
-layout: code
-post: 2013-01-20-whenever_target-your-redis-server.md
----
+<!-- post: 2013-01-20-whenever_target-your-redis-server -->
 
 
 env :PATH, ENV['PATH']

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Getting Started with CustomConfig git
 

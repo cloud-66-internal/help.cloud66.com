@@ -1,7 +1,4 @@
----
-layout: code
-post: building-your-service_image.md
----
+<!-- post: building-your-service_image -->
 
 
 services:

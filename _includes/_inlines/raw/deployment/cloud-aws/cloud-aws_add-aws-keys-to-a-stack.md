@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Add AWS keys to a stack
 

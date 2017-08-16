@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #There are a number of steps you can take to troubleshoot connectivity issues with your server.
 

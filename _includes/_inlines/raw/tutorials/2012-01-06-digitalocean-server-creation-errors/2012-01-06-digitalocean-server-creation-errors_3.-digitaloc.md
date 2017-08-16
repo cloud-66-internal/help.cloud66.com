@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### 3. DigitalOcean has experienced an internal error
 

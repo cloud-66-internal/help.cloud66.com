@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Add Logentries to your stack
 

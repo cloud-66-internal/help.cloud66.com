@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## CustomConfig git workflow
 

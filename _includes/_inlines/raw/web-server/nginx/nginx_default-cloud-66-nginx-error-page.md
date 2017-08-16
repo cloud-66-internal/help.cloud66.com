@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Default Cloud 66 Nginx error page
 

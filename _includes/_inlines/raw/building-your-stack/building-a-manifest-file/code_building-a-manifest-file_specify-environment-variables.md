@@ -1,7 +1,4 @@
----
-layout: code
-post: building-a-manifest-file_specify-environment-variables.md
----
+<!-- post: building-a-manifest-file_specify-environment-variables -->
 
 
 production:

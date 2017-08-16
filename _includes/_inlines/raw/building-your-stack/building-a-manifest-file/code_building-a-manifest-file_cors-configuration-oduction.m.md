@@ -1,7 +1,4 @@
----
-layout: code
-post: building-a-manifest-file_cors-configuration.md
----
+<!-- post: building-a-manifest-file_cors-configuration -->
 
 
 production:

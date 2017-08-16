@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## What is a manifest file?
 

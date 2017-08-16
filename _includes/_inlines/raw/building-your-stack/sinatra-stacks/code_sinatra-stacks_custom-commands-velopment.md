@@ -1,7 +1,4 @@
----
-layout: code
-post: sinatra-stacks_custom-commands.md
----
+<!-- post: sinatra-stacks_custom-commands -->
 
 
 development:

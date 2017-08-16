@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 # main domain
 server &#123;

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### GCE load balancer
 

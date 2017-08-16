@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### 2. Upload them to /tmp of your server
 

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## How do I add additional logs to LiveLogs?
 

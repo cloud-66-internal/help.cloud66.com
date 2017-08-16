@@ -1,7 +1,4 @@
----
-layout: code
-post: building-a-manifest-file_note.md
----
+<!-- post: building-a-manifest-file_note -->
 
 
 production:

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## How can I use GlusterFS in my application?
 Now that you have a share storage service provided by GlusterFS in your stack, you can use it in your application like a normal disk volume. By default, Cloud 66 will create and mount a shared volume on `/mnt/data-store` on every application server of your stack. 

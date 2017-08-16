@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Deploy with Passenger Enterprise
 

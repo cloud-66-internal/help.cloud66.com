@@ -1,7 +1,4 @@
----
-layout: code
-post: users_examples.md
----
+<!-- post: users_examples -->
 
 
 $ cx --org My_Awesome_org users apply-profile jack@gmail.com --json /tmp/jim_profile.json

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Accessing your servers behind the gateway server
 

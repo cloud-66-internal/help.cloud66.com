@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #### Enabler scripts/template
 Enabler scripts can be used to either build a template or directly spatially enable a database. This method is older than the extension method, but is required if the raster support is not built.

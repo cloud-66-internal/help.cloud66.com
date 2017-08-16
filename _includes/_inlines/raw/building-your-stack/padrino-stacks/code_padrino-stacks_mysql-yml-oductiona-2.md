@@ -1,7 +1,4 @@
----
-layout: code
-post: padrino-stacks_mysql-yml.md
----
+<!-- post: padrino-stacks_mysql-yml -->
 
 
 production:

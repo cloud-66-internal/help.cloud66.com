@@ -1,7 +1,4 @@
----
-layout: code
-post: application-settings-node_mysql.md
----
+<!-- post: application-settings-node_mysql -->
 
 
 var connection = mysql.createConnection({

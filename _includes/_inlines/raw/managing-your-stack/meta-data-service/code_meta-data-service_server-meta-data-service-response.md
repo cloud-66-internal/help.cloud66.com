@@ -1,7 +1,4 @@
----
-layout: code
-post: meta-data-service_server-meta-data-service.md
----
+<!-- post: meta-data-service_server-meta-data-service -->
 
 
 {

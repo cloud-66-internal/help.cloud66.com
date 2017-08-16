@@ -1,7 +1,4 @@
----
-layout: code
-post: building-a-manifest-file_external-servers.md
----
+<!-- post: building-a-manifest-file_external-servers -->
 
 
 production:

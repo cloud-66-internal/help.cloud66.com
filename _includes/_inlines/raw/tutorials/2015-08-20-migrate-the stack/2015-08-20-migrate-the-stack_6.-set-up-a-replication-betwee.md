@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### 6. Set up a replication between two stacks
 

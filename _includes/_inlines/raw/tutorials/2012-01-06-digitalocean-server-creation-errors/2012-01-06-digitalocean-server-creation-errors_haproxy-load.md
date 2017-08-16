@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### HAProxy Load Balancer Errors
 

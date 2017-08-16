@@ -1,7 +1,4 @@
----
-layout: code
-post: building-a-manifest-file_postgresql.md
----
+<!-- post: building-a-manifest-file_postgresql -->
 
 
 production:

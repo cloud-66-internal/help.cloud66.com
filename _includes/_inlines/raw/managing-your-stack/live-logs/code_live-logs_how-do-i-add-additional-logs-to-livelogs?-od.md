@@ -1,7 +1,4 @@
----
-layout: code
-post: live-logs_how-do-i-add-additional-logs-to-livelogs?.md
----
+<!-- post: live-logs_how-do-i-add-additional-logs-to-livelogs? -->
 
 
 production:    

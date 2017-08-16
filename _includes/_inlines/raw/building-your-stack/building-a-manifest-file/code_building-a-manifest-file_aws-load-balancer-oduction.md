@@ -1,7 +1,4 @@
----
-layout: code
-post: building-a-manifest-file_aws-load-balancer.md
----
+<!-- post: building-a-manifest-file_aws-load-balancer -->
 
 
 production:

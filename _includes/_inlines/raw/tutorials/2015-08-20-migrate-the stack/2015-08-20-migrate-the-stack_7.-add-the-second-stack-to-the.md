@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### 7. Add the second stack to the failover group
 

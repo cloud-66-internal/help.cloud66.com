@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Problem
 Sending emails with a service like [Mandrill](http://mandrill.com) or through a normal SMTP server from your Amazon AWS EC2 instances can result in intermittent timeouts.

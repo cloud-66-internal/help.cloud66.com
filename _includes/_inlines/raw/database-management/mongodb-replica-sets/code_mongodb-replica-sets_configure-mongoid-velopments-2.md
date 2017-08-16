@@ -1,7 +1,4 @@
----
-layout: code
-post: mongodb-replica-sets_configure-mongoid.md
----
+<!-- post: mongodb-replica-sets_configure-mongoid -->
 
 
 development:

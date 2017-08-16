@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Viewing your stack notifications
 

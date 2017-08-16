@@ -1,7 +1,4 @@
----
-layout: code
-post: 2016-01-21-docker-dependency_if-you-have-a-docker-stack-but.md
----
+<!-- post: 2016-01-21-docker-dependency_if-you-have-a-docker-stack-but -->
 
 
   services:

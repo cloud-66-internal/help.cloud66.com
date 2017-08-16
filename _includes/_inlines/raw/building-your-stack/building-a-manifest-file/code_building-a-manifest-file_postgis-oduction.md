@@ -1,7 +1,4 @@
----
-layout: code
-post: building-a-manifest-file_postgis.md
----
+<!-- post: building-a-manifest-file_postgis -->
 
 
 production:

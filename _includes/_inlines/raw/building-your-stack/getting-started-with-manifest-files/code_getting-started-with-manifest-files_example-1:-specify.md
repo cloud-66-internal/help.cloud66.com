@@ -1,7 +1,4 @@
----
-layout: code
-post: getting-started-with-manifest-files_example-1:-specifying-a.md
----
+<!-- post: getting-started-with-manifest-files_example-1:-specifying-a -->
 
 
 production:

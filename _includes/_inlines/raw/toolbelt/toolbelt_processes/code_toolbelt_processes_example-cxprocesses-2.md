@@ -1,7 +1,4 @@
----
-layout: code
-post: toolbelt_processes_example.md
----
+<!-- post: toolbelt_processes_example -->
 
 
 $ cx processes scale -s mystack --server backend1 --name worker [+5]

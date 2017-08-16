@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Is my yaml valid?
 

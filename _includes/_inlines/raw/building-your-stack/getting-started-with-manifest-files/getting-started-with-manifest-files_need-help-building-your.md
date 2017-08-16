@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Need Help Building your first stack?
 

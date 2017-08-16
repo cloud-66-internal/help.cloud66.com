@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Add a failover group
 To view your failover groups, click the _Failover Groups_ link on your _Dashboard_ page. To add a new failover group, click the _+_ button:

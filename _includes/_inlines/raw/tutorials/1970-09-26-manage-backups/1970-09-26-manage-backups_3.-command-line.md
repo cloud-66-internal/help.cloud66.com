@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### 3. Command line
 Use the `wget` command to download your backup:

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Prerequisites
 A number of prerequisites are needed, which can either be built from source or installed from pre-built packages, as shown below.

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Restart your stack
 

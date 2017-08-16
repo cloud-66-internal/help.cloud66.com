@@ -1,7 +1,4 @@
----
-layout: code
-post: deploy-hooks_use-a-command-deploy-hook.md
----
+<!-- post: deploy-hooks_use-a-command-deploy-hook -->
 
 
 production: # Environment

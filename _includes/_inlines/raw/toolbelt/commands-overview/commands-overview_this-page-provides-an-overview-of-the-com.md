@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #This page provides an overview of the commands available through the toolbelt.
 

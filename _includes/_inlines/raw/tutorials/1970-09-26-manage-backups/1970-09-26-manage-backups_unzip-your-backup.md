@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Unzip your backup
 Now that you have downloaded your backup, you can go ahead and unzip it with the following command:

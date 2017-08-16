@@ -1,7 +1,4 @@
----
-layout: code
-post: services_result.md
----
+<!-- post: services_result -->
 
 
 NAME             VALUE

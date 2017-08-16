@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Rackspace
 - 512MB Standard Instance

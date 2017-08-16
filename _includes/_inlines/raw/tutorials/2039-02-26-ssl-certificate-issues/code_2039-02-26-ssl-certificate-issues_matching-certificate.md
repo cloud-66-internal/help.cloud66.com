@@ -1,7 +1,4 @@
----
-layout: code
-post: 2039-02-26-ssl-certificate-issues_matching-certificates-and.md
----
+<!-- post: 2039-02-26-ssl-certificate-issues_matching-certificates-and -->
 
 
 $ openssl rsa -noout -modulus -in FILE.key

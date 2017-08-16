@@ -1,7 +1,4 @@
----
-layout: code
-post: application-settings-node_fire-up-some-workers-.md
----
+<!-- post: application-settings-node_fire-up-some-workers- -->
 
 
 web: node server.js

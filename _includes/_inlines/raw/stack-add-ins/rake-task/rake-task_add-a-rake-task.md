@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Add a rake task
 This add-in allows you to schedule the execution of rake tasks.

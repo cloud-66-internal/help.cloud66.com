@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Credit Card Information
 

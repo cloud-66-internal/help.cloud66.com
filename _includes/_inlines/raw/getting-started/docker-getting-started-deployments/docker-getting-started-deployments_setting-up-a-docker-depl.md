@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### 
     Setting up a Docker Deployment

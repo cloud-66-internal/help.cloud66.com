@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 #You may wish to set up a staging stack that can use data from your production stack, to provide realistic data in your staging environment. There are several ways you can do this:
 

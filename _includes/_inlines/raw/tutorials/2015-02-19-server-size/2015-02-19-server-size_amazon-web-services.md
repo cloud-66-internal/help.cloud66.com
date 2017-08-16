@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Amazon Web Services
 - t1.micro

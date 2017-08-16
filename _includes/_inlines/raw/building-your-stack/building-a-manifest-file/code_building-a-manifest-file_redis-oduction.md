@@ -1,7 +1,4 @@
----
-layout: code
-post: building-a-manifest-file_redis.md
----
+<!-- post: building-a-manifest-file_redis -->
 
 
 production:

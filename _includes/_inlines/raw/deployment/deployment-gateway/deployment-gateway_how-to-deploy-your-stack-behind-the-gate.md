@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## How to deploy your stack behind the gateway server
 

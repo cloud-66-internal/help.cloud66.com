@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## About using Rackspace cloud
 

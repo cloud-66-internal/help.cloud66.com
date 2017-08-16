@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## Add Filebeat to your stack
 To add Filebeat, access the add-ins menu of your stack and click _Filebeat_ under the _External Addins_ category.

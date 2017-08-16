@@ -1,7 +1,4 @@
----
-layout: code
-post: sinatra-stacks_mongoid.md
----
+<!-- post: sinatra-stacks_mongoid -->
 
 
 development:

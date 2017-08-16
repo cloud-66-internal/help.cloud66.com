@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ### Example 1: Single service with MySQL database
 

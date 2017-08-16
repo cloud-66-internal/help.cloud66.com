@@ -1,7 +1,4 @@
----
-layout: code
-post: cloud-aws_iam.md
----
+<!-- post: cloud-aws_iam -->
 
 
 {

@@ -1,6 +1,5 @@
----
-post: 
----
+<!-- post: -->
+
 
 ## About speeding up Rails deployments
 
