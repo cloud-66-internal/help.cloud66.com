@@ -1,5 +1,6 @@
 <!-- layout:code post: 2012-01-09-nginx-redirect_https -->
 
+```
 
 &#123;% if allow_ssl == true %&#125;
 server {
@@ -10,3 +11,5 @@ server {
     ssl_certificate /etc/ssl/localcerts/domaina.crt;
     rewrite ^ https://domainb.com$request_uri? permanent;
 }
+
+```

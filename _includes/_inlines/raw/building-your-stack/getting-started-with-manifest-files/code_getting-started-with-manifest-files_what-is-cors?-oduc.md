@@ -1,5 +1,6 @@
 <!-- layout:code post: getting-started-with-manifest-files_what-is-cors? -->
 
+```
 
 production:
     docker:
@@ -8,3 +9,5 @@ production:
                 cors:
                     origin: '*'
                     methods: 'GET, OPTIONS'
+
+```

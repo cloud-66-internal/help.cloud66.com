@@ -1,5 +1,6 @@
 <!-- layout:code post: padrino-stacks_mongoid -->
 
+```
 
 development:
   sessions:
@@ -7,3 +8,5 @@ development:
       database: mongoid
       hosts: ["
 :27017"]
+
+```

@@ -1,5 +1,6 @@
 <!-- layout:code post: rails-stacks_note -->
 
+```
 
 development:
     adapter: postgresql
@@ -11,3 +12,5 @@ development:
 
     host: 
 
+
+```

@@ -1,5 +1,6 @@
 <!-- layout:code post: advanced-deploy_what-is-service-configuration? -->
 
+```
 
 ---
 services:
@@ -18,3 +19,5 @@ services:
       RACK_ENV: production  
 databases:
 - mysql
+
+```

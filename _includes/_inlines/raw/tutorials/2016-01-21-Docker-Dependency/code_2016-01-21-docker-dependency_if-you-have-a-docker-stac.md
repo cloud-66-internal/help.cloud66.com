@@ -1,5 +1,6 @@
 <!-- layout:code post: 2016-01-21-docker-dependency_if-you-have-a-docker-stack-but -->
 
+```
 
   services:
   web:
@@ -25,3 +26,4 @@
 databases:
   - "DATABASE_NAME"
    
+```

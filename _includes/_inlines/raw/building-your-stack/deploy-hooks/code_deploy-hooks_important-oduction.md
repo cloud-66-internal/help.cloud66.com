@@ -1,5 +1,6 @@
 <!-- layout:code post: deploy-hooks_important -->
 
+```
 
 production: # Environment
     last_thing: # Hook point
@@ -7,3 +8,5 @@ production: # Environment
         target: rails # Hook fields ↓
         run_on: single_server
         apply_during: build_only
+
+```

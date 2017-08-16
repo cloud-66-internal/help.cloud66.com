@@ -1,5 +1,6 @@
 <!-- layout:code post: 1925-09-26-websocket-support_test-your-websocket-server -->
 
+```
 
 &#60;html&#62;
   &#60;head&#62;
@@ -29,3 +30,5 @@
     &#60;div id="msg"&#62;&#60;/div&#62;
   &#60;/body&#62;
 &#60;/html&#62;
+
+```

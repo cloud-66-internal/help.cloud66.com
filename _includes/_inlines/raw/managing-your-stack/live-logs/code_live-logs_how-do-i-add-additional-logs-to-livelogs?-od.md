@@ -1,5 +1,6 @@
 <!-- layout:code post: live-logs_how-do-i-add-additional-logs-to-livelogs? -->
 
+```
 
 production:    
     docker:
@@ -10,3 +11,5 @@ production:
             custom_log_files: 
             - "/another_mysql_dump_log/*.log"
             - "/var/log/mysql/error.log"
+
+```

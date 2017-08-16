@@ -1,5 +1,6 @@
 <!-- layout:code post: advanced-deploy_what-is-a-manifest-file? -->
 
+```
 
 production:
     docker:
@@ -12,3 +13,5 @@ production:
                 size: m3.medium
                 vendor: aws
                 key_name: Default
+
+```

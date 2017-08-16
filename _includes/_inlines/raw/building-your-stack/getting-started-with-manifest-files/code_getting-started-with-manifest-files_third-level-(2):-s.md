@@ -1,5 +1,6 @@
 <!-- layout:code post: getting-started-with-manifest-files_third-level-(2):-server -->
 
+```
 
 production:
     docker:
@@ -10,3 +11,5 @@ production:
                 size: m3.medium
                 vendor: aws
                 key_name: Default
+
+```

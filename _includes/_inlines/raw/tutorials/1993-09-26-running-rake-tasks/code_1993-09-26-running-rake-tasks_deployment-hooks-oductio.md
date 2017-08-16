@@ -1,5 +1,6 @@
 <!-- layout:code post: 1993-09-26-running-rake-tasks_deployment-hooks -->
 
+```
 
 production:
   after&#95;rails:
@@ -10,3 +11,5 @@ production:
       run&#95;on: all&#95;servers
       apply&#95;during: all
       sudo: true
+
+```

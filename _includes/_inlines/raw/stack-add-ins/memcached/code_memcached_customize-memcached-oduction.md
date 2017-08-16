@@ -1,5 +1,6 @@
 <!-- layout:code post: memcached_customize-memcached -->
 
+```
 
 production:
     memcached:
@@ -8,3 +9,5 @@ production:
             memory: 1024
             port: 11215
             listen&#95;ip: 127.0.0.1
+
+```

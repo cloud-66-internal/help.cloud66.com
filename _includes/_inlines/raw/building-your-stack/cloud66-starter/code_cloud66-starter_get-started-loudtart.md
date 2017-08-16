@@ -1,5 +1,6 @@
 <!-- layout:code post: cloud66-starter_get-started -->
 
+```
 
  Cloud 66 Starter ~ (c) 2015 Cloud 66
  Detecting framework for the project at /Users/awesome/work/boom
@@ -22,3 +23,5 @@
  ----> Writing Dockerfile...
  ----> Writing service.yml...
  Done
+
+```
