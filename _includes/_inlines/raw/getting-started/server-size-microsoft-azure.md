@@ -1,3 +1,0 @@
-### Microsoft Azure
-- A0
-

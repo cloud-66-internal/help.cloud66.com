@@ -1,7 +1,0 @@
----
-layout: code
----
-
-result
---------
-t

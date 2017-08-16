@@ -1,0 +1,6 @@
+---
+post: 
+---
+
+## Manifest file examples
+

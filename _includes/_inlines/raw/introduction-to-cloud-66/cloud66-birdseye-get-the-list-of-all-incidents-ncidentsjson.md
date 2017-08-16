@@ -1,5 +1,0 @@
----
-layout: code
----
-
-/incidents.json

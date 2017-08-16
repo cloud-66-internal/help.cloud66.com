@@ -1,5 +1,0 @@
----
-layout: code
----
-
-type:server

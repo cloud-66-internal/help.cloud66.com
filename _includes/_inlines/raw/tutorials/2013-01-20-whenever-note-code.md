@@ -1,4 +1,0 @@
----
-layout: code
----
-crontab -l

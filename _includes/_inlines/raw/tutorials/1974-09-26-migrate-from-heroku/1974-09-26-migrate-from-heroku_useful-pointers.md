@@ -1,0 +1,6 @@
+---
+post: 
+---
+
+## Useful pointers
+

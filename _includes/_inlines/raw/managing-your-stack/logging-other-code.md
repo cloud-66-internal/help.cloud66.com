@@ -1,4 +1,0 @@
----
-layout: code
----
-/var/log

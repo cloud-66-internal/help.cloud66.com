@@ -1,2 +1,0 @@
-## List your stack settings
-
