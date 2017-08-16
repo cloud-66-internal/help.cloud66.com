@@ -7,7 +7,7 @@
  * --------------------------------------------------------- */
 .heros {
 
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: 40px;
 
     a {
@@ -15,8 +15,9 @@
         outline: none;
         width: 200px;
         height: 150px;
-        border: 1px solid blue;
-        border-radius: 50px;
+        border: 2px solid #e0e0e0;
+        border-radius: 10%;
+        margin: 15px;
         &:hover {
             text-decoration: none;
         }
@@ -25,17 +26,20 @@
             margin-top: 10px;
         }
         i {
-            font-size: 3rem;
+            font-size: 1rem;
             color: blue;
         }
         .hero-title {
             margin: 0;
             line-height: 1.6;
             font-weight: 900;
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             margin-top: 50px;
 
         }
+    }
+    a:hover{
+        background-color: #e0e0e0;
     }
 }
 
