@@ -3,7 +3,6 @@
         {% for collection in site.collections %}
         {% unless collection.label == 'posts' %}
         <a href="{{ collection.label }}">
-            <i class="gen-enclosed {{ collection.icon }}"></i>
             <h2 class="hero-title">{{ collection.label }}</h2>
         </a>
         {% endunless %}
