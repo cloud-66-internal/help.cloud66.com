@@ -1,4 +1,0 @@
-* Development
-* QA
-* Staging
-* Production

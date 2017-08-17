@@ -1,1 +1,0 @@
-A Rails app listens to port 3000 so we should map the container port __3000__ to the public Internet ports __80__ and __443__. Click the connector icon (circled in red above) to update the __container port__ and __public internet ports__.
