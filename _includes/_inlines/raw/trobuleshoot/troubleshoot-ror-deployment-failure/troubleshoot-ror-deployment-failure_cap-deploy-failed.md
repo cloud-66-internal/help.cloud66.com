@@ -1,3 +1,5 @@
+<!-- post: -->
+
 ## Cap deploy failed
 
 For deploying Rails stack C66 uses capistrano, so if your deployment fails during the capistrano you'll see this error **Cap deploy failed** To see why it's faild you need to:

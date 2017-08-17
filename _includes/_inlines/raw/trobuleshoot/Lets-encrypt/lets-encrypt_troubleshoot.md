@@ -1,10 +1,12 @@
+<!-- post: -->
+
 ## Troubleshoot
 
 If during Lets Encrypt installation you get an error including something like this:
 
 
 
-{%include _inlines/path_to_code %}
+{%include _inlines/Lets-encrypt/code_lets-encrypt_troubleshoot-otefileto.md %}
 
 
 
