@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-### Stop
+## Stop
 
 To stop a specific process:
 

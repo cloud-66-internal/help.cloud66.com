@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-### Load a process
+## Load a process
 
 To load a `.pill` file into bluepill:
 

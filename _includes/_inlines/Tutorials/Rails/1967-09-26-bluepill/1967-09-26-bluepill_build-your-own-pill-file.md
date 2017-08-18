@@ -1,9 +1,9 @@
 <!-- post: -->
 
 
-### Build your own pill file
+## Build your own pill file
 
-To build your own process with Bluepill, please refer to this [page](https://github.com/arya/bluepill#usage).
+To build your own process with Bluepill, please refer to this [page](https://github.com/bluepill-rb/bluepill).
 
 Don't forget to add a log file in your pill config. For instance:
 

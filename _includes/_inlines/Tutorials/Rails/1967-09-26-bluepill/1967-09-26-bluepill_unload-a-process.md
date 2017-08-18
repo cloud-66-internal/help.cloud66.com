@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-### Unload a process
+## Unload a process
 
 To quit a process from bluepill:
 

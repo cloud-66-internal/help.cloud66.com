@@ -1,9 +1,9 @@
 <!-- post: -->
 
 
-### Note
+## Note
 
-		Also remember that we configure the pill files to log to `&lt;STACK&#95;PATH&gt;/log` folder.
+Also remember that we configure the pill files to log to `<STACK_PATH>/log` folder.
 
 
 

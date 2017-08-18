@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-#### 1. RAILS&#95;ROOT/.cloud66/deploy&#95;hooks.yml
+### 1. RAILS&#95;ROOT/.cloud66/deploy&#95;hooks.yml
 
 [Deploy hooks](http://help.cloud66.com/deployment/deploy-hooks) allow you to take action at various points during a build and/or deployment on Cloud 66. This one will run the bash script that we will create in the next step before Rails is installed on your server.
 
