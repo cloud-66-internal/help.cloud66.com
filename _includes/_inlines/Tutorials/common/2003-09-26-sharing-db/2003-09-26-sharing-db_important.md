@@ -14,7 +14,8 @@ You will then reference the database credentials from your first stack in the da
 
 
 
-{%include _inlines/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important-.md %}
+{%include _inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important-.md %}
+
 
 
 
@@ -22,7 +23,8 @@ For example, your environment variables would be set like this:
 
 
 
-{%include _inlines/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important--2.md %}
+{%include _inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important--2.md %}
+
 
 
 
@@ -30,6 +32,7 @@ Database credentials such as username and password are not available for cross-s
 
 
 
-{%include _inlines/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important-ernamepas.md %}
+{%include _inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important-ernamepas.md %}
+
 
 

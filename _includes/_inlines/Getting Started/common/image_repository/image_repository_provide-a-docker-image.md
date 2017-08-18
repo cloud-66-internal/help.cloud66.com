@@ -7,7 +7,8 @@ The source of your Docker image, which can come from a private repository that t
 
 
 
-{%include _inlines/image_repository/code_image_repository_provide-a-docker-image-tnamespaceg.md %}
+{%include _inlines/Getting Started/common/image_repository/code_image_repository_provide-a-docker-image-tnamespaceg.md %}
+
 
 
 
@@ -15,7 +16,8 @@ If you are pulling a public image from Docker Hub, use the following format:
 
 
 
-{%include _inlines/image_repository/code_image_repository_provide-a-docker-image-tnamespaceg-2..md %}
+{%include _inlines/Getting Started/common/image_repository/code_image_repository_provide-a-docker-image-tnamespaceg-2..md %}
+
 
 
 
@@ -23,7 +25,8 @@ If you are using [Quay.io](https://quay.io/) for your image repository, you will
 
 
 
-{%include _inlines/image_repository/code_image_repository_provide-a-docker-image-ayioltnam.md %}
+{%include _inlines/Getting Started/common/image_repository/code_image_repository_provide-a-docker-image-ayioltnam.md %}
+
 
 
 
@@ -31,7 +34,8 @@ If you are using [Google Container Registry](https://cloud.google.com/container-
 
 
 
-{%include _inlines/image_repository/code_image_repository_provide-a-docker-image-rioltproj.md %}
+{%include _inlines/Getting Started/common/image_repository/code_image_repository_provide-a-docker-image-rioltproj.md %}
+
 
 
 

@@ -7,6 +7,7 @@ If you want to connect to your servers behind the bastion server firstly you wil
 
 
 
-{%include _inlines/deployment-gateway/code_deployment-gateway_accessing-your-servers-behind-the-g.md %}
+{%include _inlines/Deployment/common/deployment-gateway/code_deployment-gateway_accessing-your-servers-behind-the-g.md %}
+
 
 

@@ -6,7 +6,8 @@ CX detects the IP that you get by searching "what is my IP" on google. Some netw
 
 
 
-{%include _inlines/ssh/code_ssh_detected-ip-is-different-leaseslt.md %}
+{%include _inlines/StackManagement/common/ssh/code_ssh_detected-ip-is-different-leaseslt.md %}
+
 
 
 

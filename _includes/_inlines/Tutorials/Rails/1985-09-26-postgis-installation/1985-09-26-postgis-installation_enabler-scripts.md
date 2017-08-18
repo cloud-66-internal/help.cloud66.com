@@ -10,7 +10,8 @@ PostGIS:
 
 
 
-{%include _inlines/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_enabler-scripts-sudoup.md %}
+{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_enabler-scripts-sudoup.md %}
+
 
 
 
@@ -18,7 +19,8 @@ With raster support:
 
 
 
-{%include _inlines/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_enabler-scripts-sudoup.md %}
+{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_enabler-scripts-sudoup.md %}
+
 
 
 
@@ -26,6 +28,7 @@ With topology support:
 
 
 
-{%include _inlines/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_enabler-scripts-sudoup.md %}
+{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_enabler-scripts-sudoup.md %}
+
 
 

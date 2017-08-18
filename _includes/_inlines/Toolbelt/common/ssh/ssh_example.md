@@ -5,6 +5,7 @@
 
 
 
-{%include _inlines/ssh/code_ssh_example-cxsshsy.md %}
+{%include _inlines/Toolbelt/common/ssh/code_ssh_example-cxsshsy.md %}
+
 
 

@@ -9,7 +9,8 @@ To run a Thin Rack server, add a line to your Procfile labeled as custom&#95;web
 
 
 
-{%include _inlines/thin-rack-server/code_thin-rack-server_deploy-with-thin-stomweb.md %}
+{%include _inlines/Deployment/Rails/thin-rack-server/code_thin-rack-server_deploy-with-thin-stomweb.md %}
+
 
 
 

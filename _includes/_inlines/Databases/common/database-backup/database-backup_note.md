@@ -10,7 +10,8 @@ Please take a backup from Redis data file before deleting it to be able to resto
 
 
 
-{%include _inlines/database-backup/code_database-backup_note-sudormrf-2-3.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backup_note-sudormrf-2-3.md %}
+
 
 
 
@@ -18,7 +19,8 @@ Please take a backup from Redis data file before deleting it to be able to resto
 
 
 
-{%include _inlines/database-backup/code_database-backup_note-sudocpap-2.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backup_note-sudocpap-2.md %}
+
 
 
 
@@ -26,7 +28,8 @@ Please take a backup from Redis data file before deleting it to be able to resto
 
 
 
-{%include _inlines/database-backup/code_database-backup_note-sudochown-2-3.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backup_note-sudochown-2-3.md %}
+
 
 
 
@@ -34,7 +37,8 @@ Please take a backup from Redis data file before deleting it to be able to resto
 
 
 
-{%include _inlines/database-backup/code_database-backup_note-sudobluepill.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backup_note-sudobluepill.md %}
+
 
 
 

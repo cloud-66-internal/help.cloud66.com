@@ -9,7 +9,8 @@ If you would like more flexibility over the signals used to control the processe
 
 
 
-{%include _inlines/building-a-manifest-file/code_building-a-manifest-file_processes-oductionp.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_processes-oductionp.md %}
+
 
 
 

@@ -9,7 +9,8 @@ To change the test interval to every 30 seconds (instead of the default 2 second
 
 
 
-{%include _inlines/haproxy/code_haproxy_specify-an-haproxy-test-interval-verweb.md %}
+{%include _inlines/AddOns/common/haproxy/code_haproxy_specify-an-haproxy-test-interval-verweb.md %}
+
 
 
 
@@ -17,7 +18,8 @@ Please note the `inter 3000` at the end - this defines the test interval as 3000
 
 
 
-{%include _inlines/haproxy/code_haproxy_specify-an-haproxy-test-interval-verweb-2.md %}
+{%include _inlines/AddOns/common/haproxy/code_haproxy_specify-an-haproxy-test-interval-verweb-2.md %}
+
 
 
 

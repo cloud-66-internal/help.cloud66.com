@@ -9,7 +9,8 @@ To assign a unique identifier to your process (for example with Sidekiq), use th
 
 
 
-{%include _inlines/proc-files/code_proc-files_running-processes-with-unique-identifiers-r.md %}
+{%include _inlines/Deployment/common/proc-files/code_proc-files_running-processes-with-unique-identifiers-r.md %}
+
 
 
 

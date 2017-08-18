@@ -9,7 +9,8 @@ You can set your own by either manually entering them, or uploading a file that 
 
 
 
-{%include _inlines/env-vars/code_env-vars_assign-environment-variables-for-deployment-v.md %}
+{%include _inlines/Deployment/common/env-vars/code_env-vars_assign-environment-variables-for-deployment-v.md %}
+
 
 
 

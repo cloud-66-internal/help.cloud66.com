@@ -7,7 +7,8 @@ The Git repository branch your Docker image will be based on, for example `maste
 
 
 
-{%include _inlines/building-your-service/code_building-your-service_git-branch-rvices.md %}
+{%include _inlines/Deployment/common/building-your-service/code_building-your-service_git-branch-rvices.md %}
+
 
 
 

@@ -7,7 +7,8 @@ If your application binds to a port, we need to expose it to the internet and ma
 
 
 
-{%include _inlines/application-settings-node/code_application-settings-node_expose-your-host-port-rportp.md %}
+{%include _inlines/Deployment/Node/application-settings-node/code_application-settings-node_expose-your-host-port-rportp.md %}
+
 
 
 

@@ -9,7 +9,8 @@ This sample will run an app in a container and by default the folder `/log` and 
 
 
 
-{%include _inlines/2016-04-07-logs-for-containers/code_2016-04-07-logs-for-containers_if-you-are-confused-why.md %}
+{%include _inlines/Tutorials/common/2016-04-07-logs-for-containers/code_2016-04-07-logs-for-containers_if-you-are-confused-why.md %}
+
 
 
 

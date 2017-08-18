@@ -14,6 +14,7 @@ To solve the issue of manual restarts with Puma, you can use an _after_rails_ [d
 
 
 
-{%include _inlines/puma-rack-server/code_puma-rack-server_warning-dleexecpuma.md %}
+{%include _inlines/Deployment/Rails/puma-rack-server/code_puma-rack-server_warning-dleexecpuma.md %}
+
 
 

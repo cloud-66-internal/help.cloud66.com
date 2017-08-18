@@ -12,6 +12,7 @@ In this case, the easiest thing to do is to use the [Cloud 66 toolbelt](http://h
 
 
 
-{%include _inlines/2014-09-26-local-cached-copy-error/code_2014-09-26-local-cached-copy-error_when-you-deploy-to-.md %}
+{%include _inlines/Tutorials/common/2014-09-26-local-cached-copy-error/code_2014-09-26-local-cached-copy-error_when-you-deploy-to-.md %}
+
 
 

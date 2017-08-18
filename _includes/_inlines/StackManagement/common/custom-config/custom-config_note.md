@@ -12,7 +12,8 @@ If we cannot automatically apply the patch, you will be notified and provided wi
 
 
 
-{%include _inlines/custom-config/code_custom-config_note-tchltcurre.md %}
+{%include _inlines/StackManagement/common/custom-config/code_custom-config_note-tchltcurre.md %}
+
 
 
 

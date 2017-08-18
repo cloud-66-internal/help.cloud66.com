@@ -14,7 +14,8 @@ Through the [AWS ELB command line interface](http://aws.amazon.com/developertool
 
 
 
-{%include _inlines/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md %}
+{%include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md %}
+
 
 
 
@@ -22,7 +23,8 @@ Through the [AWS ELB command line interface](http://aws.amazon.com/developertool
 
 
 
-{%include _inlines/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md %}
+{%include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md %}
+
 
 
 
@@ -30,7 +32,8 @@ Through the [AWS ELB command line interface](http://aws.amazon.com/developertool
 
 
 
-{%include _inlines/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md %}
+{%include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md %}
+
 
 
 
@@ -38,7 +41,8 @@ Through the [AWS ELB command line interface](http://aws.amazon.com/developertool
 
 
 
-{%include _inlines/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md %}
+{%include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md %}
+
 
 
 

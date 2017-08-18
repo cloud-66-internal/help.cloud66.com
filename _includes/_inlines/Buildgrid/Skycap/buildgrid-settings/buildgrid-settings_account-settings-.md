@@ -7,7 +7,7 @@ The following examples assume a value of `fantastic` for your Image Namespace - 
 
 
 
-{% include _inlines/raw/account-management/buildgrid-settings/code_buildgrid-settings_account-settings--gistrybuildg.md %}
+{% include _inlines/Buildgrid/Skycap/buildgrid-settings/code_buildgrid-settings_account-settings--gistrybuildg.md %}
 
 
 

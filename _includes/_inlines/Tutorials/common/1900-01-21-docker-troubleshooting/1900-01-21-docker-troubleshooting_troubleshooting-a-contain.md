@@ -11,7 +11,8 @@ If your container has started, but isn't outputting the expected results, you ca
 
 
 
-{%include _inlines/1900-01-21-docker-troubleshooting/code_1900-01-21-docker-troubleshooting_troubleshooting-a-co.md %}
+{%include _inlines/Tutorials/common/1900-01-21-docker-troubleshooting/code_1900-01-21-docker-troubleshooting_troubleshooting-a-co.md %}
+
 
 
 

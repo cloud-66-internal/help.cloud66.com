@@ -5,6 +5,7 @@
 
 
 
-{%include _inlines/tail/code_tail_example-cxtails.md %}
+{%include _inlines/Toolbelt/common/tail/code_tail_example-cxtails.md %}
+
 
 

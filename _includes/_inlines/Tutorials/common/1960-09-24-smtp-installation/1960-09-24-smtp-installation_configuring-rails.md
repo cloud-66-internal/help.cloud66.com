@@ -7,6 +7,7 @@ Add the following code (or variation thereof) to your Rails application environm
 
 
 
-{%include _inlines/1960-09-24-smtp-installation/code_1960-09-24-smtp-installation_configuring-rails-nfigact.md %}
+{%include _inlines/Tutorials/common/1960-09-24-smtp-installation/code_1960-09-24-smtp-installation_configuring-rails-nfigact.md %}
+
 
 

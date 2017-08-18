@@ -5,7 +5,8 @@
 
 
 
-{%include _inlines/sinatra-stacks/code_sinatra-stacks_mongoid-velopment.md %}
+{%include _inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_mongoid-velopment.md %}
+
 
 
 

@@ -5,6 +5,7 @@
 
 
 
-{%include _inlines/easydeploys/code_easydeploys_example-cxeasydeploy.md %}
+{%include _inlines/Toolbelt/Maestro/easydeploys/code_easydeploys_example-cxeasydeploy.md %}
+
 
 

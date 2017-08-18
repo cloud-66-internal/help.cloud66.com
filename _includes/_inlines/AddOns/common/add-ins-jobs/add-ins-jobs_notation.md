@@ -7,7 +7,8 @@ Jobs use a facility in the shell called _positional parameters_. Positional para
 
 
 
-{%include _inlines/add-ins-jobs/code_add-ins-jobs_notation-ls.md %}
+{%include _inlines/AddOns/common/add-ins-jobs/code_add-ins-jobs_notation-ls.md %}
+
 
 
 

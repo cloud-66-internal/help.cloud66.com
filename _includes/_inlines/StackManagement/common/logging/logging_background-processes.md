@@ -7,13 +7,15 @@ Logs for background processes can also be found in `$STACK_PATH/log`, and depend
 
 *   Process log: 
 
-{%include _inlines/logging/code_logging_background-processes-log.md %}
+{%include _inlines/StackManagement/common/logging/code_logging_background-processes-log.md %}
+
 
 
 
 *   Process bluepill log: 
 
-{%include _inlines/logging/code_logging_background-processes-log-2.md %}
+{%include _inlines/StackManagement/common/logging/code_logging_background-processes-log-2.md %}
+
 
 
 

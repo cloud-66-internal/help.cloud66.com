@@ -38,7 +38,8 @@ To reference to an environment variable on other services you can use
 
 
 
-{%include _inlines/env-vars/code_env-vars_define-referenced-environment-variable-.md %}
+{%include _inlines/Deployment/common/env-vars/code_env-vars_define-referenced-environment-variable-.md %}
+
 
 
 
@@ -48,7 +49,8 @@ If you are not using prefix/suffix in environment variable definition, you can u
 
 
 
-{%include _inlines/env-vars/code_env-vars_define-referenced-environment-variable--2.md %}
+{%include _inlines/Deployment/common/env-vars/code_env-vars_define-referenced-environment-variable--2.md %}
+
 
 
 

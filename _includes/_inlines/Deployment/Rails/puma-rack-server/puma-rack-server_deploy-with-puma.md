@@ -9,7 +9,8 @@ To run a Puma Rack server, add a line to your Procfile labeled as custom&#95;web
 
 
 
-{%include _inlines/puma-rack-server/code_puma-rack-server_deploy-with-puma-stomweb.md %}
+{%include _inlines/Deployment/Rails/puma-rack-server/code_puma-rack-server_deploy-with-puma-stomweb.md %}
+
 
 
 

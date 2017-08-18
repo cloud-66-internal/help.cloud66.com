@@ -7,7 +7,8 @@ From the [MySQL command-line](http://dev.mysql.com/doc/refman/5.5/en/mysql.html)
 
 
 
-{%include _inlines/1970-09-26-manage-backups/code_1970-09-26-manage-backups_mysql-database-mysqlu.md %}
+{%include _inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_mysql-database-mysqlu.md %}
+
 
 
 

@@ -7,7 +7,8 @@ To get started [download the executable](http://app.cloud66.com/starter) and run
 
 
 
-{%include _inlines/cloud66-starter/code_cloud66-starter_get-started-cdmyprojec.md %}
+{%include _inlines/Deployment/common/cloud66-starter/code_cloud66-starter_get-started-cdmyprojec.md %}
+
 
 
 
@@ -15,7 +16,8 @@ This will analyze the project in the current folder and generate the two files: 
 
 
 
-{%include _inlines/cloud66-starter/code_cloud66-starter_get-started-loudtart.md %}
+{%include _inlines/Deployment/common/cloud66-starter/code_cloud66-starter_get-started-loudtart.md %}
+
 
 
 
@@ -25,7 +27,8 @@ To use starter on a different folder, you can use the `p` option:
 
 
 
-{%include _inlines/cloud66-starter/code_cloud66-starter_get-started-starterpm.md %}
+{%include _inlines/Deployment/common/cloud66-starter/code_cloud66-starter_get-started-starterpm.md %}
+
 
 
 
@@ -33,7 +36,8 @@ For more options, please see:
 
 
 
-{%include _inlines/cloud66-starter/code_cloud66-starter_get-started-starterhel.md %}
+{%include _inlines/Deployment/common/cloud66-starter/code_cloud66-starter_get-started-starterhel.md %}
+
 
 
 

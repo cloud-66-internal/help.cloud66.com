@@ -7,7 +7,8 @@ Each stack on Cloud 66 has its own private CustomConfig git repository. You can 
 
 
 
-{%include _inlines/custom-git-repository/code_custom-git-repository_getting-started-with-customconfi.md %}
+{%include _inlines/StackManagement/common/custom-git-repository/code_custom-git-repository_getting-started-with-customconfi.md %}
+
 
 
 

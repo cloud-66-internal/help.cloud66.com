@@ -5,19 +5,22 @@
 
 
 
-{%include _inlines/stacks/code_stacks_examples-cxstacksred.md %}
+{%include _inlines/Toolbelt/common/stacks/code_stacks_examples-cxstacksred.md %}
 
 
 
 
 
-{%include _inlines/stacks/code_stacks_examples-cxstacksred-2.md %}
+
+{%include _inlines/Toolbelt/common/stacks/code_stacks_examples-cxstacksred-2.md %}
 
 
 
 
 
-{%include _inlines/stacks/code_stacks_examples-cxstacksred-2-3.md %}
+
+{%include _inlines/Toolbelt/common/stacks/code_stacks_examples-cxstacksred-2-3.md %}
+
 
 
 

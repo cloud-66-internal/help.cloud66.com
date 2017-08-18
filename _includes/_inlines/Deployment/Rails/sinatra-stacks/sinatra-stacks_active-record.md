@@ -7,7 +7,8 @@
 
 
 
-{%include _inlines/sinatra-stacks/code_sinatra-stacks_active-record-oductiona.md %}
+{%include _inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_active-record-oductiona.md %}
+
 
 
 
@@ -15,7 +16,8 @@
 
 
 
-{%include _inlines/sinatra-stacks/code_sinatra-stacks_active-record-oductiona-2.md %}
+{%include _inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_active-record-oductiona-2.md %}
+
 
 
 
@@ -23,7 +25,8 @@
 
 
 
-{%include _inlines/sinatra-stacks/code_sinatra-stacks_active-record-tiveecord.md %}
+{%include _inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_active-record-tiveecord.md %}
+
 
 
 

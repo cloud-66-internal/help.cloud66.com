@@ -7,7 +7,8 @@ Imagine you have two services (I've used two for simplicity) called `web` and `a
 
 
 
-{%include _inlines/2016-01-21-Docker-Dependency/code_2016-01-21-docker-dependency_if-you-have-a-docker-stac.md %}
+{%include _inlines/Tutorials/common/2016-01-21-Docker-Dependency/code_2016-01-21-docker-dependency_if-you-have-a-docker-stac.md %}
+
 
 
 
@@ -17,6 +18,7 @@ Imagine you have two services (I've used two for simplicity) called `web` and `a
 
 
 
-{%include _inlines/2016-01-21-Docker-Dependency/code_2016-01-21-docker-dependency_if-you-have-a-docker-stac.md %}
+{%include _inlines/Tutorials/common/2016-01-21-Docker-Dependency/code_2016-01-21-docker-dependency_if-you-have-a-docker-stac.md %}
+
 
 

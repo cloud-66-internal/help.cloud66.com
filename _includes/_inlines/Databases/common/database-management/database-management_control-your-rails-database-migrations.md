@@ -9,7 +9,8 @@ You can control your Rails database migrations by setting `run.deploy.command` o
 
 
 
-{%include _inlines/database-management/code_database-management_control-your-rails-database-migrat.md %}
+{%include _inlines/Databases/common/database-management/code_database-management_control-your-rails-database-migrat.md %}
+
 
 
 

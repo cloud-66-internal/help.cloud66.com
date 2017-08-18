@@ -7,7 +7,8 @@ To make a change to a CustomConfig file you need to first clone the stack's Cust
 
 
 
-{%include _inlines/custom-git-repository/code_custom-git-repository_making-changes-to-customconfig-f.md %}
+{%include _inlines/StackManagement/common/custom-git-repository/code_custom-git-repository_making-changes-to-customconfig-f.md %}
+
 
 
 
@@ -19,7 +20,8 @@ Now open the file you want to change in your favourite text editor. Once done, s
 
 
 
-{%include _inlines/custom-git-repository/code_custom-git-repository_making-changes-to-customconfig-f.md %}
+{%include _inlines/StackManagement/common/custom-git-repository/code_custom-git-repository_making-changes-to-customconfig-f.md %}
+
 
 
 

@@ -7,7 +7,8 @@ Below is a bare-bone example of using a snippet with the required fields - it wi
 
 
 
-{%include _inlines/deploy-hooks/code_deploy-hooks_use-a-snippet-deploy-hook-oduction.md %}
+{%include _inlines/Deployment/common/deploy-hooks/code_deploy-hooks_use-a-snippet-deploy-hook-oduction.md %}
+
 
 
 
@@ -15,7 +16,8 @@ You can also run several snippets at the same hook point like follows:
 
 
 
-{%include _inlines/deploy-hooks/code_deploy-hooks_use-a-snippet-deploy-hook-oduction-2.md %}
+{%include _inlines/Deployment/common/deploy-hooks/code_deploy-hooks_use-a-snippet-deploy-hook-oduction-2.md %}
+
 
 
 

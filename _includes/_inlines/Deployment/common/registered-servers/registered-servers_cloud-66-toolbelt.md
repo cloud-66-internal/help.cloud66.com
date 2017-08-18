@@ -7,7 +7,8 @@ You can run the command below to register your servers using the [toolbelt](http
 
 
 
-{%include _inlines/registered-servers/code_registered-servers_cloud-66-toolbelt-cxregisters.md %}
+{%include _inlines/Deployment/common/registered-servers/code_registered-servers_cloud-66-toolbelt-cxregisters.md %}
+
 
 
 
@@ -17,7 +18,8 @@ To add tags to the registered servers, use the `tags` option:
 
 
 
-{%include _inlines/registered-servers/code_registered-servers_cloud-66-toolbelt-cxregisters-2.md %}
+{%include _inlines/Deployment/common/registered-servers/code_registered-servers_cloud-66-toolbelt-cxregisters-2.md %}
+
 
 
 

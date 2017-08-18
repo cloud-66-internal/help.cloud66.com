@@ -9,7 +9,8 @@ To create the symbolic link, your deploy hook script could contain this:
 
 
 
-{%include _inlines/1936-09-26-symlink-folders/code_1936-09-26-symlink-folders_symbolic-link-dirp.md %}
+{%include _inlines/Tutorials/common/1936-09-26-symlink-folders/code_1936-09-26-symlink-folders_symbolic-link-dirp.md %}
+
 
 
 
@@ -20,6 +21,7 @@ The deploy hook would look like this:
 
 
 
-{%include _inlines/1936-09-26-symlink-folders/code_1936-09-26-symlink-folders_symbolic-link-oduction.md %}
+{%include _inlines/Tutorials/common/1936-09-26-symlink-folders/code_1936-09-26-symlink-folders_symbolic-link-oduction.md %}
+
 
 

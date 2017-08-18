@@ -5,7 +5,8 @@
 
 
 
-{%include _inlines/stacks/code_stacks_example-cxstackslis.md %}
+{%include _inlines/Toolbelt/common/stacks/code_stacks_example-cxstackslis.md %}
+
 
 
 

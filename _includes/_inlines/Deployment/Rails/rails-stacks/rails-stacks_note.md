@@ -12,7 +12,8 @@ You can use [Yamllint.com](http://yamllint.com/) to check your YAML syntax befor
 
 
 
-{%include _inlines/rails-stacks/code_rails-stacks_note-velopment.md %}
+{%include _inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-velopment.md %}
+
 
 
 
@@ -20,7 +21,8 @@ The default encoding used is UTF8 - but you can also specify your own, as long a
 
 
 
-{%include _inlines/rails-stacks/code_rails-stacks_note-codingswe.md %}
+{%include _inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-codingswe.md %}
+
 
 
 
@@ -28,7 +30,8 @@ The default encoding used is UTF8 - but you can also specify your own, as long a
 
 
 
-{%include _inlines/rails-stacks/code_rails-stacks_note-velopment-2.md %}
+{%include _inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-velopment-2.md %}
+
 
 
 
@@ -36,7 +39,8 @@ The default encoding used is UTF8 - but you can also specify your own, as long a
 
 
 
-{%include _inlines/rails-stacks/code_rails-stacks_note-codinglatin.md %}
+{%include _inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-codinglatin.md %}
+
 
 
 
@@ -44,7 +48,8 @@ The default encoding used is UTF8 - but you can also specify your own, as long a
 
 
 
-{%include _inlines/rails-stacks/code_rails-stacks_note-velopment-2-3.md %}
+{%include _inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-velopment-2-3.md %}
+
 
 
 

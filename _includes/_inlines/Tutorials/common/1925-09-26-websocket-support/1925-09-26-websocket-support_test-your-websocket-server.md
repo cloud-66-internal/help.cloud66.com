@@ -7,6 +7,7 @@ To test your WebSocket server, create a `.html` file with the code below, make s
 
 
 
-{%include _inlines/1925-09-26-websocket-support/code_1925-09-26-websocket-support_test-your-websocket-serve.md %}
+{%include _inlines/Tutorials/common/1925-09-26-websocket-support/code_1925-09-26-websocket-support_test-your-websocket-serve.md %}
+
 
 

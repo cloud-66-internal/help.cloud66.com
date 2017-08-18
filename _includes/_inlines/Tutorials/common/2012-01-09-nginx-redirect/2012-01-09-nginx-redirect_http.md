@@ -6,7 +6,8 @@ We simply want to add a permanent redirect for visitors to domain A towards doma
 
 
 
-{%include _inlines/2012-01-09-nginx-redirect/code_2012-01-09-nginx-redirect_http-rverse.md %}
+{%include _inlines/Tutorials/common/2012-01-09-nginx-redirect/code_2012-01-09-nginx-redirect_http-rverse.md %}
+
 
 
 

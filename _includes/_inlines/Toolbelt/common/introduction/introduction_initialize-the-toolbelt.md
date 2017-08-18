@@ -7,7 +7,8 @@ Before using the toolbelt, you need to link it to your Cloud 66 account. You can
 
 
 
-{%include _inlines/introduction/code_introduction_initialize-the-toolbelt-cxstackslis.md %}
+{%include _inlines/Toolbelt/common/introduction/code_introduction_initialize-the-toolbelt-cxstackslis.md %}
+
 
 
 

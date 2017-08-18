@@ -12,7 +12,8 @@ The example below can be used to run custom rake tasks during server build. If y
 
 
 
-{%include _inlines/deploy-hooks/code_deploy-hooks_important-oduction.md %}
+{%include _inlines/Deployment/common/deploy-hooks/code_deploy-hooks_important-oduction.md %}
+
 
 
 

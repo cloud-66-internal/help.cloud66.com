@@ -9,7 +9,8 @@ In your service configuration, you can also specify constraints for a service ac
 
 
 
-{%include _inlines/scaling/code_scaling_docker-services-rvices.md %}
+{%include _inlines/StackManagement/common/scaling/code_scaling_docker-services-rvices.md %}
+
 
 
 

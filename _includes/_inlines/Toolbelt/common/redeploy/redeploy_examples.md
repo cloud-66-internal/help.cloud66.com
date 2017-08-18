@@ -5,19 +5,22 @@
 
 
 
-{%include _inlines/redeploy/code_redeploy_examples-cxredeploy.md %}
+{%include _inlines/Toolbelt/common/redeploy/code_redeploy_examples-cxredeploy.md %}
 
 
 
 
 
-{%include _inlines/redeploy/code_redeploy_examples-cxredeploy-2.md %}
+
+{%include _inlines/Toolbelt/common/redeploy/code_redeploy_examples-cxredeploy-2.md %}
 
 
 
 
 
-{%include _inlines/redeploy/code_redeploy_examples-cxredeploy-2-3.md %}
+
+{%include _inlines/Toolbelt/common/redeploy/code_redeploy_examples-cxredeploy-2-3.md %}
+
 
 
 

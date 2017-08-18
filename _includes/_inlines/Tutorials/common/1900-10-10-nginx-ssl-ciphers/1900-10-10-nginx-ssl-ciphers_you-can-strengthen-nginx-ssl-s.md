@@ -9,7 +9,8 @@ We recommend this setting (not compatible with IE6/Win XP):
 
 
 
-{%include _inlines/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-.md %}
+{%include _inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-.md %}
+
 
 
 
@@ -17,7 +18,8 @@ We recommend the following setting for backward compatibility (IE6/Win XP):
 
 
 
-{%include _inlines/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-.md %}
+{%include _inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-.md %}
+
 
 
 

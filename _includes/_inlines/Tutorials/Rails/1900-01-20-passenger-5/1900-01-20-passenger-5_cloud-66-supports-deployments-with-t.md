@@ -5,7 +5,8 @@
 
 
 
-{%include _inlines/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-supports-deployments-w.md %}
+{%include _inlines/Tutorials/Rails/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-supports-deployments-w.md %}
+
 
 
 
@@ -13,7 +14,8 @@ This is caused by a directive that was deprecated in Passenger 5, so we'll want 
 
 
 
-{%include _inlines/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-supports-deployments-w.md %}
+{%include _inlines/Tutorials/Rails/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-supports-deployments-w.md %}
+
 
 
 
@@ -21,7 +23,8 @@ With the following:
 
 
 
-{%include _inlines/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-supports-deployments-w.md %}
+{%include _inlines/Tutorials/Rails/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-supports-deployments-w.md %}
+
 
 
 

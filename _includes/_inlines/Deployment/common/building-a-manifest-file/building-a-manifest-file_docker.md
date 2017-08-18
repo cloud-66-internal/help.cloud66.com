@@ -22,13 +22,15 @@
 
 
 
-{%include _inlines/building-a-manifest-file/code_building-a-manifest-file_docker-oduction.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_docker-oduction.md %}
 
 
 
 
 
-{%include _inlines/building-a-manifest-file/code_building-a-manifest-file_docker-oduction-2.md %}
+
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_docker-oduction-2.md %}
+
 
 
 

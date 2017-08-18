@@ -9,7 +9,8 @@ For example, if you setup replication between a master (on 9.3) and a slave (9.4
 
 
 
-{%include _inlines/2044-02-13-pg-replication-version/code_2044-02-13-pg-replication-version_when-you-initiate-re.md %}
+{%include _inlines/Tutorials/common/2044-02-13-pg-replication-version/code_2044-02-13-pg-replication-version_when-you-initiate-re.md %}
+
 
 
 
@@ -19,6 +20,7 @@ Remember that you can see the version of PostgreSQL to install on your stack by 
 
 
 
-{%include _inlines/2044-02-13-pg-replication-version/code_2044-02-13-pg-replication-version_when-you-initiate-re.md %}
+{%include _inlines/Tutorials/common/2044-02-13-pg-replication-version/code_2044-02-13-pg-replication-version_when-you-initiate-re.md %}
+
 
 

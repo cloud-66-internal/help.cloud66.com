@@ -6,7 +6,8 @@ Verbose mode gives you more information on the ssh command running. It is a good
 
 
 
-{%include _inlines/ssh/code_ssh_versbose-mode-ssh-vvvsshs.md %}
+{%include _inlines/StackManagement/common/ssh/code_ssh_versbose-mode-ssh-vvvsshs.md %}
+
 
 
 

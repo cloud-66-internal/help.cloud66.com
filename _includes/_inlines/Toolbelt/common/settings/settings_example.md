@@ -5,6 +5,7 @@
 
 
 
-{%include _inlines/settings/code_settings_example-cxsettingss.md %}
+{%include _inlines/Toolbelt/common/settings/code_settings_example-cxsettingss.md %}
+
 
 

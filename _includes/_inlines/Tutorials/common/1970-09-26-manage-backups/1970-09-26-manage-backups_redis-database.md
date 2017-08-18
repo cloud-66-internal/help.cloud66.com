@@ -8,6 +8,7 @@ Redis data are simply represented by a single `dump.rdb` file. You just have to 
 
 
 
-{%include _inlines/1970-09-26-manage-backups/code_1970-09-26-manage-backups_redis-database-sudormrf.md %}
+{%include _inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_redis-database-sudormrf.md %}
+
 
 

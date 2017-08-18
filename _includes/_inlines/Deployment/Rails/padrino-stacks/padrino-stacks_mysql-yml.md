@@ -5,7 +5,8 @@
 
 
 
-{%include _inlines/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona.md %}
+{%include _inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona.md %}
+
 
 
 
@@ -13,7 +14,8 @@
 
 
 
-{%include _inlines/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona-2.md %}
+{%include _inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona-2.md %}
+
 
 
 
@@ -21,7 +23,8 @@
 
 
 
-{%include _inlines/padrino-stacks/code_padrino-stacks_mysql-yml-tiveecord.md %}
+{%include _inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-tiveecord.md %}
+
 
 
 

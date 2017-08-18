@@ -7,7 +7,8 @@ You can narrow the search down with the "advanced search syntax". The general se
 
 
 
-{%include _inlines/global-search/code_global-search_advanced-search-code.md %}
+{%include _inlines/StackManagement/common/global-search/code_global-search_advanced-search-code.md %}
+
 
 
 

@@ -9,7 +9,8 @@ Using environment variables is done differently depending on your application se
 
 
 
-{%include _inlines/env-vars/code_env-vars_using-environment-variables-code.md %}
+{%include _inlines/Deployment/common/env-vars/code_env-vars_using-environment-variables-code.md %}
+
 
 
 
@@ -17,7 +18,8 @@ Using environment variables is done differently depending on your application se
 
 
 
-{%include _inlines/env-vars/code_env-vars_using-environment-variables-rnamelt.md %}
+{%include _inlines/Deployment/common/env-vars/code_env-vars_using-environment-variables-rnamelt.md %}
+
 
 
 
@@ -25,7 +27,8 @@ Using environment variables is done differently depending on your application se
 
 
 
-{%include _inlines/env-vars/code_env-vars_using-environment-variables-kingdirector.md %}
+{%include _inlines/Deployment/common/env-vars/code_env-vars_using-environment-variables-kingdirector.md %}
+
 
 
 

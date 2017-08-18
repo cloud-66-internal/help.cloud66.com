@@ -7,7 +7,8 @@ Each application type supports the additional partial configuration to add custo
 
 
 
-{%include _inlines/building-a-manifest-file/code_building-a-manifest-file_specify-additional-livelog-fi.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_specify-additional-livelog-fi.md %}
+
 
 
 

@@ -25,7 +25,8 @@ These commands can be set via [Toolbelt](/toolbelt/toolbelt-settings-command),
 
 
 
-{%include _inlines/padrino-stacks/code_padrino-stacks_custom-commands-cxsettingss.md %}
+{%include _inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-cxsettingss.md %}
+
 
 
 
@@ -33,7 +34,8 @@ But also in your [manifest file](/building-your-stack/getting-started-with-manif
 
 
 
-{%include _inlines/padrino-stacks/code_padrino-stacks_custom-commands-velopment.md %}
+{%include _inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-velopment.md %}
+
 
 
 

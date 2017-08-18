@@ -5,7 +5,8 @@
 
 
 
-{%include _inlines/application-settings-node/code_application-settings-node_redis-discreateli.md %}
+{%include _inlines/Deployment/Node/application-settings-node/code_application-settings-node_redis-discreateli.md %}
+
 
 
 

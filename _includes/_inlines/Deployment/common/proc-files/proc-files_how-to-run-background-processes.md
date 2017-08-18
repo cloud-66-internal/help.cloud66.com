@@ -7,7 +7,8 @@ A typical Procfile may look something like this:
 
 
 
-{%include _inlines/proc-files/code_proc-files_how-to-run-background-processes-rkerrakere..md %}
+{%include _inlines/Deployment/common/proc-files/code_proc-files_how-to-run-background-processes-rkerrakere..md %}
+
 
 
 

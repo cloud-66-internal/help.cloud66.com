@@ -9,7 +9,8 @@ application.rb
 
         
 
-{%include _inlines/asset-pipeline/code_asset-pipeline_important-figassetsco.md %}
+{%include _inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_important-figassetsco.md %}
+
 
 
 

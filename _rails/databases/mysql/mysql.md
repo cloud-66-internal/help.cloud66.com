@@ -7,6 +7,4 @@ lead: Backup, recovery and replication of databases with Cloud 66 for Rails
 legacy: false
 ---
 
-{% include _inlines/common/databases/mysql.md product="Rails" %}
 
-![Test Images](/assets/test.png)

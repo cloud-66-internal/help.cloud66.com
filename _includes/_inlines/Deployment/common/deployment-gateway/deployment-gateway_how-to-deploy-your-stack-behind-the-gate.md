@@ -9,7 +9,8 @@ First you need to define a gateway:
 
 
 
-{%include _inlines/deployment-gateway/code_deployment-gateway_how-to-deploy-your-stack-behind-the.md %}
+{%include _inlines/Deployment/common/deployment-gateway/code_deployment-gateway_how-to-deploy-your-stack-behind-the.md %}
+
 
 
 
@@ -17,7 +18,8 @@ In order to use this gateway for a stack deployment, you need to first specify i
 
 
 
-{%include _inlines/deployment-gateway/code_deployment-gateway_how-to-deploy-your-stack-behind-the.md %}
+{%include _inlines/Deployment/common/deployment-gateway/code_deployment-gateway_how-to-deploy-your-stack-behind-the.md %}
+
 
 
 
@@ -25,7 +27,8 @@ and then make it available before you start the deployment:
 
 
 
-{%include _inlines/deployment-gateway/code_deployment-gateway_how-to-deploy-your-stack-behind-the.md %}
+{%include _inlines/Deployment/common/deployment-gateway/code_deployment-gateway_how-to-deploy-your-stack-behind-the.md %}
+
 
 
 
@@ -35,7 +38,8 @@ After the deployment is finished you can invalidate the gateway or leave it unti
 
 
 
-{%include _inlines/deployment-gateway/code_deployment-gateway_how-to-deploy-your-stack-behind-the.md %}
+{%include _inlines/Deployment/common/deployment-gateway/code_deployment-gateway_how-to-deploy-your-stack-behind-the.md %}
+
 
 
 

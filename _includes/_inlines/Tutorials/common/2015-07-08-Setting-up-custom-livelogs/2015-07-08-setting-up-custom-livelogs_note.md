@@ -12,6 +12,7 @@ You can also have multiple custom log files defined for different server roles; 
 
 
 
-{%include _inlines/2015-07-08-Setting-up-custom-livelogs/code_2015-07-08-setting-up-custom-livelogs_note-oduction.md %}
+{%include _inlines/Tutorials/common/2015-07-08-Setting-up-custom-livelogs/code_2015-07-08-setting-up-custom-livelogs_note-oduction.md %}
+
 
 

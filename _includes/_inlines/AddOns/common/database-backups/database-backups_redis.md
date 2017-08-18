@@ -7,7 +7,8 @@
 
 
 
-{%include _inlines/database-backups/code_database-backups_redis-findpathto.md %}
+{%include _inlines/AddOns/common/database-backups/code_database-backups_redis-findpathto.md %}
+
 
 
 
@@ -15,7 +16,8 @@
 
 
 
-{%include _inlines/database-backups/code_database-backups_redis-findpathto-2.md %}
+{%include _inlines/AddOns/common/database-backups/code_database-backups_redis-findpathto-2.md %}
+
 
 
 
@@ -23,7 +25,8 @@
 
 
 
-{%include _inlines/database-backups/code_database-backups_redis-gzipdpath.md %}
+{%include _inlines/AddOns/common/database-backups/code_database-backups_redis-gzipdpath.md %}
+
 
 
 
@@ -31,7 +34,8 @@
 
 
 
-{%include _inlines/database-backups/code_database-backups_redis-sudobluepill.md %}
+{%include _inlines/AddOns/common/database-backups/code_database-backups_redis-sudobluepill.md %}
+
 
 
 

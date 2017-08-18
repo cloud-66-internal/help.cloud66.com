@@ -9,6 +9,7 @@ You can also quote your argument if there is a space in the value.
 
 
 
-{%include _inlines/add-ins-jobs/code_add-ins-jobs_pass-parameters-to-job-bcommandcp.md %}
+{%include _inlines/AddOns/common/add-ins-jobs/code_add-ins-jobs_pass-parameters-to-job-bcommandcp.md %}
+
 
 

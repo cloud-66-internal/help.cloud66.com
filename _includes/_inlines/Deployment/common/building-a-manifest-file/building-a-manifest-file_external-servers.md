@@ -9,7 +9,8 @@ External server definitions specify that the application is hosted on a server e
 
 
 
-{%include _inlines/building-a-manifest-file/code_building-a-manifest-file_external-servers-oduction.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_external-servers-oduction.md %}
+
 
 
 

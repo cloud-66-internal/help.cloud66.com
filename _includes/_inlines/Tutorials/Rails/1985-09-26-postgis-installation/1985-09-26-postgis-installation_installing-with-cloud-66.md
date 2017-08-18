@@ -9,7 +9,8 @@ In order for your manifest file to be picked up, you need a file called **manife
 
 
 
-{%include _inlines/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md %}
+{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md %}
+
 
 
 
@@ -17,7 +18,8 @@ For Cloud 66 to install PostGIS, your manifest file should contain the following
 
 
 
-{%include _inlines/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md %}
+{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md %}
+
 
 
 
@@ -25,7 +27,8 @@ If you would like to specify versions, it should look something like this:
 
 
 
-{%include _inlines/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md %}
+{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md %}
+
 
 
 

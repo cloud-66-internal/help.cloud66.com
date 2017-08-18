@@ -6,7 +6,8 @@ If during Lets Encrypt installation you get an error including something like th
 
 
 
-{%include _inlines/Lets-encrypt/code_lets-encrypt_troubleshoot-otefileto.md %}
+{%include _inlines/AddOns/common/Lets-encrypt/code_lets-encrypt_troubleshoot-otefileto.md %}
+
 
 
 

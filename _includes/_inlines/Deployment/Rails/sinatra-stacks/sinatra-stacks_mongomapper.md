@@ -5,7 +5,8 @@
 
 
 
-{%include _inlines/sinatra-stacks/code_sinatra-stacks_mongomapper-ngoappercon.md %}
+{%include _inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_mongomapper-ngoappercon.md %}
+
 
 
 

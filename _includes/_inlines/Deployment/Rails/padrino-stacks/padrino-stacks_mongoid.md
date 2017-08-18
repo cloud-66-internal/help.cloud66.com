@@ -5,7 +5,8 @@
 
 
 
-{%include _inlines/padrino-stacks/code_padrino-stacks_mongoid-velopment.md %}
+{%include _inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mongoid-velopment.md %}
+
 
 
 

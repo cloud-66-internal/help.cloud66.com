@@ -9,7 +9,8 @@ Don't forget to add a log file in your pill config. For instance:
 
 
 
-{%include _inlines/1967-09-26-bluepill/code_1967-09-26-bluepill_build-your-own-pill-file-ocessstdo.md %}
+{%include _inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_build-your-own-pill-file-ocessstdo.md %}
+
 
 
 

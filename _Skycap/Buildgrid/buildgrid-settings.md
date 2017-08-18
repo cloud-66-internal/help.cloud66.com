@@ -1,0 +1,14 @@
+---
+layout: post
+template: one-col
+title: buildgrid-settings
+categories: Buildgrid
+lead: ""
+legacy: "false"
+
+---
+{% assign product = "Skycap" %}
+
+{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_account-settings-.md %}
+{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_buildgrid-settings.md %}
+{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_user-settings.md %}

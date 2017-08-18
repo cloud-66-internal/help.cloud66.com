@@ -14,7 +14,8 @@ This query will count the number of records in the *users* table, and returns a 
 
 
 
-{%include _inlines/backup-verifiers/code_backup-verifiers_important-lectcount.md %}
+{%include _inlines/Databases/common/backup-verifiers/code_backup-verifiers_important-lectcount.md %}
+
 
 
 
@@ -22,7 +23,8 @@ The result of this query may be the following, indicating that your *users* tabl
 
 
 
-{%include _inlines/backup-verifiers/code_backup-verifiers_important-sult.md %}
+{%include _inlines/Databases/common/backup-verifiers/code_backup-verifiers_important-sult.md %}
+
 
 
 

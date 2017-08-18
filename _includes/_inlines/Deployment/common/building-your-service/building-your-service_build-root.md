@@ -7,7 +7,8 @@ Specifies the directory of your repository in which you wish to run your Docker 
 
 
 
-{%include _inlines/building-your-service/code_building-your-service_build-root-rvices.md %}
+{%include _inlines/Deployment/common/building-your-service/code_building-your-service_build-root-rvices.md %}
+
 
 
 
