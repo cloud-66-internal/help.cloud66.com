@@ -4,7 +4,7 @@ template: one-col
 title: data-protection
 categories: unknown
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "General" %}

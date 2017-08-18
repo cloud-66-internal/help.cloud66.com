@@ -4,7 +4,7 @@ template: one-col
 title: 1901-01-26-access-your-code
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

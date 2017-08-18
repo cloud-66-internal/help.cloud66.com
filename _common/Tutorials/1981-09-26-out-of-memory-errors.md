@@ -4,7 +4,7 @@ template: one-col
 title: 1981-09-26-out-of-memory-errors
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

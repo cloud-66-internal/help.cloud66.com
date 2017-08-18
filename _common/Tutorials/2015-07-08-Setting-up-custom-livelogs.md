@@ -4,7 +4,7 @@ template: one-col
 title: 2015-07-08-Setting-up-custom-livelogs
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

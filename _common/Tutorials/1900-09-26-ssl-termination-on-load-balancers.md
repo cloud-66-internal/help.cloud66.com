@@ -4,7 +4,7 @@ template: one-col
 title: 1900-09-26-ssl-termination-on-load-balancers
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

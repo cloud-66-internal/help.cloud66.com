@@ -4,7 +4,7 @@ template: one-col
 title: custom_git_repo
 categories: Getting Started
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

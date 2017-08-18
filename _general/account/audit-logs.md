@@ -4,7 +4,7 @@ template: one-col
 title: audit-logs
 categories: Account
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "General" %}

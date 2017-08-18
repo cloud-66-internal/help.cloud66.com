@@ -4,7 +4,7 @@ template: one-col
 title: 2009-09-26-application-not-serving
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

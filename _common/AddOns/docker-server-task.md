@@ -4,7 +4,7 @@ template: one-col
 title: docker-server-task
 categories: AddOns
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

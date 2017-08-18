@@ -3,8 +3,8 @@ layout: post
 template: one-col
 title: Faye on Cloud66
 categories: Tutorials
-lead: "Faye on Cloud66"
-legacy: "false"
+lead: ""
+legacy: false
 
 ---
 {% assign product = "Rails" %}

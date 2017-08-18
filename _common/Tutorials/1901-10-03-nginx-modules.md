@@ -4,7 +4,7 @@ template: one-col
 title: 1901-10-03-nginx-modules
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

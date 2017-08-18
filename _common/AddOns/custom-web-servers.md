@@ -4,7 +4,7 @@ template: one-col
 title: custom-web-servers
 categories: AddOns
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

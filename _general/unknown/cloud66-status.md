@@ -4,7 +4,7 @@ template: one-col
 title: cloud66-status
 categories: unknown
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "General" %}

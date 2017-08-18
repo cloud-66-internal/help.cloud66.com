@@ -4,7 +4,7 @@ template: one-col
 title: 1935-09-26-connect-db-servers
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

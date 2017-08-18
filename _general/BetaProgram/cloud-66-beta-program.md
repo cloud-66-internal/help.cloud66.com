@@ -4,7 +4,7 @@ template: one-col
 title: cloud-66-beta-program
 categories: BetaProgram
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "General" %}

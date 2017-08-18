@@ -4,7 +4,7 @@ template: one-col
 title: load-balancer
 categories: AddOns
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

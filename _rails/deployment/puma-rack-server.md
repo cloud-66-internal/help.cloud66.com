@@ -4,7 +4,7 @@ template: one-col
 title: puma-rack-server
 categories: Deployment
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Rails" %}

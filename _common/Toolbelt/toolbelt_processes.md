@@ -4,7 +4,7 @@ template: one-col
 title: toolbelt_processes
 categories: Toolbelt
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

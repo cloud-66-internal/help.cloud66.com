@@ -4,7 +4,7 @@ template: one-col
 title: 1930-09-26-haproxy-for-websocket
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

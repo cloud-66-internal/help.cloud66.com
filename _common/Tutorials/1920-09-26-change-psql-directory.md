@@ -4,7 +4,7 @@ template: one-col
 title: 1920-09-26-change-psql-directory
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

@@ -4,7 +4,7 @@ template: one-col
 title: 2014-04-26-gem-dependencies
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Rails" %}

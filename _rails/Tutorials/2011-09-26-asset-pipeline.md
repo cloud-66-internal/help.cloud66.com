@@ -4,7 +4,7 @@ template: one-col
 title: 2011-09-26-asset-pipeline
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Rails" %}

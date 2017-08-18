@@ -4,7 +4,7 @@ template: one-col
 title: toolbelt-env-vars
 categories: Toolbelt
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

@@ -4,7 +4,7 @@ template: one-col
 title: networking-ports
 categories: Getting Started
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

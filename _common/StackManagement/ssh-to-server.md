@@ -4,7 +4,7 @@ template: one-col
 title: ssh-to-server
 categories: StackManagement
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

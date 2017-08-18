@@ -4,7 +4,7 @@ template: one-col
 title: cloud-gce
 categories: Deployment
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

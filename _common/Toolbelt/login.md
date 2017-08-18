@@ -4,7 +4,7 @@ template: one-col
 title: login
 categories: Toolbelt
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

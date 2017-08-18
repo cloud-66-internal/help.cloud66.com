@@ -4,7 +4,7 @@ template: one-col
 title: 2016-09-26-permission-denied-errors
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

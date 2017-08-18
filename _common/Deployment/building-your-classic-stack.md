@@ -4,7 +4,7 @@ template: one-col
 title: building-your-classic-stack
 categories: Deployment
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

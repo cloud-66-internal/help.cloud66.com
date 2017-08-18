@@ -4,7 +4,7 @@ template: one-col
 title: 2013-09-26-db-config-test-group-errors
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

@@ -4,7 +4,7 @@ template: one-col
 title: server-size
 categories: Getting Started
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

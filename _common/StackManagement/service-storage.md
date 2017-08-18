@@ -4,7 +4,7 @@ template: one-col
 title: service-storage
 categories: StackManagement
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

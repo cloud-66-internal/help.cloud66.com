@@ -4,7 +4,7 @@ template: one-col
 title: 2043-02-12-disk-space
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

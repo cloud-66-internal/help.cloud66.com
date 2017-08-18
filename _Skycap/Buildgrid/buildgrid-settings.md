@@ -4,7 +4,7 @@ template: one-col
 title: buildgrid-settings
 categories: Buildgrid
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Skycap" %}

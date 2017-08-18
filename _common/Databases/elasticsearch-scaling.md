@@ -4,7 +4,7 @@ template: one-col
 title: elasticsearch-scaling
 categories: Databases
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

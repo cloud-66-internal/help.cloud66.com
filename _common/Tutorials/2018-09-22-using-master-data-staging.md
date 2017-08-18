@@ -4,7 +4,7 @@ template: one-col
 title: 2018-09-22-using-master-data-staging
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

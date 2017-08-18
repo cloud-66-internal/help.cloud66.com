@@ -4,7 +4,7 @@ template: one-col
 title: backup-verifiers
 categories: Databases
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

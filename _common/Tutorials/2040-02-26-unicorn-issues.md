@@ -4,7 +4,7 @@ template: one-col
 title: 2040-02-26-unicorn-issues
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

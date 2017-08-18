@@ -4,7 +4,7 @@ template: one-col
 title: 1960-09-24-smtp-installation
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

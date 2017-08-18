@@ -4,7 +4,7 @@ template: one-col
 title: rack_health_check
 categories: StackManagement
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

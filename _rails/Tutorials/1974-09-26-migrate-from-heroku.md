@@ -4,7 +4,7 @@ template: one-col
 title: Migrate from Heroku to Cloud66
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Rails" %}
