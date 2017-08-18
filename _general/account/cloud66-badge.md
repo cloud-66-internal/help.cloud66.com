@@ -4,7 +4,7 @@ template: one-col
 title: cloud66-badge
 categories: Account
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "General" %}

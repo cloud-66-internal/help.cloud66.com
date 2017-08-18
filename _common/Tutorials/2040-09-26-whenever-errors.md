@@ -4,7 +4,7 @@ template: one-col
 title: 2040-09-26-whenever-errors
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

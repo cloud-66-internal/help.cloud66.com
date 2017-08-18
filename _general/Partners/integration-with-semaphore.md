@@ -4,7 +4,7 @@ template: one-col
 title: integration-with-semaphore
 categories: Partners
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "General" %}

@@ -4,7 +4,7 @@ template: one-col
 title: stack-environments
 categories: Getting Started
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

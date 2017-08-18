@@ -4,7 +4,7 @@ template: one-col
 title: parallel-deployment
 categories: Deployment
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

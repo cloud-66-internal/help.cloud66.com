@@ -4,7 +4,7 @@ template: one-col
 title: 1985-09-26-postgis-installation
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Rails" %}

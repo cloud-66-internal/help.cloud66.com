@@ -4,7 +4,7 @@ template: one-col
 title: 1925-09-26-websocket-support
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

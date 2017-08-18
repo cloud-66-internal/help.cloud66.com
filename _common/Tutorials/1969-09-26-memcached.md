@@ -4,7 +4,7 @@ template: one-col
 title: 1969-09-26-memcached
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

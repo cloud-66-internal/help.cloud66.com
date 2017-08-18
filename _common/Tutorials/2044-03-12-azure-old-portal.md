@@ -4,7 +4,7 @@ template: one-col
 title: 2044-03-12-azure-old-portal
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

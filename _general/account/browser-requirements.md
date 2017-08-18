@@ -4,7 +4,7 @@ template: one-col
 title: browser-requirements
 categories: Account
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "General" %}

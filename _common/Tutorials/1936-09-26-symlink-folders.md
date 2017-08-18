@@ -4,7 +4,7 @@ template: one-col
 title: 1936-09-26-symlink-folders
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

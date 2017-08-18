@@ -4,7 +4,7 @@ template: one-col
 title: custom-config
 categories: StackManagement
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

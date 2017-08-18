@@ -4,7 +4,7 @@ template: one-col
 title: add-ins-jobs
 categories: AddOns
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

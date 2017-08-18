@@ -4,7 +4,7 @@ template: one-col
 title: 1900-10-10-nginx-ssl-ciphers
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

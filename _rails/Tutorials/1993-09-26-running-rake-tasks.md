@@ -4,7 +4,7 @@ template: one-col
 title: 1993-09-26-running-rake-tasks
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Rails" %}

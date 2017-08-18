@@ -4,7 +4,7 @@ template: one-col
 title: account-protection
 categories: Account
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "General" %}

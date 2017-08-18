@@ -4,7 +4,7 @@ template: one-col
 title: redeployment-hook
 categories: Deployment
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

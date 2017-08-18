@@ -4,7 +4,7 @@ template: one-col
 title: 2016-01-21-Docker-Dependency
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

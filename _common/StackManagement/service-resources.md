@@ -4,7 +4,7 @@ template: one-col
 title: service-resources
 categories: StackManagement
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

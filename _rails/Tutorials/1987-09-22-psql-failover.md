@@ -4,7 +4,7 @@ template: one-col
 title: 1987-09-22-psql-failover
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Rails" %}

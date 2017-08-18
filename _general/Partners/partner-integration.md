@@ -4,7 +4,7 @@ template: one-col
 title: partner-integration
 categories: Partners
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "General" %}

@@ -4,7 +4,7 @@ template: one-col
 title: influxdb
 categories: AddOns
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

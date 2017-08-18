@@ -4,7 +4,7 @@ template: one-col
 title: agent-communication-issue
 categories: StackManagement
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

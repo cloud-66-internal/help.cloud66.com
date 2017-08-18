@@ -4,7 +4,7 @@ template: one-col
 title: team-accounts
 categories: Teams
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "General" %}

@@ -4,7 +4,7 @@ template: one-col
 title: 1989-09-26-replace-sqlite
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Rails" %}

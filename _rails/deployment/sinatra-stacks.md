@@ -4,7 +4,7 @@ template: one-col
 title: sinatra-stacks
 categories: Deployment
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Rails" %}

@@ -4,7 +4,7 @@ template: one-col
 title: 2039-02-26-ssl-certificate-issues
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

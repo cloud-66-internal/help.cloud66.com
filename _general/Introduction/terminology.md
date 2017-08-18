@@ -4,7 +4,7 @@ template: one-col
 title: terminology
 categories: Introduction
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "General" %}

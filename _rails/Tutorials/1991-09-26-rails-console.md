@@ -4,7 +4,7 @@ template: one-col
 title: 1991-09-26-rails-console
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Rails" %}

@@ -4,7 +4,7 @@ template: one-col
 title: 2038-11-06-smtp-timeouts
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

@@ -4,7 +4,7 @@ template: one-col
 title: service_networking
 categories: Getting Started
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

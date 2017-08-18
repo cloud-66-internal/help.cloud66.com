@@ -4,7 +4,7 @@ template: one-col
 title: passenger-enterprise
 categories: Deployment
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Rails" %}

@@ -4,7 +4,7 @@ template: one-col
 title: 2042-02-11-connecting-to-server
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

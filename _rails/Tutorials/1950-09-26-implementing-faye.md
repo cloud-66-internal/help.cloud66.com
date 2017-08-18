@@ -4,7 +4,7 @@ template: one-col
 title: 1950-09-26-implementing-faye
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Rails" %}

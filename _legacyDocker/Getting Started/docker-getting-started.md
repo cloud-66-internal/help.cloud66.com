@@ -4,7 +4,7 @@ template: one-col
 title: docker-getting-started
 categories: Getting Started
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "legacyDocker" %}

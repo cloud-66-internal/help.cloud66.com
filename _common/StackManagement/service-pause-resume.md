@@ -4,7 +4,7 @@ template: one-col
 title: service-pause-resume
 categories: StackManagement
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

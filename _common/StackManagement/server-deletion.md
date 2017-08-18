@@ -4,7 +4,7 @@ template: one-col
 title: server-deletion
 categories: StackManagement
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

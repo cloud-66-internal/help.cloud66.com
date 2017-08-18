@@ -4,7 +4,7 @@ template: one-col
 title: 2003-09-26-sharing-db
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

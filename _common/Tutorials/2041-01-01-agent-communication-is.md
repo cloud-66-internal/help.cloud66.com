@@ -4,7 +4,7 @@ template: one-col
 title: 2041-01-01-agent-communication-is
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

@@ -4,7 +4,7 @@ template: one-col
 title: cloud66-introduction
 categories: Introduction
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "General" %}

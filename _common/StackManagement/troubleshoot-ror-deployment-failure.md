@@ -4,7 +4,7 @@ template: one-col
 title: troubleshoot-ror-deployment-failure
 categories: StackManagement
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

@@ -4,7 +4,7 @@ template: one-col
 title: 1970-09-26-manage-backups
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}

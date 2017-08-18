@@ -4,7 +4,7 @@ template: one-col
 title: 1998-12-08-seeding-db
 categories: Tutorials
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "common" %}
