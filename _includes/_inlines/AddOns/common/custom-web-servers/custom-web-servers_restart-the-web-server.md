@@ -7,6 +7,6 @@ If supported by your web server, you can use the following command to restart th
 
 
 
-	sudo bluepill cloud66&#95;web&#95;server restart
+	sudo bluepill cloud66_web_server restart
 
 

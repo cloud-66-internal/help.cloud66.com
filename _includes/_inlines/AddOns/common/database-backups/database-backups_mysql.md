@@ -82,15 +82,47 @@ You can find YOUR_MYSQL_DB_APP_USERNAME, YOUR_MYSQL_DB_APP_PASSWORD,YOUR_MYSQL_A
 4.4 Use following commands to give enough permission to you app user
 
 
-
 {%include _inlines/AddOns/common/database-backups/code_database-backups_mysql-mysqlu-2-3-4.md %}
 
 
+ 5.You can use following command to restore your database 
 
-
-5. You can use following command to restore your database 
 
 ```
 $ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD $MYSQL_DATABASE_NAME 
 
+```
 
+
+**Restore Mysql Binary backup**
+
+You need Percona innobackupex to be able to restore a mysql binary backup. Percona innobackupex is installed on your mysql server if it is provisioned by Cloud66. You can use following command to install it on any other ubuntu servers :
+
+```
+$ wget https://repo.percona.com/apt/percona-release_0.1-4.$(lsb_release -sc)_all.deb  -O /tmp/percona-release_0.1-4.$(lsb_release -sc)_all.deb
+$ sudo dpkg -i /tmp/percona-release_0.1-4.$(lsb_release -sc)_all.deb
+$ sudo apt-get update
+$ sudo apt-get install -y percona-xtrabackup-24
+```
+
+1. You need to find the Percona backup folder in unarchived folder. Run following command to find it :
+```
+$ find /path/to/unarchived/folder -name ibdata1 -type f  -exec dirname {} ';'
+```
+2. Find Mysql Data Directory . You should be able to find it in Mysql configuration file (my.cnf) . In normal Mysql installation you can find Mysql configuration file in /etc/mysql path. Open my.cnf and search for datadir in mysqld section.
+
+3. Mysql service :
+
+3.1 Ubuntu 12.04
+```
+$ sudo /etc/init.d/mysql stop
+```
+3.2 Ubuntu 14.04
+```
+$ sudo service mysql stop
+```
+3.3 Ubuntu 16.04
+```
+$ sudo systemctl stop mysql
+```
+Use following command to delete Mysql data directory

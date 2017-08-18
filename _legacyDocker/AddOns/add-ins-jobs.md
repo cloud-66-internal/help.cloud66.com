@@ -7,7 +7,7 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "common" %}
+{% assign product = "legacy_docker" %}
 
 {% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_contents.md %}
 {% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_overview.md %}

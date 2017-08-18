@@ -7,7 +7,7 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "common" %}
+{% assign product = "node" %}
 
 {% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_contents.md %}
 {% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_how-it-is-installed.md %}

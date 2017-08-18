@@ -9,15 +9,9 @@
 *		[Specify an HAProxy test interval](#specify)
 *		[Change the HAProxy endpoint](#endpoint)
 *		[About configuring HAProxy with CustomConfig](#customconf)
-*   [Config variables](#variables)
-	
-
-		[Commit HAProxy CustomConfig](#commit)
-	
-
-	
-
-		[Configuring HAProxy for maintenance mode](#maintenance)
+*       [Config variables](#variables)
+*		[Commit HAProxy CustomConfig](#commit)
+*		[Configuring HAProxy for maintenance mode](#maintenance)
 	
 
 

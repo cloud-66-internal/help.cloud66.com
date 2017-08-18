@@ -5,13 +5,8 @@
 
 
 
-	sudo bluepill cloud66&#95;web&#95;server quit
-
-  
-
-
-
-	sudo bluepill load /etc/bluepill/autoload/cloud66&#95;web&#95;server.pill
+	sudo bluepill cloud66_web_server quit
+	sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill
 
 
 
