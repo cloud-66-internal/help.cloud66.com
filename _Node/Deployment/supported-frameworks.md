@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title: supported-frameworks
+title: Supported Node.js frameworks
 categories: Deployment
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Node" %}

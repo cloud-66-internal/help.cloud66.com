@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title: scale-node
+title: Scale your Node.js application
 categories: Deployment
 lead: ""
-legacy: "false"
+legacy: false
 
 ---
 {% assign product = "Node" %}
