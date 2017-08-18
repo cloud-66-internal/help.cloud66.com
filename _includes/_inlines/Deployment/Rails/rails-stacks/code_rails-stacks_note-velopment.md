@@ -1,16 +1,10 @@
 <!-- layout:code post: rails-stacks_note -->
 
 ```
-
 development:
     adapter: mysql2
-    username: 
-
-    password: 
-
-    database: 
-
-    host: 
-
-
+    username: <%= ENV['MYSQL_USERNAME'] %>
+    password: <%= ENV['MYSQL_PASSWORD'] %>
+    database: <%= ENV['MYSQL_DATABASE'] %>
+    host: <%= ENV['MYSQL_ADDRESS'] %>
 ```

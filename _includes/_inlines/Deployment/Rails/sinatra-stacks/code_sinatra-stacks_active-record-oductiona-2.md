@@ -1,16 +1,10 @@
 <!-- layout:code post: sinatra-stacks_active-record -->
 
 ```
-
 production:
   adapter: postgresql
-  username: 
-
-  password: 
-
-  host: 
-
-  database: 
-
-
+  username: <%= ENV['POSTGRESQL_USERNAME'] %>
+  password: <%= ENV['POSTGRESQL_PASSWORD'] %>
+  host: <%= ENV['POSTGRESQL_ADDRESS'] %>
+  database: <%= ENV['POSTGRESQL_DATABASE'] %>
 ```

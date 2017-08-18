@@ -1,5 +1,5 @@
 <!-- post: -->
 
 
-### Examples of connecting to your database:
+## Examples of connecting to your database:
 

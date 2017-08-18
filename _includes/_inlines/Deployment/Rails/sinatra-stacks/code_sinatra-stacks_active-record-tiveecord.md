@@ -1,7 +1,6 @@
 <!-- layout:code post: sinatra-stacks_active-record -->
 
 ```
-
 ActiveRecord::Base.configurations[:development] = {
   :adapter   => 'mysql2',
   :encoding  => 'utf8',
@@ -12,5 +11,4 @@ ActiveRecord::Base.configurations[:development] = {
   :password  => ENV['MYSQL_PASSWORD'],
   :host      => ENV['MYSQL_ADDRESS'],
 }
-
 ```
