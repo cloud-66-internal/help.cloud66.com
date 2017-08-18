@@ -1,11 +1,9 @@
 <!-- post: -->
 
 
-### Warning
+## Warning
 
 Please ensure to follow the conventions set out in the configuration below if you are having issues, and that you are using an up-to-date version of Unicorn.
-
-
 
 
 Here is a **unicorn.rb** configuration file that is compatible with Cloud 66 requirements (following the Procfile line above, this should be located under the `config` folder of your Rails app):
