@@ -2,43 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8523b96d-f99a-422f-96c3-559e0886ea49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-1.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-2.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/code_1991-09-26-rails-console_start-by-sshing-to-your-serv1.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_content.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/asset-pipeline_contents.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_contents.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_enabler-scripts.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_enabler-scripts.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_installing-with-cloud-66.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_installing-with-cloud-66.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_postgis-extension-for-postg.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_postgis-extension-for-postg.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-geos-3.3.x-wgeth.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-geos-3.3.x-wgeth.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-configur.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-configur.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-sudolnsf.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-sudolnsf.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-wgethttp.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-wgethttp.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_enabler-scripts-sudoup.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_enabler-scripts-sudoup.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_postgis-extension-for-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_postgis-extension-for-.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_prerequisites-sudoaptg.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_prerequisites-sudoaptg.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1987-09-22-psql-failover/1987-09-22-psql-failover_when-you-use-database-replication.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1987-09-22-psql-failover/1987-09-22-psql-failover_when-you-use-database-replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_instructions.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_instructions.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_mysql.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_mysql.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_postgresql.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_postgresql.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/1991-09-26-rails-console_start-by-sshing-to-your-serverh.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/1991-09-26-rails-console_start-by-sshing-to-your-serverh.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/code_1991-09-26-rails-console_start-by-sshing-to-your-serv.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/code_1991-09-26-rails-console_start-by-sshing-to-your-serv.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-binbash.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-binbash.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-oductio.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-oductio.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_manually-cd.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_manually-cd.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2011-09-26-asset-pipeline/2011-09-26-asset-pipeline_if-youre-experiencing-deployment.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2011-09-26-asset-pipeline/2011-09-26-asset-pipeline_if-youre-experiencing-deployment.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/code_2013-09-26-libv8-gem-errors_the-specifics-mnstaller.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/code_2013-09-26-libv8-gem-errors_the-specifics-mnstaller.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/2014-04-26-gem-dependencies_depending-on-which-gems-youre-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/2014-04-26-gem-dependencies_depending-on-which-gems-youre-.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_depending-on-which-gems-yo.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_depending-on-which-gems-yo.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/1987-09-22-psql-failover.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/1987-09-22-psql-failover.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/1989-09-26-replace-sqlite.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/1989-09-26-replace-sqlite.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/1991-09-26-rails-console.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/1991-09-26-rails-console.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/1993-09-26-running-rake-tasks.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/1993-09-26-running-rake-tasks.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/2011-09-26-asset-pipeline.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2011-09-26-asset-pipeline.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/2013-09-26-libv8-gem-errors.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2013-09-26-libv8-gem-errors.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/2014-04-26-gem-dependencies.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2014-04-26-gem-dependencies.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/asset-pipeline_important.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/asset-pipeline_important.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_application.rb-nfigassetse.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_application.rb-nfigassetse.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_manifest.yml-velopment.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_manifest.yml-velopment.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-cxsettingss.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-cxsettingss.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-velopment.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-velopment.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_datamapper-taapperset.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_datamapper-taapperset.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mongoid-velopment.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mongoid-velopment.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mongomapper-ngoappercon.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mongomapper-ngoappercon.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-tiveecord.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-tiveecord.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_custom-commands.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_custom-commands.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/deployment/asset-pipeline.md" afterPath="$PROJECT_DIR$/_rails/deployment/asset-pipeline.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/deployment/padrino-stacks.md" afterPath="$PROJECT_DIR$/_rails/deployment/padrino-stacks.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,12 +34,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2011-09-26-asset-pipeline_if-youre-experiencing-deployment.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2011-09-26-asset-pipeline/2011-09-26-asset-pipeline_if-youre-experiencing-deployment.md">
+      <file leaf-file-name="code_padrino-stacks_mongoid-velopment.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mongoid-velopment.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="53" lean-forward="false" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+              <first_editor relative-caret-position="105">
+                <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -66,86 +47,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2013-09-26-libv8-gem-errors.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_rails/Tutorials/2013-09-26-libv8-gem-errors.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="165">
-                <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2013-09-26-libv8-gem-errors_the-specifics.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-specifics.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code_2013-09-26-libv8-gem-errors_the-specifics-mnstaller.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/code_2013-09-26-libv8-gem-errors_the-specifics-mnstaller.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="615">
-                <caret line="41" column="27" lean-forward="false" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-04-26-gem-dependencies.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_rails/Tutorials/2014-04-26-gem-dependencies.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-04-26-gem-dependencies_depending-on-which-gems-youre-.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/2014-04-26-gem-dependencies_depending-on-which-gems-youre-.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="285">
-                <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code_2014-04-26-gem-dependencies_1.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code_2014-04-26-gem-dependencies_depending-on-which-gems-yo.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_depending-on-which-gems-yo.md">
+      <file leaf-file-name="code_padrino-stacks_mongomapper-ngoappercon.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mongomapper-ngoappercon.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="30">
@@ -157,12 +60,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2013-09-26-libv8-gem-errors_the-basics.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md">
+      <file leaf-file-name="code_padrino-stacks_mysql-yml-oductiona.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="120">
-                <caret line="8" column="153" lean-forward="false" selection-start-line="8" selection-start-column="153" selection-end-line="8" selection-end-column="153" />
+                <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -170,12 +73,90 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2011-09-26-asset-pipeline.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_rails/Tutorials/2011-09-26-asset-pipeline.md">
+      <file leaf-file-name="code_padrino-stacks_mysql-yml-oductiona-2.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona-2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+              <first_editor relative-caret-position="120">
+                <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="code_padrino-stacks_mysql-yml-tiveecord.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-tiveecord.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="180">
+                <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="code_padrino-stacks_datamapper-taapperset.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_datamapper-taapperset.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="code_padrino-stacks_custom-commands-velopment.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-velopment.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="padrino-stacks_connect-to-your-database.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_connect-to-your-database.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="padrino-stacks_custom-commands.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_custom-commands.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="150">
+                <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="code_padrino-stacks_custom-commands-cxsettingss.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-cxsettingss.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -191,21 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_load-a-process-sudobluepill.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_start-sudobluepill.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_status-sudobluepill.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_status-sudobluepill-2.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_stop-sudobluepill.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_unload-a-process-sudobluepill.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_note.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_commands.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_build-your-own-pill-file.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_process-names-convention.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_contents.md" />
-        <option value="$PROJECT_DIR$/_rails/Tutorials/1974-09-26-migrate-from-heroku.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_useful-pointers.md" />
-        <option value="$PROJECT_DIR$/_rails/Tutorials/1985-09-26-postgis-installation.md" />
-        <option value="$PROJECT_DIR$/_rails/Tutorials/1950-09-26-implementing-faye.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-2.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-1.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md" />
@@ -242,6 +208,21 @@
         <option value="$PROJECT_DIR$/_rails/Tutorials/2013-09-26-libv8-gem-errors.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/code_2013-09-26-libv8-gem-errors_the-specifics-mnstaller.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/asset-pipeline.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/asset-pipeline_important.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_application.rb-nfigassetse.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_manifest.yml-velopment.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_content.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/padrino-stacks.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mongoid-velopment.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mongomapper-ngoappercon.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona-2.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-tiveecord.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_datamapper-taapperset.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-velopment.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-cxsettingss.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_custom-commands.md" />
       </list>
     </option>
   </component>
@@ -310,7 +291,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
+              <option name="myItemId" value="deployment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,7 +345,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
+              <option name="myItemId" value="Deployment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -390,7 +371,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
+              <option name="myItemId" value="Deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rails" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="padrino-stacks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_inlines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Deployment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,6 +420,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks" />
       <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies" />
       <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console" />
       <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation" />
@@ -606,17 +618,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503058142751</updated>
-      <workItem from="1503058153848" duration="6086000" />
+      <workItem from="1503058153848" duration="8832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6086000" />
+    <option name="totallyTimeSpent" value="8832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49589685" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49589685" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -646,259 +659,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_start-sudobluepill.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="46" lean-forward="false" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_load-a-process-sudobluepill.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="73" lean-forward="false" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_contents.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_useful-pointers.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_build-geos-3.3.x.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_contents.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1985-09-26-postgis-installation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1950-09-26-implementing-faye.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1974-09-26-migrate-from-heroku.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_build-postgis.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_prerequisites-sudoaptg.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_postgis-extension-for-.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_enabler-scripts-sudoup.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-wgethttp.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1987-09-22-psql-failover/1987-09-22-psql-failover_when-you-use-database-replication.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" column="219" lean-forward="false" selection-start-line="10" selection-start-column="219" selection-end-line="10" selection-end-column="219" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_installing-with-cloud-66.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_spatially-enabling-a-databa.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-geos-3.3.x-wgeth.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-configur.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-sudolnsf.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1987-09-22-psql-failover.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1201,6 +961,259 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="120">
             <caret line="8" column="153" lean-forward="false" selection-start-line="8" selection-start-column="153" selection-end-line="8" selection-end-column="153" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/mysql/mysql.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/asset-pipeline_enable.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/asset-pipeline.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="285">
+            <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/asset-pipeline_important.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="98" lean-forward="false" selection-start-line="9" selection-start-column="98" selection-end-line="9" selection-end-column="98" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_important-figassetsco.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_application.rb-nfigassetse.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_manifest.yml-velopment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/deployment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_mysql-yml.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_mongomapper.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_note.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_content.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/padrino-stacks.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="74" lean-forward="false" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mongoid-velopment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mongomapper-ngoappercon.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-oductiona-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_mysql-yml-tiveecord.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_datamapper-taapperset.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-cxsettingss.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-velopment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_connect-to-your-database.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks/padrino-stacks_custom-commands.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
             <folding />
           </first_editor>
           <second_editor />
