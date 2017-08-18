@@ -2,231 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8523b96d-f99a-422f-96c3-559e0886ea49" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/code_1991-09-26-rails-console_start-by-sshing-to-your-serv1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_1.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_Node/Deployment/application-settings-node.md" afterPath="$PROJECT_DIR$/_Node/Deployment/application-settings-node.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_Node/Deployment/getting-started.md" afterPath="$PROJECT_DIR$/_Node/Deployment/getting-started.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_Node/Deployment/scale-node.md" afterPath="$PROJECT_DIR$/_Node/Deployment/scale-node.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_Node/Deployment/supported-frameworks.md" afterPath="$PROJECT_DIR$/_Node/Deployment/supported-frameworks.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_Skycap/Buildgrid/buildgrid-settings.md" afterPath="$PROJECT_DIR$/_Skycap/Buildgrid/buildgrid-settings.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/Lets-encrypt.md" afterPath="$PROJECT_DIR$/_common/AddOns/Lets-encrypt.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/add-in-implementation.md" afterPath="$PROJECT_DIR$/_common/AddOns/add-in-implementation.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/add-ins-jobs.md" afterPath="$PROJECT_DIR$/_common/AddOns/add-ins-jobs.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/custom-server.md" afterPath="$PROJECT_DIR$/_common/AddOns/custom-server.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/custom-web-servers.md" afterPath="$PROJECT_DIR$/_common/AddOns/custom-web-servers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/database-backups.md" afterPath="$PROJECT_DIR$/_common/AddOns/database-backups.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/docker-server-task.md" afterPath="$PROJECT_DIR$/_common/AddOns/docker-server-task.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/docker-service-task.md" afterPath="$PROJECT_DIR$/_common/AddOns/docker-service-task.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/elasticsearch.md" afterPath="$PROJECT_DIR$/_common/AddOns/elasticsearch.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/filebeat.md" afterPath="$PROJECT_DIR$/_common/AddOns/filebeat.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/glusterfs.md" afterPath="$PROJECT_DIR$/_common/AddOns/glusterfs.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/haproxy.md" afterPath="$PROJECT_DIR$/_common/AddOns/haproxy.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/influxdb.md" afterPath="$PROJECT_DIR$/_common/AddOns/influxdb.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/load-balancer.md" afterPath="$PROJECT_DIR$/_common/AddOns/load-balancer.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/load-balancing.md" afterPath="$PROJECT_DIR$/_common/AddOns/load-balancing.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/logentries.md" afterPath="$PROJECT_DIR$/_common/AddOns/logentries.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/memcached.md" afterPath="$PROJECT_DIR$/_common/AddOns/memcached.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/rabbitmq.md" afterPath="$PROJECT_DIR$/_common/AddOns/rabbitmq.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/rake-task.md" afterPath="$PROJECT_DIR$/_common/AddOns/rake-task.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/redis.md" afterPath="$PROJECT_DIR$/_common/AddOns/redis.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/shell.md" afterPath="$PROJECT_DIR$/_common/AddOns/shell.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/AddOns/ssl.md" afterPath="$PROJECT_DIR$/_common/AddOns/ssl.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Databases/backup-verifiers.md" afterPath="$PROJECT_DIR$/_common/Databases/backup-verifiers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Databases/database-backup.md" afterPath="$PROJECT_DIR$/_common/Databases/database-backup.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Databases/database-import.md" afterPath="$PROJECT_DIR$/_common/Databases/database-import.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Databases/database-management.md" afterPath="$PROJECT_DIR$/_common/Databases/database-management.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Databases/database-replication.md" afterPath="$PROJECT_DIR$/_common/Databases/database-replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Databases/elasticsearch-scaling.md" afterPath="$PROJECT_DIR$/_common/Databases/elasticsearch-scaling.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Databases/glusterfs-scaling.md" afterPath="$PROJECT_DIR$/_common/Databases/glusterfs-scaling.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Databases/mongodb-replica-sets.md" afterPath="$PROJECT_DIR$/_common/Databases/mongodb-replica-sets.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/build-grid.md" afterPath="$PROJECT_DIR$/_common/Deployment/build-grid.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/building-a-manifest-file.md" afterPath="$PROJECT_DIR$/_common/Deployment/building-a-manifest-file.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/building-your-classic-stack.md" afterPath="$PROJECT_DIR$/_common/Deployment/building-your-classic-stack.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/building-your-service.md" afterPath="$PROJECT_DIR$/_common/Deployment/building-your-service.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/cloud-aws.md" afterPath="$PROJECT_DIR$/_common/Deployment/cloud-aws.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/cloud-azure.md" afterPath="$PROJECT_DIR$/_common/Deployment/cloud-azure.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/cloud-clouda.md" afterPath="$PROJECT_DIR$/_common/Deployment/cloud-clouda.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/cloud-deployment.md" afterPath="$PROJECT_DIR$/_common/Deployment/cloud-deployment.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/cloud-do.md" afterPath="$PROJECT_DIR$/_common/Deployment/cloud-do.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/cloud-gce.md" afterPath="$PROJECT_DIR$/_common/Deployment/cloud-gce.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/cloud-linode.md" afterPath="$PROJECT_DIR$/_common/Deployment/cloud-linode.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/cloud-packet.md" afterPath="$PROJECT_DIR$/_common/Deployment/cloud-packet.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/cloud-rackspace.md" afterPath="$PROJECT_DIR$/_common/Deployment/cloud-rackspace.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/cloud66-starter.md" afterPath="$PROJECT_DIR$/_common/Deployment/cloud66-starter.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/configure-dns.md" afterPath="$PROJECT_DIR$/_common/Deployment/configure-dns.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/container-ports.md" afterPath="$PROJECT_DIR$/_common/Deployment/container-ports.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/deploy-hooks.md" afterPath="$PROJECT_DIR$/_common/Deployment/deploy-hooks.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/deploy-profiles.md" afterPath="$PROJECT_DIR$/_common/Deployment/deploy-profiles.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/deployment-authorisation.md" afterPath="$PROJECT_DIR$/_common/Deployment/deployment-authorisation.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/deployment-gateway.md" afterPath="$PROJECT_DIR$/_common/Deployment/deployment-gateway.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/deployment-history.md" afterPath="$PROJECT_DIR$/_common/Deployment/deployment-history.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/docker-introduction.md" afterPath="$PROJECT_DIR$/_common/Deployment/docker-introduction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/docker-service-configuration.md" afterPath="$PROJECT_DIR$/_common/Deployment/docker-service-configuration.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/easy-deploy-repos.md" afterPath="$PROJECT_DIR$/_common/Deployment/easy-deploy-repos.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/env-vars.md" afterPath="$PROJECT_DIR$/_common/Deployment/env-vars.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/getting-started-with-manifest-files.md" afterPath="$PROJECT_DIR$/_common/Deployment/getting-started-with-manifest-files.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/multi-tenancy.md" afterPath="$PROJECT_DIR$/_common/Deployment/multi-tenancy.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/nginx.md" afterPath="$PROJECT_DIR$/_common/Deployment/nginx.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/parallel-deployment.md" afterPath="$PROJECT_DIR$/_common/Deployment/parallel-deployment.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/proc-files.md" afterPath="$PROJECT_DIR$/_common/Deployment/proc-files.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/redeployment-hook.md" afterPath="$PROJECT_DIR$/_common/Deployment/redeployment-hook.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/registered-servers.md" afterPath="$PROJECT_DIR$/_common/Deployment/registered-servers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/reserved-tags.md" afterPath="$PROJECT_DIR$/_common/Deployment/reserved-tags.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/server-ip-addresses.md" afterPath="$PROJECT_DIR$/_common/Deployment/server-ip-addresses.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/service-network-configuration.md" afterPath="$PROJECT_DIR$/_common/Deployment/service-network-configuration.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/stack-definition.md" afterPath="$PROJECT_DIR$/_common/Deployment/stack-definition.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/FailoverGroups/failover-groups.md" afterPath="$PROJECT_DIR$/_common/FailoverGroups/failover-groups.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Getting Started/advanced-deploy.md" afterPath="$PROJECT_DIR$/_common/Getting Started/advanced-deploy.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Getting Started/custom_git_repo.md" afterPath="$PROJECT_DIR$/_common/Getting Started/custom_git_repo.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Getting Started/dockerfile.md" afterPath="$PROJECT_DIR$/_common/Getting Started/dockerfile.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Getting Started/image_repository.md" afterPath="$PROJECT_DIR$/_common/Getting Started/image_repository.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Getting Started/networking-ports.md" afterPath="$PROJECT_DIR$/_common/Getting Started/networking-ports.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Getting Started/server-size.md" afterPath="$PROJECT_DIR$/_common/Getting Started/server-size.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Getting Started/service_networking.md" afterPath="$PROJECT_DIR$/_common/Getting Started/service_networking.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Getting Started/stack-environments.md" afterPath="$PROJECT_DIR$/_common/Getting Started/stack-environments.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/agent-communication-issue.md" afterPath="$PROJECT_DIR$/_common/StackManagement/agent-communication-issue.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/applying-upgrades.md" afterPath="$PROJECT_DIR$/_common/StackManagement/applying-upgrades.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/custom-config.md" afterPath="$PROJECT_DIR$/_common/StackManagement/custom-config.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/custom-git-repository.md" afterPath="$PROJECT_DIR$/_common/StackManagement/custom-git-repository.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/global-search.md" afterPath="$PROJECT_DIR$/_common/StackManagement/global-search.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/live-logs.md" afterPath="$PROJECT_DIR$/_common/StackManagement/live-logs.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/logging.md" afterPath="$PROJECT_DIR$/_common/StackManagement/logging.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/meta-data-service.md" afterPath="$PROJECT_DIR$/_common/StackManagement/meta-data-service.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/network-configuration.md" afterPath="$PROJECT_DIR$/_common/StackManagement/network-configuration.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/rack_health_check.md" afterPath="$PROJECT_DIR$/_common/StackManagement/rack_health_check.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/scaling.md" afterPath="$PROJECT_DIR$/_common/StackManagement/scaling.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/server-deletion.md" afterPath="$PROJECT_DIR$/_common/StackManagement/server-deletion.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/server-monitoring.md" afterPath="$PROJECT_DIR$/_common/StackManagement/server-monitoring.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/server-restart-notifications.md" afterPath="$PROJECT_DIR$/_common/StackManagement/server-restart-notifications.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/service-lifecycle-management.md" afterPath="$PROJECT_DIR$/_common/StackManagement/service-lifecycle-management.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/service-monitoring.md" afterPath="$PROJECT_DIR$/_common/StackManagement/service-monitoring.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/service-pause-resume.md" afterPath="$PROJECT_DIR$/_common/StackManagement/service-pause-resume.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/service-resources.md" afterPath="$PROJECT_DIR$/_common/StackManagement/service-resources.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/service-storage.md" afterPath="$PROJECT_DIR$/_common/StackManagement/service-storage.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/ssh-to-server.md" afterPath="$PROJECT_DIR$/_common/StackManagement/ssh-to-server.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/ssh.md" afterPath="$PROJECT_DIR$/_common/StackManagement/ssh.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/stack-notifications.md" afterPath="$PROJECT_DIR$/_common/StackManagement/stack-notifications.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/troubleshoot-ror-deployment-failure.md" afterPath="$PROJECT_DIR$/_common/StackManagement/troubleshoot-ror-deployment-failure.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/backups.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/backups.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/commands-overview.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/commands-overview.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/databases.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/databases.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/download.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/download.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/gateway.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/gateway.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/introduction.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/introduction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/jobs.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/jobs.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/lease.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/lease.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/login.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/login.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/open.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/open.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/redeploy.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/redeploy.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/run.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/run.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/servers.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/servers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/services.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/services.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/settings.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/settings.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/ssh.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/ssh.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/stacks.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/stacks.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/tail.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/tail.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/toolbelt-env-vars.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/toolbelt-env-vars.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/toolbelt_processes.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/toolbelt_processes.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/tunnel.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/tunnel.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/upload.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/upload.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/users.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/users.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-01-21-docker-troubleshooting.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1900-01-21-docker-troubleshooting.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-09-26-multi-region-stack.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1900-09-26-multi-region-stack.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-10-10-nginx-ssl-ciphers.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1900-10-10-nginx-ssl-ciphers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-access-your-code.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-access-your-code.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-zero-downtime-deploy.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-zero-downtime-deploy.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1901-10-03-nginx-modules.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1901-10-03-nginx-modules.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1920-09-26-change-psql-directory.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1920-09-26-change-psql-directory.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1925-09-26-websocket-support.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1925-09-26-websocket-support.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1930-09-26-haproxy-for-websocket.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1930-09-26-haproxy-for-websocket.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1935-09-26-connect-db-servers.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1935-09-26-connect-db-servers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1936-09-26-symlink-folders.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1936-09-26-symlink-folders.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1960-09-24-smtp-installation.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1960-09-24-smtp-installation.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1969-09-26-memcached.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1969-09-26-memcached.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1970-09-26-manage-backups.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1970-09-26-manage-backups.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1976-09-26-migrate-across-dc.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1976-09-26-migrate-across-dc.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1976-09-26-stack-failover.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1976-09-26-stack-failover.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1980-09-26-optimizing-performance.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1980-09-26-optimizing-performance.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1981-09-26-out-of-memory-errors.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1981-09-26-out-of-memory-errors.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1998-12-08-seeding-db.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1998-12-08-seeding-db.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2000-01-01-ssh-keys.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2000-01-01-ssh-keys.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2003-09-26-sharing-db.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2003-09-26-sharing-db.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2004-09-26-ssl-certificate.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2004-09-26-ssl-certificate.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2009-09-26-application-not-serving.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2009-09-26-application-not-serving.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2012-01-03-nginx-auth.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2012-01-03-nginx-auth.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2012-01-05-nginx-deny.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2012-01-05-nginx-deny.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2012-01-06-digitalocean-server-creation-errors.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2012-01-06-digitalocean-server-creation-errors.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2012-01-09-nginx-redirect.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2012-01-09-nginx-redirect.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2013-01-20-whenever.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2013-01-20-whenever.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2013-09-26-db-config-test-group-errors.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2013-09-26-db-config-test-group-errors.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2013-09-26-db-structure-dump-error.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2013-09-26-db-structure-dump-error.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2014-09-26-local-cached-copy-error.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2014-09-26-local-cached-copy-error.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2014-09-26-uninstall-mysql.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2014-09-26-uninstall-mysql.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2015-02-19-server-size.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2015-02-19-server-size.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2015-07-08-Setting-up-custom-livelogs.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2015-07-08-Setting-up-custom-livelogs.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2015-08-20-migrate-the stack.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2015-08-20-migrate-the stack.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2015-09-02-multi-cert_haproxy.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2015-09-02-multi-cert_haproxy.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2015-09-22-github.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2015-09-22-github.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2015-09-26-memory-usage-issues.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2015-09-26-memory-usage-issues.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2016-01-21-Docker-Dependency.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2016-01-21-Docker-Dependency.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2016-04-07-logs-for-containers.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2016-04-07-logs-for-containers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2016-04-13-newrelic-deploy-hooks-docker.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2016-04-13-newrelic-deploy-hooks-docker.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2016-09-26-permission-denied-errors.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2016-09-26-permission-denied-errors.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2018-09-22-using-master-data-staging.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2018-09-22-using-master-data-staging.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2038-11-06-smtp-timeouts.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2038-11-06-smtp-timeouts.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2039-02-26-ssl-certificate-issues.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2039-02-26-ssl-certificate-issues.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2040-02-26-unicorn-issues.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2040-02-26-unicorn-issues.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2040-09-26-whenever-errors.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2040-09-26-whenever-errors.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2041-01-01-agent-communication-is.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2041-01-01-agent-communication-is.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2042-02-11-connecting-to-server.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2042-02-11-connecting-to-server.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2043-02-12-disk-space.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2043-02-12-disk-space.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2044-02-13-pg-replication-version.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2044-02-13-pg-replication-version.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2044-03-12-azure-old-portal.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2044-03-12-azure-old-portal.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/BetaProgram/cloud-66-beta-program.md" afterPath="$PROJECT_DIR$/_general/BetaProgram/cloud-66-beta-program.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/Introduction/cloud66-introduction.md" afterPath="$PROJECT_DIR$/_general/Introduction/cloud66-introduction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/Introduction/security.md" afterPath="$PROJECT_DIR$/_general/Introduction/security.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/Introduction/terminology.md" afterPath="$PROJECT_DIR$/_general/Introduction/terminology.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/Partners/integration-with-circle-ci.md" afterPath="$PROJECT_DIR$/_general/Partners/integration-with-circle-ci.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/Partners/integration-with-semaphore.md" afterPath="$PROJECT_DIR$/_general/Partners/integration-with-semaphore.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/Partners/integration-with-travis-ci.md" afterPath="$PROJECT_DIR$/_general/Partners/integration-with-travis-ci.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/Partners/integration-with-weave-scope.md" afterPath="$PROJECT_DIR$/_general/Partners/integration-with-weave-scope.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/Partners/partner-integration.md" afterPath="$PROJECT_DIR$/_general/Partners/partner-integration.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/Teams/team-accounts.md" afterPath="$PROJECT_DIR$/_general/Teams/team-accounts.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/account/account-management.md" afterPath="$PROJECT_DIR$/_general/account/account-management.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/account/account-protection.md" afterPath="$PROJECT_DIR$/_general/account/account-protection.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/account/audit-logs.md" afterPath="$PROJECT_DIR$/_general/account/audit-logs.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/account/browser-requirements.md" afterPath="$PROJECT_DIR$/_general/account/browser-requirements.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/account/cloud66-badge.md" afterPath="$PROJECT_DIR$/_general/account/cloud66-badge.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/account/notifications.md" afterPath="$PROJECT_DIR$/_general/account/notifications.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/account/pricing.md" afterPath="$PROJECT_DIR$/_general/account/pricing.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/account/referral-program.md" afterPath="$PROJECT_DIR$/_general/account/referral-program.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/account/security-wall-of-fame.md" afterPath="$PROJECT_DIR$/_general/account/security-wall-of-fame.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/account/support.md" afterPath="$PROJECT_DIR$/_general/account/support.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/account/two-step-verification.md" afterPath="$PROJECT_DIR$/_general/account/two-step-verification.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/unknown/cloud66-birdseye.md" afterPath="$PROJECT_DIR$/_general/unknown/cloud66-birdseye.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/unknown/cloud66-status.md" afterPath="$PROJECT_DIR$/_general/unknown/cloud66-status.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/unknown/data-protection.md" afterPath="$PROJECT_DIR$/_general/unknown/data-protection.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/unknown/faq.md" afterPath="$PROJECT_DIR$/_general/unknown/faq.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/unknown/intro.md" afterPath="$PROJECT_DIR$/_general/unknown/intro.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/unknown/pci-compliance.md" afterPath="$PROJECT_DIR$/_general/unknown/pci-compliance.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_general/unknown/versions.md" afterPath="$PROJECT_DIR$/_general/unknown/versions.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/application-settings-node/application-settings-node_change-your-datasources-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/application-settings-node/application-settings-node_change-your-datasources-.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/application-settings-node/application-settings-node_cloud-66-will-analyze-your-code-a.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/application-settings-node/application-settings-node_cloud-66-will-analyze-your-code-a.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/application-settings-node/application-settings-node_final-notes-on-managing-storage.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/application-settings-node/application-settings-node_final-notes-on-managing-storage.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/getting-started/getting-started_----what-youll-needneeded.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/getting-started/getting-started_----what-youll-needneeded.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/getting-started/getting-started_step-3-define-your-application-properties.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/getting-started/getting-started_step-3-define-your-application-properties.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/getting-started/getting-started_step-5-define-deployment-properties.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/getting-started/getting-started_step-5-define-deployment-properties.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/scale-node/scale-node_scale-your-instances-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/scale-node/scale-node_scale-your-instances-.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/supported-frameworks/supported-frameworks_which-framework-do-we-support-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Node/supported-frameworks/supported-frameworks_which-framework-do-we-support-.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacyDocker/Getting Started/docker-getting-started-deployments.md" afterPath="$PROJECT_DIR$/_legacyDocker/Getting Started/docker-getting-started-deployments.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacyDocker/Getting Started/docker-getting-started.md" afterPath="$PROJECT_DIR$/_legacyDocker/Getting Started/docker-getting-started.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/Toolbelt/containers.md" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/containers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/Toolbelt/easydeploys.md" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/easydeploys.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/1900-01-20-passenger-5.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/1900-01-20-passenger-5.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/1950-09-26-implementing-faye.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/1950-09-26-implementing-faye.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/1967-09-26-bluepill.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/1967-09-26-bluepill.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/1974-09-26-migrate-from-heroku.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/1974-09-26-migrate-from-heroku.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_enabler-scripts.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_enabler-scripts.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_installing-with-cloud-66.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_installing-with-cloud-66.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_postgis-extension-for-postg.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_postgis-extension-for-postg.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-geos-3.3.x-wgeth.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-geos-3.3.x-wgeth.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-configur.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-configur.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-sudolnsf.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-sudolnsf.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-wgethttp.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-wgethttp.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_enabler-scripts-sudoup.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_enabler-scripts-sudoup.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_postgis-extension-for-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_postgis-extension-for-.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_prerequisites-sudoaptg.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_prerequisites-sudoaptg.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1987-09-22-psql-failover/1987-09-22-psql-failover_when-you-use-database-replication.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1987-09-22-psql-failover/1987-09-22-psql-failover_when-you-use-database-replication.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_instructions.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_instructions.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_mysql.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_mysql.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_postgresql.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_postgresql.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/1991-09-26-rails-console_start-by-sshing-to-your-serverh.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/1991-09-26-rails-console_start-by-sshing-to-your-serverh.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/code_1991-09-26-rails-console_start-by-sshing-to-your-serv.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/code_1991-09-26-rails-console_start-by-sshing-to-your-serv.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-binbash.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-binbash.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-oductio.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-oductio.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_manually-cd.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_manually-cd.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2011-09-26-asset-pipeline/2011-09-26-asset-pipeline_if-youre-experiencing-deployment.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2011-09-26-asset-pipeline/2011-09-26-asset-pipeline_if-youre-experiencing-deployment.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/code_2013-09-26-libv8-gem-errors_the-specifics-mnstaller.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/code_2013-09-26-libv8-gem-errors_the-specifics-mnstaller.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/2014-04-26-gem-dependencies_depending-on-which-gems-youre-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/2014-04-26-gem-dependencies_depending-on-which-gems-youre-.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_depending-on-which-gems-yo.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_depending-on-which-gems-yo.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/1987-09-22-psql-failover.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/1987-09-22-psql-failover.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/1989-09-26-replace-sqlite.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/1989-09-26-replace-sqlite.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/1991-09-26-rails-console.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/1991-09-26-rails-console.md" />
@@ -234,14 +39,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/2011-09-26-asset-pipeline.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2011-09-26-asset-pipeline.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/2013-09-26-libv8-gem-errors.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2013-09-26-libv8-gem-errors.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/Tutorials/2014-04-26-gem-dependencies.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2014-04-26-gem-dependencies.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/deployment/asset-pipeline.md" afterPath="$PROJECT_DIR$/_rails/deployment/asset-pipeline.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/deployment/padrino-stacks.md" afterPath="$PROJECT_DIR$/_rails/deployment/padrino-stacks.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/deployment/passenger-enterprise.md" afterPath="$PROJECT_DIR$/_rails/deployment/passenger-enterprise.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/deployment/puma-rack-server.md" afterPath="$PROJECT_DIR$/_rails/deployment/puma-rack-server.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/deployment/rails-stacks.md" afterPath="$PROJECT_DIR$/_rails/deployment/rails-stacks.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/deployment/sinatra-stacks.md" afterPath="$PROJECT_DIR$/_rails/deployment/sinatra-stacks.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/deployment/thin-rack-server.md" afterPath="$PROJECT_DIR$/_rails/deployment/thin-rack-server.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/deployment/unicorn-rack-server.md" afterPath="$PROJECT_DIR$/_rails/deployment/unicorn-rack-server.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -256,8 +53,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="1985-09-26-postgis-installation_build-geos-3.3.x.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_build-geos-3.3.x.md">
+      <file leaf-file-name="2011-09-26-asset-pipeline_if-youre-experiencing-deployment.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2011-09-26-asset-pipeline/2011-09-26-asset-pipeline_if-youre-experiencing-deployment.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="53" lean-forward="false" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013-09-26-libv8-gem-errors.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_rails/Tutorials/2013-09-26-libv8-gem-errors.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="165">
+                <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013-09-26-libv8-gem-errors_the-specifics.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-specifics.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -269,12 +92,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1985-09-26-postgis-installation.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1985-09-26-postgis-installation.md">
+      <file leaf-file-name="code_2013-09-26-libv8-gem-errors_the-specifics-mnstaller.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/code_2013-09-26-libv8-gem-errors_the-specifics-mnstaller.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="195">
-                <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+              <first_editor relative-caret-position="615">
+                <caret line="41" column="27" lean-forward="false" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -282,12 +105,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1985-09-26-postgis-installation_build-postgis.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_build-postgis.md">
+      <file leaf-file-name="2014-04-26-gem-dependencies.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_rails/Tutorials/2014-04-26-gem-dependencies.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -295,12 +118,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1950-09-26-implementing-faye.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1950-09-26-implementing-faye.md">
+      <file leaf-file-name="2014-04-26-gem-dependencies_depending-on-which-gems-youre-.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/2014-04-26-gem-dependencies_depending-on-which-gems-youre-.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="60">
-                <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+              <first_editor relative-caret-position="285">
+                <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="code_2014-04-26-gem-dependencies_1.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="75">
+                <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="code_2014-04-26-gem-dependencies_depending-on-which-gems-yo.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_depending-on-which-gems-yo.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013-09-26-libv8-gem-errors_the-basics.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="120">
+                <caret line="8" column="153" lean-forward="false" selection-start-line="8" selection-start-column="153" selection-end-line="8" selection-end-column="153" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2011-09-26-asset-pipeline.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_rails/Tutorials/2011-09-26-asset-pipeline.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -316,23 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_2.-rails95root.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_3.-rails95root.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_1.-rails95root.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_4.-rails95root.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_introduction.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_troubleshooting.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_3.-rails95root-fayethin.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_1.-rails95root-oduction.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_4.-rails95root-quirefay.md" />
-        <option value="$PROJECT_DIR$/_rails/Tutorials/1967-09-26-bluepill.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_load-a-process.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_start.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_status.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_stop.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_unload-a-process.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_build-your-own-pill-file-ocessstdo.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_load-a-process-sudobluepill.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_start-sudobluepill.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_status-sudobluepill.md" />
@@ -348,6 +206,42 @@
         <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_useful-pointers.md" />
         <option value="$PROJECT_DIR$/_rails/Tutorials/1985-09-26-postgis-installation.md" />
         <option value="$PROJECT_DIR$/_rails/Tutorials/1950-09-26-implementing-faye.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-2.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-1.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_prerequisites-sudoaptg.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_postgis-extension-for-.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_enabler-scripts-sudoup.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-wgethttp.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-sudolnsf.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-configur.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-geos-3.3.x-wgeth.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_postgis-extension-for-postg.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_enabler-scripts.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_installing-with-cloud-66.md" />
+        <option value="$PROJECT_DIR$/_rails/Tutorials/1987-09-22-psql-failover.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1987-09-22-psql-failover/1987-09-22-psql-failover_when-you-use-database-replication.md" />
+        <option value="$PROJECT_DIR$/_rails/Tutorials/1989-09-26-replace-sqlite.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_instructions.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_mysql.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_postgresql.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/1991-09-26-rails-console_start-by-sshing-to-your-serverh.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/code_1991-09-26-rails-console_start-by-sshing-to-your-serv.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/code_1991-09-26-rails-console_start-by-sshing-to-your-serv1.md" />
+        <option value="$PROJECT_DIR$/_rails/Tutorials/1991-09-26-rails-console.md" />
+        <option value="$PROJECT_DIR$/_rails/Tutorials/1993-09-26-running-rake-tasks.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-oductio.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_manually-cd.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-binbash.md" />
+        <option value="$PROJECT_DIR$/_rails/Tutorials/2011-09-26-asset-pipeline.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2011-09-26-asset-pipeline/2011-09-26-asset-pipeline_if-youre-experiencing-deployment.md" />
+        <option value="$PROJECT_DIR$/_rails/Tutorials/2014-04-26-gem-dependencies.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_depending-on-which-gems-yo.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_1.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/2014-04-26-gem-dependencies_depending-on-which-gems-youre-.md" />
+        <option value="$PROJECT_DIR$/_rails/Tutorials/2013-09-26-libv8-gem-errors.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/code_2013-09-26-libv8-gem-errors_the-specifics-mnstaller.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md" />
       </list>
     </option>
   </component>
@@ -499,36 +393,6 @@
               <option name="myItemId" value="Tutorials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rails" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1985-09-26-postgis-installation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_inlines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -542,6 +406,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies" />
+      <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console" />
+      <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -735,18 +606,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503058142751</updated>
-      <workItem from="1503058153848" duration="2959000" />
+      <workItem from="1503058153848" duration="6086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2959000" />
+    <option name="totallyTimeSpent" value="6086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49589685" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49589685" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -776,292 +646,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_binbash.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_2.-rails95root.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_4.-rails95root.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_introduction.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_troubleshooting.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="82" lean-forward="false" selection-start-line="4" selection-start-column="82" selection-end-line="4" selection-end-column="82" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_4.-rails95root-quirefay.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_implementation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_1.-rails95root-oduction.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_3.-rails95root-fayethin.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_3.-rails95root.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_1.-rails95root.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1967-09-26-bluepill.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_load-a-process.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_start.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_status.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_stop.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_unload-a-process.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_build-your-own-pill-file-ocessstdo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="74" lean-forward="false" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_process-names-convention.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="73" lean-forward="false" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_note.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_unload-a-process-sudobluepill.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_build-your-own-pill-file.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="108" lean-forward="false" selection-start-line="5" selection-start-column="108" selection-end-line="5" selection-end-column="108" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_commands.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_stop-sudobluepill.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_status-sudobluepill-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_status-sudobluepill.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_start-sudobluepill.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1106,17 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1974-09-26-migrate-from-heroku.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_build-geos-3.3.x.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1150,6 +723,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1950-09-26-implementing-faye.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1974-09-26-migrate-from-heroku.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_build-postgis.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1161,11 +756,451 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1950-09-26-implementing-faye.md">
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_installing-with-cloud-.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_prerequisites-sudoaptg.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_postgis-extension-for-.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_enabler-scripts-sudoup.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="60">
-            <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-wgethttp.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1987-09-22-psql-failover/1987-09-22-psql-failover_when-you-use-database-replication.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="219" lean-forward="false" selection-start-line="10" selection-start-column="219" selection-end-line="10" selection-end-column="219" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_installing-with-cloud-66.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="345">
+            <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_spatially-enabling-a-databa.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-geos-3.3.x-wgeth.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-configur.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-sudolnsf.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1987-09-22-psql-failover.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_postgis-extension-for-postg.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_manual-installation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_enabler-scripts.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1989-09-26-replace-sqlite.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="195">
+            <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_postgresql.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_mysql.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_instructions.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/1991-09-26-rails-console_start-by-sshing-to-your-serverh.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="119" lean-forward="false" selection-start-line="5" selection-start-column="119" selection-end-line="5" selection-end-column="119" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/code_1991-09-26-rails-console_start-by-sshing-to-your-serv1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1991-09-26-rails-console.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/code_1991-09-26-rails-console_start-by-sshing-to-your-serv.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1993-09-26-running-rake-tasks.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="114" lean-forward="false" selection-start-line="11" selection-start-column="114" selection-end-line="11" selection-end-column="114" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_deployment-hooks.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_introduction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-oductio.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_manually-cd.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-binbash.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/2011-09-26-asset-pipeline.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2011-09-26-asset-pipeline/2011-09-26-asset-pipeline_if-youre-experiencing-deployment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="53" lean-forward="false" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/2014-04-26-gem-dependencies.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_depending-on-which-gems-yo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/2014-04-26-gem-dependencies_depending-on-which-gems-youre-.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="285">
+            <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/2013-09-26-libv8-gem-errors.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/code_2013-09-26-libv8-gem-errors_the-specifics-mnstaller.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="615">
+            <caret line="41" column="27" lean-forward="false" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-specifics.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="153" lean-forward="false" selection-start-line="8" selection-start-column="153" selection-end-line="8" selection-end-column="153" />
             <folding />
           </first_editor>
           <second_editor />

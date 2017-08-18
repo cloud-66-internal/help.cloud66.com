@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2013-09-26-libv8-gem-errors
+title: Errors when installing gem libv8
 categories: Tutorials
 lead: ""
 legacy: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 1991-09-26-rails-console
+title: Running the Rails Console
 categories: Tutorials
 lead: ""
 legacy: false

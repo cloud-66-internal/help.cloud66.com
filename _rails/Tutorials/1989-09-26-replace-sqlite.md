@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 1989-09-26-replace-sqlite
+title: Replacing SQLite with MySQL or PostgreSQL
 categories: Tutorials
 lead: ""
 legacy: false

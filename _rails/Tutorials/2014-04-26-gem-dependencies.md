@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2014-04-26-gem-dependencies
+title: Gem dependency errors
 categories: Tutorials
 lead: ""
 legacy: false
