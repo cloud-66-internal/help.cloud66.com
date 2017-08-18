@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 1987-09-22-psql-failover
+title: PostgreSQL failover procedur
 categories: Tutorials
 lead: ""
 legacy: false

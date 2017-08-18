@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2011-09-26-asset-pipeline
+title: Asset Pipeline Error
 categories: Tutorials
 lead: ""
 legacy: false

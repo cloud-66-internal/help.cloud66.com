@@ -1,8 +1,7 @@
 <!-- post: -->
 
 
-#Depending on which gems you're using together with a specific Ruby version, you may see dependency issues such as:
-
+Depending on which gems you're using together with a specific Ruby version, you may see dependency issues such as:
 
 
 {%include _inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_depending-on-which-gems-yo.md %}
@@ -14,6 +13,11 @@ This may happen with a gem such as `debugger`, which is designed to hook into lo
 
 1.
 This should _not_ be done in production, so you could start by moving the gem to your `development` group in your `Gemfile`:
+
+{%include _inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_1.md %}
+
+Once this is done, run bundle install, commit to your Git and re-deploy.
+
 
 2.
 You may be running an old version of a gem while running a later version of Ruby - try running `bundle update debugger` to update the gem. Your other option is to downgrade your Ruby version.

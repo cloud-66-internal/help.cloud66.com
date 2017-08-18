@@ -1,12 +1,12 @@
 <!-- post: -->
 
 
-### The basics
+## The basics
 
-If you specify the version of libv8 as `gem libv8 '~>3.11.8'` for instance in your Gemfile, you *could* encounter an unfriendly error.
-(Note that most of the time libv8 is installed as a pre-dependency for gem therubyracer, so you don't always need to specify it explicitly)
+If you specify the version of libv8 as `gem libv8 '~>3.11.8'` for instance, in your Gemfile, you *could* encounter an unfriendly error.
+(Note that most of the time, libv8 is installed as a pre-dependency for gem therubyracer, so you don't always need to specify it explicitly)
 
-The easiest solution is to determine which version of the gem actually works on your target machine, and then either relax the constraint in your Gemfile, or fix it at a working revision afterwards.
+The easiest solution is to determine which version of the gem actually works on your target machine, and then either relax the constraint in your Gemfile or fix it at a working revision afterwards.
 
 You can determine the working gem version by opening a terminal to your server and manually uninstalling/installing gem versions with:
 

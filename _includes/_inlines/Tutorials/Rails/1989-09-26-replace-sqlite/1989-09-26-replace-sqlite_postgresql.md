@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-### PostgreSQL
+## PostgreSQL
 
 1.  Replace `adapter: sqlite` with `adapter: postgresql` in your config/database.yml file.
 2.  Replace `gem 'sqlite*'` with `gem 'pg'` in your Gemfile.
