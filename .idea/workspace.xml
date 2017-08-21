@@ -2,23 +2,214 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8523b96d-f99a-422f-96c3-559e0886ea49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/AddOns/memcached.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/AddOns/rabbitmq.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/AddOns/redis.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/AddOns/common/redis/remove-redis-from-your-stack.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/AddOns/memcached.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/AddOns/rabbitmq.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/AddOns/redis.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/AddOns/rabbitmq.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/AddOns/redis.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/AddOns/memcached.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/AddOns/rabbitmq.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/AddOns/rake-task.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/AddOns/redis.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/AddOns/shell.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/AddOns/ssl.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Databases/backup-verifiers.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Databases/database-backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Databases/database-import.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Databases/database-management.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Databases/database-replication.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Databases/elasticsearch-scaling.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Databases/glusterfs-scaling.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Databases/mongodb-replica-sets.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Buildgrid/build-grid.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/backup-verifiers/backup-verifiers_importantA.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/backup-verifiers/code_backup-verifiers_important-sultB.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_manually-download-catmysqltar.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_manually-download-curlo.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_manually-download-curlomysq.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mongodb-findpathto-2-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mongodb-findpathto-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mongodb-findpathto.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mongodb-mongorestore.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mongodb-rmrfpath.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mongodb-tarxvfpat-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mongodb-tarxvfpat.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mysql-export.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mysql-findpathto-2-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mysql-findpathto-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mysql-findpathto.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mysql-gzipdpath.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mysql-mysqlu-2-3-4.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mysql-mysqlu-2-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mysql-mysqlu-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_mysql-mysqlu.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudobluepill.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudochown-2-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudochown-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudochown.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudocpap-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudocpap.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudoetcini-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudoetcini.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudoinnoback.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudomkdirp-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudomkdirp.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudormrf-2-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudormrf-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudormrf.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudoservice-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudoservice.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudosystemct-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_note-sudosystemct.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_postgresql-export.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_postgresql-findpathto-2-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_postgresql-findpathto-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_postgresql-findpathto.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_postgresql-gzipdpath.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_redis-findpathto-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_redis-findpathto.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_redis-gzipdpath.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_redis-sudobluepill.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_restore-backup-tarxvf.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_backup-format.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_backup-schedule.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_backup-types.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_binary.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_cloud-66-toolbelt.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_compression.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_contents.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_download-script.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_downloading-backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_exclude-tables.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_install-on-replica.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_managed-backups.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_manually-download.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_mongodb.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_mysql.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_note.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_noteA.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_noteB.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_noteC.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_noteD.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_postgresql.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_pricing.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_redis.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_restore-backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_text.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_unmanaged-backups.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_what-is-the-database-backup-add-in.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-import/database-import_troubleshooting.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/AddOns/shell.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/AddOns/ssl.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/Databases/backup-verifiers.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/Databases/database-backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/Databases/database-import.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/Databases/database-management.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/Databases/database-replication.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/Databases/elasticsearch-scaling.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/Databases/glusterfs-scaling.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/Databases/mongodb-replica-sets.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacyDocker/deployment/build-grid.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/AddOns/shell.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/AddOns/ssl.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Databases/backup-verifiers.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Databases/database-backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Databases/database-import.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Databases/database-management.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Databases/database-replication.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Databases/elasticsearch-scaling.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Databases/glusterfs-scaling.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Databases/mongodb-replica-sets.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/building-a-manifest-file.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/AddOns/shell.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/AddOns/ssl.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/backup-verifiers.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/database-backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/database-import.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/database-management.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/database-replication.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/elasticsearch-scaling.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/glusterfs-scaling.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/mongodb-replica-sets.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_manually-download-catmysqltar.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_manually-download-catmysqltar.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_manually-download-curlo.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_manually-download-curlo.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_manually-download-curlomysq.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_manually-download-curlomysq.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mongodb-findpathto-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mongodb-findpathto-2-3.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mongodb-findpathto-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mongodb-findpathto-2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mongodb-findpathto.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mongodb-findpathto.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mongodb-mongorestore.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mongodb-mongorestore.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mongodb-rmrfpath.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mongodb-rmrfpath.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mongodb-tarxvfpat-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mongodb-tarxvfpat-2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mongodb-tarxvfpat.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mongodb-tarxvfpat.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-export.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mysql-export.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-findpathto-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mysql-findpathto-2-3.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-findpathto-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mysql-findpathto-2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-findpathto.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mysql-findpathto.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-gzipdpath.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mysql-gzipdpath.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-mysqlu-2-3-4.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mysql-mysqlu-2-3-4.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-mysqlu-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mysql-mysqlu-2-3.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-mysqlu-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mysql-mysqlu-2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-mysqlu.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_mysql-mysqlu.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudobluepill.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudobluepill.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudochown-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudochown-2-3.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudochown-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudochown-2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudochown.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudochown.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudocpap-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudocpap-2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudocpap.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudocpap.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudoetcini-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudoetcini-2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudoetcini.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudoetcini.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudoinnoback.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudoinnoback.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudomkdirp-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudomkdirp-2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudomkdirp.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudomkdirp.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudormrf-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudormrf-2-3.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudormrf-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudormrf-2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudormrf.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudormrf.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudoservice-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudoservice-2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudoservice.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudoservice.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudosystemct-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudosystemct-2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_note-sudosystemct.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_note-sudosystemct.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_postgresql-export.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_postgresql-export.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_postgresql-findpathto-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_postgresql-findpathto-2-3.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_postgresql-findpathto-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_postgresql-findpathto-2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_postgresql-findpathto.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_postgresql-findpathto.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_postgresql-gzipdpath.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_postgresql-gzipdpath.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_redis-findpathto-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_redis-findpathto-2.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_redis-findpathto.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_redis-findpathto.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_redis-gzipdpath.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_redis-gzipdpath.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_redis-sudobluepill.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_redis-sudobluepill.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/code_database-backup_restore-backup-tarxvflt.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/code_database-backup_restore-backup-tarxvflt.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_backup-format.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_backup-format.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_backup-schedule.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_backup-schedule.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_backup-types.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_backup-types.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_binary.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_binary.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_cloud-66-toolbelt.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_cloud-66-toolbelt.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_compression.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_compression.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_contents.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_contents.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_download-script.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_download-script.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_downloading-backup.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_downloading-backup.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_exclude-tables.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_exclude-tables.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_install-on-replica.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_install-on-replica.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_managed-backups.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_managed-backups.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_manually-download.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_manually-download.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_mongodb.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_mongodb.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_mysql.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_mysql.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_note.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_note.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_postgresql.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_postgresql.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_pricing.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_pricing.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_redis.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_redis.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_restore-backup.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_restore-backup.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_text.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_text.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_unmanaged-backups.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_unmanaged-backups.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup/database-backup_what-is-the-database-backup-add-in.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backup-old/database-backup_what-is-the-database-backup-add-in.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_42;it-is-0-for-standalone-servers-1-f.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_it-is-0-for-standalone-servers-1-f.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/AddOns/common/rake-task/rake-task_note.md" afterPath="$PROJECT_DIR$/_includes/_inlines/AddOns/common/rake-task/rake-task_note.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/AddOns/memcached.md" afterPath="$PROJECT_DIR$/_maestro/AddOns/memcached.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/backup-verifiers/backup-verifiers_important.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/backup-verifiers/backup-verifiers_important.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/backup-verifiers/backup-verifiers_pricing.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/backup-verifiers/backup-verifiers_pricing.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/backup-verifiers/code_backup-verifiers_important-lectcount.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/backup-verifiers/code_backup-verifiers_important-lectcount.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/backup-verifiers/code_backup-verifiers_important-sult.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/backup-verifiers/code_backup-verifiers_important-sult.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-import/database-import_contents.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-import/database-import_contents.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_contents.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_contents.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_database-customization-variables.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_database-customization-variables.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-replication/database-replication_about-database-replication.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-replication/database-replication_about-database-replication.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-replication/database-replication_contents.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-replication/database-replication_contents.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-replication/database-replication_environment-variables.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-replication/database-replication_environment-variables.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_configure-a-mongodb-replica-set.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_configure-a-mongodb-replica-set.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_environment-variables.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_environment-variables.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_using-a-mongodb-replica-set-in-your-co.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_using-a-mongodb-replica-set-in-your-co.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/build-grid/build-grid_envoironment-variables-in-buildgrid.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/build-grid/build-grid_envoironment-variables-in-buildgrid.md" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,51 +222,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="redis.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_maestro/AddOns/redis.md">
+      <file leaf-file-name="building-a-manifest-file.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_maestro/Deployment/building-a-manifest-file.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="210">
-                <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="redis.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_legacyDocker/AddOns/redis.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="135">
-                <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="redis.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_Node/AddOns/redis.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="135">
-                <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="redis.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_rails/AddOns/redis.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="135">
-                <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+              <first_editor relative-caret-position="96">
+                <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -88,7 +240,20 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>NOT</find>
+      <find>AddOns</find>
+      <find>restore</find>
+      <find>types</find>
+      <find>single</find>
+      <find>between</find>
+      <find>is poi</find>
+      <find>content</find>
+      <find>what</find>
+      <find>process</find>
+      <find>aws</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Databases</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,57 +261,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_rails/deployment/rails-stacks.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_declarative.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_mysql.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_postgres.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_datamapper-taapperset.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_custom-commands-velopment.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_custom-commands-cxsettingss.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_active-record-tiveecord.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_active-record-oductiona-2.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_active-record-oductiona.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_contents.md" />
-        <option value="$PROJECT_DIR$/_rails/deployment/sinatra-stacks.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_custom-commands.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_examples-of-connecting-to-your-database.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_active-record.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/thin-rack-server/code_thin-rack-server_deploy-with-thin-stomweb.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/thin-rack-server/code_thin-rack-server_deploy-with-thin.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/thin-rack-server/thin-rack-server_restart-the-web-server-hot-restart.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/thin-rack-server/thin-rack-server_start-the-web-server.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/thin-rack-server/thin-rack-server_stop-the-web-server.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/thin-rack-server/thin-rack-server_important.md" />
-        <option value="$PROJECT_DIR$/_rails/deployment/thin-rack-server.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/thin-rack-server/thin-rack-server_deploy.md" />
-        <option value="$PROJECT_DIR$/_rails/deployment/unicorn-rack-server.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_start-the-web-server.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_restart-the-web-server-zero-downtime.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_stop-the-web-server.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_kill-the-web-server.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_warning.md" />
-        <option value="$PROJECT_DIR$/_rails/index.md" />
-        <option value="$PROJECT_DIR$/_maestro/AddOns/add-in-implementation.md" />
-        <option value="$PROJECT_DIR$/_maestro/Toolbelt/containers.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/code_containers_example-cxcontainers-2-3.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_listing-containers.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-1.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-2.md" />
-        <option value="$PROJECT_DIR$/_maestro/AddOns/memcached.md" />
-        <option value="$PROJECT_DIR$/_legacyDocker/AddOns/memcached.md" />
-        <option value="$PROJECT_DIR$/_Node/AddOns/memcached.md" />
-        <option value="$PROJECT_DIR$/_rails/AddOns/memcached.md" />
-        <option value="$PROJECT_DIR$/_Node/AddOns/rabbitmq.md" />
-        <option value="$PROJECT_DIR$/_rails/AddOns/rabbitmq.md" />
-        <option value="$PROJECT_DIR$/_maestro/AddOns/rabbitmq.md" />
-        <option value="$PROJECT_DIR$/_legacyDocker/AddOns/rabbitmq.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/AddOns/common/rake-task/rake-task_note.md" />
-        <option value="$PROJECT_DIR$/_rails/AddOns/rake-task.md" />
-        <option value="$PROJECT_DIR$/_maestro/AddOns/redis.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/AddOns/common/redis/remove-redis-from-your-stack.md" />
-        <option value="$PROJECT_DIR$/_legacyDocker/AddOns/redis.md" />
-        <option value="$PROJECT_DIR$/_Node/AddOns/redis.md" />
-        <option value="$PROJECT_DIR$/_rails/AddOns/redis.md" />
+        <option value="$PROJECT_DIR$/_legacyDocker/Databases/backup-verifiers.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/AddOns/common/database-backups/code_database-backups_restore-backup-tarxvf.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/database-backups_restore-backup.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-backups/code_database-backups_restore-backup-tarxvf.md" />
+        <option value="$PROJECT_DIR$/_maestro/Databases/database-backup.md" />
+        <option value="$PROJECT_DIR$/_legacyDocker/Databases/database-backup.md" />
+        <option value="$PROJECT_DIR$/_Node/Databases/database-backup.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/database-backup.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-import/database-import_about-one-time-database-imports.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-import/database-import_troubleshooting.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/database-import.md" />
+        <option value="$PROJECT_DIR$/_Node/Databases/database-import.md" />
+        <option value="$PROJECT_DIR$/_legacyDocker/Databases/database-import.md" />
+        <option value="$PROJECT_DIR$/_maestro/Databases/database-import.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-import/database-import_contents.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_contents.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_database-customization-variables.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_it-is-0-for-standalone-servers-1-f.md" />
+        <option value="$PROJECT_DIR$/_maestro/Databases/database-management.md" />
+        <option value="$PROJECT_DIR$/_legacyDocker/Databases/database-management.md" />
+        <option value="$PROJECT_DIR$/_Node/Databases/database-management.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/database-management.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-replication/database-replication_environment-variables.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-replication/database-replication_about-database-replication.md" />
+        <option value="$PROJECT_DIR$/_maestro/Databases/database-replication.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-replication/database-replication_contents.md" />
+        <option value="$PROJECT_DIR$/_Node/Databases/database-replication.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/database-replication.md" />
+        <option value="$PROJECT_DIR$/_legacyDocker/Databases/database-replication.md" />
+        <option value="$PROJECT_DIR$/_maestro/Databases/elasticsearch-scaling.md" />
+        <option value="$PROJECT_DIR$/_legacyDocker/Databases/elasticsearch-scaling.md" />
+        <option value="$PROJECT_DIR$/_Node/Databases/elasticsearch-scaling.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/elasticsearch-scaling.md" />
+        <option value="$PROJECT_DIR$/_legacyDocker/Databases/glusterfs-scaling.md" />
+        <option value="$PROJECT_DIR$/_maestro/Databases/glusterfs-scaling.md" />
+        <option value="$PROJECT_DIR$/_Node/Databases/glusterfs-scaling.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/glusterfs-scaling.md" />
+        <option value="$PROJECT_DIR$/_maestro/Databases/mongodb-replica-sets.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_using-a-mongodb-replica-set-in-your-co.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_configure-a-mongodb-replica-set.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_environment-variables.md" />
+        <option value="$PROJECT_DIR$/_Node/Databases/mongodb-replica-sets.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/mongodb-replica-sets.md" />
+        <option value="$PROJECT_DIR$/_legacyDocker/Databases/mongodb-replica-sets.md" />
+        <option value="$PROJECT_DIR$/_maestro/Deployment/build-grid.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/build-grid/build-grid_envoironment-variables-in-buildgrid.md" />
+        <option value="$PROJECT_DIR$/_Node/Deployment/build-grid.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/build-grid.md" />
+        <option value="$PROJECT_DIR$/_legacyDocker/deployment/build-grid.md" />
+        <option value="$PROJECT_DIR$/_Skycap/Buildgrid/build-grid.md" />
+        <option value="$PROJECT_DIR$/_maestro/Deployment/building-a-manifest-file.md" />
       </list>
     </option>
   </component>
@@ -175,7 +340,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -199,7 +363,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_rails" />
+              <option name="myItemId" value="_Skycap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Buildgrid" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -216,8 +384,22 @@
               <option name="myItemId" value="_rails" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AddOns" />
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_rails" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deployment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -234,6 +416,10 @@
               <option name="myItemId" value="_Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -246,10 +432,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_Node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AddOns" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -281,7 +463,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AddOns" />
+              <option name="myItemId" value="Deployment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -313,7 +495,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AddOns" />
+              <option name="myItemId" value="deployment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -328,38 +510,25 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AddOns" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="FullScreen" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_rails/AddOns" />
-      <recent name="$PROJECT_DIR$/_Node/AddOns" />
-      <recent name="$PROJECT_DIR$/_legacyDocker/AddOns" />
-      <recent name="$PROJECT_DIR$/_includes/_inlines/AddOns/common/redis" />
-      <recent name="$PROJECT_DIR$/_maestro/AddOns" />
+      <recent name="$PROJECT_DIR$/_maestro/Deployment" />
+      <recent name="$PROJECT_DIR$/_Skycap/Buildgrid" />
+      <recent name="$PROJECT_DIR$/_legacyDocker/deployment" />
+      <recent name="$PROJECT_DIR$/_rails/deployment" />
+      <recent name="$PROJECT_DIR$/_Node/Deployment" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -550,35 +719,34 @@
       <option name="presentableId" value="Default" />
       <updated>1503058142751</updated>
       <workItem from="1503058153848" duration="16792000" />
+      <workItem from="1503324211216" duration="2102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17807000" />
+    <option name="totallyTimeSpent" value="28302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20208333" sideWeight="0.49589685" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49589685" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5041032" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49589685" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,97 +760,117 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_rails/deployment/unicorn-rack-server.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="225">
-            <caret line="15" column="102" lean-forward="false" selection-start-line="15" selection-start-column="102" selection-end-line="15" selection-end-column="102" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_start-the-web-server.md">
+    <entry file="file://$PROJECT_DIR$/_Node/Databases/database-backup.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_restart-the-web-server-zero-downtime.md">
+    <entry file="file://$PROJECT_DIR$/_rails/databases/database-backup.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_stop-the-web-server.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_kill-the-web-server.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_warning.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="210">
-            <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/getting-started/getting-started.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/AddOns/add-in-implementation.md">
+    <entry file="file://$PROJECT_DIR$/_common/Databases/database-management.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
-            <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/getting-started/getting-started.md">
+    <entry file="file://$PROJECT_DIR$/_common/Databases/database-import.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/database-import/database-import_troubleshooting.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="195">
+            <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/database-import/database-import_about-one-time-database-imports.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/database-import.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Node/Databases/database-import.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacyDocker/Databases/database-import.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_contents.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="195">
+            <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Databases/database-import.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="77" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/database-import/database-import_contents.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
@@ -692,415 +880,351 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/code_containers_usage-cxcontainers.md">
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_database-customization-variables.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <first_editor relative-caret-position="231">
+            <caret line="66" column="13" lean-forward="false" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Toolbelt/containers.md">
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_it-is-0-for-standalone-servers-1-f.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <first_editor relative-caret-position="621">
+            <caret line="70" column="11" lean-forward="false" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_contents.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/code_containers_example-cxcontainers-2-3.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-5.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-5.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_executing-a-command-under-an-existing-container.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-3.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-4.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-3.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-4.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-3.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-4.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-5.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_listing-containers.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/AddOns/common/memcached/code_memcached_customize-memcached-oduction.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/AddOns/memcached.md">
+    <entry file="file://$PROJECT_DIR$/_rails/databases/database-management.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
             <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/AddOns/memcached.md">
+    <entry file="file://$PROJECT_DIR$/_Node/Databases/database-management.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
             <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_legacyDocker/AddOns/memcached.md">
+    <entry file="file://$PROJECT_DIR$/_legacyDocker/Databases/database-management.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-            <folding />
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/AddOns/memcached.md">
+    <entry file="file://$PROJECT_DIR$/_maestro/Databases/database-management.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="14" column="64" lean-forward="false" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-            <folding />
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_common/AddOns/rabbitmq.md">
+    <entry file="file://$PROJECT_DIR$/_general/account/pricing.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/AddOns/rabbitmq.md">
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/database-replication/database-replication_environment-variables.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="74" lean-forward="false" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
-            <folding />
+          <first_editor relative-caret-position="276">
+            <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/AddOns/rabbitmq.md">
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/database-replication/database-replication_about-database-replication.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="300">
+            <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/database-replication/database-replication_contents.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="300">
+            <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacyDocker/Databases/database-replication.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/database-replication.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
             <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/AddOns/rabbitmq.md">
+    <entry file="file://$PROJECT_DIR$/_Node/Databases/database-replication.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Databases/database-replication.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="86" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_common/Databases/elasticsearch-scaling.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/elasticsearch-scaling.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Node/Databases/elasticsearch-scaling.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacyDocker/Databases/elasticsearch-scaling.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Databases/elasticsearch-scaling.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="95" lean-forward="false" selection-start-line="11" selection-start-column="95" selection-end-line="11" selection-end-column="95" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacyDocker/Databases/glusterfs-scaling.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Databases/glusterfs-scaling.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
             <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_legacyDocker/AddOns/rabbitmq.md">
+    <entry file="file://$PROJECT_DIR$/_Node/Databases/glusterfs-scaling.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
-            <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-            <folding />
+            <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/AddOns/common/rake-task/rake-task_note.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_common/AddOns/rake-task.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/AddOns/rake-task.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_common/AddOns/redis.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/AddOns/common/redis/redis_add-redis-to-your-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/AddOns/common/redis/remove-redis-from-your-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="347" lean-forward="true" selection-start-line="5" selection-start-column="347" selection-end-line="5" selection-end-column="347" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/AddOns/redis.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_legacyDocker/AddOns/redis.md">
+    <entry file="file://$PROJECT_DIR$/_rails/databases/glusterfs-scaling.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
-            <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_using-a-mongodb-replica-set-in-your-co.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_configure-a-mongodb-replica-set.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="240">
+            <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_environment-variables.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="666">
+            <caret line="54" column="2" lean-forward="false" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Databases/mongodb-replica-sets.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="103" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Node/Databases/mongodb-replica-sets.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/mongodb-replica-sets.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacyDocker/Databases/mongodb-replica-sets.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_common/Deployment/build-grid.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/AddOns/redis.md">
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/build-grid/build-grid_envoironment-variables-in-buildgrid.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacyDocker/deployment/build-grid.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/build-grid.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Node/Deployment/build-grid.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
@@ -1111,11 +1235,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/AddOns/redis.md">
+    <entry file="file://$PROJECT_DIR$/_Skycap/Buildgrid/buildgrid-settings.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Deployment/build-grid.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="89" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Skycap/Buildgrid/build-grid.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Deployment/building-a-manifest-file.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="96">
+            <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

@@ -14,6 +14,10 @@ When you select to scale up your MongoDB backend with Cloud 66, we perform the f
 
 It is important for backups to keep their referential integrity, otherwise different parts of the database might be backed up at different times, affecting database performance.
 
+**Note**
 
+The process of database replication will disrupt your database serving your application for the duration of scaling up and scaling down.
+
+This interruption is during the backup and configuration steps of the scaling and not during the long process of firing up and building the servers
 
 

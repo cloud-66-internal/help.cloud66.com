@@ -35,7 +35,7 @@ Without replica sets, you can connect to your MongoDB using environment variable
 
 
 
-`MONGODB_URL` is pointing to `{{MONGODB_URL_INT}}` by default.
+`MONGODB_URL` is pointing to {% raw %} `{{MONGODB_URL_INT}}` {% endraw %}by default.
 
 Once replication is enabled, this environment variable is populated:
 
@@ -51,6 +51,10 @@ Once replication is enabled, this environment variable is populated:
 
 
 Once you have replica set enabled by scaling your MongoDB backend up, you will need to modify your client configuration accordingly. Your deployment might not work and your stack might stop functioning if you don't do that.
+
+**Note**
+
+Deployments might fail after replica sets are enabled if you don't change your client configuration to use the replica set.
 
 
 

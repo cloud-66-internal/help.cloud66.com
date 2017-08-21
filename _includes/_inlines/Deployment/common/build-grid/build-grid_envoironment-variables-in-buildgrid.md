@@ -4,7 +4,7 @@
 ## Envoironment variables in BuildGrid
 
 You can pass environment variables into your Dockerfile during your build process 
-(if using BuildGrid)
+<span style="background-color: #FFFF00">(if using BuildGrid)</span>
  with the $VARIABLE syntax, which will be populated with environment variable(s) set on the stack. For example let's say you have an environment variable called `MY_FOLDER` with the value `/path/to/myfolder`. If you run the following command in your dockerfile:
 
 

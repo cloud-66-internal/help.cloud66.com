@@ -8,121 +8,56 @@ Cloud 66 generates and maintains a number of environment variables automatically
 
 
 	
-
-		
-
-			
-Environment variable
-
-			
-Value
-
-		
-
-	
-
-	
-
-		
-
-			
-MYSQL_SLAVE_ADDRESSES_INT
-
-			
-Internal IP address of your slave
-
-		
-
-		
-
-			
-MYSQL_SLAVE_ADDRESSES_EXT
-
-			
-External IP address your slave
-
-		
-
-		
-
-			
-MYSQL_DATABASE
-
-			
-The database name of the master
-
-		
-
-		
-
-			
-POSTGRESQL_SLAVE_ADDRESSES_INT
-
-			
-Internal IP address of your slave
-
-		
-
-		
-
-			
-POSTGRESQL_SLAVE_ADDRESSES_EXT
-
-			
-External IP address of your slave
-
-		
-
-		
-
-			
-POSTGRESQL_DATABASE
-
-			
-The database name of the master
-
-		
-
-		
-
-			
-POSTGRESQL_USERNAME
-
-			
-The database username of the master
-
-		
-
-		
-
-			
-POSTGRESQL_PASSWORD
-
-			
-The database password of the master
-
-		
-
-		
-
-			
-REDIS_SLAVE_ADDRESSES_INT
-
-			
-Internal IP address of your slave
-
-		
-
-		
-
-			
-REDIS_SLAVE_ADDRESSES_EXT
-
-			
-External IP address of your slave
-
-		
-
+ <table class="table table-bordered table-striped"> 
+   <thead> 
+    <tr> 
+     <th> Environment variable </th> 
+     <th> Value </th> 
+    </tr> 
+   </thead> 
+   <tbody> 
+    <tr> 
+     <td> MYSQL_SLAVE_ADDRESSES_INT </td> 
+     <td> Internal IP address of your slave </td> 
+    </tr> 
+    <tr> 
+     <td> MYSQL_SLAVE_ADDRESSES_EXT </td> 
+     <td> External IP address your slave </td> 
+    </tr> 
+    <tr> 
+     <td> MYSQL_DATABASE </td> 
+     <td> The database name of the master </td> 
+    </tr> 
+    <tr> 
+     <td> POSTGRESQL_SLAVE_ADDRESSES_INT </td> 
+     <td> Internal IP address of your slave </td> 
+    </tr> 
+    <tr> 
+     <td> POSTGRESQL_SLAVE_ADDRESSES_EXT </td> 
+     <td> External IP address of your slave </td> 
+    </tr> 
+    <tr> 
+     <td> POSTGRESQL_DATABASE </td> 
+     <td> The database name of the master </td> 
+    </tr> 
+    <tr> 
+     <td> POSTGRESQL_USERNAME </td> 
+     <td> The database username of the master </td> 
+    </tr> 
+    <tr> 
+     <td> POSTGRESQL_PASSWORD </td> 
+     <td> The database password of the master </td> 
+    </tr> 
+    <tr> 
+     <td> REDIS_SLAVE_ADDRESSES_INT </td> 
+     <td> Internal IP address of your slave </td> 
+    </tr> 
+    <tr> 
+     <td> REDIS_SLAVE_ADDRESSES_EXT </td> 
+     <td> External IP address of your slave </td> 
+    </tr> 
+   </tbody> 
+  </table>
 	
 
 
