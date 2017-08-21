@@ -4,10 +4,10 @@ template: one-col
 title: Database Backup
 categories: Databases
 lead: ""
-legacy: false
+legacy: true
 
 ---
-{% assign product = "rails" %}
+{% assign product = "legacy_docker" %}
 
 
 {% include _inlines/Databases/common/database-backup/database-backups_contents.md %}

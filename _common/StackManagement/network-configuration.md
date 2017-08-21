@@ -20,5 +20,5 @@ legacy: false
 {% include _inlines/StackManagement/common/network-configuration/network-configuration_microsoft-azure-notice.md %}
 {% include _inlines/StackManagement/common/network-configuration/network-configuration_redirect-http-to-https.md %}
 {% include _inlines/StackManagement/common/network-configuration/network-configuration_using-network-redirects.md %}
-{% include _inlines/StackManagement/common/network-configuration/network-configuration_what-is-activeprotecttrade;.md %}
+{% include _inlines/StackManagement/common/network-configuration/network-configuration_what-is-activeprotecttrade.md %}
 {% include _inlines/StackManagement/common/network-configuration/network-configuration_www-or-non-www-in-your-url.md %}

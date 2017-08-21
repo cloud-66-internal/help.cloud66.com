@@ -7,7 +7,7 @@ First you need to detect if the backup is a **Text backup** or **Binary Backup**
 
 
 
-{%include _inlines/Databases/common/database-backups/code_database-backups_mysql-findpathto.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_mysql-findpathto.md %}
 
 
 
@@ -19,7 +19,7 @@ If the command return a result it is a text backup and if the result is empty it
 
 
 
-{%include _inlines/Databases/common/database-backups/code_database-backups_mysql-findpathto-2.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_mysql-findpathto-2.md %}
 
 
 
@@ -28,7 +28,7 @@ If the command return a result it is a text backup and if the result is empty it
 
 
 
-{%include _inlines/Databases/common/database-backups/code_database-backups_mysql-findpathto-2-3.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_mysql-findpathto-2-3.md %}
 
 
 
@@ -37,7 +37,7 @@ If the command return a result it is a text backup and if the result is empty it
 
 
 
-{%include _inlines/Databases/common/database-backups/code_database-backups_mysql-gzipdpath.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_mysql-gzipdpath.md %}
 
 
 
@@ -47,7 +47,7 @@ You can find YOUR_MYSQL_DB_APP_USERNAME, YOUR_MYSQL_DB_APP_PASSWORD,YOUR_MYSQL_A
 
 
 
-{%include _inlines/Databases/common/database-backups/code_database-backups_mysql-export.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_mysql-export.md %}
 
 
 
@@ -56,7 +56,7 @@ You can find YOUR_MYSQL_DB_APP_USERNAME, YOUR_MYSQL_DB_APP_PASSWORD,YOUR_MYSQL_A
 
 
 
-{%include _inlines/Databases/common/database-backups/code_database-backups_mysql-mysqlu.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_mysql-mysqlu.md %}
 
 
 
@@ -65,7 +65,7 @@ You can find YOUR_MYSQL_DB_APP_USERNAME, YOUR_MYSQL_DB_APP_PASSWORD,YOUR_MYSQL_A
 
 
 
-{%include _inlines/Databases/common/database-backups/code_database-backups_mysql-mysqlu-2.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_mysql-mysqlu-2.md %}
 
 
 
@@ -74,7 +74,7 @@ You can find YOUR_MYSQL_DB_APP_USERNAME, YOUR_MYSQL_DB_APP_PASSWORD,YOUR_MYSQL_A
 
 
 
-{%include _inlines/Databases/common/database-backups/code_database-backups_mysql-mysqlu-2-3.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_mysql-mysqlu-2-3.md %}
 
 
 
@@ -82,7 +82,7 @@ You can find YOUR_MYSQL_DB_APP_USERNAME, YOUR_MYSQL_DB_APP_PASSWORD,YOUR_MYSQL_A
 4.4 Use following commands to give enough permission to you app user
 
 
-{%include _inlines/Databases/common/database-backups/code_database-backups_mysql-mysqlu-2-3-4.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_mysql-mysqlu-2-3-4.md %}
 
 
  5.You can use following command to restore your database 

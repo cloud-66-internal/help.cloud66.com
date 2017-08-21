@@ -37,6 +37,10 @@ collections:
       output: true
       permalink: /:collection/:categories/:name
       icon: foundicon-idea
+  common: #TO BE REMOVED WHEN DEVELOPMENT DONE
+      output: true
+      permalink: /:collection/:categories/:name
+      icon: foundicon-idea
 # Build settings
 markdown: kramdown
 
