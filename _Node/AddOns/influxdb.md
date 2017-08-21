@@ -7,7 +7,7 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "common" %}
+{% assign product = "node" %}
 
 {% include _inlines/AddOns/common/influxdb/influxdb_what-is-influxdb.md %}
 {% include _inlines/AddOns/common/influxdb/influxdb_add-influxdb.md %}
