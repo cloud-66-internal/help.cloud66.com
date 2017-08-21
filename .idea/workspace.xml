@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8523b96d-f99a-422f-96c3-559e0886ea49" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-4.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-5.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-4.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-5.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-4.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-5.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-1.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-1.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-1.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/code_containers_example-cxcontainers-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/code_containers_example-cxcontainers-2-3.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_listing-containers.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_listing-containers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/AddOns/add-in-implementation.md" afterPath="$PROJECT_DIR$/_maestro/AddOns/add-in-implementation.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/Toolbelt/containers.md" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/containers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/index.md" afterPath="$PROJECT_DIR$/_rails/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.scss" afterPath="$PROJECT_DIR$/css/main.scss" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,51 +35,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="unicorn-rack-server_kill-the-web-server.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_kill-the-web-server.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unicorn-rack-server_warning.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_warning.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="210">
-                <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_rails/index.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="150">
-                <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add-in-implementation.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_maestro/AddOns/add-in-implementation.md">
+      <file leaf-file-name="containers_parameters-2.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
-                <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -71,12 +48,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="containers.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_maestro/Toolbelt/containers.md">
+      <file leaf-file-name="containers_parameters-3.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-3.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="240">
-                <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="containers_parameters-4.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-4.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="containers_parameters-1.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -88,8 +91,8 @@
         <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_listing-containers.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="255">
-                <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+              <first_editor relative-caret-position="180">
+                <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -97,8 +100,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="code_containers_usage-cxcontainers.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/code_containers_usage-cxcontainers.md">
+      <file leaf-file-name="containers_usage-1.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="containers_usage-2.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-2.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="containers_usage-3.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-3.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -110,8 +139,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="containers_contents.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_contents.md">
+      <file leaf-file-name="containers_usage-4.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-4.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -123,25 +152,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getting-started.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_maestro/getting-started/getting-started.md">
+      <file leaf-file-name="containers_example-5.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-5.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="135">
-                <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getting-started.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_rails/getting-started/getting-started.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="165">
-                <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -157,9 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/passenger-enterprise/passenger-enterprise_important.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_start-the-web-server.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_restart-the-web-server-hot-restart.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_stop-the-web-server.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/puma-rack-server/code_puma-rack-server_deploy-with-puma-stomweb.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_warning.md" />
@@ -207,7 +220,10 @@
         <option value="$PROJECT_DIR$/_rails/index.md" />
         <option value="$PROJECT_DIR$/_maestro/AddOns/add-in-implementation.md" />
         <option value="$PROJECT_DIR$/_maestro/Toolbelt/containers.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/code_containers_example-cxcontainers-2-3.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_listing-containers.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-1.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-2.md" />
       </list>
     </option>
   </component>
@@ -398,11 +414,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers" />
       <recent name="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks" />
       <recent name="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks" />
       <recent name="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/padrino-stacks" />
       <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies" />
-      <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -597,12 +613,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503058142751</updated>
-      <workItem from="1503058153848" duration="14687000" />
+      <workItem from="1503058153848" duration="16792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14687000" />
+    <option name="totallyTimeSpent" value="16792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -638,193 +654,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks/rails-stacks_example-application.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks/rails-stacks_connect-to-your-database.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks/rails-stacks_contents.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-codinglatin.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-codingswe.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-velopment.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-velopment-2-3.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/deployment/padrino-stacks.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="74" lean-forward="false" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-velopment-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="120">
-            <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks/rails-stacks_examples-of-connecting-to-your-database.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks/rails-stacks_mongoid.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks/rails-stacks_mysql.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks/rails-stacks_postgres.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/rails-stacks/rails-stacks_note.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/deployment/rails-stacks.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="255">
-            <caret line="17" column="70" lean-forward="false" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_declarative.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_mysql.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_postgres.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1144,17 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_contents.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_maestro/getting-started/getting-started.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1180,8 +998,206 @@
     <entry file="file://$PROJECT_DIR$/_maestro/Toolbelt/containers.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="240">
-            <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_contents.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/code_containers_example-cxcontainers-2-3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-5.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-5.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_executing-a-command-under-an-existing-container.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-4.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-4.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-4.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-5.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1191,8 +1207,8 @@
     <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_listing-containers.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

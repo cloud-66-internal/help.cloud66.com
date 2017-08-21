@@ -1,7 +1,5 @@
 <!-- layout:code post: containers_usage -->
 
 ```
-
-$ cx containers attach [-s &lt;stack&gt;] &lt;container&gt;
-
+$ cx containers attach [-s <stack>] <container>
 ```
