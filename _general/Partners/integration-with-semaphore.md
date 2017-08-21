@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: integration-with-semaphore
+title: Integration With Semaphore
 categories: Partners
 lead: ""
 legacy: false

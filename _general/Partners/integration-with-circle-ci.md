@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: integration-with-circle-ci
+title: Integration with Circle CI
 categories: Partners
 lead: ""
 legacy: false

@@ -2,7 +2,7 @@
 
 ### An Audit log for all account activities
 
-Audit Logs records every activity performed by any of your team members in your account. Each record contains the exact date and time, displayed in your timezone alongside the team member's email address, IP address and some details about the task performed. 
+Audit Logs record every activity performed by any of your team members in your account. Each record contains the exact date and time, displayed in your timezone alongside the team member's email address, IP address and some details about the task performed. 
 
 Here is what's recorded for each activity:
 
@@ -13,5 +13,5 @@ Here is what's recorded for each activity:
 - User's email address and Gravatar
 - Extra information about the activity, if applicable
 
-Any activity whether from the web UI or the API client (like the Toolbelt) is recorded. Also, any activity by Cloud 66 support agents performed as part of helping you with an issue is also recorded and shown in the activity log.
+Any activity from the web UI or the API client (like the Toolbelt) is recorded. Also, any activity by Cloud 66 support agents performed as part of helping you with an issue is also recorded and shown in the activity log.
 

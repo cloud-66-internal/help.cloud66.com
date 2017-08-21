@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-### Step 4: Open port 4040 to access Weave Scope
+## Step 4: Open port 4040 to access Weave Scope
 
 Weavescope will run on port 4040 which is not exposed to the outside world by default, which is a good thing. Make sure port 4040 is only accesible by your own IP-address. In order to access the UI of Weave Scope you have to enable port 4040 on your [stack firewall](http://help.cloud66.com/managing-your-stack/stac).
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: cloud66-status
+title: Cloud66 Status
 categories: unknown
 lead: ""
 legacy: false
@@ -9,5 +9,5 @@ legacy: false
 ---
 {% assign product = "General" %}
 
-{% include _inlines/unknown/General/cloud66-status/cloud66-status_latest-updates.md %}
 {% include _inlines/unknown/General/cloud66-status/cloud66-status_status-and-uptime.md %}
+{% include _inlines/unknown/General/cloud66-status/cloud66-status_latest-updates.md %}

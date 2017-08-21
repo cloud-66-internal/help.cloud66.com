@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: support
+title: Support Plans
 categories: Account
 lead: ""
 legacy: false

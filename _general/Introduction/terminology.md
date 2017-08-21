@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: terminology
+title: Terminology
 categories: Introduction
 lead: ""
 legacy: false

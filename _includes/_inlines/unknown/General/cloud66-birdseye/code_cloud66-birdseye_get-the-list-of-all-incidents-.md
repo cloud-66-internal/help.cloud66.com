@@ -1,7 +1,6 @@
 <!-- layout:code post: cloud66-birdseye_get-the-list-of-all-incidents -->
 
 ```
-
 [
     {
         id: 1,
@@ -40,5 +39,4 @@
         datacentre: "AMS1"
     }
 ]
-
 ```

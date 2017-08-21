@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-### Step 2: Add the weavescope snippet
+## Step 2: Add the weavescope snippet
 
 Add the following deploy hook to your *deploy_hooks.yml* file.
 

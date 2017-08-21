@@ -4,7 +4,7 @@ template: one-col
 title: Elasticsearch
 categories: AddOns
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "legacy_docker" %}
