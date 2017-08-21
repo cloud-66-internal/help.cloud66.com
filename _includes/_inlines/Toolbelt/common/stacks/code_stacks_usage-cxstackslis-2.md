@@ -2,6 +2,6 @@
 
 ```
 
-$ cx stacks listen [-s &lt;stack&gt;]
+$ cx stacks listen [-s <stack>]
 
 ```

@@ -2,6 +2,6 @@
 
 ```
 
-$ cx processes list [-s &lt;stack&gt;] [--server &lt;server name&gt;]
+$ cx processes list [-s <stack>] [--server <server name>]
 
 ```

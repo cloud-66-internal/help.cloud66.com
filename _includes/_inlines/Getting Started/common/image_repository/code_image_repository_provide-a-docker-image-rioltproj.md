@@ -2,6 +2,6 @@
 
 ```
 
-gcr.io/&lt;project_id&gt;/&lt;namespace&gt;/&lt;image_name&gt;:&lt;tag&gt;
+gcr.io/<project_id>/<namespace>/<image_name>:<tag>
 
 ```

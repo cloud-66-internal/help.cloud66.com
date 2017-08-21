@@ -3,7 +3,7 @@
 
 ## Connect to your server using your key
 
-Simply ensure that your public key contents are included in ~/.ssh/authorized&#95;keys on the target server. Then you should be able to connect with:
+Simply ensure that your public key contents are included in ~/.ssh/authorized_keys on the target server. Then you should be able to connect with:
 
 {% highlight bash %}
 ssh {server user}@{server address}

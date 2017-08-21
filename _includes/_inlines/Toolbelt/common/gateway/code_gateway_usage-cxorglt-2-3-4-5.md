@@ -2,6 +2,6 @@
 
 ```
 
-$ cx --org &lt;organization_name&gt; gateways remove --name &lt;gateway name&gt;
+$ cx --org <organization_name> gateways remove --name <gateway name>
 
 ```

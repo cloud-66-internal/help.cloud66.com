@@ -5,7 +5,7 @@
 
 
 
-	sudo bluepill cloud66&#95;web&#95;server stop
+	sudo bluepill cloud66_web_server stop
 
 
 

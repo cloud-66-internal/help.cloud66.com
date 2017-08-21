@@ -4,10 +4,10 @@
 
 production:
     memcached:
-        shared&#95;group: db
+        shared_group: db
         configuration:
             memory: 1024
             port: 11215
-            listen&#95;ip: 127.0.0.1
+            listen_ip: 127.0.0.1
 
 ```

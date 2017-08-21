@@ -2,6 +2,6 @@
 
 ```
 
-$ cx tunnel -s &lt;stack&gt; --server &lt;server name&gt;|&lt;server ip&gt;|&lt;server role&gt; --remote &lt;remote port&gt; --local &lt;local port&gt;
+$ cx tunnel -s <stack> --server <server name>|<server ip>|<server role> --remote <remote port> --local <local port>
 
 ```

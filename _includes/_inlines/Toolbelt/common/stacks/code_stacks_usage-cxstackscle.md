@@ -2,6 +2,6 @@
 
 ```
 
-$ cx stacks clear-caches [-s &lt;stack&gt;]
+$ cx stacks clear-caches [-s <stack>]
 
 ```

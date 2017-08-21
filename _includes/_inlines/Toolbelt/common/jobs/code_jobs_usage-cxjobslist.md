@@ -2,6 +2,6 @@
 
 ```
 
-$ cx jobs list [-s &lt;stack&gt;] --server &lt;server name&gt;|&lt;server ip&gt;|&lt;server role&gt; --service &lt;service name&gt;
+$ cx jobs list [-s <stack>] --server <server name>|<server ip>|<server role> --service <service name>
 
 ```

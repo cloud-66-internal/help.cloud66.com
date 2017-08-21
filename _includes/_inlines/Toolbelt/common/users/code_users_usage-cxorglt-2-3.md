@@ -2,6 +2,6 @@
 
 ```
 
-$ cx --org &lt;organization_name&gt; users apply-profile &lt;username&gt; --json &lt;json_file_path&gt; [--override]
+$ cx --org <organization_name> users apply-profile <username> --json <json_file_path> [--override]
 
 ```

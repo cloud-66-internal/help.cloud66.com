@@ -2,6 +2,6 @@
 
 ```
 
-$ cx services scale [-s &lt;stack&gt;] &lt;service name&gt; [--group &lt;server group&gt;] [--server &lt;server name&gt;|&lt;server ip&gt;] &lt;count&gt;
+$ cx services scale [-s <stack>] <service name> [--group <server group>] [--server <server name>|<server ip>] <count>
 
 ```

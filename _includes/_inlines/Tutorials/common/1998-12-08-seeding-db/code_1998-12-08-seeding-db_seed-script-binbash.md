@@ -3,7 +3,7 @@
 ```
 
 &#35;!/bin/bash
-cd $STACK&#95;PATH
+cd $STACK_PATH
 bundle exec rake db:seed
 
 ```

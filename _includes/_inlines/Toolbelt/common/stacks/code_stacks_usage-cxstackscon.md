@@ -2,6 +2,6 @@
 
 ```
 
-$ cx stacks configure list [-s &lt;stack&gt;]
+$ cx stacks configure list [-s <stack>]
 
 ```

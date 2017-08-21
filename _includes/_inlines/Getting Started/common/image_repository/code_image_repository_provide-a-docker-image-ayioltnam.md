@@ -2,6 +2,6 @@
 
 ```
 
-quay.io/&lt;namespace&gt;/&lt;image_name&gt;:&lt;tag&gt;
+quay.io/<namespace>/<image_name>:<tag>
 
 ```

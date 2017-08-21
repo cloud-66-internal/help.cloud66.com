@@ -2,6 +2,6 @@
 
 ```
 
-$ cx --org &lt;organization_name&gt; stacks create --name &lt;stack_name&gt; --environment &lt;environment&gt; --service_yaml &lt;service_yaml_path&gt; [--manifest_yaml &lt;manifest_yaml_path&gt;]
+$ cx --org <organization_name> stacks create --name <stack_name> --environment <environment> --service_yaml <service_yaml_path> [--manifest_yaml <manifest_yaml_path>]
 
 ```

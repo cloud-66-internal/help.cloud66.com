@@ -2,6 +2,6 @@
 
 ```
 
-$ cx download [-s &lt;stack&gt;] [--server &lt;server name&gt;] [source file] [target directory]
+$ cx download [-s <stack>] [--server <server name>] [source file] [target directory]
 
 ```

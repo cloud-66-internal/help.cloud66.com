@@ -15,7 +15,7 @@ key_name: Default (Mandatory)
 Configuration:
 - **httpchk**: The health-check configuration.
 - **balance**: The load balancing strategy.
-- **errorfile&#95;\***: Location of your own custom error page content to serve in the case of receiving a HTTP error code on the load balancer.
+- **errorfile_\***: Location of your own custom error page content to serve in the case of receiving a HTTP error code on the load balancer.
 
 
 

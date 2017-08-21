@@ -8,7 +8,7 @@ Start by [SSHing to your server](http://help.cloud66.com/managing-your-stack/ssh
 
 
 
-**Possible values for &lt;environment&gt;:**
+**Possible values for <environment>:**
 
 *   development (default)
 *   test

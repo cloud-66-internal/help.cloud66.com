@@ -2,6 +2,6 @@
 
 ```
 
-$ cx databases resync-slave [-s &lt;stack&gt;] &lt;slave server name&gt;
+$ cx databases resync-slave [-s <stack>] <slave server name>
 
 ```

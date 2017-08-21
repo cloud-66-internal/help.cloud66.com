@@ -2,6 +2,6 @@
 
 ```
 
-$ cx backups download [-s &lt;stack&gt;] [-d &lt;download directory&gt;] &lt;backup id&gt;
+$ cx backups download [-s <stack>] [-d <download directory>] <backup id>
 
 ```

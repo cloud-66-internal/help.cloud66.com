@@ -2,6 +2,6 @@
 
 ```
 
-$ cx servers settings set [-s &lt;stack&gt;] --server &lt;server name&gt;|&lt;server ip&gt;|&lt;server role&gt; &lt;setting&gt;=&lt;value&gt;
+$ cx servers settings set [-s <stack>] --server <server name>|<server ip>|<server role> <setting>=<value>
 
 ```

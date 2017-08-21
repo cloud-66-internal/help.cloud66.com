@@ -7,6 +7,6 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "common" %}
+{% assign product = "rails" %}
 
 {% include _inlines/AddOns/common/add-in-implementation/add-in-implementation_add-ins-allow-you-to-add-various-inte.md %}

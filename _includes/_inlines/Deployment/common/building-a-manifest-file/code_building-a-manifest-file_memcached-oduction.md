@@ -7,6 +7,6 @@ production:
         configuration:
             memory: 1024
             port: 11211
-            listen&#95;ip: 127.0.0.1
+            listen_ip: 127.0.0.1
 
 ```

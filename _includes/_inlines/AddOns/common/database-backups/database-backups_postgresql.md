@@ -57,4 +57,44 @@ You can find YOUR_PG_DATABASE_NAME and YOUR_PG_APP_USERNAME in Cloud66 Dashboard
 ```
 $ sudo -u postgres psql -c "SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = '$PG_DATABASE_NAME' AND pg_stat_activity.pid 
 
+```
 
+4.2 Use following command to drop your database
+
+```
+$ sudo -u postgres psql -c 'DROP DATABASE IF EXISTS $PG_DATABASE_NAME'
+```
+4.3 Use following command to create a new database
+
+```
+$ sudo -u postgres psql -c "CREATE DATABASE $PG_DATABASE_NAME WITH encoding 'unicode'"
+```
+4.4 If you are using postgis use following commands to add it to newly created database
+
+```
+$ sudo -u postgres psql -d $PG_DATABASE_NAME -c "CREATE EXTENSION postgis;"
+$ sudo -u postgres psql -d $PG_DATABASE_NAME -c "CREATE EXTENSION postgis_topology;"
+$ sudo -u postgres psql -d $PG_DATABASE_NAME -c "CREATE EXTENSION fuzzystrmatch;"
+$ sudo -u postgres psql -d $PG_DATABASE_NAME -c "CREATE EXTENSION postgis_tiger_geocoder;"
+```
+
+You can use following command to restore your database
+```
+$ pg -U $PG_APP_USERNAME --no-password $PG_DATABASE_NAME <  /path/to/unarchived/folder/data_file
+```
+**Restore Postgresql Binary backup**
+
+You need to find the main backup folder in unarchived folder. Run following command to find it :
+```
+$ find /path/to/unarchived/folder -name raw -type d
+```
+Stop Postgresql service :
+2.1 Ubuntu 12.04 / 14.04
+```
+$ (sudo -u postgres pg_ctl stop -D /usr/local/pgsql/data -m f -t 10 || true) && sudo stop postgresql
+```
+2.2 Ubuntu 16.04
+```
+$ sudo systemctl stop postgresql
+```
+Use following command to delete Postgresql data directory

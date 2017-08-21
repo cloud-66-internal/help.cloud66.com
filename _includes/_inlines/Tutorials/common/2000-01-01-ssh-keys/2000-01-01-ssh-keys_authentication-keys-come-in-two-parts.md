@@ -6,7 +6,7 @@
 1.
 
 			**Public Key** &mdash; stored in the 
-~/.ssh/authorized&#95;keys
+~/.ssh/authorized_keys
  file of the server that you want to access.
 
 2.

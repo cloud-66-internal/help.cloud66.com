@@ -7,6 +7,6 @@ production:
         configuration:
             nginx:
                 cors: true
-                perfect&#95;forward&#95;secrecy: true # deprecated
+                perfect_forward_secrecy: true # deprecated
 
 ```

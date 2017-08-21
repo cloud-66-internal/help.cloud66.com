@@ -2,6 +2,6 @@
 
 ```
 
-$ cx upload [-s &lt;stack&gt;] [--server &lt;server name&gt;] [source file] [target directory]
+$ cx upload [-s <stack>] [--server <server name>] [source file] [target directory]
 
 ```

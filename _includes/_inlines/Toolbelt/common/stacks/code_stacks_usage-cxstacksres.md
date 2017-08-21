@@ -2,6 +2,6 @@
 
 ```
 
-$ cx stacks restart [-s &lt;stack&gt;]
+$ cx stacks restart [-s <stack>]
 
 ```
