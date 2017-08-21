@@ -1,7 +1,5 @@
 <!-- layout:code post: puma-rack-server_deploy-with-puma -->
 
 ```
-
-custom&#95;web: bundle exec puma -e $RACK&#95;ENV -b unix:///tmp/web&#95;server.sock --pidfile /tmp/web&#95;server.pid -d
-
+custom_web: bundle exec puma -e $RACK_ENV -b unix:///tmp/web_server.sock --pidfile /tmp/web_server.pid -d
 ```

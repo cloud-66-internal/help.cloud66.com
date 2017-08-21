@@ -2,6 +2,9 @@
 layout: default
 ---
 
-- [Getting Started](getting-started)
+- [Add-Ons](Addons)
 - [Databases](databases)
-- [Deploymnet](deployment)
+- [Deployment](deployment)
+- [Getting Started](getting-started)
+- [Tutorials](Tutorials)
+

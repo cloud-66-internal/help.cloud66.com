@@ -1,16 +1,10 @@
 <!-- layout:code post: sinatra-stacks_active-record -->
 
 ```
-
 production:
   adapter: mysql2
-  username: 
-
-  password: 
-
-  host: 
-
-  database: 
-
-
+  username: <%= ENV['MYSQL_USERNAME'] %>
+  password: <%= ENV['MYSQL_PASSWORD'] %>
+  host: <%= ENV['MYSQL_ADDRESS'] %>
+  database: <%= ENV['MYSQL_DATABASE'] %>
 ```
