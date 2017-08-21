@@ -7,7 +7,7 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "maestro" %}
+{% assign product = "node" %}
 
 {% include _inlines/AddOns/common/memcached/memcached_what-is-memcached.md %}
 {% include _inlines/AddOns/common/memcached/memcached_add-memcached.md %}
