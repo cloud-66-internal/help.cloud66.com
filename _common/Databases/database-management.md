@@ -9,7 +9,7 @@ legacy: false
 ---
 {% assign product = "common" %}
 
-{% include _inlines/Databases/common/database-management/database-management_42;it-is-0-for-standalone-servers-1-f.md %}
+{% include _inlines/Databases/common/database-management/database-management_it-is-0-for-standalone-servers-1-f.md %}
 {% include _inlines/Databases/common/database-management/database-management_about-deploying-databases.md %}
 {% include _inlines/Databases/common/database-management/database-management_contents.md %}
 {% include _inlines/Databases/common/database-management/database-management_control-your-rails-database-migrations.md %}
