@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: integration-with-travis-ci
+title: Integration With Travis CI
 categories: Partners
 lead: ""
 legacy: false

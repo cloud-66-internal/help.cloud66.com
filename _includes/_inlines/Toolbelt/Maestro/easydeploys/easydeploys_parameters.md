@@ -4,35 +4,7 @@
 ### Parameters
 
 
-
-    
-
-        
-
-            
-Parameter
-
-            
-Description
-
-        
-
-    
-
-    
-
-        
-
-            
-_list_
-
-            
-List the available EasyDeploy apps
-
-        
-
-    
-
-
-
+|       Parameter             |      	 Description     	         |
+| :---------------------------| ------------------------------------:|
+| list                        |  List the available EasyDeploy apps  |
 

@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-#- **Deploy**
+- **Deploy**
 
 When you deploy your stack, Cloud 66 pushes the latest code available in your Git repository or Docker images to your servers.
 

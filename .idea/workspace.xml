@@ -2,76 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8523b96d-f99a-422f-96c3-559e0886ea49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-4.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-3.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-3.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-3.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-4.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-5.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-4.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-5.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-5.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-2.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-4.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-5.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-4.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-5.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-2.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_manifest.yml-velopment.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_manifest.yml-velopment.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_deploy-with-puma.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_deploy-with-puma.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_docker.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_docker.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_haproxy.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_haproxy.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_memcached.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_memcached.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rails.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rails.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_haproxy-oduction.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_haproxy-oduction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_important-oduction-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_important-oduction-2.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_important-oduction.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_important-oduction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_memcached-oduction.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_memcached-oduction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_nginx-oduction.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_nginx-oduction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-points.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-points.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/code_env-vars_assign-environment-variables-for-deployment-v.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/code_env-vars_assign-environment-variables-for-deployment-v.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/code_env-vars_define-referenced-environment-variable--2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/code_env-vars_define-referenced-environment-variable--2.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/code_env-vars_define-referenced-environment-variable-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/code_env-vars_define-referenced-environment-variable-.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/code_env-vars_using-environment-variables-rnamelt.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/code_env-vars_using-environment-variables-rnamelt.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/env-vars_auto-generated-environment-variables.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/env-vars_auto-generated-environment-variables.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/env-vars_define-referenced-environment-variable.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/env-vars_define-referenced-environment-variable.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/env-vars_pre-defined-environment-variables.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/env-vars_pre-defined-environment-variables.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_important.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_important.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_1.-rails95root.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_1.-rails95root.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_2.-rails95root.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_2.-rails95root.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_3.-rails95root.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_3.-rails95root.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_4.-rails95root.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_4.-rails95root.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_build-your-own-pill-file-ocessstdo.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_build-your-own-pill-file-ocessstdo.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_load-a-process-sudobluepill.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_load-a-process-sudobluepill.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_start-sudobluepill.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_start-sudobluepill.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_status-sudobluepill-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_status-sudobluepill-2.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_stop-sudobluepill.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_stop-sudobluepill.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_unload-a-process-sudobluepill.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/code_1967-09-26-bluepill_unload-a-process-sudobluepill.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_deployment-hooks.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_deployment-hooks.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_custom-rack-servers.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_custom-rack-servers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_test-your-websocket-server.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_test-your-websocket-server.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1930-09-26-haproxy-for-websocket/1930-09-26-haproxy-for-websocket_test-your-websocket-server.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1930-09-26-haproxy-for-websocket/1930-09-26-haproxy-for-websocket_test-your-websocket-server.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1930-09-26-haproxy-for-websocket/code_1930-09-26-haproxy-for-websocket_test-your-websocket-s.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1930-09-26-haproxy-for-websocket/code_1930-09-26-haproxy-for-websocket_test-your-websocket-s.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1981-09-26-out-of-memory-errors/1981-09-26-out-of-memory-errors_possible-resolutions.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1981-09-26-out-of-memory-errors/1981-09-26-out-of-memory-errors_possible-resolutions.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1981-09-26-out-of-memory-errors/1981-09-26-out-of-memory-errors_the-problem.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1981-09-26-out-of-memory-errors/1981-09-26-out-of-memory-errors_the-problem.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_note.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_note.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/code_1998-12-08-seeding-db_deploy-hook-oductiona.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/code_1998-12-08-seeding-db_deploy-hook-oductiona.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/code_1998-12-08-seeding-db_seed-script-binbash.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/code_1998-12-08-seeding-db_seed-script-binbash.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_authentication-keys-come-in-two-parts.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_authentication-keys-come-in-two-parts.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_connect-to-your-server-using-your-key.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_connect-to-your-server-using-your-key.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_generate-keys-on-linux-and-mac.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_generate-keys-on-linux-and-mac.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important-.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-all-servers-v.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-all-servers-v.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-your-database-server-v.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-your-database-server-v.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-your-redis-server-v.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-your-redis-server-v.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-09-26-db-structure-dump-error/2013-09-26-db-structure-dump-error_important.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-09-26-db-structure-dump-error/2013-09-26-db-structure-dump-error_important.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2016-09-26-permission-denied-errors/2016-09-26-permission-denied-errors_if-your-application-nee.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2016-09-26-permission-denied-errors/2016-09-26-permission-denied-errors_if-your-application-nee.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_listing-containers.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_listing-containers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.scss" afterPath="$PROJECT_DIR$/css/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/Toolbelt/containers.md" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/containers.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-1.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-4.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-5.md" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-1.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-1.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-1.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/code_containers_example-cxcontainers-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/code_containers_example-cxcontainers-2-3.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/Toolbelt/containers.md" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/containers.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.scss" afterPath="$PROJECT_DIR$/css/main.scss" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,13 +33,13 @@
     <favorites_list name="help" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="memcached.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_maestro/AddOns/memcached.md">
+    <leaf>
+      <file leaf-file-name="containers_parameters-2.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="195">
-                <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="69" />
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -98,12 +47,116 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="code_memcached_customize-memcached-oduction.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/AddOns/common/memcached/code_memcached_customize-memcached-oduction.md">
+      <file leaf-file-name="containers_parameters-3.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-3.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="150">
-                <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="containers_parameters-4.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-4.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="containers_parameters-1.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_parameters-1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="containers_listing-containers.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_listing-containers.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="containers_usage-1.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="containers_usage-2.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-2.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="containers_usage-3.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-3.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="containers_usage-4.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-4.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="containers_example-5.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_example-5.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -167,9 +220,9 @@
         <option value="$PROJECT_DIR$/_maestro/AddOns/add-in-implementation.md" />
         <option value="$PROJECT_DIR$/_maestro/Toolbelt/containers.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/code_containers_example-cxcontainers-2-3.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_listing-containers.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-1.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_usage-2.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_listing-containers.md" />
       </list>
     </option>
   </component>
@@ -198,8 +251,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -222,57 +273,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_rails" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
+              <option name="myItemId" value="_maestro" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_rails" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AddOns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_Node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_Node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AddOns" />
+              <option name="myItemId" value="Toolbelt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -300,11 +305,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_maestro" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AddOns" />
+              <option name="myItemId" value="_includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -318,7 +319,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_legacyDocker" />
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_inlines" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -332,25 +337,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_legacyDocker" />
+              <option name="myItemId" value="_includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AddOns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
+              <option name="myItemId" value="_inlines" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_common" />
+              <option name="myItemId" value="Toolbelt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maestro" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,16 +363,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_common" />
+              <option name="myItemId" value="_includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AddOns" />
+              <option name="myItemId" value="_inlines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Toolbelt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maestro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="containers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_inlines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Toolbelt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RecentsManager">
@@ -398,6 +433,17 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -532,12 +578,6 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -572,35 +612,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503058142751</updated>
-      <workItem from="1503058153848" duration="16792000" />
+      <workItem from="1503058153848" duration="17065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16793000" />
+    <option name="totallyTimeSpent" value="17065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20208333" sideWeight="0.49589685" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49589685" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5041032" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5041032" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49589685" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -620,6 +658,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="15">
             <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -630,6 +669,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
             <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -640,6 +680,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
             <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -650,6 +691,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
             <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -660,6 +702,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
             <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -670,6 +713,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="120">
             <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -680,6 +724,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="120">
             <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -690,6 +735,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
             <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -700,6 +746,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="45">
             <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -710,6 +757,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="150">
             <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -720,6 +768,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -730,6 +779,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="45">
             <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -740,17 +790,29 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="45">
             <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/thin-rack-server/code_thin-rack-server.md" />
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/thin-rack-server/code_thin-rack-server.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/Rails/thin-rack-server/thin-rack-server_restart-the-web-server-hot-restart.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="75">
             <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -761,6 +823,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="90">
             <caret line="6" column="58" lean-forward="false" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -771,6 +834,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="75">
             <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -781,6 +845,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="45">
             <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -791,6 +856,7 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="45">
             <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -801,6 +867,7 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="105">
             <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -811,6 +878,7 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="225">
             <caret line="15" column="102" lean-forward="false" selection-start-line="15" selection-start-column="102" selection-end-line="15" selection-end-column="102" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -821,6 +889,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="45">
             <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -831,6 +900,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="60">
             <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -841,6 +911,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="60">
             <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -851,6 +922,7 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="75">
             <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -861,6 +933,7 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="210">
             <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -871,6 +944,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="165">
             <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -881,6 +955,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="150">
             <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -891,6 +966,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -901,6 +977,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
             <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -911,6 +988,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -921,6 +999,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="165">
             <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -931,6 +1010,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -941,6 +1021,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
             <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -951,6 +1032,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="105">
             <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -961,6 +1043,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -971,6 +1054,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -981,6 +1065,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -991,6 +1076,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1001,6 +1087,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1011,6 +1098,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1021,6 +1109,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1031,6 +1120,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1041,6 +1131,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1051,6 +1142,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1061,6 +1153,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1071,6 +1164,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1081,6 +1175,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1091,6 +1186,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1101,6 +1197,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1109,8 +1206,9 @@
     <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/Maestro/containers/containers_listing-containers.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
