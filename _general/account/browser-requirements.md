@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: browser-requirements
+title: Browser Requirements
 categories: Account
 lead: ""
 legacy: false

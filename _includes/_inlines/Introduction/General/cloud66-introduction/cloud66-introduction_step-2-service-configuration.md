@@ -7,6 +7,9 @@ Now provide a stack name, and the environment you would like to deploy in. Next 
 
 1.  What's the service name?
 2.  How shall we build this service?
+	- Pull code from Git: Cloud 66 builds your Docker images for you using BuildGrid, which requires that you place a Dockerfile in your repository.
+	- Build from Docker image: Specify your own Docker image repository for us to pull your image from.
+
 3.  Is the service accessible from the Internet? If so, specify which port your container runs on.
 4.  Which database(s) do you need?
 

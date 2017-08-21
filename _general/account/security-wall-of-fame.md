@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: security-wall-of-fame
+title: Security Wall of Fame
 categories: Account
 lead: ""
 legacy: false

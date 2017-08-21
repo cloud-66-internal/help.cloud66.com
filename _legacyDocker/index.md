@@ -1,5 +1,6 @@
 ---
 layout: default
+category: legacy_docker
 ---
 - test
 - test

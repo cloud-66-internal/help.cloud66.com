@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-#What follows is how to integrate [Semaphore](https://semaphoreapp.com) with Cloud 66.
+What follows is how to integrate [Semaphore](https://semaphoreapp.com) with Cloud 66.
 
 1. Make sure your stack is deployed with Cloud 66.
 2. Setup your project on [Semaphore](https://semaphoreapp.com). Since you're reading this page, you probably have a Semaphore project setup already!
