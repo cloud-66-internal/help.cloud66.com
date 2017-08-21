@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: data-protection
+title: European data protection compliance
 categories: unknown
 lead: ""
 legacy: false

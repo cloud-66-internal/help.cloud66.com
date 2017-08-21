@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-#### Create a Slack bot
+### Create a Slack bot
 
 First thing you will need to do is to create your ChatOps bot on Slack.
 

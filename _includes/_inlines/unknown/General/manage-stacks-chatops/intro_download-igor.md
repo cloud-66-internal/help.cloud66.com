@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-#### Download Igor
+### Download Igor
 
 You can install the app either from the Cloud 66 app store or from the docker-compose
 

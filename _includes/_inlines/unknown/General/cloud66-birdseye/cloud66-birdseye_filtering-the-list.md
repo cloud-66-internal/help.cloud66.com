@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-#### Filtering the list
+### Filtering the list
 You can filter the result for the incidents with the following filters:
 
 - `vendor` Cloud provider's name. Valid options are `digitalocean`, `linode`, `aws`, `rackspace`, `gce`
