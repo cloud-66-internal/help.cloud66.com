@@ -9,4 +9,4 @@ legacy: false
 ---
 {% assign product = "common" %}
 
-{% include _inlines/Getting Started/common/stack-environments/stack-environments_stack-environments.md %}
+{% include _inlines/GettingStarted/common/stack-environments/stack-environments_stack-environments.md %}

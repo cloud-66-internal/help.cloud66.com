@@ -9,7 +9,7 @@ legacy: false
 ---
 {% assign product = "common" %}
 
-{% include _inlines/Getting Started/common/service_networking/service_networking_contents.md %}
-{% include _inlines/Getting Started/common/service_networking/service_networking_note.md %}
-{% include _inlines/Getting Started/common/service_networking/service_networking_overview.md %}
-{% include _inlines/Getting Started/common/service_networking/service_networking_ports-inside-and-outside-containers.md %}
+{% include _inlines/GettingStarted/common/service_networking/service_networking_contents.md %}
+{% include _inlines/GettingStarted/common/service_networking/service_networking_note.md %}
+{% include _inlines/GettingStarted/common/service_networking/service_networking_overview.md %}
+{% include _inlines/GettingStarted/common/service_networking/service_networking_ports-inside-and-outside-containers.md %}

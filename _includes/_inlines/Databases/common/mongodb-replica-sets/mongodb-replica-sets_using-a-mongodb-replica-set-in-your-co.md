@@ -8,5 +8,6 @@ All MongoDB drivers support replica sets, which means that you can pass the list
 This is why we won't touch your configuration files after you scale your MongoDB up. This allows you to configure the client the way you see fit and go live with your replicated database backend when you are ready.
 
 
+**Note** 
 
-
+We stop modifying your MongoDB client configuration files (like mongoid.yml in Rails) after replication is enabled.
