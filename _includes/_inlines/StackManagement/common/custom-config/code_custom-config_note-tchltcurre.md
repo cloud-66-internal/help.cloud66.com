@@ -2,6 +2,6 @@
 
 ```
 
-patch &lt;current_configuration&gt; -i &lt;patch_file&gt; -o merged_configuration
+patch <current_configuration> -i <patch_file> -o merged_configuration
 
 ```

@@ -2,6 +2,6 @@
 
 ```
 
-$ cx --org &lt;organization_name&gt; gateways add --name &lt;gateway name&gt; --address &lt;gateway address&gt; --username &lt;gateway username&gt;  --private-ip &lt;private ip of gateway&gt;
+$ cx --org <organization_name> gateways add --name <gateway name> --address <gateway address> --username <gateway username>  --private-ip <private ip of gateway>
 
 ```

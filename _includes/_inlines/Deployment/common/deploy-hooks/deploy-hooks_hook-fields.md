@@ -154,7 +154,7 @@ This specifies the source location of your deploy hook file within your reposito
 
 
 destination ![image](http://assets.cloud66.com/help/images/required.gif)
-The destination path on your target server. You can also specify environment variables in your destination field, _&lt;%= ENV['STACK_PATH'] %&gt;_ for example.
+The destination path on your target server. You can also specify environment variables in your destination field, _<%= ENV['STACK_PATH'] %>_ for example.
 	
 
 
@@ -197,7 +197,7 @@ If you are executing the file on your target server, specify whether you want th
 
 
 parse (true)
-Specifies whether the file being transferred should be parsed for [environment variables](/deployment/environment-variables). Using this you can embed _&lt;%= ENV['ENV_VAR'] %&gt;_ for example in your source file, and have it resolved during the deploy hook action.
+Specifies whether the file being transferred should be parsed for [environment variables](/deployment/environment-variables). Using this you can embed _<%= ENV['ENV_VAR'] %>_ for example in your source file, and have it resolved during the deploy hook action.
 	
 
 

@@ -2,6 +2,6 @@
 
 ```
 
-$ cx env-vars set [-s &lt;stack&gt;] &lt;setting&gt;=&lt;value&gt;
+$ cx env-vars set [-s <stack>] <setting>=<value>
 
 ```

@@ -2,7 +2,7 @@
 
 ```
 
-KEY&#95;1=value&#95;1
-KEY&#95;2=value&#95;2
+KEY_1=value_1
+KEY_2=value_2
 
 ```

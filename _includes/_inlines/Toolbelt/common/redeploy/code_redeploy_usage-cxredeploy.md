@@ -2,6 +2,6 @@
 
 ```
 
-$ cx redeploy [-s &lt;stack&gt;] [-y] [--git-ref &lt;git_ref&gt;] [--service &lt;service&gt;] [--service &lt;service&gt;] [--service &lt;service&gt;]
+$ cx redeploy [-s <stack>] [-y] [--git-ref <git_ref>] [--service <service>] [--service <service>] [--service <service>]
 
 ```

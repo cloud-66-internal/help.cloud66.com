@@ -2,6 +2,6 @@
 
 ```
 
-$ cx stacks list [-e &lt;environment&gt;]
+$ cx stacks list [-e <environment>]
 
 ```

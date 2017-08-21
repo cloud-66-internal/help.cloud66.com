@@ -2,6 +2,6 @@
 
 ```
 
-MY&#95;HEALTH&#95;CHECK=http&#58;&#47;&#47;&#95;env&#40;WEB&#95;ADDRESS&#95;EXT&#41;&#47;health&#95;check&#46;html
+MY_HEALTH_CHECK=http&#58;&#47;&#47;_env&#40;WEB_ADDRESS_EXT&#41;&#47;health_check&#46;html
 
 ```

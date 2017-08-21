@@ -2,6 +2,6 @@
 
 ```
 
-$ cx env-vars list [-s &lt;stack&gt;] [--history] [environment_variables] 
+$ cx env-vars list [-s <stack>] [--history] [environment_variables] 
 
 ```

@@ -2,6 +2,6 @@
 
 ```
 
-$ cx --org &lt;organization_name&gt; gateways open --name &lt;gateway name&gt; --key &lt;The path to the gateway server key&gt; --ttl &lt;time to live &gt;
+$ cx --org <organization_name> gateways open --name <gateway name> --key <The path to the gateway server key> --ttl <time to live >
 
 ```

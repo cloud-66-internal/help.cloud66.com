@@ -2,6 +2,6 @@
 
 ```
 
-$ cx --org &lt;organization_name&gt; gateways list [ --verbose]
+$ cx --org <organization_name> gateways list [ --verbose]
 
 ```

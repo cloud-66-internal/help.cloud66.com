@@ -2,6 +2,6 @@
 
 ```
 
-$ cx databases promote-slave [-s &lt;stack&gt;] [--db-type &lt;database type&gt;] &lt;slave server name&gt;
+$ cx databases promote-slave [-s <stack>] [--db-type <database type>] <slave server name>
 
 ```

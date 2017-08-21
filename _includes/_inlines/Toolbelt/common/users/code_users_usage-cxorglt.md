@@ -2,6 +2,6 @@
 
 ```
 
-$ cx --org &lt;organization_name&gt; users list
+$ cx --org <organization_name> users list
 
 ```

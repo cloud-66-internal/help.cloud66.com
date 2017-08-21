@@ -16,14 +16,14 @@ The generated keys should now be located in your home directory
 
 
 *		You'll find the **private key** in the 
-~/.ssh/id&#95;rsa
+~/.ssh/id_rsa
  file.
 *		You'll find the **public key** in the 
-~/.ssh/id&#95;rsa.pub
+~/.ssh/id_rsa.pub
  file.
 
 Copy the public key into the 
-~/.ssh/authorized&#95;keys
+~/.ssh/authorized_keys
  file on your server, using the following commands. Substitute your own SSH user and host names:
 
 {% highlight bash %}

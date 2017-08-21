@@ -2,6 +2,6 @@
 
 ```
 
-$ cx stacks help [&lt;command&gt;]
+$ cx stacks help [<command>]
 
 ```

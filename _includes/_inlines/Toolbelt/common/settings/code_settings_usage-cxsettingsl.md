@@ -2,6 +2,6 @@
 
 ```
 
-$ cx settings list [-s &lt;stack&gt;] [-e &lt;environment&gt;]
+$ cx settings list [-s <stack>] [-e <environment>]
 
 ```

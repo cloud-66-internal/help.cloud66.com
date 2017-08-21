@@ -10,6 +10,6 @@ We will be installing the [HTTP Echo Nginx](http://wiki.nginx.org/HttpEchoModule
 3.  Get the latest version of your module(s):`wget http://github.com/agentzh/echo-nginx-module/archive/v0.46.tar.gz`Visit the Nginx website for more information about [default](http://wiki.nginx.org/Modules) and [third party modules](http://wiki.nginx.org/3rdPartyModules).
 4.  Use tar to extract the files from their archive:`tar xvzf v0.46.tar.gz`
 5.  Enter the Nginx folder:`cd nginx-1.5.3`
-6.  Execute the following command to configure the installation:`./configure --prefix='/etc/nginx' --add-module='/root/echo-nginx-module-0.46' --error-log-path='$STACK&#95;PATH/log' --user=nginx`Visit the Nginx website for more information about [installation and compile-time options](http://wiki.nginx.org/InstallOptions).
+6.  Execute the following command to configure the installation:`./configure --prefix='/etc/nginx' --add-module='/root/echo-nginx-module-0.46' --error-log-path='$STACK_PATH/log' --user=nginx`Visit the Nginx website for more information about [installation and compile-time options](http://wiki.nginx.org/InstallOptions).
 7.  Execute `make` followed by `make install`, which will install Nginx with the new configuration.
 8.  Type `nginx -V` to confirm whether your module(s) installed.

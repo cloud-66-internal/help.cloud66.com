@@ -2,6 +2,6 @@
 
 ```
 
-$ cx services stop [-s &lt;stack&gt;] &lt;service name&gt; [--server &lt;server name&gt;|&lt;server ip&gt;]
+$ cx services stop [-s <stack>] <service name> [--server <server name>|<server ip>]
 
 ```

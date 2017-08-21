@@ -14,7 +14,7 @@ Simply add a bash script to your stack that contains the rake task: for example,
 
 
 
-Then, add a deploy&#95;hook to execute the above script on each deploy: create the file `.cloud66/deploy_hooks.yml` as below:
+Then, add a deploy_hook to execute the above script on each deploy: create the file `.cloud66/deploy_hooks.yml` as below:
 
 
 

@@ -2,6 +2,6 @@
 
 ```
 
-$ cx backups list [-s &lt;stack&gt;] [-l] [&lt;db type&gt;]
+$ cx backups list [-s <stack>] [-l] [<db type>]
 
 ```

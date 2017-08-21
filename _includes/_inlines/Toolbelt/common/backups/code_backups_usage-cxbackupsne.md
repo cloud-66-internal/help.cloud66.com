@@ -2,7 +2,7 @@
 
 ```
 
-$ cx backups new [-s &lt;stack&gt;]	[--dbtypes &lt;DB types&gt;] [--frequency &lt;Frequency&gt;] [--keep &lt;Keep&gt;] [--gzip &lt;Gzip&gt;] [exclude-tables &lt;Exclude tables&gt;] [--run-on-replica &lt;Run on replica&gt;]
+$ cx backups new [-s <stack>]	[--dbtypes <DB types>] [--frequency <Frequency>] [--keep <Keep>] [--gzip <Gzip>] [exclude-tables <Exclude tables>] [--run-on-replica <Run on replica>]
 
 
 ```

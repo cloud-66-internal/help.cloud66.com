@@ -2,6 +2,6 @@
 
 ```
 
-$ cx stacks reboot -s &lt;stack&gt; [--group &lt;server group name&gt;] [--strategy &lt;strategy name&gt;] [--environment &lt;environment name&gt;]
+$ cx stacks reboot -s <stack> [--group <server group name>] [--strategy <strategy name>] [--environment <environment name>]
 
 ```

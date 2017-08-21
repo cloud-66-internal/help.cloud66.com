@@ -2,6 +2,6 @@
 
 ```
 
-$ cx job list [-s &lt;stack&gt;] --arg &lt;arg&gt; &lt;job name&gt;
+$ cx job list [-s <stack>] --arg <arg> <job name>
 
 ```

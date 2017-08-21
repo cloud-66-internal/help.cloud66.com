@@ -4,6 +4,6 @@
 
 services:
     &#60;service_name&#62;:
-        image: &lt;namespace&gt;/&lt;image_name&gt;:/&lt;tag&gt;
+        image: <namespace>/<image_name>:/<tag>
 
 ```

@@ -2,6 +2,6 @@
 
 ```
 
-$ cx servers reboot [-s &lt;stack&gt;] [-e stack environment] --server &lt;server name&gt; 
+$ cx servers reboot [-s <stack>] [-e stack environment] --server <server name> 
 
 ```

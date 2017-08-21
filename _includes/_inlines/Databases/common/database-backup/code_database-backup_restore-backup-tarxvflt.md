@@ -2,6 +2,6 @@
 
 ```
 
-$ tar -xvf &lt;tar_file&gt; -C &lt;folder_name&gt;
+$ tar -xvf <tar_file> -C <folder_name>
 
 ```
