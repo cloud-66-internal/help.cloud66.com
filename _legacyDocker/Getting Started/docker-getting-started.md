@@ -7,12 +7,12 @@ lead: ""
 legacy: true
 
 ---
-{% assign product = "legacyDocker" %}
+{% assign product = "legacy_docker" %}
 
 
-{% include _inlines/GettingStarted/legacyDocker/docker-getting-started/docker-getting-started_overview-amp;-prerequisites.md %}
-{% include _inlines/GettingStarted/legacyDocker/docker-getting-started/docker-getting-started_building-images.md %}
-{% include _inlines/GettingStarted/legacyDocker/docker-getting-started/docker-getting-started_adding-docker-services.md %}
-{% include _inlines/GettingStarted/legacyDocker/docker-getting-started/docker-getting-started_service-provider-drop-down.md %}
-{% include _inlines/GettingStarted/legacyDocker/docker-getting-started/docker-getting-started_build-process-buildgrid.md %}
-{% include _inlines/GettingStarted/legacyDocker/docker-getting-started/docker-getting-started_advanced-features.md %}
+{% include _inlines/GettingStarted/legacy_docker/docker-getting-started/docker-getting-started_overview-amp;-prerequisites.md %}
+{% include _inlines/GettingStarted/legacy_docker/docker-getting-started/docker-getting-started_building-images.md %}
+{% include _inlines/GettingStarted/legacy_docker/docker-getting-started/docker-getting-started_adding-docker-services.md %}
+{% include _inlines/GettingStarted/legacy_docker/docker-getting-started/docker-getting-started_service-provider-drop-down.md %}
+{% include _inlines/GettingStarted/legacy_docker/docker-getting-started/docker-getting-started_build-process-buildgrid.md %}
+{% include _inlines/GettingStarted/legacy_docker/docker-getting-started/docker-getting-started_advanced-features.md %}
