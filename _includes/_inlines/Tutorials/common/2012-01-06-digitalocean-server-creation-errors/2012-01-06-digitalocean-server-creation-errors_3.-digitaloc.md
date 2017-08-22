@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-#### 3. DigitalOcean has experienced an internal error
+### 3. DigitalOcean has experienced an internal error
 
 As DigitalOcean are still a relatively new company, their rapid growth inevitably causes some growing pains. This is sometimes evident in errors during server creation.
 

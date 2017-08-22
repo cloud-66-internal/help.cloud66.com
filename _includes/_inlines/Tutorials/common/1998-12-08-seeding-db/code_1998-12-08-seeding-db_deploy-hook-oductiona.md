@@ -1,7 +1,6 @@
 <!-- layout:code post: 1998-12-08-seeding-db_deploy-hook -->
 
 ```
-
 production:
   after_symlink: # Or use after_rails depending on your application
     - source: /.cloud66/dbseed.sh
@@ -10,5 +9,4 @@ production:
       execute: true
       run_on: single_server
       apply_during: build_only      
-
 ```

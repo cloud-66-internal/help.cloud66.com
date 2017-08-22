@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-### Important
+## Important
 
 Ensure that you **do not** select the option for db:schema:load during the build of your second stack, as this could destroy the data on the first stack.
 

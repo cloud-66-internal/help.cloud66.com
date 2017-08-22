@@ -7,7 +7,7 @@ A boolean value to indicate whether the containers of this service should be res
 
 {% highlight yaml %}
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         restart_on_deploy: false
 {% endhighlight %}
 

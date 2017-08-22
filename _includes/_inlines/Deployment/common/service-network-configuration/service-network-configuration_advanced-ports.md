@@ -7,7 +7,7 @@ You can also specify ports declaratively, and assign tcp/udp mappings directly t
 
 {% highlight yaml %}
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         ports:
           - container: 3000
             http: 80

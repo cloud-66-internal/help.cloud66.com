@@ -7,7 +7,7 @@ The `ports` option allows you to specify ports definitions for your service. The
 
 {% highlight yaml %}
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         ports: ["3000:80:443", "4000::8443", "5000"]
 {% endhighlight %}
 

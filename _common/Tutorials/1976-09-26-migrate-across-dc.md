@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 1976-09-26-migrate-across-dc
+title: Migrate your stacks across data centers
 categories: Tutorials
 lead: ""
 legacy: false

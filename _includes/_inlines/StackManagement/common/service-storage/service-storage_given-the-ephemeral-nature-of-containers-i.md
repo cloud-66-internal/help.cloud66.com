@@ -15,6 +15,6 @@ The `volumes` directive allows you to mount custom host folders inside your cont
 
 {% highlight yaml %}
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         volumes: ["/tmp:/tmp_host", "/readonly/folder:/mnted_readony:ro"]
 {% endhighlight %}

@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-#Do you want to move your stack from one cloud vendor or region to another? Follow the steps below for a seamless transition between stacks.
+Do you want to move your stack from one cloud vendor or region to another? Follow the steps below for a seamless transition between stacks.
 
 1.  Reduce the TTL of your DNS to 5 minutes, and leave it for 24 hours so that it has time to propagate the network.
 2.  [Clone your source stack](http://help.cloud66.com/building-your-stack/stack-definition#stackscore) and deploy it to the new datacenter. This will save any environment variables you had configured on the source stack.

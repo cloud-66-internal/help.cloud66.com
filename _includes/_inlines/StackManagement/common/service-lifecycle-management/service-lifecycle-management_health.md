@@ -21,7 +21,7 @@ The rules below are available to health checks - note that you aren't required t
 
 {% highlight yaml %}
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         health:
           type: inbound
           endpoint: "/healthy"

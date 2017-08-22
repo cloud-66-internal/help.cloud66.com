@@ -2,42 +2,107 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3defac32-9469-4ff6-bc42-582069e8ce78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-1.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-2.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-3.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-1.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1900-09-26-multi-region-stack.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1900-09-26-multi-region-stack.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1900-09-26-multi-region-stack.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-01-21-docker-troubleshooting/1900-01-21-docker-troubleshooting_contents.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_contents.md" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-01-21-docker-troubleshooting.md" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1900-01-21-docker-troubleshooting.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-09-26-multi-region-stack.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1900-09-26-multi-region-stack.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-10-10-nginx-ssl-ciphers.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1900-10-10-nginx-ssl-ciphers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-access-your-code.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-access-your-code.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-zero-downtime-deploy.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-zero-downtime-deploy.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1901-10-03-nginx-modules.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1901-10-03-nginx-modules.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1920-09-26-change-psql-directory.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1920-09-26-change-psql-directory.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-01-21-docker-troubleshooting/1900-01-21-docker-troubleshooting_troubleshooting-a-contain.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-01-21-docker-troubleshooting/1900-01-21-docker-troubleshooting_troubleshooting-a-contain.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-01-21-docker-troubleshooting/code_1900-01-21-docker-troubleshooting_troubleshooting-a-co.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-01-21-docker-troubleshooting/code_1900-01-21-docker-troubleshooting_troubleshooting-a-co.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-multi-region-stack/1900-09-26-multi-region-stack_there-are-several-options-to-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-multi-region-stack/1900-09-26-multi-region-stack_there-are-several-options-to-.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_cloud-66-now-s.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_cloud-66-now-s.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_contents.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_contents.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_important.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_important.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-ssl-s.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-ssl-s.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_bitbucket-example.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_bitbucket-example.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_github-example.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_github-example.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_private-repositories.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_private-repositories.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_public-repositories.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_public-repositories.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-zero-downtime-deploy/1901-01-26-zero-downtime-deploy_depending-on-your-applicati.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-zero-downtime-deploy/1901-01-26-zero-downtime-deploy_depending-on-your-applicati.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_introduction.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_introduction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1920-09-26-change-psql-directory/1920-09-26-change-psql-directory_we-use-the-default-data-fo.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1920-09-26-change-psql-directory/1920-09-26-change-psql-directory_we-use-the-default-data-fo.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_important-mac.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_note-1.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_secondary-domain.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_contents.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1976-09-26-migrate-across-dc.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1976-09-26-migrate-across-dc.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1976-09-26-stack-failover.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1976-09-26-stack-failover.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1980-09-26-optimizing-performance.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1980-09-26-optimizing-performance.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1981-09-26-out-of-memory-errors.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1981-09-26-out-of-memory-errors.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1998-12-08-seeding-db.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1998-12-08-seeding-db.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2000-01-01-ssh-keys.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2000-01-01-ssh-keys.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2003-09-26-sharing-db.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2003-09-26-sharing-db.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2004-09-26-ssl-certificate.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2004-09-26-ssl-certificate.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2009-09-26-application-not-serving.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2009-09-26-application-not-serving.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2012-01-03-nginx-auth.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2012-01-03-nginx-auth.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2012-01-05-nginx-deny.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2012-01-05-nginx-deny.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2012-01-06-digitalocean-server-creation-errors.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2012-01-06-digitalocean-server-creation-errors.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2012-01-09-nginx-redirect.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2012-01-09-nginx-redirect.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/2013-01-20-whenever.md" afterPath="$PROJECT_DIR$/_common/Tutorials/2013-01-20-whenever.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_build-command-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_build-command-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_build-root-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_build-root-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_command-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_command-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_deploy-command-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_deploy-command-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_dockerfile-path-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_dockerfile-path-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_git-branch-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_git-branch-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_git-url-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_git-url-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3-4.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3-4.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/docker-service-configuration/docker-service-configuration_database-configurations.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/docker-service-configuration/docker-service-configuration_database-configurations.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/docker-service-configuration/docker-service-configuration_environment-variables.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/docker-service-configuration/docker-service-configuration_environment-variables.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_advanced-ports.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_advanced-ports.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_ports.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_ports.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_traffic-matches.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_traffic-matches.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/code_logging_background-processes-log-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/code_logging_background-processes-log-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/code_logging_background-processes-log.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/code_logging_background-processes-log.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/code_logging_web-logs-log.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/code_logging_web-logs-log.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/logging_docker-stacks.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/logging_docker-stacks.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/scaling/code_scaling_docker-services-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/scaling/code_scaling_docker-services-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_health.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_health.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-start-signal.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-start-signal.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-stop-sequence.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-stop-sequence.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_requires.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_requires.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_restart-on-deploy.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_restart-on-deploy.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_stop-grace.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_stop-grace.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-resources/service-resources_by-default-docker-services-will-use-as-m.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-resources/service-resources_by-default-docker-services-will-use-as-m.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-storage/service-storage_given-the-ephemeral-nature-of-containers-i.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-storage/service-storage_given-the-ephemeral-nature-of-containers-i.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_postgresql-database-psql.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_postgresql-database-psql.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_redis-database-sudormrf.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_redis-database-sudormrf.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_unzip-your-backup-catfiletar.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_unzip-your-backup-catfiletar.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_unzip-your-backup-tarxvf.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_unzip-your-backup-tarxvf.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1976-09-26-migrate-across-dc/1976-09-26-migrate-across-dc_do-you-want-to-move-your-stack.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1976-09-26-migrate-across-dc/1976-09-26-migrate-across-dc_do-you-want-to-move-your-stack.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_having-a-failover-group-can-help-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_having-a-failover-group-can-help-.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1980-09-26-optimizing-performance/1980-09-26-optimizing-performance_load-testing.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1980-09-26-optimizing-performance/1980-09-26-optimizing-performance_load-testing.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1980-09-26-optimizing-performance/1980-09-26-optimizing-performance_optimizing-for-server-loa.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1980-09-26-optimizing-performance/1980-09-26-optimizing-performance_optimizing-for-server-loa.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1981-09-26-out-of-memory-errors/1981-09-26-out-of-memory-errors_note.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1981-09-26-out-of-memory-errors/1981-09-26-out-of-memory-errors_note.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1981-09-26-out-of-memory-errors/1981-09-26-out-of-memory-errors_the-problem.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1981-09-26-out-of-memory-errors/1981-09-26-out-of-memory-errors_the-problem.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_ew-databases-commonly-require-seed-da.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_ew-databases-commonly-require-seed-da.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_note.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_note.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/code_1998-12-08-seeding-db_deploy-hook-oductiona.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/code_1998-12-08-seeding-db_deploy-hook-oductiona.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/code_1998-12-08-seeding-db_seed-script-binbash.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/code_1998-12-08-seeding-db_seed-script-binbash.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_authentication-keys-come-in-two-parts.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_authentication-keys-come-in-two-parts.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_important.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_important.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/2003-09-26-sharing-db_important.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/2003-09-26-sharing-db_important.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/2003-09-26-sharing-db_there-are-a-number-of-reasons-why-you.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/2003-09-26-sharing-db_there-are-a-number-of-reasons-why-you.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important--2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important--2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important-.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important-ernamepas.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important-ernamepas.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_contents.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_contents.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_important.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_important.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_main-domain.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_main-domain.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_separate-domains-with-different-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_separate-domains-with-different-.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/code_2004-09-26-ssl-certificate_multi-domain-certificates-c.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/code_2004-09-26-ssl-certificate_multi-domain-certificates-c.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/code_2004-09-26-ssl-certificate_separate-domains-with-diffe.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/code_2004-09-26-ssl-certificate_separate-domains-with-diffe.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2009-09-26-application-not-serving/2009-09-26-application-not-serving_there-are-a-number-of-fa.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2009-09-26-application-not-serving/2009-09-26-application-not-serving_there-are-a-number-of-fa.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-03-nginx-auth/2012-01-03-nginx-auth_you-can-use-cloud-66-customconfigh.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-03-nginx-auth/2012-01-03-nginx-auth_you-can-use-cloud-66-customconfigh.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-05-nginx-deny/2012-01-05-nginx-deny_in-addition-to-protecting-your-applic.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-05-nginx-deny/2012-01-05-nginx-deny_in-addition-to-protecting-your-applic.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_1.-your-digi.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_1.-your-digi.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_2.-digitaloc.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_2.-digitaloc.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_3.-digitaloc.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_3.-digitaloc.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_background.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_background.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_haproxy-load.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_haproxy-load.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_timeout-erro.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_timeout-erro.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_http.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_http.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_https.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_https.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/code_2012-01-09-nginx-redirect_http-rverse.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/code_2012-01-09-nginx-redirect_http-rverse.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/code_2012-01-09-nginx-redirect_https-ifallo.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/code_2012-01-09-nginx-redirect_https-ifallo.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/code_2012-01-09-nginx-redirect_redirect-from-http-to-https-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/code_2012-01-09-nginx-redirect_redirect-from-http-to-https-.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_if-you-have-the-whenever-gemhttps.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_if-you-have-the-whenever-gemhttps.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-all-servers-v.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-all-servers-v.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-the-first-server-in-a-serve.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-the-first-server-in-a-serve.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-your-database-server-v.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-your-database-server-v.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-your-redis-server-v.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-your-redis-server-v.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-your-web-servers-v.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-your-web-servers-v.md" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,71 +112,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="1900-01-21-docker-troubleshooting.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1900-09-26-multi-region-stack.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-09-26-multi-region-stack.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1900-09-26-multi-region-stack.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1900-09-26-multi-region-stack.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1900-09-26-multi-region-stack.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1900-09-26-multi-region-stack.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1900-09-26-ssl-termination-on-load-balancers.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="90">
-                <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="code_1900-09-26-ssl-termination-on-load-balancers_important-3.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-3.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -151,12 +151,77 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-1.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-1.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
                 <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2000-01-01-ssh-keys_important-mac.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_important-mac.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2012-01-06-digitalocean-server-creation-errors_http-error-1.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2012-01-06-digitalocean-server-creation-errors_note1.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2012-01-06-digitalocean-server-creation-errors_note2.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note2.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013-01-20-whenever_note-1.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_note-1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="75">
+                <caret line="5" column="125" lean-forward="false" selection-start-line="5" selection-start-column="125" selection-end-line="5" selection-end-column="125" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -185,11 +250,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md" />
-        <option value="$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-3.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-1.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-2.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_important-mac.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note1.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_note-1.md" />
       </list>
     </option>
   </component>
@@ -467,6 +530,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="2013-01-20-whenever" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_inlines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tutorials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="1900-10-10-nginx-ssl-ciphers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -523,21 +616,17 @@
       <pane id="Scratches" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="true" />
-  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_legacy_docker/Tutorials" />
       <recent name="$PROJECT_DIR$/_legacy_docker/Tutorials/" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever" />
+      <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors" />
+      <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys" />
       <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers" />
       <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers" />
-      <recent name="$PROJECT_DIR$/_rails/Tutorials" />
-      <recent name="$PROJECT_DIR$/_Node/Tutorials" />
-      <recent name="$PROJECT_DIR$/_maestro/Tutorials" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -739,12 +828,12 @@
       <option name="presentableId" value="Default" />
       <updated>1503335157443</updated>
       <workItem from="1503335161564" duration="724000" />
-      <workItem from="1503336749534" duration="672000" />
+      <workItem from="1503336749534" duration="1490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1396000" />
+    <option name="totallyTimeSpent" value="2214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -961,6 +1050,61 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_important-mac.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_note-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="125" lean-forward="false" selection-start-line="5" selection-start-column="125" selection-end-line="5" selection-end-column="125" />
             <folding />
           </first_editor>
           <second_editor />

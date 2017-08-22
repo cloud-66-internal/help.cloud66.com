@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2014-09-26-local-cached-copy-error
+title: Local cached copy error
 categories: Tutorials
 lead: ""
 legacy: false

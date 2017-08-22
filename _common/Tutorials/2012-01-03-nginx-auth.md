@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2012-01-03-nginx-auth
+title: Nginx basic authorization
 categories: Tutorials
 lead: ""
 legacy: false

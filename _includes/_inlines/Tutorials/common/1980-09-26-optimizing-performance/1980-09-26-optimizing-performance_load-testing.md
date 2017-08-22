@@ -12,7 +12,7 @@ Your application performance is dependant on many factors, such as code efficien
 1.  What is the desired traffic level you want to be able to handle (eg. users/sec)?
 2.  What is the average response time of your application?
 
-As an example, an application that takes 1 second to respond which is running on a server with 1 worker (thread) would need 1,000 servers to handle 1,000 concurrent connections. If your servers have 10 workers, you would need 100 servers. The more workers you have, the more resources you require, and consequently the more concurrent requests you can handle.
+As an example, an application that takes 1 second to respond and which is running on a server with 1 worker (thread) would need 1,000 servers to handle 1,000 concurrent connections. If your servers have 10 workers, you would need 100 servers. The more workers you have, the more resources you require, and consequently the more concurrent requests you can handle.
 
 Determining the number of Unicorn workers you can have on your server [depends on many factors](http://stackoverflow.com/questions/11056362/unicorn-which-number-of-worker-processes-to-use) (eg. what types of operations your application is performing), so it's good to test this to find a sweet spot. You can generally test using up to 5 times the number of cores for your workers during a load test to see how it's handled (eg. 2 cores = up to 10 workers). [Set the number of Unicorn workers](http://help.cloud66.com/web-server/unicorn-rack-server) in your `config/unicorn.rb` file.
 

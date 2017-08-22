@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-#### HTTPS
+### HTTPS
 The above method will not work for HTTPS traffic, because visitors from domain A will be expecting SSL certificates for that domain, not those of domain B.
 
 As such, users from domain A must first be met with the SSL certificate for that domain, and then be redirected to domain B (and met with those certificates).

@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-### Timeout Errors
+## Timeout Errors
 
 Occasionally - again normally simply due to growing pains, DigitalOcean has a backlog of servers that are queued for creation. This could result in a new server creation taking longer than 20 minutes (the default Cloud 66 timeout for server creation on DigitalOcean).
 This will result in a timeout error. 

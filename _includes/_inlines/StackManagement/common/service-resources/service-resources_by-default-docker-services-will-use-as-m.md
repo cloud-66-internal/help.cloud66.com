@@ -9,7 +9,7 @@ The memory limit will apply to RAM usage, and SWAP usage. A valid entry is a pos
 
 {% highlight yaml %}
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         constraints:
             resources:
                 memory: "100m"

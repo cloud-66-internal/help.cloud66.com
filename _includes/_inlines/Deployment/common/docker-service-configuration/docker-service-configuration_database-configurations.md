@@ -9,7 +9,7 @@ The allowed database values are: `postgresql`, `mysql`, `redis`, `mongodb`, `ela
 
 {% highlight yaml %}
 services:
-    &#60;service_name&#62;:
+    <service_name>:
 databases:
     - mysql
     - elasticsearch

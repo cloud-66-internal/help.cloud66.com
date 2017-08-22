@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2012-01-05-nginx-deny
+title: Nginx allow and deny by IP
 categories: Tutorials
 lead: ""
 legacy: false

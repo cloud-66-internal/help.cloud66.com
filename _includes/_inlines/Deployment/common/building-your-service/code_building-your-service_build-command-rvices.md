@@ -3,7 +3,7 @@
 ```
 
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         build_command: bundle exec rake db:schema:load
 
 ```

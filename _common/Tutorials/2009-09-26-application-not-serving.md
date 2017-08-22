@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2009-09-26-application-not-serving
+title: Application not serving content
 categories: Tutorials
 lead: ""
 legacy: false

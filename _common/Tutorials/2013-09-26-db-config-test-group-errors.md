@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2013-09-26-db-config-test-group-errors
+title: Errors due to different group configs in database.yml
 categories: Tutorials
 lead: ""
 legacy: false

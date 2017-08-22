@@ -7,7 +7,7 @@ This is a stop sequence that is executed on your running containers before they 
 
 {% highlight yaml %}
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         pre_stop_sequence: 1m:USR2:30s:USR1:50s
 {% endhighlight %}
 

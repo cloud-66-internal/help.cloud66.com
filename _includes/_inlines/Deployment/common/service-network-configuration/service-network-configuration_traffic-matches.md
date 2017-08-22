@@ -7,6 +7,6 @@ The `traffic_matches` option allows you to specify an array of string server nam
 
 {% highlight yaml %}
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         traffic_matches: ["app.your_domain.com", "*.anotherdomain.com"]
 {% endhighlight %}

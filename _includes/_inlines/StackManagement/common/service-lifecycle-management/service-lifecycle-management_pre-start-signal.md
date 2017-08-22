@@ -7,7 +7,7 @@ This is a signal that is sent to the existing containers of the service before t
 
 {% highlight yaml %}
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         pre_start_signal: USR1
 {% endhighlight %}
 
