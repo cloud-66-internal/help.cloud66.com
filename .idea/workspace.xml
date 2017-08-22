@@ -2,40 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3defac32-9469-4ff6-bc42-582069e8ce78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-1.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-2.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-3.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-1.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1900-09-26-multi-region-stack.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1900-09-26-multi-region-stack.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1900-09-26-multi-region-stack.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-01-21-docker-troubleshooting/1900-01-21-docker-troubleshooting_contents.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_contents.md" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-01-21-docker-troubleshooting.md" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1900-01-21-docker-troubleshooting.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-09-26-multi-region-stack.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1900-09-26-multi-region-stack.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-10-10-nginx-ssl-ciphers.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1900-10-10-nginx-ssl-ciphers.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-access-your-code.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-access-your-code.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-zero-downtime-deploy.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-zero-downtime-deploy.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1901-10-03-nginx-modules.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1901-10-03-nginx-modules.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Tutorials/1920-09-26-change-psql-directory.md" afterPath="$PROJECT_DIR$/_common/Tutorials/1920-09-26-change-psql-directory.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-01-21-docker-troubleshooting/1900-01-21-docker-troubleshooting_troubleshooting-a-contain.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-01-21-docker-troubleshooting/1900-01-21-docker-troubleshooting_troubleshooting-a-contain.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-01-21-docker-troubleshooting/code_1900-01-21-docker-troubleshooting_troubleshooting-a-co.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-01-21-docker-troubleshooting/code_1900-01-21-docker-troubleshooting_troubleshooting-a-co.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-multi-region-stack/1900-09-26-multi-region-stack_there-are-several-options-to-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-multi-region-stack/1900-09-26-multi-region-stack_there-are-several-options-to-.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_cloud-66-now-s.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_cloud-66-now-s.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_contents.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_contents.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_important.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_important.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-ssl-s.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-ssl-s.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_bitbucket-example.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_bitbucket-example.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_github-example.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_github-example.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_private-repositories.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_private-repositories.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_public-repositories.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_public-repositories.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-zero-downtime-deploy/1901-01-26-zero-downtime-deploy_depending-on-your-applicati.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-01-26-zero-downtime-deploy/1901-01-26-zero-downtime-deploy_depending-on-your-applicati.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_introduction.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_introduction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1920-09-26-change-psql-directory/1920-09-26-change-psql-directory_we-use-the-default-data-fo.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1920-09-26-change-psql-directory/1920-09-26-change-psql-directory_we-use-the-default-data-fo.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/building-a-manifest-file.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/building-a-manifest-file.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/building-your-service.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/building-a-manifest-file.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/building-a-manifest-file.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/building-your-classic-stack.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-3-define-your-application.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-3-define-your-application.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-5-define-deployment-prope.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-5-define-deployment-prope.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-needneeded.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-needneeded.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,129 +24,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="1900-01-21-docker-troubleshooting.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1900-09-26-multi-region-stack.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-09-26-multi-region-stack.md">
+      <file leaf-file-name="building-your-service.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/building-your-service.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1900-09-26-multi-region-stack.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1900-09-26-multi-region-stack.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1900-09-26-multi-region-stack.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1900-09-26-multi-region-stack.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1900-09-26-ssl-termination-on-load-balancers.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="90">
-                <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code_1900-09-26-ssl-termination-on-load-balancers_important-3.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-3.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code_1900-09-26-ssl-termination-on-load-balancers_important-2.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-2.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code_1900-09-26-ssl-termination-on-load-balancers_important-1.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="30">
-                <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-1.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-2.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-2.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <first_editor relative-caret-position="300">
+                <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -190,6 +50,16 @@
         <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-3.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-1.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-2.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/deployment/building-a-manifest-file.md" />
+        <option value="$PROJECT_DIR$/_Node/Deployment/building-a-manifest-file.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/building-a-manifest-file.md" />
+        <option value="$PROJECT_DIR$/_Skycap/Deployment/building-a-manifest-file.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-needneeded.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-3-define-your-application.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-5-define-deployment-prope.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/building-your-classic-stack.md" />
+        <option value="$PROJECT_DIR$/_Skycap/Deployment/building-your-service.md" />
       </list>
     </option>
   </component>
@@ -221,6 +91,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -230,6 +101,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_Skycap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Deployment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -279,7 +168,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
+              <option name="myItemId" value="deployment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,11 +196,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_maestro" />
+              <option name="myItemId" value="_Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
+              <option name="myItemId" value="Deployment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,6 +215,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_maestro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_maestro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Deployment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,7 +264,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
+              <option name="myItemId" value="deployment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -371,117 +278,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_inlines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_inlines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_inlines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_inlines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1900-10-10-nginx-ssl-ciphers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_general" />
+              <option name="myItemId" value="_common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -499,27 +296,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_common" />
+              <option name="myItemId" value="Deployment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -528,16 +310,16 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_Skycap/Deployment" />
+      <recent name="$PROJECT_DIR$/_rails/deployment" />
+      <recent name="$PROJECT_DIR$/_Skycap" />
+      <recent name="$PROJECT_DIR$/_Node/Deployment" />
+      <recent name="$PROJECT_DIR$/_legacy_docker/deployment" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_legacy_docker/Tutorials" />
       <recent name="$PROJECT_DIR$/_legacy_docker/Tutorials/" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers" />
-      <recent name="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers" />
-      <recent name="$PROJECT_DIR$/_rails/Tutorials" />
-      <recent name="$PROJECT_DIR$/_Node/Tutorials" />
-      <recent name="$PROJECT_DIR$/_maestro/Tutorials" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -553,17 +335,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -740,11 +511,12 @@
       <updated>1503335157443</updated>
       <workItem from="1503335161564" duration="724000" />
       <workItem from="1503336749534" duration="672000" />
+      <workItem from="1503397063718" duration="1013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1396000" />
+    <option name="totallyTimeSpent" value="2409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -754,19 +526,19 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -780,83 +552,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-01-21-docker-troubleshooting.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-09-26-multi-region-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1900-09-26-multi-region-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1900-09-26-multi-region-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-01-21-docker-troubleshooting.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -961,6 +656,345 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-01-21-docker-troubleshooting.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-09-26-multi-region-stack.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1900-09-26-multi-region-stack.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1900-09-26-multi-region-stack.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-01-21-docker-troubleshooting.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-09-26-multi-region-stack.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1900-09-26-multi-region-stack.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1900-09-26-multi-region-stack.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="330">
+            <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/deployment/building-a-manifest-file.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Deployment/building-a-manifest-file.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="443">
+            <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="90" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Node/Deployment/building-a-manifest-file.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/building-a-manifest-file.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/building-a-manifest-file.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_common/Deployment/building-your-classic-stack.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-need.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-needneeded.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-3-define-your-application.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-5-define-deployment-prope.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/building-your-classic-stack.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_common/Deployment/building-your-service.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/building-your-service.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="300">
+            <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
             <folding />
           </first_editor>
           <second_editor />

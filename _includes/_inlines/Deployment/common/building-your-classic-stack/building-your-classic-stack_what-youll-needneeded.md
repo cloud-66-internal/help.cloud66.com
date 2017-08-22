@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-#*		[What you'll need](#needed)
+*		[What you'll need](#needed)
 *		[Step 1: Build your stack](#1)
 *		[Step 2: Access your Git repository](#2)
 *		[Step 3: Define your application properties](#3)

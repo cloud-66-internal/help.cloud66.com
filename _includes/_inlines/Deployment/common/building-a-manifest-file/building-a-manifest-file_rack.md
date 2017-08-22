@@ -20,9 +20,7 @@ A rack application type in the manifest file gives you fine control over things 
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git  submodules  from being pulled during a build. 
 ## Important
 
-In order to use a vpc_id, you must provide subnet_id fo
-
-r all servers in your stack.
+In order to use a vpc_id, you must provide subnet_id for all servers in your stack.
 ```
 production:
     rack:
