@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-#There are several options to consider when dealing with the infrastructure of a multi-region stack. The most challenging part is related to the application - the infrastructure usually caters for how the application is designed to deal with scalability.
+There are several options to consider when dealing with the infrastructure of a multi-region stack. The most challenging part is related to the application - the infrastructure usually caters for how the application is designed to deal with scalability.
 
 When it comes to multi-region servers, having a load balancer that distributes traffic between multiple geographical regions is the easy part and can be setup with [CustomConfig for HAProxy](http://help.cloud66.com/web-server/haproxy). However, the big challenge is how to deal with data.
 

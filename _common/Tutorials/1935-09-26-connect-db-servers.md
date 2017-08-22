@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 1935-09-26-connect-db-servers
+title: How to connect to your database servers
 categories: Tutorials
 lead: ""
 legacy: false

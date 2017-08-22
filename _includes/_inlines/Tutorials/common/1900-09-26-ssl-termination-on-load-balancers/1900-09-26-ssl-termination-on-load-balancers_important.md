@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-### Important
+## Important
 
 Ensure that the certificate is valid: current date must be between the certificate’s start and end date. Certificate keys also should not be password protected
 
@@ -14,7 +14,7 @@ Through the [AWS ELB command line interface](http://aws.amazon.com/developertool
 
 
 
-{%include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md %}
+{%include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-1.md %}
 
 
 
@@ -23,7 +23,7 @@ Through the [AWS ELB command line interface](http://aws.amazon.com/developertool
 
 
 
-{%include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md %}
+{%include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-2.md %}
 
 
 
@@ -32,7 +32,7 @@ Through the [AWS ELB command line interface](http://aws.amazon.com/developertool
 
 
 
-{%include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md %}
+{%include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-3.md %}
 
 
 
@@ -41,7 +41,7 @@ Through the [AWS ELB command line interface](http://aws.amazon.com/developertool
 
 
 
-{%include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important.md %}
+{%include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-4.md %}
 
 
 

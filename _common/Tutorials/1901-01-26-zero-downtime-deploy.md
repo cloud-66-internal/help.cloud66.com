@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 1901-01-26-zero-downtime-deploy
+title: Zero-downtime deployments
 categories: Tutorials
 lead: ""
 legacy: false

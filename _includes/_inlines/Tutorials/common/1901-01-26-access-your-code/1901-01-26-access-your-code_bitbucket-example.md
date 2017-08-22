@@ -8,6 +8,4 @@
 
 Once this is done, use a Git URL in the following format in the Cloud 66 UI:
 
-`git@bitbucket.org:
-/
-.git`
+`git@bitbucket.org:<username>/<repository>.git`

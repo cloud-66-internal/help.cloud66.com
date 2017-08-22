@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 1900-10-10-nginx-ssl-ciphers
+title: Strong SSL Security on nginx
 categories: Tutorials
 lead: ""
 legacy: false

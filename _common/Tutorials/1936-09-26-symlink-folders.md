@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 1936-09-26-symlink-folders
+title: Create symbolic links in Ubuntu
 categories: Tutorials
 lead: ""
 legacy: false
