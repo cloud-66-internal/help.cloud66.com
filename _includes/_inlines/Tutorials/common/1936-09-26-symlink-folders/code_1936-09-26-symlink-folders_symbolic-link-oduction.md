@@ -1,7 +1,6 @@
 <!-- layout:code post: 1936-09-26-symlink-folders_symbolic-link -->
 
 ```
-
 production:
     after_symlink:
       - source: /.cloud66/my_script.sh
@@ -11,5 +10,4 @@ production:
         sudo: true
         apply_during: all
         run_on: all_servers
-
 ```

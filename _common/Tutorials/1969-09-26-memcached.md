@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 1969-09-26-memcached
+title: Memcached
 categories: Tutorials
 lead: ""
 legacy: false

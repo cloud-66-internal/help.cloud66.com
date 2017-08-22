@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 1920-09-26-change-psql-directory
+title: How to change the data directory for PostgreSQL
 categories: Tutorials
 lead: ""
 legacy: false

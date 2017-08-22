@@ -3,7 +3,7 @@
 
 ## Test your WebSocket servers
 
-To test your WebSocket servers, create a `.html` file with the code below, make sure to replace *<your_address>* with your own LB IP address and finally, open it in a web browser.
+To test your WebSocket servers, create a `.html` file with the code below, make sure to replace *\<your_address\>* with your own LB IP address and finally, open it in a web browser.
 
 
 

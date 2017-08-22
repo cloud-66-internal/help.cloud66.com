@@ -1,11 +1,10 @@
 <!-- layout:code post: 1925-09-26-websocket-support_test-your-websocket-server -->
 
 ```
-
-&#60;html&#62;
-  &#60;head&#62;
-    &#60;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"&#62;&#60;/script&#62;
-      &#60;script&#62;
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+      <script>
       $(document).ready(function(){
         function debug( str ) {
           $("#debug").append( str );
@@ -23,12 +22,11 @@
           ws.send("hello server");
         };
       });
-    &#60;/script&#62;
-  &#60;/head&#62;
-  &#60;body&#62;
-    &#60;div id="debug"&#62;&#60;/div&#62;
-    &#60;div id="msg"&#62;&#60;/div&#62;
-  &#60;/body&#62;
-&#60;/html&#62;
-
+    </script>
+  </head>
+  <body>
+    <div id="debug"></div>
+    <div id="msg"></div>
+  </body>
+</html>
 ```

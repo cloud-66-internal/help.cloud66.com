@@ -8,7 +8,5 @@
 
 Once this is done, use a Git URL in the following format in the Cloud 66 UI:
 
-`git@github.com:
-/
-.git`
+`git@github.com:<username>/<repository>.git`
 

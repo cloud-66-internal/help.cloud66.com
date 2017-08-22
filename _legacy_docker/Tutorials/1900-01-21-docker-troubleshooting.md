@@ -4,7 +4,7 @@ template: one-col
 title: Docker container troubleshooting
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}
