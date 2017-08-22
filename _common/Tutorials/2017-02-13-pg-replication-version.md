@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2044-02-13-pg-replication-version
+title: Issues replicating data between two versions of PostgreSQL
 categories: Tutorials
 lead: ""
 legacy: false

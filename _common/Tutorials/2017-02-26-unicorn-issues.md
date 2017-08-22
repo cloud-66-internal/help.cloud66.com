@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2040-02-26-unicorn-issues
+title: Unicorn deployment issues
 categories: Tutorials
 lead: ""
 legacy: false

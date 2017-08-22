@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-#A not unusual issue with Unicorn is that redeployments don't reflect your code changes. As a background on this, when you redeploy your stack, we send a USR2 signal to Unicorn which tells it to:
+A not unusual issue with Unicorn is that redeployments don't reflect your code changes. As a background on this, when you redeploy your stack, we send a USR2 signal to Unicorn which tells it to:
 
 1.  Fire up a new master in parallel
 2.  Fire up new worker processes under the new master
@@ -10,7 +10,7 @@
 
 This mechanism allows for the zero-downtime deployments. However, if for some reason the new master or new workers can't start then the old master doesn't kill itself (in an attempt to keep the existing service running). You can verify this by issuing the following command:
 
-`watch -n 5 'echo UNICORN:; ps aux | grep [u]nicor;'`
+	watch -n 5 'echo UNICORN:; ps aux | grep [u]nicor;'
 
 This will list the processes run by Unicorn, refreshing every 5 seconds to help you see any updates.
 

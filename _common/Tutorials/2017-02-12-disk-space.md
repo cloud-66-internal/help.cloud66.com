@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2043-02-12-disk-space
+title: Troubleshooting disk space issues
 categories: Tutorials
 lead: ""
 legacy: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2015-07-08-Setting-up-custom-livelogs
+title: Setting up custom LiveLog files
 categories: Tutorials
 lead: ""
 legacy: false

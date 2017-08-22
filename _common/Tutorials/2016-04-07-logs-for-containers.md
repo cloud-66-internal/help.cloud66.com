@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2016-04-07-logs-for-containers
+title: Managing Logs For Containers
 categories: Tutorials
 lead: ""
 legacy: false

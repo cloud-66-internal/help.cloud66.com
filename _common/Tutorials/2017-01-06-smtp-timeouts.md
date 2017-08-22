@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2038-11-06-smtp-timeouts
+title: SMTP timeouts on Amazon AWS EC2
 categories: Tutorials
 lead: ""
 legacy: false

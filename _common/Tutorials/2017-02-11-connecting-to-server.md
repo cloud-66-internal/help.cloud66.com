@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2042-02-11-connecting-to-server
+title: Troubleshooting issues connecting to your server
 categories: Tutorials
 lead: ""
 legacy: false

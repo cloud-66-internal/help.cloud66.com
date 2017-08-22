@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2041-01-01-agent-communication-is
+title: Agent communication issue
 categories: Tutorials
 lead: ""
 legacy: false

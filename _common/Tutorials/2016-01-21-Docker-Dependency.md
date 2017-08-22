@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2016-01-21-Docker-Dependency
+title: Service Dependency
 categories: Tutorials
 lead: ""
 legacy: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2014-09-26-uninstall-mysql
+title: Uninstalling MySQL
 categories: Tutorials
 lead: ""
 legacy: false

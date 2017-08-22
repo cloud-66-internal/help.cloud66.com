@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2044-03-12-azure-old-portal
+title: How to add management certificates in Azure new portal
 categories: Tutorials
 lead: ""
 legacy: false

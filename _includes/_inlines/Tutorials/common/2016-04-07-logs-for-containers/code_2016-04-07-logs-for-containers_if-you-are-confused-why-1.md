@@ -4,13 +4,13 @@
 services:
   SERVICE_NAME:
     image: quay.io/cloud66/sample-rails  
-    command: "/bin/sh -c 'rackup -p 3000 > /PATH_TO_LOG_FOLDER/LOG_FILE 2>&1'"
+    command: rackup -p 3000             
     build_command: rake db:migrate
     deploy_command: rake db:migrate
+    ports: 
     - container: 3000
       http: 80
       https: 443       
-    log_folder: /PATH_TO_LOG_FOLDER
 databases:
-  - "mysql"
+  - "mysq
 ```

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2015-09-26-memory-usage-issues
+title: Memory usage issues
 categories: Tutorials
 lead: ""
 legacy: false

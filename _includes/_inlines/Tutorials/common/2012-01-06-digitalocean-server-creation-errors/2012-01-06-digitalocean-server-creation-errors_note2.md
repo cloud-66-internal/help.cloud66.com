@@ -3,8 +3,7 @@
 
 ### Note
 
-Remember to manually remove any old servers via the DigitalOcean UI that were abandoned due to previously failed deployments
-
+Please contact Cloud 66 support if you continually receive DigitalOcean deployment errors via Cloud 66 but you are able to create the server of the same datacenter/size manually via the DigitalOcean UI.
 
 
 

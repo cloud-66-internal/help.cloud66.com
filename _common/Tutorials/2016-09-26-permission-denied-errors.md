@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2016-09-26-permission-denied-errors
+title: Permission errors during deployment
 categories: Tutorials
 lead: ""
 legacy: false

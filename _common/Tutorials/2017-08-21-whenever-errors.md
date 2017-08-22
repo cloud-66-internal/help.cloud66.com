@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2040-09-26-whenever-errors
+title: Whenever cron errors
 categories: Tutorials
 lead: ""
 legacy: false

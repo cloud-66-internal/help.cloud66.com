@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2016-04-13-newrelic-deploy-hooks-docker
+title: NewRelic deploy hooks for Docker
 categories: Tutorials
 lead: ""
 legacy: false

@@ -1,13 +1,13 @@
 <!-- post: -->
 
 
-#If you have a docker stack but your services don't follow the dependencies you've defined, this article is probably for you.
+If you have a docker stack but your services don't follow the dependencies you've defined, this article is probably for you.
 
 Imagine you have two services (I've used two for simplicity) called `web` and `api`; `web` needs `api` to be up before it starts up. Although, you've defined all the dependencies (Note the `requires` line under `web` service), you are still not getting the result you need (`web` doesn't start after `api`).
 
 
 
-{%include _inlines/Tutorials/common/2016-01-21-Docker-Dependency/code_2016-01-21-docker-dependency_if-you-have-a-docker-stac.md %}
+{%include _inlines/Tutorials/common/2016-01-21-Docker-Dependency/code_2016-01-21-docker-dependency_if-you-have-a-docker-stac-1.md %}
 
 
 
