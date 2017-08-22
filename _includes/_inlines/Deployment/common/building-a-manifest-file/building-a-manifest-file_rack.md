@@ -16,11 +16,27 @@ A rack application type in the manifest file gives you fine control over things 
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your stack.  
+     -  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
+- **include_submodules** (Optional, default is true): Set this to false to exclude any Git  submodules  from being pulled during a build. 
+## Important
 
+In order to use a vpc_id, you must provide subnet_id fo
 
- Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers
-
-
-
-
+r all servers in your stack.
+```
+production:
+    rack:
+        configuration:
+            ruby_version: 1.9.3
+            do_initial_db_schema_load: false
+            reserved_server_memory: 0 #default value
+            passenger_process_memory: 200 #default value
+            locked_passenger_version: 4.0.59
+            activeprotect:
+                whitelist: 123.123.123.123,234.234.234.234
+            vpc_id: vpc-64872001
+            root_disk_size: 100
+            root_disk_type: ssd
+            nameservers: ['8.8.8.8', '8.8.4.4']
+```
 
