@@ -5,7 +5,7 @@ title: Nginx basic authorization
 categories: Tutorials
 lead: ""
 legacy: false
-
+change: true
 ---
 {% assign product = "common" %}
 

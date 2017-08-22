@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 2012-01-09-nginx-redirect
+title: Nginx Redirect
 categories: Tutorials
 lead: ""
 legacy: false
