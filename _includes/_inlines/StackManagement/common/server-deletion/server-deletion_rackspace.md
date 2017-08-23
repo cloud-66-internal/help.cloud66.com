@@ -1,6 +1,6 @@
 <!-- post: -->
 
 
-###Rackspace
+### Rackspace
 `Deleted:`  Servers, Load Balancers, Block storage volumes
 

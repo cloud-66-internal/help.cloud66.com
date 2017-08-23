@@ -9,8 +9,9 @@ To restart your server, it is recommended that you [SSH to your server](/managin
 
 
 
-{%include _inlines/StackManagement/common/server-restart-notifications/code_server-restart-notifications_how-do-i-actually-restart.md %}
-
+```
+sudo reboot 
+```
 
 
 

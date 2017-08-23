@@ -1,6 +1,6 @@
 <!-- post: -->
 
 
-###AWS
+### AWS
 `Deleted:` Instances, Load Balancers, Security Groups, Key Pairs
 

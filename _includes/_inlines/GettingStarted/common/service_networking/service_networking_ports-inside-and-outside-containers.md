@@ -9,67 +9,40 @@ Here is an example of default ports used by different programming frameworks or 
 
 
 
-  
-
-    
-
-      
-Application
-
-      
-Default Port
-
-    
-
-  
-
-  
-
-    
-
-Rack (webrick)
-
-3000
-
-
-    
-
-Rack (unicorn, thin, puma)
-
-9292
-
-
-    
-
-Node (Express)
-
-3000
-
-
-    
-
-Java (Play)
-
-9000
-
-
-    
-
-RethinkDB
-
-8080
-
-
-    
-
-InfluxDB
-
-8083, 8086, 8090, 8099
-
-
-  
-
-
+  <table class="table table-bordered table-striped"> 
+     <thead> 
+      <tr> 
+       <th> Application </th> 
+       <th> Default Port </th> 
+      </tr> 
+     </thead> 
+     <tbody> 
+      <tr> 
+       <td> Rack (webrick) </td> 
+       <td> 3000 </td> 
+      </tr> 
+      <tr> 
+       <td> Rack (unicorn, thin, puma) </td> 
+       <td> 9292 </td> 
+      </tr> 
+      <tr> 
+       <td> Node (Express) </td> 
+       <td> 3000 </td> 
+      </tr> 
+      <tr> 
+       <td> Java (Play) </td> 
+       <td> 9000 </td> 
+      </tr> 
+      <tr> 
+       <td> RethinkDB </td> 
+       <td> 8080 </td> 
+      </tr> 
+      <tr> 
+       <td> InfluxDB </td> 
+       <td> 8083, 8086, 8090, 8099 </td> 
+      </tr> 
+     </tbody> 
+    </table>
 
 
 From the outside world (ie Internet) all of these applications (except for the DBs) listen to the normal HTTP (80) and HTTPS (443) ports so the site visitors don't need to enter port number in their browsers.

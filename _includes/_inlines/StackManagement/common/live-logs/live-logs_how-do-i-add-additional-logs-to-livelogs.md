@@ -15,10 +15,12 @@ You can add your own custom paths to this by using a [manifest files](/building-
 See the example below to add custom log files to all Rails servers: 
 
 
-
-{%include _inlines/StackManagement/common/live-logs/code_live-logs_how-do-i-add-additional-logs-to-livelogs-od.md %}
-
-
+```
+production:    
+    rails:
+        configuration:
+            custom_log_files: ["/my_special_logs/my_log_file"]  
+```
 
 
 You can also have multiple custom log files defined for different server roles; for instance see the example below to add custom log files to all Docker servers with different custom log files for all MySQL servers (on the same stack)

@@ -12,11 +12,7 @@
 *   [Passenger](#passenger)
 *   [Docker and Weave](#docker)
 *   [Update Packages](#packages)
-    
-
-    
-
-        [About manual upgrades](#manual)
+*   [About manual upgrades](#manual)
     
 
 

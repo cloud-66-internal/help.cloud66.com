@@ -1,6 +1,6 @@
 <!-- post: -->
 
 
-###Linode
+### Linode
 `Deleted:` Servers, NodeBalancers
 

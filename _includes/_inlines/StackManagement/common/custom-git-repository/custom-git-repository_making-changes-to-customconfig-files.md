@@ -7,8 +7,7 @@ To make a change to a CustomConfig file you need to first clone the stack's Cust
 
 
 
-{%include _inlines/StackManagement/common/custom-git-repository/code_custom-git-repository_making-changes-to-customconfig-f.md %}
-
+`$ git clone git@git1.cloud66.com:warmhearted-wondrous-tiger-9262.git`
 
 
 
