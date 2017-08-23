@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-## About Deployment Authorisation
+## About Deployment authorization
 
 For docker stacks where you want additional control over deployment authorizations, you can now go to the stack settings page an choose a deployment lockdown strategy. There are currently three deployment strategies available:
 

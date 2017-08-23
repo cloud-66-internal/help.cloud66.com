@@ -7,6 +7,9 @@ Cloud 66 supports DigitalOcean API v2, which uses OAuth to authenticate requests
 
 Upon clicking the _Authorize_ button, you will be redirected to DigitalOcean to allow Cloud 66 to use your account. Once confirmed you will be redirected back to Cloud 66, where you can deploy your stack into DigitalOcean.
 
+## Notice
+
+If you are upgrading your keys from API v1 to v2, visit your Account Cloud keys page and edit your existing cloud key to authorize it with DigitalOcean. You need to be the account owner in order to update these credentials.
 
 
 

@@ -1,3 +1,4 @@
+
 <!-- post: -->
 
 
@@ -9,8 +10,9 @@ First you need to define a gateway:
 
 
 
-{%include _inlines/Deployment/common/deployment-gateway/code_deployment-gateway_how-to-deploy-your-stack-behind-the.md %}
-
+```
+$ cx gateways add --name aws_bastion --address 1.1.1.1  --username ec2-user  --private-ip 2.2.2.2
+```
 
 
 
@@ -18,8 +20,12 @@ In order to use this gateway for a stack deployment, you need to first specify i
 
 
 
-{%include _inlines/Deployment/common/deployment-gateway/code_deployment-gateway_how-to-deploy-your-stack-behind-the.md %}
-
+```
+production:
+   	gateway:
+   	    name: aws_bastion
+   	    username: ec2-user
+```
 
 
 
@@ -27,8 +33,9 @@ and then make it available before you start the deployment:
 
 
 
-{%include _inlines/Deployment/common/deployment-gateway/code_deployment-gateway_how-to-deploy-your-stack-behind-the.md %}
-
+```
+$ cx gateways open --name aws_bastion --key /tmp/gateway.pem --ttl 1h
+```
 
 
 

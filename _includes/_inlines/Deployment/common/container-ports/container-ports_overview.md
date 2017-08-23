@@ -9,6 +9,8 @@ In a Cloud 66 for Docker stack, your services run inside containers. For this se
 
 This is not limited to HTTP or web traffic. The same concepts apply if your container serves non-HTTP traffic (like web sockets, DB containers or custom TCP / UDP traffic).
 
+## Note
 
+In this article, outside world is used for any client of your service that's not inside the container. This includes any other services on your other stacks.
 
 

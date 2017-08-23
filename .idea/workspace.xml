@@ -2,17 +2,211 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3defac32-9469-4ff6-bc42-582069e8ce78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/building-a-manifest-file.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/building-a-manifest-file.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/building-your-service.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/building-a-manifest-file.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/building-a-manifest-file.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/building-your-classic-stack.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/cloud-aws.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/cloud-azure.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/cloud-clouda.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/cloud-deployment.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/cloud-do.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/cloud-gce.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/cloud-linode.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/cloud-packet.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/cloud-rackspace.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/cloud66-starter.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/configure-dns.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/container-ports.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/deploy-hooks.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/deployment-gateway.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/deployment-history.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/easy-deploy-repos.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/getting-started-with-manifest-files.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/multi-tenancy.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/nginx.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/parallel-deployment.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/redeployment-hook.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/registered-servers.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/reserved-tags.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/server-ip-addresses.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Deployment/service-network-configuration.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/cloud-aws.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/cloud-azure.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/cloud-clouda.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/cloud-deployment.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/cloud-do.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/cloud-gce.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/cloud-linode.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/cloud-packet.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/cloud-rackspace.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/configure-dns.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/container-ports.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/deploy-hooks.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/deploy-profiles.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/deployment-authorisation.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/deployment-gateway.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/deployment-history.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/docker-introduction.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/docker-service-configuration.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/easy-deploy-repos.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/getting-started-with-manifest-files.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/multi-tenancy.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/nginx.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/parallel-deployment.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/redeployment-hook.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/registered-servers.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/reserved-tags.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/server-ip-addresses.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/service-network-configuration.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Deployment/stack-definition.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_use-an-inline-script-deploy-hook.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/env-vars_auto-generate-variables.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/building-your-service.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/cloud-aws.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/cloud-azure.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/cloud-clouda.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/cloud-deployment.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/cloud-do.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/cloud-gce.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/cloud-linode.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/cloud-packet.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/cloud-rackspace.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/configure-dns.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/container-ports.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/deploy-hooks.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/deploy-profiles.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/deployment-authorisation.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/deployment-gateway.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/deployment-history.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/docker-introduction.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/docker-service-configuration.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/easy-deploy-repos.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/getting-started-with-manifest-files.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/multi-tenancy.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/nginx.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/parallel-deployment.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/redeployment-hook.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/registered-servers.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/reserved-tags.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/server-ip-addresses.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/deployment/service-network-configuration.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/cloud-aws.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/cloud-azure.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/cloud-clouda.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/cloud-do.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/cloud-gce.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/cloud-linode.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/cloud-packet.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/cloud-rackspace.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/configure-dns.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/container-ports.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/deploy-hooks.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/deployment-gateway.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/deployment-history.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/docker-introduction.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/docker-service-configuration.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/easy-deploy-repos.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/getting-started-with-manifest-files.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/multi-tenancy.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/nginx.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/parallel-deployment.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/redeployment-hook.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/registered-servers.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/reserved-tags.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/server-ip-addresses.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Deployment/service-network-configuration.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/cloud-aws.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/cloud-azure.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/cloud-clouda.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/cloud-deployment.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/cloud-do.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/cloud-gce.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/cloud-linode.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/cloud-packet.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/cloud-rackspace.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/cloud66-starter.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/configure-dns.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/container-ports.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/deploy-hooks.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/deployment-gateway.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/deployment-history.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/easy-deploy-repos.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/getting-started-with-manifest-files.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/multi-tenancy.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/nginx.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/parallel-deployment.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/proc-files.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/redeployment-hook.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/registered-servers.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/reserved-tags.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/server-ip-addresses.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/deployment/service-network-configuration.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-3-define-your-application.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-3-define-your-application.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-5-define-deployment-prope.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-5-define-deployment-prope.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-needneeded.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-needneeded.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_Skycap/Deployment/building-your-service.md" afterPath="$PROJECT_DIR$/_Skycap/Deployment/building-your-service.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Deployment/service-network-configuration.md" afterPath="$PROJECT_DIR$/_common/Deployment/service-network-configuration.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_build-command-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_build-command-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_build-root-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_build-root-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_command-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_command-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_deploy-command-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_deploy-command-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_dockerfile-path-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_dockerfile-path-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_git-branch-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_git-branch-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_git-url-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_git-url-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3-4.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3-4.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/cloud-aws/cloud-aws_contents.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/cloud-aws/cloud-aws_contents.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/cloud-azure/cloud-azure_generating-a-management-certificate.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/cloud-azure/cloud-azure_generating-a-management-certificate.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/cloud-do/cloud-do_authorise-cloud-66-to-your-digitalocean.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/cloud-do/cloud-do_authorise-cloud-66-to-your-digitalocean.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/container-ports/container-ports_overview.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/container-ports/container-ports_overview.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/container-ports/container-ports_ports-inside-and-outside-containers.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/container-ports/container-ports_ports-inside-and-outside-containers.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-fields.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-fields.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-points.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-points.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-script-deploy-hook-only-for-rails.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-script-deploy-hook-only-for-rails.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deploy-profiles/deploy-profiles_contents.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deploy-profiles/deploy-profiles_contents.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deployment-authorisation/deployment-authorisation_about-deployment-authorisation.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deployment-authorisation/deployment-authorisation_about-deployment-authorisation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deployment-authorisation/deployment-authorisation_contents.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deployment-authorisation/deployment-authorisation_contents.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deployment-gateway/deployment-gateway_how-to-deploy-your-stack-behind-the-gate.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deployment-gateway/deployment-gateway_how-to-deploy-your-stack-behind-the-gate.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deployment-history/deployment-history_deployment-status.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/deployment-history/deployment-history_deployment-status.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/docker-introduction/docker-introduction_ready.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/docker-introduction/docker-introduction_ready.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/docker-service-configuration/docker-service-configuration_database-configurations.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/docker-service-configuration/docker-service-configuration_database-configurations.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/docker-service-configuration/docker-service-configuration_environment-variables.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/docker-service-configuration/docker-service-configuration_environment-variables.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/docker-service-configuration/docker-service-configuration_service-configurations.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/docker-service-configuration/docker-service-configuration_service-configurations.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/env-vars_define-referenced-environment-variable.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/env-vars_define-referenced-environment-variable.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/env-vars_pre-defined-environment-variables.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/env-vars/env-vars_pre-defined-environment-variables.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_contents.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_contents.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_example-1-specifying-a.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_example-1-specifying-a.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_is-my-yaml-valid.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_is-my-yaml-valid.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_boolean-variables.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_boolean-variables.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_custom-nginx-error-page.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_custom-nginx-error-page.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_nginx-configuration.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_nginx-configuration.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_nginx-customconfig-variables.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_nginx-customconfig-variables.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_nginx-worker-configuration.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_nginx-worker-configuration.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/proc-files/proc-files_running-processes-with-unique-identifiers.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/proc-files/proc-files_running-processes-with-unique-identifiers.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/redeployment-hook/redeployment-hook_for-rails.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/redeployment-hook/redeployment-hook_for-rails.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/reserved-tags/reserved-tags_reserved-tags.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/reserved-tags/reserved-tags_reserved-tags.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_advanced-ports.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_advanced-ports.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_contents.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_contents.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_ports.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_ports.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_traffic-matches.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_traffic-matches.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/code_logging_background-processes-log-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/code_logging_background-processes-log-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/code_logging_background-processes-log.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/code_logging_background-processes-log.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/code_logging_web-logs-log.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/code_logging_web-logs-log.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/logging_docker-stacks.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/logging/logging_docker-stacks.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/scaling/code_scaling_docker-services-rvices.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/scaling/code_scaling_docker-services-rvices.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_health.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_health.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-start-signal.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-start-signal.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-stop-sequence.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-stop-sequence.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_requires.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_requires.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_restart-on-deploy.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_restart-on-deploy.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_stop-grace.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_stop-grace.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-resources/service-resources_by-default-docker-services-will-use-as-m.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-resources/service-resources_by-default-docker-services-will-use-as-m.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-storage/service-storage_given-the-ephemeral-nature-of-containers-i.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/service-storage/service-storage_given-the-ephemeral-nature-of-containers-i.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_postgresql-database-psql.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_postgresql-database-psql.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_redis-database-sudormrf.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_redis-database-sudormrf.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_unzip-your-backup-catfiletar.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_unzip-your-backup-catfiletar.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,12 +218,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="building-your-service.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/building-your-service.md">
+      <file leaf-file-name="stack-definition.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/stack-definition.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="300">
-                <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+              <first_editor relative-caret-position="720">
+                <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -39,27 +233,77 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>authoris</find>
+      <find>&lt;p&gt;</find>
+      <find>]=&quot;</find>
+      <find>ENV</find>
+      <find>&amp;#40;</find>
+      <find>&amp;#58;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>authoriz</replace>
+      <replace>:</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md" />
-        <option value="$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-3.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-1.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-2.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md" />
-        <option value="$PROJECT_DIR$/_legacy_docker/deployment/building-a-manifest-file.md" />
-        <option value="$PROJECT_DIR$/_Node/Deployment/building-a-manifest-file.md" />
-        <option value="$PROJECT_DIR$/_rails/deployment/building-a-manifest-file.md" />
-        <option value="$PROJECT_DIR$/_Skycap/Deployment/building-a-manifest-file.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-needneeded.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-3-define-your-application.md" />
-        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-5-define-deployment-prope.md" />
-        <option value="$PROJECT_DIR$/_rails/deployment/building-your-classic-stack.md" />
-        <option value="$PROJECT_DIR$/_Skycap/Deployment/building-your-service.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/multi-tenancy.md" />
+        <option value="$PROJECT_DIR$/_Node/Deployment/multi-tenancy.md" />
+        <option value="$PROJECT_DIR$/_maestro/Deployment/multi-tenancy.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/deployment/multi-tenancy.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_custom-nginx-error-page.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_nginx-configuration.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_nginx-worker-configuration.md" />
+        <option value="$PROJECT_DIR$/_Skycap/Deployment/nginx.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_boolean-variables.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_nginx-customconfig-variables.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/nginx.md" />
+        <option value="$PROJECT_DIR$/_Node/Deployment/nginx.md" />
+        <option value="$PROJECT_DIR$/_maestro/Deployment/nginx.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/deployment/nginx.md" />
+        <option value="$PROJECT_DIR$/_Skycap/Deployment/parallel-deployment.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/parallel-deployment.md" />
+        <option value="$PROJECT_DIR$/_Node/Deployment/parallel-deployment.md" />
+        <option value="$PROJECT_DIR$/_maestro/Deployment/parallel-deployment.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/deployment/parallel-deployment.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/proc-files.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/proc-files/proc-files_running-processes-with-unique-identifiers.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/redeployment-hook.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/redeployment-hook/redeployment-hook_for-rails.md" />
+        <option value="$PROJECT_DIR$/_Node/Deployment/redeployment-hook.md" />
+        <option value="$PROJECT_DIR$/_maestro/Deployment/redeployment-hook.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/deployment/redeployment-hook.md" />
+        <option value="$PROJECT_DIR$/_Skycap/Deployment/redeployment-hook.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/registered-servers.md" />
+        <option value="$PROJECT_DIR$/_Skycap/Deployment/registered-servers.md" />
+        <option value="$PROJECT_DIR$/_Node/Deployment/registered-servers.md" />
+        <option value="$PROJECT_DIR$/_maestro/Deployment/registered-servers.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/deployment/registered-servers.md" />
+        <option value="$PROJECT_DIR$/_Skycap/Deployment/reserved-tags.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/reserved-tags/reserved-tags_reserved-tags.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/reserved-tags.md" />
+        <option value="$PROJECT_DIR$/_Node/Deployment/reserved-tags.md" />
+        <option value="$PROJECT_DIR$/_maestro/Deployment/reserved-tags.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/deployment/reserved-tags.md" />
+        <option value="$PROJECT_DIR$/_Skycap/Deployment/server-ip-addresses.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/server-ip-addresses.md" />
+        <option value="$PROJECT_DIR$/_Node/Deployment/server-ip-addresses.md" />
+        <option value="$PROJECT_DIR$/_maestro/Deployment/server-ip-addresses.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/deployment/server-ip-addresses.md" />
+        <option value="$PROJECT_DIR$/_common/Deployment/service-network-configuration.md" />
+        <option value="$PROJECT_DIR$/_Skycap/Deployment/service-network-configuration.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_contents.md" />
+        <option value="$PROJECT_DIR$/_rails/deployment/service-network-configuration.md" />
+        <option value="$PROJECT_DIR$/_Node/service-network-configuration.md" />
+        <option value="$PROJECT_DIR$/_maestro/Deployment/service-network-configuration.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/deployment/service-network-configuration.md" />
+        <option value="$PROJECT_DIR$/_Skycap/Deployment/stack-definition.md" />
       </list>
     </option>
   </component>
@@ -133,10 +377,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_Skycap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buildgrid" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,12 +552,14 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_Skycap/Deployment" />
-      <recent name="$PROJECT_DIR$/_rails/deployment" />
-      <recent name="$PROJECT_DIR$/_Skycap" />
-      <recent name="$PROJECT_DIR$/_Node/Deployment" />
       <recent name="$PROJECT_DIR$/_legacy_docker/deployment" />
+      <recent name="$PROJECT_DIR$/_maestro/Deployment" />
+      <recent name="$PROJECT_DIR$/_Node" />
+      <recent name="$PROJECT_DIR$/_rails/deployment" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_Node/Deployment" />
+      <recent name="$PROJECT_DIR$/_rails/deployment" />
       <recent name="$PROJECT_DIR$/_legacy_docker/Tutorials" />
       <recent name="$PROJECT_DIR$/_legacy_docker/Tutorials/" />
     </key>
@@ -511,24 +753,24 @@
       <updated>1503335157443</updated>
       <workItem from="1503335161564" duration="724000" />
       <workItem from="1503336749534" duration="672000" />
-      <workItem from="1503397063718" duration="1013000" />
+      <workItem from="1503397063718" duration="17403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2409000" />
+    <option name="totallyTimeSpent" value="18799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23541667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16805555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -552,346 +794,95 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-09-26-multi-region-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1900-09-26-multi-region-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1900-09-26-multi-region-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-3.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-01-21-docker-troubleshooting.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-09-26-multi-region-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1900-09-26-multi-region-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1900-09-26-multi-region-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-01-21-docker-troubleshooting.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1900-09-26-multi-region-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1900-09-26-multi-region-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1900-09-26-multi-region-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-3.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="330">
-            <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/deployment/building-a-manifest-file.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Deployment/building-a-manifest-file.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="443">
-            <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="90" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Deployment/building-a-manifest-file.md">
+    <entry file="file://$PROJECT_DIR$/_maestro/Deployment/multi-tenancy.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
-            <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/deployment/building-a-manifest-file.md">
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/deployment/multi-tenancy.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_custom-nginx-error-page.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="294" lean-forward="false" selection-start-line="8" selection-start-column="294" selection-end-line="8" selection-end-column="294" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_nginx-configuration.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2910">
+            <caret line="194" column="11" lean-forward="false" selection-start-line="194" selection-start-column="11" selection-end-line="194" selection-end-column="11" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_nginx-worker-configuration.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="96">
+            <caret line="671" column="17" lean-forward="true" selection-start-line="671" selection-start-column="17" selection-end-line="671" selection-end-column="17" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_nginx-customconfig-variables.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="771">
+            <caret line="162" column="11" lean-forward="false" selection-start-line="162" selection-start-column="11" selection-end-line="162" selection-end-column="11" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/nginx/nginx_boolean-variables.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="681">
+            <caret line="188" column="11" lean-forward="false" selection-start-line="188" selection-start-column="11" selection-end-line="188" selection-end-column="11" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/nginx.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="285">
+            <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/nginx.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
@@ -902,7 +893,194 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/building-a-manifest-file.md">
+    <entry file="file://$PROJECT_DIR$/_Node/Deployment/nginx.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Deployment/nginx.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/deployment/nginx.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/parallel-deployment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/parallel-deployment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="195">
+            <caret line="13" column="88" lean-forward="false" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/parallel-deployment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Node/Deployment/parallel-deployment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Deployment/parallel-deployment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/deployment/parallel-deployment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/proc-files/proc-files_running-processes-with-unique-identifiers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/proc-files.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="97" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_common/Deployment/proc-files.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/redeployment-hook/redeployment-hook_for-rails.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/redeployment-hook.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="240">
+            <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Node/Deployment/redeployment-hook.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Deployment/redeployment-hook.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/deployment/redeployment-hook.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/redeployment-hook.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
@@ -913,88 +1091,264 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_common/Deployment/building-your-classic-stack.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-need.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-needneeded.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-3-define-your-application.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-5-define-deployment-prope.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/deployment/building-your-classic-stack.md">
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/registered-servers.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
-            <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_common/Deployment/building-your-service.md">
+    <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/registered-servers.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/building-your-service.md">
+    <entry file="file://$PROJECT_DIR$/_Node/Deployment/registered-servers.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Deployment/registered-servers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/deployment/registered-servers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/reserved-tags/reserved-tags_reserved-tags.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="330">
+            <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/reserved-tags.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="195">
+            <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="79" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/reserved-tags.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Node/Deployment/reserved-tags.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Deployment/reserved-tags.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/deployment/reserved-tags.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/server-ip-addresses.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/server-ip-addresses.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Node/Deployment/server-ip-addresses.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Deployment/server-ip-addresses.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/deployment/server-ip-addresses.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_common/Deployment/service-network-configuration.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="330">
+            <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Deployment/common/service-network-configuration/service-network-configuration_contents.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/service-network-configuration.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="330">
+            <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/deployment/service-network-configuration.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Node/Deployment/service-network-configuration.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/Deployment/service-network-configuration.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/deployment/service-network-configuration.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Skycap/Deployment/stack-definition.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="720">
+            <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

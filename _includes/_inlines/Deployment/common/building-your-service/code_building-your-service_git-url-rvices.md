@@ -3,7 +3,7 @@
 ```
 
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         git_url: git@github.com:pkallberg/node-js-app.git
 
 ```

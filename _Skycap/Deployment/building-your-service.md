@@ -7,7 +7,7 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "common" %}
+{% assign product = "skycap" %}
 
 {% include _inlines/Deployment/common/building-your-service/building-your-service_contents.md %}
 {% include _inlines/Deployment/common/building-your-service/building-your-service_pull-code-from-git.md %}

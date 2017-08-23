@@ -7,2370 +7,706 @@ The following table specifies the number of workers configured for your Nginx ba
 
 
 
-  
-
-    
-
-      
-
-        Cloud provider  
-
-      
-
-      
-
-        Instance type
-      
-
-      
-
-        Number of Workers
-      
-
-    
-
-  
-
-  
-
-    
-
-      
-
-        **AWS** 
--
-
-      
-
-      
-
-
-      
-
-
-    
-
-    
-
-      
-
-
-      
-
-        t1.micro
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        m1.small
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        m1.medium
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        m1.large
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        m1.xlarge
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        m3.medium
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        m3.large
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        m3.xlarge
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        m3.2xlarge
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        m2.xlarge
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        m2.2xlarge
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        m2.4xlarge
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        c1.medium
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        c1.xlarge
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        c3.large
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        c3.xlarge
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        c3.2xlarge
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        c3.4xlarge
-      
-
-      
-
-        16
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        c3.8xlarge
-      
-
-      
-
-        32
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        cc2.8xlarge
-      
-
-      
-
-        88
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        i2.xlarge
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        i2.2xlarge
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        i2.4xlarge
-      
-
-      
-
-        16
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        i2.8xlarge
-      
-
-      
-
-        32
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        cr1.8xlarge
-      
-
-      
-
-        88
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        hi1.4xlarge
-      
-
-      
-
-        35
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        hs1.8xlarge
-      
-
-      
-
-        35
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        cg1.4xlarge
-      
-
-      
-
-        33
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        g2.2xlarge
-      
-
-      
-
-        8
-      
-
-    
-
-  
-
-  
-
-    
-
-      
-
-        **DigitalOcean** 
--
-
-      
-
-      
-
-
-      
-
-
-    
-
-    
-
-      
-
-
-      
-
-        512MB - 1 CPU
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        1GB - 1 CPU
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        2GB - 2 CPU
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        4GB - 2 CPU
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        8GB - 4 CPU
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        16GB - 8 CPU
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        32GB - 12 CPU
-      
-
-      
-
-        12
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        48GB - 16 CPU
-      
-
-      
-
-        16
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        64GB - 20 CPU
-      
-
-      
-
-        20
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        96GB - 24 CPU
-      
-
-      
-
-        24
-      
-
-    
-
-  
-
-  
-
-    
-
-      
-
-        **GCE** 
--
-
-      
-
-      
-
-
-      
-
-
-    
-
-    
-
-      
-
-
-      
-
-        n1-standard-1
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        n1-standard-2
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        n1-standard-4
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        n1-standard-8
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        n1-standard-16
-      
-
-      
-
-        16
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        n1-highmem-2
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        n1-highmem-4
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        n1-highmem-8
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        n1-highmem-16
-      
-
-      
-
-        16
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        n1-highcpu-2
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        n1-highcpu-4
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        n1-highcpu-8
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        n1-highcpu-16
-      
-
-      
-
-        16
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        f1-micro
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        g1-small
-      
-
-      
-
-        1
-      
-
-    
-
-  
-
-  
-
-    
-
-      
-
-        **Linode** 
--
-
-      
-
-      
-
-
-      
-
-
-    
-
-    
-
-      
-
-
-      
-
-        Linode 1GB
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        Linode 2GB
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        Linode 4GB
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        Linode 8GB
-      
-
-      
-
-        6
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        Linode 16GB
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        Linode 32GB
-      
-
-      
-
-        12
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        Linode 48GB
-      
-
-      
-
-        16
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        Linode 64GB
-      
-
-      
-
-        20
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        Linode 96GB
-      
-
-      
-
-        20
-      
-
-    
-
-  
-
-  
-
-    
-
-      
-
-        **Microsoft Azure** 
--
-
-      
-
-      
-
-
-      
-
-
-    
-
-    
-
-      
-
-
-      
-
-        ExtraSmall
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        Small
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        Medium
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        Large
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        ExtraLarge
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        A5
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        A6
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        A7
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        A8
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        A9
-      
-
-      
-
-        16
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        STANDARD_D1
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        STANDARD_D2
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        STANDARD_D3
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        STANDARD_D4
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        STANDARD_D11
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        STANDARD_D12
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        STANDARD_D13
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        STANDARD_D14
-      
-
-      
-
-        16
-      
-
-    
-
-  
-
-  
-
-    
-
-      
-
-        **Rackspace** 
--
-
-      
-
-      
-
-
-      
-
-
-    
-
-    
-
-      
-
-
-      
-
-        512MB Standard Instance
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        1GB Standard Instance
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        2GB Standard Instance
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        4GB Standard Instance
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        8GB Standard Instance
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        15GB Standard Instance
-      
-
-      
-
-        6
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        30GB Standard Instance
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        3.75 GB Compute v1
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        7.5 GB Compute v1
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        15 GB Compute v1
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        30 GB Compute v1
-      
-
-      
-
-        16
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        60 GB Compute v1
-      
-
-      
-
-        32
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        1 GB General Purpose v1
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        2 GB General Purpose v1
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        4 GB General Purpose v1
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        8 GB General Purpose v1
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        15 GB I/O v1
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        30 GB I/O v1
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        60 GB I/O v1
-      
-
-      
-
-        16
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        90 GB I/O v1
-      
-
-      
-
-        24
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        120 GB I/O v1
-      
-
-      
-
-        32
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        15 GB Memory v1
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        30 GB Memory v1
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        60 GB Memory v1
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        120 GB Memory v1
-      
-
-      
-
-        16
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        240 GB Memory v1
-      
-
-      
-
-        32
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        1 GB Performance
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        2 GB Performance
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        4 GB Performance
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        8 GB Performance
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        15 GB Performance
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        30 GB Performance
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        60 GB Performance
-      
-
-      
-
-        16
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        90 GB Performance
-      
-
-      
-
-        24
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        120 GB Performance
-      
-
-      
-
-        32
-      
-
-    
-
-  
-
-  
-
-    
-
-      
-
-        **CloudA** 
--
-
-      
-
-      
-
-
-      
-
-
-    
-
-    
-
-      
-
-
-      
-
-        512 MB
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        1 GB
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        2 GB
-      
-
-      
-
-        1
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        4 GB
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        8 GB
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        16 GB
-      
-
-      
-
-        6
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        32 GB
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        8 GB - HM
-      
-
-      
-
-        2
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        16 GB - HM
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        32 GB - HM
-      
-
-      
-
-        6
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        4 GB - HC
-      
-
-      
-
-        4
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        8 GB - HC
-      
-
-      
-
-        8
-      
-
-    
-
-    
-
-      
-
-
-      
-
-        16 GB - HC
-      
-
-      
-
-        12
-      
-
-    
-
-  
-
-
-
-
+  <table id="fields" class="table table-bordered table-striped table-small fields"> 
+     <thead valign="top"> 
+      <tr> 
+       <th> Cloud provider<br> </th> 
+       <th> Instance type </th> 
+       <th> Number of Workers </th> 
+      </tr> 
+     </thead> 
+     <tbody> 
+      <tr class="header"> 
+       <td width="25%"> <strong>AWS</strong> <span>-</span> </td> 
+       <td width="40%"></td> 
+       <td width="70%"></td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td width="40%"> t1.micro </td> 
+       <td width="70%"> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> m1.small </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> m1.medium </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> m1.large </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> m1.xlarge </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> m3.medium </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> m3.large </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> m3.xlarge </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> m3.2xlarge </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> m2.xlarge </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> m2.2xlarge </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> m2.4xlarge </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> c1.medium </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> c1.xlarge </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> c3.large </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> c3.xlarge </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> c3.2xlarge </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> c3.4xlarge </td> 
+       <td> 16 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> c3.8xlarge </td> 
+       <td> 32 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> cc2.8xlarge </td> 
+       <td> 88 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> i2.xlarge </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> i2.2xlarge </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> i2.4xlarge </td> 
+       <td> 16 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> i2.8xlarge </td> 
+       <td> 32 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> cr1.8xlarge </td> 
+       <td> 88 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> hi1.4xlarge </td> 
+       <td> 35 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> hs1.8xlarge </td> 
+       <td> 35 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> cg1.4xlarge </td> 
+       <td> 33 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> g2.2xlarge </td> 
+       <td> 8 </td> 
+      </tr> 
+     </tbody> 
+     <tbody> 
+      <tr class="header"> 
+       <td width="25%"> <strong>DigitalOcean</strong> <span>-</span> </td> 
+       <td></td> 
+       <td></td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td width="40%"> 512MB - 1 CPU </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 1GB - 1 CPU </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 2GB - 2 CPU </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 4GB - 2 CPU </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 8GB - 4 CPU </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 16GB - 8 CPU </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 32GB - 12 CPU </td> 
+       <td> 12 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 48GB - 16 CPU </td> 
+       <td> 16 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 64GB - 20 CPU </td> 
+       <td> 20 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 96GB - 24 CPU </td> 
+       <td> 24 </td> 
+      </tr> 
+     </tbody> 
+     <tbody> 
+      <tr class="header"> 
+       <td width="25%"> <strong>GCE</strong> <span>-</span> </td> 
+       <td></td> 
+       <td></td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td width="40%"> n1-standard-1 </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> n1-standard-2 </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> n1-standard-4 </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> n1-standard-8 </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> n1-standard-16 </td> 
+       <td> 16 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> n1-highmem-2 </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> n1-highmem-4 </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> n1-highmem-8 </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> n1-highmem-16 </td> 
+       <td> 16 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> n1-highcpu-2 </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> n1-highcpu-4 </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> n1-highcpu-8 </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> n1-highcpu-16 </td> 
+       <td> 16 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> f1-micro </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> g1-small </td> 
+       <td> 1 </td> 
+      </tr> 
+     </tbody> 
+     <tbody> 
+      <tr class="header"> 
+       <td width="25%"> <strong>Linode</strong> <span>-</span> </td> 
+       <td></td> 
+       <td></td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td width="40%"> Linode 1GB </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> Linode 2GB </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> Linode 4GB </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> Linode 8GB </td> 
+       <td> 6 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> Linode 16GB </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> Linode 32GB </td> 
+       <td> 12 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> Linode 48GB </td> 
+       <td> 16 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> Linode 64GB </td> 
+       <td> 20 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> Linode 96GB </td> 
+       <td> 20 </td> 
+      </tr> 
+     </tbody> 
+     <tbody> 
+      <tr class="header"> 
+       <td width="25%"> <strong>Microsoft Azure</strong> <span>-</span> </td> 
+       <td></td> 
+       <td></td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td width="40%"> ExtraSmall </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> Small </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> Medium </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> Large </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> ExtraLarge </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> A5 </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> A6 </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> A7 </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> A8 </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> A9 </td> 
+       <td> 16 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> STANDARD_D1 </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> STANDARD_D2 </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> STANDARD_D3 </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> STANDARD_D4 </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> STANDARD_D11 </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> STANDARD_D12 </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> STANDARD_D13 </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> STANDARD_D14 </td> 
+       <td> 16 </td> 
+      </tr> 
+     </tbody> 
+     <tbody> 
+      <tr class="header"> 
+       <td width="25%"> <strong>Rackspace</strong> <span>-</span> </td> 
+       <td></td> 
+       <td></td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td width="40%"> 512MB Standard Instance </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 1GB Standard Instance </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 2GB Standard Instance </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 4GB Standard Instance </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 8GB Standard Instance </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 15GB Standard Instance </td> 
+       <td> 6 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 30GB Standard Instance </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 3.75 GB Compute v1 </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 7.5 GB Compute v1 </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 15 GB Compute v1 </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 30 GB Compute v1 </td> 
+       <td> 16 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 60 GB Compute v1 </td> 
+       <td> 32 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 1 GB General Purpose v1 </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 2 GB General Purpose v1 </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 4 GB General Purpose v1 </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 8 GB General Purpose v1 </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 15 GB I/O v1 </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 30 GB I/O v1 </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 60 GB I/O v1 </td> 
+       <td> 16 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 90 GB I/O v1 </td> 
+       <td> 24 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 120 GB I/O v1 </td> 
+       <td> 32 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 15 GB Memory v1 </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 30 GB Memory v1 </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 60 GB Memory v1 </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 120 GB Memory v1 </td> 
+       <td> 16 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 240 GB Memory v1 </td> 
+       <td> 32 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 1 GB Performance </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 2 GB Performance </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 4 GB Performance </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 8 GB Performance </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 15 GB Performance </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 30 GB Performance </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 60 GB Performance </td> 
+       <td> 16 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 90 GB Performance </td> 
+       <td> 24 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 120 GB Performance </td> 
+       <td> 32 </td> 
+      </tr> 
+     </tbody> 
+     <tbody> 
+      <tr class="header"> 
+       <td width="25%"> <strong>CloudA</strong> <span>-</span> </td> 
+       <td></td> 
+       <td></td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td width="40%"> 512 MB </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 1 GB </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 2 GB </td> 
+       <td> 1 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 4 GB </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 8 GB </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 16 GB </td> 
+       <td> 6 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 32 GB </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 8 GB - HM </td> 
+       <td> 2 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 16 GB - HM </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 32 GB - HM </td> 
+       <td> 6 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 4 GB - HC </td> 
+       <td> 4 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 8 GB - HC </td> 
+       <td> 8 </td> 
+      </tr> 
+      <tr> 
+       <td></td> 
+       <td> 16 GB - HC </td> 
+       <td> 12 </td> 
+      </tr> 
+     </tbody> 
+    </table> 

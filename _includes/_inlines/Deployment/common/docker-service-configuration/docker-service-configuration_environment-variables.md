@@ -7,7 +7,7 @@ Any environment variable defined in your stack will be made available within you
 
 {% highlight yaml %}
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         env_vars:
             # Setting an environment variable
             ENV_NAME1: VALUE

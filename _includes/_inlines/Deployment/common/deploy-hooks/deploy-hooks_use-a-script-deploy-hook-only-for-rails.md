@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-## Use a script deploy hook (Only for Rails/Rack stacks)
+## Use an existing script deploy hook (Rails/Node stacks only)
 
 The hook below will copy a file from your repository to your _tmp_ folder and execute it during build.
 

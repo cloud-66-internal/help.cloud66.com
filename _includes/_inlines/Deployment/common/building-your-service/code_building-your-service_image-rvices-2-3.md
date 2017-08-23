@@ -3,7 +3,7 @@
 ```
 
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         image: quay.io/<namespace>/<image_name>:/<tag>
 
 ```

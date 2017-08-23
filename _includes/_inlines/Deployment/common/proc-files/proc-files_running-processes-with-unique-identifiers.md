@@ -8,10 +8,9 @@ To assign a unique identifier to your process (for example with Sidekiq), use th
  notation. For example, your process could look as follows:
 
 
-
-{%include _inlines/Deployment/common/proc-files/code_proc-files_running-processes-with-unique-identifiers-r.md %}
-
-
+```{% raw %}
+worker: bundle exec sidekiq -e production -i {{UNIQUE_INT}}
+```{% endraw %}
 
 
 This integer should be unique across processes, so that multiple processes won't clash, but may not be unique across servers.

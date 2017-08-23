@@ -7,7 +7,7 @@ In some cases, you may want to make sure that a service is only started if anoth
 
 {% highlight yaml %}
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         image: cloud66/sample
         requires:
           - "my_api"    

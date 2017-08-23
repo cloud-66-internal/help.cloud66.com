@@ -3,6 +3,6 @@
 
 ### Contents
 
-*		[About Deployment Authorisation](#about)
+*		[About Deployment Authorization](#about)
 *		[Cloud Lockdown](#lockdown)
 

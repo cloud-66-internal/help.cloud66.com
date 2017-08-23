@@ -8,7 +8,7 @@ Given the ephemeral nature of containers, we recommend you use the `log_folder` 
 
 {% highlight yaml %}
 services:
-    &#60;service_name&#62;:
+    <service_name>:
         log_folder: /var/deploy/app/log
 {% endhighlight %}
 

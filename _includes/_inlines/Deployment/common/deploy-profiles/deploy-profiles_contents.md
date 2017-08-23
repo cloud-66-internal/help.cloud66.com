@@ -3,10 +3,10 @@
 
 ### Contents
 
-*		[About deployment profiles](#about)
-*   [Build / Publish services](#build)
-*   [Deployment Method](#deployment-method)
-*   [Upgrades](#upgrades)
+*   [About deployment profiles](#about)
+    *   [Build / Publish services](#build)
+    *   [Deployment Method](#deployment-method)
+    *   [Upgrades](#upgrades)
             
 
 	

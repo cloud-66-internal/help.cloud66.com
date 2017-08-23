@@ -8,3 +8,6 @@ All Rails/Rack Stacks are based on a Git repository and branch. Pushing code to 
 
 
 
+### Note
+
+In the case where the payload of the commit hook does not contain any branch information (Github and Bitbucket payload formats are supported) then the stack will redeploy without attempting to match branch
