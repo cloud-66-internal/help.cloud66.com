@@ -2,98 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3defac32-9469-4ff6-bc42-582069e8ce78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/backups.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/commands-overview.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/databases.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/download.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/gateway.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/introduction.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/jobs.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/lease.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/login.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/open.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/redeploy.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/run.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/servers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/services.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/settings.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/ssh.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/stacks.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/tail.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/toolbelt-env-vars.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/toolbelt_processes.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/tunnel.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/upload.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Toolbelt/users.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/backups.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/commands-overview.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/databases.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/download.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/gateway.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/introduction.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/jobs.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/lease.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/login.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/open.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/redeploy.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/run.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/servers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/services.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/settings.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/ssh.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/stacks.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/tail.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/toolbelt-env-vars.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/toolbelt_processes.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/tunnel.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/upload.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Toolbelt/users.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/backups.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/commands-overview.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/databases.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/download.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/gateway.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/introduction.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/jobs.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/lease.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/login.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/open.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/redeploy.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/run.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/servers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/services.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/settings.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/ssh.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/stacks.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/tail.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/toolbelt-env-vars.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/toolbelt_processes.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/tunnel.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/upload.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Toolbelt/users.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/backups.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/backups.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/commands-overview.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/commands-overview.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/databases.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/databases.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/download.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/download.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/gateway.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/gateway.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/introduction.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/introduction.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/jobs.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/jobs.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/lease.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/lease.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/login.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/login.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/open.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/open.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/redeploy.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/redeploy.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/run.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/run.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/servers.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/servers.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/services.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/services.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/settings.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/settings.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/ssh.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/ssh.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/stacks.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/stacks.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/tail.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/tail.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/toolbelt-env-vars.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/toolbelt-env-vars.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/toolbelt_processes.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/toolbelt_processes.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/tunnel.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/tunnel.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/upload.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/upload.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Toolbelt/users.md" afterPath="$PROJECT_DIR$/_Node/Toolbelt/users.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh/ssh_contents.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/stack-notifications/stack-notifications_contents.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/ssh-to-server.md" afterPath="$PROJECT_DIR$/_common/StackManagement/ssh-to-server.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/ssh.md" afterPath="$PROJECT_DIR$/_common/StackManagement/ssh.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/StackManagement/stack-notifications.md" afterPath="$PROJECT_DIR$/_common/StackManagement/stack-notifications.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh-to-server/ssh-to-server_contents.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh-to-server/ssh-to-server_contents.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh-to-server/ssh-to-server_manual-shell-access.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh-to-server/ssh-to-server_manual-shell-access.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh-to-server/ssh-to-server_troubleshooting.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh-to-server/ssh-to-server_troubleshooting.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh/ssh_detected-ip-is-different.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh/ssh_detected-ip-is-different.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh/ssh_how-toolbelt-ssh-works.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh/ssh_how-toolbelt-ssh-works.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh/ssh_note.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh/ssh_note.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh/ssh_prompted-for-password.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh/ssh_prompted-for-password.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh/ssh_versbose-mode-ssh.md" afterPath="$PROJECT_DIR$/_includes/_inlines/StackManagement/common/ssh/ssh_versbose-mode-ssh.md" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,58 +25,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="toolbelt_processes_usage-1.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/toolbelt_processes/toolbelt_processes_usage-1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_parameters-1.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/users/users_parameters-1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_parameters-2.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/users/users_parameters-2.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_usage-1.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/users/users_usage-1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="users_usage-2.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/users/users_usage-2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -221,12 +90,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="backups.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="backups.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_maestro/Toolbelt/backups.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
                 <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tunnel_parameters.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/tunnel/tunnel_parameters.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tail_parameters.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/tail/tail_parameters.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="servers_parameters-1.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_parameters-1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="open_parameters.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/open/open_parameters.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="75">
+                <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="12" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -450,6 +371,192 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_inlines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_inlines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Toolbelt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_inlines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Toolbelt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_inlines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Toolbelt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tunnel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_inlines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Toolbelt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_inlines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Toolbelt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_inlines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Toolbelt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="open" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -687,12 +794,12 @@
       <option name="presentableId" value="Default" />
       <updated>1503335157443</updated>
       <workItem from="1503335161564" duration="724000" />
-      <workItem from="1503336749534" duration="11724000" />
+      <workItem from="1503336749534" duration="12213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12448000" />
+    <option name="totallyTimeSpent" value="12937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -728,50 +835,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_example-4.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-3.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-4.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1283,6 +1346,50 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/tunnel/tunnel_parameters.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/tail/tail_parameters.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_parameters-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/open/open_parameters.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="12" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
