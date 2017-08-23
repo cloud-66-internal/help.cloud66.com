@@ -7,7 +7,7 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "legacy_docker" %}
+{% assign product = "node" %}
 
 {% include _inlines/AddOns/common/elasticsearch/elasticsearch_what-is-elasticsearch.md %}
 {% include _inlines/AddOns/common/elasticsearch/elasticsearch_add-elasticearch.md %}
