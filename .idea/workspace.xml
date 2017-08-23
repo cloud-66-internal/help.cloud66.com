@@ -2,183 +2,165 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3defac32-9469-4ff6-bc42-582069e8ce78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Tutorials/2012-01-03-nginx-auth.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Node/Tutorials/2012-01-09-nginx-redirect.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Tutorials/1901-01-26-access-your-code.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Skycap/Tutorials/2015-09-22-github.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1900-10-10-nginx-ssl-ciphers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1901-01-26-access-your-code.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1901-01-26-zero-downtime-deploy.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1901-10-03-nginx-modules.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1920-09-26-change-psql-directory.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1925-09-26-websocket-support.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1935-09-26-connect-db-servers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1936-09-26-symlink-folders.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1960-09-24-smtp-installation.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1969-09-26-memcached.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1970-09-26-manage-backups.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1976-09-26-migrate-across-dc.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1976-09-26-stack-failover.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1980-09-26-optimizing-performance.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1981-09-26-out-of-memory-errors.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1998-12-08-seeding-db.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2000-01-01-ssh-keys.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2003-09-26-sharing-db.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2004-09-26-ssl-certificate.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2009-09-26-application-not-serving.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2012-01-03-nginx-auth.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2012-01-05-nginx-deny.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2012-01-06-digitalocean-server-creation-errors.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2012-01-09-nginx-redirect.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2014-09-26-uninstall-mysql.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2015-02-19-server-size.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2015-07-08-Setting-up-custom-livelogs.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2015-08-20-migrate-the stack.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2015-09-02-multi-cert_haproxy.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2015-09-22-github.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2015-09-26-memory-usage-issues.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2016-09-29-using-master-data-staging.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2017-01-01-agent-communication-is.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2017-01-06-smtp-timeouts.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2017-02-11-connecting-to-server.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2017-02-12-disk-space.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2017-02-13-pg-replication-version.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2017-02-26-ssl-certificate-issues.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2017-03-12-azure-old-portal.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1900-10-10-nginx-ssl-ciphers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1901-01-26-zero-downtime-deploy.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1901-10-03-nginx-modules.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1920-09-26-change-psql-directory.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1925-09-26-websocket-support.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1930-09-26-haproxy-for-websocket.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1935-09-26-connect-db-servers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1936-09-26-symlink-folders.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1960-09-24-smtp-installation.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1969-09-26-memcached.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1970-09-26-manage-backups.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1976-09-26-migrate-across-dc.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1976-09-26-stack-failover.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1980-09-26-optimizing-performance.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1981-09-26-out-of-memory-errors.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/1998-12-08-seeding-db.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2000-01-01-ssh-keys.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2003-09-26-sharing-db.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2004-09-26-ssl-certificate.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2009-09-26-application-not-serving.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2012-01-05-nginx-deny.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2012-01-06-digitalocean-server-creation-errors.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2012-01-09-nginx-redirect.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2014-09-26-uninstall-mysql.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2015-02-19-server-size.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2015-07-08-Setting-up-custom-livelogs.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2015-08-20-migrate-the stack.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2015-09-02-multi-cert_haproxy.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2015-09-22-github.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2015-09-26-memory-usage-issues.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2016-01-21-Docker-Dependency.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2016-04-07-logs-for-containers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2016-04-13-newrelic-deploy-hooks-docker.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2016-09-29-using-master-data-staging.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2017-01-01-agent-communication-is.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2017-01-06-smtp-timeouts.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2017-02-11-connecting-to-server.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2017-02-12-disk-space.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2017-02-13-pg-replication-version.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2017-02-26-ssl-certificate-issues.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2017-03-12-azure-old-portal.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1900-10-10-nginx-ssl-ciphers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1901-01-26-access-your-code.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1901-01-26-zero-downtime-deploy.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1901-10-03-nginx-modules.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1920-09-26-change-psql-directory.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1925-09-26-websocket-support.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1930-09-26-haproxy-for-websocket.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1935-09-26-connect-db-servers.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1936-09-26-symlink-folders.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1969-09-26-memcached.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1970-09-26-manage-backups.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1976-09-26-migrate-across-dc.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1976-09-26-stack-failover.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1980-09-26-optimizing-performance.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/1998-12-08-seeding-db.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2000-01-01-ssh-keys.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2003-09-26-sharing-db.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2004-09-26-ssl-certificate.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2009-09-26-application-not-serving.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2012-01-03-nginx-auth.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2012-01-05-nginx-deny.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2012-01-06-digitalocean-server-creation-errors.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2014-09-26-uninstall-mysql.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2015-02-19-server-size.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2015-07-08-Setting-up-custom-livelogs.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2015-08-20-migrate-the stack.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2015-09-02-multi-cert_haproxy.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2015-09-22-github.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2015-09-26-memory-usage-issues.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2016-09-29-using-master-data-staging.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2017-01-01-agent-communication-is.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2017-01-06-smtp-timeouts.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2017-02-11-connecting-to-server.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2017-02-12-disk-space.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2017-02-13-pg-replication-version.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2017-02-26-ssl-certificate-issues.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/Tutorials/2017-03-12-azure-old-portal.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-01-21-docker-troubleshooting.md" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1900-10-10-nginx-ssl-ciphers.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1900-10-10-nginx-ssl-ciphers.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-access-your-code.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1901-01-26-access-your-code.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1901-01-26-zero-downtime-deploy.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1901-01-26-zero-downtime-deploy.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1901-10-03-nginx-modules.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1901-10-03-nginx-modules.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1920-09-26-change-psql-directory.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1920-09-26-change-psql-directory.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1925-09-26-websocket-support.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1925-09-26-websocket-support.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1930-09-26-haproxy-for-websocket.md" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/1930-09-26-haproxy-for-websocket.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1935-09-26-connect-db-servers.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1935-09-26-connect-db-servers.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1936-09-26-symlink-folders.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1936-09-26-symlink-folders.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1960-09-24-smtp-installation.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1960-09-24-smtp-installation.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1969-09-26-memcached.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1969-09-26-memcached.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1970-09-26-manage-backups.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1970-09-26-manage-backups.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1976-09-26-migrate-across-dc.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1976-09-26-migrate-across-dc.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1976-09-26-stack-failover.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1976-09-26-stack-failover.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1980-09-26-optimizing-performance.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1980-09-26-optimizing-performance.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1981-09-26-out-of-memory-errors.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1981-09-26-out-of-memory-errors.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/1998-12-08-seeding-db.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/1998-12-08-seeding-db.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2000-01-01-ssh-keys.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2000-01-01-ssh-keys.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2003-09-26-sharing-db.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2003-09-26-sharing-db.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2004-09-26-ssl-certificate.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2004-09-26-ssl-certificate.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2009-09-26-application-not-serving.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2009-09-26-application-not-serving.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2012-01-03-nginx-auth.md" afterPath="$PROJECT_DIR$/_maestro/Tutorials/2012-01-03-nginx-auth.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2012-01-05-nginx-deny.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2012-01-05-nginx-deny.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2012-01-06-digitalocean-server-creation-errors.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2012-01-06-digitalocean-server-creation-errors.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2012-01-09-nginx-redirect.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2012-01-09-nginx-redirect.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2013-01-20-whenever.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2013-01-20-whenever.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2013-09-26-db-config-test-group-errors.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2013-09-26-db-config-test-group-errors.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2013-09-26-db-structure-dump-error.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2013-09-26-db-structure-dump-error.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2014-09-26-local-cached-copy-error.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2014-09-26-local-cached-copy-error.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2014-09-26-uninstall-mysql.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2014-09-26-uninstall-mysql.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2015-02-19-server-size.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2015-02-19-server-size.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2015-07-08-Setting-up-custom-livelogs.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2015-07-08-Setting-up-custom-livelogs.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2015-08-20-migrate-the stack.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2015-08-20-migrate-the stack.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2015-09-02-multi-cert_haproxy.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2015-09-02-multi-cert_haproxy.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2015-09-22-github.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2015-09-22-github.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2015-09-26-memory-usage-issues.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2015-09-26-memory-usage-issues.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2016-01-21-Docker-Dependency.md" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2016-01-21-Docker-Dependency.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2016-04-07-logs-for-containers.md" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2016-04-07-logs-for-containers.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2016-04-13-newrelic-deploy-hooks-docker.md" afterPath="$PROJECT_DIR$/_legacy_docker/Tutorials/2016-04-13-newrelic-deploy-hooks-docker.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2016-09-26-permission-denied-errors.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2016-09-26-permission-denied-errors.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2016-09-29-using-master-data-staging.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2016-09-29-using-master-data-staging.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2017-01-01-agent-communication-is.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2017-01-01-agent-communication-is.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2017-01-06-smtp-timeouts.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2017-01-06-smtp-timeouts.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2017-02-11-connecting-to-server.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2017-02-11-connecting-to-server.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2017-02-12-disk-space.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2017-02-12-disk-space.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2017-02-13-pg-replication-version.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2017-02-13-pg-replication-version.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2017-02-26-ssl-certificate-issues.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2017-02-26-ssl-certificate-issues.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2017-02-26-unicorn-issues.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2017-02-26-unicorn-issues.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2017-03-12-azure-old-portal.md" afterPath="$PROJECT_DIR$/_Node/Tutorials/2017-03-12-azure-old-portal.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_common/Tutorials/2017-08-21-whenever-errors.md" afterPath="$PROJECT_DIR$/_rails/Tutorials/2017-08-21-whenever-errors.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_example-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_example-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_parameters-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_parameters-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_usage-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_usage-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_example-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_parameters-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_usage-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_example-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_example-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_example-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_example-4.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_parameters-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_parameters-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_parameters-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_parameters-4.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_usage-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_usage-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_usage-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_usage-4.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/jobs_parameters-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/jobs_usage-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_example-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_parameters-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_parameters-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_usage-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_usage-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_example-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_example-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_example-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_example-4.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters-4.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-3.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-4.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_contents.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_contents.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/download/download_contents.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/introduction_contents.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/lease/lease_contents.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/login/login_contents.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/redeploy/redeploy_contents.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/run/run_contents.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_contents.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/backups.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/backups.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/commands-overview.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/commands-overview.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/databases.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/databases.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/download.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/download.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/gateway.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/gateway.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/introduction.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/introduction.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/jobs.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/jobs.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/lease.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/lease.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/login.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/login.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/open.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/open.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/redeploy.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/redeploy.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/run.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/run.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/servers.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/servers.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_common/Toolbelt/services.md" afterPath="$PROJECT_DIR$/_common/Toolbelt/services.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_example.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_example.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_parameters.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_usage.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_usage.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/code_backups_example-cxbackupsdo.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/code_backups_example-cxbackupsdo.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/code_backups_example-cxbackupsli.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/code_backups_example-cxbackupsli.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/code_backups_example-cxbackupsne.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/code_backups_example-cxbackupsne.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/code_backups_usage-cxbackupsdo.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/code_backups_usage-cxbackupsdo.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/code_backups_usage-cxbackupsli.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/code_backups_usage-cxbackupsli.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/code_backups_usage-cxbackupsne.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/code_backups_usage-cxbackupsne.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/commands-overview/commands-overview_this-page-provides-an-overview-of-the-com.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/commands-overview/commands-overview_this-page-provides-an-overview-of-the-com.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/code_databases_example-cxdatabases-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/code_databases_example-cxdatabases-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/code_databases_example-cxdatabases.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/code_databases_example-cxdatabases.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/code_databases_usage-cxdatabases-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/code_databases_usage-cxdatabases-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/code_databases_usage-cxdatabases.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/code_databases_usage-cxdatabases.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_example.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_example.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_parameters.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_slave-re-synchronise-with-master.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_slave-re-synchronise-with-master.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_usage.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_usage.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/download/code_download_example-cxdownload.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/download/code_download_example-cxdownload.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/download/code_download_usage-cxdownload.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/download/code_download_usage-cxdownload.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/download/download_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/download/download_parameters.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/download/download_usage.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/download/download_usage.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_example-cxorgy-2-3-4-5.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_example-cxorgy-2-3-4-5.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_example-cxorgy-2-3-4.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_example-cxorgy-2-3-4.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_example-cxorgy-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_example-cxorgy-2-3.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_example-cxorgy-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_example-cxorgy-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_example-cxorgy.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_example-cxorgy.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_usage-cxorglt-2-3-4-5.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_usage-cxorglt-2-3-4-5.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_usage-cxorglt-2-3-4.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_usage-cxorglt-2-3-4.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_usage-cxorglt-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_usage-cxorglt-2-3.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_usage-cxorglt-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_usage-cxorglt-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_usage-cxorglt.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/code_gateway_usage-cxorglt.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_close-gateway.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_close-gateway.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_example.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_example.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_parameters.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_usage.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_usage.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/code_introduction_initialize-the-toolbelt-cxstackslis.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/code_introduction_initialize-the-toolbelt-cxstackslis.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/code_introduction_multiple-account-support-cxaccount-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/code_introduction_multiple-account-support-cxaccount-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/code_introduction_multiple-account-support-cxaccount.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/code_introduction_multiple-account-support-cxaccount.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/introduction_advanced.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/introduction_advanced.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/introduction_initialize-the-toolbelt.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/introduction_initialize-the-toolbelt.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/introduction_note.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/introduction_note.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/introduction_view-toolbelt-information.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/introduction/introduction_view-toolbelt-information.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/code_jobs_example-cxjobslist.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/code_jobs_example-cxjobslist.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/code_jobs_examples-cxjobruns.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/code_jobs_examples-cxjobruns.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/code_jobs_usage-cxjoblist.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/code_jobs_usage-cxjoblist.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/code_jobs_usage-cxjobslist.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/code_jobs_usage-cxjobslist.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/jobs_example.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/jobs_example.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/jobs_examples.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/jobs_examples.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/jobs_job-management.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/jobs_job-management.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/jobs_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/jobs_parameters.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/lease/code_lease_example-cxleases.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/lease/code_lease_example-cxleases.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/lease/code_lease_usage-cxleases.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/lease/code_lease_usage-cxleases.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/lease/lease_example.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/lease/lease_example.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/lease/lease_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/lease/lease_parameters.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/login/login_cloud-66-easy-login.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/login/login_cloud-66-easy-login.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/open/code_open_example-cxopens.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/open/code_open_example-cxopens.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/open/code_open_usage-cxopens.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/open/code_open_usage-cxopens.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/open/open_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/open/open_parameters.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/redeploy/code_redeploy_examples-cxredeploy-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/redeploy/code_redeploy_examples-cxredeploy-2-3.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/redeploy/code_redeploy_examples-cxredeploy-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/redeploy/code_redeploy_examples-cxredeploy-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/redeploy/code_redeploy_examples-cxredeploy.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/redeploy/code_redeploy_examples-cxredeploy.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/redeploy/code_redeploy_usage-cxredeploy.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/redeploy/code_redeploy_usage-cxredeploy.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/redeploy/redeploy_examples.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/redeploy/redeploy_examples.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/redeploy/redeploy_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/redeploy/redeploy_parameters.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/run/code_run_examples-cxrunsy-2-3.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/run/code_run_examples-cxrunsy-2-3.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/run/code_run_examples-cxrunsy-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/run/code_run_examples-cxrunsy-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/run/code_run_examples-cxrunsy.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/run/code_run_examples-cxrunsy.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/run/code_run_usage-cxrunslt.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/run/code_run_usage-cxrunslt.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/run/run_examples.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/run/run_examples.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/run/run_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/run/run_parameters.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/code_servers_example-cxserverr.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/code_servers_example-cxserverr.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/code_servers_example-cxserversse.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/code_servers_example-cxserversse.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/code_servers_examples-cxserversse.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/code_servers_examples-cxserversse.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/code_servers_usage-cxserversre.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/code_servers_usage-cxserversre.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/code_servers_usage-cxserversse-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/code_servers_usage-cxserversse-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/code_servers_usage-cxserversse.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/code_servers_usage-cxserversse.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_example.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_example.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_examples.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_examples.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_list-server-settings.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_list-server-settings.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_parameters.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_usage.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_usage.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_example-cxservicesi.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_example-cxservicesi.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_example-cxservicesl.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_example-cxservicesl.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_example-cxservicesr.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_example-cxservicesr.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_example-cxservicess-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_example-cxservicess-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_example-cxservicess.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_example-cxservicess.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_result-.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_result-.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_usage-cxservicesi.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_usage-cxservicesi.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_usage-cxservicesl.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_usage-cxservicesl.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_usage-cxservicesr.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_usage-cxservicesr.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_usage-cxservicess-2.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_usage-cxservicess-2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_usage-cxservicess.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/code_services_usage-cxservicess.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/code_2039-02-26-ssl-certificate-issues_matching-certificate-1.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/code_2039-02-26-ssl-certificate-issues_matching-certificate-1.md" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -189,8 +171,8 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2012-01-05-nginx-deny.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/2012-01-05-nginx-deny.md">
+      <file leaf-file-name="services_example-3.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_example-3.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -202,21 +184,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2012-01-09-nginx-redirect.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/2012-01-09-nginx-redirect.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2003-09-26-sharing-db.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/2003-09-26-sharing-db.md">
+      <file leaf-file-name="services_example-4.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_example-4.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -228,8 +197,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2003-09-26-sharing-db.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_Node/Tutorials/2003-09-26-sharing-db.md">
+      <file leaf-file-name="services_usage-1.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -241,8 +210,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2003-09-26-sharing-db.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_rails/Tutorials/2003-09-26-sharing-db.md">
+      <file leaf-file-name="services_usage-2.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -254,8 +223,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-09-22-github.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_Skycap/Tutorials/2015-09-22-github.md">
+      <file leaf-file-name="services_usage-3.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-3.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -267,8 +236,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-01-01-agent-communication-is.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/2017-01-01-agent-communication-is.md">
+      <file leaf-file-name="services_usage-4.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-4.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -280,8 +249,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-01-01-agent-communication-is.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_Node/Tutorials/2017-01-01-agent-communication-is.md">
+      <file leaf-file-name="services_parameters-1.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters-1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -293,8 +262,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-01-01-agent-communication-is.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_rails/Tutorials/2017-01-01-agent-communication-is.md">
+      <file leaf-file-name="services_parameters-2.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters-2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -306,8 +275,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-01-21-Docker-Dependency.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/2016-01-21-Docker-Dependency.md">
+      <file leaf-file-name="services_parameters-3.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters-3.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services_parameters-4.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters-4.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -337,6 +319,13 @@
         <option value="$PROJECT_DIR$/_includes/_inlines/Tutorials/common/2044-02-13-pg-replication-version/code_2044-02-13-pg-replication-version_when-you-initiate-re.md" />
         <option value="$PROJECT_DIR$/_common/Tutorials/2012-01-03-nginx-auth.md" />
         <option value="$PROJECT_DIR$/_common/Tutorials/2012-01-09-nginx-redirect.md" />
+        <option value="$PROJECT_DIR$/_common/Toolbelt/backups.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_example-1.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_usage-2.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_parameters-1.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_usage-4.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/jobs_parameters-1.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_usage-2.md" />
       </list>
     </option>
   </component>
@@ -426,7 +415,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_rails" />
+              <option name="myItemId" value="_includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -440,29 +429,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_rails" />
+              <option name="myItemId" value="_includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_Node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
+              <option name="myItemId" value="_inlines" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -476,7 +447,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_Node" />
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_inlines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Toolbelt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -490,25 +469,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_maestro" />
+              <option name="myItemId" value="_includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
+              <option name="myItemId" value="_inlines" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_maestro" />
+              <option name="myItemId" value="Toolbelt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -522,7 +495,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_legacy_docker" />
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_inlines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Toolbelt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -536,25 +525,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_legacy_docker" />
+              <option name="myItemId" value="_common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tutorials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_general" />
+              <option name="myItemId" value="Toolbelt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -585,11 +560,11 @@
       <recent name="$PROJECT_DIR$/_legacy_docker/Tutorials/" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_maestro/Tutorials" />
-      <recent name="$PROJECT_DIR$/_rails/Tutorials" />
-      <recent name="$PROJECT_DIR$/_Node/Tutorials" />
-      <recent name="$PROJECT_DIR$/_Skycap/Tutorials" />
-      <recent name="$PROJECT_DIR$/_legacy_docker/Tutorials" />
+      <recent name="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services" />
+      <recent name="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers" />
+      <recent name="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs" />
+      <recent name="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway" />
+      <recent name="$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -791,17 +766,18 @@
       <option name="presentableId" value="Default" />
       <updated>1503335157443</updated>
       <workItem from="1503335161564" duration="724000" />
-      <workItem from="1503336749534" duration="5331000" />
+      <workItem from="1503336749534" duration="8434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6055000" />
+    <option name="totallyTimeSpent" value="9158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23541667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23541667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -831,457 +807,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1925-09-26-websocket-support.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1925-09-26-websocket-support.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1925-09-26-websocket-support.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1930-09-26-haproxy-for-websocket.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1930-09-26-haproxy-for-websocket.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1935-09-26-connect-db-servers.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1935-09-26-connect-db-servers.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1935-09-26-connect-db-servers.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1936-09-26-symlink-folders.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1936-09-26-symlink-folders.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1936-09-26-symlink-folders.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1960-09-24-smtp-installation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1960-09-24-smtp-installation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1969-09-26-memcached.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1969-09-26-memcached.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1969-09-26-memcached.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1970-09-26-manage-backups.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1970-09-26-manage-backups.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1970-09-26-manage-backups.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_common/Tutorials/1976-09-26-migrate-across-dc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/1976-09-26-migrate-across-dc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1976-09-26-migrate-across-dc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1976-09-26-migrate-across-dc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1976-09-26-migrate-across-dc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/1976-09-26-stack-failover.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1976-09-26-stack-failover.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1976-09-26-stack-failover.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1976-09-26-stack-failover.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/1980-09-26-optimizing-performance.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1980-09-26-optimizing-performance.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1980-09-26-optimizing-performance.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1980-09-26-optimizing-performance.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1981-09-26-out-of-memory-errors.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1981-09-26-out-of-memory-errors.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/1998-12-08-seeding-db.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/1998-12-08-seeding-db.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/1998-12-08-seeding-db.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/2000-01-01-ssh-keys.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_Node/Tutorials/2000-01-01-ssh-keys.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/Tutorials/2000-01-01-ssh-keys.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/2012-01-03-nginx-auth.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_legacy_docker/Tutorials/2012-01-05-nginx-deny.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1382,6 +907,457 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_maestro/Tutorials/2016-01-21-Docker-Dependency.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_common/Toolbelt/backups.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_example-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_example-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_parameters-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_parameters-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_usage-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/backups/backups_usage-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_usage-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_example-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/databases/databases_parameters-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_example-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_example-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_example-3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_parameters-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_parameters-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_parameters-3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_usage-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_usage-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_usage-3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_usage-4.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_parameters-4.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/gateway/gateway_example-4.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/jobs_usage-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/jobs/jobs_parameters-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_parameters-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_parameters-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_example-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_usage-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/servers/servers_usage-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_example-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_example-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_example-3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_example-4.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_usage-4.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters-3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Toolbelt/common/services/services_parameters-4.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">

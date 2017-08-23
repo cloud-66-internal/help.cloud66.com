@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: commands-overview
+title: Toolbelt commands directory
 categories: Toolbelt
 lead: ""
 legacy: false

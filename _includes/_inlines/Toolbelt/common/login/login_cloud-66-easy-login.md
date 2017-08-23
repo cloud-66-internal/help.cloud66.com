@@ -8,6 +8,6 @@ Cloud 66 Toolbelt uses OAuth 2 for authentication and authorization. Once you ha
 Cloud 66 Easy Login allows you to login to Cloud 66 web UI from your terminal without entering your password or 2fa. Once you have Cloud 66 Toolbelt authorized on your computer, simple use the `login` command to open up a browser and login to your account.
 
 
-$ cx login
+	$ cx login
 
 

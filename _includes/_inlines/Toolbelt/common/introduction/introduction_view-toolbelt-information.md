@@ -11,4 +11,3 @@
 ` lists available servers in a given stack
 - `cx open -s 
 ` opens your web browser to visit the app server in your stack
-
