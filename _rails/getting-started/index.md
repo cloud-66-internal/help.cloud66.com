@@ -8,4 +8,7 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-This is an example document
+Cloud 66 for {{ include.product }}, supports the following stack management features:
+
+- [MySQL](mysql.html) 
+- [PostgreSQL](postgres.html)
