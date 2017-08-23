@@ -1,7 +1,6 @@
 <!-- layout:code post: 2016-01-21-docker-dependency_if-you-have-a-docker-stack-but -->
 
 ```
-
   services:
   web:
     git_url: giturl.git
@@ -25,5 +24,4 @@
           accept: ["200"]      #defaults to 200 and 300-399                    
 databases:
   - "DATABASE_NAME"
-   
 ```

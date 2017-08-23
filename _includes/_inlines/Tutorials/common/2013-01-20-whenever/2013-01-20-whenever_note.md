@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-### Note
+## Note
 
 You should include the line **env :PATH, ENV['PATH']** at the top of your _config/schedule.rb_ file to avoid command not found errors.
 

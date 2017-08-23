@@ -1,18 +1,14 @@
 <!-- post: -->
 
 
-#If you're experiencing memory usage issues, such as high memory usage, use the following steps to troubleshoot.
+If you're experiencing memory usage issues, such as high memory usage, use the following steps to troubleshoot.
 
 [SSH into your server](http://help.cloud66.com/managing-your-stack/ssh-to-your-server) and install htop:
 
-
-
 {%include _inlines/Tutorials/common/2015-09-26-memory-usage-issues/code_2015-09-26-memory-usage-issues_if-youre-experiencing-.md %}
 
-
-
-
 Once it's installed, run it with _htop_:
+
 ![htop](http://assets.cloud66.com/help/images/htop.png)
 
 The screen above will show you lots of statistics on memory and CPU usage, but we'll make two changes to make potential issues more visible:

@@ -7,92 +7,10 @@ At least one of the optional parameters are necessary in order to identify which
 
 
 
-    
-
-        
-
-            
-Parameter
-
-            
-Default
-
-            
-Description
-
-        
-
-    
-
-    
-
-        
-
-            
-_stack_
-
-            
-&mdash;
-
-            
-Name of the stack
-
-        
-
-        
-
-            
-_server name_ (optional)
-
-            
-&mdash;
-
-            
-Name of the server to access
-
-        
-
-        
-
-            
-_server ip_ (optional)
-
-            
-&mdash;
-
-            
-IP of the server to access
-
-        
-
-        
-
-            
-_server role_ (optional)
-
-            
-&mdash;
-
-            
-Role of the server to access (eg. web)
-
-        
-
-        
-
-            
-_log filename_
-
-            
-&mdash;
-
-            
-The logfile to tail (eg. nginx_error.log)
-
-        
-        
-    
-
-
-
-
+|		Parameter 		   |	Default		|   Description    |
+|--------------------------|:--------------:| ----------------:|
+|stack 					   |		—		| Name of the stack|
+|server name (optional)    | 	—			| Name of the server to access |
+|server ip (optional)      | 	—			| IP of the server to access |
+|server role (optional)    | 	—			| Role of the server to access (eg. web) |
+|log filename			   |		—		| The logfile to tail (eg. nginx_error.log) |

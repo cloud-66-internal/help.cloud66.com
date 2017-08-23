@@ -1,7 +1,6 @@
 <!-- layout:code post: 2015-07-08-setting-up-custom-livelogs_note -->
 
 ```
-
 production:   
     docker:
         configuration:
@@ -11,5 +10,4 @@ production:
             custom_log_files:
             - "/another_mysql_dump_log/*.log"
             - "/var/log/mysql/error.log"
-
 ```

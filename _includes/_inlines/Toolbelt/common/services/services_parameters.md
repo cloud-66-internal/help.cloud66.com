@@ -4,67 +4,8 @@
 ### Parameters
 
 
-
-    
-
-    
-
-        
-Parameter
-
-        
-Default
-
-        
-Description
-
-    
-
-    
-
-    
-
-    
-
-        
-_stack_
-
-        
-&mdash;
-
-        
-Name of the stack
-
-    
-
-    
-
-        
-_service name_
-
-        
-&mdash;
-
-        
-Name of the target service
-
-    
-
-    
-
-        
-_server name_ (optional)
-
-        
-&mdash;
-
-        
-Name of the target server
-
-    
-
-    
-
-
-
-
+|		Parameter 		   |	Default		|   Description    |
+|--------------------------|:--------------:| ----------------:|
+|stack 					   |		—		|Name of the stack|
+|service name			   |		—		| Name of the target service |
+|server name (optional)    | 	—		| Name of the target server |

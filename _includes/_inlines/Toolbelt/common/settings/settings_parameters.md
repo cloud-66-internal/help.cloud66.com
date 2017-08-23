@@ -4,65 +4,9 @@
 ### Parameters
 
 
-
-    
-
-        
-
-            
-Parameter
-
-            
-Description
-
-        
-
-    
-
-    
-
-        
-
-            
-_stack_
-
-            
-Name of your stack
-
-        
-
-        
-
-            
-_setting_name_
-
-            
-A valid setting from the list above
-
-        
-
-        
-
-            
-_value_
-
-            
-A valid value for the setting
-
-        
-
-        
-
-            
-_e_ (optional)
-
-            
-Your stack environment
-
-        
-
-    
-
-
-
-
+|		Parameter 		   |   Description    |
+|--------------------------| ----------------:|
+|stack 					   |Name of the stack|
+|setting_name 	   | 	A valid setting from the list above |
+|value	   | The value for the setting |
+|e (optional) 	   | 	Your stack environment |

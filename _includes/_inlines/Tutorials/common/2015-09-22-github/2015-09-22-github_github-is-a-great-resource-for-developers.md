@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-#GitHub is a great resource for developers, and using it with Cloud 66 couldn't be easier. While you use GitHub for the revision control of your code,
+GitHub is a great resource for developers, and using it with Cloud 66 couldn't be easier. While you use GitHub for the revision control of your code,
 you can use Cloud 66 to deploy and manage your app in any cloud at all stages of your development.
 
 For this demonstration, we'll be using a Cloud 66 sample Rails app with a MySQL backend that is conveniently [hosted on GitHub](https://github.com/cloud66-samples/rails-mysql).

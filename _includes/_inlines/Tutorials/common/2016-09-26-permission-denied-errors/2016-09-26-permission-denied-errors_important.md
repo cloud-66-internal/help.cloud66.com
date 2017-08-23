@@ -1,12 +1,9 @@
 <!-- post: -->
 
 
-### Important
+## Important
 
 An example error you'd receive in the above case could look like **Errno::EACCES (Permission denied...)**
-
-
-
 
 To resolve these issues you can do one of the following:
 

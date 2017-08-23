@@ -1,7 +1,7 @@
 <!-- post: -->
 
 
-### Note
+## Note
 
     
 The deploy hook example above will only execute during the _build_ for a new stack. If you want to seed an existing stack you could either

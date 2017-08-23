@@ -1,8 +1,7 @@
 <!-- layout:code post: 2012-01-09-nginx-redirect_https -->
 
 ```
-
-&#123;% if allow_ssl == true %&#125;
+{% raw %}{% if allow_ssl == true %}
 server {
     server_name          *.domaina.com;
     listen               443;
@@ -10,6 +9,5 @@ server {
     ssl_certificate_key /etc/ssl/localcerts/domaina.key;
     ssl_certificate /etc/ssl/localcerts/domaina.crt;
     rewrite ^ https://domainb.com$request_uri? permanent;
-}
-
+}{% endraw %}
 ```
