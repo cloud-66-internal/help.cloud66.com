@@ -1,3 +1,4 @@
+<!-- usedin: [ _includes/_inlines/Toolbelt/common/services/services_example-3.md] -->
 
 ```
 $ cx services stop -s mystack my_web_service

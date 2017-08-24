@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/deployment/sinatra-stacks.md] -->
 
 
 ### Mongoid

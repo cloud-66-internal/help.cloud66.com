@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/Tutorials/1950-09-26-implementing-faye.md] -->
 
 
 ### 2. RAILS_ROOT/.cloud66/files/add_thin_and_faye.sh

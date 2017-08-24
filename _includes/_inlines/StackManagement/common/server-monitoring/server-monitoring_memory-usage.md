@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/stack-management/server-monitoring.md, _maestro/stack-management/server-monitoring.md, _node/stack-management/server-monitoring.md, _rails/stack-management/server-monitoring.md] -->
 
 
 #### Memory usage

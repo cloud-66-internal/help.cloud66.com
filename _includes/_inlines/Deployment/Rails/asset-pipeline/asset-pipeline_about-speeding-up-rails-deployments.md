@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/deployment/asset-pipeline.md] -->
 
 
 ## About speeding up Rails deployments

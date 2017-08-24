@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/Tutorials/1920-09-26-change-psql-directory.md, _maestro/Tutorials/1920-09-26-change-psql-directory.md, _node/tutorials/1920-09-26-change-psql-directory.md, _rails/Tutorials/1920-09-26-change-psql-directory.md] -->
 
 
 We use the default data folder when installing PostgreSQL on your server, which is  `/usr/local/pgsql/data`.

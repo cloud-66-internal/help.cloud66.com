@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/AddOns/redis.md, _maestro/AddOns/redis.md, _node/addons/redis.md, _rails/AddOns/redis.md] -->
 
 
 ## Add Redis to your stack

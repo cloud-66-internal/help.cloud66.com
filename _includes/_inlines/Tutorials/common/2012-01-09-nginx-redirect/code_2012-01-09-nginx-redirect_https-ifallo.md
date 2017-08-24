@@ -1,3 +1,4 @@
+<!-- usedin: [ _includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_https.md] -->
 
 ```
 {% raw %}{% if allow_ssl == true %}

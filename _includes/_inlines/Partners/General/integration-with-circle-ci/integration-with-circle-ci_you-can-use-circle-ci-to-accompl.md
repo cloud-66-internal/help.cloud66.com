@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/Partners/integration-with-circle-ci.md] -->
 
 
 You can use Circle CI to accomplish continuous integration and deployment of your application together with Cloud 66.

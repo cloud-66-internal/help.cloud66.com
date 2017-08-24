@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/deployment/asset-pipeline.md] -->
 
 
 #### Rails 3.2 and above

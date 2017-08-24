@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/Tutorials/1976-09-26-stack-failover.md, _maestro/Tutorials/1976-09-26-stack-failover.md, _node/tutorials/1976-09-26-stack-failover.md, _rails/Tutorials/1976-09-26-stack-failover.md] -->
 
 
 ## How to use the failover stack

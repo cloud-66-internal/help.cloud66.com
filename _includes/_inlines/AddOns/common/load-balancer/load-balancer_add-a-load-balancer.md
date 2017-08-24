@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/AddOns/load-balancer.md, _maestro/AddOns/load-balancer.md, _node/addons/load-balancer.md, _rails/AddOns/load-balancer.md] -->
 
 
 ## Add a load balancer

@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/Introduction/technical-specifications.md] -->
 
 
 ## Supported cloud providers

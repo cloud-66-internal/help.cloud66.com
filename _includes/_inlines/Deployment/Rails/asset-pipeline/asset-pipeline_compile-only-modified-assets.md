@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/deployment/asset-pipeline.md] -->
 
 
 ## Compile only modified assets

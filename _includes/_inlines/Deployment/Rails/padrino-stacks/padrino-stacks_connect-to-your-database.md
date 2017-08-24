@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/deployment/padrino-stacks.md] -->
 
 
 ## Connect to your database

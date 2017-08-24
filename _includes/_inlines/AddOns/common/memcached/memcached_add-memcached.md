@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/AddOns/memcached.md, _maestro/AddOns/memcached.md, _node/addons/memcached.md, _rails/AddOns/memcached.md] -->
 
 
 ## Add Memcached

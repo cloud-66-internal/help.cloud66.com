@@ -1,4 +1,5 @@
-<!-- post: -->
+<!-- usedin: [ _node/deployment/getting-started.md] -->
+
 
 
 ## Step 2. Access your Git repository

@@ -1,3 +1,4 @@
+<!-- usedin: [ _skycap/buildgrid/buildgrid-settings.md] -->
 
 ### BuildGrid Settings
 

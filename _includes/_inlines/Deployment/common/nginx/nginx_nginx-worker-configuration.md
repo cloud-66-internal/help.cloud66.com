@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/deployment/nginx.md, _maestro/Deployment/nginx.md, _node/deployment/nginx.md, _rails/deployment/nginx.md, _skycap/deployment/nginx.md] -->
 
 
 ## Nginx worker configuration

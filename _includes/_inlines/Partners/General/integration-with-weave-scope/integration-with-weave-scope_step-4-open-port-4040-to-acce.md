@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/Partners/integration-with-weave-scope.md] -->
 
 
 ## Step 4: Open port 4040 to access Weave Scope

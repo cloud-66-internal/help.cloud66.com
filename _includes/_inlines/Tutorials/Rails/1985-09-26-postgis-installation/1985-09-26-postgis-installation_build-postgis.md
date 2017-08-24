@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/Tutorials/1985-09-26-postgis-installation.md] -->
 
 
 ### Build PostGIS

@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/stack-management/service-lifecycle-management.md, _maestro/stack-management/service-lifecycle-management.md, _node/stack-management/service-lifecycle-management.md, _rails/stack-management/service-lifecycle-management.md] -->
 
 
 ### Restart on deploy

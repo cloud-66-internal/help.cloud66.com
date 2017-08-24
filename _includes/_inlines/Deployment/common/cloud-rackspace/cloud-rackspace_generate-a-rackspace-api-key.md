@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/deployment/cloud-rackspace.md, _maestro/Deployment/cloud-rackspace.md, _node/deployment/cloud-rackspace.md, _rails/deployment/cloud-rackspace.md, _skycap/deployment/cloud-rackspace.md] -->
 
 
 ## Generate a Rackspace API key

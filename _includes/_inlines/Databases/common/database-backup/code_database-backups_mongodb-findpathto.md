@@ -1,4 +1,5 @@
-<!-- layout:code post: database-backups_mongodb -->
+<!-- usedin: [ _includes/_inlines/Databases/common/database-backup/database-backups_mongodb.md] -->
+
 
 ```
 

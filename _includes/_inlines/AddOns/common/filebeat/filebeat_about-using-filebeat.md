@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/AddOns/filebeat.md, _maestro/AddOns/filebeat.md, _node/addons/filebeat.md, _rails/AddOns/filebeat.md] -->
 
 
 ### About using Filebeat

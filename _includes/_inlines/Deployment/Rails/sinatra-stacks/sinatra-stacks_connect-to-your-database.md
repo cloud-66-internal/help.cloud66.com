@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/deployment/sinatra-stacks.md] -->
 
 
 ## Connect to your database

@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/Tutorials/2015-09-22-github.md, _maestro/Tutorials/2015-09-22-github.md, _node/tutorials/2015-09-22-github.md, _rails/Tutorials/2015-09-22-github.md, _skycap/tutorials/2015-09-22-github.md] -->
 
 
 GitHub is a great resource for developers, and using it with Cloud 66 couldn't be easier. While you use GitHub for the revision control of your code,

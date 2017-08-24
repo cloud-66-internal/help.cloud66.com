@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/deployment/building-your-classic-stack.md] -->
 
 
 *		[What you'll need](#needed)

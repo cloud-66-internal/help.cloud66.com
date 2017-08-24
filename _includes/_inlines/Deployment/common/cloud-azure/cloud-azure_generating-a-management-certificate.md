@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/deployment/cloud-azure.md, _maestro/Deployment/cloud-azure.md, _node/deployment/cloud-azure.md, _rails/deployment/cloud-azure.md, _skycap/deployment/cloud-azure.md] -->
 
 
 ## Generating a management certificate

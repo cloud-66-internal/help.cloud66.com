@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/Introduction/cloud66-status.md] -->
 
 
 ## Latest updates

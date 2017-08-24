@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/Partners/integration-with-weave-scope.md] -->
 
 
 ## Step 1: Checkout your CustomConfig

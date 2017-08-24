@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/Introduction/technical-specifications.md] -->
 
 
 ### Components built from source

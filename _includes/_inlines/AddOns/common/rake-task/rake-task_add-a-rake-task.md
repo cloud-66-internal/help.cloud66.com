@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/AddOns/rake-task.md] -->
 
 
 ### Add a rake task

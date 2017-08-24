@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/AddOns/shell.md, _maestro/AddOns/shell.md, _node/addons/shell.md, _rails/AddOns/shell.md] -->
 
 
 ### Add a shell command

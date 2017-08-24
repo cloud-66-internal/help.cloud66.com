@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/account/support.md] -->
 
 The support packages below are set up with a simple flat fee monthly rolling contract. Visit your [Account page](https://app.cloud66.com/support) to signup.
 

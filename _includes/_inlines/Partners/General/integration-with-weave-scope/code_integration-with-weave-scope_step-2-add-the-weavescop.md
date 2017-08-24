@@ -1,3 +1,4 @@
+<!-- usedin: [ _includes/_inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-2-add-the-weavescope-sni.md] -->
 
 ```
 production: # Environment or your choice

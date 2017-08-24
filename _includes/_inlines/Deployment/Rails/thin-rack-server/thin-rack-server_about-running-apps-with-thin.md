@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/deployment/thin-rack-server.md] -->
 
 
 ## About running apps with Thin

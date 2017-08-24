@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/AddOns/rabbitmq.md, _maestro/AddOns/rabbitmq.md, _node/addons/rabbitmq.md, _rails/AddOns/rabbitmq.md] -->
 
 
 ## Add RabbitMQ

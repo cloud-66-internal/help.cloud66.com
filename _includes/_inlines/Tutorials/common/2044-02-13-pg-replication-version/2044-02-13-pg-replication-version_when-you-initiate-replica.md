@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/Tutorials/2017-02-13-pg-replication-version.md, _maestro/Tutorials/2017-02-13-pg-replication-version.md, _node/tutorials/2017-02-13-pg-replication-version.md, _rails/Tutorials/2017-02-13-pg-replication-version.md] -->
 
 
 When you initiate replication between two PostgreSQL databases on Cloud 66, we setup [streaming replication](https://wiki.postgresql.org/wiki/Streaming_Replication) between the master and slave servers. Streaming replication is based on [log shipping](http://www.postgresql.org/docs/9.4/static/warm-standby.html) between servers, which generally isn't possible between two servers running vastly different versions of PostgreSQL.
