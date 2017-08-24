@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Cloud66 Birdseye
-categories: unknown
+categories: stack-management
 lead: ""
 legacy: false
 
