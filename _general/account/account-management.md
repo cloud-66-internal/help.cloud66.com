@@ -2,12 +2,12 @@
 layout: post
 template: one-col
 title: Account Management
-categories: Account
+categories: account
 lead: ""
 legacy: false
 
 ---
-{% assign product = "General" %}
+{% assign product = "general" %}
 
 {% include _inlines/Account/General/account-management/account-management_view-account-information.md %}
 {% include _inlines/Account/General/account-management/account-management_delete-your-account.md %}
