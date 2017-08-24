@@ -4,7 +4,7 @@ template: one-col
 title: SMTP timeouts on Amazon AWS EC2
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

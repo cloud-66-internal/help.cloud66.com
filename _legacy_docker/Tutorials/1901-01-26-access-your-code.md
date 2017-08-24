@@ -4,7 +4,7 @@ template: one-col
 title: Accessing your Git repository
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

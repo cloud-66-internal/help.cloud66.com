@@ -4,7 +4,7 @@ template: one-col
 title: Uninstalling MySQL
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

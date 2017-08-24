@@ -4,7 +4,7 @@ template: one-col
 title: Create symbolic links in Ubuntu
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

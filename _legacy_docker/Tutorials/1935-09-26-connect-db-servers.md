@@ -4,7 +4,7 @@ template: one-col
 title: How to connect to your database servers
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

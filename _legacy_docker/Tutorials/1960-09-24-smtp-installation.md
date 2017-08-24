@@ -4,7 +4,7 @@ template: one-col
 title: Installing SMTP on your server
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

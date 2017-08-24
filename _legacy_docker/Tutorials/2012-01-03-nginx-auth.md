@@ -4,7 +4,7 @@ template: one-col
 title: Nginx basic authorization
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 change: true
 ---
 {% assign product = "common" %}

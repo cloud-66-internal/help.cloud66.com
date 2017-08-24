@@ -4,7 +4,7 @@ template: one-col
 title: Strong SSL Security on nginx
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

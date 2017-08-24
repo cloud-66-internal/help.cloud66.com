@@ -4,7 +4,7 @@ template: one-col
 title: Deploy hooks
 categories: Deployment
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "legacy_docker" %}

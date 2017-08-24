@@ -4,7 +4,7 @@ template: one-col
 title: Application not serving content
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

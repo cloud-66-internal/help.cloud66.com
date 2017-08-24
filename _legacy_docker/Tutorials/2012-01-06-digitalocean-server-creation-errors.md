@@ -4,7 +4,7 @@ template: one-col
 title: DigitalOcean server creation errors
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

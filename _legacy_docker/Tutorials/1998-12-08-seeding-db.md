@@ -4,7 +4,7 @@ template: one-col
 title: Seeding your database
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

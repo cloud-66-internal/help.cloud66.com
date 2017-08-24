@@ -4,7 +4,7 @@ template: one-col
 title: Optimizing for server load
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

@@ -4,7 +4,7 @@ template: one-col
 title: Configuring HAProxy for WebSocket
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}
