@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/AddOns/glusterfs.md, _maestro/AddOns/glusterfs.md, _node/addons/glusterfs.md, _rails/AddOns/glusterfs.md] -->
 
 
 ## How can I use GlusterFS in my application?

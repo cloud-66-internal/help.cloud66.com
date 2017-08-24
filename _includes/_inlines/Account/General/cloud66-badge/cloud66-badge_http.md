@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/account/cloud66-badge.md] -->
 
 #### HTTP:
 

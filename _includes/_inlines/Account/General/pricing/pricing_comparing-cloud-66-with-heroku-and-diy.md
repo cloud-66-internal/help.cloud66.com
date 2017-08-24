@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/account/pricing.md] -->
 
 ## Comparing Cloud 66 with Heroku and DIY
 

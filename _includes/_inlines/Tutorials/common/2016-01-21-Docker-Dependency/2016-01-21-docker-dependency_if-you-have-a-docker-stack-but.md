@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/Tutorials/2016-01-21-Docker-Dependency.md, _maestro/Tutorials/2016-01-21-Docker-Dependency.md] -->
 
 
 If you have a docker stack but your services don't follow the dependencies you've defined, this article is probably for you.

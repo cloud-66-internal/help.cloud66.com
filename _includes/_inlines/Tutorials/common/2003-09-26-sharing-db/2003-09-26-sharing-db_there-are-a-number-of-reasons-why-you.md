@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/Tutorials/2003-09-26-sharing-db.md, _maestro/Tutorials/2003-09-26-sharing-db.md, _node/tutorials/2003-09-26-sharing-db.md, _rails/Tutorials/2003-09-26-sharing-db.md] -->
 
 
 There are a number of reasons why you might want to share a database between your stacks. For example, you can test UI changes with your users while still using production data.

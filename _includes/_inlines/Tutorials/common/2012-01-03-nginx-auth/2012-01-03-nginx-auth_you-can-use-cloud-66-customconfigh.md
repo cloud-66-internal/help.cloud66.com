@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/Tutorials/2012-01-03-nginx-auth.md, _maestro/Tutorials/2012-01-03-nginx-auth.md, _node/tutorials/2012-01-03-nginx-auth.md, _rails/Tutorials/2012-01-03-nginx-auth.md] -->
 
 
 You can use Cloud 66 [CustomConfig](http://help.cloud66.com/managing-your-stack/customconfig) to protect your application or parts of it with a username and password based on HTTP basic authentication.

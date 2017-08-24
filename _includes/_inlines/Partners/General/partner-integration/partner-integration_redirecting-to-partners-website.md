@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/Partners/partner-integration.md] -->
 
 
 ### Redirecting to Partner's website

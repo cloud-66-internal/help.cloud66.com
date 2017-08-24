@@ -1,3 +1,4 @@
+<!-- usedin: [ _includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_2.-rails95root.md] -->
 
 ```
 !/bin/bash

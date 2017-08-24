@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/stack-management/service-storage.md, _maestro/stack-management/service-storage.md] -->
 
 
 #Given the ephemeral nature of containers, it's important to consider storage solutions to avoid data loss. While we currently suggest mounting volumes from your container to the host, we are also working on other more scalable solutions.

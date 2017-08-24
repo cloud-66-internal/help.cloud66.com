@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/Partners/partner-integration.md] -->
 
 
 ## User integration API

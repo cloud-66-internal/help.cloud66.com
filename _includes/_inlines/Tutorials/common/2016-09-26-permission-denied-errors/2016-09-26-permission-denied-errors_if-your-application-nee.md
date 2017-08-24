@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/Tutorials/2016-09-26-permission-denied-errors.md] -->
 
 
 If your application needs to write back to your web server then you may have permission errors.

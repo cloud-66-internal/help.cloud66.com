@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/stack-management/server-restart-notifications.md, _maestro/stack-management/server-restart-notifications.md, _node/stack-management/server-restart-notifications.md, _rails/stack-management/server-restart-notifications.md] -->
 
 
 ## How does Cloud 66 determine my server needs a restart?

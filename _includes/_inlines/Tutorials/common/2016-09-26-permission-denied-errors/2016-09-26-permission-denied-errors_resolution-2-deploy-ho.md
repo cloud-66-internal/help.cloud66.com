@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/Tutorials/2016-09-26-permission-denied-errors.md] -->
 
 
 ## Resolution 2: Deploy hook

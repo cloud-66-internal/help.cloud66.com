@@ -1,3 +1,4 @@
+<!-- usedin: [ _node/deployment/scale-node.md] -->
 
 
 ###  Scale your instances 

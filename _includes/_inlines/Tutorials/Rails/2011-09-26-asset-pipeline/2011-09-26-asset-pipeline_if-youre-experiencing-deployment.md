@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/Tutorials/2011-09-26-asset-pipeline.md] -->
 
 
 If you're experiencing deployment failures related to your asset pipeline manifest configurations, these could be due to issues with old assets.

@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/AddOns/haproxy.md, _maestro/AddOns/haproxy.md, _node/addons/haproxy.md, _rails/AddOns/haproxy.md] -->
 
 
 ## Change the HAProxy endpoint

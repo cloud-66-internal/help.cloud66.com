@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/deployment/env-vars.md, _maestro/Deployment/env-vars.md, _node/deployment/env-vars.md, _rails/deployment/env-vars.md, _skycap/deployment/env-vars.md] -->
 
 ## AUTO_GENERATE environment variables
 

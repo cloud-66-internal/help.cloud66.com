@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/Tutorials/1967-09-26-bluepill.md] -->
 
 
 ## Note

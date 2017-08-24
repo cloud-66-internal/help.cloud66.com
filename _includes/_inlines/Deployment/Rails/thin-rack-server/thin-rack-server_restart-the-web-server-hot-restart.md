@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/deployment/thin-rack-server.md] -->
 
 
 ### Restart the web server (hot-restart)

@@ -1,3 +1,4 @@
+<!-- usedin: [ _includes/_inlines/Account/General/cloud66-badge/cloud66-badge_http.md] -->
 
 ```
 <a href="http://www.cloud66.com">

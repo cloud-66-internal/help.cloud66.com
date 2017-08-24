@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/AddOns/elasticsearch.md, _maestro/AddOns/elasticsearch.md, _node/addons/elasticsearch.md, _rails/AddOns/elasticsearch.md] -->
 
 
 ### What is Elasticsearch?

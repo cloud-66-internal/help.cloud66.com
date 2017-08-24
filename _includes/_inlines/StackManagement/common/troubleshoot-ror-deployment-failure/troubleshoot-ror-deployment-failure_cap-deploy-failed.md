@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/stack-management/troubleshoot-ror-deployment-failure.md] -->
 
 ## Cap deploy failed
 

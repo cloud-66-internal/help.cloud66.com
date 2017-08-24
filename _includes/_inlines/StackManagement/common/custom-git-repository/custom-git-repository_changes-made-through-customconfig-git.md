@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/stack-management/custom-git-repository.md, _maestro/stack-management/custom-git-repository.md, _node/stack-management/custom-git-repository.md, _rails/stack-management/custom-git-repository.md, _skycap/stack-management/custom-git-repository.md] -->
 
 
 ### Changes made through CustomConfig git

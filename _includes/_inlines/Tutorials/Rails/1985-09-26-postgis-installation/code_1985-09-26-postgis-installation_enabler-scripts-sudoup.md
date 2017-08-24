@@ -1,3 +1,4 @@
+<!-- usedin: [ _includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_enabler-scripts.md, _includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_enabler-scripts.md, _includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_enabler-scripts.md] -->
 
 ```
 $ sudo -u postgres psql -d template_postgis -f /usr/share/postgresql/9.1/contrib/postgis-2.0/topology.sql

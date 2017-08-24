@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/Introduction/faq.md] -->
 
 
 ## Which distributions of Linux are supported?

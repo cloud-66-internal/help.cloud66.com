@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/account/browser-requirements.md] -->
 
 Browser versions are frequently updated to offer new features, address problems, optimize performance, and most importantly, ensure security. Therefore, it’s good practice to upgrade your browser whenever the most recent version is available.
 

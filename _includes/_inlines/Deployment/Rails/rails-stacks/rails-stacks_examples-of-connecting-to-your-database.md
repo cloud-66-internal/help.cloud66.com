@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/deployment/rails-stacks.md] -->
 
 
 ### Examples of connecting to your database

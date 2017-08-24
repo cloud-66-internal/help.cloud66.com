@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/deployment/building-your-classic-stack.md] -->
 
 
 ## Step 6: Review the deployment logs

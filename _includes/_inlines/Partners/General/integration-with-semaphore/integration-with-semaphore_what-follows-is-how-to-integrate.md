@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/Partners/integration-with-semaphore.md] -->
 
 
 What follows is how to integrate [Semaphore](https://semaphoreapp.com) with Cloud 66.

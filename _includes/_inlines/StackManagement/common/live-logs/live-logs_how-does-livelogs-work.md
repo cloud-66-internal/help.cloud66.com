@@ -1,3 +1,4 @@
+<!-- usedin: [ _legacy_docker/stack-management/live-logs.md, _maestro/stack-management/live-logs.md, _node/stack-management/live-logs.md, _rails/stack-management/live-logs.md] -->
 
 
 ## How does LiveLogs work?

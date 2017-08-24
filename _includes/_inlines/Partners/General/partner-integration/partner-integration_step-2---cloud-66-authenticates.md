@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/Partners/partner-integration.md] -->
 
 
 ### Step 2 - Cloud 66 Authenticates

@@ -1,3 +1,4 @@
+<!-- usedin: [ _rails/Tutorials/1985-09-26-postgis-installation.md] -->
 
 
 ## Installing with Cloud 66

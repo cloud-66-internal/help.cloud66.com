@@ -1,3 +1,4 @@
+<!-- usedin: [ _general/Partners/integration-with-weave-scope.md] -->
 
 
 ## Step 2: Add the weavescope snippet
