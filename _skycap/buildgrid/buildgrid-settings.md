@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Buildgrid Settings
-categories: Buildgrid
+categories: buildgrid
 lead: ""
 legacy: false
 

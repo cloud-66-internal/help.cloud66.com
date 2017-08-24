@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Manage your stacks from Slack with ChatOps
-categories: unknown
+categories: tutorials
 lead: ""
 legacy: false
 

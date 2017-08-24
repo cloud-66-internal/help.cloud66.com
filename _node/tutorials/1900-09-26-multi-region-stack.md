@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: 1900-09-26-multi-region-stack
+title: Multi Region Stack
 categories: Tutorials
 lead: ""
 legacy: false
