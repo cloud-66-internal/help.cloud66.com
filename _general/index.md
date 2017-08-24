@@ -6,8 +6,8 @@ lead: Cloud66 General
 legacy: false
 ---
 
-- [Beta Program](BetaProgram)
-- [Introduction](Introduction)
-- [Partners](Partners)
-- [Teams](Teams)
+- [Beta Program](beta-program)
+- [Introduction](introduction)
+- [Partners](partners)
+- [Teams](teams)
 - [Account](account)
