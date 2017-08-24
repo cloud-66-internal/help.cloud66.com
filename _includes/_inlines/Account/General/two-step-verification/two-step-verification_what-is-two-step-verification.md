@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/account] - post: -->
 
 ## What is two-step verification? 
 

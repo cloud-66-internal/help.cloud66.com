@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/AddOns] - post: -->
 
 
 ## Add a custom server

@@ -1,4 +1,3 @@
-<!-- usedin: [ _rails/deployment] - post: -->
 
 
 ## Step 5: Define deployment properties

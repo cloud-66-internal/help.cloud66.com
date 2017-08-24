@@ -1,4 +1,3 @@
-<!-- usedin: [ _rails/Tutorials] - post: -->
 
 
 ### Target the first server in a server group

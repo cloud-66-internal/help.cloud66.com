@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/Introduction] - post: -->
 
 
 ## What is Cloud 66?

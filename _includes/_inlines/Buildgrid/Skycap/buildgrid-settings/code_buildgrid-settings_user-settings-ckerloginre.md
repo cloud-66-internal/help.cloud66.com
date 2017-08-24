@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/Buildgrid/Skycap/buildgrid-settings] - layout:code post: buildgrid-settings_user-settings.md -->
 
 ```
 docker login registry.buildgrid.cx

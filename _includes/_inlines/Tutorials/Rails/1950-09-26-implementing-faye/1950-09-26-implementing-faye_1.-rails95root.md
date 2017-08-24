@@ -1,4 +1,3 @@
-<!-- usedin: [ _rails/Tutorials] - post: -->
 
 
 ### 1. RAILS_ROOT/.cloud66/deploy_hooks.yml

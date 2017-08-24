@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/Tutorials] - post: -->
 
 
 Do you want to move your stack from one cloud vendor or region to another? Follow the steps below for a seamless transition between stacks.

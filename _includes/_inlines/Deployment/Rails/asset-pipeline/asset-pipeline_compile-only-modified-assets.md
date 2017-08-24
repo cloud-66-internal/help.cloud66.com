@@ -1,4 +1,3 @@
-<!-- usedin: [ _rails/deployment] - post: -->
 
 
 ## Compile only modified assets

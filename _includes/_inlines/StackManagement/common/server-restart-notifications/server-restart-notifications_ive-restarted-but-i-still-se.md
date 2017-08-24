@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/stack-management] - post: -->
 
 
 ## I've restarted, but I still see the notification

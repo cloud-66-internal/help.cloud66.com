@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/Teams] - post: -->
 
 ## Pricing
 

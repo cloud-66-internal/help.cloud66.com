@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/deployment] - post: -->
 
 
 ## How do I specify service configurations?

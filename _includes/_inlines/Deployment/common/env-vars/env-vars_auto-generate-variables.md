@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/deployment] - post: -->
 
 ## AUTO_GENERATE environment variables
 

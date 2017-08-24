@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/getting-started] - post: -->
 
 
 ## How cloud 66 uses the Dockerfile

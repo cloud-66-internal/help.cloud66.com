@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/Tutorials] - post: -->
 
 
 ## Test your WebSocket server

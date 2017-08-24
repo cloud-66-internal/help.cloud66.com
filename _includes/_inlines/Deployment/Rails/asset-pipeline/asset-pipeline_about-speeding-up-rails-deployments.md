@@ -1,4 +1,3 @@
-<!-- usedin: [ _rails/deployment] - post: -->
 
 
 ## About speeding up Rails deployments

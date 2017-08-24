@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/deployment] - post: -->
 
 
 ### Example 2: Multiple services and databases

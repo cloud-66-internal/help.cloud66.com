@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/deployment] - post: -->
 
 
 ## Add Linode key to a stack

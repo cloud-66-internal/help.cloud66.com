@@ -1,4 +1,3 @@
-<!-- usedin: [ _rails/deployment] - post: -->
 
 
 ## Step 6: Review the deployment logs

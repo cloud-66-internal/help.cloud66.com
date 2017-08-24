@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/Toolbelt] - post: -->
 
 
 ## Show help pages for a command

@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/Toolbelt/common/services] - layout:code post: services_example -->
 
 ```
 $ cx services restart -s mystack my_web_service

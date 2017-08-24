@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/deployment] - post: -->
 
 
 ## About using Amazon Web Services cloud

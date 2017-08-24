@@ -1,4 +1,3 @@
-<!-- usedin: [ _rails/Tutorials] - post: -->
 
 
 ### 4. RAILS_ROOT/faye/config.ru

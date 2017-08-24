@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/Toolbelt/common/toolbelt_processes] - layout:code post: toolbelt_processes_example -->
 
 ```
 $ cx processes scale -s mystack --server backend1 --name worker [+5]

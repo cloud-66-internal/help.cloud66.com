@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/Partners] - post: -->
 
 
 ## Step 1: Checkout your CustomConfig

@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/Tutorials] - post: -->
 
 
 ### 6. Set up a replication between two stacks

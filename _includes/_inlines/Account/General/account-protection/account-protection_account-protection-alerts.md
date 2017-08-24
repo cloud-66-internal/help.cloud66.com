@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/account] - post: -->
 
 ## Account Protection Alerts
 Once an account activity anomaly is detected an email is sent to the main account owner's registered email address. At this point the account owner has 2 options:

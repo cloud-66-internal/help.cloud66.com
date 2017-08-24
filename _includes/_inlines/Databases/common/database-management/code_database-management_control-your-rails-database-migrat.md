@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/Databases/common/database-management] - layout:code post: database-management_control-your-rails-database-migrations -->
 
 ```
 

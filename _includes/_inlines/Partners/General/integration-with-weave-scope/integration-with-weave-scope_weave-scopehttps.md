@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/Partners] - post: -->
 
 
 [Weave Scope](https://www.weave.works/products/weave-scope/) automatically generates a map of your application, enabling you to intuitively understand, monitor, and control your containerized, microservices based application. Perfect for visualisation of your Docker stack and debug purposes.

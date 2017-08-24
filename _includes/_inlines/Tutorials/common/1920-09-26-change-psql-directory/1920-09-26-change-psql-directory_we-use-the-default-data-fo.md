@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/Tutorials] - post: -->
 
 
 We use the default data folder when installing PostgreSQL on your server, which is  `/usr/local/pgsql/data`.

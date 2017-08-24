@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/AddOns] - post: -->
 
 
 ## Configurations for your Rack server

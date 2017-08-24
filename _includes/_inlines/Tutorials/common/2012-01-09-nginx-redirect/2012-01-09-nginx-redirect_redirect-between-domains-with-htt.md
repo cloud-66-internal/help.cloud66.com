@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/Tutorials] - post: -->
 
 
 ## Redirect between domains with HTTP and HTTPS

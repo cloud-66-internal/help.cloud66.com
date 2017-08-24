@@ -1,4 +1,3 @@
-<!-- usedin: [ _rails/Tutorials] - post: -->
 
 
 ### PostGIS extension for PostgreSQL

@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/Partners] - post: -->
 
 
 ## Using OAuth2

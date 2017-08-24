@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/Tutorials, _maestro/Tutorials] - post: -->
 
 
 ### 1. Concatanate each certification's files to one file

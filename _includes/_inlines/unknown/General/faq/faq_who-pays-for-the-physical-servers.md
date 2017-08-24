@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/Introduction] - post: -->
 
 
 ## Who pays for the physical servers?

@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/account] - post: -->
 
 ### An Audit log for all account activities
 

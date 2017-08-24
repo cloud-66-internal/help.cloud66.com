@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/failover-groups] - post: -->
 
 
 ### What is a failover group? 

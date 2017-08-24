@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/Databases] - post: -->
 
 
 ## About scaling your MongoDB servers

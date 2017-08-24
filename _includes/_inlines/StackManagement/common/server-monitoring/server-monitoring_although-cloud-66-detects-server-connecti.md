@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/stack-management] - post: -->
 
 
 Although Cloud 66 detects server connectivity issues, we don't currently detect application states in the dashboard.

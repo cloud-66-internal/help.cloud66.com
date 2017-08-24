@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/AddOns] - post: -->
 
 
 Add-ins allow you to add various internal and external features to your stack. These include database backups, SSL certificates and server components such as Redis and Elasticsearch.

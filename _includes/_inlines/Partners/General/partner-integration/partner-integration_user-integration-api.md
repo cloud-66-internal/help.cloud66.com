@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/Partners] - post: -->
 
 
 ## User integration API

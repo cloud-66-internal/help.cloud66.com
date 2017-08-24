@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/deployment] -- post: -->
 
 
 ## How to deploy your stack behind the gateway server

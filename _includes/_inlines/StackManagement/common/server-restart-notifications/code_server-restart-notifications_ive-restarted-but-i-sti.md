@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/StackManagement/common/server-restart-notifications] - layout:code post: server-restart-notifications_i've-restarted,-but-i-still-se -->
 
 ```
 

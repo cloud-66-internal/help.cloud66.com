@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/Partners] - post: -->
 
 
 ## Step 3: Commit and redeploy your stack

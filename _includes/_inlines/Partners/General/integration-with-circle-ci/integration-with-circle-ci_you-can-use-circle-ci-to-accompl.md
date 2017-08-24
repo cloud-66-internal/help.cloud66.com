@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/Partners] - post: -->
 
 
 You can use Circle CI to accomplish continuous integration and deployment of your application together with Cloud 66.

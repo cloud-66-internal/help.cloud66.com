@@ -1,4 +1,3 @@
-<!-- usedin: [ _rails/Tutorials] - post: -->
 
 
 Start by [SSHing to your server](http://help.cloud66.com/managing-your-stack/ssh-to-your-server). Then go to your `STACK_PATH` (eg. `cd $STACK_PATH`) and run the following command:

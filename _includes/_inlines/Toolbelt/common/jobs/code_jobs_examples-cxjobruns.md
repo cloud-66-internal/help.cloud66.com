@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/Toolbelt/common/jobs] - layout:code post: jobs_examples -->
 
 ```
 $ cx job run -s "My Awesome App" my_job

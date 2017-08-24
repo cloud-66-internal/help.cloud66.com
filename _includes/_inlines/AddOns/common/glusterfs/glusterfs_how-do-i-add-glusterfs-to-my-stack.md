@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/AddOns] - post: -->
 
 
 ## How do I add GlusterFS to my stack?

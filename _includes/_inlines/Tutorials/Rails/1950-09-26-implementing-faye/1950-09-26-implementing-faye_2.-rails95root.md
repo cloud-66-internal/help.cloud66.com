@@ -1,4 +1,3 @@
-<!-- usedin: [ _rails/Tutorials] - post: -->
 
 
 ### 2. RAILS_ROOT/.cloud66/files/add_thin_and_faye.sh

@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/stack-management] - post: -->
 
 ## Pre-stop command
 

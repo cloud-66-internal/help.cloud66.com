@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/deployment] - post: -->
 
 ## Note
 The gateway should be defined and open before you can use it in manifest.

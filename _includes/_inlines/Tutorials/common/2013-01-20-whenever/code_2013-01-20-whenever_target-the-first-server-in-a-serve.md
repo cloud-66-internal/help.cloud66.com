@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/Tutorials/common/2013-01-20-whenever] - layout:code post: 2013-01-20-whenever_target-the-first-server-in-a-server-gro -->
 
 ```
 env :PATH, ENV['PATH']

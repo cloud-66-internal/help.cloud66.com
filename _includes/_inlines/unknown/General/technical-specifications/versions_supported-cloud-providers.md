@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/Introduction] - post: -->
 
 
 ## Supported cloud providers

@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/StackManagement/common/ssh] - layout: code
 post: ssh_cloud-provider's-firewall-api-has-delay.md -->
 ```
 cx lease -s <STACK_NAME> -e <ENVIRONMENT> -p 22 -t 10

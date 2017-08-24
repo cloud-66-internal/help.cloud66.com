@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/Introduction] - post: -->
 
 
 ### What firewalls are installed on servers deployed by Cloud 66?

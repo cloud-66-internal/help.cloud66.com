@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/Tutorials] - post: -->
 
 
 Having a failover group can help you prevent unwanted downtime should your primary stack become unresponsive, for anything from hardware to networking issues. Follow this guide to setup your failover stack, and how to use it if necessary.

@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/StackManagement/common/meta-data-service] - layout:code post: meta-data-service_server-meta-data-service -->
 
 ```
 

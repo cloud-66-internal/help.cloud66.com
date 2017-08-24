@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/StackManagement/common/custom-config] - layout:code post: custom-config_note -->
 
 ```
 

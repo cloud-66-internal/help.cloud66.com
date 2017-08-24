@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/stack-management] - post: -->
 
 
 ### WWW or non-WWW in your URL

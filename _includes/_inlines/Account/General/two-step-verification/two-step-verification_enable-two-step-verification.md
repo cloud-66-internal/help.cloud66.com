@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/account] - post: -->
 
 ## Enable two-step verification
 

@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/AddOns/common/memcached] - layout:code post: memcached_customize-memcached -->
 
 ```
 

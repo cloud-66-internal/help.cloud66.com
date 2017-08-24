@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/account] - post: -->
 
 ## Overview
 Your [data, infrastructure and code security](/introduction-to-cloud-66/security-summary) is of utmost importance to us. We continuously monitor and audit our entire system for security and invite all security experts to share their concerns and options with us regarding Cloud 66 security and how we can do better.

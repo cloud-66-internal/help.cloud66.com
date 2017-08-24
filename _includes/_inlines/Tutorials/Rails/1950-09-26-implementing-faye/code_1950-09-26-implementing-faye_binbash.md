@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye] - post: -->
 
 ```
 !/bin/bash

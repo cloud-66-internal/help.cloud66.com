@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/Deployment/common/deployment-gateway] - layout:code post: deployment-gateway_accessing-your-servers-behind-the-gatewa -->
 
 ```
 

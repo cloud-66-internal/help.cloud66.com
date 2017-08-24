@@ -1,4 +1,3 @@
-<!-- usedin: [ _includes/_inlines/GettingStarted/common/advanced-deploy] - layout:code post: advanced-deploy_what-is-a-manifest-file? -->
 
 ```
 

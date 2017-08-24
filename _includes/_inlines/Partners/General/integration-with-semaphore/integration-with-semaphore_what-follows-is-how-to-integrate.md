@@ -1,4 +1,3 @@
-<!-- usedin: [ _general/Partners] - post: -->
 
 
 What follows is how to integrate [Semaphore](https://semaphoreapp.com) with Cloud 66.

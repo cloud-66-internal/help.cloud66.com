@@ -1,4 +1,3 @@
-<!-- usedin: [ _legacy_docker/Tutorials] - post: -->
 
 
 ### 2. Add a CNAME record in your DNS provider dashboard 
