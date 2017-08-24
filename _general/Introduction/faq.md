@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: FAQs
-categories: unknown
+categories: introduction
 lead: ""
 legacy: false
 
