@@ -2,12 +2,12 @@
 layout: post
 template: one-col
 title: Manage your stacks from Slack with ChatOps
-categories: unknown
+categories: tutorials
 lead: ""
 legacy: false
 
 ---
-{% assign product = "General" %}
+{% assign product = "Rails" %}
 
 {% include _inlines/unknown/General/manage-stacks-chatops/intro_cloud-66-chatops.md %}
 {% include _inlines/unknown/General/manage-stacks-chatops/intro_quick-install.md %}
