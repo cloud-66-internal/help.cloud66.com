@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Cloud66 Status
-categories: unknown
+categories: introduction
 lead: ""
 legacy: false
 

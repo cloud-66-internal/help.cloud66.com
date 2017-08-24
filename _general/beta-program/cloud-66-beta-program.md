@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Cloud 66 Beta program
-categories: BetaProgram
+categories: beta-program
 lead: ""
 legacy: false
 

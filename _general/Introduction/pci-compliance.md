@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: PCI DSS compliance guide
-categories: unknown
+categories: introduction
 lead: ""
 legacy: false
 
