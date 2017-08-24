@@ -3,12 +3,16 @@ layout: post
 template: one-col
 title:  "Getting Started with Cloud 66 for Rails"
 categories: getting-started
-lead: Build and Deploy your first Rails / Rack application with Cloud 66
+lead: How to properly use Cloud 66 for Rails 
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-Cloud 66 for {{ include.product }}, supports the following stack management features:
+Cloud 66 for Rails, supports the following Getting Started guides:
 
-- [MySQL](mysql.html) 
-- [PostgreSQL](postgres.html)
+- [Advanced deployment](advanced-deploy.html)
+- [Custom Git repository](custom-git-repo.html)
+- [Networking ports](networking-ports.html)
+- [Stack Definition](stack-definition.html)
+- [Choosing server size](server-size.html)
+- [Stack environments](stack-environments.html)

@@ -1,28 +1,28 @@
 ---
 layout: post
 template: one-col
-title:  "Using Databases with Rails"
+title:  "Using Add-ons with Rails"
 categories: addons
-lead: Backup, recovery and replication of databases with Cloud 66 for Rails
+lead: Add-ons with Cloud 66 for Rails
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
 Cloud 66 for Rails supports the following add-ons features:
 
-- [Add-in implementation](add-in-implementation.html)
-- [Add-ins jobs](add-ins-jobs.html)
-- [Custom server](custom-server.html)
-- [Custom web-servers](custom-web-servers.html)
-- [Database bacakups](database-backups.html)
+- [Add-in Implementation](add-in-implementation.html)
+- [Add-ins Jobs](add-ins-jobs.html)
+- [Custom Server](custom-server.html)
+- [Custom Web-Servers](custom-web-servers.html)
+- [Database Bacakups](database-backups.html)
 - [Elasticsearch](elasticsearch.html)
 - [Filebeat](filebeat.html)
 - [Glusterfs](glusterfs.html)
 - [Haproxy](haproxy.html)
 - [Influxdb](influxdb.html)
 - [Let's encrypt](lets-encrypt.html)
-- [Load balancer](load-balancer.html)
-- [Load balancing](load-balancing.html)
+- [Load Balancer](load-balancer.html)
+- [Load Balancing](load-balancing.html)
 - [Logentries](logentries.html)
 - [Memcached](memcached.html)
 - [Rabbitmq](rabbitmq.html)

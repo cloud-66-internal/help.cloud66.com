@@ -8,7 +8,13 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-Cloud 66 for {{ include.product }}, supports the following databases:
+Cloud 66 for Rails, supports the following databases:
 
-- [MySQL](mysql.html) 
-- [PostgreSQL](postgres.html)
+- [Backup Verification](backup-verifiers.html)
+- [Database Backup](database-backup.html)
+- [Database one-time Import](database-import.html)
+- [Database Mangement](database-management.html)
+- [Database Replication](database-replication.html)
+- [Elasticsearch Scaling](elasticsearch-scaling.html)
+- [Glusterfs Scaling](glusterfs-scaling.html)
+- [MongoDB Replica Sets](mongodb-replica-sets.html)
