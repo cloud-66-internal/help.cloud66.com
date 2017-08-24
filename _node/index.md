@@ -8,10 +8,10 @@ legacy: false
 ---
 
  - [Add-Ons](addons)
- - [Databases](Databases)
- - [Deployment](Deployment)
+ - [Databases](databases)
+ - [Deployment](deployment)
  - [Failover Groups](failover-groups)
  - [Getting Started](getting-started)
  - [Stack Management](stack-management)
- - [Toolbelt](Toolbelt)
- - [Tutorials](Tutorials)
+ - [Toolbelt](toolbelt)
+ - [Tutorials](tutorials)

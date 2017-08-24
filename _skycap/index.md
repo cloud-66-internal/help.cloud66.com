@@ -11,5 +11,5 @@ legacy: false
 - [Deployment](deployment)
 - [Getting Started](getting-started)
 - [Stack Management](stack-management)
-- [Tutorials](Tutorials)
+- [Tutorials](tutorials)
 
