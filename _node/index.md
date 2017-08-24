@@ -2,17 +2,16 @@
 layout: post
 template: one-col
 title:  "Node"
-categories: node
+categories:
 lead: Using Node with Cloud66
 legacy: false
-permalink: /:categories/index.html
 ---
 
  - [Add-Ons](addons)
  - [Databases](Databases)
  - [Deployment](Deployment)
- - [Failover Groups](FailoverGroups)
- - [Getting Started](GettingStarted)
- - [Stack Management](StackManagement)
+ - [Failover Groups](failover-groups)
+ - [Getting Started](getting-started)
+ - [Stack Management](stack-management)
  - [Toolbelt](Toolbelt)
  - [Tutorials](Tutorials)
