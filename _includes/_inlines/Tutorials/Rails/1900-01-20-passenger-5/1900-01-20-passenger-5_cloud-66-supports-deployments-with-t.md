@@ -1,4 +1,6 @@
-<!-- usedin: [ _rails/Tutorials/1900-01-20-passenger-5.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-first.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-second.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-supports-deployments-w.html" ]
+ usedin: [ _rails/Tutorials/1900-01-20-passenger-5.md] -->
 
 
 Cloud 66 supports deployments with the new Phusion Passenger 5 - all new stacks and servers will be using this version. If you have an existing stack that is running on Passenger 4, any newly scaled up servers will be upgraded. If your Nginx configuration is still on the old version, you may see this error message:

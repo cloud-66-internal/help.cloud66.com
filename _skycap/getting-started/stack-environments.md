@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/stack-environments/stack-environments_stack-environments.html" ]
 layout: post
 template: one-col
 title: Stack Environments

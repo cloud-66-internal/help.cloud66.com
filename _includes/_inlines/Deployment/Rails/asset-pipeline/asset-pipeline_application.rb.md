@@ -1,4 +1,6 @@
-<!-- usedin: [ _rails/deployment/asset-pipeline.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_application.rb-nfigassetse.html" ]
+ usedin: [ _rails/deployment/asset-pipeline.md] -->
 
 
 ### Application.rb

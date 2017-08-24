@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/Databases/mongodb-replica-sets.md, _maestro/Databases/mongodb-replica-sets.md, _node/Databases/mongodb-replica-sets.md, _rails/databases/mongodb-replica-sets.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-velopments.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-velopments-2.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-lionmystack.html" ]
+ usedin: [ _legacy_docker/Databases/mongodb-replica-sets.md, _maestro/Databases/mongodb-replica-sets.md, _node/Databases/mongodb-replica-sets.md, _rails/databases/mongodb-replica-sets.md] -->
 
 
 ## Configure Mongoid

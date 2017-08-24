@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/Tutorials/1900-10-10-nginx-ssl-ciphers.md, _maestro/Tutorials/1900-10-10-nginx-ssl-ciphers.md, _node/tutorials/1900-10-10-nginx-ssl-ciphers.md, _rails/Tutorials/1900-10-10-nginx-ssl-ciphers.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-1.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-2.html" ]
+ usedin: [ _legacy_docker/Tutorials/1900-10-10-nginx-ssl-ciphers.md, _maestro/Tutorials/1900-10-10-nginx-ssl-ciphers.md, _node/tutorials/1900-10-10-nginx-ssl-ciphers.md, _rails/Tutorials/1900-10-10-nginx-ssl-ciphers.md] -->
 
 
 You can strengthen nginx SSL security by adjusting its SSL cipher settings. You can change this using [CustonConfig](http://help.cloud66.com/managing-your-stack/customconfig). Please remember that the most secure settings (below) is not backward compatible with IE6 and Windows XP clients.

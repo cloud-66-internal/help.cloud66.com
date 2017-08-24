@@ -1,4 +1,6 @@
-<!-- usedin: [ _general/Partners/integration-with-weave-scope.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Partners/General/integration-with-weave-scope/code_integration-with-weave-scope_step-2-add-the-weavescop.html" ]
+ usedin: [ _general/Partners/integration-with-weave-scope.md] -->
 
 
 ## Step 2: Add the weavescope snippet

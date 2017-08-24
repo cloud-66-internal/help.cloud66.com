@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_having-a-failover-group-can-help-.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_setup-the-failover-group.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_1.-code.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_2.-data.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_3.-traffic.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_how-to-use-the-failover-stack.html" ]
 layout: post
 template: one-col
 title: How to deal with a failover group

@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/Tutorials/2017-02-26-ssl-certificate-issues.md, _maestro/Tutorials/2017-02-26-ssl-certificate-issues.md, _node/tutorials/2017-02-26-ssl-certificate-issues.md, _rails/Tutorials/2017-02-26-ssl-certificate-issues.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/code_2039-02-26-ssl-certificate-issues_matching-certificate.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/code_2039-02-26-ssl-certificate-issues_matching-certificate.html" ]
+ usedin: [ _legacy_docker/Tutorials/2017-02-26-ssl-certificate-issues.md, _maestro/Tutorials/2017-02-26-ssl-certificate-issues.md, _node/tutorials/2017-02-26-ssl-certificate-issues.md, _rails/Tutorials/2017-02-26-ssl-certificate-issues.md] -->
 
 
 ### Matching certificates and keys

@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/stack-management/ssh.md, _maestro/stack-management/ssh.md, _node/stack-management/ssh.md, _rails/stack-management/ssh.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh/code_ssh_detected-ip-is-different-leaseslt.html" ]
+ usedin: [ _legacy_docker/stack-management/ssh.md, _maestro/stack-management/ssh.md, _node/stack-management/ssh.md, _rails/stack-management/ssh.md] -->
 
 
 ## Detected IP is different

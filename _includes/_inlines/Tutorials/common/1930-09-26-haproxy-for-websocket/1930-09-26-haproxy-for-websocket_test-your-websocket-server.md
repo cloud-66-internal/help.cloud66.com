@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/Tutorials/1930-09-26-haproxy-for-websocket.md, _maestro/Tutorials/1930-09-26-haproxy-for-websocket.md, _rails/Tutorials/1930-09-26-haproxy-for-websocket.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1930-09-26-haproxy-for-websocket/code_1930-09-26-haproxy-for-websocket_test-your-websocket-s.html" ]
+ usedin: [ _legacy_docker/Tutorials/1930-09-26-haproxy-for-websocket.md, _maestro/Tutorials/1930-09-26-haproxy-for-websocket.md, _rails/Tutorials/1930-09-26-haproxy-for-websocket.md] -->
 
 
 ## Test your WebSocket servers

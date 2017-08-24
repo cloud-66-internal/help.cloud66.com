@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/cloud66-badge/cloud66-badge_you-can-use-cloud-66-to-deploy-and-manage-you.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/cloud66-badge/cloud66-badge_important.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/cloud66-badge/cloud66-badge_http.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/cloud66-badge/cloud66-badge_https.html" ]
 layout: post
 template: one-col
 title: Cloud66 Badge

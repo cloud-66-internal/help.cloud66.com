@@ -1,4 +1,6 @@
-<!-- usedin: [ _rails/Tutorials/2014-09-26-local-cached-copy-error.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2014-09-26-local-cached-copy-error/code_2014-09-26-local-cached-copy-error_when-you-deploy-to-.html" ]
+ usedin: [ _rails/Tutorials/2014-09-26-local-cached-copy-error.md] -->
 
 
 When you deploy to your web servers, a cache-copy of your application is automatically kept in the `$STACK_BASE/shared/cached-copy` folder.

@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_about-websocket.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_cloud-66-configuration-for-web.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_websocket-through-a-load-balan.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_note.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_test-your-websocket-server.html" ]
 layout: post
 template: one-col
 title: Cloud 66 WebSocket support

@@ -1,4 +1,6 @@
-<!-- post: -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_manually-download-curlo.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_manually-download-curlomysq.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_manually-download-catmysqltar.html" ]
+ post: -->
 
 
 #### Manually download

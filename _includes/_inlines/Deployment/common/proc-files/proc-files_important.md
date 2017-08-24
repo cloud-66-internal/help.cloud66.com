@@ -1,4 +1,6 @@
-<!-- usedin: [ _rails/deployment/proc-files.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/proc-files/code_proc-files_important-code.html" ]
+ usedin: [ _rails/deployment/proc-files.md] -->
 
 
 ### Important

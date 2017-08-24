@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2016-09-26-permission-denied-errors/2016-09-26-permission-denied-errors_if-your-application-nee.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2016-09-26-permission-denied-errors/2016-09-26-permission-denied-errors_important.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2016-09-26-permission-denied-errors/2016-09-26-permission-denied-errors_resolution-1-configuri.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2016-09-26-permission-denied-errors/2016-09-26-permission-denied-errors_resolution-2-deploy-ho.html" ]
 layout: post
 template: one-col
 title: Permission errors during deployment

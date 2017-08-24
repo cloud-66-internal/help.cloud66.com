@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/Tutorials/1936-09-26-symlink-folders.md, _maestro/Tutorials/1936-09-26-symlink-folders.md, _node/tutorials/1936-09-26-symlink-folders.md, _rails/Tutorials/1936-09-26-symlink-folders.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1936-09-26-symlink-folders/code_1936-09-26-symlink-folders_symbolic-link-dirp.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1936-09-26-symlink-folders/code_1936-09-26-symlink-folders_symbolic-link-oduction.html" ]
+ usedin: [ _legacy_docker/Tutorials/1936-09-26-symlink-folders.md, _maestro/Tutorials/1936-09-26-symlink-folders.md, _node/tutorials/1936-09-26-symlink-folders.md, _rails/Tutorials/1936-09-26-symlink-folders.md] -->
 
 
 ## Symbolic link

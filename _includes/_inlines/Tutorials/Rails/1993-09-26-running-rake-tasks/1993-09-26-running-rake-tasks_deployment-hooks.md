@@ -1,4 +1,6 @@
-<!-- usedin: [ _rails/Tutorials/1993-09-26-running-rake-tasks.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-binbash.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-oductio.html" ]
+ usedin: [ _rails/Tutorials/1993-09-26-running-rake-tasks.md] -->
 
 
 ### Deployment hooks

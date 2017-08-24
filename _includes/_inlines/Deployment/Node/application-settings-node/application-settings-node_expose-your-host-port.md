@@ -1,4 +1,6 @@
-<!-- usedin: [ _node/deployment/application-settings-node.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Node/application-settings-node/code_application-settings-node_expose-your-host-port-rportp.html" ]
+ usedin: [ _node/deployment/application-settings-node.md] -->
 
 
 ##  Expose your host port

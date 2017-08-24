@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_contents.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-agent.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_important.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_new-ip-addresses.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-hostnames.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_finding-your-cloud-66-hostname.html" ]
 layout: post
 template: one-col
 title: Server IP addresses and hostnames

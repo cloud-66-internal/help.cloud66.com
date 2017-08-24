@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/custom_git_repo/custom_git_repo_contents.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/custom_git_repo/custom_git_repo_public-repositories.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/custom_git_repo/custom_git_repo_notice.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/custom_git_repo/custom_git_repo_private-repositories.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/custom_git_repo/custom_git_repo_github-example.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/custom_git_repo/custom_git_repo_bitbucket-example.html" ]
 layout: post
 template: one-col
 title: Connecting Your Git Repository

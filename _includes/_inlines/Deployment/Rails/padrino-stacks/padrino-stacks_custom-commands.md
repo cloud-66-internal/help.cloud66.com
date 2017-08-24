@@ -1,4 +1,6 @@
-<!-- usedin: [ _rails/deployment/padrino-stacks.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-cxsettingss.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/padrino-stacks/code_padrino-stacks_custom-commands-velopment.html" ]
+ usedin: [ _rails/deployment/padrino-stacks.md] -->
 
 
 ## Custom commands
