@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Stack notifications
-categories: StackManagement
+categories: stack-management
 lead: ""
 legacy: true
 

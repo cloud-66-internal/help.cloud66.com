@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Rack Custom Webserver Health
-categories: StackManagement
+categories: stack-management
 lead: ""
 legacy: false
 

@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Dockerfile
-categories: Getting Started
+categories: getting-started
 lead: ""
 legacy: false
 

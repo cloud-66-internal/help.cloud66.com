@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Choosing Server Size
-categories: Getting Started
+categories: getting-started
 lead: ""
 legacy: false
 

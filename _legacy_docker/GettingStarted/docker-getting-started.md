@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Docker Getting Started (Building Images)
-categories: GettingStarted
+categories: getting-started
 lead: ""
 legacy: true
 

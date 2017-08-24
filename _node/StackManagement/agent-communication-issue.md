@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Agent Communication Issue
-categories: StackManagement
+categories: stack-management
 lead: ""
 legacy: false
 

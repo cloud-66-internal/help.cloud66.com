@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: SSH to your server
-categories: StackManagement
+categories: stack-management
 lead: ""
 legacy: false
 

@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Connecting Your Git Repository
-categories: Getting Started
+categories: getting-started
 lead: ""
 legacy: true
 

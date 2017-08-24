@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Server Meta Data Service
-categories: StackManagement
+categories: stack-management
 lead: ""
 legacy: false
 

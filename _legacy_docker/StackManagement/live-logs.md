@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Live-Logs
-categories: StackManagement
+categories: stack-management
 lead: ""
 legacy: true
 

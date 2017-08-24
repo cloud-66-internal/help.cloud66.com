@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Service life-cycle management
-categories: StackManagement
+categories: stack-management
 lead: ""
 legacy: false
 

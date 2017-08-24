@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Service Networking
-categories: Getting Started
+categories: getting-started
 lead: ""
 legacy: true
 

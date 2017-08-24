@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Failover groups
-categories: FailoverGroups
+categories: failover-groups
 lead: ""
 legacy: false
 

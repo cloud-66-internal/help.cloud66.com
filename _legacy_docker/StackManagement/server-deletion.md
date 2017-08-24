@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Server Deletion
-categories: StackManagement
+categories: stack-management
 lead: ""
 legacy: true
 

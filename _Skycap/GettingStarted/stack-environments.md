@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Stack Environments
-categories: Getting Started
+categories: getting-started
 lead: ""
 legacy: false
 

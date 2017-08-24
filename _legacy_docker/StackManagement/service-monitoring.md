@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Service Monitoring
-categories: StackManagement
+categories: stack-management
 lead: ""
 legacy: true
 
