@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Lets Encrypt
+title: Let's Encrypt
 categories: AddOns
 lead: ""
 legacy: false

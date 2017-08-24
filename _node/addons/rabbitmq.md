@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: RabbitMQß
+title: RabbitMQ
 categories: AddOns
 lead: ""
 legacy: false
