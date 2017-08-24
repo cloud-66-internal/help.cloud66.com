@@ -9,7 +9,7 @@ permalink: /:collection/:categories/index.html
 ---
 
 
-- [Let's Encrypt](Lets-encrypt)
+- [Let's Encrypt](lets-encrypt)
 - [Add-In Implementation](add-in-implementation)
 - [Jobs](add-ins-jobs)
 - [Custom Server](custom-server)
