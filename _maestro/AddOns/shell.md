@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: shell
+title: Shell
 categories: AddOns
 lead: ""
 legacy: false

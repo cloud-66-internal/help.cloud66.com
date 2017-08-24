@@ -1,14 +1,14 @@
 ---
 layout: post
 template: one-col
-title:  "Using Databases with Rails"
+title:  "Using Failover Groups with Rails"
 categories: failover-groups
-lead: Backup, recovery and replication of databases with Cloud 66 for Rails
+lead: Failover groups with Cloud 66 for Rails
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-Cloud 66 for {{ include.product }}, supports the following failover groups features:
+Cloud 66 for Rails, supports the following failover groups features:
 
-- [MySQL](mysql.html) 
-- [PostgreSQL](postgres.html)
+- [Failover Groups](failover-groups.html) 
+

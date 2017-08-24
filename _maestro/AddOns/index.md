@@ -1,20 +1,22 @@
 ---
 layout: post
 template: one-col
-title:  "Using Add-ons with Rails"
+title:  "Using Addons with Maestro"
 categories: addons
-lead: Add-ons with Cloud 66 for Rails
+lead: Addons for container stacks supported by Cloud 66 Maestro
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-Cloud 66 for Rails supports the following add-ons features:
+Cloud 66 for Maestro, supports the following AddOns features:
 
 - [Add-in Implementation](add-in-implementation.html)
 - [Add-ins Jobs](add-ins-jobs.html)
 - [Custom Server](custom-server.html)
 - [Custom Web-Servers](custom-web-servers.html)
 - [Database Bacakups](database-backups.html)
+- [Docker Server Task](docker-server-task.html)
+- [Docker Service Task](docker-service-task.html)
 - [Elasticsearch](elasticsearch.html)
 - [Filebeat](filebeat.html)
 - [Glusterfs](glusterfs.html)
@@ -26,7 +28,6 @@ Cloud 66 for Rails supports the following add-ons features:
 - [Logentries](logentries.html)
 - [Memcached](memcached.html)
 - [Rabbitmq](rabbitmq.html)
-- [Rake-task](rake-task.html)
 - [Redis](redis.html)
 - [Shell](shell.html)
-- [SSL](ssl.html)
+- [SSL Certificate](ssl.html)

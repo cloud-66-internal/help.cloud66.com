@@ -3,12 +3,12 @@ layout: post
 template: one-col
 title:  "Rails stacks management"
 categories: stack-management
-lead: Backup, recovery and replication of databases with Cloud 66 for Rails
+lead: Stack Management with Cloud 66 for Rails
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-Cloud 66 for {{ include.product }}, supports the following stack management features:
+Cloud 66 for Rails, supports the following stack management features:
 
 - [Agent communication issues](agent-communication-issue)
 - [Applying upgrades](applying-upgrades.html)
@@ -24,10 +24,10 @@ Cloud 66 for {{ include.product }}, supports the following stack management feat
 - [Scaling](scaling.html)
 - [Server deletion](server-deletion.html)
 - [Server monitoring](server-monitoring.html)
-- [](server-restart-notifications.html)
-- [](service-lifecycle-management.html)
-- [](service-monitoring.html)
-- [](ssh-to-server.html)
-- [](ssh.html)
-- [](stack-notifications.html)
-- [](troubleshoot-ror-deployment-failure.html)
+- [Server restart notifications](server-restart-notifications.html)
+- [Service lifecycle management](service-lifecycle-management.html)
+- [Service monitoring](service-monitoring.html)
+- [SSH to server](ssh-to-server.html)
+- [SSH](ssh.html)
+- [Stack notifications](stack-notifications.html)
+- [Deployment failure](troubleshoot-ror-deployment-failure.html)

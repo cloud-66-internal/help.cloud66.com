@@ -1,14 +1,14 @@
 ---
 layout: post
 template: one-col
-title:  "Using Databases with Rails"
+title:  "Using Databases with Maestro"
 categories: databases
-lead: Backup, recovery and replication of databases with Cloud 66 for Rails
+lead: Backup, recovery and replication of databases with Cloud 66 Maestro
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-Cloud 66 for Rails, supports the following databases:
+Cloud 66 Maestro supports the following database features:
 
 - [Backup Verification](backup-verifiers.html)
 - [Database Backup](database-backup.html)
