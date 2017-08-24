@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/stack-management/ssh.md, _maestro/stack-management/ssh.md, _node/stack-management/ssh.md, _rails/stack-management/ssh.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh/code_ssh_versbose-mode-ssh-vvvsshs.html" ]
+ usedin: [ _legacy_docker/stack-management/ssh.md, _maestro/stack-management/ssh.md, _node/stack-management/ssh.md, _rails/stack-management/ssh.md] -->
 
 
 ## Versbose mode SSH

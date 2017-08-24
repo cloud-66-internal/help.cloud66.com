@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/deployment/redeployment-hook.md, _maestro/Deployment/redeployment-hook.md, _node/deployment/redeployment-hook.md, _rails/deployment/redeployment-hook.md, _skycap/deployment/redeployment-hook.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/redeployment-hook/code_redeployment-hook_github-integration-cxsettingss.html" ]
+ usedin: [ _legacy_docker/deployment/redeployment-hook.md, _maestro/Deployment/redeployment-hook.md, _node/deployment/redeployment-hook.md, _rails/deployment/redeployment-hook.md, _skycap/deployment/redeployment-hook.md] -->
 
 
 #### Github Integration

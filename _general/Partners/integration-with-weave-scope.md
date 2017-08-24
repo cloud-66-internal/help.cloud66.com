@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_weave-scopehttps.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-1-checkout-your-customco.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-2-add-the-weavescope-sni.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-3-commit-and-redeploy-yo.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-4-open-port-4040-to-acce.html" ]
 layout: post
 template: one-col
 title: Integration With Weave Scope

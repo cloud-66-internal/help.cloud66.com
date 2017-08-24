@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/unknown/General/data-protection/data-protection_amazon-web-services-aws-and-rackspa.html" ]
 layout: post
 template: one-col
 title: European data protection compliance

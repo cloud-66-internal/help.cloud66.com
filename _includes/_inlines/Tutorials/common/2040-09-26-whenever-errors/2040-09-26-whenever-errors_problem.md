@@ -1,4 +1,6 @@
-<!-- usedin: [ _rails/Tutorials/2017-08-21-whenever-errors.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2040-09-26-whenever-errors/code_2040-09-26-whenever-errors_problem-inbashbund.html" ]
+ usedin: [ _rails/Tutorials/2017-08-21-whenever-errors.md] -->
 
 
 ## Problem

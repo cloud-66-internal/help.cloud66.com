@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-monitoring/server-monitoring_although-cloud-66-detects-server-connecti.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-monitoring/server-monitoring_cpu-usage.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-monitoring/server-monitoring_memory-usage.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-monitoring/server-monitoring_disk-usage.html" ]
 layout: post
 template: one-col
 title: Server monitoring

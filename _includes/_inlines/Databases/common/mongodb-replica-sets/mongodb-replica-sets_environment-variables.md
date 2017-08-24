@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/Databases/mongodb-replica-sets.md, _maestro/Databases/mongodb-replica-sets.md, _node/Databases/mongodb-replica-sets.md, _rails/databases/mongodb-replica-sets.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_environment-variables-godb.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_environment-variables-godb-2.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_environment-variables-nmystackc.m.html" ]
+ usedin: [ _legacy_docker/Databases/mongodb-replica-sets.md, _maestro/Databases/mongodb-replica-sets.md, _node/Databases/mongodb-replica-sets.md, _rails/databases/mongodb-replica-sets.md] -->
 
 
 ## Environment variables

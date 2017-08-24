@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/deployment/build-grid.md, _skycap/buildgrid/build-grid.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/build-grid/code_build-grid_envoironment-variables-in-buildgrid-.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/build-grid/code_build-grid_envoironment-variables-in-buildgrid--2.html" ]
+ usedin: [ _legacy_docker/deployment/build-grid.md, _skycap/buildgrid/build-grid.md] -->
 
 
 ## Envoironment variables in BuildGrid

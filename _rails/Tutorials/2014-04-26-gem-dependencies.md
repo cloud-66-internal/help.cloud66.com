@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/2014-04-26-gem-dependencies_depending-on-which-gems-youre-.html" ]
 layout: post
 template: one-col
 title: Gem dependency errors

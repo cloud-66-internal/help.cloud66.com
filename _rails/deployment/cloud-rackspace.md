@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-rackspace/cloud-rackspace_contents.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-rackspace/cloud-rackspace_about-using-rackspace-cloud.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-rackspace/cloud-rackspace_generate-a-rackspace-api-key.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-rackspace/cloud-rackspace_add-rackspace-key-to-a-stack.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-rackspace/cloud-rackspace_notice.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-rackspace/cloud-rackspace_external-links.html" ]
 layout: post
 template: one-col
 title: Rackspace Cloud

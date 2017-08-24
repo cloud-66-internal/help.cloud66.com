@@ -1,4 +1,6 @@
-<!-- usedin: [ _rails/Tutorials/1950-09-26-implementing-faye.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_3.-rails95root-fayethin.html" ]
+ usedin: [ _rails/Tutorials/1950-09-26-implementing-faye.md] -->
 
 
 ### 3. RAILS_ROOT/Procfile

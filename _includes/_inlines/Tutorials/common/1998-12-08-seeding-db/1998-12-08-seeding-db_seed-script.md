@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/Tutorials/1998-12-08-seeding-db.md, _maestro/Tutorials/1998-12-08-seeding-db.md, _node/tutorials/1998-12-08-seeding-db.md, _rails/Tutorials/1998-12-08-seeding-db.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1998-12-08-seeding-db/code_1998-12-08-seeding-db_seed-script-binbash.html" ]
+ usedin: [ _legacy_docker/Tutorials/1998-12-08-seeding-db.md, _maestro/Tutorials/1998-12-08-seeding-db.md, _node/tutorials/1998-12-08-seeding-db.md, _rails/Tutorials/1998-12-08-seeding-db.md] -->
 
 
 ## Seed script

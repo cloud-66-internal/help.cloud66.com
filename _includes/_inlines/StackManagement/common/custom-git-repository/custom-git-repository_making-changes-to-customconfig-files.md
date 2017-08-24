@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/stack-management/custom-git-repository.md, _maestro/stack-management/custom-git-repository.md, _node/stack-management/custom-git-repository.md, _rails/stack-management/custom-git-repository.md, _skycap/stack-management/custom-git-repository.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/custom-git-repository/code_custom-git-repository_making-changes-to-customconfig-f.html" ]
+ usedin: [ _legacy_docker/stack-management/custom-git-repository.md, _maestro/stack-management/custom-git-repository.md, _node/stack-management/custom-git-repository.md, _rails/stack-management/custom-git-repository.md, _skycap/stack-management/custom-git-repository.md] -->
 
 
 ### Making changes to CustomConfig files

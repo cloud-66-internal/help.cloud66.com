@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh/ssh_how-toolbelt-ssh-works.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh/ssh_versbose-mode-ssh.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh/ssh_cloud-providers-firewall-api-has-delay.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh/ssh_detected-ip-is-different.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh/ssh_prompted-for-password.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh/ssh_note.html" ]
 layout: post
 template: one-col
 title: SSH

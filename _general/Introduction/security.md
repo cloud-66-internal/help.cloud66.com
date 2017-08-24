@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Introduction/General/security/security_we-take-your-security-extremely-seriously-at-cloud.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Introduction/General/security/security_infrastructure-security.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Introduction/General/security/security_credit-card-information.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Introduction/General/security/security_customer-protection.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Introduction/General/security/security_reporting-security-issues.html" ]
 layout: post
 template: one-col
 title: Security summary

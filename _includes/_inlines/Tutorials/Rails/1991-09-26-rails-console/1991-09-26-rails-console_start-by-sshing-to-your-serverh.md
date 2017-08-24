@@ -1,4 +1,6 @@
-<!-- usedin: [ _rails/Tutorials/1991-09-26-rails-console.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/code_1991-09-26-rails-console_start-by-sshing-to-your-serv1.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/code_1991-09-26-rails-console_start-by-sshing-to-your-serv.html" ]
+ usedin: [ _rails/Tutorials/1991-09-26-rails-console.md] -->
 
 
 Start by [SSHing to your server](http://help.cloud66.com/managing-your-stack/ssh-to-your-server). Then go to your `STACK_PATH` (eg. `cd $STACK_PATH`) and run the following command:

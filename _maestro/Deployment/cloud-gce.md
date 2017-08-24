@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-gce/cloud-gce_contents.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-gce/cloud-gce_about-using-google-compute-engine-cloud.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-gce/cloud-gce_generate-gce-api-keys.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-gce/cloud-gce_add-gce-keys-to-a-stack.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-gce/cloud-gce_notice.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-gce/cloud-gce_external-links.html" ]
 layout: post
 template: one-col
 title: Google Compute Engine cloud

@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/Tutorials/1970-09-26-manage-backups.md, _maestro/Tutorials/1970-09-26-manage-backups.md, _node/tutorials/1970-09-26-manage-backups.md, _rails/Tutorials/1970-09-26-manage-backups.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_unzip-your-backup-tarxvf.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_unzip-your-backup-catfiletar.html" ]
+ usedin: [ _legacy_docker/Tutorials/1970-09-26-manage-backups.md, _maestro/Tutorials/1970-09-26-manage-backups.md, _node/tutorials/1970-09-26-manage-backups.md, _rails/Tutorials/1970-09-26-manage-backups.md] -->
 
 
 ## Unzip your backup

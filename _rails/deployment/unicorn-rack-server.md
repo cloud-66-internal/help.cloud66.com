@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_about-unicorn.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_deploy-with-unicorn.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_kill-the-web-server.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_start-the-web-server.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_stop-the-web-server.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_restart-the-web-server-zero-downtime.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_warning.html" ]
 layout: post
 template: one-col
 title: Unicorn Rack Server

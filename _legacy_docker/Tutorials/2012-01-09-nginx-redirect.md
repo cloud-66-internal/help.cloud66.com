@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_redirect-from-http-to-https.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_redirect-between-domains-with-htt.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_http.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_https.html" ]
 layout: post
 template: one-col
 title: Nginx Redirect

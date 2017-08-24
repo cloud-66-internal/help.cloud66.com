@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/stack-management/ssh.md, _maestro/stack-management/ssh.md, _node/stack-management/ssh.md, _rails/stack-management/ssh.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh/code_ssh_cloud-providers-firewall-api-has-delay-leaseslt.m.html" ]
+ usedin: [ _legacy_docker/stack-management/ssh.md, _maestro/stack-management/ssh.md, _node/stack-management/ssh.md, _rails/stack-management/ssh.md] -->
 
 
 ## Cloud provider's firewall API has delay

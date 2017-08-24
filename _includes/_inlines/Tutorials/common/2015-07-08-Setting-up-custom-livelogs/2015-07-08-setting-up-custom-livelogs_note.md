@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/Tutorials/2015-07-08-Setting-up-custom-livelogs.md, _maestro/Tutorials/2015-07-08-Setting-up-custom-livelogs.md, _node/tutorials/2015-07-08-Setting-up-custom-livelogs.md, _rails/Tutorials/2015-07-08-Setting-up-custom-livelogs.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-07-08-Setting-up-custom-livelogs/code_2015-07-08-setting-up-custom-livelogs_note-oduction.html" ]
+ usedin: [ _legacy_docker/Tutorials/2015-07-08-Setting-up-custom-livelogs.md, _maestro/Tutorials/2015-07-08-Setting-up-custom-livelogs.md, _node/tutorials/2015-07-08-Setting-up-custom-livelogs.md, _rails/Tutorials/2015-07-08-Setting-up-custom-livelogs.md] -->
 
 
 ### Note

@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/stack-management/scaling.md, _maestro/stack-management/scaling.md, _node/stack-management/scaling.md, _rails/stack-management/scaling.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/scaling/code_scaling_docker-services-rvices.html" ]
+ usedin: [ _legacy_docker/stack-management/scaling.md, _maestro/stack-management/scaling.md, _node/stack-management/scaling.md, _rails/stack-management/scaling.md] -->
 
 
 ### Docker services

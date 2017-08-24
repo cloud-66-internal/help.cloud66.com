@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1987-09-22-psql-failover/1987-09-22-psql-failover_when-you-use-database-replication.html" ]
 layout: post
 template: one-col
 title: PostgreSQL failover procedur

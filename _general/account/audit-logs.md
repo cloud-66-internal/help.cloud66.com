@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/audit-logs/audit-logs_an-audit-log-for-all-account-activities.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/audit-logs/audit-logs_search-audit-log.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/audit-logs/audit-logs_accessing-audit-logs.html" ]
 layout: post
 template: one-col
 title: Audit Logs

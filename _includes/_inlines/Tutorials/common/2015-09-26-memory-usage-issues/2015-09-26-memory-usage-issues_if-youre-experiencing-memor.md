@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/Tutorials/2015-09-26-memory-usage-issues.md, _maestro/Tutorials/2015-09-26-memory-usage-issues.md, _node/tutorials/2015-09-26-memory-usage-issues.md, _rails/Tutorials/2015-09-26-memory-usage-issues.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-09-26-memory-usage-issues/code_2015-09-26-memory-usage-issues_if-youre-experiencing-.html" ]
+ usedin: [ _legacy_docker/Tutorials/2015-09-26-memory-usage-issues.md, _maestro/Tutorials/2015-09-26-memory-usage-issues.md, _node/tutorials/2015-09-26-memory-usage-issues.md, _rails/Tutorials/2015-09-26-memory-usage-issues.md] -->
 
 
 If you're experiencing memory usage issues, such as high memory usage, use the following steps to troubleshoot.

@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/deployment/deploy-hooks.md, _maestro/Deployment/deploy-hooks.md, _node/deployment/deploy-hooks.md, _rails/deployment/deploy-hooks.md, _skycap/deployment/deploy-hooks.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deploy-hooks/code_deploy-hooks_use-a-command-deploy-hook-oduction.html" ]
+ usedin: [ _legacy_docker/deployment/deploy-hooks.md, _maestro/Deployment/deploy-hooks.md, _node/deployment/deploy-hooks.md, _rails/deployment/deploy-hooks.md, _skycap/deployment/deploy-hooks.md] -->
 
 
 ## Use a command deploy hook

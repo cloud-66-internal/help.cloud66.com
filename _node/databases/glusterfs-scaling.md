@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_contents.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_about-scaling-your-glusterfs-cluster.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_configure-a-glusterfs-replica_count.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_note.html" ]
 layout: post
 template: one-col
 title: GlusterFS Scaling

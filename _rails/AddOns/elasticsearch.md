@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/elasticsearch/elasticsearch_what-is-elasticsearch.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/elasticsearch/elasticsearch_add-elasticearch.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/elasticsearch/elasticsearch_note.html" ]
 layout: post
 template: one-col
 title: Elasticsearch

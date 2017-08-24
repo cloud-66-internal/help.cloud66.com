@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/stack-management/meta-data-service.md, _maestro/stack-management/meta-data-service.md, _node/stack-management/meta-data-service.md, _rails/stack-management/meta-data-service.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/meta-data-service/code_meta-data-service_server-meta-data-service-response.html" ]
+ usedin: [ _legacy_docker/stack-management/meta-data-service.md, _maestro/stack-management/meta-data-service.md, _node/stack-management/meta-data-service.md, _rails/stack-management/meta-data-service.md] -->
 
 
 ## Server Meta Data Service

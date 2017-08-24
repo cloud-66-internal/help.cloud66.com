@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/proc-files/proc-files_contents.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/proc-files/proc-files_about-running-background-processes.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/proc-files/proc-files_important.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/proc-files/proc-files_how-to-run-background-processes.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/proc-files/proc-files_running-processes-with-unique-identifiers.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/proc-files/proc-files_scaling-background-processes.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/proc-files/proc-files_pause-and-resume-background-processes.html" ]
 layout: post
 template: one-col
 title: Running background processes

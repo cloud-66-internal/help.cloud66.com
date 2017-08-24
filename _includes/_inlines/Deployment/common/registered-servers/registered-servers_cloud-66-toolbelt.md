@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/deployment/registered-servers.md, _maestro/Deployment/registered-servers.md, _node/deployment/registered-servers.md, _rails/deployment/registered-servers.md, _skycap/deployment/registered-servers.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/registered-servers/code_registered-servers_cloud-66-toolbelt-cxregisters.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/registered-servers/code_registered-servers_cloud-66-toolbelt-cxregisters-2.html" ]
+ usedin: [ _legacy_docker/deployment/registered-servers.md, _maestro/Deployment/registered-servers.md, _node/deployment/registered-servers.md, _rails/deployment/registered-servers.md, _skycap/deployment/registered-servers.md] -->
 
 
 ### Cloud 66 Toolbelt

@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_instructions.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_mysql.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_postgresql.html" ]
 layout: post
 template: one-col
 title: Replacing SQLite with MySQL or PostgreSQL

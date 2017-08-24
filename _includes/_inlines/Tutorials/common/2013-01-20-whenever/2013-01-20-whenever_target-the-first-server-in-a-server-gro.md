@@ -1,4 +1,6 @@
-<!-- usedin: [ _rails/Tutorials/2013-01-20-whenever.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_target-the-first-server-in-a-serve.html" ]
+ usedin: [ _rails/Tutorials/2013-01-20-whenever.md] -->
 
 
 ### Target the first server in a server group

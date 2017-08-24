@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/AddOns/add-ins-jobs.md, _maestro/AddOns/add-ins-jobs.md, _node/addons/add-ins-jobs.md, _rails/AddOns/add-ins-jobs.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/add-ins-jobs/code_add-ins-jobs_default-values-tmp.html" ]
+ usedin: [ _legacy_docker/AddOns/add-ins-jobs.md, _maestro/AddOns/add-ins-jobs.md, _node/addons/add-ins-jobs.md, _rails/AddOns/add-ins-jobs.md] -->
 
 
 ### Default values

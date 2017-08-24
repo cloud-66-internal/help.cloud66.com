@@ -1,4 +1,6 @@
-<!-- usedin: [ _legacy_docker/AddOns/database-backups.md, _maestro/AddOns/database-backups.md, _node/addons/database-backups.md, _rails/AddOns/database-backups.md] -->
+---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/database-backups/code_database-backups_manually-download-curlo.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/database-backups/code_database-backups_manually-download-curlomysq.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/database-backups/code_database-backups_manually-download-catmysqltar.html" ]
+ usedin: [ _legacy_docker/AddOns/database-backups.md, _maestro/AddOns/database-backups.md, _node/addons/database-backups.md, _rails/AddOns/database-backups.md] -->
 
 
 #### Manually download

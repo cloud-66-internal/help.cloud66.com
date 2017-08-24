@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-a-manifest-file.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-service-configuration.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/advanced-deploy/advanced-deploy_when-you-want-full-control-how-your-service.html" ]
 layout: post
 template: one-col
 title: Advanced Deploy

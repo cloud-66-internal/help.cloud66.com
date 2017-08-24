@@ -1,4 +1,5 @@
 ---
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Node/supported-frameworks/supported-frameworks_which-framework-do-we-support-.html" ]
 layout: post
 template: one-col
 title: Supported Node.js frameworks
