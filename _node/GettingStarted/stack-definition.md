@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Stack definition
-categories: Deployment
+categories: getting-started
 lead: ""
 legacy: false
 

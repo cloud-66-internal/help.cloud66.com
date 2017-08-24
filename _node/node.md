@@ -8,7 +8,7 @@ legacy: false
 permalink: /:categories/index.html
 ---
 
- - [Add-Ons](AddOns)
+ - [Add-Ons](addons)
  - [Databases](Databases)
  - [Deployment](Deployment)
  - [Failover Groups](FailoverGroups)
