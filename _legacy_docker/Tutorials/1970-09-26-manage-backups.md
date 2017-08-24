@@ -4,7 +4,7 @@ template: one-col
 title: How to manage your Cloud 66 backups
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

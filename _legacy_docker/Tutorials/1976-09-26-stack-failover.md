@@ -4,7 +4,7 @@ template: one-col
 title: How to deal with a failover group
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

@@ -4,7 +4,7 @@ template: one-col
 title: Toolbelt stack management
 categories: Toolbelt
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

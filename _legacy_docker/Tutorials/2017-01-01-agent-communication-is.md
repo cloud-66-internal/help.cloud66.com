@@ -4,7 +4,7 @@ template: one-col
 title: Agent communication issue
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

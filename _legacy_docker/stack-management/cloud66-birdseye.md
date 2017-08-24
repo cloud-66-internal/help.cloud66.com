@@ -4,7 +4,7 @@ template: one-col
 title: Cloud66 Birdseye
 categories: unknown
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "General" %}

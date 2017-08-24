@@ -4,7 +4,7 @@ template: one-col
 title: Manually add an SSL certificate to a load balancer
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

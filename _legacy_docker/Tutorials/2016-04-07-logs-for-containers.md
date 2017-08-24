@@ -4,7 +4,7 @@ template: one-col
 title: Managing Logs For Containers
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

@@ -4,7 +4,7 @@ template: one-col
 title: Nginx allow and deny by IP
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

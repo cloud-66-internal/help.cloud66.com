@@ -4,7 +4,7 @@ template: one-col
 title: Zero-downtime deployments
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

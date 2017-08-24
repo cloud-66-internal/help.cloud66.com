@@ -4,7 +4,7 @@ template: one-col
 title: Out of memory errors during deployment
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

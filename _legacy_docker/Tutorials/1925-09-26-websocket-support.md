@@ -4,7 +4,7 @@ template: one-col
 title: Cloud 66 WebSocket support
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

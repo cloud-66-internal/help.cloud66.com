@@ -4,7 +4,7 @@ template: one-col
 title: Migrate your stacks across data centers
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

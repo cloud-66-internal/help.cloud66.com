@@ -4,7 +4,7 @@ template: one-col
 title: Troubleshooting issues connecting to your server
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

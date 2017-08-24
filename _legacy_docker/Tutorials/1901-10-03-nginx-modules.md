@@ -4,7 +4,7 @@ template: one-col
 title: Add modules to Nginx
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

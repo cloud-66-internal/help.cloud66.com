@@ -4,7 +4,7 @@ template: one-col
 title: Service Dependency
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

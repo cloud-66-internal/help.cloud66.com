@@ -4,7 +4,7 @@ template: one-col
 title: How to migrate your stack
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

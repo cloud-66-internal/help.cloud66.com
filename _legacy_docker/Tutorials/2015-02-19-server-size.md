@@ -4,7 +4,7 @@ template: one-col
 title: Choosing your server size
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

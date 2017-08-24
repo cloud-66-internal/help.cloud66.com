@@ -4,7 +4,7 @@ template: one-col
 title: SSL Certificate
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

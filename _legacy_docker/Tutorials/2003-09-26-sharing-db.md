@@ -4,7 +4,7 @@ template: one-col
 title: Sharing a database between stacks
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}

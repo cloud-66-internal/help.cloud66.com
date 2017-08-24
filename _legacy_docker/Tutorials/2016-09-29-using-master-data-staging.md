@@ -4,7 +4,7 @@ template: one-col
 title: Using production data on your staging stack
 categories: Tutorials
 lead: ""
-legacy: false
+legacy: true
 
 ---
 {% assign product = "common" %}
