@@ -2,12 +2,12 @@
 layout: post
 template: one-col
 title: Accessing your Git repository
-categories: Tutorials
+categories: tutorials
 lead: ""
 legacy: false
 
 ---
-{% assign product = "common" %}
+{% assign product = "skycap" %}
 
 {% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_public-repositories.md %}
 {% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_notice.md %}

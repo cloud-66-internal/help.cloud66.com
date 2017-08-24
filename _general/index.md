@@ -1,7 +1,14 @@
 ---
-layout: default
+layout: post
+template: one-col
+title:  "General"
+categories: 
+lead: Cloud66 General
+legacy: false
 ---
 
-- [Getting Started](getting-started)
-- [Databases](databases)
-- [Account](account)
+- [BetaProgram](BetaProgram)
+- [Introduction](Introduction)
+- [Partners](Partners)
+- [Teams](Teams)
+- [account](account)
