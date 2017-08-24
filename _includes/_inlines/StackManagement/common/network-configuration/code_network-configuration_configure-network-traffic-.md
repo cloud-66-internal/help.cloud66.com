@@ -1,4 +1,4 @@
-<!-- layout:code post: network-configuration_configure-network-traffic -->
+<!-- usedin: [ _includes/_inlines/StackManagement/common/network-configuration] - layout:code post: network-configuration_configure-network-traffic -->
 
 ```
 

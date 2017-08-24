@@ -1,4 +1,4 @@
-<!-- layout:code post: toolbelt_processes_example -->
+<!-- usedin: [ _includes/_inlines/Toolbelt/common/toolbelt_processes] - layout:code post: toolbelt_processes_example -->
 
 ```
 $ cx processes list -s My_Awesome_Stack

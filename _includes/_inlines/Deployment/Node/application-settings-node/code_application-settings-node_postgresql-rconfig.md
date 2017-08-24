@@ -1,4 +1,4 @@
-<!-- layout:code post: application-settings-node_postgresql -->
+<!-- usedin: [ _includes/_inlines/Deployment/Node/application-settings-node] - layout:code post: application-settings-node_postgresql -->
 
 ```
 

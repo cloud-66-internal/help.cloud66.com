@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _rails/Tutorials] - post: -->
 
 
 If you're experiencing deployment failures related to your asset pipeline manifest configurations, these could be due to issues with old assets.

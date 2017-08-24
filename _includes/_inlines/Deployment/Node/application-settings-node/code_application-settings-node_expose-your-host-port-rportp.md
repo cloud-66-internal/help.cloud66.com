@@ -1,4 +1,4 @@
-<!-- layout:code post: application-settings-node_expose-your-host-port -->
+<!-- usedin: [ _includes/_inlines/Deployment/Node/application-settings-node] - layout:code post: application-settings-node_expose-your-host-port -->
 
 ```
 

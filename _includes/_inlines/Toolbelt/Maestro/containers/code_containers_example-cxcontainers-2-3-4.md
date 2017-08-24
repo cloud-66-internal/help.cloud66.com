@@ -1,4 +1,4 @@
-<!-- layout:code post: containers_example -->
+<!-- usedin: [ _includes/_inlines/Toolbelt/Maestro/containers] - layout:code post: containers_example -->
 
 ```
 $ cx containers exec -s mystack 2844142cbf /bin/bash

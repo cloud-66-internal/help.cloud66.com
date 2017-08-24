@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/Tutorials] - post: -->
 
 
 There are several options to consider when dealing with the infrastructure of a multi-region stack. The most challenging part is related to the application - the infrastructure usually caters for how the application is designed to deal with scalability.

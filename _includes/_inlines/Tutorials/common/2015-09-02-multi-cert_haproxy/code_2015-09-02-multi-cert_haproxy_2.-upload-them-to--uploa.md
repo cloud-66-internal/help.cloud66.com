@@ -1,4 +1,4 @@
-<!-- layout:code post: 2015-09-02-multi-cert_haproxy_2.-upload-them-to- -->
+<!-- usedin: [ _includes/_inlines/Tutorials/common/2015-09-02-multi-cert_haproxy] - layout:code post: 2015-09-02-multi-cert_haproxy_2.-upload-them-to- -->
 
 ```
 cx upload -s stack_name --server haproxy_server_name websitename1.pem_PATH websitename1.pem

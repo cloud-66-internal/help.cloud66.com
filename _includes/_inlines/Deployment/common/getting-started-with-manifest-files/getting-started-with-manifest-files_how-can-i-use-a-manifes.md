@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/deployment] - post: -->
 
 
 ## How can I use a manifest file?

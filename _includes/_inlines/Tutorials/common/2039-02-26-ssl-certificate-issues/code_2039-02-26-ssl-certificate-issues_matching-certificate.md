@@ -1,4 +1,4 @@
-<!-- layout:code post: 2039-02-26-ssl-certificate-issues_matching-certificates-and -->
+<!-- usedin: [ _includes/_inlines/Tutorials/common/2039-02-26-ssl-certificate-issues, _includes/_inlines/Tutorials/common/2039-02-26-ssl-certificate-issues] - layout:code post: 2039-02-26-ssl-certificate-issues_matching-certificates-and -->
 
 ```
 $ openssl rsa -noout -modulus -in FILE.key

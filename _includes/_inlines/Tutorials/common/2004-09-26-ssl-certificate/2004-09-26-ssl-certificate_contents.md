@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/Tutorials] - post: -->
 
 
 To add SSL to your stack, you need to have a SSL certificate and key. Some certificate authorities also provide you with an intermediate certificate. Firstly, please make sure that your SSL keys don't have any passphrases.

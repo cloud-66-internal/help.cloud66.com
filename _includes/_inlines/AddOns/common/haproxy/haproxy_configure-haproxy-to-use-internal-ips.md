@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/AddOns] - post: -->
 
 
 ## Configure HAProxy to use internal IPs

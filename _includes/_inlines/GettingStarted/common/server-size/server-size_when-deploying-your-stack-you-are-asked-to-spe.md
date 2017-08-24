@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/getting-started] - post: -->
 
 
 When deploying your stack, you are asked to specify a server size for the deployment. If you're testing Cloud 66, you may be inclined to do so on as small a server as possible. **We recommend that you do not do this, as this will come at a detriment to your experience with the service.**

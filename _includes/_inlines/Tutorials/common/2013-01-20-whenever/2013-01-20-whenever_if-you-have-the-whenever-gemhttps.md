@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _rails/Tutorials] - post: -->
 
 
 If you have the [whenever gem](https://github.com/javan/whenever) in your Gemfile (and have a corresponding schedule defined in _config/schedule.rb_) then Cloud 66 will automatically setup your desired whenever schedules as crontab jobs on the appropriate servers.

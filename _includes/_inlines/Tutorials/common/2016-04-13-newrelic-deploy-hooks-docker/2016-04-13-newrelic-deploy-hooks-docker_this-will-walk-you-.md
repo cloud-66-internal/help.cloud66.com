@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/Tutorials] - post: -->
 
 
 This will walk you through how to install NewRelic on your Docker stack using deploy hooks.

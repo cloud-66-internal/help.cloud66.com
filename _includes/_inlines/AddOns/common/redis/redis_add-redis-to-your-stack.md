@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/AddOns] - post: -->
 
 
 ## Add Redis to your stack

@@ -1,4 +1,4 @@
-<!-- layout:code post: scaling_docker-services -->
+<!-- usedin: [ _includes/_inlines/StackManagement/common/scaling] - layout:code post: scaling_docker-services -->
 
 ```
 

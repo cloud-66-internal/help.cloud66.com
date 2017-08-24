@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _rails/Tutorials] - post: -->
 
 
 ## Resolution 1: Configuring the gem

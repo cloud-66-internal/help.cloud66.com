@@ -1,4 +1,4 @@
-<!-- layout:code post: deploy-hooks_use-a-snippet-deploy-hook -->
+<!-- usedin: [ _includes/_inlines/Deployment/common/deploy-hooks] - layout:code post: deploy-hooks_use-a-snippet-deploy-hook -->
 
 ```
 

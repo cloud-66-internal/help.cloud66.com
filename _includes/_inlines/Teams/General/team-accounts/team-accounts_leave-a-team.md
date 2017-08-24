@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _general/Teams] - post: -->
 
 ## Leave a team
 

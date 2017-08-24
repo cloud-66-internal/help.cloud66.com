@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/AddOns, _node/addons] - post: -->
 
 ## How it is installed
 

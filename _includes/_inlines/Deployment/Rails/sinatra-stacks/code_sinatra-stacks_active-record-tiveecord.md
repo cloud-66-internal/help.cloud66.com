@@ -1,4 +1,4 @@
-<!-- layout:code post: sinatra-stacks_active-record -->
+<!-- usedin: [ _includes/_inlines/Deployment/Rails/sinatra-stacks] - layout:code post: sinatra-stacks_active-record -->
 
 ```
 ActiveRecord::Base.configurations[:development] = {

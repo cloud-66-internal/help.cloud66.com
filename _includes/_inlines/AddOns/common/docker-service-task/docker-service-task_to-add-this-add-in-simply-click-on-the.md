@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/AddOns] - post: -->
 
 
 To add this add-in, simply click on the _+_ button on the add-ins menu of your stack page, which will show you a variety of add-ins for your stack.

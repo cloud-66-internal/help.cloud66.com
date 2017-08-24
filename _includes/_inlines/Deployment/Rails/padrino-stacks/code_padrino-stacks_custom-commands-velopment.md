@@ -1,4 +1,4 @@
-<!-- layout:code post: padrino-stacks_custom-commands -->
+<!-- usedin: [ _includes/_inlines/Deployment/Rails/padrino-stacks] - layout:code post: padrino-stacks_custom-commands -->
 
 ```
 development:

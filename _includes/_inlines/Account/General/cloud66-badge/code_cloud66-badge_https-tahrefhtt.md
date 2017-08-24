@@ -1,4 +1,4 @@
-<!-- layout:code post: cloud66-badge_https.md -->
+<!-- usedin: [ _includes/_inlines/Account/General/cloud66-badge] - layout:code post: cloud66-badge_https.md -->
 
 ```
 <a href="http://www.cloud66.com">

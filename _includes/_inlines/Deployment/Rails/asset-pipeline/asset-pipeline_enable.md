@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _rails/deployment] - post: -->
 
 
 ## Enable/disable asset pipeline compilation

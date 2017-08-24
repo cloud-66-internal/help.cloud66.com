@@ -1,4 +1,4 @@
-<!-- layout:code post: ssh_example -->
+<!-- usedin: [ _includes/_inlines/Toolbelt/common/ssh] - layout:code post: ssh_example -->
 
 ```
 $ cx ssh -s "My Awesome App" Lion -e production

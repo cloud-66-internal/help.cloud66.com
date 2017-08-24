@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _rails/Tutorials] - post: -->
 
 
 When you use [database replication](http://help.cloud66.com/database-management/database-replication) with PostgreSQL, we configure [streaming replication](http://wiki.postgresql.org/wiki/Streaming_Replication) between your master and slave databases.

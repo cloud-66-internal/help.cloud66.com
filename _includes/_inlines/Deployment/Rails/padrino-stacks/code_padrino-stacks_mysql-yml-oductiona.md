@@ -1,4 +1,4 @@
-<!-- layout:code post: padrino-stacks_mysql-yml -->
+<!-- usedin: [ _includes/_inlines/Deployment/Rails/padrino-stacks] - layout:code post: padrino-stacks_mysql-yml -->
 
 ```
 production:

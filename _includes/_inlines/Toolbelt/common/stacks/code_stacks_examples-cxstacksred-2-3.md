@@ -1,4 +1,4 @@
-<!-- layout:code post: stacks_examples -->
+<!-- usedin: [ _includes/_inlines/Toolbelt/common/stacks] - layout:code post: stacks_examples -->
 
 ```
 $ cx stacks redeploy -s "My Awesome Docker App" --service web --service api:latest

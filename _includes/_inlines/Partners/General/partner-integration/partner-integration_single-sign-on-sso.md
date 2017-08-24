@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _general/Partners] - post: -->
 
 
 ## Single Sign-on (SSO)

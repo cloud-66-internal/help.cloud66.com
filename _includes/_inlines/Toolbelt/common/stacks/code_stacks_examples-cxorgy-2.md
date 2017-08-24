@@ -1,4 +1,4 @@
-<!-- layout:code post: stacks_examples -->
+<!-- usedin: [ _includes/_inlines/Toolbelt/common/stacks] - layout:code post: stacks_examples -->
 
 ```
 $ cx --org My_Awsome_org stacks create --name my_stack --environment production --service_yaml ~/service.yaml 

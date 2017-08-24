@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/Tutorials] - post: -->
 
 
 GitHub is a great resource for developers, and using it with Cloud 66 couldn't be easier. While you use GitHub for the revision control of your code,

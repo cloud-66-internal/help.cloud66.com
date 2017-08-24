@@ -1,4 +1,4 @@
-<!-- layout:code post: live-logs_how-do-i-add-additional-logs-to-livelogs? -->
+<!-- usedin: [ _includes/_inlines/StackManagement/common/live-logs] - layout:code post: live-logs_how-do-i-add-additional-logs-to-livelogs? -->
 
 ```
 

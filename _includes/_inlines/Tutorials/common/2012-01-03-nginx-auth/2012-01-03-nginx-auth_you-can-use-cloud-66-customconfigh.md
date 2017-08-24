@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/Tutorials] - post: -->
 
 
 You can use Cloud 66 [CustomConfig](http://help.cloud66.com/managing-your-stack/customconfig) to protect your application or parts of it with a username and password based on HTTP basic authentication.

@@ -1,4 +1,4 @@
-<!-- layout:code post: puma-rack-server_deploy-with-puma -->
+<!-- usedin: [ _includes/_inlines/Deployment/Rails/puma-rack-server] - layout:code post: puma-rack-server_deploy-with-puma -->
 
 ```
 custom_web: bundle exec puma -e $RACK_ENV -b unix:///tmp/web_server.sock --pidfile /tmp/web_server.pid -d

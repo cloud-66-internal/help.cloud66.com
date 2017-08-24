@@ -1,4 +1,4 @@
-<!-- layout: code  
+<!-- usedin: [ _includes/_inlines/AddOns/common/Lets-encrypt] - layout: code  
 	post: lets-encrypt_troubleshoot.md -->
 ```
 {% raw %}

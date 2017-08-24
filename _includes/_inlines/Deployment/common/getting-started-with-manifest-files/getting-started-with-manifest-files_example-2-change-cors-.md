@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/deployment] - post: -->
 
 
 ### Example 2: Change CORS settings

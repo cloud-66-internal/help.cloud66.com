@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _general/Partners] - post: -->
 
 
 ### Step 1 - Call Cloud 66 SSO endpoint

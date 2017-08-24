@@ -1,4 +1,4 @@
-<!-- layout:code post: building-your-service_build-command -->
+<!-- usedin: [ _includes/_inlines/Deployment/common/building-your-service] - layout:code post: building-your-service_build-command -->
 
 ```
 

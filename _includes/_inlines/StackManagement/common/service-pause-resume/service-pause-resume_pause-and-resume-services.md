@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/stack-management] - post: -->
 
 
 ## Pause and resume services

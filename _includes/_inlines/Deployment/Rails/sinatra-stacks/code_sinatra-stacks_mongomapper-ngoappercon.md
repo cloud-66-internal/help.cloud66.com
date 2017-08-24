@@ -1,4 +1,4 @@
-<!-- layout:code post: sinatra-stacks_mongomapper -->
+<!-- usedin: [ _includes/_inlines/Deployment/Rails/sinatra-stacks] - layout:code post: sinatra-stacks_mongomapper -->
 
 ```
 

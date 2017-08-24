@@ -1,4 +1,4 @@
-<!-- layout:code post: 1985-09-26-postgis-installation_build-postgis -->
+<!-- usedin: [ _includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation] - layout:code post: 1985-09-26-postgis-installation_build-postgis -->
 
 ```
 $ ./configure

@@ -1,4 +1,4 @@
-<!-- layout:code post: integration-with-weave-scope_step-2:-add-the-weavescope-sni -->
+<!-- usedin: [ _includes/_inlines/Partners/General/integration-with-weave-scope] - layout:code post: integration-with-weave-scope_step-2:-add-the-weavescope-sni -->
 
 ```
 production: # Environment or your choice

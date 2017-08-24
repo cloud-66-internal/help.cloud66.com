@@ -1,4 +1,4 @@
-<!-- layout:code post: 2015-07-08-setting-up-custom-livelogs_note -->
+<!-- usedin: [ _includes/_inlines/Tutorials/common/2015-07-08-Setting-up-custom-livelogs] - layout:code post: 2015-07-08-setting-up-custom-livelogs_note -->
 
 ```
 production:   

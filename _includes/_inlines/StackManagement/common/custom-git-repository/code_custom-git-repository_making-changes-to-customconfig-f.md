@@ -1,4 +1,4 @@
-<!-- layout:code post: custom-git-repository_making-changes-to-customconfig-files -->
+<!-- usedin: [ _includes/_inlines/StackManagement/common/custom-git-repository] - layout:code post: custom-git-repository_making-changes-to-customconfig-files -->
 
 ```
 

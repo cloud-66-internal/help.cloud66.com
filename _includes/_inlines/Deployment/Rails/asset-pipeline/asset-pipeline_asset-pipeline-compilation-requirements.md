@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _rails/deployment] - post: -->
 
 
 ## Asset pipeline compilation requirements

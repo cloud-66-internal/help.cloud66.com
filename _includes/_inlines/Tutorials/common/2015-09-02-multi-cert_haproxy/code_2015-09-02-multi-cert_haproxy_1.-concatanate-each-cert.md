@@ -1,4 +1,4 @@
-<!-- layout:code post: 2015-09-02-multi-cert_haproxy_1.-concatanate-each-certifica -->
+<!-- usedin: [ _includes/_inlines/Tutorials/common/2015-09-02-multi-cert_haproxy] - layout:code post: 2015-09-02-multi-cert_haproxy_1.-concatanate-each-certifica -->
 
 ```
 cat CERT1.CRT_PATH [CERT1_MID.crt_path] PRIVATE1.key_PATH > websitename1.pem

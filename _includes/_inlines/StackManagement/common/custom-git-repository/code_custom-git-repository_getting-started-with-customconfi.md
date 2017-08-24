@@ -1,4 +1,4 @@
-<!-- layout:code post: custom-git-repository_getting-started-with-customconfig-git -->
+<!-- usedin: [ _includes/_inlines/StackManagement/common/custom-git-repository] - layout:code post: custom-git-repository_getting-started-with-customconfig-git -->
 
 ```
 

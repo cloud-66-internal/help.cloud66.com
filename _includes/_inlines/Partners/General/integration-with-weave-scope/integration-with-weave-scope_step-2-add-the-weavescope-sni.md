@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _general/Partners] - post: -->
 
 
 ## Step 2: Add the weavescope snippet

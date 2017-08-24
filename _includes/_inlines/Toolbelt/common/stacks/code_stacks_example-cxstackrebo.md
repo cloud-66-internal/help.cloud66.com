@@ -1,4 +1,4 @@
-<!-- layout:code post: stacks_example -->
+<!-- usedin: [ _includes/_inlines/Toolbelt/common/stacks] - layout:code post: stacks_example -->
 
 ```
 $ cx stack reboot -s mystack

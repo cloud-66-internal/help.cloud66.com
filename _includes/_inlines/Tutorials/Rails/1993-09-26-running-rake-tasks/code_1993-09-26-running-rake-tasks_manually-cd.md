@@ -1,4 +1,4 @@
-<!-- layout:code post: 1993-09-26-running-rake-tasks_manually -->
+<!-- usedin: [ _includes/_inlines/Tutorials/Rails/1993-09-26-running-rake-tasks] - layout:code post: 1993-09-26-running-rake-tasks_manually -->
 
 ```
 $ cd $STACK_PATH

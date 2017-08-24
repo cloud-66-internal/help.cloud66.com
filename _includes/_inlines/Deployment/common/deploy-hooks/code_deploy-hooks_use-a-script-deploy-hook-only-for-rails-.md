@@ -1,4 +1,4 @@
-<!-- layout:code post: deploy-hooks_use-a-script-deploy-hook-(only-for-rails -->
+<!-- usedin: [ _includes/_inlines/Deployment/common/deploy-hooks] - layout:code post: deploy-hooks_use-a-script-deploy-hook-(only-for-rails -->
 
 ```
 

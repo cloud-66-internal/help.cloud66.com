@@ -1,4 +1,4 @@
-<!-- layout:code post: getting-started-with-manifest-files_example-1:-specifying-a -->
+<!-- usedin: [ _includes/_inlines/Deployment/common/getting-started-with-manifest-files] - layout:code post: getting-started-with-manifest-files_example-1:-specifying-a -->
 
 ```
 

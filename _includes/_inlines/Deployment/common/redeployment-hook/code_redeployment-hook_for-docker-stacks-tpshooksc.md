@@ -1,4 +1,4 @@
-<!-- layout:code post: redeployment-hook_for-docker-stacks -->
+<!-- usedin: [ _includes/_inlines/Deployment/common/redeployment-hook] - layout:code post: redeployment-hook_for-docker-stacks -->
 
 ```
 

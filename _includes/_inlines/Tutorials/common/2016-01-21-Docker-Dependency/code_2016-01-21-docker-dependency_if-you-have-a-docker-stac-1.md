@@ -1,4 +1,4 @@
-<!-- layout:code post: 2016-01-21-docker-dependency_if-you-have-a-docker-stack-but -->
+<!-- usedin: [ _includes/_inlines/Tutorials/common/2016-01-21-Docker-Dependency] - layout:code post: 2016-01-21-docker-dependency_if-you-have-a-docker-stack-but -->
 
 ```
  services:

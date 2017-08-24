@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _legacy_docker/stack-management] - post: -->
 
 
 #By default, docker services will use as much CPU or memory as they require. You may, however, wish to set a hard limit on memory, or the relative CPU shares used by a service. This can be accomplished with the `constraints/resources` directive.

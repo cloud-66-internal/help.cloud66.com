@@ -1,4 +1,4 @@
-<!-- post: -->
+<!-- usedin: [ _rails/Tutorials] - post: -->
 
 
 When you deploy to your web servers, a cache-copy of your application is automatically kept in the `$STACK_BASE/shared/cached-copy` folder.
