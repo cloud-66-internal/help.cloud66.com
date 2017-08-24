@@ -7,9 +7,9 @@ lead: Using Skycap with Cloud66
 legacy: false
 ---
 
-- [Buildgrid](Buildgrid)
-- [Deployment](Deployment)
-- [GettingStarted](GettingStarted)
-- [StackManagement](StackManagement)
+- [Buildgrid](buildgrid)
+- [Deployment](deployment)
+- [Getting Started](getting-started)
+- [Stack Management](stack-management)
 - [Tutorials](Tutorials)
 
