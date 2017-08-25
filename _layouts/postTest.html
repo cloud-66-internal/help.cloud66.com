@@ -95,7 +95,6 @@ bodyclass: post
 </div>
 
 {% if jekyll.environment == "development" %}
-
 <div style="
     padding-bottom: 20px;
     padding-left: 5px;
@@ -105,13 +104,42 @@ bodyclass: post
    right: 0px;
    top: 100px;
    width: 230px;
+   height:400px;
+   overflow: scroll;
    background-color: rgba(0,0,0,0.2)">
     <h1>Github Links</h1>
-    {% for next in page.gitlinks %}
+    <ul>
+        {% assign words1 = page.url | split: '/' %}
+        {% assign length1 = words1 | size | minus: 1 %}
+        {% assign nameroo = words1[length1] %}
+        {% for next in page.gitlinks %}
         {% assign words = next | split: '/' %}
         {% assign length = words | size | minus: 1 %}
-        {% assign namer = words[length] %}
-    <div><a href={{next}} >{{namer}}<br></a></div>
-    {% endfor %}
+        {% assign nameristo = words[length] %}
+        {% assign thingy =  nameristo | split: nameroo %}
+        {% assign nameio = thingy[1] | remove_first: '_' | remove_first: '.md' %}
+        <li><a href={{next}} >{{nameio}}<br></a></li>
+        {% endfor %}
+    </ul>
 </div>
 {% endif %}
+
+
+<div style="
+   z-index: -10;
+   border-right: solid mediumseagreen;
+   position: fixed;
+   left: 0px;
+   width: 300px;
+   color: mediumseagreen;
+   overflow: scroll;
+   bottom:0px;
+   top:0px;">
+    <h1 style="buffer-top: 200px; top:100;"> </h1>
+    <ul style="buffer-top: 200px; top:100px">
+        {% for next in page.menuheaders %}
+        {% assign theIndex = forloop.index | plus: 1 | prepend: '#' %}
+        <a href={{theIndex}} ><li>{{next}}</li></a><br>
+        {% endfor %}
+    </ul>
+</div>
