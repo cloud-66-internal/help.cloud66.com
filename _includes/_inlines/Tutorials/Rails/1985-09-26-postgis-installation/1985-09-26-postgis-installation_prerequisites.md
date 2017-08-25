@@ -8,7 +8,7 @@ Install packages using:
 
 
 
-{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_prerequisites-sudoaptg.md %}
+{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_prerequisites-sudoaptg.md  product = include.product %}
 
 
 
@@ -17,7 +17,7 @@ Optional package for raster support (this is required if you want to build the P
 
 
 
-{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_prerequisites-sudoaptg.md %}
+{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_prerequisites-sudoaptg.md  product = include.product %}
 
 
 

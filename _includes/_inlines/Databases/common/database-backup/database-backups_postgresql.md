@@ -7,7 +7,7 @@ First you need to detect if the backup is a **Text backup** or **Binary Backup**
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-findpathto.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-findpathto.md  product = include.product %}
 
 
 
@@ -19,7 +19,7 @@ If the command return a result it is a text backup and if the result is empty it
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-findpathto-2.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-findpathto-2.md  product = include.product %}
 
 
 
@@ -28,7 +28,7 @@ If the command return a result it is a text backup and if the result is empty it
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-findpathto-2-3.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-findpathto-2-3.md  product = include.product %}
 
 
 
@@ -37,7 +37,7 @@ If the command return a result it is a text backup and if the result is empty it
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-gzipdpath.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-gzipdpath.md  product = include.product %}
 
 
 
@@ -47,7 +47,7 @@ You can find YOUR_PG_DATABASE_NAME and YOUR_PG_APP_USERNAME in Cloud66 Dashboard
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-export.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-export.md  product = include.product %}
 
 
 

@@ -7,7 +7,7 @@ The hook example below can be used to install anything from packages to fonts on
 
 
 
-{%include _inlines/Deployment/common/deploy-hooks/code_deploy-hooks_use-a-command-deploy-hook-oduction.md %}
+{%include _inlines/Deployment/common/deploy-hooks/code_deploy-hooks_use-a-command-deploy-hook-oduction.md  product = include.product %}
 
 
 

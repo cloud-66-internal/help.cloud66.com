@@ -7,7 +7,7 @@
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-findpathto.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-findpathto.md  product = include.product %}
 
 
 
@@ -18,7 +18,7 @@ If the command return a result, that is data directory we want to restore. Go to
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-findpathto-2.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-findpathto-2.md  product = include.product %}
 
 
 
@@ -27,7 +27,7 @@ If the command return a result, that is data directory we want to restore. Go to
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-findpathto-2-3.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-findpathto-2-3.md  product = include.product %}
 
 
 
@@ -38,7 +38,7 @@ If the result of command  has a *.gz extension go to 3.1 unless use 3.2
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-tarxvfpat.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-tarxvfpat.md  product = include.product %}
 
 
 
@@ -47,7 +47,7 @@ If the result of command  has a *.gz extension go to 3.1 unless use 3.2
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-tarxvfpat-2.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-tarxvfpat-2.md  product = include.product %}
 
 
 
@@ -56,7 +56,7 @@ If the result of command  has a *.gz extension go to 3.1 unless use 3.2
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-rmrfpath.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-rmrfpath.md  product = include.product %}
 
 
 
@@ -66,7 +66,7 @@ If the step 1 has a result use that as /path/to/database/back unless use /path/t
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-mongorestore.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backup_mongodb-mongorestore.md  product = include.product %}
 
 
 

@@ -5,7 +5,7 @@
 
 
 
-{%include _inlines/Toolbelt/common/services/code_services_example-cxservicess.md %}
+{%include _inlines/Toolbelt/common/services/code_services_example-cxservicess.md  product = include.product %}
 
 
 

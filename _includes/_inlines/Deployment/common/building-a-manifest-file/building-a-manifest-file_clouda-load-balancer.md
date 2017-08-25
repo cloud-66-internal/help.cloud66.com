@@ -9,7 +9,7 @@ Use a manifest file to customize the CloudA load balancer deployed by Cloud 66. 
 
 
 
-{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_clouda-load-balancer-oduction.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_clouda-load-balancer-oduction.md  product = include.product %}
 
 
 

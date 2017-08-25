@@ -7,7 +7,7 @@ From the PostgreSQL command-line prompt, use the following command to restore yo
 
 
 
-{%include _inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_postgresql-database-psql.md %}
+{%include _inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_postgresql-database-psql.md  product = include.product %}
 
 
 

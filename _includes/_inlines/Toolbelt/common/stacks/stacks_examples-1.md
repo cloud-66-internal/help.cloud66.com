@@ -3,8 +3,8 @@
 
 ### Examples
 
-{%include _inlines/Toolbelt/common/stacks/code_stacks_examples-cxstackslis.md %}
+{%include _inlines/Toolbelt/common/stacks/code_stacks_examples-cxstackslis.md  product = include.product %}
 
-{%include _inlines/Toolbelt/common/stacks/code_stacks_examples-cxstackslis-2.md %}
+{%include _inlines/Toolbelt/common/stacks/code_stacks_examples-cxstackslis-2.md  product = include.product %}
 
 * * *

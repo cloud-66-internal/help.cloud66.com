@@ -13,7 +13,7 @@ For example:
 
 
 
-{%include _inlines/unknown/General/cloud66-birdseye/code_cloud66-birdseye_filtering-by-status-curlhttps.md %}
+{%include _inlines/unknown/General/cloud66-birdseye/code_cloud66-birdseye_filtering-by-status-curlhttps.md  product = include.product %}
 
 
 
@@ -22,7 +22,7 @@ You can mix status for incidents returns, you can use a comma separated list:
 
 
 
-{%include _inlines/unknown/General/cloud66-birdseye/code_cloud66-birdseye_filtering-by-status-curlhttps-2.md %}
+{%include _inlines/unknown/General/cloud66-birdseye/code_cloud66-birdseye_filtering-by-status-curlhttps-2.md  product = include.product %}
 
 
 

@@ -12,7 +12,7 @@ Create the file `/.cloud66/dbseed.sh` as below:
 
 
 
-{%include _inlines/Tutorials/common/1998-12-08-seeding-db/code_1998-12-08-seeding-db_seed-script-binbash.md %}
+{%include _inlines/Tutorials/common/1998-12-08-seeding-db/code_1998-12-08-seeding-db_seed-script-binbash.md  product = include.product %}
 
 
 

@@ -14,7 +14,7 @@ To use these, you have to concatenate all files except for the last one (the cer
 
 
 
-{%include _inlines/Tutorials/common/2004-09-26-ssl-certificate/code_2004-09-26-ssl-certificate_multi-domain-certificates-c.md %}
+{%include _inlines/Tutorials/common/2004-09-26-ssl-certificate/code_2004-09-26-ssl-certificate_multi-domain-certificates-c.md  product = include.product %}
 
 
 

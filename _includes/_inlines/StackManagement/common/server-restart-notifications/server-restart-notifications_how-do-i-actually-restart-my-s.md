@@ -17,7 +17,7 @@ sudo reboot
 
 
 
-{%include _inlines/StackManagement/common/server-restart-notifications/code_server-restart-notifications_how-do-i-actually-restart.md %}
+{%include _inlines/StackManagement/common/server-restart-notifications/code_server-restart-notifications_how-do-i-actually-restart.md  product = include.product %}
 
 
 

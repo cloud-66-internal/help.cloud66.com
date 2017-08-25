@@ -5,7 +5,7 @@ Cloud 66 supports deployments with the new Phusion Passenger 5 - all new stacks 
 
 
 
-{%include _inlines/Tutorials/Rails/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-first.md %}
+{%include _inlines/Tutorials/Rails/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-first.md  product = include.product %}
 
 
 
@@ -14,7 +14,7 @@ This is caused by a directive that was deprecated in Passenger 5, so we'll want 
 
 
 
-{%include _inlines/Tutorials/Rails/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-second.md %}
+{%include _inlines/Tutorials/Rails/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-second.md  product = include.product %}
 
 
 
@@ -23,7 +23,7 @@ With the following:
 
 
 
-{%include _inlines/Tutorials/Rails/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-supports-deployments-w.md %}
+{%include _inlines/Tutorials/Rails/1900-01-20-passenger-5/code_1900-01-20-passenger-5_cloud-66-supports-deployments-w.md  product = include.product %}
 
 
 

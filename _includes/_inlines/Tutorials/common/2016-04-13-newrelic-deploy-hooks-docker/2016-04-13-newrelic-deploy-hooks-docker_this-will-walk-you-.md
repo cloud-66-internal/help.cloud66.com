@@ -18,7 +18,7 @@ The first thing to do is to clone this repository on your machine:
 2.
 Then create a new file in that folder called `deploy_hooks.yml` and add the following:
 
-{%include _inlines/Tutorials/common/2016-04-13-newrelic-deploy-hooks-docker/code-2016-04-13-newrelic-deploy-hooks.md %}
+{%include _inlines/Tutorials/common/2016-04-13-newrelic-deploy-hooks-docker/code-2016-04-13-newrelic-deploy-hooks.md  product = include.product %}
 
 If `apply_during` is set to `all` this will run on every deployment - set this value to `build_only` to only run during stack build.
 

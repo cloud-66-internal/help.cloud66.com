@@ -12,7 +12,7 @@ Available settings (refer to the [Linode documentation](https://www.linode.com/d
 
 
 
-{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_linode-nodebalancer-oduction..md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_linode-nodebalancer-oduction..md  product = include.product %}
 
 
 

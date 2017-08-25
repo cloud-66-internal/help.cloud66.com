@@ -6,7 +6,7 @@ Now that you have downloaded your backup, you can go ahead and unzip it with the
 
 
 
-{%include _inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_unzip-your-backup-tarxvf.md %}
+{%include _inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_unzip-your-backup-tarxvf.md  product = include.product %}
 
 
 
@@ -20,7 +20,7 @@ file.tar-aa, file.tar-ab and file.tar-ac, we would use the following command:
 
 
 
-{%include _inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_unzip-your-backup-catfiletar.md %}
+{%include _inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_unzip-your-backup-catfiletar.md  product = include.product %}
 
 
 

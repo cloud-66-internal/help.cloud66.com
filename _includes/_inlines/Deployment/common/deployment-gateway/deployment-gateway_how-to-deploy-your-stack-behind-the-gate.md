@@ -44,7 +44,7 @@ After the deployment is finished you can invalidate the gateway or leave it unti
 
 
 
-{%include _inlines/Deployment/common/deployment-gateway/code_deployment-gateway_how-to-deploy-your-stack-behind-the.md %}
+{%include _inlines/Deployment/common/deployment-gateway/code_deployment-gateway_how-to-deploy-your-stack-behind-the.md  product = include.product %}
 
 
 

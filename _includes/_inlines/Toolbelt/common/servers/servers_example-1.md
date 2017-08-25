@@ -3,4 +3,4 @@
 
 ### Example
 
-{%include _inlines/Toolbelt/common/servers/code_servers_example-cxserversse.md %}
+{%include _inlines/Toolbelt/common/servers/code_servers_example-cxserversse.md  product = include.product %}

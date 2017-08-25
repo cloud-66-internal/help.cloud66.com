@@ -21,7 +21,7 @@ Without replica sets, you can connect to your MongoDB using environment variable
 
 
 
-{%include _inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_environment-variables-godb.md %}
+{%include _inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_environment-variables-godb.md  product = include.product %}
 
 
 
@@ -30,7 +30,7 @@ Without replica sets, you can connect to your MongoDB using environment variable
 
 
 
-{%include _inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_environment-variables-godb-2.md %}
+{%include _inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_environment-variables-godb-2.md  product = include.product %}
 
 
 
@@ -45,7 +45,7 @@ Once replication is enabled, this environment variable is populated:
 
 
 
-{%include _inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_environment-variables-nmystackc.m.md %}
+{%include _inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_environment-variables-nmystackc.m.md  product = include.product %}
 
 
 

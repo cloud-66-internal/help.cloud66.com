@@ -7,7 +7,7 @@ To activate parallel deployments, access your [Stack settings](/toolbelt/toolbel
 
 
 
-{%include _inlines/Deployment/common/parallel-deployment/code_parallel-deployment_configure-parallel-deployment-cxse.md %}
+{%include _inlines/Deployment/common/parallel-deployment/code_parallel-deployment_configure-parallel-deployment-cxse.md  product = include.product %}
 
 
 

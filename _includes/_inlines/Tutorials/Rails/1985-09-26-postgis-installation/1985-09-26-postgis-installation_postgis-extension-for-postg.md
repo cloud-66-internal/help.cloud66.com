@@ -8,7 +8,7 @@ Connect to your database using pgAdmin or psql, and run the following commands. 
 
 
 
-{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_postgis-extension-for-.md %}
+{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_postgis-extension-for-.md  product = include.product %}
 
 
 
@@ -17,7 +17,7 @@ To add topology support, a second extension can be created on the database:
 
 
 
-{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_postgis-extension-for-.md %}
+{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_postgis-extension-for-.md  product = include.product %}
 
 
 

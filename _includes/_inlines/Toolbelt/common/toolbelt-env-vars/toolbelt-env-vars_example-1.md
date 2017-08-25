@@ -3,4 +3,4 @@
 
 ### Example
 
-{%include _inlines/Toolbelt/common/toolbelt-env-vars/code_toolbelt-env-vars_example-cxenvvarsl.md %}
+{%include _inlines/Toolbelt/common/toolbelt-env-vars/code_toolbelt-env-vars_example-cxenvvarsl.md  product = include.product %}

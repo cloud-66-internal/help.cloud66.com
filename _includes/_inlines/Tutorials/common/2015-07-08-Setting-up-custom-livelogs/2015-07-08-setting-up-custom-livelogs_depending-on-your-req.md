@@ -5,7 +5,7 @@ Depending on your requirements, you may need to have access to additional log fi
 
 
 
-{%include _inlines/Tutorials/common/2015-07-08-Setting-up-custom-livelogs/code_2015-07-08-setting-up-custom-livelogs_depending-on-you.md %}
+{%include _inlines/Tutorials/common/2015-07-08-Setting-up-custom-livelogs/code_2015-07-08-setting-up-custom-livelogs_depending-on-you.md  product = include.product %}
 
 
 

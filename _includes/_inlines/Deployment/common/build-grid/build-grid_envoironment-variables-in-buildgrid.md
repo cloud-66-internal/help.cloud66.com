@@ -9,7 +9,7 @@ You can pass environment variables into your Dockerfile during your build proces
 
 
 
-{%include _inlines/Deployment/common/build-grid/code_build-grid_envoironment-variables-in-buildgrid-.md %}
+{%include _inlines/Deployment/common/build-grid/code_build-grid_envoironment-variables-in-buildgrid-.md  product = include.product %}
 
 
 
@@ -18,7 +18,7 @@ Cloud 66 will change this line to:
 
 
 
-{%include _inlines/Deployment/common/build-grid/code_build-grid_envoironment-variables-in-buildgrid--2.md %}
+{%include _inlines/Deployment/common/build-grid/code_build-grid_envoironment-variables-in-buildgrid--2.md  product = include.product %}
 
 
 

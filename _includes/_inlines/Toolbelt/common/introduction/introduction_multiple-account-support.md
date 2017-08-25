@@ -9,7 +9,7 @@ If you have more than 1 Cloud 66 account (you are the owner of more than 1 accou
 
 
 
-{%include _inlines/Toolbelt/common/introduction/code_introduction_multiple-account-support-cxaccount.md %}
+{%include _inlines/Toolbelt/common/introduction/code_introduction_multiple-account-support-cxaccount.md  product = include.product %}
 
 
 
@@ -20,7 +20,7 @@ To add a new account, simply change the value of the `account` parameter:
 
 
 
-{%include _inlines/Toolbelt/common/introduction/code_introduction_multiple-account-support-cxaccount-2.md %}
+{%include _inlines/Toolbelt/common/introduction/code_introduction_multiple-account-support-cxaccount-2.md  product = include.product %}
 
 
 

@@ -3,7 +3,7 @@
 
 ### Example
 
-{%include _inlines/Toolbelt/common/backups/code_backups_example-cxbackupsdo.md %}
+{%include _inlines/Toolbelt/common/backups/code_backups_example-cxbackupsdo.md  product = include.product %}
 
 
 

@@ -9,7 +9,7 @@
 
 
 
-{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_elasticsearch-oduction.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_elasticsearch-oduction.md  product = include.product %}
 
 
 

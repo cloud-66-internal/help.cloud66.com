@@ -7,7 +7,7 @@ Asset Pipeline precompilation will be disabled if `config.assets.enabled` variab
 
 
 
-{%include _inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_application.rb-nfigassetse.md %}
+{%include _inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_application.rb-nfigassetse.md  product = include.product %}
 
 
 

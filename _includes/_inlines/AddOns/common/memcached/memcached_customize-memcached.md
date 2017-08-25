@@ -6,7 +6,7 @@ To customize Memcached, use the below syntax in your [manifest file](/building-y
 
 
 
-{%include _inlines/AddOns/common/memcached/code_memcached_customize-memcached-oduction.md %}
+{%include _inlines/AddOns/common/memcached/code_memcached_customize-memcached-oduction.md  product = include.product %}
 
 
 

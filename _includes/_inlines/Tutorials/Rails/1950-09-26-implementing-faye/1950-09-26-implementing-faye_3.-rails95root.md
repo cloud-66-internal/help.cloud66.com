@@ -6,7 +6,7 @@ Here we are creating a [background process](http://help.cloud66.com/deployment/r
 
 
 
-{%include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_3.-rails95root-fayethin.md %}
+{%include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_3.-rails95root-fayethin.md  product = include.product %}
 
 
 

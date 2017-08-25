@@ -8,7 +8,7 @@ There are many ways of building GEOS, but this is the simplest:
 
 
 
-{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-geos-3.3.x-wgeth.md %}
+{%include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-geos-3.3.x-wgeth.md  product = include.product %}
 
 
 

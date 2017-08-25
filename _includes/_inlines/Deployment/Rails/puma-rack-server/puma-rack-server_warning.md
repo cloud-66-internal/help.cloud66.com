@@ -10,7 +10,7 @@ We recommend that you run [Unicorn](/web-server/unicorn-rack-server), as you may
 
 To solve the issue of manual restarts with Puma, you can use an _after_rails_ [deploy hook](/deployment/deploy-hooks) to manually run the following command in case you find that it is not responding to the SIGUSR2 that Cloud 66 issues.
 
-{%include _inlines/Deployment/Rails/puma-rack-server/code_puma-rack-server_warning-dleexecpuma.md %}
+{%include _inlines/Deployment/Rails/puma-rack-server/code_puma-rack-server_warning-dleexecpuma.md  product = include.product %}
 
 
 

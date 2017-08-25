@@ -9,7 +9,7 @@ For **Rails/Rack** stacks this file should be present within a folder named _.cl
 
 
 
-{%include _inlines/Deployment/common/deploy-hooks/code_deploy-hooks_how-to-use-deploy-hooks-clouddeplo.md %}
+{%include _inlines/Deployment/common/deploy-hooks/code_deploy-hooks_how-to-use-deploy-hooks-clouddeplo.md  product = include.product %}
 
 
 

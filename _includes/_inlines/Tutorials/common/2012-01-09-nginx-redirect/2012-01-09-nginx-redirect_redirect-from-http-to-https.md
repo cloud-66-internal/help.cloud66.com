@@ -9,7 +9,7 @@ Simply add this code to the _server_ section of your Nginx configuration using [
 
 
 
-{%include _inlines/Tutorials/common/2012-01-09-nginx-redirect/code_2012-01-09-nginx-redirect_redirect-from-http-to-https-.md %}
+{%include _inlines/Tutorials/common/2012-01-09-nginx-redirect/code_2012-01-09-nginx-redirect_redirect-from-http-to-https-.md  product = include.product %}
 
 
 

@@ -7,7 +7,7 @@ To use your BuildGrid username and password you can do the following:
 
 
 
-{%include _inlines/Buildgrid/Skycap/buildgrid-settings/code_buildgrid-settings_user-settings-ckerloginre.md %}
+{%include _inlines/Buildgrid/Skycap/buildgrid-settings/code_buildgrid-settings_user-settings-ckerloginre.md  product = include.product %}
 
 
 

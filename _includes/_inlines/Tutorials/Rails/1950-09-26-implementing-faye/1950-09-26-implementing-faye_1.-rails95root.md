@@ -7,7 +7,7 @@
 
 
 
-{%include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_1.-rails95root-oduction.md %}
+{%include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_1.-rails95root-oduction.md  product = include.product %}
 
 
 

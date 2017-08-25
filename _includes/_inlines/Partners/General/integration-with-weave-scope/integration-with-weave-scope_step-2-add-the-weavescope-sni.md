@@ -7,7 +7,7 @@ Add the following deploy hook to your *deploy_hooks.yml* file.
 
 
 
-{%include _inlines/Partners/General/integration-with-weave-scope/code_integration-with-weave-scope_step-2-add-the-weavescop.md %}
+{%include _inlines/Partners/General/integration-with-weave-scope/code_integration-with-weave-scope_step-2-add-the-weavescop.md  product = include.product %}
 
 
 

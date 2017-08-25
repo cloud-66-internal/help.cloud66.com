@@ -7,7 +7,7 @@ Specifies a relative path for your Dockerfile (from your _build_root_) to be use
 
 
 
-{%include _inlines/Deployment/common/building-your-service/code_building-your-service_dockerfile-path-rvices.md %}
+{%include _inlines/Deployment/common/building-your-service/code_building-your-service_dockerfile-path-rvices.md  product = include.product %}
 
 
 

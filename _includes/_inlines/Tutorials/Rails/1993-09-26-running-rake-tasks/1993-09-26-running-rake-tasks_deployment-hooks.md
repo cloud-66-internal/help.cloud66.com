@@ -9,7 +9,7 @@ Simply add a bash script to your stack that contains the rake task: for example,
 
 
 
-{%include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-binbash.md %}
+{%include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-binbash.md  product = include.product %}
 
 
 
@@ -18,7 +18,7 @@ Then, add a deploy_hook to execute the above script on each deploy: create the f
 
 
 
-{%include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-oductio.md %}
+{%include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_deployment-hooks-oductio.md  product = include.product %}
 
 
 

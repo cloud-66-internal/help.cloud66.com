@@ -11,7 +11,7 @@ Available settings:
 
 
 
-{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_aws-load-balancer-oduction.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_aws-load-balancer-oduction.md  product = include.product %}
 
 
 

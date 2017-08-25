@@ -7,7 +7,7 @@ As well as stack level configurations, manifest files can have settings per serv
 
 
 
-{%include _inlines/Deployment/common/getting-started-with-manifest-files/code_getting-started-with-manifest-files_third-level-2-s.md %}
+{%include _inlines/Deployment/common/getting-started-with-manifest-files/code_getting-started-with-manifest-files_third-level-2-s.md  product = include.product %}
 
 
 

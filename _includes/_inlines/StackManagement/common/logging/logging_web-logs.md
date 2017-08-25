@@ -7,14 +7,14 @@ Web logs are stored in `$STACK_PATH/log`:
 
 *   Web logger: 
 
-{%include _inlines/StackManagement/common/logging/code_logging_web-logs-log.md %}
+{%include _inlines/StackManagement/common/logging/code_logging_web-logs-log.md  product = include.product %}
 
 
 
 
 *   Nginx error log: 
 
-{%include _inlines/StackManagement/common/logging/code_logging_web-logs-log-2.md %}
+{%include _inlines/StackManagement/common/logging/code_logging_web-logs-log-2.md  product = include.product %}
 
 
 

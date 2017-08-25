@@ -7,7 +7,7 @@ Due to the periodic checking of your server (as stated above) it can take up to 
 
 
 
-{%include _inlines/StackManagement/common/server-restart-notifications/code_server-restart-notifications_ive-restarted-but-i-sti.md %}
+{%include _inlines/StackManagement/common/server-restart-notifications/code_server-restart-notifications_ive-restarted-but-i-sti.md  product = include.product %}
 
 
 

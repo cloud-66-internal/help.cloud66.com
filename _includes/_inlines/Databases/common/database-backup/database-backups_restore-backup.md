@@ -11,7 +11,7 @@ First step is to **untar**  downloaded backup (Unless you are using download scr
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_restore-backup-tarxvf.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_restore-backup-tarxvf.md  product = include.product %}
 
 
 

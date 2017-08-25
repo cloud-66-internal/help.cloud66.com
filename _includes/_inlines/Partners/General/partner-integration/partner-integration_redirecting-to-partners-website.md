@@ -7,7 +7,7 @@ Cloud 66 user sees an integration option on his dashboard and clicks on it. He i
 
 
 
-{%include _inlines/Partners/General/partner-integration/code_partner-integration_redirecting-to-partners-website-h.md %}
+{%include _inlines/Partners/General/partner-integration/code_partner-integration_redirecting-to-partners-website-h.md  product = include.product %}
 
 
 

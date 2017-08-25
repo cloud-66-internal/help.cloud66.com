@@ -6,7 +6,7 @@ This is done by starting a [terminal connection to your server](http://help.clou
 
 
 
-{%include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_manually-cd.md %}
+{%include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/code_1993-09-26-running-rake-tasks_manually-cd.md  product = include.product %}
 
 
 

@@ -5,7 +5,7 @@ If you're experiencing memory usage issues, such as high memory usage, use the f
 
 [SSH into your server](http://help.cloud66.com/managing-your-stack/ssh-to-your-server) and install htop:
 
-{%include _inlines/Tutorials/common/2015-09-26-memory-usage-issues/code_2015-09-26-memory-usage-issues_if-youre-experiencing-.md %}
+{%include _inlines/Tutorials/common/2015-09-26-memory-usage-issues/code_2015-09-26-memory-usage-issues_if-youre-experiencing-.md  product = include.product %}
 
 Once it's installed, run it with _htop_:
 

@@ -8,7 +8,7 @@ You can use **curl** to download it :
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_manually-download-curlo.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_manually-download-curlo.md  product = include.product %}
 
 
 
@@ -17,7 +17,7 @@ You can use **curl** to download it :
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_manually-download-curlomysq.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_manually-download-curlomysq.md  product = include.product %}
 
 
 
@@ -26,7 +26,7 @@ You need to concatenate different parts if you have a multipart backup in order 
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_manually-download-catmysqltar.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_manually-download-catmysqltar.md  product = include.product %}
 
 
 

@@ -6,7 +6,7 @@ Simply add the following line to the top of your *config/schedule.rb* file (then
 
 
 
-{%include _inlines/Tutorials/common/2040-09-26-whenever-errors/code_2040-09-26-whenever-errors_resolution-v.md %}
+{%include _inlines/Tutorials/common/2040-09-26-whenever-errors/code_2040-09-26-whenever-errors_resolution-v.md  product = include.product %}
 
 
 

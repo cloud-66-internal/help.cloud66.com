@@ -11,7 +11,7 @@ You can also set more fine-grained permissions with the following JSON template 
 
 
 
-{%include _inlines/Deployment/common/cloud-aws/code_cloud-aws_iam-ersion.md %}
+{%include _inlines/Deployment/common/cloud-aws/code_cloud-aws_iam-ersion.md  product = include.product %}
 
 
 

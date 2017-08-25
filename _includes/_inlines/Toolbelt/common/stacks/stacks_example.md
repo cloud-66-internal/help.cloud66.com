@@ -5,7 +5,7 @@
 
 
 
-{%include _inlines/Toolbelt/common/stacks/code_stacks_example-cxstackslis.md %}
+{%include _inlines/Toolbelt/common/stacks/code_stacks_example-cxstackslis.md  product = include.product %}
 
 You can leave the command by pressing `Ctrl-C` at any time.
 

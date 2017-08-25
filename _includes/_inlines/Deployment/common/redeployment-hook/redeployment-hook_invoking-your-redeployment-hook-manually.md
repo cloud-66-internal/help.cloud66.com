@@ -7,7 +7,7 @@ To invoke the redeployment hook manually, you can POST an HTTP request to your r
 
 
 
-{%include _inlines/Deployment/common/redeployment-hook/code_redeployment-hook_invoking-your-redeployment-hook-manu.md %}
+{%include _inlines/Deployment/common/redeployment-hook/code_redeployment-hook_invoking-your-redeployment-hook-manu.md  product = include.product %}
 
 
 

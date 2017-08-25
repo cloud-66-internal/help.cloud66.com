@@ -8,7 +8,7 @@ Users who have signed in through Github (and who have enough access to create an
 
 
 
-{%include _inlines/Deployment/common/redeployment-hook/code_redeployment-hook_github-integration-cxsettingss.md %}
+{%include _inlines/Deployment/common/redeployment-hook/code_redeployment-hook_github-integration-cxsettingss.md  product = include.product %}
 
 
 

@@ -12,7 +12,7 @@ You can view your generated crontab jobs with:
 
 
 
-{%include _inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_note-code.md %}
+{%include _inlines/Tutorials/common/2013-01-20-whenever/code_2013-01-20-whenever_note-code.md  product = include.product %}
 
 
 

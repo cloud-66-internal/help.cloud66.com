@@ -3,4 +3,4 @@
 
 ### Usage
 
-{%include _inlines/Toolbelt/common/servers/code_servers_usage-cxserversre.md %}
+{%include _inlines/Toolbelt/common/servers/code_servers_usage-cxserversre.md  product = include.product %}

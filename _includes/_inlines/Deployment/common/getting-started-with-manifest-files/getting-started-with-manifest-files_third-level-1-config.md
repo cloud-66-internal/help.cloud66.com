@@ -9,7 +9,7 @@ For example, this is how to set the version of ElasticSearch to `0.90.7`:
 
 
 
-{%include _inlines/Deployment/common/getting-started-with-manifest-files/code_getting-started-with-manifest-files_third-level-1-c.md %}
+{%include _inlines/Deployment/common/getting-started-with-manifest-files/code_getting-started-with-manifest-files_third-level-1-c.md  product = include.product %}
 
 
 

@@ -6,7 +6,7 @@ If during Lets Encrypt installation you get an error including something like th
 
 
 
-{%include _inlines/AddOns/common/Lets-encrypt/code_lets-encrypt_troubleshoot-otefileto.md %}
+{%include _inlines/AddOns/common/Lets-encrypt/code_lets-encrypt_troubleshoot-otefileto.md  product = include.product %}
 
 
 
@@ -19,5 +19,5 @@ You need to go through the following steps:
     There could be some parts missing in your Nginx config, probably due to customization or config file not being up to date. The following parts take care of redirections -like HTTP to HTTPS redirection or adding/removing www to the link- so that the file could be accessible via HTTP endpoint. 
 <span style="background-color: #FFFF00"><b> First delete the SSL certificate and then apply the changes.</b></span>
     
-{%include _inlines/AddOns/common/Lets-encrypt/code_lets-encrypt_troubleshoot-ote2nginx.md %}
+{%include _inlines/AddOns/common/Lets-encrypt/code_lets-encrypt_troubleshoot-ote2nginx.md  product = include.product %}
     

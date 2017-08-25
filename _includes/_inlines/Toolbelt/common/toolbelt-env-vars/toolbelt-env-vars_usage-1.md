@@ -3,4 +3,4 @@
 
 ### Usage
 
-{%include _inlines/Toolbelt/common/toolbelt-env-vars/code_toolbelt-env-vars_usage-cxenvvarsl.md %}
+{%include _inlines/Toolbelt/common/toolbelt-env-vars/code_toolbelt-env-vars_usage-cxenvvarsl.md  product = include.product %}

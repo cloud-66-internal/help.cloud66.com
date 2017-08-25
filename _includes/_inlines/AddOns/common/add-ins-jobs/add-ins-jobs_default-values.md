@@ -9,7 +9,7 @@ Example below cp file `$1` to `tmp` directory by default
 
 
 
-{%include _inlines/AddOns/common/add-ins-jobs/code_add-ins-jobs_default-values-tmp.md %}
+{%include _inlines/AddOns/common/add-ins-jobs/code_add-ins-jobs_default-values-tmp.md  product = include.product %}
 
 
 

@@ -12,7 +12,7 @@ To get started, open up your `manifest.yml` file in a text editor and enter the 
 
 
 
-{%include _inlines/Deployment/common/getting-started-with-manifest-files/code_getting-started-with-manifest-files_what-is-cors-oduc.md %}
+{%include _inlines/Deployment/common/getting-started-with-manifest-files/code_getting-started-with-manifest-files_what-is-cors-oduc.md  product = include.product %}
 
 
 
@@ -43,7 +43,7 @@ Although redeploying your stack will set the configuration settings for the stac
 
 
 
-{%include _inlines/Deployment/common/getting-started-with-manifest-files/code_getting-started-with-manifest-files_what-is-cors-cxse.md %}
+{%include _inlines/Deployment/common/getting-started-with-manifest-files/code_getting-started-with-manifest-files_what-is-cors-cxse.md  product = include.product %}
 
 
 

@@ -7,7 +7,7 @@ The hook below will copy a file from your repository to your _tmp_ folder and ex
 
 
 
-{%include _inlines/Deployment/common/deploy-hooks/code_deploy-hooks_use-a-script-deploy-hook-only-for-rails-.md %}
+{%include _inlines/Deployment/common/deploy-hooks/code_deploy-hooks_use-a-script-deploy-hook-only-for-rails-.md  product = include.product %}
 
 
 

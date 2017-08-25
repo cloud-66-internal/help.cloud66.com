@@ -9,7 +9,7 @@
 
 
 
-{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_memcached-oduction.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_memcached-oduction.md  product = include.product %}
 
 
 

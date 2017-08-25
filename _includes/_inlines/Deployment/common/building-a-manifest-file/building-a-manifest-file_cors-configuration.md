@@ -7,7 +7,7 @@ If required, you can also specify the allowed origin (as '\*' or a single origin
 
 
 
-{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_cors-configuration-oduction.m.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_cors-configuration-oduction.m.md  product = include.product %}
 
 
 

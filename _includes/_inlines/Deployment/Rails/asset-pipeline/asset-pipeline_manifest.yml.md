@@ -9,7 +9,7 @@ an example
 
 
 
-{%include _inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_manifest.yml-velopment.md %}
+{%include _inlines/Deployment/Rails/asset-pipeline/code_asset-pipeline_manifest.yml-velopment.md  product = include.product %}
 
 
 

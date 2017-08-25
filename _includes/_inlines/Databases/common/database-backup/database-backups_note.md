@@ -10,7 +10,7 @@ Please take a backup from Redis data file before deleting it to be able to resto
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_note-sudormrf-2-3.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_note-sudormrf-2-3.md  product = include.product %}
 
 
 
@@ -19,7 +19,7 @@ Please take a backup from Redis data file before deleting it to be able to resto
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_note-sudocpap-2.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_note-sudocpap-2.md  product = include.product %}
 
 
 
@@ -28,7 +28,7 @@ Please take a backup from Redis data file before deleting it to be able to resto
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_note-sudochown-2-3.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_note-sudochown-2-3.md  product = include.product %}
 
 
 
@@ -37,7 +37,7 @@ Please take a backup from Redis data file before deleting it to be able to resto
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_note-sudobluepill.md %}
+{%include _inlines/Databases/common/database-backup/code_database-backups_note-sudobluepill.md  product = include.product %}
 
 
 

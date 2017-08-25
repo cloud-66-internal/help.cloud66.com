@@ -5,7 +5,7 @@
 
 
 
-{%include _inlines/Toolbelt/common/services/code_services_result-.md %}
+{%include _inlines/Toolbelt/common/services/code_services_result-.md  product = include.product %}
 
 
 

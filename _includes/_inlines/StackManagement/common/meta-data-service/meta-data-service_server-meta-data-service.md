@@ -17,7 +17,7 @@ You will see a JSON `application/json` payload returned like the following:
 
 
 
-{%include _inlines/StackManagement/common/meta-data-service/code_meta-data-service_server-meta-data-service-response.md %}
+{%include _inlines/StackManagement/common/meta-data-service/code_meta-data-service_server-meta-data-service-response.md  product = include.product %}
 
 
 

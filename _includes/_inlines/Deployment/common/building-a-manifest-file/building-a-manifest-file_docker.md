@@ -21,14 +21,14 @@
 
 
 
-{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_docker-oduction.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_docker-oduction.md  product = include.product %}
 
 
 
 
 
 
-{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_docker-oduction-2.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_docker-oduction-2.md  product = include.product %}
 
 
 

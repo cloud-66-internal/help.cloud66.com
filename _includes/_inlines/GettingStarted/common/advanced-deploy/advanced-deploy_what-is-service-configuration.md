@@ -17,7 +17,7 @@ This is a sample [service.yml](../building-your-stack/docker-service-configurati
 
 
 
-{%include _inlines/GettingStarted/common/advanced-deploy/code_advanced-deploy_what-is-service-configuration-service.md %}
+{%include _inlines/GettingStarted/common/advanced-deploy/code_advanced-deploy_what-is-service-configuration-service.md  product = include.product %}
 
 
 

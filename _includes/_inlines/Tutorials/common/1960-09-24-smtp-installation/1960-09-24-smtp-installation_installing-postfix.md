@@ -9,7 +9,7 @@ Start by [SSHing to your server](http://help.cloud66.com/managing-your-stack/ssh
 
 
 
-{%include _inlines/Tutorials/common/1960-09-24-smtp-installation/code_1960-09-24-smtp-installation_installing-postfix-sudoap.md %}
+{%include _inlines/Tutorials/common/1960-09-24-smtp-installation/code_1960-09-24-smtp-installation_installing-postfix-sudoap.md  product = include.product %}
 
 
 
@@ -20,7 +20,7 @@ That's it! You now have a SMTP server installed. We just need to make some confi
 
 
 
-{%include _inlines/Tutorials/common/1960-09-24-smtp-installation/code_1960-09-24-smtp-installation_installing-postfix-sudona.md %}
+{%include _inlines/Tutorials/common/1960-09-24-smtp-installation/code_1960-09-24-smtp-installation_installing-postfix-sudona.md  product = include.product %}
 
 
 
@@ -29,7 +29,7 @@ In the _myhostname_ field, input your hostname:
 
 
 
-{%include _inlines/Tutorials/common/1960-09-24-smtp-installation/code_1960-09-24-smtp-installation_installing-postfix-hostna.md %}
+{%include _inlines/Tutorials/common/1960-09-24-smtp-installation/code_1960-09-24-smtp-installation_installing-postfix-hostna.md  product = include.product %}
 
 
 
@@ -38,7 +38,7 @@ This one configuration is enough to have a functional SMTP server. Use [deploy h
 
 
 
-{%include _inlines/Tutorials/common/1960-09-24-smtp-installation/code_1960-09-24-smtp-installation_installing-postfix-sudoet.md %}
+{%include _inlines/Tutorials/common/1960-09-24-smtp-installation/code_1960-09-24-smtp-installation_installing-postfix-sudoet.md  product = include.product %}
 
 
 

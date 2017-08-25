@@ -5,7 +5,7 @@
 
 
 
-{%include _inlines/Toolbelt/Maestro/containers/code_containers_example-cxcontainers.md %}
+{%include _inlines/Toolbelt/Maestro/containers/code_containers_example-cxcontainers.md  product = include.product %}
 
 
 

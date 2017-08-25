@@ -7,7 +7,7 @@ This problem usually manifests itself as the following error when starting nginx
 
 
 
-{%include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/code_2039-02-26-ssl-certificate-issues_matching-certificate.md %}
+{%include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/code_2039-02-26-ssl-certificate-issues_matching-certificate.md  product = include.product %}
 
 
 
@@ -16,7 +16,7 @@ To make sure your key and certificate match correctly, use the OpenSSL commandli
 
 
 
-{%include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/code_2039-02-26-ssl-certificate-issues_matching-certificate.md %}
+{%include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/code_2039-02-26-ssl-certificate-issues_matching-certificate.md  product = include.product %}
 
 
 

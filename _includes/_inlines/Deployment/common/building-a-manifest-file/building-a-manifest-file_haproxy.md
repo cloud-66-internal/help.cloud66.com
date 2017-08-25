@@ -19,7 +19,7 @@ Configuration:
 
 
 
-{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_haproxy-oduction.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_haproxy-oduction.md  product = include.product %}
 
 
 

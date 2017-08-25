@@ -7,7 +7,7 @@ The source of your Docker image, which can come from a private repository that t
 
 
 
-{%include _inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices.md %}
+{%include _inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices.md  product = include.product %}
 
 
 
@@ -16,7 +16,7 @@ If you are pulling a public image from Docker Hub, use the following format:
 
 
 
-{%include _inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2.md %}
+{%include _inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2.md  product = include.product %}
 
 
 
@@ -25,7 +25,7 @@ If you are using [Quay.io](https://quay.io/) for your image repository, you will
 
 
 
-{%include _inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3.md %}
+{%include _inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3.md  product = include.product %}
 
 
 
@@ -34,7 +34,7 @@ If you are using [Google Container Registry](https://cloud.google.com/container-
 
 
 
-{%include _inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3-4.md %}
+{%include _inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3-4.md  product = include.product %}
 
 
 

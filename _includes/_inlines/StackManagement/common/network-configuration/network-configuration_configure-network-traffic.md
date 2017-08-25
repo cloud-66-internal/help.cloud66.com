@@ -9,7 +9,7 @@ For each of these fields, you can enter a single IP address, a comma-separated l
 
 
 
-{%include _inlines/StackManagement/common/network-configuration/code_network-configuration_configure-network-traffic-.md %}
+{%include _inlines/StackManagement/common/network-configuration/code_network-configuration_configure-network-traffic-.md  product = include.product %}
 
 
 

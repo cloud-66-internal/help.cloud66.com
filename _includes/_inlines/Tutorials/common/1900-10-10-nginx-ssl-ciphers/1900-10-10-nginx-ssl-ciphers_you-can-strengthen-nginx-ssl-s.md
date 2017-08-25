@@ -9,14 +9,14 @@ We recommend this setting (not compatible with IE6/Win XP):
 
 
 
-{%include _inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-1.md %}
+{%include _inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-1.md  product = include.product %}
 
 
 We recommend the following setting for backward compatibility (IE6/Win XP):
 
 
 
-{%include _inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-2.md %}
+{%include _inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/code_1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-2.md  product = include.product %}
 
 
 This article is based on the information from [this tutorial](https://raymii.org/s/tutorials/Strong_SSL_Security_On_nginx.html).

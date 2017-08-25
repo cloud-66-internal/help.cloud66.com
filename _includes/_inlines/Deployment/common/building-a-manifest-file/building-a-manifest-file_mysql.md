@@ -10,7 +10,7 @@
 
 
 
-{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_mysql-oduction.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_mysql-oduction.md  product = include.product %}
 
 
 

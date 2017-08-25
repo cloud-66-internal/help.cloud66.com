@@ -5,7 +5,7 @@
 
 
 
-{%include _inlines/Toolbelt/common/stacks/code_stacks_usage-cxstackscon.md %}
+{%include _inlines/Toolbelt/common/stacks/code_stacks_usage-cxstackscon.md  product = include.product %}
 
 
 

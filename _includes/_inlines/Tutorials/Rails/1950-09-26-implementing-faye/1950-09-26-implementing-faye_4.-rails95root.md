@@ -6,7 +6,7 @@ These are settings specific to your Faye setup, which will vary depending on you
 
 
 
-{%include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_4.-rails95root-quirefay.md %}
+{%include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_4.-rails95root-quirefay.md  product = include.product %}
 
 
 

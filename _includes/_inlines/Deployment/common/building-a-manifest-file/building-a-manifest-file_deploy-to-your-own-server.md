@@ -7,7 +7,7 @@
 
 
 
-{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_deploy-to-your-own-server-odu.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_deploy-to-your-own-server-odu.md  product = include.product %}
 
 
 

@@ -3,4 +3,4 @@
 
 ### Usage
 
-{%include _inlines/Toolbelt/common/gateway/code_gateway_usage-cxorglt.md %}
+{%include _inlines/Toolbelt/common/gateway/code_gateway_usage-cxorglt.md  product = include.product %}

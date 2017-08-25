@@ -9,7 +9,7 @@ Before having a replica set, you had the following setup:
 
 
 
-{%include _inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-velopments.md %}
+{%include _inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-velopments.md  product = include.product %}
 
 
 
@@ -18,7 +18,7 @@ After replica sets are enabled you can use something like this:
 
 
 
-{%include _inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-velopments-2.md %}
+{%include _inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-velopments-2.md  product = include.product %}
 
 
 
@@ -27,7 +27,7 @@ The reason for the ugly looking line is that `mongoid` requires the list of serv
 
 
 
-{%include _inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-lionmystack.md %}
+{%include _inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-lionmystack.md  product = include.product %}
 
 
 

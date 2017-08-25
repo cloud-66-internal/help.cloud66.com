@@ -3,7 +3,7 @@
 
 ### Example
 
-{%include _inlines/Toolbelt/common/stacks/code_stacks_example-cxstackrebo.md %}
+{%include _inlines/Toolbelt/common/stacks/code_stacks_example-cxstackrebo.md  product = include.product %}
 
 * * *
 

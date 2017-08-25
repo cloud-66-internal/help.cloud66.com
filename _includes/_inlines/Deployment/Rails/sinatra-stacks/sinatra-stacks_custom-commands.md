@@ -21,7 +21,7 @@ These commands can be set via [Toolbelt](/toolbelt/toolbelt-settings-command),
 
 
 
-{%include _inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_custom-commands-cxsettingss.md %}
+{%include _inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_custom-commands-cxsettingss.md  product = include.product %}
 
 
 
@@ -30,7 +30,7 @@ But also in your [manifest file](/building-your-stack/getting-started-with-manif
 
 
 
-{%include _inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_custom-commands-velopment.md %}
+{%include _inlines/Deployment/Rails/sinatra-stacks/code_sinatra-stacks_custom-commands-velopment.md  product = include.product %}
 
 
 

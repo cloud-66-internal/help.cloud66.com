@@ -5,7 +5,7 @@
 
 
 
-{%include _inlines/Toolbelt/common/databases/code_databases_usage-cxdatabases-2.md %}
+{%include _inlines/Toolbelt/common/databases/code_databases_usage-cxdatabases-2.md  product = include.product %}
 
 
 Re-syncs the specified slave database server with its master database server.

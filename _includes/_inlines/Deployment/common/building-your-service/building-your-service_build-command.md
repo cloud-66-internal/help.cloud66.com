@@ -7,7 +7,7 @@ Specifies the command you would like to run during stack build (runs on your Doc
 
 
 
-{%include _inlines/Deployment/common/building-your-service/code_building-your-service_build-command-rvices.md %}
+{%include _inlines/Deployment/common/building-your-service/code_building-your-service_build-command-rvices.md  product = include.product %}
 
 
 

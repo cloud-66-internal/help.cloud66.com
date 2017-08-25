@@ -3,5 +3,5 @@
 
 ### Example
 
-{%include _inlines/Toolbelt/common/gateway/code_gateway_example-cxorgy-2-3-4.md %}
+{%include _inlines/Toolbelt/common/gateway/code_gateway_example-cxorgy-2-3-4.md  product = include.product %}
 

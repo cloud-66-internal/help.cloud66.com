@@ -15,7 +15,7 @@ And it also contains a "test" group with:
 
 
 
-{%include _inlines/Tutorials/common/2013-09-26-db-config-test-group-errors/code_2013-09-26-db-config-test-group-errors_the-basics-apte.md %}
+{%include _inlines/Tutorials/common/2013-09-26-db-config-test-group-errors/code_2013-09-26-db-config-test-group-errors_the-basics-apte.md  product = include.product %}
 
 
 
@@ -24,7 +24,7 @@ This will result in the following slightly obtuse error during your code deploym
 
 
 
-{%include _inlines/Tutorials/common/2013-09-26-db-config-test-group-errors/code_2013-09-26-db-config-test-group-errors_the-basics-init.md %}
+{%include _inlines/Tutorials/common/2013-09-26-db-config-test-group-errors/code_2013-09-26-db-config-test-group-errors_the-basics-init.md  product = include.product %}
 
 
 

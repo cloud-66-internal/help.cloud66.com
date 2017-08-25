@@ -11,7 +11,7 @@ You can simply use a non-passphrase-protected version of your SSL certificate ke
 
 
 
-{%include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/code_2039-02-26-ssl-certificate-issues_passphrase-protected.md %}
+{%include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/code_2039-02-26-ssl-certificate-issues_passphrase-protected.md  product = include.product %}
 
 
 

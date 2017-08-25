@@ -3,7 +3,7 @@
 
 ### Usage
 
-{%include _inlines/Toolbelt/common/backups/code_backups_usage-cxbackupsne.md %}
+{%include _inlines/Toolbelt/common/backups/code_backups_usage-cxbackupsne.md  product = include.product %}
 
 
 

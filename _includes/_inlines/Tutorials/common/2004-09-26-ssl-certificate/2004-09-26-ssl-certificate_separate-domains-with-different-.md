@@ -5,7 +5,7 @@
 
 
 
-{%include _inlines/Tutorials/common/2004-09-26-ssl-certificate/code_2004-09-26-ssl-certificate_separate-domains-with-diffe.md %}
+{%include _inlines/Tutorials/common/2004-09-26-ssl-certificate/code_2004-09-26-ssl-certificate_separate-domains-with-diffe.md  product = include.product %}
 
 
 

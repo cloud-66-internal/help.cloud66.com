@@ -8,7 +8,7 @@ To see how your shared file system works, you can SSH to one of you web servers 
 
 
 
-{%include _inlines/AddOns/common/glusterfs/code_glusterfs_how-can-i-use-glusterfs-in-my-application-c.md %}
+{%include _inlines/AddOns/common/glusterfs/code_glusterfs_how-can-i-use-glusterfs-in-my-application-c.md  product = include.product %}
 
 
 

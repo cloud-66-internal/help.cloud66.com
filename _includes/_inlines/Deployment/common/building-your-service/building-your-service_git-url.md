@@ -7,7 +7,7 @@ The Git repository URL your Docker image will be built with. The Git URL you use
 
 
 
-{%include _inlines/Deployment/common/building-your-service/code_building-your-service_git-url-rvices.md %}
+{%include _inlines/Deployment/common/building-your-service/code_building-your-service_git-url-rvices.md  product = include.product %}
 
 
 

@@ -4,5 +4,5 @@
 ### Example
 
 
-{%include _inlines/Toolbelt/common/databases/code_databases_example-cxdatabases-2.md %}
+{%include _inlines/Toolbelt/common/databases/code_databases_example-cxdatabases-2.md  product = include.product %}
 

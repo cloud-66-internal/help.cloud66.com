@@ -16,7 +16,7 @@ An example redeployment hook **without a services modifier:**
 
 
 
-{%include _inlines/Deployment/common/redeployment-hook/code_redeployment-hook_for-docker-stacks-tpshooksc.md %}
+{%include _inlines/Deployment/common/redeployment-hook/code_redeployment-hook_for-docker-stacks-tpshooksc.md  product = include.product %}
 
 
 
@@ -25,7 +25,7 @@ An example redeployment **hook with a single services modifier:**
 
 
 
-{%include _inlines/Deployment/common/redeployment-hook/code_redeployment-hook_for-docker-stacks-tpshooksc-2.md %}
+{%include _inlines/Deployment/common/redeployment-hook/code_redeployment-hook_for-docker-stacks-tpshooksc-2.md  product = include.product %}
 
 
 
@@ -34,7 +34,7 @@ An example redeployment **hook with a many-service modifier:**
 
 
 
-{%include _inlines/Deployment/common/redeployment-hook/code_redeployment-hook_for-docker-stacks-tpshooksc-2-3.md %}
+{%include _inlines/Deployment/common/redeployment-hook/code_redeployment-hook_for-docker-stacks-tpshooksc-2-3.md  product = include.product %}
 
 
 

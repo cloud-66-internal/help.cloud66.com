@@ -6,7 +6,7 @@
 
 
 
-{%include _inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-velopment.md %}
+{%include _inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-velopment.md  product = include.product %}
 
 
 
@@ -15,6 +15,6 @@ The default encoding used is UTF8 - but you can also specify your own, as long a
 
 
 
-{%include _inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-codingswe.md %}
+{%include _inlines/Deployment/Rails/rails-stacks/code_rails-stacks_note-codingswe.md  product = include.product %}
 
 

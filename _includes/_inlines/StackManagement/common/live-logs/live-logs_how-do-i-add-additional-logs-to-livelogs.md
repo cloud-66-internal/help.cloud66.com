@@ -27,7 +27,7 @@ You can also have multiple custom log files defined for different server roles; 
 
 
 
-{%include _inlines/StackManagement/common/live-logs/code_live-logs_how-do-i-add-additional-logs-to-livelogs-od.md %}
+{%include _inlines/StackManagement/common/live-logs/code_live-logs_how-do-i-add-additional-logs-to-livelogs-od.md  product = include.product %}
 
 
 

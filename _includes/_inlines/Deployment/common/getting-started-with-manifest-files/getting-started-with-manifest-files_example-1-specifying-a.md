@@ -6,7 +6,7 @@ In this example, we'll set the version of Docker on your stack to 1.4.1. The top
 
 
 
-{%include _inlines/Deployment/common/getting-started-with-manifest-files/code_getting-started-with-manifest-files_example-1-specify.md %}
+{%include _inlines/Deployment/common/getting-started-with-manifest-files/code_getting-started-with-manifest-files_example-1-specify.md  product = include.product %}
 
 
 

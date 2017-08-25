@@ -4,17 +4,17 @@
 ### Get the list of all incidents
 
 
-{%include _inlines/unknown/General/cloud66-birdseye/code_cloud66-birdseye_get-the-list-of-all-incidents-ncident.md %}
+{%include _inlines/unknown/General/cloud66-birdseye/code_cloud66-birdseye_get-the-list-of-all-incidents-ncident.md  product = include.product %}
 
 
 With CURL:
 
-{%include _inlines/unknown/General/cloud66-birdseye/code_cloud66-birdseye_get-the-list-of-all-incidents-curlhtt.md %}
+{%include _inlines/unknown/General/cloud66-birdseye/code_cloud66-birdseye_get-the-list-of-all-incidents-curlhtt.md  product = include.product %}
 
 
 **Result**
 
-{%include _inlines/unknown/General/cloud66-birdseye/code_cloud66-birdseye_get-the-list-of-all-incidents-.md %}
+{%include _inlines/unknown/General/cloud66-birdseye/code_cloud66-birdseye_get-the-list-of-all-incidents-.md  product = include.product %}
 
 
 *Status*

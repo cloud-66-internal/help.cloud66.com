@@ -11,7 +11,7 @@ This is a sample [manifest.yml](../building-your-stack/getting-started-with-mani
 
 
 
-{%include _inlines/GettingStarted/common/advanced-deploy/code_advanced-deploy_what-is-a-manifest-file-oduction.md %}
+{%include _inlines/GettingStarted/common/advanced-deploy/code_advanced-deploy_what-is-a-manifest-file-oduction.md  product = include.product %}
 
 
 

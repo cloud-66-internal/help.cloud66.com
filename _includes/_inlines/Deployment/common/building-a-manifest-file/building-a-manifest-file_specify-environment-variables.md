@@ -9,7 +9,7 @@ Here is an example:
 
 
 
-{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_specify-environment-variables.md %}
+{%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_specify-environment-variables.md  product = include.product %}
 
 
 

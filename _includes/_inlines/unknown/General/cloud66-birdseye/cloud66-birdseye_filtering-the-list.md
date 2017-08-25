@@ -16,7 +16,7 @@ With CURL:
 
 
 
-{%include _inlines/unknown/General/cloud66-birdseye/code_cloud66-birdseye_filtering-the-list-curlhttps.md %}
+{%include _inlines/unknown/General/cloud66-birdseye/code_cloud66-birdseye_filtering-the-list-curlhttps.md  product = include.product %}
 
 
 

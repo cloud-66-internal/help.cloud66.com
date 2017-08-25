@@ -17,6 +17,6 @@ Remove the MySQL folder:
 
 Delete all MySQL files on your server:
 
-{%include _inlines/Tutorials/common/2014-09-26-uninstall-mysql/code_2014-09-26-uninstall-mysql_when-using-cloud-66-to-dep.md %}
+{%include _inlines/Tutorials/common/2014-09-26-uninstall-mysql/code_2014-09-26-uninstall-mysql_when-using-cloud-66-to-dep.md  product = include.product %}
 
 Your system should no longer contain MySQL related files.

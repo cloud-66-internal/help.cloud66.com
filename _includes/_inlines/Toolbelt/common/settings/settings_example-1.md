@@ -3,4 +3,4 @@
 
 ### Example
 
-{%include _inlines/Toolbelt/common/settings/code_settings_example-cxsettingsl.md %}
+{%include _inlines/Toolbelt/common/settings/code_settings_example-cxsettingsl.md  product = include.product %}

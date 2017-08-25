@@ -15,7 +15,7 @@ You can find it in *Stack page* --> *Network settings* --> *Redirects* tab
 
 
 
-{%include _inlines/StackManagement/common/network-configuration/code_network-configuration_maintenance-mode-cloudmaint.md %}
+{%include _inlines/StackManagement/common/network-configuration/code_network-configuration_maintenance-mode-cloudmaint.md  product = include.product %}
 
 
 

@@ -9,7 +9,7 @@ Create the file `.cloud66/deploy_hooks.yml` as below (replacing *production* wit
 
 
 
-{%include _inlines/Tutorials/common/1998-12-08-seeding-db/code_1998-12-08-seeding-db_deploy-hook-oductiona.md %}
+{%include _inlines/Tutorials/common/1998-12-08-seeding-db/code_1998-12-08-seeding-db_deploy-hook-oductiona.md  product = include.product %}
 
 
 

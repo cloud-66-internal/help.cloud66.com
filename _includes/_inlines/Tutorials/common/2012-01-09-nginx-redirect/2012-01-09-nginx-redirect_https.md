@@ -8,7 +8,7 @@ As such, users from domain A must first be met with the SSL certificate for that
 
 
 
-{%include _inlines/Tutorials/common/2012-01-09-nginx-redirect/code_2012-01-09-nginx-redirect_https-ifallo.md %}
+{%include _inlines/Tutorials/common/2012-01-09-nginx-redirect/code_2012-01-09-nginx-redirect_https-ifallo.md  product = include.product %}
 
 
 
