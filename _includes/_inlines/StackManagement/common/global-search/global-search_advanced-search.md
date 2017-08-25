@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/global-search/code_global-search_advanced-search-code.html" ]
- usedin: [ _legacy_docker/stack-management/global-search.md, _maestro/stack-management/global-search.md, _node/stack-management/global-search.md, _rails/stack-management/global-search.md, _skycap/stack-management/global-search.md] -->
+<!--  usedin: [ _legacy_docker/stack-management/global-search.md, _maestro/stack-management/global-search.md, _node/stack-management/global-search.md, _rails/stack-management/global-search.md, _skycap/stack-management/global-search.md] -->
 
 
 ## Advanced Search

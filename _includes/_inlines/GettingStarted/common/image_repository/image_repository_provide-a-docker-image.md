@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/image_repository/code_image_repository_provide-a-docker-image-tnamespaceg.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/image_repository/code_image_repository_provide-a-docker-image-tnamespaceg-2..html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/image_repository/code_image_repository_provide-a-docker-image-ayioltnam.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/image_repository/code_image_repository_provide-a-docker-image-rioltproj.html" ]
- usedin: [ _legacy_docker/getting-started/image-repository.md, _maestro/getting-started/image-repository.md, _skycap/getting-started/image-repository.md] -->
+<!--  usedin: [ _legacy_docker/getting-started/image-repository.md, _maestro/getting-started/image-repository.md, _skycap/getting-started/image-repository.md] -->
 
 
 ### Provide a Docker image

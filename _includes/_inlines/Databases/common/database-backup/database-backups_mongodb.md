@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backups_mongodb-findpathto.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backups_mongodb-findpathto-2.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backups_mongodb-findpathto-2-3.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backups_mongodb-tarxvfpat.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backups_mongodb-tarxvfpat-2.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backups_mongodb-rmrfpath.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backups_mongodb-mongorestore.html" ]
- usedin: [ _legacy_docker/Databases/database-backup.md, _maestro/Databases/database-backup.md, _node/Databases/database-backup.md, _rails/databases/database-backup.md] -->
+<!--  usedin: [ _legacy_docker/Databases/database-backup.md, _maestro/Databases/database-backup.md, _node/Databases/database-backup.md, _rails/databases/database-backup.md] -->
 
 
 #### MongoDB

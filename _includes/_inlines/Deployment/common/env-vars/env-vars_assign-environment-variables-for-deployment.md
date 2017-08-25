@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/env-vars/code_env-vars_assign-environment-variables-for-deployment-v.html" ]
- usedin: [ _legacy_docker/deployment/env-vars.md, _maestro/Deployment/env-vars.md, _node/deployment/env-vars.md, _rails/deployment/env-vars.md, _skycap/deployment/env-vars.md] -->
+<!--  usedin: [ _legacy_docker/deployment/env-vars.md, _maestro/Deployment/env-vars.md, _node/deployment/env-vars.md, _rails/deployment/env-vars.md, _skycap/deployment/env-vars.md] -->
 
 
 ## Assign environment variables for deployment

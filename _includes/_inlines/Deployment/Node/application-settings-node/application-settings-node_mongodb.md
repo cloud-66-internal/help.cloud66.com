@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Node/application-settings-node/code_application-settings-node_mongodb-ngooseconnec.html" ]
- usedin: [ _node/deployment/application-settings-node.md] -->
+<!--  usedin: [ _node/deployment/application-settings-node.md] -->
 
 
 ### MongoDB

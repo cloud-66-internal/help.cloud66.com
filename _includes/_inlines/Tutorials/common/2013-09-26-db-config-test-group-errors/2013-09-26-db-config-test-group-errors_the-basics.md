@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2013-09-26-db-config-test-group-errors/code_2013-09-26-db-config-test-group-errors_the-basics-apte.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2013-09-26-db-config-test-group-errors/code_2013-09-26-db-config-test-group-errors_the-basics-init.html" ]
- usedin: [ _rails/Tutorials/2013-09-26-db-config-test-group-errors.md] -->
+<!--  usedin: [ _rails/Tutorials/2013-09-26-db-config-test-group-errors.md] -->
 
 
 ## The basics

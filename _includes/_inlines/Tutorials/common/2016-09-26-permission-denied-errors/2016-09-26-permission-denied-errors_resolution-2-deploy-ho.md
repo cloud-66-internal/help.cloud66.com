@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2016-09-26-permission-denied-errors/code_2016-09-26-permission-denied-errors_resolution-2-depl.html" ]
- usedin: [ _rails/Tutorials/2016-09-26-permission-denied-errors.md] -->
+<!--  usedin: [ _rails/Tutorials/2016-09-26-permission-denied-errors.md] -->
 
 
 ## Resolution 2: Deploy hook

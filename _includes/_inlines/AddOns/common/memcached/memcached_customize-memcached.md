@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/memcached/code_memcached_customize-memcached-oduction.html" ]
- usedin: [ _legacy_docker/AddOns/memcached.md, _maestro/AddOns/memcached.md, _node/addons/memcached.md, _rails/AddOns/memcached.md] -->
+<!--  usedin: [ _legacy_docker/AddOns/memcached.md, _maestro/AddOns/memcached.md, _node/addons/memcached.md, _rails/AddOns/memcached.md] -->
 
 
 ## Customize Memcached

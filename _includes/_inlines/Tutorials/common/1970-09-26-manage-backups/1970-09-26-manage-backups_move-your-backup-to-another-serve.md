@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1970-09-26-manage-backups/code_1970-09-26-manage-backups_move-your-backup-to-another-.html" ]
- usedin: [ _legacy_docker/Tutorials/1970-09-26-manage-backups.md, _maestro/Tutorials/1970-09-26-manage-backups.md, _node/tutorials/1970-09-26-manage-backups.md, _rails/Tutorials/1970-09-26-manage-backups.md] -->
+<!--  usedin: [ _legacy_docker/Tutorials/1970-09-26-manage-backups.md, _maestro/Tutorials/1970-09-26-manage-backups.md, _node/tutorials/1970-09-26-manage-backups.md, _rails/Tutorials/1970-09-26-manage-backups.md] -->
 
 
 ## Move your backup to another server

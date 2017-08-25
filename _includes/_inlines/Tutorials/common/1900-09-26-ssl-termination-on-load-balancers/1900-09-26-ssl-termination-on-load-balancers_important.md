@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-1.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-2.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-3.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/code_1900-09-26-ssl-termination-on-load-balancers_important-4.html" ]
- usedin: [ _legacy_docker/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md, _maestro/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md, _node/tutorials/1900-09-26-ssl-termination-on-load-balancers.md, _rails/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md] -->
+<!--  usedin: [ _legacy_docker/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md, _maestro/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md, _node/tutorials/1900-09-26-ssl-termination-on-load-balancers.md, _rails/Tutorials/1900-09-26-ssl-termination-on-load-balancers.md] -->
 
 
 ## Important

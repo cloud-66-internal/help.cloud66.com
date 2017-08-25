@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_4.-rails95root-quirefay.html" ]
- usedin: [ _rails/Tutorials/1950-09-26-implementing-faye.md] -->
+<!--  usedin: [ _rails/Tutorials/1950-09-26-implementing-faye.md] -->
 
 
 ### 4. RAILS_ROOT/faye/config.ru

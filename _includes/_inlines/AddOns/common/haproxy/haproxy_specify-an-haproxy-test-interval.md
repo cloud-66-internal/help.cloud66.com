@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/haproxy/code_haproxy_specify-an-haproxy-test-interval-verweb.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/haproxy/code_haproxy_specify-an-haproxy-test-interval-verweb-2.html" ]
- usedin: [ _legacy_docker/AddOns/haproxy.md, _maestro/AddOns/haproxy.md, _node/addons/haproxy.md, _rails/AddOns/haproxy.md] -->
+<!--  usedin: [ _legacy_docker/AddOns/haproxy.md, _maestro/AddOns/haproxy.md, _node/addons/haproxy.md, _rails/AddOns/haproxy.md] -->
 
 
 ## Specify an HAProxy test interval

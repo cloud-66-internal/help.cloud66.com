@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deploy-hooks/code_deploy-hooks_use-a-snippet-deploy-hook-oduction.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deploy-hooks/code_deploy-hooks_use-a-snippet-deploy-hook-oduction-2.html" ]
- usedin: [ _legacy_docker/deployment/deploy-hooks.md, _maestro/Deployment/deploy-hooks.md, _node/deployment/deploy-hooks.md, _rails/deployment/deploy-hooks.md, _skycap/deployment/deploy-hooks.md] -->
+<!--  usedin: [ _legacy_docker/deployment/deploy-hooks.md, _maestro/Deployment/deploy-hooks.md, _node/deployment/deploy-hooks.md, _rails/deployment/deploy-hooks.md, _skycap/deployment/deploy-hooks.md] -->
 
 
 ## Use a snippet deploy hook

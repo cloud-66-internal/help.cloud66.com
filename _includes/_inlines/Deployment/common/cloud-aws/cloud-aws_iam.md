@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-aws/code_cloud-aws_iam-ersion.html" ]
- usedin: [ _legacy_docker/deployment/cloud-aws.md, _maestro/Deployment/cloud-aws.md, _node/deployment/cloud-aws.md, _rails/deployment/cloud-aws.md, _skycap/deployment/cloud-aws.md] -->
+<!--  usedin: [ _legacy_docker/deployment/cloud-aws.md, _maestro/Deployment/cloud-aws.md, _node/deployment/cloud-aws.md, _rails/deployment/cloud-aws.md, _skycap/deployment/cloud-aws.md] -->
 
 
 ### IAM

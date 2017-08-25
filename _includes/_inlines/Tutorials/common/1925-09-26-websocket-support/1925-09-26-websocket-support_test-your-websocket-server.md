@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1925-09-26-websocket-support/code_1925-09-26-websocket-support_test-your-websocket-serve.html" ]
- usedin: [ _legacy_docker/Tutorials/1925-09-26-websocket-support.md, _maestro/Tutorials/1925-09-26-websocket-support.md, _node/tutorials/1925-09-26-websocket-support.md, _rails/Tutorials/1925-09-26-websocket-support.md] -->
+<!--  usedin: [ _legacy_docker/Tutorials/1925-09-26-websocket-support.md, _maestro/Tutorials/1925-09-26-websocket-support.md, _node/tutorials/1925-09-26-websocket-support.md, _rails/Tutorials/1925-09-26-websocket-support.md] -->
 
 
 ## Test your WebSocket server

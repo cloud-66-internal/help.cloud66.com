@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/custom-config/code_custom-config_note-tchltcurre.html" ]
- usedin: [ _legacy_docker/stack-management/custom-config.md, _maestro/stack-management/custom-config.md, _node/stack-management/custom-config.md, _rails/stack-management/custom-config.md, _skycap/stack-management/custom-config.md] -->
+<!--  usedin: [ _legacy_docker/stack-management/custom-config.md, _maestro/stack-management/custom-config.md, _node/stack-management/custom-config.md, _rails/stack-management/custom-config.md, _skycap/stack-management/custom-config.md] -->
 
 
 ### Note

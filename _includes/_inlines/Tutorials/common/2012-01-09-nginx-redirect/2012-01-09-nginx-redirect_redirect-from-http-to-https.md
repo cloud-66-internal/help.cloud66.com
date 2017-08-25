@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-09-nginx-redirect/code_2012-01-09-nginx-redirect_redirect-from-http-to-https-.html" ]
- usedin: [ _legacy_docker/Tutorials/2012-01-09-nginx-redirect.md, _maestro/Tutorials/2012-01-09-nginx-redirect.md, _node/tutorials/2012-01-09-nginx-redirect.md, _rails/Tutorials/2012-01-09-nginx-redirect.md] -->
+<!--  usedin: [ _legacy_docker/Tutorials/2012-01-09-nginx-redirect.md, _maestro/Tutorials/2012-01-09-nginx-redirect.md, _node/tutorials/2012-01-09-nginx-redirect.md, _rails/Tutorials/2012-01-09-nginx-redirect.md] -->
 
 
 ## Redirect from HTTP to HTTPS

@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/introduction/code_introduction_initialize-the-toolbelt-cxstackslis.html" ]
- usedin: [ _legacy_docker/Toolbelt/introduction.md, _maestro/Toolbelt/introduction.md, _node/toolbelt/introduction.md, _rails/Toolbelt/introduction.md] -->
+<!--  usedin: [ _legacy_docker/Toolbelt/introduction.md, _maestro/Toolbelt/introduction.md, _node/toolbelt/introduction.md, _rails/Toolbelt/introduction.md] -->
 
 
 ## Initialize the toolbelt

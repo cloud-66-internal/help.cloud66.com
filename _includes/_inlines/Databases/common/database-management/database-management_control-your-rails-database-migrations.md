@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-management/code_database-management_control-your-rails-database-migrat.html" ]
- usedin: [ _legacy_docker/Databases/database-management.md, _maestro/Databases/database-management.md, _node/Databases/database-management.md, _rails/databases/database-management.md] -->
+<!--  usedin: [ _legacy_docker/Databases/database-management.md, _maestro/Databases/database-management.md, _node/Databases/database-management.md, _rails/databases/database-management.md] -->
 
 
 ## Control your Rails database migrations

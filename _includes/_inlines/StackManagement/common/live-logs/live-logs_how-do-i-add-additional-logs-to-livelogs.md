@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/live-logs/code_live-logs_how-do-i-add-additional-logs-to-livelogs-od.html" ]
- usedin: [ _legacy_docker/stack-management/live-logs.md, _maestro/stack-management/live-logs.md, _node/stack-management/live-logs.md, _rails/stack-management/live-logs.md] -->
+<!--  usedin: [ _legacy_docker/stack-management/live-logs.md, _maestro/stack-management/live-logs.md, _node/stack-management/live-logs.md, _rails/stack-management/live-logs.md] -->
 
 
 ## How do I add additional logs to LiveLogs?

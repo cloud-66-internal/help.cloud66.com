@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud66-starter/code_cloud66-starter_get-started-cdmyprojec.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud66-starter/code_cloud66-starter_get-started-loudtart.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud66-starter/code_cloud66-starter_get-started-starterpm.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud66-starter/code_cloud66-starter_get-started-starterhel.html" ]
- usedin: [ _node/deployment/cloud66-starter.md, _rails/deployment/cloud66-starter.md] -->
+<!--  usedin: [ _node/deployment/cloud66-starter.md, _rails/deployment/cloud66-starter.md] -->
 
 
 ## Get Started

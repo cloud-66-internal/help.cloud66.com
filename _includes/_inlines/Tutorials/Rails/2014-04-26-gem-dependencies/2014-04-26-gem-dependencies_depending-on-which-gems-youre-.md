@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_depending-on-which-gems-yo.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/2014-04-26-gem-dependencies/code_2014-04-26-gem-dependencies_1.html" ]
- usedin: [ _rails/Tutorials/2014-04-26-gem-dependencies.md] -->
+<!--  usedin: [ _rails/Tutorials/2014-04-26-gem-dependencies.md] -->
 
 
 Depending on which gems you're using together with a specific Ruby version, you may see dependency issues such as:

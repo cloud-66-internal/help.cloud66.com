@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-findpathto.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-findpathto-2.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-findpathto-2-3.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-gzipdpath.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-export.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-mysqlu.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-mysqlu-2.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-mysqlu-2-3.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_mysql-mysqlu-2-3-4.html" ]
- post: -->
+<!--  post: -->
 
 
 #### Mysql

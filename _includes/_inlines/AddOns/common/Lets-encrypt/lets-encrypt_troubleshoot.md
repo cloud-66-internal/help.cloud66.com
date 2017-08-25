@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/Lets-encrypt/code_lets-encrypt_troubleshoot-otefileto.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/Lets-encrypt/code_lets-encrypt_troubleshoot-ote2nginx.html" ]
- usedin: [ _legacy_docker/AddOns/Lets-encrypt.md, _maestro/AddOns/Lets-encrypt.md, _node/addons/lets-encrypt.md, _rails/AddOns/Lets-encrypt.md] -->
+<!--  usedin: [ _legacy_docker/AddOns/Lets-encrypt.md, _maestro/AddOns/Lets-encrypt.md, _node/addons/lets-encrypt.md, _rails/AddOns/Lets-encrypt.md] -->
 
 ## Troubleshoot
 

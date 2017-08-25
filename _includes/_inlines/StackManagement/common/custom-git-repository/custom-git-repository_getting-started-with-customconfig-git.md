@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/custom-git-repository/code_custom-git-repository_getting-started-with-customconfi.html" ]
- usedin: [ _legacy_docker/stack-management/custom-git-repository.md, _maestro/stack-management/custom-git-repository.md, _node/stack-management/custom-git-repository.md, _rails/stack-management/custom-git-repository.md, _skycap/stack-management/custom-git-repository.md] -->
+<!--  usedin: [ _legacy_docker/stack-management/custom-git-repository.md, _maestro/stack-management/custom-git-repository.md, _node/stack-management/custom-git-repository.md, _rails/stack-management/custom-git-repository.md, _skycap/stack-management/custom-git-repository.md] -->
 
 
 ## Getting Started with CustomConfig git

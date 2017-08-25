@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-wgethttp.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-configur.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1985-09-26-postgis-installation/code_1985-09-26-postgis-installation_build-postgis-sudolnsf.html" ]
- usedin: [ _rails/Tutorials/1985-09-26-postgis-installation.md] -->
+<!--  usedin: [ _rails/Tutorials/1985-09-26-postgis-installation.md] -->
 
 
 ### Build PostGIS

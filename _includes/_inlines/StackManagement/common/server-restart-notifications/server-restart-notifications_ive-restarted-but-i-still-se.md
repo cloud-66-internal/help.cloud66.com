@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-restart-notifications/code_server-restart-notifications_ive-restarted-but-i-sti.html" ]
- usedin: [ _legacy_docker/stack-management/server-restart-notifications.md, _maestro/stack-management/server-restart-notifications.md, _node/stack-management/server-restart-notifications.md, _rails/stack-management/server-restart-notifications.md] -->
+<!--  usedin: [ _legacy_docker/stack-management/server-restart-notifications.md, _maestro/stack-management/server-restart-notifications.md, _node/stack-management/server-restart-notifications.md, _rails/stack-management/server-restart-notifications.md] -->
 
 
 ## I've restarted, but I still see the notification

@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_postgresql-findpathto.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_postgresql-findpathto-2.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_postgresql-findpathto-2-3.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_postgresql-gzipdpath.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_postgresql-export.html" ]
- post: -->
+<!--  post: -->
 
 
 #### Postgresql

@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important-.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important--2.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2003-09-26-sharing-db/code_2003-09-26-sharing-db_important-ernamepas.html" ]
- usedin: [ _legacy_docker/Tutorials/2003-09-26-sharing-db.md, _maestro/Tutorials/2003-09-26-sharing-db.md, _node/tutorials/2003-09-26-sharing-db.md, _rails/Tutorials/2003-09-26-sharing-db.md] -->
+<!--  usedin: [ _legacy_docker/Tutorials/2003-09-26-sharing-db.md, _maestro/Tutorials/2003-09-26-sharing-db.md, _node/tutorials/2003-09-26-sharing-db.md, _rails/Tutorials/2003-09-26-sharing-db.md] -->
 
 
 ## Important

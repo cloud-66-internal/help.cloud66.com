@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Buildgrid/Skycap/buildgrid-settings/code_buildgrid-settings_user-settings-ckerloginre.html" ]
- usedin: [ _skycap/buildgrid/buildgrid-settings.md] -->
+<!--  usedin: [ _skycap/buildgrid/buildgrid-settings.md] -->
 
 ### User Settings
 

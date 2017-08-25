@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/database-backup/code_database-backup_restore-backup-tarxvflt.html" ]
- post: -->
+<!--  post: -->
 
 
 ### Restore backup

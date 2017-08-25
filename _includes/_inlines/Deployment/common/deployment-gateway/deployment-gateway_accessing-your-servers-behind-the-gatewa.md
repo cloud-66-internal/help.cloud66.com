@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deployment-gateway/code_deployment-gateway_accessing-your-servers-behind-the-g.html" ]
- usedin: [ _legacy_docker/deployment/deployment-gateway.md, _maestro/Deployment/deployment-gateway.md, _node/deployment/deployment-gateway.md, _rails/deployment/deployment-gateway.md, _skycap/deployment/deployment-gateway.md] -->
+<!--  usedin: [ _legacy_docker/deployment/deployment-gateway.md, _maestro/Deployment/deployment-gateway.md, _node/deployment/deployment-gateway.md, _rails/deployment/deployment-gateway.md, _skycap/deployment/deployment-gateway.md] -->
 
 
 ## Accessing your servers behind the gateway server

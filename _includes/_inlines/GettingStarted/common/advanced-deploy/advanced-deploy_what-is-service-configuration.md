@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/advanced-deploy/code_advanced-deploy_what-is-service-configuration-service.html" ]
- usedin: [ _legacy_docker/getting-started/advanced-deploy.md, _node/getting-started/advanced-deploy.md, _rails/getting-started/advanced-deploy.md, _skycap/getting-started/advanced-deploy.md] -->
+<!--  usedin: [ _legacy_docker/getting-started/advanced-deploy.md, _node/getting-started/advanced-deploy.md, _rails/getting-started/advanced-deploy.md, _skycap/getting-started/advanced-deploy.md] -->
 
 
 ## What is service configuration?

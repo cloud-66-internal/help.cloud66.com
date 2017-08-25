@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2016-01-21-Docker-Dependency/code_2016-01-21-docker-dependency_if-you-have-a-docker-stac-1.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2016-01-21-Docker-Dependency/code_2016-01-21-docker-dependency_if-you-have-a-docker-stac.html" ]
- usedin: [ _legacy_docker/Tutorials/2016-01-21-Docker-Dependency.md, _maestro/Tutorials/2016-01-21-Docker-Dependency.md] -->
+<!--  usedin: [ _legacy_docker/Tutorials/2016-01-21-Docker-Dependency.md, _maestro/Tutorials/2016-01-21-Docker-Dependency.md] -->
 
 
 If you have a docker stack but your services don't follow the dependencies you've defined, this article is probably for you.

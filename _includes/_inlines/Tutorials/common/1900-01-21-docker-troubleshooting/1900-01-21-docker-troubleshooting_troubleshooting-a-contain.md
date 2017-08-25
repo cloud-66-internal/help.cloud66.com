@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1900-01-21-docker-troubleshooting/code_1900-01-21-docker-troubleshooting_troubleshooting-a-co.html" ]
- usedin: [ _legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md, _maestro/Tutorials/1900-01-21-docker-troubleshooting.md] -->
+<!--  usedin: [ _legacy_docker/Tutorials/1900-01-21-docker-troubleshooting.md, _maestro/Tutorials/1900-01-21-docker-troubleshooting.md] -->
 
 
 ## Troubleshooting a container that has started

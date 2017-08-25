@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/code_getting-started-with-manifest-files_what-is-cors-oduc.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/code_getting-started-with-manifest-files_what-is-cors-cxse.html" ]
- usedin: [ _legacy_docker/deployment/getting-started-with-manifest-files.md, _maestro/Deployment/getting-started-with-manifest-files.md, _node/deployment/getting-started-with-manifest-files.md, _rails/deployment/getting-started-with-manifest-files.md, _skycap/deployment/getting-started-with-manifest-files.md] -->
+<!--  usedin: [ _legacy_docker/deployment/getting-started-with-manifest-files.md, _maestro/Deployment/getting-started-with-manifest-files.md, _node/deployment/getting-started-with-manifest-files.md, _rails/deployment/getting-started-with-manifest-files.md, _skycap/deployment/getting-started-with-manifest-files.md] -->
 
 
 ### What is CORS?

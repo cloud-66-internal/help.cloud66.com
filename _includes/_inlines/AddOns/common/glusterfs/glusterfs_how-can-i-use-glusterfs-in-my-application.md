@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/glusterfs/code_glusterfs_how-can-i-use-glusterfs-in-my-application-c.html" ]
- usedin: [ _legacy_docker/AddOns/glusterfs.md, _maestro/AddOns/glusterfs.md, _node/addons/glusterfs.md, _rails/AddOns/glusterfs.md] -->
+<!--  usedin: [ _legacy_docker/AddOns/glusterfs.md, _maestro/AddOns/glusterfs.md, _node/addons/glusterfs.md, _rails/AddOns/glusterfs.md] -->
 
 
 ## How can I use GlusterFS in my application?

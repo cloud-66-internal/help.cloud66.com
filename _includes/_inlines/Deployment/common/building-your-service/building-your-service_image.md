@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-your-service/code_building-your-service_image-rvices-2-3-4.html" ]
- usedin: [ _legacy_docker/deployment/building-your-service.md, _skycap/deployment/building-your-service.md] -->
+<!--  usedin: [ _legacy_docker/deployment/building-your-service.md, _skycap/deployment/building-your-service.md] -->
 
 
 ### Image

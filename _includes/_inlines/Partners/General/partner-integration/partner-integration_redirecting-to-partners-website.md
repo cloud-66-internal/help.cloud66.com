@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Partners/General/partner-integration/code_partner-integration_redirecting-to-partners-website-h.html" ]
- usedin: [ _general/Partners/partner-integration.md] -->
+<!--  usedin: [ _general/Partners/partner-integration.md] -->
 
 
 ### Redirecting to Partner's website

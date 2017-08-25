@@ -1,6 +1,4 @@
----
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/code_1950-09-26-implementing-faye_1.-rails95root-oduction.html" ]
- usedin: [ _rails/Tutorials/1950-09-26-implementing-faye.md] -->
+<!--  usedin: [ _rails/Tutorials/1950-09-26-implementing-faye.md] -->
 
 
 ### 1. RAILS_ROOT/.cloud66/deploy_hooks.yml
