@@ -129,10 +129,11 @@ bodyclass: post
 
 <div style="
    z-index: 10;
-   border-right: solid mediumseagreen;
+   top: 100px;
+   margin-top: 50px;
    position: fixed;
    left: 0px;
-   width: 300px;
+   width: 19%;
    color: mediumseagreen;
    overflow: scroll;
    bottom:0px;
@@ -140,7 +141,7 @@ bodyclass: post
     <h1 style="buffer-top: 200px; top:100;"> </h1>
     <ul style="buffer-top: 200px; top:100px">
         {% for next in page.menuheaders %}
-        {% assign theIndex = forloop.index | plus: 1 | prepend: '#' %}
+        {% assign theIndex = forloop.index | prepend: '#' %}
         <a href={{theIndex}} ><li>{{next}}</li></a><br>
         {% endfor %}
     </ul>
