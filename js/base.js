@@ -113,14 +113,14 @@ CB.help = ( function( $, window, document ) {
         */
         window.addEventListener('load', function() {
           setTimeout(function() {
-            window.addEventListener('popstate', function() {
-                console.log('**** popstate fired - do some navigation ****');
-                var path = window.location.pathname;
-                if (  path == '/getting-started/faq.html' ) {
-                    return;
-                }
-                goHome();
-            });
+            // window.addEventListener('popstate', function() {
+            //     console.log('**** popstate fired - do some navigation ****');
+            //     var path = window.location.pathname;
+            //     if (  path == '/getting-started/faq.html' ) {
+            //         return;
+            //     }
+            //   //  goHome();
+            // });
           }, 0);
         });
 
