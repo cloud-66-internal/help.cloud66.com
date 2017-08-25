@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/parallel-deployment/parallel-deployment_contents.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/parallel-deployment/parallel-deployment_what-is-parallel-deployment.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/parallel-deployment/parallel-deployment_note.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/parallel-deployment/parallel-deployment_configure-parallel-deployment.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/parallel-deployment/parallel-deployment_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/parallel-deployment/parallel-deployment_what-is-parallel-deployment.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/parallel-deployment/parallel-deployment_note.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/parallel-deployment/parallel-deployment_configure-parallel-deployment.md" ]
 layout: post
 template: one-col
 title: Parallel deployments

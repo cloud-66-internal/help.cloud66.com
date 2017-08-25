@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/redeploy/redeploy_redeploy-your-stack.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/redeploy/redeploy_usage.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/redeploy/redeploy_parameters.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/redeploy/redeploy_examples.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/redeploy/redeploy_redeploy-your-stack.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/redeploy/redeploy_usage.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/redeploy/redeploy_parameters.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/redeploy/redeploy_examples.md" ]
 layout: post
 template: one-col
 title: Toolbelt redeploy command

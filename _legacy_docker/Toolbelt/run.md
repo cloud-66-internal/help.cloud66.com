@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/run/run_run-command.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/run/run_usage.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/run/run_parameters.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/run/run_examples.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/run/run_run-command.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/run/run_usage.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/run/run_parameters.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/run/run_examples.md" ]
 layout: post
 template: one-col
 title: Toolbelt run command

@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/service-pause-resume/service-pause-resume_contents.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/service-pause-resume/service-pause-resume_pause-and-resume-services.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/service-pause-resume/service-pause-resume_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/service-pause-resume/service-pause-resume_pause-and-resume-services.md" ]
 layout: post
 template: one-col
 title: Service Pause and Resume

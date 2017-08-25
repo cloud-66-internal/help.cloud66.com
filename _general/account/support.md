@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/support/support_the-support-packages-below-are-set-up-with-a-simple.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/support/support_the-support-packages-below-are-set-up-with-a-simple.md" ]
 layout: post
 template: one-col
 title: Support Plans

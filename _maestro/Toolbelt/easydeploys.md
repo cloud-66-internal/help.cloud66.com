@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/Maestro/easydeploys/easydeploys_easydeploy-commands.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/Maestro/easydeploys/easydeploys_usage.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/Maestro/easydeploys/easydeploys_parameters.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/Maestro/easydeploys/easydeploys_example.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/Maestro/easydeploys/easydeploys_easydeploy-commands.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/Maestro/easydeploys/easydeploys_usage.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/Maestro/easydeploys/easydeploys_parameters.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/Maestro/easydeploys/easydeploys_example.md" ]
 layout: post
 template: one-col
 title: Toolbelt EasyDeploy commands

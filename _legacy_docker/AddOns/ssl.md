@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/ssl/ssl_contents.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/ssl/ssl_about-ssl-certificate.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/ssl/ssl_standard-ssl-certificate.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/ssl/ssl_lets-encrypt-ssl-certificate.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/ssl/ssl_note.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/ssl/ssl_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/ssl/ssl_about-ssl-certificate.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/ssl/ssl_standard-ssl-certificate.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/ssl/ssl_lets-encrypt-ssl-certificate.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/ssl/ssl_note.md" ]
 layout: post
 template: one-col
 title: SSL certificate

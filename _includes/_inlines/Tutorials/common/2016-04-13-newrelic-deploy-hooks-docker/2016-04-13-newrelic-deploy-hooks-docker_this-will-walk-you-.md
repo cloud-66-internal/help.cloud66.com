@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2016-04-13-newrelic-deploy-hooks-docker/code-2016-04-13-newrelic-deploy-hooks.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2016-04-13-newrelic-deploy-hooks-docker/code-2016-04-13-newrelic-deploy-hooks.md" ]
  usedin: [ _legacy_docker/Tutorials/2016-04-13-newrelic-deploy-hooks-docker.md, _maestro/Tutorials/2016-04-13-newrelic-deploy-hooks-docker.md] -->
 
 

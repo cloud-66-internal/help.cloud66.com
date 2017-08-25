@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/pricing/pricing_introduction.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/pricing/pricing_comparing-cloud-66-with-heroku-and-diy.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/pricing/pricing_.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/pricing/pricing_assumptions.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/pricing/pricing_introduction.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/pricing/pricing_comparing-cloud-66-with-heroku-and-diy.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/pricing/pricing_.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/pricing/pricing_assumptions.md" ]
 layout: post
 template: one-col
 title: Comparing Pricing

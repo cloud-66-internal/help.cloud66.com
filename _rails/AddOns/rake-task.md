@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/rake-task/rake-task_add-a-rake-task.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/rake-task/rake-task_note.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/rake-task/rake-task_add-a-rake-task.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/rake-task/rake-task_note.md" ]
 layout: post
 template: one-col
 title: Rake Task

@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/download/download_download.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/download/download_usage.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/download/download_parameters.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/download/download_example.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/download/download_download.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/download/download_usage.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/download/download_parameters.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/download/download_example.md" ]
 layout: post
 template: one-col
 title: Toolbelt download command

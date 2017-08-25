@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/elasticsearch-scaling/elasticsearch-scaling_contents.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/elasticsearch-scaling/elasticsearch-scaling_about-scaling-your-elasticsearch-clus.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/elasticsearch-scaling/elasticsearch-scaling_general-recommendations.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/elasticsearch-scaling/elasticsearch-scaling_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/elasticsearch-scaling/elasticsearch-scaling_about-scaling-your-elasticsearch-clus.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Databases/common/elasticsearch-scaling/elasticsearch-scaling_general-recommendations.md" ]
 layout: post
 template: one-col
 title: Elasticsearch Scaling

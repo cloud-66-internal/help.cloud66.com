@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/referral-program/referral-program_when-you-share-cloud-66-with-your-friends.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/referral-program/referral-program_how-it-works.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/referral-program/referral-program_your-referral-code.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/referral-program/referral-program_when-you-share-cloud-66-with-your-friends.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/referral-program/referral-program_how-it-works.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/referral-program/referral-program_your-referral-code.md" ]
 layout: post
 template: one-col
 title: Referral Program

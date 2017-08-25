@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/1991-09-26-rails-console_start-by-sshing-to-your-serverh.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1991-09-26-rails-console/1991-09-26-rails-console_start-by-sshing-to-your-serverh.md" ]
 layout: post
 template: one-col
 title: Running the Rails Console

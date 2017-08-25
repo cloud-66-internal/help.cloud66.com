@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/upload/upload_upload.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/upload/upload_usage.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/upload/upload_parameters.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/upload/upload_example.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/upload/upload_upload.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/upload/upload_usage.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/upload/upload_parameters.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/upload/upload_example.md" ]
 layout: post
 template: one-col
 title: Toolbelt upload command

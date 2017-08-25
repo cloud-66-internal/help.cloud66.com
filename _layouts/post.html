@@ -96,3 +96,25 @@ bodyclass: post
 
 
 
+
+{% if jekyll.environment == "development" %}
+
+<div style="
+    padding-bottom: 20px;
+    padding-left: 5px;
+    scroll-padding-right: 5px;
+    border-radius: 10px 0px 0px 10px;
+   position: fixed;
+   right: 0px;
+   top: 100px;
+   width: 230px;
+   background-color: rgba(0,0,0,0.2)">
+    <h1>Github Links</h1>
+    {% for next in page.gitlinks %}
+        {% assign words = next | split: '/' %}
+        {% assign length = words | size | minus: 1 %}
+        {% assign namer = words[length] %}
+    <div><a href={{next}} >{{namer}}<br></a></div>
+    {% endfor %}
+</div>
+{% endif %}

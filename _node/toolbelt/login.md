@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/login/login_cloud-66-easy-login.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/login/login_access-control-for-toolbelt-login.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/login/login_cloud-66-easy-login.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/login/login_access-control-for-toolbelt-login.md" ]
 layout: post
 template: one-col
 title: Easy Login

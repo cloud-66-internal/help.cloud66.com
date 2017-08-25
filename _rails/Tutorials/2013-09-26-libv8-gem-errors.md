@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-specifics.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-specifics.md" ]
 layout: post
 template: one-col
 title: Errors when installing gem libv8

@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2040-02-26-unicorn-issues/2040-02-26-unicorn-issues_a-not-unusual-issue-with-unicorn-.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2040-02-26-unicorn-issues/2040-02-26-unicorn-issues_a-not-unusual-issue-with-unicorn-.md" ]
 layout: post
 template: one-col
 title: Unicorn deployment issues

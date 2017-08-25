@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2040-09-26-whenever-errors/2040-09-26-whenever-errors_problem.html", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2040-09-26-whenever-errors/2040-09-26-whenever-errors_resolution.html" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2040-09-26-whenever-errors/2040-09-26-whenever-errors_problem.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2040-09-26-whenever-errors/2040-09-26-whenever-errors_resolution.md" ]
 layout: post
 template: one-col
 title: Whenever cron errors
