@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/GettingStarted/common/image_repository/image_repository_contents.md %}
 <a name="2"></a>{% include _inlines/GettingStarted/common/image_repository/image_repository_provide-a-docker-image.md %}
 <a name="3"></a>{% include _inlines/GettingStarted/common/image_repository/image_repository_how-to-add-docker-image-repository.md %}

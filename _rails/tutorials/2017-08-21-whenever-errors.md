@@ -10,5 +10,8 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Tutorials/common/2040-09-26-whenever-errors/2040-09-26-whenever-errors_problem.md %}
 <a name="2"></a>{% include _inlines/Tutorials/common/2040-09-26-whenever-errors/2040-09-26-whenever-errors_resolution.md %}

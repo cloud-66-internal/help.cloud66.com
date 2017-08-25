@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_contents.md %}
 <a name="2"></a>{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_how-it-is-installed.md %}
 <a name="3"></a>{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_note.md %}

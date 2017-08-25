@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_there-are-various-reasons-for.md %}
 <a name="2"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_1-set-a-failover-group.md %}
 <a name="3"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_2-add-a-cname-record-in-your.md %}

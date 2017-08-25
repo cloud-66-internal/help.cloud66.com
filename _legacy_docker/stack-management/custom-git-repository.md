@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_contents.md %}
 <a name="2"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_what-is-customconfig-git.md %}
 <a name="3"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_getting-started-with-customconfig-git.md %}

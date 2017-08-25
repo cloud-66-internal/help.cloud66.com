@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_contents.md %}
 <a name="2"></a>{% include _inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_about-scaling-your-mongodb-servers.md %}
 <a name="3"></a>{% include _inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_configure-a-mongodb-replica-set.md %}

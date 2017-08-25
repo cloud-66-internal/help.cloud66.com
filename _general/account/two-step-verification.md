@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Account/General/two-step-verification/two-step-verification_what-is-two-step-verification.md %}
 <a name="2"></a>{% include _inlines/Account/General/two-step-verification/two-step-verification_enable-two-step-verification.md %}
 <a name="3"></a>{% include _inlines/Account/General/two-step-verification/two-step-verification_add-a-recovery-phone-number.md %}

@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_contents.md %}
 <a name="2"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_about-network-settings.md %}
 <a name="3"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_what-is-activeprotecttrade.md %}

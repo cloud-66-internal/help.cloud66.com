@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_contents.md %}
 <a name="2"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_what-is-service-configuration.md %}
 <a name="3"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_how-do-i-specify-service-confi.md %}

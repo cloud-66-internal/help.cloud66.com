@@ -8,6 +8,9 @@ lead: ""
 legacy: false
 
 ---
+
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
 {% assign product = "common" %}
 
 {% include _inlines/Tutorials/common/2040-02-26-unicorn-issues/2040-02-26-unicorn-issues_a-not-unusual-issue-with-unicorn-.md %}

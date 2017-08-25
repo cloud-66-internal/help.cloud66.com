@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Deployment/common/docker-introduction/docker-introduction_contents.md %}
 <a name="2"></a>{% include _inlines/Deployment/common/docker-introduction/docker-introduction_introduction-to-docker.md %}
 <a name="3"></a>{% include _inlines/Deployment/common/docker-introduction/docker-introduction_cloud-66-docker-support.md %}

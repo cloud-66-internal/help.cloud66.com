@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/GettingStarted/legacy_docker/docker-getting-started-deployments/docker-getting-started-deployments_setting-up-a-docker-depl.md %}
 <a name="2"></a>{% include _inlines/GettingStarted/legacy_docker/docker-getting-started-deployments/docker-getting-started-deployments_deployment-setup.md %}
 <a name="3"></a>{% include _inlines/GettingStarted/legacy_docker/docker-getting-started-deployments/docker-getting-started-deployments_configuring-services.md %}

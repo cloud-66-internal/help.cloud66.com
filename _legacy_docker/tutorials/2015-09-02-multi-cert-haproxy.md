@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_this-article-is-for-adding-mu.md %}
 <a name="2"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_1.-concatanate-each-certifica.md %}
 <a name="3"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_2.-upload-them-to-.md %}

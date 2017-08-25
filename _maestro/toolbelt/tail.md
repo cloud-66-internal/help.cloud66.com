@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Toolbelt/common/tail/tail_this-will-run-a-linux-tail-command-on-the-specified-se.md %}
 <a name="2"></a>{% include _inlines/Toolbelt/common/tail/tail_usage.md %}
 <a name="3"></a>{% include _inlines/Toolbelt/common/tail/tail_parameters.md %}

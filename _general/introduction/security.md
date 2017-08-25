@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Introduction/General/security/security_we-take-your-security-extremely-seriously-at-cloud.md %}
 <a name="2"></a>{% include _inlines/Introduction/General/security/security_infrastructure-security.md %}
 <a name="3"></a>{% include _inlines/Introduction/General/security/security_credit-card-information.md %}

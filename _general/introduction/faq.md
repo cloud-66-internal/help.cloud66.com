@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/unknown/General/faq/faq_what-is-cloud-66.md %}
 <a name="2"></a>{% include _inlines/unknown/General/faq/faq_where-is-it-hosted.md %}
 <a name="3"></a>{% include _inlines/unknown/General/faq/faq_how-can-i-use-cloud-66.md %}

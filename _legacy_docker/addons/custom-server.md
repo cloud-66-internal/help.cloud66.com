@@ -10,5 +10,8 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/AddOns/common/custom-server/custom-server_what-is-the-custom-server-add-in.md %}
 <a name="2"></a>{% include _inlines/AddOns/common/custom-server/custom-server_add-a-custom-server.md %}

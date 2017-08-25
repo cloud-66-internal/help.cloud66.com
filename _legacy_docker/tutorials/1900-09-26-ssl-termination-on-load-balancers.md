@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_cloud-66-now-s.md %}
 <a name="2"></a>{% include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_contents.md %}
 <a name="3"></a>{% include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_amazon-elastic.md %}

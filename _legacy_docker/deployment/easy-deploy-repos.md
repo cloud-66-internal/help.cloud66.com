@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_contents.md %}
 <a name="2"></a>{% include _inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_about-easydeploy-repositories.md %}
 <a name="3"></a>{% include _inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_using-easydeploy-repositories.md %}

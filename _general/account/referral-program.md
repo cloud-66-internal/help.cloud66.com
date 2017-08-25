@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Account/General/referral-program/referral-program_when-you-share-cloud-66-with-your-friends.md %}
 <a name="2"></a>{% include _inlines/Account/General/referral-program/referral-program_how-it-works.md %}
 <a name="3"></a>{% include _inlines/Account/General/referral-program/referral-program_your-referral-code.md %}

@@ -8,6 +8,9 @@ lead: ""
 legacy: false
 
 ---
+
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
 {% assign product = "common" %}
 
 {% include _inlines/Tutorials/common/1920-09-26-change-psql-directory/1920-09-26-change-psql-directory_we-use-the-default-data-fo.md %}

@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/StackManagement/common/ssh/ssh_how-toolbelt-ssh-works.md %}
 <a name="2"></a>{% include _inlines/StackManagement/common/ssh/ssh_versbose-mode-ssh.md %}
 <a name="3"></a>{% include _inlines/StackManagement/common/ssh/ssh_cloud-providers-firewall-api-has-delay.md %}

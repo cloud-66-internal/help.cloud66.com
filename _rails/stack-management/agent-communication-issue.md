@@ -8,6 +8,9 @@ lead: ""
 legacy: false
 
 ---
+
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
 {% assign product = "rails" %}
 
 {% include _inlines/StackManagement/common/agent-communication-issue/agent-communication-issue_you-will-be-notified-in-the-case-.md %}

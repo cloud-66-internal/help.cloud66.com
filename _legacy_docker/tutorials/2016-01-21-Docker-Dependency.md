@@ -8,6 +8,9 @@ lead: ""
 legacy: true
 
 ---
+
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
 {% assign product = "common" %}
 
 {% include _inlines/Tutorials/common/2016-01-21-Docker-Dependency/2016-01-21-docker-dependency_if-you-have-a-docker-stack-but.md %}

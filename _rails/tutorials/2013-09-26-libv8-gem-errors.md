@@ -10,5 +10,8 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md %}
 <a name="2"></a>{% include _inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-specifics.md %}

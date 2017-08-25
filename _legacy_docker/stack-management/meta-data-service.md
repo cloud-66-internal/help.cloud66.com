@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/StackManagement/common/meta-data-service/meta-data-service_contents.md %}
 <a name="2"></a>{% include _inlines/StackManagement/common/meta-data-service/meta-data-service_overview.md %}
 <a name="3"></a>{% include _inlines/StackManagement/common/meta-data-service/meta-data-service_server-meta-data-service.md %}

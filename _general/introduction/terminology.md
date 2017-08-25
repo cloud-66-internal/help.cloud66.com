@@ -8,6 +8,9 @@ lead: ""
 legacy: false
 
 ---
+
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
 {% assign product = "General" %}
 
 {% include _inlines/Introduction/General/terminology/terminology_--deploy.md %}

@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Deployment/common/cloud-packet/cloud-packet_contents.md %}
 <a name="2"></a>{% include _inlines/Deployment/common/cloud-packet/cloud-packet_about-using-packet-cloud.md %}
 <a name="3"></a>{% include _inlines/Deployment/common/cloud-packet/cloud-packet_adding-your-packet-credentials.md %}

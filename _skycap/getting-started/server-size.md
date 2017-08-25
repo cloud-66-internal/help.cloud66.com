@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/GettingStarted/common/server-size/server-size_when-deploying-your-stack-you-are-asked-to-spe.md %}
 <a name="2"></a>{% include _inlines/GettingStarted/common/server-size/server-size_under-powered-server-sizes-not-recommended.md %}
 <a name="3"></a>{% include _inlines/GettingStarted/common/server-size/server-size_amazon-web-services.md %}

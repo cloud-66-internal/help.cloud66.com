@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Account/General/audit-logs/audit-logs_an-audit-log-for-all-account-activities.md %}
 <a name="2"></a>{% include _inlines/Account/General/audit-logs/audit-logs_search-audit-log.md %}
 <a name="3"></a>{% include _inlines/Account/General/audit-logs/audit-logs_accessing-audit-logs.md %}

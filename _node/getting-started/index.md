@@ -6,6 +6,9 @@ categories: getting-started
 lead: Getting Started with Cloud 66 for Node
 legacy: false
 ---
+
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
 - [Advanced Deploy](advanced-deploy)
 - [Connecting your Git Repository](custom-git-repo)
 - [Networking Ports](networking-ports)

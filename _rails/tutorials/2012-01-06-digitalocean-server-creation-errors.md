@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_background.md %}
 <a name="2"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-1.md %}
 <a name="3"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note1.md %}

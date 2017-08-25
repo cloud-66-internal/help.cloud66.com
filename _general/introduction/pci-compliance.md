@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_is-cloud-66-pci-compliant.md %}
 <a name="2"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_will-my-website.md %}
 <a name="3"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_how-does-cloud-66-access-my-servers.md %}

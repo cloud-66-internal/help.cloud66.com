@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_about-running-apps-with-puma.md %}
 <a name="2"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_start-the-web-server.md %}
 <a name="3"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_stop-the-web-server.md %}

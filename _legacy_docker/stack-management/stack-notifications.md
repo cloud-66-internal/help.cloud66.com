@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_about-receiving-stack-notifications.md %}
 <a name="2"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_viewing-your-stack-notifications.md %}
 <a name="3"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_setting-up-your-notification-types.md %}

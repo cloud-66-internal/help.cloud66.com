@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Account/General/pricing/pricing_introduction.md %}
 <a name="2"></a>{% include _inlines/Account/General/pricing/pricing_comparing-cloud-66-with-heroku-and-diy.md %}
 <a name="3"></a>{% include _inlines/Account/General/pricing/pricing_.md %}

@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Deployment/common/env-vars/env-vars_contents.md %}
 <a name="2"></a>{% include _inlines/Deployment/common/env-vars/env-vars_about-environment-variables.md %}
 <a name="3"></a>{% include _inlines/Deployment/common/env-vars/env-vars_auto-generate-variables.md %}

@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/AddOns/common/database-backups/database-backups_contents.md %}
 <a name="2"></a>{% include _inlines/AddOns/common/database-backups/database-backups_what-is-the-database-backup-add-in.md %}
 <a name="3"></a>{% include _inlines/AddOns/common/database-backups/database-backups_backup-types.md %}

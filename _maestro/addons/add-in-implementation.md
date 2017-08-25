@@ -8,6 +8,9 @@ lead: ""
 legacy: false
 
 ---
+
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
 {% assign product = "maestro" %}
 
 {% include _inlines/AddOns/common/add-in-implementation/add-in-implementation_add-ins-allow-you-to-add-various-inte.md %}

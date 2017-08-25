@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Partners/General/partner-integration/partner-integration_throughout-this-document-user-is-a-c.md %}
 <a name="2"></a>{% include _inlines/Partners/General/partner-integration/partner-integration_user-integration-api.md %}
 <a name="3"></a>{% include _inlines/Partners/General/partner-integration/partner-integration_redirecting-to-partners-website.md %}

@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_contents.md %}
 <a name="2"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_about-configuring-your-dns.md %}
 <a name="3"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_configuring-your-dns.md %}

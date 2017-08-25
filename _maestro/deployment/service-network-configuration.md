@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_contents.md %}
 <a name="2"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_traffic-distribution.md %}
 <a name="3"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_containernet.md %}

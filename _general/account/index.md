@@ -7,6 +7,9 @@ lead: Everything you need to know about your account
 legacy: false
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 - [Account Management](account-management)
 - [Account Protection](account-protection)
 - [Audit Logs](audit-logs)

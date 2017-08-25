@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Deployment/common/container-ports/container-ports_contents.md %}
 <a name="2"></a>{% include _inlines/Deployment/common/container-ports/container-ports_overview.md %}
 <a name="3"></a>{% include _inlines/Deployment/common/container-ports/container-ports_ports-inside-and-outside-containers.md %}

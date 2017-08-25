@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_ew-databases-commonly-require-seed-da.md %}
 <a name="2"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_seed-script.md %}
 <a name="3"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_deploy-hook.md %}

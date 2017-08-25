@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_what-is-glusterfs.md %}
 <a name="2"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_why-would-i-need-glusterfs.md %}
 <a name="3"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_how-do-i-add-glusterfs-to-my-stack.md %}

@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/StackManagement/common/service-monitoring/service-monitoring_we-use-cadvisorhttps.md %}
 <a name="2"></a>{% include _inlines/StackManagement/common/service-monitoring/service-monitoring_cpu-usage.md %}
 <a name="3"></a>{% include _inlines/StackManagement/common/service-monitoring/service-monitoring_memory-usage.md %}

@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Toolbelt/common/settings/settings_list-your-stack-settings.md %}
 <a name="2"></a>{% include _inlines/Toolbelt/common/settings/settings_usage-1.md %}
 <a name="3"></a>{% include _inlines/Toolbelt/common/settings/settings_parameters-1.md %}

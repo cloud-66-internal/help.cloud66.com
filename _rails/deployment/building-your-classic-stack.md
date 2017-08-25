@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-needneeded.md %}
 <a name="2"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-need.md %}
 <a name="3"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-1.-build-your-stack.md %}

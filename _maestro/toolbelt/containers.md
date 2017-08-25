@@ -9,6 +9,9 @@ lead: ""
 legacy: false
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Toolbelt/Maestro/containers/containers_listing-containers.md %}
 <a name="2"></a>{% include _inlines/Toolbelt/Maestro/containers/containers_usage-1.md %}
 <a name="3"></a>{% include _inlines/Toolbelt/Maestro/containers/containers_parameters-1.md %}

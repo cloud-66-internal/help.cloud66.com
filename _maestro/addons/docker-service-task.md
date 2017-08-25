@@ -8,6 +8,9 @@ lead: ""
 legacy: false
 
 ---
+
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
 {% assign product = "maestro" %}
 
 {% include _inlines/AddOns/common/docker-service-task/docker-service-task_to-add-this-add-in-simply-click-on-the.md %}

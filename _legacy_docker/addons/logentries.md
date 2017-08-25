@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/AddOns/common/logentries/logentries_---about-using-logentriesabout.md %}
 <a name="2"></a>{% include _inlines/AddOns/common/logentries/logentries_about-using-logentries.md %}
 <a name="3"></a>{% include _inlines/AddOns/common/logentries/logentries_add-logentries-to-your-stack.md %}

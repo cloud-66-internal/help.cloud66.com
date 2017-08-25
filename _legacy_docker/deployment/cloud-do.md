@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Deployment/common/cloud-do/cloud-do_contents.md %}
 <a name="2"></a>{% include _inlines/Deployment/common/cloud-do/cloud-do_about-using-digitalocean-cloud.md %}
 <a name="3"></a>{% include _inlines/Deployment/common/cloud-do/cloud-do_authorise-cloud-66-to-your-digitalocean.md %}

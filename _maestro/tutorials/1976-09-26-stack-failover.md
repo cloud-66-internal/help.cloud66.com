@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_having-a-failover-group-can-help-.md %}
 <a name="2"></a>{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_setup-the-failover-group.md %}
 <a name="3"></a>{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_1.-code.md %}

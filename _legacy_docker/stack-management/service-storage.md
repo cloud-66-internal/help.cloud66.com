@@ -8,6 +8,9 @@ lead: ""
 legacy: true
 
 ---
+
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
 {% assign product = "legacy_docker" %}
 
 {% include _inlines/StackManagement/common/service-storage/service-storage_given-the-ephemeral-nature-of-containers-i.md %}

@@ -10,5 +10,8 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Tutorials/common/1969-09-26-memcached/1969-09-26-memcached_memcachedhttp.md %}
 <a name="2"></a>{% include _inlines/Tutorials/common/1969-09-26-memcached/1969-09-26-memcached_notice.md %}

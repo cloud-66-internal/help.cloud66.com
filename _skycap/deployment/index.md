@@ -7,6 +7,9 @@ lead: Building with Cloud 66 Skycap for Deployment
 legacy: false
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 - [Building your Manifest File](building-a-manifest-file)
 - [Building your Docker Service](building-your-service)
 - [Amazon Web Services](cloud-aws)

@@ -8,6 +8,9 @@ lead: ""
 legacy: true
 
 ---
+
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
 {% assign product = "common" %}
 
 {% include _inlines/Tutorials/common/2044-03-12-azure-old-portal/2044-03-12-azure-old-portal_in-cloud66-we-use-management-.md %}

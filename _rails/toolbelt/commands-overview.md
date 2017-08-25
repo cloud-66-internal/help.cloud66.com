@@ -8,6 +8,9 @@ lead: ""
 legacy: false
 
 ---
+
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
 {% assign product = "common" %}
 
 {% include _inlines/Toolbelt/common/commands-overview/commands-overview_this-page-provides-an-overview-of-the-com.md %}

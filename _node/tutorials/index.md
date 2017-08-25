@@ -7,6 +7,9 @@ lead: Cloud 66 tutorials for Node
 legacy: false
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 - [Multi Region Stack](1900-09-26-multi-region-stack)
 - [Manually add an SSL Certificate to a Load Balancer](1900-09-26-ssl-termination-on-load-balancers)
 - [Strong SSL Security on Nginx](1900-10-10-nginx-ssl-ciphers)

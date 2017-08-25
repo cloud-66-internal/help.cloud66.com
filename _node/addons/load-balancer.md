@@ -10,6 +10,9 @@ legacy: false
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/AddOns/common/load-balancer/load-balancer_what-is-load-balancing.md %}
 <a name="2"></a>{% include _inlines/AddOns/common/load-balancer/load-balancer_note.md %}
 <a name="3"></a>{% include _inlines/AddOns/common/load-balancer/load-balancer_add-a-load-balancer.md %}

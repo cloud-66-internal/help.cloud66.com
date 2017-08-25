@@ -10,6 +10,9 @@ legacy: true
 
 ---
 
+{% assign thingy = page.url | split: '/' %}
+{% assign product = thingy[1] %}
+
 <a name="1"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_contents.md %}
 <a name="2"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_pull-code-from-git.md %}
 <a name="3"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_provide-a-docker-image.md %}
