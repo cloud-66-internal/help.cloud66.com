@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2043-02-12-disk-space/2043-02-12-disk-space_depending-on-your-server-and-disk-siz.md %}
+{% include _inlines/Tutorials/common/2043-02-12-disk-space/2043-02-12-disk-space_depending-on-your-server-and-disk-siz.md  product = product %}

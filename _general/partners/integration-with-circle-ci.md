@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "General" %}
 
-{% include _inlines/Partners/General/integration-with-circle-ci/integration-with-circle-ci_you-can-use-circle-ci-to-accompl.md %}
+{% include _inlines/Partners/General/integration-with-circle-ci/integration-with-circle-ci_you-can-use-circle-ci-to-accompl.md  product = product %}

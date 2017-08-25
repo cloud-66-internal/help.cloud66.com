@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "General" %}
 
-{% include _inlines/Account/General/browser-requirements/browser-requirements_browser-versions-are-frequently-update.md %}
+{% include _inlines/Account/General/browser-requirements/browser-requirements_browser-versions-are-frequently-update.md  product = product %}

@@ -13,7 +13,7 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_redirect-from-http-to-https.md %}
-<a name="2"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_redirect-between-domains-with-htt.md %}
-<a name="3"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_http.md %}
-<a name="4"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_https.md %}
+<a name="1"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_redirect-from-http-to-https.md  product = product %}
+<a name="2"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_redirect-between-domains-with-htt.md  product = product %}
+<a name="3"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_http.md  product = product %}
+<a name="4"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_https.md  product = product %}

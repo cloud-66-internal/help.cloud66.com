@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "General" %}
 
-{% include _inlines/Account/General/security-wall-of-fame/security-wall-of-fame_keeping-your-servers-and-source-code-.md %}
+{% include _inlines/Account/General/security-wall-of-fame/security-wall-of-fame_keeping-your-servers-and-source-code-.md  product = product %}

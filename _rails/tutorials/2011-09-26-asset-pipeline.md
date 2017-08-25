@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "Rails" %}
 
-{% include _inlines/Tutorials/Rails/2011-09-26-asset-pipeline/2011-09-26-asset-pipeline_if-youre-experiencing-deployment.md %}
+{% include _inlines/Tutorials/Rails/2011-09-26-asset-pipeline/2011-09-26-asset-pipeline_if-youre-experiencing-deployment.md  product = product %}

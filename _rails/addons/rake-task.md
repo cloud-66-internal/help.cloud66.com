@@ -13,5 +13,5 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/AddOns/common/rake-task/rake-task_add-a-rake-task.md %}
-<a name="2"></a>{% include _inlines/AddOns/common/rake-task/rake-task_note.md %}
+<a name="1"></a>{% include _inlines/AddOns/common/rake-task/rake-task_add-a-rake-task.md  product = product %}
+<a name="2"></a>{% include _inlines/AddOns/common/rake-task/rake-task_note.md  product = product %}

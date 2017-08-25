@@ -13,4 +13,4 @@ legacy: true
 {% assign product = thingy[1] %}
 {% assign product = "legacy_docker" %}
 
-{% include _inlines/StackManagement/common/service-storage/service-storage_given-the-ephemeral-nature-of-containers-i.md %}
+{% include _inlines/StackManagement/common/service-storage/service-storage_given-the-ephemeral-nature-of-containers-i.md  product = product %}

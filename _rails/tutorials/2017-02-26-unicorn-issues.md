@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2040-02-26-unicorn-issues/2040-02-26-unicorn-issues_a-not-unusual-issue-with-unicorn-.md %}
+{% include _inlines/Tutorials/common/2040-02-26-unicorn-issues/2040-02-26-unicorn-issues_a-not-unusual-issue-with-unicorn-.md  product = product %}

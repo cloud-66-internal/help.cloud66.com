@@ -13,8 +13,8 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Introduction/General/security/security_we-take-your-security-extremely-seriously-at-cloud.md %}
-<a name="2"></a>{% include _inlines/Introduction/General/security/security_infrastructure-security.md %}
-<a name="3"></a>{% include _inlines/Introduction/General/security/security_credit-card-information.md %}
-<a name="4"></a>{% include _inlines/Introduction/General/security/security_customer-protection.md %}
-<a name="5"></a>{% include _inlines/Introduction/General/security/security_reporting-security-issues.md %}
+<a name="1"></a>{% include _inlines/Introduction/General/security/security_we-take-your-security-extremely-seriously-at-cloud.md  product = product %}
+<a name="2"></a>{% include _inlines/Introduction/General/security/security_infrastructure-security.md  product = product %}
+<a name="3"></a>{% include _inlines/Introduction/General/security/security_credit-card-information.md  product = product %}
+<a name="4"></a>{% include _inlines/Introduction/General/security/security_customer-protection.md  product = product %}
+<a name="5"></a>{% include _inlines/Introduction/General/security/security_reporting-security-issues.md  product = product %}

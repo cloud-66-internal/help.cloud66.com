@@ -13,16 +13,16 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_contents.md %}
-<a name="2"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_pull-code-from-git.md %}
-<a name="3"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_provide-a-docker-image.md %}
-<a name="4"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_configuration.md %}
-<a name="5"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_build-command.md %}
-<a name="6"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_build-root.md %}
-<a name="7"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_command.md %}
-<a name="8"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_deploy-command.md %}
-<a name="9"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_dockerfile-path.md %}
-<a name="10"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_git-url.md %}
-<a name="11"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_git-branch.md %}
-<a name="12"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_image.md %}
-<a name="13"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_using-habitus-for-builds.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_pull-code-from-git.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_provide-a-docker-image.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_configuration.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_build-command.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_build-root.md  product = product %}
+<a name="7"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_command.md  product = product %}
+<a name="8"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_deploy-command.md  product = product %}
+<a name="9"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_dockerfile-path.md  product = product %}
+<a name="10"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_git-url.md  product = product %}
+<a name="11"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_git-branch.md  product = product %}
+<a name="12"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_image.md  product = product %}
+<a name="13"></a>{% include _inlines/Deployment/common/building-your-service/building-your-service_using-habitus-for-builds.md  product = product %}

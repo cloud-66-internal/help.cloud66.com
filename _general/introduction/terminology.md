@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "General" %}
 
-{% include _inlines/Introduction/General/terminology/terminology_--deploy.md %}
+{% include _inlines/Introduction/General/terminology/terminology_--deploy.md  product = product %}

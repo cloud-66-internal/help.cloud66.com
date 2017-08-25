@@ -13,12 +13,12 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/StackManagement/common/scaling/scaling_contents.md %}
-<a name="2"></a>{% include _inlines/StackManagement/common/scaling/scaling_about-scaling-servers.md %}
-<a name="3"></a>{% include _inlines/StackManagement/common/scaling/scaling_horizontal-scaling.md %}
-<a name="4"></a>{% include _inlines/StackManagement/common/scaling/scaling_web-servers.md %}
-<a name="5"></a>{% include _inlines/StackManagement/common/scaling/scaling_process-servers.md %}
-<a name="6"></a>{% include _inlines/StackManagement/common/scaling/scaling_database-servers.md %}
-<a name="7"></a>{% include _inlines/StackManagement/common/scaling/scaling_docker-services.md %}
-<a name="8"></a>{% include _inlines/StackManagement/common/scaling/scaling_vertical-scaling.md %}
-<a name="9"></a>{% include _inlines/StackManagement/common/scaling/scaling_note.md %}
+<a name="1"></a>{% include _inlines/StackManagement/common/scaling/scaling_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/StackManagement/common/scaling/scaling_about-scaling-servers.md  product = product %}
+<a name="3"></a>{% include _inlines/StackManagement/common/scaling/scaling_horizontal-scaling.md  product = product %}
+<a name="4"></a>{% include _inlines/StackManagement/common/scaling/scaling_web-servers.md  product = product %}
+<a name="5"></a>{% include _inlines/StackManagement/common/scaling/scaling_process-servers.md  product = product %}
+<a name="6"></a>{% include _inlines/StackManagement/common/scaling/scaling_database-servers.md  product = product %}
+<a name="7"></a>{% include _inlines/StackManagement/common/scaling/scaling_docker-services.md  product = product %}
+<a name="8"></a>{% include _inlines/StackManagement/common/scaling/scaling_vertical-scaling.md  product = product %}
+<a name="9"></a>{% include _inlines/StackManagement/common/scaling/scaling_note.md  product = product %}

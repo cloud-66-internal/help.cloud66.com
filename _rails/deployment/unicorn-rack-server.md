@@ -13,10 +13,10 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_about-unicorn.md %}
-<a name="2"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_deploy-with-unicorn.md %}
-<a name="3"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_kill-the-web-server.md %}
-<a name="4"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_start-the-web-server.md %}
-<a name="5"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_stop-the-web-server.md %}
-<a name="6"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_restart-the-web-server-zero-downtime.md %}
-<a name="7"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_warning.md %}
+<a name="1"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_about-unicorn.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_deploy-with-unicorn.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_kill-the-web-server.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_start-the-web-server.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_stop-the-web-server.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_restart-the-web-server-zero-downtime.md  product = product %}
+<a name="7"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_warning.md  product = product %}

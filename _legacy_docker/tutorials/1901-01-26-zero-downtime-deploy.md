@@ -13,4 +13,4 @@ legacy: true
 {% assign product = thingy[1] %}
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/1901-01-26-zero-downtime-deploy/1901-01-26-zero-downtime-deploy_depending-on-your-applicati.md %}
+{% include _inlines/Tutorials/common/1901-01-26-zero-downtime-deploy/1901-01-26-zero-downtime-deploy_depending-on-your-applicati.md  product = product %}

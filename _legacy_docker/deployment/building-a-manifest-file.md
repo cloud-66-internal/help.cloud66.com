@@ -13,43 +13,43 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_contents.md %}
-<a name="2"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_what-is-a-manifest-file.md %}
-<a name="3"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-environment.md %}
-<a name="4"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-application.md %}
-<a name="5"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_docker.md %}
-<a name="6"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_elasticsearch.md %}
-<a name="7"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_gateway.md %}
-<a name="8"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteB.md %}
-<a name="9"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_glusterfs.md %}
-<a name="10"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteC.md %}
-<a name="11"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteD.md %}
-<a name="12"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_note.md %}
-<a name="13"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_memcached.md %}
-<a name="14"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_mongodb.md %}
-<a name="15"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_mysql.md %}
-<a name="16"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_nginx.md %}
-<a name="17"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_cors-configuration.md %}
-<a name="18"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_postgresql.md %}
-<a name="19"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_postgis.md %}
-<a name="20"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rails.md %}
-<a name="21"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_redis.md %}
-<a name="22"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md %}
-<a name="23"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_sinatra.md %}
-<a name="24"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_load-balancers.md %}
-<a name="25"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_aws-load-balancer.md %}
-<a name="26"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_gce-load-balancer.md %}
-<a name="27"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_haproxy.md %}
-<a name="28"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_linode-nodebalancer.md %}
-<a name="29"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rackspace-load-balancer.md %}
-<a name="30"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_clouda-load-balancer.md %}
-<a name="31"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-server.md %}
-<a name="32"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_importantB.md %}
-<a name="33"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_deploy-to-your-own-server.md %}
-<a name="34"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_shared-servers.md %}
-<a name="35"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_external-servers.md %}
-<a name="36"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_important.md %}
-<a name="37"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_specify-environment-variables.md %}
-<a name="38"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_processes.md %}
-<a name="39"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_specify-additional-livelog-files.md %}
-<a name="40"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_test-experimental-features.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_what-is-a-manifest-file.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-environment.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-application.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_docker.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_elasticsearch.md  product = product %}
+<a name="7"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_gateway.md  product = product %}
+<a name="8"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteB.md  product = product %}
+<a name="9"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_glusterfs.md  product = product %}
+<a name="10"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteC.md  product = product %}
+<a name="11"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteD.md  product = product %}
+<a name="12"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_note.md  product = product %}
+<a name="13"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_memcached.md  product = product %}
+<a name="14"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_mongodb.md  product = product %}
+<a name="15"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_mysql.md  product = product %}
+<a name="16"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_nginx.md  product = product %}
+<a name="17"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_cors-configuration.md  product = product %}
+<a name="18"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_postgresql.md  product = product %}
+<a name="19"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_postgis.md  product = product %}
+<a name="20"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rails.md  product = product %}
+<a name="21"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_redis.md  product = product %}
+<a name="22"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md  product = product %}
+<a name="23"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_sinatra.md  product = product %}
+<a name="24"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_load-balancers.md  product = product %}
+<a name="25"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_aws-load-balancer.md  product = product %}
+<a name="26"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_gce-load-balancer.md  product = product %}
+<a name="27"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_haproxy.md  product = product %}
+<a name="28"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_linode-nodebalancer.md  product = product %}
+<a name="29"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rackspace-load-balancer.md  product = product %}
+<a name="30"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_clouda-load-balancer.md  product = product %}
+<a name="31"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-server.md  product = product %}
+<a name="32"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_importantB.md  product = product %}
+<a name="33"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_deploy-to-your-own-server.md  product = product %}
+<a name="34"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_shared-servers.md  product = product %}
+<a name="35"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_external-servers.md  product = product %}
+<a name="36"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_important.md  product = product %}
+<a name="37"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_specify-environment-variables.md  product = product %}
+<a name="38"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_processes.md  product = product %}
+<a name="39"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_specify-additional-livelog-files.md  product = product %}
+<a name="40"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_test-experimental-features.md  product = product %}

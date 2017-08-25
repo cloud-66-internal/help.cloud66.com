@@ -13,4 +13,4 @@ legacy: true
 {% assign product = thingy[1] %}
 {% assign product = "legacy_docker" %}
 
-{% include _inlines/AddOns/common/add-in-implementation/add-in-implementation_add-ins-allow-you-to-add-various-inte.md %}
+{% include _inlines/AddOns/common/add-in-implementation/add-in-implementation_add-ins-allow-you-to-add-various-inte.md  product = product %}

@@ -13,11 +13,11 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_contents.md %}
-<a name="2"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_overview.md %}
-<a name="3"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_run-a-job.md %}
-<a name="4"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_variety-of-jobs.md %}
-<a name="5"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_using-parameters.md %}
-<a name="6"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_notation.md %}
-<a name="7"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_default-values.md %}
-<a name="8"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_pass-parameters-to-job.md %}
+<a name="1"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_overview.md  product = product %}
+<a name="3"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_run-a-job.md  product = product %}
+<a name="4"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_variety-of-jobs.md  product = product %}
+<a name="5"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_using-parameters.md  product = product %}
+<a name="6"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_notation.md  product = product %}
+<a name="7"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_default-values.md  product = product %}
+<a name="8"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_pass-parameters-to-job.md  product = product %}

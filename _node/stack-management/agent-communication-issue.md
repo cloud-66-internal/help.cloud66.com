@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "node" %}
 
-{% include _inlines/StackManagement/common/agent-communication-issue/agent-communication-issue_you-will-be-notified-in-the-case-.md %}
+{% include _inlines/StackManagement/common/agent-communication-issue/agent-communication-issue_you-will-be-notified-in-the-case-.md  product = product %}

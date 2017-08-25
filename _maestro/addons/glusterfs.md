@@ -13,10 +13,10 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_what-is-glusterfs.md %}
-<a name="2"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_why-would-i-need-glusterfs.md %}
-<a name="3"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_how-do-i-add-glusterfs-to-my-stack.md %}
-<a name="4"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_how-can-i-use-glusterfs-in-my-application.md %}
-<a name="5"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_what-about-my-containers.md %}
-<a name="6"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_fine-grained-access-control-for-your-data.md %}
-<a name="7"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_accessing-your-glusterfs-servers.md %}
+<a name="1"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_what-is-glusterfs.md  product = product %}
+<a name="2"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_why-would-i-need-glusterfs.md  product = product %}
+<a name="3"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_how-do-i-add-glusterfs-to-my-stack.md  product = product %}
+<a name="4"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_how-can-i-use-glusterfs-in-my-application.md  product = product %}
+<a name="5"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_what-about-my-containers.md  product = product %}
+<a name="6"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_fine-grained-access-control-for-your-data.md  product = product %}
+<a name="7"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_accessing-your-glusterfs-servers.md  product = product %}

@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "General" %}
 
-{% include _inlines/Account/General/support/support_the-support-packages-below-are-set-up-with-a-simple.md %}
+{% include _inlines/Account/General/support/support_the-support-packages-below-are-set-up-with-a-simple.md  product = product %}

@@ -13,4 +13,4 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/Node/scale-node/scale-node_scale-your-instances-.md %}
+<a name="1"></a>{% include _inlines/Deployment/Node/scale-node/scale-node_scale-your-instances-.md  product = product %}

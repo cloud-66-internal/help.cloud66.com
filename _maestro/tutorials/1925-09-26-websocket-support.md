@@ -13,8 +13,8 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_about-websocket.md %}
-<a name="2"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_cloud-66-configuration-for-web.md %}
-<a name="3"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_websocket-through-a-load-balan.md %}
-<a name="4"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_note.md %}
-<a name="5"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_test-your-websocket-server.md %}
+<a name="1"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_about-websocket.md  product = product %}
+<a name="2"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_cloud-66-configuration-for-web.md  product = product %}
+<a name="3"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_websocket-through-a-load-balan.md  product = product %}
+<a name="4"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_note.md  product = product %}
+<a name="5"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_test-your-websocket-server.md  product = product %}

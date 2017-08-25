@@ -13,30 +13,30 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Databases/common/database-backup/database-backups_contents.md %}
-<a name="2"></a>{% include _inlines/Databases/common/database-backup/database-backups_what-is-the-database-backup-add-in.md %}
-<a name="3"></a>{% include _inlines/Databases/common/database-backup/database-backups_backup-types.md %}
-<a name="4"></a>{% include _inlines/Databases/common/database-backup/database-backups_managed-backups.md %}
-<a name="5"></a>{% include _inlines/Databases/common/database-backup/database-backups_unmanaged-backups.md %}
-<a name="6"></a>{% include _inlines/Databases/common/database-backup/database-backups_backup-format.md %}
-<a name="7"></a>{% include _inlines/Databases/common/database-backup/database-backups_binary.md %}
-<a name="8"></a>{% include _inlines/Databases/common/database-backup/database-backups_text.md %}
-<a name="9"></a>{% include _inlines/Databases/common/database-backup/database-backups_backup-schedule.md %}
-<a name="10"></a>{% include _inlines/Databases/common/database-backup/database-backups_compression.md %}
-<a name="11"></a>{% include _inlines/Databases/common/database-backup/database-backups_exclude-tables.md %}
-<a name="12"></a>{% include _inlines/Databases/common/database-backup/database-backups_install-on-replica.md %}
-<a name="13"></a>{% include _inlines/Databases/common/database-backup/database-backups_noteA.md %}
-<a name="14"></a>{% include _inlines/Databases/common/database-backup/database-backups_noteB.md %}
-<a name="15"></a>{% include _inlines/Databases/common/database-backup/database-backups_downloading-backup.md %}
-<a name="16"></a>{% include _inlines/Databases/common/database-backup/database-backups_cloud-66-toolbelt.md %}
-<a name="17"></a>{% include _inlines/Databases/common/database-backup/database-backups_download-script.md %}
-<a name="18"></a>{% include _inlines/Databases/common/database-backup/database-backups_manually-download.md %}
-<a name="19"></a>{% include _inlines/Databases/common/database-backup/database-backups_restore-backup.md %}
-<a name="20"></a>{% include _inlines/Databases/common/database-backup/database-backups_mysql.md %}
-<a name="21"></a>{% include _inlines/Databases/common/database-backup/database-backups_noteC.md %}
-<a name="22"></a>{% include _inlines/Databases/common/database-backup/database-backups_postgresql.md %}
-<a name="23"></a>{% include _inlines/Databases/common/database-backup/database-backups_noteD.md %}
-<a name="24"></a>{% include _inlines/Databases/common/database-backup/database-backups_redis.md %}
-<a name="25"></a>{% include _inlines/Databases/common/database-backup/database-backups_note.md %}
-<a name="26"></a>{% include _inlines/Databases/common/database-backup/database-backups_mongodb.md %}
-<a name="27"></a>{% include _inlines/Databases/common/database-backup/database-backups_pricing.md %}
+<a name="1"></a>{% include _inlines/Databases/common/database-backup/database-backups_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/Databases/common/database-backup/database-backups_what-is-the-database-backup-add-in.md  product = product %}
+<a name="3"></a>{% include _inlines/Databases/common/database-backup/database-backups_backup-types.md  product = product %}
+<a name="4"></a>{% include _inlines/Databases/common/database-backup/database-backups_managed-backups.md  product = product %}
+<a name="5"></a>{% include _inlines/Databases/common/database-backup/database-backups_unmanaged-backups.md  product = product %}
+<a name="6"></a>{% include _inlines/Databases/common/database-backup/database-backups_backup-format.md  product = product %}
+<a name="7"></a>{% include _inlines/Databases/common/database-backup/database-backups_binary.md  product = product %}
+<a name="8"></a>{% include _inlines/Databases/common/database-backup/database-backups_text.md  product = product %}
+<a name="9"></a>{% include _inlines/Databases/common/database-backup/database-backups_backup-schedule.md  product = product %}
+<a name="10"></a>{% include _inlines/Databases/common/database-backup/database-backups_compression.md  product = product %}
+<a name="11"></a>{% include _inlines/Databases/common/database-backup/database-backups_exclude-tables.md  product = product %}
+<a name="12"></a>{% include _inlines/Databases/common/database-backup/database-backups_install-on-replica.md  product = product %}
+<a name="13"></a>{% include _inlines/Databases/common/database-backup/database-backups_noteA.md  product = product %}
+<a name="14"></a>{% include _inlines/Databases/common/database-backup/database-backups_noteB.md  product = product %}
+<a name="15"></a>{% include _inlines/Databases/common/database-backup/database-backups_downloading-backup.md  product = product %}
+<a name="16"></a>{% include _inlines/Databases/common/database-backup/database-backups_cloud-66-toolbelt.md  product = product %}
+<a name="17"></a>{% include _inlines/Databases/common/database-backup/database-backups_download-script.md  product = product %}
+<a name="18"></a>{% include _inlines/Databases/common/database-backup/database-backups_manually-download.md  product = product %}
+<a name="19"></a>{% include _inlines/Databases/common/database-backup/database-backups_restore-backup.md  product = product %}
+<a name="20"></a>{% include _inlines/Databases/common/database-backup/database-backups_mysql.md  product = product %}
+<a name="21"></a>{% include _inlines/Databases/common/database-backup/database-backups_noteC.md  product = product %}
+<a name="22"></a>{% include _inlines/Databases/common/database-backup/database-backups_postgresql.md  product = product %}
+<a name="23"></a>{% include _inlines/Databases/common/database-backup/database-backups_noteD.md  product = product %}
+<a name="24"></a>{% include _inlines/Databases/common/database-backup/database-backups_redis.md  product = product %}
+<a name="25"></a>{% include _inlines/Databases/common/database-backup/database-backups_note.md  product = product %}
+<a name="26"></a>{% include _inlines/Databases/common/database-backup/database-backups_mongodb.md  product = product %}
+<a name="27"></a>{% include _inlines/Databases/common/database-backup/database-backups_pricing.md  product = product %}

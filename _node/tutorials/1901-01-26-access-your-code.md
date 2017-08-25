@@ -13,8 +13,8 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_public-repositories.md %}
-{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_notice.md %}
-{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_private-repositories.md %}
-{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_github-example.md %}
-{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_bitbucket-example.md %}
+{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_public-repositories.md  product = product %}
+{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_notice.md  product = product %}
+{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_private-repositories.md  product = product %}
+{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_github-example.md  product = product %}
+{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_bitbucket-example.md  product = product %}

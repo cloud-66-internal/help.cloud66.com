@@ -13,11 +13,11 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/unknown/General/technical-specifications/versions_operating-system.md %}
-<a name="2"></a>{% include _inlines/unknown/General/technical-specifications/versions_supported-cloud-providers.md %}
-<a name="3"></a>{% include _inlines/unknown/General/technical-specifications/versions_supported-frameworks.md %}
-<a name="4"></a>{% include _inlines/unknown/General/technical-specifications/versions_component-versions.md %}
-<a name="5"></a>{% include _inlines/unknown/General/technical-specifications/versions_components-built-via-apt-packages.md %}
-<a name="6"></a>{% include _inlines/unknown/General/technical-specifications/versions_components-built-from-source.md %}
-<a name="7"></a>{% include _inlines/unknown/General/technical-specifications/versions_warning.md %}
-<a name="8"></a>{% include _inlines/unknown/General/technical-specifications/versions_important.md %}
+<a name="1"></a>{% include _inlines/unknown/General/technical-specifications/versions_operating-system.md  product = product %}
+<a name="2"></a>{% include _inlines/unknown/General/technical-specifications/versions_supported-cloud-providers.md  product = product %}
+<a name="3"></a>{% include _inlines/unknown/General/technical-specifications/versions_supported-frameworks.md  product = product %}
+<a name="4"></a>{% include _inlines/unknown/General/technical-specifications/versions_component-versions.md  product = product %}
+<a name="5"></a>{% include _inlines/unknown/General/technical-specifications/versions_components-built-via-apt-packages.md  product = product %}
+<a name="6"></a>{% include _inlines/unknown/General/technical-specifications/versions_components-built-from-source.md  product = product %}
+<a name="7"></a>{% include _inlines/unknown/General/technical-specifications/versions_warning.md  product = product %}
+<a name="8"></a>{% include _inlines/unknown/General/technical-specifications/versions_important.md  product = product %}

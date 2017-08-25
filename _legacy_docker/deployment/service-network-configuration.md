@@ -13,14 +13,14 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_contents.md %}
-<a name="2"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_traffic-distribution.md %}
-<a name="3"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_containernet.md %}
-<a name="4"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_encryption.md %}
-<a name="5"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_elasticdns.md %}
-<a name="6"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_configuration.md %}
-<a name="7"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_dns-behaviour.md %}
-<a name="8"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_load-balancing.md %}
-<a name="9"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_ports.md %}
-<a name="10"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_advanced-ports.md %}
-<a name="11"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_traffic-matches.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_traffic-distribution.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_containernet.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_encryption.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_elasticdns.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_configuration.md  product = product %}
+<a name="7"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_dns-behaviour.md  product = product %}
+<a name="8"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_load-balancing.md  product = product %}
+<a name="9"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_ports.md  product = product %}
+<a name="10"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_advanced-ports.md  product = product %}
+<a name="11"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_traffic-matches.md  product = product %}

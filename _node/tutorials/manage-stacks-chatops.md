@@ -13,9 +13,9 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_cloud-66-chatops.md %}
-<a name="2"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_quick-install.md %}
-<a name="3"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_create-a-slack-bot.md %}
-<a name="4"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_download-igor.md %}
-<a name="5"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_deregister.md %}
-<a name="6"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_for-any-informations-on-how-to-use-igor.md %}
+<a name="1"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_cloud-66-chatops.md  product = product %}
+<a name="2"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_quick-install.md  product = product %}
+<a name="3"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_create-a-slack-bot.md  product = product %}
+<a name="4"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_download-igor.md  product = product %}
+<a name="5"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_deregister.md  product = product %}
+<a name="6"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_for-any-informations-on-how-to-use-igor.md  product = product %}

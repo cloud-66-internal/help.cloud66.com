@@ -13,7 +13,7 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_contents.md %}
-<a name="2"></a>{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_about-scaling-your-glusterfs-cluster.md %}
-<a name="3"></a>{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_configure-a-glusterfs-replica_count.md %}
-<a name="4"></a>{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_note.md %}
+<a name="1"></a>{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_about-scaling-your-glusterfs-cluster.md  product = product %}
+<a name="3"></a>{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_configure-a-glusterfs-replica_count.md  product = product %}
+<a name="4"></a>{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_note.md  product = product %}

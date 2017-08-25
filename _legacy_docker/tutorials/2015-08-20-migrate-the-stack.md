@@ -13,17 +13,17 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_there-are-various-reasons-for.md %}
-<a name="2"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_1-set-a-failover-group.md %}
-<a name="3"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_2-add-a-cname-record-in-your.md %}
-<a name="4"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_note-2.md %}
-<a name="5"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_3-database-backup.md %}
-<a name="6"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_4-clone-primary-stack.md %}
-<a name="7"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_5-add-your-database-to-backup.md %}
-<a name="8"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_6-set-up-a-replication-betwee.md %}
-<a name="9"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_7-add-the-second-stack-to-the.md %}
-<a name="10"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_note.md %}
-<a name="11"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_8-put-the-primary-site-in-to.md %}
-<a name="12"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_9-change-the-second-database.md %}
-<a name="13"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_10-switch-to-the-new-stack.md %}
-<a name="14"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_11-optionalswitch-your-dns.md %}
+<a name="1"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_there-are-various-reasons-for.md  product = product %}
+<a name="2"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_1-set-a-failover-group.md  product = product %}
+<a name="3"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_2-add-a-cname-record-in-your.md  product = product %}
+<a name="4"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_note-2.md  product = product %}
+<a name="5"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_3-database-backup.md  product = product %}
+<a name="6"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_4-clone-primary-stack.md  product = product %}
+<a name="7"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_5-add-your-database-to-backup.md  product = product %}
+<a name="8"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_6-set-up-a-replication-betwee.md  product = product %}
+<a name="9"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_7-add-the-second-stack-to-the.md  product = product %}
+<a name="10"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_note.md  product = product %}
+<a name="11"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_8-put-the-primary-site-in-to.md  product = product %}
+<a name="12"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_9-change-the-second-database.md  product = product %}
+<a name="13"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_10-switch-to-the-new-stack.md  product = product %}
+<a name="14"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_11-optionalswitch-your-dns.md  product = product %}

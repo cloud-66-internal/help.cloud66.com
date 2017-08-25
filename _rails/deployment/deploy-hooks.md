@@ -13,13 +13,13 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_contents.md %}
-<a name="2"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_what-are-deploy-hooks.md %}
-<a name="3"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-points.md %}
-<a name="4"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-fields.md %}
-<a name="5"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_how-to-use-deploy-hooks.md %}
-<a name="6"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-snippet-deploy-hook.md %}
-<a name="7"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-command-deploy-hook.md %}
-<a name="8"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_important.md %}
-<a name="9"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-script-deploy-hook-only-for-rails.md %}
-<a name="10"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-an-inline-script-deploy-hook.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_what-are-deploy-hooks.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-points.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-fields.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_how-to-use-deploy-hooks.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-snippet-deploy-hook.md  product = product %}
+<a name="7"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-command-deploy-hook.md  product = product %}
+<a name="8"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_important.md  product = product %}
+<a name="9"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-script-deploy-hook-only-for-rails.md  product = product %}
+<a name="10"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-an-inline-script-deploy-hook.md  product = product %}

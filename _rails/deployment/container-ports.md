@@ -13,10 +13,10 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/container-ports/container-ports_contents.md %}
-<a name="2"></a>{% include _inlines/Deployment/common/container-ports/container-ports_overview.md %}
-<a name="3"></a>{% include _inlines/Deployment/common/container-ports/container-ports_ports-inside-and-outside-containers.md %}
-<a name="4"></a>{% include _inlines/Deployment/common/container-ports/container-ports_mapping-ports-from-inside-to-the-outside-wo.md %}
-<a name="5"></a>{% include _inlines/Deployment/common/container-ports/container-ports_note.md %}
-<a name="6"></a>{% include _inlines/Deployment/common/container-ports/container-ports_non-http-ports-tcp-and-udp.md %}
-<a name="7"></a>{% include _inlines/Deployment/common/container-ports/container-ports_multiple-ports.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/container-ports/container-ports_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/common/container-ports/container-ports_overview.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/common/container-ports/container-ports_ports-inside-and-outside-containers.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/common/container-ports/container-ports_mapping-ports-from-inside-to-the-outside-wo.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/common/container-ports/container-ports_note.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/common/container-ports/container-ports_non-http-ports-tcp-and-udp.md  product = product %}
+<a name="7"></a>{% include _inlines/Deployment/common/container-ports/container-ports_multiple-ports.md  product = product %}

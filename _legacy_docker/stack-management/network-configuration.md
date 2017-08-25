@@ -13,16 +13,16 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_contents.md %}
-<a name="2"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_about-network-settings.md %}
-<a name="3"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_what-is-activeprotecttrade.md %}
-<a name="4"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_firewall.md %}
-<a name="5"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_add-a-firewall-rule.md %}
-<a name="6"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_microsoft-azure-notice.md %}
-<a name="7"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_configure-network-traffic.md %}
-<a name="8"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_allowing-traffic.md %}
-<a name="9"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_denying-traffic.md %}
-<a name="10"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_using-network-redirects.md %}
-<a name="11"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_maintenance-mode.md %}
-<a name="12"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_redirect-http-to-https.md %}
-<a name="13"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_www-or-non-www-in-your-url.md %}
+<a name="1"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_about-network-settings.md  product = product %}
+<a name="3"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_what-is-activeprotecttrade.md  product = product %}
+<a name="4"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_firewall.md  product = product %}
+<a name="5"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_add-a-firewall-rule.md  product = product %}
+<a name="6"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_microsoft-azure-notice.md  product = product %}
+<a name="7"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_configure-network-traffic.md  product = product %}
+<a name="8"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_allowing-traffic.md  product = product %}
+<a name="9"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_denying-traffic.md  product = product %}
+<a name="10"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_using-network-redirects.md  product = product %}
+<a name="11"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_maintenance-mode.md  product = product %}
+<a name="12"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_redirect-http-to-https.md  product = product %}
+<a name="13"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_www-or-non-www-in-your-url.md  product = product %}

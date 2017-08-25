@@ -13,14 +13,14 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_cloud-66-will-analyze-your-code-a.md %}
-<a name="2"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_change-your-node.js-version-.md %}
-<a name="3"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_change-your-datasources-.md %}
-<a name="4"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_expose-your-host-port.md %}
-<a name="5"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_connect-to-your-datasources.md %}
-<a name="6"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_mongodb.md %}
-<a name="7"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_mysql.md %}
-<a name="8"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_postgresql.md %}
-<a name="9"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_redis.md %}
-<a name="10"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_fire-up-some-workers-.md %}
-<a name="11"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_final-notes-on-managing-storage.md %}
+<a name="1"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_cloud-66-will-analyze-your-code-a.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_change-your-node.js-version-.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_change-your-datasources-.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_expose-your-host-port.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_connect-to-your-datasources.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_mongodb.md  product = product %}
+<a name="7"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_mysql.md  product = product %}
+<a name="8"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_postgresql.md  product = product %}
+<a name="9"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_redis.md  product = product %}
+<a name="10"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_fire-up-some-workers-.md  product = product %}
+<a name="11"></a>{% include _inlines/Deployment/Node/application-settings-node/application-settings-node_final-notes-on-managing-storage.md  product = product %}

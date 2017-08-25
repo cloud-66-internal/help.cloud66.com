@@ -13,8 +13,8 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_weave-scopehttps.md %}
-<a name="2"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-1-checkout-your-customco.md %}
-<a name="3"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-2-add-the-weavescope-sni.md %}
-<a name="4"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-3-commit-and-redeploy-yo.md %}
-<a name="5"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-4-open-port-4040-to-acce.md %}
+<a name="1"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_weave-scopehttps.md  product = product %}
+<a name="2"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-1-checkout-your-customco.md  product = product %}
+<a name="3"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-2-add-the-weavescope-sni.md  product = product %}
+<a name="4"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-3-commit-and-redeploy-yo.md  product = product %}
+<a name="5"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-4-open-port-4040-to-acce.md  product = product %}

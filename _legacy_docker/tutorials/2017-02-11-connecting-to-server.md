@@ -13,4 +13,4 @@ legacy: true
 {% assign product = thingy[1] %}
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2042-02-11-connecting-to-server/2042-02-11-connecting-to-server_there-are-a-number-of-steps.md %}
+{% include _inlines/Tutorials/common/2042-02-11-connecting-to-server/2042-02-11-connecting-to-server_there-are-a-number-of-steps.md  product = product %}

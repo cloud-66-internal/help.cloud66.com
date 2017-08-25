@@ -13,14 +13,14 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_content.md %}
-<a name="2"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_custom-commands.md %}
-<a name="3"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_connect-to-your-database.md %}
-<a name="4"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_examples-of-connecting-to-your-database.md %}
-<a name="5"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_note.md %}
-<a name="6"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_active-record.md %}
-<a name="7"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_mysql-yml.md %}
-<a name="8"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_datamapper.md %}
-<a name="9"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_mongomapper.md %}
-<a name="10"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_mongoid.md %}
-<a name="11"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_example-application.md %}
+<a name="1"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_content.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_custom-commands.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_connect-to-your-database.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_examples-of-connecting-to-your-database.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_note.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_active-record.md  product = product %}
+<a name="7"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_mysql-yml.md  product = product %}
+<a name="8"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_datamapper.md  product = product %}
+<a name="9"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_mongomapper.md  product = product %}
+<a name="10"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_mongoid.md  product = product %}
+<a name="11"></a>{% include _inlines/Deployment/Rails/padrino-stacks/padrino-stacks_example-application.md  product = product %}

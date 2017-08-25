@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/1900-09-26-multi-region-stack/1900-09-26-multi-region-stack_there-are-several-options-to-.md %}
+{% include _inlines/Tutorials/common/1900-09-26-multi-region-stack/1900-09-26-multi-region-stack_there-are-several-options-to-.md  product = product %}

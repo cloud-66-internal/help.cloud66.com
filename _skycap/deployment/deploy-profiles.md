@@ -13,9 +13,9 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_contents.md %}
-<a name="2"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_what-are-deployment-profiles.md %}
-<a name="3"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_option-for-deployments.md %}
-<a name="4"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_build-.md %}
-<a name="5"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_deployment-method.md %}
-<a name="6"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_upgrades.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_what-are-deployment-profiles.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_option-for-deployments.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_build-.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_deployment-method.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_upgrades.md  product = product %}

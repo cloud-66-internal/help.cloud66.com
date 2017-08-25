@@ -13,12 +13,12 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_what-is-cloud-66-birdseye.md %}
-<a name="2"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_where-does-the-data-for-cloud-66-birdseye-.md %}
-<a name="3"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_who-can-use-cloud-66-birdseye.md %}
-<a name="4"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_is-there-an-api.md %}
-<a name="5"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_get-the-list-of-all-incidents.md %}
-<a name="6"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_filtering-the-list.md %}
-<a name="7"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_get-a-single-incident.md %}
-<a name="8"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_filtering-by-status.md %}
-<a name="9"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_can-i-report-incidents.md %}
+<a name="1"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_what-is-cloud-66-birdseye.md  product = product %}
+<a name="2"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_where-does-the-data-for-cloud-66-birdseye-.md  product = product %}
+<a name="3"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_who-can-use-cloud-66-birdseye.md  product = product %}
+<a name="4"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_is-there-an-api.md  product = product %}
+<a name="5"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_get-the-list-of-all-incidents.md  product = product %}
+<a name="6"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_filtering-the-list.md  product = product %}
+<a name="7"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_get-a-single-incident.md  product = product %}
+<a name="8"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_filtering-by-status.md  product = product %}
+<a name="9"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_can-i-report-incidents.md  product = product %}

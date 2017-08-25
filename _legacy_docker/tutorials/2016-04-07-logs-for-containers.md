@@ -13,4 +13,4 @@ legacy: true
 {% assign product = thingy[1] %}
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2016-04-07-logs-for-containers/2016-04-07-logs-for-containers_if-you-are-confused-why-you-.md %}
+{% include _inlines/Tutorials/common/2016-04-07-logs-for-containers/2016-04-07-logs-for-containers_if-you-are-confused-why-you-.md  product = product %}

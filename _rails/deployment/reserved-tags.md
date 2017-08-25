@@ -13,6 +13,6 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/reserved-tags/reserved-tags_contents.md %}
-<a name="2"></a>{% include _inlines/Deployment/common/reserved-tags/reserved-tags_what-are-reserved-tags.md %}
-<a name="3"></a>{% include _inlines/Deployment/common/reserved-tags/reserved-tags_reserved-tags.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/reserved-tags/reserved-tags_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/common/reserved-tags/reserved-tags_what-are-reserved-tags.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/common/reserved-tags/reserved-tags_reserved-tags.md  product = product %}

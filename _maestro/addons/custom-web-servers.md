@@ -13,13 +13,13 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_contents.md %}
-<a name="2"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_about-custom-web-servers.md %}
-<a name="3"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_important.md %}
-<a name="4"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_configurations-for-your-rack-server.md %}
-<a name="5"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_traffic-socket.md %}
-<a name="6"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_pid-file.md %}
-<a name="7"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_manual-control-of-the-web-servers.md %}
-<a name="8"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_stop-the-web-server.md %}
-<a name="9"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_start-the-web-server.md %}
-<a name="10"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_restart-the-web-server.md %}
+<a name="1"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_about-custom-web-servers.md  product = product %}
+<a name="3"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_important.md  product = product %}
+<a name="4"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_configurations-for-your-rack-server.md  product = product %}
+<a name="5"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_traffic-socket.md  product = product %}
+<a name="6"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_pid-file.md  product = product %}
+<a name="7"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_manual-control-of-the-web-servers.md  product = product %}
+<a name="8"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_stop-the-web-server.md  product = product %}
+<a name="9"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_start-the-web-server.md  product = product %}
+<a name="10"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_restart-the-web-server.md  product = product %}

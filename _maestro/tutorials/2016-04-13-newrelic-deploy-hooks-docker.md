@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2016-04-13-newrelic-deploy-hooks-docker/2016-04-13-newrelic-deploy-hooks-docker_this-will-walk-you-.md %}
+{% include _inlines/Tutorials/common/2016-04-13-newrelic-deploy-hooks-docker/2016-04-13-newrelic-deploy-hooks-docker_this-will-walk-you-.md  product = product %}

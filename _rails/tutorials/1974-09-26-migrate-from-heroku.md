@@ -13,13 +13,13 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_about-migrating-from-heroku.md %}
-<a name="2"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_what-server-size-do-i-need.md %}
-<a name="3"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_migrating.md %}
-<a name="4"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_1.-code.md %}
-<a name="5"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_2.-data.md %}
-<a name="6"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_3.-traffic.md %}
-<a name="7"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_useful-pointers.md %}
-<a name="8"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_web-server-and-procfile.md %}
-<a name="9"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_dyno-recyling.md %}
-<a name="10"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_asset-pipeline-compilation.md %}
+<a name="1"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_about-migrating-from-heroku.md  product = product %}
+<a name="2"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_what-server-size-do-i-need.md  product = product %}
+<a name="3"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_migrating.md  product = product %}
+<a name="4"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_1.-code.md  product = product %}
+<a name="5"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_2.-data.md  product = product %}
+<a name="6"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_3.-traffic.md  product = product %}
+<a name="7"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_useful-pointers.md  product = product %}
+<a name="8"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_web-server-and-procfile.md  product = product %}
+<a name="9"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_dyno-recyling.md  product = product %}
+<a name="10"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_asset-pipeline-compilation.md  product = product %}

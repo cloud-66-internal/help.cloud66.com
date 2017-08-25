@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/1976-09-26-migrate-across-dc/1976-09-26-migrate-across-dc_do-you-want-to-move-your-stack.md %}
+{% include _inlines/Tutorials/common/1976-09-26-migrate-across-dc/1976-09-26-migrate-across-dc_do-you-want-to-move-your-stack.md  product = product %}

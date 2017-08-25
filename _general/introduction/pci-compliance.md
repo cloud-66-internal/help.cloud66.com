@@ -13,9 +13,9 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_is-cloud-66-pci-compliant.md %}
-<a name="2"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_will-my-website.md %}
-<a name="3"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_how-does-cloud-66-access-my-servers.md %}
-<a name="4"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_where-are-the-ssh-keys-stored-on-cloud-66.md %}
-<a name="5"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_what-firewalls-are-installed-on-servers-depl.md %}
-<a name="6"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_how-does-cloud-66-prevent-access-to-customer.md %}
+<a name="1"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_is-cloud-66-pci-compliant.md  product = product %}
+<a name="2"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_will-my-website.md  product = product %}
+<a name="3"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_how-does-cloud-66-access-my-servers.md  product = product %}
+<a name="4"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_where-are-the-ssh-keys-stored-on-cloud-66.md  product = product %}
+<a name="5"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_what-firewalls-are-installed-on-servers-depl.md  product = product %}
+<a name="6"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_how-does-cloud-66-prevent-access-to-customer.md  product = product %}

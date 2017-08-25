@@ -13,12 +13,12 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-needneeded.md %}
-<a name="2"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-need.md %}
-<a name="3"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-1.-build-your-stack.md %}
-<a name="4"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-2.-access-your-git-reposit.md %}
-<a name="5"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-3-define-your-application.md %}
-<a name="6"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-4-review-your-app-configu.md %}
-<a name="7"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-5-define-deployment-prope.md %}
-<a name="8"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-6-review-the-deployment-l.md %}
-<a name="9"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_whats-next.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-needneeded.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_what-youll-need.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-1.-build-your-stack.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-2.-access-your-git-reposit.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-3-define-your-application.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-4-review-your-app-configu.md  product = product %}
+<a name="7"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-5-define-deployment-prope.md  product = product %}
+<a name="8"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_step-6-review-the-deployment-l.md  product = product %}
+<a name="9"></a>{% include _inlines/Deployment/common/building-your-classic-stack/building-your-classic-stack_whats-next.md  product = product %}

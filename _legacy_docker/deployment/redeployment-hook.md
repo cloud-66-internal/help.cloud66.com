@@ -13,15 +13,15 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_contents.md %}
-<a name="2"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_about-redeployment-hooks.md %}
-<a name="3"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_where-to-find-your-redeployment-hook.md %}
-<a name="4"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_for-docker-stacks.md %}
-<a name="5"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_for-rails.md %}
-<a name="6"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_github-integration.md %}
-<a name="7"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_adding-redeployment-hooks.md %}
-<a name="8"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_github-setup.md %}
-<a name="9"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_bitbucket-setup.md %}
-<a name="10"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_generic-setup.md %}
-<a name="11"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_invoking-your-redeployment-hook-manually.md %}
-<a name="12"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_note.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_about-redeployment-hooks.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_where-to-find-your-redeployment-hook.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_for-docker-stacks.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_for-rails.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_github-integration.md  product = product %}
+<a name="7"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_adding-redeployment-hooks.md  product = product %}
+<a name="8"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_github-setup.md  product = product %}
+<a name="9"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_bitbucket-setup.md  product = product %}
+<a name="10"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_generic-setup.md  product = product %}
+<a name="11"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_invoking-your-redeployment-hook-manually.md  product = product %}
+<a name="12"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_note.md  product = product %}

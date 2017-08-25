@@ -13,12 +13,12 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_when-deploying-your-stack-you-are-a.md %}
-<a name="2"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_under-powered-server-sizes-not-reco.md %}
-<a name="3"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_amazon-web-services.md %}
-<a name="4"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_cloud-a.md %}
-<a name="5"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_digitalocean.md %}
-<a name="6"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_google-compute-engine.md %}
-<a name="7"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_microsoft-azure.md %}
-<a name="8"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_rackspace.md %}
-<a name="9"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_suggest.md %}
+<a name="1"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_when-deploying-your-stack-you-are-a.md  product = product %}
+<a name="2"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_under-powered-server-sizes-not-reco.md  product = product %}
+<a name="3"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_amazon-web-services.md  product = product %}
+<a name="4"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_cloud-a.md  product = product %}
+<a name="5"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_digitalocean.md  product = product %}
+<a name="6"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_google-compute-engine.md  product = product %}
+<a name="7"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_microsoft-azure.md  product = product %}
+<a name="8"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_rackspace.md  product = product %}
+<a name="9"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_suggest.md  product = product %}

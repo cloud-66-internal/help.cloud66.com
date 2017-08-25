@@ -13,9 +13,9 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/AddOns/common/logentries/logentries_---about-using-logentriesabout.md %}
-<a name="2"></a>{% include _inlines/AddOns/common/logentries/logentries_about-using-logentries.md %}
-<a name="3"></a>{% include _inlines/AddOns/common/logentries/logentries_add-logentries-to-your-stack.md %}
-<a name="4"></a>{% include _inlines/AddOns/common/logentries/logentries_note.md %}
-<a name="5"></a>{% include _inlines/AddOns/common/logentries/logentries_troubleshoot.md %}
-<a name="6"></a>{% include _inlines/AddOns/common/logentries/logentries_no-logs-or-logs-are-empty-in-logentries.md %}
+<a name="1"></a>{% include _inlines/AddOns/common/logentries/logentries_---about-using-logentriesabout.md  product = product %}
+<a name="2"></a>{% include _inlines/AddOns/common/logentries/logentries_about-using-logentries.md  product = product %}
+<a name="3"></a>{% include _inlines/AddOns/common/logentries/logentries_add-logentries-to-your-stack.md  product = product %}
+<a name="4"></a>{% include _inlines/AddOns/common/logentries/logentries_note.md  product = product %}
+<a name="5"></a>{% include _inlines/AddOns/common/logentries/logentries_troubleshoot.md  product = product %}
+<a name="6"></a>{% include _inlines/AddOns/common/logentries/logentries_no-logs-or-logs-are-empty-in-logentries.md  product = product %}

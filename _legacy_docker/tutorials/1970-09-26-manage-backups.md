@@ -13,15 +13,15 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_managing-your-cloud-66-backups.md %}
-<a name="2"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_download-your-backup.md %}
-<a name="3"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_1.-cloud-66-toolbelt.md %}
-<a name="4"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_2.-cloud-66-web-ui.md %}
-<a name="5"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_3.-command-line.md %}
-<a name="6"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_unzip-your-backup.md %}
-<a name="7"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_move-your-backup-to-another-serve.md %}
-<a name="8"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_restore-your-backup-on-another-se.md %}
-<a name="9"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_mysql-database.md %}
-<a name="10"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_postgresql-database.md %}
-<a name="11"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_mongodb-database.md %}
-<a name="12"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_redis-database.md %}
+<a name="1"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_managing-your-cloud-66-backups.md  product = product %}
+<a name="2"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_download-your-backup.md  product = product %}
+<a name="3"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_1.-cloud-66-toolbelt.md  product = product %}
+<a name="4"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_2.-cloud-66-web-ui.md  product = product %}
+<a name="5"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_3.-command-line.md  product = product %}
+<a name="6"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_unzip-your-backup.md  product = product %}
+<a name="7"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_move-your-backup-to-another-serve.md  product = product %}
+<a name="8"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_restore-your-backup-on-another-se.md  product = product %}
+<a name="9"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_mysql-database.md  product = product %}
+<a name="10"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_postgresql-database.md  product = product %}
+<a name="11"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_mongodb-database.md  product = product %}
+<a name="12"></a>{% include _inlines/Tutorials/common/1970-09-26-manage-backups/1970-09-26-manage-backups_redis-database.md  product = product %}

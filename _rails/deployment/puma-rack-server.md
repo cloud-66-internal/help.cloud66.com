@@ -13,9 +13,9 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_about-running-apps-with-puma.md %}
-<a name="2"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_start-the-web-server.md %}
-<a name="3"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_stop-the-web-server.md %}
-<a name="4"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_restart-the-web-server-hot-restart.md %}
-<a name="5"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_deploy-with-puma.md %}
-<a name="6"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_warning.md %}
+<a name="1"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_about-running-apps-with-puma.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_start-the-web-server.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_stop-the-web-server.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_restart-the-web-server-hot-restart.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_deploy-with-puma.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_warning.md  product = product %}

@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "General" %}
 
-{% include _inlines/Partners/General/integration-with-travis-ci/integration-with-travis-ci_you-can-use-travis-ci-to-accompl.md %}
+{% include _inlines/Partners/General/integration-with-travis-ci/integration-with-travis-ci_you-can-use-travis-ci-to-accompl.md  product = product %}

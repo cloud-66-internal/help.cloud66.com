@@ -13,16 +13,16 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_contents.md %}
-<a name="2"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_custom-commands.md %}
-<a name="3"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_connect-to-your-database.md %}
-<a name="4"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_note.md %}
-<a name="5"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_examples-of-connecting-to-your-database.md %}
-<a name="6"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_active-record.md %}
-<a name="7"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_mysql.md %}
-<a name="8"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_postgres.md %}
-<a name="9"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_declarative.md %}
-<a name="10"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_datamapper.md %}
-<a name="11"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_mongomapper.md %}
-<a name="12"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_mongoid.md %}
-<a name="13"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_example-applications.md %}
+<a name="1"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_custom-commands.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_connect-to-your-database.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_note.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_examples-of-connecting-to-your-database.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_active-record.md  product = product %}
+<a name="7"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_mysql.md  product = product %}
+<a name="8"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_postgres.md  product = product %}
+<a name="9"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_declarative.md  product = product %}
+<a name="10"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_datamapper.md  product = product %}
+<a name="11"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_mongomapper.md  product = product %}
+<a name="12"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_mongoid.md  product = product %}
+<a name="13"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_example-applications.md  product = product %}

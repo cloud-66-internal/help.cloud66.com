@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "General" %}
 
-{% include _inlines/Partners/General/integration-with-semaphore/integration-with-semaphore_what-follows-is-how-to-integrate.md %}
+{% include _inlines/Partners/General/integration-with-semaphore/integration-with-semaphore_what-follows-is-how-to-integrate.md  product = product %}

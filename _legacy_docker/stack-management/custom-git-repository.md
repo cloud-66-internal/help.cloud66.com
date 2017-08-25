@@ -13,12 +13,12 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_contents.md %}
-<a name="2"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_what-is-customconfig-git.md %}
-<a name="3"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_getting-started-with-customconfig-git.md %}
-<a name="4"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_uploading-your-ssh-public-key.md %}
-<a name="5"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_making-changes-to-customconfig-files.md %}
-<a name="6"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_customconfig-git-workflow.md %}
-<a name="7"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-in-customconfig-ui.md %}
-<a name="8"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-through-customconfig-git.md %}
-<a name="9"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_automatic-updates.md %}
+<a name="1"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_what-is-customconfig-git.md  product = product %}
+<a name="3"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_getting-started-with-customconfig-git.md  product = product %}
+<a name="4"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_uploading-your-ssh-public-key.md  product = product %}
+<a name="5"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_making-changes-to-customconfig-files.md  product = product %}
+<a name="6"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_customconfig-git-workflow.md  product = product %}
+<a name="7"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-in-customconfig-ui.md  product = product %}
+<a name="8"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-through-customconfig-git.md  product = product %}
+<a name="9"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_automatic-updates.md  product = product %}

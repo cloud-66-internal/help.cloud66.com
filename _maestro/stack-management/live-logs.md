@@ -13,9 +13,9 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/StackManagement/common/live-logs/live-logs_contents.md %}
-<a name="2"></a>{% include _inlines/StackManagement/common/live-logs/live-logs_what-is-livelogs.md %}
-<a name="3"></a>{% include _inlines/StackManagement/common/live-logs/live-logs_how-does-livelogs-work.md %}
-<a name="4"></a>{% include _inlines/StackManagement/common/live-logs/live-logs_how-do-i-use-livelogs.md %}
-<a name="5"></a>{% include _inlines/StackManagement/common/live-logs/live-logs_how-do-i-add-additional-logs-to-livelogs.md %}
-<a name="6"></a>{% include _inlines/StackManagement/common/live-logs/live-logs_note.md %}
+<a name="1"></a>{% include _inlines/StackManagement/common/live-logs/live-logs_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/StackManagement/common/live-logs/live-logs_what-is-livelogs.md  product = product %}
+<a name="3"></a>{% include _inlines/StackManagement/common/live-logs/live-logs_how-does-livelogs-work.md  product = product %}
+<a name="4"></a>{% include _inlines/StackManagement/common/live-logs/live-logs_how-do-i-use-livelogs.md  product = product %}
+<a name="5"></a>{% include _inlines/StackManagement/common/live-logs/live-logs_how-do-i-add-additional-logs-to-livelogs.md  product = product %}
+<a name="6"></a>{% include _inlines/StackManagement/common/live-logs/live-logs_note.md  product = product %}

@@ -13,9 +13,9 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_contents.md %}
-<a name="2"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_cloud-66-toolbelt.md %}
-<a name="3"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_full.md %}
-<a name="4"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_example.md %}
-<a name="5"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_manual-shell-access.md %}
-<a name="6"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_troubleshooting.md %}
+<a name="1"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_cloud-66-toolbelt.md  product = product %}
+<a name="3"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_full.md  product = product %}
+<a name="4"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_example.md  product = product %}
+<a name="5"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_manual-shell-access.md  product = product %}
+<a name="6"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_troubleshooting.md  product = product %}

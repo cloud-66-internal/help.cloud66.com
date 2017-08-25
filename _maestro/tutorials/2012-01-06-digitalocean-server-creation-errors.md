@@ -12,16 +12,16 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_background.md %}
-<a name="2"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-1.md %}
-<a name="3"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note1.md %}
-<a name="4"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-.md %}
-<a name="5"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_1.-your-digi.md %}
-<a name="6"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_2.-digitaloc.md %}
-<a name="7"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_3.-digitaloc.md %}
-<a name="8"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note2.md %}
-<a name="9"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_timeout-erro.md %}
-<a name="10"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note.md %}
-<a name="11"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_haproxy-load.md %}
+<a name="1"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_background.md  product = product %}
+<a name="2"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-1.md  product = product %}
+<a name="3"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note1.md  product = product %}
+<a name="4"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-.md  product = product %}
+<a name="5"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_1.-your-digi.md  product = product %}
+<a name="6"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_2.-digitaloc.md  product = product %}
+<a name="7"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_3.-digitaloc.md  product = product %}
+<a name="8"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note2.md  product = product %}
+<a name="9"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_timeout-erro.md  product = product %}
+<a name="10"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note.md  product = product %}
+<a name="11"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_haproxy-load.md  product = product %}
 
 {{product}}

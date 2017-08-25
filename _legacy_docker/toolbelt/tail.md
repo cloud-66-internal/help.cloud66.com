@@ -13,7 +13,7 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Toolbelt/common/tail/tail_this-will-run-a-linux-tail-command-on-the-specified-se.md %}
-<a name="2"></a>{% include _inlines/Toolbelt/common/tail/tail_usage.md %}
-<a name="3"></a>{% include _inlines/Toolbelt/common/tail/tail_parameters.md %}
-<a name="4"></a>{% include _inlines/Toolbelt/common/tail/tail_example.md %}
+<a name="1"></a>{% include _inlines/Toolbelt/common/tail/tail_this-will-run-a-linux-tail-command-on-the-specified-se.md  product = product %}
+<a name="2"></a>{% include _inlines/Toolbelt/common/tail/tail_usage.md  product = product %}
+<a name="3"></a>{% include _inlines/Toolbelt/common/tail/tail_parameters.md  product = product %}
+<a name="4"></a>{% include _inlines/Toolbelt/common/tail/tail_example.md  product = product %}

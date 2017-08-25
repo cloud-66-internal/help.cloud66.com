@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "General" %}
 
-{% include _inlines/unknown/General/data-protection/data-protection_amazon-web-services-aws-and-rackspa.md %}
+{% include _inlines/unknown/General/data-protection/data-protection_amazon-web-services-aws-and-rackspa.md  product = product %}

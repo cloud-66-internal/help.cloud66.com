@@ -13,9 +13,9 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_contents.md %}
-<a name="2"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-agent.md %}
-<a name="3"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_important.md %}
-<a name="4"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_new-ip-addresses.md %}
-<a name="5"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-hostnames.md %}
-<a name="6"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_finding-your-cloud-66-hostname.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-agent.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_important.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_new-ip-addresses.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-hostnames.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_finding-your-cloud-66-hostname.md  product = product %}

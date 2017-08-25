@@ -13,13 +13,13 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_enable.md %}
-<a name="2"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_important.md %}
-<a name="3"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_application.rb.md %}
-<a name="4"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_manifest.yml.md %}
-<a name="5"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_asset-pipeline-compilation-requirements.md %}
-<a name="6"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_compile-only-modified-assets.md %}
-<a name="7"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_about-speeding-up-rails-deployments.md %}
-<a name="8"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_below-rails-3.2.md %}
-<a name="9"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_rails-3.2-and-above.md %}
-<a name="10"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_rails-4-and-above.md %}
+<a name="1"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_enable.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_important.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_application.rb.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_manifest.yml.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_asset-pipeline-compilation-requirements.md  product = product %}
+<a name="6"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_compile-only-modified-assets.md  product = product %}
+<a name="7"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_about-speeding-up-rails-deployments.md  product = product %}
+<a name="8"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_below-rails-3.2.md  product = product %}
+<a name="9"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_rails-3.2-and-above.md  product = product %}
+<a name="10"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_rails-4-and-above.md  product = product %}

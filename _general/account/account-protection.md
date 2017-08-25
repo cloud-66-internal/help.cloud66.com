@@ -13,6 +13,6 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Account/General/account-protection/account-protection_overview.md %}
-<a name="2"></a>{% include _inlines/Account/General/account-protection/account-protection_what-is-cloud-66-account-protection.md %}
-<a name="3"></a>{% include _inlines/Account/General/account-protection/account-protection_account-protection-alerts.md %}
+<a name="1"></a>{% include _inlines/Account/General/account-protection/account-protection_overview.md  product = product %}
+<a name="2"></a>{% include _inlines/Account/General/account-protection/account-protection_what-is-cloud-66-account-protection.md  product = product %}
+<a name="3"></a>{% include _inlines/Account/General/account-protection/account-protection_account-protection-alerts.md  product = product %}

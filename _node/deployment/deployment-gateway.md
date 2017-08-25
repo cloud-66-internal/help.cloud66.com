@@ -13,8 +13,8 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_contents.md %}
-<a name="2"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_about-deployment-gateways.md %}
-<a name="3"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_important.md %}
-<a name="4"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_how-to-deploy-your-stack-behind-the-gate.md %}
-<a name="5"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_accessing-your-servers-behind-the-gatewa.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_contents.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_about-deployment-gateways.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_important.md  product = product %}
+<a name="4"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_how-to-deploy-your-stack-behind-the-gate.md  product = product %}
+<a name="5"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_accessing-your-servers-behind-the-gatewa.md  product = product %}

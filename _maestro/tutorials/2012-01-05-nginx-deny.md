@@ -13,4 +13,4 @@ legacy: false
 {% assign product = thingy[1] %}
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2012-01-05-nginx-deny/2012-01-05-nginx-deny_in-addition-to-protecting-your-applic.md %}
+{% include _inlines/Tutorials/common/2012-01-05-nginx-deny/2012-01-05-nginx-deny_in-addition-to-protecting-your-applic.md  product = product %}
