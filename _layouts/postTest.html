@@ -17,7 +17,9 @@ bodyclass: post
     <h1 class="article-title">
         {{ page.title }}
     </h1>
-
+{% assign trimmedURL = page.url | remove_first: '/' %}
+{% assign gitlnker = "https://github.com/cloud66/help/edit/feature/inlines/_" | append: trimmedURL | append: ".md" %}
+<p>{{gitlnker}}</p>
 
     <p class="lead">
         {{ page.lead }}
