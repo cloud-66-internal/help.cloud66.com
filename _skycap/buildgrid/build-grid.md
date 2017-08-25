@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Contents", "What is BuildGrid?", "How to use BuildGrid?", "Envoironment variables in BuildGrid", "Build and Publish" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/build-grid/build-grid_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/build-grid/build-grid_what-is-buildgrid.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/build-grid/build-grid_how-to-use-buildgrid.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/build-grid/build-grid_envoironment-variables-in-buildgrid.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/build-grid/build-grid_build-and-publish.md" ]
 layout: post
 template: one-col
@@ -8,10 +9,9 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "skycap" %}
 
-{% include _inlines/Deployment/common/build-grid/build-grid_contents.md %}
-{% include _inlines/Deployment/common/build-grid/build-grid_what-is-buildgrid.md %}
-{% include _inlines/Deployment/common/build-grid/build-grid_how-to-use-buildgrid.md %}
-{% include _inlines/Deployment/common/build-grid/build-grid_envoironment-variables-in-buildgrid.md %}
-{% include _inlines/Deployment/common/build-grid/build-grid_build-and-publish.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/build-grid/build-grid_contents.md %}
+<a name="2"></a>{% include _inlines/Deployment/common/build-grid/build-grid_what-is-buildgrid.md %}
+<a name="3"></a>{% include _inlines/Deployment/common/build-grid/build-grid_how-to-use-buildgrid.md %}
+<a name="4"></a>{% include _inlines/Deployment/common/build-grid/build-grid_envoironment-variables-in-buildgrid.md %}
+<a name="5"></a>{% include _inlines/Deployment/common/build-grid/build-grid_build-and-publish.md %}

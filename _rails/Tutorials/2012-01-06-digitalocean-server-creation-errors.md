@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Background", "HTTP Error 401 or HTTP Error 403", "Note", "HTTP Error 404 *or* Size is not available in this region", "1. Your DigitalOcean account has reached the default 5-server limit", "2. DigitalOcean have limited new server creation", "3. DigitalOcean has experienced an internal error", "Note", "Timeout Errors", "Note", "HAProxy Load Balancer Errors" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_background.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_1.-your-digi.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_2.-digitaloc.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_3.-digitaloc.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note2.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_timeout-erro.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_haproxy-load.md" ]
 layout: post
 template: one-col
@@ -8,16 +9,15 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_background.md %}
-{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-1.md %}
-{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note1.md %}
-{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-.md %}
-{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_1.-your-digi.md %}
-{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_2.-digitaloc.md %}
-{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_3.-digitaloc.md %}
-{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note2.md %}
-{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_timeout-erro.md %}
-{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note.md %}
-{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_haproxy-load.md %}
+<a name="1"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_background.md %}
+<a name="2"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-1.md %}
+<a name="3"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note1.md %}
+<a name="4"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-.md %}
+<a name="5"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_1.-your-digi.md %}
+<a name="6"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_2.-digitaloc.md %}
+<a name="7"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_3.-digitaloc.md %}
+<a name="8"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note2.md %}
+<a name="9"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_timeout-erro.md %}
+<a name="10"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note.md %}
+<a name="11"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_haproxy-load.md %}

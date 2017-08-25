@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "The basics", "The specifics" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-specifics.md" ]
 layout: post
 template: one-col
@@ -8,7 +9,6 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "Rails" %}
 
-{% include _inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md %}
-{% include _inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-specifics.md %}
+<a name="1"></a>{% include _inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-basics.md %}
+<a name="2"></a>{% include _inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-specifics.md %}

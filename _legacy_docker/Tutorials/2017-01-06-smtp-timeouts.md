@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Problem", "Resolution" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2038-11-06-smtp-timeouts/2038-11-06-smtp-timeouts_problem.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2038-11-06-smtp-timeouts/2038-11-06-smtp-timeouts_resolution.md" ]
 layout: post
 template: one-col
@@ -8,7 +9,6 @@ lead: ""
 legacy: true
 
 ---
-{% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2038-11-06-smtp-timeouts/2038-11-06-smtp-timeouts_problem.md %}
-{% include _inlines/Tutorials/common/2038-11-06-smtp-timeouts/2038-11-06-smtp-timeouts_resolution.md %}
+<a name="1"></a>{% include _inlines/Tutorials/common/2038-11-06-smtp-timeouts/2038-11-06-smtp-timeouts_problem.md %}
+<a name="2"></a>{% include _inlines/Tutorials/common/2038-11-06-smtp-timeouts/2038-11-06-smtp-timeouts_resolution.md %}

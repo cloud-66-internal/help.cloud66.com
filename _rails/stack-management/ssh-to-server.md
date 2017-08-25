@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Cloud 66 toolbelt", "Full", "Example", "Manual shell access", "Troubleshooting" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh-to-server/ssh-to-server_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh-to-server/ssh-to-server_cloud-66-toolbelt.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh-to-server/ssh-to-server_full.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh-to-server/ssh-to-server_example.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh-to-server/ssh-to-server_manual-shell-access.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/ssh-to-server/ssh-to-server_troubleshooting.md" ]
 layout: post
 template: one-col
@@ -8,11 +9,10 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "rails" %}
 
-{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_contents.md %}
-{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_cloud-66-toolbelt.md %}
-{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_full.md %}
-{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_example.md %}
-{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_manual-shell-access.md %}
-{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_troubleshooting.md %}
+<a name="1"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_contents.md %}
+<a name="2"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_cloud-66-toolbelt.md %}
+<a name="3"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_full.md %}
+<a name="4"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_example.md %}
+<a name="5"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_manual-shell-access.md %}
+<a name="6"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_troubleshooting.md %}

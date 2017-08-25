@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "The basics" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2013-09-26-db-config-test-group-errors/2013-09-26-db-config-test-group-errors_the-basics.md" ]
 layout: post
 template: one-col
@@ -8,6 +9,5 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2013-09-26-db-config-test-group-errors/2013-09-26-db-config-test-group-errors_the-basics.md %}
+<a name="1"></a>{% include _inlines/Tutorials/common/2013-09-26-db-config-test-group-errors/2013-09-26-db-config-test-group-errors_the-basics.md %}

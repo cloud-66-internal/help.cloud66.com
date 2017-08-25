@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Contents", "What is CustomConfig git?", "Getting Started with CustomConfig git", "Uploading your SSH public key", "Making changes to CustomConfig files", "CustomConfig git workflow", "Changes made in CustomConfig UI", "Changes made through CustomConfig git", "Automatic updates" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/custom-git-repository/custom-git-repository_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/custom-git-repository/custom-git-repository_what-is-customconfig-git.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/custom-git-repository/custom-git-repository_getting-started-with-customconfig-git.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/custom-git-repository/custom-git-repository_uploading-your-ssh-public-key.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/custom-git-repository/custom-git-repository_making-changes-to-customconfig-files.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/custom-git-repository/custom-git-repository_customconfig-git-workflow.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-in-customconfig-ui.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-through-customconfig-git.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/custom-git-repository/custom-git-repository_automatic-updates.md" ]
 layout: post
 template: one-col
@@ -8,14 +9,13 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "common" %}
 
-{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_contents.md %}
-{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_what-is-customconfig-git.md %}
-{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_getting-started-with-customconfig-git.md %}
-{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_uploading-your-ssh-public-key.md %}
-{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_making-changes-to-customconfig-files.md %}
-{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_customconfig-git-workflow.md %}
-{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-in-customconfig-ui.md %}
-{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-through-customconfig-git.md %}
-{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_automatic-updates.md %}
+<a name="1"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_contents.md %}
+<a name="2"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_what-is-customconfig-git.md %}
+<a name="3"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_getting-started-with-customconfig-git.md %}
+<a name="4"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_uploading-your-ssh-public-key.md %}
+<a name="5"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_making-changes-to-customconfig-files.md %}
+<a name="6"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_customconfig-git-workflow.md %}
+<a name="7"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-in-customconfig-ui.md %}
+<a name="8"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-through-customconfig-git.md %}
+<a name="9"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_automatic-updates.md %}

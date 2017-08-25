@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Add a rake task", "Note" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/rake-task/rake-task_add-a-rake-task.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/rake-task/rake-task_note.md" ]
 layout: post
 template: one-col
@@ -8,7 +9,6 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "rails" %}
 
-{% include _inlines/AddOns/common/rake-task/rake-task_add-a-rake-task.md %}
-{% include _inlines/AddOns/common/rake-task/rake-task_note.md %}
+<a name="1"></a>{% include _inlines/AddOns/common/rake-task/rake-task_add-a-rake-task.md %}
+<a name="2"></a>{% include _inlines/AddOns/common/rake-task/rake-task_note.md %}

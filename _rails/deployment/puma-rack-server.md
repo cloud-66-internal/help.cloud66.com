@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "About running apps with Puma", "Start the web server", "Stop the web server", "Restart the web server (hot-restart)", "Deploy with Puma", "Warning" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_about-running-apps-with-puma.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_start-the-web-server.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_stop-the-web-server.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_restart-the-web-server-hot-restart.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_deploy-with-puma.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_warning.md" ]
 layout: post
 template: one-col
@@ -8,11 +9,10 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "Rails" %}
 
-{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_about-running-apps-with-puma.md %}
-{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_start-the-web-server.md %}
-{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_stop-the-web-server.md %}
-{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_restart-the-web-server-hot-restart.md %}
-{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_deploy-with-puma.md %}
-{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_warning.md %}
+<a name="1"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_about-running-apps-with-puma.md %}
+<a name="2"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_start-the-web-server.md %}
+<a name="3"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_stop-the-web-server.md %}
+<a name="4"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_restart-the-web-server-hot-restart.md %}
+<a name="5"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_deploy-with-puma.md %}
+<a name="6"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_warning.md %}

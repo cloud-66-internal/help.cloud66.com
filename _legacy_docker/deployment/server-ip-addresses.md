@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Contents", "Cloud 66 Agent", "Important", "New IP addresses", "Cloud 66 hostnames", "Finding your Cloud 66 hostname" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-agent.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_important.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_new-ip-addresses.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-hostnames.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/server-ip-addresses/server-ip-addresses_finding-your-cloud-66-hostname.md" ]
 layout: post
 template: one-col
@@ -8,11 +9,10 @@ lead: ""
 legacy: true
 
 ---
-{% assign product = "legacy_docker" %}
 
-{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_contents.md %}
-{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-agent.md %}
-{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_important.md %}
-{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_new-ip-addresses.md %}
-{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-hostnames.md %}
-{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_finding-your-cloud-66-hostname.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_contents.md %}
+<a name="2"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-agent.md %}
+<a name="3"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_important.md %}
+<a name="4"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_new-ip-addresses.md %}
+<a name="5"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-hostnames.md %}
+<a name="6"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_finding-your-cloud-66-hostname.md %}

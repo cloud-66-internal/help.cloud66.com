@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Contents", "What is a manifest file?", "How can I use a manifest file?", "Manifest file examples", "Example 1: Specifying a Docker version", "Is my yaml valid?", "Need Help Building your first stack?", "Example 2: Change CORS settings", "What is CORS?", "Manifest file structure", "First level: Environment", "Second level: Application type", "Third Level (1): Configurations", "Third Level (2): Servers" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_what-is-a-manifest-file.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_how-can-i-use-a-manifes.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_manifest-file-examples.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_example-1-specifying-a.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_is-my-yaml-valid.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_need-help-building-your.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_example-2-change-cors-.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_what-is-cors.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_manifest-file-structure.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_first-level-environmen.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_second-level-applicati.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_third-level-1-config.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_third-level-2-server.md" ]
 layout: post
 template: one-col
@@ -8,24 +9,18 @@ lead: ""
 legacy: true
 
 ---
-{% assign product = "legacy_docker" %}
 
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_contents.md %}
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_what-is-a-manifest-file.md %}
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_how-can-i-use-a-manifes.md %}
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_manifest-file-examples.md %}
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_example-1-specifying-a.md %}
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_is-my-yaml-valid.md %}
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_need-help-building-your.md %}
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_example-2-change-cors-.md %}
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_what-is-cors.md %}
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_manifest-file-structure.md %}
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_first-level-environmen.md %}
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_second-level-applicati.md %}
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_third-level-1-config.md %}
-{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_third-level-2-server.md %}
-
-
-
-
-
+<a name="1"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_contents.md %}
+<a name="2"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_what-is-a-manifest-file.md %}
+<a name="3"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_how-can-i-use-a-manifes.md %}
+<a name="4"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_manifest-file-examples.md %}
+<a name="5"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_example-1-specifying-a.md %}
+<a name="6"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_is-my-yaml-valid.md %}
+<a name="7"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_need-help-building-your.md %}
+<a name="8"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_example-2-change-cors-.md %}
+<a name="9"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_what-is-cors.md %}
+<a name="10"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_manifest-file-structure.md %}
+<a name="11"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_first-level-environmen.md %}
+<a name="12"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_second-level-applicati.md %}
+<a name="13"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_third-level-1-config.md %}
+<a name="14"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_third-level-2-server.md %}

@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Contents", "What is a manifest file?", "Which environment?", "Which application?", "Docker", "ElasticSearch", "Gateway", "Note", "GlusterFS", "Note", "Note", "Note", "Memcached", "MongoDB", "MySQL", "Nginx", "CORS configuration", "PostgreSQL", "PostGIS", "Rails", "Redis", "rack", "Sinatra", "Load balancers", "AWS load balancer", "GCE load balancer", "HAProxy", "Linode Nodebalancer", "Rackspace load balancer", "CloudA load balancer", "Which server?", "Important", "Deploy to your own server", "Shared Servers", "External Servers", "Important", "Specify environment variables", "Processes", "Specify additional LiveLog files", "Test experimental features" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_what-is-a-manifest-file.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-environment.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-application.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_docker.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_elasticsearch.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_gateway.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteB.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_glusterfs.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteC.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteD.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_note.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_memcached.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_mongodb.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_mysql.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_nginx.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_cors-configuration.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_postgresql.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_postgis.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rails.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_redis.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_sinatra.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_load-balancers.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_aws-load-balancer.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_gce-load-balancer.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_haproxy.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_linode-nodebalancer.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rackspace-load-balancer.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_clouda-load-balancer.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-server.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_importantB.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_deploy-to-your-own-server.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_shared-servers.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_external-servers.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_important.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_specify-environment-variables.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_processes.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_specify-additional-livelog-files.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_test-experimental-features.md" ]
 layout: post
 template: one-col
@@ -8,45 +9,44 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "rails" %}
 
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_contents.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_what-is-a-manifest-file.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-environment.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-application.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_docker.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_elasticsearch.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_gateway.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteB.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_glusterfs.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteC.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteD.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_note.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_memcached.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_mongodb.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_mysql.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_nginx.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_cors-configuration.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_postgresql.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_postgis.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rails.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_redis.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_sinatra.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_load-balancers.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_aws-load-balancer.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_gce-load-balancer.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_haproxy.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_linode-nodebalancer.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rackspace-load-balancer.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_clouda-load-balancer.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-server.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_importantB.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_deploy-to-your-own-server.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_shared-servers.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_external-servers.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_important.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_specify-environment-variables.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_processes.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_specify-additional-livelog-files.md %}
-{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_test-experimental-features.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_contents.md %}
+<a name="2"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_what-is-a-manifest-file.md %}
+<a name="3"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-environment.md %}
+<a name="4"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-application.md %}
+<a name="5"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_docker.md %}
+<a name="6"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_elasticsearch.md %}
+<a name="7"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_gateway.md %}
+<a name="8"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteB.md %}
+<a name="9"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_glusterfs.md %}
+<a name="10"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteC.md %}
+<a name="11"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_noteD.md %}
+<a name="12"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_note.md %}
+<a name="13"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_memcached.md %}
+<a name="14"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_mongodb.md %}
+<a name="15"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_mysql.md %}
+<a name="16"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_nginx.md %}
+<a name="17"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_cors-configuration.md %}
+<a name="18"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_postgresql.md %}
+<a name="19"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_postgis.md %}
+<a name="20"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rails.md %}
+<a name="21"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_redis.md %}
+<a name="22"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rack.md %}
+<a name="23"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_sinatra.md %}
+<a name="24"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_load-balancers.md %}
+<a name="25"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_aws-load-balancer.md %}
+<a name="26"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_gce-load-balancer.md %}
+<a name="27"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_haproxy.md %}
+<a name="28"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_linode-nodebalancer.md %}
+<a name="29"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_rackspace-load-balancer.md %}
+<a name="30"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_clouda-load-balancer.md %}
+<a name="31"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-server.md %}
+<a name="32"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_importantB.md %}
+<a name="33"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_deploy-to-your-own-server.md %}
+<a name="34"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_shared-servers.md %}
+<a name="35"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_external-servers.md %}
+<a name="36"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_important.md %}
+<a name="37"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_specify-environment-variables.md %}
+<a name="38"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_processes.md %}
+<a name="39"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_specify-additional-livelog-files.md %}
+<a name="40"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_test-experimental-features.md %}

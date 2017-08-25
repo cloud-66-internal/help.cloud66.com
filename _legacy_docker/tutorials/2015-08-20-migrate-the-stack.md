@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "1. Set a failover group ", "2. Add a CNAME record in your DNS provider dashboard ", "Note:", "3. Database backup", "4. Clone primary stack", "5. Add your database to backup stack", "6. Set up a replication between two stacks", "7. Add the second stack to the failover group", "Note:", "8. Put the primary site in to maintenance mode:", "9. Change the second database master", "10. Switch to the new stack", "11. [OPTIONAL]Switch your DNS record to the new stack" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_there-are-various-reasons-for.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_1-set-a-failover-group.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_2-add-a-cname-record-in-your.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_note-2.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_3-database-backup.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_4-clone-primary-stack.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_5-add-your-database-to-backup.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_6-set-up-a-replication-betwee.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_7-add-the-second-stack-to-the.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_note.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_8-put-the-primary-site-in-to.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_9-change-the-second-database.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_10-switch-to-the-new-stack.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_11-optionalswitch-your-dns.md" ]
 layout: post
 template: one-col
@@ -8,20 +9,18 @@ lead: ""
 legacy: true
 
 ---
-{% assign product = "common" %}
 
-
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_there-are-various-reasons-for.md %}
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_1-set-a-failover-group.md %}
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_2-add-a-cname-record-in-your.md %}
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_note-2.md %}
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_3-database-backup.md %}
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_4-clone-primary-stack.md %}
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_5-add-your-database-to-backup.md %}
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_6-set-up-a-replication-betwee.md %}
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_7-add-the-second-stack-to-the.md %}
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_note.md %}
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_8-put-the-primary-site-in-to.md %}
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_9-change-the-second-database.md %}
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_10-switch-to-the-new-stack.md %}
-{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_11-optionalswitch-your-dns.md %}
+<a name="1"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_there-are-various-reasons-for.md %}
+<a name="2"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_1-set-a-failover-group.md %}
+<a name="3"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_2-add-a-cname-record-in-your.md %}
+<a name="4"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_note-2.md %}
+<a name="5"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_3-database-backup.md %}
+<a name="6"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_4-clone-primary-stack.md %}
+<a name="7"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_5-add-your-database-to-backup.md %}
+<a name="8"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_6-set-up-a-replication-betwee.md %}
+<a name="9"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_7-add-the-second-stack-to-the.md %}
+<a name="10"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_note.md %}
+<a name="11"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_8-put-the-primary-site-in-to.md %}
+<a name="12"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_9-change-the-second-database.md %}
+<a name="13"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_10-switch-to-the-new-stack.md %}
+<a name="14"></a>{% include _inlines/Tutorials/common/2015-08-20-migrate-the-stack/2015-08-20-migrate-the-stack_11-optionalswitch-your-dns.md %}

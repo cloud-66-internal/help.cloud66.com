@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Contents", "What is parallel deployment?", "Note", "Configure parallel deployment" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/parallel-deployment/parallel-deployment_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/parallel-deployment/parallel-deployment_what-is-parallel-deployment.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/parallel-deployment/parallel-deployment_note.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/parallel-deployment/parallel-deployment_configure-parallel-deployment.md" ]
 layout: post
 template: one-col
@@ -8,9 +9,8 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "maestro" %}
 
-{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_contents.md %}
-{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_what-is-parallel-deployment.md %}
-{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_note.md %}
-{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_configure-parallel-deployment.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_contents.md %}
+<a name="2"></a>{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_what-is-parallel-deployment.md %}
+<a name="3"></a>{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_note.md %}
+<a name="4"></a>{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_configure-parallel-deployment.md %}

@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Contents", "Introduction to Docker", "Cloud 66 Docker support", "Ready?" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/docker-introduction/docker-introduction_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/docker-introduction/docker-introduction_introduction-to-docker.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/docker-introduction/docker-introduction_cloud-66-docker-support.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/docker-introduction/docker-introduction_ready.md" ]
 layout: post
 template: one-col
@@ -8,9 +9,8 @@ lead: ""
 legacy: true
 
 ---
-{% assign product = "legacy_docker" %}
 
-{% include _inlines/Deployment/common/docker-introduction/docker-introduction_contents.md %}
-{% include _inlines/Deployment/common/docker-introduction/docker-introduction_introduction-to-docker.md %}
-{% include _inlines/Deployment/common/docker-introduction/docker-introduction_cloud-66-docker-support.md %}
-{% include _inlines/Deployment/common/docker-introduction/docker-introduction_ready.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/docker-introduction/docker-introduction_contents.md %}
+<a name="2"></a>{% include _inlines/Deployment/common/docker-introduction/docker-introduction_introduction-to-docker.md %}
+<a name="3"></a>{% include _inlines/Deployment/common/docker-introduction/docker-introduction_cloud-66-docker-support.md %}
+<a name="4"></a>{% include _inlines/Deployment/common/docker-introduction/docker-introduction_ready.md %}

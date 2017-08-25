@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Cap deploy failed" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/troubleshoot-ror-deployment-failure/troubleshoot-ror-deployment-failure_cap-deploy-failed.md" ]
 layout: post
 template: one-col
@@ -8,6 +9,5 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "rails" %}
 
-{% include _inlines/StackManagement/common/troubleshoot-ror-deployment-failure/troubleshoot-ror-deployment-failure_cap-deploy-failed.md %}
+<a name="1"></a>{% include _inlines/StackManagement/common/troubleshoot-ror-deployment-failure/troubleshoot-ror-deployment-failure_cap-deploy-failed.md %}

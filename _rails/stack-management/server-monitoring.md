@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "CPU usage", "Memory usage", "Disk usage" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-monitoring/server-monitoring_although-cloud-66-detects-server-connecti.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-monitoring/server-monitoring_cpu-usage.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-monitoring/server-monitoring_memory-usage.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-monitoring/server-monitoring_disk-usage.md" ]
 layout: post
 template: one-col
@@ -8,9 +9,8 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "common" %}
 
-{% include _inlines/StackManagement/common/server-monitoring/server-monitoring_although-cloud-66-detects-server-connecti.md %}
-{% include _inlines/StackManagement/common/server-monitoring/server-monitoring_cpu-usage.md %}
-{% include _inlines/StackManagement/common/server-monitoring/server-monitoring_memory-usage.md %}
-{% include _inlines/StackManagement/common/server-monitoring/server-monitoring_disk-usage.md %}
+<a name="1"></a>{% include _inlines/StackManagement/common/server-monitoring/server-monitoring_although-cloud-66-detects-server-connecti.md %}
+<a name="2"></a>{% include _inlines/StackManagement/common/server-monitoring/server-monitoring_cpu-usage.md %}
+<a name="3"></a>{% include _inlines/StackManagement/common/server-monitoring/server-monitoring_memory-usage.md %}
+<a name="4"></a>{% include _inlines/StackManagement/common/server-monitoring/server-monitoring_disk-usage.md %}

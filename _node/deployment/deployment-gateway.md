@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Contents", "About deployment gateways", "Important", "How to deploy your stack behind the gateway server", "Accessing your servers behind the gateway server" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deployment-gateway/deployment-gateway_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deployment-gateway/deployment-gateway_about-deployment-gateways.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deployment-gateway/deployment-gateway_important.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deployment-gateway/deployment-gateway_how-to-deploy-your-stack-behind-the-gate.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deployment-gateway/deployment-gateway_accessing-your-servers-behind-the-gatewa.md" ]
 layout: post
 template: one-col
@@ -8,10 +9,9 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "node" %}
 
-{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_contents.md %}
-{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_about-deployment-gateways.md %}
-{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_important.md %}
-{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_how-to-deploy-your-stack-behind-the-gate.md %}
-{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_accessing-your-servers-behind-the-gatewa.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_contents.md %}
+<a name="2"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_about-deployment-gateways.md %}
+<a name="3"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_important.md %}
+<a name="4"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_how-to-deploy-your-stack-behind-the-gate.md %}
+<a name="5"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_accessing-your-servers-behind-the-gatewa.md %}

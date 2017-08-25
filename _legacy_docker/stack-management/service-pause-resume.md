@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Contents", "Pause and resume services" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/service-pause-resume/service-pause-resume_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/service-pause-resume/service-pause-resume_pause-and-resume-services.md" ]
 layout: post
 template: one-col
@@ -8,7 +9,6 @@ lead: ""
 legacy: true
 
 ---
-{% assign product = "legacy_docker" %}
 
-{% include _inlines/StackManagement/common/service-pause-resume/service-pause-resume_contents.md %}
-{% include _inlines/StackManagement/common/service-pause-resume/service-pause-resume_pause-and-resume-services.md %}
+<a name="1"></a>{% include _inlines/StackManagement/common/service-pause-resume/service-pause-resume_contents.md %}
+<a name="2"></a>{% include _inlines/StackManagement/common/service-pause-resume/service-pause-resume_pause-and-resume-services.md %}

@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Certificate signing request", "Important", "Intermediate certificates", "Multi-domain certificates", "Separate domains with different certificates", "main domain" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_certificate-signing-request.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_important.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_intermediate-certificates.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_multi-domain-certificates.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_separate-domains-with-different-.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_main-domain.md" ]
 layout: post
 template: one-col
@@ -8,12 +9,11 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_contents.md %}
-{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_certificate-signing-request.md %}
-{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_important.md %}
-{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_intermediate-certificates.md %}
-{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_multi-domain-certificates.md %}
-{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_separate-domains-with-different-.md %}
-{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_main-domain.md %}
+<a name="1"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_contents.md %}
+<a name="2"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_certificate-signing-request.md %}
+<a name="3"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_important.md %}
+<a name="4"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_intermediate-certificates.md %}
+<a name="5"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_multi-domain-certificates.md %}
+<a name="6"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_separate-domains-with-different-.md %}
+<a name="7"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_main-domain.md %}

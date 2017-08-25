@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "What is load balancing?", "Note", "Add a load balancer" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/load-balancer/load-balancer_what-is-load-balancing.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/load-balancer/load-balancer_note.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/load-balancer/load-balancer_add-a-load-balancer.md" ]
 layout: post
 template: one-col
@@ -8,8 +9,7 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "node" %}
 
-{% include _inlines/AddOns/common/load-balancer/load-balancer_what-is-load-balancing.md %}
-{% include _inlines/AddOns/common/load-balancer/load-balancer_note.md %}
-{% include _inlines/AddOns/common/load-balancer/load-balancer_add-a-load-balancer.md %}
+<a name="1"></a>{% include _inlines/AddOns/common/load-balancer/load-balancer_what-is-load-balancing.md %}
+<a name="2"></a>{% include _inlines/AddOns/common/load-balancer/load-balancer_note.md %}
+<a name="3"></a>{% include _inlines/AddOns/common/load-balancer/load-balancer_add-a-load-balancer.md %}

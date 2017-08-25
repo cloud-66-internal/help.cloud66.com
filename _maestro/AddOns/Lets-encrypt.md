@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Contents", "How it is installed", "Note:", "Troubleshoot" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/Lets-encrypt/lets-encrypt_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/Lets-encrypt/lets-encrypt_how-it-is-installed.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/Lets-encrypt/lets-encrypt_note.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/Lets-encrypt/lets-encrypt_troubleshoot.md" ]
 layout: post
 template: one-col
@@ -8,9 +9,8 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "maestro" %}
 
-{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_contents.md %}
-{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_how-it-is-installed.md %}
-{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_note.md %}
-{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_troubleshoot.md %}
+<a name="1"></a>{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_contents.md %}
+<a name="2"></a>{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_how-it-is-installed.md %}
+<a name="3"></a>{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_note.md %}
+<a name="4"></a>{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_troubleshoot.md %}

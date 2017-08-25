@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Redeploy your stack", "Usage", "Parameters", "Examples" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/redeploy/redeploy_redeploy-your-stack.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/redeploy/redeploy_usage.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/redeploy/redeploy_parameters.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/redeploy/redeploy_examples.md" ]
 layout: post
 template: one-col
@@ -8,10 +9,8 @@ lead: ""
 legacy: true
 
 ---
-{% assign product = "common" %}
 
-
-{% include _inlines/Toolbelt/common/redeploy/redeploy_redeploy-your-stack.md %}
-{% include _inlines/Toolbelt/common/redeploy/redeploy_usage.md %}
-{% include _inlines/Toolbelt/common/redeploy/redeploy_parameters.md %}
-{% include _inlines/Toolbelt/common/redeploy/redeploy_examples.md %}
+<a name="1"></a>{% include _inlines/Toolbelt/common/redeploy/redeploy_redeploy-your-stack.md %}
+<a name="2"></a>{% include _inlines/Toolbelt/common/redeploy/redeploy_usage.md %}
+<a name="3"></a>{% include _inlines/Toolbelt/common/redeploy/redeploy_parameters.md %}
+<a name="4"></a>{% include _inlines/Toolbelt/common/redeploy/redeploy_examples.md %}

@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Stack environments" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/stack-environments/stack-environments_stack-environments.md" ]
 layout: post
 template: one-col
@@ -8,6 +9,5 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "maestro" %}
 
-{% include _inlines/GettingStarted/common/stack-environments/stack-environments_stack-environments.md %}
+<a name="1"></a>{% include _inlines/GettingStarted/common/stack-environments/stack-environments_stack-environments.md %}

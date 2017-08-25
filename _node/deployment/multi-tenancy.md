@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Contents", "Overview", "Multiple Services" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/multi-tenancy/multi-tenancy_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/multi-tenancy/multi-tenancy_overview.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/multi-tenancy/multi-tenancy_multiple-services.md" ]
 layout: post
 template: one-col
@@ -8,8 +9,7 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "node" %}
 
-{% include _inlines/Deployment/common/multi-tenancy/multi-tenancy_contents.md %}
-{% include _inlines/Deployment/common/multi-tenancy/multi-tenancy_overview.md %}
-{% include _inlines/Deployment/common/multi-tenancy/multi-tenancy_multiple-services.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/multi-tenancy/multi-tenancy_contents.md %}
+<a name="2"></a>{% include _inlines/Deployment/common/multi-tenancy/multi-tenancy_overview.md %}
+<a name="3"></a>{% include _inlines/Deployment/common/multi-tenancy/multi-tenancy_multiple-services.md %}

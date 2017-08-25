@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Contents", "Overview", "Ports inside and outside containers", "Mapping ports from inside to the outside world", "Note", "Non-HTTP ports (TCP and UDP)", "Multiple ports" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/container-ports/container-ports_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/container-ports/container-ports_overview.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/container-ports/container-ports_ports-inside-and-outside-containers.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/container-ports/container-ports_mapping-ports-from-inside-to-the-outside-wo.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/container-ports/container-ports_note.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/container-ports/container-ports_non-http-ports-tcp-and-udp.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/container-ports/container-ports_multiple-ports.md" ]
 layout: post
 template: one-col
@@ -8,12 +9,11 @@ lead: ""
 legacy: true
 
 ---
-{% assign product = "legacy_docker" %}
 
-{% include _inlines/Deployment/common/container-ports/container-ports_contents.md %}
-{% include _inlines/Deployment/common/container-ports/container-ports_overview.md %}
-{% include _inlines/Deployment/common/container-ports/container-ports_ports-inside-and-outside-containers.md %}
-{% include _inlines/Deployment/common/container-ports/container-ports_mapping-ports-from-inside-to-the-outside-wo.md %}
-{% include _inlines/Deployment/common/container-ports/container-ports_note.md %}
-{% include _inlines/Deployment/common/container-ports/container-ports_non-http-ports-tcp-and-udp.md %}
-{% include _inlines/Deployment/common/container-ports/container-ports_multiple-ports.md %}
+<a name="1"></a>{% include _inlines/Deployment/common/container-ports/container-ports_contents.md %}
+<a name="2"></a>{% include _inlines/Deployment/common/container-ports/container-ports_overview.md %}
+<a name="3"></a>{% include _inlines/Deployment/common/container-ports/container-ports_ports-inside-and-outside-containers.md %}
+<a name="4"></a>{% include _inlines/Deployment/common/container-ports/container-ports_mapping-ports-from-inside-to-the-outside-wo.md %}
+<a name="5"></a>{% include _inlines/Deployment/common/container-ports/container-ports_note.md %}
+<a name="6"></a>{% include _inlines/Deployment/common/container-ports/container-ports_non-http-ports-tcp-and-udp.md %}
+<a name="7"></a>{% include _inlines/Deployment/common/container-ports/container-ports_multiple-ports.md %}

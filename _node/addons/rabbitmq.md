@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "What is RabbitMQ?", "Add RabbitMQ" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/rabbitmq/rabbitmq_what-is-rabbitmq.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/rabbitmq/rabbitmq_add-rabbitmq.md" ]
 layout: post
 template: one-col
@@ -8,7 +9,6 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "node" %}
 
-{% include _inlines/AddOns/common/rabbitmq/rabbitmq_what-is-rabbitmq.md %}
-{% include _inlines/AddOns/common/rabbitmq/rabbitmq_add-rabbitmq.md %}
+<a name="1"></a>{% include _inlines/AddOns/common/rabbitmq/rabbitmq_what-is-rabbitmq.md %}
+<a name="2"></a>{% include _inlines/AddOns/common/rabbitmq/rabbitmq_add-rabbitmq.md %}

@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Contents", "What is Dockerfile", "How cloud 66 uses the Dockerfile" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/dockerfile/dockerfile_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/dockerfile/dockerfile_what-is-dockerfile.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/dockerfile/dockerfile_how-cloud-66-uses-the-dockerfile.md" ]
 layout: post
 template: one-col
@@ -8,8 +9,7 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "maestro" %}
 
-{% include _inlines/GettingStarted/common/dockerfile/dockerfile_contents.md %}
-{% include _inlines/GettingStarted/common/dockerfile/dockerfile_what-is-dockerfile.md %}
-{% include _inlines/GettingStarted/common/dockerfile/dockerfile_how-cloud-66-uses-the-dockerfile.md %}
+<a name="1"></a>{% include _inlines/GettingStarted/common/dockerfile/dockerfile_contents.md %}
+<a name="2"></a>{% include _inlines/GettingStarted/common/dockerfile/dockerfile_what-is-dockerfile.md %}
+<a name="3"></a>{% include _inlines/GettingStarted/common/dockerfile/dockerfile_how-cloud-66-uses-the-dockerfile.md %}

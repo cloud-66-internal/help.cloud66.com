@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "What is Elasticsearch?", "Add Elasticearch", "Note" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/elasticsearch/elasticsearch_what-is-elasticsearch.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/elasticsearch/elasticsearch_add-elasticearch.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/elasticsearch/elasticsearch_note.md" ]
 layout: post
 template: one-col
@@ -8,8 +9,7 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "node" %}
 
-{% include _inlines/AddOns/common/elasticsearch/elasticsearch_what-is-elasticsearch.md %}
-{% include _inlines/AddOns/common/elasticsearch/elasticsearch_add-elasticearch.md %}
-{% include _inlines/AddOns/common/elasticsearch/elasticsearch_note.md %}
+<a name="1"></a>{% include _inlines/AddOns/common/elasticsearch/elasticsearch_what-is-elasticsearch.md %}
+<a name="2"></a>{% include _inlines/AddOns/common/elasticsearch/elasticsearch_add-elasticearch.md %}
+<a name="3"></a>{% include _inlines/AddOns/common/elasticsearch/elasticsearch_note.md %}

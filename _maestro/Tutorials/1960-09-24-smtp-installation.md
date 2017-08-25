@@ -1,4 +1,5 @@
 ---
+menuheaders: [ "Installing Postfix", "Configuring Rails" ]
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_depending-on-the-scale-of-your.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_installing-postfix.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_configuring-rails.md" ]
 layout: post
 template: one-col
@@ -8,8 +9,7 @@ lead: ""
 legacy: false
 
 ---
-{% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_depending-on-the-scale-of-your.md %}
-{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_installing-postfix.md %}
-{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_configuring-rails.md %}
+<a name="1"></a>{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_depending-on-the-scale-of-your.md %}
+<a name="2"></a>{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_installing-postfix.md %}
+<a name="3"></a>{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_configuring-rails.md %}
