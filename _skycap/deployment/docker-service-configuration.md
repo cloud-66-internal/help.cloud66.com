@@ -13,7 +13,7 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_what-is-service-configuration.md  product = product %}
 <a name="3"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_how-do-i-specify-service-confi.md  product = product %}
 <a name="4"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_service-configuration-examples.md  product = product %}

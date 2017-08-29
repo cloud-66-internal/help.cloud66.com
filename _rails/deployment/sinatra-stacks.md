@@ -13,7 +13,7 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_custom-commands.md  product = product %}
 <a name="3"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_connect-to-your-database.md  product = product %}
 <a name="4"></a>{% include _inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_note.md  product = product %}

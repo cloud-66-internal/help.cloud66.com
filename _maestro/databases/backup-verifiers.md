@@ -13,7 +13,7 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Databases/common/backup-verifiers/backup-verifiers_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/Databases/common/backup-verifiers/backup-verifiers_note.md  product = product %}
 <a name="3"></a>{% include _inlines/Databases/common/backup-verifiers/backup-verifiers_what-is-a-backup-verifier.md  product = product %}
 <a name="4"></a>{% include _inlines/Databases/common/backup-verifiers/backup-verifiers_set-up-a-backup-verifier.md  product = product %}

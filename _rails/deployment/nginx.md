@@ -13,7 +13,7 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/nginx/nginx_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/Deployment/common/nginx/nginx_about-nginx.md  product = product %}
 <a name="3"></a>{% include _inlines/Deployment/common/nginx/nginx_nginx-configuration.md  product = product %}
 <a name="4"></a>{% include _inlines/Deployment/common/nginx/nginx_nginx-worker-configuration.md  product = product %}

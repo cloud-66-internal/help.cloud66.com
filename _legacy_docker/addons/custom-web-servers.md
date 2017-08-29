@@ -13,7 +13,7 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_about-custom-web-servers.md  product = product %}
 <a name="3"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_important.md  product = product %}
 <a name="4"></a>{% include _inlines/AddOns/common/custom-web-servers/custom-web-servers_configurations-for-your-rack-server.md  product = product %}

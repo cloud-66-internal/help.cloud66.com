@@ -13,7 +13,7 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_what-is-customconfig-git.md  product = product %}
 <a name="3"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_getting-started-with-customconfig-git.md  product = product %}
 <a name="4"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_uploading-your-ssh-public-key.md  product = product %}

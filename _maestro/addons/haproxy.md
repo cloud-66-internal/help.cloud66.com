@@ -13,7 +13,7 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/AddOns/common/haproxy/haproxy_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/AddOns/common/haproxy/haproxy_about-configuring-haproxy.md  product = product %}
 <a name="3"></a>{% include _inlines/AddOns/common/haproxy/haproxy_view-haproxy-stats.md  product = product %}
 <a name="4"></a>{% include _inlines/AddOns/common/haproxy/haproxy_configure-haproxy-to-use-internal-ips.md  product = product %}

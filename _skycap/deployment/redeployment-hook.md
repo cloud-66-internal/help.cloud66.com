@@ -13,7 +13,7 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_about-redeployment-hooks.md  product = product %}
 <a name="3"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_where-to-find-your-redeployment-hook.md  product = product %}
 <a name="4"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_for-docker-stacks.md  product = product %}
