@@ -10,8 +10,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 <a name="1"></a>{% include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_introduction.md  product = product %}
 <a name="2"></a>{% include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_scheduled.md  product = product %}

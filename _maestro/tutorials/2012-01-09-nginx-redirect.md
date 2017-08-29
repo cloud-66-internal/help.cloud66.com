@@ -10,8 +10,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 <a name="1"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_redirect-from-http-to-https.md  product = product %}
 <a name="2"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_redirect-between-domains-with-htt.md  product = product %}

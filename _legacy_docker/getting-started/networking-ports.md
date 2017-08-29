@@ -9,8 +9,8 @@ legacy: true
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 {% assign product = "legacy_docker" %}
 
 {% include _inlines/GettingStarted/common/networking-ports/networking-ports_this-is-used-to-expose-your-service-to-the.md  product = product %}

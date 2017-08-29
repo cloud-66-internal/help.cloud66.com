@@ -10,8 +10,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 <a name="1"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_about-migrating-from-heroku.md  product = product %}
 <a name="2"></a>{% include _inlines/Tutorials/Rails/1974-09-26-migrate-from-heroku/1974-09-26-migrate-from-heroku_what-server-size-do-i-need.md  product = product %}

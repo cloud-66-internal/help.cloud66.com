@@ -10,8 +10,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 
 <a name="2"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_what-are-deploy-hooks.md  product = product %}

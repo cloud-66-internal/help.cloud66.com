@@ -10,8 +10,8 @@ legacy: true
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 <a name="1"></a>{% include _inlines/AddOns/common/rabbitmq/rabbitmq_what-is-rabbitmq.md  product = product %}
 <a name="2"></a>{% include _inlines/AddOns/common/rabbitmq/rabbitmq_add-rabbitmq.md  product = product %}

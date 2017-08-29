@@ -10,8 +10,8 @@ legacy: true
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 <a name="1"></a>{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_introduction.md  product = product %}
 <a name="2"></a>{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_passenger.md  product = product %}

@@ -9,8 +9,8 @@ legacy: true
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 {% assign product = "legacy_docker" %}
 
 {% include _inlines/AddOns/common/docker-server-task/docker-server-task_to-add-this-add-in-simply-click-on-the-.md  product = product %}

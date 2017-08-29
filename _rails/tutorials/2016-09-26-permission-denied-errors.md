@@ -10,8 +10,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 <a name="1"></a>{% include _inlines/Tutorials/common/2016-09-26-permission-denied-errors/2016-09-26-permission-denied-errors_if-your-application-nee.md  product = product %}
 <a name="2"></a>{% include _inlines/Tutorials/common/2016-09-26-permission-denied-errors/2016-09-26-permission-denied-errors_important.md  product = product %}

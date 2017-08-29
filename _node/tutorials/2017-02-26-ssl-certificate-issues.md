@@ -10,8 +10,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 
 <a name="2"></a>{% include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/2039-02-26-ssl-certificate-issues_web-server-issues.md  product = product %}

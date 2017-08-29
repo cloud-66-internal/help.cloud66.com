@@ -7,8 +7,8 @@ lead: Cloud 66 Toolbelt for Node
 legacy: false
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 - [Backup Management](backups)
 - [Commands Directory](commands-overview)

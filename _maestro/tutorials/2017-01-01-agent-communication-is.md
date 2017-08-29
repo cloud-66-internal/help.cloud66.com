@@ -9,8 +9,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 {% assign product = "common" %}
 
 {% include _inlines/Tutorials/common/2041-01-01-agent-communication-is/2041-01-01-agent-communication-is_you-will-be-notified-in-t.md  product = product %}

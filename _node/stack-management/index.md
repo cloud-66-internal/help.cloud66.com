@@ -7,8 +7,8 @@ lead: Managing Stacks with Cloud 66 for Node
 legacy: false
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 - [Agent Communication Issue](agent-communication-issue)
 - [Applying Upgrades](applying-upgrades)

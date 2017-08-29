@@ -9,8 +9,8 @@ legacy: true
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 {% assign product = "legacy_docker" %}
 
 {% include _inlines/StackManagement/common/agent-communication-issue/agent-communication-issue_you-will-be-notified-in-the-case-.md  product = product %}

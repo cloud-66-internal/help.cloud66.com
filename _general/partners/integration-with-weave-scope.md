@@ -10,8 +10,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 <a name="1"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_weave-scopehttps.md  product = product %}
 <a name="2"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-1-checkout-your-customco.md  product = product %}
