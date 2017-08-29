@@ -95,13 +95,18 @@ bodyclass: post
    color: mediumseagreen;
    overflow: scroll;
    bottom:0px;
+   direction: rtl;
    top:0px;">
+    <div
+    style=" direction: ltr;
+    margin-left: 40px;
+    ">
     <h1> What's on This Page:</h1>
-    <ul>
+    <ul style="list-style-type: circle;">
         {% for next in page.menuheaders %}
         {% assign theIndex = forloop.index | prepend: '#' %}
         {% if next != 'Contents'%}
-        <a href={{theIndex}} ><li>{{next}}</li></a><br>
+        <a href={{theIndex}} ><li style="   margin:0 0 10px 0;">{{next}}</li></a>
         {% endif %}
         {% endfor %}
         <br><br>
@@ -122,4 +127,5 @@ bodyclass: post
         {% endfor %}
     </ul>
     {% endif %}
+    </div>
 </div>
