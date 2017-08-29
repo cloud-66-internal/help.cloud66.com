@@ -102,6 +102,7 @@ bodyclass: post
 
 
 {% if jekyll.environment == "development" %}
+
 <div style="
     padding-bottom: 20px;
     padding-left: 5px;
@@ -115,6 +116,7 @@ bodyclass: post
    overflow: scroll;
    background-color: rgba(0,0,0,0.2)">
     <h1>Github Links</h1>
+    <h1>{{  jekyll.environment }}</h1>
     <ul>
         {% assign words1 = page.url | split: '/' %}
         {% assign length1 = words1 | size | minus: 1 %}
