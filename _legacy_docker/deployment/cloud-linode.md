@@ -13,7 +13,7 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/cloud-linode/cloud-linode_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/Deployment/common/cloud-linode/cloud-linode_about-using-linode-cloud.md  product = product %}
 <a name="3"></a>{% include _inlines/Deployment/common/cloud-linode/cloud-linode_generate-a-linode-api-key.md  product = product %}
 <a name="4"></a>{% include _inlines/Deployment/common/cloud-linode/cloud-linode_add-linode-key-to-a-stack.md  product = product %}

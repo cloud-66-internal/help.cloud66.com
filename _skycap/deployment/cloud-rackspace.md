@@ -13,7 +13,7 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/cloud-rackspace/cloud-rackspace_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/Deployment/common/cloud-rackspace/cloud-rackspace_about-using-rackspace-cloud.md  product = product %}
 <a name="3"></a>{% include _inlines/Deployment/common/cloud-rackspace/cloud-rackspace_generate-a-rackspace-api-key.md  product = product %}
 <a name="4"></a>{% include _inlines/Deployment/common/cloud-rackspace/cloud-rackspace_add-rackspace-key-to-a-stack.md  product = product %}

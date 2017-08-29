@@ -13,7 +13,7 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_what-are-deploy-hooks.md  product = product %}
 <a name="3"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-points.md  product = product %}
 <a name="4"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-fields.md  product = product %}

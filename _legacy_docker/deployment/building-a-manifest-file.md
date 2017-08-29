@@ -13,7 +13,7 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_what-is-a-manifest-file.md  product = product %}
 <a name="3"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-environment.md  product = product %}
 <a name="4"></a>{% include _inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_which-application.md  product = product %}

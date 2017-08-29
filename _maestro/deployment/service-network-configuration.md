@@ -13,7 +13,7 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_traffic-distribution.md  product = product %}
 <a name="3"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_containernet.md  product = product %}
 <a name="4"></a>{% include _inlines/Deployment/common/service-network-configuration/service-network-configuration_encryption.md  product = product %}

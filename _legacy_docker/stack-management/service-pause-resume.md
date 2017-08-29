@@ -13,5 +13,5 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/StackManagement/common/service-pause-resume/service-pause-resume_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/StackManagement/common/service-pause-resume/service-pause-resume_pause-and-resume-services.md  product = product %}

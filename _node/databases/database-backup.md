@@ -13,7 +13,7 @@ legacy: false
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/Databases/common/database-backup/database-backups_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/Databases/common/database-backup/database-backups_what-is-the-database-backup-add-in.md  product = product %}
 <a name="3"></a>{% include _inlines/Databases/common/database-backup/database-backups_backup-types.md  product = product %}
 <a name="4"></a>{% include _inlines/Databases/common/database-backup/database-backups_managed-backups.md  product = product %}

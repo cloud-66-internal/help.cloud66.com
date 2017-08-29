@@ -13,6 +13,6 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/GettingStarted/common/dockerfile/dockerfile_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/GettingStarted/common/dockerfile/dockerfile_what-is-dockerfile.md  product = product %}
 <a name="3"></a>{% include _inlines/GettingStarted/common/dockerfile/dockerfile_how-cloud-66-uses-the-dockerfile.md  product = product %}

@@ -13,7 +13,7 @@ legacy: true
 {% assign thingy = page.url | split: '/' %}
 {% assign product = thingy[1] %}
 
-<a name="1"></a>{% include _inlines/StackManagement/common/scaling/scaling_contents.md  product = product %}
+
 <a name="2"></a>{% include _inlines/StackManagement/common/scaling/scaling_about-scaling-servers.md  product = product %}
 <a name="3"></a>{% include _inlines/StackManagement/common/scaling/scaling_horizontal-scaling.md  product = product %}
 <a name="4"></a>{% include _inlines/StackManagement/common/scaling/scaling_web-servers.md  product = product %}
