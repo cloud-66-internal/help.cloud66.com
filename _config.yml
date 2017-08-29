@@ -34,9 +34,9 @@ collections:
     permalink: /:collection/:categories/:name
     icon: foundicon-idea
   skycap:
-      output: true
-      permalink: /:collection/:categories/:name
-      icon: foundicon-idea
+    output: true
+    permalink: /:collection/:categories/:name
+    icon: foundicon-idea
 # Build settings
 markdown: kramdown
 

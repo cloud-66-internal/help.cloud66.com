@@ -15,39 +15,41 @@ First you need to detect if the backup is a **Text backup** or **Binary Backup**
 If the command return a result it is a text backup and if the result is empty it is a binary backup.
 
 **Restore Postgresql Text backup**
-1. Run following command to flatten the folder 
+
+1\. 
+ 	Run following command to flatten the folder 
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-findpathto-2.md  product = include.product %}
-
-
-
-
-2. Run following command to find the data file
-
-
-
-{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-findpathto-2-3.md  product = include.product %}
+	{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-findpathto-2.md  product = include.product %}
 
 
 
 
-3. If the result of previous step has a *.gz extension run following command to unzip it, unless go to next step.
+2\. 	Run following command to find the data file
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-gzipdpath.md  product = include.product %}
+	{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-findpathto-2-3.md  product = include.product %}
 
 
 
 
-4. On order to clean old data you can drop your current db and create a new one. You can use following scripts to drop and recreate your database but first you need to set some environment variables.
+3\. 	If the result of previous step has a *.gz extension run following command to unzip it, unless go to next step.
+
+
+
+	{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-gzipdpath.md  product = include.product %}
+
+
+
+
+4\. On order to clean old data you can drop your current db and create a new one. You can use following scripts to drop and recreate your database but first you need to set some environment variables.
 You can find YOUR_PG_DATABASE_NAME and YOUR_PG_APP_USERNAME in Cloud66 Dashboard Postgresql server detail page.
 
 
 
-{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-export.md  product = include.product %}
+	{%include _inlines/Databases/common/database-backup/code_database-backups_postgresql-export.md  product = include.product %}
 
 
 
@@ -89,6 +91,7 @@ You need to find the main backup folder in unarchived folder. Run following comm
 $ find /path/to/unarchived/folder -name raw -type d
 ```
 Stop Postgresql service :
+
 2.1 Ubuntu 12.04 / 14.04
 ```
 $ (sudo -u postgres pg_ctl stop -D /usr/local/pgsql/data -m f -t 10 || true) && sudo stop postgresql
