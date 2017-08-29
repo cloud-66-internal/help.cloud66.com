@@ -10,8 +10,8 @@ legacy: true
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 
 <a name="2"></a>{% include _inlines/Databases/common/database-backup/database-backups_what-is-the-database-backup-add-in.md  product = product %}

@@ -9,8 +9,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 {% assign product = "General" %}
 
 {% include _inlines/Partners/General/integration-with-semaphore/integration-with-semaphore_what-follows-is-how-to-integrate.md  product = product %}

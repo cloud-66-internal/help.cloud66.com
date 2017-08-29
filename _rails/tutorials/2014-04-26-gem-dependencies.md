@@ -9,8 +9,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 {% assign product = "Rails" %}
 
 {% include _inlines/Tutorials/Rails/2014-04-26-gem-dependencies/2014-04-26-gem-dependencies_depending-on-which-gems-youre-.md  product = product %}

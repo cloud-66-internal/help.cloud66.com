@@ -6,8 +6,8 @@ lead: Cloud66 General
 legacy: false
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 - [Beta Program](beta-program)
 - [Introduction](introduction)

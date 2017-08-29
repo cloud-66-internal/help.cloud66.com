@@ -9,8 +9,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 {% assign product = "General" %}
 
 {% include _inlines/Account/General/browser-requirements/browser-requirements_browser-versions-are-frequently-update.md  product = product %}

@@ -9,8 +9,8 @@ legacy: true
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 {% assign product = "common" %}
 
 {% include _inlines/Tutorials/common/2016-09-29-using-master-data-staging/2018-09-22-using-master-data-staging_you-may-wish-to-set-up.md  product = product %}

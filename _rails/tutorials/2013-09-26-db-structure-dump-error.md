@@ -10,8 +10,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 <a name="1"></a>{% include _inlines/Tutorials/common/2013-09-26-db-structure-dump-error/2013-09-26-db-structure-dump-error_the-basics.md  product = product %}
 <a name="2"></a>{% include _inlines/Tutorials/common/2013-09-26-db-structure-dump-error/2013-09-26-db-structure-dump-error_the-resolution.md  product = product %}

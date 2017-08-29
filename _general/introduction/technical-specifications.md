@@ -10,8 +10,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 <a name="1"></a>{% include _inlines/unknown/General/technical-specifications/versions_operating-system.md  product = product %}
 <a name="2"></a>{% include _inlines/unknown/General/technical-specifications/versions_supported-cloud-providers.md  product = product %}

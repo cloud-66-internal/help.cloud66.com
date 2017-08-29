@@ -10,7 +10,7 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 <a name="1"></a>{% include _inlines/Deployment/Node/supported-frameworks/supported-frameworks_which-framework-do-we-support-.md  product = product %}

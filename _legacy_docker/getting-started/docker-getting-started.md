@@ -10,8 +10,8 @@ legacy: true
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 
 <a name="1"></a>{% include _inlines/GettingStarted/legacy_docker/docker-getting-started/docker-getting-started_overview-amp-prerequisites.md  product = product %}
 <a name="2"></a>{% include _inlines/GettingStarted/legacy_docker/docker-getting-started/docker-getting-started_building-images.md  product = product %}

@@ -9,8 +9,8 @@ legacy: true
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 {% assign product = "common" %}
 
 {% include _inlines/Tutorials/common/2044-02-13-pg-replication-version/2044-02-13-pg-replication-version_when-you-initiate-replica.md  product = product %}

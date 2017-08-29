@@ -27,8 +27,6 @@ bodyclass: post
         {{ page.lead }}
     </p>
 
-
-
     <div class="content-pri">
         {% if page.legacy %}
         <div class="notice notice-warning">
@@ -86,51 +84,6 @@ bodyclass: post
 </article>
 
 
-<div class="crumbs crumbs-bottom container">
-    <nav class="nav-footer">
-        {% include contents_link.html %}
-        {% if page.nav %}
-        {% include paging_link.html %}
-        {% endif %}
-    </nav>
-    {% for next in page.boop %}
-    <div style="float: right; margin-top: -17px">Read next: &nbsp&nbsp&nbsp<a href={{next}} >{{ next }}</a>></div>
-    {% endfor %}
-</div>
-
-
-
-
-<!--{% if jekyll.environment == "development" %}-->
-<!--<div style="-->
-<!--padding-bottom: 20px;-->
-<!--padding-left: 5px;-->
-<!--scroll-padding-right: 5px;-->
-<!--border-radius: 10px 0px 0px 10px;-->
-<!--position: fixed;-->
-<!--right: 0px;-->
-<!--top: 100px;-->
-<!--width: 230px;-->
-<!--height:400px;-->
-<!--overflow: scroll;-->
-<!--background-color: rgba(0,0,0,0.2)">-->
-<!--<h1>Github Links</h1>-->
-<!--<ul>-->
-<!--{% assign words1 = page.url | split: '/' %}-->
-<!--{% assign length1 = words1 | size | minus: 1 %}-->
-<!--{% assign nameroo = words1[length1] %}-->
-<!--{% for next in page.gitlinks %}-->
-<!--{% assign words = next | split: '/' %}-->
-<!--{% assign length = words | size | minus: 1 %}-->
-<!--{% assign nameristo = words[length] %}-->
-<!--{% assign thingy =  nameristo | split: nameroo %}-->
-<!--{% assign nameio = thingy[1] | remove_first: '_' | remove_first: '.md' %}-->
-<!--<li><a href={{next}} >{{nameio}}<br></a></li>-->
-<!--{% endfor %}-->
-<!--</ul>-->
-<!--</div>-->
-<!--{% endif %}-->
-
 <div style="
    z-index: 10;
    top: 100px;
@@ -154,30 +107,18 @@ bodyclass: post
         <br><br>
     </ul>
     {% if jekyll.environment == "development" %}
-    <!--<div style="-->
-    <!--/*padding-bottom: 20px;*/-->
-    <!--/*padding-left: 5px;*/-->
-    <!--/*scroll-padding-right: 5px;*/-->
-    <!--border-radius: 10px 0px 0px 10px;-->
-   <!--position: fixed;-->
-   <!--right: 0px;-->
-   <!--/*top: 100px;*/-->
-   <!--width: 230px;-->
-   <!--/*height:400px;*/-->
-   <!--overflow: scroll;-->
-   <!--background-color: rgba(0,0,0,0.2)">-->
     <h1>Github Links</h1>
     <ul>
-        {% assign words1 = page.url | split: '/' %}
-        {% assign length1 = words1 | size | minus: 1 %}
-        {% assign nameroo = words1[length1] %}
+        {% assign urlWords = page.url | split: '/' %}
+        {% assign wordsLength = urlWords | size | minus: 1 %}
+        {% assign lastName = urlWords[wordsLength] %}
         {% for next in page.gitlinks %}
         {% assign words = next | split: '/' %}
         {% assign length = words | size | minus: 1 %}
-        {% assign nameristo = words[length] %}
-        {% assign thingy =  nameristo | split: nameroo %}
-        {% assign nameio = thingy[1] | remove_first: '_' | remove_first: '.md' %}
-        <li><a href={{next}} >{{nameio}}<br></a></li>
+        {% assign finalName = words[length] %}
+        {% assign nameArr =  finalName | split: lastName %}
+        {% assign displayName = nameArr[1] | remove_first: '_' | remove_first: '.md' %}
+        <li><a href={{next}} >{{displayName}}<br></a></li>
         {% endfor %}
     </ul>
     {% endif %}

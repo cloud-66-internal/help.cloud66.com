@@ -84,18 +84,6 @@ bodyclass: post
 </article>
 
 
-<div class="crumbs crumbs-bottom container">
-    <nav class="nav-footer">
-        {% include contents_link.html %}
-        {% if page.nav %}
-        {% include paging_link.html %}
-        {% endif %}
-    </nav>
-    {% for next in page.boop %}
-    <div style="float: right; margin-top: -17px">Read next: &nbsp&nbsp&nbsp<a href={{next}} >{{ next }}</a>></div>
-    {% endfor %}
-</div>
-
 <div style="
    z-index: 10;
    top: 100px;
@@ -107,13 +95,18 @@ bodyclass: post
    color: mediumseagreen;
    overflow: scroll;
    bottom:0px;
+   direction: rtl;
    top:0px;">
+    <div
+    style=" direction: ltr;
+    margin-left: 40px;
+    ">
     <h1> What's on This Page:</h1>
-    <ul>
+    <ul style="list-style-type: circle;">
         {% for next in page.menuheaders %}
         {% assign theIndex = forloop.index | prepend: '#' %}
         {% if next != 'Contents'%}
-        <a href={{theIndex}} ><li>{{next}}</li></a><br>
+        <a href={{theIndex}} ><li style="   margin:0 0 10px 0;">{{next}}</li></a>
         {% endif %}
         {% endfor %}
         <br><br>
@@ -121,17 +114,18 @@ bodyclass: post
     {% if jekyll.environment == "development" %}
     <h1>Github Links</h1>
     <ul>
-        {% assign words1 = page.url | split: '/' %}
-        {% assign length1 = words1 | size | minus: 1 %}
-        {% assign nameroo = words1[length1] %}
+        {% assign urlWords = page.url | split: '/' %}
+        {% assign wordsLength = urlWords | size | minus: 1 %}
+        {% assign lastName = urlWords[wordsLength] %}
         {% for next in page.gitlinks %}
         {% assign words = next | split: '/' %}
         {% assign length = words | size | minus: 1 %}
-        {% assign nameristo = words[length] %}
-        {% assign thingy =  nameristo | split: nameroo %}
-        {% assign nameio = thingy[1] | remove_first: '_' | remove_first: '.md' %}
-        <li><a href={{next}} >{{nameio}}<br></a></li>
+        {% assign finalName = words[length] %}
+        {% assign nameArr =  finalName | split: lastName %}
+        {% assign displayName = nameArr[1] | remove_first: '_' | remove_first: '.md' %}
+        <li><a href={{next}} >{{displayName}}<br></a></li>
         {% endfor %}
     </ul>
     {% endif %}
+    </div>
 </div>

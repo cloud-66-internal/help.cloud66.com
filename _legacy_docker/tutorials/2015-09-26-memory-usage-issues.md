@@ -9,8 +9,8 @@ legacy: true
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 {% assign product = "common" %}
 
 {% include _inlines/Tutorials/common/2015-09-26-memory-usage-issues/2015-09-26-memory-usage-issues_if-youre-experiencing-memor.md  product = product %}

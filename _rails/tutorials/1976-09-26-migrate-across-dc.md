@@ -9,8 +9,8 @@ legacy: false
 
 ---
 
-{% assign thingy = page.url | split: '/' %}
-{% assign product = thingy[1] %}
+{% assign urlArr = page.url | split: '/' %}
+{% assign product = urlArr[1] %}
 {% assign product = "common" %}
 
 {% include _inlines/Tutorials/common/1976-09-26-migrate-across-dc/1976-09-26-migrate-across-dc_do-you-want-to-move-your-stack.md  product = product %}
