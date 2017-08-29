@@ -146,7 +146,9 @@ bodyclass: post
     <ul style="buffer-top: 200px; top:100px">
         {% for next in page.menuheaders %}
         {% assign theIndex = forloop.index | prepend: '#' %}
-        <a href={{theIndex}} ><li>{{next}}</li></a><br>
+            {% if next != 'Contents'%}
+             <a href={{theIndex}} ><li>{{next}}</li></a><br>
+            {% endif %}
         {% endfor %}
     </ul>
 </div>
