@@ -37,6 +37,21 @@ bodyclass: post
     </div>
     <div class="content-pri">
         {{ content }}
+
+        <hr>
+{% if page.recommendedLinks.size>0 %}
+         <div>Cloud 66 recommends to read next:
+            <ul>
+          {% for i in (0..30) %}
+             {% if i == page.recommendedLinks.size %}
+                 {% break %}
+             {% else %}
+                <a href={{page.recommendedLinks[i]}}><li>{{ page.recommendedName[i] }}</li></a>
+             {% endif %}
+          {% endfor %}
+      </ul>
+        </div>
+{% endif %}
     </div>
 
     <aside class="content-sec  {% if page.nav_sticky %} sticky-nav {% endif %}">

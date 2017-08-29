@@ -8,6 +8,8 @@ lead: "Using PostgreSQL on Cloud 66 Rails stacks"
 legacy: false
 slug: postgresql
 permalink: /:collection/:categories/:slug/index.html
+recommendedName: [ "Backup Verifiers", "Backup", "Replication"  ]
+recommendedLinks: [ "backup-verifier.html", "backup.html", " replication.html" ]
 ---
 
 {% assign urlArr = page.url | split: '/' %}
@@ -21,9 +23,3 @@ permalink: /:collection/:categories/:slug/index.html
 <a name="6"></a>{% include _inlines/Databases/rails/postgres/env-vars.md  product = product %} 
 <a name="7"></a>{% include _inlines/Databases/rails/postgres/control-rails-db-migration.md  product = product %}
 <a name="8"></a>{% include _inlines/Databases/rails/postgres/customize.md  product = product %}
-
-### Recommended next:
-
-- [Backup Verifiers](backup-verifier.html)
-- [Backup](backup.html)
-- [Replication](replication.html)
