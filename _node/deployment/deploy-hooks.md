@@ -12,16 +12,15 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_what-are-deploy-hooks-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-points-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-fields-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_how-to-use-deploy-hooks-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-snippet-deploy-hook-v1.md  product = product %}
-<a name="7"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-command-deploy-hook-v1.md  product = product %}
-<a name="8"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_important-v1.md  product = product %}
-<a name="9"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-script-deploy-hook-only-for-rails-v1.md  product = product %}
-<a name="10"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-an-inline-script-deploy-hook-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_what-are-deploy-hooks-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-points-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-fields-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_how-to-use-deploy-hooks-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-snippet-deploy-hook-v1.md  product = page.collection %}
+<a name="7"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-command-deploy-hook-v1.md  product = page.collection %}
+<a name="8"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_important-v1.md  product = page.collection %}
+<a name="9"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-script-deploy-hook-only-for-rails-v1.md  product = page.collection %}
+<a name="10"></a>{% include _inlines/Deployment/common/deploy-hooks/deploy-hooks_use-an-inline-script-deploy-hook-v1.md  product = page.collection %}

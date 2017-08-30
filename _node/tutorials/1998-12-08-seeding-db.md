@@ -12,10 +12,9 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_ew-databases-commonly-require-seed-da-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_seed-script-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_deploy-hook-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_note-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_ew-databases-commonly-require-seed-da-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_seed-script-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_deploy-hook-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_note-v1.md  product = page.collection %}

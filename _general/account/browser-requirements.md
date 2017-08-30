@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "General" %}
 
-{% include _inlines/Account/General/browser-requirements/browser-requirements_browser-versions-are-frequently-update-v1.md  product = product %}
+{% include _inlines/Account/General/browser-requirements/browser-requirements_browser-versions-are-frequently-update-v1.md  product = page.collection %}

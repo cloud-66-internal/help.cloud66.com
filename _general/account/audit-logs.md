@@ -12,9 +12,8 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Account/General/audit-logs/audit-logs_an-audit-log-for-all-account-activities-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Account/General/audit-logs/audit-logs_search-audit-log-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Account/General/audit-logs/audit-logs_accessing-audit-logs-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Account/General/audit-logs/audit-logs_an-audit-log-for-all-account-activities-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Account/General/audit-logs/audit-logs_search-audit-log-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Account/General/audit-logs/audit-logs_accessing-audit-logs-v1.md  product = page.collection %}

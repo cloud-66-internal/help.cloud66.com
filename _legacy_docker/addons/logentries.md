@@ -12,12 +12,11 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/AddOns/common/logentries/logentries_---about-using-logentriesabout-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/AddOns/common/logentries/logentries_about-using-logentries-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/AddOns/common/logentries/logentries_add-logentries-to-your-stack-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/AddOns/common/logentries/logentries_note-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/AddOns/common/logentries/logentries_troubleshoot-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/AddOns/common/logentries/logentries_no-logs-or-logs-are-empty-in-logentries-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/AddOns/common/logentries/logentries_---about-using-logentriesabout-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/AddOns/common/logentries/logentries_about-using-logentries-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/AddOns/common/logentries/logentries_add-logentries-to-your-stack-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/AddOns/common/logentries/logentries_note-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/AddOns/common/logentries/logentries_troubleshoot-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/AddOns/common/logentries/logentries_no-logs-or-logs-are-empty-in-logentries-v1.md  product = page.collection %}

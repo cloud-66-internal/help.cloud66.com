@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "node" %}
 
-{% include _inlines/AddOns/common/add-in-implementation/add-in-implementation_add-ins-allow-you-to-add-various-inte-v1.md  product = product %}
+{% include _inlines/AddOns/common/add-in-implementation/add-in-implementation_add-ins-allow-you-to-add-various-inte-v1.md  product = page.collection %}

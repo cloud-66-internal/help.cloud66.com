@@ -12,8 +12,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/common/2003-09-26-sharing-db/2003-09-26-sharing-db_there-are-a-number-of-reasons-why-you-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Tutorials/common/2003-09-26-sharing-db/2003-09-26-sharing-db_important-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Tutorials/common/2003-09-26-sharing-db/2003-09-26-sharing-db_there-are-a-number-of-reasons-why-you-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Tutorials/common/2003-09-26-sharing-db/2003-09-26-sharing-db_important-v1.md  product = page.collection %}

@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-ssl-s-v1.md  product = product %}
+{% include _inlines/Tutorials/common/1900-10-10-nginx-ssl-ciphers/1900-10-10-nginx-ssl-ciphers_you-can-strengthen-nginx-ssl-s-v1.md  product = page.collection %}

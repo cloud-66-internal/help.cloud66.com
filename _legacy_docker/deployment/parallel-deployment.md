@@ -12,10 +12,9 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_what-is-parallel-deployment-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_note-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_configure-parallel-deployment-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_what-is-parallel-deployment-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_note-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Deployment/common/parallel-deployment/parallel-deployment_configure-parallel-deployment-v1.md  product = page.collection %}

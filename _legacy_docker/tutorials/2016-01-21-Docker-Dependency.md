@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2016-01-21-Docker-Dependency/2016-01-21-docker-dependency_if-you-have-a-docker-stack-but-v1.md  product = product %}
+{% include _inlines/Tutorials/common/2016-01-21-Docker-Dependency/2016-01-21-docker-dependency_if-you-have-a-docker-stack-but-v1.md  product = page.collection %}

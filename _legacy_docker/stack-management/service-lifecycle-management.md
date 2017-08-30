@@ -12,18 +12,17 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_orchestration-engine-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_deploying-your-stack-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_configuration-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_health-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-start-signal-v1.md  product = product %}
-<a name="7"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-stop-sequence-v1.md  product = product %}
-<a name="8"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_requires-v1.md  product = product %}
-<a name="9"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_restart-on-deploy-v1.md  product = product %}
-<a name="10"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_stop-grace-v1.md  product = product %}
-<a name="11"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-start-command-v1.md  product = product %}
-<a name="12"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-stop-command-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_orchestration-engine-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_deploying-your-stack-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_configuration-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_health-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-start-signal-v1.md  product = page.collection %}
+<a name="7"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-stop-sequence-v1.md  product = page.collection %}
+<a name="8"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_requires-v1.md  product = page.collection %}
+<a name="9"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_restart-on-deploy-v1.md  product = page.collection %}
+<a name="10"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_stop-grace-v1.md  product = page.collection %}
+<a name="11"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-start-command-v1.md  product = page.collection %}
+<a name="12"></a>{% include _inlines/StackManagement/common/service-lifecycle-management/service-lifecycle-management_pre-stop-command-v1.md  product = page.collection %}

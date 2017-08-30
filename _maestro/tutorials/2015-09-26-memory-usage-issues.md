@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2015-09-26-memory-usage-issues/2015-09-26-memory-usage-issues_if-youre-experiencing-memor-v1.md  product = product %}
+{% include _inlines/Tutorials/common/2015-09-26-memory-usage-issues/2015-09-26-memory-usage-issues_if-youre-experiencing-memor-v1.md  product = page.collection %}

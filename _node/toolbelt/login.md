@@ -12,8 +12,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Toolbelt/common/login/login_cloud-66-easy-login-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Toolbelt/common/login/login_access-control-for-toolbelt-login-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Toolbelt/common/login/login_cloud-66-easy-login-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Toolbelt/common/login/login_access-control-for-toolbelt-login-v1.md  product = page.collection %}

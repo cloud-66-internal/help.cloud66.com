@@ -12,18 +12,17 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_about-redeployment-hooks-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_where-to-find-your-redeployment-hook-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_for-docker-stacks-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_for-rails-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_github-integration-v1.md  product = product %}
-<a name="7"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_adding-redeployment-hooks-v1.md  product = product %}
-<a name="8"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_github-setup-v1.md  product = product %}
-<a name="9"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_bitbucket-setup-v1.md  product = product %}
-<a name="10"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_generic-setup-v1.md  product = product %}
-<a name="11"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_invoking-your-redeployment-hook-manually-v1.md  product = product %}
-<a name="12"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_note-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_about-redeployment-hooks-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_where-to-find-your-redeployment-hook-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_for-docker-stacks-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_for-rails-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_github-integration-v1.md  product = page.collection %}
+<a name="7"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_adding-redeployment-hooks-v1.md  product = page.collection %}
+<a name="8"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_github-setup-v1.md  product = page.collection %}
+<a name="9"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_bitbucket-setup-v1.md  product = page.collection %}
+<a name="10"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_generic-setup-v1.md  product = page.collection %}
+<a name="11"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_invoking-your-redeployment-hook-manually-v1.md  product = page.collection %}
+<a name="12"></a>{% include _inlines/Deployment/common/redeployment-hook/redeployment-hook_note-v1.md  product = page.collection %}

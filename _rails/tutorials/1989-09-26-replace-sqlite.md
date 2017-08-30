@@ -12,9 +12,8 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_instructions-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_mysql-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_postgresql-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_instructions-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_mysql-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_postgresql-v1.md  product = page.collection %}

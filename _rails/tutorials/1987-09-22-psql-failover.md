@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "Rails" %}
 
-{% include _inlines/Tutorials/Rails/1987-09-22-psql-failover/1987-09-22-psql-failover_when-you-use-database-replication-v1.md  product = product %}
+{% include _inlines/Tutorials/Rails/1987-09-22-psql-failover/1987-09-22-psql-failover_when-you-use-database-replication-v1.md  product = page.collection %}

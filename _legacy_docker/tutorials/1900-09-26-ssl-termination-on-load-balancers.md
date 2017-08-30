@@ -12,11 +12,10 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_cloud-66-now-s-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_contents-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_amazon-elastic-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_important-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_rackspace-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_cloud-66-now-s-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_contents-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_amazon-elastic-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_important-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Tutorials/common/1900-09-26-ssl-termination-on-load-balancers/1900-09-26-ssl-termination-on-load-balancers_rackspace-v1.md  product = page.collection %}

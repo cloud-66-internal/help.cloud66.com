@@ -12,9 +12,8 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_depending-on-the-scale-of-your-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_installing-postfix-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_configuring-rails-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_depending-on-the-scale-of-your-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_installing-postfix-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_configuring-rails-v1.md  product = page.collection %}

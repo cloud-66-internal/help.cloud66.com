@@ -12,15 +12,14 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_about-receiving-stack-notifications-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_viewing-your-stack-notifications-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_setting-up-your-notification-types-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_browser-notifications-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_emails-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_hipchat-v1.md  product = product %}
-<a name="7"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_ios-v1.md  product = product %}
-<a name="8"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_slack-v1.md  product = product %}
-<a name="9"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_webhooks-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_about-receiving-stack-notifications-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_viewing-your-stack-notifications-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_setting-up-your-notification-types-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_browser-notifications-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_emails-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_hipchat-v1.md  product = page.collection %}
+<a name="7"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_ios-v1.md  product = page.collection %}
+<a name="8"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_slack-v1.md  product = page.collection %}
+<a name="9"></a>{% include _inlines/StackManagement/common/stack-notifications/stack-notifications_webhooks-v1.md  product = page.collection %}

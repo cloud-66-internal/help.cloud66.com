@@ -12,8 +12,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/StackManagement/common/service-pause-resume/service-pause-resume_pause-and-resume-services-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/StackManagement/common/service-pause-resume/service-pause-resume_pause-and-resume-services-v1.md  product = page.collection %}

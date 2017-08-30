@@ -12,9 +12,8 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_about-easydeploy-repositories-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_using-easydeploy-repositories-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_about-easydeploy-repositories-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_using-easydeploy-repositories-v1.md  product = page.collection %}

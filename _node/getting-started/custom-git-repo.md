@@ -12,12 +12,11 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/GettingStarted/common/custom_git_repo/custom_git_repo_public-repositories-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/GettingStarted/common/custom_git_repo/custom_git_repo_notice-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/GettingStarted/common/custom_git_repo/custom_git_repo_private-repositories-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/GettingStarted/common/custom_git_repo/custom_git_repo_github-example-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/GettingStarted/common/custom_git_repo/custom_git_repo_bitbucket-example-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/GettingStarted/common/custom_git_repo/custom_git_repo_public-repositories-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/GettingStarted/common/custom_git_repo/custom_git_repo_notice-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/GettingStarted/common/custom_git_repo/custom_git_repo_private-repositories-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/GettingStarted/common/custom_git_repo/custom_git_repo_github-example-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/GettingStarted/common/custom_git_repo/custom_git_repo_bitbucket-example-v1.md  product = page.collection %}

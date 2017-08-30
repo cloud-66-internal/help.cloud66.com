@@ -12,20 +12,19 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_what-is-a-manifest-file-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_how-can-i-use-a-manifes-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_manifest-file-examples-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_example-1-specifying-a-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_is-my-yaml-valid-v1.md  product = product %}
-<a name="7"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_need-help-building-your-v1.md  product = product %}
-<a name="8"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_example-2-change-cors--v1.md  product = product %}
-<a name="9"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_what-is-cors-v1.md  product = product %}
-<a name="10"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_manifest-file-structure-v1.md  product = product %}
-<a name="11"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_first-level-environmen-v1.md  product = product %}
-<a name="12"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_second-level-applicati-v1.md  product = product %}
-<a name="13"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_third-level-1-config-v1.md  product = product %}
-<a name="14"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_third-level-2-server-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_what-is-a-manifest-file-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_how-can-i-use-a-manifes-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_manifest-file-examples-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_example-1-specifying-a-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_is-my-yaml-valid-v1.md  product = page.collection %}
+<a name="7"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_need-help-building-your-v1.md  product = page.collection %}
+<a name="8"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_example-2-change-cors--v1.md  product = page.collection %}
+<a name="9"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_what-is-cors-v1.md  product = page.collection %}
+<a name="10"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_manifest-file-structure-v1.md  product = page.collection %}
+<a name="11"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_first-level-environmen-v1.md  product = page.collection %}
+<a name="12"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_second-level-applicati-v1.md  product = page.collection %}
+<a name="13"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_third-level-1-config-v1.md  product = page.collection %}
+<a name="14"></a>{% include _inlines/Deployment/common/getting-started-with-manifest-files/getting-started-with-manifest-files_third-level-2-server-v1.md  product = page.collection %}

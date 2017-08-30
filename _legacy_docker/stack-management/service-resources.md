@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "legacy_docker" %}
 
-{% include _inlines/StackManagement/common/service-resources/service-resources_by-default-docker-services-will-use-as-m-v1.md  product = product %}
+{% include _inlines/StackManagement/common/service-resources/service-resources_by-default-docker-services-will-use-as-m-v1.md  product = page.collection %}

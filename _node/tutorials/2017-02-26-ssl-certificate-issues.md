@@ -12,11 +12,10 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/2039-02-26-ssl-certificate-issues_web-server-issues-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/2039-02-26-ssl-certificate-issues_passphrase-protected-keys-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/2039-02-26-ssl-certificate-issues_certificate-and-key-encod-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/2039-02-26-ssl-certificate-issues_matching-certificates-and-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/2039-02-26-ssl-certificate-issues_web-server-issues-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/2039-02-26-ssl-certificate-issues_passphrase-protected-keys-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/2039-02-26-ssl-certificate-issues_certificate-and-key-encod-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Tutorials/common/2039-02-26-ssl-certificate-issues/2039-02-26-ssl-certificate-issues_matching-certificates-and-v1.md  product = page.collection %}

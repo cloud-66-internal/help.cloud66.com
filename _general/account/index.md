@@ -7,8 +7,7 @@ lead: Everything you need to know about your account
 legacy: false
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 
 - [Account Management](account-management)
 - [Account Protection](account-protection)

@@ -12,15 +12,14 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Toolbelt/common/jobs/jobs_job-management-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Toolbelt/common/jobs/jobs_list-jobs-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Toolbelt/common/jobs/jobs_usage-1-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Toolbelt/common/jobs/jobs_parameters-1-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Toolbelt/common/jobs/jobs_example-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/Toolbelt/common/jobs/jobs_run-a-job-on-demand-v1.md  product = product %}
-<a name="7"></a>{% include _inlines/Toolbelt/common/jobs/jobs_usage-v1.md  product = product %}
-<a name="8"></a>{% include _inlines/Toolbelt/common/jobs/jobs_parameters-v1.md  product = product %}
-<a name="9"></a>{% include _inlines/Toolbelt/common/jobs/jobs_examples-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Toolbelt/common/jobs/jobs_job-management-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Toolbelt/common/jobs/jobs_list-jobs-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Toolbelt/common/jobs/jobs_usage-1-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Toolbelt/common/jobs/jobs_parameters-1-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Toolbelt/common/jobs/jobs_example-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/Toolbelt/common/jobs/jobs_run-a-job-on-demand-v1.md  product = page.collection %}
+<a name="7"></a>{% include _inlines/Toolbelt/common/jobs/jobs_usage-v1.md  product = page.collection %}
+<a name="8"></a>{% include _inlines/Toolbelt/common/jobs/jobs_parameters-v1.md  product = page.collection %}
+<a name="9"></a>{% include _inlines/Toolbelt/common/jobs/jobs_examples-v1.md  product = page.collection %}

@@ -12,7 +12,6 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/GettingStarted/common/stack-environments/stack-environments_stack-environments-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/GettingStarted/common/stack-environments/stack-environments_stack-environments-v1.md  product = page.collection %}

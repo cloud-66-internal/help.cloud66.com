@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "General" %}
 
-{% include _inlines/Account/General/security-wall-of-fame/security-wall-of-fame_keeping-your-servers-and-source-code--v1.md  product = product %}
+{% include _inlines/Account/General/security-wall-of-fame/security-wall-of-fame_keeping-your-servers-and-source-code--v1.md  product = page.collection %}

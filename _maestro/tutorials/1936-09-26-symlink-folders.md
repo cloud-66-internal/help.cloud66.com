@@ -12,9 +12,8 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/common/1936-09-26-symlink-folders/1936-09-26-symlink-folders_depending-on-your-application-y-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Tutorials/common/1936-09-26-symlink-folders/1936-09-26-symlink-folders_public-folder-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Tutorials/common/1936-09-26-symlink-folders/1936-09-26-symlink-folders_symbolic-link-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Tutorials/common/1936-09-26-symlink-folders/1936-09-26-symlink-folders_depending-on-your-application-y-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Tutorials/common/1936-09-26-symlink-folders/1936-09-26-symlink-folders_public-folder-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Tutorials/common/1936-09-26-symlink-folders/1936-09-26-symlink-folders_symbolic-link-v1.md  product = page.collection %}

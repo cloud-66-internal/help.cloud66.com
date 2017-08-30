@@ -12,13 +12,12 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_about-unicorn-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_deploy-with-unicorn-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_kill-the-web-server-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_start-the-web-server-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_stop-the-web-server-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_restart-the-web-server-zero-downtime-v1.md  product = product %}
-<a name="7"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_warning-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_about-unicorn-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_deploy-with-unicorn-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_kill-the-web-server-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_start-the-web-server-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_stop-the-web-server-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_restart-the-web-server-zero-downtime-v1.md  product = page.collection %}
+<a name="7"></a>{% include _inlines/Deployment/Rails/unicorn-rack-server/unicorn-rack-server_warning-v1.md  product = page.collection %}

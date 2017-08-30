@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "General" %}
 
-{% include _inlines/Partners/General/integration-with-travis-ci/integration-with-travis-ci_you-can-use-travis-ci-to-accompl-v1.md  product = product %}
+{% include _inlines/Partners/General/integration-with-travis-ci/integration-with-travis-ci_you-can-use-travis-ci-to-accompl-v1.md  product = page.collection %}

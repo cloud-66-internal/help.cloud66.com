@@ -12,9 +12,8 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/Rails/passenger-enterprise/passenger-enterprise_what-is-passenger-enterprise-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Deployment/Rails/passenger-enterprise/passenger-enterprise_deploy-with-passenger-enterprise-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/Rails/passenger-enterprise/passenger-enterprise_important-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Deployment/Rails/passenger-enterprise/passenger-enterprise_what-is-passenger-enterprise-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Deployment/Rails/passenger-enterprise/passenger-enterprise_deploy-with-passenger-enterprise-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Deployment/Rails/passenger-enterprise/passenger-enterprise_important-v1.md  product = page.collection %}

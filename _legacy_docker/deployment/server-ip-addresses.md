@@ -12,12 +12,11 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-agent-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_important-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_new-ip-addresses-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-hostnames-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_finding-your-cloud-66-hostname-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-agent-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_important-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_new-ip-addresses-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_cloud-66-hostnames-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/Deployment/common/server-ip-addresses/server-ip-addresses_finding-your-cloud-66-hostname-v1.md  product = page.collection %}

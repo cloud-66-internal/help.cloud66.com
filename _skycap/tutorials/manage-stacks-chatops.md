@@ -12,12 +12,11 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_cloud-66-chatops-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_quick-install-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_create-a-slack-bot-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_download-igor-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_deregister-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_for-any-informations-on-how-to-use-igor-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_cloud-66-chatops-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_quick-install-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_create-a-slack-bot-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_download-igor-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_deregister-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_for-any-informations-on-how-to-use-igor-v1.md  product = page.collection %}

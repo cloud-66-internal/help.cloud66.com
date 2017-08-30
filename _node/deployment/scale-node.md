@@ -12,7 +12,6 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Deployment/Node/scale-node/scale-node_scale-your-instances--v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Deployment/Node/scale-node/scale-node_scale-your-instances--v1.md  product = page.collection %}

@@ -12,9 +12,8 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_introduction-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_passenger-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_custom-rack-servers-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_introduction-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_passenger-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_custom-rack-servers-v1.md  product = page.collection %}

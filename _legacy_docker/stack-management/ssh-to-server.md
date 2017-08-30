@@ -12,12 +12,11 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_cloud-66-toolbelt-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_full-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_example-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_manual-shell-access-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_troubleshooting-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_cloud-66-toolbelt-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_full-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_example-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_manual-shell-access-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/StackManagement/common/ssh-to-server/ssh-to-server_troubleshooting-v1.md  product = page.collection %}

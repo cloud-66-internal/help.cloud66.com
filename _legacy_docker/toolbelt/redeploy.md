@@ -12,10 +12,9 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Toolbelt/common/redeploy/redeploy_redeploy-your-stack-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Toolbelt/common/redeploy/redeploy_usage-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Toolbelt/common/redeploy/redeploy_parameters-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Toolbelt/common/redeploy/redeploy_examples-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Toolbelt/common/redeploy/redeploy_redeploy-your-stack-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Toolbelt/common/redeploy/redeploy_usage-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Toolbelt/common/redeploy/redeploy_parameters-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Toolbelt/common/redeploy/redeploy_examples-v1.md  product = page.collection %}

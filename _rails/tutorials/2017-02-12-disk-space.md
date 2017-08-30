@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2043-02-12-disk-space/2043-02-12-disk-space_depending-on-your-server-and-disk-siz-v1.md  product = product %}
+{% include _inlines/Tutorials/common/2043-02-12-disk-space/2043-02-12-disk-space_depending-on-your-server-and-disk-siz-v1.md  product = page.collection %}

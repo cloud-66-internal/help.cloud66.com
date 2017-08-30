@@ -12,11 +12,10 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/cloud-azure/cloud-azure_about-using-microsoft-azure-cloud-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/common/cloud-azure/cloud-azure_generating-a-management-certificate-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Deployment/common/cloud-azure/cloud-azure_using-your-management-certificate-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Deployment/common/cloud-azure/cloud-azure_notice-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/Deployment/common/cloud-azure/cloud-azure_about-using-microsoft-azure-cloud-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Deployment/common/cloud-azure/cloud-azure_generating-a-management-certificate-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Deployment/common/cloud-azure/cloud-azure_using-your-management-certificate-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Deployment/common/cloud-azure/cloud-azure_notice-v1.md  product = page.collection %}

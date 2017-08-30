@@ -12,13 +12,12 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_certificate-signing-request-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_important-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_intermediate-certificates-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_multi-domain-certificates-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_separate-domains-with-different--v1.md  product = product %}
-<a name="7"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_main-domain-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_certificate-signing-request-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_important-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_intermediate-certificates-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_multi-domain-certificates-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_separate-domains-with-different--v1.md  product = page.collection %}
+<a name="7"></a>{% include _inlines/Tutorials/common/2004-09-26-ssl-certificate/2004-09-26-ssl-certificate_main-domain-v1.md  product = page.collection %}

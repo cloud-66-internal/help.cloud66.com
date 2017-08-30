@@ -12,9 +12,8 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Account/General/two-step-verification/two-step-verification_what-is-two-step-verification-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Account/General/two-step-verification/two-step-verification_enable-two-step-verification-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Account/General/two-step-verification/two-step-verification_add-a-recovery-phone-number-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Account/General/two-step-verification/two-step-verification_what-is-two-step-verification-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Account/General/two-step-verification/two-step-verification_enable-two-step-verification-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Account/General/two-step-verification/two-step-verification_add-a-recovery-phone-number-v1.md  product = page.collection %}

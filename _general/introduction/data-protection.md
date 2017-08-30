@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "General" %}
 
-{% include _inlines/unknown/General/data-protection/data-protection_amazon-web-services-aws-and-rackspa-v1.md  product = product %}
+{% include _inlines/unknown/General/data-protection/data-protection_amazon-web-services-aws-and-rackspa-v1.md  product = page.collection %}

@@ -11,12 +11,11 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_public-repositories-v1.md  product = product %}
-{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_notice-v1.md  product = product %}
-{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_private-repositories-v1.md  product = product %}
-{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_github-example-v1.md  product = product %}
-{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_bitbucket-example-v1.md  product = product %}
+{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_public-repositories-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_notice-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_private-repositories-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_github-example-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/1901-01-26-access-your-code/1901-01-26-access-your-code_bitbucket-example-v1.md  product = page.collection %}

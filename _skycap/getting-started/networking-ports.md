@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "common" %}
 
-{% include _inlines/GettingStarted/common/networking-ports/networking-ports_this-is-used-to-expose-your-service-to-the-v1.md  product = product %}
+{% include _inlines/GettingStarted/common/networking-ports/networking-ports_this-is-used-to-expose-your-service-to-the-v1.md  product = page.collection %}

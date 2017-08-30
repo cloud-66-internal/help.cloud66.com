@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "General" %}
 
-{% include _inlines/Account/General/support/support_the-support-packages-below-are-set-up-with-a-simple-v1.md  product = product %}
+{% include _inlines/Account/General/support/support_the-support-packages-below-are-set-up-with-a-simple-v1.md  product = page.collection %}

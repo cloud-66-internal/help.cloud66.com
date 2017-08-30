@@ -7,8 +7,7 @@ lead: Getting Started with Cloud 66 Skycap
 legacy: false
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 
 - [Advanced Deploy](advanced-deploy)
 - [custom git repo](custom-git-repo)

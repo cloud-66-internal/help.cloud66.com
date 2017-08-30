@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2009-09-26-application-not-serving/2009-09-26-application-not-serving_there-are-a-number-of-fa-v1.md  product = product %}
+{% include _inlines/Tutorials/common/2009-09-26-application-not-serving/2009-09-26-application-not-serving_there-are-a-number-of-fa-v1.md  product = page.collection %}

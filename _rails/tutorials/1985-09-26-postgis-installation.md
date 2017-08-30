@@ -12,14 +12,13 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_installing-with-cloud-66-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_manual-installation-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_prerequisites-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_build-geos-3.3.x-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_build-postgis-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_spatially-enabling-a-databa-v1.md  product = product %}
-<a name="7"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_postgis-extension-for-postg-v1.md  product = product %}
-<a name="8"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_enabler-scripts-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_installing-with-cloud-66-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_manual-installation-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_prerequisites-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_build-geos-3.3.x-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_build-postgis-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_spatially-enabling-a-databa-v1.md  product = page.collection %}
+<a name="7"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_postgis-extension-for-postg-v1.md  product = page.collection %}
+<a name="8"></a>{% include _inlines/Tutorials/Rails/1985-09-26-postgis-installation/1985-09-26-postgis-installation_enabler-scripts-v1.md  product = page.collection %}

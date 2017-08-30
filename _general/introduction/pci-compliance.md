@@ -12,12 +12,11 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_is-cloud-66-pci-compliant-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_will-my-website-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_how-does-cloud-66-access-my-servers-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_where-are-the-ssh-keys-stored-on-cloud-66-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_what-firewalls-are-installed-on-servers-depl-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_how-does-cloud-66-prevent-access-to-customer-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_is-cloud-66-pci-compliant-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_will-my-website-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_how-does-cloud-66-access-my-servers-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_where-are-the-ssh-keys-stored-on-cloud-66-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_what-firewalls-are-installed-on-servers-depl-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/unknown/General/pci-compliance/pci-compliance_how-does-cloud-66-prevent-access-to-customer-v1.md  product = page.collection %}

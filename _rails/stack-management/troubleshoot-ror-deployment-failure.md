@@ -12,7 +12,6 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/StackManagement/common/troubleshoot-ror-deployment-failure/troubleshoot-ror-deployment-failure_cap-deploy-failed-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/StackManagement/common/troubleshoot-ror-deployment-failure/troubleshoot-ror-deployment-failure_cap-deploy-failed-v1.md  product = page.collection %}

@@ -118,7 +118,7 @@ bodyclass: post
         {% for next in page.menuheaders %}
         {% assign theIndex = forloop.index | prepend: '#' %}
         {% if next != 'Contents'%}
-        <a href={{theIndex}} ><li>{{next}}</li></a><br>
+        <a href={{next}}><li>{{next}}</li></a><br>
         {% endif %}
         {% endfor %}
         <br><br>

@@ -12,10 +12,9 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Account/General/pricing/pricing_introduction-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Account/General/pricing/pricing_comparing-cloud-66-with-heroku-and-diy-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Account/General/pricing/pricing_-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Account/General/pricing/pricing_assumptions-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Account/General/pricing/pricing_introduction-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Account/General/pricing/pricing_comparing-cloud-66-with-heroku-and-diy-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Account/General/pricing/pricing_-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Account/General/pricing/pricing_assumptions-v1.md  product = page.collection %}

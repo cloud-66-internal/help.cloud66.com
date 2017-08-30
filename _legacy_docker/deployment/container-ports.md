@@ -12,13 +12,12 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/container-ports/container-ports_overview-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/common/container-ports/container-ports_ports-inside-and-outside-containers-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Deployment/common/container-ports/container-ports_mapping-ports-from-inside-to-the-outside-wo-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Deployment/common/container-ports/container-ports_note-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/Deployment/common/container-ports/container-ports_non-http-ports-tcp-and-udp-v1.md  product = product %}
-<a name="7"></a>{% include _inlines/Deployment/common/container-ports/container-ports_multiple-ports-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/Deployment/common/container-ports/container-ports_overview-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Deployment/common/container-ports/container-ports_ports-inside-and-outside-containers-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Deployment/common/container-ports/container-ports_mapping-ports-from-inside-to-the-outside-wo-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Deployment/common/container-ports/container-ports_note-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/Deployment/common/container-ports/container-ports_non-http-ports-tcp-and-udp-v1.md  product = page.collection %}
+<a name="7"></a>{% include _inlines/Deployment/common/container-ports/container-ports_multiple-ports-v1.md  product = page.collection %}

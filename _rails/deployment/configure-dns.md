@@ -12,13 +12,12 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_about-configuring-your-dns-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_configuring-your-dns-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_1.-use-a-modern-dns-provider-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_2.-use-an-a-record-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_3.-subdomain-redirection-v1.md  product = product %}
-<a name="7"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_important-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_about-configuring-your-dns-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_configuring-your-dns-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_1.-use-a-modern-dns-provider-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_2.-use-an-a-record-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_3.-subdomain-redirection-v1.md  product = page.collection %}
+<a name="7"></a>{% include _inlines/Deployment/common/configure-dns/configure-dns_important-v1.md  product = page.collection %}

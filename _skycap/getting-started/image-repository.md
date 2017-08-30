@@ -12,9 +12,8 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/GettingStarted/common/image_repository/image_repository_provide-a-docker-image-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/GettingStarted/common/image_repository/image_repository_how-to-add-docker-image-repository-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/GettingStarted/common/image_repository/image_repository_provide-a-docker-image-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/GettingStarted/common/image_repository/image_repository_how-to-add-docker-image-repository-v1.md  product = page.collection %}

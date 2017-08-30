@@ -12,14 +12,13 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_about-registered-servers-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_register-a-server-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_website-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_note-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_cloud-66-toolbelt-v1.md  product = product %}
-<a name="7"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_requirements-v1.md  product = product %}
-<a name="8"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_some-pointers-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_about-registered-servers-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_register-a-server-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_website-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_note-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_cloud-66-toolbelt-v1.md  product = page.collection %}
+<a name="7"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_requirements-v1.md  product = page.collection %}
+<a name="8"></a>{% include _inlines/Deployment/common/registered-servers/registered-servers_some-pointers-v1.md  product = page.collection %}

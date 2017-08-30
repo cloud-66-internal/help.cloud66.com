@@ -11,19 +11,18 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_background-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-1-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note1-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error--v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_1.-your-digi-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_2.-digitaloc-v1.md  product = product %}
-<a name="7"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_3.-digitaloc-v1.md  product = product %}
-<a name="8"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note2-v1.md  product = product %}
-<a name="9"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_timeout-erro-v1.md  product = product %}
-<a name="10"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note-v1.md  product = product %}
-<a name="11"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_haproxy-load-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_background-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error-1-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note1-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_http-error--v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_1.-your-digi-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_2.-digitaloc-v1.md  product = page.collection %}
+<a name="7"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_3.-digitaloc-v1.md  product = page.collection %}
+<a name="8"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note2-v1.md  product = page.collection %}
+<a name="9"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_timeout-erro-v1.md  product = page.collection %}
+<a name="10"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_note-v1.md  product = page.collection %}
+<a name="11"></a>{% include _inlines/Tutorials/common/2012-01-06-digitalocean-server-creation-errors/2012-01-06-digitalocean-server-creation-errors_haproxy-load-v1.md  product = page.collection %}
 
 {{product}}

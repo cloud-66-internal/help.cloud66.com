@@ -7,8 +7,7 @@ lead: Using Skycap with Cloud66
 legacy: false
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 
 - [Buildgrid](buildgrid)
 - [Deployment](deployment)

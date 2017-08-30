@@ -12,8 +12,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/unknown/General/cloud66-status/cloud66-status_status-and-uptime-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/unknown/General/cloud66-status/cloud66-status_latest-updates-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/unknown/General/cloud66-status/cloud66-status_status-and-uptime-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/unknown/General/cloud66-status/cloud66-status_latest-updates-v1.md  product = page.collection %}

@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2014-09-26-local-cached-copy-error/2014-09-26-local-cached-copy-error_when-you-deploy-to-your--v1.md  product = product %}
+{% include _inlines/Tutorials/common/2014-09-26-local-cached-copy-error/2014-09-26-local-cached-copy-error_when-you-deploy-to-your--v1.md  product = page.collection %}

@@ -12,10 +12,9 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_introduction-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_scheduled-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_deployment-hooks-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_manually-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_introduction-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_scheduled-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_deployment-hooks-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Tutorials/Rails/1993-09-26-running-rake-tasks/1993-09-26-running-rake-tasks_manually-v1.md  product = page.collection %}

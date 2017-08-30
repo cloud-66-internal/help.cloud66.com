@@ -12,12 +12,11 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/StackManagement/common/ssh/ssh_how-toolbelt-ssh-works-v1.md  product = product %}
-<a name="2"></a>{% include _inlines/StackManagement/common/ssh/ssh_versbose-mode-ssh-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/StackManagement/common/ssh/ssh_cloud-providers-firewall-api-has-delay-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/StackManagement/common/ssh/ssh_detected-ip-is-different-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/StackManagement/common/ssh/ssh_prompted-for-password-v1.md  product = product %}
-<a name="6"></a>{% include _inlines/StackManagement/common/ssh/ssh_note-v1.md  product = product %}
+
+<a name="1"></a>{% include _inlines/StackManagement/common/ssh/ssh_how-toolbelt-ssh-works-v1.md  product = page.collection %}
+<a name="2"></a>{% include _inlines/StackManagement/common/ssh/ssh_versbose-mode-ssh-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/StackManagement/common/ssh/ssh_cloud-providers-firewall-api-has-delay-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/StackManagement/common/ssh/ssh_detected-ip-is-different-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/StackManagement/common/ssh/ssh_prompted-for-password-v1.md  product = page.collection %}
+<a name="6"></a>{% include _inlines/StackManagement/common/ssh/ssh_note-v1.md  product = page.collection %}

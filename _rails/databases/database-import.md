@@ -12,11 +12,10 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Databases/common/database-import/database-import_about-one-time-database-imports-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/Databases/common/database-import/database-import_using-one-time-database-imports-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/Databases/common/database-import/database-import_note-v1.md  product = product %}
-<a name="5"></a>{% include _inlines/Databases/common/database-import/database-import_troubleshooting-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/Databases/common/database-import/database-import_about-one-time-database-imports-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/Databases/common/database-import/database-import_using-one-time-database-imports-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/Databases/common/database-import/database-import_note-v1.md  product = page.collection %}
+<a name="5"></a>{% include _inlines/Databases/common/database-import/database-import_troubleshooting-v1.md  product = page.collection %}

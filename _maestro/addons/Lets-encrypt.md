@@ -12,10 +12,9 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_how-it-is-installed-v1.md  product = product %}
-<a name="3"></a>{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_note-v1.md  product = product %}
-<a name="4"></a>{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_troubleshoot-v1.md  product = product %}
+
+<a name="2"></a>{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_how-it-is-installed-v1.md  product = page.collection %}
+<a name="3"></a>{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_note-v1.md  product = page.collection %}
+<a name="4"></a>{% include _inlines/AddOns/common/Lets-encrypt/lets-encrypt_troubleshoot-v1.md  product = page.collection %}

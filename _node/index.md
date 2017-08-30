@@ -7,8 +7,7 @@ lead: Using Node with Cloud66
 legacy: false
 ---
 
-{% assign urlArr = page.url | split: '/' %}
-{% assign product = urlArr[1] %}
+
 
  - [Add-Ons](addons)
  - [Databases](databases)
