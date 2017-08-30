@@ -15,8 +15,8 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/cloud-linode/cloud-linode_about-using-linode-cloud-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/common/cloud-linode/cloud-linode_generate-a-linode-api-key-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/common/cloud-linode/cloud-linode_add-linode-key-to-a-stack-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Deployment/common/cloud-linode/cloud-linode_notice-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Deployment/common/cloud-linode/cloud-linode_external-links-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-linode/cloud-linode_about-using-linode-cloud-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-linode/cloud-linode_generate-a-linode-api-key-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-linode/cloud-linode_add-linode-key-to-a-stack-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-linode/cloud-linode_notice-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-linode/cloud-linode_external-links-v1.md  product = page.collection %}

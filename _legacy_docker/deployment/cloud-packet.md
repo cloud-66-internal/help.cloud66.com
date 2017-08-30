@@ -15,6 +15,6 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/cloud-packet/cloud-packet_about-using-packet-cloud-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/common/cloud-packet/cloud-packet_adding-your-packet-credentials-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/common/cloud-packet/cloud-packet_notice-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-packet/cloud-packet_about-using-packet-cloud-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-packet/cloud-packet_adding-your-packet-credentials-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-packet/cloud-packet_notice-v1.md  product = page.collection %}

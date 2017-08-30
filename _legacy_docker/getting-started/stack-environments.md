@@ -14,4 +14,4 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/GettingStarted/common/stack-environments/stack-environments_stack-environments-v1.md  product = page.collection %}
+{% include _inlines/GettingStarted/common/stack-environments/stack-environments_stack-environments-v1.md  product = page.collection %}

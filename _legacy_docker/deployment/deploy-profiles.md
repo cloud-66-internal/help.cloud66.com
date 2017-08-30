@@ -15,8 +15,8 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_what-are-deployment-profiles-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_option-for-deployments-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_build--v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_deployment-method-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_upgrades-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_what-are-deployment-profiles-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_option-for-deployments-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_build--v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_deployment-method-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deploy-profiles/deploy-profiles_upgrades-v1.md  product = page.collection %}

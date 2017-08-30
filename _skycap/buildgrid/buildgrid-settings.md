@@ -14,6 +14,6 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_buildgrid-settings-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_account-settings--v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_user-settings-v1.md  product = page.collection %}
+{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_buildgrid-settings-v1.md  product = page.collection %}
+{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_account-settings--v1.md  product = page.collection %}
+{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_user-settings-v1.md  product = page.collection %}

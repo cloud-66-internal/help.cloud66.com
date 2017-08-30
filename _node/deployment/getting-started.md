@@ -14,12 +14,12 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_----what-youll-needneeded-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_what-youll-need-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_step-1.-build-your-stack-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_step-2.-access-your-git-repository-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_step-3-define-your-application-properties-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_step-4-review-your-app-configuration-v1.md  product = page.collection %}
-<a name="7"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_step-5-define-deployment-properties-v1.md  product = page.collection %}
-<a name="8"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_step-6-review-the-deployment-logs-v1.md  product = page.collection %}
-<a name="9"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_whats-next-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Node/getting-started/getting-started_----what-youll-needneeded-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Node/getting-started/getting-started_what-youll-need-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Node/getting-started/getting-started_step-1.-build-your-stack-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Node/getting-started/getting-started_step-2.-access-your-git-repository-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Node/getting-started/getting-started_step-3-define-your-application-properties-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Node/getting-started/getting-started_step-4-review-your-app-configuration-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Node/getting-started/getting-started_step-5-define-deployment-properties-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Node/getting-started/getting-started_step-6-review-the-deployment-logs-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Node/getting-started/getting-started_whats-next-v1.md  product = page.collection %}

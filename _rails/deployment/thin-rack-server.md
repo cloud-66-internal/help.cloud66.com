@@ -14,9 +14,9 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_about-running-apps-with-thin-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_start-the-web-server-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_stop-the-web-server-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_restart-the-web-server-hot-restart-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_deploy-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_important-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_about-running-apps-with-thin-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_start-the-web-server-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_stop-the-web-server-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_restart-the-web-server-hot-restart-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_deploy-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_important-v1.md  product = page.collection %}

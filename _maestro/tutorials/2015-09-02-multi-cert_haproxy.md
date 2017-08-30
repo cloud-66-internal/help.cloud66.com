@@ -14,10 +14,10 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_this-article-is-for-adding-mu-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_1.-concatanate-each-certifica-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_2.-upload-them-to--v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_3.-login-to-your-haproxy-serv-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_4.-copy-the-files-to-certific-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_5.-change-the-settings-in-you-v1.md  product = page.collection %}
-<a name="7"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_note-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_this-article-is-for-adding-mu-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_1.-concatanate-each-certifica-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_2.-upload-them-to--v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_3.-login-to-your-haproxy-serv-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_4.-copy-the-files-to-certific-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_5.-change-the-settings-in-you-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_note-v1.md  product = page.collection %}

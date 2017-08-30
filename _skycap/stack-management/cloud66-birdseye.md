@@ -14,12 +14,12 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_what-is-cloud-66-birdseye-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_where-does-the-data-for-cloud-66-birdseye--v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_who-can-use-cloud-66-birdseye-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_is-there-an-api-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_get-the-list-of-all-incidents-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_filtering-the-list-v1.md  product = page.collection %}
-<a name="7"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_get-a-single-incident-v1.md  product = page.collection %}
-<a name="8"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_filtering-by-status-v1.md  product = page.collection %}
-<a name="9"></a>{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_can-i-report-incidents-v1.md  product = page.collection %}
+{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_what-is-cloud-66-birdseye-v1.md  product = page.collection %}
+{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_where-does-the-data-for-cloud-66-birdseye--v1.md  product = page.collection %}
+{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_who-can-use-cloud-66-birdseye-v1.md  product = page.collection %}
+{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_is-there-an-api-v1.md  product = page.collection %}
+{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_get-the-list-of-all-incidents-v1.md  product = page.collection %}
+{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_filtering-the-list-v1.md  product = page.collection %}
+{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_get-a-single-incident-v1.md  product = page.collection %}
+{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_filtering-by-status-v1.md  product = page.collection %}
+{% include _inlines/unknown/General/cloud66-birdseye/cloud66-birdseye_can-i-report-incidents-v1.md  product = page.collection %}

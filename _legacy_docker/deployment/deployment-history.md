@@ -14,6 +14,6 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Deployment/common/deployment-history/deployment-history_what-is-deployment-history-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Deployment/common/deployment-history/deployment-history_deployment-status-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/common/deployment-history/deployment-history_usage-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deployment-history/deployment-history_what-is-deployment-history-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deployment-history/deployment-history_deployment-status-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deployment-history/deployment-history_usage-v1.md  product = page.collection %}

@@ -15,11 +15,11 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_what-is-service-configuration-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_how-do-i-specify-service-confi-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_service-configuration-examples-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_example-1-single-service-with-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_example-2-multiple-services-a-v1.md  product = page.collection %}
-<a name="7"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_service-configurations-v1.md  product = page.collection %}
-<a name="8"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_database-configurations-v1.md  product = page.collection %}
-<a name="9"></a>{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_environment-variables-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_what-is-service-configuration-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_how-do-i-specify-service-confi-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_service-configuration-examples-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_example-1-single-service-with-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_example-2-multiple-services-a-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_service-configurations-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_database-configurations-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/docker-service-configuration/docker-service-configuration_environment-variables-v1.md  product = page.collection %}

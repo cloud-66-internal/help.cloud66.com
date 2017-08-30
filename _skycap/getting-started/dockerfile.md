@@ -15,5 +15,5 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/GettingStarted/common/dockerfile/dockerfile_what-is-dockerfile-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/GettingStarted/common/dockerfile/dockerfile_how-cloud-66-uses-the-dockerfile-v1.md  product = page.collection %}
+{% include _inlines/GettingStarted/common/dockerfile/dockerfile_what-is-dockerfile-v1.md  product = page.collection %}
+{% include _inlines/GettingStarted/common/dockerfile/dockerfile_how-cloud-66-uses-the-dockerfile-v1.md  product = page.collection %}

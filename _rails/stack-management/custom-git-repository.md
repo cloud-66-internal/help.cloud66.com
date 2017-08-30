@@ -15,11 +15,11 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_what-is-customconfig-git-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_getting-started-with-customconfig-git-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_uploading-your-ssh-public-key-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_making-changes-to-customconfig-files-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_customconfig-git-workflow-v1.md  product = page.collection %}
-<a name="7"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-in-customconfig-ui-v1.md  product = page.collection %}
-<a name="8"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-through-customconfig-git-v1.md  product = page.collection %}
-<a name="9"></a>{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_automatic-updates-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_what-is-customconfig-git-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_getting-started-with-customconfig-git-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_uploading-your-ssh-public-key-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_making-changes-to-customconfig-files-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_customconfig-git-workflow-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-in-customconfig-ui-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_changes-made-through-customconfig-git-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/custom-git-repository/custom-git-repository_automatic-updates-v1.md  product = page.collection %}

@@ -14,10 +14,10 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_introduction-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_implementation-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_1.-rails95root-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_2.-rails95root-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_3.-rails95root-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_4.-rails95root-v1.md  product = page.collection %}
-<a name="7"></a>{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_troubleshooting-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_introduction-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_implementation-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_1.-rails95root-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_2.-rails95root-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_3.-rails95root-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_4.-rails95root-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_troubleshooting-v1.md  product = page.collection %}

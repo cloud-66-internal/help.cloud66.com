@@ -14,9 +14,9 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_about-running-apps-with-puma-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_start-the-web-server-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_stop-the-web-server-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_restart-the-web-server-hot-restart-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_deploy-with-puma-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_warning-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_about-running-apps-with-puma-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_start-the-web-server-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_stop-the-web-server-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_restart-the-web-server-hot-restart-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_deploy-with-puma-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/puma-rack-server/puma-rack-server_warning-v1.md  product = page.collection %}

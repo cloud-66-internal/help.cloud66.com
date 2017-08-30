@@ -15,8 +15,8 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/cloud-deployment/cloud-deployment_about-deploying-to-the-cloud-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/common/cloud-deployment/cloud-deployment_cloud-providers-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/common/cloud-deployment/cloud-deployment_notice-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Deployment/common/cloud-deployment/cloud-deployment_deploy-to-your-cloud-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Deployment/common/cloud-deployment/cloud-deployment_edit-or-delete-cloud-keys-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-deployment/cloud-deployment_about-deploying-to-the-cloud-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-deployment/cloud-deployment_cloud-providers-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-deployment/cloud-deployment_notice-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-deployment/cloud-deployment_deploy-to-your-cloud-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-deployment/cloud-deployment_edit-or-delete-cloud-keys-v1.md  product = page.collection %}

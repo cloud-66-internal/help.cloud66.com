@@ -14,8 +14,8 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_weave-scopehttps-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-1-checkout-your-customco-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-2-add-the-weavescope-sni-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-3-commit-and-redeploy-yo-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-4-open-port-4040-to-acce-v1.md  product = page.collection %}
+{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_weave-scopehttps-v1.md  product = page.collection %}
+{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-1-checkout-your-customco-v1.md  product = page.collection %}
+{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-2-add-the-weavescope-sni-v1.md  product = page.collection %}
+{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-3-commit-and-redeploy-yo-v1.md  product = page.collection %}
+{% include _inlines/Partners/General/integration-with-weave-scope/integration-with-weave-scope_step-4-open-port-4040-to-acce-v1.md  product = page.collection %}

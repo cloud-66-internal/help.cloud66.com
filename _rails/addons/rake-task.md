@@ -14,5 +14,5 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/AddOns/common/rake-task/rake-task_add-a-rake-task-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/AddOns/common/rake-task/rake-task_note-v1.md  product = page.collection %}
+{% include _inlines/AddOns/common/rake-task/rake-task_add-a-rake-task-v1.md  product = page.collection %}
+{% include _inlines/AddOns/common/rake-task/rake-task_note-v1.md  product = page.collection %}

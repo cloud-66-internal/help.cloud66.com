@@ -14,13 +14,13 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_enable-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_important-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_application.rb-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_manifest.yml-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_asset-pipeline-compilation-requirements-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_compile-only-modified-assets-v1.md  product = page.collection %}
-<a name="7"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_about-speeding-up-rails-deployments-v1.md  product = page.collection %}
-<a name="8"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_below-rails-3.2-v1.md  product = page.collection %}
-<a name="9"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_rails-3.2-and-above-v1.md  product = page.collection %}
-<a name="10"></a>{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_rails-4-and-above-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_enable-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_important-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_application.rb-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_manifest.yml-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_asset-pipeline-compilation-requirements-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_compile-only-modified-assets-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_about-speeding-up-rails-deployments-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_below-rails-3.2-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_rails-3.2-and-above-v1.md  product = page.collection %}
+{% include _inlines/Deployment/Rails/asset-pipeline/asset-pipeline_rails-4-and-above-v1.md  product = page.collection %}

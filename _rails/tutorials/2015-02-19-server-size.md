@@ -14,12 +14,12 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_when-deploying-your-stack-you-are-a-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_under-powered-server-sizes-not-reco-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_amazon-web-services-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_cloud-a-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_digitalocean-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_google-compute-engine-v1.md  product = page.collection %}
-<a name="7"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_microsoft-azure-v1.md  product = page.collection %}
-<a name="8"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_rackspace-v1.md  product = page.collection %}
-<a name="9"></a>{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_suggest-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_when-deploying-your-stack-you-are-a-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_under-powered-server-sizes-not-reco-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_amazon-web-services-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_cloud-a-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_digitalocean-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_google-compute-engine-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_microsoft-azure-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_rackspace-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2015-02-19-server-size/2015-02-19-server-size_suggest-v1.md  product = page.collection %}

@@ -14,4 +14,4 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Deployment/Node/supported-frameworks/supported-frameworks_which-framework-do-we-support--v1.md  product = page.collection %}
+{% include _inlines/Deployment/Node/supported-frameworks/supported-frameworks_which-framework-do-we-support--v1.md  product = page.collection %}

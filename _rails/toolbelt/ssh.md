@@ -14,7 +14,7 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Toolbelt/common/ssh/ssh_sshing-to-your-server-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Toolbelt/common/ssh/ssh_usage-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Toolbelt/common/ssh/ssh_parameters-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Toolbelt/common/ssh/ssh_example-v1.md  product = page.collection %}
+{% include _inlines/Toolbelt/common/ssh/ssh_sshing-to-your-server-v1.md  product = page.collection %}
+{% include _inlines/Toolbelt/common/ssh/ssh_usage-v1.md  product = page.collection %}
+{% include _inlines/Toolbelt/common/ssh/ssh_parameters-v1.md  product = page.collection %}
+{% include _inlines/Toolbelt/common/ssh/ssh_example-v1.md  product = page.collection %}

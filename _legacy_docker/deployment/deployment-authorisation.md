@@ -15,6 +15,6 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/deployment-authorisation/deployment-authorisation_about-deployment-authorisation-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/common/deployment-authorisation/deployment-authorisation_important-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/common/deployment-authorisation/deployment-authorisation_cloud-lockdown-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deployment-authorisation/deployment-authorisation_about-deployment-authorisation-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deployment-authorisation/deployment-authorisation_important-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deployment-authorisation/deployment-authorisation_cloud-lockdown-v1.md  product = page.collection %}

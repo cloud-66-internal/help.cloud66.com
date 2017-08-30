@@ -14,7 +14,7 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Tutorials/common/1930-09-26-haproxy-for-websocket/1930-09-26-haproxy-for-websocket_usage-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Tutorials/common/1930-09-26-haproxy-for-websocket/1930-09-26-haproxy-for-websocket_how-it-works-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Tutorials/common/1930-09-26-haproxy-for-websocket/1930-09-26-haproxy-for-websocket_important-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Tutorials/common/1930-09-26-haproxy-for-websocket/1930-09-26-haproxy-for-websocket_test-your-websocket-server-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/1930-09-26-haproxy-for-websocket/1930-09-26-haproxy-for-websocket_usage-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/1930-09-26-haproxy-for-websocket/1930-09-26-haproxy-for-websocket_how-it-works-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/1930-09-26-haproxy-for-websocket/1930-09-26-haproxy-for-websocket_important-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/1930-09-26-haproxy-for-websocket/1930-09-26-haproxy-for-websocket_test-your-websocket-server-v1.md  product = page.collection %}

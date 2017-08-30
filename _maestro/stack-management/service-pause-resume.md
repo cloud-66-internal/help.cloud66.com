@@ -15,4 +15,4 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/StackManagement/common/service-pause-resume/service-pause-resume_pause-and-resume-services-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/service-pause-resume/service-pause-resume_pause-and-resume-services-v1.md  product = page.collection %}

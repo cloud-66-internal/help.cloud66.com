@@ -14,5 +14,5 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Tutorials/common/1969-09-26-memcached/1969-09-26-memcached_memcachedhttp-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Tutorials/common/1969-09-26-memcached/1969-09-26-memcached_notice-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/1969-09-26-memcached/1969-09-26-memcached_memcachedhttp-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/1969-09-26-memcached/1969-09-26-memcached_notice-v1.md  product = page.collection %}

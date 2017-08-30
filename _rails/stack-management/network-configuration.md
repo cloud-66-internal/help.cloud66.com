@@ -15,15 +15,15 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_about-network-settings-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_what-is-activeprotecttrade-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_firewall-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_add-a-firewall-rule-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_microsoft-azure-notice-v1.md  product = page.collection %}
-<a name="7"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_configure-network-traffic-v1.md  product = page.collection %}
-<a name="8"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_allowing-traffic-v1.md  product = page.collection %}
-<a name="9"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_denying-traffic-v1.md  product = page.collection %}
-<a name="10"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_using-network-redirects-v1.md  product = page.collection %}
-<a name="11"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_maintenance-mode-v1.md  product = page.collection %}
-<a name="12"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_redirect-http-to-https-v1.md  product = page.collection %}
-<a name="13"></a>{% include _inlines/StackManagement/common/network-configuration/network-configuration_www-or-non-www-in-your-url-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/network-configuration/network-configuration_about-network-settings-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/network-configuration/network-configuration_what-is-activeprotecttrade-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/network-configuration/network-configuration_firewall-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/network-configuration/network-configuration_add-a-firewall-rule-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/network-configuration/network-configuration_microsoft-azure-notice-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/network-configuration/network-configuration_configure-network-traffic-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/network-configuration/network-configuration_allowing-traffic-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/network-configuration/network-configuration_denying-traffic-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/network-configuration/network-configuration_using-network-redirects-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/network-configuration/network-configuration_maintenance-mode-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/network-configuration/network-configuration_redirect-http-to-https-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/network-configuration/network-configuration_www-or-non-www-in-your-url-v1.md  product = page.collection %}

@@ -14,6 +14,6 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/AddOns/common/elasticsearch/elasticsearch_what-is-elasticsearch-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/AddOns/common/elasticsearch/elasticsearch_add-elasticearch-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/AddOns/common/elasticsearch/elasticsearch_note-v1.md  product = page.collection %}
+{% include _inlines/AddOns/common/elasticsearch/elasticsearch_what-is-elasticsearch-v1.md  product = page.collection %}
+{% include _inlines/AddOns/common/elasticsearch/elasticsearch_add-elasticearch-v1.md  product = page.collection %}
+{% include _inlines/AddOns/common/elasticsearch/elasticsearch_note-v1.md  product = page.collection %}

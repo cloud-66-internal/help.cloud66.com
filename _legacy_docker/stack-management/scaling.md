@@ -15,11 +15,11 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/StackManagement/common/scaling/scaling_about-scaling-servers-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/StackManagement/common/scaling/scaling_horizontal-scaling-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/StackManagement/common/scaling/scaling_web-servers-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/StackManagement/common/scaling/scaling_process-servers-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/StackManagement/common/scaling/scaling_database-servers-v1.md  product = page.collection %}
-<a name="7"></a>{% include _inlines/StackManagement/common/scaling/scaling_docker-services-v1.md  product = page.collection %}
-<a name="8"></a>{% include _inlines/StackManagement/common/scaling/scaling_vertical-scaling-v1.md  product = page.collection %}
-<a name="9"></a>{% include _inlines/StackManagement/common/scaling/scaling_note-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/scaling/scaling_about-scaling-servers-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/scaling/scaling_horizontal-scaling-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/scaling/scaling_web-servers-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/scaling/scaling_process-servers-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/scaling/scaling_database-servers-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/scaling/scaling_docker-services-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/scaling/scaling_vertical-scaling-v1.md  product = page.collection %}
+{% include _inlines/StackManagement/common/scaling/scaling_note-v1.md  product = page.collection %}

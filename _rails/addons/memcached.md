@@ -14,8 +14,8 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/AddOns/common/memcached/memcached_what-is-memcached-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/AddOns/common/memcached/memcached_add-memcached-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/AddOns/common/memcached/memcached_customize-memcached-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/AddOns/common/memcached/memcached_note-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/AddOns/common/memcached/memcached_check-memcached-v1.md  product = page.collection %}
+{% include _inlines/AddOns/common/memcached/memcached_what-is-memcached-v1.md  product = page.collection %}
+{% include _inlines/AddOns/common/memcached/memcached_add-memcached-v1.md  product = page.collection %}
+{% include _inlines/AddOns/common/memcached/memcached_customize-memcached-v1.md  product = page.collection %}
+{% include _inlines/AddOns/common/memcached/memcached_note-v1.md  product = page.collection %}
+{% include _inlines/AddOns/common/memcached/memcached_check-memcached-v1.md  product = page.collection %}

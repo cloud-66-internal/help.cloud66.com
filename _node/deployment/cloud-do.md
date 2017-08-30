@@ -15,7 +15,7 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/cloud-do/cloud-do_about-using-digitalocean-cloud-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/common/cloud-do/cloud-do_authorise-cloud-66-to-your-digitalocean-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/common/cloud-do/cloud-do_notice-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Deployment/common/cloud-do/cloud-do_external-links-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-do/cloud-do_about-using-digitalocean-cloud-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-do/cloud-do_authorise-cloud-66-to-your-digitalocean-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-do/cloud-do_notice-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-do/cloud-do_external-links-v1.md  product = page.collection %}

@@ -14,7 +14,7 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_redirect-from-http-to-https-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_redirect-between-domains-with-htt-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_http-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_https-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_redirect-from-http-to-https-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_redirect-between-domains-with-htt-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_http-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/2012-01-09-nginx-redirect/2012-01-09-nginx-redirect_https-v1.md  product = page.collection %}

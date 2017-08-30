@@ -14,6 +14,6 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Tutorials/common/1980-09-26-optimizing-performance/1980-09-26-optimizing-performance_optimizing-for-server-loa-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Tutorials/common/1980-09-26-optimizing-performance/1980-09-26-optimizing-performance_load-testing-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Tutorials/common/1980-09-26-optimizing-performance/1980-09-26-optimizing-performance_preparing-for-server-load-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/1980-09-26-optimizing-performance/1980-09-26-optimizing-performance_optimizing-for-server-loa-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/1980-09-26-optimizing-performance/1980-09-26-optimizing-performance_load-testing-v1.md  product = page.collection %}
+{% include _inlines/Tutorials/common/1980-09-26-optimizing-performance/1980-09-26-optimizing-performance_preparing-for-server-load-v1.md  product = page.collection %}

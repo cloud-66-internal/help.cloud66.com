@@ -15,8 +15,8 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/cloud-gce/cloud-gce_about-using-google-compute-engine-cloud-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/common/cloud-gce/cloud-gce_generate-gce-api-keys-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/common/cloud-gce/cloud-gce_add-gce-keys-to-a-stack-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Deployment/common/cloud-gce/cloud-gce_notice-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Deployment/common/cloud-gce/cloud-gce_external-links-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-gce/cloud-gce_about-using-google-compute-engine-cloud-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-gce/cloud-gce_generate-gce-api-keys-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-gce/cloud-gce_add-gce-keys-to-a-stack-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-gce/cloud-gce_notice-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/cloud-gce/cloud-gce_external-links-v1.md  product = page.collection %}

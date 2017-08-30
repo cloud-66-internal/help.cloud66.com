@@ -15,7 +15,7 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_about-deployment-gateways-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_important-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_how-to-deploy-your-stack-behind-the-gate-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_accessing-your-servers-behind-the-gatewa-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_about-deployment-gateways-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_important-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_how-to-deploy-your-stack-behind-the-gate-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/deployment-gateway/deployment-gateway_accessing-your-servers-behind-the-gatewa-v1.md  product = page.collection %}

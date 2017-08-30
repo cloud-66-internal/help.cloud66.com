@@ -15,11 +15,11 @@ permalink: /:collection/:path
 
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/env-vars/env-vars_about-environment-variables-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Deployment/common/env-vars/env-vars_auto-generate-variables-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Deployment/common/env-vars/env-vars_auto-generated-environment-variables-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Deployment/common/env-vars/env-vars_assign-environment-variables-for-deployment-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Deployment/common/env-vars/env-vars_assign-environment-variables-after-stack-build-v1.md  product = page.collection %}
-<a name="7"></a>{% include _inlines/Deployment/common/env-vars/env-vars_define-referenced-environment-variable-v1.md  product = page.collection %}
-<a name="8"></a>{% include _inlines/Deployment/common/env-vars/env-vars_using-environment-variables-v1.md  product = page.collection %}
-<a name="9"></a>{% include _inlines/Deployment/common/env-vars/env-vars_pre-defined-environment-variables-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/env-vars/env-vars_about-environment-variables-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/env-vars/env-vars_auto-generate-variables-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/env-vars/env-vars_auto-generated-environment-variables-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/env-vars/env-vars_assign-environment-variables-for-deployment-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/env-vars/env-vars_assign-environment-variables-after-stack-build-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/env-vars/env-vars_define-referenced-environment-variable-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/env-vars/env-vars_using-environment-variables-v1.md  product = page.collection %}
+{% include _inlines/Deployment/common/env-vars/env-vars_pre-defined-environment-variables-v1.md  product = page.collection %}

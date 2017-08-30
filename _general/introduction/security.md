@@ -14,8 +14,8 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Introduction/General/security/security_we-take-your-security-extremely-seriously-at-cloud-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Introduction/General/security/security_infrastructure-security-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Introduction/General/security/security_credit-card-information-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Introduction/General/security/security_customer-protection-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Introduction/General/security/security_reporting-security-issues-v1.md  product = page.collection %}
+{% include _inlines/Introduction/General/security/security_we-take-your-security-extremely-seriously-at-cloud-v1.md  product = page.collection %}
+{% include _inlines/Introduction/General/security/security_infrastructure-security-v1.md  product = page.collection %}
+{% include _inlines/Introduction/General/security/security_credit-card-information-v1.md  product = page.collection %}
+{% include _inlines/Introduction/General/security/security_customer-protection-v1.md  product = page.collection %}
+{% include _inlines/Introduction/General/security/security_reporting-security-issues-v1.md  product = page.collection %}

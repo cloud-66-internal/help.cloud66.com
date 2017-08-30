@@ -14,10 +14,10 @@ permalink: /:collection/:path
 
 
 
-<a name="1"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_what-is-cloud-66-v1.md  product = page.collection %}
-<a name="2"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_what-youll-need-v1.md  product = page.collection %}
-<a name="3"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_step-1-build-your-stack-v1.md  product = page.collection %}
-<a name="4"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_step-2-service-configuration-v1.md  product = page.collection %}
-<a name="5"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_step-3-define-deployment-properties-v1.md  product = page.collection %}
-<a name="6"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_step-4-review-the-deployment-logs-v1.md  product = page.collection %}
-<a name="7"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_whats-next-v1.md  product = page.collection %}
+{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_what-is-cloud-66-v1.md  product = page.collection %}
+{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_what-youll-need-v1.md  product = page.collection %}
+{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_step-1-build-your-stack-v1.md  product = page.collection %}
+{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_step-2-service-configuration-v1.md  product = page.collection %}
+{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_step-3-define-deployment-properties-v1.md  product = page.collection %}
+{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_step-4-review-the-deployment-logs-v1.md  product = page.collection %}
+{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_whats-next-v1.md  product = page.collection %}
