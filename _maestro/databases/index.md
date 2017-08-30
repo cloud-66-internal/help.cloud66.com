@@ -10,7 +10,6 @@ permalink: /:collection/:categories/index.html
 
 Cloud 66 Maestro supports the following database features:
 
-- [Backup Verification](backup-verifiers.html)
 - [Database Backup](database-backup.html)
 - [Database one-time Import](database-import.html)
 - [Database Mangement](database-management.html)
