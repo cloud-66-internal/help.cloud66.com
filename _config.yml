@@ -10,32 +10,32 @@
 
 title: Help | Cloud 66
 email: support@cloud66.com
-permalink: /:categories/:title.html
+permalink: /:collection/:path/
 
 collections:
   general:
     output: true
-    permalink: /:collection/:categories/:name
+    permalink: /:collection/:path/
     icon: foundicon-idea
   legacy_docker:
     output: true
-    permalink: /:collection/:categories/:name
+    permalink: /:collection/:path/
     icon: foundicon-idea
   maestro:
     output: true
-    permalink: /:collection/:categories/:name
+    permalink: /:collection/:path/
     icon: foundicon-idea
   node:
     output: true
-    permalink: /:collection/:categories/:name
+    permalink: /:collection/:path/
     icon: foundicon-idea
   rails:
     output: true
-    permalink: /:collection/:categories/:name
+    permalink: /:collection/:path/
     icon: foundicon-idea
   skycap:
     output: true
-    permalink: /:collection/:categories/:name
+    permalink: /:collection/:path/
     icon: foundicon-idea
 # Build settings
 markdown: kramdown

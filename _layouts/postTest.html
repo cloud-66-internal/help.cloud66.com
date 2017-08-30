@@ -13,10 +13,11 @@ bodyclass: post
 </nav>
 
 <article class="article container">
+
     <h1 class="article-title">
         {{ page.title }}
     </h1>
-     {% if page.version %}
+    {% if page.version %}
         <div style="margin-top: -38px; height: 0px; color: mediumseagreen; text-align: right;">VERSION: {{ page.version }}</div>
     {% endif %}
     {% assign trimmedURL = page.url | remove_first: '/' | remove_first: '.html' %}
@@ -41,7 +42,7 @@ bodyclass: post
         {{ content }}
         
         <hr>
-
+        {% if page.recommendedLinks.size>0 %}
          <div>Cloud 66 recommends to read next:
             <ul>
           {% for i in (0..30) %}
@@ -53,6 +54,7 @@ bodyclass: post
           {% endfor %}
       </ul>
         </div>
+        {% endif %}
     </div>
 
     <aside class="content-sec  {% if page.nav_sticky %} sticky-nav {% endif %}">
@@ -98,7 +100,6 @@ bodyclass: post
     </aside>
 </article>
 
-
 <div style="
    z-index: 10;
    top: 100px;
@@ -111,6 +112,7 @@ bodyclass: post
    overflow: scroll;
    bottom:0px;
    top:0px;">
+   {% if page.menuheaders.size>0 %}
     <h1> What's on This Page:</h1>
     <ul>
         {% for next in page.menuheaders %}
@@ -121,6 +123,8 @@ bodyclass: post
         {% endfor %}
         <br><br>
     </ul>
+    {% endif %}
+    {% if page.gitlinks.size>0 %}
     {% if jekyll.environment == "development" %}
     <h1>Github Links</h1>
     <ul>
@@ -136,5 +140,6 @@ bodyclass: post
         <li><a href={{next}} >{{displayName}}<br></a></li>
         {% endfor %}
     </ul>
+    {% endif %}
     {% endif %}
 </div>

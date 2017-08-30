@@ -100,7 +100,6 @@ bodyclass: post
     </aside>
 </article>
 
-
 <div style="
    z-index: 10;
    top: 100px;
@@ -113,6 +112,7 @@ bodyclass: post
    overflow: scroll;
    bottom:0px;
    top:0px;">
+   {% if page.menuheaders.size>0 %}
     <h1> What's on This Page:</h1>
     <ul>
         {% for next in page.menuheaders %}
@@ -123,6 +123,8 @@ bodyclass: post
         {% endfor %}
         <br><br>
     </ul>
+    {% endif %}
+    {% if page.gitlinks.size>0 %}
     {% if jekyll.environment == "development" %}
     <h1>Github Links</h1>
     <ul>
@@ -138,5 +140,6 @@ bodyclass: post
         <li><a href={{next}} >{{displayName}}<br></a></li>
         {% endfor %}
     </ul>
+    {% endif %}
     {% endif %}
 </div>
