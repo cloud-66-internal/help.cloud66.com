@@ -6,9 +6,8 @@ title: PostgreSQL Backup
 categories: Databases
 lead: ""
 legacy: false
-slug: postgresql
-permalink: /:collection/:categories/:slug/:name
-
+keywords: []
+permalink: /:collection/:path
 ---
 
 {% assign urlArr = page.url | split: '/' %}

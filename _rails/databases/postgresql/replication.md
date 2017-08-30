@@ -5,10 +5,10 @@ layout: post
 template: one-col
 title: PostgreSQL Replication
 categories: Databases
-slug: postgresql
 lead: ""
 legacy: false
-permalink: /:collection/:categories/:slug/:name
+keywords: []
+permalink: /:collection/:path
 ---
 
 {% assign urlArr = page.url | split: '/' %}

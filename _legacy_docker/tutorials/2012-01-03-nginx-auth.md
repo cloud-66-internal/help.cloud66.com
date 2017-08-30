@@ -7,6 +7,8 @@ categories: Tutorials
 lead: ""
 legacy: true
 change: true
+keywords: []
+permalink: /:collection/:path
 ---
 {% assign product = "common" %}
 

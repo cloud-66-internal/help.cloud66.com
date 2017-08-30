@@ -7,6 +7,8 @@ categories: Toolbelt
 lead: ""
 legacy: true
 
+keywords: []
+permalink: /:collection/:path
 ---
 
 {% assign urlArr = page.url | split: '/' %}

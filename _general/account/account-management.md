@@ -8,6 +8,8 @@ categories: account
 lead: ""
 legacy: false
 
+keywords: []
+permalink: /:collection/:path
 ---
 
 {% assign urlArr = page.url | split: '/' %}
