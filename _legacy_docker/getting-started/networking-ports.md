@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/networking-ports/networking-ports_this-is-used-to-expose-your-service-to-the.md" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/networking-ports/networking-ports_this-is-used-to-expose-your-service-to-the-v1.md" ]
 layout: post
 template: one-col
 title: Networking Ports
@@ -13,4 +13,4 @@ legacy: true
 {% assign product = urlArr[1] %}
 {% assign product = "legacy_docker" %}
 
-{% include _inlines/GettingStarted/common/networking-ports/networking-ports_this-is-used-to-expose-your-service-to-the.md  product = product %}
+{% include _inlines/GettingStarted/common/networking-ports/networking-ports_this-is-used-to-expose-your-service-to-the-v1.md  product = product %}

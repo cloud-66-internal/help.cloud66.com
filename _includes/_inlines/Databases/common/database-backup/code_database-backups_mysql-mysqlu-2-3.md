@@ -1,8 +1,0 @@
-<!-- usedin: [ _includes/_inlines/Databases/common/database-backup/database-backups_mysql.md] -->
-
-
-```
-$ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD -e "REVOKE ALL PRIVILEGES ON $MYSQL_DATABASE_NAME.* FROM '$MYSQL_DB_APP_USERNAME'@'localhost';"
-$ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD -e "REVOKE ALL PRIVILEGES ON $MYSQL_DATABASE_NAME.* FROM '$MYSQL_DB_APP_USERNAME'@'%';"
-$ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD -e "FLUSH PRIVILEGES;"
-```

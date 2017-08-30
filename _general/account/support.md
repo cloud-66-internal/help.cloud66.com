@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/support/support_the-support-packages-below-are-set-up-with-a-simple.md" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/support/support_the-support-packages-below-are-set-up-with-a-simple-v1.md" ]
 layout: post
 template: one-col
 title: Support Plans
@@ -13,4 +13,4 @@ legacy: false
 {% assign product = urlArr[1] %}
 {% assign product = "General" %}
 
-{% include _inlines/Account/General/support/support_the-support-packages-below-are-set-up-with-a-simple.md  product = product %}
+{% include _inlines/Account/General/support/support_the-support-packages-below-are-set-up-with-a-simple-v1.md  product = product %}

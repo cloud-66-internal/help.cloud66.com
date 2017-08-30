@@ -1,6 +1,6 @@
 ---
 menuheaders: [ "BuildGrid Settings", "Account Settings ", "User Settings" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_buildgrid-settings.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_account-settings-.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_user-settings.md" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_buildgrid-settings-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_account-settings--v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_user-settings-v1.md" ]
 layout: post
 template: one-col
 title: Buildgrid Settings
@@ -13,6 +13,6 @@ legacy: false
 {% assign urlArr = page.url | split: '/' %}
 {% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_buildgrid-settings.md  product = product %}
-<a name="2"></a>{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_account-settings-.md  product = product %}
-<a name="3"></a>{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_user-settings.md  product = product %}
+<a name="1"></a>{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_buildgrid-settings-v1.md  product = product %}
+<a name="2"></a>{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_account-settings--v1.md  product = product %}
+<a name="3"></a>{% include _inlines/Buildgrid/Skycap/buildgrid-settings/buildgrid-settings_user-settings-v1.md  product = product %}

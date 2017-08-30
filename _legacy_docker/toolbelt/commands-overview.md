@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/commands-overview/commands-overview_this-page-provides-an-overview-of-the-com.md" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/commands-overview/commands-overview_this-page-provides-an-overview-of-the-com-v1.md" ]
 layout: post
 template: one-col
 title: Toolbelt commands directory
@@ -13,4 +13,4 @@ legacy: true
 {% assign product = urlArr[1] %}
 {% assign product = "common" %}
 
-{% include _inlines/Toolbelt/common/commands-overview/commands-overview_this-page-provides-an-overview-of-the-com.md  product = product %}
+{% include _inlines/Toolbelt/common/commands-overview/commands-overview_this-page-provides-an-overview-of-the-com-v1.md  product = product %}

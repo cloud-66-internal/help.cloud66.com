@@ -1,6 +1,6 @@
 ---
 menuheaders: [ "What is RabbitMQ?", "Add RabbitMQ" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/rabbitmq/rabbitmq_what-is-rabbitmq.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/rabbitmq/rabbitmq_add-rabbitmq.md" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/rabbitmq/rabbitmq_what-is-rabbitmq-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddOns/common/rabbitmq/rabbitmq_add-rabbitmq-v1.md" ]
 layout: post
 template: one-col
 title: RabbitMQß
@@ -13,5 +13,5 @@ legacy: true
 {% assign urlArr = page.url | split: '/' %}
 {% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/AddOns/common/rabbitmq/rabbitmq_what-is-rabbitmq.md  product = product %}
-<a name="2"></a>{% include _inlines/AddOns/common/rabbitmq/rabbitmq_add-rabbitmq.md  product = product %}
+<a name="1"></a>{% include _inlines/AddOns/common/rabbitmq/rabbitmq_what-is-rabbitmq-v1.md  product = product %}
+<a name="2"></a>{% include _inlines/AddOns/common/rabbitmq/rabbitmq_add-rabbitmq-v1.md  product = product %}

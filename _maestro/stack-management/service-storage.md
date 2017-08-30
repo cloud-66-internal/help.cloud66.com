@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/service-storage/service-storage_given-the-ephemeral-nature-of-containers-i.md" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/service-storage/service-storage_given-the-ephemeral-nature-of-containers-i-v1.md" ]
 layout: post
 template: one-col
 title: Service Storage
@@ -13,4 +13,4 @@ legacy: false
 {% assign product = urlArr[1] %}
 {% assign product = "maestro" %}
 
-{% include _inlines/StackManagement/common/service-storage/service-storage_given-the-ephemeral-nature-of-containers-i.md  product = product %}
+{% include _inlines/StackManagement/common/service-storage/service-storage_given-the-ephemeral-nature-of-containers-i-v1.md  product = product %}

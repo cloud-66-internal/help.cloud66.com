@@ -1,5 +1,5 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2040-02-26-unicorn-issues/2040-02-26-unicorn-issues_a-not-unusual-issue-with-unicorn-.md" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2040-02-26-unicorn-issues/2040-02-26-unicorn-issues_a-not-unusual-issue-with-unicorn--v1.md" ]
 layout: post
 template: one-col
 title: Unicorn deployment issues
@@ -13,4 +13,4 @@ legacy: false
 {% assign product = urlArr[1] %}
 {% assign product = "common" %}
 
-{% include _inlines/Tutorials/common/2040-02-26-unicorn-issues/2040-02-26-unicorn-issues_a-not-unusual-issue-with-unicorn-.md  product = product %}
+{% include _inlines/Tutorials/common/2040-02-26-unicorn-issues/2040-02-26-unicorn-issues_a-not-unusual-issue-with-unicorn--v1.md  product = product %}

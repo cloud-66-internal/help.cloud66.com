@@ -1,6 +1,6 @@
 ---
 menuheaders: [ "What is a manifest file?", "What is service configuration?" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-a-manifest-file.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-service-configuration.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/advanced-deploy/advanced-deploy_when-you-want-full-control-how-your-service.md" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-a-manifest-file-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-service-configuration-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/advanced-deploy/advanced-deploy_when-you-want-full-control-how-your-service-v1.md" ]
 layout: post
 template: one-col
 title: Advanced Deploy
@@ -13,6 +13,6 @@ legacy: false
 {% assign urlArr = page.url | split: '/' %}
 {% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-a-manifest-file.md  product = product %}
-<a name="2"></a>{% include _inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-service-configuration.md  product = product %}
-<a name="3"></a>{% include _inlines/GettingStarted/common/advanced-deploy/advanced-deploy_when-you-want-full-control-how-your-service.md  product = product %}
+<a name="1"></a>{% include _inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-a-manifest-file-v1.md  product = product %}
+<a name="2"></a>{% include _inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-service-configuration-v1.md  product = product %}
+<a name="3"></a>{% include _inlines/GettingStarted/common/advanced-deploy/advanced-deploy_when-you-want-full-control-how-your-service-v1.md  product = product %}

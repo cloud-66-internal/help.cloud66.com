@@ -1,6 +1,6 @@
 ---
 menuheaders: [ "Contents", "About EasyDeploy repositories", "Using EasyDeploy repositories" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_about-easydeploy-repositories.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_using-easydeploy-repositories.md" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_contents-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_about-easydeploy-repositories-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_using-easydeploy-repositories-v1.md" ]
 layout: post
 template: one-col
 title: EasyDeploy repositories
@@ -14,5 +14,5 @@ legacy: true
 {% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_about-easydeploy-repositories.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_using-easydeploy-repositories.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_about-easydeploy-repositories-v1.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/common/easy-deploy-repos/easy-deploy-repos_using-easydeploy-repositories-v1.md  product = product %}

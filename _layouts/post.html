@@ -17,6 +17,9 @@ bodyclass: post
     <h1 class="article-title">
         {{ page.title }}
     </h1>
+    {% if page.version %}
+        <div style="margin-top: -38px; height: 0px; color: mediumseagreen; text-align: right;">VERSION: {{ page.version }}</div>
+    {% endif %}
     {% assign trimmedURL = page.url | remove_first: '/' | remove_first: '.html' %}
     {% assign gitlnker = "https://github.com/cloud66/help/edit/feature/inlines/_" | append: trimmedURL | append: ".md" %}
     {% if jekyll.environment == "development" %}
@@ -37,9 +40,9 @@ bodyclass: post
     </div>
     <div class="content-pri">
         {{ content }}
-
+        
         <hr>
-{% if page.recommendedLinks.size>0 %}
+        {% if page.recommendedLinks.size>0 %}
          <div>Cloud 66 recommends to read next:
             <ul>
           {% for i in (0..30) %}
@@ -51,7 +54,7 @@ bodyclass: post
           {% endfor %}
       </ul>
         </div>
-{% endif %}
+        {% endif %}
     </div>
 
     <aside class="content-sec  {% if page.nav_sticky %} sticky-nav {% endif %}">
@@ -95,7 +98,6 @@ bodyclass: post
             {% endif %}
         </aside>
     </aside>
-
 </article>
 
 
@@ -110,18 +112,13 @@ bodyclass: post
    color: mediumseagreen;
    overflow: scroll;
    bottom:0px;
-   direction: rtl;
    top:0px;">
-    <div
-    style=" direction: ltr;
-    margin-left: 40px;
-    ">
     <h1> What's on This Page:</h1>
-    <ul style="list-style-type: circle;">
+    <ul>
         {% for next in page.menuheaders %}
         {% assign theIndex = forloop.index | prepend: '#' %}
         {% if next != 'Contents'%}
-        <a href={{theIndex}} ><li style="   margin:0 0 10px 0;">{{next}}</li></a>
+        <a href={{theIndex}} ><li>{{next}}</li></a><br>
         {% endif %}
         {% endfor %}
         <br><br>
@@ -142,5 +139,4 @@ bodyclass: post
         {% endfor %}
     </ul>
     {% endif %}
-    </div>
 </div>

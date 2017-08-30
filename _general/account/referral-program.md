@@ -1,6 +1,6 @@
 ---
 menuheaders: [ "How it works", "Your referral code" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/referral-program/referral-program_when-you-share-cloud-66-with-your-friends.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/referral-program/referral-program_how-it-works.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/referral-program/referral-program_your-referral-code.md" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/referral-program/referral-program_when-you-share-cloud-66-with-your-friends-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/referral-program/referral-program_how-it-works-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/referral-program/referral-program_your-referral-code-v1.md" ]
 layout: post
 template: one-col
 title: Referral Program
@@ -13,6 +13,6 @@ legacy: false
 {% assign urlArr = page.url | split: '/' %}
 {% assign product = urlArr[1] %}
 
-<a name="1"></a>{% include _inlines/Account/General/referral-program/referral-program_when-you-share-cloud-66-with-your-friends.md  product = product %}
-<a name="2"></a>{% include _inlines/Account/General/referral-program/referral-program_how-it-works.md  product = product %}
-<a name="3"></a>{% include _inlines/Account/General/referral-program/referral-program_your-referral-code.md  product = product %}
+<a name="1"></a>{% include _inlines/Account/General/referral-program/referral-program_when-you-share-cloud-66-with-your-friends-v1.md  product = product %}
+<a name="2"></a>{% include _inlines/Account/General/referral-program/referral-program_how-it-works-v1.md  product = product %}
+<a name="3"></a>{% include _inlines/Account/General/referral-program/referral-program_your-referral-code-v1.md  product = product %}

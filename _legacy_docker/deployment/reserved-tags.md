@@ -1,6 +1,6 @@
 ---
 menuheaders: [ "Contents", "What are reserved tags?", "Reserved tags" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/reserved-tags/reserved-tags_contents.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/reserved-tags/reserved-tags_what-are-reserved-tags.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/reserved-tags/reserved-tags_reserved-tags.md" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/reserved-tags/reserved-tags_contents-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/reserved-tags/reserved-tags_what-are-reserved-tags-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/reserved-tags/reserved-tags_reserved-tags-v1.md" ]
 layout: post
 template: one-col
 title: Cloud 66 reserved tags
@@ -14,5 +14,5 @@ legacy: true
 {% assign product = urlArr[1] %}
 
 
-<a name="2"></a>{% include _inlines/Deployment/common/reserved-tags/reserved-tags_what-are-reserved-tags.md  product = product %}
-<a name="3"></a>{% include _inlines/Deployment/common/reserved-tags/reserved-tags_reserved-tags.md  product = product %}
+<a name="2"></a>{% include _inlines/Deployment/common/reserved-tags/reserved-tags_what-are-reserved-tags-v1.md  product = product %}
+<a name="3"></a>{% include _inlines/Deployment/common/reserved-tags/reserved-tags_reserved-tags-v1.md  product = product %}
