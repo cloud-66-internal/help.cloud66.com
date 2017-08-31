@@ -1,10 +1,10 @@
 ---
-menuheaders: [ "About deploying MySQL", "Features", "Database deployment types", "How to connect to your PostgreSQL database", "Environment Variables", "Control your Rails database migrations", "Customize your database configuration" ]
+menuheaders: [ "About deploying Redis", "Features", "Database deployment types", "How to connect to your PostgreSQL database", "Environment Variables", "Control your Rails database migrations", "Customize your database configuration" ]
 layout: post
 template: one-col
-title: MySQL with Cloud 66 Docker
+title: Redis with Cloud 66 Docker
 categories: Databases
-lead: "Using MySQL on Cloud 66 for docker stacks"
+lead: "Using Redis on Cloud 66 for docker stacks"
 legacy: true
 recommendedName: [ "Backup", "Replication" ]
 recommendedLinks: [ "backup.html", "replication.html" ]
@@ -12,10 +12,10 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign dbtype = "mysql" %}
+{% assign dbtype = "redis" %}
 
 
-<a href="#about-deploying-{{ dbtype }}"></a>{% include _inlines/Databases/common/mysql/about-deploying-mysql-header-v1.md  product = page.collection %}
+<a href="#about-deploying-{{ dbtype }}"></a>{% include _inlines/Databases/common/redis/about-deploying-redis-header-v1.md  product = page.collection %}
 {% include _inlines/Databases/common/common/about-deploying-dbs-v1.md  product = page.collection %}
 <a href="#features"></a>{% include _inlines/Databases/common/common/features-v1.md  product = page.collection %}
 <a href="#database-deployment-types"></a>{% include _inlines/Databases/common/common/deployment-types-v1.md  product = page.collection %}

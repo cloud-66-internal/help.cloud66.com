@@ -19,3 +19,4 @@ permalink: /:collection/:categories/index.html
 
 - [PostgreSQL](postgresql)
 - [MySQL](mysql)
+- [Redis](redis)

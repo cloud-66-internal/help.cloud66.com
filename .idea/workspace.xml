@@ -2,51 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc270081-d6cc-4afe-8b5b-192fe0d5e98e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/rails/mysql/code_backup-verifier-v1.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/rails/postgres/code_backup-verifier-v1.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mysql/backup.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mysql/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mysql/replication.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/backup.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/replication.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/mysql/backup.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/mysql/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/mysql/replication.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/mysql/backup.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/mysql/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/mysql/replication.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/postgresql/backup.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/postgresql/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/postgresql/replication.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/mysql/backup.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/mysql/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/mysql/replication.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/postgres/about-deploying-dbs-v1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/postgres/about-deploying-postgres-header-v1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/postgres/code_postgres_control-rails-db-migration-v1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/postgres/control-rails-db-migration-v1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/postgres/customize-v1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/postgres/deployment-types-v1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/postgres/env-vars-table-v1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/postgres/env-vars-v1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/postgres/features-v1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/postgres/how-to-connect-v1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/postgres/variables-v1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/rails/postgres/backup-verifier-v1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/rails/postgres/important-v1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_legacy_docker/databases/backup-verifiers.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_node/databases/backup-verifiers.md" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/redis/about-deploying-redis-header-v1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/redis/env-vars-table-v1.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/redis/backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/redis/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/redis/replication.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/redis/backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/redis/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/redis/replication.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/redis/backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/redis/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/redis/replication.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/redis/backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/redis/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/redis/replication.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacy_docker/databases/index.md" afterPath="$PROJECT_DIR$/_legacy_docker/databases/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/index.md" afterPath="$PROJECT_DIR$/_maestro/databases/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacy_docker/databases/mysql/index.md" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mysql/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/index.md" afterPath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/mysql/backup.md" afterPath="$PROJECT_DIR$/_maestro/databases/mysql/backup.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/mysql/index.md" afterPath="$PROJECT_DIR$/_maestro/databases/mysql/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/postgresql/index.md" afterPath="$PROJECT_DIR$/_maestro/databases/postgresql/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/postgresql/replication.md" afterPath="$PROJECT_DIR$/_maestro/databases/postgresql/replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_node/databases/index.md" afterPath="$PROJECT_DIR$/_node/databases/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/index.md" afterPath="$PROJECT_DIR$/_rails/databases/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/postgresql/backup-verifier.md" afterPath="$PROJECT_DIR$/_rails/databases/postgresql/backup-verifier.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_node/databases/mysql/index.md" afterPath="$PROJECT_DIR$/_node/databases/mysql/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_node/databases/postgresql/index.md" afterPath="$PROJECT_DIR$/_node/databases/postgresql/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/backup-verifiers.md" afterPath="$PROJECT_DIR$/_rails/databases/backup-verifiers.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/mysql/index.md" afterPath="$PROJECT_DIR$/_rails/databases/mysql/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/postgresql/index.md" afterPath="$PROJECT_DIR$/_rails/databases/postgresql/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/postgresql/replication.md" afterPath="$PROJECT_DIR$/_rails/databases/postgresql/replication.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,12 +39,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="backup.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_maestro/databases/mysql/backup.md">
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/redis/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="105">
-                <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="255">
+                <caret line="17" column="108" lean-forward="false" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -71,12 +52,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="code_backup-verifier-v1.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/rails/postgres/code_backup-verifier-v1.md">
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="360">
+                <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_maestro/databases/redis/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_node/databases/redis/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="90">
-                <caret line="6" column="75" lean-forward="false" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
+                <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -84,25 +91,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="important-v1.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/rails/common/important-v1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="105">
-                <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code_backup-verifier-v1.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/rails/mysql/code_backup-verifier-v1.md">
+      <file leaf-file-name="backup.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_node/databases/redis/backup.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="135">
-                <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+                <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="replication.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_node/databases/redis/replication.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="300">
+                <caret line="20" column="76" lean-forward="false" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_rails/databases/redis/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="315">
+                <caret line="21" column="85" lean-forward="false" selection-start-line="21" selection-start-column="85" selection-end-line="21" selection-end-column="85" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="replication.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_rails/databases/redis/replication.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="315">
+                <caret line="21" column="104" lean-forward="false" selection-start-line="21" selection-start-column="104" selection-end-line="21" selection-end-column="104" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="backup.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_rails/databases/redis/backup.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="195">
+                <caret line="13" column="83" lean-forward="false" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -112,6 +158,12 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mys</find>
+      <find>my</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -120,7 +172,6 @@
       <list>
         <option value="$PROJECT_DIR$/_maestro/databases/postgresql/backup.md" />
         <option value="$PROJECT_DIR$/_node/databases/index.md" />
-        <option value="$PROJECT_DIR$/_legacy_docker/databases/index.md" />
         <option value="$PROJECT_DIR$/_legacy_docker/databases/mysql/index.md" />
         <option value="$PROJECT_DIR$/_maestro/databases/mysql/index.md" />
         <option value="$PROJECT_DIR$/_maestro/databases/mysql/replication.md" />
@@ -134,6 +185,17 @@
         <option value="$PROJECT_DIR$/_includes/_inlines/Databases/rails/mysql/code_backup-verifier-v1.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Databases/rails/postgres/code_backup-verifier-v1.md" />
         <option value="$PROJECT_DIR$/_includes/_inlines/Databases/rails/common/important-v1.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/redis/about-deploying-postgres-header-v1.md" />
+        <option value="$PROJECT_DIR$/_includes/_inlines/Databases/common/redis/env-vars-table-v1.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/databases/redis/index.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/databases/index.md" />
+        <option value="$PROJECT_DIR$/_node/databases/redis/index.md" />
+        <option value="$PROJECT_DIR$/_node/databases/redis/backup.md" />
+        <option value="$PROJECT_DIR$/_node/databases/redis/replication.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/redis/replication.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/redis/backup.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/redis/backup-verifier.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/redis/index.md" />
       </list>
     </option>
   </component>
@@ -185,7 +247,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
+              <option name="myItemId" value="_rails" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -199,41 +261,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
+              <option name="myItemId" value="_rails" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_inlines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_inlines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Databases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postgres" />
+              <option name="myItemId" value="databases" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -247,19 +279,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
+              <option name="myItemId" value="_rails" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_inlines" />
+              <option name="myItemId" value="databases" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Databases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails" />
+              <option name="myItemId" value="redis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -273,23 +301,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_inlines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Databases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="_node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,15 +315,101 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
+              <option name="myItemId" value="_node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_inlines" />
+              <option name="myItemId" value="databases" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Databases" />
+              <option name="myItemId" value="_node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="databases" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_maestro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_maestro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="databases" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_maestro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="databases" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_legacy_docker" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -327,9 +425,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_includes/_inlines/Databases/rails/mysql" />
-      <recent name="$PROJECT_DIR$/_includes/_inlines/Databases/rails/postgres" />
+      <recent name="$PROJECT_DIR$/_node/databases/" />
       <recent name="$PROJECT_DIR$/_rails/databases" />
+      <recent name="$PROJECT_DIR$/_rails/databases/mysql" />
       <recent name="$PROJECT_DIR$/_node/databases" />
       <recent name="$PROJECT_DIR$/_maestro/databases" />
     </key>
@@ -532,12 +630,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504172232468</updated>
-      <workItem from="1504172237399" duration="1100000" />
+      <workItem from="1504172237399" duration="2154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1101000" />
+    <option name="totallyTimeSpent" value="2155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -634,17 +732,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="300">
             <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="315">
-            <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
             <folding />
           </first_editor>
           <second_editor />
@@ -787,7 +874,139 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="105">
-            <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/redis/about-deploying-redis-header-v1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/common/redis/env-vars-table-v1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/redis/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="255">
+            <caret line="17" column="108" lean-forward="false" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="360">
+            <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/databases/redis/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_node/databases/redis/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_node/databases/redis/replication.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="300">
+            <caret line="20" column="76" lean-forward="false" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_node/databases/redis/backup.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/redis/replication.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="21" column="104" lean-forward="false" selection-start-line="21" selection-start-column="104" selection-end-line="21" selection-end-column="104" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/redis/backup.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="195">
+            <caret line="13" column="83" lean-forward="false" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/redis/backup-verifier.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/redis/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="21" column="85" lean-forward="false" selection-start-line="21" selection-start-column="85" selection-end-line="21" selection-end-column="85" />
             <folding />
           </first_editor>
           <second_editor />

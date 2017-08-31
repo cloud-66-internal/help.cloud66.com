@@ -20,3 +20,4 @@ Cloud 66 Maestro supports the following database features:
 
 - [PostgreSQL](postgresql)
 - [MySQL](mysql)
+- [Redis](redis)

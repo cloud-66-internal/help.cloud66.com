@@ -15,7 +15,7 @@ permalink: /:collection/:path
 
 {% assign dbtype = "postgres" %}
 
-<a href="#about-deploying-postgresql"></a>{% include _inlines/Databases/common/postgres/about-deploying-postgres-header-v1.md  product = page.collection %}
+<a href="#about-deploying-{{ dbtype }}"></a>{% include _inlines/Databases/common/postgres/about-deploying-postgres-header-v1.md  product = page.collection %}
 {% include _inlines/Databases/common/common/about-deploying-dbs-v1.md  product = page.collection %}
 <a href="#features"></a>{% include _inlines/Databases/common/common/features-v1.md  product = page.collection %}
 <a href="#database-deployment-types"></a>{% include _inlines/Databases/common/common/deployment-types-v1.md  product = page.collection %}

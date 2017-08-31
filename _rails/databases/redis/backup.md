@@ -2,14 +2,13 @@
 menuheaders: [ "What is the database backup add-in?", "Backup types", "Managed backups", "Unmanaged backups", "Backup format", "Binary", "Text", "Backup schedule", "Compression", "Exclude tables", "Install on replica", "Downloading backup", "Cloud 66 toolbelt", "Download script", "Pricing" ]
 layout: post
 template: one-col
-title: MySQL Backup
+title: Redis Backup
 categories: Databases
 lead: ""
 legacy: false
 keywords: []
 permalink: /:collection/:path
 ---
-
 
 
 <a href="#what-is-the-database-backup-add-in"></a>{% include _inlines/Databases/common/database-backup/database-backups_what-is-the-database-backup-add-in-v1.md  product = page.collection %}
