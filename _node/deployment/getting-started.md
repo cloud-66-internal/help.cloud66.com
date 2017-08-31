@@ -14,12 +14,12 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Deployment/Node/getting-started/getting-started_----what-youll-needneeded-v1.md  product = page.collection %}
-{% include _inlines/Deployment/Node/getting-started/getting-started_what-youll-need-v1.md  product = page.collection %}
-{% include _inlines/Deployment/Node/getting-started/getting-started_step-1.-build-your-stack-v1.md  product = page.collection %}
-{% include _inlines/Deployment/Node/getting-started/getting-started_step-2.-access-your-git-repository-v1.md  product = page.collection %}
-{% include _inlines/Deployment/Node/getting-started/getting-started_step-3-define-your-application-properties-v1.md  product = page.collection %}
-{% include _inlines/Deployment/Node/getting-started/getting-started_step-4-review-your-app-configuration-v1.md  product = page.collection %}
-{% include _inlines/Deployment/Node/getting-started/getting-started_step-5-define-deployment-properties-v1.md  product = page.collection %}
-{% include _inlines/Deployment/Node/getting-started/getting-started_step-6-review-the-deployment-logs-v1.md  product = page.collection %}
-{% include _inlines/Deployment/Node/getting-started/getting-started_whats-next-v1.md  product = page.collection %}
+
+<a href="#what-youll-need"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_what-youll-need-v1.md  product = page.collection %}
+<a href="#step-1-build-your-stack"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_step-1.-build-your-stack-v1.md  product = page.collection %}
+<a href="#step-2-access-your-git-repository"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_step-2.-access-your-git-repository-v1.md  product = page.collection %}
+<a href="#step-3-define-your-application-properties"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_step-3-define-your-application-properties-v1.md  product = page.collection %}
+<a href="#step-4-review-your-app-configuration"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_step-4-review-your-app-configuration-v1.md  product = page.collection %}
+<a href="#step-5-define-deployment-properties"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_step-5-define-deployment-properties-v1.md  product = page.collection %}
+<a href="#step-6-review-the-deployment-logs"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_step-6-review-the-deployment-logs-v1.md  product = page.collection %}
+<a href="#whats-next"></a>{% include _inlines/Deployment/Node/getting-started/getting-started_whats-next-v1.md  product = page.collection %}

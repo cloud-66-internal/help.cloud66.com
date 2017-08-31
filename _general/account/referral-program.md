@@ -14,6 +14,6 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Account/General/referral-program/referral-program_when-you-share-cloud-66-with-your-friends-v1.md  product = page.collection %}
-{% include _inlines/Account/General/referral-program/referral-program_how-it-works-v1.md  product = page.collection %}
-{% include _inlines/Account/General/referral-program/referral-program_your-referral-code-v1.md  product = page.collection %}
+
+<a href="#how-it-works"></a>{% include _inlines/Account/General/referral-program/referral-program_how-it-works-v1.md  product = page.collection %}
+<a href="#your-referral-code"></a>{% include _inlines/Account/General/referral-program/referral-program_your-referral-code-v1.md  product = page.collection %}

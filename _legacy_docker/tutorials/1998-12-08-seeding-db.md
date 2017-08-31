@@ -14,7 +14,7 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_ew-databases-commonly-require-seed-da-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_seed-script-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_deploy-hook-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_note-v1.md  product = page.collection %}
+
+<a href="#seed-script"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_seed-script-v1.md  product = page.collection %}
+<a href="#deploy-hook"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_deploy-hook-v1.md  product = page.collection %}
+<a href="#note"></a>{% include _inlines/Tutorials/common/1998-12-08-seeding-db/1998-12-08-seeding-db_note-v1.md  product = page.collection %}

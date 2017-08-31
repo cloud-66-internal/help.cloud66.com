@@ -14,4 +14,5 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/AddOns/common/shell/shell_add-a-shell-command-v1.md  product = page.collection %}
+
+<a href="#add-a-shell-command"></a>{% include _inlines/AddOns/common/shell/shell_add-a-shell-command-v1.md  product = page.collection %}

@@ -14,9 +14,9 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_having-a-failover-group-can-help--v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_setup-the-failover-group-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_1.-code-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_2.-data-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_3.-traffic-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_how-to-use-the-failover-stack-v1.md  product = page.collection %}
+
+<a href="#setup-the-failover-group"></a>{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_setup-the-failover-group-v1.md  product = page.collection %}
+<a href="#1-code"></a>{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_1.-code-v1.md  product = page.collection %}
+<a href="#2-data"></a>{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_2.-data-v1.md  product = page.collection %}
+<a href="#3-traffic"></a>{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_3.-traffic-v1.md  product = page.collection %}
+<a href="#how-to-use-the-failover-stack"></a>{% include _inlines/Tutorials/common/1976-09-26-stack-failover/1976-09-26-stack-failover_how-to-use-the-failover-stack-v1.md  product = page.collection %}

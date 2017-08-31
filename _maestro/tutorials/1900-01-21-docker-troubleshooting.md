@@ -14,5 +14,6 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Tutorials/common/1900-01-21-docker-troubleshooting/1900-01-21-docker-troubleshooting_troubleshooting-wont-start-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1900-01-21-docker-troubleshooting/1900-01-21-docker-troubleshooting_troubleshooting-a-contain-v1.md  product = page.collection %}
+
+<a href="#troubleshooting-a-container-that-wont-start"></a>{% include _inlines/Tutorials/common/1900-01-21-docker-troubleshooting/1900-01-21-docker-troubleshooting_troubleshooting-wont-start-v1.md  product = page.collection %}
+<a href="#troubleshooting-a-container-that-has-started"></a>{% include _inlines/Tutorials/common/1900-01-21-docker-troubleshooting/1900-01-21-docker-troubleshooting_troubleshooting-a-contain-v1.md  product = page.collection %}

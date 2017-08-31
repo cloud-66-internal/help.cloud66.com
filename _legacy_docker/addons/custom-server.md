@@ -14,5 +14,6 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/AddOns/common/custom-server/custom-server_what-is-the-custom-server-add-in-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/custom-server/custom-server_add-a-custom-server-v1.md  product = page.collection %}
+
+<a href="#what-is-the-custom-server-add-in"></a>{% include _inlines/AddOns/common/custom-server/custom-server_what-is-the-custom-server-add-in-v1.md  product = page.collection %}
+<a href="#add-a-custom-server"></a>{% include _inlines/AddOns/common/custom-server/custom-server_add-a-custom-server-v1.md  product = page.collection %}

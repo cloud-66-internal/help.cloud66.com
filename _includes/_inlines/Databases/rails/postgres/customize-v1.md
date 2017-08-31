@@ -61,5 +61,5 @@ The following variables are available to any database CustomConfig.
    </tbody> 
   </table> 
 		
-{%include _inlines/Databases/rails/postgres/variables-v1.md  product = include.product %}
-  
+
+<a href="#postgresql-variables"></a>{%include _inlines/Databases/rails/postgres/variables-v1.md  product = include.product %}

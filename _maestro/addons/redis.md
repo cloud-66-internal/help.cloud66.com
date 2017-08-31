@@ -14,6 +14,7 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/AddOns/common/redis/redis_about-adding-redis-to-your-stack-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/redis/redis_add-redis-to-your-stack-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/redis/remove-redis-from-your-stack-v1.md  product = page.collection %}
+
+<a href="#about-adding-redis-to-your-stack"></a>{% include _inlines/AddOns/common/redis/redis_about-adding-redis-to-your-stack-v1.md  product = page.collection %}
+<a href="#add-redis-to-your-stack"></a>{% include _inlines/AddOns/common/redis/redis_add-redis-to-your-stack-v1.md  product = page.collection %}
+<a href="#remove-redis-from-your-stack"></a>{% include _inlines/AddOns/common/redis/remove-redis-from-your-stack-v1.md  product = page.collection %}

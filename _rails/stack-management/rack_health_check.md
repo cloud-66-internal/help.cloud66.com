@@ -14,6 +14,6 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/StackManagement/common/rack_health_check/rack_health_check_--------health-check-during-deployment-v1.md  product = page.collection %}
-{% include _inlines/StackManagement/common/rack_health_check/rack_health_check_health-check-during-deployment-v1.md  product = page.collection %}
-{% include _inlines/StackManagement/common/rack_health_check/rack_health_check_new-status-alerts-v1.md  product = page.collection %}
+
+<a href="#health-check-during-deployment"></a>{% include _inlines/StackManagement/common/rack_health_check/rack_health_check_health-check-during-deployment-v1.md  product = page.collection %}
+<a href="#new-status-alerts"></a>{% include _inlines/StackManagement/common/rack_health_check/rack_health_check_new-status-alerts-v1.md  product = page.collection %}

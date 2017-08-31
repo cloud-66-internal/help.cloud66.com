@@ -14,6 +14,7 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_introduction-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_passenger-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_custom-rack-servers-v1.md  product = page.collection %}
+
+<a href="#introduction"></a>{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_introduction-v1.md  product = page.collection %}
+<a href="#passenger"></a>{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_passenger-v1.md  product = page.collection %}
+<a href="#custom-rack-servers"></a>{% include _inlines/Tutorials/common/1901-10-03-nginx-modules/1901-10-03-nginx-modules_custom-rack-servers-v1.md  product = page.collection %}

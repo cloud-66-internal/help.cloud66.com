@@ -14,6 +14,7 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_instructions-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_mysql-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_postgresql-v1.md  product = page.collection %}
+
+<a href="#instructions"></a>{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_instructions-v1.md  product = page.collection %}
+<a href="#mysql"></a>{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_mysql-v1.md  product = page.collection %}
+<a href="#postgresql"></a>{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_postgresql-v1.md  product = page.collection %}

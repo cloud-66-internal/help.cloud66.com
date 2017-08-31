@@ -14,7 +14,8 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Toolbelt/common/upload/upload_upload-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/common/upload/upload_usage-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/common/upload/upload_parameters-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/common/upload/upload_example-v1.md  product = page.collection %}
+
+<a href="#upload"></a>{% include _inlines/Toolbelt/common/upload/upload_upload-v1.md  product = page.collection %}
+<a href="#usage"></a>{% include _inlines/Toolbelt/common/upload/upload_usage-v1.md  product = page.collection %}
+<a href="#parameters"></a>{% include _inlines/Toolbelt/common/upload/upload_parameters-v1.md  product = page.collection %}
+<a href="#example"></a>{% include _inlines/Toolbelt/common/upload/upload_example-v1.md  product = page.collection %}

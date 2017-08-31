@@ -14,8 +14,8 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/StackManagement/common/service-monitoring/service-monitoring_we-use-cadvisorhttps-v1.md  product = page.collection %}
-{% include _inlines/StackManagement/common/service-monitoring/service-monitoring_cpu-usage-v1.md  product = page.collection %}
-{% include _inlines/StackManagement/common/service-monitoring/service-monitoring_memory-usage-v1.md  product = page.collection %}
-{% include _inlines/StackManagement/common/service-monitoring/service-monitoring_disk-io-usage-v1.md  product = page.collection %}
-{% include _inlines/StackManagement/common/service-monitoring/service-monitoring_network-usage-v1.md  product = page.collection %}
+
+<a href="#cpu-usage"></a>{% include _inlines/StackManagement/common/service-monitoring/service-monitoring_cpu-usage-v1.md  product = page.collection %}
+<a href="#memory-usage"></a>{% include _inlines/StackManagement/common/service-monitoring/service-monitoring_memory-usage-v1.md  product = page.collection %}
+<a href="#disk-io-usage"></a>{% include _inlines/StackManagement/common/service-monitoring/service-monitoring_disk-io-usage-v1.md  product = page.collection %}
+<a href="#network-usage"></a>{% include _inlines/StackManagement/common/service-monitoring/service-monitoring_network-usage-v1.md  product = page.collection %}

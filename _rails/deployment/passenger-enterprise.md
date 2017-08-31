@@ -14,6 +14,7 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Deployment/Rails/passenger-enterprise/passenger-enterprise_what-is-passenger-enterprise-v1.md  product = page.collection %}
-{% include _inlines/Deployment/Rails/passenger-enterprise/passenger-enterprise_deploy-with-passenger-enterprise-v1.md  product = page.collection %}
-{% include _inlines/Deployment/Rails/passenger-enterprise/passenger-enterprise_important-v1.md  product = page.collection %}
+
+<a href="#what-is-passenger-enterprise"></a>{% include _inlines/Deployment/Rails/passenger-enterprise/passenger-enterprise_what-is-passenger-enterprise-v1.md  product = page.collection %}
+<a href="#deploy-with-passenger-enterprise"></a>{% include _inlines/Deployment/Rails/passenger-enterprise/passenger-enterprise_deploy-with-passenger-enterprise-v1.md  product = page.collection %}
+<a href="#important"></a>{% include _inlines/Deployment/Rails/passenger-enterprise/passenger-enterprise_important-v1.md  product = page.collection %}

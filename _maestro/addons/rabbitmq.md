@@ -14,5 +14,6 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/AddOns/common/rabbitmq/rabbitmq_what-is-rabbitmq-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/rabbitmq/rabbitmq_add-rabbitmq-v1.md  product = page.collection %}
+
+<a href="#what-is-rabbitmq"></a>{% include _inlines/AddOns/common/rabbitmq/rabbitmq_what-is-rabbitmq-v1.md  product = page.collection %}
+<a href="#add-rabbitmq"></a>{% include _inlines/AddOns/common/rabbitmq/rabbitmq_add-rabbitmq-v1.md  product = page.collection %}

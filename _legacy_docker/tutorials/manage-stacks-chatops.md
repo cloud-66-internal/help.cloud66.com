@@ -14,9 +14,10 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/unknown/General/manage-stacks-chatops/intro_cloud-66-chatops-v1.md  product = page.collection %}
-{% include _inlines/unknown/General/manage-stacks-chatops/intro_quick-install-v1.md  product = page.collection %}
-{% include _inlines/unknown/General/manage-stacks-chatops/intro_create-a-slack-bot-v1.md  product = page.collection %}
-{% include _inlines/unknown/General/manage-stacks-chatops/intro_download-igor-v1.md  product = page.collection %}
-{% include _inlines/unknown/General/manage-stacks-chatops/intro_deregister-v1.md  product = page.collection %}
-{% include _inlines/unknown/General/manage-stacks-chatops/intro_for-any-informations-on-how-to-use-igor-v1.md  product = page.collection %}
+
+<a href="#cloud-66-chatops"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_cloud-66-chatops-v1.md  product = page.collection %}
+<a href="#quick-install"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_quick-install-v1.md  product = page.collection %}
+<a href="#create-a-slack-bot"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_create-a-slack-bot-v1.md  product = page.collection %}
+<a href="#download-igor"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_download-igor-v1.md  product = page.collection %}
+<a href="#deregister"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_deregister-v1.md  product = page.collection %}
+<a href="#for-any-informations-on-how-to-use-igor"></a>{% include _inlines/unknown/General/manage-stacks-chatops/intro_for-any-informations-on-how-to-use-igor-v1.md  product = page.collection %}

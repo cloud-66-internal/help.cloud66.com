@@ -14,6 +14,6 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_depending-on-the-scale-of-your-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_installing-postfix-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_configuring-rails-v1.md  product = page.collection %}
+
+<a href="#installing-postfix"></a>{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_installing-postfix-v1.md  product = page.collection %}
+<a href="#configuring-rails"></a>{% include _inlines/Tutorials/common/1960-09-24-smtp-installation/1960-09-24-smtp-installation_configuring-rails-v1.md  product = page.collection %}

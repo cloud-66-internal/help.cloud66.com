@@ -14,7 +14,8 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Account/General/account-management/account-management_view-account-information-v1.md  product = page.collection %}
-{% include _inlines/Account/General/account-management/account-management_delete-your-account-v1.md  product = page.collection %}
-{% include _inlines/Account/General/account-management/account-management_organizations-v1.md  product = page.collection %}
-{% include _inlines/Account/General/account-management/account-management_note-v1.md  product = page.collection %}
+
+<a href="#view-account-information"></a>{% include _inlines/Account/General/account-management/account-management_view-account-information-v1.md  product = page.collection %}
+<a href="#delete-your-account"></a>{% include _inlines/Account/General/account-management/account-management_delete-your-account-v1.md  product = page.collection %}
+<a href="#organizations"></a>{% include _inlines/Account/General/account-management/account-management_organizations-v1.md  product = page.collection %}
+<a href="#note"></a>{% include _inlines/Account/General/account-management/account-management_note-v1.md  product = page.collection %}

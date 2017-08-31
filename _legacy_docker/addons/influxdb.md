@@ -14,6 +14,7 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/AddOns/common/influxdb/influxdb_what-is-influxdb-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/influxdb/influxdb_add-influxdb-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/influxdb/influxdb_note-v1.md  product = page.collection %}
+
+<a href="#what-is-influxdb"></a>{% include _inlines/AddOns/common/influxdb/influxdb_what-is-influxdb-v1.md  product = page.collection %}
+<a href="#add-influxdb"></a>{% include _inlines/AddOns/common/influxdb/influxdb_add-influxdb-v1.md  product = page.collection %}
+<a href="#note"></a>{% include _inlines/AddOns/common/influxdb/influxdb_note-v1.md  product = page.collection %}

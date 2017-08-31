@@ -14,6 +14,6 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-a-manifest-file-v1.md  product = page.collection %}
-{% include _inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-service-configuration-v1.md  product = page.collection %}
-{% include _inlines/GettingStarted/common/advanced-deploy/advanced-deploy_when-you-want-full-control-how-your-service-v1.md  product = page.collection %}
+
+<a href="#what-is-a-manifest-file"></a>{% include _inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-a-manifest-file-v1.md  product = page.collection %}
+<a href="#what-is-service-configuration"></a>{% include _inlines/GettingStarted/common/advanced-deploy/advanced-deploy_what-is-service-configuration-v1.md  product = page.collection %}

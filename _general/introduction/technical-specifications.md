@@ -14,11 +14,12 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/unknown/General/technical-specifications/versions_operating-system-v1.md  product = page.collection %}
-{% include _inlines/unknown/General/technical-specifications/versions_supported-cloud-providers-v1.md  product = page.collection %}
-{% include _inlines/unknown/General/technical-specifications/versions_supported-frameworks-v1.md  product = page.collection %}
-{% include _inlines/unknown/General/technical-specifications/versions_component-versions-v1.md  product = page.collection %}
-{% include _inlines/unknown/General/technical-specifications/versions_components-built-via-apt-packages-v1.md  product = page.collection %}
-{% include _inlines/unknown/General/technical-specifications/versions_components-built-from-source-v1.md  product = page.collection %}
-{% include _inlines/unknown/General/technical-specifications/versions_warning-v1.md  product = page.collection %}
-{% include _inlines/unknown/General/technical-specifications/versions_important-v1.md  product = page.collection %}
+
+<a href="#operating-system"></a>{% include _inlines/unknown/General/technical-specifications/versions_operating-system-v1.md  product = page.collection %}
+<a href="#supported-cloud-providers"></a>{% include _inlines/unknown/General/technical-specifications/versions_supported-cloud-providers-v1.md  product = page.collection %}
+<a href="#supported-frameworks"></a>{% include _inlines/unknown/General/technical-specifications/versions_supported-frameworks-v1.md  product = page.collection %}
+<a href="#component-versions"></a>{% include _inlines/unknown/General/technical-specifications/versions_component-versions-v1.md  product = page.collection %}
+<a href="#components-built-via-apt-packages"></a>{% include _inlines/unknown/General/technical-specifications/versions_components-built-via-apt-packages-v1.md  product = page.collection %}
+<a href="#components-built-from-source"></a>{% include _inlines/unknown/General/technical-specifications/versions_components-built-from-source-v1.md  product = page.collection %}
+<a href="#warning"></a>{% include _inlines/unknown/General/technical-specifications/versions_warning-v1.md  product = page.collection %}
+<a href="#important"></a>{% include _inlines/unknown/General/technical-specifications/versions_important-v1.md  product = page.collection %}

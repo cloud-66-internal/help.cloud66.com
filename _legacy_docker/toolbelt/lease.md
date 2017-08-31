@@ -14,7 +14,8 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Toolbelt/common/lease/lease_temporary-lease-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/common/lease/lease_usage-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/common/lease/lease_parameters-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/common/lease/lease_example-v1.md  product = page.collection %}
+
+<a href="#temporary-lease"></a>{% include _inlines/Toolbelt/common/lease/lease_temporary-lease-v1.md  product = page.collection %}
+<a href="#usage"></a>{% include _inlines/Toolbelt/common/lease/lease_usage-v1.md  product = page.collection %}
+<a href="#parameters"></a>{% include _inlines/Toolbelt/common/lease/lease_parameters-v1.md  product = page.collection %}
+<a href="#example"></a>{% include _inlines/Toolbelt/common/lease/lease_example-v1.md  product = page.collection %}

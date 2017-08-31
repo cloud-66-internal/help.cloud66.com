@@ -14,6 +14,7 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/AddOns/common/load-balancer/load-balancer_what-is-load-balancing-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/load-balancer/load-balancer_note-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/load-balancer/load-balancer_add-a-load-balancer-v1.md  product = page.collection %}
+
+<a href="#what-is-load-balancing"></a>{% include _inlines/AddOns/common/load-balancer/load-balancer_what-is-load-balancing-v1.md  product = page.collection %}
+<a href="#note"></a>{% include _inlines/AddOns/common/load-balancer/load-balancer_note-v1.md  product = page.collection %}
+<a href="#add-a-load-balancer"></a>{% include _inlines/AddOns/common/load-balancer/load-balancer_add-a-load-balancer-v1.md  product = page.collection %}

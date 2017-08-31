@@ -14,6 +14,7 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/AddOns/common/filebeat/filebeat_about-using-filebeat-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/filebeat/filebeat_add-filebeat-to-your-stack-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/filebeat/filebeat_note-v1.md  product = page.collection %}
+
+<a href="#about-using-filebeat"></a>{% include _inlines/AddOns/common/filebeat/filebeat_about-using-filebeat-v1.md  product = page.collection %}
+<a href="#add-filebeat-to-your-stack"></a>{% include _inlines/AddOns/common/filebeat/filebeat_add-filebeat-to-your-stack-v1.md  product = page.collection %}
+<a href="#note"></a>{% include _inlines/AddOns/common/filebeat/filebeat_note-v1.md  product = page.collection %}

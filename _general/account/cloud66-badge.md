@@ -14,7 +14,7 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Account/General/cloud66-badge/cloud66-badge_you-can-use-cloud-66-to-deploy-and-manage-you-v1.md  product = page.collection %}
-{% include _inlines/Account/General/cloud66-badge/cloud66-badge_important-v1.md  product = page.collection %}
-{% include _inlines/Account/General/cloud66-badge/cloud66-badge_http-v1.md  product = page.collection %}
-{% include _inlines/Account/General/cloud66-badge/cloud66-badge_https-v1.md  product = page.collection %}
+
+<a href="#important"></a>{% include _inlines/Account/General/cloud66-badge/cloud66-badge_important-v1.md  product = page.collection %}
+<a href="#http"></a>{% include _inlines/Account/General/cloud66-badge/cloud66-badge_http-v1.md  product = page.collection %}
+<a href="#https"></a>{% include _inlines/Account/General/cloud66-badge/cloud66-badge_https-v1.md  product = page.collection %}

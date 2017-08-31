@@ -14,5 +14,5 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Tutorials/common/2003-09-26-sharing-db/2003-09-26-sharing-db_there-are-a-number-of-reasons-why-you-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/2003-09-26-sharing-db/2003-09-26-sharing-db_important-v1.md  product = page.collection %}
+
+<a href="#important"></a>{% include _inlines/Tutorials/common/2003-09-26-sharing-db/2003-09-26-sharing-db_important-v1.md  product = page.collection %}

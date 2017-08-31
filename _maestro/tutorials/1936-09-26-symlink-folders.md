@@ -14,6 +14,6 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Tutorials/common/1936-09-26-symlink-folders/1936-09-26-symlink-folders_depending-on-your-application-y-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1936-09-26-symlink-folders/1936-09-26-symlink-folders_public-folder-v1.md  product = page.collection %}
-{% include _inlines/Tutorials/common/1936-09-26-symlink-folders/1936-09-26-symlink-folders_symbolic-link-v1.md  product = page.collection %}
+
+<a href="#public-folder"></a>{% include _inlines/Tutorials/common/1936-09-26-symlink-folders/1936-09-26-symlink-folders_public-folder-v1.md  product = page.collection %}
+<a href="#symbolic-link"></a>{% include _inlines/Tutorials/common/1936-09-26-symlink-folders/1936-09-26-symlink-folders_symbolic-link-v1.md  product = page.collection %}

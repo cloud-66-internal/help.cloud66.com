@@ -14,7 +14,8 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Deployment/common/cloud66-starter/cloud66-starter_cloud-66-starter-v1.md  product = page.collection %}
-{% include _inlines/Deployment/common/cloud66-starter/cloud66-starter_get-started-v1.md  product = page.collection %}
-{% include _inlines/Deployment/common/cloud66-starter/cloud66-starter_supported-languages--v1.md  product = page.collection %}
-{% include _inlines/Deployment/common/cloud66-starter/cloud66-starter_contributing--adding-support-for-new-frame-v1.md  product = page.collection %}
+
+<a href="#cloud-66-starter"></a>{% include _inlines/Deployment/common/cloud66-starter/cloud66-starter_cloud-66-starter-v1.md  product = page.collection %}
+<a href="#get-started"></a>{% include _inlines/Deployment/common/cloud66-starter/cloud66-starter_get-started-v1.md  product = page.collection %}
+<a href="#supported-languages-frameworks"></a>{% include _inlines/Deployment/common/cloud66-starter/cloud66-starter_supported-languages--v1.md  product = page.collection %}
+<a href="#contributing-and-adding-support-for-new-frameworks-and-languages"></a>{% include _inlines/Deployment/common/cloud66-starter/cloud66-starter_contributing--adding-support-for-new-frame-v1.md  product = page.collection %}

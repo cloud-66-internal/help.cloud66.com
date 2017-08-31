@@ -14,5 +14,5 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/BetaProgram/General/cloud-66-beta-program/cloud-66-beta-program_welcome-to-the-cloud-66-beta-program--v1.md  product = page.collection %}
-{% include _inlines/BetaProgram/General/cloud-66-beta-program/cloud-66-beta-program_contact-us-v1.md  product = page.collection %}
+
+<a href="#contact-us"></a>{% include _inlines/BetaProgram/General/cloud-66-beta-program/cloud-66-beta-program_contact-us-v1.md  product = page.collection %}

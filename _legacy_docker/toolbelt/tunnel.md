@@ -14,7 +14,8 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Toolbelt/common/tunnel/tunnel_tunnel-command-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/common/tunnel/tunnel_usage-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/common/tunnel/tunnel_parameters-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/common/tunnel/tunnel_examples-v1.md  product = page.collection %}
+
+<a href="#tunnel-command"></a>{% include _inlines/Toolbelt/common/tunnel/tunnel_tunnel-command-v1.md  product = page.collection %}
+<a href="#usage"></a>{% include _inlines/Toolbelt/common/tunnel/tunnel_usage-v1.md  product = page.collection %}
+<a href="#parameters"></a>{% include _inlines/Toolbelt/common/tunnel/tunnel_parameters-v1.md  product = page.collection %}
+<a href="#examples"></a>{% include _inlines/Toolbelt/common/tunnel/tunnel_examples-v1.md  product = page.collection %}

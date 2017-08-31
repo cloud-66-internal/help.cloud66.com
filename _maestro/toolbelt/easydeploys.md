@@ -14,7 +14,8 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Toolbelt/Maestro/easydeploys/easydeploys_easydeploy-commands-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/Maestro/easydeploys/easydeploys_usage-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/Maestro/easydeploys/easydeploys_parameters-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/Maestro/easydeploys/easydeploys_example-v1.md  product = page.collection %}
+
+<a href="#easydeploy-commands"></a>{% include _inlines/Toolbelt/Maestro/easydeploys/easydeploys_easydeploy-commands-v1.md  product = page.collection %}
+<a href="#usage"></a>{% include _inlines/Toolbelt/Maestro/easydeploys/easydeploys_usage-v1.md  product = page.collection %}
+<a href="#parameters"></a>{% include _inlines/Toolbelt/Maestro/easydeploys/easydeploys_parameters-v1.md  product = page.collection %}
+<a href="#example"></a>{% include _inlines/Toolbelt/Maestro/easydeploys/easydeploys_example-v1.md  product = page.collection %}

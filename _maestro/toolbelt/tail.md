@@ -14,7 +14,7 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/Toolbelt/common/tail/tail_this-will-run-a-linux-tail-command-on-the-specified-se-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/common/tail/tail_usage-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/common/tail/tail_parameters-v1.md  product = page.collection %}
-{% include _inlines/Toolbelt/common/tail/tail_example-v1.md  product = page.collection %}
+
+<a href="#usage"></a>{% include _inlines/Toolbelt/common/tail/tail_usage-v1.md  product = page.collection %}
+<a href="#parameters"></a>{% include _inlines/Toolbelt/common/tail/tail_parameters-v1.md  product = page.collection %}
+<a href="#example"></a>{% include _inlines/Toolbelt/common/tail/tail_example-v1.md  product = page.collection %}

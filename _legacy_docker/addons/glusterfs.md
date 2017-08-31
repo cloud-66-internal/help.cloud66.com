@@ -14,10 +14,11 @@ permalink: /:collection/:path
 
 
 
-{% include _inlines/AddOns/common/glusterfs/glusterfs_what-is-glusterfs-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/glusterfs/glusterfs_why-would-i-need-glusterfs-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/glusterfs/glusterfs_how-do-i-add-glusterfs-to-my-stack-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/glusterfs/glusterfs_how-can-i-use-glusterfs-in-my-application-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/glusterfs/glusterfs_what-about-my-containers-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/glusterfs/glusterfs_fine-grained-access-control-for-your-data-v1.md  product = page.collection %}
-{% include _inlines/AddOns/common/glusterfs/glusterfs_accessing-your-glusterfs-servers-v1.md  product = page.collection %}
+
+<a href="#what-is-glusterfs"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_what-is-glusterfs-v1.md  product = page.collection %}
+<a href="#why-would-i-need-glusterfs"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_why-would-i-need-glusterfs-v1.md  product = page.collection %}
+<a href="#how-do-i-add-glusterfs-to-my-stack"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_how-do-i-add-glusterfs-to-my-stack-v1.md  product = page.collection %}
+<a href="#how-can-i-use-glusterfs-in-my-application"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_how-can-i-use-glusterfs-in-my-application-v1.md  product = page.collection %}
+<a href="#what-about-my-containers"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_what-about-my-containers-v1.md  product = page.collection %}
+<a href="#fine-grained-access-control-for-your-data"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_fine-grained-access-control-for-your-data-v1.md  product = page.collection %}
+<a href="#accessing-your-glusterfs-servers"></a>{% include _inlines/AddOns/common/glusterfs/glusterfs_accessing-your-glusterfs-servers-v1.md  product = page.collection %}
