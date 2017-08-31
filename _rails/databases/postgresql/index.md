@@ -15,11 +15,11 @@ permalink: /:collection/:path
 
 
 
-<a href="#about-deploying-postgresql"></a>{% include _inlines/Databases/rails/postgres/about-deploying-postgres-header-v1.md  product = page.collection %}
-{% include _inlines/Databases/rails/postgres/about-deploying-dbs-v1.md  product = page.collection %}
-<a href="#features"></a>{% include _inlines/Databases/rails/postgres/features-v1.md  product = page.collection %}
-<a href="#database-deployment-types"></a>{% include _inlines/Databases/rails/postgres/deployment-types-v1.md  product = page.collection %}
-<a href="#how-to-connect-to-your-postgresql-database"></a>{% include _inlines/Databases/rails/postgres/how-to-connect-v1.md  product = page.collection %}
-<a href="#environment-variables"></a>{% include _inlines/Databases/rails/postgres/env-vars-v1.md  product = page.collection %} 
-<a href="#control-your-rails-database-migrations"></a>{% include _inlines/Databases/rails/postgres/control-rails-db-migration-v1.md  product = page.collection %}
-<a href="#customize-your-database-configuration"></a>{% include _inlines/Databases/rails/postgres/customize-v1.md  product = page.collection %}
+<a href="#about-deploying-postgresql"></a>{% include _inlines/Databases/common/common/postgres/about-deploying-postgres-header-v1.md  product = page.collection %}
+{% include _inlines/Databases/common/common/postgres/about-deploying-dbs-v1.md  product = page.collection %}
+<a href="#features"></a>{% include _inlines/Databases/common/common/postgres/features-v1.md  product = page.collection %}
+<a href="#database-deployment-types"></a>{% include _inlines/Databases/common/common/postgres/deployment-types-v1.md  product = page.collection %}
+<a href="#how-to-connect-to-your-postgresql-database"></a>{% include _inlines/Databases/common/common/postgres/how-to-connect-v1.md  product = page.collection %}
+<a href="#environment-variables"></a>{% include _inlines/Databases/common/common/postgres/env-vars-v1.md  product = page.collection %} 
+<a href="#control-your-rails-database-migrations"></a>{% include _inlines/Databases/common/common/postgres/control-rails-db-migration-v1.md  product = page.collection %}
+<a href="#customize-your-database-configuration"></a>{% include _inlines/Databases/common/common/postgres/customize-v1.md  product = page.collection %}

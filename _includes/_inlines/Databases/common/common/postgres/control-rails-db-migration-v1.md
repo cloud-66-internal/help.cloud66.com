@@ -5,7 +5,7 @@ Cloud 66 chooses a server to perform the migrations - all other servers will wai
 
 You can control your Rails database migrations by setting `run.deploy.command` option through [Stack settings](/toolbelt/toolbelt-settings-command) via [Toolbelt](/toolbelt/toolbelt-introduction) which gives you the option of running migrations or not.
 
-{%include _inlines/Databases/rails/postgres/code_postgres_control-rails-db-migration-v1.md  product = include.product %}
+{%include _inlines/Databases/common/common/postgres/code_postgres_control-rails-db-migration-v1.md  product = include.product %}
 
 When you have disabled `run.deploy.command` in [Stack settings](/toolbelt/toolbelt-settings-command) , you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
 
