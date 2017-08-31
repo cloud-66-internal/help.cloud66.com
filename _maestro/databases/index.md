@@ -19,3 +19,4 @@ Cloud 66 Maestro supports the following database features:
 - [MongoDB Replica Sets](mongodb-replica-sets.html)
 
 - [PostgreSQL](postgresql)
+- [MySQL](mysql)

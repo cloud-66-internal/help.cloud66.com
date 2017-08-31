@@ -6,13 +6,12 @@ template: one-col
 title: PostgreSQL Replication
 categories: Databases
 lead: ""
-legacy: false
+legacy: true
 keywords: []
 permalink: /:collection/:path
 ---
 
 {% assign dbtype = "postgres" %}
-
 
 <a href="#about-database-replication"></a>{% include _inlines/Databases/common/database-replication/database-replication_about-database-replication-v1.md  product = page.collection %}
 <a href="#how-it-works"></a>{% include _inlines/Databases/common/database-replication/database-replication_how-it-works-v1.md  product = page.collection %}

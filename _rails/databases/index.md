@@ -20,3 +20,4 @@ Cloud 66 for Rails, supports the following databases:
 - [MongoDB Replica Sets](mongodb-replica-sets.html)
 
 - [PostgreSQL](postgresql)
+- [MySQL](mysql)

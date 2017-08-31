@@ -11,8 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign dbtype = "postgres" %}
-
+{% assign dbtype = "mysql" %}
 
 <a href="#about-database-replication"></a>{% include _inlines/Databases/common/database-replication/database-replication_about-database-replication-v1.md  product = page.collection %}
 <a href="#how-it-works"></a>{% include _inlines/Databases/common/database-replication/database-replication_how-it-works-v1.md  product = page.collection %}

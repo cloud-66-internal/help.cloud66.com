@@ -3,7 +3,7 @@ menuheaders: [ "About database replication", "How it works", "PostgreSQL", "Envi
 gitlinks: [ ]
 layout: post
 template: one-col
-title: PostgreSQL Replication
+title: MySQL Replication
 categories: Databases
 lead: ""
 legacy: false
@@ -11,7 +11,7 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-{% assign dbtype = "postgres" %}
+{% assign dbtype = "mysql" %}
 
 
 <a href="#about-database-replication"></a>{% include _inlines/Databases/common/database-replication/database-replication_about-database-replication-v1.md  product = page.collection %}

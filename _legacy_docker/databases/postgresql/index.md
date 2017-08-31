@@ -2,10 +2,10 @@
 menuheaders: [ "About deploying PostgreSQL", "Features", "Database deployment types", "How to connect to your PostgreSQL database", "Environment Variables", "Control your Rails database migrations", "Customize your database configuration" ]
 layout: post
 template: one-col
-title: PostgreSQL with Cloud 66 Maestro
+title: PostgreSQL with Cloud 66 Docker
 categories: Databases
-lead: "Using PostgreSQL on Cloud 66 Maestro for container stacks"
-legacy: false
+lead: "Using PostgreSQL on Cloud 66 for docker stacks"
+legacy: true
 recommendedName: [ "Backup", "Replication" ]
 recommendedLinks: [ "backup.html", "replication.html" ]
 keywords: []
