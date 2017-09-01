@@ -2,32 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc270081-d6cc-4afe-8b5b-192fe0d5e98e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/redis/about-deploying-redis-header-v1.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/redis/env-vars-table-v1.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/redis/backup.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/redis/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/redis/replication.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/redis/backup.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/redis/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/redis/replication.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/redis/backup.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/redis/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/redis/replication.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/redis/backup.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/redis/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/redis/replication.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.build.cloud66/Dockerfile" afterPath="$PROJECT_DIR$/.build.cloud66/Dockerfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacy_docker/databases/index.md" afterPath="$PROJECT_DIR$/_legacy_docker/databases/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacy_docker/databases/mysql/index.md" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mysql/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/index.md" afterPath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/mysql/backup.md" afterPath="$PROJECT_DIR$/_maestro/databases/mysql/backup.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacy_docker/databases/redis/index.md" afterPath="$PROJECT_DIR$/_legacy_docker/databases/redis/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/mysql/index.md" afterPath="$PROJECT_DIR$/_maestro/databases/mysql/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/postgresql/index.md" afterPath="$PROJECT_DIR$/_maestro/databases/postgresql/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/redis/index.md" afterPath="$PROJECT_DIR$/_maestro/databases/redis/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_node/databases/mysql/index.md" afterPath="$PROJECT_DIR$/_node/databases/mysql/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_node/databases/postgresql/index.md" afterPath="$PROJECT_DIR$/_node/databases/postgresql/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/backup-verifiers.md" afterPath="$PROJECT_DIR$/_rails/databases/backup-verifiers.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_node/databases/redis/index.md" afterPath="$PROJECT_DIR$/_node/databases/redis/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/mysql/index.md" afterPath="$PROJECT_DIR$/_rails/databases/mysql/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/postgresql/index.md" afterPath="$PROJECT_DIR$/_rails/databases/postgresql/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/redis/index.md" afterPath="$PROJECT_DIR$/_rails/databases/redis/index.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,19 +26,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/redis/index.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="255">
-                <caret line="17" column="108" lean-forward="false" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -117,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_rails/databases/redis/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -126,6 +100,26 @@
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.build.cloud66/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_site/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -196,6 +190,7 @@
         <option value="$PROJECT_DIR$/_rails/databases/redis/backup.md" />
         <option value="$PROJECT_DIR$/_rails/databases/redis/backup-verifier.md" />
         <option value="$PROJECT_DIR$/_rails/databases/redis/index.md" />
+        <option value="$PROJECT_DIR$/.build.cloud66/Dockerfile" />
       </list>
     </option>
   </component>
@@ -234,6 +229,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -410,6 +419,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_legacy_docker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".build.cloud66" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -630,12 +653,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504172232468</updated>
-      <workItem from="1504172237399" duration="2154000" />
+      <workItem from="1504172237399" duration="3216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2155000" />
+    <option name="totallyTimeSpent" value="3217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1010,6 +1033,30 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/style/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.build.cloud66/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
