@@ -20,4 +20,4 @@ permalink: /:collection/:path
 <a href="#database-deployment-types"></a>{% include _inlines/Databases/common/common/deployment-types-v1.md  product = page.collection %}
 <a href="#how-to-connect-to-your-postgresql-database"></a>{% include _inlines/Databases/common/common/how-to-connect-v1.md  product = page.collection %}
 <a href="#environment-variables"></a>{% include _inlines/Databases/common/common/env-vars-v1.md  product = page.collection dbtype = dbtype %} 
-<a href="#customize-your-database-configuration"></a>{% include _inlines/Databases/common/common/customize-v1.md  product = page.collection %}
+<a href="#customize-your-database-configuration"></a>{% include _inlines/Databases/common/common/customize-v1.md  product = page.collection dbtype = dbtype %}

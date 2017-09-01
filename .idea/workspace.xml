@@ -2,8 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc270081-d6cc-4afe-8b5b-192fe0d5e98e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.build.cloud66/Dockerfile" afterPath="$PROJECT_DIR$/.build.cloud66/Dockerfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mongodb/backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mongodb/customize.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mongodb/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mongodb/how-to-connect.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mongodb/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mongodb/mongodb-replica-sets.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/customize.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/how-to-connect.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/mongodb/backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/mongodb/control.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/mongodb/customize.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/mongodb/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/mongodb/how-to-connect.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/mongodb/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/mongodb/mongodb-replica-sets.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/postgresql/customize.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/postgresql/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/postgresql/how-to-connect.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/mongodb/backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/mongodb/control.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/mongodb/customize.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/mongodb/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/mongodb/how-to-connect.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/mongodb/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/mongodb/mongodb-replica-sets.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/postgresql/customize.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/postgresql/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/postgresql/how-to-connect.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/mongodb/control.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/mongodb/customize.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/mongodb/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/mongodb/how-to-connect.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/mysql/control.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/mysql/customize.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/mysql/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/mysql/how-to-connect.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/redis/control.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/redis/customize.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/redis/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/redis/how-to-connect.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/customize-v1.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/customize-v1.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/env-vars-v1.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/common/env-vars-v1.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_it-is-0-for-standalone-servers-1-f-v1.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/database-management/database-management_it-is-0-for-standalone-servers-1-f-v1.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-lionmystack-v1.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-lionmystack-v1.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-velopments-2-v1.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-velopments-2-v1.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-velopments-v1.md" afterPath="$PROJECT_DIR$/_includes/_inlines/Databases/common/mongodb-replica-sets/code_mongodb-replica-sets_configure-mongoid-velopments-v1.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacy_docker/databases/mysql/index.md" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mysql/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/index.md" afterPath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacy_docker/databases/redis/index.md" afterPath="$PROJECT_DIR$/_legacy_docker/databases/redis/index.md" />
@@ -11,7 +58,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/postgresql/index.md" afterPath="$PROJECT_DIR$/_maestro/databases/postgresql/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/redis/index.md" afterPath="$PROJECT_DIR$/_maestro/databases/redis/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_node/databases/mysql/index.md" afterPath="$PROJECT_DIR$/_node/databases/mysql/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_node/databases/postgresql/index.md" afterPath="$PROJECT_DIR$/_node/databases/postgresql/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_node/databases/redis/index.md" afterPath="$PROJECT_DIR$/_node/databases/redis/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/index.md" afterPath="$PROJECT_DIR$/_rails/databases/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/mongodb-replica-sets.md" afterPath="$PROJECT_DIR$/_rails/databases/mongodb-replica-sets.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/mysql/backup-verifier.md" afterPath="$PROJECT_DIR$/_rails/databases/mysql/backup-verifier.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/mysql/index.md" afterPath="$PROJECT_DIR$/_rails/databases/mysql/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/postgresql/index.md" afterPath="$PROJECT_DIR$/_rails/databases/postgresql/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/redis/index.md" afterPath="$PROJECT_DIR$/_rails/databases/redis/index.md" />
@@ -26,12 +77,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/index.md">
+      <file leaf-file-name="env-vars.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_rails/databases/redis/env-vars.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="360">
-                <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <first_editor relative-caret-position="210">
+                <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="how-to-connect.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_rails/databases/redis/how-to-connect.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="120">
+                <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -40,7 +104,7 @@
         </entry>
       </file>
       <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_maestro/databases/redis/index.md">
+        <entry file="file://$PROJECT_DIR$/_node/databases/mongodb/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
@@ -53,11 +117,37 @@
         </entry>
       </file>
       <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_node/databases/redis/index.md">
+        <entry file="file://$PROJECT_DIR$/_maestro/databases/mongodb/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mongodb/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="90">
-                <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+                <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customize.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mongodb/customize.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="90">
+                <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -66,11 +156,11 @@
         </entry>
       </file>
       <file leaf-file-name="backup.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_node/databases/redis/backup.md">
+        <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mongodb/backup.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="135">
-                <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -78,12 +168,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="replication.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_node/databases/redis/replication.md">
+      <file leaf-file-name="mongodb-replica-sets.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mongodb/mongodb-replica-sets.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="300">
-                <caret line="20" column="76" lean-forward="false" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+              <first_editor relative-caret-position="120">
+                <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -91,12 +181,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_rails/databases/redis/index.md">
+      <file leaf-file-name="env-vars.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mongodb/env-vars.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="315">
-                <caret line="21" column="85" lean-forward="false" selection-start-line="21" selection-start-column="85" selection-end-line="21" selection-end-column="85" />
+              <first_editor relative-caret-position="90">
+                <caret line="6" column="61" lean-forward="false" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -104,45 +194,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.build.cloud66/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_site/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="replication.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_rails/databases/redis/replication.md">
+      <file leaf-file-name="how-to-connect.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mongodb/how-to-connect.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="315">
-                <caret line="21" column="104" lean-forward="false" selection-start-line="21" selection-start-column="104" selection-end-line="21" selection-end-column="104" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="backup.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_rails/databases/redis/backup.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="195">
-                <caret line="13" column="83" lean-forward="false" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
+              <first_editor relative-caret-position="90">
+                <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -164,9 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_maestro/databases/postgresql/backup.md" />
-        <option value="$PROJECT_DIR$/_node/databases/index.md" />
-        <option value="$PROJECT_DIR$/_legacy_docker/databases/mysql/index.md" />
         <option value="$PROJECT_DIR$/_maestro/databases/mysql/index.md" />
         <option value="$PROJECT_DIR$/_maestro/databases/mysql/replication.md" />
         <option value="$PROJECT_DIR$/_maestro/databases/mysql/backup.md" />
@@ -191,6 +245,33 @@
         <option value="$PROJECT_DIR$/_rails/databases/redis/backup-verifier.md" />
         <option value="$PROJECT_DIR$/_rails/databases/redis/index.md" />
         <option value="$PROJECT_DIR$/.build.cloud66/Dockerfile" />
+        <option value="$PROJECT_DIR$/_legacy_docker/databases/postgresql/customize.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/databases/postgresql/env-vars.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/databases/postgresql/how-to-connect.md" />
+        <option value="$PROJECT_DIR$/_maestro/databases/postgresql/customize.md" />
+        <option value="$PROJECT_DIR$/_maestro/databases/postgresql/env-vars.md" />
+        <option value="$PROJECT_DIR$/_maestro/databases/postgresql/how-to-connect.md" />
+        <option value="$PROJECT_DIR$/_node/databases/postgresql/how-to-connect.md" />
+        <option value="$PROJECT_DIR$/_node/databases/postgresql/env-vars.md" />
+        <option value="$PROJECT_DIR$/_node/databases/postgresql/customize.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/mongodb/control.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/mongodb/customize.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/mongodb/env-vars.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/mongodb/how-to-connect.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/mysql/control.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/mysql/customize.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/mysql/env-vars.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/mysql/how-to-connect.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/redis/control.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/redis/customize.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/redis/env-vars.md" />
+        <option value="$PROJECT_DIR$/_rails/databases/redis/how-to-connect.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/databases/mongodb/mongodb-replica-sets.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/databases/mongodb/index.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/databases/mongodb/customize.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/databases/mongodb/backup.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/databases/mongodb/how-to-connect.md" />
+        <option value="$PROJECT_DIR$/_legacy_docker/databases/mongodb/env-vars.md" />
       </list>
     </option>
   </component>
@@ -296,7 +377,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
+              <option name="myItemId" value="mongodb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -350,7 +431,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
+              <option name="myItemId" value="postgresql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="help" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="databases" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongodb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -404,7 +507,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
+              <option name="myItemId" value="mongodb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -432,7 +535,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".build.cloud66" />
+              <option name="myItemId" value="_legacy_docker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="databases" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -448,11 +555,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_node/databases/" />
-      <recent name="$PROJECT_DIR$/_rails/databases" />
-      <recent name="$PROJECT_DIR$/_rails/databases/mysql" />
-      <recent name="$PROJECT_DIR$/_node/databases" />
+      <recent name="$PROJECT_DIR$/_legacy_docker/databases" />
       <recent name="$PROJECT_DIR$/_maestro/databases" />
+      <recent name="$PROJECT_DIR$/_node/databases" />
+      <recent name="$PROJECT_DIR$/_rails/databases/mongodb" />
+      <recent name="$PROJECT_DIR$/_rails/databases/redis" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -653,18 +760,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504172232468</updated>
-      <workItem from="1504172237399" duration="3216000" />
+      <workItem from="1504172237399" duration="4480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3217000" />
+    <option name="totallyTimeSpent" value="4481000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -694,183 +800,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_maestro/databases/postgresql/backup-verifier.md" />
-    <entry file="file://$PROJECT_DIR$/_maestro/databases/postgresql/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/databases/postgresql/backup.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_node/databases/postgresql/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/postgresql/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/databases/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_node/databases/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mysql/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/databases/mysql/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/databases/mysql/replication.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_node/databases/mysql/backup.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_node/databases/mysql/replication.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_node/databases/mysql/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/databases/mysql/backup.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/databases/mysql/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_rails/databases/mysql/replication.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_maestro/databases/mysql/backup.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/_inlines/Databases/rails/mysql/code_backup-verifier-v1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1057,6 +986,369 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/postgresql/backup.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/postgresql/replication.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/postgresql/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/postgresql/customize.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="65" lean-forward="false" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/postgresql/env-vars.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/postgresql/how-to-connect.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/databases/postgresql/customize.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="66" lean-forward="false" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/databases/postgresql/env-vars.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="65" lean-forward="false" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/databases/postgresql/how-to-connect.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="66" lean-forward="false" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_node/databases/postgresql/how-to-connect.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_node/databases/postgresql/env-vars.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_node/databases/postgresql/customize.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/mongodb/control.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/mongodb/customize.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/mongodb/env-vars.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/mongodb/how-to-connect.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/mysql/env-vars.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/postgresql/control.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/mysql/how-to-connect.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/mysql/customize.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/mysql/control.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/redis/control.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/redis/customize.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/redis/env-vars.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_rails/databases/redis/how-to-connect.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_node/databases/mongodb/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_maestro/databases/mongodb/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mongodb/how-to-connect.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mongodb/env-vars.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="61" lean-forward="false" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mongodb/customize.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mongodb/backup.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mongodb/mongodb-replica-sets.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mongodb/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

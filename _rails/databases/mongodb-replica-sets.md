@@ -13,9 +13,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
 <a href="#about-scaling-your-mongodb-servers"></a>{% include _inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_about-scaling-your-mongodb-servers-v1.md  product = page.collection %}
 <a href="#configure-a-mongodb-replica-set"></a>{% include _inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_configure-a-mongodb-replica-set-v1.md  product = page.collection %}
 <a href="#using-a-mongodb-replica-set-in-your-code"></a>{% include _inlines/Databases/common/mongodb-replica-sets/mongodb-replica-sets_using-a-mongodb-replica-set-in-your-co-v1.md  product = page.collection %}

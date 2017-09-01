@@ -61,5 +61,7 @@ The following variables are available to any database CustomConfig.
    </tbody> 
   </table> 
 		
+{% if include.dbtype == "redis" or include.dbtype == "postgres" or include.dbtype == "mysql" %}
+    {%include _inlines/Databases/common/{{ include.dbtype }}/variables-v1.md  product = include.product %}
+{% endif %}
 
-{%include _inlines/Databases/common/common/variables-v1.md  product = include.product %}

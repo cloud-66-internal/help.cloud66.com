@@ -19,6 +19,7 @@ Cloud 66 for Rails, supports the following databases:
 - [Glusterfs Scaling](glusterfs-scaling.html)
 - [MongoDB Replica Sets](mongodb-replica-sets.html)
 
-- [PostgreSQL](postgresql)
+- [MongoDB](mongodb)
 - [MySQL](mysql)
+- [PostgreSQL](postgresql)
 - [Redis](redis)

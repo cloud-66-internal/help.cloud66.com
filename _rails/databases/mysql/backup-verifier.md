@@ -11,6 +11,7 @@ permalink: /:collection/:path
 ---
 
 {% assign dbtype = "mysql" %}
+
 {% include _inlines/Databases/common/backup-verifiers/backup-verifiers_note-v1.md  product = page.collection %}
 <a href="#what-is-a-backup-verifier"></a>{% include _inlines/Databases/common/backup-verifiers/backup-verifiers_what-is-a-backup-verifier-v1.md  product = page.collection %}
 <a href="#set-up-a-backup-verifier"></a>{% include _inlines/Databases/common/backup-verifiers/backup-verifiers_set-up-a-backup-verifier-v1.md  product = page.collection %}
