@@ -2,9 +2,9 @@
 menuheaders: [ "Customize your Database Configuration" ]
 layout: post
 template: one-col
-title: Customize your MongoDB Configuration with Rails
+title: Customize your GlusterFS Configuration with Rails
 categories: Databases
-lead: "Customize your MongoDB Configuration on Cloud 66 Rails stacks"
+lead: "Customize your GlusterFS Configuration on Cloud 66 Rails stacks"
 legacy: false
 recommendedName: [ "MongoDB with Rails", "Backup", "Replication"  ]
 recommendedLinks: [ "index.html", "backup.html", " replication.html" ]

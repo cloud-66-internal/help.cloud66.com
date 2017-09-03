@@ -2,9 +2,9 @@
 menuheaders: [ "Environment Variables" ]
 layout: post
 template: one-col
-title: Environment Variables for MongoDB with Rails
+title: Environment Variables for GlusterFS with Rails
 categories: Databases
-lead: "Using MongoDB Environment Variables on Cloud 66 Rails stacks"
+lead: "Using GlusterFS Environment Variables on Cloud 66 Rails stacks"
 legacy: false
 recommendedName: [ "MongoDB with Rails", "Backup", "Replication"  ]
 recommendedLinks: [ "index.html", "backup.html", " replication.html" ]

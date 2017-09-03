@@ -2,37 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc270081-d6cc-4afe-8b5b-192fe0d5e98e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mysql/customize.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mysql/env-vars.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mysql/how-to-connect.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/redis/customize.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/redis/env-vars.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_legacy_docker/databases/redis/how-to-connect.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/mysql/customize.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/mysql/env-vars.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/mysql/how-to-connect.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/redis/customize.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/redis/env-vars.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_maestro/databases/redis/how-to-connect.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/mysql/customize.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/mysql/env-vars.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/mysql/how-to-connect.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/redis/customize.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/redis/env-vars.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_node/databases/redis/how-to-connect.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/glusterfs/backup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/glusterfs/control.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/glusterfs/customize.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/glusterfs/env-vars.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/glusterfs/how-to-connect.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_rails/databases/glusterfs/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacy_docker/databases/mysql/replication.md" afterPath="$PROJECT_DIR$/_legacy_docker/databases/mysql/replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/replication.md" afterPath="$PROJECT_DIR$/_legacy_docker/databases/postgresql/replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_legacy_docker/databases/redis/replication.md" afterPath="$PROJECT_DIR$/_legacy_docker/databases/redis/replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/mysql/replication.md" afterPath="$PROJECT_DIR$/_maestro/databases/mysql/replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/postgresql/replication.md" afterPath="$PROJECT_DIR$/_maestro/databases/postgresql/replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_maestro/databases/redis/replication.md" afterPath="$PROJECT_DIR$/_maestro/databases/redis/replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_node/databases/mysql/replication.md" afterPath="$PROJECT_DIR$/_node/databases/mysql/replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_node/databases/postgresql/replication.md" afterPath="$PROJECT_DIR$/_node/databases/postgresql/replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_node/databases/redis/replication.md" afterPath="$PROJECT_DIR$/_node/databases/redis/replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/mysql/replication.md" afterPath="$PROJECT_DIR$/_rails/databases/mysql/replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/postgresql/replication.md" afterPath="$PROJECT_DIR$/_rails/databases/postgresql/replication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/redis/replication.md" afterPath="$PROJECT_DIR$/_rails/databases/redis/replication.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/index.md" afterPath="$PROJECT_DIR$/_rails/databases/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/mongodb/control.md" afterPath="$PROJECT_DIR$/_rails/databases/mongodb/control.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/mongodb/customize.md" afterPath="$PROJECT_DIR$/_rails/databases/mongodb/customize.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/mongodb/env-vars.md" afterPath="$PROJECT_DIR$/_rails/databases/mongodb/env-vars.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/mongodb/how-to-connect.md" afterPath="$PROJECT_DIR$/_rails/databases/mongodb/how-to-connect.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_rails/databases/redis/how-to-connect.md" afterPath="$PROJECT_DIR$/_rails/databases/redis/how-to-connect.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -138,22 +120,9 @@
       <file leaf-file-name="customize.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/redis/customize.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
+            <state split_layout="FIRST">
               <first_editor relative-caret-position="0">
                 <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="backup.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/mongodb/backup.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="60">
-                <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -380,126 +349,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="databases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="databases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="databases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postgresql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="databases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mysql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="databases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongodb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="_maestro" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -632,11 +481,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_rails/databases/" />
+      <recent name="$PROJECT_DIR$/_rails/databases/mongodb" />
+      <recent name="$PROJECT_DIR$/_rails/databases/redis" />
       <recent name="$PROJECT_DIR$/_legacy_docker/databases/redis" />
       <recent name="$PROJECT_DIR$/_maestro/databases/redis" />
-      <recent name="$PROJECT_DIR$/_node/databases/redis" />
-      <recent name="$PROJECT_DIR$/_legacy_docker/databases/mysql" />
-      <recent name="$PROJECT_DIR$/_maestro/databases/mysql" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -837,17 +686,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504172232468</updated>
-      <workItem from="1504172237399" duration="5140000" />
+      <workItem from="1504172237399" duration="5518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5141000" />
+    <option name="totallyTimeSpent" value="5519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -877,17 +727,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_maestro/databases/redis/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1418,9 +1257,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/redis/customize.md">
+    <entry file="file://$PROJECT_DIR$/_rails/databases/glusterfs/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_legacy_docker/databases/redis/customize.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding />

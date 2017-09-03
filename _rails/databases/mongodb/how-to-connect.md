@@ -1,13 +1,13 @@
 ---
-menuheaders: [ "How to connect to your PostgreSQL database" ]
+menuheaders: [ "How to connect to your MongoDB database" ]
 layout: post
 template: one-col
 title: Customize your MongoDB Configuration with Rails
 categories: Databases
 lead: "Customize your MongoDB Configuration on Cloud 66 Rails stacks"
 legacy: false
-recommendedName: [ "MongoDB with Rails", "Backup Verifiers", "Backup", "Replication"  ]
-recommendedLinks: [ "index.html", "backup-verifier.html", "backup.html", " replication.html" ]
+recommendedName: [ "MongoDB with Rails", "Backup", "Replication"  ]
+recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
 keywords: []
 permalink: /:collection/:path
 ---

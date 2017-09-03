@@ -2,9 +2,9 @@
 menuheaders: [ "Control your Rails database migrations" ]
 layout: post
 template: one-col
-title: Control your MongoDB Migrations with Rails
+title: Control your GlusterFS Migrations with Rails
 categories: Databases
-lead: "Control your MongoDB Migrations on Cloud 66 Rails stacks"
+lead: "Control your GlusterFS Migrations on Cloud 66 Rails stacks"
 legacy: false
 recommendedName: [ "MongoDB with Rails", "Backup", "Replication"  ]
 recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
