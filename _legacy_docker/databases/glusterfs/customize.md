@@ -2,10 +2,10 @@
 menuheaders: [ "Customize your Database Configuration" ]
 layout: post
 template: one-col
-title: Customize your GlusterFS Configuration with Rails
+title: Customize your GlusterFS Configuration with Docker
 categories: Databases
-lead: "Customize your GlusterFS Configuration on Cloud 66 Rails stacks"
-legacy: false
+lead: "Customize your GlusterFS Configuration on Cloud 66 for docker stacks"
+legacy: true
 recommendedName: [ "GlusterFS with Rails", "Backup", "Replication"  ]
 recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
 keywords: []

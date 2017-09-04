@@ -1,5 +1,5 @@
 ---
-menuheaders: [ "About deploying MySQL", "Features", "Database deployment types", "How to connect to your MySQL database", "Environment Variables", "Control your Rails database migrations", "Customize your database configuration" ]
+menuheaders: [ "About deploying MySQL", "Features", "Database deployment types", "How to connect to your MySQL database", "Environment Variables", "Customize your database configuration" ]
 layout: post
 template: one-col
 title: MySQL with Cloud 66 Maestro

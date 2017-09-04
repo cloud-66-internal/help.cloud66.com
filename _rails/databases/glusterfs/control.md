@@ -6,7 +6,7 @@ title: Control your GlusterFS Migrations with Rails
 categories: Databases
 lead: "Control your GlusterFS Migrations on Cloud 66 Rails stacks"
 legacy: false
-recommendedName: [ "MongoDB with Rails", "Backup", "Replication"  ]
+recommendedName: [ "GlusterFS with Rails", "Backup", "Replication"  ]
 recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
 keywords: []
 permalink: /:collection/:path

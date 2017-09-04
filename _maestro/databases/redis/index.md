@@ -1,5 +1,5 @@
 ---
-menuheaders: [ "About deploying Redis", "Features", "Database deployment types", "How to connect to your Redis database", "Environment Variables", "Control your Rails database migrations", "Customize your database configuration" ]
+menuheaders: [ "About deploying Redis", "Features", "Database deployment types", "How to connect to your Redis database", "Environment Variables", "Customize your database configuration" ]
 layout: post
 template: one-col
 title: Reids with Cloud 66 Maestro

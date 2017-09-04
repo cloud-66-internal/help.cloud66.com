@@ -2,9 +2,9 @@
 menuheaders: [ "How to connect to your GlusterFS database" ]
 layout: post
 template: one-col
-title: Customize your GlusterFS Configuration with Rails
+title: Customize your GlusterFS Configuration with Node
 categories: Databases
-lead: "Customize your GlusterFS Configuration on Cloud 66 Rails stacks"
+lead: "Customize your GlusterFS Configuration on Cloud 66 for node stacks"
 legacy: false
 recommendedName: [ "GlusterFS with Rails", "Backup", "Replication"  ]
 recommendedLinks: [ "index.html", "backup.html", " replication.html" ]

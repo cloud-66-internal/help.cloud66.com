@@ -18,6 +18,8 @@ Cloud 66 Maestro supports the following database features:
 - [Glusterfs Scaling](glusterfs-scaling.html)
 - [MongoDB Replica Sets](mongodb-replica-sets.html)
 
-- [PostgreSQL](postgresql)
+- [Elasticsearch](elasticsearch)
+- [GlusterFS](glusterfs)
 - [MySQL](mysql)
+- [PostgreSQL](postgresql)
 - [Redis](redis)

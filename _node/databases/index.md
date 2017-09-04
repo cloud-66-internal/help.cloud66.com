@@ -17,6 +17,8 @@ permalink: /:collection/:categories/index.html
 - [Glusterfs Scaling](glusterfs-scaling)
 - [MongoDB Replica Sets](mongodb-replica-sets)
 
-- [PostgreSQL](postgresql)
+- [Elasticsearch](elasticsearch)
+- [GlusterFS](glusterfs)
 - [MySQL](mysql)
+- [PostgreSQL](postgresql)
 - [Redis](redis)

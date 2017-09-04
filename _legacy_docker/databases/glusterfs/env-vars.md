@@ -2,10 +2,10 @@
 menuheaders: [ "Environment Variables" ]
 layout: post
 template: one-col
-title: Environment Variables for GlusterFS with Rails
+title: Environment Variables for GlusterFS with Docker
 categories: Databases
-lead: "Using GlusterFS Environment Variables on Cloud 66 Rails stacks"
-legacy: false
+lead: "Using GlusterFS Environment Variables on Cloud 66 for docker stacks"
+legacy: true
 recommendedName: [ "GlusterFS with Rails", "Backup", "Replication"  ]
 recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
 keywords: []
