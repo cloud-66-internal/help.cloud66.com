@@ -6,8 +6,8 @@ title: PostgreSQL with Cloud 66 for Rails
 categories: Databases
 lead: "Using PostgreSQL on Cloud 66 Rails stacks"
 legacy: false
-recommendedName: [ "Backup Verifiers", "Backup", "Replication"  ]
-recommendedLinks: [ "backup-verifier.html", "backup.html", " replication.html" ]
+recommendedName: [ "Backup Verifiers", "Backup", "Backup Failure", "Replication"  ]
+recommendedLinks: [ "backup-verifier.html", "backup.html", "backup-failure.html", "replication.html" ]
 keywords: []
 permalink: /:collection/:path
 ---

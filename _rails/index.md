@@ -17,3 +17,4 @@ Cloud 66 for Rails, supports the following features:
 - [Tutorials](tutorials)
 - [Databases](databases)
 - [Deployment](deployment)
+- [Troubleshooting](troubleshooting)
