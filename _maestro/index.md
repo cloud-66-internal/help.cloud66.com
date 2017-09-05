@@ -17,3 +17,4 @@ Cloud 66 Maestro supports the following features:
 - [Tutorials](tutorials)
 - [Databases](databases)
 - [Deployment](deployment)
+- [Troubleshooting](troubleshooting)

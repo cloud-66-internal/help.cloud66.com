@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Maestro
-lead: Cloud 66 Maestro for Container Stacks
+lead: Cloud 66 for Docker Stacks
 legacy: true
 permalink: /:collection/:categories/index.html
 ---
@@ -17,3 +17,4 @@ Cloud 66 Docker supports the following features:
 - [Tutorials](tutorials)
 - [Databases](databases)
 - [Deployment](deployment)
+- [Troubleshooting](troubleshooting)

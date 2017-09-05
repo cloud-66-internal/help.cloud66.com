@@ -5,6 +5,7 @@ title:  "Skycap"
 categories: 
 lead: Using Skycap with Cloud66
 legacy: false
+permalink: /:collection/:categories/index.html
 ---
 
 

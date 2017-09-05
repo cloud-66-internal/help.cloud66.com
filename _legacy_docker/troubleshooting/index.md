@@ -1,18 +1,17 @@
 ---
 layout: post
 template: one-col
-title:  "Troubleshooting Cloud 66 for Rails"
+title:  "Troubleshooting Cloud 66 Docker"
 categories: troubleshooting
-lead: How to properly use Cloud 66 for rails stacks when times get hard
-legacy: false
+lead: How to properly use Cloud 66 for docker stacks when times get hard
+legacy: true
 permalink: /:collection/:categories/index.html
 ---
 
-Cloud 66 for Rails supports the following Troubleshooting guides:
+Cloud 66 Docker supports the following Troubleshooting guides:
 
 - [Backup Failure](backup-failure.html)
 - [Deployment Failure](deployment-failure.html)
 - [Lets Encrypt](lets-encrypt.html)
 - [Redeployment Hook](redeployment-hook.html)
 - [SSH](ssh.html)
-- [Troubleshoot Deploy Hooks](deploy-hooks.html)

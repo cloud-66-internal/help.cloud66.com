@@ -5,6 +5,7 @@ title:  "Node"
 categories:
 lead: Using Node with Cloud66
 legacy: false
+permalink: /:collection/:categories/index.html
 ---
 
 
@@ -17,3 +18,4 @@ legacy: false
  - [Stack Management](stack-management)
  - [Toolbelt](toolbelt)
  - [Tutorials](tutorials)
+ - [Troubleshooting](troubleshooting)
