@@ -5,7 +5,7 @@ template: one-col
 title: Environment Variables for InfluxDB with Docker
 categories: Databases
 lead: "Using InfluxDB Environment Variables on Cloud 66 for docker stacks"
-legacy: false
+legacy: true
 recommendedName: [ "InfluxDB with Docker", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
 keywords: []

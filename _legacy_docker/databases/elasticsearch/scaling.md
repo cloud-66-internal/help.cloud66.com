@@ -6,7 +6,7 @@ template: one-col
 title: Elasticsearch Scaling
 categories: Databases
 lead: ""
-legacy: false
+legacy: true
 recommendedName: [ "Elasticsearch with Docker", "Backup"  ]
 recommendedLinks: [ "index.html", "backup.html"]
 keywords: []

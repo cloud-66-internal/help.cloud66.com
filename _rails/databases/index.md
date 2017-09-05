@@ -25,4 +25,6 @@ Cloud 66 for Rails, supports the following databases:
 - [MongoDB](mongodb)
 - [MySQL](mysql)
 - [PostgreSQL](postgresql)
+- [RabbitMQ](rabbitmq)
 - [Redis](redis)
+- [SQLite](sqlite)

@@ -21,6 +21,10 @@ Cloud 66 Docker supports the following database features:
 
 - [Elasticsearch](elasticsearch)
 - [GlusterFS](glusterfs)
+- [InfluxDB](influxdb)
+- [MongoDB](mongodb)
 - [MySQL](mysql)
 - [PostgreSQL](postgresql)
+- [RabbitMQ](rabbitmq)
 - [Redis](redis)
+- [SQLite](sqlite)

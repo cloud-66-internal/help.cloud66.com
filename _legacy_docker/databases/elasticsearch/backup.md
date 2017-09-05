@@ -5,7 +5,7 @@ template: one-col
 title: Elasticsearch Backup
 categories: Databases
 lead: ""
-legacy: false
+legacy: true
 keywords: []
 permalink: /:collection/:path
 ---

@@ -5,7 +5,7 @@ template: one-col
 title: Environment Variables for Elasticsearch with Docker
 categories: Databases
 lead: "Using ElasticSearch Environment Variables on Cloud 66 for docker stacks"
-legacy: false
+legacy: true
 recommendedName: [ "Elasticsearch with Docker", "Backup"  ]
 recommendedLinks: [ "index.html", "backup.html" ]
 keywords: []

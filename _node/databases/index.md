@@ -19,6 +19,10 @@ permalink: /:collection/:categories/index.html
 
 - [Elasticsearch](elasticsearch)
 - [GlusterFS](glusterfs)
+- [InfluxDB](influxdb)
+- [MongoDB](mongodb)
 - [MySQL](mysql)
 - [PostgreSQL](postgresql)
+- [RabbitMQ](rabbitmq)
 - [Redis](redis)
+- [SQLite](sqlite)
