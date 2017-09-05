@@ -6,8 +6,8 @@ title: Elasticsearch with Cloud 66 Rails
 categories: Databases
 lead: "Using Elasticsearch on Cloud 66 for rails stacks"
 legacy: false
-recommendedName: [ "Backup", "Replication" ]
-recommendedLinks: [ "backup.html", "replication.html" ]
+recommendedName: [ "Backup"]
+recommendedLinks: [ "backup.html" ]
 keywords: []
 permalink: /:collection/:path
 ---

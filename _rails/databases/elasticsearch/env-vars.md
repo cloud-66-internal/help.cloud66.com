@@ -2,12 +2,12 @@
 menuheaders: [ "Environment Variables" ]
 layout: post
 template: one-col
-title: Environment Variables for ElasticSearch with Rails
+title: Environment Variables for Elasticsearch with Rails
 categories: Databases
-lead: "Using ElasticSearch Environment Variables on Cloud 66 Rails stacks"
+lead: "Using ElasticSearch Environment Variables on Cloud 66 for rails stacks"
 legacy: false
-recommendedName: [ "Elasticsearch with Rails", "Backup", "Replication"  ]
-recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
+recommendedName: [ "Elasticsearch with Rails", "Backup" ]
+recommendedLinks: [ "index.html", "backup.html" ]
 keywords: []
 permalink: /:collection/:path
 ---

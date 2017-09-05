@@ -6,8 +6,8 @@ title: GlusterFS with Cloud 66 Node
 categories: Databases
 lead: "Using GlusterFS on Cloud 66 for node stacks"
 legacy: false
-recommendedName: [ "Backup", "Replication" ]
-recommendedLinks: [ "backup.html", "replication.html" ]
+recommendedName: [ "Backup" ]
+recommendedLinks: [ "backup.html"]
 keywords: []
 permalink: /:collection/:path
 ---

@@ -6,8 +6,8 @@ title: Environment Variables for GlusterFS with Docker
 categories: Databases
 lead: "Using GlusterFS Environment Variables on Cloud 66 for docker stacks"
 legacy: true
-recommendedName: [ "GlusterFS with Rails", "Backup", "Replication"  ]
-recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
+recommendedName: [ "GlusterFS with Docker", "Backup"  ]
+recommendedLinks: [ "index.html", "backup.html" ]
 keywords: []
 permalink: /:collection/:path
 ---

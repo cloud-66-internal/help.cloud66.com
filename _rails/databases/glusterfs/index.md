@@ -1,13 +1,13 @@
 ---
-menuheaders: [ "About deploying GlusterFS", "Features", "Database deployment types", "How to connect to your GlusterFS database", "Environment Variables", "Control your Rails database migrations", "Customize your database configuration" ]
+menuheaders: [ "About deploying GlusterFS", "Features", "Database deployment types", "How to connect to your GlusterFS database", "Environment Variables", "Control your Rails database migrations", "Customize your database configuration", "About scaling your GlusterFS cluster" ]
 layout: post
 template: one-col
 title: GlusterFS with Cloud 66 Rails
 categories: Databases
 lead: "Using GlusterFS on Cloud 66 for rails stacks"
 legacy: false
-recommendedName: [ "Backup", "Replication" ]
-recommendedLinks: [ "backup.html", "replication.html" ]
+recommendedName: [ "Backup" ]
+recommendedLinks: [ "backup.html"]
 keywords: []
 permalink: /:collection/:path
 ---
@@ -23,5 +23,5 @@ permalink: /:collection/:path
 <a href="#control-your-rails-database-migrations"></a>{% include _inlines/Databases/rails/common/control-rails-db-migration-v1.md  product = page.collection %}
 <a href="#customize-your-database-configuration"></a>{% include _inlines/Databases/common/common/customize-v1.md  product = page.collection dbtype = dbtype %}
 <a href="#about-scaling-your-glusterfs-cluster"></a>{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_about-scaling-your-glusterfs-cluster-v1.md  product = page.collection %}
-<a href="#configure-a-glusterfs-replica_count"></a>{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_configure-a-glusterfs-replica_count-v1.md  product = page.collection %}
-<a href="#note"></a>{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_note-v1.md  product = page.collection %}
+{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_configure-a-glusterfs-replica_count-v1.md  product = page.collection %}
+{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_note-v1.md  product = page.collection %}

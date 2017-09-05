@@ -6,8 +6,8 @@ title: GlusterFS with Cloud 66 Docker
 categories: Databases
 lead: "Using GlusterFS on Cloud 66 for docker stacks"
 legacy: true
-recommendedName: [ "Backup", "Replication" ]
-recommendedLinks: [ "backup.html", "replication.html" ]
+recommendedName: [ "Backup" ]
+recommendedLinks: [ "backup.html"]
 keywords: []
 permalink: /:collection/:path
 ---

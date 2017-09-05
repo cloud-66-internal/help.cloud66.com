@@ -6,8 +6,8 @@ title: Customize your Elasticsearch Configuration with Rails
 categories: Databases
 lead: "Customize your Elasticsearch Configuration on Cloud 66 Rails stacks"
 legacy: false
-recommendedName: [ "Elasticsearch with Rails", "Backup", "Replication"  ]
-recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
+recommendedName: [ "Elasticsearch with Rails", "Backup"  ]
+recommendedLinks: [ "index.html", "backup.html" ]
 keywords: []
 permalink: /:collection/:path
 ---

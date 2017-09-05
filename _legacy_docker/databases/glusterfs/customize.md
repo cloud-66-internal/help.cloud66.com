@@ -6,8 +6,8 @@ title: Customize your GlusterFS Configuration with Docker
 categories: Databases
 lead: "Customize your GlusterFS Configuration on Cloud 66 for docker stacks"
 legacy: true
-recommendedName: [ "GlusterFS with Rails", "Backup", "Replication"  ]
-recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
+recommendedName: [ "GlusterFS with Docker", "Backup" ]
+recommendedLinks: [ "index.html", "backup.html" ]
 keywords: []
 permalink: /:collection/:path
 ---

@@ -6,8 +6,8 @@ title: Environment Variables for GlusterFS with Maestro
 categories: Databases
 lead: "Using GlusterFS Environment Variables on Cloud 66 Maestro for container stacks"
 legacy: false
-recommendedName: [ "GlusterFS with Rails", "Backup", "Replication"  ]
-recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
+recommendedName: [ "GlusterFS with Maestro", "Backup" ]
+recommendedLinks: [ "index.html", "backup.html" ]
 keywords: []
 permalink: /:collection/:path
 ---

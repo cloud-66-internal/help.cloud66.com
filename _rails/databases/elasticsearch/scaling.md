@@ -7,8 +7,8 @@ title: Elasticsearch Scaling
 categories: Databases
 lead: ""
 legacy: false
-recommendedName: [ "Elasticsearch with Rails", "Backup", "Replication"  ]
-recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
+recommendedName: [ "Elasticsearch with Rails", "Backup" ]
+recommendedLinks: [ "index.html", "backup.html" ]
 keywords: []
 permalink: /:collection/:path
 ---

@@ -7,8 +7,8 @@ title: GlusterFS Scaling
 categories: Databases
 lead: ""
 legacy: false
-recommendedName: [ "GlusterFS with Rails", "Backup", "Replication"  ]
-recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
+recommendedName: [ "GlusterFS with Rails", "Backup" ]
+recommendedLinks: [ "index.html", "backup.html"]
 keywords: []
 permalink: /:collection/:path
 ---
