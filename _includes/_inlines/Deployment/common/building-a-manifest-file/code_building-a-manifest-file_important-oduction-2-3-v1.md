@@ -1,7 +1,6 @@
 <!-- layout:code post: building-a-manifest-file_important -->
 
 ```
-
 production:
     rails:
         server:
@@ -14,5 +13,4 @@ production:
             root_disk_type: ssd
             subnet_id: subnet-40000000
             availability_zone: us-east-1c
-
 ```

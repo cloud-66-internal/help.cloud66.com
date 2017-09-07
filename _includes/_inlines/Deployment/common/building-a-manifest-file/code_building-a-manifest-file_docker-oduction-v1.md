@@ -1,7 +1,6 @@
 <!-- usedin: [ _includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_docker-v1.md] -->
 
 ```
-
 production:
     docker:
         configuration:
@@ -12,5 +11,4 @@ production:
             root_disk_type: ssd
             image_keep_count: 5
             nameservers: ['8.8.8.8', '8.8.4.4']
-
 ```

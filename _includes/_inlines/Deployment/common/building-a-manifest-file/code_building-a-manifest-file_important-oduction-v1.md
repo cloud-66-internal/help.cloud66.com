@@ -1,7 +1,6 @@
 <!-- layout:code post: building-a-manifest-file_important -->
 
 ```
-
 production:
     rails:
         configuration:
@@ -17,5 +16,4 @@ production:
             root_disk_size: 100
             root_disk_type: ssd
             nameservers: ['8.8.8.8', '8.8.4.4']
-
 ```

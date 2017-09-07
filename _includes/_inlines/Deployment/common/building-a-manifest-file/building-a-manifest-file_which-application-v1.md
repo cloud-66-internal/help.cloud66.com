@@ -5,18 +5,18 @@
 
 Next, select which application you would like to specify settings for. You can choose from the following:
 
-*   [Docker](#docker)
-*   [ElasticSearch](#elastic)
-*   [Gateway](#gluster)
-*   [GlusterFS](#gluster)
-*   [Load balancers](#load_balancer)
+{% if include.product == "maestro" or include.product == "legacy_docker" %}*   [Docker](#docker){% endif %}
+*   [ElasticSearch](#elasticsearch)
+*   [Gateway](#gateway)
+*   [GlusterFS](#glusterfs)
+*   [Load balancers](#load-balancers)
 *   [Memcached](#memcached)
-*   [MongoDB](#mongo)
+*   [MongoDB](#mongodb)
 *   [MySQL](#mysql)
 *   [Nginx](#nginx)
 *   [PostGIS](#postgis)
 *   [PostgreSQL](#postgresql)
-*   [Rails](#rails)
 *   [Redis](#redis)
 *   [Sinatra](#sinatra)
+{% if include.product == "rails" %}*   [Rails](#rails){% endif %}
 

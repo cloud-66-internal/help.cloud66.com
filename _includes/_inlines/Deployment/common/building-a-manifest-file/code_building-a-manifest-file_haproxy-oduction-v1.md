@@ -1,7 +1,6 @@
 <!-- usedin: [ _includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_haproxy-v1.md] -->
 
 ```
-
 production:
     load_balancer:
         servers:
@@ -21,5 +20,4 @@ production:
             errorfile_502: /etc/haproxy/errors/502.http
             errorfile_503: /etc/haproxy/errors/503.http
             errorfile_504: /etc/haproxy/errors/504.https
-
 ```

@@ -1,7 +1,6 @@
 <!-- usedin: [ _includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_note-v1.md] -->
 
 ```
-
 production:
 	glusterfs:
 		configuration:
@@ -21,5 +20,4 @@ production:
 				access_control:
 			  		read: ['web']
 			  		write: ['web']
-
 ```

@@ -1,7 +1,6 @@
 <!-- usedin: [ _includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_processes-v1.md] -->
 
 ```
-
 production:
   procfile_metadata:
     worker:
@@ -11,5 +10,4 @@ production:
       web_server_stop_signals: usr1, 30, kill
     nsq:
       restart_on_deploy: false
-
 ```

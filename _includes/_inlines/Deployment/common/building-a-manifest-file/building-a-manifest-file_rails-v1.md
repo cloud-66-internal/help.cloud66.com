@@ -1,6 +1,6 @@
 <!-- usedin: [ _legacy_docker/deployment/building-a-manifest-file-v1.md, _maestro/Deployment/building-a-manifest-file-v1.md, _node/deployment/building-a-manifest-file-v1.md, _rails/deployment/building-a-manifest-file-v1.md, _skycap/deployment/building-a-manifest-file-v1.md] -->
 
-
+{% if include.product == 'rails' %}
 ### Rails
 
 A Rails application type in the manifest file gives you fine control over things like the Ruby version or the server the rails application is deployed on.
@@ -39,3 +39,4 @@ production:
             root_disk_type: ssd
             nameservers: ['8.8.8.8', '8.8.4.4']
 ```
+{% endif %}

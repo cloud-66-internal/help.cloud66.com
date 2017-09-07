@@ -1,7 +1,6 @@
 <!-- usedin: [ _includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_postgresql-v1.md] -->
 
 ```
-
 production:
     postgresql:
         configuration:
@@ -9,5 +8,4 @@ production:
             postgis: true
             root_disk_size: 100
             root_disk_type: ssd
-
 ```

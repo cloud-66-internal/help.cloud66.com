@@ -1,7 +1,6 @@
 <!-- usedin: [ _includes/_inlines/Deployment/common/building-a-manifest-file/building-a-manifest-file_cors-configuration-v1.md] -->
 
 ```
-
 production:
     rails:
         configuration:
@@ -11,5 +10,4 @@ production:
                     methods: 'GET, OPTIONS'
                     headers: 'Custom-Header, Another-Header'
                     credentials: true
-
 ```
