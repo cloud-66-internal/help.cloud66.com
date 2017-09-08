@@ -2,7 +2,7 @@
 menuheaders: [ "What is a backup verifier?", "Set up a backup verifier", "View backup verification status", "Pricing" ]
 layout: post
 template: one-col
-title: PostgresQL Backup Verification
+title: PostgreSQL Backup Verification
 categories: Databases
 lead: ""
 legacy: false

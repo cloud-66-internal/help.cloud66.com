@@ -1,7 +1,7 @@
 
 ## Customize your database configuration
 
-You can customize the database configuration on your servers using [CustomConfig](/database-management/database-management#customize). CustomConfig is available for MySQL, PostgreSQL, Redis and MongoDB.
+You can customize the database configuration on your servers using [CustomConfig](https://help.cloud66.com/{{ include.dbtype }}/stack-management/custom-config.html). CustomConfig is available for MySQL, PostgreSQL, Redis and MongoDB.
 
 Editing and committing your database CustomConfig will perform the following steps on every database server in your stack, one by one, sequentially:
 
@@ -12,9 +12,12 @@ Editing and committing your database CustomConfig will perform the following ste
 - Upload the configuration to the server
 - Restart your database
 
-### Warning
+<div class="notice notice-warning">
+
+Warning!
 
 A bad database configuration might stop your database from working. Take extra care to make sure the configuration is correct.
+</div>
 
 ### Database customization variables
 

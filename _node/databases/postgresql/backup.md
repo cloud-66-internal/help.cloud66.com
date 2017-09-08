@@ -10,11 +10,12 @@ keywords: []
 permalink: /:collection/:path
 ---
 
+{% assign dbtype = "postgres" %}
 
 
 <a href="#what-is-the-database-backup-add-in"></a>{% include _inlines/Databases/common/database-backup/database-backups_what-is-the-database-backup-add-in-v1.md  product = page.collection %}
 <a href="#backup-types"></a>{% include _inlines/Databases/common/database-backup/database-backups_backup-types-v1.md  product = page.collection %}
-<a href="#managed-backups"></a>{% include _inlines/Databases/common/database-backup/database-backups_managed-backups-v1.md  product = page.collection %}
+<a href="#managed-backups"></a>{% include _inlines/Databases/common/database-backup/database-backups_managed-backups-v1.md  product = page.collection dbtype = dbtype %}
 <a href="#unmanaged-backups"></a>{% include _inlines/Databases/common/database-backup/database-backups_unmanaged-backups-v1.md  product = page.collection %}
 <a href="#backup-format"></a>{% include _inlines/Databases/common/database-backup/database-backups_backup-format-v1.md  product = page.collection %}
 <a href="#binary"></a>{% include _inlines/Databases/common/database-backup/database-backups_binary-v1.md  product = page.collection %}

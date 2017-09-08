@@ -7,7 +7,7 @@ When Cloud 66 takes database backup it needs **twice** the size of your database
   - Increasing the size of the hard disk
   - **Danger:** We highly discourage you from doing this one as it may result in taking the db down if there is not enough space. 
   
-  As a temporary solution until you try one of the above, you can disable the `free-space-calculation` step by [disabling the stack's db.check.backup.size](https://help.cloud66.com/article/59-toolbelt-settings-command).
+  As a temporary solution until you try one of the above, you can disable the `free-space-calculation` step by [disabling the stack's db.check.backup.size](https://help.cloud66.com/{{ include.product }}/toolbelt/settings.html).
 
 2. If you get this error: canceling statement due to conflict with recovery 
   Running queries on hot-standby server is somewhat tricky — it can fail, because during querying some needed rows might be updated or deleted on primary. As a primary does not know that a query is started on secondary it thinks it can clean up (vacuum) old versions of its rows. Then secondary has to replay this cleanup, and has to forcibly cancel all queries which can use these rows. There are some workarounds for it:

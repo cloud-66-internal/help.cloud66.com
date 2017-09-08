@@ -1,7 +1,7 @@
 <!--  usedin: [ _legacy_docker/Databases/database-backup-v1.md, _maestro/Databases/database-backup-v1.md, _node/Databases/database-backup-v1.md, _rails/databases/database-backup-v1.md] -->
 
 
-#### Manually download
+### Manually download
 
 In download backup page (Cloud66 dashboard), you have this option to manually download backups. By clicking on **Manually download backups** you will see some signed(time bound) generated link(s) for your backup (Or its part if it is greater than 350MB). 
 You can use **curl** to download it : 

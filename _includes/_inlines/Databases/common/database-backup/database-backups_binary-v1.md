@@ -1,7 +1,7 @@
 <!-- usedin: [ _legacy_docker/Databases/database-backup-v1.md, _maestro/Databases/database-backup-v1.md, _node/Databases/database-backup-v1.md, _rails/databases/database-backup-v1.md] -->
 
 
-#### Binary
+### Binary
 
 For binary backups we are taking a snapshot of the data folder of your database service and applying needed logs to have a consistent data folder. The result is a data folder which can be restored on your server to return it in the same state as it was at the time of backup. 
 As this backup contains raw data of your database server(Instead of human readable SQL dump file) you can expect much faster backup/restore process, specially for large databases this method can be faster up to 4 times which can be very helpful in failover scenarios. But there are some limitation :

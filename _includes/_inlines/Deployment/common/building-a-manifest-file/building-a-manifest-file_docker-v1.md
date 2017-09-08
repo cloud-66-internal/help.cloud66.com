@@ -19,19 +19,10 @@
   <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 
 
-
-
 {%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_docker-oduction-v1.md  product = include.product %}
 
 
-
-
-
-
 {%include _inlines/Deployment/common/building-a-manifest-file/code_building-a-manifest-file_docker-oduction-2-v1.md  product = include.product %}
-
-
-
 
 * * *
 
