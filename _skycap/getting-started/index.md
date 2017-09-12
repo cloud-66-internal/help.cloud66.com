@@ -13,7 +13,6 @@ legacy: false
 - [custom git repo](custom-git-repo)
 - [Dockerfiles](dockerfile)
 - [Connecting to Docker Image Repository](image-repository)
-- [Networking Ports](networking-ports)
 - [Choosing Server Size](server-size)
 - [Service Networking](service-networking)
 - [Stack Environments](stack-environments)
