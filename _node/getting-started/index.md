@@ -9,7 +9,7 @@ legacy: false
 
 
 - [Advanced Deploy](advanced-deploy)
-- [Connecting to Git Repository](custom-git-repo)
+- [Connecting your Git Repository](custom-git-repo)
 - [Networking Ports](networking-ports)
 - [Choosing Server Size](server-size)
 - [Stack Definition](stack-definition)
