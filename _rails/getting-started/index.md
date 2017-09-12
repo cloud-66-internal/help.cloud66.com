@@ -11,7 +11,7 @@ permalink: /:collection/:categories/index.html
 Cloud 66 for Rails, supports the following Getting Started guides:
 
 - [Advanced deployment](advanced-deploy.html)
-- [Custom Git repository](custom-git-repo.html)
+- [Connecting to your Git repository](custom-git-repo.html)
 - [Networking ports](networking-ports.html)
 - [Stack Definition](stack-definition.html)
 - [Choosing server size](server-size.html)
