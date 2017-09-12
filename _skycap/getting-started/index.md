@@ -10,9 +10,8 @@ legacy: false
 
 
 - [Advanced Deploy](advanced-deploy)
-- [custom git repo](custom-git-repo)
+- [Connecting to your Git repository](custom-git-repo)
 - [Dockerfiles](dockerfile)
 - [Connecting to Docker Image Repository](image-repository)
 - [Choosing Server Size](server-size)
-- [Service Networking](service-networking)
 - [Stack Environments](stack-environments)
