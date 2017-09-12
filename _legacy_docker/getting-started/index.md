@@ -10,8 +10,8 @@ permalink: /:collection/:categories/index.html
 
 Cloud 66 Docker has the following Getting Started guides:
 
-- [Advanced Deployment](advanced-deploy-v1.md)
-- [Connecting to Git Repository](custom-git-repo.html)
+- [Advanced Deploy](advanced-deploy-v1.md)
+- [Connecting your Git Repository](custom-git-repo.html)
 - [Docker Getting Started (Deployment)](docker-getting-started-deployments.html)
 - [Docker Getting Started (Building Images)](docker-getting-started.html)
 - [Dockerfile](dockerfile.html)
