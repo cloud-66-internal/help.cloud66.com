@@ -20,8 +20,11 @@ A Rails application type in the manifest file gives you fine control over things
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your stack.  
      -  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git submodules from being pulled during a build. 
-## Important
+
+<div class="notice notice-important">
+Important!
 In order to use vpc_id, you must provide subnet_id for all servers in your stack.
+</div>
 ```
 production:
     rails:

@@ -1,9 +1,11 @@
 <!-- usedin: [ _legacy_docker/deployment/building-a-manifest-file-v1.md, _maestro/Deployment/building-a-manifest-file-v1.md, _node/deployment/building-a-manifest-file-v1.md, _rails/deployment/building-a-manifest-file-v1.md, _skycap/deployment/building-a-manifest-file-v1.md] -->
 
-
-## Important
+<div class="notice notice-important">
+Important!
 
 Only a single cloud vendor and region is supported for servers in a stack.
+</div>
+
 ```
 production:
     rails:
