@@ -1,7 +1,7 @@
 <!-- usedin: [ _legacy_docker/deployment/building-a-manifest-file-v1.md, _maestro/Deployment/building-a-manifest-file-v1.md, _node/deployment/building-a-manifest-file-v1.md, _rails/deployment/building-a-manifest-file-v1.md, _skycap/deployment/building-a-manifest-file-v1.md] -->
 
 
-#### Shared Servers
+### Shared Servers
 
 You can share a server between two applications. This could be in cases like using the same server for both your Rails app and the MySQL server behind it.
 

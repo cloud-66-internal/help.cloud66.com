@@ -3,7 +3,7 @@
 
 ## What is a manifest file?
 
-A manifest file allows you to be more explicit about your stack composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your stack. See [Getting started with manifest files](/building-your-stack/getting-started-with-manifest-files) for an introduction.
+A manifest file allows you to be more explicit about your stack composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your stack. See [Getting started with manifest files](https://help.cloud66.com/{{ include.product }}/deployment/getting-started-with-manifest-files.html) for an introduction.
 
 {% if include.product == "rails" %}
 For _Rails/Rack_ stacks, place a file called `manifest.yml` in a folder named `.cloud66`, that is in turn located in the root of your source code and checked into your repository.

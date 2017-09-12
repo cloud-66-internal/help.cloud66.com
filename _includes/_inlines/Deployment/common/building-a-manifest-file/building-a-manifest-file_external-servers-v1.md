@@ -1,7 +1,7 @@
 <!--  usedin: [ _legacy_docker/deployment/building-a-manifest-file-v1.md, _maestro/Deployment/building-a-manifest-file-v1.md, _node/deployment/building-a-manifest-file-v1.md, _rails/deployment/building-a-manifest-file-v1.md, _skycap/deployment/building-a-manifest-file-v1.md] -->
 
 
-#### External Servers
+### External Servers
 
 If you would like to use an external server for an application (like using your own MySQL or AWS RDS for example), you can define that server as external.
 

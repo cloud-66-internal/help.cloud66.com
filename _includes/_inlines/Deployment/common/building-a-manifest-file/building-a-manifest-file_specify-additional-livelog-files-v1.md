@@ -12,5 +12,5 @@ Each application type supports the additional partial configuration to add custo
 
 
 
-For more information about **LiveLogs** and additional examples, please see the [LiveLogs help page](http://help.cloud66.com/managing-your-stack/live-logs).
+For more information about **LiveLogs** and additional examples, please see the [LiveLogs help page](http://help.cloud66.com/{{ include.product }}/stack-management/live-logs.html).
 

@@ -7,11 +7,9 @@ title: Getting Started with Rails / Rack stacks
 categories: Deployment
 lead: ""
 legacy: false
-
 keywords: []
 permalink: /:collection/:path
 ---
-
 
 
 

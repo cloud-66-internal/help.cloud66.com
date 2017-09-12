@@ -3,7 +3,7 @@
 <div class="notice notice-important">
 Important!
 
-You are **required** to specify a [server](/building-your-stack/building-your-manifest-file#servers) for application types, whereas configurations are **optional**.
+You are <b>required</b> to specify a <a href="#which-server">server</a> for application types, whereas configurations are <b>optional</b>.
 </div>
 
 
