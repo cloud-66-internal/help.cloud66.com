@@ -10,7 +10,7 @@ permalink: /:collection/:categories/index.html
 
 Cloud 66 Maestro has the following Getting Started guides:
 
-- [Custom Git repository](custom-git-repo.html)
+- [Connecting to Git Repository](custom-git-repo.html)
 - [Dockerfile](dockerfile.html)
 - [Connecting to Docker Image Repository](image-repository.html)
 - [Networking Ports](networking-ports.html)
