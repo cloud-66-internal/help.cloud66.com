@@ -1,4 +1,4 @@
-<!-- usedin: [ _legacy_docker/getting-started/networking-ports-v1.md, _maestro/getting-started/networking-ports-v1.md, _node/getting-started/networking-ports-v1.md, _rails/getting-started/networking-ports-v1.md, _skycap/getting-started/networking-ports-v1.md] -->
+<!-- usedin: [ _legacy_docker/getting-started/networking-ports-v1.md, _maestro/getting-started/networking-ports-v1.md, _node/getting-started/networking-ports-v1.md ] -->
 
 
 This is used to expose your service to the outside world. Outside world includes any server/computer out of the stack. So if you even have two stacks and one needs a service from the other one you need to expose your service/container. 
