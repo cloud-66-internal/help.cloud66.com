@@ -6,14 +6,10 @@ template: one-col
 title: Deploy to your cloud
 categories: Deployment
 lead: ""
-legacy: true
-
+legacy: false
 keywords: []
 permalink: /:collection/:path
 ---
-
-
-
 
 
 <a href="#about-deploying-to-the-cloud"></a>{% include _inlines/Deployment/common/cloud-deployment/cloud-deployment_about-deploying-to-the-cloud-v1.md  product = page.collection %}

@@ -6,12 +6,10 @@ template: one-col
 title: Microsoft Azure cloud
 categories: Deployment
 lead: ""
-legacy: true
-
+legacy: false
 keywords: []
 permalink: /:collection/:path
 ---
-
 
 
 

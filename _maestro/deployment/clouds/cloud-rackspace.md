@@ -7,13 +7,9 @@ title: Rackspace Cloud
 categories: Deployment
 lead: ""
 legacy: false
-
 keywords: []
 permalink: /:collection/:path
 ---
-
-
-
 
 
 <a href="#about-using-rackspace-cloud"></a>{% include _inlines/Deployment/common/cloud-rackspace/cloud-rackspace_about-using-rackspace-cloud-v1.md  product = page.collection %}

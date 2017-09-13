@@ -6,7 +6,7 @@ template: one-col
 title: Cloud-A cloud
 categories: Deployment
 lead: ""
-legacy: true
+legacy: false
 
 keywords: []
 permalink: /:collection/:path
