@@ -109,9 +109,10 @@ bodyclass: post
     overflow: scroll;
     color: mediumseagreen;
     top: 0px;
-    z-index: 10;
-    left: 0px;
-    width: 15%;">
+    z-index: 100;
+    left: 5px;
+    width: 15%;
+    bottom: 10px;">
 {% if site.data.sitemap.toc2[0] %}
 <h2>{{ site.data.sitemap.docs_list_title }}</h2>
   {% for item in site.data.sitemap.toc2 %}
@@ -133,7 +134,7 @@ bodyclass: post
     {% endfor %}
 {% endif %}
 </div>
-</div>
+
 
 <div style="
    z-index: 10;
