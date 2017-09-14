@@ -8,12 +8,12 @@ toc2:
           - page: PostgreSQL
             url: https://help.cloud66.works/legacy_docker/databases/postgresql/
           - page: MySQL
-            url: https://help.cloud66.works/legacy_docker/deployment/mysql/
+            url: https://help.cloud66.works/legacy_docker/databases/mysql/
       - page: Deployment
         url: https://help.cloud66.works/legacy_docker/deployment/
         subsubfolderitems:
           - page: Clouds
-            url: https://help.cloud66.works/legacy_docker/databases/clouds/
+            url: https://help.cloud66.works/legacy_docker/deployment/clouds/
           - page: Build your manifest file
             url: https://help.cloud66.works/legacy_docker/deployment/building-a-manifest-file.html
   - title: Maestro
@@ -24,12 +24,12 @@ toc2:
           - page: PostgreSQL
             url: https://help.cloud66.works/maestro/databases/postgresql/
           - page: MySQL
-            url: https://help.cloud66.works/maestro/deployment/mysql/
+            url: https://help.cloud66.works/maestro/databases/mysql/
       - page: Deployment
         url: https://help.cloud66.works/maestro/deployment/
         subsubfolderitems:
           - page: Clouds
-            url: https://help.cloud66.works/maestro/databases/clouds/
+            url: https://help.cloud66.works/maestro/deployment/clouds/
           - page: Build your manifest file
             url: https://help.cloud66.works/maestro/deployment/building-a-manifest-file.html
   - title: Node
@@ -40,12 +40,12 @@ toc2:
           - page: PostgreSQL
             url: https://help.cloud66.works/node/databases/postgresql/
           - page: MySQL
-            url: https://help.cloud66.works/node/deployment/mysql/
+            url: https://help.cloud66.works/node/databases/mysql/
       - page: Deployment
         url: https://help.cloud66.works/node/deployment/
         subsubfolderitems:
           - page: Clouds
-            url: https://help.cloud66.works/node/databases/clouds/
+            url: https://help.cloud66.works/node/deployment/clouds/
           - page: Build your manifest file
             url: https://help.cloud66.works/node/deployment/building-a-manifest-file.html
   - title: Rails
@@ -56,11 +56,11 @@ toc2:
           - page: PostgreSQL
             url: https://help.cloud66.works/rails/databases/postgresql/
           - page: MySQL
-            url: https://help.cloud66.works/rails/deployment/mysql/
+            url: https://help.cloud66.works/rails/databases/mysql/
       - page: Deployment
         url: https://help.cloud66.works/rails/deployment/
         subsubfolderitems:
           - page: Clouds
-            url: https://help.cloud66.works/rails/databases/clouds/
+            url: https://help.cloud66.works/rails/deployment/clouds/
           - page: Build your manifest file
             url: https://help.cloud66.works/rails/deployment/building-a-manifest-file.html

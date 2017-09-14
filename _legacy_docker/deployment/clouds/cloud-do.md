@@ -6,7 +6,7 @@ template: one-col
 title: DigitalOcean cloud
 categories: Deployment
 lead: ""
-legacy: false
+legacy: true
 
 keywords: []
 permalink: /:collection/:path
