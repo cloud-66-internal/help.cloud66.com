@@ -100,6 +100,41 @@ bodyclass: post
     </aside>
 </article>
 
+
+<div style="
+    position: fixed;
+    top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: scroll;
+    color: mediumseagreen;
+    top: 0px;
+    z-index: 10;
+    left: 0px;
+    width: 15%;">
+{% if site.data.sitemap.toc2[0] %}
+<h2>{{ site.data.sitemap.docs_list_title }}</h2>
+  {% for item in site.data.sitemap.toc2 %}
+    <h3>{{ item.title }}</h3>
+      {% if item.subfolderitems[0] %}
+        <ul>
+          {% for entry in item.subfolderitems %}
+              <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+                {% if entry.subsubfolderitems[0] %}
+                  <ul style="margin-left:10px;">
+                  {% for subentry in entry.subsubfolderitems %}
+                      <li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+                  {% endfor %}
+                  </ul>
+                {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+{% endif %}
+</div>
+</div>
+
 <div style="
    z-index: 10;
    top: 100px;
