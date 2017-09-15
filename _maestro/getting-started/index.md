@@ -10,6 +10,8 @@ permalink: /:collection/:categories/index.html
 
 Cloud 66 Maestro has the following Getting Started guides:
 
+- [Getting Started with Maestro](maestro-getting-started.html)
+- [Docker service configuration](docker-service-config.html)
 - [Connecting to Git Repository](custom-git-repo.html)
 - [Dockerfile](dockerfile.html)
 - [Connecting to Docker Image Repository](image-repository.html)

@@ -7,7 +7,6 @@ title: Getting started with Node.js stacks
 categories: Deployment
 lead: ""
 legacy: false
-
 keywords: []
 permalink: /:collection/:path
 ---

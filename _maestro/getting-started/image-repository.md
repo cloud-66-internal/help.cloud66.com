@@ -7,12 +7,9 @@ title: Connecting to Docker Image Repository
 categories: getting-started
 lead: ""
 legacy: false
-
 keywords: []
 permalink: /:collection/:path
 ---
-
-
 
 
 

@@ -10,6 +10,7 @@ permalink: /:collection/:categories/index.html
 
 Cloud 66 Docker supports the following deployment features:
 
+- [Advanced Deployment](advanced-deploy.html)
 - [BuildGrid](build-grid.html)
 - [Building a Manifest File](building-a-manifest-file.html)
 - [Building your service](building-your-service.html)

@@ -8,18 +8,9 @@ legacy: false
 ---
 
 
-
+- [Advanced Deployment](advanced-deploy.html)
 - [Building your Manifest File](building-a-manifest-file)
 - [Building your Docker Service](building-your-service)
-- [Amazon Web Services](cloud-aws)
-- [Microsoft Azure](cloud-azure)
-- [Cloud-A](cloud-clouda)
-- [Deploy to your Cloud](cloud-deployment)
-- [DigitalOcean](cloud-do)
-- [Google Compute Engine](cloud-gce)
-- [Linode](cloud-linode)
-- [Packet](cloud-packet)
-- [Rackspace](cloud-rackspace)
 - [Configure your DNS](configure-dns)
 - [Container Port Mapping](container-ports)
 - [Deploy Hooks](deploy-hooks)

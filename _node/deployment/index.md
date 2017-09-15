@@ -8,7 +8,7 @@ legacy: false
 ---
 
 
-
+- [Advanced Deployment](advanced-deploy.html)
 - [Specific Settings for your Node.js Application](application-settings-node)
 - [Building your Manifest File](building-a-manifest-file)
 - [Clouds](clouds)

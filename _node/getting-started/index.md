@@ -10,6 +10,7 @@ legacy: false
 
 - [Advanced Deploy](advanced-deploy)
 - [Connecting your Git Repository](custom-git-repo)
+- [Getting Started with Node.js Based Stacks](getting-started.md)
 - [Networking Ports](networking-ports)
 - [Choosing Server Size](server-size)
 - [Stack Definition](stack-definition)

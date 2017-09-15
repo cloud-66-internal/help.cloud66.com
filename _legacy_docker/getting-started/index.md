@@ -14,6 +14,7 @@ Cloud 66 Docker has the following Getting Started guides:
 - [Connecting your Git Repository](custom-git-repo.html)
 - [Docker Getting Started (Deployment)](docker-getting-started-deployments.html)
 - [Docker Getting Started (Building Images)](docker-getting-started.html)
+- [Docker Service Configuration](docker-sevice-config.html)
 - [Dockerfile](dockerfile.html)
 - [Connecting to Docker Image Repository](image-repository.html)
 - [Networking Ports](networking-ports.html)
