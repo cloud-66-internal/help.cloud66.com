@@ -7,13 +7,11 @@ title: Jobs
 categories: AddOns
 lead: ""
 legacy: false
-
+recommendedName: [ "Add a shell command", "Rake Tasks" ]
+recommendedLinks: [ "shell.html", "rake-task.html" ]
 keywords: []
 permalink: /:collection/:path
 ---
-
-
-
 
 
 <a href="#overview"></a>{% include _inlines/AddOns/common/add-ins-jobs/add-ins-jobs_overview-v1.md  product = page.collection %}

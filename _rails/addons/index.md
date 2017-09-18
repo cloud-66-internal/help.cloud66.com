@@ -11,7 +11,7 @@ permalink: /:collection/:categories/index.html
 Cloud 66 for Rails supports the following add-ons features:
 
 - [Add-in Implementation](add-in-implementation.html)
-- [Add-ins Jobs](add-ins-jobs.html)
+- [Add-ins Jobs](jobs)
 - [Custom Server](custom-server.html)
 - [Custom Web-Servers](custom-web-servers.html)
 - [Database Bacakups](database-backups.html)
@@ -28,5 +28,4 @@ Cloud 66 for Rails supports the following add-ons features:
 - [Rabbitmq](rabbitmq.html)
 - [Rake-task](rake-task.html)
 - [Redis](redis.html)
-- [Shell](shell.html)
-- [SSL](ssl.html)
+- [SSL](ssl)

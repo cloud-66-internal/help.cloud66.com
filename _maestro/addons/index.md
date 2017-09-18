@@ -11,7 +11,7 @@ permalink: /:collection/:categories/index.html
 Cloud 66 for Maestro, supports the following AddOns features:
 
 - [Add-in Implementation](add-in-implementation.html)
-- [Add-ins Jobs](add-ins-jobs.html)
+- [Add-ins Jobs](jobs)
 - [Custom Server](custom-server.html)
 - [Custom Web-Servers](custom-web-servers.html)
 - [Database Bacakups](database-backups.html)
@@ -22,12 +22,10 @@ Cloud 66 for Maestro, supports the following AddOns features:
 - [Glusterfs](glusterfs.html)
 - [HAProxy](haproxy.html)
 - [Influxdb](influxdb.html)
-- [Let's encrypt](lets-encrypt.html)
 - [Load Balancer](load-balancer.html)
 - [Load Balancing](load-balancing.html)
 - [Logentries](logentries.html)
 - [Memcached](memcached.html)
 - [Rabbitmq](rabbitmq.html)
 - [Redis](redis.html)
-- [Shell](shell.html)
-- [SSL Certificate](ssl.html)
+- [SSL Certificate](ssl)

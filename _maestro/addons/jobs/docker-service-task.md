@@ -6,7 +6,6 @@ title: Docker Service Task
 categories: AddOns
 lead: ""
 legacy: false
-
 keywords: []
 permalink: /:collection/:path
 ---

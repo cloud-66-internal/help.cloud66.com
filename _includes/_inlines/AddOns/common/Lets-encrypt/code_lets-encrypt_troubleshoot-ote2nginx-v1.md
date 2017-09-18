@@ -1,8 +1,7 @@
 <!-- usedin: [ _includes/_inlines/AddOns/common/Lets-encrypt/lets-encrypt_troubleshoot-v1.md] -->
 
 ```
-{% raw %}
-http {
+{% raw %}http {
     .
     .
     .
@@ -81,7 +80,5 @@ http {
         .
         .
         }
-    }
-    
-{% endraw %}
+    }{% endraw %}
 ```

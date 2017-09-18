@@ -7,7 +7,6 @@ title: Unicorn Rack Server
 categories: Deployment
 lead: ""
 legacy: false
-
 keywords: []
 permalink: /:collection/:path
 ---

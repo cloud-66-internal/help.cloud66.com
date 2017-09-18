@@ -6,8 +6,9 @@ template: one-col
 title: Jobs
 categories: AddOns
 lead: ""
-legacy: true
-
+recommendedName: [ "Server Tasks", "Service Tasks" ]
+recommendedLinks: [ "docker-server-task.html", "docker-service-task.html" ]
+legacy: false
 keywords: []
 permalink: /:collection/:path
 ---

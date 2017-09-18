@@ -11,7 +11,7 @@ permalink: /:collection/:categories/index.html
 
 - [Let's Encrypt](lets-encrypt)
 - [Add-In Implementation](add-in-implementation)
-- [Jobs](add-ins-jobs)
+- [Jobs](jobs)
 - [Custom Server](custom-server)
 - [Custom Web Servers](custom-web-servers)
 - [Database Backups](database-backups)
@@ -26,5 +26,4 @@ permalink: /:collection/:categories/index.html
 - [Memcached](memcached)
 - [RabbitMQ](rabbitmq)
 - [Redis](redis)
-- [Shell](shell)
 - [SSL](ssl)
