@@ -5,6 +5,7 @@ title:  "Skycap Getting Started"
 categories: getting-started
 lead: Getting Started with Cloud 66 Skycap
 legacy: false
+permalink: /:collection/:categories/index.html
 ---
 
 

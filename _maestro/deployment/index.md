@@ -10,6 +10,7 @@ permalink: /:collection/:categories/index.html
 
 Cloud 66 Maestro supports the following deployment features:
 
+- [Advanced deployment](advanced-deploy.html)
 - [Building a Manifest File](building-a-manifest-file.html)
 - [Clouds](clouds)
 - [Configure your DNS](configure-dns.html)

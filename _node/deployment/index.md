@@ -5,6 +5,7 @@ title:  "Deployment for Node"
 categories: deployment
 lead: Deployment of stacks with Cloud 66 for Node
 legacy: false
+permalink: /:collection/:categories/index.html
 ---
 
 

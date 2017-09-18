@@ -13,7 +13,6 @@ Cloud 66 for Rails, supports the following deployment features:
 - [Advanced Deployment](advanced-deploy.html)
 - [Asset Pipeline](asset-pipeline.html)
 - [Building a Manifest File](building-a-manifest-file.html)
-- [Building your Classic Stack](building-your-classic-stack.html)
 - [Clouds](clouds)
 - [Cloud66 Starter](cloud66-starter.html)
 - [Configure DNS](configure-dns.html)

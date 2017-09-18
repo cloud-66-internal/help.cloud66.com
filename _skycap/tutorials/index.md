@@ -5,6 +5,7 @@ title:  "Skycap Tutorials"
 categories: tutorials
 lead: Tutorials for Cloud 66 Skycap
 legacy: false
+permalink: /:collection/:categories/index.html
 ---
 
 

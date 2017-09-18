@@ -5,6 +5,7 @@ title:  "Node Stack Management"
 categories: stack-management
 lead: Managing Stacks with Cloud 66 for Node
 legacy: false
+permalink: /:collection/:categories/index.html
 ---
 
 

@@ -5,6 +5,7 @@ title:  "Using Skycap for Deployment"
 categories: deployment
 lead: Building with Cloud 66 Skycap for Deployment
 legacy: false
+permalink: /:collection/:categories/index.html
 ---
 
 

@@ -5,6 +5,7 @@ title:  "Skycap for Stack Management"
 categories: stack-management
 lead: Cloud 66 Skycap with Stack Management
 legacy: false
+permalink: /:collection/:categories/index.html
 ---
 
 

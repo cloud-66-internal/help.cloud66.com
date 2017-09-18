@@ -5,6 +5,7 @@ title:  "Node Tutorials"
 categories: tutorials
 lead: Cloud 66 tutorials for Node
 legacy: false
+permalink: /:collection/:categories/index.html
 ---
 
 
