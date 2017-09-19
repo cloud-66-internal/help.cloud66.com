@@ -100,6 +100,30 @@ bodyclass: post
     </aside>
 </article>
 
+
+<div style="
+    position: fixed;
+    top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: scroll;
+    color: mediumseagreen;
+    top: 0px;
+    z-index: 100;
+    left: 5px;
+    width: 15%;
+    bottom: 10px;">
+<h3>Getting Started</h3>
+<ul>
+    {% for doc in site.docs %}
+      {% if doc.category == "getting-started" %}
+        <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+</ul>
+</div>
+
+
 <div style="
    z-index: 10;
    top: 100px;

@@ -16,7 +16,7 @@ permalink: /:collection/:path
 <a href="#about-database-replication"></a>{% include _inlines/Databases/common/database-replication/database-replication_about-database-replication-v1.md  product = page.collection %}
 <a href="#how-it-works"></a>{% include _inlines/Databases/common/database-replication/database-replication_how-it-works-v1.md  product = page.collection %}
 <a href="#{{ dbtype }}"></a>{% include _inlines/Databases/common/{{ dbtype }}/database-replication_{{ dbtype }}-v1.md  product = page.collection %}
-<a href="#environment-variables"></a>{% include _inlines/Databases/common/common/env-vars-v1.md  product = page.collection dbtype = dbtype %} 
+<a href="#environment-variables"></a>{% include _inlines/Databases/common/mysql/env-vars-v1.md  product = page.collection dbtype = dbtype %} 
 <a href="#enable-database-replication"></a>{% include _inlines/Databases/common/database-replication/database-replication_enable-database-replication-v1.md  product = page.collection %}
 <a href="#important"></a>{% include _inlines/Databases/common/database-replication/database-replication_important-v1.md  product = page.collection %}
 <a href="#single-stack"></a>{% include _inlines/Databases/common/database-replication/database-replication_single-stack-v1.md  product = page.collection %}

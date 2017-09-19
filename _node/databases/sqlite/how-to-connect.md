@@ -14,4 +14,4 @@ permalink: /:collection/:path
 
 {% assign dbtype = "sqlite" %}
 
-<a href="#how-to-connect-to-your-{{ dbtype }}-database"></a>{% include _inlines/Databases/common/common/how-to-connect-v1.md dbtype = dbtype product = page.collection %}
+<a href="#how-to-connect-to-your-{{ dbtype }}-database"></a>{% include _inlines/Databases/common/sqlite/how-to-connect-v1.md dbtype = dbtype product = page.collection %}

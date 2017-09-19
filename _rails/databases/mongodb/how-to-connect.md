@@ -14,4 +14,4 @@ permalink: /:collection/:path
 
 {% assign dbtype = "mongodb" %}
 
-<a href="#how-to-connect-to-your-{{ dbtype }}-database"></a>{% include _inlines/Databases/common/common/how-to-connect-v1.md dbtype = dbtype product = page.collection %}
+<a href="#how-to-connect-to-your-{{ dbtype }}-database"></a>{% include _inlines/Databases/common/mongodb/how-to-connect-v1.md dbtype = dbtype product = page.collection %}

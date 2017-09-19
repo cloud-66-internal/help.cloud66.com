@@ -14,4 +14,4 @@ permalink: /:collection/:path
 
 {% assign dbtype = "redis" %}
 
-<a href="#environment-variables"></a>{% include _inlines/Databases/common/common/env-vars-v1.md  product = page.collection dbtype = dbtype %} 
+<a href="#environment-variables"></a>{% include _inlines/Databases/common/redis/env-vars-v1.md  product = page.collection dbtype = dbtype %} 

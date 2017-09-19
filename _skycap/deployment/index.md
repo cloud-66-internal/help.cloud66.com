@@ -12,6 +12,7 @@ permalink: /:collection/:categories/index.html
 - [Advanced Deployment](advanced-deploy.html)
 - [Building your Manifest File](building-a-manifest-file)
 - [Building your Docker Service](building-your-service)
+- [Cloud 66 Starter](cloud66-starter)
 - [Configure your DNS](configure-dns)
 - [Container Port Mapping](container-ports)
 - [Deploy Hooks](deploy-hooks)

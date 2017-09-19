@@ -13,6 +13,7 @@ Cloud 66 Maestro supports the following deployment features:
 - [Advanced deployment](advanced-deploy.html)
 - [Building a Manifest File](building-a-manifest-file.html)
 - [Clouds](clouds)
+- [Habitus](habitus)
 - [Configure your DNS](configure-dns.html)
 - [Container Port Mapping](container-ports.html)
 - [Deploy Hooks](deploy-hooks.html)

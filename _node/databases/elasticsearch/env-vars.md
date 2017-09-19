@@ -14,4 +14,4 @@ permalink: /:collection/:path
 
 {% assign dbtype = "elasticsearch" %}
 
-<a href="#environment-variables"></a>{% include _inlines/Databases/common/common/env-vars-v1.md  product = page.collection dbtype = dbtype %} 
+<a href="#environment-variables"></a>{% include _inlines/Databases/common/elasticsearch/env-vars-v1.md  product = page.collection dbtype = dbtype %} 

@@ -14,4 +14,4 @@ permalink: /:collection/:path
 
 {% assign dbtype = "rabbitmq" %}
 
-<a href="#customize-your-database-configuration"></a>{% include _inlines/Databases/common/common/customize-v1.md  product = page.collection dbtype = dbtype %}
+<a href="#customize-your-database-configuration"></a>{% include _inlines/Databases/common/rabbitmq/customize-v1.md  product = page.collection dbtype = dbtype %}

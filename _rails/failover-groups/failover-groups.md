@@ -7,12 +7,9 @@ title: Failover groups
 categories: failover-groups
 lead: ""
 legacy: false
-
 keywords: []
 permalink: /:collection/:path
 ---
-
-
 
 
 <a href="#what-is-a-failover-group"></a>{% include _inlines/FailoverGroups/common/failover-groups/failover-groups_what-is-a-failover-group--v1.md  product = page.collection %}
