@@ -20,5 +20,5 @@ permalink: /:collection/:path
 <a href="#database-deployment-types"></a>{% include _inlines/Databases/common/redis/deployment-types-v1.md  product = page.collection %}
 <a href="#how-to-connect-to-your-{{ dbtype }}-database"></a>{% include _inlines/Databases/common/redis/how-to-connect-v1.md dbtype = dbtype product = page.collection %}
 <a href="#environment-variables"></a>{% include _inlines/Databases/common/redis/env-vars-v1.md  product = page.collection dbtype = dbtype %} 
-<a href="#control-your-rails-database-migrations"></a>{% include _inlines/Databases/rails/common/control-rails-db-migration-v1.md  product = page.collection %}
+<a href="#control-your-rails-database-migrations"></a>{% include _inlines/Databases/rails/control-db-migrations/control-rails-db-migration-v1.md  product = page.collection %}
 <a href="#customize-your-database-configuration"></a>{% include _inlines/Databases/common/redis/customize-v1.md  product = page.collection  dbtype = dbtype %}

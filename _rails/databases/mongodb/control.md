@@ -12,4 +12,4 @@ keywords: []
 permalink: /:collection/:path
 ---
 
-<a href="#control-your-rails-database-migrations"></a>{% include _inlines/Databases/rails/common/control-rails-db-migration-v1.md  product = page.collection %}
+<a href="#control-your-rails-database-migrations"></a>{% include _inlines/Databases/rails/control-db-migrations/control-rails-db-migration-v1.md  product = page.collection %}

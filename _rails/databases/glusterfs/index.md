@@ -20,7 +20,7 @@ permalink: /:collection/:path
 <a href="#database-deployment-types"></a>{% include _inlines/Databases/common/glusterfs/deployment-types-v1.md  product = page.collection %}
 <a href="#how-to-connect-to-your-{{ dbtype }}-database"></a>{% include _inlines/Databases/common/glusterfs/how-to-connect-v1.md dbtype = dbtype product = page.collection %}
 <a href="#environment-variables"></a>{% include _inlines/Databases/common/glusterfs/env-vars-v1.md  product = page.collection dbtype = dbtype %} 
-<a href="#control-your-rails-database-migrations"></a>{% include _inlines/Databases/rails/common/control-rails-db-migration-v1.md  product = page.collection %}
+<a href="#control-your-rails-database-migrations"></a>{% include _inlines/Databases/rails/control-db-migrations/control-rails-db-migration-v1.md  product = page.collection %}
 <a href="#customize-your-database-configuration"></a>{% include _inlines/Databases/common/glusterfs/customize-v1.md  product = page.collection dbtype = dbtype %}
 <a href="#about-scaling-your-glusterfs-cluster"></a>{% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_about-scaling-your-glusterfs-cluster-v1.md  product = page.collection %}
 {% include _inlines/Databases/common/glusterfs-scaling/glusterfs-scaling_configure-a-glusterfs-replica_count-v1.md  product = page.collection %}
