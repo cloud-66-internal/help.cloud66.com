@@ -1,0 +1,30 @@
+
+.tab{
+	list-style-type: none;
+	top: 155px;
+	left: 22%;
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+    height: 300px; /* Full height */
+    position: absolute; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.tab li{
+	display: inline;
+    float: left;
+}
+
+.tab li a{
+	display: block;
+    padding: 4px;
+}
+
+.tab li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}

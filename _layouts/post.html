@@ -5,6 +5,16 @@ bodyclass: post
 
 {% assign current_cat = page.categories %}
 
+<ul class="tab">
+    {% for tab in page.tabs %}
+    {% assign last_url = page.url | split: '/' %}
+    {% assign url = "https://help.cloud66.works/" | append: tab %}
+    {% for i in (2..last_url.size) %}
+        {% assign url = url | append: '/' | append: last_url[i] %}
+    {% endfor %}
+    <li><a href="{{ url | downcase }}">{{ tab | capitalize }}</a></li>
+    {% endfor %}
+</ul>
 <nav class="crumbs container">
     {% include contents_link.html %}
     <a rel="home" href="/">
@@ -116,6 +126,10 @@ bodyclass: post
 {% if site.data.sitemap.toc2[0] %}
 <h2>{{ site.data.sitemap.docs_list_title }}</h2>
   {% for item in site.data.sitemap.toc2 %}
+  {% assign url = page.url | split: '/' %}
+  {% assign collection = url[1] | downcase %}
+  {% assign title = item.title | downcase %}
+  {% if title == collection %}
     <h3>{{ item.title }}</h3>
       {% if item.subfolderitems[0] %}
         <ul>
@@ -130,6 +144,7 @@ bodyclass: post
                 {% endif %}
           {% endfor %}
         </ul>
+        {% endif %}
       {% endif %}
     {% endfor %}
 {% endif %}

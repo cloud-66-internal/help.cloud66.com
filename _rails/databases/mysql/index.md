@@ -1,6 +1,6 @@
 ---
 menuheaders: [ "About deploying MySQL", "Features", "Database deployment types", "How to connect to your MySQL database", "Environment Variables", "Control your Rails database migrations", "Customize your database configuration" ]
-layout: post
+layout: postTest
 template: one-col
 title: MySQL with Cloud 66 Rails
 categories: Databases
@@ -8,6 +8,7 @@ lead: "Using MySQL on Cloud 66 for rails stacks"
 legacy: false
 recommendedName: [ "Backup Verifiers", "Backup", "Replication" ]
 recommendedLinks: [ "backup-verifier.html", "backup.html", "replication.html" ]
+tabs: [ "Legacy_Docker", "maestro", "Node" ]
 keywords: []
 permalink: /:collection/:path
 ---
