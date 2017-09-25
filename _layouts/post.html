@@ -111,32 +111,27 @@ bodyclass: post
 </article>
 
 
-<div style="
-    position: fixed;
-    top: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    overflow: scroll;
-    color: mediumseagreen;
-    top: 0px;
-    z-index: 100;
-    left: 5px;
-    width: 15%;
-    bottom: 10px;">
+<div class="navigation">
 {% if site.data.sitemap.toc2[0] %}
 <h2>{{ site.data.sitemap.docs_list_title }}</h2>
+  
   {% for item in site.data.sitemap.toc2 %}
+  
   {% assign url = page.url | split: '/' %}
   {% assign collection = url[1] | downcase %}
   {% assign title = item.title | downcase %}
+
   {% if title == collection %}
     <h3>{{ item.title }}</h3>
       {% if item.subfolderitems[0] %}
-        <ul>
+        <ul style="list-style-type: circle;">
           {% for entry in item.subfolderitems %}
               <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
                 {% if entry.subsubfolderitems[0] %}
-                  <ul style="margin-left:10px;">
+                  <ul style="margin-left:22px;
+                             margin-bottom: 15px;
+                             font-size: 12px;
+                             list-style-type: circle;">
                   {% for subentry in entry.subsubfolderitems %}
                       <li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
                   {% endfor %}
