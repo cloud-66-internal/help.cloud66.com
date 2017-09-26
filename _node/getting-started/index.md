@@ -8,11 +8,10 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-- [Dockerfile](dockerfile)
-- [Advanced Deploy](advanced-deploy)
-- [Connecting your Git Repository](custom-git-repo)
+- [Stack Definition](stack-definition)
 - [Getting Started with Node.js Based Stacks](getting-started)
+- [Dockerfile](dockerfile)
+- [Connecting your Git Repository](custom-git-repo)
+- [Advanced Deploy](advanced-deploy)
 - [Networking Ports](networking-ports)
 - [Choosing Server Size](server-size)
-- [Stack Definition](stack-definition)
-- [Stack Environments](stack-environments)

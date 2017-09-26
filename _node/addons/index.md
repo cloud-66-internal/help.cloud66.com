@@ -9,21 +9,20 @@ permalink: /:collection/:categories/index.html
 ---
 
 
-- [Let's Encrypt](lets-encrypt)
 - [Add-In Implementation](add-in-implementation)
-- [Jobs](jobs)
-- [Custom Server](custom-server)
-- [Custom Web Servers](custom-web-servers)
 - [Database Backups](database-backups)
-- [Elasticsearch](elasticsearch)
-- [Filebeat](filebeat)
-- [Glusterfs](glusterfs)
-- [HAProxy](haproxy)
-- [InfluxDB](influxdb)
-- [Load Balancer](load-balancer)
-- [Load Balancing](load-balancing)
+- [SSL Certificate](ssl)
+
 - [Logentries](logentries)
-- [Memcached](memcached)
+- [Filebeat](filebeat)
+
+- [Add-ins Jobs](jobs)
+- [Load Balancing](load-balancing)
+- [HAProxy](haproxy)
+- [Elasticsearch](elasticsearch)
+- [Glusterfs](glusterfs)
+- [InfluxDB](influxdb)
 - [RabbitMQ](rabbitmq)
 - [Redis](redis)
-- [SSL](ssl)
+- [Memcached](memcached)
+- [Custom Server](custom-server)

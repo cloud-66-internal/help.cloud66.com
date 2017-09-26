@@ -9,13 +9,12 @@ permalink: /:collection/:categories/index.html
 ---
 
 
-
- - [Add-Ons](addons)
- - [Databases](databases)
- - [Deployment](deployment)
- - [Failover Groups](failover-groups)
- - [Getting Started](getting-started)
- - [Stack Management](stack-management)
- - [Toolbelt](toolbelt)
- - [Tutorials](tutorials)
- - [Troubleshooting](troubleshooting)
+- [Getting Started](getting-started)
+- [Deployment](deployment)
+- [Databases](databases)
+- [Stack Management](stack-management)
+- [Toolbelt](toolbelt)
+- [AddOns](addons)
+- [Failover Groups](failover-groups)
+- [Tutorials](tutorials)
+- [Troubleshooting](troubleshooting)

@@ -10,8 +10,8 @@ permalink: /:collection/:categories/index.html
 
 Cloud 66 Maestro supports the following troubleshooting guides:
 
-- [Backup Failure](backup-failure.html)
-- [Deployment Failure](deployment-failure.html)
-- [Lets Encrypt](lets-encrypt.html)
-- [Redeployment Hook](redeployment-hook.html)
 - [SSH](ssh.html)
+- [Lets Encrypt](lets-encrypt.html)
+- [Deployment Failure](deployment-failure.html)
+- [Backup Failure](backup-failure.html)
+- [Redeployment Hook](redeployment-hook.html)

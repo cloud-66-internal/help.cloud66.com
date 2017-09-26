@@ -10,13 +10,15 @@ permalink: /:collection/:categories/index.html
 
 Cloud 66 Maestro has the following Getting Started guides:
 
+- [Stack Definition](stack-definition.html)
 - [Getting Started with Maestro](maestro-getting-started.html)
+- [Dockerfile](dockerfile.html)
 - [Docker service configuration](docker-service-config.html)
 - [Connecting to Git Repository](custom-git-repo.html)
-- [Dockerfile](dockerfile.html)
 - [Connecting to Docker Image Repository](image-repository.html)
+
+<!-- keep second one -->
 - [Networking Ports](networking-ports.html)
-- [Choosing Server Size](server-size.html)
 - [Service Networking](service-networking.html)
-- [Stack Definition](stack-definition.html)
-- [Stack Environments](stack-environments.html)
+
+- [Choosing Server Size](server-size.html)

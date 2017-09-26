@@ -8,21 +8,19 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-- [Backup Verifiers](backup-verifiers)
-- [Database Backup](database-backup)
-- [Database Import](database-import)
-- [Database Management](database-management)
-- [Databaseb Replication](database-replication)
-- [Elasticsearch  Scaling](elasticsearch-scaling)
-- [Glusterfs Scaling](glusterfs-scaling)
-- [MongoDB Replica Sets](mongodb-replica-sets)
 
-- [Elasticsearch](elasticsearch)
-- [GlusterFS](glusterfs)
-- [InfluxDB](influxdb)
-- [MongoDB](mongodb)
 - [MySQL](mysql)
 - [PostgreSQL](postgresql)
-- [RabbitMQ](rabbitmq)
 - [Redis](redis)
+- [Elasticsearch](elasticsearch)
+- [MongoDB](mongodb)
+- [RabbitMQ](rabbitmq)
+- [GlusterFS](glusterfs)
+- [InfluxDB](influxdb)
 - [SQLite](sqlite)
+
+- [Backup Verification](backup-verifiers.html)
+- [Database Backup](database-backup.html)
+- [Database one-time Import](database-import.html)
+- [Database Mangement](database-management.html)
+- [Database Replication](database-replication.html)
