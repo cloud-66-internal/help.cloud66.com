@@ -15,3 +15,4 @@ Cloud 66 for Node stacks supports the following Troubleshooting guides:
 - [Lets Encrypt](lets-encrypt.html)
 - [Redeployment Hook](redeployment-hook.html)
 - [SSH](ssh.html)
+- [Troubleshoot Deploy Hooks](deploy-hooks.html)

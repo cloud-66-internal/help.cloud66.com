@@ -8,9 +8,8 @@ permalink: /:collection/:categories/index.html
 ---
 
 
-
-- [Beta Program](beta-program)
 - [Introduction](introduction)
-- [Partners](partners)
-- [Teams](teams)
 - [Account](account)
+- [Teams](teams)
+- [Partners](partners)
+- [Beta Program](beta-program)
