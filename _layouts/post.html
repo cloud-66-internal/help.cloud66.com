@@ -15,12 +15,12 @@ bodyclass: post
     <li><a href="{{ url | downcase }}">{{ tab | capitalize }}</a></li>
     {% endfor %}
 </ul>
-<nav class="crumbs container">
+
+<!--
+<div class="crumbs container">
     {% include contents_link.html %}
-    <a rel="home" href="/">
-        <img src="//cdn.cloud66.com/images/logo.svg" alt="Cloud 66" width="40" class="pull-right logo-sml">
-    </a>
-</nav>
+</div>
+-->
 
 <article class="article container">
 
@@ -50,7 +50,7 @@ bodyclass: post
     </div>
     <div class="content-pri">
         {{ content }}
-        
+
         <hr>
         {% if page.recommendedLinks.size>0 %}
          <div>Cloud 66 recommends to read next:
@@ -114,9 +114,9 @@ bodyclass: post
 <div class="navigation">
 {% if site.data.sitemap.toc2[0] %}
 <h2>{{ site.data.sitemap.docs_list_title }}</h2>
-  
+
   {% for item in site.data.sitemap.toc2 %}
-  
+
   {% assign url = page.url | split: '/' %}
   {% assign collection = url[1] | downcase %}
   {% assign title = item.title | downcase %}
