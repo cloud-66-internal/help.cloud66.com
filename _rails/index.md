@@ -14,7 +14,7 @@ Cloud 66 for Rails, supports the following features:
 - [Databases](databases)
 - [Stack Management](stack-management)
 - [Toolbelt](toolbelt)
-- [AddOns](addons)
+- [AddIns](addins)
 - [Failover Groups](failover-groups)
 - [Tutorials](tutorials)
 - [Troubleshooting](troubleshooting)

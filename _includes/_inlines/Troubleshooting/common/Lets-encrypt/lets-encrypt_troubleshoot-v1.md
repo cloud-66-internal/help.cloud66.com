@@ -1,4 +1,4 @@
-<!--  usedin: [ _legacy_docker/AddOns/Lets-encrypt-v1.md, _maestro/AddOns/Lets-encrypt-v1.md, _node/addons/lets-encrypt-v1.md, _rails/AddOns/Lets-encrypt-v1.md] -->
+<!--  usedin: [ _legacy_docker/AddIns/Lets-encrypt-v1.md, _maestro/AddIns/Lets-encrypt-v1.md, _node/addins/lets-encrypt-v1.md, _rails/AddIns/Lets-encrypt-v1.md] -->
 
 ## Troubleshoot
 

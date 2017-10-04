@@ -14,7 +14,7 @@ permalink: /:collection/:categories/index.html
 - [Databases](databases)
 - [Stack Management](stack-management)
 - [Toolbelt](toolbelt)
-- [AddOns](addons)
+- [AddIns](addins)
 - [Failover Groups](failover-groups)
 - [Tutorials](tutorials)
 - [Troubleshooting](troubleshooting)

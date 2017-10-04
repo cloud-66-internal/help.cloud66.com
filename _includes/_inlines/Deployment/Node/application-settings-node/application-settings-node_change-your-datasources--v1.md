@@ -10,5 +10,5 @@ During the analyse phase we analyze your runtime depencies defined in the `packa
 *    the package `pg` will trigger the provisioning of Postgresql
 *    the package `redis` or `ioredis` will trigger the provisioning of Redis
 
-If you need other datasources later on, you can always add new datasource using the [Add-in feature](../../node/addons/add-in-implementation.html).
+If you need other datasources later on, you can always add new datasource using the [Add-in feature](../../node/addins/add-in-implementation.html).
 

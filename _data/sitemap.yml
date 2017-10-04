@@ -131,41 +131,41 @@ toc2:
             url: https://help.cloud66.works/maestro/deployment/building-a-manifest-file.html
   - title: Node
     subfolderitems:
-      - page: Addons
-        url: https://help.cloud66.works/node/addons
+      - page: Addins
+        url: https://help.cloud66.works/node/addins
         subsubfolderitems: 
         - page: Add-in Implementation
-          url: https://help.cloud66.works/node/addons/add-in-implementation.html
+          url: https://help.cloud66.works/node/addins/add-in-implementation.html
         - page: Custom Servers
-          url: https://help.cloud66.works/node/addons/custom-server.html
+          url: https://help.cloud66.works/node/addins/custom-server.html
         - page: Custom Web Servers
-          url: https://help.cloud66.works/node/addons/custom-web-server.html
+          url: https://help.cloud66.works/node/addins/custom-web-server.html
         - page: Database Backups
-          url: https://help.cloud66.works/node/addons/database-backups.html
+          url: https://help.cloud66.works/node/addins/database-backups.html
         - page: Elasticsearch
-          url: https://help.cloud66.works/node/addons/elasticsearch.html
+          url: https://help.cloud66.works/node/addins/elasticsearch.html
         - page: Filebeat
-          url: https://help.cloud66.works/node/addons/filebeat.html
+          url: https://help.cloud66.works/node/addins/filebeat.html
         - page: Glusterfs
-          url: https://help.cloud66.works/node/addons/glusterfs.html
+          url: https://help.cloud66.works/node/addins/glusterfs.html
         - page: HAProxy
-          url: https://help.cloud66.works/node/addons/haproxy.html
+          url: https://help.cloud66.works/node/addins/haproxy.html
         - page: InfluxDB
-          url: https://help.cloud66.works/node/addons/influxdb.html
+          url: https://help.cloud66.works/node/addins/influxdb.html
         - page: Jobs
-          url: https://help.cloud66.works/node/addons/jobs/
+          url: https://help.cloud66.works/node/addins/jobs/
         - page: Load Balancer
-          url: https://help.cloud66.works/node/addons/load-balancer.html
+          url: https://help.cloud66.works/node/addins/load-balancer.html
         - page: Logentries
-          url: https://help.cloud66.works/node/addons/logentries.html
+          url: https://help.cloud66.works/node/addins/logentries.html
         - page: Memcached
-          url: https://help.cloud66.works/node/addons/memcached.html
+          url: https://help.cloud66.works/node/addins/memcached.html
         - page: RabbitMQ
-          url: https://help.cloud66.works/node/addons/rabbitmq.html
+          url: https://help.cloud66.works/node/addins/rabbitmq.html
         - page: Redis
-          url: https://help.cloud66.works/node/addons/redis.html
+          url: https://help.cloud66.works/node/addins/redis.html
         - page: SSL
-          url: https://help.cloud66.works/node/addons/ssl/
+          url: https://help.cloud66.works/node/addins/ssl/
       - page: Databases
         url: https://help.cloud66.works/node/databases
         subsubfolderitems:
@@ -448,41 +448,41 @@ toc2:
             url: https://help.cloud66.works/rails/tutorials/manage-stacks-chatops.html
   - title: Rails
     subfolderitems:
-      - page: Addons
-        url: https://help.cloud66.works/rails/addons
+      - page: Addins
+        url: https://help.cloud66.works/rails/addins
         subsubfolderitems: 
         - page: Add-in Implementation
-          url: https://help.cloud66.works/rails/addons/add-in-implementation.html
+          url: https://help.cloud66.works/rails/addins/add-in-implementation.html
         - page: Custom Servers
-          url: https://help.cloud66.works/rails/addons/custom-server.html
+          url: https://help.cloud66.works/rails/addins/custom-server.html
         - page: Custom Web Servers
-          url: https://help.cloud66.works/rails/addons/custom-web-server.html
+          url: https://help.cloud66.works/rails/addins/custom-web-server.html
         - page: Database Backups
-          url: https://help.cloud66.works/rails/addons/database-backups.html
+          url: https://help.cloud66.works/rails/addins/database-backups.html
         - page: Elasticsearch
-          url: https://help.cloud66.works/rails/addons/elasticsearch.html
+          url: https://help.cloud66.works/rails/addins/elasticsearch.html
         - page: Filebeat
-          url: https://help.cloud66.works/rails/addons/filebeat.html
+          url: https://help.cloud66.works/rails/addins/filebeat.html
         - page: Glusterfs
-          url: https://help.cloud66.works/rails/addons/glusterfs.html
+          url: https://help.cloud66.works/rails/addins/glusterfs.html
         - page: HAProxy
-          url: https://help.cloud66.works/rails/addons/haproxy.html
+          url: https://help.cloud66.works/rails/addins/haproxy.html
         - page: InfluxDB
-          url: https://help.cloud66.works/rails/addons/influxdb.html
+          url: https://help.cloud66.works/rails/addins/influxdb.html
         - page: Jobs
-          url: https://help.cloud66.works/rails/addons/jobs/
+          url: https://help.cloud66.works/rails/addins/jobs/
         - page: Load Balancer
-          url: https://help.cloud66.works/rails/addons/load-balancer.html
+          url: https://help.cloud66.works/rails/addins/load-balancer.html
         - page: Logentries
-          url: https://help.cloud66.works/rails/addons/logentries.html
+          url: https://help.cloud66.works/rails/addins/logentries.html
         - page: Memcached
-          url: https://help.cloud66.works/rails/addons/memcached.html
+          url: https://help.cloud66.works/rails/addins/memcached.html
         - page: RabbitMQ
-          url: https://help.cloud66.works/rails/addons/rabbitmq.html
+          url: https://help.cloud66.works/rails/addins/rabbitmq.html
         - page: Redis
-          url: https://help.cloud66.works/rails/addons/redis.html
+          url: https://help.cloud66.works/rails/addins/redis.html
         - page: SSL
-          url: https://help.cloud66.works/rails/addons/ssl/
+          url: https://help.cloud66.works/rails/addins/ssl/
       - page: Databases
         url: https://help.cloud66.works/rails/databases
         subsubfolderitems:
