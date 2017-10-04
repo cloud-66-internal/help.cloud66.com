@@ -4,7 +4,7 @@ bodyclass: post
 ---
 
 {% assign current_cat = page.categories %}
-
+<!--
 <ul class="tab">
     {% for tab in page.tabs %}
     {% assign last_url = page.url | split: '/' %}
@@ -16,12 +16,13 @@ bodyclass: post
     {% endfor %}
 </ul>
 
-<!--
-<div class="crumbs container">
+<nav class="crumbs container">
     {% include contents_link.html %}
-</div>
+    <a rel="home" href="/">
+        <img src="//cdn.cloud66.com/images/logo.svg" alt="Cloud 66" width="40" class="pull-right logo-sml">
+    </a>
+</nav>
 -->
-
 <article class="article container">
 
     <h1 class="article-title">
@@ -66,7 +67,7 @@ bodyclass: post
         </div>
         {% endif %}
     </div>
-
+<!--
     <aside class="content-sec  {% if page.nav_sticky %} sticky-nav {% endif %}">
         {% if page.contents != "false" %}
         <div class="side-module">
@@ -107,31 +108,35 @@ bodyclass: post
             </div>
             {% endif %}
         </aside>
-    </aside>
-</article>
-
-
-<div class="navigation">
+    </aside>-->
+    
+<!--
+<div style="
+    position: fixed;
+    top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: scroll;
+    color: mediumseagreen;
+    top: 0px;
+    z-index: 100;
+    left: 5px;
+    width: 15%;
+    bottom: 10px;">
 {% if site.data.sitemap.toc2[0] %}
 <h2>{{ site.data.sitemap.docs_list_title }}</h2>
-
   {% for item in site.data.sitemap.toc2 %}
-
   {% assign url = page.url | split: '/' %}
   {% assign collection = url[1] | downcase %}
   {% assign title = item.title | downcase %}
-
   {% if title == collection %}
     <h3>{{ item.title }}</h3>
       {% if item.subfolderitems[0] %}
-        <ul style="list-style-type: circle;">
+        <ul>
           {% for entry in item.subfolderitems %}
               <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
                 {% if entry.subsubfolderitems[0] %}
-                  <ul style="margin-left:22px;
-                             margin-bottom: 15px;
-                             font-size: 12px;
-                             list-style-type: circle;">
+                  <ul style="margin-left:10px;">
                   {% for subentry in entry.subsubfolderitems %}
                       <li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
                   {% endfor %}
@@ -145,7 +150,6 @@ bodyclass: post
 {% endif %}
 </div>
 
-<!--
 <div style="
    z-index: 10;
    top: 100px;
