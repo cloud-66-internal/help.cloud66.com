@@ -16,9 +16,5 @@ Cloud 66 Maestro has the following Getting Started guides:
 - [Docker service configuration](docker-service-config.html)
 - [Connecting to Git Repository](custom-git-repo.html)
 - [Connecting to Docker Image Repository](image-repository.html)
-
-<!-- keep second one -->
-- [Networking Ports](networking-ports.html)
 - [Service Networking](service-networking.html)
-
 - [Choosing Server Size](server-size.html)

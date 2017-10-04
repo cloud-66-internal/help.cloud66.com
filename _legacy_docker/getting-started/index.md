@@ -17,9 +17,5 @@ Cloud 66 Docker has the following Getting Started guides:
 - [Docker Service Configuration](docker-sevice-config.html)
 - [Connecting your Git Repository](custom-git-repo.html)
 - [Connecting to Docker Image Repository](image-repository.html)
-
-<!-- keep second one -->
-- [Networking Ports](networking-ports.html)
 - [Service Networking](service-networking.html)
-
 - [Choosing Server Size](server-size.html)

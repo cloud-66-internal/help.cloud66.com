@@ -7,12 +7,9 @@ title: Custom Server
 categories: AddOns
 lead: ""
 legacy: true
-
 keywords: []
 permalink: /:collection/:path
 ---
-
-
 
 
 <a href="#what-is-the-custom-server-add-in"></a>{% include _inlines/AddOns/common/custom-server/custom-server_what-is-the-custom-server-add-in-v1.md  product = page.collection %}

@@ -12,10 +12,7 @@ permalink: /:collection/:categories/index.html
 - [Add-In Implementation](add-in-implementation)
 - [Database Backups](database-backups)
 - [SSL Certificate](ssl)
-
-- [Logentries](logentries)
-- [Filebeat](filebeat)
-
+- [Logs](logs)
 - [Add-ins Jobs](jobs)
 - [Load Balancing](load-balancing)
 - [HAProxy](haproxy)

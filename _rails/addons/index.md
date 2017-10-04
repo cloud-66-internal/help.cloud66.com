@@ -13,10 +13,7 @@ Cloud 66 for Rails supports the following add-ons features:
 - [Add-in Implementation](add-in-implementation.html)
 - [Database Bacakups](database-backups.html)
 - [SSL Certificate](ssl)
-
-- [Logentries](logentries.html)
-- [Filebeat](filebeat.html)
-
+- [Logs](logs)
 - [Add-ins Jobs](jobs)
 - [Load Balancer](load-balancer.html)
 - [Haproxy](haproxy.html)

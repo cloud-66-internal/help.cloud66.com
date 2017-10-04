@@ -15,4 +15,4 @@ permalink: /:collection/:categories/index.html
 - [Dockerfile](dockerfile)
 - [Connecting to Docker Image Repository](image-repository)
 - [Choosing Server Size](server-size)
-- [Stack Environments](stack-environments)
+

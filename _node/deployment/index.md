@@ -13,6 +13,7 @@ permalink: /:collection/:categories/index.html
 - [Cloud 66 Starter](cloud66-starter)
 - [Specific Settings for your Node.js Application](application-settings-node)
 - [Environment Variables](env-vars)
+- [Stack Environments](stack-environments)
 - [Scale your Node.js Application](scale-node)
 - [Advanced Deployment](advanced-deploy.html)
 - [Getting Started with Manifest Files](getting-started-with-manifest-files)

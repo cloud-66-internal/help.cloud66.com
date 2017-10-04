@@ -8,8 +8,6 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-
-
 - [Account Management](account-management)
 - [Account Protection](account-protection)
 - [Two-step Verification](two-step-verification)

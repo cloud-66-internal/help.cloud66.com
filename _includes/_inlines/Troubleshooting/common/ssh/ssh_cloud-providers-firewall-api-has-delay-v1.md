@@ -7,8 +7,5 @@ It happens some times that on cloud providers the API for opening a port gets ba
 
 
 
-{%include _inlines/StackManagement/common/ssh/code_ssh_cloud-providers-firewall-api-has-delay-leaseslt.m-v1.md  product = include.product %}
-
-
-
+{%include _inlines/Troubleshooting/common/ssh/code_ssh_cloud-providers-firewall-api-has-delay-leaseslt.m-v1.md  product = include.product %}
 

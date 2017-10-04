@@ -15,6 +15,7 @@ Cloud 66 Docker supports the following deployment features:
 - [Building your service](building-your-service.html)
 - [Docker Service Configuration](docker-service-configuration.html)
 - [Environment Variables](env-vars.html)
+- [Stack Environments](stack-environments.html)
 - [Advanced Deployment](advanced-deploy.html)
 - [Getting Started with Manifest Files](getting-started-with-manifest-files.html)
 - [Building a Manifest File](building-a-manifest-file.html)

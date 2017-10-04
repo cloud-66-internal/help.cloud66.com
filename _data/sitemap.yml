@@ -1,5 +1,74 @@
 docs_list_title: Navigation Menu
 toc2:
+  - title: General
+    subfolderitems:
+      - page: Introduction
+        url: https://help.cloud66.works/general/introduction
+        subsubfolderitems:
+          - page: Intorduction to Cloud66
+            url: https://help.cloud66.works/general/introduction/cloud66-introduction.html
+          - page: Cloud66 Status
+            url: https://help.cloud66.works/general/introduction/cloud66-status.html
+          - page: Technical Specifications
+            url: https://help.cloud66.works/general/introduction/technical-specifications.html
+          - page: Security Summary
+            url: https://help.cloud66.works/general/introduction/security.html
+          - page: European data protection compliance
+            url: https://help.cloud66.works/general/introduction/data-protection.html
+          - page: PCI DSS compliance guide
+            url: https://help.cloud66.works/general/introduction/pci-complience.html
+          - page: Terminology
+            url: https://help.cloud66.works/general/introduction/terminology.html
+          - page: FAQs
+            url: https://help.cloud66.works/general/introduction/faq.html
+      - page: Account
+        url: https://help.cloud66.works/general/account
+        subsubfolderitems:
+          - page: Account Management
+            url: https://help.cloud66.works/general/account/account-management.html
+          - page: Account Protection
+            url: https://help.cloud66.works/general/account/account-protection.html
+          - page: Two-step Verification
+            url: https://help.cloud66.works/general/account/two-step-verification.html
+          - page: Account Notifications
+            url: https://help.cloud66.works/general/account/notifications.html
+          - page: Audit Logs
+            url: https://help.cloud66.works/general/account/audit-logs.html
+          - page: Support Plans
+            url: https://help.cloud66.works/general/account/support.html
+          - page: Comparing Pricing
+            url: https://help.cloud66.works/general/account/pricing.html
+          - page: Referral Program
+            url: https://help.cloud66.works/general/account/referral-program.html
+          - page: Cloud66 Badge
+            url: https://help.cloud66.works/general/account/cloud66-badge.html
+          - page: Browser Requirements
+            url: https://help.cloud66.works/general/account/browser-requirements.html
+          - page: Security Wall of Fame
+            url: https://help.cloud66.works/general/account/security-wall-of-fame.html
+      - page: Teams
+        url: https://help.cloud66.works/general/teams
+        subsubfolderitems:
+          - page: Team Accounts
+            url: https://help.cloud66.works/general/teams/team-accounts.html
+      - page: Partners
+        url: https://help.cloud66.works/general/partners
+        subsubfolderitems:
+          - page: Integration with Circle CI
+            url: https://help.cloud66.works/general/partners/integration-with-circle-ci.html
+          - page: Integration with Semaphore
+            url: https://help.cloud66.works/general/partners/integration-with-semaphore.html
+          - page: Integration with Travis CI
+            url: https://help.cloud66.works/general/partners/integration-with-travis-ci.html
+          - page: Integration with Weave Scope
+            url: https://help.cloud66.works/general/partners/integration-with-weave-scope.html
+          - page: Partner Integration
+            url: https://help.cloud66.works/general/partners/partner-integration.html
+      - page: Beta Program
+        url: https://help.cloud66.works/general/beta-program
+        subsubfolderitems:
+          - page: Cloud 66 Beta Program
+            url: https://help.cloud66.works/general/beta-program/cloud-66-beta-program.html
   - title: Legacy_Docker
     subfolderitems:
       - page: Databases

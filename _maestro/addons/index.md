@@ -13,10 +13,7 @@ Cloud 66 for Maestro, supports the following AddOns features:
 - [Add-in Implementation](add-in-implementation.html)
 - [Database Bacakups](database-backups.html)
 - [SSL Certificate](ssl)
-
-- [Logentries](logentries.html)
-- [Filebeat](filebeat.html)
-
+- [Logs](logs)
 - [Add-ins Jobs](jobs)
 - [Load Balancing](load-balancing.html)
 - [HAProxy](haproxy.html)
