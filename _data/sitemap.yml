@@ -157,7 +157,7 @@ toc2:
             url: https://help.cloud66.works/node/deployment/redeployment-hooks.html
           - page: Registered Servers
             url: https://help.cloud66.works/node/deployment/registered-servers.html
-          - page: Scale Node
+          - page: Scale your Node.js application
             url: https://help.cloud66.works/node/deployment/scale-node.html
           - page: Server IP Addresses
             url: https://help.cloud66.works/node/deployment/server-ip-addresses.html

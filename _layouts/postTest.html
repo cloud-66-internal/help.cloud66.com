@@ -4,7 +4,7 @@ bodyclass: post
 ---
 
 {% assign current_cat = page.categories %}
-
+<!--
 <ul class="tab">
     {% for tab in page.tabs %}
     {% assign last_url = page.url | split: '/' %}
@@ -15,13 +15,14 @@ bodyclass: post
     <li><a href="{{ url | downcase }}">{{ tab | capitalize }}</a></li>
     {% endfor %}
 </ul>
+
 <nav class="crumbs container">
     {% include contents_link.html %}
     <a rel="home" href="/">
         <img src="//cdn.cloud66.com/images/logo.svg" alt="Cloud 66" width="40" class="pull-right logo-sml">
     </a>
 </nav>
-
+-->
 <article class="article container">
 
     <h1 class="article-title">
@@ -66,7 +67,7 @@ bodyclass: post
         </div>
         {% endif %}
     </div>
-
+<!--
     <aside class="content-sec  {% if page.nav_sticky %} sticky-nav {% endif %}">
         {% if page.contents != "false" %}
         <div class="side-module">
@@ -107,10 +108,9 @@ bodyclass: post
             </div>
             {% endif %}
         </aside>
-    </aside>
-</article>
-
-
+    </aside>-->
+    
+<!--
 <div style="
     position: fixed;
     top: 100px;
@@ -150,7 +150,6 @@ bodyclass: post
 {% endif %}
 </div>
 
-<!--
 <div style="
    z-index: 10;
    top: 100px;
