@@ -354,14 +354,15 @@ body.docs #nav {
   border-color: #427dc4;
 }
 
-.search--lrg {
-    background: #fff url("/images/ui/search.png") 8px 10px no-repeat;
+.search.search--lrg {
+    background: #fff url("/images/ui/search.png") 9px 11px no-repeat;
     height: 56px;
     border-radius: 40px;
     background-size: 30px;
-    padding: 0 15px 0 40px;
+    padding: 0 15px 0 44px;
     font-size: 16px;
     border: 1px solid #ddd;
+    color: #000;
 }
 
 #logo {
@@ -1129,14 +1130,14 @@ body.Body--home #search-query-nav {
     font-weight: 500;
 }
 .Product:hover {
-    box-shadow: 0 2px 3px 0 rgba(0,0,0, .16);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0, .13);
 }
 .Product:hover .Button {
     background: #449FD8;
     color: #fff;
 }
 .Product-body {
-    padding: 2em 1.6em;
+    padding: 2.1em 1.6em;
 }
 .Product .Product-title {
     font-size: 19px;
