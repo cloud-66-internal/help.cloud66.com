@@ -1136,7 +1136,8 @@ body.Body--home #search-query-nav {
 .Products {
     background: #FDFDFD;
     /*box-shadow: inset 0px 0px 0px 1px #EFEFEF, 1px 1px 6px rgba(0,0,0,0.05);*/
-    border-top: 1px solid #e3e3e3;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
     min-height: 999999999em;
 }
 
@@ -1152,7 +1153,7 @@ body.Body--home #search-query-nav {
     font-weight: 500;
 }
 .Product:hover {
-    box-shadow: 0 2px 3px 0 rgba(0,0,0, .13);
+    box-shadow: 0 2px 6px 0 rgba(0,0,0, .12);
 }
 .Product:hover .Button {
     background: #449FD8;
@@ -1181,7 +1182,7 @@ body.Body--home #search-query-nav {
     height: 5px;
 }
 .Product-image {
-    margin-top: 4px;
+    margin-top: 1px;
 }
 
 .Product-topBar--skycap {
