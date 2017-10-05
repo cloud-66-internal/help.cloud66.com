@@ -79,8 +79,8 @@ hr {
 /*
  * Buttons
  * ---------------------------------------------------------- */
-.button {
-  padding: 0.75em 2em;
+.Button {
+  padding: 0.7em 2em;
   border-radius: 2em;
   display: inline-block;
   color: #fff;
@@ -88,6 +88,18 @@ hr {
   transition: all 0.15s ease;
   box-sizing: border-box;
   border: 1px solid #62c462;
+}
+.Button--outlined {
+    background: transparent;
+    border: 1px solid #62c462;
+    color: #62c462;
+}
+.Button--small {
+    font-size: 14px;
+}
+.Button--blue {
+    border: 1px solid #449FD8;
+    color: #449FD8;
 }
 
 
@@ -283,6 +295,10 @@ body.docs #nav {
   color: #427dc4;
   padding-bottom: 16px;
 }
+.nav-link-title {
+    font-weight: 500;
+    color: #2c3e50;
+}
 .Header-nav li:first-child .nav-link {
   padding-left: 0;
 }
@@ -318,7 +334,7 @@ body.docs #nav {
     height: 40px;
     line-height: 40px;
 }
-.search-query {
+.search {
   height: 34px;
   line-height: 30px;
   box-sizing: border-box;
@@ -334,10 +350,19 @@ body.docs #nav {
   vertical-align: middle !important;
   min-width: 300px;
 }
-.search-query:focus {
+.search:focus {
   border-color: #427dc4;
 }
 
+.search--lrg {
+    background: #fff url("/images/ui/search.png") 8px 10px no-repeat;
+    height: 56px;
+    border-radius: 40px;
+    background-size: 30px;
+    padding: 0 15px 0 40px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
 
 #logo {
   display: inline-block;
@@ -549,7 +574,7 @@ body.docs #nav {
   .sidebar .sidebar-inner-index {
     padding: 10px 10px 10px 20px;
   }
-  .sidebar .search-query {
+  .sidebar .search {
     min-width: 200px;
     margin-bottom: 10px;
   }
@@ -652,7 +677,7 @@ i.rotating-clockwise {
     margin: 0 auto;
     padding-left: 50px;
 }
-.content a.button {
+.content .Button {
     font-size: 0.9em;
     color: #fff;
     margin: 0.2em 0;
@@ -925,118 +950,6 @@ i.rotating-clockwise {
   }
 }
 
-
-/*
- * Utility Classes
- * ------------------------------------------------------------------  */
- .u-textBreak {
-   word-wrap: break-word !important;
- }
-
- /**
-  * Horizontal text alignment
-  */
-
- .u-textCenter {
-   text-align: center !important;
- }
-
- .u-textLeft {
-   text-align: left !important;
- }
-
- .u-textRight {
-   text-align: right !important;
- }
-
- .u-textBreak {
-   word-wrap: break-word !important;
- }
-
- /**
-  * Horizontal text alignment
-  */
-
- .u-textCenter {
-   text-align: center !important;
- }
-
- .u-textLeft {
-   text-align: left !important;
- }
-
- .u-textRight {
-   text-align: right !important;
- }
-
- .u-flushTop {
-     padding-top: 0;
-     margin-top: 0;
- }
-
- /**
-  * Inherit the ancestor's text color.
-  */
-
- .u-textInheritColor {
-   color: inherit !important;
- }
-
- /**
-  * Enables font kerning in all browsers.
-  * http://blog.typekit.com/2014/02/05/kerning-on-the-web/
-  *
-  * 1. Chrome (not Windows), Firefox, IE 10+
-  * 2. Safari 7 and future browsers
-  * 3. Chrome (not Windows), Firefox, Safari 6+, iOS, Android
-  */
-
- .u-textKern {
-   font-feature-settings: "kern" 1; /* 1 */
-   font-kerning: normal; /* 2 */
-   text-rendering: optimizeLegibility; /* 3 */
- }
-
- .u-textNoWrap {
-   white-space: nowrap !important;
- }
-
- .u-textTruncate {
-   max-width: 100%; /* 1 */
-   overflow: hidden !important;
-   text-overflow: ellipsis !important;
-   white-space: nowrap !important;
-   word-wrap: normal !important; /* 2 */
- }
-
- /**
-  * Prevent whitespace wrapping
-  */
-
- .u-textNoWrap {
-   white-space: nowrap !important;
- }
-
- .u-textTruncate {
-   max-width: 100%; /* 1 */
-   overflow: hidden !important;
-   text-overflow: ellipsis !important;
-   white-space: nowrap !important;
-   word-wrap: normal !important; /* 2 */
- }
-
-
-.u-floatRight {
-    float: right;
-}
-.u-boxShadow {
-    transition: all .3s ease-in-out;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-}
-.u-boxShadow--withHover:hover {
-    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.125);
-}
-
 /*
  * Panel
  * ------------------------------------------------------------------  */
@@ -1169,4 +1082,90 @@ pre .xml .vbscript,
 pre .xml .css,
 pre .xml .cdata {
   opacity: 0.5;
+}
+
+/*
+ * Home Landing Page
+ * Search & CTA for each product
+ * ------------------------------------------------------------------  */
+body.Body--home {
+  /*padding-top: 68px;*/
+}
+body.Body--home #search-query-nav {
+    display: none;
+}
+
+.HomeContainer {
+    box-sizing: border-box;
+    padding: 2.3em 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.LandingSearch {
+    background: #fff;
+}
+
+/*
+ * Home Landing Page
+ * Product CTA's
+ * ------------------------------------------------------------------  */
+.Products {
+    background: #FDFDFD;
+    /*box-shadow: inset 0px 0px 0px 1px #EFEFEF, 1px 1px 6px rgba(0,0,0,0.05);*/
+    border-top: 1px solid #e3e3e3;
+    min-height: 999999999em;
+}
+
+.Product {
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0, .06);
+    border-radius: 6px;
+    transition: all .2s ease-in-out;
+}
+.Product .Button {
+    font-weight: 500;
+}
+.Product:hover {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0, .16);
+}
+.Product:hover .Button {
+    background: #449FD8;
+    color: #fff;
+}
+.Product-body {
+    padding: 2em 1.6em;
+}
+.Product .Product-title {
+    font-size: 19px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0 0 1em;
+    line-height: 1;
+}
+.Product .Product-text {
+    font-size: 16px;
+    margin: 0;
+    padding: 0 0 1em;
+    min-height: 64px;
+}
+.Product-topBar {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #eee;
+    height: 5px;
+}
+.Product-topBar--skycap {
+    background: #4FA4DA;
+}
+.Product-topBar--maestro {
+    background: #47B649;
+}
+.Product-topBar--rack {
+    background: #FF4747;
+}
+.Product-topBar--node {
+    background: #80BE42;
 }
