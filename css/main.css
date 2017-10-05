@@ -151,8 +151,8 @@ hr {
   pointer-events: none;
 }
 #nav .nav-dropdown {
-  display: none;
   box-sizing: border-box;
+  display: none;
   max-height: calc(100vh - 61px);
   min-width: 210px;
   overflow-y: auto;
@@ -197,7 +197,7 @@ hr {
   display: block;
 }
 #nav .nav-dropdown a:hover {
-  color: #42b983;
+  color: #427dc4;
 }
 #nav .arrow {
   display: inline-block;
@@ -245,7 +245,7 @@ body.docs #nav {
 /*
  * Nav
  * ---------------------------------------------------------- */
-#nav {
+.Header-nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -255,19 +255,19 @@ body.docs #nav {
   height: 40px;
   line-height: 40px;
 }
-#nav .break {
+.Header-nav .break {
   display: none;
 }
-#nav li {
+.Header-nav li {
   display: inline-block;
   position: relative;
-  margin: 0 0.6em;
+  margin: 0 0.8em;
 }
-#nav .nav-dropdown .nav-link:hover,
-#nav .nav-dropdown .nav-link.current {
+.Header-nav .nav-dropdown .nav-link:hover,
+.Header-nav .nav-dropdown .nav-link.current {
   border-bottom: none;
 }
-#nav .nav-dropdown .nav-link.current::after {
+.Header-nav .nav-dropdown .nav-link.current::after {
   content: "";
   width: 0;
   height: 0;
@@ -282,10 +282,9 @@ body.docs #nav {
 .nav-link {
   color: #427dc4;
   padding-bottom: 16px;
-  padding-left: 14px;
 }
-#nav .nav-dropdown-container:fist-child {
-    outline: 1px solid red;
+.Header-nav li:first-child .nav-link {
+  padding-left: 0;
 }
 .nav-link:hover {
 }
@@ -293,7 +292,7 @@ body.docs #nav {
   font-weight: bold;
   color: #2c3e50;
 }
-.nav-link.team {
+.nav-community .nav-link {
   margin-left: 10px;
 }
 .new-label {
@@ -448,6 +447,11 @@ body.docs #nav {
 }
 .sidebar .menu-root {
   padding-left: 0;
+}
+/* remove top space to compensate for sticky positioned header above */
+.sidebar .menu-root li:first-child h3 {
+    padding-top: 0;
+    margin-top: 0;
 }
 .sidebar .menu-sub {
   font-size: 0.85em;
