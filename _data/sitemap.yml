@@ -136,104 +136,100 @@ toc2:
         subsubfolderitems: 
         - page: Add-in Implementation
           url: https://help.cloud66.works/node/addins/add-in-implementation.html
-        - page: Custom Servers
-          url: https://help.cloud66.works/node/addins/custom-server.html
-        - page: Custom Web Servers
-          url: https://help.cloud66.works/node/addins/custom-web-server.html
-        - page: Database Backups
+        - page: Database Backup
           url: https://help.cloud66.works/node/addins/database-backups.html
-        - page: Elasticsearch
-          url: https://help.cloud66.works/node/addins/elasticsearch.html
-        - page: Filebeat
-          url: https://help.cloud66.works/node/addins/filebeat.html
-        - page: Glusterfs
-          url: https://help.cloud66.works/node/addins/glusterfs.html
-        - page: HAProxy
-          url: https://help.cloud66.works/node/addins/haproxy.html
-        - page: InfluxDB
-          url: https://help.cloud66.works/node/addins/influxdb.html
+        - page: SSL Certificate
+          url: https://help.cloud66.works/node/addins/ssl/
+        - page: Using Logs with Node
+          url: https://help.cloud66.works/node/addins/logs
         - page: Jobs
           url: https://help.cloud66.works/node/addins/jobs/
-        - page: Load Balancer
-          url: https://help.cloud66.works/node/addins/load-balancer.html
-        - page: Logentries
-          url: https://help.cloud66.works/node/addins/logentries.html
-        - page: Memcached
-          url: https://help.cloud66.works/node/addins/memcached.html
+        - page: Load Balancing
+          url: https://help.cloud66.works/node/addins/load-balancing.html
+        - page: HAProxy
+          url: https://help.cloud66.works/node/addins/haproxy.html
+        - page: Elasticsearch
+          url: https://help.cloud66.works/node/addins/elasticsearch.html
+        - page: Glusterfs
+          url: https://help.cloud66.works/node/addins/glusterfs.html
+        - page: InfluxDB
+          url: https://help.cloud66.works/node/addins/influxdb.html
         - page: RabbitMQ
           url: https://help.cloud66.works/node/addins/rabbitmq.html
         - page: Redis
           url: https://help.cloud66.works/node/addins/redis.html
-        - page: SSL
-          url: https://help.cloud66.works/node/addins/ssl/
+        - page: Memcached
+          url: https://help.cloud66.works/node/addins/memcached.html
+        - page: Custom Server
+          url: https://help.cloud66.works/node/addins/custom-server.html
       - page: Databases
         url: https://help.cloud66.works/node/databases
         subsubfolderitems:
-          - page: Elasticsearch
-            url: https://help.cloud66.works/node/databases/elasticsearch/
-          - page: Glusterfs
-            url: https://help.cloud66.works/node/databases/glusterfs/
-          - page: InfluxDB
-            url: https://help.cloud66.works/node/databases/influxdb/
-          - page: MongoDB
-            url: https://help.cloud66.works/node/databases/mongodb/
-          - page: MySQL
+          - page: MySQL with Cloud 66 Node
             url: https://help.cloud66.works/node/databases/mysql/
-          - page: PostgreSQL
+          - page: PostgreSQL with Cloud 66 Node
             url: https://help.cloud66.works/node/databases/postgresql/
-          - page: RabbitMQ
-            url: https://help.cloud66.works/node/databases/rabbitmq/
-          - page: Redis
+          - page: Redis with Cloud 66 Node
             url: https://help.cloud66.works/node/databases/redis/
-          - page: SQLite
+          - page: Elasticsearch with Cloud 66 Node
+            url: https://help.cloud66.works/node/databases/elasticsearch/
+          - page: MongoDB with Cloud 66 Node
+            url: https://help.cloud66.works/node/databases/mongodb/
+          - page: RabbitMQ with Cloud 66 Node
+            url: https://help.cloud66.works/node/databases/rabbitmq/
+          - page: Glusterfs with Cloud 66 Node
+            url: https://help.cloud66.works/node/databases/glusterfs/
+          - page: InfluxDB with Cloud 66 Node
+            url: https://help.cloud66.works/node/databases/influxdb/
+          - page: SQLite with Cloud 66 Node
             url: https://help.cloud66.works/node/databases/sqlite/
       - page: Deployment
         url: https://help.cloud66.works/node/deployment/
         subsubfolderitems:
-          - page: Advanced Deploy
-            url: https://help.cloud66.works/node/deployment/advanced-deploy.html
-          - page: Specific settings for your Node.js application
-            url: https://help.cloud66.works/node/deployment/application-settings-node.html
-          - page: Building a Manifest File
-            url: https://help.cloud66.works/node/deployment/building-a-manifest-file.html
-          - page: Clouds
-            url: https://help.cloud66.works/node/deployment/clouds/
+          - page: Getting Started with Node.js Stacks
+            url: https://help.cloud66.works/node/deployment/getting-started.html
+          - page: Supported Node.js Frameworks
+            url: https://help.cloud66.works/node/deployment/supported-frameworks.html
           - page: Cloud 66 Starter
             url: https://help.cloud66.works/node/deployment/cloud66-starter.html
-          - page: Configure DNS
-            url: https://help.cloud66.works/node/deployment/configure-dns.html
-          - page: Deploy Hooks
-            url: https://help.cloud66.works/node/deployment/deploy-hooks.html
-          - page: Deployment Gateway
-            url: https://help.cloud66.works/node/deployment/deployment-gateway.html
-          - page: Deployment History
-            url: https://help.cloud66.works/node/deployment/deployment-history.html
-          - page: EasyDeploy Repositories
-            url: https://help.cloud66.works/node/deployment/easy-deploy-repos.html
+          - page: Specific settings for your Node.js application
+            url: https://help.cloud66.works/node/deployment/application-settings-node.html
           - page: Environment Variables
             url: https://help.cloud66.works/node/deployment/env-vars.html
-          - page: Getting Started with Manifest Files
-            url: https://help.cloud66.works/node/deployment/getting-started-with-manifest-files.html
-          - page: Getting started with Node.js stacks
-            url: https://help.cloud66.works/node/deployment/getting-started.html
-          - page: Multi Tenancy
-            url: https://help.cloud66.works/node/deployment/multi-tenancy.html
-          - page: Nginx
-            url: https://help.cloud66.works/node/deployment/nginx.html
-          - page: Parallel Deployment
-            url: https://help.cloud66.works/node/deployment/parallel-deployment.html
-          - page: Redeployment Hooks
-            url: https://help.cloud66.works/node/deployment/redeployment-hooks.html
-          - page: Registered Servers
-            url: https://help.cloud66.works/node/deployment/registered-servers.html
+          - page: Stack Environments
+            url: https://help.cloud66.works/node/deployment/stack-environments.html
           - page: Scale your Node.js application
             url: https://help.cloud66.works/node/deployment/scale-node.html
-          - page: Server IP Addresses
-            url: https://help.cloud66.works/node/deployment/server-ip-addresses.html
+          - page: Advanced Deploy
+            url: https://help.cloud66.works/node/deployment/advanced-deploy.html
+          - page: Getting Started with Manifest Files
+            url: https://help.cloud66.works/node/deployment/getting-started-with-manifest-files.html
+          - page: Building your Manifest File
+            url: https://help.cloud66.works/node/deployment/building-a-manifest-file.html
+          - page: Deploy to your cloud
+            url: https://help.cloud66.works/node/deployment/clouds/
+          - page: Configure your DNS
+            url: https://help.cloud66.works/node/deployment/configure-dns.html
           - page: Service Network Configuration
             url: https://help.cloud66.works/node/deployment/service-network-configuration.html
-          - page: Supported Frameworks
-            url: https://help.cloud66.works/node/deployment/supported-frameworks.html
+          - page: Deployment History
+            url: https://help.cloud66.works/node/deployment/deployment-history.html
+          - page: Deploy Hooks
+            url: https://help.cloud66.works/node/deployment/deploy-hooks.html
+          - page: Parallel Deployments
+            url: https://help.cloud66.works/node/deployment/parallel-deployment.html
+          - page: Server IP Addresses and Hostnames
+            url: https://help.cloud66.works/node/deployment/server-ip-addresses.html
+          - page: Registered Servers
+            url: https://help.cloud66.works/node/deployment/registered-servers.html
+          - page: Nginx
+            url: https://help.cloud66.works/node/deployment/nginx.html
+          - page: Deployment Gateway
+            url: https://help.cloud66.works/node/deployment/deployment-gateway.html
+          - page: Multi Tenancy for Stacks
+            url: https://help.cloud66.works/node/deployment/multi-tenancy.html
+          - page: Redeployment Hooks
+            url: https://help.cloud66.works/node/deployment/redeployment-hooks.html
       - page: Failover Groups
         url: https://help.cloud66.works/node/failover-groups/
         subsubfolderitems:
@@ -242,18 +238,16 @@ toc2:
       - page: Getting Started
         url: https://help.cloud66.works/node/getting-started/
         subsubfolderitems:
-          - page: Custom Git Repository
-            url: https://help.cloud66.works/node/getting-started/custom-git-repo.html
-          - page: Dockerfile
-            url: https://help.cloud66.works/node/getting-started/dockerfile.html
-          - page: Getting Started with Node.JS Stacks
-            url: https://help.cloud66.works/node/getting-started/getting-started.html
-          - page: Server Size
-            url: https://help.cloud66.works/node/getting-started/server-size.html
           - page: Stack Definition
             url: https://help.cloud66.works/node/getting-started/stack-definition.html
-          - page: Stack Environments
-            url: https://help.cloud66.works/node/getting-started/stack-environments.html
+          - page: Getting Started with Node.js Stacks
+            url: https://help.cloud66.works/node/getting-started/getting-started.html
+          - page: Dockerfile
+            url: https://help.cloud66.works/node/getting-started/dockerfile.html
+          - page: Connecting Your Git Repository
+            url: https://help.cloud66.works/node/getting-started/custom-git-repo.html
+          - page: Choosing Server Size
+            url: https://help.cloud66.works/node/getting-started/server-size.html
       - page: Stack Management
         url: https://help.cloud66.works/node/stack-management/
         subsubfolderitems:
@@ -360,92 +354,92 @@ toc2:
           - page: SSH
             url: https://help.cloud66.works/node/troubleshooting/ssh.html
       - page: Tutorials
-        url: https://help.cloud66.works/rails/tutorials/
+        url: https://help.cloud66.works/node/tutorials/
         subsubfolderitems:
           - page: Multi-region Stack
-            url: https://help.cloud66.works/rails/tutorials/1900-09-26-multi-region-stack.html
+            url: https://help.cloud66.works/node/tutorials/1900-09-26-multi-region-stack.html
           - page: SSL Termination on load balancers
-            url: https://help.cloud66.works/rails/tutorials/1900-09-26-ssl-termination-on-load-balancers.html
+            url: https://help.cloud66.works/node/tutorials/1900-09-26-ssl-termination-on-load-balancers.html
           - page: Nginx SSL Ciphers
-            url: https://help.cloud66.works/rails/tutorials/1900-10-10-nginx-ssl-ciphers.html
+            url: https://help.cloud66.works/node/tutorials/1900-10-10-nginx-ssl-ciphers.html
           - page: Access your Code
-            url: https://help.cloud66.works/rails/tutorials/1901-01-26-access-your-code.html
+            url: https://help.cloud66.works/node/tutorials/1901-01-26-access-your-code.html
           - page: Zero-downtime deployments
-            url: https://help.cloud66.works/rails/tutorials/1901-01-26-zero-downtime-deploy.html
+            url: https://help.cloud66.works/node/tutorials/1901-01-26-zero-downtime-deploy.html
           - page: Nginx Modules
-            url: https://help.cloud66.works/rails/tutorials/1901-10-03-nginx-modules.html
+            url: https://help.cloud66.works/node/tutorials/1901-10-03-nginx-modules.html
           - page: Change PostgreSQL directory
-            url: https://help.cloud66.works/rails/tutorials/1920-09-26-change-psql-directory.html
+            url: https://help.cloud66.works/node/tutorials/1920-09-26-change-psql-directory.html
           - page: Websocket Support
-            url: https://help.cloud66.works/rails/tutorials/1925-09-26-websocket-support.html
+            url: https://help.cloud66.works/node/tutorials/1925-09-26-websocket-support.html
           - page: Connect database servers
-            url: https://help.cloud66.works/rails/tutorials/1935-09-26-connect-db-servers.html
+            url: https://help.cloud66.works/node/tutorials/1935-09-26-connect-db-servers.html
           - page: Symlink folders
-            url: https://help.cloud66.works/rails/tutorials/1936-09-26-symlink-folders.html
+            url: https://help.cloud66.works/node/tutorials/1936-09-26-symlink-folders.html
           - page: Installing SMTP on your server
-            url: https://help.cloud66.works/rails/tutorials/1960-09-24-smtp-installation.html
+            url: https://help.cloud66.works/node/tutorials/1960-09-24-smtp-installation.html
           - page: Memcached
-            url: https://help.cloud66.works/rails/tutorials/1969-09-26-memcached.html
+            url: https://help.cloud66.works/node/tutorials/1969-09-26-memcached.html
           - page: Manage backups
-            url: https://help.cloud66.works/rails/tutorials/1970-09-26-manage-backups.html
+            url: https://help.cloud66.works/node/tutorials/1970-09-26-manage-backups.html
           - page: Migrate across data centers
-            url: https://help.cloud66.works/rails/tutorials/1976-09-26-migrate-across-dc.html
+            url: https://help.cloud66.works/node/tutorials/1976-09-26-migrate-across-dc.html
           - page: Stack failover
-            url: https://help.cloud66.works/rails/tutorials/1976-09-26-stack-failover.html
+            url: https://help.cloud66.works/node/tutorials/1976-09-26-stack-failover.html
           - page: Optimizing performance
-            url: https://help.cloud66.works/rails/tutorials/1980-09-26-optimizing-performance.html
+            url: https://help.cloud66.works/node/tutorials/1980-09-26-optimizing-performance.html
           - page: Out of Memory Errors
-            url: https://help.cloud66.works/rails/tutorials/1981-09-26-out-of-memory-errors.html
+            url: https://help.cloud66.works/node/tutorials/1981-09-26-out-of-memory-errors.html
           - page: Seeding databases
-            url: https://help.cloud66.works/rails/tutorials/1998-12-08-seeding-db.html
+            url: https://help.cloud66.works/node/tutorials/1998-12-08-seeding-db.html
           - page: SSH Keys
-            url: https://help.cloud66.works/rails/tutorials/2000-01-01-ssh-keys.html
+            url: https://help.cloud66.works/node/tutorials/2000-01-01-ssh-keys.html
           - page: Sharing databases
-            url: https://help.cloud66.works/rails/tutorials/2003-09-26-sharing-db.html
+            url: https://help.cloud66.works/node/tutorials/2003-09-26-sharing-db.html
           - page: SSL Certificate
-            url: https://help.cloud66.works/rails/tutorials/2004-09-26-ssl-certificate.html
+            url: https://help.cloud66.works/node/tutorials/2004-09-26-ssl-certificate.html
           - page: Application not serving
-            url: https://help.cloud66.works/rails/tutorials/2009-09-26-application-not-serving.html
+            url: https://help.cloud66.works/node/tutorials/2009-09-26-application-not-serving.html
           - page: Nginx Basic Authorization
-            url: https://help.cloud66.works/rails/tutorials/2012-01-03-nginx-auth.html
+            url: https://help.cloud66.works/node/tutorials/2012-01-03-nginx-auth.html
           - page: Nginx allow and deny by IP
-            url: https://help.cloud66.works/rails/tutorials/2012-01-05-nginx-deny.html
+            url: https://help.cloud66.works/node/tutorials/2012-01-05-nginx-deny.html
           - page: DigitalOcean server creation errors
-            url: https://help.cloud66.works/rails/tutorials/2012-01-06-digitalocean-server-creation-errors.html
+            url: https://help.cloud66.works/node/tutorials/2012-01-06-digitalocean-server-creation-errors.html
           - page: Nginx Redirect
-            url: https://help.cloud66.works/rails/tutorials/2012-01-09-nginx-redirect.html
+            url: https://help.cloud66.works/node/tutorials/2012-01-09-nginx-redirect.html
           - page: Uninstall Mysql
-            url: https://help.cloud66.works/rails/tutorials/2014-09-26-uninstall-mysql.html
+            url: https://help.cloud66.works/node/tutorials/2014-09-26-uninstall-mysql.html
           - page: Server Size
-            url: https://help.cloud66.works/rails/tutorials/2015-02-19-server-size.html
+            url: https://help.cloud66.works/node/tutorials/2015-02-19-server-size.html
           - page: Setting up custom livelogs
-            url: https://help.cloud66.works/rails/tutorials/2015-07-08-Setting-up-custom-livelogs.html
+            url: https://help.cloud66.works/node/tutorials/2015-07-08-Setting-up-custom-livelogs.html
           - page: How to migrate your stack
-            url: https://help.cloud66.works/rails/tutorials/2015-08-20-migrate-the-stack.html
+            url: https://help.cloud66.works/node/tutorials/2015-08-20-migrate-the-stack.html
           - page: Configuring Multi Certificate for HAProxy
-            url: https://help.cloud66.works/rails/tutorials/2015-09-02-multi-cert-haproxy.html
+            url: https://help.cloud66.works/node/tutorials/2015-09-02-multi-cert-haproxy.html
           - page: Use GitHub with Cloud 66
-            url: https://help.cloud66.works/rails/tutorials/2015-09-22-github.html
+            url: https://help.cloud66.works/node/tutorials/2015-09-22-github.html
           - page: Memory usage issues
-            url: https://help.cloud66.works/rails/tutorials/2015-09-26-memory-usage-issues.html
+            url: https://help.cloud66.works/node/tutorials/2015-09-26-memory-usage-issues.html
           - page: Using Production Data on your Staging Stack
-            url: https://help.cloud66.works/rails/tutorials/2016-09-29-using-master-data-staging.html
+            url: https://help.cloud66.works/node/tutorials/2016-09-29-using-master-data-staging.html
           - page: Agent Communication Issue
-            url: https://help.cloud66.works/rails/tutorials/2017-01-01-agent-communication-is.html
+            url: https://help.cloud66.works/node/tutorials/2017-01-01-agent-communication-is.html
           - page: SMTP timeouts on Amazon AWS EC2
-            url: https://help.cloud66.works/rails/tutorials/2017-01-06-smtp-timeouts.html
+            url: https://help.cloud66.works/node/tutorials/2017-01-06-smtp-timeouts.html
           - page: Troubleshooting Issues Connecting to your Server
-            url: https://help.cloud66.works/rails/tutorials/2017-02-11-connecting-to-server.html
+            url: https://help.cloud66.works/node/tutorials/2017-02-11-connecting-to-server.html
           - page: Troubleshooting Disk Space Issues
-            url: https://help.cloud66.works/rails/tutorials/2017-02-12-disk-space.html
+            url: https://help.cloud66.works/node/tutorials/2017-02-12-disk-space.html
           - page: Issues Replicating Data Between Two Versions of PostgreSQL
-            url: https://help.cloud66.works/rails/tutorials/2017-02-13-pg-replication-version.html
+            url: https://help.cloud66.works/node/tutorials/2017-02-13-pg-replication-version.html
           - page: SSL Certificate Issues
-            url: https://help.cloud66.works/rails/tutorials/2017-02-26-ssl-certificate-issues.html
+            url: https://help.cloud66.works/node/tutorials/2017-02-26-ssl-certificate-issues.html
           - page: How to Add Management Certificates in Azure new Portal
-            url: https://help.cloud66.works/rails/tutorials/2017-03-12-azure-old-portal.html
+            url: https://help.cloud66.works/node/tutorials/2017-03-12-azure-old-portal.html
           - page: Manage your stacks from Slack with ChatOps
-            url: https://help.cloud66.works/rails/tutorials/manage-stacks-chatops.html
+            url: https://help.cloud66.works/node/tutorials/manage-stacks-chatops.html
   - title: Rails
     subfolderitems:
       - page: Addins

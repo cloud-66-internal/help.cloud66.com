@@ -20,7 +20,6 @@ permalink: /:collection/:categories/index.html
 - [Building your Manifest File](building-a-manifest-file)
 - [Clouds](clouds)
 - [Configure your DNS](configure-dns)
-- [Container Port Mapping](container-ports)
 - [Service Network Configuration](service-network-configuration)
 - [Deployment History](deployment-history)
 - [Deploy Hooks](deploy-hooks)
@@ -30,5 +29,4 @@ permalink: /:collection/:categories/index.html
 - [Nginx](nginx)
 - [Deployment Gateway](deployment-gateway)
 - [Multi Tenancy](multi-tenancy)
-- [Reserved Tags](reserved-tags)
 - [Redeployment Hooks](redeployment-hook)
