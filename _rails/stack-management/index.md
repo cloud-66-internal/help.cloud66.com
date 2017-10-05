@@ -13,7 +13,7 @@ Cloud 66 for Rails, supports the following stack management features:
 - [Server monitoring](server-monitoring.html)
 - [Service monitoring](service-monitoring.html)
 - [Network configuration](network-configuration.html)
-- [SSH to server](ssh-to-server.html)
+- [SSH to your server](ssh-to-server.html)
 - [Server deletion](server-deletion.html)
 - [Server restart notifications](server-restart-notifications.html)
 - [Service lifecycle management](service-lifecycle-management.html)

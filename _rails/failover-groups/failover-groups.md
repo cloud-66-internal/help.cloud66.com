@@ -3,7 +3,7 @@ menuheaders: [ "What is a failover group? ", "Add a failover group", "Notes", "E
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/FailoverGroups/common/failover-groups/failover-groups_what-is-a-failover-group--v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/FailoverGroups/common/failover-groups/failover-groups_add-a-failover-group-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/FailoverGroups/common/failover-groups/failover-groups_notes-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/FailoverGroups/common/failover-groups/failover-groups_environment-variables-v1.md" ]
 layout: post
 template: one-col
-title: Failover groups
+title: Failover Groups
 categories: failover-groups
 lead: ""
 legacy: false

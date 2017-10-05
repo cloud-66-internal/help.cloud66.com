@@ -45,6 +45,11 @@ sass:
 
 plugins:
   - jekyll-sitemap
+  - algoliasearch-jekyll
+
+algolia:
+  application_id: 'TXUI53WBEH'
+  index_name:     'help-new'
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
