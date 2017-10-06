@@ -3,7 +3,7 @@ menuheaders: [ "What are deploy hooks?", "Hook points", "Hook fields", "How to u
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_contents-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_what-are-deploy-hooks-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-points-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_hook-fields-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_how-to-use-deploy-hooks-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-snippet-deploy-hook-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-command-deploy-hook-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_important-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-script-deploy-hook-only-for-rails-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_use-an-inline-script-deploy-hook-v1.md" ]
 layout: post
 template: one-col
-title: Deploy hooks
+title: Deploy Hooks
 categories: Deployment
 lead: ""
 legacy: false

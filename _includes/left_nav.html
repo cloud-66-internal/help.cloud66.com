@@ -15,7 +15,9 @@
           	<li><h3>{{ entry.page }}</h3></li>
                 {% if entry.subsubfolderitems[0] %}
 				{% for subentry in entry.subsubfolderitems %}
-					{% if page.title  == subentry.page %}
+					{% assign ttl = page.title | downcase %}
+					{% assign sbpg = subentry.page | downcase %}
+					{% if ttl == sbpg %}
 					<li><a class="sidebar-link current" href="{{ subentry.url }}">{{ subentry.page }}</a></li>
 					{% else %}
 					<li><a class="sidebar-link" href="{{ subentry.url }}">{{ subentry.page }}</a></li>

@@ -3,7 +3,7 @@ menuheaders: [ "Introduction", "Implementation", "1. RAILS_ROOT/.cloud66/deploy_
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_introduction-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_implementation-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_1.-rails95root-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_2.-rails95root-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_3.-rails95root-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_4.-rails95root-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1950-09-26-implementing-faye/1950-09-26-implementing-faye_troubleshooting-v1.md" ]
 layout: post
 template: one-col
-title: Faye on Cloud66
+title: Faye on Cloud 66
 categories: Tutorials
 lead: ""
 legacy: false

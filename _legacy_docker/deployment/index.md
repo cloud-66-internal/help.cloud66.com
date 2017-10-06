@@ -35,5 +35,4 @@ Cloud 66 Docker supports the following deployment features:
 
 <!-- - [EasyDeploy Repositories](easy-deploy-repos.html) -->
 - [Multi Tenancy for Stacks](multi-tenancy.html)
-- [Reserved Tags](reserved-tags.html)
 - [Redeployment hook](redeployment-hook.html)

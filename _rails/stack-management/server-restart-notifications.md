@@ -3,7 +3,7 @@ menuheaders: [ "What is the server restart notification?", "Is this important? D
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-restart-notifications/server-restart-notifications_contents-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-restart-notifications/server-restart-notifications_what-is-the-server-restart-not-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-restart-notifications/server-restart-notifications_is-this-important-do-i-need-i-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-restart-notifications/server-restart-notifications_how-do-i-actually-restart-my-s-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-restart-notifications/server-restart-notifications_important-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-restart-notifications/server-restart-notifications_how-does-cloud-66-determine-my-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-restart-notifications/server-restart-notifications_ive-restarted-but-i-still-se-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/StackManagement/common/server-restart-notifications/server-restart-notifications_additional-information-v1.md" ]
 layout: post
 template: one-col
-title: Server restart notifications
+title: Server Restart Notifications
 categories: stack-management
 lead: ""
 legacy: false

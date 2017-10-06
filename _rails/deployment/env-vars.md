@@ -3,7 +3,7 @@ menuheaders: [ "About environment variables", "AUTO_GENERATE environment variabl
 gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/env-vars/env-vars_contents-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/env-vars/env-vars_about-environment-variables-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/env-vars/env-vars_auto-generate-variables-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/env-vars/env-vars_auto-generated-environment-variables-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/env-vars/env-vars_assign-environment-variables-for-deployment-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/env-vars/env-vars_assign-environment-variables-after-stack-build-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/env-vars/env-vars_define-referenced-environment-variable-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/env-vars/env-vars_using-environment-variables-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/env-vars/env-vars_pre-defined-environment-variables-v1.md" ]
 layout: post
 template: one-col
-title: Environment variables
+title: Environment Variables
 categories: Deployment
 lead: ""
 legacy: false
