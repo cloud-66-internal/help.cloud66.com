@@ -2,3 +2,8 @@
  * Legacy
  * Add the old styles required for old doc compatibility
  * ---------------------------------------------------------- */
+.content-pri ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.5;
+}
