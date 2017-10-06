@@ -7,3 +7,14 @@
     padding-left: 0;
     line-height: 1.5;
 }
+
+.terminal {
+    background: #3F3F3F;
+    border-radius: 6px;
+    padding: 1em;
+    color: #efef8f;
+}
+.terminal kbd {
+    background: #3F3F3F;
+    color: #efef8f;
+}

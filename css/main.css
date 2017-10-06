@@ -45,16 +45,17 @@ strong {
   color: #2c3e50;
 }
 code,
-pre {
+pre,
+kbd {
   font-family: "SFMono-Regular", "Source Sans Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 12px;
   background-color: #f8f8f8;
   -webkit-font-smoothing: initial;
   -moz-osx-font-smoothing: initial;
 }
-code {
+code, kbd {
   color: #e96900;
-  padding: 3px 5px;
+  padding: 4px 6px;
   margin: 0 2px;
   border-radius: 2px;
   white-space: nowrap;
@@ -121,8 +122,7 @@ hr {
  * ---------------------------------------------------------- */
 #nav .nav-link {
   font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
+  font-weight: 500;
 }
 #nav .nav-dropdown-container .nav-link:hover:not(.current) {
   border-bottom: none;
@@ -344,7 +344,7 @@ body.docs #nav {
   min-width: 300px;
 }
 .search:focus {
-  border-color: #427dc4;
+  border-color: #427dc4 !important;
 }
 
 .search.search--lrg {
@@ -700,7 +700,7 @@ i.rotating-clockwise {
 .content h2 {
     margin: 20px 0 0.8em;
     padding-bottom: 0.7em;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e0e0e0;
     z-index: -1;
 }
 .content h3 {
@@ -747,14 +747,16 @@ i.rotating-clockwise {
 
 /*
  * Tables
+ * Note: the jekyll syntax highlighter uses nested tables
+ * so a .table namespace is used.
  * */
 
 .content .table {
     border: 1px solid #ddd;
     border-spacing: 0;
     border-collapse: collapse;
-    margin-top: 1.8em;
-    margin-bottom: 1.8em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     overflow-x: auto;
     table-layout: fixed;
     width: 100%;
@@ -788,7 +790,7 @@ i.rotating-clockwise {
  .notice p {
      border-color: #547e9a !important;
      background-color: #f4f7f9 !important;
-     color: inherit !important;
+     color: #2c3e50 !important;
  }
 
  /* Amber / Orange Warning */
@@ -1219,7 +1221,7 @@ body.Body--home #search-query-nav {
     border: none;
 }
 .content .SearchResults p {
-    margin: 0 0 1em;
+    margin: 0 0 0.4em;
     font-size: 14px;
     color: #999;
 }
