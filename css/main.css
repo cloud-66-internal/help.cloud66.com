@@ -47,7 +47,7 @@ strong {
 code,
 pre {
   font-family: "SFMono-Regular", "Source Sans Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 0.8em;
+  font-size: 12px;
   background-color: #f8f8f8;
   -webkit-font-smoothing: initial;
   -moz-osx-font-smoothing: initial;
@@ -103,36 +103,7 @@ hr {
 }
 
 
-/*
- * highlight
- * ---------------------------------------------------------- */
-.highlight {
-  overflow-x: auto;
-  padding: 0;
-  background-color: #f8f8f8;
-  padding: 0.8em 0.8em 0.4em;
-  line-height: 1.1em;
-  border-radius: 2px;
-}
-.highlight table,
-.highlight tr,
-.highlight td {
-  width: 100%;
-  border-collapse: collapse;
-  padding: 0;
-  margin: 0;
-}
-.highlight .gutter {
-  width: 1.5em;
-}
-.highlight .code pre {
-  padding: 1.2em 1.4em;
-  line-height: 1.5em;
-  margin: 0;
-}
-.highlight .code .line {
-  min-height: 1.5em;
-}
+
 
 
 /*
@@ -435,17 +406,6 @@ body.docs #nav {
 }
 
 
-.benchmark-table {
-  margin: 0 auto;
-  text-align: center;
-}
-.benchmark-table tbody > tr > th {
-  text-align: right;
-}
-.benchmark-table th,
-.benchmark-table td {
-  padding: 3px 7px;
-}
 
 /*
  * Sidebar
@@ -478,7 +438,7 @@ body.docs #nav {
 .sidebar ul {
   list-style-type: none;
   margin: 0;
-  line-height: 1.5em;
+  line-height: 1.6em;
   padding-left: 1em;
 }
 .sidebar > li {
@@ -496,6 +456,7 @@ body.docs #nav {
 .sidebar .menu-root {
   padding-left: 0;
 }
+
 /* remove top space to compensate for sticky positioned header above */
 .sidebar .menu-root li:first-child h3 {
     padding-top: 0;
@@ -783,33 +744,75 @@ i.rotating-clockwise {
 .content iframe {
   margin: 1em 0;
 }
-.content > table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin: 1.2em auto;
-  padding: 0;
-  display: block;
-  overflow-x: auto;
+
+/*
+ * Tables
+ * */
+
+.content .table {
+    border: 1px solid #ddd;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 1.8em;
+    margin-bottom: 1.8em;
+    overflow-x: auto;
+    table-layout: fixed;
+    width: 100%;
+    border-radius: 3px;
 }
-.content > table td,
-.content > table th {
+.content .table td,
+.content .table th {
   line-height: 1.5em;
   padding: 0.4em 0.8em;
   border: none;
-  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
 }
-.content > table th {
+.content .table th {
   font-weight: bold;
   text-align: left;
 }
-.content > table th,
-.content > table tr:nth-child(2n) {
+.content  .table th,
+.content  .table tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
-.content > table th code,
-.content > table tr:nth-child(2n) code {
+.content  .table th code,
+.content  .table tr:nth-child(2n) code {
   background-color: #efefef;
 }
+
+
+/*
+ * notice tips */
+/* Default - plae blue */
+ .notice p {
+     border-color: #547e9a !important;
+     background-color: #f4f7f9 !important;
+     color: inherit !important;
+ }
+
+ /* Amber / Orange Warning */
+ .notice-warning p,
+ .notice-amber p {
+     border-color: #fe7f25 !important;
+     background-color: #fff6f0 !important;
+     color: #fe7f25 !important;
+ }
+ /* Danger / Red Warning */
+ .notice-danger p,
+ .notice-red p {
+     border-color: #C82829 !important;
+     background-color: #ffeaea !important;
+     color: #C82829 !important;
+ }
+  /* Success / Green Warning */
+ .notice-green p,
+ .notice-success p {
+     border-color: #2aa754 !important;
+     background-color: #ebfaf0 !important;
+ }
+
+.notice p,
 .content p.tip,
 .content p.success {
   padding: 12px 24px 12px 30px;
@@ -821,21 +824,7 @@ i.rotating-clockwise {
   border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
 }
-.content p.tip:before,
-.content p.success:before {
-    position: absolute;
-    top: 14px;
-    left: -12px;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    text-align: center;
-    line-height: 20px;
-    font-weight: bold;
-    font-family: "SFMono-Regular", "Source Sans Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 14px;
-}
+
 .content p.tip code,
 .content p.success code {
     background-color: #efefef;
@@ -859,6 +848,22 @@ i.rotating-clockwise {
     font-family: FontAwesome;
     background-color: #42b983;
 }
+
+
+.content hr {
+    display: none;
+}
+.content hr.rule {
+    lear: both;
+    height: 0 !important;
+    border: solid #E5E5E5;
+    border-width: 1px 0 0;
+}
+
+
+/*
+ * Type lead
+ * */
 .lead {
     font-size: 20px;
     font-weight: 400;
@@ -950,9 +955,9 @@ i.rotating-clockwise {
   .Main {
     padding: 2em 1.4em 0;
   }
-  .highlight pre {
+  /*.highlight pre {
     padding: 1.2em 1em;
-  }
+  }*/
   .content {
     padding-left: 0;
   }

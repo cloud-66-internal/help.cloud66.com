@@ -1,8 +1,3 @@
-<!--
-	need loop to output the nav in the HTML structure below
--->
-
-
 {% if site.data.sitemap.toc2[0] %}
 <nav class="list">
 	<div class="sticky-sidebar">
@@ -12,7 +7,7 @@
 		{% assign title = item.title | downcase %}
 		{% if title == collection %}
 		<div class="sticky-sidebar">
-			<h2>{{ title | capitalize }} Documentation</h2>
+			<h2>{{ title | capitalize }} Docs</h2>
 		</div>
 		<ul class="menu-root">
       		{% if item.subfolderitems[0] %}

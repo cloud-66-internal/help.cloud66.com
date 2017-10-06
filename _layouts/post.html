@@ -4,26 +4,6 @@ bodyclass: post
 ---
 
 {% assign current_cat = page.categories %}
-<!--
-<ul class="tab">
-    {% for tab in page.tabs %}
-    {% assign last_url = page.url | split: '/' %}
-    {% assign url = "https://help.cloud66.works/" | append: tab %}
-    {% for i in (2..last_url.size) %}
-        {% assign url = url | append: '/' | append: last_url[i] %}
-    {% endfor %}
-    <li><a href="{{ url | downcase }}">{{ tab | capitalize }}</a></li>
-    {% endfor %}
-</ul>
-
-<nav class="crumbs container">
-    {% include contents_link.html %}
-    <a rel="home" href="/">
-        <img src="//cdn.cloud66.com/images/logo.svg" alt="Cloud 66" width="40" class="pull-right logo-sml">
-    </a>
-</nav>
--->
-<article class="article container">
 
     <h1 class="article-title">
         {{ page.title }}
@@ -49,6 +29,7 @@ bodyclass: post
         </div>
         {% endif %}
     </div>
+
     <div class="content-pri">
         {{ content }}
 
@@ -66,130 +47,3 @@ bodyclass: post
         </div>
         {% endif %}
     </div>
-<!--
-    <aside class="content-sec  {% if page.nav_sticky %} sticky-nav {% endif %}">
-        {% if page.contents != "false" %}
-        <div class="side-module">
-            <nav class="aside-mod">
-                <h3 class="side-title js-format-cat">
-                    {{ current_cat }}
-                </h3>
-                <ul class="nav-sec">
-                    {% for post in site.categories[current_cat.first] %}
-                    <li>
-                        <a href="{{post.url}}">
-                            {{ post.title }}
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </nav>
-        </div>
-        {% endif %}
-        {% if page.so_title %}
-        <div class="side-module">
-            <h3 class="side-title js-format-cat">StackOverflow</h3>
-            <p>
-                <a href="http://stackoverflow.com/questions/tagged/cloud66+{{page.so_title | downcase}}" target="_blank">
-                    Questions on <b>{{page.so_title}}</b> and Cloud 66
-                </a>
-            </p>
-        </div>
-        {% endif %}<br/>
-        <aside class="content-sec  {% if page.cloud66_sticky %} sticky-nav {% endif %}">
-            {% if page.cloud66_text %}
-            <div class="side-module">
-                <a href="http://www.cloud66.com/?utm_source=help&utm_medium=web&utm_campaign=help-nav" class="cta">
-                    <img src="http://cdn.cloud66.com/images/logo.svg" width="60" style="display:block;margin:0 auto">
-                    <div style="text-align:center; line-height:1.8; margin-top:8px">
-                        <b>{{page.cloud66_text}} &#10141;</b>
-                    </div></a>
-            </div>
-            {% endif %}
-        </aside>
-    </aside>-->
-    
-<!--
-<div style="
-    position: fixed;
-    top: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    overflow: scroll;
-    color: mediumseagreen;
-    top: 0px;
-    z-index: 100;
-    left: 5px;
-    width: 15%;
-    bottom: 10px;">
-{% if site.data.sitemap.toc2[0] %}
-<h2>{{ site.data.sitemap.docs_list_title }}</h2>
-  {% for item in site.data.sitemap.toc2 %}
-  {% assign url = page.url | split: '/' %}
-  {% assign collection = url[1] | downcase %}
-  {% assign title = item.title | downcase %}
-  {% if title == collection %}
-    <h3>{{ item.title }}</h3>
-      {% if item.subfolderitems[0] %}
-        <ul>
-          {% for entry in item.subfolderitems %}
-              <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
-                {% if entry.subsubfolderitems[0] %}
-                  <ul style="margin-left:10px;">
-                  {% for subentry in entry.subsubfolderitems %}
-                      <li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
-                  {% endfor %}
-                  </ul>
-                {% endif %}
-          {% endfor %}
-        </ul>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-{% endif %}
-</div>
-
-<div style="
-   z-index: 10;
-   top: 100px;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   position: fixed;
-   right: 0px;
-   width: 19%;
-   color: mediumseagreen;
-   overflow: scroll;
-   bottom:0px;
-   top:0px;">
-   {% if page.menuheaders.size>0 %}
-    <h1> What's on This Page:</h1>
-    <ul>
-        {% for next in page.menuheaders %}
-        {% assign theIndex = forloop.index | prepend: '#' %}
-        {% if next != 'Contents'%}
-        <a href="#{{next | slugify}}"><li>{{next}}</li></a><br>
-        {% endif %}
-        {% endfor %}
-        <br><br>
-    </ul>
-    {% endif %}
-    {% if page.gitlinks.size>0 %}
-    {% if jekyll.environment == "development" %}
-    <h1>Github Links</h1>
-    <ul>
-        {% assign urlWords = page.url | split: '/' %}
-        {% assign wordsLength = urlWords | size | minus: 1 %}
-        {% assign lastName = urlWords[wordsLength] %}
-        {% for next in page.gitlinks %}
-        {% assign words = next | split: '/' %}
-        {% assign length = words | size | minus: 1 %}
-        {% assign finalName = words[length] %}
-        {% assign nameArr =  finalName | split: lastName %}
-        {% assign displayName = nameArr[1] | remove_first: '_' | remove_first: '.md' %}
-        <li><a href={{next}} >{{displayName}}<br></a></li>
-        {% endfor %}
-    </ul>
-    {% endif %}
-    {% endif %}
-</div>
--->
