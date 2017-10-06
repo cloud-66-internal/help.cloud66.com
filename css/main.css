@@ -1023,7 +1023,7 @@ i.rotating-clockwise {
  * CODE Preformatted
  * ------------------------------------------------------------------  */
 
-.gutter pre {
+/*.gutter pre {
   color: #999;
 }
 pre {
@@ -1110,7 +1110,7 @@ pre .xml .vbscript,
 pre .xml .css,
 pre .xml .cdata {
   opacity: 0.5;
-}
+}*/
 
 /*
  * Home Landing Page
@@ -1201,4 +1201,25 @@ body.Body--home #search-query-nav {
 }
 .Product-topBar--node {
     background: #80BE42;
+}
+
+/*
+ * Search Results List
+ * .SearchResults
+ * ------------------------------------------------------------------  */
+.content .SearchResults {
+    list-style: none;
+    padding: 1em 0;
+}
+.content .SearchResults h2 {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.content .SearchResults p {
+    margin: 0 0 1em;
+    font-size: 14px;
+    color: #999;
 }
