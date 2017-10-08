@@ -9,8 +9,6 @@ permalink: /:collection/:categories/index.html
 ---
 
 
-
-- [Buildgrid](buildgrid)
 - [Deployment](deployment)
 - [Getting Started](getting-started)
 - [Stack Management](stack-management)

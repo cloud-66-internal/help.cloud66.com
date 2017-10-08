@@ -10,7 +10,7 @@ permalink: /:collection/:categories/index.html
 
 
 
-- [Advanced Deploy](advanced-deploy)
+- [Service Networking](service-networking)
 - [Connecting your Git repository](custom-git-repo)
 - [Dockerfile](dockerfile)
 - [Connecting to Docker Image Repository](image-repository)
