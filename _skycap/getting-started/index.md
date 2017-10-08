@@ -9,10 +9,9 @@ permalink: /:collection/:categories/index.html
 ---
 
 
-
-- [Service Networking](service-networking)
-- [Connecting your Git repository](custom-git-repo)
 - [Dockerfile](dockerfile)
+- [Connecting your Git repository](custom-git-repo)
 - [Connecting to Docker Image Repository](image-repository)
+- [Service Networking](service-networking)
 - [Choosing Server Size](server-size)
 

@@ -8,9 +8,8 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-
-- [Deployment](deployment)
 - [Getting Started](getting-started)
+- [Deployment](deployment)
 - [Stack Management](stack-management)
 - [Tutorials](tutorials)
 
