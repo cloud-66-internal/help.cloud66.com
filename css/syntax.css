@@ -245,6 +245,9 @@ li.L9 {
     text-decoration: underline !important;
   }
 
+  .prettyprint a {
+    text-decoration: underline;
+  }
   /* type name */
 
   .typ {
