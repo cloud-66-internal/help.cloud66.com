@@ -6,8 +6,8 @@
 .highlight {
   overflow-x: auto;
   background-color: #3F3F3F;
-  padding: 0 0.8em;
-  line-height: 1.1em;
+  padding: 0.8em;
+  line-height: 1.4em;
   border-radius: 6px;
   margin: 1.4em 0;
 }
