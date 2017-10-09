@@ -23,22 +23,29 @@
   width: 1.5em;
 }
 
+.highlight .lineno {
+    line-height: 1.5em;
+    padding-right: 1em;
+}
+
 td.code > pre {
     margin: 0;
     padding: 0;
 }
-.highlight .code pre {
-  padding: 0     1.4em;
+.highlight code,
+.highlight kbd {
+  padding: 0;
   line-height: 1.5em;
   margin: 0;
-  font-size: 12px;
 }
-.highlight .code .line {
+.highlight code .line {
   min-height: 1.5em;
   font-size: 12px;
 }
 
-
+.highlight code + table {
+    outline: 1px solid red;
+}
 
 
 /*
