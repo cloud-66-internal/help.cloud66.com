@@ -181,3 +181,133 @@ td.code > pre {
  .highlight .nb,.preview-zenburn .highlight .nc,.preview-zenburn .highlight .nf,.preview-zenburn .highlight .bp,.preview-zenburn .highlight .vc {
  color:#efef8f;
  }
+
+
+
+ /*
+  *  Color themes for Google Code Prettify
+  */
+.prettyprint {
+  background: #3F3F3F !important;
+  font-family: Menlo, "SFMono-Regular", "Source Sans Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+  border: 0 !important;
+  border-radius: 6px;
+  padding: 2em !important;
+}
+
+.pln {
+  color: #cccccc !important;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  color: #999999 !important;
+}
+
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+  padding-left: 1em !important;
+  background-color: #2d2d2d !important;
+  list-style-type: decimal !important;
+}
+
+@media screen {
+
+  /* string content */
+
+  .str {
+    color: #99cc99 !important;
+  }
+
+  /* keyword */
+
+  .kwd {
+    color: #cc99cc !important;
+  }
+
+  /* comment */
+
+  .com {
+    color: #999999 !important;
+  }
+
+  .com a {
+    text-decoration: underline !important;
+  }
+
+  /* type name */
+
+  .typ {
+    color: #6699cc !important;
+  }
+
+  /* literal value */
+
+  .lit {
+    color: #f99157 !important;
+  }
+
+  /* punctuation */
+
+  .pun {
+    color: #cccccc !important;
+  }
+
+  /* lisp open bracket */
+
+  .opn {
+    color: #cccccc !important;
+  }
+
+  /* lisp close bracket */
+
+  .clo {
+    color: #cccccc !important;
+  }
+
+  /* markup tag name */
+
+  .tag {
+    color: #f2777a !important;
+  }
+
+  /* markup attribute name */
+
+  .atn {
+    color: #f99157 !important;
+  }
+
+  /* markup attribute value */
+
+  .atv {
+    color: #66cccc !important;
+  }
+
+  /* declaration */
+
+  .dec {
+    color: #f99157 !important;
+  }
+
+  /* variable name */
+
+  .var {
+    color: #f2777a !important;
+  }
+
+  /* function name */
+
+  .fun {
+    color: #6699cc !important;
+  }
+}

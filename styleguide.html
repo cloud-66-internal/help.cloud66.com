@@ -4,11 +4,11 @@ title: search for help | Cloud 66
 ---
 
     <h1 class="article-title">
-        Lorem ipsum dolor
+        The main page heading
     </h1>
 
     <p class="lead">
-       Article lead para Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, labore, temporibus adipisicing elit.
+       Optional article lead. An overview of the document, tutorial or guide objectives. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, labore, temporibus adipisicing elit.
     </p>
 
     <p class="weighted">
@@ -17,32 +17,20 @@ title: search for help | Cloud 66
 
     <p><span class="highlighted">Text can be highlighted</span> of a block level notice can be used &mdash; see the examples below.</p>
 
-    <p>Default notice</p>
 
     <div class="notice">
-        <h3>Important</h3>
+        <h3>A Default Notice</h3>
         <p>Call-out some text on the page as important but use sparingly! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
 
-    <p>Warning notice</p>
-
     <div class="notice notice-warning">
-        <h3>Warning</h3>
+        <h3>A Warning Notice</h3>
         <p>Callout some text on the page as warning but use sparingly! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
 
-    <p>Danger notice or there is an <span class="error">error class for error text</span></p>
-
     <div class="notice notice-danger">
-        <h3>Danger</h3>
-        <p>Callout some text on the page as dangerous but use sparingly! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-
-    <p>error can be mixed with the <code>notice-danger</code> class.</p>
-
-    <div class="notice notice-danger">
-        <h3 class="error">Danger</h3>
-        <p class="error">Callout some text on the page as dangerous but use sparingly! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h3>A Danger Notice</h3>
+        <p>Callout some text on the page as dangerous but use VERY sparingly! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
 
     <p>
@@ -104,6 +92,7 @@ title: search for help | Cloud 66
     </tbody>
 </table>
 
+<h2>Jekyll Pygments Syntax highlighter</h2>
 
 <p>Jekyll also offers powerful support for code snippets:</p>
 
@@ -157,10 +146,11 @@ For values returned by the system use the normal `terminal` class:
     </li>
 </ul>
 
-<pre class="prettyprint">class Voila {
-public:
-  // Voila
-  static const string VOILA = "Voila";
+<h2>Google Code Prettify Syntax Highlighter</h2>
 
-  // will not interfere with embedded <a href="#voila2">tags</a>.
+<pre class="prettyprint">var hello = function() {
+    for (var i = 42; --i >= 0;) {
+        console.log('hello');
+    }
+  // This is a comment with a link <a href="#voila2">tags</a>.
 }</pre>
