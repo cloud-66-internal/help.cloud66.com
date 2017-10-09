@@ -45,6 +45,7 @@ td.code > pre {
 
 .highlight code + table {
     outline: 1px solid red;
+    margin: 0 !important;
 }
 
 
