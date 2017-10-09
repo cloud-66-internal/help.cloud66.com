@@ -1,6 +1,6 @@
 /*
  * Global
- * New Layout and styling for October 2017 Design
+ * Layout October 2017
  * ---------------------------------------------------------- */
 
 body {
@@ -56,12 +56,12 @@ kbd {
 code, kbd {
   color: #e96900;
   padding: 4px 6px;
-  margin: 0 2px;
+  /*margin: 0 2px;*/
   border-radius: 2px;
   /*white-space: nowrap;*/
 }
 em {
-  color: #333;
+  color: #2c3e50;
 }
 p {
   word-spacing: 0.05em;
@@ -302,19 +302,7 @@ body.docs #nav {
 .nav-community .nav-link {
   margin-left: 10px;
 }
-.new-label {
-  position: absolute;
-  top: 3px;
-  left: 110%;
-  background-color: #42b983;
-  color: #fff;
-  line-height: 16px;
-  height: 16px;
-  font-size: 9px;
-  font-weight: bold;
-  padding: 1px 4px 0 6px;
-  border-radius: 4px;
-}
+
 #NavSub {
     list-style-type: none;
     margin: 0;
@@ -325,6 +313,10 @@ body.docs #nav {
     height: 40px;
     line-height: 40px;
 }
+
+/*
+ * Search
+ */
 .search {
   height: 34px;
   line-height: 30px;
@@ -356,6 +348,9 @@ body.docs #nav {
     color: #000;
 }
 
+/*
+ * Logo
+ */
 #logo {
   display: inline-block;
   font-size: 1.5em;
@@ -471,21 +466,6 @@ body.docs #nav {
   font-weight: 600;
   color: #427dc4;
 }
-.sidebar .sidebar-link.new:after {
-  content: "NEW";
-  display: inline-block;
-  font-size: 10px;
-  font-weight: 600;
-  color: #fff;
-  background-color: #42b983;
-  line-height: 14px;
-  padding: 0 4px;
-  border-radius: 3px;
-  margin-left: 5px;
-  vertical-align: middle;
-  position: relative;
-  top: -1px;
-}
 .sidebar .sidebar-link:hover {
   padding-bottom: 1px;
   color: #333;
@@ -533,7 +513,7 @@ body.docs #nav {
 }
 
 /*
- * Sidebar (Side drawer for mobile)
+ * Sidebar (Side drawer on mobile)
  * ------------------------------------------------------- */
 @media screen and (max-width: 900px) {
 
@@ -1126,11 +1106,15 @@ body.Body--home #search-query-nav {
     display: none;
 }
 
-.HomeContainer {
+.LandingContainer {
     box-sizing: border-box;
     padding: 2.3em 0;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.LandingContainer.content {
+    max-width: 800px !important;
 }
 
 .LandingSearch {
@@ -1141,9 +1125,8 @@ body.Body--home #search-query-nav {
  * Home Landing Page
  * Product CTA's
  * ------------------------------------------------------------------  */
-.Products {
+.Landing {
     background: #FDFDFD;
-    /*box-shadow: inset 0px 0px 0px 1px #EFEFEF, 1px 1px 6px rgba(0,0,0,0.05);*/
     border-top: 1px solid #eaeaea;
     border-bottom: 1px solid #eaeaea;
     min-height: 999999999em;
@@ -1210,19 +1193,35 @@ body.Body--home #search-query-nav {
  * Search Results List
  * .SearchResults
  * ------------------------------------------------------------------  */
-.content .SearchResults {
+.LandingContainer.content .SearchResults {
     list-style: none;
     padding: 1em 0;
 }
-.content .SearchResults h2 {
-    font-weight: 500;
-    font-size: 16px;
+.LandingContainer.content h2 {
+    font-weight: bold;
+    font-size: 22px;
     padding: 0;
     margin: 0;
     border: none;
+    line-height: 1;
 }
-.content .SearchResults p {
+.LandingContainer.content .SearchResults h3 {
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+}
+.LandingContainer.content .SearchResults p {
     margin: 0 0 0.4em;
-    font-size: 14px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/*
+ * .Footer
+ * .SearchResults
+ * ------------------------------------------------------------------  */
+.Footer {
+    padding: 1.6em 0;
     color: #999;
 }

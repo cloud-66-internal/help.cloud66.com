@@ -3,9 +3,9 @@
  * Add the old styles required for old doc compatibility
  * ---------------------------------------------------------- */
 .content-pri ul {
-    list-style: none;
-    padding-left: 0;
-    line-height: 1.5;
+    /*list-style: none;*/
+    /*padding-left: 0;*/
+    /*line-height: 1.5;*/
 }
 
 .terminal {
@@ -18,4 +18,14 @@
 .terminal kbd {
     background: #3F3F3F;
     color: #efef8f;
+}
+.weighted {
+    color: #2c3e50;
+}
+
+.highlighted {
+    background: #FFFFCC;
+    padding: 2px 0;
+    font-weight: normal;
+    color: #000;
 }

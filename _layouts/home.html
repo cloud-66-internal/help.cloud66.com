@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <title>
-		Cloud 66 Documentation - Home
-	</title>
+        Cloud 66 Documentation
+    </title>
 
     <meta charset="utf-8">
     <meta name="description" content="Cloud 66 - Documentation">
@@ -22,117 +22,41 @@
     <meta name="twitter:image" content="/images/ui/logo.svg">
 
     <link rel="icon" href="/images/ui/logo.svg" type="image/png">
-	<link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-	{% include styles.html %}
+    {% include styles.html %}
 </head>
 <body class="Body Body--home">
 
-		{% include top_nav_bar.html %}
+        {% include top_nav_bar.html %}
 
-		<main id="main">
+        <main id="main">
+            <section class="LandingSearch LandingContainer">
+                <form id="search-form" method="post" action="/search-results">
+                    <input type="text"
+                           id="search-query-home"
+                           name="search-query-home"
+                           class="search search--lrg u-fullWidth"
+                           placeholder="Search the Docs">
+                </form>
+            </section>
+            {% assign show_search_reults = false %}
 
-			<section class="LandingSearch HomeContainer">
-				<form id="search-form">
-			        <input type="text" id="search-query-home" name="search-query-home" class="search search--lrg u-fullWidth" placeholder="Search the Docs">
-			    </form>
-			</section>
+            <div class="Landing">
+                {% if show_search_reults == true %}
+                    {% include search_results.html %}
+                {% else %}
+                    {% include products_grid.html %}
+                {% endif %}
+            </div>
+        </main>
 
-			<div class="Products">
-				<section class="HomeContainer">
-					<div class="Grid Grid--gutter Grid--full large-Grid--fit med-Grid--guttersXl">
-	                    <div class="Grid-cell">
-	                        <a href="/skycap">
-	                            <div class="Product">
-									<div class="Product-topBar Product-topBar--skycap"></div>
-									<div class="Product-body">
-										<div class="Media">
-										  <img src="/images/ui/skycap_logo.svg" class="Media-figure Product-image" width="40" alt="">
-										  <div class="Media-body">
-										      <h6 class="Product-title">Skycap</h6>
-										      <p class="Product-text">
-												  A complete CI pipeline to build your code into container images.
-											  </p>
-											  <span class="Button Button--outlined Button--blue Button--small">
-												  Skycap Docs
-											  </span>
-										  </div>
-										</div><!--.Media-->
-								  	</div><!--./Product-body -->
-	                            </div><!-- /.Panel -->
-	                        </a>
-	                    </div><!--/.Grid-cell-->
-	                    <div class="Grid-cell">
-	                        <a href="/meastro">
-	                            <div class="Product">
-									<div class="Product-topBar Product-topBar--maestro"></div>
-									<div class="Product-body">
-		                                <div class="Media">
-		                                    <img src="/images/ui/maestro_logo.svg" class="Media-figure Product-image" width="40" alt="">
-		                                    <div class="Media-body">
-		                                        <h6 class="Product-title">Meastro</h6>
-		                                        <p class="Product-text">
-													A full container management service, backed by Kubernetes.
-												</p>
-												<span class="Button Button--outlined Button--blue Button--small">
-													Meastro Docs
-												</span>
-		                                    </div>
-										</div><!--.Media-->
-	                                </div><!--./Product-body -->
-	                            </div><!--/.Panel-->
-	                        </a>
-	                    </div><!--/.Grid-cell-->
-					</div>
-
-					<div class="Grid Grid--gutter Grid--full large-Grid--fit med-Grid--guttersXl">
-						<div class="Grid-cell">
-	                        <a href="/rails">
-	                            <div class="Product">
-									<div class="Product-topBar Product-topBar--rack"></div>
-									<div class="Product-body">
-		                                  <div class="Media">
-		                                      <img src="/images/ui/ruby_logo.svg" class="Media-figure Product-image" width="40" alt="">
-		                                      <div class="Media-body">
-		                                          <h6 class="Product-title">Rails &amp; Rack Frameworks</h6>
-		                                          <p class="Product-text">
-													  Build, deploy and maintain your Rack apps on any cloud or server.
-												  </p>
-												  <span class="Button Button--outlined Button--blue Button--small">
-													  Rails Docs
-												  </span>
-		                                      </div>
-		                                  </div><!--.Media-->
-									</div>
-	                            </div><!-- /.Panel -->
-	                        </a>
-	                    </div><!--/.Grid-cell-->
-	                    <div class="Grid-cell">
-	                        <a href="/node">
-	                            <div class="Product">
-									<div class="Product-topBar Product-topBar--node"></div>
-									<div class="Product-body">
-		                                <div class="Media">
-		                                    <img src="/images/ui/node_logo.svg" class="Media-figure Product-image" width="40" alt="">
-		                                    <div class="Media-body">
-		                                        <h6 class="Product-title">Node Frameworks</h6>
-		                                        <p class="Product-text">
-													Build, deploy and maintain your node.js apps on any cloud or server.
-												</p>
-												<span class="Button Button--outlined Button--blue Button--small">
-													Node Docs
-												</span>
-		                                    </div>
-		                                </div><!--.Media-->
-									</div><!--/.Product-body -->
-	                            </div><!--/.Panel-->
-	                        </a>
-	                    </div><!--/.Grid-cell-->
-	                </div><!--/.Grid-->
-				</section>
-			</div>
-		</main>
+        <footer role="contentinfo" class="Footer">
+            <div class="LandingContainer">
+                <small class="small-print">&copy; 2011-2017 <a href="http://www.cloud66.com/?utm_source=help&utm_medium=link&utm_content=footer&utm_campaign=product">Cloud 66 Inc.</a></small>
+            </div>
+        </footer>
 </body>
 </html>
