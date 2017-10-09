@@ -8,11 +8,8 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-
-
-- [Buildgrid](buildgrid)
-- [Deployment](deployment)
 - [Getting Started](getting-started)
+- [Deployment](deployment)
 - [Stack Management](stack-management)
 - [Tutorials](tutorials)
 

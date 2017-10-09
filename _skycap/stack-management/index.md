@@ -9,9 +9,8 @@ permalink: /:collection/:categories/index.html
 ---
 
 
-
-- [Cloud66 Birdseye](cloud66-birdseye)
 - [CustomConfig™](custom-config)
 - [CustomConfig git](custom-git-repository)
-- [Global Search](global-search)
 - [Stack Notifications](stack-notifications)
+- [Global Search](global-search)
+- [Cloud66 Birdseye](cloud66-birdseye)

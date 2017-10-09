@@ -4,7 +4,7 @@ gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inl
 layout: post
 template: one-col
 title: Buildgrid Settings
-categories: buildgrid
+categories: deployment
 lead: ""
 legacy: false
 

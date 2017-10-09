@@ -17,7 +17,6 @@ Cloud 66 Maestro supports the following deployment features:
 - [Advanced deployment](advanced-deploy.html)
 - [Getting Started with Manifest Files](getting-started-with-manifest-files.html)
 - [Building a Manifest File](building-a-manifest-file.html)
-- [Habitus](habitus)
 - [Clouds](clouds)
 - [Configure your DNS](configure-dns.html)
 - [Container Port Mapping](container-ports.html)
@@ -34,6 +33,5 @@ Cloud 66 Maestro supports the following deployment features:
 
 <!-- - [EasyDeploy Repositories](easy-deploy-repos.html)-->
 - [Multi Tenancy for Stacks](multi-tenancy.html)
-- [Reserved Tags](reserved-tags.html)
 - [Redeployment hook](redeployment-hook.html)
 

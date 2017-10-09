@@ -217,8 +217,8 @@ toc2:
             url: https://help.cloud66.works/legacy_docker/stack-management/server-deletion.html
           - page: Server Restart Notifications
             url: https://help.cloud66.works/legacy_docker/stack-management/server-restart-notifications.html
-          - page: Server Life-cycle Management
-            url: https://help.cloud66.works/legacy_docker/stack-management/server-lifecycle-management.html
+          - page: Service Life-cycle Management
+            url: https://help.cloud66.works/legacy_docker/stack-management/service-lifecycle-management.html
           - page: Service Pause & Resume
             url: https://help.cloud66.works/legacy_docker/stack-management/service-pause-resume.html
           - page: Service Resources
@@ -457,10 +457,274 @@ toc2:
       - page: Deployment
         url: https://help.cloud66.works/maestro/deployment/
         subsubfolderitems:
-          - page: Clouds
-            url: https://help.cloud66.works/maestro/deployment/clouds/
-          - page: Build your manifest file
+          - page: Introduction to Docker deployments
+            url: https://help.cloud66.works/maestro/deployment/docker-introduction.html
+          - page: Docker Service Configuration
+            url: https://help.cloud66.works/maestro/deployment/docker-service-configuration.html
+          - page: Environment Variables
+            url: https://help.cloud66.works/maestro/deployment/env-vars.html
+          - page: Stack Environments
+            url: https://help.cloud66.works/maestro/deployment/stack-environments.html
+          - page: Advanced Deploy
+            url: https://help.cloud66.works/maestro/deployment/advanced-deploy.html
+          - page: Getting Started with Manifest Files
+            url: https://help.cloud66.works/maestro/deployment/getting-started-with-manifest-files.html
+          - page: Building your Manifest File
             url: https://help.cloud66.works/maestro/deployment/building-a-manifest-file.html
+          - page: Deploy to your cloud
+            url: https://help.cloud66.works/maestro/deployment/clouds/
+          - page: Configure your DNS
+            url: https://help.cloud66.works/maestro/deployment/configure-dns.html
+          - page: Container Port Mapping
+            url: https://help.cloud66.works/maestro/deployment/container-ports.html
+          - page: Service Network Configuration
+            url: https://help.cloud66.works/maestro/deployment/service-network-configuration.html
+          - page: Deployment History
+            url: https://help.cloud66.works/maestro/deployment/deployment-history.html
+          - page: Deploy Hooks
+            url: https://help.cloud66.works/maestro/deployment/deploy-hooks.html
+          - page: Deployment Profiles
+            url: https://help.cloud66.works/maestro/deployment/deploy-profiles.html
+          - page: Deployment Authorization
+            url: https://help.cloud66.works/maestro/deployment/deploy-authorisation.html
+          - page: Parallel Deployments
+            url: https://help.cloud66.works/maestro/deployment/parallel-deployment.html
+          - page: Server IP Addresses and Hostnames
+            url: https://help.cloud66.works/maestro/deployment/server-ip-addresses.html
+          - page: Registered Servers
+            url: https://help.cloud66.works/maestro/deployment/registered-servers.html
+          - page: Nginx
+            url: https://help.cloud66.works/maestro/deployment/nginx.html
+          - page: Deployment Gateway
+            url: https://help.cloud66.works/maestro/deployment/deployment-gateway.html
+          - page: EasyDeploy Repositories
+            url: https://help.cloud66.works/maestro/deployment/easy-deploy-repos.html
+          - page: Multi Tenancy for Stacks
+            url: https://help.cloud66.works/maestro/deployment/multi-tenancy.html
+          - page: Redeployment Hooks
+            url: https://help.cloud66.works/maestro/deployment/redeployment-hooks.html
+      - page: Failover Groups
+        url: https://help.cloud66.works/maestro/failover-groups/
+        subsubfolderitems:
+          - page: Failover Groups
+            url: https://help.cloud66.works/maestro/failover-groups/failover-groups.html
+      - page: Getting Started
+        url: https://help.cloud66.works/maestro/getting-started/
+        subsubfolderitems:
+          - page: Stack Definition
+            url: https://help.cloud66.works/maestro/getting-started/stack-definition.html
+          - page: Getting Started with Maestro
+            url: https://help.cloud66.works/maestro/getting-started/maestro-getting-started.html
+          - page: Dockerfile
+            url: https://help.cloud66.works/maestro/getting-started/dockerfile.html
+          - page: Docker Service Configuration
+            url: https://help.cloud66.works/maestro/getting-started/docker-service-config.html
+          - page: Connecting Your Git Repository
+            url: https://help.cloud66.works/maestro/getting-started/custom-git-repo.html
+          - page: Connecting to Docker Image Repository
+            url: https://help.cloud66.works/maestro/getting-started/image-repository.html
+          - page: Service Networking
+            url: https://help.cloud66.works/maestro/getting-started/service-networking.html
+          - page: Choosing Server Size
+            url: https://help.cloud66.works/maestro/getting-started/server-size.html
+      - page: Stack Management
+        url: https://help.cloud66.works/maestro/stack-management/
+        subsubfolderitems:
+          - page: Server Monitoring
+            url: https://help.cloud66.works/maestro/stack-management/server-monitoring.html
+          - page: Service Monitoring
+            url: https://help.cloud66.works/maestro/stack-management/service-monitoring.html
+          - page: Stack Network Configuration
+            url: https://help.cloud66.works/maestro/stack-management/network-configuration.html
+          - page: SSH to your Server
+            url: https://help.cloud66.works/maestro/stack-management/ssh-to-server.html
+          - page: Server Deletion
+            url: https://help.cloud66.works/maestro/stack-management/server-deletion.html
+          - page: Server Restart Notifications
+            url: https://help.cloud66.works/maestro/stack-management/server-restart-notifications.html
+          - page: Service Life-cycle Management
+            url: https://help.cloud66.works/maestro/stack-management/service-lifecycle-management.html
+          - page: Service Pause & Resume
+            url: https://help.cloud66.works/maestro/stack-management/service-pause-resume.html
+          - page: Service Resources
+            url: https://help.cloud66.works/maestro/stack-management/service-resources.html
+          - page: Service Storage
+            url: https://help.cloud66.works/maestro/stack-management/service-storage.html
+          - page: Scaling
+            url: https://help.cloud66.works/maestro/stack-management/scaling.html
+          - page: Logging
+            url: https://help.cloud66.works/maestro/stack-management/logging.html
+          - page: Live-Logs
+            url: https://help.cloud66.works/maestro/stack-management/live-logs.html
+          - page: Stack Notifications
+            url: https://help.cloud66.works/maestro/stack-management/stack-notifications.html
+          - page: Applying Upgrades
+            url: https://help.cloud66.works/maestro/stack-management/applying-upgrades.html
+          - page: CustomConfig™
+            url: https://help.cloud66.works/maestro/stack-management/custom-config.html
+          - page: CustomConfig Git
+            url: https://help.cloud66.works/maestro/stack-management/custom-git-repo.html
+          - page: Server Meta Data Service
+            url: https://help.cloud66.works/maestro/stack-management/meta-data-service.html
+          - page: Global Search
+            url: https://help.cloud66.works/maestro/stack-management/global-search.html
+          - page: Agent Communication Issues
+            url: https://help.cloud66.works/maestro/stack-management/agent-communication-issue.html
+      - page: Toolbelt
+        url: https://help.cloud66.works/maestro/toolbelt/
+        subsubfolderitems:
+          - page: Toolbelt Introduction
+            url: https://help.cloud66.works/maestro/toolbelt/introduction.html
+          - page: Toolbelt Commands Directory
+            url: https://help.cloud66.works/maestro/toolbelt/commands-overview.html
+          - page: Toolbelt SSH to servers
+            url: https://help.cloud66.works/maestro/toolbelt/ssh.html
+          - page: Toolbelt lease management
+            url: https://help.cloud66.works/maestro/toolbelt/lease.html
+          - page: Toolbelt databases management
+            url: https://help.cloud66.works/maestro/toolbelt/databases.html
+          - page: Toolbelt run command
+            url: https://help.cloud66.works/maestro/toolbelt/run.html
+          - page: Easy Login
+            url: https://help.cloud66.works/maestro/toolbelt/login.html
+          - page: Toolbelt user commands
+            url: https://help.cloud66.works/maestro/toolbelt/users.html
+          - page: Toolbelt stack management
+            url: https://help.cloud66.works/maestro/toolbelt/stacks.html
+          - page: Toolbelt server management
+            url: https://help.cloud66.works/maestro/toolbelt/servers.html
+          - page: Toolbelt service management
+            url: https://help.cloud66.works/maestro/toolbelt/services.html
+          - page: Toolbelt Backup Management
+            url: https://help.cloud66.works/maestro/toolbelt/backups.html
+          - page: Toolbelt job management
+            url: https://help.cloud66.works/maestro/toolbelt/jobs.html
+          - page: Toolbelt open command
+            url: https://help.cloud66.works/maestro/toolbelt/open.html
+          - page: Toolbelt redeploy command
+            url: https://help.cloud66.works/maestro/toolbelt/redeploy.html
+          - page: Toolbelt environment variable management
+            url: https://help.cloud66.works/maestro/toolbelt/toolbelt-env-vars.html
+          - page: Toolbelt Settings Command
+            url: https://help.cloud66.works/maestro/toolbelt/settings.html
+          - page: Toolbelt tail command
+            url: https://help.cloud66.works/maestro/toolbelt/tail.html
+          - page: Toolbelt gateway management
+            url: https://help.cloud66.works/maestro/toolbelt/gateway.html
+          - page: Toolbelt tunnel command
+            url: https://help.cloud66.works/maestro/toolbelt/tunnel.html
+          - page: Toolbelt upload command
+            url: https://help.cloud66.works/maestro/toolbelt/upload.html
+          - page: Toolbelt download command
+            url: https://help.cloud66.works/maestro/toolbelt/download.html
+      - page: Troubleshooting
+        url: https://help.cloud66.works/maestro/troubleshooting/
+        subsubfolderitems:
+          - page: SSH
+            url: https://help.cloud66.works/maestro/troubleshooting/ssh.html
+          - page: Let's Encrypt
+            url: https://help.cloud66.works/maestro/troubleshooting/lets-encrypt.html
+          - page: Deployment Failure
+            url: https://help.cloud66.works/maestro/troubleshooting/deployment-failure.html
+          - page: Backup failure
+            url: https://help.cloud66.works/maestro/troubleshooting/backup-failure.html
+          - page: Redeployment Hook
+            url: https://help.cloud66.works/maestro/troubleshooting/redeployment-hook.html
+      - page: Tutorials
+        url: https://help.cloud66.works/maestro/tutorials/
+        subsubfolderitems:
+          - page: Docker Container Troubleshooting
+            url: https://help.cloud66.works/maestro/tutorials/1900-01-21-docker-troubleshooting.html
+          - page: Multi Region Stack
+            url: https://help.cloud66.works/maestro/tutorials/1900-09-26-multi-region-stack.html
+          - page: Manually add an SSL certificate to a load balancer
+            url: https://help.cloud66.works/maestro/tutorials/1900-09-26-ssl-termination-on-load-balancers.html
+          - page: Strong SSL Security on Nginx
+            url: https://help.cloud66.works/maestro/tutorials/1900-10-10-nginx-ssl-ciphers.html
+          - page: Zero-downtime deployments
+            url: https://help.cloud66.works/maestro/tutorials/1901-01-26-zero-downtime-deploy.html
+          - page: Add Modules to Nginx
+            url: https://help.cloud66.works/maestro/tutorials/1901-10-03-nginx-modules.html
+          - page: How to change the data directory for PostgreSQL
+            url: https://help.cloud66.works/maestro/tutorials/1920-09-26-change-psql-directory.html
+          - page: Cloud 66 Websocket Support
+            url: https://help.cloud66.works/maestro/tutorials/1925-09-26-websocket-support.html
+          - page: Configuring HAProxy for WebSocket
+            url: https://help.cloud66.works/maestro/tutorials/1930-09-26-haproxy-for-websocket.html
+          - page: How to connect to your database servers
+            url: https://help.cloud66.works/maestro/tutorials/1935-09-26-connect-db-servers.html
+          - page: Create symbolic links in Ubuntu
+            url: https://help.cloud66.works/maestro/tutorials/1936-09-26-symlink-folders.html
+          - page: Installing SMTP on your server
+            url: https://help.cloud66.works/maestro/tutorials/1960-09-24-smtp-installation.html
+          - page: Memcached
+            url: https://help.cloud66.works/maestro/tutorials/1969-09-26-memcached.html
+          - page: How to manage your Cloud 66 backups
+            url: https://help.cloud66.works/maestro/tutorials/1970-09-26-manage-backups.html
+          - page: Migrate your backups across data centers
+            url: https://help.cloud66.works/maestro/tutorials/1976-09-26-migrate-across-dc.html
+          - page: How to Deal with a Failover Group
+            url: https://help.cloud66.works/maestro/tutorials/1976-09-26-stack-failover.html
+          - page: Optimizing Performance for Server Load
+            url: https://help.cloud66.works/maestro/tutorials/1980-09-26-optimizing-performance.html
+          - page: Out of Memory Errors during Deployment
+            url: https://help.cloud66.works/maestro/tutorials/1981-09-26-out-of-memory-errors.html
+          - page: Seeding your databases
+            url: https://help.cloud66.works/maestro/tutorials/1998-12-08-seeding-db.html
+          - page: Setting up SSH Keys
+            url: https://help.cloud66.works/maestro/tutorials/2000-01-01-ssh-keys.html
+          - page: Sharing databases between Stacks
+            url: https://help.cloud66.works/maestro/tutorials/2003-09-26-sharing-db.html
+          - page: SSL Certificate
+            url: https://help.cloud66.works/maestro/tutorials/2004-09-26-ssl-certificate.html
+          - page: Application not Serving Content
+            url: https://help.cloud66.works/maestro/tutorials/2009-09-26-application-not-serving.html
+          - page: Nginx Basic Authorization
+            url: https://help.cloud66.works/maestro/tutorials/2012-01-03-nginx-auth.html
+          - page: Nginx allow and deny by IP
+            url: https://help.cloud66.works/maestro/tutorials/2012-01-05-nginx-deny.html
+          - page: DigitalOcean server creation errors
+            url: https://help.cloud66.works/maestro/tutorials/2012-01-06-digitalocean-server-creation-errors.html
+          - page: Nginx Redirect
+            url: https://help.cloud66.works/maestro/tutorials/2012-01-09-nginx-redirect.html
+          - page: Uninstalling Mysql
+            url: https://help.cloud66.works/maestro/tutorials/2014-09-26-uninstall-mysql.html
+          - page: Choosing your Server Size
+            url: https://help.cloud66.works/maestro/tutorials/2015-02-19-server-size.html
+          - page: Setting up custom LiveLog files
+            url: https://help.cloud66.works/maestro/tutorials/2015-07-08-Setting-up-custom-livelogs.html
+          - page: How to migrate your stack
+            url: https://help.cloud66.works/maestro/tutorials/2015-08-20-migrate-the-stack.html
+          - page: Configuring Multi Certificate for HAProxy
+            url: https://help.cloud66.works/maestro/tutorials/2015-09-02-multi-cert-haproxy.html
+          - page: Use GitHub with Cloud 66
+            url: https://help.cloud66.works/maestro/tutorials/2015-09-22-github.html
+          - page: Memory usage issues
+            url: https://help.cloud66.works/maestro/tutorials/2015-09-26-memory-usage-issues.html
+          - page: Service Dependency
+            url: https://help.cloud66.works/maestro/tutorials/2016-01-21-Docker-Dependency.html
+          - page: Managing Logs For Containers
+            url: https://help.cloud66.works/maestro/tutorials/2016-04-07-logs-for-containers.html
+          - page: NewRelic Deploy Hooks for Docker
+            url: https://help.cloud66.works/maestro/tutorials/2016-04-13-newrelic-deploy-hooks-docker.html
+          - page: Using Production Data on your Staging Stack
+            url: https://help.cloud66.works/maestro/tutorials/2016-09-29-using-master-data-staging.html
+          - page: Agent Communication Issue
+            url: https://help.cloud66.works/maestro/tutorials/2017-01-01-agent-communication-is.html
+          - page: SMTP Timeouts on Amazon AWS EC2
+            url: https://help.cloud66.works/maestro/tutorials/2017-01-06-smtp-timeouts.html
+          - page: Troubleshooting Issues Connecting to your Server
+            url: https://help.cloud66.works/maestro/tutorials/2017-02-11-connecting-to-server.html
+          - page: Troubleshooting Disk Space Issues
+            url: https://help.cloud66.works/maestro/tutorials/2017-02-12-disk-space.html
+          - page: Issues Replicating Data Between Two Versions of PostgreSQL
+            url: https://help.cloud66.works/maestro/tutorials/2017-02-13-pg-replication-version.html
+          - page: SSL Certificate Issues
+            url: https://help.cloud66.works/maestro/tutorials/2017-02-26-ssl-certificate-issues.html
+          - page: How to add management certificates in Azure new portal
+            url: https://help.cloud66.works/maestro/tutorials/2017-03-12-azure-old-portal.html
+          - page: Manage your stacks from Slack with ChatOps
+            url: https://help.cloud66.works/maestro/tutorials/manage-stacks-chatops.html
   - title: Node
     subfolderitems:
       - page: Addins
@@ -1125,3 +1389,87 @@ toc2:
             url: https://help.cloud66.works/rails/tutorials/2017-08-21-whenever-errors.html
           - page: Manage your stacks from Slack with ChatOps
             url: https://help.cloud66.works/rails/tutorials/2017-08-22-manage-stacks-chatops.html
+  - title: Skycap
+    subfolderitems:
+      - page: Deployment
+        url: https://help.cloud66.works/skycap/deployment/
+        subsubfolderitems:
+          - page: Introduction to Docker deployments
+            url: https://help.cloud66.works/skycap/deployment/docker-introduction.html
+          - page: BuildGrid
+            url: https://help.cloud66.works/skycap/deployment/build-grid.html
+          - page: Building your Service
+            url: https://help.cloud66.works/skycap/deployment/building-your-service.html
+          - page: Docker Service Configuration
+            url: https://help.cloud66.works/skycap/deployment/docker-service-configuration.html
+          - page: Environment Variables
+            url: https://help.cloud66.works/skycap/deployment/env-vars.html
+          - page: Advanced Deploy
+            url: https://help.cloud66.works/skycap/deployment/advanced-deploy.html
+          - page: Getting Started with Manifest Files
+            url: https://help.cloud66.works/skycap/deployment/getting-started-with-manifest-files.html
+          - page: Building your Manifest File
+            url: https://help.cloud66.works/skycap/deployment/building-a-manifest-file.html
+          - page: Configure your DNS
+            url: https://help.cloud66.works/skycap/deployment/configure-dns.html
+          - page: Service Network Configuration
+            url: https://help.cloud66.works/skycap/deployment/service-network-configuration.html
+          - page: Deployment History
+            url: https://help.cloud66.works/skycap/deployment/deployment-history.html
+          - page: Deploy Hooks
+            url: https://help.cloud66.works/skycap/deployment/deploy-hooks.html
+          - page: Deployment Profiles
+            url: https://help.cloud66.works/skycap/deployment/deploy-profiles.html
+          - page: Deployment Authorization
+            url: https://help.cloud66.works/skycap/deployment/deploy-authorisation.html
+          - page: Parallel Deployments
+            url: https://help.cloud66.works/skycap/deployment/parallel-deployment.html
+          - page: Server IP Addresses and Hostnames
+            url: https://help.cloud66.works/skycap/deployment/server-ip-addresses.html
+          - page: Registered Servers
+            url: https://help.cloud66.works/skycap/deployment/registered-servers.html
+          - page: Nginx
+            url: https://help.cloud66.works/skycap/deployment/nginx.html
+          - page: Deployment Gateway
+            url: https://help.cloud66.works/skycap/deployment/deployment-gateway.html
+          - page: EasyDeploy Repositories
+            url: https://help.cloud66.works/skycap/deployment/easy-deploy-repos.html
+          - page: Multi Tenancy for Stacks
+            url: https://help.cloud66.works/skycap/deployment/multi-tenancy.html
+          - page: Redeployment Hooks
+            url: https://help.cloud66.works/skycap/deployment/redeployment-hooks.html
+      - page: Getting Started
+        url: https://help.cloud66.works/skycap/getting-started/
+        subsubfolderitems:
+          - page: Dockerfile
+            url: https://help.cloud66.works/legacy_docker/getting-started/dockerfile.html
+          - page: Connecting Your Git Repository
+            url: https://help.cloud66.works/legacy_docker/getting-started/custom-git-repo.html
+          - page: Connecting to Docker Image Repository
+            url: https://help.cloud66.works/legacy_docker/getting-started/image-repository.html
+          - page: Service Networking
+            url: https://help.cloud66.works/legacy_docker/getting-started/service-networking.html
+          - page: Choosing Server Size
+            url: https://help.cloud66.works/legacy_docker/getting-started/server-size.html
+      - page: Stack Management
+        url: https://help.cloud66.works/legacy_docker/stack-management/
+        subsubfolderitems:
+          - page: Stack Notifications
+            url: https://help.cloud66.works/legacy_docker/stack-management/stack-notifications.html
+          - page: CustomConfig™
+            url: https://help.cloud66.works/legacy_docker/stack-management/custom-config.html
+          - page: CustomConfig Git
+            url: https://help.cloud66.works/legacy_docker/stack-management/custom-git-repo.html
+          - page: Global Search
+            url: https://help.cloud66.works/legacy_docker/stack-management/global-search.html
+          - page: Cloud 66 Birdseye
+            url: https://help.cloud66.works/legacy_docker/stack-management/cloud66-birdseye.html
+      - page: Tutorials
+        url: https://help.cloud66.works/rails/tutorials/
+        subsubfolderitems:
+          - page: Accessing your Git repository
+            url: https://help.cloud66.works/legacy_docker/tutorials/1901-01-26-access-your-code.html
+          - page: Use GitHub with Cloud 66
+            url: https://help.cloud66.works/legacy_docker/tutorials/2015-09-22-github.html
+          - page: Manage your stacks from Slack with ChatOps
+            url: https://help.cloud66.works/node/tutorials/manage-stacks-chatops.html
