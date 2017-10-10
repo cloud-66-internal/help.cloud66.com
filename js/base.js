@@ -7,15 +7,6 @@ Handlebars.c66.config = {
     tmplExtention: '.handlebars'
 };
 
-var $headers = $('.header').click(function () {
-	$(this).find('span').text(function (_, value) {
-		return value == '\u25B6' ? '\u25BC' : '\u25B6'
-	});
-	$(this).nextUntil('tr.header').slideToggle(100, function () {});
-});
-$headers.find('span').text('\u25B6')
-$("#fields tr:not(:first-child)").hide();
-
 Handlebars.getTemplate = function( name ) {
     if ( Handlebars.templates === undefined || Handlebars.templates[name] === undefined ) {
         $.ajax({
@@ -25,7 +16,6 @@ Handlebars.getTemplate = function( name ) {
                 if (Handlebars.templates === undefined) {
                     Handlebars.templates = {};
                 }
-                //Handlebars.templates[name] = Handlebars.compile(jqXHR.responseText);
                 Handlebars.templates[name] = Handlebars.compile(response);
             },
             async : false
@@ -101,10 +91,6 @@ CB.help = ( function( $, window, document ) {
         $el.globalSearchInput.change(function(){
             $('.header-nav-bar form').submit();
         });
-
-        // $(document.body).on('click', 'nav.crumbs a', function(){
-        //     window.history.go(-1);
-        // });
 
         /*
         * Necessary hack because WebKit fires a popstate event on document load

@@ -1,12 +1,12 @@
 $(function () {
     $(window).scroll(function () {
         var top_offset = $(window).scrollTop();
-        if (top_offset == 0) {
+        if (top_offset === 0) {
             $('header.js_header').removeClass('Header--minified');
         } else {
             $('header.js_header').addClass('Header--minified');
         }
-    })
+    });
 });
 
 (function () {
@@ -22,34 +22,34 @@ $(function () {
 
   function initMobileMenu () {
     console.log('=== initialize mobile nav ===');
-    var mobileBar = document.getElementById('mobile-bar')
-    var sidebar = document.querySelector('.sidebar')
-    var menuButton = mobileBar.querySelector('.js_menu_button')
+    var mobileBar = document.getElementById('mobile-bar');
+    var sidebar = document.querySelector('.sidebar');
+    var menuButton = mobileBar.querySelector('.js_menu_button');
 
     menuButton.addEventListener('click', function () {
-      sidebar.classList.toggle('open')
-    })
+      sidebar.classList.toggle('open');
+    });
 
     document.body.addEventListener('click', function (e) {
       if (e.target !== menuButton && !sidebar.contains(e.target)) {
-        sidebar.classList.remove('open')
+        sidebar.classList.remove('open');
       }
-    })
+    });
 
     // Toggle sidebar on swipe
     var start = {}, end = {}
 
     document.body.addEventListener('touchstart', function (e) {
-      start.x = e.changedTouches[0].clientX
-      start.y = e.changedTouches[0].clientY
-    })
+      start.x = e.changedTouches[0].clientX;
+      start.y = e.changedTouches[0].clientY;
+    });
 
     document.body.addEventListener('touchend', function (e) {
-      end.y = e.changedTouches[0].clientY
-      end.x = e.changedTouches[0].clientX
+      end.y = e.changedTouches[0].clientY;
+      end.x = e.changedTouches[0].clientX;
 
-      var xDiff = end.x - start.x
-      var yDiff = end.y - start.y
+      var xDiff = end.x - start.x;
+      var yDiff = end.y - start.y;
 
       if (Math.abs(xDiff) > Math.abs(yDiff)) {
         if (xDiff > 0 && start.x <= 80) sidebar.classList.add('open')
