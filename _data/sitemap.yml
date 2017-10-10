@@ -238,7 +238,7 @@ toc2:
           - page: CustomConfig™
             url: https://help.cloud66.works/legacy_docker/stack-management/custom-config.html
           - page: CustomConfig Git
-            url: https://help.cloud66.works/legacy_docker/stack-management/custom-git-repo.html
+            url: https://help.cloud66.works/legacy_docker/stack-management/custom-git-repository.html
           - page: Server Meta Data Service
             url: https://help.cloud66.works/legacy_docker/stack-management/meta-data-service.html
           - page: Global Search
@@ -563,7 +563,7 @@ toc2:
           - page: CustomConfig™
             url: https://help.cloud66.works/maestro/stack-management/custom-config.html
           - page: CustomConfig Git
-            url: https://help.cloud66.works/maestro/stack-management/custom-git-repo.html
+            url: https://help.cloud66.works/maestro/stack-management/custom-git-repository.html
           - page: Server Meta Data Service
             url: https://help.cloud66.works/maestro/stack-management/meta-data-service.html
           - page: Global Search
@@ -825,7 +825,7 @@ toc2:
           - page: Multi Tenancy for Stacks
             url: https://help.cloud66.works/node/deployment/multi-tenancy.html
           - page: Redeployment Hooks
-            url: https://help.cloud66.works/node/deployment/redeployment-hooks.html
+            url: https://help.cloud66.works/node/deployment/redeployment-hook.html
       - page: Failover Groups
         url: https://help.cloud66.works/node/failover-groups/
         subsubfolderitems:
@@ -859,8 +859,8 @@ toc2:
             url: https://help.cloud66.works/node/stack-management/server-deletion.html
           - page: Server Restart Notifications
             url: https://help.cloud66.works/node/stack-management/server-restart-notifications.html
-          - page: Server Life-cycle Management
-            url: https://help.cloud66.works/node/stack-management/server-lifecycle-management.html
+          - page: Service Life-cycle Management
+            url: https://help.cloud66.works/node/stack-management/service-lifecycle-management.html
           - page: Scaling
             url: https://help.cloud66.works/node/stack-management/scaling.html
           - page: Logging
@@ -874,7 +874,7 @@ toc2:
           - page: CustomConfig™
             url: https://help.cloud66.works/node/stack-management/custom-config.html
           - page: CustomConfig Git
-            url: https://help.cloud66.works/node/stack-management/custom-git-repo.html
+            url: https://help.cloud66.works/node/stack-management/custom-git-repository.html
           - page: Server Meta Data Service
             url: https://help.cloud66.works/node/stack-management/meta-data-service.html
           - page: Global Search
@@ -1132,7 +1132,7 @@ toc2:
           - page: Cloud 66 reserved tags
             url: https://help.cloud66.works/rails/deployment/reserved-tags.html
           - page: Redeployment Hooks
-            url: https://help.cloud66.works/rails/deployment/redeployment-hooks.html
+            url: https://help.cloud66.works/rails/deployment/redeployment-hook.html
           - page: Running background processes
             url: https://help.cloud66.works/rails/deployment/proc-files.html
           - page: Asset Pipeline Compilation
@@ -1174,8 +1174,8 @@ toc2:
             url: https://help.cloud66.works/rails/stack-management/server-deletion.html
           - page: Server Restart Notifications
             url: https://help.cloud66.works/rails/stack-management/server-restart-notifications.html
-          - page: Server Lifecycle Management
-            url: https://help.cloud66.works/rails/stack-management/server-lifecycle-management.html
+          - page: Service Lifecycle Management
+            url: https://help.cloud66.works/rails/stack-management/service-lifecycle-management.html
           - page: Scaling
             url: https://help.cloud66.works/rails/stack-management/scaling.html
           - page: Logging
@@ -1189,7 +1189,7 @@ toc2:
           - page: CustomConfig™
             url: https://help.cloud66.works/rails/stack-management/custom-config.html
           - page: CustomConfig Git
-            url: https://help.cloud66.works/rails/stack-management/custom-git-repo.html
+            url: https://help.cloud66.works/rails/stack-management/custom-git-repository.html
           - page: Server Meta Data Service
             url: https://help.cloud66.works/rails/stack-management/meta-data-service.html
           - page: Global Search
@@ -1270,7 +1270,7 @@ toc2:
         url: https://help.cloud66.works/rails/tutorials/
         subsubfolderitems:
           - page: Passenger 5 Upgrade Troubleshoting
-            url: https://help.cloud66.works/rails/tutorials/1900-01-20-passenger-.html
+            url: https://help.cloud66.works/rails/tutorials/1900-01-20-passenger-5.html
           - page: Multi Region Stack
             url: https://help.cloud66.works/rails/tutorials/1900-09-26-multi-region-stack.html
           - page: Manually add an SSL certificate to a load balancer
@@ -1421,7 +1421,7 @@ toc2:
           - page: Deployment Profiles
             url: https://help.cloud66.works/skycap/deployment/deploy-profiles.html
           - page: Deployment Authorization
-            url: https://help.cloud66.works/skycap/deployment/deploy-authorisation.html
+            url: https://help.cloud66.works/skycap/deployment/deployment-authorisation.html
           - page: Parallel Deployments
             url: https://help.cloud66.works/skycap/deployment/parallel-deployment.html
           - page: Server IP Addresses and Hostnames
@@ -1437,39 +1437,39 @@ toc2:
           - page: Multi Tenancy for Stacks
             url: https://help.cloud66.works/skycap/deployment/multi-tenancy.html
           - page: Redeployment Hooks
-            url: https://help.cloud66.works/skycap/deployment/redeployment-hooks.html
+            url: https://help.cloud66.works/skycap/deployment/redeployment-hook.html
       - page: Getting Started
         url: https://help.cloud66.works/skycap/getting-started/
         subsubfolderitems:
           - page: Dockerfile
-            url: https://help.cloud66.works/legacy_docker/getting-started/dockerfile.html
+            url: https://help.cloud66.works/skycap/getting-started/dockerfile.html
           - page: Connecting Your Git Repository
-            url: https://help.cloud66.works/legacy_docker/getting-started/custom-git-repo.html
+            url: https://help.cloud66.works/skycap/getting-started/custom-git-repo.html
           - page: Connecting to Docker Image Repository
-            url: https://help.cloud66.works/legacy_docker/getting-started/image-repository.html
+            url: https://help.cloud66.works/skycap/getting-started/image-repository.html
           - page: Service Networking
-            url: https://help.cloud66.works/legacy_docker/getting-started/service-networking.html
+            url: https://help.cloud66.works/skycap/getting-started/service-networking.html
           - page: Choosing Server Size
-            url: https://help.cloud66.works/legacy_docker/getting-started/server-size.html
+            url: https://help.cloud66.works/skycap/getting-started/server-size.html
       - page: Stack Management
-        url: https://help.cloud66.works/legacy_docker/stack-management/
+        url: https://help.cloud66.works/skycap/stack-management/
         subsubfolderitems:
           - page: Stack Notifications
-            url: https://help.cloud66.works/legacy_docker/stack-management/stack-notifications.html
+            url: https://help.cloud66.works/skycap/stack-management/stack-notifications.html
           - page: CustomConfig™
-            url: https://help.cloud66.works/legacy_docker/stack-management/custom-config.html
+            url: https://help.cloud66.works/skycap/stack-management/custom-config.html
           - page: CustomConfig Git
-            url: https://help.cloud66.works/legacy_docker/stack-management/custom-git-repo.html
+            url: https://help.cloud66.works/skycap/stack-management/custom-git-repository.html
           - page: Global Search
-            url: https://help.cloud66.works/legacy_docker/stack-management/global-search.html
+            url: https://help.cloud66.works/skycap/stack-management/global-search.html
           - page: Cloud 66 Birdseye
-            url: https://help.cloud66.works/legacy_docker/stack-management/cloud66-birdseye.html
+            url: https://help.cloud66.works/skycap/stack-management/cloud66-birdseye.html
       - page: Tutorials
-        url: https://help.cloud66.works/rails/tutorials/
+        url: https://help.cloud66.works/skycap/tutorials/
         subsubfolderitems:
           - page: Accessing your Git repository
-            url: https://help.cloud66.works/legacy_docker/tutorials/1901-01-26-access-your-code.html
+            url: https://help.cloud66.works/skycap/tutorials/1901-01-26-access-your-code.html
           - page: Use GitHub with Cloud 66
-            url: https://help.cloud66.works/legacy_docker/tutorials/2015-09-22-github.html
+            url: https://help.cloud66.works/skycap/tutorials/2015-09-22-github.html
           - page: Manage your stacks from Slack with ChatOps
             url: https://help.cloud66.works/node/tutorials/manage-stacks-chatops.html

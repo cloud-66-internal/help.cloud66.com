@@ -7,5 +7,5 @@ SSL is an acronym for Secure Sockets Layer, an encryption technology that was cr
 
 Cloud 66 provides two types of SSL:
 - [Standard SSL Certificate](standard-ssl.html)
-- [Let's Encrypt](lets-encrypt.html)
+- [Let's Encrypt](https://help.cloud66.works/{{include.product}}/addins/ssl/Lets-encrypt.html)
 
