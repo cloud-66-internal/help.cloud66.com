@@ -1,11 +1,14 @@
-<h1>
-    Deploying your first Rails App with Cloud 66
-</h1>
+---
+layout: post
+title: Deploying your first Rails App
+categories: Rails
+legacy: false
+lead: This guide will take you through the process of deploying a Rails or Rack framework app with Cloud 66 for the first time.
 
-<p class="lead">
-    Cloud 66 allows you to easily deploy and manage your apps with all of your favorite Rails and Rack frameworks.
-    This guide will take you through the process of deploying a Rails app with Cloud 66 for the first time.
-</p>
+keywords: []
+permalink: /:collection/:path
+---
+
 
 <h2 id="What-youll-need">
     <a href="#What-youll-need" class="headerlink" title="What you’ll need"></a>
@@ -16,25 +19,23 @@
 
 <ul>
     <li>
-        <p><strong>A Cloud 66 Account</strong> &mdash; If you don't already have an account <a target="_blank" href="https://app.cloud66.com/users/sign_up">head over to the app and sign up!</a> There is a free community plan and you'll get full access to all products Free for 14 days.</p>
+        <p><strong>A Cloud 66 Account</strong> &mdash; If you don't already have one <a target="_blank" href="https://app.cloud66.com/users/sign_up">head over to the app and sign up!</a> There is a free community plan and you'll get full access to all products Free for 14 days.</p>
     </li>
     <li>
-        <p><strong>A Git Repo containing your application code</strong> &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repository.</p>
+        <p><strong>A Git Repo containing your application code</strong> &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.</p>
     </li>
     <li>
-        <p><strong>An account with a Cloud provider</strong>  &mdash; For example if your deploying to Amazon you need your AWS API key. <a href="#">Read more about Cloud Providers supported by Cloud 66</a></p>
+        <p><strong>An account with a Cloud provider</strong>  &mdash; For example if your deploying to Amazon you'll need your AWS Access key.
+           <!--  <a href="#">Read more about Cloud Providers supported by Cloud 66</a> -->
+        </p>
     </li>
     <li>
         <p><strong>An SSH key and IP address for your server</strong>  &mdash; If you're deploying <strong>to your own server</strong>. If you're using a public Cloud provider like AWS you don't need to worry about this.</p>
     </li>
 </ul>
 
-<h2 id="Building-your-stack">
-    <a href="#Building-your-stack" class="headerlink" title="Second Level Article Heading"></a>
-    Lets Get Started
-</h2>
 <p>
-    Log into Cloud 66 website, if you're a new user you'll see four panels on your Apps Dashboard. In the Rails panel click the <strong>Start Trial</strong> button.
+    Log into Cloud 66 website, if you're a new user you'll see four panels on your Apps Dashboard. In the Rails panel click the <strong>Start Trial</strong>.
 </p>
 
 <h2 id="Access-your-Git-repository">
@@ -60,7 +61,7 @@
     Using a Private Git Repo
 </h3>
 
-<p>Lets add the Cloud 66 public key. This allows us to connect to your Git repo (read only access) and deploy your app for you.</p>
+<p>Lets add the Cloud 66 public key. This allows us to connect to your Git repo (with read only access) and deploy your app.</p>
 
 <ul>
     <li>
@@ -70,7 +71,7 @@
         <p><strong>Who is your Git Provider?</strong> &mdash; Make a selection from the drop down list and then hit the <strong>GO</strong> button. This should take you to the page in your Git provider where you can add the key.</p>
     </li>
     <li>
-        <p><strong>E.g. in GitHub</strong> &mdash; Click the <strong>New SSH Key</strong> button and fill in the <em>title</em> field. Now paste the Cloud 66 key into the <em>Key</em> field. Click the <strong>Add SSH Key</strong> button. That's it! GitHub will send you a confirmation email.</p>
+        <p><strong>E.g. in GitHub</strong> &mdash; Click the <strong>New SSH Key</strong> button and fill in the <em>title field</em>. Now paste the Cloud 66 key into the <em>Key field</em>. Click the <strong>Add SSH Key</strong> button. That's it! GitHub will send you a confirmation email.</p>
     </li>
 </ul>
 
@@ -78,31 +79,30 @@
     <a href="#Define-your-application-properties" class="headerlink" title="Define your application properties"></a>
     About your App
 </h2>
-
 <p>
-    Now you need to tell us a little bit of info about your app. Then we can deploy, Please fill in the following fields:
+    Now you need to tell us a bit of info about your app. Then we can deploy, Please fill in the following fields:
 <p>
 
 <ul>
     <li>
         <p>
-            <strong>Git repo URL for your app</strong> &mdash; We support <strong>http://, git:// or git@</strong> Git formats. Please note that HTTPS isn't currently supported.
+            <strong>Git repo URL for your app</strong> &mdash; We support <strong><kbd>http://</kbd>, <kbd>git://</kbd> or <kbd>git@</kbd></strong> URL formats. Please note that HTTPS <strong>isn't</strong> currently supported.
         </p>
     </li>
     <li>
         <p>
-            <strong>What branch do you want to deploy</strong> &mdash; This defaults to master but you can provide any branch you need.
+            <strong>What branch do you want to deploy</strong> &mdash; This defaults to master but you can provide any branch you like.
         </p>
     </li>
     <li>
-        <p><strong>Give your new application a name</strong> &mdash; This is the name that will be used in the Cloud 66 Dashboard.</p>
+        <p><strong>Give your new application a name</strong> &mdash; This is the name that will be used in the Cloud 66 Dashboard once your app is deployed.</p>
     </li>
     <li>
-        <p><strong>Choose an Environment</strong> &mdash; Choose the Environment that you're deploying: Production, Development, QA, Staging, Production.</p>
+        <p><strong>Choose an Environment</strong> &mdash; Choose the Environment that you're deploying to: Production, Development, QA, Staging or Production.</p>
     </li>
 </ul>
 
-<p>Now click the <strong>Analyze</strong> button. Hang tight, the results will be displayed in a few seconds...</p>
+<p>Now click the <strong>Analyze</strong> button. Hang tight&mdah;the results will be displayed in a few seconds...</p>
 
 <h2 id="About-your-app-Summary">
     <a href="#About-your-app-Summary" class="headerlink" title="About your app Summary"></a>
@@ -118,9 +118,9 @@
 
 <ul>
     <li>
-        <p><strong>Ruby Version</strong> &mdash; The following Ruby versions are supported</p></li>
+        <p><strong>Ruby Version</strong> &mdash; That your app is using.</p></li>
     <li>
-        <p><strong>Framework Info</strong> &mdash; This allow you alter information about <a href="">Asset Pipeline precompilation</a> and weather you want to run <code>rake db:schema:load</code>.</p>
+        <p><strong>Framework Info</strong> &mdash; This allow you alter information about Asset Pipeline precompilation and weather you want to run <code>rake db:schema:load</code>.</p>
     </li>
 </ul>
 
@@ -141,12 +141,12 @@
     </li>
     <li>
         <p>
-            <strong>AWS Access key ID</strong>  &ndash; You get this info from your AWS accont Dashboard.
+            <strong>AWS Access key ID</strong>  &ndash; You get this info from your AWS account Dashboard.
         </p>
     </li>
     <li>
         <p>
-            <strong>AWS Secret Access Key</strong>  &ndash; You get this info from your AWS accont Dashboard.
+            <strong>AWS Secret Access Key</strong>  &ndash; You get this info from your AWS account Dashboard.
         </p>
     </li>
 </ul>
@@ -171,7 +171,7 @@
     </li>
 </ul>
 
-<p>These field names will vary a little depending on what Cloud your provider you are using.</p>
+<p>These field names will vary a little depending on what Cloud your provider you're using.</p>
 
 <h2 id="Deployment-Details">
     <a href="#Deployment-Details" class="headerlink" title="Deployment Details"></a>
@@ -181,7 +181,12 @@
 <p>
     Now you can decide how you want for configure your Front-end (Web) and Database Servers.
     They can be shared or deployed to separate servers.
-    For production environments we always recommend separate servers. Once you're ready. If you need fine grained control over your deployment options you can use a manifest file. <a href="#">Learn about Manifest Files</a>
 </p>
 
-<p><strong>That's it! Click Deploy Stack</strong>.</p>
+<p>
+    For production environments we always recommend separate servers. If you need fine grained control for more advanced deployments  you can use a <a href="#">manifest file</a>.
+</p>
+
+<p>
+    That's it! Now just click <strong>Deploy Stack</strong>.
+</p>

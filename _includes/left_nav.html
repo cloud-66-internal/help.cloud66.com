@@ -6,7 +6,9 @@
             {% assign title = item.title | downcase %}
             {% if title == collection %}
             <div class="sticky-sidebar">
-                <h2>{{ title | capitalize }} Docs</h2>
+                <h2 class="product-title" id="{{title}}-product">
+                    {{ title | capitalize }} Docs
+                </h2>
             </div>
 
             <ul class="menu-root">

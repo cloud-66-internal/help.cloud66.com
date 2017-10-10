@@ -128,3 +128,11 @@
   margin-left: -50vw;
   margin-right: -50vw;
 }
+
+.u-linkClean,
+.u-linkClean:hover,
+.u-linkClean:focus,
+.u-linkClean:active {
+    text-decoration: none !important;
+    color: inherit !important;
+}

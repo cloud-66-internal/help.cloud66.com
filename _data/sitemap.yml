@@ -73,7 +73,7 @@ toc2:
     subfolderitems:
       - page: Addins
         url: https://help.cloud66.works/legacy_docker/addins
-        subsubfolderitems: 
+        subsubfolderitems:
         - page: Add-in Implementation
           url: https://help.cloud66.works/legacy_docker/addins/add-in-implementation.html
         - page: Database Backup
@@ -406,7 +406,7 @@ toc2:
     subfolderitems:
       - page: Addins
         url: https://help.cloud66.works/maestro/addins
-        subsubfolderitems: 
+        subsubfolderitems:
         - page: Add-in Implementation
           url: https://help.cloud66.works/maestro/addins/add-in-implementation.html
         - page: Database Backup
@@ -729,7 +729,7 @@ toc2:
     subfolderitems:
       - page: Addins
         url: https://help.cloud66.works/node/addins
-        subsubfolderitems: 
+        subsubfolderitems:
         - page: Add-in Implementation
           url: https://help.cloud66.works/node/addins/add-in-implementation.html
         - page: Database Backup
@@ -1036,9 +1036,14 @@ toc2:
             url: https://help.cloud66.works/node/tutorials/manage-stacks-chatops.html
   - title: Rails
     subfolderitems:
+      - page: How-to Guides
+        url: /rails/guides
+        subsubfolderitems:
+        - page: Deploying your first Rails App with Cloud 66
+          url: /rails/guides/deploying-your-first-rails-app
       - page: Addins
         url: https://help.cloud66.works/rails/addins
-        subsubfolderitems: 
+        subsubfolderitems:
         - page: Add-in Implementation
           url: https://help.cloud66.works/rails/addins/add-in-implementation.html
         - page: Database Backup
@@ -1121,7 +1126,7 @@ toc2:
             url: https://help.cloud66.works/rails/deployment/registered-servers.html
           - page: Rack Web Servers
             url: https://help.cloud66.works/rails/deployment/rack-webservers/
-          - page: Web Servers for Rails 
+          - page: Web Servers for Rails
             url: https://help.cloud66.works/rails/deployment/custom-web-servers.html
           - page: Nginx
             url: https://help.cloud66.works/rails/deployment/nginx.html

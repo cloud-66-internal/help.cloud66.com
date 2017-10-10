@@ -22,10 +22,9 @@ bodyclass: post
     </p>
 
     {% if page.legacy %}
-    <div class="notice notice-warning">
-        <h3>Important Notice</h3>
-        <p>Contents of this page are for a legacy version of {{ page.collection | capitalize }}</p>
-    </div>
+        <div class="notice notice-red">
+            <p>Contents of this page are for a legacy version of {{ page.collection | capitalize }}</p>
+        </div>
     {% endif %}
 
     {{ content }}
