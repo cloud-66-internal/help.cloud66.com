@@ -30,20 +30,20 @@ bodyclass: post
         {% endif %}
     </div>
 
-    <div class="content-pri">
-        {{ content }}
+    {{ content }}
 
-        {% if page.recommendedLinks.size>0 %}
-         <div>Cloud 66 recommends to read next:
-            <ul>
-          {% for i in (0..30) %}
-             {% if i == page.recommendedLinks.size %}
-                 {% break %}
-             {% else %}
-                <a href={{page.recommendedLinks[i]}}><li>{{ page.recommendedName[i] }}</li></a>
-             {% endif %}
-          {% endfor %}
-      </ul>
-        </div>
-        {% endif %}
+    {% if page.recommendedLinks.size>0 %}
+     <div class="RelatedLinks">
+        <p class="RelatedLinks-text">Related Links:</p>
+        <ul class="RelatedLinks-list">
+      {% for i in (0..30) %}
+         {% if i == page.recommendedLinks.size %}
+             {% break %}
+         {% else %}
+            <a href={{page.recommendedLinks[i]}}><li>{{ page.recommendedName[i] }}</li></a>
+         {% endif %}
+      {% endfor %}
+        </ul>
     </div>
+    {% endif %}
+
