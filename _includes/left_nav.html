@@ -1,112 +1,110 @@
 {% if site.data.sitemap.toc2[0] %}
-<nav class="list">
-	<div class="sticky-sidebar">
-		{% for item in site.data.sitemap.toc2 %}
-		{% assign url = page.url | split: '/' %}
-		{% assign collection = url[1] | downcase %}
-		{% assign title = item.title | downcase %}
-		{% if title == collection %}
-		<div class="sticky-sidebar">
-			<h2>{{ title | capitalize }} Docs</h2>
-		</div>
-		<ul class="menu-root">
-      		{% if item.subfolderitems[0] %}
-          	{% for entry in item.subfolderitems %}
-          	<li><h3>{{ entry.page }}</h3></li>
-                {% if entry.subsubfolderitems[0] %}
-				{% for subentry in entry.subsubfolderitems %}
-					{% assign ttl = page.title | downcase %}
-					{% assign sbpg = subentry.page | downcase %}
-					{% if ttl == sbpg %}
-					<li><a class="sidebar-link current" href="{{ subentry.url }}">{{ subentry.page }}</a></li>
-					{% else %}
-					<li><a class="sidebar-link" href="{{ subentry.url }}">{{ subentry.page }}</a></li>
-					{% endif %}
+    <nav class="list">
+        {% for item in site.data.sitemap.toc2 %}
+            {% assign url = page.url | split: '/' %}
+            {% assign collection = url[1] | downcase %}
+            {% assign title = item.title | downcase %}
+            {% if title == collection %}
+            <div class="sticky-sidebar">
+                <h2>{{ title | capitalize }} Docs</h2>
+            </div>
+
+            <ul class="menu-root">
+                {% if item.subfolderitems[0] %}
+                {% for entry in item.subfolderitems %}
+                <li><h3>{{ entry.page }}</h3></li>
+                    {% if entry.subsubfolderitems[0] %}
+                    {% for subentry in entry.subsubfolderitems %}
+                        {% assign ttl = page.title | downcase %}
+                        {% assign sbpg = subentry.page | downcase %}
+                        {% if ttl == sbpg %}
+                        <li><a class="sidebar-link current" href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+                        {% else %}
+                        <li><a class="sidebar-link" href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    {% endif %}
                 {% endfor %}
                 {% endif %}
-          	{% endfor %}
-			{% endif %}
+            </ul>
+          {% endif %}
+        {% endfor %}
         </ul>
-      {% endif %}
-    {% endfor %}
+    </nav>
 {% endif %}
-		</ul>
-	</div>
-</nav>
-
 <!--
 <nav class="list">
-	<div class="sticky-sidebar">
-		<h2>Rails Documentation</h2>
-	</div>
+    <div class="sticky-sidebar">
+        <h2>Rails Documentation</h2>
+    </div>
 
-	<ul class="menu-root">
-		<li>
-			<h3 class="u-flushTop">Introduction</h3>
-		</li>
-		<li>
-			<a href="Cloud-66-for-rails.html" class="sidebar-link">Cloud 66 for Rails</a>
-		</li>
-		<li>
-			<h3>Guides</h3>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link current">
-				Deploying your first Rails App
-			</a>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">
-				Secure your app, Install an SSL Certificate
-			</a>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">Backing up your Rails App</a>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">Scaling up your Rails App</a>
-		</li>
-		<li>
-			<h3>Tutorials</h3>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">Scale up your Web Servers</a>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">Set up Replication</a>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">Set up Failover Groups</a>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">Setting up HTTP/2</a>
-		</li>
-		<li>
-			<h3>References</h3>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">Asset Pipeline precompilation</a>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">AWS Platforms (EC2-Classic, EC2-VPC)</a>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">Supported Cloud Providers</a>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">
-				Manifest Files
-			</a>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">Open source Stack components</a>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">Lots of reference docs</a>
-		</li>
-		<li>
-			<a href="#" class="sidebar-link">This can scroll down forever!</a>
-		</li>
-	</ul>
+    <ul class="menu-root">
+        <li>
+            <h3 class="u-flushTop">Introduction</h3>
+        </li>
+        <li>
+            <a href="Cloud-66-for-rails.html" class="sidebar-link">Cloud 66 for Rails</a>
+        </li>
+        <li>
+            <h3>Guides</h3>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link current">
+                Deploying your first Rails App
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">
+                Secure your app, Install an SSL Certificate
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">Backing up your Rails App</a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">Scaling up your Rails App</a>
+        </li>
+        <li>
+            <h3>Tutorials</h3>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">Scale up your Web Servers</a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">Set up Replication</a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">Set up Failover Groups</a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">Setting up HTTP/2</a>
+        </li>
+        <li>
+            <h3>References</h3>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">Asset Pipeline precompilation</a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">AWS Platforms (EC2-Classic, EC2-VPC)</a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">Supported Cloud Providers</a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">
+                Manifest Files
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">Open source Stack components</a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">Lots of reference docs</a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-link">This can scroll down forever!</a>
+        </li>
+    </ul>
 </nav> -->
 <!-- /.list -->

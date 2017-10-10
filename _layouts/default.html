@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <title>
-		{{ page.title }} | Help | Cloud 66
-	</title>
+        {{ page.title }} | Help | Cloud 66
+    </title>
 
     <meta charset="utf-8">
     <meta name="description" content="Cloud 66 - Documentation">
@@ -21,90 +21,90 @@
     <meta name="twitter:description" content="{{ page.title }}">
     <meta name="twitter:image" content="/images/ui/logo.svg">
 
-    <link rel="icon" href="//d563vzkt1q0lu.cloudfront.net/images/favicon.ico" type="image/png">
+    <link rel="icon" href="/images/ui/favicon.ico" type="image/png">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-	{% include styles.html %}
+    {% include styles.html %}
 </head>
 
 
 <body class="docs {{ page.bodyclass }} {{ page.template }}">
-	<!-- =============== Mobile =============== -->
+    <!-- =============== Mobile =============== -->
 
-		{% include mobile_bar.html %}
+        {% include mobile_bar.html %}
 
-	<!-- =============== Page Header =============== -->
-		{% include top_nav_bar.html %}
+    <!-- =============== Page Header =============== -->
+        {% include top_nav_bar.html %}
 
-		<!-- =============== Main  =============== -->
-		    <main id="main" class="Main Main--fixSidebar">
+        <!-- =============== Main  =============== -->
+            <main id="main" class="Main Main--fixSidebar">
 
-		        <!-- The left sidebar -->
-		        <aside class="sidebar">
-		            <div class="sidebar-inner">
+                <!-- The left sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-inner">
 
-		                <!-- Mobile search form -->
-		                <ul class="main-menu">
-		                    <li>
-		                        <form id="search-form">
-		                            <input type="text" id="search-query-sidebar" class="search">
-		                        </form>
-		                    </li>
-		                </ul><!--/.main-menu-->
+                        <!-- Mobile search form -->
+                        <ul class="main-menu">
+                            <li>
+                                <form id="search-form">
+                                    <input type="text" id="search-query-sidebar" class="search">
+                                </form>
+                            </li>
+                        </ul><!--/.main-menu-->
 
-		                <!-- ==== The main left hand navigation list ==== -->
-						{% include left_nav.html %}
+                        <!-- ==== The main left hand navigation list ==== -->
+                        {% include left_nav.html %}
 
-		            </div><!--/.sidebar-inner -->
-		        </aside><!-- ./sidebar -->
+                    </div><!--/.sidebar-inner -->
+                </aside><!-- ./sidebar -->
 
-		<!-- ======================== Start of Article ======================================================================== -->
-		        <article class="content content--withSidebar">
-		            {{ content }}
-		            <!-- Footer content? -->
+        <!-- ======================== Start of Article ======================================================================== -->
+                <article class="content content--withSidebar">
+                    {{ content }}
+                    <!-- Footer content? -->
 
-		            <div class="guide-links">
-                		<span class="u-floatRight">
-                    		<a href="#"><strong>Next</strong> &mdash; Secure your app by Instaling an SSL Cert</a> →
-                		</span>
-            		</div>
+                    <div class="PageLinks">
+                        <span class="u-floatRight">
+                            <a href="#"><strong>Next</strong> &mdash; Secure your app by Instaling an SSL Cert</a> →
+                        </span>
+                    </div>
 
-		            <footer class="footer"></footer>
+                    <footer class="FooterArticle"></footer>
 
-		            <!-- Flexbox grid system -->
-		            <div class="extra">
-		                <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersLg">
-		                    <div class="Grid-cell">
-		                        <a href="http://app.cloud66.com/support_tickets/new">
-		                            <div class="Panel">
-		                                  <div class="Media">
-		                                      <img src="/images/ui/support.svg" class="Media-figure" width="30" alt="">
-		                                      <div class="Media-body">
-		                                          <h6 class="Media-heading">Need help with deployments?</h6>
-		                                          <span class="Media-link">Contact Support </span>
-		                                      </div>
-		                                  </div><!--.Media-->
-		                            </div><!-- /.Panel -->
-		                        </a>
-		                    </div><!--/.Grid-cell-->
-		                    <div class="Grid-cell">
-		                        <a href="https://cloud66ers.slack.com">
-		                            <div class="Panel">
-		                                <div class="Media">
-		                                    <img src="/images/ui/slack.svg" class="Media-figure" width="30" alt="">
-		                                    <div class="Media-body">
-		                                        <h6 class="Media-heading">More Questions?</h6>
-		                                        <a class="Media-link" href="#">Join the Slack Channel</a>
-		                                    </div>
-		                                </div><!--.Media-->
-		                            </div><!--/.Panel-->
-		                        </a>
-		                    </div><!--/.Grid-cell-->
-		                </div><!--/.Grid-->
-		            </div>
-		        </article>
-		<!-- ======================== END of Article ======================================================================== -->
-		    </main>
-			{% include body_scripts.html %}
-	</body>
+                    <!-- Flexbox grid system -->
+                    <div class="extra">
+                        <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersLg">
+                            <div class="Grid-cell">
+                                <a href="http://app.cloud66.com/support_tickets/new">
+                                    <div class="Panel">
+                                          <div class="Media">
+                                              <img src="/images/ui/support.svg" class="Media-figure" width="30" alt="">
+                                              <div class="Media-body">
+                                                  <h6 class="Media-heading">Need help with deployments?</h6>
+                                                  <span class="Media-link">Contact Support </span>
+                                              </div>
+                                          </div><!--.Media-->
+                                    </div><!-- /.Panel -->
+                                </a>
+                            </div><!--/.Grid-cell-->
+                            <div class="Grid-cell">
+                                <a href="https://cloud66ers.slack.com">
+                                    <div class="Panel">
+                                        <div class="Media">
+                                            <img src="/images/ui/slack.svg" class="Media-figure" width="30" alt="">
+                                            <div class="Media-body">
+                                                <h6 class="Media-heading">More Questions?</h6>
+                                                <a class="Media-link" href="#">Join the Slack Channel</a>
+                                            </div>
+                                        </div><!--.Media-->
+                                    </div><!--/.Panel-->
+                                </a>
+                            </div><!--/.Grid-cell-->
+                        </div><!--/.Grid-->
+                    </div>
+                </article>
+        <!-- ======================== END of Article ======================================================================== -->
+            </main>
+            {% include body_scripts.html %}
+    </body>
 </html>

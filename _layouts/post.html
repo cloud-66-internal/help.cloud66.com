@@ -21,26 +21,24 @@ bodyclass: post
         {{ page.lead }}
     </p>
 
-    <div class="content-pri">
-        {% if page.legacy %}
-        <div class="notice notice-warning">
-            <h3>Important Notice</h3>
-            <p>Contents of this page are for a legacy version of {{ page.collection | capitalize }}</p>
-        </div>
-        {% endif %}
+    {% if page.legacy %}
+    <div class="notice notice-warning">
+        <h3>Important Notice</h3>
+        <p>Contents of this page are for a legacy version of {{ page.collection | capitalize }}</p>
     </div>
+    {% endif %}
 
     {{ content }}
 
     {% if page.recommendedLinks.size>0 %}
      <div class="RelatedLinks">
-        <p class="RelatedLinks-text">Related Links:</p>
+        <h3 class="RelatedLinks-title">Related Links</h3>
         <ul class="RelatedLinks-list">
       {% for i in (0..30) %}
          {% if i == page.recommendedLinks.size %}
              {% break %}
          {% else %}
-            <a href={{page.recommendedLinks[i]}}><li>{{ page.recommendedName[i] }}</li></a>
+            <li><a href={{page.recommendedLinks[i]}}>{{ page.recommendedName[i] }}</a></li>
          {% endif %}
       {% endfor %}
         </ul>
