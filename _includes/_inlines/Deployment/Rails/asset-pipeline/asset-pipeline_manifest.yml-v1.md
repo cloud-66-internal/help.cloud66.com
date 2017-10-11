@@ -3,7 +3,7 @@
 
 ### Manifest.yml
 
-Use our [Cloud 66 manifest file](/building-your-stack/getting-started-with-manifest-files) to enable/disable asset pipeline pre-compilation using the following parameter with a true or false, find 
+Use our [Cloud 66 manifest file](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html) to enable/disable asset pipeline pre-compilation using the following parameter with a true or false, find 
 an example
  below:
 

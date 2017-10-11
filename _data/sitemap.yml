@@ -1402,7 +1402,7 @@ toc2:
           - page: Introduction to Docker deployments
             url: https://help.cloud66.works/skycap/deployment/docker-introduction.html
           - page: BuildGrid
-            url: https://help.cloud66.works/skycap/deployment/build-grid/
+            url: https://help.cloud66.works/skycap/deployment/buildgrid/
           - page: Building your Service
             url: https://help.cloud66.works/skycap/deployment/building-your-service.html
           - page: Docker Service Configuration

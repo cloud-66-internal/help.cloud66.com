@@ -3,7 +3,7 @@
 
 ## Customize your Nginx configuration
 
-Cloud 66 makes it easy for you to customize your Nginx configuration. From your stack detail page, access your web server group page (eg. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](/managing-your-stack/customconfig) to customize the configuration.
+Cloud 66 makes it easy for you to customize your Nginx configuration. From your stack detail page, access your web server group page (eg. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](https://help.cloud66.works/{{ include.product }}/stack-management/custom-config.html) to customize the configuration.
 
 Editing and committing your Nginx CustomConfig will perform the following steps on **every web server in your stack**, one by one, sequentially:
 
@@ -16,7 +16,4 @@ Editing and committing your Nginx CustomConfig will perform the following steps 
 *   Reload Nginx
 
 Reloading Nginx does not interrupt the serving of traffic. This process will be stopped if an error is encountered. For example, if you have 3 web servers in your stack, if the first server fails to be updated, the process will be halted for the other 2 servers to avoid complete service diruption.
-
-
-
 

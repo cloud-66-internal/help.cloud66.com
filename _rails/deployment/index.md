@@ -13,7 +13,6 @@ Cloud 66 for Rails, supports the following deployment features:
 - [Rails Stacks](rails-stacks.html)
 - [Environment Variables](env-vars.html)
 - [Stack Environments](stack-environments)
-- [Advanced Deployment](advanced-deploy.html)
 - [Getting Started with Manifest Files](getting-started-with-manifest-files.html)
 - [Building a Manifest File](building-a-manifest-file.html)
 - [Clouds](clouds)

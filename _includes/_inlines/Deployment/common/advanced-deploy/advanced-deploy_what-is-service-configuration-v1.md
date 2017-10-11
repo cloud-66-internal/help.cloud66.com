@@ -13,7 +13,7 @@ Service configuration allows you to be more explicit about your Docker services 
 
 [Read more about service configuration here.](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html)
 
-This is a sample [service.yml](https://help.cloud66.works/{{ include.product }}/deployment/docker-service-configuration.html) to tell Cloud 66 to build a Docker image using [Buildgrid](https://help.cloud66.works/legacy_docker/deployment/build-grid.html) and run the service with the name **web** and also provision a **mysql** database.
+This is a sample [service.yml](https://help.cloud66.works/{{ include.product }}/deployment/docker-service-configuration.html) to tell Cloud 66 to build a Docker image using [Buildgrid](https://help.cloud66.works/skycap/deployment/buildgrid) and run the service with the name **web** and also provision a **mysql** database.
 
 
 
