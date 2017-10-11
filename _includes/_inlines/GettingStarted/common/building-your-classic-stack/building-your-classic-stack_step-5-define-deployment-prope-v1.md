@@ -7,7 +7,7 @@ Complete the following steps to define the properties that determine how to depl
 
 **Prerequisites**  
 
-If deploying to a cloud server, you must know the API key for your cloud provider. If deploying to your server, you must have (or generate) a SSH key for the server. For instructions on generating an SSH key, refer to [Setting up SSH keys](http://community.cloud66.com/articles/setting-up-ssh-keys).
+If deploying to a cloud server, you must know the API key for your cloud provider. If deploying to your server, you must have (or generate) a SSH key for the server. For instructions on generating an SSH key, refer to [Setting up SSH keys](https://help.cloud66.works/{{ include.product }}/tutorials/2000-01-01-ssh-keys.html).
 
 1.  In the _Where are you deploying to_ dialog box, select the deployment target to use.
 2.  Perform one of the following actions, depending on your deployment configuration:

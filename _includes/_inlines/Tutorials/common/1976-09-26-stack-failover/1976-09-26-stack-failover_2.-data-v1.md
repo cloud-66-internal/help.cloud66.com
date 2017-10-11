@@ -3,5 +3,5 @@
 
 ### 2. Data
 
-Enable [database replication between your stacks](http://help.cloud66.com/database-management/database-replication) - this will setup a master/slave architecture between your stacks, whereby the slave is an exact replica of the master at all times. 
+Enable [database replication between your stacks](https://help.cloud66.works/{{ include.product }}/databases/database-replication.html) - this will setup a master/slave architecture between your stacks, whereby the slave is an exact replica of the master at all times. 
 

@@ -46,4 +46,6 @@ services:
 
 In this example, we split the traffic based on the requested domain. As you can see you can match traffic based on multiple domains as well as wildcard (`*`) subdomains.
 
+{% if include.product == "legacy_docker" or include.product == "maestro" %}
 See [Docker Service Configuration](https://help.cloud66.works/{{ include.product }}/deployment/docker-service-configuration.html) for more information on `service.yml`.
+{% endif %}

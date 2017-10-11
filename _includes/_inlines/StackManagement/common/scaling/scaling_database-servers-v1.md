@@ -3,5 +3,5 @@
 
 ### Database servers
 
-You can scale your database servers through database replication, or Elasticsearch through [sharding](/database-management/elasticsearch-scaling). See our [database management section](/database-management/database-management) for more information.
+You can scale your database servers through database replication, or Elasticsearch through [sharding](https://help.cloud66.works/{{ include.product }}/databases/elasticsearch/scaling.html). See our [database management section](https://help.cloud66.works/{{ include.product }}/databases/database-management.html) for more information.
 

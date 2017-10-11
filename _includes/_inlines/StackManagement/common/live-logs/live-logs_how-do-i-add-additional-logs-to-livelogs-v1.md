@@ -10,7 +10,7 @@ By default LiveLogs will look for logs in the following paths:
 *   /tmp/web_server_bluepill.log
 *   $STACK_BASE/shared/log/*.log
 
-You can add your own custom paths to this by using a [manifest files](/building-your-stack/building-your-manifest-file) and adding the key `***/configuration/custom_log_files`. 
+You can add your own custom paths to this by using a [manifest files](https://help.cloud66.works/{{ include.product }}/deployment/building-a-manifest-file) and adding the key `***/configuration/custom_log_files`. 
 
 See the example below to add custom log files to all Rails servers: 
 

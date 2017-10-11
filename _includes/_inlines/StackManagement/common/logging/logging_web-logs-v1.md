@@ -18,6 +18,6 @@ Web logs are stored in `$STACK_PATH/log`:
 
 
 
-
-If you are using a [custom web server](/web-server/custom-web-servers), such as [Unicorn](/web-server/unicorn-rack-server), you can find your web server bluepill logs in `/tmp/web_server_bluepill.log`.
-
+{% if include.product == "rails" %}
+If you are using a [custom web server](https://help.cloud66.works/{{ include.product }}/deployment/custom-web-servers.html), such as [Unicorn](https://help.cloud66.works/{{ include.product }}/deployment/rack-webservers/unicorn-rack-server.html), you can find your web server bluepill logs in `/tmp/web_server_bluepill.log`.
+{% endif %}

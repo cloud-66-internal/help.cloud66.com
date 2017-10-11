@@ -21,6 +21,5 @@ permalink: /:collection/:path
 <a href="#web-servers"></a>{% include _inlines/StackManagement/common/scaling/scaling_web-servers-v1.md  product = page.collection %}
 <a href="#process-servers"></a>{% include _inlines/StackManagement/common/scaling/scaling_process-servers-v1.md  product = page.collection %}
 <a href="#database-servers"></a>{% include _inlines/StackManagement/common/scaling/scaling_database-servers-v1.md  product = page.collection %}
-<a href="#docker-services"></a>{% include _inlines/StackManagement/common/scaling/scaling_docker-services-v1.md  product = page.collection %}
 <a href="#vertical-scaling"></a>{% include _inlines/StackManagement/common/scaling/scaling_vertical-scaling-v1.md  product = page.collection %}
 <a href="#note"></a>{% include _inlines/StackManagement/common/scaling/scaling_note-v1.md  product = page.collection %}

@@ -1,7 +1,6 @@
 <!-- usedin: [ _includes/_inlines/StackManagement/common/meta-data-service/meta-data-service_server-meta-data-service-v1.md] -->
 
 ```
-
 {
    "response":{
       "ips":{
@@ -191,5 +190,4 @@
       "updated_at":"2016-03-11T12:02:33Z"
    }
 }
-
 ```

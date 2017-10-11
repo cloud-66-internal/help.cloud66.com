@@ -1102,8 +1102,6 @@ toc2:
             url: https://help.cloud66.works/rails/deployment/env-vars.html
           - page: Stack Environments
             url: https://help.cloud66.works/rails/deployment/stack-environments.html
-          - page: Advanced Deploy
-            url: https://help.cloud66.works/rails/deployment/advanced-deploy.html
           - page: Getting Started with Manifest Files
             url: https://help.cloud66.works/rails/deployment/getting-started-with-manifest-files.html
           - page: Building your Manifest File

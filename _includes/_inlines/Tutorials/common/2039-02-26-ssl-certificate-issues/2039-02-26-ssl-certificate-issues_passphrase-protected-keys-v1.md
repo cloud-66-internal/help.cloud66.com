@@ -7,7 +7,7 @@ You cannot use passphrase protected SSL certificate keys with Nginx. Using passp
 
 The symptoms of this is that your deployment gets stuck in the _Restarting Nginx_ step.
 
-You can simply use a non-passphrase-protected version of your SSL certificate key when [adding an SSL key to your stack](/articles/ssl-certificate). Use the following command to do it (on your development computer):
+You can simply use a non-passphrase-protected version of your SSL certificate key when [adding an SSL key to your stack](https://help.cloud66.works/{{ include.product }}/tutorials/2004-09-26-ssl-certificate.html). Use the following command to do it (on your development computer):
 
 
 

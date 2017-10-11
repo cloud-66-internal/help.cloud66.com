@@ -9,5 +9,5 @@ Cloud 66 Server Meta Data Service (SMDS) is a single HTTP GET endpoint that can 
 
 This ranges from hardware to software, package and network meta data as well as Cloud 66 specific information like stack, server group, environment and tags.
 
-This HTTP endpoint is the same for all servers and uses the caller's IP address to return the correct payload. As a result, SMDS doesn't work with some [Gateway](/deployment/deployment-gateway) network setups (as they use NAT to share a single public IP address).
+This HTTP endpoint is the same for all servers and uses the caller's IP address to return the correct payload. As a result, SMDS doesn't work with some [Gateway](https://help.cloud66.works/{{ include.product }}/deployment/deployment-gateway.html) network setups (as they use NAT to share a single public IP address).
 

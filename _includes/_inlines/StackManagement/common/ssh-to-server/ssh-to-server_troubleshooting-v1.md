@@ -5,7 +5,7 @@
 
 1.  Update your toolbelt version
 
-	Toolbelt updates are normally applied automatically in the background, but in some cases these may not work. If so, you may need to [update the toolbelt manually](https://cloud66-help.helpscoutdocs.com/toolbelt/toolbelt-introduction#update). 
+	Toolbelt updates are normally applied automatically in the background, but in some cases these may not work. If so, you may need to [update the toolbelt manually](https://help.cloud66.works/{{ include.product }}/toolbelt/introduction.html). 
 
 2.  Toolbelt SSH asking for password
 	

@@ -17,7 +17,6 @@ permalink: /:collection/:path
 
 
 <a href="#about-logging-with-cloud-66"></a>{% include _inlines/StackManagement/common/logging/logging_about-logging-with-cloud-66-v1.md  product = page.collection %}
-<a href="#docker-stacks"></a>{% include _inlines/StackManagement/common/logging/logging_docker-stacks-v1.md  product = page.collection %}
 <a href="#ruby-stacks"></a>{% include _inlines/StackManagement/common/logging/logging_ruby-stacks-v1.md  product = page.collection %}
 <a href="#web-logs"></a>{% include _inlines/StackManagement/common/logging/logging_web-logs-v1.md  product = page.collection %}
 <a href="#background-processes"></a>{% include _inlines/StackManagement/common/logging/logging_background-processes-v1.md  product = page.collection %}
