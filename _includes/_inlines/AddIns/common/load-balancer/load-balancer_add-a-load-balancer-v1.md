@@ -16,4 +16,4 @@ Depending on which cloud provider you use, this load balancer will be set up dif
 
 The time required to set up your load balancer will depend on which cloud provider you use. Once your load balancer is set up, it will be ready to distribute the load between your web servers. **All your existing web servers** will automatically be added to the load balancer.
 
-When you have a load balancer on your stack, your deployments can take place in serial to reduce downtime, or in [parallel](/deployment/parallel-deployments). Deploying in serial involves removing each server from the load balancer, deploying to it and then re-adding it to the load balancer in sequence.
+When you have a load balancer on your stack, your deployments can take place in serial to reduce downtime, or in [parallel](https://help.cloud66.works/{{ include.product }}/deployment/parallel-deployment.html). Deploying in serial involves removing each server from the load balancer, deploying to it and then re-adding it to the load balancer in sequence.

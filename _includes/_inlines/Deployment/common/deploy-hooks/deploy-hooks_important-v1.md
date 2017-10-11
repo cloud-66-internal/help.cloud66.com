@@ -8,7 +8,7 @@ When automating the installation of packages, remember to use the _-y_ flag to a
 
 
 
-The example below can be used to run custom rake tasks during server build. If you need to run it more than once, consider using the [rake task add-in](/stack-add-ins/rake-task).
+The example below can be used to run custom rake tasks during server build. If you need to run it more than once, consider using the [rake task add-in](https://help.cloud66.works/rails/addins/jobs/rake-task.html).
 
 
 

@@ -11,5 +11,5 @@ Cloud 66 currently supports the following cloud providers:
 *   [Linode](cloud-linode.html)
 *   [Microsoft Azure](cloud-azure.html)
 *   [Packet](cloud-packet.html)
-*   [Rackspace](cloud-rakcspace.html)
+*   [Rackspace](cloud-rackspace.html)
 *   [CloudA](cloud-clouda.html)

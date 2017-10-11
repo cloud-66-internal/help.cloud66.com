@@ -14,7 +14,7 @@ For **Rails/Rack** stacks this file should be present within a folder named _.cl
 
 
 
-For **Docker stacks** this file should be pushed into [CustomConfig git](http://help.cloud66.com/managing-your-stack/customconfig-git) Repository of the stack. This repository will be created after the stack is analysed, so you can push your deploy hooks before deployment started.
+For **Docker stacks** this file should be pushed into [CustomConfig git](https://help.cloud66.works/{{ include.product }}/stack-management/custom-git-repository.html) Repository of the stack. This repository will be created after the stack is analysed, so you can push your deploy hooks before deployment started.
 
 This file should be YAML formatted, and you can use a service like [YAMLlint](http://yamllint.com/) to validate it.
 

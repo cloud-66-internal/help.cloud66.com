@@ -159,7 +159,7 @@ toc2:
           - page: Deployment Profiles
             url: https://help.cloud66.works/legacy_docker/deployment/deploy-profiles.html
           - page: Deployment Authorization
-            url: https://help.cloud66.works/legacy_docker/deployment/deploy-authorisation.html
+            url: https://help.cloud66.works/legacy_docker/deployment/deployment-authorisation.html
           - page: Parallel Deployments
             url: https://help.cloud66.works/legacy_docker/deployment/parallel-deployment.html
           - page: Server IP Addresses and Hostnames
@@ -175,7 +175,7 @@ toc2:
           - page: Multi Tenancy for Stacks
             url: https://help.cloud66.works/legacy_docker/deployment/multi-tenancy.html
           - page: Redeployment Hooks
-            url: https://help.cloud66.works/legacy_docker/deployment/redeployment-hooks.html
+            url: https://help.cloud66.works/legacy_docker/deployment/redeployment-hook.html
       - page: Failover Groups
         url: https://help.cloud66.works/legacy_docker/failover-groups/
         subsubfolderitems:
@@ -486,7 +486,7 @@ toc2:
           - page: Deployment Profiles
             url: https://help.cloud66.works/maestro/deployment/deploy-profiles.html
           - page: Deployment Authorization
-            url: https://help.cloud66.works/maestro/deployment/deploy-authorisation.html
+            url: https://help.cloud66.works/maestro/deployment/deployment-authorisation.html
           - page: Parallel Deployments
             url: https://help.cloud66.works/maestro/deployment/parallel-deployment.html
           - page: Server IP Addresses and Hostnames
@@ -502,7 +502,7 @@ toc2:
           - page: Multi Tenancy for Stacks
             url: https://help.cloud66.works/maestro/deployment/multi-tenancy.html
           - page: Redeployment Hooks
-            url: https://help.cloud66.works/maestro/deployment/redeployment-hooks.html
+            url: https://help.cloud66.works/maestro/deployment/redeployment-hook.html
       - page: Failover Groups
         url: https://help.cloud66.works/maestro/failover-groups/
         subsubfolderitems:
@@ -518,7 +518,7 @@ toc2:
           - page: Dockerfile
             url: https://help.cloud66.works/maestro/getting-started/dockerfile.html
           - page: Docker Service Configuration
-            url: https://help.cloud66.works/maestro/getting-started/docker-service-config.html
+            url: https://help.cloud66.works/maestro/getting-started/docker-service-configuration.html
           - page: Connecting Your Git Repository
             url: https://help.cloud66.works/maestro/getting-started/custom-git-repo.html
           - page: Connecting to Docker Image Repository
@@ -696,7 +696,7 @@ toc2:
           - page: How to migrate your stack
             url: https://help.cloud66.works/maestro/tutorials/2015-08-20-migrate-the-stack.html
           - page: Configuring Multi Certificate for HAProxy
-            url: https://help.cloud66.works/maestro/tutorials/2015-09-02-multi-cert-haproxy.html
+            url: https://help.cloud66.works/maestro/tutorials/2015-09-02-multi-cert_haproxy.html
           - page: Use GitHub with Cloud 66
             url: https://help.cloud66.works/maestro/tutorials/2015-09-22-github.html
           - page: Memory usage issues
@@ -1402,7 +1402,7 @@ toc2:
           - page: Introduction to Docker deployments
             url: https://help.cloud66.works/skycap/deployment/docker-introduction.html
           - page: BuildGrid
-            url: https://help.cloud66.works/skycap/deployment/build-grid.html
+            url: https://help.cloud66.works/skycap/deployment/build-grid/
           - page: Building your Service
             url: https://help.cloud66.works/skycap/deployment/building-your-service.html
           - page: Docker Service Configuration

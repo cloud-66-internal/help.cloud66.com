@@ -182,7 +182,7 @@ There are three types of deploy hooks, and the fields available (and required) v
 </tr> 
 <tr> 
  <td> parse <br> (true) </td> 
- <td> Specifies whether the file being transferred should be parsed for <a href="/deployment/environment-variables">environment variables</a>. Using this you can embed <em>&lt;%= ENV['ENV_VAR'] %&gt; </em> for example in your source file, and have it resolved during the deploy hook action </td> 
+ <td> Specifies whether the file being transferred should be parsed for <a href="https://help.cloud66.works/{{ include.product }}/deployment/env-vars.html">environment variables</a>. Using this you can embed <em>&lt;%= ENV['ENV_VAR'] %&gt; </em> for example in your source file, and have it resolved during the deploy hook action </td> 
 </tr> 
 <tr> 
  <td> owner <br> (your server user) </td> 
