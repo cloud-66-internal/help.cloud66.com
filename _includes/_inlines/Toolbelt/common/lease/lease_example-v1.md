@@ -5,4 +5,4 @@
 
 {%include _inlines/Toolbelt/common/lease/code_lease_example-cxleases-v1.md  product = include.product %}
 
-For more fine grained access control, use the [Stack network settings](/managing-your-stack/stack-network-settings) page.
+For more fine grained access control, use the [Stack network settings](https://help.cloud66.works/{{ include.product }}/stack-management/network-configuration.html) page.

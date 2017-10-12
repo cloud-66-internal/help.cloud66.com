@@ -11,9 +11,9 @@
   
 * Deployment credentials
 
-	-  The API key for your cloud provider ([Deploy to your cloud](/deployment/deploy-to-your-cloud))
+	-  The API key for your cloud provider ([Deploy to your cloud](https://help.cloud66.works/{{ include.product }}/deployment/clouds/))
   
 
-Alternatively, if you don't want to use a cloud provider, you can use your own server ( [Deploy to a registered server](https://cloud66-help.helpscoutdocs.com/article/23-registered-servers) )
+Alternatively, if you don't want to use a cloud provider, you can use your own server ( [Deploy to a registered server](https://help.cloud66.works/{{ include.product }}/deployment/registered-servers.html) )
 
 

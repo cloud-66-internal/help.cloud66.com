@@ -6,7 +6,7 @@
 
 Your stack is up and running, and you can start customizing by:
 
-*   [Define a backup](/stack-add-ins/database-backups)
-*   [Scale your Node.js application](/building-your-node-js-stack/scale-your-node-js-application)
-*   [Configure security](/managing-your-stack/stack-network-settings)
-*   [Configure an add-in](/stack-add-ins/add-in-implementation)
+*   [Define a backup](https://help.cloud66.works/{{ include.product }}/addins/database-backups.html)
+*   [Scale your Node.js application](https://help.cloud66.works/node/deployment/scale-node.html)
+*   [Configure security](https://help.cloud66.works/{{ include.product }}/stack-management/network-configuration.html)
+*   [Configure an add-in](https://help.cloud66.works/{{ include.product }}/addins/add-in-implementation.html)

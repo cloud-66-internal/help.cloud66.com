@@ -13,4 +13,4 @@ Your application is up and running but you need more capacity for your applicati
 *    Wait a couple of seconds
 *    Scaled up
 
-If you need more capacity and your server is running low on resources (> 80% utilizisation) it's time to scale vertically and/or horizonally. [Please read this document how easy it is to scale your application with Cloud 66.](/managing-your-stack/scaling)
+If you need more capacity and your server is running low on resources (> 80% utilizisation) it's time to scale vertically and/or horizonally. [Please read this document how easy it is to scale your application with Cloud 66.](https://help.cloud66.works/{{ include.product }}/stack-management/scaling.html)

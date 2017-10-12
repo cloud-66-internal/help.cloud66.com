@@ -17,7 +17,7 @@ Given that Sinatra applications can have different database frameworks, we allow
       bundle exec rake db:migrate
 
 
-These commands can be set via [Toolbelt](/toolbelt/toolbelt-settings-command),
+These commands can be set via [Toolbelt](https://help.cloud66.works/{{ include.product }}/toolbelt/settings.html),
 
 
 
@@ -26,7 +26,7 @@ These commands can be set via [Toolbelt](/toolbelt/toolbelt-settings-command),
 
 
 
-But also in your [manifest file](/building-your-stack/getting-started-with-manifest-files).
+But also in your [manifest file](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html).
 
 
 

@@ -13,7 +13,7 @@ Your stack is up and running - you now have:
 
 You can now start customizing by: 
 
-*   [Defining a backup](/stack-add-ins/database-backups)
-*   [Scaling your servers](/managing-your-stack/scaling)
-*   [Configuring security](/managing-your-stack/stack-network-settings)
-*   [Configuring an add-in](/stack-add-ins/add-in-implementation)
+*   [Defining a backup](https://help.cloud66.works/{{ include.product }}/addins/database-backups.html)
+*   [Scaling your servers](https://help.cloud66.works/{{ include.product }}/stack-management/scaling.html)
+*   [Configuring security](https://help.cloud66.works/{{ include.product }}/stack-management/network-configuration.html)
+*   [Configuring an add-in](https://help.cloud66.works/{{ include.product }}/addins/add-in-implementation.html)

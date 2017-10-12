@@ -16,23 +16,23 @@ Below is a table of the available configurations for a given service with a brie
      <td> <strong>Description</strong> </td> 
     </tr> 
     <tr> 
-     <td> <a href="/building-your-stack/building-your-docker-service#build_command">build_command</a> </td> 
+     <td> <a href="{% if include.product == "legacy_docker" %}https://help.cloud66.works/legacy_docker/deployment/building-your-service.html{% else %}https://help.cloud66.works/skycap/deployment/building-your-service.html{%endif%}">build_command</a> </td> 
      <td> Specifies the command you would like to run during stack build. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/building-your-stack/building-your-docker-service#build_root">build_root</a> </td> 
+     <td> <a href="{% if include.product == "legacy_docker" %}https://help.cloud66.works/legacy_docker/deployment/building-your-service.html{% else %}https://help.cloud66.works/skycap/deployment/building-your-service.html{%endif%}">build_root</a> </td> 
      <td> Specifies the directory of your repository in which you wish to run your Docker build. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/building-your-stack/building-your-docker-service#command">command</a> </td> 
+     <td> <a href="{% if include.product == "legacy_docker" %}https://help.cloud66.works/legacy_docker/deployment/building-your-service.html{% else %}https://help.cloud66.works/skycap/deployment/building-your-service.html{%endif%}">command</a> </td> 
      <td> Specifies the command used to start your container. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/managing-your-stack/scaling#services">constraints</a> </td> 
-     <td> Specifies <a href="/managing-your-stack/scaling#services">container amount</a> or <a href="/managing-your-stack/service-resources">resource</a> constraints for a service across the cluster. </td> 
+     <td> <a href="https://help.cloud66.works/{{ include.product }}/stack-management/scaling.html">constraints</a> </td> 
+     <td> Specifies <a href="https://help.cloud66.works/{{ include.product }}/stack-management/scaling.html">container amount</a> or <a href="/managing-your-stack/service-resources">resource</a> constraints for a service across the cluster. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/building-your-stack/building-your-docker-service#deploy_command">deploy_command</a> </td> 
+     <td> <a href="{% if include.product == "legacy_docker" %}https://help.cloud66.works/legacy_docker/deployment/building-your-service.html{% else %}https://help.cloud66.works/skycap/deployment/building-your-service.html{%endif%}"</a> </td> 
      <td> Specifies the command you would like to run during stack deploy (runs once per service). </td> 
     </tr> 
     <tr> 
@@ -40,7 +40,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies the dns behaviour for this service. One of the values: <em>versioned</em>, <em>non-versioned</em>. Default value is <em>versioned</em> </td> 
     </tr> 
     <tr> 
-     <td> <a href="/building-your-stack/building-your-docker-service#dockerfile_path">dockerfile_path</a> </td> 
+     <td> <a href="{% if include.product == "legacy_docker" %}https://help.cloud66.works/legacy_docker/deployment/building-your-service.html{% else %}https://help.cloud66.works/skycap/deployment/building-your-service.html{%endif%}">dockerfile_path</a> </td> 
      <td> Specifies the location of the Dockerfile to be used for building this service, eg. <em>docker/Dockerfile</em>. </td> 
     </tr> 
     <tr> 
@@ -48,7 +48,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Arbitrary tags for services </td> 
     </tr> 
     <tr> 
-     <td> <a href="/building-your-stack/building-your-docker-service#git_url">git_url</a> </td> 
+     <td> <a href="{% if include.product == "legacy_docker" %}https://help.cloud66.works/legacy_docker/deployment/building-your-service.html{% else %}https://help.cloud66.works/skycap/deployment/building-your-service.html{%endif%}">git_url</a> </td> 
      <td> The Git repository URL your Docker image will be built with. </td> 
     </tr> 
     <tr> 

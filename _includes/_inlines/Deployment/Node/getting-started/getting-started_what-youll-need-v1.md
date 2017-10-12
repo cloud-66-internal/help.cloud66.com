@@ -5,19 +5,19 @@
 ## What you’ll need
 
 *   [Cloud 66 account](https://app.cloud66.com/users/sign_up)
-*   Public ([access a public repository](http://community.cloud66.com/articles/accessing-your-git-repository#public))
-*   Private ([access a private repository](http://community.cloud66.com/articles/accessing-your-git-repository#private))
+*   Public ([access a public repository](https://help.cloud66.works/{{ include.product }}/tutorials/1901-01-26-acces-your-code.html))
+*   Private ([access a private repository](https://help.cloud66.works/{{ include.product }}/tutorials/1901-01-26-acces-your-code.html))
   
    
   
-[Deployment credentials](/deployment/deploy-to-your-cloud)
+[Deployment credentials](https://help.cloud66.works/{{ include.product }}/deployment/clouds/)
 
-*   The API key for your cloud provider ([add a cloud platform](/deployment/deploy-to-your-cloud))
-*   An SSH key and IP address for your server ([add a SSH key](/deployment/deploy-to-your-own-server))
+*   The API key for your cloud provider ([add a cloud platform](https://help.cloud66.works/{{ include.product }}/deployment/clouds/))
+*   An SSH key and IP address for your server ([add a SSH key](https://help.cloud66.works/{{ include.product }}/addins/custom-server.html))
   
 
    
-[Application specific settings](/building-your-node-js-stack/specific-settings-for-your-node-js-application)
+[Application specific settings](https://help.cloud66.works/node/deployment/application-settings-node.html)
   
 
 
