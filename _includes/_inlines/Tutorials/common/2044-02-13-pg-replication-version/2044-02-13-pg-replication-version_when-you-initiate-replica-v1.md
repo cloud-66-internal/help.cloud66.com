@@ -16,7 +16,7 @@ For example, if you setup replication between a master (on 9.3) and a slave (9.4
 
 In this case, you need to upgrade the data and libraries of the master server (9.3) with [pg_upgrade](http://www.postgresql.org/docs/9.4/static/pgupgrade.html) before starting the replication.
 
-Remember that you can see the version of PostgreSQL to install on your stack by using a [manifest file](http://help.cloud66.com/building-your-stack/getting-started-with-manifest-files), like so:
+Remember that you can see the version of PostgreSQL to install on your stack by using a [manifest file](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html), like so:
 
 
 

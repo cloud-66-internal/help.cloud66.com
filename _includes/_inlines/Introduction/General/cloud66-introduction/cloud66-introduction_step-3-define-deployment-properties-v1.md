@@ -17,5 +17,5 @@ If deploying to a cloud server, you must know the API key for your cloud provide
 3.  In the _Deployment details_ dialog box, select the database option to use.
 4.  Click _Deploy_.
 
-This page also has _basic_ and _advanced_ configurations, designated by the tabs at the top of the form. Switching between the tabs will retain any previous information provided. The advanced tab allows you to input more detailed settings, which you can learn about in [Getting started with manifest files](/building-your-stack/getting-started-with-manifest-files).
+This page also has _basic_ and _advanced_ configurations, designated by the tabs at the top of the form. Switching between the tabs will retain any previous information provided. The advanced tab allows you to input more detailed settings, which you can learn about in [Getting started with manifest files](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html).
 

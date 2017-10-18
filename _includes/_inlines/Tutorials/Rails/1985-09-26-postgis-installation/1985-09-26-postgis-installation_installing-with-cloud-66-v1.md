@@ -3,7 +3,7 @@
 
 ## Installing with Cloud 66
 
-Installing through Cloud 66 is as simple as a manifest file entry. Refer to our [Manifest file](http://help.cloud66.com/building-your-stack/getting-started-with-manifest-files) documentation for more information.
+Installing through Cloud 66 is as simple as a manifest file entry. Refer to our [Manifest file](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html) documentation for more information.
 
 In order for your manifest file to be picked up, you need a file called **manifest.yml** to be present within a folder named **.cloud66**, which is in turn located in the root of your source code, checked into your repository.
 
