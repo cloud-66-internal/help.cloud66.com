@@ -5,6 +5,7 @@ title:  "Toolbelt for Node"
 categories: toolbelt
 lead: Cloud 66 Toolbelt for Node
 legacy: false
+permalink: /:collection/:categories/index.html
 ---
 
 Cloud 66 for Node supports the following toolbelt features:

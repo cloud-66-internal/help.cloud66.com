@@ -12,7 +12,7 @@ The first server in your account is charged at $19 per month, with additional se
 To learn more about feature-based pricing, please see our feature pages:
 
 *   [Database backups](https://help.cloud66.works/{{ include.product }}/addins/database-backups.html)
-*   [Backup verifiers](https://help.cloud66.works/{{ include.product }}/databases/backup-verifiers.html)
+*   [Backup verifiers](https://help.cloud66.works/rails/databases/backup-verifiers.html)
 *   [Teams](https://help.cloud66.works/general/ccount-management/team-accounts#pricing)
 *   [Support](https://help.cloud66.works/general/account/support.html)
 

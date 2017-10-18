@@ -3,7 +3,7 @@
 
 ## Cloud66 Update Packages Policy
 
-Cloud 66 aims to make it easier to build [immutable infrastructure](http://www.chadfowler.com/2013/06/23/immutable-deployments/). Building servers and stacks from scratch is much better than modifying existing server configurations and tinkering with settings until things start to work.
+Cloud 66 aims to make it easier to build [immutable infrastructure](http://chadfowler.com/2013/06/23/immutable-deployments.html). Building servers and stacks from scratch is much better than modifying existing server configurations and tinkering with settings until things start to work.
 
 Of course everyone knows that, the reasons they don't do it is that it's difficult, time consuming and can be unpredicatble. That's why we want to make building stacks from scratch as easy and as quick as possible. So in all cases of upgrade, our first recommendation is to build a new stack and redirect your traffic to the new stack using our [Elastic Address](https://help.cloud66.works/{{ include.product }}/failover-groups/failover-groups.html).
 

@@ -5,8 +5,8 @@
 ## What you’ll need
 
 *   [Cloud 66 account](https://app.cloud66.com/users/sign_up)
-*   Public ([access a public repository](https://help.cloud66.works/{{ include.product }}/tutorials/1901-01-26-acces-your-code.html))
-*   Private ([access a private repository](https://help.cloud66.works/{{ include.product }}/tutorials/1901-01-26-acces-your-code.html))
+*   Public ([access a public repository](https://help.cloud66.works/{{ include.product }}/tutorials/1901-01-26-access-your-code.html))
+*   Private ([access a private repository](https://help.cloud66.works/{{ include.product }}/tutorials/1901-01-26-access-your-code.html))
   
    
   

@@ -12,5 +12,4 @@ permalink: /:collection/:categories/index.html
 - [Getting Started with Node.js Based Stacks](getting-started)
 - [Dockerfile](dockerfile)
 - [Connecting your Git Repository](custom-git-repo)
-- [Advanced Deploy](advanced-deploy)
 - [Choosing Server Size](server-size)

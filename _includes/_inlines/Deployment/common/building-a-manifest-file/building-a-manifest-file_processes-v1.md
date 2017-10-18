@@ -3,7 +3,7 @@
 
 ## Processes
 
-[Background processes](https://help.cloud66.works/{{ include.product }}/deployment/proc-files.html) can be deployed and managed by Cloud 66. Any process in a `Procfile` will be picked up, deployed and monitored by the system.
+[Background processes](https://help.cloud66.works/rails/deployment/proc-files.html) can be deployed and managed by Cloud 66. Any process in a `Procfile` will be picked up, deployed and monitored by the system.
 
 If you would like more flexibility over the signals used to control the processes, you can use the `procfile_metadata` section. Here is an example:
 
