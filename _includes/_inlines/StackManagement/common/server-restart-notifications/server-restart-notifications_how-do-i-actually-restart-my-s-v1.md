@@ -3,7 +3,7 @@
 
 ## How do I actually restart my servers?
 
-In order to minimise down-time, you can restart one server at a time (assuming you have a {% if include.product == "rails" %}[load balancer](https://help.cloud66.works/{{ include.product }}/addins/load-balancer.html) {%else%}[load balancing](https://help.cloud66.works/{{ include.product }}/addins/load-balancing.html){%endif%} in place). Selecting an out-of-hours time is recommended to minimise disruption. You can also use the [maintenance page](https://help.cloud66.works/{{ include.product }}/stack-management/network-configuration.html) to temporarily notify your users that you are performing maintenance.
+In order to minimise down-time, you can restart one server at a time (assuming you have a {% if include.product == "rails" %}[load balancer](https://help.cloud66.works/{{ include.product }}/addins/load-balancer.html) {%else%}[load balancing](https://help.cloud66.works/{{ include.product }}/addins/load-balancing.html){%endif%} in place). Selecting an out-of-hours time is recommended to minimise disruption. You can also use the [maintenance page]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/network-configuration.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/network-configuration.html{% endif %}) to temporarily notify your users that you are performing maintenance.
 
 To restart your server, it is recommended that you [SSH to your server](https://help.cloud66.works/{{ include.product }}/stack-management/ssh-to-server.html) and run either of the following terminal commands:
 

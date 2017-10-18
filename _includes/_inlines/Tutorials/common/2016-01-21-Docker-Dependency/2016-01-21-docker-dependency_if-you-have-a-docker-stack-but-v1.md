@@ -14,7 +14,7 @@ Imagine you have two services (I've used two for simplicity) called `web` and `a
 
   What happens here is that all the services are put in a queue based on the logic of your service.yml (`api` first and `web` second in this case). Cloud 66 fires up the first one/s (`api`) and then moves on to the next one/s (`web`). Now imagine service `api` would take a long time to start but `web` starts quickly. As Cloud 66 doesn't know how long to wait to move on to the next service, this may end up having service `web` started while service `api` is still starting!
 
-  Cloud 66 has introduced a mechanism called [health check](http://help.cloud66.com/managing-your-stack/service-life-cycle-management#health) to prevent such matters. This means, it waits for the container to pass the health check and make sure the service is up, and then move to the next stage (starting `web`). So your service file would look something like the below (Note the health lines for `api` service):
+  Cloud 66 has introduced a mechanism called [health check](https://help.cloud66.works/{{ include.product }}/stack-management/service-lifecycle-management.html) to prevent such matters. This means, it waits for the container to pass the health check and make sure the service is up, and then move to the next stage (starting `web`). So your service file would look something like the below (Note the health lines for `api` service):
 
 
 

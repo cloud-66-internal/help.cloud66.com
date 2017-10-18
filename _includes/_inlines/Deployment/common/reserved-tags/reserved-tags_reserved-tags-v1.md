@@ -17,7 +17,7 @@ Cloud 66 currently reserves the following tags:
 <tr> 
  <td>c66.migrations.run</td> 
  <td>server</td> 
- <td>Sets the given server as the <a href="https://help.cloud66.works/{{ include.product }}/databases/database-management.html">migrator</a> - migrations will run on that server <i>only</i>, and the rest of the servers will wait until the migrations are performed before continuing with the deployment.</td> 
+ <td>Sets the given server as the <a href="{% if include.product == "skycap" %}https://help.cloud66.works/maestro/databases/database-management.html{% else %}https://help.cloud66.works/{{ include.product }}/databases/database-management.html{% endif %}">migrator</a> - migrations will run on that server <i>only</i>, and the rest of the servers will wait until the migrations are performed before continuing with the deployment.</td> 
 </tr> 
 </tbody>
 </table> 

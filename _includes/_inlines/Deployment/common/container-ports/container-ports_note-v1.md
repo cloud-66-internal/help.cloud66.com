@@ -3,7 +3,7 @@
 
 ### Note
 
-For HTTPS traffic to be available to the outside world you still need to [setup your SSL certificates](/stack-add-ins/ssl-certificate).
+For HTTPS traffic to be available to the outside world you still need to [setup your SSL certificates](https://help.cloud66.works/{{ include.product }}/addins/ssl/).
 
 
 

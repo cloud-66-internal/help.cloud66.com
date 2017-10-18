@@ -10,5 +10,5 @@ You can choose between any of four supported databases:
 - MongoDB
 - Redis
 
-Cloud 66 makes it easy for you to [backup your database](https://help.cloud66.works/{{ include.product }}/databases/database-backup.html), [verify the backup](https://help.cloud66.works/rails/databases/backup-verifiers.html) and [replicate your databases](https://help.cloud66.works/{{ include.product }}/databases/database-replication.html).
+Cloud 66 makes it easy for you to [backup your database]({% if include.product == "skycap" %}https://help.cloud66.works/skycap/databases/database-backup.html{% else %}https://help.cloud66.works/{{ include.product }}/databases/database-backup.html{% endif %}), [verify the backup](https://help.cloud66.works/rails/databases/backup-verifiers.html) and [replicate your databases]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/databases/database-replication.html{% else %}https://help.cloud66.works/{{ include.product }}https://help.cloud66.works/{{ include.product }}/databases/database-replication.html{% endif %}).
 
