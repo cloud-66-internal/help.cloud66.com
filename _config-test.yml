@@ -13,31 +13,7 @@ email: support@cloud66.com
 permalink: /:collection/:path/
 
 collections:
-  general:
-    output: true
-    permalink: /:collection/:path/
-    icon: foundicon-idea
-  legacy_docker:
-    output: true
-    permalink: /:collection/:path/
-    icon: foundicon-idea
-  maestro:
-    output: true
-    permalink: /:collection/:path/
-    icon: foundicon-idea
-  node:
-    output: true
-    permalink: /:collection/:path/
-    icon: foundicon-idea
-  rails:
-    output: true
-    permalink: /:collection/:path/
-    icon: foundicon-idea
-  skycap:
-    output: true
-    permalink: /:collection/:path/
-    icon: foundicon-idea
-  test:
+ test:
     output: true
     permalink: /:collection/:path/
     icon: foundicon-idea  
@@ -54,7 +30,6 @@ plugins:
 algolia:
   application_id: 'TXUI53WBEH'
   index_name:     'help-new'
-# Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # exclude:
