@@ -1,5 +1,0 @@
-<!-- post: -->
-
-
-## Useful pointers
-

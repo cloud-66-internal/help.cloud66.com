@@ -1,0 +1,151 @@
+---
+layout: default
+title: search for help | Cloud 66
+---
+
+    <h1 class="article-title">
+        The Main page heading or h1
+    </h1>
+
+    <p class="lead">
+       Optional article lead. An overview of the document this could be the tutorial or guide objectives. It's probably not necessary for reference documents.
+    </p>
+
+    <p>This is a normal paragraph style. It could contain some <em>emphasized text</em> or it can contain some <strong>strong</strong> text. Sometimes it may even contain some <span class="highlighted">highlighted</span> text.</p>
+
+    <p class="weighted">
+        This is a weighted paragraph style Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </p>
+
+    <p>Text can be highlighted</span> as a block level notice. Notices can be used to draw attention to important blocks of text, be careful not to use this too often on a single page.</p>
+
+    <div class="notice">
+        <h3>A Default Notice</h3>
+        <p>Call-out some text on the page as important but use sparingly! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="notice notice-warning">
+        <h3>A Warning Notice</h3>
+        <p>Callout some text on the page as warning but use sparingly! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="notice notice-danger">
+        <h3>A Danger Notice</h3>
+        <p>Callout some text on the page as dangerous but use VERY sparingly! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, quasi, numquam, quidem reprehenderit cupiditate animi dolor ut exercitationem rerum molestias ad inventore accusantium voluptate ex recusandae aliquam sunt officiis iste.
+    </p>
+
+    <h2>A Second level heading or h2</h2>
+
+    <p>This is a basic unordered list style. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+    </ul>
+
+    <p>List items can contain nested paras:</p>
+
+    <ul>
+        <li>
+            <p>
+            <strong>Lorem ipsum</strong> &mdash; dolor sit amet, consectetur adipisicing elit. Soluta, eum, dicta reiciendis est aut modi quam provident doloribus magnam molestiae non numquam iure facilis odio harum vero tempore voluptatum accusantium.
+            </p>
+        </li>
+        <li>
+            <p>
+            <strong>Soluta eum</strong> &mdash; dicta reiciendis est aut modi quam provident doloribus magnam molestiae non numquam iure facilis odio harum
+            </p>
+        </li>
+    </ul>
+
+    <p>Need to show keyboard input: <kbd>ssh user@server_address -i /path/to/downloaded/ssh/key/key.pem</kbd>. or instead show a terminal block:</p>
+
+    <p>This is a basic ordered list style:</p>
+
+    <ol>
+        <li>This is the first item.</li>
+        <li>This is the second item.</li>
+        <li>This is the third item.</li>
+    </ol>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+<pre class="terminal">
+<kbd>ssh user@server_address -i /path/to/downloaded/ssh/key/key.pem</kbd>
+</pre>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, omnis, necessitatibus.</p>
+
+<h3>Tabular Data</h3>
+
+<table class='table table-bordered table-striped'>
+    <thead>
+        <tr>
+            <th>Attribute</th>
+            <th>Default Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>user</td>
+            <td>nginx</td>
+        </tr>
+        <tr>
+            <td>worker_processes</td>
+            <td>Dynamicly set <a href="/help/vendor_instances">based on instance size</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Jekyll Pygments Syntax highlighter</h3>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+
+<p>Highlight with numbers</p>
+
+{% highlight ruby linenos %}def foo
+  puts 'foo'
+end{% endhighlight %}
+
+<p>Default code highlighter</p>
+
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
+For `bash` highlighting, always use a `$` before the commands entered by the user:
+
+{% highlight bash linenos %}
+$ pwd
+$ echo
+{% endhighlight %}
+
+For values returned by the system use the normal `terminal` class:
+
+<pre class="terminal">
+/Users/me/my_awesome_project
+</pre>
+
+<h3>Google Code Prettify Syntax Highlighter</h3>
+<p>This is a JavaScript alternative to the Jekyll Pygments tool. It may be a better option.</p>
+<pre class="prettyprint">var hello = function() {
+    for (var i = 42; --i >= 0;) {
+        console.log('hello');
+    }
+  // This is a comment with a link <a href="#voila2">tags</a>.
+}</pre>
+
+
+
+
+
+

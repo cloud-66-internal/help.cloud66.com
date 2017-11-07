@@ -1,0 +1,15 @@
+<!-- usedin: [ _legacy_docker/deployment/getting-started-with-manifest-files-v1.md, _maestro/Deployment/getting-started-with-manifest-files-v1.md, _node/deployment/getting-started-with-manifest-files-v1.md, _rails/deployment/getting-started-with-manifest-files-v1.md, _skycap/deployment/getting-started-with-manifest-files-v1.md] -->
+
+
+## What is a manifest file?
+
+A manifest files allows you to be more explicit about your stack composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your stack. If you're already familiar with manifest files, refer to [Building a manifest file](https://help.cloud66.works/{{include.product}}/deployment/building-a-manifest-file.html).
+
+These are just some examples of the settings you can control with a manifest file:
+
+- Defining sizes and data center region for your servers
+- Installing extra packages
+- Specifying a component version
+- Configure your stack components to share a server
+- Customize component-specific configurations
+

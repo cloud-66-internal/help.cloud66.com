@@ -1,41 +1,152 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
+<html lang="en">
+<head>
+    <title>
+        {{ page.title }} | Help | Cloud 66
+    </title>
 
-    <link rel="shortcut icon" href="//d563vzkt1q0lu.cloudfront.net/images/favicon.ico">
-		<link rel="stylesheet" href="/css/syntax.css">
-		<link rel="stylesheet" href="/css/main.css?v=2013-09-24">
+    <meta charset="utf-8">
+    <meta name="description" content="Cloud 66 - Documentation">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-		<title>{{ page.title }} | Help | Cloud 66</title>
-	</head>
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ page.title }} — Cloud 66">
+    <meta property="og:description" content="{{ page.title }}">
+    <meta property="og:image" content="/images/ui/logo.svg">
 
-	<body class="{{ page.bodyclass }} {{ page.template }}">
-		<div class="is-loading"></div>
-		{% include top_nav_bar.html %}
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.title }}">
+    <meta name="twitter:image" content="/images/ui/logo.svg">
 
-		<main role="main">
-			{{ content }}
-		</main>
+    <link rel="icon" href="/images/ui/favicon.ico" type="image/png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-		{% include footer.html %}
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.2.1/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.2.1/dist/instantsearch.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.2.1/dist/instantsearch-theme-algolia.min.css">
+    
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<script>window.jQuery || alert('jquery not loaded from CDN')</script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
-		<script src="/js/plugins.js?buster=1"></script>
-		<script src="/js/base.js?buster=2"></script>
-		<script>
-			CB.help.init();
+    <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) { 
+    const search = instantsearch({
+        appId: 'TXUI53WBEH',
+        apiKey: 'abdf284bf870bdd1beff87179eadcb07',
+        indexName: 'help-new',
+        urlSync: true
+    });
 
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			ga('create', 'UA-25691976-6', 'cloud66.com');
-			ga('send', 'pageview');
-		</script>
-	</body>
+  // initialize SearchBox
+  search.addWidget(
+    instantsearch.widgets.searchBox({
+      container: '#search-box',
+      placeholder: 'Search Documentation'
+    })
+  );
+
+  // initialize hits widget
+  
+{% raw %}
+   search.addWidget(
+    instantsearch.widgets.hits({
+      container: '#hits',
+      templates: {
+        empty: 'No results',
+        item: '<a href="{{{ url }}}"><h2>{{{ title }}}</h2></a> \n{{{ raw_html }}}\n\n'
+      }
+    })
+  );
+   {%endraw%}
+
+  search.start();
+  });
+</script>
+
+
+    {% include styles.html %}
+</head>
+
+
+<body class="docs {{ page.bodyclass }} {{ page.template }}">
+    <!-- =============== Mobile =============== -->
+
+        {% include mobile_bar.html %}
+
+    <!-- =============== Page Header =============== -->
+        {% include top_nav_bar.html %}
+
+        <!-- =============== Main  =============== -->
+            <main id="main" class="Main Main--fixSidebar">
+
+                <!-- The left sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-inner">
+
+                        <!-- Mobile search form -->
+                        <ul class="main-menu">
+                            <li>
+                                <form id="search-form">
+                                    <input type="text" id="search-query-sidebar" class="search">
+                                </form>
+                            </li>
+                        </ul><!--/.main-menu-->
+
+                        <!-- ==== The main left hand navigation list ==== -->
+                        {% include left_nav.html %}
+
+                    </div><!--/.sidebar-inner -->
+                </aside><!-- ./sidebar -->
+
+        <!-- ======================== Start of Article ======================================================================== -->
+                <article class="content content--withSidebar">
+                    {{ content }}
+                    <!-- Footer content? -->
+
+                    <div class="PageLinks">
+                        <span class="u-floatRight">
+                            <a href="#"><strong>Next</strong> &mdash; Secure your app by Instaling an SSL Cert</a> →
+                        </span>
+                    </div>
+
+                    <footer class="FooterArticle"></footer>
+
+                    <!-- Flexbox grid system -->
+                    <div class="extra">
+                        <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersLg">
+                            <div class="Grid-cell">
+                                <a href="http://app.cloud66.com/support_tickets/new">
+                                    <div class="Panel">
+                                          <div class="Media">
+                                              <img src="/images/ui/support.svg" class="Media-figure" width="30" alt="">
+                                              <div class="Media-body">
+                                                  <h6 class="Media-heading">Need help with deployments?</h6>
+                                                  <span class="Media-link">Contact Support </span>
+                                              </div>
+                                          </div><!--.Media-->
+                                    </div><!-- /.Panel -->
+                                </a>
+                            </div><!--/.Grid-cell-->
+                            <div class="Grid-cell">
+                                <a href="https://cloud66ers.slack.com">
+                                    <div class="Panel">
+                                        <div class="Media">
+                                            <img src="/images/ui/slack.svg" class="Media-figure" width="30" alt="">
+                                            <div class="Media-body">
+                                                <h6 class="Media-heading">More Questions?</h6>
+                                                <a class="Media-link" href="#">Join the Slack Channel</a>
+                                            </div>
+                                        </div><!--.Media-->
+                                    </div><!--/.Panel-->
+                                </a>
+                            </div><!--/.Grid-cell-->
+                        </div><!--/.Grid-->
+                    </div>
+                </article>
+        <!-- ======================== END of Article ======================================================================== -->
+            </main>
+            {% include body_scripts.html %}
+    </body>
 </html>

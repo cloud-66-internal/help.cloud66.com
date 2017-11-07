@@ -1,5 +1,0 @@
-<!-- post: -->
-
-
-## Stopping services
-

@@ -1,5 +1,0 @@
-<!-- post: -->
-
-
-## Scaling services
-

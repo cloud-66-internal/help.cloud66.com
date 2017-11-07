@@ -1,5 +1,0 @@
-<!-- post: -->
-
-
-## Getting service information
-

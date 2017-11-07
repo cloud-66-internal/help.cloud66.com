@@ -831,7 +831,7 @@ Handlebars.SafeString.prototype.toString = function() {
 
 var escape = {
   "&": "&amp;",
-  "<": "&lt;",
+  "<": "<",
   ">": "&gt;",
   '"': "&quot;",
   "'": "&#x27;",

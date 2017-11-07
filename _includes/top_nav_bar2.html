@@ -1,0 +1,71 @@
+<header class="Header js_header" id="header">
+    <a id="logo" class="Header-logo" href="/">
+        <img src="/images/ui/logo.svg" alt="" width="18">
+    </a>
+
+    <ul id="nav" class="Header-nav">
+        <li class="nav-dropdown-container">
+            <a href="/" class="nav-link">Product Documentation</a><span class="arrow"></span>
+            <ul class="nav-dropdown">
+                <li>
+                    <h4>Products</h4>
+                </li>
+                <li>
+                    <ul>
+                        <li id="nav-link-rails"><a href="/rails" class="nav-link nav-link--icon">Rails Frameworks</a></li>
+                        <li id="nav-link-node"><a href="/node" class="nav-link nav-link--icon">Node Frameworks</a></li>
+                        <li id="nav-link-skycap"><a href="/skycap" class="nav-link nav-link--icon">Skycap</a></li>
+                        <li id="nav-link-meastro"><a href="/maestro" class="nav-link nav-link--icon">Maestro</a></li>
+                        <li id="nav-link-docker"><a href="/legacy_docker" class="nav-link nav-link--icon">Docker</a></li>
+                    </ul>
+                </li>
+          </ul>
+        </li>
+        <li class="nav-community">
+            <a href="https://cloud66ers.slack.com" class="nav-link">Community</a>
+        </li>
+        <li class="nav-contact">
+            <a href="http://app.cloud66.com/support_tickets/new" class="nav-link">Contact Support</a>
+        </li>
+    </ul>
+
+    <form id="search-box" class="Header-search">
+    </form>
+    <div id="hits" class="hit">
+  <!-- Hits widget will appear here -->
+    </div>
+
+<style>
+.hit div{
+    border-bottom: 1px solid #e0e0e0;
+    padding:2px;
+}
+.hit{
+    visibility: hidden;
+    position: absolute;
+    top: 80px;
+    width: 20%;
+    height: 500px;
+    overflow: scroll; 
+    left:70%; 
+    border: 1px solid #e0e0e0;
+    border-radius:5px; 
+    padding: 5px;
+}
+</style>
+
+<script>
+var x = document.getElementById("search-box");
+x.addEventListener("focusin", myFocusFunction);
+x.addEventListener("focusout", myBlurFunction);
+
+function myFocusFunction() {
+    document.getElementById("hits").style.visibility = "visible";
+}
+
+function myBlurFunction() {
+    document.getElementById("hits").style.visibility = "hidden";  
+}
+</script>
+
+</header>

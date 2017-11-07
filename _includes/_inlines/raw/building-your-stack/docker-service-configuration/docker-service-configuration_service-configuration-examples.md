@@ -1,5 +1,0 @@
-<!-- post: -->
-
-
-## Service configuration examples
-

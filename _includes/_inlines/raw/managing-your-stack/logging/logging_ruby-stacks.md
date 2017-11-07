@@ -1,5 +1,0 @@
-<!-- post: -->
-
-
-## Ruby stacks
-

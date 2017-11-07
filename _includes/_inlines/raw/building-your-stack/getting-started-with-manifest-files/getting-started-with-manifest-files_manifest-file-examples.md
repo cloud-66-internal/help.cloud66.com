@@ -1,5 +1,0 @@
-<!-- post: -->
-
-
-## Manifest file examples
-

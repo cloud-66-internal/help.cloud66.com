@@ -1,5 +1,0 @@
-<!-- post: -->
-
-
-## Upgrade package types
-

@@ -1,5 +1,0 @@
-<!-- post: -->
-
-
-## Open your website
-

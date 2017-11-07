@@ -1,5 +1,0 @@
-<!-- post: -->
-
-
-## Option for deployments
-
