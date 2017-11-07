@@ -1,5 +1,5 @@
 ---
-layout: postTest
+layout: post
 template: one-col
 title: Rails Test Search
 lead: Cloud 66 for Rails
