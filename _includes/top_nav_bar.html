@@ -29,43 +29,10 @@
         </li>
     </ul>
 
-    <form id="search-box" class="Header-search">
-       <!-- <input type="text" id="search-query-nav" class="search" placeholder="Search Documentation">-->
+    <form id="js_search_box" class="Header-search">
+       <!--  <input type="text" id="search-query-nav" class="search" placeholder="Search Documentation"> -->
     </form>
- <div id="hits" class="hit">
+    <div id="js_hits" class="SearchResultsDropDown">
+    <!-- Hits widget will appear here -->
     </div>
-
-<style>
-.hit div{
-    border-bottom: 1px solid #e0e0e0;
-    padding:2px;
-}
-.hit{
-    visibility: hidden;
-    position: absolute;
-    top: 80px;
-    width: 20%;
-    height: 500px;
-    overflow: scroll; 
-    left:70%; 
-    border: 1px solid #e0e0e0;
-    border-radius:5px; 
-    padding: 5px;
-}
-</style>
-<!--
-<script>
-var x = document.getElementById("search-box");
-x.addEventListener("focusin", myFocusFunction);
-x.addEventListener("focusout", myBlurFunction);
-
-function myFocusFunction() {
-    document.getElementById("hits").style.visibility = "visible";
-}
-
-function myBlurFunction() {
-    document.getElementById("hits").style.visibility = "hidden";  
-}
-</script>
--->
 </header>

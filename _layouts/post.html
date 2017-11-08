@@ -5,21 +5,19 @@ bodyclass: post
 
 {% assign current_cat = page.categories %}
 
-    <h1 class="article-title">
-        {{ page.title }}
-    </h1>
+<h1 class="article-title">{{ page.title }}</h1>
+
     {% if page.version %}
         <div style="margin-top: -38px; height: 0px; color: mediumseagreen; text-align: right;">VERSION: {{ page.version }}</div>
     {% endif %}
     {% assign trimmedURL = page.url | remove_first: '/' | remove_first: '.html' %}
     {% assign gitlnker = "https://github.com/cloud66/help/edit/feature/inlines/_" | append: trimmedURL | append: ".md" %}
+
+    <!--
     {% if jekyll.environment == "development" %}
     <a href={{gitlnker}}>github link</a>
     {% endif %}
-
-    <p class="lead">
-        {{ page.lead }}
-    </p>
+    -->
 
     {% if page.legacy %}
         <div class="notice notice-red">
