@@ -14,12 +14,106 @@ permalink: /:collection/:path
 
 
 
-<a href="#about-custom-web-servers"></a>{% include _inlines/Deployment/Rails/custom-web-servers/custom-web-servers_about-custom-web-servers-v1.md  product = page.collection %}
-<a href="#important"></a>{% include _inlines/Deployment/Rails/custom-web-servers/custom-web-servers_important-v1.md  product = page.collection %}
-<a href="#configurations-for-your-rack-server"></a>{% include _inlines/Deployment/Rails/custom-web-servers/custom-web-servers_configurations-for-your-rack-server-v1.md  product = page.collection %}
-<a href="#traffic-socket"></a>{% include _inlines/Deployment/Rails/custom-web-servers/custom-web-servers_traffic-socket-v1.md  product = page.collection %}
-<a href="#pid-file"></a>{% include _inlines/Deployment/Rails/custom-web-servers/custom-web-servers_pid-file-v1.md  product = page.collection %}
-<a href="#manual-control-of-the-web-servers"></a>{% include _inlines/Deployment/Rails/custom-web-servers/custom-web-servers_manual-control-of-the-web-servers-v1.md  product = page.collection %}
-<a href="#stop-the-web-server"></a>{% include _inlines/Deployment/Rails/custom-web-servers/custom-web-servers_stop-the-web-server-v1.md  product = page.collection %}
-<a href="#start-the-web-server"></a>{% include _inlines/Deployment/Rails/custom-web-servers/custom-web-servers_start-the-web-server-v1.md  product = page.collection %}
-<a href="#restart-the-web-server"></a>{% include _inlines/Deployment/Rails/custom-web-servers/custom-web-servers_restart-the-web-server-v1.md  product = page.collection %}
+
+
+
+
+## About custom web servers
+
+By default, stacks deployed by Cloud 66 run on [Phusion Passenger](https://www.phusionpassenger.com/) behind [Nginx](http://wiki.nginx.org/Main). You can also choose to use one of several servers:
+
+- [Passenger Enterprise](https://help.cloud66.works/{{ include.product }}/deployment/rack-webservers/passenger-enterprise.html)
+- [Puma](https://help.cloud66.works/{{ include.product }}/deployment/rack-webservers/puma-rack-server.html)
+- [Unicorn](https://help.cloud66.works/{{ include.product }}/deployment/rack-webservers/unicorn-rack-server.html)
+- [Thin](https://help.cloud66.works/{{ include.product }}/deployment/rack-webservers/thin-rack-server.html)
+
+
+
+
+
+### Important
+
+You need to choose your web server at the time of initial build of the stack. Changes to or from Passenger will not be applied after your stack has initially been built. You can however change freely between other supported servers after build.
+
+
+
+
+
+
+
+
+
+## Configurations for your Rack server
+
+If you would like to use a different server, there are some points you'd need to consider for it to work with a Cloud 66 stack. These conventions will allow Cloud 66 to redirect traffic to your servers and manage them for availability, memory consumption and restart cycles.
+
+
+
+
+
+
+### Traffic Socket
+
+For the traffic to be redirected to your web server, it should use a Unix socket at `/tmp/web_server.sock`
+
+
+
+
+
+
+### PID file
+
+For the web server to be managed and restarted properly by Cloud 66, it needs to have it's PID file at `/tmp/web_server.pid`
+
+
+
+
+
+
+## Manual control of the web servers
+
+To control your web servers manually you can use the following commands:
+
+
+
+
+
+
+### Stop the web server
+
+
+
+	sudo bluepill cloud66_web_server stop
+
+
+
+
+
+
+
+
+### Start the web server
+
+
+
+	sudo bluepill cloud66_web_server quit
+	sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill
+
+
+
+
+
+
+
+
+### Restart the web server
+
+If supported by your web server, you can use the following command to restart the web server with no down time (this will send a USR2 signal to your webserver)
+
+
+
+	sudo bluepill cloud66_web_server restart
+
+
+
+

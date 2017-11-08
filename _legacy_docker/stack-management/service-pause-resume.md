@@ -14,4 +14,14 @@ permalink: /:collection/:path
 
 
 
-<a href="#pause-and-resume-services"></a>{% include _inlines/StackManagement/common/service-pause-resume/service-pause-resume_pause-and-resume-services-v1.md  product = page.collection %}
+
+
+
+
+## Pause and resume services
+
+On each docker server you can pause and resume your services! You will find that in your stack page under Docker cluster and on the top right corner of each server box.
+
+* **Pause** is scaling down the services to zero.
+* **Resume** is scaling them back up to the number of services there were before pause
+

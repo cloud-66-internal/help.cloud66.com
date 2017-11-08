@@ -15,3 +15,4 @@ Cloud 66 supports integration with Partners:
 - [Integration with TravisCI](integration-with-travis-ci.html)
 - [Integration with Weave Scope](integration-with-weave-scope.html)
 - [Partner Integration](partner-integration.html)
+

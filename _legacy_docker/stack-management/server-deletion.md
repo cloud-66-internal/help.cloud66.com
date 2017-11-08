@@ -13,12 +13,90 @@ permalink: /:collection/:path
 
 
 
-<a href="#note"></a>{% include _inlines/StackManagement/common/server-deletion/server-deletion_note-v1.md  product = page.collection %}
-<a href="#aws"></a>{% include _inlines/StackManagement/common/server-deletion/server-deletion_aws-v1.md  product = page.collection %}
-<a href="#rackspace"></a>{% include _inlines/StackManagement/common/server-deletion/server-deletion_rackspace-v1.md  product = page.collection %}
-<a href="#digitalocean"></a>{% include _inlines/StackManagement/common/server-deletion/server-deletion_digitalocean-v1.md  product = page.collection %}
-<a href="#gce"></a>{% include _inlines/StackManagement/common/server-deletion/server-deletion_gce-v1.md  product = page.collection %}
-<a href="#linode"></a>{% include _inlines/StackManagement/common/server-deletion/server-deletion_linode-v1.md  product = page.collection %}
-<a href="#clouda"></a>{% include _inlines/StackManagement/common/server-deletion/server-deletion_clouda-v1.md  product = page.collection %}
-<a href="#azure"></a>{% include _inlines/StackManagement/common/server-deletion/server-deletion_azure-v1.md  product = page.collection %}
-<a href="#packet"></a>{% include _inlines/StackManagement/common/server-deletion/server-deletion_packet-v1.md  product = page.collection %}
+
+
+
+
+### Note
+
+Physical server deletion is not instant; it can currently take up to 24 hours for the removal to occur.
+
+
+
+
+Cloud66 creates different objects depending on which cloud provider you use. For some clouds, Cloud66 creates items at the account level (such as the SSH key for the _Packet_ cloud), which will not be deleted after stack deletion. You should clear them manually if you don't need them for other stacks anymore.
+
+Here is the list of items (Deleted/Not Deleted) depending on the cloud:
+
+
+
+
+
+
+### AWS
+`Deleted:` Instances, Load Balancers, Security Groups, Key Pairs
+
+
+
+
+
+
+### Rackspace
+`Deleted:`  Servers, Load Balancers, Block storage volumes
+
+
+
+
+
+
+### Digitalocean
+`Deleted:` Servers, SSH Keys
+
+
+
+
+
+
+### GCE
+`Deleted:` VM Instances, Disks, Forwarding Rules, Target Pools
+
+`Not Deleted:` Firewall Rules
+
+
+
+
+
+
+### Linode
+`Deleted:` Servers, NodeBalancers
+
+
+
+
+
+
+### CloudA
+`Deleted:` Servers, Load Balancers, Security Groups, Keypaires, Public IPs
+
+`Not Deleted:` Networks, Subnets, Routers
+
+
+
+
+
+
+### Azure
+`Deleted:` Virtual Machines, Cloud Services, Storage, Traffic Manager
+
+`Not Deleted:` Networks
+
+
+
+
+
+
+### Packet
+`Deleted:` Devices, Projects
+
+`Not Deleted:` SSH Keys
+

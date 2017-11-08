@@ -1,4 +1,4 @@
-<!-- usedin: [ _includes/_inlines/Toolbelt/common/stacks/stacks_example-5-v1.md] -->
+
 
 ```
 $ cx stack reboot -s mystack

@@ -1,4 +1,4 @@
-<!-- usedin: [ _rails/deployment/building-your-classic-stack-v1.md] -->
+
 
 
 ## Step 3: Define your application properties

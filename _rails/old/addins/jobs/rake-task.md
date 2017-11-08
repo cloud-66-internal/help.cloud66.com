@@ -13,5 +13,23 @@ permalink: /:collection/:path
 
 
 
-<a href="#add-a-rake-task"></a>{% include _inlines/AddIns/rails/rake-task/rake-task_add-a-rake-task-v1.md  product = page.collection %}
-<a href="#note"></a>{% include _inlines/AddIns/rails/rake-task/rake-task_note-v1.md  product = page.collection %}
+
+
+
+
+### Add a rake task
+This add-in allows you to schedule the execution of rake tasks.
+
+You're then able to choose which server to run on, what to run, and when to run it.
+
+
+
+
+
+
+## Note
+* Rake tasks are executed using 
+bundle exec
+* Run results (success, failure and any output) can be seen in real-time on the detail page
+* Make sure the rake task is running in the right environment
+

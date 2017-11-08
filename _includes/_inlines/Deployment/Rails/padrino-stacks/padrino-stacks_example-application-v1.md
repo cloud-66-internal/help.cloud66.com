@@ -1,4 +1,4 @@
-<!-- usedin: [ _rails/deployment/padrino-stacks-v1.md] -->
+
 
 
 ## Example application

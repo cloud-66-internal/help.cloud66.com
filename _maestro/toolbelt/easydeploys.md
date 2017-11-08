@@ -13,7 +13,61 @@ permalink: /:collection/:path
 
 
 
-<a href="#easydeploy-commands"></a>{% include _inlines/Toolbelt/Maestro/easydeploys/easydeploys_easydeploy-commands-v1.md  product = page.collection %}
-<a href="#usage"></a>{% include _inlines/Toolbelt/Maestro/easydeploys/easydeploys_usage-v1.md  product = page.collection %}
-<a href="#parameters"></a>{% include _inlines/Toolbelt/Maestro/easydeploys/easydeploys_parameters-v1.md  product = page.collection %}
-<a href="#example"></a>{% include _inlines/Toolbelt/Maestro/easydeploys/easydeploys_example-v1.md  product = page.collection %}
+
+
+
+
+## EasyDeploy commands
+
+This is a command to work with EasyDeploy apps on Cloud 66.
+
+
+
+
+
+
+### Usage
+
+
+
+
+
+```
+$ cx easydeploys list
+```
+
+
+
+
+
+
+
+
+
+
+### Parameters
+
+
+|       Parameter             |      	 Description     	         |
+| :---------------------------| ------------------------------------:|
+| list                        |  List the available EasyDeploy apps  |
+
+
+
+
+
+
+### Example
+
+
+
+
+
+```
+$ cx easydeploys list
+```
+
+
+
+
+

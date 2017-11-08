@@ -13,7 +13,53 @@ permalink: /:collection/:path
 
 
 
-<a href="#upload"></a>{% include _inlines/Toolbelt/common/upload/upload_upload-v1.md  product = page.collection %}
-<a href="#usage"></a>{% include _inlines/Toolbelt/common/upload/upload_usage-v1.md  product = page.collection %}
-<a href="#parameters"></a>{% include _inlines/Toolbelt/common/upload/upload_parameters-v1.md  product = page.collection %}
-<a href="#example"></a>{% include _inlines/Toolbelt/common/upload/upload_example-v1.md  product = page.collection %}
+
+
+
+
+## Upload
+
+Use this command to copy a file from your local computer to the remote server.
+
+
+
+
+
+
+### Usage
+
+
+
+```
+$ cx upload [-s <stack>] [--server <server name>] [source file] [target directory]
+```
+
+
+If you don't specify a target directory, the file will be uploaded to /tmp on your remote server.
+
+
+
+
+
+### Parameters
+
+|		Parameter 		   	 |	Default		|   Description    |
+|----------------------------|:------------:| ----------------:|
+|stack 					  	 |		—		| Name of the stack|
+|server name (optional)	  	 | 	—			| Name of the server to access |
+|source file	  		  	 | 	—			| The path to the file on your local computer |
+|target directory (optional) |		—		| Your remote server target path |
+
+
+
+
+
+### Example
+
+
+
+```
+$ cx upload -s "My Awesome App" --server web /tmp/file.txt /tmp/file.txt
+```
+
+

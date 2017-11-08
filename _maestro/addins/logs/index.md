@@ -10,3 +10,4 @@ permalink: /:collection/:path
 
 - [Logentries](logentries.html)
 - [Filebeat](filebeat.html)
+

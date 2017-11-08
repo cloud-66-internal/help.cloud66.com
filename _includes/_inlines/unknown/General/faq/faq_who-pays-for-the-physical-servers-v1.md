@@ -1,4 +1,4 @@
-<!-- usedin: [ _general/Introduction/faq-v1.md] -->
+
 
 
 ## Who pays for the physical servers?

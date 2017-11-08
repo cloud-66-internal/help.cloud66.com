@@ -1,4 +1,4 @@
-<!-- usedin: [ _legacy_docker/Tutorials/2012-01-05-nginx-deny-v1.md, _maestro/Tutorials/2012-01-05-nginx-deny-v1.md, _node/tutorials/2012-01-05-nginx-deny-v1.md, _rails/Tutorials/2012-01-05-nginx-deny-v1.md] -->
+
 
 
 In addition to protecting your application (or parts of it) using [HTTP basic authentication](https://help.cloud66.works/{{ include.product }}/tutorials/2012-01-03-nginx-auth.html), you can use Cloud 66 [CustomConfig](https://help.cloud66.works/{{ include.product }}/stack-management/custom-config.html) to block (or allow) access to your application based on IP addresses.

@@ -1,4 +1,4 @@
-<!--  usedin: [ _rails/Tutorials/1967-09-26-bluepill-v1.md] -->
+
 
 
 ## Unload a process

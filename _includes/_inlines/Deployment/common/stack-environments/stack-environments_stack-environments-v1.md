@@ -1,4 +1,4 @@
-<!-- usedin: [ _legacy_docker/getting-started/stack-environments-v1.md, _maestro/getting-started/stack-environments-v1.md, _node/getting-started/stack-environments-v1.md, _rails/getting-started/stack-environments-v1.md, _skycap/getting-started/stack-environments-v1.md] -->
+
 
 
 ### Stack environments

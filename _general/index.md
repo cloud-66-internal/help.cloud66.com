@@ -13,3 +13,4 @@ permalink: /:collection/:categories/index.html
 - [Teams](teams)
 - [Partners](partners)
 - [Beta Program](beta-program)
+

@@ -23,3 +23,4 @@ permalink: /:collection/:categories/index.html
 - [Redis](redis)
 - [Memcached](memcached)
 - [Custom Server](custom-server)
+

@@ -1,4 +1,4 @@
-<!--  usedin: [ _legacy_docker/Tutorials/2014-09-26-uninstall-mysql-v1.md, _maestro/Tutorials/2014-09-26-uninstall-mysql-v1.md, _node/tutorials/2014-09-26-uninstall-mysql-v1.md, _rails/Tutorials/2014-09-26-uninstall-mysql-v1.md] -->
+
 
 
 When using Cloud 66 to [deploy to your own servers](http://help.cloud66.com/deployment/registered-servers), you might experience trouble with an existing MySQL installation on your server.

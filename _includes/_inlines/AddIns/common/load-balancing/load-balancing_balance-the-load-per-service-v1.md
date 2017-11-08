@@ -1,4 +1,4 @@
-<!-- usedin: [ _legacy_docker/AddIns/load-balancing-v1.md, _maestro/AddIns/load-balancing-v1.md, _node/addins/load-balancing-v1.md, _rails/AddIns/load-balancing-v1.md] -->
+
 
 
 ## Balance the load per service

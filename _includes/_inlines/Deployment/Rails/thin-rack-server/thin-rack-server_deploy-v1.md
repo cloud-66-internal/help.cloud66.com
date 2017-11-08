@@ -1,4 +1,4 @@
-<!-- usedin: [ _rails/deployment/thin-rack-server-v1.md] -->
+
 
 
 ## Deploy with Thin

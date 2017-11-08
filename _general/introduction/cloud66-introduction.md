@@ -13,10 +13,131 @@ permalink: /:collection/:path
 
 
 
-<a href="#what-is-cloud-66"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_what-is-cloud-66-v1.md  product = page.collection %}
-<a href="#what-youll-need"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_what-youll-need-v1.md  product = page.collection %}
-<a href="#step-1-build-your-stack"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_step-1-build-your-stack-v1.md  product = page.collection %}
-<a href="#step-2-service-configuration"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_step-2-service-configuration-v1.md  product = page.collection %}
-<a href="#step-3-define-deployment-properties"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_step-3-define-deployment-properties-v1.md  product = page.collection %}
-<a href="#step-4-review-the-deployment-logs"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_step-4-review-the-deployment-logs-v1.md  product = page.collection %}
-<a href="#whats-next"></a>{% include _inlines/Introduction/General/cloud66-introduction/cloud66-introduction_whats-next-v1.md  product = page.collection %}
+
+
+
+
+## What is Cloud 66?
+
+Cloud 66 builds your full stack on either your own servers or cloud servers, deploys your application to them, and manages it for you.
+Whether you are a running a small hobby project or work in a large team of developers, Cloud 66 helps you focus on what you do best.
+
+Because Cloud 66 is provided as a service, you don't need to install anything on your local machine. Some of the features we provide include:
+
+*   **Deploying** your application to your cloud or your own servers
+*   **Backing up** your databases at set intervals
+*   **Scaling** your web, database, and process servers with the click of a button
+*   **Securing** your servers with features such as intruder detection and firewall
+*   **Monitoring** your servers
+
+To get started, you just have to provide us with a Git URL to your repository or your own Docker image(s). We'll then build a stack based on it.
+
+Before you get get started, you may want to look at our [Technical specifications](/introduction-to-cloud-66/technical-specifications) to determine if you're ready for Cloud 66.
+
+
+
+
+
+
+## What you’ll need
+
+*   [Cloud 66 account](https://app.cloud66.com/users/sign_up)
+	-  Pull your code from Git (with a [Dockerfile](https://docs.docker.com/reference/builder/))
+	- Provide an existing Docker image   
+  
+  
+  
+* Deployment credentials
+
+	-  The API key for your cloud provider ([Deploy to your cloud](https://help.cloud66.works/{{ include.product }}/deployment/clouds/))
+  
+
+Alternatively, if you don't want to use a cloud provider, you can use your own server ( [Deploy to a registered server](https://help.cloud66.works/{{ include.product }}/deployment/registered-servers.html) )
+
+
+
+
+
+
+
+### Step 1: Build your stack
+
+Before you can deploy your applications to a server with Cloud 66, you must build a stack of the components your application needs to run. To build your first stack, complete steps below.
+
+1.  Sign in to Cloud 66.
+2.  On the Cloud 66 dashboard, click _Build a Docker stack_.
+
+
+
+
+
+
+### Step 2: Service configuration
+
+Now provide a stack name, and the environment you would like to deploy in. Next up is configuring your Docker services - for example _web_, _api_, _worker_ and so on. You can add as many services to your stack as you need. These are the available fields (for the _basic_ tab):
+
+1.  What's the service name?
+2.  How shall we build this service?
+	- Pull code from Git: Cloud 66 builds your Docker images for you using BuildGrid, which requires that you place a Dockerfile in your repository.
+	- Build from Docker image: Specify your own Docker image repository for us to pull your image from.
+
+3.  Is the service accessible from the Internet? If so, specify which port your container runs on.
+4.  Which database(s) do you need?
+
+This page has _basic_ and _advanced_ configurations, designated by the tabs at the top of the form. Switching between the tabs will retain any previous information provided. The advanced tab allows you to input more detailed settings, which you can learn about in [Docker service configuration](/building-your-stack/docker-service-configuration).
+
+
+
+
+
+
+### Step 3: Define deployment properties
+
+Complete the following steps to define the properties that determine how to deploy your application.
+
+**Prerequisites**  
+
+If deploying to a cloud server, you must know the API key for your cloud provider. If deploying to your server, you must have (or generate) a SSH key for the server. For instructions on generating an SSH key, refer to [Setting up SSH keys](http://community.cloud66.com/articles/setting-up-ssh-keys).
+
+1.  In the _Where are you deploying to_ dialog box, select the deployment target to use.
+2.  Perform one of the following actions, depending on your deployment configuration:
+
+*   If deploying to a cloud, select the cloud provider, server region and server size.
+*   If deploying to a server, enter your username and IP address.
+3.  In the _Deployment details_ dialog box, select the database option to use.
+4.  Click _Deploy_.
+
+This page also has _basic_ and _advanced_ configurations, designated by the tabs at the top of the form. Switching between the tabs will retain any previous information provided. The advanced tab allows you to input more detailed settings, which you can learn about in [Getting started with manifest files](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html).
+
+
+
+
+
+
+### Step 4: Review the deployment logs
+
+After your stack builds successfully, you can view the log generated by the deployment.
+
+
+
+
+
+
+### What's next?
+
+Your stack is up and running - you now have:
+
+- Docker servers with automated deployment and lifecycle management
+- Networking and DNS layer across your stack
+- Database layer
+- Load balancing layer
+- All other Cloud 66 features, such as security, managed Nginx, team management and so on.
+
+You can now start customizing by: 
+
+*   [Defining a backup](https://help.cloud66.works/{{ include.product }}/addins/database-backups.html)
+*   [Scaling your servers]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/scaling.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/scaling.html{% endif %})
+*   [Configuring security]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/network-configuration.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/network-configuration.html{% endif %})
+*   [Configuring an add-in](https://help.cloud66.works/{{ include.product }}/addins/add-in-implementation.html)
+
+

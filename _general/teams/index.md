@@ -11,3 +11,4 @@ permalink: /:collection/:categories/index.html
 Cloud 66 supports the following features realted to teams:
 
 - [Team Accounts](team-accounts.html)
+

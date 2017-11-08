@@ -1,4 +1,4 @@
-<!-- usedin: [ _legacy_docker/Tutorials/1976-09-26-migrate-across-dc-v1.md, _maestro/Tutorials/1976-09-26-migrate-across-dc-v1.md, _node/tutorials/1976-09-26-migrate-across-dc-v1.md, _rails/Tutorials/1976-09-26-migrate-across-dc-v1.md] -->
+
 
 
 Do you want to move your stack from one cloud vendor or region to another? Follow the steps below for a seamless transition between stacks.

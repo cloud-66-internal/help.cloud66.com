@@ -1,4 +1,4 @@
-<!-- usedin: [ _general/account/account-management-v1.md] -->
+
 
 ## Delete your account
 To delete your account, visit the _Account_ link at the top right corner of your Cloud 66 account. Next, click on 

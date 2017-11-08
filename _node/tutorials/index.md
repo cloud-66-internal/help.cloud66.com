@@ -52,3 +52,4 @@ permalink: /:collection/:categories/index.html
 - [ssl Certificate Issues](2017-02-26-ssl-certificate-issues)
 - [How to Add Management Certificates in Azure new Portal](2017-03-12-azure-old-portal)
 - [Manage your stacks from Slack with ChatOps](manage-stacks-chatops)
+

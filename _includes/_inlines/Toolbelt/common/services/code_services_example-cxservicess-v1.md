@@ -1,4 +1,4 @@
-<!-- usedin: [ _includes/_inlines/Toolbelt/common/services/services_example-2-v1.md] -->
+
 
 ```
 $ cx services scale -s mystack my_web_service 1

@@ -1,4 +1,4 @@
-<!--  usedin: [ _general/Partners/partner-integration-v1.md] -->
+
 
 
 ### Redirecting to Partner's website

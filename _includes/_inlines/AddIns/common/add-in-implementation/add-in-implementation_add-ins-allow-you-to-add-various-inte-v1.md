@@ -1,4 +1,4 @@
-<!-- usedin: [ _legacy_docker/AddIns/add-in-implementation-v1.md, _maestro/AddIns/add-in-implementation-v1.md, _node/addins/add-in-implementation-v1.md, _rails/AddIns/add-in-implementation-v1.md] -->
+
 
 
 Add-ins allow you to add various internal and external features to your stack. These include database backups, SSL certificates and server components such as Redis and Elasticsearch.

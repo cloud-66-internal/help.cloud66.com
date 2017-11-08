@@ -14,3 +14,4 @@ permalink: /:collection/:categories/index.html
 - [Stack Notifications](stack-notifications)
 - [Global Search](global-search)
 - [Cloud66 Birdseye](cloud66-birdseye)
+

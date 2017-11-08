@@ -31,3 +31,4 @@ Cloud 66 for Rails, supports the following stack management features:
 - [Deployment failure](troubleshoot-ror-deployment-failure.html)
 
 <!-- - [Cloud 66 Birdseye](cloud66-birdseye.html) -->
+

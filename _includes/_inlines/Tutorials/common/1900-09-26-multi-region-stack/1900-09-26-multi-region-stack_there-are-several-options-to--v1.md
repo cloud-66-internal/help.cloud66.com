@@ -1,4 +1,4 @@
-<!-- usedin: [ _legacy_docker/Tutorials/1900-09-26-multi-region-stack-v1.md, _maestro/Tutorials/1900-09-26-multi-region-stack-v1.md, _node/tutorials/1900-09-26-multi-region-stack-v1.md, _rails/Tutorials/1900-09-26-multi-region-stack-v1.md] -->
+
 
 
 There are several options to consider when dealing with the infrastructure of a multi-region stack. The most challenging part is related to the application - the infrastructure usually caters for how the application is designed to deal with scalability.

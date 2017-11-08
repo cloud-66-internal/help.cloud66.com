@@ -13,7 +13,61 @@ permalink: /:collection/:path
 
 
 
-<a href="#open-your-website"></a>{% include _inlines/Toolbelt/common/open/open_open-your-website-v1.md  product = page.collection %}
-<a href="#usage"></a>{% include _inlines/Toolbelt/common/open/open_usage-v1.md  product = page.collection %}
-<a href="#parameters"></a>{% include _inlines/Toolbelt/common/open/open_parameters-v1.md  product = page.collection %}
-<a href="#example"></a>{% include _inlines/Toolbelt/common/open/open_example-v1.md  product = page.collection %}
+
+
+
+
+## Open your website
+
+
+
+
+
+
+### Usage
+
+
+
+
+
+```
+$ cx open [-s <stack>] [<server name>|<server ip>|<server role>]
+```
+
+
+
+
+
+
+
+
+
+
+### Parameters
+
+    
+|		Parameter 		   |   Description    |
+|--------------------------| ----------------:|
+|stack 					   |		Name of your stack|
+|server name  (optional)   | 	Name of the server to access|
+|server ip (optional)	   |	 IP of the server to access|
+|server role (optional)	   | Role of the server to access (eg. web) |
+
+
+
+
+
+### Example
+
+
+
+
+
+```
+$ cx open -s "My Awesome App"
+```
+
+
+
+
+

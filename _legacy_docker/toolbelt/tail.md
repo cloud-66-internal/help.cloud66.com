@@ -13,6 +13,47 @@ permalink: /:collection/:path
 
 
 
-<a href="#usage"></a>{% include _inlines/Toolbelt/common/tail/tail_usage-v1.md  product = page.collection %}
-<a href="#parameters"></a>{% include _inlines/Toolbelt/common/tail/tail_parameters-v1.md  product = page.collection %}
-<a href="#example"></a>{% include _inlines/Toolbelt/common/tail/tail_example-v1.md  product = page.collection %}
+
+
+
+
+### Usage
+
+
+
+```
+$ cx tail [-s <stack>] <server name>|<server ip>|<server role> <log filename>
+```
+
+
+
+
+
+
+### Parameters
+
+At least one of the optional parameters are necessary in order to identify which server to run the command on.
+
+
+
+|		Parameter 		   |	Default		|   Description    |
+|--------------------------|:--------------:| ----------------:|
+|stack 					   |		—		| Name of the stack|
+|server name (optional)    | 	—			| Name of the server to access |
+|server ip (optional)      | 	—			| IP of the server to access |
+|server role (optional)    | 	—			| Role of the server to access (eg. web) |
+|log filename			   |		—		| The logfile to tail (eg. nginx_error.log) |
+
+
+
+
+
+### Example
+
+
+
+```
+$ cx tail -s "My Awesome App" web nginx_error.log
+```
+
+

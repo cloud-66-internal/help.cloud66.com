@@ -1,4 +1,4 @@
-<!-- usedin: [ _general/Partners/partner-integration-v1.md] -->
+
 
 
 ### Step 3 - Redirect back to partner

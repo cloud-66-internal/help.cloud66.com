@@ -14,9 +14,72 @@ permalink: /:collection/:path
 
 
 
-<a href="#about-running-apps-with-thin"></a>{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_about-running-apps-with-thin-v1.md  product = page.collection %}
-<a href="#start-the-web-server"></a>{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_start-the-web-server-v1.md  product = page.collection %}
-<a href="#stop-the-web-server"></a>{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_stop-the-web-server-v1.md  product = page.collection %}
-<a href="#restart-the-web-server-hot-restart"></a>{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_restart-the-web-server-hot-restart-v1.md  product = page.collection %}
-<a href="#deploy-with-thin"></a>{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_deploy-v1.md  product = page.collection %}
-<a href="#important"></a>{% include _inlines/Deployment/Rails/thin-rack-server/thin-rack-server_important-v1.md  product = page.collection %}
+
+
+
+
+## About running apps with Thin
+
+[Thin](http://code.macournoyer.com/thin/) is a Ruby web server that can handle high levels of concurrency. Cloud 66 uses the following signals to control Thin:
+
+
+
+
+
+
+### Start the web server
+
+	sudo bluepill cloud66_web_server quit
+	sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill
+
+
+
+
+
+
+
+
+### Stop the web server
+
+	sudo bluepill cloud66_web_server stop
+
+
+
+
+### Restart the web server (hot-restart)
+
+	sudo bluepill cloud66_web_server restart
+	kill -USR2 <pid>
+
+
+
+
+
+
+## Deploy with Thin
+
+You need to choose your web server at the time of the initial build of the stack. Changes to or from Passenger (the default web server) will not be applied after your stack has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
+
+To run a Thin Rack server, add a line to your Procfile labeled as custom_web. Here is an example:
+
+```
+custom_web: bundle exec thin start --socket /tmp/web_server.sock --pid /tmp/web_server.pid -e $RACK_ENV -d
+```
+
+Please take note that Thin is running in Daemon mode with the `-d` parameter.
+
+
+
+
+
+
+
+
+
+## Important
+
+Your web server is not automatically restarted during redeployment. If you would like for it to restart automatically, you can accomplish this using a [deploy hook](#).
+
+
+
+
