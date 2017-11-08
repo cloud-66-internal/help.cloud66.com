@@ -1,20 +1,17 @@
 ---
 layout: post
 template: one-col
-title: Rails
+title: Cloud 66 for Rails
 lead: Cloud 66 for Rails
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-Cloud 66 for Rails, supports the following features:
+Cloud 66 for Rails lets you deploy your Ruby on Rails (or any other Rack-based) applications on any cloud. Cloud 66 for Rails offers ease of deployment and reduced the need for DevOps.
 
-- [Getting Started](getting-started)
-- [Deployment](deployment)
-- [Databases](databases)
-- [Stack Management](stack-management)
-- [Toolbelt](toolbelt)
-- [AddIns](addins)
-- [Failover Groups](failover-groups)
+- [Quickstarts](quickstarts)
+- [How-to Guides](how-to-guides)
+- [References](references)
+- [Concepts](concepts)
 - [Tutorials](tutorials)
-- [Troubleshooting](troubleshooting)
+- [Resource](resources)
