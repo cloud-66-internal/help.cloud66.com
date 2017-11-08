@@ -932,7 +932,7 @@ $notice-green: #2aa754;
  * Type lead
  * */
 .lead {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: #999;
 }
@@ -1287,7 +1287,8 @@ body.Body--home #search-query-nav {
         fill: #47B649;
     }
 }
-.NavCats--rails {
+.NavCats--rails,
+.NavCats--cloud {
     .Media-figure {
         fill: #FF4747;
     }
