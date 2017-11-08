@@ -1,4 +1,4 @@
-<!-- usedin: [ _rails/Tutorials/1989-09-26-replace-sqlite-v1.md] -->
+
 
 
 ## Instructions

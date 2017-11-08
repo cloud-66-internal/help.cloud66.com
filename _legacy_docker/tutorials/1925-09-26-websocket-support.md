@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "About WebSocket", "Cloud 66 configuration for WebSocket", "WebSocket through a load balancer", "Note", "Test your WebSocket server" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_about-websocket-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_cloud-66-configuration-for-web-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_websocket-through-a-load-balan-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_note-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_test-your-websocket-server-v1.md" ]
 layout: post
 template: one-col
 title: Cloud 66 WebSocket support
@@ -8,15 +7,76 @@ categories: Tutorials
 lead: ""
 legacy: true
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+## About WebSocket
+
+[WebSocket](http://www.websocket.org) allows bi-directional web communication between client and server and provides a true standard that can be used to build scalable, real-time web applications.
 
 
-<a href="#about-websocket"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_about-websocket-v1.md  product = page.collection %}
-<a href="#cloud-66-configuration-for-websocket"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_cloud-66-configuration-for-web-v1.md  product = page.collection %}
-<a href="#websocket-through-a-load-balancer"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_websocket-through-a-load-balan-v1.md  product = page.collection %}
-<a href="#note"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_note-v1.md  product = page.collection %}
-<a href="#test-your-websocket-server"></a>{% include _inlines/Tutorials/common/1925-09-26-websocket-support/1925-09-26-websocket-support_test-your-websocket-server-v1.md  product = page.collection %}
+## Cloud 66 configuration for WebSocket
+
+Cloud 66 opens **8080** and **8443** ports by default on your rails servers to allow you to use WebSocket.
+
+If you want to use WebSocket with Cloud 66, your WebSocket servers need to listen to the following ports:
+
+- **8080**
+- **8443** for SSL
+
+You can use a different port to use WebSocket (not supported by Cloud 66) but you will need manually open the ports to allow external connections to your Rails servers.
+
+Find out more about [Stack networking page]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/network-configuration.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/network-configuration.html{% endif %}).
+
+
+## WebSocket through a load balancer
+
+At any time, you can use a load balancer and scale up your servers to have more redundancy and capacity for your WebSocket servers.
+
+
+
+### Note
+
+ELB (Amazon) doesn't support WebSocket traffic.
+
+Learn more about [Cloud 66 HAProxy and WebSocket](https://help.cloud66.works/{{ include.product }}/tutorials/1930-09-26-haproxy-for-websocket.html) setup.
+
+**Linode** alternative HTTP ports 8080 and 8443 are opened on NodeBalancers and can be used for WebSockets.
+
+
+## Test your WebSocket server
+
+To test your WebSocket server, create a `.html` file with the code below, make sure to replace *\<your_address\>* with your WebSocket server IP address and finally, open it in a web browser.
+
+```
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        function debug( str ) {
+          $("#debug").append( str );
+        };
+
+        ws = new WebSocket("ws://your address");
+        ws.onmessage = function(evt) {
+          $("#msg").append("evt.data");
+        };
+        ws.onclose = function() {
+          debug("socket closed");
+        };
+        ws.onopen = function() {
+          debug("connected...");
+          ws.send("hello server");
+        };
+      });
+    </script>
+  </head>
+  <body>
+    <div id="debug"></div>
+    <div id="msg"></div>
+  </body>
+</html>
+```
+

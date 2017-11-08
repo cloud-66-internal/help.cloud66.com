@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "Under-powered server sizes (not recommended)", "Amazon Web Services", "Cloud-A", "DigitalOcean", "Google Compute Engine", "Microsoft Azure", "Rackspace" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/server-size/server-size_when-deploying-your-stack-you-are-asked-to-spe-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/server-size/server-size_under-powered-server-sizes-not-recommended-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/server-size/server-size_amazon-web-services-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/server-size/server-size_cloud-a-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/server-size/server-size_digitalocean-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/server-size/server-size_google-compute-engine-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/server-size/server-size_microsoft-azure-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/server-size/server-size_rackspace-v1.md" ]
 layout: post
 template: one-col
 title: Choosing Server Size
@@ -8,17 +7,43 @@ categories: getting-started
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+## Under-powered server sizes (not recommended)
 
 
-<a href="#under-powered-server-sizes-not-recommended"></a>{% include _inlines/GettingStarted/common/server-size/server-size_under-powered-server-sizes-not-recommended-v1.md  product = page.collection %}
-<a href="#amazon-web-services"></a>{% include _inlines/GettingStarted/common/server-size/server-size_amazon-web-services-v1.md  product = page.collection %}
-<a href="#cloud-a"></a>{% include _inlines/GettingStarted/common/server-size/server-size_cloud-a-v1.md  product = page.collection %}
-<a href="#digitalocean"></a>{% include _inlines/GettingStarted/common/server-size/server-size_digitalocean-v1.md  product = page.collection %}
-<a href="#google-compute-engine"></a>{% include _inlines/GettingStarted/common/server-size/server-size_google-compute-engine-v1.md  product = page.collection %}
-<a href="#microsoft-azure"></a>{% include _inlines/GettingStarted/common/server-size/server-size_microsoft-azure-v1.md  product = page.collection %}
-<a href="#rackspace"></a>{% include _inlines/GettingStarted/common/server-size/server-size_rackspace-v1.md  product = page.collection %}
+### Amazon Web Services
+- t1.micro
+- t2.micro
+
+
+### Cloud-A
+- 512 MB - General Purpose
+
+
+### DigitalOcean
+- 512MB - 1 CPU
+
+
+### Google Compute Engine
+- f1-micro
+
+
+### Microsoft Azure
+- A0
+
+
+### Rackspace
+- 512MB Standard Instance
+- 512MB Standard Instance (HVM)
+
+**We suggest using a server with at least 1GB of memory and 4 cores**
+
+In particular, Elasticsearch on a standalone under-powered server will not start up. This is because we configure Elasticsearch to lock its memory and prevent swapping on standalone servers as per the [official recommendation](https://www.elastic.co/guide/en/elasticsearch/guide/current/heap-sizing.html), and there is simply not enough memory for it to run it successfully.
+
+Depending on whether or not you have deployed your application elsewhere, it may be hard to gauge the amount of resources that you need. On a PaaS like Heroku for example, you can choose between 1X (512 MB), 2X (1 GB) and PX (6 GB) server sizes. This makes it easy to calculate your server requirements, and we recommend that you use similar server resources when deploying your stack with Cloud 66. We also recommend that you have a seperate server for your database in production environments.
+
+If you have yet to deploy your application in a production environment, you can deploy to a reasonably sized server and use [load testing](https://help.cloud66.works/{{ include.product }}/tutorials/1980-09-26-optimizing-performance.html) to determine your exact needs.
+

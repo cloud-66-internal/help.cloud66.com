@@ -1,4 +1,4 @@
-<!--  usedin: [ _legacy_docker/Tutorials/1960-09-24-smtp-installation-v1.md, _maestro/Tutorials/1960-09-24-smtp-installation-v1.md, _node/tutorials/1960-09-24-smtp-installation-v1.md] -->
+
 
 
 ## Configuring Rails

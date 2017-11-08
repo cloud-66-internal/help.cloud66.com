@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "View account information", "Delete your account", "Organizations", "Note:" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/account-management/account-management_view-account-information-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/account-management/account-management_delete-your-account-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/account-management/account-management_organizations-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Account/General/account-management/account-management_note-v1.md" ]
 layout: post
 template: one-col
 title: Account Management
@@ -8,14 +7,28 @@ categories: account
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
 
+## View account information
+To view your account information, visit the _Account_ link at the top right corner of your Cloud 66 account.
 
-<a href="#view-account-information"></a>{% include _inlines/Account/General/account-management/account-management_view-account-information-v1.md  product = page.collection %}
-<a href="#delete-your-account"></a>{% include _inlines/Account/General/account-management/account-management_delete-your-account-v1.md  product = page.collection %}
-<a href="#organizations"></a>{% include _inlines/Account/General/account-management/account-management_organizations-v1.md  product = page.collection %}
-<a href="#note"></a>{% include _inlines/Account/General/account-management/account-management_note-v1.md  product = page.collection %}
+## Delete your account
+To delete your account, visit the _Account_ link at the top right corner of your Cloud 66 account. Next, click on 
+Delete My Account
+ at the bottom, and confirm if you wish to proceed.
+
+If the link is not present, you will need to switch to your own organization (see below) and then it will appear.
+
+## Organizations
+
+When you sign up for Cloud66 you will have your own organization even if you sign up to join a team. To switch your organization, use the dropdown menu in the top right corner of your Cloud 66 account, and simply select the name of the organization you would like to switch to.
+
+
+## Note:
+
+There will not be any dropdown if you are part of **only one** (account owner) organization 
+
+

@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "On the server", "With a client" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1935-09-26-connect-db-servers/1935-09-26-connect-db-servers_on-the-server-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/1935-09-26-connect-db-servers/1935-09-26-connect-db-servers_with-a-client-v1.md" ]
 layout: post
 template: one-col
 title: How to connect to your database servers
@@ -8,12 +7,16 @@ categories: Tutorials
 lead: ""
 legacy: true
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+## On the server
+
+You can connect directly into your database server and invoke a database console from there. To do that, please refer to the [terminal connection to servers](http://help.cloud66.com/managing-your-stack/ssh-to-your-server) documentation.
 
 
-<a href="#on-the-server"></a>{% include _inlines/Tutorials/common/1935-09-26-connect-db-servers/1935-09-26-connect-db-servers_on-the-server-v1.md  product = page.collection %}
-<a href="#with-a-client"></a>{% include _inlines/Tutorials/common/1935-09-26-connect-db-servers/1935-09-26-connect-db-servers_with-a-client-v1.md  product = page.collection %}
+## With a client
+
+You can also open a firewall port in your database server to allow a remote machine to connect the it. This is possible using the [Stack security]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/network-configuration.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/network-configuration.html{% endif %}) page, and then you can use a database client from your local computer.
+

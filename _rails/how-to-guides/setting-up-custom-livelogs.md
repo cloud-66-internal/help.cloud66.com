@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "Note" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-07-08-Setting-up-custom-livelogs/2015-07-08-setting-up-custom-livelogs_depending-on-your-req-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-07-08-Setting-up-custom-livelogs/2015-07-08-setting-up-custom-livelogs_note-v1.md" ]
 layout: post
 template: one-col
 title: Setting up custom LiveLog files
@@ -8,11 +7,25 @@ categories: how-to-guides
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+### Note
 
+Server log file paths changes are calculated after each deployment, so if you change your logs in your manifest, be sure to redeploy in order to see them on the LiveLogs page.
 
-<a href="#note"></a>{% include _inlines/Tutorials/common/2015-07-08-Setting-up-custom-livelogs/2015-07-08-setting-up-custom-livelogs_note-v1.md  product = page.collection %}
+You can also have multiple custom log files defined for different server roles; for instance see the example below to add custom log files to all Docker servers with different custom log files for all MySQL servers (on the same stack):
+
+```
+production:   
+    docker:
+        configuration:
+            custom_log_files: ["/tmp/dockerlogs/*/*.log"]
+    mysql:                    
+        configuration:
+            custom_log_files:
+            - "/another_mysql_dump_log/*.log"
+            - "/var/log/mysql/error.log"
+```
+

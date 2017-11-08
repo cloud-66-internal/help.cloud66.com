@@ -9,7 +9,6 @@ legacy: false
 recommendedName: [ "Backup Verifiers", "Backup", "Replication" ]
 recommendedLinks: [ "backup-verifier.html", "backup.html", "replication.html" ]
 tabs: [ "Legacy_Docker", "maestro", "Node" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

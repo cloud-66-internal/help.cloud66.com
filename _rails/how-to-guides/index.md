@@ -76,3 +76,4 @@ Cloud 66 for Rails supports the following Troubleshooting guides:
 - [How to add management certificates in Azure new portal](azure-old-portal.html)
 - [Whenever errors](whenever-errors.html)
 - [Manage your stacks from Slack with ChatOps](manage-stacks-chatops.html)
+

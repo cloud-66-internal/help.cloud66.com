@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "Listing services", "Usage", "Parameters", "Example", "Scaling services", "Usage", "Parameters", "Example", "Stopping services", "Usage", "Parameters", "Example", "Restarting services", "Usage", "Parameters", "Example", "Getting service information", "Usage", "Parameters", "Example", "Result" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_listing-services-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_usage-1-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_parameters-1-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_example-1-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_scaling-services-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_usage-2-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_parameters-2-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_example-2-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_stopping-services-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_usage-3-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_parameters-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_example-3-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_restarting-services-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_usage-4-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_parameters-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_example-4-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_getting-service-information-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_usage-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_parameters-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_example-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/services/services_result-v1.md" ]
 layout: post
 template: one-col
 title: Toolbelt service management
@@ -8,31 +7,176 @@ categories: Toolbelt
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+## Listing services
 
 
-<a href="#listing-services"></a>{% include _inlines/Toolbelt/common/services/services_listing-services-v1.md  product = page.collection %}
-<a href="#usage"></a>{% include _inlines/Toolbelt/common/services/services_usage-1-v1.md  product = page.collection %}
-<a href="#parameters"></a>{% include _inlines/Toolbelt/common/services/services_parameters-1-v1.md  product = page.collection %}
-<a href="#example"></a>{% include _inlines/Toolbelt/common/services/services_example-1-v1.md  product = page.collection %}
-<a href="#scaling-services"></a>{% include _inlines/Toolbelt/common/services/services_scaling-services-v1.md  product = page.collection %}
-<a href="#usage"></a>{% include _inlines/Toolbelt/common/services/services_usage-2-v1.md  product = page.collection %}
-<a href="#parameters"></a>{% include _inlines/Toolbelt/common/services/services_parameters-2-v1.md  product = page.collection %}
-<a href="#example"></a>{% include _inlines/Toolbelt/common/services/services_example-2-v1.md  product = page.collection %}
-<a href="#stopping-services"></a>{% include _inlines/Toolbelt/common/services/services_stopping-services-v1.md  product = page.collection %}
-<a href="#usage"></a>{% include _inlines/Toolbelt/common/services/services_usage-3-v1.md  product = page.collection %}
-<a href="#parameters"></a>{% include _inlines/Toolbelt/common/services/services_parameters-v1.md  product = page.collection %}
-<a href="#example"></a>{% include _inlines/Toolbelt/common/services/services_example-3-v1.md  product = page.collection %}
-<a href="#restarting-services"></a>{% include _inlines/Toolbelt/common/services/services_restarting-services-v1.md  product = page.collection %}
-<a href="#usage"></a>{% include _inlines/Toolbelt/common/services/services_usage-4-v1.md  product = page.collection %}
-<a href="#parameters"></a>{% include _inlines/Toolbelt/common/services/services_parameters-v1.md  product = page.collection %}
-<a href="#example"></a>{% include _inlines/Toolbelt/common/services/services_example-4-v1.md  product = page.collection %}
-<a href="#getting-service-information"></a>{% include _inlines/Toolbelt/common/services/services_getting-service-information-v1.md  product = page.collection %}
-<a href="#usage"></a>{% include _inlines/Toolbelt/common/services/services_usage-v1.md  product = page.collection %}
-<a href="#parameters"></a>{% include _inlines/Toolbelt/common/services/services_parameters-v1.md  product = page.collection %}
-<a href="#example"></a>{% include _inlines/Toolbelt/common/services/services_example-v1.md  product = page.collection %}
-<a href="#result"></a>{% include _inlines/Toolbelt/common/services/services_result-v1.md  product = page.collection %}
+### Usage
+
+```
+$ cx services list [-s <stack>] [--server <slave server name>|<slave server ip>]
+```
+
+Gets information about the given service such as `service name, source type`, `git-ref`, `image info`, `container count`  and `docker commands`.
+Optionally provide the server to act only on that server.
+
+
+### Parameters
+|		Parameter 		   |	Default		|   Description    |
+|--------------------------|:--------------:| ----------------:|
+|stack 					   |		—		|Name of the stack|
+|server name (optional)    | 	—		| Name of the target server |
+
+### Example
+
+```
+$ cx services list -s My_Awesome_App
+$ cx services list -s My_Awesome_App --server my_selected_server
+```
+
+
+
+
+## Scaling services
+
+
+### Usage
+
+```
+$ cx services scale [-s <stack>] <service name> [--group <server group>] [--server <server name>|<server ip>] <count>
+```
+
+Gets information about the given service such as `service name, source type`, `git-ref`, `image info`, `container count`  and `docker commands`.
+Optionally provide the server to act only on that server.
+
+
+### Parameters
+|		Parameter 		   |	Default		|   Description    |
+|--------------------------|:--------------:| ----------------:|
+|stack 					   |		—		|Name of the stack|
+|service name			   |		—		| Name of the target service |
+|server name (optional)    | 	—		| Name of the target server |
+|group (optional)    | 	—		| Name of the target server group (ie. web/db/docker etc)|
+|count   | 	—		| Desired count (ie. +2, -3 or 5) |
+
+### Example
+
+```
+$ cx services scale -s mystack my_web_service 1
+$ cx services scale -s mystack a_backend_service --server backend +5
+$ cx services scale -s mystack a_backend_service -2
+$ cx services scale -s mystack a_backend_service --group docker 3
+```
+
+
+
+
+## Stopping services
+
+
+### Usage
+
+```
+$ cx services stop [-s <stack>] <service name> [--server <server name>|<server ip>]
+```
+
+Gets information about the given service such as `service name, source type`, `git-ref`, `image info`, `container count`  and `docker commands`.
+Optionally provide the server to act only on that server.
+
+
+### Parameters
+|		Parameter 		   |	Default		|   Description    |
+|--------------------------|:--------------:| ----------------:|
+|stack 					   |		—		|Name of the stack|
+|service name			   |		—		| Name of the target service |
+|server name (optional)    | 	—		| Name of the target server |
+
+### Example
+
+```
+$ cx services stop -s mystack my_web_service
+$ cx services stop -s mystack a_backend_service
+$ cx services stop -s mystack --server my_server my_web_service
+```
+
+
+
+
+## Restarting services
+
+
+### Usage
+
+```
+$ cx services restart [-s <stack>] <service name> [--server <server name>|<server ip>]
+```
+Gets information about the given service such as `service name, source type`, `git-ref`, `image info`, `container count`  and `docker commands`.
+Optionally provide the server to act only on that server.
+
+
+### Parameters
+|		Parameter 		   |	Default		|   Description    |
+|--------------------------|:--------------:| ----------------:|
+|stack 					   |		—		|Name of the stack|
+|service name			   |		—		| Name of the target service |
+|server name (optional)    | 	—		| Name of the target server |
+
+### Example
+
+```
+$ cx services restart -s mystack my_web_service
+$ cx services restart -s mystack a_backend_service
+$ cx services restart -s mystack --server my_server my_web_service
+```
+
+
+
+
+## Getting service information
+
+
+### Usage
+
+```
+$ cx services info [-s <stack>] <service name> [--server <server name>|<server ip>]
+```
+Gets information about the given service such as `service name, source type`, `git-ref`, `image info`, `container count`  and `docker commands`.
+Optionally provide the server to act only on that server.
+
+### Parameters
+|		Parameter 		   |	Default		|   Description    |
+|--------------------------|:--------------:| ----------------:|
+|stack 					   |		—		|Name of the stack|
+|service name			   |		—		| Name of the target service |
+|server name (optional)    | 	—		| Name of the target server |
+
+### Example
+
+```
+$ cx services info -s mystack my_web_service
+$ cx services info -s mystack a_backend_service
+$ cx services info -s mystack --server my_server my_web_service
+```
+
+
+
+
+### Result
+
+```
+NAME             VALUE
+name             web
+source type      git
+git-ref          d33e491e5a33
+container count  1
+image name       web
+image uid        92fd690d33fe43f55c80dc6687a7171c
+image tag        20150824122440373
+command          bundle exec rails s production
+build command    bundle exec rake db:schema:load
+deploy command
+```
+

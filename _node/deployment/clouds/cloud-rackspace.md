@@ -1,19 +1,41 @@
 ---
 menuheaders: [ "About using Rackspace cloud", "Generate a Rackspace API key", "Add Rackspace key to a stack", "Notice", "External links" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-rackspace/cloud-rackspace_contents-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-rackspace/cloud-rackspace_about-using-rackspace-cloud-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-rackspace/cloud-rackspace_generate-a-rackspace-api-key-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-rackspace/cloud-rackspace_add-rackspace-key-to-a-stack-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-rackspace/cloud-rackspace_notice-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/common/cloud-rackspace/cloud-rackspace_external-links-v1.md" ]
 layout: post
 template: one-col
 title: Rackspace Cloud
 categories: Deployment
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 
 
-<a href="#about-using-rackspace-cloud"></a>{% include _inlines/Deployment/common/cloud-rackspace/cloud-rackspace_about-using-rackspace-cloud-v1.md  product = page.collection %}
-<a href="#generate-a-rackspace-api-key"></a>{% include _inlines/Deployment/common/cloud-rackspace/cloud-rackspace_generate-a-rackspace-api-key-v1.md  product = page.collection %}
-<a href="#add-rackspace-key-to-a-stack"></a>{% include _inlines/Deployment/common/cloud-rackspace/cloud-rackspace_add-rackspace-key-to-a-stack-v1.md  product = page.collection %}
-<a href="#notice"></a>{% include _inlines/Deployment/common/cloud-rackspace/cloud-rackspace_notice-v1.md  product = page.collection %}
-<a href="#external-links"></a>{% include _inlines/Deployment/common/cloud-rackspace/cloud-rackspace_external-links-v1.md  product = page.collection %}
+## About using Rackspace cloud
+
+You can use Cloud 66 to provision and deploy your code to servers in any Rackspace [region](http://developers.cloud66.com/#cloud-vendor-instance-regions#rackspace). Note that if you hold a Rackspace UK account, you will be limited to creating servers in the London region. The Rackspace US account is able to create servers in the remaining regions.
+
+
+## Generate a Rackspace API key
+
+You need to provide your Rackspace API key in order for Cloud 66 to access your account. To generate a key, access the _Account_ dropdown in the top right of your Rackspace account, and go to the _User Management_ page. Once there, click _Create a new user_, and fill in the necessary details for this new user. This user must be created with **Full Access** in order for servers to be created in your account.
+
+Once you click _Create user_, you will be able to view the API Key by clicking _Show_.
+
+
+## Add Rackspace key to a stack
+
+Visit the Cloud 66 Dashboard and select _Get started building a stack_. After connecting to your Git repository and analyzing your code, you will be asked to _Add your cloud platform_. From this menu, select _Rackspace_ and provide your API key.
+
+
+
+### Notice
+
+Should you wish to delete your stack on Cloud 66, your servers **will not** be deleted on your cloud provider unless [physical server deletion](/managing-your-stack/server-deletion) is turned on.
+
+
+
+## External links
+
+*   [Rackspace regions](http://www.rackspace.com/knowledge_center/article/about-regions)
+*   [Rackspace pricing](http://www.rackspace.com/cloud/public-pricing/)
+

@@ -13,3 +13,4 @@ permalink: /:collection/:categories/index.html
 - [Dockerfile](dockerfile)
 - [Connecting your Git Repository](custom-git-repo)
 - [Choosing Server Size](server-size)
+

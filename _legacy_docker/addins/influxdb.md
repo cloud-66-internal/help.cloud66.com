@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "What is InfluxDB?", "Add InfluxDB", "Note" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddIns/common/influxdb/influxdb_what-is-influxdb-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddIns/common/influxdb/influxdb_add-influxdb-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddIns/common/influxdb/influxdb_note-v1.md" ]
 layout: post
 template: one-col
 title: InfluxDB
@@ -8,13 +7,21 @@ categories: addins
 lead: ""
 legacy: true
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+### What is InfluxDB?
+[InfluxDB](https://influxdata.com/) is an open source Time-Series database, and it's easy to add to your stack as an add-in.
 
 
-<a href="#what-is-influxdb"></a>{% include _inlines/AddIns/common/influxdb/influxdb_what-is-influxdb-v1.md  product = page.collection %}
-<a href="#add-influxdb"></a>{% include _inlines/AddIns/common/influxdb/influxdb_add-influxdb-v1.md  product = page.collection %}
-<a href="#note"></a>{% include _inlines/AddIns/common/influxdb/influxdb_note-v1.md  product = page.collection %}
+## Add InfluxDB
+To add InfluxDB to your stack, access the add-ins menu, click _InfluxDB_ and choose the size of your new server.
+
+
+
+### Note
+
+For docker stacks this will be added to the host not as a container.
+
+

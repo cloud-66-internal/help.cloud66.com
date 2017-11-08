@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "1. Concatanate each certification's files to one file", "2. Upload them to /tmp of your server", "3. Login to your HAproxy server", "4. Copy the files to certification files from /tmp to their directory", "5. Change the settings in your HAproxy config", "Note" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_this-article-is-for-adding-mu-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_1.-concatanate-each-certifica-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_2.-upload-them-to--v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_3.-login-to-your-haproxy-serv-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_4.-copy-the-files-to-certific-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_5.-change-the-settings-in-you-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_note-v1.md" ]
 layout: post
 template: one-col
 title: Configuring Multi Certificate for HAProxy
@@ -8,16 +7,67 @@ categories: Tutorials
 lead: ""
 legacy: true
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+### 1. Concatanate each certification's files to one file
+
+Run the followings on your local computer
+
+```
+cat CERT1.CRT_PATH [CERT1_MID.crt_path] PRIVATE1.key_PATH > websitename1.pem
+
+cat CERT2.CRT_PATH [CERT2_MID.crt_PATH] PRIVATE2.key_PATH > websitename2.pem
+```
 
 
-<a href="#1-concatanate-each-certifications-files-to-one-file"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_1.-concatanate-each-certifica-v1.md  product = page.collection %}
-<a href="#2-upload-them-to-tmp-of-your-server"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_2.-upload-them-to--v1.md  product = page.collection %}
-<a href="#3-login-to-your-haproxy-server"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_3.-login-to-your-haproxy-serv-v1.md  product = page.collection %}
-<a href="#4-copy-the-files-to-certification-files-from-tmp-to-their-directory"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_4.-copy-the-files-to-certific-v1.md  product = page.collection %}
-<a href="#5-change-the-settings-in-your-haproxy-config"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_5.-change-the-settings-in-you-v1.md  product = page.collection %}
-<a href="#note"></a>{% include _inlines/Tutorials/common/2015-09-02-multi-cert_haproxy/2015-09-02-multi-cert_haproxy_note-v1.md  product = page.collection %}
+
+
+### 2. Upload them to /tmp of your server
+
+```
+cx upload -s stack_name --server haproxy_server_name websitename1.pem_PATH websitename1.pem
+cx upload -s stack_name --server haproxy_server_name websitename2.pem_PATH websitename2.pem
+```
+
+
+
+
+### 3. Login to your HAproxy server
+
+```
+cx ssh -s stack_name haproxy_server_name
+```
+
+
+
+
+### 4. Copy the files to certification files from /tmp to their directory
+
+```
+sudo cp /tmp/websitename1.pem /etc/ssl/private/websitename1.pem
+sudo cp /tmp/websitename2.pem /etc/ssl/private/websitename2.pem
+```
+
+
+
+
+### 5. Change the settings in your HAproxy config
+
+In th UI Find the following line in your HAproxy config page:
+
+`bind 0.0.0.0:{{port[0]}} ssl crt` 
+
+and chenge it to:
+
+`bind 0.0.0.0:{{port[0]}} ssl crt websitename1.pem crt websitename2.pem`
+
+
+
+### Note
+
+Make sure websitename1.pem and websitename2.pem are the same name as the filenames you have under `/etc/ssl/private/` .
+
+You are all set.
+

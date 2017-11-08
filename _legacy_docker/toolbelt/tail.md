@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "Usage", "Parameters", "Example" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/tail/tail_this-will-run-a-linux-tail-command-on-the-specified-se-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/tail/tail_usage-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/tail/tail_parameters-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/tail/tail_example-v1.md" ]
 layout: post
 template: one-col
 title: Toolbelt tail command
@@ -8,13 +7,31 @@ categories: Toolbelt
 lead: ""
 legacy: true
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+### Usage
+
+```
+$ cx tail [-s <stack>] <server name>|<server ip>|<server role> <log filename>
+```
 
 
-<a href="#usage"></a>{% include _inlines/Toolbelt/common/tail/tail_usage-v1.md  product = page.collection %}
-<a href="#parameters"></a>{% include _inlines/Toolbelt/common/tail/tail_parameters-v1.md  product = page.collection %}
-<a href="#example"></a>{% include _inlines/Toolbelt/common/tail/tail_example-v1.md  product = page.collection %}
+### Parameters
+
+At least one of the optional parameters are necessary in order to identify which server to run the command on.
+
+|		Parameter 		   |	Default		|   Description    |
+|--------------------------|:--------------:| ----------------:|
+|stack 					   |		—		| Name of the stack|
+|server name (optional)    | 	—			| Name of the server to access |
+|server ip (optional)      | 	—			| IP of the server to access |
+|server role (optional)    | 	—			| Role of the server to access (eg. web) |
+|log filename			   |		—		| The logfile to tail (eg. nginx_error.log) |
+
+### Example
+
+```
+$ cx tail -s "My Awesome App" web nginx_error.log
+```

@@ -9,8 +9,6 @@ permalink: /:collection/:categories/index.html
 ---
 
 Cloud 66 Docker supports the following database features:
-
-
 - [MySQL](mysql)
 - [PostgreSQL](postgresql)
 - [Redis](redis)

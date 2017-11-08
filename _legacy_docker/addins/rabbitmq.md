@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "What is RabbitMQ?", "Add RabbitMQ" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddIns/common/rabbitmq/rabbitmq_what-is-rabbitmq-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddIns/common/rabbitmq/rabbitmq_add-rabbitmq-v1.md" ]
 layout: post
 template: one-col
 title: RabbitMQß
@@ -8,12 +7,14 @@ categories: addins
 lead: ""
 legacy: true
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+### What is RabbitMQ?
+[RabbitMQ](http://www.rabbitmq.com) is a powerful open source message broker, and it's easy to add to your stack as an add-in.
 
 
-<a href="#what-is-rabbitmq"></a>{% include _inlines/AddIns/common/rabbitmq/rabbitmq_what-is-rabbitmq-v1.md  product = page.collection %}
-<a href="#add-rabbitmq"></a>{% include _inlines/AddIns/common/rabbitmq/rabbitmq_add-rabbitmq-v1.md  product = page.collection %}
+## Add RabbitMQ
+To add RabbitMQ to your stack, access the add-ins menu, click _RabbitMQ_ and choose the size of your new server.
+

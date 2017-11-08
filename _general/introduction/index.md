@@ -18,3 +18,4 @@ We recommand these articles in order to get an insight into what Cloud 66 does:
 - [PCI Compliance](pci-compliance.html)
 - [Terminology](terminology.html)
 - [FAQs](faq.html)
+

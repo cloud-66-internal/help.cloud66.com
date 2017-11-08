@@ -1,4 +1,4 @@
-<!-- usedin: [ _legacy_docker/AddIns/glusterfs-v1.md, _maestro/AddIns/glusterfs-v1.md, _node/addins/glusterfs-v1.md, _rails/AddIns/glusterfs-v1.md] -->
+
 
 
 ## How do I add GlusterFS to my stack?

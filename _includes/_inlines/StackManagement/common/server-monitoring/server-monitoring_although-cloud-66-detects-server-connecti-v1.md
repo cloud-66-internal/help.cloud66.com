@@ -1,4 +1,4 @@
-<!-- usedin: [ _legacy_docker/stack-management/server-monitoring-v1.md, _maestro/stack-management/server-monitoring-v1.md, _node/stack-management/server-monitoring-v1.md, _rails/stack-management/server-monitoring-v1.md] -->
+
 
 
 Although Cloud 66 detects server connectivity issues, we don't currently detect application states in the dashboard.

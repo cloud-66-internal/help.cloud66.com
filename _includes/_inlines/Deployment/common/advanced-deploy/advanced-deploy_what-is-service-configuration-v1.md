@@ -1,4 +1,4 @@
-<!--  usedin: [ _legacy_docker/getting-started/advanced-deploy-v1.md, _node/getting-started/advanced-deploy-v1.md, _rails/getting-started/advanced-deploy-v1.md, _skycap/getting-started/advanced-deploy-v1.md] -->
+
 
 
 ## What is service configuration?

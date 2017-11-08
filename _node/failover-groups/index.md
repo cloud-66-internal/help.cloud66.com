@@ -8,6 +8,4 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-
-
 - [Failover Groups](failover-groups.html)

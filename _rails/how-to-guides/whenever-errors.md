@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "Problem", "Resolution" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2040-09-26-whenever-errors/2040-09-26-whenever-errors_problem-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2040-09-26-whenever-errors/2040-09-26-whenever-errors_resolution-v1.md" ]
 layout: post
 template: one-col
 title: Whenever cron errors
@@ -8,12 +7,24 @@ categories: how-to-guides
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+## Problem
+The Whenever Schedules cause schedules to execute within a crontab context, however the context doesn't have access to the full PATH.
+You may see output from your cron jobs that looks similar to:
+
+```
+/bin/bash: bundle: command not found
+```
 
 
-<a href="#problem"></a>{% include _inlines/Tutorials/common/2040-09-26-whenever-errors/2040-09-26-whenever-errors_problem-v1.md  product = page.collection %}
-<a href="#resolution"></a>{% include _inlines/Tutorials/common/2040-09-26-whenever-errors/2040-09-26-whenever-errors_resolution-v1.md  product = page.collection %}
+
+## Resolution
+Simply add the following line to the top of your *config/schedule.rb* file (then commit it, push it and redeploy your stack):
+
+```
+env :PATH, ENV['PATH']
+```
+

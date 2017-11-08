@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "Commands", "Process names convention", "Build your own pill file", "Status", "Stop", "Start", "Load a process", "Unload a process", "Note" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_commands-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_process-names-convention-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_build-your-own-pill-file-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_status-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_stop-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_start-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_load-a-process-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_unload-a-process-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_note-v1.md" ]
 layout: post
 template: one-col
 title: Managing processes with Bluepill
@@ -8,19 +7,103 @@ categories: how-to-guides
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+## Commands
+
+When [bluepill](https://github.com/bluepill-rb/bluepill) is installed on your server, you can control your processes manually from your server command-line interface.
+
+A process Bluepill config is saved into a `.pill` file. Bluepill loads pill files for each process it manages. See also [Bluepill gem page](http://rubygems.org/gems/bluepill).
+
+When you add processes through Cloud 66 interface, they will be managed by Cloud 66. For instance if you restart your server, they will be automatically restart aswell.
 
 
-<a href="#commands"></a>{% include _inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_commands-v1.md  product = page.collection %}
-<a href="#process-names-convention"></a>{% include _inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_process-names-convention-v1.md  product = page.collection %}
-<a href="#build-your-own-pill-file"></a>{% include _inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_build-your-own-pill-file-v1.md  product = page.collection %}
-<a href="#status"></a>{% include _inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_status-v1.md  product = page.collection %}
-<a href="#stop"></a>{% include _inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_stop-v1.md  product = page.collection %}
-<a href="#start"></a>{% include _inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_start-v1.md  product = page.collection %}
-<a href="#load-a-process"></a>{% include _inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_load-a-process-v1.md  product = page.collection %}
-<a href="#unload-a-process"></a>{% include _inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_unload-a-process-v1.md  product = page.collection %}
-<a href="#note"></a>{% include _inlines/Tutorials/Rails/1967-09-26-bluepill/1967-09-26-bluepill_note-v1.md  product = page.collection %}
+
+## Process names convention
+
+Cloud 66 processes beging with "cloud66\_" and user processes with "user\_"
+
+
+
+## Build your own pill file
+
+To build your own process with Bluepill, please refer to this [page](https://github.com/bluepill-rb/bluepill).
+
+Don't forget to add a log file in your pill config. For instance:
+
+```
+process.stdout = process.stderr = "<STACK_PATH>/log/process.log"
+```
+
+
+
+
+## Status
+
+To get all processes status:
+
+```
+$ sudo bluepill status
+```
+
+To get a specific process status:
+
+```
+$ sudo bluepill <process_name> status
+```
+
+
+
+
+## Stop
+
+To stop a specific process:
+
+```
+$ sudo bluepill <process_name> stop
+```
+
+
+
+
+## Start
+
+To start a specific process:
+
+```
+$ sudo bluepill <process_name> start
+```
+
+
+
+
+## Load a process
+
+To load a `.pill` file into bluepill:
+
+```
+$ sudo bluepill load /etc/bluepill/autoload/<process_name>.pill
+```
+
+
+
+
+## Unload a process
+
+To quit a process from bluepill:
+
+```
+$ sudo bluepill <process_name> quit
+```
+
+
+
+
+
+## Note
+
+Also remember that we configure the pill files to log to `<STACK_PATH>/log` folder.
+
+

@@ -1,4 +1,4 @@
-<!-- usedin: [ _general/Partners/partner-integration-v1.md] -->
+
 
 
 Throughout this document, "user" is a Cloud 66 customer and "partner" is a Cloud 66 integration partner. 

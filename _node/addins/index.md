@@ -7,8 +7,6 @@ lead: Stack Add-Ins for stacks with Cloud 66 for Node
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
-
-
 - [Add-In Implementation](add-in-implementation)
 - [Database Backups](database-backups)
 - [SSL Certificate](ssl)
@@ -23,3 +21,4 @@ permalink: /:collection/:categories/index.html
 - [Redis](redis)
 - [Memcached](memcached)
 - [Custom Server](custom-server)
+

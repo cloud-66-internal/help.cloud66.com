@@ -8,8 +8,6 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-
-
 - [Multi Region Stack](1900-09-26-multi-region-stack)
 - [Manually add an SSL Certificate to a Load Balancer](1900-09-26-ssl-termination-on-load-balancers)
 - [Strong SSL Security on Nginx](1900-10-10-nginx-ssl-ciphers)
@@ -52,3 +50,4 @@ permalink: /:collection/:categories/index.html
 - [ssl Certificate Issues](2017-02-26-ssl-certificate-issues)
 - [How to Add Management Certificates in Azure new Portal](2017-03-12-azure-old-portal)
 - [Manage your stacks from Slack with ChatOps](manage-stacks-chatops)
+

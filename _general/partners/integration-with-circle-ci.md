@@ -1,5 +1,4 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Partners/General/integration-with-circle-ci/integration-with-circle-ci_you-can-use-circle-ci-to-accompl-v1.md" ]
 layout: post
 template: one-col
 title: Integration with Circle CI
@@ -7,11 +6,20 @@ categories: Partners
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "General" %}
 
-{% include _inlines/Partners/General/integration-with-circle-ci/integration-with-circle-ci_you-can-use-circle-ci-to-accompl-v1.md  product = page.collection %}
+You can use Circle CI to accomplish continuous integration and deployment of your application together with Cloud 66.
+
+To get your build hooked up to Circle CI, you need to use the [redeployment hook](/deployment/redeployment-hooks) provided by Cloud 66:
+
+Access the _stack information_ page:
+
+![Stack info](http://assets.cloud66.com/help/images/stack_information.png)
+
+Copy the redeployment hook:
+
+![Redeployment hook](http://assets.cloud66.com/help/images/stack_info_overlay.png)
+
+Please refer to the [Circle CI documentation](https://circleci.com/docs/configuration) for more information.

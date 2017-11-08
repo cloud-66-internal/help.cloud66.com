@@ -1,4 +1,4 @@
-<!--  usedin: [ _rails/Tutorials/2014-04-26-gem-dependencies-v1.md] -->
+
 
 
 Depending on which gems you're using together with a specific Ruby version, you may see dependency issues such as:

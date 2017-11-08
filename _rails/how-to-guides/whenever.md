@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "Note", "Target all servers", "Target your web server(s)", "Target your database server", "Target your Redis server", "Target the first server in a server group", "Note" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_if-you-have-the-whenever-gemhttps-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_note-1-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_target-all-servers-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_target-your-web-servers-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_target-your-database-server-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_target-your-redis-server-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_target-the-first-server-in-a-server-gro-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_note-v1.md" ]
 layout: post
 template: one-col
 title: Whenever
@@ -8,17 +7,98 @@ categories: how-to-guides
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+## Note
+
+Whenever jobs will be run on all your app servers by default - but you can also be more specific about where they should run.
 
 
-<a href="#note"></a>{% include _inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_note-1-v1.md  product = page.collection %}
-<a href="#target-all-servers"></a>{% include _inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_target-all-servers-v1.md  product = page.collection %}
-<a href="#target-your-web-server-s"></a>{% include _inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_target-your-web-servers-v1.md  product = page.collection %}
-<a href="#target-your-database-server"></a>{% include _inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_target-your-database-server-v1.md  product = page.collection %}
-<a href="#target-your-redis-server"></a>{% include _inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_target-your-redis-server-v1.md  product = page.collection %}
-<a href="#target-the-first-server-in-a-server-group"></a>{% include _inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_target-the-first-server-in-a-server-gro-v1.md  product = page.collection %}
-<a href="#note"></a>{% include _inlines/Tutorials/common/2013-01-20-whenever/2013-01-20-whenever_note-v1.md  product = page.collection %}
+### Target all servers
+
+```
+env :PATH, ENV['PATH']
+
+every 10.minutes do
+  command "a_dummy_command"
+end
+every 45.minutes do
+  command "a_dummy_command"
+end
+```
+
+
+
+
+### Target your web server(s)
+
+```
+env :PATH, ENV['PATH']
+
+every 10.minutes, :roles => [:app] do
+  rake "test:example"
+end
+```
+
+
+
+
+### Target your database server
+
+```
+env :PATH, ENV['PATH']
+
+every 10.minutes, :roles => [:db] do
+  command "a_dummy_command"
+end
+```
+
+
+
+
+### Target your Redis server
+
+```
+env :PATH, ENV['PATH']
+
+every 10.minutes, :roles => [:redis] do
+  command "a_dummy_command"
+end
+```
+
+
+
+
+### Target the first server in a server group
+
+```
+env :PATH, ENV['PATH']
+
+def primary_runner(command)
+  runner("if ENV['PRIMARY'] == 'true'; #{command}; end")
+end
+
+every 15.minutes, roles: [:app] do
+  primary_runner 'MyClass.some_job' # runs on primary app server only
+  runner 'MyClass.another_job' # runs on all app servers
+end
+```
+
+This will only run _MyClass.some_job_ on your primary app server, and _MyClass.another_job_ on all app servers. It checks whether or not each server
+has the _PRIMARY_ environment variable set to true.
+
+
+
+## Note
+
+You should include the line **env :PATH, ENV['PATH']** at the top of your _config/schedule.rb_ file to avoid command not found errors.
+
+ 
+You can view your generated crontab jobs with:
+
+```
+crontab -l
+```
+

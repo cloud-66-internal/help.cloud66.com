@@ -9,8 +9,6 @@ permalink: /:collection/:categories/index.html
 ---
 
 Cloud 66 Maestro supports the following stack management features:
-
-
 - [Server Monitoring](server-monitoring.html)
 - [Service Monitoring](service-monitoring.html)
 - [Network Configuration](network-configuration.html)

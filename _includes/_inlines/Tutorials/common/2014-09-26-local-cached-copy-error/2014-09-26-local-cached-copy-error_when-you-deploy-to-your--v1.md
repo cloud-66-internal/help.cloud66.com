@@ -1,4 +1,4 @@
-<!--  usedin: [ _rails/Tutorials/2014-09-26-local-cached-copy-error-v1.md] -->
+
 
 
 When you deploy to your web servers, a cache-copy of your application is automatically kept in the `$STACK_BASE/shared/cached-copy` folder.

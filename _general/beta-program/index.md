@@ -11,3 +11,4 @@ permalink: /:collection/:categories/index.html
 Cloud 66 Beta Program related articles:
 
 - [Cloud 66 Beta Program](cloud-66-beta-program.html)
+

@@ -1,6 +1,5 @@
 ---
 menuheaders: [ " Which frameworks do we support? " ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Node/supported-frameworks/supported-frameworks_which-framework-do-we-support--v1.md" ]
 layout: post
 template: one-col
 title: Supported Node.js frameworks
@@ -8,11 +7,25 @@ categories: Deployment
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+###  Which frameworks do we support? 
 
+During the analyse phase of your codebase we take a look at your `package.json` and detect the framework you are using. The following frameworks are supported and can be deployed with Cloud 66.
 
-<a href="#which-frameworks-do-we-support"></a>{% include _inlines/Deployment/Node/supported-frameworks/supported-frameworks_which-framework-do-we-support--v1.md  product = page.collection %}
+*    Express
+*    Meteor
+*    Keystone
+*    Loopback
+*    Restify
+*    Actionhero
+*    Hapi
+*    Socket.io
+*    Koa
+
+If your favorite framework isn't supported, you can still deploy your application using this 
+[guidelines](application-settings-node.html)
+.
+

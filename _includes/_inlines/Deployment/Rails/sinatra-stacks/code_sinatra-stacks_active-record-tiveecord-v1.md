@@ -1,4 +1,4 @@
-<!-- usedin: [ _includes/_inlines/Deployment/Rails/sinatra-stacks/sinatra-stacks_declarative-v1.md] -->
+
 
 ```
 ActiveRecord::Base.configurations[:development] = {

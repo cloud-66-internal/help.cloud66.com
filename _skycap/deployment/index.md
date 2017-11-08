@@ -7,8 +7,6 @@ lead: Building with Cloud 66 Skycap for Deployment
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
-
-
 - [Introduction to Docker Deployments](docker-introduction)
 - [Building your Docker Service](building-your-service)
 - [Docker Service Configuration](docker-service-configuration)
@@ -33,3 +31,4 @@ permalink: /:collection/:categories/index.html
 - [Multi Tenancy](multi-tenancy)
 - [Redeployment Hooks](redeployment-hook)
 - [Reserved Tags](reserved-tags)
+

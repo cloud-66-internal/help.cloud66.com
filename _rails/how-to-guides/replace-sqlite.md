@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "Instructions", "MySQL", "PostgreSQL" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_instructions-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_mysql-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_postgresql-v1.md" ]
 layout: post
 template: one-col
 title: Replacing SQLite with MySQL or PostgreSQL
@@ -8,13 +7,30 @@ categories: how-to-guides
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+## Instructions
+Switching to another SQL-based database is easy, and the following instructions show you how to switch to MySQL or PostgreSQL in five simple steps.
 
 
-<a href="#instructions"></a>{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_instructions-v1.md  product = page.collection %}
-<a href="#mysql"></a>{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_mysql-v1.md  product = page.collection %}
-<a href="#postgresql"></a>{% include _inlines/Tutorials/Rails/1989-09-26-replace-sqlite/1989-09-26-replace-sqlite_postgresql-v1.md  product = page.collection %}
+## MySQL
+
+1.  Replace `adapter: sqlite` with `adapter: mysql2` in your config/database.yml file.
+2.  Replace `gem 'sqlite*'` with `gem 'mysql2'` in your Gemfile.
+3.  Run `bundle install`.
+4.  Commit and check changes in.
+5.  Rebuild your stack.
+
+
+## PostgreSQL
+
+1.  Replace `adapter: sqlite` with `adapter: postgresql` in your config/database.yml file.
+2.  Replace `gem 'sqlite*'` with `gem 'pg'` in your Gemfile.
+3.  Run `bundle install`.
+4.  Commit and check changes in.
+5.  Rebuild your stack.
+
+More information about [databases](http://help.cloud66.com/database-management/database-management) supported by Cloud 66.
+

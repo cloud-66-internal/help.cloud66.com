@@ -1,4 +1,4 @@
-<!-- usedin: [ _legacy_docker/stack-management/service-pause-resume-v1.md, _maestro/stack-management/service-pause-resume-v1.md] -->
+
 
 
 ## Pause and resume services

@@ -35,3 +35,4 @@ Cloud 66 for Rails, supports the following deployment features:
 - [Easy Deploy Repositories](easy-deploy-repos.html)
 - [Padrino Stacks](padrino-stacks.html)
 - [Sinatra Stacks](sinatra-stacks.html)
+

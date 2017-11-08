@@ -1,4 +1,4 @@
-<!--  usedin: [ _rails/Tutorials/1950-09-26-implementing-faye-v1.md] -->
+
 
 
 ### 3. RAILS_ROOT/Procfile

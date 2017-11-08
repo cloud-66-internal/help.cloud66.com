@@ -1,4 +1,4 @@
-<!-- usedin: [ _general/Partners/partner-integration-v1.md] -->
+
 
 
 ### Step 1 - Call Cloud 66 SSO endpoint

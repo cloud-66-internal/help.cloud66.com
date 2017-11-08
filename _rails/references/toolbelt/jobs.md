@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "Job management", "List jobs", "Usage", "Parameters", "Example", "Run a job on demand", "Usage", "Parameters", "Examples" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/jobs/jobs_job-management-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/jobs/jobs_list-jobs-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/jobs/jobs_usage-1-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/jobs/jobs_parameters-1-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/jobs/jobs_example-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/jobs/jobs_run-a-job-on-demand-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/jobs/jobs_usage-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/jobs/jobs_parameters-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/jobs/jobs_examples-v1.md" ]
 layout: post
 template: one-col
 title: Toolbelt job management
@@ -8,19 +7,69 @@ categories: Toolbelt
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+## Job management
+
+These commands allow you to list jobs and run a job immediately.
+
+## List jobs
+
+This command lists all jobs on a stack or a server.
 
 
-<a href="#job-management"></a>{% include _inlines/Toolbelt/common/jobs/jobs_job-management-v1.md  product = page.collection %}
-<a href="#list-jobs"></a>{% include _inlines/Toolbelt/common/jobs/jobs_list-jobs-v1.md  product = page.collection %}
-<a href="#usage"></a>{% include _inlines/Toolbelt/common/jobs/jobs_usage-1-v1.md  product = page.collection %}
-<a href="#parameters"></a>{% include _inlines/Toolbelt/common/jobs/jobs_parameters-1-v1.md  product = page.collection %}
-<a href="#example"></a>{% include _inlines/Toolbelt/common/jobs/jobs_example-v1.md  product = page.collection %}
-<a href="#run-a-job-on-demand"></a>{% include _inlines/Toolbelt/common/jobs/jobs_run-a-job-on-demand-v1.md  product = page.collection %}
-<a href="#usage"></a>{% include _inlines/Toolbelt/common/jobs/jobs_usage-v1.md  product = page.collection %}
-<a href="#parameters"></a>{% include _inlines/Toolbelt/common/jobs/jobs_parameters-v1.md  product = page.collection %}
-<a href="#examples"></a>{% include _inlines/Toolbelt/common/jobs/jobs_examples-v1.md  product = page.collection %}
+### Usage
+
+```
+$ cx jobs list [-s <stack>] --server <server name>|<server ip>|<server role> --service <service name>
+```
+
+
+### Parameters
+|		Parameter 		   |	Default		|   Description    |
+|--------------------------|:--------------:| ----------------:|
+|stack 					   |		—		|Name of the stack | 
+|server name (optional)    | 	—		    | Name of the target server|
+|server ip (optional)	   |	—			| IP of the server to access |
+|server role (optional)	   |	—			| Role of the server to access (eg. web)|
+|service name (optional)   |	—			| Name of the target service |
+|e (optional)	       	   |	 	—		| Your stack environment |
+
+### Example
+
+```
+$ cx jobs list -s My_Awesome_App
+$ cx jobs list -s My_Awesome_App --server dingo
+$ cx jobs list -s My_Awesome_App --server web -e production
+```
+
+
+## Run a job on demand
+
+Use this command to run a job from the command line.
+
+
+### Usage
+
+```
+$ cx job list [-s <stack>] --arg <arg> <job name>
+```
+
+
+
+
+### Parameters
+|		Parameter 		   |	Default		|   Description    |
+|--------------------------|:--------------:| ----------------:|
+|stack 					   |		—		|Name of the stack | 
+|server name 	 		   | 	—		    | Name of the job to run|
+|arg (optional)	 		   |	—			| Parameters you would like to pass job ( [more info]() ) |
+
+### Examples
+
+```
+$ cx job run -s "My Awesome App" my_job
+$ cx job run -s "My Awesome App" --arg "arg1" --arg "arg2" my_job
+```

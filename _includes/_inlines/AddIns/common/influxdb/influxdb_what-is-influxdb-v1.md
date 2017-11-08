@@ -1,4 +1,4 @@
-<!-- usedin: [ _legacy_docker/AddIns/influxdb-v1.md, _maestro/AddIns/influxdb-v1.md, _node/addins/influxdb-v1.md, _rails/AddIns/influxdb-v1.md] -->
+
 
 
 ### What is InfluxDB?

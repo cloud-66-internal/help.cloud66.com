@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "Status and uptime", "Latest updates" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/unknown/General/cloud66-status/cloud66-status_status-and-uptime-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/unknown/General/cloud66-status/cloud66-status_latest-updates-v1.md" ]
 layout: post
 template: one-col
 title: Cloud66 Status
@@ -8,12 +7,19 @@ categories: introduction
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+### Status and uptime
+You can see real-time monitoring of our systems on our [uptime page](http://uptime.cloud66.com), and any issues will be mentioned on our [status page](http://status.cloud66.com/).
+
+This is an uptime report for our dashboard during the last 30 days:
+[![Uptime Report for Dashboard: Last 30 days](https://share.pingdom.com/banners/b5a85972 "Uptime Report for Dashboard: Last 30 days")](http://uptime.cloud66.com)
 
 
-<a href="#status-and-uptime"></a>{% include _inlines/unknown/General/cloud66-status/cloud66-status_status-and-uptime-v1.md  product = page.collection %}
-<a href="#latest-updates"></a>{% include _inlines/unknown/General/cloud66-status/cloud66-status_latest-updates-v1.md  product = page.collection %}
+## Latest updates
+
+We also publish [live status updates on Twitter](https://twitter.com/cloud66status), the latest of which you can see here:
+
+[Tweets by @cloud66status](https://twitter.com/cloud66status)

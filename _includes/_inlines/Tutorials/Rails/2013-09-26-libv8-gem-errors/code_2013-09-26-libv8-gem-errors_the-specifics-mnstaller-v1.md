@@ -1,4 +1,4 @@
-<!-- usedin: [ _includes/_inlines/Tutorials/Rails/2013-09-26-libv8-gem-errors/2013-09-26-libv8-gem-errors_the-specifics-v1.md] -->
+
 
 ```
 Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.

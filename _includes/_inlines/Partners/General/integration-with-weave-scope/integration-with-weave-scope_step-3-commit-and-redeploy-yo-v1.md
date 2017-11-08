@@ -1,4 +1,4 @@
-<!-- usedin: [ _general/Partners/integration-with-weave-scope-v1.md] -->
+
 
 
 ## Step 3: Commit and redeploy your stack

@@ -19,3 +19,4 @@ permalink: /:collection/:categories/index.html
 - [Cloud66 Badge](cloud66-badge)
 - [Browser Requirements](browser-requirements)
 - [Security Wall of Fame](security-wall-of-fame)
+

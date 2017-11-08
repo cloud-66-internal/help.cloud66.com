@@ -1,4 +1,4 @@
-<!--  usedin: [ _legacy_docker/Tutorials/2016-04-07-logs-for-containers-v1.md, _maestro/Tutorials/2016-04-07-logs-for-containers-v1.md] -->
+
 
 
 If you are confused why you can see your logs in [livelogs](http://help.cloud66.com/managing-your-stack/live-logs) but not under `/var/log/containers/` even after introducing `log_folder` or if you need to work with your logs this article is for you.

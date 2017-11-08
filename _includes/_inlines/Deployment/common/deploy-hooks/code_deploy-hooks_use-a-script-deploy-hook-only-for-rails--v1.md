@@ -1,4 +1,4 @@
-<!-- usedin: [ _includes/_inlines/Deployment/common/deploy-hooks/deploy-hooks_use-a-script-deploy-hook-only-for-rails-v1.md] -->
+
 
 ```
 production: # Environment

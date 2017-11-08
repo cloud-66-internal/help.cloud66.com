@@ -7,7 +7,6 @@ lead: Using Node with Cloud66
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
-
 {% include category_nav.html %}
 
 - [Getting Started](getting-started)
@@ -19,3 +18,4 @@ permalink: /:collection/:categories/index.html
 - [Failover Groups](failover-groups)
 - [Tutorials](tutorials)
 - [Troubleshooting](troubleshooting)
+

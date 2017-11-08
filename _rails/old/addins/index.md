@@ -24,3 +24,4 @@ Cloud 66 for Rails supports the following add-ons features:
 - [Redis](redis.html)
 - [Memcached](memcached.html)
 - [Custom Server](custom-server.html)
+

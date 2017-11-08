@@ -1,4 +1,4 @@
-<!-- usedin: [ _legacy_docker/AddIns/docker-server-task-v1.md, _maestro/AddIns/docker-server-task-v1.md] -->
+
 
 
 To add this add-in, simply click on the _+_ button on the add-ins menu of your stack page, which will show you a variety of add-ins for your stack.

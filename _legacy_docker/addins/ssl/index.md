@@ -1,14 +1,19 @@
 ---
 menuheaders: [ "About SSL Certificate", "Standard SSL Certificate", "Let's Encrypt SSL Certificate" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddIns/common/ssl/ssl_contents-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddIns/common/ssl/ssl_about-ssl-certificate-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddIns/common/ssl/ssl_standard-ssl-certificate-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddIns/common/ssl/ssl_lets-encrypt-ssl-certificate-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddIns/common/ssl/ssl_note-v1.md" ]
 layout: post
 template: one-col
 title: SSL certificate
 categories: addins
 lead: ""
 legacy: true
-keywords: []
 permalink: /:collection/:path
 ---
 
-<a href="#about-ssl-certificate"></a>{% include _inlines/AddIns/common/ssl/ssl_about-ssl-certificate-v1.md  product = page.collection %}
+## About SSL Certificate
+
+SSL is an acronym for Secure Sockets Layer, an encryption technology that was created by Netscape. SSL creates an encrypted connection between your web server and your visitors' web browser allowing for private information to be transmitted without the problems of eavesdropping, data tampering, or message forgery.
+
+Cloud 66 provides two types of SSL:
+- [Standard SSL Certificate](standard-ssl.html)
+- [Let's Encrypt](https://help.cloud66.works/{{include.product}}/addins/ssl/Lets-encrypt.html)
+

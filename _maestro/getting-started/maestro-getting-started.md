@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "What is Maestro?", "Getting Started", "Setting up a Docker Deployment", "Deployment Setup", "Configuring Services", "Container Network Configuration", "Adding Data Sources", "Configuring Servers", "Deployment", "Advanced Features" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_setting-up-a-docker-depl-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_deployment-setup-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_configuring-services-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_container-network-config-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_adding-data-sources-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_configuring-servers-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_deployment-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_advanced-features-v1.md" ]
 layout: post
 template: one-col
 title: Getting Started with Maestro
@@ -8,20 +7,107 @@ categories: getting-started
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
-{% include _inlines/GettingStarted/maestro/maestro-notice-1.md  product = page.collection %}
-<a href="#what-is-maestro"></a>{% include _inlines/GettingStarted/maestro/what-is-maestro.md  product = page.collection %}
-<a href="#getting-started"></a>{% include _inlines/GettingStarted/maestro/getting-started.md  product = page.collection %}
-{% include _inlines/GettingStarted/maestro/ready-to-deploy.md  product = page.collection %}
-<a href="#setting-up-a-docker-deployment"></a>{% include _inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_setting-up-a-docker-depl-v1.md  product = page.collection %}
-<a href="#deployment-setup"></a>{% include _inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_deployment-setup-v1.md  product = page.collection %}
-<a href="#configuring-services"></a>{% include _inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_configuring-services-v1.md  product = page.collection %}
-<a href="#container-network-configuration"></a>{% include _inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_container-network-config-v1.md  product = page.collection %}
-<a href="#adding-data-sources"></a>{% include _inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_adding-data-sources-v1.md  product = page.collection %}
-<a href="#configuring-servers"></a>{% include _inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_configuring-servers-v1.md  product = page.collection %}
-<a href="#deployment"></a>{% include _inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_deployment-v1.md  product = page.collection %}
-<a href="#advanced-features"></a>{% include _inlines/GettingStarted/common/docker-getting-started-deployments/docker-getting-started-deployments_advanced-features-v1.md  product = page.collection %}
+<div class="notice notice-warning">
+Maestro is part of the new Cloud 66 product line. If you are using Cloud 66 for Docker, you will get all Maestro benefits without the need to switch to using Maestro.
+</div>
+
+## What is Maestro?
+
+Maestro is a full stack Application Management service. It takes care of building your infrastructure (servers, load balancers, etc) for you on your own servers in the cloud. It also manages deployment and maintenance of your entire stack. Maestro can be seamlessly integrated with Skycap and use the images built by Skycap to deploy your application in any environment. 
+
+## Getting Started
+
+You can deploy your app to any of your favorite cloud providers or to your own registered servers with Maestro.
+
+To get started, create a new Maestro stack add your services or use a Skycap stack and click on the Start Deployment button.
+
+
+<div class="notice notice-warning">
+Ready to deploy? Setup a new deployment to a public cloud provider or your own registered server.
+</div>
+
+
+## Setting up a Docker Deployment
+ Once all of the services have been successfully built you'll see the option to Setup a new deployment. You can deploy your app to any of your favorite cloud providers or to your own [registered servers](http://help.cloud66.com/deployment/registered-servers).
+
+    
+
+        
+
+
+
+## Deployment Setup
+
+The first step in the deployment process is to Choose an [environment](https://help.cloud66.com/getting-started/stack-environments):
+
+*   Development
+*   QA
+*   Staging
+*   Production
+
+![Build a new docker stack from the dashboard](/images/guides/docker_onboarding/docker_guide_start_deploy_modal.png)
+    
+
+
+
+## Configuring Services
+
+In the example below we have a single Rails service. In this case it's been pulled from an image. The previous section of this guide explains how to [add and build images for your services](https://help.cloud66.works/legacy_docker/docker-getting-started-building-your-images.html).
+
+The Rails service is a web application so we need to configure it to handle web traffic.
+
+ ![Build a new docker stack from the dashboard](/images/guides/docker_onboarding/docker_guide_services.png)
+
+
+## Container Network Configuration
+
+The service will run inside a container, we need to configure it to respond to HTTP traffic. A standard web server listens on port 80 for HTTP traffic and 443 for HTTPS traffic.
+
+A Rails app listens to port 3000 so we should map the container port **3000** to the public Internet ports **80**  and **443**. Click the connector icon (circled in red above) to update the **container port** and **public internet** ports.
+ ![Configuring docker container and public ports](/images/guides/docker_onboarding/container_ports_animated.gif)
+Containers can also serve non HTTP traffic. TCP and UDP protocols are also supported. [Learn more about Container Port Mapping](http://help.cloud66.com/building-your-stack/container-port-mapping)
+
+
+## Adding Data Sources
+
+The Rails app also needs a database, lets deploy this to a separate MySQL server. First we add another server to the stack and then we should select MySQL as a Data Source
+
+![Add another server](/images/guides/docker_onboarding/docker_guide_add_server_animated.gif)
+    
+In this example we created a separate server for the database. If you have a low traffic site it's fine for your database to share with the Docker server.
+Lets add the MySQL Data Source, you can add as many Data Sources as your app requires.
+
+![Adding a MySQL datasource to a stck](/images/guides/docker_onboarding/docker_guide_add_datasource.png)
+
+Now the Rails app is configured to run in a container and we've setup a separate MySQL database server. All that remains is to decide what cloud provider to use and what server size and region we should deploy to.
+
+Remember, you can also deploy to your own servers. However you should first [add them as registered servers](http://help.cloud66.com/deployment/registered-servers).
+
+
+## Configuring Servers
+
+We need to choose a cloud provider for the deployment. For this example we'll use DigitalOcean and deploy the stack to the London region. The server size can be set by clicking on the cog icon displayed at the top right of each server.
+
+![image](/images/guides/docker_onboarding/docker_guide_target_cloud.png)
+![image](/images/guides/docker_onboarding/docker_guide_server_config.png)
+![Add another server](/images/guides/docker_onboarding/docker_guide_server_modal.png)
+
+[How to choose the right size server](https://help.cloud66.com/getting-started/choosing-server-size).
+
+## Deployment
+
+Now everything is ready to go, just hit the deploy button. During the build and deployment process you can view the log to see what's happening behind the scenes.
+
+![image](/images/guides/docker_onboarding/docker_guide_deploying.gif)
+
+
+## Advanced Features
+
+ Information that defines how your application is deployed is accessible from _manifest.yml_. You can edit this file directly if you need to access [advanced deployment features](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html). For example advanced configuration of Cross-Origin Resource Sharing or Amazon Virtual Private Cloud and more.
+
+ [**← Previous: Building Images**] (docker-getting-started-building-images)
+

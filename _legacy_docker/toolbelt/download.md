@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "Download", "Usage", "Parameters", "Example" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/download/download_download-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/download/download_usage-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/download/download_parameters-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Toolbelt/common/download/download_example-v1.md" ]
 layout: post
 template: one-col
 title: Toolbelt download command
@@ -8,14 +7,33 @@ categories: Toolbelt
 lead: ""
 legacy: true
 
-keywords: []
 permalink: /:collection/:path
 ---
 
 
+## Download
+
+Use this command to download a file from the remote server to your local computer.
 
 
-<a href="#download"></a>{% include _inlines/Toolbelt/common/download/download_download-v1.md  product = page.collection %}
-<a href="#usage"></a>{% include _inlines/Toolbelt/common/download/download_usage-v1.md  product = page.collection %}
-<a href="#parameters"></a>{% include _inlines/Toolbelt/common/download/download_parameters-v1.md  product = page.collection %}
-<a href="#example"></a>{% include _inlines/Toolbelt/common/download/download_example-v1.md  product = page.collection %}
+### Usage
+
+```
+$ cx download [-s <stack>] [--server <server name>] [source file] [target directory]
+```
+If you don't specify a target directory, the file will be downloaded to your current local directory.
+
+
+### Parameters
+|		Parameter 		   |	Default		|   Description    |
+|--------------------------|:--------------:| ----------------:|
+|stack 					   |		—		|Name of the stack|
+|server name 	   | 	—		| Name of the server to access|
+|source file	   |	—	| The path to the file on your server |
+|target directory (optional)	   |	—	| Your local target path |
+
+### Example
+
+```
+$ cx download -s "My Awesome App" --server web /tmp/file.txt /tmp/file.txt
+```

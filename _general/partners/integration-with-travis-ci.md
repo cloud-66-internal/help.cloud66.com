@@ -1,5 +1,4 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Partners/General/integration-with-travis-ci/integration-with-travis-ci_you-can-use-travis-ci-to-accompl-v1.md" ]
 layout: post
 template: one-col
 title: Integration With Travis CI
@@ -7,11 +6,10 @@ categories: Partners
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "General" %}
 
-{% include _inlines/Partners/General/integration-with-travis-ci/integration-with-travis-ci_you-can-use-travis-ci-to-accompl-v1.md  product = page.collection %}
+You can use Travis CI to accomplish continuous integration and deployment of your application together with Cloud 66. To get your build hooked up to Travis CI, you need to use the [redeployment hook](/deployment/redeployment-hooks) provided by Cloud 66.
+
+Refer to the [Travis CI documentation for use with Cloud 66](http://docs.travis-ci.com/user/deployment/cloud66/) for more information.
