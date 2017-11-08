@@ -11,10 +11,3 @@ permalink: /:collection/:categories/index.html
 
 {% include category_nav.html %}
 
-- [Quickstarts](quickstarts)
-- [How-to Guides](how-to-guides)
-- [References](references)
-- [Concepts](concepts)
-- [Tutorials](tutorials)
-- [Resource](resources)
-
