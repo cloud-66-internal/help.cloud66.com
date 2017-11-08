@@ -8,7 +8,6 @@ lead: "Control your RabbitMQ Migrations on Cloud 66 Rails stacks"
 legacy: false
 recommendedName: [ "RabbitMQ with Rails", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html"]
-keywords: []
 permalink: /:collection/:path
 ---
 

@@ -6,7 +6,6 @@ title: Redeployment Hook
 categories: troubleshooting
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

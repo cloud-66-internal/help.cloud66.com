@@ -7,7 +7,6 @@ categories: Introduction
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 

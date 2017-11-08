@@ -6,7 +6,6 @@ title: Lets Encrypt
 categories: addins
 lead: ""
 legacy: false
-keywords: []
 recommendedName: [ "Standard SSL Certificate" ]
 recommendedLinks: [ "standard-ssl.html"]
 permalink: /:collection/:path

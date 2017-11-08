@@ -6,7 +6,6 @@ categories: addins
 lead: ""
 legacy: true
 
-keywords: []
 permalink: /:collection/:path
 ---
 

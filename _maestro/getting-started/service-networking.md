@@ -6,7 +6,6 @@ title: Service Networking
 categories: getting-started
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

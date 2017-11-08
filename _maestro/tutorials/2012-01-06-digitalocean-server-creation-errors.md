@@ -6,7 +6,6 @@ title: DigitalOcean server creation errors
 categories: Tutorials
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

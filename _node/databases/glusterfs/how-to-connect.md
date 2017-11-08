@@ -8,7 +8,6 @@ lead: "Customize your GlusterFS Configuration on Cloud 66 for node stacks"
 legacy: false
 recommendedName: [ "GlusterFS with Rails", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html"]
-keywords: []
 permalink: /:collection/:path
 ---
 

@@ -8,7 +8,6 @@ lead: ""
 legacy: false
 recommendedName: [ "Add a shell command", "Rake Tasks" ]
 recommendedLinks: [ "shell.html", "rake-task.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

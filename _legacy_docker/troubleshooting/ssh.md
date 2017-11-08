@@ -6,7 +6,6 @@ title: SSH
 categories: troubleshooting
 lead: ""
 legacy: true
-keywords: []
 permalink: /:collection/:path
 ---
 

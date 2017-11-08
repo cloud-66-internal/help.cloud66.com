@@ -8,7 +8,6 @@ lead: ""
 legacy: false
 recommendedName: [ "GlusterFS with Maestro", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

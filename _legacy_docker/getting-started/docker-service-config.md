@@ -6,7 +6,6 @@ title: Docker service configuration
 categories: getting-started
 lead: ""
 legacy: true
-keywords: []
 permalink: /:collection/:path
 ---
 

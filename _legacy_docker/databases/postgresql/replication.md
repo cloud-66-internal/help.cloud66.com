@@ -6,7 +6,6 @@ title: PostgreSQL Replication
 categories: Databases
 lead: ""
 legacy: true
-keywords: []
 permalink: /:collection/:path
 ---
 

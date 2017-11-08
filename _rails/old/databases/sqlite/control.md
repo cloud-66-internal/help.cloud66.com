@@ -8,7 +8,6 @@ lead: "Control your SQLite Migrations on Cloud 66 Rails stacks"
 legacy: false
 recommendedName: [ "SQLite with Rails", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html"]
-keywords: []
 permalink: /:collection/:path
 ---
 

@@ -8,7 +8,6 @@ lead: "Using MongoDB Environment Variables on Cloud 66 Rails stacks"
 legacy: false
 recommendedName: [ "MongoDB with Rails", "Backup", "Replication"  ]
 recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

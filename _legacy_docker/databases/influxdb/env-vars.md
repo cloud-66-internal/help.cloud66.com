@@ -8,7 +8,6 @@ lead: "Using InfluxDB Environment Variables on Cloud 66 for docker stacks"
 legacy: true
 recommendedName: [ "InfluxDB with Docker", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

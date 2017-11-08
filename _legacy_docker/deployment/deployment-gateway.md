@@ -7,7 +7,6 @@ categories: Deployment
 lead: ""
 legacy: true
 
-keywords: []
 permalink: /:collection/:path
 ---
 

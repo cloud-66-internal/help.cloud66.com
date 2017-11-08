@@ -8,7 +8,6 @@ lead: "Using ElasticSearch Environment Variables on Cloud 66 for rails stacks"
 legacy: false
 recommendedName: [ "Elasticsearch with Rails", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

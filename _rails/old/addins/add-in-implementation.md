@@ -5,7 +5,6 @@ title: Add-in Implementation
 categories: addins
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

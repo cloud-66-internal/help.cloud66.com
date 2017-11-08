@@ -8,7 +8,6 @@ lead: "Using InfluxDB on Cloud 66 for rails stacks"
 legacy: false
 recommendedName: [ "Backup" ]
 recommendedLinks: [ "backup.html"]
-keywords: []
 permalink: /:collection/:path
 ---
 

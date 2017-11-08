@@ -8,7 +8,6 @@ lead: "Using InfluxDB Environment Variables on Cloud 66 Maestro for container st
 legacy: false
 recommendedName: [ "InfluxDB with Maestro", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

@@ -6,7 +6,6 @@ title: Choosing Server Size
 categories: getting-started
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

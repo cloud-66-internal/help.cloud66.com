@@ -8,7 +8,6 @@ lead: "Customize your PostgreSQL Configuration on Cloud 66 Node stacks"
 legacy: false
 recommendedName: [ "PostgreSQL with Node", "Backup Verifiers", "Backup", "Replication"  ]
 recommendedLinks: [ "index.html", "backup-verifier.html", "backup.html", " replication.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

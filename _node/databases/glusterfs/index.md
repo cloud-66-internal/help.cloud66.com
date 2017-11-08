@@ -8,7 +8,6 @@ lead: "Using GlusterFS on Cloud 66 for node stacks"
 legacy: false
 recommendedName: [ "Backup" ]
 recommendedLinks: [ "backup.html"]
-keywords: []
 permalink: /:collection/:path
 ---
 

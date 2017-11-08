@@ -8,7 +8,6 @@ lead: "Using MySQL Environment Variables on Cloud 66 docker stacks"
 legacy: true
 recommendedName: [ "MySQL with Rails", "Backup Verifiers", "Backup", "Replication"  ]
 recommendedLinks: [ "index.html", "backup-verifier.html", "backup.html", " replication.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

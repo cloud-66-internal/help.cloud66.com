@@ -8,7 +8,6 @@ lead: "Using GlusterFS Environment Variables on Cloud 66 for  node stacks"
 legacy: false
 recommendedName: [ "GlusterFS with Rails", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

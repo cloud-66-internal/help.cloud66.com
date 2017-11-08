@@ -7,7 +7,6 @@ categories: failover-groups
 lead: ""
 legacy: true
 
-keywords: []
 permalink: /:collection/:path
 ---
 

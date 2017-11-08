@@ -8,7 +8,6 @@ lead: ""
 legacy: false
 recommendedName: [ "Elasticsearch with Node", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

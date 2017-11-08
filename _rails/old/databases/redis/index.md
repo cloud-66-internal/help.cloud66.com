@@ -8,7 +8,6 @@ lead: "Using Redis on Cloud 66 for rails stacks"
 legacy: false
 recommendedName: [ "Backup", "Replication" ]
 recommendedLinks: [ "backup.html", "replication.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

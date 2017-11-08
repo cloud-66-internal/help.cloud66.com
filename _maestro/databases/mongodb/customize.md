@@ -8,7 +8,6 @@ lead: "Customize your MongoDB Configuration on Cloud 66 Maestro for container st
 legacy: false
 recommendedName: [ "MongoDB with Rails", "Backup Verifiers", "Backup", "Replication"  ]
 recommendedLinks: [ "index.html", "backup-verifier.html", "backup.html", " replication.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

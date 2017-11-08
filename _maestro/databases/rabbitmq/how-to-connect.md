@@ -8,7 +8,6 @@ lead: "Customize your RabbitMQ Configuration on Cloud 66 Maestro for container s
 legacy: false
 recommendedName: [ "RabbitMQ with Maestro", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

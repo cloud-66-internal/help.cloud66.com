@@ -6,7 +6,6 @@ title: Failover Groups
 categories: failover-groups
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

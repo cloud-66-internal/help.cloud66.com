@@ -6,7 +6,6 @@ title: Microsoft Azure cloud
 categories: Deployment
 lead: ""
 legacy: true
-keywords: []
 permalink: /:collection/:path
 ---
 

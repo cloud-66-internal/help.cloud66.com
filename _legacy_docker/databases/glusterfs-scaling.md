@@ -7,7 +7,6 @@ categories: Databases
 lead: ""
 legacy: true
 
-keywords: []
 permalink: /:collection/:path
 ---
 

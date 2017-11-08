@@ -6,7 +6,6 @@ title: Shell
 categories: addins
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

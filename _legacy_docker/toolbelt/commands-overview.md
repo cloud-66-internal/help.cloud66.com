@@ -6,7 +6,6 @@ categories: Toolbelt
 lead: ""
 legacy: true
 
-keywords: []
 permalink: /:collection/:path
 ---
 

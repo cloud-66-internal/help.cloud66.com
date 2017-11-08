@@ -6,7 +6,6 @@ title: RabbitMQ Backup
 categories: Databases
 lead: ""
 legacy: true
-keywords: []
 permalink: /:collection/:path
 ---
 

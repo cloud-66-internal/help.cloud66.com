@@ -8,7 +8,6 @@ lead: "Using RabbitMQ Environment Variables on Cloud 66 for node stacks"
 legacy: false
 recommendedName: [ "RabbitMQ with Node", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

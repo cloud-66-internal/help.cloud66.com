@@ -6,7 +6,6 @@ categories: Partners
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 

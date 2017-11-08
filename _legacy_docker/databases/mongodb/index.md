@@ -8,7 +8,6 @@ lead: "Using MongoDB on Cloud 66 for docker stacks"
 legacy: true
 recommendedName: [ "Backup", "Replica Sets" ]
 recommendedLinks: [ "backup.html", "mongodb-replica-sets.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

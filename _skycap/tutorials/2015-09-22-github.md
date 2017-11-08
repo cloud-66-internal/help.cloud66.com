@@ -6,7 +6,6 @@ categories: tutorials
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 

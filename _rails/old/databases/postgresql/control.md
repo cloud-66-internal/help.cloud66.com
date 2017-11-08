@@ -8,7 +8,6 @@ lead: "Control your PostgreSQL Migrations on Cloud 66 Rails stacks"
 legacy: false
 recommendedName: [ "PostgreSQL with Rails", "Backup Verifiers", "Backup", "Replication"  ]
 recommendedLinks: [ "index.html", "backup-verifier.html", "backup.html", " replication.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

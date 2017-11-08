@@ -8,7 +8,6 @@ lead: "Customize your SQLite Configuration on Cloud 66 Maestro for container sta
 legacy: false
 recommendedName: [ "SQLite with Maestro", "Backup"]
 recommendedLinks: [ "index.html", "backup.html"]
-keywords: []
 permalink: /:collection/:path
 ---
 

@@ -8,7 +8,6 @@ lead: ""
 legacy: false
 recommendedName: [ "Nginx" ]
 recommendedLinks: ["https://help.cloud66.com/rails/deployment/nginx.html"]
-keywords: []
 permalink: /:collection/:path
 ---
 

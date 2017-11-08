@@ -8,7 +8,6 @@ lead: "Customize your Elasticsearch Configuration on Cloud 66 Maestro for contai
 legacy: false
 recommendedName: [ "Elasticsearch with Maestro", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

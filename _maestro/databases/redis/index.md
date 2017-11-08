@@ -8,7 +8,6 @@ lead: "Using MySQL on Cloud 66 Maestro for container stacks"
 legacy: false
 recommendedName: [ "Backup", "Replication" ]
 recommendedLinks: [ "backup.html", "replication.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

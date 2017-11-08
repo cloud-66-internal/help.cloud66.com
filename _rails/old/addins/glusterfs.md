@@ -6,7 +6,6 @@ title: Glusterfs
 categories: addins
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

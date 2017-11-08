@@ -6,7 +6,6 @@ title: Troubleshoot Deploy Hooks
 categories: how-to-guides
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

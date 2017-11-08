@@ -6,7 +6,6 @@ categories: how-to-guides
 lead: ""
 legacy: false
 change: true
-keywords: []
 permalink: /:collection/:path
 ---
 {% assign product = "common" %}

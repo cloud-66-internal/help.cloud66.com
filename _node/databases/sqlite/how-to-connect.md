@@ -8,7 +8,6 @@ lead: "Customize your SQLite Configuration on Cloud 66 for node stacks"
 legacy: false
 recommendedName: [ "SQLite with Node", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

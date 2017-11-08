@@ -8,7 +8,6 @@ lead: "Customize your SQLite Configuration on Cloud 66 for docker stacks"
 legacy: true
 recommendedName: [ "SQLite with Docker", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

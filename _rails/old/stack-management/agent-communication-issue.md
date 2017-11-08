@@ -6,7 +6,6 @@ categories: stack-management
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 

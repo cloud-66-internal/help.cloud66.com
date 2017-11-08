@@ -6,7 +6,6 @@ title: MySQL Backup Verification
 categories: Databases
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

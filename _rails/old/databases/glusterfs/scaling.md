@@ -8,7 +8,6 @@ lead: ""
 legacy: false
 recommendedName: [ "GlusterFS with Rails", "Backup", "Replication"  ]
 recommendedLinks: [ "index.html", "backup.html", " replication.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

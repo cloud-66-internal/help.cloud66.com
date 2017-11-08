@@ -6,7 +6,6 @@ title: Cloud 66 reserved tags
 categories: Deployment
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

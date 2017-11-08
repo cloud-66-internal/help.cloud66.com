@@ -8,7 +8,6 @@ lead: "Using ElasticSearch Environment Variables on Cloud 66 Maestro stacks"
 legacy: false
 recommendedName: [ "Elasticsearch with Maestro", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

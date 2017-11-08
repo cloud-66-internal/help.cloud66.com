@@ -8,7 +8,6 @@ lead: "Using InfluxDB on Cloud 66 for docker stacks"
 legacy: true
 recommendedName: [ "Backup" ]
 recommendedLinks: [ "backup.html"]
-keywords: []
 permalink: /:collection/:path
 ---
 

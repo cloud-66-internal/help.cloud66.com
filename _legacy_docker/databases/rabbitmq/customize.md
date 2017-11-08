@@ -8,7 +8,6 @@ lead: "Customize your RabbitMQ Configuration on Cloud 66 for docker stacks"
 legacy: true
 recommendedName: [ "RabbitMQ with Docker", "Backup"]
 recommendedLinks: [ "index.html", "backup.html"]
-keywords: []
 permalink: /:collection/:path
 ---
 

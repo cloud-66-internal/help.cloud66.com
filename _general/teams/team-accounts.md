@@ -7,7 +7,6 @@ categories: Teams
 lead: ""
 legacy: false
 
-keywords: []
 permalink: /:collection/:path
 ---
 

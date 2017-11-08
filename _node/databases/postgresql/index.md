@@ -8,7 +8,6 @@ lead: "Using PostgreSQL on Cloud 66 for node stacks"
 legacy: false
 recommendedName: [ "Backup", "Replication" ]
 recommendedLinks: [ "backup.html", "replication.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

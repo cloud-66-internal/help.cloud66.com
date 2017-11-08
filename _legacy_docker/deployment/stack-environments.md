@@ -6,7 +6,6 @@ title: Stack Environments
 categories: deployment
 lead: ""
 legacy: true
-keywords: []
 permalink: /:collection/:path
 ---
 

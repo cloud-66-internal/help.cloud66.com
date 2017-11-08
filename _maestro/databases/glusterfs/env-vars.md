@@ -8,7 +8,6 @@ lead: "Using GlusterFS Environment Variables on Cloud 66 Maestro for container s
 legacy: false
 recommendedName: [ "GlusterFS with Maestro", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

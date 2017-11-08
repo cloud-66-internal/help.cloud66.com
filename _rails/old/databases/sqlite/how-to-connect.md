@@ -8,7 +8,6 @@ lead: "Customize your SQLite Configuration on Cloud 66 Rails stacks"
 legacy: false
 recommendedName: [ "SQLite with Rails", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

@@ -8,7 +8,6 @@ lead: "Using RabbitMQ Environment Variables on Cloud 66 Rails stacks"
 legacy: false
 recommendedName: [ "RabbitMQ with Rails", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

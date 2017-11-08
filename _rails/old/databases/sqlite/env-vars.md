@@ -8,7 +8,6 @@ lead: "Using SQLite Environment Variables on Cloud 66 Rails stacks"
 legacy: false
 recommendedName: [ "SQlite with Rails", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

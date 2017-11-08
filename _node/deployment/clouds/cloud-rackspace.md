@@ -6,7 +6,6 @@ title: Rackspace Cloud
 categories: Deployment
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

@@ -6,7 +6,6 @@ title: Troubleshoot Deploy Hooks
 categories: troubleshooting
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

@@ -6,7 +6,6 @@ title: Redis Backup
 categories: Databases
 lead: ""
 legacy: true
-keywords: []
 permalink: /:collection/:path
 ---
 

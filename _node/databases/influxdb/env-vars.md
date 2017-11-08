@@ -8,7 +8,6 @@ lead: "Using InfluxDB Environment Variables on Cloud 66 for node stacks"
 legacy: false
 recommendedName: [ "InfluxDB with Node", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

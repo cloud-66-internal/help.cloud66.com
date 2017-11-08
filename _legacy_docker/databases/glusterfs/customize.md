@@ -8,7 +8,6 @@ lead: "Customize your GlusterFS Configuration on Cloud 66 for docker stacks"
 legacy: true
 recommendedName: [ "GlusterFS with Docker", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

@@ -8,7 +8,6 @@ lead: ""
 legacy: true
 recommendedName: [ "GlusterFS with Docker", "Backup"  ]
 recommendedLinks: [ "index.html", "backup.html"]
-keywords: []
 permalink: /:collection/:path
 ---
 

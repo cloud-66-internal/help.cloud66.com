@@ -8,7 +8,6 @@ lead: ""
 legacy: false
 recommendedName: [ "Elasticsearch with Maestro", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

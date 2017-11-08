@@ -6,7 +6,6 @@ title: MongoDB Replica Sets
 categories: Databases
 lead: ""
 legacy: false
-keywords: []
 permalink: /:collection/:path
 ---
 

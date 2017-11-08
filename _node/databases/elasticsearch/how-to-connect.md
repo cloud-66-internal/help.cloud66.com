@@ -8,7 +8,6 @@ lead: "Customize your Elasticsearch Configuration on Cloud 66 for node stacks"
 legacy: false
 recommendedName: [ "Elasticsearch with Node", "Backup"]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

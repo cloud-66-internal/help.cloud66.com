@@ -8,7 +8,6 @@ lead: "Using SQLite Environment Variables on Cloud 66 for docker stacks"
 legacy: true
 recommendedName: [ "SQlite with Docker", "Backup" ]
 recommendedLinks: [ "index.html", "backup.html" ]
-keywords: []
 permalink: /:collection/:path
 ---
 

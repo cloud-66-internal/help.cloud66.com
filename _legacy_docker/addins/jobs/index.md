@@ -8,7 +8,6 @@ lead: ""
 recommendedName: [ "Server Tasks", "Service Tasks" ]
 recommendedLinks: [ "docker-server-task.html", "docker-service-task.html" ]
 legacy: true
-keywords: []
 permalink: /:collection/:path
 ---
 
