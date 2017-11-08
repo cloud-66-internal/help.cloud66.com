@@ -1,5 +1,4 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2014-09-26-local-cached-copy-error/2014-09-26-local-cached-copy-error_when-you-deploy-to-your--v1.md" ]
 layout: post
 template: one-col
 title: Local cached copy error

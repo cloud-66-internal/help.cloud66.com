@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "About database replication", "How it works", "MySQL", "Environment Variables", "Enable database replication", "Important", "Single stack", "Between stacks", "Disable database replication", "Create slave database", "Re-synchronizing slave with master" ]
-gitlinks: [ ]
 layout: post
 template: one-col
 title: MySQL Replication

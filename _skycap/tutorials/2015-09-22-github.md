@@ -1,5 +1,4 @@
 ---
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2015-09-22-github/2015-09-22-github_github-is-a-great-resource-for-developers-v1.md" ]
 layout: post
 template: one-col
 title: Use GitHub with Cloud 66

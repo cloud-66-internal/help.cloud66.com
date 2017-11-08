@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "How Toolbelt SSH works", "Versbose mode SSH", "Cloud providers firewall API has delay", "Detected IP is different", "Prompted for Password" ]
-gitlinks: [ ]
 layout: post
 template: one-col
 title: SSH

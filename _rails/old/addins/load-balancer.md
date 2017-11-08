@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "What is load balancing?", "Note", "Add a load balancer" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddIns/common/load-balancer/load-balancer_what-is-load-balancing-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddIns/common/load-balancer/load-balancer_note-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/AddIns/common/load-balancer/load-balancer_add-a-load-balancer-v1.md" ]
 layout: post
 template: one-col
 title: Load Balancer

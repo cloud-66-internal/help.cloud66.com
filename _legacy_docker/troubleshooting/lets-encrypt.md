@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "How it is installed", "Troubleshoot" ]
-gitlinks: [ ]
 layout: post
 template: one-col
 title: Let's Encrypt

@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "About running apps with Puma", "Start the web server", "Stop the web server", "Restart the web server (hot-restart)", "Deploy with Puma", "Warning" ]
-gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_about-running-apps-with-puma-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_start-the-web-server-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_stop-the-web-server-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_restart-the-web-server-hot-restart-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_deploy-with-puma-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Deployment/Rails/puma-rack-server/puma-rack-server_warning-v1.md" ]
 layout: post
 template: one-col
 title: Puma Rack Server

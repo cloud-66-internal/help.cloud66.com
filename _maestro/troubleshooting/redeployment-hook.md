@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "Redeployment Hook" ]
-gitlinks: [ ]
 layout: post
 template: one-col
 title: Redeployment Hook

@@ -1,6 +1,5 @@
 ---
 menuheaders: [ "Cap deploy failed" ]
-gitlinks: [  ]
 layout: post
 template: one-col
 title: Deployment failure
