@@ -12,19 +12,9 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## About using Amazon Web Services cloud
 
 You can use Cloud 66 to provision and deploy your code to servers in any Amazon Web Services (AWS) region. 
-
-
-
-
 
 
 ### Reserved instances
@@ -34,19 +24,11 @@ You can use Cloud 66 to provision and deploy your code to servers in any Amazon 
 It's very simple to use Cloud 66 with AWS reserved instances: start by reserving an instance with your size/region requirements. Now, simply use Cloud 66 to deploy to a server of that size in the same region, and we'll use your reserved instance.
 
 
-
-
-
-
 ### Classic and VPC platforms
 
 You can choose to create servers in both the [Classic and VPC platforms](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-vpc.html). To use a VPC, your account must conform with the [default VPC guidelines](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/default-vpc.html#launching-into). 
 
 Certain instances types, such as the T2, require the use of VPC. 
-
-
-
-
 
 
 ## Generate AWS access keys
@@ -56,17 +38,9 @@ You need to provide your AWS access keys in order for Cloud 66 to access your ac
 _IAM_ stands for _Identity and Access Management_, and allows you to set permissions for specific users. This may be useful in certain cases, but may be confusing for non-advanced users. We will now guide you through generating access keys based on both of these methods:
 
 
-
-
-
-
 ### Security credentials
 
 After selecting the _Security Credentials_ option, select the _Access Keys_ option from the menu. Now click _Create new access key_, and either download the key file or click _Show access key_ and take note of your _access key ID_ and _secret access key_. These are the credentials needed for Cloud 66 to access your account.
-
-
-
-
 
 
 ### IAM
@@ -76,10 +50,6 @@ After selecting the _IAM_ option, click _Create new users_ in the top left corne
 Back in the _Users_ view, we now need to attach a user policy for this user. Click the username, and then select _Attach user policy_. Although you could grant _Administrator access_ to the account, you may wish to grant more fine-grained controls. In that case, your selection will depend on whether or not you are using VPC or EC2. In the former case, you would select _Amazon VPC full access_, and in the latter, select _Amazon EC2 full access_. Also to add SSL Certificate to your stacks, you need to add _Amazon IAM full access_.  
 
 You can also set more fine-grained permissions with the following JSON template for your IAM policy (you can adjust the resource name to limit access):
-
-
-
-
 
 ```
 
@@ -161,33 +131,15 @@ You can also set more fine-grained permissions with the following JSON template 
 
 
 
-
-
-
-
-
-
 ## Add AWS keys to a stack
 
 Visit the Cloud 66 Dashboard and select _Get started building a stack_. After connecting to your Git repository and analyzing your code, you will be asked to _Add your cloud platform_. From this menu, select _Amazon Web Services_ and provide your credentials.
 
 
 
-
-
-
-
-
-
 ### Notice
 
 Should you wish to delete your stack on Cloud 66, your servers **will not** be deleted on your cloud provider unless [physical server deletion](/managing-your-stack/server-deletion) is turned on.
-
-
-
-
-
-
 
 
 

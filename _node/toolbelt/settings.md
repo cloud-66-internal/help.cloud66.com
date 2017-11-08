@@ -11,24 +11,10 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## List your stack settings
 
 
-
-
-
-
 ### Usage
-
-
-
-
 
 ```
 $ cx settings list [-s <stack>] [-e <environment>]
@@ -37,49 +23,23 @@ $ cx settings list [-s <stack>] [-e <environment>]
 
 
 
-
-
-
-
-
-
 ### Parameters
-
-
 |		Parameter 		   |  Description    |
 |--------------------------|----------------:|
 |stack 					   | Name of the stack |
 |e (optional) 	  		   | Your stack environment |
 
-
-
-
-
 ### Example
-
-
 
 ```
 $ cx settings list -s "My Awesome App"
 ```
 
 
-
-
-
-
 ## Set your stack settings
 
 
-
-
-
-
 ### Usage
-
-
-
-
 
 ```
 $ cx settings set [-s <stack>] <setting_name> <value>
@@ -88,15 +48,7 @@ $ cx settings set [-s <stack>] <setting_name> <value>
 
 
 
-
-
-
-
-
-
 ### Parameters
-
-
 |		Parameter 		   |   Description    |
 |--------------------------| ----------------:|
 |stack 					   |Name of the stack|
@@ -104,23 +56,13 @@ $ cx settings set [-s <stack>] <setting_name> <value>
 |value	   | The value for the setting |
 |e (optional) 	   | 	Your stack environment |
 
-
-
-
-
 ### Example
-
-
 
 ```
 $ cx settings set -s "My Awesome App" git.repository git://github.com/cloud66-samples/rails-mysql.git -e production
 
 $ cx settings set -s my_stack deploy.parallel true
 ```
-
-
-
-
 
 
 ## Settings Variables

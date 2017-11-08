@@ -11,18 +11,8 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ### What is Elasticsearch?
 [Elasticsearch](http://www.elasticsearch.org/) is a powerful open source search and analytics engine, and it's easy to add to your stack as an add-in.
-
-
-
-
 
 
 ## Add Elasticearch
@@ -30,16 +20,8 @@ To add Elasticsearch to your stack, access the add-ins menu, click _Elasticsearc
 
 
 
-
-
-
-
-
-
 ### Note
 
 For docker stacks this will be added to the host not as a container.
-
-
 
 

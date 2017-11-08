@@ -11,19 +11,9 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Setup the failover group
 
 As with any migration, you will need to deal with moving your code, data and traffic. 
-
-
-
-
 
 
 ### 1. Code
@@ -31,26 +21,14 @@ As with any migration, you will need to deal with moving your code, data and tra
 [Clone your existing stack](https://help.cloud66.works/{{ include.product }}/getting-started/stack-definition.html) to a different cloud vendor or data center, and set it into [maintenance mode]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/network-configuration.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/network-configuration.html{% endif %}) to prevent it from serving content. We highly recommend that you build a stack with similar server specifications to your main stack to avoid issues during a switch. 
 
 
-
-
-
-
 ### 2. Data
 
 Enable [database replication between your stacks]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/databases/database-replication.html{% else %}https://help.cloud66.works/{{ include.product }}https://help.cloud66.works/{{ include.product }}/databases/database-replication.html{% endif %}) - this will setup a master/slave architecture between your stacks, whereby the slave is an exact replica of the master at all times. 
 
 
-
-
-
-
 ### 3. Traffic
 
 Use [Failover Groups]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/failover-groups/failover-groups.html{% else %}https://help.cloud66.works/{{ include.product }}/failover-groups/failover-groups.html{% endif %}) to make it easy for you to switch between stacks. By pointing your domain at the Failover address, you will be able to switch your traffic between stacks at the click of a button.
-
-
-
-
 
 
 ## How to use the failover stack

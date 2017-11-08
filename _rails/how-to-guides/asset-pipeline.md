@@ -8,13 +8,7 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "Rails" %}
-
-
-
-
 
 If you're experiencing deployment failures related to your asset pipeline manifest configurations, these could be due to issues with old assets.
 
@@ -22,5 +16,3 @@ You can clear up old assets on the server manually by [starting a terminal conne
 
 1.  Remove all the contents from your `$STACK_BASE/shared/assets` folder
 2.  Create a new, empty manifest.yml file by issuing `touch $STACK_BASE/shared/assets/manifest.yml`
-
-

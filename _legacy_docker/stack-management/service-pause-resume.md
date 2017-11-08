@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## Pause and resume services
 
 On each docker server you can pause and resume your services! You will find that in your stack page under Docker cluster and on the top right corner of each server box.

@@ -11,17 +11,11 @@ permalink: /:collection/:path
 
 {% assign dbtype = "mysql" %}
 
-
-
-
-
 ## About database replication
 
 Database replication involves configuring a master and slave database architecture, whereby the slave is an exact replica of the master at all times. This feature is supported for MySQL, PostgreSQL, Redis and MongoDB databases.
 
 Database replication can be set up for a single stack, or between stacks, with various benefits:
-
-
 **Single stack**
 
 - Improved read performance: The slave server only allows reads and is ideal for use with reporting tools, and any database backups are taken from the slave rather than the master.
@@ -33,8 +27,6 @@ Database replication can be set up for a single stack, or between stacks, with v
 - Data migration: Makes it easy to migrate your stack with minimal downtime.
 
 Note that replication between stacks is not supported for MongoDB.
-
-
 
 
 ## How it works
@@ -57,15 +49,9 @@ Similarly, when you disable replication, the following steps are initiated:
 *   The relevant environment variables are updated for use in your code and scripts
 
 
-
-
-
-
 ## Environment Variables
 
 Cloud 66 generates and maintains a number of environment variables automatically on your servers, including those that hold the address for your database server. When you enable database replication, we will generate additional environment variables for your slave server(s). The value of these variables will change when you enable or disable replication.
-
-
 {% if include.dbtype == "redis" or include.dbtype == "postgres" or include.dbtype == "mysql" %}
 
 {% endif %}
@@ -73,17 +59,9 @@ Cloud 66 generates and maintains a number of environment variables automatically
 In the case that an environment variable contains multiple values, such as IP addresses, these are separated by comma.
 
 
-
-
 ## Enable database replication
 
 The process of enabling database replication varies slightly for a single stack as opposed to replication between stacks.
-
-
-
-
-
-
 
 
 
@@ -97,17 +75,9 @@ Database replication will disrupt the database serving your application during t
 
 
 
-
-
-
-
 ### Single stack
 
 To enable replication on a single stack, visit your stack detail page, click on the database server group (eg. _PostgreSQL server_) and click _Scale Up_ in the top right corner. This will allow you to choose your new server size. Your new server should contain at least two times more disk space than the size of your database backup, and we recommend that it is comparable to your master server (in terms of memory).
-
-
-
-
 
 
 ### Between stacks
@@ -115,17 +85,9 @@ To enable replication on a single stack, visit your stack detail page, click on 
 To enable replication between stacks, ensure that you have a secondary stack deployed, and that its database server contains at least two times more disk space than the size of your database backup. Visit your stack detail page, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select a source stack. Confirm to commence the replication process.
 
 
-
-
-
-
 ## Disable database replication
 
 To disable replication between stacks, visit your stack detail page, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select _Disable replication_. Confirm to commence the replication process.
-
-
-
-
 
 
 ## Create slave database
@@ -137,14 +99,8 @@ To add a slave database server you need to follow the below steps. To add multip
 3.   On the right sidebar click on _SCALEUP DATABASE_ (the button will not be shown if you have not set up database backups)
 
 
-
-
-
-
 ## Re-synchronizing slave with master
 
 From time-to-time your slave database may go out of sync with its master. You can use our toolbelt to re-synchronize them.
 
 To re-synch them, have a look at our documentation on [Toolbelt database management](https://help.cloud66.com/{{ include.product }}/toolbelt/databases.html).
-
-

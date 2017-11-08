@@ -7,8 +7,6 @@ lead: Using Node with Cloud66
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
-
-
 - [Getting Started](getting-started)
 - [Deployment](deployment)
 - [Databases](databases)

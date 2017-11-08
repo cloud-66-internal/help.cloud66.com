@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## What is CustomConfig git?
 
 CustomConfig git is a private git repository available on every stack in your Cloud 66 account. This git repository is hosted by Cloud 66 and allows you to modify [CustomConfig](https://help.cloud66.works/{{ include.product }}/stack-management/custom-config.html) files for your stack using familiar git commands.
@@ -25,27 +19,13 @@ CustomConfig git is a private git repository available on every stack in your Cl
 If you are familiar with [CustomConfig](https://help.cloud66.works/{{ include.product }}/stack-management/custom-config.html) you know how it can be a powerful tool to customise configuration for [nginx](https://help.cloud66.works/{{ include.product }}/deployment/nginx.html) or [HAProxy](https://help.cloud66.works/{{ include.product }}/addins/haproxy.html). The easiest way to modify CustomConfig files is through the UI. However if you would like to edit CustomConfig files in your favourite editor or enjoy git merge and flow control features you can use CustomConfig git.
 
 
-
-
-
-
 ## Getting Started with CustomConfig git
 
 Each stack on Cloud 66 has its own private CustomConfig git repository. You can find the URL of this repository under stack's information page (right hand side menu). There you will find a URL like this for CustomConfig git:
 
-
-
-
-
 ```
 git@git1.cloud66.com:warmhearted-wondrous-tiger-9262.git
 ```
-
-
-
-
-
-
 
 
 
@@ -57,19 +37,11 @@ Like any other git repository, CustomConfig git requires a public SSH key for au
 You can upload your public SSH key at **Account / Keys / Public Key** when logged into your Cloud 66 account.
 
 
-
-
-
-
 ### Making changes to CustomConfig files
 
 To make a change to a CustomConfig file you need to first clone the stack's CustomConfig git repository locally. Using git commandline this is possible with something like this:
 
-
-
 `$ git clone git@git1.cloud66.com:warmhearted-wondrous-tiger-9262.git`
-
-
 
 This will clone the CustomConfig git repository for the first time to your disk under a folder called `warmhearted-wondrous-tiger-9262`.
 
@@ -77,33 +49,17 @@ Now you can `cd` to this folder and see the list of files available to edit. By 
 
 Now open the file you want to change in your favourite text editor. Once done, save the file and commit your changes like any normal git workflow:
 
-
-
-
-
 ```
 $ git commit -m "increate nginx pool size"
 $ git push origin master
 ```
 
-
-
-
-
 Done!
-
-
-
-
 
 
 ## CustomConfig git workflow
 
 It's important to know when your changes are going to be pushed to your servers.
-
-
-
-
 
 
 ### Changes made in CustomConfig UI
@@ -113,17 +69,9 @@ Any changes made to CustomConfig files in the UI will be applied to CustomConfig
 Changing a CustomConfig file in the UI will be pushed to your servers immediately unless there is a merge conflict with what's in the repository.
 
 
-
-
-
-
 ### Changes made through CustomConfig git
 
 Changes made to CustomConfig git files will NOT be pushed to your servers until the next stack deployment. This is prevent unwanted changes go live during a normal gil workflow.
-
-
-
-
 
 
 ## Automatic updates

@@ -12,25 +12,13 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
 ## What is two-step verification? 
 
 Two-step verification adds an extra layer of security to your Cloud 66 account, drastically reducing the chances of having the personal information in your account stolen. To break into an account with two-step verification, bad guys would not only have to know your username and password, they'd also have to get a hold of your phone.
 
-
-
-
-
 ## Enable two-step verification
 
 To enable two-step verification on your Cloud 66 account, start by visiting your _Account_ page. Next, click _Enable 2-step verification_ to install Google Authenticator on your phone and scan your barcode.
-
-
-
-
 
 ## Add a recovery phone number
 

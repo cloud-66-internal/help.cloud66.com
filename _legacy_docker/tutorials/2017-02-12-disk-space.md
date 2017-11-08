@@ -8,11 +8,7 @@ legacy: true
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "common" %}
-
-
 
 
 Depending on your server and disk size, you may run out of disk space - the following steps will help you troubleshoot such issues.
@@ -77,8 +73,4 @@ Depending on your server and disk size, you may run out of disk space - the foll
 5. Do you need more disk space?
 
 	Depending on the size of the server and disk as well as the requirements of your application, you may need to use a bigger server, or if possible attach a larger disk. Some cloud providers allow you to change the disk size from their cloud dashboard. You can also scale up a new server and specify a `root_disk_size` value in your [manifest file](http://help.cloud66.com/building-your-stack/building-your-manifest-file#servers). Once the scale up is complete, you can remove the old server.
-
-
-
-
 

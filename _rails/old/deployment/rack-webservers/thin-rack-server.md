@@ -12,19 +12,9 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## About running apps with Thin
 
 [Thin](http://code.macournoyer.com/thin/) is a Ruby web server that can handle high levels of concurrency. Cloud 66 uses the following signals to control Thin:
-
-
-
-
 
 
 ### Start the web server
@@ -33,27 +23,15 @@ permalink: /:collection/:path
 	sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill
 
 
-
-
-
-
-
-
 ### Stop the web server
 
 	sudo bluepill cloud66_web_server stop
-
-
 
 
 ### Restart the web server (hot-restart)
 
 	sudo bluepill cloud66_web_server restart
 	kill -USR2 <pid>
-
-
-
-
 
 
 ## Deploy with Thin
@@ -70,16 +48,8 @@ Please take note that Thin is running in Daemon mode with the `-d` parameter.
 
 
 
-
-
-
-
-
-
 ## Important
 
 Your web server is not automatically restarted during redeployment. If you would like for it to restart automatically, you can accomplish this using a [deploy hook](#).
-
-
 
 

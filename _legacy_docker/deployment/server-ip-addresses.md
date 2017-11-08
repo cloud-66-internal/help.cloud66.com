@@ -12,19 +12,7 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## Cloud 66 Agent
-
-
-
-
-
-
 
 
 
@@ -33,15 +21,9 @@ permalink: /:collection/:path
 Some cloud providers assign a new IP address to restarted servers
 
 
-
-
 Cloud 66 automatically detects the internal and external IP addresses of your servers through an agent installed on each server. This agent sends information about your server back to us at a 5 minute interval, which is used to auto-generate the `WEB_ADDRESS_INT` and `WEB_ADDRESS_EXT` environment variables (among others) when necessary.
 
 To allow users the flexibility of choosing which one to use in their application, we also provide a WEB_ADDRESS environment variable, which by default is set to `{{WEB_ADDRESS_INT}}` but can be modified by the user.
-
-
-
-
 
 
 ## New IP addresses
@@ -51,19 +33,11 @@ If the agent fails to send us information for 20 minutes, the server owner is no
 If the new IP address is reachable, Cloud 66 ensures that firewall rules are reconstructed, ActiveProtect is reconfigured and DNS records are updated accordingly. Furthermore, if required, the load balancer is updated to serve the new IP address. Once this process is complete, the server owner receives a notification of success by email and will be encouraged to redeploy the stack.
 
 
-
-
-
-
 ## Cloud 66 hostnames
 
 Every server fired up with Cloud 66 has a unique animal-themed name. This should help you find and identify your server quickly in your stack. All servers are accessible by their Cloud 66 DNS name: `[server_name].[stack_name].[environment].c66.me`. For example, the DNS could look like `tiger.myapp.test.c66.me`.
 
 Load Balancers also get a name from Cloud 66 DNS. The load balancer names look like `[stack_name].[environment].c66.me`. For example, the DNS could look like: `myapp.test.c66.me`. Production stacks don't have the environment in their names, for example `myapp.c66.me`.
-
-
-
-
 
 
 ## Finding your Cloud 66 hostname

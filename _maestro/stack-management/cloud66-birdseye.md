@@ -11,27 +11,13 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## What is Cloud 66 Birdseye?
 [Cloud 66 Birdseye](https://birdseye.cloud66.com) is a publicly availably public cloud provider health dashboard.
 We collect public cloud provider health metrics from all data centers Cloud 66 deploys servers to. This data is curated and shown alongside incident data to the public for free so you can see if your cloud provider of choice is experiencing issues.
 
 
-
-
-
-
 ## Where does the data for Cloud 66 Birdseye come from?
 The data shown on the site is collected automatically and manually by Cloud 66 and it's partners. This data is manually curated and moderated to ensure high accuracy and quality.
-
-
-
-
 
 
 ## Who can use Cloud 66 Birdseye?
@@ -40,42 +26,24 @@ Cloud 66 Birdseye is publicly available to everyone for free. You don't have to 
 All we ask is to credit Cloud 66 Birdseye as the source of data when using it in your applications of workflow.
 
 
-
-
-
-
 ## Is there an API?
 Yes. Cloud 66 Birdseye comes with a simple RESTful read-only API to consume its data.
 
 
-
-
-
-
 ### Get the list of all incidents
-
-
 
 
 ```
 /incidents.json
 ```
 
-
-
 With CURL:
-
-
 
 ```
 $ curl https://birdseye.cloud66.com/incidents.json
 ```
 
-
-
 **Result**
-
-
 
 ```
 [
@@ -118,8 +86,6 @@ $ curl https://birdseye.cloud66.com/incidents.json
 ]
 ```
 
-
-
 *Status*
 
 Status is an integer number with the following mapping:
@@ -127,10 +93,6 @@ Status is an integer number with the following mapping:
 - 0 - Pending. Incident has been reported or observed.
 - 1 - Investigating: Either Cloud 66 or the vendor is investigating the incident.
 - 2 - Resolved: Incident is reported as resolved either by the vendor or Cloud 66.
-
-
-
-
 
 
 ### Filtering the list
@@ -146,10 +108,6 @@ You can filter the result for the incidents with the following filters:
 
 With CURL:
 
-
-
-
-
 ```
 $ curl "https://birdseye.cloud66.com/incidents.json?vendor=linode&status=pending&since=2014-12-10-12:15:01"
 ```
@@ -157,40 +115,18 @@ $ curl "https://birdseye.cloud66.com/incidents.json?vendor=linode&status=pending
 
 
 
-
-
-
-
-
-
 ### Get a single incident
-
-
 
 
 ```
 /incidents/:id.json
 ```
 
-
-
-
-
 With CURL:
-
-
-
-
 
 ```
 $ curl https://birdseye.cloud66.com/incidents/2382.json
 ```
-
-
-
-
-
-
 
 
 
@@ -205,37 +141,17 @@ By default there is no filter on status of returned incidents. If you want to fi
 
 For example:
 
-
-
-
-
 ```
 $ curl https://birdseye.cloud66.com/incidents.json?status=pending
 ```
 
-
-
-
-
 You can mix status for incidents returns, you can use a comma separated list:
-
-
-
-
 
 ```
 $ curl https://birdseye.cloud66.com/incidents.json?status=pending,investigating
 ```
 
-
-
-
-
 This will only return non-resolved incidents.
-
-
-
-
 
 
 ## Can I report incidents?

@@ -11,23 +11,11 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Cloud 66 now supports automatic SSL termination
 
 You can activate SSL termination on **HAProxy 1.5.x or higher** and **Amazon Elastic Load Balancer** through SSL certificate add-in.
 
 [check here for more information](https://help.cloud66.works/{{ include.product }}/addins/ssl/)
-
-
-
-
-
-
 
 
 ## Amazon Elastic Load Balancer
@@ -44,82 +32,38 @@ Through the AWS dashboard:
 
 
 
-
-
-
-
-
-
 ## Important
 
 Ensure that the certificate is valid: current date must be between the certificate’s start and end date. Certificate keys also should not be password protected
-
-
 
 
 Through the [AWS ELB command line interface](http://aws.amazon.com/developertools/2536):
 
 *   Run the command below to add a new SSL certificate:
 
-
-
-
-
 ```
 $ iam-servercertupload -b <CA authenticated SSL> -k <private key file(.pem)> -s <certificate name>  -c  <certificate chain file> –v
 ```
 
-
-
-
-
 *You should retrieve any available SSL certificate using this command:
-
-
-
-
 
 ```
 $ iam-servercertlistbypathx
 ```
 
-
-
-
-
 *Run the command below to attach the SSL certificate to the load balancer:
-
-
-
-
 
 ```
 $ elb-create-lb-listeners ELBConfigureSSL --listener "protocol=HTTPS,lb-port=443,instance-port=80,instance-protocol=HTTP, cert-id=&<certificate name>"
 ```
 
-
-
-
-
 *To delete a certificate, run the following command:
-
-
-
-
 
 ```
 $ iam-servercertdel -s <certificate name>
 ```
 
-
-
-
-
 Refer to the [AWS documentation for more information](http://docs.aws.amazon.com/IAM/latest/UserGuide/InstallCert.html).
-
-
-
-
 
 
 ## Rackspace

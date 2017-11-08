@@ -12,21 +12,11 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## About Unicorn
 
 [Unicorn](http://unicorn.bogomips.org/) is a Rack HTTP server that uses forked processes to handle multiple incoming requests concurrently.
 
 Cloud 66 uses the following signals to control Unicorn:
-
-
-
-
 
 
 ## Deploy with Unicorn
@@ -43,21 +33,11 @@ Please take note that Unicorn is running in Daemon mode with the `-D` parameter.
 
 
 
-
-
-
-
-
-
 ### Kill the web server
 
 - kill -QUIT \<pid>: Stop the process
 - kill -USR2 \<pid>: Spin off another master process.
 - kill -s TTIN \<pid>: Add a new worker to the master process
-
-
-
-
 
 
 ### Start the web server
@@ -66,21 +46,9 @@ Please take note that Unicorn is running in Daemon mode with the `-D` parameter.
 	sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill
 
 
-
-
-
-
-
-
 ### Stop the web server
 
 	sudo bluepill cloud66_web_server stop
-
-
-
-
-
-
 
 
 ### Restart the web server (zero-downtime)
@@ -88,17 +56,9 @@ Please take note that Unicorn is running in Daemon mode with the `-D` parameter.
 	sudo bluepill cloud66_web_server restart
 
 
-
-
-
-
-
-
 ## Warning
 
 Please ensure to follow the conventions set out in the configuration below if you are having issues, and that you are using an up-to-date version of Unicorn.
-
-
 Here is a **unicorn.rb** configuration file that is compatible with Cloud 66 requirements (following the Procfile line above, this should be located under the `config` folder of your Rails app):
 
 {% highlight ruby %}

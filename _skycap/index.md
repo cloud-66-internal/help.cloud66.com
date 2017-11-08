@@ -12,5 +12,3 @@ permalink: /:collection/:categories/index.html
 - [Deployment](deployment)
 - [Stack Management](stack-management)
 - [Tutorials](tutorials)
-
-

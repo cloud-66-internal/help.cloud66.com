@@ -12,19 +12,9 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## About using Google Compute Engine cloud
 
 You can use Cloud 66 to provision and deploy your code to servers in any [Google Compute Engine (GCE) region](http://developers.cloud66.com/#cloud-vendor-instance-regions).
-
-
-
-
 
 
 ## Generate GCE API keys
@@ -44,31 +34,15 @@ Please remember to enable Google Compute in the API list under _API & auth_ unde
 You may also have to enable billing for your account through the _Billing and settings_ menu.
 
 
-
-
-
-
 ## Add GCE keys to a stack
 
 Visit the Cloud 66 Dashboard and select _Get started building a stack_. After connecting to your Git repository and analyzing your code, you will be asked to _Add your cloud platform_. From this menu, select _Google Compute Cloud_ and provide your credentials.
 
 
 
-
-
-
-
-
-
 ### Notice
 
 Should you wish to delete your stack on Cloud 66, your servers **will not** be deleted on your cloud provider unless [physical server deletion](/managing-your-stack/server-deletion) is turned on.
-
-
-
-
-
-
 
 
 

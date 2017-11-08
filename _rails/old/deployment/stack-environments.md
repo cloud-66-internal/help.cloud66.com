@@ -10,12 +10,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ### Stack environments
 
 To reflect the different stages of your software, you can deploy your stacks in different environments:
@@ -31,5 +25,3 @@ Depending on your configuration, your application will act differently in each e
 has a directory in `config/environments` that contains settings for each environment.
 
 There is no difference between these environments when it comes to features and supported tools apart from what you define in your code.
-
-

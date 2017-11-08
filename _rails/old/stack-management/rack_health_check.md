@@ -11,12 +11,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Health Check During Deployment
 
 For customers who are using custom web servers (not Passenger) to serve their code (such as Puma, Unicorn, Thin etc); Because each of these web servers involves a separate process (that in turn can be spawning child processes) our default deployment strategy is to provide the routing in Nginx to the upstream process. However, that could mean that although your deployment is successful, your app is not actually serving anything! 
@@ -25,10 +19,6 @@ Now there is a stack-level option to perform additional health check on your sep
 
 To enable this option, click on "Settings & Information" and check the "Web Health" checkbox.
 This does not apply to Docker or Passenger based stacks as they have other health check mechanisms available already.
-
-
-
-
 
 
 ## New Status Alerts

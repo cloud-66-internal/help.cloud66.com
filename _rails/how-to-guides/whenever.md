@@ -11,24 +11,12 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Note
 
 Whenever jobs will be run on all your app servers by default - but you can also be more specific about where they should run.
 
 
-
-
 ### Target all servers
-
-
-
-
 
 ```
 env :PATH, ENV['PATH']
@@ -44,17 +32,7 @@ end
 
 
 
-
-
-
-
-
-
 ### Target your web server(s)
-
-
-
-
 
 ```
 env :PATH, ENV['PATH']
@@ -67,17 +45,7 @@ end
 
 
 
-
-
-
-
-
-
 ### Target your database server
-
-
-
-
 
 ```
 env :PATH, ENV['PATH']
@@ -90,17 +58,7 @@ end
 
 
 
-
-
-
-
-
-
 ### Target your Redis server
-
-
-
-
 
 ```
 env :PATH, ENV['PATH']
@@ -113,17 +71,7 @@ end
 
 
 
-
-
-
-
-
-
 ### Target the first server in a server group
-
-
-
-
 
 ```
 env :PATH, ENV['PATH']
@@ -138,18 +86,8 @@ every 15.minutes, roles: [:app] do
 end
 ```
 
-
-
-
-
 This will only run _MyClass.some_job_ on your primary app server, and _MyClass.another_job_ on all app servers. It checks whether or not each server
 has the _PRIMARY_ environment variable set to true.
-
-
-
-
-
-
 
 
 
@@ -158,19 +96,9 @@ has the _PRIMARY_ environment variable set to true.
 You should include the line **env :PATH, ENV['PATH']** at the top of your _config/schedule.rb_ file to avoid command not found errors.
 
  
-
-
 You can view your generated crontab jobs with:
-
-
-
-
 
 ```
 crontab -l
 ```
-
-
-
-
 

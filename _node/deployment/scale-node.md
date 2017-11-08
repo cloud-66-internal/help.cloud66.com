@@ -11,12 +11,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ##  Scale your instances 
 
 Your application is up and running but you need more capacity for your application or background jobs. Cloud 66 provides an easy mechanism for scaling up your application and running job instances. If your server has the capacity and is not fully utilized you can scale your application instances simply and quickly. Here is how:

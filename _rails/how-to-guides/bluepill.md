@@ -11,12 +11,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Commands
 
 When [bluepill](https://github.com/bluepill-rb/bluepill) is installed on your server, you can control your processes manually from your server command-line interface.
@@ -27,21 +21,9 @@ When you add processes through Cloud 66 interface, they will be managed by Cloud
 
 
 
-
-
-
-
-
-
 ## Process names convention
 
 Cloud 66 processes beging with "cloud66\_" and user processes with "user\_"
-
-
-
-
-
-
 
 
 
@@ -51,19 +33,9 @@ To build your own process with Bluepill, please refer to this [page](https://git
 
 Don't forget to add a log file in your pill config. For instance:
 
-
-
-
-
 ```
 process.stdout = process.stderr = "<STACK_PATH>/log/process.log"
 ```
-
-
-
-
-
-
 
 
 
@@ -72,23 +44,11 @@ process.stdout = process.stderr = "<STACK_PATH>/log/process.log"
 
 To get all processes status:
 
-
-
-
-
 ```
 $ sudo bluepill status
 ```
 
-
-
-
-
 To get a specific process status:
-
-
-
-
 
 ```
 $ sudo bluepill <process_name> status
@@ -97,19 +57,9 @@ $ sudo bluepill <process_name> status
 
 
 
-
-
-
-
-
-
 ## Stop
 
 To stop a specific process:
-
-
-
-
 
 ```
 $ sudo bluepill <process_name> stop
@@ -118,19 +68,9 @@ $ sudo bluepill <process_name> stop
 
 
 
-
-
-
-
-
-
 ## Start
 
 To start a specific process:
-
-
-
-
 
 ```
 $ sudo bluepill <process_name> start
@@ -139,19 +79,9 @@ $ sudo bluepill <process_name> start
 
 
 
-
-
-
-
-
-
 ## Load a process
 
 To load a `.pill` file into bluepill:
-
-
-
-
 
 ```
 $ sudo bluepill load /etc/bluepill/autoload/<process_name>.pill
@@ -160,19 +90,9 @@ $ sudo bluepill load /etc/bluepill/autoload/<process_name>.pill
 
 
 
-
-
-
-
-
-
 ## Unload a process
 
 To quit a process from bluepill:
-
-
-
-
 
 ```
 $ sudo bluepill <process_name> quit
@@ -182,18 +102,8 @@ $ sudo bluepill <process_name> quit
 
 
 
-
-
-
-
-
-
-
-
 ## Note
 
 Also remember that we configure the pill files to log to `<STACK_PATH>/log` folder.
-
-
 
 

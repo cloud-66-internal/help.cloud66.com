@@ -8,13 +8,7 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "common" %}
-
-
-
-
 
 There are a number of factors that can lead your application to stop serving content. Follow this guide to eliminate the most common issues.
 
@@ -52,8 +46,4 @@ If you're able to SSH to the server, follow the steps below. If not, we recommen
 		$ STACK_PATH/log/unicorn.stderr.log
 		$ STACK_PATH/log/unicorn.stdout.log
 
-
-
 4.  If everything is working until this point, you may have an application issue. To find out, go to your application path by issuing `cd STACK_PATH` and then start the Rails console: `rails c`. Any error output will help you troubleshoot your issue.
-
-

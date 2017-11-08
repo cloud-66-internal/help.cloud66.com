@@ -8,13 +8,7 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "General" %}
-
-
-
-
 
 You can use Circle CI to accomplish continuous integration and deployment of your application together with Cloud 66.
 
@@ -29,5 +23,3 @@ Copy the redeployment hook:
 ![Redeployment hook](http://assets.cloud66.com/help/images/stack_info_overlay.png)
 
 Please refer to the [Circle CI documentation](https://circleci.com/docs/configuration) for more information.
-
-

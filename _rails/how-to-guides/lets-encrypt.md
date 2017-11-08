@@ -9,20 +9,10 @@ legacy: false
 permalink: /:collection/:path
 ---
 
-
-
-
-
 ## How it is installed
 
 A Let's Encrypt Python script called _acme_tiny.py_  puts a file with random name under `/etc/cloud66/webroot/` on one of your web servers. Then tries to connect to your server and download that file via HTTP. It needs 
 <span style="background-color: #FFFF00">a non-secure HTTP endpoint</span> (/.well-known/acme_challenge/*) to invoke and reissue certificates.
-
-
-
-
-
-
 
 
 ### Note:
@@ -30,27 +20,13 @@ A Let's Encrypt Python script called _acme_tiny.py_  puts a file with random nam
 Let's encrypt needs to be updated every 3 months, so you'd need to keep the settings needed for issueing
 
 
-
-
-
-
-
-
 ## Troubleshoot
 
 If during Lets Encrypt installation you get an error including something like this:
 
-
-
-
-
 ```
 Wrote file to /etc/cloud66/webroot/FILENAME, but couldn't download http://DNS_NAME/.well-known/acme-challenge/FILENAME 
 ```
-
-
-
-
 
 You need to go through the following steps:
 1.  **Delete the SSL ceritficate** first and then carry on to the next step.
@@ -60,8 +36,6 @@ You need to go through the following steps:
     There could be some parts missing in your Nginx config, probably due to customization or config file not being up to date. The following parts take care of redirections -like HTTP to HTTPS redirection or adding/removing www to the link- so that the file could be accessible via HTTP endpoint. 
 <span style="background-color: #FFFF00"><b> First delete the SSL certificate and then apply the changes.</b></span>
     
-
-
 {% raw %}
 ```
 http {

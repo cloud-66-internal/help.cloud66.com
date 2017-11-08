@@ -12,21 +12,11 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## Connect to your database
 
 If a database is detected, it will automatically be provisioned as required (including the database itself), and environment variables will be created. You will need to update your code with the environment variables you wish to use, for example `MYSQL_URL`.
 
 Should you wish to change the database username/password after build, you will have to do this manually, which will involve recreating backup jobs to reflect the new values.
-
-
-
-
 
 
 ### Examples of connecting to your database
@@ -37,19 +27,9 @@ or use your own value. Alternatively, you can simply hard-code values as you wis
 
 
 
-
-
-
-
-
-
 ## Note
 
 You can use [Yamllint.com](http://yamllint.com/) to check your YAML syntax before committing.
-
-
-
-
 
 
 ## Example application

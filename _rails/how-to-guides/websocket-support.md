@@ -11,19 +11,9 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## About WebSocket
 
 [WebSocket](http://www.websocket.org) allows bi-directional web communication between client and server and provides a true standard that can be used to build scalable, real-time web applications.
-
-
-
-
 
 
 ## Cloud 66 configuration for WebSocket
@@ -40,19 +30,9 @@ You can use a different port to use WebSocket (not supported by Cloud 66) but yo
 Find out more about [Stack networking page]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/network-configuration.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/network-configuration.html{% endif %}).
 
 
-
-
-
-
 ## WebSocket through a load balancer
 
 At any time, you can use a load balancer and scale up your servers to have more redundancy and capacity for your WebSocket servers.
-
-
-
-
-
-
 
 
 
@@ -65,17 +45,9 @@ Learn more about [Cloud 66 HAProxy and WebSocket](https://help.cloud66.works/{{ 
 **Linode** alternative HTTP ports 8080 and 8443 are opened on NodeBalancers and can be used for WebSockets.
 
 
-
-
-
-
 ## Test your WebSocket server
 
 To test your WebSocket server, create a `.html` file with the code below, make sure to replace *\<your_address\>* with your WebSocket server IP address and finally, open it in a web browser.
-
-
-
-
 
 ```
 <html>
@@ -107,6 +79,4 @@ To test your WebSocket server, create a `.html` file with the code below, make s
   </body>
 </html>
 ```
-
-
 

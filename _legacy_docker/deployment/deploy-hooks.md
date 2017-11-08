@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 # What are deploy hooks?
 
 Deploy hooks are scripts that allow you to take action at various points during the deployment process. This helps you customize the deployment of your application to meet your particular needs.
@@ -25,17 +19,9 @@ Deploy hooks are scripts that allow you to take action at various points during 
 * * *
 
 
-
-
-
-
 # Hook points
 
 The deployment process is divided into a number of steps, and hook points allow you to intervene at various points during this process.
-
-
-
-
 
 <table class="table table-bordered table-striped table-small"> 
    <tbody> 
@@ -98,13 +84,7 @@ The deployment process is divided into a number of steps, and hook points allow 
   </table> 
 
 
-
-
 * * *
-
-
-
-
 
 
 # Hook fields
@@ -115,8 +95,6 @@ There are three types of deploy hooks, and the fields available (and required) v
 2.  **Commands:** run your own commands.
 3.  **Existing Scripts:** use your own existing scripts for more comprehensive procedures (Rails/Node stacks only)
 4.  **Inline Scripts:** use your own inline scripts for more comprehensive procedures
-
-
 
  <table class="table table-bordered table-striped table-small"> 
    <thead valign="top"> 
@@ -364,27 +342,15 @@ There are three types of deploy hooks, and the fields available (and required) v
 </table> 
 
 
-
-
-
-
 # How to use deploy hooks
 
 To make use of deploy hooks, your stack should have a file called _deploy_hooks.yml_.
 
 For **Rails/Rack** stacks this file should be present within a folder named _.cloud66_, which is in turn located in the root of your source code.
 
-
-
-
-
 ```
 /.cloud66/deploy_hooks.yml
 ```
-
-
-
-
 
 For **Docker stacks** this file should be pushed into [CustomConfig git](https://help.cloud66.works/{{ include.product }}/stack-management/custom-git-repository.html) Repository of the stack. This repository will be created after the stack is analysed, so you can push your deploy hooks before deployment started.
 
@@ -400,17 +366,9 @@ Creating a deploy hook from scratch consists of a number of steps:
 Automating deploy hooks can sometimes be tricky. To avoid issues, it's good practice to run each of your commands manually to see that they complete successfully. If a specific command doesn't show any output, you can use the `echo $?` command after issuing your command to see its exit code. If it returns a _zero_, your command was successful, whereas a _one_ means it has failed.
 
 
-
-
-
-
 ## Use a snippet deploy hook
 
 Below is a bare-bone example of using a snippet with the required fields - it will execute the [Cloud 66 Node snippet](https://raw.githubusercontent.com/cloud66/snippets/master/cloud66/node) as the first thing on all production servers.
-
-
-
-
 
 ```
 production: # Environment
@@ -420,15 +378,7 @@ production: # Environment
         execute: true
 ```
 
-
-
-
-
 You can also run several snippets at the same hook point like follows:
-
-
-
-
 
 ```
 production: # Environment
@@ -441,24 +391,12 @@ production: # Environment
         execute: true
 ```
 
-
-
-
-
 See the available hook points and fields for more ways to customize this.
-
-
-
-
 
 
 ## Use a command deploy hook
 
 The hook example below can be used to install anything from packages to fonts on your server, and you can nest different hooks for the same hook point like follows:
-
-
-
-
 
 ```
 production: # Environment
@@ -472,22 +410,12 @@ production: # Environment
 ```
 
 
-
-
-
-
 ### Important
 
 When automating the installation of packages, remember to use the _-y_ flag to answer yes to all prompts.
 
 
-
-
 The example below can be used to run custom rake tasks during server build. If you need to run it more than once, consider using the [rake task add-in](https://help.cloud66.works/rails/addins/jobs/rake-task.html).
-
-
-
-
 
 ```
 production: # Environment
@@ -498,24 +426,12 @@ production: # Environment
         apply_during: build_only
 ```
 
-
-
-
-
 This will run our rake task on one Rails server and only during the initial build. We run this as a last_thing hook because if we ran it earlier the application wouldn't exist on the server and be usable.
-
-
-
-
 
 
 ## Use an existing script deploy hook (Rails/Node stacks only)
 
 The hook below will copy a file from your repository to your _tmp_ folder and execute it during build.
-
-
-
-
 
 ```
 production: # Environment
@@ -526,12 +442,6 @@ production: # Environment
         execute: true
         apply_during: build_only
 ```
-
-
-
-
-
-
 
 
 

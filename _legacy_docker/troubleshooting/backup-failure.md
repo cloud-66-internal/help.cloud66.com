@@ -10,11 +10,7 @@ permalink: /:collection/:path
 ---
 
 
-
-
 ## PostgreSQL
-
-
 
 When Cloud 66 takes database backup it needs **twice** the size of your database data directory (`/usr/local/pgsql/data/`). It uses the environment variable `POSTGRESQL_DATABASE` for taking the backup.
 

@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## About Network Settings
 
 The _Network Settings_ page contains all things network-related, in four tabs:
@@ -28,19 +22,11 @@ The _Network Settings_ page contains all things network-related, in four tabs:
 - **Redirects:** Sets server-level redirects for web traffic
 
 
-
-
-
-
 ## What is ActiveProtect&trade;?
 
 All stacks deployed with Cloud 66 are automatically protected against [denial of service](http://en.wikipedia.org/wiki/Denial-of-service_attack) and [brute-force](http://en.wikipedia.org/wiki/Brute-force_attack) attacks. The _ActiveProtect_ page shows a list of current and past attacks (in the last 24 hours) with information about the source and destination.
 
 Servers deployed with Cloud 66 only allow incoming SSH traffic from known IP addresses. To protect against brute-force SSH attacks, the servers are also configured to only accept SSH keys and not passwords. However, it is possible that user configurations result in vulnerabilities, and for such cases, repeated SSH login attempts are detected and blocked for at least 10 minutes.
-
-
-
-
 
 
 ## Firewall
@@ -50,19 +36,9 @@ The _Firewall_ tab allows you to configure and apply firewall rules per server f
 By default, Cloud 66 gateway servers (eg. 54.84.166.97) are the only servers allowed SSH (port 22) access to stack servers. The default firewall rules include database and web ports appropriate for the stack deployed but also includes ports 8080 and 8443 as alternative HTTP ports for WebSocket-based applications like [Faye](https://help.cloud66.works/rails/tutorials/1950-09-26-implementing-faye.html). Editing and removing the default firewall rules is disabled to secure accessibility to the servers at all times.
 
 
-
-
-
-
 ### Add a firewall rule
 
 To add your own rules, click _Add a new firewall rule_. You can input single IP addresses or ranges, and the dropdown allows you to choose servers by name (eg. _Rails servers_).
-
-
-
-
-
-
 
 
 
@@ -72,21 +48,11 @@ If you want to open a custom port to you server in Microsoft Azure, you must add
 
 
 
-
-
-
-
-
-
 ## Configure network traffic
 
 By default, all traffic is allowed to visit your web servers on ports 80, 443, 8080 and 8443. The _Traffic_ tab allows you to control this, and has two sections: _allowed_ traffic sources and _denied_ traffic sources.
 
 For each of these fields, you can enter a single IP address, a comma-separated list, or range. For example:
-
-
-
-
 
 ```
 23.213.76.19
@@ -97,19 +63,9 @@ For each of these fields, you can enter a single IP address, a comma-separated l
 
 
 
-
-
-
-
-
-
 ### Allowing traffic
 
 Repeated visits within a short time period on the ports mentioned above (more than 1,500 hits per minute from a single IP address) are blocked by ActiveProtect. By allowing traffic for a specific IP address or range, this limit is ignored. You can also choose not to block traffic coming from Cloudflare edge servers.
-
-
-
-
 
 
 ### Denying traffic
@@ -117,17 +73,9 @@ Repeated visits within a short time period on the ports mentioned above (more th
 You can block specific IPs and/or ranges from visiting the ports mentioned above.
 
 
-
-
-
-
 ## Using network redirects
 
 The _Redirects_ tab helps you perform simple but frequently used network redirects. These include redirecting traffic from _HTTP_ to _HTTPS_ or adding or removing the _www_ prefix from your domain name.
-
-
-
-
 
 
 ### Maintenance mode
@@ -142,19 +90,9 @@ To supply your own maintenance page, simply place your file in the following pat
 
 You can find it in *Stack page* --> *Network settings* --> *Redirects* tab
 
-
-
-
-
 ```
 /.cloud66/maintenance.html
 ```
-
-
-
-
-
-
 
 
 
@@ -166,10 +104,6 @@ You can easily [add your SSL certificates](https://help.cloud66.works/{{ include
 This works by reconfiguring your Nginx configuration, so any visitor that arrives at port 80 and HTTP will receive a permanent HTTP redirect (301) to the same address on HTTPS.
 
 You can find it in *Stack page* --> *Network settings* --> *Redirects* tab 
-
-
-
-
 
 
 ### WWW or non-WWW in your URL

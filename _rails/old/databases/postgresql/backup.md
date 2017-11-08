@@ -11,26 +11,14 @@ permalink: /:collection/:path
 
 {% assign dbtype = "postgres" %}
 
-
-
-
-
 ## What is the database backup add-in?
 
 Use this add-in to backup your database on a schedule of your choosing.  You can choose from different settings to have your expected behavior :
 
 
-
-
-
-
 ## Backup types
 
 Cloud 66 provides two types of backups: _managed_ and _unmanaged_.
-
-
-
-
 
 
 ### Managed backups
@@ -46,27 +34,15 @@ Having managed backups carries several benefits:
 The 100 most recent managed backups are kept by default.
 
 
-
-
-
-
 ### Unmanaged backups
 
 Unmanaged backups are stored on your local server and are available under `/var/cloud66/backups`. The 10 most recent unmanaged backups are kept by default.
-
-
-
-
 
 
 ## Backup format
 
 Backup format for redis and mongodb is always **binary**.  For _Mysql_ and _Postgresql_ you can choose between **binary** and **text**.
 Each format has its own benefits and downsides : 
-
-
-
-
 
 
 ### Binary
@@ -80,10 +56,6 @@ As this backup contains raw data of your database server(Instead of human readab
 - You can not use it on encrypted databases 
 - You need to shutdown the database service during the restore 
 
-
-
-
-
 ### Text
 
 For this format we are generating a dump file with SQL commands that, when fed back to the server, will recreate the database in the same state as it was at the time of the dump.
@@ -92,10 +64,6 @@ These are other benefits of this type of backup :
 
 - You can restore this backup when server is up and running.
 - You can move backup jobs to your slave servers (if available) to reduce your master server load
-
-
-
-
 
 
 ## Backup schedule
@@ -108,17 +76,9 @@ You can specify how often you would like to backup your database. It could be
 - Monthly 
 
 
-
-
-
-
 ## Compression
 
 You can specify whether or not you would like to Gzip compress your backups. Compressing your backups will take up less space, but will require additional processing during the compression.  
-
-
-
-
 
 
 ## Exclude tables
@@ -126,17 +86,9 @@ You can specify whether or not you would like to Gzip compress your backups. Com
 This option applies to **text** MySQL and PostgreSQL backups.  You can provide a comma separated list of tables which you want to exclude from your backup to create a smaller one.   
 
 
-
-
-
-
 ## Install on replica
 
 This option applies to **text** MySQL and PostgreSQL and redis backups. With this option you can move the backup service to your database replica if available, to relieve pressure from your production database. 
-
-
-
-
 
 
 ## Note
@@ -145,18 +97,8 @@ Add/Remove Postgresql binary backup needs a service restart.
 
 
 
-
-
-
-
-
-
 ## Note
-
-
 In order for backups to work, you are required to have twice as much space on your server as your backup consumes.
-
-
 
 
 ## Downloading backup
@@ -164,17 +106,9 @@ In order for backups to work, you are required to have twice as much space on yo
 You can retrieve your backup in one of three ways:
 
 
-
-
-
-
 ### Cloud 66 toolbelt
 
 You can retrieve your database backup by using the [toolbelt backup management](http://help.cloud66.com/{{ include.product }}/toolbelt/backups.html). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
-
-
-
-
 
 
 ### Download script
@@ -184,13 +118,7 @@ Download the script and transfer it to the desired server or simply click on **C
 By running the download script, your backup will be downloaded (and concatenated if it is a multi part backup) and prepared to be ready to restore. At final step , script will show you the steps you need to follow in order to restore downloaded backup.
 
 
-
-
-
-
 ## Pricing
-
-
 <table class="table table-bordered table-striped table-small"> 
  <thead> 
   <tr> 
@@ -216,7 +144,5 @@ By running the download script, your backup will be downloaded (and concatenated
         
 
     
-
-
 
 

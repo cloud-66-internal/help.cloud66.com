@@ -11,19 +11,13 @@ permalink: /:collection/:path
 ---
 
 
-
-
 <div class="notice notice-warning">
 Maestro is part of the new Cloud 66 product line. If you are using Cloud 66 for Docker, you will get all Maestro benefits without the need to switch to using Maestro.
 </div>
 
-
-
 ## What is Maestro?
 
 Maestro is a full stack Application Management service. It takes care of building your infrastructure (servers, load balancers, etc) for you on your own servers in the cloud. It also manages deployment and maintenance of your entire stack. Maestro can be seamlessly integrated with Skycap and use the images built by Skycap to deploy your application in any environment. 
-
-
 
 ## Getting Started
 
@@ -32,13 +26,9 @@ You can deploy your app to any of your favorite cloud providers or to your own r
 To get started, create a new Maestro stack add your services or use a Skycap stack and click on the Start Deployment button.
 
 
-
-
 <div class="notice notice-warning">
 Ready to deploy? Setup a new deployment to a public cloud provider or your own registered server.
 </div>
-
-
 
 
 ## Setting up a Docker Deployment
@@ -47,10 +37,6 @@ Ready to deploy? Setup a new deployment to a public cloud provider or your own r
     
 
         
-
-
-
-
 
 
 
@@ -68,27 +54,13 @@ The first step in the deployment process is to Choose an [environment](https://h
 
 
 
-
-
-
-
-
-
 ## Configuring Services
 
 In the example below we have a single Rails service. In this case it's been pulled from an image. The previous section of this guide explains how to [add and build images for your services](https://help.cloud66.works/legacy_docker/docker-getting-started-building-your-images.html).
 
 The Rails service is a web application so we need to configure it to handle web traffic.
 
-
-
  ![Build a new docker stack from the dashboard](/images/guides/docker_onboarding/docker_guide_services.png)
-
-
-
-
-
-
 
 
 ## Container Network Configuration
@@ -96,16 +68,8 @@ The Rails service is a web application so we need to configure it to handle web 
 The service will run inside a container, we need to configure it to respond to HTTP traffic. A standard web server listens on port 80 for HTTP traffic and 443 for HTTPS traffic.
 
 A Rails app listens to port 3000 so we should map the container port **3000** to the public Internet ports **80**  and **443**. Click the connector icon (circled in red above) to update the **container port** and **public internet** ports.
-
-
  ![Configuring docker container and public ports](/images/guides/docker_onboarding/container_ports_animated.gif)
-
-
 Containers can also serve non HTTP traffic. TCP and UDP protocols are also supported. [Learn more about Container Port Mapping](http://help.cloud66.com/building-your-stack/container-port-mapping)
-
-
-
-
 
 
 ## Adding Data Sources
@@ -115,8 +79,6 @@ The Rails app also needs a database, lets deploy this to a separate MySQL server
 ![Add another server](/images/guides/docker_onboarding/docker_guide_add_server_animated.gif)
     
 In this example we created a separate server for the database. If you have a low traffic site it's fine for your database to share with the Docker server.
-
-
 Lets add the MySQL Data Source, you can add as many Data Sources as your app requires.
 
 ![Adding a MySQL datasource to a stck](/images/guides/docker_onboarding/docker_guide_add_datasource.png)
@@ -124,10 +86,6 @@ Lets add the MySQL Data Source, you can add as many Data Sources as your app req
 Now the Rails app is configured to run in a container and we've setup a separate MySQL database server. All that remains is to decide what cloud provider to use and what server size and region we should deploy to.
 
 Remember, you can also deploy to your own servers. However you should first [add them as registered servers](http://help.cloud66.com/deployment/registered-servers).
-
-
-
-
 
 
 ## Configuring Servers
@@ -140,19 +98,11 @@ We need to choose a cloud provider for the deployment. For this example we'll us
 
 [How to choose the right size server](https://help.cloud66.com/getting-started/choosing-server-size).
 
-
-
-
-
 ## Deployment
 
 Now everything is ready to go, just hit the deploy button. During the build and deployment process you can view the log to see what's happening behind the scenes.
 
 ![image](/images/guides/docker_onboarding/docker_guide_deploying.gif)
-
-
-
-
 
 
 ## Advanced Features

@@ -12,17 +12,9 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
 ## About using team accounts
 
 Adding new users to your Cloud 66 account is a great way to work in a team, and access rights can be fine-tuned per stack. They range from no privileges on a stack to full administrative privileges.
-
-
-
-
 
 ## Account user roles and permissions
 
@@ -44,10 +36,6 @@ By definition, any user with access to a stack will automatically be given the r
 
 You also have the option of allowing team members to create a new stack and etc. The creator of a stack becomes its default stack administrator, although this setting can be changed by the team leader. In addition to this, you can also allow a user to control permissions for others.
 
-
-
-
-
 ## Add a team member
 
 To invite your team members, access your _Account_ page and select the _Organizations & Team_ menu.
@@ -58,27 +46,15 @@ Next, click into the _Team_ tab, and click the _+_ button in the top right corne
 
 Upon confirmation, an email will be sent to the email address specified, giving this user the option to sign up for Cloud 66 with their specified email address. If the invited email already has a Cloud 66 account, they will be notified of the pending invitation. By accepting the invitation, they will join your team.
 
-
-
-
-
 ## Switch organizations
 
 If you are part of several organizations, you will have to switch organization to see stacks that belong to a different organization. To switch your organization, use the dropdown menu in the top right corner of your Cloud 66 account, and simply select the name of the organization you would like to switch to.
-
-
-
-
 
 ## Leave a team
 
 To leave a team, visit the _Account_ page, then click _Organizations & Team_. Next, find the organization you would like to leave, and click the _Leave_ button.
 
 You cannot leave your primary organization (the one you own).
-
-
-
-
 
 ## Add a role
 
@@ -88,17 +64,11 @@ You need to give your team a name before inviting other members. This is the sam
 
 Next, click the _+_ button in the top right corner of _Roles_ section. This will allow you to choose a role name. Then you click on the permission tab chosse the role you just made and set the permissions by ticking the check boxes to give permissions.
 
-
-
-
-
 ## Pricing
 
 | Team members  | 1 - 3 |  3+* |
 | ------------- |:-----:| ----:|
 | Monthly       |  $15  |  $3  |
-
-
 
 
 ##### * For each additional user.

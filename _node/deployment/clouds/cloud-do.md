@@ -12,19 +12,9 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## About using DigitalOcean cloud
 
 You can use Cloud 66 to provision and deploy your code to servers in any [DigitalOcean region](http://developers.cloud66.com/#cloud-vendor-instance-regions). Private networking is enabled for all data centers that support it. This means that servers can communicate freely between each other on the same network without counting towards bandwidth costs.
-
-
-
-
 
 
 ## Authorise Cloud 66 to your DigitalOcean
@@ -38,21 +28,9 @@ Upon clicking the _Authorize_ button, you will be redirected to DigitalOcean to 
 If you are upgrading your keys from API v1 to v2, visit your Account Cloud keys page and edit your existing cloud key to authorize it with DigitalOcean. You need to be the account owner in order to update these credentials.
 
 
-
-
-
-
-
-
 ### Notice
 
 Should you wish to delete your stack on Cloud 66, your servers **will not** be deleted on your cloud provider unless [physical server deletion](/managing-your-stack/server-deletion) is turned on.
-
-
-
-
-
-
 
 
 

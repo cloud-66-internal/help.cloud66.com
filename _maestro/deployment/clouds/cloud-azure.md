@@ -10,19 +10,9 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## About using Microsoft Azure cloud
 
 You can use Cloud 66 to provision and deploy your code to servers in any [Azure region](http://developers.cloud66.com/#introduction-cloud-vendor-instance-regions).
-
-
-
-
 
 
 ## Generating a management certificate
@@ -41,8 +31,6 @@ To generate a management certificate you can use OpenSSL:
     ```
 
 
-
-
 ## Using your management certificate
 
 Access _Management portal_ of your Azure account and go to the _Settings_ menu. You will need the _Subscription ID_ which is listed in _Subscriptions_ tab. Select the _Management certificate_ tab and click the _Upload_ button to upload `azure.cer`.
@@ -51,16 +39,8 @@ Now visit your Cloud 66 dashboard and [build your first stack](http://help.cloud
 
 
 
-
-
-
-
-
-
 ### Notice
 
 Should you wish to delete your stack on Cloud 66, your servers **will not** be deleted on your cloud provider unless [physical server deletion](/managing-your-stack/server-deletion) is turned on.
-
-
 
 

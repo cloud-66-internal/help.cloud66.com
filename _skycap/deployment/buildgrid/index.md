@@ -8,8 +8,6 @@ legacy: false
 permalink: /:collection/:path
 ---
 
-
-
 - [Build Grid](build-grid.html)
 - [Buildgrid Settings](buildgrid-settings.html)
 

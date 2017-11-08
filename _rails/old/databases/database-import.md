@@ -12,21 +12,11 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## About one-time database imports
 
 One-time database imports allow you to easily transfer your database from one stack to another, using **MySQL**, **PostgreSQL**, **MongoDB** and **Redis** databases.
 
 To use this feature, you will need two stacks with the same database type - one is the _source_ and the other is the _target_ for the data migration. This process will import the latest available **managed backup** from your _source_ stack, replacing the contents of your _target_ with the backup. We recommend that you backup your _target_ database before running this.
-
-
-
-
 
 
 ## Using one-time database imports
@@ -37,21 +27,9 @@ Select the stack you want to use as a _source_ and click _Import_, which will st
 
 
 
-
-
-
-
-
-
 ### Note
 
 You need _Control stack_ access rights to see the _One-time data import_ icon. Additionally, you will only see _source_ stacks that you have _Stack administrator_ rights to.
-
-
-
-
-
-
 
 
 ## Troubleshoot

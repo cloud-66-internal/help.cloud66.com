@@ -8,11 +8,7 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "General" %}
-
-
 
 
 Browser versions are frequently updated to offer new features, address problems, optimize performance, and most importantly, ensure security. Therefore, it’s good practice to upgrade your browser whenever the most recent version is available.
@@ -23,5 +19,3 @@ In order to plan ahead and take full advantage of the features on Cloud66 as wel
 
 - Use a modern web browser, for example the latest version of Chrome, Safari, Firefox and Internet Explorer.
 - Have JavaScript enabled at all times.
-
-

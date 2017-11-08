@@ -12,28 +12,14 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## What is the database backup add-in?
 
 Use this add-in to backup your database on a schedule of your choosing.  You can choose from different settings to have your expected behavior :
 
 
-
-
-
-
 ## Backup types
 
 Cloud 66 provides two types of backups: _managed_ and _unmanaged_.
-
-
-
-
 
 
 ### Managed backups
@@ -49,27 +35,15 @@ Having managed backups carries several benefits:
 The 100 most recent managed backups are kept by default.
 
 
-
-
-
-
 ### Unmanaged backups
 
 Unmanaged backups are stored on your local server and are available under `/var/cloud66/backups`. The 10 most recent unmanaged backups are kept by default.
-
-
-
-
 
 
 ## Backup format
 
 Backup format for redis and mongodb is always **binary**.  For _Mysql_ and _Postgresql_ you can choose between **binary** and **text**.
 Each format has its own benefits and downsides : 
-
-
-
-
 
 
 ### Binary
@@ -83,10 +57,6 @@ As this backup contains raw data of your database server(Instead of human readab
 - You can not use it on encrypted databases 
 - You need to shutdown the database service during the restore 
 
-
-
-
-
 ### Text
 
 For this format we are generating a dump file with SQL commands that, when fed back to the server, will recreate the database in the same state as it was at the time of the dump.
@@ -95,10 +65,6 @@ These are other benefits of this type of backup :
 
 - You can restore this backup when server is up and running.
 - You can move backup jobs to your slave servers (if available) to reduce your master server load
-
-
-
-
 
 
 ## Backup schedule
@@ -111,17 +77,9 @@ You can specify how often you would like to backup your database. It could be
 - Monthly 
 
 
-
-
-
-
 ## Compression
 
 You can specify whether or not you would like to Gzip compress your backups. Compressing your backups will take up less space, but will require additional processing during the compression.  
-
-
-
-
 
 
 ## Exclude tables
@@ -129,17 +87,9 @@ You can specify whether or not you would like to Gzip compress your backups. Com
 This option applies to **text** MySQL and PostgreSQL backups.  You can provide a comma separated list of tables which you want to exclude from your backup to create a smaller one.   
 
 
-
-
-
-
 ## Install on replica
 
 This option applies to **text** MySQL and PostgreSQL and redis backups. With this option you can move the backup service to your database replica if available, to relieve pressure from your production database. 
-
-
-
-
 
 
 ## Note
@@ -148,18 +98,8 @@ Add/Remove Postgresql binary backup needs a service restart.
 
 
 
-
-
-
-
-
-
 ## Note
-
-
 In order for backups to work, you are required to have twice as much space on your server as your backup consumes.
-
-
 
 
 ## Downloading backup
@@ -167,17 +107,9 @@ In order for backups to work, you are required to have twice as much space on yo
 You can retrieve your backup in one of three ways:
 
 
-
-
-
-
 ### Cloud 66 toolbelt
 
 You can retrieve your database backup by using the [toolbelt backup management](http://help.cloud66.com/{{ include.product }}/toolbelt/backups.html). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
-
-
-
-
 
 
 ### Download script
@@ -187,45 +119,27 @@ Download the script and transfer it to the desired server or simply click on **C
 By running the download script, your backup will be downloaded (and concatenated if it is a multi part backup) and prepared to be ready to restore. At final step , script will show you the steps you need to follow in order to restore downloaded backup.
 
 
-
-
-
-
 ### Manually download
 
 In download backup page (Cloud66 dashboard), you have this option to manually download backups. By clicking on **Manually download backups** you will see some signed(time bound) generated link(s) for your backup (Or its part if it is greater than 350MB). 
 You can use **curl** to download it : 
 
 
-
-
 ```
 $ curl -o "YOUR_BACKUP_FILE_NAME" "GENERATED_URL"
 ```
-
-
 **Example**
-
-
 
 
 ```
 $ curl -o "mysql.tar.aa" "https://c66-managed-backup.s3.amazonaws.com/a657f3e657771822b6e7b/backups/54335cfce20127c3/mysql/OsZOe/2017.01.11.14.00.21/mysql.tar.aa?AWSAccessKeyId=AKIAJXHLWDDQ&Expires=1484144370&Signature=9MACFYOLIQ%2FsXqqqi"
 ```
-
-
 You need to concatenate different parts if you have a multipart backup in order to be able to use it. As an example if your backup contains four parts called mysql.tar.aa, mysql.tar.ab, mysql.tar.ac, mysql.tar.ad you can use bellow command for concatenation after downloading them :
-
-
 
 
 ```
 $ cat mysql.tar.aa mysql.tar.ab mysql.tar.ac mysql.tar.ad > mysql.tar 
 ```
-
-
-
-
 
 
 ## Restore backup
@@ -237,25 +151,13 @@ After you downloaded a backup you will need to follow couple of steps base on yo
 First step is to **untar**  downloaded backup (Unless you are using download script which will untar the result automatically)
 
 
-
-
-
-
 ```
 $ tar -xvf <tar_file> -C <folder_name>
 ```
 
-
-
-
-
 The -C option allows you to choose which folder to extract the files to.
 
 After you have an unarchived version of your backup ready in a folder you should follow some steps base on your database type.
-
-
-
-
 
 
 ### Mysql
@@ -263,17 +165,9 @@ After you have an unarchived version of your backup ready in a folder you should
 First you need to detect if the backup is a **Text backup** or **Binary Backup**.  Run following command on the result folder of previous step :
 
 
-
-
-
-
 ```
 $ find /path/to/unarchived/folder '(' -name '*.sql' -o -name '*.sql.gz' ')' -type f) 
 ```
-
-
-
-
 
 If the command return a result it is a text backup and if the result is empty it is a binary backup.
 
@@ -281,54 +175,26 @@ If the command return a result it is a text backup and if the result is empty it
 1. Run following command to flatten the folder 
 
 
-
-
-
-
 ```
 $ find /path/to/unarchived/folder -type f -exec mv -i {} /path/to/unarchived/folder \;  
 ```
 
-
-
-
-
 2. Run following command to find the data file
-
-
-
-
 
 
 ```
 $ find /path/to/unarchived/folder '(' -name '*.sql' -o -name '*.sql.gz' ')' -type f -exec basename {} ';'    
 ```
 
-
-
-
-
 3. If the result of previous step has a *.gz extension run following command to unzip it, unless go to next step.
-
-
-
-
 
 
 ```
 $ gzip -d /path/to/unarchived/folder/data_file_from_previous_step
 ```
 
-
-
-
-
 4. On order to clean old data you can drop your current db and create a new one. You can use following scripts to drop and recreate your database but first you need to set some environment variables.
 You can find YOUR_MYSQL_DB_APP_USERNAME, YOUR_MYSQL_DB_APP_PASSWORD,YOUR_MYSQL_ADMIN_USERNAME,YOUR_MYSQL_ADMIN_PASSWORD and YOUR_MYSQL_DATABASE_NAME in Cloud66 Dashboard Mysql server detail page.
-
-
-
-
 
 
 ```
@@ -338,15 +204,7 @@ $ export $MYSQL_ADMIN_USERNAME=YOUR_MYSQL_ADMIN_USERNAME"
 $ export $MYSQL_DATABASE_NAME=YOUR_MYSQL_DATABASE_NAME"
 ```
 
-
-
-
-
 4.1 Use following commands to drop your database 
-
-
-
-
 
 
 ```
@@ -354,30 +212,14 @@ $ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD -e "DROP DATABASE $MYSQ
 $ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD -e "FLUSH PRIVILEGES ;"
 ```
 
-
-
-
-
 4.2 Use following command to create a new database 
-
-
-
-
 
 
 ```
 $ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD -e "CREATE DATABASE $MYSQL_DATABASE_NAME CHARACTER SET utf8;"
 ```
 
-
-
-
-
 4.3 Use following commands to revoke user's privileges
-
-
-
-
 
 
 ```
@@ -386,15 +228,7 @@ $ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD -e "REVOKE ALL PRIVILEG
 $ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD -e "FLUSH PRIVILEGES;"
 ```
 
-
-
-
-
 4.4 Use following commands to give enough permission to you app user
-
-
-
-
 
 ```
 $ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD -e "GRANT  SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,INDEX,ALTER,LOCK TABLES,CREATE VIEW,SHOW VIEW,EXECUTE,TRIGGER,CREATE TEMPORARY TABLES,CREATE ROUTINE,ALTER ROUTINE,EXECUTE,REFERENCES  ON $MYSQL_DATABASE_NAME.*  TO '$MYSQL_DB_APP_USERNAME'@'localhost';"
@@ -402,17 +236,11 @@ $ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD -e "GRANT  SELECT,INSER
 $ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD -e "FLUSH PRIVILEGES;"
 ```
 
-
-
  5.You can use following command to restore your database 
-
-
 ```
 $ mysql -u $MYSQL_ADMIN_USERNAME -p$MYSQL_ADMIN_PASSWORD $MYSQL_DATABASE_NAME 
 
 ```
-
-
 **Restore Mysql Binary backup**
 
 You need Percona innobackupex to be able to restore a mysql binary backup. Percona innobackupex is installed on your mysql server if it is provisioned by Cloud66. You can use following command to install it on any other ubuntu servers :
@@ -445,8 +273,6 @@ $ sudo service mysql stop
 $ sudo systemctl stop mysql
 ```
 Use following command to delete Mysql data directory
-
-
 
 
 ## Note
@@ -482,24 +308,14 @@ $ sudo systemctl start mysql
 ```
 
 
-
-
 ### Postgresql
 
 First you need to detect if the backup is a **Text backup** or **Binary Backup**.  Run following command on the result folder of previous step :
 
 
-
-
-
-
 ```
 $ find /path/to/unarchived/folder '(' -name '*.sql' -o -name '*.sql.gz' ')' -type f) 
 ```
-
-
-
-
 
 If the command return a result it is a text backup and if the result is empty it is a binary backup.
 
@@ -509,64 +325,32 @@ If the command return a result it is a text backup and if the result is empty it
  	Run following command to flatten the folder 
 
 
-
-
-
-
 ```
 $ find /path/to/unarchived/folder -type f -exec mv -i {} /path/to/unarchived/folder \;  
 ```
 
-
-
-
-
 2\. 	Run following command to find the data file
-
-
-
-
 
 
 ```
 $ find /path/to/unarchived/folder '(' -name '*.sql' -o -name '*.sql.gz' ')' -type f -exec basename {} ';'    
 ```
 
-
-
-
-
 3\. 	If the result of previous step has a *.gz extension run following command to unzip it, unless go to next step.
-
-
-
-
 
 
 ```
 $ gzip -d /path/to/unarchived/folder/data_file_from_previous_step
 ```
 
-
-
-
-
 4\. On order to clean old data you can drop your current db and create a new one. You can use following scripts to drop and recreate your database but first you need to set some environment variables.
 You can find YOUR_PG_DATABASE_NAME and YOUR_PG_APP_USERNAME in Cloud66 Dashboard Postgresql server detail page.
-
-
-
-
 
 
 ```
 $ export $PG_DATABASE_NAME=YOUR_PG_DATABASE_NAME
 $ export $PG_APP_USERNAME=YOUR_PG_APP_USERNAME"
 ```
-
-
-
-
 
 4.1 Use following command to stop all the activities on your db 
 
@@ -616,10 +400,6 @@ $ sudo systemctl stop postgresql
 ```
 Use following command to delete Postgresql data directory
 
-
-
-
-
 ## Note
 
 Please take a backup from Postgresql data directory before deleting it to be able to restore if something goes wrong.
@@ -667,77 +447,37 @@ $ sudo systemctl start  postgresql"
 ```
 
 
-
-
 ### Redis
 
 1. Run following command to flatten the folder 
-
-
-
-
 
 
 ```
 $ find /path/to/unarchived/folder -type f -exec mv -i {} /path/to/unarchived/folder \;  
 ```
 
-
-
-
-
 2. Run following command to find the data file
-
-
-
-
 
 
 ```
 $ find /path/to/unarchived/folder '(' -name '*.rdb' -o -name '*.rdb.gz' ')' -type f -exec basename {} ';'    
 ```
 
-
-
-
-
 3. If the result of previous step has a *.gz extension run following command to unzip it, unless go to next step.
-
-
-
-
 
 
 ```
 $ gzip -d /path/to/unarchived/folder/data_file_from_previous_step
 ```
 
-
-
-
-
 3. Use following command to stop Redis service : 
-
-
-
-
 
 
 ```
 $ sudo bluepill cloud66_redis stop || sudo service redis stop
 ```
 
-
-
-
-
 4. Use following command to delete Redis data file
-
-
-
-
-
-
 
 
 
@@ -745,53 +485,25 @@ $ sudo bluepill cloud66_redis stop || sudo service redis stop
 
 Please take a backup from Redis data file before deleting it to be able to restore if something goes wrong.
 
-
-
-
-
 ```
 $ sudo rm -rf /data/redis/dump.rdb
 ```
 
-
-
-
-
 5\. Use following command to copy new data file 
-
-
-
-
 
 
 ```
 $ sudo cp -a /path/to/unarchived/folder/data_file /data/redis/dump.rdb
 ```
 
-
-
-
-
 6\. Run following command to fix the permission of Redis data directory :
-
-
-
-
 
 
 ```
 $ sudo chown -R redis:redis /data/redis 
 ```
 
-
-
-
-
 7\. Run following command to start Redis service
-
-
-
-
 
 
 ```
@@ -801,68 +513,34 @@ $ sudo bluepill cloud66_redis start || sudo service redis start
 
 
 
-
-
-
-
-
-
 ### MongoDB
 
 1. Run following command to see if there is database folder in unarchived folder (Replace YOUR_DATABASE_NAME with correct value): 
-
-
-
-
 
 
 ```
 $ find /path/to/unarchived/folder  -name YOUR_DATABASE_NAME -type d
 ```
 
-
-
-
-
 If the command return a result, that is data directory we want to restore. Go to final step.
 
 2. Run following command to flatten the folder
-
-
-
-
 
 
 ```
 $ find /path/to/unarchived/folder -type f -exec mv -i {} /path/to/unarchived/folder \;
 ```
 
-
-
-
-
 3. Run following command to find the data file
-
-
-
-
 
 
 ```
 $ find /path/to/unarchived/folder '(' -name 'MongoDB.tar' -o -name 'Mongo*.tar.gz' ')' -type f -exec basename {} ';'    
 ```
 
-
-
-
-
 If the result of command  has a *.gz extension go to 3.1 unless use 3.2
 
 3.1
-
-
-
-
 
 
 ```
@@ -871,15 +549,7 @@ $ rm -rf /path/to/unarchived/folder/Mongo*.tar.gz
 $ rm -rf /path/to/unarchived/folder/MongoDB
 ```
 
-
-
-
-
 3.2
-
-
-
-
 
 
 ```
@@ -888,15 +558,7 @@ $ rm -rf /path/to/unarchived/folder/MongoDB.tar
 $ rm -rf /path/to/unarchived/folder/MongoDB
 ```
 
-
-
-
-
 4. Run following command to clean the unzipped folder (Replace YOUR_DATABASE_NAME with correct value) :
-
-
-
-
 
 
 ```
@@ -904,16 +566,8 @@ $ rm -rf /path/to/unarchived/folder/YOUR_DATABASE_NAME
 $ find /path/to/unarchived/folder -empty -type d -delete
 ```
 
-
-
-
-
 5. Run following command to restore MongoDB. 
 If the step 1 has a result use that as /path/to/database/back unless use /path/to/unarchived/folder . Also replace YOUR_DATABASE_NAME with correct value 
-
-
-
-
 
 
 ```
@@ -923,15 +577,7 @@ $ mongorestore --drop --db YOUR_DATABASE_NAME  /path/to/database/back
 
 
 
-
-
-
-
-
-
 ## Pricing
-
-
 <table class="table table-bordered table-striped table-small"> 
  <thead> 
   <tr> 
@@ -957,7 +603,5 @@ $ mongorestore --drop --db YOUR_DATABASE_NAME  /path/to/database/back
         
 
     
-
-
 
 

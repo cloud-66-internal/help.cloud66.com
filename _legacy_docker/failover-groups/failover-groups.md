@@ -11,12 +11,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ### What is a failover group? 
 A failover group is a managed quick response DNS address that automatically follows your stack web endpoints. You can connect it to up to 2 stacks at any time - a _primary_ and _backup_ stack. Should you need to switch traffic between your stacks, simply flip the switch and your traffic will flow to the _backup_ stack within 5 minutes.
 
@@ -32,18 +26,10 @@ Failover groups follows the web head of your stack. In other words, it points to
 A great way to test this is to use the `dig` command in your terminal, for example `dig 414-262-781.cloud66.net`, which allows you to see where the DNS is pointing.
 
 
-
-
-
-
 ## Add a failover group
 To view your failover groups, click the _Failover Groups_ link on your _Dashboard_ page. To add a new failover group, click the _+_ button:
 
 You are then be able to select a _Primary_ and a _Backup_ stack for your failover group. Once you have a failover group, add a CNAME record in your DNS provider dashboard that points at the address provided.
-
-
-
-
 
 
 ## Notes
@@ -51,10 +37,6 @@ You are then be able to select a _Primary_ and a _Backup_ stack for your failove
 - Having a _backup_ stack is not mandatory.
 - You can only delete a failover group when it isn't pointing at any stacks.
 - Once you delete a failover group, the DNS record for it is permanently deleted and you won't be able to get the same address back.
-
-
-
-
 
 
 ## Environment variables

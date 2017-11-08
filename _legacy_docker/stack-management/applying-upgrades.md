@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## Cloud66 Update Packages Policy
 
 Cloud 66 aims to make it easier to build [immutable infrastructure](http://chadfowler.com/2013/06/23/immutable-deployments.html). Building servers and stacks from scratch is much better than modifying existing server configurations and tinkering with settings until things start to work.
@@ -35,37 +29,17 @@ In order to deal with the upgrades you have a few options:
 3.  Update the packages indirectly through scaling up a new server, and then dropping the old one (the new server will always get the latest packages installed on it)
 
 
-
-
-
-
-
-
 ### Tip:
 
 Some package updates (and security ones) require server-reboot. So again by scaling up we restart your new servers automatically to ensure everything is neat and clean! Alternatively you can reboot your servers manually or via the toolbelt should you wish!
 
 
-
-
-
-
-
-
 ## Upgrade package types
-
-
-
-
 
 
 ### Security updates
 
 In the event of a security vulnerability on any of the components we deploy on the servers, we aim to be as quick as possible to roll out the recommended patches for Ubuntu, Ruby and Rails.
-
-
-
-
 
 
 ### Ubuntu
@@ -75,17 +49,9 @@ From the _Deploy_ menu, choose _Deploy with Options_. By selecting _Apply securi
 Note that some security packages may require a server restart. We don't automatically restart your server, and it is at your discretion to do so. If the file `/var/run/reboot-required` exists, your server does in fact require a restart. To see which packages contributed to the requirement for a restart, please see `/var/run/reboot-required.pkgs`.
 
 
-
-
-
-
 ### Ruby
 
 There are generally three ways to upgrade Ruby on your stack, in decreasing magnitude of risk. Please ensure that the upgrades and patches work with your code before applying them. Upgrade and patch your development and test environments to ensure there are no issues. Backup your environment via your cloud provider where possible.
-
-
-
-
 
 
 #### Scaling up
@@ -93,11 +59,7 @@ There are generally three ways to upgrade Ruby on your stack, in decreasing magn
 Arguably the best option to use when upgrading Ruby is to scale up a new server within the same stack, and simply drop the old one. You can specify your new Ruby version in a  [manifest file](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html). Once you've pushed this change and deployed, scale up a new web server, which will use this version of Ruby. The previous server would remain on the old version of Ruby.
 
 
-
-
 Make sure you redeploy before you scale up, otherwise the new manifest will not be taken to account.
-
-
 
 
 There are a couple of small caveats to be aware of though - after you've done this process, you'll have servers in your stack on different Ruby versions. If you were to enforce a Ruby version in your Gemfile, this would mean that your application would stop working on either one of the servers (depending on which version you chose in your Gemfile).
@@ -105,10 +67,6 @@ There are a couple of small caveats to be aware of though - after you've done th
 You can scale-down your older web server to ensure all your web servers are the correct version, but your backend servers will still be the older version of Ruby. This may or may-not have any implication, depending on what you're doing with your servers. However, if you were to then run the "Ruby upgrade" job, this would sync all your servers to your new version of Ruby, so your backend servers would be upgraded at that point too.
 
 Also, if you have background jobs running on your old server, ensure that you gracefully shut these down before switching everything to the new server (to avoid lost jobs).
-
-
-
-
 
 
 #### In-place upgrades
@@ -123,12 +81,6 @@ When you _Deploy with options_ and select _Apply Ruby upgrades_, in addition to 
 
 
 
-
-
-
-
-
-
 ### Tip / Warning!
 
 If you have more than one server serving web, you can tick the _Serial Deployment_ in _Deployment Options_, and it will deploy without down-time, however, during the deployment some servers will be serving the new code and some the old one.   
@@ -139,21 +91,9 @@ If you are upgrading your Ruby base version then you should put your stack in ma
 
 
 
-
-
-
-
-
-
-
-
 #### Building a new stack
 
 Although the in-place Ruby base version upgrade path is provided for simplicity and ease, the _least risk strategy_ remains to apply the version changes to a new stack in parallel, and switch over when appropriate (as per the immutable infrastructure guidelines).
-
-
-
-
 
 
 ### Rails
@@ -161,19 +101,11 @@ Although the in-place Ruby base version upgrade path is provided for simplicity 
 You can bump up the Rails version in your `Gemfile` and redeploy your stack. This will upgrade your Rails. Ensure that you upgrade your Ruby and Rails applications with [best practices](http://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html).
 
 
-
-
-
-
 ### Passenger
 
 The recommended way to upgrade your passenger to the latest one is:
 
 * Scale up a new web server and drop the old one, so the scaled up one will automatically have the [latest version](https://help.cloud66.works/general/introduction/technical-specifications.html) supported by Cloud 66.
-
-
-
-
 
 
 ### Docker and Weave
@@ -189,12 +121,6 @@ It is best to keep your Docker and Weave versions up to date as they are release
 ### Warning!
 
 Upgrading in-place involves downtime as the docker engine and local files are all upgraded. To have zero down-time you'd have to clone your stack and use Failover groups to switch to the new one.
-
-
-
-
-
-
 
 
 ## About manual upgrades

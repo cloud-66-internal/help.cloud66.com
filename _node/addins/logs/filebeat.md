@@ -11,18 +11,8 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ### About using Filebeat
 [Filebeat](https://www.elastic.co/products/beats/filebeat) is an open source file harvester, used to fetch log files and feed them into Logstash, and this add-in makes it easy to add across your servers.
-
-
-
-
 
 
 ## Add Filebeat to your stack
@@ -38,16 +28,8 @@ If no logs are coming in, make sure that port 5044 is open on your ELK stack and
 
 
 
-
-
-
-
-
-
 ### Note
 
 For Docker stacks this will be added to the host, not as a container.
-
-
 
 

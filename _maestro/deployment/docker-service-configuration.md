@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## What is service configuration?
 
 Service configuration allows you to be more explicit about your Docker services and control settings that are not usually available through the user interface or Cloud 66 toolbelt. These settings describe the setup of your services, and these are just some examples of the service configurations you can make:
@@ -29,24 +23,12 @@ Service configuration allows you to be more explicit about your Docker services 
 - Set dependencies between your containers
 
 
-
-
-
-
 ## How do I specify service configurations?
 
 While you're building your stack, service configurations are available on the _Advanced_ tab. Once your stack has been built, you can find this configuration under _Configure services_ in the right menu of your stack page. This form takes YAML input.
 
 
-
-
-
-
 ## Service configuration examples
-
-
-
-
 
 
 ### Example 1: Single service with MySQL database
@@ -67,10 +49,6 @@ databases:
 {% endhighlight %}
 
 As you can see above, the _web_ service is based on a Quay image and requires the _rackup -p 3000_ startup command. It has both a build and a deploy command and specifies a logging folder. Finally, the container is set to listen on port 3000, and uses external ports 80 and 443.
-
-
-
-
 
 
 ### Example 2: Multiple services and databases
@@ -102,17 +80,9 @@ databases:
 As you can see above, we are running a _web_ and _api_ service with different configurations. They are running on MySQL and Redis databases.
 
 
-
-
-
-
 ## Service configurations
 
 Below is a table of the available configurations for a given service with a brief description. For more detailed information about an option, click the link provided.
-
-
-
-
 
 <table class="table table-bordered table-striped table-small"> 
    <tbody> 
@@ -239,10 +209,6 @@ Below is a table of the available configurations for a given service with a brie
    </tbody> 
   </table> 
 
-
-
-
-
 ## Database configurations
 
 You can specify any required databases in the service configuration. As databases are fairly static components that rarely change without a migration, they aren't run in containers. This avoids the complexity and overhead of running databases in a container, and allows Cloud 66 to perform replication and backups as normal. These databases will be deployed and configured automatically, and their addresses and access credentials will be made available to the containers across the stack with environment variables.
@@ -256,10 +222,6 @@ databases:
     - mysql
     - elasticsearch
 {% endhighlight %}
-
-
-
-
 
 
 ## Environment variables

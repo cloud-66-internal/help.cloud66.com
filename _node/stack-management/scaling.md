@@ -12,28 +12,14 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## About scaling servers
 
 You can scale your servers in two ways: horizontal and vertical. Horizontal scaling involves adding more servers, whereas vertical scaling involves altering the resources of a specific server, for example increasing the server size.
 
 
-
-
-
-
 ## Horizontal scaling
 
 Horizontal scaling works differently for each server type, and is only available if you have deployed using your cloud provider.
-
-
-
-
 
 
 ### Web servers
@@ -45,10 +31,6 @@ If you are using AWS, you will also have the option to scale your servers to dif
 You can also scale down your web servers. From your stack detail page, click the link to your web server group (eg. Docker server), and click the _X_ icon next to the server you would like to scale down. This server will automatically be removed from your load balancer, but you will need to delete it from your cloud provider. Note that your primary web server cannot be scaled down, because this would leave you without a web server.
 
 
-
-
-
-
 ### Process servers
 
 When you first build your stack, your processes are run on your web server by default. To scale up a process server, click the link to your _Process server_ group on your stack detail page. Next, click _New process server_ in the top right corner, select the desired server size and quantity, and click _Scale up_.
@@ -56,34 +38,18 @@ When you first build your stack, your processes are run on your web server by de
 Once the server is ready, you can move your processes from the web server to the process server by using the _+_ and _-_ buttons. The process server is very much like a web server, as it needs all the code and dependencies for your workers. By default however, it will not serve web content. If you would like the process server to serve web content, add a load balancer to your stack and access the load balancer page. This page allows you to toggle serving web content from a process server _On_ and _Off_.
 
 
-
-
-
-
 ### Database servers
 
 You can scale your database servers through database replication, or Elasticsearch through [sharding](https://help.cloud66.works/{{ include.product }}/databases/elasticsearch/scaling.html). See our [database management section]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/databases/database-management.html{% else %}https://help.cloud66.works/{{ include.product }}/databases/database-management.html{% endif %}) for more information.
-
-
-
-
 
 
 ## Vertical scaling
 
 
 
-
-
-
-
-
-
 ### Note
 
 This only applies to Rails stacks not Docker ones
-
-
 
 A number of cloud vendors allow you to increase and/or decrease the size of an existing server via their dashboard, allowing you to change the memory and CPU for existing servers. Vertical scaling works the same way for all server types.
 

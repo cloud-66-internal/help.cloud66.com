@@ -10,17 +10,9 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
 ## About using Logentries
 
 Logentries is a great service for centralizing your log files, and this add-in makes it easy to add across your servers.
-
-
-
-
 
 
 ## Add Logentries to your stack
@@ -33,29 +25,13 @@ You can find your Logentries account ID in your account page. For more informati
 
 
 
-
-
-
-
-
-
 ### Note
 
 For docker stacks this will be added to the host not as a container.
 
 
 
-
-
-
-
-
-
 ## Troubleshoot
-
-
-
-
 
 
 ### No Logs or Logs are empty in Logentries

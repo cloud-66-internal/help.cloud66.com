@@ -11,18 +11,8 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Instructions
 Switching to another SQL-based database is easy, and the following instructions show you how to switch to MySQL or PostgreSQL in five simple steps.
-
-
-
-
 
 
 ## MySQL
@@ -32,10 +22,6 @@ Switching to another SQL-based database is easy, and the following instructions 
 3.  Run `bundle install`.
 4.  Commit and check changes in.
 5.  Rebuild your stack.
-
-
-
-
 
 
 ## PostgreSQL

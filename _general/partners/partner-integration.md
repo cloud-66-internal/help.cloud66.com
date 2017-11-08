@@ -11,12 +11,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## User integration API
 
 This API is used to add a partner's service to the user's account automatically.
@@ -30,33 +24,17 @@ User integration API has three steps:
 3. Redirect from partner's website to Cloud 66 website.
 
 
-
-
-
-
 ### Redirecting to Partner's website
 
 Cloud 66 user sees an integration option on his dashboard and clicks on it. He is redirected to the partner's website with the following payload:
-
-
-
-
 
 ```
 GET http://partner/url?uid=abc123&email=jon@smith.com&callback=https://app.cloud66.com/url
 ```
 
-
-
-
-
 - **uid**       A unique ID of the user
 - **email**     user email address
 - **callback**  The URL to redirect the user back when the provisioning is done on the partner side.
-
-
-
-
 
 
 ### Provisioning
@@ -73,10 +51,6 @@ You can make an HTTP POST to the partner integration API with the following payl
 Any other partner specific payload will be here.
 
 
-
-
-
-
 #### Failure
 
 | HTTP Code        |  Description |
@@ -87,23 +61,11 @@ Any other partner specific payload will be here.
 | 403      |  invalid link_uid |
 | 403      |  xxx is already linked to this account |
 
-
-
-
-
 #### Success
-
-
 | HTTP Code        |  Description |
 | ------------- | -----:|
 | 200      |  service added (integration successful) |
 | 403      |  integration specific errors |
-
-
-
-
-
-
 
 
 ## Single Sign-on (SSO)
@@ -111,26 +73,14 @@ Any other partner specific payload will be here.
 Cloud 66 provides a simple solution to allow partner customers use their Cloud 66 login credentials to identify themselves. To enable SSO, partners need to contact [support@cloud66.com](mailto:support@cloud66.com). Once the partner account is established you will received a partner `UID` and `PROVIDER` name which can be used as follows:
 
 
-
-
-
-
 ### Step 1 - Call Cloud 66 SSO endpoint
 
 First step is to redirect user to Cloud 66 to make sure they are logged in (or let them log in if they are not). Users should be redirectd to `https://app.cloud66.com/sso/signin/PROVIDER`. You need to replace `PROVIDER` with the your unique partner name which will be given to you after partner registration.
 
 
-
-
-
-
 ### Step 2 - Cloud 66 Authenticates
 
 After the redirect, Cloud 66 will authenticate the user as the user might be already logged in or it might need to login. 
-
-
-
-
 
 
 ### Step 3 - Redirect back to partner
@@ -154,10 +104,6 @@ Here is a [Ruby implementation of multipass](https://github.com/entp/multipass).
 `signature` is a SHA256 hash of the second 16 characters of provider's UID and the multipass. 
 
 Provider needs to recalculate the multipass and signature and check its authenticity using the same method. Once the authenticity of the callback is established, provider can use the data encrypted in the multipass.
-
-
-
-
 
 
 ## Using OAuth2

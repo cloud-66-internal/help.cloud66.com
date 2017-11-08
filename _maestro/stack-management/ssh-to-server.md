@@ -12,19 +12,9 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## Cloud 66 toolbelt
 
 You can use the [Cloud 66 toolbelt](https://help.cloud66.works/{{ include.product }}/toolbelt/introduction.html) to easily SSH to your servers. Once initialized, the following command can be used:
-
-
-
-
 
 
 ### Full
@@ -34,10 +24,6 @@ cx ssh [--gateway-key <The path to the key of gateway server>] [-s <stack>] <ser
 {% endhighlight %}
 
 
-
-
-
-
 ### Example
 {% highlight bash %}
 cx ssh -s "My Awesome App" web
@@ -45,10 +31,6 @@ cx ssh --gateway-key ~/.ssh/bastion_key  -s "My Awesome App" Lion -e production
 {% endhighlight %}
 
 See [toolbelt shortcuts](https://help.cloud66.works/{{ include.product }}/toolbelt/introduction.html), for information on how you can make this even easier.
-
-
-
-
 
 
 ## Manual shell access
@@ -64,10 +46,6 @@ You can always have terminal access to your servers from your own server - just 
 4.  You can now connect to your server with the following command:
 
 		$ ssh user_name@ip_address -i /Users/xxx/Downloads/key.pem
-
-
-
-
 
 ## Troubleshooting
 
@@ -91,8 +69,6 @@ You can always have terminal access to your servers from your own server - just 
 		CXDEBUG=1 cx ssh -s "My Awesome App" web
 
 	This will show at which point the command fails, and if you run this manually, you should see more error details. 
-
-
 4.  Toolbelt exit status 255
 
 	You may see this output from the bottom of the previous command:

@@ -12,26 +12,14 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## About Nginx
 
 Stacks deployed with Cloud 66 use [Nginx](http://nginx.com) as their web server, and its configuration is dependant on the resources of your server(s). Nginx is a high performance, open source web server used by some of the biggest web services in the world.
 
 
-
-
-
-
 ## Nginx configuration
 
 The following table outlines the default configuration of Nginx.
-
-
 <table id="fields" class="table table-bordered table-striped table-small fields"> 
    <thead valign="top"> 
     <tr> 
@@ -220,15 +208,9 @@ The following table outlines the default configuration of Nginx.
    </tbody> 
   </table> 
 
-
-
-
-
 ## Nginx worker configuration
 
 The following table specifies the number of workers configured for your Nginx based on the server resources (CPU cores) on each cloud.
-
-
 
   <table id="fields" class="table table-bordered table-striped table-small fields"> 
      <thead valign="top"> 
@@ -934,17 +916,9 @@ The following table specifies the number of workers configured for your Nginx ba
      </tbody> 
     </table> 
 
-
-
-
-
 ## Default Cloud 66 Nginx error page
 
 When there is a problem with your upstream server (ie. a container), requests will be passed to the default Cloud 66 error page. From there, you can visit the problematic server page in Cloud 66 dashboard to troubleshoot. 
-
-
-
-
 
 
 ## Custom Nginx error page
@@ -972,10 +946,6 @@ There are two ways for you to create a custom Nginx 50X error page:
     }
     ``
 
-
-
-
-
 ## Customize your Nginx configuration
 
 Cloud 66 makes it easy for you to customize your Nginx configuration. From your stack detail page, access your web server group page (eg. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](https://help.cloud66.works/{{ include.product }}/stack-management/custom-config.html) to customize the configuration.
@@ -993,19 +963,9 @@ Editing and committing your Nginx CustomConfig will perform the following steps 
 Reloading Nginx does not interrupt the serving of traffic. This process will be stopped if an error is encountered. For example, if you have 3 web servers in your stack, if the first server fails to be updated, the process will be halted for the other 2 servers to avoid complete service diruption.
 
 
-
-
-
-
 ### Warning
 
 A bad configuration may stop your Nginx from functioning, so take extra care when making changes.
-
-
-
-
-
-
 
 
 
@@ -1174,10 +1134,6 @@ The following variables are available for use in your **Docker stack** Nginx Cus
 
 
 
-
-
-
-
 ### Boolean variables
 
 To ensure correct boolean condition checks within your template, always explicitly compare the variable with `true` or `false` (even if you are checking for true).
@@ -1193,8 +1149,6 @@ Bad syntax:
 
 *   Bad: if passenger
 *   Bad: if !passenger
-
-
   <table class="table table-bordered table-striped"> 
    <colgroup> 
     <col width="20%"> 

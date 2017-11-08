@@ -8,13 +8,7 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "common" %}
-
-
-
-
 
 GitHub is a great resource for developers, and using it with Cloud 66 couldn't be easier. While you use GitHub for the revision control of your code,
 you can use Cloud 66 to deploy and manage your app in any cloud at all stages of your development.
@@ -36,5 +30,3 @@ When you push code changes to your GitHub repository, you can simply click _Depl
 Visiting the URL or IP of the server, you can see your application running.
 
 The _Deployment history_ page gives you great insight into which code revision has been deployed and by who. You can also revert back to previous commits if need be.
-
-

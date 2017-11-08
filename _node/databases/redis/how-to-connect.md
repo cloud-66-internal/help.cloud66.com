@@ -13,8 +13,6 @@ permalink: /:collection/:path
 
 {% assign dbtype = "redis" %}
 
-
-
 ## How to connect to your {{ include.dbtype }} database
 
 ### Connect to your database
@@ -32,8 +30,6 @@ The notation in the examples below allow you to seamlessly switch between your l
 
 You can use [Yamllint.com](http://www.yamllint.com) to check your YAML syntax before committing.
 {% endif %}
-
-
 {% if include.dbtype == 'mysql' %}
 ### MySQL YML
 

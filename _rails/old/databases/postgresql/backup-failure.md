@@ -10,8 +10,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
 When Cloud 66 takes database backup it needs **twice** the size of your database data directory (`/usr/local/pgsql/data/`). It uses the environment variable `POSTGRESQL_DATABASE` for taking the backup.
 
 1. <a name="1"></a>If you get this error: ***Not enough free space. You need at least x MB free space for this backup***

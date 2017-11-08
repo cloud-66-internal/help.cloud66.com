@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## About environment variables
 
 Environment variables contain a name and value, and provide a simple way to share configuration settings between multiple applications and processes in Linux. For example, Cloud 66 creates environment variables for your database server address, which can be referenced in your code. This has numerous benefits:
@@ -25,10 +19,6 @@ Environment variables contain a name and value, and provide a simple way to shar
 - Makes it easy to handle the fact that your environments use different environment-specific configurations
 - These values may change, so setting them as variables makes life easier
 - You avoid having to commit sensitive information to your Git repository
-
-
-
-
 
 ## AUTO_GENERATE environment variables
 
@@ -41,8 +31,6 @@ If you use these values, then Cloud 66 will replace them with a fixed random str
 RAILS_SECRET=AUTO_GENERATE_64
 A_KEY=AUTO_GENERATE
 ```
-
-
 
 
 ## Auto-generated environment variables
@@ -64,19 +52,11 @@ If you have a MySQL server, the following variables are created and inserted int
 For a list of environment variables available in your stack, visit the _Environment variables_ link in the right sidebar of your stack detail page. If you don't currently have a stack, the environment variables avaialable to you are shown after your code analysis.
 
 
-
-
-
-
 ## Assign environment variables for deployment
 
 When you create a new stack, you are given the option to assign your own environment variables after code analysis. Once your code has been analyzed, click _Add environment variables before deployment_ in the _About your app_ field. This will allow you to view the environment variables that Cloud 66 sets for you, and set your own.
 
 You can set your own by either manually entering them, or uploading a file that contain the variables. This file should use the following format:
-
-
-
-
 
 ```
 
@@ -85,15 +65,7 @@ KEY_2=value_2
 
 ```
 
-
-
-
-
 If your application relies on specific environment variables to complete the deployment process, it is worth adding them before deploying. 
-
-
-
-
 
 
 ## Assign environment variables after stack build
@@ -110,10 +82,6 @@ However, they are always wrapped in double quotes (eg.
 - **Some environment variables cannot be modified**  
 
 For example, environment variables for your server IP addresses cannot be changed because they are automatically set and updated based on reported IP addresses.
-
-
-
-
 
 
 ## Define referenced environment variable
@@ -134,13 +102,9 @@ Creating a reference can be done using  ``{% raw %}{{ENV_VAR}}{% endraw %}``  or
 
 Second form is useful when you want to specify a default value, If cloud66 can’t find referenced environment variable it will use default value instead. **DEFAULT_VALUE** is optional. 
 
-
-
 ```
 MY_HEALTH_HECK=http://_env(WEB_ADDRESS_EXT)/health_check.html
 ```
-
-
 If you are not using prefix/suffix in environment variable definition, you can use 
 `_env:(ENV_VAR:DEFAULT_VALUE)` 
  syntax
@@ -159,57 +123,27 @@ To reference to an environment variable on other services you can use `{% raw %}
 
 
 
-
-
-
-
 ## Using environment variables
 
 Using environment variables is done differently depending on your application settings, but these are some examples.
 
 - **Bash scripts**
 
-
-
-
-
 ```
 $ENV_VAR
 ```
 
-
-
-
-
 - **.YML files**  
-
-
-
-
 
 ```
 username: <%= ENV['DB_USER'] %>
 ```
 
-
-
-
-
 - **.RB files**  
-
-
-
-
 
 ```
 working_directory "#{ENV['STACK_PATH']}"
 ```
-
-
-
-
-
-
 
 
 

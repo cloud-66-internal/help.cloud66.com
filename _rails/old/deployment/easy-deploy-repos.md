@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## About EasyDeploy repositories
 
 There are many open source projects out there that we love and use, and we want to make it easier for people to use them.
@@ -29,10 +23,6 @@ When you see the Cloud 66 EasyDeploy badge on a repository, you can:
 1. Sign into your [Cloud 66](https://app.cloud66.com/) account
 2. Visit the [EasyDeploy App Store](https://app.cloud66.com/easydeploys) and select your project
 3. Make yourself a coffee while the project deploys
-
-
-
-
 
 
 ## Using EasyDeploy repositories

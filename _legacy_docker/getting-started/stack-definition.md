@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## What is a stack?
 
 A web application stack is a set of hardware and software components needed for your application to run. Each level of the stack represents an abstraction layer that provides a high-level overview of your setup.
@@ -29,17 +23,9 @@ For example, your stack might be comprised of a load balancer, a number of web s
 * * *
 
 
-
-
-
-
 ## Stack components
 
 You have a great degree of freedom when choosing the different components of your stack.
-
-
-
-
 
 
 ### Load balancer (optional)
@@ -49,26 +35,14 @@ A load balancer is used to distribute traffic across your web servers, and offer
 The type of {% if include.product == "rails" %} [load balancer deployed in your stack](https://help.cloud66.works/{{ include.product }}/addins/load-balancer.html){% else %}[load balancer deployed in your stack](https://help.cloud66.works/{{ include.product }}/addins/load-balancing.html){%endif%} is dependent on your cloud provider.
 
 
-
-
-
-
 ### Web servers
 
 By default, your applications are served with Nginx, and you are also free to [customize this selection](https://help.cloud66.works/rails/deployment/custom-web-servers.html) for Rack-based stacks. You can [scale your web server]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/scaling.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/scaling.html{% endif %}) with the click of a button.
 
 
-
-
-
-
 ### Background workers (optional)
 
 To relieve pressure from your application, we recommend that you use background workers to run memory-intensive processes. Cloud 66 makes it easy for you to [control and monitor these processes](https://help.cloud66.works/rails/deployment/proc-files.html), as well as [scale them]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/scaling.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/scaling.html{% endif %}) at the click of a button.
-
-
-
-
 
 
 ### Database servers (optional)
@@ -83,17 +57,9 @@ You can choose between any of four supported databases:
 Cloud 66 makes it easy for you to [backup your database]({% if include.product == "skycap" %}https://help.cloud66.works/skycap/databases/database-backup.html{% else %}https://help.cloud66.works/{{ include.product }}/databases/database-backup.html{% endif %}), [verify the backup](https://help.cloud66.works/rails/databases/backup-verifiers.html) and [replicate your databases]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/databases/database-replication.html{% else %}https://help.cloud66.works/{{ include.product }}https://help.cloud66.works/{{ include.product }}/databases/database-replication.html{% endif %}).
 
 
-
-
-
-
 ### Operating system
 
 Your servers will be deployed with **Ubuntu 16.04 LTS**. On the operating system level, you can [monitor disk, CPU and memory](https://help.cloud66.works/{{ include.product }}/stack-management/server-monitoring.html) from the dashboard.
-
-
-
-
 
 
 ### Cloud vendor
@@ -101,10 +67,6 @@ Your servers will be deployed with **Ubuntu 16.04 LTS**. On the operating system
 You can either [deploy to your cloud](https://help.cloud66.works/{{ include.product }}/deployment/clouds) or [deploy to your own server](https://help.cloud66.works/{{ include.product }}/deployment/registered-servers.html).
 
 * * *
-
-
-
-
 
 
 ## Stack environments
@@ -126,10 +88,6 @@ There is no difference between these environments when it comes to features and 
 * * *
 
 
-
-
-
-
 ## What is StackScore?
 
 StackScore&trade; is a score that provides an indication of how reliable, resilient and performant your application is when deployed on your servers. It consists of five key metrics that are graded from **A** to **F**, and the overall StackScore is the lowest of the scores across these five metrics.
@@ -142,17 +100,9 @@ StackScore&trade; is a score that provides an indication of how reliable, resili
 
 
 
-
-
-
-
-
-
 ### Suggestion
 
 Always try to keep your stacks at an **A** StackScore&trade; level to ensure stack health.
-
-
 
 
 Cloud 66 constantly seeks to update and improve the StackScore algorithm to consider new data points as well as external conditions, which means that your StackScore will change over time.
@@ -160,19 +110,11 @@ Cloud 66 constantly seeks to update and improve the StackScore algorithm to cons
 * * *
 
 
-
-
-
-
 ## Build a stack
 
 To build your first stack, see our [Introduction to Cloud 66](https://help.cloud66.works/general/introduction/cloud66-introduction.html). If you have existing stack(s), simply click _New Docker Stack_ from your Cloud 66 Dashboard.
 
 * * *
-
-
-
-
 
 
 ## Edit stack properties
@@ -191,10 +133,6 @@ It also allows you to edit your stack name, and you can edit your Docker service
 
 </div>
 
-
-
-
-
 ## Clone a stack
 
 There are various reasons for cloning an existing stack - for example, you may want to deploy a production environment of an existing development stack, or migrate across regions or data centers.
@@ -204,25 +142,13 @@ To clone a stack, visit your stack page and click _Clone this stack_ from the ri
 * * *
 
 
-
-
-
-
 ## Delete a stack
-
-
-
-
-
-
 
 
 
 ### Important
 
 Deleting a stack will not delete your cloud servers - remember to delete the servers from your cloud account.
-
-
 
 
 To delete a stack, visit your stack page and click _Delete Stack_ from the right sidebar. You will have to confirm this action.

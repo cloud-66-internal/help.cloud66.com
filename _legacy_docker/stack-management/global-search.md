@@ -11,12 +11,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Basic Search
 
 You can type and word or phrase in the search bar at the top of each page to start your search. By default this will search the following:
@@ -32,23 +26,11 @@ You can type and word or phrase in the search bar at the top of each page to sta
 All queries can be a full or partial string. So both `awesome` and `awes` will find all entities with `awesome` somewhere.
 
 
-
-
-
-
 ## Advanced Search
 
 You can narrow the search down with the "advanced search syntax". The general search syntax is `key:value`. This means you can run queries like this:
 
-
-
-
-
 `type:server`
-
-
-
-
 
 Global search supports thse generic search directives:
 
@@ -58,18 +40,10 @@ Global search supports thse generic search directives:
 Each specific type might have some specific directives.
 
 
-
-
-
-
 ### Stack directives
 
 - `name` Search the stack name
 - `env` Search the stack environment
-
-
-
-
 
 
 ### Server directives
@@ -79,26 +53,14 @@ Each specific type might have some specific directives.
 - `vid` Search the cloud provider (vendor's) ID for the VM
 
 
-
-
-
-
 ### Service directives
 
 - `name` Search the service name
 
 
-
-
-
-
 ### Firewall directives
 
 Firewalls can be search only by their tags.
-
-
-
-
 
 
 ### Container directives
@@ -109,17 +71,9 @@ Firewalls can be search only by their tags.
 - `image` Search by the image name used by the container
 - `server` Search by the name of the server running containers
 
-
-
-
-
 ### Environment Variables
 
 - `key` Search environment variables by their key
-
-
-
-
 
 
 ### Deployment Variables
@@ -127,10 +81,6 @@ Firewalls can be search only by their tags.
 - `deployed_by` Name of the person triggering this deployment
 - `git_hash` Git hash used in this deployment
 - `git_ref` Git ref used in this deployment
-
-
-
-
 
 
 ## Complex queries

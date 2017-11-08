@@ -8,13 +8,7 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "common" %}
-
-
-
-
 
 When you deploy to your web servers, a cache-copy of your application is automatically kept in the `$STACK_BASE/shared/cached-copy` folder.
 This folder exists to make re-deployments of your application quicker.
@@ -25,14 +19,8 @@ When you change your Git URL or branch, Cloud 66 is involved and will automatica
 
 In this case, the easiest thing to do is to use the [Cloud 66 toolbelt](http://help.cloud66.com/toolbelt/toolbelt-stack-management) to clear your caches:
 
-
-
 ```
 $ cx stacks clear-caches [-s stack]
 ```
-
-
-
-
 
 

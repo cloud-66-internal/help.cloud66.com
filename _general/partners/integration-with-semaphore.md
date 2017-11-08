@@ -8,13 +8,7 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "General" %}
-
-
-
-
 
 What follows is how to integrate [Semaphore](https://semaphoreapp.com) with Cloud 66.
 
@@ -35,5 +29,3 @@ What follows is how to integrate [Semaphore](https://semaphoreapp.com) with Clou
 7. Select the project you would like to deploy once the tests are successful.
 
 Done!
-
-

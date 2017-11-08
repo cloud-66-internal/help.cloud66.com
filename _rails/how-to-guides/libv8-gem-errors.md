@@ -11,12 +11,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## The basics
 
 If you specify the version of libv8 as `gem libv8 '~>3.11.8'` for instance, in your Gemfile, you *could* encounter an unfriendly error.
@@ -35,17 +29,9 @@ Finally, if you can't get this to work and you're running Rails > 3.1.0 then you
 Remove 'therubyracer' from your Gemfile and [Cloud 66 will automatically install Node.js](http://help.cloud66.com/building-your-stack/asset-pipeline-compilation) - simple!
 
 
-
-
-
-
 ## The specifics
 
 The following is the unfriendly libv8 installation error you may be presented with:
-
-
-
-
 
 ```
 Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
@@ -88,8 +74,4 @@ linking shared-object v8/init.so
 collect2: ld returned 1 exit status
 make: *** [init.so] Error 1
 ```
-
-
-
-
 

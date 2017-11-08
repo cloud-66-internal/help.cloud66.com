@@ -7,8 +7,6 @@ lead: Backup, recovery and replication of databases with Cloud 66 for Rails
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
-
-
 - [MySQL](mysql)
 - [PostgreSQL](postgresql)
 - [Redis](redis)

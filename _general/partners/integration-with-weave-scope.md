@@ -11,28 +11,14 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Step 1: Checkout your CustomConfig
 
 Checkout your [CustomConfig](http://help.cloud66.com/managing-your-stack/customconfig-git) git and add the file *deploy_hooks.yml* 
 
 
-
-
-
-
 ## Step 2: Add the weavescope snippet
 
 Add the following deploy hook to your *deploy_hooks.yml* file.
-
-
-
-
 
 ```
 production: # Environment or your choice
@@ -47,20 +33,10 @@ production: # Environment or your choice
 
 
 
-
-
-
-
-
-
 ## Step 3: Commit and redeploy your stack
 
 Commit the changes to the CustomConfig git reposity and redeploy your stack. 
 **NOTE:** If your set WEAVE_SCOPE_TOKEN environment variable, weave scope will connect to Weave Cloud. If not. Read step 4.
-
-
-
-
 
 
 ## Step 4: Open port 4040 to access Weave Scope

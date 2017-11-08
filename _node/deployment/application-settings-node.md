@@ -11,19 +11,9 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ##  Change your Node.js version 
 
 To change your Node.js version you need to update your `package.json` `engines` settings. [Read more about how you can specify the version of node so your application works.](https://docs.npmjs.com/files/package.json#engines)
-
-
-
-
 
 
 ##  Change your datasource(s) 
@@ -38,17 +28,9 @@ During the analyse phase we analyze your runtime depencies defined in the `packa
 If you need other datasources later on, you can always add new datasource using the [Add-in feature](../../node/addins/add-in-implementation.html).
 
 
-
-
-
-
 ##  Expose your host port
 
 If your application binds to a port, we need to expose it to the internet and make sure we can load balance traffic to your application. We provide you with an environment variable called `PORT` to tell which port your need to bind your application to. Make sure your use the following line:
-
-
-
-
 
 ```
 
@@ -60,26 +42,12 @@ app.listen(port);
 
 
 
-
-
-
-
-
-
 ##  Connect to your datasource(s)
 
 Your application need to know which URL to use to connect to your database. We provide a couple of environment variables your can use to connect to your datasources.
 
 
-
-
-
-
 ### MongoDB
-
-
-
-
 
 ```
 
@@ -90,17 +58,7 @@ mongoose.connect(process.env.MONGODB_URL);
 
 
 
-
-
-
-
-
-
 ### Mysql
-
-
-
-
 
 ```
 
@@ -117,17 +75,7 @@ connection.connect();
 
 
 
-
-
-
-
-
-
 ### Postgresql
-
-
-
-
 
 ```
 
@@ -146,17 +94,7 @@ var pool = new pg.Pool(config);
 
 
 
-
-
-
-
-
-
 ### Redis
-
-
-
-
 
 ```
 
@@ -167,21 +105,11 @@ redis.createClient(6379, process.env.REDIS_URL)
 
 
 
-
-
-
-
-
-
 ##  Fire up some workers 
 
 You can use Procfiles to ensure that your background jobs run and are monitored. Doing so is as easy as defining them in the root of your application, in a file called `Procfile`.
 
 A typical Procfile may look something like this:
-
-
-
-
 
 ```
 
@@ -190,15 +118,7 @@ work: node some_work.js
 
 ```
 
-
-
-
-
 The commands above would run node `server.js` and node `some_work.js` and monitor them. Cloud 66 will attempt to bring processes that go down or crash up again. Processes are also instructed to start when your server is booted. An overall view of your processes is available in your stack detail page.
-
-
-
-
 
 
 ##  Final notes on managing storage

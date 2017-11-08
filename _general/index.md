@@ -6,8 +6,6 @@ lead: Cloud66 General
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
-
-
 - [Introduction](introduction)
 - [Account](account)
 - [Teams](teams)

@@ -8,13 +8,7 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "General" %}
-
-
-
-
 
 - **Deploy**
 
@@ -31,5 +25,3 @@ A web application stack is a set of hardware and software components needed for 
 - **Provision**
 
 When you build a stack with Cloud 66, we will provision servers in your cloud vendor account. This is synonymous with creating the servers.
-
-

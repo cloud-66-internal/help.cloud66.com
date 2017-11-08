@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## Overview
 
 Often times the purpose of a service inside your application is to respond to web queries from the internet. Actions like rendering and serving HTML pages or accepting HTTP POST actions are amongst the most common requirements from web services.
@@ -32,17 +26,11 @@ In this article, outside world is used for any client of your service that's not
 
 
 
-
-
-
-
 ## Ports inside and outside containers
 
 Your code that runs inside of a container listens to a specific port. For example a standard setup for a web server listens to port 80 for HTTP and 443 for HTTPS traffic. A normal Rails application listens to port 3000 or 9292 by default.
 
 Here is an example of default ports used by different programming frameworks or application servers:
-
-
 
 	
 
@@ -83,15 +71,9 @@ Here is an example of default ports used by different programming frameworks or 
   </table> 
 
 
-
-
 From the outside world (ie Internet) all of these applications (except for the DBs) listen to the normal HTTP (80) and HTTPS (443) ports so the site visitors don't need to enter port number in their browsers.
 
 On a Cloud 66 for Docker stack, you can make the inside and outside ports map using the Container Port Mapping feature. It is a simple to use yet flexible feature that supports common TCP protocols like HTTP and HTTPS as well as custom TCP and UDP traffic.
-
-
-
-
 
 
 ## Mapping ports from inside to the outside world
@@ -116,17 +98,9 @@ services:
 
 
 
-
-
-
-
-
-
 ### Note
 
 For HTTPS traffic to be available to the outside world you still need to [setup your SSL certificates](https://help.cloud66.works/{{ include.product }}/addins/ssl/).
-
-
 
 
 Omitting the HTTPS port is possible by dropping the last part:
@@ -136,10 +110,6 @@ services:
     my_service:
         ports: ["3000:80"]
 {% endhighlight %}
-
-
-
-
 
 
 ## Non-HTTP ports (TCP and UDP)
@@ -165,10 +135,6 @@ services:
           - container: 8787
             tcp: 9000
 {% endhighlight %}
-
-
-
-
 
 
 ## Multiple ports

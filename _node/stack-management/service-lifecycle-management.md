@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## Orchestration engine
 
 Cloud 66 provides an orchestration engine to roll out Docker images to your servers and initialize containers from them. This is what is provided for you from start to finish:
@@ -33,10 +27,6 @@ Cloud 66 provides an orchestration engine to roll out Docker images to your serv
 - Deployment rollbacks (version control)
 
 
-
-
-
-
 ## Deploying your stack
 
 The above can be summarized as the life-cycle management of your containers, which occurs with each new deployment of your application. For example, if you have a simple stack running `api` and `web` services, this is what happens when you redeploy your stack (as pertains to the life-cycle management of your containers):
@@ -45,10 +35,6 @@ The above can be summarized as the life-cycle management of your containers, whi
 2. These images are rolled out to your Docker cluster.
 3. Containers are initialized from these images, with all relevant environment variables and internal networking made available to them.
 4. If and when your health checks are successful, your old containers are gracefully drained and traffic is switched to the new containers (on the specified port(s)).
-
-
-
-
 
 
 ## Configuration
@@ -63,10 +49,6 @@ There are a number of directives you can set in your service configuration to cu
 - [stop_grace](#stop_grace)
 
 * * *
-
-
-
-
 
 
 ### Health
@@ -103,10 +85,6 @@ You can also use the default health rules with `health: default`, or explicitly 
 * * *
 
 
-
-
-
-
 ### Pre-start signal
 
 This is a signal that is sent to the existing containers of the service before the new containers are started during deployment. An example could be `USR1` - but it depends on what your container is running as to which signals make sense.
@@ -118,10 +96,6 @@ services:
 {% endhighlight %}
 
 * * *
-
-
-
-
 
 
 ### Pre-stop sequence
@@ -145,10 +119,6 @@ Valid time values are `s` for seconds, `m` for minutes and `h` for hours. Valid 
 * * *
 
 
-
-
-
-
 ### Requires
 
 In some cases, you may want to make sure that a service is only started if another service is started. The `requires` option allows you to set such dependencies. For example:
@@ -164,10 +134,6 @@ services:
 * * *
 
 
-
-
-
-
 ### Restart on deploy
 
 A boolean value to indicate whether the containers of this service should be restarted during deployment (set to _true_ by default).
@@ -181,10 +147,6 @@ services:
 * * *
 
 
-
-
-
-
 ### Stop grace
 
 Sets the duration between the Docker `TERM` and `KILL` signals when Docker stop is run and a container is stopped.
@@ -194,8 +156,6 @@ services:
     <service_name>:
         stop_grace: 30
 {% endhighlight %}
-
-
 
 
 ## Post-start command
@@ -208,10 +168,6 @@ services:
     <service_name>:         
         post_start_command: /tmp/post-start.sh
 ```
-
-
-
-
 
 ## Pre-stop command
 

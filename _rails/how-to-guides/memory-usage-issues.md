@@ -8,25 +8,15 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "common" %}
-
-
-
-
 
 If you're experiencing memory usage issues, such as high memory usage, use the following steps to troubleshoot.
 
 [SSH into your server](http://help.cloud66.com/managing-your-stack/ssh-to-your-server) and install htop:
 
-
-
 ```
 $ sudo apt-get install htop
 ```
-
-
 Once it's installed, run it with _htop_:
 
 ![htop](http://assets.cloud66.com/help/images/htop.png)
@@ -37,5 +27,3 @@ The screen above will show you lots of statistics on memory and CPU usage, but w
 2.  On the home screen, hit _F6_ (sort by), and select _MEM%_, which will sort your processes by memory usage.
 
 Once done, this view should give you a good idea of which processes are using the most memory.
-
-

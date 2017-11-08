@@ -11,10 +11,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
 ## About Deployment authorization
 
 For docker stacks where you want additional control over deployment authorizations, you can now go to the stack settings page an choose a deployment lockdown strategy. There are currently three deployment strategies available:
@@ -32,19 +28,9 @@ Once a deployment request is approved, the deployment will take place. The audit
 
 
 
-
-
-
-
-
-
 ### IMPORTANT
  At this time, this setting applies to Docker stacks only.
  
-
-
-
-
 
 
 

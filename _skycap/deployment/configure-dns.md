@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## About configuring your DNS
 
 Cloud 66 provides [DNS hostnames](https://help.cloud66.works/{{ include.product }}/deployment/server-ip-addresses.html) for each server you deploy with us. This allows us to assign a new IP address to your application on your behalf if need be, while still maintaining the same hostname.
@@ -30,17 +24,9 @@ To use wildcard subdomains with Cloud 66 hostnames, simply create a CNAME record
 .com to your Cloud 66 hostname. 
 
 
-
-
-
-
 ## Configuring your DNS
 
 There are three approaches to configuring your DNS - in the following recommended order:
-
-
-
-
 
 
 ### 1. Use a modern DNS provider
@@ -57,10 +43,6 @@ For example:
 The setup is similar for each provider - simply point the ALIAS or ANAME for your root domain to the Cloud 66 hostname.
 
 
-
-
-
-
 ### 2. Use an A record
 
 This involves using an A record to point your root domain at your load balancer and then redirecting traffic to www in Nginx.
@@ -69,17 +51,7 @@ This involves using an A record to point your root domain at your load balancer 
 2.  Create an A record for your root domain (eg. example.com) pointing at your load balancer IP address.
 3.  ​Use [network redirects]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/network-configuration.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/network-configuration.html{% endif %}) to permanently redirect all traffic from example.com to www.example.com.
 
-
-
-
-
 ### 3. Subdomain redirection
-
-
-
-
-
-
 
 
 

@@ -11,26 +11,12 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ### Is Cloud 66 PCI Compliant?
 We do not store Credit Card Information of our customers on our servers, systems or storage. This is handled by a PCI compliant third party and therefore we do not need a PCI DSS compliance.
 
 
-
-
-
-
 ### Will my website/mobile backend/API be PCI compliant if I use Cloud 66?
 Not by default. Compliance with PCI DSS regulations is up to you.
-
-
-
-
 
 
 ### How does Cloud 66 access my servers?
@@ -41,26 +27,14 @@ We also generate a key for you through a script when using our Cloud 66 Register
 Our connection to your servers is done only through a set of [pre-announced IP addresses](/introduction-to-cloud-66/security-summary).
 
 
-
-
-
-
 ### Where are the SSH keys stored on Cloud 66?
 The SSH keys are stored on an isolated storage in Cloud 66 network. The keys are encrypted with a key and are only readable using the secure key.
 
 The encryption keys are provided to our production servers during the startup and are not stored anywhere on our production gateways.
 
 
-
-
-
-
 ### What firewalls are installed on servers deployed by Cloud 66?
 Cloud 66 deploys [iptable](http://en.wikipedia.org/wiki/Iptables) based firewall protection on all servers it provisions. Those firewalls are configured to allow public internet traffic only if needed (ports 80, 443, 8080 and 8443 are open for web servers). Other ports, including SSH ports are closed by default to the public traffic and private traffic within the hosted data center network traffic.
-
-
-
-
 
 
 ### How does Cloud 66 prevent access to customer servers in case of a breach?

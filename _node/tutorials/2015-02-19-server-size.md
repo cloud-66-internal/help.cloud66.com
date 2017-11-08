@@ -11,17 +11,7 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Under-powered server sizes (not recommended)
-
-
-
-
 
 
 ### Amazon Web Services
@@ -29,49 +19,25 @@ permalink: /:collection/:path
 - t2.micro
 
 
-
-
-
-
 ### Cloud-A
 - 512 MB - General Purpose
-
-
-
-
 
 
 ### DigitalOcean
 - 512MB - 1 CPU
 
 
-
-
-
-
 ### Google Compute Engine
 - f1-micro
-
-
-
-
 
 
 ### Microsoft Azure
 - A0
 
 
-
-
-
-
 ### Rackspace
 - 512MB Standard Instance
 - 512MB Standard Instance (HVM)
-
-
-
-
 
 #### We suggest using a server with at least 1GB of memory and 4 core
 

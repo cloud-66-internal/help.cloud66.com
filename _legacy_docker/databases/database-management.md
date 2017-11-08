@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## About deploying databases
 
 We currently support the following databases, with no need for additional configuration after deployment.
@@ -37,15 +31,7 @@ When creating a Docker stack, you can [add as many databases as you need in your
 After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. If you haven't specified a username and password for your database, Cloud 66 will automatically generate these credentials for you. They will be available as environment variables and your application will be configured to use them.
 
 
-
-
-
-
 ## Database deployment types
-
-
-
-
 
 
 ### No database (external)
@@ -54,26 +40,14 @@ This option allows you to deploy your application without a database managed by 
 Please note that if there is no connectivity to your database, or your database host is not configured correctly, the deployment will fail.
 
 
-
-
-
-
 ### Local database
 
 This option deploys your chosen database to the same server as your web server - this is intended primarily for development, as running your database locally in production is not advised. In this case, your application database configuration will be amended to target your local database server. If you scale up your web server, these settings will also be amend automatically to reflect your database configuration.
 
 
-
-
-
-
 ### Dedicated database
 
 This option will automatically create a new server for your database and configure your application accordingly.
-
-
-
-
 
 
 ## Upgrading your database
@@ -83,33 +57,17 @@ Cloud 66 will not do in-place database upgrades, because this process may cause 
 Once the new stack is created, you can migrate data from your old stack to your new stack.
 
 
-
-
-
-
 ## Control your Rails database migrations
 
 Cloud 66 chooses a server to perform the migrations - all other servers will wait until the migrations are finished before continuing with deployment. You can see which server performs the migrations in the Stack Information page, and change it using the `c66.migrations.run` [reserved tag](/deployment/cloud-66-reserved-tags#tags).
 
 You can control your Rails database migrations by setting `run.deploy.command` option through [Stack settings](https://help.cloud66.works/{{ include.product }}/toolblet/settings.html) via [Toolbelt](/toolbelt/toolbelt-introduction) which gives you the option of running migrations or not.
 
-
-
-
-
 ```
 $ cx settings set -s my_stack run.deploy.command true
 ```
 
-
-
-
-
 When you have disabled `run.deploy.command` in [Stack settings](https://help.cloud66.works/{{ include.product }}/toolblet/settings.html) , you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
-
-
-
-
 
 
 ## Customize your database configuration
@@ -127,21 +85,9 @@ Editing and committing your database CustomConfig will perform the following ste
 
 
 
-
-
-
-
-
-
 ### Warning
 
 A bad database configuration might stop your database from working. Take extra care to make sure the configuration is correct.
-
-
-
-
-
-
 
 
 
@@ -194,13 +140,9 @@ The following variables are available to any database CustomConfig.
   
 
 
-
-
 **MySQL variables**
 
 The following variables are only available in the MySQL CustomConfig.
-
-
 
   <table class="table table-bordered table-striped"> 
      <colgroup> 
@@ -239,12 +181,6 @@ The following variables are only available in the MySQL CustomConfig.
 
 
 
-
-
-
-
-
-
 ##### *It is 0 for standalone servers, 1 for master servers and a number greater than 1 for slave servers
 
 **PostgreSQL variables**
@@ -275,13 +211,9 @@ The following variables are only available in the PostgreSQL CustomConfig.
   
 
 
-
-
 **Redis variables**
 
 The following variables are only available in the Redis CustomConfig.
-
-
 <table class="table table-bordered table-striped"> 
    <colgroup> 
     <col width="20%"> 
@@ -315,7 +247,5 @@ The following variables are only available in the Redis CustomConfig.
   </table> 
 
   
-
-
 
 

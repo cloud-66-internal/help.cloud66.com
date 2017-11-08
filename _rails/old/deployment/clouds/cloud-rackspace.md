@@ -10,17 +10,9 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
 ## About using Rackspace cloud
 
 You can use Cloud 66 to provision and deploy your code to servers in any Rackspace [region](http://developers.cloud66.com/#cloud-vendor-instance-regions#rackspace). Note that if you hold a Rackspace UK account, you will be limited to creating servers in the London region. The Rackspace US account is able to create servers in the remaining regions.
-
-
-
-
 
 
 ## Generate a Rackspace API key
@@ -30,31 +22,15 @@ You need to provide your Rackspace API key in order for Cloud 66 to access your 
 Once you click _Create user_, you will be able to view the API Key by clicking _Show_.
 
 
-
-
-
-
 ## Add Rackspace key to a stack
 
 Visit the Cloud 66 Dashboard and select _Get started building a stack_. After connecting to your Git repository and analyzing your code, you will be asked to _Add your cloud platform_. From this menu, select _Rackspace_ and provide your API key.
 
 
 
-
-
-
-
-
-
 ### Notice
 
 Should you wish to delete your stack on Cloud 66, your servers **will not** be deleted on your cloud provider unless [physical server deletion](/managing-your-stack/server-deletion) is turned on.
-
-
-
-
-
-
 
 
 

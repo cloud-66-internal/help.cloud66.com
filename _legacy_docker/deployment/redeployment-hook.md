@@ -12,33 +12,15 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## About redeployment hooks
 
 Redeployment hooks allow you to achieve continuous deployment by deploying your stack when you push a change to your Git repository or have a CI push success. Redeployment hooks differ slightly for Rails/Rack and Docker Stacks see sections below.
 
 
 
-
-
-
-
-
-
 ### Where to find your redeployment hook?
 
 Your redeployment hook URL is automatically generated for each of your stacks. You can found your unique redeployment hook URL on your stack information page (available via the **stack information** link on the main stack page's right hand navigation menu)
-
-
-
-
-
-
 
 
 
@@ -55,47 +37,21 @@ When a redeployment hook is invoked:
 Some examples below will illustrate how to add a **services modifier**. Note that the xxxx/yyyy in the examples is for illustrative purposes only and should be replaced with your redeployment URL on your stack information page.
 An example redeployment hook **without a services modifier:**
 
-
-
-
-
 ```
 https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy
 ```
 
-
-
-
-
 An example redeployment **hook with a single services modifier:**
-
-
-
-
 
 ```
 https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy?services=web
 ```
 
-
-
-
-
 An example redeployment **hook with a many-service modifier:**
-
-
-
-
 
 ```
 https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy?services=web,app
 ```
-
-
-
-
-
-
 
 
 
@@ -105,13 +61,9 @@ https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy?services=web,app
 All Rails/Rack Stacks are based on a Git repository and branch. Pushing code to the same branch as your stack Git branch will invoke your stack redeployment. If you push code to another branch, nothing will happen - this allows you to push code to your development branch without an automatic redeploy on your production stack for example. If it is available in the payload, the Git Ref of the latest commit will be used for the stack redeployment.
 
 
-
-
 ### Note
 
 In the case where the payload of the commit hook does not contain any branch information (Github and Bitbucket payload formats are supported) then the stack will redeploy without attempting to match branch
-
-
 
 
 #### Github Integration
@@ -119,17 +71,9 @@ In the case where the payload of the commit hook does not contain any branch inf
 Users who have signed in through Github (and who have enough access to create and edit deployement events for their stacks on GitHub) can activate continuous deployments on GitHub. To do this: access your [Stack settings](https://help.cloud66.works/{{ include.product }}/toolbelt/settings.html) via the toolbelt
  and set **continuous.deploy** to _true_.
 
-
-
-
-
 ```
 $ cx settings set -s my_stack continuous.deploy true
 ```
-
-
-
-
 
 This will create a new webhook for your repository on GitHub or simply modify and existing one to let Cloud66 recieve _deployment_ events as well.
 
@@ -139,17 +83,9 @@ For more information please refer to the
 Github Deployment API](/toolbelt/toolbelt-introduction).
 
 
-
-
-
-
 ## Adding Redeployment Hooks
 
 The process of adding the hook differs by your Git host, so we will guide you through doing this with GitHub, Bitbucket and a generic solution.
-
-
-
-
 
 
 ### GitHub Setup
@@ -159,17 +95,9 @@ On your stack detail page, click _Stack information_ in the right sidebar and co
 In the _Webhooks_ window, click _Add webhook_ and paste the redeployment hook URL into the _Payload URL_ field. When you confirm by clicking _Add webhook_, GitHub will automatically test your hook with a _Ping_ and you should get a green HTTP200 reponse.
 
 
-
-
-
-
 ### Bitbucket Setup
 
 On your stack detail page, click _Stack information_ in the right sidebar and copy the URL provided in the _Redeployment hook_ field. Next, visit your Bitbucket repository, click _Settings_ in the left sidebar, and then _Hooks_ in the settings menu that appears. In the _Select a hook_ field, select a _POST_ hook, click _Add hook_ and paste your redeployment hook URL into the field provided. Click _Save_ to confirm.
-
-
-
-
 
 
 ### Generic Setup
@@ -177,17 +105,9 @@ On your stack detail page, click _Stack information_ in the right sidebar and co
 Most Git providers have a commit hook mechanism that you can use to post to the Cloud 66 redeployment hook URL. Please check your Git provider documentation for this information. If your Git provider has a non-conforming payload format (not compatible with Github or BitBucket formats) then please get in touch and we can extend our payload support!
 
 
-
-
-
-
 ### Invoking your redeployment hook manually
 
 To invoke the redeployment hook manually, you can POST an HTTP request to your redeployment hook URL. You can do this in curl like this:
-
-
-
-
 
 ```
 curl -X POST [your redeployment hook URL]
@@ -197,16 +117,6 @@ curl -X POST [your redeployment hook URL]
 
 
 
-
-
-
-
-
-
-
-
 ### Note
 
 If you are manually invoking redeployments you should consider using the [Cloud 66 CommandLine Tool](http://help.cloud66.works/{{ include.product }}/toolbelt/redeploy.html) instead, as it has additional features!
-
-

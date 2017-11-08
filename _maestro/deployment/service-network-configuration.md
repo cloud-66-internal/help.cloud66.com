@@ -12,19 +12,9 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## Traffic distribution
 
 The external traffic to your server(s) is distributed by a Nginx reverse proxy for each upstream on HTTP and HTTPS. You can define which ports each service listens on (if any) using the `ports` directive below. If you have multiple containers running for your service(s), round-robin will be used to distribute traffic between them (providing load balancing). Should you have multiple services listening on the same external port, the `traffic_matches` directive is used to direct traffic to a specific service based on the host name.
-
-
-
-
 
 
 ## ContainerNet
@@ -32,17 +22,9 @@ The external traffic to your server(s) is distributed by a Nginx reverse proxy f
 ContainerNet is a private and secure network (based on [Weave](http://weave.works/)) between all containers across all the servers and components in your stack, including databases. This network provides an internal IP address to each container, automatically updating with DHCP and DNS and is fully integrated with the {% if include.product == "skycap" %}[life-cycle management of your services](https://help.cloud66.works/maestro/stack-management/service-lifecycle-management.html){% else %}[life-cycle management of your services](https://help.cloud66.works/{{ include.product }}/stack-management/service-lifecycle-management.html){% endif %}.
 
 
-
-
-
-
 ### Encryption
 
 Weave includes a secure, performant authenticated [encryption mechanism](http://blog.weave.works/2015/06/16/weave-net-cryptography-faq/) which we automatically configure on your behalf, so you don’t have to take any custom encryption actions yourself.
-
-
-
-
 
 
 ## ElasticDNS
@@ -56,10 +38,6 @@ When a deployment happens the load balancer for the externally available service
 ElasticDNS is clever enough to know which version of the app is running in a container. So if an **old** web container asks for `api.cloud66.local` it will get the address to an **old** api container, but if a **new** web container asks for the same thing, it will get the address to a **new** api container.
 
 
-
-
-
-
 ## Configuration
 
 There are a number of directives you can set in your service configuration to customize your service network settings:
@@ -70,26 +48,14 @@ There are a number of directives you can set in your service configuration to cu
 - [traffic_matches](#traffic_matches)
 
 
-
-
-
-
 <a name="dns_behaviour"></a>### DNS Behaviour
 
 The `dns_behaviour` directive allows you to change the default behaviour of returned DNS addresses of different versions. As outlined above, ElasticDNS always try to return the version of the container that has the same version of the caller. You can change this behaviour by setting `dns_behaviour` value to `non-versioned`, in which case ElasticDNS will return the address of containers with latest version.
 
 
-
-
-
-
 ### Load Balancing
 
 You can change the load balancing method of ElasticDNS with the `load_balancing` directive. The accepted values are `roundrobin` , `sticky` and `closest`, and the default value is `roundrobin` which return the list of container's IP for the requested service in roundrobin. If you choose the `sticky` option, you will get the last IP you got (if you request after 1 minute you may get a new IP). If you choose the `closest` option, you will get the list of container's IP that exist on caller server (it will return all available IPs if there is no container of the requested service on caller server).
-
-
-
-
 
 
 ### Ports
@@ -103,10 +69,6 @@ services:
 {% endhighlight %}
 
 In this example, the application is listening on port 3000 in the container, and that port is exposed via HTTP on port 80, and HTTPS on port 443. Port 4000 inside the container is also available on port 8443 externally, and port 5000 in the container is available locally on the server. These HTTP/HTTPS ports are available from outside the server, and any traffic to these ports will be redirected to any containers running this service. During scaling, any containers running this service will get traffic distributed to them in a round robin fashion. 
-
-
-
-
 
 
 #### Advanced ports
@@ -125,10 +87,6 @@ services:
 {% endhighlight %}
 
 * * *
-
-
-
-
 
 
 ### Traffic matches

@@ -11,12 +11,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Seed script
 
 Simply add a bash script to your repository that contains the script for seeding your database.
@@ -25,10 +19,6 @@ This could be a *custom script*, a *custom rake command*, or the default Rails `
 In our example, we will use the default Rails [rake db:seed command](http://edgeguides.rubyonrails.org/migrations.html#migrations-and-seed-data). 
 
 Create the file `/.cloud66/dbseed.sh` as below:
-
-
-
-
 
 ```
 #!/bin/bash
@@ -39,21 +29,11 @@ bundle exec rake db:seed
 
 
 
-
-
-
-
-
-
 ## Deploy hook
 
 Add a deploy hook to execute the above script during the first deploy (on the first server only). 
 
 Create the file `.cloud66/deploy_hooks.yml` as below (replacing *production* with your target environment).
-
-
-
-
 
 ```
 production:
@@ -70,14 +50,6 @@ production:
 
 
 
-
-
-
-
-
-
-
-
 ## Note
 
     
@@ -85,6 +57,4 @@ The deploy hook example above will only execute during the _build_ for a new sta
 
 *   Execute the seed command manually, or
 *   Change the _apply_during_ specification of the deploy hook (could be used for DB data resets during subsequent testing deploys for instance)
-
-
 

@@ -10,19 +10,9 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Background
 During a Cloud 66 deployment, if you've connected up your DigitalOcean API credentials and are deploying to your DigitalOcean cloud, we will use the DigitalOcean API to create your specified servers.
 This process may occasionally fail however due to one of the following reasons:
-
-
-
-
 
 
 ## HTTP Error 401 or HTTP Error 403
@@ -31,19 +21,9 @@ This error indicates that your credentials are no-longer correct for your API ac
 
 The resolution for this error is to update your DigitalOcean Cloud API credentials via the Cloud 66 UI.
 
-
-
-
-
 ### Note
 
 At the time of writing, viewing your API credentials via the DigitalOcean UI will cause a new set of credentials to be generated.
-
-
-
-
-
-
 
 
 ## HTTP Error 404 *or* Size is not available in this region
@@ -51,17 +31,9 @@ At the time of writing, viewing your API credentials via the DigitalOcean UI wil
 This error indicates that the action we've attempted to perform is not currently possible. The reasons for this error are varied - below are the most common causes.
 
 
-
-
-
-
 ### 1. Your DigitalOcean account has reached the default 5-server limit
 
 By default, DigitalOcean accounts are limited to a maximum of five servers only. This limit can easily be increased, but this can only be done by contacting DigitalOcean support directly.
-
-
-
-
 
 
 ### 2. DigitalOcean have limited new server creation
@@ -72,10 +44,6 @@ User's should be able to validate whether or not their server can be created by 
 If the chosen size/datacenter remains unavailable for an extended period of time, it is suggested that an alternative size or datacenter is used.
 
 
-
-
-
-
 ### 3. DigitalOcean has experienced an internal error
 
 As DigitalOcean are still a relatively new company, their rapid growth inevitably causes some growing pains. This is sometimes evident in errors during server creation.
@@ -84,21 +52,9 @@ The resolution for this case is simply to re-attempt to deploy a new stack to th
 
 
 
-
-
-
-
-
-
 ### Note
 
 Please contact Cloud 66 support if you continually receive DigitalOcean deployment errors via Cloud 66 but you are able to create the server of the same datacenter/size manually via the DigitalOcean UI.
-
-
-
-
-
-
 
 
 ## Timeout Errors
@@ -111,21 +67,9 @@ Once the DigitalOcean backlog of queued server actions has cleared, your server 
 
 
 
-
-
-
-
-
-
 ### Note
 
 Remember to manually remove any old servers via the DigitalOcean UI that were abandoned due to previously failed deployments
-
-
-
-
-
-
 
 
 ## HAProxy Load Balancer Errors

@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## Overview
 
 Sometimes our code needs to know a bit more about a server it is running on. Of course we are not suggesting you write code that is dependent on a specific server, but it is possible that your code needs things like: what's the IP address of this server? What version of Image Magic is it running or is tagged with a specific tag on Cloud 66 or not.
@@ -29,27 +23,15 @@ This ranges from hardware to software, package and network meta data as well as 
 This HTTP endpoint is the same for all servers and uses the caller's IP address to return the correct payload. As a result, SMDS doesn't work with some [Gateway](https://help.cloud66.works/{{ include.product }}/deployment/deployment-gateway.html) network setups (as they use NAT to share a single public IP address).
 
 
-
-
-
-
 ## Server Meta Data Service
 
 The endpoint for Server Meta Data Service is `https://app.cloud66.com/api/tooling/metadata`
 
 To see it in action, login to one of your Cloud 66 deployed servers and type the following command:
 
-
-
 $ curl https://app.cloud66.com/api/tooling/metadata
 
-
-
 You will see a JSON `application/json` payload returned like the following:
-
-
-
-
 
 ```
 {
@@ -242,8 +224,4 @@ You will see a JSON `application/json` payload returned like the following:
    }
 }
 ```
-
-
-
-
 

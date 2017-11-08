@@ -8,13 +8,7 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "Rails" %}
-
-
-
-
 
 When you use [database replication](http://help.cloud66.com/database-management/database-replication) with PostgreSQL, we configure [streaming replication](http://wiki.postgresql.org/wiki/Streaming_Replication) between your master and slave databases.
 The first server in the group will be the master server, and the others will be configured as slave servers.
@@ -31,5 +25,3 @@ servers think they are the primary. Such a situation could lead to confusion and
 
 We recommend that you attempt running this procedure in your testing environment - setting up your system for high availability
 is not of much use if you wait for a disaster before trying a recovery.
-
-

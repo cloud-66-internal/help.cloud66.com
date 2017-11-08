@@ -8,13 +8,7 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "common" %}
-
-
-
-
 
 When using Cloud 66 to [deploy to your own servers](http://help.cloud66.com/deployment/registered-servers), you might experience trouble with an existing MySQL installation on your server.
 
@@ -32,13 +26,7 @@ Remove the MySQL folder:
 
 Delete all MySQL files on your server:
 
-
-
 ```
 $ sudo find / -iname 'mysql*' -exec rm -rf {} \;
 ```
-
-
 Your system should no longer contain MySQL related files.
-
-

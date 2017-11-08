@@ -8,13 +8,7 @@ legacy: true
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "common" %}
-
-
-
-
 
 This page provides an overview of the commands available through the toolbelt.
 
@@ -41,5 +35,3 @@ This page provides an overview of the commands available through the toolbelt.
 |[processes]() |	Commands to work with processes|
 |[gateways]() |	Commands to work with gateways|
 |[tunnel]() |	Commands to work with tunnel|
-
-

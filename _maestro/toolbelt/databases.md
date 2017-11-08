@@ -11,39 +11,19 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Database management
 
 Use these commands to configure your replication slave database servers.
 
 
-
-
-
-
 ## Slave promotion to standalone master
-
-
-
-
 
 
 ### Usage
 
-
-
-
-
 ```
 $ cx databases resync-slave [-s <stack>] <slave server name>
 ```
-
-
 
 Re-syncs the specified slave database server with its master database server.
 
@@ -51,10 +31,6 @@ From time-to-time your slave database may go out of sync with its master. This a
 
 The server provided must have already been configured as a replication slave via the Cloud 66 UI.
 Providing the database type is optional and is only necessary for shared servers where we can't automatically determine the target database type.
-
-
-
-
 
 
 ### Important!
@@ -67,15 +43,7 @@ In the case of any servers not being accessible during this time, those servers 
 
 
 
-
-
-
-
-
-
 ### Parameters
-
-
 
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
@@ -83,13 +51,7 @@ In the case of any servers not being accessible during this time, those servers 
 |stack server name 	   | 	—		| Name of the replication slave server to promote |
 |database type (optional)	 	   |	—	| The Database type |
 
-
-
-
-
 ### Example
-
-
 
 
 ```
@@ -99,27 +61,13 @@ $ cx databases resync-slave -s My_Awesome_App --dbtype postgresql my_slave_serve
 
 
 
-
-
-
-
 ## Slave re-synchronise with master
 
-
-
-
-
 ### Usage
-
-
-
-
 
 ```
 $ cx databases resync-slave [-s <stack>] <slave server name>
 ```
-
-
 
 Re-syncs the specified slave database server with its master database server.
 
@@ -129,13 +77,7 @@ The server provided must have already been configured as a replication slave via
 Providing the database type is optional and is only necessary for shared servers where we can't automatically determine the target database type.
 
 
-
-
-
-
 ### Parameters
-
-
 
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
@@ -143,19 +85,11 @@ Providing the database type is optional and is only necessary for shared servers
 |stack server name 	   | 	—		| Name of the replication slave server to re-synchronise with master|
 |database type (optional)	 	   |	—	| The Database type |
 
-
-
-
-
 ### Example
-
-
 
 
 ```
 $ cx databases resync-slave -s My_Awesome_App my_slave_server_name
 $ cx databases resync-slave -s My_Awesome_App --dbtype postgresql my_slave_server_name
 ```
-
-
 

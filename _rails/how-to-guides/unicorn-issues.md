@@ -8,13 +8,7 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "common" %}
-
-
-
-
 
 A not unusual issue with Unicorn is that redeployments don't reflect your code changes. As a background on this, when you redeploy your stack, we send a USR2 signal to Unicorn which tells it to:
 
@@ -30,5 +24,3 @@ This mechanism allows for the zero-downtime deployments. However, if for some re
 This will list the processes run by Unicorn, refreshing every 5 seconds to help you see any updates.
 
 You should also look at your logs in `$STACK_PATH/log/*.log` to see if there are any error messages. Based on those error messages, you'll be able to troubleshoot why new workers aren't being initiated with your updated code.
-
-

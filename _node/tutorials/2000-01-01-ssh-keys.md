@@ -11,12 +11,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Generate Keys on Linux and Mac
 
 Run the 
@@ -29,8 +23,6 @@ ssh-keygen
 
 The generated keys should now be located in your home directory 
 ~/.ssh/
-
-
 *		You'll find the **private key** in the 
 ~/.ssh/id_rsa
  file.
@@ -51,28 +43,14 @@ You can now log in to your server using your public key.
 
 
 
-
-
-
-
-
-
 ## Important
 
 Cloud 66 doesn't currently support password protected keys, so please ensure your key is not passworded.
 
 
-
-
-
-
 ## Generate Keys on Windows
 
 If you're using PuTTY in Windows for SSH services, you can still use SSH keys. PuTTY can generate keys using the puttygen program, [download PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
-
-
-
-
 
 
 ## Connect to your server using your key
@@ -90,17 +68,9 @@ ssh -i {your private key location} {server user}@{server address}
 {% endhighlight %}
 
 
-
-
-
-
-
-
 ## Important
 
 In both cases above you should not be asked to provide your password.
-
-
 Once you are happy that you can connect to your server with your key, best practice would be to disable access to your server via username/password. However this is up to you and your particular requirements.
 
 [More information regarding SSH Keys](http://library.linode.com/security/ssh-keys)

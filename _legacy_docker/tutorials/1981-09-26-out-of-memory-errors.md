@@ -11,12 +11,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## The Problem
 
 When you are deploying your stack (particularly in a non-development environment) asset pipeline compilation takes place during the deployment process.
@@ -31,21 +25,9 @@ These are more likely to occur on servers with low memory availability. It is po
 
 
 
-
-
-
-
-
-
 ## Note
 
 Irregular vendor issues in memory allocation (like greedy neighbours on the same physical instance) could also cause this issue, though that very vendor/infrastructure specific.
-
-
-
-
-
-
 
 
 

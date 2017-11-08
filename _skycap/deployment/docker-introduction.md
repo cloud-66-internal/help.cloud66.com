@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## Introduction to Docker
 
 [Docker](https://www.docker.com/) is an open-source project that helps developers publish applications inside containers. There are many benefits to using Docker: 
@@ -33,10 +27,6 @@ permalink: /:collection/:path
 - **Deploy anything!**: As long as you can put it in a container, you can deploy it to any cloud with Cloud 66. You will still benefit from the many features previously only available to Ruby stacks, as well as numerous features built specifically for Docker deployments.
 
 
-
-
-
-
 ## Cloud 66 Docker support
 
 Cloud 66 builds Docker stacks in two ways:
@@ -45,12 +35,6 @@ Cloud 66 builds Docker stacks in two ways:
 2. **User-provided image**: You provide a Docker image that you've built, which we push to your servers and manage. 
 
 We provide a set of tools and practices to help you run a full end to end production Docker based stack.
-
-
-
-
-
-
 
 
 

@@ -8,13 +8,7 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "node" %}
-
-
-
-
 
 You will be notified in the case that Cloud 66 is unable to connect to your server for at least 20 minutes. This may happen for the following reasons:
 
@@ -40,5 +34,3 @@ If you receive a notification about this, please see the following steps:
 5.  Try rebooting the server from your cloud vendor dashboard - this would help if it's under heavy load
 
 If you have verified all of the above scenarios without finding the problem, please contact Cloud 66 support through your dashboard.
-
-

@@ -12,28 +12,14 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## About configuring HAProxy
 
 [HAProxy CustomConfig](http://help.cloud66.com/web-server/haproxy) allows you to configure your load balancer through the comfort of your browser. In addition to the settings described below, you could also refer to the [HAProxy documentation](http://haproxy.1wt.eu/download/1.3/doc/haproxy-en.txt) for more information about configurations.
 
 
-
-
-
-
 ## View HAProxy stats
 
 While on your stack detail page, click on the load balancer add-in to login to your HAProxy stats page. Once logged in, you will see a variety of statistics for your load balancer, and any potential issues.
-
-
-
-
 
 
 ## Configure HAProxy to use internal IPs
@@ -43,43 +29,21 @@ By default, HAProxy is configured to use the external IP address of your servers
 Simply replace any `server.ext_ipv4` values with `server.int_ipv4` using HAProxy CustomConfig (below).
 
 
-
-
-
-
 ## Specify an HAProxy test interval
 
 You can also specify your own test interval if you like - this is done in the _server_ section of your HAProxy configruation. This section is on line 53 of the default configuration.
 
 To change the test interval to every 30 seconds (instead of the default 2 seconds), the template should look like this:
 
-
-
-
-
 ```
 server web&#123;&#123; forloop.index &#125;&#125; &#123;&#123; server.ext_ipv4 &#125;&#125;:80 cookie "LSW_WEB&#123;&#123; forloop.index &#125;&#125;" check inter 30000
 ```
 
-
-
-
-
 Please note the `inter 3000` at the end - this defines the test interval as 3000 milliseconds. Once this template is applied, it looks like this:
-
-
-
-
 
 ```
 server web1 107.170.99.39:80 cookie "LSW_WEB1" check inter 30000
 ```
-
-
-
-
-
-
 
 
 
@@ -97,10 +61,6 @@ In this case, you could replace the _httpchk_ section with this:
 `httpchk HEAD /check.html HTTP/1.0`.
 
 
-
-
-
-
 ## About configuring HAProxy with CustomConfig
 
 You can customize the HAProxy configuration on your HAProxy server using CustomConfig (below).
@@ -108,10 +68,6 @@ You can customize the HAProxy configuration on your HAProxy server using CustomC
 CustomConfig uses the [Liquid templating language](http://liquidmarkup.org/). You can find many incredible guides and tutorials into the Liquid syntax around the web, but the syntax is easy enough to pick up in minutes.
 
 The following variables are available to use in HAProxy CustomConfig.
-
-
-
-
 
 
 ### Config variables 
@@ -175,12 +131,6 @@ The following variables are available to use in HAProxy CustomConfig.
 
 
 
-
-
-
-
-
-
 ## Commit HAProxy CustomConfig
 
 Editing and committing HAProxy CustomConfig will do the following steps for your HAProxy web server:
@@ -194,21 +144,9 @@ This process will be stopped if an error is encountered.
 
 
 
-
-
-
-
-
-
 ### Warning
 
 A bad HAProxy configuration might stop your HAProxy server from working. Take extra care to make sure the configuration is correct.
-
-
-
-
-
-
 
 
 

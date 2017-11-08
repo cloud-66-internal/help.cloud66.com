@@ -12,10 +12,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
 ## About scaling your Elasticsearch cluster
 
 You can scale your Elasticsearch cluster through the Cloud 66 dashboard on the Elasticsearch server group page.
@@ -25,10 +21,6 @@ Elasticsearch scaling works by splitting your **indices** into **shards**, and p
 You specify the number of shards for individual indices when creating them, and can dynamically change the number of replicas with the API. 
 
 By moving primary and replica shards to different nodes, Elasticsearch achieves both data reduncancy and improved performance.
-
-
-
-
 
 
 ## General recommendations

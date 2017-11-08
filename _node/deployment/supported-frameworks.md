@@ -11,12 +11,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ###  Which frameworks do we support? 
 
 During the analyse phase of your codebase we take a look at your `package.json` and detect the framework you are using. The following frameworks are supported and can be deployed with Cloud 66.

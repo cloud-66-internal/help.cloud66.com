@@ -11,18 +11,8 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ### What is GlusterFS?
 [GlusterFS](http://www.gluster.org/) is a scalable network file-system, and it's easy to add to your stack as an add-in.
-
-
-
-
 
 
 ## Why would I need GlusterFS?
@@ -35,16 +25,8 @@ GlusterFS is one of the options you have to for a Network Attached Storage (NAS)
 GlusterFS gives you a shared storage space that is accessible from each server or container on your stack and is resilient to faults with powerful access control features.
 
 
-
-
-
-
 ## How do I add GlusterFS to my stack?
 Adding GlusterFS to your stack is easy. Once you have your stack built, simply click on the Add-Ins button (+ icon) and select GlusterFS. Here you will be asked about the "replica count" which in short is the number of servers that will keep a copy of your data. You can start with 1 which means we will create and setup GlusterFS on 1 server for you. If you choose 2, we will fire up 2 servers and configure GlusterFS to keep 2 copies of your data, one copy on each server for more resiliency. You get the idea!
-
-
-
-
 
 
 ## How can I use GlusterFS in my application?
@@ -52,34 +34,18 @@ Now that you have a share storage service provided by GlusterFS in your stack, y
 
 To see how your shared file system works, you can SSH to one of you web servers and run the following commands:
 
-
-
-
-
 ```
 $ cd /mnt/data-store
 $ touch hello.txt
 ```
 
-
-
-
-
 Now SSH to another web server on your stack and you should be able to see `hello.txt` under `/mnt/data-store`.
-
-
-
-
 
 
 ## What about my containers?
 So far we saw how you can create a share disk volume on every server. But what about accessing this share storage from each container? By default, all your containers are started with an automatic mount volume of the same name at `/mnt/data-store`. This means your code can read and write to `/mnt/data-store` from inside a container without any further changes.
 
 You don't need to manually mount your GlusterFS volumes inside your containers.
-
-
-
-
 
 
 ## Fine grained access control for your data
@@ -90,10 +56,6 @@ But what if you need to make sure some services have read/write access to your d
 This is achieved using the [manifest](https://help.cloud66.works/{{ include.product }}/deployment/building-a-manifest-file.html) file. Using manifest file, you can control the GlusterFS volumes you have as well as grant read/write or readonly access to containers of a specific service. 
 
 Using the manifest file also allows you to choose the servers you would like to have the volumes mounted (like application servers or your database servers).
-
-
-
-
 
 
 ## Accessing your GlusterFS servers

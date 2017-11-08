@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## What is a manifest file?
 
 A manifest files allows you to be more explicit about your stack composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your stack. If you're already familiar with manifest files, refer to [Building a manifest file](https://help.cloud66.works/{{include.product}}/deployment/building-a-manifest-file.html).
@@ -31,10 +25,6 @@ These are just some examples of the settings you can control with a manifest fil
 - Customize component-specific configurations
 
 
-
-
-
-
 ## How can I use a manifest file?
 
 The way to use this functionality differs from _Rails/Rack_ to _Docker_ stacks:
@@ -43,23 +33,11 @@ The way to use this functionality differs from _Rails/Rack_ to _Docker_ stacks:
 - For _Docker_ stacks, provide manifest contents after your stack has been analyzed (and before you deploy it) by using the _advanced_ tab. You can also change the manifest after your stack deployment with the `Configure manifest` item in the right menu of your stack page.
 
 
-
-
-
-
 ## Manifest file examples
-
-
-
-
 
 ### Example 1: Specifying a Docker version
 
 In this example, we'll set the version of Docker on your stack to 1.4.1. The top level node is the stack environment - the example below will therefore apply to the production environment.
-
-
-
-
 
 ```
 
@@ -70,10 +48,6 @@ production:
 
 ```
 
-
-
-
-
 This is how it works:
 
 **production** The top node is the stack environment node. 
@@ -83,12 +57,6 @@ This is how it works:
 **configuration** As part of the application type, set configuration variables.
 
 **version** Lastly, the configuration variable you wish to specify.
-
-
-
-
-
-
 
 
 
@@ -105,21 +73,9 @@ If you'd like to use a _Docker_ stack, create it and use the _Advanced_ tab afte
 
 
 
-
-
-
-
-
-
 ### Need Help Building your first stack?
 
 Read about [building your first Cloud 66 stack](http://help.cloud66.com/introduction-to-cloud-66/introduction-to-cloud-66).
-
-
-
-
-
-
 
 
 
@@ -129,24 +85,12 @@ In the previous example, we used a manifest file to build a stack with a custom 
 
 
 
-
-
-
-
-
-
 ### What is CORS?
 
 Cross Origin Resource Sharing is a mechanism that allows many resources (e.g. fonts, JavaScript etc.) on a web page to be requested from another domain outside the domain from which the resource originated.
 
 
-
-
 To get started, open up your `manifest.yml` file in a text editor and enter the following lines in there:
-
-
-
-
 
 ```
 
@@ -159,10 +103,6 @@ production:
                     methods: 'GET, OPTIONS'
 
 ```
-
-
-
-
 
 This is how it works:
 
@@ -188,25 +128,13 @@ Now that your `manifest.yml` file is in place under your `.cloud66` folder, you 
 
 Although redeploying your stack will set the configuration settings for the stack, it will not automatically push down all the changes to your Nginx servers. To force Nginx configuration changes to be pushed to your servers, we can use a stack setting in the [Cloud 66 toolbelt] called `reconfigure.nginx`. Simply use the following command to push the change (replacing `my_stack` with your stack name):
 
-
-
-
-
 ```
 
 $ cx settings set -s my_stack reconfigure.nginx true
 
 ```
 
-
-
-
-
 This will force your Nginx configuration to be rebuilt during the next redeployment. Once you redeploy, the CORS settings will be updated on your web servers.
-
-
-
-
 
 
 ## Manifest file structure
@@ -214,10 +142,6 @@ This will force your Nginx configuration to be rebuilt during the next redeploym
 As evidenced in the examples above, manifest file settings can be applied during the build of a new stack or an existing stack depending on the type of setting. They can also change a wide range of settings and configurations on your stack. Now let's learn about the structure of a manifest file.
 
 The manifest file is called `manifest.yml` and is `YAML` formatted. This file should be placed in the `.cloud66` folder of your Git repository if you're using a _Rails/Rack_ stack.
-
-
-
-
 
 
 ### First level: Environment
@@ -229,10 +153,6 @@ The first level of `manifest.yml` is the environment of your stack. This allows 
 - development
 
 You can also use your own custom environment names in your manifest file.
-
-
-
-
 
 
 ### Second level: Application type
@@ -257,19 +177,11 @@ Application type determines which part of the stack is affected by this section.
 The names above suggest which part of the stack the settings apply to. You can find out more about each section below.
 
 
-
-
-
-
 ### Third Level (1): Configurations
 
 The third level of the manifest file determines the specific settings for the application type we want to change. As seen in **example 2**, changing CORS settings goes under the **docker** application type and the **configuration** node. 
 
 For example, this is how to set the version of ElasticSearch to `0.90.7`:
-
-
-
-
 
 ```
 
@@ -283,19 +195,9 @@ production:
 
 
 
-
-
-
-
-
-
 ### Third Level (2): Servers
 
 As well as stack level configurations, manifest files can have settings per server as well. The **servers** section is where those settings are specified. Here is an example to specify the cloud vendor, region, server size and server name for one of your Docker servers. NOTE: `key_name` is optional and is used to select the named vendor cloud key in the case where there are multiple accounts available for the same cloud provider.
-
-
-
-
 
 ```
 
@@ -310,8 +212,4 @@ production:
                 key_name: Default
 
 ```
-
-
-
-
 

@@ -10,10 +10,6 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
 ## What is a manifest file?
 
 A manifest file allows you to be more explicit about your stack composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your stack.
@@ -21,8 +17,6 @@ A manifest file allows you to be more explicit about your stack composition and 
 [Read more about manifest file here.](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html)
 
 This is a sample [manifest.yml](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html) to tell Cloud 66 to provision one server for a Docker stack to run your services.
-
-
 
 ```
 production:
@@ -40,10 +34,6 @@ production:
 
 
 
-
-
-
-
 ## What is service configuration?
 
 Service configuration allows you to be more explicit about your Docker services and control settings that are not usually available through the user interface or Cloud 66 toolbelt. These settings describe the setup of your services, and these are just some examples of the service configurations you can make:
@@ -57,10 +47,6 @@ Service configuration allows you to be more explicit about your Docker services 
 [Read more about service configuration here.](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html)
 
 This is a sample [service.yml](https://help.cloud66.works/{{ include.product }}/deployment/docker-service-configuration.html) to tell Cloud 66 to build a Docker image using [Buildgrid](https://help.cloud66.works/skycap/deployment/buildgrid) and run the service with the name **web** and also provision a **mysql** database.
-
-
-
-
 
 ```
 ---
@@ -81,8 +67,4 @@ services:
 databases:
 - mysql
 ```
-
-
-
-
 

@@ -11,19 +11,9 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## About migrating from Heroku
 
 Migrating your application from Heroku to Cloud 66 involves deploying your code, importing your data and redirecting your traffic to the new endpoint. 
-
-
-
-
 
 
 ## What server size do I need?
@@ -31,24 +21,12 @@ Migrating your application from Heroku to Cloud 66 involves deploying your code,
 Using Heroku, you can choose between 1X (512 MB), 2X (1 GB) and PX (6 GB) server sizes. This makes it easy to calculate your server requirements, and we recommend that you use similar server resources when deploying your stack with Cloud 66. We also recommend that you have a seperate server for your database in production environments.
 
 
-
-
-
-
 ## Migrating
-
-
-
-
 
 
 ### 1. Code
 
 Simply provide Cloud 66 the URL to your Git repository so that it can be analyzed. For more information, see [Accessing your Git repository](http://community.cloud66.com/articles/accessing-your-git-repository).
-
-
-
-
 
 
 ### 2. Data
@@ -86,24 +64,12 @@ $ mysql -u [generated_user_name] -p [generated_password] "[database_name]" < /tm
 {% endhighlight %}
 
 
-
-
-
-
 ### 3. Traffic
 
 Once you're ready to serve traffic from your Cloud 66 stack, you need to redirect your traffic to it. For more information, see [Configure your DNS](http://help.cloud66.com/network/configure-your-dns).
 
 
-
-
-
-
 ## Useful pointers
-
-
-
-
 
 
 ### Web server and Procfile
@@ -113,10 +79,6 @@ By default, Cloud 66 will deploy your stack with Phusion Passenger, but you can 
 To run a custom web server, we require a `custom_web` entry. It is important to set this before analyzing your stack, to avoid building the stack with Passenger.
 
 You can also use the [Procfile](http://help.cloud66.com/deployment/running-background-processes) to define other background jobs.
-
-
-
-
 
 
 ### Dyno recyling
@@ -130,10 +92,6 @@ for OUTPUT in $(pgrep -f sidekiq); do kill -TERM $OUTPUT; done
 This will send a TERM signal to any Sidekiq workers, giving them 10 seconds (by default) to finish gracefully. Any workers that don't finish within this time period are forcefully terminated and their messages are sent back to Redis for future processing. You can customize this script to fit your needs, and add it to your stack as a [shell add-in](http://help.cloud66.com/stack-add-ins/shell).
 
 Note that this is a temporary solution, and we recommend that you use a server monitoring solution to identify the source of your leak.
-
-
-
-
 
 
 ### Asset Pipeline Compilation

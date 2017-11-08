@@ -11,19 +11,11 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
 ## About scaling your MongoDB servers
 
 When it comes to MongoDB replication, **you really need to know how MongoDB replica sets work and how to use them** before trying to scale up your MongoDB backend. This is to ensure continuity of service without interruptions.
 
 There is a lot of excellent material about [MongoDB replica sets](http://docs.mongodb.org/manual/replication/) on the Internet, so we're not going to repeat this information. For the purpose of this document, we will focus on how Cloud 66 scales your MongoDB servers and how you can use them in your code.
-
-
-
-
 
 
 ## Configure a MongoDB replica set
@@ -47,22 +39,14 @@ This interruption is during the backup and configuration steps of the scaling an
 
 
 
-
-
-
-
 ## Using a MongoDB replica set in your code
 
 All MongoDB drivers support replica sets, which means that you can pass the list of MongoDB servers in your replica set to them and they will adapt. However, switching from a single MongoDB to a replica set is something you need to test and be sure about. You shouldn't make such a change to your stack infrastructure with the click of a button!
 
 This is why we won't touch your configuration files after you scale your MongoDB up. This allows you to configure the client the way you see fit and go live with your replicated database backend when you are ready.
-
-
 **Note** 
 
 We stop modifying your MongoDB client configuration files (like mongoid.yml in Rails) after replication is enabled.
-
-
 
 
 ## Environment variables
@@ -83,31 +67,15 @@ Without replica sets, you can connect to your MongoDB using environment variable
 
 `MONGODO_URL_INT` contains a MongoDB client friendly URL to the server with its internal address. It usually looks like this:
 
-
-
-
-
 ```
 mongodb://192.168.12.34:27017/my_database
 ```
 
-
-
-
-
 `MONGODO_URL_EXT` contains a MongoDB client friendly URL to the server with its external address. It usually looks like this:
-
-
-
-
 
 ```
 mongodb://50.45.87.46:27017/my_database
 ```
-
-
-
-
 
 `MONGODB_URL` is pointing to {% raw %} `{{MONGODB_URL_INT}}` {% endraw %}by default.
 
@@ -117,17 +85,9 @@ Once replication is enabled, this environment variable is populated:
 
 `MONGODB_ADDRESSES` contains a comma separated list of all server names of the replica set. This usually looks like something like this:
 
-
-
-
-
 ```
 lion.mystack.c66.me,tiger.mystack.c66.me
 ```
-
-
-
-
 
 Once you have replica set enabled by scaling your MongoDB backend up, you will need to modify your client configuration accordingly. Your deployment might not work and your stack might stop functioning if you don't do that.
 
@@ -137,21 +97,11 @@ Deployments might fail after replica sets are enabled if you don't change your c
 
 
 
-
-
-
-
-
-
 ## Configure Mongoid
 
 As the most popular Ruby client for MongoDB, here is an example of how to change your `mongoid.yml` file to use a replica set.
 
 Before having a replica set, you had the following setup:
-
-
-
-
 
 ```
 development:
@@ -163,15 +113,7 @@ development:
 				consistency: :strong
 ```
 
-
-
-
-
 After replica sets are enabled you can use something like this:
-
-
-
-
 
 ```
 development:
@@ -183,15 +125,7 @@ development:
 				consistency: :strong
 ```
 
-
-
-
-
 The reason for the ugly looking line is that `mongoid` requires the list of server addresses in the replica set to be in an array with port numbers. Since your replica set will be configured to work on the normal MongoDB port of 27017 by default, this line will split the comma separated list into an array in Ruby. The end result will look like something like this:
-
-
-
-
 
 ```
 ["lion.mystack.c66.me:27017","tiger.mystack.c66.me:27017"]
@@ -201,18 +135,8 @@ The reason for the ugly looking line is that `mongoid` requires the list of serv
 
 
 
-
-
-
-
-
-
-
-
 ### Note
 
 You cannot use complex Ruby code (like `if`) in your YML files. That's why the new hosts value is generated with string replacements and simple Ruby commands.
-
-
 
 

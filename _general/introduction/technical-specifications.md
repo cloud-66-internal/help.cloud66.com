@@ -11,19 +11,9 @@ permalink: /:collection/:path
 ---
 
 
-
-
-
-
-
-
 ## Operating system
 
 Your servers are deployed with **Ubuntu 16.04 LTS**.
-
-
-
-
 
 
 ## Supported cloud providers
@@ -39,17 +29,9 @@ Cloud 66 currently supports the following cloud providers:
 *   [CloudA](/deployment/cloud-a-cloud)
 
 
-
-
-
-
 ## Supported frameworks
 
 We support end-to-end Docker deployments, meaning that we support any type of application. You can either let us build your Docker image (with a Dockerfile), or provide your own.
-
-
-
-
 
 
 ## Component versions
@@ -57,17 +39,9 @@ We support end-to-end Docker deployments, meaning that we support any type of ap
 Cloud 66 servers have two types of components with differing policies on versioning.
 
 
-
-
-
-
 ### Components built via apt-packages
 
 We don't have fine-grain control over the version, and use the latest version available via the apt source.
-
-
-
-
 
 
 ### Components built from source
@@ -78,17 +52,9 @@ You are free to specify a version for a number of components in your [manifest f
 
 
 
-
-
-
-
-
-
 ### Warning
 
 We cannot take responsibility for issues arising from non-recognized or incompatible versions.
-
-
 | Component           | Default version  |
 | ------------------- |-----------------:|
 | Docker      		  |			 17.06.0 |
@@ -103,14 +69,8 @@ We cannot take responsibility for issues arising from non-recognized or incompat
 | Ruby      		  |	           2.4.1 |
 | Weave			      |   		   1.9.8 |
 
-
-
-
-
 ### Important
 
 Would you like to suggest a version change? [Email us](mailto:support@cloud66.com?subject=Version update)!
-
-
 
 

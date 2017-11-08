@@ -12,10 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
 ## Introduction
 
 Our pricing is simple - you only pay for what you use, and there are no setup fees or fixed term contracts.
@@ -32,10 +28,6 @@ To learn more about feature-based pricing, please see our feature pages:
 *   [Teams](https://help.cloud66.works/general/ccount-management/team-accounts#pricing)
 *   [Support](https://help.cloud66.works/general/account/support.html)
 
-
-
-
-
 ## Comparing Cloud 66 with Heroku and DIY
 
 For this example, we will use a simple Rails application with common requirements - scalable, backed by a single database and protected by SSL.
@@ -44,8 +36,6 @@ For this example, we will use a simple Rails application with common requirement
 * Database: PostgreSQL
 * Environment: Production
 * Other requirements: SSL, Memcache
-
-
 |               | Cloud 66 & cloud vendor    | Heroku  |  DIY  |
 | ------------- |:--------------------------:| :------:|------:|
 | App server x 1	     |  $24 ($19 + $5)	 |   $36   |  $10  |
@@ -58,15 +48,7 @@ For this example, we will use a simple Rails application with common requirement
 | Setup fee	 |  -  |   - |  $300  |
 | **Total cost**	 |  __$63*__  |   __$121__ |  __$430__  |
 
-
-
-
-
 ##### *Drops to $56/month for the second stack as only the first server of the account is $19.
-
-
-
-
 
 ### Assumptions
 
@@ -77,8 +59,6 @@ For this example, we will use a simple Rails application with common requirement
 *   This DevOp uses Chef, Puppet, Capistrano or similar solutions
 *   Maintenance fee includes 1 hour per stack per month
 *   [Server Density](http://www.serverdensity.com/) is used as a monitoring prodiver
-
-
 
 Feel free to contact us on [hello@cloud66.com](mailto:hello@cloud66.com) if you'd like us to provide you with a price estimate for your setup.
 

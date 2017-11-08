@@ -12,12 +12,6 @@ permalink: /:collection/:path
 
 
 
-
-
-
-
-
-
 ## What is a manifest file?
 
 A manifest file allows you to be more explicit about your stack composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your stack. See [Getting started with manifest files](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html) for an introduction.
@@ -31,10 +25,6 @@ For _Docker_ stacks, provide manifest contents after your stack has been analyze
 Once you're ready, start by going through each section below to build your manifest file.
 
 
-
-
-
-
 ## Which environment?
 
 The first level of your manifest file is the **environment** - this allows you to use the same `manifest.yml` for multiple stacks with different environments. Some examples are:
@@ -44,10 +34,6 @@ The first level of your manifest file is the **environment** - this allows you t
 - development
 
 You can also use your own custom environment names in your manifest file.
-
-
-
-
 
 
 ## Which application?
@@ -69,29 +55,19 @@ Next, select which application you would like to specify settings for. You can c
 *   [Sinatra](#sinatra)
 {% if include.product == "rails" %}*   [Rails](#rails){% endif %}
 
-
-
-
-
 {% if include.product == 'maestro' or include.product == 'legacy_docker' %}
 ### Docker
 
 - **version**: Specify the version of Docker you want to install.
 - **weave_version** (_Optional_): Specify the version of Weave you want to install.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers.   
-
-
  <span style="background-color: #FFFF00"> Note that you must provide [**subnet_id**](#servers) for all servers in your stack.</span>
 - **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **image_keep_count** (_Optional, defaults to 5_): Set the number of old images to save on your servers (besides the running image).
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your stack.  
-
-
   <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
-
-
 
 
 ```
@@ -107,10 +83,6 @@ production:
             nameservers: ['8.8.8.8', '8.8.4.4']
 ```
 
-
-
-
-
 ```
 production:
     docker:
@@ -122,25 +94,15 @@ production:
             root_disk_type: ssd
             image_keep_count: 15
 ```
-
-
 * * *
 
 {% endif %}
-
-
-
-
 
 ### ElasticSearch
 
 - **version**: Specify the version of ElasticSearch you want to install.
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
-
-
-
-
 
 ```
 production:
@@ -151,27 +113,13 @@ production:
             root_disk_type: ssd
 ```
 
-
-
-
-
 * * *
-
-
-
-
 
 
 ### Gateway
 
 - **name**: Specify the name of gateway you want to use for your stack.
 - **username** (_Optional_) Specify the username which should be used to connect to bastion server.
-
-
-
-
-
-
 
 
 ## Note
@@ -182,10 +130,6 @@ production:
 	    name: aws_bastion
 	    username: ec2-user
 ```
-
-
-
-
 
 
 ### GlusterFS
@@ -207,19 +151,9 @@ After you change the volume list, you need to redeploy your stack for new config
 
 
 
-
-
-
-
-
-
 ## Note
 
 You can not change replica_count after GlusterFS added to your stack.
-
-
-
-
 
 
 ## Note
@@ -227,15 +161,9 @@ You can not change replica_count after GlusterFS added to your stack.
 You can not use glusterfs group or any of its servers in mount_targets.
 
 
-
-
 ## Note
 
 Renaming a volume will delete volume and create a new one.
-
-
-
-
 
 ```
 production:
@@ -259,15 +187,7 @@ production:
 			  		write: ['web']
 ```
 
-
-
-
-
 * * *
-
-
-
-
 
 
 ### Memcached
@@ -275,10 +195,6 @@ production:
 - **memory**: Specify maximum memory (in MB) that can be used (default value is 64).
 - **port**: Specify connection port (default value is 11211).
 - **listen_ip**: Specify which IP address to listen on (default value is 0.0.0.0).
-
-
-
-
 
 ```
 production:
@@ -289,15 +205,7 @@ production:
             listen_ip: 127.0.0.1
 ```
 
-
-
-
-
 * * *
-
-
-
-
 
 
 ### MongoDB
@@ -305,10 +213,6 @@ production:
 - **version**: Specify the version of MongoDB you want to install (can only be set during stack build).
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
-
-
-
-
 
 ```
 production:
@@ -319,15 +223,7 @@ production:
             root_disk_type: ssd
 ```
 
-
-
-
-
 * * *
-
-
-
-
 
 
 ### MySQL
@@ -336,10 +232,6 @@ production:
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **engine**: Specify the MySQL engine you want to install. Valid values are 'mysql' and 'percona' (can only be set during stack build).
-
-
-
-
 
 ```
 production:
@@ -351,25 +243,13 @@ production:
             engine: percona
 ```
 
-
-
-
-
 * * *
-
-
-
-
 
 
 ### Nginx
 
 - **cors**: Enable [Cross Origin Resource Sharing](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) - this will be taken into account when your Nginx configuration is reloaded.
 - **perfect_forward_secrecy** (_deprecated_): Enable [Perfect Forward Secrecy](http://en.wikipedia.org/wiki/Perfect_forward_secrecy) - this will be taken into account when your Nginx configuration is reloaded.
-
-
-
-
 
 ```
 production:
@@ -383,19 +263,9 @@ production:
 
 
 
-
-
-
-
-
-
 ### CORS configuration
 
 If required, you can also specify the allowed origin (as '\*' or a single origin) and methods. For stacks created since 21st September 2016, you can also specify a comma-seperated list of origins, headers, and whether to allow credentials for CORS.
-
-
-
-
 
 ```
 production:
@@ -409,15 +279,7 @@ production:
                     credentials: true
 ```
 
-
-
-
-
 * * *
-
-
-
-
 
 
 ### PostgreSQL
@@ -426,10 +288,6 @@ production:
 - **postgis**: Specify whether to include PostGIS (can be added after initial stack build).
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
-
-
-
-
 
 ```
 production:
@@ -441,24 +299,12 @@ production:
             root_disk_type: ssd
 ```
 
-
-
-
-
 * * *
-
-
-
-
 
 
 ### PostGIS
 
 - **version**: Specify the version of PostGIS you want to install.
-
-
-
-
 
 ```
 production:
@@ -468,15 +314,7 @@ production:
                 version: 2.1.1
 ```
 
-
-
-
-
 * * *
-
-
-
-
 
 {% if include.product == 'rails' %}
 ### Rails
@@ -522,19 +360,11 @@ production:
 ```
 {% endif %}
 
-
-
-
-
 ### Redis
 
 - **version**: Specify the version of Redis you want to install.
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
-
-
-
-
 
 ```
 production:
@@ -545,15 +375,7 @@ production:
             root_disk_type: ssd
 ```
 
-
-
-
-
 * * *
-
-
-
-
 
 {% if include.product == 'rails' %}
 ### Rack
@@ -597,10 +419,6 @@ production:
 
 {% endif %}
 
-
-
-
-
 ### Sinatra
 
 For Sinatra use [Rack](#rack)
@@ -608,15 +426,7 @@ For Sinatra use [Rack](#rack)
 * * *
 
 
-
-
-
-
 ### Load balancers
-
-
-
-
 
 
 ### AWS load balancer
@@ -627,21 +437,13 @@ Available settings:
 
 - **httpchk**: The URL visited to check your server health.
 
-
-
 ```
 production:
     load_balancer:
         configuration:
             httpchk: /
 ```
-
-
 * * *
-
-
-
-
 
 ### GCE load balancer
 
@@ -653,10 +455,6 @@ Available settings (refer to the [GCE documentation](https://cloud.google.com/co
 
 - **balance**: The load balancing strategy. You can use these values: NONE, CLIENT_IP or CLIENT_IP_PROTO.
 
-
-
-
-
 ```
 production:
     load_balancer:
@@ -665,15 +463,7 @@ production:
             balance: CLIENT_IP_PROTO
 ```
 
-
-
-
-
 * * *
-
-
-
-
 
 
 ### HAProxy
@@ -691,8 +481,6 @@ Configuration:
 - **httpchk**: The health-check configuration.
 - **balance**: The load balancing strategy.
 - **errorfile_\***: Location of your own custom error page content to serve in the case of receiving a HTTP error code on the load balancer.
-
-
 
 ```
 production:
@@ -715,13 +503,7 @@ production:
             errorfile_503: /etc/haproxy/errors/503.http
             errorfile_504: /etc/haproxy/errors/504.https
 ```
-
-
 * * *
-
-
-
-
 
 
 ### Linode Nodebalancer
@@ -733,10 +515,6 @@ Available settings (refer to the [Linode documentation](https://www.linode.com/d
 - **httpchk**: The health-check configuration
 - **balance**: The load balancing strategy. You can use these values : roundrobin, leastconn or source.
 
-
-
-
-
 ```
 production:
     load_balancer:
@@ -745,15 +523,7 @@ production:
             balance: leastconn
 ```
 
-
-
-
-
 * * *
-
-
-
-
 
 
 ### Rackspace load balancer
@@ -764,10 +534,6 @@ Available settings (refer to the [Rackspace documentation](http://docs.rackspace
 
 - **balance**: The load balancing strategy. You can use these values : ROUND_ROBIN, RANDOM or LEAST_CONNECTIONS.
 
-
-
-
-
 ```
 production:
     load_balancer:
@@ -775,15 +541,7 @@ production:
             balance: LEAST_CONNECTIONS
 ```
 
-
-
-
-
 * * *
-
-
-
-
 
 
 ### CloudA load balancer
@@ -792,21 +550,13 @@ Use a manifest file to customize the CloudA load balancer deployed by Cloud 66. 
 
 - **balance**: The load balancing strategy. You can use these values : ROUND_ROBIN, SOURCE_IP or LEAST_CONNECTIONS.
 
-
-
 ```
 production:
     load_balancer:
         configuration:
             balance: ROUND_ROBIN
 ```
-
-
 * * *
-
-
-
-
 
 
 ## Which server?
@@ -815,10 +565,6 @@ Every application defined in the manifest file must be bound to a server. Howeve
 
 Here is an example of a server definition:
 
-
-
-
-
 ```
 production:
     rails:
@@ -826,10 +572,6 @@ production:
           - server:
             unique_name: app
 ```
-
-
-
-
 
 These are the parameters that the _server_ section can take:
 
@@ -842,12 +584,6 @@ These are the parameters that the _server_ section can take:
 - **region** (_Optional, BYOC only_): [Data center region](http://developers.cloud66.com/#cloud-vendor-instance-regions) to create the server in.
 - **size** (_Optional, BYOC only_): [Size of the server instance](http://developers.cloud66.com/#cloud-vendor-instance-names) created.
 - **availability_zone** (_Optional, AWS EC2 only_): Availability zone of the server instance in AWS EC2 region.
-
-
-
-
-
-
 
 
 <div class="notice notice-important">
@@ -872,17 +608,9 @@ production:
             availability_zone: us-east-1c
 ```
 
-
-
-
-
 ### Deploy to your own server
 
 - **address** (_Optional, Registered Server only_): Address of the server, only applicable to Registered Servers. For Registered Servers, _unique_name_ and _address_ should be defined.
-
-
-
-
 
 ```
 production:
@@ -891,12 +619,6 @@ production:
             unique_name: frontend
             address: 123.123.123.123
 ```
-
-
-
-
-
-
 
 
 
@@ -915,33 +637,17 @@ production:
 {% endhighlight %}
 
 
-
-
-
-
 ### External Servers
 
 If you would like to use an external server for an application (like using your own MySQL or AWS RDS for example), you can define that server as external.
 
 External server definitions specify that the application is hosted on a server external to Cloud 66. This is not a valid target for your main application (ie. Rails) but may be appropriate for another application type (ie. MongoDB):
 
-
-
-
-
 ```
 production:
     mysql:
         server: external
 ```
-
-
-
-
-
-
-
-
 
 
 
@@ -953,21 +659,11 @@ You are <b>required</b> to specify a <a href="#which-server">server</a> for appl
 </div>
 
 
-
-
-
-
-
-
 ## Specify environment variables
 
 You can add your environment variables to your manifest files.
 
 Here is an example:
-
-
-
-
 
 ```
 production:
@@ -978,10 +674,6 @@ production:
         LONG_ONE: AUTO_GENERATE_15
 ```
 
-
-
-
-
 If you need to auto generate a value, you can use the `AUTO_GENERATE` keyword. It generates a 10 character long random string unless you specify the length after it: `AUTO_GENERATE_15` which generates a 15 character random string.
 
 Environment variables set in your manifest file will only apply during the initial build of your stack. Please refer to our documentation on [environment variables](https://help.cloud66.works/{{ include.product }}/deployment/env-vars.html) if you'd like to set them beyond this point.
@@ -989,19 +681,11 @@ Environment variables set in your manifest file will only apply during the initi
 Any environment variable that is generated by the result of the code analysis (like database addresses) will override any value specified in the manifest file. In other words, you cannot specify a value like `MYSQL_ADDRESS` in your manifest file as it will be ignored.
 
 
-
-
-
-
 ## Processes
 
 [Background processes](https://help.cloud66.works/rails/deployment/proc-files.html) can be deployed and managed by Cloud 66. Any process in a `Procfile` will be picked up, deployed and monitored by the system.
 
 If you would like more flexibility over the signals used to control the processes, you can use the `procfile_metadata` section. Here is an example:
-
-
-
-
 
 ```
 production:
@@ -1014,10 +698,6 @@ production:
     nsq:
       restart_on_deploy: false
 ```
-
-
-
-
 
 In this example, a process called `worker` is stopped using a `TTIN` signal first. After waiting for 120 seconds, if the process is still running, a `TERM` signal will be sent. If it is still running after 5 seconds, it will be killed.
 
@@ -1035,17 +715,9 @@ Default values for each process type are:
   - Restart `restart_on_deploy`: `true`
 
 
-
-
-
-
 ## Specify additional LiveLog files
 
 Each application type supports the additional partial configuration to add custom live log files for that application type:
-
-
-
-
 
 ```
 production:
@@ -1054,34 +726,18 @@ production:
             custom_log_files: ["/tmp/mylog/*/*.log"]
 ```
 
-
-
-
-
 For more information about **LiveLogs** and additional examples, please see the [LiveLogs help page](http://help.cloud66.com/{{ include.product }}/stack-management/live-logs.html).
-
-
-
-
 
 
 ## Test experimental features
 
 You can use some features that are still in beta by adding them to _experiments_ section of your manifest file, for example:
 
-
-
-
-
 ```
 production:
     experiments:
         docker_storage: overlay
 ```
-
-
-
-
 
 These are the parameters that the _experiments_ section currently accepts:
 

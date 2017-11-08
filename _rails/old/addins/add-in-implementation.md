@@ -7,13 +7,7 @@ lead: ""
 legacy: false
 permalink: /:collection/:path
 ---
-
-
 {% assign product = "rails" %}
-
-
-
-
 
 Add-ins allow you to add various internal and external features to your stack. These include database backups, SSL certificates and server components such as Redis and Elasticsearch.
 
@@ -24,5 +18,3 @@ A
  add-in indicates that there aren't any known issues with that specific add-in, whereas a 
 <span style="color:red">red</span>
  add-in indicates an error.
-
-

@@ -13,15 +13,9 @@ permalink: /:collection/:path
 
 {% assign dbtype = "postgres" %}
 
-
-
 ## About deploying PostgreSQL
 When creating a Docker stack, you can add as many databases as you need in your service configuration during the stack build. For Rack-based stacks, Cloud 66 automatically detects whether your application relies on a database or not during your code analysis. This is based on a combination of your Gemfile and your database.yml or mongoid.yml files.
-
-
 After you have analyzed your code, ensure that your desired database type is displayed in the About your app section of the analysis results. If you haven’t specified a username and password for your database, Cloud 66 will automatically generate these credentials for you. They will be available as environment variables and your application will be configured to use them.
-
-
 ## Features
 
 {% if include.dbtype == 'postgres' %}
@@ -31,8 +25,6 @@ Cloud 66 aims to offer a great experinece for anyone that plans to deploy a proj
 This is a really nice intro to what Cloud66 offers related to MySQL db and what features you may want to be aware of before starting using it. 
 
 {% endif %}
-
-
 ## Database deployment types
 
 ### No database (external)
@@ -54,8 +46,6 @@ Cloud 66 will not do in-place database upgrades, because this process may cause 
 Once the new stack is created, you can migrate data from your old stack to your new stack.
 
 
-
-
 ## How to connect to your {{ include.dbtype }} database
 
 ### Connect to your database
@@ -73,8 +63,6 @@ The notation in the examples below allow you to seamlessly switch between your l
 
 You can use [Yamllint.com](http://www.yamllint.com) to check your YAML syntax before committing.
 {% endif %}
-
-
 {% if include.dbtype == 'mysql' %}
 ### MySQL YML
 
@@ -123,35 +111,23 @@ development:
       hosts: ["<%= ENV['MONGODB_ADDRESS']%>:27017"]
 ```
 {% endif %}
-
-
 ## Environment Variables
 
 Cloud 66 generates and maintains a number of environment variables automatically on your servers, including those that hold the address for your database server. When you enable database replication, we will generate additional environment variables for your slave server(s). The value of these variables will change when you enable or disable replication.
-
-
 {% if include.dbtype == "redis" or include.dbtype == "postgres" or include.dbtype == "mysql" %}
 
 {% endif %}
 
 In the case that an environment variable contains multiple values, such as IP addresses, these are separated by comma.
-
-
 ## Control your Rails database migrations
 
 Cloud 66 chooses a server to perform the migrations - all other servers will wait until the migrations are finished before continuing with deployment. You can see which server performs the migrations in the Stack Information page, and change it using the `c66.migrations.run` [reserved tag](https://help.cloud66.works/rails/deployment/reserved-tags.html).
 
 You can control your Rails database migrations by setting `run.deploy.command` option through [Stack settings](https://help.cloud66.works/rails/toolbelt/settings.html) via [Toolbelt](https://help.cloud66.works/rails/toolbelt/introduction.html) which gives you the option of running migrations or not.
-
-
 ```
 $ cx settings set -s my_stack run.deploy.command true
 ```
-
-
 When you have disabled `run.deploy.command` in [Stack settings](https://help.cloud66.works/rails/toolbelt/settings.html) , you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
-
-
 
 
 ## Customize your database configuration
@@ -219,6 +195,4 @@ The following variables are available to any database CustomConfig.
 {% if include.dbtype == "redis" or include.dbtype == "postgres" or include.dbtype == "mysql" %}
 
 {% endif %}
-
-
 
