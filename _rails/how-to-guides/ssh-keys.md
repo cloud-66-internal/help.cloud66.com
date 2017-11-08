@@ -1,0 +1,22 @@
+---
+menuheaders: [ "Generate Keys on Linux and Mac", "Important", "Generate Keys on Windows", "Connect to your server using your key", "Important" ]
+gitlinks: [ "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_authentication-keys-come-in-two-parts-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_generate-keys-on-linux-and-mac-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_important-mac-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_generate-keys-on-windows-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_connect-to-your-server-using-your-key-v1.md", "https://github.com/cloud66/help/edit/feature/inlines/_includes/_inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_important-v1.md" ]
+layout: post
+template: one-col
+title: Setting Up SSH Keys
+categories: how-to-guides
+lead: ""
+legacy: false
+
+keywords: []
+permalink: /:collection/:path
+---
+
+
+
+
+<a href="#generate-keys-on-linux-and-mac"></a>{% include _inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_generate-keys-on-linux-and-mac-v1.md  product = page.collection %}
+<a href="#important"></a>{% include _inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_important-mac-v1.md  product = page.collection %}
+<a href="#generate-keys-on-windows"></a>{% include _inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_generate-keys-on-windows-v1.md  product = page.collection %}
+<a href="#connect-to-your-server-using-your-key"></a>{% include _inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_connect-to-your-server-using-your-key-v1.md  product = page.collection %}
+<a href="#important"></a>{% include _inlines/Tutorials/common/2000-01-01-ssh-keys/2000-01-01-ssh-keys_important-v1.md  product = page.collection %}

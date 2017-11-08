@@ -15,4 +15,3 @@ Cloud 66 for Rails lets you deploy your Ruby on Rails (or any other Rack-based) 
 - [Concepts](concepts)
 - [Tutorials](tutorials)
 - [Resource](resources)
-
