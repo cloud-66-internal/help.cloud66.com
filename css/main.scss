@@ -244,7 +244,7 @@ p {
     padding-left: 24px;
 }
 #legacy_docker-product-heading {
-    background:  transparent url('/images/ui/docker_logo.svg') no-repeat 0 40pxpx;
+    background:  transparent url('/images/ui/docker_logo.svg') no-repeat 0 4px;
     background-size: 18px;
     padding-left: 24px;
 }
@@ -1241,6 +1241,7 @@ body.Body--home #search-query-nav {
     padding-top: 1.8em;
     padding-bottom: 1.8em;
     margin-bottom: 2em;
+    margin-top: 2em;
 }
 .Section--shaded {
     background-color: #FDFDFD;

@@ -7,7 +7,9 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-Cloud 66 Maestro supports the following features:
+<p class="lead">The Integrated and Hosted Solution to Build, Deploy and Maintain Container Based Applications on any Server.</p>
+
+{% include category_nav.html %}
 
 - [Getting Started](getting-started)
 - [Deployment](deployment)

@@ -2,11 +2,13 @@
 layout: post
 template: one-col
 title:  "Skycap"
-categories: 
+categories:
 lead: Using Skycap with Cloud66
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
+
+{% include category_nav.html %}
 
 - [Getting Started](getting-started)
 - [Deployment](deployment)

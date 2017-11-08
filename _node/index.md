@@ -8,6 +8,7 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
+{% include category_nav.html %}
 
 - [Getting Started](getting-started)
 - [Deployment](deployment)
