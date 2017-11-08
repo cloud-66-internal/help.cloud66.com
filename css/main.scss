@@ -222,6 +222,32 @@ p {
     background:  transparent url('/images/ui/docker_logo.svg') no-repeat 18px 8px;
     background-size: 15px;
 }
+/* sidebar - sticky product headers */
+#skycap-product-heading {
+    background:  transparent url('/images/ui/skycap_logo.svg') no-repeat 0 2px;
+    background-size: 18px;
+    padding-left: 24px;
+}
+#maestro-product-heading {
+    background:  transparent url('/images/ui/maestro_logo.svg') no-repeat 0 2px;
+    background-size: 16px;
+    padding-left: 24px;
+}
+#rails-product-heading {
+    background:  transparent url('/images/ui/ruby_logo.svg') no-repeat 0 4px;
+    background-size: 16px;
+    padding-left: 24px;
+}
+#node-product-heading {
+    background:  transparent url('/images/ui/node_logo.svg') no-repeat 0 2px;
+    background-size: 16px;
+    padding-left: 24px;
+}
+#legacy_docker-product-heading {
+    background:  transparent url('/images/ui/docker_logo.svg') no-repeat 0 40pxpx;
+    background-size: 18px;
+    padding-left: 24px;
+}
 
 /*
  * Header
@@ -1212,8 +1238,8 @@ body.Body--home #search-query-nav {
  * ------------------------------------------------------------------  */
 .Section {
     padding: 1.4em;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
+    padding-top: 1.8em;
+    padding-bottom: 1.8em;
     margin-bottom: 2em;
 }
 .Section--shaded {
@@ -1226,9 +1252,11 @@ body.Body--home #search-query-nav {
         box-shadow: 0 2px 3px 0 rgba(0,0,0, .08);
         padding-top: 1.4em;
         padding-bottom: 1.4em;
+        transition: all 150ms ease 0s;
     }
-    .Product:hover {
-        box-shadow: 0 2px 6px 0 rgba(0,0,0, .12);
+    .Panel:hover {
+        box-shadow: 0 2px 6px 0 rgba(0,0,0, .16);
+        transform: translateY(-2px);
     }
 }
 .Section--shaded .Grid:last-child  {
@@ -1264,6 +1292,11 @@ body.Body--home #search-query-nav {
     }
 }
 .NavCats--node {
+    .Media-figure {
+        fill: #80BE42;
+    }
+}
+.NavCats--docker {
     .Media-figure {
         fill: #80BE42;
     }
