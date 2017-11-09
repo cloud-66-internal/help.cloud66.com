@@ -19,6 +19,9 @@ permalink: /:collection/:path
     <li>
         <p><strong>A Git Repo containing your application code</strong> &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.</p>
     </li>
+    <li>
+        <p><strong>A Cloud Account or Your Own Servers</strong> &mdash; See below.</p>
+    </li>
 </ul>
 
 <div class="Tabs">
@@ -46,15 +49,18 @@ permalink: /:collection/:path
     </section>
 </div>
 
+<h2 id="What-youll-need">
+    <a href="#What-youll-need" class="headerlink" title="What you’ll need"></a>
+    Get Started
+</h2>
 <p>
     Log into Cloud 66 website, if you're a new user you'll see four panels on your Apps Dashboard. In the Rails panel click the <strong>Start Trial</strong>.
 </p>
 
-<h2 id="Access-your-Git-repository">
+<h3 id="Access-your-Git-repository">
     <a href="#Access-your-Git-repository" class="headerlink" title="Access your Git repository"></a>
     Accessing your Git Repo
-</h2>
-
+</h3>
 <p>
     Cloud 66 supports both public and private Git repositories. If you're using a private Git repository you'll need to Add and approve the Cloud 66 public SSH key with your Git provider.
 </p>
@@ -100,38 +106,10 @@ permalink: /:collection/:path
     </section>
 </div>
 
-<h3 id="Using-a-Public-Git-Repo">
-    <a href="#Using-a-Public-Git-Repo" class="headerlink" title="Using a Public Git Repo"></a>
-    Using a Public Git Repo
-</h3>
-
-<p>
-    <a href="#Tell-us-about-your-app">You can skip to the next step &mdash; <em>Tell us about your app</em>.</a>
-</p>
-
-<h3 id="Using-a-Private-Git-Repo">
-    <a href="#Using-a-Private-Git-Repo" class="headerlink" title="Using a Private Git Repo"></a>
-    Using a Private Git Repo
-</h3>
-
-<p>Lets add the Cloud 66 public key. This allows us to connect to your Git repo (with read only access) and deploy your app.</p>
-
-<ul>
-    <li>
-        <p><strong>Copy the Public SSH key</strong> &mdash; this is provided in the form, it starts with <em>ssh-rsa</em> and ends with <em>your email address</em>.</p>
-    </li>
-    <li>
-        <p><strong>Who is your Git Provider?</strong> &mdash; Make a selection from the drop down list and then hit the <strong>GO</strong> button. This should take you to the page in your Git provider where you can add the key.</p>
-    </li>
-    <li>
-        <p><strong>E.g. in GitHub</strong> &mdash; Click the <strong>New SSH Key</strong> button and fill in the <em>title field</em>. Now paste the Cloud 66 key into the <em>Key field</em>. Click the <strong>Add SSH Key</strong> button. That's it! GitHub will send you a confirmation email.</p>
-    </li>
-</ul>
-
-<h2 id="Tell-us-about-your-app">
+<h3 id="Tell-us-about-your-app">
     <a href="#Define-your-application-properties" class="headerlink" title="Define your application properties"></a>
-    About your App
-</h2>
+    Defining Your Stack
+</h3>
 <p>
     Now you need to tell us a bit of info about your app. Then we can deploy, Please fill in the following fields:
 <p>
@@ -157,17 +135,13 @@ permalink: /:collection/:path
 
 <p>Now click the <strong>Analyze</strong> button. Hang tight&mdah;the results will be displayed in a few seconds...</p>
 
-<h2 id="About-your-app-Summary">
-    <a href="#About-your-app-Summary" class="headerlink" title="About your app Summary"></a>
-    Review your App
-</h2>
+<h3 id="App-Configuration">
+    <a href="#App-Configuration" class="headerlink" title="About your app Summary"></a>
+    Configuring Your Stack
+</h3>
 
 <p>Once the analysis is complete you'll see a yellow Information Box that you can use to verify the analysis is correct. If there are any problems you can make changes and Reanalyze at this point. If necessary you can also <a href="#">Add Environment Variables</a>.</p>
-
-<h2 id="App-Configuration">
-    <a href="#App-Configuration" class="headerlink" title="About your app Summary"></a>
-    App Configuration
-</h2>
+<p>Here you can make changes to some of Stack configration parameters.</p>
 
 <ul>
     <li>
@@ -176,6 +150,11 @@ permalink: /:collection/:path
         <p><strong>Framework Info</strong> &mdash; This allow you alter information about Asset Pipeline precompilation and weather you want to run <code>rake db:schema:load</code>.</p>
     </li>
 </ul>
+
+<div class="notice">
+    <h3>Advanced Configurations</h3>
+    <p>You can configure many aspects of your Stack using the Toolbelt or a manifest file.</p>
+</div>
 
 <h2 id="Where-are-you-deploying-to">
     <a href="#Where-are-you-deploying-to" class="headerlink" title="Where are you deploying to?"></a>
