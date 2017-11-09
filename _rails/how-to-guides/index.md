@@ -8,48 +8,218 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-- Deploying Your Applications
-	- [Access your Git repository](deployment/access-your-code)
-	- [Manage background Processes](deployment/bluepill)
-	- [Use Cloud 66 with Github](deployment/github)
-	- [Build Highly Available Websockets](deployment/haproxy-for-websocket)
-	- [TODO: Implement Faye](deployment/implementing-faye)
-	- [Use Let's Encrypt to Secure Your Website](deployment/lets-encrypt)
-	- [Use Slack to Manage Your Deployments](deployment/manage-stacks-chatops)
-	- [Migrate Across Data Centers](deployment/migrate-across-dc)
-	- [Migrate From Heroku](deployment/migrate-from-heroku)
-	- [Migrate Your Application to a New Stack](deployment/migrate-the-stack)
-	- [Build a Highly Available Stack](deployment/multi-region-stack)
-	- [Customize Your Nginx Modules](deployment/nginx-modules)
-	- [TODO: Nginx Redirect](deployment/nginx-redirect)
-	- [Optimize Stack Performance](deployment/optimizing-performance)
-	- [Connect to Rails Console For Debugging](deployment/rails-console)
-	- [Run Rake Tasks](deployment/running-rake-tasks)
-	- [View Your Logs](deployment/setting-up-custom-livelogs)
-	- [Access Your Servers](deployment/ssh-keys)
-	- [TODO: SSH](deployment/ssh)
-	- [TODO: Stack FailoverGroups](deployment/stack-failover)
-	- [TODO: Symlink Folders](deployment/symlink-folders)
-	- [TODO: Websocket Support](deployment/websocket-support)
-	- [Achieve Zero Downtime Deployments](deployment/zero-downtime-deploy)
+<h2>Deploying Your Applications</h2>
+<ul>
+	<li>
+		<a href="deployment/access-your-code">
+			Access your Git repository<span>git</span>
+			<p>Connecting your stack to your git repository</p>
+		</a>
+</li>
+	<li>
+		<a href="deployment/bluepill">
+			Manage background Processes
+		</a>
+</li>
+	<li>
+		<a href="deployment/github">
+			Use Cloud 66 with Github
+		</a>
+</li>
+	<li>
+		<a href="deployment/haproxy-for-websocket">
+			Build Highly Available Websockets
+		</a>
+</li>
+	<li>
+		<a href="deployment/implementing-faye">
+			TODO: Implement Faye
+		</a>
+</li>
+	<li>
+		<a href="deployment/lets-encrypt">
+			Use Let's Encrypt to Secure Your Website
+		</a>
+</li>
+	<li>
+		<a href="deployment/manage-stacks-chatops">
+			Use Slack to Manage Your Deployments
+		</a>
+</li>
+	<li>
+		<a href="deployment/migrate-across-dc">
+			Migrate Across Data Centers
+		</a>
+</li>
+	<li>
+		<a href="deployment/migrate-from-heroku">
+			Migrate From Heroku
+		</a>
+</li>
+	<li>
+		<a href="deployment/migrate-the-stack">
+			Migrate Your Application to a New Stack
+		</a>
+</li>
+	<li>
+		<a href="deployment/multi-region-stack">
+			Build a Highly Available Stack
+		</a>
+</li>
+	<li>
+		<a href="deployment/nginx-modules">
+			Customize Your Nginx Modules
+		</a>
+</li>
+	<li>
+		<a href="deployment/nginx-redirect">
+			TODO: Nginx Redirect
+		</a>
+</li>
+	<li>
+		<a href="deployment/optimizing-performance">
+			Optimize Stack Performance
+		</a>
+</li>
+	<li>
+		<a href="deployment/rails-console">
+			Connect to Rails Console For Debugging
+		</a>
+</li>
+	<li>
+		<a href="deployment/running-rake-tasks">
+			Run Rake Tasks
+		</a>
+</li>
+	<li>
+		<a href="deployment/setting-up-custom-livelogs">
+			View Your Logs
+		</a>
+</li>
+	<li>
+		<a href="deployment/ssh-keys">
+			Access Your Servers
+		</a>
+</li>
+	<li>
+		<a href="deployment/ssh">
+			TODO: SSH
+		</a>
+</li>
+	<li>
+		<a href="deployment/stack-failover">
+			TODO: Stack FailoverGroups
+		</a>
+</li>
+	<li>
+		<a href="deployment/symlink-folders">
+			TODO: Symlink Folders
+		</a>
+</li>
+	<li>
+		<a href="deployment/websocket-support">
+			TODO: Websocket Support
+		</a>
+</li>
+	<li>
+		<a href="deployment/zero-downtime-deploy">
+			Achieve Zero Downtime Deployments
+		</a>
+</li>
+</ul>
 
-- Databases
-	- [Share Databases Between Stacks](databases/using-master-data-staging)
-	- [Change PostgreSQL Data Directory](databases/change-psql-directory)
-	- [Connect to Your Database Server](databases/connect-db-servers)
-	- [Manage Your Backups](databases/manage-backups)
-	- [Change PostgreSQL Replication Version](databases/pg-replication-version)
-	- [Install PostGIS](databases/postgis-installation)
-	- [Replace sqlite With Another Database](databases/replace-sqlite)
-	- [Seed Your Database](databases/seeding-db)
-	- [Share Databases Between Stacks](databases/sharing-db)
-	- [Uninstall MySQL](databases/uninstall-mysql)
-	- [TODO: Share Databases](databases/using-master-data-staging)
+<h2>Databases</h2>
+<ul>
+	<li>
+		<a href="databases/using-master-data-staging">
+			Share Databases Between Stacks
+		</a>
+</li>
+	<li>
+		<a href="databases/change-psql-directory">
+			Change PostgreSQL Data Directory
+		</a>
+</li>
+	<li>
+		<a href="databases/connect-db-servers">
+			Connect to Your Database Server
+		</a>
+</li>
+	<li>
+		<a href="databases/manage-backups">
+			Manage Your Backups
+		</a>
+</li>
+	<li>
+		<a href="databases/pg-replication-version">
+			Change PostgreSQL Replication Version
+		</a>
+</li>
+	<li>
+		<a href="databases/postgis-installation">
+			Install PostGIS
+		</a>
+</li>
+	<li>
+		<a href="databases/replace-sqlite">
+			Replace sqlite With Another Database
+		</a>
+</li>
+	<li>
+		<a href="databases/seeding-db">
+			Seed Your Database
+		</a>
+</li>
+	<li>
+		<a href="databases/sharing-db">
+			Share Databases Between Stacks
+		</a>
+</li>
+	<li>
+		<a href="databases/uninstall-mysql">
+			Uninstall MySQL
+		</a>
+</li>
+	<li>
+		<a href="databases/using-master-data-staging">
+			TODO: Share Databases
+		</a>
+</li>
+</ul>
 
-- Security
-	- [Apply Multiple SSL Certificates to HAProxy](security/multi-cert_haproxy)
-	- [Customize and Configure Nginx](security/nginx-auth)
-	- [TODO: Nginx Deny](security/nginx-deny)
-	- [TODO: Nginx SSL Ciphers](security/nginx-ssl-ciphers)
-	- [Add SSL Certificates to Your Stacks](security/ssl-certificate)
-	- [Use SSL Termination on Load Balancers](security/ssl-termination-on-load-balancers)
+<h2>Security</h2>
+<ul>
+<li>
+		<a href="security/multi-cert_haproxy">
+			Apply Multiple SSL Certificates to HAProxy
+		</a>
+</li>
+<li>
+		<a href="security/nginx-auth">
+			Customize and Configure Nginx
+		</a>
+</li>
+<li>
+		<a href="security/nginx-deny">
+			TODO: Nginx Deny
+		</a>
+</li>
+<li>
+		<a href="security/nginx-ssl-ciphers">
+			TODO: Nginx SSL Ciphers
+		</a>
+</li>
+<li>
+		<a href="security/ssl-certificate">
+			Add SSL Certificates to Your Stacks
+		</a>
+</li>
+<li>
+		<a href="security/ssl-termination-on-load-balancers">
+			Use SSL Termination on Load Balancers
+		</a>
+</li>	
+</ul>
+
+
+
