@@ -1329,6 +1329,11 @@ body.Body--home #search-query-nav {
     }
 }
 
+.Tabs-content {
+    p {
+        font-size: 14px;
+    }
+}
 
 /*
  * .NavCats
@@ -1350,7 +1355,7 @@ body.Body--home #search-query-nav {
     display: block;
     padding: 14px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: bold !important;
     margin: 0 1.6em 0 0;
     outline: none;
     transition: none;
