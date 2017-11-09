@@ -1,5 +1,0 @@
-
-
-```
-$ iam-servercertlistbypathx
-```

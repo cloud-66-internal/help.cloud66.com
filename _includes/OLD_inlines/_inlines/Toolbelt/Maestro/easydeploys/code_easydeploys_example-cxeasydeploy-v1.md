@@ -1,5 +1,0 @@
-
-
-```
-$ cx easydeploys list
-```

@@ -1,8 +1,0 @@
-
-
-
-## Delete a stack
-
-
-
-

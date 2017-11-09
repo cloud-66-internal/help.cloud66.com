@@ -11,24 +11,40 @@ permalink: /:collection/:path
     What you’ll need
 </h2>
 
-<p>Before you can deploy your app please check you have access to the following items:</p>
-
+<p>Before you can deploy your app please check you have the following:</p>
 <ul>
     <li>
-        <p><strong>A Cloud 66 Account</strong> &mdash; If you don't already have one <a target="_blank" href="https://app.cloud66.com/users/sign_up">head over to the app and sign up!</a> There is a free community plan and you'll get full access to all products Free for 14 days.</p>
+        <p><strong>A Cloud 66 Account</strong> &mdash; If you don't already have one <a href="https://app.cloud66.com/users/sign_up" target="_blank">Sign up for a free Cloud 66 account</a>. There is a free community plan and you'll get full access to all products Free for 14 days.</p>        
     </li>
     <li>
         <p><strong>A Git Repo containing your application code</strong> &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.</p>
     </li>
-    <li>
-        <p><strong>An account with a Cloud provider</strong>  &mdash; For example if your deploying to Amazon you'll need your AWS Access key.
-           <!--  <a href="#">Read more about Cloud Providers supported by Cloud 66</a> -->
-        </p>
-    </li>
-    <li>
-        <p><strong>An SSH key and IP address for your server</strong>  &mdash; If you're deploying <strong>to your own server</strong>. If you're using a public Cloud provider like AWS you don't need to worry about this.</p>
-    </li>
 </ul>
+
+<div class="Tabs">
+    <nav>
+      <ul class="TabMini js_tabs">
+        <li class="TabMini-item active">
+          <a href="#alpha_content" class="TabMini-link">
+            Using a Cloud Provider
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#beta_content" class="TabMini-link">
+            Using Your Own Server
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="alpha_content" class="Tabs-content js_tab_content">
+        <p>An account with your cloud provider of choice. Cloud 66 supports AWS, Google Cloud, Azure, Linode, DigitalOcean, Packet, Rackspace and Cloud A.</p>
+    </section>
+
+    <section id="beta_content" class="Tabs-content js_tab_content is-hidden">
+        <p>An SSH key and IP address for your server. Your server should run Ubuntu 16.04 and allow SSH connection on port 22 from Cloud 66 public IP addresses: {% include general/public_ips.html %}</p>
+    </section>
+</div>
 
 <p>
     Log into Cloud 66 website, if you're a new user you'll see four panels on your Apps Dashboard. In the Rails panel click the <strong>Start Trial</strong>.
@@ -40,8 +56,49 @@ permalink: /:collection/:path
 </h2>
 
 <p>
-    Both Public and Private Git repos are supported. If you're using a private Git repo you'll need to Add and approve the Cloud 66 public SSH key with your Git provider.
+    Cloud 66 supports both public and private Git repositories. If you're using a private Git repository you'll need to Add and approve the Cloud 66 public SSH key with your Git provider.
 </p>
+
+<div class="Tabs">
+    <nav>
+      <ul class="TabMini js_tabs">
+        <li class="TabMini-item active">
+          <a href="#alpha_content" class="TabMini-link">
+            Github
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#beta_content" class="TabMini-link">
+            Bitbucket
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#gamma_content" class="TabMini-link">
+            Other git repositories
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="alpha_content" class="Tabs-content js_tab_content">
+        <h4>Public Repository</h4>
+        <p>If your code is in a public repository, you don't need to do anything.</p>
+        <h4>Private Repository</h4>
+        <p>To grant access to a private Github repository, you need to add your public SSH key you see on the screen to your Github account. </p>
+    </section>
+
+    <section id="beta_content" class="Tabs-content js_tab_content is-hidden">
+        <h4>Public Repository</h4>
+        <p>If your code is in a public repository, you don't need to do anything.</p>
+        <h4>Private Repository</h4>
+        <p>To grant access to a private Bitbucket repository, you need to add your public SSH key you see on the screen to your Bitbucket account. </p>
+    </section>
+
+    <section id="gamma_content" class="Tabs-content js_tab_content is-hidden">
+        <h4>Private Repository</h4>
+        <p>To grant access to your private git repository, add the public SSH key to the list of git users (refer to your git server manual) and make sure your git repository accepts connections on port 22, from Cloud 66 public IP addresses: {% include general/public_ips.html %}</p>
+    </section>
+</div>
 
 <h3 id="Using-a-Public-Git-Repo">
     <a href="#Using-a-Public-Git-Repo" class="headerlink" title="Using a Public Git Repo"></a>
@@ -126,48 +183,115 @@ permalink: /:collection/:path
 </h2>
 
 <p>
-    If you're deploying for the first time you need to add your Cloud provider credentials. For example, if you're deploying to AWS you would add the following:
+    If you're deploying for the first time you need to add your Cloud provider credentials:
 </p>
 
-<ul>
-    <li>
-        <p>
-            <strong>Give this cloud key a name</strong> &ndash; This is to give you the option of deploying to multiple accounts with the same cloud provider. If you only have 1 account you can leave it as default.
-        </p>
-    </li>
-    <li>
-        <p>
-            <strong>AWS Access key ID</strong>  &ndash; You get this info from your AWS account Dashboard.
-        </p>
-    </li>
-    <li>
-        <p>
-            <strong>AWS Secret Access Key</strong>  &ndash; You get this info from your AWS account Dashboard.
-        </p>
-    </li>
-</ul>
+<div class="Tabs">
+    <nav>
+      <ul class="TabMini js_tabs">
+        <li class="TabMini-item active">
+          <a href="#alpha_content" class="TabMini-link">
+            AWS
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#beta_content" class="TabMini-link">
+            Google Cloud
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#gamma_content" class="TabMini-link">
+            Azure
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#gamma_content" class="TabMini-link">
+            DigitalOcean
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#gamma_content" class="TabMini-link">
+            Linode
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#gamma_content" class="TabMini-link">
+            Packet
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#gamma_content" class="TabMini-link">
+            Rackspace
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#gamma_content" class="TabMini-link">
+            Cloud A
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#gamma_content" class="TabMini-link">
+            Bring Your Own Server
+          </a>
+        </li>
 
-<p>Once you've added your Cloud Provider Credentials you need to choose the following: </p>
+      </ul>
+    </nav>
 
-<ul>
-    <li>
-        <p>
-            <strong>Server Region</strong>  &ndash; For example <em>US East (Northern Virginia)</em>, <em>Europe (London)</em>
-        </p>
-    </li>
-    <li>
-        <p>
-            <strong>Server Size</strong>  &ndash; For example <em>Compute optimized (C4.large)</em>
-        </p>
-    </li>
-    <li>
-        <p>
-            <strong>AWS platform</strong>  &ndash; EC2 Classic or EC2-VPC (<a href="#">Learn more about AWS Platforms</a>)
-        </p>
-    </li>
-</ul>
+    <section id="alpha_content" class="Tabs-content js_tab_content">
+        <h4>AWS</h4>
+        <ul>
+        <li>
+            <p>
+                <strong>Give this cloud key a name</strong> &ndash; This is to give you the option of deploying to multiple accounts with the same cloud provider. If you only have 1 account you can leave it as default.
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>AWS Access key ID</strong>  &ndash; You get this info from your AWS account Dashboard.
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>AWS Secret Access Key</strong>  &ndash; You get this info from your AWS account Dashboard.
+            </p>
+        </li>
+        </ul>
+        <p>Once you've added your Cloud Provider Credentials you need to choose the following: </p>
 
-<p>These field names will vary a little depending on what Cloud your provider you're using.</p>
+        <ul>
+            <li>
+                <p>
+                    <strong>Server Region</strong>  &ndash; For example <em>US East (Northern Virginia)</em>, <em>Europe (London)</em>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Server Size</strong>  &ndash; For example <em>Compute optimized (C4.large)</em>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>AWS platform</strong>  &ndash; EC2 Classic or EC2-VPC (<a href="#">Learn more about AWS Platforms</a>)
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="beta_content" class="Tabs-content js_tab_content is-hidden">
+        <h4>Google Cloud</h4>
+        <p>This is some beta content. Consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et doloreatat non proident, sunt in culpa qui.</p>
+    </section>
+
+    <section id="gamma_content" class="Tabs-content js_tab_content is-hidden">
+        <h4>Azure</h4>
+        <p>This is some gamma content. Amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris.</p>
+    </section>
+</div>
+
 
 <h2 id="Deployment-Details">
     <a href="#Deployment-Details" class="headerlink" title="Deployment Details"></a>

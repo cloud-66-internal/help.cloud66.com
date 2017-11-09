@@ -1,5 +1,0 @@
-
-
-
-## Manifest file examples
-

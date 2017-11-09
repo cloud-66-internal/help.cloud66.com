@@ -1,8 +1,0 @@
-
-
-
-## Vertical scaling
-
-
-
-

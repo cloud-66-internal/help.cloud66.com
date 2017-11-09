@@ -1,7 +1,0 @@
-
-
-```
-
-$ starter -p /my/project
-
-```

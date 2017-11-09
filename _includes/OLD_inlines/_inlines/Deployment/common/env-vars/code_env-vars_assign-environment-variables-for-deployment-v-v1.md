@@ -1,8 +1,0 @@
-
-
-```
-
-KEY_1=value_1
-KEY_2=value_2
-
-```

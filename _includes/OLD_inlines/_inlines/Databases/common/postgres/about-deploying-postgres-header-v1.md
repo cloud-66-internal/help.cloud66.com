@@ -1,2 +1,0 @@
-
-## About deploying PostgreSQL

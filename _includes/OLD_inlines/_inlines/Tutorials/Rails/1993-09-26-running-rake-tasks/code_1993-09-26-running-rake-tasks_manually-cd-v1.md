@@ -1,6 +1,0 @@
-
-
-```
-$ cd $STACK_PATH
-$ bundle exec rake your:task
-```

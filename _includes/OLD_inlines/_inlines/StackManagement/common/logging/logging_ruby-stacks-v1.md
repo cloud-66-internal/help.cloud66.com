@@ -1,5 +1,0 @@
-
-
-
-## Ruby stacks
-

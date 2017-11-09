@@ -1,8 +1,0 @@
-
-
-```
-
-$ cd /my/project
-$ starter
-
-```

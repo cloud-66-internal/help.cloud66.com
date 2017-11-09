@@ -1,5 +1,0 @@
-
-
-
-## Set your stack settings
-

@@ -1,5 +1,0 @@
-
-
-```
-$ cx stacks help [<command>]
-```

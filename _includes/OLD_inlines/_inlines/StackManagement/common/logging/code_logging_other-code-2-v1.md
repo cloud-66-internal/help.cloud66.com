@@ -1,5 +1,0 @@
-
-
-```
-/opt/nginx/logs
-```

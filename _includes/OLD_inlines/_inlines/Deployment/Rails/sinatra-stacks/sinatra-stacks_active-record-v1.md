@@ -1,4 +1,0 @@
-
-
-
-## Active Record

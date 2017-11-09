@@ -1,5 +1,0 @@
-
-
-```
-adapter: mysql2
-```
