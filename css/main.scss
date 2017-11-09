@@ -1325,15 +1325,14 @@ body.Body--home #search-query-nav {
     .Tabs-content {
         padding-left: 16px;
         padding-right: 16px;
-        padding-bottom: 16px;
+        padding-bottom: 20px;
+
+        p {
+            font-size: 14px;
+        }
     }
 }
 
-.Tabs-content {
-    p {
-        font-size: 14px;
-    }
-}
 
 /*
  * .NavCats
