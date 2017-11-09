@@ -80,28 +80,40 @@ p {
 /*
  * Buttons
  * ---------------------------------------------------------- */
-.Button {
-    padding: 0.7em 2em;
-    border-radius: 2em;
-    display: inline-block;
-    color: #fff;
-    background-color: #62c462;
-    transition: all 0.15s ease;
-    box-sizing: border-box;
-    border: 1px solid #62c462;
-}
-.Button--outlined {
-    background: transparent;
-    border: 1px solid #62c462;
-    color: #62c462;
-}
-.Button--small {
-    font-size: 14px;
-}
-.Button--blue {
-    border: 1px solid #449FD8;
-    color: #449FD8;
-}
+ .content {
+
+    .Button {
+        padding: 0.7em 2em;
+        border-radius: 2em;
+        display: inline-block;
+        color: #fff;
+        background-color: #62c462;
+        transition: all 0.15s ease;
+        box-sizing: border-box;
+        border: 1px solid #62c462;
+    }
+    .Button--outlined {
+        background: transparent;
+        border: 1px solid #62c462;
+        color: #62c462;
+    }
+    .Button--small {
+        font-size: 12px;
+        padding: 0.3em 1em;
+    }
+    .Button--blue {
+        border: 1px solid #449FD8;
+        color: #449FD8;
+    }
+    .Button--app {
+        font-weight: bolder;
+        background-size: 15px !important;
+        background: #62c462 url('/images/ui/external.svg') no-repeat 12px 8px;
+        padding-left: 32px;
+    }
+
+ }
+
 
 
 
@@ -711,17 +723,6 @@ body.docs #nav {
     a {
         color: $link-color;
         font-weight: 500;
-    }
-
-    .Button {
-        font-size: 0.9em;
-        color: #fff;
-        margin: 0.2em 0;
-        width: 180px;
-        text-align: center;
-        padding: 12px 24px;
-        display: inline-block;
-        vertical-align: middle;
     }
 
     img    { max-width: 100%; }
