@@ -8,20 +8,20 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-<div class="Toc">
+<div class="Toc Toc--howto">
     <h2>Deploying Your Applications</h2>
     <ul>
         <li>
             <span>git</span>
             <a href="deployment/access-your-code">
                 Access your Git repository
-                <p>Connecting your stack to your git repository</p>
+                <p>Connecting your stack to your git repository.</p>
             </a>
         </li>
         <li>
             <a href="deployment/bluepill">
                 Manage background Processes
-                <p>Lorem ipsum dolor sit amet</p>
+                <p>Managing processes with Bluepill.</p>
             </a>
         </li>
         <li>

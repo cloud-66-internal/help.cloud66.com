@@ -1380,7 +1380,7 @@ li.active .TabMini-link {
  * ------------------------------------------------------------------  */
 .content .Toc {
     h2 {
-        padding-top: 0.75em;
+        padding-top: 0.6em;
         border-bottom: none !important;
     }
     h2:first-child {
@@ -1397,14 +1397,17 @@ li.active .TabMini-link {
     li {
         line-height: 1;
         font-weight: 500;
-        padding: 12px 12px;
+        padding: 12px 12px 12px 44px;
+        background: transparent url('/images/ui/document.svg') no-repeat 15px 14px;
+        background-size: 16px;
         border-bottom: 1px solid #eee;
         font-size: 15px;
+        min-height: 28px;
     }
     li:hover {
-        background: #FDFDFD;
+        background-color: #FDFDFD;
         p {
-            color: #333;
+            color: #000;
         }
     }
     li:last-child {
