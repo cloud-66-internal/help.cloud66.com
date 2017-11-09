@@ -1435,3 +1435,22 @@ li.active .TabMini-link {
         letter-spacing: 0.8px;
     }
 }
+
+/*
+ * Accordion Nav
+ * Primary Table of Contents
+ * ------------------------------------------------------------------  */
+.accordion-toggle {
+    cursor: pointer;
+    color: #427dc4;
+}
+.accordion-content {
+    display: none;
+}
+.accordion-content p {
+    padding-top: 0;
+    margin-top: 0;
+}
+.accordion-content.open {
+    display: block;
+}
