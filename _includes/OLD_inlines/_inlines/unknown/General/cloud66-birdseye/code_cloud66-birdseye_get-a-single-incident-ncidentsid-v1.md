@@ -1,5 +1,0 @@
-
-
-```
-/incidents/:id.json
-```

@@ -1,5 +1,0 @@
-
-
-```
-env :PATH, ENV['PATH']
-```

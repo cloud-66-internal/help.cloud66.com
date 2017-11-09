@@ -1,5 +1,0 @@
-
-
-```
-$ rake db:structure:dump
-```

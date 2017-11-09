@@ -1,7 +1,0 @@
-
-
-```
-production:
-    mysql:
-        server: external
-```

@@ -1,5 +1,0 @@
-
-
-```
-$ sudo bluepill status
-```

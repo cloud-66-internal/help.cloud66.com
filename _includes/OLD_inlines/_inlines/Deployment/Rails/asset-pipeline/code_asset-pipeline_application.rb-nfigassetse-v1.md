@@ -1,5 +1,0 @@
-
-
-```
-config.assets.enabled = false
-```

@@ -1,6 +1,0 @@
-
-
-
-### Linode
-`Deleted:` Servers, NodeBalancers
-

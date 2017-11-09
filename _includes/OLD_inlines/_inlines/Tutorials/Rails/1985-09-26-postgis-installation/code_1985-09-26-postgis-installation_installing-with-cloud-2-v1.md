@@ -1,8 +1,0 @@
-
-
-```
-production:
-    postgresql:
-        configuration:
-            postgis: true
-```

@@ -1,5 +1,0 @@
-
-
-
-## Getting service information
-

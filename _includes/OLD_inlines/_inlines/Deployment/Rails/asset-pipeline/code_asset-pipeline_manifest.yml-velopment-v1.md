@@ -1,8 +1,0 @@
-
-
-```
-development:
-    rails:
-        configuration:
-            asset_pipeline_precompile: true
-```
