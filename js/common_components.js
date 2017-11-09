@@ -52,3 +52,17 @@ CB.Common.inlineTabs = (function ( $, window, undefined ) {
 })( window.jQuery, window );
 
 CB.Common.inlineTabs.init();
+
+$(document).ready(function($) {
+    $('.accordion-toggle').click(function(){
+      $('.accordion-toggle').removeClass('active');
+      $(this).addClass('active');
+      //Expand or collapse this panel
+      $(this).next().slideToggle('fast');
+
+      //Hide the other panels
+      $(".accordion-content").not( $(this).next() ).slideUp('fast');
+
+    });
+});
+
