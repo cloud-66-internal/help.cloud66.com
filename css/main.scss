@@ -1446,6 +1446,7 @@ li.active .TabMini-link {
 }
 .accordion-toggle.active {
     color: #2c3e50 !important;
+    cursor: default;
 }
 .accordion-content {
     display: none;
