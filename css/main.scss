@@ -731,8 +731,8 @@ body.docs #nav {
     /* Document Headings */
     h1 {
         margin: 0 0 1em;
-        font-size: 26px;
-        font-weight: 800;
+        font-size: 28px;
+        font-weight: 900;
     }
 
     h2:before,
@@ -1302,4 +1302,69 @@ body.Body--home #search-query-nav {
     .Media-figure {
         fill: #80BE42;
     }
+}
+
+/*
+ * Tabs
+ * Container
+ * ------------------------------------------------------------------  */
+.Tabs {
+    margin: 3em 0;
+}
+
+.Tabs--enclosed {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.06);
+
+    .TabMini {
+        padding: 0 0 0 16px !important;
+    }
+
+    .Tabs-content {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+
+/*
+ * .NavCats
+ * Navigation Categories: How-to, Guide, Tutorial
+ * ------------------------------------------------------------------  */
+.TabMini {
+    list-style: none;
+    padding: 0 !important;
+    margin: 8px 0 21px 0 !important;
+    border-bottom: 1px solid #ddd;
+}
+.TabMini-item {
+    display: inline-block;
+    list-style: none;
+}
+.TabMini-link {
+    position: relative;
+    top: 1px;
+    display: block;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 1.6em 0 0;
+    outline: none;
+    transition: none;
+
+    &:hover {
+        color: #24292e;
+        text-decoration: none;
+        border-bottom: 3px solid #ededed;
+    }
+}
+
+li.active .TabMini-link {
+    border-bottom: 3px solid #427dc4;
+    font-weight: bold;
+    color: #24292e;
+    cursor: auto;
 }
