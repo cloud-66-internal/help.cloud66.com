@@ -99,7 +99,7 @@ p {
     }
     .Button--small {
         font-size: 12px;
-        padding: 0.4em 1em;
+        padding: 0.3em 1em;
     }
     .Button--blue {
         border: 1px solid #449FD8;
@@ -107,6 +107,9 @@ p {
     }
     .Button--app {
         font-weight: bolder;
+        background-size: 15px !important;
+        background: #62c462 url('/images/ui/external.svg') no-repeat 12px 8px;
+        padding-left: 32px;
     }
 
  }
