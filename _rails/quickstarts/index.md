@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deploying your first Rails App
+title: Deploying Your First Rails App
 categories: Rails
 legacy: false
 lead: This guide will take you through the process of deploying a Rails or Rack framework app with Cloud 66 for the first time.
@@ -28,29 +28,29 @@ permalink: /:collection/:path
     <nav>
       <ul class="TabMini js_tabs">
         <li class="TabMini-item active">
-          <a href="#alpha_content" class="TabMini-link">
+          <a href="#cloud_content" class="TabMini-link">
             Using a Cloud Provider
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#beta_content" class="TabMini-link">
+          <a href="#no_cloud_content" class="TabMini-link">
             Using Your Own Server
           </a>
         </li>
       </ul>
     </nav>
 
-    <section id="alpha_content" class="Tabs-content js_tab_content">
+    <section id="cloud_content" class="Tabs-content js_tab_content">
         <p>An account with your cloud provider of choice. Cloud 66 supports AWS, Google Cloud, Azure, Linode, DigitalOcean, Packet, Rackspace and Cloud A.</p>
     </section>
 
-    <section id="beta_content" class="Tabs-content js_tab_content is-hidden">
+    <section id="no_cloud_content" class="Tabs-content js_tab_content is-hidden">
         <p>An SSH key and IP address for your server. Your server should run Ubuntu 16.04 and allow SSH connection on port 22 from Cloud 66 public IP addresses: {% include general/public_ips.html %}</p>
     </section>
 </div>
 
 <h2 id="What-youll-need">
-    <a href="#What-youll-need" class="headerlink" title="What you’ll need"></a>
+    <a href="#Get-Started" class="headerlink" title="What you’ll need"></a>
     Get Started
 </h2>
 <p>
@@ -69,45 +69,45 @@ permalink: /:collection/:path
     <nav>
       <ul class="TabMini js_tabs">
         <li class="TabMini-item active">
-          <a href="#alpha_content" class="TabMini-link">
+          <a href="#github_content" class="TabMini-link">
             Github
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#beta_content" class="TabMini-link">
+          <a href="#bitbucket_content" class="TabMini-link">
             Bitbucket
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#gamma_content" class="TabMini-link">
+          <a href="#other_git_content" class="TabMini-link">
             Other git repositories
           </a>
         </li>
       </ul>
     </nav>
 
-    <section id="alpha_content" class="Tabs-content js_tab_content">
+    <section id="github_content" class="Tabs-content js_tab_content">
         <h4>Public Repository</h4>
         <p>If your code is in a public repository, you don't need to do anything.</p>
         <h4>Private Repository</h4>
         <p>To grant access to a private Github repository, you need to add your public SSH key you see on the screen to your Github account. </p>
     </section>
 
-    <section id="beta_content" class="Tabs-content js_tab_content is-hidden">
+    <section id="bitbucket_content" class="Tabs-content js_tab_content is-hidden">
         <h4>Public Repository</h4>
         <p>If your code is in a public repository, you don't need to do anything.</p>
         <h4>Private Repository</h4>
         <p>To grant access to a private Bitbucket repository, you need to add your public SSH key you see on the screen to your Bitbucket account. </p>
     </section>
 
-    <section id="gamma_content" class="Tabs-content js_tab_content is-hidden">
+    <section id="other_git_content" class="Tabs-content js_tab_content is-hidden">
         <h4>Private Repository</h4>
         <p>To grant access to your private git repository, add the public SSH key to the list of git users (refer to your git server manual) and make sure your git repository accepts connections on port 22, from Cloud 66 public IP addresses: {% include general/public_ips.html %}</p>
     </section>
 </div>
 
 <h3 id="Tell-us-about-your-app">
-    <a href="#Define-your-application-properties" class="headerlink" title="Define your application properties"></a>
+    <a href="#Define-your-Stack" class="headerlink" title="Define your application properties"></a>
     Defining Your Stack
 </h3>
 <p>
@@ -136,7 +136,7 @@ permalink: /:collection/:path
 <p>Now click the <strong>Analyze</strong> button. Hang tight&mdah;the results will be displayed in a few seconds...</p>
 
 <h3 id="App-Configuration">
-    <a href="#App-Configuration" class="headerlink" title="About your app Summary"></a>
+    <a href="#Configuring-Your-Stack" class="headerlink" title="About your app Summary"></a>
     Configuring Your Stack
 </h3>
 
@@ -169,47 +169,47 @@ permalink: /:collection/:path
     <nav>
       <ul class="TabMini js_tabs">
         <li class="TabMini-item active">
-          <a href="#alpha_content" class="TabMini-link">
+          <a href="#aws_content" class="TabMini-link">
             AWS
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#beta_content" class="TabMini-link">
+          <a href="#gcp_content" class="TabMini-link">
             Google Cloud
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#gamma_content" class="TabMini-link">
+          <a href="#azure_content" class="TabMini-link">
             Azure
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#gamma_content" class="TabMini-link">
+          <a href="#do_content" class="TabMini-link">
             DigitalOcean
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#gamma_content" class="TabMini-link">
+          <a href="#linode_content" class="TabMini-link">
             Linode
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#gamma_content" class="TabMini-link">
+          <a href="#packet_content" class="TabMini-link">
             Packet
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#gamma_content" class="TabMini-link">
+          <a href="#rackspace_content" class="TabMini-link">
             Rackspace
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#gamma_content" class="TabMini-link">
+          <a href="#clouda_content" class="TabMini-link">
             Cloud A
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#gamma_content" class="TabMini-link">
+          <a href="#byos_content" class="TabMini-link">
             Bring Your Own Server
           </a>
         </li>
@@ -217,7 +217,7 @@ permalink: /:collection/:path
       </ul>
     </nav>
 
-    <section id="alpha_content" class="Tabs-content js_tab_content">
+    <section id="aws_content" class="Tabs-content js_tab_content">
         <h4>AWS</h4>
         <ul>
         <li>
@@ -257,13 +257,13 @@ permalink: /:collection/:path
         </ul>
     </section>
 
-    <section id="beta_content" class="Tabs-content js_tab_content is-hidden">
+    <section id="gcp_content" class="Tabs-content js_tab_content is-hidden">
         <h4>Google Cloud</h4>
         <p>This is some beta content. Consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et doloreatat non proident, sunt in culpa qui.</p>
     </section>
 
-    <section id="gamma_content" class="Tabs-content js_tab_content is-hidden">
+    <section id="azure_content" class="Tabs-content js_tab_content is-hidden">
         <h4>Azure</h4>
         <p>This is some gamma content. Amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
