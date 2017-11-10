@@ -41,11 +41,11 @@ permalink: /:collection/:path
     </nav>
 
     <section id="cloud_content" class="Tabs-content js_tab_content">
-        <p>An account with your cloud provider of choice. Cloud 66 supports AWS, Google Cloud, Azure, Linode, DigitalOcean, Packet, Rackspace and Cloud A.</p>
+        <p>An account with your cloud provider of choice. Cloud 66 supports {% include general/supported_clouds.html %}</p>
     </section>
 
     <section id="no_cloud_content" class="Tabs-content js_tab_content is-hidden">
-        <p>An SSH key and IP address for your server. Your server should run Ubuntu 16.04 and allow SSH connection on port 22 from Cloud 66 public IP addresses: {% include general/public_ips.html %}</p>
+        <p>An SSH key and IP address for your server. Your server should run {% include general/supported_os.html %} and allow SSH connection on port 22 from Cloud 66 public IP addresses: {% include general/public_ips.html %}</p>
     </section>
 </div>
 
@@ -156,10 +156,10 @@ permalink: /:collection/:path
     <p>You can configure many aspects of your Stack using the Toolbelt or a manifest file.</p>
 </div>
 
-<h2 id="Where-are-you-deploying-to">
+<h3 id="Where-are-you-deploying-to">
     <a href="#Where-are-you-deploying-to" class="headerlink" title="Where are you deploying to?"></a>
-    Where are you deploying to?
-</h2>
+    Choosing a Deployment Target
+</h3>
 
 <p>
     If you're deploying for the first time you need to add your Cloud provider credentials:
@@ -227,21 +227,25 @@ permalink: /:collection/:path
     <h4 class="accordion-toggle">Cloud A</h4>
     <div class="accordion-content">
     </div>
+    <h4 class="accordion-toggle">Your Own Servers</h4>
+    <div class="accordion-content">
+    </div>
 </div>
 
-<h2 id="Deployment-Details">
+<h3 id="Deployment-Details">
     <a href="#Deployment-Details" class="headerlink" title="Deployment Details"></a>
-    Deployment Details
-</h2>
+    Finalizing Deployment Details
+</h3>
 
 <p>
-    Now you can decide how you want for configure your Front-end (Web) and Database Servers.
+    Now you can decide how you want to configure your Frontend (Web) and Database Servers.
     They can be shared or deployed to separate servers.
 </p>
 
-<p>
-    For production environments we always recommend separate servers. If you need fine grained control for more advanced deployments  you can use a <a href="#">manifest file</a>.
-</p>
+<div class="notice">
+    <h3>Deploying to Production</h3>
+    <p>For production environments we always recommend separate servers. If you need fine grained control for more advanced deployments  you can use a <a href="#">manifest file</a>.</p>    
+</div>
 
 <p>
     That's it! Now just click <strong>Deploy Stack</strong>.
