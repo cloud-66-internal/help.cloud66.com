@@ -7,6 +7,7 @@ lead: ""
 legacy: false
 change: true
 permalink: /:collection/:path
+tags: ["nginx"]
 ---
 {% assign product = "common" %}
 

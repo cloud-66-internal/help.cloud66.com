@@ -5,7 +5,7 @@ title: Strong SSL Security on Nginx
 categories: how-to-guides/security
 lead: ""
 legacy: false
-
+tags: ["ssl","nginx"]
 permalink: /:collection/:path
 ---
 {% assign product = "common" %}

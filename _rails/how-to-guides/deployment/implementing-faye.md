@@ -5,6 +5,7 @@ template: one-col
 title: Faye on Cloud 66
 categories: how-to-guides/deployment
 lead: ""
+tags: ["websocket"]
 legacy: false
 
 permalink: /:collection/:path

@@ -3,7 +3,7 @@ menuheaders: [ "Public repositories", "Notice", "Private repositories", "GitHub 
 layout: post
 template: one-col
 title: Connecting Your Git Repository
-categories: getting-started
+categories: references
 lead: ""
 legacy: false
 

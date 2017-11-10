@@ -5,8 +5,8 @@ template: one-col
 title: Seeding your database
 categories: how-to-guides/databases
 lead: ""
+tags: ["customization"]
 legacy: false
-
 permalink: /:collection/:path
 ---
 

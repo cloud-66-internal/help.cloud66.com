@@ -12,49 +12,19 @@ permalink: /:collection/:categories/index.html
     <h2>Deploying Your Applications</h2>
     <ul>
     {% assign section = site.rails | where:"categories","how-to-guides/deployment" | sort: "order" %}
-    {% for page in section %}
-        <li>
-            {% for tag in page.tags %}
-            <span class="Tag">{{tag}}</span>
-            {% endfor %}
-            <a href="{{ page.url }}">
-                {{ page.title }}
-                <p>{{ page.lead }}</p>
-            </a>
-        </li>
-    {% endfor %}
+    {% include list_articles.html section=section %}
     </ul>
 
     <h2>Using Databases</h2>
     <ul>
     {% assign section = site.rails | where:"categories","how-to-guides/databases" | sort: "order" %}
-    {% for page in section %}
-        <li>
-            {% for tag in page.tags %}
-            <span class="Tag">{{tag}}</span>
-            {% endfor %}
-            <a href="{{ page.url }}">
-                {{ page.title }}
-                <p>{{ page.lead }}</p>
-            </a>
-        </li>
-    {% endfor %}
+    {% include list_articles.html section=section %}
     </ul>
 
     <h2>Securing Your Applications</h2>
     <ul>
     {% assign section = site.rails | where:"categories","how-to-guides/security" | sort: "order" %}
-    {% for page in section %}
-        <li>
-            {% for tag in page.tags %}
-            <span class="Tag">{{tag}}</span>
-            {% endfor %}
-            <a href="{{ page.url }}">
-                {{ page.title }}
-                <p>{{ page.lead }}</p>
-            </a>
-        </li>
-    {% endfor %}
+    {% include list_articles.html section=section %}    
     </ul>
 
 

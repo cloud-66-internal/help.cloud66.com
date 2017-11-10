@@ -6,7 +6,7 @@ title: SSL Certificate
 categories: how-to-guides/security
 lead: ""
 legacy: false
-
+tags: ["ssl"]
 permalink: /:collection/:path
 ---
 

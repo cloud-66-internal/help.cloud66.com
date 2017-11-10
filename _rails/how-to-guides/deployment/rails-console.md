@@ -4,6 +4,7 @@ template: one-col
 title: Running the Rails Console
 categories: how-to-guides/deployment
 lead: ""
+tags: ["debugging"]
 legacy: false
 
 permalink: /:collection/:path

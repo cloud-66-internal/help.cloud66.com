@@ -6,7 +6,7 @@ title: Managing processes with Bluepill
 categories: how-to-guides/deployment
 lead: "Manage background workers in your application"
 legacy: false
-tags: ["workers","code"]
+tags: ["code","workers"]
 order: 100
 
 permalink: /:collection/:path

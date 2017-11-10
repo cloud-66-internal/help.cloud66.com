@@ -5,7 +5,7 @@ title: Nginx allow and deny by IP
 categories: how-to-guides/security
 lead: ""
 legacy: false
-
+tags: ["nginx"]
 permalink: /:collection/:path
 ---
 {% assign product = "common" %}

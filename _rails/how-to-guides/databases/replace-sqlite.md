@@ -5,8 +5,8 @@ template: one-col
 title: Replacing SQLite with MySQL or PostgreSQL
 categories: how-to-guides/databases
 lead: ""
+tags: ["postgresql","sqlite","mysql"]
 legacy: false
-
 permalink: /:collection/:path
 ---
 

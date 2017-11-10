@@ -1,3 +1,12 @@
-{% if page.collection == 'rails' %}
-    {% include left_nav_rails.html %}
-{% endif %}
+{% case page.collection %}
+	{% when 'rails' %}
+    {% include left_nav_collection.html collection=site.rails %}
+	{% when 'node' %}
+    {% include left_nav_collection.html collection=site.node %}
+	{% when 'maestro' %}
+    {% include left_nav_collection.html collection=site.maestro %}
+	{% when 'skycap' %}
+    {% include left_nav_collection.html collection=site.skycap %}
+	{% when 'docker_legacy' %}
+    {% include left_nav_collection.html collection=site.docker_legacy %}
+{% endcase %}

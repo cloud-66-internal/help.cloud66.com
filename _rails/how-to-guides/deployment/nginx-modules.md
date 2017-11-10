@@ -6,6 +6,7 @@ title: Add modules to Nginx
 categories: how-to-guides/deployment
 lead: ""
 legacy: false
+tags: ["customization"]
 
 permalink: /:collection/:path
 ---

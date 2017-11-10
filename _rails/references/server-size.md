@@ -3,7 +3,7 @@ menuheaders: [ "Under-powered server sizes (not recommended)", "Amazon Web Servi
 layout: post
 template: one-col
 title: Choosing Server Size
-categories: getting-started
+categories: references
 lead: ""
 legacy: false
 

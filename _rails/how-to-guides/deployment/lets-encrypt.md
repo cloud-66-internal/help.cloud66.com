@@ -6,6 +6,7 @@ title: Let's Encrypt
 categories: how-to-guides/deployment
 lead: ""
 legacy: false
+tags: ["security"]
 permalink: /:collection/:path
 ---
 

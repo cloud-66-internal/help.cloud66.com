@@ -6,6 +6,7 @@ title: How to migrate your stack
 categories: how-to-guides/deployment
 lead: ""
 legacy: false
+tags: ["high-availability"]
 
 permalink: /:collection/:path
 ---

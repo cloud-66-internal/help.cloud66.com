@@ -6,6 +6,7 @@ title: Running Rake Tasks
 categories: how-to-guides/deployment
 lead: ""
 legacy: false
+tags: ["debugging"]
 
 permalink: /:collection/:path
 ---

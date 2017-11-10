@@ -5,7 +5,7 @@ title: Uninstalling MySQL
 categories: how-to-guides/databases
 lead: ""
 legacy: false
-
+tags: ["mysql"]
 permalink: /:collection/:path
 ---
 {% assign product = "common" %}

@@ -7,6 +7,7 @@ categories: how-to-guides/deployment
 lead: ""
 legacy: false
 permalink: /:collection/:path
+tags: ["debugging"]
 ---
 
 

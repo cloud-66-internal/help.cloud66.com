@@ -3,9 +3,10 @@ menuheaders: [ "About migrating from Heroku", "What server size do I need?", "Mi
 layout: post
 template: one-col
 title: Migrate from Heroku to Cloud66
-categories: how-to-guides/deployment
-lead: ""
+categories: quickstarts
+lead: "Move your Rails application from Heroku over to your own servers"
 legacy: false
+tags: ["migration"]
 
 permalink: /:collection/:path
 ---

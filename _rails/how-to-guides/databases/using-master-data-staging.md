@@ -5,7 +5,7 @@ title: Using production data on your staging stack
 categories: how-to-guides/databases
 lead: ""
 legacy: false
-
+tags: ["high-availability","customization"]
 permalink: /:collection/:path
 ---
 {% assign product = "common" %}
