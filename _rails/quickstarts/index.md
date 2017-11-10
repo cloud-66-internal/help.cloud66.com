@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deploying Your First Rails App
-categories: Rails
+categories: quickstarts
 legacy: false
 lead: This guide will take you through the process of deploying a Rails or Rack framework app with Cloud 66 for the first time.
 permalink: /:collection/:path
