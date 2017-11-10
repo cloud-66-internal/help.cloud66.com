@@ -12,7 +12,7 @@ permalink: /:collection/:categories/index.html
     <h2>Deploying Your Applications</h2>
     <ul>
         <li>
-            <span>git</span>
+            <span class="Tag">git</span> <span class="Tag">git</span>
             <a href="deployment/access-your-code">
                 Access your Git repository
                 <p>Connecting your stack to your git repository.</p>
