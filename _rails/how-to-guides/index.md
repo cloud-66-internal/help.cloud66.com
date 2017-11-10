@@ -12,52 +12,52 @@ permalink: /:collection/:categories/index.html
     <h2>Deploying Your Applications</h2>
     <ul>
         <li>
-            <span>git</span>
+            <span class="Tag">git</span> <span class="Tag">git</span>
             <a href="deployment/access-your-code">
                 Access your Git repository
                 <p>Connecting your stack to your git repository.</p>
             </a>
         </li>
         <li>
-            <span>workers</span>
+            <span class="Tag">workers</span>
             <a href="deployment/bluepill">
                 Manage background Processes
                 <p>Managing processes with Bluepill.</p>
             </a>
         </li>
         <li>
-            <span>git</span>
+            <span class="Tag">git</span>
             <a href="deployment/github">
                 Use Cloud 66 with Github
             </a>
         </li>
         <li>
-            <span>high availability</span>
-            <span>websocktes</span>
+            <span class="Tag">high availability</span>
+            <span class="Tag">websocktes</span>
             <a href="deployment/haproxy-for-websocket">
                 Build Highly Available Websockets
             </a>
         </li>
         <li>
-            <span>websocktes</span>
+            <span class="Tag">websocktes</span>
             <a href="deployment/implementing-faye">
                 TODO: Implement Faye
             </a>
         </li>
         <li>
-            <span>security</span>
+            <span class="Tag">security</span>
             <a href="deployment/lets-encrypt">
                 Use Let's Encrypt to Secure Your Website
             </a>
         </li>
         <li>
-            <span>notifications</span>
+            <span class="Tag">notifications</span>
             <a href="deployment/manage-stacks-chatops">
                 Use Slack to Manage Your Deployments
             </a>
         </li>
         <li>
-            <span>ha</span>
+            <span class="Tag">ha</span>
             <a href="deployment/migrate-across-dc">
                 Migrate Across Data Centers
             </a>
@@ -73,33 +73,33 @@ permalink: /:collection/:categories/index.html
             </a>
         </li>
         <li>
-            <span>ha</span>
+            <span class="Tag">ha</span>
             <a href="deployment/multi-region-stack">
                 Build a Highly Available Stack
             </a>
         </li>
         <li>
-            <span>nginx</span>
-            <span>customization</span>
+            <span class="Tag">nginx</span>
+            <span class="Tag">customization</span>
             <a href="deployment/nginx-modules">
                 Customize Your Nginx Modules
             </a>
         </li>
         <li>
-            <span>nginx</span>
-            <span>customization</span>
+            <span class="Tag">nginx</span>
+            <span class="Tag">customization</span>
             <a href="deployment/nginx-redirect">
                 TODO: Nginx Redirect
             </a>
         </li>
         <li>
-            <span>performance</span>
+            <span class="Tag">performance</span>
             <a href="deployment/optimizing-performance">
                 Optimize Stack Performance
             </a>
         </li>
         <li>
-            <span>debugging</span>
+            <span class="Tag">debugging</span>
             <a href="deployment/rails-console">
                 Connect to Rails Console For Debugging
             </a>
@@ -110,28 +110,28 @@ permalink: /:collection/:categories/index.html
             </a>
         </li>
         <li>
-            <span>logs</span>
-            <span>debugging</span>
+            <span class="Tag">logs</span>
+            <span class="Tag">debugging</span>
             <a href="deployment/setting-up-custom-livelogs">
                 View Your Logs
             </a>
         </li>
         <li>
-            <span>ssh</span>
-            <span>debugging</span>
+            <span class="Tag">ssh</span>
+            <span class="Tag">debugging</span>
             <a href="deployment/ssh-keys">
                 Access Your Servers
             </a>
         </li>
         <li>
-            <span>ssh</span>
-            <span>debugging</span>
+            <span class="Tag">ssh</span>
+            <span class="Tag">debugging</span>
             <a href="deployment/ssh">
                 TODO: SSH
             </a>
         </li>
         <li>
-            <span>ha</span>
+            <span class="Tag">ha</span>
             <a href="deployment/stack-failover">
                 TODO: Stack FailoverGroups
             </a>
@@ -142,13 +142,13 @@ permalink: /:collection/:categories/index.html
             </a>
         </li>
         <li>
-            <span>websockets</span>
+            <span class="Tag">websockets</span>
             <a href="deployment/websocket-support">
                 TODO: Websocket Support
             </a>
         </li>
         <li>
-            <span>ha</span>
+            <span class="Tag">ha</span>
             <a href="deployment/zero-downtime-deploy">
                 Achieve Zero Downtime Deployments
             </a>
