@@ -37,33 +37,29 @@ collections:
     output: true
     permalink: /:collection/:path/
     icon: foundicon-idea
-  test:
-    output: true
-    permalink: /:collection/:path/
-    icon: foundicon-idea  
 # Build settings
 markdown: kramdown
 
 sass:
     style:  compressed  # nested|expanded|compact|compressed
 
-plugins:
-  - jekyll-sitemap
-  - algoliasearch-jekyll
+#plugins:
+#  - jekyll-sitemap
+#  - algoliasearch-jekyll
 
-algolia:
-  application_id: 'TXUI53WBEH'
-  index_name:     'help-new'
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# algolia:
+#   application_id: 'TXUI53WBEH'
+#   index_name:     'help-new'
+# # Exclude from processing.
+# # The following items will not be processed, by default. Create a custom list
+# # to override the default setting.
+# # exclude:
+# #   - Gemfile
+# #   - Gemfile.lock
+# #   - node_modules
+# #   - vendor/bundle/
+# #   - vendor/cache/
+# #   - vendor/gems/
+# #   - vendor/ruby/
 
-# theme: jekyll-theme-cayman
+# # theme: jekyll-theme-cayman

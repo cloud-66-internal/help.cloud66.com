@@ -7,7 +7,7 @@
             {% if title == collection %}
             <div class="sticky-sidebar">
                 <h2 class="product-title" id="{{title}}-product-heading">
-                    {{ title | capitalize }} Docs
+                    {{ title | replace: "_", " " | capitalize }} Docs
                 </h2>
             </div>
 

@@ -21,7 +21,7 @@ bodyclass: post
 
     {% if page.legacy %}
         <div class="notice notice-red">
-            <p>Contents of this page are for a legacy version of {{ page.collection | capitalize }}</p>
+            <p>Contents of this page are for a legacy version of {{ page.collection | replace: "_", " " | capitalize }}</p>
         </div>
     {% endif %}
 
