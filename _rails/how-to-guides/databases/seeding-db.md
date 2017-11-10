@@ -3,7 +3,7 @@ menuheaders: [ "Seed script", "Deploy hook", "Note" ]
 layout: post
 template: one-col
 title: Seeding your database
-categories: how-to-guides
+categories: how-to-guides/databases
 lead: ""
 legacy: false
 

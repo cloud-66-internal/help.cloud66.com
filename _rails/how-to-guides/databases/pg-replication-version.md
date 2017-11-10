@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Issues replicating data between two versions of PostgreSQL
-categories: how-to-guides
+categories: how-to-guides/databases
 lead: ""
 legacy: false
 

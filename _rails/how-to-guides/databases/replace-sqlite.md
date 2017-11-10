@@ -3,7 +3,7 @@ menuheaders: [ "Instructions", "MySQL", "PostgreSQL" ]
 layout: post
 template: one-col
 title: Replacing SQLite with MySQL or PostgreSQL
-categories: how-to-guides
+categories: how-to-guides/databases
 lead: ""
 legacy: false
 

@@ -3,7 +3,7 @@ menuheaders: [ "Certificate signing request", "Important", "Intermediate certifi
 layout: post
 template: one-col
 title: SSL Certificate
-categories: how-to-guides
+categories: how-to-guides/security
 lead: ""
 legacy: false
 

@@ -3,7 +3,7 @@ menuheaders: [ "Important" ]
 layout: post
 template: one-col
 title: Sharing a database between stacks
-categories: how-to-guides
+categories: how-to-guides/databases
 lead: ""
 legacy: false
 

@@ -3,7 +3,7 @@ menuheaders: [ "Introduction", "Implementation", "1. RAILS_ROOT/.cloud66/deploy_
 layout: post
 template: one-col
 title: Faye on Cloud 66
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

@@ -3,7 +3,7 @@ menuheaders: [ "1. Concatanate each certification's files to one file", "2. Uplo
 layout: post
 template: one-col
 title: Configuring Multi Certificate for HAProxy
-categories: how-to-guides
+categories: how-to-guides/security
 lead: ""
 legacy: false
 

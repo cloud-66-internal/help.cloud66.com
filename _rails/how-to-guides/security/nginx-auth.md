@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Nginx basic authorization
-categories: how-to-guides
+categories: how-to-guides/security
 lead: ""
 legacy: false
 change: true

@@ -3,7 +3,7 @@ menuheaders: [ "Note" ]
 layout: post
 template: one-col
 title: Setting up custom LiveLog files
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

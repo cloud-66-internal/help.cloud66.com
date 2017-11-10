@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Uninstalling MySQL
-categories: how-to-guides
+categories: how-to-guides/databases
 lead: ""
 legacy: false
 

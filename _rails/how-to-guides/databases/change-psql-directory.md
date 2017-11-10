@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: How to change the data directory for PostgreSQL
-categories: how-to-guides
+categories: how-to-guides/databases
 lead: ""
 legacy: false
 

@@ -3,7 +3,7 @@ menuheaders: [ "Cloud 66 ChatOps", "Quick install:", "Create a Slack bot", "Down
 layout: post
 template: one-col
 title: Manage your stacks from Slack with ChatOps
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

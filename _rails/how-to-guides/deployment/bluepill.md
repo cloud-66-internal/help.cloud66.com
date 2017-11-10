@@ -3,9 +3,11 @@ menuheaders: [ "Commands", "Process names convention", "Build your own pill file
 layout: post
 template: one-col
 title: Managing processes with Bluepill
-categories: how-to-guides
-lead: ""
+categories: how-to-guides/deployment
+lead: "Manage background workers in your application"
 legacy: false
+tags: ["workers","code"]
+order: 100
 
 permalink: /:collection/:path
 ---

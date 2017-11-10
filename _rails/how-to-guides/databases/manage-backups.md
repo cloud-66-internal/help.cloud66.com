@@ -3,7 +3,7 @@ menuheaders: [ "Managing your Cloud 66 backups", "Download your backup", "1. Clo
 layout: post
 template: one-col
 title: How to manage your Cloud 66 backups
-categories: how-to-guides
+categories: how-to-guides/databases
 lead: ""
 legacy: false
 

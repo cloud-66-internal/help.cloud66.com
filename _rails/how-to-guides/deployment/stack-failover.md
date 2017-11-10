@@ -3,7 +3,7 @@ menuheaders: [ "Setup the failover group", "1. Code", "2. Data", "3. Traffic", "
 layout: post
 template: one-col
 title: How to deal with a failover group
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 
