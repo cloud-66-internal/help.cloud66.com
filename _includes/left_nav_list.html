@@ -1,0 +1,9 @@
+{% for page in include.section %}
+<li>
+	{% if include.current.url == page.url %}
+	<a class="sidebar-link current" href="{{ page.url }}">{{ page.title }}</a>
+	{% else %}
+	<a class="sidebar-link" href="{{ page.url }}">{{ page.title }}</a>
+	{% endif %}
+</li>
+{% endfor %}
