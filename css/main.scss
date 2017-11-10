@@ -11,8 +11,11 @@ $sans-font-stack: system, -apple-system, BlinkMacSystemFont, "San Francisco", "R
 $mono-font-stack: "SFMono-Regular", "Source Sans Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
 // colors
-$link-color:   #427dc4;
-$strong-color: #2c3e50;
+$link-color:       #427dc4;
+$link-hover-color: #35689e;
+
+// type
+$strong-color:    #2c3e50;
 
 body {
     font-family: $sans-font-stack;
@@ -37,10 +40,17 @@ body.docs {
 /*
  * Elements
  * ---------------------------------------------------------- */
-
-a {
+a,
+a:visited {
     text-decoration: none;
+    color: $link-color;
 }
+
+a:hover,
+a:active {
+    color: $link-hover-color;
+}
+
 
 img {
     border: none;
@@ -80,7 +90,6 @@ p {
 /*
  * Buttons
  * ---------------------------------------------------------- */
- .content { }
 
 .Button {
     padding: 0.7em 1.7em;
@@ -93,19 +102,23 @@ p {
     border: 1px solid #62c462;
     font-size: 15px;
 }
-.Button--outlined {
+.Button.Button--outlined {
     background: transparent;
-    border: 1px solid #62c462;
-    color: #62c462;
+    border: 1px solid #449FD8;
+    color: #449FD8;
+
+    &:hover {
+        color: #fff;
+    }
 }
 .Button--small {
     font-size: 12px;
     padding: 0.3em 1em;
 }
-.Button--blue {
-    border: 1px solid #449FD8;
-    color: #449FD8;
-}
+// .Button--blue {
+//     border: 1px solid #449FD8;
+//     color: #449FD8;
+// }
 .Button--app {
     font-weight: bolder;
     background-size: 15px !important;
@@ -722,7 +735,6 @@ body.docs #nav {
     /* Document content styles */
 
     a {
-        color: $link-color;
         font-weight: 500;
     }
 
@@ -1478,9 +1490,12 @@ li.active .TabMini-link {
 .accordion-content {
     display: none;
 }
-.accordion-content p {
-    padding-top: 0;
-    margin-top: 0;
+.accordion-content  {
+    p, ul {
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 0.3em;
+    }
 }
 .accordion-content.open {
     display: block;

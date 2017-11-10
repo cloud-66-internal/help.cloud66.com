@@ -133,7 +133,7 @@ permalink: /:collection/:path
     </li>
 </ul>
 
-<p>Now click the <strong>Analyze</strong> button. Hang tight&mdah;the results will be displayed in a few seconds...</p>
+<p>Now click the <strong>Analyze</strong> button. Hang tight &mdash; the results will be displayed in a few seconds...</p>
 
 <h3 id="App-Configuration">
     <a href="#Configuring-Your-Stack" class="headerlink" title="About your app Summary"></a>
@@ -168,7 +168,7 @@ permalink: /:collection/:path
 <div class="accordion">
     <h4 class="accordion-toggle active">AWS</h4>
     <div class="accordion-content open">
-        <ul>
+    <ul>
         <li>
             <p>
                 <strong>Give this cloud key a name</strong> &ndash; This is to give you the option of deploying to multiple accounts with the same cloud provider. If you only have 1 account you can leave it as default.
@@ -184,7 +184,8 @@ permalink: /:collection/:path
                 <strong>AWS Secret Access Key</strong>  &ndash; You get this info from your AWS account Dashboard.
             </p>
         </li>
-        </ul>
+    </ul>
+
         <p>Once you've added your Cloud Provider Credentials you need to choose the following: </p>
 
         <ul>
@@ -245,9 +246,3 @@ permalink: /:collection/:path
 <p>
     That's it! Now just click <strong>Deploy Stack</strong>.
 </p>
-
-<!-- <div class="PageLinks">
-    <span class="u-floatRight">
-        <a href="#"><strong>Next</strong> &mdash; Secure your app by Instaling an SSL Cert</a> →
-    </span>
-</div> -->
