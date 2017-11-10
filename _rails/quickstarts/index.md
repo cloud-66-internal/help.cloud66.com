@@ -49,18 +49,14 @@ permalink: /:collection/:path
     </section>
 </div>
 
-<h2 id="What-youll-need">
-    <a href="#Get-Started" class="headerlink" title="What you’ll need"></a>
-    Get Started
-</h2>
 <p>
-    Log into Cloud 66 website, if you're a new user you'll see four panels on your Apps Dashboard. In the Rails panel click the <strong>Start Trial</strong>.
+    Lets get started &mdash; Log into Cloud 66 website, if you're a new user you'll see four panels on your Apps Dashboard. In the Rails panel click the <strong>Start Trial</strong>.
 </p>
 
-<h3 id="Access-your-Git-repository">
+<h2 id="Access-your-Git-repository">
     <a href="#Access-your-Git-repository" class="headerlink" title="Access your Git repository"></a>
     Accessing your Git Repo
-</h3>
+</h2>
 <p>
     Cloud 66 supports both public and private Git repositories. If you're using a private Git repository you'll need to Add and approve the Cloud 66 public SSH key with your Git provider.
 </p>
@@ -106,10 +102,10 @@ permalink: /:collection/:path
     </section>
 </div>
 
-<h3 id="Tell-us-about-your-app">
+<h2 id="Tell-us-about-your-app">
     <a href="#Define-your-Stack" class="headerlink" title="Define your application properties"></a>
     Defining Your Stack
-</h3>
+</h2>
 <p>
     Now you need to tell us a bit of info about your app. Then we can deploy, Please fill in the following fields:
 <p>
@@ -135,10 +131,10 @@ permalink: /:collection/:path
 
 <p>Now click the <strong>Analyze</strong> button. Hang tight &mdash; the results will be displayed in a few seconds...</p>
 
-<h3 id="App-Configuration">
+<h2 id="App-Configuration">
     <a href="#Configuring-Your-Stack" class="headerlink" title="About your app Summary"></a>
     Configuring Your Stack
-</h3>
+</h2>
 
 <p>Once the analysis is complete you'll see a yellow Information Box that you can use to verify the analysis is correct. If there are any problems you can make changes and Reanalyze at this point. If necessary you can also <a href="#">Add Environment Variables</a>.</p>
 <p>Here you can make changes to some of Stack configration parameters.</p>
@@ -156,10 +152,10 @@ permalink: /:collection/:path
     <p>You can configure many aspects of your Stack using the Toolbelt or a manifest file.</p>
 </div>
 
-<h3 id="Where-are-you-deploying-to">
+<h2 id="Where-are-you-deploying-to">
     <a href="#Where-are-you-deploying-to" class="headerlink" title="Where are you deploying to?"></a>
     Choosing a Deployment Target
-</h3>
+</h2>
 
 <p>
     If you're deploying for the first time you need to add your Cloud provider credentials:
@@ -232,10 +228,10 @@ permalink: /:collection/:path
     </div>
 </div>
 
-<h3 id="Deployment-Details">
+<h2 id="Deployment-Details">
     <a href="#Deployment-Details" class="headerlink" title="Deployment Details"></a>
     Finalizing Deployment Details
-</h3>
+</h2>
 
 <p>
     Now you can decide how you want to configure your Frontend (Web) and Database Servers.
@@ -244,7 +240,7 @@ permalink: /:collection/:path
 
 <div class="notice">
     <h3>Deploying to Production</h3>
-    <p>For production environments we always recommend separate servers. If you need fine grained control for more advanced deployments  you can use a <a href="#">manifest file</a>.</p>    
+    <p>For production environments we always recommend separate servers. If you need fine grained control for more advanced deployments  you can use a <a href="#">manifest file</a>.</p>
 </div>
 
 <p>

@@ -1,12 +1,13 @@
 <nav class="list">
-    <div class="sticky-sidebar">
-        <h2 class="product-title" id="{{title}}-product-heading">
-            Rails Documentation
-        </h2>
+        <div class="sticky-sidebar">
+            <h2 class="product-title" id="{{title}}-product-heading">
+                Rails Documentation
+            </h2>
+        </div>
 
         <ul class="menu-root">
             {% assign section = site.rails | where:"categories","quickstarts" | sort: "order" %}
-            <li><h3>Quickstarts</h3></li>
+            <li><h3 class="u-flushTop">Quickstarts</h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
@@ -46,7 +47,5 @@
             <li><h3>Resources</h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
-
-    </div>
 </nav>
 
