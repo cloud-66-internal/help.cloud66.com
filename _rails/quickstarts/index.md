@@ -165,60 +165,9 @@ permalink: /:collection/:path
     If you're deploying for the first time you need to add your Cloud provider credentials:
 </p>
 
-<div class="Tabs">
-    <nav>
-      <ul class="TabMini js_tabs">
-        <li class="TabMini-item active">
-          <a href="#aws_content" class="TabMini-link">
-            AWS
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#gcp_content" class="TabMini-link">
-            Google Cloud
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#azure_content" class="TabMini-link">
-            Azure
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#do_content" class="TabMini-link">
-            DigitalOcean
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#linode_content" class="TabMini-link">
-            Linode
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#packet_content" class="TabMini-link">
-            Packet
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#rackspace_content" class="TabMini-link">
-            Rackspace
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#clouda_content" class="TabMini-link">
-            Cloud A
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#byos_content" class="TabMini-link">
-            Bring Your Own Server
-          </a>
-        </li>
-
-      </ul>
-    </nav>
-
-    <section id="aws_content" class="Tabs-content js_tab_content">
-        <h4>AWS</h4>
+<div class="accordion">
+    <h4 class="accordion-toggle active">AWS</h4>
+    <div class="accordion-content open">
         <ul>
         <li>
             <p>
@@ -255,22 +204,29 @@ permalink: /:collection/:path
                 </p>
             </li>
         </ul>
-    </section>
-
-    <section id="gcp_content" class="Tabs-content js_tab_content is-hidden">
-        <h4>Google Cloud</h4>
-        <p>This is some beta content. Consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et doloreatat non proident, sunt in culpa qui.</p>
-    </section>
-
-    <section id="azure_content" class="Tabs-content js_tab_content is-hidden">
-        <h4>Azure</h4>
-        <p>This is some gamma content. Amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris.</p>
-    </section>
+    </div>
+    <h4 class="accordion-toggle">Google Cloud</h4>
+    <div class="accordion-content">
+    </div>
+    <h4 class="accordion-toggle">Microsoft Azure</h4>
+    <div class="accordion-content">
+    </div>
+    <h4 class="accordion-toggle">DigitalOcean</h4>
+    <div class="accordion-content">
+    </div>
+    <h4 class="accordion-toggle">Linode</h4>
+    <div class="accordion-content">
+    </div>
+    <h4 class="accordion-toggle">Packet</h4>
+    <div class="accordion-content">
+    </div>
+    <h4 class="accordion-toggle">Rackspace</h4>
+    <div class="accordion-content">
+    </div>
+    <h4 class="accordion-toggle">Cloud A</h4>
+    <div class="accordion-content">
+    </div>
 </div>
-
 
 <h2 id="Deployment-Details">
     <a href="#Deployment-Details" class="headerlink" title="Deployment Details"></a>
