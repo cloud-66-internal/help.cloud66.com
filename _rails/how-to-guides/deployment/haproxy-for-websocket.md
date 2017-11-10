@@ -3,7 +3,7 @@ menuheaders: [ "Usage", "How it works", "Important", "Test your WebSocket server
 layout: post
 template: one-col
 title: Configuring HAProxy for WebSocket
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

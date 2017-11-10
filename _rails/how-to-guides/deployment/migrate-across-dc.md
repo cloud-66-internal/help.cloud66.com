@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Migrate your stacks across data centers
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

@@ -3,7 +3,7 @@ menuheaders: [ "Redirect from HTTP to HTTPS", "Redirect between domains with HTT
 layout: post
 template: one-col
 title: Nginx Redirect
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

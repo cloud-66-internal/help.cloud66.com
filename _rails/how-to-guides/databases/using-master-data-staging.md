@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Using production data on your staging stack
-categories: how-to-guides
+categories: how-to-guides/databases
 lead: ""
 legacy: false
 

@@ -3,7 +3,7 @@ menuheaders: [ "Installing with Cloud 66", "Manual installation", "Prerequisites
 layout: post
 template: one-col
 title: How to install PostGIS
-categories: how-to-guides
+categories: how-to-guides/databases
 lead: ""
 legacy: false
 

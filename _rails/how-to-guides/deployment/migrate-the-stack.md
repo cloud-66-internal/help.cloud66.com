@@ -3,7 +3,7 @@ menuheaders: [ "1. Set a failover group ", "2. Add a CNAME record in your DNS pr
 layout: post
 template: one-col
 title: How to migrate your stack
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

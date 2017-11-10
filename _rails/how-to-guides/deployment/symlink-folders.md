@@ -3,7 +3,7 @@ menuheaders: [ "Public folder", "Symbolic link" ]
 layout: post
 template: one-col
 title: Create symbolic links in Ubuntu
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

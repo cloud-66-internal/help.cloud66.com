@@ -3,7 +3,7 @@ menuheaders: [ "About migrating from Heroku", "What server size do I need?", "Mi
 layout: post
 template: one-col
 title: Migrate from Heroku to Cloud66
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Running the Rails Console
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

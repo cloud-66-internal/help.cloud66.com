@@ -3,7 +3,7 @@ menuheaders: [ "What is a stack?", "Stack components", "Load balancer (optional)
 layout: post
 template: one-col
 title: Stack Definition
-categories: Deployment
+categories: concepts/deployment
 lead: ""
 legacy: false
 

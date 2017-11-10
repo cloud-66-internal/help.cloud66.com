@@ -3,7 +3,7 @@ menuheaders: [ "Introduction", "Scheduled", "Deployment hooks", "Manually" ]
 layout: post
 template: one-col
 title: Running Rake Tasks
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

@@ -3,7 +3,7 @@ menuheaders: [ "About WebSocket", "Cloud 66 configuration for WebSocket", "WebSo
 layout: post
 template: one-col
 title: Cloud 66 WebSocket support
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

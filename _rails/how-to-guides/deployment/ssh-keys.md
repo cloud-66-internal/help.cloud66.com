@@ -3,7 +3,7 @@ menuheaders: [ "Generate Keys on Linux and Mac", "Important", "Generate Keys on 
 layout: post
 template: one-col
 title: Setting Up SSH Keys
-categories: how-to-guides
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 
