@@ -3,10 +3,10 @@ menuheaders: [ "Run command", "Usage", "Parameters", "Examples" ]
 layout: post
 template: one-col
 title: Toolbelt run command
-categories: Toolbelt
+categories: references/toolbelt
 lead: ""
 legacy: false
-
+order: 100
 permalink: /:collection/:path
 ---
 

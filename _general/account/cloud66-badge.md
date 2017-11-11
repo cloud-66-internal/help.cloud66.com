@@ -3,7 +3,7 @@ menuheaders: [ "Important", "HTTP:", "HTTPS:" ]
 layout: post
 template: one-col
 title: Cloud66 Badge
-categories: Account
+categories: resources
 lead: ""
 legacy: false
 

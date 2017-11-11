@@ -3,10 +3,10 @@ menuheaders: [ "Server management", "List server settings", "Usage", "Parameters
 layout: post
 template: one-col
 title: Toolbelt server management
-categories: Toolbelt
+categories: references/toolbelt
 lead: ""
 legacy: false
-
+order: 100
 permalink: /:collection/:path
 ---
 

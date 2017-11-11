@@ -43,6 +43,8 @@ markdown: kramdown
 sass:
     style:  compressed  # nested|expanded|compact|compressed
 
+safe: false
+
 #plugins:
 #  - jekyll-sitemap
 #  - algoliasearch-jekyll

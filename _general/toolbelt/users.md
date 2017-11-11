@@ -3,10 +3,10 @@ menuheaders: [ "List command", "Usage", "Parameters", "Examples", "Show command"
 layout: post
 template: one-col
 title: Toolbelt user commands
-categories: Toolbelt
+categories: references/toolbelt
 lead: ""
 legacy: false
-
+order: 100
 permalink: /:collection/:path
 ---
 

@@ -2,27 +2,23 @@
 menuheaders: [ "Public repositories", "Notice", "Private repositories", "GitHub example", "BitBucket example" ]
 layout: post
 template: one-col
-title: Connecting Your Git Repository
+title: Connecting Your git Repository
 categories: references
-lead: ""
+lead: "Connecting Cloud 66 to a git repository"
 legacy: false
-
+tags: ["git"]
 permalink: /:collection/:path
 ---
-
-
 
 ## Public repositories
 
 For public Git repositories, you don't need to add the SSH key provided to your Git account. You simply need to provide the Git URL as either
 
-`http://<git provider>/<username>/<repository>.git
-`  
+`http://<git provider>/<username>/<repository>.git`  
 
 or   
 
 `git://<git provider>/<username>/<repository>.git`
-
 
 
 ### Notice

@@ -3,10 +3,10 @@ menuheaders: [ "Cloud 66 Easy Login", "Access Control for Toolbelt Login" ]
 layout: post
 template: one-col
 title: Easy Login
-categories: Toolbelt
+categories: references/toolbelt
 lead: ""
 legacy: false
-
+order: 100
 permalink: /:collection/:path
 ---
 

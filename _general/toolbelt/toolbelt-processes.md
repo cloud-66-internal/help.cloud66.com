@@ -3,10 +3,10 @@ menuheaders: [ "Listing processs", "Usage", "Parameters", "Example", "Scaling pr
 layout: post
 template: one-col
 title: Toolbelt Process Management
-categories: Toolbelt
+categories: references/toolbelt
 lead: ""
 legacy: false
-
+order: 100
 permalink: /:collection/:path
 ---
 

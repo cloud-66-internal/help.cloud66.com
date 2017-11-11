@@ -2,10 +2,10 @@
 layout: post
 template: one-col
 title: Toolbelt Commands Directory
-categories: Toolbelt
+categories: references/toolbelt
 lead: ""
 legacy: false
-
+order: 100
 permalink: /:collection/:path
 ---
 {% assign product = "common" %}

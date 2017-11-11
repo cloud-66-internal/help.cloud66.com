@@ -28,6 +28,10 @@
             {% assign section = include.collection | where:"categories","references" | sort: "order" %}
             <li><h3>References</h3></li>
             {% include left_nav_list.html section=section current=page %}
+            <li>&mdash;</li>
+            {% assign section = include.collection | where:"categories","references/toolbelt" | sort: "order" %}            
+            {% include left_nav_list.html section=section current=page %}
+
         </ul>
 
         <ul class="menu-root">

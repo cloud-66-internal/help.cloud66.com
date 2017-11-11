@@ -3,10 +3,10 @@ menuheaders: [ "Environment variable setup", "List environment variables", "Usag
 layout: post
 template: one-col
 title: Toolbelt environment variable management
-categories: Toolbelt
+categories: references/toolbelt
 lead: ""
 legacy: false
-
+order: 100
 permalink: /:collection/:path
 ---
 

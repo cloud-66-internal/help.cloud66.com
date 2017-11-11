@@ -3,7 +3,7 @@ menuheaders: [ "Operating system", "Supported cloud providers", "Supported frame
 layout: post
 template: one-col
 title: Technical specifications
-categories: introduction
+categories: references
 lead: ""
 legacy: false
 

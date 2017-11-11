@@ -3,10 +3,10 @@ menuheaders: [ "Listing services", "Usage", "Parameters", "Example", "Scaling se
 layout: post
 template: one-col
 title: Toolbelt service management
-categories: Toolbelt
+categories: references/toolbelt
 lead: ""
 legacy: false
-
+order: 100
 permalink: /:collection/:path
 ---
 

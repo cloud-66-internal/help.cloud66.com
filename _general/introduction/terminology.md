@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Terminology
-categories: Introduction
+categories: resources
 lead: ""
 legacy: false
 

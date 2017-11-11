@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: European data protection compliance
-categories: introduction
+categories: resources
 lead: ""
 legacy: false
 

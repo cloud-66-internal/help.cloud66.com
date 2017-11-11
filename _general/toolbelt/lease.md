@@ -3,10 +3,10 @@ menuheaders: [ "Temporary lease", "Usage", "Parameters", "Example" ]
 layout: post
 template: one-col
 title: Toolbelt lease management
-categories: Toolbelt
+categories: references/toolbelt
 lead: ""
 legacy: false
-
+order: 100
 permalink: /:collection/:path
 ---
 

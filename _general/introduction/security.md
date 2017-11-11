@@ -3,7 +3,7 @@ menuheaders: [ "Infrastructure security", "Credit Card Information", "Customer p
 layout: post
 template: one-col
 title: Security summary
-categories: Introduction
+categories: resources
 lead: ""
 legacy: false
 

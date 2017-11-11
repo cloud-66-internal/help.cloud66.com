@@ -3,10 +3,10 @@ menuheaders: [ "Gateway management", "List gateways", "Usage", "Parameters", "Ex
 layout: post
 template: one-col
 title: Toolbelt gateway management
-categories: Toolbelt
+categories: references/toolbelt
 lead: ""
 legacy: false
-
+order: 100
 permalink: /:collection/:path
 ---
 

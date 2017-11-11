@@ -2,14 +2,13 @@
 menuheaders: [ "Under-powered server sizes (not recommended)", "Amazon Web Services", "Cloud-A", "DigitalOcean", "Google Compute Engine", "Microsoft Azure", "Rackspace", "We suggest using a server with at least 1GB of memory and 4 core" ]
 layout: post
 template: one-col
-title: Choosing your server size
+title: Non-recommended server sizes
 categories: references
-lead: ""
+lead: "Choosing the right server size"
 legacy: false
-
+tags: ["performance"]
 permalink: /:collection/:path
 ---
-
 
 ## Under-powered server sizes (not recommended)
 

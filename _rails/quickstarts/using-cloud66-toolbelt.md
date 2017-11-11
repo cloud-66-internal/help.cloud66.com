@@ -2,11 +2,11 @@
 menuheaders: [ "What is toolbelt?", "Install the toolbelt?", "Initialize the toolbelt", "Advanced", "Note", "View toolbelt information", "Multiple Account Support", "Update the toolbelt", "Toolbelt shortcuts", "Contributing" ]
 layout: post
 template: one-col
-title: Toolbelt Introduction
-categories: Toolbelt
-lead: ""
+title: Using Cloud 66 Toolbelt
+categories: quickstarts
+lead: "A powerful command line tool to interact with Cloud 66"
 legacy: false
-
+tags: ["toolbelt"]
 permalink: /:collection/:path
 ---
 

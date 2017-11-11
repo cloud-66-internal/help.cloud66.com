@@ -3,7 +3,7 @@ menuheaders: [ "What is Cloud 66?", "Where is it hosted?", "How can I use Cloud 
 layout: post
 template: one-col
 title: FAQs
-categories: introduction
+categories: resources
 lead: ""
 legacy: false
 

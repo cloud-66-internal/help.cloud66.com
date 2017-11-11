@@ -3,7 +3,7 @@ menuheaders: [ "Is Cloud 66 PCI Compliant?", "Will my website/mobile backend/API
 layout: post
 template: one-col
 title: PCI DSS compliance guide
-categories: introduction
+categories: resources
 lead: ""
 legacy: false
 

@@ -3,14 +3,12 @@ menuheaders: [ "View account information", "Delete your account", "Organizations
 layout: post
 template: one-col
 title: Account Management
-categories: account
+categories: account-management
 lead: ""
 legacy: false
 
 permalink: /:collection/:path
 ---
-
-
 
 ## View account information
 To view your account information, visit the _Account_ link at the top right corner of your Cloud 66 account.

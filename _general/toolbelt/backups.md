@@ -3,9 +3,10 @@ menuheaders: [ "About backup management", "List your backups", "Usage", "Paramet
 layout: post
 template: one-col
 title: Toolbelt Backup Management
-categories: Toolbelt
+categories: references/toolbelt
 lead: ""
 legacy: false
+order: 100
 
 permalink: /:collection/:path
 ---

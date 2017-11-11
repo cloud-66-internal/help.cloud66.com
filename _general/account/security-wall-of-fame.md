@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Security Wall of Fame
-categories: Account
+categories: resources
 lead: ""
 legacy: false
 

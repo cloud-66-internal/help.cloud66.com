@@ -3,10 +3,10 @@ menuheaders: [ "List your stack settings", "Usage", "Parameters", "Example", "Se
 layout: post
 template: one-col
 title: Toolbelt settings command
-categories: Toolbelt
+categories: references/toolbelt
 lead: ""
 legacy: false
-
+order: 100
 permalink: /:collection/:path
 ---
 

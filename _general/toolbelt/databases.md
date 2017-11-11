@@ -3,10 +3,10 @@ menuheaders: [ "Database management", "Slave promotion to standalone master", "U
 layout: post
 template: one-col
 title: Toolbelt database management
-categories: Toolbelt
+categories: references/toolbelt
 lead: ""
 legacy: false
-
+order: 100
 permalink: /:collection/:path
 ---
 
