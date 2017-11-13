@@ -15,13 +15,19 @@
             {% assign deployments = include.collection | where:"categories","how-to-guides/deployment" | sort: "order" %}
             {% assign databases = include.collection | where:"categories","how-to-guides/databases" | sort: "order" %}
             {% assign security = include.collection | where:"categories","how-to-guides/security" | sort: "order" %}
+            {% assign g_deployments = include.collection | where:"categories","how-to-guides/deployment" | sort: "order" %}
+            {% assign g_databases = include.collection | where:"categories","how-to-guides/databases" | sort: "order" %}
+            {% assign g_security = include.collection | where:"categories","how-to-guides/security" | sort: "order" %}
 
             <li><h3>How-to Guides</h3></li>
             {% include left_nav_list.html section=deployments current=page %}
+            {% include left_nav_list.html section=g_deployments current=page %}
             <li>&mdash;</li>
             {% include left_nav_list.html section=databases current=page %}
+            {% include left_nav_list.html section=g_databases current=page %}
             <li>&mdash;</li>
             {% include left_nav_list.html section=security current=page %}
+            {% include left_nav_list.html section=g_security current=page %}
         </ul>
 
         <ul class="menu-root">
