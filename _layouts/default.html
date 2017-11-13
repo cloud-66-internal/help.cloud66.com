@@ -103,11 +103,13 @@
                 <article class="content content--withSidebar">
                     {{ content }}
 
+                    {% if page.next_page %}
                     <div class="PageLinks">
                         <span class="u-floatRight">
                             <a href="#"><strong>Next</strong> &mdash; Secure your app by Instaling an SSL Cert</a> →
                         </span>
                     </div>
+                    {% endif %}
 
                     <footer class="FooterArticle"></footer>
 
