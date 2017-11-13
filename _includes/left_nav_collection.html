@@ -4,10 +4,10 @@
                 {{ page.collection | capitalize | replace:"_"," " }} Documentation
             </h2>
         </div>
-
+        {% assign product = page.collection | downcase | replace:"_"," " %}
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","quickstarts" | sort: "order" %}
-            <li><h3 class="u-flushTop">Quickstarts</h3></li>
+            <li><h3 class="u-flushTop"><a href="/{{product}}/quickstarts">Quickstarts</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
@@ -16,7 +16,7 @@
             {% assign databases = include.collection | where:"categories","how-to-guides/databases" | sort: "order" %}
             {% assign security = include.collection | where:"categories","how-to-guides/security" | sort: "order" %}
 
-            <li><h3>How-to Guides</h3></li>
+            <li><h3><a href="/{{product}}/how-to-guides">How-to Guides</a></h3></li>
             {% include left_nav_list.html section=deployments current=page %}
             <li>&mdash;</li>
             {% include left_nav_list.html section=databases current=page %}
@@ -26,29 +26,29 @@
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","references" | sort: "order" %}
-            <li><h3>References</h3></li>
+            <li><h3><a href="/{{product}}/references">References</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
             <li>&mdash;</li>
-            {% assign section = include.collection | where:"categories","references/toolbelt" | sort: "order" %}            
+            {% assign section = include.collection | where:"categories","references/toolbelt" | sort: "order" %}
             {% include left_nav_list.html section=section current=page %}
 
         </ul>
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","tutorials" | sort: "order" %}
-            <li><h3>Tutorials</h3></li>
+            <li><h3><a href="/{{product}}/tutorials">Tutorials</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","concepts" | sort: "order" %}
-            <li><h3>Concepts</h3></li>
+            <li><h3><a href="/{{product}}/concepts">Concepts</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","resources" | sort: "order" %}
-            <li><h3>Resources</h3></li>
+            <li><h3><a href="/{{product}}/resources">Resources</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 </nav>
