@@ -15,9 +15,9 @@
             {% assign deployments = include.collection | where:"categories","how-to-guides/deployment" | sort: "order" %}
             {% assign databases = include.collection | where:"categories","how-to-guides/databases" | sort: "order" %}
             {% assign security = include.collection | where:"categories","how-to-guides/security" | sort: "order" %}
-            {% assign g_deployments = include.collection | where:"categories","how-to-guides/deployment" | sort: "order" %}
-            {% assign g_databases = include.collection | where:"categories","how-to-guides/databases" | sort: "order" %}
-            {% assign g_security = include.collection | where:"categories","how-to-guides/security" | sort: "order" %}
+            {% assign g_deployments = site.general | where:"categories","how-to-guides/deployment" | sort: "order" %}
+            {% assign g_databases = site.general | where:"categories","how-to-guides/databases" | sort: "order" %}
+            {% assign g_security = site.general | where:"categories","how-to-guides/security" | sort: "order" %}
 
             <li><h3><a href="/{{product}}/how-to-guides">How-to Guides</a></h3></li>
             {% include left_nav_list.html section=deployments current=page %}
