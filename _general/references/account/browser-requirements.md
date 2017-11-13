@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Browser Requirements
-categories: resources
+categories: references/accounts
 lead: ""
 legacy: false
 

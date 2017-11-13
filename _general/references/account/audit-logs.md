@@ -3,7 +3,7 @@ menuheaders: [ "An Audit log for all account activities", "Search Audit Log", "A
 layout: post
 template: one-col
 title: Audit Logs
-categories: account-management
+categories: references/accounts
 lead: ""
 legacy: false
 

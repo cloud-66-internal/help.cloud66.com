@@ -3,7 +3,7 @@ menuheaders: [ "Overview", "What is Cloud 66 Account Protection?", "Account Prot
 layout: post
 template: one-col
 title: Account Protection
-categories: account-management
+categories: references/accounts
 lead: ""
 legacy: false
 

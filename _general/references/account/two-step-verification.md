@@ -3,7 +3,7 @@ menuheaders: [ "What is two-step verification? ", "Enable two-step verification"
 layout: post
 template: one-col
 title: Two-step Verification
-categories: account-management
+categories: references/accounts
 lead: ""
 legacy: false
 

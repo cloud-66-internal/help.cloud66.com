@@ -3,7 +3,7 @@ menuheaders: [ "Contact us" ]
 layout: post
 template: one-col
 title: Cloud 66 Beta program
-categories: resources
+categories: resources/beta-program
 lead: ""
 legacy: false
 

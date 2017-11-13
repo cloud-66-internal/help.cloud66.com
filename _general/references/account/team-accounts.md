@@ -3,7 +3,7 @@ menuheaders: [ "About using team accounts", "Account user roles and permissions"
 layout: post
 template: one-col
 title: Team Accounts
-categories: Teams
+categories: references/accounts
 lead: ""
 legacy: false
 

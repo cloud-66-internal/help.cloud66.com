@@ -3,7 +3,7 @@ menuheaders: [ "View account information", "Delete your account", "Organizations
 layout: post
 template: one-col
 title: Account Management
-categories: account-management
+categories: references/accounts
 lead: ""
 legacy: false
 

@@ -3,7 +3,7 @@ menuheaders: [ "User integration API", "Redirecting to Partner's website", "Prov
 layout: post
 template: one-col
 title: Partner Integration
-categories: Partners
+categories: references/integrations
 lead: ""
 legacy: false
 

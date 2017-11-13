@@ -3,7 +3,7 @@ menuheaders: [ "Step 1: Checkout your CustomConfig", "Step 2: Add the weavescope
 layout: post
 template: one-col
 title: Integration With Weave Scope
-categories: Partners
+categories: references/integrations
 lead: ""
 legacy: false
 

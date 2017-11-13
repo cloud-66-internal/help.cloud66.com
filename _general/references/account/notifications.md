@@ -4,7 +4,7 @@ menuheaders: [ "About receiving account notifications", "Viewing your account no
 layout: post
 template: one-col
 title: Account Notifications
-categories: account-management
+categories: references/accounts
 lead: ""
 legacy: false
 

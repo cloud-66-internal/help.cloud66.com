@@ -29,9 +29,14 @@
             <li><h3>References</h3></li>
             {% include left_nav_list.html section=section current=page %}
             <li>&mdash;</li>
-            {% assign section = include.collection | where:"categories","references/toolbelt" | sort: "order" %}            
+            {% assign section = site.general | where:"categories","references/toolbelt" | sort: "order" %}            
             {% include left_nav_list.html section=section current=page %}
-
+            <li>&mdash;</li>
+            {% assign section = site.general | where:"categories","references/accounts" | sort: "order" %}            
+            {% include left_nav_list.html section=section current=page %}
+            <li>&mdash;</li>
+            {% assign section = site.general | where:"categories","references/integrations" | sort: "order" %}            
+            {% include left_nav_list.html section=section current=page %}
         </ul>
 
         <ul class="menu-root">
@@ -47,8 +52,11 @@
         </ul>
 
         <ul class="menu-root">
-            {% assign section = include.collection | where:"categories","resources" | sort: "order" %}
+            {% assign section = site.general | where:"categories","resources" | sort: "order" %}
             <li><h3>Resources</h3></li>
+            {% include left_nav_list.html section=section current=page %}
+            <li>&mdash;</li>
+            {% assign section = site.general | where:"categories","resources/beta-program" | sort: "order" %}
             {% include left_nav_list.html section=section current=page %}
         </ul>
 </nav>

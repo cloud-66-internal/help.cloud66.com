@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Integration With Travis CI
-categories: Partners
+categories: references/integrations
 lead: ""
 legacy: false
 
