@@ -4,7 +4,7 @@
                 {{ page.collection | capitalize | replace:"_"," " }} Documentation
             </h2>
         </div>
-        {% assign product = page.collection | downcase | replace:"_"," " %}
+        {% assign product = page.collection | downcase %}
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","quickstarts" | sort: "order" %}
             <li><h3 class="u-flushTop"><a href="/{{product}}/quickstarts">Quickstarts</a></h3></li>
