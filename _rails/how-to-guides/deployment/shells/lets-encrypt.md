@@ -1,0 +1,12 @@
+---
+menuheaders: [ "How it is installed", "Troubleshoot" ]
+layout: post
+template: one-col
+title: Let's Encrypt
+categories: how-to-guides/deployment
+lead: ""
+legacy: false
+tags: ["security"]
+permalink: /:collection/:path
+---
+{% include how-to-guides/deployment/lets-encrypted.md %}
