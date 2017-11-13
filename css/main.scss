@@ -280,9 +280,9 @@ p {
  * ---------------------------------------------------------- */
 .Header {
     background-color: rgba(255,255,255,0.96);
-    box-shadow: inset 0px 0px 0px 1px #EFEFEF,1px 1px 6px;
+    box-shadow: inset 0px 0px 0px 1px #EFEFEF, 1px 1px 6px;
     height: 40px;
-    padding: 16px 60px;
+    padding: 16px 40px;
     position: relative;
     z-index: 2;
 }
@@ -313,7 +313,7 @@ body.docs #nav {
     margin: 0;
     padding: 0;
     position: absolute;
-    left: 120px;
+    left: 100px;
     top: 15px;
     height: 40px;
     line-height: 40px;
@@ -551,6 +551,10 @@ body.docs #nav {
         font-size: 16px;
         padding-bottom: 6px;
         margin-bottom: 10px;
+
+        a {
+            color: #2c3e50;
+        }
     }
 
     ul {
@@ -569,8 +573,8 @@ body.docs #nav {
 
     .sidebar-inner {
         // box-sizing: border-box;
-        width: 270px;
-        padding: 20px 20px 60px 60px;
+        width: 290px;
+        padding: 20px 20px 60px 40px;
     }
 
     .version-select {
@@ -666,8 +670,8 @@ body.docs #nav {
         left: 0;
         box-shadow: 0 0 10px rgba(0,0,0,0.2);
         transition: all 0.4s cubic-bezier(0.4, 0, 0, 1);
-        -webkit-transform: translate(-280px, 0);
-        transform: translate(-280px, 0);
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
     }
     .sidebar .sidebar-inner {
         padding: 50px 10px 10px 20px;
@@ -1478,7 +1482,7 @@ li.active .TabMini-link {
     padding: 3px;
     border-radius: 3px;
     text-transform: uppercase;
-    letter-spacing: 0.25px;
+    letter-spacing: 0.15px;
 }
 
 /*
