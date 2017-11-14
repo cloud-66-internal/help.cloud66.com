@@ -1,13 +1,3 @@
-# Welcome to Jekyll!
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-# Jekyl configs
-
 title: Help | Cloud 66
 email: support@cloud66.com
 permalink: /:collection/:path/
@@ -45,23 +35,9 @@ sass:
 
 safe: false
 
-#plugins:
-#  - jekyll-sitemap
-#  - algoliasearch-jekyll
+plugins:
+  - algoliasearch-jekyll
 
-# algolia:
-#   application_id: 'TXUI53WBEH'
-#   index_name:     'help-new'
-# # Exclude from processing.
-# # The following items will not be processed, by default. Create a custom list
-# # to override the default setting.
-# # exclude:
-# #   - Gemfile
-# #   - Gemfile.lock
-# #   - node_modules
-# #   - vendor/bundle/
-# #   - vendor/cache/
-# #   - vendor/gems/
-# #   - vendor/ruby/
-
-# # theme: jekyll-theme-cayman
+algolia:
+  application_id: 'TXUI53WBEH'
+  index_name:     'help'
