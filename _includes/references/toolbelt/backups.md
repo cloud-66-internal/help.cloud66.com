@@ -1,17 +1,3 @@
----
-menuheaders: [ "About backup management", "List your backups", "Usage", "Parameters", "Example", "Download your backups", "Usage", "Parameters", "Example", "Create backup", "Usage", "Parameters", "Example" ]
-layout: post
-template: one-col
-title: Toolbelt Backup Management
-categories: references/toolbelt
-lead: ""
-legacy: false
-order: 100
-
-permalink: /:collection/:path
----
-
-
 ## About backup management
 
 The following commands help you manage your backups, such as listing, downloading and initiating backups on your stacks.

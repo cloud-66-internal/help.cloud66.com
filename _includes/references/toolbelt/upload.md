@@ -1,16 +1,3 @@
----
-menuheaders: [ "Upload", "Usage", "Parameters", "Example" ]
-layout: post
-template: one-col
-title: Toolbelt upload command
-categories: references/toolbelt
-lead: ""
-legacy: false
-order: 100
-permalink: /:collection/:path
----
-
-
 ## Upload
 
 Use this command to copy a file from your local computer to the remote server.

@@ -1,15 +1,3 @@
----
-menuheaders: [ "Server management", "List server settings", "Usage", "Parameters", "Example", "Set server settings", "Usage", "Parameters", "Examples", "Reboot servers", "Usage", "Parameters", "Example" ]
-layout: post
-template: one-col
-title: Toolbelt server management
-categories: references/toolbelt
-lead: ""
-legacy: false
-order: 100
-permalink: /:collection/:path
----
-
 
 ## Server management
 

@@ -1,15 +1,3 @@
----
-menuheaders: [ "Open your website", "Usage", "Parameters", "Example" ]
-layout: post
-template: one-col
-title: Toolbelt open command
-categories: references/toolbelt
-lead: ""
-legacy: false
-order: 100
-permalink: /:collection/:path
----
-
 
 ## Open your website
 

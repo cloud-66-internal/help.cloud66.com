@@ -1,15 +1,3 @@
----
-menuheaders: [ "SSHing to your server", "Usage", "Parameters", "Example" ]
-layout: post
-template: one-col
-title: Toolbelt SSH to servers
-categories: references/toolbelt
-lead: ""
-legacy: false
-order: 100
-permalink: /:collection/:path
----
-
 
 ## SSHing to your server
 

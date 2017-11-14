@@ -1,16 +1,3 @@
----
-menuheaders: [ "Temporary lease", "Usage", "Parameters", "Example" ]
-layout: post
-template: one-col
-title: Toolbelt lease management
-categories: references/toolbelt
-lead: ""
-legacy: false
-order: 100
-permalink: /:collection/:path
----
-
-
 ## Temporary lease
 
 Opens a port on your server firewall to temporarily allow access from a specified IP address.

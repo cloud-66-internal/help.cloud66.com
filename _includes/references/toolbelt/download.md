@@ -1,15 +1,3 @@
----
-menuheaders: [ "Download", "Usage", "Parameters", "Example" ]
-layout: post
-template: one-col
-title: Toolbelt download command
-categories: references/toolbelt
-lead: ""
-legacy: false
-order: 100
-permalink: /:collection/:path
----
-
 
 ## Download
 

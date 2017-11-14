@@ -1,15 +1,3 @@
----
-menuheaders: [ "List your stack settings", "Usage", "Parameters", "Example", "Set your stack settings", "Usage", "Parameters", "Example", "Settings Variables" ]
-layout: post
-template: one-col
-title: Toolbelt settings command
-categories: references/toolbelt
-lead: ""
-legacy: false
-order: 100
-permalink: /:collection/:path
----
-
 
 ## List your stack settings
 

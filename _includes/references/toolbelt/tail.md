@@ -1,16 +1,3 @@
----
-menuheaders: [ "Usage", "Parameters", "Example" ]
-layout: post
-template: one-col
-title: Toolbelt tail command
-categories: references/toolbelt
-lead: ""
-legacy: false
-order: 100
-permalink: /:collection/:path
----
-
-
 ### Usage
 
 ```

@@ -1,16 +1,3 @@
----
-menuheaders: [ "Job management", "List jobs", "Usage", "Parameters", "Example", "Run a job on demand", "Usage", "Parameters", "Examples" ]
-layout: post
-template: one-col
-title: Toolbelt job management
-categories: references/toolbelt
-lead: ""
-legacy: false
-order: 100
-permalink: /:collection/:path
----
-
-
 ## Job management
 
 These commands allow you to list jobs and run a job immediately.

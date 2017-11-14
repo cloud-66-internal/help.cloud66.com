@@ -34,6 +34,8 @@
             {% assign section = include.collection | where:"categories","references" | sort: "order" %}
             <li><h3><a href="/{{product}}/references">References</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
+            {% assign section = include.collection | where:"categories","references/toolbelt" | sort: "order" %}            
+            {% include left_nav_list.html section=section current=page %}
             <li>&mdash;</li>
             {% assign section = site.general | where:"categories","references/toolbelt" | sort: "order" %}            
             {% include left_nav_list.html section=section current=page %}
