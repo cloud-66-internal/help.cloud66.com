@@ -124,6 +124,10 @@ p {
     background-size: 15px !important;
     background: #62c462 url('/images/ui/external.svg') no-repeat 12px 8px;
     padding-left: 32px;
+
+    &:hover {
+        color: #fff;
+    }
 }
 
 
@@ -747,7 +751,10 @@ body.docs #nav {
         font-weight: 500;
     }
 
-    img    { max-width: 100%; }
+    img  {
+        max-width: 100%;
+        // margin-top: 2em;
+    }
 
     .light { color: #7f8c8d; }
 
@@ -868,6 +875,12 @@ body.docs #nav {
 $notice-blue:  #2c3e50;
 $notice-amber: #fe7f25;
 $notice-green: #2aa754;
+
+.notice {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 /*
  * notice
 /* Default - blue */
@@ -899,11 +912,9 @@ $notice-green: #2aa754;
      color: #2aa754 !important;
  }
 
-.notice p,
-.content p.tip,
-.content p.success {
+.notice p {
     padding: 12px 24px 12px 30px;
-    margin: 2em 0;
+    margin-bottom: 2em;
     border-left-width: 4px;
     border-left-style: solid;
     background-color: #f8f8f8;
@@ -915,25 +926,6 @@ $notice-green: #2aa754;
 .content p.tip code,
 .content p.success code {
     background-color: #efefef;
-}
-.content p.tip em,
-.content p.success em {
-    color: #34495e;
-}
-.content p.tip {
-    border-left-color: #f66;
-}
-.content p.tip:before {
-    content: "!";
-    background-color: #f66;
-}
-.content p.success {
-    border-left-color: #42b983;
-}
-.content p.success:before {
-    content: "\f00c";
-    font-family: FontAwesome;
-    background-color: #42b983;
 }
 
 
