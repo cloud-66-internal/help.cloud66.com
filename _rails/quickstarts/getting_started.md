@@ -89,16 +89,19 @@ permalink: /:collection/:path
         <h4>Private Repository</h4>
         <p>To grant access to a private Github repository, you need to add your public SSH key you see on the screen to your Github account. </p>
         <p>
-            <img src="/assets/rails/rails_add_public_key.png" alt="Adding the Public Key to your Git Provider">
+            <img src="/assets/rails/rails_add_public_key.png" alt="Adding your Public Key to GitHub">
         </p>
-        <p>In the GitHub SSH keys page, click the <em>New SSH key</em> button and paste your public key.</p>
+        <p><em>Copy the public SSH Key</em> and then <em>Click Go to GitHub</em>. The GitHub SSH keys page will open in a new browser tab. Click the <em>New SSH key</em> button and paste your public key.</p>
     </section>
 
     <section id="bitbucket_content" class="Tabs-content js_tab_content is-hidden">
         <h4>Public Repository</h4>
         <p>If your code is in a public repository, you don't need to do anything.</p>
         <h4>Private Repository</h4>
-        <p>To grant access to a private Bitbucket repository, you need to add your public SSH key you see on the screen to your Bitbucket account. </p>
+        <p>To grant access to a private Bitbucket repository, you need to add your public SSH key you see on the screen to your Bitbucket account.</p>
+        <p>
+            <img src="/assets/rails/rails_add_public_key_bitbucket.png" alt="Adding the Public Key to BitBucket">
+        </p>
     </section>
 
     <section id="other_git_content" class="Tabs-content js_tab_content is-hidden">
@@ -140,8 +143,17 @@ permalink: /:collection/:path
     Configuring Your Stack
 </h2>
 
-<p>Once the analysis is complete you'll see a yellow Information Box that you can use to verify the analysis is correct. If there are any problems you can make changes and Reanalyze at this point. If necessary you can also <a href="#">Add Environment Variables</a>.</p>
-<p>Here you can make changes to some of Stack configration parameters.</p>
+<p>Once the analysis is complete you'll see a yellow Information Box that you can use to verify the analysis is correct.
+<p>
+     <img src="/assets/rails/rails_about_your_app.png" alt="Rails Stack - analysis information">
+</p>
+<p>If there are any problems you can make changes and Reanalyze at this point. If necessary, you can also <a href="#">Add Environment Variables</a>.</p>
+
+<p>In App Configuration you can make changes to Stack configuration parameters.</p>
+
+<p>
+    <img src="/assets/rails/rails_config_ruby_framework.png" alt="Rails Stack - Ruby version and Framework configuration">
+</p>
 
 <ul>
     <li>
