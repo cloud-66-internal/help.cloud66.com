@@ -1481,6 +1481,9 @@ li.active .TabMini-link {
  * Accordion Nav
  * Simple Accordian for long navigation lists
  * ------------------------------------------------------------------  */
+.accordion {
+    padding-bottom: 12px;
+}
 .accordion-toggle {
     cursor: pointer;
     color: #427dc4;

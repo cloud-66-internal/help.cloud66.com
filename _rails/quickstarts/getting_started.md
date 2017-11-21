@@ -91,7 +91,7 @@ permalink: /:collection/:path
         <p>
             <img src="/assets/rails/rails_add_public_key.png" alt="Adding your Public Key to GitHub">
         </p>
-        <p><em>Copy the public SSH Key</em> and then <em>Click Go to GitHub</em>. The GitHub SSH keys page will open in a new browser tab. Click the <em>New SSH key</em> button and paste your public key.</p>
+        <p><em>Copy the public SSH Key</em> (starts with ssh-rsa and ends with the email address you used to sign up) and then <em>Click Go to GitHub</em>. The GitHub SSH keys page will open in a new browser tab. Click the <em>New SSH key</em> button and paste your public key.</p>
     </section>
 
     <section id="bitbucket_content" class="Tabs-content js_tab_content is-hidden">
@@ -120,7 +120,7 @@ permalink: /:collection/:path
 <ul>
     <li>
         <p>
-            <strong>Git repo URL for your app</strong> &mdash; We support <strong><kbd>http://</kbd>, <kbd>git://</kbd> or <kbd>git@</kbd></strong> URL formats. Please note that HTTPS <strong>isn't</strong> currently supported.
+            <strong>Git repo URL for your app</strong> &mdash; We support <strong><kbd>http://</kbd>, <kbd>git://</kbd> or <kbd>git@</kbd></strong> URL formats. Please note that <strong>HTTPS isn't currently supported</strong>.
         </p>
     </li>
     <li>
@@ -136,7 +136,7 @@ permalink: /:collection/:path
     </li>
 </ul>
 
-<p>Now click the <strong>Analyze</strong> button. Hang tight &mdash; the results will be displayed in a few seconds...</p>
+<p>Now click the <strong>Analyze</strong> button. Hang tight, the results will be displayed in a few seconds...</p>
 
 <h2 id="App-Configuration">
     <a href="#Configuring-Your-Stack" class="headerlink" title="About your app Summary"></a>
@@ -147,7 +147,7 @@ permalink: /:collection/:path
 <p>
      <img src="/assets/rails/rails_about_your_app.png" alt="Rails Stack - analysis information">
 </p>
-<p>If there are any problems you can make changes and Reanalyze at this point. If necessary, you can also <a href="#">Add Environment Variables</a>.</p>
+<p>If there are any problems you can make changes and click <strong>Reanalyze my code</strong>. If necessary, you can also <a href="#">Add Environment Variables</a>.</p>
 
 <p>In App Configuration you can make changes to Stack configuration parameters.</p>
 
@@ -178,40 +178,40 @@ permalink: /:collection/:path
 </p>
 
 <div class="accordion">
-    <h4 class="accordion-toggle active">Amazon Web Services</h4>
-    <div class="accordion-content open">
+    <h4 class="accordion-toggle">Amazon Web Services</h4>
+    <div class="accordion-content">
         <ul>
             <li>
                 <p>
-                    <strong>Give this cloud key a name</strong> &ndash; This is to give you the option of deploying to multiple accounts with the same cloud provider. If you only have 1 account you can leave it as default.
+                    <strong>Give this cloud key a name</strong> &mdash; This is to give you the option of deploying to multiple AWS accounts. If you are deploying to a single account only, you can leave it as default.
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>AWS Access key ID</strong>  &ndash; You get this info from your AWS account Dashboard.
+                    <strong>AWS Access key ID</strong>  &mdash; You get this info from your AWS account Dashboard.
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>AWS Secret Access Key</strong>  &ndash; You get this info from your AWS account Dashboard.
+                    <strong>AWS Secret Access Key</strong>  &mdash; You get this info from your AWS account dashboard, when you create your AWS account.
                 </p>
             </li>
         </ul>
-        <p>Once you've added your Cloud Provider Credentials you need to choose the following: </p>
+        <p>Once you've added your AWS Cloud credentials you need to choose the following:</p>
         <ul>
             <li>
                 <p>
-                    <strong>Server Region</strong>  &ndash; For example <em>US East (Northern Virginia)</em>, <em>Europe (London)</em>
+                    <strong>Server Region</strong>  &mdash; For example <em>US East (Northern Virginia)</em>, <em>Europe (London)</em>
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>Server Size</strong>  &ndash; For example <em>Compute optimized (C4.large)</em>
+                    <strong>Server Size</strong>  &mdash; For example <em>Compute optimized (C4.large)</em>
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>AWS platform</strong>  &ndash; EC2 Classic or EC2-VPC (<a target="_blank" href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-vpc.html">Learn more about AWS Platforms</a>)
+                    <strong>AWS platform</strong>  &mdash; EC2 Classic or EC2-VPC (<a target="_blank" href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-vpc.html">Learn more about AWS Platforms</a>)
                 </p>
             </li>
         </ul>
@@ -225,57 +225,59 @@ permalink: /:collection/:path
         <ul>
             <li>
                 <p>
-                    <strong>GCE Client Email</strong> &ndash; You get this info from your GCE account Dashboard.
+                    <strong>GCE Client Email</strong> &mdash; You get this info from your GCE account Dashboard. Under <em>Service Accounts</em> &rarr; <em>API's</em> &rarr; <em>Credentials</em>
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>GCE Project Id</strong> &ndash; You get this info from your GCE Dashboard.
+                    <strong>GCE Project Id</strong> &mdash; You get this info from your GCE Dashboard. It's located at the top of the <em>Overview</em> page.
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>GCE Key</strong> &ndash; This is a key file you need to upload, you get this from your GCE Dashboard.
+                    <strong>GCE Key</strong> &mdash; This is a JSON file you need to upload, you get this from your GCE Dashboard.
                 </p>
             </li>
         </ul>
     </div>
+
     <h4 class="accordion-toggle">Microsoft Azure</h4>
     <div class="accordion-content">
         <ul>
             <li>
                 <p>
-                    <strong>Azure Subscription ID</strong> &ndash; You get this info from your Azure cloud Dashboard.
+                    <strong>Azure Subscription ID</strong> &mdash; You get this info from your Azure cloud Dashboard.
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>Client ID</strong> &ndash; You get this info from your Azure Dashboard.
+                    <strong>Client ID</strong> &mdash; You get this info from your Azure Dashboard.
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>Client Secret</strong> &ndash; You get this info from your Azure Dashboard.
+                    <strong>Client Secret</strong> &mdash; You get this info from your Azure Dashboard.
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>Tenant ID</strong> &ndash; You get this info from your Azure Dashboard.
+                    <strong>Tenant ID</strong> &mdash; You get this info from your Azure Dashboard.
                 </p>
             </li>
         </ul>
     </div>
+
     <h4 class="accordion-toggle">DigitalOcean</h4>
     <div class="accordion-content">
         <ul>
             <li>
                 <p>
-                    <strong>Give this cloud key a name</strong> &ndash; this is to give you the option of deploying to multiple accounts with the same cloud provider. If you only have 1 account you can leave it as default.
+                    <strong>Give this cloud key a name</strong> &mdash; this is to give you the option of deploying to multiple accounts with the same cloud provider. If you only have 1 account you can leave it as default.
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>Click Add Cloud</strong>  &ndash; this will redirect you to the DigitalOcean dashboard. You'll need to login to DigitalOcean to finish adding the key.
+                    <strong>Click Add Cloud</strong>  &mdash; this will redirect you to the DigitalOcean dashboard. You'll need to login to DigitalOcean to finish adding the key.
                 </p>
             </li>
         </ul>
@@ -283,12 +285,12 @@ permalink: /:collection/:path
         <ul>
             <li>
                 <p>
-                    <strong>Server Region</strong>  &ndash; For example <em>Amsterdam 2, Netherlands</em>
+                    <strong>Server Region</strong>  &mdash; For example <em>Amsterdam 2, Netherlands</em>
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>Server Size</strong>  &ndash; For example <em>2GB - 2 CPU (Standard)</em>
+                    <strong>Server Size</strong>  &mdash; For example <em>2GB - 2 CPU (Standard)</em>
                 </p>
             </li>
         </ul>
@@ -296,27 +298,44 @@ permalink: /:collection/:path
             <img src="/assets/rails/rails_deploying_to_do.png" alt="Deploying to DigitalOcean Servers">
         </p>
     </div>
+
     <h4 class="accordion-toggle">Linode</h4>
     <div class="accordion-content">
         <ul>
             <li>
                 <p>
-                    <strong>Give this cloud key a name</strong> &ndash; this is to give you the option of deploying to multiple accounts with the same cloud provider. If you only have 1 account you can leave it as default.
+                    <strong>Give this cloud key a name</strong> &mdash; this is to give you the option of deploying to multiple Linode different Linode accounts. If you only have one account you can leave it as default.
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>Linode API Key</strong>  &ndash; You get this information from your Linode Cloud Dashboard.
+                    <strong>Linode API Key</strong>  &mdash; You get this information from your Linode Cloud Dashboard. <em>my profile</em> &rarr; <em>API Keys</em> tab.
                 </p>
             </li>
         </ul>
+        <p>Once the Linode key is validated you'll need to choose your deployment options:</p>
+        <ul>
+            <li>
+                <p>
+                    <strong>Server Region</strong>  &mdash; For example <em>Dallas, TX, USA</em>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Server Size</strong>  &mdash; For example <em>Linode 2048</em>
+                </p>
+            </li>
+        </ul>
+        <p>
+            <img src="/assets/rails/rails_deploying_to_linode.png" alt="Deploying to DigitalOcean Servers">
+        </p>
     </div>
     <h4 class="accordion-toggle">Packet</h4>
     <div class="accordion-content">
         <ul>
             <li>
                 <p>
-                    <strong>Packet API Key</strong> &ndash; You get this info from your Packet Cloud Dashboard.
+                    <strong>Packet API Key</strong> &mdash; You get this info from your Packet Cloud Dashboard.
                 </p>
             </li>
         </ul>
@@ -326,17 +345,17 @@ permalink: /:collection/:path
         <ul>
             <li>
                 <p>
-                    <strong>Rackspace Username</strong> &ndash; You get this info from your Rackspace Cloud Dashboard.
+                    <strong>Rackspace Username</strong> &mdash; You get this info from your Rackspace Cloud Dashboard.
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>Rackspace API Key</strong> &ndash; You get this info from your Rackspace Cloud Dashboard.
+                    <strong>Rackspace API Key</strong> &mdash; You get this info from your Rackspace Cloud Dashboard.
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>Rackspace user base </strong> &ndash; Select either UK or US.
+                    <strong>Rackspace user base </strong> &mdash; Select either UK or US.
                 </p>
             </li>
         </ul>
@@ -346,12 +365,12 @@ permalink: /:collection/:path
         <ul>
             <li>
                 <p>
-                    <strong>CloudA Username</strong> &ndash; You get this info from your CloudA Dashboard.
+                    <strong>CloudA Username</strong> &mdash; You get this info from your CloudA Dashboard.
                 </p>
             </li>
             <li>
                 <p>
-                    <strong>CloudA API Key</strong> &ndash; You get this info from your CloudA Dashboard.
+                    <strong>CloudA API Key</strong> &mdash; You get this info from your CloudA Dashboard.
                 </p>
             </li>
         </ul>
@@ -361,11 +380,11 @@ permalink: /:collection/:path
         <ul>
             <li>
                 <p>
-                    <strong>Registered Servers</strong> &ndash; First you need to Register your server as a deployment target with Cloud 66. Click on the <em>Add Registered Servers</em> link. You can also navigate to the Registered Servers page from the right hand menu of the Cloud 66 Stacks Dashboard.
+                    <strong>Registered Servers</strong> &mdash; First you need to Register your server as a deployment target with Cloud 66. Click on the <em>Add Registered Servers</em> link. You can also navigate to the Registered Servers page from the right hand menu of the Cloud 66 Stacks Dashboard.
                 </p>
             </li>
             <li>
-                <strong>Copy &amp; run the command</strong> &ndash; You need to run the provided command in the terminal on your server. Once this has successfully completed you can then approve the server and it will be available as a deployment target.
+                <strong>Copy &amp; run the command</strong> &mdash; Run the provided command in the terminal on your server. Once this has successfully completed you can then approve the server and it will become available as a Cloud 66 deployment target.
             </li>
         </ul>
     </div>
