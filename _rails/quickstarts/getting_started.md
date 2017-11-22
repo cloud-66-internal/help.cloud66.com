@@ -25,30 +25,7 @@ permalink: /:collection/:path
     </li>
 </ul>
 
-<div class="Tabs">
-    <nav>
-      <ul class="TabMini js_tabs">
-        <li class="TabMini-item active">
-          <a href="#cloud_content" class="TabMini-link">
-            Using a Cloud Provider
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#no_cloud_content" class="TabMini-link">
-            Using Your Own Server
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <section id="cloud_content" class="Tabs-content js_tab_content">
-        <p>An account with your cloud provider of choice. Cloud 66 supports {% include general/supported_clouds.html %}</p>
-    </section>
-
-    <section id="no_cloud_content" class="Tabs-content js_tab_content is-hidden">
-        <p>An SSH key and IP address for your server. Your server should run {% include general/supported_os.html %} and allow SSH connection on port 22 from Cloud 66 public IP addresses: {% include general/public_ips.html %}</p>
-    </section>
-</div>
+{% include general/cloud_provider_or_own_server_tabs.html %}
 
 <p>
     Lets get started &mdash; Log into Cloud 66 website, if you're a new user you'll see four panels on your Apps Dashboard. In the Rails panel click the <strong>Start Trial</strong>.

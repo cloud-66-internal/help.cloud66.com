@@ -25,6 +25,13 @@
    word-wrap: break-word !important;
  }
 
+ .u-textSmall {
+    font-size: 14px;
+ }
+  .u-textXsmall {
+    font-size: 13px;
+ }
+
  /**
   * Horizontal text alignment
   */
