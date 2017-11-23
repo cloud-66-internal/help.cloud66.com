@@ -146,7 +146,7 @@ permalink: /:collection/:path
         <img src="/assets/maestro/maestro_cloud_region.png" alt="Choose a cloud and region">
     </div>
     <div class="Grid-cell">
-        <p class="u-textSmall">Now we need to choose a cloud provider for the deployment. We'll use <em>DigitalOcean</em> and deploy the stack to the <em>London, UK</em>region.</p>
+        <p class="u-textSmall">Now we need to choose a cloud provider for the deployment. We'll use <em>DigitalOcean</em> and deploy the stack to the <em>London, UK</em> region.</p>
         <p class="u-textSmall">
             You can also deploy to your own servers, first <a href="http://help.cloud66.com/deployment/registered-servers">add them as registered servers</a>.
         </p>
@@ -163,7 +163,7 @@ permalink: /:collection/:path
         <p>The server size can be set by clicking on the cog icon at the top right of each server.</p>
     </div>
     <div class="Grid-cell">
-        <img style="margin-top: 1.2em" width="250" src="/assets/maestro/maestro_configure_servers.png" alt="Configure Server Size">
+        <img style="margin-top: 1.2em" width="230" src="/assets/maestro/maestro_configure_servers.png" alt="Configure Server Size">
     </div>
 </div>
 
