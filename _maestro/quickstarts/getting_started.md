@@ -9,7 +9,7 @@ permalink: /:collection/:path
 ---
 
 <p class="lead">
-    Maestro is a full container management service. Once your images are ready we'll take care of deploying and managing your containers.
+    Maestro is a full container management service. Once your images are ready we'll take care of deploying and managing your containers and infrastructure (servers, load balancers, etc).
 </p>
 
 <h2 id="What-youll-need">
@@ -38,7 +38,7 @@ permalink: /:collection/:path
     Lets Get Started
 </h2>
 
-<p>This guide assumes that you already have container images that you need to deploy. If you need to learn how to build images or pull existing images from a repo please  check out <a href="/skycap/quickstarts/getting_started">Getting started with Skycap</a> and then return to this guide.</p>
+<p>This guide assumes that you already have container images that you want to deploy. If you need to learn how to build images or pull existing images from a repo please read <a href="/skycap/quickstarts/getting_started">Getting started with Skycap</a>.</p>
 
 
 
@@ -46,16 +46,21 @@ permalink: /:collection/:path
     <a href="#deployment-setup" class="headerlink" title="Get Started"></a>
     Deployment Setup
 </h2>
+<p>To get started with your deployment&mdash;drill down to your app's overview page and click <em>Setup a Deployment</em>.</p>
+<p>
+    <img class="ContentImage" src="/assets/maestro/maestro_setup_deployment.png" alt="Start a new Maestro Deployment">
+</p>
 
-<p>The first step in the deployment process is to select an environment for the application you're about to deploy.</p>
+
+<p>The first step involves <em>choosing an environment</em> for your application.</p>
 
 <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
     <div class="Grid-cell">
-        <img src="/assets/maestro/maestro_deployment_setup.png" alt="Start a new Maestro Deployment">
+        <img class="ContentImage" src="/assets/maestro/maestro_deployment_setup.png" alt="Select an environment for your new Maestro Deployment">
     </div>
     <div class="Grid-cell">
         <p>Please choose from the standard list of environments:</p>
-        <ul class="u-textSmall">
+        <ul>
           <li>Development</li>
           <li>QA</li>
           <li>Staging</li>
@@ -64,4 +69,130 @@ permalink: /:collection/:path
     </div>
 </div>
 
+<h2 id="configuring-services">
+    <a href="#deployment-setup" class="headerlink" title="Configuring Services"></a>
+    Configuring Services
+</h2>
 
+<p>In the example below the application is composed of a single Rails service. This is a web app so we need to configure the Rails service to handle web traffic.</p>
+<p>
+    <img class="ContentImage" src="/assets/maestro/maestro_configure_service_networking.png" alt="Click the connector to configure networking">
+</p>
+<p>At the moment <strong>0 services</strong> are connected to the Internet. We need to change that so <em>click on the plug icon circled in red</em>.</p>
+
+<h2 id="container-network-configuration">
+    <a href="#container-network-configuration" class="headerlink" title="Configuring Services"></a>
+    Container Network Configuration
+</h2>
+
+<p>The Rails service will run inside a container, we need to configure the container to respond to web traffic. A standard web server listens on port 80 for HTTP traffic and 443 for HTTPS traffic.</p>
+
+<p>The Rails app listens to port 3000 so we should map the container port 3000 to the public Internet ports 80 and 443.</p>
+
+<p>To accomplish this we enter the following information:</p>
+<ul>
+    <li><strong>Container Port</strong>:  3000</li>
+    <li><strong>Public Internet Port</strong>: http:80, https:443</li>
+</ul>
+
+<div style="overflow: hidden; border: 1px solid #ddd; border-radius: 4px; width: 556px; height: 374px; padding-top: 0.5em; margin-top:2em; margin-bottom: 2em">
+    <img alt="Configuring docker container and public ports" src="/assets/maestro/maestro_configure_container_ports_animated.gif">
+</div>
+
+<p>Containers can also serve non HTTP traffic. TCP and UDP protocols are also supported. <a href="http://help.cloud66.com/building-your-stack/container-port-mapping">Learn more about advanced Container Port Mapping</a></p>
+
+<h2 id="adding-data-sources">
+    <a href="#adding-data-sources" class="headerlink" title="Adding Data Sources"></a>
+    Adding Data Sources
+</h2>
+
+<p>The Rails application also needs a database. This is a production app so we'll deploy the database to a separate MySQL server.
+
+<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl" style="margin-bottom: 2em;">
+    <div class="Grid-cell">
+        <img class="ContentImage" src="/assets/maestro/maestro_add_data_source.png" alt="Add a new database server to your stack">
+    </div>
+    <div class="Grid-cell">
+        <h4>Add another server</h4>
+        <p class="u-textSmall">Click the <em>Add another server</em> button and a new data source server will appear above.</p>
+        <p class="u-textSmall">Next click the <em>Add data source</em> link.</p>
+    </div>
+</div>
+
+<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
+    <div class="Grid-cell">
+        <div style="border: 1px solid #ddd; border-radius: 4px; overflow: hidden;">
+            <img src="/assets/maestro/maestro_select_data_sources.png" alt="Adding data sources to your stack">
+        </div>
+    </div>
+    <div class="Grid-cell">
+        <h4>Adding Data Sources</h4>
+        <p class="u-textSmall">Select the data source you need to install on this server. In this case <em>select MySQL</em>.</p>
+        <p class="u-textSmall">PostgreSQL, MongoDB, Redis, Elasticsearch, RabbitMQ, GlusterFQ, InfluxDB are all supported as data sources.</p>
+    </div>
+</div>
+
+
+<p>Now the Rails app is configured to run in a container and we've setup a separate MySQL database server. All that remains is to decide what cloud provider to use and what server size and region we should deploy to.</p>
+
+<h2 id="cloud">
+    <a href="#cloud" class="headerlink" title="Choosing a Cloud"></a>
+    Choosing a Cloud
+</h2>
+
+
+<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
+    <div class="Grid-cell">
+        <img src="/assets/maestro/maestro_cloud_region.png" alt="Choose a cloud and region">
+    </div>
+    <div class="Grid-cell">
+        <p class="u-textSmall">Now we need to choose a cloud provider for the deployment. We'll use <em>DigitalOcean</em> and deploy the stack to the <em>London, UK</em>region.</p>
+        <p class="u-textSmall">
+            You can also deploy to your own servers, first <a href="http://help.cloud66.com/deployment/registered-servers">add them as registered servers</a>.
+        </p>
+    </div>
+</div>
+
+<h2 id="configuring-servers">
+    <a href="#configuring-servers" class="headerlink" title="Configuring Servers"></a>
+    Configuring Server Size
+</h2>
+
+<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
+    <div class="Grid-cell">
+        <p>The server size can be set by clicking on the cog icon at the top right of each server.</p>
+    </div>
+    <div class="Grid-cell">
+        <img style="margin-top: 1.2em" width="250" src="/assets/maestro/maestro_configure_servers.png" alt="Configure Server Size">
+    </div>
+</div>
+
+<div style="overflow: hidden; border: 1px solid #ddd; border-radius: 4px; margin: 2em 0; max-width: 500px">
+    <img src="/assets/maestro/maestro_server_size_modal.png" alt="Configure Server Size">
+</div>
+
+<h2 id="deployment">
+    <a href="#deployment" class="headerlink" title="Deployment"></a>
+    Deployment
+</h2>
+
+<p>Now everything is ready to go, just hit the <em>Deploy Stack</em> button. During the build and deployment process you can view the log to see what's happening behind the scenes.</p>
+
+<p>
+    <img src="/assets/maestro/maestro_deployment.gif" alt="Deploying your application">
+</p>
+
+<h2 id="advanced">
+    Advanced Features
+</h2>
+
+<p>Information that defines how your application is deployed is accessible from <em>manifest.yml</em>. You can edit this file directly if you need to access advanced deployment features. For example advanced configuration of Cross-Origin Resource Sharing or Amazon Virtual Private Cloud and more.</p>
+
+<ul>
+    <li>
+        <p><strong><a href="https://cloud66-help.helpscoutdocs.com/article/131-building-your-manifest-file">Manifest.yml documentation</a></strong> &mdash; including advanced configuration examples.</p>
+    </li>
+    <li>
+        <p><strong><a href="https://help.cloud66.com/article/140-container-port-mapping">Container Port Mapping</a></strong> &mdash; learn more about advanced port mapping, including Non-HTTP ports (TCP and UDP)</p>
+    </li>
+</ul>
