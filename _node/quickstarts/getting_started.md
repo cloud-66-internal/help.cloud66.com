@@ -94,7 +94,7 @@ permalink: /:collection/:path
 <p>
     Now you need to tell us a bit of info about your app, then we can deploy, Please fill in the following fields:
 <p>
-    <img src="/assets/node/node_about_app.png" alt="Fill in the information about your app: Git repo, name and environment">
+    <img src="/assets/node/node_about_app.png" width="400" alt="Fill in the information about your app: Git repo, name and environment">
 </p>
 <ul>
     <li>

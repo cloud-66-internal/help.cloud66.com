@@ -176,7 +176,11 @@ permalink: /:collection/:path
     Deployment
 </h2>
 
-<p>Now everything is ready to go, just hit the <em>Deploy Stack</em> button. During the build and deployment process you can view the log to see what's happening behind the scenes.</p>
+<p>Now everything is ready to go, just hit the <em>Deploy Stack</em> button.</p>
+
+<p>If this is your first deployment you'll be prompted to enter your cloud key credentials, once you've added these the deployment will begin.</p>
+
+<p>During the build and deployment process you can view the log to see what's happening behind the scenes.</p>
 
 <p>
     <img src="/assets/maestro/maestro_deployment.gif" alt="Deploying your application">
