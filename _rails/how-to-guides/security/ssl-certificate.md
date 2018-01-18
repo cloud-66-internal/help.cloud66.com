@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Certificate signing request", "Important", "Intermediate certificates", "Multi-domain certificates", "Separate domains with different certificates", "main domain" ]
 layout: post
 template: one-col
 title: SSL Certificate

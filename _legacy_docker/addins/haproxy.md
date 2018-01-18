@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About configuring HAProxy", "View HAProxy stats", "Configure HAProxy to use internal IPs", "Specify an HAProxy test interval", "Change the HAProxy endpoint", "About configuring HAProxy with CustomConfig", "Config variables ", "Commit HAProxy CustomConfig", "Warning", "Configuring HAProxy for maintenance mode" ]
 layout: post
 template: one-col
 title: HAProxy

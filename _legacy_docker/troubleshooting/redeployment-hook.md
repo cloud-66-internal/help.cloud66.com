@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Redeployment Hook" ]
 layout: post
 template: one-col
 title: Redeployment Hook

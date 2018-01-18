@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About using team accounts", "Account user roles and permissions", "Add a team member", "Switch organizations", "Leave a team", "Add a role", "Pricing", "* For each additional user." ]
 layout: post
 template: one-col
 title: Team Accounts

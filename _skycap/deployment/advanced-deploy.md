@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is a manifest file?", "What is service configuration?" ]
 layout: post
 template: one-col
 title: Advanced Deploy

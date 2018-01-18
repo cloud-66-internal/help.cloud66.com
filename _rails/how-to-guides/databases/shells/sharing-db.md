@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Important" ]
 layout: post
 template: one-col
 title: Sharing a database between stacks

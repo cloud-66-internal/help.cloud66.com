@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "How to connect to your MySQL database" ]
 layout: post
 template: one-col
 title: Customize your MySQL Configuration with Docker

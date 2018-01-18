@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "How to connect to your PostgreSQL database" ]
 layout: post
 template: one-col
 title: Customize your MongoDB Configuration with Docker

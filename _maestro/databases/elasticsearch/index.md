@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About deploying Elasticsearch", "Features", "Database deployment types", "How to connect to your Elasticsearch database", "Environment Variables", "Customize your database configuration", "About Scaling your Elasticsearch Cluster", "General Recommendations" ]
 layout: post
 template: one-col
 title: Elasticsearch with Cloud 66 Maestro

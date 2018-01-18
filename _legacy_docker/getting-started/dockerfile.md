@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is Dockerfile", "How cloud 66 uses the Dockerfile" ]
 layout: post
 template: one-col
 title: Dockerfile

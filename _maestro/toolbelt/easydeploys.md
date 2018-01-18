@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "EasyDeploy commands", "Usage", "Parameters", "Example" ]
 layout: post
 template: one-col
 title: Toolbelt EasyDeploy commands

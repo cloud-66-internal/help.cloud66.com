@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Orchestration engine", "Deploying your stack", "Configuration", "Health", "Pre-start signal", "Pre-stop sequence", "Requires", "Restart on deploy", "Stop grace", "Post-start command", "Pre-stop command" ]
 layout: post
 template: one-col
 title: Service life-cycle management

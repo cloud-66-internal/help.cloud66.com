@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About using Microsoft Azure cloud", "Generating a management certificate", "Using your management certificate", "Notice" ]
 layout: post
 template: one-col
 title: Microsoft Azure cloud

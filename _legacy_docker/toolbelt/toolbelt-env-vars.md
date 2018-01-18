@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Environment variable setup", "List environment variables", "Usage", "Parameters", "Example", "Set environment variables", "Usage", "Parameters", "Example" ]
 layout: post
 template: one-col
 title: Toolbelt environment variable management

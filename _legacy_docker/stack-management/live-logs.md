@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is LiveLogs?", "How does LiveLogs work?", "How do I use LiveLogs?", "How do I add additional logs to LiveLogs?", "Note" ]
 layout: post
 template: one-col
 title: Live-Logs

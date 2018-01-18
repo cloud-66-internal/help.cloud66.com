@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Under-powered server sizes (not recommended)", "Amazon Web Services", "Cloud-A", "DigitalOcean", "Google Compute Engine", "Microsoft Azure", "Rackspace" ]
 layout: post
 template: one-col
 title: Choosing Server Size

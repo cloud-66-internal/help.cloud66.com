@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "User integration API", "Redirecting to Partner's website", "Provisioning", "Failure", "Success", "Single Sign-on (SSO)", "Step 1 - Call Cloud 66 SSO endpoint", "Step 2 - Cloud 66 Authenticates", "Step 3 - Redirect back to partner", "Using OAuth2" ]
 layout: post
 template: one-col
 title: Partner Integration

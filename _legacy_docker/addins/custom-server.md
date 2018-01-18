@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is the custom server add-in?", "Add a custom server" ]
 layout: post
 template: one-col
 title: Custom Server

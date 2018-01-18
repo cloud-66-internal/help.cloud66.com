@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About receiving stack notifications", "Viewing your stack notifications", "Setting up your notification types", "Browser notifications", "Emails", "Hipchat", "iOS", "Slack", "Webhooks" ]
 layout: post
 template: one-col
 title: Stack notifications

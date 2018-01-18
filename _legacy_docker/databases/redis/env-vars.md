@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Environment Variables" ]
 layout: post
 template: one-col
 title: Environment Variables for Redis with Docker

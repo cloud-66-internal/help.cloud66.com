@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Usage", "How it works", "Important", "Test your WebSocket servers" ]
 layout: post
 template: one-col
 title: Configuring HAProxy for WebSocket

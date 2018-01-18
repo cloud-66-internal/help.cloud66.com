@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is a stack?", "Stack components", "Load balancer (optional)", "Web servers", "Background workers (optional)", "Database servers (optional)", "Operating system", "Cloud vendor", "Stack environments", "What is StackScore?", "Suggestion", "Build a stack", "Edit stack properties", "Clone a stack", "Delete a stack", "Important" ]
 layout: post
 template: one-col
 title: Stack Definition

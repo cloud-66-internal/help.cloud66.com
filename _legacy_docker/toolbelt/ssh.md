@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "SSHing to your server", "Usage", "Parameters", "Example" ]
 layout: post
 template: one-col
 title: Toolbelt SSH to servers

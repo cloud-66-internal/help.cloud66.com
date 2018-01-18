@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is RabbitMQ?", "Add RabbitMQ" ]
 layout: post
 template: one-col
 title: RabbitMQß

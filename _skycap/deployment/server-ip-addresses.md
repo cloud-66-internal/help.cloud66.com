@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Cloud 66 Agent", "Important", "New IP addresses", "Cloud 66 hostnames", "Finding your Cloud 66 hostname" ]
 layout: post
 template: one-col
 title: Server IP addresses and hostnames

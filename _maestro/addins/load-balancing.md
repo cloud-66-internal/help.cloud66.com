@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is load balancing?", "Add a load balancer", "Balance the load per service" ]
 layout: post
 template: one-col
 title: Load Balancing

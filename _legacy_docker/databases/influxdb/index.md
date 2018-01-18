@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About deploying InfluxDB", "Features", "Database deployment types", "How to connect to your InfluxDB database", "Environment Variables", "Customize your database configuration" ]
 layout: post
 template: one-col
 title: InfluxDB with Cloud 66 Docker

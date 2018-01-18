@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Notice" ]
 layout: post
 template: one-col
 title: Memcached

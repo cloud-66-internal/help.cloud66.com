@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "How it works", "Your referral code" ]
 layout: post
 template: one-col
 title: Referral Program

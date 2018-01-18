@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About using Google Compute Engine cloud", "Generate GCE API keys", "Add GCE keys to a stack", "Notice", "External links" ]
 layout: post
 template: one-col
 title: Google Compute Engine cloud

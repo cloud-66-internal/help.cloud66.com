@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Overview", "Server Meta Data Service" ]
 layout: post
 template: one-col
 title: Server Meta Data Service

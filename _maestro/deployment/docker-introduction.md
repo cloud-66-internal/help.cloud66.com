@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Introduction to Docker", "Cloud 66 Docker support", "Ready?" ]
 layout: post
 template: one-col
 title: Introduction to Docker deployments

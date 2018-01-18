@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is two-step verification? ", "Enable two-step verification", "Add a recovery phone number" ]
 layout: post
 template: one-col
 title: Two-step Verification

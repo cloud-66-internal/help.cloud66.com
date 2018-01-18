@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Overview", "Ports inside and outside containers", "Networking Ports" ]
 layout: post
 template: one-col
 title: Service Networking

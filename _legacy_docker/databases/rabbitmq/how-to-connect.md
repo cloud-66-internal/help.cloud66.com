@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "How to connect to your RabbitMQ database" ]
 layout: post
 template: one-col
 title: Customize your RabbitMQ Configuration with Docker

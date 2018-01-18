@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About deployment gateways", "Important", "How to deploy your stack behind the gateway server", "Accessing your servers behind the gateway server" ]
 layout: post
 template: one-col
 title: Deployment Gateway

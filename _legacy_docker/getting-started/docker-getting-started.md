@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Overview & Prerequisites", "Building Images", "Adding Docker Services", "Advanced Features" ]
 layout: post
 template: one-col
 title: Docker Getting Started (Building Images)

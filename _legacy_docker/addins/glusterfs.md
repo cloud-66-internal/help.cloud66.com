@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is GlusterFS?", "Why would I need GlusterFS?", "How do I add GlusterFS to my stack?", "How can I use GlusterFS in my application?", "What about my containers?", "Fine grained access control for your data", "Accessing your GlusterFS servers" ]
 layout: post
 template: one-col
 title: Glusterfs

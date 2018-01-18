@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About using Linode cloud", "Generate a Linode API key", "Add Linode key to a stack", "Notice", "External links" ]
 layout: post
 template: one-col
 title: Linode cloud

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "How to connect to your InfluxDB database" ]
 layout: post
 template: one-col
 title: Customize your InfluxDB Configuration with Docker

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About using Cloud-A cloud", "Adding your Cloud-A credentials", "Notice" ]
 layout: post
 template: one-col
 title: Cloud-A cloud

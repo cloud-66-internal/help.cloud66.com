@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is a manifest file?", "Which environment?", "Which application?", "Docker", "ElasticSearch", "Gateway", "Note", "GlusterFS", "Note", "Note", "Note", "Memcached", "MongoDB", "MySQL", "Nginx", "CORS configuration", "PostgreSQL", "PostGIS", "Rails", "Redis", "rack", "Sinatra", "Load balancers", "AWS load balancer", "GCE load balancer", "HAProxy", "Linode Nodebalancer", "Rackspace load balancer", "CloudA load balancer", "Which server?", "Important", "Deploy to your own server", "Shared Servers", "External Servers", "Important", "Specify environment variables", "Processes", "Specify additional LiveLog files", "Test experimental features" ]
 layout: post
 template: one-col
 title: Building your manifest file

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Overview", "What is Cloud 66 Account Protection?", "Account Protection Alerts" ]
 layout: post
 template: one-col
 title: Account Protection

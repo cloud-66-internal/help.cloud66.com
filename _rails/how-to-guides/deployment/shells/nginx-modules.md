@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Introduction", "Passenger", "Custom Rack Servers" ]
 layout: post
 template: one-col
 title: Add modules to Nginx

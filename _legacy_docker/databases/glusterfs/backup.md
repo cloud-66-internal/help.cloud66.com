@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is the database backup add-in?", "Backup types", "Managed backups", "Unmanaged backups", "Backup format", "Binary", "Text", "Backup schedule", "Compression", "Exclude tables", "Install on replica", "Downloading backup", "Cloud 66 toolbelt", "Download script", "Pricing" ]
 layout: post
 template: one-col
 title: GlusterFS Backup

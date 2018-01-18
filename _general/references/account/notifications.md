@@ -1,6 +1,4 @@
----
-menuheaders: [ "About receiving account notifications", "Viewing your account notifications", "Setting up your notification types", "Browser notifications", "Emails", "Hipchat", "iOS", "Slack", "Webhooks" ]
-
+--- 
 layout: post
 template: one-col
 title: Account Notifications

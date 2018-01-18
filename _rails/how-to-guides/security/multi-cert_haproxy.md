@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "1. Concatanate each certification's files to one file", "2. Upload them to /tmp of your server", "3. Login to your HAproxy server", "4. Copy the files to certification files from /tmp to their directory", "5. Change the settings in your HAproxy config", "Note" ]
 layout: post
 template: one-col
 title: Configuring Multi Certificate for HAProxy

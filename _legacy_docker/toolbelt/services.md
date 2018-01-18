@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Listing services", "Usage", "Parameters", "Example", "Scaling services", "Usage", "Parameters", "Example", "Stopping services", "Usage", "Parameters", "Example", "Restarting services", "Usage", "Parameters", "Example", "Getting service information", "Usage", "Parameters", "Example", "Result" ]
 layout: post
 template: one-col
 title: Toolbelt service management

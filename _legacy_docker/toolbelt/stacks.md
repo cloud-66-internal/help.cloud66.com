@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "List your stacks", "Usage", "Parameters", "Examples", "Create a new Docker stack", "Usage", "Parameters", "Examples", "Redeploy your stack", "Usage", "Parameters", "Examples", "Restart your stack", "Usage", "Parameters", "Example", "Reboot your stack", "Usage", "Parameters", "Example", "Clear caches", "Usage", "Parameters", "Example", "Listen to your deployment logs", "Usage", "Parameters", "Example", "Manage your configuration files", "Usage", "Parameters", "Show help pages for a command", "Usage", "Parameters" ]
 layout: post
 template: one-col
 title: Toolbelt stack management

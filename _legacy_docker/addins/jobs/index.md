@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Overview", "Run a job", "Variety of jobs", "Using parameters", "Notation", "Default values", "Pass parameters to job" ]
 layout: post
 template: one-col
 title: Jobs

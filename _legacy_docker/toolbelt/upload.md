@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Upload", "Usage", "Parameters", "Example" ]
 layout: post
 template: one-col
 title: Toolbelt upload command

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is parallel deployment?", "Note", "Configure parallel deployment" ]
 layout: post
 template: one-col
 title: Parallel deployments

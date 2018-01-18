@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About deploying databases", "Database deployment types", "No database (external)", "Local database", "Dedicated database", "Upgrading your database", "Control your Rails database migrations", "Customize your database configuration", "Warning", "Database customization variables", "&#42;It is 0 for standalone servers, 1 for master servers and a number greater than 1 for slave servers" ]
 layout: post
 template: one-col
 title: Database management

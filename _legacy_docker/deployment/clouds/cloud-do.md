@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About using DigitalOcean cloud", "Authorise Cloud 66 to your DigitalOcean", "Notice", "External Links" ]
 layout: post
 template: one-col
 title: DigitalOcean cloud

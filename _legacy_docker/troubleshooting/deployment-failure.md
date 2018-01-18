@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Cap deploy failed" ]
 layout: post
 template: one-col
 title: Deployment failure

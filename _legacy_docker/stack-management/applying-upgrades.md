@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Cloud66 Update Packages Policy", "Tip:", "Upgrade package types", "Security updates", "Ubuntu", "Ruby", "Scaling up", "In-place upgrades", "Tip / Warning!", "Building a new stack", "Rails", "Passenger", "Docker and Weave", "About manual upgrades" ]
 layout: post
 template: one-col
 title: Applying upgrades

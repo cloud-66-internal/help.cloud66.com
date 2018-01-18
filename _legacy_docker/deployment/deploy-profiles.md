@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What are deployment profiles?", "Option for deployments", "Build / Publish Services", "Deployment Method", "Upgrades" ]
 layout: post
 template: one-col
 title: Deployment Profiles

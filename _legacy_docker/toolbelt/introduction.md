@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is toolbelt?", "Install the toolbelt?", "Initialize the toolbelt", "Advanced", "Note", "View toolbelt information", "Multiple Account Support", "Update the toolbelt", "Toolbelt shortcuts", "Contributing" ]
 layout: post
 template: one-col
 title: Toolbelt introduction

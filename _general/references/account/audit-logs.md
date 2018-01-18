@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "An Audit log for all account activities", "Search Audit Log", "Accessing Audit Logs" ]
 layout: post
 template: one-col
 title: Audit Logs

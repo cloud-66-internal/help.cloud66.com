@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What are reserved tags?", "Reserved tags" ]
 layout: post
 template: one-col
 title: Cloud 66 reserved tags

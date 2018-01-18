@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is a manifest file?", "How can I use a manifest file?", "Manifest file examples", "Example 1: Specifying a Docker version", "Is my yaml valid?", "Need Help Building your first stack?", "Example 2: Change CORS settings", "What is CORS?", "Manifest file structure", "First level: Environment", "Second level: Application type", "Third Level (1): Configurations", "Third Level (2): Servers" ]
 layout: post
 template: one-col
 title: Getting started with manifest files

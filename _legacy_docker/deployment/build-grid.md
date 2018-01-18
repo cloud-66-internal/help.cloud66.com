@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is BuildGrid?", "How to use BuildGrid?", "Envoironment variables in BuildGrid", "Build and Publish" ]
 layout: post
 template: one-col
 title: Build Grid

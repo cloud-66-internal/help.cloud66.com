@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Cloud 66 now supports automatic SSL termination", "Amazon Elastic Load Balancer", "Important", "Rackspace" ]
 layout: post
 template: one-col
 title: Manually add an SSL certificate to a load balancer

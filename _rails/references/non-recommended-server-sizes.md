@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Under-powered server sizes (not recommended)", "Amazon Web Services", "Cloud-A", "DigitalOcean", "Google Compute Engine", "Microsoft Azure", "Rackspace", "We suggest using a server with at least 1GB of memory and 4 core" ]
 layout: post
 template: one-col
 title: Non-recommended server sizes

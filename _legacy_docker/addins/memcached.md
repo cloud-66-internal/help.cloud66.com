@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is Memcached?", "Add Memcached", "Customize Memcached", "Note", "Check Memcached" ]
 layout: post
 template: one-col
 title: Memcached

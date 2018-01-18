@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "How to connect to your Elasticsearch database" ]
 layout: post
 template: one-col
 title: Customize your Elasticsearch Configuration with Docker

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Troubleshooting a container that won't start", "Troubleshooting a container that has started" ]
 layout: post
 template: one-col
 title: Docker container troubleshooting

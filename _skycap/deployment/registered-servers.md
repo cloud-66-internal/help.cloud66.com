@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About registered servers", "Register a server", "Website", "Note", "Cloud 66 Toolbelt", "Requirements", "Some pointers" ]
 layout: post
 template: one-col
 title: Registered servers

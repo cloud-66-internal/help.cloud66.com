@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Cloud 66 toolbelt", "Full", "Example", "Manual shell access", "Troubleshooting" ]
 layout: post
 template: one-col
 title: SSH to your server

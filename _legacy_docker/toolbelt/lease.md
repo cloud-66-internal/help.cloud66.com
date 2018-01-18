@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Temporary lease", "Usage", "Parameters", "Example" ]
 layout: post
 template: one-col
 title: Toolbelt lease management

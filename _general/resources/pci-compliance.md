@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Is Cloud 66 PCI Compliant?", "Will my website/mobile backend/API be PCI compliant if I use Cloud 66?", "How does Cloud 66 access my servers?", "Where are the SSH keys stored on Cloud 66?", "What firewalls are installed on servers deployed by Cloud 66?", "How does Cloud 66 prevent access to customer servers in case of a breach?" ]
 layout: post
 template: one-col
 title: PCI DSS compliance guide

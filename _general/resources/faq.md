@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is Cloud 66?", "Where is it hosted?", "How can I use Cloud 66?", "What is a stack?", "Can I use Cloud 66 with my own servers?", "Why do you need my server SSH key?", "Are their any requirements for the user on my servers?", "Can I deploy multiple apps on a single server?", "How can I change my Git repository?", "Which Clouds are supported?", "Which distributions of Linux are supported?", "How much does it cost?", "Who pays for the physical servers?" ]
 layout: post
 template: one-col
 title: FAQs

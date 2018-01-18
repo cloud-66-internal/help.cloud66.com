@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is CustomConfig git?", "Getting Started with CustomConfig git", "Uploading your SSH public key", "Making changes to CustomConfig files", "CustomConfig git workflow", "Changes made in CustomConfig UI", "Changes made through CustomConfig git", "Automatic updates" ]
 layout: post
 template: one-col
 title: CustomConfig git

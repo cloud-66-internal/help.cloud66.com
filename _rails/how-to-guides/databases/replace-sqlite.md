@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Instructions", "MySQL", "PostgreSQL" ]
 layout: post
 template: one-col
 title: Replacing SQLite with MySQL or PostgreSQL

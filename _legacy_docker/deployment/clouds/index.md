@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About deploying to the cloud", "Cloud providers", "Notice", "Deploy to your cloud", "Edit or delete cloud keys" ]
 layout: post
 template: one-col
 title: Deploy to your cloud

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What are deploy hooks?", "Hook points", "Hook fields", "How to use deploy hooks", "Use a snippet deploy hook", "Use a command deploy hook", "Important", "Use an existing script deploy hook (Rails/Node stacks only)", "Use an inline script deploy hook" ]
 layout: post
 template: one-col
 title: Deploy hooks

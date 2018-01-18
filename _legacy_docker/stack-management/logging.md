@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About logging with Cloud 66", "Docker stacks", "Ruby stacks", "Web logs", "Background processes", "Other", "Log rotation" ]
 layout: post
 template: one-col
 title: Logging

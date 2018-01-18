@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About deploying SQLite", "Features", "Database deployment types", "How to connect to your SQLite database", "Environment Variables", "Customize your database configuration" ]
 layout: post
 template: one-col
 title: SQLite with Cloud 66 Maestro

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Status and uptime", "Latest updates" ]
 layout: post
 template: one-col
 title: Cloud66 Status

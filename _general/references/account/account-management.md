@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "View account information", "Delete your account", "Organizations", "Note:" ]
 layout: post
 template: one-col
 title: Account Management

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Run command", "Usage", "Parameters", "Examples" ]
 layout: post
 template: one-col
 title: Toolbelt run command

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is Cloud 66 Birdseye?", "Where does the data for Cloud 66 Birdseye come from?", "Who can use Cloud 66 Birdseye?", "Is there an API?", "Get the list of all incidents", "Filtering the list", "Get a single incident", "Filtering by status", "Can I report incidents?" ]
 layout: post
 template: one-col
 title: Cloud66 Birdseye

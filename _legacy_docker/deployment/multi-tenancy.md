@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Overview", "Multiple Services" ]
 layout: post
 template: one-col
 title: Multi Tenancy for Stacks

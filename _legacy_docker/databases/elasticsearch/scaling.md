@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About scaling your Elasticsearch cluster", "General recommendations" ]
 layout: post
 template: one-col
 title: Elasticsearch Scaling

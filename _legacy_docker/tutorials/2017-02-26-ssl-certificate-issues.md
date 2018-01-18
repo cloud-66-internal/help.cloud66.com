@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Web server issues", "Passphrase protected keys", "Certificate and key encoding", "Matching certificates and keys" ]
 layout: post
 template: one-col
 title: SSL certificate issues

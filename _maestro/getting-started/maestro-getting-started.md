@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is Maestro?", "Getting Started", "Setting up a Docker Deployment", "Deployment Setup", "Configuring Services", "Container Network Configuration", "Adding Data Sources", "Configuring Servers", "Deployment", "Advanced Features" ]
 layout: post
 template: one-col
 title: Getting Started with Maestro

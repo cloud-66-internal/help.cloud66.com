@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About deploying MongoDB", "Features", "Database deployment types", "How to connect to your MongoDB database", "Environment Variables", "Customize your database configuration" ]
 layout: post
 template: one-col
 title: MongoDB with Cloud 66 Maestro

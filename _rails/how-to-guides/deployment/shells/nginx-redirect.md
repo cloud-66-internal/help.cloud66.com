@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Redirect from HTTP to HTTPS", "Redirect between domains with HTTP and HTTPS", "HTTP", "HTTPS" ]
 layout: post
 template: one-col
 title: Nginx Redirect

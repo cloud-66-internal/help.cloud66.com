@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Step 1: Checkout your CustomConfig", "Step 2: Add the weavescope snippet", "Step 3: Commit and redeploy your stack", "Step 4: Open port 4040 to access Weave Scope" ]
 layout: post
 template: one-col
 title: Integration With Weave Scope

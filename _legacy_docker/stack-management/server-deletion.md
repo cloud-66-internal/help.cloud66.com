@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Note", "AWS", "Rackspace", "Digitalocean", "GCE", "Linode", "CloudA", "Azure", "Packet" ]
 layout: post
 template: one-col
 title: Server Deletion

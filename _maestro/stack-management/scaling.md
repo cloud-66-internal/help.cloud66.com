@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About scaling servers", "Horizontal scaling", "Web servers", "Process servers", "Database servers", "Docker services", "Vertical scaling", "Note" ]
 layout: post
 template: one-col
 title: Scaling

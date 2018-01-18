@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Problem", "Resolution" ]
 layout: post
 template: one-col
 title: SMTP timeouts on Amazon AWS EC2

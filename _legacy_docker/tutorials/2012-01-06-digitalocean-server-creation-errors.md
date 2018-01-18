@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Background", "HTTP Error 401 or HTTP Error 403", "Note", "HTTP Error 404 *or* Size is not available in this region", "1. Your DigitalOcean account has reached the default 5-server limit", "2. DigitalOcean have limited new server creation", "3. DigitalOcean has experienced an internal error", "Note", "Timeout Errors", "Note", "HAProxy Load Balancer Errors" ]
 layout: post
 template: one-col
 title: DigitalOcean server creation errors

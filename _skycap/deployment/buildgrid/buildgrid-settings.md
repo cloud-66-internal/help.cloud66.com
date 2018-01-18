@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "BuildGrid Settings", "Account Settings ", "User Settings" ]
 layout: post
 template: one-col
 title: Buildgrid Settings

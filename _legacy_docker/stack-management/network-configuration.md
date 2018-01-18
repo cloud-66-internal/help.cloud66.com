@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About Network Settings", "What is ActiveProtect&trade;?", "Firewall", "Add a firewall rule", "Microsoft Azure notice", "Configure network traffic", "Allowing traffic", "Denying traffic", "Using network redirects", "Maintenance mode", "Redirect HTTP to HTTPS", "WWW or non-WWW in your URL" ]
 layout: post
 template: one-col
 title: Stack network settings

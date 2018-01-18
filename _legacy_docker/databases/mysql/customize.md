@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Customize your Database Configuration" ]
 layout: post
 template: one-col
 title: Customize your MySQL Configuration with Docker

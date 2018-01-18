@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Provide a Docker image", "How To Add Docker Image Repository" ]
 layout: post
 template: one-col
 title: Connecting to Docker Image Repository

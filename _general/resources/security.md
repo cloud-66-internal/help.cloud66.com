@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Infrastructure security", "Credit Card Information", "Customer protection", "Reporting security issues" ]
 layout: post
 template: one-col
 title: Security summary

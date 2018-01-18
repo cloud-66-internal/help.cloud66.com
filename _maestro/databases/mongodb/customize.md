@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Customize your Database Configuration" ]
 layout: post
 template: one-col
 title: Customize your MongoDB Configuration with Maestro

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "How it is installed", "Troubleshoot" ]
 layout: post
 template: one-col
 title: Let's Encrypt

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Overview", "Ports inside and outside containers", "Mapping ports from inside to the outside world", "Note", "Non-HTTP ports (TCP and UDP)", "Multiple ports" ]
 layout: post
 template: one-col
 title: Container Port Mapping

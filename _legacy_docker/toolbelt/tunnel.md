@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Tunnel command", "Usage", "Parameters", "Examples" ]
 layout: post
 template: one-col
 title: Toolbelt tunnel command

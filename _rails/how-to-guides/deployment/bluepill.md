@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Commands", "Process names convention", "Build your own pill file", "Status", "Stop", "Start", "Load a process", "Unload a process", "Note" ]
 layout: post
 template: one-col
 title: Managing processes with Bluepill

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "How to connect to your SQLite database" ]
 layout: post
 template: one-col
 title: Customize your SQLite Configuration with Docker

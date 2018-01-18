@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About scaling your MongoDB servers", "Configure a MongoDB replica set", "Using a MongoDB replica set in your code", "Environment variables", "Configure Mongoid", "Note" ]
 layout: post
 template: one-col
 title: MongoDB replica sets

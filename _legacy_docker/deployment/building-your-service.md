@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Pull code from Git", "Provide a Docker image", "Configuration", "Build command", "Build root", "Command", "Deploy command", "Dockerfile path", "Git URL", "Git branch", "Image", "Using Habitus for builds" ]
 layout: post
 template: one-col
 title: Building your Docker service

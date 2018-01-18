@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Pause and resume services" ]
 layout: post
 template: one-col
 title: Service Pause and Resume

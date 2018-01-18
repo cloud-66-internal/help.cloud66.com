@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About adding Redis to your stack", "Add Redis to your stack", "Remove Redis from your stack" ]
 layout: post
 template: one-col
 title: Redis

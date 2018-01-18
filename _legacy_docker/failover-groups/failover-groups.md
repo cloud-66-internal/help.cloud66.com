@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is a failover group? ", "Add a failover group", "Notes", "Environment variables" ]
 layout: post
 template: one-col
 title: Failover groups

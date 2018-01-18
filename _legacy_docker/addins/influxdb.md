@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is InfluxDB?", "Add InfluxDB", "Note" ]
 layout: post
 template: one-col
 title: InfluxDB

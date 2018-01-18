@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "CPU usage", "Memory usage", "Disk usage" ]
 layout: post
 template: one-col
 title: Server monitoring

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Customize your Database Configuration" ]
 layout: post
 template: one-col
 title: Customize your GlusterFS Configuration with Docker

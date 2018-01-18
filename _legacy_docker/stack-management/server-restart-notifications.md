@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is the server restart notification?", "Is this important? Do I need immediate action?", "How do I actually restart my servers?", "Important", "How does Cloud 66 determine my server needs a restart?", "I've restarted, but I still see the notification", "Additional information" ]
 layout: post
 template: one-col
 title: Server restart notifications

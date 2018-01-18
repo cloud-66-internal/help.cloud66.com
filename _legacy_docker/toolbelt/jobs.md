@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Job management", "List jobs", "Usage", "Parameters", "Example", "Run a job on demand", "Usage", "Parameters", "Examples" ]
 layout: post
 template: one-col
 title: Toolbelt job management

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Database management", "Slave promotion to standalone master", "Usage", "Important!", "Parameters", "Example", "Slave re-synchronise with master", "Usage", "Parameters", "Example" ]
 layout: post
 template: one-col
 title: Toolbelt database management

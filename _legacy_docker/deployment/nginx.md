@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About Nginx", "Nginx configuration", "Nginx worker configuration", "Default Cloud 66 Nginx error page", "Custom Nginx error page", "Customize your Nginx configuration", "Warning", "Nginx CustomConfig variables", "Boolean variables" ]
 layout: post
 template: one-col
 title: Nginx

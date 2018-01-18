@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Download", "Usage", "Parameters", "Example" ]
 layout: post
 template: one-col
 title: Toolbelt download command

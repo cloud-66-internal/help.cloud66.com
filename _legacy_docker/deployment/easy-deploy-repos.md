@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About EasyDeploy repositories", "Using EasyDeploy repositories" ]
 layout: post
 template: one-col
 title: EasyDeploy repositories

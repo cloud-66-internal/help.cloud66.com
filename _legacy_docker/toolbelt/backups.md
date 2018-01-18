@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About backup management", "List your backups", "Usage", "Parameters", "Example", "Download your backups", "Usage", "Parameters", "Example", "Create backup", "Usage", "Parameters", "Example" ]
 layout: post
 template: one-col
 title: Toolbelt backup management

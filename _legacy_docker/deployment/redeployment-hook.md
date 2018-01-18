@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About redeployment hooks", "Where to find your redeployment hook?", "For Docker Stacks", "For Rails/Rack Stacks", "Github Integration", "Adding Redeployment Hooks", "GitHub Setup", "Bitbucket Setup", "Generic Setup", "Invoking your redeployment hook manually", "Note" ]
 layout: post
 template: one-col
 title: Redeployment hooks

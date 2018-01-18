@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About environment variables", "AUTO_GENERATE environment variables", "Auto-generated environment variables", "Assign environment variables for deployment", "Assign environment variables after stack build", "Define referenced environment variable", "Using environment variables", "Pre-defined environment variables" ]
 layout: post
 template: one-col
 title: Environment variables

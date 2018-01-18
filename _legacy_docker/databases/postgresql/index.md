@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About deploying PostgreSQL", "Features", "Database deployment types", "How to connect to your PostgreSQL database", "Environment Variables", "Customize your database configuration" ]
 layout: post
 template: one-col
 title: PostgreSQL with Cloud 66 Docker

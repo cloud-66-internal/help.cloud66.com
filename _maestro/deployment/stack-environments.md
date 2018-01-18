@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Stack environments" ]
 layout: post
 template: one-col
 title: Stack Environments

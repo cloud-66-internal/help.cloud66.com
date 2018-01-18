@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About using Rackspace cloud", "Generate a Rackspace API key", "Add Rackspace key to a stack", "Notice", "External links" ]
 layout: post
 template: one-col
 title: Rackspace Cloud

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About using Packet cloud", "Adding your Packet credentials", "Notice" ]
 layout: post
 template: one-col
 title: Packet cloud

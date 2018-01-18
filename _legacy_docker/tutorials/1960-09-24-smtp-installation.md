@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Installing Postfix", "Configuring Rails" ]
 layout: post
 template: one-col
 title: Installing SMTP on your server

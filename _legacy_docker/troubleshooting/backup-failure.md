@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "PostgreSQL" ]
 layout: post
 template: one-col
 title: Backup Failure

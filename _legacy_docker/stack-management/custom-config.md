@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is CustomConfig?", "Accessing CustomConfig", "Preview a template", "Important", "Submit template changes", "About updating configuration files and patches", "Note" ]
 layout: post
 template: one-col
 title: CustomConfig™

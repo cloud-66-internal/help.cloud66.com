@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About Deployment authorization", "IMPORTANT", "Cloud Lockdown" ]
 layout: post
 template: one-col
 title: Deployment Authorization

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "How to connect to your Redis database" ]
 layout: post
 template: one-col
 title: Customize your PostgreSQL Configuration with Maestro

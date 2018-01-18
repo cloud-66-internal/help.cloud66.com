@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is deployment history?", "Deployment Status", "Usage" ]
 layout: post
 template: one-col
 title: Deployment History

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Operating system", "Supported cloud providers", "Supported frameworks", "Component versions", "Components built via apt-packages", "Components built from source", "Warning", "Important" ]
 layout: post
 template: one-col
 title: Technical specifications

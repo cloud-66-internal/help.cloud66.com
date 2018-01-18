@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Public folder", "Symbolic link" ]
 layout: post
 template: one-col
 title: Create symbolic links in Ubuntu

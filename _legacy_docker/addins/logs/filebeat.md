@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About using Filebeat", "Add Filebeat to your stack", "Note" ]
 layout: post
 template: one-col
 title: Filebeat

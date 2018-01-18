@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About scaling your GlusterFS cluster", "Configure a GlusterFS replica_count", "Note" ]
 layout: post
 template: one-col
 title: GlusterFS Scaling

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About SSL Certificate", "Standard SSL Certificate", "Let's Encrypt SSL Certificate" ]
 layout: post
 template: one-col
 title: SSL certificate

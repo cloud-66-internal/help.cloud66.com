@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About database replication", "How it works", "MySQL", "PostgreSQL", "MongoDB", "Redis", "Environment variables", "Enable database replication", "Important", "Single stack", "Between stacks", "Disable database replication", "Create slave database", "Re-synchronizing slave with master" ]
 layout: post
 template: one-col
 title: Database Replication

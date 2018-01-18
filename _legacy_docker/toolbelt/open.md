@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Open your website", "Usage", "Parameters", "Example" ]
 layout: post
 template: one-col
 title: Toolbelt open command

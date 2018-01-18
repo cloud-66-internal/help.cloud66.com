@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is Elasticsearch?", "Add Elasticearch", "Note" ]
 layout: post
 template: one-col
 title: Elasticsearch

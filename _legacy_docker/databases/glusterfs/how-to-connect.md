@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "How to connect to your GlusterFS database" ]
 layout: post
 template: one-col
 title: Customize your GlusterFS Configuration with Docker

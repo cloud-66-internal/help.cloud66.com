@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "The Problem", "Note", "Possible Resolutions" ]
 layout: post
 template: one-col
 title: Out of memory errors during deployment

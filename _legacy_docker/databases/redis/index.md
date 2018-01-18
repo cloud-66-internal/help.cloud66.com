@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About deploying Redis", "Features", "Database deployment types", "How to connect to your Redis database", "Environment Variables", "Customize your database configuration" ]
 layout: post
 template: one-col
 title: Redis with Cloud 66 Docker

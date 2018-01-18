@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "CPU usage", "Memory usage", "Disk IO usage", "Network usage" ]
 layout: post
 template: one-col
 title: Service Monitoring

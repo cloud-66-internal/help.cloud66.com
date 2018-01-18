@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Gateway management", "List gateways", "Usage", "Parameters", "Example", "Add gateway", "Usage", "Parameters", "Example", "Open gateway", "Usage", "Parameters", "Example", "Close gateway", "Usage", "Parameters", "Example", "Remove gateway", "Usage", "Parameters", "Example" ]
 layout: post
 template: one-col
 title: Toolbelt gateway management

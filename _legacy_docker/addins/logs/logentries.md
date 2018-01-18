@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About using Logentries", "Add Logentries to your stack", "Note", "Troubleshoot", "No Logs or Logs are empty in Logentries" ]
 layout: post
 template: one-col
 title: Logentries

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About using Amazon Web Services cloud", "Reserved instances", "Classic and VPC platforms", "Generate AWS access keys", "Security credentials", "IAM", "Add AWS keys to a stack", "Notice", "External links" ]
 layout: post
 template: one-col
 title: Amazon Web Services cloud

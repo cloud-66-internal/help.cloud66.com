@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Traffic distribution", "ContainerNet", "Encryption", "ElasticDNS", "Configuration", "DNS Behaviour", "Load Balancing", "Ports", "Advanced ports", "Traffic matches" ]
 layout: post
 template: one-col
 title: Service network settings

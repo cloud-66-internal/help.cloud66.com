@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Basic Search", "Advanced Search", "Stack directives", "Server directives", "Service directives", "Firewall directives", "Container directives", "Environment Variables", "Deployment Variables", "Complex queries" ]
 layout: post
 template: one-col
 title: Global Search

@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About deploying GlusterFS", "Features", "Database deployment types", "How to connect to your GlusterFS database", "Environment Variables", "Customize your database configuration" ]
 layout: post
 template: one-col
 title: GlusterFS with Cloud 66 Rails

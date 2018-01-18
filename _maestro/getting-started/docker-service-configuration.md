@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "What is service configuration?", "How do I specify service configurations?", "Service configuration examples", "Example 1: Single service with MySQL database", "Example 2: Multiple services and databases", "Service configurations", "Database configurations", "Environment variables" ]
 layout: post
 template: one-col
 title: Docker service configuration

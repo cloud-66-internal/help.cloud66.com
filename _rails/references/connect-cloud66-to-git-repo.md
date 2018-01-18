@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Public repositories", "Notice", "Private repositories", "GitHub example", "BitBucket example" ]
 layout: post
 template: one-col
 title: Connecting Your git Repository

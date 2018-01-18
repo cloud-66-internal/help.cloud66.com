@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Load testing", "Preparing for server load" ]
 layout: post
 template: one-col
 title: Optimizing for server load

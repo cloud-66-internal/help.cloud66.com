@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About one-time database imports", "Using one-time database imports", "Note", "Troubleshoot" ]
 layout: post
 template: one-col
 title: Database one-time import

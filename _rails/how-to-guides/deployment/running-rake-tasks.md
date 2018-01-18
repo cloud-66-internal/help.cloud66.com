@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "Introduction", "Scheduled", "Deployment hooks", "Manually" ]
 layout: post
 template: one-col
 title: Running Rake Tasks

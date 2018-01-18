@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About configuring your DNS", "Configuring your DNS", "1. Use a modern DNS provider", "2. Use an A record", "3. Subdomain redirection", "Important" ]
 layout: post
 template: one-col
 title: Configure your DNS
