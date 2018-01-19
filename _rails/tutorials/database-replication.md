@@ -5,7 +5,7 @@ title: PostgreSQL Replication
 categories: tutorials
 lead: ""
 legacy: false
-tags: ["MySQL, "PostgreSQL", "MongoDB", "Redis"]
+tags: ["MySQL", "PostgreSQL", "MongoDB", "Redis"]
 permalink: /:collection/:path
 ---
 
