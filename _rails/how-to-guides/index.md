@@ -33,7 +33,6 @@ permalink: /:collection/:categories/index.html
     {% assign section = site.general | where:"categories","how-to-guides/security" | sort: "order" %}
     {% include list_articles.html section=section %}    
     </ul>
-
 </div><!--/.Toc-->
 
 

@@ -5,7 +5,7 @@ title: Failover groups
 categories: tutorials
 lead: ""
 legacy: false
-
+tags: ["High-availability"]
 permalink: /:collection/:path
 ---
 

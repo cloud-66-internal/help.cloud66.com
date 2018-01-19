@@ -7,7 +7,7 @@ lead: "Move your Rails application from Heroku over to your own servers"
 legacy: false
 tags: ["migration"]
 
-permalink: /:collection/:pamith
+permalink: /:collection/:path
 ---
 
 

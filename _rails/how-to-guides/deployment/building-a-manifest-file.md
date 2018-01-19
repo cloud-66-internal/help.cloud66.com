@@ -5,7 +5,7 @@ title: Building your manifest file
 categories: how-to-guides/deployment
 lead: ""
 legacy: false
-
+tags: ["manifest", "customization"]
 permalink: /:collection/:path
 ---
 

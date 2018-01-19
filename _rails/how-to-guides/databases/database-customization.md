@@ -1,10 +1,11 @@
 ---
 layout: post
 template: one-col
-title: Customize your PostgreSQL Configuration with Node
+title: Customize your Database Configuration with Rails
 categories: Databases
-lead: "Customize your PostgreSQL Configuration on Cloud 66 Node stacks"
+lead: "Customize your Database Configuration on Cloud 66 Rails stacks"
 legacy: false
+tags: ["PostgreSQL", "MySQL", "Redis", "MongoDB"]
 permalink: /:collection/:path
 ---
 

@@ -5,7 +5,7 @@ title: Deployment Gateway
 categories: how-to-guides/deployment
 lead: ""
 legacy: false
-
+tags: ["security"]
 permalink: /:collection/:path
 ---
 

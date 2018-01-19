@@ -5,7 +5,7 @@ title: Deploy hooks
 categories: tutorials
 lead: ""
 legacy: false
-
+tags: ["operations"]
 permalink: /:collection/:path
 ---
 

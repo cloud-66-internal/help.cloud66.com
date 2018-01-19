@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title:  "Cloud 66 for Rails Quickstarters"
-lead: Getting Started with Cloud 66 for Rails
+lead: Getting Started with Cloud 66 for Node
 legacy: false
 permalink: /:collection/quickstarts/index.html
 ---
@@ -16,5 +16,3 @@ permalink: /:collection/quickstarts/index.html
     {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->
-
-

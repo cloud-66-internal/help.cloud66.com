@@ -5,7 +5,7 @@ title: Configure your DNS
 categories: tutorials
 lead: ""
 legacy: false
-
+tags: ["customization"]
 permalink: /:collection/:path
 ---
 

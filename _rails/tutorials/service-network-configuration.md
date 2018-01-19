@@ -5,7 +5,7 @@ title: Service network Configuration
 categories: tutorials
 lead: "Configure the service network"
 legacy: false
-tags: ["network"]
+tags: ["security", "customization"]
 permalink: /:collection/:path
 ---
 

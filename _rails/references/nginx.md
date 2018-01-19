@@ -5,7 +5,7 @@ title: Nginx
 categories: references
 lead: "Nginx within the stack"
 legacy: false
-tags: ["git"]
+tags: ["customization", "nginx"]
 order: 90
 permalink: /:collection/:path
 ---
