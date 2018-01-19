@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Building your manifest file
-categories: Deployment
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

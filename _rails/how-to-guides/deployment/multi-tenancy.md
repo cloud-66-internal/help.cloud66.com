@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Multi Tenancy for Stacks
-categories: Deployment
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 

@@ -32,7 +32,6 @@ permalink: /:collection/references/index.html
     {% assign section = site.rails | where:"categories","references/integrations" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
-
 </div><!--/.Toc-->
 
 

@@ -3,9 +3,9 @@ layout: post
 template: one-col
 title: Service network Configuration
 categories: tutorials
-lead: ""
+lead: "Configure the service network"
 legacy: false
-
+tags: ["network"]
 permalink: /:collection/:path
 ---
 

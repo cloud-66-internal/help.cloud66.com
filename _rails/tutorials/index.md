@@ -13,7 +13,5 @@ permalink: /:collection/tutorials/index.html
     {% assign section = site.rails | where:"categories","tutorials" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
-
 </div><!--/.Toc-->
-
 

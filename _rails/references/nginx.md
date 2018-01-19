@@ -2,10 +2,11 @@
 layout: post
 template: one-col
 title: Nginx
-categories: Deployment
-lead: ""
+categories: references
+lead: "Nginx within the stack"
 legacy: false
-
+tags: ["git"]
+order: 90
 permalink: /:collection/:path
 ---
 
