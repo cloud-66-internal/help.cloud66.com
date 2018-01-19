@@ -14,4 +14,3 @@ permalink: /:collection/tutorials/index.html
     {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->
-

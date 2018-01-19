@@ -2,10 +2,10 @@
 layout: post
 template: one-col
 title: Stack Environments
-categories: Deployment
+categories: references
 lead: ""
 legacy: false
-
+tags: ["Environments"]
 permalink: /:collection/:path
 ---
 
