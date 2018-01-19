@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Migrate from Heroku to Cloud66
-categories: quickstarts
+categories: how-to
 lead: "Move your Rails application from Heroku over to your own servers"
 legacy: false
 tags: ["migration"]
