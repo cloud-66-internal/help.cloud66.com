@@ -10,12 +10,6 @@ permalink: /:collection/:categories/index.html
 
 <div class="Toc Toc--howto">
 
-
-    <ul>
-    {% assign section = site.rails | where:"categories","how-to" | sort: "order" %}
-    {% include list_articles.html section=section %}
-    </ul>
-    
     <h2>Deploying Your Applications</h2>
     <ul>
     {% assign section = site.rails | where:"categories","how-to-guides/deployment" | sort: "order" %}

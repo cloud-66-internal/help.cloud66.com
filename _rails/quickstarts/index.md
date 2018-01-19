@@ -15,7 +15,6 @@ permalink: /:collection/quickstarts/index.html
     {% assign section = site.general | where:"categories","quickstarts" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
-
 </div><!--/.Toc-->
 
 
