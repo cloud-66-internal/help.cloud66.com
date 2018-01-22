@@ -6,6 +6,7 @@ categories: references/toolbelt
 lead: ""
 legacy: false
 order: 100
+tags: ["shell"]
 permalink: /:collection/:path
 ---
 

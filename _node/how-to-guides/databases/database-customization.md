@@ -9,8 +9,6 @@ tags: ["PostgreSQL", "MySQL", "Redis", "MongoDB"]
 permalink: /:collection/:path
 ---
 
-{% assign dbtype = "postgres" %}
-
 ## Customize your database configuration
 
 You can customize the database configuration on your servers using [CustomConfig](https://help.cloud66.works/{{ include.product }}/stack-management/custom-config.html). CustomConfig is available for MySQL, PostgreSQL, Redis and MongoDB.

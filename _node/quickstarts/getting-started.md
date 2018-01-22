@@ -2,9 +2,10 @@
 layout: post
 template: one-col
 title: Getting started with Node.js stacks
-categories: Deployment
+categories: quickstarts
 lead: ""
 legacy: false
+tags: ["getting started"]
 permalink: /:collection/:path
 ---
 

@@ -10,6 +10,6 @@ permalink: /:collection/:path
 ---
 
 
-{% assign product = 'Rails' %}
+{% assign product = 'node' %}
 
 {% include tutorials/getting-started-with-manifest.md product = product %}

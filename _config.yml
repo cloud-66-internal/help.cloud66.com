@@ -19,10 +19,6 @@ collections:
     output: true
     permalink: /:collection/:path/
     icon: foundicon-idea
-  nodeOLD:
-    output: true
-    permalink: /:collection/:path/
-    icon: foundicon-idea
   rails:
     output: true
     permalink: /:collection/:path/

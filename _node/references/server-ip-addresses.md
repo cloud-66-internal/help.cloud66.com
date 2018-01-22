@@ -2,10 +2,10 @@
 layout: post
 template: one-col
 title: Server IP addresses and hostnames
-categories: Deployment
+categories: references
 lead: ""
 legacy: false
-
+tags: ["security"]
 permalink: /:collection/:path
 ---
 

@@ -13,7 +13,6 @@ permalink: /:collection/tutorials/index.html
     {% assign section = site.node | where:"categories","tutorials" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
-
 </div><!--/.Toc-->
 
 

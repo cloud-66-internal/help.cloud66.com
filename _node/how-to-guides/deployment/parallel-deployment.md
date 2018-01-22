@@ -2,10 +2,10 @@
 layout: post
 template: one-col
 title: Parallel deployments
-categories: Deployment
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
-
+tags: ["customization"]
 permalink: /:collection/:path
 ---
 

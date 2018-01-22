@@ -240,7 +240,7 @@ production:
 
 ```
 production:
-    rails:
+    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
         configuration:
             nginx:
                 cors: true
@@ -256,7 +256,7 @@ If required, you can also specify the allowed origin (as '\*' or a single origin
 
 ```
 production:
-    rails:
+    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
         configuration:
             nginx:
                 cors:
@@ -547,13 +547,13 @@ production:
 
 ## Which server?
 
-Every application defined in the manifest file must be bound to a server. However, if you'd like configurations to apply to all servers in an application type, you don't need to specify a server type. Servers can be deployed specifically to host that application, be shared between multiple applications (eg. Rails and MySQL on the same server) or be an external server (eg. using an external database).
+Every application defined in the manifest file must be bound to a server. However, if you'd like configurations to apply to all servers in an application type, you don't need to specify a server type. Servers can be deployed specifically to host that application, be shared between multiple applications (eg. {% if include.product == 'node' or include.product == 'Rails' %}{{ include.product | downcase }}{% else %}Docker{% endif %} and MySQL on the same server) or be an external server (eg. using an external database).
 
 Here is an example of a server definition:
 
 ```
 production:
-    rails:
+    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
         servers:
           - server:
             unique_name: app
@@ -580,7 +580,7 @@ Only a single cloud vendor and region is supported for servers in a stack.
 
 ```
 production:
-    rails:
+    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
       servers:
         server:
             unique_name: app
@@ -600,7 +600,7 @@ production:
 
 ```
 production:
-    rails:
+    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
         server:
             unique_name: frontend
             address: 123.123.123.123
@@ -608,13 +608,13 @@ production:
 
 ### Shared Servers
 
-You can share a server between two applications. This could be in cases like using the same server for both your Rails app and the MySQL server behind it.
+You can share a server between two applications. This could be in cases like using the same server for both your {% if include.product != 'legacy_docker' %}{{ include.product }}{% else %}Docker{% endif %} app and the MySQL server behind it.
 
 Each shared server definition specifies the name of another server definition in the manifest file for which the applications will then share the physical server:
 
 {% highlight yaml %}
 production:
-    rails:
+    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
         server:
             same_as: *another_existing_servers_unique_name*
 {% endhighlight %}
@@ -624,7 +624,7 @@ production:
 
 If you would like to use an external server for an application (like using your own MySQL or AWS RDS for example), you can define that server as external.
 
-External server definitions specify that the application is hosted on a server external to Cloud 66. This is not a valid target for your main application (ie. Rails) but may be appropriate for another application type (ie. MongoDB):
+External server definitions specify that the application is hosted on a server external to Cloud 66. This is not a valid target for your main application (ie. {% if include.product != 'legacy_docker' %}{{ include.product }}{% else %}Docker{% endif %}) but may be appropriate for another application type (ie. MongoDB):
 
 ```
 production:
@@ -704,7 +704,7 @@ Each application type supports the additional partial configuration to add custo
 
 ```
 production:
-    rails:
+    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
         configuration:
             custom_log_files: ["/tmp/mylog/*/*.log"]
 ```
