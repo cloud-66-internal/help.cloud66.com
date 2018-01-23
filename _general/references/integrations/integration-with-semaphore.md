@@ -5,7 +5,7 @@ title: Integration With Semaphore
 categories: references/integrations
 lead: ""
 legacy: false
-
+tags: ["operations"]
 permalink: /:collection/:path
 ---
 {% assign product = "General" %}

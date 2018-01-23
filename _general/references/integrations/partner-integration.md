@@ -5,7 +5,7 @@ title: Partner Integration
 categories: references/integrations
 lead: ""
 legacy: false
-
+tags: ["operations"]
 permalink: /:collection/:path
 ---
 

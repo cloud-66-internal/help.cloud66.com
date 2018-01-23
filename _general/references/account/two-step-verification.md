@@ -5,7 +5,7 @@ title: Two-step Verification
 categories: references/accounts
 lead: ""
 legacy: false
-
+tags: ["account", "security"]
 permalink: /:collection/:path
 ---
 

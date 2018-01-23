@@ -5,7 +5,7 @@ title: Audit Logs
 categories: references/accounts
 lead: ""
 legacy: false
-
+tags: ["logs"]
 permalink: /:collection/:path
 ---
 

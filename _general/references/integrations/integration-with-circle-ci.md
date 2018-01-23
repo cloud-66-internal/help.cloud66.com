@@ -5,7 +5,7 @@ title: Integration with Circle CI
 categories: references/integrations
 lead: ""
 legacy: false
-
+tags: ["operations"]
 permalink: /:collection/:path
 ---
 {% assign product = "General" %}

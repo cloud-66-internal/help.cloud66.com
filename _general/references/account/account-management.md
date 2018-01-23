@@ -5,7 +5,7 @@ title: Account Management
 categories: references/accounts
 lead: ""
 legacy: false
-
+tags: ["account"]
 permalink: /:collection/:path
 ---
 

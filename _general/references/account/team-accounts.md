@@ -5,7 +5,7 @@ title: Team Accounts
 categories: references/accounts
 lead: ""
 legacy: false
-
+tags: ["account"]
 permalink: /:collection/:path
 ---
 

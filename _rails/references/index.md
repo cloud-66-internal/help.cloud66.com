@@ -20,10 +20,12 @@ permalink: /:collection/references/index.html
     {% assign section = site.rails | where:"categories","references/toolbelt" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
-<!--
+
     <h2>Account Management</h2>
     <ul>
     {% assign section = site.rails | where:"categories","references/accounts" | sort: "order" %}
+    {% include list_articles.html section=section %}
+    {% assign section = site.general | where:"categories","references/accounts" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
 
@@ -31,8 +33,9 @@ permalink: /:collection/references/index.html
     <ul>
     {% assign section = site.rails | where:"categories","references/integrations" | sort: "order" %}
     {% include list_articles.html section=section %}
+    {% assign section = site.general | where:"categories","references/integrations" | sort: "order" %}
+    {% include list_articles.html section=section %}
     </ul>
--->
 </div><!--/.Toc-->
 
 
