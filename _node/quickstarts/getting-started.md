@@ -1,110 +1,167 @@
 ---
 layout: post
 template: one-col
-title: Getting started with Node.js stacks
+title: Deploying Your First Node App
 categories: quickstarts
-lead: ""
+lead: "Deploy your first Node app to any cloud"
 legacy: false
 tags: ["getting started"]
 permalink: /:collection/:path
 ---
+<h2 id="What-youll-need">
+    <a href="#What-youll-need" class="headerlink" title="What you’ll need"></a>
+    What you’ll need
+</h2>
 
+<p>Before you can deploy your app please check you have the following:</p>
+<ul>
+    <li>
+        <p><strong>A Cloud 66 Account</strong> &mdash; If you don't already have one <a href="https://app.cloud66.com/users/sign_up" target="_blank">Sign up for a free Cloud 66 account</a>. There is a free community plan and you'll get full access to all products Free for 14 days.</p>
+    </li>
+    <li>
+        <p><strong>A Git Repo containing your application code</strong> &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.</p>
+    </li>
+    <li>
+        <p><strong>A Cloud Account or Your Own Servers</strong> &mdash; See below.</p>
+    </li>
+</ul>
 
+{% include general/cloud_provider_or_own_server_tabs.html %}
 
-## What you’ll need
+<p>
+    Lets get started &mdash; Log into Cloud 66 website, if you're a new user you'll see four panels on your Apps Dashboard. In the Rails panel click the <strong>Start Trial</strong>.
+</p>
 
-*   [Cloud 66 account](https://app.cloud66.com/users/sign_up)
-*   Public ([access a public repository](https://help.cloud66.works/{{ include.product }}/tutorials/1901-01-26-access-your-code.html))
-*   Private ([access a private repository](https://help.cloud66.works/{{ include.product }}/tutorials/1901-01-26-access-your-code.html))
-  
-   
-  
-[Deployment credentials](https://help.cloud66.works/{{ include.product }}/deployment/clouds/)
+<h2 id="Access-your-Git-repository">
+    <a href="#Access-your-Git-repository" class="headerlink" title="Access your Git repository"></a>
+    Accessing your Git Repo
+</h2>
+<p>
+    Cloud 66 supports both public and private Git repositories. If you're using a private Git repository you'll need to Add and approve the Cloud 66 public SSH key with your Git provider.
+</p>
 
-*   The API key for your cloud provider ([add a cloud platform](https://help.cloud66.works/{{ include.product }}/deployment/clouds/))
-*   An SSH key and IP address for your server ([add a SSH key](https://help.cloud66.works/{{ include.product }}/addins/custom-server.html))
-  
+<div class="Tabs">
+    <nav>
+      <ul class="TabMini js_tabs">
+        <li class="TabMini-item active">
+          <a href="#github_content" class="TabMini-link">
+            Github
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#bitbucket_content" class="TabMini-link">
+            Bitbucket
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#other_git_content" class="TabMini-link">
+            Other git repositories
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-   
-[Application specific settings](https://help.cloud66.works/node/deployment/application-settings-node.html)
-  
+    <section id="github_content" class="Tabs-content js_tab_content">
+        <h4>Public Repository</h4>
+        <p>If your code is in a public repository, you don't need to do anything.</p>
+        <h4>Private Repository</h4>
+        <p>To grant access to a private Github repository, you need to add your public SSH key you see on the screen to your Github account. </p>
+        <p>
+            <img src="/assets/rails/rails_add_public_key.png" alt="Adding your Public Key to GitHub">
+        </p>
+        <p><em>Copy the public SSH Key</em> (starts with ssh-rsa and ends with the email address you used to sign up) and then <em>Click Go to GitHub</em>. The GitHub SSH keys page will open in a new browser tab. Click the <em>New SSH key</em> button and paste your public key.</p>
+    </section>
 
+    <section id="bitbucket_content" class="Tabs-content js_tab_content is-hidden">
+        <h4>Public Repository</h4>
+        <p>If your code is in a public repository, you don't need to do anything.</p>
+        <h4>Private Repository</h4>
+        <p>To grant access to a private Bitbucket repository, you need to add your public SSH key you see on the screen to your Bitbucket account.</p>
+        <p>
+            <img src="/assets/rails/rails_add_public_key_bitbucket.png" alt="Adding the Public Key to BitBucket">
+        </p>
+    </section>
 
+    <section id="other_git_content" class="Tabs-content js_tab_content is-hidden">
+        <h4>Private Repository</h4>
+        <p>To grant access to your private git repository, add the public SSH key to the list of git users (refer to your git server manual) and make sure your git repository accepts connections on port 22, from Cloud 66 public IP addresses: {% include general/public_ips.html %}</p>
+    </section>
+</div>
 
+<h2 id="Tell-us-about-your-app">
+    <a href="#Define-your-Stack" class="headerlink" title="Define your application properties"></a>
+    Defining Your Stack
+</h2>
+<p>
+    Now you need to tell us a bit of info about your app, then we can deploy, Please fill in the following fields:
+<p><img src="/assets/node/node_about_app.png" alt="Fill in the information about your app: Git repo, name and environment">
+<ul>
+    <li>
+        <p>
+            <strong>Git repo URL for your app</strong> &mdash; We support <strong><kbd>http://</kbd>, <kbd>git://</kbd> or <kbd>git@</kbd></strong> URL formats. Please note that <strong>HTTPS isn't currently supported</strong>.
+        </p>
+    </li>
+    <li>
+        <p>
+            <strong>What branch do you want to deploy</strong> &mdash; This defaults to master but you can provide any branch you like.
+        </p>
+    </li>
+    <li>
+        <p><strong>Give your new application a name</strong> &mdash; This is the name that will be used in the Cloud 66 Dashboard once your app is deployed.</p>
+    </li>
+    <li>
+        <p><strong>Choose an Environment</strong> &mdash; Choose the Environment that you're deploying to: Production, Development, QA, Staging or Production.</p>
+    </li>
+</ul>
 
-## Step 1. Build your stack
+<p>Now click the <strong>Analyze</strong> button. Hang tight, the results will be displayed in a few seconds...</p>
 
-Before you can deploy your applications to a server with Cloud 66, you must build a stack of the web applications components your application needs to run. To build your first stack, complete the following steps.
+<h2 id="App-Configuration">
+    <a href="#Configuring-Your-Stack" class="headerlink" title="About your app Summary"></a>
+    Configuring Your Stack
+</h2>
 
-1.  Sign in to Cloud 66.
-2.  On the Cloud 66 dashboard, click _Get started building a **Node** stack_.
+<p>Once the analysis is complete you'll see a yellow Information Box that you can use to verify the analysis is correct.
+<p>
+     <img src="/assets/node/node_about_your_app.png" alt="Rails Stack - analysis information">
+</p>
+<p>If there are any problems you can make changes and click <strong>Reanalyze my code</strong>. If necessary, you can also <a href="#">Add Environment Variables</a>.</p>
 
+<div class="notice">
+    <h3>Advanced Configurations</h3>
+    <p>You can configure many aspects of your Stack using the Toolbelt or a manifest file.</p>
+</div>
 
+<h2 id="Where-are-you-deploying-to">
+    <a href="#Where-are-you-deploying-to" class="headerlink" title="Where are you deploying to?"></a>
+    Choosing a Deployment Target
+</h2>
 
-## Step 2. Access your Git repository
+<p>
+    If you're deploying for the first time you need to add your Cloud provider credentials:
+</p>
 
-If you have a private Git repository, complete the following steps to generate the keys needed to access your repository. If you have a public Git repository, skip to Step 3.
+{% include general/clouds_accordion.html %}
 
-1.  In the _Accessing Git_ dialog box, copy the SSH key, select your Git provider from the list, and click the associated _Go_ button.
-2.  Add the copied key to your Git provider.
-3.  Return to Cloud 66.
+<h2 id="Deployment-Details">
+    <a href="#Deployment-Details" class="headerlink" title="Deployment Details"></a>
+    Finalizing Deployment Details
+</h2>
 
+<p>
+    Now you can decide how you want to configure your Frontend (Web) and Database Servers.
+    They can be shared or deployed to separate servers.
+</p>
 
+<div class="notice">
+    <h3>Deploying to Production</h3>
+    <p>For production environments we always recommend separate servers. If you need fine grained control for more advanced deployments  you can use a <a href="#">manifest file</a>.</p>
+</div>
 
-## Step 3: Define your application properties
+<p>
+    <img src="/assets/node/node_deployment_details.png" alt="Choose where to deploy your database">
+</p>
 
-Complete the following steps to define the properties Cloud 66 uses to identify your application.
-
-**Prerequisites**  
-
-You must know the URL for your Git repository and the associated Git branch. For instructions on retrieving the Git repo URL and how to format it for this procedure, refer to [Access a public Git repository](http://community.cloud66.com/articles/accessing-your-git-repository#public) or [Access a private Git repository](http://community.cloud66.com/articles/accessing-your-git-repository#private).
-
-1.  In the _About your app_ dialog box, do the following actions:
-*   In the _Your Git Repo URL_ box, enter the URL for your Git repository.
-*   In the _Git branch_ box, type the branch name. This field defaults to the "master" branch.
-*   In the _Give your stack a name_ box, type a name for your application stack.
-*   In the _Environment_ list, select the environment to deploy.
-2.  Click _Analyze_. Cloud 66 will analyze your application.
-
-
-
-## Step 4: Review your app configuration
-
-Cloud 66 analyzes your application and returns the configuration details it detects. Complete the following procedure to verify the application configuration is correct.
-
-1.  In the _About your app_ dialog box, verify the returned information. If it is incorrect, make the necessary changes and click _Re-analyze my code_.
-
-
-
-## Step 5: Define deployment properties
-
-Complete the following steps to define the properties that determine how to deploy your application.
-
-**Prerequisites**  
-
-If deploying to a cloud server, you must know the API key for your cloud provider. If deploying to your server, you must have (or generate) a SSH key for the server. For instructions on generating an SSH key, refer to [Setting up SSH keys](http://community.cloud66.com/articles/setting-up-ssh-keys).
-
-1.  In the _Where are you deploying to_ dialog box, select the deployment target to use.
-2.  Perform one of the following actions, depending on your deployment configuration:
-*   If deploying to a cloud, select the cloud provider, server region and server size.
-*   If deploying to a server, enter your username and IP address.
-3.  In the _Deployment details_ dialog box, select the database option to use.
-4.  Click _Deploy_.
-
-
-
-## Step 6: Review the deployment logs
-
-After your application builds successfully, you can view the log generated by the deployment.
-
-
-
-## What's next?
-
-Your stack is up and running, and you can start customizing by:
-
-*   [Define a backup](https://help.cloud66.works/{{ include.product }}/addins/database-backups.html)
-*   [Scale your Node.js application](https://help.cloud66.works/node/deployment/scale-node.html)
-*   [Configure security]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/network-configuration.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/network-configuration.html{% endif %})
-*   [Configure an add-in](https://help.cloud66.works/{{ include.product }}/addins/add-in-implementation.html)
-
+<p>
+    That's it! Now just click <strong>Deploy Stack</strong>.
+</p>

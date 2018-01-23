@@ -20,7 +20,7 @@ permalink: /:collection/references/index.html
     {% assign section = site.node | where:"categories","references/toolbelt" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
-
+<!--
     <h2>Account Management</h2>
     <ul>
     {% assign section = site.node | where:"categories","references/accounts" | sort: "order" %}
@@ -32,6 +32,7 @@ permalink: /:collection/references/index.html
     {% assign section = site.node | where:"categories","references/integrations" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
+-->
 </div><!--/.Toc-->
 
 
