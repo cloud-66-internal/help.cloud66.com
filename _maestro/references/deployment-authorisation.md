@@ -2,9 +2,10 @@
 layout: post
 template: one-col
 title: Deployment Authorization
-categories: Deployment
+categories: references
 lead: ""
 legacy: false
+tags: ["security", "operations"]
 permalink: /:collection/:path
 ---
 

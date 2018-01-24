@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Cloud 66 for Node Resources"
+title:  "Maestro Resources"
 lead: "Useful Resources About Cloud 66"
 legacy: false
 permalink: /:collection/resources/index.html

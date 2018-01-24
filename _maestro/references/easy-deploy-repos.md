@@ -2,10 +2,10 @@
 layout: post
 template: one-col
 title: EasyDeploy repositories
-categories: Deployment
+categories: references
 lead: ""
 legacy: false
-
+tags: ["operations"]
 permalink: /:collection/:path
 ---
 

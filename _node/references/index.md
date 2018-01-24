@@ -23,7 +23,7 @@ permalink: /:collection/references/index.html
     
     <h2>Account Management</h2>
     <ul>
-    {% assign section = site.rails | where:"categories","references/accounts" | sort: "order" %}
+    {% assign section = site.node | where:"categories","references/accounts" | sort: "order" %}
     {% include list_articles.html section=section %}
     {% assign section = site.general | where:"categories","references/accounts" | sort: "order" %}
     {% include list_articles.html section=section %}
@@ -31,7 +31,7 @@ permalink: /:collection/references/index.html
 
     <h2>Integrations</h2>
     <ul>
-    {% assign section = site.rails | where:"categories","references/integrations" | sort: "order" %}
+    {% assign section = site.node | where:"categories","references/integrations" | sort: "order" %}
     {% include list_articles.html section=section %}
     {% assign section = site.general | where:"categories","references/integrations" | sort: "order" %}
     {% include list_articles.html section=section %}

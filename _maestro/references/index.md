@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Cloud 66 for Node References"
+title:  "Maestro References"
 lead: "In Depth Documentation on Cloud 66 for Node"
 legacy: false
 permalink: /:collection/references/index.html
@@ -10,20 +10,20 @@ permalink: /:collection/references/index.html
 <div class="Toc Toc--howto">
     <h2>References</h2>
     <ul>
-    {% assign section = site.node | where:"categories","references" | sort: "order" %}
+    {% assign section = site.maestro | where:"categories","references" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
 
     <!-- common -->
     <h2>Cloud 66 Toolbelt</h2>
     <ul>
-    {% assign section = site.node | where:"categories","references/toolbelt" | sort: "order" %}
+    {% assign section = site.maestro | where:"categories","references/toolbelt" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
     
     <h2>Account Management</h2>
     <ul>
-    {% assign section = site.rails | where:"categories","references/accounts" | sort: "order" %}
+    {% assign section = site.maestro | where:"categories","references/accounts" | sort: "order" %}
     {% include list_articles.html section=section %}
     {% assign section = site.general | where:"categories","references/accounts" | sort: "order" %}
     {% include list_articles.html section=section %}
@@ -31,7 +31,7 @@ permalink: /:collection/references/index.html
 
     <h2>Integrations</h2>
     <ul>
-    {% assign section = site.rails | where:"categories","references/integrations" | sort: "order" %}
+    {% assign section = site.maestro | where:"categories","references/integrations" | sort: "order" %}
     {% include list_articles.html section=section %}
     {% assign section = site.general | where:"categories","references/integrations" | sort: "order" %}
     {% include list_articles.html section=section %}

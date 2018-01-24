@@ -2,10 +2,10 @@
 layout: post
 template: one-col
 title: Introduction to Docker deployments
-categories: Deployment
+categories: tutorials
 lead: ""
 legacy: false
-
+tags: ["operations"]
 permalink: /:collection/:path
 ---
 

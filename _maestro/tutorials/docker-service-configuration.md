@@ -2,10 +2,10 @@
 layout: post
 template: one-col
 title: Docker service configuration
-categories: Deployment
+categories: tutorials
 lead: ""
 legacy: false
-
+tags: ["customization", "service.yml"]
 permalink: /:collection/:path
 ---
 

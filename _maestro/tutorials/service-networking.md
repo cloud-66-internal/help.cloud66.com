@@ -2,9 +2,10 @@
 layout: post
 template: one-col
 title: Service Networking
-categories: getting-started
+categories: tutorials
 lead: ""
 legacy: false
+tags: ["customization"]
 permalink: /:collection/:path
 ---
 
