@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Redeployment hooks
+title: What are redeployment hooks?
 categories: tutorials
 lead: ""
 legacy: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Nginx Redirect
+title: How to redirect through Nginx
 categories: how-to-guides/deployment
 lead: ""
 tags: ["customization"]

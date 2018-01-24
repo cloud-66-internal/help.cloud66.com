@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: SSH
+title: How to use Toolbelt SSH
 categories: how-to-guides/deployment
 lead: ""
 legacy: false

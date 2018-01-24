@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Stack Environments
+title: What are the Stack Environments?
 categories: references
 lead: ""
 legacy: false

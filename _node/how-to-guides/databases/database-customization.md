@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Customize your Database Configuration with Rails
+title: Customize your Database Configuration with Node
 categories: how-to-guides/databases
 lead: "Customize your Database Configuration on Cloud 66 Rails stacks"
 legacy: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Cloud 66 WebSocket support
+title: Cloud 66 support for WebSocket
 categories: how-to-guides/deployment
 lead: ""
 legacy: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Deployment History
+title: How to achieve Multi Tenancy for Stacks
 categories: how-to-guides/deployment
 lead: ""
 legacy: false
