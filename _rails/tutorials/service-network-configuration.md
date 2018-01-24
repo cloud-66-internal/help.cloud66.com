@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Service network Configuration
+title: Setup Network Configuration for your services
 categories: tutorials
 lead: "Configure the service network"
 legacy: false

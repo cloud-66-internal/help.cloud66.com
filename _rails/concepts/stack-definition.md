@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Stack definition
+title: What is a stack?
 categories: concepts
 lead: ""
 legacy: false

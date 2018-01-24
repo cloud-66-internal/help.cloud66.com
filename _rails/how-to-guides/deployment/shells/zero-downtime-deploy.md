@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Zero-downtime deployments
+title: How to achieve zero-downtime deployments
 categories: how-to-guides/deployment
 lead: ""
 legacy: false

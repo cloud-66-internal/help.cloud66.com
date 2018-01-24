@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Account Management
+title: Manage your account
 categories: references/accounts
 lead: ""
 legacy: false

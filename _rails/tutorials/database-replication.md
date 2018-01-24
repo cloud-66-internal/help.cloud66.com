@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: PostgreSQL Replication
+title: About database replication
 categories: tutorials
 lead: ""
 legacy: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Cloud66 Badge
+title: What is the Cloud66 Badge
 categories: resources
 lead: ""
 legacy: false

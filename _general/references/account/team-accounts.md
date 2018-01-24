@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Team Accounts
+title: About using team accounts
 categories: references/accounts
 lead: ""
 legacy: false

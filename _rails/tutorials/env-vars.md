@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Environment variables
+title: What are environment variables?
 categories: tutorials
 lead: ""
 legacy: false

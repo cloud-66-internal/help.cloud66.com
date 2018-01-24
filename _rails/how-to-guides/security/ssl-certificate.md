@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: SSL Certificate
+title: How to add an SSL Certificate
 categories: how-to-guides/security
 lead: ""
 legacy: false
@@ -20,13 +20,9 @@ To generate a key and certificate signing request, follow the steps below.
 3.  Provide this CSR file to your certificate authority, who will in turn provide you with a certificate (CRT) file.
 4.  Use the original .key file together with this .crt file on Cloud 66.
 
-
-
 ## Important
 
 You cannot use passphrase protected certificate keys with Nginx. Learn how to [remove the passphrases from certificate keys](https://help.cloud66.works/{{ include.product }}/tutorials/2017-02-26-ssl-certificate-issues.html).
-
-
 
 ## Intermediate certificates
 

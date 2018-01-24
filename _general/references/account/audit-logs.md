@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Audit Logs
+title: Audit log for account activities
 categories: references/accounts
 lead: ""
 legacy: false

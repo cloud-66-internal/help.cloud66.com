@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Referral Program
+title: How the Referral Program works
 categories: resources
 lead: ""
 legacy: false

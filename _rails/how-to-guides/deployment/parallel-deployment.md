@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Parallel deployments
+title: What are Parallel deployments?
 categories: how-to-guides/deployment
 lead: ""
 legacy: false
@@ -28,9 +28,7 @@ Although database migrations only occur on one server, depending on the changes,
 To activate parallel deployments, access your [Stack settings](https://help.cloud66.works/{{ include.product }}/toolbelt/settings.html) via [Toolbelt](https://help.cloud66.works/{{ include.product }}/toolbelt/introduction.html) and set `deploy.parallel` to `true`. 
 
 ```
-
 $ cx settings set -s my_stack deploy.parallel true
-
 ```
 Once set, any future deployments will be done in parallel. Should you wish to do a one-off deployment in serial, you can do so by clicking _Deploy_ -> _Deploy with options_ and selecting _Deploy in serial_. Similarly, if you have your stack set to deploy in serial, you can perform a one-off deploying in parallel through this menu.
 

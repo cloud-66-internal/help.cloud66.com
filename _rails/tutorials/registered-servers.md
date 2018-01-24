@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Registered servers
+title: Cloud 66 support for registered servers
 categories: tutorials
 lead: ""
 legacy: false

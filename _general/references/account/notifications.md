@@ -1,7 +1,7 @@
 --- 
 layout: post
 template: one-col
-title: Account Notifications
+title: Setting up Account Notifications
 categories: references/accounts
 lead: ""
 legacy: false

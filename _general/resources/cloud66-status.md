@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Cloud66 Status
+title: What is the Cloud66 Status?
 categories: resources
 lead: ""
 legacy: false

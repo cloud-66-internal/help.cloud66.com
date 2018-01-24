@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Two-step Verification
+title: What is Two-step Verification?
 categories: references/accounts
 lead: ""
 legacy: false

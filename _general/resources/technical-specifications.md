@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Technical specifications
+title: Cloud 66 Technical specifications
 categories: resources
 lead: ""
 legacy: false

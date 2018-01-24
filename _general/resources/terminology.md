@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Terminology
+title: Cloud 66 Terminology
 categories: resources
 lead: ""
 legacy: false

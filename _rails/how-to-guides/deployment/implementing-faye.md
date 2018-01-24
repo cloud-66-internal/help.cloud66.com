@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Faye on Cloud 66
+title: Cloud 66 support for Faye
 categories: how-to-guides/deployment
 lead: ""
 tags: ["websocket"]

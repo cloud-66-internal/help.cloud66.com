@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Failover groups
+title: What is a failover group?
 categories: tutorials
 lead: ""
 legacy: false
