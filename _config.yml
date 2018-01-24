@@ -3,10 +3,6 @@ email: support@cloud66.com
 permalink: /:collection/:path/
 
 collections:
-  general:
-    output: true
-    permalink: /:collection/:path/
-    icon: foundicon-idea
   legacy_docker:
     output: true
     permalink: /:collection/:path/
