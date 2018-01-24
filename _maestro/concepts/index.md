@@ -10,7 +10,6 @@ permalink: /:collection/concepts/index.html
 <div class="Toc Toc--howto">
     <h2>Concepts</h2>
     <ul>
-    {% assign section = site.maestro | where:"categories","concepts" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->

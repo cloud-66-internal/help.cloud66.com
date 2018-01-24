@@ -25,16 +25,14 @@ permalink: /:collection/references/index.html
     <ul>
     {% assign section = site.maestro | where:"categories","references/accounts" | sort: "order" %}
     {% include list_articles.html section=section %}
-    {% assign section = site.general | where:"categories","references/accounts" | sort: "order" %}
-    {% include list_articles.html section=section %}
+    
     </ul>
 
     <h2>Integrations</h2>
     <ul>
     {% assign section = site.maestro | where:"categories","references/integrations" | sort: "order" %}
     {% include list_articles.html section=section %}
-    {% assign section = site.general | where:"categories","references/integrations" | sort: "order" %}
-    {% include list_articles.html section=section %}
+    
     </ul>
 </div><!--/.Toc-->
 

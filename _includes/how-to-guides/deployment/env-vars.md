@@ -52,10 +52,8 @@ When you create a new stack, you are given the option to assign your own environ
 You can set your own by either manually entering them, or uploading a file that contain the variables. This file should use the following format:
 
 ```
-
 KEY_1=value_1
 KEY_2=value_2
-
 ```
 
 If your application relies on specific environment variables to complete the deployment process, it is worth adding them before deploying. 
