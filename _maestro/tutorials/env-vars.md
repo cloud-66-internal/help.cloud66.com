@@ -9,6 +9,6 @@ tags: ["customization"]
 permalink: /:collection/:path
 ---
 
-{% assign product = 'Node' %}
+{% assign product = 'maestro' %}
 
 {% include how-to-guides/deployment/building-a-manifest-file.md product = product %}

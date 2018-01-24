@@ -27,7 +27,7 @@ The manifest file is YAML formatted. You can check its validity at [YAML Lint](h
     
 {% if include.product == 'Rails' %}
 If you'd like to use a _Rails/Rack_ stack, once your `manifest.yml` file is in your `.cloud66` folder and checked in, you can go ahead and build your stack.
-{% elsif include.product == 'legacy_docker' or include.product == 'maestro' %}
+{% elsif include.product == 'legacy_docker' or include.product == 'maestro' or include.product == 'skycap' %}
 If you'd like to use a _Docker_ stack, create it and use the _Advanced_ tab after your code has been analyzed to provide your manifest content.
 {% endif %}
 
@@ -51,22 +51,20 @@ Cross Origin Resource Sharing is a mechanism that allows many resources (e.g. fo
 To get started, open up your `manifest.yml` file in a text editor and enter the following lines in there:
 
 ```
-
 production:
-    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+    {% if include.product != 'legacy_docker' and include.product != 'maestro' and include.produt != 'skycap' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
         configuration:
             nginx:
                 cors:
                     origin: '*'
                     methods: 'GET, OPTIONS'
-
 ```
 
 This is how it works:
 
 **production** The top node is the stack environment node. 
 
-**{% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}** The second level is the *application type* to apply the settings to.
+**{% if include.product != 'legacy_docker' and include.product != 'maestro' and include.produt != 'skycap' %}{{ include.product | downcase }}{% else %}docker{% endif %}** The second level is the *application type* to apply the settings to.
 
 **configuration** As part of the application type, set configuration variables.
 
@@ -87,9 +85,7 @@ Now that your `manifest.yml` file is in place under your `.cloud66` folder, you 
 Although redeploying your stack will set the configuration settings for the stack, it will not automatically push down all the changes to your Nginx servers. To force Nginx configuration changes to be pushed to your servers, we can use a stack setting in the [Cloud 66 toolbelt] called `reconfigure.nginx`. Simply use the following command to push the change (replacing `my_stack` with your stack name):
 
 ```
-
 $ cx settings set -s my_stack reconfigure.nginx true
-
 ```
 
 This will force your Nginx configuration to be rebuilt during the next redeployment. Once you redeploy, the CORS settings will be updated on your web servers.
@@ -140,15 +136,13 @@ The names above suggest which part of the stack the settings apply to. You can f
 
 The third level of the manifest file determines the specific settings for the application type we want to change. As seen in **example 2**, changing CORS settings goes under the **docker** application type and the **configuration** node. 
 
-For example, this is how to set the version of {% if include.product != 'legacy_docker' %}{{ include.product }}{% else %}Docker{% endif %} to `0.90.7`:
+For example, this is how to set the version of {% if include.product != 'legacy_docker' and include.product != 'maestro' and include.produt != 'skycap' %}{{ include.product }}{% else %}Docker{% endif %} to `0.90.7`:
 
 ```
-
 production:
-    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+    {% if include.product != 'legacy_docker' and include.product != 'maestro' and include.produt != 'skycap' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
         configuration:
             version: 0.90.7
-
 ```
 
 ### Third Level (2): Servers
@@ -156,9 +150,8 @@ production:
 As well as stack level configurations, manifest files can have settings per server as well. The **servers** section is where those settings are specified. Here is an example to specify the cloud vendor, region, server size and server name for one of your Docker servers. NOTE: `key_name` is optional and is used to select the named vendor cloud key in the case where there are multiple accounts available for the same cloud provider.
 
 ```
-
 production:
-    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+    {% if include.product != 'legacy_docker' and include.product != 'maestro' and include.produt != 'skycap' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
         servers:
             server:
                 unique_name: app                
@@ -166,6 +159,5 @@ production:
                 size: m3.medium
                 vendor: aws
                 key_name: Default
-
 ```
 

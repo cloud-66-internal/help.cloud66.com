@@ -10,6 +10,6 @@ permalink: /:collection/:path
 ---
 
 
-{% assign product = 'node' %}
+{% assign product = 'maestro' %}
 
 {% include tutorials/getting-started-with-manifest.md product = product %}
