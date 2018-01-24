@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Deploy hooks
+title: What are deploy hooks?
 categories: tutorials
 lead: ""
 legacy: false

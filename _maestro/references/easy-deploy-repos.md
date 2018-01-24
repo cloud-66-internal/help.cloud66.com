@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: EasyDeploy repositories
+title: About EasyDeploy repositories
 categories: references
 lead: ""
 legacy: false

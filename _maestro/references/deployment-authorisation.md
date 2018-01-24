@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Deployment Authorization
+title: About Deployment Authorization
 categories: references
 lead: ""
 legacy: false

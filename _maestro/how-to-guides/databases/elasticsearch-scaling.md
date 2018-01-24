@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Elasticsearch Scaling
+title: Scaling your Elasticsearch cluster
 categories: how-to-guides/databases
 lead: ""
 legacy: false

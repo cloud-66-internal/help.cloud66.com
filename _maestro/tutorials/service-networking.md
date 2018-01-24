@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Service Networking
+title: What is Service Networking?
 categories: tutorials
 lead: ""
 legacy: false

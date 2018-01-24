@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Deployment Profiles
+title: What are Deployment Profiles?
 categories: references
 lead: ""
 legacy: false

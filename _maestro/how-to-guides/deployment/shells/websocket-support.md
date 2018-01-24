@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Cloud 66 WebSocket support
+title: How to deal with a failover group
 categories: how-to-guides/deployment
 lead: ""
 legacy: false

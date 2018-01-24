@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: SSL Certificate
+title: How to add an SSL Certificate
 categories: how-to-guides/security
 lead: ""
 legacy: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Deployment Gateway
+title: How to deploy behind a gateway server
 categories: how-to-guides/deployment
 lead: ""
 legacy: false
