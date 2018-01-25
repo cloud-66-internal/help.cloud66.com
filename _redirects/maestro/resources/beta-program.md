@@ -1,0 +1,3 @@
+---
+newUrl: /maestro/resources/
+---

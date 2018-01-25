@@ -23,8 +23,18 @@ collections:
     output: true
     permalink: /:collection/:path/
     icon: foundicon-idea
+  redirects:
+    output: true
+    permalink: /:path/
 # Build settings
 markdown: kramdown
+
+defaults:
+  -
+    scope:
+      type: redirects
+    values:
+      layout: redirect
 
 sass:
     style:  compressed  # nested|expanded|compact|compressed
