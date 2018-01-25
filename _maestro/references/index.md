@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title:  "Maestro References"
-lead: "In Depth Documentation on Cloud 66 for Node"
+lead: "In Depth Documentation on Cloud 66 Maestro"
 legacy: false
 permalink: /:collection/references/index.html
 ---

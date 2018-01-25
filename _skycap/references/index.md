@@ -1,8 +1,8 @@
 ---
 layout: post
 template: one-col
-title:  "Maestro References"
-lead: "In Depth Documentation on Cloud 66 for Node"
+title:  "Skycap References"
+lead: "In Depth Documentation on Cloud 66 for Skycap"
 legacy: false
 permalink: /:collection/references/index.html
 ---

@@ -30,13 +30,16 @@
             {% assign section = include.collection | where:"categories","references" | sort: "order" %}
             <li><h3><a href="/{{product}}/references">References</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
+            <li>&mdash;</li>
             {% assign section = include.collection | where:"categories","references/toolbelt" | sort: "order" %}            
             {% include left_nav_list.html section=section current=page %}
             <li>&mdash;</li>
-            
+            {% assign section = include.collection | where:"categories","references/accounts" | sort: "order" %}            
+            {% include left_nav_list.html section=section current=page %}
             <li>&mdash;</li>
             
-            <li>&mdash;</li>
+            {% assign section = include.collection | where:"categories","references/integrations" | sort: "order" %}            
+            {% include left_nav_list.html section=section current=page %}
             
         </ul>
 
@@ -53,12 +56,10 @@
         </ul>
 
         <ul class="menu-root">
-            /resources">Resources</a></h3></li>
+            <li><h3><a href="/{{product}}/resources">Resources</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
             {% assign section = include.collection | where:"categories","resources" | sort: "order" %}
-            {% include left_nav_list.html section=section current=page %}
-            <li>&mdash;</li>
-            
+            {% include left_nav_list.html section=section current=page %}            
         </ul>
 </nav>
 

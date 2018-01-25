@@ -2,8 +2,9 @@
 layout: post
 template: one-col
 title: Connecting to Docker Image Repository
-categories: getting-started
+categories: how-to-guides/deployment
 lead: ""
+tags: ["customization", "docker"]
 legacy: false
 permalink: /:collection/:path
 ---

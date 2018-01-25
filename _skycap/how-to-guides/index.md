@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Maestro How-to Guides"
+title:  "Skycap How-to Guides"
 categories: how-to-guides
 lead: How to properly use Cloud 66 for Node
 legacy: false
@@ -13,20 +13,18 @@ permalink: /:collection/:categories/index.html
     <ul>
     {% assign section = site.skycap | where:"categories","how-to-guides/deployment" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
     </ul>
-
+<!--
     <h2>Using Databases</h2>
     <ul>
     {% assign section = site.skycap | where:"categories","how-to-guides/databases" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
     </ul>
 
     <h2>Securing Your Applications</h2>
     <ul>
     {% assign section = site.skycap | where:"categories","how-to-guides/security" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
     </ul>
+-->
 </div><!--/.Toc-->

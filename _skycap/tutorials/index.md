@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Maestro Tutorials"
+title:  "Skycap Tutorials"
 lead: "Learn about Cloud 66 by exampls"
 legacy: false
 permalink: /:collection/tutorials/index.html

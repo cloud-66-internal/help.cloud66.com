@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Maestro Resources"
+title:  "Skycap Resources"
 lead: "Useful Resources About Cloud 66"
 legacy: false
 permalink: /:collection/resources/index.html
