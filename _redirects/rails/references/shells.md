@@ -1,0 +1,3 @@
+---
+newUrl: /rails/references/
+---

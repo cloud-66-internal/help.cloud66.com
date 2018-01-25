@@ -1,7 +1,7 @@
 <nav class="list">
         <div class="sticky-sidebar">
             <h2 class="product-title" id="{{title}}-product-heading">
-                {{ page.collection | capitalize | replace:"_"," " }} Documentation
+                {% if page.collection == 'legacy_docker' %}Docker{% else %}{{ page.collection | capitalize | replace:"_"," " }}{% endif %} Documentation
             </h2>
         </div>
         {% assign product = page.collection | downcase %}
@@ -15,10 +15,7 @@
             {% assign deployments = include.collection | where:"categories","how-to-guides/deployment" | sort: "order" %}
             {% assign databases = include.collection | where:"categories","how-to-guides/databases" | sort: "order" %}
             {% assign security = include.collection | where:"categories","how-to-guides/security" | sort: "order" %}
-            {% assign g_deployments = site.general | where:"categories","how-to-guides/deployment" | sort: "order" %}
-            {% assign g_databases = site.general | where:"categories","how-to-guides/databases" | sort: "order" %}
-            {% assign g_security = site.general | where:"categories","how-to-guides/security" | sort: "order" %}
-
+            
             <li><h3><a href="/{{product}}/how-to-guides">How-to Guides</a></h3></li>
             {% include left_nav_list.html section=deployments current=page %}
             {% include left_nav_list.html section=g_deployments current=page %}
@@ -27,24 +24,23 @@
             {% include left_nav_list.html section=g_databases current=page %}
             <li>&mdash;</li>
             {% include left_nav_list.html section=security current=page %}
-            {% include left_nav_list.html section=g_security current=page %}
         </ul>
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","references" | sort: "order" %}
             <li><h3><a href="/{{product}}/references">References</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
+            <li>&mdash;</li>
             {% assign section = include.collection | where:"categories","references/toolbelt" | sort: "order" %}            
             {% include left_nav_list.html section=section current=page %}
             <li>&mdash;</li>
-            {% assign section = site.general | where:"categories","references/toolbelt" | sort: "order" %}            
+            {% assign section = include.collection | where:"categories","references/accounts" | sort: "order" %}            
             {% include left_nav_list.html section=section current=page %}
             <li>&mdash;</li>
-            {% assign section = site.general | where:"categories","references/accounts" | sort: "order" %}            
+            
+            {% assign section = include.collection | where:"categories","references/integrations" | sort: "order" %}            
             {% include left_nav_list.html section=section current=page %}
-            <li>&mdash;</li>
-            {% assign section = site.general | where:"categories","references/integrations" | sort: "order" %}            
-            {% include left_nav_list.html section=section current=page %}
+            
         </ul>
 
         <ul class="menu-root">
@@ -60,14 +56,9 @@
         </ul>
 
         <ul class="menu-root">
-            {% assign section = site.general | where:"categories","resources" | sort: "order" %}
             <li><h3><a href="/{{product}}/resources">Resources</a></h3></li>
-            {% include left_nav_list.html section=section current=page %}
             {% assign section = include.collection | where:"categories","resources" | sort: "order" %}
-            {% include left_nav_list.html section=section current=page %}
-            <li>&mdash;</li>
-            {% assign section = site.general | where:"categories","resources/beta-program" | sort: "order" %}
-            {% include left_nav_list.html section=section current=page %}
+            {% include left_nav_list.html section=section current=page %}            
         </ul>
 </nav>
 

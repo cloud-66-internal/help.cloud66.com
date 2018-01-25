@@ -1,5 +1,4 @@
 ---
-menuheaders: [ "About migrating from Heroku", "What server size do I need?", "Migrating", "1. Code", "2. Data", "3. Traffic", "Useful pointers", "Web server and Procfile", "Dyno recyling", "Asset Pipeline Compilation" ]
 layout: post
 template: one-col
 title: Migrate from Heroku to Cloud66

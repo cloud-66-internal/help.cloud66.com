@@ -2,12 +2,17 @@
 layout: post
 template: one-col
 title:  "Skycap Tutorials"
-categories: tutorials
-lead: Tutorials for Cloud 66 Skycap
+lead: "Learn about Cloud 66 by exampls"
 legacy: false
-permalink: /:collection/:categories/index.html
+permalink: /:collection/tutorials/index.html
 ---
-- [Accessing your Git repository](1901-01-26-access-your-code)
-- [Use GitHub with Cloud 66](2015-09-22-github)
-- [Manage your stacks from Slack with ChatOps](manage-stacks-chatops)
+
+<div class="Toc Toc--howto">
+    <h2>Tutorials</h2>
+    <ul>
+    {% assign section = site.skycap | where:"categories","tutorials" | sort: "order" %}
+    {% include list_articles.html section=section %}
+    </ul>
+</div><!--/.Toc-->
+
 
