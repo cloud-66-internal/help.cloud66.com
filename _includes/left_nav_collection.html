@@ -1,7 +1,7 @@
 <nav class="list">
         <div class="sticky-sidebar">
             <h2 class="product-title" id="{{title}}-product-heading">
-                {{ page.collection | capitalize | replace:"_"," " }} Documentation
+                {% if page.collection == 'legacy_docker' %}Docker{% else %}{{ page.collection | capitalize | replace:"_"," " }}{% endif %} Documentation
             </h2>
         </div>
         {% assign product = page.collection | downcase %}
@@ -57,7 +57,6 @@
 
         <ul class="menu-root">
             <li><h3><a href="/{{product}}/resources">Resources</a></h3></li>
-            {% include left_nav_list.html section=section current=page %}
             {% assign section = include.collection | where:"categories","resources" | sort: "order" %}
             {% include left_nav_list.html section=section current=page %}            
         </ul>

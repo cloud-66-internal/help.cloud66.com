@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Maestro How-to Guides"
 categories: how-to-guides
-lead: How to properly use Cloud 66 for Node
+lead: How to properly use Cloud 66 Maestro
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
