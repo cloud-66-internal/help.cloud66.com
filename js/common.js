@@ -1,7 +1,13 @@
 $(function () {
     $(document).on( 'keyup', 'input.ais-search-box--input', function(){
         var searchTerm = $(this).val();
-        searchTerm.length > 2 ? $('#js_hits').fadeIn() : $('#js_hits').hide();
+        searchTerm.length > 2 ? $('#hits').fadeIn() : $('#hits').hide();
+    });
+    $(document).on( 'keydown', 'input.ais-search-box--input', function( event ){
+        if ( event.keyCode == 13 ) {
+            event.preventDefault();
+            return false;
+        }
     });
 });
 
