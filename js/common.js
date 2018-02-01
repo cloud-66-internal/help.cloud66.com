@@ -1,7 +1,7 @@
 $(function () {
     $(document).on( 'keyup', 'input.ais-search-box--input', function(){
         var searchTerm = $(this).val();
-        searchTerm.length > 3 ? $('#js_hits').fadIn() : $('#js_hits').hide();
+        searchTerm.length > 2 ? $('#js_hits').fadIn() : $('#js_hits').hide();
     });
 });
 
