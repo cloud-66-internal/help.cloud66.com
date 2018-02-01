@@ -24,41 +24,38 @@
     <link rel="icon" href="/images/ui/favicon.ico" type="image/png">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.2.1/dist/instantsearch.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.2.1/dist/instantsearch.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.2.1/dist/instantsearch-theme-algolia.min.css">
-
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.js"></script>
 
     <script>
     document.addEventListener("DOMContentLoaded", function(event) {
-
         var search = instantsearch({
             appId: 'TXUI53WBEH',
             apiKey: 'abdf284bf870bdd1beff87179eadcb07',
-            indexName: 'help-new',
+            indexName: 'help',
             urlSync: true
         });
 
         // initialize SearchBox
         search.addWidget(
             instantsearch.widgets.searchBox({
-                container: '#js_search_box',
+                container: '#search_box',
                 placeholder: 'Search Documentation'
             })
         );
 
-        // initialize hits widget
         {% raw %}
+        // initialize hits widget
            search.addWidget(
             instantsearch.widgets.hits({
-              container: '#js_hits',
+              container: '#hits',
               templates: {
                 empty: 'No results',
-                item: '<h6><a href="{{{ url }}}">{{{ title }}}</a></h6> \n{{{ raw_html }}}\n\n'
+                item: '<h6><a href="{{ url }}">{{ title }}</a></h6> \n{{ raw_html }}\n\n'
               }
             })
           );
-        {%endraw%}
+        {% endraw %}
 
         search.start();
   });

@@ -41,9 +41,12 @@ sass:
 
 safe: false
 
-plugins:
-  - algoliasearch-jekyll
-
 algolia:
   application_id: 'TXUI53WBEH'
   index_name:     'help'
+  record_css_selector: 'p,ul'
+  settings:
+    attributesToSnippet: ['raw_html:100']
+    attributeForDistinct: 'title'
+    distinct: true
+    removeWordsIfNoResults: 'lastWords'
