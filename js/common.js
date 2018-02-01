@@ -7,6 +7,11 @@ $(function () {
             $('header.js_header').addClass('Header--minified');
         }
     });
+
+    $(document).on( 'keyup', 'input.ais-search-box--input', function(){
+        var searchTerm = $(this).val();
+        searchTerm.length > 3 ? $('#js_hits').show() : $('#js_hits').hide();
+    });
 });
 
 (function () {
