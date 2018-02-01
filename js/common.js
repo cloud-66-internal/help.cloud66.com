@@ -1,16 +1,7 @@
 $(function () {
-    $(window).scroll(function () {
-        var top_offset = $(window).scrollTop();
-        if (top_offset === 0) {
-            $('header.js_header').removeClass('Header--minified');
-        } else {
-            $('header.js_header').addClass('Header--minified');
-        }
-    });
-
     $(document).on( 'keyup', 'input.ais-search-box--input', function(){
         var searchTerm = $(this).val();
-        searchTerm.length > 3 ? $('#js_hits').show() : $('#js_hits').hide();
+        searchTerm.length > 3 ? $('#js_hits').fadIn() : $('#js_hits').hide();
     });
 });
 
