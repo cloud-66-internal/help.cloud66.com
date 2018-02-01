@@ -4,7 +4,7 @@ title: Getting started with Skycap
 categories: quickstarts
 legacy: false
 tags: ["getting started"]
-lead:
+lead: Use Skycap to automatically turn your source code into container (Docker) images
 permalink: /:collection/:path
 ---
 
@@ -21,7 +21,7 @@ permalink: /:collection/:path
 
 <ul>
     <li>
-        <p><strong>A Cloud 66 Account</strong> &mdash; If you don't already have one <a href="https://app.cloud66.com/users/sign_up" target="_blank">Sign up for a Cloud 66 account</a>. There is a free community plan and you'll get full unlimited access to all products free for 14 days.</p>
+        <p><strong>A Cloud 66 Account</strong> &mdash; If you don't already have one <a href="https://app.cloud66.com/users/sign_up" target="_blank">Sign up for a Cloud 66 account</a>. There's a free community plan and you'll get full unlimited access to all products free for 14 days.</p>
     </li>
     <li>
         <p><strong>A Git Repo containing your application code</strong> &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.</p>
@@ -48,7 +48,8 @@ permalink: /:collection/:path
     <a href="#get-started" class="headerlink" title="Get Started"></a>
     Lets Get Started
 </h2>
-<p>New users should click start trial for the Skycap product. If you're already using Cloud 66 just click <em>New Stack</em> button on the dashboard.</p>
+
+<p>New users should click <em>start trial</em> for the Skycap product. If you're already using Cloud 66 just click <em>New Stack &rarr; Skycap <span class="u-textSmall">(Build containers)</span></em> button on the dashboard.</p>
 
 <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
     <div class="Grid-cell">

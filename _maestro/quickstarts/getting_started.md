@@ -4,7 +4,7 @@ title: Getting started with Maestro
 categories: quickstarts
 legacy: false
 tags: ["getting started"]
-lead:
+lead: Deploy and manage your containers on any cloud
 permalink: /:collection/:path
 ---
 
@@ -114,8 +114,8 @@ permalink: /:collection/:path
     </div>
     <div class="Grid-cell">
         <h4>Add another server</h4>
-        <p class="u-textSmall">Click the <em>Add another server</em> button and a new data source server will appear above.</p>
-        <p class="u-textSmall">Next click the <em>Add data source</em> link.</p>
+        <p class="u-textSmall">Click the <em>Add Another Server</em> button and a new data source server will appear above.</p>
+        <p class="u-textSmall">Next click the <em>Add Data Source</em> link.</p>
     </div>
 </div>
 
@@ -146,9 +146,11 @@ permalink: /:collection/:path
         <img src="/assets/maestro/maestro_cloud_region.png" alt="Choose a cloud and region">
     </div>
     <div class="Grid-cell">
-        <p class="u-textSmall">Now we need to choose a cloud provider for the deployment. We'll use <em>DigitalOcean</em> and deploy the stack to the <em>London, UK</em> region.</p>
         <p class="u-textSmall">
-            You can also deploy to your own servers, first <a href="http://help.cloud66.com/deployment/registered-servers">add them as registered servers</a>.
+            Now we need to choose a cloud provider for the deployment. We'll use <em>DigitalOcean</em> and deploy the application to the <em>London, UK</em> region.
+        </p>
+        <p class="u-textSmall">
+            You can also deploy to your own servers. First you need to <a href="http://help.cloud66.com/deployment/registered-servers">add them as registered servers</a>.
         </p>
     </div>
 </div>
@@ -160,16 +162,18 @@ permalink: /:collection/:path
 
 <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
     <div class="Grid-cell">
-        <p>The server size can be set by clicking on the cog icon at the top right of each server.</p>
+        <p>The server size can be set by clicking on the cog at the top right of each server.</p>
     </div>
     <div class="Grid-cell">
-        <img style="margin-top: 1.2em" width="230" src="/assets/maestro/maestro_configure_servers.png" alt="Configure Server Size">
+        <img style="margin-top: 1.6em" width="250" src="/assets/maestro/maestro_configure_servers.png" alt="Configure Server Size">
     </div>
 </div>
 
 <div style="overflow: hidden; border: 1px solid #ddd; border-radius: 4px; margin: 2em 0; max-width: 500px">
     <img src="/assets/maestro/maestro_server_size_modal.png" alt="Configure Server Size">
 </div>
+
+<p>In production environments we suggest using a server with at least 1GB of memory and 4 cores. <a href="https://help.cloud66.com/getting-started/choosing-server-size">Learn more about choosing the right size for your servers</a>.</p>
 
 <h2 id="deployment">
     <a href="#deployment" class="headerlink" title="Deployment"></a>
