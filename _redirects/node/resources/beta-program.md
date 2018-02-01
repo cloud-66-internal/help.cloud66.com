@@ -1,0 +1,3 @@
+---
+newUrl: /node/resources/
+---

@@ -7,14 +7,6 @@ legacy: true
 permalink: /:collection/:categories/index.html
 ---
 
-Cloud 66 Docker supports the following features:
+<p class="lead">Cloud 66 Docker supports the following features:</p>
 
-- [Getting Started](getting-started)
-- [Deployment](deployment)
-- [Databases](databases)
-- [Stack Management](stack-management)
-- [Toolbelt](toolbelt)
-- [AddIns](addins)
-- [Failover Groups](failover-groups)
-- [Tutorials](tutorials)
-- [Troubleshooting](troubleshooting)
+{% include category_nav.html %}

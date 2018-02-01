@@ -1,8 +1,7 @@
 ---
-menuheaders: [ "Introduction", "Implementation", "1. RAILS_ROOT/.cloud66/deploy_hooks.yml", "2. RAILS_ROOT/.cloud66/files/add_thin_and_faye.sh", "3. RAILS_ROOT/Procfile", "4. RAILS_ROOT/faye/config.ru", "Troubleshooting" ]
 layout: post
 template: one-col
-title: Faye on Cloud 66
+title: Cloud 66 support for Faye
 categories: how-to-guides/deployment
 lead: ""
 tags: ["websocket"]
