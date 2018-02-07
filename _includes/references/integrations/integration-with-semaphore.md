@@ -1,14 +1,3 @@
----
-layout: post
-template: one-col
-title: Integration With Semaphore
-categories: references/integrations
-lead: ""
-legacy: false
-tags: ["operations"]
-permalink: /:collection/:path
----
-{% assign product = "General" %}
 
 What follows is how to integrate [Semaphore](https://semaphoreapp.com) with Cloud 66.
 
