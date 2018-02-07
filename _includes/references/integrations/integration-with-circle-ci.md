@@ -1,14 +1,3 @@
----
-layout: post
-template: one-col
-title: Integration with Circle CI
-categories: references/integrations
-lead: ""
-legacy: false
-tags: ["operations"]
-permalink: /:collection/:path
----
-{% assign product = "General" %}
 
 You can use Circle CI to accomplish continuous integration and deployment of your application together with Cloud 66.
 
