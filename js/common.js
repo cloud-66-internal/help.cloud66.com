@@ -9,6 +9,12 @@ $(function () {
             return false;
         }
     });
+    $(document.body).click( function(e) {
+        console.log('clicked');
+        if ( $(e.target).parents('.ais-hits--item').length === 0 ) {
+            $('#hits').hide();
+        }
+    });
 });
 
 (function () {
