@@ -1,14 +1,3 @@
----
-layout: post
-template: one-col
-title: Integration With Weave Scope
-categories: references/integrations
-lead: ""
-legacy: false
-tags: ["operations"]
-permalink: /:collection/:path
----
-
 
 ## Step 1: Checkout your CustomConfig
 
