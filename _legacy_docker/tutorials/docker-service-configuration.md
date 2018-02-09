@@ -190,7 +190,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> The automatically configured traffic names in your Nginx config that will route traffic to these containers based on request DNS name. Allows microservices on the same port routes by subdomain for instance. </td> 
     </tr> 
     <tr> 
-     <td> <a href="//{{ include.product }}/stack-management/service-storage.html">volumes</a> </td> 
+     <td> <a href="/legacy_docker/how-to-guides/deployment/service-storage.html">volumes</a> </td> 
      <td> The volumes that are mounted from your host into your container. <span style="background-color: #FFFF00"><strong>Note:</strong>it must be absolute path.</span> </td> 
     </tr> 
     <tr> 

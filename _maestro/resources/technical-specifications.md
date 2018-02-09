@@ -10,4 +10,6 @@ permalink: /:collection/:path
 ---
 
 
-{%include resources/technical-specifications.md %}
+{% assign product = 'maestro' %}
+
+{%include resources/technical-specifications.md product = product %}

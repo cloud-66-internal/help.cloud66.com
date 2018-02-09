@@ -224,7 +224,7 @@ toc2:
           - page: Service Resources
             url: /legacy_docker/stack-management/service-resources.html
           - page: Service Storage
-            url: /legacy_docker/stack-management/service-storage.html
+            url: /legacy_docker/how-to-guides/deployment/service-storage.html
           - page: Scaling
             url: /legacy_docker/stack-management/scaling.html
           - page: Logging
@@ -549,7 +549,7 @@ toc2:
           - page: Service Resources
             url: /maestro/stack-management/service-resources.html
           - page: Service Storage
-            url: /maestro/stack-management/service-storage.html
+            url: /maestro/how-to-guides/deployment/service-storage.html
           - page: Scaling
             url: /maestro/stack-management/scaling.html
           - page: Logging

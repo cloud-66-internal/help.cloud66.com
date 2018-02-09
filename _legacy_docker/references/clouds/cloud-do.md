@@ -4,7 +4,7 @@ template: one-col
 title: DigitalOcean cloud
 categories: references/clouds
 lead: ""
-legacy: false
+legacy: true
 tags: ["operations"]
 permalink: /:collection/:path
 ---

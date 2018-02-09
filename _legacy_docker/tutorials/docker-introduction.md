@@ -45,7 +45,7 @@ Cloud 66 Docker includes the following:
    {% if include.product == "skycap" %}- [Container life-cycle management](/maestro/stack-management/service-lifecycle-management.html){% else %}- [Container life-cycle management](/{{ include.product }}/stack-management/service-lifecycle-management.html){% endif %}
    - [BuildGrid](/skycap/deployment/buildgrid/)
    - [Networking layer and DNS](/{{ include.product }}/deployment/service-network-configuration.html)
-   {% if include.product == "skycap" %}- [Storage layer](/maestro/stack-management/service-storage.html){% else %}- [Storage layer](/{{ include.product }}/stack-management/service-storage.html){% endif %}
+   {% if include.product == "skycap" %}- [Storage layer](/maestro/how-to-guides/deployment/service-storage.html){% else %}- [Storage layer](/{{ include.product }}/how-to-guides/deployment/service-storage.html){% endif %}
    - [Docker scaling]({% if include.product == "skycap" %}/maestro/stack-management/scaling.html{% else %}/{{ include.product }}/stack-management/scaling.html{% endif %})
 Docker-based stacks enjoy the same benefits as other Cloud 66 stacks, including: 
    - [Deployed and managed databases]({% if include.product == "skycap" %}/maestro/databases/database-management.html{% else %}/{{ include.product }}/databases/database-management.html{% endif %})

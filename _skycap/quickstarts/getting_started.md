@@ -140,6 +140,6 @@ permalink: /:collection/:path
     Deploying your Containers
 </h2>
 
-<p>Once you've built your images and you're ready to deploy your app, check out <a href="/maestro/quickstarts/getting_started">Getting started with Maestro</a>.</p>
+<p>Once you've built your images and you're ready to deploy your app, check out <a href="/maestro/quickstarts/getting_started.html">Getting started with Maestro</a>.</p>
 
 

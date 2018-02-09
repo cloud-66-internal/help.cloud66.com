@@ -38,7 +38,7 @@ permalink: /:collection/:path
     Lets Get Started
 </h2>
 
-<p>This guide assumes that you already have container images that you want to deploy. If you need to learn how to build images or pull existing images from a repo please read <a href="/skycap/quickstarts/getting_started">Getting started with Skycap</a>.</p>
+<p>This guide assumes that you already have container images that you want to deploy. If you need to learn how to build images or pull existing images from a repo please read <a href="/skycap/quickstarts/getting_started.html">Getting started with Skycap</a>.</p>
 
 
 
