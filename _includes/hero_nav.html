@@ -3,7 +3,7 @@
         <div class="Grid-cell">
             {% for collection in site.collections %}
             {% unless collection.label == 'posts' %}
-            <a href="{{ collection.label }}/index.html">
+            <a href="{{ collection.label }}">
                 <h2 class="hero-title">{{ collection.label }}</h2>
             </a>
             {% endunless %}
