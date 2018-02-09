@@ -10,7 +10,7 @@ permalink: /:collection/:path
 ---
 {% assign product = "common" %}
 
-In addition to protecting your application (or parts of it) using [HTTP basic authentication](https://help.cloud66.works/{{ include.product }}/tutorials/2012-01-03-nginx-auth.html), you can use Cloud 66 [CustomConfig](https://help.cloud66.works/{{ include.product }}/stack-management/custom-config.html) to block (or allow) access to your application based on IP addresses.
+In addition to protecting your application (or parts of it) using [HTTP basic authentication](/{{ include.product }}/tutorials/2012-01-03-nginx-auth.html), you can use Cloud 66 [CustomConfig](/{{ include.product }}/stack-management/custom-config.html) to block (or allow) access to your application based on IP addresses.
 
 Follow the instructions below to accomplish this.
 
@@ -26,7 +26,7 @@ Follow the instructions below to accomplish this.
 		allow 1.2.3.4/24; deny all; 
 	There are lots of resources about this syntax on the Internet in case you need more guidance.
 
-3.  Now we can go ahead and customize the Nginx configuration, which you can see more about in our [Nginx CustomConfig documentation](http://help.cloud66.works/{{ include.product }}/deployment/nginx).
+3.  Now we can go ahead and customize the Nginx configuration, which you can see more about in our [Nginx CustomConfig documentation](/{{ include.product }}/how-to-guides/deployment/nginx-modules.html).
 	
 	You will want to add the following code within the http section of your configuration, for example on line 22.
 

@@ -94,7 +94,7 @@ To disable replication between stacks, visit your stack detail page, click on th
 
 To add a slave database server you need to follow the below steps. To add multiple you need to scale up one by one.
 
-1.   Set up a managed backup via [add-ins](https://help.cloud66.com/{{ include.product }}/addins/add-in-implementation.html) if you don't have any.
+1.   Set up a managed backup via add-ins if you don't have any.
 2.   Go on your stack page, database servers page (eg. _PostgreSQL Servers_)
 3.   On the right sidebar click on _SCALEUP DATABASE_ (the button will not be shown if you have not set up database backups)
 
@@ -103,5 +103,5 @@ To add a slave database server you need to follow the below steps. To add multip
 
 From time-to-time your slave database may go out of sync with its master. You can use our toolbelt to re-synchronize them.
 
-To re-synch them, have a look at our documentation on [Toolbelt database management](https://help.cloud66.com/{{ include.product }}/toolbelt/databases.html).
+To re-synch them, have a look at our documentation on [Toolbelt database management](/{{ include.product }}/references/shells/toolbelt.html#database-management).
 

@@ -13,7 +13,7 @@ In addition to this, you'll be able to define which Ruby version you'd like to d
 
 You can also determine details about your deployment, such as where to deploy the MySQL server. Once you hit _Deploy_, we'll set up your servers and deploy your app to them. You'll see exactly what's happening at every step of the way, and once it's done, you'll be able to manage your stack.
 
-When you push code changes to your GitHub repository, you can simply click _Deploy stack now_ to push this code to your servers. You can also set up continuous deployment by adding a Cloud 66 [redeployment hook](http://help.cloud66.com/deployment/redeployment-hooks) to your GitHub repository.
+When you push code changes to your GitHub repository, you can simply click _Deploy stack now_ to push this code to your servers. You can also set up continuous deployment by adding a Cloud 66 [redeployment hook](http://help.cloud66.com/{{ include.product }}/tutorials/redeployment-hook.html) to your GitHub repository.
 
 Visiting the URL or IP of the server, you can see your application running.
 

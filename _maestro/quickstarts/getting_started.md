@@ -38,7 +38,7 @@ permalink: /:collection/:path
     Lets Get Started
 </h2>
 
-<p>This guide assumes that you already have container images that you want to deploy. If you need to learn how to build images or pull existing images from a repo please read <a href="/skycap/quickstarts/getting_started">Getting started with Skycap</a>.</p>
+<p>This guide assumes that you already have container images that you want to deploy. If you need to learn how to build images or pull existing images from a repo please read <a href="/skycap/quickstarts/getting_started.html">Getting started with Skycap</a>.</p>
 
 
 
@@ -150,7 +150,7 @@ permalink: /:collection/:path
             Now we need to choose a cloud provider for the deployment. We'll use <em>DigitalOcean</em> and deploy the application to the <em>London, UK</em> region.
         </p>
         <p class="u-textSmall">
-            You can also deploy to your own servers. First you need to <a href="http://help.cloud66.com/deployment/registered-servers">add them as registered servers</a>.
+            You can also deploy to your own servers. First you need to <a href="/maestro/tutorials/registered-servers.html">add them as registered servers</a>.
         </p>
     </div>
 </div>

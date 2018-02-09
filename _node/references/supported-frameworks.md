@@ -25,6 +25,6 @@ During the analyse phase of your codebase we take a look at your `package.json` 
 *    Koa
 
 If your favorite framework isn't supported, you can still deploy your application using this 
-[guidelines](application-settings-node.html)
+[guidelines](/node/how-to-guides/deployment/application-settings-node.html)
 .
 

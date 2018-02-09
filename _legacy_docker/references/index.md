@@ -25,14 +25,18 @@ permalink: /:collection/references/index.html
     <ul>
     {% assign section = site.legacy_docker | where:"categories","references/accounts" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
     </ul>
 
     <h2>Integrations</h2>
     <ul>
     {% assign section = site.legacy_docker | where:"categories","references/integrations" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
+    </ul>
+
+    <h2>Clouds</h2>
+    <ul>
+    {% assign section = site.legacy_docker | where:"categories","references/clouds" | sort: "order" %}
+    {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->
 

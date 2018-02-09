@@ -29,7 +29,7 @@ This is all you need to trigger automatic building of `my_service` Docker image 
 
 The built image is then pulled from this repository on all the applicable servers and managed.
 
-Find more information on [BuildGrid configuration in service.yml](https://help.cloud66.works/skycap/deployment/building-your-service.html).
+Find more information on [BuildGrid configuration in service.yml](/skycap/deployment/building-your-service.html).
 
 
 ## Envoironment variables in BuildGrid
@@ -57,5 +57,5 @@ Cloud 66 for Docker Deployments consist of 2 steps: Build and Publish. Build ste
 
 You can choose to run each of these steps separately through the BuildGrid UI or command line.
 
-Find more information about [Build and Publish configurations](/deployment/deployment-profiles).
+Find more information about [Build and Publish configurations](/legacy_docker/references/deployment-profiles.html).
 

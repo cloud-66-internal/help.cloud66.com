@@ -2,7 +2,7 @@
 
 ## What is a manifest file?
 
-A manifest files allows you to be more explicit about your stack composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your stack. If you're already familiar with manifest files, refer to [Building a manifest file](https://help.cloud66.works/{{include.product}}/deployment/building-a-manifest-file.html).
+A manifest files allows you to be more explicit about your stack composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your stack. If you're already familiar with manifest files, refer to [Building a manifest file](/{{include.product}}/deployment/building-a-manifest-file.html).
 
 These are just some examples of the settings you can control with a manifest file:
 

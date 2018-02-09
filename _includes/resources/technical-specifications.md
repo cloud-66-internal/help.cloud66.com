@@ -4,18 +4,18 @@
 Your servers are deployed with **Ubuntu 16.04 LTS**.
 
 
+{% if include.product != 'skycap' %}
 ## Supported cloud providers
 
 Cloud 66 currently supports the following cloud providers:
-
-*   [Amazon Web Services](/deployment/amazon-web-services-cloud)
-*   [Digital Ocean](/deployment/digitalocean-cloud)
-*   [Google Compute Engine](/deployment/google-compute-engine-cloud)
-*   [Linode](/deployment/linode-cloud)
-*   [Microsoft Azure](/deployment/microsoft-azure-cloud)
-*   [Rackspace](/deployment/rackspace-cloud)
-*   [CloudA](/deployment/cloud-a-cloud)
-
+*   [Amazon Web Services](/{{include.product}}/references/clouds/cloud-aws.html)
+*   [Digital Ocean](/{{include.product}}/references/clouds/cloud-do.html)
+*   [Google Compute Engine](/{{include.product}}/references/clouds/cloud-gce.html)
+*   [Linode](/{{include.product}}/references/clouds/cloud-linode.html)
+*   [Microsoft Azure](/{{include.product}}/references/clouds/cloud-azure.html)
+*   [Rackspace](/{{include.product}}/references/clouds/cloud-rackspace.html)
+*   [CloudA](/{{include.product}}/references/clouds/cloud-clouda.html)
+{% endif %}
 
 ## Supported frameworks
 
@@ -36,7 +36,7 @@ We don't have fine-grain control over the version, and use the latest version av
 
 Cloud 66 maintains an internal list of versions for most components built from source, which is updated periodically after testing.
 
-You are free to specify a version for a number of components in your [manifest file](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html).
+You are free to specify a version for a number of components in your [manifest file](/{{ include.product }}/deployment/getting-started-with-manifest-files.html).
 
 
 

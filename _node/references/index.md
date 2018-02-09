@@ -32,6 +32,12 @@ permalink: /:collection/references/index.html
     {% assign section = site.node | where:"categories","references/integrations" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
+
+    <h2>Clouds</h2>
+    <ul>
+    {% assign section = site.node | where:"categories","references/clouds" | sort: "order" %}
+    {% include list_articles.html section=section %}
+    </ul>
 </div><!--/.Toc-->
 
 
