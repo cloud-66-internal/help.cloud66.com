@@ -7,7 +7,7 @@
 
         <ul class="menu-root">
             {% assign section = site.rails | where:"categories","quickstarts" | sort: "order" %}
-            <li><h3 class="u-flushTop"><a href="quickstarts">Quickstarts</a></h3></li>
+            <li><h3 class="u-flushTop"><a href="quickstarts/index.html">Quickstarts</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
@@ -16,7 +16,7 @@
             {% assign databases = site.rails | where:"categories","how-to-guides/databases" | sort: "order" %}
             {% assign security = site.rails | where:"categories","how-to-guides/security" | sort: "order" %}
 
-            <li><h3><a href="how-to-guides">How-to Guides</a></h3></li>
+            <li><h3><a href="how-to-guides/index.html">How-to Guides</a></h3></li>
             {% include left_nav_list.html section=deployments current=page %}
             <li>--</li>
             {% include left_nav_list.html section=databases current=page %}
@@ -26,25 +26,25 @@
 
         <ul class="menu-root">
             {% assign section = site.rails | where:"categories","tutorials" | sort: "order" %}
-            <li><h3><a href="tutorials">Tutorials</a></h3></li>
+            <li><h3><a href="tutorials/index.html">Tutorials</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
         <ul class="menu-root">
             {% assign section = site.rails | where:"categories","tutorials" | sort: "order" %}
-            <li><h3><a href="references">References</a></h3></li>
+            <li><h3><a href="references/index.html">References</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
         <ul class="menu-root">
             {% assign section = site.rails | where:"categories","concepts" | sort: "order" %}
-            <li><h3><a href="concepts">Concepts</a></h3></li>
+            <li><h3><a href="concepts/index.html">Concepts</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
         <ul class="menu-root">
             {% assign section = site.rails | where:"categories","resources" | sort: "order" %}
-            <li><h3><a href="resources">Resources</a></h3></li>
+            <li><h3><a href="resources/index.html">Resources</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 </nav>
