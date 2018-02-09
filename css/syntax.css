@@ -47,6 +47,9 @@ td.code > pre {
     margin: 0 !important;
 }
 
+div.highlight pre.highlight {
+    padding: 0;
+}
 
 /*
  * Theme for the Pygments syntax highlighter used by Jekyll
