@@ -29,7 +29,7 @@ This is all you need to trigger automatic building of `my_service` Docker image 
 
 The built image is then pulled from this repository on all the applicable servers and managed.
 
-Find more information on [BuildGrid configuration in service.yml](https://help.cloud66.works/skycap/deployment/building-your-service.html).
+Find more information on [BuildGrid configuration in service.yml](/skycap/deployment/building-your-service.html).
 
 
 ## Envoironment variables in BuildGrid

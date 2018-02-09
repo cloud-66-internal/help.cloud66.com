@@ -25,7 +25,7 @@ Team members should have **Edit Deploy Gateways** access rights to be able to us
 
 ## How to deploy your stack behind the gateway server
 
-Gateway management is available through [toolbelt](https://help.cloud66.works/{{ include.product }}/toolbelt/gateway.html) .
+Gateway management is available through [toolbelt](/{{ include.product }}/toolbelt/gateway.html) .
 
 First you need to define a gateway:
 

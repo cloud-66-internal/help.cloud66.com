@@ -53,7 +53,7 @@ services:
 
 ### Build root
 
-Specifies the directory of your repository in which you wish to run your Docker build. You can also specify a [Dockerfile path](https://help.cloud66.works/skycap/deployment/building-your-service.html#dockerfile_path), which will be the Dockerfile used when building your service which is a relative value to this one.
+Specifies the directory of your repository in which you wish to run your Docker build. You can also specify a [Dockerfile path](/skycap/deployment/building-your-service.html#dockerfile_path), which will be the Dockerfile used when building your service which is a relative value to this one.
 
 ```
 

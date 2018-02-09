@@ -135,7 +135,7 @@ toc2:
           - page: Docker Service Configuration
             url: /legacy_docker/deployment/docker-service-configuration.html
           - page: Environment Variables
-            url: /legacy_docker/deployment/env-vars.html
+            url: /legacy_docker/tutorials/env-vars.html
           - page: Stack Environments
             url: /legacy_docker/deployment/stack-environments.html
           - page: Advanced Deploy
@@ -462,7 +462,7 @@ toc2:
           - page: Docker Service Configuration
             url: /maestro/deployment/docker-service-configuration.html
           - page: Environment Variables
-            url: /maestro/deployment/env-vars.html
+            url: /maestro/tutorials/env-vars.html
           - page: Stack Environments
             url: /maestro/deployment/stack-environments.html
           - page: Advanced Deploy
@@ -791,7 +791,7 @@ toc2:
           - page: Specific settings for your Node.js application
             url: /node/deployment/application-settings-node.html
           - page: Environment Variables
-            url: /node/deployment/env-vars.html
+            url: /node/tutorials/env-vars.html
           - page: Stack Environments
             url: /node/deployment/stack-environments.html
           - page: Scale your Node.js application
@@ -1099,7 +1099,7 @@ toc2:
           - page: Getting started with Rails Stacks
             url: /rails/deployment/rails-stacks.html
           - page: Environment Variables
-            url: /rails/deployment/env-vars.html
+            url: /rails/tutorials/env-vars.html
           - page: Stack Environments
             url: /rails/deployment/stack-environments.html
           - page: Getting Started with Manifest Files
@@ -1406,7 +1406,7 @@ toc2:
           - page: Docker Service Configuration
             url: /skycap/deployment/docker-service-configuration.html
           - page: Environment Variables
-            url: /skycap/deployment/env-vars.html
+            url: /skycap/tutorials/env-vars.html
           - page: Advanced Deploy
             url: /skycap/deployment/advanced-deploy.html
           - page: Getting Started with Manifest Files

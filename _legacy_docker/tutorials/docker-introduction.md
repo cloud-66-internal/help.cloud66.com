@@ -30,7 +30,7 @@ permalink: /:collection/:path
 
 Cloud 66 builds Docker stacks in two ways:
 
-1. **Pulling your code from Git**: This option uses Cloud 66 [BuildGrid](https://help.cloud66.works/skycap/deployment/building-your-service.html) to build your Docker image, so that you don't have to. You just need to provide a [Dockerfile](https://docs.docker.com/reference/builder/) that specifies how you'd like us to build the image. Once your image is ready, it is pushed to your servers and managed. We also version the image and allow you to download it if needed.
+1. **Pulling your code from Git**: This option uses Cloud 66 [BuildGrid](/skycap/deployment/building-your-service.html) to build your Docker image, so that you don't have to. You just need to provide a [Dockerfile](https://docs.docker.com/reference/builder/) that specifies how you'd like us to build the image. Once your image is ready, it is pushed to your servers and managed. We also version the image and allow you to download it if needed.
 2. **User-provided image**: You provide a Docker image that you've built, which we push to your servers and manage. 
 
 We provide a set of tools and practices to help you run a full end to end production Docker based stack.
@@ -39,22 +39,22 @@ We provide a set of tools and practices to help you run a full end to end produc
 
 ### Ready?
 
-  Are you ready to [build your first Docker stack](https://help.cloud66.works/general/introduction/cloud66-introduction.html)?
+  Are you ready to [build your first Docker stack](/general/introduction/cloud66-introduction.html)?
 
 Cloud 66 Docker includes the following:
-   {% if include.product == "skycap" %}- [Container life-cycle management](https://help.cloud66.works/maestro/stack-management/service-lifecycle-management.html){% else %}- [Container life-cycle management](https://help.cloud66.works/{{ include.product }}/stack-management/service-lifecycle-management.html){% endif %}
-   - [BuildGrid](https://help.cloud66.works/skycap/deployment/buildgrid/)
-   - [Networking layer and DNS](https://help.cloud66.works/{{ include.product }}/deployment/service-network-configuration.html)
-   {% if include.product == "skycap" %}- [Storage layer](https://help.cloud66.works/maestro/stack-management/service-storage.html){% else %}- [Storage layer](https://help.cloud66.works/{{ include.product }}/stack-management/service-storage.html){% endif %}
-   - [Docker scaling]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/scaling.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/scaling.html{% endif %})
+   {% if include.product == "skycap" %}- [Container life-cycle management](/maestro/stack-management/service-lifecycle-management.html){% else %}- [Container life-cycle management](/{{ include.product }}/stack-management/service-lifecycle-management.html){% endif %}
+   - [BuildGrid](/skycap/deployment/buildgrid/)
+   - [Networking layer and DNS](/{{ include.product }}/deployment/service-network-configuration.html)
+   {% if include.product == "skycap" %}- [Storage layer](/maestro/stack-management/service-storage.html){% else %}- [Storage layer](/{{ include.product }}/stack-management/service-storage.html){% endif %}
+   - [Docker scaling]({% if include.product == "skycap" %}/maestro/stack-management/scaling.html{% else %}/{{ include.product }}/stack-management/scaling.html{% endif %})
 Docker-based stacks enjoy the same benefits as other Cloud 66 stacks, including: 
-   - [Deployed and managed databases]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/databases/database-management.html{% else %}https://help.cloud66.works/{{ include.product }}/databases/database-management.html{% endif %})
-   - Database [backups]({% if include.product == "skycap" %}https://help.cloud66.works/skycap/databases/database-backup.html{% else %}https://help.cloud66.works/{{ include.product }}/databases/database-backup.html{% endif %}), [verification](https://help.cloud66.works/rails/databases/backup-verifiers.html) and [replication]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/databases/database-replication.html{% else %}https://help.cloud66.works/{{ include.product }}https://help.cloud66.works/{{ include.product }}/databases/database-replication.html{% endif %})
-   - [Load balancing]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/load_balancing.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/load_balancing.html{% endif %})
-   - [Firewall management and brute force protection for web and SSH]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/stack-management/network-configuration.html{% else %}https://help.cloud66.works/{{ include.product }}/stack-management/network-configuration.html{% endif %})
-   - [Team and organisations](https://help.cloud66.works/general/teams/team-accounts.html)
-   - Fast response 100% SLA DNS layer [failover groups]({% if include.product == "skycap" %}https://help.cloud66.works/maestro/failover-groups/failover-groups.html{% else %}https://help.cloud66.works/{{ include.product }}/failover-groups/failover-groups.html{% endif %}) for quick traffic switch overs
-   - [Server vital sign metrics](https://help.cloud66.works/{{ include.product }}/stack-management/server-monitoring.html)
+   - [Deployed and managed databases]({% if include.product == "skycap" %}/maestro/databases/database-management.html{% else %}/{{ include.product }}/databases/database-management.html{% endif %})
+   - Database [backups]({% if include.product == "skycap" %}/skycap/databases/database-backup.html{% else %}/{{ include.product }}/databases/database-backup.html{% endif %}), [verification](/rails/databases/backup-verifiers.html) and [replication]({% if include.product == "skycap" %}/maestro/databases/database-replication.html{% else %}/{{ include.product }}/{{ include.product }}/databases/database-replication.html{% endif %})
+   - [Load balancing]({% if include.product == "skycap" %}/maestro/stack-management/load_balancing.html{% else %}/{{ include.product }}/stack-management/load_balancing.html{% endif %})
+   - [Firewall management and brute force protection for web and SSH]({% if include.product == "skycap" %}/maestro/stack-management/network-configuration.html{% else %}/{{ include.product }}/stack-management/network-configuration.html{% endif %})
+   - [Team and organisations](/general/teams/team-accounts.html)
+   - Fast response 100% SLA DNS layer [failover groups]({% if include.product == "skycap" %}/maestro/failover-groups/failover-groups.html{% else %}/{{ include.product }}/failover-groups/failover-groups.html{% endif %}) for quick traffic switch overs
+   - [Server vital sign metrics](/{{ include.product }}/stack-management/server-monitoring.html)
    - [Intuitive UI](https://app.cloud66.com/dashboard)
-   - [API](http://developers.cloud66.com) and [command line](https://help.cloud66.works/{{ include.product }}/toolbelt/introduction.html)
+   - [API](http://developers.cloud66.com) and [command line](/{{ include.product }}/toolbelt/introduction.html)
 

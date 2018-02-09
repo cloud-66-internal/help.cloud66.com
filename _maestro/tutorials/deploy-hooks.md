@@ -265,7 +265,7 @@ There are three types of deploy hooks, and the fields available (and required) v
 </tr>
 <tr>
  <td> parse <br> (true) </td>
- <td> Specifies whether the file being transferred should be parsed for <a href="/{{ include.product }}/deployment/env-vars.html">environment variables</a>. Using this you can embed <em>&lt;%= ENV['ENV_VAR'] %&gt; </em> for example in your source file, and have it resolved during the deploy hook action </td>
+ <td> Specifies whether the file being transferred should be parsed for <a href="/maestro/tutorials/env-vars.html">environment variables</a>. Using this you can embed <em>&lt;%= ENV['ENV_VAR'] %&gt; </em> for example in your source file, and have it resolved during the deploy hook action </td>
 </tr>
 <tr>
  <td> owner <br> (your server user) </td>
@@ -331,7 +331,7 @@ There are three types of deploy hooks, and the fields available (and required) v
 </tr>
 <tr>
  <td> parse <br> (true) </td>
- <td> Specifies whether the file being transferred should be parsed for <a href="/{{ include.product }}/deployment/env-vars.html">environment variables</a>. Using this you can embed <em>&lt;%= ENV['ENV_VAR'] %&gt; </em> for example in your source file, and have it resolved during the deploy hook action </td>
+ <td> Specifies whether the file being transferred should be parsed for <a href="/maestro/tutorials/env-vars.html">environment variables</a>. Using this you can embed <em>&lt;%= ENV['ENV_VAR'] %&gt; </em> for example in your source file, and have it resolved during the deploy hook action </td>
 </tr>
 <tr>
  <td> owner <br> (your server user) </td>
@@ -351,7 +351,7 @@ For **Rails/Rack** stacks this file should be present within a folder named _.cl
 /.cloud66/deploy_hooks.yml
 ```
 
-For **Docker stacks** this file should be pushed into [CustomConfig git](https://help.cloud66.works/{{ include.product }}/stack-management/custom-git-repository.html) Repository of the stack. This repository will be created after the stack is analysed, so you can push your deploy hooks before deployment started.
+For **Docker stacks** this file should be pushed into [CustomConfig git](/{{ include.product }}/stack-management/custom-git-repository.html) Repository of the stack. This repository will be created after the stack is analysed, so you can push your deploy hooks before deployment started.
 
 This file should be YAML formatted, and you can use a service like [YAMLlint](http://yamllint.com/) to validate it.
 
@@ -414,7 +414,7 @@ production: # Environment
 When automating the installation of packages, remember to use the _-y_ flag to answer yes to all prompts.
 
 
-The example below can be used to run custom rake tasks during server build. If you need to run it more than once, consider using the [rake task add-in](https://help.cloud66.works/rails/addins/jobs/rake-task.html).
+The example below can be used to run custom rake tasks during server build. If you need to run it more than once, consider using the [rake task add-in](/rails/addins/jobs/rake-task.html).
 
 ```
 production: # Environment

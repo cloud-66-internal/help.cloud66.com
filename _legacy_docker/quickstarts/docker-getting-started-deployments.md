@@ -12,7 +12,8 @@ permalink: /:collection/:path
 
 
 ## Setting up a Docker Deployment
- Once all of the services have been successfully built you'll see the option to Setup a new deployment. You can deploy your app to any of your favorite cloud providers or to your own [registered servers](http://help.cloud66.com/deployment/registered-servers).
+ Once all of the services have been successfully built you'll see the option to Setup a new deployment. You can deploy your app to any of your favorite cloud providers or to your own [registered servers](/{{include.product}}/tutorials/registered-servers.html).
+
 
     
 
@@ -36,7 +37,7 @@ The first step in the deployment process is to Choose an [environment](https://h
 
 ## Configuring Services
 
-In the example below we have a single Rails service. In this case it's been pulled from an image. The previous section of this guide explains how to [add and build images for your services](https://help.cloud66.works/legacy_docker/docker-getting-started-building-your-images.html).
+In the example below we have a single Rails service. In this case it's been pulled from an image. The previous section of this guide explains how to [add and build images for your services](/legacy_docker/docker-getting-started-building-your-images.html).
 
 The Rails service is a web application so we need to configure it to handle web traffic.
 
@@ -65,7 +66,7 @@ Lets add the MySQL Data Source, you can add as many Data Sources as your app req
 
 Now the Rails app is configured to run in a container and we've setup a separate MySQL database server. All that remains is to decide what cloud provider to use and what server size and region we should deploy to.
 
-Remember, you can also deploy to your own servers. However you should first [add them as registered servers](http://help.cloud66.com/deployment/registered-servers).
+Remember, you can also deploy to your own servers. However you should first [add them as registered servers](/{{include.product}}/tutorials/registered-servers.html).
 
 
 ## Configuring Servers
@@ -87,7 +88,7 @@ Now everything is ready to go, just hit the deploy button. During the build and 
 
 ## Advanced Features
 
- Information that defines how your application is deployed is accessible from _manifest.yml_. You can edit this file directly if you need to access [advanced deployment features](https://help.cloud66.works/{{ include.product }}/deployment/getting-started-with-manifest-files.html). For example advanced configuration of Cross-Origin Resource Sharing or Amazon Virtual Private Cloud and more.
+ Information that defines how your application is deployed is accessible from _manifest.yml_. You can edit this file directly if you need to access [advanced deployment features](/{{ include.product }}/deployment/getting-started-with-manifest-files.html). For example advanced configuration of Cross-Origin Resource Sharing or Amazon Virtual Private Cloud and more.
 
  [**← Previous: Building Images**] (docker-getting-started-building-images)
 

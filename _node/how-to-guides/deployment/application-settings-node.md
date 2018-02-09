@@ -24,7 +24,7 @@ During the analyse phase we analyze your runtime depencies defined in the `packa
 *    the package `pg` will trigger the provisioning of Postgresql
 *    the package `redis` or `ioredis` will trigger the provisioning of Redis
 
-If you need other datasources later on, you can always add new datasource using the [Add-in feature](../../node/addins/add-in-implementation.html).
+If you need other datasources later on, you can always add new datasource using the Add-in feature.
 
 
 ##  Expose your host port
@@ -114,5 +114,5 @@ The commands above would run node `server.js` and node `some_work.js` and monito
 
 ##  Final notes on managing storage
 
-None of the files created on the filesystem after the stack is deployed are persistent. If you need persistency for files, for example some uploaded data, [please use the GlusterFS add-in](https://help.cloud66.works/{{ include.product }}/addins/glusterfs.html) or [change your service.yml](https://help.cloud66.works/legacy_docker/stack-management/service-storage.html) to use the storage of your host.
+None of the files created on the filesystem after the stack is deployed are persistent. If you need persistency for files, for example some uploaded data, [please use the GlusterFS add-in](/{{ include.product }}/addins/glusterfs.html) or [change your service.yml](/legacy_docker/stack-management/service-storage.html) to use the storage of your host.
 
