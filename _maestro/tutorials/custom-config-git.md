@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: What are environment variables?
+title: What is CustomConfig Git?
 categories: tutorials
 lead: ""
 legacy: false
@@ -9,6 +9,6 @@ tags: ["customization"]
 permalink: /:collection/:path
 ---
 
-{% assign product = 'node' %}
+{% assign product = 'rails' %}
 
-{% include how-to-guides/deployment/env-vars.md product = product %}
+{% include tutorials/custom-config-git.md product = product %}

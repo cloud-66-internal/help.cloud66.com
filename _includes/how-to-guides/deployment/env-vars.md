@@ -26,7 +26,7 @@ A_KEY=AUTO_GENERATE
 
 As mentioned earlier, Cloud auto-generates a number of environment variables, which can be used in addition to those that you define. Depending on your stack configuration, the environment variables available will differ. Given the variety of environments that we support, it becomes difficult to keep an exhaustive list of auto-generated environment variables. 
 
-{% if include.product = 'Rails' %}
+{% if include.product == 'rails' %}
 
 The following variables are created for Rack-based stacks (among others):
 
@@ -143,7 +143,7 @@ working_directory "#{ENV['STACK_PATH']}"
 
 There are some variables that are predefined by Cloud66 which are listed at bellow.
 
-{% if include.product = 'legacy_docker' %}
+{% if include.product == 'legacy_docker' %}
 
 Note that predefined environment variables are referable! for instance you can define `MEMCACHED_ADDRESS` to be `_env(DOCKER_HOST_IP)` to refer to the `DOCKER_HOST_IP` which is one of the predefined ones.
 

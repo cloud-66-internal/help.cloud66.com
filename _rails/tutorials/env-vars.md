@@ -9,6 +9,6 @@ tags: ["customization"]
 permalink: /:collection/:path
 ---
 
-{% assign product = 'Rails' %}
+{% assign product = 'rails' %}
 
-{% include how-to-guides/deployment/building-a-manifest-file.md product = product %}
+{% include how-to-guides/deployment/env-vars.md product = product %}
