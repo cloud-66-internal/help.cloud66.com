@@ -58,7 +58,7 @@ In the case where the payload of the commit hook does not contain any branch inf
 
 #### Github Integration
 
-Users who have signed in through Github (and who have enough access to create and edit deployement events for their stacks on GitHub) can activate continuous deployments on GitHub. To do this: access your [Stack settings](/{{ include.product }}/toolbelt/settings.html) via the toolbelt
+Users who have signed in through Github (and who have enough access to create and edit deployement events for their stacks on GitHub) can activate continuous deployments on GitHub. To do this: access your [Stack settings](/{{ include.product }}/references/toolbelt.html#settings-variables) via the toolbelt
  and set **continuous.deploy** to _true_.
 
 ```

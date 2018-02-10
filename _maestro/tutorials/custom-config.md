@@ -9,6 +9,6 @@ tags: ["customization"]
 permalink: /:collection/:path
 ---
 
-{% assign product = 'rails' %}
+{% assign product = 'maestro' %}
 
 {% include tutorials/custom-config.md product = product %}

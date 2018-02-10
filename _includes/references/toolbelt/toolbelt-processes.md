@@ -11,6 +11,7 @@ List all the processes running on a stack or a server. Optionally provide the se
 
 ### Parameters
 
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack 					   |		—		| Name of the stack|
@@ -39,6 +40,7 @@ Scales up/down <count> processes. If you specify [+X] or [-X] for the count, the
 
 
 ### Parameters
+
 
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|

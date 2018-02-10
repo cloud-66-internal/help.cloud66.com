@@ -1,14 +1,14 @@
 ---
 layout: post
 template: one-col
-title: What is CustomConfig Git?
+title: Everything about Scaling
 categories: tutorials
 lead: ""
-legacy: false
+legacy: true
 tags: ["customization"]
 permalink: /:collection/:path
 ---
 
 {% assign product = 'node' %}
 
-{% include tutorials/custom-config-git.md product = product %}
+{% include tutorials/scaling.md product = product %}

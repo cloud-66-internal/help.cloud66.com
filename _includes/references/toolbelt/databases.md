@@ -33,6 +33,7 @@ In the case of any servers not being accessible during this time, those servers 
 
 ### Parameters
 
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack 					   |	—			|Name of your stack|
@@ -66,6 +67,7 @@ Providing the database type is optional and is only necessary for shared servers
 
 
 ### Parameters
+
 
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|

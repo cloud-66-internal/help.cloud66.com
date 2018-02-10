@@ -180,7 +180,7 @@ toc2:
         url: /legacy_docker/failover-groups/
         subsubfolderitems:
           - page: Failover Groups
-            url: /legacy_docker/failover-groups/failover-groups.html
+            url: /legacy_docker/tutorials/failover-groups.html
       - page: Getting Started
         url: /legacy_docker/getting-started/
         subsubfolderitems:
@@ -210,7 +210,7 @@ toc2:
           - page: Service Monitoring
             url: /legacy_docker/stack-management/service-monitoring.html
           - page: Stack Network Configuration
-            url: /legacy_docker/stack-management/network-configuration.html
+            url: /legacy_docker/tutorials/service-network-configuration.html
           - page: SSH to your Server
             url: /legacy_docker/stack-management/ssh-to-server.html
           - page: Server Deletion
@@ -226,7 +226,7 @@ toc2:
           - page: Service Storage
             url: /legacy_docker/how-to-guides/deployment/service-storage.html
           - page: Scaling
-            url: /legacy_docker/stack-management/scaling.html
+            url: /legacy_docker/tutorials/scaling.html
           - page: Logging
             url: /legacy_docker/stack-management/logging.html
           - page: Live-Logs
@@ -285,7 +285,7 @@ toc2:
           - page: Toolbelt tail command
             url: /legacy_docker/toolbelt/tail.html
           - page: Toolbelt gateway management
-            url: /legacy_docker/toolbelt/gateway.html
+            url: /legacy_docker/references/toolbelt.html#gateway-management
           - page: Toolbelt tunnel command
             url: /legacy_docker/toolbelt/tunnel.html
           - page: Toolbelt upload command
@@ -507,7 +507,7 @@ toc2:
         url: /maestro/failover-groups/
         subsubfolderitems:
           - page: Failover Groups
-            url: /maestro/failover-groups/failover-groups.html
+            url: /maestro/tutorials/failover-groups.html
       - page: Getting Started
         url: /maestro/getting-started/
         subsubfolderitems:
@@ -535,7 +535,7 @@ toc2:
           - page: Service Monitoring
             url: /maestro/stack-management/service-monitoring.html
           - page: Stack Network Configuration
-            url: /maestro/stack-management/network-configuration.html
+            url: /maestro/tutorials/service-network-configuration.html
           - page: SSH to your Server
             url: /maestro/stack-management/ssh-to-server.html
           - page: Server Deletion
@@ -551,7 +551,7 @@ toc2:
           - page: Service Storage
             url: /maestro/how-to-guides/deployment/service-storage.html
           - page: Scaling
-            url: /maestro/stack-management/scaling.html
+            url: /maestro/tutorials/scaling.html
           - page: Logging
             url: /maestro/stack-management/logging.html
           - page: Live-Logs
@@ -610,7 +610,7 @@ toc2:
           - page: Toolbelt tail command
             url: /maestro/toolbelt/tail.html
           - page: Toolbelt gateway management
-            url: /maestro/toolbelt/gateway.html
+            url: /maestro/references/toolbelt.html#gateway-management
           - page: Toolbelt tunnel command
             url: /maestro/toolbelt/tunnel.html
           - page: Toolbelt upload command
@@ -830,7 +830,7 @@ toc2:
         url: /node/failover-groups/
         subsubfolderitems:
           - page: Failover Groups
-            url: /node/failover-groups/failover-groups.html
+            url: /node/tutorials/failover-groups.html
       - page: Getting Started
         url: /node/getting-started/
         subsubfolderitems:
@@ -852,7 +852,7 @@ toc2:
           - page: Service Monitoring
             url: /node/stack-management/service-monitoring.html
           - page: Stack Network Configuration
-            url: /node/stack-management/network-configuration.html
+            url: /node/tutorials/service-network-configuration.html
           - page: SSH to your Server
             url: /node/stack-management/ssh-to-server.html
           - page: Server Deletion
@@ -862,7 +862,7 @@ toc2:
           - page: Service Life-cycle Management
             url: /node/stack-management/service-lifecycle-management.html
           - page: Scaling
-            url: /node/stack-management/scaling.html
+            url: /node/tutorials/scaling.html
           - page: Logging
             url: /node/stack-management/logging.html
           - page: Live-Logs
@@ -923,7 +923,7 @@ toc2:
           - page: Toolbelt tail command
             url: /node/toolbelt/tail.html
           - page: Toolbelt gateway management
-            url: /node/toolbelt/gateway.html
+            url: /node/references/toolbelt.html#gateway-management
           - page: Toolbelt tunnel command
             url: /node/toolbelt/tunnel.html
           - page: Toolbelt upload command
@@ -1150,7 +1150,7 @@ toc2:
         url: /rails/failover-groups/
         subsubfolderitems:
           - page: Failover Groups
-            url: /rails/failover-groups/failover-groups.html
+            url: /rails/tutorials/failover-groups.html
       - page: Getting Started
         url: /rails/getting-started/
         subsubfolderitems:
@@ -1170,7 +1170,7 @@ toc2:
           - page: Service Monitoring
             url: /rails/stack-management/service-monitoring.html
           - page: Stack Network Configuration
-            url: /rails/stack-management/network-configuration.html
+            url: /rails/tutorials/service-network-configuration.html
           - page: SSH to your server
             url: /rails/stack-management/ssh-to-server.html
           - page: Server Deletion
@@ -1180,7 +1180,7 @@ toc2:
           - page: Service Lifecycle Management
             url: /rails/stack-management/service-lifecycle-management.html
           - page: Scaling
-            url: /rails/stack-management/scaling.html
+            url: /rails/tutorials/scaling.html
           - page: Logging
             url: /rails/stack-management/logging.html
           - page: Live-Logs
@@ -1245,7 +1245,7 @@ toc2:
           - page: Toolbelt tail command
             url: /rails/toolbelt/tail.html
           - page: Toolbelt gateway management
-            url: /rails/toolbelt/gateway.html
+            url: /rails/references/toolbelt.html#gateway-management
           - page: Toolbelt tunnel command
             url: /rails/toolbelt/tunnel.html
           - page: Toolbelt upload command

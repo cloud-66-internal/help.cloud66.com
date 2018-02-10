@@ -14,6 +14,7 @@ $ cx run -s <stack> --server <server name>|<server ip>|<server role> --service '
 
 ### Parameters
 
+
 At least one of the optional server parameters are necessary in order to identify which server to run the command on.
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
@@ -29,6 +30,7 @@ At least one of the optional server parameters are necessary in order to identif
 ```
 $ cx run -s "My Awesome App" --server web1 'pwd'
 ```
+
 The service parameter applies to Docker stacks and allows you to enter a Docker container with your command (based on the latest image of that service). Some examples are:
 
 ```

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: What is CustomConfig Git?
+title: Everything about Scaling
 categories: tutorials
 lead: ""
 legacy: true
@@ -11,4 +11,4 @@ permalink: /:collection/:path
 
 {% assign product = 'legacy_docker' %}
 
-{% include tutorials/custom-config-git.md product = product %}
+{% include tutorials/scaling.md product = product %}

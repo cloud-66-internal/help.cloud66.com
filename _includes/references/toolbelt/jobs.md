@@ -15,6 +15,7 @@ $ cx jobs list [-s <stack>] --server <server name>|<server ip>|<server role> --s
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack 					   |		—		|Name of the stack | 
@@ -48,6 +49,7 @@ $ cx job list [-s <stack>] --arg <arg> <job name>
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack 					   |		—		|Name of the stack | 

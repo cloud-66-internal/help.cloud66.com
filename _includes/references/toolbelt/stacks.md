@@ -13,6 +13,7 @@ $ cx stacks list [-e <environment>]
 
 ### Parameters
 
+
 |		Parameter 		   |   Description    |
 |--------------------------| ----------------:|
 |e (optional) 			   | Full or partial environment name |
@@ -44,6 +45,7 @@ $ cx --org <organization_name> stacks create --name <stack_name> --environment <
 
 
 ### Parameters
+
 |		Parameter 		   	|   Description    |
 |---------------------------| ----------------:|
 |organization_name		   	|Name of the organization -you can find it by using cx info-|
@@ -80,6 +82,7 @@ $ cx stacks redeploy [-s <stack>] [-y] [--git-ref <git_ref>] [--service <service
 
 
 ### Parameters
+
 |		Parameter 		   	|   Description    |
 |---------------------------| ----------------:|
 |stack 					   	| Name of your stack |
@@ -123,6 +126,7 @@ $ cx stacks restart [-s <stack>]
 
 
 ### Parameters
+
 |		Parameter 		   	|   Description    |
 |---------------------------| ----------------:|
 |stack 					   	| Name of your stack |
@@ -151,6 +155,7 @@ $ cx stacks reboot -s <stack> [--group <server group name>] [--strategy <strateg
 
 
 ### Parameters
+
 |		Parameter 		   	|     Description    |
 |---------------------------| ------------------:|
 |stack 					   	| Name of your stack |
@@ -190,6 +195,7 @@ $ cx stacks clear-caches [-s <stack>]
 
 ### Parameters
 
+
 |		Parameter 		   	|     Description    |
 |---------------------------| ------------------:|
 |stack 					   	| Name of your stack |
@@ -215,6 +221,7 @@ $ cx stacks listen [-s <stack>]
 
 
 ### Parameters
+
 
 |		Parameter 		   	|     Description    |
 |---------------------------| ------------------:|
@@ -248,6 +255,7 @@ $ cx stacks configure list [-s <stack>]
 
 
 ### Parameters
+
 |		Parameter 		   	|   Description    |
 |---------------------------| ----------------:|
 |list 					   	|List of all versions of a configuration file|
@@ -275,6 +283,7 @@ $ cx stacks help [<command>]
 
 
 ### Parameters
+
 
 |		Parameter 		   |   Description    |
 |--------------------------| ----------------:|

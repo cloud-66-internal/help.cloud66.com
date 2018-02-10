@@ -16,6 +16,7 @@ $ cx env-vars list [-s <stack>] [--history] [environment_variables]
 
 ### Parameters
 
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack 					   |		—		| Name of the stack|
@@ -40,6 +41,7 @@ $ cx env-vars set [-s <stack>] <setting>=<value>
 
 
 ### Parameters
+
 
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|

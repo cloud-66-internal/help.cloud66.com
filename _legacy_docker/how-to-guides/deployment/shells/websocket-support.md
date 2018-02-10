@@ -9,4 +9,8 @@ tags: ["websocket"]
 
 permalink: /:collection/:path
 ---
-{% include how-to-guides/deployment/websocket-support.md %}
+
+
+{% assign product = 'legacy_docker' %}
+
+{% include how-to-guides/deployment/websocket-support.md product = product %}

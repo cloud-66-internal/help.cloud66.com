@@ -4,11 +4,11 @@ template: one-col
 title: What is CustomConfig?
 categories: tutorials
 lead: ""
-legacy: false
+legacy: true
 tags: ["customization"]
 permalink: /:collection/:path
 ---
 
-{% assign product = 'rails' %}
+{% assign product = 'legacy_docker' %}
 
 {% include tutorials/custom-config.md product = product %}

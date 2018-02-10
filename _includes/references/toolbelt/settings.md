@@ -12,6 +12,7 @@ $ cx settings list [-s <stack>] [-e <environment>]
 
 
 ### Parameters
+
 |		Parameter 		   |  Description    |
 |--------------------------|----------------:|
 |stack 					   | Name of the stack |
@@ -37,6 +38,7 @@ $ cx settings set [-s <stack>] <setting_name> <value>
 
 
 ### Parameters
+
 |		Parameter 		   |   Description    |
 |--------------------------| ----------------:|
 |stack 					   |Name of the stack|

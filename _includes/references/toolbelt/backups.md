@@ -25,6 +25,7 @@ $ cx backups list [-s <stack>] [-l] [<db type>]
 
 ### Parameters
 
+
 |		Parameter 	 |   Description    |
 |---------------------|----------------:|
 | stack 			 	|Name of your stack|
@@ -58,6 +59,7 @@ $ cx backups download [-s <stack>] [-d <download directory>] <backup id>
 
 ### Parameters
 
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack 					   |	—			|Name of your stack|
@@ -89,6 +91,7 @@ $ cx backups new [-s <stack>]	[--dbtypes <DB types>] [--frequency <Frequency>] [
 
 
 ### Parameters
+
 
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
