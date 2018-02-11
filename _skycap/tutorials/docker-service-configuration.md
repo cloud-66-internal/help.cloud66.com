@@ -102,8 +102,8 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies the command used to start your container. </td> 
     </tr> 
     <tr> 
-     <td> <a href="{% if include.product == "skycap" %}/maestro/tutorials/scaling.html{% else %}/{{page.collection}}/tutorials/scaling.html{% endif %}">constraints</a> </td> 
-     <td> Specifies <a href="{% if include.product == "skycap" %}/maestro/tutorials/scaling.html{% else %}/{{page.collection}}/tutorials/scaling.html{% endif %}">container amount</a> or <a href="/{{page.collection}}/stack-management/service-resources.html">resource</a> constraints for a service across the cluster. </td> 
+     <td> <a href="{% if page.collection == "skycap" %}/maestro/tutorials/scaling.html{% else %}/{{page.collection}}/tutorials/scaling.html{% endif %}">constraints</a> </td> 
+     <td> Specifies <a href="{% if page.collection == "skycap" %}/maestro/tutorials/scaling.html{% else %}/{{page.collection}}/tutorials/scaling.html{% endif %}">container amount</a> or <a href="/{{page.collection}}/stack-management/service-resources.html">resource</a> constraints for a service across the cluster. </td> 
     </tr> 
     <tr> 
      <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/skycap/deployment/building-your-service.html{%endif%}"</a> </td> 

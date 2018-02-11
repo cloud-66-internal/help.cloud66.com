@@ -14,7 +14,7 @@ If you want to use WebSocket with Cloud 66, your WebSocket servers need to liste
 
 You can use a different port to use WebSocket (not supported by Cloud 66) but you will need manually open the ports to allow external connections to your Rails servers.
 
-Find out more about [Stack networking page]({% if include.product == "skycap" %}/maestro/tutorials/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}).
+Find out more about [Stack networking page]({% if page.collection == "skycap" %}/maestro/tutorials/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}).
 
 
 ## WebSocket through a load balancer
