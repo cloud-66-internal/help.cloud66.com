@@ -29,7 +29,7 @@ You will need azure.pem and azure.cer to use Cloud 66 with your Azure account.
 ### Using your management certificate
 Access Management portal of your Azure account and go to the Settings menu. You will need the Subscription ID which is listed in Subscriptions tab. Select the Management certificate tab and click the Upload button to upload azure.cer.
 
-Now visit your Cloud 66 dashboard and [build your first stack](/{{include.product}}/quickstarts/). When adding your Azure credentials, you will be asked to input your subscription ID and upload the azure.pem file you created earlier.
+Now visit your Cloud 66 dashboard and [build your first stack](/{{page.collection}}/quickstarts/). When adding your Azure credentials, you will be asked to input your subscription ID and upload the azure.pem file you created earlier.
 
 ### Notice
 Should you wish to delete your stack on Cloud 66, your servers will not be deleted on your cloud provider unless physical server deletion is turned on.

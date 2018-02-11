@@ -236,7 +236,7 @@ toc2:
           - page: Applying Upgrades
             url: /legacy_docker/stack-management/applying-upgrades.html
           - page: CustomConfig™
-            url: /legacy_docker/stack-management/custom-config.html
+            url: /legacy_docker/tutorials/custom-config.html
           - page: CustomConfig Git
             url: /legacy_docker/stack-management/custom-git-repository.html
           - page: Server Meta Data Service
@@ -561,7 +561,7 @@ toc2:
           - page: Applying Upgrades
             url: /maestro/stack-management/applying-upgrades.html
           - page: CustomConfig™
-            url: /maestro/stack-management/custom-config.html
+            url: /maestro/tutorials/custom-config.html
           - page: CustomConfig Git
             url: /maestro/stack-management/custom-git-repository.html
           - page: Server Meta Data Service
@@ -872,7 +872,7 @@ toc2:
           - page: Applying Upgrades
             url: /node/stack-management/applying-upgrades.html
           - page: CustomConfig™
-            url: /node/stack-management/custom-config.html
+            url: /node/tutorials/custom-config.html
           - page: CustomConfig Git
             url: /node/stack-management/custom-git-repository.html
           - page: Server Meta Data Service
@@ -1190,7 +1190,7 @@ toc2:
           - page: Applying Upgrades
             url: /rails/stack-management/applying-upgrades.html
           - page: CustomConfig™
-            url: /rails/stack-management/custom-config.html
+            url: /rails/tutorials/custom-config.html
           - page: CustomConfig Git
             url: /rails/stack-management/custom-git-repository.html
           - page: Server Meta Data Service
@@ -1460,7 +1460,7 @@ toc2:
           - page: Stack Notifications
             url: /skycap/stack-management/stack-notifications.html
           - page: CustomConfig™
-            url: /skycap/stack-management/custom-config.html
+            url: /skycap/tutorials/custom-config.html
           - page: CustomConfig Git
             url: /skycap/stack-management/custom-git-repository.html
           - page: Global Search

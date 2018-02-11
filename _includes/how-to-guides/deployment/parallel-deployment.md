@@ -10,11 +10,11 @@ Deploying in serial involves removing each server from your load balancer, deplo
 
 To run database migrations during deployment, it is advisable to deploy in serial.
 
-Although database migrations only occur on one server, depending on the changes, they could stop deployments on other servers from succeeding. Refer to our page on [controlling your database migrations]({% if include.product == "skycap" %}/maestro/how-to-guides/databases/database-customization.html{% else %}/{{ include.product }}/how-to-guides/databases/database-customization.html{% endif %}) for more information.
+Although database migrations only occur on one server, depending on the changes, they could stop deployments on other servers from succeeding. Refer to our page on [controlling your database migrations]({% if include.product == "skycap" %}/maestro/how-to-guides/databases/database-customization.html{% else %}/{{page.collection}}/how-to-guides/databases/database-customization.html{% endif %}) for more information.
 
 ## Configure parallel deployment
 
-To activate parallel deployments, access your [Stack settings](/{{ include.product }}/references/shells/toolbelt.html#settings-variables) via [Toolbelt](/{{ include.product }}/quickstarts/using-cloud66-toolbelt.html) and set `deploy.parallel` to `true`. 
+To activate parallel deployments, access your [Stack settings](/{{page.collection}}/references/shells/toolbelt.html#settings-variables) via [Toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) and set `deploy.parallel` to `true`. 
 
 ```
 $ cx settings set -s my_stack deploy.parallel true

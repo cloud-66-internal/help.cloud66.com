@@ -114,5 +114,5 @@ The commands above would run node `server.js` and node `some_work.js` and monito
 
 ##  Final notes on managing storage
 
-None of the files created on the filesystem after the stack is deployed are persistent. If you need persistency for files, for example some uploaded data, [please use the GlusterFS add-in](/{{ include.product }}/how-to-guides/databases/gluster-scaling.html) or [change your service.yml](/legacy_docker/how-to-guides/deployment/service-storage.html) to use the storage of your host.
+None of the files created on the filesystem after the stack is deployed are persistent. If you need persistency for files, for example some uploaded data, [please use the GlusterFS add-in](/{{page.collection}}/how-to-guides/databases/gluster-scaling.html) or [change your service.yml](/legacy_docker/how-to-guides/deployment/service-storage.html) to use the storage of your host.
 

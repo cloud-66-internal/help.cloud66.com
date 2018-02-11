@@ -23,7 +23,7 @@ DETAIL:  The data directory was initialized by PostgreSQL version 9.3, which is 
 
 In this case, you need to upgrade the data and libraries of the master server (9.3) with [pg_upgrade](http://www.postgresql.org/docs/9.4/static/pgupgrade.html) before starting the replication.
 
-Remember that you can see the version of PostgreSQL to install on your stack by using a [manifest file](/{{ include.product }}/deployment/getting-started-with-manifest-files.html), like so:
+Remember that you can see the version of PostgreSQL to install on your stack by using a [manifest file](/{{page.collection}}/deployment/getting-started-with-manifest-files.html), like so:
 
 ```
 production:

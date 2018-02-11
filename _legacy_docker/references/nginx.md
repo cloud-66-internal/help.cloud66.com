@@ -948,7 +948,7 @@ There are two ways for you to create a custom Nginx 50X error page:
 
 ## Customize your Nginx configuration
 
-Cloud 66 makes it easy for you to customize your Nginx configuration. From your stack detail page, access your web server group page (eg. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](/{{ include.product }}/stack-management/custom-config.html) to customize the configuration.
+Cloud 66 makes it easy for you to customize your Nginx configuration. From your stack detail page, access your web server group page (eg. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](/{{page.collection}}/tutorials/custom-config.html) to customize the configuration.
 
 Editing and committing your Nginx CustomConfig will perform the following steps on **every web server in your stack**, one by one, sequentially:
 

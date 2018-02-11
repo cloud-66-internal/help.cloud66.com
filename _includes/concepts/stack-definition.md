@@ -20,17 +20,17 @@ You have a great degree of freedom when choosing the different components of you
 
 A load balancer is used to distribute traffic across your web servers, and offers benefits such as maximizing throughoutput, minimizing response times and avoiding overload on any single server. Ultimately, load balancing increases the reliability of your stack.
 
-The type of  [load balancer deployed in your stack]({% if include.product == 'skycap' %}/maestro/tutorials/load-balancing.html{%else%}/{{ include.product }}/tutorials/load-balancing.html{%endif%})is dependent on your cloud provider.
+The type of  [load balancer deployed in your stack]({% if include.product == 'skycap' %}/maestro/tutorials/load-balancing.html{%else%}/{{page.collection}}/tutorials/load-balancing.html{%endif%})is dependent on your cloud provider.
 
 
 ### Web servers
 
-By default, your applications are served with Nginx{% if include.product == 'rails' %}, and you are also free to customize this selection for Rack-based stacks{%endif%}. You can [scale your web server]({% if include.product == "skycap" %}/maestro/how-to-guides/databases/mongo-replica-sets.html{% else %}/{{ include.product }}/how-to-guides/databases/mongo-replica-sets.html{% endif %}) with the click of a button.
+By default, your applications are served with Nginx{% if include.product == 'rails' %}, and you are also free to customize this selection for Rack-based stacks{%endif%}. You can [scale your web server]({% if include.product == "skycap" %}/maestro/how-to-guides/databases/mongo-replica-sets.html{% else %}/{{page.collection}}/how-to-guides/databases/mongo-replica-sets.html{% endif %}) with the click of a button.
 
 
 ### Background workers (optional)
 
-To relieve pressure from your application, we recommend that you use background workers to run memory-intensive processes. Cloud 66 makes it easy for you to control and monitor these processes, as well as [scale them]({% if include.product == "skycap" %}/maestro/how-to-guides/databases/mongo-replica-sets.html{% else %}/{{ include.product }}/how-to-guides/databases/mongo-replica-sets.html{% endif %})) at the click of a button.
+To relieve pressure from your application, we recommend that you use background workers to run memory-intensive processes. Cloud 66 makes it easy for you to control and monitor these processes, as well as [scale them]({% if include.product == "skycap" %}/maestro/how-to-guides/databases/mongo-replica-sets.html{% else %}/{{page.collection}}/how-to-guides/databases/mongo-replica-sets.html{% endif %})) at the click of a button.
 
 
 ### Database servers (optional)
@@ -42,17 +42,17 @@ You can choose between any of four supported databases:
 - MongoDB
 - Redis
 
-Cloud 66 makes it easy for you to [backup your database]({% if include.product == "skycap" %}/skycap/tutorials/database-backup.html{% else %}/{{ include.product }}/tutorials/database-backup.html{% endif %}), [verify the backup](/rails/databases/backup-verifiers.html) and [replicate your databases](/rails/tutorials/database-replication.html).
+Cloud 66 makes it easy for you to [backup your database]({% if include.product == "skycap" %}/skycap/tutorials/database-backup.html{% else %}/{{page.collection}}/tutorials/database-backup.html{% endif %}), [verify the backup](/rails/databases/backup-verifiers.html) and [replicate your databases](/rails/tutorials/database-replication.html).
 
 
 ### Operating system
 
-Your servers will be deployed with **Ubuntu 16.04 LTS**. On the operating system level, you can [monitor disk, CPU and memory](/{{ include.product }}/resources/technical-specifications.html) from the dashboard.
+Your servers will be deployed with **Ubuntu 16.04 LTS**. On the operating system level, you can [monitor disk, CPU and memory](/{{page.collection}}/resources/technical-specifications.html) from the dashboard.
 
 
 ### Cloud vendor
 
-You can either [deploy to your cloud](/{{ include.product }}/resources/technical-specifications.html#supported-cloud-providers) or [deploy to your own server](/{{ include.product }}/tutorials/registered-servers.html).
+You can either [deploy to your cloud](/{{page.collection}}/resources/technical-specifications.html#supported-cloud-providers) or [deploy to your own server](/{{page.collection}}/tutorials/registered-servers.html).
 
 * * *
 
@@ -100,7 +100,7 @@ Cloud 66 constantly seeks to update and improve the StackScore algorithm to cons
 
 ## Build a stack
 
-To build your first stack, see our [Introduction to Cloud 66](/{{ include.product }}/concepts/stack-definition.html). If you have existing stack(s), simply click _New Docker Stack_ from your Cloud 66 Dashboard.
+To build your first stack, see our [Introduction to Cloud 66](/{{page.collection}}/concepts/stack-definition.html). If you have existing stack(s), simply click _New Docker Stack_ from your Cloud 66 Dashboard.
 
 * * *
 

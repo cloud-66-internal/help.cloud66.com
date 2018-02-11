@@ -99,7 +99,7 @@ services:
 
 ### Note
 
-For HTTPS traffic to be available to the outside world you still need to [setup your SSL certificates](/{{ include.product }}/addins/ssl/).
+For HTTPS traffic to be available to the outside world you still need to [setup your SSL certificates](/{{page.collection}}/addins/ssl/).
 
 
 Omitting the HTTPS port is possible by dropping the last part:
@@ -158,5 +158,5 @@ services:
         ports: ["3000:80", "3001:8080"]
 {% endhighlight %}
 
-See [Service Network Settings](/{{ include.product }}/deployment/service-network-configuration.html) for more information on all features around Container Port Mapping.
+See [Service Network Settings](/{{page.collection}}/deployment/service-network-configuration.html) for more information on all features around Container Port Mapping.
 

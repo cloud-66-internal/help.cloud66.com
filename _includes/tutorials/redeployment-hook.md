@@ -58,7 +58,7 @@ In the case where the payload of the commit hook does not contain any branch inf
 
 #### Github Integration
 
-Users who have signed in through Github (and who have enough access to create and edit deployement events for their stacks on GitHub) can activate continuous deployments on GitHub. To do this: access your [Stack settings](/{{ include.product }}/references/toolbelt.html#settings-variables) via the toolbelt
+Users who have signed in through Github (and who have enough access to create and edit deployement events for their stacks on GitHub) can activate continuous deployments on GitHub. To do this: access your [Stack settings](/{{page.collection}}/references/toolbelt.html#settings-variables) via the toolbelt
  and set **continuous.deploy** to _true_.
 
 ```
@@ -109,4 +109,4 @@ curl -X POST [your redeployment hook URL]
 
 ### Note
 
-If you are manually invoking redeployments you should consider using the [Cloud 66 CommandLine Tool](/{{ include.product }}/references/toolbelt.html#redeploy-your-stack) instead, as it has additional features!
+If you are manually invoking redeployments you should consider using the [Cloud 66 CommandLine Tool](/{{page.collection}}/references/toolbelt.html#redeploy-your-stack) instead, as it has additional features!

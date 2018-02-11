@@ -25,7 +25,7 @@ Team members should have **Edit Deploy Gateways** access rights to be able to us
 
 ## How to deploy your stack behind the gateway server
 
-Gateway management is available through [toolbelt](/{{ include.product }}/references/toolbelt.html#gateway-management) .
+Gateway management is available through [toolbelt](/{{page.collection}}/references/toolbelt.html#gateway-management) .
 
 First you need to define a gateway:
 

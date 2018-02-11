@@ -28,22 +28,22 @@ We provide a set of tools and practices to help you run a full end to end produc
 
 ### Ready?
 
-Are you ready to [build your first Docker stack](/{{include.product}}/concepts/stack-definition.html)?
+Are you ready to [build your first Docker stack](/{{page.collection}}/concepts/stack-definition.html)?
 
 Cloud 66 Docker includes the following:
    {% if include.product == "skycap" %}- [Container life-cycle management](/maestro/quickstarts/getting_started.html){% else %}- [Container life-cycle management](/maestro/quickstarts/getting_started.html){% endif %}
    - [BuildGrid](/legacy_docker/references/build-grid.html)
-   - [Networking layer and DNS](/{{ include.product }}/tutorials/service-network-configuration.html)
-   {% if include.product == "skycap" %}- [Storage layer](/maestro/how-to-guides/deployment/service-storage.html){% else %}- [Storage layer](/{{ include.product }}/how-to-guides/deployment/service-storage.html){% endif %}
-   - [Docker scaling](/{{include.product}}/references/shells/toolbelt.html#scaling-services)
+   - [Networking layer and DNS](/{{page.collection}}/tutorials/service-network-configuration.html)
+   {% if include.product == "skycap" %}- [Storage layer](/maestro/how-to-guides/deployment/service-storage.html){% else %}- [Storage layer](/{{page.collection}}/how-to-guides/deployment/service-storage.html){% endif %}
+   - [Docker scaling](/{{page.collection}}/references/shells/toolbelt.html#scaling-services)
 Docker-based stacks enjoy the same benefits as other Cloud 66 stacks, including: 
-   - [Deployed and managed databases]({% if include.product == "skycap" %}/maestro/how-to-guides/databases/database-customization.html{% else %}/{{ include.product }}/how-to-guides/databases/database-customization.html{% endif %})
-   - Database [backups]({% if include.product == "skycap" %}/maestro/tutorials/database-backup.html{% else %}/{{ include.product }}/tutorials/database-backup.html{%endif%}) and [replication](/rails/tutorials/database-replication.html)
-   - [Load balancing]({% if include.product == "skycap" %}/maestro/tutorials/load-balancing.html{% else %}/{{ include.product }}/tutorials/load-balancing.html{% endif %})
-   - [Firewall management and brute force protection for web and SSH]({% if include.product == "skycap" %}/maestro/tutorials/service-network-configuration.html{% else %}/{{ include.product }}/tutorials/service-network-configuration.html{% endif %})
-   - [Team and organisations](/{{include.product}}/references/account/team-accounts.html)
-   - Fast response 100% SLA DNS layer [failover groups]({% if include.product == "skycap" %}/maestro/tutorials/failover-groups.html{% else %}/{{ include.product }}/tutorials/failover-groups.html{% endif %}) for quick traffic switch overs
-   - [Server vital sign metrics](/{{ include.product }}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html)
+   - [Deployed and managed databases]({% if include.product == "skycap" %}/maestro/how-to-guides/databases/database-customization.html{% else %}/{{page.collection}}/how-to-guides/databases/database-customization.html{% endif %})
+   - Database [backups]({% if include.product == "skycap" %}/maestro/tutorials/database-backup.html{% else %}/{{page.collection}}/tutorials/database-backup.html{%endif%}) and [replication](/rails/tutorials/database-replication.html)
+   - [Load balancing]({% if include.product == "skycap" %}/maestro/tutorials/load-balancing.html{% else %}/{{page.collection}}/tutorials/load-balancing.html{% endif %})
+   - [Firewall management and brute force protection for web and SSH]({% if include.product == "skycap" %}/maestro/tutorials/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %})
+   - [Team and organisations](/{{page.collection}}/references/account/team-accounts.html)
+   - Fast response 100% SLA DNS layer [failover groups]({% if include.product == "skycap" %}/maestro/tutorials/failover-groups.html{% else %}/{{page.collection}}/tutorials/failover-groups.html{% endif %}) for quick traffic switch overs
+   - [Server vital sign metrics](/{{page.collection}}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html)
    - [Intuitive UI](https://app.cloud66.com/dashboard)
-   - [API](http://developers.cloud66.com) and [command line](/{{ include.product }}/toolbelt/introduction.html)
+   - [API](http://developers.cloud66.com) and [command line](/{{page.collection}}/toolbelt/introduction.html)
 

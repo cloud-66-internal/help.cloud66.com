@@ -22,13 +22,13 @@ To generate a key and certificate signing request, follow the steps below.
 
 ## Important
 
-You cannot use passphrase protected certificate keys with Nginx. Learn how to [remove the passphrases from certificate keys](/{{ include.product }}/tutorials/2017-02-26-ssl-certificate-issues.html).
+You cannot use passphrase protected certificate keys with Nginx. Learn how to [remove the passphrases from certificate keys](/{{page.collection}}/tutorials/2017-02-26-ssl-certificate-issues.html).
 
 ## Intermediate certificates
 
 Some SSL certificate authorities (CA), like RapidSSL, issue certificates that are not fully compatible with all devices (specifically Android devices). This is because they are not the ultimate CAs and usually act as a reseller for other authorities (like VeriSign).
 
-Cloud 66 supports these CAs fully by allowing you to add the intermediate certificate separately into the [SSL certificate add-in](/{{ include.product }}/addins/ssl/) form.
+Cloud 66 supports these CAs fully by allowing you to add the intermediate certificate separately into the [SSL certificate add-in](/{{page.collection}}/addins/ssl/) form.
 
 
 ## Multi-domain certificates
@@ -55,7 +55,7 @@ $ cat COMODORSAExtendedValidationSecureServerCA.crt COMODORSAAddTrustCA.crt AddT
 If this doesn't work make sure that your certificates don't need password.
 ```
 
-You may need to serve different parts of your application on separate domains, each with its own SSL certificate. You can use [Nginx CustomConfig](/{{ include.product }}/how-to-guides/deployment/nginx-modules.html) to set this up - you will basically have two server blocks listening on different domains, and serving different certificates (located on the server):
+You may need to serve different parts of your application on separate domains, each with its own SSL certificate. You can use [Nginx CustomConfig](/{{page.collection}}/how-to-guides/deployment/nginx-modules.html) to set this up - you will basically have two server blocks listening on different domains, and serving different certificates (located on the server):
 
 ```
 {% raw %}{% if allow_ssl == true %}
