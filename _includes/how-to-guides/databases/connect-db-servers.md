@@ -1,6 +1,6 @@
 ## On the server
 
-You can connect directly into your database server and invoke a database console from there. To do that, please refer to the [terminal connection to servers](/how-to-guides/deployment/shells/ssh.html) documentation.
+You can connect directly into your database server and invoke a database console from there. To do that, please refer to the [terminal connection to servers](/{{page.collection}}/how-to-guides/deployment/shells/ssh.html) documentation.
 
 
 ## With a client

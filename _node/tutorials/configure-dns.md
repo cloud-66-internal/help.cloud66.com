@@ -13,7 +13,7 @@ permalink: /:collection/:path
 
 ## About configuring your DNS
 
-Cloud 66 provides [DNS hostnames](/{{page.collection}}/references/server-ip-addresses.html) for each server you deploy with us. This allows us to assign a new IP address to your application on your behalf if need be, while still maintaining the same hostname.
+Cloud 66 provides [DNS hostnames]({% if page.collection != "skycap" %}/{{page.collection}}/references/server-ip-addresses.html{%else%}/maestro/references/server-ip-addresses.html{%endif%}) for each server you deploy with us. This allows us to assign a new IP address to your application on your behalf if need be, while still maintaining the same hostname.
 
 You will need to manage the DNS records of your domain name to ensure that it's pointing to Cloud 66. For maximum reliability, you should point it at a [failover group address](/node/tutorials/failover-groups.html), which allows you to switch traffic between stacks quickly and easily.
 

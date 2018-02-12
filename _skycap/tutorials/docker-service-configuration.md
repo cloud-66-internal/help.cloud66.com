@@ -90,23 +90,23 @@ Below is a table of the available configurations for a given service with a brie
      <td> <strong>Description</strong> </td> 
     </tr> 
     <tr> 
-     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/skycap/deployment/building-your-service.html{%endif%}">build_command</a> </td> 
+     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/legacy_docker/how-to-guides/deployment/building-your-service.html{%endif%}">build_command</a> </td> 
      <td> Specifies the command you would like to run during stack build. </td> 
     </tr> 
     <tr> 
-     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/skycap/deployment/building-your-service.html{%endif%}">build_root</a> </td> 
+     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/legacy_docker/how-to-guides/deployment/building-your-service.html{%endif%}">build_root</a> </td> 
      <td> Specifies the directory of your repository in which you wish to run your Docker build. </td> 
     </tr> 
     <tr> 
-     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/skycap/deployment/building-your-service.html{%endif%}">command</a> </td> 
+     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/legacy_docker/how-to-guides/deployment/building-your-service.html{%endif%}">command</a> </td> 
      <td> Specifies the command used to start your container. </td> 
     </tr> 
     <tr> 
      <td> <a href="{% if page.collection == "skycap" %}/maestro/tutorials/scaling.html{% else %}/{{page.collection}}/tutorials/scaling.html{% endif %}">constraints</a> </td> 
-     <td> Specifies <a href="{% if page.collection == "skycap" %}/maestro/tutorials/scaling.html{% else %}/{{page.collection}}/tutorials/scaling.html{% endif %}">container amount</a> or <a href="/{{page.collection}}/stack-management/service-resources.html">resource</a> constraints for a service across the cluster. </td> 
+     <td> Specifies <a href="{% if page.collection == "skycap" %}/maestro/tutorials/scaling.html{% else %}/{{page.collection}}/tutorials/scaling.html{% endif %}">container amount</a> or <a href="/{{page.collection}}/tutorials/docker-service-configuration.html">resource</a> constraints for a service across the cluster. </td> 
     </tr> 
     <tr> 
-     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/skycap/deployment/building-your-service.html{%endif%}"</a> </td> 
+     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/legacy_docker/how-to-guides/deployment/building-your-service.html{%endif%}"</a> </td> 
      <td> Specifies the command you would like to run during stack deploy (runs once per service). </td> 
     </tr> 
     <tr> 
@@ -114,7 +114,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies the dns behaviour for this service. One of the values: <em>versioned</em>, <em>non-versioned</em>. Default value is <em>versioned</em> </td> 
     </tr> 
     <tr> 
-     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/skycap/deployment/building-your-service.html{%endif%}">dockerfile_path</a> </td> 
+     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/legacy_docker/how-to-guides/deployment/building-your-service.html{%endif%}">dockerfile_path</a> </td> 
      <td> Specifies the location of the Dockerfile to be used for building this service, eg. <em>docker/Dockerfile</em>. </td> 
     </tr> 
     <tr> 
@@ -122,19 +122,19 @@ Below is a table of the available configurations for a given service with a brie
      <td> Arbitrary tags for services </td> 
     </tr> 
     <tr> 
-     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/skycap/deployment/building-your-service.html{%endif%}">git_url</a> </td> 
+     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/legacy_docker/how-to-guides/deployment/building-your-service.html{%endif%}">git_url</a> </td> 
      <td> The Git repository URL your Docker image will be built with. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/skycap/deployment/building-your-service.html#git-branch">git_branch</a> </td> 
+     <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html#git-branch">git_branch</a> </td> 
      <td> The Git repository branch your Docker image will be based on. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/skycap/deployment/building-your-service.html#use-habitus">use_habitus</a> </td> 
+     <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html#use-habitus">use_habitus</a> </td> 
      <td> Use <a href="http://www.habitus.io">Habitus</a> build workflow </td> 
     </tr> 
     <tr> 
-     <td> <a href="/skycap/deployment/building-your-service.html#use-habitus">use_habitus_step</a> </td> 
+     <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html#use-habitus">use_habitus_step</a> </td> 
      <td> The <a href="http://www.habitus.io">Habitus</a> step to use for the build. </td> 
     </tr> 
     <tr> 
@@ -146,7 +146,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> One of the values: <em>default</em>, <em>none</em> or a hash. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/skycap/deployment/building-your-service.html#image">image</a> </td> 
+     <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html#image">image</a> </td> 
      <td> The image you would typically run <code>docker pull</code> from. </td> 
     </tr> 
     <tr> 
@@ -154,7 +154,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies the load balancing method for this service. Accepted values are: <em>roundrobin</em>, <em>sticky</em>, <em>closest</em>. Default value is <em>roundrobin</em> </td> 
     </tr> 
     <tr> 
-     <td> <a href="/{{page.collection}}/stack-management/logging.html">log_folder</a> </td> 
+     <td> <a href="/{{page.collection}}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html">log_folder</a> </td> 
      <td> Folder your services logs to, mounted to <code>/var/log/containers/service</code> on the host filesystem. </td> 
     </tr> 
     <tr> 

@@ -70,7 +70,7 @@ This will create a new webhook for your repository on GitHub or simply modify an
 With this feature enabled, whenever you push new commit, Cloud 66 will automatically generate a new _deployment event_ based on recieving the _push event_ from GitHub. We will also send _deployment status events_ on different deployment statuses, such as started, cancelled, succeeded and failed.
 
 For more information please refer to the 
-Github Deployment API](/toolbelt/toolbelt-introduction).
+Github Deployment API](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html).
 
 
 ## Adding Redeployment Hooks

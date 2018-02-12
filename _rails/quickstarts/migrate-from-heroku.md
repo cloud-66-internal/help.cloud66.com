@@ -45,7 +45,7 @@ Start by dumping your existing database. Refer to the [ClearDB documentation for
 $ mysqldump -u [username] -p[password] [dbname] > backup.sql 
 {% endhighlight %}
 
-Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/toolbelt/toolbelt-upload-command) to upload the file to your stack database server. Remember to replace the fields below with your values.
+Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/{{page.collection}}/references/toolbelt.html#upload) to upload the file to your stack database server. Remember to replace the fields below with your values.
 
 {% highlight bash %}
 $ cx upload -s "[stack_name]" --server [database_server_name] backup.sql /tmp/backup.sql
@@ -66,7 +66,7 @@ $ mysql -u [generated_user_name] -p [generated_password] "[database_name]" < /tm
 
 ### 3. Traffic
 
-Once you're ready to serve traffic from your Cloud 66 stack, you need to redirect your traffic to it. For more information, see [Configure your DNS](/network/configure-your-dns).
+Once you're ready to serve traffic from your Cloud 66 stack, you need to redirect your traffic to it. For more information, see [Configure your DNS](/{{page.collection}}/tutorials/configure-dns.html).
 
 
 ## Useful pointers
@@ -89,12 +89,12 @@ Heroku restarts all dynos at 24 hours of uptime, which may conceal possible memo
 for OUTPUT in $(pgrep -f sidekiq); do kill -TERM $OUTPUT; done
 {% endhighlight %}
 
-This will send a TERM signal to any Sidekiq workers, giving them 10 seconds (by default) to finish gracefully. Any workers that don't finish within this time period are forcefully terminated and their messages are sent back to Redis for future processing. You can customize this script to fit your needs, and add it to your stack as a [shell add-in](/stack-add-ins/shell).
+This will send a TERM signal to any Sidekiq workers, giving them 10 seconds (by default) to finish gracefully. Any workers that don't finish within this time period are forcefully terminated and their messages are sent back to Redis for future processing. You can customize this script to fit your needs, and add it to your stack as a shell add-in.
 
 Note that this is a temporary solution, and we recommend that you use a server monitoring solution to identify the source of your leak.
 
 
 ### Asset Pipeline Compilation
 
-If you haven't compiled assets locally, Heroku will attempt to run the assets:precompile task during slug compilation. Cloud 66 allows you to [specify whether or not to run this](/how-to-guides/deployment/enable-disable-asset-pipeline.html) during deployment.
+If you haven't compiled assets locally, Heroku will attempt to run the assets:precompile task during slug compilation. Cloud 66 allows you to [specify whether or not to run this](/{{page.collection}}/how-to-guides/deployment/enable-disable-asset-pipeline.html) during deployment.
 

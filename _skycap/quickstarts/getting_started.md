@@ -128,7 +128,7 @@ permalink: /:collection/:path
 
 <ul>
     <li>
-        <p><strong><a href="/building-your-stack/docker-service-configuration">Service.yml documentation</a></strong> &mdash; including advanced configuration examples.</p>
+        <p><strong><a href="/{{page.collection}}/tutorials/docker-service-configuration.html">Service.yml documentation</a></strong> &mdash; including advanced configuration examples.</p>
     </li>
     <li>
         <p><strong><a href="https://help.cloud66.com/article/139-multi-tenancy-for-stacks">Multi Tenancy</a></strong> &mdash; an example of using multiple services to configure multi tenancy Stacks.</p>
