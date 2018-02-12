@@ -49,7 +49,7 @@ The Rails service is a web application so we need to configure it to handle web 
 The service will run inside a container, we need to configure it to respond to HTTP traffic. A standard web server listens on port 80 for HTTP traffic and 443 for HTTPS traffic.
 
 A Rails app listens to port 3000 so we should map the container port **3000** to the public Internet ports **80**  and **443**. Click the connector icon (circled in red above) to update the **container port** and **public internet** ports.
- ![Configuring docker container and public ports](/assets/legacy_docker/3.git)
+ ![Configuring docker container and public ports](/assets/legacy_docker/3.gif)
 Containers can also serve non HTTP traffic. TCP and UDP protocols are also supported. [Learn more about Container Port Mapping](/{{page.collection}}/tutorials/container-ports.html)
 
 
