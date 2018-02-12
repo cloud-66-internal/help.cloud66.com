@@ -12,6 +12,7 @@ $ cx --org <organization_name> users list
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |organization_name		   |		—		| Name of the organization -you can find it by using cx info- |
@@ -43,6 +44,7 @@ $ cx --org <organization_name> users show <username> [--json <json_file_path>]
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |organization_name		   |		—		| Name of the organization -you can find it by using cx info- |
@@ -75,6 +77,7 @@ $ cx --org <organization_name> users apply-profile <username> --json <json_file_
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |organization_name		   |		—		| Name of the organization -you can find it by using cx info- |

@@ -16,6 +16,7 @@ $ cx servers settings list [-s <stack>] --server <server name>|<server ip>|<serv
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack 					   |		—		|Name of the stack|
@@ -43,6 +44,7 @@ $ cx servers settings set [-s <stack>] --server <server name>|<server ip>|<serve
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack 					   |		—		|Name of the stack|
@@ -72,6 +74,7 @@ $ cx servers reboot [-s <stack>] [-e stack environment] --server <server name>
 
 
 ### Parameters
+
 
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|

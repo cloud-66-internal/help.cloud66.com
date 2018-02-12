@@ -99,7 +99,7 @@ permalink: /:collection/:path
     <img alt="Configuring docker container and public ports" src="/assets/maestro/maestro_configure_container_ports_animated.gif">
 </div>
 
-<p>Containers can also serve non HTTP traffic. TCP and UDP protocols are also supported. <a href="http://help.cloud66.com/building-your-stack/container-port-mapping">Learn more about advanced Container Port Mapping</a></p>
+<p>Containers can also serve non HTTP traffic. TCP and UDP protocols are also supported. <a href="/building-your-stack/container-port-mapping">Learn more about advanced Container Port Mapping</a></p>
 
 <h2 id="adding-data-sources">
     <a href="#adding-data-sources" class="headerlink" title="Adding Data Sources"></a>

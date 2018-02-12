@@ -13,6 +13,7 @@ Optionally provide the server to act only on that server.
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack 					   |		—		|Name of the stack|
@@ -42,6 +43,7 @@ Optionally provide the server to act only on that server.
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack 					   |		—		|Name of the stack|
@@ -76,6 +78,7 @@ Optionally provide the server to act only on that server.
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack 					   |		—		|Name of the stack|
@@ -106,6 +109,7 @@ Optionally provide the server to act only on that server.
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack 					   |		—		|Name of the stack|
@@ -135,6 +139,7 @@ Gets information about the given service such as `service name, source type`, `g
 Optionally provide the server to act only on that server.
 
 ### Parameters
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack 					   |		—		|Name of the stack|

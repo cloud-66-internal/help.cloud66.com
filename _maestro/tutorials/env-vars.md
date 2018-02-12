@@ -11,4 +11,4 @@ permalink: /:collection/:path
 
 {% assign product = 'maestro' %}
 
-{% include how-to-guides/deployment/building-a-manifest-file.md product = product %}
+{% include how-to-guides/deployment/env-vars.md product = product %}

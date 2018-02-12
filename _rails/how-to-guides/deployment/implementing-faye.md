@@ -13,7 +13,7 @@ permalink: /:collection/:path
 
 ## Introduction
 
-[Faye](http://faye.jcoglan.com/) is a publish-subscribe messaging system that provides messaging services. At Cloud 66, we recommend running Faye as a [background process](http://help.cloud66.com/deployment/running-background-processes) on your stack behind a [Thin rack server](http://help.cloud66.com/web-server/thin-rack-server).
+[Faye](http://faye.jcoglan.com/) is a publish-subscribe messaging system that provides messaging services. At Cloud 66, we recommend running Faye as a [background process](/rails/how-to-guides/deployment/bluepill.html) on your stack behind a [Thin rack server](/web-server/thin-rack-server).
 
 
 ## Implementation
@@ -23,7 +23,7 @@ We will use four files containing the following commands to accomplish this setu
 
 ### 1. RAILS_ROOT/.cloud66/deploy_hooks.yml
 
-[Deploy hooks](http://help.cloud66.com/deployment/deploy-hooks) allow you to take action at various points during a build and/or deployment on Cloud 66. This one will run the bash script that we will create in the next step before Rails is installed on your server.
+[Deploy hooks](/tutorials/deploy-hooks.html) allow you to take action at various points during a build and/or deployment on Cloud 66. This one will run the bash script that we will create in the next step before Rails is installed on your server.
 
 ```
 production:
@@ -51,7 +51,7 @@ sudo gem install faye --no-ri --no-rdoc
 
 
 ### 3. RAILS_ROOT/Procfile
-Here we are creating a [background process](http://help.cloud66.com/deployment/running-background-processes) for Faye so that we can control and monitor it from the Cloud 66 dashboard.
+Here we are creating a [background process](/rails/how-to-guides/deployment/bluepill.html) for Faye so that we can control and monitor it from the Cloud 66 dashboard.
 
 ```
 $ faye: thin -R $STACK_PATH/faye/config.ru start

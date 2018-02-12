@@ -2,7 +2,7 @@
 
 ## What is a manifest file?
 
-A manifest files allows you to be more explicit about your stack composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your stack. If you're already familiar with manifest files, refer to [Building a manifest file](/{{include.product}}/deployment/building-a-manifest-file.html).
+A manifest files allows you to be more explicit about your stack composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your stack. If you're already familiar with manifest files, refer to [Building a manifest file](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html).
 
 These are just some examples of the settings you can control with a manifest file:
 
@@ -34,7 +34,7 @@ If you'd like to use a _Docker_ stack, create it and use the _Advanced_ tab afte
 
 ### Need Help Building your first stack?
 
-Read about [building your first Cloud 66 stack](http://help.cloud66.com/introduction-to-cloud-66/introduction-to-cloud-66).
+Read about [building your first Cloud 66 stack](/introduction-to-cloud-66/introduction-to-cloud-66).
 
 
 ## Manifest file example
@@ -136,7 +136,7 @@ The names above suggest which part of the stack the settings apply to. You can f
 
 The third level of the manifest file determines the specific settings for the application type we want to change. As seen in **example 2**, changing CORS settings goes under the **docker** application type and the **configuration** node. 
 
-For example, this is how to set the version of {% if include.product != 'legacy_docker' and include.product != 'maestro' and include.produt != 'skycap' %}{{ include.product }}{% else %}Docker{% endif %} to `0.90.7`:
+For example, this is how to set the version of {% if include.product != 'legacy_docker' and include.product != 'maestro' and include.produt != 'skycap' %}{{page.collection}}{% else %}Docker{% endif %} to `0.90.7`:
 
 ```
 production:

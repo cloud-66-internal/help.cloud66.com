@@ -16,6 +16,7 @@ $ cx --org <organization_name> gateways list [ --verbose]
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|    Description    |
 |--------------------------|:--------------:| -----------------:|
 |		verbose	(optional)		   |		—		|Show more information about gateways|
@@ -42,6 +43,8 @@ $ cx --org <organization_name> gateways add --name <gateway name> --address <gat
 
 
 ### Parameters
+
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |name				   |		—		|The name of the gateway|
@@ -70,6 +73,8 @@ $ cx --org <organization_name> gateways open --name <gateway name> --key <The pa
 
 
 ### Parameters
+
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |name 					   |		—		|The name of the gateway|
@@ -97,6 +102,7 @@ $ cx --org <organization_name> gateways close --name <gateway name>
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|    Description    |
 |--------------------------|:--------------:| -----------------:|
 |		name			   |		—		|Name of the gateway|
@@ -123,6 +129,7 @@ $ cx --org <organization_name> gateways remove --name <gateway name>
 
 
 ### Parameters
+
 |		Parameter 		   |	Default		|    Description    |
 |--------------------------|:--------------:| -----------------:|
 |		name			   |		—		|Name of the gateway|

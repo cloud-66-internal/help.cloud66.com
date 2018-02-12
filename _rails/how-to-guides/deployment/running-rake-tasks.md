@@ -16,12 +16,12 @@ You can choose to run your rake tasks automatically or manually. Running them au
 
 
 ### Scheduled
-Read more about the [rake task add-in](http://help.cloud66.com/stack-add-ins/rake-task) in the documentation.
+Read more about the [rake task add-in](/rails/how-to-guides/deployment/running-rake-tasks.html) in the documentation.
 
 
 ### Deployment hooks
 
-You can use [deploy hooks](http://help.cloud66.com/deployment/deploy-hooks) to execute your rake task at any point of your deployment.
+You can use [deploy hooks](/tutorials/deploy-hooks.html) to execute your rake task at any point of your deployment.
 
 Simply add a bash script to your stack that contains the rake task: for example, create the file `/.cloud66/scripts/rake_task.sh` as below:
 
@@ -49,7 +49,7 @@ production:
 
 
 ## Manually
-This is done by starting a [terminal connection to your server](http://help.cloud66.com/managing-your-stack/ssh-to-your-server) and executing your rake task.
+This is done by starting a [terminal connection to your server](/how-to-guides/deployment/shells/ssh.html) and executing your rake task.
 
 ```
 $ cd $STACK_PATH

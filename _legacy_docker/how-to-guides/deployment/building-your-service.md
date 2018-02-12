@@ -117,7 +117,7 @@ This will default to the value of _build_root_/Dockerfile if not specified.
 
 ### Git URL
 
-The Git repository URL your Docker image will be built with. The Git URL you use to [allow us access to your repository](http://community.cloud66.com/articles/accessing-your-git-repository) will differ for public and private repositories.
+The Git repository URL your Docker image will be built with. The Git URL you use to [allow us access to your repository](/{{page.collection}}/how-to-guides/deployment/shells/access-your-code.html) will differ for public and private repositories.
 
 ```
 

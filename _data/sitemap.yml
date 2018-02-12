@@ -77,9 +77,9 @@ toc2:
         - page: Add-in Implementation
           url: /legacy_docker/addins/add-in-implementation.html
         - page: Database Backup
-          url: /legacy_docker/addins/database-backups.html
+          url: /legacy_docker/tutorials/database-backup.html
         - page: SSL Certificate
-          url: /legacy_docker/addins/ssl/
+          url: /legacy_docker/how-to-guides/security/ssl-certificate.html
         - page: Using Logs with Cloud 66 for Docker
           url: /legacy_docker/addins/logs
         - page: Jobs
@@ -87,7 +87,7 @@ toc2:
         - page: Load Balancing
           url: /legacy_docker/addins/load-balancing.html
         - page: HAProxy
-          url: /legacy_docker/addins/haproxy.html
+          url: /legacy_docker/how-to-guides/security/multi-cert_haproxy.html
         - page: Elasticsearch
           url: /legacy_docker/addins/elasticsearch.html
         - page: Glusterfs
@@ -141,7 +141,7 @@ toc2:
           - page: Advanced Deploy
             url: /legacy_docker/deployment/advanced-deploy.html
           - page: Getting Started with Manifest Files
-            url: /legacy_docker/deployment/getting-started-with-manifest-files.html
+            url: /legacy_docker/tutorials/getting-started-with-manifest.html
           - page: Building your Manifest File
             url: /legacy_docker/deployment/building-a-manifest-file.html
           - page: Deploy to your cloud
@@ -151,11 +151,11 @@ toc2:
           - page: Container Port Mapping
             url: /legacy_docker/deployment/container-ports.html
           - page: Service Network Configuration
-            url: /legacy_docker/deployment/service-network-configuration.html
+            url: /legacy_docker/tutorials/service-networking.html
           - page: Deployment History
             url: /legacy_docker/deployment/deployment-history.html
           - page: Deploy Hooks
-            url: /legacy_docker/deployment/deploy-hooks.html
+            url: /legacy_docker/tutorials/deploy-hooks.html.html
           - page: Deployment Profiles
             url: /legacy_docker/deployment/deploy-profiles.html
           - page: Deployment Authorization
@@ -163,7 +163,7 @@ toc2:
           - page: Parallel Deployments
             url: /legacy_docker/deployment/parallel-deployment.html
           - page: Server IP Addresses and Hostnames
-            url: /legacy_docker/deployment/server-ip-addresses.html
+            url: /legacy_docker/references/server-ip-addresses.html
           - page: Registered Servers
             url: /legacy_docker/deployment/registered-servers.html
           - page: Nginx
@@ -180,7 +180,7 @@ toc2:
         url: /legacy_docker/failover-groups/
         subsubfolderitems:
           - page: Failover Groups
-            url: /legacy_docker/failover-groups/failover-groups.html
+            url: /legacy_docker/tutorials/failover-groups.html
       - page: Getting Started
         url: /legacy_docker/getting-started/
         subsubfolderitems:
@@ -210,7 +210,7 @@ toc2:
           - page: Service Monitoring
             url: /legacy_docker/stack-management/service-monitoring.html
           - page: Stack Network Configuration
-            url: /legacy_docker/stack-management/network-configuration.html
+            url: /legacy_docker/tutorials/service-network-configuration.html
           - page: SSH to your Server
             url: /legacy_docker/stack-management/ssh-to-server.html
           - page: Server Deletion
@@ -218,7 +218,7 @@ toc2:
           - page: Server Restart Notifications
             url: /legacy_docker/stack-management/server-restart-notifications.html
           - page: Service Life-cycle Management
-            url: /legacy_docker/stack-management/service-lifecycle-management.html
+            url: /legacy_docker/tutorials/service-network-configuration.html
           - page: Service Pause & Resume
             url: /legacy_docker/stack-management/service-pause-resume.html
           - page: Service Resources
@@ -226,7 +226,7 @@ toc2:
           - page: Service Storage
             url: /legacy_docker/how-to-guides/deployment/service-storage.html
           - page: Scaling
-            url: /legacy_docker/stack-management/scaling.html
+            url: /legacy_docker/tutorials/scaling.html
           - page: Logging
             url: /legacy_docker/stack-management/logging.html
           - page: Live-Logs
@@ -236,9 +236,9 @@ toc2:
           - page: Applying Upgrades
             url: /legacy_docker/stack-management/applying-upgrades.html
           - page: CustomConfig™
-            url: /legacy_docker/stack-management/custom-config.html
+            url: /legacy_docker/tutorials/custom-config.html
           - page: CustomConfig Git
-            url: /legacy_docker/stack-management/custom-git-repository.html
+            url: /legacy_docker/references/connect-cloud66-to-git-repo.html
           - page: Server Meta Data Service
             url: /legacy_docker/stack-management/meta-data-service.html
           - page: Global Search
@@ -249,7 +249,7 @@ toc2:
         url: /legacy_docker/toolbelt/
         subsubfolderitems:
           - page: Toolbelt Introduction
-            url: /legacy_docker/toolbelt/introduction.html
+            url: /legacy_docker/quickstarts/using-cloud66-toolbelt.html
           - page: Toolbelt Commands Directory
             url: /legacy_docker/toolbelt/commands-overview.html
           - page: Toolbelt SSH to servers
@@ -285,7 +285,7 @@ toc2:
           - page: Toolbelt tail command
             url: /legacy_docker/toolbelt/tail.html
           - page: Toolbelt gateway management
-            url: /legacy_docker/toolbelt/gateway.html
+            url: /legacy_docker/references/shells/toolbelt.html#gateway-management
           - page: Toolbelt tunnel command
             url: /legacy_docker/toolbelt/tunnel.html
           - page: Toolbelt upload command
@@ -343,7 +343,7 @@ toc2:
           - page: How to Deal with a Failover Group
             url: /legacy_docker/tutorials/1976-09-26-stack-failover.html
           - page: Optimizing Performance for Server Load
-            url: /legacy_docker/tutorials/1980-09-26-optimizing-performance.html
+            url: /legacy_docker/how-to-guides/deployment/shells/optimizing-performance.html
           - page: Out of Memory Errors during Deployment
             url: /legacy_docker/tutorials/1981-09-26-out-of-memory-errors.html
           - page: Seeding your databases
@@ -357,7 +357,7 @@ toc2:
           - page: Application not Serving Content
             url: /legacy_docker/tutorials/2009-09-26-application-not-serving.html
           - page: Nginx Basic Authorization
-            url: /legacy_docker/tutorials/2012-01-03-nginx-auth.html
+            url: /legacy_docker/how-to-guides/security/nginx-auth.html
           - page: Nginx allow and deny by IP
             url: /legacy_docker/tutorials/2012-01-05-nginx-deny.html
           - page: DigitalOcean server creation errors
@@ -397,7 +397,7 @@ toc2:
           - page: Issues Replicating Data Between Two Versions of PostgreSQL
             url: /legacy_docker/tutorials/2017-02-13-pg-replication-version.html
           - page: SSL Certificate Issues
-            url: /legacy_docker/tutorials/2017-02-26-ssl-certificate-issues.html
+            url: /legacy_docker/how-to-guides/security/ssl-certificate.html
           - page: How to add management certificates in Azure new portal
             url: /legacy_docker/tutorials/2017-03-12-azure-old-portal.html
           - page: Manage your stacks from Slack with ChatOps
@@ -410,15 +410,15 @@ toc2:
         - page: Add-in Implementation
           url: /maestro/addins/add-in-implementation.html
         - page: Database Backup
-          url: /maestro/addins/database-backups.html
+          url: /maestro/tutorials/database-backup.html
         - page: SSL Certificate
-          url: /maestro/addins/ssl/
+          url: /maestro/how-to-guides/security/ssl-certificate.html
         - page: Using Logs with Maestro
           url: /maestro/addins/logs/
         - page: Jobs
           url: /maestro/addins/jobs/
         - page: HAProxy
-          url: /maestro/addins/haproxy.html
+          url: /maestro/how-to-guides/security/multi-cert_haproxy.html
         - page: Elasticsearch
           url: /maestro/addins/elasticsearch.html
         - page: Glusterfs
@@ -468,7 +468,7 @@ toc2:
           - page: Advanced Deploy
             url: /maestro/deployment/advanced-deploy.html
           - page: Getting Started with Manifest Files
-            url: /maestro/deployment/getting-started-with-manifest-files.html
+            url: /maestro/tutorials/getting-started-with-manifest.html
           - page: Building your Manifest File
             url: /maestro/deployment/building-a-manifest-file.html
           - page: Deploy to your cloud
@@ -478,11 +478,11 @@ toc2:
           - page: Container Port Mapping
             url: /maestro/deployment/container-ports.html
           - page: Service Network Configuration
-            url: /maestro/deployment/service-network-configuration.html
+            url: /maestro/tutorials/service-networking.html
           - page: Deployment History
             url: /maestro/deployment/deployment-history.html
           - page: Deploy Hooks
-            url: /maestro/deployment/deploy-hooks.html
+            url: /maestro/tutorials/deploy-hooks.html.html
           - page: Deployment Profiles
             url: /maestro/deployment/deploy-profiles.html
           - page: Deployment Authorization
@@ -490,7 +490,7 @@ toc2:
           - page: Parallel Deployments
             url: /maestro/deployment/parallel-deployment.html
           - page: Server IP Addresses and Hostnames
-            url: /maestro/deployment/server-ip-addresses.html
+            url: /maestro/references/server-ip-addresses.html
           - page: Registered Servers
             url: /maestro/deployment/registered-servers.html
           - page: Nginx
@@ -507,7 +507,7 @@ toc2:
         url: /maestro/failover-groups/
         subsubfolderitems:
           - page: Failover Groups
-            url: /maestro/failover-groups/failover-groups.html
+            url: /maestro/tutorials/failover-groups.html
       - page: Getting Started
         url: /maestro/getting-started/
         subsubfolderitems:
@@ -535,7 +535,7 @@ toc2:
           - page: Service Monitoring
             url: /maestro/stack-management/service-monitoring.html
           - page: Stack Network Configuration
-            url: /maestro/stack-management/network-configuration.html
+            url: /maestro/tutorials/service-network-configuration.html
           - page: SSH to your Server
             url: /maestro/stack-management/ssh-to-server.html
           - page: Server Deletion
@@ -543,7 +543,7 @@ toc2:
           - page: Server Restart Notifications
             url: /maestro/stack-management/server-restart-notifications.html
           - page: Service Life-cycle Management
-            url: /maestro/stack-management/service-lifecycle-management.html
+            url: /maestro/tutorials/service-network-configuration.html
           - page: Service Pause & Resume
             url: /maestro/stack-management/service-pause-resume.html
           - page: Service Resources
@@ -551,7 +551,7 @@ toc2:
           - page: Service Storage
             url: /maestro/how-to-guides/deployment/service-storage.html
           - page: Scaling
-            url: /maestro/stack-management/scaling.html
+            url: /maestro/tutorials/scaling.html
           - page: Logging
             url: /maestro/stack-management/logging.html
           - page: Live-Logs
@@ -561,9 +561,9 @@ toc2:
           - page: Applying Upgrades
             url: /maestro/stack-management/applying-upgrades.html
           - page: CustomConfig™
-            url: /maestro/stack-management/custom-config.html
+            url: /maestro/tutorials/custom-config.html
           - page: CustomConfig Git
-            url: /maestro/stack-management/custom-git-repository.html
+            url: /maestro/references/connect-cloud66-to-git-repo.html
           - page: Server Meta Data Service
             url: /maestro/stack-management/meta-data-service.html
           - page: Global Search
@@ -574,7 +574,7 @@ toc2:
         url: /maestro/toolbelt/
         subsubfolderitems:
           - page: Toolbelt Introduction
-            url: /maestro/toolbelt/introduction.html
+            url: /maestro/quickstarts/using-cloud66-toolbelt.html
           - page: Toolbelt Commands Directory
             url: /maestro/toolbelt/commands-overview.html
           - page: Toolbelt SSH to servers
@@ -610,7 +610,7 @@ toc2:
           - page: Toolbelt tail command
             url: /maestro/toolbelt/tail.html
           - page: Toolbelt gateway management
-            url: /maestro/toolbelt/gateway.html
+            url: /maestro/references/shells/toolbelt.html#gateway-management
           - page: Toolbelt tunnel command
             url: /maestro/toolbelt/tunnel.html
           - page: Toolbelt upload command
@@ -666,7 +666,7 @@ toc2:
           - page: How to Deal with a Failover Group
             url: /maestro/tutorials/1976-09-26-stack-failover.html
           - page: Optimizing Performance for Server Load
-            url: /maestro/tutorials/1980-09-26-optimizing-performance.html
+            url: /maestro/how-to-guides/deployment/shells/optimizing-performance.html
           - page: Out of Memory Errors during Deployment
             url: /maestro/tutorials/1981-09-26-out-of-memory-errors.html
           - page: Seeding your databases
@@ -680,7 +680,7 @@ toc2:
           - page: Application not Serving Content
             url: /maestro/tutorials/2009-09-26-application-not-serving.html
           - page: Nginx Basic Authorization
-            url: /maestro/tutorials/2012-01-03-nginx-auth.html
+            url: /maestro/how-to-guides/security/nginx-auth.html
           - page: Nginx allow and deny by IP
             url: /maestro/tutorials/2012-01-05-nginx-deny.html
           - page: DigitalOcean server creation errors
@@ -720,7 +720,7 @@ toc2:
           - page: Issues Replicating Data Between Two Versions of PostgreSQL
             url: /maestro/tutorials/2017-02-13-pg-replication-version.html
           - page: SSL Certificate Issues
-            url: /maestro/tutorials/2017-02-26-ssl-certificate-issues.html
+            url: /maestro/how-to-guides/security/ssl-certificate.html
           - page: How to add management certificates in Azure new portal
             url: /maestro/tutorials/2017-03-12-azure-old-portal.html
           - page: Manage your stacks from Slack with ChatOps
@@ -733,9 +733,9 @@ toc2:
         - page: Add-in Implementation
           url: /node/addins/add-in-implementation.html
         - page: Database Backup
-          url: /node/addins/database-backups.html
+          url: /node/tutorials/database-backup.html
         - page: SSL Certificate
-          url: /node/addins/ssl/
+          url: /node/how-to-guides/security/ssl-certificate.html
         - page: Using Logs with Node
           url: /node/addins/logs
         - page: Jobs
@@ -743,7 +743,7 @@ toc2:
         - page: Load Balancing
           url: /node/addins/load-balancing.html
         - page: HAProxy
-          url: /node/addins/haproxy.html
+          url: /node/how-to-guides/security/multi-cert_haproxy.html
         - page: Elasticsearch
           url: /node/addins/elasticsearch.html
         - page: Glusterfs
@@ -799,7 +799,7 @@ toc2:
           - page: Advanced Deploy
             url: /node/deployment/advanced-deploy.html
           - page: Getting Started with Manifest Files
-            url: /node/deployment/getting-started-with-manifest-files.html
+            url: /node/tutorials/getting-started-with-manifest.html
           - page: Building your Manifest File
             url: /node/deployment/building-a-manifest-file.html
           - page: Deploy to your cloud
@@ -807,15 +807,15 @@ toc2:
           - page: Configure your DNS
             url: /node/deployment/configure-dns.html
           - page: Service Network Configuration
-            url: /node/deployment/service-network-configuration.html
+            url: /node/tutorials/service-networking.html
           - page: Deployment History
             url: /node/deployment/deployment-history.html
           - page: Deploy Hooks
-            url: /node/deployment/deploy-hooks.html
+            url: /node/tutorials/deploy-hooks.html.html
           - page: Parallel Deployments
             url: /node/deployment/parallel-deployment.html
           - page: Server IP Addresses and Hostnames
-            url: /node/deployment/server-ip-addresses.html
+            url: /node/references/server-ip-addresses.html
           - page: Registered Servers
             url: /node/deployment/registered-servers.html
           - page: Nginx
@@ -830,7 +830,7 @@ toc2:
         url: /node/failover-groups/
         subsubfolderitems:
           - page: Failover Groups
-            url: /node/failover-groups/failover-groups.html
+            url: /node/tutorials/failover-groups.html
       - page: Getting Started
         url: /node/getting-started/
         subsubfolderitems:
@@ -852,7 +852,7 @@ toc2:
           - page: Service Monitoring
             url: /node/stack-management/service-monitoring.html
           - page: Stack Network Configuration
-            url: /node/stack-management/network-configuration.html
+            url: /node/tutorials/service-network-configuration.html
           - page: SSH to your Server
             url: /node/stack-management/ssh-to-server.html
           - page: Server Deletion
@@ -860,9 +860,9 @@ toc2:
           - page: Server Restart Notifications
             url: /node/stack-management/server-restart-notifications.html
           - page: Service Life-cycle Management
-            url: /node/stack-management/service-lifecycle-management.html
+            url: /node/tutorials/service-network-configuration.html
           - page: Scaling
-            url: /node/stack-management/scaling.html
+            url: /node/tutorials/scaling.html
           - page: Logging
             url: /node/stack-management/logging.html
           - page: Live-Logs
@@ -872,9 +872,9 @@ toc2:
           - page: Applying Upgrades
             url: /node/stack-management/applying-upgrades.html
           - page: CustomConfig™
-            url: /node/stack-management/custom-config.html
+            url: /node/tutorials/custom-config.html
           - page: CustomConfig Git
-            url: /node/stack-management/custom-git-repository.html
+            url: /node/references/connect-cloud66-to-git-repo.html
           - page: Server Meta Data Service
             url: /node/stack-management/meta-data-service.html
           - page: Global Search
@@ -887,7 +887,7 @@ toc2:
         url: /node/toolbelt/
         subsubfolderitems:
           - page: Toolbelt Introduction
-            url: /node/toolbelt/introduction.html
+            url: /node/quickstarts/using-cloud66-toolbelt.html
           - page: Toolbelt Commands Directory
             url: /node/toolbelt/commands-overview.html
           - page: Toolbelt SSH to servers
@@ -923,7 +923,7 @@ toc2:
           - page: Toolbelt tail command
             url: /node/toolbelt/tail.html
           - page: Toolbelt gateway management
-            url: /node/toolbelt/gateway.html
+            url: /node/references/shells/toolbelt.html#gateway-management
           - page: Toolbelt tunnel command
             url: /node/toolbelt/tunnel.html
           - page: Toolbelt upload command
@@ -981,7 +981,7 @@ toc2:
           - page: How to Deal with a Failover Group
             url: /node/tutorials/1976-09-26-stack-failover.html
           - page: Optimizing Performance for Server Load
-            url: /node/tutorials/1980-09-26-optimizing-performance.html
+            url: /node/how-to-guides/deployment/shells/optimizing-performance.html
           - page: Out of Memory Errors during Deployment
             url: /node/tutorials/1981-09-26-out-of-memory-errors.html
           - page: Seeding your databases
@@ -995,7 +995,7 @@ toc2:
           - page: Application not Serving Content
             url: /node/tutorials/2009-09-26-application-not-serving.html
           - page: Nginx Basic Authorization
-            url: /node/tutorials/2012-01-03-nginx-auth.html
+            url: /node/how-to-guides/security/nginx-auth.html
           - page: Nginx allow and deny by IP
             url: /node/tutorials/2012-01-05-nginx-deny.html
           - page: DigitalOcean server creation errors
@@ -1029,7 +1029,7 @@ toc2:
           - page: Issues Replicating Data Between Two Versions of PostgreSQL
             url: /node/tutorials/2017-02-13-pg-replication-version.html
           - page: SSL Certificate Issues
-            url: /node/tutorials/2017-02-26-ssl-certificate-issues.html
+            url: /node/how-to-guides/security/ssl-certificate.html
           - page: How to add management certificates in Azure new portal
             url: /node/tutorials/2017-03-12-azure-old-portal.html
           - page: Manage your stacks from Slack with ChatOps
@@ -1047,9 +1047,9 @@ toc2:
         - page: Add-in Implementation
           url: /rails/addins/add-in-implementation.html
         - page: Database Backup
-          url: /rails/addins/database-backups.html
+          url: /rails/tutorials/database-backup.html
         - page: SSL Certificate
-          url: /rails/addins/ssl/
+          url: /rails/how-to-guides/security/ssl-certificate.html
         - page: Using Logs with Rails
           url: /rails/addins/logs
         - page: Jobs
@@ -1057,7 +1057,7 @@ toc2:
         - page: Load Balancer
           url: /rails/addins/load-balancer.html
         - page: HAProxy
-          url: /rails/addins/haproxy.html
+          url: /rails/how-to-guides/security/multi-cert_haproxy.html
         - page: Elasticsearch
           url: /rails/addins/elasticsearch.html
         - page: Glusterfs
@@ -1103,7 +1103,7 @@ toc2:
           - page: Stack Environments
             url: /rails/deployment/stack-environments.html
           - page: Getting Started with Manifest Files
-            url: /rails/deployment/getting-started-with-manifest-files.html
+            url: /rails/tutorials/getting-started-with-manifest.html
           - page: Building your Manifest File
             url: /rails/deployment/building-a-manifest-file.html
           - page: Deploy to your cloud
@@ -1111,21 +1111,21 @@ toc2:
           - page: Configure your DNS
             url: /rails/deployment/configure-dns.html
           - page: Service Network Configuration
-            url: /rails/deployment/service-network-configuration.html
+            url: /rails/tutorials/service-networking.html
           - page: Deployment History
             url: /rails/deployment/deployment-history.html
           - page: Deploy Hooks
-            url: /rails/deployment/deploy-hooks.html
+            url: /rails/tutorials/deploy-hooks.html.html
           - page: Parallel Deployments
             url: /rails/deployment/parallel-deployment.html
           - page: Server IP Addresses and Hostnames
-            url: /rails/deployment/server-ip-addresses.html
+            url: /rails/references/server-ip-addresses.html
           - page: Registered Servers
             url: /rails/deployment/registered-servers.html
           - page: Rack Web Servers
             url: /rails/deployment/rack-webservers/
           - page: Web Servers for Rails
-            url: /rails/deployment/custom-web-servers.html
+            url: /rails/how-to-guides/deployment/shells/nginx-modules.html#passenger
           - page: Nginx
             url: /rails/deployment/nginx.html
           - page: Deployment Gateway
@@ -1137,7 +1137,7 @@ toc2:
           - page: Redeployment Hooks
             url: /rails/deployment/redeployment-hook.html
           - page: Running background processes
-            url: /rails/deployment/proc-files.html
+            url: /rails/how-to-guides/deployment/bluepill.html
           - page: Asset Pipeline Compilation
             url: /rails/deployment/asset-pipeline.html
           - page: EasyDeploy Repositories
@@ -1150,7 +1150,7 @@ toc2:
         url: /rails/failover-groups/
         subsubfolderitems:
           - page: Failover Groups
-            url: /rails/failover-groups/failover-groups.html
+            url: /rails/tutorials/failover-groups.html
       - page: Getting Started
         url: /rails/getting-started/
         subsubfolderitems:
@@ -1170,7 +1170,7 @@ toc2:
           - page: Service Monitoring
             url: /rails/stack-management/service-monitoring.html
           - page: Stack Network Configuration
-            url: /rails/stack-management/network-configuration.html
+            url: /rails/tutorials/service-network-configuration.html
           - page: SSH to your server
             url: /rails/stack-management/ssh-to-server.html
           - page: Server Deletion
@@ -1178,9 +1178,9 @@ toc2:
           - page: Server Restart Notifications
             url: /rails/stack-management/server-restart-notifications.html
           - page: Service Lifecycle Management
-            url: /rails/stack-management/service-lifecycle-management.html
+            url: /rails/tutorials/service-network-configuration.html
           - page: Scaling
-            url: /rails/stack-management/scaling.html
+            url: /rails/tutorials/scaling.html
           - page: Logging
             url: /rails/stack-management/logging.html
           - page: Live-Logs
@@ -1190,9 +1190,9 @@ toc2:
           - page: Applying Upgrades
             url: /rails/stack-management/applying-upgrades.html
           - page: CustomConfig™
-            url: /rails/stack-management/custom-config.html
+            url: /rails/tutorials/custom-config.html
           - page: CustomConfig Git
-            url: /rails/stack-management/custom-git-repository.html
+            url: /rails/references/connect-cloud66-to-git-repo.html
           - page: Server Meta Data Service
             url: /rails/stack-management/meta-data-service.html
           - page: Global Search
@@ -1209,7 +1209,7 @@ toc2:
         url: /rails/toolbelt/
         subsubfolderitems:
           - page: Toolbelt Introduction
-            url: /rails/toolbelt/introduction.html
+            url: /rails/quickstarts/using-cloud66-toolbelt.html
           - page: Toolbelt Commands Directory
             url: /rails/toolbelt/commands-overview.html
           - page: Toolbelt SSH to servers
@@ -1245,7 +1245,7 @@ toc2:
           - page: Toolbelt tail command
             url: /rails/toolbelt/tail.html
           - page: Toolbelt gateway management
-            url: /rails/toolbelt/gateway.html
+            url: /rails/references/shells/toolbelt.html#gateway-management
           - page: Toolbelt tunnel command
             url: /rails/toolbelt/tunnel.html
           - page: Toolbelt upload command
@@ -1311,7 +1311,7 @@ toc2:
           - page: How to deal with a failover group
             url: /rails/tutorials/1976-09-26-stack-failover.html
           - page: Optimizing for server load
-            url: /rails/tutorials/1980-09-26-optimizing-performance.html
+            url: /rails/how-to-guides/deployment/shells/optimizing-performance.html
           - page: How to install PostGIS
             url: /rails/tutorials/1985-09-26-postgis-installation.html
           - page: PostgreSQL failover procedure
@@ -1335,7 +1335,7 @@ toc2:
           - page: Asset Pipeline Error
             url: /rails/tutorials/2011-09-26-asset-pipeline.html
           - page: Nginx basic authorization
-            url: /rails/tutorials/2012-01-03-nginx-auth.html
+            url: /rails/how-to-guides/security/nginx-auth.html
           - page: Nginx allow and deny by IP
             url: /rails/tutorials/2012-01-05-nginx-deny.html
           - page: DigitalOcean server creation errors
@@ -1383,7 +1383,7 @@ toc2:
           - page: Issues replicating data between two versions of PostgreSQL
             url: /rails/tutorials/2017-02-13-pg-replication-version.html
           - page: SSL certificate issues
-            url: /rails/tutorials/2017-02-26-ssl-certificate-issues.html
+            url: /rails/how-to-guides/security/ssl-certificate.html
           - page: Unicorn deployment issues
             url: /rails/tutorials/2017-02-26-unicorn-issues.html
           - page: How to add management certificates in Azure new portal
@@ -1410,17 +1410,17 @@ toc2:
           - page: Advanced Deploy
             url: /skycap/deployment/advanced-deploy.html
           - page: Getting Started with Manifest Files
-            url: /skycap/deployment/getting-started-with-manifest-files.html
+            url: /skycap/tutorials/getting-started-with-manifest.html
           - page: Building your Manifest File
             url: /skycap/deployment/building-a-manifest-file.html
           - page: Configure your DNS
             url: /skycap/deployment/configure-dns.html
           - page: Service Network Configuration
-            url: /skycap/deployment/service-network-configuration.html
+            url: /skycap/tutorials/service-networking.html
           - page: Deployment History
             url: /skycap/deployment/deployment-history.html
           - page: Deploy Hooks
-            url: /skycap/deployment/deploy-hooks.html
+            url: /skycap/tutorials/deploy-hooks.html.html
           - page: Deployment Profiles
             url: /skycap/deployment/deploy-profiles.html
           - page: Deployment Authorization
@@ -1428,7 +1428,7 @@ toc2:
           - page: Parallel Deployments
             url: /skycap/deployment/parallel-deployment.html
           - page: Server IP Addresses and Hostnames
-            url: /skycap/deployment/server-ip-addresses.html
+            url: /skycap/references/server-ip-addresses.html
           - page: Registered Servers
             url: /skycap/deployment/registered-servers.html
           - page: Nginx
@@ -1460,9 +1460,9 @@ toc2:
           - page: Stack Notifications
             url: /skycap/stack-management/stack-notifications.html
           - page: CustomConfig™
-            url: /skycap/stack-management/custom-config.html
+            url: /skycap/tutorials/custom-config.html
           - page: CustomConfig Git
-            url: /skycap/stack-management/custom-git-repository.html
+            url: /skycap/references/connect-cloud66-to-git-repo.html
           - page: Global Search
             url: /skycap/stack-management/global-search.html
           - page: Cloud 66 Birdseye

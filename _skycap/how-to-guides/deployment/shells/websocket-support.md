@@ -9,4 +9,7 @@ tags: ["websocket"]
 
 permalink: /:collection/:path
 ---
-{% include how-to-guides/deployment/websocket-support.md %}
+
+{% assign product = 'skycap' %}
+
+{% include how-to-guides/deployment/websocket-support.md product = product %}

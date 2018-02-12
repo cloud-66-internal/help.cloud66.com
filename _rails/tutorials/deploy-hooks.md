@@ -351,7 +351,7 @@ For **Rails/Rack** stacks this file should be present within a folder named _.cl
 /.cloud66/deploy_hooks.yml
 ```
 
-For **Docker stacks** this file should be pushed into [CustomConfig git](/{{ include.product }}/stack-management/custom-git-repository.html) Repository of the stack. This repository will be created after the stack is analysed, so you can push your deploy hooks before deployment started.
+For **Docker stacks** this file should be pushed into [CustomConfig git](/{{page.collection}}/references/connect-cloud66-to-git-repo.html) Repository of the stack. This repository will be created after the stack is analysed, so you can push your deploy hooks before deployment started.
 
 This file should be YAML formatted, and you can use a service like [YAMLlint](http://yamllint.com/) to validate it.
 
@@ -414,7 +414,7 @@ production: # Environment
 When automating the installation of packages, remember to use the _-y_ flag to answer yes to all prompts.
 
 
-The example below can be used to run custom rake tasks during server build. If you need to run it more than once, consider using the [rake task add-in](/rails/addins/jobs/rake-task.html).
+The example below can be used to run custom rake tasks during server build. If you need to run it more than once, consider using the [rake task add-in](/rails/how-to-guides/deployment/running-rake-tasks.html).
 
 ```
 production: # Environment

@@ -16,6 +16,7 @@ $ cx ssh  [--gateway-key <The path to the key of gateway server>]    [-s <stack>
 
 ### Parameters
 
+
 |		Parameter 		   |	Default		|   Description    |
 |--------------------------|:--------------:| ----------------:|
 |stack name |		—		|Name of the stack to access|
