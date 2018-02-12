@@ -10,7 +10,8 @@ permalink: /:collection/:path
 ---
 
 
-Note:
+### Note:
+
 Backup verifier is only supported for Rails stacks.
 
 ## What is a backup verifier?
@@ -30,7 +31,7 @@ To verify your backup, the script must contain a SQL query that returns a data s
 ### Important
 Your backup will be assumed to be verified if the value returned from the query is true.
 
-###MySQL
+### MySQL
 
 This query will count the number of records in the users table, and returns a 1 if that number is not zero.
 
@@ -45,7 +46,7 @@ result
 1
 ```
 
-###PostgreSQL
+### PostgreSQL
 
 
 Similarly, this query also counts the number of records in the users table, and returns a boolean of true if that number is not zero.
@@ -62,6 +63,6 @@ result
 t
 ```
 
-##View backup verification status
+### View backup verification status
 
 To see your backup verification status, visit your stack detail page, and click the link to your managed backup page. A successfully verified backup will display a green tick, and a failure during verification will result in a red cross - clicking on the red cross will show the error message.

@@ -222,13 +222,13 @@ toc2:
           - page: Service Pause & Resume
             url: /legacy_docker/stack-management/service-pause-resume.html
           - page: Service Resources
-            url: /legacy_docker/stack-management/service-resources.html
+            url: /legacy_docker/tutorials/docker-service-configuration.html
           - page: Service Storage
             url: /legacy_docker/how-to-guides/deployment/service-storage.html
           - page: Scaling
             url: /legacy_docker/tutorials/scaling.html
           - page: Logging
-            url: /legacy_docker/stack-management/logging.html
+            url: /legacy_docker/how-to-guides/deployment/shells/setting-up-custom-livelogs.html
           - page: Live-Logs
             url: /legacy_docker/stack-management/live-logs.html
           - page: Stack Notifications
@@ -547,13 +547,13 @@ toc2:
           - page: Service Pause & Resume
             url: /maestro/stack-management/service-pause-resume.html
           - page: Service Resources
-            url: /maestro/stack-management/service-resources.html
+            url: /maestro/tutorials/docker-service-configuration.html
           - page: Service Storage
             url: /maestro/how-to-guides/deployment/service-storage.html
           - page: Scaling
             url: /maestro/tutorials/scaling.html
           - page: Logging
-            url: /maestro/stack-management/logging.html
+            url: /maestro/how-to-guides/deployment/shells/setting-up-custom-livelogs.html
           - page: Live-Logs
             url: /maestro/stack-management/live-logs.html
           - page: Stack Notifications
@@ -864,7 +864,7 @@ toc2:
           - page: Scaling
             url: /node/tutorials/scaling.html
           - page: Logging
-            url: /node/stack-management/logging.html
+            url: /node/how-to-guides/deployment/shells/setting-up-custom-livelogs.html
           - page: Live-Logs
             url: /node/stack-management/live-logs.html
           - page: Stack Notifications
@@ -1182,7 +1182,7 @@ toc2:
           - page: Scaling
             url: /rails/tutorials/scaling.html
           - page: Logging
-            url: /rails/stack-management/logging.html
+            url: /rails/how-to-guides/deployment/shells/setting-up-custom-livelogs.html
           - page: Live-Logs
             url: /rails/stack-management/live-logs.html
           - page: Stack Notifications
@@ -1402,7 +1402,7 @@ toc2:
           - page: BuildGrid
             url: /skycap/deployment/buildgrid/
           - page: Building your Service
-            url: /skycap/deployment/building-your-service.html
+            url: /legacy_docker/how-to-guides/deployment/building-your-service.html
           - page: Docker Service Configuration
             url: /skycap/deployment/docker-service-configuration.html
           - page: Environment Variables

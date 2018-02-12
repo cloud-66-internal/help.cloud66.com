@@ -21,7 +21,7 @@ Read more about the [rake task add-in](/rails/how-to-guides/deployment/running-r
 
 ### Deployment hooks
 
-You can use [deploy hooks](/tutorials/deploy-hooks.html) to execute your rake task at any point of your deployment.
+You can use [deploy hooks](/{{page.collection}}/tutorials/deploy-hooks.html) to execute your rake task at any point of your deployment.
 
 Simply add a bash script to your stack that contains the rake task: for example, create the file `/.cloud66/scripts/rake_task.sh` as below:
 
@@ -49,7 +49,7 @@ production:
 
 
 ## Manually
-This is done by starting a [terminal connection to your server](/how-to-guides/deployment/shells/ssh.html) and executing your rake task.
+This is done by starting a [terminal connection to your server](/{{page.collection}}/how-to-guides/deployment/shells/ssh.html) and executing your rake task.
 
 ```
 $ cd $STACK_PATH

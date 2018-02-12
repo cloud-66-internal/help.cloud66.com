@@ -11,7 +11,7 @@ permalink: /:collection/:path
 ---
 {% assign product = "Rails" %}
 
-Start by [SSHing to your server](/how-to-guides/deployment/shells/ssh.html). Then go to your `STACK_PATH` (eg. `cd $STACK_PATH`) and run the following command:
+Start by [SSHing to your server](/{{page.collection}}/how-to-guides/deployment/shells/ssh.html). Then go to your `STACK_PATH` (eg. `cd $STACK_PATH`) and run the following command:
 
 ```
 $ bundle exec rails c <environment>

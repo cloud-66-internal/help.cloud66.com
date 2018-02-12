@@ -454,7 +454,7 @@ production:
 
 ### HAProxy
 
-Use a manifest file to configure and define your HAProxy load balancer deployed by Cloud 66. These changes will be either be applied when you redeploy a stack with more than one server, rebuild HAProxy or edit [HAProxy CustomConfig](/{{page.collection}}/how-to-guides/security/multi-cert_haproxy.html).
+Use a manifest file to configure and define your HAProxy load balancer deployed by Cloud 66. These changes will be either be applied when you redeploy a stack with more than one server, rebuild HAProxy or edit [HAProxy CustomConfig]({% if page.collection == "skycap" %}/maestro/how-to-guides/security/multi-cert_haproxy.html{%else%}/{{page.collection}}/how-to-guides/security/multi-cert_haproxy.html{%endif%}).
 
 Available settings (refer to the [HAProxy documentation](http://haproxy.1wt.eu/download/1.3/doc/configuration.txt) for more information):
 Server definitions

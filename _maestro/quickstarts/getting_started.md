@@ -99,7 +99,7 @@ permalink: /:collection/:path
     <img alt="Configuring docker container and public ports" src="/assets/maestro/maestro_configure_container_ports_animated.gif">
 </div>
 
-<p>Containers can also serve non HTTP traffic. TCP and UDP protocols are also supported. <a href="/building-your-stack/container-port-mapping">Learn more about advanced Container Port Mapping</a></p>
+<p>Containers can also serve non HTTP traffic. TCP and UDP protocols are also supported. <a href="/{{page.collection}}/tutorials/container-ports.html">Learn more about advanced Container Port Mapping</a></p>
 
 <h2 id="adding-data-sources">
     <a href="#adding-data-sources" class="headerlink" title="Adding Data Sources"></a>
@@ -173,7 +173,7 @@ permalink: /:collection/:path
     <img src="/assets/maestro/maestro_server_size_modal.png" alt="Configure Server Size">
 </div>
 
-<p>In production environments we suggest using a server with at least 1GB of memory and 4 cores. <a href="https://help.cloud66.com/getting-started/choosing-server-size">Learn more about choosing the right size for your servers</a>.</p>
+<p>In production environments we suggest using a server with at least 1GB of memory and 4 cores. <a href="/{{page.collection}}/references/non-recommended-server-sizes.html">Learn more about choosing the right size for your servers</a>.</p>
 
 <h2 id="deployment">
     <a href="#deployment" class="headerlink" title="Deployment"></a>

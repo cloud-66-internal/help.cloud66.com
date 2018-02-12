@@ -26,5 +26,5 @@ If and when your main stack fails, you will need to switch to the failover stack
 2.  Turn off the [database replication](/rails/tutorials/database-replication.html).
 3.  Make your [database slave a master](/{{page.collection}}/references/shells/toolbelt.html#slave-promotion-to-standalone-master) - this will allow data to be written to the database.
 4.  Turn off [maintenance mode]({% if page.collection == "skycap" %}/maestro/tutorials/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}) on your failover stack.
-5.  Use your [Failover group](/{{page.collection}}/tutorials/failover-groups.html) menu to switch your traffic to the failover stack. The TTL on the Failover address is 5 minutes, so you should see your users on the new stack momentarily.
+5.  Use your [Failover group]({% if page.collection == "skycap" %}/maestro/tutorials/failover-groups.html{% else %}/{{page.collection}}/tutorials/failover-groups.html{% endif %}) menu to switch your traffic to the failover stack. The TTL on the Failover address is 5 minutes, so you should see your users on the new stack momentarily.
 

@@ -48,7 +48,7 @@ Give the project a name, then you can add services. You can add as many services
 
 All of the information that defines how services are built is accessible from the _services.yml_ file.
 
-There is an advanced mode that allows you to edit this configuration file directly. This is useful for [accessing advanced features](/building-your-stack/docker-service-configuration). For example configuring [multi-tenancy stacks](/building-your-stack/multi-tenancy-for-stacks).
+There is an advanced mode that allows you to edit this configuration file directly. This is useful for [accessing advanced features](/{{page.collection}}/tutorials/docker-service-configuration.html). For example configuring [multi-tenancy stacks](/{{page.collection}}/how-to-guides/deployment/multi-tenancy.html).
 
  [**Next: Deploying your Docker Stack →**] (docker-getting-started-deployment)
 

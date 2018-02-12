@@ -12,7 +12,7 @@ permalink: /:collection/:path
 
 
 ## Setting up a Docker Deployment
- Once all of the services have been successfully built you'll see the option to Setup a new deployment. You can deploy your app to any of your favorite cloud providers or to your own [registered servers](/{{page.collection}}/tutorials/registered-servers.html).
+ Once all of the services have been successfully built you'll see the option to Setup a new deployment. You can deploy your app to any of your favorite cloud providers or to your own [registered servers]({% if page.collection != "skycap" %}/{{page.collection}}/tutorials/registered-servers.html{%else%}/maestro/tutorials/registered-servers.html{%endif%}).
 
 
     
@@ -23,7 +23,7 @@ permalink: /:collection/:path
 
 ## Deployment Setup
 
-The first step in the deployment process is to Choose an [environment](https://help.cloud66.com/getting-started/stack-environments):
+The first step in the deployment process is to Choose an [environment](/{{page.collection}}/references/stack-environments.html):
 
 *   Development
 *   QA
@@ -50,7 +50,7 @@ The service will run inside a container, we need to configure it to respond to H
 
 A Rails app listens to port 3000 so we should map the container port **3000** to the public Internet ports **80**  and **443**. Click the connector icon (circled in red above) to update the **container port** and **public internet** ports.
  ![Configuring docker container and public ports](/images/guides/docker_onboarding/container_ports_animated.gif)
-Containers can also serve non HTTP traffic. TCP and UDP protocols are also supported. [Learn more about Container Port Mapping](/building-your-stack/container-port-mapping)
+Containers can also serve non HTTP traffic. TCP and UDP protocols are also supported. [Learn more about Container Port Mapping](/{{page.collection}}/tutorials/container-ports.html)
 
 
 ## Adding Data Sources
@@ -66,7 +66,7 @@ Lets add the MySQL Data Source, you can add as many Data Sources as your app req
 
 Now the Rails app is configured to run in a container and we've setup a separate MySQL database server. All that remains is to decide what cloud provider to use and what server size and region we should deploy to.
 
-Remember, you can also deploy to your own servers. However you should first [add them as registered servers](/{{page.collection}}/tutorials/registered-servers.html).
+Remember, you can also deploy to your own servers. However you should first [add them as registered servers]({% if page.collection != "skycap" %}/{{page.collection}}/tutorials/registered-servers.html{%else%}/maestro/tutorials/registered-servers.html{%endif%}).
 
 
 ## Configuring Servers
@@ -77,7 +77,7 @@ We need to choose a cloud provider for the deployment. For this example we'll us
 ![image](/images/guides/docker_onboarding/docker_guide_server_config.png)
 ![Add another server](/images/guides/docker_onboarding/docker_guide_server_modal.png)
 
-[How to choose the right size server](https://help.cloud66.com/getting-started/choosing-server-size).
+[How to choose the right size server](/{{page.collection}}/references/non-recommended-server-sizes.html).
 
 ## Deployment
 

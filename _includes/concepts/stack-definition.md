@@ -42,7 +42,7 @@ You can choose between any of four supported databases:
 - MongoDB
 - Redis
 
-Cloud 66 makes it easy for you to [backup your database]({% if page.collection == "skycap" %}/skycap/tutorials/database-backup.html{% else %}/{{page.collection}}/tutorials/database-backup.html{% endif %}), [verify the backup](/rails/databases/backup-verifiers.html) and [replicate your databases](/rails/tutorials/database-replication.html).
+Cloud 66 makes it easy for you to [backup your database]({% if page.collection == "skycap" %}/maestro/tutorials/database-backup.html{% else %}/{{page.collection}}/tutorials/database-backup.html{% endif %}){% if page.collection == "rails" %}, [verify the backup](/rails/tutorials/backup-verifiers.html) {% endif %} and [replicate your databases](/rails/tutorials/database-replication.html).
 
 
 ### Operating system
@@ -52,7 +52,7 @@ Your servers will be deployed with **Ubuntu 16.04 LTS**. On the operating system
 
 ### Cloud vendor
 
-You can either [deploy to your cloud](/{{page.collection}}/resources/technical-specifications.html#supported-cloud-providers) or [deploy to your own server](/{{page.collection}}/tutorials/registered-servers.html).
+You can either [deploy to your cloud](/{{page.collection}}/resources/technical-specifications.html#supported-cloud-providers) or [deploy to your own server]({% if page.collection != "skycap" %}/{{page.collection}}/tutorials/registered-servers.html{%else%}/maestro/tutorials/registered-servers.html{%endif%}).
 
 * * *
 

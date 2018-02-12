@@ -1,5 +1,5 @@
 ## Managing your Cloud 66 backups
-Cloud 66 makes it easy for you to run and restore your [database backups](/{{page.collection}}/tutorials/database-backup.html), but you can also manage them yourself. This includes downloading the backup, unzipping it, moving it to another server and restoring it. What follows is a logical scenario of what a user is likely to face in this situation.
+Cloud 66 makes it easy for you to run and restore your [database backups]({% if page.collection == "skycap" %}/maestro/tutorials/database-backup.html{% else %}/{{page.collection}}/tutorials/database-backup.html{% endif %}), but you can also manage them yourself. This includes downloading the backup, unzipping it, moving it to another server and restoring it. What follows is a logical scenario of what a user is likely to face in this situation.
 
 
 ## Download your backup
@@ -7,7 +7,7 @@ You can retrieve your backup in one of three ways:
 
 
 ### 1. Cloud 66 toolbelt
-The best way to retrieve your database backup is by using the [toolbelt backup management](/toolbelt/toolbelt-backup-management). Your backup may be bigger than 250 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
+The best way to retrieve your database backup is by using the [toolbelt backup management](/{{page.collection}}/references/shells/toolbelt#about-backup-management/references/shells/toolbelt#about-backup-management). Your backup may be bigger than 250 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
 
 
 ### 2. Cloud 66 web UI
