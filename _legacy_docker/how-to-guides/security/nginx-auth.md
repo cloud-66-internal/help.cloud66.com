@@ -20,7 +20,7 @@ Follow the instructions below to accomplish this.
 2.  Once that is installed, we're ready to create your password file. We recommend that you create this file within your repository, which will be deployed to your servers. This command will prompt you to input a password.
 
 		sudo htpasswd -c <directory>.htpasswd <user_name>
-3.  Now we can go ahead and customize the Nginx configuration, which you can see more about in our [Nginx CustomConfig documentation](/{{page.collection}}/references/nginx.html).
+3.  Now we can go ahead and customize the Nginx configuration, which you can see more about in our [Nginx CustomConfig documentation]({% if page.collection == "skycap" %}/maestro/references/nginx.html{%else%}/{{page.collection}}/references/nginx.html{%endif%}).
 
 You will want to add the following code within the server section of your configuration. Where you put it will depend on which Rack server you are running, and whether or not you are using HTTPS traffic.
 

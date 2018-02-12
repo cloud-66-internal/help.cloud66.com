@@ -45,7 +45,7 @@ Start by dumping your existing database. Refer to the [ClearDB documentation for
 $ mysqldump -u [username] -p[password] [dbname] > backup.sql 
 {% endhighlight %}
 
-Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/{{page.collection}}/references/toolbelt.html#upload) to upload the file to your stack database server. Remember to replace the fields below with your values.
+Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/{{page.collection}}/references/shells/toolbelt.html#upload) to upload the file to your stack database server. Remember to replace the fields below with your values.
 
 {% highlight bash %}
 $ cx upload -s "[stack_name]" --server [database_server_name] backup.sql /tmp/backup.sql
