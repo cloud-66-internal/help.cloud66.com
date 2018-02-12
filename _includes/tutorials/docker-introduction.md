@@ -45,5 +45,5 @@ Docker-based stacks enjoy the same benefits as other Cloud 66 stacks, including:
    - Fast response 100% SLA DNS layer [failover groups]({% if page.collection == "skycap" %}/maestro/tutorials/failover-groups.html{% else %}/{{page.collection}}/tutorials/failover-groups.html{% endif %}) for quick traffic switch overs
    - [Server vital sign metrics](/{{page.collection}}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html)
    - [Intuitive UI](https://app.cloud66.com/dashboard)
-   - [API](http://developers.cloud66.com) and [command line](/{{page.collection}}/toolbelt/introduction.html)
+   - [API](http://developers.cloud66.com) and [command line](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html)
 

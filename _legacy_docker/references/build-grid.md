@@ -57,5 +57,5 @@ Cloud 66 for Docker Deployments consist of 2 steps: Build and Publish. Build ste
 
 You can choose to run each of these steps separately through the BuildGrid UI or command line.
 
-Find more information about [Build and Publish configurations](/legacy_docker/references/deployment-profiles.html).
+Find more information about [Build and Publish configurations](/legacy_docker/references/deploy-profiles.html).
 
