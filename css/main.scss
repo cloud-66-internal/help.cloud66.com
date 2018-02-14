@@ -141,6 +141,7 @@ p {
  * main
  * ---------------------------------------------------------- */
 .Main {
+    height: 100%;
     position: relative;
     z-index: 1;
     padding: 0 60px 30px;
@@ -818,6 +819,7 @@ body.docs #nav {
     max-width: 620px;
     margin: 0 auto;
     padding-left: 50px;
+    height: 100vh;
 
     /* Document content styles */
 
