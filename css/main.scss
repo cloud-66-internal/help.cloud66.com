@@ -141,7 +141,6 @@ p {
  * main
  * ---------------------------------------------------------- */
 .Main {
-    height: 100%;
     position: relative;
     z-index: 1;
     padding: 0 60px 30px;
@@ -819,7 +818,8 @@ body.docs #nav {
     max-width: 620px;
     margin: 0 auto;
     padding-left: 50px;
-    height: 100vh;
+    min-height: 2024px;
+    // height: 80vh; // induces a weird bug with double scroll bars
 
     /* Document content styles */
 
