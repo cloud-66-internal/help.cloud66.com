@@ -49,11 +49,14 @@ Any other partner specific payload will be here.
 | 403      |  invalid link_uid |
 | 403      |  xxx is already linked to this account |
 
+
 #### Success
+
 | HTTP Code        |  Description |
 | ------------- | -----:|
 | 200      |  service added (integration successful) |
 | 403      |  integration specific errors |
+
 
 
 ## Single Sign-on (SSO)

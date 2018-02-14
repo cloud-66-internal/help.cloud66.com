@@ -40,6 +40,7 @@ In the case of any servers not being accessible during this time, those servers 
 |stack server name 	   | 	—		| Name of the replication slave server to promote |
 |database type (optional)	 	   |	—	| The Database type |
 
+
 ### Example
 
 
@@ -74,6 +75,7 @@ Providing the database type is optional and is only necessary for shared servers
 |stack 					   |		—		|Name of your stack|
 |stack server name 	   | 	—		| Name of the replication slave server to re-synchronise with master|
 |database type (optional)	 	   |	—	| The Database type |
+
 
 ### Example
 

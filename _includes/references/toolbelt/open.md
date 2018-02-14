@@ -22,6 +22,7 @@ $ cx open [-s <stack>] [<server name>|<server ip>|<server role>]
 |server ip (optional)	   |	 IP of the server to access|
 |server role (optional)	   | Role of the server to access (eg. web) |
 
+
 ### Example
 
 ```

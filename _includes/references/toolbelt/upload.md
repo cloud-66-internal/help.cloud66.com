@@ -20,6 +20,7 @@ If you don't specify a target directory, the file will be uploaded to /tmp on yo
 |source file	  		  	 | 	—			| The path to the file on your local computer |
 |target directory (optional) |		—		| Your remote server target path |
 
+
 ### Example
 
 ```

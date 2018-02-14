@@ -23,6 +23,7 @@ $ cx env-vars list [-s <stack>] [--history] [environment_variables]
 |history   				   | 	false		| Show the history of changed variables with the date of the change to the new value |
 |environment variables (optional)| 	—		| List of multiple environment variables as separate parameters |
 
+
 ### Example
 
 ```
@@ -48,6 +49,7 @@ $ cx env-vars set [-s <stack>] <setting>=<value>
 |stack 					   |		—		| Name of the stack|
 |setting   				   | 	—			| Name of environment variable |
 |value					   | 	—			| Value for environment variable |
+
 
 ### Example
 

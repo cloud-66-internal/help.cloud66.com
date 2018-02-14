@@ -24,6 +24,7 @@ $ cx servers settings list [-s <stack>] --server <server name>|<server ip>|<serv
 |server ip (optional)	 	   |	—	| IP of the server to access |
 |server role (optional)	 	   |	—	| Role of the server to access (eg. web) |
 
+
 ### Example
 
 ```
@@ -54,6 +55,7 @@ $ cx servers settings set [-s <stack>] --server <server name>|<server ip>|<serve
 |setting 	   |	—	| The setting you would like to change |
 |value	   |	—	| The value for the setting |
 
+
 ### Examples
 
 ```
@@ -81,6 +83,7 @@ $ cx servers reboot [-s <stack>] [-e stack environment] --server <server name>
 |stack 					   |		—		|Name of the stack |
 |server name (optional)    | 	—			| Name of the server to reboot |
 |e (optional) 	   		   | 	—			| Your stack environment |
+
 
 ### Example
 
