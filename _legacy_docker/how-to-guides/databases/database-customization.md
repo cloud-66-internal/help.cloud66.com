@@ -1,15 +1,14 @@
 ---
 layout: post
 template: one-col
-title: Customize your Database Configuration with Rails
+title: Customize your Database Configuration with Docker
 categories: how-to-guides/databases
-lead: "Customize your Database Configuration on Cloud 66 Rails stacks"
+lead: "Customize your Database Configuration on Cloud 66 Docker stacks"
 legacy: true
 tags: ["PostgreSQL", "MySQL", "Redis", "MongoDB"]
 permalink: /:collection/:path
 ---
 
-## Customize your database configuration
 
 You can customize the database configuration on your servers using [CustomConfig](/{{page.collection}}/tutorials/custom-config.html). CustomConfig is available for MySQL, PostgreSQL, Redis and MongoDB.
 
