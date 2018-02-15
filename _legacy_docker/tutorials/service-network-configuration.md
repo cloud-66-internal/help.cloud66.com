@@ -4,7 +4,7 @@ template: one-col
 title: Setup Network Configuration for your services
 categories: tutorials
 lead: "Configure the service network"
-legacy: false
+legacy: true
 tags: ["security", "customization", "service.yml"]
 permalink: /:collection/:path
 ---
