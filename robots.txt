@@ -1,2 +1,4 @@
-User-agent: *
-Disallow: /
+User-Agent: *
+Allow: /
+
+Sitemap: https://help.cloud66.com/sitemap.xml

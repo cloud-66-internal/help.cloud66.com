@@ -41,6 +41,10 @@ sass:
 
 safe: false
 
+url: https://help.cloud66.com
+plugins:
+  - jekyll-sitemap
+
 algolia:
   application_id: 'TXUI53WBEH'
   index_name:     'help'
