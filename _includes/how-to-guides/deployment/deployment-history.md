@@ -1,5 +1,4 @@
 
-### What is deployment history?
 Whether working in a team or by yourself, it's always useful to have an overview of your deployment history. This history includes
 information about who deployed, when they deployed, what code revision was deployed and how the deployment was triggered (web, [API](http://developers.cloud66.com) or [redeployment hook]({% if page.collection != "skycap" %}/{{page.collection}}/tutorials/redeployment-hook.html{%else%}/maestro/tutorials/redeployment-hook.html{%endif%})). In addition to this, you can also revert
 back to previous commits if need be.

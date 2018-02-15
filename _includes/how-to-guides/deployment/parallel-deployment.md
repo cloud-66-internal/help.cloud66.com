@@ -1,6 +1,5 @@
 
 
-## What is parallel deployment?
 
 When you deploy in parallel, all the deployment tasks for the servers in your stack will run in parallel as opposed to running in serial. In other words, the tasks will run against each server simultaneously instead of running on one server at a time. For large stacks, this can have significant time benefits.
 

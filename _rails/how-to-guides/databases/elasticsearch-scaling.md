@@ -10,9 +10,6 @@ permalink: /:collection/:path
 ---
 
 
-
-## About scaling your Elasticsearch cluster
-
 You can scale your Elasticsearch cluster through the Cloud 66 dashboard on the Elasticsearch server group page.
 
 Elasticsearch scaling works by splitting your **indices** into **shards**, and placing them on an Elasticsearch running instance called a **node** on another server. A collection of nodes is called a **cluster**. 
