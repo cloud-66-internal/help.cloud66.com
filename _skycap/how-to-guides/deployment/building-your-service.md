@@ -56,11 +56,9 @@ services:
 Specifies the directory of your repository in which you wish to run your Docker build. You can also specify a [Dockerfile path](/legacy_docker/how-to-guides/deployment/building-your-service.html#dockerfile_path), which will be the Dockerfile used when building your service which is a relative value to this one.
 
 ```
-
 services:
     <service_name>:
         build_root: my_app_subfolder
-
 ```
 
 This will default to the _root folder_ of your repository if not specified.
@@ -72,13 +70,32 @@ This will default to the _root folder_ of your repository if not specified.
 
 Specifies the command used to start your container(s) (runs on your Docker host).
 
-```
+The `command` definition in service.yml is optional, and if not specified it will use the entrypoint/command that is defined on the image. This is the simplest way to re-use what you have already if its baked into your image. 
 
+```
 services:
     <service_name>:
         command: bundle exec rails s
+```
+
+
+However, considering there are two command that are needed to run, the syntax has to be similar to:
 
 ```
+services:
+    <service_name>:
+        command: bash -c "command_1 && command_2"
+```
+
+This will ensure sure the container has a single starting command (which is a docker/container prerequisite). One caveat on the above is that the first part of the command "command_1" will start command_1 in the background and then continue. If it starts in the foreground then it will not end, and your next command will not start.
+
+If that is the case, there is also the option of using something similar to:
+
+```
+bash -c "nohup command_1 2>&1 1>/tmp/command_1.log & command_2"
+```
+
+That will make the "command_1" command run in the background, and then immediately run "command_2"
 
 * * *
 
@@ -88,11 +105,9 @@ services:
 Specifies the command you would like to run during stack deploy (runs once per service, on your Docker host).
 
 ```
-
 services:
     <service_name>:
         deploy_command: bundle exec rake db:migrate
-
 ```
 
 * * *
@@ -103,11 +118,9 @@ services:
 Specifies a relative path for your Dockerfile (from your _build_root_) to be used for building this service. For example, if you have a subfolder in the root of your repository called _docker_ where your Dockerfile lives, you can specify this as follows:
 
 ```
-
 services:
     <service_name>:
         dockerfile_path: docker/Dockerfile
-
 ```
 
 This will default to the value of _build_root_/Dockerfile if not specified.
@@ -120,11 +133,9 @@ This will default to the value of _build_root_/Dockerfile if not specified.
 The Git repository URL your Docker image will be built with. The Git URL you use to [allow us access to your repository](/{{page.collection}}/how-to-guides/deployment/shells/access-your-code.html) will differ for public and private repositories.
 
 ```
-
 services:
     <service_name>:
         git_url: git@github.com:pkallberg/node-js-app.git
-
 ```
 
 * * *
@@ -135,11 +146,9 @@ services:
 The Git repository branch your Docker image will be based on, for example `master`.
 
 ```
-
 services:
     <service_name>:
         git_branch: master
-
 ```
 
 * * *
@@ -150,41 +159,33 @@ services:
 The source of your Docker image, which can come from a private repository that the credentials are provided. For [Docker Hub](https://registry.hub.docker.com/) images, use the following URL format:
 
 ```
-
 services:
     <service_name>:
         image: <namespace>/<image_name>:/<tag>
-
 ```
 
 If you are pulling a public image from Docker Hub, use the following format:
 
 ```
-
 services:
     <service_name>:
         image: <namespace>/<image_name>:/<tag>
-
 ```
 
 If you are using [Quay.io](https://quay.io/) for your image repository, you will use the following URL format:
 
 ```
-
 services:
     <service_name>:
         image: quay.io/<namespace>/<image_name>:/<tag>
-
 ```
 
 If you are using [Google Container Registry](https://cloud.google.com/container-registry/docs/) for your image repository, you will use the following URL format:
 
 ```
-
 services:
     <service_name>:
         image: gcr.io/<project_id>/<namespace>/<image_name>:/<tag>
-
 ```
 
 When you [specify the Google Container Registy as a Docker image repo](https://app.cloud66.com/image_repositories) you need choice `I'm using a different provider or my own custom repo` and use the following settings:
