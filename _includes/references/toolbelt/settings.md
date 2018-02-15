@@ -18,6 +18,7 @@ $ cx settings list [-s <stack>] [-e <environment>]
 |stack 					   | Name of the stack |
 |e (optional) 	  		   | Your stack environment |
 
+
 ### Example
 
 ```
@@ -45,6 +46,7 @@ $ cx settings set [-s <stack>] <setting_name> <value>
 |setting_name 	   | 	A valid setting from the list above |
 |value	   | The value for the setting |
 |e (optional) 	   | 	Your stack environment |
+
 
 ### Example
 
@@ -75,4 +77,5 @@ To disable checking the free space set this to false|
 |reconfigure.nginx		   		| If set to true, it will regenerate Nginx configuration and restart it (only on the next deployment)|
 |run.deploy.command	   | Enable or disable option run [deploy command]() on every deployment ([database migrations]() for Rails stacks). To enable, you can use the values 1, true, on or enable, and to disable you can use the values 0, false, off or disable |
 |stack.name 	   | View your stack name |
+
 

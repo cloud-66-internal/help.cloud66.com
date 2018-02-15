@@ -17,6 +17,7 @@ List all the processes running on a stack or a server. Optionally provide the se
 |stack 					   |		—		| Name of the stack|
 |server name (optional)	   | 	—			| Name of the target server |
 
+
 ### Example
 
 ```
@@ -48,6 +49,7 @@ Scales up/down <count> processes. If you specify [+X] or [-X] for the count, the
 |process name   		   | 	—			| Name of the target process |
 |server name (optional)	   | 	—			| Name of the target server |
 |count 					   |		—		| Desired relative count or absolute count (i.e. [+2],[-3] or 5) |
+
 
 ### Example
 

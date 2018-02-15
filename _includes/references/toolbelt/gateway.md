@@ -22,6 +22,7 @@ $ cx --org <organization_name> gateways list [ --verbose]
 |		verbose	(optional)		   |		—		|Show more information about gateways|
 
 
+
 ### Example
 
 ```
@@ -51,6 +52,7 @@ $ cx --org <organization_name> gateways add --name <gateway name> --address <gat
 |address 	   | 	—		| Public address of the gateway. It could be the IP or DNS address|
 |username	 	   |	—	| The username which should be used to connect to gateway|
 |private-ip 	   |	—	| The private ip of the gateway.|
+
 
 ### Example
 
@@ -82,6 +84,7 @@ $ cx --org <organization_name> gateways open --name <gateway name> --key <The pa
 |ttl	 	   |	—	| Amount of time you want the gateway available (e.g 1h, 30m, 30s,... )|
 
 
+
 ### Example
 
 ```
@@ -106,6 +109,7 @@ $ cx --org <organization_name> gateways close --name <gateway name>
 |		Parameter 		   |	Default		|    Description    |
 |--------------------------|:--------------:| -----------------:|
 |		name			   |		—		|Name of the gateway|
+
 
 
 ### Example
@@ -133,6 +137,7 @@ $ cx --org <organization_name> gateways remove --name <gateway name>
 |		Parameter 		   |	Default		|    Description    |
 |--------------------------|:--------------:| -----------------:|
 |		name			   |		—		|Name of the gateway|
+
 
 
 ### Example

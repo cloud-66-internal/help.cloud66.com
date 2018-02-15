@@ -17,6 +17,7 @@ $ cx --org <organization_name> users list
 |--------------------------|:--------------:| ----------------:|
 |organization_name		   |		—		| Name of the organization -you can find it by using cx info- |
 
+
 ### Examples
 
 ```
@@ -49,6 +50,7 @@ $ cx --org <organization_name> users show <username> [--json <json_file_path>]
 |--------------------------|:--------------:| ----------------:|
 |organization_name		   |		—		| Name of the organization -you can find it by using cx info- |
 |json_file_path  		   | 	—			| File path to the saved json's file |
+
 
 ### Examples
 
@@ -83,6 +85,7 @@ $ cx --org <organization_name> users apply-profile <username> --json <json_file_
 |organization_name		   |		—		| Name of the organization -you can find it by using cx info- |
 |json_file_path  		   | 	—			| File path to the saved json's file |
 |override	   			   | 	—			| Will override the access rights instead of append |
+
 
 ### Examples
 

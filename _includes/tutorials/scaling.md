@@ -24,6 +24,8 @@ Once the server is ready, you can move your processes from the web server to the
 
 You can scale your database servers through database replication, or Elasticsearch through [sharding](/{{include.product }}/how-to-guides/databases/elasticsearch-scaling.html). See our [database management section](/{{page.collection}}/how-to-guides/databases/database-customization.html) for more information.
 
+{% if page.collection == 'legacy_docker' %}
+
 ## Docker services
 
 You can scale your Docker services horizontally across your Docker cluster by clicking the Docker cluster server group from your stack page, and using the + and - buttons to increase or decrease the number of running containers on each server.
@@ -36,6 +38,8 @@ services:
         constraints:
             max_count: 2
 ```
+{% endif %}
+{% if page.collection == 'rails' %}
 
 ## Vertical scaling
 
@@ -55,3 +59,4 @@ Note that if you have a load balancer and are using AWS as your cloud vendor, th
 
 Scaling vertically on AWS with the instructions above will therefore only work with backend servers but not app servers, as these are served via the load balancer. For application servers, we recommend that you scale up a new server (with your desired size) and delete the old one.
 
+{% endif %}

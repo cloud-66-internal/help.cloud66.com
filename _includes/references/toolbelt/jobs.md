@@ -25,6 +25,7 @@ $ cx jobs list [-s <stack>] --server <server name>|<server ip>|<server role> --s
 |service name (optional)   |	—			| Name of the target service |
 |e (optional)	       	   |	 	—		| Your stack environment |
 
+
 ### Example
 
 ```
@@ -55,6 +56,7 @@ $ cx job list [-s <stack>] --arg <arg> <job name>
 |stack 					   |		—		|Name of the stack | 
 |server name 	 		   | 	—		    | Name of the job to run|
 |arg (optional)	 		   |	—			| Parameters you would like to pass job ( [more info]() ) |
+
 
 ### Examples
 

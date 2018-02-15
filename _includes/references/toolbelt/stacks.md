@@ -18,6 +18,7 @@ $ cx stacks list [-e <environment>]
 |--------------------------| ----------------:|
 |e (optional) 			   | Full or partial environment name |
 
+
 ### Examples
 
 ```
@@ -53,6 +54,7 @@ $ cx --org <organization_name> stacks create --name <stack_name> --environment <
 |environment		   		| Environment of your new stack |
 |service_yaml 	   	   		| Path to your service.yml file |
 |manifest_yaml (optional)  	| Path to your manifest.yml file |
+
 
 ### Examples
 
@@ -91,6 +93,7 @@ $ cx stacks redeploy [-s <stack>] [-y] [--git-ref <git_ref>] [--service <service
 |git-ref (optional, non-Docker)	  	   	| Redeploy the specific git reference (branch, tag or hash). Non-Docker stacks only. |
 |service (optional, repeatable - docker)   	| Will deploy the specified services from your stack only. Each service can have an optional colon-separated reference. For image based services the reference is taken as an image tag, for git based services the reference is taken as a git reference. Docker stacks only |
 |listen (optional)	 | 	Will follow the deployment and log progress output |
+
 
 ### Examples
 
@@ -132,6 +135,7 @@ $ cx stacks restart [-s <stack>]
 |stack 					   	| Name of your stack |
 |e (optional)	 	 	 	| Your stack environment |
 
+
 ### Example
 
 ```
@@ -163,6 +167,7 @@ $ cx stacks reboot -s <stack> [--group <server group name>] [--strategy <strateg
 |group (default web)		 	 			   	| Group of servers you wish to reboot (all, web, haproxy, db, mysql, redis, postgresql, mongodb) |
 |strategy		  	   	| Reboot in serial or parallel |
 |e (environment) (optional)		 | 	Full or partial environment name |
+
 The group parameter specifies which group of servers you wish to reboot. Valid values are “all”, “web”, “haproxy”, “db”; DB specific values like “mysql” or “redis” for example are also supported. If this value is left unspecified, the default value of “web” will be used
 
 The strategy parameter specifies whether you want all your servers to be rebooted in parallel or in serial. Valid values for this parameter are “serial” or “parallel”; “serial” reboots involves web servers being removed/re-added to the LB one by one. Note that for this only applies to web servers; non-web server will still be rebooted in parallel. If this value is left unspecified, Cloud 66 will determine the best strategy based on your infrastructure layout.
@@ -200,6 +205,7 @@ $ cx stacks clear-caches [-s <stack>]
 |---------------------------| ------------------:|
 |stack 					   	| Name of your stack |
 
+
 ### Example
 
 ```
@@ -226,6 +232,7 @@ $ cx stacks listen [-s <stack>]
 |		Parameter 		   	|     Description    |
 |---------------------------| ------------------:|
 |stack 					   	| Name of your stack |
+
  
  
 
@@ -265,6 +272,7 @@ $ cx stacks configure list [-s <stack>]
 |f (file) (optional)	   	| File name, accepted values are service.yml and manifest.yml |
 |e (environment) (optional) | 	Full or partial environment name |
 
+
 * * *
 
 
@@ -288,4 +296,5 @@ $ cx stacks help [<command>]
 |		Parameter 		   |   Description    |
 |--------------------------| ----------------:|
 |command 				   |The command you wish to see help pages for|
+
 

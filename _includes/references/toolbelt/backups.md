@@ -33,6 +33,7 @@ $ cx backups list [-s <stack>] [-l] [<db type>]
 | l (optional) 	  	|Returns the latest successful backup|
 | e (optional) 		|Your stack environment|
 
+
 ### Example
 
 ```
@@ -65,6 +66,7 @@ $ cx backups download [-s <stack>] [-d <download directory>] <backup id>
 |stack 					   |	—			|Name of your stack|
 |d (optional) 	   | 	~/cx_backups		| Directory to download backup to|
 |backup id (optional) 	   |	-	| The ID of the backup you'd like to download |
+
 
 ### Example
 
@@ -102,6 +104,7 @@ $ cx backups new [-s <stack>]	[--dbtypes <DB types>] [--frequency <Frequency>] [
 |gzip (optional)		   |	true		|Compress your backups with gzip|
 |exclude-tables (optional) |	—			|Tables that must be excluded from the backup|
 |run-on-replica (optional) |	true		|Run backup task on replica server if available|
+
 
 ### Example
 

@@ -18,6 +18,7 @@ At least one of the optional parameters are necessary in order to identify which
 |server role (optional)    | 	—			| Role of the server to access (eg. web) |
 |log filename			   |		—		| The logfile to tail (eg. nginx_error.log) |
 
+
 ### Example
 
 ```

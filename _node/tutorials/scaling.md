@@ -4,7 +4,7 @@ template: one-col
 title: Everything about Scaling
 categories: tutorials
 lead: ""
-legacy: true
+legacy: false
 tags: ["customization"]
 permalink: /:collection/:path
 ---

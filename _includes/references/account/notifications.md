@@ -49,6 +49,7 @@ Each event type has its own payload that is sent to the endpoint via HTTP POST. 
 | event_type         |   			Type of the event, see below	|
 
 
+
 The following event types are available:
 
 | Event Type         |    			Description 					|
@@ -66,4 +67,5 @@ The following event types are available:
 | app.deauth         |  App deauthorized from accessing the account |
 | account.redeploy.hook.fail      |   	Account redeployment hook failed	|
 |account.deploy.started     |   Account deployment started |
+
 	

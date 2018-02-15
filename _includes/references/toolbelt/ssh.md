@@ -26,6 +26,7 @@ $ cx ssh  [--gateway-key <The path to the key of gateway server>]    [-s <stack>
 |server role (optional)	 	   |	—	| Role of the server to access (eg. web) |
 |e (optional) 	   |	—	| Your stack environment|
 
+
 ### Example
 
 ```
