@@ -199,7 +199,7 @@ div.highlight pre.highlight {
   */
 .prettyprint {
   background: #3F3F3F !important;
-  font-family: Menlo, "SFMono-Regular", "Source Sans Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+  font-family: Menlo, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
   border: 0 !important;
   border-radius: 6px;
   padding: 2em !important;
