@@ -38,7 +38,7 @@ By default Cloud 66 builds a GlusterFS cluster for your stack, creates a default
 
 But what if you need to make sure some services have read/write access to your data and some only readonly access?
 
-This is achieved using the [manifest](/building-your-stack/building-your-manifest-file) file. Using manifest file, you can control the GlusterFS volumes you have as well as grant read/write or readonly access to containers of a specific service. 
+This is achieved using the [manifest](http://help.cloud66.com/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html) file. Using manifest file, you can control the GlusterFS volumes you have as well as grant read/write or readonly access to containers of a specific service. 
 
 Using the manifest file also allows you to choose the servers you would like to have the volumes mounted (like application servers or your database servers).
  
