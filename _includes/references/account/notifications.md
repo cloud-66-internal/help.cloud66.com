@@ -44,7 +44,7 @@ Each event type has its own payload that is sent to the endpoint via HTTP POST. 
 	
 
 | Attribute          |    			Description 					|
-| ------------------ | --------------------------------------------:|
+|  | --:|
 | timestamp          |   Epoch timestamp of when the event was sent |
 | event_type         |   			Type of the event, see below	|
 
@@ -53,7 +53,7 @@ Each event type has its own payload that is sent to the endpoint via HTTP POST. 
 The following event types are available:
 
 | Event Type         |    			Description 					|
-| ------------------ | --------------------------------------------:|
+|  | --:|
 | account.provision.ok.  |   Account provisioned succesfully |
 | account.provision.fail         | Account provision failed	|
 | account.redeploy.ok          |   Account redeployed succesfully |

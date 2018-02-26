@@ -45,7 +45,7 @@ You are free to specify a version for a number of components in your [manifest f
 We cannot take responsibility for issues arising from non-recognized or incompatible versions.
 
 | Component           | Default version  |
-| ------------------- |-----------------:|
+| - |-----:|
 | Docker      		  |			 17.06.0 |
 | ElasticSearch       |   		   5.1.2 |
 | GlusterFS 		  |    		   3.7.2 |

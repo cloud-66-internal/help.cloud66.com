@@ -16,7 +16,7 @@ $ cx redeploy [-s <stack>] [-y] [--git-ref <git_ref>] [--service <service>] [--s
 ### Parameters
 
 |		Parameter 		   |   Description    |
-|--------------------------| ----------------:|
+|--| ----:|
 |stack 					   |		Name of your stack|
 |e  (optional)   | 	Your stack environment|
 |y (optional)	   |Automatically answer yes to any prompts|

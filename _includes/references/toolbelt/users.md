@@ -14,40 +14,7 @@ $ cx --org <organization_name> users list
 ### Parameters
 
 |		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
-|organization_name		   |		—		| Name of the organization -you can find it by using cx info- |
-
-
-### Examples
-
-```
-$ cx --org My_Awesome_org users list
-```
-This will result in a simple list of users shows as below:
-
-```
-Id  Email
-1   jim@gmail.com
-2   jack@gmail.com
-```
-
-
-## Show command
-
-This command shows details about a single user.
-
-
-### Usage
-
-```
-$ cx --org <organization_name> users show <username> [--json <json_file_path>]
-```
-
-
-### Parameters
-
-|		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
+|--|:--:| -:|
 |organization_name		   |		—		| Name of the organization -you can find it by using cx info- |
 |json_file_path  		   | 	—			| File path to the saved json's file |
 
@@ -81,7 +48,7 @@ $ cx --org <organization_name> users apply-profile <username> --json <json_file_
 ### Parameters
 
 |		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
+|--|:--:| ----:|
 |organization_name		   |		—		| Name of the organization -you can find it by using cx info- |
 |json_file_path  		   | 	—			| File path to the saved json's file |
 |override	   			   | 	—			| Will override the access rights instead of append |
