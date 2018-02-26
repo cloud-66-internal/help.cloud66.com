@@ -14,34 +14,7 @@ $ cx settings list [-s <stack>] [-e <environment>]
 ### Parameters
 
 |		Parameter 		   |  Description    |
-|--------------------------|----------------:|
-|stack 					   | Name of the stack |
-|e (optional) 	  		   | Your stack environment |
-
-
-### Example
-
-```
-$ cx settings list -s "My Awesome App"
-```
-
-
-## Set your stack settings
-
-
-### Usage
-
-```
-$ cx settings set [-s <stack>] <setting_name> <value>
-```
-
-
-
-
-### Parameters
-
-|		Parameter 		   |   Description    |
-|--------------------------| ----------------:|
+|--|-:|
 |stack 					   |Name of the stack|
 |setting_name 	   | 	A valid setting from the list above |
 |value	   | The value for the setting |
@@ -62,7 +35,7 @@ $ cx settings set -s my_stack deploy.parallel true
 These are the available settings:
 
 |		Setting 		   |  Description    |
-|--------------------------| ----------------:|
+|--| ----:|
 |allowed.web.source				   | IP addresses that are allowed to access a stacks web servers (with IP addresses in the command or a CSV file with IP addresses as input) |
 |asset.prefix		   		| If you change your default Rails assets folder, you can set it here |
 |continuous.deploy	   | Enable or disable [continuous deployment on Github](). To enable, you can use the values 1, true, on or enable, and to disable you can use the values 0, false, off or disable |

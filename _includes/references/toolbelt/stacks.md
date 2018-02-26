@@ -15,153 +15,7 @@ $ cx stacks list [-e <environment>]
 
 
 |		Parameter 		   |   Description    |
-|--------------------------| ----------------:|
-|e (optional) 			   | Full or partial environment name |
-
-
-### Examples
-
-```
-$ cx stacks list
-```
-
-
-```
-$ cx stacks list -e staging
-```
-* * *
-
-## Create a new Docker stack
-
-Build a new Docker stack based on your desired service definition.
-
-
-### Usage
-
-```
-$ cx --org <organization_name> stacks create --name <stack_name> --environment <environment> --service_yaml <service_yaml_path> [--manifest_yaml <manifest_yaml_path>]
-```
-
-
-
-
-### Parameters
-
-|		Parameter 		   	|   Description    |
-|---------------------------| ----------------:|
-|organization_name		   	|Name of the organization -you can find it by using cx info-|
-|name 	 			   		| Name of your new stack |
-|environment		   		| Environment of your new stack |
-|service_yaml 	   	   		| Path to your service.yml file |
-|manifest_yaml (optional)  	| Path to your manifest.yml file |
-
-
-### Examples
-
-
-```
-$ cx --org My_Awsome_org stacks create --name my_stack --environment production --service_yaml ~/service.yaml --manifest_yaml ~/manifest.yaml
-```
-
-
-```
-$ cx --org My_Awsome_org stacks create --name my_stack --environment production --service_yaml ~/service.yaml 
-```
-* * *
-
-## Redeploy your stack
-
-Trigger the deployment of a stack from the command line, just like clicking on _redeploy_ in the UI.
-
-
-### Usage
-
-```
-$ cx stacks redeploy [-s <stack>] [-y] [--git-ref <git_ref>] [--service <service>] [--service <service>] [--service <service>]
-```
-
-
-
-
-### Parameters
-
-|		Parameter 		   	|   Description    |
-|---------------------------| ----------------:|
-|stack 					   	| Name of your stack |
-|e (optional)	 	 			   	| Your stack environment |
-|y (optional)		  				   	| Automatically answer yes to any prompts |
-|git-ref (optional, non-Docker)	  	   	| Redeploy the specific git reference (branch, tag or hash). Non-Docker stacks only. |
-|service (optional, repeatable - docker)   	| Will deploy the specified services from your stack only. Each service can have an optional colon-separated reference. For image based services the reference is taken as an image tag, for git based services the reference is taken as a git reference. Docker stacks only |
-|listen (optional)	 | 	Will follow the deployment and log progress output |
-
-
-### Examples
-
-```
-$ cx stacks redeploy -s "My Awesome App" -e production
-```
-
-
-```
-$ cx stacks redeploy -s "My Awesome App" -e production -y --git-ref my_git_ref_value
-```
-
-
-```
-$ cx stacks redeploy -s "My Awesome Docker App" --service web --service api:latest
-```
-Deploying a stack that is already being deployed will enqueue your redeploy command and will run it immediately after the current deployment is finished.
-
-* * *
-
-## Restart your stack
-
-Allows you to restart Nginx on your stack with one simple command.
-
-
-### Usage
-
-```
-$ cx stacks restart [-s <stack>]
-```
-
-
-
-
-### Parameters
-
-|		Parameter 		   	|   Description    |
-|---------------------------| ----------------:|
-|stack 					   	| Name of your stack |
-|e (optional)	 	 	 	| Your stack environment |
-
-
-### Example
-
-```
-$ cx stacks restart -s "My Awesome App"
-```
-* * *
-
-
-## Reboot your stack
-
-Allows you to reboot your servers on your stack with one simple command.
-
-
-### Usage
-
-```
-$ cx stacks reboot -s <stack> [--group <server group name>] [--strategy <strategy name>] [--environment <environment name>]
-```
-
-
-
-
-### Parameters
-
-|		Parameter 		   	|     Description    |
-|---------------------------| ------------------:|
+|--| | | | | :|
 |stack 					   	| Name of your stack |
 |y (optional)		  				   	| Answer yes to confirmations |
 |group (default web)		 	 			   	| Group of servers you wish to reboot (all, web, haproxy, db, mysql, redis, postgresql, mongodb) |
@@ -202,35 +56,7 @@ $ cx stacks clear-caches [-s <stack>]
 
 
 |		Parameter 		   	|     Description    |
-|---------------------------| ------------------:|
-|stack 					   	| Name of your stack |
-
-
-### Example
-
-```
-$ cx stacks clear-caches -s "My Awesome App"
-```
-* * *
-
-
-## Listen to your deployment logs
-
-
-### Usage
-
-```
-$ cx stacks listen [-s <stack>]
-```
-
-
-
-
-### Parameters
-
-
-|		Parameter 		   	|     Description    |
-|---------------------------| ------------------:|
+|| :|
 |stack 					   	| Name of your stack |
 
  
@@ -264,7 +90,7 @@ $ cx stacks configure list [-s <stack>]
 ### Parameters
 
 |		Parameter 		   	|   Description    |
-|---------------------------| ----------------:|
+|-:|
 |list 					   	|List of all versions of a configuration file|
 |download 	 			   	| Download a configuration file |
 |uplaod	  				   	| Upload a new version of configuration file |
@@ -294,7 +120,7 @@ $ cx stacks help [<command>]
 
 
 |		Parameter 		   |   Description    |
-|--------------------------| ----------------:|
+|--| ----:|
 |command 				   |The command you wish to see help pages for|
 
 

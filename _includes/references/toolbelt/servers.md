@@ -18,36 +18,7 @@ $ cx servers settings list [-s <stack>] --server <server name>|<server ip>|<serv
 ### Parameters
 
 |		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
-|stack 					   |		—		|Name of the stack|
-|server name (optional)    | 	—		| Name of the server to access |
-|server ip (optional)	 	   |	—	| IP of the server to access |
-|server role (optional)	 	   |	—	| Role of the server to access (eg. web) |
-
-
-### Example
-
-```
-$ cx servers settings list -s My_Awesome_App --server web
-```
-
-
-## Set server settings
-
-Use this command to set server settings from the command line.
-
-
-### Usage
-
-```
-$ cx servers settings set [-s <stack>] --server <server name>|<server ip>|<server role> <setting>=<value>
-```
-
-
-### Parameters
-
-|		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
+|--|:--:| -:|
 |stack 					   |		—		|Name of the stack|
 |server name (optional) 	   | 	—		| Name of the server to access |
 |server ip (optional)	 	   |	—	| IP of the server to access |
@@ -79,7 +50,7 @@ $ cx servers reboot [-s <stack>] [-e stack environment] --server <server name>
 
 
 |		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
+|--|:--:| ----:|
 |stack 					   |		—		|Name of the stack |
 |server name (optional)    | 	—			| Name of the server to reboot |
 |e (optional) 	   		   | 	—			| Your stack environment |

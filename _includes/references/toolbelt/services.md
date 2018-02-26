@@ -15,38 +15,7 @@ Optionally provide the server to act only on that server.
 ### Parameters
 
 |		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
-|stack 					   |		—		|Name of the stack|
-|server name (optional)    | 	—		| Name of the target server |
-
-
-### Example
-
-```
-$ cx services list -s My_Awesome_App
-$ cx services list -s My_Awesome_App --server my_selected_server
-```
-
-
-
-
-## Scaling services
-
-
-### Usage
-
-```
-$ cx services scale [-s <stack>] <service name> [--group <server group>] [--server <server name>|<server ip>] <count>
-```
-
-Gets information about the given service such as `service name, source type`, `git-ref`, `image info`, `container count`  and `docker commands`.
-Optionally provide the server to act only on that server.
-
-
-### Parameters
-
-|		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
+|--|:--:| -:|
 |stack 					   |		—		|Name of the stack|
 |service name			   |		—		| Name of the target service |
 |server name (optional)    | 	—		| Name of the target server |
@@ -82,39 +51,7 @@ Optionally provide the server to act only on that server.
 ### Parameters
 
 |		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
-|stack 					   |		—		|Name of the stack|
-|service name			   |		—		| Name of the target service |
-|server name (optional)    | 	—		| Name of the target server |
-
-
-### Example
-
-```
-$ cx services stop -s mystack my_web_service
-$ cx services stop -s mystack a_backend_service
-$ cx services stop -s mystack --server my_server my_web_service
-```
-
-
-
-
-## Restarting services
-
-
-### Usage
-
-```
-$ cx services restart [-s <stack>] <service name> [--server <server name>|<server ip>]
-```
-Gets information about the given service such as `service name, source type`, `git-ref`, `image info`, `container count`  and `docker commands`.
-Optionally provide the server to act only on that server.
-
-
-### Parameters
-
-|		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
+|--|:--:| -:|
 |stack 					   |		—		|Name of the stack|
 |service name			   |		—		| Name of the target service |
 |server name (optional)    | 	—		| Name of the target server |
@@ -145,7 +82,7 @@ Optionally provide the server to act only on that server.
 ### Parameters
 
 |		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
+|--|:--:| ----:|
 |stack 					   |		—		|Name of the stack|
 |service name			   |		—		| Name of the target service |
 |server name (optional)    | 	—		| Name of the target server |

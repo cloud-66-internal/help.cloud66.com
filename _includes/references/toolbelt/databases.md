@@ -35,43 +35,7 @@ In the case of any servers not being accessible during this time, those servers 
 
 
 |		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
-|stack 					   |	—			|Name of your stack|
-|stack server name 	   | 	—		| Name of the replication slave server to promote |
-|database type (optional)	 	   |	—	| The Database type |
-
-
-### Example
-
-
-```
-$ cx databases resync-slave -s My_Awesome_App my_slave_server_name
-$ cx databases resync-slave -s My_Awesome_App --dbtype postgresql my_slave_server_name
-```
-
-
-
-## Slave re-synchronise with master
-
-### Usage
-
-```
-$ cx databases resync-slave [-s <stack>] <slave server name>
-```
-
-Re-syncs the specified slave database server with its master database server.
-
-From time-to-time your slave database may go out of sync with its master. This action attempts to re-sync your specified slave server. This can happen depending on many factors (such as DB size, frequency of change, networking between servers etc).
-
-The server provided must have already been configured as a replication slave via the Cloud 66 UI.
-Providing the database type is optional and is only necessary for shared servers where we can't automatically determine the target database type.
-
-
-### Parameters
-
-
-|		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
+|--|:--:| -:|
 |stack 					   |		—		|Name of your stack|
 |stack server name 	   | 	—		| Name of the replication slave server to re-synchronise with master|
 |database type (optional)	 	   |	—	| The Database type |
