@@ -236,7 +236,7 @@ production:
 ### Nginx
 
 - **cors**: Enable [Cross Origin Resource Sharing](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) - this will be taken into account when your Nginx configuration is reloaded.
-- **additional-build-arguments**: (_applies to Rack/Passenger stacks only). Additional build argument string to be added the nginx build. Note: if you require additional modules that themselves require specific source to be present, you should use a BEFORE_NGINX deploy hook to ensure that source is present. The following build arguments are currently always added: "--with-http_realip_module --with-ipv6 --with-http_v2_module" regardless of this value.
+- **extra-build-arguments**: (_applies to Rack/Passenger stacks only). Additional build argument string to be added the nginx build. Note: if you require additional modules that themselves require specific source to be present, you should use a BEFORE_NGINX deploy hook to ensure that source is present. The following build arguments are currently always added: "--with-http_realip_module --with-ipv6 --with-http_v2_module" regardless of this value.
 - **perfect_forward_secrecy** (_deprecated_): Enable [Perfect Forward Secrecy](http://en.wikipedia.org/wiki/Perfect_forward_secrecy) - this will be taken into account when your Nginx configuration is reloaded.
 
 ```
@@ -245,7 +245,7 @@ production:
         configuration:
             nginx:
                 cors: true
-                add-build-arguments: "--add-module=/path/to/module"
+                extra-build-arguments: "--add-module=/path/to/module"
                 perfect_forward_secrecy: true # deprecated
 ```
 
