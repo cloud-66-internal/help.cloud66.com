@@ -365,7 +365,7 @@ Automating deploy hooks can sometimes be tricky. To avoid issues, it's good prac
 
 ## Use a snippet deploy hook
 
-Below is a bare-bone example of using a snippet with the required fields - it will execute the [Cloud 66 Node snippet](https://raw.githubusercontent.com/cloud66/snippets/master/cloud66/node) as the first thing on all production servers.
+Below is a bare-bone example of using a snippet with the required fields - it will execute the [Cloud 66 Node snippet](https://github.com/cloud66/snippets/blob/master/cloud66/node) as the first thing on all production servers.
 
 ```
 production: # Environment
