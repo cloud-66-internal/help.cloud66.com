@@ -15,7 +15,7 @@ $ cx lease [-s <stack>] [-f <from IP>] [-t <time to open>] [-p <port>]
 ### Parameters
 
 |		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
+|--|:--:| ----:|
 |stack 					   |		—		|Name of the stack|
 |f (optional)	   | 	User IP address		| The source IP to allow connections from|
 |t (optional)	 	   |	20 minutes	| Time to open for (max 240 minutes) |

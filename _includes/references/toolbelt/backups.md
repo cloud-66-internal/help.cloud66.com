@@ -27,7 +27,7 @@ $ cx backups list [-s <stack>] [-l] [<db type>]
 
 
 |		Parameter 	 |   Description    |
-|---------------------|----------------:|
+|-:|
 | stack 			 	|Name of your stack|
 | db type (optional)|The type of DB you'd like to list backups for (eg. mysql)|
 | l (optional) 	  	|Returns the latest successful backup|
@@ -62,41 +62,7 @@ $ cx backups download [-s <stack>] [-d <download directory>] <backup id>
 
 
 |		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
-|stack 					   |	—			|Name of your stack|
-|d (optional) 	   | 	~/cx_backups		| Directory to download backup to|
-|backup id (optional) 	   |	-	| The ID of the backup you'd like to download |
-
-
-### Example
-
-```
-$ cx backups download -s "My Awesome App" 15
-```
-
-
-
-## Create backup
-
-Allows you to create a new 
-managed
- backup task through the command line.
-
-
-### Usage
-
-```
-$ cx backups new [-s <stack>]	[--dbtypes <DB types>] [--frequency <Frequency>] [--keep <Keep>] [--gzip <Gzip>] [exclude-tables <Exclude tables>] [--run-on-replica <Run on replica>]
-```
-
-
-
-
-### Parameters
-
-
-|		Parameter 		   |	Default		|   Description    |
-|--------------------------|:--------------:| ----------------:|
+|--|:--:| -:|
 |stack 					   |	—			|Name of your stack|
 |dbtypes (optional) 	   | 	all			|Comma separated list of Database types which need backup tasks|
 |frequency (optional) 	   |	0 */1 * * *	|Frequency of backup task in cron schedule format|

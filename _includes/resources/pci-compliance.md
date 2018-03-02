@@ -12,7 +12,9 @@ We access your servers using Secure Shell (SSH) protocol and SSH private/public 
 
 We also generate a key for you through a script when using our Cloud 66 Registered Server product.
 
-Our connection to your servers is done only through a set of [pre-announced IP addresses](/{{page.collection}}/resources/security.html).
+Our connection to your servers is done only through a set of pre-announced IP addresses:
+
+{% include general/public_ips.html %}
 
 
 ### Where are the SSH keys stored on Cloud 66?

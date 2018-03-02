@@ -14,7 +14,7 @@ If you don't specify a target directory, the file will be uploaded to /tmp on yo
 
 
 |		Parameter 		   	 |	Default		|   Description    |
-|----------------------------|:------------:| ----------------:|
+|-:|
 |stack 					  	 |		—		| Name of the stack|
 |server name (optional)	  	 | 	—			| Name of the server to access |
 |source file	  		  	 | 	—			| The path to the file on your local computer |

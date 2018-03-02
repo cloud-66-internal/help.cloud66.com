@@ -29,4 +29,11 @@ permalink: /:collection/:categories/index.html
     {% include list_articles.html section=section %}
     
     </ul>
+
+    <h2>Add-ins for your Applications</h2>
+    <ul>
+    {% assign section = site.node | where:"categories","how-to-guides/add-ins" | sort: "order" %}
+    {% include list_articles.html section=section %}
+    
+    </ul>
 </div><!--/.Toc-->
