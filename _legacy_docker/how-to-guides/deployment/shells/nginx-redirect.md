@@ -5,7 +5,7 @@ title: How to redirect through Nginx
 categories: how-to-guides/deployment
 lead: ""
 tags: ["customization"]
-legacy: false
+legacy: true
 
 permalink: /:collection/:path
 ---

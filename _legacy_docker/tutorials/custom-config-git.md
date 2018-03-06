@@ -4,7 +4,7 @@ template: one-col
 title: What is CustomConfig Git?
 categories: tutorials
 lead: ""
-legacy: false
+legacy: true
 tags: ["customization"]
 permalink: /:collection/:path
 ---

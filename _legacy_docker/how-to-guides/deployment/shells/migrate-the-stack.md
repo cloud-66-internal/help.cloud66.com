@@ -4,7 +4,7 @@ template: one-col
 title: How to migrate your stack
 categories: how-to-guides/deployment
 lead: ""
-legacy: false
+legacy: true
 tags: ["high-availability"]
 
 permalink: /:collection/:path

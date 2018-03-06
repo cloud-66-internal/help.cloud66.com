@@ -5,7 +5,7 @@ title: Connecting to Docker Image Repository
 categories: how-to-guides/deployment
 lead: ""
 tags: ["customization", "build"]
-legacy: false
+legacy: true
 permalink: /:collection/:path
 ---
 

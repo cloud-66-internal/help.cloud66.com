@@ -4,7 +4,7 @@ template: one-col
 title: Setting Up SSH Keys
 categories: how-to-guides/deployment
 lead: ""
-legacy: false
+legacy: true
 tags: ["debugging"]
 
 permalink: /:collection/:path

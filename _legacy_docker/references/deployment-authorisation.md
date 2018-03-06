@@ -4,7 +4,7 @@ template: one-col
 title: About Deployment Authorization
 categories: references
 lead: ""
-legacy: false
+legacy: true
 tags: ["security", "operations"]
 permalink: /:collection/:path
 ---

@@ -4,7 +4,7 @@ template: one-col
 title: Manage your stacks from Slack with ChatOps
 categories: how-to-guides/deployment
 lead: ""
-legacy: false
+legacy: true
 tags: ["operations"]
 
 permalink: /:collection/:path

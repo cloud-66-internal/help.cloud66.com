@@ -4,7 +4,7 @@ template: one-col
 title: Setting up custom LiveLog files
 categories: how-to-guides/deployment
 lead: ""
-legacy: false
+legacy: true
 tags: ["debugging","logs"]
 
 permalink: /:collection/:path

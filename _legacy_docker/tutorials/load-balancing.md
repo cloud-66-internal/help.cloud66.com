@@ -4,7 +4,7 @@ template: one-col
 title: What is Load Balancing?
 categories: tutorials
 lead: ""
-legacy: false
+legacy: true
 tags: ["operations"]
 permalink: /:collection/:path
 ---

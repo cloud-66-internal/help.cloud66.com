@@ -4,7 +4,7 @@ template: one-col
 title: How to add an SSL Certificate
 categories: how-to-guides/security
 lead: ""
-legacy: false
+legacy: true
 tags: ["ssl"]
 permalink: /:collection/:path
 ---

@@ -4,7 +4,7 @@ template: one-col
 title: What is a failover group?
 categories: tutorials
 lead: ""
-legacy: false
+legacy: true
 tags: ["High-availability"]
 permalink: /:collection/:path
 ---

@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Docker Quickstarters"
 lead: Getting Started with Docker
-legacy: false
+legacy: true
 permalink: /:collection/quickstarts/index.html
 ---
 

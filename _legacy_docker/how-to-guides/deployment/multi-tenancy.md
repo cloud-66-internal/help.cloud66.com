@@ -4,7 +4,7 @@ template: one-col
 title: How to achieve Multi Tenancy for Stacks
 categories: how-to-guides/deployment
 lead: ""
-legacy: false
+legacy: true
 tags: ["customization"]
 permalink: /:collection/:path
 ---

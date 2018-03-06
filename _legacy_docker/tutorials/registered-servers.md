@@ -4,7 +4,7 @@ template: one-col
 title: Cloud 66 support for registered servers
 categories: tutorials
 lead: ""
-legacy: false
+legacy: true
 tags: ["operations"]
 permalink: /:collection/:path
 ---

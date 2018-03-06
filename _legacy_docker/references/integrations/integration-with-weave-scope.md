@@ -4,7 +4,7 @@ template: one-col
 title: Integration With Weave Scope
 categories: references/integrations
 lead: ""
-legacy: false
+legacy: true
 tags: ["operations"]
 permalink: /:collection/:path
 ---

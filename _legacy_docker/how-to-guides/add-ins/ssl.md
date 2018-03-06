@@ -4,7 +4,7 @@ template: one-col
 title:  "About SSL certificate"
 categories: how-to-guides/add-ins
 lead: SSL certificate add-in
-legacy: false
+legacy: true
 tags: ['Add in', 'Security']
 permalink: /:collection/:path
 ---

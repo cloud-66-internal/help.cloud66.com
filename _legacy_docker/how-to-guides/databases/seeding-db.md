@@ -5,7 +5,7 @@ title: Seeding your database
 categories: how-to-guides/databases
 lead: ""
 tags: ["customization"]
-legacy: false
+legacy: true
 permalink: /:collection/:path
 ---
 

@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Cloud 66 Concepts"
 lead: "In depth understanding of Cloud 66 concepts"
-legacy: false
+legacy: true
 permalink: /:collection/concepts/index.html
 ---
 

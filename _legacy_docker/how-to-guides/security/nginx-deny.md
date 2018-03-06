@@ -4,7 +4,7 @@ template: one-col
 title: Nginx allow and deny by IP
 categories: how-to-guides/security
 lead: ""
-legacy: false
+legacy: true
 tags: ["nginx"]
 permalink: /:collection/:path
 ---

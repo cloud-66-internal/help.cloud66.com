@@ -4,7 +4,7 @@ template: one-col
 title: How to use Toolbelt SSH
 categories: how-to-guides/deployment
 lead: ""
-legacy: false
+legacy: true
 permalink: /:collection/:path
 tags: ["debugging"]
 ---

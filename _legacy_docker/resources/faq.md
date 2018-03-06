@@ -4,7 +4,7 @@ template: one-col
 title: FAQs
 categories: resources
 lead: ""
-legacy: false
+legacy: true
 
 permalink: /:collection/:path
 ---

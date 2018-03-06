@@ -4,7 +4,7 @@ template: one-col
 title: What is Service Networking?
 categories: tutorials
 lead: ""
-legacy: false
+legacy: true
 tags: ["customization"]
 permalink: /:collection/:path
 ---

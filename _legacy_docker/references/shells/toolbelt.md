@@ -4,7 +4,7 @@ template: one-col
 title: Cloud 66 Toolbelt 
 categories: references/toolbelt
 lead: ""
-legacy: false
+legacy: true
 order: 100
 tags: ["shell"]
 permalink: /:collection/:path

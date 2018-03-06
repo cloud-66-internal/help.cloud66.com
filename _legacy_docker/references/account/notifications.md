@@ -4,7 +4,7 @@ template: one-col
 title: Setting up Account Notifications
 categories: references/accounts
 lead: ""
-legacy: false
+legacy: true
 tags: ["account"]
 permalink: /:collection/:path
 ---

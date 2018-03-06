@@ -4,7 +4,7 @@ template: one-col
 title: Cloud-A cloud
 categories: references/clouds
 lead: ""
-legacy: false
+legacy: true
 tags: ["operations"]
 permalink: /:collection/:path
 ---

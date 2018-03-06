@@ -4,7 +4,7 @@ template: one-col
 title: Scaling your GlusterFS cluster
 categories: how-to-guides/databases
 lead: ""
-legacy: false
+legacy: true
 tags: ["GlusterFS"]
 permalink: /:collection/:path
 ---

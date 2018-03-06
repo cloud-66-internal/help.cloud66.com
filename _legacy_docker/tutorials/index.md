@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Docker Tutorials"
 lead: "Learn about Cloud 66 by exampls"
-legacy: false
+legacy: true
 permalink: /:collection/tutorials/index.html
 ---
 

@@ -4,7 +4,7 @@ template: one-col
 title: Connecting your Git repository
 categories: references
 lead: "Connecting Cloud 66 to a git repository"
-legacy: false
+legacy: true
 tags: ["git"]
 permalink: /:collection/:path
 ---

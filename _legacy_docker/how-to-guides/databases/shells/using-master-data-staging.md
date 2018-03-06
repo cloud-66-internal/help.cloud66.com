@@ -4,7 +4,7 @@ template: one-col
 title: Using production data on your staging stack
 categories: how-to-guides/databases
 lead: ""
-legacy: false
+legacy: true
 tags: ["high-availability","customization"]
 permalink: /:collection/:path
 ---

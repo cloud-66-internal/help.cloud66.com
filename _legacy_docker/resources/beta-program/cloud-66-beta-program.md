@@ -4,7 +4,7 @@ template: one-col
 title: Cloud 66 Beta program
 categories: resources/beta-program
 lead: ""
-legacy: false
+legacy: true
 
 permalink: /:collection/:path
 ---

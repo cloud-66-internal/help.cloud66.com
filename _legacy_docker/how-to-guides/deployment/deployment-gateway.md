@@ -4,7 +4,7 @@ template: one-col
 title: How to deploy behind a gateway server
 categories: how-to-guides/deployment
 lead: ""
-legacy: false
+legacy: true
 tags: ["security"]
 permalink: /:collection/:path
 ---

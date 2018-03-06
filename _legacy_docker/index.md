@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Docker
 lead: Cloud 66 for Docker Stacks
-legacy: false
+legacy: true
 permalink: /:collection/:categories/index.html
 ---
 

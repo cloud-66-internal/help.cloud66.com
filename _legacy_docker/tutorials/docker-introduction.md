@@ -4,7 +4,7 @@ template: one-col
 title: Introduction to Docker deployments
 categories: tutorials
 lead: ""
-legacy: false
+legacy: true
 tags: ["operations", "docker"]
 permalink: /:collection/:path
 ---

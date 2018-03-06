@@ -4,7 +4,7 @@ template: one-col
 title: Migrate your stacks across data centers
 categories: how-to-guides/deployment
 lead: ""
-legacy: false
+legacy: true
 tags: ["high-availability"]
 
 permalink: /:collection/:path

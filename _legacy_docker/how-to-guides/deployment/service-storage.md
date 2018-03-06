@@ -4,7 +4,7 @@ template: one-col
 title: What is Service storage?
 categories: how-to-guides/deployment
 lead: ""
-legacy: false
+legacy: true
 tags: ["operations", "storage"]
 permalink: /:collection/:path
 ---

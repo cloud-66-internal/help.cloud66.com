@@ -4,7 +4,7 @@ template: one-col
 title: How to connect to your database servers
 categories: how-to-guides/databases
 lead: ""
-legacy: false
+legacy: true
 tags: ["debugging"]
 
 permalink: /:collection/:path

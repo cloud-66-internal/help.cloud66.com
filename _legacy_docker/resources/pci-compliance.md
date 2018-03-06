@@ -4,7 +4,7 @@ template: one-col
 title: PCI DSS compliance guide
 categories: resources
 lead: ""
-legacy: false
+legacy: true
 
 permalink: /:collection/:path
 ---

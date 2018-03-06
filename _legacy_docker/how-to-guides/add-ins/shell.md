@@ -5,7 +5,7 @@ title:  "How to add a Shell Command"
 categories: how-to-guides/add-ins
 lead: Execute a shell command on your server(s)
 tags: ['Add in']
-legacy: false
+legacy: true
 permalink: /:collection/:path
 ---
 

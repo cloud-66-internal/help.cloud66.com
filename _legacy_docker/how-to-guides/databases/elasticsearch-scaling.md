@@ -4,7 +4,7 @@ template: one-col
 title: Scaling your Elasticsearch cluster
 categories: how-to-guides/databases
 lead: ""
-legacy: false
+legacy: true
 tags: ["Elasticsearch"]
 permalink: /:collection/:path
 ---

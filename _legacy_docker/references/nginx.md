@@ -4,7 +4,7 @@ template: one-col
 title: How to configure Nginx
 categories: references
 lead: "Nginx within the stack"
-legacy: false
+legacy: true
 tags: ["customization", "nginx"]
 order: 90
 permalink: /:collection/:path

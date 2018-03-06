@@ -4,7 +4,7 @@ template: one-col
 title: Customize your Database Configuration with Docker
 categories: how-to-guides/databases
 lead: "Customize your Database Configuration on Cloud 66 Docker stacks"
-legacy: false
+legacy: true
 tags: ["PostgreSQL", "MySQL", "Redis", "MongoDB"]
 permalink: /:collection/:path
 ---

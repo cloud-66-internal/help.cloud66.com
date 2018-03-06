@@ -4,7 +4,7 @@ template: one-col
 title: How to use Let's Encrypt
 categories: how-to-guides/deployment
 lead: ""
-legacy: false
+legacy: true
 tags: ["security"]
 permalink: /:collection/:path
 ---

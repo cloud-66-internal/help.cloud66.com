@@ -4,7 +4,7 @@ template: one-col
 title: Nginx basic authorization
 categories: how-to-guides/security
 lead: ""
-legacy: false
+legacy: true
 change: true
 permalink: /:collection/:path
 tags: ["nginx"]

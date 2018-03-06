@@ -4,7 +4,7 @@ template: one-col
 title: Building your Docker service
 categories: how-to-guides/deployment
 lead: ""
-legacy: false
+legacy: true
 tags: ["build"]
 permalink: /:collection/:path
 ---

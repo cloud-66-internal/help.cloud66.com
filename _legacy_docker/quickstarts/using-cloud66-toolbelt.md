@@ -4,7 +4,7 @@ template: one-col
 title: Using Cloud 66 Toolbelt
 categories: quickstarts
 lead: "A powerful command line tool to interact with Cloud 66"
-legacy: false
+legacy: true
 order: 3
 tags: ["toolbelt"]
 permalink: /:collection/:path

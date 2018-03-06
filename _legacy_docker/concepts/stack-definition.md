@@ -4,7 +4,7 @@ template: one-col
 title: What is a stack?
 categories: concepts
 lead: ""
-legacy: false
+legacy: true
 tags: ["getting-started"]
 permalink: /:collection/:path
 ---

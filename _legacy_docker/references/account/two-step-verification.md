@@ -4,7 +4,7 @@ template: one-col
 title: What is Two-step Verification?
 categories: references/accounts
 lead: ""
-legacy: false
+legacy: true
 tags: ["account", "security"]
 permalink: /:collection/:path
 ---

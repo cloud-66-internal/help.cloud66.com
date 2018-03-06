@@ -5,7 +5,7 @@ title:  "What is the database backup add-in?"
 categories: how-to-guides/add-ins
 lead: Managed and unmanaged database backups
 tags: ['database']
-legacy: false
+legacy: true
 permalink: /:collection/:path
 ---
 
