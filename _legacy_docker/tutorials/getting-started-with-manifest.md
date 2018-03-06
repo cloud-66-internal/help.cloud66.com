@@ -4,7 +4,7 @@ template: one-col
 title: Getting started with manifest files
 categories: tutorials
 lead: ""
-legacy: true
+legacy: false
 tags: ["manifest", "customization"]
 permalink: /:collection/:path
 ---

@@ -5,7 +5,7 @@ title:  "How to use the Jobs Add-in"
 categories: how-to-guides/add-ins
 lead: Run a scheduled or on-demand tasks on a server host or against a docker service
 tags: ['Add in']
-legacy: true
+legacy: false
 permalink: /:collection/:path
 ---
 

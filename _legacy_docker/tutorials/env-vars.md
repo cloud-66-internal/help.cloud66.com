@@ -4,7 +4,7 @@ template: one-col
 title: What are environment variables?
 categories: tutorials
 lead: ""
-legacy: true
+legacy: false
 tags: ["customization"]
 permalink: /:collection/:path
 ---

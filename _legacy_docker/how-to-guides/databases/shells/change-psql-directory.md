@@ -4,7 +4,7 @@ template: one-col
 title: How to change the data directory for PostgreSQL
 categories: Tutorials
 lead: ""
-legacy: true
+legacy: false
 
 permalink: /:collection/:path
 ---

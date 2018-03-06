@@ -4,7 +4,7 @@ template: one-col
 title: Non-recommended server sizes
 categories: references
 lead: "Choosing the right server size"
-legacy: true
+legacy: false
 tags: ["performance"]
 permalink: /:collection/:path
 ---

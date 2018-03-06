@@ -4,7 +4,7 @@ template: one-col
 title: Uninstalling MySQL
 categories: how-to-guides/databases
 lead: ""
-legacy: true
+legacy: false
 tags: ["mysql"]
 permalink: /:collection/:path
 ---

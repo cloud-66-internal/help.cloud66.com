@@ -4,7 +4,7 @@ template: one-col
 title: What are deploy hooks?
 categories: tutorials
 lead: ""
-legacy: true
+legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
 ---

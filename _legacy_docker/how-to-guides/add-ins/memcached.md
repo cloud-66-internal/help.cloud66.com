@@ -5,7 +5,7 @@ title:  "How to use the Memcached Add-in"
 categories: how-to-guides/add-ins
 lead: Add Memcached to your stack with ease
 tags: ['Add in']
-legacy: true
+legacy: false
 permalink: /:collection/:path
 ---
 

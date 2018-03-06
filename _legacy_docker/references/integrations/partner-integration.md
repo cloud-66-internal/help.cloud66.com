@@ -4,7 +4,7 @@ template: one-col
 title: Partner Integration
 categories: references/integrations
 lead: ""
-legacy: true
+legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
 ---

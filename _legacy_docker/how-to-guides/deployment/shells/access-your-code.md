@@ -5,7 +5,7 @@ title: Accessing your Git repository
 categories: how-to-guides/deployment
 lead: "Connecting your git repository to Cloud 66"
 tags: ["git"]
-legacy: true
+legacy: false
 order: 200
 
 permalink: /:collection/:path

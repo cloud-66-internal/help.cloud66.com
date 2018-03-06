@@ -4,7 +4,7 @@ template: one-col
 title: Manually add an SSL certificate to a load balancer
 categories: how-to-guides/security
 lead: ""
-legacy: true
+legacy: false
 tags: ["ssl"]
 permalink: /:collection/:path
 ---

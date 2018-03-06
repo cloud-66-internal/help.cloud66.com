@@ -4,7 +4,7 @@ template: one-col
 title: Google Compute Engine cloud
 categories: references/clouds
 lead: ""
-legacy: true
+legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
 ---

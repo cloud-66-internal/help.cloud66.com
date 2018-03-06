@@ -4,7 +4,7 @@ template: one-col
 title: Security summary
 categories: resources
 lead: ""
-legacy: true
+legacy: false
 
 permalink: /:collection/:path
 ---

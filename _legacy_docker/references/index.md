@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Docker References"
 lead: "In Depth Documentation on Cloud 66 Docker"
-legacy: true
+legacy: false
 permalink: /:collection/references/index.html
 ---
 

@@ -4,7 +4,7 @@ template: one-col
 title:  "Docker How-to Guides"
 categories: how-to-guides
 lead: How to properly use Cloud 66 for Docker
-legacy: true
+legacy: false
 permalink: /:collection/:categories/index.html
 ---
 

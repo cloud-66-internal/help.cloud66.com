@@ -4,7 +4,7 @@ template: one-col
 title: What is Deployment History
 categories: how-to-guides/deployment
 lead: ""
-legacy: true
+legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
 ---

@@ -4,7 +4,7 @@ template: one-col
 title: What is the Cloud66 Status?
 categories: resources
 lead: ""
-legacy: true
+legacy: false
 
 permalink: /:collection/:path
 ---

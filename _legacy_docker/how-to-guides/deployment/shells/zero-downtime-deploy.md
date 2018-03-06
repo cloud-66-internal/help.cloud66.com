@@ -4,7 +4,7 @@ template: one-col
 title: How to achieve zero-downtime deployments
 categories: how-to-guides/deployment
 lead: ""
-legacy: true
+legacy: false
 tags: ["high-availability"]
 
 permalink: /:collection/:path

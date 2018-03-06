@@ -4,7 +4,7 @@ template: one-col
 title: Scaling your MongoDB servers with replica sets
 categories: how-to-guides/databases
 lead: ""
-legacy: true
+legacy: false
 tags: ["MongoDB"]
 permalink: /:collection/:path
 ---

@@ -4,7 +4,7 @@ template: one-col
 title: Configuring Multi Certificate for HAProxy
 categories: how-to-guides/security
 lead: ""
-legacy: true
+legacy: false
 tags: ["ssl","haproxy"]
 permalink: /:collection/:path
 ---

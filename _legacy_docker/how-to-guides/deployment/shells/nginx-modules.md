@@ -4,7 +4,7 @@ template: one-col
 title: Add modules to Nginx
 categories: how-to-guides/deployment
 lead: ""
-legacy: true
+legacy: false
 tags: ["customization"]
 
 permalink: /:collection/:path

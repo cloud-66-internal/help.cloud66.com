@@ -4,7 +4,7 @@ template: one-col
 title: What is the database backup add-in?
 categories: tutorials
 lead: ""
-legacy: true
+legacy: false
 tags: ["databases"]
 permalink: /:collection/:path
 ---

@@ -4,7 +4,7 @@ template: one-col
 title: About EasyDeploy repositories
 categories: references
 lead: ""
-legacy: true
+legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
 ---

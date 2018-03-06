@@ -4,7 +4,7 @@ template: one-col
 title: Integration With Travis CI
 categories: references/integrations
 lead: ""
-legacy: true
+legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
 ---

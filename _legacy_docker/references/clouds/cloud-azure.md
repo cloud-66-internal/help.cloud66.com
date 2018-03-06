@@ -4,7 +4,7 @@ template: one-col
 title: Microsoft Azure cloud
 categories: references/clouds
 lead: ""
-legacy: true
+legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
 ---

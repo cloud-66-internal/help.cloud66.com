@@ -4,7 +4,7 @@ template: one-col
 title: Docker service configuration
 categories: tutorials
 lead: ""
-legacy: true
+legacy: false
 tags: ["customization", "service.yml"]
 permalink: /:collection/:path
 ---

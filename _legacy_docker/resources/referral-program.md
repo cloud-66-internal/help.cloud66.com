@@ -4,7 +4,7 @@ template: one-col
 title: How the Referral Program works
 categories: resources
 lead: ""
-legacy: true
+legacy: false
 
 permalink: /:collection/:path
 ---

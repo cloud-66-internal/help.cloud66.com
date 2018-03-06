@@ -5,7 +5,7 @@ title:  "What is the Docker Service task"
 categories: how-to-guides/add-ins
 lead: Schedule automated tasks against a docker service
 tags: ['Add in']
-legacy: true
+legacy: false
 permalink: /:collection/:path
 ---
 

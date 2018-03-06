@@ -4,7 +4,7 @@ template: one-col
 title: Docker Getting Started (Building Images)
 categories: quickstarts
 lead: ""
-legacy: true
+legacy: false
 order: 1
 tags: ["getting-started"]
 permalink: /:collection/:path

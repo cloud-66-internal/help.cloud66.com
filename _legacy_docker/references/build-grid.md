@@ -4,7 +4,7 @@ template: one-col
 title: What is Build Grid?
 categories: references
 lead: ""
-legacy: true
+legacy: false
 tags: ["build"]
 permalink: /:collection/:path
 ---

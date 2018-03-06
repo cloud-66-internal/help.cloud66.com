@@ -4,7 +4,7 @@ template: one-col
 title: Cloud 66 Terminology
 categories: resources
 lead: ""
-legacy: true
+legacy: false
 
 permalink: /:collection/:path
 ---

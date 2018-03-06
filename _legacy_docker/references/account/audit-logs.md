@@ -4,7 +4,7 @@ template: one-col
 title: Audit log for account activities
 categories: references/accounts
 lead: ""
-legacy: true
+legacy: false
 tags: ["logs"]
 permalink: /:collection/:path
 ---

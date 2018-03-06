@@ -4,7 +4,7 @@ template: one-col
 title: European data protection compliance
 categories: resources
 lead: ""
-legacy: true
+legacy: false
 
 permalink: /:collection/:path
 ---

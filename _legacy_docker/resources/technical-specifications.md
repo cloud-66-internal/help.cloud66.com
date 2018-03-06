@@ -4,7 +4,7 @@ template: one-col
 title: Cloud 66 Technical specifications
 categories: resources
 lead: ""
-legacy: true
+legacy: false
 
 permalink: /:collection/:path
 ---

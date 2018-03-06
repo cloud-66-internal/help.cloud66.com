@@ -4,7 +4,7 @@ template: one-col
 title: What are the Stack Environments?
 categories: references
 lead: ""
-legacy: true
+legacy: false
 tags: ["Environments"]
 permalink: /:collection/:path
 ---

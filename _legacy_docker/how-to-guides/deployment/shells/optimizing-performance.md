@@ -4,7 +4,7 @@ template: one-col
 title: Optimizing for server load
 categories: how-to-guides/deployment
 lead: ""
-legacy: true
+legacy: false
 tags: ["customization"]
 
 permalink: /:collection/:path

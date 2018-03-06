@@ -5,7 +5,7 @@ title:  "What is the server restart notification?"
 categories: tutorials
 lead: Cloud 66 server restart notifications
 tags: ['server','notifications']
-legacy: true
+legacy: false
 permalink: /:collection/:path
 ---
 

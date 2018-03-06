@@ -4,7 +4,7 @@ template: one-col
 title: Server IP addresses and hostnames
 categories: references
 lead: ""
-legacy: true
+legacy: false
 tags: ["security"]
 permalink: /:collection/:path
 ---

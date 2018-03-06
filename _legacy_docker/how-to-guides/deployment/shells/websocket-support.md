@@ -4,7 +4,7 @@ template: one-col
 title: Cloud 66 support for WebSocket
 categories: how-to-guides/deployment
 lead: ""
-legacy: true
+legacy: false
 tags: ["websocket"]
 
 permalink: /:collection/:path

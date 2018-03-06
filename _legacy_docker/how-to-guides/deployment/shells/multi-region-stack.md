@@ -4,7 +4,7 @@ template: one-col
 title: How to handle Multi Region Stacks
 categories: how-to-guides/deployment
 lead: ""
-legacy: true
+legacy: false
 tags: ["high-availability"]
 
 permalink: /:collection/:path

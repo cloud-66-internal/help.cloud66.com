@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Docker Resources"
 lead: "Useful Resources About Cloud 66"
-legacy: true
+legacy: false
 permalink: /:collection/resources/index.html
 ---
 

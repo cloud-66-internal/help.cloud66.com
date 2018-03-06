@@ -5,7 +5,7 @@ title:  "How to implement Add-ins"
 categories: how-to-guides/add-ins
 lead: Extend the functionality of your stack with add-ins
 tags: ['Add ins']
-legacy: true
+legacy: false
 permalink: /:collection/:path
 ---
 

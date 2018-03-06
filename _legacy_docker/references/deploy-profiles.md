@@ -4,7 +4,7 @@ template: one-col
 title: What are Deployment Profiles?
 categories: references
 lead: ""
-legacy: true
+legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
 ---

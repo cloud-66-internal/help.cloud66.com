@@ -5,7 +5,7 @@ title:  "How to use the Filebeat Add-in"
 categories: how-to-guides/add-ins
 lead: Simple web-based log analysis service for your servers
 tags: ['Logs', 'Add ins']
-legacy: true
+legacy: false
 permalink: /:collection/:path
 ---
 

@@ -4,7 +4,7 @@ template: one-col
 title: What is Cloud 66 Account Protection?
 categories: references/accounts
 lead: ""
-legacy: true
+legacy: false
 tags: ["security", "account"]
 permalink: /:collection/:path
 ---

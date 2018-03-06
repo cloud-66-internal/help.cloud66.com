@@ -4,7 +4,7 @@ template: one-col
 title: What are Parallel deployments?
 categories: how-to-guides/deployment
 lead: ""
-legacy: true
+legacy: false
 tags: ["customization"]
 permalink: /:collection/:path
 ---
