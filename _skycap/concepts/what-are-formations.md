@@ -164,7 +164,7 @@ permalink: /:collection/:path
 <p>
 	<ul>
 		<li>Fine grained access control and permissions for each Formation and every Stencil for your team members</li>
-		<li>Powerful and very simple <a href="/skycap/references/stencil_placeholders">Stencil placeholders syntax</a></li>
+		<li>Powerful and very simple <a href="/skycap/references/stencil_placeholders.html">Stencil placeholders syntax</a></li>
 		<li>Bulk import of your environment variables and secrets into Stencils</li>
 	</ul>
 </p>
