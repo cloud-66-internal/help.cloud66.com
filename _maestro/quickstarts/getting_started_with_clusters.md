@@ -46,7 +46,7 @@ permalink: /:collection/:path
 
 <p><img class="ContentImage" src="/assets/maestro/maestro_cluster_new.png" alt="Create a new cluster"></p>
 
-<p>Now you're going to be creating your first Maestro cluster. The first step involves <em>giving your cluster a name</em>. Lets call our cluster <em>awesome-cluster</<em></p>
+<p>Now you're going to be creating your first Maestro cluster. The first step involves <em>giving your cluster a name</em>. Lets call our cluster <em>awesome-cluster</em></p>
 
 <p>We're also going to have to select our deployment target now. We can choose from our pre-added cloud providers or <a href='/maestro/tutorials/registered-servers.html#register-a-server'>registered servers</a> (or click <em>add cloud</em> to add a new cloud provider now). In our example we're choosing to deploy to Digital Ocean</p>
 
@@ -66,19 +66,19 @@ permalink: /:collection/:path
 <p>Once you're happy with your choices; hit the <em>Create Cluster</em> button to start building your new Maestro cluster!</p>
 
 <p>
-    <img src="/assets/maestro/maestro_cluster_deploy_start.gif" alt="Deploying your application">
+    <img src="/assets/maestro/maestro_cluster_deploy_start.png" alt="Deploying your application">
 </p>
 
 <p>During the build and deployment process you can view the log to see what's happening behind the scenes. You can also drill down to specific servers to see what is going on there during deployment</p>
 
 <p>
-    <img src="/assets/maestro/maestro_cluster_deploy_middle.gif" alt="Seeing your deployment logs">
+    <img src="/assets/maestro/maestro_cluster_deploy_middle.png" alt="Seeing your deployment logs">
 </p>
 
 <p>When your deployment is complete you'll have your first Maestro cluster up and running!</p>
 
 <p>
-    <img src="/assets/maestro/maestro_cluster_deploy_end.gif" alt="Fully created Maestro cluster">
+    <img src="/assets/maestro/maestro_cluster_deploy_end.png" alt="Fully created Maestro cluster">
 </p>
 
 <h2 id="configuration">
@@ -89,7 +89,7 @@ permalink: /:collection/:path
 <p>As we have a cluster that has multiple servers, we can easily switch our master node from a <em>shared master</em> to a <em>dedicated master</em>. To do this we simply click the <em>shared master</em> dropdown link and select "Yes! Switch to Dedicated Master"</p>
 
 <p>
-    <img src="/assets/maestro/maestro_cluster_switch_dedicated.gif" alt="Switch master to dedicated">
+    <img src="/assets/maestro/maestro_cluster_switch_dedicated.png" alt="Switch master to dedicated">
 </p>
 
 <p>We can also easily add additional server nodes to this cluster or remove existing server nodes from this cluster. Note that the master server can not currently be removed.</p>
@@ -103,5 +103,5 @@ permalink: /:collection/:path
 <p>If you now create a new Maestro application (<a href='/maestro/quickstarts/getting_started.html'>Maestro quickstarts guide</a>) at the point where you can select your Cloud provider, you will now see additional items at the bottom of the list containing your available clusters. Select your cluster, and deploy your application!</p>
 
 <p>
-    <img src="/assets/maestro/maestro_cluster_deploy_application.gif" alt="Deploy application to cluster">
+    <img src="/assets/maestro/maestro_cluster_deploy_application.png" alt="Deploy application to cluster">
 </p>
