@@ -9,7 +9,7 @@ permalink: /:collection/:path
 ---
 
 <p class="lead">
-    Skycap is a container delivery pipeline. You can use Skycap to automatically turn your source code into container (Docker) images.
+    Skycap is a Container Delivery Pipeline. You can use Skycap to automatically turn your source code into container (Docker) images, manage your Kubernetes configuration files and deploy your applications to any Kubernetes cluster.
 </p>
 
 <h2 id="What-youll-need">
