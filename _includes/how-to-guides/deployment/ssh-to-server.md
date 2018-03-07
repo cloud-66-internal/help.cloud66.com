@@ -2,7 +2,7 @@
 We provide two different ways for you to SSH to your server - an automated way with the Cloud 66 toolbelt, or the manual way.
 
 <h2 id="cx">Cloud 66 toolbelt</h2>
-You can use the [Cloud 66 toolbelt](https://help.cloud66.com/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) to easily SSH to your servers. Once initialized, the following command can be used:
+You can use the [Cloud 66 toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) to easily SSH to your servers. Once initialized, the following command can be used:
 
 ### Full
 
@@ -16,13 +16,13 @@ cx ssh -s "My Awesome App" web
 cx ssh --gateway-key ~/.ssh/bastion_key  -s "My Awesome App" Lion -e production
 {% endhighlight %}
 
-See [toolbelt shortcuts](https://help.cloud66.com/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html), for information on how you can make this even easier.
+See [toolbelt shortcuts](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html), for information on how you can make this even easier.
 
 <h2 id="manual">Manual shell access</h2>
 You can always have terminal access to your servers from your own server - just follow the steps below if you're on a Linux-based operating system.
 
 <ol class="list">
-<li>Port 22 (SSH) is closed to outside traffic by default - so you need to <a href="https://help.cloud66.com/{{page.collection}}/tutorials/service-network-configuration.html">add a firewall rule to your stack</a> to access it.</li>
+<li>Port 22 (SSH) is closed to outside traffic by default - so you need to <a href="/{{page.collection}}/tutorials/service-network-configuration.html">add a firewall rule to your stack</a> to access it.</li>
 <li>Once the port is open, you can find your username and SSH key by visiting the server page for the specific server you would like to login to. The SSH key download link is located in the right sidebar of your server page.</li>
 <li>Change the access rights to the downloaded key to 0600:</li>
 <pre class="terminal">
@@ -39,7 +39,7 @@ $ ssh user&#95;name@ip&#95;address -i /Users/xxx/Downloads/key.pem
 
 <ol class="list">
 <b><li>Update your toolbelt version</li></b>
-Toolbelt updates are normally applied automatically in the background, but in some cases these may not work. If so, you may need to <a href="https://help.cloud66.com/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html#update-the-toolbelt">update the toolbelt manually</a>.<br/><br/>
+Toolbelt updates are normally applied automatically in the background, but in some cases these may not work. If so, you may need to <a href="/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html#update-the-toolbelt">update the toolbelt manually</a>.<br/><br/>
 
 <b><li>Toolbelt SSH asking for password</li></b>
 If your toolbelt SSH connection is asking for a password, there may be an issue with the local SSH key cache on your computer. To remove this cache, run the following commands:
