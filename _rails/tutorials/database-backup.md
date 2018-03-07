@@ -46,6 +46,7 @@ Each format has its own benefits and downsides :
 ### Binary
 
 For binary backups we are taking a snapshot of the data folder of your database service and applying needed logs to have a consistent data folder. The result is a data folder which can be restored on your server to return it in the same state as it was at the time of backup. 
+
 As this backup contains raw data of your database server(Instead of human readable SQL dump file) you can expect much faster backup/restore process, specially for large databases this method can be faster up to 4 times which can be very helpful in failover scenarios. But there are some limitation :
 
 - You can not restore it on a server with different version
@@ -57,6 +58,7 @@ As this backup contains raw data of your database server(Instead of human readab
 ### Text
 
 For this format we are generating a dump file with SQL commands that, when fed back to the server, will recreate the database in the same state as it was at the time of the dump.
+
 As the output of the backup is a simple sql dump file, you can use it to import your data to other servers or when you want to upgrade your server version but restore process will be much longer than **binary** specially if you have lots of indexes in your database.
 These are other benefits of this type of backup : 
 
@@ -112,7 +114,9 @@ You can retrieve your database backup by using the [toolbelt backup management](
 ### Download script
 
 Access your stack detail page in Cloud 66 dashboard, and click the link for your database backup add-in. This page lists your available database backups, and allows you to download and restore each one. By clicking the download icon you will have this option to use a download script or manually download backup.
+
 Download the script and transfer it to the desired server or simply click on **Copy script to clipboard** and paste it to the server and run the command. 
+
 By running the download script, your backup will be downloaded (and concatenated if it is a multi part backup) and prepared to be ready to restore. At final step , script will show you the steps you need to follow in order to restore downloaded backup.
 
 

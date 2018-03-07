@@ -11,7 +11,7 @@ Once you've provided your SSL certificate and key, we'll install them on all you
 
 Cloud 66 supports _SSL Termination_ on _HAProxy (1.5.x or higher)_ and _Amazon Elastic Load Balancer_. Simply check the option on SSL certificate add on page. This will config your existing load balancer or will apply whenever you create new load balancer.   
 
-Refer to our [documentation](https://help.cloud66.com/{{page.collection}}/how-to-guides/security/ssl-certificate.html)
+Refer to our [documentation](/{{page.collection}}/how-to-guides/security/ssl-certificate.html)
 
 <h2>Let's Encrypt SSL Certificate</h2>
 
@@ -26,4 +26,4 @@ If your infrastructure is behind [Cloudflare](https://www.cloudflare.com) and yo
 
 If your domain application is running on *www.example.io* for example you need a page rule for the following URL: *www.example.io/.well-known/acme-challenge/\**, browser integrity check off, SSL off, cache expiration: 4 hours.
 
-If you still have issue installing Lets Encrypt please have a look at [this page](https://help.cloud66.com/{{page.collection}}/how-to-guides/deployment/shells/lets-encrypt.html)
+If you still have issue installing Lets Encrypt please have a look at [this page](/{{page.collection}}/how-to-guides/deployment/shells/lets-encrypt.html)

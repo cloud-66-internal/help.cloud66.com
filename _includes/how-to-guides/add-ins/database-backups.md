@@ -9,8 +9,8 @@ Cloud 66 provides two types of backups: _managed_ and _unmanaged_.
 Having managed backups carries several benefits:
 
 - You can download database backups through the web UI and API
-- {% if page.collection == 'rails' %}[Backup verifiers](https://help.cloud66.com/rails/tutorials/backup-verifiers.html) ensure that your backups actually contain what you expect{%endif%}
-- Use [database replication](https://help.cloud66.com/rails/tutorials/database-replication.html) to scale your databases
+- {% if page.collection == 'rails' %}[Backup verifiers](/rails/tutorials/backup-verifiers.html) ensure that your backups actually contain what you expect{%endif%}
+- Use [database replication](/rails/tutorials/database-replication.html) to scale your databases
 - You can easily restore database backups
 - Stored in Cloud 66 storage
 
@@ -26,6 +26,7 @@ Each format has its own benefits and downsides :
 
 <h4 id="formatbinary">Binary</h4>
 For binary backups we are taking a snapshot of the data folder of your database service and applying needed logs to have a consistent data folder. The result is a data folder which can be restored on your server to return it in the same state as it was at the time of backup. 
+
 As this backup contains raw data of your database server(Instead of human readable SQL dump file) you can expect much faster backup/restore process, specially for large databases this method can be faster up to 4 times which can be very helpful in failover scenarios. But there are some limitation :
 
 - You can not restore it on a server with different version
@@ -36,8 +37,12 @@ As this backup contains raw data of your database server(Instead of human readab
 
 
 <h4 id="formattext">Text</h4>
+
 For this format we are generating a dump file with SQL commands that, when fed back to the server, will recreate the database in the same state as it was at the time of the dump.
-As the output of the backup is a simple sql dump file, you can use it to import your data to other servers or when you want to upgrade your server version but restore process will be much longer than **binary** specially if you have lots of indexes in your database.
+
+<p>As the output of the backup is a simple sql dump file, you can use it to import your data to other servers or when you want to upgrade your server version but restore process will be much longer than <i>binary</i> specially if you have lots of indexes in your database.
+</p>
+
 These are other benefits of this type of backup : 
 
 - You can restore this backup when server is up and running.
@@ -78,11 +83,13 @@ This option applies to **text** MySQL and PostgreSQL and redis backups. With thi
 You can retrieve your backup in one of three ways:
 
 <h4 id="dl_toolbelt">Cloud 66 toolbelt</h4> 
-You can retrieve your database backup by using the [toolbelt backup management](https://help.cloud66.com/{{page.collection}}/references/shells/toolbelt.html#about-backup-management). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
+You can retrieve your database backup by using the [toolbelt backup management](/{{page.collection}}/references/shells/toolbelt.html#about-backup-management). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
 
 <h4 id="dl_script">Download script</h4> 
-Access your stack detail page in Cloud 66 dashboard, and click the link for your database backup add-in. This page lists your available database backups, and allows you to download and restore each one. By clicking the download icon you will have this option to use a download script or manually download backup.
+
+
 Download the script and transfer it to the desired server or simply click on **Copy script to clipboard** and paste it to the server and run the command. 
+
 By running the download script, your backup will be downloaded (and concatenated if it is a multi part backup) and prepared to be ready to restore. At final step , script will show you the steps you need to follow in order to restore downloaded backup.
 
 <h4 id="dl_command">Manually download</h4> 
@@ -109,7 +116,9 @@ $ cat mysql.tar.aa mysql.tar.ab mysql.tar.ac mysql.tar.ad > mysql.tar
 You can restore a backup through Cloud66 dashboard backup page. There is a **restore button** for each backup that will download the backup on your server and restore it.  
 
 In this section we are going to describe the steps you need to follow if you want to manually restore your backup. 
+
 After you downloaded a backup you will need to follow couple of steps base on your database type to restore it. 
+
 First step is to **untar**  downloaded backup (Unless you are using download script which will untar the result automatically)
 
 <pre class="prettyprint">
@@ -149,8 +158,7 @@ $ find /path/to/unarchived/folder '(' -name '*.sql' -o -name '*.sql.gz' ')' -typ
 $ gzip -d /path/to/unarchived/folder/data_file_from_previous_step
 </pre>
 
-4. On order to clean old data you can drop your current db and create a new one. You can use following scripts to drop and recreate your database but first you need to set some environment variables.
-You can find YOUR_MYSQL_DB_APP_USERNAME, YOUR_MYSQL_DB_APP_PASSWORD,YOUR_MYSQL_ADMIN_USERNAME,YOUR_MYSQL_ADMIN_PASSWORD and YOUR_MYSQL_DATABASE_NAME in Cloud66 Dashboard Mysql server detail page.
+4. On order to clean old data you can drop your current db and create a new one. You can use following scripts to drop and recreate your database but first you need to set some environment variables. You can find YOUR_MYSQL_DB_APP_USERNAME, YOUR_MYSQL_DB_APP_PASSWORD,YOUR_MYSQL_ADMIN_USERNAME,YOUR_MYSQL_ADMIN_PASSWORD and YOUR_MYSQL_DATABASE_NAME in Cloud66 Dashboard Mysql server detail page.
 
 <pre class="prettyprint">
 $ export $MYSQL_DB_APP_USERNAME=YOUR_MYSQL_DB_APP_USERNAME
