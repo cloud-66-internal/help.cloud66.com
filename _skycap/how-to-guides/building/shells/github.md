@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Use GitHub with Cloud 66
-categories: how-to-guides/deployment
+categories: how-to-guides/building
 lead: ""
 tags: ["git","github"]
 legacy: false

@@ -11,20 +11,13 @@ permalink: /:collection/:categories/index.html
 <div class="Toc Toc--howto">
     <h2>Deploying Your Applications</h2>
     <ul>
-    {% assign section = site.skycap | where:"categories","how-to-guides/deployment" | sort: "order" %}
-    {% include list_articles.html section=section %}
-    </ul>
-<!--
-    <h2>Using Databases</h2>
-    <ul>
-    {% assign section = site.skycap | where:"categories","how-to-guides/databases" | sort: "order" %}
+    {% assign section = site.skycap | where:"categories","how-to-guides/building" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
 
-    <h2>Securing Your Applications</h2>
+    <h2>Formations</h2>
     <ul>
-    {% assign section = site.skycap | where:"categories","how-to-guides/security" | sort: "order" %}
+    {% assign section = site.skycap | where:"categories","how-to-guides/formations" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
--->
 </div><!--/.Toc-->

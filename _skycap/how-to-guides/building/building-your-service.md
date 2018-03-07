@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Building your Docker service
-categories: how-to-guides/deployment
+categories: how-to-guides/building
 lead: ""
 legacy: false
 tags: ["build"]
@@ -70,7 +70,7 @@ This will default to the _root folder_ of your repository if not specified.
 
 Specifies the command used to start your container(s) (runs on your Docker host).
 
-The `command` definition in service.yml is optional, and if not specified it will use the entrypoint/command that is defined on the image. This is the simplest way to re-use what you have already if its baked into your image. 
+The `command` definition in service.yml is optional, and if not specified it will use the entrypoint/command that is defined on the image. This is the simplest way to re-use what you have already if its baked into your image.
 
 ```
 services:
@@ -130,7 +130,7 @@ This will default to the value of _build_root_/Dockerfile if not specified.
 
 ### Git URL
 
-The Git repository URL your Docker image will be built with. The Git URL you use to [allow us access to your repository](/{{page.collection}}/how-to-guides/deployment/shells/access-your-code.html) will differ for public and private repositories.
+The Git repository URL your Docker image will be built with. The Git URL you use to [allow us access to your repository](/skycap/how-to-guides/building/shells/access-your-code.html) will differ for public and private repositories.
 
 ```
 services:
@@ -206,5 +206,5 @@ When you [specify the Google Container Registy as a Docker image repo](https://a
 
 Check out the [Habitus website](http://www.habitus.io) for more information about generating a `build.yml`.
 
-A Habitus build usually has multiple steps and each step can generate a Docker image. Using `use_habitus_step` attribute you can specify which step's results you would like to use as the image for the container. 
+A Habitus build usually has multiple steps and each step can generate a Docker image. Using `use_habitus_step` attribute you can specify which step's results you would like to use as the image for the container.
 

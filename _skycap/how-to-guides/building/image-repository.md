@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Connecting to Docker Image Repository
-categories: how-to-guides/deployment
+categories: how-to-guides/building
 lead: ""
 legacy: false
 tags: ["customization", "docker"]

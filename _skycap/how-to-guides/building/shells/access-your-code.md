@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Accessing your Git repository
-categories: how-to-guides/deployment
+categories: how-to-guides/building
 lead: "Connecting your git repository to Cloud 66"
 tags: ["git"]
 legacy: false
