@@ -198,9 +198,9 @@ permalink: /:collection/:path
 
 <ul>
     <li>
-        <p><strong><a href="https://cloud66-help.helpscoutdocs.com/article/131-building-your-manifest-file">Manifest.yml documentation</a></strong> &mdash; including advanced configuration examples.</p>
+        <p><strong><a href="/maestro/how-to-guides/deployment/building-a-manifest-file.html">Manifest.yml documentation</a></strong> &mdash; including advanced configuration examples.</p>
     </li>
     <li>
-        <p><strong><a href="https://help.cloud66.com/article/140-container-port-mapping">Container Port Mapping</a></strong> &mdash; learn more about advanced port mapping, including Non-HTTP ports (TCP and UDP)</p>
+        <p><strong><a href="/maestro/tutorials/container-ports.html">Container Port Mapping</a></strong> &mdash; learn more about advanced port mapping, including Non-HTTP ports (TCP and UDP)</p>
     </li>
 </ul>

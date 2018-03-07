@@ -9,7 +9,7 @@ permalink: /:collection/:path
 ---
 
 <p class="lead">
-    Skycap is a container delivery pipeline. You can use Skycap to automatically turn your source code into container (Docker) images.
+    Skycap is a Container Delivery Pipeline. You can use Skycap to automatically turn your source code into container (Docker) images, manage your Kubernetes configuration files and deploy your applications to any Kubernetes cluster.
 </p>
 
 <h2 id="What-youll-need">
@@ -131,7 +131,7 @@ permalink: /:collection/:path
         <p><strong><a href="/{{page.collection}}/tutorials/docker-service-configuration.html">Service.yml documentation</a></strong> &mdash; including advanced configuration examples.</p>
     </li>
     <li>
-        <p><strong><a href="https://help.cloud66.com/article/139-multi-tenancy-for-stacks">Multi Tenancy</a></strong> &mdash; an example of using multiple services to configure multi tenancy Stacks.</p>
+        <p><strong><a href="/maestro/how-to-guides/deployment/deployment-history.html">Multi Tenancy</a></strong> &mdash; an example of using multiple services to configure multi tenancy Stacks.</p>
     </li>
 </ul>
 

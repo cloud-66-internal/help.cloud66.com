@@ -5,11 +5,11 @@ Adding a custom server to your stack allows you to manage your own services whil
 
 A custom server will have the following Cloud 66 features enabled:
 
-- [Monitoring](https://help.cloud66.com/{{page.collection}}/references/server-ip-addresses.html)
-- [Security](https://help.cloud66.com/{{page.collection}}/tutorials/service-networking.html)
-- Use of [Cloud 66 add-ins](https://help.cloud66.com/{{page.collection}}/how-to-guides/add-ins/add-in-implementation.html)
-- [Log rotation](https://help.cloud66.com/{{page.collection}}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html)
-- [SSH to your server via toolbelt](https://help.cloud66.com/{{page.collection}}/how-to-guides/deployment/shells/ssh.html)
+- [Monitoring](/{{page.collection}}/references/server-ip-addresses.html)
+- Use of [Cloud 66 add-ins](/{{page.collection}}/how-to-guides/add-ins/add-in-implementation.html)
+- [Log rotation](/{{page.collection}}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html)
+- [SSH to your server via toolbelt](/{{page.collection}}/how-to-guides/deployment/shells/ssh.html)
+{%if page.collection != 'rails' and page.collection != 'node' %}- [Security](/{{page.collection}}/tutorials/service-networking.html){%endif%}
 
 ## Add a custom server
 To add a custom server, access the add-ins menu and click _Custom Server_. You will then be able to choose the size of your new server and how many you'd like to add. Once your server is added, you'll be able to see and manage it as part of your stack.

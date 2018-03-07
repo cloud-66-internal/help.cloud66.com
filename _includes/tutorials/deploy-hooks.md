@@ -371,7 +371,9 @@ Creating a deploy hook from scratch consists of a number of steps:
 3.  Choose your deploy hook type - eg. _snippet_, _command_ or _script_.
 4.  Select any additional hook fields you require
 
-Automating deploy hooks can sometimes be tricky. To avoid issues, it's good practice to run each of your commands manually to see that they complete successfully. If a specific command doesn't show any output, you can use the `echo $?` command after issuing your command to see its exit code. If it returns a _zero_, your command was successful, whereas a _one_ means it has failed.
+Automating deploy hooks can sometimes be tricky. To avoid issues, it's good practice to run each of your commands manually to see that they complete successfully. 
+
+If a specific command doesn't show any output, you can use the `echo $?` command after issuing your command to see its exit code. If it returns a _zero_, your command was successful, whereas a _one_ means it has failed.
 
 
 ## Use a snippet deploy hook

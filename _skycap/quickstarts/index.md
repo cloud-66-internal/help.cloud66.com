@@ -11,6 +11,5 @@ permalink: /:collection/quickstarts/index.html
     <ul>
     {% assign section = site.skycap | where:"categories","quickstarts" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
     </ul>
 </div><!--/.Toc-->

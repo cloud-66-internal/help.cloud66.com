@@ -12,15 +12,15 @@ You can set the timing of the job in either minutes, hours, a daily, weekly and 
 There are a variety of jobs for your stack.
 
 <ul>
-    {% if page.collection == 'maestro' OR page.collection == 'legacy_docker' %}<li><a href="http://help.cloud66.com/{{page.collection}}/how-to-guides/add-ins/docker-server-task.html">Docker server task</a></li>
-    <li><a href="http://help.cloud66.com/{{page.collection}}/how-to-guides/add-ins/docker-service-task.html">Docker service task</a></li>{% endif %}
-    <li><a href="http://help.cloud66.com/{{page.collection}}/how-to-guides/add-ins/shell.html">Shell command</a></li>
-    {% if page.collection == 'rails' %}<li><a href="http://help.cloud66.com/{{page.collection}}/how-to-guides/add-ins/rake-task.html">Rake task</a></li>{% endif %}
+    {% if page.collection == 'maestro' OR page.collection == 'legacy_docker' %}<li><a href="/{{page.collection}}/how-to-guides/add-ins/docker-server-task.html">Docker server task</a></li>
+    <li><a href="/{{page.collection}}/how-to-guides/add-ins/docker-service-task.html">Docker service task</a></li>{% endif %}
+    <li><a href="/{{page.collection}}/how-to-guides/add-ins/shell.html">Shell command</a></li>
+    {% if page.collection == 'rails' %}<li><a href="/{{page.collection}}/how-to-guides/add-ins/rake-task.html">Rake task</a></li>{% endif %}
 </ul>
 
 <h2 id="params">Using parameters</h2>
 
-When you are running a job on demand via dashboard or [toolbelt](http://help.cloud66.com/{{page.collection}}/references/shells/toolbelt.html#job-management), you can pass parameters if you used in your command.
+When you are running a job on demand via dashboard or [toolbelt](/{{page.collection}}/references/shells/toolbelt.html#job-management), you can pass parameters if you used in your command.
 
 <h3 id="notation">Notation</h3>
 Jobs use a facility in the shell called <i>positional parameters</i>. Positional parameters are a series of special variables ($1, $2 ... $n) that contain the contents of the command line. Where <strong>n</strong> is greater than 9 using braces. For example, to refer to the 15th positional parameter, use the notation `${15}`. 

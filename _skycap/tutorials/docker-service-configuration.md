@@ -198,11 +198,11 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies the <a href="https://docs.docker.com/reference/builder/#workdir">working directory</a> in your image for any command to be run.<br> </td> 
     </tr> 
     <tr> 
-     <td> <a href="https://cloud66-help.helpscoutdocs.com/article/153-service-life-cycle-management#pre_stop_command">pre_stop_command</a> </td> 
+     <td> <a href="/maestro/tutorials/service-lifecycle-management.html#pre_stop">pre_stop_command</a> </td> 
      <td> This hook is called immediately before a container is terminated. <span style="background-color: yellow"><strong>Note: </strong>Only applies to container version 2 stacks (Kubernetes)</span> </td> 
     </tr> 
     <tr> 
-     <td> <a href="https://cloud66-help.helpscoutdocs.com/article/153-service-life-cycle-management#post_start_command">post_start_command</a> </td> 
+     <td> <a href="/maestro/tutorials/service-lifecycle-management.html#pre_start">post_start_command</a> </td> 
      <td> This hook executes immediately after a container is created. <span style="background-color: yellow"><strong>Note: </strong>Only applies to container version 2 stacks (Kubernetes)</span> </td> 
     </tr> 
    </tbody> 
