@@ -14,6 +14,7 @@
     padding: 1em;
     color: #efef8f;
     margin: 1.3em 0;
+    overflow: auto;
 }
 .terminal kbd {
     background: #3F3F3F;
