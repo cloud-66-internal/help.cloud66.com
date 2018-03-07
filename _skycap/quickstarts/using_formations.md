@@ -251,10 +251,10 @@ $ cx snapshots render --stack 'ACME App' --snapshot 'sn-xopis-vakad-midin-gigal-
 <p>
 	Formations are an extremely powerful tool to manage the flow of configuration files into Kubernetes. Here are some of their features:
 	<ul>
-		<li><a href="/skycap/concepts/what-are-formations">Formations as an infrastucture time machine</a></li>
+		<li><a href="/skycap/concepts/what-are-formations.html">Formations as an infrastucture time machine</a></li>
 		<li>Fine grained access control and permissions for each Formation and every Stencil for your team members</li>
-		<li>Ability to setup private <a href="/skycap/concepts/what-are-formations">Base Templates</a> for your team</li>
-		<li>Powerful and very simple <a href="/skycap/references/stencil_placeholders">Stencil placeholders syntax</a></li>
+		<li>Ability to setup private <a href="/skycap/concepts/what-are-formations.html">Base Templates</a> for your team</li>
+		<li>Powerful and very simple <a href="/skycap/references/stencil_placeholders.html">Stencil placeholders syntax</a></li>
 		<li>Bulk import of your environment variables and secrets into Stencils</li>
 	</ul>
 </p>
