@@ -151,7 +151,7 @@ type: kubernetes.io/dockerconfigjson
 </p>
 
 <div class="notice">
-	<p>You can see a full list of all Stencil functions <a href="/skycap/stencil-functions">here</a>.</p>
+	<p>You can see a full list of all Stencil functions <a href="/skycap/references/stencil_placeholders.html">here</a>.</p>
 </div>
 
 <p>
