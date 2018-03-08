@@ -32,7 +32,11 @@
         var search = instantsearch({
             appId: 'TXUI53WBEH',
             apiKey: 'abdf284bf870bdd1beff87179eadcb07',
+            {% if jekyll.environment == "production" %}
             indexName: 'help',
+            {% else %}
+            indexName: 'help_tmp',
+            {% endif %}
             urlSync: true
         });
 
