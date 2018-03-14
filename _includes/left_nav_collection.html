@@ -16,6 +16,7 @@
             {% assign databases = include.collection | where:"categories","how-to-guides/databases" | sort: "order" %}
             {% assign security = include.collection | where:"categories","how-to-guides/security" | sort: "order" %}
             {% assign addins = include.collection | where:"categories","how-to-guides/add-ins" | sort: "order" %}
+            {% assign general = include.collection | where:"categories","how-to-guides/dashboard" | sort: "order" %}
 
             <li><h3><a href="/{{product}}/how-to-guides">How-to Guides</a></h3></li>
             {% include left_nav_list.html section=deployments current=page %}
@@ -27,6 +28,8 @@
             {% include left_nav_list.html section=security current=page %}
             <li>&mdash;</li>
             {% include left_nav_list.html section=addins current=page %}
+            <li>&mdash;</li>
+            {% include left_nav_list.html section=general current=page %}
         </ul>
 
         <ul class="menu-root">

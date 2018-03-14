@@ -708,7 +708,7 @@ production:
             custom_log_files: ["/tmp/mylog/*/*.log"]
 ```
 
-For more information about **LiveLogs** and additional examples, please see the [LiveLogs help page](/{{page.collection}}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html).
+For more information about **LiveLogs** and additional examples, please see the [LiveLogs help page]({% if page.collection == 'skycap' %}/maestro/how-to-guides/deployment/shells/setting-up-custom-livelogs.html{%else%}/{{page.collection}}//how-to-guides/deployment/shells/setting-up-custom-livelogs.html{%endif%}).
 
 
 ## Test experimental features
