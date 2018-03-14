@@ -37,10 +37,10 @@ Once the new stack is created, you can migrate data from your old stack to your 
 {% if page.collection == 'rails' %}
 <h2 id="migrations">Control your Rails database migrations</h2>
 
-Cloud 66 chooses a server to perform the migrations - all other servers will wait until the migrations are finished before continuing with deployment. You can see which server performs the migrations in the Stack Information page, and change it using the `c66.migrations.run` [reserved tag](/{{page.collection/references/reserved-tags.html).
+Cloud 66 chooses a server to perform the migrations - all other servers will wait until the migrations are finished before continuing with deployment. You can see which server performs the migrations in the Stack Information page, and change it using the `c66.migrations.run` [reserved tag](/rails/references/reserved-tags.html).
 
-You can control your Rails database migrations by setting `run.deploy.command` option through Stack settings via [Toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) which gives you the option of running migrations or not.
-
+You can control your Rails database migrations by setting `run.deploy.command` option through Stack settings via 
+[Toolbelt](/rails/quickstarts/using-cloud66-toolbelt.html) which gives you the option of running migrations or not.
 
 <pre class="prettyprint">
 $ cx settings set -s my_stack run.deploy.command true
