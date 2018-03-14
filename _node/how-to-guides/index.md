@@ -36,4 +36,11 @@ permalink: /:collection/:categories/index.html
     {% include list_articles.html section=section %}
     
     </ul>
+
+    <h2></h2>
+    <ul>
+    {% assign section = site.maestro | where:"categories","how-to-guides/dashboard" | sort: "order" %}
+    {% include list_articles.html section=section %}
+    
+    </ul>
 </div><!--/.Toc-->
