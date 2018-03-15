@@ -1,6 +1,6 @@
 
 <h2 id="about">About configuring HAProxy</h2>
-[HAProxy CustomConfig](http://help.cloud66.com/web-server/haproxy) allows you to configure your load balancer through the comfort of your browser. In addition to the settings described below, you could also refer to the [HAProxy documentation](http://haproxy.1wt.eu/download/1.3/doc/haproxy-en.txt) for more information about configurations.
+[HAProxy CustomConfig](/{{page.collection}}/tutorials/haproxy.html) allows you to configure your load balancer through the comfort of your browser. In addition to the settings described below, you could also refer to the [HAProxy documentation](http://haproxy.1wt.eu/download/1.3/doc/haproxy-en.txt) for more information about configurations.
 
 <h2 id="view">View HAProxy stats</h2>
 While on your stack detail page, click on the load balancer add-in to login to your HAProxy stats page. Once logged in, you will see a variety of statistics for your load balancer, and any potential issues.
