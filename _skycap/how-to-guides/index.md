@@ -9,7 +9,7 @@ permalink: /:collection/:categories/index.html
 ---
 
 <div class="Toc Toc--howto">
-    <h2>Deploying Your Applications</h2>
+    <h2>Building Your Applications</h2>
     <ul>
     {% assign section = site.skycap | where:"categories","how-to-guides/building" | sort: "order" %}
     {% include list_articles.html section=section %}
