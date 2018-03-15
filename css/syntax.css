@@ -210,6 +210,7 @@ div.highlight pre.highlight {
   border: 0 !important;
   border-radius: 6px;
   padding: 2em !important;
+  overflow: auto;
 }
 
 .pln {
