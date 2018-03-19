@@ -26,7 +26,7 @@ At any time, you can use a load balancer and scale up your servers to have more 
 
 ELB (Amazon) doesn't support WebSocket traffic.
 
-Learn more about [Cloud 66 HAProxy and WebSocket](/{{page.collection}}/how-to-guides/deployment/shells/haproxy-for-websocket.html) setup.
+Learn more about [Cloud 66 HAProxy and WebSocket]({% if page.collection == 'skycap' %}/maestro/how-to-guides/deployment/shells/haproxy-for-websocket.html{%else%}/{{page.collection}}/how-to-guides/deployment/shells/haproxy-for-websocket.html{%endif%}) setup.
 
 **Linode** alternative HTTP ports 8080 and 8443 are opened on NodeBalancers and can be used for WebSockets.
 
