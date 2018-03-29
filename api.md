@@ -222,53 +222,99 @@ Many requests in the Cloud 66 API rely on the Stack UID value, an alphanumeric s
 ### Amazon Web Services
 | Instance size | Value |
 | ------------- | ------------ |
+| Compute Optimized | cc2.8xlarge |
+| Compute Optimized | c1.medium |
+| Compute Optimized | c3.large |
+| Compute Optimized | c3.xlarge |
+| Compute Optimized | c3.2xlarge |
+| Compute Optimized | c3.4xlarge |
+| Compute Optimized | c3.8xlarge |
+| Compute Optimized | c4.large |
+| Compute Optimized | c4.xlarge |
+| Compute Optimized | c4.2xlarge |
+| Compute Optimized | c4.4xlarge |
+| Compute Optimized | c4.8xlarge |
+| Compute Optimized | c5.large |
+| Compute Optimized | c5.xlarge |
+| Compute Optimized | c5.2xlarge |
+| Compute Optimized | c5.4xlarge |
+| Compute Optimized | c5.9xlarge |
+| Compute Optimized | c5.18xlarge |
+| Compute Optimized | c1.xlarge |
+| GPU instance | g2.8xlarge |
+| GPU instance | cg1.4xlarge |
+| GPU instance | g2.2xlarge |
+| General Purpose | m4.4xlarge |
+| General Purpose | m1.small |
+| General Purpose | m1.medium |
+| General Purpose | m1.large |
+| General Purpose | m1.xlarge |
+| General Purpose | m3.medium |
+| General Purpose | m3.large |
+| General Purpose | m3.xlarge |
+| General Purpose | m3.2xlarge |
+| General Purpose | m4.large |
+| General Purpose | m4.xlarge |
+| General Purpose | m4.2xlarge |
+| General Purpose | m4.10xlarge |
+| General Purpose | m4.16xlarge |
+| General Purpose | m5.large |
+| General Purpose | m5.xlarge |
+| General Purpose | m5.2xlarge |
+| General Purpose | m5.4xlarge |
+| General Purpose | m5.12xlarge |
+| General Purpose | m5.24xlarge |
+| General Purpose | t2.nano |
+| General Purpose | t2.micro |
+| General Purpose | t2.small |
+| General Purpose | t2.medium |
+| General Purpose | t2.large |
+| General Purpose | t2.xlarge |
+| General Purpose | t2.2xlarge |
+| Memory Intensive | r4.16xlarge |
+| Memory Intensive | r4.large |
+| Memory Intensive | r4.xlarge |
+| Memory Intensive | r4.2xlarge |
+| Memory Intensive | r4.4xlarge |
+| Memory Intensive | r4.8xlarge |
+| Memory Optimized | x1e.xlarge |
+| Memory Optimized | cr1.8xlarge |
+| Memory Optimized | x1.32xlarge |
+| Memory Optimized | m2.4xlarge |
+| Memory Optimized | x1e.2xlarge |
+| Memory Optimized | x1e.4xlarge |
+| Memory Optimized | x1e.8xlarge |
+| Memory Optimized | x1e.16xlarge |
+| Memory Optimized | x1e.32xlarge |
+| Memory Optimized | x1.16xlarge |
+| Memory Optimized | r3.large |
+| Memory Optimized | r3.xlarge |
+| Memory Optimized | r3.2xlarge |
+| Memory Optimized | r3.4xlarge |
+| Memory Optimized | r3.8xlarge |
+| Memory Optimized | m2.xlarge |
+| Memory Optimized | m2.2xlarge |
 | Micro instance | t1.micro |
-| General purpose | t2.micro |
-| General purpose | t2.small |
-| General purpose | t2.medium |
-| General purpose | m1.small |
-| General purpose | m1.medium |
-| General purpose | m1.large |
-| General purpose | m1.xlarge |
-| General purpose | m3.medium |
-| General purpose | m3.large |
-| General purpose | m3.xlarge |
-| General purpose | m3.2xlarge |
-| General purpose | m4.large |
-| General purpose | m4.xlarge |
-| General purpose | m4.2xlarge |
-| General purpose | m4.4xlarge |
-| General purpose | m4.10xlarge |
-| Compute optimized | c1.medium |
-| Compute optimized | c1.xlarge |
-| Compute optimized | c3.large |
-| Compute optimized | c3.xlarge |
-| Compute optimized | c3.2xlarge |
-| Compute optimized | c3.4xlarge |
-| Compute optimized | c3.8xlarge |
-| Compute optimized | cc2.8xlarge |
-| Compute optimized | c4.large |
-| Compute optimized | c4.xlarge |
-| Compute optimized | c4.2xlarge |
-| Compute optimized | c4.4xlarge |
-| Compute optimized | c4.8xlarge |
-| Memory optimized | m2.xlarge |
-| Memory optimized | m2.2xlarge |
-| Memory optimized | m2.4xlarge |
-| Memory optimized | cr1.8xlarge |
-| Memory optimized | r3.large |
-| Memory optimized | r3.xlarge |
-| Memory optimized | r3.2xlarge |
-| Memory optimized | r3.4xlarge |
-| Memory optimized | r3.8xlarge |
-| Storage optimized | hi1.4xlarge |
-| Storage optimized | hs1.8xlarge |
-| Storage optimized | i2.xlarge |
-| Storage optimized | i2.2xlarge |
-| Storage optimized | i2.4xlarge |
-| Storage optimized | i2.8xlarge |
-| GPU instances | cg1.4xlarge |
-| GPU instances | g2.2xlarge |
+| Storage Optimized | i2.xlarge |
+| Storage Optimized | i2.2xlarge |
+| Storage Optimized | i2.4xlarge |
+| Storage Optimized | i2.8xlarge |
+| Storage Optimized | i3.large |
+| Storage Optimized | i3.xlarge |
+| Storage Optimized | i3.2xlarge |
+| Storage Optimized | i3.4xlarge |
+| Storage Optimized | i3.8xlarge |
+| Storage Optimized | i3.16xlarge |
+| Storage Optimized | h1.2xlarge |
+| Storage Optimized | h1.4xlarge |
+| Storage Optimized | h1.8xlarge |
+| Storage Optimized | h1.16xlarge |
+| Storage Optimized | d2.4xlarge |
+| Storage Optimized | d2.8xlarge |
+| Storage Optimized | d2.2xlarge |
+| Storage Optimized | d2.xlarge |
+| Storage Optimized | hs1.8xlarge |
+| Storage Optimized | hi1.4xlarge |
 
 ### Azure
 | Instance size | Value |
@@ -295,37 +341,64 @@ Many requests in the Cloud 66 API rely on the Stack UID value, an alphanumeric s
 ### Digital Ocean
 | Instance size | Value |
 | --------- | --------- |
-| 512MB - 1 CPU (Standard) | 512mb |
-| 1GB - 1 CPU (Standard) | 1gb |
-| 2GB - 2 CPU (Standard) | 2gb |
-| 4GB - 2 CPU (Standard) | 4gb |
-| 8GB - 4 CPU (Standard) | 8gb |
-| 16GB - 8 CPU (Standard) | 16gb |
-| 32GB - 12 CPU (Standard) | 32gb |
-| 48GB - 16 CPU (Standard) | 48gb |
-| 64GB - 20 CPU (Standard) | 64gb |
-| 16GB - 2 CPU (High memory) | m-16gb |
-| 32GB - 4 CPU (High memory) | m-32gb |
-| 64GB - 8 CPU (High memory) | m-64gb |
-| 128GB - 16 CPU (High memory) | m-128gb |
-| 224GB - 32 CPU (High memory | m-224gb |
+| Standard Droplet - 1 vCPUs - 1,024MB RAM - 25GB SSD - 1TB Transfer | s-1vcpu-1gb |
+| Standard Droplet - 1 vCPUs - 2,048MB RAM - 50GB SSD - 2TB Transfer | s-1vcpu-2gb |
+| Standard Droplet - 1 vCPUs - 3,072MB RAM - 60GB SSD - 3TB Transfer | s-1vcpu-3gb |
+| Standard Droplet - 2 vCPUs - 2,048MB RAM - 60GB SSD - 3TB Transfer | s-2vcpu-2gb |
+| Standard Droplet - 2 vCPUs - 4,096MB RAM - 80GB SSD - 4TB Transfer | s-2vcpu-4gb |
+| Optimized Droplet - 2 vCPUs - 4,096MB RAM - 25GB SSD - 4TB Transfer | c-2 |
+| Standard Droplet - 3 vCPUs - 1,024MB RAM - 60GB SSD - 3TB Transfer | s-3vcpu-1gb |
+| Standard Droplet - 4 vCPUs - 8,192MB RAM - 160GB SSD - 5TB Transfer | s-4vcpu-8gb |
+| Optimized Droplet - 4 vCPUs - 8,192MB RAM - 50GB SSD - 5TB Transfer | c-4 |
+| Standard Droplet - 6 vCPUs - 16,384MB RAM - 320GB SSD - 6TB Transfer | s-6vcpu-16gb |
+| Optimized Droplet - 8 vCPUs - 16,384MB RAM - 100GB SSD - 6TB Transfer | c-8 |
+| Standard Droplet - 8 vCPUs - 32,768MB RAM - 640GB SSD - 7TB Transfer | s-8vcpu-32gb |
+| Standard Droplet - 12 vCPUs - 49,152MB RAM - 960GB SSD - 8TB Transfer | s-12vcpu-48gb |
+| Optimized Droplet - 16 vCPUs - 32,768MB RAM - 200GB SSD - 7TB Transfer | c-16 |
+| Standard Droplet - 16 vCPUs - 65,536MB RAM - 1,280GB SSD - 9TB Transfer | s-16vcpu-64gb |
+| Standard Droplet - 20 vCPUs - 98,304MB RAM - 1,920GB SSD - 10TB Transfer | s-20vcpu-96gb |
+| Standard Droplet - 24 vCPUs - 131,072MB RAM - 2,560GB SSD - 11TB Transfer | s-24vcpu-128gb |
+| Optimized Droplet - 32 vCPUs - 65,536MB RAM - 400GB SSD - 9TB Transfer | c-32 |
+| Standard Droplet - 32 vCPUs - 196,608MB RAM - 3,840GB SSD - 12TB Transfer | s-32vcpu-192gb |
+| Optimized Droplet - 48 vCPUs - 73,728MB RAM - 20GB SSD - 5TB Transfer | c-48 |
+| [LEGACY] 1 vCPUs - 512MB RAM - 20GB SSD - 1TB Transfer | 512mb |
+| [LEGACY] 1 vCPUs - 1,024MB RAM - 30GB SSD - 2TB Transfer | 1gb |
+| [LEGACY] 2 vCPUs - 2,048MB RAM - 40GB SSD - 3TB Transfer | 2gb |
+| [LEGACY] 2 vCPUs - 4,096MB RAM - 60GB SSD - 4TB Transfer | 4gb |
+| [LEGACY] 4 vCPUs - 8,192MB RAM - 80GB SSD - 5TB Transfer | 8gb |
+| [LEGACY] 8 vCPUs - 16,384MB RAM - 160GB SSD - 6TB Transfer | 16gb |
+| [LEGACY] 12 vCPUs - 32,768MB RAM - 320GB SSD - 7TB Transfer | 32gb |
+| [LEGACY] 16 vCPUs - 49,152MB RAM - 480GB SSD - 8TB Transfer | 48gb |
+| [LEGACY] 20 vCPUs - 65,536MB RAM - 640GB SSD - 9TB Transfer | 64gb |
 
 ### Google Compute Engine
 | Instance size | Value |
 | ---------- | ---------- |
-| f1-micro | f1-micro |
-| g1-small | g1-small |
-| n1-highcpu-2 | n1-highcpu-2 |
-| n1-highcpu-4 | n1-highcpu-4 |
-| n1-highcpu-8 | n1-highcpu-8 |
-| n1-highmem-2 | n1-highmem-2 |
-| n1-highmem-4 | n1-highmem-4 |
-| n1-highmem-8 | n1-highmem-8 |
-| n1-standard-1 | n1-standard-1 |
-| n1-standard-2 | n1-standard-2 |
-| n1-standard-4 | n1-standard-4 |
-| n1-standard-8 | n1-standard-8 |
-| n1-standard-16 | n1-standard-16 |
+| 1 vCPU - 3,840MB RAM | n1-standard-1 |
+| 1 vCPU - 1,740MB RAM | g1-small |
+| 1 vCPU - 614MB RAM | f1-micro |
+| 2 vCPUs - 7,680MB RAM | n1-standard-2 |
+| 2 vCPUs - 1,843MB RAM | n1-highcpu-2 |
+| 2 vCPUs - 13,312MB RAM | n1-highmem-2 |
+| 4 vCPUs - 15,360MB RAM | n1-standard-4 |
+| 4 vCPUs - 3,686MB RAM | n1-highcpu-4 |
+| 4 vCPUs - 26,624MB RAM | n1-highmem-4 |
+| 8 vCPUs - 53,248MB RAM | n1-highmem-8 |
+| 8 vCPUs - 7,373MB RAM | n1-highcpu-8 |
+| 8 vCPUs - 30,720MB RAM | n1-standard-8 |
+| 16 vCPUs - 106,496MB RAM | n1-highmem-16 |
+| 16 vCPUs - 14,746MB RAM | n1-highcpu-16 |
+| 16 vCPUs - 61,440MB RAM | n1-standard-16 |
+| 32 vCPUs - 29,491MB RAM | n1-highcpu-32 |
+| 32 vCPUs - 122,880MB RAM | n1-standard-32 |
+| 32 vCPUs - 212,992MB RAM | n1-highmem-32 |
+| 64 vCPUs - 425,984MB RAM | n1-highmem-64 |
+| 64 vCPUs - 58,982MB RAM | n1-highcpu-64 |
+| 64 vCPUs - 245,760MB RAM | n1-standard-64 |
+| 96 vCPUs - 368,640MB RAM | n1-standard-96 |
+| 96 vCPUs - 1,468,006MB RAM | n1-megamem-96 |
+| 96 vCPUs - 638,976MB RAM | n1-highmem-96 |
+| 96 vCPUs - 88,474MB RAM | n1-highcpu-96 |
 
 ### Linode
 | Instance size | Value |
@@ -400,14 +473,21 @@ Many requests in the Cloud 66 API rely on the Stack UID value, an alphanumeric s
 ### Amazon Web Services
 | Region | Value |
 | ---------- | ---------- |
-| US East (Northern Virginia)| us-east-1 |
+| Asia Pacific (Mumbai) | ap-south-1 |
+| Asia Pacific (Seoul) | ap-northeast-2 |
+| Asia Pacific (Singapore) | ap-southeast-1 |
+| Asia Pacific (Sydney) | ap-southeast-2 |
+| Asia Pacific (Tokyo) | ap-northeast-1 |
+| Canada (Central) | ca-central-1 |
+| Europe (Dublin, Ireland) | eu-west-1 |
+| Europe (Frankfurt, Germany) | eu-central-1 |
+| Europe (London) | eu-west-2 |
+| Europe (Paris) | eu-west-3 |
+| South America (Sao Paulo, Brazil) | sa-east-1 |
+| US East (Northern Virginia) | us-east-1 |
+| US East (Ohio) | us-east-2 |
 | US West (Northern California) | us-west-1 |
 | US West (Oregon) | us-west-2 |
-| South America (Sao Paulo, Brazil) | sa-east-1 |
-| Europe (Dublin, Ireland) | eu-west-1 |
-| Asia Pacific (Singapore) | ap-southeast-1 |
-| Asia Pacific (Tokyo) | ap-northeast-1 |
-| Asia Pacific (Sydney) | ap-southeast-2 |
 
 ### Azure
 | Region | Value |
@@ -445,14 +525,28 @@ Many requests in the Cloud 66 API rely on the Stack UID value, an alphanumeric s
 ### Google Compute Engine
 | Zone | Value |
 | ---------- | ---------- |
-| us-central1-a | us-central1-a |
-| us-central1-b | us-central1-b |
-| us-central1-f | us-central1-f |
-| europe-west1-b | europe-west1-b |
-| europe-west1-c | europe-west1-c |
 | asia-east1-a | asia-east1-a |
 | asia-east1-b | asia-east1-b |
 | asia-east1-c | asia-east1-c |
+| asia-northeast1-a | asia-northeast1-a |
+| asia-northeast1-b | asia-northeast1-b |
+| asia-northeast1-c | asia-northeast1-c |
+| asia-southeast1-a | asia-southeast1-a |
+| asia-southeast1-b | asia-southeast1-b |
+| europe-west1-b | europe-west1-b |
+| europe-west1-c | europe-west1-c |
+| europe-west1-d | europe-west1-d |
+| us-central1-a | us-central1-a |
+| us-central1-b | us-central1-b |
+| us-central1-c | us-central1-c |
+| us-central1-f | us-central1-f |
+| us-east1-b | us-east1-b |
+| us-east1-c | us-east1-c |
+| us-east1-d | us-east1-d |
+| us-east4-a | us-east4-a |
+| us-west1-a | us-west1-a |
+| us-west1-b | us-west1-b |
+| us-west1-c | us-west1-c |
 
 ### Linode
 | Region | Value |
