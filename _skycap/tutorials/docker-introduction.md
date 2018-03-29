@@ -9,6 +9,5 @@ tags: ["operations", "docker"]
 permalink: /:collection/:path
 ---
 
-{% assign product = 'skycap' %}
 
 {% include tutorials/docker-introduction.md product = product %}

@@ -177,23 +177,6 @@ services:
 
 ```
 
-If you are using [Google Container Registry](https://cloud.google.com/container-registry/docs/) for your image repository, you will use the following URL format:
-
-```
-
-services:
-    <service_name>:
-        image: gcr.io/<project_id>/<namespace>/<image_name>:/<tag>
-
-```
-
-When you [specify the Google Container Registy as a Docker image repo](https://app.cloud66.com/image_repositories) you need choice `I'm using a different provider or my own custom repo` and use the following settings:
-
-*   Custom Repo provider URL = https://gcr.io
-*   Username for provider = oauth2accesstoken
-*   Password for provider = (output of the commmand `$ gcloud auth print-access-token`)
-*   Email address for provider = fake@fake.com
-
 
 ### Using Habitus for builds
 

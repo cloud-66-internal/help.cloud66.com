@@ -154,7 +154,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies the load balancing method for this service. Accepted values are: <em>roundrobin</em>, <em>sticky</em>, <em>closest</em>. Default value is <em>roundrobin</em> </td>
     </tr>
     <tr>
-     <td> <a href="/skycap/how-to-guides/deployment/shells/setting-up-custom-livelogs.html">log_folder</a> </td>
+     <td> <a href="/maestro/how-to-guides/deployment/shells/setting-up-custom-livelogs.html">log_folder</a> </td>
      <td> Folder your services logs to, mounted to <code>/var/log/containers/service</code> on the host filesystem. </td>
     </tr>
     <tr>

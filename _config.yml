@@ -47,7 +47,6 @@ plugins:
 
 algolia:
   application_id: 'TXUI53WBEH'
-  index_name:     'help'
   record_css_selector: 'p,ul'
   settings:
     attributesToSnippet: ['raw_html:100']
