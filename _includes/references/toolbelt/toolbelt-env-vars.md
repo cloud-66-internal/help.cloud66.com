@@ -22,6 +22,7 @@ $ cx env-vars list [-s <stack>] [--history] [environment_variables]
 |stack 					   |		—		| Name of the stack|
 |setting   				   | 	—			| Name of environment variable |
 |value					   | 	—			| Value for environment variable |
+{:.table}
 
 
 ### Example

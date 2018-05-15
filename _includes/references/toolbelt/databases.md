@@ -21,9 +21,10 @@ The server provided must have already been configured as a replication slave via
 Providing the database type is optional and is only necessary for shared servers where we can't automatically determine the target database type.
 
 
-### Important!
+<div class="notice-danger">
+  <h3>Important!</h3><p>This action could result in application downtime, it is advisable to choose a non-busy time to perform this action, and to place your stack in maintenance mode.</p>
+</div>
 
-This action could result in application downtime, it is advisable to choose a non-busy time to perform this action, and to place your stack in maintenance mode.
 
 The existing master and other slaves will need to be removed after this process as after this the new configuration will have only a single database. You will be able to configure replication from this again after that point.
 
@@ -39,6 +40,7 @@ In the case of any servers not being accessible during this time, those servers 
 |stack 					   |		—		|Name of your stack|
 |stack server name 	   | 	—		| Name of the replication slave server to re-synchronise with master|
 |database type (optional)	 	   |	—	| The Database type |
+{:.table}
 
 
 ### Example

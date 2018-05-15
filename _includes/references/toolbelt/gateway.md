@@ -23,6 +23,7 @@ $ cx --org <organization_name> gateways list [ --verbose]
 |address 	   | 	—		| Public address of the gateway. It could be the IP or DNS address|
 |username	 	   |	—	| The username which should be used to connect to gateway|
 |private-ip 	   |	—	| The private ip of the gateway.|
+{:.table}
 
 
 ### Example
@@ -51,6 +52,7 @@ $ cx --org <organization_name> gateways open --name <gateway name> --key <The pa
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| --:|
 |		name			   |		—		|Name of the gateway|
+{:.table}
 
 
 
@@ -79,6 +81,7 @@ $ cx --org <organization_name> gateways remove --name <gateway name>
 |		Parameter 		   |	Default		|    Description    |
 |--|:--:| -----:|
 |		name			   |		—		|Name of the gateway|
+{:.table}
 
 
 

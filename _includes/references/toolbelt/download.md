@@ -20,6 +20,7 @@ If you don't specify a target directory, the file will be downloaded to your cur
 |server name 	   | 	—		| Name of the server to access|
 |source file	   |	—	| The path to the file on your server |
 |target directory (optional)	   |	—	| Your local target path |
+{:.table}
 
 
 ### Example
