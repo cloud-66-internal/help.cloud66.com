@@ -21,6 +21,7 @@ $ cx lease [-s <stack>] [-f <from IP>] [-t <time to open>] [-p <port>]
 |t (optional)	 	   |	20 minutes	| Time to open for (max 240 minutes) |
 |p (optional)	 	   |	22	| Port to open |
 |e (optional)	 	   |	—	| Your stack environment |
+{:.table}
 
 
 ### Example

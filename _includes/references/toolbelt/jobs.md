@@ -21,6 +21,7 @@ $ cx jobs list [-s <stack>] --server <server name>|<server ip>|<server role> --s
 |stack 					   |		—		|Name of the stack | 
 |server name 	 		   | 	—		    | Name of the job to run|
 |arg (optional)	 		   |	—			| Parameters you would like to pass job ( [more info]() ) |
+{:.table}
 
 
 ### Examples

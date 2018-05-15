@@ -103,8 +103,6 @@ $ sudo bluepill <process_name> quit
 
 
 
-## Note
-
-Also remember that we configure the pill files to log to `<STACK_PATH>/log` folder.
-
-
+<div class="notice">
+  <h3>Note:</h3><p>Also remember that we configure the pill files to log to `<STACK_PATH>/log` folder.</p>
+</div>

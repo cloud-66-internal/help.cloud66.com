@@ -25,6 +25,7 @@ At least one of the optional server parameters are necessary in order to identif
 |server ip (optional)	 	   |	—	| IP of the server to access |
 |server role (optional)	 	   |	—	| Role of the server to access (eg. web) |
 |service (optional)	 	   |	—	| The service in which to run the command (Docker stacks only) |
+{:.table}
 
 
 ### Examples

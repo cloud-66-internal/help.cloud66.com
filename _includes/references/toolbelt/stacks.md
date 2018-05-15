@@ -21,6 +21,7 @@ $ cx stacks list [-e <environment>]
 |group (default web)		 	 			   	| Group of servers you wish to reboot (all, web, haproxy, db, mysql, redis, postgresql, mongodb) |
 |strategy		  	   	| Reboot in serial or parallel |
 |e (environment) (optional)		 | 	Full or partial environment name |
+{:.table}
 
 The group parameter specifies which group of servers you wish to reboot. Valid values are “all”, “web”, “haproxy”, “db”; DB specific values like “mysql” or “redis” for example are also supported. If this value is left unspecified, the default value of “web” will be used
 
@@ -58,6 +59,7 @@ $ cx stacks clear-caches [-s <stack>]
 |		Parameter 		   	|     Description    |
 || :|
 |stack 					   	| Name of your stack |
+{:.table}
 
  
  
@@ -97,6 +99,7 @@ $ cx stacks configure list [-s <stack>]
 |stack (optional) 	   	   	| 	Name of your stack, this can be omitted if the current directory is a stack directory |
 |f (file) (optional)	   	| File name, accepted values are service.yml and manifest.yml |
 |e (environment) (optional) | 	Full or partial environment name |
+{:.table}
 
 
 * * *
@@ -122,5 +125,5 @@ $ cx stacks help [<command>]
 |		Parameter 		   |   Description    |
 |--| ----:|
 |command 				   |The command you wish to see help pages for|
-
+{:.table}
 

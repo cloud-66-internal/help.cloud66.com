@@ -72,14 +72,14 @@ production:
 
 ```
 production:
-    docker:
-        configuration:
-            version: 1.12.0
-            weave_version: 1.0.3
-            vn_name: your_vn_name
-            root_disk_size: 100
-            root_disk_type: ssd
-            image_keep_count: 15
+  docker:
+     configuration:
+       version: 1.12.0
+       weave_version: 1.0.3
+       vn_name: your_vn_name
+       root_disk_size: 100
+       root_disk_type: ssd
+       image_keep_count: 15
 ```
 * * *
 
@@ -93,11 +93,11 @@ production:
 
 ```
 production:
-    elasticsearch:
-        configuration:
-            version: 0.90.7
-            root_disk_size: 100
-            root_disk_type: ssd
+  elasticsearch:
+    configuration:
+      version: 0.90.7
+      root_disk_size: 100
+      root_disk_type: ssd
 ```
 
 * * *
@@ -109,13 +109,16 @@ production:
 - **username** (_Optional_) Specify the username which should be used to connect to bastion server.
 
 
-## Note
-The gateway should be defined and open before you can use it in manifest.
+<div class="notice">
+  <h3>Note:</h3><p>The gateway should be defined and open before you can use it in manifest.</p>
+</div>
+
+
 ```
 production:
-	gateway:
-	    name: aws_bastion
-	    username: ec2-user
+  gateway:
+    name: aws_bastion
+	username: ec2-user
 ```
 
 
@@ -137,41 +140,39 @@ Available settings for a volume are:
 After you change the volume list, you need to redeploy your stack for new configuration be applied to your stack.
 
 
+<div class="notice">
+  <h3>Note:</h3><p>You can not change replica_count after GlusterFS added to your stack.</p>
+</div>
 
-## Note
+<div class="notice">
+  <h3>Note:</h3><p>You can not use glusterfs group or any of its servers in mount_targets.</p>
+</div>
 
-You can not change replica_count after GlusterFS added to your stack.
+<div class="notice-danger">
+  <h3>Note:</h3><p>Renaming a volume will delete volume and create a new one.</p>
+</div>
 
-
-## Note
-
-You can not use glusterfs group or any of its servers in mount_targets.
-
-
-## Note
-
-Renaming a volume will delete volume and create a new one.
 
 ```
 production:
-	glusterfs:
-		configuration:
-			version: 3.7
-			replica_count: 2
-			mount_targets: ['app','redis']
-			volumes:
-		  	- volume:
-				name: images-data
-				mount: "/mnt/images"
-				access_control:
-			  		read: ['web', 'api']
-			  		write: ['web']
-		  	- volume:
-				name: videos
-				mount: /mnt-data/videos
-				access_control:
-			  		read: ['web']
-			  		write: ['web']
+  glusterfs:
+    configuration:
+	  version: 3.7
+	  replica_count: 2
+	  mount_targets: ['app','redis']
+	  volumes:
+	  - volume:
+	    name: images-data
+		mount: "/mnt/images"
+		access_control:
+		  read: ['web', 'api']
+		  write: ['web']
+	  - volume:
+	    name: videos
+		mount: /mnt-data/videos
+		access_control:
+		  read: ['web']
+		  write: ['web']
 ```
 
 * * *
@@ -185,11 +186,11 @@ production:
 
 ```
 production:
-    memcached:
-        configuration:
-            memory: 1024
-            port: 11211
-            listen_ip: 127.0.0.1
+  memcached:
+    configuration:
+      memory: 1024
+      port: 11211
+      listen_ip: 127.0.0.1
 ```
 
 * * *
@@ -203,11 +204,11 @@ production:
 
 ```
 production:
-    mongodb:
-        configuration:
-            version: 2.4.8
-            root_disk_size: 100
-            root_disk_type: ssd
+  mongodb:
+    configuration:
+      version: 2.4.8
+      root_disk_size: 100
+      root_disk_type: ssd
 ```
 
 * * *
@@ -222,12 +223,12 @@ production:
 
 ```
 production:
-    mysql:
-        configuration:
-            version: 5.5
-            root_disk_size: 100
-            root_disk_type: ssd
-            engine: percona
+  mysql:
+    configuration:
+      version: 5.5
+      root_disk_size: 100
+      root_disk_type: ssd
+      engine: percona
 ```
 
 * * *
@@ -241,12 +242,12 @@ production:
 
 ```
 production:
-    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
-        configuration:
-            nginx:
-                cors: true
-                extra-build-arguments: "--add-module=/path/to/module"
-                perfect_forward_secrecy: true # deprecated
+  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+    configuration:
+      nginx:
+        cors: true
+        extra-build-arguments: "--add-module=/path/to/module"
+        perfect_forward_secrecy: true # deprecated
 ```
 
 ### CORS configuration
@@ -255,14 +256,14 @@ If required, you can also specify the allowed origin (as '\*' or a single origin
 
 ```
 production:
-    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
-        configuration:
-            nginx:
-                cors:
-                    origin: '*'
-                    methods: 'GET, OPTIONS'
-                    headers: 'Custom-Header, Another-Header'
-                    credentials: true
+  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+    configuration:
+      nginx:
+        cors:
+          origin: '*'
+          methods: 'GET, OPTIONS'
+          headers: 'Custom-Header, Another-Header'
+          credentials: true
 ```
 
 * * *
@@ -277,12 +278,12 @@ production:
 
 ```
 production:
-    postgresql:
-        configuration:
-            version: 9.3.4
-            postgis: true
-            root_disk_size: 100
-            root_disk_type: ssd
+  postgresql:
+    configuration:
+      version: 9.3.4
+      postgis: true
+      root_disk_size: 100
+      root_disk_type: ssd
 ```
 
 * * *
@@ -294,10 +295,10 @@ production:
 
 ```
 production:
-   postgresql:
-       configuration:
-            postgis:
-                version: 2.1.1
+  postgresql:
+    configuration:
+      postgis:
+        version: 2.1.1
 ```
 
 * * *
@@ -323,27 +324,29 @@ A Rails application type in the manifest file gives you fine control over things
      -  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git submodules from being pulled during a build. 
 
-<div class="notice notice-important">
-Important!
-In order to use vpc_id, you must provide subnet_id for all servers in your stack.
+<div class="notice notice-warning">
+<h3>Important!</h3>
+<p>In order to use a *vpc_id*, you must provide *subnet_id* for all servers in your stack.</p>
 </div>
+
 ```
 production:
-    rails:
-        configuration:
-            ruby_version: 2.2.0
-            asset_pipeline_precompile: true
-            do_initial_db_schema_load: false
-            reserved_server_memory: 0 #default value
-            passenger_process_memory: 200 #default value
-            locked_passenger_version: 4.0.59
-            activeprotect:
-                whitelist: 123.123.123.123,234.234.234.234
-            vpc_id: vpc-64872001
-            root_disk_size: 100
-            root_disk_type: ssd
-            nameservers: ['8.8.8.8', '8.8.4.4']
+  rails:
+    configuration:
+      ruby_version: 2.2.0
+      asset_pipeline_precompile: true
+      do_initial_db_schema_load: false
+      reserved_server_memory: 0 #default value
+      passenger_process_memory: 200 #default value
+      locked_passenger_version: 4.0.59
+      activeprotect:
+        whitelist: 123.123.123.123,234.234.234.234
+      vpc_id: vpc-64872001
+      root_disk_size: 100
+      root_disk_type: ssd
+      nameservers: ['8.8.8.8', '8.8.4.4']
 ```
+
 {% endif %}
 
 ### Redis
@@ -354,11 +357,11 @@ production:
 
 ```
 production:
-    redis:
-        configuration:
-            version: 2.6.10
-            root_disk_size: 100
-            root_disk_type: ssd
+  redis:
+    configuration:
+      version: 2.6.10
+      root_disk_size: 100
+      root_disk_type: ssd
 ```
 
 * * *
@@ -379,28 +382,28 @@ A rack application type in the manifest file gives you fine control over things 
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your stack.  
-     -  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
+     <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git  submodules  from being pulled during a build. 
 
-<div class="notice notice-important">
-Important!
-In order to use a vpc_id, you must provide subnet_id for all servers in your stack.
+<div class="notice-warning">
+<h3>Important!</h3><p>In order to use a *vpc_id*, you must provide *subnet_id* for all servers in your stack.</p>
 </div>
+
 ```
 production:
-    rack:
-        configuration:
-            ruby_version: 1.9.3
-            do_initial_db_schema_load: false
-            reserved_server_memory: 0 #default value
-            passenger_process_memory: 200 #default value
-            locked_passenger_version: 4.0.59
-            activeprotect:
-                whitelist: 123.123.123.123,234.234.234.234
-            vpc_id: vpc-64872001
-            root_disk_size: 100
-            root_disk_type: ssd
-            nameservers: ['8.8.8.8', '8.8.4.4']
+  rack:
+    configuration:
+      ruby_version: 1.9.3
+      do_initial_db_schema_load: false
+      reserved_server_memory: 0 #default value
+      passenger_process_memory: 200 #default value
+      locked_passenger_version: 4.0.59
+      activeprotect:
+        whitelist: 123.123.123.123,234.234.234.234
+      vpc_id: vpc-64872001
+      root_disk_size: 100
+      root_disk_type: ssd
+      nameservers: ['8.8.8.8', '8.8.4.4']
 ```
 
 ### Sinatra
@@ -424,9 +427,9 @@ Available settings:
 
 ```
 production:
-    load_balancer:
-        configuration:
-            httpchk: /
+  load_balancer:
+    configuration:
+      httpchk: /
 ```
 * * *
 
@@ -442,10 +445,10 @@ Available settings (refer to the [GCE documentation](https://cloud.google.com/co
 
 ```
 production:
-    load_balancer:
-        configuration:
-            httpchk: /
-            balance: CLIENT_IP_PROTO
+  load_balancer:
+    configuration:
+      httpchk: /
+      balance: CLIENT_IP_PROTO
 ```
 
 * * *
@@ -469,24 +472,24 @@ Configuration:
 
 ```
 production:
-    load_balancer:
-        servers:
-         - server:
-           unique_name: bananana
-           size: 1gb
-           region: ams2
-           vendor: digitalocean
-           key_name: Default
-        configuration:
-            httpchk: HEAD / HTTP/1.1\r\nHost:haproxy  #default value
-            balance: roundrobin #default value
-            errorfile_400: /etc/haproxy/errors/400.http
-            errorfile_403: /etc/haproxy/errors/403.http
-            errorfile_408: /etc/haproxy/errors/408.http
-            errorfile_500: /etc/haproxy/errors/500.http
-            errorfile_502: /etc/haproxy/errors/502.http
-            errorfile_503: /etc/haproxy/errors/503.http
-            errorfile_504: /etc/haproxy/errors/504.https
+  load_balancer:
+    servers:
+    - server:
+        unique_name: bananana
+        size: 1gb
+        region: ams2
+        vendor: digitalocean
+        key_name: Default
+    configuration:
+      httpchk: HEAD / HTTP/1.1\r\nHost:haproxy  #default value
+      balance: roundrobin #default value
+      errorfile_400: /etc/haproxy/errors/400.http
+      errorfile_403: /etc/haproxy/errors/403.http
+      errorfile_408: /etc/haproxy/errors/408.http
+      errorfile_500: /etc/haproxy/errors/500.http
+      errorfile_502: /etc/haproxy/errors/502.http
+      errorfile_503: /etc/haproxy/errors/503.http
+      errorfile_504: /etc/haproxy/errors/504.https
 ```
 * * *
 
@@ -502,10 +505,10 @@ Available settings (refer to the [Linode documentation](https://www.linode.com/d
 
 ```
 production:
-    load_balancer:
-        configuration:
-            httpchk: /
-            balance: leastconn
+  load_balancer:
+    configuration:
+      httpchk: /
+      balance: leastconn
 ```
 
 * * *
@@ -521,9 +524,9 @@ Available settings (refer to the [Rackspace documentation](http://docs.rackspace
 
 ```
 production:
-    load_balancer:
-        configuration:
-            balance: LEAST_CONNECTIONS
+  load_balancer:
+    configuration:
+      balance: LEAST_CONNECTIONS
 ```
 
 * * *
@@ -537,9 +540,9 @@ Use a manifest file to customize the CloudA load balancer deployed by Cloud 66. 
 
 ```
 production:
-    load_balancer:
-        configuration:
-            balance: ROUND_ROBIN
+  load_balancer:
+    configuration:
+      balance: ROUND_ROBIN
 ```
 * * *
 
@@ -552,10 +555,10 @@ Here is an example of a server definition:
 
 ```
 production:
-    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
-        servers:
-          - server:
-            unique_name: app
+  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+    servers:
+    - server:
+      unique_name: app
 ```
 
 These are the parameters that the _server_ section can take:
@@ -571,26 +574,25 @@ These are the parameters that the _server_ section can take:
 - **availability_zone** (_Optional, AWS EC2 only_): Availability zone of the server instance in AWS EC2 region.
 
 
-<div class="notice notice-important">
-Important!
-
-Only a single cloud vendor and region is supported for servers in a stack.
+<div class="notice notice-warning">
+<h3>Important!</h3>
+<p>Only a single cloud vendor and region is supported for servers in a stack.</p>
 </div>
 
 ```
 production:
-    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
-      servers:
-        server:
-            unique_name: app
-            vendor: aws
-            key_name: Default
-            region: us-east-1
-            size: m3.medium
-            root_disk_size: 100
-            root_disk_type: ssd
-            subnet_id: subnet-40000000
-            availability_zone: us-east-1c
+  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+    servers:
+      server:
+        unique_name: app
+        vendor: aws
+        key_name: Default
+        region: us-east-1
+        size: m3.medium
+        root_disk_size: 100
+        root_disk_type: ssd
+        subnet_id: subnet-40000000
+        availability_zone: us-east-1c
 ```
 
 ### Deploy to your own server
@@ -599,10 +601,10 @@ production:
 
 ```
 production:
-    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
-        server:
-            unique_name: frontend
-            address: 123.123.123.123
+  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+    server:
+      unique_name: frontend
+      address: 123.123.123.123
 ```
 
 ### Shared Servers
@@ -613,9 +615,9 @@ Each shared server definition specifies the name of another server definition in
 
 {% highlight yaml %}
 production:
-    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
-        server:
-            same_as: *another_existing_servers_unique_name*
+  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+    server:
+      same_as: *another_existing_servers_unique_name*
 {% endhighlight %}
 
 
@@ -627,16 +629,15 @@ External server definitions specify that the application is hosted on a server e
 
 ```
 production:
-    mysql:
-        server: external
+  mysql:
+    server: external
 ```
 
 
 
 
-<div class="notice notice-important">
-Important!
-
+<div class="notice notice-warning">
+<h3>Important!</h3>
 You are <b>required</b> to specify a <a href="#which-server">server</a> for application types, whereas configurations are <b>optional</b>.
 </div>
 
@@ -649,11 +650,11 @@ Here is an example:
 
 ```
 production:
-    environment_variables:
-        SOME_VARIABLE: value
-        ANOTHER_ONE: another_value
-        THIRD_ONE: AUTO_GENERATE
-        LONG_ONE: AUTO_GENERATE_15
+  environment_variables:
+    SOME_VARIABLE: value
+    ANOTHER_ONE: another_value
+    THIRD_ONE: AUTO_GENERATE
+    LONG_ONE: AUTO_GENERATE_15
 ```
 
 If you need to auto generate a value, you can use the `AUTO_GENERATE` keyword. It generates a 10 character long random string unless you specify the length after it: `AUTO_GENERATE_15` which generates a 15 character random string.
@@ -703,9 +704,9 @@ Each application type supports the additional partial configuration to add custo
 
 ```
 production:
-    {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
-        configuration:
-            custom_log_files: ["/tmp/mylog/*/*.log"]
+  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+    configuration:
+      custom_log_files: ["/tmp/mylog/*/*.log"]
 ```
 
 For more information about **LiveLogs** and additional examples, please see the [LiveLogs help page]({% if page.collection == 'skycap' %}/maestro/how-to-guides/deployment/shells/setting-up-custom-livelogs.html{%else%}/{{page.collection}}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html{%endif%}).
@@ -717,8 +718,8 @@ You can use some features that are still in beta by adding them to _experiments_
 
 ```
 production:
-    experiments:
-        docker_storage: overlay
+  experiments:
+    docker_storage: overlay
 ```
 
 These are the parameters that the _experiments_ section currently accepts:

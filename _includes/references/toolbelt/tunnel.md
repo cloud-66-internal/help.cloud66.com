@@ -28,6 +28,7 @@ Also, you need to specify at least the `remote` port. If `local` is missing, `re
 |server role (optional)	   | 	—			| Role of the server to access (eg. web) |
 |remote 					   |		—		| Remote port for the tunnel |
 |local (optional)					   |		—		| Local port for the tunnel. If not specified, remote + 1 is used. |
+{:.table}
 
 
 ### Examples
