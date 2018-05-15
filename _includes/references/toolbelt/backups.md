@@ -2,9 +2,9 @@
 
 The following commands help you manage your backups, such as listing, downloading and initiating backups on your stacks.
 
-
-Please note that this only applies to managed backups and not the unmanaged ones.
-
+<div class="notice">
+  <h3>Note:</h3><p>This only applies to managed backups and not the unmanaged ones.</p>
+</div>
 
 
 ## List your backups
@@ -32,6 +32,7 @@ $ cx backups list [-s <stack>] [-l] [<db type>]
 | db type (optional)|The type of DB you'd like to list backups for (eg. mysql)|
 | l (optional) 	  	|Returns the latest successful backup|
 | e (optional) 		|Your stack environment|
+{:.table}
 
 
 ### Example
@@ -70,6 +71,7 @@ $ cx backups download [-s <stack>] [-d <download directory>] <backup id>
 |gzip (optional)		   |	true		|Compress your backups with gzip|
 |exclude-tables (optional) |	—			|Tables that must be excluded from the backup|
 |run-on-replica (optional) |	true		|Run backup task on replica server if available|
+{:.table}
 
 
 ### Example
