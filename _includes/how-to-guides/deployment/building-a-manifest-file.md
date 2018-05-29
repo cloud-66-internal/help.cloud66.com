@@ -59,27 +59,27 @@ Next, select which application you would like to specify settings for. You can c
 
 ```
 production:
-    docker:
-        configuration:
-            version: 1.7.0
-            weave_version: 1.0.3
-            vpc_id: vpc-64872001
-            root_disk_size: 100
-            root_disk_type: ssd
-            image_keep_count: 5
-            nameservers: ['8.8.8.8', '8.8.4.4']
+  docker:
+    configuration:
+      version: 1.7.0
+      weave_version: 1.0.3
+      vpc_id: vpc-64872001
+      root_disk_size: 100
+      root_disk_type: ssd
+      image_keep_count: 5
+      nameservers: ['8.8.8.8', '8.8.4.4']
 ```
 
 ```
 production:
   docker:
-     configuration:
-       version: 1.12.0
-       weave_version: 1.0.3
-       vn_name: your_vn_name
-       root_disk_size: 100
-       root_disk_type: ssd
-       image_keep_count: 15
+    configuration:
+      version: 1.12.0
+      weave_version: 1.0.3
+      vn_name: your_vn_name
+      root_disk_size: 100
+      root_disk_type: ssd
+      image_keep_count: 15
 ```
 * * *
 
@@ -242,7 +242,7 @@ production:
 
 ```
 production:
-  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
     configuration:
       nginx:
         cors: true
@@ -256,7 +256,7 @@ If required, you can also specify the allowed origin (as '\*' or a single origin
 
 ```
 production:
-  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
     configuration:
       nginx:
         cors:
@@ -555,7 +555,7 @@ Here is an example of a server definition:
 
 ```
 production:
-  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
     servers:
     - server:
       unique_name: app
@@ -581,7 +581,7 @@ These are the parameters that the _server_ section can take:
 
 ```
 production:
-  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
     servers:
       server:
         unique_name: app
@@ -601,7 +601,7 @@ production:
 
 ```
 production:
-  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
     server:
       unique_name: frontend
       address: 123.123.123.123
@@ -615,7 +615,7 @@ Each shared server definition specifies the name of another server definition in
 
 {% highlight yaml %}
 production:
-  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
     server:
       same_as: *another_existing_servers_unique_name*
 {% endhighlight %}
@@ -704,7 +704,7 @@ Each application type supports the additional partial configuration to add custo
 
 ```
 production:
-  {% if include.product != 'legacy_docker' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
     configuration:
       custom_log_files: ["/tmp/mylog/*/*.log"]
 ```
