@@ -30,14 +30,18 @@ You can also scale down your servers. From your stack detail page, click on the 
   <h3>Note:</h3><p>Your primary Kubernetes server cannot be scaled down, because this would leave you without a server.</p>
 </div>
 
+<<<<<<< Updated upstream
+=======
 ## Scaling services
 
 You can scale your services horizontally across your Kubernetes cluster by clicking the `+` and `-` buttons infront of each service to increase or decrease the number of running containers/pods.
 
-<div class="notice">
+ <div class="notice">
  	<h3>Note:</h3><p>
 	The container/pod distribution is handled by Kuberntes controller and as a result it is <strong>not guranteed</strong> that your container/pod is  <strong>distributed evenly</strong> .i.e you may sometimes find one server with <strong>multiple</strong> of the same containers/pods and one with <strong>zero</strong> container/pod of the same service.</p>
 </div>	
+
+>>>>>>> Stashed changes
 
 ## Database servers
 
