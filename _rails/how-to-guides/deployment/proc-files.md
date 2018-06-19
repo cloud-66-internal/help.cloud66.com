@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "How to run ackground processes"
+title:  "How to run background processes"
 categories: how-to-guides/deployment
 legacy: false
 lead: Cloud 66 supports the widely used Procfile format files
