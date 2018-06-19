@@ -18,8 +18,8 @@ In order to deal with the upgrades you have a few options:
 <li>Update the packages indirectly through scaling up a new server, and then dropping the old one (the new server will always get the latest packages installed on it)</li>
 </ol>
 <div class="notice">
-<h3>Tip:</h3>  
- <p>Some package updates (and security ones) require server-reboot. So again by scaling up we restart your new servers automatically to ensure everything is neat and clean! Alternatively you can reboot your servers manually or via the toolbelt should you wish!</p></div>
+<h3>Tip:</h3><p>Some package updates (and security ones) require server-reboot. So again by scaling up we restart your new servers automatically to ensure everything is neat and clean! Alternatively you can reboot your servers manually or via the toolbelt should you wish!</p>
+</div>
 
 <h2 id="types">Upgrade package types</h2>
 <h3 id="updates">Security updates</h3>
@@ -38,7 +38,7 @@ There are generally three ways to upgrade Ruby on your stack, in decreasing magn
 <p>Arguably the best option to use when upgrading Ruby is to scale up a new server within the same stack, and simply drop the old one. You can specify your new Ruby version in a <a href="/rails/how-to-guides/deployment/building-a-manifest-file.html"> manifest file </a>. Once you've pushed this change and deployed, scale up a new web server, which will use this version of Ruby. The previous server would remain on the old version of Ruby.</p>
 
 <div class="notice notice-danger">
-    <p>Make sure you redeploy before you scale up, otherwise the new manifest will not be taken to account.</p>
+ <p>Make sure you redeploy before you scale up, otherwise the new manifest will not be taken to account.</p>
 </div>
 
 There are a couple of small caveats to be aware of though - after you've done this process, you'll have servers in your stack on different Ruby versions. If you were to enforce a Ruby version in your Gemfile, this would mean that your application would stop working on either one of the servers (depending on which version you chose in your Gemfile).
