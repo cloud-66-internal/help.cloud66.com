@@ -32,32 +32,26 @@
         </li>
     </ul>
 
-    <form id="search_box" class="Header-search">
-    <!--<input type="text" id="search-query-nav" class="search" placeholder="Search Documentation">-->
+    <form id="Search_box" class="Header-search"  action="/searchResults.html">
+
+        {% if page.collection %}
+
+        <input type="text" id="search-query-home" name="q" class="search search--lrg u-fullWidth" placeholder="Search the Docs" />
+
+        {% if jekyll.environment == "production" %}
+        <input type="hidden" name="idx" value="help" />
+        {% else %}
+        <input type="hidden" name="idx" value="help_tmp" />
+        {% endif %}
+
+        <input type="hidden" name="product" value={{page.collection}} />
+
+        {% endif %}
+
     </form>
     <!--<div id="hits" class="hit">-->
     <div id="hits" class="SearchResultsDropDown">
     <!-- Hits widget will appear here -->
     </div>
-
-
-<!--
-<style>
-#hits{
-    border-bottom: 1px solid #e0e0e0;
-    padding:2px;
-}
-.hit{
-    visibility: visible;
-    position: absolute;
-    top: 80px;
-    width: 20%;
-    height: 500px;
-    overflow: scroll;
-    left:70%;
-    border: 1px solid #e0e0e0;
-    border-radius:5px;
-    padding: 5px;
-}
-</style>-->
+    
 </header>
