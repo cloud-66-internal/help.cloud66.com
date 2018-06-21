@@ -26,46 +26,6 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.js"></script>
-
-    <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-        var search = instantsearch({
-            appId: 'TXUI53WBEH',
-            apiKey: 'abdf284bf870bdd1beff87179eadcb07',
-            {% if jekyll.environment == "production" %}
-            indexName: 'help',
-            {% else %}
-            indexName: 'help_tmp',
-            {% endif %}
-            urlSync: true
-        });
-
-        // initialize SearchBox
-        search.addWidget(
-            instantsearch.widgets.searchBox({
-                container: '#search-form',
-                placeholder: 'Search the Docs'
-            })
-        );
-
-        {% raw %}
-        // initialize hits widget
-           search.addWidget(
-            instantsearch.widgets.hits({
-              container: '#js_hits_result',
-              templates: {
-                empty: 'No results',
-                item: '<h6><a href="{{ url }}.html">{{ title }}</a></h6> \n{{ raw_html }}\n\n'
-              }
-            })
-          );
-        {% endraw %}
-
-        search.start();
-  });
-</script>
-
 
 </head>
 <body class="Body Body--home">
@@ -74,21 +34,14 @@
 
         <main id="main">
             <section class="LandingSearch LandingContainer">
-                <form id="search-form"  class="search search--lrg u-fullWidth">
-                   <!-- <input type="text"
-                           id="search-query-home"
-                           name="search-query-home"
-                           class="search search--lrg u-fullWidth"
-                           placeholder="Search the Docs">-->
-                </form>
+                {% include search_bar.html %}
 
                 <div id="js_hits_result" class="MainSearchResultsDropDown">
                 <!-- Hits widget will appear here -->
                 </div>
             </section>
-           
 	    
-	    {% assign show_search_reults = false %}
+	        {% assign show_search_reults = false %}
 
             <div class="Landing">
                 {% if show_search_reults == true %}

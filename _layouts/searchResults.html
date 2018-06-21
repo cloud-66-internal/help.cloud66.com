@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Cloud 66 Documentation</title>
+
+		
+		<meta charset="utf-8">
+		<meta name="description" content="Cloud 66 - Documentation">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Cloud 66 Documentation">
+		<meta property="og:description" content="Guides, Tutorials and Documentation for Cloud 66 Products">
+		<meta property="og:image" content="/images/ui/logo.svg">
+
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Cloud 66 Documentation">
+		<meta name="twitter:description" content="Guides, Tutorials and Documentation for Cloud 66 Products">
+		<meta name="twitter:image" content="/images/ui/logo.svg">
+
+		<link rel="icon" href="/images/ui/favicon.ico" type="image/png">
+		{% include styles.html %}
+
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+
+		<!-- Script for performing search & displaying results -->
+		<script type="text/javascript" src="js/searchResults.js"></script>
+	</head>
+
+	<body class="Body Body--home">
+
+		
+		{% include top_nav_bar.html %}
+
+		<main id="main">
+			<!-- Search bar. -->
+			<section class="LandingContainer">
+				{% include search_bar.html %}
+			</section>
+			
+			<!-- Container for the search results, filled in with JavaScript -->
+			<div id="hits" class="Landing">
+				<section class="LandingContainer content">
+					<h1 id="title"></h1> <!-- Content set in script -->
+					<ul class="SearchResults" id="search-results-container">
+					</ul>
+				</section>
+			</div>
+			
+		</main>
+
+		{% include footer.html %}
+	</body>
+
+</html>

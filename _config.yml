@@ -47,9 +47,13 @@ plugins:
 
 algolia:
   application_id: 'TXUI53WBEH'
-  record_css_selector: 'p,ul'
+  nodes_to_index: 'p,ul'
   settings:
     attributesToSnippet: ['raw_html:100']
     attributeForDistinct: 'title'
     distinct: true
     removeWordsIfNoResults: 'lastWords'
+    highlightPreTag: '<mark>'
+    highlightPostTag: '</mark>'
+    attributesForFaceting: ['tags', 'type', 'title', 'collection']
+
