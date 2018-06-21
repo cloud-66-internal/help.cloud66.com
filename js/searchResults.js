@@ -6,7 +6,7 @@
 function appendSearchResult(hit) {
     const [title, content, collection, url] = [hit._highlightResult.title.value, hit._highlightResult.content.value, hit.collection, hit.url];
     const host = window.location.host;
-    const liString = `<li> <a href="http://${host}${url}.html">  ${title}  </a> <p> ${content} </a> <br /> <a href="http://${host}/${collection}"> [${collection}] </a> </p> </li>`;
+    const liString = `<li class="SearchResults-item"> <a class="SearchResults-link" href="http://${host}${url}.html">  <h3 class="SearchResults-subTitle">${title}</h3> <p class="SearchResults-text"> ${content} </p></a><a href="http://${host}/${collection}"><span class="SearchResults-ico SearchResults-ico--${collection}"></span> <span class="Tag Tag--lrg">${collection}</span> </a> </li>`;
 
     // create DOM element from string
     const template = document.createElement('template');
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     queryParams = extractQueryParams();
 
     // updating h1
-    document.getElementById('title').innerText = `Search results for '${queryParams['q']}'`;
+    document.getElementById('title').innerText = `Searched all products for '${queryParams['q']}'`;
 
     const algoliaClient = algoliasearch('TXUI53WBEH', 'abdf284bf870bdd1beff87179eadcb07');
     const index = algoliaClient.initIndex(queryParams['idx']);
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if (content.hits.length === 0) {
             const p = document.createElement('p');
             p.innerHTML = `No result for '${queryParams['q']}'`;
-            
+
             const product = queryParams['product'];
             if (product) {
                 p.innerHTML += ` for the product '${product}'.`;

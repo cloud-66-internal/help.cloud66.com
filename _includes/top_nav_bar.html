@@ -36,7 +36,7 @@
 
         {% if page.collection %}
 
-        <input type="text" id="search-query-home" name="q" class="search search--lrg u-fullWidth" placeholder="Search the Docs" />
+        <input type="text" id="search-query-home" name="q" class="search" placeholder="Search the Docs" />
 
         {% if jekyll.environment == "production" %}
         <input type="hidden" name="idx" value="help" />
@@ -49,9 +49,4 @@
         {% endif %}
 
     </form>
-    <!--<div id="hits" class="hit">-->
-    <div id="hits" class="SearchResultsDropDown">
-    <!-- Hits widget will appear here -->
-    </div>
-    
 </header>

@@ -4,7 +4,7 @@
 	<head>
 		<title>Cloud 66 Documentation</title>
 
-		
+
 		<meta charset="utf-8">
 		<meta name="description" content="Cloud 66 - Documentation">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -34,7 +34,7 @@
 
 	<body class="Body Body--home">
 
-		
+
 		{% include top_nav_bar.html %}
 
 		<main id="main">
@@ -42,16 +42,16 @@
 			<section class="LandingContainer">
 				{% include search_bar.html %}
 			</section>
-			
+
 			<!-- Container for the search results, filled in with JavaScript -->
 			<div id="hits" class="Landing">
 				<section class="LandingContainer content">
-					<h1 id="title"></h1> <!-- Content set in script -->
+					<h1 class="SearchResults-title" id="title"></h1> <!-- Content set in script -->
 					<ul class="SearchResults" id="search-results-container">
 					</ul>
 				</section>
 			</div>
-			
+
 		</main>
 
 		{% include footer.html %}
