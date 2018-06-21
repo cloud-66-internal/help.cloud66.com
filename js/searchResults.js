@@ -31,6 +31,15 @@ function extractQueryParams() {
     return queryParams;
 }
 
+function getH1(queryParams) {
+	const product = queryParams['product'];
+	var productHtml = "all products";
+	if (product) {
+		productHtml = `<i>${product}</i>`;
+	}
+	return `Searched ${productHtml} for <b>${queryParams['q']}</b>`;
+}
+
 
 /*
  * Queries Algolia when the page is loaded.
@@ -39,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     queryParams = extractQueryParams();
 
     // updating h1
-    document.getElementById('title').innerText = `Searched all products for '${queryParams['q']}'`;
+    document.getElementById('title').innerHTML = getH1(queryParams);
 
     const algoliaClient = algoliasearch('TXUI53WBEH', 'abdf284bf870bdd1beff87179eadcb07');
     const index = algoliaClient.initIndex(queryParams['idx']);
