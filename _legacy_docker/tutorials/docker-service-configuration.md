@@ -138,12 +138,8 @@ Below is a table of the available configurations for a given service with a brie
      <td> The <a href="http://www.habitus.io">Habitus</a> step to use for the build. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/{{page.collection}}/tutorials/service-network-configuration.html#health">health (CSv1)</a> </td> 
+     <td> <a href="/legacy_docker/tutorials/service-lifecycle-management.html#health">health</a> </td> 
      <td> One of the values: <em>default</em>, <em>none</em> or a hash containing at least one of <em>type</em>, <em>endpoint</em>, <em>protocol</em>, <em>accept</em> or <em>timeout</em>. </td> 
-    </tr> 
-    <tr> 
-     <td> <a href="/{{page.collection}}/tutorials/service-network-configuration.html#health">health (CSv2)</a> </td> 
-     <td> One of the values: <em>default</em>, <em>none</em> or a hash. </td> 
     </tr> 
     <tr> 
      <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html#image">image</a> </td> 
