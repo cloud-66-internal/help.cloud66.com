@@ -106,7 +106,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies <a href="{% if page.collection == "skycap" %}/maestro/tutorials/scaling.html{% else %}/{{page.collection}}/tutorials/scaling.html{% endif %}">container amount</a> or <a href="/{{page.collection}}/tutorials/docker-service-configuration.html">resource</a> constraints for a service across the cluster. </td> 
     </tr> 
     <tr> 
-     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/legacy_docker/how-to-guides/deployment/building-your-service.html{%endif%}"</a> </td> 
+     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/legacy_docker/how-to-guides/deployment/building-your-service.html{%endif%}">deploy_command</a> </td> 
      <td> Specifies the command you would like to run during stack deploy (runs once per service). </td> 
     </tr> 
     <tr> 

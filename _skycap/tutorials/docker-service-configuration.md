@@ -106,7 +106,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies <a href="/maestro/tutorials/scaling.html">container amount</a> or <a href="/skycap/tutorials/docker-service-configuration.html">resource</a> constraints for a service across the cluster. </td>
     </tr>
     <tr>
-     <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html"</a> </td>
+     <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html">deploy_command</a> </td>
      <td> Specifies the command you would like to run during stack deploy (runs once per service). </td>
     </tr>
     <tr>
