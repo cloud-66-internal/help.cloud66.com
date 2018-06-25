@@ -137,10 +137,14 @@ Below is a table of the available configurations for a given service with a brie
      <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html#use-habitus">use_habitus_step</a> </td> 
      <td> The <a href="http://www.habitus.io">Habitus</a> step to use for the build. </td> 
     </tr> 
-    <tr> 
-     <td> <a href="/maestro/tutorials/service-lifecycle-management.html#health">health</a> </td> 
-     <td> One of the values: <em>default</em>, <em>none</em> or a hash. </td> 
-    </tr> 
+    <tr>
+     <td> <a href="/legacy_docker/tutorials/service-lifecycle-management.html#health">health (CSv1)</a> </td>
+     <td> One of the values: <em>default</em>, <em>none</em> or a hash containing at least one of <em>type</em>, <em>endpoint</em>, <em>protocol</em>, <em>accept</em> or <em>timeout</em>. </td>
+    </tr>
+    <tr>
+     <td> <a href="/maestro/tutorials/service-lifecycle-management.html#health">health (CSv2)</a> </td>
+     <td> One of the values: <em>default</em>, <em>none</em> or a hash. </td>
+    </tr>
     <tr> 
      <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html#image">image</a> </td> 
      <td> The image you would typically run <code>docker pull</code> from. </td> 
