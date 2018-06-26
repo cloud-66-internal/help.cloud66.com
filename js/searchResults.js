@@ -4,9 +4,9 @@
 
 // Appends the given search result to the ul element on the page
 function appendSearchResult(hit) {
-    const [title, content, collection, url] = [hit._highlightResult.title.value, hit._highlightResult.content.value, hit.collection, hit.url];
+    const [title, content, collection, url, categories] = [hit._highlightResult.title.value, hit._highlightResult.content.value, hit.collection, hit.url, hit.categories];
     const host = window.location.host;
-    const liString = `<li class="SearchResults-item"> <a class="SearchResults-link" href="http://${host}${url}.html">  <h3 class="SearchResults-subTitle">${title}</h3> <p class="SearchResults-text"> ${content} </p></a><a href="http://${host}/${collection}"><span class="SearchResults-ico SearchResults-ico--${collection}"></span> <span class="Tag Tag--lrg">${collection}</span> </a> </li>`;
+    const liString = `<li class="SearchResults-item"> <a class="SearchResults-link" href="http://${host}${url}.html">  <h3 class="SearchResults-subTitle">${title}</h3> <p class="SearchResults-text"> ${content} </p></a><a href="http://${host}/${collection}"><span class="SearchResults-ico SearchResults-ico--${collection}"></span> <span class="Tag Tag--lrg">${collection}</span> </a> <b> ${categories} </b </li>`;
 
     // create DOM element from string
     const template = document.createElement('template');
@@ -31,24 +31,93 @@ function extractQueryParams() {
     return queryParams;
 }
 
-function getH1(queryParams) {
-	const product = queryParams['product'];
-	var productHtml = "all products";
-	if (product) {
-		productHtml = `<i>${product}</i>`;
-	}
-	return `Searched ${productHtml} for <b>${queryParams['q']}</b>`;
+// Create the title of the page, with the current product displayed.
+// When the users hover the list of the other products is displayed.
+// When the users clicks on one of the products, the form is submitted for this product.
+function createH1(queryParams) {
+    const productQuery = queryParams['product'];
+
+    const products = ['All products', 'Rails', 'Node', 'Maestro', 'Skycap'];
+
+	const productDisplayed = productQuery ? productQuery.charAt(0).toUpperCase() + productQuery.slice(1) : 'All products';
+	products.splice(products.indexOf(productDisplayed), 1);
+
+	var otherProducts = '<div id="other-products"><ul>';
+	products.forEach((product) => {
+		const value = product.replace(' ', '_').toLowerCase();
+		otherProducts += `<li value="${value}"> ${product} </li>`;
+	});
+	otherProducts += '</ul></div>'
+
+	const productSelection = `<div id="product-display"> <span id="product-name">${productDisplayed}</span> ${otherProducts} </div>`;
+
+	return `Searched ${productSelection} for <b>${queryParams['q']}</b>`;
 }
 
+function createHiddenProductInput(product) {
+    const hiddenInput = `<input id='input-product' type="hidden" name="product" value="${product}" />`;
+    const inputTemplate = document.createElement('template');
+    inputTemplate.innerHTML = hiddenInput;
+    return inputTemplate.content.firstChild;
+}
+
+// Changes the product on which to query
+// Deleting the input if exists if the user clicked on "All product"
+function changeProductQuery(product) {
+    const form = document.getElementById('search-form');
+	const productInput = document.getElementById('input-product');
+
+	if (product === 'all_products') {
+		if (productInput) {
+			productInput.parentNode.removeChild(productInput);
+		}
+	} else {
+		if (productInput) {
+			productInput.value = product;
+		} else {
+			form.appendChild(createHiddenProductInput(product));
+		}
+	}
+}
+
+// on click on another product: perform the search on the selected product
+function submitFormWithNewProduct(event) {
+	console.log('submitFormWithNewProduct triggered');
+	const product = event.currentTarget.attributes.value.value;
+	changeProductQuery(product);
+
+	const searchInput = document.getElementById('search-query-home');
+	searchInput.value = extractQueryParams()['q'];
+
+    const form = document.getElementById('search-form');
+	form.submit();
+}
 
 /*
  * Queries Algolia when the page is loaded.
  */
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener('DOMContentLoaded', function(event) {
     queryParams = extractQueryParams();
 
     // updating h1
-    document.getElementById('title').innerHTML = getH1(queryParams);
+    document.getElementById('title').innerHTML = createH1(queryParams);
+
+	//
+	const div = document.getElementById('product-display');
+	div.addEventListener('mouseover', (event) => {
+		document.getElementById('other-products').style.display = 'block';
+	});
+
+	div.addEventListener('mouseout', (event) => {
+		document.getElementById('other-products').style.display = 'none';
+	});
+	
+	// when the user clicks on the product: the search is performed for this product
+	const productsList = document.getElementById('other-products').getElementsByTagName('li');
+	for (var i = 0; i < productsList.length; i++) {
+		productsList[i].addEventListener('click', submitFormWithNewProduct);
+	}
+
 
     const algoliaClient = algoliasearch('TXUI53WBEH', 'abdf284bf870bdd1beff87179eadcb07');
     const index = algoliaClient.initIndex(queryParams['idx']);
@@ -69,14 +138,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         if (content.hits.length === 0) {
             const p = document.createElement('p');
-            p.innerHTML = `No result for '${queryParams['q']}'`;
-
-            const product = queryParams['product'];
-            if (product) {
-                p.innerHTML += ` for the product '${product}'.`;
-            } else {
-                p.innerHTML += ' in any of the products.';
-            }
+            p.innerHTML = 'No result.';
 
             document.getElementById('search-results-container').appendChild(p);
         } else {
@@ -84,15 +146,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     });
 
-    // If the URL contains a product name, it is added as a hidden input for the research.
-    const form = document.getElementById('search-form');
-    form.addEventListener('submit', (event) => {
-        const product = extractQueryParams()['product'];
-        if (product) {
-            const hiddenInput = `<input type="hidden" name="product" value="${product}" />`;
-            const inputTemplate = document.createElement('template');
-            inputTemplate.innerHTML = hiddenInput;
-            document.getElementById('search-form').appendChild(inputTemplate.content.firstChild);
-        }
-    });
 });
+
