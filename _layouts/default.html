@@ -24,47 +24,7 @@
     <link rel="icon" href="/images/ui/favicon.ico" type="image/png">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.js"></script>
-
-    <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-        var search = instantsearch({
-            appId: 'TXUI53WBEH',
-            apiKey: 'abdf284bf870bdd1beff87179eadcb07',
-            {% if jekyll.environment == "production" %}
-            indexName: 'help',
-            {% else %}
-            indexName: 'help_tmp',
-            {% endif %}
-            urlSync: true
-        });
-
-        // initialize SearchBox
-        search.addWidget(
-            instantsearch.widgets.searchBox({
-                container: '#search_box',
-                placeholder: 'Search Documentation'
-            })
-        );
-
-        {% raw %}
-        // initialize hits widget
-           search.addWidget(
-            instantsearch.widgets.hits({
-              container: '#hits',
-              templates: {
-                empty: 'No results',
-                item: '<h6><a href="{{ url }}.html">{{ title }}</a></h6> \n{{ raw_html }}\n\n'
-              }
-            })
-          );
-        {% endraw %}
-
-        search.start();
-  });
-</script>
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.css">
 
     {% include styles.html %}
 </head>
@@ -91,7 +51,7 @@
                                 <form id="search-form">
                                     <input type="text" id="search-query-sidebar" class="search">
                                 </form>
-                            </li>
+                            </li> -->
                         </ul><!--/.main-menu-->
 
                         <!-- ==== The main left hand navigation list ==== -->

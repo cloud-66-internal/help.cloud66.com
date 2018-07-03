@@ -1,0 +1,15 @@
+<form id="search-form" action="searchResults.html" method="get">
+    <input type="text"
+           id="search-query-home"
+           name="q"
+           class="search search--lrg u-fullWidth"
+           placeholder="Search all product Documentation">
+
+
+    {% if jekyll.environment == "production" %}
+    <input type="hidden" name="idx" value="help" />
+    {% else %}
+    <input type="hidden" name="idx" value="help_tmp" />
+    {% endif %}
+
+</form>
