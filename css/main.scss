@@ -1279,28 +1279,80 @@ body.Body--home #search-query-nav {
  * Search Results List
  * .SearchResults
  * ------------------------------------------------------------------  */
-.LandingContainer.content .SearchResults {
-    list-style: none;
-    padding: 1em 0;
+.LandingContainer.content {
+    .SearchResults-title {
+        margin: 0 !important;
+    }
+
+    .SearchResults {
+        list-style: none;
+        padding: 1em 0;
+    }
+
+    .SearchResults-item {
+        padding-bottom: 1.2em;
+    }
+
+    .SearchResults-title {
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+        font-size: 22px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        line-height: 1;
+    }
+
+    .SearchResults-subTitle {
+        font-size: 18px;
+        font-weight: bold;
+        color: #35689e;
+        padding-bottom: 2px;
+        margin-bottom: 0;
+    }
+
+    .SearchResults-text {
+        margin: 0;
+        padding-bottom: 0.1em !important;
+        font-size: 15px;
+        color: #555;
+        line-height: 1.5;
+    }
+
+    .ais-Highlight {
+        font-style: normal;
+        background: #ffffe2;
+    }
 }
-.LandingContainer.content h2 {
-    font-weight: bold;
-    font-size: 22px;
-    padding: 0;
-    margin: 0;
-    border: none;
-    line-height: 1;
+
+.SearchResults-ico {
+    position:relative;
+    top: 4px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
 }
-.LandingContainer.content .SearchResults h3 {
-    font-size: 17px;
-    padding: 0;
-    margin: 0;
+.SearchResults-ico--rails {
+    background:  transparent url('/images/ui/ruby_logo.svg') no-repeat 0 1px;
+    background-size: 12px !important;
 }
-.LandingContainer.content .SearchResults p {
-    margin: 0 0 0.4em;
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
+.SearchResults-ico--skycap {
+    background:  transparent url('/images/ui/skycap_logo.svg') no-repeat 0 1px;
+    background-size: 13px !important;
+}
+.SearchResults-ico--maestro {
+    background:  transparent url('/images/ui/maestro_logo.svg') no-repeat 0 0;
+    background-size: 13px !important;
+}
+.SearchResults-ico--node {
+    background:  transparent url('/images/ui/node_logo.svg') no-repeat 0 0;
+    background-size: 13px !important;
+}
+.SearchResults-ico--legacy_docker {
+    background:  transparent url('/images/ui/docker_logo.svg') no-repeat 0 2px;
+    background-size: 13px !important;
 }
 
 /*
@@ -1553,12 +1605,25 @@ li.active .TabMini-link {
     display: inline-block;
     color: #aaa;
     font-size: 9px;
-    background: #f0f0f0;
+    background: #fafafa;
     padding: 3px;
     border-radius: 3px;
     text-transform: uppercase;
     letter-spacing: 0.15px;
 }
+
+.Tag--lrg {
+    padding: 4px;
+    font-size: 11px;
+    background: #F1F8FF;
+    border: 1px solid #d5e2f2;
+    color: #6a737d;
+}
+.Tag--lrg:hover {
+    color: #35689e;
+    border: 1px solid #bcd6f4;
+}
+
 
 /*
  * Accordion Nav

@@ -80,21 +80,19 @@ permalink: /:collection/:path
 
 <h3>Base Templates</h3>
 <p>
-	Base Templates are a set of Stencils that can be used as the base for any new Formation. They contain the Stencils and their grouping. For example you might choose to create a Base Template for your team so they can deploy the most commonly used components of your infrastructure to your used flavour of Kubernetes cluster (like AWS Fargate or Google GKE for example). We also provide a <a href="https://github.com/cloud66/stencils/tree/production">public Base Template library of Stencils on Github</a> for you to use and possibly contribute for others to benefit from. Base Template can group Stencils into arbitary of functional groups like Services and Configurations or Application, Databases, Storage, etc.
+	Base Templates are a set of Stencils that can be used as the base for any new Formation. They contain the Stencils and their grouping. For example you might choose to create a Base Template for your team so they can deploy the most commonly used components of your infrastructure to your used flavour of Kubernetes cluster (like AWS Fargate or Google GKE for example). We also provide a <a href="https://github.com/cloud66/stencils/tree/production">public Base Template library of Stencils on Github</a> for you to use and possibly contribute for others to benefit from. Base Template can group Stencils into arbitrary of functional groups like Services and Configurations or Application, Databases, Storage, etc.
 </p>
 <p>
 	Base Templates are stored in a git repository and are editing by your team or Cloud 66.
 </p>
 
+<h4>Creating your own Stencil Template Repositories</h4>
 <p>
-	Following reusability of Stencils, operators or developers can generate base Stencil templates (Base Templates) and make them available to the rest of the team.
-	<br/>These Stencils are usable by anyone with the appropriate permissions and can be enforced by the operators of the cluster to ensure good governance of the infrastructure.
+	Once you are familiar with Base Templates, you might need to add your own Stencil templates into a public or private repository and use it with Formations. To achieve this, simply create a git repository and connect it to your Skycap account under Accounts / External Services / Stencil Template Repos. Enter the repository URL and branch and give it a name. Skycap then pulls the contents of the repository down and makes it available to use in your Formations.
 </p>
-<div class="notice">
-	<p>
-		At this moment, only public Base Template repositories are supported. Support for using your own private Base Template repositories will be added soon.
-	</p>
-</div>
+<p>
+	You can find out more about <a href="/skycap/how-to-guides/formations/create_your_own_stencil_template_repos.html">Creating your own Stencil Template Repositories here.</a>
+</p>
 
 <h3>Traceability</h3>
 <p>
@@ -124,7 +122,7 @@ permalink: /:collection/:path
 	Here we are using the example used in the <a href="/skycap/quickstarts/using_formations.html">Getting Started</a> document to show some best practices around Stencils.
 </p>
 <p>
-	Once you choose to deploy your application with Skycap Formations (instead of <a href="/maestro/">Cloud 66 Maestro</a>), you need to decide how to organize your Stencils in relation to your application's services. Ideally, your Base Template for Stencils have the right sections to help you with organizing your Stencils. The suggested <strong>Sample</strong> Base Template library used in the Getting Started document has 3 sections: <strong>Service</strong>, <strong>Config</strong> and <strong>Custom</strong>.
+	Once you choose to deploy your application with Skycap Formations (instead of <a href="/maestro/">Cloud 66 Maestro</a>), you need to decide how to organize your Stencils in relation to your application's services.
 </p>
 
 <h3>Suggested Organization of Stencils</h3>
@@ -133,7 +131,7 @@ permalink: /:collection/:path
 </p>
 
 <p>
-	Once you have a Stencil to configure your Namespace and perhaps add basic credentials for the Docker repository to your cluster or basic peristent storage classes, you can start adding the needed Stencils for your application support components: databases, queue middleware and the like. We usually place these in <strong>Custom</strong> section unless you have many of those in which case having a dedicated section for them makes more sense.
+	Once you have a Stencil to configure your Namespace and perhaps add basic credentials for the Docker repository to your cluster or basic peristent storage classes, you can start adding the needed Stencils for your application support components: databases, queue middleware and the like.
 </p>
 
 <p>

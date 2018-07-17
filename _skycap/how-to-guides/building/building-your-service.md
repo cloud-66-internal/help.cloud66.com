@@ -188,6 +188,7 @@ services:
 1.  Add a `build.yml` to your repository
 2.  Set `use_habitus` attribute to `true` in your `service.yml`
 3.  Set the `use_habitus_step` to the step you would like to use for your servide in your `service.yml`
+4.  If you need to pass any extra parameters to Habitus, you can use the `habitus_params` attribute (for example with something like `--build MY_VARIABLE=true --build FOO=_env(FOO_ENV)`)
 
 Check out the [Habitus website](http://www.habitus.io) for more information about generating a `build.yml`.
 

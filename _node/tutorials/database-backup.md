@@ -88,7 +88,13 @@ This option applies to **text** MySQL and PostgreSQL backups.  You can provide a
 
 ## Install on replica
 
-This option applies to **text** MySQL and PostgreSQL and redis backups. With this option you can move the backup service to your database replica if available, to relieve pressure from your production database. 
+This option applies to **text** MySQL and PostgreSQL and redis backups. With this option you can move the backup service to your database replica (only on the same stack) if available, to relieve pressure from your production database.
+
+In case of having multiple slaves the backup will always be on the first fired-up slave server (lower server id).
+
+## Note
+   
+If this option is checked Adding or removing replicas will move the backups to the replica or master recursively.
 
 
 ## Note
