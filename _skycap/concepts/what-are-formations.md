@@ -9,7 +9,7 @@ tags: ["getting-started"]
 permalink: /:collection/:path
 ---
 
-<h2>Overview.</h2>
+<h2>Overview</h2>
 <p>
 	Kubernetes provide amazing flexibilty to developers and operators. By consolidating all communication through a single API it encourages developing code to build, configure and maintain infrastructure. This brings great benefits but also some challenges. As code and configuration live side by side, there is a need for managing the growing complexity of configuration files, controlling access to them and reusability of them. Skycap Formations are the best way to generate, maintain and reuse Kuberentes configuration files for your applications.
 </p>
