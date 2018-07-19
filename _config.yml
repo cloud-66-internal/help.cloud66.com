@@ -42,8 +42,8 @@ sass:
 safe: false
 
 url: https://cloud66.plainspeak.co.za
-#source: /var/www/cloud66.plainspeak.co.za/help
-#destination: /var/www/cloud66.plainspeak.co.za/html
+source: /var/www/cloud66.plainspeak.co.za/help
+destination: /var/www/cloud66.plainspeak.co.za/html
 
 plugins:
   - jekyll-sitemap
