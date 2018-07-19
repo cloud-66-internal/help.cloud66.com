@@ -5,11 +5,20 @@
             </h2>
         </div>
         {% assign product = page.collection | downcase %}
+        
         <ul class="menu-root">
-            {% assign section = include.collection | where:"categories","quickstarts" | sort: "order" %}
-            <li><h3 class="u-flushTop"><a href="/{{product}}/quickstarts">Quickstarts</a></h3></li>
+            {% assign section = include.collection | where:"categories","the-basics" | sort: "order" %}
+            <li><h3 class="u-flushTop"><a href="/{{product}}/the-basics">The Basics</a></h3></li>          
             {% include left_nav_list.html section=section current=page %}
         </ul>
+        
+        
+        <ul class="menu-root">
+            {% assign section = include.collection | where:"categories","quickstarts" | sort: "order" %}
+            <li><h3><a href="/{{product}}/quickstarts">Quickstarts</a></h3></li>
+            {% include left_nav_list.html section=section current=page %}
+        </ul>
+
 
         <ul class="menu-root">
             {% assign building = include.collection | where:"categories","how-to-guides/building" | sort: "order" %}
