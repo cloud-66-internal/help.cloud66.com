@@ -8,48 +8,35 @@ lead: Use Skycap to automatically turn your source code into container (Docker) 
 permalink: /:collection/:path
 ---
 
-<p class="lead">
-    Skycap is a Container Delivery Pipeline. You can use Skycap to automatically turn your source code into container (Docker) images, manage your Kubernetes configuration files and deploy your applications to any Kubernetes cluster.
-</p>
 
-<h2 id="What-youll-need">
-    <a href="#What-youll-need" class="headerlink" title="What you’ll need"></a>
-    What you’ll need
-</h2>
+Skycap is a Container Delivery Pipeline. You can use Skycap to automatically turn your source code into container (Docker) images, manage your Kubernetes configuration files and deploy your applications to any Kubernetes cluster.
 
-<p>Before you start, please check you have the following:</p>
+<h2 id="What-youll-need">What you’ll need</h2>
 
-<ul>
-    <li>
-        <p><strong>A Cloud 66 Account</strong> &mdash; If you don't already have one <a href="https://app.cloud66.com/users/sign_up" target="_blank">Sign up for a Cloud 66 account</a>. There's a free community plan and you'll get full unlimited access to all products free for 14 days.</p>
-    </li>
-    <li>
-        <p><strong>A Git Repo containing your application code</strong> &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.</p>
-    </li>
-</ul>
+Before you start, please check you have the following:
 
-<h2 id="build-pipeline">
-    <a href="#build-pipeline" class="headerlink" title="Skycap Build Pipelines"></a>
-    Skycap Build Pipelines
-</h2>
+* **A Cloud 66 Account** &mdash; If you don't already have one [sign up for a Cloud 66 account](https://app.cloud66.com/users/sign_up). There's a free community plan and you'll get full unlimited access to all products free for 14 days.
 
-<p>Build pipelines are composed of a number of individual services that are used to make up your application. Services can include source code that you need to build into images, or pre-built images. You can mix and match these if required.</p>
+* **A Git repository containing your application code** &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.
 
-<ul>
-    <li>
-        <p> <strong>Build from Source</strong> &mdash; Your code should be hosted in a git repo. It should contain a <em>Dockerfile</em> that describes how to build your image. Cloud 66 provides Dockerfile templates for building common web frameworks. You can use these to help get started.</p>
-    </li>
-    <li>
-        <p> <strong>Pre-built Container Images</strong> &mdash; These can be hosted in any public image repo like Dockerhub or your own private repo. </p>
-    </li>
-</ul>
+>
+If you don't have images or code ready, you can use this [simple project](https://github.com/cloud66-samples/pilot) we've supplied on Github. (You can also use this project with our next tutorial on Formations.)
+
+<h2 id="build-pipeline">What is a Build Pipeline?</h2>
+
+Build pipelines are composed of all the individual ([containerized](/skycap/the-basics/concepts-and-terminology.html#containers-and-containerization)) services that make up your application. Services can include raw source code that needs to be built into Docker images or pre-built images. You can mix and match these as required.
+
+* **Build from Source** &mdash; Your code should be hosted in a git repo. It should contain a *Dockerfile* that describes how to build your image. Cloud 66 provides Dockerfile templates for building common web frameworks. You can use these to help get started.
+    
+* **Pre-built Container Images** &mdash; These can be hosted in any public image repo like Dockerhub or your own private repo. 
+
 
 <h2 id="get-started">
-    <a href="#get-started" class="headerlink" title="Get Started"></a>
-    Lets Get Started
+   
+Lets Get Started
 </h2>
 
-<p>New users should click <em>start trial</em> for the Skycap product. If you're already using Cloud 66 just click <em>New Stack &rarr; Skycap <span class="u-textSmall">(Build containers)</span></em> button on the dashboard.</p>
+New users should click *start trial* for the Skycap product. If you're already using Cloud 66 just click *New Application &rarr; Skycap (Build containers)* button on the dashboard.
 
 <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
     <div class="Grid-cell">
@@ -58,88 +45,63 @@ permalink: /:collection/:path
     </div>
     <div class="Grid-cell">
         <h4>Existing users</h4>
-        <img src="/assets/skycap/skycap_new_dropdown.png" alt="Start a new Skycap build pipeline" width="170">
+        <img src="/assets/skycap/skycap_new_dropdown_update.png" alt="Start a new Skycap build pipeline" width="170">
     </div>
 </div>
 
-<h2 id="add-services">
-    <a href="#add-services" class="headerlink" title="App Name and Services"></a>
-    Adding Services
-</h2>
+<h2 id="add-services">Adding Services</h2>
 
-<ul>
-    <li>
-        <p>
-            <strong>Give your App a Name</strong> &mdash; This will be used to label your application throughout the Cloud 66 dashboard.
-        </p>
-    </li>
-    <li>
-        <p>
-            <strong>Adding Services</strong> &mdash; You can add as many services as required by clicking the green <em>Add Service</em> link at the bottom of the page.
-        </p>
-    </li>
-</ul>
+* **Give your application a Name** &mdash; This will be used to label your application throughout the Cloud 66 dashboard.
+          
+* **Adding Services** &mdash; You can add as many services as required by clicking the green *+ Add Service* button at the bottom of the page.
 
-<p style="margin-top: 2em">
-    <img src="/assets/skycap/skycap_add_services_ani.gif" alt="Adding services to a Skycap build pipeline">
-</p>
+<img src="/assets/skycap/skycap_add_services_ani_update.gif" alt="Adding services to a Skycap build pipeline">
 
-<h2 id="specifying-image-source">
-    <a href="#specifying-image-source" class="headerlink" title="Specifying the source of your images"></a>
-    Specifying the source of your images
-</h2>
+<h2 id="specifying-image-source">Specifying the source of your images</h2>
 
 <img src="/assets/skycap/skycap_service_image.png" alt="Specifying the source of your service" style="float:right; margin-top: 0.25em">
-<p style="padding-right: 4em">The <em>Where is your service Image</em> dropdown provides you with three options to specify the source of your services.</p>
 
-<ul style="margin-top: 4em">
-   <li>
-        <p> <strong>Build Image from a GitHub repo</strong> &mdash; This is the easiest way to add services if your code is hosted on GitHub. You'll need to link your GitHub account with Cloud 66 before you can take advantage of this. Just click the <em>Lets link with GitHub now</em> link.</p>
-    </li>
-   <li>
-        <p> <strong>Build image from any Git Repo</strong> &mdash; Use this option if you have a private git repo or you're using another git provider such as BitBucket. You can also use this if you don't want to link Cloud 66 to your GitHub account. You will need to add your Cloud 66 public key if your repo is private. You'll be prompted to do this if it's required.</p>
-    </li>
-   <li>
-        <p> <strong>It's in a Docker image repository</strong> &mdash; Use this to add pre-built images to a project. You can use a service like DockerHub or your own private image repo. If you're using a private repository you'll be prompted to add the necessary login credentials. </p>
-    </li>
-</ul>
+The *Where is your service image?* dropdown provides you with three options to specify the source of your services.
 
-<p>Once you've finished adding your services click the Build button.</p>
+* **Build Image from a GitHub repo** &mdash; This is the easiest way to add services if your code is hosted on GitHub. You'll need to link your GitHub account with Cloud 66 before you can take advantage of this. Just click the *Setup access to your GitHub projects.* link.
+    
+* **Build image from any Git Repo** &mdash; Use this option if you have a private git repo or you're using another git provider such as BitBucket. You can also use this if you don't want to link Cloud 66 to your GitHub account. You will need to add your Cloud 66 public key if your repo is private. You'll be prompted to do this if it's required.
+    
+* **It's in a Docker image repository** &mdash; Use this to add pre-built images to a project. You can use a service like DockerHub or your own private image repo. If you're using a private repository you'll be prompted to add the necessary login credentials. 
+ 
+Once you've finished adding your services click the "Create Snapshot" button.
+
 
 <h2 id="building-images-buildgrid">
-    <a href="#building-images-buildgrid" class="headerlink" title="Building your images"></a>
-    Building images with BuildGrid
+Snapshots and building images
 </h2>
 
-<p>BuildGrid is the Cloud 66 service that's used to build container images from your source code.</p>
+A snapshot captures all the components of your application including application images, environment variables and configuration items, in preparation for deployment. 
 
-<p>During the build process you can view the status of each individual build. You can also drill down into the logs if you need to troubleshoot any part of the process.</p>
+Because this is the first time you are creating a snapshot for this application, Skycap will fetch and build your code into images, as well as fetching any pre-built images. 
 
-<p>
-    <img src="/assets/skycap/skycap_buildgrid_queue.png" alt="Adding services to a Skycap build pipeline">
-</p>
+All of these components are then stored in a private repository on your Cloud 66 account so that you can roll back easily at any time.
 
-<h2 id="advanced-features">
-    <a href="#advanced-features" class="headerlink" title="Advanced Skycap features"></a>
-    Advanced features
+During the build process you can view the status of each individual build. You can also drill down into the logs if you need to troubleshoot any part of the process.
+
+<img src="/assets/skycap/skycap_buildgrid_queue.png" alt="Adding services to a Skycap build pipeline">
+
+
+<h2 id="advanced-features">Advanced features
 </h2>
 
-<p>All of the information that defines how services are built is accessible in the <em>service.yml</em> file. Switching to <em>advanced</em> provides full access to this configuration and you can edit the file directly. This gives you great flexibility if you need to setup advanced features.</p>
+All of the information that defines how your services are built is accessible in the *service.yml* file. 
 
-<ul>
-    <li>
-        <p><strong><a href="/{{page.collection}}/tutorials/docker-service-configuration.html">Service.yml documentation</a></strong> &mdash; including advanced configuration examples.</p>
-    </li>
-    <li>
-        <p><strong><a href="/maestro/how-to-guides/deployment/deployment-history.html">Multi Tenancy</a></strong> &mdash; an example of using multiple services to configure multi tenancy Stacks.</p>
-    </li>
-</ul>
+You can edit this by clicking the *Configuration Files* link in the Application toolbar on the right-hand side of the screen. This provides full access to this configuration and you can edit the file directly.
 
-<h2 id="deploy-containers">
-    <a href="#deploy-containers" class="headerlink" title="Deploying your Containers"></a>
-    Deploying your Containers
-</h2>
+* **<a href="/{{page.collection}}/tutorials/docker-service-configuration.html">Service.yml documentation</a>** &mdash; including advanced configuration examples.
+    
+* **<a href="/maestro/how-to-guides/deployment/deployment-history.html">Multi Tenancy</a>** &mdash; an example of using multiple services to configure multi tenancy Stacks.
+    
 
-<p>Once you've built your images and you're ready to deploy your app, check out <a href="/maestro/quickstarts/getting_started.html">Getting started with Maestro</a>.</p>
+
+<h2 id="deploy-containers">Deploying your containers</h2>
+
+Once you've built your images and you're ready to deploy your app, check out <a href="/maestro/quickstarts/getting_started.html">Getting started with Maestro</a>.
 
 

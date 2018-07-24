@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Skycap Quickstarters"
+title:  "Getting started with Skycap"
 lead: Getting Started with Skycap
 legacy: false
 permalink: /:collection/quickstarts/index.html

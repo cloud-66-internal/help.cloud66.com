@@ -47,7 +47,9 @@ A Snapshot is the state of your application at a point in time. It includes all 
 
 <img src="/assets/skycap/retagging.png" width="600px">
 
-Snapshots act like a "time machine" for your code and configuration so you can deploy your application as it was back in a certain point in time or revert your Kubernetes configurations if you want.
+All of these components are then stored in a private repository on your Cloud 66 account so that you can roll back easily at any time.
+
+Snapshots act like a "time machine" for your code and configuration so you can redeploy your entire application as it was at any point in time or quickly revert your Kubernetes configurations if you need to.
 
 This also prevents issues when using the <code>latest</code> tag on your Docker images. If a <code>latest</code> tag is used in your service definition, a retagging will "freeze" that version at the time the snapshot is taken.
 

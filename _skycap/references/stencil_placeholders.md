@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stencil Placeholders
+title: Stencil Placeholders syntax
 categories: references
 legacy: false
 tags: ["references", "placeholders", "formations", "stencils"]

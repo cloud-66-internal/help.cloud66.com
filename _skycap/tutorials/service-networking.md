@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: What is Service Networking?
+title: Exposing services to public access
 categories: tutorials
 lead: ""
 legacy: false
@@ -11,17 +11,42 @@ permalink: /:collection/:path
 
 ## Overview
 
-Often times the purpose of a service inside your application is to respond to web queries from the internet. Actions like rendering and serving HTML pages or accepting HTTP POST actions are amongst the most common requirements from web services.
+It’s likely that some services inside your application will need to respond to queries from the public internet.
 
-In a Cloud 66 for Docker stack, your services run inside containers. For this service to be available to anyone outside the container, we need to bridge it from inside to outside of the container.
+If you use Cloud 66, your services run inside containers. For a service to be available to anyone outside the container, we need to bridge it from inside to outside of the container.
 
-This is not limited to HTTP or web traffic. The same concepts apply if your container serves non-HTTP traffic (like web sockets, DB containers or custom TCP / UDP traffic).
+Containers / applications in the same stack can automatically communicate with each other using their Weave IP addresses.
+
+**NOTE:** This does not includes any containers on your other stacks. They are considered "public" in this context.
+
+## Exposing networking ports
+
+To expose a service to a port on the public network:
+
+1.  Under **Container Port** specify the port that your container is listening on (like 3000 for rails apps)
+
+    You can define your exposed service ports on **Public Internet Port** box like bellow:
+
+2. If your service is a web service (HTTP) and you want it to be available outside of your stack you need to set it like this:
+    
+       `http:80,https:443`
+    
+    * If you don't have HTTPS
+    
+       `http:80`
+    
+    * For non-standard ports:
+    
+       `http:8080,https:8443`
+    
+    * For other protocols (TCP and UDP):
+    
+       `tcp:5785,udp:478`
+     
+     (This container will be exposed on port 5785 for TCP connections and 478 for UDP connections.)
 
 
 
-### Note
-
-In this article, **outside world** is used for any client of your service that's not inside the container. This includes any other services on your other stacks.
 
 
 
@@ -71,34 +96,4 @@ On a Cloud 66 for Docker stack, you can make the inside and outside ports map us
 
 If you set your outside world port 80 (HTTP) the 443(HTTPS) will be added automatically.
 
-
-## Networking Ports
-
-This is used to expose your service to the outside world. Outside world includes any server/computer out of the stack. So if you even have two stacks and one needs a service from the other one you need to expose your service/container. 
-
-Without exposing the service/container will be available to other servers of the same stack without being exposed. This is possible if you use their Weave IP addresses. 
-
-Now if you need to expose your service. This is how it should be set:
-
-1.  Under **Container Port** you need to specify the port that your container is listening on (like 3000 for rails apps)
-
-    You can define your exposed service ports on **Public Internet Port** box like bellow:
-
-2.  * If your service is a web service (HTTP) and you want it to be available outside of your stack you need to set it like this:
-    
-       http:80,https:443
-    
-    * If you don't have HTTPS
-    
-       http:80
-    
-    * For non-standard ports:
-    
-       http:8080,https:8443
-    
-    * For other protocols (TCP and UDP):
-    
-       tcp:5785,udp:478
-    
-       This means that this container w ill be exposed on port 5785 for TCP connections and 478 for UDP connections
 

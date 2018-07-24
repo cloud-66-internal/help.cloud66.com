@@ -83,8 +83,6 @@ Container orchestration platforms provide the framework to systematise and autom
 
 At Cloud 66 we use [Kubernetes](https://kubernetes.io/) - the market leading solution - to orchestrate containers and applications in clustered environments.
 
- <a href="#pods-nodes-and-cluster" class="headerlink" title="pods-nodes-and-cluster"></a>
-
 <h2 id="pods-nodes-and-cluster">Pods, nodes and clusters</h2>
 
 In Kubernetes a **pod** is the smallest and simplest object in the system. A typical pod takes a container, gives it access to storage and assigns it an IP address. It also applies various policies and settings to it. 
@@ -104,7 +102,19 @@ It is possible for containers to communicate across nodes, but this relies on co
 
 Kubernetes simplifies this process through a feature called a “Kubernetes Service” (or just “service” for short). A service manages the assignment of IP addresses and ports, based on whatever parameters you define. 
 
- <a href="#continuous-deployment-pipeline" class="headerlink" title="continuous-deployment-pipeline"></a>
+## Service Networking
+
+It's likely that some services inside your application will need to respond to queries from the public internet.
+
+For a service to be available to anyone outside the container, we need to bridge it from inside to outside of the container.
+
+For example a container with a web application might be set to listen on port 3000 within the internal (Kubernetes) cluster network, and that port could then be exposed to port 80 on the public network attached to the cluster. 
+
+This is not limited to HTTP or web traffic. The same concepts apply if a container serves non-HTTP traffic (like web sockets, DB containers or custom TCP / UDP traffic).
+
+***Note***
+
+In this context, **outside world** is used for any client of your service that's not inside the container. This includes any of your other services running on other stacks.
 
 <h2 id="continuous-deployment-pipeline">Container Deployment pipeline (CDP)</h2>
 

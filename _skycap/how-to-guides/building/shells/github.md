@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Use GitHub with Cloud 66
+title: Use GitHub with Skycap
 categories: how-to-guides/building
 lead: ""
 tags: ["git","github"]
@@ -9,4 +9,5 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-{% include how-to-guides/deployment/github.md %}
+
+CONTENT TBC
