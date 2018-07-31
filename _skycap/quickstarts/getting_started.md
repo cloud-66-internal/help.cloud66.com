@@ -103,8 +103,3 @@ All of the information that defines how your services are built is accessible in
 
 You can edit this by clicking the *Configuration Files* link in the Application toolbar on the right-hand side of the screen. This provides full access to this configuration and you can edit the file directly.
 
-* **<a href="/{{page.collection}}/tutorials/docker-service-configuration.html">Service.yml documentation</a>** &mdash; including advanced configuration examples.
-    
-* **<a href="/maestro/how-to-guides/deployment/deployment-history.html">Multi Tenancy</a>** &mdash; an example of using multiple services to configure multi tenancy Stacks.
-    
-
