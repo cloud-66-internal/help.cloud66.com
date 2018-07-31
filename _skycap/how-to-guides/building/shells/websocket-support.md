@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Cloud 66 support for WebSocket
+title: Using WebSockets with Skycap
 categories: how-to-guides/building
 lead: ""
 legacy: false

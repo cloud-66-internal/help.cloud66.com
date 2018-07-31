@@ -9,9 +9,7 @@ tags: ["the basics","concepts", "terminology","explanation"]
 permalink: /:collection/:path
 ---
 
-<a href="#containers-and-containerization" class="headerlink" title="Containers and containerization"></a>
-<h2 id="containers-and-containerization">
-Containers and containerization</h2>
+## Containers and containerization
 
 Containers, at their most basic, are pieces of software (or “code”) bundled together with the other components they require to function (such as system libraries and configuration files). This bundle (or “container”) is treated as a standalone executable file.
 
@@ -31,8 +29,7 @@ Many of these firms began by taking existing software and repackaging it into co
 
 Containerization is made possible by **container engines** - systems that allow containers to be developed, packaged and run on your infrastructure. At Cloud 66 we support [Docker](https://www.docker.com/) which is the market leading container engine (or “runtime”).
 
-<a href="#containers-vs-virtual-machines" class="headerlink" title="Containers vs virtual machines"></a>
-<h3>Containers vs virtual machines</h3>
+### Containers vs virtual machines
 
 While they share some of the same principles, containers are quite different to virtual machines or virtual servers. The most important differences are:
 
@@ -41,8 +38,7 @@ While they share some of the same principles, containers are quite different to 
 
 It’s very common to mix these two technologies, with containers running on virtual machines.
 
-  <a href="#service-oriented-architecture" class="headerlink" title="Service-oriented architecture"></a>
- <h2 id="service-oriented-architecture">Service-oriented architecture (SOA)</h2>
+## Service-oriented architecture (SOA)
 
 Service-oriented architecture is a pattern for designing and writing software that treats each function in the software as an independent “service” - something that can be used without needing to “understand” the complexities within that function.
 
@@ -55,9 +51,8 @@ Services are:
 
 SOA is a quite old idea (it dates back to the late 1970s) but with the rise of [microservices](#microservices) and [containerization]((#containers-and-containerization)) it is becoming increasingly popular and widely adopted. In many ways these new technologies have finally made the ideals of SOA achievable and scalable. 
 
-<a href="#microservices" class="headerlink" title="microservices"></a>
 
-<h2 id="microservices">Microservices</h2>
+## Microservices
 
 Microservices are an evolution of [service-oriented architecture (SOA)](#service-oriented-architecture) in which services are designed to be as modular and granular as possible. These microservices are then loosely coupled together to form an application.
 
@@ -71,9 +66,7 @@ Microservices naturally share all of the benefits of SOA, but their independence
 
 As you have probably guessed microservices are an ideal fit for [containers](#containers-and-containerization), and the two technologies have naturally evolved alongside each other.
 
- <a href="#orchestration" class="headerlink" title="orchestration"></a>
-
-<h2 id="Orchestration">Orchestration</h2>
+## Orchestration
 
 Software orchestration is a way to automate the routine management of your applications and the infrastructural environments on which those applications run.
 
@@ -83,7 +76,7 @@ Container orchestration platforms provide the framework to systematise and autom
 
 At Cloud 66 we use [Kubernetes](https://kubernetes.io/) - the market leading solution - to orchestrate containers and applications in clustered environments.
 
-<h2 id="pods-nodes-and-cluster">Pods, nodes and clusters</h2>
+## Pods, nodes and clusters
 
 In Kubernetes a **pod** is the smallest and simplest object in the system. A typical pod takes a container, gives it access to storage and assigns it an IP address. It also applies various policies and settings to it. 
 
@@ -114,9 +107,9 @@ This is not limited to HTTP or web traffic. The same concepts apply if a contain
 
 ***Note***
 
-In this context, **outside world** is used for any client of your service that's not inside the container. This includes any of your other services running on other stacks.
+In this context, **outside world** is used for any client of your service that's not inside the container. This includes any of your other services running on other environments.
 
-<h2 id="continuous-deployment-pipeline">Container Deployment pipeline (CDP)</h2>
+## Container Deployment pipeline (CDP)
 
 Modern software development - particularly for SaaS and web applications - requires more flexibility and agility than more traditional models. Software needs to change more frequently to accommodate changes in everything from underlying technologies to customer expectations. New features or fixes need to be shipped quickly. You can no longer set aside an entire day to handle a deployment.
 
