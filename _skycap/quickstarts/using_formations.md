@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Getting started with Skycap Formations
+order: 2
 categories: quickstarts
 legacy: false
 tags: ["getting started", "formations"]

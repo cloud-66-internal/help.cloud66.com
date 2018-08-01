@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Getting started with Skycap
+order: 1
 categories: quickstarts
 legacy: false
 tags: ["getting started"]
