@@ -8,4 +8,3 @@ _site
 .idea/vcs.xml
 .idea/workspace.xml
 node_modules
-_config.yml
