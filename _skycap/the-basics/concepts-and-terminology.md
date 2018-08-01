@@ -4,6 +4,7 @@ template: one-col
 title: Concepts and terminology
 categories: the-basics
 lead: "Understand the basic concepts and terms we use in this documentation"
+order: 3
 legacy: false
 tags: ["the basics","concepts", "terminology","explanation"]
 permalink: /:collection/:path
