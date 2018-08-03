@@ -10,7 +10,7 @@ permalink: /:collection/:path
 ---
 
 ## How to define a StencilGroup
-..
+.
 
 <div class="notice"><p>If you aren't already familiar with the concept of StencilGroups, they are <a href="/skycap/the-basics/formations-stencils-and-snapshots.html#what-are-stencil-groups">explained here</a>.</p></div>
 
