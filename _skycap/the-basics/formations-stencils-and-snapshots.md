@@ -16,7 +16,7 @@ Kubernetes provides amazing flexibilty to developers and operators. By consolida
 
 As your application evolves, so do the configuration files that are required to run it on the infrastructure: new components like Redis or Memcached are added and old ones removed, application configurations and secrets change and the number of micro-services keeps growing. This means you need to keep your configuration files not only flexible and managable, but also version controlled.
 
-Storing your configuration files in your source code, next to the rest of the code is one option. But what if your application is not store in a single git repository (mono-repo) and is developed and controlled by different teams? How do you ensure configuration changes that are required by developers of a certain service are in lock-step with the code? 
+Storing your configuration files in your source code, next to the rest of the code is one option. But what if your application is not stored in a single git repository (mono-repo) and is developed and controlled by different teams? How do you ensure configuration changes that are required by developers of a certain service are in lock-step with the code? 
 
 Also with secrets being stored in Kubernetes configuration files, how do you manage access to secrets to your team?
 
@@ -36,7 +36,7 @@ In most applications a repeating set of configuration sections are applied to ma
 
 ## What is a Stencil?
 
-Stencils are version controlled configuration templates for Kubernetes. They are used together with Formations to provide a secure, easy and flexible way to generating Kubernetes configuration files based on your application requirements.
+Stencils are version controlled configuration templates for Kubernetes. They are used together with Formations to provide a secure, easy and flexible way of generating Kubernetes configuration files based on your application requirements.
 
 Stencils support a light-weight [templating language](/skycap/references/stencil_placeholders.html) that is very easy to use while deliberately lacking full scale control flows like programming languages or templating / scripting markup.
 
@@ -69,7 +69,7 @@ While Snapshots provide a way to "freeze" your code and other application compon
 * Rolling out old code a "playground" cluster for diagnostics.
 * Redeploying the same code with different versions of configuration for optimization purposes.
 * Rolling back configuration changes without redeploying the code.
-* Deploying the production version to a local cluster (like minikube) for debugging
+* Deploying the production version to a local cluster (like [minikube](https://kubernetes.io/docs/setup/minikube/)) for debugging
 
 These are possible when code, configuration and all other parameters like environment variables are stored with Snapshots. 
 
@@ -86,11 +86,9 @@ Base Templates are a set of Stencils that can be used as the base for any new Fo
 
 For example you might choose to create a Base Template for your team so they can deploy the most commonly used components of your infrastructure to your Kubernetes cluster provider (for example AWS Fargate or Google GKE). 
 
-Base Templates can also group Stencils into arbitrary functional groups like Services and Configurations or Application, Databases, Storage, etc.
+Base Templates can also group Stencils into arbitrary functional groups like Services and Configurations or Application, Databases, Storage, etc. Your Base Templates are stored in a git repository.
 
-Your Base Templates are stored in a git repository and are editing by your team or Cloud 66.
-
-We provide a [public library](https://github.com/cloud66/stencils/tree/production) of Base Template Stencils on Github for you to use and possibly contribute for others to benefit from. 
+We provide a [public library](https://github.com/cloud66/stencils/tree/production) of Base Template Stencils on Github for you to use. In the spirit of open-source collaboration, we encourage you to contribute suggestions and new templates to this repo. 
 
 ## Why use Formations and Stencils?
 

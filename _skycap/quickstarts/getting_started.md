@@ -20,8 +20,9 @@ Before you start, please check you have the following:
 
 * **A Git repository containing your application code** &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.
 
->
-If you don't have images or code ready, you can use this [simple "hello world" project](https://github.com/cloud66-samples/helloworld.git) we've supplied on Github. (You can also use this project with our next tutorial on Formations.)
+<div class="notice"><p>If you don't have images or code ready, you can use this <a href="https://github.com/cloud66-samples/helloworld.git">simple "hello world" project</a> we've supplied on Github. (You can also use this project with our next tutorial on Formations.)
+</p></div>
+
 
 <h2 id="build-pipeline">What is a Build Pipeline?</h2>
 
