@@ -59,9 +59,9 @@ Microservices are an evolution of [service-oriented architecture (SOA)](#service
 
 The main differences between classic SOA and microservices are:
 
-* Size & complexity --- microservices tend to be smaller and simpler than traditional SOA modules
-* Independence --- microservices can be independently deployed (whereas SOA is traditionally dependent on a monolithic underlying platform)
-* Communication method --- microservices communicate with the rest of the application via language-agnostic APIs rather than the more traditional protocols used by SOA.
+* **Size & complexity** --- microservices tend to be smaller and simpler than traditional SOA modules
+* **Independence** --- microservices can be independently deployed (whereas SOA is traditionally dependent on a monolithic underlying platform)
+* **Communication method** --- microservices communicate with the rest of the application via language-agnostic APIs rather than the more traditional protocols used by SOA.
 
 Microservices naturally share all of the benefits of SOA, but their independence and abstract communication methodology makes them easier to deploy and manage at scale. Their small size also makes them easier to update or debug, and reduces the impact of any failures. 
 
