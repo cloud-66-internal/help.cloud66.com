@@ -9,7 +9,7 @@ lead: Using Skycap to deploy your applications to any Kubernetes cluster
 permalink: /:collection/:path
 ---
 
-Formations are used for create, manage and deploy Kubernetes configuration files to any Kubernetes cluster.
+Formations are used to create, manage and deploy Kubernetes configuration files to any Kubernetes cluster.
 
 ## What you’ll need
 
