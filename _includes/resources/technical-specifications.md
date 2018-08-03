@@ -42,22 +42,25 @@ You are free to specify a version for a number of components in your [manifest f
 
 ### Warning
 
-We cannot take responsibility for issues arising from non-recognized or incompatible versions.
+<div class="notice notice-danger"><p>We cannot take responsibility for issues arising from non-recognized or incompatible versions.</p></div>
 
-| Component           | Default version  |
-| - |-----:|
-| Docker      		  |			 17.12.0-ce |
-| ElasticSearch       |   		   5.1.2 |
-| GlusterFS 		  |    		   3.7.2 |
-| MongoDB      		  |			  2.6.11 |
-| MySQL		          |   		     5.7 |
-| Phusion Passenger	  |    		   5.2.1 |
-| PostGIS      		  |			     2.4 |
-| PostgreSQL          |   		     10 |
-| Redis				  |    		   4.0.8 |
-| Ruby      		  |	           2.5.0 |
-| Weave			      |   		   1.9.8 |
 
+<table class='table table-bordered table-striped'>
+<thead>
+<th>Component</th>
+<th>Default version</th></thead>
+<tr><td>Docker</td><td>17.12.0-ce</td></tr>
+<tr><td>ElasticSearch</td><td>5.1.2</td></tr>
+<tr><td>GlusterFS</td><td>3.7.2</td></tr>
+<tr><td>MongoDB</td><td>2.6.11</td></tr>
+<tr><td>MySQL</td><td>5.7</td></tr>
+<tr><td>Phusion Passenger</td><td>5.2.1</td></tr>
+<tr><td>PostGIS</td><td>2.4</td></tr>
+<tr><td>PostgreSQL</td><td>10</td></tr>
+<tr><td>Redis</td><td>4.0.8</td></tr>
+<tr><td>Ruby</td><td>2.5.0</td></tr>
+<tr><td>Weave</td><td>1.9.8</td></tr>
+</table>
 
 ### Important
 
