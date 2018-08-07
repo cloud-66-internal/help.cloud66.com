@@ -35,7 +35,7 @@ Containerization is made possible by **container engines** - systems that allow 
 While they share some of the same principles, containers are quite different to virtual machines or virtual servers. The most important differences are:
 
 * Containers do not incorporate the entire operating systems. They rely on the kernel of the underlying operating system of their host.
-* Virtual machines communicate with the underlying server via a hypervisor, while containers communicate with the underlying operating system via a container runtime (such as [Docker](#containers-and-containerization)).
+* Virtual machines communicate with the underlying server via a hypervisor, while containers communicate with the underlying operating system via a container runtime (such as Docker).
 
 It’s very common to mix these two technologies, with containers running on virtual machines.
 

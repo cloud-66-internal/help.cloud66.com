@@ -197,9 +197,9 @@ Congratulations! You just deployed your first Formation to a Kubernetes cluster.
 
 Formations are an extremely powerful tool to manage the flow of configuration files into Kubernetes. Here are some of their features:
 	
-* [Formations](/skycap/concepts/what-are-formations.html) as an infrastucture time machine
+* [Formations](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-formation) as an infrastucture time machine
 * Fine grained access control and permissions for each Formation and every Stencil for your team members
-* Ability to setup private [Base Templates](/skycap/concepts/what-are-formations) for your team
+* Ability to setup private [Base Templates](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-base-template) for your team
 * Powerful and very simple [Stencil placeholders syntax](/skycap/references/stencil_placeholders.html)
 * Bulk import of your environment variables and secrets into Stencils
 	
