@@ -31,12 +31,6 @@ If you'd like to use a _Rails/Rack_ stack, once your `manifest.yml` file is in y
 If you'd like to use a _Docker_ stack, create it and use the _Advanced_ tab after your code has been analyzed to provide your manifest content.
 {% endif %}
 
-
-### Need Help Building your first stack?
-
-Read about [building your first Cloud 66 stack](/skycap/tutorials/docker-introduction.html).
-
-
 ## Manifest file example
 
 ### Example: Change CORS settings

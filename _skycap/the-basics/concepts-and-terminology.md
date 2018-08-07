@@ -107,7 +107,7 @@ For example a container with a web application might be set to listen on port 30
 This is not limited to HTTP or web traffic. The same concepts apply if a container serves non-HTTP traffic (like web sockets, DB containers or custom TCP / UDP traffic).
 
 <div class="notice"><p>
-In this context, **outside world** is used for any client of your service that's not inside the container. This includes any of your other services running on other environments.</p></div>
+In this context, <em>outside world</em> is used for any client of your service that's not inside the container. This includes any of your other services running on other environments.</p></div>
 
 ## Container Deployment Pipeline (CDP)
 

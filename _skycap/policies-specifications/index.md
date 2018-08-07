@@ -1,23 +1,18 @@
 ---
 layout: post
 template: one-col
-title:  "Skycap Resources"
-lead: "Useful Resources About Cloud 66"
+title:  "Skycap Policies & Specifications"
+lead: "Useful information about Cloud 66's policies and technical specifications"
 legacy: false
-permalink: /:collection/resources/index.html
+permalink: /:collection/policies-specifications/index.html
 ---
 
-<div class="Toc Toc--howto">
-    <h2>Resources</h2>
+<div class="Toc Toc--policies">
     <ul>
-    {% assign section = site.skycap | where:"categories","resources" | sort: "order" %}
+    {% assign section = site.skycap | where:"categories","policies-specifications" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
-    <h2>Beta Program</h2>
-    <ul>
-    {% assign section = site.skycap | where:"categories","resources/beta-program" | sort: "order" %}
-    {% include list_articles.html section=section %}
-    </ul>
-</div><!--/.Toc-->
+   
+   </div><!--/.Toc-->
 
 
