@@ -14,17 +14,6 @@ permalink: /:collection/:path
 
 Your servers are deployed with **Ubuntu 16.04 LTS**.
 
-## Supported cloud providers
-
-Cloud 66 currently supports the following cloud providers:
-*   [Amazon Web Services](/{{page.collection}}/references/clouds/cloud-aws.html)
-*   [Digital Ocean](/{{page.collection}}/references/clouds/cloud-do.html)
-*   [Google Compute Engine](/{{page.collection}}/references/clouds/cloud-gce.html)
-*   [Linode](/{{page.collection}}/references/clouds/cloud-linode.html)
-*   [Microsoft Azure](/{{page.collection}}/references/clouds/cloud-azure.html)
-*   [Rackspace](/{{page.collection}}/references/clouds/cloud-rackspace.html)
-*   [CloudA](/{{page.collection}}/references/clouds/cloud-clouda.html)
-
 ## Supported frameworks
 
 We support end-to-end Docker deployments, meaning that we support any type of application. You can either let us build your Docker image (with a Dockerfile), or provide your own.

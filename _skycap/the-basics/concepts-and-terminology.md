@@ -50,12 +50,12 @@ Services are:
 * **Black boxes ---** They do not reveal their inner workings to the other parts of the system
 * **Reusable ---** Because they are self-contained, services can plugged into many different workflows and systems without needing to be changed. 
 
-SOA is a quite old idea (it dates back to the late 1970s) but with the rise of [microservices](#microservices) and [containerization]((#containers-and-containerization)) it is becoming increasingly popular and widely adopted. In many ways these new technologies have finally made the ideals of SOA achievable and scalable. 
+SOA is a quite old idea (it dates back to the late 1970s) but with the rise of [microservices](/skycap/the-basics/concepts-and-terminology.html#microservices) and [containerization]((/skycap/the-basics/concepts-and-terminology.html#containers-and-containerization)) it is becoming increasingly popular and widely adopted. In many ways these new technologies have finally made the ideals of SOA achievable and scalable. 
 
 
 ## Microservices
 
-Microservices are an evolution of [service-oriented architecture (SOA)](#service-oriented-architecture) in which services are designed to be as modular and granular as possible. These microservices are then loosely coupled together to form an application.
+Microservices are an evolution of [service-oriented architecture (SOA)](/skycap/the-basics/concepts-and-terminology.html#service-oriented-architecture) in which services are designed to be as modular and granular as possible. These microservices are then loosely coupled together to form an application.
 
 The main differences between classic SOA and microservices are:
 
@@ -65,13 +65,13 @@ The main differences between classic SOA and microservices are:
 
 Microservices naturally share all of the benefits of SOA, but their independence and abstract communication methodology makes them easier to deploy and manage at scale. Their small size also makes them easier to update or debug, and reduces the impact of any failures. 
 
-As you have probably guessed microservices are an ideal fit for [containers](#containers-and-containerization), and the two technologies have naturally evolved alongside each other.
+As you have probably guessed microservices are an ideal fit for [containers](/skycap/the-basics/concepts-and-terminology.html#containers-and-containerization), and the two technologies have naturally evolved alongside each other.
 
 ## Orchestration
 
 Software orchestration is a way to automate the routine management of your applications and the infrastructural environments on which those applications run.
 
-One of the challenges of [containerization](#containers-and-containerization) and [microservices](#microservices) is that, instead of deploying and managing a single, monolithic application, you need to deploy and manage dozens, hundreds or even thousands of containers. This quickly makes reliable manual management of many operational tasks, like scaling or migration, effectively impossible. 
+One of the challenges of [containerization](/skycap/the-basics/concepts-and-terminology.html#containers-and-containerization) and [microservices](#microservices) is that, instead of deploying and managing a single, monolithic application, you need to deploy and manage dozens, hundreds or even thousands of containers. This quickly makes reliable manual management of many operational tasks, like scaling or migration, effectively impossible. 
 
 Container orchestration platforms provide the framework to systematise and automate the entire lifecycle of a containerized and distributed application. In other words these platforms allow you to define the way you want any management task to work - for example rolling back code - and from then onwards let the platform handle that task with little to no human intervention required.
 
