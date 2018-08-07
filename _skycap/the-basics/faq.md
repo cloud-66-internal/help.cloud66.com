@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: FAQs
 categories: the-basics
-lead: ""
+lead: "Frequently asked questions"
 order: 10
 legacy: false
 

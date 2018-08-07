@@ -2,8 +2,9 @@
 layout: post
 template: one-col
 title: Deploying your Formations
+order: 1
 categories: how-to-guides/formations
-lead: ""
+lead: "A guide to the different methods of deploying using Formations."
 legacy: false
 tags: ["formations", "toolbelt"]
 permalink: /:collection/:path

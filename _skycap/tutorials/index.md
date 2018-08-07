@@ -9,10 +9,16 @@ permalink: /:collection/tutorials/index.html
 
 <div class="Toc Toc--howto">
     <h2>Tutorials</h2>
+  
+Tutorials are currently still being developed. Please check back with us in a few days, or contact our Support team for assistance.
+
+<!--  
     <ul>
     {% assign section = site.skycap | where:"categories","tutorials" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
+    
+-->
 </div><!--/.Toc-->
 
 

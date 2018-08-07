@@ -9,10 +9,9 @@ lead: Use Skycap to automatically turn your source code into container (Docker) 
 permalink: /:collection/:path
 ---
 
-
 Skycap is a Container Deployment Pipeline. You can use Skycap to automatically turn your source code into container (Docker) images, manage your Kubernetes configuration files and deploy your applications to any Kubernetes cluster.
 
-<h2 id="What-youll-need">What you’ll need</h2>
+## What you’ll need
 
 Before you start, please check you have the following:
 
@@ -24,7 +23,7 @@ Before you start, please check you have the following:
 </p></div>
 
 
-<h2 id="build-pipeline">What is a Build Pipeline?</h2>
+## What is a Build Pipeline?
 
 Build pipelines are composed of all the individual ([containerized](/skycap/the-basics/concepts-and-terminology.html#containers-and-containerization)) services that make up your application. Services can include raw source code that needs to be built into Docker images or pre-built images. You can mix and match these as required.
 
@@ -33,10 +32,7 @@ Build pipelines are composed of all the individual ([containerized](/skycap/the-
 * **Pre-built Container Images** &mdash; These can be hosted in any public image repo like Dockerhub or your own private repo. 
 
 
-<h2 id="get-started">
-   
-Lets Get Started
-</h2>
+## Lets Get Started
 
 New users should click *start trial* for the Skycap product. If you're already using Cloud 66 just click *New Application &rarr; Skycap (Build containers)* button on the dashboard.
 
@@ -51,7 +47,7 @@ New users should click *start trial* for the Skycap product. If you're already u
     </div>
 </div>
 
-<h2 id="add-services">Adding Services</h2>
+## Adding Services
 
 * **Give your application a Name** &mdash; This will be used to label your application throughout the Cloud 66 dashboard.
           
@@ -59,7 +55,7 @@ New users should click *start trial* for the Skycap product. If you're already u
 
 <img src="/assets/skycap/skycap_add_services_ani_update.gif" alt="Adding services to a Skycap build pipeline">
 
-<h2 id="specifying-image-source">Specifying the source of your images</h2>
+## Specifying the source of your images
 
 <img src="/assets/skycap/skycap_service_image.png" alt="Specifying the source of your service" style="float:right; margin-top: 0.25em">
 
@@ -73,10 +69,7 @@ The *Where is your service image?* dropdown provides you with three options to s
  
 Once you've finished adding your services click the "Create Snapshot" button.
 
-
-<h2 id="building-images-buildgrid">
-Snapshots and building images
-</h2>
+## Snapshots and building images
 
 A snapshot captures all the components of your application including application images, environment variables and configuration items, in preparation for deployment. 
 
@@ -89,7 +82,7 @@ During the build process you can view the status of each individual build. You c
 <img src="/assets/skycap/skycap_buildgrid_queue.png" alt="Adding services to a Skycap build pipeline">
 
 
-<h2 id="deploy-containers">Deploying your application</h2>
+## Deploying your application
 
 Once you've built your images, you're ready to deploy your app. There are two ways to do this:
 
@@ -97,11 +90,10 @@ Once you've built your images, you're ready to deploy your app. There are two wa
 
 2. Using your own (existing) Kubernetes cluster > [Get started with Skycap Formations](/skycap/quickstarts/using_formations.html)
  
+## What's next?
 
-<h2 id="advanced-features">Advanced features
-</h2>
+Now that you have your first application defined, you can learn how to make that application live:
 
-All of the information that defines how your services are built is accessible in the *service.yml* file. 
+* *Either* [create your first Formation](/skycap/quickstarts/using_formations.html) and use it to [deploy your application](/skycap/quickstarts/using_formations.html#deploying-it-all-to-your-cluster) to a Minikube cluster
 
-You can edit this by clicking the *Configuration Files* link in the Application toolbar on the right-hand side of the screen. This provides full access to this configuration and you can edit the file directly.
-
+* *Or* get started with [Maestro](/maestro/quickstarts/getting_started.html), Cloud 66's full container management service, to deploy and manage your containers and infrastructure.

@@ -2,8 +2,9 @@
 layout: post
 template: one-col
 title: Using Stencil Groups
+order: 4
 categories: how-to-guides/formations
-lead: ""
+lead: "How to define and use StencilGroups and StencilGroup rules"
 legacy: false
 tags: ["formations", "stencils"]
 permalink: /:collection/:path
