@@ -177,7 +177,7 @@ One way to apply your rendered Stencils to the cluster is by downloading them as
 A simpler way is to use [Cloud 66 Toolbelt](/skycap/quickstarts/using-cloud66-toolbelt.html) (cx). Simply click on the "copy" icon next to the command at the top of the page and use it to pipe the Stencils directly to your cluster by appending `| kubectl apply -f -` to the end of the command.
 
 The end result should look something like this:
-<pre>cx snapshots render --stack 'Hello World' --snapshot 'sn-xizeh-zamic-zycic-vakoh-sufes-gyrah-vipoz-kovuf-boxex' --formation 'fm-220346840f481e7c5576ebb80384daee' | kubectl apply -f -</pre> 
+<pre class="prettyprint">cx snapshots render --stack 'Hello World' --snapshot 'sn-xizeh-zamic-zycic-vakoh-sufes-gyrah-vipoz-kovuf-boxex' --formation 'fm-220346840f481e7c5576ebb80384daee' | kubectl apply -f -</pre> 
 (Don't use this exact example command - the IDs of your own app will be completely different)
 
 The `cx snapshots render` command pulls the rendered versions of your Stencils from your Formation and concatenates them so they can be piped into your cluster using `kubectl`. 
@@ -197,9 +197,9 @@ Congratulations! You just deployed your first Formation to a Kubernetes cluster.
 
 Formations are an extremely powerful tool to manage the flow of configuration files into Kubernetes. Here are some of their features:
 	
-* [Formations](/skycap/concepts/what-are-formations.html) as an infrastucture time machine
+* [Formations](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-formation) as an infrastucture time machine
 * Fine grained access control and permissions for each Formation and every Stencil for your team members
-* Ability to setup private [Base Templates](/skycap/concepts/what-are-formations) for your team
+* Ability to setup private [Base Templates](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-base-template) for your team
 * Powerful and very simple [Stencil placeholders syntax](/skycap/references/stencil_placeholders.html)
 * Bulk import of your environment variables and secrets into Stencils
 	
