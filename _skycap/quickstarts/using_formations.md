@@ -5,7 +5,7 @@ order: 2
 categories: quickstarts
 legacy: false
 tags: ["getting started", "formations"]
-lead: Using Skycap to deploy your applications to any Kubernetes cluster
+lead: Use Skycap to deploy your applications to any Kubernetes cluster
 permalink: /:collection/:path
 ---
 

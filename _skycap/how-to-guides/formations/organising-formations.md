@@ -2,8 +2,9 @@
 layout: post
 template: one-col
 title: Organising your Formations
+Order: 2
 categories: how-to-guides/formations
-lead: ""
+lead: "Best practices for naming and organising Stencils and Formations"
 legacy: false
 tags: ["getting-started"]
 permalink: /:collection/:path

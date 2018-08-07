@@ -2,8 +2,9 @@
 layout: post
 template: one-col
 title: Creating Stencil Template Repos
+Order: 3
 categories: how-to-guides/formations
-lead: ""
+lead: "A guide to creating and updating a custom template repository"
 legacy: false
 tags: ["formations", "stencils"]
 permalink: /:collection/:path
