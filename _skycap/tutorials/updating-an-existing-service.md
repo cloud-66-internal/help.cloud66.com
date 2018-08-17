@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Editing an existing service
+title: Updating an existing service
 categories: tutorials
 lead: ""
 legacy: false
