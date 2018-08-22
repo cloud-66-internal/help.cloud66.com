@@ -3,7 +3,8 @@ layout: post
 template: one-col
 title: Updating an existing service
 categories: tutorials
-lead: ""
+order: 1
+lead: "Updating the code of an existing service"
 legacy: false
 tags: ["docker"]
 permalink: /:collection/:path
@@ -38,7 +39,8 @@ In this example, you have decided to deploy a beta version of the Hello World ap
 4. Once Skycap has confirmed access to the new code location, click *Save changes*
 
 <img src="/assets/skycap/tutorial-editing-service-1.gif"/>
-### Warning
+
+#### Warning
 <div class="notice notice-warning"><p>The changes you make here will not reflect in either your Formations or your Maestro deployments until you take a new Snapshot of the updated application.</p></div>
 
 ## Deploying your updated application
@@ -61,6 +63,10 @@ You’ll notice that the `cx` command looks nearly identical to the one we used 
 
 If you’ve followed all the steps successfully then the web page that loads when you run `minikube service` command will have the word “(beta)” in the title.
 
+## What’s next?
+
+* Learn how to [add new services or components](/skycap/tutorials/adding-a-new-service.html) to a service
+* Learn how to [roll back to an older version of your application](/skycap/tutorials/rolling-back-using-snapshots.html) using Snapshots.
 
 
 
