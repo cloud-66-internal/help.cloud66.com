@@ -67,7 +67,7 @@ If you’ve followed all the steps successfully then the web page that loads whe
 
 * Learn how to [add new services or components](/skycap/tutorials/adding-a-new-service.html) to a service
 * Learn how to [roll back to an older version of your application](/skycap/tutorials/rolling-back-using-snapshots.html) using Snapshots.
-
+* Learn how to use [Habitus](/skycap/tutorials/using-habitus-with-skycap.html) with Skycap
 
 
 

@@ -67,8 +67,4 @@ The default view for a Service has a summary view of the build logs. To see more
 
 * Learn how to [update an existing service](/skycap/tutorials/updating-an-existing-service.html) in Skycap.
 * Learn how to [add new services or components](/skycap/tutorials/adding-a-new-service.html) to a service.
-
-
-
-
-
+* Learn how to use [Habitus](/skycap/tutorials/using-habitus-with-skycap.html) with Skycap

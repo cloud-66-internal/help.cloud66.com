@@ -120,3 +120,4 @@ If the command fails, double check that the pod has started up completely by usi
 
 * Learn how to [update an existing service](/skycap/tutorials/updating-an-existing-service.html)
 * Learn how to [roll back to an older version of your application](/skycap/tutorials/rolling-back-using-snapshots.html) using Snapshots.
+* Learn how to use [Habitus](/skycap/tutorials/using-habitus-with-skycap.html) with Skycap
