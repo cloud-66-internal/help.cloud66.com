@@ -67,4 +67,7 @@ The default view for a Service has a summary view of the build logs. To see more
 
 * Learn how to [update an existing service](/skycap/tutorials/updating-an-existing-service.html) in Skycap.
 * Learn how to [add new services or components](/skycap/tutorials/adding-a-new-service.html) to a service.
-* Learn how to use [Habitus](/skycap/tutorials/using-habitus-with-skycap.html) with Skycap
+* Learn how to add [custom environment variables](/skycap/tutorials/setting-environment-variables.html) to your application.
+* Learn how to set up [access control and permissions](/skycap/tutorials/setting-up-access-control.html) on your Formations and Stencils.
+* Learn how to use your [Habitus build flow](/skycap/tutorials/using-habitus-with-skycap.html) within Skycap.
+* Learn how to use [validation policies](/skycap/tutorials/using-validation-policies.html) to ensure your Stencils adhere to your standards and conventions. 

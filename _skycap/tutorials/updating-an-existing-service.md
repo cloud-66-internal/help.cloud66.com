@@ -65,9 +65,11 @@ If you’ve followed all the steps successfully then the web page that loads whe
 
 ## What’s next?
 
-* Learn how to [add new services or components](/skycap/tutorials/adding-a-new-service.html) to a service
+* Learn how to [add new services or components](/skycap/tutorials/adding-a-new-service.html) to a service.
 * Learn how to [roll back to an older version of your application](/skycap/tutorials/rolling-back-using-snapshots.html) using Snapshots.
-* Learn how to use [Habitus](/skycap/tutorials/using-habitus-with-skycap.html) with Skycap
-
+* Learn how to add [custom environment variables](/skycap/tutorials/setting-environment-variables.html) to your application.
+* Learn how to set up [access control and permissions](/skycap/tutorials/setting-up-access-control.html) on your Formations and Stencils
+* Learn how to use your [Habitus build flow](/skycap/tutorials/using-habitus-with-skycap.html) within Skycap.
+* Learn how to use [validation policies](/skycap/tutorials/using-validation-policies.html) to ensure your Stencils adhere to your standards and conventions. 
 
 
