@@ -28,7 +28,7 @@ Before you start, please check you have the following:
 
 <div class="notice"><p>In this example we’re using the same <a href="https://github.com/cloud66-samples/helloworld.git">simple "hello world" project</a> that we used in our Getting Started guides.</p></div>
 
-## Understanding a Copper DSL rule
+## Understanding Copper DSL rules
 
 Copper’s DSL is focussed on doing two things:
 
