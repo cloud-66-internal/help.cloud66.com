@@ -33,9 +33,9 @@ Before you start, please check you have the following:
 Skycap’s default behaviour is to build “simple” applications which have a single `Dockerfile`, so Habitus-enabled projects need to follow a different route:
 
 1. Open your [Cloud 66 dashboard](https://app.cloud66.com/dashboard), click the green *New Application* button and choose “Skycap”
-Name your application (e.g. “Habitus example”)
-2. Click on *Upload service.yml File* and then select the file in question
-3. Click *Next* and then wait for Skycap to ingest all the components in the service.yml (this can take a little while depending on the complexity of the project).
+2. Name your application (e.g. “Habitus example”)
+3. Click on *Upload service.yml File* and then select the file in question
+4. Click *Next* and then wait for Skycap to ingest all the components in the service.yml (this can take a little while depending on the complexity of the project).
 
 Once the service has been successfully added to Skycap, you can run a full Habitus build by clicking *Create Snapshot*. 
 
@@ -46,6 +46,9 @@ You can track the output of the Habitus build process by clicking on the *View �
 * Learn how to [update an existing service](/skycap/tutorials/updating-an-existing-service.html) in Skycap.
 * Learn how to [add new services or components](/skycap/tutorials/adding-a-new-service.html) to a service.
 * Learn how to [roll back to an older version of your application](/skycap/tutorials/rolling-back-using-snapshots.html) using Snapshots.
+* Learn how to add [custom environment variables](/skycap/tutorials/setting-environment-variables.html) to your application.
+* Learn how to set up [access control and permissions](/skycap/tutorials/setting-up-access-control.html) on your Formations and Stencils.
+* Learn how to use [validation policies](/skycap/tutorials/using-validation-policies.html) to ensure your Stencils adhere to your standards and conventions. 
 
 
 
