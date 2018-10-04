@@ -28,13 +28,13 @@ $ touch hello.txt
 
 Now SSH to another web server on your stack and you should be able to see `hello.txt` under `/mnt/data-store`.
 
+{% if page.collection == 'legacy_docker' or page.collection == 'maestro' %}
 ## What about my containers?
-So far we saw how you can create a share disk volume on every server. But what about accessing this share storage from each container? By default, all your containers are started with an automatic mount volume of the same name at `/mnt/data-store`. This means your code can read and write to `/mnt/data-store` from inside a container without any further changes.
+So far we saw how you can create a share disk volume on every server. But what about accessing this share storage from each container? You can [mount](/{{page.collection}}/how-to-guides/deployment/service-storage.html) the `/mnt/data-store` directory into any directory inside your container. This means your code can read and write to `/mnt/data-store` from inside a container without any further changes.
 
-You don't need to manually mount your GlusterFS volumes inside your containers.
-
+{% endif %}
 ## Fine grained access control for your data
-By default Cloud 66 builds a GlusterFS cluster for your stack, creates a default mount point on it and mounts that onto every application server and container of your stack. This is great to start with and for many workloads.
+By default Cloud 66 builds a GlusterFS cluster for your stack, creates a default mount point on it and mounts that onto every application server. This is great to start with and for many workloads.
 
 But what if you need to make sure some services have read/write access to your data and some only readonly access?
 
