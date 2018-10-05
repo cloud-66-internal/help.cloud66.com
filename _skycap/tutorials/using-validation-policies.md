@@ -14,6 +14,8 @@ permalink: /:collection/:path
 
 Skycap allows you to specify validation policies for any of your Formations. These are essentially tests that Stencils within a Formation need to pass before they can be rendered and used for deploying to your cluster(s).
 
+These policies are a powerful tool for enforcing standards and patterns in your application. For example policies can ensure that a [standard sidecar container](/skycap/tutorials/adding-and-enforcing-sidecar-containers.html) is deployed with every service, or that third party components (e.g. MySQL) don't automatically upgrade and break your code.
+
 Validation policies in Skycap are written in [Copper DSL](https://copper.sh/docs/getting-started/), a domain specific language we created to make validating Kubernetes configuration files easier and more reliable. ([Copper](https://copper.sh/) is open-source, so you can use it regardless of whether you use Skycap or not.)
 
 ## What you’ll need
@@ -37,6 +39,8 @@ Copper’s DSL is focussed on doing two things:
 
 Copper DSL has [extensive documentation](https://copper.sh/docs/copper-dsl/) that will help you write your own rules when you are more comfortable with the process. 
 
+We also have [another guide](/skycap/how-to-guides/formations/writing-and-debugging-copper-rules.html) to help you more easily test and debug your rules.
+
 For now we’re just going to use a single simple example rule:
 
 ```
@@ -55,7 +59,7 @@ In order to create a validation policy within any Formation:
 2. Click on *Formations* in the right-hand panel
 3. Click on the name of the Formation which you want to validate (in our case “Hello World”)
 4. Click the “Policies” tab at the top of the main panel
-5. Click on the green **+** and then give the new policy a name (`NoPort80` would be sensible) 
+5. Click on the green **+** and then give the new policy a name (`NoPort5000` would be sensible) 
 6. Paste our demo rule into the code area.
 7. Type `kind: Service` into the *Selector* field (we’ll explain more about this later)
 8. Add a commit message and click *Save policy*
@@ -70,6 +74,7 @@ Since our Hello World Formation does use Port 5000 in the `helloworld_service.ym
 
 ## What’s next?
 
+* A guide to [writing and debugging Copper rules](/skycap/how-to-guides/formations/writing-and-debugging-copper-rules.html)
 * Learn how to [update an existing service](/skycap/tutorials/updating-an-existing-service.html) in Skycap.
 * Learn how to [add new services or components](/skycap/tutorials/adding-a-new-service.html) to a service.
 * Learn how to [roll back to an older version of your application](/skycap/tutorials/rolling-back-using-snapshots.html) using Snapshots.
