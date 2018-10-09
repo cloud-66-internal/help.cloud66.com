@@ -36,7 +36,7 @@ You can scale your services horizontally across your Kubernetes cluster by click
 
 <div class="notice">
  	<h3>Note:</h3><p>
-	The container/pod distribution is handled by Kuberntes controller and as a result it is <strong>not guranteed</strong> that your container/pod is  <strong>distributed evenly</strong> .i.e you may sometimes find one server with <strong>multiple</strong> of the same containers/pods and one with <strong>zero</strong> container/pod of the same service.</p>
+	The container/pod distribution is handled by Kuberntes controller and as a result it is <strong>not gauranteed</strong> that your container/pod is  <strong>distributed evenly</strong> .i.e you may sometimes find one server with <strong>multiple</strong> of the same containers/pods and one with <strong>zero</strong> container/pod of the same service.</p>
 </div>	
 
 ## Database servers

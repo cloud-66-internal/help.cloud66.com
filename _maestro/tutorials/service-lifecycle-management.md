@@ -9,7 +9,7 @@ tags: ['service', 'operations']
 permalink: /:collection/:path
 ---
 
-<h2 id="orchestration">Orchestration engine</h2>
+## Orchestration engine
 
 Cloud 66 provides an orchestration engine to roll out Docker images to your servers and initialize containers from them. This is what is provided for you from start to finish:
 
@@ -45,25 +45,54 @@ There are a number of directives you can set in your service configuration to cu
 
 <hr>
 
-<h3 id="health">Health</h3>
-The `health` option allows you to specify one of two types of checks on your containers - **readiness** checks, and **liveness** checks. Both checks define a set of rules that are used to determine whether your application is currently healthy. For instance, you can check that the application is responding on an HTTP endpoint; or a post-initialization file is present.
+### Health
+<div class="Tabs Tabs--enclosed">
+    <nav>
+      <ul class="TabMini js_tabs">
+        <li class="TabMini-item active">
+          <a href="#V2-First" class="TabMini-link">
+            V2 (Maestro)
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#V1-First" class="TabMini-link">
+            V1 (Docker legacy)
+          </a>
+        </li>
+      </ul>
+    </nav>
 
+<section id="V2-First" class="Tabs-content js_tab_content">
+ 
+<p>The <code>health</code> option allows you to specify one of two types of checks on your containers - <strong>readiness</strong> checks, and <strong>liveness</strong> checks. Both checks define a set of rules that are used to determine whether your application is currently healthy. For instance, you can check that the application is responding on an HTTP endpoint; or a post-initialization file is present.
+</p><p>
 <b>Readiness health checks</b> are used to determine if your newly started containers are ready to replace the old containers. Until the new containers are ready, the old containers will not be killed, and the new containers will not be served traffic. This effectively provides zero down-time deployments.
-
+</p><p>
 <b>Liveness health checks</b>, on the other hand, are used to continuously monitor your application once it's already running. If your application fails a liveness check, it will be restarted - this is useful for issues that can not be resolved otherwise.
-
+</p><p>
 The rules below are available to both health checks - note that you aren't required to specify all options. Any options not used will use their default values.
+</p>
+<ul>
+<li> <strong>type</strong> (<em>string, defaults to 'http'</em>): Accepted values are <strong>http</strong>, <strong>https</strong>, <strong>tcp</strong>, and <strong>exec</strong>.</li>
 
-- **type** (_string, defaults to 'http'_): Accepted values are **http**, **https**, **tcp**, and **exec**.
-- **endpoint** (_string, defaults to '/'_): The endpoint tested for status. Only for the **http**, and the **https** types.
-- **command** (_string, no default_): The command executed to test for status. Must return exit-code 0. Only for the **exec** type.
-- **timeout** (_integer, defaults to 5_): Maximum time in seconds to wait for a health check to complete.
-- **success_threshold** (_integer, defaults to 1_): Number of consecutive successes to be considered healthy.
-- **failure_threshold** (_integer, defaults to 1_): Number of consecutive failures to be considered unhealthy.
-- **initial_delay** (_integer, defaults to 1_): Time in seconds to wait after container has started before starting liveness checks.
-- **period** (_integer, defaults to 5_): Number of seconds between each consecutive health check.
-- **port** (_integer, defaults to container port_): The port to run the health check against. Only for the **http**, **https**, and **tcp** types.
-- **http_headers** (_array, defaults to []_): Custom headers to add for HTTP traffic. Only for the **http**, and **https** types. Contains an array of hashes with the **name** and **value** keys, both of string type.
+<li> <strong>endpoint</strong> (<em>string, defaults to '/'</em>): The endpoint tested for status. Only for the <strong>http</strong>, and the <strong>https</strong> types.</li>
+
+<li> <strong>command</strong> (<em>string, no default</em>): The command executed to test for status. Must return exit-code 0. Only for the <strong>exec</strong> type.</li>
+
+<li> <strong>timeout</strong> (<em>integer, defaults to 5</em>): Maximum time in seconds to wait for a health check to complete.</li>
+
+<li> <strong>success_threshold</strong> (<em>integer, defaults to 1</em>): Number of consecutive successes to be considered healthy.</li>
+
+<li> <strong>failure_threshold</strong> (<em>integer, defaults to 1</em>): Number of consecutive failures to be considered unhealthy.</li>
+
+<li> <strong>initial_delay</strong> (<em>integer, defaults to 1</em>): Time in seconds to wait after container has started before starting liveness checks.</li>
+
+<li> <strong>period</strong> (<em>integer, defaults to 5</em>): Number of seconds between each consecutive health check.</li>
+
+<li> <strong>port</strong> (<em>integer, defaults to container port</em>): The port to run the health check against. Only for the <strong>http</strong>, <strong>https</strong>, and <strong>tcp</strong> types.</li>
+
+<li> <strong>http_headers</strong> (<em>array, defaults to []</em>): Custom headers to add for HTTP traffic. Only for the <strong>http</strong>, and <strong>https</strong> types. Contains an array of hashes with the <strong>name</strong> and <strong>value</strong> keys, both of string type.</li>
+</ul>
 
 {% highlight yaml %}
 services:
@@ -84,7 +113,45 @@ services:
                   value: 'john-smith'
 {% endhighlight %}
 
-You can also use the default health rules with `health: default`, or explicitly disable health checking by leaving the `health` option out or specifying `health: none`.
+You can also use the default health rules with <code>health: default</code>, or explicitly disable health checking by leaving the <code>health</code> option out or specifying <code>health: none</code>.
+</section>
+
+<section id="V1-First" class="Tabs-content js_tab_content is-hidden">
+<p>The <code>health</code> option allows you to specify rules to automatically determine if your newly started containers are healthy before killing old containers. This effectively provides zero down-time deployments. There are two types of health checks - <code>inbound</code> and <code>outbound</code>:
+</p><p>
+<b>Inbound health checks</b> use Cloud 66 to determine the health of your containers based on rules that you provide - when a new container is started during deployment, we will automatically attempt to get a response from the container on the specified endpoints. If we don't get the specified HTTP response code back within the "timeout" period we will assume the deploy has failed and roll back the container deployments.
+</p><p>
+<b>Outbound health checks</b> on the other hand allows your container to notify us of its health state, which is useful for services that don't expose an endpoint. The environment variable <code>CONTAINER_NOTIFY_URL</code> is automatically created and injected into your container, which accepts a POST request with two different JSON payloads depending on the health state.
+</p><p>
+A healthy container would be expected to POST <code>{"ready":true}</code> as its payload, while an unhealthy container can POST <code>{"ready":false, "reason":"error message"}</code>.
+</p><p>
+The rules below are available to health checks - note that you aren't required to specify all options. Any options not used will use their default values.
+</p>
+<ul>
+<li><strong>type</strong> (<em>defaults to inbound</em>): Accepted values are <code>inbound</code> or <code>outbound</code>.</li>
+<li><strong>endpoint</strong> (<em>defaults to <code>/</code></em>): The endpoint tested for status.</li>
+<li><strong>protocol</strong> (<em>defaults to HTTP</em>): Accepted values are <code>HTTP</code> or <code>HTTPS</code>.</li>
+<li><strong>timeout</strong> (<em>defaults to 30s</em>): Maximum time to wait for a container to start, in seconds.</li>
+<li><strong>accept</strong> (<em>defaults to 200 and 300-399</em>): HTTP response codes to accept.</li>
+</ul>
+
+{% highlight yaml %}
+services:
+    [service_name]:
+        health:
+          type: inbound
+          endpoint: "/healthy"
+          protocol: "http"
+          timeout: "45s"
+          accept: ["200"]
+{% endhighlight %}
+<p>
+You can also use the default health rules with <code>health: default</code>, or explicitly disable health checking by leaving the <code>health</code> option out or specifying <code>health: none</code>.
+</p>
+
+</section>
+</div>
+
 
 <hr>
 
