@@ -27,6 +27,14 @@ collections:
     output: true
     permalink: /:collection/:path/
     icon: foundicon-idea
+  starter:
+    output: true
+    permalink: /:collection/:path/
+    icon: foundicon-idea
+  copper:
+    output: true
+    permalink: /:collection/:path/
+    icon: foundicon-idea
   redirects:
     output: true
     permalink: /:path/

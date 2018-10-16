@@ -4,7 +4,7 @@ template: one-col
 title: Habitus
 lead: A Docker Build Flow Tool
 legacy: false
-permalink: /:collection/:categories/index.html
+permalink: /:collection/index.html
 ---
 
 ## Welcome to Habitus

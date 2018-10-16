@@ -1,0 +1,12 @@
+<nav class="list">
+        <div class="sticky-sidebar">
+            <h2 class="product-title" id="{{title}}-product-heading">
+                {{ title }} Documentation
+            </h2>
+        </div>
+        {% assign product = page.collection | downcase %}
+        <ul class="menu-root">
+            <li class="sidebar-link current"><h3 class="u-flushTop"><a href="//{{product}}/">{{title}}</a></h3></li>
+        </ul>
+</nav>
+

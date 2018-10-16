@@ -10,5 +10,9 @@
 	{% when 'legacy_docker' %}
     {% include left_nav_collection.html collection=site.legacy_docker %}
 	{% when 'habitus' %}
-    {% include habitus_left_nav.html collection=site.habitus %}
+    {% include oss_left_nav.html collection=site.habitus %}
+	{% when 'starter' %}
+    {% include oss_left_nav.html collection=site.starter %}
+    {% when 'copper' %}
+    {% include oss_left_nav.html collection=site.copper %}
 {% endcase %}
