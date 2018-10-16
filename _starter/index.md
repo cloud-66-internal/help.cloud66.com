@@ -5,6 +5,7 @@ title: Starter
 lead: An Open Source Dockerfile Generator
 legacy: false
 permalink: /:collection/index.html
+index: true
 ---
 
 <h2>

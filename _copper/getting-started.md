@@ -5,6 +5,7 @@ title: Getting Started with Copper
 lead: Taking the first steps to validate your Kubernetes configuration files
 legacy: false
 permalink: /:collection/:path
+order : 2
 ---
 
 ## Overview

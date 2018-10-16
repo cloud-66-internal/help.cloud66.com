@@ -5,6 +5,7 @@ title: Habitus
 lead: A Docker Build Flow Tool
 legacy: false
 permalink: /:collection/index.html
+index: true
 ---
 
 ## Welcome to Habitus

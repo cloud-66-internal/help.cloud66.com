@@ -1,12 +1,27 @@
 <nav class="list">
         <div class="sticky-sidebar">
-            <h2 class="product-title" id="{{title}}-product-heading">
-                {{ title }} Documentation
+            <h2 class="product-title" id="oss-product-heading">
+                Documentation
             </h2>
         </div>
-        {% assign product = page.collection | downcase %}
+
+        {% assign habitus = site.habitus | sort: "order" %}
+        {% assign copper = site.copper | sort: "order" %}
+        {% assign starter = site.starter | sort: "order" %}
         <ul class="menu-root">
-            <li class="sidebar-link current"><h3 class="u-flushTop"><a href="//{{product}}/">{{title}}</a></h3></li>
+            <li><h3 class="u-flushTop"><a href="/habitus">Habitus</a></h3></li>
+            {% include left_nav_list.html section=habitus current=page %}
+        </ul>
+
+        <ul class="menu-root">
+            <li><h3 class="u-flushTop"><a href="/copper">Copper</a></h3></li>
+            {% include left_nav_list.html section=copper current=page %}
+        </ul>
+
+
+        <ul class="menu-root">
+            <li><h3 class="u-flushTop"><a href="/starter">Starter</a></h3></li>
+            {% include left_nav_list.html section=starter current=page %}
         </ul>
 </nav>
 
