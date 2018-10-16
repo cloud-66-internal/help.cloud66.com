@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Building your manifest file
+title: Building a manifest file
 categories: how-to-guides/deployment
+order: 1
 lead: ""
 legacy: false
 tags: ["manifest", "customization"]

@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title: What is Load Balancing?
+title: Adding a Load Balancer
 categories: tutorials
+order: 8
 lead: ""
 legacy: false
 tags: ["operations"]

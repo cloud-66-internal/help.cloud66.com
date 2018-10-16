@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Maestro Quickstarters"
+title:  "Getting Started"
 lead: Getting Started with Maestro
 legacy: false
 permalink: /:collection/quickstarts/index.html

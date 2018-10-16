@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title: What is a failover group?
+title: Adding a failover group
 categories: tutorials
+order: 7
 lead: ""
 legacy: false
 tags: ["High-availability"]

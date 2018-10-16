@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "What is the database backup add-in?"
+title: What is the database backup add-in? BB!
 categories: how-to-guides/add-ins
 lead: Managed and unmanaged database backups
 tags: ['database']

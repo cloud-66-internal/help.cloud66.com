@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title: What is CustomConfig Git?
+title: Using CustomConfig Git
 categories: tutorials
+order: 3
 lead: ""
 legacy: false
 tags: ["customization"]

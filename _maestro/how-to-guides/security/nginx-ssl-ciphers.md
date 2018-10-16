@@ -10,7 +10,7 @@ permalink: /:collection/:path
 ---
 {% assign product = "common" %}
 
-You can strengthen nginx SSL security by adjusting its SSL cipher settings. You can change this using [CustonConfig](/{{page.collection}}/tutorials/custom-config.html). Please remember that the most secure settings (below) is not backward compatible with IE6 and Windows XP clients.
+You can strengthen nginx SSL security by adjusting its SSL cipher settings. You can change this using [CustomConfig](/{{page.collection}}/tutorials/custom-config.html). Please remember that the most secure settings (below) is not backward compatible with IE6 and Windows XP clients.
 
 Under nginx CustomConfig you can change the default SSL cipher to one of the following:
 

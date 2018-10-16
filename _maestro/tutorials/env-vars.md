@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title: What are environment variables?
+title: Adding environment variables
 categories: tutorials
+order: 6
 lead: ""
 legacy: false
 tags: ["customization"]

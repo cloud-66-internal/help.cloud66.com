@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title: What is CustomConfig?
+title: Using CustomConfig
 categories: tutorials
+order: 2
 lead: ""
 legacy: false
 tags: ["customization"]
