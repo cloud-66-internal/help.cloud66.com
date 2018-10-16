@@ -9,4 +9,6 @@
     {% include left_nav_skycap.html collection=site.skycap %}
 	{% when 'legacy_docker' %}
     {% include left_nav_collection.html collection=site.legacy_docker %}
+	{% when 'habitus' %}
+    {% include habitus_left_nav.html collection=site.habitus %}
 {% endcase %}
