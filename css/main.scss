@@ -225,6 +225,15 @@ p {
     border-top: 5px solid #ccc;
 }
 
+hr.nav-hr {
+    clear: both;
+    float: none;
+    margin: 4px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #ffffff;
+}
+
 /* icon menus */
 /* space for the icons */
 .nav-link--icon  {
@@ -250,6 +259,23 @@ p {
 }
 #nav-link-docker {
     background:  transparent url('/images/ui/docker_logo.svg') no-repeat 18px 8px;
+    background-size: 15px;
+}
+#nav-link-habitus {
+    background:  transparent url('/images/ui/habitus_logo.svg') no-repeat 18px 8px;
+    background-size: 15px;
+}
+#nav-link-copper {
+    background:  transparent url('/images/ui/copper_logo.svg') no-repeat 18px 8px;
+    background-size: 15px;
+}
+#nav-link-starter {
+    background:  transparent url('/images/ui/starter_logo.svg') no-repeat 18px 8px;
+    background-size: 13px;
+    background-position: top -2px;
+}
+#nav-link-alterant {
+    background:  transparent url('/images/ui/alterant_logo.svg') no-repeat 18px 8px;
     background-size: 15px;
 }
 /* sidebar - sticky product headers */
