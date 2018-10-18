@@ -2,7 +2,8 @@
 layout: post
 template: oss
 externallink: https://github.com/cloud66-oss/starter
-title: Starter
+title: What is Starter
+label: Starter
 legacy: false
 permalink: /:collection/index.html
 index: true
