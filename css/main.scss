@@ -22,7 +22,7 @@ body {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #666;
+    color: rgb(96, 108, 113);
     background-color: #fff;
     margin: 0;
 }
@@ -844,11 +844,9 @@ body.docs #nav {
 .content {
     position: relative;
     padding: 2.2em 0;
-    max-width: 620px;
+    max-width: 650px;
     margin: 0 auto;
     padding-left: 50px;
-    // min-height: 1024px;
-    // height: 80vh; // induces a weird bug with double scroll bars
 
     /* Document content styles */
 
@@ -1089,7 +1087,7 @@ $notice-green: #2aa754;
 
 .FooterArticle {
     color: #7f8c8d;
-    margin-top: 2em;
+    margin-top: 4em;
     padding-top: 2em;
     margin-bottom: 2em;
     border-top: 1px solid #eee;
@@ -1116,7 +1114,8 @@ $notice-green: #2aa754;
 }
 @media screen and (max-width: 1300px) {
     .content--withSidebar {
-        margin-left: 290px;
+        outline: 1px solid red;
+        margin-left: 300px;
     }
 }
 @media screen and (max-width: 900px) {
@@ -1169,7 +1168,8 @@ $notice-green: #2aa754;
 /*
  * Panel
  * ------------------------------------------------------------------  */
-.Panel {
+.Panel,
+.ButtonOutlined {
     box-sizing: border-box;
     background-color: #FDFDFD;
     border: 1px solid #ddd;
@@ -1177,14 +1177,32 @@ $notice-green: #2aa754;
     padding: 1em;
     font-size: 14px;
 }
-.Panel h6 {
-    margin: 0 0 0 0;
-    text-transform: capitalize;
-    color: #2c3e50;
+.Panel,
+.ButtonOutlined {
+    h6 {
+        margin: 0 0 0 0;
+        text-transform: capitalize;
+        color: #2c3e50;
+    }
+    p {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
 }
-.Panel p {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+
+.ButtonOutlined {
+    display: inline-block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1.4em;
+    padding-left: 1.4em;
+    margin-top: 1em;
+    margin-bottom: 1.8em;
+}
+.ButtonOutlined-text {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 9px;
 }
 
 /*
@@ -1237,6 +1255,8 @@ body.Body--home #search-query-nav {
     headings, link to open source
  */
 .LandingContent {
+    padding-top: 8px;
+
     .LandingContent-title {
         font-size: 18px;
         font-weight: 700;
@@ -1244,7 +1264,7 @@ body.Body--home #search-query-nav {
     }
     .LandingContent-text {
         margin-top: -18px;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
     }
     .LandingContent-list {
