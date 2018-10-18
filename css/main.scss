@@ -1218,7 +1218,7 @@ body.Body--home #search-query-nav {
 
 .LandingContainer {
     box-sizing: border-box;
-    padding: 2.3em 0;
+    padding: 1.6em 0;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -1230,6 +1230,94 @@ body.Body--home #search-query-nav {
 .LandingSearch {
     position: relative;
     background: #fff;
+}
+
+/*
+    Landing page content
+    headings, link to open source
+ */
+.LandingContent {
+    .LandingContent-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 26px;
+    }
+    .LandingContent-text {
+        margin-top: -18px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .LandingContent-list {
+        padding-left: 0;
+
+        .LandingContent-item {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 28px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+    }
+    .LandingContent-link {
+        font-weight: 500;
+    }
+    .LandingContent-xMuted {
+        color: rgb(163, 175, 191) !important;
+    }
+    .LandingContent-muted {
+        color: rgb(130, 140, 153) !important;
+        font-weight: normal !important;
+        font-size: 15px;
+    }
+}
+
+.LandingContent--spaced {
+    padding-bottom: 18px;
+}
+
+/*
+    Product link icons
+ */
+.link-icon-habitus {
+    background:  transparent url('/images/ui/ruby_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-node {
+    background:  transparent url('/images/ui/node_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-rails {
+    background:  transparent url('/images/ui/ruby_logo.svg') no-repeat 0 10px !important;
+    background-size: 17px !important;
+}
+.link-icon-skycap {
+    background:  transparent url('/images/ui/skycap_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-meastro {
+    background:  transparent url('/images/ui/maestro_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-docker {
+    background:  transparent url('/images/ui/docker_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-habitus {
+    background:  transparent url('/images/ui/habitus_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-copper {
+    background:  transparent url('/images/ui/copper_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-starter {
+    background:  transparent url('/images/ui/starter_logo.svg') no-repeat 0 8px !important;
+    background-size: 15px !important;
+    background-position: top -3px;
+}
+.link-icon-alterant {
+    background:  transparent url('/images/ui/alterant_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
 }
 
 
@@ -1299,6 +1387,18 @@ body.Body--home #search-query-nav {
 }
 .Product-topBar--node {
     background: #80BE42;
+}
+.Product-topBar--habitus {
+    background: #46966F;
+}
+.Product-topBar--copper {
+    background: #4A90E2;
+}
+.Product-topBar--starter {
+    background: #357494;
+}
+.Product-topBar--alterant {
+    background: #18BC9C;
 }
 
 /*

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>
-        Cloud 66 Documentation
+        Cloud 66 Documentation • {{ page.title }}
     </title>
 
     <meta charset="utf-8">
@@ -43,7 +43,7 @@
                 {% if show_search_reults == true %}
                     {% include search_results.html %}
                 {% else %}
-                    {% include products_grid.html %}
+                    {{ content }}
                 {% endif %}
             </div>
         </main>
