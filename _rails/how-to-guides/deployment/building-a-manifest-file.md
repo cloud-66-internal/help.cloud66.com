@@ -636,7 +636,7 @@ production:
       stop_sequence: ttin, 120, term, 5, kill
     web:
       restart_signal: usr1
-      web_server_stop_signals: usr1, 30, kill
+      stop_sequence: usr1, 30, kill
     nsq:
       restart_on_deploy: false
 ```
@@ -650,10 +650,11 @@ All processes restart during each redeployment of the stack. If you want to avoi
 Default values for each process type are:
 
 - Web/Custom Web Processes:
-  - Stop Signal `web_server_stop_signals`: `QUIT`
-  - Restart Signal `restart_signal`: `USR2`
-- Non-Web Processes:
-  - Stop Signal `stop_sequence`: `QUIT,30,TERM,11,KILL`
+  - Stop Signal `stop_sequence`: `quit`
+  - Restart Signal `restart_signal`: `usr2`
+- Non-Web Processes: 
+  - Stop Signal `stop_sequence`: `term,35,kill` (if sidekiq detected)  
+  - Stop Signal `stop_sequence`: `quit,30,term,11,kill` (if sidekiq NOT detected)  
   - Restart `restart_on_deploy`: `true`
 
 
