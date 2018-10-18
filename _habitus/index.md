@@ -1,16 +1,22 @@
 ---
 layout: post
-template: one-col
-title: Habitus
+template: oss
+externallink: https://github.com/cloud66-oss/copper
+title: What is Habitus
+label: Habitus
 lead: A Docker Build Flow Tool
 legacy: false
 permalink: /:collection/index.html
 index: true
 ---
 
-## Welcome to Habitus
 
-Habitus is a standalone Docker build flow tool. It is a command line tool that builds Docker images based on their `Dockerfile` and a `build.yml`.
+<p class="lead">Habitus is a standalone Docker build flow tool. It is a command line tool that builds Docker images based on their `Dockerfile` and a `build.yml`.</p>
+
+<a class="ButtonOutlined" href="https://github.com/cloud66-oss/habitus" target="_blank">
+    <img src="/images/ui/github.svg" class="u-inlineBlock u-verticalAlignMiddle" width="30" alt="">
+    <span class="ButtonOutlined-text u-inlineBlock u-verticalAlignMiddle">View habitus on Github</span>
+</a>
 
 ## Using Habitus
 
