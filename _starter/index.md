@@ -71,7 +71,7 @@ Starter can generate a <code>Dockerfile</code> , <code>docker-compose.yml</code>
         <p><strong>Dockerfile</strong> &mdash; a Docker specification text document that contains all the commands a user could call on the command line to assemble an image (more compatible with development environments)</p>
     </li>
     <li>
-        <p><strong>docker-compose.yml</strong> &mdash; a Docker specification file for making it easy to run your Dockerized application on your machine and mimic the Docker infrastructure. Ofcourse without all the extra ops stuff you need thanks to running Docker in production with Cloud 66 (more compatible with development environments)</p>
+        <p><strong>docker-compose.yml</strong> &mdash; a Docker specification file for making it easy to run your Dockerized application on your machine and mimic the Docker infrastructure. Of course without all the extra ops stuff you need thanks to running Docker in production with Cloud 66 (more compatible with development environments)</p>
     </li>
     <li>
         <p><strong>service.yml</strong> &mdash; a Cloud 66 service definition file, which is used to define the service configurations on a stack (more compatible with production environments).</p>
