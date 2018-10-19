@@ -2,14 +2,21 @@
 layout: post
 template: oss
 externallink: https://github.com/cloud66-oss/alterant
-title: What is Alterant
+title: What is Alterant?
 label: Alterant
 legacy: false
 permalink: /:collection/index.html
 index: true
 ---
 
-<p class="lead">Alterant is a tool that transforms configuration files based on custom scripts.</p>
+<p class="lead">
+    Alterant is a tool that transforms configuration files based on custom scripts.  It reads configuration files in yaml or json and modifies them based on your scripts.
+</p>
+
+<a class="ButtonOutlined" href="https://github.com/cloud66-oss/alterant" target="_blank">
+    <img src="/images/ui/github.svg" class="u-inlineBlock u-verticalAlignMiddle" width="30" alt="">
+    <span class="ButtonOutlined-text u-inlineBlock u-verticalAlignMiddle">View Alterant on Github</span>
+</a>
 
 ## Welcome to Alterant
 
@@ -126,9 +133,7 @@ Alterant can be used in a pipeline or generate **diff** files just so you can se
 
 ## Show me some examples
 
+<a href="https://github.com/cloud66-oss/alterant" target="_blank">
 Sure! Check them out.
-
-<a class="ButtonOutlined" href="https://github.com/cloud66-oss/alterant" target="_blank">
-    <img src="/images/ui/github.svg" class="u-inlineBlock u-verticalAlignMiddle" width="30" alt="">
-    <span class="ButtonOutlined-text u-inlineBlock u-verticalAlignMiddle">View Alterant on Github</span>
 </a>
+

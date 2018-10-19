@@ -844,7 +844,7 @@ body.docs #nav {
 .content {
     position: relative;
     padding: 2.2em 0;
-    max-width: 650px;
+    max-width: 670px;
     margin: 0 auto;
     padding-left: 50px;
 
@@ -1087,10 +1087,10 @@ $notice-green: #2aa754;
 
 .FooterArticle {
     color: #7f8c8d;
-    margin-top: 4em;
+    margin-top: 2em;
     padding-top: 2em;
     margin-bottom: 2em;
-    border-top: 1px solid #eee;
+    // border-top: 1px solid #eee;
     font-size: 0.9em;
 }
 
@@ -1265,7 +1265,7 @@ body.Body--home #search-query-nav {
     .LandingContent-text {
         margin-top: -18px;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 15px;
     }
     .LandingContent-list {
         padding-left: 0;
