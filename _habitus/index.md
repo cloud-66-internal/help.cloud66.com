@@ -2,7 +2,7 @@
 layout: post
 template: oss
 externallink: https://github.com/cloud66-oss/copper
-title: What is Habitus
+title: Welcome to Habitus
 label: Habitus
 lead: A Docker Build Flow Tool
 legacy: false
