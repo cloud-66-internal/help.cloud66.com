@@ -1,6 +1,8 @@
 ---
 layout: post
-template: one-col
+template: oss
+externallink: https://github.com/cloud66-oss/copper
+label: Copper
 title: Copper DSL
 lead: Using Copper DSL for configuration validations
 legacy: false
@@ -15,10 +17,10 @@ Copper DSL is a simple language that's focused on fetching values from configura
 ### Copper files
 Copper files contain the Copper DSL script. They have text files and have a `.cop` extension. You can use any text editor to edit them.
 
-<div class="message focus" data-component="message">
-<h5>Copper Syntax Highlighting</h5>
-<p>There is an <a href="https://marketplace.visualstudio.com/items?itemName=cloud66.copper">extension for VisualStudio Code</a> that provides syntax highlighting for Copper files. This extension is under active development and doesn't support Copper DSL's full syntax.</p>
-</div>
+
+#### Copper Syntax Highlighting
+
+There is an <a href="https://marketplace.visualstudio.com/items?itemName=cloud66.copper">extension for VisualStudio Code</a> that provides syntax highlighting for Copper files. This extension is under active development and doesn't support Copper DSL's full syntax.
 
 ### Rules
 A rule is like a test you would like to run against your configuration file. Just like code unit tests, it's better to keep the rules focused on one specific area of the configuration file and give then relevant names. A Copper file can contain as many rules as you like.
@@ -434,7 +436,7 @@ The `fetch` function accepts the JSONPath and returns an array of all matching n
 
 <p class="small">This is a YAML configuration file used in the following examples</p>
 
-<pre class="prettyprint">
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -457,7 +459,7 @@ spec:
   selector:
     app: foo
     tier: bar
-</pre>
+```
 
 To fetch the value of `type` under `spec` (which is `NodePort` in the file above), we can use the following JSONPath format:
 
@@ -527,7 +529,7 @@ You can use the [JSONPath reference](http://goessner.net/articles/JsonPath/) as 
 
 **Another example**
 
-<pre class="prettyprint">
+```yaml
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
@@ -555,7 +557,7 @@ spec:
             - containerPort: 8080
       imagePullSecrets:
       - name: registry-pull-secret
-</pre>
+```
 
 <div>
 	<p class="small">Get the image tag of all containers</p>

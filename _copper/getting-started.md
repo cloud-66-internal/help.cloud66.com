@@ -1,6 +1,8 @@
 ---
 layout: post
-template: one-col
+template: oss
+externallink: https://github.com/cloud66-oss/copper
+label: Copper
 title: Getting Started with Copper
 lead: Taking the first steps to validate your Kubernetes configuration files
 legacy: false
@@ -17,11 +19,9 @@ Copper is available as a Ruby gem. We recommend installing Copper using Rubygems
 
 To install Copper, use the following command:
 
-<pre>
-$ gem install c66-copper
-</pre>
+<kbd>gem install c66-copper</kbd>
 
-You should now be able to run <pre>$ copper version</pre> successfully.
+You should now be able to run <kbd>copper version</kbd> successfully.
 
 ## Copper DSL
 
@@ -35,7 +35,7 @@ Open up your favorite text editor and enter the following text into a new file c
 
 <pre class="prettyprint linenums">
 rule ApiV1Only ensure {
-	fetch("$.apiVersion").first == "v1" // we only allow the use of v1 API functions
+  fetch("$.apiVersion").first == "v1" // we only allow the use of v1 API functions
 }
 </pre>
 
@@ -49,7 +49,7 @@ rule ApiV1Only ensure {
 
 Now that you have the rule to check for the API version, let's have a look at the configuration file. If you have a Kubernetes configuration file, you can use this rule against that (as all Kubernetes configuration files have the `apiVersion` attribute). Here is an example you can use:
 
-<pre class="prettyprint">
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -60,7 +60,7 @@ spec:
   ports:
   - port: 8080
     targetPort: 8090
-</pre>
+```
 
 Let's save this file as `service.yml` and validate it.
 
@@ -68,9 +68,7 @@ Let's save this file as `service.yml` and validate it.
 
 With your rule `my_rule.cop` and configuration file `service.yml` to hand, hit the Copper CLI:
 
-<pre>
-$ copper check --rules my_rule.cop --file service.yml
-</pre>
+<kbd>copper check --rules my_rule.cop --file service.yml</kbd>
 
 You should now see something like this (without the line numbers):
 
@@ -84,13 +82,14 @@ Validating part 0
 **Line 2**: This line shows that rule `ApiV1Only` has passed the validation successfully.
 
 #### Now let's break the test
+
 As with all good unit tests, you need make sure they work by breaking them!
 
-<pre class="prettyprint">
+```yaml
 apiVersion: extensions/v1beta1
 kind: Service
 ...
-</pre>
+```
 
 Now let's run the validation again:
 
@@ -100,16 +99,18 @@ Validating part 0
 </pre>
 
 ### Taking it one step further
-Now let's allow both `v1 and `extensions/v1beta` values as `apiVersion` in our configuration files, but nothing more:
+
+Now let's allow both `v1` and `extensions/v1beta` values as `apiVersion` in our configuration files, but nothing more:
 
 <pre class="prettyprint linenums">
 rule ApiV1Only ensure {
-	fetch("$.apiVersion").first == "v1" or // both v1
-	fetch("$.apiVersion").first == "extensions/v1beta1" // and v1beta are allowed
+  fetch("$.apiVersion").first == "v1" or // both v1
+  fetch("$.apiVersion").first == "extensions/v1beta1" // and v1beta are allowed
 }
 </pre>
 
 Easy!
 
 ## Congratulations!
-You successfully wrote your first Copper rule and validated a Kubernetes configuration file! Now let's explore the <a href="/docs/copper-dsl">power of Copper DSL</a>.
+
+You successfully wrote your first Copper rule and validated a Kubernetes configuration file! Now let's explore the <a href="/copper/copper-dsl.html">power of Copper DSL</a>.

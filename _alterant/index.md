@@ -135,7 +135,4 @@ Alterant can be used in a pipeline or generate **diff** files just so you can se
 
 ## Show me some examples
 
-<a href="https://github.com/cloud66-oss/alterant" target="_blank">
-Sure! Check them out.
-</a>
-
+[Sure! Check them out.](/alterant/examples.html)
