@@ -72,6 +72,7 @@ $(function () {
    */
 
   function initSubHeaders () {
+    console.log('=== initialize sub headers ===');
     var each = [].forEach
     var main = document.getElementById('main')
     var header = document.getElementById('header')

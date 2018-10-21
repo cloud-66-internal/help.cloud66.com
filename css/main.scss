@@ -22,7 +22,7 @@ body {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #666;
+    color: rgb(96, 108, 113);
     background-color: #fff;
     margin: 0;
 }
@@ -225,6 +225,15 @@ p {
     border-top: 5px solid #ccc;
 }
 
+hr.nav-hr {
+    clear: both;
+    float: none;
+    margin: 4px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #ffffff;
+}
+
 /* icon menus */
 /* space for the icons */
 .nav-link--icon  {
@@ -250,6 +259,23 @@ p {
 }
 #nav-link-docker {
     background:  transparent url('/images/ui/docker_logo.svg') no-repeat 18px 8px;
+    background-size: 15px;
+}
+#nav-link-habitus {
+    background:  transparent url('/images/ui/habitus_logo.svg') no-repeat 18px 8px;
+    background-size: 15px;
+}
+#nav-link-copper {
+    background:  transparent url('/images/ui/copper_logo.svg') no-repeat 18px 8px;
+    background-size: 15px;
+}
+#nav-link-starter {
+    background:  transparent url('/images/ui/starter_logo.svg') no-repeat 18px 8px;
+    background-size: 13px;
+    background-position: top -2px;
+}
+#nav-link-alterant {
+    background:  transparent url('/images/ui/alterant_logo.svg') no-repeat 18px 8px;
     background-size: 15px;
 }
 /* sidebar - sticky product headers */
@@ -818,13 +844,41 @@ body.docs #nav {
 .content {
     position: relative;
     padding: 2.2em 0;
-    max-width: 620px;
+    max-width: 680px;
+
+    @media screen and (min-width: 1600px) {
+        max-width: 820px;
+    }
+    @media screen and (min-width: 1800px) {
+        max-width: 960px;
+    }
+
     margin: 0 auto;
     padding-left: 50px;
-    // min-height: 1024px;
-    // height: 80vh; // induces a weird bug with double scroll bars
 
     /* Document content styles */
+
+    p {
+        font-size: 17px;
+        @media screen and (min-width: 1600px) {
+            font-size: 18px;
+        }
+        @media screen and (min-width: 1800px) {
+            font-size: 20px;
+        }
+    }
+
+    p.lead {
+        font-size: 21px;
+        @media screen and (min-width: 1600px) {
+            font-size: 22px;
+        }
+        @media screen and (min-width: 1800px) {
+            font-size: 24px;
+        }
+        font-weight: 400;
+        color: #999;
+    }
 
     a {
         font-weight: 500;
@@ -1022,14 +1076,7 @@ $notice-green: #2aa754;
 }
 
 
-/*
- * Type lead
- * */
-.lead {
-    font-size: 20px;
-    font-weight: 400;
-    color: #999;
-}
+
 
 @media screen and (max-width: 900px) {
     .lead {
@@ -1050,7 +1097,7 @@ $notice-green: #2aa754;
 }
 
 .content .extra {
-    max-width: 620px;
+    // max-width: 620px;
 }
 
 .ContentImage {
@@ -1066,7 +1113,7 @@ $notice-green: #2aa754;
     margin-top: 2em;
     padding-top: 2em;
     margin-bottom: 2em;
-    border-top: 1px solid #eee;
+    // border-top: 1px solid #eee;
     font-size: 0.9em;
 }
 
@@ -1088,9 +1135,9 @@ $notice-green: #2aa754;
         background-color: rgba(255, 255, 255, 0.95);
     }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
     .content--withSidebar {
-        margin-left: 290px;
+        margin-left: 300px;
     }
 }
 @media screen and (max-width: 900px) {
@@ -1143,7 +1190,8 @@ $notice-green: #2aa754;
 /*
  * Panel
  * ------------------------------------------------------------------  */
-.Panel {
+.Panel,
+.ButtonOutlined {
     box-sizing: border-box;
     background-color: #FDFDFD;
     border: 1px solid #ddd;
@@ -1151,14 +1199,32 @@ $notice-green: #2aa754;
     padding: 1em;
     font-size: 14px;
 }
-.Panel h6 {
-    margin: 0 0 0 0;
-    text-transform: capitalize;
-    color: #2c3e50;
+.Panel,
+.ButtonOutlined {
+    h6 {
+        margin: 0 0 0 0;
+        text-transform: capitalize;
+        color: #2c3e50;
+    }
+    p {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
 }
-.Panel p {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+
+.ButtonOutlined {
+    display: inline-block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1.8em;
+}
+.ButtonOutlined-text {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 9px;
 }
 
 /*
@@ -1192,7 +1258,7 @@ body.Body--home #search-query-nav {
 
 .LandingContainer {
     box-sizing: border-box;
-    padding: 2.3em 0;
+    padding: 1.6em 0;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -1204,6 +1270,96 @@ body.Body--home #search-query-nav {
 .LandingSearch {
     position: relative;
     background: #fff;
+}
+
+/*
+    Landing page content
+    headings, link to open source
+ */
+.LandingContent {
+    padding-top: 8px;
+
+    .LandingContent-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 26px;
+    }
+    .LandingContent-text {
+        margin-top: -18px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .LandingContent-list {
+        padding-left: 0;
+
+        .LandingContent-item {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 28px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+    }
+    .LandingContent-link {
+        font-weight: 500;
+    }
+    .LandingContent-xMuted {
+        color: rgb(163, 175, 191) !important;
+    }
+    .LandingContent-muted {
+        color: rgb(130, 140, 153) !important;
+        font-weight: normal !important;
+        font-size: 15px;
+    }
+}
+
+.LandingContent--spaced {
+    padding-bottom: 18px;
+}
+
+/*
+    Product link icons
+ */
+.link-icon-habitus {
+    background:  transparent url('/images/ui/ruby_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-node {
+    background:  transparent url('/images/ui/node_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-rails {
+    background:  transparent url('/images/ui/ruby_logo.svg') no-repeat 0 10px !important;
+    background-size: 17px !important;
+}
+.link-icon-skycap {
+    background:  transparent url('/images/ui/skycap_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-meastro {
+    background:  transparent url('/images/ui/maestro_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-docker {
+    background:  transparent url('/images/ui/docker_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-habitus {
+    background:  transparent url('/images/ui/habitus_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-copper {
+    background:  transparent url('/images/ui/copper_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
+}
+.link-icon-starter {
+    background:  transparent url('/images/ui/starter_logo.svg') no-repeat 0 8px !important;
+    background-size: 15px !important;
+    background-position: top -3px;
+}
+.link-icon-alterant {
+    background:  transparent url('/images/ui/alterant_logo.svg') no-repeat 0 8px !important;
+    background-size: 17px !important;
 }
 
 
@@ -1273,6 +1429,18 @@ body.Body--home #search-query-nav {
 }
 .Product-topBar--node {
     background: #80BE42;
+}
+.Product-topBar--habitus {
+    background: #46966F;
+}
+.Product-topBar--copper {
+    background: #4A90E2;
+}
+.Product-topBar--starter {
+    background: #357494;
+}
+.Product-topBar--alterant {
+    background: #18BC9C;
 }
 
 /*
