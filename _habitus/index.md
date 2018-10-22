@@ -1,8 +1,8 @@
 ---
 layout: post
 template: oss
-externallink: https://github.com/cloud66-oss/copper
-title: What is Habitus
+externallink: https://github.com/cloud66-oss/habitus
+title: Welcome to Habitus
 label: Habitus
 lead: A Docker Build Flow Tool
 legacy: false
@@ -27,7 +27,6 @@ You can install Habitus by downloading a single executable for your platform of 
 Habitus uses a yml file as a descriptor for builds. Here is an example:
 
 ``` yaml
-
 build:
   version: 2016-02-13 // version of the build schema.
   steps:
@@ -87,10 +86,10 @@ Artifacts are copied from the container and can be used with `ADD` or `COPY` com
 
 Here is an example that uses an artefact generated in step `builder`
 
-
-        FROM ubuntu
-        ADD ./iron-mountain /app/iron-mountain
-
+```dockerfile
+FROM ubuntu
+ADD ./iron-mountain /app/iron-mountain
+```
 
 ## Doing More with Habitus
 
@@ -98,13 +97,14 @@ Here is an example that uses an artefact generated in step `builder`
 
 Cleanup is a step that runs after the build is finished for a step. At the moment, cleanup is limited to commands:
 
-
-    cleanup:
-      commands:
-        - apt-get purge -y man  perl-modules vim-common vim-tiny libpython3.4-stdlib:amd64 python3.4-minimal xkb-data libx11-data eject python3 locales golang-go
-        - apt-get clean autoclean
-        - apt-get autoremove -y
-        - rm -rf /var/lib/{apt,dpkg,cache,log}/
+```yaml
+cleanup:
+  commands:
+    - apt-get purge -y man  perl-modules vim-common vim-tiny libpython3.4-stdlib:amd64 python3.4-minimal xkb-data libx11-data eject python3 locales golang-go
+    - apt-get clean autoclean
+    - apt-get autoremove -y
+    - rm -rf /var/lib/{apt,dpkg,cache,log}/
+```
 
 This runs the commands in the provided order on the image and then as a last step squashes the image to remove anything that’s been removed. This is particularly useful when it comes to private information like ssh private keys that need to be on the image during the build (to pull git repos for example) but can’t be published as part of the built image.
 
@@ -126,18 +126,18 @@ Steps can depend on one or more of the other steps. This will determine the buil
 
 Environment variables can be used in the build file with the `_env(VAR)` format:
 
-
-    artifacts:
-          - /go/src/go-service/_env(SERVICE_NAME)
-
+```yaml
+artifacts:
+  - /go/src/go-service/_env(SERVICE_NAME)
+```
 
 This will be replaced before the build file is fed into the build engine. By default Habitus inherits all environment variables of its parent process. This can be overridden by passing environment variables into Habitus explicitly through the env command parameter:
 
-<kbd>$ habitus -env SERVICE\_NAME=abc -env RAILS\_ENV=production</kbd>
+<kbd>$ habitus -env SERVICE_NAME=abc -env RAILS_ENV=production</kbd>
 
 In the example above, you can pass in AWS S3 key and secret like this:
 
-<kbd>$ habitus -env ACCESS\_KEY=\(ACCESS_KEY -env SECRET_KEY=\)SECRET\_KEY</kbd>
+<kbd>$ habitus -env ACCESS_KEY=$ACCESS_KEY -env SECRET_KEY=$SECRET_KEY</kbd>
 
 ### Running commands
 
@@ -149,10 +149,10 @@ Habitus allows you to run an arbitary command inside of a built container. This 
 
 An example to upload a build artefact to S3 can be like this
 
-
-        FROM cloud66/uploader
-        ADD ./iron-mountain /app/iron-mountain
-
+```dockerfile
+FROM cloud66/uploader
+ADD ./iron-mountain /app/iron-mountain
+```
 
 `cloud66/uploader` is a simple Docker image that has [S3CMD] installed on it.
 
@@ -193,7 +193,7 @@ All builds and images will be tagged with the `uid` for this unless a step name 
 
 Habitus requires running in privileged more (sudo) so it can run the squash method (keeping file permissions across images). It also requires the following environment variables: `DOCKER_HOST` and `DOCKER_CERT_PATH`. These are usually available when Docker is running on a machine, but might not be available in sudo mode. To fix this, you can pass them into the app with command line params:
 
-<kbd>$ sudo habitus –host $DOCKER\_HOST –certs $DOCKER\_CERT\_PATH</kbd>
+<kbd>$ sudo habitus –host $DOCKER_HOST –certs $DOCKER_CERT_PATH</kbd>
 
 ### Dependencies
 

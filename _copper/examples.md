@@ -1,6 +1,8 @@
 ---
 layout: post
-template: one-col
+template: oss
+externallink: https://github.com/cloud66-oss/copper
+label: Copper
 title: Copper Examples
 lead: Common use cases and examples for Copper
 legacy: false
@@ -8,9 +10,7 @@ permalink: /:collection/:path
 order : 3
 ---
 
-<div class="message warning">
 These are some examples for common use cases of Copper and are provided to help with understanding how to use Copper DSL with Kubernetes configuration files.
-</div>
 
 ### Ban use of `latest` as image tag
 

@@ -1,6 +1,8 @@
 ---
 layout: post
-template: one-col
+template: oss
+externallink: https://github.com/cloud66-oss/copper
+label: Copper
 title: Copper FAQ
 lead: Frequently Asked Questions
 legacy: false
@@ -22,12 +24,14 @@ If you use rely heavily on configuration files then Copper is for you. Particula
 
 ## How do I use Copper?
 
-Copper comes with a command line tool. Simply head to the [Getting Started](/docs/getting-started) section and validate your first file!
+Copper comes with a command line tool. Simply head to the [Getting Started](/copper/getting-started.html) section and validate your first file!
 
 ## Why not use X instead?
+
 Our aim for releasing Copper is to help everyone benefit from using Kubernetes without having to restrict access to configuration files (so mistakes can be avoided). We built Copper as a purpose built tool with a safe to execute and easy to pickup DSL to make this goal easier. However if you can achieve this using a different tool or product, we think we achieved our goal and would love to hear about your success.
 
 ## Why a new DSL instead of using X as a language?
+
 That's a very good question. We looked at many different options, from tools that let you write Python to vanilla Javascript running as a Node.js function. Using a programming language has 2 main benefits:
 
 1. You probably know it already.
@@ -44,4 +48,5 @@ We think Copper DSL satisfies all these goals and is going to get even better be
 You're probably thinking why Copper is not written in Go! As a matter of fact all of our other open source products ([Starter](http://www.startwithdocker.com/), [Habitus](http://www.habitus.io/) and [Gifnoc](http://gifnoc.com/)) are written in Go. Ruby however lends itself very well to writing a DSL and the Gem infrastructure is a good way to distribute libraries and binaries. Since all Copper users are familiar with Docker and it will most likely be running somewhere in your CI/CD pipeline, it is best wrapped in a Docker image.
 
 ## Can I help / contribute?
+
 Yes please! Raise github issues, fork and modify, send PRs and make use of Kubernetes configurations better and safer for everyone.

@@ -90,7 +90,7 @@ You can use Copper as a command line or docker image, integrating it with you CI
 
 This is a very simple Kubernetes configuration file. We have saved it as <code>deploy.yml</code>:
 
-<pre class="prettyprint">
+```yaml
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
@@ -102,8 +102,7 @@ spec:
     containers:
     - name: mysql
         image: index.docker.io/library/mysql:6.5.0
-</pre>
-
+```
 
 As this configuration file is changed, we want to make sure the image tag for MySQL is never set to <code>latest</code>.
 
@@ -111,22 +110,22 @@ To do this, we use Copper's simple DSL to check the configuration validation:
 
 <pre class="prettyprint">
 rule NoLatest ensure {  // use of latest as image tag is not allowed
-fetch("$.spec.template.spec.containers..image")
-.as(:image)
-.pick(:tag)
-.contains("latest") == false
+  fetch("$.spec.template.spec.containers..image")
+  .as(:image)
+  .pick(:tag)
+  .contains("latest") == false
 }
 </pre>
 
 Save this file as <code>my_rules.cop</code> and run Copper CLI:
 
-<pre class="prettyprint">$ copper check --rules my_rules.cop --file deploy.yml</pre>
+<kbd>$ copper check --rules my_rules.cop --file deploy.yml</kbd>
+
 <p>Here is what you will see:</p>
 
 <pre class="prettyprint">
 Validating part 0
 noLatest - PASS</pre>
-
 
 ## Can I use Copper for configuration files other than Kubernetes?
 

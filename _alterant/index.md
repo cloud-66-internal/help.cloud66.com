@@ -7,7 +7,9 @@ label: Alterant
 legacy: false
 permalink: /:collection/index.html
 index: true
+order: 1
 ---
+
 
 <p class="lead">
     Alterant is a tool that transforms configuration files based on custom scripts.  It reads configuration files in yaml or json and modifies them based on your scripts.
@@ -123,7 +125,7 @@ If you work with Kubernetes, you might have heard about [Admission Controllers](
 
 ## How can I get started?
 
-See how you can get started with Alterant in minutes!
+See how you can get [started with Alterant](/alterant/getting-started.html) in minutes!
 
 ## What else can it do?
 
@@ -133,7 +135,4 @@ Alterant can be used in a pipeline or generate **diff** files just so you can se
 
 ## Show me some examples
 
-<a href="https://github.com/cloud66-oss/alterant" target="_blank">
-Sure! Check them out.
-</a>
-
+[Sure! Check them out.](/alterant/examples.html)
