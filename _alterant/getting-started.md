@@ -11,7 +11,7 @@ order: 2
 
 ## Installing Alterant
 
-Alterant is available as a Ruby gem. We recommend installing Alterant using RubyGems with the following command: <kbd>gem install alterant</kbd>
+Alterant is available as a Ruby gem. We recommend installing Alterant using [RubyGems](https://rubygems.org/pages/download) with the following command: <kbd>gem install alterant</kbd>
 Once installed, you should be able to check Alterant version <kbd>alterant version</kbd>
 
 ## Basics
@@ -46,7 +46,7 @@ foo:
   bar: eggs
 ```
 
-As you can the input configuration file is loaded into a Javascript object called `$` and given to your modifier script. By the end of the process, Alterant converts `$` into a YAML file and writes the output.
+As you can see, the input configuration file is loaded into a Javascript object called `$` and given to your modifier script. By the end of the process, Alterant converts `$` into a YAML file and writes the output.
 
 ### A second example
 

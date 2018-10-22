@@ -127,6 +127,16 @@ If you work with Kubernetes, you might have heard about [Admission Controllers](
 
 See how you can get [started with Alterant](/alterant/getting-started.html) in minutes!
 
+## What's Alterant NOT for?
+
+Being able to change configuration files with a script might tempt us to do it more often than we should! Obviously it is up to you how you use Alterant, but we have some suggestions as when to use and not use use Alterant.
+
+1. Use Alterant as an automatic step to add or modify generic and repetitive configuration parts to your configuration files.
+2. Use Alterant to make sure your configuration files adhere to your best practices or policies. If validation of configuration files is your main purpose for using Alterant, you can use [check out Copper](/copper/index.html).
+3. Do not use Alterant to change a configuration file to another just because you don't want to create a duplicate. An example is when your Kubernetes configuration files are slightly different between 2 clusters. You should use placeholders, templates or [Cloud 66 Skycap](https://cloud66.com/containers/skycap) for that!
+4. Do not use Alterant to obfuscate changes to configuration files as an automatic step. Alterant applies changes to the configuration files before they are applied to the application (ie. your Kubernetes cluster) exactly because it wants to make those changes transparent. Don't use Alterant as a magic step!
+
+
 ## What else can it do?
 
 A lot! Alterant safely runs your Javascript code to manipulate the input file. This gives you a lot of power and flexibility. It also provides some shortcuts and helpers to deal specifically with Docker and Kubernetes configuration files.

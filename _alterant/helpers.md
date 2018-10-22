@@ -11,7 +11,7 @@ order: 4
 
 ## Helpers
 
-Alterant comes with a set of helpers that make it easier to read, parse and modify configuration files, especially Kubernetes files. Here is a list of Alterant helpers. You can [extend Alterant](/alterant/extend-alterant.html) and add new ones yourself.
+Alterant comes with a set of helpers that make it easier to read, parse and modify configuration files, especially Kubernetes files. Here is a list of Alterant helpers. You can [extend Alterant](/alterant/extending-alterant.html) and add new ones yourself.
 
 ### YamlReader
 
