@@ -152,3 +152,10 @@
 .is-hidden {
     display: none;
 }
+
+.u-inlineBlock {
+  display: inline-block !important;
+}
+.u-verticalAlignMiddle {
+    vertical-align: middle;
+}

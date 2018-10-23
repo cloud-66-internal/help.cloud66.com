@@ -1,9 +1,17 @@
 {% for page in include.section %}
 <li>
-	{% if include.current.url == page.url %}
-	<a class="sidebar-link current" href="{{ page.url }}.html">{{ page.title }}</a>
-	{% else %}
-	<a class="sidebar-link" href="{{ page.url }}.html">{{ page.title }}</a>
-	{% endif %}
+    {% if page.index %}
+        {% if include.current.url == page.url %}
+            <a class="sidebar-link current" href="{{ page.url }}">{{ page.title }}</a>
+        {% else %}
+            <a class="sidebar-link" href="{{ page.url }}">{{ page.title }}</a>
+        {% endif %}
+    {% else %}
+        {% if include.current.url == page.url %}
+            <a class="sidebar-link current" href="{{ page.url }}.html">{{ page.title }}</a>
+        {% else %}
+            <a class="sidebar-link" href="{{ page.url }}.html">{{ page.title }}</a>
+        {% endif %}
+    {% endif %}
 </li>
 {% endfor %}

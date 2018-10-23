@@ -9,4 +9,12 @@
     {% include left_nav_skycap.html collection=site.skycap %}
 	{% when 'legacy_docker' %}
     {% include left_nav_collection.html collection=site.legacy_docker %}
+	{% when 'habitus' %}
+    {% include oss_left_nav.html collection=site.habitus %}
+	{% when 'starter' %}
+    {% include oss_left_nav.html collection=site.starter %}
+    {% when 'copper' %}
+    {% include oss_left_nav.html collection=site.copper %}
+    {% when 'alterant' %}
+    {% include oss_left_nav.html collection=site.alterant %}
 {% endcase %}

@@ -79,6 +79,12 @@ To see whether our new variable is working correctly, we need to render our Form
 3. Scroll down to your `helloworld_service.yml` and click the *show all* link
 4. Check that the value for *port* matches our variable (i.e. `80`)
 
+## Importing multiple variables
+
+It's possible to import multiple environment variables into a Stencil at once, as well as filter which variables are imported, using the `envlist` Stencil placeholder.
+
+If you'd like to learn how to do this, follow our [dedicated envlist guide](/skycap/how-to-guides/formations/reusing-common-environment-variables.html).
+
 ## Uploading and downloading variable files
 
 You can manage your environment variables in bulk by uploading them in a `.txt` file with each variable declared on a separate line, and key value pairs separated by `=` signs. The Key should always be in uppercase.
@@ -108,6 +114,7 @@ You can also download your existing variables in the same format by clicking the
 
 ## What’s next?
 
+* How to [import entire sets](/skycap/how-to-guides/formations/reusing-common-environment-variables.html) of common variables into Stencils
 * Learn how to [update an existing service](/skycap/tutorials/updating-an-existing-service.html) in Skycap.
 * Learn how to [add new services or components](/skycap/tutorials/adding-a-new-service.html) to a service.
 * Learn how to [roll back to an older version of your application](/skycap/tutorials/rolling-back-using-snapshots.html) using Snapshots.

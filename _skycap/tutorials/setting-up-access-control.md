@@ -30,6 +30,8 @@ Skycap supports two interrelated security policies for Formations and Stencils:
 **Access control** which defines which assets a user can access
 **Permissions** which defines what the user can do with that access
 
+If you'd like more a detailed explanation on how access control policies work, including hierarchy and inheritance, you can [find it here](/skycap/references/more-about-access-control-policies.html).
+
 ## Creating a Formation access policy for a user
 
 In order to set up an access policy for a Formation within any application:
@@ -78,6 +80,7 @@ You can do the same for any *Stencil* by first navigating to the Formation in wh
 
 ## What’s next?
 
+* Learn more about advanced use cases for [access control policies](/skycap/references/more-about-access-control-policies.html)
 * Learn how to [update an existing service](/skycap/tutorials/updating-an-existing-service.html) in Skycap.
 * Learn how to [add new services or components](/skycap/tutorials/adding-a-new-service.html) to a service.
 * Learn how to [roll back to an older version of your application](/skycap/tutorials/rolling-back-using-snapshots.html) using Snapshots.
