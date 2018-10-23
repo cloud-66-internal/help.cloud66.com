@@ -6,7 +6,7 @@
 ## Add Filebeat to your stack
 To add Filebeat, access the add-ins menu of your stack and click _Filebeat_ under the _External Addins_ category.
 
-We'll ask you for your ELK stack endpoint - if you don't have one, you can deploy one using our [EasyDeploy App Store](/maestro/references/easy-deploy-repos.html).
+We'll ask you for your ELK stack endpoint - if you don't have one, you can deploy one using [this public Git repository](https://github.com/deviantony/docker-elk).
 
 An ELK stack consists of Elasticsearch, Logstash, and Kibana. Logstash is an open source tool for collecting, parsing, and storing logs for future use. Kibana is a web interface that can be used to search and view the logs that Logstash has indexed. Both of these tools are based on Elasticsearch, which is used for storing logs
 

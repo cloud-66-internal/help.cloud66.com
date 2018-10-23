@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>
-        Cloud 66 Documentation
+        Cloud 66 Documentation • {{ page.title }}
     </title>
 
     <meta charset="utf-8">
@@ -26,7 +26,7 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.css">
-
+    {% include head_scripts.html %}
 </head>
 <body class="Body Body--home">
 
@@ -43,7 +43,7 @@
                 {% if show_search_reults == true %}
                     {% include search_results.html %}
                 {% else %}
-                    {% include products_grid.html %}
+                    {{ content }}
                 {% endif %}
             </div>
         </main>

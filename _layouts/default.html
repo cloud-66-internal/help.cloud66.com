@@ -25,7 +25,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.css">
-
+    {% include head_scripts.html %}
     {% include styles.html %}
 </head>
 
@@ -75,6 +75,7 @@
                     <footer class="FooterArticle"></footer>
 
                     <!-- Flexbox grid system -->
+                    {% if page.template != 'oss' %}
                     <div class="extra">
                         <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersLg">
                             <div class="Grid-cell">
@@ -105,6 +106,38 @@
                             </div><!--/.Grid-cell-->
                         </div><!--/.Grid-->
                     </div>
+                    {% else %}
+                    <div class="extra">
+                        <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersLg">
+                            <div class="Grid-cell">
+                                <a href="{{ page.externallink }}">
+                                    <div class="Panel">
+                                          <div class="Media">
+                                              <img src="/images/ui/github.svg" class="Media-figure" width="30" alt="">
+                                              <div class="Media-body">
+                                                  <h6 class="Media-heading">View on Github</h6>
+                                                  <span class="Media-link">Check out the {{ page.label }} Repo</span>
+                                              </div>
+                                          </div><!--.Media-->
+                                    </div><!-- /.Panel -->
+                                </a>
+                            </div><!--/.Grid-cell-->
+                            <div class="Grid-cell">
+                                <a href="https://cloud66ers.slack.com">
+                                    <div class="Panel">
+                                        <div class="Media">
+                                            <img src="/images/ui/slack.svg" class="Media-figure" width="30" alt="">
+                                            <div class="Media-body">
+                                                <h6 class="Media-heading">More Questions?</h6>
+                                                <span class="Media-link">Join the Slack Channel</span>
+                                            </div>
+                                        </div><!--.Media-->
+                                    </div><!--/.Panel-->
+                                </a>
+                            </div><!--/.Grid-cell-->
+                        </div><!--/.Grid-->
+                    </div>
+                    {% endif %}
                 </article>
         <!-- ======================== END of Article ======================================================================== -->
             </main>
