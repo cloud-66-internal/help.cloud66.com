@@ -21,7 +21,7 @@ Once you have filled the registration page you can invite your bot to any slack 
 
 ### Download Igor
 
-You need to install the app using the [docker-compose file](https://github.com/cloud66/igor-bot/blob/feature/testing_enhancements/docker-compose.yml). Build this into a container and deploy it alongside your existing application(s).
+You need to install the Igor app using the [docker-compose file](https://github.com/cloud66/igor-bot/blob/master/docker-compose.yml). Build this into a container and deploy it alongside your existing application(s).
 
 ### Deregister
 
