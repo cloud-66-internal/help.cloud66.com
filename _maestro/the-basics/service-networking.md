@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: What is Service Networking? TBS!
+title: Service Networking? TBS!
 categories: the-basics
-lead: ""
+order: 5
+lead: "An introduction to service networking"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path

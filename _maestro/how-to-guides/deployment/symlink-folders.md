@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Create symbolic links in Ubuntu
+title: Using symbolic links
 categories: how-to-guides/deployment
 lead: ""
 legacy: false

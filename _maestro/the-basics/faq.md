@@ -3,7 +3,8 @@ layout: post
 template: one-col
 title: FAQs
 categories: the-basics
-lead: ""
+order: 4
+lead: "Frequently asked questions about Maestro"
 legacy: false
 
 permalink: /:collection/:path

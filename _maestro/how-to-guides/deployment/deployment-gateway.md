@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: How to deploy behind a gateway server
+title: Deploying behind a gateway server
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to deploy your application to a DMZ"
 legacy: false
 tags: ["security"]
 permalink: /:collection/:path
@@ -16,12 +16,9 @@ permalink: /:collection/:path
 If you want to deploy your stack in a DMZ, you should prepare a bastion server which enables you to connect to your DMZ. You should define a **Deployment Gateway** in your Cloud66 account and specify the information of the bastion server, then you will be able to deploy your stack in the DMZ.
 
 
-
 ### Important
 
 Team members should have **Edit Deploy Gateways** access rights to be able to use the deployment gateway.
-
-
 
 ## How to deploy your stack behind the gateway server
 

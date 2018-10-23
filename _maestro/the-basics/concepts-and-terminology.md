@@ -1,11 +1,12 @@
 ---
 layout: post
 template: one-col
-title: What is an application?
+title: Concepts & terminology
+order: 1
 categories: the-basics
-lead: ""
+lead: "Defining the concepts and terms used in this documentation"
 legacy: false
-tags: ["getting-started"]
+tags: ["concepts,terms"]
 permalink: /:collection/:path
 ---
 {% assign product = 'maestro' %}

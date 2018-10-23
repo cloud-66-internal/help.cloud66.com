@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Connecting to Docker Image Repository
+title: Connecting to Docker image repositories
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to connect to public and private Docker image repositories via Maestro"
 tags: ["customization", "docker"]
 legacy: false
 permalink: /:collection/:path

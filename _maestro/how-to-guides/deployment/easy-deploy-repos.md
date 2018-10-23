@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Using EasyDeploy repositories
+title: Using EasyDeploy
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to use EasyDeploy repositories to quickly deploy popular services"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
@@ -11,7 +11,7 @@ permalink: /:collection/:path
 
 ## About EasyDeploy repositories
 
-There are many open source projects out there that we love and use, and we want to make it easier for people to use them.
+There are many open source projects out there that we love to use, and we want to make it easier for people to use them.
 
 EasyDeploy makes it easy for you to simply provide the git URL of your desired project on Cloud 66 and sit back while it deploys on your servers.
 

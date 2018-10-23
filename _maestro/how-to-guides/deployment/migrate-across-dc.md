@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Migrate your stacks across data centers
+title: Migrating your applications between data centers
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to migrate your applications from one data centre to another"
 legacy: false
 tags: ["high-availability"]
 

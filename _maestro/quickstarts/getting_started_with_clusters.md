@@ -2,6 +2,7 @@
 layout: post
 title: Getting started with Maestro Clusters
 categories: quickstarts
+order: 3
 legacy: false
 tags: ["getting started", "cluster", "maestro cluster"]
 lead: Create a Maestro cluster for shared server application deployments"

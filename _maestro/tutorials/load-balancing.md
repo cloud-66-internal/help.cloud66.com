@@ -4,7 +4,7 @@ template: one-col
 title: Adding a Load Balancer
 categories: tutorials
 order: 8
-lead: ""
+lead: "How to add a load balancer to your application"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path

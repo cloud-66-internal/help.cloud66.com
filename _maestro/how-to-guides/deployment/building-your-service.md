@@ -3,14 +3,14 @@ layout: post
 template: one-col
 title: Building your Docker service (V1)
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to build a Docker service in Maestro (Version 1 only)"
 legacy: true
 tags: ["build"]
 permalink: /:collection/:path
 ---
 
 <div class="notice notice-danger">
-<p>PLEASE NOTE:<br/> This guide only applies to Version 1 of Cloud 66's container management service, also know as <em>Docker (legacy)</em>. If you are new to Cloud 66 then you should use <a href="/skycap/quickstarts/getting_started.html">Skycap</a> to handle this function.</p></div>
+<p>PLEASE NOTE:<br/> This guide only applies to Version 1 of Cloud 66's container management service, also know as <em>CSV1</em>. If you are new to Cloud 66 then you should use <a href="/skycap/quickstarts/getting_started.html">Skycap</a> to handle this function.</p></div>
 
 ## Pull code from Git
 

@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "Managing log files with Maestro"
+title:  "Managing log files"
 categories: how-to-guides/deployment
-lead: Cloud 66 makes it easy to handle your stack logs
+lead: How to manage your application log files within Maestro
 tags: ['Logs']
 legacy: false
 permalink: /:collection/:path

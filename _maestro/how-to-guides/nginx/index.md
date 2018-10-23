@@ -2,10 +2,9 @@
 layout: post
 template: one-col
 title:  "Maestro: Nginx"
-categories: how-to-guides/nginx
 lead: How to configure Nginx
 legacy: false
-permalink: /:collection/:categories/index.html
+permalink: /:collection/how-to-guides/nginx/index.html
 ---
 
 <div class="Toc Toc--howto">

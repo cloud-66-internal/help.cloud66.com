@@ -4,7 +4,7 @@ template: one-col
 title: Adding a failover group
 categories: tutorials
 order: 7
-lead: ""
+lead: "How to add failover groups to your application"
 legacy: false
 tags: ["High-availability"]
 permalink: /:collection/:path

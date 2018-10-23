@@ -4,7 +4,7 @@ template: one-col
 title: Using CustomConfig
 categories: tutorials
 order: 2
-lead: ""
+lead: "How to use CustomConfig to manage your configuration files"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path

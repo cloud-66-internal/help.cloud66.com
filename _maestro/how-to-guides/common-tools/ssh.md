@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Debugging Toolbelt SSH
 categories: how-to-guides/common-tools
-lead: ""
+lead: "How to troubleshoot issues with Toolbelt SSH access"
 legacy: false
 permalink: /:collection/:path
 tags: ["debugging"]

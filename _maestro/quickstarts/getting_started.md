@@ -2,6 +2,7 @@
 layout: post
 title: Getting started with Maestro
 categories: quickstarts
+order: 1
 legacy: false
 tags: ["getting started"]
 lead: Deploy and manage your containers on any cloud

@@ -1,15 +1,13 @@
 ---
 layout: post
 template: one-col
-title: Docker service configuration
+title: Using Docker service configurations - TBS!
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to specify custom service configurations for your application"
 legacy: false
 tags: ["customization", "service.yml"]
 permalink: /:collection/:path
 ---
-
-
 
 ## What is service configuration?
 

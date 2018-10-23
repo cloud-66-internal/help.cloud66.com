@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Configuring DNS
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to configure your domain to work with Maestro"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path

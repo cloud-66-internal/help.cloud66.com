@@ -4,7 +4,7 @@ template: one-col
 title: Using GitHub with Maestro
 categories: how-to-guides/common-tools
 order: 1
-lead: ""
+lead: "How to pull code directly from Github into your Maestro application"
 tags: ["git","github"]
 legacy: false
 

@@ -4,7 +4,7 @@ template: one-col
 title: Mapping Container Ports 
 categories: tutorials
 order: 1
-lead: ""
+lead: "How to map your containers to internal and external ports"
 legacy: false
 tags: ["customization", "service.yml"]
 permalink: /:collection/:path
@@ -23,15 +23,11 @@ This is not limited to HTTP or web traffic. The same concepts apply if your cont
 
 In this article, outside world is used for any client of your service that's not inside the container. This includes any other services on your other stacks.
 
-
-
 ## Ports inside and outside containers
 
 Your code that runs inside of a container listens to a specific port. For example a standard setup for a web server listens to port 80 for HTTP and 443 for HTTPS traffic. A normal Rails application listens to port 3000 or 9292 by default.
 
 Here is an example of default ports used by different programming frameworks or application servers:
-
-	
 
 		
   <table class="table table-bordered table-striped"> 

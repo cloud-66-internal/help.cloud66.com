@@ -53,7 +53,7 @@
        <ul class="menu-root">
             {% assign nginx = include.collection | where:"categories","how-to-guides/nginx" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/how-to-guides/deployment">How-to: Nginx</a></h3></li>
+    		<li><h3><a href="/maestro/how-to-guides/nginx">How-to: Nginx</a></h3></li>
             {% include left_nav_list.html section=nginx current=page %}
        
         </ul>
@@ -61,7 +61,7 @@
   
          <ul class="menu-root">
             {% assign security = include.collection | where:"categories","how-to-guides/security" | sort: "order" %}
-            <li><h3><a href="/{{product}}/how-to-guides">How-to: SSL</a></h3></li>
+            <li><h3><a href="/maestro/how-to-guides/security">How-to: SSL</a></h3></li>
             {% include left_nav_list.html section=security current=page %}
 
         </ul>
@@ -69,7 +69,7 @@
         <ul class="menu-root">
             {% assign clouds = include.collection | where:"categories","how-to-guides/clouds" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/how-to-guides/">How-to: Cloud Providers</a></h3></li>
+    		<li><h3><a href="/maestro/how-to-guides/clouds">How-to: Cloud Providers</a></h3></li>
             {% include left_nav_list.html section=clouds current=page %}
        
         </ul>
@@ -77,7 +77,7 @@
         <ul class="menu-root">
             {% assign scaling = include.collection | where:"categories","how-to-guides/scaling" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/how-to-guides/">How-to: Scaling</a></h3></li>
+    		<li><h3><a href="/maestro/how-to-guides/scaling">How-to: Scaling</a></h3></li>
             {% include left_nav_list.html section=scaling current=page %}
        
         </ul>
@@ -93,7 +93,7 @@
        <ul class="menu-root">
             {% assign integrations = include.collection | where:"categories","integrations" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/how-to-guides/add-ins">Integration guides</a></h3></li>
+    		<li><h3><a href="/maestro/integrations">Integration guides</a></h3></li>
             {% include left_nav_list.html section=integrations current=page %}
        
         </ul>

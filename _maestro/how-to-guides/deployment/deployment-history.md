@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: What is Deployment History
+title: Using Deployment History
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to use the deployment history to track and roll back deployments"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
