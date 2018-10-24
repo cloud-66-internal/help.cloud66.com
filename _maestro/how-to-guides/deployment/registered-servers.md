@@ -3,12 +3,11 @@ layout: post
 template: one-col
 title: Using your own servers with Maestro
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to use your own servers with Maestro"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
 ---
-
 
 
 ## About registered servers

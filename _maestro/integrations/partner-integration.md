@@ -9,5 +9,4 @@ tags: ["operations"]
 permalink: /:collection/:path
 ---
 
-
 {%include references/integrations/partner-integration.md %}

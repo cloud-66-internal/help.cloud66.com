@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "How to use the InfluxDB Add-in"
+title:  "Using the InfluxDB Add-in"
 categories: how-to-guides/add-ins
-lead: Add InfluxDB to your stack with ease
+lead: How to add the InfluxDB to your application via Maestro
 tags: ['Add in']
 legacy: false
 permalink: /:collection/:path

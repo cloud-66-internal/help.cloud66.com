@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: How to configure Nginx
+title: Nginx options and variables
 categories: references
-lead: "Nginx within the stack"
+lead: "A detailed guide to the options and variables available for managing the Nginx reverse-proxy in Maestro"
 legacy: false
 tags: ["customization", "nginx"]
 order: 90

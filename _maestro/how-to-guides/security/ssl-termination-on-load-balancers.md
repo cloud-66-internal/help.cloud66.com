@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  Enabling SSL termination on load balancers
 categories: how-to-guides/security
-lead: ""
+lead: "How to enable automatic SSL termination on load balancers in Maestro"
 legacy: false
 tags: ["ssl"]
 permalink: /:collection/:path
@@ -44,19 +44,19 @@ Through the [AWS ELB command line interface](http://aws.amazon.com/developertool
 $ iam-servercertupload -b <CA authenticated SSL> -k <private key file(.pem)> -s <certificate name>  -c  <certificate chain file> –v
 ```
 
-*You should retrieve any available SSL certificate using this command:
+* You should retrieve any available SSL certificate using this command:
 
 ```
 $ iam-servercertlistbypathx
 ```
 
-*Run the command below to attach the SSL certificate to the load balancer:
+* Run the command below to attach the SSL certificate to the load balancer:
 
 ```
 $ elb-create-lb-listeners ELBConfigureSSL --listener "protocol=HTTPS,lb-port=443,instance-port=80,instance-protocol=HTTP, cert-id=&<certificate name>"
 ```
 
-*To delete a certificate, run the following command:
+* To delete a certificate, run the following command:
 
 ```
 $ iam-servercertdel -s <certificate name>

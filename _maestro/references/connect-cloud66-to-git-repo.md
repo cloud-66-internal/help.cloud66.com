@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Connecting your Git repository
+title: Connecting a Git repository
 categories: references
-lead: "Connecting Cloud 66 to a git repository"
+lead: "Connecting Maestro to a git repository"
 legacy: false
 tags: ["git"]
 permalink: /:collection/:path

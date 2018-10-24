@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Optimizing for server load
+title: Load testing
 categories: how-to-guides/scaling
-lead: ""
+lead: "How to load test your application"
 legacy: false
 tags: ["customization"]
 

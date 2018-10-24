@@ -1,11 +1,10 @@
 ---
 layout: post
 template: one-col
-title:  "Maestro: SSL security"
-categories: how-to-guides/security
+title:  "Configuring SSL security within Maestro"
 lead: How to secure your application
 legacy: false
-permalink: /:collection/:categories/index.html
+permalink: /:collection/how-to-guides/security/index.html
 ---
 
 <div class="Toc Toc--howto">

@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title: What are redeployment hooks?
+title: Using redeployment hooks
 categories: how-to-guides/deployment
 order: 32
-lead: ""
+lead: "How to use redeployment hooks to achieve automated deployments"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path

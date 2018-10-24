@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Everything about Scaling
+title: Scaling your application servers
 categories: how-to-guides/scaling
-lead: ""
+order: 1
+lead: "An overview on scaling your application servers"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path

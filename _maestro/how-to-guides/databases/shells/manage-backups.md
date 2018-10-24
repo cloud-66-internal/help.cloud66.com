@@ -1,11 +1,11 @@
 ---
 layout: post
 template: one-col
-title: How to manage your Cloud 66 backups
+title: Managing database backups
 categories: how-to-guides/databases
-lead: ""
+lead: "How to manage database backups in Maestro"
 legacy: false
-tags: ["backups"]
+tags: ["backups, databases"]
 permalink: /:collection/:path
 ---
 {% include how-to-guides/databases/manage-backups.md %}

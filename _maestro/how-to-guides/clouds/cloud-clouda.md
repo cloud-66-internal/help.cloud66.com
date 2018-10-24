@@ -1,15 +1,13 @@
 ---
 layout: post
 template: one-col
-title: Cloud-A cloud
+title: Cloud-A
 categories: how-to-guides/clouds
-lead: ""
+lead: "Configuring Cloud-A for use with Maestro"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
 ---
-
-
 
 
 {% include references/clouds/cloud-clouda.md  product = page.collection %}

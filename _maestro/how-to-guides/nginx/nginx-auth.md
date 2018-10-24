@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Nginx basic authorization
+title: Enabling basic authentication via Nginx
 categories: how-to-guides/nginx
-lead: ""
+lead: "How to enable Nginx's basic HTTP authentication"
 legacy: false
 change: true
 permalink: /:collection/:path

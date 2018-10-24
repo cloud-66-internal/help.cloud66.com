@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "What is the custom server add-in?"
+title:  "Using the custom server add-in"
 categories: how-to-guides/add-ins
-lead: Custom servers within the Cloud 66 ecosystem
+lead: Adding custom servers to Maestro - TBF!
 tags: ['Customization', 'Add in']
 legacy: false
 permalink: /:collection/:path

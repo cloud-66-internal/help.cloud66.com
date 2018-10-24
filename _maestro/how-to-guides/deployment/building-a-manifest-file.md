@@ -4,7 +4,7 @@ template: one-col
 title: Building a manifest file
 categories: how-to-guides/deployment
 order: 1
-lead: ""
+lead: "How to build a manifest file for your application"
 legacy: false
 tags: ["manifest", "customization"]
 permalink: /:collection/:path

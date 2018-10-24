@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: What is Service storage?
+title: Configuring Service storage
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to add persistent storage to you application"
 legacy: false
 tags: ["operations", "storage"]
 permalink: /:collection/:path

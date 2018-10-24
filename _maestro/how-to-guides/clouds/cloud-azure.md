@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Microsoft Azure cloud
+title: Microsoft Azure
 categories: how-to-guides/clouds
-lead: ""
+lead: "Configuring Microsoft Azure for use with Maestro"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path

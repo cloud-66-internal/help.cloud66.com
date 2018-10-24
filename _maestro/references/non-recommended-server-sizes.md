@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Non-recommended server sizes
+title: Recommended minimum server sizes
 categories: references
-lead: "Choosing the right server size"
+lead: "A guide to the minimum server sizes recommended for use with Maestro"
 legacy: false
 tags: ["performance"]
 permalink: /:collection/:path

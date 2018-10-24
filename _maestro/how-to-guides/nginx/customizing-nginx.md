@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Customizing Nginx
+title: Customizing your Nginx configuration
 categories: how-to-guides/nginx
-lead: ""
+order: 1
+lead: "How to customize the configuration of the Maestro Nginx proxy"
 legacy: false
 tags: ["customization"]
 

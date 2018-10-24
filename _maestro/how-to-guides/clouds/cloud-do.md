@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: DigitalOcean cloud
+title: DigitalOcean
 categories: how-to-guides/clouds
-lead: ""
+lead: "Configuring DigitalOcean for use with Maestro"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path

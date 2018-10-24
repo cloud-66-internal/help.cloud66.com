@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: About using team accounts
-categories: references/accounts
+categories: account
 lead: ""
 legacy: false
 tags: ["account"]

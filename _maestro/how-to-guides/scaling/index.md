@@ -2,10 +2,9 @@
 layout: post
 template: one-col
 title:  "Maestro: Scaling"
-categories: how-to-guides/scaling
 lead: How to scale your application
 legacy: false
-permalink: /:collection/:categories/index.html
+permalink: /:collection/how-to-guides/scaling/index.html
 ---
 
 <div class="Toc Toc--howto">

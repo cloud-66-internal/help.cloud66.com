@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Rackspace Cloud
+title: Rackspace
 categories: how-to-guides/clouds
-lead: ""
+lead: "Configuring Rackspace for use with Maestro"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path

@@ -1,14 +1,13 @@
 ---
 layout: post
 template: one-col
-title: How to achieve Multi Tenancy for Stacks
+title: Configuring for Multi Tenancy
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to configure applications to share the same infrastructure"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path
 ---
-
 
 
 ## Overview

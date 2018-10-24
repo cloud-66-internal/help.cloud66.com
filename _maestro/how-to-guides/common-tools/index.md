@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Maestro: Common Tools"
+title:  "Common tools used in Maestro"
 lead: How to properly use Cloud 66 Maestro
 legacy: false
 permalink: /:collection/how-to-guides/common-tools/index.html

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Maestro: Nginx"
+title:  "How to configure Nginx within Maestro"
 lead: How to configure Nginx
 legacy: false
 permalink: /:collection/how-to-guides/nginx/index.html

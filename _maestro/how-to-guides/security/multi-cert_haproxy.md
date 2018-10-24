@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Configuring Multi Certificate for HAProxy
+title: Multi-certificate SSL for HAProxy
 categories: how-to-guides/security
-lead: ""
+lead: "How to configure multi-certificate SSL for HAProxy in Maestro"
 legacy: false
 tags: ["ssl","haproxy"]
 permalink: /:collection/:path
@@ -40,8 +40,6 @@ cx ssh -s stack_name haproxy_server_name
 ```
 
 
-
-
 ### 4. Copy the files to certification files from /tmp to their directory
 
 ```
@@ -54,11 +52,11 @@ sudo cp /tmp/websitename2.pem /etc/ssl/private/websitename2.pem
 
 ### 5. Change the settings in your HAproxy config
 
-In th UI Find the following line in your HAproxy config page:
+In the UI Find the following line in your HAproxy config page:
 
 `bind 0.0.0.0:{{port[0]}} ssl crt` 
 
-and chenge it to:
+and change it to:
 
 `bind 0.0.0.0:{{port[0]}} ssl crt websitename1.pem crt websitename2.pem`
 

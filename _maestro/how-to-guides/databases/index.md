@@ -1,11 +1,10 @@
 ---
 layout: post
 template: one-col
-title:  "Maestro: Add-ins"
-categories: how-to-guides/databases
+title:  "Using Databases with Maestro"
 lead: How to configure databases for use with Maestro
 legacy: false
-permalink: /:collection/:categories/index.html
+permalink: /:collection/how-to-guides/databases/index.html
 ---
 
 <div class="Toc Toc--howto">

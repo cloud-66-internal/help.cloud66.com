@@ -1,14 +1,13 @@
 ---
 layout: post
 template: one-col
-title: Customize your Database Configuration with Maestro
+title: Customizing database configuration
 categories: how-to-guides/databases
-lead: "Customize your Database Configuration on Cloud 66 Maestro stacks"
+lead: "How to customize database configurations for Maestro applications"
 legacy: false
 tags: ["PostgreSQL", "MySQL", "Redis", "MongoDB"]
 permalink: /:collection/:path
 ---
-
 
 You can customize the database configuration on your servers using [CustomConfig](/{{page.collection}}/tutorials/custom-config.html). CustomConfig is available for MySQL, PostgreSQL, Redis and MongoDB.
 

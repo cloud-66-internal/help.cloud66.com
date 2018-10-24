@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Integration with Circle CI
+title: Integrating with Circle CI
 categories: integrations
-lead: ""
+lead: "How to integrate Maestro into a Circle CI pipeline"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path

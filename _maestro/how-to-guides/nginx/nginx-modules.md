@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Add modules to Nginx
+title: Adding modules to Nginx
 categories: how-to-guides/nginx
-lead: ""
+lead: "How to add custom modules to Nginx in Maestro"
 legacy: false
 tags: ["customization"]
 

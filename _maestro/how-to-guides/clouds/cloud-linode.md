@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Linode cloud
+title: Linode
 categories: how-to-guides/clouds
-lead: ""
+lead: "Configuring Linode for use with Maestro"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path

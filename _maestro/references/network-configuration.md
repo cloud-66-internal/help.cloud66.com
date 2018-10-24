@@ -4,7 +4,7 @@ template: one-col
 title:  "Application Network Settings"
 legacy: false
 categories: references
-lead: Configure security and network settings
+lead: A detailed guide to the application network configuration settings available in Maestro
 tags: ['network']
 permalink: /:collection/:path
 ---

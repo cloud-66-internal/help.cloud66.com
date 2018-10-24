@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Integration With Semaphore
+title: Integrating With Semaphore
 categories: integrations
-lead: ""
+lead: "How to integrate Maestro into your Semaphore pipeline"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path

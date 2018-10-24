@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: How to change the data directory for PostgreSQL
-categories: Tutorials
-lead: ""
+title: Changing the PostgreSQL data directory
+categories: how-to-guides/databases
+lead: "How to change the data directory used by PostgreSQL"
 legacy: false
 
 permalink: /:collection/:path

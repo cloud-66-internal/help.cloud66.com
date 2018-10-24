@@ -1,11 +1,10 @@
 ---
 layout: post
 template: one-col
-title:  "Maestro: Add-ins"
-categories: how-to-guides/clouds
+title:  "Configuring cloud providers for use with Maestro"
 lead: How to configure cloud providers for use with Maestro
 legacy: false
-permalink: /:collection/:categories/index.html
+permalink: /:collection/how-to-guides/clouds/index.html
 ---
 
 <div class="Toc Toc--howto">

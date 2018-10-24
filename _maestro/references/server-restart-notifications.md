@@ -4,7 +4,7 @@ template: one-col
 title:  "Server restart notifications"
 categories: references
 order: 17
-lead: Cloud 66 server restart notifications
+lead: Understanding server restart notifications in Maestro
 tags: ['server','notifications']
 legacy: false
 permalink: /:collection/:path

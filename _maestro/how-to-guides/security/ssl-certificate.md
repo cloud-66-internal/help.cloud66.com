@@ -1,15 +1,13 @@
 ---
 layout: post
 template: one-col
-title: How to add an SSL Certificate
+title: Adding an SSL certificate to Nginx
 categories: how-to-guides/security
-lead: ""
+lead: "How to add an SSL certificate to Nginx within Maestro"
 legacy: false
 tags: ["ssl"]
 permalink: /:collection/:path
 ---
-
-
 
 ## Certificate signing request
 
@@ -19,7 +17,6 @@ To generate a key and certificate signing request, follow the steps below.
 2.  Create a certificate signing request and enter your information as requested:
 3.  Provide this CSR file to your certificate authority, who will in turn provide you with a certificate (CRT) file.
 4.  Use the original .key file together with this .crt file on Cloud 66.
-
 
 
 ## Important

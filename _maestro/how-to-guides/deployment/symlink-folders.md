@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Using symbolic links
 categories: how-to-guides/deployment
-lead: ""
+lead: "Using symlinks in Maestro applications"
 legacy: false
 tags: ["customization"]
 

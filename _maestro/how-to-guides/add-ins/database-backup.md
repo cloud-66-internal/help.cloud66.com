@@ -1,15 +1,13 @@
 ---
 layout: post
 template: one-col
-title: What is the database backup add-in? AA!
+title: Using the database backup add-in - TBF!!
 categories: how-to-guides/add-ins
-lead: ""
+lead: "Schedule and automate your database backups with this add-in"
 legacy: false
 tags: ["databases"]
 permalink: /:collection/:path
 ---
-
-
 
 Use this add-in to backup your database on a schedule of your choosing.  You can choose from different settings to have your expected behavior :
 

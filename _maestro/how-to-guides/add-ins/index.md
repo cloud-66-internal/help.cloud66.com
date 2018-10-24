@@ -1,8 +1,8 @@
 ---
 layout: post
 template: one-col
-title:  "Maestro: Add-ins"
-lead: How to properly use Add-ins for Maestro
+title:  "Extending Maestro with Add-ins"
+lead: How to use Add-ins for Maestro
 legacy: false
 permalink: /:collection/how-to-guides/add-ins/index.html
 ---

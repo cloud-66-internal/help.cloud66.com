@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Replacing SQLite with MySQL or PostgreSQL
+title: Switching between SQL engines
 categories: how-to-guides/databases
-lead: ""
+lead: "How to switch from SQlite to MySQL or PostgreSQL"
 tags: ["postgresql","sqlite","mysql"]
 legacy: false
 permalink: /:collection/:path
