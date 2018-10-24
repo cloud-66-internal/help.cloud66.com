@@ -151,7 +151,7 @@ permalink: /:collection/:path
             Now we need to choose a cloud provider for the deployment. We'll use <em>DigitalOcean</em> and deploy the application to the <em>London, UK</em> region.
         </p>
         <p class="u-textSmall">
-            You can also deploy to your own servers. First you need to <a href="/maestro/tutorials/registered-servers.html">add them as registered servers</a>.
+            You can also deploy to your own servers. First you need to <a href="/maestro/how-to-guides/deployment/registered-servers.html">add them as registered servers</a>.
         </p>
     </div>
 </div>

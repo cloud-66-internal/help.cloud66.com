@@ -11,4 +11,3 @@ permalink: /:collection/:path
 ---
 {% assign product = 'maestro' %}
 
-{%include concepts/stack-definition.md product=product %}

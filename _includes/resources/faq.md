@@ -43,7 +43,7 @@ Cloud 66 uses remote SSH keys to set up an SSH tunnel to your server and execute
 
 ## Are their any requirements for the user on my servers?
 
-Yes. As Cloud 66 will be provisioning services on your servers from scratch, the server must meet a number of requirements outlined in the [Registered servers]({% if page.collection != "skycap" %}/{{page.collection}}/tutorials/registered-servers.html{%else%}/maestro/tutorials/registered-servers.html{%endif%}) documentation.
+Yes. As Cloud 66 will be provisioning services on your servers from scratch, the server must meet a number of requirements outlined in the [Registered servers]({% if page.collection != "skycap" %}/{{page.collection}}/tutorials/registered-servers.html{%else%}/maestro/how-to-guides/deployment/registered-servers.html{%endif%}) documentation.
 
 * * *
 

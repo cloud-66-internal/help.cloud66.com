@@ -49,7 +49,7 @@ permalink: /:collection/:path
 
 <p>Now you're going to be creating your first Maestro cluster. The first step involves <em>giving your cluster a name</em>. Lets call our cluster <em>awesome-cluster</em></p>
 
-<p>We're also going to have to select our deployment target now. We can choose from our pre-added cloud providers or <a href='/maestro/tutorials/registered-servers.html#register-a-server'>registered servers</a> (or click <em>add cloud</em> to add a new cloud provider now). In our example we're choosing to deploy to Digital Ocean</p>
+<p>We're also going to have to select our deployment target now. We can choose from our pre-added cloud providers or <a href='/maestro/how-to-guides/deployment/registered-servers.html#register-a-server'>registered servers</a> (or click <em>add cloud</em> to add a new cloud provider now). In our example we're choosing to deploy to Digital Ocean</p>
 
 <p><img class="ContentImage" src="/assets/maestro/maestro_cluster_new_form_top.png" alt="Choose name and target cloud"></p>
 
