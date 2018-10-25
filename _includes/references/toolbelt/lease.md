@@ -29,5 +29,5 @@ $ cx lease [-s <stack>] [-f <from IP>] [-t <time to open>] [-p <port>]
 ```
 $ cx lease -s "My Awesome App" -f 123.123.123.123 -t 30 -e production
 ```
-For more fine grained access control, use the [Stack network settings]({% if page.collection == "skycap" %}/maestro/tutorials/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}) page.
+For more fine grained access control, use the [Stack network settings]({% if page.collection == "skycap" %}/maestro/how-to-guides/deployment/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}) page.
 

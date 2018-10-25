@@ -38,9 +38,9 @@ Cloud 66 Docker includes the following:
    - [Docker scaling](/{{page.collection}}/references/shells/toolbelt.html#scaling-services)
 Docker-based stacks enjoy the same benefits as other Cloud 66 stacks, including: 
    - [Deployed and managed databases]({% if page.collection == "skycap" %}/maestro/how-to-guides/databases/database-customization.html{% else %}/{{page.collection}}/how-to-guides/databases/database-customization.html{% endif %})
-   - Database [backups]({% if page.collection == "skycap" %}/maestro/tutorials/database-backup.html{% else %}/{{page.collection}}/tutorials/database-backup.html{%endif%}) and [replication](/rails/tutorials/database-replication.html)
+   - Database [backups]({% if page.collection == "skycap" %}/maestro/how-to-guides/add-ins/database-backup.html{% else %}/{{page.collection}}/tutorials/database-backup.html{%endif%}) and [replication](/rails/tutorials/database-replication.html)
    - [Load balancing]({% if page.collection == "skycap" %}/maestro/tutorials/load-balancing.html{% else %}/{{page.collection}}/tutorials/load-balancing.html{% endif %})
-   - [Firewall management and brute force protection for web and SSH]({% if page.collection == "skycap" %}/maestro/tutorials/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %})
+   - [Firewall management and brute force protection for web and SSH]({% if page.collection == "skycap" %}/maestro/how-to-guides/deployment/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %})
    - [Team and organisations](/{{page.collection}}/references/account/team-accounts.html)
    - Fast response 100% SLA DNS layer [failover groups]({% if page.collection == "skycap" %}/maestro/tutorials/failover-groups.html{% else %}/{{page.collection}}/tutorials/failover-groups.html{% endif %}) for quick traffic switch overs
    - [Server vital sign metrics]({% if page.collection== 'skycap' %}/maestro/how-to-guides/deployment/shells/setting-up-custom-livelogs.html{%else%}/{{page.collection}}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html{%endif%})

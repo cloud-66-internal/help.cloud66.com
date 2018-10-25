@@ -42,7 +42,7 @@ You can choose between any of four supported databases:
 - MongoDB
 - Redis
 
-Cloud 66 makes it easy for you to [backup your database]({% if page.collection == "skycap" %}/maestro/tutorials/database-backup.html{% else %}/{{page.collection}}/tutorials/database-backup.html{% endif %}){% if page.collection == "rails" %}, [verify the backup](/rails/tutorials/backup-verifiers.html) {% endif %} and [replicate your databases](/rails/tutorials/database-replication.html).
+Cloud 66 makes it easy for you to [backup your database]({% if page.collection == "skycap" %}/maestro/how-to-guides/add-ins/database-backup.html{% else %}/{{page.collection}}/tutorials/database-backup.html{% endif %}){% if page.collection == "rails" %}, [verify the backup](/rails/tutorials/backup-verifiers.html) {% endif %} and [replicate your databases](/rails/tutorials/database-replication.html).
 
 
 ### Operating system

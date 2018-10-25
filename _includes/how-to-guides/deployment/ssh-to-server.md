@@ -1,7 +1,7 @@
 
 We provide two different ways for you to SSH to your server - an automated way with the Cloud 66 toolbelt, or the manual way.
 
-<h2 id="cx">Cloud 66 toolbelt</h2>
+## Cloud 66 toolbelt
 You can use the [Cloud 66 toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) to easily SSH to your servers. Once initialized, the following command can be used:
 
 ### Full

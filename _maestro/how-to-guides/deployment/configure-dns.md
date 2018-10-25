@@ -13,7 +13,7 @@ permalink: /:collection/:path
 
 ## Overview
 
-Cloud 66 provides [DNS hostnames]({% if page.collection != "skycap" %}/{{page.collection}}/references/server-ip-addresses.html{%else%}/maestro/references/server-ip-addresses.html{%endif%}) for each server you deploy with us. This allows us to assign a new IP address to your application on your behalf if need be, while still maintaining the same hostname.
+Cloud 66 provides [DNS hostnames](/maestro/references/server-ip-addresses.html) for each server you deploy with us. This allows us to assign a new IP address to your application on your behalf if need be, while still maintaining the same hostname.
 
 You will need to manage the DNS records of your domain name to ensure that it's pointing to Cloud 66. For maximum reliability, you should point it at a [failover group address](/maestro/tutorials/failover-groups.html), which allows you to switch traffic between stacks quickly and easily.
 
@@ -48,7 +48,7 @@ This involves using an A record to point your root domain at your load balancer 
 
 1.  Create a CNAME record for www pointing at the Cloud 66 hostname on your load balancer.
 2.  Create an A record for your root domain (eg. example.com) pointing at your load balancer IP address.
-3.  ​Use [network redirects](/maestro/how-to-guides/deployment/service-network-configuration.html) to permanently redirect all traffic from example.com to www.example.com.
+3.  ​Use [network redirects](/maestro//how-to-guides/deployment/service-network-configuration.html) to permanently redirect all traffic from example.com to www.example.com.
 
 ### 3. Subdomain redirection
 
