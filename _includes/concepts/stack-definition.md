@@ -52,7 +52,7 @@ Your servers will be deployed with **Ubuntu 16.04 LTS**. On the operating system
 
 ### Cloud vendor
 
-You can either [deploy to your cloud](/{{page.collection}}/resources/technical-specifications.html#supported-cloud-providers) or [deploy to your own server]({% if page.collection != "skycap" %}/{{page.collection}}/tutorials/registered-servers.html{%else%}/maestro/tutorials/registered-servers.html{%endif%}).
+You can either [deploy to your cloud](/{{page.collection}}/resources/technical-specifications.html#supported-cloud-providers) or [deploy to your own server]({% if page.collection != "skycap" %}/{{page.collection}}/how-to-guides/deployment/registered-servers.html{%else%}/maestro/how-to-guides/deployment/registered-servers.html{%endif%}).
 
 * * *
 

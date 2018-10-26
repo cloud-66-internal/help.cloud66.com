@@ -92,7 +92,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies the command you would like to run during stack build. </td> 
     </tr> 
     <tr> 
-     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/legacy_docker/how-to-guides/deployment/building-your-service.html{%endif%}">build_root</a> </td> 
+     <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html">build_root</a> </td> 
      <td> Specifies the directory of your repository in which you wish to run your Docker build. </td> 
     </tr> 
     <tr> 
