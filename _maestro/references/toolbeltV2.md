@@ -53,6 +53,7 @@ List, download and upload of configuration files such as a _service.yml_ or _man
 
 Detailed help: [Parameters](/maestro/references/toolbeltV2/stacks-configure.html#stacks-clear-caches-parameters)
 
+<br/>
 
 # Redeploy
 
