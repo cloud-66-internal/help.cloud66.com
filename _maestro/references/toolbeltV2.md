@@ -54,7 +54,7 @@ List, download and upload of configuration files such as a _service.yml_ or _man
 Detailed help: [Parameters](/maestro/references/toolbeltV2/stacks-configure.html#stacks-clear-caches-parameters)
 
 
-## Redeploy
+# Redeploy
 
 Triggers the deployment of a stack from the command line. Alias of `stacks redeploy` command. 
 
