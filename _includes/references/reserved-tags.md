@@ -4,6 +4,21 @@ You can tag a variety of your infrastructure components, such as stacks, servers
 <h2 id="tags">Reserved tags</h2>
 Cloud 66 currently reserves the following tags:
 
+
+{% if page.collection == "maestro" %} 
+<table class="table table-bordered table-striped table-small">
+<tr>
+	<td><b>Tag</b></td>
+	<td><b>Target</b></td>
+	<td><b>Description</b></td>
+</tr>
+<tr>
+	<td>c66.migrations.run</td>
+	<td>server</td>
+	<td>Sets the given server as the <a href="/maestro/how-to-guides/databases/database-management.html">migrator</a> - migrations will run on that server <i>only</i>, and the rest of the servers will wait until the migrations are performed before continuing with the deployment.</td>
+</tr>
+</table>
+{%else%}
 <table class="table table-bordered table-striped table-small">
 <tr>
 	<td><b>Tag</b></td>
@@ -16,3 +31,4 @@ Cloud 66 currently reserves the following tags:
 	<td>Sets the given server as the <a href="/{{page.collection}}/tutorials/database-management.html">migrator</a> - migrations will run on that server <i>only</i>, and the rest of the servers will wait until the migrations are performed before continuing with the deployment.</td>
 </tr>
 </table>
+{%endif%}

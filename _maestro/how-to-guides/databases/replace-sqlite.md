@@ -31,5 +31,5 @@ Switching to another SQL-based database is easy, and the following instructions 
 4.  Commit and check changes in.
 5.  Rebuild your stack.
 
-More information about [databases](/{{page.collection}}/tutorials/database-backup.html) supported by Cloud 66.
+More information about [databases](/maestro/how-to-guides/databases/database-management.html) supported by Cloud 66.
 

@@ -56,7 +56,7 @@ $ cat COMODORSAExtendedValidationSecureServerCA.crt COMODORSAAddTrustCA.crt AddT
 If this doesn't work make sure that your certificates don't need password.
 ```
 
-You may need to serve different parts of your application on separate domains, each with its own SSL certificate. You can use [Nginx CustomConfig](/{{page.collection}}/how-to-guides/deployment/shells/nginx-modules.html) to set this up - you will basically have two server blocks listening on different domains, and serving different certificates (located on the server):
+You may need to serve different parts of your application on separate domains, each with its own SSL certificate. You can use [Nginx CustomConfig](/maestro/how-to-guides/nginx/nginx-modules.html) to set this up - you will basically have two server blocks listening on different domains, and serving different certificates (located on the server):
 
 ```
 {% raw %}{% if allow_ssl == true %}

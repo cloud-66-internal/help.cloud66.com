@@ -8,9 +8,9 @@ legacy: false
 tags: ["nginx"]
 permalink: /:collection/:path
 ---
-{% assign product = "common" %}
+{% assign product = "maestro" %}
 
-In addition to protecting your application (or parts of it) using [HTTP basic authentication](/{{page.collection}}/how-to-guides/security/nginx-auth.html), you can use Cloud 66 [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) to block (or allow) access to your application based on IP addresses.
+In addition to protecting your application (or parts of it) using [HTTP basic authentication](/maestro/how-to-guides/nginx/nginx-auth.html), you can use Cloud 66 [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) to block (or allow) access to your application based on IP addresses.
 
 Follow the instructions below to accomplish this.
 
@@ -26,7 +26,7 @@ Follow the instructions below to accomplish this.
 		allow 1.2.3.4/24; deny all; 
 	There are lots of resources about this syntax on the Internet in case you need more guidance.
 
-3.  Now we can go ahead and customize the Nginx configuration, which you can see more about in our [Nginx CustomConfig documentation](/{{page.collection}}/how-to-guides/deployment/shells/nginx-modules.html).
+3.  Now we can go ahead and customize the Nginx configuration, which you can see more about in our [Nginx CustomConfig documentation](/maestro/how-to-guides/nginx/nginx-modules.html).
 	
 	You will want to add the following code within the http section of your configuration, for example on line 22.
 

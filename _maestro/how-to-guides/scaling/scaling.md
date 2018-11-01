@@ -42,4 +42,4 @@ You can scale your services horizontally across your Kubernetes cluster by click
 
 ## Database servers
 
-You can scale your database servers through database replication, or Elasticsearch through [sharding](/{{page.collection}}/how-to-guides/databases/elasticsearch-scaling.html). See our [database management section](/{{page.collection}}/how-to-guides/databases/database-customization.html) for more information.
+You can scale your database servers through database replication, or Elasticsearch through [sharding](/{{page.collection}}/how-to-guides/scaling/elasticsearch-scaling.html). See our [database management section](/{{page.collection}}/how-to-guides/databases/database-customization.html) for more information.

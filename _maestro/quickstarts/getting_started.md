@@ -9,6 +9,8 @@ lead: Deploy and manage your containers on any cloud
 permalink: /:collection/:path
 ---
 
+{% assign product = "maestro" %}
+
 <p class="lead">
     Maestro is a full container management service. Once your images are ready we'll take care of deploying and managing your containers and infrastructure (servers, load balancers, etc).
 </p>

@@ -83,7 +83,7 @@ This option applies to **text** MySQL and PostgreSQL and redis backups. With thi
 You can retrieve your backup in one of three ways:
 
 <h4 id="dl_toolbelt">Cloud 66 toolbelt</h4> 
-You can retrieve your database backup by using the [toolbelt backup management](/{{page.collection}}/references/shells/toolbelt.html#about-backup-management). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
+You can retrieve your database backup by using the [toolbelt backup management]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/shells/toolbelt.html{%endif%}#about-backup-management). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
 
 <h4 id="dl_script">Download script</h4> 
 

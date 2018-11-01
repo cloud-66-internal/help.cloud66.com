@@ -8,7 +8,7 @@ legacy: false
 
 permalink: /:collection/:path
 ---
-{% assign product = "common" %}
+{% assign product = "maestro" %}
 
 When you initiate replication between two PostgreSQL databases on Cloud 66, we setup [streaming replication](https://wiki.postgresql.org/wiki/Streaming_Replication) between the master and slave servers. Streaming replication is based on [log shipping](http://www.postgresql.org/docs/9.4/static/warm-standby.html) between servers, which generally isn't possible between two servers running vastly different versions of PostgreSQL.
 
