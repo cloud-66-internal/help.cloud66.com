@@ -18,7 +18,9 @@ Reboots the servers used by your stack
 
 ### stacks reboot: usage
 
-`$ cx stacks reboot [-e <environment>]`
+````
+$ cx stacks reboot [-e <environment>]
+```
 
 ### stacks reboot: parameters
 

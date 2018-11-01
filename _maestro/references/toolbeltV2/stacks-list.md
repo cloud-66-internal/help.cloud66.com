@@ -10,7 +10,7 @@ tags: ["shell"]
 permalink: /:collection/:path
 ---
 
-[<- Back to table of cx commands](/maestro/references/toolbeltV2.html#list-stacks)
+[<- Back to index of cx commands](/maestro/references/toolbeltV2.html#list-stacks)
 
 ## stacks list
 
