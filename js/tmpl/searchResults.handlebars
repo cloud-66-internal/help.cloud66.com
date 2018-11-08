@@ -1,8 +1,15 @@
-<ul class="SearchResults">
-    {{#each results}}
-        <li>
-            <h2><a href="{{docid}}">{{title}}</a></h2>
-            <p>{{excerpt}}</p>
-        </li>
-    {{/each}}
-</ul>
+
+{{#each items}}
+    <li class="SearchResults-item">
+        <a href="{{link}}">
+            <h3 class="SearchResults-subTitle">{{title}}</h3>
+            <p class="SearchResults-text">{{snippet}}</p>
+        </a>
+        {{#ifEquals displayLink "blog.cloud66.com"}}
+            <span class="Tag Tag--lrg">Blog</span>
+        {{/ifEquals}}
+        {{#ifEquals displayLink "help.cloud66.com"}}
+            <span class="Tag Tag--lrg">Help Docs</span>
+        {{/ifEquals}}
+    </li>
+{{/each}}

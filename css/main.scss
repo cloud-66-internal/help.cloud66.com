@@ -1455,6 +1455,7 @@ body.Body--home #search-query-nav {
     .SearchResults {
         list-style: none;
         padding: 1em 0;
+        line-height: 1.5;
     }
 
     .SearchResults-item {
@@ -1478,6 +1479,7 @@ body.Body--home #search-query-nav {
         color: #35689e;
         padding-bottom: 2px;
         margin-bottom: 0;
+        line-height: 1.5;
     }
 
     .SearchResults-text {
