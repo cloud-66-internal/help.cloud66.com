@@ -3,9 +3,8 @@ var C66 = window.C66 || {};
 /*
     IMPORTANT!
     Liquid & handlebars DO NOT mix!
-    Therefore we neeed to compile the handlebars 
-    template to render the search results, this is configured below
-    namespaced to Handlebars
+    Therefore handlebars templates need to be compiled from separate files.
+    template to render the search results, this is configured below namespaced to Handlebars
 */
 
 Handlebars.c66 = window.Handlebars.c66 || {};
@@ -38,6 +37,8 @@ Handlebars.registerHelper('ifEquals', function (arg1, arg2, options) {
 
 C66.HelpSearch = {
   init: function(json) {
+    console.log('Search results json');
+    console.log(json);
     var url_string = window.location.href;
     var url = new URL(url_string);
     var q = url.searchParams.get("q");
@@ -48,19 +49,23 @@ C66.HelpSearch = {
         this.renderNoResultsTemplate(q);
     } else {
         this.renderSearchResultsTemplate(json);
+        // this.renderSummaryTemplate(json);
     }
   },
 
   renderNoResultsTemplate() {
-      var message = "<p style='padding-top: 4em'>Sorry, we couldn't find any search results for <strong>" + q + "</strong></p>" + "<p style='padding-bottom: 6em'>Try another search term or browse through the documentation. If you still can't find what you need. <a href='http://app.cloud66.com/support_tickets/new'>Please get in touch</a></p>";
+      var message = "<p style='padding-top: 3em;font-size: 24px'>Sorry, we couldn't find any search results for <strong>" + q + "</strong></p>" + "<p style='padding-bottom: 6em'>Try another search term or browse through the documentation. If you still can't find what you need. <a href='http://app.cloud66.com/support_tickets/new'>Please get in touch</a></p>";
       
       $("#js_search_results_container").html(message);
   },
 
-  renderSearchResultsTemplate(json) {
-    console.log('the json')
-    console.log(json)
-    // Handlebars, note template must be compiled see above
+  renderSummaryTemplate(json){
+      var compiledTemplate = Handlebars.getTemplate("searchSummary");
+      var searchSummaryHtml = compiledTemplate(json);
+      $("#js_search_title").append(searchSummaryHtml);
+  },
+
+  renderSearchResultsTemplate(json) {    
     var compiledTemplate = Handlebars.getTemplate("searchResults");
     var searchResultsHtml = compiledTemplate(json);
     $("#js_search_results_list").html(searchResultsHtml);

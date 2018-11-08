@@ -46,9 +46,13 @@
 			<!-- Container for the search results, filled in with JavaScript -->
 			<div id="hits" class="Landing">
 				<section class="LandingContainer content" id="js_search_results_container">
-					<p>You searched for <strong class="SearchResults-title"></strong></p>
+					<p id="js_search_title">You searched for <strong class="SearchResults-title"></strong></p>
 					<ul class="SearchResults" id="js_search_results_list">
-						<li><p>Getting Search Results&hellip;</p></li>
+						<li>
+							<p>
+								<div class="is-loading"></div> Getting Search Results&hellip;
+							</p>
+						</li>
 					</ul>
 				</section>
 			</div>
