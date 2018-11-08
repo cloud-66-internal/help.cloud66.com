@@ -9,7 +9,7 @@ A custom server will have the following Cloud 66 features enabled:
 - Use of [Cloud 66 add-ins](/{{page.collection}}/how-to-guides/add-ins/add-in-implementation.html)
 - [Log rotation]({% if page.collection == 'maestro' %}/maestro/how-to-guides/deployment/setting-up-custom-livelogs.html{%else%}/{{page.collection}}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html{%endif%})
 - [SSH to your server via toolbelt]({% if page.collection == "maestro" %}/maestro/how-to-guides/common-tools/ssh.html{%else%}/{{page.collection}}/how-to-guides/deployment/shells/ssh.html{%endif%})
-{%if page.collection == 'maestro' %}- [Security](/maestro/the-basics/service-networking.html){%endif%}
+{%if page.collection == 'maestro' %}- [Security](/maestro/how-to-guides/deployment/service-networking.html){%endif%}
 
 ## Add a custom server
 To add a custom server, access the add-ins menu and click _Custom Server_. You will then be able to choose the size of your new server and how many you'd like to add. Once your server is added, you'll be able to see and manage it as part of your stack.

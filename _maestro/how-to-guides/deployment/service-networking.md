@@ -1,8 +1,8 @@
 ---
 layout: post
 template: one-col
-title: Service Networking? TBS!
-categories: the-basics
+title: Configure Service Networking - TBS
+categories: how-to-guides/deployment
 order: 5
 lead: "An introduction to service networking"
 legacy: false
@@ -18,12 +18,9 @@ In a Cloud 66 for Docker stack, your services run inside containers. For this se
 
 This is not limited to HTTP or web traffic. The same concepts apply if your container serves non-HTTP traffic (like web sockets, DB containers or custom TCP / UDP traffic).
 
-
-
 ### Note
 
 In this article, **outside world** is used for any client of your service that's not inside the container. This includes any other services on your other stacks.
-
 
 
 ## Ports inside and outside containers
@@ -66,6 +63,7 @@ Here is an example of default ports used by different programming frameworks or 
       </tr> 
      </tbody> 
     </table>
+
 From the outside world (ie Internet) all of these applications (except for the DBs) listen to the normal HTTP (80) and HTTPS (443) ports so the site visitors don't need to enter port number in their browsers.
 
 On a Cloud 66 for Docker stack, you can make the inside and outside ports map using the Container Port Mapping feature. It is a simple to use yet flexible feature that supports common TCP protocols like HTTP and HTTPS as well as custom TCP and UDP traffic.

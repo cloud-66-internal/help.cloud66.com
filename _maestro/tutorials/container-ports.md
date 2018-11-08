@@ -154,5 +154,5 @@ services:
         ports: ["3000:80", "3001:8080"]
 {% endhighlight %}
 
-See [Service Network Settings](/{{page.collection}}/the-basics/service-networking.html) for more information on all features around Container Port Mapping.
+See [Service Network Settings](/{{page.collection}}/how-to-guides/deployment/service-networking.html) for more information on all features around Container Port Mapping.
 
