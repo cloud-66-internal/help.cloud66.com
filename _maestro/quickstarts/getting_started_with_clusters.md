@@ -9,45 +9,31 @@ lead: Create a Maestro cluster for shared server application deployments"
 permalink: /:collection/:path
 ---
 
-<p class="lead">
-    A Maestro cluster is a special type of Cloud 66 Maestro deployment that includes Kubernetes infrastructure components and no application specific components. You can use a cluster to deploy multiple CSv2 stacks onto the same set of servers.
-</p>
+A Maestro cluster is a "blank" Kubernetes infrastructure, with no application specific components. You can use a cluster to deploy multiple applications to the same set of servers. 
 
-<h2 id="What-youll-need">
-    <a href="#What-youll-need" class="headerlink" title="What you’ll need"></a>
-    What you’ll need
-</h2>
+#### Note
+<div class="notice"><p>Clusters are only compatible with applications built using Maestro <a href="/maestro/the-basics/about-maestro.html">Version 2</a>.</p></div>
 
-<p>Before you start, please check you have the following:</p>
 
-<ul>
-    <li>
-        <p><strong>A Cloud 66 Account</strong> &mdash; If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. There is a free community plan and you'll get full unlimited access to all products free for 14 days.</p>
-    </li>
-    <li>
-        <p><strong>Optional: Container Images to deploy</strong> &mdash; After you've created your cluster we will walk you through deploying these to your cluster through a new Maestro CSv2 deployment. These can be images you've built with Skycap or your own pre-built images that are hosted in an image repository</p>
-    </li>
-    <li>
-        <p><strong>A Cloud Account or Your Own Servers</strong> &mdash; See below.</p>
-    </li>
-</ul>
+## What you’ll need
+
+Before you start, please check you have the following:
+
+* **A Cloud 66 Account** &mdash; If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. There is a free community plan and you'll get full unlimited access to all products free for 14 days.
+* **Container Images to deploy** &mdash; These can be images you've built with [Skycap](https://www.cloud66.com/containers/skycap) or your own pre-built images that are hosted in an image repository.
+* **A Cloud Account or Your Own Servers** &mdash; See below.
 
 {% include general/cloud_provider_or_own_server_tabs.html %}
 
-<h2 id="creating-a-maestro-cluster">
-    <a href="#creating-a-maestro-cluster" class="headerlink" title="Creating a Maestro cluste r"></a>
-    Creating a Maestro cluster
-</h2>
+## Creating a Maestro cluster
 
-<p>To get started with your cluster &mdash; firstly switch to the <em>clusters dashboard</em> in main navigation bar at the top of the page</p>
+To get started with your cluster &mdash; firstly switch to the <em>Clusters dashboard</em> in main navigation bar at the top of the page.
 
-<p><img class="ContentImage" src="/assets/maestro/maestro_cluster_top_nav.png" alt="Switch to the cluster dashboard"></p>
+Then, click the green *new cluster* button in the right-hand panel.
 
-<p>Then, you need to click <em>new cluster</em>
+<img alt="Creating a Maestro Cluster" src="/assets/maestro/maestro-gsw-clusters-1.gif">
 
-<p><img class="ContentImage" src="/assets/maestro/maestro_cluster_new.png" alt="Create a new cluster"></p>
-
-<p>Now you're going to be creating your first Maestro cluster. The first step involves <em>giving your cluster a name</em>. Lets call our cluster <em>awesome-cluster</em></p>
+Now you're going to be creating your first Maestro cluster. The first step involves <em>giving your cluster a name</em>. Lets call our cluster <em>awesome-cluster</em>
 
 <p>We're also going to have to select our deployment target now. We can choose from our pre-added cloud providers or <a href='/maestro/how-to-guides/deployment/registered-servers.html#register-a-server'>registered servers</a> (or click <em>add cloud</em> to add a new cloud provider now). In our example we're choosing to deploy to Digital Ocean</p>
 
@@ -82,10 +68,7 @@ permalink: /:collection/:path
     <img src="/assets/maestro/maestro_cluster_deploy_end.png" alt="Fully created Maestro cluster">
 </p>
 
-<h2 id="configuration">
-    <a href="#configuration" class="headerlink" title="Configuration"></a>
-    Configuring the Cluster
-</h2>
+## Configuring the Cluster
 
 <p>As we have a cluster that has multiple servers, we can easily switch our master node from a <em>shared master</em> to a <em>dedicated master</em>. To do this we simply click the <em>shared master</em> dropdown link and select "Yes! Switch to Dedicated Master"</p>
 
@@ -96,13 +79,8 @@ permalink: /:collection/:path
 <p>We can also easily add additional server nodes to this cluster or remove existing server nodes from this cluster. Note that the master server can not currently be removed.</p>
 
 
-<h2 id="deploying-to-cluster">
-    <a href="#deploying-to-cluster" class="headerlink" title="Deploying applications to the cluster"></a>
-    Deploying applications to the cluster
-</h2>
+## Deploying applications to the cluster
 
-<p>If you now create a new Maestro application (<a href='/maestro/quickstarts/getting_started.html'>Maestro quickstarts guide</a>) at the point where you can select your Cloud provider, you will now see additional items at the bottom of the list containing your available clusters. Select your cluster, and deploy your application!</p>
+If you now create a new Maestro application (see [Getting Started with Maestro for help with this(/maestro/quickstarts/getting_started.html)) at the point where you can select your Cloud provider, you will now see additional items clusters. Select your cluster, and deploy your application!
 
-<p>
-    <img src="/assets/maestro/maestro_cluster_deploy_application.png" alt="Deploy application to cluster">
-</p>
+<img src="/assets/maestro/maestro_cluster_deploy_application.png" alt="Deploy application to cluster">
