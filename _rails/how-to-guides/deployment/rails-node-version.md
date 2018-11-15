@@ -12,7 +12,7 @@ permalink: /:collection/:path
 
 ## Controlling the Node version for your Rails Stack
 
-We automatically install the latest version of Node when we set up your Rack/Rails stack servers. You can control which version is installed by editing the [manifest file](/rails/how-to-guides/deployment/building-a-manifest-file.html) for the Rails stack. 
+We automatically install the latest release of Node version 6.x.x when we set up your Rack/Rails stack servers. You can control which version is installed by editing the [manifest file](/rails/how-to-guides/deployment/building-a-manifest-file.html) for the Rails stack. 
 
 ``` 
 rails:

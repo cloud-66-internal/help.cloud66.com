@@ -235,8 +235,7 @@ production:
 
 ### Node
 
-We automatically install the latest version of Node when we 
-set up your Rack/Rails stack servers. You can control which version is installed by editing the manifest file for any Rails stack as follows: 
+We automatically install the latest release of Node version 6.x.x when we set up your Rack/Rails stack servers. You can control which version is installed by editing the manifest file for any Rails stack as follows: 
 
 ``` 
 rails:
