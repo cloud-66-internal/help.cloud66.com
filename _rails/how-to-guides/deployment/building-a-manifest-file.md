@@ -43,6 +43,7 @@ Next, select which application you would like to specify settings for. You can c
 *   [MongoDB](#mongodb)
 *   [MySQL](#mysql)
 *   [Nginx](#nginx)
+*   [Node](#node)
 *   [PostGIS](#postgis)
 *   [PostgreSQL](#postgresql)
 *   [Redis](#redis)
@@ -214,7 +215,7 @@ production:
         perfect_forward_secrecy: true # deprecated
 ```
 
-### CORS configuration
+#### CORS configuration
 
 If required, you can also specify the allowed origin (as '\*' or a single origin) and methods. For stacks created since 21st September 2016, you can also specify a comma-seperated list of origins, headers, and whether to allow credentials for CORS.
 
@@ -232,6 +233,22 @@ production:
 
 * * *
 
+### Node
+
+We automatically install the latest release of Node version 6.x.x when we set up your Rack/Rails stack servers. You can control which version is installed by editing the manifest file for any Rails stack as follows: 
+
+``` 
+rails:
+  configuration:
+    node_version: "6"       # will install latest v6.x.x
+    node_version: "6.14"    # will install latest v6.14.x
+    node_version: "6.14.4"  # will install specific v6.14.4
+```
+
+#### Applying changes
+<div class="notice notice-warning"><p>To apply changes to the Node version you need to update your manifest file, then <a href="/rails/tutorials/applying-upgrades.html#types">deploy-with-options</a> and select the <em>Apply Ruby/Node upgrades</em> option.</p></div>
+
+* * *
 
 ### PostgreSQL
 
