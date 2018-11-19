@@ -29,55 +29,48 @@ Before you start, please check you have the following:
 
 To get started with your cluster &mdash; firstly switch to the <em>Clusters dashboard</em> in main navigation bar at the top of the page.
 
-Then, click the green *new cluster* button in the right-hand panel.
+Then, click the green *new cluster* button.
 
 <img alt="Creating a Maestro Cluster" src="/assets/maestro/maestro-gsw-clusters-1.gif">
 
-Now you're going to be creating your first Maestro cluster. The first step involves <em>giving your cluster a name</em>. Lets call our cluster <em>awesome-cluster</em>
+Next, give your cluster a name that will make it easy to identify. Then, choose the deployment target for your cluster. You can choose one of your existing cloud providers, or click <em>Add Clouds</em> to add a new cloud provider.
 
-<p>We're also going to have to select our deployment target now. We can choose from our pre-added cloud providers or <a href='/maestro/how-to-guides/deployment/registered-servers.html#register-a-server'>registered servers</a> (or click <em>add cloud</em> to add a new cloud provider now). In our example we're choosing to deploy to Digital Ocean</p>
+You can also use your own server - although you will need to [register it](/maestro/how-to-guides/deployment/registered-servers.html#register-a-server) first. In our example we're choosing to deploy to Digital Ocean.
 
 <p><img class="ContentImage" src="/assets/maestro/maestro_cluster_new_form_top.png" alt="Choose name and target cloud"></p>
 
-<p>Based on our cloud/registered server selection above, we can now choose the specific information for our new cluster. In this example we'll choose the Amsterdam 3 Region, small servers, and a count of 3. This means that our cluster that we create will be comprised of three servers</p>
+Depending on which cloud or registered server you selected above, we can now choose options for our new cluster, such as region and capacity. In this example we'll choose *3* servers with 2GB of RAM each in the Amsterdam 3 Region.
 
-<p>Note: the first server in your cluster will always be your kubenetes master node. You can decide at a later date if you would like this server to share application workloads or only run kubernetes management tasks</p>
+<img class="ContentImage" src="/assets/maestro/maestro_cluster_new_form_bottom.png" alt="Choose server specifics">
 
-<p><img class="ContentImage" src="/assets/maestro/maestro_cluster_new_form_bottom.png" alt="Choose server specifics"></p> 
+#### Note
+<div class="notice"><p>The first server in your cluster will always be your Kubenetes master node. You can decide later if you would like this server to share application workloads or only run Kubernetes management tasks.</p></div>
 
-<h2 id="deployment">
-    <a href="#deployment" class="headerlink" title="Deployment"></a>
-    Deployment
-</h2>
 
-<p>Once you're happy with your choices; hit the <em>Create Cluster</em> button to start building your new Maestro cluster!</p>
+## Deployment
 
-<p>
-    <img src="/assets/maestro/maestro_cluster_deploy_start.png" alt="Deploying your application">
-</p>
+Once you're happy with your choices; hit the *Create Cluster* button to start building your new Maestro cluster! 
 
-<p>During the build and deployment process you can view the log to see what's happening behind the scenes. You can also drill down to specific servers to see what is going on there during deployment</p>
+You can watch the progess of the build on your dashboard, or you can close the window and get on with other work. We will alert you via email when your cluster is up and running.
 
-<p>
-    <img src="/assets/maestro/maestro_cluster_deploy_middle.png" alt="Seeing your deployment logs">
-</p>
+<img src="/assets/maestro/maestro_cluster_deploy_start.png" alt="Deploying your application">
 
-<p>When your deployment is complete you'll have your first Maestro cluster up and running!</p>
+During the build and deployment process you can view the log to see what's happening behind the scenes. You can also drill down to specific servers to see what is going on there during deployment.
 
-<p>
-    <img src="/assets/maestro/maestro_cluster_deploy_end.png" alt="Fully created Maestro cluster">
-</p>
+<img src="/assets/maestro/maestro_cluster_deploy_middle.png" alt="Seeing your deployment logs">
+
+When your deployment is complete you'll have your first Maestro cluster up and running!
+
+<img src="/assets/maestro/maestro_cluster_deploy_end.png" alt="Fully created Maestro cluster">
 
 ## Configuring the Cluster
 
-<p>As we have a cluster that has multiple servers, we can easily switch our master node from a <em>shared master</em> to a <em>dedicated master</em>. To do this we simply click the <em>shared master</em> dropdown link and select "Yes! Switch to Dedicated Master"</p>
+As we have a cluster that has multiple servers, we can easily switch our master node from a **shared master** to a **dedicated master**. To do this we simply click the *shared master* dropdown link and select *Yes! Switch to Dedicated Master*
 
-<p>
-    <img src="/assets/maestro/maestro_cluster_switch_dedicated.png" alt="Switch master to dedicated">
-</p>
+<img src="/assets/maestro/maestro_cluster_switch_dedicated.png" alt="Switch master to dedicated" style="width:30%">
 
-<p>We can also easily add additional server nodes to this cluster or remove existing server nodes from this cluster. Note that the master server can not currently be removed.</p>
-
+We can also easily add additional server nodes to this cluster or remove existing server nodes from this cluster. 
+(Note that the master server cannot be removed without deleting the entire cluster.)
 
 ## Deploying applications to the cluster
 
