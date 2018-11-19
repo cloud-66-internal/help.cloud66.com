@@ -13,12 +13,12 @@ The default number of CPU shares given to a service is 1024. This is a relative 
 <div class="Tabs Tabs--enclosed">
     <nav>
       <ul class="TabMini js_tabs">
-        <li class="TabMini-item">
+        <li class="TabMini-item active">
           <a href="#V2-First" class="TabMini-link">
             Maestro V2
           </a>
         </li>
-        <li class="TabMini-item active">
+        <li class="TabMini-item">
           <a href="#V1-First" class="TabMini-link">
             Maestro V1
           </a>
@@ -27,9 +27,10 @@ The default number of CPU shares given to a service is 1024. This is a relative 
     </nav>
 
 <section id="V2-First" class="Tabs-content js_tab_content">
-The memory limit will apply to RAM usage, and SWAP usage. A valid entry is a positive number, followed by one of, "K", "M", or "G", with the minimum being "4M".
 
-<strong>For example:</strong>
+<p>The memory limit will apply to RAM usage, and SWAP usage. A valid entry is a positive number, followed by one of, "K", "M", or "G", with the minimum being "4M". (You can also use the power-of-two equivalents like Gi, Mi, Ki if you prefer.)</p>
+
+<p><strong>For example:</strong></p>
 
 {% highlight yaml %}
 services:
@@ -44,9 +45,9 @@ services:
 
         <section id="V1-First" class="Tabs-content js_tab_content is-hidden">
 
-The memory limit will apply to RAM usage, and SWAP usage. A valid entry is a positive number, followed by one of, "k", "m", or "g", with the minimum being "4m".
+<p>The memory limit will apply to RAM usage, and SWAP usage. A valid entry is a positive number, followed by one of, "k", "m", or "g", with the minimum being "4m".</p>
 
-<strong>For example:</strong>
+<p><strong>For example:</strong></p>
 
 {% highlight yaml %}
 services:
@@ -59,7 +60,6 @@ services:
 
         </section>
 </div>
-
 
 ## Removing existing constraints
 

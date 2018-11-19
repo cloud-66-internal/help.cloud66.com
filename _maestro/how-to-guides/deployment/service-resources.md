@@ -39,7 +39,7 @@ The default number of CPU shares given to a service is 1024. This is a relative 
 
 <section id="V2-First" class="Tabs-content js_tab_content">
 
-<p>The memory limit will apply to RAM usage, and SWAP usage. A valid entry is a positive number, followed by one of, "K", "M", or "G", with the minimum being "4M".</p>
+<p>The memory limit will apply to RAM usage, and SWAP usage. A valid entry is a positive number, followed by one of, "K", "M", or "G", with the minimum being "4M". (You can also use the power-of-two equivalents like Gi, Mi, Ki if you prefer.)</p>
 
 <p><strong>For example:</strong></p>
 
