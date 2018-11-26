@@ -12,7 +12,7 @@ ConfigStore records provide an alternative place to store centralised informatio
 
 This is most useful for information that you need to access from Kubernetes configuration files. For example within Skycap Stencil Templates.
 
-However you can still use ConfigStore in your Rails applications if it suites your needs. One example might be a centralised place to store Cloud Account information. You could add these credentials to your account level ConfigStore and then access this data from an environment variable in your applications.
+You can use ConfigStore in your Rails applications if it suites your needs. One example might be a centralised place to store Cloud Account information. You could add these credentials to your account level ConfigStore and then access this data from an environment variable in your applications.
 
 ## ConfigStore Data Structure
 
