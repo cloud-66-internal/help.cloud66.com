@@ -4,6 +4,16 @@ ConfigStore provides way to store: <strong>Key</strong>, <strong>Value</strong>,
 This information can then be referenced from within your application files and Skycap Stencil Templates.
 {% endif %}
 
+## How does ConfigStore differ from Environment Variables
+
+When you add Environment Variables to your application they will end up as actual Linux Operating System Environment Variables.
+
+ConfigStore records provide an alternative place to store centralised information that will not be exposed in OS level environment variables.
+
+This is most useful for information that you need to access from Kubernetes configuration files. For example within Skycap Stencil Templates.
+
+However you can still use ConfigStore in your Rails applications if it suites your needs. One example might be a centralised place to store Cloud Account information. You could add these credentials to your account level ConfigStore and then access this data from an environment variable in your applications.
+
 ## ConfigStore Data Structure
 
 Data edited from within the UI is text only and is structured as:
@@ -31,33 +41,23 @@ Application level ConfigStore is accessed from the right hand application menu <
 
 Account wide ConfigStore is accessed from the <em>Account Settings page</em> &rarr; <em>ConfigStore</em> menu item. It provides a way to store information globally that can be referenced by all of by Applications.
 
-## Accessing ConfigStore Variables?
+## Examples of how to Access ConfigStore Variables?
 
 You access ConfigStore data by using the following syntax:
-
-### Ruby
-
-<pre class="terminal">
-<kbd>#{config_store['DB_USER']}</kbd>
-</pre>
-
-### YAML Files (Ruby Templates ERB Syntax)
-
-<pre class="terminal">
-<kbd><%= config_store['DB_USER'] %></kbd>
-</pre>
 
 ### Skycap Stencil Templates
 
 <pre class="terminal">
-<kbd>${config_store("a.b")}</kbd>
+<kbd>value: ${config_store("a.b")}</kbd>
 </pre>
 
 <br>
 
+<!--
+
 ## CLI &amp; Advanced Features  
 
-Access to advanced features is provided by the Command Line Interface. For example:
+Access to advanced features is provided by the ConfigStore Command Line Interface. For example storing binary data in ConfigStore records. The CLI provides the following advanced features:
 
 <ul>
     <li>
@@ -72,14 +72,12 @@ Access to advanced features is provided by the Command Line Interface. For examp
 
 If you are using Mac or Linux Auto Install by pasting the curl command in the Terminal is the easiest way to Install ConfigStore CLI.
 
-Alternatively you can download the binary appropriate for your platform. <a href="">ConfigStore code is available on GitHub</a>.
 
 ### Auto Install
 
 <kbd>curl -ssl https://s3.amazonaws.com/</kbd>
 
-### Download CLI Binaries
-
+### ConfigStore Binaries
 <p>
     <strong>Mac</strong> &mdash; <a href="#">Download ConfigStore CLI for Mac</a>
 </p>
@@ -89,3 +87,5 @@ Alternatively you can download the binary appropriate for your platform. <a href
 <p>
     <strong>Windows</strong> &mdash; <a href="#">Download ConfigStore CLI for Windows</a>
 </p>
+
+-->
