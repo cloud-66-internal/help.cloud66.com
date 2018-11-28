@@ -89,9 +89,9 @@ If you need to access your server (via SSH or another protocol), there is a quic
 
 ## Default firewall rules
 
-By default, Cloud 66 gateway servers (eg. 54.84.166.97) are the only servers allowed SSH (port 22) access to stack servers. 
+By default, Cloud 66 gateway servers (eg. 54.84.166.97) are the only servers allowed SSH (port 22) access to application servers. 
 
-The default firewall rules include database and web ports appropriate for the stack deployed but also includes ports 8080 and 8443 as alternative HTTP ports for WebSocket-based applications. 
+The default firewall rules include database and web ports appropriate for the application deployed but also includes ports 8080 and 8443 as alternative HTTP ports for WebSocket-based applications. 
 
 Editing and removing the default firewall rules is disabled to ensure that your servers remain secure at all times.
 

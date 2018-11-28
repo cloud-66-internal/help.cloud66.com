@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Maestro
-lead: Cloud 66 Maestro for Container Stacks
+lead: Cloud 66 Maestro for Containerized Applications
 legacy: false
 permalink: /:collection/:categories/index.html
 ---

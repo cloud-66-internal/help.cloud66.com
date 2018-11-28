@@ -26,8 +26,8 @@ cat CERT2.CRT_PATH [CERT2_MID.crt_PATH] PRIVATE2.key_PATH > websitename2.pem
 ### 2. Upload them to /tmp of your server
 
 ```
-cx upload -s stack_name --server haproxy_server_name websitename1.pem_PATH websitename1.pem
-cx upload -s stack_name --server haproxy_server_name websitename2.pem_PATH websitename2.pem
+cx upload -s app_name --server haproxy_server_name websitename1.pem_PATH websitename1.pem
+cx upload -s app_name --server haproxy_server_name websitename2.pem_PATH websitename2.pem
 ```
 
 
@@ -36,7 +36,7 @@ cx upload -s stack_name --server haproxy_server_name websitename2.pem_PATH websi
 ### 3. Login to your HAproxy server
 
 ```
-cx ssh -s stack_name haproxy_server_name
+cx ssh -s app_name haproxy_server_name
 ```
 
 

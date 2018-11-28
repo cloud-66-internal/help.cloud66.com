@@ -87,7 +87,7 @@ Learn more about [choosing the right size](/{{page.collection}}/references/non-r
 
 ## Deploy your app
 
-Now everything is ready to go, just hit the *Deploy Stack* button.
+Now everything is ready to go, just hit the *Deploy* button.
 
 If this is your first deployment you'll be prompted to enter your access credentials for your cloud hosting provider. Once you've added these the deployment will begin.
 

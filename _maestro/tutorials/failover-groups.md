@@ -72,7 +72,7 @@ You can test this by visiting the failover address. The count of visits on your 
 
 ## How failover groups work
 
-A failover group follows the web head of your stack. In other words it points at your load balancer or, if you don't have one, your web server.
+A failover group follows the web head of your application. In other words it points at your load balancer or, if you don't have one, your web server.
 
 A failover group will automatically update to point at any newly added load balancer. Similarly, it is automatically updated when you rename your application or change your web servers.
 
@@ -81,8 +81,8 @@ A great way to test this is to use the `dig` command in your terminal, for examp
 ## Requirements and limitations
 
 - You don't need to select any applications for your failover group. This allows you to reserve the address provided for future use. This is particularly useful when you want to keep address the same.
-- Having a _backup_ stack is not mandatory.
-- You can only delete a failover group when it isn't pointing at any stacks.
+- Having a _backup_ application is not mandatory.
+- You can only delete a failover group when it isn't pointing at any applications.
 - Once you delete a failover group, the DNS record for it is permanently deleted and you won't be able to get the same address back.
 
 

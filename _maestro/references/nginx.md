@@ -10,12 +10,9 @@ order: 90
 permalink: /:collection/:path
 ---
 
-
-
 ## About Nginx
 
-Stacks deployed with Cloud 66 use [Nginx](http://nginx.com) as their web server, and its configuration is dependant on the resources of your server(s). Nginx is a high performance, open source web server used by some of the biggest web services in the world.
-
+Applications deployed with Maestro use [Nginx](http://nginx.com) as their web server, and its configuration is dependant on the resources of your server(s). Nginx is a high performance, open source web server used by some of the biggest web services in the world.
 
 ## Nginx configuration
 
@@ -47,7 +44,7 @@ The following table outlines the default configuration of Nginx.
     <tr> 
      <td></td> 
      <td> error_log </td> 
-     <td> /var/deploy/[stack_name]/web_head/shared/log/nginx_error.log </td> 
+     <td> /var/deploy/[app_name]/web_head/shared/log/nginx_error.log </td> 
     </tr> 
    </tbody> 
    <tbody> 
@@ -92,31 +89,6 @@ The following table outlines the default configuration of Nginx.
      <td></td> 
      <td width="20%"> gzip_disable </td> 
      <td> "MSIE [1-6]\." </td> 
-    </tr> 
-    <tr> 
-     <td></td> 
-     <td width="20%"> passenger_root </td> 
-     <td> [passenger location] </td> 
-    </tr> 
-    <tr> 
-     <td></td> 
-     <td width="20%"> passenger_ruby </td> 
-     <td> [stack ruby shell] </td> 
-    </tr> 
-    <tr> 
-     <td></td> 
-     <td width="20%"> passenger_ruby </td> 
-     <td> nginx </td> 
-    </tr> 
-    <tr> 
-     <td></td> 
-     <td width="20%"> passenger_pool_idle_time </td> 
-     <td> 0 </td> 
-    </tr> 
-    <tr> 
-     <td></td> 
-     <td width="20%"> passenger_max_pool_size </td> 
-     <td> 15 </td> 
     </tr> 
     <tr> 
      <td></td> 
@@ -177,23 +149,13 @@ The following table outlines the default configuration of Nginx.
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> rails_env </td> 
-     <td> [stack environment] </td> 
-    </tr> 
-    <tr> 
-     <td></td> 
      <td width="20%"> client_max_body_size </td> 
      <td> 50m </td> 
     </tr> 
     <tr> 
      <td></td> 
      <td width="20%"> root </td> 
-     <td> /var/deploy/[stack name]/web_head/current/public </td> 
-    </tr> 
-    <tr> 
-     <td></td> 
-     <td width="20%"> passenger_enabled </td> 
-     <td> on </td> 
+     <td> /var/deploy/[application name]/web_head/current/public </td> 
     </tr> 
     <tr> 
      <td></td> 
@@ -926,7 +888,7 @@ When there is a problem with your upstream server (ie. a container), requests wi
 There are two ways for you to create a custom Nginx 50X error page:
 
 1. Using a static page on you own server
-    - For Docker stacks, make your custom error page (for example `50x.html`) available in your container (for example in `/usr/app`), and simply mount this folder to the host (for example with `/var/containers:/usr/app`). The path used in the next step would then be `/var/containers/50x.html`
+    - Make your custom error page (for example `50x.html`) available in your container (for example in `/usr/app`), and simply mount this folder to the host (for example with `/var/containers:/usr/app`). The path used in the next step would then be `/var/containers/50x.html`
     - Customize your Nginx configuration and replace the 50X.html location block with following:
     
         ``
@@ -948,19 +910,17 @@ There are two ways for you to create a custom Nginx 50X error page:
 
 ## Customize your Nginx configuration
 
-Cloud 66 makes it easy for you to customize your Nginx configuration. From your stack detail page, access your web server group page (eg. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](/{{page.collection}}/tutorials/custom-config.html) to customize the configuration.
+Cloud 66 makes it easy for you to customize your Nginx configuration. From your application overview page, access your web server group page (eg. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](/{{page.collection}}/tutorials/custom-config.html) to customize the configuration.
 
-Editing and committing your Nginx CustomConfig will perform the following steps on **every web server in your stack**, one by one, sequentially:
+Editing and committing your Nginx CustomConfig will perform the following steps on **every web server in your application**, one by one, sequentially:
 
 *   Check your template for Liquid syntax errors
-*   Determine the correct Passenger path (Passenger stacks only)
-*   Check the version of your Passenger, and determine if Nginx needs to use a Ruby shell wrapper
 *   Count the number of cores on the server
 *   Compile the Nginx configuration based on the information from the server
 *   Upload the configuration to the server
 *   Reload Nginx
 
-Reloading Nginx does not interrupt the serving of traffic. This process will be stopped if an error is encountered. For example, if you have 3 web servers in your stack, if the first server fails to be updated, the process will be halted for the other 2 servers to avoid complete service diruption.
+Reloading Nginx does not interrupt the serving of traffic. This process will be stopped if an error is encountered. For example, if you have 3 web servers in your application, if the first server fails to be updated, the process will be halted for the other 2 servers to avoid complete service diruption.
 
 
 ### Warning
@@ -971,7 +931,7 @@ A bad configuration may stop your Nginx from functioning, so take extra care whe
 
 ### Nginx CustomConfig variables
 
-The following variables are available for use in your **Docker stack** Nginx CustomConfig.
+The following variables are available for use in your **Maestro application** Nginx CustomConfig.
 
 <table class="table table-bordered table-striped"> 
    <colgroup> 
@@ -995,7 +955,7 @@ The following variables are available for use in your **Docker stack** Nginx Cus
     <tr> 
      <td>environment</td> 
      <td>string</td> 
-     <td>Stack environment name (lowercase)</td> 
+     <td>Application environment name (lowercase)</td> 
     </tr> 
     <tr> 
      <td>server_address</td> 
@@ -1010,27 +970,27 @@ The following variables are available for use in your **Docker stack** Nginx Cus
     <tr> 
      <td>app_name</td> 
      <td>string</td> 
-     <td>Stack name (lowercase)</td> 
+     <td>Application name (lowercase)</td> 
     </tr> 
     <tr> 
      <td>envars</td> 
      <td>hash</td> 
-     <td>Hash of all environment variables on the stack</td> 
+     <td>Hash of all environment variables on the application</td> 
     </tr> 
     <tr> 
      <td>allow_ssl</td> 
      <td>boolean</td> 
-     <td>Is an SSL Certificate configured on the stack?</td> 
+     <td>Is an SSL Certificate configured on the application?</td> 
     </tr> 
     <tr> 
      <td>perfect_forward_secrecy</td> 
      <td>boolean</td> 
-     <td>Is perfect forward secrecy enabled on the stack?</td> 
+     <td>Is perfect forward secrecy enabled on the application?</td> 
     </tr> 
     <tr> 
      <td>cors_enabled</td> 
      <td>boolean</td> 
-     <td>Is CORS enabled on the stack?</td> 
+     <td>Is CORS enabled on the application?</td> 
     </tr> 
     <tr> 
      <td>cors_origin</td> 
@@ -1095,7 +1055,7 @@ The following variables are available for use in your **Docker stack** Nginx Cus
     <tr> 
      <td>stack_supports_nginx_tcp_and_udp_reverse_proxy</td> 
      <td>boolean</td> 
-     <td>Does your stack support TCP and UDP reverse proxy?</td> 
+     <td>Does your application support TCP and UDP reverse proxy?</td> 
     </tr> 
     <tr> 
      <td>supports_tcp_proxy</td> 
@@ -1149,7 +1109,8 @@ Bad syntax:
 
 *   Bad: if passenger
 *   Bad: if !passenger
-  <table class="table table-bordered table-striped"> 
+
+<table class="table table-bordered table-striped"> 
    <colgroup> 
     <col width="20%"> 
     <col width="20%"> 
@@ -1164,21 +1125,6 @@ Bad syntax:
    </thead> 
    <tbody> 
     <tr> 
-     <td>passenger</td> 
-     <td>boolean</td> 
-     <td>Is nginx running Passenger or a custom web server?</td> 
-    </tr> 
-    <tr> 
-     <td>passenger_supports_cgi_param</td> 
-     <td>boolean</td> 
-     <td>Does the current Passenger version support CGI param?</td> 
-    </tr> 
-    <tr> 
-     <td>passenger_enterprise</td> 
-     <td>boolean</td> 
-     <td>Are you using Passenger enterprise?</td> 
-    </tr> 
-    <tr> 
      <td>user_name</td> 
      <td>string</td> 
      <td>User name running the application process</td> 
@@ -1186,7 +1132,7 @@ Bad syntax:
     <tr> 
      <td>environment</td> 
      <td>string</td> 
-     <td>Stack environment name (lowercase)</td> 
+     <td>Application environment name (lowercase)</td> 
     </tr> 
     <tr> 
      <td>server_address</td> 
@@ -1199,59 +1145,39 @@ Bad syntax:
      <td>Number of CPU cores on the server</td> 
     </tr> 
     <tr> 
-     <td>passenger_pool_max</td> 
-     <td>integer</td> 
-     <td>Size of the passenger pool (Passenger Only)</td> 
-    </tr> 
-    <tr> 
-     <td>use_ruby_shell</td> 
-     <td>boolean</td> 
-     <td>Used internally</td> 
-    </tr> 
-    <tr> 
-     <td>ruby_shell</td> 
-     <td>string</td> 
-     <td>/var/deploy/ruby_shell</td> 
-    </tr> 
-    <tr> 
      <td>app_name</td> 
      <td>string</td> 
-     <td>Stack name (lowercase)</td> 
+     <td>Application name (lowercase)</td> 
     </tr> 
     <tr> 
      <td>deploy_to</td> 
      <td>string</td> 
-     <td>Stack path on the server</td> 
+     <td>Application path on the server</td> 
     </tr> 
     <tr> 
      <td>envars</td> 
      <td>hash</td> 
-     <td>Hash of all environment variables on the stack</td> 
+     <td>Hash of all environment variables on the application</td> 
     </tr> 
     <tr> 
      <td>envars</td> 
      <td>hash</td> 
-     <td>Hash of all environment variables on the stack</td> 
+     <td>Hash of all environment variables on the application</td> 
     </tr> 
-    <tr> 
-     <td>passenger_location</td> 
-     <td>string</td> 
-     <td>Passenger location (Passenger only)</td> 
-    </tr> 
-    <tr> 
+     <tr> 
      <td>allow_ssl</td> 
      <td>boolean</td> 
-     <td>Is an SSL Certificate configured on the stack?</td> 
+     <td>Is an SSL Certificate configured on the application?</td> 
     </tr> 
     <tr> 
      <td>perfect_forward_secrecy</td> 
      <td>boolean</td> 
-     <td>Is perfect forward secrecy enabled on the stack?</td> 
+     <td>Is perfect forward secrecy enabled on the application?</td> 
     </tr> 
     <tr> 
      <td>cors_enabled</td> 
      <td>boolean</td> 
-     <td>Is CORS enabled on the stack?</td> 
+     <td>Is CORS enabled on the application?</td> 
     </tr> 
     <tr> 
      <td>cors_origin</td> 

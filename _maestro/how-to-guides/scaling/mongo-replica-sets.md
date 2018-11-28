@@ -24,7 +24,7 @@ When you select to scale up your MongoDB backend with Cloud 66, we perform the f
 - Create two more servers in your cloud (MongoDB replica sets require an odd number of servers)
 - Deploy and configure MongoDB on the new servers
 - Restore the backup on the new servers
-- Configure all MongoDB instances in the stack to act as a single replica set
+- Configure all MongoDB instances in the application to act as a single replica set
 - Generate appropriate environment variables with the addresses of the replica set servers
 
 It is important for backups to keep their referential integrity, otherwise different parts of the database might be backed up at different times, affecting database performance.
@@ -39,7 +39,7 @@ This interruption is during the backup and configuration steps of the scaling an
 
 ## Using a MongoDB replica set in your code
 
-All MongoDB drivers support replica sets, which means that you can pass the list of MongoDB servers in your replica set to them and they will adapt. However, switching from a single MongoDB to a replica set is something you need to test and be sure about. You shouldn't make such a change to your stack infrastructure with the click of a button!
+All MongoDB drivers support replica sets, which means that you can pass the list of MongoDB servers in your replica set to them and they will adapt. However, switching from a single MongoDB to a replica set is something you need to test and be sure about. You shouldn't make such a change to your application infrastructure with the click of a button!
 
 This is why we won't touch your configuration files after you scale your MongoDB up. This allows you to configure the client the way you see fit and go live with your replicated database backend when you are ready.
 **Note** 
@@ -87,7 +87,7 @@ Once replication is enabled, this environment variable is populated:
 lion.mystack.c66.me,tiger.mystack.c66.me
 ```
 
-Once you have replica set enabled by scaling your MongoDB backend up, you will need to modify your client configuration accordingly. Your deployment might not work and your stack might stop functioning if you don't do that.
+Once you have replica set enabled by scaling your MongoDB backend up, you will need to modify your client configuration accordingly. Your deployment might not work and your application might stop functioning if you don't do that.
 
 **Note**
 
@@ -105,7 +105,7 @@ Before having a replica set, you had the following setup:
 development:
 	sessions:
 		default:
-			database: my_mongo_stack
+			database: my_mongo_app
 			hosts: <%= ENV['MONGODB_ADDRESS'] %>
 			options:
 				consistency: :strong
@@ -117,7 +117,7 @@ After replica sets are enabled you can use something like this:
 development:
 	sessions:
 		default:
-			database: my_mongo_stack
+			database: my_mongo_app
 			hosts: <%= "[#{ENV['MONGODB_ADDRESSES'].split(',').map {|addr| "\"#{addr}:27017\""}.join(',')}]" %>
 			options:
 				consistency: :strong

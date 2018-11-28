@@ -23,7 +23,7 @@ To reflect the different lifestages of your software, you can deploy your applic
 
 In addition, you can define your own environments from the _Account_ page, in the _Setting_ -> _Custom environment_ menu. 
 
-Once the new environment is added, you will be able to see it in the list of supported environments when creating a new stack. 
+Once the new environment is added, you will be able to see it in the list of supported environments when creating a new application. 
 
 ### Understanding custom environments
 

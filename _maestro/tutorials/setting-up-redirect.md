@@ -37,7 +37,7 @@ You can now use this page to set (or remove) redirects.
 
 When you have to make manual changes to your application or push out a breaking change, you may not be able to guarantee that your application will be able to serve content or act correctly.
 
-During such times, you can set your stack into *maintenance mode*, which serves a static holding page (either a default Cloud 66 page, or your own) for the duration of your maintenance work.
+During such times, you can set your application into *maintenance mode*, which serves a static holding page (either a default Cloud 66 page, or your own) for the duration of your maintenance work.
 
 To enable maintenance mode: 
 * check the *Put Application in Maintenance Mode* box 
@@ -45,7 +45,7 @@ To enable maintenance mode:
 
 Remember to give your application a few minutes to enable this change. Then open your app in a browser. Instead of the normal visit count, you should see the default Cloud 66 maintenance page.
 
-You can still safely redeploy your stack while maintenance mode is enabled - the maintenance page will be served until you turn off maintenance mode.
+You can still safely redeploy your application while maintenance mode is enabled - the maintenance page will be served until you turn off maintenance mode.
 
 ### Add a custom maintenance page
 

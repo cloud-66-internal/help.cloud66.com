@@ -134,7 +134,7 @@ You can set your HAproxy to show a maintenance page when it cannot connect to a 
 * Create custom maintenance page
 * Upload to haproxy server using the toolbelt
   <pre class="prettyprint">
-cx upload -s stack_name --server haproxy_server_name maintenance.html
+cx upload -s application_name_ --server haproxy_server_name maintenance.html
 </pre>
 * Move the file haproxy directory
   <pre class="prettyprint">
