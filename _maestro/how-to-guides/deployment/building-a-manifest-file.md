@@ -23,6 +23,9 @@ In Maestro there are two opportunities to edit your manifest file:
 
 Once you're ready, start by going through each section below to build your manifest file.
 
+#### Important
+<div class="notice notice-danger"><p>It is vital that you understand the limits and caveats of manifest settings. Please read our <a href="/maestro/references/manifest-structure.html#classes-of-manifest-file-settings">reference guide</a> before you start creating your own manifest files.</p></div>
+
 
 ## Which environment?
 
@@ -34,9 +37,9 @@ The first level of your manifest file is the **environment** - this allows you t
 
 You can also use your own custom environment names in your manifest file.
 
-## Which application?
+## Which component?
 
-Next, select which application you would like to specify settings for. You can choose from the following:
+Next, select which component you would like to specify settings for. You can choose from the following:
 
 *   [Docker](#docker)
 *   [ElasticSearch](#elasticsearch)

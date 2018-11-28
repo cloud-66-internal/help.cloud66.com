@@ -1,15 +1,49 @@
 ---
 layout: post
 template: one-col
-title: Manifest file structure
+title: Understanding manifest files
 categories: references
-lead: Tags reserved for use by Maestro and Cloud 66
+lead: Understanding the underlying principles of manifest files
 tags: ['tags']
 legacy: false
 permalink: /:collection/:path
 ---
 
-## Understanding manifest file structure
+## Classes of manifest file settings
+
+Although manifest files are a powerful tool for defining the composition of an application, it is vital to understand their limits and exceptions. 
+
+There are three broad classes of settings in manifest files:
+
+1. Settings that only apply when an application is deployed for the first time (e.g. how much RAM your server should have)
+2. Settings that only apply after a specific action is taken (e.g. using Toolbelt to force Nginx to refresh its configuration)
+3. Settings that apply each time an application is redeployed
+
+### Class 1: Once-off settings
+
+These are almost exclusively confined to the `server` settings. For instance changing the cloud vendor in your manifest will not automatically migrate your server to that provider. 
+
+Class 1 settings include:
+
+* Disk size 
+* Disk type
+* Vendor
+* Region
+* Size
+
+### Class 2: Sticky settings
+
+These are settings that require a specific action to trigger their roll-out. 
+
+For example, in order to implement changes to cross origin scripting (CORS) settings in Nginx, you need to use the `reconfigure.nginx` command in [Cloud 66 Toolbelt](/maestro/references/toolbelt.html) to force  the settings to propogate.
+
+
+### Class 3: Flexible settings
+
+These are settings which will be applied as soon as the application is re-deployed following a change to its manifest file. This includes all the settings that don't fall into classes 1 or 2 above.
+
+
+## Manifest file structure
 
 Manifest files have a strict hierarchical structure that determines which part of an application is being addressed by the configuration variables. It's vital to ensure that each line of your configuration falls into the correct place in this hierarchy.
 
