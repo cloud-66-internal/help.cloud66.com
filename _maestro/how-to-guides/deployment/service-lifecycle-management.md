@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title:  "Customizing Service life-cycle management"
+title:  "Customizing service life-cycle management"
 categories: how-to-guides/deployment
 order: 2
-lead: How you can manage your service life cycle
+lead: How to manage your container life cycle
 legacy: false
 tags: ['service', 'operations']
 permalink: /:collection/:path
@@ -12,9 +12,9 @@ permalink: /:collection/:path
 
 ## Orchestration engine
 
-Cloud 66 provides an orchestration engine to roll out Docker images to your servers and initialize containers from them. This is what is provided for you from start to finish:
+Maestro provides an orchestration engine to roll out Docker images to your servers and initialize containers from them. This includes:
 
-- Bring up your containers
+- Bringing up containers
 - Monitoring
 - Scaling
 - Port forwarding
@@ -24,18 +24,21 @@ Cloud 66 provides an orchestration engine to roll out Docker images to your serv
 - Traffic switching
 - Deployment rollbacks (version control)
 
-<h2 id="deploying">Deploying your stack</h2>
+#### Note
+<div class="notice"><p>In the case of <strong>Maestro Version 2</strong> this engine is Kubernetes. In the case of <strong>Version 1</strong> it is Cloud 66's own engine.</p></div>
 
-The above can be summarized as the life-cycle management of your containers, which occurs with each new deployment of your application. For example, if you have a simple stack running `api` and `web` services, this is what happens when you redeploy your stack (as pertains to the life-cycle management of your containers):
+## Deploying your application
 
-1. Your latest code is pulled from Git and new images are built (on BuildGrid).
-2. These images are rolled out to your Docker cluster.
+The above can be summarized as the life-cycle management of your containers, which occurs with each new deployment of your application. This is what happens when you redeploy your application:
+
+1. Your latest code is pulled from Git and new images are built
+2. These images are rolled out to your server(s)
 3. Containers are initialized from these images, with all relevant environment variables and internal networking made available to them.
 4. If and when your health checks are successful, your old containers are gracefully drained and traffic is switched to the new containers (on the specified port(s)).
 
-<h2 id="configuration">Configuration</h2>
+## Configuration
 
-There are a number of directives you can set in your service configuration to customize your container life-cycle management:
+There are a number of directives you can set in your service configuration (`service.yml`) to customize your container life-cycle management:
 
 - [health](#health)
 - [pre_start_signal](#pre_start)
@@ -44,20 +47,20 @@ There are a number of directives you can set in your service configuration to cu
 - [restart_on_deploy](#restart)
 - [stop_grace](#stop_grace)
 
-<hr>
 
 ### Health
+
 <div class="Tabs Tabs--enclosed">
     <nav>
       <ul class="TabMini js_tabs">
         <li class="TabMini-item active">
           <a href="#V2-First" class="TabMini-link">
-            V2 (Maestro)
+            Version 2
           </a>
         </li>
         <li class="TabMini-item">
           <a href="#V1-First" class="TabMini-link">
-            V1 (Docker legacy)
+            Version 1
           </a>
         </li>
       </ul>
@@ -118,9 +121,10 @@ You can also use the default health rules with <code>health: default</code>, or 
 </section>
 
 <section id="V1-First" class="Tabs-content js_tab_content is-hidden">
+
 <p>The <code>health</code> option allows you to specify rules to automatically determine if your newly started containers are healthy before killing old containers. This effectively provides zero down-time deployments. There are two types of health checks - <code>inbound</code> and <code>outbound</code>:
 </p><p>
-<b>Inbound health checks</b> use Cloud 66 to determine the health of your containers based on rules that you provide - when a new container is started during deployment, we will automatically attempt to get a response from the container on the specified endpoints. If we don't get the specified HTTP response code back within the "timeout" period we will assume the deploy has failed and roll back the container deployments.
+<b>Inbound health checks</b> use Maestro to determine the health of your containers based on rules that you provide - when a new container is started during deployment, we will automatically attempt to get a response from the container on the specified endpoints. If we don't get the specified HTTP response code back within the "timeout" period we will assume the deploy has failed and roll back the container deployments.
 </p><p>
 <b>Outbound health checks</b> on the other hand allows your container to notify us of its health state, which is useful for services that don't expose an endpoint. The environment variable <code>CONTAINER_NOTIFY_URL</code> is automatically created and injected into your container, which accepts a POST request with two different JSON payloads depending on the health state.
 </p><p>
@@ -128,6 +132,7 @@ A healthy container would be expected to POST <code>{"ready":true}</code> as its
 </p><p>
 The rules below are available to health checks - note that you aren't required to specify all options. Any options not used will use their default values.
 </p>
+<p>
 <ul>
 <li><strong>type</strong> (<em>defaults to inbound</em>): Accepted values are <code>inbound</code> or <code>outbound</code>.</li>
 <li><strong>endpoint</strong> (<em>defaults to <code>/</code></em>): The endpoint tested for status.</li>
@@ -135,6 +140,7 @@ The rules below are available to health checks - note that you aren't required t
 <li><strong>timeout</strong> (<em>defaults to 30s</em>): Maximum time to wait for a container to start, in seconds.</li>
 <li><strong>accept</strong> (<em>defaults to 200 and 300-399</em>): HTTP response codes to accept.</li>
 </ul>
+</p>
 
 {% highlight yaml %}
 services:
@@ -146,18 +152,35 @@ services:
           timeout: "45s"
           accept: ["200"]
 {% endhighlight %}
-<p>
-You can also use the default health rules with <code>health: default</code>, or explicitly disable health checking by leaving the <code>health</code> option out or specifying <code>health: none</code>.
-</p>
+
+<p>You can also use the default health rules with <code>health: default</code>, or explicitly disable health checking by leaving the <code>health</code> option out or specifying <code>health: none</code>.</p>
 
 </section>
 </div>
 
-
 <hr>
 
-<h3 id="pre_start">Pre-start signal</h3>
-This is a signal that is sent to the existing containers of the service before the new containers are started during deployment. An example could be <code>USR1</code> - but it depends on what your container is running as to which signals make sense.
+### Pre-start signal
+
+<div class="Tabs Tabs--enclosed">
+<nav>
+      <ul class="TabMini js_tabs">
+        <li class="TabMini-item active">
+          <a href="#V2-2" class="TabMini-link">
+            Maestro V2
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#V1-2" class="TabMini-link">
+            Maestro V1
+          </a>
+        </li>
+      </ul>
+</nav>
+
+<section id="V2-2" class="Tabs-content js_tab_content">
+
+<p>This is a signal that is sent to the existing containers of the service before the new containers are started during deployment. An example could be <code>USR1</code> - but it depends on what your container is running as to which signals make sense.</p>
 
 {% highlight yaml %}
 services:
@@ -165,10 +188,38 @@ services:
         pre_start_signal: USR1
 {% endhighlight %}
 
+</section>
+
+<section id="V1-2" class="Tabs-content js_tab_content is-hidden">
+
+<p><strong>This command is not supported by Maestro Version 1.</strong></p>
+
+</section>
+</div>
+
 <hr>
 
-<h3 id="pre_stop">Pre-stop sequence</h3>
-This is a stop sequence that is executed on your running containers before they are shut down. It is a sequence of wait times and signals to send to the process. If the sequence completes and the container is still running, a force kill will be sent. For example:
+### Pre-stop sequence
+
+<div class="Tabs Tabs--enclosed">
+    <nav>
+      <ul class="TabMini js_tabs">
+        <li class="TabMini-item active">
+          <a href="#V2-3" class="TabMini-link">
+            Maestro V2
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#V1-3" class="TabMini-link">
+            Maestro V1
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+<section id="V2-3" class="Tabs-content js_tab_content">
+
+<p>This is a stop sequence that is executed on your running containers before they are shut down. It is a sequence of wait times and signals to send to the process. If the sequence completes and the container is still running, a force kill will be sent. For example:</p>
 
 {% highlight yaml %}
 services:
@@ -176,19 +227,28 @@ services:
         pre_stop_sequence: 1m:USR2:30s:USR1:50s
 {% endhighlight %}
 
-The example above, we'll wait 1 minute before sending the USR2 signal, then wait 30 seconds before sending the USR1 signal, and then wait 50 seconds before we force a kill. These are some examples of duration values that `stop_grace` and `pre_stop_sequence` can use - `1m` (1 minute), `30s` (30 seconds) and `1h` (1 hour).
+<p>The example above, we'll wait 1 minute before sending the USR2 signal, then wait 30 seconds before sending the USR1 signal, and then wait 50 seconds before we force a kill. These are some examples of duration values that <code>stop_grace</code> and <code>pre_stop_sequence</code> can use - <code>1m</code> (1 minute), <code>30s</code> (30 seconds) and <code>1h</code> (1 hour).</p>
 
-Valid time values are `s` for seconds, `m` for minutes and `h` for hours. Valid signal values for a signal are (without the quotes):
+<p>Valid time values are <code>s</code> for seconds, <code>m</code> for minutes and <code>h</code> for hours. Valid signal values for a signal are (without the quotes):</p>
 
 {% highlight ruby %}
 'ABRT', 'ALRM', 'BUS', 'CHLD', 'CONT', 'FPE', 'HUP', 'ILL', 'INT', 'IO', 'IOT', 'KILL', 'PIPE', 'PROF', 'QUIT', 'SEGV', 'STOP', 'SYS', 'TERM', 'TRAP', 'TSTP', 'TTIN', 'TTOU', 'URG', 'USR1', 'USR2', 'VTALRM', 'WINCH', 'XCPU', 'XFSZ'
 {% endhighlight %}
 
+</section>
+
+<section id="V1-3" class="Tabs-content js_tab_content is-hidden">
+
+<p><strong>This command is not supported by Maestro Version 1.</strong></p>
+
+</section>
+</div>
+
 <hr>
 
-<h3 id="requires">Requires</h3>
+### Requires
 
-In some cases, you may want to make sure that a service is only started if another service is started. The `requires` option allows you to set such dependencies. For example:
+In some cases, you may want to make sure that a service is only started if another, related service is also started. The `requires` option allows you to set such dependencies. For example:
 
 {% highlight yaml %}
 services:
@@ -198,10 +258,10 @@ services:
           - "my_api"
 {% endhighlight %}
 
-<hr>
 
-<h3 id="restart">Restart on deploy</h3>
-A boolean value to indicate whether the containers of this service should be restarted during deployment (set to <i>true</i> by default).
+### Restart on deploy
+
+A boolean value to indicate whether the containers of this service should be restarted during deployment (set to <i>true</i> by default). For example:
 
 {% highlight yaml %}
 services:
@@ -209,11 +269,11 @@ services:
         restart_on_deploy: false
 {% endhighlight %}
 
-<hr>
 
-<h3 id="stop_grace">Stop grace</h3>
 
-Sets the duration between the Docker <code>TERM</code> and <code>KILL</code> signals when Docker stop is run and a container is stopped.
+### Stop grace
+
+Sets the duration between the Docker <code>TERM</code> and <code>KILL</code> signals when Docker stop is run and a container is stopped. For example:
 
 {% highlight yaml %}
 services:

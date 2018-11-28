@@ -1,0 +1,57 @@
+---
+layout: post
+template: one-col
+title: Using IP filtering
+categories: tutorials
+order: 11
+lead: "How to allow or deny traffic from IP addresses or range"
+legacy: false
+tags: ["operations"]
+permalink: /:collection/:path
+---
+
+## Overview
+
+By default, all traffic is allowed to visit your web servers on ports 80, 443, 8080 and 8443. 
+
+However, repeated visits within a short time period (more than 1,500 hits per minute from a single IP address) on these port will be blocked by [ActiveProtect](/maestro/references/active-protect.html).
+
+In order to prevent this from happening, you need to whitelist any IP addresses or ranges that will be calling your application more frequently than this limit.
+
+## Allowing traffic 
+
+To whitelist an IP, or IP range:
+
+1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+2. Click on *Network Settings*  in the **Application** panel on the right of the screen
+3. Click on the *Traffic* tab at the top of the main panel
+4. 	Add the IP address or range to the *Allowed Web Sources* field
+5. Click *Review changes* and then *Apply changes*
+
+IP addresses and ranges can be entered as comma separated lists. For example:
+
+<pre class="prettyprint">
+23.213.76.19
+23.213.76.1/16
+23.213.76.19,31.152.18.22,197.222.132.0/24
+</pre>
+
+## Denying traffic
+
+You can also blacklist specific IPs and/or ranges from visiting the ports mentioned above. To do so:
+
+1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+2. Click on *Network Settings*  in the **Application** panel on the right of the screen
+3. Click on the *Traffic* tab at the top of the main panel
+4. 	Add the IP address or range to the *Deny Access From* field
+5. Click *Review changes* and then *Apply changes*
+
+As above, you can enter IP addresses in comma separated lists, as ranges, or a combination. 
+
+You can test this by adding your [own IP address](https://whatsmyip.com/) to the *Deny* list and then trying to visit your application in the browser. If you've configured this correctly you will get a *403 Forbidden* error from your app's Nginx proxy. 
+
+## Cloudflare edge server support TBC!
+
+You can also choose not to block traffic coming from Cloudflare edge servers. Cloudflare uses a large number of [IP ranges](https://www.cloudflare.com/ips/) and so, rather than adding them manually, you can choose to whitelist their entire service. 
+
+

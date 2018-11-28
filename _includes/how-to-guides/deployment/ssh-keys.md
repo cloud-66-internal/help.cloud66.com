@@ -1,12 +1,6 @@
 ## Generate Keys on Linux and Mac
 
-Run the 
-ssh-keygen
- command in the terminal and answer the questions when prompted, the defaults are acceptable for most use cases.
-
-{% highlight bash %}
-ssh-keygen
-{% endhighlight %}
+Run the `ssh-keygen` command in the terminal and answer the questions when prompted. The defaults are acceptable for most use cases.
 
 The generated keys should now be located in your home directory 
 ~/.ssh/
@@ -28,11 +22,8 @@ ssh squire@example.com "echo `cat ~/.ssh/uploaded+key.pub` >> ~/.ssh/authorized_
 
 You can now log in to your server using your public key.
 
-
-
-## Important
-
-Cloud 66 doesn't currently support password protected keys, so please ensure your key is not passworded.
+#### Important
+<div class="notice notice-warning"><p>Cloud 66 doesn't currently support password protected keys, so please ensure your key is not passworded.</p></div>
 
 
 ## Generate Keys on Windows
@@ -55,10 +46,9 @@ ssh -i {your private key location} {server user}@{server address}
 {% endhighlight %}
 
 
-## Important
-
-In both cases above you should not be asked to provide your password.
-Once you are happy that you can connect to your server with your key, best practice would be to disable access to your server via username/password. However this is up to you and your particular requirements.
+#### Important
+<div class="notice notice-warning"><p>
+In both cases above you should not be asked to provide your password. Once you are happy that you can connect to your server with your key, best practice would be to disable access to your server via username/password.</p></div>
 
 [More information regarding SSH Keys](http://library.linode.com/security/ssh-keys)
 

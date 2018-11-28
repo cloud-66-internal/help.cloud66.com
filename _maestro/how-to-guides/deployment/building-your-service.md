@@ -10,13 +10,13 @@ permalink: /:collection/:path
 ---
 
 <div class="notice notice-danger">
-<p>PLEASE NOTE:<br/> This guide only applies to Version 1 of Cloud 66's container management service, also know as <em>CSV1</em>. If you are new to Cloud 66 then you should use <a href="/skycap/quickstarts/getting_started.html">Skycap</a> to handle this function.</p></div>
+<p>PLEASE NOTE:<br/> This guide only applies to Version 1 of Maestro, also know as <em>CSv1</em>. If you are new to Maestro then you should use <a href="/skycap/quickstarts/getting_started.html">Skycap</a> to handle this function.</p></div>
 
 ## Pull code from Git
 
 For BuildGrid to pull code from your Git repository and build your image, you will need to provide a `git_url` and `git_branch`. Simply place a Dockerfile in your repository to determine how the image should be built. These images are built continuously from your source code and are stored in a private Docker image repository, available to be used locally or pushed to production servers.
 
-You can pass environment variables into your Dockerfile during this build process with the `$VARIABLE` syntax, which will be populated with environment variable(s) set on the stack.
+You can pass environment variables into your Dockerfile during this build process with the `$VARIABLE` syntax, which will be populated with environment variable(s) set on the application.
 
 ## Provide a Docker image
 
@@ -38,7 +38,7 @@ There are a number of directives you can set in your service configuration to cu
 
 ### Build command
 
-Specifies the command you would like to run during stack build (runs on your Docker host).
+Specifies the command you would like to run during application build (runs on your Docker host).
 
 ```
 
@@ -82,7 +82,7 @@ services:
 
 ### Deploy command
 
-Specifies the command you would like to run during stack deploy (runs once per service, on your Docker host).
+Specifies the command you would like to run during application deploy (runs once per service, on your Docker host).
 
 ```
 
@@ -177,7 +177,7 @@ services:
 
 ### Using Habitus for builds
 
-[Habitus is a build workflow tool for Docker](http://www.habitus.io). It allows you to create a build workflow consisting of multiple steps for your Docker stacks on BuildGrid. Cloud 66 BuildGrid fully supports Habitus. To enable Habitus on BuildGrid builds, you need to do the following:
+[Habitus is a build workflow tool for Docker](http://www.habitus.io). It allows you to create a build workflow consisting of multiple steps for your Maestro application on BuildGrid. Cloud 66 BuildGrid fully supports Habitus. To enable Habitus on BuildGrid builds, you need to do the following:
 
 1.  Add a `build.yml` to your repository
 2.  Set `use_habitus` attribute to `true` in your `service.yml`

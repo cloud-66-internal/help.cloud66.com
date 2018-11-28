@@ -9,7 +9,7 @@ lead: Create a Maestro cluster for shared server application deployments"
 permalink: /:collection/:path
 ---
 
-A Maestro cluster is a "blank" Kubernetes infrastructure, with no application specific components. You can use a cluster to deploy multiple applications to the same set of servers. 
+A Maestro Cluster is a "blank" instance of Kubernetes infrastructure - i.e. with no application specific components installed. You can use a Cluster to deploy multiple applications to the same set of servers. 
 
 #### Note
 <div class="notice"><p>Clusters are only compatible with applications built using Maestro <a href="/maestro/the-basics/about-maestro.html">Version 2</a>.</p></div>
@@ -25,7 +25,7 @@ Before you start, please check you have the following:
 
 {% include general/cloud_provider_or_own_server_tabs.html %}
 
-## Creating a Maestro cluster
+## Creating a Maestro Cluster
 
 To get started with your cluster &mdash; firstly switch to the <em>Clusters dashboard</em> in main navigation bar at the top of the page.
 
@@ -77,3 +77,10 @@ We can also easily add additional server nodes to this cluster or remove existin
 If you now create a new Maestro application (see [Getting Started with Maestro for help with this(/maestro/quickstarts/getting_started.html)) at the point where you can select your Cloud provider, you will now see additional items clusters. Select your cluster, and deploy your application!
 
 <img src="/assets/maestro/maestro_cluster_deploy_application.png" alt="Deploy application to cluster">
+
+## What's next?
+
+* Learn how to add a [load balancer](/maestro/tutorials/load-balancing.html) to your application.
+* Learn about using [failover groups](/maestro/tutorials/failover-groups.html) to make your application highly available
+* Learn how to [deploy your service(s) in parallel](/maestro/how-to-guides/deployment/parallel-deployment.html) to speed up the deployment process.
+* Your deployment configuration is stored in a *manifest.yml* file. Learn how to [edit your manifest file](/maestro/how-to-guides/deployment/building-a-manifest-file.html) to access advanced deployment features.

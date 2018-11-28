@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "How to Customize your Service Resources"
+title:  "Setting resource limits"
 categories: how-to-guides/deployment
-lead: Managing resources for your Docker service
+lead: Managing resource usage for your Docker services
 tags: ['operations', 'service']
 legacy: false
 permalink: /:collection/:path

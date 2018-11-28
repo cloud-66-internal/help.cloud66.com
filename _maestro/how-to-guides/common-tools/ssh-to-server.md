@@ -10,19 +10,20 @@ tags: ['SSH', 'shell']
 permalink: /:collection/:path
 ---
 
-
-We provide two different ways for you to SSH to your server - an automated way with the Cloud 66 toolbelt, or the manual way.
+We provide two different ways for you to SSH to your servers - an automated way with Cloud 66 Toolbelt, or manual way.
 
 ## Cloud 66 toolbelt
-You can use the [Cloud 66 toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) to easily SSH to your servers. Once initialized, the following command can be used:
+You can use [Cloud 66 Toolbelt](/maestro/quickstarts/using-cloud66-toolbelt.html) to easily SSH to your servers. Once you have installed Toolbelt the following command can be used from your terminal:
 
-### Full
+### Full command
 
-{% highlight bash %}
-cx ssh [--gateway-key &lt;The path to the key of gateway server&gt;] [-s &lt;stack&gt;] &lt;server name&gt;|&lt;server ip&gt;|&lt;server role&gt;
-{% endhighlight %}
+```
+cx ssh [--gateway-key <<The path to the key of gateway server>>] [-s "your application name"] "your server name"|<<server ip>>|<<server role>>
+```
+Many of these parameters are optional or mutually exclusive. For example you don't need to provide both the server name and the IP address.
 
-### Example
+### Examples
+
 {% highlight bash %}
 cx ssh -s "My Awesome App" web
 cx ssh --gateway-key ~/.ssh/bastion_key  -s "My Awesome App" Lion -e production
@@ -31,10 +32,11 @@ cx ssh --gateway-key ~/.ssh/bastion_key  -s "My Awesome App" Lion -e production
 See [toolbelt shortcuts](/maestro/quickstarts/using-cloud66-toolbelt.html), for information on how you can make this even easier.
 
 ## Manual shell access
-You can always have terminal access to your servers from your own server - just follow the steps below if you're on a Linux-based operating system.
 
-1. Port 22 (SSH) is closed to outside traffic by default - so you need to <a href="/maestro/references/network-configuration.html">add a firewall rule to your stack</a> to access it.
-2. Once the port is open, you can find your username and SSH key by visiting the server page for the specific server you would like to login to. The SSH key download link is located in the right sidebar of your server page.</li>
+You can also access your servers manually via SSH from any Linux-based operating system (including Mac OS X). To do this:
+
+1. [Add a firewall rule](/maestro/references/network-configuration.html) to your application to open port 22 (it is closed to outside traffic by default).
+2. Find your username and SSH key in the information page for the target server via your [Dashboard](https://app.cloud66.com/dashboard). The SSH key download link is located in the right-hand panel.
 3. Change the access rights to the downloaded key to 0600:
 <pre class="terminal">
 $ chmod 0600 /Users/xxx/Downloads/key.pem
@@ -44,14 +46,17 @@ $ chmod 0600 /Users/xxx/Downloads/key.pem
 $ ssh user&#95;name@ip&#95;address -i /Users/xxx/Downloads/key.pem
 </pre>
 
+
 ## Troubleshooting
 
-<ol class="list">
-<b><li>Update your toolbelt version</li></b>
-Toolbelt updates are normally applied automatically in the background, but in some cases these may not work. If so, you may need to <a href="/maestro/quickstarts/using-cloud66-toolbelt.html#update-the-toolbelt">update the toolbelt manually</a>.<br/><br/>
+### Update your toolbelt version
 
-<b><li>Toolbelt SSH asking for password</li></b>
+Toolbelt updates are normally applied automatically in the background, but in some cases these may not work. If so, you may need to [update the toolbelt manually](/maestro/quickstarts/using-cloud66-toolbelt.html#update-the-toolbelt).
+
+### Toolbelt SSH asking for password
+
 If your toolbelt SSH connection is asking for a password, there may be an issue with the local SSH key cache on your computer. To remove this cache, run the following commands:
+
 {% highlight bash %}
 mkdir ~/.ssh/old_cx
 mv ~/.ssh/cx_* ~/.ssh/old_cx
@@ -59,16 +64,18 @@ mv ~/.ssh/cx_* ~/.ssh/old_cx
 
 This moves the cached SSH keys to a temporary folder, so that they are downloaded again.<br/><br/>
 
-<b><li>Toolbelt exits command</li></b>
-If the toolbelt SSH connection exits while running, it helps to check the output log from the command. To see this, simply prepend <code>CXDEBUG=1</code> to your command. For example, you can run:
+### Toolbelt exits command
+
+If the toolbelt SSH connection exits while running, it helps to check the output log from the command. To see this, simply prepend `CXDEBUG=1` to your command. For example, you can run:
 
 {% highlight bash %}
 CXDEBUG=1 cx ssh -s "My Awesome App" web
 {% endhighlight %}
 
-This will show at which point the command fails, and if you run this manually, you should see more error details.<br/><br/>
+This will show at which point the command fails, and if you run this manually, you should see more error details.
 
-<b><li>Toolbelt exit status 255</li></b>
+### Toolbelt exit status 255
+
 You may see this output from the bottom of the previous command:
 
 <pre class="prettyprint">
@@ -76,14 +83,14 @@ Running Command /usr/bin/ssh with ([&lt;username&gt;@&lt;ip_address&gt; -i /User
 2015/04/23 17:41:12 error: exit status 255
 </pre>
 
-In this case, there has likely been an issue running the SSH command, though no logs are output from it (given the <i>LogLevel=QUIET</i> directive). We'll want to run that command directly (and switch the <i>LogLevel</i> to <i>VERBOSE</i>):
+In this case, there has likely been an issue running the SSH command, though no logs are output from it (given the `LogLevel=QUIET` directive). We'll want to run that command directly (and switch the `LogLevel` to `VERBOSE`):
 
-<pre class="prettyprint">
+{% highlight bash %}
 ssh &lt;username&gt;@&lt;ip_address&gt; -i /Users/&lt;username&gt;/.ssh/cx_&lt;id&gt;_pkey -o UserKnownHostsFile=/dev/null -o CheckHostIP=no -o StrictHostKeyChecking=no -o LogLevel=VERBOSE -o IdentitiesOnly=yes -A -p 22
-</pre>
+{% endhighlight %}
 
-The output from that command should help you understand what the root cause of the issue is.<br/><br/>
+The output from that command should help you understand what the root cause of the issue is.
 
-<b><li>SSH timeout</li></b>
-SSH connection time-outs typically happen when the firewall connection isn't open. The toolbelt opens the firewall to your current IP address automatically, but your external IP address may change between this request and the actual connection. To verify this, try the manual connection method and see if you can connect.
-</ol>
+### SSH timeout
+
+SSH connection time-outs typically happen when the firewall connection isn't open. The toolbelt opens the firewall to your current IP address automatically, but your external IP address may change between this request and the actual connection. To verify this, try the manual connection method to see if you can connect.

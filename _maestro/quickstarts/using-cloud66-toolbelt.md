@@ -11,17 +11,17 @@ permalink: /:collection/:path
 ---
 
 
-## What is toolbelt?
+## What is Toolbelt?
 
 The Cloud 66 toolbelt makes it possible to interact with Cloud 66 from the comfort of your command line, and is available for Linux, Mac and Windows.
 
 
-## Install the toolbelt?
+## Install Toolbelt
 
 To get started, simply download the [toolbelt executable](https://app.cloud66.com/toolbelt), unzip and copy it to a directory accessible in your PATH. On Mac OS X, your PATH is likely `/usr/local/bin`, but you can run `echo $PATH` in your terminal to determine your specific path. Placing the executable in this folder allows it to be used globally.
 
 
-## Initialize the toolbelt
+## Initialize Toolbelt
 
 Before using the toolbelt, you need to link it to your Cloud 66 account. You can do this by issuing one of the available commands, which will return a URL that you need to copy and paste into your browser.
 
@@ -39,6 +39,19 @@ Once authorized, you will be presented with an authorization code to paste into 
 ### Note
 
 To deauthorize the toolbelt, login to your Cloud 66 account and click on the _Revoke access_ button under your _Account_ page.
+
+## Access your servers via Toolbelt
+
+One of the most useful features of Toolbelt is the ability to quickly and easily SSH into any of your servers.
+
+To connect to a server for any application: 
+
+1. Install Toolbelt 
+2. Visit the appropriate **application overview** page via the [Dashboard](https://app.cloud66.com/dashboard)
+3. Click on the *Servers* tab at the top of the page
+4. Click on the name of the server in question
+5. Copy the *Connect with toolbelt* command in the yellow box on the right of the server detail screen
+6. Paste that command into your desktop terminal client.
 
 ## View toolbelt information
 

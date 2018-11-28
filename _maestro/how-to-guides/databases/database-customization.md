@@ -11,7 +11,7 @@ permalink: /:collection/:path
 
 You can customize the database configuration on your servers using [CustomConfig](/{{page.collection}}/tutorials/custom-config.html). CustomConfig is available for MySQL, PostgreSQL, Redis and MongoDB.
 
-Editing and committing your database CustomConfig will perform the following steps on every database server in your stack, one by one, sequentially:
+Editing and committing your database CustomConfig will perform the following steps on every database server in your application, one by one, sequentially:
 
 - Check your template for Liquid syntax errors
 - Determine the correct server configuration and prepare general variables
@@ -54,7 +54,7 @@ The following variables are available to any database CustomConfig.
     <tr>
      <td>cloud</td>
      <td>string</td>
-     <td>Stack cloud</td>
+     <td>application cloud</td>
     </tr>
     <tr>
      <td>memory</td>

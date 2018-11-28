@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Configure Service Networking - TBS
+title: Configure Service Networking
 categories: how-to-guides/deployment
 order: 5
-lead: "An introduction to service networking"
+lead: "Advanced service network configuration and port mapping"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path
@@ -12,92 +12,100 @@ permalink: /:collection/:path
 
 ## Overview
 
-Often times the purpose of a service inside your application is to respond to web queries from the internet. Actions like rendering and serving HTML pages or accepting HTTP POST actions are amongst the most common requirements from web services.
+This guide covers more complex and advanced cases of service networking. If you've never configured a Maestro service before, consider following [our tutorial](/maestro/tutorials/container-ports.html) on port mapping first.
 
-In a Cloud 66 for Docker stack, your services run inside containers. For this service to be available to anyone outside the container, we need to bridge it from inside to outside of the container.
+If you need an introduction to the concept of Service Networking, you can find one [here](/maestro/the-basics/concepts-and-terminology.html#service-networking).
 
-This is not limited to HTTP or web traffic. The same concepts apply if your container serves non-HTTP traffic (like web sockets, DB containers or custom TCP / UDP traffic).
+## Non-HTTP ports (TCP and UDP)
 
-### Note
+If your application does not use HTTP traffic you can map ports by specifying the protocol (TCP or UDP).
 
-In this article, **outside world** is used for any client of your service that's not inside the container. This includes any other services on your other stacks.
+Let's imagine we have a service that listens on port 5454 on UDP and we would like to make it available to the outside world on port 111. 
 
+To achieve this via the *edit service* interface: 
+1. Open the application overview page from your Dashboard
+2. Click on the *Edit service* icon on the right-hand side of the *App Services* panel
+3. On the **Edit Services** page, click the green *Save changes* button (you don't need to make any changes first)
+4. On the **Edit port settings** page click the small planet icon to the left of the yellow *Configure service networking* panel
+5. Set the *Container Port* to `5454`
+6. Set the *Public Internet Port* to `udp:111`
+7. Save your changes and deploy your application
 
-## Ports inside and outside containers
+If you'd prefer to make these changes directly in the `service.yml` the result would look similar to this:
 
-Your code that runs inside of a container listens to a specific port. For example a standard setup for a web server listens to port 80 for HTTP and 443 for HTTPS traffic. A normal Rails application listens to port 3000 or 9292 by default.
+{% highlight yaml %}
+services:
+    my_service:
+        ports:
+          - container: 5454
+            udp: 111
+{% endhighlight %}
 
-Here is an example of default ports used by different programming frameworks or application servers:
+In the example below, our service listens to TCP port 8787 and we want to make it available on port 9000 to the outside world:
+
+{% highlight yaml %}
+services:
+    my_service:
+        ports:
+          - container: 8787
+            tcp: 9000
+{% endhighlight %}
+
+Note that you don't need to set the protocol for the container port - that is defined by the service itself. By specifying the protocol of the *Public Internet Port* you're ensuring that requests that reach the container are using the same networking protocol as the service itself.
+
+## Mapping multiple ports
+
+Some services listen to multiple ports. An example is InfluxDB which listens to different ports for queries and admin controls. You can map these relationships using an array in the `service.yml`. For example:
+
+{% highlight yaml %}
+services:
+    my_service:
+        ports:
+          - container: 8787
+            tcp: 9000
+          - container: 8788
+            tcp: 9001
+{% endhighlight %}
+
+## Examples of default ports
+
+Some example of default ports used by popular programming frameworks or application servers:
 
   <table class="table table-bordered table-striped"> 
-     <thead> 
-      <tr> 
-       <th> Application </th> 
-       <th> Default Port </th> 
-      </tr> 
-     </thead> 
-     <tbody> 
-      <tr> 
-       <td> Rack (webrick) </td> 
-       <td> 3000 </td> 
-      </tr> 
-      <tr> 
-       <td> Rack (unicorn, thin, puma) </td> 
-       <td> 9292 </td> 
-      </tr> 
-      <tr> 
-       <td> Node (Express) </td> 
-       <td> 3000 </td> 
-      </tr> 
-      <tr> 
-       <td> Java (Play) </td> 
-       <td> 9000 </td> 
-      </tr> 
-      <tr> 
-       <td> RethinkDB </td> 
-       <td> 8080 </td> 
-      </tr> 
-      <tr> 
-       <td> InfluxDB </td> 
-       <td> 8083, 8086, 8090, 8099 </td> 
-      </tr> 
-     </tbody> 
-    </table>
-
-From the outside world (ie Internet) all of these applications (except for the DBs) listen to the normal HTTP (80) and HTTPS (443) ports so the site visitors don't need to enter port number in their browsers.
-
-On a Cloud 66 for Docker stack, you can make the inside and outside ports map using the Container Port Mapping feature. It is a simple to use yet flexible feature that supports common TCP protocols like HTTP and HTTPS as well as custom TCP and UDP traffic.
-
-If you set your outside world port 80 (HTTP) the 443(HTTPS) will be added automatically.
-
-
-## Networking Ports
-
-This is used to expose your service to the outside world. Outside world includes any server/computer out of the stack. So if you even have two stacks and one needs a service from the other one you need to expose your service/container. 
-
-Without exposing the service/container will be available to other servers of the same stack without being exposed. This is possible if you use their Weave IP addresses. 
-
-Now if you need to expose your service. This is how it should be set:
-
-1.  Under **Container Port** you need to specify the port that your container is listening on (like 3000 for rails apps)
-
-    You can define your exposed service ports on **Public Internet Port** box like bellow:
-
-2.  * If your service is a web service (HTTP) and you want it to be available outside of your stack you need to set it like this:
-    
-       http:80,https:443
-    
-    * If you don't have HTTPS
-    
-       http:80
-    
-    * For non-standard ports:
-    
-       http:8080,https:8443
-    
-    * For other protocols (TCP and UDP):
-    
-       tcp:5785,udp:478
-    
-       This means that this container w ill be exposed on port 5785 for TCP connections and 478 for UDP connections
-
+   <thead> 
+    <tr> 
+     <th>Application</th> 
+     <th>Default Port</th> 
+    </tr> 
+   </thead> 
+   <tbody> 
+    <tr>
+     <td>Rack (webrick)</td>
+     <td>3000</td>
+    </tr> 
+    <tr>
+     <td>Rack (unicorn, thin, puma)</td>
+     <td>9292</td>
+    </tr> 
+    <tr>
+     <td>Node (Express)</td>
+     <td>3000</td>
+    </tr> 
+    <tr>
+     <td>Java (Play)</td>
+     <td>9000</td>
+    </tr> 
+    <tr>
+     <td>RethinkDB</td>
+     <td>8080</td>
+    </tr> 
+    <tr>
+     <td>InfluxDB</td>
+     <td>8083, 8086, 8090, 8099</td>
+    </tr> 
+        <tr>
+     <td>Python (Django)</td>
+     <td>8000</td>
+    </tr> 
+   </tbody> 
+  </table> 

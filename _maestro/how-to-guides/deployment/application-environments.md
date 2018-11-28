@@ -12,7 +12,7 @@ permalink: /:collection/:path
 
 ## Overview
 
-To reflect the different stages of your software, you can deploy your applications in different environments. By default Maestro provides four standard environments:
+To reflect the different lifestages of your software, you can deploy your applications in different environments. By default Maestro provides four standard environments:
 
 * **Development**: Used during the development phase for rapid deployment and testing
 * **QA**: Used for quality assurance - typically more stable than Development
@@ -21,7 +21,13 @@ To reflect the different stages of your software, you can deploy your applicatio
 
 ## Adding custom environments
 
-In addition, you can define your own environments from the _Account_ page, in the _Setting_ -> _Custom environment_ menu. Once the new environment is added, you will be able to see it in the list of supported environments when creating a new stack. Custom environments don't influence anything on the stack. They will result in the relevant environment variables like `RAILS_ENV` and `RACK_ENV` having the correct values. The usage of those custom values is up to your application.
+In addition, you can define your own environments from the _Account_ page, in the _Setting_ -> _Custom environment_ menu. 
+
+Once the new environment is added, you will be able to see it in the list of supported environments when creating a new stack. 
+
+### Understanding custom environments
+
+Custom environments don't influence anything on the application itself. They will simply result in relevant environment variables like `RAILS_ENV` and `RACK_ENV` having the correct values. The usage of those custom values is up to your application.
 
 Depending on your configuration, your application will act differently in each environment. 
 
