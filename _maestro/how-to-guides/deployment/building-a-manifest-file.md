@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Building a manifest file
 categories: how-to-guides/deployment
-order: 1
+order: 10
 lead: "How to build a manifest file for your application"
 legacy: false
 tags: ["manifest", "customization"]
@@ -118,7 +118,7 @@ production:
 
 ### Gateway
 
-- **name**: Specify the name of gateway you want to use for your application.
+- **name**: Specify the name of the gateway you want to use for your application.
 - **username** (_Optional_) Specify the username which should be used to connect to bastion server.
 
 
@@ -142,7 +142,7 @@ production:
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is `ssd`.
 - **replica_count** : Number of nodes in _GlusterFS cluster_ which a data will be replicated on it(i.e replica count 2 means your data exist on two nodes). Default value is 1.
 - **mount_targets** : List of _Servers_ and _Server Groups_ you need GlusterFS mounted on them. You can specify the name of the _server_ or _server group_ (i.e rails,docker,mysql,...). You can also use `app` and `db` keywords, `app` is your main app server group (i.e docker, rails, ...)  and `db` is your DB server groups (i.e MySQL,Redis,PostgreSQL,... ). Default value is `app`.
-- **volumes**: List of volumes you want in your GlusterFS Cluster.  By default we are creating a volume called `cloud66-vol`  and mounted to `/mnt/data-store`.
+- **volumes**: List of volumes you want in your GlusterFS Cluster.  By default, we are creating a volume called `cloud66-vol`  and mounted to `/mnt/data-store`.
 
 ### Notes
 <div class="notice">
@@ -152,9 +152,9 @@ production:
 
 Available settings for a volume are:
 
-- **name**: Specify the name of volume.
+- **name**: Specify the name of the volume.
 - **mount**: Specify the mount point of the volume on clients.
-- **access_control** (_Optional, Docker applications only_): Specify the list of docker services which should have a _read only_ or _read/write_ attached volume, mounted to this glusterfs volume. Options are `read` and `write` (which includes read as well)
+- **access_control** (_Optional, Docker applications only_): Specify the list of docker services which should have a _read only_ or _read/write_ attached volume, mounted to this GlusterFS volume. Options are `read` and `write` (which includes read as well)
 
 After you change the volume list, you need to redeploy your application for new configuration be applied to your application.
 
@@ -492,7 +492,7 @@ The _server_ section has the following available parameters:
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. The default value is _ssd_.
 - **subnet_id** (_Optional, AWS EC2 only_): ID of the AWS subnet in which you would like to create your servers.
 - **vendor** (_Optional, BYOC only_): Cloud vendor to host server. Valid values: aws, azure, digitalocean, googlecloud, linode, rackspace, and clouda
-- **key_name** (_Optional, BYOC only_): Key name of the cloud vendor to fire the server up on. This is used when the account has multiple keys for a given cloud vendor. The default value is `Default` when omitted.
+- **key_name** (_Optional, BYOC only_): Key name of the cloud vendor to fire the server upon. This is used when the account has multiple keys for a given cloud vendor. The default value is `Default` when omitted.
 - **region** (_Optional, BYOC only_): [Data center region](http://developers.cloud66.com/#cloud-vendor-instance-regions) to create the server in.
 - **size** (_Optional, BYOC only_): [Size of the server instance](http://developers.cloud66.com/#cloud-vendor-instance-names) created.
 - **availability_zone** (_Optional, AWS EC2 only_): Availability zone of the server instance in AWS EC2 region.
@@ -578,7 +578,7 @@ production:
     LONG_ONE: AUTO_GENERATE_15
 ```
 
-If you need to auto generate a value, you can use the `AUTO_GENERATE` keyword. It generates a 10 character long random string unless you specify the length after it: `AUTO_GENERATE_15` which generates a 15 character random string.
+If you need to auto-generate a value, you can use the `AUTO_GENERATE` keyword. It generates a 10 character long random string unless you specify the length after it: `AUTO_GENERATE_15` which generates a 15 character random string.
 
 Environment variables set in your manifest file will only apply during the initial build of your application. Please refer to our documentation on [environment variables](/{{page.collection}}/tutorials/env-vars.html) if you'd like to set them beyond this point.
 

@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title:  "Managing required restarts"
 categories: how-to-guides/deployment
+order: 40
 lead: "How to handle required restarts"
 tags: ['maintenance']
 legacy: false
@@ -19,9 +20,9 @@ If you'd like to understand more about why these restarts are required, please r
 
 ### Preparing to restart
 
-Doing so after-hours is recommended to minimise disruption.
+Doing so after-hours is recommended to minimize disruption.
 
-In order to minimise down-time, you can restart one server at a time if you have a [load balancer](/maestro/tutorials/load-balancing.html) in place, or you can use [failover groups](/maestro/tutorials/failover-groups.html) to achieve the same thing.
+In order to minimize downtime, you can restart one server at a time if you have a [load balancer](/maestro/tutorials/load-balancing.html) in place, or you can use [failover groups](/maestro/tutorials/failover-groups.html) to achieve the same thing.
 
 You can also use the [maintenance page](/maestro/how-to-guides/deployment/service-network-configuration.html) to temporarily notify your users that you are performing maintenance.
 

@@ -157,7 +157,7 @@ To do this:
 3. Click on the Manifest tab at the top of the main panel
 
 #### Caution
-<div class="notice notice-warning"><p>Editing the manifest file of an existing application may not necessarily result in changes to the deployed instance(s) of that application, even if the application is subsequently redeployed. Read our <a href="/maestro/references/manifest-file-settings.html#classes-of-manifest-file-settings">in-depth guide</a> to understand the complexities around this. </p></div>
+<div class="notice notice-warning"><p>Editing the manifest file of an existing application may not necessarily result in changes to the deployed instance(s) of that application, even if the application is subsequently redeployed. Read our <a href="/maestro/references/manifest-structure.html#classes-of-manifest-file-settings">in-depth guide</a> to understand the complexities around this. </p></div>
 
 
 ## What's next?

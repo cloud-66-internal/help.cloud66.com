@@ -44,7 +44,7 @@ You can access and modify CustomConfig files in two different ways:
 
 CustomConfig uses the [Liquid templating language](http://www.liquidmarkup.org/) developed by [Shopify](http://www.shopify.com/) and used by many websites. 
 
-Liquid allows you to make your templates truly dynamic by incorporating features like variables, logical flow and operators.
+Liquid allows you to make your templates truly dynamic by incorporating features like variables, logical flow, and operators.
 
 The team at Shopify has written two handy beginners guides to Liquid - one for [designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) and one for [developers](https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers). 
 

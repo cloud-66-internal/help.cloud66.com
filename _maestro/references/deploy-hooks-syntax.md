@@ -11,7 +11,7 @@ permalink: /:collection/:path
 
 ## What are deploy hooks?
 
-Deploy hooks are scripts that allow you to automate actions at various points during the deployment process for your applications. If you've never used hooks before, we have [a tutorial](/maestro/tutorials/deploy-hooks.html) that walks your through the basics. You can also use our examples at the bottom of this page.
+Deploy hooks are scripts that allow you to automate actions at various points during the deployment process for your applications. If you've never used hooks before, we have [a tutorial](/maestro/tutorials/deploy-hooks.html) that walks you through the basics. You can also use our examples at the bottom of this page.
 
 ## Hook points
 
@@ -68,7 +68,7 @@ The deployment process is divided into a number of steps, and hook points allow 
 
 There are three types of deploy hooks, and the fields available (and required) vary by type:
 
-1.  **Snippets:** use pre-existing scripts to install common packages. These snippets are [open source](https://github.com/cloud66/snippets), and are created by Cloud 66 or third parties.
+1.  **Snippets:** use pre-existing scripts to install common packages. These snippets are [open source](https://github.com/cloud66/snippets) and are created by Cloud 66 or third parties.
 2.  **Commands:** run your own commands.
 3. **Inline Scripts:** use your own inline scripts for more comprehensive procedures
 
@@ -283,7 +283,7 @@ If a specific command doesn't show any output, you can use the `echo $?` command
 
 A deploy hook needs, at a minimum: 
 
-* a **hook point** i.e where in the deployment process the hook must be invoked
+* a **hook point** i.e wherein the deployment process the hook must be invoked
 * a **hook type** - either a `command` or one of the two `script` types
 * a **target** - defines which type(s) of servers will use this hook
 * a **hook field** - the actual command or script being invoked

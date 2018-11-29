@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Application Environments
 categories: how-to-guides/deployment
-order: 3
+order: 30
 lead: "How to set up custom application environments in Maestro"
 legacy: false
 tags: ["Environments"]
@@ -12,7 +12,7 @@ permalink: /:collection/:path
 
 ## Overview
 
-To reflect the different lifestages of your software, you can deploy your applications in different environments. By default Maestro provides four standard environments:
+To reflect the different life stages of your software, you can deploy your applications in different environments. By default Maestro provides four standard environments:
 
 * **Development**: Used during the development phase for rapid deployment and testing
 * **QA**: Used for quality assurance - typically more stable than Development

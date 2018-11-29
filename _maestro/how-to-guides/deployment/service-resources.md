@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title:  "Setting resource limits"
 categories: how-to-guides/deployment
+order: 30
 lead: Managing resource usage for your Docker services
 tags: ['operations', 'service']
 legacy: false
@@ -39,7 +40,7 @@ The default number of CPU shares given to a service is 1024. This is a relative 
 
 <section id="V2-First" class="Tabs-content js_tab_content">
 
-<p>The memory limit will apply to RAM usage, and SWAP usage. A valid entry is a positive number, followed by one of, "K", "M", or "G", with the minimum being "4M". (You can also use the power-of-two equivalents like Gi, Mi, Ki if you prefer.)</p>
+<p>The memory limit will apply to RAM usage and SWAP usage. A valid entry is a positive number, followed by one of, "K", "M", or "G", with the minimum being "4M". (You can also use the power-of-two equivalents like Gi, Mi, Ki if you prefer.)</p>
 
 <p><strong>For example:</strong></p>
 
@@ -56,7 +57,7 @@ services:
 
         <section id="V1-First" class="Tabs-content js_tab_content is-hidden">
 
-<p>The memory limit will apply to RAM usage, and SWAP usage. A valid entry is a positive number, followed by one of, "k", "m", or "g", with the minimum being "4m".</p>
+<p>The memory limit will apply to RAM usage and SWAP usage. A valid entry is a positive number, followed by one of, "k", "m", or "g", with the minimum being "4m".</p>
 
 <p><strong>For example:</strong></p>
 

@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Configuring DNS
 categories: how-to-guides/deployment
+order: 30
 lead: "How to configure your domain to work with Maestro"
 legacy: false
 tags: ["customization"]
@@ -56,7 +57,7 @@ This involves using an A record to point your root domain at your load balancer 
 
 ### Important
 
-This method will not work if you are serving content with SSL, and only works for HTTP traffic (eg. not TCP/UDP).
+This method will not work if you are serving content with SSL and only works for HTTP traffic (eg. not TCP/UDP).
 
 This method creates a 301 permanent redirect to a specified subdomain for all root domain traffic.
 

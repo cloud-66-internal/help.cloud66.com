@@ -43,7 +43,10 @@ Let's assume that your application was previously completely stateless, but now 
 
 There are two ways to add a database to an existing app:
 1. Using Add-ins
-2. Editing the configuration files
+2. Building a new completely new version of the app, and adding the database [during the build process](/maestro/quickstarts/getting_started.html#adding-a-data-source).
+
+#### Note
+<div class="notice"><p>Although option 2 might seem extreme, it follows the principle of "immutability". It is always more reliable and more manageable to deploy an updated application as though it were new, rather than trying to patch an existing setup.</p></div>
 
 ## Configure a database using add-ins
 
@@ -68,9 +71,6 @@ You can also use this opportunity to log into your database. You can find the us
 To log in use the following command format: `mysql -u*username* -p*yourpassword*` replacing the values with your own username and password. Note that there are no spaces after the `-u` and `-p` commands.
 
 You now have a fully functional MySQL database running as part of your application.
-
-## Adding a database via config - TBC!
-
 
 
 

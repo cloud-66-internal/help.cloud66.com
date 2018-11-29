@@ -31,7 +31,7 @@ Unmanaged backups are stored on your local server and are available under `/var/
 
 ## Backup format
 
-Backup format for redis and mongodb is always **binary**.  For _Mysql_ and _Postgresql_ you can choose between **binary** and **text**.
+The backup format for redis and mongodb is always **binary**.  For _Mysql_ and _Postgresql_ you can choose between **binary** and **text**.
 
 Each format has its own benefits and drawbacks: 
 
@@ -45,17 +45,17 @@ As this backup contains raw binary (rather than a human-readable SQL dump file) 
 - You cannot use it on slave servers
 - You cannot use it for symlinked data folders
 - You can not use it on encrypted databases 
-- You need to shutdown the database service during the restore 
+- You need to shut down the database service during the restore 
 
 ### Text
 
-This is a dump file with SQL commands that that will recreate the database in the same state as it was at the time of the dump.
+This is a dump file with SQL commands that will recreate the database in the same state as it was at the time of the dump.
 
 As the output of the backup is a simple sql dump file, you can use it to import your data to other servers or when you want to upgrade your server version. 
 
-However the restore process will be much slower than **binary**, particularly if you have lots of indexes in your database. These are other benefits of this type of backup : 
+However, the restore process will be much slower than **binary**, particularly if you have lots of indexes in your database. These are other benefits of this type of backup : 
 
-- You can restore this backup when server is up and running.
+- You can restore this backup when the server is up and running.
 - You can move backup jobs to your slave servers (if available) to reduce your master server load
 
 #### Note
@@ -63,7 +63,7 @@ However the restore process will be much slower than **binary**, particularly if
 
 ## Backup schedule
 
-You can specify how often you would like to backup your database. It can be:
+You can specify how often you would like to back up your database. It can be:
 
 - Hourly 
 - Daily 
@@ -81,14 +81,14 @@ You can specify whether or not you would like to Gzip compress your backups. Com
 
 ## Exclude tables
 
-This option only applies to **text**-format MySQL and PostgreSQL backups. You can provide a comma separated list of tables to exclude from your backup.
+This option only applies to **text**-format MySQL and PostgreSQL backups. You can provide a comma-separated list of tables to exclude from your backup.
 
 
 ## Install on replica
 
-This option only applies to **text**-format MySQL and PostgreSQL and redis backups. Allows you to move the backup service to a database replica (only in the same application) to reduce load on your production database.
+This option only applies to **text**-format MySQL and PostgreSQL and redis backups. Allows you to move the backup service to a database replica (only in the same application) to reduce the load on your production database.
 
-In case of multiple slaves the backup will always be on the oldest slave server (the lowest server ID).
+In the case of multiple slaves the backup will always be on the oldest slave server (the lowest server ID).
 
 Note that adding or removing replicas will move the backups to the replica or master recursively.
 
@@ -113,7 +113,7 @@ To do so:
 4. Click on *Copy script to clipboard* 
 5. Paste this script into the target server and run the command
 
-By running the download script, your backup will be downloaded (and concatenated if it is a multi part backup) and prepared for restoration. As a final step, the script will show you the steps you need to follow in order to restore downloaded backup.
+By running the download script, your backup will be downloaded (and concatenated if it is a multi-part backup) and prepared for restoration. As a final step, the script will show you the steps you need to follow in order to restore the downloaded backup.
 
 ### Manual download
 
@@ -158,7 +158,7 @@ $ tar -xvf <tar_file> -C <folder_name>
 
 The -C option allows you to choose which folder to extract the files to.
 
-After you have an unarchived version of your backup ready in a folder you need to following different steps depending on your database type.
+After you have an unarchived version of your backup ready in a folder you need to follow different steps depending on your database type.
 
 ### MySQL
 
@@ -269,7 +269,7 @@ First you need to detect if the backup is a **Text backup** or **Binary Backup**
 $ find /path/to/unarchived/folder '(' -name '*.sql' -o -name '*.sql.gz' ')' -type f) 
 ```
 
-If the command return a result it is a text backup and if the result is empty it is a binary backup.
+If the command returns a result it is a text backup and if the result is empty it is a binary backup.
 
 #### Restore Postgresql Text backup
 
@@ -277,7 +277,7 @@ If the command return a result it is a text backup and if the result is empty it
 ```
 $ find /path/to/unarchived/folder -type f -exec mv -i {} /path/to/unarchived/folder \;  
 ```
-2. 	Find the data file:
+2.     Find the data file:
 ```
 $ find /path/to/unarchived/folder '(' -name '*.sql' -o -name '*.sql.gz' ')' -type f -exec basename {} ';'    
 ```
@@ -382,11 +382,11 @@ $ sudo bluepill cloud66_redis start || sudo service redis start
 
 ### MongoDB
 
-1. Run following command to see if there is database folder in the unarchived folder (Replace YOUR_DATABASE_NAME with correct value): 
+1. Run the following command to see if there is a database folder in the unarchived folder (Replace YOUR_DATABASE_NAME with correct value): 
 ```
 $ find /path/to/unarchived/folder  -name YOUR_DATABASE_NAME -type d
 ```
-If the command return a result, that is data directory we want to restore. Go to final step.
+If the command returns a result, that is data directory we want to restore. Go to the final step.
 
 2. Run following command to flatten the folder
 ```

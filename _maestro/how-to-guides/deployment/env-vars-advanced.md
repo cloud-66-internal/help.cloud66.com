@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title:  "Managing environment variables"
 categories: how-to-guides/deployment
+order: 20
 lead: How to manage environment variables within Maestro
 tags: ['Logs']
 legacy: false
@@ -18,7 +19,7 @@ This guide assumes you already know the basics of adding and editing environment
 
 Cloud 66 creates a number of default environment variables, which can be used in addition to those that you define. Depending on your application configuration, the environment variables available will differ.
 
-For example if you have a [MySQL server](/maestro/tutorials/adding-database.html), the following variables are created and inserted into your _database.yml_ (unless you have specified your own):
+For example, if you have a [MySQL server](/maestro/tutorials/adding-database.html), the following variables are created and inserted into your _database.yml_ (unless you have specified your own):
 
 - **MYSQL_ADDRESS** &mdash; The physical address of your server
 - **MYSQL_USERNAME** &mdash; Randomly generated string
@@ -37,7 +38,7 @@ If your application relies on specific environment variables to complete the dep
 To do this:
 
 1. After you have taken a snapshot of your code (i.e. the first build) click on *Environment Variables* in the panel on the right.
-2. Set your variables by either manually entering them, or uploading a file that contain the variables. This file should use the following format:
+2. Set your variables by either manually entering them, or uploading a file that contains the variables. This file should use the following format:
 
 ```
 KEY_1=value_1
@@ -64,13 +65,13 @@ Be aware of the following while assigning environment variables:
 
 ## Using AUTO_GENERATE
 
-**AUTO_GENERATE** allow you to insert placeholder environment variables into your application, and Cloud 66 will automatically replace them with a random string. This is useful to have Cloud 66 automatically generate values for secrets that you do not want to have committed into your repository.
+**AUTO_GENERATE** allows you to insert placeholder environment variables into your application, and Cloud 66 will automatically replace them with a random string. This is useful to have Cloud 66 automatically generate values for secrets that you do not want to have committed into your repository.
 
-To use **AUTO_GENERATE**, you define any (editable) environment variable with the value `AUTO_GENERATE` or `AUTO_GENERATE_{number}` where number is the length of the value to auto-generate - ie. **AUTO_GENERATE_32**.
+To use **AUTO_GENERATE**, you define any (editable) environment variable with the value `AUTO_GENERATE` or `AUTO_GENERATE_{number}` where the number is the length of the value to auto-generate - ie. **AUTO_GENERATE_32**.
 
 When you deploy your application, Cloud 66 will replace these placeholders with a random string of the specified length (10 is the default length). 
 
-Using this, you can safely commit your env file to your git repository without exposing the actual values of your environement variables.
+Using this, you can safely commit your env file to your git repository without exposing the actual values of your environment variables.
 
 ## Define referenced environment variable
 
@@ -94,7 +95,7 @@ The second method is useful when you want to specify a default value. If cloud66
 
 ### Examples
 
-This examples sets a health check variable to use the external web address variable of the application:
+This example sets a health check variable to use the external web address variable of the application:
 
 ```
 MY_HEALTH_CHECK=http://_env(WEB_ADDRESS_EXT)/health_check.html
@@ -129,7 +130,7 @@ or
 
 ### Intra-service referencing
 
-To reference to an environment variable on other services you can use 
+To refer to an environment variable on other services you can use 
 
 `{% raw %}{{STACK[STACK_UID].SERVICE[SERVICE_NAME].ENV_VAR}}{% endraw %}`  
 
@@ -169,7 +170,7 @@ There are some variables that are predefined by Cloud 66:
 **DOCKER_HOST_IP:** Is injected to each container and is only available inside containers
 
 
-Note that predefined environment variables are referable! for instance you can define `MEMCACHED_ADDRESS` to be `_env(DOCKER_HOST_IP)` to refer to the `DOCKER_HOST_IP` which is one of the predefined ones.
+Note that predefined environment variables are preferable! for instance, you can define `MEMCACHED_ADDRESS` to be `_env(DOCKER_HOST_IP)` to refer to the `DOCKER_HOST_IP` which is one of the predefined ones.
 
 
 

@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title:  "Applying system upgrades"
 categories: how-to-guides/deployment
+order: 50
 legacy: false
 lead: Applying upgrades and updates to your application components
 tags: ['upgrade', 'update']
@@ -13,7 +14,7 @@ permalink: /:collection/:path
 
 Maestro aims to make it easier to build immutable infrastructure. Building (or re-building) servers and applications from scratch is much better than modifying existing server configurations and tinkering with settings until things start to work.
 
-This is commonly accepted as best practice, but it's often difficult, time consuming and can be unpredictable. That's why we make building applications from scratch as easy and as quick as possible. 
+This is commonly accepted as best practice, but it's often difficult, time-consuming and can be unpredictable. That's why we make building applications from scratch as easy and as quick as possible. 
 
 So, when an upgrade is available, our first recommendation is to build a new application and redirect your traffic to the new application using your [Failover Address](/maestro/tutorials/failover-groups.html).
 
@@ -21,12 +22,12 @@ When a new server is created we automatically update all the packages to the lat
 
 If rebuilding is impractical or impossible, there are three approaches to dealing with the issue:
 
-*  Ignore the package updates &mdash; this is safest bet if you're concerned about app stability.
+*  Ignore the package updates &mdash; this is the safest bet if you're concerned about app stability.
 * Manually update the packages by logging into the servers and using `sudo apt-get -y upgrade` or `dist-upgrade` package
 * Update the packages indirectly through scaling up a new server, and then dropping the old one (the new server will always have the latest packages installed on it)
 
 #### Note
-<div class="notice"><p>Some package updates require server-reboot. When scaling up we restart your new servers automatically to ensure everything works correctly. Alternatively you can reboot your servers manually or via the Toolbelt.</p></div>
+<div class="notice"><p>Some package updates require server-reboot. When scaling up we restart your new servers automatically to ensure everything works correctly. Alternatively, you can reboot your servers manually or via the Toolbelt.</p></div>
 
 ## Upgrade package types
 

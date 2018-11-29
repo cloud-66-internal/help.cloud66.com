@@ -16,7 +16,7 @@ You can scale your servers in two ways: horizontal and vertical. Horizontal scal
 
 ### Horizontal scaling
 
-Horizontal scaling works differently for each server type, and is only available if you have deployed using your cloud provider.
+Horizontal scaling works differently for each server type and is only available if you have deployed using your cloud provider.
 
 ## Kubernetes cluster's servers
 
@@ -33,12 +33,12 @@ You can also scale down your servers. From your application overview page, click
 
 ## Scaling services
 
-You can scale your services horizontally across your Kubernetes cluster by clicking the `+` and `-` buttons infront of each service to increase or decrease the number of running containers/pods.
+You can scale your services horizontally across your Kubernetes cluster by clicking the `+` and `-` buttons in front of each service to increase or decrease the number of running containers/pods.
 
 <div class="notice">
- 	<h3>Note:</h3><p>
-	The container/pod distribution is handled by Kuberntes controller and as a result it is <strong>not gauranteed</strong> that your container/pod is  <strong>distributed evenly</strong> .i.e you may sometimes find one server with <strong>multiple</strong> of the same containers/pods and one with <strong>zero</strong> container/pod of the same service.</p>
-</div>	
+     <h3>Note:</h3><p>
+    The container/pod distribution is handled by Kuberntes controller and as a result it is <strong>not gauranteed</strong> that your container/pod is  <strong>distributed evenly</strong> .i.e you may sometimes find one server with <strong>multiple</strong> of the same containers/pods and one with <strong>zero</strong> container/pod of the same service.</p>
+</div>    
 
 ## Database servers
 

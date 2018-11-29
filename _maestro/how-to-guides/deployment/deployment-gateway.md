@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Deploying behind a gateway server
 categories: how-to-guides/deployment
+order: 50
 lead: "How to deploy your application to a DMZ"
 legacy: false
 tags: ["security"]
@@ -24,7 +25,7 @@ Team members should have **Edit Deploy Gateways** access rights to be able to us
 
 Gateway management is available through [toolbelt](/{{page.collection}}/references/toolbelt.html#gateway-management) .
 
-First you need to define a gateway:
+First, you need to define a gateway:
 
 ```
 $ cx gateways add --name aws_bastion --address 1.1.1.1  --username ec2-user  --private-ip 2.2.2.2
@@ -34,9 +35,9 @@ In order to use this gateway for a application deployment, you need to first spe
 
 ```
 production:
-   	gateway:
-   	    name: aws_bastion
-   	    username: ec2-user
+       gateway:
+           name: aws_bastion
+           username: ec2-user
 ```
 
 and then make it available before you start the deployment:

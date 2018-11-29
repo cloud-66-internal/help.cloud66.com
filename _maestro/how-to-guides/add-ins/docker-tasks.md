@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Using the Docker task Add-ins"
 categories: how-to-guides/add-ins
-lead: Schedule automated tasks on a Docker server host and / or service
+lead: Schedule automated tasks on a Docker server host and/or service
 tags: ['Add in']
 legacy: false
 permalink: /:collection/:path

@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Custom service configurations 
 categories: how-to-guides/deployment
+order: 10
 lead: "How to specify custom service configurations for your application"
 legacy: false
 tags: ["customization", "service.yml"]
@@ -52,11 +53,11 @@ databases:
 - mysql                            
 {% endhighlight %}
 
-As you can see above, the _web_ service is pulled from a sample project on Github called Pilot. It specifies both a path for the Dockerfile and a logging folder. Finally, the container is set to listen on port 3000, and uses external ports 80 and 443.
+As you can see above, the _web_ service is pulled from a sample project on Github called Pilot. It specifies both a path for the Dockerfile and a logging folder. Finally, the container is set to listen on port 3000 and uses external ports 80 and 443.
 
 ### Multiple services and databases
 
-In this example, we'll be running three services - one called *seller*, one called *buyer* and one called *dashboard*  as well as a Redis databases.
+In this example, we'll be running three services - one called *seller*, one called *buyer* and one called *dashboard*  as well as a Redis database.
 
 You can define as many services as you need. The first time you build your application, those services will be started on the first server you build but you can use the UI, Toolbelt or the API to move them around.
 
@@ -92,7 +93,7 @@ services:
 
 ## Database configurations
 
-You can specify any required databases in the service configuration. As databases are fairly static components that rarely change without a migration, they aren't run in containers. This avoids the complexity and overhead of running databases in a container, and allows Cloud 66 to perform replication and backups as normal. These databases will be deployed and configured automatically, and their addresses and access credentials will be made available to the containers across the application with environment variables.
+You can specify any required databases in the service configuration. As databases are fairly static components that rarely change without a migration, they aren't run in containers. This avoids the complexity and overhead of running databases in a container and allows Cloud 66 to perform replication and backups as normal. These databases will be deployed and configured automatically, and their addresses and access credentials will be made available to the containers across the application with environment variables.
 
 The allowed database values are: `postgresql`, `mysql`, `redis`, `mongodb`, `elasticsearch` , `rabbitmq` and `glusterfs`. For example:
 
@@ -107,7 +108,7 @@ databases:
 
 ## Environment variables
 
-Any environment variable defined in your application will be made available within your service container. You can also define new environment variable for a service or reference an environment variable in other applications or services using the following syntax:
+Any environment variable defined in your application will be made available within your service container. You can also define a new environment variable for a service or reference an environment variable in other applications or services using the following syntax:
 
 {% highlight yaml %}
 services:

@@ -15,7 +15,7 @@ Global Search is a powerful tool accessible from anywhere in your [Cloud 66 Dash
 
 ## Basic Search
 
-You can type and word or phrase in the search bar at the top of each page to start your search. By default this will search the following:
+You can type any word or phrase in the search bar at the top of each page to start your search. By default this will search the following:
 
 - Applications
 - Servers
@@ -35,7 +35,7 @@ You can narrow the search down with the "advanced search syntax". The general se
 type:server
 ```
 
-Global search supports thse generic search directives:
+Global search supports the generic search directives:
 
 - `tag` Search the tags
 - `type` Search by type. Valid values are `stack`, `server`, `service`, `container`, `firewall`, 'environment' and 'deployment'
@@ -59,7 +59,7 @@ Each specific type might have some specific directives.
 
 ### Firewall directives
 
-Firewalls can be search only by their tags.
+Firewalls can be searched only by their tags.
 
 ### Container directives
 
@@ -81,7 +81,7 @@ Firewalls can be search only by their tags.
 
 ## Complex queries
  
-You can always combine queries to narrow your search donw. Some examples are below:
+You can always combine queries to narrow your search down. Some examples are below:
 
 - `type:server type:stack` returns all servers and applications under your currently selected account
 - `env:production tag:active` returns all production applications tagged with `active`

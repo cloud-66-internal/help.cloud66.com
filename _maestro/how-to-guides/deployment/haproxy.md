@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: "Configuring HAProxy"
 categories: how-to-guides/deployment
+order: 20
 legacy: false
 lead: Configuring HAProxy to work with your Maestro application
 tags: ['Scaling', 'addins']
@@ -14,7 +15,7 @@ permalink: /:collection/:path
 HAProxy CustomConfig allows you to configure your load balancer through the comfort of your browser. In addition to the settings described below, you could also refer to the [HAProxy documentation](http://haproxy.1wt.eu/download/1.3/doc/haproxy-en.txt) for more information about configurations.
 
 ## View HAProxy stats
-While on your application overview page, click on the load balancer add-in to login to your HAProxy stats page. Once logged in, you will see a variety of statistics for your load balancer, and any potential issues.
+While on your application overview page, click on the load balancer add-in to log in to your HAProxy stats page. Once logged in, you will see a variety of statistics for your load balancer and any potential issues.
 
 ## Configure HAProxy to use internal IPs
 By default, HAProxy is configured to use the external IP address of your servers, but it can be changed to use the internal addresses if you have private networking enabled.
@@ -22,7 +23,7 @@ By default, HAProxy is configured to use the external IP address of your servers
 Simply replace any `server.ext_ipv4` values with `server.int_ipv4` using HAProxy CustomConfig (below).
 
 ## Specify an HAProxy test interval
-You can also specify your own test interval if you like - this is done in the _server_ section of your HAProxy configruation. This section is on line 53 of the default configuration.
+You can also specify your own test interval if you like - this is done in the _server_ section of your HAProxy configuration. This section is on line 53 of the default configuration.
 
 To change the test interval to every 30 seconds (instead of the default 2 seconds), the template should look like this:
 
@@ -53,61 +54,61 @@ The following variables are available to use in HAProxy CustomConfig.
 
 ### Config variables
 <table class='table table-bordered table-striped'>
-	<colgroup>
-	<col width="20%"/>
-	<col width="20%"/>
-	<col width="60%"/>
+    <colgroup>
+    <col width="20%"/>
+    <col width="20%"/>
+    <col width="60%"/>
 </colgroup>
 <thead>
-	<tr>
-		<th>Variable Name</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
+    <tr>
+        <th>Variable Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
 </thead>
 <tbody>
 
-	<tr>
-		<td>haproxy_username</td>
-		<td>string</td>
-		<td>Your HAProxy username</td>
-	</tr>
-	<tr>
-		<td>haproxy_password</td>
-		<td>string</td>
-		<td>Your HAProxy password</td>
-	</tr>
-	<tr>
-		<td>httpchk</td>
-		<td>string</td>
-		<td>Default value is "HEAD / HTTP/1.0" unless specified in your manifest file</td>
-	</tr>
-	<tr>
-		<td>balance</td>
-		<td>array</td>
-		<td>Default value is "roundrobin" unless specified in your manifest file</td>
-	</tr>
+    <tr>
+        <td>haproxy_username</td>
+        <td>string</td>
+        <td>Your HAProxy username</td>
+    </tr>
+    <tr>
+        <td>haproxy_password</td>
+        <td>string</td>
+        <td>Your HAProxy password</td>
+    </tr>
+    <tr>
+        <td>httpchk</td>
+        <td>string</td>
+        <td>Default value is "HEAD / HTTP/1.0" unless specified in your manifest file</td>
+    </tr>
+    <tr>
+        <td>balance</td>
+        <td>array</td>
+        <td>Default value is "roundrobin" unless specified in your manifest file</td>
+    </tr>
 
-	<tr>
-		<td>errorfile_lines</td>
-		<td>array</td>
-		<td>Default is empty array unless specified in your manifest file</td>
-	</tr>
-	<tr>
-		<td>servers</td>
-		<td>array</td>
-		<td>Array of "server" objects that are to be load balanced (see below)</td>
-	</tr>
-	<tr>
-		<td>server.ext_ipv4</td>
-		<td>string</td>
-		<td>External IPv4 address (server is one of the items in the "servers" array above)</td>
-	</tr>
-	<tr>
-		<td>server.int_ipv4</td>
-		<td>string</td>
-		<td>Internal IPv4 address (server is one of the items in the "servers" array above)</td>
-	</tr>
+    <tr>
+        <td>errorfile_lines</td>
+        <td>array</td>
+        <td>Default is empty array unless specified in your manifest file</td>
+    </tr>
+    <tr>
+        <td>servers</td>
+        <td>array</td>
+        <td>Array of "server" objects that are to be load balanced (see below)</td>
+    </tr>
+    <tr>
+        <td>server.ext_ipv4</td>
+        <td>string</td>
+        <td>External IPv4 address (server is one of the items in the "servers" array above)</td>
+    </tr>
+    <tr>
+        <td>server.int_ipv4</td>
+        <td>string</td>
+        <td>Internal IPv4 address (server is one of the items in the "servers" array above)</td>
+    </tr>
 
 </tbody>
 </table>
@@ -123,8 +124,8 @@ Editing and committing HAProxy CustomConfig will do the following steps for your
 This process will be stopped if an error is encountered.
 
 <div class="notice notice-warning">
-	<h3>Warning</h3>
-	<p>A bad HAProxy configuration might stop your HAProxy server from working. Take extra care to make sure the configuration is correct.</p>
+    <h3>Warning</h3>
+    <p>A bad HAProxy configuration might stop your HAProxy server from working. Take extra care to make sure the configuration is correct.</p>
 </div>
 
 ## Configuring HAProxy for maintenance mode

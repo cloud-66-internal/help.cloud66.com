@@ -12,35 +12,35 @@ Cloud66 creates different objects depending on which cloud provider you use. For
 
 Here is the list of items (Deleted/Not Deleted) depending on the cloud:
 
-###AWS
+### AWS
 `Deleted:` Instances, Load Balancers, Security Groups, Key Pairs
 
-###Rackspace
+### Rackspace
 `Deleted:`  Servers, Load Balancers, Block storage volumes
 
-###Digitalocean
+### Digitalocean
 `Deleted:` Servers, SSH Keys
 
-###GCE
+### GCE
 `Deleted:` VM Instances, Disks, Forwarding Rules, Target Pools
 
 `Not Deleted:` Firewall Rules
 
-###Linode
+### Linode
 `Deleted:` Servers, NodeBalancers
 
 
-###CloudA
+### CloudA
 `Deleted:` Servers, Load Balancers, Security Groups, Keypaires, Public IPs
 
 `Not Deleted:` Networks, Subnets, Routers
 
-###Azure
+### Azure
 `Deleted:` Virtual Machines, Cloud Services, Storage, Traffic Manager
 
 `Not Deleted:` Networks
 
-###Packet
+### Packet
 `Deleted:` Devices, Projects
 
 `Not Deleted:` SSH Keys

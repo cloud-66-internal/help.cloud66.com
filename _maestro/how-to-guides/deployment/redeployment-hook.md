@@ -3,13 +3,12 @@ layout: post
 template: one-col
 title: Using redeployment hooks
 categories: how-to-guides/deployment
-order: 32
+order: 40
 lead: "How to use redeployment hooks to achieve automated deployments"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
 ---
-
 
 ## About redeployment hooks
 
@@ -17,15 +16,15 @@ Redeployment hooks allow you to achieve continuous deployment by deploying your 
 
 ### Where to find your redeployment hook?
 
-Your redeployment hook URL is automatically generated for each of your applications. You can found your unique redeployment hook URL on your application overview page (available via the **Settings & Information** link in the right hand navigation menu)
+Your redeployment hook URL is automatically generated for each of your applications. You can found your unique redeployment hook URL on your application overview page (available via the **Settings & Information** link in the right-hand navigation menu)
 
 ### For Maestro Applications
 
-Maestro can have multiple services which can rely on a combination of either Image or Git sources. Furthermore, the Git sources can be the same or different branches, or even completely different repositories. To handle this, we have introduced and addition _services modifier_ that can be appended to the redeployment hook tp specify which services to redeploy (the _services modifier_ is a querystring parameter).
+Maestro can have multiple services which can rely on a combination of either Image or Git sources. Furthermore, the Git sources can be the same or different branches, or even completely different repositories. To handle this, we have introduced an addition _services modifier_ that can be appended to the redeployment hook to specify which services to redeploy (the _services modifier_ is a query string parameter).
 
 When a redeployment hook is invoked:
 
-1.    If the commit hook payload includes Git information (Git source, branch and/or reference) then we will attempty to find a matching service on your application that corresponds to the above information. If there is a match then we will deploy _only_ the services that have a Git type (_not_ the Image based services). Note that the matching service will also build based on the Git ref that is present in the payload.
+1.    If the commit hook payload includes Git information (Git source, branch and/or reference) then we will attempt to find a matching service on your application that corresponds to the above information. If there is a match then we will deploy _only_ the services that have a Git type (_not_ the Image-based services). Note that the matching service will also build based on the Git ref that is present in the payload.
 2.    If the commit hook payload does not include Git information, then we will automatically redeploy _all_ services defined on your application.
 3.    If you use the **services** modifier to specify which specific services you want to deploy when the commit hook is invoked, then the same logic applies as in 1) and 2) above, the only difference being that we will always deploy the services you have specified if deployment will occur.
 
@@ -55,16 +54,16 @@ In the case where the payload of the commit hook does not contain any branch inf
 
 #### Github Integration
 
-Users who have signed in through Github (and who have enough access to create and edit deployement events for their applications on GitHub) can activate continuous deployments on GitHub. To do this: access your [Application settings](/maestro/references/toolbelt.html#settings-variables) via the toolbelt
+Users who have signed in through Github (and who have enough access to create and edit deployment events for their applications on GitHub) can activate continuous deployments on GitHub. To do this: access your [Application settings](/maestro/references/toolbelt.html#settings-variables) via the toolbelt
  and set **continuous.deploy** to _true_.
 
 ```
 $ cx settings set -s my_app_name continuous.deploy true
 ```
 
-This will create a new webhook for your repository on GitHub or simply modify and existing one to let Cloud66 recieve _deployment_ events as well.
+This will create a new webhook for your repository on GitHub or simply modify an existing one to let Cloud66 receive _deployment_ events as well.
 
-With this feature enabled, whenever you push new commit, Cloud 66 will automatically generate a new _deployment event_ based on recieving the _push event_ from GitHub. We will also send _deployment status events_ on different deployment statuses, such as started, cancelled, succeeded and failed.
+With this feature enabled, whenever you push a new commit, Cloud 66 will automatically generate a new _deployment event_ based on receiving the _push event_ from GitHub. We will also send _deployment status events_ on different deployment statuses, such as started, canceled, succeeded and failed.
 
 ## Adding Redeployment Hooks
 
@@ -77,7 +76,7 @@ On your application overview page, click _Settings & information_ in the right s
 
 Next, visit your GitHub repository, click _Settings_ in the right sidebar, and then _Webhooks & Services_ in the left sidebar.
 
-In the _Webhooks_ window, click _Add webhook_ and paste the redeployment hook URL into the _Payload URL_ field. When you confirm by clicking _Add webhook_, GitHub will automatically test your hook with a _Ping_ and you should get a green HTTP200 reponse.
+In the _Webhooks_ window, click _Add webhook_ and paste the redeployment hook URL into the _Payload URL_ field. When you confirm by clicking _Add webhook_, GitHub will automatically test your hook with a _Ping_ and you should get a green HTTP200 response.
 
 
 ### Bitbucket Setup

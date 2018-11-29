@@ -47,7 +47,7 @@ You can add this SSH key globally to your Git account by adding it to your **Acc
 
 To add the SSH key globally: 
 
-* Click your account avatar in the top right hand corner and then *Settings*
+* Click your account avatar in the top right-hand corner and then *Settings*
 * Click *SSH and GPG* keys in the left menu
 * Click *New SSH key* 
 * Give the key a useful title (e.g. Maestro) 
@@ -85,5 +85,5 @@ To add the SSH key to a specific repository:
 
 For a tutorial on how to build code from Github into an application for use with Maestro, please follow our [Getting Started](/skycap/quickstarts/getting_started.html) guide for Skycap which walks you through the process.
 
-Skycap is the companion peroduct to Maestro. You can read more about it [here](/maestro/the-basics/about-maestro.html#maestro-vs-skycap). 
+Skycap is the companion product to Maestro. You can read more about it [here](/maestro/the-basics/about-maestro.html#maestro-vs-skycap). 
 

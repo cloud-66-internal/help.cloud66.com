@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Changing the PostgreSQL data directory
 categories: how-to-guides/databases
+order: 30
 lead: "How to change the data directory used by PostgreSQL"
 legacy: false
 

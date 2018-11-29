@@ -58,7 +58,7 @@ Without replica sets, you can connect to your MongoDB using environment variable
 * MONGODB\_URL\_INT
 * MONGODB\_URL\_EXT
 
-`MONGODB_ADDRESS` contains the IP address of your MongoDB. In [Mongoid](http://mongoid.org/en/mongoid/index.html) for example it can be used in your mongoid.yml with `host` (mongoid 
+`MONGODB_ADDRESS` contains the IP address of your MongoDB. In [Mongoid](http://mongoid.org/en/mongoid/index.html) for example, it can be used in your mongoid.yml with `host` (mongoid 
  3).
 
 `MONGODB_ADDRESS_INT` and `MONGODB_ADDRESS_EXT` contain the internal and external network addresses for the same server. You usually want to connect to the internal address to avoid paying for traffic between your web servers and database servers. `MONGODB_ADDRESS` is configured with the internal address `{{MONGODB_ADDRESS_INT}}`, but you can [change that](/{{page.collection}}/tutorials/env-vars.html) if you need.
@@ -103,24 +103,24 @@ Before having a replica set, you had the following setup:
 
 ```
 development:
-	sessions:
-		default:
-			database: my_mongo_app
-			hosts: <%= ENV['MONGODB_ADDRESS'] %>
-			options:
-				consistency: :strong
+    sessions:
+        default:
+            database: my_mongo_app
+            hosts: <%= ENV['MONGODB_ADDRESS'] %>
+            options:
+                consistency: :strong
 ```
 
 After replica sets are enabled you can use something like this:
 
 ```
 development:
-	sessions:
-		default:
-			database: my_mongo_app
-			hosts: <%= "[#{ENV['MONGODB_ADDRESSES'].split(',').map {|addr| "\"#{addr}:27017\""}.join(',')}]" %>
-			options:
-				consistency: :strong
+    sessions:
+        default:
+            database: my_mongo_app
+            hosts: <%= "[#{ENV['MONGODB_ADDRESSES'].split(',').map {|addr| "\"#{addr}:27017\""}.join(',')}]" %>
+            options:
+                consistency: :strong
 ```
 
 The reason for the ugly looking line is that `mongoid` requires the list of server addresses in the replica set to be in an array with port numbers. Since your replica set will be configured to work on the normal MongoDB port of 27017 by default, this line will split the comma separated list into an array in Ruby. The end result will look like something like this:

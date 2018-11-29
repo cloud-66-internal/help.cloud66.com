@@ -3,7 +3,8 @@ layout: post
 template: one-col
 title: Configuring WebSocket
 categories: how-to-guides/deployment
-lead: "How to enable Websocket in a Maestro application"
+order: 20
+lead: "How to enable WebSocket in a Maestro application"
 legacy: false
 tags: ["websocket"]
 

@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Using Deployment History
 categories: how-to-guides/deployment
+order: 20
 lead: "How to use the deployment history to track and roll back deployments"
 legacy: false
 tags: ["operations"]

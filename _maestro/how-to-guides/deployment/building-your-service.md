@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Building your Docker service (V1)
 categories: how-to-guides/deployment
+order: 10
 lead: "How to build a Docker service in Maestro (Version 1 only)"
 legacy: true
 tags: ["build"]
@@ -181,7 +182,7 @@ services:
 
 1.  Add a `build.yml` to your repository
 2.  Set `use_habitus` attribute to `true` in your `service.yml`
-3.  Set the `use_habitus_step` to the step you would like to use for your servide in your `service.yml`
+3.  Set the `use_habitus_step` to the step you would like to use for your service in your `service.yml`
 
 Check out the [Habitus website](http://www.habitus.io) for more information about generating a `build.yml`.
 

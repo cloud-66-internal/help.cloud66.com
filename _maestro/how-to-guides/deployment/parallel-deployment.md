@@ -3,7 +3,8 @@ layout: post
 template: one-col
 title: Deploying applications in parallel
 categories: how-to-guides/deployment
-lead: "How to deploy an application across mutliple servers simultaneously"
+order: 30
+lead: "How to deploy an application across multiple servers simultaneously"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path

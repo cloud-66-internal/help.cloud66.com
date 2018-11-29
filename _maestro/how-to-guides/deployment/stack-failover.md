@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Using failover groups
 categories: how-to-guides/deployment
+order: 30
 lead: "How to set up and use a failover group"
 legacy: false
 tags: ["high-availability"]
@@ -12,7 +13,7 @@ permalink: /:collection/:path
 
 ## Setup the failover group
 
-As with any migration, you will need to deal with moving your code, data and traffic. 
+As with any migration, you will need to deal with moving your code, data, and traffic. 
 
 
 ### 1. Code
@@ -22,7 +23,7 @@ Clone your existing application to a different cloud vendor or data center, and 
 
 ### 2. Data
 
-Enable database replication between your applications - this will setup a master/slave architecture between your applications, whereby the slave is an exact replica of the master at all times. 
+Enable database replication between your applications - this will set up a master/slave architecture between your applications, whereby the slave is an exact replica of the master at all times. 
 
 
 ### 3. Traffic

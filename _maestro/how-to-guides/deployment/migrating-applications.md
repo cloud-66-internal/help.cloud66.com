@@ -3,7 +3,8 @@ layout: post
 template: one-col
 title: Migrating your application between servers
 categories: how-to-guides/deployment
-lead: "How to move your entire application to a new server or a new data centre"
+order: 40
+lead: "How to move your entire application to a new server or a new data center"
 legacy: false
 tags: ["high-availability"]
 
@@ -22,7 +23,7 @@ permalink: /:collection/:path
 
 ### 2. Add a CNAME record in your DNS provider dashboard 
 
-To point at the address provided in the failover group and wait for 24 hours to propagate. While you are waiting for the DNS to get propagated you can follow the steps till step 8.
+To point at the address provided in the failover group and wait for 24 hours to propagate. While you are waiting for the DNS to get propagated you can follow the steps until step 8.
 
 #### Note:
 
@@ -36,17 +37,17 @@ On application `A` set backup for your databases (through add-ins)
 
 ### 4. Clone primary application
 
-Visit the overview page of application `A` and click *Clone* in the right sidebar. This will allow you to choose a new application name and environment. Cloning your application will preserve any environment variables from the existing application, and also allows you to define where to deploy to along with other settings.
+Visit the overview page of application `A` and click *Clone* in the right sidebar. This will allow you to choose a new application name and environment. Cloning your application will preserve any environment variables from the existing application, and also allows you to define where to deploy along with other settings.
 
 
-### 5. Add your database to backup application
+### 5. Add your database to the backup application
 
 Add database or all the databases you need on to the application `B` (the clone)
 
 
 ### 6. Set up replication between applications
 
-On application `B` go to the database server (Redis, MySQL or etc.) and choose the server. On the right side bar click on "configure replication" choose application A (you have to be Administrator on application `A `otherwise it won't be listed). This makes application `B` database into a slave for application `A`.
+On application `B` go to the database server (Redis, MySQL or etc.) and choose the server. On the right sidebar click on "configure replication" choose application A (you have to be Administrator on application `A `otherwise it won't be listed). This makes application `B` database into a slave for application `A`.
 
 ### 7. Add the second application to the failover group
 
@@ -56,7 +57,7 @@ To add application `B` as a backup to the failover group, edit the related failo
 
 Make sure DNS record for the failover group is populated
 
-### 8. Put the primary application in to maintenance mode
+### 8. Put the primary application into maintenance mode
 
 - Go to the overview page for application `A`
 - Click on *Network Settings*
@@ -83,7 +84,7 @@ You can now point your DNS to application `B`.
 Do you want to move your application from one cloud vendor or region to another? Follow the steps below for a seamless transition between applications.
 
 1.  Reduce the TTL of your DNS to 5 minutes, and leave it for 24 hours so that it has time to propagate the network.
-2.  Clone your application and deploy it to the new datacenter. This will save any environment variables you had configured on the source application.
+2.  Clone your application and deploy it to the new data center. This will save any environment variables you had configured on the source application.
 3.  Set up your target application as a database slave, which means that any changes to your source database will be replicated across to the target application until you switch it off.
 **OR**
 4.  Use our one-time database import feature to migrate your data across.

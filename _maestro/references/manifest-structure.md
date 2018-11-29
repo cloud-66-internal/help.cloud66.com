@@ -21,7 +21,7 @@ There are three broad classes of settings in manifest files:
 
 ### Class 1: Once-off settings
 
-These are almost exclusively confined to the `server` settings. For instance changing the cloud vendor in your manifest will not automatically migrate your server to that provider. 
+These are almost exclusively confined to the `server` settings. For instance, changing the cloud vendor in your manifest will not automatically migrate your server to that provider. 
 
 Class 1 settings include:
 
@@ -35,7 +35,7 @@ Class 1 settings include:
 
 These are settings that require a specific action to trigger their roll-out. 
 
-For example, in order to implement changes to cross origin scripting (CORS) settings in Nginx, you need to use the `reconfigure.nginx` command in [Cloud 66 Toolbelt](/maestro/references/toolbelt.html) to force  the settings to propogate.
+For example, in order to implement changes to cross-origin scripting (CORS) settings in Nginx, you need to use the `reconfigure.nginx` command in [Cloud 66 Toolbelt](/maestro/references/toolbelt.html) to force the settings to propagate.
 
 
 ### Class 3: Flexible settings
@@ -84,13 +84,13 @@ Available options are:
 
 The third level of the manifest file determines the specific settings for the component specified in level 2. 
 
-In our example above, this is the level at which we changed the Redis version, and set our custom nameservers. 
+In our example above, this is the level at which we changed the Redis version and set our custom nameservers. 
 
 ### Third Level (2): Servers
 
-You can also specify setting for your servers in your  `manifest.yml` by using the **servers** section. 
+You can also specify settings for your servers in your  `manifest.yml` by using the **servers** section. 
 
-In our example above you can see that we're using Digital Ocean as our `vendor`, and that we've opted for a 2GB instance in the London region. 
+In our example above you can see that we're using Digital Ocean as our `vendor` and that we've opted for a 2GB instance in the London region. 
 
 `key_name` is optional and is used to select the named vendor cloud key in the case where there are multiple accounts available for the same cloud provider.
 

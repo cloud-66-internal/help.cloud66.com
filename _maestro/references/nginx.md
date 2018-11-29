@@ -887,7 +887,7 @@ When there is a problem with your upstream server (ie. a container), requests wi
 
 There are two ways for you to create a custom Nginx 50X error page:
 
-1. Using a static page on you own server
+1. Using a static page on your own server
     - Make your custom error page (for example `50x.html`) available in your container (for example in `/usr/app`), and simply mount this folder to the host (for example with `/var/containers:/usr/app`). The path used in the next step would then be `/var/containers/50x.html`
     - Customize your Nginx configuration and replace the 50X.html location block with following:
     
@@ -899,7 +899,7 @@ There are two ways for you to create a custom Nginx 50X error page:
     ``
 1. Using external static page
     - Upload your file to a server which is accessible from your server
-    - Customize your Nginx configuration and replace the _50X.html_ location block with following:
+    - Customize your Nginx configuration and replace the _50X.html_ location block with the following:
     
         ``
     location = /50x.html
@@ -920,7 +920,7 @@ Editing and committing your Nginx CustomConfig will perform the following steps 
 *   Upload the configuration to the server
 *   Reload Nginx
 
-Reloading Nginx does not interrupt the serving of traffic. This process will be stopped if an error is encountered. For example, if you have 3 web servers in your application, if the first server fails to be updated, the process will be halted for the other 2 servers to avoid complete service diruption.
+Reloading Nginx does not interrupt the serving of traffic. This process will be stopped if an error is encountered. For example, if you have 3 web servers in your application, if the first server fails to be updated, the process will be halted for the other 2 servers to avoid complete service disruption.
 
 
 ### Warning
@@ -1103,7 +1103,7 @@ Good syntax:
 *   if passenger != true
 *   if passenger != false
 *   if passenger == true
-*   if passenger == false	
+*   if passenger == false    
 
 Bad syntax:
 
