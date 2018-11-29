@@ -75,7 +75,7 @@ To enable replication for a single application, you need to scale up to create a
 3. Click the green **+** next to the database you want to replicate. This will allow you to choose your new server size. Your new server should be comparable to your master server.
 
 #### Note
-<div class="notice"><p>You will not be able to scale your database up unless you have <a href="/maestro/how-to-guides/databases/shells/manage-backups.html">managed backups</a> enabled.</p></div>
+<div class="notice"><p>You will not be able to scale your database up unless you have <a href="/maestro/how-to-guides/add-ins/database-backup.html">managed backups</a> enabled.</p></div>
 
 ### Between applications
 
