@@ -14,9 +14,8 @@ When you deploy in parallel, all the deployment tasks for the servers in your ap
 
 Deploying in serial involves removing each server from your load balancer, deploying to it, and re-adding it to the load balancer. When you deploy in parallel, your servers won't be removed from the load balancer, because you could end up with no servers serving the load balancer if this were the case.
 
-### Note
-
-To run database migrations during deployment, it is advisable to deploy in serial.
+#### Note
+<div class="notice"><p>To run database migrations during deployment, it is advisable to deploy in serial.</p></div>
 
 Although database migrations only occur on one server, depending on the changes, they could stop deployments on other servers from succeeding. Refer to our page on [controlling your database migrations](/maestro/how-to-guides/databases/database-customization.html) for more information.
 

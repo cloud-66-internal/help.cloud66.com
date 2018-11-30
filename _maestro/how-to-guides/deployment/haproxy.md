@@ -45,7 +45,7 @@ In this case, you could replace the _httpchk_ section with this:
 
 `httpchk HEAD /check.html HTTP/1.0`.
 
-## About configuring HAProxy with CustomConfig
+## Configuring HAProxy with CustomConfig
 You can customize the HAProxy configuration on your HAProxy server using CustomConfig (below).
 
 CustomConfig uses the [Liquid templating language](http://liquidmarkup.org/). You can find many incredible guides and tutorials into the Liquid syntax around the web, but the syntax is easy enough to pick up in minutes.
@@ -113,8 +113,9 @@ The following variables are available to use in HAProxy CustomConfig.
 </tbody>
 </table>
 
-## Commit HAProxy CustomConfig
-Editing and committing HAProxy CustomConfig will do the following steps for your HAProxy web server:
+## Committing HAProxy CustomConfig
+
+Editing and committing HAProxy CustomConfig will trigger the following on your HAProxy server:
 
 * Check the template for basic Liquid syntax errors
 * Compile the HAProxy configuration based on the information from your load balanced web servers
@@ -123,24 +124,23 @@ Editing and committing HAProxy CustomConfig will do the following steps for your
 
 This process will be stopped if an error is encountered.
 
+#### Warning
 <div class="notice notice-warning">
-    <h3>Warning</h3>
-    <p>A bad HAProxy configuration might stop your HAProxy server from working. Take extra care to make sure the configuration is correct.</p>
+<p>A bad HAProxy configuration might stop your HAProxy server from working. Take extra care to make sure the configuration is correct.</p>
 </div>
 
 ## Configuring HAProxy for maintenance mode
-You can set your HAproxy to show a maintenance page when it cannot connect to a container.
 
+You can set your HAproxy to show a maintenance page when it cannot connect to a container.
 
 * Create custom maintenance page
 * Upload to haproxy server using the toolbelt
-  <pre class="prettyprint">
-cx upload -s application_name_ --server haproxy_server_name maintenance.html
-</pre>
+  <pre class="prettyprint">cx upload -s application_name_ --server haproxy_server_name maintenance.html</pre>
+  
 * Move the file haproxy directory
   <pre class="prettyprint">
-sudo mv /tmp/maintenance.html /etc/haproxy/maintenance.html
-</pre>
+sudo mv /tmp/maintenance.html /etc/haproxy/maintenance.html</pre>
+
 * Configure haproxy to show the maintenance file by adding the below line to the end of the default section
    <pre class="terminal">errorfile 503 /etc/haproxy/maintenance.html</pre>
 

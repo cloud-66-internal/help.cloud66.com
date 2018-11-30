@@ -23,15 +23,24 @@ services:
   first_app:
     git_url: git@github.com:khash/my_first_app.git
     git_branch: master
-    ports: ["3000:80:443"]
+    ports:
+    - container: 5000
+      http: 80  
+      https: 443
   second_app:
     git_url: git@github.com:khash/my_second_app.git
     git_branch: master
-    ports: ["3000:80:443"]
+    ports:
+    - container: 5000
+      http: 80  
+      https: 443
   third_app:
     git_url: git@github.com:khash/my_second_app.git
     git_branch: master
-    ports: ["3000:80:443"]
+    ports:
+    - container: 5000
+      http: 80  
+      https: 443
 {% endhighlight %}
 
 This, however, has a problem: all applications share the same public ports (80 and 443). This means traffic coming to the server on port 80 (or 443) will be randomly served by any of the applications each time.
@@ -43,17 +52,26 @@ services:
   first_app:
     git_url: git@github.com:khash/my_first_app.git
     git_branch: master
-    ports: ["3000:80:443"]
+    ports:
+    - container: 5000
+      http: 80  
+      https: 443
     traffic_matches: ["firstpplication.com"]
   second_app:
     git_url: git@github.com:khash/my_second_app.git
     git_branch: master
-    ports: ["3000:80:443"]
+    ports:
+    - container: 5000
+      http: 80  
+      https: 443
     traffic_matches: ["secondapp.com", "www.secondapp.com", "second-app.com", "www.second-app.com"]
   third_app:
     git_url: git@github.com:khash/my_second_app.git
     git_branch: master
-    ports: ["3000:80:443"]
+    ports:
+    - container: 5000
+      http: 80  
+      https: 443
     traffic_matches: ["thirdapplication.com", "*.thirdapplication.com"]
 {% endhighlight %}
 

@@ -8,11 +8,18 @@ legacy: false
 tags: ["nginx"]
 permalink: /:collection/:path
 ---
-{% assign product = "maestro" %}
 
-In addition to protecting your application (or parts of it) using [HTTP basic authentication](/maestro/how-to-guides/nginx/nginx-auth.html), you can use Cloud 66 [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) to block (or allow) access to your application based on IP addresses.
+## Overview
 
-Follow the instructions below to accomplish this.
+In addition to protecting your application (or parts of it) using [HTTP basic authentication](/maestro/how-to-guides/nginx/nginx-auth.html), you can use [CustomConfig](/maestro/tutorials/custom-config.html) to block (or allow) access to your application based on IP addresses.
+
+#### Read this first
+<div class="notice notice-warning"><p>You can do this more quickly and reliably using Maestro's built-in <a href="/maestro/tutorials/IP-filtering.html">IP filtering</a> feature. This guide is only for users who prefer to configure Nginx directly. 
+</p></div>
+
+## Set up IP access control manually
+
+To accomplish this:
 
 1.  Create a file in the root of your repository called blockips.conf. This file will contain the IPs you wish to allow/deny.
 

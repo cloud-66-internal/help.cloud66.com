@@ -21,16 +21,18 @@ To reflect the different life stages of your software, you can deploy your appli
 
 ## Adding custom environments
 
-In addition, you can define your own environments from the _Account_ page, in the _Setting_ -> _Custom environment_ menu. 
+In addition, you can define your own environments. To do so:
+
+1. Open your [Dashboard](https://app.cloud66.com/dashboard)
+2. Click on your account avatar (top-right) and select *Account Settings*
+3. Click on *Custom Environments* in the **Settings** panel on the left.
+4. Click on *Add a new environment*
+5. Give your environment a name and click *Save changes*
 
 Once the new environment is added, you will be able to see it in the list of supported environments when creating a new application. 
 
 ### Understanding custom environments
 
-Custom environments don't influence anything on the application itself. They will simply result in relevant environment variables like `RAILS_ENV` and `RACK_ENV` having the correct values. The usage of those custom values is up to your application.
+Custom environments don't influence anything in the application itself. They will simply result in relevant environment variables having the correct values. The usage of those custom values is up to your application.
 
-Depending on your configuration, your application will act differently in each environment. 
-
-For example, a Ruby on Rails application has a directory in `config/environments` that contains settings for each environment.
-
-There is no difference between these environments when it comes to features and supported tools apart from what you define in your code.
+Depending on your configuration, your application will act differently in each environment.  There is no difference between these environments when it comes to features and supported tools apart from what you define in your code.

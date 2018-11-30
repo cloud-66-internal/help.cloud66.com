@@ -19,10 +19,14 @@ There are two ways to connect to your databases running in Maestro:
 
 ## Via SSH
 
-You can connect directly into your database server and invoke a database console from there. To do that, please refer to the [SSH guide](/maestro/how-to-guides/common-tools/ssh-to-server.html) documentation.
+You can connect directly into your database server and invoke a database console from there. To do that, please refer to our [SSH guide](/maestro/how-to-guides/common-tools/ssh-to-server.html) documentation.
 
 ## With a client
 
-To use a database client, you will need to add a firewall rule to allow traffic from your desktop to your Maestro application. You can [follow our guide](/maestro/tutorials/firewall-rule.html) on the subject.
+To use a database client, you will first need to add a firewall rule to allow traffic from your desktop to your Maestro application. You can [follow our guide](/maestro/tutorials/firewall-rule.html) on the subject.
 
-Once the firewall is open you can use a database client from your local computer to access the public IP address of the server hosting the database.
+Once the firewall is open you can use a database client from your local computer to access the public IP address of the server hosting the database. You can find that IP by: 
+
+* Visting your [Dashboard](https://app.cloud66.com)
+* Opening the **Application overview** page for the app in question
+* Clicking on the *Servers* tab at the top of the main panel

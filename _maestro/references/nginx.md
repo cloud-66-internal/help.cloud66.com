@@ -14,10 +14,22 @@ permalink: /:collection/:path
 
 Applications deployed with Maestro use [Nginx](http://nginx.com) as their web server, and its configuration is dependant on the resources of your server(s). Nginx is a high performance, open source web server used by some of the biggest web services in the world.
 
-## Nginx configuration
+## Default Cloud 66 Nginx error page
+
+When there is a problem with your upstream server (ie. a container), requests will be passed to the default Cloud 66 error page. From there, you can visit the problematic server page in Cloud 66 dashboard to troubleshoot. 
+
+You can customise this page by following [this guide](/maestro/how-to-guides/nginx/customizing-nginx.html).
+
+## Default Nginx configuration
 
 The following table outlines the default configuration of Nginx.
+
 <table id="fields" class="table table-bordered table-striped table-small fields"> 
+   <colgroup> 
+    <col width="15%"> 
+    <col width="25%"> 
+    <col width="60%"> 
+   </colgroup> 
    <thead valign="top"> 
     <tr> 
      <th> Category<br> </th> 
@@ -27,14 +39,14 @@ The following table outlines the default configuration of Nginx.
    </thead> 
    <tbody> 
     <tr class="header"> 
-     <td width="15%"> <strong>General</strong> <span>-</span> </td> 
-     <td width="20%"></td> 
-     <td width="70%"></td> 
+     <td> <strong>General</strong> <span>-</span> </td> 
+     <td></td> 
+     <td></td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> user </td> 
-     <td width="70%"> nginx </td> 
+     <td> user </td> 
+     <td> nginx </td> 
     </tr> 
     <tr> 
      <td></td> 
@@ -49,126 +61,128 @@ The following table outlines the default configuration of Nginx.
    </tbody> 
    <tbody> 
     <tr class="header"> 
-     <td width="15%"> <strong>Events</strong> <span>-</span> </td> 
+     <td> <strong>Events</strong> <span>-</span> </td> 
      <td></td> 
      <td></td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> worker_connections </td> 
+     <td> worker_connections </td> 
      <td> 1024 </td> 
     </tr> 
    </tbody> 
    <tbody> 
     <tr class="header"> 
-     <td width="15%"> <strong>HTTP</strong> <span>-</span> </td> 
+     <td> <strong>HTTP</strong> <span>-</span> </td> 
      <td></td> 
      <td></td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> gzip </td> 
+     <td> gzip </td> 
      <td> on </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> gzip_min_length </td> 
+     <td> gzip_min_length </td> 
      <td> 100 </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> gzip_proxied </td> 
+     <td> gzip_proxied </td> 
      <td> expired no-cache no-store private auth </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> gzip_types </td> 
+     <td> gzip_types </td> 
      <td> text/plain application/xml text/css application/x-javascript text/javascript </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> gzip_disable </td> 
+     <td> gzip_disable </td> 
      <td> "MSIE [1-6]\." </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> ssl_session_cache </td> 
+     <td> ssl_session_cache </td> 
      <td> shared:SSL:10m </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> ssl_session_timeout </td> 
+     <td> ssl_session_timeout </td> 
      <td> 10m </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> underscores_in_headers </td> 
+     <td> underscores_in_headers </td> 
      <td> on </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> default_type </td> 
+     <td> default_type </td> 
      <td> application/octet-stream </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> client_max_body_size </td> 
+     <td> client_max_body_size </td> 
      <td> 50m </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> sendfile </td> 
+     <td> sendfile </td> 
      <td> on </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> server_tokens </td> 
+     <td> server_tokens </td> 
      <td> off </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> keepalive_timeout </td> 
+     <td> keepalive_timeout </td> 
      <td> 65 </td> 
     </tr> 
    </tbody> 
    <tbody> 
     <tr class="header"> 
-     <td width="15%"> <strong>Server</strong> <span>-</span> </td> 
+     <td> <strong>Server</strong> <span>-</span> </td> 
      <td></td> 
      <td></td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> listen </td> 
+     <td> listen </td> 
      <td> 80 default_server </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> server_name </td> 
+     <td> server_name </td> 
      <td> _ or SSL server name </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> client_max_body_size </td> 
+     <td> client_max_body_size </td> 
      <td> 50m </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> root </td> 
+     <td> root </td> 
      <td> /var/deploy/[application name]/web_head/current/public </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> ssl_certificate_key </td> 
+     <td> ssl_certificate_key </td> 
      <td> /etc/ssl/localcerts/[ssl cerificate file name].key </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> ssl_certificate </td> 
+     <td> ssl_certificate </td> 
      <td> /etc/ssl/localcerts/[ssl cerificate file name].crt </td> 
     </tr> 
    </tbody> 
   </table> 
+
+
 
 ## Nginx worker configuration
 
@@ -878,371 +892,3 @@ The following table specifies the number of workers configured for your Nginx ba
      </tbody> 
     </table> 
 
-## Default Cloud 66 Nginx error page
-
-When there is a problem with your upstream server (ie. a container), requests will be passed to the default Cloud 66 error page. From there, you can visit the problematic server page in Cloud 66 dashboard to troubleshoot. 
-
-
-## Custom Nginx error page
-
-There are two ways for you to create a custom Nginx 50X error page:
-
-1. Using a static page on your own server
-    - Make your custom error page (for example `50x.html`) available in your container (for example in `/usr/app`), and simply mount this folder to the host (for example with `/var/containers:/usr/app`). The path used in the next step would then be `/var/containers/50x.html`
-    - Customize your Nginx configuration and replace the 50X.html location block with following:
-    
-        ``
-    location = /50x.html
-    {
-        root /var/containers/;
-    }
-    ``
-1. Using external static page
-    - Upload your file to a server which is accessible from your server
-    - Customize your Nginx configuration and replace the _50X.html_ location block with the following:
-    
-        ``
-    location = /50x.html
-    {
-        proxy_pass {url-of-your-custom-page};
-    }
-    ``
-
-## Customize your Nginx configuration
-
-Cloud 66 makes it easy for you to customize your Nginx configuration. From your application overview page, access your web server group page (eg. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](/{{page.collection}}/tutorials/custom-config.html) to customize the configuration.
-
-Editing and committing your Nginx CustomConfig will perform the following steps on **every web server in your application**, one by one, sequentially:
-
-*   Check your template for Liquid syntax errors
-*   Count the number of cores on the server
-*   Compile the Nginx configuration based on the information from the server
-*   Upload the configuration to the server
-*   Reload Nginx
-
-Reloading Nginx does not interrupt the serving of traffic. This process will be stopped if an error is encountered. For example, if you have 3 web servers in your application, if the first server fails to be updated, the process will be halted for the other 2 servers to avoid complete service disruption.
-
-
-### Warning
-
-A bad configuration may stop your Nginx from functioning, so take extra care when making changes.
-
-
-
-### Nginx CustomConfig variables
-
-The following variables are available for use in your **Maestro application** Nginx CustomConfig.
-
-<table class="table table-bordered table-striped"> 
-   <colgroup> 
-    <col width="20%"> 
-    <col width="20%"> 
-    <col width="60%"> 
-   </colgroup> 
-   <thead> 
-    <tr> 
-     <th>Variable Name</th> 
-     <th>Type</th> 
-     <th>Description</th> 
-    </tr> 
-   </thead> 
-   <tbody> 
-    <tr> 
-     <td>user_name</td> 
-     <td>string</td> 
-     <td>User name running the application process</td> 
-    </tr> 
-    <tr> 
-     <td>environment</td> 
-     <td>string</td> 
-     <td>Application environment name (lowercase)</td> 
-    </tr> 
-    <tr> 
-     <td>server_address</td> 
-     <td>string</td> 
-     <td>Server address (IP or fqdn)</td> 
-    </tr> 
-    <tr> 
-     <td>workers</td> 
-     <td>integer</td> 
-     <td>Number of CPU cores on the server</td> 
-    </tr> 
-    <tr> 
-     <td>app_name</td> 
-     <td>string</td> 
-     <td>Application name (lowercase)</td> 
-    </tr> 
-    <tr> 
-     <td>envars</td> 
-     <td>hash</td> 
-     <td>Hash of all environment variables on the application</td> 
-    </tr> 
-    <tr> 
-     <td>allow_ssl</td> 
-     <td>boolean</td> 
-     <td>Is an SSL Certificate configured on the application?</td> 
-    </tr> 
-    <tr> 
-     <td>perfect_forward_secrecy</td> 
-     <td>boolean</td> 
-     <td>Is perfect forward secrecy enabled on the application?</td> 
-    </tr> 
-    <tr> 
-     <td>cors_enabled</td> 
-     <td>boolean</td> 
-     <td>Is CORS enabled on the application?</td> 
-    </tr> 
-    <tr> 
-     <td>cors_origin</td> 
-     <td>string</td> 
-     <td>CORS Origins string</td> 
-    </tr> 
-    <tr> 
-     <td>cors_origins</td> 
-     <td>array</td> 
-     <td>List of CORS origins</td> 
-    </tr> 
-    <tr> 
-     <td>cors_all_origins</td> 
-     <td>boolean</td> 
-     <td>CORS allow all origins</td> 
-    </tr> 
-    <tr> 
-     <td>cors_methods</td> 
-     <td>string</td> 
-     <td>CORS Methods</td> 
-    </tr> 
-    <tr> 
-     <td>cors_headers</td> 
-     <td>string</td> 
-     <td>CORS allowed custom headers</td> 
-    </tr> 
-    <tr> 
-     <td>cors_credentials</td> 
-     <td>boolean</td> 
-     <td>CORS allow credentials</td> 
-    </tr> 
-    <tr> 
-     <td>has_ha_proxy_load_balancer</td> 
-     <td>boolean</td> 
-     <td>Are you using a HAProxy load balancer?</td> 
-    </tr> 
-    <tr> 
-     <td>load_balancer_address</td> 
-     <td>string</td> 
-     <td>Address of your load balancer</td> 
-    </tr> 
-    <tr> 
-     <td>red_http_to_https</td> 
-     <td>boolean</td> 
-     <td>Are you redirecting HTTP to HTTPS?</td> 
-    </tr> 
-    <tr> 
-     <td>red_www</td> 
-     <td>boolean</td> 
-     <td>Are you redirecting traffic to www?</td> 
-    </tr> 
-    <tr> 
-     <td>blacklist</td> 
-     <td>hash</td> 
-     <td>List of IPs you are blacklisting</td> 
-    </tr> 
-    <tr> 
-     <td>supports_realip_module</td> 
-     <td>boolean</td> 
-     <td>Does your Nginx instance use the Real IP module?</td> 
-    </tr> 
-    <tr> 
-     <td>stack_supports_nginx_tcp_and_udp_reverse_proxy</td> 
-     <td>boolean</td> 
-     <td>Does your application support TCP and UDP reverse proxy?</td> 
-    </tr> 
-    <tr> 
-     <td>supports_tcp_proxy</td> 
-     <td>boolean</td> 
-     <td>Does your NGINX version support TCP reverse proxy and load balancing?</td> 
-    </tr> 
-    <tr> 
-     <td>supports_udp_proxy</td> 
-     <td>boolean</td> 
-     <td>Does your NGINX version support UDP reverse proxy and load balancing?</td> 
-    </tr> 
-    <tr> 
-     <td>has_load_balancer</td> 
-     <td>boolean</td> 
-     <td>Are you using a load balancer?</td> 
-    </tr> 
-    <tr> 
-     <td>service_containers</td> 
-     <td>array</td> 
-     <td>Contains all services (with <i>service_name</i> and <i>upstreams</i> information)</td> 
-    </tr> 
-    <tr> 
-     <td>service_name</td> 
-     <td>string</td> 
-     <td>Part of the <i>service_containers</i> hiearchy, containing the name of a specific service</td> 
-    </tr> 
-    <tr> 
-     <td>upstreams</td> 
-     <td>array</td> 
-     <td>Part of the <i>service_containers</i> hiearchy, containing an upstream name, private IPs, traffic matches and port</td> 
-    </tr> 
-   </tbody> 
-  </table> 
-
-  
-
-
-
-### Boolean variables
-
-To ensure correct boolean condition checks within your template, always explicitly compare the variable with `true` or `false` (even if you are checking for true).
-
-Good syntax:
-
-*   if passenger != true
-*   if passenger != false
-*   if passenger == true
-*   if passenger == false    
-
-Bad syntax:
-
-*   Bad: if passenger
-*   Bad: if !passenger
-
-<table class="table table-bordered table-striped"> 
-   <colgroup> 
-    <col width="20%"> 
-    <col width="20%"> 
-    <col width="60%"> 
-   </colgroup> 
-   <thead> 
-    <tr> 
-     <th>Variable Name</th> 
-     <th>Type</th> 
-     <th>Description</th> 
-    </tr> 
-   </thead> 
-   <tbody> 
-    <tr> 
-     <td>user_name</td> 
-     <td>string</td> 
-     <td>User name running the application process</td> 
-    </tr> 
-    <tr> 
-     <td>environment</td> 
-     <td>string</td> 
-     <td>Application environment name (lowercase)</td> 
-    </tr> 
-    <tr> 
-     <td>server_address</td> 
-     <td>string</td> 
-     <td>Server address (IP or fqdn)</td> 
-    </tr> 
-    <tr> 
-     <td>workers</td> 
-     <td>integer</td> 
-     <td>Number of CPU cores on the server</td> 
-    </tr> 
-    <tr> 
-     <td>app_name</td> 
-     <td>string</td> 
-     <td>Application name (lowercase)</td> 
-    </tr> 
-    <tr> 
-     <td>deploy_to</td> 
-     <td>string</td> 
-     <td>Application path on the server</td> 
-    </tr> 
-    <tr> 
-     <td>envars</td> 
-     <td>hash</td> 
-     <td>Hash of all environment variables on the application</td> 
-    </tr> 
-    <tr> 
-     <td>envars</td> 
-     <td>hash</td> 
-     <td>Hash of all environment variables on the application</td> 
-    </tr> 
-     <tr> 
-     <td>allow_ssl</td> 
-     <td>boolean</td> 
-     <td>Is an SSL Certificate configured on the application?</td> 
-    </tr> 
-    <tr> 
-     <td>perfect_forward_secrecy</td> 
-     <td>boolean</td> 
-     <td>Is perfect forward secrecy enabled on the application?</td> 
-    </tr> 
-    <tr> 
-     <td>cors_enabled</td> 
-     <td>boolean</td> 
-     <td>Is CORS enabled on the application?</td> 
-    </tr> 
-    <tr> 
-     <td>cors_origin</td> 
-     <td>string</td> 
-     <td>CORS Origins string</td> 
-    </tr> 
-    <tr> 
-     <td>cors_origins</td> 
-     <td>array</td> 
-     <td>List of CORS origins</td> 
-    </tr> 
-    <tr> 
-     <td>cors_all_origins</td> 
-     <td>boolean</td> 
-     <td>CORS allow all origins</td> 
-    </tr> 
-    <tr> 
-     <td>cors_methods</td> 
-     <td>string</td> 
-     <td>CORS Methods</td> 
-    </tr> 
-    <tr> 
-     <td>cors_headers</td> 
-     <td>string</td> 
-     <td>CORS allowed custom headers</td> 
-    </tr> 
-    <tr> 
-     <td>cors_credentials</td> 
-     <td>boolean</td> 
-     <td>CORS allow credentials</td> 
-    </tr> 
-    <tr> 
-     <td>has_ha_proxy_load_balancer</td> 
-     <td>boolean</td> 
-     <td>Are you using a HAProxy load balancer?</td> 
-    </tr> 
-    <tr> 
-     <td>load_balancer_address</td> 
-     <td>string</td> 
-     <td>Address of your load balancer</td> 
-    </tr> 
-    <tr> 
-     <td>red_http_to_https</td> 
-     <td>boolean</td> 
-     <td>Are you redirecting HTTP to HTTPS?</td> 
-    </tr> 
-    <tr> 
-     <td>red_www</td> 
-     <td>boolean</td> 
-     <td>Are you redirecting traffic to www?</td> 
-    </tr> 
-    <tr> 
-     <td>blacklist</td> 
-     <td>hash</td> 
-     <td>List of IPs you are blacklisting</td> 
-    </tr> 
-    <tr> 
-     <td>supports_realip_module</td> 
-     <td>boolean</td> 
-     <td>Does your Nginx instance use the Real IP module?</td> 
-    </tr> 
-    <tr> 
-     <td>has_load_balancer</td> 
-     <td>boolean</td> 
-     <td>Are you using a load balancer?</td> 
-    </tr>  
-   </tbody>
-  </table>

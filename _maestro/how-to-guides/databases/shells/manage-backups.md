@@ -85,8 +85,6 @@ $ psql -U <db_username> --no-password <db_name> < <path_to_your_backup_file(.sql
 ```
 
 
-
-
 ### MongoDB
 
 From the MongoShell, use the following command to restore your database from a dumped backup folder:

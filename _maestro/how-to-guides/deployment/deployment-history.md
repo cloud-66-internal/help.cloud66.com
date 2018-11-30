@@ -1,28 +1,49 @@
 ---
 layout: post
 template: one-col
-title: Using Deployment History
+title: Using Deployment Timeline
 categories: how-to-guides/deployment
 order: 20
-lead: "How to use the deployment history to track and roll back deployments"
+lead: "How to use the deployment timeline to track and roll back deployments"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
 ---
 
-Whether working in a team or by yourself, it's always useful to have an overview of your deployment history. This history includes
-information about who deployed, when they deployed, what code revision was deployed and how the deployment was triggered (web, [API](http://developers.cloud66.com) or [redeployment hook](/maestro/how-to-guides/deployment/redeployment-hook.html). In addition to this, you can also revert back to previous commits if need be.
+## Overview
 
-Reverting to a previous commit will only affect your code - you might still need to restore a [database backup](/maestro/how-to-guides/add-ins/database-backup.html). If you wish, you can [switch off your database migrations](/maestro/how-to-guides/databases/database-customization.html), roll back your database and then roll back your code.
+The **Build & Deployment Timeline** is a useful tool for tracking the version history of any application.
 
-## Deployment Status
-A "Live" status indicates that the code in that commit is live on your servers.
+This timeline includes information about: 
 
-A <font color="green">green</font> deployment indicates that it has been successful, whereas a <font color="red">red</font> one indicates failure.
+* Who deployed
+* When they deployed
+* What code revision was deployed 
+* How the deployment was triggered (web, [API](http://developers.cloud66.com) or [redeployment hook](/maestro/how-to-guides/deployment/redeployment-hook.html). 
 
-A reverted deployment is one that is no longer on your servers (the application was rolled back to an earlier deployment).
+## Accessing the timeline
 
+The timeline is available for any Maestro application that has been deployed at least once.
 
-## Usage
-Accessing your application page, click _Deployment history_ in the right sidebar. On this page, you can see your previous commits, and revert back to previous commits. Any code revisions that have not been deployed will have a hollow circle.
+1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+2. Click on *Build & Deploy*  in the **Application** panel on the right of the screen.
+3. Scroll through the history (it's in descending date order)
+
+The **left-hand side** of the timeline lists every time you took a *Snapshot* of your code (i.e. built it from source), the **right-hand side** list each time you *Published* your application (i.e. deployed the code to servers)
+
+You can also use this interface to see any activity (such as builds) currently in progress for the application, as well as build and deployment *Profiles* for the app.
+
+## Rolling back using the timeline
+
+You can use the timeline to revert back to a previous version of your application. To do this:
+
+1. Find the point in the timeline to which you'd like to revert. 
+2. Click on either *Rebuild* or *Republish* depending on what you need to achieve. You will need to click again to confirm the action.
+3. Wait for the action to complete
+
+Reverting to a previous *Snapshot* will only affect your code. You might still need to restore a [database backup](/maestro/how-to-guides/add-ins/database-backup.html). If you wish, you can [switch off your database migrations](/maestro/how-to-guides/databases/database-customization.html), roll back your database and then roll back your code.
+
+## Deployment status
+
+On the timeline, a <font color="green">green</font> deployment box indicates that it has been successful, whereas a <font color="red">red</font> one indicates failure.
 

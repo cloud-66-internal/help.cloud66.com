@@ -26,18 +26,17 @@ permalink: /:collection/:path
 To point at the address provided in the failover group and wait for 24 hours to propagate. While you are waiting for the DNS to get propagated you can follow the steps until step 8.
 
 #### Note:
-
-If TTL of your DNS is 300 seconds you don't need to wait just continue till the end.
+<div class="notice"><p>If TTL of your DNS is 300 seconds you don't need to wait - just complete the process.</p></div>
 
 
 ### 3. Database backup
 
-On application `A` set backup for your databases (through add-ins)
+On application `A`, set backup for your databases (using the [Database Backup Add-in](/maestro/how-to-guides/add-ins/database-backup.html)).
 
 
 ### 4. Clone primary application
 
-Visit the overview page of application `A` and click *Clone* in the right sidebar. This will allow you to choose a new application name and environment. Cloning your application will preserve any environment variables from the existing application, and also allows you to define where to deploy along with other settings.
+Visit the overview page for application `A` and click *Clone* in the right sidebar. This will allow you to choose a new application name and environment. Cloning your application will preserve any environment variables from the existing application, and also allows you to define where to deploy along with other settings.
 
 
 ### 5. Add your database to the backup application
@@ -54,8 +53,7 @@ On application `B` go to the database server (Redis, MySQL or etc.) and choose t
 To add application `B` as a backup to the failover group, edit the related failover group and add application `B` as a backup.
 
 ### Note:
-
-Make sure DNS record for the failover group is populated
+<div class="notice"><p>Make sure DNS record for the failover group is populated.</p></div>
 
 ### 8. Put the primary application into maintenance mode
 

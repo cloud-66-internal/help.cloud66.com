@@ -29,11 +29,6 @@ You can now watch the logs, as usual to see the progress of the process.
 
 The time required to set up your load balancer will depend on which cloud provider you use. Once your load balancer is set up, it will be ready to distribute the load between your web servers. **All your existing web servers** will automatically be added to the load balancer.
 
-## Balancing load per service TBC
-
-A load balancer to balance your services and they don’t have to be present on each server! Essentially Nginx will direct the requests to the service on its own machine first, if the service doesn’t exist there, then it will send it through Weave network to a server that has the service.
-
-
 ## Load balancer configuration
 
 Depending on which cloud provider you use, your load balancer will be set up differently:

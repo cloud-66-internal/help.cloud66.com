@@ -10,19 +10,17 @@ tags: ["customization"]
 permalink: /:collection/:path
 ---
 
-
-
 ## Overview
 
 Cloud 66 provides [DNS hostnames](/maestro/references/server-ip-addresses.html) for each server you deploy with us. This allows us to assign a new IP address to your application on your behalf if need be, while still maintaining the same hostname.
 
 You will need to manage the DNS records of your domain name to ensure that it's pointing to Cloud 66. For maximum reliability, you should point it at a [failover group address](/maestro/tutorials/failover-groups.html), which allows you to switch traffic between applications quickly and easily.
 
-Where possible, you should avoid using a DNS A-record (which points directly at an IP address). Instead, you should use CNAME records to point your domain at a hostname (either your server hostname or a failover group address). However, this may not be possible with your DNS provider - while CNAME records do not require hard-coded IP addresses, they are not available to root domains (eg. example.com). In other words, you would not be able to set a CNAME record pointing example.com to a Cloud 66 hostname.
+Where possible, you should avoid using a DNS A-record (which points directly at an IP address). Instead, you should use CNAME records to point your domain at a hostname (either your server hostname or a failover group address). 
 
-To use wildcard subdomains with Cloud 66 hostnames, simply create a CNAME record pointing *.
-.com to your Cloud 66 hostname. 
+However, this may not be possible with your DNS provider. While CNAME records do not require hard-coded IP addresses, they are not available to root domains (eg. example.com). In other words, you would not be able to set a CNAME record pointing example.com to a Cloud 66 hostname.
 
+To use wildcard subdomains with Cloud 66 hostnames, simply create a CNAME record pointing `*. .com` to your Cloud 66 hostname. 
 
 ## Configuring your DNS
 
@@ -53,14 +51,10 @@ This involves using an A record to point your root domain at your load balancer 
 
 ### 3. Subdomain redirection
 
-
-
-### Important
-
-This method will not work if you are serving content with SSL and only works for HTTP traffic (eg. not TCP/UDP).
-
 This method creates a 301 permanent redirect to a specified subdomain for all root domain traffic.
 
 1. Create a DNS forward of example.com to www.example.com.
-2. Create a CNAME record with value www to the Cloud 66 hostname.
+2. Create a CNAME record with value `www` pointed at the Cloud 66 hostname.
 
+### Important
+<div class="notice notice-warning"><p>This method will not work if you are serving content with SSL and only works for HTTP traffic (i.e. not TCP/UDP or other protocols).</a></div>
