@@ -1,43 +1,22 @@
 ---
 layout: post
 template: one-col
-title:  "Maestro References"
-lead: "In Depth Documentation on Cloud 66 Maestro"
+title:  "Detailed references for Maestro features"
+lead: "Reference guides for Maestro features"
 legacy: false
 permalink: /:collection/references/index.html
 ---
 
 <div class="Toc Toc--howto">
-    <h2>References</h2>
     <ul>
+        {% assign section = site.maestro | where:"categories","references/toolbelt" | sort: "order" %}
+    {% include list_articles.html section=section %}
+
     {% assign section = site.maestro | where:"categories","references" | sort: "order" %}
     {% include list_articles.html section=section %}
-    </ul>
-
-    <!-- common -->
-    <h2>Cloud 66 Toolbelt</h2>
-    <ul>
-    {% assign section = site.maestro | where:"categories","references/toolbelt" | sort: "order" %}
-    {% include list_articles.html section=section %}
-    </ul>
     
-    <h2>Account Management</h2>
-    <ul>
-    {% assign section = site.maestro | where:"categories","references/accounts" | sort: "order" %}
-    {% include list_articles.html section=section %}
-    </ul>
+   </ul>
 
-    <h2>Integrations</h2>
-    <ul>
-    {% assign section = site.maestro | where:"categories","references/integrations" | sort: "order" %}
-    {% include list_articles.html section=section %}
-    </ul>
-
-    <h2>Clouds</h2>
-    <ul>
-    {% assign section = site.maestro | where:"categories","references/clouds" | sort: "order" %}
-    {% include list_articles.html section=section %}
-    </ul>
 </div><!--/.Toc-->
 
 

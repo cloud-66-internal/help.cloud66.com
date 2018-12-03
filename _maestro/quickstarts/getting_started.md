@@ -2,205 +2,114 @@
 layout: post
 title: Getting started with Maestro
 categories: quickstarts
+order: 1
 legacy: false
 tags: ["getting started"]
-lead: Deploy and manage your containers on any cloud
+lead: How to deploy your application using Maestro
 permalink: /:collection/:path
 ---
 
-<p class="lead">
-    Maestro is a full container management service. Once your images are ready we'll take care of deploying and managing your containers and infrastructure (servers, load balancers, etc).
-</p>
+Maestro is a full container management service. Once your Docker images are ready we'll take care of deploying and managing your containers and infrastructure (servers, load balancers, etc).
 
-<h2 id="What-youll-need">
-    <a href="#What-youll-need" class="headerlink" title="What you’ll need"></a>
-    What you’ll need
-</h2>
+## What you'll need
 
-<p>Before you start, please check you have the following:</p>
+Before you start, please check you have the following:
 
-<ul>
-    <li>
-        <p><strong>A Cloud 66 Account</strong> &mdash; If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. There is a free community plan and you'll get full unlimited access to all products free for 14 days.</p>
-    </li>
-    <li>
-        <p><strong>Container Images to deploy</strong> &mdash; These can be images you've built with Skycap or your own pre-built images that are hosted in an image repository.</p>
-    </li>
-    <li>
-        <p><strong>A Cloud Account or Your Own Servers</strong> &mdash; See below.</p>
-    </li>
-</ul>
+* **A Cloud 66 Account** &mdash; If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. There is a free community plan and you'll get full unlimited access to all products free for 14 days.
+* **Container Images to deploy** &mdash; These can be images you've built with [Skycap](https://www.cloud66.com/containers/skycap) or your own pre-built images that are hosted in an image repository.
+* **A Cloud Account or Your Own Servers** &mdash; See below.
 
 {% include general/cloud_provider_or_own_server_tabs.html %}
 
-<h2 id="get-started">
-    <a href="#get-started" class="headerlink" title="Get Started"></a>
-    Lets Get Started
-</h2>
-
-<p>This guide assumes that you already have container images that you want to deploy. If you need to learn how to build images or pull existing images from a repo please read <a href="/skycap/quickstarts/getting_started.html">Getting started with Skycap</a>.</p>
+<div class="notice"><p>If you don't have images or code ready, you can use this <a href="https://github.com/cloud66/maestro-demo.git">simple visit counter application</a> we've supplied on Github. (You can also use this project with our next tutorial on Clusters.)
+</p></div>
 
 
+## Build your containers
 
-<h2 id="deployment-setup">
-    <a href="#deployment-setup" class="headerlink" title="Get Started"></a>
-    Deployment Setup
-</h2>
-<p>To get started with your deployment&mdash;drill down to your app's overview page and click <em>Setup a Deployment</em>.</p>
-<p>
-    <img class="ContentImage" src="/assets/maestro/maestro_setup_deployment.png" alt="Start a new Maestro Deployment">
-</p>
+This guide assumes that you already have container images that you want to deploy. If you need to learn how to build images or pull existing images from a repo please read <a href="/skycap/quickstarts/getting_started.html">Getting started with Skycap</a>. 
 
+However we suggest you use a **different sample application** for Maestro than you did for Skycap (see the blue box above for details).
 
-<p>The first step involves <em>choosing an environment</em> for your application.</p>
+## Set up your deployment
 
-<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
-    <div class="Grid-cell">
-        <img class="ContentImage" src="/assets/maestro/maestro_deployment_setup.png" alt="Select an environment for your new Maestro Deployment">
-    </div>
-    <div class="Grid-cell">
-        <p>Please choose from the standard list of environments:</p>
-        <ul>
-          <li>Development</li>
-          <li>QA</li>
-          <li>Staging</li>
-          <li>Production</li>
-         </ul>
-    </div>
-</div>
+To get started with your deployment: 
 
-<h2 id="configuring-services">
-    <a href="#deployment-setup" class="headerlink" title="Configuring Services"></a>
-    Configuring Services
-</h2>
+1. Open to your applications overview page and click *Set up a Deployment*. 
+2. Click on *Deploy with Maestro* in the Deployment Setup panel that appears:
+3. Choose any of the standard [application environments](/maestro/how-to-guides/deployment/application-environments.html)
 
-<p>In the example below the application is composed of a single Rails service. This is a web app so we need to configure the Rails service to handle web traffic.</p>
-<p>
-    <img class="ContentImage" src="/assets/maestro/maestro_configure_service_networking.png" alt="Click the connector to configure networking">
-</p>
-<p>At the moment <strong>0 services</strong> are connected to the Internet. We need to change that so <em>click on the plug icon circled in red</em>.</p>
+<img alt="Setting up a deployment in Maestro" src="/assets/maestro/maestro-getting-started-1.gif">
 
-<h2 id="container-network-configuration">
-    <a href="#container-network-configuration" class="headerlink" title="Configuring Services"></a>
-    Container Network Configuration
-</h2>
+## Configure your services
 
-<p>The Rails service will run inside a container, we need to configure the container to respond to web traffic. A standard web server listens on port 80 for HTTP traffic and 443 for HTTPS traffic.</p>
+Our sample application is composed of a single Python service that we've named *demo-app*. This is a web app so we need to configure the service to handle web traffic.
 
-<p>The Rails app listens to port 3000 so we should map the container port 3000 to the public Internet ports 80 and 443.</p>
+At the moment we can see that **0 services** are connected to the Internet. To change this we click on the plug icon to open the network setting panel.
 
-<p>To accomplish this we enter the following information:</p>
-<ul>
-    <li><strong>Container Port</strong>:  3000</li>
-    <li><strong>Public Internet Port</strong>: http:80, https:443</li>
-</ul>
+### Container network configuration
 
-<div style="overflow: hidden; border: 1px solid #ddd; border-radius: 4px; width: 556px; height: 374px; padding-top: 0.5em; margin-top:2em; margin-bottom: 2em">
-    <img alt="Configuring docker container and public ports" src="/assets/maestro/maestro_configure_container_ports_animated.gif">
-</div>
+The *demo-app* service will run inside a container, so we need to configure that container to respond to web traffic. A standard web server listens on port 80 for HTTP traffic, so we're going to use that as our *Public Internet Port*
 
-<p>Containers can also serve non HTTP traffic. TCP and UDP protocols are also supported. <a href="/{{page.collection}}/tutorials/container-ports.html">Learn more about advanced Container Port Mapping</a></p>
+The *demo-app* service listens to port 5000 so we need set the *Container Port* to **5000** to the *Public Internet Port* to **80**:
 
-<h2 id="adding-data-sources">
-    <a href="#adding-data-sources" class="headerlink" title="Adding Data Sources"></a>
-    Adding Data Sources
-</h2>
+<img alt="Configuring container networking in Maestro" src="/assets/maestro/maestro-getting-started-2.gif">
 
-<p>The Rails application also needs a database. This is a production app so we'll deploy the database to a separate MySQL server.
+### Adding a data source
 
-<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl" style="margin-bottom: 2em;">
-    <div class="Grid-cell">
-        <img class="ContentImage" src="/assets/maestro/maestro_add_data_source.png" alt="Add a new database server to your stack">
-    </div>
-    <div class="Grid-cell">
-        <h4>Add another server</h4>
-        <p class="u-textSmall">Click the <em>Add Another Server</em> button and a new data source server will appear above.</p>
-        <p class="u-textSmall">Next click the <em>Add Data Source</em> link.</p>
-    </div>
-</div>
+The application also needs a redis data store, so we should add one now:
 
-<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
-    <div class="Grid-cell">
-        <div style="border: 1px solid #ddd; border-radius: 4px; overflow: hidden;">
-            <img src="/assets/maestro/maestro_select_data_sources.png" alt="Adding data sources to your stack">
-        </div>
-    </div>
-    <div class="Grid-cell">
-        <h4>Adding Data Sources</h4>
-        <p class="u-textSmall">Select the data source you need to install on this server. In this case <em>select MySQL</em>.</p>
-        <p class="u-textSmall">PostgreSQL, MongoDB, Redis, Elasticsearch, RabbitMQ, GlusterFQ, InfluxDB are all supported as data sources.</p>
-    </div>
-</div>
+1. Click on *Add Data Source*
+2. Select *Redis* from the list of available source 
+3. Click *Done*
 
+<img alt="Adding a data source to an app in Maestro" src="/assets/maestro/maestro-getting-started-3.gif">
 
-<p>Now the Rails app is configured to run in a container and we've setup a separate MySQL database server. All that remains is to decide what cloud provider to use and what server size and region we should deploy to.</p>
+Our application is now configured and ready to deploy.
 
-<h2 id="cloud">
-    <a href="#cloud" class="headerlink" title="Choosing a Cloud"></a>
-    Choosing a Cloud
-</h2>
+## Choose a cloud provider
 
+Now we need to choose a cloud provider as a target for the deployment. You can do this using the dropdowns in the right-hand column.
 
-<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
-    <div class="Grid-cell">
-        <img src="/assets/maestro/maestro_cloud_region.png" alt="Choose a cloud and region">
-    </div>
-    <div class="Grid-cell">
-        <p class="u-textSmall">
-            Now we need to choose a cloud provider for the deployment. We'll use <em>DigitalOcean</em> and deploy the application to the <em>London, UK</em> region.
-        </p>
-        <p class="u-textSmall">
-            You can also deploy to your own servers. First you need to <a href="/maestro/tutorials/registered-servers.html">add them as registered servers</a>.
-        </p>
-    </div>
-</div>
+For this demo we'll use *DigitalOcean* and deploy the application to the *London, UK* region.
+        
+<img src="/assets/maestro/maestro_cloud_region.png" alt="Choose a cloud and region">
 
-<h2 id="configuring-servers">
-    <a href="#configuring-servers" class="headerlink" title="Configuring Servers"></a>
-    Configuring Server Size
-</h2>
+You can also deploy to your own servers. First you need to <a href="/maestro/how-to-guides/deployment/registered-servers.html">add them as registered servers</a>.
 
-<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
-    <div class="Grid-cell">
-        <p>The server size can be set by clicking on the cog at the top right of each server.</p>
-    </div>
-    <div class="Grid-cell">
-        <img style="margin-top: 1.6em" width="250" src="/assets/maestro/maestro_configure_servers.png" alt="Configure Server Size">
-    </div>
-</div>
+## Configure server size
 
-<div style="overflow: hidden; border: 1px solid #ddd; border-radius: 4px; margin: 2em 0; max-width: 500px">
-    <img src="/assets/maestro/maestro_server_size_modal.png" alt="Configure Server Size">
-</div>
+The server size can be set by clicking on the cog at the top right the server.
 
-<p>In production environments we suggest using a server with at least 1GB of memory and 4 cores. <a href="/{{page.collection}}/references/non-recommended-server-sizes.html">Learn more about choosing the right size for your servers</a>.</p>
+<img alt="Selecting a server size in Maestro" src="/assets/maestro/maestro-getting-started-4.gif">
 
-<h2 id="deployment">
-    <a href="#deployment" class="headerlink" title="Deployment"></a>
-    Deployment
-</h2>
+Learn more about [choosing the right size](/{{page.collection}}/references/non-recommended-server-sizes.html) for your servers.
 
-<p>Now everything is ready to go, just hit the <em>Deploy Stack</em> button.</p>
+## Deploy your app
 
-<p>If this is your first deployment you'll be prompted to enter your cloud key credentials, once you've added these the deployment will begin.</p>
+Now everything is ready to go, just hit the *Deploy* button.
 
-<p>During the build and deployment process you can view the log to see what's happening behind the scenes.</p>
+If this is your first deployment you'll be prompted to enter your access credentials for your cloud hosting provider. Once you've added these the deployment will begin.
 
-<p>
-    <img src="/assets/maestro/maestro_deployment.gif" alt="Deploying your application">
-</p>
+During the build and deployment process you can view the log to see what's happening behind the scenes.
 
-<h2 id="advanced">
-    Advanced Features
-</h2>
+<img src="/assets/maestro/maestro_deployment.gif" alt="Deploying your application">
 
-<p>Information that defines how your application is deployed is accessible from <em>manifest.yml</em>. You can edit this file directly if you need to access advanced deployment features. For example advanced configuration of Cross-Origin Resource Sharing or Amazon Virtual Private Cloud and more.</p>
+#### Note
+<div class="notice notice-warning"><p>The initial deployment process may take 15 minutes or more, because Maestro needs to provision the new server from the ground up. You can close the window and Maestro will send you an email when the deployment is complete.</p></div>
 
-<ul>
-    <li>
-        <p><strong><a href="/maestro/how-to-guides/deployment/building-a-manifest-file.html">Manifest.yml documentation</a></strong> &mdash; including advanced configuration examples.</p>
-    </li>
-    <li>
-        <p><strong><a href="/maestro/tutorials/container-ports.html">Container Port Mapping</a></strong> &mdash; learn more about advanced port mapping, including Non-HTTP ports (TCP and UDP)</p>
-    </li>
-</ul>
+## Test your app
+
+Once deployment is complete, you can test your application by visiting your app's detail page and clicking on the *Visit Site* link in the panel at the top of the Services tab. 
+
+If youre deployment has worked as planned, you will see the following text:
+
+"Hello World! I have been seen X times" 
+
+...(where X is a positive integer). If you refresh the page, that number should increase by one. This dynamic data is coming from the redis data store that we added to the app.
+
+## What's next?
+
+* Containers can also serve non-HTTP traffic. TCP and UDP protocols are also supported. Learn more about Container Port Mapping in our [detailed tutorial](/maestro/tutorials/container-ports.html)
+
+* Your deployment configuration is stored in a *manifest.yml* file. Learn how to [edit your manifest file](/maestro/how-to-guides/deployment/building-a-manifest-file.html) to access advanced deployment features.

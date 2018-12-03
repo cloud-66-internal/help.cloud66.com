@@ -33,7 +33,7 @@ We don't have fine-grain control over the version, and use the latest version av
 
 Cloud 66 maintains an internal list of versions for most components built from source, which is updated periodically after testing.
 
-You are free to specify a version for a number of components in your [manifest file](/maestro/tutorials/getting-started-with-manifest.html).
+You are free to specify a version for a number of components in your [manifest file](/maestro/quickstarts/getting-started-with-manifest.html).
 
 
 ### Warning

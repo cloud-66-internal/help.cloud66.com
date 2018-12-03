@@ -1,14 +1,12 @@
 ---
 layout: post
 template: one-col
-title:  "What is the Load balancer add-in"
+title:  "Using the Load balancer Add-in"
 categories: how-to-guides/add-ins
-lead: Adding a load balancer couldn't be easier
+lead: How to add a load balancer to your application in Maestro
 tags: ['Add in', 'Scaling']
 legacy: false
 permalink: /:collection/:path
 ---
-
-
 
 {% include how-to-guides/add-ins/load-balancer.md %}

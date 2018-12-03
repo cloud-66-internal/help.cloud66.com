@@ -18,11 +18,11 @@ Using the web based UI is very easy. Everything you need to use the web based UI
 
 To use Nginx as an example, go to your Web Servers group detail page and click CONFIGURE NGINX in the right sidebar. This page will show you the template used to build the Nginx configuration when Nginx is deployed during your stack built or reconfigured. Once you’re done with editing your template, you can preview the results by clicking on the Preview button.
 
-See our documentation for more details about CustomConfig for [Nginx]({% if page.collection == "skycap" %}/maestro/references/nginx.html{%else%}/{{page.collection}}/references/nginx.html{%endif%}), HAProxy and [databases]({% if page.collection == "skycap" %}/maestro/how-to-guides/databases/shells/manage-backups.html{%else%}/{{page.collection}}/how-to-guides/databases/shells/manage-backups.html{%endif%}).
+See our documentation for more details about CustomConfig for [Nginx]({% if page.collection == "maestro" %}/maestro/references/nginx.html{%else%}/{{page.collection}}/references/nginx.html{%endif%}), HAProxy and [databases]({% if page.collection == "maestro" %}/maestro/how-to-guides/databases/shells/manage-backups.html{%else%}/{{page.collection}}/how-to-guides/databases/shells/manage-backups.html{%endif%}).
 
 ### Important
 
-Preview is generated with dummy data about your server (like the number of cores or the path for different binaries). Refer to our documentation to learn about how the size of your instance affects the number of [Nginx workers on your server]({% if page.collection == "skycap" %}/maestro/references/nginx.html{%else%}/{{page.collection}}/references/nginx.html{%endif%}).
+Preview is generated with dummy data about your server (like the number of cores or the path for different binaries). Refer to our documentation to learn about how the size of your instance affects the number of [Nginx workers on your server]({% if page.collection == "maestro" %}/maestro/references/nginx.html{%else%}/{{page.collection}}/references/nginx.html{%endif%}).
 
 <h3> Submit template changes </h3>
 

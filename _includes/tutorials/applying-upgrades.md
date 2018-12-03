@@ -3,7 +3,7 @@
 
 Cloud 66 aims to make it easier to build immutable infrastructure. Building servers and stacks from scratch is much better than modifying existing server configurations and tinkering with settings until things start to work.
 
-Of course everyone knows that, the reasons they don't do it is that it's difficult, time consuming and can be unpredicatble. That's why we want to make building stacks from scratch as easy and as quick as possible. So in all cases of upgrade, our first recommendation is to build a new stack and redirect your traffic to the new stack using our [Elastic Address]({% if page.collection == 'skycap' %}/maestro/tutorials/failover-groups.html{%else%}/{{page.collection}}/tutorials/failover-groups.html{% endif %}).
+Of course everyone knows that, the reasons they don't do it is that it's difficult, time consuming and can be unpredicatble. That's why we want to make building stacks from scratch as easy and as quick as possible. So in all cases of upgrade, our first recommendation is to build a new stack and redirect your traffic to the new stack using our [Elastic Address]({% if page.collection == 'maestro' %}/maestro/tutorials/failover-groups.html{%else%}/{{page.collection}}/tutorials/failover-groups.html{% endif %}).
 
 We are always working to make it easier to build a new stack, move your data and switch your traffic arround but it might not always be what you want to do or as easy as you would like it to be. So here is what we suggest as alternatives and exceptions.
 
@@ -91,7 +91,7 @@ The recommended way to upgrade your passenger to the latest one is:
 
 <div class="notice notice-danger">
     <h3>Warning!</h3>
-    <p>Upgrading in-place involves downtime as the docker engine and local files are all upgraded. To have zero down-time you'd have to clone your stack and use <a href="{% if page.collection == 'skycap' %}/maestro/tutorials/failover-groups.html{%else%}/{{page.collection}}/tutorials/failover-groups.html{% endif %}">Failover groups </a> to switch to the new one.</p>
+    <p>Upgrading in-place involves downtime as the docker engine and local files are all upgraded. To have zero down-time you'd have to clone your stack and use <a href="{% if page.collection == 'maestro' %}/maestro/tutorials/failover-groups.html{%else%}/{{page.collection}}/tutorials/failover-groups.html{% endif %}">Failover groups </a> to switch to the new one.</p>
 </div>
 
 

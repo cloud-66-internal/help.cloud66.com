@@ -26,4 +26,9 @@ If your infrastructure is behind [Cloudflare](https://www.cloudflare.com) and yo
 
 If your domain application is running on *www.example.io* for example you need a page rule for the following URL: *www.example.io/.well-known/acme-challenge/\**, browser integrity check off, SSL off, cache expiration: 4 hours.
 
+{% if page.collection == "maestro" %}
+If you still have issue installing Lets Encrypt please have a look at [this page](/maestro/how-to-guides/security/lets-encrypt.html)
+{%endif%}
+{% if page.collection != "maestro" %}
 If you still have issue installing Lets Encrypt please have a look at [this page](/{{page.collection}}/how-to-guides/deployment/shells/lets-encrypt.html)
+{%endif%}

@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "How to add a Shell Command"
+title:  "Using the shell command Add-in"
 categories: how-to-guides/add-ins
-lead: Execute a shell command on your server(s)
+lead: How to automate shell commands on your server(s) via Maestro
 tags: ['Add in']
 legacy: false
 permalink: /:collection/:path
