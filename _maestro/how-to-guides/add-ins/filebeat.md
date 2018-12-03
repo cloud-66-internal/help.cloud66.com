@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "How to use the Filebeat Add-in"
+title:  "Using the Filebeat Add-in"
 categories: how-to-guides/add-ins
-lead: Simple web-based log analysis service for your servers
+lead: Adding a simple web-based log analysis service to your servers in Maestro
 tags: ['Logs', 'Add ins']
 legacy: false
 permalink: /:collection/:path

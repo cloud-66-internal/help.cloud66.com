@@ -2,12 +2,11 @@
 layout: post
 template: one-col
 title: Maestro
-lead: Cloud 66 Maestro for Container Stacks
+lead: Cloud 66 Maestro for Containerized Applications
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-<p class="lead">The Integrated and Hosted Solution to Build, Deploy and Maintain Container Based Applications on any Server.</p>
+<p class="lead">The integrated and hosted solution to build, deploy and maintain container-based applications on any server.</p>
 
-{% include category_nav.html %}
-
+{% include category_nav_maestro.html %}

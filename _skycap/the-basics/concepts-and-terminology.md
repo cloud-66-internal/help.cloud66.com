@@ -19,10 +19,10 @@ There are many benefits to treating software applications this way. Containers a
 * **Self-contained ---** Each container runs as an independent process or thread. This greatly reduces the chance of conflict with other applications using the same infrastructure. 
 * **Less resource intensive ---** Because they only contain the minimum components required to function they do not consume unnecessary resources. This saves on infrastructure costs and can make applications faster for end users.
 * **Highly portable ---**  Containers are not dependent on specific server or environmental variables, so they can be quickly and easily deployed or moved between different server environments. 
-* **Easily scalable ---** Containers can be initialised in milliseconds, so adding, moving or removing them is close to instant. And because they are self-contained, the need for time consuming configuration changes is great reduced.
+* **Easily scalable ---** Containers can be initialised in milliseconds, so adding, moving or removing them is close to instant. And because they are self-contained, the need for time-consuming configuration changes is greatly reduced.
 * **Secure ---** Containers are highly abstracted and isolated from their environments as well as from other applications sharing those environments. This makes securing applications and implementing policies easier and cleaner.
 
-Apart from these technical benefits, containers also make it easier for **development** and **operations** teams to work together more efficiently. Because they containers are abstracted from the underlying server environment, they allow developers to focus on writing good code, and operations engineers to focus on managing environments. This clean division of responsibility paradoxically allows for more flexibility and easier collaboration between teams.
+Apart from these technical benefits, containers also make it easier for **development** and **operations** teams to work together more efficiently. Because the containers are abstracted from the underlying server environment, they allow developers to focus on writing good code, and operations engineers to focus on managing environments. This clean division of responsibility paradoxically allows for more flexibility and easier collaboration between teams.
 
 These benefits have led many large technology firms to adopt containers as their default approach to shipping and deploying their software. Examples include Netflix, PayPal and Expedia. 
 
@@ -48,9 +48,9 @@ Services are:
 * **Self-contained ---** They do not depend on other parts of the software to function
 * **Modular ---** They are defined by a discrete business function (e.g. “generate an invoice”, “send a notification”)
 * **Black boxes ---** They do not reveal their inner workings to the other parts of the system
-* **Reusable ---** Because they are self-contained, services can plugged into many different workflows and systems without needing to be changed. 
+* **Reusable ---** Because they are self-contained, services can be plugged into many different workflows and systems without needing to be changed. 
 
-SOA is a quite old idea (it dates back to the late 1970s) but with the rise of [microservices](/skycap/the-basics/concepts-and-terminology.html#microservices) and [containerization](/skycap/the-basics/concepts-and-terminology.html#containers-and-containerization) it is becoming increasingly popular and widely adopted. In many ways these new technologies have finally made the ideals of SOA achievable and scalable. 
+SOA is a quite old idea (it dates back to the late 1970s) but with the rise of [microservices](/skycap/the-basics/concepts-and-terminology.html#microservices) and [containerization](/skycap/the-basics/concepts-and-terminology.html#containers-and-containerization), it is becoming increasingly popular and widely adopted. In many ways these new technologies have finally made the ideals of SOA achievable and scalable. 
 
 
 ## Microservices
@@ -63,7 +63,7 @@ The main differences between classic SOA and microservices are:
 * **Independence** --- microservices can be independently deployed (whereas SOA is traditionally dependent on a monolithic underlying platform)
 * **Communication method** --- microservices communicate with the rest of the application via language-agnostic APIs rather than the more traditional protocols used by SOA.
 
-Microservices naturally share all of the benefits of SOA, but their independence and abstract communication methodology makes them easier to deploy and manage at scale. Their small size also makes them easier to update or debug, and reduces the impact of any failures. 
+Microservices naturally share all of the benefits of SOA, but their independence and abstract communication methodology make them easier to deploy and manage at scale. Their small size also makes them easier to update or debug, and reduces the impact of any failures. 
 
 As you have probably guessed microservices are an ideal fit for [containers](/skycap/the-basics/concepts-and-terminology.html#containers-and-containerization), and the two technologies have naturally evolved alongside each other.
 
@@ -73,7 +73,7 @@ Software orchestration is a way to automate the routine management of your appli
 
 One of the challenges of [containerization](/skycap/the-basics/concepts-and-terminology.html#containers-and-containerization) and [microservices](#microservices) is that, instead of deploying and managing a single, monolithic application, you need to deploy and manage dozens, hundreds or even thousands of containers. This quickly makes reliable manual management of many operational tasks, like scaling or migration, effectively impossible. 
 
-Container orchestration platforms provide the framework to systematise and automate the entire lifecycle of a containerized and distributed application. In other words these platforms allow you to define the way you want any management task to work - for example rolling back code - and from then onwards let the platform handle that task with little to no human intervention required.
+Container orchestration platforms provide the framework to systematise and automate the entire lifecycle of a containerized and distributed application. In other words, these platforms allow you to define the way you want any management task to work - for example rolling back code - and from then onwards let the platform handle that task with little to no human intervention required.
 
 At Cloud 66 we use [Kubernetes](https://kubernetes.io/) - the market leading solution - to orchestrate containers and applications in clustered environments.
 

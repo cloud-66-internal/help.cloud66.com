@@ -13,7 +13,7 @@ If you want to use WebSocket with Cloud 66, your WebSocket servers need to liste
 
 You can use a different port to use WebSocket (not supported by Cloud 66) but you will need manually open the ports to allow external connections to your servers.
 
-Find out more about [service networking]({% if page.collection == "skycap" %}/maestro/tutorials/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}).
+Find out more about [service networking]({% if page.collection == "maestro" %}/maestro/how-to-guides/deployment/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}).
 
 
 ## WebSocket through a load balancer
@@ -24,7 +24,7 @@ You can use a load balancer and scale up your servers to have more redundancy an
 
 ELB (Amazon) doesn't support WebSocket traffic.
 
-Learn more about [Cloud 66 HAProxy and WebSocket]({% if page.collection == 'skycap' %}/maestro/how-to-guides/deployment/shells/haproxy-for-websocket.html{%else%}/{{page.collection}}/how-to-guides/deployment/shells/haproxy-for-websocket.html{%endif%}) setup.
+Learn more about [Cloud 66 HAProxy and WebSocket]({% if page.collection == 'maestro' %}/maestro/how-to-guides/deployment/haproxy-for-websocket.html{%else%}/{{page.collection}}/how-to-guides/deployment/shells/haproxy-for-websocket.html{%endif%}) setup.
 
 On **Linode** alternative HTTP ports 8080 and 8443 are opened on NodeBalancers and can be used for WebSockets.
 

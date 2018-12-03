@@ -4,7 +4,7 @@
 Your servers are deployed with **Ubuntu 16.04 LTS**.
 
 
-{% if include.product != 'skycap' %}
+{% if include.product != 'maestro' %}
 ## Supported cloud providers
 
 Cloud 66 currently supports the following cloud providers:
@@ -16,6 +16,21 @@ Cloud 66 currently supports the following cloud providers:
 *   [Rackspace](/{{page.collection}}/references/clouds/cloud-rackspace.html)
 *   [CloudA](/{{page.collection}}/references/clouds/cloud-clouda.html)
 {% endif %}
+
+
+{% if include.product == 'maestro' %}
+## Supported cloud providers
+
+Cloud 66 currently supports the following cloud providers:
+*   [Amazon Web Services](/maestro/how-to-guides/clouds/cloud-aws.html)
+*   [Digital Ocean](/maestro/how-to-guides/clouds/cloud-do.html)
+*   [Google Compute Engine](/maestro/how-to-guides/clouds/cloud-gce.html)
+*   [Linode](/maestro/how-to-guides/clouds/cloud-linode.html)
+*   [Microsoft Azure](/maestro/how-to-guides/clouds/cloud-azure.html)
+*   [Rackspace](/maestro/how-to-guides/clouds/cloud-rackspace.html)
+*   [CloudA](/maestro/how-to-guides/clouds/cloud-clouda.html)
+{% endif %}
+
 
 ## Supported frameworks
 
@@ -31,14 +46,15 @@ Cloud 66 servers have two types of components with differing policies on version
 
 We don't have fine-grain control over the version, and use the latest version available via the apt source.
 
-
 ### Components built from source
 
 Cloud 66 maintains an internal list of versions for most components built from source, which is updated periodically after testing.
 
+{% if include.product == 'maestro' %}
+You are free to specify a version for a number of components in your [manifest file](/maestro/quickstarts/getting-started-with-manifest.html).
+{% else %}
 You are free to specify a version for a number of components in your [manifest file](/{{page.collection}}/tutorials/getting-started-with-manifest.html).
-
-
+{%endif%}
 
 ### Warning
 

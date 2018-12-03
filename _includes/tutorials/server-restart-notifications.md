@@ -11,9 +11,9 @@ Unfortunately there is no generic way to answer that question. The answer is tha
 For this reason, Cloud 66 will promote restart notifications for any server with ports exposed to "anywhere" externally, although all restart notifications are visible on the server detail page. If the restart has not taken place for a long time then eventually it will be promoted up in your stack details page too. However, the urgency is very much application dependant.
 
 <h2 id="how-to">How do I actually restart my servers?</h2>
-In order to minimise down-time, you can restart one server at a time (assuming you have a [load balancer](/{{page.collection}}/tutorials/load-balancing.html) in place). Selecting an out-of-hours time is recommended to minimise disruption. You can also use the [maintenance page](/{{page.collection}}/tutorials/service-network-configuration.html) to temporarily notify your users that you are performing maintenance.
+In order to minimise down-time, you can restart one server at a time (assuming you have a [load balancer](/{{page.collection}}/tutorials/load-balancing.html) in place). Selecting an out-of-hours time is recommended to minimise disruption. You can also use the [maintenance page]({% if page.collection == "maestro" %}/maestro/how-to-guides/deployment/service-network-configuration.html{%else%}/{{page.collection}}/tutorials/service-network-configuration.html{%endif%}) to temporarily notify your users that you are performing maintenance.
 
-To restart your server, it is recommended that you <a href="/{{page.collection}}/how-to-guides/deployment/shells/ssh.html">SSH to your server</a> and run either of the following terminal commands:
+To restart your server, it is recommended that you <a href="{% if page.collection == "maestro" %}/maestro/how-to-guides/common-tools/ssh.html{%else%}/{{page.collection}}/how-to-guides/deployment/shells/ssh.html{%endif%}">SSH to your server</a> and run either of the following terminal commands:
 
 <pre class="terminal">
 sudo reboot 
