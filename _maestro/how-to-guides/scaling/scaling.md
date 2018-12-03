@@ -18,10 +18,9 @@ You can scale your servers in two ways: horizontal and vertical. Horizontal scal
 
 Horizontal scaling works differently for each server type and is only available if you have deployed using your cloud provider.
 
-## Kubernetes cluster's servers
+## Kubernetes cluster servers
 
-From your application overview page, click on the `Servers` tab to take you to your server groups page. To add a kubernetes server, click the `+` sign in the top right corner of the server group, select your desired server size and quantity, and click Add. Your new server(s) will automatically be added to the cluster after they have completed provisioning and deployment, ready to serve traffic.
-
+From your application overview page, click on the `Servers` tab to take you to your server groups page. To add a Kubernetes server, click the `+` sign in the top right corner of the server group, select your desired server size and quantity, and click Add. Your new server(s) will automatically be added to the cluster after they have completed provisioning and deployment, ready to serve traffic.
 
 If you are using AWS, you will also have the option to scale your servers to different [Availability Zones](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) within your region using the `more option` tab in the over-lay form.
 
@@ -37,7 +36,7 @@ You can scale your services horizontally across your Kubernetes cluster by click
 
 <div class="notice">
      <h3>Note:</h3><p>
-    The container/pod distribution is handled by Kuberntes controller and as a result it is <strong>not gauranteed</strong> that your container/pod is  <strong>distributed evenly</strong> .i.e you may sometimes find one server with <strong>multiple</strong> of the same containers/pods and one with <strong>zero</strong> container/pod of the same service.</p>
+    The container/pod distribution is handled by Kuberntes controller and as a result it is <strong>not guaranteed</strong> that your container/pod is <strong>distributed evenly</strong> i.e you may sometimes find one server with <strong>multiple</strong> of the same containers/pods and one with <strong>zero</strong> container/pod of the same service.</p>
 </div>    
 
 ## Database servers

@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Multi-certificate SSL for HAProxy
 categories: how-to-guides/security
+order: 3
 lead: "How to configure multi-certificate SSL for HAProxy in Maestro"
 legacy: false
 tags: ["ssl","haproxy"]

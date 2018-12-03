@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Connecting a Git repository
 categories: references
+order: 10
 lead: "Connecting Maestro to a git repository"
 legacy: false
 tags: ["git"]

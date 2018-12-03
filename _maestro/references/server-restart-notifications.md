@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Understanding server restart notifications"
 categories: references
-order: 17
+order: 5
 lead: Understanding server restart notifications in Maestro
 tags: ['server','notifications']
 legacy: false

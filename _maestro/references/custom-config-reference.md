@@ -5,7 +5,7 @@ title: CustomConfig in-depth
 categories: references
 lead: "Reference guide for CustomConfig"
 legacy: false
-order: 1
+order: 2
 tags: ["shell"]
 permalink: /:collection/:path
 ---

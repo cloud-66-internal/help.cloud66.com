@@ -2,6 +2,7 @@
 layout: post
 template: one-col
 title: Deployment profiles
+order: 20
 categories: references
 lead: ""
 legacy: false

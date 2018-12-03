@@ -9,15 +9,22 @@ tags: ["Elasticsearch"]
 permalink: /:collection/:path
 ---
 
+#### Note
+<div class="notice"><p>This guide assumes that you have used the <a href="/maestro/how-to-guides/add-ins/elasticsearch.html">Maestro Add-in for Elasticsearch</a>. If you have configured the service manually then this will not apply</p></div>
 
-You can scale your Elasticsearch cluster through the Cloud 66 dashboard on the Elasticsearch server group page.
+You can scale your [Elasticsearch cluster](/maestro/how-to-guides/add-ins/elasticsearch.html) through the Maestro dashboard:
+
+1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+2. Click on the *Servers* tab at the top of the main panel
+3. Find your Elasticsearch server(s) and click the green **+** to scale up.
+
+(You can also scale down by clicking the red *Delete server* icon - but take care when doing so!) 
 
 Elasticsearch scaling works by splitting your **indices** into **shards**, and placing them on an Elasticsearch running instance called a **node** on another server. A collection of nodes is called a **cluster**. 
 
 You specify the number of shards for individual indices when creating them, and can dynamically change the number of replicas with the API. 
 
 By moving primary and replica shards to different nodes, Elasticsearch achieves both data redundancy and improved performance.
-
 
 ## General recommendations
 

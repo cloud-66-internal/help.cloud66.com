@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Linode
 categories: how-to-guides/clouds
+order: 6
 lead: "Configuring Linode for use with Maestro"
 legacy: false
 tags: ["operations"]

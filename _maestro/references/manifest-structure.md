@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Understanding manifest files
 categories: references
+order: 3
 lead: Understanding the underlying principles of manifest files
 tags: ['tags']
 legacy: false

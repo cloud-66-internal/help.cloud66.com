@@ -9,18 +9,18 @@ tags: ["MongoDB"]
 permalink: /:collection/:path
 ---
 
+#### Note
+<div class="notice"><p>This guide assumes that you have used the Maestro Add-in for Elasticsearch. If you have configured the service manually then this will not apply</p></div>
 
+Before scaling MongoDB, it's vital that you **understand how replica sets work and how to use them**, or you will risk downtime.
 
-When it comes to MongoDB replication, **you really need to know how MongoDB replica sets work and how to use them** before trying to scale up your MongoDB backend. This is to ensure continuity of service without interruptions.
-
-There is a lot of excellent material about [MongoDB replica sets](http://docs.mongodb.org/manual/replication/) on the Internet, so we're not going to repeat this information. For the purpose of this document, we will focus on how Cloud 66 scales your MongoDB servers and how you can use them in your code.
-
+There is a lot of excellent material about [MongoDB replica sets](http://docs.mongodb.org/manual/replication/) available online, which we won't repeat here. We will focus on how Maestro scales your MongoDB servers and how you can use them in your code.
 
 ## Configure a MongoDB replica set
 
-When you select to scale up your MongoDB backend with Cloud 66, we perform the following steps:
+When you scale up MongoDB using Maestro, we perform the following steps:
 
-- Backup your database
+- Back up your database
 - Create two more servers in your cloud (MongoDB replica sets require an odd number of servers)
 - Deploy and configure MongoDB on the new servers
 - Restore the backup on the new servers
@@ -29,12 +29,8 @@ When you select to scale up your MongoDB backend with Cloud 66, we perform the f
 
 It is important for backups to keep their referential integrity, otherwise different parts of the database might be backed up at different times, affecting database performance.
 
-**Note**
-
-The process of database replication will disrupt your database serving your application for the duration of scaling up and scaling down.
-
-This interruption is during the backup and configuration steps of the scaling and not during the long process of firing up and building the servers
-
+#### Caution
+<div class="notice notice-warning"><p>Database replication will disrupt your live database during the backup and configuration steps of the process.</p></div>
 
 
 ## Using a MongoDB replica set in your code
@@ -42,9 +38,9 @@ This interruption is during the backup and configuration steps of the scaling an
 All MongoDB drivers support replica sets, which means that you can pass the list of MongoDB servers in your replica set to them and they will adapt. However, switching from a single MongoDB to a replica set is something you need to test and be sure about. You shouldn't make such a change to your application infrastructure with the click of a button!
 
 This is why we won't touch your configuration files after you scale your MongoDB up. This allows you to configure the client the way you see fit and go live with your replicated database backend when you are ready.
-**Note** 
 
-We stop modifying your MongoDB client configuration files (like mongoid.yml in Rails) after replication is enabled.
+#### Note
+<div class="notice"><p>We stop automatically modifying your MongoDB client configuration files after replication is enabled.</p></div>
 
 
 ## Environment variables
@@ -61,7 +57,7 @@ Without replica sets, you can connect to your MongoDB using environment variable
 `MONGODB_ADDRESS` contains the IP address of your MongoDB. In [Mongoid](http://mongoid.org/en/mongoid/index.html) for example, it can be used in your mongoid.yml with `host` (mongoid 
  3).
 
-`MONGODB_ADDRESS_INT` and `MONGODB_ADDRESS_EXT` contain the internal and external network addresses for the same server. You usually want to connect to the internal address to avoid paying for traffic between your web servers and database servers. `MONGODB_ADDRESS` is configured with the internal address `{{MONGODB_ADDRESS_INT}}`, but you can [change that](/{{page.collection}}/tutorials/env-vars.html) if you need.
+`MONGODB_ADDRESS_INT` and `MONGODB_ADDRESS_EXT` contain the internal and external network addresses for the same server. You usually want to connect to the internal address to avoid paying for traffic between your web servers and database servers. `MONGODB_ADDRESS` is configured with the internal address `{{MONGODB_ADDRESS_INT}}`, but you can [change that](/maestro/tutorials/env-vars.html) if you need.
 
 `MONGODO_URL_INT` contains a MongoDB client friendly URL to the server with its internal address. It usually looks like this:
 
@@ -89,52 +85,7 @@ lion.mystack.c66.me,tiger.mystack.c66.me
 
 Once you have replica set enabled by scaling your MongoDB backend up, you will need to modify your client configuration accordingly. Your deployment might not work and your application might stop functioning if you don't do that.
 
-**Note**
-
-Deployments might fail after replica sets are enabled if you don't change your client configuration to use the replica set.
-
-
-
-## Configure Mongoid
-
-As the most popular Ruby client for MongoDB, here is an example of how to change your `mongoid.yml` file to use a replica set.
-
-Before having a replica set, you had the following setup:
-
-```
-development:
-    sessions:
-        default:
-            database: my_mongo_app
-            hosts: <%= ENV['MONGODB_ADDRESS'] %>
-            options:
-                consistency: :strong
-```
-
-After replica sets are enabled you can use something like this:
-
-```
-development:
-    sessions:
-        default:
-            database: my_mongo_app
-            hosts: <%= "[#{ENV['MONGODB_ADDRESSES'].split(',').map {|addr| "\"#{addr}:27017\""}.join(',')}]" %>
-            options:
-                consistency: :strong
-```
-
-The reason for the ugly looking line is that `mongoid` requires the list of server addresses in the replica set to be in an array with port numbers. Since your replica set will be configured to work on the normal MongoDB port of 27017 by default, this line will split the comma separated list into an array in Ruby. The end result will look like something like this:
-
-```
-["lion.mystack.c66.me:27017","tiger.mystack.c66.me:27017"]
-```
-
-
-
-
-
-### Note
-
-You cannot use complex Ruby code (like `if`) in your YML files. That's why the new hosts value is generated with string replacements and simple Ruby commands.
+#### Note
+<div class="notice"><p>Deployments might fail after replica sets are enabled if you don't change your client configuration to use the replica set.</p></div>
 
 

@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title:  Enabling SSL termination on load balancers
 categories: how-to-guides/security
+order: 2
 lead: "How to enable automatic SSL termination on load balancers in Maestro"
 legacy: false
 tags: ["ssl"]

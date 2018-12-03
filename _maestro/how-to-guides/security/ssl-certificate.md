@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Adding an SSL certificate to Nginx
 categories: how-to-guides/security
+order: 1
 lead: "How to add an SSL certificate to Nginx within Maestro"
 legacy: false
 tags: ["ssl"]
