@@ -48,9 +48,9 @@ Liquid allows you to make your templates truly dynamic by incorporating features
 
 The team at Shopify has written two handy beginners guides to Liquid - one for [designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) and one for [developers](https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers). 
 
-For most Maestro users the **designer** guide will probably be a better starting point since it is focussed on using Liquid syntax within existing templates rather than building new templates from scratch. 
+For most Maestro users the **designer** guide will probably be a better starting point since it is focussed on using Liquid syntax within existing templates rather than building new templates from scratch.
 
-## Patching configuration files
+## Patching configuration files
 
 Every so often, Cloud 66 needs to update the base configuration files used by your application components. 
 
