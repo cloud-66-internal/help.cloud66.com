@@ -27,7 +27,7 @@
         </ul>
 
      <ul class="menu-root">
-            {% assign building = include.collection | where:"categories","how-to-guides/building" | sort: "order" %}
+            {% assign building = include.collection | where:"categories","how-to-guides" | sort: "order" %}
             {% assign formations = include.collection | where:"categories","how-to-guides/formations" | sort: "order" %}
 
             <li><h3><a href="/{{product}}/how-to-guides">How-to Guides</a></h3></li>
