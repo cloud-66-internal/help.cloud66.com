@@ -2,7 +2,6 @@
 layout: post
 template: one-col
 title:  "Skycap How-To Guides"
-categories: how-to-guides
 lead: How to properly use Cloud 66 Skycap
 legacy: false
 permalink: /:collection/:categories/index.html

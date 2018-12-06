@@ -27,12 +27,12 @@
         </ul>
 
      <ul class="menu-root">
-            {% assign building = include.collection | where:"categories","how-to-guides" | sort: "order" %}
+            {% assign section = include.collection | where:"categories","how-to-guides" | sort: "order" %}
             {% assign formations = include.collection | where:"categories","how-to-guides/formations" | sort: "order" %}
 
             <li><h3><a href="/{{product}}/how-to-guides">How-to Guides</a></h3></li>
             {% include left_nav_list.html section=formations current=page %}
-	         {% include left_nav_list.html section=building current=page %}
+	        {% include left_nav_list.html section=section current=page %}
         </ul>
 
         <ul class="menu-root">

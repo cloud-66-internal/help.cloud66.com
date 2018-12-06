@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: How to use ConfigStore
+title: Using ConfigStore
 categories: how-to-guides
 lead: ""
 legacy: false
