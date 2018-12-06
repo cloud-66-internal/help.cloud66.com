@@ -1,8 +1,8 @@
 ---
 layout: post
 template: one-col
-title: What is ConfigStore?
-categories: tutorials
+title: How to use ConfigStore
+categories: how-to-guides
 lead: ""
 legacy: false
 tags: ["customization"]
