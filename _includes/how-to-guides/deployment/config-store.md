@@ -51,6 +51,7 @@ To access ConfigStore for a particular application:
 3. Click on the *ConfigStore* tab at the top of the main panel
 
 This page provides a way to store information where the scope is **limited to a specific application**. Variables stored in this repository will not automatically be available to any other application in your account. This is useful for storing variables that are either very application-specific or where the risk of sharing outweighs the benefits of centralisation.
+
 ### Account-level 
 
 To access your account-wide ConfigStore:
@@ -73,37 +74,40 @@ The *Metadata* field in ConfigStore is intended to store useful reminders about 
 ...and essentially anything else that might be useful to know about any configuration variable.
 
 ## Namespaces
+
 Every ConfigStore has its own unique namespace in the form of a 36-character GUID. This includes both account level and application level ConfigStores. 
 
 You can find the namespace:
 
-* For an application: under the ConfigStore tab 
-* For an account: under Account Settings - ConfigStore
+* For an application: under **Config** &rarr; *ConfigStore* tab 
+* For an account: under **Account Settings** &rarr; *ConfigStore*
 
 This namespace can be used to reference a particular ConfigStore, either via the API or using placeholders in configuration templates (see below).
 
 ## Accessing ConfigStore Variables
 
 You access ConfigStore data by using the following syntax:
+
 ### Skycap Stencils
 
-The basic syntax for Stencils is:
+The basic syntax for Stencil placeholders is:
 
 <pre class="terminal">
-value: ${configstore("a.b")}
+value: ${configstore("key")}
 </pre>
 
-If you want need to pull a value from the ConfigStore for a **specific application** the syntax is:
+If you need to pull a value from the ConfigStore for a **specific application** the syntax is:
 
 <pre class="terminal">
-value: ${configstore("a.b", application["configstore_namespace"])}
+value: ${configstore("key", application["configstore_namespace"])}
 </pre>
 
 To fetch a value from the **account-level** ConfigStore, use the following syntax:
 
 <pre class="terminal">
-value: ${configstore("a.b", account["configstore_namespace"])}
+value: ${configstore("key", account["configstore_namespace"])}
 </pre>
+
 ### Environment Variables
 
 To load values from ConfigStore as environment variables in any application, open the [Environment Variables](/skycap/tutorials/setting-environment-variables.html) page via your Dashboard and use the following format as the *value* for any key:
