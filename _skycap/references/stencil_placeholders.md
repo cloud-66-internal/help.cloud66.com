@@ -143,7 +143,7 @@ Fetches *all* the available values from any path in Vault. As above, the Vault m
 
 The example below would pull all of the values from the `/production/mysql` path and indent them with 2 spaces.
 
-```
+<pre class="prettyprint">
 apiVersion: v1
 kind: Secret
 metadata:
@@ -159,8 +159,7 @@ metadata:
 type: Opaque
 data:
   ${vaultlist("/production/mysql", 2)}
- 
-```
+</pre>
 
 
 <h4 class="placeholder"><code>configstore("key")</code></h4>
@@ -169,7 +168,7 @@ Returns the value of the `key` specified. By default this will use the **applica
 
 <h4 class="placeholder"><code>configstore("key", account["configstore_namespace"])</code></h4>
 
-As above, but returns the value from an **account-level ConfigStore** using the namespace UID as the lookup. The same can be done for `application`.
+As above, but returns the value from an **account-level ConfigStore** using the namespace UID as the lookup. The same can be done using the `application` parameter to fetch values from another application-level ConfigStore.
 
 For example:
 
@@ -185,10 +184,10 @@ metadata:
     cloud66.com/stencil-uuid: ${stencil["uuid"]}
 spec:
   accessModes:
-    - ${configstore("mysql_access_mode")
+    - ${configstore("mysql_access_mode", account["c0eee1dd-2989-4e76-b4ba-ff2770d36c3d"])
   resources:
     requests:
-      storage: ${configstore("mysql_storage")
+      storage: ${configstore("mysql_storage", application["229b4580-b8db-4f47-9eb5-98ed70dc8556"])
 
 </pre>
 
