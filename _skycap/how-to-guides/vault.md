@@ -45,7 +45,7 @@ The `indent_level` parameter is important because YAML files use indentation for
 
 The Stencil below fetches the username and password for the production database credentials stored in Vault. 
 
-```
+<pre class="prettyprint">
 apiVersion: v1
 kind: Secret
 metadata:
@@ -63,13 +63,12 @@ data:
   password: ${vault("/production/db-credentials", "password")}
   username: ${vault("/production/db-credentials", "username")}
 
-```
+</pre>
 
 
-This stencil would pull all of the values from Vault and indent them with two spaces:
+This stencil would pull all of the values from Vault and indent them by two spaces:
 
-
-```
+<pre class="prettyprint">
 apiVersion: v1
 kind: Secret
 metadata:
@@ -86,4 +85,4 @@ type: Opaque
 data:
   ${vaultlist("/production/mysql", 2)}
  
-```
+</pre>
