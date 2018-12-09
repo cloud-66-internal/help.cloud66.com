@@ -8,6 +8,9 @@ legacy: true
 tags: ["nginx"]
 permalink: /:collection/:path
 ---
+
+## Notice
+<div class="notice notice-warning"><p>This documentation set has been merged with the <a href="/maestro/">Maestro Version 2</a> documentation and is officially deprecated. These pages will be redirected to their equivalents in that doc set within the next few weeks.</p></div>
 {% assign product = "common" %}
 
 In addition to protecting your application (or parts of it) using [HTTP basic authentication](/{{page.collection}}/how-to-guides/security/nginx-auth.html), you can use Cloud 66 [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) to block (or allow) access to your application based on IP addresses.

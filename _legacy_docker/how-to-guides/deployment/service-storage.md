@@ -9,6 +9,9 @@ tags: ["operations", "storage"]
 permalink: /:collection/:path
 ---
 
+## Notice
+<div class="notice notice-warning"><p>This documentation set has been merged with the <a href="/maestro/">Maestro Version 2</a> documentation and is officially deprecated. These pages will be redirected to their equivalents in that doc set within the next few weeks.</p></div>
+
 
 Given the ephemeral nature of containers, it’s important to consider storage solutions to avoid data loss. While we currently suggest mounting volumes from your container to the host, we are also working on other more scalable solutions.
 
