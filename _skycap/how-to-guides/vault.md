@@ -27,7 +27,7 @@ To connect your Vault to your Cloud 66 account:
 6. Click the *Add Vault* button
 7. Fill in the details of your Vault and click *Connect to Vault*
 
-Cloud 66 will now try to connect to your Vault using these credentials and, if successful, your Vault will now be available for us within Skycap.
+Cloud 66 will now try to connect to your Vault using these credentials and, if successful, your Vault will now be available for use within Skycap.
 
 ## Using Vault with Skycap
 
@@ -66,7 +66,7 @@ data:
 </pre>
 
 
-This stencil would pull all of the values from Vault and indent them by two spaces:
+This Stencil would pull all of the values from Vault and indent them by two spaces:
 
 <pre class="prettyprint">
 apiVersion: v1
