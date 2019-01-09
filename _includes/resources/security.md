@@ -31,8 +31,8 @@ Cloud 66 connects to users' servers from a set of authorized IP addresses:
 35.199.59.73
 35.230.164.181
 35.194.83.158
-
 ```
+
 All provisioned servers are configured to only allow SSH (and other secure) connections from these addresses. 
 
 We may add new IP addresses to this range from time to time. You can check the very latest list of IP addresses via [this link](https://app.cloud66.com/authorized_ips).

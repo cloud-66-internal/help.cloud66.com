@@ -1,14 +1,13 @@
 ---
 layout: post
 template: one-col
-title:  "Cloud 66 Concepts"
+title:  "The Basics"
 lead: "In depth understanding of Cloud 66 concepts"
 legacy: false
-permalink: /:collection/concepts/index.html
+permalink: /:collection/the-basics/index.html
 ---
 
 <div class="Toc Toc--howto">
-    <h2>Concepts</h2>
     <ul>
     {% assign section = site.rails | where:"categories","concepts" | sort: "order" %}
     {% include list_articles.html section=section %}

@@ -2,8 +2,8 @@
 layout: post
 template: one-col
 title:  "Global Search"
-categories: how-to-guides/dashboard
-lead: Powerful search for your infrastructure inventory
+categories: how-to-guides/common-tools
+lead: Powerful search for your infrastructure
 legacy: false
 tags: ['Management']
 permalink: /:collection/:path

@@ -1,50 +1,75 @@
 <nav class="list">
         <div class="sticky-sidebar">
-            <h2 class="product-title" id="{{title}}-product-heading">
+            <h2 class="product-title" id="rails-product-heading">
                 Rails Documentation
             </h2>
         </div>
 
+
         <ul class="menu-root">
-            {% assign section = site.rails | where:"categories","quickstarts" | sort: "order" %}
-            <li><h3 class="u-flushTop"><a href="quickstarts">Quickstarts</a></h3></li>
+            {% assign section = include.collection | where:"categories","the-basics" | sort: "order" %}
+            <li><h3><a href="/rails/the-basics">The Basics</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
-        <ul class="menu-root">
-            {% assign deployments = site.rails | where:"categories","how-to-guides/deployment" | sort: "order" %}
-            {% assign databases = site.rails | where:"categories","how-to-guides/databases" | sort: "order" %}
-            {% assign security = site.rails | where:"categories","how-to-guides/security" | sort: "order" %}
 
-            <li><h3><a href="how-to-guides">How-to Guides</a></h3></li>
-            {% include left_nav_list.html section=deployments current=page %}
-            <li>--</li>
-            {% include left_nav_list.html section=databases current=page %}
-            <li>--</li>
+        <ul class="menu-root">
+            {% assign section = include.collection | where:"categories","quickstarts" | sort: "order" %}
+
+            <li><h3 class="u-flushTop"><a href="/rails/quickstarts">Quickstarts</a></h3></li>
+            {% include left_nav_list.html section=section current=page %}
+        </ul>
+
+
+        <ul class="menu-root">
+            {% assign section = include.collection | where:"categories","tutorials" | sort: "order" %}
+            <li><h3><a href="/rails/tutorials">Tutorials</a></h3></li>
+            {% include left_nav_list.html section=section current=page %}
+        </ul>
+
+      <ul class="menu-root">
+            {% assign common-tools = include.collection | where:"categories","how-to-guides/common-tools" | sort: "order" %}
+
+            <li><h3><a href="/rails/how-to-guides/common-tools">How-to: Common tools</a></h3></li>
+            {% include left_nav_list.html section=common-tools current=page %}
+        </ul>
+
+
+        <ul class="menu-root">
+            {% assign deployment = include.collection | where:"categories","how-to-guides/deployment" | sort: "order" %}
+            <li><h3><a href="/rails/how-to-guides/deployment">How-to: Config & Deployment</a></h3></li>
+            {% include left_nav_list.html section=deployment current=page %}
+        </ul>
+
+        <ul class="menu-root">
+            {% assign databases = include.collection | where:"categories","how-to-guides/databases" | sort: "order" %}
+            <li><h3><a href="/rails/how-to-guides/databases">How-to: Databases</a></h3></li>
+       {% include left_nav_list.html section=databases current=page %}
+        </ul>
+        
+        <ul class="menu-root">
+            {% assign security = include.collection | where:"categories","how-to-guides/security" | sort: "order" %}
+
+            <li><h3><a href="/rails/how-to-guides/security">How-to: Security</a></h3></li>
             {% include left_nav_list.html section=security current=page %}
         </ul>
 
-        <ul class="menu-root">
-            {% assign section = site.rails | where:"categories","tutorials" | sort: "order" %}
-            <li><h3><a href="tutorials">Tutorials</a></h3></li>
-            {% include left_nav_list.html section=section current=page %}
+	   <ul class="menu-root">
+            {% assign add-ins = include.collection | where:"categories","how-to-guides/add-ins" | sort: "order" %}
+            <li><h3><a href="/rails/how-to-guides/add-ins">How-to: Add-ins</a></h3></li>
+       {% include left_nav_list.html section=add-ins current=page %}
         </ul>
 
         <ul class="menu-root">
-            {% assign section = site.rails | where:"categories","tutorials" | sort: "order" %}
-            <li><h3><a href="references">References</a></h3></li>
+            {% assign section = include.collection | where:"categories","references" | sort: "order" %}
+            <li><h3><a href="/rails/references">References</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
-        <ul class="menu-root">
-            {% assign section = site.rails | where:"categories","concepts" | sort: "order" %}
-            <li><h3><a href="concepts">Concepts</a></h3></li>
-            {% include left_nav_list.html section=section current=page %}
-        </ul>
 
         <ul class="menu-root">
-            {% assign section = site.rails | where:"categories","resources" | sort: "order" %}
-            <li><h3><a href="resources">Resources</a></h3></li>
+            {% assign section = include.collection | where:"categories","resources" | sort: "order" %}
+            <li><h3><a href="/rails/resources">Resources</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 </nav>
