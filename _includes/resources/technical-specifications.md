@@ -56,25 +56,24 @@ You are free to specify a version for a number of components in your [manifest f
 You are free to specify a version for a number of components in your [manifest file](/{{page.collection}}/tutorials/getting-started-with-manifest.html).
 {%endif%}
 
-### Warning
-
+#### Warning
 <div class="notice notice-danger"><p>We cannot take responsibility for issues arising from non-recognized or incompatible versions.</p></div>
 
 
 <table class='table table-bordered table-striped'>
 <thead>
-<th>Component</th>
+<th width="30%">Component</th>
 <th>Default version</th></thead>
-<tr><td>Docker</td><td>17.12.0-ce</td></tr>
+<tr><td>Docker</td><td>17.12.0-ce (as per Kubernetes guidelines)</td></tr>
 <tr><td>ElasticSearch</td><td>5.1.2</td></tr>
 <tr><td>GlusterFS</td><td>3.7.2</td></tr>
 <tr><td>MongoDB</td><td>2.6.11</td></tr>
 <tr><td>MySQL</td><td>5.7</td></tr>
-<tr><td>Phusion Passenger</td><td>5.2.1</td></tr>
+<tr><td>Phusion Passenger</td><td>5.3.7</td></tr>
 <tr><td>PostGIS</td><td>2.4</td></tr>
 <tr><td>PostgreSQL</td><td>10</td></tr>
-<tr><td>Redis</td><td>4.0.8</td></tr>
-<tr><td>Ruby</td><td>2.5.0</td></tr>
+<tr><td>Redis</td><td>4.0.12</td></tr>
+<tr><td>Ruby</td><td>2.5.3</td></tr>
 <tr><td>Weave</td><td>1.9.8</td></tr>
 </table>
 
