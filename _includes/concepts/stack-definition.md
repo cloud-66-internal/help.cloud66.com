@@ -100,7 +100,7 @@ Cloud 66 constantly seeks to update and improve the StackScore algorithm to cons
 
 ## Build a stack
 
-To build your first stack, see our [Introduction to Cloud 66](/{{page.collection}}/concepts/stack-definition.html). If you have existing stack(s), simply click _New Docker Stack_ from your Cloud 66 Dashboard.
+To build your first stack, see our [Getting Started guide](/{{page.collection}}/quickstarts/getting_started.html). If you have existing stack(s), simply click _New Docker Stack_ from your Cloud 66 Dashboard.
 
 * * *
 

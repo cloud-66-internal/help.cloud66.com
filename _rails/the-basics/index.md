@@ -9,7 +9,7 @@ permalink: /:collection/the-basics/index.html
 
 <div class="Toc Toc--howto">
     <ul>
-    {% assign section = site.rails | where:"categories","concepts" | sort: "order" %}
+    {% assign section = site.rails | where:"categories","the-basics" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
 

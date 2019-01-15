@@ -7,7 +7,7 @@ legacy: false
 permalink: /:collection/:categories/index.html
 ---
 
-<p class="lead">Cloud 66 for Rails lets you deploy your Ruby on Rails (or any other Rack-based) applications on any cloud. Cloud 66 for Rails offers ease of deployment and reduced the need for DevOps.</p>
+<p class="lead">Cloud 66 for Rails lets you deploy your Ruby on Rails (or any other Rack-based) applications to the cloud. Cloud 66 for Rails offers ease of management and reduces the load on your DevOps resources.</p>
 
-{% include category_nav.html %}
+{% include category_nav_rails.html %}
 

@@ -5,7 +5,7 @@ As with any migration, you will need to deal with moving your code, data and tra
 
 ### 1. Code
 
-[Clone your existing stack](/{{page.collection}}/concepts/stack-definition.html) to a different cloud vendor or data center, and set it into [maintenance mode]({% if page.collection == "maestro" %}/maestro/how-to-guides/deployment/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}) to prevent it from serving content. We highly recommend that you build a stack with similar server specifications to your main stack to avoid issues during a switch. 
+[Clone your existing stack](/{{page.collection}}/the-basics/stack-definition.html) to a different cloud vendor or data center, and set it into [maintenance mode]({% if page.collection == "maestro" %}/maestro/how-to-guides/deployment/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}) to prevent it from serving content. We highly recommend that you build a stack with similar server specifications to your main stack to avoid issues during a switch. 
 
 
 ### 2. Data

@@ -26,7 +26,7 @@ Using Heroku, you can choose between 1X (512 MB), 2X (1 GB) and PX (6 GB) server
 
 ### 1. Code
 
-Simply provide Cloud 66 the URL to your Git repository so that it can be analyzed. For more information, see [Accessing your Git repository](/{{page.collection}}/how-to-guides/deployment/shells/access-your-code.html).
+Simply provide Cloud 66 the URL to your Git repository so that it can be analyzed. For more information, see [Accessing your Git repository](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html).
 
 
 ### 2. Data

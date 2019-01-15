@@ -7,8 +7,8 @@ A custom server will have the following Cloud 66 features enabled:
 
 - [Monitoring](/{{page.collection}}/references/server-ip-addresses.html)
 - Use of [Cloud 66 add-ins](/{{page.collection}}/how-to-guides/add-ins/add-in-implementation.html)
-- [Log rotation]({% if page.collection == 'maestro' %}/maestro/how-to-guides/deployment/setting-up-custom-livelogs.html{%else%}/{{page.collection}}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html{%endif%})
-- [SSH to your server via toolbelt]({% if page.collection == "maestro" %}/maestro/how-to-guides/common-tools/ssh.html{%else%}/{{page.collection}}/how-to-guides/deployment/shells/ssh.html{%endif%})
+- [Log rotation]({% if page.collection == 'maestro' %}/maestro/how-to-guides/deployment/setting-up-custom-livelogs.html{%else%}/{{page.collection}}/how-to-guides/deployment/setting-up-custom-livelogs.html{%endif%})
+- [SSH to your server via toolbelt]({% if page.collection == "maestro" %}/maestro/how-to-guides/common-tools/ssh.html{%else%}/{{page.collection}}/how-to-guides/common-tools/ssh.html{%endif%})
 {%if page.collection == 'maestro' %}- [Security](/maestro/how-to-guides/deployment/service-networking.html){%endif%}
 
 ## Add a custom server

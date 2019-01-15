@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: What is a stack?
-categories: concepts
+categories: the-basics
 lead: ""
 legacy: false
 tags: ["getting-started"]

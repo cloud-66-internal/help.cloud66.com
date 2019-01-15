@@ -1,7 +1,7 @@
 
 ## Step 1: Checkout your CustomConfig
 
-Checkout your [CustomConfig](/{{page.collection}}/references/connect-cloud66-to-git-repo.html) git and add the file *deploy_hooks.yml* 
+Checkout your [CustomConfig](/{{page.collection}}/tutorials/custom-config-git.html) git and add the file *deploy_hooks.yml* 
 
 
 ## Step 2: Add the weavescope snippet

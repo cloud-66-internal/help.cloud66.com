@@ -8,7 +8,7 @@
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","the-basics" | sort: "order" %}
-            <li><h3><a href="/rails/the-basics">The Basics</a></h3></li>
+            <li><h3 class="u-flushTop"><a href="/rails/the-basics">The Basics</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
@@ -16,7 +16,7 @@
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","quickstarts" | sort: "order" %}
 
-            <li><h3 class="u-flushTop"><a href="/rails/quickstarts">Quickstarts</a></h3></li>
+            <li><h3><a href="/rails/quickstarts">Quickstarts</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
@@ -59,6 +59,13 @@
             <li><h3><a href="/rails/how-to-guides/add-ins">How-to: Add-ins</a></h3></li>
        {% include left_nav_list.html section=add-ins current=page %}
         </ul>
+
+   <ul class="menu-root">
+            {% assign integrations = include.collection | where:"categories","integrations" | sort: "order" %}
+            <li><h3><a href="/rails/integrations">Integration guides</a></h3></li>
+       {% include left_nav_list.html section=integrations current=page %}
+        </ul>
+
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","references" | sort: "order" %}

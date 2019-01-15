@@ -686,4 +686,4 @@ production:
       custom_log_files: ["/tmp/mylog/*/*.log"]
 ```
 
-For more information about **LiveLogs** and additional examples, please see the [LiveLogs help page](/{{page.collection}}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html).
+For more information about **LiveLogs** and additional examples, please see the [LiveLogs help page](/{{page.collection}}/how-to-guides/deployment/setting-up-custom-livelogs.html).

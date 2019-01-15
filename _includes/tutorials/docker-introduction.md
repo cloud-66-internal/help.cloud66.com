@@ -43,7 +43,7 @@ Docker-based stacks enjoy the same benefits as other Cloud 66 stacks, including:
    - [Firewall management and brute force protection for web and SSH]({% if page.collection == "maestro" %}/maestro/how-to-guides/deployment/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %})
    - [Team and organisations](/{{page.collection}}/references/account/team-accounts.html)
    - Fast response 100% SLA DNS layer [failover groups]({% if page.collection == "maestro" %}/maestro/tutorials/failover-groups.html{% else %}/{{page.collection}}/tutorials/failover-groups.html{% endif %}) for quick traffic switch overs
-   - [Server vital sign metrics]({% if page.collection== 'skycap' %}/maestro/how-to-guides/deployment/setting-up-custom-livelogs.html{%else%}/{{page.collection}}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html{%endif%})
+   - [Server vital sign metrics]({% if page.collection== 'skycap' %}/maestro/how-to-guides/deployment/setting-up-custom-livelogs.html{%else%}/{{page.collection}}/how-to-guides/deployment/setting-up-custom-livelogs.html{%endif%})
    - [Intuitive UI](https://app.cloud66.com/dashboard)
    - [API](http://developers.cloud66.com) and [command line](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html)
 
