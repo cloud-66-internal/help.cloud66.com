@@ -3,33 +3,16 @@
 
 Your servers are deployed with **Ubuntu 16.04 LTS**.
 
-
-{% if include.product != 'maestro' %}
 ## Supported cloud providers
 
 Cloud 66 currently supports the following cloud providers:
-*   [Amazon Web Services](/{{page.collection}}/references/clouds/cloud-aws.html)
-*   [Digital Ocean](/{{page.collection}}/references/clouds/cloud-do.html)
-*   [Google Compute Engine](/{{page.collection}}/references/clouds/cloud-gce.html)
-*   [Linode](/{{page.collection}}/references/clouds/cloud-linode.html)
-*   [Microsoft Azure](/{{page.collection}}/references/clouds/cloud-azure.html)
-*   [Rackspace](/{{page.collection}}/references/clouds/cloud-rackspace.html)
-*   [CloudA](/{{page.collection}}/references/clouds/cloud-clouda.html)
-{% endif %}
-
-
-{% if include.product == 'maestro' %}
-## Supported cloud providers
-
-Cloud 66 currently supports the following cloud providers:
-*   [Amazon Web Services](/maestro/how-to-guides/clouds/cloud-aws.html)
-*   [Digital Ocean](/maestro/how-to-guides/clouds/cloud-do.html)
-*   [Google Compute Engine](/maestro/how-to-guides/clouds/cloud-gce.html)
-*   [Linode](/maestro/how-to-guides/clouds/cloud-linode.html)
-*   [Microsoft Azure](/maestro/how-to-guides/clouds/cloud-azure.html)
-*   [Rackspace](/maestro/how-to-guides/clouds/cloud-rackspace.html)
-*   [CloudA](/maestro/how-to-guides/clouds/cloud-clouda.html)
-{% endif %}
+*   [Amazon Web Services](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html)
+*   [Digital Ocean](/{{page.collection}}/how-to-guides/clouds/cloud-do.html)
+*   [Google Compute Engine](/{{page.collection}}/how-to-guides/clouds/cloud-gce.html)
+*   [Linode](/{{page.collection}}/how-to-guides/clouds/cloud-linode.html)
+*   [Microsoft Azure](/{{page.collection}}/how-to-guides/clouds/cloud-azure.html)
+*   [Rackspace](/{{page.collection}}/how-to-guides/clouds/cloud-rackspace.html)
+*   [CloudA](/{{page.collection}}/how-to-guides/clouds/cloud-clouda.html)
 
 
 ## Supported frameworks

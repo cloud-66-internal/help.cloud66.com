@@ -100,5 +100,5 @@ To add a slave database server you need to follow the below steps. To add multip
 
 From time-to-time your slave database may go out of sync with its master. You can use our toolbelt to re-synchronize them.
 
-To re-synch them, have a look at our documentation on [Toolbelt database management](/{{page.collection}}/references/shells/toolbelt.html#database-management).
+To re-synch them, have a look at our documentation on [Toolbelt database management](/{{page.collection}}/references/toolbelt.html#database-management).
 

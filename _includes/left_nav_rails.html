@@ -54,6 +54,16 @@
             {% include left_nav_list.html section=security current=page %}
         </ul>
 
+        
+        <ul class="menu-root">
+            {% assign clouds = include.collection | where:"categories","how-to-guides/clouds" | sort: "order" %}
+
+            <li><h3><a href="/rails/how-to-guides/clouds">How-to: Cloud providers</a></h3></li>
+            {% include left_nav_list.html section=clouds current=page %}
+        </ul>
+
+
+
 	   <ul class="menu-root">
             {% assign add-ins = include.collection | where:"categories","how-to-guides/add-ins" | sort: "order" %}
             <li><h3><a href="/rails/how-to-guides/add-ins">How-to: Add-ins</a></h3></li>
@@ -69,7 +79,14 @@
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","references" | sort: "order" %}
-            <li><h3><a href="/rails/references">References</a></h3></li>
+            <li><h3><a href="/rails/references">Reference guides</a></h3></li>
+            {% include left_nav_list.html section=section current=page %}
+        </ul>
+
+
+        <ul class="menu-root">
+            {% assign section = include.collection | where:"categories","accounts" | sort: "order" %}
+            <li><h3><a href="/rails/account">Account management</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 

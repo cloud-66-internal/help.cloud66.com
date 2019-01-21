@@ -55,6 +55,13 @@
         </ul>
 
 	   <ul class="menu-root">
+            {% assign add-ins = include.collection | where:"categories","how-to-guides/clouds" | sort: "order" %}
+            <li><h3><a href="/node/how-to-guides/clouds">How-to: Cloud Providers</a></h3></li>
+       {% include left_nav_list.html section=clouds current=page %}
+        </ul>
+
+
+	   <ul class="menu-root">
             {% assign add-ins = include.collection | where:"categories","how-to-guides/add-ins" | sort: "order" %}
             <li><h3><a href="/node/how-to-guides">How-to: Add-ins</a></h3></li>
        {% include left_nav_list.html section=add-ins current=page %}

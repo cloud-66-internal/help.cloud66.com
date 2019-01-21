@@ -34,7 +34,7 @@ Given that Padrino applications can have different database frameworks, we allow
   </li>
 </ul>
 
-These commands can be set via [Toolbelt](/rails/references/shells/toolbelt.html#settings-variables),
+These commands can be set via [Toolbelt](/rails/references/toolbelt.html#settings-variables),
 
 <pre class="prettyprint">
 $ cx settings set -s my_stack custom.build.command "rake db:seed"
