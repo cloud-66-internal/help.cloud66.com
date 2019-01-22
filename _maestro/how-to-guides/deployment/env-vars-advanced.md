@@ -125,7 +125,7 @@ or
 `_env(STACK[APP_UID].ENV_VAR)`. 
 
 #### Note
-<div class="notice"><p>This syntax still uses the term "stack" which in the processing of being deprecated in Maestro. "Stack" means, for all intents and purposes, the same thing as "application".</div></p>
+<div class="notice"><p>This syntax still uses the term "stack" which in the processing of being deprecated in Maestro. "Stack" means, for all intents and purposes, the same thing as "application".</p></div>
 
 
 ### Intra-service referencing
