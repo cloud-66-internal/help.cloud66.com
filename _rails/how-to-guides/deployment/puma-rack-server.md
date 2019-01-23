@@ -1,15 +1,13 @@
 ---
 layout: post
 template: one-col
-title:  "About running apps with Puma rack server"
-categories: tutorials
+title:  "Deploying Puma rack server"
+categories: how-to-guides/deployment
 lead: Run your Rack apps with Puma
 tags: ['Web server']
 legacy: false
 permalink: /:collection/:path
 ---
-
-
 
 [Puma](http://puma.io/) is a light-weight Rack server built for speed and parallelism. Cloud 66 uses the following signals to control Puma:
 
@@ -56,7 +54,7 @@ Take note that Puma is running in Daemon mode with the `-d` parameter.
 <div class="notice notice-warning">
     <h3>Warning</h3>
     <p>Should you have any issues, please ensure that you are using an up-to-date version of Puma with the correct configurations.</p>
-    <p>We recommend that you run <a href="/rails/tutorials/unicorn-rack-server.html">Unicorn</a>, as you may have to handle server restarts manually with Puma.</p>
+    <p>We recommend that you run <a href="/rails/how-to-guides/deployment/unicorn-rack-server.html">Unicorn</a>, as you may have to handle server restarts manually with Puma.</p>
 </div>
 
 To solve the issue of manual restarts with Puma, you can use an <i>after_rails</i> [deploy hook](/rails/tutorials/deploy-hooks.html) to manually run the following command in case you find that it is not responding to the SIGUSR2 that Cloud 66 issues.

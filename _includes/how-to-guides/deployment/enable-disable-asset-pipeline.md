@@ -21,7 +21,7 @@ Setting this value to false means that your application doesn't use the asset pi
 
 ### Manifest.yml
 
-Use our [Cloud 66 manifest file](/{{page.collection}}/tutorials/getting-started-with-manifest.html) to enable/disable asset pipeline pre-compilation using the following parameter with a true or false, find an example below:
+Use our [Cloud 66 manifest file](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) to enable/disable asset pipeline pre-compilation using the following parameter with a true or false, find an example below:
 
 ```
 development:

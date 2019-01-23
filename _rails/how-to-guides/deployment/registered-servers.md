@@ -2,14 +2,12 @@
 layout: post
 template: one-col
 title: Cloud 66 support for registered servers
-categories: tutorials
+categories: how-to-guides/deployment
 lead: ""
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
 ---
-
-
 
 ## About registered servers
 

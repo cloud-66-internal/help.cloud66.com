@@ -1,14 +1,13 @@
 ---
 layout: post
 template: one-col
-title: What are backup verifiers?
-categories: tutorials
+title: Using backup verifiers
+categories: how-to-guides/databases
 lead: ""
 legacy: false
 tags: ["databases"]
 permalink: /:collection/:path
 ---
-
 
 ### Note:
 

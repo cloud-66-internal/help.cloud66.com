@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: About database replication
-categories: tutorials
+categories: how-to-guides/databases
 lead: ""
 legacy: false
 tags: ["MySQL", "PostgreSQL", "MongoDB", "Redis"]
@@ -13,6 +13,7 @@ permalink: /:collection/:path
 Database replication involves configuring a master and slave database architecture, whereby the slave is an exact replica of the master at all times. This feature is supported for MySQL, PostgreSQL, Redis and MongoDB databases.
 
 Database replication can be set up for a single stack, or between stacks, with various benefits:
+
 **Single stack**
 
 - Improved read performance: The slave server only allows reads and is ideal for use with reporting tools, and any database backups are taken from the slave rather than the master.

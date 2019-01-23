@@ -23,7 +23,7 @@ Web logs are stored in <code>$STACK_PATH/log</code>:
 <li>Nginx error log: <pre class="terminal">$STACK_PATH/log/nginx_error.log</pre></li>
 </ul>
 
-If you are using a [custom web server](/rails/tutorials/custom-web-servers.html), such as [Unicorn](/rails/tutorials/unicorn-rack-server.html), you can find your web server bluepill logs in <code>/tmp/web_server_bluepill.log</code>.
+If you are using a [custom web server](/rails/tutorials/custom-web-servers.html), such as [Unicorn](/rails/how-to-guides/deployment/unicorn-rack-server.html), you can find your web server bluepill logs in <code>/tmp/web_server_bluepill.log</code>.
 {%endif%}
 
 <h3>Background processes</h3>
@@ -46,5 +46,5 @@ Logs for background processes can also be found in <code>$STACK_PATH/log</code>,
 Your logs in `$STACK_PATH/log` and `/var/log` are automatically rotated on a daily basis and by default kept for 14 days into a sub-directory called archive/ in each respective directory. These logs are compressed, and can be uncompressed with the following command: `gzip -d <log_file>.log.gz`.
 
 <div class="notice">
-  <h3>Note</h3><p>You can set the frequency and the number of rotations to be kept <a href="{% if page.collection == "maestro" %}/maestro/references/toolbelt.html#list-your-stack-settings{%else%}/{{page.collection}}/references/shells/toolbelt.html#list-your-stack-settings{%endif%}">using toolbelt</a>.</p>
+  <h3>Note</h3><p>You can set the frequency and the number of rotations to be kept <a href="{% if page.collection == "maestro" %}/maestro/references/toolbelt.html#list-your-stack-settings{%else%}/{{page.collection}}/references/toolbelt.html#list-your-stack-settings{%endif%}">using toolbelt</a>.</p>
 </div>

@@ -9,8 +9,8 @@ Cloud 66 provides two types of backups: _managed_ and _unmanaged_.
 Having managed backups carries several benefits:
 
 - You can download database backups through the web UI and API
-- {% if page.collection == 'rails' %}[Backup verifiers](/rails/tutorials/backup-verifiers.html) ensure that your backups actually contain what you expect{%endif%}
-- Use [database replication](/rails/tutorials/database-replication.html) to scale your databases
+- {% if page.collection == 'rails' %}[Backup verifiers](/rails/how-to-guides/databases/backup-verifiers.html) ensure that your backups actually contain what you expect{%endif%}
+- Use [database replication](/rails/how-to-guides/databases/database-replication.html) to scale your databases
 - You can easily restore database backups
 - Stored in Cloud 66 storage
 
@@ -83,7 +83,7 @@ This option applies to **text** MySQL and PostgreSQL and redis backups. With thi
 You can retrieve your backup in one of three ways:
 
 <h4 id="dl_toolbelt">Cloud 66 toolbelt</h4> 
-You can retrieve your database backup by using the [toolbelt backup management]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/shells/toolbelt.html{%endif%}#about-backup-management). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
+You can retrieve your database backup by using the [toolbelt backup management]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#about-backup-management). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
 
 <h4 id="dl_script">Download script</h4> 
 

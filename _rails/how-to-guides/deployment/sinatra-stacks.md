@@ -1,24 +1,23 @@
 ---
 layout: post
 template: one-col
-title:  "Managing a Padrino stacks with Cloud 66"
-categories: tutorials
-lead: Cloud 66 makes it easy to deploy and maintain Padrino apps
+title:  "Managing a Sinatra stack"
+categories: how-to-guides/deployment
+lead: Cloud 66 makes it easy to deploy and maintain Sinatra apps
 tags: ['operations']
 legacy: false
 permalink: /:collection/:path
 ---
 
-
-Cloud 66 supports stacks based on the [Padrino framework](http://www.padrinorb.com/), a light-weight web framework built upon [Sinatra](/rails/tutorials/sinatra-stacks.html).
+Cloud 66 supports stacks based on the [Sinatra framework](http://www.sinatrarb.com/), a light-weight web framework written in Ruby.
 
 <h2 id="custom">Custom commands</h2>
-Given that Padrino applications can have different database frameworks, we allow you to specify custom commands which are run at specific points during deployment:
+Given that Sinatra applications can have different database frameworks, we allow you to specify custom commands which are run at specific points during deployment:
 
 <ul class="list">
   <li>
     <p>
-    <strong>Custom build command</strong> &mdash; This command will run every time until the first build is successful. Example:
+      <strong>Custom build command</strong> &mdash; This command will run every time until the first build is successful. Example:
     </p>
     <p>
       <kbd>bundle exec rake db:seed</kbd>
@@ -26,13 +25,14 @@ Given that Padrino applications can have different database frameworks, we allow
   </li>
   <li>
     <p>
-      <strong>Custom deploy command</strong> &mdash; This command will run on every deployment (including initial build). Example:
+<strong>Custom deploy command</strong> &mdash; This command will run on every deployment (including initial build). Example:
     </p>
     <p>
       <kbd>bundle exec rake db:migrate</kbd>
     </p>
   </li>
 </ul>
+
 
 These commands can be set via [Toolbelt](/rails/references/toolbelt.html#settings-variables),
 
@@ -42,30 +42,30 @@ $ cx settings set -s my_stack custom.build.command "rake db:seed"
 $ cx settings set -s my_stack custom.deploy.command "rake db:migrate"
 </pre>
 
-But also in your [manifest file](/rails/tutorials/getting-started-with-manifest.html).
+But also in your [manifest file](/rails/quickstarts/getting-started-with-manifest.html).
 
 <pre class="prettyprint">
 development:
-    padrino:
+    sinatra:
         configuration:
             custom_build_command: rake db:seed
             custom_deploy_command: rake db:migrate
 </pre>
 
 <h2 id="connect">Connect to your database</h2>
-If a database is detected, it will automatically be provisioned as required (including the database itself), and environment variables will be created. You will need to update your code with the environment variables you wish to use, for example `MYSQL_URL`.
+If a database is detected, they will automatically be provisioned as required (including the database itself), and environment variables will be created. You will need to update your code with the environment variables you wish to use, for example `MYSQL_URL`.
 
 Should you wish to change the database username/password after build, you will have to do this manually, which will involve recreating backup jobs to reflect the new values.
 
-<h3>Examples of connecting to your database</h3>
 <div class="notice">
     <h3>Note</h3>
   <p>You can use <a href="http://yamllint.com/" target="_blank">Yamllint.com</a> to check your YAML syntax before committing.</p>
 </div>
 
-<h2>Active Record</h2>
+<h3>Examples of connecting to your database:</h3>
+<h3>Active Record</h3>
 
-<h3>MySQL YML</h3>
+**MySQL YML**
 
 <pre class="prettyprint">
 production:
@@ -103,16 +103,19 @@ ActiveRecord::Base.configurations[:development] = {
 </pre>
 
 <h3>DataMapper</h3>
+
 <pre class="prettyprint">
 DataMapper::setup(:default, "ENV['POSTGRESQL_URL']")
 </pre>
 
 <h3>MongoMapper</h3>
+
 <pre class="prettyprint">
 MongoMapper.connection = Mongo::Connection.from_uri(ENV['MONGODB_URL'])
 </pre>
 
 <h3>Mongoid</h3>
+
 <pre class="prettyprint">
 development:
   sessions:
@@ -121,5 +124,10 @@ development:
       hosts: ["<%= ENV['MONGODB_ADDRESS']%>:27017"]
 </pre>
 
-<h2 id="example">Example application</h2>
-* <a href="https://app.cloud66.com/stacks/new?eduid=padrino_mysql" target="_blank">Padrino with MySQL</a>
+<h2 id="example">Example applications</h2>
+
+* <a href="https://app.cloud66.com/stacks/new?eduid=sinatra_mongodb" target="_blank">Sinatra and MongoDB</a>
+* <a href="https://app.cloud66.com/stacks/new?eduid=sinatra_mysql_ar" target="_blank">Sinatra and MySQL ActiveRecord</a>
+* <a href="https://app.cloud66.com/stacks/new?eduid=sinatra_psql_dm" target="_blank">Sinatra and PSQL DataMapper</a>
+* <a href="https://app.cloud66.com/stacks/new?eduid=sinatra_mysql_dm" target="blank">Sinatra and MySQL DataMapper</a>
+* <a href="https://app.cloud66.com/stacks/new?eduid=sinatra_redis" target="blank">Sinatra and Redis</a>

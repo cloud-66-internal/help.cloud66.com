@@ -23,4 +23,4 @@ rails:
 ```
 
 #### Applying changes
-<div class="notice notice-warning"><p>To apply changes to the Node version you need to update your manifest file, then <a href="/rails/tutorials/applying-upgrades.html#types">deploy-with-options</a> and select the <em>Apply Ruby/Node upgrades</em> option.</p></div>
+<div class="notice notice-warning"><p>To apply changes to the Node version you need to update your manifest file, then <a href="/rails/how-to-guides/deployment/applying-upgrades.html#types">deploy-with-options</a> and select the <em>Apply Ruby/Node upgrades</em> option.</p></div>

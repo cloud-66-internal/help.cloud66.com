@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "About Custom web servers"
+title:  "Using custom web servers with Cloud 66 for Rails"
 categories: tutorials
 lead: Run your Rack apps with Passenger, Puma, Unicorn or Thin
 legacy: false
@@ -11,10 +11,10 @@ permalink: /:collection/:path
 
 By default, stacks deployed by Cloud 66 run on <a href="https://www.phusionpassenger.com/" target="_blank">Phusion Passenger</a> behind <a href="http://wiki.nginx.org/Main" target="_blank">Nginx</a>. You can also choose to use one of several servers:
 
-- [Passenger Enterprise](/rails/tutorials/passenger-enterprise.html)
-- [Puma](/rails/tutorials/puma-rack-server.html)
-- [Unicorn](/rails/tutorials/unicorn-rack-server.html)
-- [Thin](/rails/tutorials/thin-rack-server.html)
+- [Passenger Enterprise](/rails/how-to-guides/deployment/passenger-enterprise.html)
+- [Puma](/rails/how-to-guides/deployment/puma-rack-server.html)
+- [Unicorn](/rails/how-to-guides/deployment/unicorn-rack-server.html)
+- [Thin](/rails/how-to-guides/deployment/thin-rack-server.html)
 
 <div class="notice">
     <h3>Important</h3>

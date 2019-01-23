@@ -50,7 +50,7 @@ Yes. As Cloud 66 will be provisioning services on your servers from scratch, the
 
 ## Are their any requirements for the user on my servers?
 
-Yes. As Cloud 66 will be provisioning services on your servers from scratch, the server must meet a number of requirements outlined in the [Registered servers](/{{page.collection}}/tutorials/registered-servers.html) documentation.
+Yes. As Cloud 66 will be provisioning services on your servers from scratch, the server must meet a number of requirements outlined in the [Registered servers](/{{page.collection}}/how-to-guides/deployment/registered-servers.html) documentation.
 
 {%endif%}
 

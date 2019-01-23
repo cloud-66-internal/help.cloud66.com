@@ -47,12 +47,15 @@
             {% include left_nav_list.html section=section current=page %}
             {% assign section = include.collection | where:"categories","references/toolbelt" | sort: "order" %}
             {% include left_nav_list.html section=section current=page %}
-            {% assign section = include.collection | where:"categories","references/accounts" | sort: "order" %}
-            {% include left_nav_list.html section=section current=page %}
-            {% assign section = include.collection | where:"categories","references/clouds" | sort: "order" %}
-            {% include left_nav_list.html section=section current=page %}
 
         </ul>
+
+        <ul class="menu-root">
+            <li><h3><a href="/{{product}}/account">Account management </a></h3></li>
+            {% assign section = include.collection | where:"categories","accounts" | sort: "order" %}
+            {% include left_nav_list.html section=section current=page %}
+        </ul>
+
 
 
         <ul class="menu-root">

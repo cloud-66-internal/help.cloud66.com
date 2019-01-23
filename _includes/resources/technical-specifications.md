@@ -36,7 +36,7 @@ Cloud 66 maintains an internal list of versions for most components built from s
 {% if include.product == 'maestro' %}
 You are free to specify a version for a number of components in your [manifest file](/maestro/quickstarts/getting-started-with-manifest.html).
 {% else %}
-You are free to specify a version for a number of components in your [manifest file](/{{page.collection}}/tutorials/getting-started-with-manifest.html).
+You are free to specify a version for a number of components in your [manifest file](/{{page.collection}}/quickstarts/getting-started-with-manifest.html).
 {%endif%}
 
 #### Warning

@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "About your Stack Network Settings"
+title:  "Application Network Settings"
 legacy: false
-categories: tutorials
+categories: references
 lead: Configure security and network settings
 tags: ['network']
 permalink: /:collection/:path

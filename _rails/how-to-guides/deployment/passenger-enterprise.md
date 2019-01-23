@@ -1,8 +1,8 @@
 ---
 layout: post
 template: one-col
-title:  "What is Passenger Enterprise?"
-categories: tutorials
+title:  "Deploying Passenger Enterprise"
+categories: how-to-guides/deployment
 lead: Cloud 66 supports deploying with Passenger Enterprise
 legacy: false
 tags: ['Web server']

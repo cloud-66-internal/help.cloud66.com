@@ -1,8 +1,8 @@
 ---
 layout: post
 template: one-col
-title:  "About running apps with Unicorn rack server"
-categories: tutorials
+title:  "Deplying with Unicorn rack server"
+categories: how-to-guides/deployment
 lead: Run your Rack apps with Unicorn
 tags: ['Web server']
 legacy: false
@@ -10,38 +10,6 @@ permalink: /:collection/:path
 ---
 
 [Unicorn](http://unicorn.bogomips.org/) is a Rack HTTP server that uses forked processes to handle multiple incoming requests concurrently.
-
-Cloud 66 uses the following signals to control Unicorn:
-
-### Kill the web server
-
-- kill -QUIT &lt;pid>: Stop the process
-- kill -USR2 &lt;pid>: Spin off another master process.
-- kill -s TTIN &lt;pid>: Add a new worker to the master process
-
-### Stop the web server
-<p>
-<kbd>
-	sudo bluepill cloud66_web_server stop
-</kbd>
-</p>
-
-### Start the web server
-<p>
-<kbd>
-	sudo bluepill cloud66_web_server quit
-</kbd><br/>
-<kbd>
-	sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill
-</kbd>
-</p>
-
-### Restart the web server (zero-downtime)
-<p>
-<kbd>
-	sudo bluepill cloud66_web_server restart
-</kbd>
-</p>
 
 <h2 id="deploy">Deploy with Unicorn</h2>
 You need to choose your web server at the time of initial build of the stack. Changes to or from Passenger (the default web server) will not be applied after your stack has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
@@ -100,3 +68,38 @@ after_fork do |server, worker|
 		ActiveRecord::Base.establish_connection
 end
 {% endhighlight %}
+
+## Controlling your Unicorn server
+
+Cloud 66 uses the following signals to control Unicorn:
+
+### Kill the web server
+
+- kill -QUIT &lt;pid>: Stop the process
+- kill -USR2 &lt;pid>: Spin off another master process.
+- kill -s TTIN &lt;pid>: Add a new worker to the master process
+
+### Stop the web server
+<p>
+<kbd>
+	sudo bluepill cloud66_web_server stop
+</kbd>
+</p>
+
+### Start the web server
+<p>
+<kbd>
+	sudo bluepill cloud66_web_server quit
+</kbd><br/>
+<kbd>
+	sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill
+</kbd>
+</p>
+
+### Restart the web server (zero-downtime)
+<p>
+<kbd>
+	sudo bluepill cloud66_web_server restart
+</kbd>
+</p>
+
