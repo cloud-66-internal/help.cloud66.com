@@ -3,7 +3,8 @@ layout: post
 template: one-col
 title: Running the Rails Console
 categories: how-to-guides/deployment
-lead: ""
+order: 1
+lead: "How to run the Rails console for your Cloud 66 application"
 tags: ["debugging"]
 legacy: false
 

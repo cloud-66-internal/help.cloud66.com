@@ -2,6 +2,7 @@
 layout: post
 title: Deploying Your First Rails App
 categories: quickstarts
+order: 1
 legacy: false
 tags: ["getting started"]
 lead: Deploy your first Rails app to any cloud

@@ -1,8 +1,8 @@
 ---
 layout: post
 template: one-col
-title:  "Deploying with Thin rack server"
-categories: how-to-guides/deployment
+title:  "Using Thin rack server"
+categories: how-to-guides/rack-servers
 lead: Run your Rack apps with Thin
 tags: ['Web server']
 legacy: false

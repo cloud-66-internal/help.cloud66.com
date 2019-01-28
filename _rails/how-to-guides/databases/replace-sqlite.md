@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Replacing SQLite with MySQL or PostgreSQL
+title: Replacing SQLite
 categories: how-to-guides/databases
-lead: ""
+order: 40
+lead: "How to replace a default SQLite server with MySQL or PostgreSQL"
 tags: ["postgresql","sqlite","mysql"]
 legacy: false
 permalink: /:collection/:path

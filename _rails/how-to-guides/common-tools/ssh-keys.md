@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Setting Up SSH Keys
+title: Generating local SSH Keys
 categories: how-to-guides/common-tools
-lead: ""
+order: 7
+lead: "How to generate SSH keys on your local machine"
 legacy: false
 tags: ["debugging"]
 

@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: About database replication
+title: Configuring database replication
 categories: how-to-guides/databases
-lead: ""
+order: 4
+lead: "How to set up replication between your databases"
 legacy: false
 tags: ["MySQL", "PostgreSQL", "MongoDB", "Redis"]
 permalink: /:collection/:path

@@ -1,14 +1,14 @@
 ---
 layout: post
 template: one-col
-title:  "Managing Padrino stacks"
+title:  "Managing a Padrino application"
 categories: how-to-guides/deployment
-lead: Cloud 66 makes it easy to deploy and maintain Padrino apps
+order: 25
+lead: How to deploy and manage Padrino apps with Cloud 66
 tags: ['operations']
 legacy: false
 permalink: /:collection/:path
 ---
-
 
 Cloud 66 supports stacks based on the [Padrino framework](http://www.padrinorb.com/), a light-weight web framework built upon [Sinatra](/rails/how-to-guides/deployment/sinatra-stacks.html).
 

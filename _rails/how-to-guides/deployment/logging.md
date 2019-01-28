@@ -3,7 +3,8 @@ layout: post
 template: one-col
 title:  "Managing log files"
 categories: how-to-guides/deployment
-lead: Cloud 66 makes it easy to handle your stack logs
+order: 30
+lead: Managing application logs with Cloud 66 for Rails
 tags: ['Logs']
 legacy: false
 permalink: /:collection/:path

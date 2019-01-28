@@ -2,8 +2,8 @@
 layout: post
 template: one-col
 title: Scaling your GlusterFS cluster
-categories: how-to-guides/databases
-lead: ""
+categories: how-to-guides/scaling
+lead: "How to scale  your GlusterFS cluster through Cloud 66"
 legacy: false
 tags: ["GlusterFS"]
 permalink: /:collection/:path

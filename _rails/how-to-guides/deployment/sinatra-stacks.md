@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title:  "Managing a Sinatra stack"
+title:  "Managing a Sinatra application"
 categories: how-to-guides/deployment
-lead: Cloud 66 makes it easy to deploy and maintain Sinatra apps
+order: 24
+lead: How to deploy and manage Sinatra apps with Cloud 66
 tags: ['operations']
 legacy: false
 permalink: /:collection/:path

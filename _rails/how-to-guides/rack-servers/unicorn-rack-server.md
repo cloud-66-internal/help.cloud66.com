@@ -1,8 +1,8 @@
 ---
 layout: post
 template: one-col
-title:  "Deplying with Unicorn rack server"
-categories: how-to-guides/deployment
+title:  "Using Unicorn Rack server"
+categories: how-to-guides/rack-servers
 lead: Run your Rack apps with Unicorn
 tags: ['Web server']
 legacy: false

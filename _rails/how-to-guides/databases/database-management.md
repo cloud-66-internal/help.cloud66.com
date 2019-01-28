@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "Managing your database with Cloud 66"
+title:  "Managing databases with Cloud 66"
 categories: how-to-guides/databases
+order: 1
 lead: Deploying and managing your database with Cloud 66
 tags: ['database']
 legacy: false

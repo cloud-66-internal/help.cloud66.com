@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: How to achieve Multi Tenancy for Stacks
+title: Configuring for multi-tenancy
 categories: how-to-guides/deployment
-lead: ""
+order: 80
+lead: "Configuring Cloud 66 applications to use a single server"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path
@@ -13,7 +14,7 @@ permalink: /:collection/:path
 
 ## Overview
 
-Sometimes you need to run multiple applications on the same stack. This could be because none of those applications has enough traffic to justify having a dedicated stack for itself or it could be because all the apps on the stack share many resources. What ever the reason, you can achieve multi-tenancy for your stacks with Cloud 66 for Docker.
+Sometimes you need to run multiple applications on the same server. This could be because none of those applications has enough traffic to justify having a dedicated stack for itself or it could be because all the apps on the stack share many resources. What ever the reason, you can achieve multi-tenancy for your stacks with [Maestro](https://www.cloud66.com/containers/maestro).
 
 
 ## Multiple Services

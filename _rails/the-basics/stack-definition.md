@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: What is a stack?
+title: Concepts & Terminology
 categories: the-basics
-lead: ""
+order: 1
+lead: "Defining the concepts and terms used in this documentation"
 legacy: false
 tags: ["getting-started"]
 permalink: /:collection/:path

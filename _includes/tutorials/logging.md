@@ -23,7 +23,7 @@ Web logs are stored in <code>$STACK_PATH/log</code>:
 <li>Nginx error log: <pre class="terminal">$STACK_PATH/log/nginx_error.log</pre></li>
 </ul>
 
-If you are using a [custom web server](/rails/tutorials/custom-web-servers.html), such as [Unicorn](/rails/how-to-guides/deployment/unicorn-rack-server.html), you can find your web server bluepill logs in <code>/tmp/web_server_bluepill.log</code>.
+If you are using a [custom web server](/rails/tutorials/custom-web-servers.html), such as [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html), you can find your web server bluepill logs in <code>/tmp/web_server_bluepill.log</code>.
 {%endif%}
 
 <h3>Background processes</h3>

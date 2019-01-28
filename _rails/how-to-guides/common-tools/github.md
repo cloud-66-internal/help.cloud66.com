@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Use GitHub with Cloud 66
+title: Using GitHub with Cloud 66
 categories: how-to-guides/common-tools
 lead: ""
 tags: ["git","github"]

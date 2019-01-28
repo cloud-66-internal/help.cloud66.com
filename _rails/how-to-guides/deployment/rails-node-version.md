@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Setting Node Version 
+title: Setting your Node version 
 categories: how-to-guides/deployment
-lead: ""
+order: 50
+lead: "Choosing which version of Node is installed with your Rack/Rails applications"
 tags: ["debugging"]
 legacy: false
 

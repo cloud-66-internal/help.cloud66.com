@@ -2,7 +2,6 @@
 layout: post
 template: one-col
 title:  "How-to: Config & Deployment"
-categories: how-to-guides
 lead: How to configure and deploy Rails applications using Cloud 66
 legacy: false
 permalink: /:collection/how-to-guides/deployment/index.html

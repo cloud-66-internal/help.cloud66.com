@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Cloud 66 support for WebSocket
+title: Configuring WebSocket
 categories: how-to-guides/deployment
-lead: ""
+order: 20
+lead: "How to configure Websocket for a Cloud 66 Rails application"
 legacy: false
 tags: ["websocket"]
 

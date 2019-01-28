@@ -1,12 +1,14 @@
 ---
 layout: post
 template: one-col
-title: Manage your stacks from Slack with ChatOps
+title: Using redeployment hooks
 categories: how-to-guides/deployment
 lead: ""
 legacy: false
 tags: ["operations"]
-
 permalink: /:collection/:path
 ---
-{% include how-to-guides/deployment/manage-stacks-chatops.md %}
+
+{% assign product = 'Node' %}
+
+{% include tutorials/redeployment-hook.md product = product %}

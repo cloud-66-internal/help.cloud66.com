@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: How to achieve zero-downtime deployments
+title: Zero-downtime deployments
 categories: how-to-guides/deployment
-lead: ""
+order: 80
+lead: "How to minimize downtime during deployments"
 legacy: false
 tags: ["high-availability"]
 

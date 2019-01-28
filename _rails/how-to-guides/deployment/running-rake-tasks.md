@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Running Rake Tasks
+title: Running Rake tasks
 categories: how-to-guides/deployment
-lead: ""
+order: 2
+lead: "Running Rake tasks on your Cloud 66 application"
 legacy: false
 tags: ["debugging"]
 

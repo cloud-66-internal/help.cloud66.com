@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "About SSL certificate"
+title:  "Using the SSL certificate add-in"
 categories: how-to-guides/add-ins
-lead: SSL certificate add-in
+lead: Add SSL certificate(s) to your application
 legacy: false
 tags: ['Add in', 'Security']
 permalink: /:collection/:path

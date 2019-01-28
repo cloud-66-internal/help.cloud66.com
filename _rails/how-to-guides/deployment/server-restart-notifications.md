@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "What is the server restart notification?"
-categories: tutorials
+title:  "Managing required restarts"
+categories: how-to-guides/deployment
+order: 80
 lead: Cloud 66 server restart notifications
 tags: ['server','notifications']
 legacy: false

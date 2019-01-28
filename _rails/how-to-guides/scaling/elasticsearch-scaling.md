@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Scaling your Elasticsearch cluster
-categories: how-to-guides/databases
-lead: ""
+title: Scaling Elasticsearch clusters
+categories: how-to-guides/scaling
+lead: "How to scale your Elasticsearch clusters through the Cloud 66"
 legacy: false
 tags: ["Elasticsearch"]
 permalink: /:collection/:path

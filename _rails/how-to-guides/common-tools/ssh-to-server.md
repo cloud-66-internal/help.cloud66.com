@@ -3,8 +3,9 @@ layout: post
 template: one-col
 title:  "How to SSH to your Server"
 categories: how-to-guides/common-tools
+order: 2
 legacy: false
-lead: Connect directly to your servers for full control 
+lead: Connect directly to your servers via secure shell 
 tags: ['SSH', 'shell']
 permalink: /:collection/:path
 ---

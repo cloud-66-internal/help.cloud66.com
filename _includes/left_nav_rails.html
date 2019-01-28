@@ -16,7 +16,7 @@
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","quickstarts" | sort: "order" %}
 
-            <li><h3><a href="/rails/quickstarts">Quickstarts</a></h3></li>
+            <li><h3><a href="/rails/quickstarts">Getting Started</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
@@ -41,6 +41,12 @@
             {% include left_nav_list.html section=deployment current=page %}
         </ul>
 
+ 	   <ul class="menu-root">
+            {% assign rack = include.collection | where:"categories","how-to-guides/rack-servers" | sort: "order" %}
+            <li><h3><a href="/rails/how-to-guides/rack-servers">How-to: Rack servers</a></h3></li>
+            {% include left_nav_list.html section=rack current=page %}
+        </ul>
+
         <ul class="menu-root">
             {% assign databases = include.collection | where:"categories","how-to-guides/databases" | sort: "order" %}
             <li><h3><a href="/rails/how-to-guides/databases">How-to: Databases</a></h3></li>
@@ -62,7 +68,11 @@
             {% include left_nav_list.html section=clouds current=page %}
         </ul>
 
-
+	   <ul class="menu-root">
+            {% assign scaling = include.collection | where:"categories","how-to-guides/scaling" | sort: "order" %}
+            <li><h3><a href="/rails/how-to-guides/scaling">How-to: Scaling</a></h3></li>
+       {% include left_nav_list.html section=scaling current=page %}
+        </ul>
 
 	   <ul class="menu-root">
             {% assign add-ins = include.collection | where:"categories","how-to-guides/add-ins" | sort: "order" %}

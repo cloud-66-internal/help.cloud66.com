@@ -1,6 +1,6 @@
 
 Whether working in a team or by yourself, it's always useful to have an overview of your deployment history. This history includes
-information about who deployed, when they deployed, what code revision was deployed and how the deployment was triggered (web, [API](http://developers.cloud66.com) or [redeployment hook](/{{page.collection}}/tutorials/redeployment-hook.html)). In addition to this, you can also revert back to previous commits if need be.
+information about who deployed, when they deployed, what code revision was deployed and how the deployment was triggered (web, [API](http://developers.cloud66.com) or [redeployment hook](/{{page.collection}}/how-to-guides/deployment/redeployment-hook.html)). In addition to this, you can also revert back to previous commits if need be.
 
 Reverting to a previous commit will only affect your code - you might still need to restore a [database backup](/{{page.collection}}/how-to-guides/add-ins/database-backups.html). If you wish, you can [switch off your database migrations](/{{page.collection}}/how-to-guides/databases/database-customization.html), roll back your database and then roll back your code.
 

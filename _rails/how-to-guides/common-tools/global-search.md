@@ -1,7 +1,8 @@
 ---
 layout: post
 template: one-col
-title:  "Global Search"
+title:  "Using Global Search"
+order: 1
 categories: how-to-guides/common-tools
 lead: Powerful search for your infrastructure
 legacy: false
