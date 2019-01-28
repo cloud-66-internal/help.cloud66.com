@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title:  "Using the RabbitMQ Add-in"
 categories: how-to-guides/add-ins
+order: 10
 lead: Add RabbitMQ to your stack with ease
 tags: ['Add in']
 legacy: false

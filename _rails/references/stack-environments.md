@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: What are the Stack Environments?
+title: Application Environments
 categories: references
-lead: ""
+order: 5
+lead: "Understanding different application environments"
 legacy: false
 tags: ["Environments"]
 permalink: /:collection/:path

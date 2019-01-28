@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Recommended minimum server sizes
 categories: references
+order: 20
 lead: "Choosing the right server size"
 legacy: false
 tags: ["performance"]

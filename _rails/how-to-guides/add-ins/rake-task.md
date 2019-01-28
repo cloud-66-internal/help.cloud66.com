@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title:  "Using the Rake task add-in"
 categories: how-to-guides/add-ins
+order: 10
 lead: Execute a rake task on your server(s)
 tags: ['Add in']
 legacy: false

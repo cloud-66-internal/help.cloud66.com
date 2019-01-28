@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Scaling your Elasticsearch cluster
-categories: how-to-guides/databases
+categories: how-to-guides/scaling
 lead: ""
 legacy: false
 tags: ["Elasticsearch"]

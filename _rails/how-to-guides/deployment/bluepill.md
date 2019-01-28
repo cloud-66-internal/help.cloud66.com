@@ -6,7 +6,7 @@ categories: how-to-guides/deployment
 lead: "Manage background workers in your application"
 legacy: false
 tags: ["code","workers"]
-order: 100
+order: 10
 
 permalink: /:collection/:path
 ---
