@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "How to SSH to your Server"
+title:  "How to SSH to your servers"
 categories: how-to-guides/common-tools
 order: 2
 legacy: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Migrate from Heroku to Cloud66
+title: Migrating from Heroku to Cloud66
 categories: quickstarts
 order: 4
 lead: "Move your Rails application from Heroku over to your own servers"

@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: How to use Let's Encrypt
+title: Configuring Let's Encrypt
 categories: how-to-guides/security
-lead: ""
+order: 2
+lead: "How to configure Let's Encrypt with Cloud 66 for Rails"
 legacy: false
 tags: ["security"]
 permalink: /:collection/:path

@@ -1,16 +1,17 @@
 ---
 layout: post
 template: one-col
-title: Manually add an SSL certificate to a load balancer
+title: Enabling SSL termination on load balancers
 categories: how-to-guides/security
-lead: ""
+order: 3
+lead: "How to enable automatic SSL termination on load balancers in Cloud 66 for Rails"
 legacy: false
 tags: ["ssl"]
 permalink: /:collection/:path
 ---
 
 
-## Cloud 66 now supports automatic SSL termination
+## Enable automatic SSL termination
 
 You can activate SSL termination on **HAProxy 1.5.x or higher** and **Amazon Elastic Load Balancer** through SSL certificate add-in.
 
