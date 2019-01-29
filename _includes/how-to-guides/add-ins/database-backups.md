@@ -1,5 +1,6 @@
 
 <h2 id="intro">What is the database backup add-in?</h2>
+
 Use this add-in to backup your database on a schedule of your choosing.  You can choose from different settings to have your expected behavior :
 
 <h3 id="types">Backup types</h3>
@@ -113,6 +114,7 @@ $ cat mysql.tar.aa mysql.tar.ab mysql.tar.ac mysql.tar.ad > mysql.tar
 </pre>
 
 <h3 id="restore">Restore backup</h3>
+
 You can restore a backup through Cloud66 dashboard backup page. There is a **restore button** for each backup that will download the backup on your server and restore it.  
 
 In this section we are going to describe the steps you need to follow if you want to manually restore your backup. 
@@ -121,9 +123,8 @@ After you downloaded a backup you will need to follow couple of steps base on yo
 
 First step is to **untar**  downloaded backup (Unless you are using download script which will untar the result automatically)
 
-<pre class="prettyprint">
-$ tar -xvf <tar_file>  -C <folder_name> 
-</pre>
+
+<pre class="prettyprint"> $ tar -xvf [tar_file]  -C [folder_name]  </pre>
 
 The -C option allows you to choose which folder to extract the files to.
 
