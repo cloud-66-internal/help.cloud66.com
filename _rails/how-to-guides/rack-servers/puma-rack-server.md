@@ -11,14 +11,14 @@ permalink: /:collection/:path
 
 [Puma](http://puma.io/) is a light-weight Rack server built for speed and parallelism. Cloud 66 uses the following signals to control Puma:
 
-<h3 id="stop">Stop the web server</h3>
+### Stop the web server
 <p>
 <kbd>
 	sudo bluepill cloud66&#95;web&#95;server stop
 </kbd>
 </p>
 
-<h3 id="start">Start the web server</h3>
+### Start the web server
 <p>
 <kbd>
 	sudo bluepill cloud66&#95;web&#95;server quit
@@ -28,7 +28,7 @@ permalink: /:collection/:path
 </kbd>
 </p>
 
-<h3 id="hot-restart">Restart the web server (hot-restart)</h3>
+### Restart the web server (hot-restart)
 <p>
 <kbd>
 	sudo bluepill cloud66&#95;web&#95;server restart
@@ -40,7 +40,7 @@ permalink: /:collection/:path
 </kbd>
 </p>
 
-<h2 id="deploy">Deploy with Puma</h2>
+## Deploy with Puma
 You need to choose your web server at the time of initial build of the stack. Changes to or from Passenger (the default web server) will not be applied after your stack has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
 
 To run a Puma Rack server, add a line to your Procfile labeled as custom&#95;web. Here is an example:
@@ -51,8 +51,8 @@ custom&#95;web: bundle exec puma -e $RACK&#95;ENV -b unix:///tmp/web&#95;server.
 
 Take note that Puma is running in Daemon mode with the `-d` parameter.
 
+#### Warning
 <div class="notice notice-warning">
-    <h3>Warning</h3>
     <p>Should you have any issues, please ensure that you are using an up-to-date version of Puma with the correct configurations.</p>
     <p>We recommend that you run <a href="/rails/how-to-guides/rack-servers/unicorn-rack-server.html">Unicorn</a>, as you may have to handle server restarts manually with Puma.</p>
 </div>

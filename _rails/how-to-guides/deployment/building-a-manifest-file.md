@@ -74,9 +74,9 @@ production:
 - **name**: Specify the name of gateway you want to use for your stack.
 - **username** (_Optional_) Specify the username which should be used to connect to bastion server.
 
-
+### Note
 <div class="notice">
-  <h3>Note:</h3><p>The gateway should be defined and open before you can use it in manifest.</p>
+<p>The gateway should be defined and open before you can use it in manifest.</p>
 </div>
 
 
@@ -105,17 +105,19 @@ Available settings for a volume are:
 
 After you change the volume list, you need to redeploy your stack for new configuration be applied to your stack.
 
-
+### Note
 <div class="notice">
-  <h3>Note:</h3><p>You can not change replica_count after GlusterFS added to your stack.</p>
+<p>You can not change replica_count after GlusterFS added to your stack.</p>
 </div>
 
+### Note
 <div class="notice">
-  <h3>Note:</h3><p>You can not use glusterfs group or any of its servers in mount_targets.</p>
+<p>You can not use glusterfs group or any of its servers in mount_targets.</p>
 </div>
 
+### Note
 <div class="notice notice-danger">
-  <h3>Note:</h3><p>Renaming a volume will delete volume and create a new one.</p>
+<p>Renaming a volume will delete volume and create a new one.</p>
 </div>
 
 
@@ -305,8 +307,8 @@ A Rails application type in the manifest file gives you fine control over things
      -  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git submodules from being pulled during a build. 
 
+### Important!
 <div class="notice notice-warning">
-<h3>Important!</h3>
 <p>In order to use a *vpc_id*, you must provide *subnet_id* for all servers in your stack.</p>
 </div>
 
@@ -348,8 +350,9 @@ A rack application type in the manifest file gives you fine control over things 
      <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git  submodules  from being pulled during a build. 
 
+### Important!
 <div class="notice-warning">
-<h3>Important!</h3><p>In order to use a *vpc_id*, you must provide *subnet_id* for all servers in your stack.</p>
+<p>In order to use a *vpc_id*, you must provide *subnet_id* for all servers in your stack.</p>
 </div>
 
 ```
@@ -550,9 +553,8 @@ These are the parameters that the _server_ section can take:
 - **size** (_Optional, BYOC only_): [Size of the server instance](http://developers.cloud66.com/#cloud-vendor-instance-names) created.
 - **availability_zone** (_Optional, AWS EC2 only_): Availability zone of the server instance in AWS EC2 region.
 
-
+### Important!
 <div class="notice notice-warning">
-<h3>Important!</h3>
 <p>Only a single cloud vendor and region is supported for servers in a stack.</p>
 </div>
 
@@ -610,11 +612,8 @@ production:
     server: external
 ```
 
-
-
-
+### Important!
 <div class="notice notice-warning">
-<h3>Important!</h3>
 You are <b>required</b> to specify a <a href="#which-server">server</a> for application types, whereas configurations are <b>optional</b>.
 </div>
 

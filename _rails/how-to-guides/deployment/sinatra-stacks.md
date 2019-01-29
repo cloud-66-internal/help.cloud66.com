@@ -12,7 +12,7 @@ permalink: /:collection/:path
 
 Cloud 66 supports stacks based on the [Sinatra framework](http://www.sinatrarb.com/), a light-weight web framework written in Ruby.
 
-<h2 id="custom">Custom commands</h2>
+## Custom commands
 Given that Sinatra applications can have different database frameworks, we allow you to specify custom commands which are run at specific points during deployment:
 
 <ul class="list">
@@ -53,18 +53,18 @@ development:
             custom_deploy_command: rake db:migrate
 </pre>
 
-<h2 id="connect">Connect to your database</h2>
+## Connect to your database
 If a database is detected, they will automatically be provisioned as required (including the database itself), and environment variables will be created. You will need to update your code with the environment variables you wish to use, for example `MYSQL_URL`.
 
 Should you wish to change the database username/password after build, you will have to do this manually, which will involve recreating backup jobs to reflect the new values.
 
+#### Note
 <div class="notice">
-    <h3>Note</h3>
   <p>You can use <a href="http://yamllint.com/" target="_blank">Yamllint.com</a> to check your YAML syntax before committing.</p>
 </div>
 
-<h3>Examples of connecting to your database:</h3>
-<h3>Active Record</h3>
+### Examples of connecting to your database:
+### Active Record
 
 **MySQL YML**
 
@@ -103,19 +103,19 @@ ActiveRecord::Base.configurations[:development] = {
 }
 </pre>
 
-<h3>DataMapper</h3>
+### DataMapper
 
 <pre class="prettyprint">
 DataMapper::setup(:default, "ENV['POSTGRESQL_URL']")
 </pre>
 
-<h3>MongoMapper</h3>
+### MongoMapper
 
 <pre class="prettyprint">
 MongoMapper.connection = Mongo::Connection.from_uri(ENV['MONGODB_URL'])
 </pre>
 
-<h3>Mongoid</h3>
+### Mongoid
 
 <pre class="prettyprint">
 development:
@@ -125,7 +125,7 @@ development:
       hosts: ["<%= ENV['MONGODB_ADDRESS']%>:27017"]
 </pre>
 
-<h2 id="example">Example applications</h2>
+## Example applications
 
 * <a href="https://app.cloud66.com/stacks/new?eduid=sinatra_mongodb" target="_blank">Sinatra and MongoDB</a>
 * <a href="https://app.cloud66.com/stacks/new?eduid=sinatra_mysql_ar" target="_blank">Sinatra and MySQL ActiveRecord</a>

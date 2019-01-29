@@ -9,7 +9,7 @@ tags: ['web-server']
 permalink: /:collection/:path
 ---
 
-<h2 id="health_check">Health Check During Deployment</h2>
+## Health Check During Deployment
 
 For customers who are using custom web servers (not Passenger) to serve their code (such as Puma, Unicorn, Thin etc); Because each of these web servers involves a separate process (that in turn can be spawning child processes) our default deployment strategy is to provide the routing in Nginx to the upstream process. However, that could mean that although your deployment is successful, your app is not actually serving anything! 
 
@@ -19,7 +19,7 @@ To enable this option, click on "Settings & Information" and check the "Web Heal
 This does not apply to Docker or Passenger based stacks as they have other health check mechanisms available already.
 
 
-<h2 id="alerts">New Status Alerts</h2>
+## New Status Alerts
 
 Additionally, there are three alerts that can be enabled at stack level that will notify whenever the web server is detected as "Started", "Stopped" or "Unmonitored"
 

@@ -69,7 +69,7 @@ Firewalls can be searched only by their tags.
 - `image` Search by the image name used by the container
 - `server` Search by the name of the server running containers
 
-### Environment Variables
+### Environment Variables
 
 - `key` Search environment variables by their key
 

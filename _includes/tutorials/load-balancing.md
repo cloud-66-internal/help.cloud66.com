@@ -23,8 +23,8 @@ To add a load balancer to your stack, start by visiting your stack detail page. 
 
 ## Balance the load per service
 
-##Note
-
-This feature is only available for Docker stacks that are non-development.
+### Note
+<div class="notice notice-warning"><p>
+This feature is only available for Docker-based applications that are non-development.</p></div>
 
 For docker stacks you can use a load balancer to balance your services and they don’t have to be present on each server! Essentially Nginx will direct the requests to the service on its own machine first, if the service doesn’t exist there, then it will send it through Weave network to a server that has the service.

@@ -11,7 +11,7 @@ permalink: /:collection/:path
 
 [Unicorn](http://unicorn.bogomips.org/) is a Rack HTTP server that uses forked processes to handle multiple incoming requests concurrently.
 
-<h2 id="deploy">Deploy with Unicorn</h2>
+## Deploy with Unicorn
 You need to choose your web server at the time of initial build of the stack. Changes to or from Passenger (the default web server) will not be applied after your stack has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
 
 To run a Unicorn Rack server, add a line to your Procfile labeled as <em>custom_web</em>. Here is an example:
@@ -22,8 +22,8 @@ custom_web: bundle exec unicorn_rails -c config/unicorn.rb -E $RAILS_ENV -D
 
 Please take note that Unicorn is running in Daemon mode with the `-D` parameter.
 
+#### Warning
 <div class="notice notice-warning">
-    <h3>Warning</h3>
     <p>Please ensure to follow the conventions set out in the configuration below if you are having issues, and that you are using an up-to-date version of Unicorn.</p>
 </div>
 

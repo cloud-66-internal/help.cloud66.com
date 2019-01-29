@@ -53,7 +53,7 @@ Cloud 66 supports this through [Turbo Sprockets](https://github.com/ndbroadbent/
 
 While Cloud 66 works hard to improve your deployment speeds on our side, we recommend the following enhancements to [Asset Pipeline Compilation](http://guides.rubyonrails.org/asset_pipeline.html) on your side to speed up your deployments.
 
-#### Below Rails 3.2
+#### Below Rails 3.2
 
 Unfortunately these measures are not available to Rails versions before 3.2.
 
