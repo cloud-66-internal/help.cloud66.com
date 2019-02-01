@@ -3,7 +3,8 @@ layout: post
 template: one-col
 title: Seeding your database
 categories: how-to-guides/databases
-lead: ""
+order: 30
+lead: "How to add seed data to your database(s)"
 tags: ["customization"]
 legacy: false
 permalink: /:collection/:path

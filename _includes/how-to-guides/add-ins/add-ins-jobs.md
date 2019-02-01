@@ -25,7 +25,7 @@ There are a variety of jobs for your stack.
 
 <h2 id="params">Using parameters</h2>
 
-When you are running a job on demand via dashboard or [toolbelt]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/shells/toolbelt.html{%endif%}#job-management), you can pass parameters if you used in your command.
+When you are running a job on demand via dashboard or [toolbelt]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#job-management), you can pass parameters if you used in your command.
 
 <h3 id="notation">Notation</h3>
 Jobs use a facility in the shell called <i>positional parameters</i>. Positional parameters are a series of special variables ($1, $2 ... $n) that contain the contents of the command line. Where <strong>n</strong> is greater than 9 using braces. For example, to refer to the 15th positional parameter, use the notation `${15}`. 

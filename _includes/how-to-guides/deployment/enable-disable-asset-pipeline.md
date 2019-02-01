@@ -21,7 +21,7 @@ Setting this value to false means that your application doesn't use the asset pi
 
 ### Manifest.yml
 
-Use our [Cloud 66 manifest file](/{{page.collection}}/tutorials/getting-started-with-manifest.html) to enable/disable asset pipeline pre-compilation using the following parameter with a true or false, find an example below:
+Use our [Cloud 66 manifest file](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) to enable/disable asset pipeline pre-compilation using the following parameter with a true or false, find an example below:
 
 ```
 development:
@@ -53,7 +53,7 @@ Cloud 66 supports this through [Turbo Sprockets](https://github.com/ndbroadbent/
 
 While Cloud 66 works hard to improve your deployment speeds on our side, we recommend the following enhancements to [Asset Pipeline Compilation](http://guides.rubyonrails.org/asset_pipeline.html) on your side to speed up your deployments.
 
-#### Below Rails 3.2
+#### Below Rails 3.2
 
 Unfortunately these measures are not available to Rails versions before 3.2.
 

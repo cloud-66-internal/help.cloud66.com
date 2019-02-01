@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Migrate from Heroku to Cloud66
+title: Migrating from Heroku to Cloud66
 categories: quickstarts
+order: 4
 lead: "Move your Rails application from Heroku over to your own servers"
 legacy: false
 tags: ["migration"]
@@ -26,7 +27,7 @@ Using Heroku, you can choose between 1X (512 MB), 2X (1 GB) and PX (6 GB) server
 
 ### 1. Code
 
-Simply provide Cloud 66 the URL to your Git repository so that it can be analyzed. For more information, see [Accessing your Git repository](/{{page.collection}}/how-to-guides/deployment/shells/access-your-code.html).
+Simply provide Cloud 66 the URL to your Git repository so that it can be analyzed. For more information, see [Accessing your Git repository](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html).
 
 
 ### 2. Data
@@ -45,7 +46,7 @@ Start by dumping your existing database. Refer to the [ClearDB documentation for
 $ mysqldump -u [username] -p[password] [dbname] > backup.sql 
 {% endhighlight %}
 
-Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/{{page.collection}}/references/shells/toolbelt.html#upload) to upload the file to your stack database server. Remember to replace the fields below with your values.
+Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/{{page.collection}}/references/toolbelt.html#upload) to upload the file to your stack database server. Remember to replace the fields below with your values.
 
 {% highlight bash %}
 $ cx upload -s "[stack_name]" --server [database_server_name] backup.sql /tmp/backup.sql

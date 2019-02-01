@@ -22,7 +22,7 @@ Once the server is ready, you can move your processes from the web server to the
 
 ## Database servers
 
-You can scale your database servers through database replication, or Elasticsearch through [sharding](/{{include.product }}/how-to-guides/databases/elasticsearch-scaling.html). See our [database management section](/{{page.collection}}/how-to-guides/databases/database-customization.html) for more information.
+You can scale your database servers through database replication, or Elasticsearch through [sharding](/{{include.product }}/how-to-guides/scaling/elasticsearch-scaling.html). See our [database management section](/{{page.collection}}/how-to-guides/databases/database-customization.html) for more information.
 
 {% if page.collection == 'legacy_docker' %}
 

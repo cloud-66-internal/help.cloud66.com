@@ -1,6 +1,6 @@
 ## On the server
 
-You can connect directly into your database server and invoke a database console from there. To do that, please refer to the [terminal connection to servers]({% if page.collection == "maestro" %}/maestro/how-to-guides/common-tools/ssh.html{%else%}/{{page.collection}}/how-to-guides/deployment/shells/ssh.html{%endif%}) documentation.
+You can connect directly into your database server and invoke a database console from there. To do that, please refer to the [terminal connection to servers]({% if page.collection == "maestro" %}/maestro/how-to-guides/common-tools/ssh.html{%else%}/{{page.collection}}/how-to-guides/common-tools/ssh.html{%endif%}) documentation.
 
 
 ## With a client

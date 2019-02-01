@@ -1,36 +1,44 @@
 
 
-## What is a stack?
+## How we define "application"
 
-A web application stack is a set of hardware and software components needed for your application to run. Each level of the stack represents an abstraction layer that provides a high-level overview of your setup.
+For the purposes of this documentation an application is the complete set of hardware and software components needed for your software to run. Each level of the application represents an abstraction layer that provides a high-level overview of your setup.
 
-For example, your stack might be comprised of a load balancer, a number of web servers, process and database servers, your operating system and finally the hardware provided by your cloud vendor:
+For example, your application might be comprised of a load balancer, a number of web servers, process and database servers, your operating system and finally the hardware provided by your cloud vendor:
 
 ![image](http://assets.cloud66.com/help/images/rails_stack_workflow.png)
 
 * * *
 
+## "Application" vs "Stack"
 
-## Stack components
+In previous versions of this documentation we used the concept of a “stack” to describe much the same concept as we now describe using “application”. The two concepts are related but not identical.
 
-You have a great degree of freedom when choosing the different components of your stack.
+In particular “stack” tends to include both underlying infrastructure and the components running on that substrate, whereas “application” is more abstracted from the underlying infrastructure.
 
+However, when reading any documentation or our forums, it will often be helpful to think of “stack” and “application” as effectively synonymous.
+
+In a general sense, both these terms encapsulate the same thing: an interconnected collection of components, configurations and services that are presented to the world as a single, coherent piece of software.
+
+## Application components
+
+You have a great degree of freedom when choosing the different components of your application.
 
 ### Load balancer (optional)
 
-A load balancer is used to distribute traffic across your web servers, and offers benefits such as maximizing throughoutput, minimizing response times and avoiding overload on any single server. Ultimately, load balancing increases the reliability of your stack.
+A load balancer is used to distribute traffic across your web servers, and offers benefits such as maximizing throughoutput, minimizing response times and avoiding overload on any single server. Ultimately, load balancing increases the reliability of your application.
 
-The type of  [load balancer deployed in your stack]({% if page.collection == "maestro" %}/maestro/tutorials/load-balancing.html{%else%}/{{page.collection}}/tutorials/load-balancing.html{%endif%}) is dependent on your cloud provider.
+The type of  [load balancer deployed in your application](/{{page.collection}}/tutorials/load-balancing.html) is dependent on your cloud provider.
 
 
 ### Web servers
 
-By default, your applications are served with Nginx{% if include.product == 'rails' %}, and you are also free to customize this selection for Rack-based stacks{%endif%}. You can [scale your web server]({% if page.collection == "maestro" %}/maestro/how-to-guides/databases/mongo-replica-sets.html{% else %}/{{page.collection}}/how-to-guides/databases/mongo-replica-sets.html{% endif %}) with the click of a button.
+By default, your applications are served with Nginx{% if include.product == 'rails' %}, and you are also free to customize this selection for Rack-based applications{%endif%}. You can [scale your web server](/{{page.collection}}/how-to-guides/scaling/scaling.html) with the click of a button.
 
 
 ### Background workers (optional)
 
-To relieve pressure from your application, we recommend that you use background workers to run memory-intensive processes. Cloud 66 makes it easy for you to control and monitor these processes, as well as [scale them]({% if page.collection == "maestro" %}/maestro/how-to-guides/databases/mongo-replica-sets.html{% else %}/{{page.collection}}/how-to-guides/databases/mongo-replica-sets.html{% endif %})) at the click of a button.
+To relieve pressure from your application, we recommend that you use background workers to run memory-intensive processes. {% if include.product == 'rails' %}Cloud 66 makes it easy for you to control and monitor these processes, as well as [scale them](/{{page.collection}}/how-to-guides/deployment/proc-files.html) at the click of a button.{%endif%}
 
 
 ### Database servers (optional)
@@ -42,7 +50,7 @@ You can choose between any of four supported databases:
 - MongoDB
 - Redis
 
-Cloud 66 makes it easy for you to [backup your database]({% if page.collection == "maestro" %}/maestro/how-to-guides/add-ins/database-backup.html{% else %}/{{page.collection}}/tutorials/database-backup.html{% endif %}){% if page.collection == "rails" %}, [verify the backup](/rails/tutorials/backup-verifiers.html) {% endif %} and [replicate your databases](/rails/tutorials/database-replication.html).
+Cloud 66 makes it easy for you to [backup your database]({% if page.collection == "maestro" %}/maestro/how-to-guides/add-ins/database-backup.html{% else %}/{{page.collection}}/how-to-guides/add-ins/database-backups.html{% endif %}){% if page.collection == "rails" %}, [verify the backup](/rails/how-to-guides/databases/backup-verifiers.html) {% endif %} and [replicate your databases](/rails/how-to-guides/databases/database-replication.html).
 
 
 ### Operating system
@@ -52,21 +60,21 @@ Your servers will be deployed with **Ubuntu 16.04 LTS**. On the operating system
 
 ### Cloud vendor
 
-You can either [deploy to your cloud](/{{page.collection}}/resources/technical-specifications.html#supported-cloud-providers) or [deploy to your own server]({% if page.collection != "maestro" %}/{{page.collection}}/tutorials/registered-servers.html{%else%}/maestro/how-to-guides/deployment/registered-servers.html{%endif%}).
+You can either [deploy to your preferred cloud provider](/{{page.collection}}/resources/technical-specifications.html#supported-cloud-providers) or [deploy to your own server](/{{page.collection}}/how-to-guides/deployment/registered-servers.html).
 
 * * *
 
 
-## Stack environments
+## Application environments
 
-To reflect the different stages of your software, you can deploy your stacks in different environments:
+To reflect the different stages of your software, you can deploy your application in different environments:
 
 * **Development**: Use this when you're developing your application
 * **Production**: For live applications
 * **QA**: Used for quality assurance
 * **Staging**: Mirrors the production environment but is only used for testing
 
-In addition to these environments, you can define your own environments from the _Account_ page, in the _Setting_ -> _Custom environment_ menu. Once the new environment is added, you will be able to see it in the list of supported environments when creating a new stack. Custom environments don't influence anything on the stack. They will result in the relevant environment variables like `RAILS_ENV` and `RACK_ENV` (for Rack-based stacks) having the correct values. The usage of those custom values is up to your application.
+In addition to these environments, you can define your own environments from the _Account_ page, in the _Setting_ -> _Custom environment_ menu. Once the new environment is added, you will be able to see it in the list of supported environments when creating a new application. Custom environments don't influence anything on the application. They will result in the relevant environment variables like `RAILS_ENV` and `RACK_ENV` (for Rack-based applications) having the correct values. The usage of those custom values is up to your application.
 
 Depending on your configuration, your application will act differently in each environment. For example, a Ruby on Rails application
 has a directory in `config/environments` that contains settings for each environment.
@@ -98,46 +106,46 @@ Cloud 66 constantly seeks to update and improve the StackScore algorithm to cons
 * * *
 
 
-## Build a stack
+## Build an application
 
-To build your first stack, see our [Introduction to Cloud 66](/{{page.collection}}/concepts/stack-definition.html). If you have existing stack(s), simply click _New Docker Stack_ from your Cloud 66 Dashboard.
+To build your first stack, see our [Getting Started guide](/{{page.collection}}/quickstarts/getting_started.html). If you have existing stack(s), simply click _New Application_ from your Cloud 66 Dashboard.
 
 * * *
 
 
-## Edit stack properties
+## Edit application properties
 
-You can access your _Stack information_ page from the right sidebar of your stack page. This page shows you general information about your stack, the different servers it consists of and information about your application.
+You can access your _Application information_ page from the right sidebar of your stack page. This page shows you general information about your stack, the different servers it consists of and information about your application.
 
-It also allows you to edit your stack name, and you can edit your Docker service configuration under the _Service configurations_ menu on the stack details page. For Rack-based stacks, you can edit your Git repository and branch by clicking the _Edit_ button next to each field on the _Stack information_ page. Editing your stack name has an important implication.
+It also allows you to edit your stack name, and you can edit your Docker service configuration under the _Service configurations_ menu on the stack details page. For Rack-based applications, you can edit your Git repository and branch by clicking the _Edit_ button next to each field on the _Application information_ page. Editing your application name has an important implication.
 
 ### Important
 
 <div class="notice">
 
-    <p>Internal c66 domain names (*.c66.me) are based on your stack name, and will change if you rename the stack.</p>
+    <p>Internal c66 domain names (*.c66.me) are based on your application name, and will change if you rename the application.</p>
 
     <p>Unless you use Failover groups, you will have to update your DNS to point at the new address to keep your application accessible. By using Failover groups, this will be updated automatically for you.</p>
 
 </div>
 
-## Clone a stack
+## Clone an application
 
-There are various reasons for cloning an existing stack - for example, you may want to deploy a production environment of an existing development stack, or migrate across regions or data centers.
+There are various reasons for cloning an existing application - for example, you may want to deploy a production environment of an existing development application, or migrate across regions or data centers.
 
-To clone a stack, visit your stack page and click _Clone this stack_ from the right sidebar. This will allow you to choose a new stack name and environment. Cloning your stack will preserve any environment variables from the existing stack, and also allows you to define where to deploy to along with other settings.
+To clone an application, visit your application page and click _Clone this application_ from the right sidebar. This will allow you to choose a new application name and environment. Cloning your application will preserve any environment variables from the existing application, and also allows you to define where to deploy to along with other settings.
 
 * * *
 
 
-## Delete a stack
+## Delete an application
 
 
 
 ### Important
 
-Deleting a stack will not delete your cloud servers - remember to delete the servers from your cloud account.
+Deleting an application will not delete your cloud servers - remember to delete the servers from your cloud account.
 
 
-To delete a stack, visit your stack page and click _Delete Stack_ from the right sidebar. You will have to confirm this action.
+To delete an application, visit your application page and click _Delete Application_ from the right sidebar. You will have to confirm this action.
 

@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title:  "What is the database backup add-in?"
+title:  "Using database backup add-in"
 categories: how-to-guides/add-ins
-lead: Managed and unmanaged database backups
+order: 10
+lead: How to used our managed database backup add-in
 tags: ['database']
 legacy: false
 permalink: /:collection/:path

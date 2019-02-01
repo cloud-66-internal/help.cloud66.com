@@ -85,7 +85,7 @@ You can define a new environment variable and reference it to an existing enviro
 
 You can reference another environment variable using the following syntax:  
 
-``{% raw %}{{ENV_VAR}}{% endraw %}``  
+`{{ENV_VAR}}`
 
 or
 
@@ -99,12 +99,14 @@ This example sets a health check variable to use the external web address variab
 
 ```
 MY_HEALTH_CHECK=http://_env(WEB_ADDRESS_EXT)/health_check.html
+
 ```
 
 This example sets the key to use the external web address of the application, and sets a default IP if that variable is not available:
 
 ```
 MY_KEY_1=_env(WEB_ADDRESS_EXT:192.168.0.1)
+
 ```
 
 ### Intra-app referencing syntax
@@ -125,7 +127,10 @@ or
 `_env(STACK[APP_UID].ENV_VAR)`. 
 
 #### Note
-<div class="notice"><p>This syntax still uses the term "stack" which in the processing of being deprecated in Maestro. "Stack" means, for all intents and purposes, the same thing as "application".</p></div>
+<div class="notice"><p>This syntax still uses the term "stack" which in the processing of being deprecated in Maestro. "Stack" means, for all intents and purposes, the same thing as "application".
+</p>
+</div>
+
 
 
 ### Intra-service referencing

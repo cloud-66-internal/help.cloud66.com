@@ -6,7 +6,7 @@ These are the possible scenarios:
 
 1. For a static website with no database backing it, the best option is to use geographical DNS providers to distribute the traffic based on the visitor's location. Feel free to [contact us](mailto:support@cloud66.com) and we'll help you find the best DNS provider for your needs.
 
-2. For a website with no write operations to a database, the most viable option is to have a [read-only replication](/rails/tutorials/database-replication.html) across different geographical locations serving local web servers.
+2. For a website with no write operations to a database, the most viable option is to have a [read-only replication](/rails/how-to-guides/databases/database-replication.html) across different geographical locations serving local web servers.
 
 3. For an application that has to both read and write to the database, you can either shard the data based on some algorithm that suits your requirements or have a master/master database setup which is globally distributed.
 

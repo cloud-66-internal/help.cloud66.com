@@ -58,7 +58,7 @@ In the case where the payload of the commit hook does not contain any branch inf
 
 #### Github Integration
 
-Users who have signed in through Github (and who have enough access to create and edit deployement events for their stacks on GitHub) can activate continuous deployments on GitHub. To do this: access your [Stack settings]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/shells/toolbelt.html{%endif%}#settings-variables) via the toolbelt
+Users who have signed in through Github (and who have enough access to create and edit deployement events for their stacks on GitHub) can activate continuous deployments on GitHub. To do this: access your [Stack settings]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#settings-variables) via the toolbelt
  and set **continuous.deploy** to _true_.
 
 ```
@@ -109,4 +109,4 @@ curl -X POST [your redeployment hook URL]
 
 ### Note
 
-If you are manually invoking redeployments you should consider using the [Cloud 66 CommandLine Tool]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/shells/toolbelt.html{%endif%}#redeploy-your-stack) instead, as it has additional features!
+If you are manually invoking redeployments you should consider using the [Cloud 66 CommandLine Tool]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#redeploy-your-stack) instead, as it has additional features!

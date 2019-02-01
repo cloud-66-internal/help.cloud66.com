@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: What is Deployment History
+title: Using the deployment timeline
 categories: how-to-guides/deployment
-lead: ""
+order: 10
+lead: "How to use the deployment timeline to track and roll back deployments"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path

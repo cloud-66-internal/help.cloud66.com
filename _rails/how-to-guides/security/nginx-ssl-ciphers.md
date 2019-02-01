@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Strong SSL Security on Nginx
+title: Enabling strong SSL security on Nginx
 categories: how-to-guides/security
-lead: ""
+order: 13
+lead: "How to adjust SSL cipher settings in Nginx"
 legacy: false
 tags: ["ssl","nginx"]
 permalink: /:collection/:path
