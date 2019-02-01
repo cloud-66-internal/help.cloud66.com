@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: How to connect to your database servers
+title: Connecting to database servers
 categories: how-to-guides/databases
-lead: ""
+order: 5
+lead: "How to connect directly to your database servers"
 legacy: false
 tags: ["debugging"]
 

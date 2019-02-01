@@ -136,7 +136,7 @@ In our example application we have a single service called Hello World. Hello Wo
 
 (Reminder: The source code for this example can be found on [Github](https://github.com/cloud66-samples/helloworld).)
 
-This example uses Skycap's integrated [BuildGrid](/legacy_docker/references/build-grid.html) engine to build the container image from the source and store it on your app's own private Docker registry within Cloud 66.
+This example uses Skycap's integrated BuildGrid engine to build the container image from the source and store it on your app's own private Docker registry within Cloud 66.
 
 A service running on Kubernetes consists of 2 parts: a `deployment` and a `service`. Our sample base template has a Stencil for each one. 
 

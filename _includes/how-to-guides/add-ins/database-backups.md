@@ -1,5 +1,6 @@
 
 <h2 id="intro">What is the database backup add-in?</h2>
+
 Use this add-in to backup your database on a schedule of your choosing.  You can choose from different settings to have your expected behavior :
 
 <h3 id="types">Backup types</h3>
@@ -9,8 +10,8 @@ Cloud 66 provides two types of backups: _managed_ and _unmanaged_.
 Having managed backups carries several benefits:
 
 - You can download database backups through the web UI and API
-- {% if page.collection == 'rails' %}[Backup verifiers](/rails/tutorials/backup-verifiers.html) ensure that your backups actually contain what you expect{%endif%}
-- Use [database replication](/rails/tutorials/database-replication.html) to scale your databases
+- {% if page.collection == 'rails' %}[Backup verifiers](/rails/how-to-guides/databases/backup-verifiers.html) ensure that your backups actually contain what you expect{%endif%}
+- Use [database replication](/rails/how-to-guides/databases/database-replication.html) to scale your databases
 - You can easily restore database backups
 - Stored in Cloud 66 storage
 
@@ -83,7 +84,7 @@ This option applies to **text** MySQL and PostgreSQL and redis backups. With thi
 You can retrieve your backup in one of three ways:
 
 <h4 id="dl_toolbelt">Cloud 66 toolbelt</h4> 
-You can retrieve your database backup by using the [toolbelt backup management]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/shells/toolbelt.html{%endif%}#about-backup-management). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
+You can retrieve your database backup by using the [toolbelt backup management]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#about-backup-management). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
 
 <h4 id="dl_script">Download script</h4> 
 
@@ -113,6 +114,7 @@ $ cat mysql.tar.aa mysql.tar.ab mysql.tar.ac mysql.tar.ad > mysql.tar
 </pre>
 
 <h3 id="restore">Restore backup</h3>
+
 You can restore a backup through Cloud66 dashboard backup page. There is a **restore button** for each backup that will download the backup on your server and restore it.  
 
 In this section we are going to describe the steps you need to follow if you want to manually restore your backup. 
@@ -121,9 +123,8 @@ After you downloaded a backup you will need to follow couple of steps base on yo
 
 First step is to **untar**  downloaded backup (Unless you are using download script which will untar the result automatically)
 
-<pre class="prettyprint">
-$ tar -xvf <tar_file>  -C <folder_name> 
-</pre>
+
+<pre class="prettyprint"> $ tar -xvf [tar_file]  -C [folder_name]  </pre>
 
 The -C option allows you to choose which folder to extract the files to.
 

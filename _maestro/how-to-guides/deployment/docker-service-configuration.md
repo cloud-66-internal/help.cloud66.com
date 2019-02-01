@@ -179,11 +179,11 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies the command you would like to run during application build. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html">build_root</a> </td> 
+     <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html">build_root</a> </td> 
      <td> Specifies the directory of your repository in which you wish to run your Docker build. </td> 
     </tr> 
     <tr> 
-     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/legacy_docker/how-to-guides/deployment/building-your-service.html{%endif%}">command</a> </td> 
+     <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html">command</a> </td> 
      <td> Specifies the command used to start your container. </td> 
     </tr> 
     <tr> 
@@ -227,7 +227,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> One of the values: <em>default</em>, <em>none</em> or a hash. </td>
     </tr>
     <tr> 
-     <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html#image">image</a> </td> 
+     <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html#image">image</a> </td> 
      <td> The image you would typically run <code>docker pull</code> from. </td> 
     </tr> 
     <tr> 
@@ -305,11 +305,11 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies the command you would like to run during application build. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html">build_root</a> </td> 
+     <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html">build_root</a> </td> 
      <td> Specifies the directory of your repository in which you wish to run your Docker build. </td> 
     </tr> 
     <tr> 
-     <td> <a href="{% if include.product == "legacy_docker" %}/legacy_docker/deployment/building-your-service.html{% else %}/legacy_docker/how-to-guides/deployment/building-your-service.html{%endif%}">command</a> </td> 
+     <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html">command</a> </td> 
      <td> Specifies the command used to start your container. </td> 
     </tr> 
     <tr> 
@@ -325,7 +325,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies the dns behaviour for this service. Accepted values: <em>versioned</em>, <em>non-versioned</em>. Defaults to <em>versioned</em>. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html">dockerfile_path</a> </td> 
+     <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html#dockerfile_path">dockerfile_path</a> </td> 
      <td> Specifies the location of the Dockerfile to be used for building this service, eg. <em>docker/Dockerfile</em>. </td> 
     </tr> 
     <tr> 
@@ -353,7 +353,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> One of the values: <em>default</em>, <em>none</em> or a hash containing at least one of <em>type</em>, <em>endpoint</em>, <em>protocol</em>, <em>accept</em> or <em>timeout</em>. </td>
     </tr>
     <tr> 
-     <td> <a href="/legacy_docker/how-to-guides/deployment/building-your-service.html#image">image</a> </td> 
+     <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html#image">image</a> </td> 
      <td> The image you would typically run <code>docker pull</code> from. </td> 
     </tr> 
     <tr> 

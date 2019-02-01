@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Sharing a database between stacks
+title: Sharing databases between applications
 categories: how-to-guides/databases
-lead: ""
+order: 10
+lead: "How to share databases between applications in Cloud 66 for Rails"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path

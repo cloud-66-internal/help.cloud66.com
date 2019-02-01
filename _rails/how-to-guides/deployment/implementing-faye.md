@@ -1,12 +1,12 @@
 ---
 layout: post
 template: one-col
-title: Cloud 66 support for Faye
+title: Deploying and managing Faye
 categories: how-to-guides/deployment
-lead: ""
+order: 80
+lead: "How to set up the Faye publish-subscribe messaging system with Cloud 66 for Rails"
 tags: ["websocket"]
 legacy: false
-
 permalink: /:collection/:path
 ---
 

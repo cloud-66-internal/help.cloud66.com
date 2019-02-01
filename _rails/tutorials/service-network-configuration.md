@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Setup Network Configuration for your services
+title: Configuring network access for your services
 categories: tutorials
+order: 1
 lead: "Configure the service network"
 legacy: false
 tags: ["security", "customization", "service.yml"]

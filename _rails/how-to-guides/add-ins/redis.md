@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "How to use the Redis Add-in"
+title:  "Using the Redis Add-in"
 categories: how-to-guides/add-ins
+order: 10
 lead: Add Redis to your stack with ease
 tags: ['Add in']
 legacy: false

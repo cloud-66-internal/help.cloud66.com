@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Using production data on your staging stack
+title: Using production data in staging
 categories: how-to-guides/databases
-lead: ""
+order: 40
+lead: "How to set up your staging environment to use production data"
 legacy: false
 tags: ["high-availability","customization"]
 permalink: /:collection/:path

@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Configuring Multi Certificate for HAProxy
+title: Multi-certificate SSL for HAProxy
 categories: how-to-guides/security
-lead: ""
+order: 3
+lead: "How to configure multi-certificate SSL for HAProxy in Cloud 66 for Rails"
 legacy: false
 tags: ["ssl","haproxy"]
 permalink: /:collection/:path

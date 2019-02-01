@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Non-recommended server sizes
+title: Recommended minimum server sizes
 categories: references
+order: 20
 lead: "Choosing the right server size"
 legacy: false
 tags: ["performance"]
@@ -43,5 +44,5 @@ In particular, Elasticsearch on a standalone under-powered server will not start
 
 Depending on whether or not you have deployed your application elsewhere, it may be hard to gauge the amount of resources that you need. On a PaaS like Heroku for example, you can choose between 1X (512 MB), 2X (1 GB) and PX (6 GB) server sizes. This makes it easy to calculate your server requirements, and we recommend that you use similar server resources when deploying your stack with Cloud 66. We also recommend that you have a seperate server for your database in production environments.
 
-If you have yet to deploy your application in a production environment, you can deploy to a reasonably sized server and use [load testing](/{{page.collection}}/how-to-guides/deployment/shells/optimizing-performance.html) to determine your exact needs.
+If you have yet to deploy your application in a production environment, you can deploy to a reasonably sized server and use [load testing](/rails/how-to-guides/scaling/optimizing-performance.html) to determine your exact needs.
 

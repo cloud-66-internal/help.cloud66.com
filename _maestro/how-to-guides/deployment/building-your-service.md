@@ -51,7 +51,7 @@ services:
 
 ### Build root
 
-Specifies the directory of your repository in which you wish to run your Docker build. You can also specify a [Dockerfile path](/legacy_docker/how-to-guides/deployment/building-your-service.html#dockerfile_path), which will be the Dockerfile used when building your service which is a relative value to this one.
+Specifies the directory of your repository in which you wish to run your Docker build. You can also specify a [Dockerfile path](/maestro/how-to-guides/deployment/building-your-service.html#dockerfile_path), which will be the Dockerfile used when building your service which is a relative value to this one.
 
 ```
 

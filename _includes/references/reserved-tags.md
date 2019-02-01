@@ -28,7 +28,7 @@ Cloud 66 currently reserves the following tags:
 <tr>
 	<td>c66.migrations.run</td>
 	<td>server</td>
-	<td>Sets the given server as the <a href="/{{page.collection}}/tutorials/database-management.html">migrator</a> - migrations will run on that server <i>only</i>, and the rest of the servers will wait until the migrations are performed before continuing with the deployment.</td>
+	<td>Sets the given server as the <a href="/{{page.collection}}/how-to-guides/databases/database-management.html">migrator</a> - migrations will run on that server <i>only</i>, and the rest of the servers will wait until the migrations are performed before continuing with the deployment.</td>
 </tr>
 </table>
 {%endif%}

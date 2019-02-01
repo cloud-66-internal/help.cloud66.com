@@ -7,4 +7,4 @@ lead: Using Node with Cloud66
 legacy: false
 permalink: /:collection/:categories/index.html
 ---
-{% include category_nav.html %}
+{% include category_nav_node.html %}

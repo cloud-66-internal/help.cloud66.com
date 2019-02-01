@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: How to manage your Cloud 66 backups
+title: Managing database backups
 categories: how-to-guides/databases
-lead: ""
+order: 3
+lead: "How to manage the database backups in Cloud 66 for Rails"
 legacy: false
 tags: ["backups"]
 permalink: /:collection/:path

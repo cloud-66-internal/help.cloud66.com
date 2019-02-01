@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title:  "How to use the GlusterFS Add-in"
+title:  "Using the GlusterFS Add-in"
 categories: how-to-guides/add-ins
-lead: Add GlusterFS to your stack with ease
+order: 10
+lead: Add GlusterFS to your application with ease
 tags: ['Add in']
 legacy: false
 permalink: /:collection/:path

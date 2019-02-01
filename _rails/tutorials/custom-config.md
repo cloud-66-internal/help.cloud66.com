@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: What is CustomConfig?
+title: Using CustomConfig
 categories: tutorials
-lead: ""
+order: 2
+lead: "How to use CustomConfig to manage your configuration files"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path

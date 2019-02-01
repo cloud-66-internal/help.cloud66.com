@@ -22,7 +22,7 @@ Before you start, please check you have the following:
 
 * **An existing Formation defined in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap Formations](/skycap/quickstarts/using_formations.html) guide.
 
-* **At least two team members on Cloud 66** (including yourself) &mdash; You can add team members using the [Teams section](/skycap/references/account/team-accounts.html#add-a-team-member) of the [Account Settings](https://app.cloud66.com/me) interface.
+* **At least two team members on Cloud 66** (including yourself) &mdash; You can add team members using the [Teams section](/skycap/account/team-accounts.html#add-a-team-member) of the [Account Settings](https://app.cloud66.com/me) interface.
 
 ## Overview
 
