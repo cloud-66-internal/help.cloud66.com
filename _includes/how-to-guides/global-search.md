@@ -1,12 +1,12 @@
 
 
-Global search is available on all pages and searches your stacks, servers, services, containers and more across your account.
+Global search is available on all pages and searches your applications (stacks), servers, services, containers and more across your account.
 
 ## Basic Search
 
 You can type and word or phrase in the search bar at the top of each page to start your search. By default this will search the following:
 
-- Stacks
+- Applications (stacks)
 - Servers
 - Services
 - Containers
@@ -32,10 +32,10 @@ Global search supports thse generic search directives:
 
 Each specific type might have some specific directives.
 
-### Stack directives
+### Application directives
 
-- `name` Search the stack name
-- `env` Search the stack environment
+- `name` Search the application name
+- `env` Search the application environment
 
 ### Server directives
 
@@ -74,6 +74,6 @@ Firewalls can be search only by their tags.
 You can always combine queries to narrow your search donw. Some examples are below:
 
 
-- `type:server type:stack` returns all servers and stack under your currently selected account
-- `env:production tag:active` returns all production stacks with a tag called `active`
+- `type:server type:stack` returns all servers and applications (stacks) under your currently selected account
+- `env:production tag:active` returns all production applications with a tag called `active`
 - `lion type:firewall type:server name:bigcustomer` returns everything within servers and firewall rules of any entity with a name of `bigcustomer` that has `lion` in it.

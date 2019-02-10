@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Migrating from Heroku to Cloud66
+title: Migrating from Heroku to Cloud 66
 categories: quickstarts
 order: 4
-lead: "Move your Rails application from Heroku over to your own servers"
+lead: "Move your Rails application from Heroku to your own servers using Cloud 66"
 legacy: false
 tags: ["migration"]
 
@@ -14,29 +14,47 @@ permalink: /:collection/:path
 
 ## About migrating from Heroku
 
-Migrating your application from Heroku to Cloud 66 involves deploying your code, importing your data and redirecting your traffic to the new endpoint. 
+You can migrate your application from Heroku to Cloud 66 in 3 steps: 
+
+1. Build and deploy your application's code via the Cloud 66 dashboard
+2. Import your data to your new environment
+3. Redirect traffic to the new endpoint
+
+## What you’ll need
+
+Before you begin migrating your application please check you have the following:
+
+* **A Cloud 66 Account** &mdash; If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. There is a free community plan and you'll get full unlimited access to all products free for 14 days.
+* **A Git repo containing your application code** &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.
+* **A Cloud Account or Your Own Servers** &mdash; See below.
+
+{% include general/cloud_provider_or_own_server_tabs.html %}
 
 
-## What server size do I need?
-
-Using Heroku, you can choose between 1X (512 MB), 2X (1 GB) and PX (6 GB) server sizes. This makes it easy to calculate your server requirements, and we recommend that you use similar server resources when deploying your stack with Cloud 66. We also recommend that you have a seperate server for your database in production environments.
+#### What server size do I need?
+<div class="notice"><p>
+Using Heroku, you can choose between 1X (512 MB), 2X (1 GB) and PX (6 GB) server sizes. This makes it easy to calculate your server requirements, and we recommend that you use similar server resources when deploying your application with Cloud 66. We also recommend that you have a separate server for your database in production environments.
+</p></div>
 
 
 ## Migrating
 
+### 1. Build and deploy your code
 
-### 1. Code
+Using the [Cloud 66 Dashboard](https://app.cloud66.com/dashboard), you can pull your code directly from your Git repository and build it into a new version of your application on your own servers. 
 
-Simply provide Cloud 66 the URL to your Git repository so that it can be analyzed. For more information, see [Accessing your Git repository](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html).
+If you need help getting started, please read our [Deploying your first app](/rails/quickstarts/getting_started.html) guide.
+
+We also have a guide to [accessing your Git repository](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html).
 
 
 ### 2. Data
 
-Once your code is deployed, it's time to migrate your data across. The process differs for PostgreSQL and MySQL databases:
+Once your code is deployed, you'll need to migrate your data across. The process differs for PostgreSQL and MySQL databases:
 
 **PostgreSQL**  
 
-From your Heroku toolbelt, create a database backup URL by running `heroku pgbackups:url`. Next, visit your stack detail page and click the _Import Heroku data_ link. Paste the URL provided by the toolbelt into the field, and click _Import Heroku data_.
+From your Heroku toolbelt, create a database backup URL by running `heroku pgbackups:url`. Next, visit your application detail page and click the _Import Heroku data_ link. Paste the URL provided by the toolbelt into the field, and click _Import Heroku data_.
 
 **MySQL**  
 
@@ -46,7 +64,7 @@ Start by dumping your existing database. Refer to the [ClearDB documentation for
 $ mysqldump -u [username] -p[password] [dbname] > backup.sql 
 {% endhighlight %}
 
-Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/{{page.collection}}/references/toolbelt.html#upload) to upload the file to your stack database server. Remember to replace the fields below with your values.
+Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/{{page.collection}}/references/toolbelt.html#upload) to upload the file to your application database server. Remember to replace the fields below with your values.
 
 {% highlight bash %}
 $ cx upload -s "[stack_name]" --server [database_server_name] backup.sql /tmp/backup.sql
@@ -58,7 +76,7 @@ Next, use the toolbelt to SSH to your server.
 $ cx ssh -s "[stack_name]" [server_first_name]
 {% endhighlight %}
 
-Finally, use the command below to import your backup into the database. You can find the generated username, password and database name by visting your stack detail page and clicking into your database server (eg. _MySQL server_).
+Finally, use the command below to import your backup into the database. You can find the generated username, password and database name by visting your application detail page and clicking into your database server (eg. _MySQL server_).
 
 {% highlight bash %}
 $ mysql -u [generated_user_name] -p [generated_password] "[database_name]" < /tmp/backupfile.sql 
@@ -67,7 +85,7 @@ $ mysql -u [generated_user_name] -p [generated_password] "[database_name]" < /tm
 
 ### 3. Traffic
 
-Once you're ready to serve traffic from your Cloud 66 stack, you need to redirect your traffic to it. For more information, see [Configure your DNS](/{{page.collection}}/tutorials/configure-dns.html).
+Once you're ready to serve traffic from your Cloud 66 application, you need to direct your traffic to it. For help doing this, see [Configure your DNS](/{{page.collection}}/tutorials/configure-dns.html).
 
 
 ## Useful pointers

@@ -1,5 +1,11 @@
 
+## Introduction
+
 A load balancer is used to distribute traffic across your web servers, and offers benefits such as maximizing throughoutput, minimizing response times and avoiding overload on any single server. Ultimately, load balancing increases the reliability of your stack.
+
+Cloud 66 for Rails supports and integrates *native* cloud load balancers - in other words those provisioned directly by the cloud providers. It is still possible to set up a load balancer manually, but this is not integrated into the  workflow of the dashboard as described below.
+
+## Load balancers by cloud provider
 
 Depending on which cloud provider you use, this load balancer will be set up differently:
 
@@ -13,18 +19,16 @@ Depending on which cloud provider you use, this load balancer will be set up dif
 
 The time required to set up your load balancer will depend on which cloud provider you use. Once your load balancer is set up, it will be ready to distribute the load between your web servers. **All your existing web servers** will automatically be added to the load balancer.
 
-## Add a load balancer
+## Adding a load balancer
 
-### Note
+To add a load balancer to your application: 
 
-This feature is only available if you have deployed using a cloud vendor, and for non-development stacks.
+* Open your application detail page. 
+* to the add-ins page by clicking _Install_ add-ins in the right sidebar. 
+* On the next page, clicking _Load balancer_ will display a brief summary of what will happen next. 
+* Click _Install_ load balancer to add a load balancer.
 
-To add a load balancer to your stack, start by visiting your stack detail page. Next, navigate to the add-ins page by clicking _Install_ add-ins in the right sidebar. On the next page, clicking _Load balancer_ will display a brief summary of what will happen next. Click _Install_ load balancer to add a load balancer.
-
-## Balance the load per service
-
-### Note
+#### Note
 <div class="notice notice-warning"><p>
-This feature is only available for Docker-based applications that are non-development.</p></div>
-
-For docker stacks you can use a load balancer to balance your services and they don’t have to be present on each server! Essentially Nginx will direct the requests to the service on its own machine first, if the service doesn’t exist there, then it will send it through Weave network to a server that has the service.
+This feature is only available if you have deployed using a cloud vendor, and for non-development applications.
+</p></div>

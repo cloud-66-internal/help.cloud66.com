@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title:  "About your Stack Network Settings"
+title:  "Network security & redirect settings"
 legacy: false
 categories: tutorials
-lead: Configure security and network settings
+lead: Configure settings for firewall, access control and redirection
 tags: ['network']
 permalink: /:collection/:path
 ---

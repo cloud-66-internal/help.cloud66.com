@@ -10,7 +10,7 @@ tags: ['Web server']
 permalink: /:collection/:path
 ---
 
-By default, stacks deployed by Cloud 66 run on <a href="https://www.phusionpassenger.com/" target="_blank">Phusion Passenger</a> behind <a href="http://wiki.nginx.org/Main" target="_blank">Nginx</a>. You can also choose to use one of several servers:
+By default, applications deployed by Cloud 66 run on <a href="https://www.phusionpassenger.com/" target="_blank">Phusion Passenger</a> behind <a href="http://wiki.nginx.org/Main" target="_blank">Nginx</a>. You can also choose to use one of several servers:
 
 - [Passenger Enterprise](/rails/how-to-guides/rack-servers/passenger-enterprise.html)
 - [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html)
@@ -19,17 +19,11 @@ By default, stacks deployed by Cloud 66 run on <a href="https://www.phusionpasse
 
 ### Important
 <div class="notice">
-
-    <p>Custom web servers currently only apply to Rack-based stacks, not Docker stacks.</p>
-</div>
-
-### Important
-<div class="notice">
-	<p>You need to choose your web server at the time of initial build of the stack. Changes to or from Passenger will not be applied after your stack has initially been built. You can however change freely between other supported servers after build.</p>
+	<p>You need to choose your web server at the time of initial build of the application. Changes to or from Passenger will not be applied after your application has initially been built. You can however change freely between other supported servers after build.</p>
 </div>
 
 ## Configurations for your Rack server
-If you would like to use a different server, there are some points you'd need to consider for it to work with a Cloud 66 stack. These conventions will allow Cloud 66 to redirect traffic to your servers and manage them for availability, memory consumption and restart cycles.
+If you would like to use a different server, there are some points you'd need to consider for it to work with a Cloud 66 application. These conventions will allow Cloud 66 to redirect traffic to your servers and manage them for availability, memory consumption and restart cycles.
 
 ### Traffic Socket
 For the traffic to be redirected to your web server, it should use a Unix socket at `/tmp/web_server.sock`

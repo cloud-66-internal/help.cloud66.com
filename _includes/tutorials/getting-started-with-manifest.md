@@ -22,7 +22,7 @@ For _Rails/Rack_ applications, place a file called `manifest.yml` in a folder na
 <code class="highlighter-rouge">$ ruby -e "require 'yaml'; YAML.load_file('.cloud66/manifest.yml')"</code>
 </p></div>
 
-## Manifest file example
+## A working example
 
 ### Change CORS settings
 
@@ -62,6 +62,12 @@ This is how it works:
 
 Ensure that you save this `manifest.yml` file under your `.cloud66` folder and commit it to your Git repository.  You can now deploy a new version of your application with it.
 
+#### What is CORS?
+<div class="notice"><p>
+Cross Origin Resource Sharing is a mechanism that allows many resources (e.g. fonts, JavaScript etc.) on a web page to be requested from another domain outside the domain from which the resource originated.
+</p></div>
+
+
 ### Force Nginx to update
 
 Although redeploying your application will update its configuration, it will not automatically push down all the changes to your Nginx servers. 
@@ -74,74 +80,13 @@ $ cx settings set -s my_app reconfigure.nginx true
 
 This will force your Nginx configuration to be rebuilt during the next redeployment. Once you redeploy, the CORS settings will be updated on your web servers.
 
-#### What is CORS?
-<div class="notice"><p>
-Cross Origin Resource Sharing is a mechanism that allows many resources (e.g. fonts, JavaScript etc.) on a web page to be requested from another domain outside the domain from which the resource originated.
-</p></div>
 
-## Manifest file structure
-
-As we can see in the example above, manifest file settings can be applied during the build of a new application or an existing application depending on the type of setting. They can also change a wide range of settings and configurations on your application. Now let's learn about the structure of a manifest file.
-
-### First level: Environment
-
-The first level of `manifest.yml` is the environment of your application. This allows you to use the same `manifest.yml` for multiple application with different environments. Some examples are:
-
-- production
-- staging
-- development
-
-You can also use your own custom environment names in your manifest file.
+#### Caution
+<div class="notice notice-warning"><p>Editing the manifest file of an existing application may not necessarily result in changes to the deployed instance(s) of that application, even if the application is subsequently redeployed. Read our <a href="/maestro/references/manifest-structure.html#classes-of-manifest-file-settings">in-depth guide</a> to understand the complexities around this. </p></div>
 
 
-### Second level: Component type
+## What's next?
 
-*Component type* defines which component of the application is being configured by that section of `manifest.yml`. 
-
-Available options are:
-
-- rails
-- docker
-- elasticsearch
-- gateway
-- glusterfs
-- load_balancer
-- memcached
-- mongodb
-- mysql
-- nginx
-- postgis
-- postgresql
-- redis
-- sinatra
-
-### Third Level (1): Configurations
-
-The third level of the manifest file determines the specific settings for the component specified in level 2.
-
-For example, this is how to set the version of Ruby used in a Rails application:
-
-```
-production:
-  rails:
-    configuration:
-      ruby_version: 2.5.1
-```
-
-### Third Level (2): Servers
-
-You can also specify settings for your servers in your `manifest.yml` by using the **servers** section.
-
-Here is an example to specify the cloud vendor, region, server size and server name for one of your servers. 
-
-
-```
-production:
-    {{ include.product | downcase }}:
-        servers:
-            server:
-                unique_name: my_app                
-                region: us-east-1
-                size: m3.medium
-                vendor: aws
-```
+* Understand the [structure of manifest files](/{{page.collection}}/references/manifest-structure.html).
+* Learn more about the power of manifest files with our [detailed how-to guide](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html).
+* Learn how to use [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) - a powerful tool for configuring the components of your application.

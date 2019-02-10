@@ -1,15 +1,3 @@
----
-layout: post
-template: one-col
-title: Understanding manifest files
-categories: references
-order: 3
-lead: Understanding the underlying principles of manifest files
-tags: ['tags']
-legacy: false
-permalink: /:collection/:path
----
-
 ## Classes of manifest file settings
 
 Although manifest files are a powerful tool for defining the composition of an application, it is vital to understand their limits and exceptions. 
@@ -36,7 +24,7 @@ Class 1 settings include:
 
 These are settings that require a specific action to trigger their roll-out. 
 
-For example, in order to implement changes to cross-origin scripting (CORS) settings in Nginx, you need to use the `reconfigure.nginx` command in [Cloud 66 Toolbelt](/maestro/references/toolbelt.html) to force the settings to propagate.
+For example, in order to implement changes to cross-origin scripting (CORS) settings in Nginx, you need to use the `reconfigure.nginx` command in [Cloud 66 Toolbelt](/{{page.collection}}/references/toolbelt.html) to force the settings to propagate.
 
 
 ### Class 3: Flexible settings
@@ -48,7 +36,7 @@ These are settings which will be applied as soon as the application is re-deploy
 
 Manifest files have a strict hierarchical structure that determines which part of an application is being addressed by the configuration variables. It's vital to ensure that each line of your configuration falls into the correct place in this hierarchy.
 
-For a working example of this, follow our [Getting Started](/maestro/quickstarts/getting-started-with-manifest.html) guide.
+For a working example of this, follow our [Getting Started](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) guide.
 
 ### First level: Environment
 
@@ -83,13 +71,20 @@ Available options are:
 
 ### Third Level (1): Configurations
 
-The third level of the manifest file determines the specific settings for the component specified in level 2. 
+The third level of the manifest file determines the specific settings for the component specified in level 2.
 
-In our example above, this is the level at which we changed the Redis version and set our custom nameservers. 
+For example, this is how to set the version of Ruby used in a Rails application:
+
+```
+production:
+  rails:
+    configuration:
+      ruby_version: 2.5.1
+```
 
 ### Third Level (2): Servers
 
-You can also specify settings for your servers in your  `manifest.yml` by using the **servers** section. 
+You can also specify settings for your servers in your `manifest.yml` by using the **servers** section.
 
 In our example below you can see that we're using Digital Ocean as our `vendor` and that we've opted for a 2GB instance in the London region. 
 
@@ -98,9 +93,9 @@ In our example below you can see that we're using Digital Ocean as our `vendor` 
 ## Example of manifest file
 
 ```
-docker:
+rails:
   configuration:
-    version: 18.03.0-ce
+    ruby_version: 2.5.1
     nameservers: ['8.8.8.8', '8.8.4.4']
   servers:
   - server:
@@ -117,4 +112,3 @@ redis:
       key_name: My_Key
 
 ```
-
