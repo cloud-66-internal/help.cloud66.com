@@ -16,8 +16,8 @@ If no logs are coming in, make sure that port 5044 is open on your ELK stack and
 
 {% if page.collection == 'legacy_docker' or page.collection == 'maestro' %}
 
+#### Note
 <div class="notice notice-danger">
-	<h3>Note</h3>
 	<p>For Docker stacks this will be added to the host, not as a container.</p>
 </div>
 {%endif%}

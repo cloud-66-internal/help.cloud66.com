@@ -1,10 +1,10 @@
 
 
-<h2 id="about">About using Logentries</h2>
+## About using Logentries
 
 Logentries is a great service for centralizing your log files, and this add-in makes it easy to add across your servers.
 
-<h2 id="add">Add Logentries to your stack</h2>
+## Add Logentries to your stack
 To add Logentries, access the add-ins menu of your stack and click _Logentries_.
 
 We'll ask you for your Logentries account key - if you don't have one, you can signup to a Logentries account.
@@ -12,13 +12,13 @@ We'll ask you for your Logentries account key - if you don't have one, you can s
 You can find your Logentries account ID in your account page. For more information, please see the [Logentries guide to how find the account key](https://docs.logentries.com/docs/accountkey/).
 
 {% if page.collection == 'legacy_docker' or page.collection == 'maestro' %}
+#### Note
 <div class="notice notice-danger">
-	<h3>Note</h3>
 	<p>For docker stacks this will be added to the host not as a container.</p>
 </div>
 {%endif%}
 
-<h2 id="troubleshoot">Troubleshoot</h2>
+## Troubleshoot
 
 ### No Logs or Logs are empty in Logentries
 

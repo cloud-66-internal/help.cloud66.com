@@ -1,14 +1,11 @@
-
 ## What is a manifest file?
 
-A manifest file allows you to be more explicit about your stack composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your stack. See [Getting started with manifest files](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) for an introduction.
+A manifest file allows you to be more explicit about your application composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your application. See [Getting started with manifest files](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) for an introduction.
 
 {% if include.product == "rails" %}
-For _Rails/Rack_ stacks, place a file called `manifest.yml` in a folder named `.cloud66`, that is in turn located in the root of your source code and checked into your repository.
+For _Rails/Rack_ applications, place a file called `manifest.yml` in a folder named `.cloud66`, that is in turn located in the root of your source code and checked into your repository.
 {% endif %}
-{% if include.product == "maestro" or include.product == "legacy_docker" %}
-For _Docker_ stacks, provide manifest contents after your stack has been analyzed (and before you deploy it) by using the _advanced_ tab. You can also change the manifest after your stack deployment with the _Configure manifest_ item in the right menu of your stack page.
-{% endif %}
+
 Once you're ready, start by going through each section below to build your manifest file.
 
 
@@ -23,11 +20,10 @@ The first level of your manifest file is the **environment** - this allows you t
 You can also use your own custom environment names in your manifest file.
 
 
-## Which application?
+## Which component?
 
-Next, select which application you would like to specify settings for. You can choose from the following:
+Next, select which component you would like to specify settings for. You can choose from the following:
 
-{% if include.product == "maestro" or include.product == "legacy_docker" %}*   [Docker](#docker){% endif %}
 *   [ElasticSearch](#elasticsearch)
 *   [Gateway](#gateway)
 *   [GlusterFS](#glusterfs)
@@ -36,53 +32,13 @@ Next, select which application you would like to specify settings for. You can c
 *   [MongoDB](#mongodb)
 *   [MySQL](#mysql)
 *   [Nginx](#nginx)
+*   [Node](#node)
 *   [PostGIS](#postgis)
 *   [PostgreSQL](#postgresql)
 *   [Redis](#redis)
+{% if include.product == "rails" %}
 *   [Sinatra](#sinatra)
-{% if include.product == "rails" %}*   [Rails](#rails){% endif %}
-
-{% if include.product == 'maestro' or include.product == 'legacy_docker' %}
-### Docker
-
-- **version**: Specify the version of Docker you want to install.
-- **weave_version** (_Optional_): Specify the version of Weave you want to install.
-- **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers.   
- <span style="background-color: #FFFF00"> Note that you must provide [**subnet_id**](#servers) for all servers in your stack.</span>
-- **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
-- **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
-- **image_keep_count** (_Optional, defaults to 5_): Set the number of old images to save on your servers (besides the running image).
-- **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your stack.  
-  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
-
-
-```
-production:
-  docker:
-    configuration:
-      version: 1.7.0
-      weave_version: 1.0.3
-      vpc_id: vpc-64872001
-      root_disk_size: 100
-      root_disk_type: ssd
-      image_keep_count: 5
-      nameservers: ['8.8.8.8', '8.8.4.4']
-```
-
-```
-production:
-  docker:
-    configuration:
-      version: 1.12.0
-      weave_version: 1.0.3
-      vn_name: your_vn_name
-      root_disk_size: 100
-      root_disk_type: ssd
-      image_keep_count: 15
-```
-* * *
-
+*   [Rails](#rails)
 {% endif %}
 
 ### ElasticSearch
@@ -108,9 +64,9 @@ production:
 - **name**: Specify the name of gateway you want to use for your stack.
 - **username** (_Optional_) Specify the username which should be used to connect to bastion server.
 
-
+### Note
 <div class="notice">
-  <h3>Note:</h3><p>The gateway should be defined and open before you can use it in manifest.</p>
+<p>The gateway should be defined and open before you can use it in manifest.</p>
 </div>
 
 
@@ -139,17 +95,19 @@ Available settings for a volume are:
 
 After you change the volume list, you need to redeploy your stack for new configuration be applied to your stack.
 
-
+### Note
 <div class="notice">
-  <h3>Note:</h3><p>You can not change replica_count after GlusterFS added to your stack.</p>
+<p>You can not change replica_count after GlusterFS added to your stack.</p>
 </div>
 
+### Note
 <div class="notice">
-  <h3>Note:</h3><p>You can not use glusterfs group or any of its servers in mount_targets.</p>
+<p>You can not use glusterfs group or any of its servers in mount_targets.</p>
 </div>
 
-<div class="notice-danger">
-  <h3>Note:</h3><p>Renaming a volume will delete volume and create a new one.</p>
+### Note
+<div class="notice notice-danger">
+<p>Renaming a volume will delete volume and create a new one.</p>
 </div>
 
 
@@ -157,22 +115,22 @@ After you change the volume list, you need to redeploy your stack for new config
 production:
   glusterfs:
     configuration:
-	  version: 3.7
-	  replica_count: 2
-	  mount_targets: ['app','redis']
-	  volumes:
-	  - volume:
-	    name: images-data
-		mount: "/mnt/images"
-		access_control:
-		  read: ['web', 'api']
-		  write: ['web']
-	  - volume:
-	    name: videos
-		mount: /mnt-data/videos
-		access_control:
-		  read: ['web']
-		  write: ['web']
+      version: 3.7
+      replica_count: 2
+      mount_targets: ['app','redis']
+      volumes:
+      - volume:
+        name: images-data
+        mount: "/mnt/images"
+        access_control:
+          read: ['web', 'api']
+          write: ['web']
+      - volume:
+        name: videos
+        mount: /mnt-data/videos
+        access_control:
+          read: ['web']
+          write: ['web']
 ```
 
 * * *
@@ -201,6 +159,7 @@ production:
 - **version**: Specify the version of MongoDB you want to install (can only be set during stack build).
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
+- **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
 
 ```
 production:
@@ -220,6 +179,7 @@ production:
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **engine**: Specify the MySQL engine you want to install. Valid values are 'mysql' and 'percona' (can only be set during stack build).
+- **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
 
 ```
 production:
@@ -242,7 +202,7 @@ production:
 
 ```
 production:
-  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  rails:
     configuration:
       nginx:
         cors: true
@@ -250,13 +210,13 @@ production:
         perfect_forward_secrecy: true # deprecated
 ```
 
-### CORS configuration
+#### CORS configuration
 
 If required, you can also specify the allowed origin (as '\*' or a single origin) and methods. For stacks created since 21st September 2016, you can also specify a comma-seperated list of origins, headers, and whether to allow credentials for CORS.
 
 ```
 production:
-  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  rails:
     configuration:
       nginx:
         cors:
@@ -268,6 +228,22 @@ production:
 
 * * *
 
+### Node version
+
+We automatically install the latest release of Node version 6.x.x when we set up your Rack/Rails stack servers. You can control which version is installed by editing the manifest file for any Rails stack as follows: 
+
+``` 
+rails:
+  configuration:
+    node_version: "6"       # will install latest v6.x.x
+    node_version: "6.14"    # will install latest v6.14.x
+    node_version: "6.14.4"  # will install specific v6.14.4
+```
+
+#### Applying changes
+<div class="notice notice-warning"><p>To apply changes to the Node version you need to update your manifest file, then <a href="/rails/how-to-guides/deployment/applying-upgrades.html#types">deploy-with-options</a> and select the <em>Apply Ruby/Node upgrades</em> option.</p></div>
+
+* * *
 
 ### PostgreSQL
 
@@ -275,6 +251,7 @@ production:
 - **postgis**: Specify whether to include PostGIS (can be added after initial stack build).
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
+- **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
 
 ```
 production:
@@ -303,7 +280,6 @@ production:
 
 * * *
 
-{% if include.product == 'rails' %}
 ### Rails
 
 A Rails application type in the manifest file gives you fine control over things like the Ruby version or the server the rails application is deployed on.
@@ -324,9 +300,9 @@ A Rails application type in the manifest file gives you fine control over things
      -  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git submodules from being pulled during a build. 
 
+#### Important
 <div class="notice notice-warning">
-<h3>Important!</h3>
-<p>In order to use a *vpc_id*, you must provide *subnet_id* for all servers in your stack.</p>
+<p>In order to use a <em>vpc_id</em>, you must provide </em> for all servers in your stack.</p>
 </div>
 
 ```
@@ -347,29 +323,11 @@ production:
       nameservers: ['8.8.8.8', '8.8.4.4']
 ```
 
-{% endif %}
-
-### Redis
-
-- **version**: Specify the version of Redis you want to install.
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
-- **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
-
-```
-production:
-  redis:
-    configuration:
-      version: 2.6.10
-      root_disk_size: 100
-      root_disk_type: ssd
-```
-
 * * *
 
-{% if include.product == 'rails' %}
 ### Rack
 
-A rack application type in the manifest file gives you fine control over things like the Ruby version or which server the application is deployed on.
+The manifest file gives you fine control over things like the Ruby version or which server the application is deployed on.
 
 - **ruby_version**: Specify the version of Ruby to use (overridden if present in Gemfile).
 - **do_initial_db_schema_load**: Specify whether to perform "rake db:schema:load" on new stack build.
@@ -385,8 +343,9 @@ A rack application type in the manifest file gives you fine control over things 
      <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git  submodules  from being pulled during a build. 
 
-<div class="notice-warning">
-<h3>Important!</h3><p>In order to use a *vpc_id*, you must provide *subnet_id* for all servers in your stack.</p>
+#### Important
+<div class="notice notice-warning">
+<p>In order to use a <em>vpc_id</em>, you must provide <em>subnet_id</em> for all servers in your stack.</p>
 </div>
 
 ```
@@ -406,15 +365,29 @@ production:
       nameservers: ['8.8.8.8', '8.8.4.4']
 ```
 
+### Redis
+
+- **version**: Specify the version of Redis you want to install.
+- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
+- **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
+
+```
+production:
+  redis:
+    configuration:
+      version: 2.6.10
+      root_disk_size: 100
+      root_disk_type: ssd
+```
+
 ### Sinatra
 
 For Sinatra use [Rack](#rack)
 
 * * *
-{% endif %}
 
 
-### Load balancers
+## Load balancers
 
 
 ### AWS load balancer
@@ -441,7 +414,7 @@ Available settings (refer to the [GCE documentation](https://cloud.google.com/co
 
 - **httpchk**: The URL visited to check your server health.
 
-- **balance**: The load balancing strategy. You can use these values: NONE, CLIENT_IP or CLIENT_IP_PROTO.
+- **balance**: The load balancing strategy. You can use these values: `NONE`, `CLIENT_IP` or `CLIENT_IP_PROTO`.
 
 ```
 production:
@@ -456,19 +429,23 @@ production:
 
 ### HAProxy
 
-Use a manifest file to configure and define your HAProxy load balancer deployed by Cloud 66. These changes will be either be applied when you redeploy a stack with more than one server, rebuild HAProxy or edit [HAProxy CustomConfig]({% if page.collection == "maestro" %}/maestro/how-to-guides/security/multi-cert_haproxy.html{%else%}/{{page.collection}}/how-to-guides/security/multi-cert_haproxy.html{%endif%}).
+Use a manifest file to configure and define your HAProxy load balancer deployed by Cloud 66. These changes will be either be applied when you redeploy a stack with more than one server, rebuild HAProxy or edit [HAProxy CustomConfig](/{{page.collection}}/how-to-guides/security/multi-cert_haproxy.html).
 
 Available settings (refer to the [HAProxy documentation](http://haproxy.1wt.eu/download/1.3/doc/configuration.txt) for more information):
-Server definitions
-unique_name: Name of the instance
-size: The size of the instance (Mandatory)
-region: Digital Ocean's region (Mandatory)
-vendor: digitalocean (Mandatory)
-key_name: Default (Mandatory)
-Configuration:
-- **httpchk**: The health-check configuration.
-- **balance**: The load balancing strategy.
-- **errorfile_\***: Location of your own custom error page content to serve in the case of receiving a HTTP error code on the load balancer.
+
+**Server definitions**
+
+* **unique_name**: Name of the instance
+* **size**: The size of the instance (mandatory)
+* **region**: Digital Ocean's region (mandatory)
+* **vendor**: digitalocean (mandatory)
+* **key_name**: Default (mandatory)
+
+**Configuration**
+
+* **httpchk**: The health-check configuration.
+* **balance**: The load balancing strategy.
+* **errorfile_\***: Location of your own custom error page content to serve in the case of receiving a HTTP error code on the load balancer.
 
 ```
 production:
@@ -520,7 +497,7 @@ Use a manifest file to customize the Rackspace load balancer deployed by Cloud 6
 
 Available settings (refer to the [Rackspace documentation](http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/Algorithms-d1e4367.html) for more information):
 
-- **balance**: The load balancing strategy. You can use these values : ROUND_ROBIN, RANDOM or LEAST_CONNECTIONS.
+- **balance**: The load balancing strategy. You can use these values : `ROUND_ROBIN`, `RANDOM` or `LEAST_CONNECTIONS`.
 
 ```
 production:
@@ -549,13 +526,13 @@ production:
 
 ## Which server?
 
-Every application defined in the manifest file must be bound to a server. However, if you'd like configurations to apply to all servers in an application type, you don't need to specify a server type. Servers can be deployed specifically to host that application, be shared between multiple applications (eg. {% if include.product == 'node' or include.product == 'Rails' %}{{ include.product | downcase }}{% else %}Docker{% endif %} and MySQL on the same server) or be an external server (eg. using an external database).
+Every application defined in the manifest file must be bound to a server. However, if you'd like configurations to apply to all servers in an application type, you don't need to specify a server type. Servers can be deployed specifically to host that application, be shared between multiple applications (eg. Rails and MySQL on the same server) or be an external server (eg. using an external database).
 
 Here is an example of a server definition:
 
 ```
 production:
-  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  rails:
     servers:
     - server:
       unique_name: app
@@ -573,15 +550,14 @@ These are the parameters that the _server_ section can take:
 - **size** (_Optional, BYOC only_): [Size of the server instance](http://developers.cloud66.com/#cloud-vendor-instance-names) created.
 - **availability_zone** (_Optional, AWS EC2 only_): Availability zone of the server instance in AWS EC2 region.
 
-
+### Important!
 <div class="notice notice-warning">
-<h3>Important!</h3>
 <p>Only a single cloud vendor and region is supported for servers in a stack.</p>
 </div>
 
 ```
 production:
-  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  rails:
     servers:
       server:
         unique_name: app
@@ -601,7 +577,7 @@ production:
 
 ```
 production:
-  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  rails:
     server:
       unique_name: frontend
       address: 123.123.123.123
@@ -609,13 +585,13 @@ production:
 
 ### Shared Servers
 
-You can share a server between two applications. This could be in cases like using the same server for both your {% if include.product != 'legacy_docker' %}{{page.collection}}{% else %}Docker{% endif %} app and the MySQL server behind it.
+You can share a server between two applications. This could be in cases like using the same server for both your Rails app and the MySQL server behind it.
 
 Each shared server definition specifies the name of another server definition in the manifest file for which the applications will then share the physical server:
 
 {% highlight yaml %}
 production:
-  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  rails:
     server:
       same_as: *another_existing_servers_unique_name*
 {% endhighlight %}
@@ -625,7 +601,7 @@ production:
 
 If you would like to use an external server for an application (like using your own MySQL or AWS RDS for example), you can define that server as external.
 
-External server definitions specify that the application is hosted on a server external to Cloud 66. This is not a valid target for your main application (ie. {% if include.product != 'legacy_docker' %}{{page.collection}}{% else %}Docker{% endif %}) but may be appropriate for another application type (ie. MongoDB):
+External server definitions specify that the application is hosted on a server external to Cloud 66. This is not a valid target for your main application (ie. rails) but may be appropriate for another application type (ie. MongoDB):
 
 ```
 production:
@@ -633,11 +609,8 @@ production:
     server: external
 ```
 
-
-
-
+### Important!
 <div class="notice notice-warning">
-<h3>Important!</h3>
 You are <b>required</b> to specify a <a href="#which-server">server</a> for application types, whereas configurations are <b>optional</b>.
 </div>
 
@@ -698,31 +671,16 @@ Default values for each process type are:
   - Stop Signal `stop_sequence`: `quit,30,term,11,kill` (if sidekiq NOT detected)  
   - Restart `restart_on_deploy`: `true`
 
+
 ## Specify additional LiveLog files
 
 Each application type supports the additional partial configuration to add custom live log files for that application type:
 
 ```
 production:
-  {% if include.product != 'legacy_docker' and include.product != 'maestro' %}{{ include.product | downcase }}{% else %}docker{% endif %}:
+  rails:
     configuration:
       custom_log_files: ["/tmp/mylog/*/*.log"]
 ```
 
-For more information about **LiveLogs** and additional examples, please see the [LiveLogs help page]({% if page.collection == 'maestro' %}/maestro/how-to-guides/deployment/setting-up-custom-livelogs.html{%else%}/{{page.collection}}/how-to-guides/deployment/setting-up-custom-livelogs.html{%endif%}).
-
-
-## Test experimental features
-
-You can use some features that are still in beta by adding them to _experiments_ section of your manifest file, for example:
-
-```
-production:
-  experiments:
-    docker_storage: overlay
-```
-
-These are the parameters that the _experiments_ section currently accepts:
-
-- **docker_storage** (_Optional_): If set to _overlay_, we will configure Docker on new servers to use OverlayFS backend storage.
-
+For more information about **LiveLogs** and additional examples, please see the [LiveLogs help page](/{{page.collection}}/how-to-guides/deployment/setting-up-custom-livelogs.html).

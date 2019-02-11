@@ -19,8 +19,9 @@ production:
 </pre>
 
 {% if page.collection == 'legacy_docker' or page.collection == 'maestro' %}
+
+#### Note
 <div class="notice notice-danger">
-	<h3>Note</h3>
 	<p>For docker stacks this will be added to the host not as a container.</p>
 </div>
 {%endif%}

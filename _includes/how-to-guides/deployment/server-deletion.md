@@ -3,8 +3,8 @@ By default, Cloud66 will not delete servers and other objects created in your cl
 
 If you go to the stack information page and select `Remove physical servers when a Cloud66 server is deleted?`, then when you delete a server, load balancer, or even a whole stack, related objects in the cloud will be deleted as well.
 
+#### Note
 <div class="notice notice-danger">
-    <h3>Note</h3>
     <p>Physical server deletion is not instant; it can currently take up to 24 hours for the removal to occur.</p>
 </div>
 

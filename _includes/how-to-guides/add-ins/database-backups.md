@@ -1,12 +1,12 @@
 
-<h2 id="intro">What is the database backup add-in?</h2>
+## What is the database backup add-in?
 
 Use this add-in to backup your database on a schedule of your choosing.  You can choose from different settings to have your expected behavior :
 
-<h3 id="types">Backup types</h3>
+### Backup types
 Cloud 66 provides two types of backups: _managed_ and _unmanaged_.
 
-<h4 id="managed">Managed backups</h4>
+#### Managed backups
 Having managed backups carries several benefits:
 
 - You can download database backups through the web UI and API
@@ -17,15 +17,15 @@ Having managed backups carries several benefits:
 
 The 100 most recent managed backups are kept by default.
 
-<h4 id="unmanaged">Unmanaged backups</h4>
+#### Unmanaged backups
 
 Unmanaged backups are stored on your local server and are available under `/var/cloud66/backups`. The 10 most recent unmanaged backups are kept by default.
 
-<h3 id="formats">Backup format</h3>
+### Backup format
 Backup format for redis and mongodb is always **binary**.  For _Mysql_ and _Postgresql_ you can choose between **binary** and **text**.
 Each format has its own benefits and downsides: 
 
-<h4 id="formatbinary">Binary</h4>
+#### Binary
 For binary backups we are taking a snapshot of the data folder of your database service and applying needed logs to have a consistent data folder. The result is a data folder which can be restored on your server to return it in the same state as it was at the time of backup. 
 
 As this backup contains raw data of your database server(Instead of human readable SQL dump file) you can expect much faster backup/restore process, specially for large databases this method can be faster up to 4 times which can be very helpful in failover scenarios. But there are some limitation :
@@ -37,7 +37,7 @@ As this backup contains raw data of your database server(Instead of human readab
 - You need to shutdown the database service during the restore 
 
 
-<h4 id="formattext">Text</h4>
+#### Text
 
 For this format we are generating a dump file with SQL commands that, when fed back to the server, will recreate the database in the same state as it was at the time of the dump.
 
@@ -49,7 +49,7 @@ These are other benefits of this type of backup :
 - You can restore this backup when server is up and running.
 - You can move backup jobs to your slave servers (if available) to reduce your master server load
 
-<h3 id="schedule">Backup schedule</h3>
+### Backup schedule
 You can specify how often you would like to backup your database. It could be
  
 - Hourly 
@@ -57,43 +57,41 @@ You can specify how often you would like to backup your database. It could be
 - Weekly 
 - Monthly 
 
-<h3 id="compress">Compression</h3>
+### Compression
 You can specify whether or not you would like to Gzip compress your backups. Compressing your backups will take up less space, but will require additional processing during the compression.  
 
-<h3 id="exclude">Exclude tables</h3>
+### Exclude tables
 This option applies to **text** MySQL and PostgreSQL backups.  You can provide a comma separated list of tables which you want to exclude from your backup to create a smaller one.   
 
 
-<h3 id="replica">Install on replica</h3>
+### Install on replica
 This option applies to **text** MySQL and PostgreSQL and redis backups. With this option you can move the backup service to your database replica if available, to relieve pressure from your production database. 
 
-
+#### Note
 <div class="notice notice-danger">
-	<h3>Note</h3>
 	<p>Add/Remove Postgresql binary backup needs a service restart.</p>
 </div>
 
-
+#### Note
 <div class="notice notice-danger">
-	<h3>Note</h3>
 	<p>In order for backups to work, you are required to have twice as much space on your server as your backup consumes.</p>
 </div>
 
 
-<h3 id="download">Downloading backup</h3>
+### Downloading backup
 You can retrieve your backup in one of three ways:
 
-<h4 id="dl_toolbelt">Cloud 66 toolbelt</h4> 
+#### Cloud 66 toolbelt 
 You can retrieve your database backup by using the [toolbelt backup management]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#about-backup-management). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
 
-<h4 id="dl_script">Download script</h4> 
+#### Download script 
 
 
 Download the script and transfer it to the desired server or simply click on **Copy script to clipboard** and paste it to the server and run the command. 
 
 By running the download script, your backup will be downloaded (and concatenated if it is a multi part backup) and prepared to be ready to restore. At final step , script will show you the steps you need to follow in order to restore downloaded backup.
 
-<h4 id="dl_command">Manually download</h4> 
+#### Manually download 
 In download backup page (Cloud66 dashboard), you have this option to manually download backups. By clicking on **Manually download backups** you will see some signed(time bound) generated link(s) for your backup (Or its part if it is greater than 350MB). 
 You can use **curl** to download it : 
 
@@ -113,7 +111,7 @@ You need to concatenate different parts if you have a multipart backup in order 
 $ cat mysql.tar.aa mysql.tar.ab mysql.tar.ac mysql.tar.ad > mysql.tar 
 </pre>
 
-<h3 id="restore">Restore backup</h3>
+### Restore backup
 
 You can restore a backup through Cloud66 dashboard backup page. There is a **restore button** for each backup that will download the backup on your server and restore it.  
 
@@ -130,7 +128,7 @@ The -C option allows you to choose which folder to extract the files to.
 
 After you have an unarchived version of your backup ready in a folder you should follow some steps base on your database type.
 
-<h4 id="rs_mysql">Mysql</h4>
+#### Mysql
 
 First you need to detect if the backup is a **Text backup** or **Binary Backup**.  Run following command on the result folder of previous step :
 
@@ -241,8 +239,9 @@ $ sudo systemctl stop mysql
 
 4. Use following command to delete Mysql data directory 
 
+#### Note
 <div class="notice notice-danger">
-	<h3>Note</h3>
+
 	<p>Please take a backup from Mysql data directory before deleting it to be able to restore if something goes wrong.</p>
 </div>
 
@@ -286,7 +285,7 @@ $ sudo systemctl start mysql
 </pre>
 
 
-<h4 id="rs_pg">Postgresql</h4>
+#### Postgresql
 
 First you need to detect if the backup is a **Text backup** or **Binary Backup**.  Run following command on the result folder of previous step :
 
@@ -380,8 +379,9 @@ $ sudo systemctl stop postgresql
 
 3. Use following command to delete Postgresql data directory 
 
+#### Note
 <div class="notice notice-danger">
-	<h3>Note</h3>
+
 	<p>Please take a backup from Postgresql data directory before deleting it to be able to restore if something goes wrong.</p>
 </div>
 
@@ -424,7 +424,7 @@ $ sudo systemctl start  postgresql"
 </pre>
 
 
-<h4 id="rs_redis">Redis</h4>
+#### Redis
 
 1. Run following command to flatten the folder 
 
@@ -452,8 +452,8 @@ $ sudo bluepill cloud66_redis stop || sudo service redis stop
 
 4. Use following command to delete Redis data file
 
+#### Note
 <div class="notice notice-danger">
-	<h3>Note</h3>
 	<p>Please take a backup from Redis data file before deleting it to be able to restore if something goes wrong.</p>
 </div>
 
@@ -480,7 +480,7 @@ $ sudo bluepill cloud66_redis start || sudo service redis start
 </pre>
 
 
-<h4 id="rs_mongo">MongoDB</h4>
+#### MongoDB
 
 1. Run following command to see if there is database folder in unarchived folder (Replace YOUR_DATABASE_NAME with correct value): 
 
@@ -535,7 +535,7 @@ $ mongorestore --drop --db YOUR_DATABASE_NAME  /path/to/database/back
 </pre>
 
 
-<h2 id="pricing">Pricing</h2>
+## Pricing
 
 <table class='table table-bordered table-striped table-small'>
     <thead>

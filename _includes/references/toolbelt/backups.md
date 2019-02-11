@@ -2,8 +2,9 @@
 
 The following commands help you manage your backups, such as listing, downloading and initiating backups on your stacks.
 
+#### Note
 <div class="notice">
-  <h3>Note:</h3><p>This only applies to managed backups and not the unmanaged ones.</p>
+<p>This only applies to managed backups and not the unmanaged ones.</p>
 </div>
 
 

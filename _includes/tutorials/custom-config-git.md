@@ -30,7 +30,7 @@ Now open the file you want to change in your favourite text editor. Once done, s
 
 Done!
 
-<h2>CustomConfig git workflow</h2>
+## CustomConfig git workflow
 
 It’s important to know when your changes are going to be pushed to your servers.
 

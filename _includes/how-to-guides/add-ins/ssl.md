@@ -4,7 +4,7 @@ SSL is an acronym for Secure Sockets Layer, an encryption technology that was cr
 
 Cloud 66 provides two types of SSL, one is the standard one and the other is the [Let's Encrypt](https://letsencrypt.org) one.
 
-<h2>Standard SSL Certificate</h2>
+## Standard SSL Certificate
 You can easily add a SSL certificate to your stack from the add-in page. Apart from the certificate key and SSL certificate, you can also provide an intermediate certificate and allowed server names (with wildcards accepted).
 
 Once you've provided your SSL certificate and key, we'll install them on all your web servers.
@@ -13,7 +13,7 @@ Cloud 66 supports _SSL Termination_ on _HAProxy (1.5.x or higher)_ and _Amazon E
 
 Refer to our [documentation](/{{page.collection}}/how-to-guides/security/ssl-certificate.html)
 
-<h2>Let's Encrypt SSL Certificate</h2>
+## Let's Encrypt SSL Certificate
 
 Adding this SSL certificate is even easier, you only need to add the DNS name for this. 
 
