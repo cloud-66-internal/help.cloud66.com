@@ -23,7 +23,7 @@ Unmanaged backups are stored on your local server and are available under `/var/
 
 <h3 id="formats">Backup format</h3>
 Backup format for redis and mongodb is always **binary**.  For _Mysql_ and _Postgresql_ you can choose between **binary** and **text**.
-Each format has its own benefits and downsides : 
+Each format has its own benefits and downsides: 
 
 <h4 id="formatbinary">Binary</h4>
 For binary backups we are taking a snapshot of the data folder of your database service and applying needed logs to have a consistent data folder. The result is a data folder which can be restored on your server to return it in the same state as it was at the time of backup. 

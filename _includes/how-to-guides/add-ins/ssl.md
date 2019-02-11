@@ -17,8 +17,9 @@ Refer to our [documentation](/{{page.collection}}/how-to-guides/security/ssl-cer
 
 Adding this SSL certificate is even easier, you only need to add the DNS name for this. 
 
+#### Warning
+
 <div class="notice notice-danger">
-	<h3>Note</h3>
 	<p>The DNS name <b>won't accept wild cards</b> , also having "<b>_</b>" (underscore) in your <b>DNS name won't work</b>.</p>
 </div>
 

@@ -1,7 +1,7 @@
 
-## Step 1: Checkout your CustomConfig
+## Step 1: Check out your CustomConfig
 
-Checkout your [CustomConfig](/{{page.collection}}/tutorials/custom-config-git.html) git and add the file *deploy_hooks.yml* 
+Check out your [CustomConfig](/{{page.collection}}/tutorials/custom-config-git.html) git and add the file *deploy_hooks.yml* 
 
 
 ## Step 2: Add the weavescope snippet
@@ -22,13 +22,19 @@ production: # Environment or your choice
 ## Step 3: Commit and redeploy your stack
 
 Commit the changes to the CustomConfig git reposity and redeploy your stack. 
-**NOTE:** If your set WEAVE_SCOPE_TOKEN environment variable, weave scope will connect to Weave Cloud. If not. Read step 4.
+
+#### Note
+<div class="notice"><p>
+If your set WEAVE_SCOPE_TOKEN environment variable, weave scope will connect to Weave Cloud. If not, proceed to Step 4.
+</p></div>
 
 
-## Step 4: Open port 4040 to access Weave Scope
 
-Weavescope will run on port 4040 which is not exposed to the outside world by default, which is a good thing. Make sure port 4040 is only accesible by your own IP-address. In order to access the UI of Weave Scope you have to enable port 4040 on your [stack firewall]({% if page.collection == "maestro" or page.collection == "skycap" %}/maestro/references/server-ip-addresses.html{%else%}/{{page.collection}}/references/server-ip-addresses.html{%endif%}).
+## Step 4: Open port 4040
 
-**WARNING!** 
-Don't expose 4040 to the whole world to see. With weavescope you can control all your running containers and execute commands inside running containers. Take good care of those powers!
+Weavescope will run on port 4040 which is not exposed to the outside world by default. Make sure port 4040 is only accessible by your own IP address. In order to access the UI of Weave Scope you have to enable port 4040 on your [stack firewall](/{{page.collection}}/references/server-ip-addresses.html).
 
+#### Warning
+<div class="notice notice-danger"><p>
+Don't expose 4040 to the public internet. Weavescopecan control all your running containers and execute commands inside running containers which is a huge security risk.
+</p></div>

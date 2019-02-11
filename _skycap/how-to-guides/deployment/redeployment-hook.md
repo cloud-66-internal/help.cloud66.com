@@ -2,8 +2,8 @@
 layout: post
 template: one-col
 title: Using redeployment hooks
-categories: how-to-guides/deployment
-order: 40
+categories: how-to-guides
+order: 10
 lead: "How to use redeployment hooks to achieve automated deployments"
 legacy: false
 tags: ["operations"]
@@ -16,7 +16,7 @@ Redeployment hooks allow you to achieve continuous deployment by deploying your 
 
 ### Accessing redeployment hooks
 
-A unique redeployment hook URL is automatically generated for each Maestro applications. To access it:
+A unique redeployment hook URL is automatically generated for each applications. To access it:
 
 1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Settings & Information*  in the **Application** panel on the right of the screen
@@ -70,7 +70,7 @@ When a redeployment hook is invoked:
 
 Users who have signed in through Github (and who have enough access to create and edit deployment events for their applications on GitHub) can activate continuous deployments on GitHub. 
 
-To do this: access your [Application settings](/maestro/references/toolbelt.html#settings-variables) via the toolbelt and set **continuous.deploy** to _true_.
+To do this: access your [Application settings](/skycap/references/shells/toolbelt.html#settings-variables) via the toolbelt and set **continuous.deploy** to _true_.
 
 ```
 $ cx settings set -s my_app_name continuous.deploy true
@@ -115,4 +115,4 @@ curl -X POST [your redeployment hook URL]
 
 
 #### Note
-<div class="notice"><p>If you are manually invoking redeployments you should consider using <a href="/maestro/references/toolbelt.html#redeploy-your-stack">Cloud 66 Toolbelt</a> instead, as it has additional features!</p></div>
+<div class="notice"><p>If you are manually invoking redeployments you should consider using <a href="/skycap/references/shells/toolbelt.html#redeploy-your-stack">Cloud 66 Toolbelt</a> instead, as it has additional features!</p></div>
