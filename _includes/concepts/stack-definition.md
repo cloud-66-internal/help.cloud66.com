@@ -1,22 +1,38 @@
+## What is Cloud 66 for Rails?
 
+Cloud 66 for Rails is a DevOps-automation service that allows you to easily build, deploy and maintain your Rack-based applications, and their supporting components, on any cloud or server. 
+
+Cloud 66 for Rails allows you to centralise the provisioning and management of:
+
+* Rack-based applications (and app servers)
+* Databases
+* Load balancers
+* Caches 
+* Message queues
+* File storage
+* Firewalls
+* SSL certificates
+* Monitoring and logging
+
+...as well as all of the configuration files, settings and environment variables on which these components rely.
+
+### How does this differ from other PaaS providers?
+
+Unlike traditional PaaS offerings like Heroku or Google App Engine, Cloud 66 for Rails allows you to use your own servers - whether in the cloud, in a data centre or even on your own premises. We support both public and private clouds, as well as hybrids and bare metal installations.
+
+Cloud 66 for Rails is primarily developer-focussed. It automates and standardises the important but repetitive (and error-prone) tasks involved in configuring and deploying code to infrastructure. The platform is designed to work for both small teams without dedicated DevOps resources, and larger organisations with separate DevOps teams.
 
 ## How we define "application"
 
-For the purposes of this documentation an application is the complete set of hardware and software components needed for your software to run. Each level of the application represents an abstraction layer that provides a high-level overview of your setup.
-
-For example, your application might be comprised of a load balancer, a number of web servers, process and database servers, your operating system and finally the hardware provided by your cloud vendor:
-
-![image](http://assets.cloud66.com/help/images/rails_stack_workflow.png)
-
-* * *
+For the purposes of this documentation an application is the complete set of software, configuration and hardware components needed for your software to run. This includes all of the [components](#what-is-cloud-66-for-rails) described above.
 
 ## "Application" vs "Stack"
 
-In previous versions of this documentation we used the concept of a “stack” to describe much the same concept as we now describe using “application”. The two concepts are related but not identical.
+In previous versions of this documentation we used the concept of a "stack" to describe much the same concept as we now describe using "application". The two concepts are related but not identical.
 
-In particular “stack” tends to include both underlying infrastructure and the components running on that substrate, whereas “application” is more abstracted from the underlying infrastructure.
+In particular "stack" tends to focus more on the underlying infrastructure and the components running on that substrate, whereas "application" is more abstracted from the underlying infrastructure.
 
-However, when reading any documentation or our forums, it will often be helpful to think of “stack” and “application” as effectively synonymous.
+However, when reading any documentation or our forums, it will often be helpful to think of "stack" and "application" as effectively synonymous.
 
 In a general sense, both these terms encapsulate the same thing: an interconnected collection of components, configurations and services that are presented to the world as a single, coherent piece of software.
 
@@ -100,52 +116,5 @@ StackScore&trade; is a score that provides an indication of how reliable, resili
 
 Always try to keep your stacks at an **A** StackScore&trade; level to ensure stack health.
 
-
 Cloud 66 constantly seeks to update and improve the StackScore algorithm to consider new data points as well as external conditions, which means that your StackScore will change over time.
-
-* * *
-
-
-## Build an application
-
-To build your first stack, see our [Getting Started guide](/{{page.collection}}/quickstarts/getting_started.html). If you have existing stack(s), simply click _New Application_ from your Cloud 66 Dashboard.
-
-* * *
-
-
-## Edit application properties
-
-You can access your _Application information_ page from the right sidebar of your stack page. This page shows you general information about your stack, the different servers it consists of and information about your application.
-
-It also allows you to edit your stack name, and you can edit your Docker service configuration under the _Service configurations_ menu on the stack details page. For Rack-based applications, you can edit your Git repository and branch by clicking the _Edit_ button next to each field on the _Application information_ page. Editing your application name has an important implication.
-
-### Important
-
-<div class="notice">
-
-    <p>Internal c66 domain names (*.c66.me) are based on your application name, and will change if you rename the application.</p>
-
-    <p>Unless you use Failover groups, you will have to update your DNS to point at the new address to keep your application accessible. By using Failover groups, this will be updated automatically for you.</p>
-
-</div>
-
-## Clone an application
-
-There are various reasons for cloning an existing application - for example, you may want to deploy a production environment of an existing development application, or migrate across regions or data centers.
-
-To clone an application, visit your application page and click _Clone this application_ from the right sidebar. This will allow you to choose a new application name and environment. Cloning your application will preserve any environment variables from the existing application, and also allows you to define where to deploy to along with other settings.
-
-* * *
-
-
-## Delete an application
-
-
-
-### Important
-
-Deleting an application will not delete your cloud servers - remember to delete the servers from your cloud account.
-
-
-To delete an application, visit your application page and click _Delete Application_ from the right sidebar. You will have to confirm this action.
 
