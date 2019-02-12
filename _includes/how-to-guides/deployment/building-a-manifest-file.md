@@ -1,4 +1,4 @@
-## What is a manifest file?
+## Overview
 
 A manifest file allows you to be more explicit about your application composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your application. See [Getting started with manifest files](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) for an introduction.
 
@@ -11,7 +11,7 @@ Once you're ready, start by going through each section below to build your manif
 
 ## Which environment?
 
-The first level of your manifest file is the **environment** - this allows you to use the same `manifest.yml` for multiple stacks with different environments. Some examples are:
+The first level of your manifest file is the **environment** - this allows you to use the same `manifest.yml` for multiple applications with different environments. Some examples are:
 
 - production
 - staging
@@ -44,7 +44,7 @@ Next, select which component you would like to specify settings for. You can cho
 ### ElasticSearch
 
 - **version**: Specify the version of ElasticSearch you want to install.
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
+- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 
 ```
@@ -61,7 +61,7 @@ production:
 
 ### Gateway
 
-- **name**: Specify the name of gateway you want to use for your stack.
+- **name**: Specify the name of gateway you want to use for your application.
 - **username** (_Optional_) Specify the username which should be used to connect to bastion server.
 
 ### Note
@@ -81,7 +81,7 @@ production:
 ### GlusterFS
 
 - **version**: Specify the version of GlusterFS you want to install.
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
+- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is `ssd`.
 - **replica_count** : Number of nodes in _GlusterFS cluster_ which a data will be replicated on it(i.e replica count 2 means your data exist on two nodes). Default value is 1.
 - **mount_targets** : List of _Servers_ and _Server Groups_ you need GlusterFS mounted on them. You can specify the name of the _server_ or _server group_ (i.e rails,docker,mysql,...). You can also use `app` and `db` keywords, `app` is your main app server group (i.e docker, rails, ...)  and `db` is your db server groups (i.e mysql,redis,postgresql,... ). Default value is `app`.
@@ -91,23 +91,19 @@ Available settings for a volume are:
 
 - **name**: Specify the name of volume.
 - **mount**: Specify the mount point of the volume on clients.
-- **access_control** (_Optional, Docker stacks only_): Specify the list of docker services which should have a _read only_ or _read/write_ attached volume, mounted to this glusterfs volume. Options are `read` and `write` (which includes read as well)
 
-After you change the volume list, you need to redeploy your stack for new configuration be applied to your stack.
+After you change the volume list, you need to redeploy your application for new configuration be applied to your application.
 
-### Note
+#### Notes
 <div class="notice">
-<p>You can not change replica_count after GlusterFS added to your stack.</p>
+<p>
+- You can not change replica_count after GlusterFS added to your application. <br/>
+- You can not use glusterfs group or any of its servers in mount_targets.</p>
 </div>
 
-### Note
-<div class="notice">
-<p>You can not use glusterfs group or any of its servers in mount_targets.</p>
-</div>
-
-### Note
+#### Warning
 <div class="notice notice-danger">
-<p>Renaming a volume will delete volume and create a new one.</p>
+<p>Renaming a volume will actually delete that volume and create a new one.</p>
 </div>
 
 
@@ -156,8 +152,8 @@ production:
 
 ### MongoDB
 
-- **version**: Specify the version of MongoDB you want to install (can only be set during stack build).
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
+- **version**: Specify the version of MongoDB you want to install (can only be set during application build).
+- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
 
@@ -175,10 +171,10 @@ production:
 
 ### MySQL
 
-- **version**: Specify the version of MySQL you want to install. Valid values are 5.5 and 5.6 (can only be set during stack build).
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
+- **version**: Specify the version of MySQL you want to install. Valid values are 5.5 and 5.6 (can only be set during application build).
+- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
-- **engine**: Specify the MySQL engine you want to install. Valid values are 'mysql' and 'percona' (can only be set during stack build).
+- **engine**: Specify the MySQL engine you want to install. Valid values are 'mysql' and 'percona' (can only be set during application build).
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
 
 ```
@@ -197,7 +193,7 @@ production:
 ### Nginx
 
 - **cors**: Enable [Cross Origin Resource Sharing](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) - this will be taken into account when your Nginx configuration is reloaded.
-- **extra-build-arguments**: (_applies to Rack/Passenger stacks only). Extra build argument string to be added the nginx build command. Note: if you require additional modules that themselves require specific source to be present, you should use a BEFORE_NGINX deploy hook to ensure that source is present. You can use the "cloud66/download" snippet to achieve this easily. The following build arguments are currently always added: "--with-http_realip_module --with-ipv6 --with-http_v2_module" regardless of this value.
+- **extra-build-arguments**: (applies to Rack/Passenger applications only). Extra build argument string to be added the nginx build command. Note: if you require additional modules that themselves require specific source to be present, you should use a `BEFORE_NGINX` [deploy hook](/{{page.collection}}/references/deploy-hooks-syntax.html#hook-points) to ensure that source is present. You can use the `cloud66/download` snippet to achieve this easily. The following build arguments are currently always added: `--with-http_realip_module --with-ipv6 --with-http_v2_module` regardless of this value.
 - **perfect_forward_secrecy** (_deprecated_): Enable [Perfect Forward Secrecy](http://en.wikipedia.org/wiki/Perfect_forward_secrecy) - this will be taken into account when your Nginx configuration is reloaded.
 
 ```
@@ -212,7 +208,7 @@ production:
 
 #### CORS configuration
 
-If required, you can also specify the allowed origin (as '\*' or a single origin) and methods. For stacks created since 21st September 2016, you can also specify a comma-seperated list of origins, headers, and whether to allow credentials for CORS.
+If required, you can also specify the allowed origin (as '\*' or a single origin) and methods. For applications created since 21st September 2016, you can also specify a comma-seperated list of origins, headers, and whether to allow credentials for CORS.
 
 ```
 production:
@@ -230,7 +226,7 @@ production:
 
 ### Node version
 
-We automatically install the latest release of Node version 6.x.x when we set up your Rack/Rails stack servers. You can control which version is installed by editing the manifest file for any Rails stack as follows: 
+We automatically install the latest release of Node version 6.x.x when we set up your Rack/Rails application servers. You can control which version is installed by editing the manifest file for any Rails application as follows: 
 
 ``` 
 rails:
@@ -247,9 +243,9 @@ rails:
 
 ### PostgreSQL
 
-- **version**: Specify the version of PostgreSQL you want to install (can only be set during stack build).
-- **postgis**: Specify whether to include PostGIS (can be added after initial stack build).
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
+- **version**: Specify the version of PostgreSQL you want to install (can only be set during application build).
+- **postgis**: Specify whether to include PostGIS (can be added after initial application build).
+- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
 
@@ -286,23 +282,21 @@ A Rails application type in the manifest file gives you fine control over things
 
 - **ruby_version**: Specify the version of Ruby to use (overridden if present in Gemfile).
 - **asset_pipeline_precompile**: Specify whether to use asset pipeline compilation - this will be taken into account during redeployment.
-- **do_initial_db_schema_load**: Specify whether to perform "rake db:schema:load" on a new stack build.
+- **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on a new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
-- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the passenger_max_pool_size (Passenger-based stacks only) - this will be taken into account during redeployment.
-- **locked_passenger_version**: Force the version of passenger to use. Note: this only applies during server build and is not supported on passenger enterprise stacks.
+- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment.
+- **locked_passenger_version**: Force the version of passenger to use. Note: this only applies during server build and is not supported on Passenger Enterprise applications.
 - **activeprotect**: Specify a whitelist of IPs that should be ignored by your ActiveProtect configuration.
-- **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers. 
-     -  <span style="background-color: #FFFF00">Note that you must provide  [**subnet_id**](#servers) for all servers in your stack.</span>
+- **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers. <span style="background-color: #FFFF00">Note that you must provide  [**subnet_id**](#servers) for all servers in your application.</span>
 - **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
+- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
-- **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your stack.  
-     -  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
+- **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application.  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git submodules from being pulled during a build. 
 
 #### Important
 <div class="notice notice-warning">
-<p>In order to use a <em>vpc_id</em>, you must provide </em> for all servers in your stack.</p>
+<p>In order to use a <em>vpc_id</em>, you must provide </em> for all servers used by your application.</p>
 </div>
 
 ```
@@ -330,22 +324,21 @@ production:
 The manifest file gives you fine control over things like the Ruby version or which server the application is deployed on.
 
 - **ruby_version**: Specify the version of Ruby to use (overridden if present in Gemfile).
-- **do_initial_db_schema_load**: Specify whether to perform "rake db:schema:load" on new stack build.
+- **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
-- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the passenger_max_pool_size (Passenger-based stacks only) - this will be taken into account during redeployment.
-- **locked_passenger_version**: Force the version of passenger to use. Note: this only applies during server build and is not supported on passenger enterprise stacks.
+- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment.
+- **locked_passenger_version**: Force the version of passenger to use. Note: this only applies during server build and is not supported on Passenger Enterprise applications.
 - **activeprotect**: Specify a whitelist of IPs that should be ignored by your ActiveProtect configuration.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers.
 - **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
+- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
-- **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your stack.  
-     <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
+- **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application. <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git  submodules  from being pulled during a build. 
 
 #### Important
 <div class="notice notice-warning">
-<p>In order to use a <em>vpc_id</em>, you must provide <em>subnet_id</em> for all servers in your stack.</p>
+<p>In order to use a <em>vpc_id</em>, you must provide <em>subnet_id</em> for all servers used by your application.</p>
 </div>
 
 ```
@@ -368,7 +361,7 @@ production:
 ### Redis
 
 - **version**: Specify the version of Redis you want to install.
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
+- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 
 ```
@@ -429,7 +422,7 @@ production:
 
 ### HAProxy
 
-Use a manifest file to configure and define your HAProxy load balancer deployed by Cloud 66. These changes will be either be applied when you redeploy a stack with more than one server, rebuild HAProxy or edit [HAProxy CustomConfig](/{{page.collection}}/how-to-guides/security/multi-cert_haproxy.html).
+Use a manifest file to configure and define your HAProxy load balancer deployed by Cloud 66. These changes will be either be applied when you redeploy an application with more than one server, rebuild HAProxy or edit [HAProxy CustomConfig](/{{page.collection}}/how-to-guides/security/multi-cert_haproxy.html).
 
 Available settings (refer to the [HAProxy documentation](http://haproxy.1wt.eu/download/1.3/doc/configuration.txt) for more information):
 
@@ -444,7 +437,7 @@ Available settings (refer to the [HAProxy documentation](http://haproxy.1wt.eu/d
 **Configuration**
 
 * **httpchk**: The health-check configuration.
-* **balance**: The load balancing strategy.
+* **balance**: The load balancing strategy. Options include `roundrobin`, `leastconn` and `source` 
 * **errorfile_\***: Location of your own custom error page content to serve in the case of receiving a HTTP error code on the load balancer.
 
 ```
@@ -526,7 +519,9 @@ production:
 
 ## Which server?
 
-Every application defined in the manifest file must be bound to a server. However, if you'd like configurations to apply to all servers in an application type, you don't need to specify a server type. Servers can be deployed specifically to host that application, be shared between multiple applications (eg. Rails and MySQL on the same server) or be an external server (eg. using an external database).
+Every component defined in the manifest file must be bound to a server. However, if you'd like configurations to apply to all your servers, you don't need to specify a server type. 
+
+Servers can be deployed specifically to host a single component, be shared between multiple components (eg. Rails and MySQL on the same server) or be an external server (eg. using an external database).
 
 Here is an example of a server definition:
 
@@ -541,7 +536,7 @@ production:
 These are the parameters that the _server_ section can take:
 
 - **unique_name** (_Required if you are specifying a server type_): A unique name for this server.
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in stack. Default value is 20.
+- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **subnet_id** (_Optional, AWS EC2 only_): ID of the AWS subnet in which you would like to create your servers.
 - **vendor** (_Optional, BYOC only_): Cloud vendor to fire the server up on. Valid values: aws, azure, digitalocean, googlecloud, linode, rackspace, and clouda
@@ -550,9 +545,9 @@ These are the parameters that the _server_ section can take:
 - **size** (_Optional, BYOC only_): [Size of the server instance](http://developers.cloud66.com/#cloud-vendor-instance-names) created.
 - **availability_zone** (_Optional, AWS EC2 only_): Availability zone of the server instance in AWS EC2 region.
 
-### Important!
+#### Important
 <div class="notice notice-warning">
-<p>Only a single cloud vendor and region is supported for servers in a stack.</p>
+<p>Only a single cloud vendor and region is supported for servers used by an application.</p>
 </div>
 
 ```
@@ -585,9 +580,9 @@ production:
 
 ### Shared Servers
 
-You can share a server between two applications. This could be in cases like using the same server for both your Rails app and the MySQL server behind it.
+You can share a server between two components. This could be in cases like using the same server for both your Rails app and the MySQL server behind it.
 
-Each shared server definition specifies the name of another server definition in the manifest file for which the applications will then share the physical server:
+Each shared server definition specifies the name of another server definition in the manifest file for which the components will then share the physical server:
 
 {% highlight yaml %}
 production:
@@ -599,9 +594,9 @@ production:
 
 ### External Servers
 
-If you would like to use an external server for an application (like using your own MySQL or AWS RDS for example), you can define that server as external.
+If you would like to use an external server for a component (like using your own MySQL or AWS RDS instance, for example), you can define that server as external.
 
-External server definitions specify that the application is hosted on a server external to Cloud 66. This is not a valid target for your main application (ie. rails) but may be appropriate for another application type (ie. MongoDB):
+External server definitions specify that the component is hosted on a server external to Cloud 66. This is not a valid target for your main application (e.g. rails) but may be appropriate for another component (e.g. MongoDB):
 
 ```
 production:
@@ -609,9 +604,9 @@ production:
     server: external
 ```
 
-### Important!
+#### Important
 <div class="notice notice-warning">
-You are <b>required</b> to specify a <a href="#which-server">server</a> for application types, whereas configurations are <b>optional</b>.
+You are <b>required</b> to specify a <a href="#which-server">server</a> for components, whereas configurations are <b>optional</b>.
 </div>
 
 
@@ -632,7 +627,7 @@ production:
 
 If you need to auto generate a value, you can use the `AUTO_GENERATE` keyword. It generates a 10 character long random string unless you specify the length after it: `AUTO_GENERATE_15` which generates a 15 character random string.
 
-Environment variables set in your manifest file will only apply during the initial build of your stack. Please refer to our documentation on [environment variables](/{{page.collection}}/tutorials/env-vars.html) if you'd like to set them beyond this point.
+Environment variables set in your manifest file will only apply during the initial build of your application. Please refer to our documentation on [environment variables](/{{page.collection}}/tutorials/env-vars.html) if you'd like to set them beyond this point.
 
 Any environment variable that is generated by the result of the code analysis (like database addresses) will override any value specified in the manifest file. In other words, you cannot specify a value like `MYSQL_ADDRESS` in your manifest file as it will be ignored.
 
@@ -659,7 +654,7 @@ In this example, a process called `worker` is stopped using a `TTIN` signal firs
 
 As for `web` or `custom_web` processes, you can specify a `restart_signal` which will be sent to the process serving web. This is useful for web servers that can do "phased" or zero-downtime restarts.
 
-All processes restart during each redeployment of the stack. If you want to avoid this, you can set `restart_on_deploy` to `false`.
+All processes restart during each redeployment of the application. If you want to avoid this, you can set `restart_on_deploy` to `false`.
 
 Default values for each process type are:
 
@@ -674,7 +669,7 @@ Default values for each process type are:
 
 ## Specify additional LiveLog files
 
-Each application type supports the additional partial configuration to add custom live log files for that application type:
+Each component supports the additional partial configuration to add custom live log files for that component:
 
 ```
 production:

@@ -23,21 +23,21 @@ The following table outlines the default configuration of Nginx.
 <table id="fields" class="table table-bordered table-striped table-small fields"> 
    <thead valign="top"> 
     <tr> 
-     <th> Category<br> </th> 
-     <th> Attribute </th> 
-     <th> Default value </th> 
+     <th width="12%">Category</th> 
+     <th width="27%">Attribute</th> 
+     <th width="61%">Default value</th> 
     </tr> 
    </thead> 
    <tbody> 
     <tr class="header"> 
-     <td width="15%"> <strong>General</strong> <span>-</span> </td> 
-     <td width="20%"></td> 
-     <td width="70%"></td> 
+     <td> <strong>General</strong> <span></span> </td> 
+     <td></td> 
+     <td></td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> user </td> 
-     <td width="70%"> nginx </td> 
+     <td> user </td> 
+     <td> nginx </td> 
     </tr> 
     <tr> 
      <td></td> 
@@ -47,162 +47,162 @@ The following table outlines the default configuration of Nginx.
     <tr> 
      <td></td> 
      <td> error_log </td> 
-     <td> /var/deploy/[stack_name]/web_head/shared/log/nginx_error.log </td> 
+     <td> /var/deploy/[app_name]/web_head/shared/log/nginx_error.log </td> 
     </tr> 
    </tbody> 
    <tbody> 
     <tr class="header"> 
-     <td width="15%"> <strong>Events</strong> <span>-</span> </td> 
+     <td> <strong>Events</strong> <span></span> </td> 
      <td></td> 
      <td></td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> worker_connections </td> 
+     <td> worker_connections </td> 
      <td> 1024 </td> 
     </tr> 
    </tbody> 
    <tbody> 
     <tr class="header"> 
-     <td width="15%"> <strong>HTTP</strong> <span>-</span> </td> 
+     <td> <strong>HTTP</strong> <span></span> </td> 
      <td></td> 
      <td></td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> gzip </td> 
+     <td> gzip </td> 
      <td> on </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> gzip_min_length </td> 
+     <td> gzip_min_length </td> 
      <td> 100 </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> gzip_proxied </td> 
+     <td> gzip_proxied </td> 
      <td> expired no-cache no-store private auth </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> gzip_types </td> 
+     <td> gzip_types </td> 
      <td> text/plain application/xml text/css application/x-javascript text/javascript </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> gzip_disable </td> 
+     <td> gzip_disable </td> 
      <td> "MSIE [1-6]\." </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> passenger_root </td> 
+     <td> passenger_root </td> 
      <td> [passenger location] </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> passenger_ruby </td> 
-     <td> [stack ruby shell] </td> 
+     <td> passenger_ruby </td> 
+     <td> [app ruby shell] </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> passenger_ruby </td> 
+     <td> passenger_ruby </td> 
      <td> nginx </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> passenger_pool_idle_time </td> 
+     <td> passenger_pool_idle_time </td> 
      <td> 0 </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> passenger_max_pool_size </td> 
+     <td> passenger_max_pool_size </td> 
      <td> 15 </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> ssl_session_cache </td> 
+     <td> ssl_session_cache </td> 
      <td> shared:SSL:10m </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> ssl_session_timeout </td> 
+     <td> ssl_session_timeout </td> 
      <td> 10m </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> underscores_in_headers </td> 
+     <td> underscores_in_headers </td> 
      <td> on </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> default_type </td> 
+     <td> default_type </td> 
      <td> application/octet-stream </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> client_max_body_size </td> 
+     <td> client_max_body_size </td> 
      <td> 50m </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> sendfile </td> 
+     <td> sendfile </td> 
      <td> on </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> server_tokens </td> 
+     <td> server_tokens </td> 
      <td> off </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> keepalive_timeout </td> 
+     <td> keepalive_timeout </td> 
      <td> 65 </td> 
     </tr> 
    </tbody> 
    <tbody> 
     <tr class="header"> 
-     <td width="15%"> <strong>Server</strong> <span>-</span> </td> 
+     <td> <strong>Server</strong> <span></span> </td> 
      <td></td> 
      <td></td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> listen </td> 
+     <td> listen </td> 
      <td> 80 default_server </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> server_name </td> 
+     <td> server_name </td> 
      <td> _ or SSL server name </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> rails_env </td> 
-     <td> [stack environment] </td> 
+     <td> rails_env </td> 
+     <td> [app environment] </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> client_max_body_size </td> 
+     <td> client_max_body_size </td> 
      <td> 50m </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> root </td> 
-     <td> /var/deploy/[stack name]/web_head/current/public </td> 
+     <td> root </td> 
+     <td> /var/deploy/[app name]/web_head/current/public </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> passenger_enabled </td> 
+     <td> passenger_enabled </td> 
      <td> on </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> ssl_certificate_key </td> 
+     <td> ssl_certificate_key </td> 
      <td> /etc/ssl/localcerts/[ssl cerificate file name].key </td> 
     </tr> 
     <tr> 
      <td></td> 
-     <td width="20%"> ssl_certificate </td> 
+     <td> ssl_certificate </td> 
      <td> /etc/ssl/localcerts/[ssl cerificate file name].crt </td> 
     </tr> 
    </tbody> 
@@ -215,21 +215,21 @@ The following table specifies the number of workers configured for your Nginx ba
   <table id="fields" class="table table-bordered table-striped table-small fields"> 
      <thead valign="top"> 
       <tr> 
-       <th> Cloud provider<br> </th> 
-       <th> Instance type </th> 
-       <th> Number of Workers </th> 
+       <th width="20%"> Cloud provider </th> 
+       <th width="50%"> Instance type </th> 
+       <th width="30%"> Number of Workers </th> 
       </tr> 
      </thead> 
      <tbody> 
       <tr class="header"> 
-       <td width="25%"> <strong>AWS</strong> <span>-</span> </td> 
-       <td width="40%"></td> 
-       <td width="70%"></td> 
+       <td> <strong>AWS</strong></td> 
+       <td></td> 
+       <td></td> 
       </tr> 
       <tr> 
        <td></td> 
-       <td width="40%"> t1.micro </td> 
-       <td width="70%"> 1 </td> 
+       <td> t1.micro </td> 
+       <td> 1 </td> 
       </tr> 
       <tr> 
        <td></td> 
@@ -374,13 +374,13 @@ The following table specifies the number of workers configured for your Nginx ba
      </tbody> 
      <tbody> 
       <tr class="header"> 
-       <td width="25%"> <strong>DigitalOcean</strong> <span>-</span> </td> 
+       <td> <strong>DigitalOcean</strong></td> 
        <td></td> 
        <td></td> 
       </tr> 
       <tr> 
        <td></td> 
-       <td width="40%"> 512MB - 1 CPU </td> 
+       <td> 512MB - 1 CPU </td> 
        <td> 1 </td> 
       </tr> 
       <tr> 
@@ -431,13 +431,13 @@ The following table specifies the number of workers configured for your Nginx ba
      </tbody> 
      <tbody> 
       <tr class="header"> 
-       <td width="25%"> <strong>GCE</strong> <span>-</span> </td> 
+       <td> <strong>GCE</strong></td> 
        <td></td> 
        <td></td> 
       </tr> 
       <tr> 
        <td></td> 
-       <td width="40%"> n1-standard-1 </td> 
+       <td> n1-standard-1 </td> 
        <td> 1 </td> 
       </tr> 
       <tr> 
@@ -513,13 +513,13 @@ The following table specifies the number of workers configured for your Nginx ba
      </tbody> 
      <tbody> 
       <tr class="header"> 
-       <td width="25%"> <strong>Linode</strong> <span>-</span> </td> 
+       <td> <strong>Linode</strong></td> 
        <td></td> 
        <td></td> 
       </tr> 
       <tr> 
        <td></td> 
-       <td width="40%"> Linode 1GB </td> 
+       <td> Linode 1GB </td> 
        <td> 1 </td> 
       </tr> 
       <tr> 
@@ -565,13 +565,13 @@ The following table specifies the number of workers configured for your Nginx ba
      </tbody> 
      <tbody> 
       <tr class="header"> 
-       <td width="25%"> <strong>Microsoft Azure</strong> <span>-</span> </td> 
+       <td> <strong>Microsoft Azure</strong></td> 
        <td></td> 
        <td></td> 
       </tr> 
       <tr> 
        <td></td> 
-       <td width="40%"> ExtraSmall </td> 
+       <td> ExtraSmall </td> 
        <td> 1 </td> 
       </tr> 
       <tr> 
@@ -662,13 +662,13 @@ The following table specifies the number of workers configured for your Nginx ba
      </tbody> 
      <tbody> 
       <tr class="header"> 
-       <td width="25%"> <strong>Rackspace</strong> <span>-</span> </td> 
+       <td> <strong>Rackspace</strong></td> 
        <td></td> 
        <td></td> 
       </tr> 
       <tr> 
        <td></td> 
-       <td width="40%"> 512MB Standard Instance </td> 
+       <td> 512MB Standard Instance </td> 
        <td> 1 </td> 
       </tr> 
       <tr> 
@@ -844,13 +844,13 @@ The following table specifies the number of workers configured for your Nginx ba
      </tbody> 
      <tbody> 
       <tr class="header"> 
-       <td width="25%"> <strong>CloudA</strong> <span>-</span> </td> 
+       <td> <strong>CloudA</strong></td> 
        <td></td> 
        <td></td> 
       </tr> 
       <tr> 
        <td></td> 
-       <td width="40%"> 512 MB </td> 
+       <td> 512 MB </td> 
        <td> 1 </td> 
       </tr> 
       <tr> 
@@ -918,72 +918,68 @@ The following table specifies the number of workers configured for your Nginx ba
 
 ## Default Cloud 66 Nginx error page
 
-When there is a problem with your upstream server (ie. a container), requests will be passed to the default Cloud 66 error page. From there, you can visit the problematic server page in Cloud 66 dashboard to troubleshoot. 
-
+When there is a problem with your upstream server (i.e. the application), requests will be passed to the default Cloud 66 error page. From there, you can visit the problematic server page in Cloud 66 dashboard to troubleshoot.
 
 ## Custom Nginx error page
 
 There are two ways for you to create a custom Nginx 50X error page:
 
-1. Using a static page on you own server
-    - For Docker stacks, make your custom error page (for example `50x.html`) available in your container (for example in `/usr/app`), and simply mount this folder to the host (for example with `/var/containers:/usr/app`). The path used in the next step would then be `/var/containers/50x.html`
-    - Customize your Nginx configuration and replace the 50X.html location block with following:
+**1\. Using a static page on you own server**
+
+Customize your Nginx configuration and replace the 50X.html location block with following:
     
-        ``
+```
     location = /50x.html
     {
         root /var/containers/;
     }
-    ``
-1. Using external static page
-    - Upload your file to a server which is accessible from your server
-    - Customize your Nginx configuration and replace the _50X.html_ location block with following:
+```
+
+**2\. Using external static page**
+ 
+* Upload your file to a server which is accessible from your server
+* Customize your Nginx configuration and replace the `50X.html` location block with following:
     
-        ``
+```
     location = /50x.html
     {
         proxy_pass {url-of-your-custom-page};
     }
-    ``
+```
 
 ## Customize your Nginx configuration
 
-Cloud 66 makes it easy for you to customize your Nginx configuration. From your stack detail page, access your web server group page (eg. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](/{{page.collection}}/tutorials/custom-config.html) to customize the configuration.
+Cloud 66 makes it easy for you to customize your Nginx configuration. From your application detail page, access your web server group page (eg. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](/{{page.collection}}/tutorials/custom-config.html) to customize the configuration.
 
-Editing and committing your Nginx CustomConfig will perform the following steps on **every web server in your stack**, one by one, sequentially:
+Editing and committing your Nginx CustomConfig will perform the following steps on **every web server used by your application**, one by one, sequentially:
 
 *   Check your template for Liquid syntax errors
-*   Determine the correct Passenger path (Passenger stacks only)
+*   Determine the correct Passenger path (Passenger applications only)
 *   Check the version of your Passenger, and determine if Nginx needs to use a Ruby shell wrapper
 *   Count the number of cores on the server
 *   Compile the Nginx configuration based on the information from the server
 *   Upload the configuration to the server
 *   Reload Nginx
 
-Reloading Nginx does not interrupt the serving of traffic. This process will be stopped if an error is encountered. For example, if you have 3 web servers in your stack, if the first server fails to be updated, the process will be halted for the other 2 servers to avoid complete service diruption.
+Reloading Nginx does not interrupt the serving of traffic. This process will be stopped if an error is encountered. For example, if you have 3 web servers for your application, if the first server fails to be updated, the process will be halted for the other 2 servers to avoid complete service diruption.
 
 
-### Warning
-
+#### Warning
+<div class="notice notice-warning"><p>
 A bad configuration may stop your Nginx from functioning, so take extra care when making changes.
-
+</p></div>
 
 
 ### Nginx CustomConfig variables
 
-The following variables are available for use in your **Docker stack** Nginx CustomConfig.
+The following variables are available for use in your  Nginx CustomConfig.
 
 <table class="table table-bordered table-striped"> 
-   <colgroup> 
-    <col width="20%"> 
-    <col width="20%"> 
-    <col width="60%"> 
-   </colgroup> 
    <thead> 
     <tr> 
-     <th>Variable Name</th> 
-     <th>Type</th> 
-     <th>Description</th> 
+     <th width="50%">Variable Name</th> 
+     <th width="15%">Type</th> 
+     <th width="35%">Description</th> 
     </tr> 
    </thead> 
    <tbody> 
@@ -995,7 +991,7 @@ The following variables are available for use in your **Docker stack** Nginx Cus
     <tr> 
      <td>environment</td> 
      <td>string</td> 
-     <td>Stack environment name (lowercase)</td> 
+     <td>Application environment name (lowercase)</td> 
     </tr> 
     <tr> 
      <td>server_address</td> 
@@ -1010,27 +1006,27 @@ The following variables are available for use in your **Docker stack** Nginx Cus
     <tr> 
      <td>app_name</td> 
      <td>string</td> 
-     <td>Stack name (lowercase)</td> 
+     <td>Application name (lowercase)</td> 
     </tr> 
     <tr> 
      <td>envars</td> 
      <td>hash</td> 
-     <td>Hash of all environment variables on the stack</td> 
+     <td>Hash of all environment variables on the application</td> 
     </tr> 
     <tr> 
      <td>allow_ssl</td> 
      <td>boolean</td> 
-     <td>Is an SSL Certificate configured on the stack?</td> 
+     <td>Is an SSL Certificate configured on the application?</td> 
     </tr> 
     <tr> 
      <td>perfect_forward_secrecy</td> 
      <td>boolean</td> 
-     <td>Is perfect forward secrecy enabled on the stack?</td> 
+     <td>Is perfect forward secrecy enabled on the application?</td> 
     </tr> 
     <tr> 
      <td>cors_enabled</td> 
      <td>boolean</td> 
-     <td>Is CORS enabled on the stack?</td> 
+     <td>Is CORS enabled on the application?</td> 
     </tr> 
     <tr> 
      <td>cors_origin</td> 
@@ -1095,7 +1091,7 @@ The following variables are available for use in your **Docker stack** Nginx Cus
     <tr> 
      <td>stack_supports_nginx_tcp_and_udp_reverse_proxy</td> 
      <td>boolean</td> 
-     <td>Does your stack support TCP and UDP reverse proxy?</td> 
+     <td>Does your application support TCP and UDP reverse proxy?</td> 
     </tr> 
     <tr> 
      <td>supports_tcp_proxy</td> 
@@ -1138,27 +1134,23 @@ The following variables are available for use in your **Docker stack** Nginx Cus
 
 To ensure correct boolean condition checks within your template, always explicitly compare the variable with `true` or `false` (even if you are checking for true).
 
-Good syntax:
+**Good syntax:**
 
 *   if passenger != true
 *   if passenger != false
 *   if passenger == true
 *   if passenger == false	
 
-Bad syntax:
+**Bad syntax:**
 
 *   Bad: if passenger
 *   Bad: if !passenger
-  <table class="table table-bordered table-striped"> 
-   <colgroup> 
-    <col width="20%"> 
-    <col width="20%"> 
-    <col width="60%"> 
-   </colgroup> 
+
+<table class="table table-bordered table-striped"> 
    <thead> 
     <tr> 
-     <th>Variable Name</th> 
-     <th>Type</th> 
+     <th width="32%">Variable Name</th> 
+     <th width="15%">Type</th> 
      <th>Description</th> 
     </tr> 
    </thead> 
@@ -1186,7 +1178,7 @@ Bad syntax:
     <tr> 
      <td>environment</td> 
      <td>string</td> 
-     <td>Stack environment name (lowercase)</td> 
+     <td>Application environment name (lowercase)</td> 
     </tr> 
     <tr> 
      <td>server_address</td> 
@@ -1216,22 +1208,22 @@ Bad syntax:
     <tr> 
      <td>app_name</td> 
      <td>string</td> 
-     <td>Stack name (lowercase)</td> 
+     <td>Application name (lowercase)</td> 
     </tr> 
     <tr> 
      <td>deploy_to</td> 
      <td>string</td> 
-     <td>Stack path on the server</td> 
+     <td>Application path on the server</td> 
     </tr> 
     <tr> 
      <td>envars</td> 
      <td>hash</td> 
-     <td>Hash of all environment variables on the stack</td> 
+     <td>Hash of all environment variables on the application</td> 
     </tr> 
     <tr> 
      <td>envars</td> 
      <td>hash</td> 
-     <td>Hash of all environment variables on the stack</td> 
+     <td>Hash of all environment variables on the application</td> 
     </tr> 
     <tr> 
      <td>passenger_location</td> 
@@ -1241,17 +1233,17 @@ Bad syntax:
     <tr> 
      <td>allow_ssl</td> 
      <td>boolean</td> 
-     <td>Is an SSL Certificate configured on the stack?</td> 
+     <td>Is an SSL Certificate configured on the application?</td> 
     </tr> 
     <tr> 
      <td>perfect_forward_secrecy</td> 
      <td>boolean</td> 
-     <td>Is perfect forward secrecy enabled on the stack?</td> 
+     <td>Is perfect forward secrecy enabled on the application?</td> 
     </tr> 
     <tr> 
      <td>cors_enabled</td> 
      <td>boolean</td> 
-     <td>Is CORS enabled on the stack?</td> 
+     <td>Is CORS enabled on the application?</td> 
     </tr> 
     <tr> 
      <td>cors_origin</td> 

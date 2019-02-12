@@ -1,7 +1,9 @@
 
 CustomConfig git is a private git repository available on every stack in your Cloud 66 account. This git repository is hosted by Cloud 66 and allows you to modify [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) files for your stack using familiar git commands.
 
-If you are familiar with [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) you know how it can be a powerful tool to customise configuration for [Nginx]({% if page.collection == "maestro" %}/maestro/references/nginx.html{%else%}/{{page.collection}}/references/nginx.html{%endif%}) or [HAProxy]({% if page.collection == "maestro" %}/maestro/how-to-guides/security/multi-cert_haproxy.html{%else%}/{{page.collection}}/how-to-guides/security/multi-cert_haproxy.html{%endif%}). The easiest way to modify CustomConfig files is through the UI. However if you would like to edit CustomConfig files in your favourite editor or enjoy git merge and flow control features you can use CustomConfig git.
+If you are familiar with [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) you know how it can be a powerful tool to customise configuration for [Nginx](/{{page.collection}}/references/nginx.html) or [HAProxy](/{{page.collection}}/how-to-guides/deployment/haproxy.html). 
+
+The easiest way to modify CustomConfig files is through the UI. However if you would like to edit CustomConfig files in your favourite editor or enjoy git merge and flow control features you can use CustomConfig git.
 
 ### Getting Started with CustomConfig git
 Each stack on Cloud 66 has its own private CustomConfig git repository. You can find the URL of this repository under stack’s information page (right hand side menu). There you will find a URL like this for CustomConfig git:
@@ -9,6 +11,7 @@ Each stack on Cloud 66 has its own private CustomConfig git repository. You can 
 	git@git1.cloud66.com:warmhearted-wondrous-tiger-9262.git
 
 ### Uploading your SSH public key
+
 Like any other git repository, CustomConfig git requires a public SSH key for authentication. If you are not familiar with how git SSH key authentication works or how to generate your own SSH keys, you can read this great guide by Github: [Git SSH key setup](https://help.github.com/articles/generating-ssh-keys/).
 
 You can upload your public SSH key at **Account / Keys / Public Key** when logged into your Cloud 66 account.
@@ -49,3 +52,9 @@ Changes made to CustomConfig git files will NOT be pushed to your servers until 
 One of the most powerful features of CustomConfig is the automatic updates that are applied to your stacks. For example if there is an improvement in the way nginx is configured or a security patch is released to HAProxy which requires configuration change, Cloud 66 will automatically make those changes to your CustomConfig files.
 
 This is done by committing the changes to the CustomConfig git repository by Cloud 66. Those changes are visible on your git history and are performed by `git@cloud66.com` user.
+
+## What's next?
+
+* Learn how to customize your deployment workflow with [deploy hooks](/{{page.collection}}/tutorials/deploy-hooks.html).
+* Learn how to add custom [environment variables](/{{page.collection}}/tutorials/env-vars.html) to your application
+* Learn how to add a [load balancer](/{{page.collection}}/tutorials/load-balancing.html) to your application

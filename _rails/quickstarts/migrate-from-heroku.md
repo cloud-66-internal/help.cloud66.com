@@ -12,13 +12,17 @@ permalink: /:collection/:path
 ---
 
 
-## About migrating from Heroku
+## Overview
 
 You can migrate your application from Heroku to Cloud 66 in 3 steps: 
 
 1. Build and deploy your application's code via the Cloud 66 dashboard
 2. Import your data to your new environment
 3. Redirect traffic to the new endpoint
+
+<div class="notice"><p>Cloud 66 does not host applications. We automate the build and deployment of your application to the cloud provider of your choice, or your own servers (virtual or physical).
+</p></div>
+
 
 ## What you’ll need
 
@@ -33,7 +37,7 @@ Before you begin migrating your application please check you have the following:
 
 #### What server size do I need?
 <div class="notice"><p>
-Using Heroku, you can choose between 1X (512 MB), 2X (1 GB) and PX (6 GB) server sizes. This makes it easy to calculate your server requirements, and we recommend that you use similar server resources when deploying your application with Cloud 66. We also recommend that you have a separate server for your database in production environments.
+Using Heroku, you can choose between 1X (512 MB), 2X (1 GB) and PX (6 GB) server sizes. This makes it easy to calculate your server requirements, and we recommend that you use similar server resources when deploying your application via Cloud 66. We also recommend that you have a separate server for your database in production environments.
 </p></div>
 
 
@@ -43,7 +47,7 @@ Using Heroku, you can choose between 1X (512 MB), 2X (1 GB) and PX (6 GB) server
 
 Using the [Cloud 66 Dashboard](https://app.cloud66.com/dashboard), you can pull your code directly from your Git repository and build it into a new version of your application on your own servers. 
 
-If you need help getting started, please read our [Deploying your first app](/rails/quickstarts/getting_started.html) guide.
+If you need help getting started, please read our [Deploying your first Rails app](/rails/quickstarts/getting_started.html) guide.
 
 We also have a guide to [accessing your Git repository](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html).
 
@@ -117,3 +121,9 @@ Note that this is a temporary solution, and we recommend that you use a server m
 
 If you haven't compiled assets locally, Heroku will attempt to run the assets:precompile task during slug compilation. Cloud 66 allows you to [specify whether or not to run this](/{{page.collection}}/how-to-guides/deployment/enable-disable-asset-pipeline.html) during deployment.
 
+
+## What's next?
+
+* Get started with [manifest files](/rails/quickstarts/getting-started-with-manifest.html) - a powerful tool for defining your application's components
+* Learn about [CustomConfig](/rails/tutorials/custom-config.html) - a tool for defining and managing configuration templates
+* Learn how to use [Toolbelt](/rails/quickstarts/using-cloud66-toolbelt.html) - a powerful command-line interface for managing your Cloud 66 applications.

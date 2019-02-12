@@ -52,3 +52,8 @@ This will result in a merged_configuration file being created - please ensure th
 
 In the absence of merge errors, copy and paste the contents of the merged_template into your CustomConfig form and commit it.
 
+## What's next?
+
+* Learn how to customize your deployment workflow with [deploy hooks](/{{page.collection}}/tutorials/deploy-hooks.html).
+* Learn how to add custom [environment variables](/{{page.collection}}/tutorials/env-vars.html) to your application
+* Learn how to add a [load balancer](/{{page.collection}}/tutorials/load-balancing.html) to your application
