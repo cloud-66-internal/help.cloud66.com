@@ -34,7 +34,7 @@ worker: rake resque:work QUEUE=*
 scheduler: rake resque:scheduler
 </pre>
 
-The commands above would run <kbd>rake resque:work QUEUE=*</kbd> and <kbd>rake resque:scheduler</kbd> and monitor them. Cloud 66 will attempt to bring processes that go down or crash up again. Processes are also instructed to start when your server is booted. An overall view of your processes is available in your application detail page.
+The commands above would run <kbd>rake resque:work QUEUE=*</kbd> and <kbd>rake resque:scheduler</kbd> and monitor them. Cloud 66 will attempt to bring processes that go down or crash up again. Processes are also instructed to start when your server is booted. An overall view of your processes is available in your Application Overview page.
 
 You can reference your application environment variables with a `$` before the name. This will be replaced by the actual value in the command executed. As an example, `$RAILS_ENV` will be evaluated as `production` if you are in the production environment.
 
@@ -48,7 +48,7 @@ worker: bundle exec sidekiq -e production -i &#123;&#123;UNIQUE_INT&#125;&#125;
 This integer should be unique across processes, so that multiple processes won't clash, but may not be unique across servers.
 
 ## Scaling background processes
-You can scale your background processes up and down on the process server page. On your application detail page, click the link to your _Process server_ group on your application detail page. Use the <i>+</i> and <i>-</i> buttons to scale your processes up and down.
+You can scale your background processes up and down on the process server page. On your Application Overview page, click the link to your _Process server_ group on your Application Overview page. Use the <i>+</i> and <i>-</i> buttons to scale your processes up and down.
 
 You can also scale up a [standalone process server](/rails/how-to-guides/scaling/scaling.html#process-servers) for more resources.
 

@@ -18,7 +18,7 @@ To build your first application, see our [Getting Started guide](/{{page.collect
 
 You can access your _Application information_ page from the right sidebar of your application overview page. This page shows you general information about your application, the different servers it consists of and information about your application.
 
-It also allows you to edit your application name, and you can edit your Docker service configuration under the _Service configurations_ menu on the application details page. For Rack-based applications, you can edit your Git repository and branch by clicking the _Edit_ button next to each field on the _Application information_ page. Editing your application name has an important implication.
+It also allows you to edit your application name, and you can edit your Docker service configuration under the _Service configurations_ menu on the Application Overview page. For Rack-based applications, you can edit your Git repository and branch by clicking the _Edit_ button next to each field on the _Settings & Information_ page. Editing your application name has an important implication.
 
 ## Clone an application
 

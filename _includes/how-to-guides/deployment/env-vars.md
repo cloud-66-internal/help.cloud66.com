@@ -44,7 +44,7 @@ If you have a MySQL server, the following variables are created and inserted int
 - **MYSQL_USERNAME** &mdash; Randomly generated string
 - **MYSQL_PASSWORD** &mdash; Randomly generated string
 
-For a full list of environment variables available in your application, visit the _Environment variables_ link in the right sidebar of your application detail page. If you don't currently have a application, the environment variables available to you are shown after your code analysis.
+For a full list of environment variables available in your application, visit the _Environment variables_ link in the right sidebar of your Application Overview page. If you don't currently have a application, the environment variables available to you are shown after your code analysis.
 
 
 ## Assign env-vars for deployment
@@ -63,7 +63,7 @@ If your application relies on specific environment variables to complete the dep
 
 ## Assign env-vars after app build
 
-You can also set environment variables on an existing application by visiting the _Environment variables_ link in the right sidebar of your application detail page. Once you click _Save_, these variables will be propagated to all your servers automatically, ready for your use.
+You can also set environment variables on an existing application by visiting the _Environment variables_ link in the right sidebar of your Application Overview page. Once you click _Save_, these variables will be propagated to all your servers automatically, ready for your use.
 
 Be aware of the following while assigning environment variables:
 

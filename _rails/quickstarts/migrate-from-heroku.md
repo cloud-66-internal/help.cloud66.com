@@ -58,7 +58,7 @@ Once your code is deployed, you'll need to migrate your data across. The process
 
 **PostgreSQL**  
 
-From your Heroku toolbelt, create a database backup URL by running `heroku pgbackups:url`. Next, visit your application detail page and click the _Import Heroku data_ link. Paste the URL provided by the toolbelt into the field, and click _Import Heroku data_.
+From your Heroku toolbelt, create a database backup URL by running `heroku pgbackups:url`. Next, visit your Application Overview page and click the _Import Heroku data_ link. Paste the URL provided by the toolbelt into the field, and click _Import Heroku data_.
 
 **MySQL**  
 
@@ -80,7 +80,7 @@ Next, use the toolbelt to SSH to your server.
 $ cx ssh -s "[app_name]" [server_first_name]
 {% endhighlight %}
 
-Finally, use the command below to import your backup into the database. You can find the generated username, password and database name by visting your application detail page and clicking into your database server (eg. _MySQL server_).
+Finally, use the command below to import your backup into the database. You can find the generated username, password and database name by visting your Application Overview page and clicking into your database server (eg. _MySQL server_).
 
 {% highlight bash %}
 $ mysql -u [generated_user_name] -p [generated_password] "[database_name]" < /tmp/backupfile.sql 

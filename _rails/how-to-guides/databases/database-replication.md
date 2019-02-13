@@ -81,12 +81,12 @@ To enable replication on a single application, visit your application overview p
 
 ### Between applications
 
-To enable replication between applications, ensure that you have a secondary application deployed, and that its database server contains at least two times more disk space than the size of your database backup. Visit your application detail page, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select a source application. Confirm to commence the replication process.
+To enable replication between applications, ensure that you have a secondary application deployed, and that its database server contains at least two times more disk space than the size of your database backup. Visit your Application Overview page, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select a source application. Confirm to commence the replication process.
 
 
 ## Disable database replication
 
-To disable replication between applications, visit your application detail page, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select _Disable replication_. Confirm to commence the replication process.
+To disable replication between applications, visit your Application Overview page, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select _Disable replication_. Confirm to commence the replication process.
 
 
 ## Create slave database

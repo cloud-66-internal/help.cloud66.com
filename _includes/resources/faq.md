@@ -1,7 +1,7 @@
 
 ## What is Cloud 66?
 
-Cloud 66 is a service that automates and streamlines the building, deployment and lifecycle management of web applications. The service caters for two kinds of applications:
+Cloud 66 is a service that automates and streamlines the building, deployment and lifecycle management of web applications. The service supports two types of applications:
 
 * Containerized applications (Docker running on Kubernetes)
 * Native Ruby and Node applications (non-containerized)
@@ -20,14 +20,14 @@ Cloud 66 is hosted in the cloud and is available as a service. You don't need to
 
 ## How can I use Cloud 66?
 
-[Sign up](http://app.cloud66.com/users/sign_up) for an account and start by building your first application. Specify a Git repository containing your application code, or provide a Docker image. A few seconds later you can configure your app deployment and point your application to the servers on which you would like it run.
+[Sign up](http://app.cloud66.com/users/sign_up) for an account and start by building your first application. Specify a Git repository containing your application code, or provide a Docker image. A few seconds later you can configure your deployment and point your application to the servers on which you would like it run.
 
 * * *
 
 
 ## Can I use Cloud 66 with my own servers?
 
-Yes! Cloud 66 configures and deploys your code to your servers in the cloud or your own dedicated server.
+Yes! Cloud 66 configures and deploys your code to your servers in the cloud or to your own dedicated servers.
 
 * * *
 
@@ -78,7 +78,7 @@ Currently we support Amazon Web Services, Digital Ocean, Google Compute Engine, 
 
 ## Which distributions of Linux are supported?
 
-We currently only support Ubuntu - the officially supported version is 16.04.
+We currently only support Ubuntu version 16.04 LTS.
 
 * * *
 
