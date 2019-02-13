@@ -71,13 +71,13 @@ $ mysqldump -u [username] -p[password] [dbname] > backup.sql
 Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/{{page.collection}}/references/toolbelt.html#upload) to upload the file to your application database server. Remember to replace the fields below with your values.
 
 {% highlight bash %}
-$ cx upload -s "[stack_name]" --server [database_server_name] backup.sql /tmp/backup.sql
+$ cx upload -s "[app_name]" --server [database_server_name] backup.sql /tmp/backup.sql
 {% endhighlight %}
 
 Next, use the toolbelt to SSH to your server.
 
 {% highlight bash %}
-$ cx ssh -s "[stack_name]" [server_first_name]
+$ cx ssh -s "[app_name]" [server_first_name]
 {% endhighlight %}
 
 Finally, use the command below to import your backup into the database. You can find the generated username, password and database name by visting your application detail page and clicking into your database server (eg. _MySQL server_).
@@ -97,9 +97,9 @@ Once you're ready to serve traffic from your Cloud 66 application, you need to d
 
 ### Web server and Procfile
 
-By default, Cloud 66 will deploy your stack with Phusion Passenger, but you can also choose a [custom web server](/{{page.collection}}/how-to-guides/deployment/shells/nginx-modules.html#passenger) like Unicorn. You may have a `web` entry in your Procfile to do this on Heroku. Cloud 66 ignores this entry to avoid compatability issues.
+By default, Cloud 66 will deploy your application with Phusion Passenger, but you can also choose a [custom Rack server](/{{page.collection}}/how-to-guides/deployment/shells/nginx-modules.html#passenger) like Unicorn. You may have a `web` entry in your Procfile to do this on Heroku. Cloud 66 ignores this entry to avoid compatability issues.
 
-To run a custom web server, we require a `custom_web` entry. It is important to set this before analyzing your stack, to avoid building the stack with Passenger.
+To run a custom web server, we require a `custom_web` entry. It is important to set this before analyzing your application, to avoid building the application with Passenger.
 
 You can also use the [Procfile](/rails/how-to-guides/deployment/bluepill.html) to define other background jobs.
 
@@ -112,7 +112,7 @@ Heroku restarts all dynos at 24 hours of uptime, which may conceal possible memo
 for OUTPUT in $(pgrep -f sidekiq); do kill -TERM $OUTPUT; done
 {% endhighlight %}
 
-This will send a TERM signal to any Sidekiq workers, giving them 10 seconds (by default) to finish gracefully. Any workers that don't finish within this time period are forcefully terminated and their messages are sent back to Redis for future processing. You can customize this script to fit your needs, and add it to your stack as a shell add-in.
+This will send a TERM signal to any Sidekiq workers, giving them 10 seconds (by default) to finish gracefully. Any workers that don't finish within this time period are forcefully terminated and their messages are sent back to Redis for future processing. You can customize this script to fit your needs, and add it to your application as a shell add-in.
 
 Note that this is a temporary solution, and we recommend that you use a server monitoring solution to identify the source of your leak.
 

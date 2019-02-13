@@ -13,7 +13,7 @@ permalink: /:collection/:path
 
 ## Introduction
 
-[Faye](http://faye.jcoglan.com/) is a publish-subscribe messaging system that provides messaging services. At Cloud 66, we recommend running Faye as a [background process](/rails/how-to-guides/deployment/bluepill.html) on your stack behind a [Thin rack server](http://code.macournoyer.com/thin/).
+[Faye](http://faye.jcoglan.com/) is a publish-subscribe messaging system that provides messaging services. At Cloud 66, we recommend running Faye as a [background process](/rails/how-to-guides/deployment/bluepill.html) on your application behind a [Thin rack server](http://code.macournoyer.com/thin/).
 
 
 ## Implementation
@@ -37,7 +37,7 @@ production:
         run_on: all_servers
 ```
 
-If you are adding Faye to an **existing stack**, you should temporarily change the deploy hook `apply_during: build_only` to `apply_during: all`. Failing to do this would not apply the changes to your existing stack - but once you have got it running for the first time you can change it back as you don't need to run the script on every deploy.
+If you are adding Faye to an **existing application**, you should temporarily change the deploy hook `apply_during: build_only` to `apply_during: all`. Failing to do this would not apply the changes to your existing application - but once you have got it running for the first time you can change it back as you don't need to run the script on every deploy.
 
 
 ### 2. RAILS_ROOT/.cloud66/files/add_thin_and_faye.sh

@@ -10,7 +10,7 @@ legacy: false
 permalink: /:collection/:path
 ---
 
-Cloud 66 supports stacks based on the [Sinatra framework](http://www.sinatrarb.com/), a light-weight web framework written in Ruby.
+Cloud 66 supports applications based on the [Sinatra framework](http://www.sinatrarb.com/), a light-weight web framework written in Ruby.
 
 ## Custom commands
 Given that Sinatra applications can have different database frameworks, we allow you to specify custom commands which are run at specific points during deployment:
@@ -38,9 +38,9 @@ Given that Sinatra applications can have different database frameworks, we allow
 These commands can be set via [Toolbelt](/rails/references/toolbelt.html#settings-variables),
 
 <pre class="prettyprint">
-$ cx settings set -s my_stack custom.build.command "rake db:seed"
+$ cx settings set -s my_app custom.build.command "rake db:seed"
 
-$ cx settings set -s my_stack custom.deploy.command "rake db:migrate"
+$ cx settings set -s my_app custom.deploy.command "rake db:migrate"
 </pre>
 
 But also in your [manifest file](/rails/quickstarts/getting-started-with-manifest.html).
@@ -124,11 +124,3 @@ development:
       database: mongoid
       hosts: ["<%= ENV['MONGODB_ADDRESS']%>:27017"]
 </pre>
-
-## Example applications
-
-* <a href="https://app.cloud66.com/stacks/new?eduid=sinatra_mongodb" target="_blank">Sinatra and MongoDB</a>
-* <a href="https://app.cloud66.com/stacks/new?eduid=sinatra_mysql_ar" target="_blank">Sinatra and MySQL ActiveRecord</a>
-* <a href="https://app.cloud66.com/stacks/new?eduid=sinatra_psql_dm" target="_blank">Sinatra and PSQL DataMapper</a>
-* <a href="https://app.cloud66.com/stacks/new?eduid=sinatra_mysql_dm" target="blank">Sinatra and MySQL DataMapper</a>
-* <a href="https://app.cloud66.com/stacks/new?eduid=sinatra_redis" target="blank">Sinatra and Redis</a>

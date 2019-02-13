@@ -30,7 +30,7 @@ chown nginx:app_writers $STACK_BASE/shared/uploads
 rm -rf $STACK_PATH/uploads
 ln -nsf $STACK_BASE/shared/uploads $STACK_PATH/uploads
 ```
-The reason we are doing _rm -rf_ on the _$STACK_PATH/uploads_ directory is due to the way that the _ln_ command works. When you issue the _ln_ command,
+The reason we run _rm -rf_ on the _$STACK_PATH/uploads_ directory is due to the way that the _ln_ command works. When you issue the _ln_ command,
 it places a link to the source directory inside the target directory, so we have to remove the directory before creating the symbolic link.
 
 The deploy hook would look like this:

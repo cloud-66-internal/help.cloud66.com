@@ -24,8 +24,8 @@ Database replication can be set up for a single application, or between akspplic
 
 ### For multiple applications
 
-- Improved redundancy: Allows you to have a failover stack in a different region.
-- Data migration: Makes it easy to migrate your stack with minimal downtime.
+- Improved redundancy: Allows you to have a failover application in a different region.
+- Data migration: Makes it easy to migrate your application with minimal downtime.
 
 #### Note 
 <div class="notice"><p>Replication between different applications is not supported for MongoDB.</p></div>
@@ -35,7 +35,7 @@ Database replication can be set up for a single application, or between akspplic
 
 When you start replicating your database, the Cloud 66 will commence the following process:
 
-1.  We take a full backup of the master database server in your source stack.
+1.  We take a full backup of the master database server in your source application.
 2.  A secondary database is configured to be a slave of the source database
 3.  The source database is configured to be a master of the secondary database
 4.  The relevant environment variables are updated for use in your code and scripts
@@ -89,7 +89,7 @@ To enable replication between applications, ensure that you have a secondary app
 
 ## Disable database replication
 
-To disable replication between stacks, visit your stack detail page, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select _Disable replication_. Confirm to commence the replication process.
+To disable replication between applications, visit your application overview page, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select _Disable replication_. Confirm to commence the replication process.
 
 ## Re-synchronizing slave with master
 

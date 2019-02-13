@@ -4,7 +4,7 @@ template: one-col
 title: Enable/Disable asset pipeline compilation
 categories: how-to-guides/deployment
 order: 20
-lead: "How to enable and disable asset pipeline precompilation for Rails stacks"
+lead: "How to enable and disable asset pipeline precompilation for Rails applications"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path

@@ -24,7 +24,7 @@ Read more about the [rake task add-in](/rails/how-to-guides/add-ins/rake-task.ht
 
 You can use [deploy hooks](/rails/tutorials/deploy-hooks.html) to execute your rake task at any point of your deployment.
 
-Simply add a bash script to your stack that contains the rake task. For example, create the file `/.cloud66/scripts/rake_task.sh` as below:
+Simply add a bash script to the application that contains the rake task. For example, create the file `/.cloud66/scripts/rake_task.sh` as below:
 
 ```
 #!/bin/bash

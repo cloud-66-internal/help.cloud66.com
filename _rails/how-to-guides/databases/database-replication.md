@@ -13,29 +13,29 @@ permalink: /:collection/:path
 
 Database replication involves configuring a master and slave database architecture, whereby the slave is an exact replica of the master at all times. This feature is supported for MySQL, PostgreSQL, Redis and MongoDB databases.
 
-Database replication can be set up for a single stack, or between stacks, with various benefits:
+Database replication can be set up for a single application, or between applications, with various benefits:
 
-**Single stack**
+**Single application**
 
 - Improved read performance: The slave server only allows reads and is ideal for use with reporting tools, and any database backups are taken from the slave rather than the master.
 - Improved application reliability: Having a second server with your data, in case of hardware issues (reducing a single point of failure).
 
-**Between stacks**
+**Between applications**
 
-- Improved redundancy: Allows you to have a failover stack in a different region.
-- Data migration: Makes it easy to migrate your stack with minimal downtime.
+- Improved redundancy: Allows you to have a failover application in a different region.
+- Data migration: Makes it easy to migrate your application with minimal downtime.
 
-Note that replication between stacks is not supported for MongoDB.
+Note that replication between applications is not supported for MongoDB.
 
 
 ## How it works
 
 When you start replicating your database, the Cloud 66 will commence the following process:
 
-1.  We take a full backup of the master database server in your source stack
+1.  We take a full backup of the master database server in your source application
 
-*   Single stack: we create a secondary database server in your cloud and restore your backup on it
-*   Between stacks: we restore your backup on the secondary database server
+*   Single application: we create a secondary database server in your cloud and restore your backup on it
+*   Between applications: we restore your backup on the secondary database server
 2.  The secondary database is configured to be a slave of the source database
 3.  The source database is configured to be a master of the secondary database
 4.  The relevant environment variables are updated for use in your code and scripts
@@ -60,7 +60,7 @@ In the case that an environment variable contains multiple values, such as IP ad
 
 ## Enable database replication
 
-The process of enabling database replication varies slightly for a single stack as opposed to replication between stacks.
+The process of enabling database replication varies slightly for a single application as opposed to replication between applications.
 
 
 
@@ -74,27 +74,27 @@ Database replication will disrupt the database serving your application during t
 
 
 
-### Single stack
+### Single application
 
-To enable replication on a single stack, visit your stack detail page, click on the database server group (eg. _PostgreSQL server_) and click _Scale Up_ in the top right corner. This will allow you to choose your new server size. Your new server should contain at least two times more disk space than the size of your database backup, and we recommend that it is comparable to your master server (in terms of memory).
+To enable replication on a single application, visit your application overview page, click on the database server group (eg. _PostgreSQL server_) and click _Scale Up_ in the top right corner. This will allow you to choose your new server size. Your new server should contain at least two times more disk space than the size of your database backup, and we recommend that it is comparable to your master server (in terms of memory).
 
 
-### Between stacks
+### Between applications
 
-To enable replication between stacks, ensure that you have a secondary stack deployed, and that its database server contains at least two times more disk space than the size of your database backup. Visit your stack detail page, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select a source stack. Confirm to commence the replication process.
+To enable replication between applications, ensure that you have a secondary application deployed, and that its database server contains at least two times more disk space than the size of your database backup. Visit your application detail page, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select a source application. Confirm to commence the replication process.
 
 
 ## Disable database replication
 
-To disable replication between stacks, visit your stack detail page, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select _Disable replication_. Confirm to commence the replication process.
+To disable replication between applications, visit your application detail page, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select _Disable replication_. Confirm to commence the replication process.
 
 
 ## Create slave database
 
 To add a slave database server you need to follow the below steps. To add multiple you need to scale up one by one.
 
-1.   Set up a managed backup via add-ins if you don't have any.
-2.   Go on your stack page, database servers page (eg. _PostgreSQL Servers_)
+1.   Set up a managed backup via add-ins
+2.   Go to your database servers page via the Dashboard (eg. _PostgreSQL Servers_)
 3.   On the right sidebar click on _SCALEUP DATABASE_ (the button will not be shown if you have not set up database backups)
 
 

@@ -19,7 +19,7 @@ For affected servers, when you connect to your server you will see a notificatio
 ## Is this important? Do I need immediate action?
 Unfortunately there is no generic way to answer that question. The answer is that it very much depends on what has been updated and how critical your systems are, and what the potential attach vectors for your server are. For instance, in general it is more important to update your servers that are exposed to the outside world (ie. any servers that have external ports opened such as web or api servers) than an internal backend server not accessible from anywhere except internal systems. 
 
-For this reason, Cloud 66 will promote restart notifications for any server with ports exposed to "anywhere" externally, although all restart notifications are visible on the server detail page. If the restart has not taken place for a long time then eventually it will be promoted up in your stack details page too. However, the urgency is very much application dependant.
+For this reason, Cloud 66 will promote restart notifications for any server with ports exposed to "anywhere" externally, although all restart notifications are visible on the server detail page. If the restart has not taken place for a long time then eventually it will be promoted up in your application details page too. However, the urgency is very much application dependant.
 
 ## How do I actually restart my servers?
 In order to minimise down-time, you can restart one server at a time (assuming you have a [load balancer](/rails/tutorials/load-balancing.html) in place). Selecting an out-of-hours time is recommended to minimise disruption. You can also use the [maintenance page](/rails/tutorials/service-network-configuration.html) to temporarily notify your users that you are performing maintenance.
@@ -44,7 +44,7 @@ sudo shutdown -r now
 The unattended-upgrades package signals to the operating system that a restart is required by creating a file <i>/var/run/reboot-required</i>. Cloud 66 will check periodically if this file is present and bring that forward into the UI. 
 
 ## I've restarted, but I still see the notification
-Due to the periodic checking of your server (as stated above) it can take up to 12 hours for your notifications to be cleared. Deploying your stack will cause an immediate refresh of your restart notification state (after deployment completes). You can also manually check your restart required status on your server by running the command:
+Due to the periodic checking of your server (as stated above) it can take up to 12 hours for your notifications to be cleared. Deploying your application will cause an immediate refresh of your restart notification state (after deployment completes). You can also manually check your restart required status on your server by running the command:
 
 <pre class="terminal">
 sudo bash -c "if [ -f /var/run/reboot-required ]; then echo 'Server is requesting restart'; fi"

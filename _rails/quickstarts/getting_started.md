@@ -101,13 +101,13 @@ Now click the *Analyze* button - the results will be displayed in a few seconds.
 
 Once the analysis is complete you'll see a yellow Information Box that you can use to verify the analysis is correct.
 
-<img src="/assets/rails/rails_about_your_app.png" alt="Rails Stack - analysis information">
+<img src="/assets/rails/rails_about_your_app.png" alt="Rails application - analysis information">
 
 If there are any problems you can make changes and click **Reanalyze my code**. If necessary, you can also add environment variables.
 
 In App Configuration you can make changes to application configuration parameters.
 
-<img src="/assets/rails/rails_config_ruby_framework.png" alt="Rails Stack - Ruby version and Framework configuration">
+<img src="/assets/rails/rails_config_ruby_framework.png" alt="Rails application - Ruby version and Framework configuration">
 
 * **Ruby Version** &mdash; That your app is using.
 * **Framework Info** &mdash; This allows you alter information about asset pipeline precompilation and whether you want to run `rake db:schema:load`.
@@ -136,7 +136,7 @@ Now you can decide how you want to configure your Frontend (Web) and Database Se
 
 <img src="/assets/rails/rails_deployment_details.png" alt="Choose where to deploy your database">
 
-That's it! Now just click *Deploy Stack* and watch your app roll out to your new servers.
+That's it! Now just click *Deploy application* and watch your app roll out to your new servers.
 
 ## What's next?
 

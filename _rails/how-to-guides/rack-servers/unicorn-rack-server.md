@@ -12,7 +12,7 @@ permalink: /:collection/:path
 [Unicorn](http://unicorn.bogomips.org/) is a Rack HTTP server that uses forked processes to handle multiple incoming requests concurrently.
 
 ## Deploy with Unicorn
-You need to choose your web server at the time of initial build of the stack. Changes to or from Passenger (the default web server) will not be applied after your stack has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
+You need to choose your Rack server at the time of initial build of the application. Changes to or from Passenger (the default web app / Rack server) will not be applied after your application has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
 
 To run a Unicorn Rack server, add a line to your Procfile labeled as <em>custom_web</em>. Here is an example:
 
