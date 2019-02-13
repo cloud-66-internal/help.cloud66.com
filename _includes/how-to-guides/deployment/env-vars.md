@@ -13,7 +13,7 @@ For example, Cloud 66 creates environment variables for your database server add
 
 **AUTO_GENERATE** environment variables allow you to insert a generic environment variable into your application, and Cloud 66 will automatically replace their value with a random string. This is useful to have Cloud 66 automatically generate values for secrets that you do not want to have commited into your repository.
 
-To use AUTO_GENERATE environment variables, you define any environment variables with the value **AUTO_GENERATE** or **AUTO_GENERATE_{number}** - where number is the length of the value to auto-generate - ie. **AUTO_GENERATE_32**.
+To use AUTO_GENERATE environment variables, you define any environment variables with the value **AUTO_GENERATE** or **AUTO_GENERATE_{number}** - where number is the length of the value to auto-generate - i.e. **AUTO_GENERATE_32**.
 
 If you use these values, then Cloud 66 will replace them with a fixed random string of the specified length (10 is the default length). Using this, you can safely commit your env file to your git repository with the following content for example, then load it when you create your new application for concrete values.
 
@@ -69,7 +69,7 @@ Be aware of the following while assigning environment variables:
 
 - **Environment variables are not escaped**  
 
-However, they are always wrapped in double quotes (eg. 
+However, they are always wrapped in double quotes (e.g. 
 "ENV_VAR"
 ) so you can use them with multi-line variables like SSH keys.
 - **Some environment variables cannot be modified**  

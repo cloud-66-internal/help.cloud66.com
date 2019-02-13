@@ -129,7 +129,7 @@ If the stack already contains this env var it will be overridden with the value 
     </tr>
     <tr>
      <td> run_on <br> (single server) </td>
-     <td> If you have multiple servers in the same group (eg. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
+     <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
     </tr>
     <tr>
      <td> run_as <br> (server user) </td>
@@ -191,7 +191,7 @@ If the stack already contains this env var it will be overridden with the value 
   </tr>
   <tr>
    <td> run_on <br> (single server) </td>
-   <td> If you have multiple servers in the same group (eg. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
+   <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
   </tr>
   <tr>
    <td> run_as <br> (server user) </td>
@@ -256,7 +256,7 @@ If the stack already contains this env var it will be overridden with the value 
 </tr>
 <tr>
  <td> run_on <br> (single server) </td>
- <td> If you have multiple servers in the same group (eg. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
+ <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
 </tr>
 <tr>
  <td> run_as <br> (server user) </td>
@@ -328,7 +328,7 @@ If the stack already contains this env var it will be overridden with the value 
 </tr>
 <tr>
  <td> run_on <br> (single server) </td>
- <td> If you have multiple servers in the same group (eg. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
+ <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
 </tr>
 <tr>
  <td> run_as <br> (server user) </td>
@@ -360,15 +360,15 @@ For **Rails/Rack** stacks this file should be present within a folder named _.cl
 /.cloud66/deploy_hooks.yml
 ```
 
-For **Docker stacks** this file should be pushed into [CustomConfig git](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html) Repository of the stack. This repository will be created after the stack is analysed, so you can push your deploy hooks before deployment started.
+For **Docker stacks** this file should be pushed into [CustomConfig git](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html) Repository of the stack. This repository will be created after the stack is analyzed, so you can push your deploy hooks before deployment started.
 
 This file should be YAML formatted, and you can use a service like [YAMLlint](http://yamllint.com/) to validate it.
 
 Creating a deploy hook from scratch consists of a number of steps:
 
-1.  Choose your environment - eg. example _production_, _development_, _staging_ and so on.
-2.  Choose your hook point - eg. _first_thing_, _after_rails_ and so on.
-3.  Choose your deploy hook type - eg. _snippet_, _command_ or _script_.
+1.  Choose your environment - e.g. example _production_, _development_, _staging_ and so on.
+2.  Choose your hook point - e.g. _first_thing_, _after_rails_ and so on.
+3.  Choose your deploy hook type - e.g. _snippet_, _command_ or _script_.
 4.  Select any additional hook fields you require
 
 Automating deploy hooks can sometimes be tricky. To avoid issues, it's good practice to run each of your commands manually to see that they complete successfully. 

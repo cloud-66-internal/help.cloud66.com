@@ -14,7 +14,7 @@ permalink: /:collection/:path
 
 ## About Nginx
 
-Applications deployed with Cloud 66 use [Nginx](http://nginx.com) as their web server, and its configuration is dependant on the resources of your server(s). Nginx is a high performance, open source web server used by some of the biggest web services in the world.
+Applications deployed with Cloud 66 use [Nginx](http://nginx.com) as their web server, and its configuration is dependent on the resources of your server(s). Nginx is a high performance, open source web server used by some of the biggest web services in the world.
 
 
 ## Nginx configuration
@@ -949,7 +949,7 @@ Customize your Nginx configuration and replace the 50X.html location block with 
 
 ## Customize your Nginx configuration
 
-Cloud 66 makes it easy for you to customize your Nginx configuration. From your Application Overview page, access your web server group page (eg. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](/{{page.collection}}/tutorials/custom-config.html) to customize the configuration.
+Cloud 66 makes it easy for you to customize your Nginx configuration. From your Application Overview page, access your web server group page (e.g. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](/{{page.collection}}/tutorials/custom-config.html) to customize the configuration.
 
 Editing and committing your Nginx CustomConfig will perform the following steps on **every web server used by your application**, one by one, sequentially:
 
@@ -961,7 +961,7 @@ Editing and committing your Nginx CustomConfig will perform the following steps 
 *   Upload the configuration to the server
 *   Reload Nginx
 
-Reloading Nginx does not interrupt the serving of traffic. This process will be stopped if an error is encountered. For example, if you have 3 web servers for your application, if the first server fails to be updated, the process will be halted for the other 2 servers to avoid complete service diruption.
+Reloading Nginx does not interrupt the serving of traffic. This process will be stopped if an error is encountered. For example, if you have 3 web servers for your application, if the first server fails to be updated, the process will be halted for the other 2 servers to avoid complete service disruption.
 
 
 #### Warning
@@ -1116,12 +1116,12 @@ The following variables are available for use in your  Nginx CustomConfig.
     <tr> 
      <td>service_name</td> 
      <td>string</td> 
-     <td>Part of the <i>service_containers</i> hiearchy, containing the name of a specific service</td> 
+     <td>Part of the <i>service_containers</i> hierarchy, containing the name of a specific service</td> 
     </tr> 
     <tr> 
      <td>upstreams</td> 
      <td>array</td> 
-     <td>Part of the <i>service_containers</i> hiearchy, containing an upstream name, private IPs, traffic matches and port</td> 
+     <td>Part of the <i>service_containers</i> hierarchy, containing an upstream name, private IPs, traffic matches and port</td> 
     </tr> 
    </tbody> 
   </table> 

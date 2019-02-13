@@ -11,7 +11,7 @@ By default, HAProxy is configured to use the external IP address of your servers
 Simply replace any `server.ext_ipv4` values with `server.int_ipv4` using HAProxy CustomConfig (below).
 
 ## Specify an HAProxy test interval
-You can also specify your own test interval if you like - this is done in the _server_ section of your HAProxy configruation. This section is on line 53 of the default configuration.
+You can also specify your own test interval if you like - this is done in the _server_ section of your HAProxy configuration. This section is on line 53 of the default configuration.
 
 To change the test interval to every 30 seconds (instead of the default 2 seconds), the template should look like this:
 

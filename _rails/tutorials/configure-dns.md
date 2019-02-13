@@ -31,7 +31,7 @@ Each Failover Group has a unique hostname with a 9 digit prefix (subdomain). For
 
 You will need to update the DNS records for your domain to point at Cloud 66. Where possible, you should avoid using a DNS A-record (which points directly at an IP address). Instead, you should use `CNAME` records to point your domain at a Cloud 66 hostname (either your server or failover group hostname). 
 
-However, this may not be possible with your DNS provider. While CNAME records do not require hard-coded IP addresses, they are often not available to root domains (eg. `example.com`). In other words, you may not be able to set a CNAME record pointing example.com to a Cloud 66 hostname. See **option 2** below for a solution to this issue.
+However, this may not be possible with your DNS provider. While CNAME records do not require hard-coded IP addresses, they are often not available to root domains (e.g. `example.com`). In other words, you may not be able to set a CNAME record pointing example.com to a Cloud 66 hostname. See **option 2** below for a solution to this issue.
 
 To use wildcard subdomains with Cloud 66 hostnames, simply create a CNAME record pointing `*. .com` to your Cloud 66 hostname. 
 
@@ -59,7 +59,7 @@ The setup is similar for each provider - simply point the ALIAS or ANAME for you
 This involves using an `A` record to point your root domain at your load balancer and then redirecting traffic to www in Nginx.
 
 1.  Create a CNAME record for `www` pointing at the [Cloud 66 hostname](#cloud-66-hostnames) of your load balancer.
-2.  Create an `A` record for your root domain (eg. `example.com`) pointing at your load balancer IP address.
+2.  Create an `A` record for your root domain (e.g. `example.com`) pointing at your load balancer IP address.
 3.  ​Use [network redirects](/rails/tutorials/service-network-configuration.html) to permanently redirect all traffic from `example.com` to `www.example.com`.
 
 ### 3. Subdomain redirection

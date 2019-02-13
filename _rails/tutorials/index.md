@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title:  "Cloud 66 for Rails Tutorials"
-lead: "Learn about Cloud 66 by exampls"
+lead: "Learn about Cloud 66 by examples"
 legacy: false
 permalink: /:collection/tutorials/index.html
 ---

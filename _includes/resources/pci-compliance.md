@@ -3,7 +3,7 @@
 We do not store Credit Card Information of our customers on our servers, systems or storage. This is handled by a PCI compliant third party and therefore we do not need a PCI DSS compliance.
 
 
-### Will my website/mobile backend/API be PCI compliant if I use Cloud 66?
+### Will my website/mobile back-end/API be PCI compliant if I use Cloud 66?
 Not by default. Compliance with PCI DSS regulations is up to you.
 
 

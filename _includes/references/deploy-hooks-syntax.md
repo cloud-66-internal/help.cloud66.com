@@ -124,7 +124,7 @@ If the stack already contains this env var it will be overridden with the value 
     </tr>
     <tr>
      <td> run_on <br> (single server) </td>
-     <td> If you have multiple servers in the same group (eg. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
+     <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
     </tr>
     <tr>
      <td> run_as <br> (server user) </td>
@@ -186,7 +186,7 @@ If the stack already contains this env var it will be overridden with the value 
   </tr>
   <tr>
    <td> run_on <br> (single server) </td>
-   <td> If you have multiple servers in the same group (eg. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
+   <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
   </tr>
   <tr>
    <td> run_as <br> (server user) </td>
@@ -251,7 +251,7 @@ If the stack already contains this env var it will be overridden with the value 
 </tr>
 <tr>
  <td> run_on <br> (single server) </td>
- <td> If you have multiple servers in the same group (eg. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
+ <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
 </tr>
 <tr>
  <td> run_as <br> (server user) </td>
@@ -324,7 +324,7 @@ If the stack already contains this env var it will be overridden with the value 
 </tr>
 <tr>
  <td> run_on <br> (single server) </td>
- <td> If you have multiple servers in the same group (eg. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
+ <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
 </tr>
 <tr>
  <td> run_as <br> (server user) </td>

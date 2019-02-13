@@ -521,7 +521,7 @@ production:
 
 Every component defined in the manifest file must be bound to a server. However, if you'd like configurations to apply to all your servers, you don't need to specify a server type. 
 
-Servers can be deployed specifically to host a single component, be shared between multiple components (eg. Rails and MySQL on the same server) or be an external server (eg. using an external database).
+Servers can be deployed specifically to host a single component, be shared between multiple components (e.g. Rails and MySQL on the same server) or be an external server (e.g. using an external database).
 
 Here is an example of a server definition:
 

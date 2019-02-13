@@ -20,7 +20,7 @@ Editing and committing your database CustomConfig will perform the following ste
 
 - Check your template for Liquid syntax errors
 - Determine the correct server configuration and prepare general variables
-- Prepare custom variables for your database type (eg. server_state)
+- Prepare custom variables for your database type (e.g. server_state)
 - Compile the database configuration based on the information from the server and database type
 - Upload the configuration to the server
 - Restart your database

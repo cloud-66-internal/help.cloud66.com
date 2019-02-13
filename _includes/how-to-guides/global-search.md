@@ -25,7 +25,7 @@ You can narrow the search down with the "advanced search syntax". The general se
 type:server
 ```
 
-Global search supports thse generic search directives:
+Global search supports these generic search directives:
 
 - `tag` Search the tags
 - `type` Search by type. Valid values are `stack`, `server`, `service`, `container`, `firewall`, 'environment' and 'deployment'
@@ -71,7 +71,7 @@ Firewalls can be search only by their tags.
 
 ## Complex queries
  
-You can always combine queries to narrow your search donw. Some examples are below:
+You can always combine queries to narrow your search down. Some examples are below:
 
 
 - `type:server type:stack` returns all servers and applications (stacks) under your currently selected account

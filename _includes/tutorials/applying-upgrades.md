@@ -3,9 +3,9 @@
 
 Cloud 66 aims to make it easier to build immutable infrastructure. Building servers and stacks from scratch is much better than modifying existing server configurations and tinkering with settings until things start to work.
 
-Of course everyone knows that, the reasons they don't do it is that it's difficult, time consuming and can be unpredicatble. That's why we want to make building stacks from scratch as easy and as quick as possible. So in all cases of upgrade, our first recommendation is to build a new stack and redirect your traffic to the new stack using our [Elastic Address]({% if page.collection == 'maestro' %}/maestro/tutorials/failover-groups.html{%else%}/{{page.collection}}/tutorials/failover-groups.html{% endif %}).
+Of course everyone knows that, the reasons they don't do it is that it's difficult, time consuming and can be unpredictable. That's why we want to make building stacks from scratch as easy and as quick as possible. So in all cases of upgrade, our first recommendation is to build a new stack and redirect your traffic to the new stack using our [Elastic Address]({% if page.collection == 'maestro' %}/maestro/tutorials/failover-groups.html{%else%}/{{page.collection}}/tutorials/failover-groups.html{% endif %}).
 
-We are always working to make it easier to build a new stack, move your data and switch your traffic arround but it might not always be what you want to do or as easy as you would like it to be. So here is what we suggest as alternatives and exceptions.
+We are always working to make it easier to build a new stack, move your data and switch your traffic around but it might not always be what you want to do or as easy as you would like it to be. So here is what we suggest as alternatives and exceptions.
 
 Based on that our workflow is such that when a new server is created we automatically update all the packages to the latest. After the server is created we only auto-install packages that are marked as <code>security updates</code>. So Cloud66 doesn't typically update other packages because it doesn't want to risk breaking or damaging your already running app (which doesn't apply when the server is newly created).
 
@@ -46,7 +46,7 @@ There are generally three ways to upgrade Ruby on your stack, in decreasing magn
 
 There are a couple of small caveats to be aware of though - after you've done this process, you'll have servers in your stack on different Ruby versions. If you were to enforce a Ruby version in your Gemfile, this would mean that your application would stop working on either one of the servers (depending on which version you chose in your Gemfile).
 
-You can scale-down your older web server to ensure all your web servers are the correct version, but your backend servers will still be the older version of Ruby. This may or may-not have any implication, depending on what you're doing with your servers. However, if you were to then run the "Ruby upgrade" job, this would sync all your servers to your new version of Ruby, so your backend servers would be upgraded at that point too.
+You can scale-down your older web server to ensure all your web servers are the correct version, but your back-end servers will still be the older version of Ruby. This may or may-not have any implication, depending on what you're doing with your servers. However, if you were to then run the "Ruby upgrade" job, this would sync all your servers to your new version of Ruby, so your back-end servers would be upgraded at that point too.
 
 Also, if you have background jobs running on your old server, ensure that you gracefully shut these down before switching everything to the new server (to avoid lost jobs).
 

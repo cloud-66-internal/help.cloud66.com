@@ -2,11 +2,11 @@
 
 Cloud 66 for Rails is a DevOps-automation service that allows you to easily build, deploy and maintain your Rack-based applications, and their supporting components, on any cloud or server. 
 
-Cloud 66 for Rails allows you to centralise the provisioning and management of:
+Cloud 66 for Rails allows you to centralize the provisioning and management of:
 
 * Rack-based applications (and app servers)
 * Databases
-* Load balancers
+* Load Balancers
 * Caches 
 * Message queues
 * File storage
@@ -18,9 +18,9 @@ Cloud 66 for Rails allows you to centralise the provisioning and management of:
 
 ### How does this differ from other PaaS providers?
 
-Unlike traditional PaaS offerings like Heroku or Google App Engine, Cloud 66 for Rails allows you to use your own servers - whether in the cloud, in a data centre or even on your own premises. We support both public and private clouds, as well as hybrids and bare metal installations.
+Unlike traditional PaaS offerings like Heroku or Google App Engine, Cloud 66 for Rails allows you to use your own servers - whether in the cloud, in a data center or even on your own premises. We support both public and private clouds, as well as hybrids and bare metal installations.
 
-Cloud 66 for Rails is primarily developer-focussed. It automates and standardises the important but repetitive (and error-prone) tasks involved in configuring and deploying code to infrastructure. The platform is designed to work for both small teams without dedicated DevOps resources, and larger organisations with separate DevOps teams.
+Cloud 66 for Rails is primarily developer-focused. It automates and standardizes the important but repetitive (and error-prone) tasks involved in configuring and deploying code to infrastructure. The platform is designed to work for both small teams without dedicated DevOps resources, and larger organizations with separate DevOps teams.
 
 ## How we define "application"
 
@@ -42,7 +42,7 @@ You have a great degree of freedom when choosing the different components of you
 
 ### Load balancer (optional)
 
-A load balancer is used to distribute traffic across your web servers, and offers benefits such as maximizing throughoutput, minimizing response times and avoiding overload on any single server. Ultimately, load balancing increases the reliability of your application.
+A load balancer is used to distribute traffic across your web servers, and offers benefits such as maximizing throughput, minimizing response times and avoiding overload on any single server. Ultimately, load balancing increases the reliability of your application.
 
 The type of  [load balancer deployed in your application](/{{page.collection}}/tutorials/load-balancing.html) is dependent on your cloud provider.
 
@@ -106,7 +106,7 @@ StackScore&trade; is a score that provides an indication of how reliable, resili
 
 - **Code:** Ensures your code does not have security issues by checking for known vulnerabilities.
 - **Backups and data integrity:** This tracks whether or not you are backing up your databases (with managed and/or unmanaged backups), and whether or not you verify your backups.
-- **Connectivity:** Checks whether or not you are sharing your frontend and backend on the same server. This is affected by how much memory you have on your servers, among other factors.
+- **Connectivity:** Checks whether or not you are sharing your front-end and back-end on the same server. This is affected by how much memory you have on your servers, among other factors.
 - **Performance:** Checks if you have a load balancer, as well as different server configuration metrics.
 - **Security:** Tracks your firewall settings for potential security issues.
 

@@ -126,7 +126,7 @@ If you're deploying for the first time you need to add your Cloud provider crede
 
 ## Finalizing Deployment Details
 
-Now you can decide how you want to configure your Frontend (Web) and Database Servers. They can be shared or deployed to separate servers.
+Now you can decide how you want to configure your Front end (Web) and Database Servers. They can be shared or deployed to separate servers.
 
 ### Deploying to Production
 

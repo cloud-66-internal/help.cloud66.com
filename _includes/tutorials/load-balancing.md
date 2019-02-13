@@ -1,7 +1,7 @@
 
 ## Overview
 
-A load balancer is used to distribute traffic across your web servers, and offers benefits such as maximizing throughoutput, minimizing response times and avoiding overload on any single server.
+A load balancer is used to distribute traffic across your web servers, and offers benefits such as maximizing throughput, minimizing response times and avoiding overload on any single server.
 
 Cloud 66 for Rails supports and integrates *native* cloud load balancers - in other words those provisioned directly by the cloud providers. It is still possible to set up a load balancer manually, but this is not integrated into the  workflow of the dashboard as described below.
 

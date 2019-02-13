@@ -19,7 +19,7 @@ We will be installing the [HTTP Echo Nginx](http://wiki.nginx.org/HttpEchoModule
   *   Select option `2` for _advanced users_
   *   Specify the directory in which you extracted Nginx
   *   Specify the installation directory as `/opt/nginx` so as to overwrite the previous installation
-  *   Specify your module(s), eg. `--add-module='/root/echo-nginx-module-0.61'`
+  *   Specify your module(s), e.g. `--add-module='/root/echo-nginx-module-0.61'`
 8.  Type `nginx -V` to confirm whether your module(s) installed..
 
 

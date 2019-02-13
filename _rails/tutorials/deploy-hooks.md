@@ -12,7 +12,7 @@ permalink: /:collection/:path
 
 ## Overview
 
-Deploy hooks are scripts that allow you to automate actions at various points during the deployment process for your applications. This allows you to customise your deployments by, for example, installing software packages or upgrading components.
+Deploy hooks are scripts that allow you to automate actions at various points during the deployment process for your applications. This allows you to customize your deployments by, for example, installing software packages or upgrading components.
 
 We will be looking at some simple examples in this tutorial, but for a deeper understanding please read the [full reference guide](/rails/references/deploy-hooks-syntax.html).
 
@@ -30,8 +30,8 @@ This file should be YAML formatted, and you can use a service like [YAMLlint](ht
 
 To create a deploy hook:
 
-1.  Choose your environment - eg. _production_
-2.  Choose your hook point - eg. _first_thing_
+1.  Choose your environment - e.g. _production_
+2.  Choose your hook point - e.g. _first_thing_
 3.  Choose your deploy hook type - _snippet_, _command_ or _script_.
 4.  Select any additional hook fields you require
 

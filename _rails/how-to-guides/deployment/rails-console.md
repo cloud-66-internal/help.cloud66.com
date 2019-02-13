@@ -11,7 +11,7 @@ legacy: false
 permalink: /:collection/:path
 ---
 
-Start by [SSHing to your server](/rails/how-to-guides/common-tools/ssh.html). Then go to your `STACK_PATH` (eg. `cd $STACK_PATH`) and run the following command:
+Start by [SSHing to your server](/rails/how-to-guides/common-tools/ssh.html). Then go to your `STACK_PATH` (e.g. `cd $STACK_PATH`) and run the following command:
 
 ```
 $ bundle exec rails c <environment>
