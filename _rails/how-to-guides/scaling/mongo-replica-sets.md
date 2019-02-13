@@ -28,7 +28,7 @@ When you select to scale up your MongoDB backend with Cloud 66, we perform the f
 
 It is important for backups to keep their referential integrity, otherwise different parts of the database might be backed up at different times, affecting database performance.
 
-**Note**
+### Expected downtime
 
 The process of database replication will disrupt your database serving your application for the duration of scaling up and scaling down.
 
@@ -41,10 +41,11 @@ This interruption is during the backup and configuration steps of the scaling an
 All MongoDB drivers support replica sets, which means that you can pass the list of MongoDB servers in your replica set to them and they will adapt. However, switching from a single MongoDB to a replica set is something you need to test and be sure about. You shouldn't make such a change to your application infrastructure with the click of a button!
 
 This is why we won't touch your configuration files after you scale your MongoDB up. This allows you to configure the client the way you see fit and go live with your replicated database backend when you are ready.
-**Note** 
 
+#### Note
+<div class="notice"><p>
 We stop modifying your MongoDB client configuration files (like mongoid.yml in Rails) after replication is enabled.
-
+</p></div>
 
 ## Environment variables
 
@@ -78,9 +79,7 @@ mongodb://50.45.87.46:27017/my_database
 
 Once replication is enabled, this environment variable is populated:
 
-* MONGODB\_ADDRESSES
-
-`MONGODB_ADDRESSES` contains a comma separated list of all server names of the replica set. This usually looks like something like this:
+`MONGODB_ADDRESSES` which contains a comma separated list of all server names of the replica set. This usually looks something like this:
 
 ```
 lion.myapp.c66.me,tiger.myapp.c66.me
@@ -88,10 +87,10 @@ lion.myapp.c66.me,tiger.myapp.c66.me
 
 Once you have replica set enabled by scaling your MongoDB backend up, you will need to modify your client configuration accordingly. Your deployment might not work and your application might stop functioning if you don't do that.
 
-**Note**
-
+#### Note
+<div class="notice"><p>
 Deployments might fail after replica sets are enabled if you don't change your client configuration to use the replica set.
-
+</p></div>
 
 
 ## Configure Mongoid
@@ -129,11 +128,8 @@ The reason for the ugly looking line is that `mongoid` requires the list of serv
 ```
 
 
-
-
-
-### Note
-
-You cannot use complex Ruby code (like `if`) in your YML files. That's why the new hosts value is generated with string replacements and simple Ruby commands.
-
+#### Note
+<div class="notice"><p>
+You cannot use complex Ruby code (like <kbd>if</kbd>) in your YML files. That's why the new hosts value is generated with string replacements and simple Ruby commands.
+</p></div>
 
