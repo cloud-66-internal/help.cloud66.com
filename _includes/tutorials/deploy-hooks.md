@@ -360,7 +360,7 @@ For **Rails/Rack** stacks this file should be present within a folder named _.cl
 /.cloud66/deploy_hooks.yml
 ```
 
-For **Docker stacks** this file should be pushed into [CustomConfig git](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html) Repository of the stack. This repository will be created after the stack is analyzed, so you can push your deploy hooks before deployment started.
+For **Docker applications** this file should be pushed into [CustomConfig git](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html) Repository of the stack. This repository will be created after the stack is analyzed, so you can push your deploy hooks before deployment started.
 
 This file should be YAML formatted, and you can use a service like [YAMLlint](http://yamllint.com/) to validate it.
 
