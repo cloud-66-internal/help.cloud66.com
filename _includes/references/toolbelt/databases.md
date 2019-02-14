@@ -16,7 +16,7 @@ cx databases promote-slave -s <stack> --dbtype=postgresql <slave server name>
 
 #### Warning
 <div class="notice notice-danger">
-<p>This action could result in application downtime, it is advisable to choose a non-busy time to perform this action, and to place your stack in maintenance mode.</p>
+<p>This action could result in application downtime, it is advisable to choose a non-busy time to perform this action, and to place your application in maintenance mode.</p>
 </div>
 
 The existing master and other slaves will need to be removed after this process as after this the new configuration will have only a single database. You will be able to configure replication from this again after that point.
@@ -40,7 +40,7 @@ The server provided must have already been configured as a replication slave via
 
 #### Warning
 <div class="notice notice-danger">
-<p>This action could result in application downtime, it is advisable to choose a non-busy time to perform this action, and to place your stack in maintenance mode.</p>
+<p>This action could result in application downtime, it is advisable to choose a non-busy time to perform this action, and to place your application in maintenance mode.</p>
 </div>
 
 ### Parameters
@@ -48,7 +48,7 @@ The server provided must have already been configured as a replication slave via
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| -:|
-|stack 					   |		—		|Name of your stack|
+|stack 					   |		—		|Name of your application|
 |stack server name 	   | 	—		| Name of the replication slave server to re-synchronise with master|
 |database type (optional)	 	   |	—	| The Database type |
 {:.table}

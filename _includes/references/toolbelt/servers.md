@@ -19,7 +19,7 @@ $ cx servers settings list [-s <stack>] --server <server name>|<server ip>|<serv
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| -:|
-|stack 					   |		—		|Name of the stack|
+|stack 					   |		—		|Name of the application|
 |server name (optional) 	   | 	—		| Name of the server to access |
 |server ip (optional)	 	   |	—	| IP of the server to access |
 |server role (optional)	 	   |	—	| Role of the server to access (e.g. web) |
@@ -43,7 +43,7 @@ Use this command to reboot a specific server from the command line
 ### Usage
 
 ```
-$ cx servers reboot [-s <stack>] [-e stack environment] --server <server name> 
+$ cx servers reboot [-s <stack>] [-e application environment] --server <server name> 
 ```
 
 
@@ -52,9 +52,9 @@ $ cx servers reboot [-s <stack>] [-e stack environment] --server <server name>
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| ----:|
-|stack 					   |		—		|Name of the stack |
+|stack 					   |		—		|Name of the application |
 |server name (optional)    | 	—			| Name of the server to reboot |
-|e (optional) 	   		   | 	—			| Your stack environment |
+|e (optional) 	   		   | 	—			| Your application environment |
 {:.table}
 
 

@@ -2,7 +2,7 @@
 
 - On your dashboard click on "Failover Groups"
 - Add a new failover group
-- Choose stack `A` as primary stack
+- Choose application `A` as primary application
 - Click on "add group" 
 
 
@@ -19,27 +19,27 @@ If TTL of your DNS is 300 seconds you don't need to wait just continue till the 
 
 ### 3. Database backup
 
-On stack `A`set backup for your databases (through add-ins)
+On application `A`set backup for your databases (through add-ins)
 
 
-### 4. Clone primary stack
+### 4. Clone primary application
 
-Visit the stack page of stack `A`, click "Clone" from the right sidebar. This will allow you to choose a new stack name and environment. Cloning your stack will preserve any environment variables from the existing stack, and also allows you to define where to deploy to along with other settings.
+Visit the application page of application `A`, click "Clone" from the right sidebar. This will allow you to choose a new application name and environment. Cloning your application will preserve any environment variables from the existing application, and also allows you to define where to deploy to along with other settings.
 
 
-### 5. Add your database to backup stack
+### 5. Add your database to backup application
 
-Add database or all the databases you need on to the stack `B`
+Add database or all the databases you need on to the application `B`
 
 
 ### 6. Set up a replication between two stacks
 
-On stack `B` go on stack page/database server (Redis, MySQL or etc.) and choose the server. On the right side bar click on "configure replication" choose stack A (you have to be Administrator on stack A otherwise it won't be listed). This makes stack B databases slave for stack `A`.
+On application `B` go on application page/database server (Redis, MySQL or etc.) and choose the server. On the right side bar click on "configure replication" choose application A (you have to be Administrator on application A otherwise it won't be listed). This makes application B databases slave for application `A`.
 
 
-### 7. Add the second stack to the failover group
+### 7. Add the second application to the failover group
 
-to add stack B as a backup to failover group, edit the related failover group and add stack B as a backup stack
+to add application B as a backup to failover group, edit the related failover group and add application B as a backup application
 
 
 
@@ -53,7 +53,7 @@ Make sure DNS record for the failover group is populated
 
 - Go to the Stack page of `A`
 - Click on Configure Network / Redirects
-- Check _"Put stack in Maintenance Mode"_ box
+- Check _"Put application in Maintenance Mode"_ box
 - Apply
 
 
@@ -62,7 +62,7 @@ Make sure DNS record for the failover group is populated
 Do the step 6 but this time in the drop-down menu choose "No data source" (this makes `B`'s db, master)
 
 
-### 10. Switch to the new stack
+### 10. Switch to the new application
 
 Go to the failover group and switch to `B`.
 
@@ -71,7 +71,7 @@ We recommend you keep the DNS on the failover group to make this procedure easy 
 
 
 
-### 11. [OPTIONAL]Switch your DNS record to the new stack
+### 11. [OPTIONAL]Switch your DNS record to the new application
 
-You can now point your DNS to stack `B`.
+You can now point your DNS to application `B`.
 

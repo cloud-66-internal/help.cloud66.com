@@ -12,9 +12,9 @@ All stacks deployed with Cloud 66 are automatically protected against [denial of
 Servers deployed with Cloud 66 only allow incoming SSH traffic from known IP addresses. To protect against brute-force SSH attacks, the servers are also configured to only accept SSH keys and not passwords. However, it is possible that user configurations result in vulnerabilities, and for such cases, repeated SSH login attempts are detected and blocked for at least 10 minutes.
 
 ## Firewall
-The <i>Firewall</i> tab allows you to configure and apply firewall rules per server for your stack. You can open your firewall temporarily in cases when you need temporary access to your servers by clicking the icon at the top right of the page. This will automatically fill with your current IP address, and allow you to choose the duration of the opening and the server port you wish to access. Doing this avoids the dangers of leaving firewall ports open permanently unnecessarily.
+The <i>Firewall</i> tab allows you to configure and apply firewall rules per server for your application. You can open your firewall temporarily in cases when you need temporary access to your servers by clicking the icon at the top right of the page. This will automatically fill with your current IP address, and allow you to choose the duration of the opening and the server port you wish to access. Doing this avoids the dangers of leaving firewall ports open permanently unnecessarily.
 
-By default, Cloud 66 gateway servers (e.g. 54.84.166.97) are the only servers allowed SSH (port 22) access to stack servers. The default firewall rules include database and web ports appropriate for the stack deployed but also includes ports 8080 and 8443 as alternative HTTP ports for WebSocket-based applications like [Faye](/rails/how-to-guides/deployment/implementing-faye.html). Editing and removing the default firewall rules is disabled to secure accessibility to the servers at all times.
+By default, Cloud 66 gateway servers (e.g. 54.84.166.97) are the only servers allowed SSH (port 22) access to application servers. The default firewall rules include database and web ports appropriate for the application deployed but also includes ports 8080 and 8443 as alternative HTTP ports for WebSocket-based applications like [Faye](/rails/how-to-guides/deployment/implementing-faye.html). Editing and removing the default firewall rules is disabled to secure accessibility to the servers at all times.
 
 ### Add a firewall rule
 To add your own rules, click <i>Add a new firewall rule</i>. You can input single IP addresses or ranges, and the drop-down allows you to choose servers by name (e.g. <i>Rails servers</i>).
@@ -48,9 +48,9 @@ The <i>Redirects</i> tab helps you perform simple but frequently used network re
 ### Maintenance mode
 When you have to make manual changes to your application or push out a breaking change, you may not be able to guarantee that your application will be able to serve content or act correctly.
 
-During such times, you can set your stack into <i>maintenance mode</i>, which puts up a holding page (either a default Cloud 66 page, or your own) for the duration of your maintenance work.
+During such times, you can set your application into <i>maintenance mode</i>, which puts up a holding page (either a default Cloud 66 page, or your own) for the duration of your maintenance work.
 
-You can still safely redeploy your stack while maintenance mode is enabled - the maintenance page will be served until you turn off maintenance mode on your stack.
+You can still safely redeploy your application while maintenance mode is enabled - the maintenance page will be served until you turn off maintenance mode on your application.
 
 To supply your own maintenance page, simply place your file in the following path of your repository:
 

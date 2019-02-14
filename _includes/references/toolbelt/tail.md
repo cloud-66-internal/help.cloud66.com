@@ -12,7 +12,7 @@ At least one of the optional parameters are necessary in order to identify which
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| ----:|
-|stack 					   |		—		| Name of the stack|
+|stack 					   |		—		| Name of the application|
 |server name (optional)    | 	—			| Name of the server to access |
 |server ip (optional)      | 	—			| IP of the server to access |
 |server role (optional)    | 	—			| Role of the server to access (e.g. web) |

@@ -17,7 +17,7 @@ Please remember to enable Google Compute in the API list under **API & auth** fo
 
 You may also have to enable billing for your account through the Billing and settings menu.
 
-### Add GCE keys to a stack
+### Add GCE keys to a application
 
 Visit the Cloud 66 Dashboard and click the green *New Application* button. After connecting to your Git repository and analyzing your code, you will be asked to *Add your cloud platform*. From this menu, select **Google Compute Cloud** and provide your credentials. 
 

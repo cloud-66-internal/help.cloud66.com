@@ -1,12 +1,12 @@
 
-CustomConfig git is a private git repository available on every stack in your Cloud 66 account. This git repository is hosted by Cloud 66 and allows you to modify [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) files for your stack using familiar git commands.
+CustomConfig git is a private git repository available on every application in your Cloud 66 account. This git repository is hosted by Cloud 66 and allows you to modify [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) files for your application using familiar git commands.
 
 If you are familiar with [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) you know how it can be a powerful tool to customize configuration for [Nginx](/{{page.collection}}/references/nginx.html) or [HAProxy](/{{page.collection}}/how-to-guides/deployment/haproxy.html). 
 
 The easiest way to modify CustomConfig files is through the UI. However if you would like to edit CustomConfig files in your favorite editor or enjoy git merge and flow control features you can use CustomConfig git.
 
 ### Getting Started with CustomConfig git
-Each stack on Cloud 66 has its own private CustomConfig git repository. You can find the URL of this repository under stack’s information page (right hand side menu). There you will find a URL like this for CustomConfig git:
+Each application on Cloud 66 has its own private CustomConfig git repository. You can find the URL of this repository under application’s information page (right hand side menu). There you will find a URL like this for CustomConfig git:
 
 	git@git1.cloud66.com:warmhearted-wondrous-tiger-9262.git
 
@@ -18,13 +18,13 @@ You can upload your public SSH key at **Account / Keys / Public Key** when logge
 
 ### Making changes to CustomConfig files
 
-To make a change to a CustomConfig file you need to first clone the stack’s CustomConfig git repository locally. Using git commandline this is possible with something like this:
+To make a change to a CustomConfig file you need to first clone the application’s CustomConfig git repository locally. Using git commandline this is possible with something like this:
 
 	$ git clone git@git1.cloud66.com:warmhearted-wondrous-tiger-9262.git
 
 This will clone the CustomConfig git repository for the first time to your disk under a folder called `warmhearted-wondrous-tiger-9262`.
 
-Now you can `cd` to this folder and see the list of files available to edit. By default, CustomConfig git repository contains all the CustomConfig files that are relevant to your stack. For example, if you are using HAProxy as load balancer, you will see `haproxy.conf` as one of the files there. You might also see `nginx.conf` since you will always have web servers on your stack.
+Now you can `cd` to this folder and see the list of files available to edit. By default, CustomConfig git repository contains all the CustomConfig files that are relevant to your application. For example, if you are using HAProxy as load balancer, you will see `haproxy.conf` as one of the files there. You might also see `nginx.conf` since you will always have web servers on your application.
 
 Now open the file you want to change in your favorite text editor. Once done, save the file and commit your changes like any normal git workflow:
 
@@ -45,7 +45,7 @@ Changing a CustomConfig file in the UI will be pushed to your servers immediatel
 
 ### Changes made through CustomConfig git
 
-Changes made to CustomConfig git files will NOT be pushed to your servers until the next stack deployment. This is prevent unwanted changes go live during a normal git workflow.
+Changes made to CustomConfig git files will NOT be pushed to your servers until the next application deployment. This is prevent unwanted changes go live during a normal git workflow.
 
 ## Automatic updates
 

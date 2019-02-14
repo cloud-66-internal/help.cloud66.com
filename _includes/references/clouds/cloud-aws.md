@@ -106,7 +106,7 @@ You can also set more fine-grained permissions with the following JSON template 
 }
 ```
 
-### Add AWS keys to a stack
+### Add AWS keys to a application
 Visit the Cloud 66 Dashboard and click the green *New Application* button. After connecting to your Git repository and analyzing your code, you will be asked to Add your cloud platform. From this menu, select *Amazon Web Services* and provide your credentials.
 
 #### Note

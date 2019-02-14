@@ -2,14 +2,14 @@
 
 ## Overview
 
-To add a job, simply click on the _+_ button on the add-ins menu of your stack page.
+To add a job, simply click on the _+_ button on the add-ins menu of your application page.
 Your run results (success, failure and any output) can be seen in real-time on the job detail page.
 
 ## Run a job
 You can set the timing of the job in either minutes, hours, a daily, weekly and monthly time, as well as on demand (under the hood, scheduled jobs are run as cronjobs on your server).
 
 ## Variety of jobs
-There are a variety of jobs for your stack.
+There are a variety of jobs for your application.
 
 
 {% if page.collection == 'maestro' %} 

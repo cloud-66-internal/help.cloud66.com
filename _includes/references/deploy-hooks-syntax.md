@@ -111,12 +111,12 @@ There are four types of deploy hooks, and the fields available (and required) va
     </tr>
     <tr>
      <td> apply_during <br> (all) </td>
-     <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a stack is deployed, and will re-occur until the stack has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+     <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
     </tr>
     <tr>
      <td> env_vars </td>
      <td> Hash of values that will be set when running this specific deploy hook. Only applies to deploy hooks that have execute = true
-If the stack already contains this env var it will be overridden with the value specified here. </td>
+If the application already contains this env var it will be overridden with the value specified here. </td>
     </tr>
     <tr>
      <td> halt_on_error <br> (true) </td>
@@ -173,12 +173,12 @@ If the stack already contains this env var it will be overridden with the value 
   </tr>
   <tr>
    <td> apply_during <br> (all) </td>
-   <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a stack is deployed, and will re-occur until the stack has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+   <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
   </tr>
     <tr>
      <td> env_vars </td>
      <td> Hash of values that will be set when running this specific deploy hook. Only applies to deploy hooks that have execute = true
-If the stack already contains this env var it will be overridden with the value specified here. </td>
+If the application already contains this env var it will be overridden with the value specified here. </td>
     </tr>
   <tr>
    <td> halt_on_error <br> (true) </td>
@@ -227,7 +227,7 @@ If the stack already contains this env var it will be overridden with the value 
     <tr>
      <td> env_vars </td>
      <td> Hash of values that will be set when running this specific deploy hook. Only applies to deploy hooks that have execute = true
-If the stack already contains this env var it will be overridden with the value specified here. </td>
+If the application already contains this env var it will be overridden with the value specified here. </td>
     </tr>
 <tr>
  <td> execute <br> (false) </td>
@@ -243,7 +243,7 @@ If the stack already contains this env var it will be overridden with the value 
 </tr>
 <tr>
  <td> apply_during <br> (all) </td>
- <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a stack is deployed, and will re-occur until the stack has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+ <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
 </tr>
 <tr>
  <td> halt_on_error <br> (true) </td>
@@ -300,7 +300,7 @@ If the stack already contains this env var it will be overridden with the value 
     <tr>
      <td> env_vars </td>
      <td> Hash of values that will be set when running this specific deploy hook. Only applies to deploy hooks that have execute = true
-If the stack already contains this env var it will be overridden with the value specified here. </td>
+If the application already contains this env var it will be overridden with the value specified here. </td>
     </tr>
 <tr>
  <td> execute <br> (false) </td>
@@ -316,7 +316,7 @@ If the stack already contains this env var it will be overridden with the value 
 </tr>
 <tr>
  <td> apply_during <br> (all) </td>
- <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a stack is deployed, and will re-occur until the stack has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+ <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
 </tr>
 <tr>
  <td> halt_on_error <br> (true) </td>

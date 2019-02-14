@@ -19,9 +19,9 @@ production: # Environment or your choice
 ```
 
 
-## Step 3: Commit and redeploy your stack
+## Step 3: Commit and redeploy your application
 
-Commit the changes to the CustomConfig git reposity and redeploy your stack. 
+Commit the changes to the CustomConfig git reposity and redeploy your application. 
 
 #### Note
 <div class="notice"><p>

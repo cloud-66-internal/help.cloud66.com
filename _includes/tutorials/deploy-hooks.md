@@ -116,12 +116,12 @@ There are {% if page.collection == 'rails' or page.collection == 'node'%}four{%e
     </tr>
     <tr>
      <td> apply_during <br> (all) </td>
-     <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a stack is deployed, and will re-occur until the stack has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+     <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
     </tr>
     <tr>
      <td> env_vars </td>
      <td> Hash of values that will be set when running this specific deploy hook. Only applies to deploy hooks that have execute = true
-If the stack already contains this env var it will be overridden with the value specified here. </td>
+If the application already contains this env var it will be overridden with the value specified here. </td>
     </tr>
     <tr>
      <td> halt_on_error <br> (true) </td>
@@ -178,12 +178,12 @@ If the stack already contains this env var it will be overridden with the value 
   </tr>
   <tr>
    <td> apply_during <br> (all) </td>
-   <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a stack is deployed, and will re-occur until the stack has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+   <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
   </tr>
     <tr>
      <td> env_vars </td>
      <td> Hash of values that will be set when running this specific deploy hook. Only applies to deploy hooks that have execute = true
-If the stack already contains this env var it will be overridden with the value specified here. </td>
+If the application already contains this env var it will be overridden with the value specified here. </td>
     </tr>
   <tr>
    <td> halt_on_error <br> (true) </td>
@@ -232,7 +232,7 @@ If the stack already contains this env var it will be overridden with the value 
     <tr>
      <td> env_vars </td>
      <td> Hash of values that will be set when running this specific deploy hook. Only applies to deploy hooks that have execute = true
-If the stack already contains this env var it will be overridden with the value specified here. </td>
+If the application already contains this env var it will be overridden with the value specified here. </td>
     </tr>
 <tr>
  <td> execute <br> (false) </td>
@@ -248,7 +248,7 @@ If the stack already contains this env var it will be overridden with the value 
 </tr>
 <tr>
  <td> apply_during <br> (all) </td>
- <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a stack is deployed, and will re-occur until the stack has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+ <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
 </tr>
 <tr>
  <td> halt_on_error <br> (true) </td>
@@ -304,7 +304,7 @@ If the stack already contains this env var it will be overridden with the value 
     <tr>
      <td> env_vars </td>
      <td> Hash of values that will be set when running this specific deploy hook. Only applies to deploy hooks that have execute = true
-If the stack already contains this env var it will be overridden with the value specified here. </td>
+If the application already contains this env var it will be overridden with the value specified here. </td>
     </tr>
 <tr>
  <td> execute <br> (false) </td>
@@ -320,7 +320,7 @@ If the stack already contains this env var it will be overridden with the value 
 </tr>
 <tr>
  <td> apply_during <br> (all) </td>
- <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a stack is deployed, and will re-occur until the stack has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+ <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
 </tr>
 <tr>
  <td> halt_on_error <br> (true) </td>
@@ -352,7 +352,7 @@ If the stack already contains this env var it will be overridden with the value 
 
 # How to use deploy hooks
 
-To make use of deploy hooks, your stack should have a file called _deploy_hooks.yml_.
+To make use of deploy hooks, your application should have a file called _deploy_hooks.yml_.
 
 For **Rails/Rack** stacks this file should be present within a folder named _.cloud66_, which is in turn located in the root of your source code.
 
@@ -360,7 +360,7 @@ For **Rails/Rack** stacks this file should be present within a folder named _.cl
 /.cloud66/deploy_hooks.yml
 ```
 
-For **Docker applications** this file should be pushed into [CustomConfig git](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html) Repository of the stack. This repository will be created after the stack is analyzed, so you can push your deploy hooks before deployment started.
+For **Docker applications** this file should be pushed into [CustomConfig git](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html) Repository of the application. This repository will be created after the application is analyzed, so you can push your deploy hooks before deployment started.
 
 This file should be YAML formatted, and you can use a service like [YAMLlint](http://yamllint.com/) to validate it.
 

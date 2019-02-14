@@ -5,7 +5,7 @@ SSL is an acronym for Secure Sockets Layer, an encryption technology that was cr
 Cloud 66 provides two types of SSL, one is the standard one and the other is the [Let's Encrypt](https://letsencrypt.org) one.
 
 ## Standard SSL Certificate
-You can easily add a SSL certificate to your stack from the add-in page. Apart from the certificate key and SSL certificate, you can also provide an intermediate certificate and allowed server names (with wildcards accepted).
+You can easily add a SSL certificate to your application from the add-in page. Apart from the certificate key and SSL certificate, you can also provide an intermediate certificate and allowed server names (with wildcards accepted).
 
 Once you've provided your SSL certificate and key, we'll install them on all your web servers.
 

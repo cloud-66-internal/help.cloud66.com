@@ -19,7 +19,7 @@ Application users have access rights to applications and different part of the o
 - Power user
 - Administrator
 
-By definition, any user with access to an application will automatically be given the rights for the lower levels of permissions. For example, a user who can control an application will also be able to deploy and view that same stack. You can even customize these pre-defined roles, however, we recommend adding a role for custom permissions.
+By definition, any user with access to an application will automatically be given the rights for the lower levels of permissions. For example, a user who can control an application will also be able to deploy and view that same application. You can even customize these pre-defined roles, however, we recommend adding a role for custom permissions.
 
 You also have the option of allowing team members to create a new application. The creator of an application becomes its default administrator, although this setting can be changed by the team leader. In addition to this, you can also allow a user to control permissions for others.
 

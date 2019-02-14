@@ -21,7 +21,7 @@ Also, you need to specify at least the `remote` port. If `local` is missing, `re
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| ----:|
-|stack 					   |		—		| Name of the stack|
+|stack 					   |		—		| Name of the application|
 |server  		   | 	—			| Specify a server |
 |server name (optional)	   | 	—			| Name of the target server |
 |server ip (optional)	   | 	—			| IP of the server to access |

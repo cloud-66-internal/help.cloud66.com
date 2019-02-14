@@ -7,7 +7,7 @@ You need to provide your Linode API keys in order for Cloud 66 to access your ac
 
 Once there, create a label for your new key, as well as an expiry date, and then hit _Create API Key_. Take careful note of the key provided - it cannot be displayed again.
 
-## Add Linode key to a stack
+## Add Linode key to a application
 Visit the Cloud 66 Dashboard and select _Get started building a stack_. After connecting to your Git repository and analyzing your code, you will be asked to _Add your cloud platform_. From this menu, select *Linode* and provide your API key. 
 
 #### Note

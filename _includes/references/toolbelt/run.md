@@ -19,7 +19,7 @@ At least one of the optional server parameters are necessary in order to identif
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| ----:|
-|stack 					   |		—		|Name of the stack|
+|stack 					   |		—		|Name of the application|
 |server					   |		—		| Specify a server |
 |server name (optional) 	   | 	—		| Name of the server to access |
 |server ip (optional)	 	   |	—	| IP of the server to access |

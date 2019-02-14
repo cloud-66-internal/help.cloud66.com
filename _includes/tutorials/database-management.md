@@ -13,7 +13,7 @@ We currently support the following databases, with no need for additional config
 * GlusterFS
 * InfluxDB
 
-{% if page.collection == "maestro" %}When creating a Maestro application, you can [add as many databases as you need in your service configuration during the stack build](/maestro/how-to-guides/deployment/docker-service-configuration.html#database-configurations). {%endif%}
+{% if page.collection == "maestro" %}When creating a Maestro application, you can [add as many databases as you need in your service configuration during the application build](/maestro/how-to-guides/deployment/docker-service-configuration.html#database-configurations). {%endif%}
 {%if page.collection=='rails' %}For Rack-based stacks, Cloud 66 automatically detects whether your application relies on a database or not during your code analysis. This is based on a combination of your Gemfile and your `database.yml` or `mongoid.yml` files.{%endif%}
 
 After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. If you haven't specified a username and password for your database, Cloud 66 will automatically generate these credentials for you. They will be available as environment variables and your application will be configured to use them.
@@ -31,9 +31,9 @@ This option deploys your chosen database to the same server as your web server -
 This option will automatically create a new server for your database and configure your application accordingly.
 
 ## Upgrading your database
-Cloud 66 will not do in-place database upgrades, because this process may cause your application to stop working or may not be possible automatically. To upgrade your database through Cloud 66, we recommend that you create a new stack (at which point Cloud 66 will deploy the newer database version).
+Cloud 66 will not do in-place database upgrades, because this process may cause your application to stop working or may not be possible automatically. To upgrade your database through Cloud 66, we recommend that you create a new application (at which point Cloud 66 will deploy the newer database version).
 
-Once the new stack is created, you can migrate data from your old stack to your new stack.
+Once the new application is created, you can migrate data from your old application to your new application.
 
 {% if page.collection == 'rails' %}
 ## Control your Rails database migrations
@@ -54,7 +54,7 @@ When you have disabled `run.deploy.command` in [Stack settings]({% if page.colle
 
 You can customize the database configuration on your servers using [CustomConfig](/{{page.collection}}/tutorials/custom-config-git.html). CustomConfig is available for MySQL, PostgreSQL, Redis and MongoDB.
 
-Editing and committing your database CustomConfig will perform the following steps on every database server in your stack, one by one, sequentially:
+Editing and committing your database CustomConfig will perform the following steps on every database server in your application, one by one, sequentially:
 
 - Check your template for Liquid syntax errors
 - Determine the correct server configuration and prepare general variables
