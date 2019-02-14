@@ -13,7 +13,7 @@ Although database migrations only occur on one server, depending on the changes,
 
 ## Configure parallel deployment
 
-To activate parallel deployments, access your [Stack settings]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#settings-variables) via [Toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) and set `deploy.parallel` to `true`. 
+To activate parallel deployments, access your [Application settings]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#settings-variables) via [Toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) and set `deploy.parallel` to `true`. 
 
 ```
 $ cx settings set -s my_stack deploy.parallel true

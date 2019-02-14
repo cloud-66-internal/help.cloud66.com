@@ -54,7 +54,7 @@ You can still safely redeploy your application while maintenance mode is enabled
 
 To supply your own maintenance page, simply place your file in the following path of your repository:
 
-You can find it in *Stack page* --> *Network settings* --> *Redirects* tab
+You can find it in *Application page* --> *Network settings* --> *Redirects* tab
 
 <pre class="terminal">
 /.cloud66/maintenance.html
@@ -65,9 +65,9 @@ You can easily <a href="/{{page.collection}}/how-to-guides/add-ins/ssl.html">add
 
 This works by reconfiguring your Nginx configuration, so any visitor that arrives at port 80 and HTTP will receive a permanent HTTP redirect (301) to the same address on HTTPS.
 
-You can find it in *Stack page* --> *Network settings* --> *Redirects* tab 
+You can find it in *Application page* --> *Network settings* --> *Redirects* tab 
 
 ### WWW or non-WWW in your URL
 Some sites serve traffic on <code>www.domain.com</code>, while others use the bare <code>domain.com</code>. By default, your servers will serve traffic for any DNS record pointing to their address. This setting allows your to redirect visits to <code>www.domain.com</code> to <code>domain.com</code>, and vice-versa. This works by changing your Nginx configuration to permanently redirect (HTTP 301) visitors to the desired address.
 
-You can find it in *Stack page* --> *Network settings* --> *Redirects* tab
+You can find it in *Application page* --> *Network settings* --> *Redirects* tab

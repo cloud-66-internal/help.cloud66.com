@@ -32,7 +32,7 @@ If your set WEAVE_SCOPE_TOKEN environment variable, weave scope will connect to 
 
 ## Step 4: Open port 4040
 
-Weavescope will run on port 4040 which is not exposed to the outside world by default. Make sure port 4040 is only accessible by your own IP address. In order to access the UI of Weave Scope you have to enable port 4040 on your [stack firewall](/{{page.collection}}/references/server-ip-addresses.html).
+Weavescope will run on port 4040 which is not exposed to the outside world by default. Make sure port 4040 is only accessible by your own IP address. In order to access the UI of Weave Scope you have to enable port 4040 on your [application firewall](/{{page.collection}}/references/server-ip-addresses.html).
 
 #### Warning
 <div class="notice notice-danger"><p>

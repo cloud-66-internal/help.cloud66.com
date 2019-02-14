@@ -7,7 +7,7 @@ When you deploy your application, Cloud 66 pushes the latest code available in y
 
 The Cloud 66 build step occurs the first time you create a application - this is when your servers are created and software is compiled.
 
-- **Stack**
+- **Application (Stack)**
 
 A web application application is a set of hardware and software components needed for your application to run. It may include web servers, a database server, and a load balancer.
 

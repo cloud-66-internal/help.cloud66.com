@@ -51,7 +51,7 @@ Make sure DNS record for the failover group is populated
 
 ### 8. Put the primary site in to maintenance mode:
 
-- Go to the Stack page of `A`
+- Go to the application overview for `A`
 - Click on Configure Network / Redirects
 - Check _"Put application in Maintenance Mode"_ box
 - Apply

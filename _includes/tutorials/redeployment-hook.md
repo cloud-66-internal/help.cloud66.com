@@ -7,7 +7,7 @@ Redeployment hooks allow you to achieve continuous deployment by deploying your 
 
 ### Where to find your redeployment hook?
 
-Your redeployment hook URL is automatically generated for each of your stacks. You can found your unique redeployment hook URL on your application information page (available via the **stack information** link on the main application page's right hand navigation menu)
+Your redeployment hook URL is automatically generated for each of your stacks. You can found your unique redeployment hook URL on your application information page (available via the **application information** link on the main application page's right hand navigation menu)
 
 
 {% if include.product == 'legacy_docker' or include.product == 'maestro' or include.product == 'skycap' %}
@@ -58,7 +58,7 @@ In the case where the payload of the commit hook does not contain any branch inf
 
 #### Github Integration
 
-Users who have signed in through Github (and who have enough access to create and edit deployment events for their stacks on GitHub) can activate continuous deployments on GitHub. To do this: access your [Stack settings]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#settings-variables) via the toolbelt and set **continuous.deploy** to _true_.
+Users who have signed in through Github (and who have enough access to create and edit deployment events for their stacks on GitHub) can activate continuous deployments on GitHub. To do this: access your [Application settings]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#settings-variables) via the toolbelt and set **continuous.deploy** to _true_.
 
 ```
 $ cx settings set -s my_stack continuous.deploy true

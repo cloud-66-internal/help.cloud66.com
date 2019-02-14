@@ -38,16 +38,16 @@ Once the new application is created, you can migrate data from your old applicat
 {% if page.collection == 'rails' %}
 ## Control your Rails database migrations
 
-Cloud 66 chooses a server to perform the migrations - all other servers will wait until the migrations are finished before continuing with deployment. You can see which server performs the migrations in the Stack Information page, and change it using the `c66.migrations.run` [reserved tag](/rails/references/reserved-tags.html).
+Cloud 66 chooses a server to perform the migrations - all other servers will wait until the migrations are finished before continuing with deployment. You can see which server performs the migrations in the Application Overview page, and change it using the `c66.migrations.run` [reserved tag](/rails/references/reserved-tags.html).
 
-You can control your Rails database migrations by setting `run.deploy.command` option through Stack settings via 
+You can control your Rails database migrations by setting the `run.deploy.command` option through application settings via 
 [Toolbelt](/rails/quickstarts/using-cloud66-toolbelt.html) which gives you the option of running migrations or not.
 
 <pre class="prettyprint">
 $ cx settings set -s my_stack run.deploy.command true
 </pre>
 
-When you have disabled `run.deploy.command` in [Stack settings]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#settings-variables) , you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
+When you have disabled `run.deploy.command` in [Application settings]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#settings-variables) , you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
 {%endif%}
 
 ## Customize your database configuration
@@ -97,7 +97,7 @@ The following variables are available to any database CustomConfig.
 		<tr>
 			<td>cloud</td>
 			<td>string</td>
-      		<td>Stack cloud</td>
+      		<td>Application cloud</td>
 		</tr>
 		<tr>
 			<td>memory</td>
