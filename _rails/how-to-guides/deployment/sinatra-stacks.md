@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Managing a Sinatra application"
+title:  "Managing a Sinatran application"
 categories: how-to-guides/deployment
 order: 24
 lead: How to deploy and manage Sinatra apps with Cloud 66
@@ -13,7 +13,7 @@ permalink: /:collection/:path
 Cloud 66 supports applications based on the [Sinatra framework](http://www.sinatrarb.com/), a light-weight web framework written in Ruby.
 
 ## Custom commands
-Given that Sinatra applications can have different database frameworks, we allow you to specify custom commands which are run at specific points during deployment:
+Given that Sinatran applications can have different database frameworks, we allow you to specify custom commands which are run at specific points during deployment:
 
 <ul class="list">
   <li>

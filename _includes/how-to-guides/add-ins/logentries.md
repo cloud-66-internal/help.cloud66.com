@@ -14,7 +14,7 @@ You can find your Logentries account ID in your account page. For more informati
 {% if page.collection == 'legacy_docker' or page.collection == 'maestro' %}
 #### Note
 <div class="notice notice-danger">
-	<p>For docker stacks this will be added to the host not as a container.</p>
+	<p>For docker applications this will be added to the host not as a container.</p>
 </div>
 {%endif%}
 
@@ -24,5 +24,5 @@ You can find your Logentries account ID in your account page. For more informati
 
 If your log files (<span style="background-color: #FFFF00">make sure they exist on the server</span>) are not showing up in your Logentries account or they are empty, try to <b>SCAN FOR NEW LOGS</b>. In order to do that you will need to:
 
-- Go to your log analyzer config page (click on logentries in your application page under External add-ins).
+- Go to your log analyzer config page (click on logentries in your Application Overview under External add-ins).
 - Push the SCAN FOR NEW LOGS button.

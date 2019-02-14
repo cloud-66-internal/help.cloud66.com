@@ -13,5 +13,5 @@ A reverted deployment is one that is no longer on your servers (the application 
 
 
 ## Usage
-Accessing your application page, click _Deployment history_ in the right sidebar. On this page, you can see your previous commits, and revert back to previous commits. Any code revisions that have not been deployed will have a hollow circle.
+Accessing your Application Overview, click _Deployment history_ in the right sidebar. On this page, you can see your previous commits, and revert back to previous commits. Any code revisions that have not been deployed will have a hollow circle.
 

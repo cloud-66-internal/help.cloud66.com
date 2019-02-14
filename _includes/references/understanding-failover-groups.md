@@ -5,7 +5,7 @@ There are two major use cases for Failover Groups:
 
 1. **Application resilience**  
  By building and nominating a secondary backup on a different cloud provider or data center you can use a failover group to switch your visitors from the _Primary_ to the _Backup_ application with ease.
-2. **Cloning stacks**  
+2. **Cloning applications**  
 If you need to clone or rebuild your application, you can use a failover group to switch your traffic to the new application without interruptions to your service.
 
 ## How Failover Groups work

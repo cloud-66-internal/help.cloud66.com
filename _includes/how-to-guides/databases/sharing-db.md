@@ -10,7 +10,7 @@ You will then reference the database credentials from your first application in 
 ```
 {% raw %}{{ APP[APP_UID].ENV_VAR }}{% endraw %}
 ```
-(your application UID is available on your _Application information_ page)
+(your application UID is available under the **Information** tab of your _Settings & Information_ page)
 
 For example, your environment variables would be set like this:
 

@@ -18,7 +18,7 @@ Redeployment hooks allow you to achieve continuous deployment by deploying your 
 
 A unique redeployment hook URL is automatically generated for each Maestro applications. To access it:
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Settings & Information*  in the **Application** panel on the right of the screen
 3. Click on the *Information* panel
 
@@ -50,7 +50,7 @@ An example redeployment **hook with a many-service modifier:**
 https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy?services=my-web-service,api
 ```
 #### Note 
-<div class="notice"><p>The xxxx/yyyy in the examples is for illustrative purposes only and should be replaced with your redeployment URL on your application information page.</p></div>
+<div class="notice"><p>The xxxx/yyyy in the examples is for illustrative purposes only and should be replaced with your redeployment URL on your Application Information page.</p></div>
 
 ### How service modifiers work
 
@@ -86,7 +86,7 @@ The process of adding the hook differs by Git host, so we will guide you through
 
 ### GitHub Setup
 
-On your application overview page, click _Settings & information_ in the right sidebar and then the *Information* tab. Then copy the URL provided in the _Redeployment hook_ field. 
+On your Application Overview, click _Settings & information_ in the right sidebar and then the *Information* tab. Then copy the URL provided in the _Redeployment hook_ field. 
 
 Next, visit your GitHub repository, click _Settings_ in the right sidebar, and then _Webhooks & Services_ in the left sidebar.
 
@@ -95,7 +95,7 @@ In the _Webhooks_ window, click _Add webhook_ and paste the redeployment hook UR
 
 ### Bitbucket Setup
 
-On your application overview page, click _Settings & information_ in the right sidebar and then the *Information* tab. Then copy the URL provided in the _Redeployment hook_ field.  
+On your Application Overview, click _Settings & information_ in the right sidebar and then the *Information* tab. Then copy the URL provided in the _Redeployment hook_ field.  
 
 Next, visit your Bitbucket repository, click _Settings_ in the left sidebar, and then _Hooks_ in the settings menu that appears. In the _Select a hook_ field, select a _POST_ hook, click _Add hook_ and paste your redeployment hook URL into the field provided. Click _Save_ to confirm.
 

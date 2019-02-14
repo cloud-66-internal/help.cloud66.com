@@ -1,6 +1,6 @@
 ## About backup management
 
-The following commands help you manage your backups, such as listing, downloading and initiating backups on your stacks.
+The following commands help you manage your backups, such as listing, downloading and initiating backups on your applications (stacks).
 
 #### Note
 <div class="notice">
@@ -11,8 +11,7 @@ The following commands help you manage your backups, such as listing, downloadin
 ## List your backups
 
 This will list all the 
-managed backups
- of a application grouped by their database type and/or backup schedule.
+managed backups of an application grouped by their database type and/or backup schedule.
 
 
 ### Usage

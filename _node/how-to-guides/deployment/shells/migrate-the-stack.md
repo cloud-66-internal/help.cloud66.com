@@ -9,4 +9,4 @@ tags: ["high-availability"]
 
 permalink: /:collection/:path
 ---
-{% include how-to-guides/deployment/migrate-the-stack.md %}
+{% include how-to-guides/deployment/migrate-the-application.md %}

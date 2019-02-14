@@ -5,7 +5,7 @@ When you deploy your application, Cloud 66 pushes the latest code available in y
 
 - **Build**
 
-The Cloud 66 build step occurs the first time you create a application - this is when your servers are created and software is compiled.
+The Cloud 66 build step occurs the first time you create an application - this is when your servers are created and software is compiled.
 
 - **Application (Stack)**
 
@@ -13,4 +13,4 @@ A web application application is a set of hardware and software components neede
 
 - **Provision**
 
-When you build a application with Cloud 66, we will provision servers in your cloud vendor account. This is synonymous with creating the servers.
+When you build an application with Cloud 66, we will provision servers in your cloud vendor account. This is synonymous with creating the servers.

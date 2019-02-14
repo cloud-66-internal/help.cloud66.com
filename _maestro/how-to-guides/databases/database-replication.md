@@ -70,7 +70,7 @@ The process of enabling database replication varies slightly for a single applic
 
 To enable replication for a single application, you need to scale up to create a slave: 
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on the *Servers* tab 
 3. Click the green **+** next to the database you want to replicate. This will allow you to choose your new server size. Your new server should be comparable to your master server.
 
@@ -81,7 +81,7 @@ To enable replication for a single application, you need to scale up to create a
 
 To enable replication between applications, ensure that you have a secondary application deployed, and that its database server contains at least twice as much disk space as the size of your database backup. Then:
 
-1. Open the application overview page for the primary application from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview for the primary application from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on the *Servers* tab 
 3. Click on the name of the database server
 4. Click _Configure data replication_ in the right sidebar, and select a source application. 
@@ -89,7 +89,7 @@ To enable replication between applications, ensure that you have a secondary app
 
 ## Disable database replication
 
-To disable replication between applications, visit your application overview page, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select _Disable replication_. Confirm to commence the replication process.
+To disable replication between applications, visit your Application Overview, click on the database server group (eg. _PostgreSQL server_) click into your main database server page. Next, click _Configure data replication_ in the right sidebar, and select _Disable replication_. Confirm to commence the replication process.
 
 ## Re-synchronizing slave with master
 

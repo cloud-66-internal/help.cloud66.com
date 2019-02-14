@@ -38,7 +38,7 @@ Once the new application is created, you can migrate data from your old applicat
 {% if page.collection == 'rails' %}
 ## Control your Rails database migrations
 
-Cloud 66 chooses a server to perform the migrations - all other servers will wait until the migrations are finished before continuing with deployment. You can see which server performs the migrations in the Application Overview page, and change it using the `c66.migrations.run` [reserved tag](/rails/references/reserved-tags.html).
+Cloud 66 chooses a server to perform the migrations - all other servers will wait until the migrations are finished before continuing with deployment. You can see which server performs the migrations in the Application Overview, and change it using the `c66.migrations.run` [reserved tag](/rails/references/reserved-tags.html).
 
 You can control your Rails database migrations by setting the `run.deploy.command` option through application settings via 
 [Toolbelt](/rails/quickstarts/using-cloud66-toolbelt.html) which gives you the option of running migrations or not.

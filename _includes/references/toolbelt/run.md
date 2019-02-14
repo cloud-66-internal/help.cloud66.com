@@ -24,7 +24,7 @@ At least one of the optional server parameters are necessary in order to identif
 |server name (optional) 	   | 	—		| Name of the server to access |
 |server ip (optional)	 	   |	—	| IP of the server to access |
 |server role (optional)	 	   |	—	| Role of the server to access (e.g. web) |
-|service (optional)	 	   |	—	| The service in which to run the command (Docker stacks only) |
+|service (optional)	 	   |	—	| The service in which to run the command (Docker applications only) |
 {:.table}
 
 
@@ -34,7 +34,7 @@ At least one of the optional server parameters are necessary in order to identif
 $ cx run -s "My Awesome App" --server web1 'pwd'
 ```
 
-The service parameter applies to Docker stacks and allows you to enter a Docker container with your command (based on the latest image of that service). Some examples are:
+The service parameter applies to Docker applications and allows you to enter a Docker container with your command (based on the latest image of that service). Some examples are:
 
 ```
 $ cx run -s My_Awesome_App --server web1 --service my_api_service '/bin/bash'

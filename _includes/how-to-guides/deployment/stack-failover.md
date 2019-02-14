@@ -5,7 +5,7 @@ As with any migration, you will need to deal with moving your code, data and tra
 
 ### 1. Code
 
-[Clone your existing application](/{{page.collection}}/the-basics/stack-definition.html) to a different cloud vendor or data center, and set it into [maintenance mode]({% if page.collection == "maestro" %}/maestro/how-to-guides/deployment/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}) to prevent it from serving content. We highly recommend that you build a application with similar server specifications to your main application to avoid issues during a switch. 
+[Clone your existing application](/{{page.collection}}/the-basics/stack-definition.html) to a different cloud vendor or data center, and set it into [maintenance mode]({% if page.collection == "maestro" %}/maestro/how-to-guides/deployment/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}) to prevent it from serving content. We highly recommend that you build an application with similar server specifications to your main application to avoid issues during a switch. 
 
 
 ### 2. Data
@@ -15,7 +15,7 @@ Enable [database replication between your stacks](/rails/how-to-guides/databases
 
 ### 3. Traffic
 
-Use [Failover Groups]({% if page.collection == "maestro" %}/maestro/tutorials/failover-groups.html{% else %}/{{page.collection}}/tutorials/failover-groups.html{% endif %}) to make it easy for you to switch between stacks. By pointing your domain at the Failover address, you will be able to switch your traffic between stacks at the click of a button.
+Use [Failover Groups]({% if page.collection == "maestro" %}/maestro/tutorials/failover-groups.html{% else %}/{{page.collection}}/tutorials/failover-groups.html{% endif %}) to make it easy for you to switch between applications. By pointing your domain at the Failover address, you will be able to switch your traffic between stacks at the click of a button.
 
 
 ## How to use the failover application

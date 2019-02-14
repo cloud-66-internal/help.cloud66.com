@@ -14,7 +14,7 @@ We do not store any payment information like credit card details on our servers.
 
 All customer sensitive data including API keys, SSH keys and passwords are encrypted with a multi-network setup for the decryption mechanism.
 
-We take a wide range of other measures to improve [application security]({% if page.collection == "maestro" or page.collection == "skycap" %}/maestro/how-to-guides/deployment/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}) and help them improve their security by upgrading their stacks. 
+We take a wide range of other measures to improve [application security]({% if page.collection == "maestro" or page.collection == "skycap" %}/maestro/how-to-guides/deployment/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}) and help them improve their security by upgrading their applications. 
 
 Cloud 66 connects to users' servers from a set of authorized IP addresses:
 

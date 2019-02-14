@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Manage your stacks from Slack with ChatOps
+title: Manage your applications from Slack with ChatOps
 categories: how-to-guides/deployment
 lead: ""
 legacy: false

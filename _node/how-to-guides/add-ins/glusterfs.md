@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "How to use the GlusterFS Add-in"
 categories: how-to-guides/add-ins
-lead: Add GlusterFS to your stack with ease
+lead: Add GlusterFS to your application with ease
 tags: ['Add in']
 legacy: false
 permalink: /:collection/:path

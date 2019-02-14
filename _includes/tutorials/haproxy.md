@@ -3,7 +3,7 @@
 HAProxy CustomConfig allows you to configure your load balancer through the comfort of your browser. In addition to the settings described below, you could also refer to the [HAProxy documentation](http://haproxy.1wt.eu/download/1.3/doc/haproxy-en.txt) for more information about configurations.
 
 ## View HAProxy stats
-While on your application detail page, click on the load balancer add-in to login to your HAProxy stats page. Once logged in, you will see a variety of statistics for your load balancer, and any potential issues.
+While on your Application Overview, click on the load balancer add-in to login to your HAProxy stats page. Once logged in, you will see a variety of statistics for your load balancer, and any potential issues.
 
 ## Configure HAProxy to use internal IPs
 By default, HAProxy is configured to use the external IP address of your servers, but it can be changed to use the internal addresses if you have private networking enabled.
@@ -116,7 +116,7 @@ This process will be stopped if an error is encountered.
 </div>
 
 ## Configuring HAProxy for maintenance mode
-For <strong>Docker stacks</strong> you can set your HAproxy to show a maintenance page when it cannot connect to the container.
+For <strong>Docker applications</strong> you can set your HAproxy to show a maintenance page when it cannot connect to the container.
 
 <ul class="list">
   <li>Create custom maintenance page</li>

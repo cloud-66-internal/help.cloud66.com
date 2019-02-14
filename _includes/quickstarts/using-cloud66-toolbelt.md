@@ -38,7 +38,7 @@ One of the most useful features of Toolbelt is the ability to quickly and easily
 To connect to a server for any application: 
 
 1. Install Toolbelt 
-2. Visit the appropriate **application overview** page via the [Dashboard](https://app.cloud66.com/dashboard)
+2. Visit the appropriate **Application Overview** via the [Dashboard](https://app.cloud66.com/dashboard)
 3. Click on the *Servers* tab at the top of the page
 4. Click on the name of the server in question
 5. Copy the *Connect with toolbelt* command in the yellow box on the right of the server detail screen

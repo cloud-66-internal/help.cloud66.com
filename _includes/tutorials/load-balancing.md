@@ -9,7 +9,7 @@ Cloud 66 for Rails supports and integrates *native* cloud load balancers - in ot
 
 To add a load balancer to your application: 
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click the *Explore Add-ins* link in the **Add-Ins** panel (or the green **+** if you have existing add-ins)
 3. Find the **Load Balancer** block and click *Install Now*
 4. Follow the instructions on the panel that pops up (it will differ depending on your cloud provider) and then click *Add Load Balancer*

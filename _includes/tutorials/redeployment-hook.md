@@ -1,19 +1,19 @@
 
 ## About redeployment hooks
 
-Redeployment hooks allow you to achieve continuous deployment by deploying your application when you push a change to your Git repository or have a CI push success. Redeployment hooks differ slightly for Rails/Rack and Docker Stacks see sections below.
+Redeployment hooks allow you to achieve continuous deployment by deploying your application when you push a change to your Git repository or have a CI push success. Redeployment hooks differ slightly for Rails/Rack and Docker applications see sections below.
 
 
 
 ### Where to find your redeployment hook?
 
-Your redeployment hook URL is automatically generated for each of your stacks. You can found your unique redeployment hook URL on your application information page (available via the **application information** link on the main application page's right hand navigation menu)
+Your redeployment hook URL is automatically generated for each of your applications. You can found your unique redeployment hook URL on your Application Information page (available via the **Settings & Information** link on the main Application Overview's right hand navigation menu)
 
 
 {% if include.product == 'legacy_docker' or include.product == 'maestro' or include.product == 'skycap' %}
-### For Docker Stacks
+### For Docker applications
 
-Docker Stacks can have multiple services which can rely on a combination of either Image or Git sources. Furthermore, the Git sources can be the same or different branches, or even completely different repositories. To handle this, we have introduced and addition _services modifier_ that can be appended to the redeployment hook to specify which services to redeploy (the _services modifier_ is a querystring parameter).
+Docker applications can have multiple services which can rely on a combination of either Image or Git sources. Furthermore, the Git sources can be the same or different branches, or even completely different repositories. To handle this, we have introduced and addition _services modifier_ that can be appended to the redeployment hook to specify which services to redeploy (the _services modifier_ is a querystring parameter).
 
 {% endif %}
 
@@ -23,7 +23,7 @@ When a redeployment hook is invoked:
 2.    If the commit hook payload does not include Git information, then we will automatically redeploy _all_ services defined on your application.
 3.    If you use the **services** modifier to specify which specific services you want to deploy when the commit hook is invoked, then the same logic applies as in 1) and 2) above, the only difference being that we will always deploy the services you have specified if deployment will occur.
 
-Some examples below will illustrate how to add a **services modifier**. Note that the xxxx/yyyy in the examples is for illustrative purposes only and should be replaced with your redeployment URL on your application information page.
+Some examples below will illustrate how to add a **services modifier**. Note that the xxxx/yyyy in the examples is for illustrative purposes only and should be replaced with your redeployment URL on your Application Information page.
 An example redeployment hook **without a services modifier:**
 
 ```
@@ -45,9 +45,9 @@ https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy?services=web,app
 
 {% if include.product == 'Rails' %}
 
-### For Rails/Rack Stacks
+### For Rails/Rack applications
 
-All Rails/Rack Stacks are based on a Git repository and branch. Pushing code to the same branch as your application Git branch will invoke your application redeployment. If you push code to another branch, nothing will happen - this allows you to push code to your development branch without an automatic redeploy on your production application for example. If it is available in the payload, the Git Ref of the latest commit will be used for the application redeployment.
+All Rails/Rack stacks are based on a Git repository and branch. Pushing code to the same branch as your application Git branch will invoke your application redeployment. If you push code to another branch, nothing will happen - this allows you to push code to your development branch without an automatic redeploy on your production application for example. If it is available in the payload, the Git Ref of the latest commit will be used for the application redeployment.
 
 {% endif %}
 
@@ -78,14 +78,14 @@ The process of adding the hook differs by your Git host, so we will guide you th
 
 ### GitHub Setup
 
-On your application detail page, click _Stack information_ in the right sidebar and copy the URL provided in the _Redeployment hook_ field. Next, visit your GitHub repository, click _Settings_ in the right sidebar, and then _Webhooks & Services_ in the left sidebar.
+On your Application Overview, click _Settings & Information_ in the right-hand panel, then click the *Information* tab and copy the URL provided in the _Redeployment hook_ field. Next, visit your GitHub repository, click _Settings_ in the right sidebar, and then _Webhooks & Services_ in the left sidebar.
 
 In the _Webhooks_ window, click _Add webhook_ and paste the redeployment hook URL into the _Payload URL_ field. When you confirm by clicking _Add webhook_, GitHub will automatically test your hook with a _Ping_ and you should get a green HTTP200 response.
 
 
 ### Bitbucket Setup
 
-On your application detail page, click _Stack information_ in the right sidebar and copy the URL provided in the _Redeployment hook_ field. Next, visit your Bitbucket repository, click _Settings_ in the left sidebar, and then _Hooks_ in the settings menu that appears. In the _Select a hook_ field, select a _POST_ hook, click _Add hook_ and paste your redeployment hook URL into the field provided. Click _Save_ to confirm.
+On your Application Overview, click _Settings & Information_ in the right-hand panel, then click the *Information* tab and copy the URL provided in the _Redeployment hook_ field. Next, visit your Bitbucket repository, click _Settings_ in the left sidebar, and then _Hooks_ in the settings menu that appears. In the _Select a hook_ field, select a _POST_ hook, click _Add hook_ and paste your redeployment hook URL into the field provided. Click _Save_ to confirm.
 
 
 ### Generic Setup
@@ -107,4 +107,4 @@ curl -X POST [your redeployment hook URL]
 
 ### Note
 
-If you are manually invoking redeployments you should consider using the [Cloud 66 CommandLine Tool]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#redeploy-your-stack) instead, as it has additional features!
+If you are manually invoking redeployments you should consider using [Cloud 66 Toolbelt]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#redeploy-your-stack) instead, as it has additional features!

@@ -2,7 +2,7 @@
 
 ## Overview
 
-To add a job, simply click on the _+_ button on the add-ins menu of your application page.
+To add a job, simply click on the _+_ button on the add-ins menu of your Application Overview.
 Your run results (success, failure and any output) can be seen in real-time on the job detail page.
 
 ## Run a job

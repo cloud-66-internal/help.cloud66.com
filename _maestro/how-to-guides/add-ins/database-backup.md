@@ -107,7 +107,7 @@ The plugin also offers a bash script that can be used to automatically download 
 
 To do so:
 
-1. Open your **application overview** page in the Dashboard
+1. Open your **Application Overview** in the Dashboard
 2. Click the on the database backup add-in. 
 3. Click on the cloud icon next to the backup you want to download
 4. Click on *Copy script to clipboard* 
@@ -119,7 +119,7 @@ By running the download script, your backup will be downloaded (and concatenated
 
 You can also manually download backup files.
 
-1. Open your **application overview** page in the Dashboard
+1. Open your **Application Overview** in the Dashboard
 2. Click the on the database backup add-in. 
 3. Click on the cloud icon next to the backup you want to download
 4. Click on the *more* link next to *Download each backup file manually*

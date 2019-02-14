@@ -13,8 +13,8 @@ Once there, click _Create a new user_, and fill in the necessary details for thi
 
 Once you click Create user, you will be able to view the API Key by clicking *Show*.
 
-### Add Rackspace key to a application
-Visit the Cloud 66 Dashboard and select _Get started building a stack_. After connecting to your Git repository and analyzing your code, you will be asked to _Add your cloud platform_. From this menu, select Rackspace and provide your API key. 
+### Add Rackspace key to an application
+Visit the Cloud 66 Dashboard and select _Get started building an application_. After connecting to your Git repository and analyzing your code, you will be asked to _Add your cloud platform_. From this menu, select Rackspace and provide your API key. 
 
 #### Note
 <div class="notice notice-warning"><p>

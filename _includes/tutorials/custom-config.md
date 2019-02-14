@@ -30,7 +30,7 @@ See our documentation for more details about CustomConfig for [Nginx]({% if page
 
 When you are happy with the results, enter a commit message and press the Commit to Server button. This will compile the configuration with real data and push it to all applicable servers in your application. It also performs any post commit steps necessary like reloading Nginx with the new configuration file, putting your changes into effect.
 
-This process takes place in the background and might take some time to complete depending on the number of servers in a application and the nature of the configuration. Also, during the process cloud66 will update contents of [Custom git repository](/{{page.collection}}/tutorials/custom-config-git.html) so after fetching the latest version you can see the history of configuration changes in your own git client tool
+This process takes place in the background and might take some time to complete depending on the number of servers in an application and the nature of the configuration. Also, during the process cloud66 will update contents of [Custom git repository](/{{page.collection}}/tutorials/custom-config-git.html) so after fetching the latest version you can see the history of configuration changes in your own git client tool
 
 You can subsequently see the history of your configuration changes with simple colored diff views alongside dates and comments.
 

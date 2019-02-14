@@ -95,8 +95,8 @@ $ cx stacks configure list [-s <stack>]
 |-:|
 |list 					   	|List of all versions of a configuration file|
 |download 	 			   	| Download a configuration file |
-|uplaod	  				   	| Upload a new version of configuration file |
-|stack (optional) 	   	   	| 	Name of your application, this can be omitted if the current directory is a application directory |
+|upload	  				   	| Upload a new version of configuration file |
+|stack (optional) 	   	   	| 	Name of your application, this can be omitted if the current directory is an application directory |
 |f (file) (optional)	   	| File name, accepted values are service.yml and manifest.yml |
 |e (environment) (optional) | 	Full or partial environment name |
 {:.table}

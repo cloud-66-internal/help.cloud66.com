@@ -25,7 +25,7 @@ This timeline includes information about:
 
 The timeline is available for any Maestro application that has been deployed at least once.
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Build & Deploy*  in the **Application** panel on the right of the screen.
 3. Scroll through the history (it's in descending date order)
 

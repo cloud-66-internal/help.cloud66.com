@@ -32,7 +32,7 @@ Imagine you need to SSH directly into your servers from an external IP address, 
 
 By default, the firewall will block any attempts to SSH from a foreign IP address. You can test this by copying the IP address of your server and trying to SSH into it using your desktop terminal. It will simply time out.
 
-(To find the IP of a server, visit the **Application Overview** page, click the *Server* tab and look for the IP next to each server)
+(To find the IP of a server, visit **Application Overview**, click the *Server* tab and look for the IP next to each server)
 
 In this example, we're going to add a rule that allows you to SSH into your server from your own desktop. There is actually a [quicker way to do this temporarily](/maestro/tutorials/firewall-rule.html#enabling-temporary-access) but we will be adding a permanent rule instead. 
 
@@ -40,7 +40,7 @@ Before we start you need to look up your current public IP. You can simply googl
 
 ### Adding and applying the rule
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Network Settings*  in the **Application** panel on the right of the screen
 3. The page will open on the Firewall tab (but note that you can also reach the **Traffic** and **Redirects** pages this way
 4. Click the *Add a new firewall rule* button
@@ -65,7 +65,7 @@ Note that, unless you have set up an authentication key, your login attempt will
 
 ## Removing a custom firewall rule
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Network Settings*  in the **Application** panel on the right of the screen
 3. Click the small red icon next to the rule you want to remove
 4. Click *Apply Rules*
@@ -77,7 +77,7 @@ Remember to give your application a few minutes to apply the new setting(s).
 
 If you need to access your server (via SSH or another protocol), there is a quick way to do this without setting a permanent rule:
 
-1. . Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. . Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Network Settings*  in the **Application** panel on the right of the screen
 3. Click the small plug icon at the top right of the Application Firewall Rules panel
 4. This will automatically fetch your current IP address, but you can also manually enter any IP address

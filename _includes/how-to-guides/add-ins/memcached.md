@@ -22,7 +22,7 @@ production:
 
 #### Note
 <div class="notice notice-danger">
-	<p>For docker stacks this will be added to the host not as a container.</p>
+	<p>For docker applications this will be added to the host not as a container.</p>
 </div>
 {%endif%}
 

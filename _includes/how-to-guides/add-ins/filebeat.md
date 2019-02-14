@@ -18,6 +18,6 @@ If no logs are coming in, make sure that port 5044 is open on your ELK applicati
 
 #### Note
 <div class="notice notice-danger">
-	<p>For Docker stacks this will be added to the host, not as a container.</p>
+	<p>For Docker applications this will be added to the host, not as a container.</p>
 </div>
 {%endif%}

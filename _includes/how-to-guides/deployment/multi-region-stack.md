@@ -12,4 +12,4 @@ These are the possible scenarios:
 
 The biggest challenge in these scenarios is dealing with the data availability across geographical regions without having unacceptable latencies.
 
-Feel free to [contact us](mailto:support@cloud66.com) if you would like more specific advice about multi-region stacks.
+Feel free to [contact us](mailto:support@cloud66.com) if you would like more specific advice about multi-region applications.

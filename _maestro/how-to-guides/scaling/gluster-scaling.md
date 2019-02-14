@@ -14,7 +14,7 @@ permalink: /:collection/:path
 
 You can scale your [GlusterFS clusters](/maestro/how-to-guides/add-ins/glusterfs.html) (up or down) using the Maestro dashboard:
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on the *Servers* tab at the top of the main panel
 3. Find your GlusterFS server(s) and click the green **+** to scale up.
 

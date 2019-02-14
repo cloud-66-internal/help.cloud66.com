@@ -24,7 +24,7 @@ On application `A`set backup for your databases (through add-ins)
 
 ### 4. Clone primary application
 
-Visit the application page of application `A`, click "Clone" from the right sidebar. This will allow you to choose a new application name and environment. Cloning your application will preserve any environment variables from the existing application, and also allows you to define where to deploy to along with other settings.
+Visit the overview page for application `A`, click "Clone" from the right sidebar. This will allow you to choose a new application name and environment. Cloning your application will preserve any environment variables from the existing application, and also allows you to define where to deploy to along with other settings.
 
 
 ### 5. Add your database to backup application
@@ -32,9 +32,9 @@ Visit the application page of application `A`, click "Clone" from the right side
 Add database or all the databases you need on to the application `B`
 
 
-### 6. Set up a replication between two stacks
+### 6. Set up a replication between two applications
 
-On application `B` go on application page/database server (Redis, MySQL or etc.) and choose the server. On the right side bar click on "configure replication" choose application A (you have to be Administrator on application A otherwise it won't be listed). This makes application B databases slave for application `A`.
+On application `B` go to Application Overview &rarr; database server (Redis, MySQL or etc.) and choose the server. On the right side bar click on "configure replication" choose application A (you have to be Administrator on application A otherwise it won't be listed). This makes application B databases slave for application `A`.
 
 
 ### 7. Add the second application to the failover group
@@ -51,7 +51,7 @@ Make sure DNS record for the failover group is populated
 
 ### 8. Put the primary site in to maintenance mode:
 
-- Go to the application overview for `A`
+- Go to the Application Overview for `A`
 - Click on Configure Network / Redirects
 - Check _"Put application in Maintenance Mode"_ box
 - Apply

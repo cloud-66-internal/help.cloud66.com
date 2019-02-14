@@ -3,7 +3,7 @@
 When Cloud 66 deploys your servers, we also configure the logging for various services on your server. There are several logs available for different parts of your server. Depending on the specifics of your application, log names and directories may vary. The information below applies to most applications.
 
 {% if page.collection == 'maestro' or page.collection == 'legacy_docker' %}
-## Docker stacks
+## Docker applications
 Given the ephemeral nature of containers, we recommend you use the `log_folder` directive to persist container logs on your host, so that they don't disappear when the container stops. By default, any folder specified with `log_folder` will be available on the host under `/var/log/containers/<service_name>`, for example:
 
 {% highlight yaml %}

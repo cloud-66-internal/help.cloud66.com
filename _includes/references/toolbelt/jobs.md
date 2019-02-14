@@ -4,7 +4,7 @@ These commands allow you to list jobs and run a job immediately.
 
 ## List jobs
 
-This command lists all jobs on a application or a server.
+This command lists all jobs on an application or a server.
 
 
 ### Usage

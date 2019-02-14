@@ -74,7 +74,7 @@ There are four types of deploy hooks, and the fields available (and required) va
 
 1.  **Snippets:** use pre-existing scripts to install common packages. These snippets are [open source](https://github.com/cloud66/snippets), and are created by Cloud 66 or third parties.
 2. **Commands:** run your own commands.
-3. **Existing Scripts:** use your own existing scripts for more comprehensive procedures (Rails/Node stacks only)
+3. **Existing Scripts:** use your own existing scripts for more comprehensive procedures (Rails/Node applications only)
 4. **Inline Scripts:** use your own inline scripts for more comprehensive procedures
 
  <table class="table table-bordered table-striped table-small">
@@ -111,7 +111,7 @@ There are four types of deploy hooks, and the fields available (and required) va
     </tr>
     <tr>
      <td> apply_during <br> (all) </td>
-     <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+     <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
     </tr>
     <tr>
      <td> env_vars </td>
@@ -173,7 +173,7 @@ If the application already contains this env var it will be overridden with the 
   </tr>
   <tr>
    <td> apply_during <br> (all) </td>
-   <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+   <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
   </tr>
     <tr>
      <td> env_vars </td>
@@ -209,7 +209,7 @@ If the application already contains this env var it will be overridden with the 
 </thead>
 <tbody>
 <tr class="header">
- <td colspan="2"> <strong>HOOK TYPE: Existing Scripts (Rails/Node stacks only)</strong> </td>
+ <td colspan="2"> <strong>HOOK TYPE: Existing Scripts (Rails/Node applications only)</strong> </td>
 </tr>
 <tr>
  <td width="13%"> source <img class="table-img-required" src="http://assets.cloud66.com/help/images/required.gif"> </td>
@@ -243,7 +243,7 @@ If the application already contains this env var it will be overridden with the 
 </tr>
 <tr>
  <td> apply_during <br> (all) </td>
- <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+ <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
 </tr>
 <tr>
  <td> halt_on_error <br> (true) </td>
@@ -316,7 +316,7 @@ If the application already contains this env var it will be overridden with the 
 </tr>
 <tr>
  <td> apply_during <br> (all) </td>
- <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time a application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+ <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
 </tr>
 <tr>
  <td> halt_on_error <br> (true) </td>
