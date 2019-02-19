@@ -19,18 +19,7 @@ We take a wide range of other measures to improve [application security]({% if p
 Cloud 66 connects to users' servers from a set of authorized IP addresses:
 
 ```
-54.84.166.97
-54.86.123.188
-35.199.59.174
-35.188.248.87
-35.194.91.146
-35.199.40.110
-35.199.43.27
-35.199.9.130
-35.188.238.146
-35.199.59.73
-35.230.164.181
-35.194.83.158
+{% include general/public_ips.html %}
 ```
 
 All provisioned servers are configured to only allow SSH (and other secure) connections from these addresses. 

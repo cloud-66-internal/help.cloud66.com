@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Migrating from Heroku to Cloud 66
 categories: quickstarts
-order: 4
+order: 2
 lead: "Move your Rails application from Heroku to your own servers using Cloud 66"
 legacy: false
 tags: ["migration"]
