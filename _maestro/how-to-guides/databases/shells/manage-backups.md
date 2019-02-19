@@ -10,7 +10,7 @@ tags: ["backups, databases"]
 permalink: /:collection/:path
 ---
 
-Maestro gives you tools to [automatically restore your database backups](/maestro/how-to-guides/add-ins/database-backup.html), but you can also manage them yourself. 
+Maestro gives you tools to [automatically restore your database backups](/maestro/how-to-guides/add-ins/database-backups.html), but you can also manage them yourself. 
 
 ## Downloading backups
 

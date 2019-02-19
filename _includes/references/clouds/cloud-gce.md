@@ -28,4 +28,4 @@ If you delete your application from Cloud 66, your servers will not be deleted o
 
 ### External links
 - [GCE regions](https://developers.google.com/compute/docs/zones#available)
-- [GCE pricing](https://cloud.google.com/products/compute-engine/#pricing)
+- [GCE pricing](https://cloud.google.com/compute/pricing)

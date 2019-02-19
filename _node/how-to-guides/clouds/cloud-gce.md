@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Google Compute Engine cloud
+title: Google Compute Engine
 categories: how-to-guides/clouds
 lead: ""
 legacy: false

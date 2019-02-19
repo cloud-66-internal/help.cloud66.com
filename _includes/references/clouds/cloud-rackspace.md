@@ -22,5 +22,5 @@ If you delete your application from Cloud 66, your servers will not be deleted o
 </p></div>
 
 ### External links
-- [Rackspace regions](http://www.rackspace.com/knowledge_center/article/about-regions)
+- [Rackspace regions](https://developer.rackspace.com/regions/)
 - [Rackspace pricing](http://www.rackspace.com/cloud/public-pricing/)

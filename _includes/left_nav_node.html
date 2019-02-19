@@ -16,7 +16,7 @@
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","quickstarts" | sort: "order" %}
 
-            <li><h3><a href="/node/quickstarts">Quickstarts</a></h3></li>
+            <li><h3><a href="/node/quickstarts">Getting started</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
@@ -30,27 +30,27 @@
       <ul class="menu-root">
             {% assign common-tools = include.collection | where:"categories","how-to-guides/common-tools" | sort: "order" %}
 
-            <li><h3><a href="/node/how-to-guides">How-to: Common tools</a></h3></li>
+            <li><h3><a href="/node/how-to-guides/common-tools">How-to: Common tools</a></h3></li>
             {% include left_nav_list.html section=common-tools current=page %}
         </ul>
 
 
         <ul class="menu-root">
             {% assign deployment = include.collection | where:"categories","how-to-guides/deployment" | sort: "order" %}
-            <li><h3><a href="/node/how-to-guides">How-to: Config & Deployment</a></h3></li>
+            <li><h3><a href="/node/how-to-guides/deployment">How-to: Config & Deployment</a></h3></li>
             {% include left_nav_list.html section=deployment current=page %}
         </ul>
 
         <ul class="menu-root">
             {% assign databases = include.collection | where:"categories","how-to-guides/databases" | sort: "order" %}
-            <li><h3><a href="/node/how-to-guides">How-to: Databases</a></h3></li>
+            <li><h3><a href="/node/how-to-guides/databases">How-to: Databases</a></h3></li>
        {% include left_nav_list.html section=databases current=page %}
         </ul>
         
         <ul class="menu-root">
             {% assign security = include.collection | where:"categories","how-to-guides/security" | sort: "order" %}
 
-            <li><h3><a href="/node/how-to-guides">How-to: Security</a></h3></li>
+            <li><h3><a href="/node/how-to-guides/security">How-to: Security</a></h3></li>
             {% include left_nav_list.html section=security current=page %}
         </ul>
 
@@ -63,7 +63,7 @@
 
 	   <ul class="menu-root">
             {% assign add-ins = include.collection | where:"categories","how-to-guides/add-ins" | sort: "order" %}
-            <li><h3><a href="/node/how-to-guides">How-to: Add-ins</a></h3></li>
+            <li><h3><a href="/node/how-to-guides/add-ins">How-to: Add-ins</a></h3></li>
        {% include left_nav_list.html section=add-ins current=page %}
         </ul>
 
@@ -76,7 +76,7 @@
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","references" | sort: "order" %}
-            <li><h3><a href="/node/references">References</a></h3></li>
+            <li><h3><a href="/node/references">Reference guides</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 

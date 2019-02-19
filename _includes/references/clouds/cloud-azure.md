@@ -5,7 +5,10 @@ You can use Cloud 66 to provision and deploy your code to servers in any Azure r
 
 Cloud 66 needs some credentials to authenticate our agent to provision your infrastructure. You need to specify the following credentials:
 
-**Azure Subscription ID, Client ID (= Application Id), Client Secret (= Application key), Tentant ID**
+* Azure Subscription ID
+* Client ID (Microsoft calls this "Application ID")
+* Client Secret (Microsoft calls this "Application key")
+* Tentant ID
 
 You can find those by following the [step by step guide created by Microsoft](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal).
 
@@ -17,15 +20,19 @@ The Azure management certificate is a certificate used to authenticate an agent,
 
 To generate a management certificate you can use OpenSSL:
 
-1. Run the following command in your console:
+* Run the following command in your console:
 
+```
 	$ openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout azure.pem -out azure.pem
-	
-2. Now use the created azure.pem file and run the following command:
+```
 
+* Now use the created azure.pem file and run the following command:
+
+```
 	$ openssl x509 -inform pem -in azure.pem -outform der -out azure.cer
-	
-You will need azure.pem and azure.cer to use Cloud 66 with your Azure account.
+```
+
+You will need `azure.pem` and `azure.cer` to use Cloud 66 with your Azure account.
 
 ### Using your management certificate
 

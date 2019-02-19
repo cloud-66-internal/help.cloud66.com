@@ -10,4 +10,4 @@ tags: ["high-availability"]
 
 permalink: /:collection/:path
 ---
-{% include how-to-guides/deployment/multi-region-stack.md %}
+{% include how-to-guides/deployment/multi-region-application.md %}
