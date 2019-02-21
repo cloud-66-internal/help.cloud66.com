@@ -28,9 +28,24 @@ permalink: /:collection/:path
 
 {% include general/cloud_provider_or_own_server_tabs.html %}
 
-<p>
-    Lets get started &mdash; Log into Cloud 66 website, if you're a new user you'll see four panels on your Apps Dashboard. In the Rails panel click the <strong>Start Trial</strong>.
-</p>
+## Choosing application type
+
+New users will be show the product selection wizard. For Skycap, choose "I have a native Ruby or Node app" and then "Deploy Rails & Rack Frameworks" (*Deploy a Ruby App*). 
+
+<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
+    <div class="Grid-cell">
+        <h4>Step 1</h4>
+        <img src="/assets/product_choice_1.png" alt="Product choice wizard - step 1">
+    </div>
+    <div class="Grid-cell">
+        <h4>Step 2</h4>
+        <img src="/assets/product_choice_3.png" alt="Product choice wizard - step 2">
+    </div>
+</div>
+
+If you're already using Cloud 66 just click *New Application &rarr; Node (Node frameworks)* button on the dashboard.
+
+<img src="/assets/skycap/skycap_new_dropdown_update.png" alt="Start a new Skycap build pipeline" width="200">
 
 <h2 id="Access-your-Git-repository">
     <a href="#Access-your-Git-repository" class="headerlink" title="Access your Git repository"></a>

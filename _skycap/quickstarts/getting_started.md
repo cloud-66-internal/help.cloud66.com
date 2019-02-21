@@ -32,30 +32,46 @@ Build pipelines are composed of all the individual ([containerized](/skycap/the-
 * **Pre-built Container Images** &mdash; These can be hosted in any public image repo like Dockerhub or your own private repo. 
 
 
-## Lets Get Started
+## Choosing application type
 
-New users should click *start trial* for the Skycap product. If you're already using Cloud 66 just click *New Application &rarr; Skycap (Build containers)* button on the dashboard.
+New users will be show the product selection wizard. For Skycap, choose "I have a containerized application" and then "I already have a Kubernetes cluster" (*Try Skycap*). 
 
 <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
     <div class="Grid-cell">
-        <h4>New users</h4>
-        <img src="/assets/skycap/skycap_blankslate.png" alt="Your first Skycap build pipeline">
+        <h4>Step 1</h4>
+        <img src="/assets/product_choice_1.png" alt="Product choice wizard - step 1">
     </div>
     <div class="Grid-cell">
-        <h4>Existing users</h4>
-        <img src="/assets/skycap/skycap_new_dropdown_update.png" alt="Start a new Skycap build pipeline" width="170">
+        <h4>Step 2</h4>
+        <img src="/assets/product_choice_2.png" alt="Product choice wizard - step 2">
     </div>
 </div>
 
+If you're already using Cloud 66 just click *New Application &rarr; Skycap (Deploy to a cluster)* button on the dashboard.
+
+<img src="/assets/skycap/skycap_new_dropdown_update.png" alt="Start a new Skycap build pipeline" width="200">
+
 ## Adding Services
 
-* **Give your application a Name** &mdash; This will be used to label your application throughout the Cloud 66 dashboard.
-          
-* **Adding Services** &mdash; You can add as many services as required by clicking the green *+ Add Service* button at the bottom of the page.
+The first step is to give your application a **name**. This will be used to label your application throughout the Cloud 66 dashboard.
+
+Next, you need to add at least one **service**. To your application. If you're using our demo application, you will need to add a single service called "hello-world" by pulling the code from this [public repo](https://github.com/cloud66-samples/helloworld).
+
+To do this: 
+
+1. Copy the *Clone or download* link from Github 
+2. Paste it into the **Git Repo URL** field
+3. Type *master* into the **branch** field
+4. Click *Go* to fetch and analyze the code
 
 <img src="/assets/skycap/skycap_add_services_ani_update.gif" alt="Adding services to a Skycap build pipeline">
 
-## Specifying the source of your images
+
+You can add as many other services as required by clicking the green *+ Add Service* button at the bottom of the page. You will need to supply a source for each service you add (more info on this [below](#specifying-the-source-of-images)).
+
+Once you have added all your services, click the green *Next* button.
+
+## Specifying the source of images
 
 <img src="/assets/skycap/skycap_service_image.png" alt="Specifying the source of your service" style="float:right; margin-top: 0.25em">
 
@@ -67,9 +83,9 @@ The *Where is your service image?* dropdown provides you with three options to s
     
 * **It's in a Docker image repository** &mdash; Use this to add pre-built images to a project. You can use a service like DockerHub or your own private image repo. If you're using a private repository you'll be prompted to add the necessary login credentials. 
  
-Once you've finished adding your services click the "Create Snapshot" button.
-
 ## Snapshots and building images
+
+After you have added your services you will be taken to your **Application Overview** page. To start the build process you should click the green *Take Snapshot* button at the bottom of the main panel.
 
 A snapshot captures all the components of your application including application images, environment variables and configuration items, in preparation for deployment. 
 
@@ -84,16 +100,12 @@ During the build process you can view the status of each individual build. You c
 
 ## Deploying your application
 
-Once you've built your images, you're ready to deploy your app. There are two ways to do this:
-
-1. Using Maestro - Cloud 66's integrated container management service > [Get started with Maestro](/maestro/quickstarts/getting_started.html).
-
-2. Using your own (existing) Kubernetes cluster > [Get started with Skycap Formations](/skycap/quickstarts/using_formations.html)
+Once you've built your images, you're ready to deploy your application using Skycap's **Formations** feature. To do this, you should follow our guide: [Get started with Skycap Formations](/skycap/quickstarts/using_formations.html)
  
 ## What's next?
 
 Now that you have your first application defined, you can learn how to make that application live:
 
-* *Either* [create your first Formation](/skycap/quickstarts/using_formations.html) and use it to [deploy your application](/skycap/quickstarts/using_formations.html#deploying-it-all-to-your-cluster) to a Minikube cluster
+* [Create your first Formation](/skycap/quickstarts/using_formations.html) and use it to [deploy your application](/skycap/quickstarts/using_formations.html#deploying-it-all-to-your-cluster) to a Minikube cluster
 
-* *Or* get started with [Maestro](/maestro/quickstarts/getting_started.html), Cloud 66's full container management service, to deploy and manage your containers and infrastructure.
+* If you don't already have a cluster, consider using [Maestro](/maestro/quickstarts/getting_started.html), Cloud 66's full container management service, to deploy and manage your containers and infrastructure.
