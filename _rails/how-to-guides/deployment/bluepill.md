@@ -3,11 +3,10 @@ layout: post
 template: one-col
 title: Managing processes with Bluepill
 categories: how-to-guides/deployment
+order: 7
 lead: "Manage background workers in your application"
 legacy: false
 tags: ["code","workers"]
-order: 10
-
 permalink: /:collection/:path
 ---
 

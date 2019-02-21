@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Using your own servers with Cloud 66
 categories: how-to-guides/deployment
-order: 5
+order: 10
 lead: "How to use your own (self-managed) servers with Rails for Cloud 66"
 legacy: false
 tags: ["operations"]

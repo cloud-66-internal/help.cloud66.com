@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Customize your database configuration
 categories: how-to-guides/databases
-order: 2
+order: 7
 lead: "Customize your Database Configuration on Cloud 66 Rails"
 legacy: false
 tags: ["PostgreSQL", "MySQL", "Redis", "MongoDB"]

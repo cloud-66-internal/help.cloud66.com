@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Browser Requirements
 categories: accounts
+order: 7
 lead: ""
 legacy: false
 tags: ["account"]

@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Configuring HAProxy for WebSocket
 categories: how-to-guides/deployment
-order: 90
+order: 19
 lead: "How to set up HAProxy for Websocket in a Cloud 66 Rails application"
 tags: ["high-availability","haproxy"]
 legacy: false

@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Configuring for multi-tenancy
 categories: how-to-guides/deployment
-order: 80
+order: 8
 lead: "Configuring Cloud 66 applications to use a single server"
 legacy: false
 tags: ["customization"]

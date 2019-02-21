@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Partner Integration
 categories: integrations
+order: 5
 lead: ""
 legacy: false
 tags: ["operations"]

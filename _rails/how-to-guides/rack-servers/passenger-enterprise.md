@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title:  "Using Passenger Enterprise"
 categories: how-to-guides/rack-servers
+order: 3
 lead: Cloud 66 supports deploying with Passenger Enterprise
 legacy: false
 tags: ['Web server']

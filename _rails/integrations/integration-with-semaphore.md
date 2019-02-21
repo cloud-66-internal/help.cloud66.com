@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Integration With Semaphore
 categories: integrations
+order: 3
 lead: "How to integrate Cloud 66 for Rails into your Semaphore pipeline"
 legacy: false
 tags: ["operations"]

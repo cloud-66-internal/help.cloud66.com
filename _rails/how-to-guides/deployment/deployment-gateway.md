@@ -4,7 +4,7 @@ template: one-col
 title: Deploying behind a gateway server
 categories: how-to-guides/deployment
 lead: "How to deploy your application to a DMZ"
-order: 100
+order: 14
 legacy: false
 tags: ["security"]
 permalink: /:collection/:path

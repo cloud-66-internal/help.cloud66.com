@@ -4,6 +4,7 @@ template: one-col
 title:  "Using Rack Custom Webserver Health Check"
 legacy: false
 categories: how-to-guides/rack-servers
+order: 5
 lead: Checking health during deployment
 tags: ['web-server']
 permalink: /:collection/:path

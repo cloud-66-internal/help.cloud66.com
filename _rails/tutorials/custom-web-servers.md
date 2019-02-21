@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Using custom Rack servers"
 categories: tutorials
-order: 4
+order: 1
 lead: Run your Rack apps with Passenger, Puma, Unicorn or Thin
 legacy: false
 tags: ['Web server, Rack server']

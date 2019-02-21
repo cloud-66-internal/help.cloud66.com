@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Configuring your DNS
 categories: tutorials
-order: 5
+order: 9
 lead: "How to configure your DNS with Rails for Cloud 66"
 legacy: false
 tags: ["customization"]

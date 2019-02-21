@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title:  "Using Puma rack server"
 categories: how-to-guides/rack-servers
+order: 1
 lead: Run your Rack apps with Puma
 tags: ['Web server']
 legacy: false

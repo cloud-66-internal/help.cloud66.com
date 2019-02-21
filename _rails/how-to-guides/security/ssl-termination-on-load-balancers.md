@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Enabling SSL termination on load balancers
 categories: how-to-guides/security
-order: 3
+order: 6
 lead: "How to enable automatic SSL termination on load balancers in Cloud 66 for Rails"
 legacy: false
 tags: ["ssl"]

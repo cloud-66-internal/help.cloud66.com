@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Seeding your database
 categories: how-to-guides/databases
-order: 30
+order: 14
 lead: "How to add seed data to your database(s)"
 tags: ["customization"]
 legacy: false

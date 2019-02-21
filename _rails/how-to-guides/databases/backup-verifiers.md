@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Using backup verifiers
 categories: how-to-guides/databases
-order: 20
+order: 4
 lead: "How to verify your database backups"
 legacy: false
 tags: ["databases"]

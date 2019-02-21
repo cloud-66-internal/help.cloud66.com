@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Application Environments
 categories: references
-order: 5
+order: 4
 lead: "Understanding different application environments"
 legacy: false
 tags: ["Environments"]

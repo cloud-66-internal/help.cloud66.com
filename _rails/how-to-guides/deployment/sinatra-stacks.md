@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Managing a Sinatran application"
 categories: how-to-guides/deployment
-order: 24
+order: 18
 lead: How to deploy and manage Sinatra apps with Cloud 66
 tags: ['operations']
 legacy: false
