@@ -10,7 +10,7 @@ tags: ["billing"]
 permalink: /:collection/:path
 ---
 
-## Understanding Build Minutes
+## What are Build Minutes?
 
 BuildGrid is Skycap’s integrated Docker image builder. Whenever you build images from source code (for example by taking a new Snapshot), or retag existing images, you make use of a metered resource called **Build Minutes**.
 

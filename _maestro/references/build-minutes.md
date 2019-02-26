@@ -10,7 +10,7 @@ tags: ["billing"]
 permalink: /:collection/:path
 ---
 
-## Understanding Build Minutes
+## What are Build Minutes?
 
 BuildGrid is Maestro’s integrated Docker image builder. Whenever you build images from source code you make use of a metered resource called **Build Minutes**.
 
