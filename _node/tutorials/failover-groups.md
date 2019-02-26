@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: What is a failover group?
+title: Adding a failover group
 categories: tutorials
-lead: ""
+lead: "How to add a failover group to your application"
 legacy: false
 tags: ["High-availability"]
 permalink: /:collection/:path

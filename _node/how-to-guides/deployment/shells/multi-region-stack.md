@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: How to handle Multi Region Stacks
+title: Configuring multi-region applications
 categories: how-to-guides/deployment
 lead: ""
 legacy: false

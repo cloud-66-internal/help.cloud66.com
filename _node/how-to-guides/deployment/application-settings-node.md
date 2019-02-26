@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Specific settings for your Node.js application
+title: Customizing your Node.js configuration
 categories: how-to-guides/deployment
 lead: ""
 legacy: false

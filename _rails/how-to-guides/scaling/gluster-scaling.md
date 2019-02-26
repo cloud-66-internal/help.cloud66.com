@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Scaling your GlusterFS cluster
+title: Scaling GlusterFS clusters
 categories: how-to-guides/scaling
 order: 10
 lead: "How to scale  your GlusterFS cluster through Cloud 66"

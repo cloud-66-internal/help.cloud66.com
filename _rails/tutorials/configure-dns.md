@@ -4,7 +4,7 @@ template: one-col
 title: Configuring your DNS
 categories: tutorials
 order: 9
-lead: "How to configure your DNS with Rails for Cloud 66"
+lead: "How to configure your DNS with Cloud 66 for Rails"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path

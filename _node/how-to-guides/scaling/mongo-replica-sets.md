@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Scaling your MongoDB servers with replica sets
+title: Scaling MongoDB with replica sets
 categories: how-to-guides/scaling
 lead: ""
 legacy: false

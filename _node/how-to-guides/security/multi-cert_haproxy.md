@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Configuring Multi Certificate for HAProxy
+title: Multi-certificate SSL for HAProxy
 categories: how-to-guides/security
 lead: ""
 legacy: false

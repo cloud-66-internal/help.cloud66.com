@@ -1,8 +1,8 @@
 ---
 layout: post
 template: one-col
-title: Optimizing for server load
-categories: how-to-guides/deployment
+title: Load testing
+categories: how-to-guides/scaling
 lead: ""
 legacy: false
 tags: ["customization"]

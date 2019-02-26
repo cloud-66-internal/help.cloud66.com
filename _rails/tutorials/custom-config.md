@@ -4,7 +4,7 @@ template: one-col
 title: Using CustomConfig
 categories: tutorials
 order: 6
-lead: "How to use CustomConfig to manage your configuration files"
+lead: "How to use CustomConfig to manage the configuration files for application components"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path

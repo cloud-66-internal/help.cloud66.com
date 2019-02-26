@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Replacing SQLite with MySQL or PostgreSQL
+title: Replacing SQLite
 categories: how-to-guides/databases
 lead: ""
 tags: ["postgresql","sqlite","mysql"]

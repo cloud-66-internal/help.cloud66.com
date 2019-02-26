@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "How to use the GlusterFS Add-in"
+title:  "Using the GlusterFS Add-in"
 categories: how-to-guides/add-ins
 lead: Add GlusterFS to your application with ease
 tags: ['Add in']

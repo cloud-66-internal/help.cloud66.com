@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: How to configure Nginx
+title: Nginx options and variables
 categories: references
 lead: "Nginx within the stack"
 legacy: false

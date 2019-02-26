@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: What are deploy hooks?
+title: Adding a deploy hook
 categories: tutorials
-lead: ""
+lead: "How to add a deploy hook to an application to customize your deployment process"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path

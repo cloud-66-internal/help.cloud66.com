@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Scale your Node.js application
+title: Scaling Node.js
 categories: how-to-guides/deployment
+order: 1
 lead: ""
 legacy: false
 tags: ["operations"]

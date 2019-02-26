@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Cloud 66 support for registered servers
+title: Using your own servers with Cloud 66
 categories: how-to-guides/deployment
 lead: ""
 legacy: false

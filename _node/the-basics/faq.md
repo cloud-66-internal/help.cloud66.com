@@ -2,7 +2,8 @@
 layout: post
 template: one-col
 title: FAQs
-categories: resources
+categories: the-basics
+order: 3
 lead: ""
 legacy: false
 

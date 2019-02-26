@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Deploying Your First Node App
 categories: quickstarts
+order: 1
 lead: "Deploy your first Node app to any cloud"
 legacy: false
 tags: ["getting started"]

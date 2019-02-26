@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Manage your applications from Slack with ChatOps
-categories: how-to-guides/deployment
-lead: ""
+title: Manage your applications via Slack
+categories: how-to-guides/common-tools
+lead: "How to use Cloud 66 ChatOps to manage applications via Slack"
 legacy: false
 tags: ["operations"]
 

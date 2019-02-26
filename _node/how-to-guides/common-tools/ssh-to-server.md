@@ -1,8 +1,8 @@
 ---
 layout: post
 template: one-col
-title:  "How to SSH to your Server"
-categories: how-to-guides/deployment
+title:  "How to SSH to your servers"
+categories: how-to-guides/common-tools
 legacy: false
 lead: Connect directly to your servers for full control 
 tags: ['SSH', 'shell']

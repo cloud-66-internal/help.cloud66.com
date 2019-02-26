@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Managing a Sinatran application"
+title:  "Managing a Sinatra application"
 categories: how-to-guides/deployment
 order: 18
 lead: How to deploy and manage Sinatra apps with Cloud 66

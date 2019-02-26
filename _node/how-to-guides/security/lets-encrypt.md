@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: How to use Let's Encrypt
+title: Configuring Let's Encrypt
 categories: how-to-guides/security
 lead: ""
 legacy: false

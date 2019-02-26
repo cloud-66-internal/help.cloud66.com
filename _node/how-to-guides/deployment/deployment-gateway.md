@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: How to deploy behind a gateway server
+title: Deploying behind a gateway server 
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to deploy your application to a DMZ"
 legacy: false
 tags: ["security"]
 permalink: /:collection/:path

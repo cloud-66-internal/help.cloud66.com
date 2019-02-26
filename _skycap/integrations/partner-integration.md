@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Partner Integration
+title: Partner integration
 categories: integrations
 lead: ""
 legacy: false

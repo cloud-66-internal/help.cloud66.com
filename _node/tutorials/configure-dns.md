@@ -1,14 +1,13 @@
 ---
 layout: post
 template: one-col
-title: Configure your DNS
+title: Configuring your DNS
 categories: tutorials
-lead: ""
+lead: "How to configure your DNS with Cloud 66 for Node"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path
 ---
-
 
 
 ## About configuring your DNS

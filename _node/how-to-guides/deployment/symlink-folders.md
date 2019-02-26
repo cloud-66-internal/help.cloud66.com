@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Create symbolic links in Ubuntu
+title: Using symbolic links
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to use Ubuntu symbolic links with Cloud 66"
 legacy: false
 tags: ["customization"]
 

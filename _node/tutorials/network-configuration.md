@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Network security & redirect settings"
 legacy: false
-categories: tutorials
+categories: references
 lead: Configure settings for firewall, access control and redirection
 tags: ['network']
 permalink: /:collection/:path

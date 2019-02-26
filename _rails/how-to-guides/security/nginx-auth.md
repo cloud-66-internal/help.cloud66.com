@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Enabling basic authorization via Nginx
+title: Enabling basic authentication via Nginx
 categories: how-to-guides/security
 order: 5
 lead: "How to enable Nginx's basic HTTP authentication"

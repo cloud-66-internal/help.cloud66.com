@@ -1,14 +1,13 @@
 ---
 layout: post
 template: one-col
-title: Multi Tenancy for Stacks
+title: Configuring for multi-tenancy
 categories: how-to-guides/deployment
 lead: ""
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path
 ---
-
 
 
 ## Overview

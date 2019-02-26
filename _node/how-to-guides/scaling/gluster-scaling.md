@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Scaling your GlusterFS cluster
+title: Scaling GlusterFS clusters
 categories: how-to-guides/scaling
 lead: ""
 legacy: false

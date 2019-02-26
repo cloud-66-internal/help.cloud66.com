@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: How to use Toolbelt SSH
+title: Debugging Toolbelt SSH access
 categories: how-to-guides/common-tools
-lead: ""
+lead: "How to troubleshoot issues with Toolbelt SSH access"
 legacy: false
 permalink: /:collection/:path
 tags: ["debugging"]

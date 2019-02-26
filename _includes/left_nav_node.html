@@ -60,6 +60,12 @@
        {% include left_nav_list.html section=clouds current=page %}
         </ul>
 
+	   <ul class="menu-root">
+            {% assign add-ins = include.collection | where:"categories","how-to-guides/scaling" | sort: "order" %}
+            <li><h3><a href="/node/how-to-guides/scaling">How-to: Scaling</a></h3></li>
+       {% include left_nav_list.html section=add-ins current=page %}
+        </ul>
+
 
 	   <ul class="menu-root">
             {% assign add-ins = include.collection | where:"categories","how-to-guides/add-ins" | sort: "order" %}
@@ -80,6 +86,11 @@
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
+      <ul class="menu-root">
+            {% assign section = include.collection | where:"categories","accounts" | sort: "order" %}
+            <li><h3><a href="/node/account">Account management</a></h3></li>
+            {% include left_nav_list.html section=section current=page %}
+        </ul>
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","resources" | sort: "order" %}
