@@ -1,17 +1,17 @@
 ## About backup management
 
-The following commands help you manage your backups, such as listing, downloading and initiating backups on your stacks.
+The following commands help you manage your backups, such as listing, downloading and initiating backups on your applications (stacks).
 
+#### Note
 <div class="notice">
-  <h3>Note:</h3><p>This only applies to managed backups and not the unmanaged ones.</p>
+<p>This only applies to managed backups and not the unmanaged ones.</p>
 </div>
 
 
 ## List your backups
 
 This will list all the 
-managed backups
- of a stack grouped by their database type and/or backup schedule.
+managed backups of an application grouped by their database type and/or backup schedule.
 
 
 ### Usage
@@ -28,10 +28,10 @@ $ cx backups list [-s <stack>] [-l] [<db type>]
 
 |		Parameter 	 |   Description    |
 |-:|
-| stack 			 	|Name of your stack|
-| db type (optional)|The type of DB you'd like to list backups for (eg. mysql)|
+| application 			 	|Name of your application|
+| db type (optional)|The type of DB you'd like to list backups for (e.g. mysql)|
 | l (optional) 	  	|Returns the latest successful backup|
-| e (optional) 		|Your stack environment|
+| e (optional) 		|Your application environment|
 {:.table}
 
 
@@ -64,7 +64,7 @@ $ cx backups download [-s <stack>] [-d <download directory>] <backup id>
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| -:|
-|stack 					   |	—			|Name of your stack|
+|stack 					   |	—			|Name of your application|
 |dbtypes (optional) 	   | 	all			|Comma separated list of Database types which need backup tasks|
 |frequency (optional) 	   |	0 */1 * * *	|Frequency of backup task in cron schedule format|
 |keep (optional) 		   |	100			|Number of previous backups to keep|

@@ -23,7 +23,7 @@ If your application does not use HTTP traffic you can map ports by specifying th
 Let's imagine we have a service that listens on port 5454 on UDP and we would like to make it available to the outside world on port 111. 
 
 To achieve this via the *edit service* interface: 
-1. Open the application overview page from your Dashboard
+1. Open the Application Overview from your Dashboard
 2. Click on the *Edit service* icon on the right-hand side of the *App Services* panel
 3. On the **Edit Services** page, click the green *Save changes* button (you don't need to make any changes first)
 4. On the **Edit port settings** page click the small planet icon to the left of the yellow *Configure service networking* panel

@@ -4,7 +4,7 @@ These commands allow you to list jobs and run a job immediately.
 
 ## List jobs
 
-This command lists all jobs on a stack or a server.
+This command lists all jobs on an application or a server.
 
 
 ### Usage
@@ -18,7 +18,7 @@ $ cx jobs list [-s <stack>] --server <server name>|<server ip>|<server role> --s
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| -:|
-|stack 					   |		—		|Name of the stack | 
+|stack 					   |		—		|Name of the application | 
 |server name 	 		   | 	—		    | Name of the job to run|
 |arg (optional)	 		   |	—			| Parameters you would like to pass job ( [more info]() ) |
 {:.table}

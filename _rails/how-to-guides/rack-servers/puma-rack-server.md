@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title:  "Using Puma rack server"
 categories: how-to-guides/rack-servers
+order: 1
 lead: Run your Rack apps with Puma
 tags: ['Web server']
 legacy: false
@@ -41,7 +42,7 @@ permalink: /:collection/:path
 </p>
 
 ## Deploy with Puma
-You need to choose your web server at the time of initial build of the stack. Changes to or from Passenger (the default web server) will not be applied after your stack has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
+You need to choose your web server at the time of initial build of the application. Changes to or from Passenger (the default app server) will not be applied after your application has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
 
 To run a Puma Rack server, add a line to your Procfile labeled as custom&#95;web. Here is an example:
 

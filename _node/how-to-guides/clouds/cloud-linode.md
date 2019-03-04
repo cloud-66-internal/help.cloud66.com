@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Linode cloud
+title: Linode
 categories: how-to-guides/clouds
 lead: ""
 legacy: false

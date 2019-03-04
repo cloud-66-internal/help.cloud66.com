@@ -15,33 +15,33 @@ Cloud 66 currently supports the following cloud providers:
 *   [CloudA](/{{page.collection}}/how-to-guides/clouds/cloud-clouda.html)
 
 
-## Supported frameworks
+## Supported platforms
 
-We support end-to-end Docker deployments, meaning that we support any type of application. You can either let us build your Docker image (with a Dockerfile), or provide your own.
+Broadly, we support three types of applications:  
 
+1. Ruby applications running on Rails (or variants like Sinatra)
+2. Javascript applications running on NodeJS
+3. Docker applications running on Kubernetes clusters
+
+The first two platforms are best suited to traditional "monolithic" application types where all of the components run on a common framework. 
+
+The third platform is best suited to containerized applications with a strong service orientation. Since Docker effectively supports virtually every programming language and framework, it is possible to use it to host any type of application. 
+
+We support end-to-end Docker deployments. You can either let us build your Docker image (with a Dockerfile), or provide your own.
 
 ## Component versions
 
 Cloud 66 servers have two types of components with differing policies on versioning.
 
+### 1. Components built via apt-packages
 
-### Components built via apt-packages
+We default the latest stable major version available from the maintainers of that package.
 
-We don't have fine-grain control over the version, and use the latest version available via the apt source.
-
-### Components built from source
+### 2. Components built from source
 
 Cloud 66 maintains an internal list of versions for most components built from source, which is updated periodically after testing.
 
-{% if include.product == 'maestro' %}
-You are free to specify a version for a number of components in your [manifest file](/maestro/quickstarts/getting-started-with-manifest.html).
-{% else %}
 You are free to specify a version for a number of components in your [manifest file](/{{page.collection}}/quickstarts/getting-started-with-manifest.html).
-{%endif%}
-
-#### Warning
-<div class="notice notice-danger"><p>We cannot take responsibility for issues arising from non-recognized or incompatible versions.</p></div>
-
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -60,7 +60,11 @@ You are free to specify a version for a number of components in your [manifest f
 <tr><td>Weave</td><td>1.9.8</td></tr>
 </table>
 
-### Important
+
+#### Warning
+<div class="notice notice-danger"><p>We cannot take responsibility for issues arising from non-recognized or incompatible versions.</p></div>
+
+### Suggest version changes
 
 Would you like to suggest a version change? [Email us](mailto:support@cloud66.com?subject=Version update)!
 

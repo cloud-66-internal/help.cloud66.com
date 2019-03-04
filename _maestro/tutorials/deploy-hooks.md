@@ -72,7 +72,7 @@ We're going to use the first method in our tutorial because it's quicker and sim
 
 To add the hook:
 
-1. Open the application overview page from your Dashboard
+1. Open the Application Overview from your Dashboard
 2. Click on *Configuration files*  in the **Application** panel on the right of the screen
 3. Click on the *Deploy Hooks* tab at the top of the **Configure Services** 
 4. Copy and paste the example code above into the text area
@@ -83,7 +83,7 @@ To add the hook:
 
 Now that our hook is in place, we need to re-deploy our application to see it in action. 
 
-1. Navigate back to the **application overview** page
+1. Navigate back to **Application Overview**
 2. Click the *Build / Deploy* button
 3. Watch the deploy log and you will see the "first _thing"  deploy hook being called as part of the process
 

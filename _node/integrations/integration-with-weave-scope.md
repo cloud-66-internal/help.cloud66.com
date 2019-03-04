@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Integration With Weave Scope
+title: Integration with Weave Scope
 categories: integrations
 lead: ""
 legacy: false

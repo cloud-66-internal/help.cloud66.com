@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Using the Jobs Add-in"
 categories: how-to-guides/add-ins
-order: 10
+order: 5
 lead: Run a scheduled or on-demand tasks on a server host or against a docker service
 tags: ['Add in']
 legacy: false

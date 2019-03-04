@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Setting your Node version 
 categories: how-to-guides/deployment
-order: 50
+order: 9
 lead: "Choosing which version of Node is installed with your Rack/Rails applications"
 tags: ["debugging"]
 legacy: false
@@ -11,9 +11,9 @@ legacy: false
 permalink: /:collection/:path
 ---
 
-## Controlling the Node version for your Rails Stack
+## Controlling the Node version for your Rails application
 
-We automatically install the latest release of Node version 6.x.x when we set up your Rack/Rails stack servers. You can control which version is installed by editing the [manifest file](/rails/how-to-guides/deployment/building-a-manifest-file.html) for the Rails stack. 
+We automatically install the latest release of Node version 6.x.x when we set up your Rack/Rails application servers. You can control which version is installed by editing the [manifest file](/rails/how-to-guides/deployment/building-a-manifest-file.html) for the Rails application. 
 
 ``` 
 rails:

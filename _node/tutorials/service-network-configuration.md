@@ -1,14 +1,13 @@
 ---
 layout: post
 template: one-col
-title: Setup Network Configuration for your services
+title: Configuring network access to your application
 categories: tutorials
-lead: "Configure the service network"
+lead: "How to configure your application to be available on the public internet"
 legacy: false
 tags: ["security", "customization", "service.yml"]
 permalink: /:collection/:path
 ---
-
 
 
 ## Traffic distribution

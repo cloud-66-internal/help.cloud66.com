@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Enabling strong SSL security on Nginx
 categories: how-to-guides/security
-order: 13
+order: 4
 lead: "How to adjust SSL cipher settings in Nginx"
 legacy: false
 tags: ["ssl","nginx"]

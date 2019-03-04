@@ -144,3 +144,8 @@ Both of the load balancers that are natively supported by Maestro (Nginx and HAp
 
 Both Nginx and HAproxy can be set up to handle SSL / TLS termination - in other words, they act as the public face of an application and provide a route to your SSL certificates. This saves you from having to set up multiple instances of your certificates throughout your infrastructure and allows for more advanced load balancing features like X-Forwarded HTTP headers (XFF).
 
+## BuildGrid and Build Minutes
+
+BuildGrid is Maestro’s integrated Docker image builder. Whenever you build images from source code, or retag existing images, you make use of a metered resource called Build Minutes. All Maestro accounts have a number of “free” Build Minutes per month.
+
+Learn more about Build Minutes, monthly allowances and overages in our [detailed guide](/maestro/references/build-minutes.html). 

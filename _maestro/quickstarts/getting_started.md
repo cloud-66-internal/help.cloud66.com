@@ -25,33 +25,80 @@ Before you start, please check you have the following:
 </p></div>
 
 
-## Build your containers
+## Choosing application type
 
-This guide assumes that you already have container images that you want to deploy. If you need to learn how to build images or pull existing images from a repo please read <a href="/skycap/quickstarts/getting_started.html">Getting started with Skycap</a>. 
+New users will be show the product selection wizard. For Maestro, choose "I have a containerized application" and then "I need to build a Kubernetes cluster" (*Try Maestro*). 
 
-However we suggest you use a **different sample application** for Maestro than you did for Skycap (see the blue box above for details).
+<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
+    <div class="Grid-cell">
+        <h4>Step 1</h4>
+        <img src="/assets/product_choice_1.png" alt="Product choice wizard - step 1">
+    </div>
+    <div class="Grid-cell">
+        <h4>Step 2</h4>
+        <img src="/assets/product_choice_2.png" alt="Product choice wizard - step 2">
+    </div>
+</div>
 
-## Set up your deployment
+If you're already using Cloud 66 just click *New Application &rarr; Maestro (Build a new cluster)* button on the dashboard.
 
-To get started with your deployment: 
+<img src="/assets/skycap/skycap_new_dropdown_update.png" alt="Start a new Skycap build pipeline" width="200">
 
-1. Open to your applications overview page and click *Set up a Deployment*. 
-2. Click on *Deploy with Maestro* in the Deployment Setup panel that appears:
-3. Choose any of the standard [application environments](/maestro/how-to-guides/deployment/application-environments.html)
+## Adding services
 
-<img alt="Setting up a deployment in Maestro" src="/assets/maestro/maestro-getting-started-1.gif">
+The first step is to give your application a **name**. This will be used to label your application throughout the Cloud 66 dashboard.
 
-## Configure your services
+Next, you need to add at least one **service**. To your application. If you're using our demo application, you will need to add a single service called `demo-app` by pulling the code from this [public repo](https://github.com/cloud66/maestro-demo.git).
+
+To do this: 
+
+1. Copy the *Clone or download* link from Github 
+2. Paste it into the **Git Repo URL** field
+3. Type *master* into the **branch** field
+4. Click *Go* to fetch and analyze the code
+
+<img src="/assets/maestro/maestro-adding-services.gif" alt="Adding services to a Maestro application">
+
+
+## Specifying the source of images
+
+<img src="/assets/skycap/skycap_service_image.png" alt="Specifying the source of your service" style="float:right; margin-top: 0.25em">
+
+The *Where is your service image?* dropdown provides you with three options to specify the source of your services.
+
+* **Build Image from a GitHub repo** &mdash; This is the easiest way to add services if your code is hosted on GitHub. You'll need to link your GitHub account with Cloud 66 before you can take advantage of this. Just click the *Setup access to your GitHub projects.* link. (This is the option you should pick if you're using our "hello world" app)
+    
+* **Build image from any Git Repo** &mdash; Use this option if you have a private git repo or you're using another git provider such as BitBucket. You can also use this if you don't want to link Cloud 66 to your GitHub account. You will need to add your Cloud 66 public key if your repo is private. You'll be prompted to do this if it's required.
+    
+* **It's in a Docker image repository** &mdash; Use this to add pre-built images to a project. You can use a service like DockerHub or your own private image repo. If you're using a private repository you'll be prompted to add the necessary login credentials. 
+
+
+## Building application images
+
+Before you can deploy your application, you need to build your services into container images. To do this, click the green *Build Application Images* button. 
+
+You can now watch the build log as Maestro fetches your application code and builds it into Docker images, ready for deployment.
+
+<img src="/assets/maestro/maestro-build-log.png" alt="Maestro image building log">
+
+
+## Preparing for deployment
+
+To start the deployment process click the *Set up a Deployment* button from the **Application Overview** page. You will then need to configure various aspects of the application to ensure it's deployed properly. This includes:
+
+* Network configuration
+* Data source(s)
+* Target server(s)
+
+### Container network configuration
 
 Our sample application is composed of a single Python service that we've named *demo-app*. This is a web app so we need to configure the service to handle web traffic.
 
 At the moment we can see that **0 services** are connected to the Internet. To change this we click on the plug icon to open the network setting panel.
 
-### Container network configuration
-
 The *demo-app* service will run inside a container, so we need to configure that container to respond to web traffic. A standard web server listens on port 80 for HTTP traffic, so we're going to use that as our *Public Internet Port*
 
-The *demo-app* service listens to port 5000 so we need set the *Container Port* to **5000** to the *Public Internet Port* to **80**:
+The *demo-app* service listens to port 5000 so we need set the *Container Port* to `5000` to the *Public Internet Port* to `80`:
 
 <img alt="Configuring container networking in Maestro" src="/assets/maestro/maestro-getting-started-2.gif">
 
@@ -67,7 +114,7 @@ The application also needs a redis data store, so we should add one now:
 
 Our application is now configured and ready to deploy.
 
-## Choose a cloud provider
+### Choose a cloud provider
 
 Now we need to choose a cloud provider as a target for the deployment. You can do this using the dropdowns in the right-hand column.
 
@@ -77,7 +124,7 @@ For this demo we'll use *DigitalOcean* and deploy the application to the *London
 
 You can also deploy to your own servers. First you need to <a href="/maestro/how-to-guides/deployment/registered-servers.html">add them as registered servers</a>.
 
-## Configure server size
+### Configure server size
 
 The server size can be set by clicking on the cog at the top right the server.
 

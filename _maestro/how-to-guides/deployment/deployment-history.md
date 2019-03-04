@@ -25,7 +25,7 @@ This timeline includes information about:
 
 The timeline is available for any Maestro application that has been deployed at least once.
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Build & Deploy*  in the **Application** panel on the right of the screen.
 3. Scroll through the history (it's in descending date order)
 
@@ -41,7 +41,7 @@ You can use the timeline to revert back to a previous version of your applicatio
 2. Click on either *Rebuild* or *Republish* depending on what you need to achieve. You will need to click again to confirm the action.
 3. Wait for the action to complete
 
-Reverting to a previous *Snapshot* will only affect your code. You might still need to restore a [database backup](/maestro/how-to-guides/add-ins/database-backup.html). If you wish, you can [switch off your database migrations](/maestro/how-to-guides/databases/database-customization.html), roll back your database and then roll back your code.
+Reverting to a previous *Snapshot* will only affect your code. You might still need to restore a [database backup](/maestro/how-to-guides/add-ins/database-backups.html). If you wish, you can [switch off your database migrations](/maestro/how-to-guides/databases/database-customization.html), roll back your database and then roll back your code.
 
 ## Deployment status
 

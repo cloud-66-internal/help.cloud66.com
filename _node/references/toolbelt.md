@@ -2,10 +2,10 @@
 layout: post
 template: one-col
 title: Cloud 66 Toolbelt 
-categories: references/toolbelt
+categories: references
 lead: ""
 legacy: false
-order: 100
+order: 1
 tags: ["shell"]
 permalink: /:collection/:path
 ---

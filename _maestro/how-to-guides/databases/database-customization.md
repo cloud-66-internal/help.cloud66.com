@@ -58,7 +58,7 @@ The following variables are available to any database CustomConfig.
 		<tr>
 			<td>cloud</td>
 			<td>string</td>
-      		<td>Stack cloud</td>
+      		<td>Application cloud</td>
 		</tr>
 		<tr>
 			<td>memory</td>

@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: What is CustomConfig Git?
+title: Using CustomConfig Git
 categories: tutorials
-lead: ""
+lead: "How to use CustomConfig Git to edit and track configuration files"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path

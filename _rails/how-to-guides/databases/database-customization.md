@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Customize your database configuration
 categories: how-to-guides/databases
-order: 2
+order: 7
 lead: "Customize your Database Configuration on Cloud 66 Rails"
 legacy: false
 tags: ["PostgreSQL", "MySQL", "Redis", "MongoDB"]
@@ -16,11 +16,11 @@ permalink: /:collection/:path
 
 You can customize the database configuration on your servers using [CustomConfig](/{{page.collection}}/tutorials/custom-config.html). CustomConfig is available for MySQL, PostgreSQL, Redis and MongoDB.
 
-Editing and committing your database CustomConfig will perform the following steps on every database server in your stack, one by one, sequentially:
+Editing and committing your database CustomConfig will perform the following steps on every database server in your application, one by one, sequentially:
 
 - Check your template for Liquid syntax errors
 - Determine the correct server configuration and prepare general variables
-- Prepare custom variables for your database type (eg. server_state)
+- Prepare custom variables for your database type (e.g. server_state)
 - Compile the database configuration based on the information from the server and database type
 - Upload the configuration to the server
 - Restart your database
@@ -59,7 +59,7 @@ The following variables are available to any database CustomConfig.
     <tr>
      <td>cloud</td>
      <td>string</td>
-     <td>Stack cloud</td>
+     <td>Application cloud</td>
     </tr>
     <tr>
      <td>memory</td>

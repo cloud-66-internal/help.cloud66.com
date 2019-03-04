@@ -46,7 +46,7 @@ There are two levels of ConfigStore:
 
 To access ConfigStore for a particular application:
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Configuration*  in the **Application** panel on the right of the screen
 3. Click on the *ConfigStore* tab at the top of the main panel
 

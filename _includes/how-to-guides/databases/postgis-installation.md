@@ -34,7 +34,7 @@ production:
                 version: 2.3.1
 ```
 
-Once your stack has been deployed, you can find your PostGIS file in `/etc/postgresql/share/contrib/postgis-2.1/postgis.sql` on your database server.
+Once your application has been deployed, you can find your PostGIS file in `/etc/postgresql/share/contrib/postgis-2.1/postgis.sql` on your database server.
 
 
 ## Manual installation

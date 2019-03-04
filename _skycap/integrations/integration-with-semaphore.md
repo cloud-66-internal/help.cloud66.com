@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Integration With Semaphore
+title: Integration with Semaphore
 categories: integrations
 lead: ""
 legacy: false

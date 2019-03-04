@@ -91,7 +91,7 @@ In our example above, this is the level at which we changed the Redis version an
 
 You can also specify settings for your servers in your  `manifest.yml` by using the **servers** section. 
 
-In our example above you can see that we're using Digital Ocean as our `vendor` and that we've opted for a 2GB instance in the London region. 
+In our example below you can see that we're using Digital Ocean as our `vendor` and that we've opted for a 2GB instance in the London region. 
 
 `key_name` is optional and is used to select the named vendor cloud key in the case where there are multiple accounts available for the same cloud provider.
 

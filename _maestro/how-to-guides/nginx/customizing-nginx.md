@@ -44,7 +44,7 @@ There are two ways for you to create a custom Nginx 50X error page:
 
 ## Customize your Nginx configuration
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Configuration files*  in the **Application** panel on the right of the screen.
 3. Click on the *NGINX* tab at the top of the main panel 
 4. Follow the [CustomConfig instructions](/maestro/tutorials/custom-config.html) to customize the configuration.

@@ -10,7 +10,7 @@ legacy: false
 permalink: /:collection/:path
 ---
 
-Cloud 66 supports stacks based on the [Padrino framework](http://www.padrinorb.com/), a light-weight web framework built upon [Sinatra](/rails/how-to-guides/deployment/sinatra-stacks.html).
+Cloud 66 supports applications based on the [Padrino framework](http://www.padrinorb.com/), a light-weight web framework built upon [Sinatra](/rails/how-to-guides/deployment/sinatra-stacks.html).
 
 ## Custom commands
 Given that Padrino applications can have different database frameworks, we allow you to specify custom commands which are run at specific points during deployment:
@@ -37,9 +37,9 @@ Given that Padrino applications can have different database frameworks, we allow
 These commands can be set via [Toolbelt](/rails/references/toolbelt.html#settings-variables),
 
 <pre class="prettyprint">
-$ cx settings set -s my_stack custom.build.command "rake db:seed"
+$ cx settings set -s my_app custom.build.command "rake db:seed"
 
-$ cx settings set -s my_stack custom.deploy.command "rake db:migrate"
+$ cx settings set -s my_app custom.deploy.command "rake db:migrate"
 </pre>
 
 But also in your [manifest file](/rails/quickstarts/getting-started-with-manifest.html).
@@ -117,8 +117,6 @@ development:
       hosts: ["<%= ENV['MONGODB_ADDRESS']%>:27017"]
 </pre>
 
-## Example application
-* <a href="https://app.cloud66.com/stacks/new?eduid=padrino_mysql" target="_blank">Padrino with MySQL</a>
 
 #### Note
 <div class="notice">

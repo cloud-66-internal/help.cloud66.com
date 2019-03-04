@@ -16,7 +16,7 @@ If you don't specify a target directory, the file will be downloaded to your cur
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| ----:|
-|stack 					   |		—		|Name of the stack|
+|stack 					   |		—		|Name of the application|
 |server name 	   | 	—		| Name of the server to access|
 |source file	   |	—	| The path to the file on your server |
 |target directory (optional)	   |	—	| Your local target path |

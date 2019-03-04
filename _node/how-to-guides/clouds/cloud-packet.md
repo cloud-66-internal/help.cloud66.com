@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Packet cloud
+title: Packet
 categories: how-to-guides/clouds
 lead: ""
 legacy: false

@@ -1,3 +1,0 @@
----
-newUrl: /node/references/
----

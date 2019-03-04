@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Replacing SQLite with MySQL or PostgreSQL
+title: Replacing SQLite
 categories: how-to-guides/databases
 lead: ""
 tags: ["postgresql","sqlite","mysql"]
@@ -20,7 +20,7 @@ Switching to another SQL-based database is easy, and the following instructions 
 2.  Replace `gem 'sqlite*'` with `gem 'mysql2'` in your Gemfile.
 3.  Run `bundle install`.
 4.  Commit and check changes in.
-5.  Rebuild your stack.
+5.  Rebuild your application.
 
 
 ## PostgreSQL
@@ -29,7 +29,7 @@ Switching to another SQL-based database is easy, and the following instructions 
 2.  Replace `gem 'sqlite*'` with `gem 'pg'` in your Gemfile.
 3.  Run `bundle install`.
 4.  Commit and check changes in.
-5.  Rebuild your stack.
+5.  Rebuild your application.
 
 More information about [databases](/{{page.collection}}/how-to-guides/databases/database-management.html) supported by Cloud 66.
 

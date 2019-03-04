@@ -1,5 +1,5 @@
 
-## List your stack settings
+## List your application settings
 
 
 ### Usage
@@ -15,10 +15,10 @@ $ cx settings list [-s <stack>] [-e <environment>]
 
 |		Parameter 		   |  Description    |
 |--|-:|
-|stack 					   |Name of the stack|
+|stack 					   |Name of the application|
 |setting_name 	   | 	A valid setting from the list above |
 |value	   | The value for the setting |
-|e (optional) 	   | 	Your stack environment |
+|e (optional) 	   | 	Your application environment |
 {:.table}
 
 
@@ -43,17 +43,17 @@ These are the available settings:
 |custom.build.command|-|Set custom build command. Only applies to [Sinatra]() or [Padrino stacks]()|
 |custom.deploy.command|-|Set custom deploy command. Only applies to Sinatra or [Padrino stacks]()|
 |db.check.backup.size|true|Enable/Disable Check free space before taking backup|
-|deploy.parallel|true|Enable or disable [parallel deployments]() on the stack.|
-|git.branch|-|Change the Git branch of the stack repository|
+|deploy.parallel|true|Enable or disable [parallel deployments]() on the application.|
+|git.branch|-|Change the Git branch of the application repository|
 |git.repository|-|Change the Git repository URL|
 |logrotate.app.frequency|daily| For application specific log files accpetd value: hourly, daily, weekly and monthly|
 |logrotate.app.keep.count|14| The number of log files to keep for each logfile|
 |logrotate.server.frequency|daily|For server specific log files accpetd value: hourly, daily, weekly and monthly|
 |logrotate.server.keep.count|14|The number of log files to keep for each logfile|
-|maintenance.mode|false|Enable or disable maintenance mode on the stack.|
+|maintenance.mode|false|Enable or disable maintenance mode on the application.|
 |reconfigure.nginx|true|If set to true, it will regenerate Nginx configuration and restart it (only on the next deployment)|
 |run.deploy.command|true|Enable or disable option run [deploy command]() on every deployment ([database migrations]() for Rails stacks). |
-|stack.name||View your stack name|
+|stack.name||View your application name|
 {:.table}
 
 1. To enable, you can use the values 1, true, on or enable, and to disable you can use the values 0, false, off or disable
