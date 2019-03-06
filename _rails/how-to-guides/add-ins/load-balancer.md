@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Using the load balancer Add-in"
 categories: how-to-guides/add-ins
-order: 10
+order: 7
 lead: Adding a load balancer to your application
 tags: ['Add in', 'Scaling']
 legacy: false

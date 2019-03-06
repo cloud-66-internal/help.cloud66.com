@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Cloud 66 Technical specifications
 categories: resources
+order: 1
 lead: ""
 legacy: false
 

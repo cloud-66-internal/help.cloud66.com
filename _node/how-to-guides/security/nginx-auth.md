@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Nginx basic authorization
+title: Enabling basic authentication via Nginx
 categories: how-to-guides/security
 lead: ""
 legacy: false

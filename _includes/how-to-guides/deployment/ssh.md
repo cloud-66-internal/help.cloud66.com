@@ -1,14 +1,14 @@
 ## How Toolbelt SSH works
 
-Toolbelt detects your IP, temporarily allows that IP through the firewall and then tunnels through to the server via SSH. There are some common issues that can occur with this process.
+Toolbelt detects your IP, temporarily allows that IP through the firewall and then tunnels through to the server via SSH. There are some common issues that can occur with this process, which this guide addresses.
 
 
-## Verbose mode SSH
+## Debugging using verbose mode
 
 Verbose mode gives you more information on the SSH command running. It is a good way of finding out more detail about what is preventing SSH from working. To run the SSH in verbose mode, use the following command:
 
 ```
-cx -vvv ssh -s <STACK_NAME> -e <ENVIRONMENT> <SERVER_NAME>
+cx -vvv ssh -s <APP_NAME> -e <ENVIRONMENT> <SERVER_NAME>
 ```
 
 
@@ -17,9 +17,9 @@ cx -vvv ssh -s <STACK_NAME> -e <ENVIRONMENT> <SERVER_NAME>
 API delays with cloud firewalls can cause SSH to fail. This can often be solved by adding a short delay between the firewall request (`lease`) and the SSH attempt using the command below:
 
 ```
-cx lease -s <STACK_NAME> -e <ENVIRONMENT> -p 22 -t 10
+cx lease -s <APP_NAME> -e <ENVIRONMENT> -p 22 -t 10
 sleep 10
-cx ssh -s <STACK_NAME> -e <ENVIRONMENT> <SERVER_NAME>
+cx ssh -s <APP_NAME> -e <ENVIRONMENT> <SERVER_NAME>
 ```
 
 ## Detected IP is different
@@ -29,12 +29,12 @@ Toolbelt detects your public IP, but some network providers may use a different 
 To get around this, you will need to temporarily open your server to traffic from all IP addresses using the command below:
 
 ```
-cx lease -s <STACK_NAME> -e <ENVIRONMENT> -p 22 -t 10 -f 0.0.0.0/0
-cx ssh -s <STACK_NAME> -e <ENVIRONMENT> <SERVER_NAME>
+cx lease -s <APP_NAME> -e <ENVIRONMENT> -p 22 -t 10 -f 0.0.0.0/0
+cx ssh -s <APP_NAME> -e <ENVIRONMENT> <SERVER_NAME>
 ```
 
 
-## Prompted for Password
+## Prompted for password
 
 If you are being prompted for the password using Toolbelt, it means either your user account doesn't exist on the server, or the key you are using doesn't match the one on the server. This can be because of an incomplete key on the server. 
 

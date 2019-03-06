@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Migrating your application between servers
 categories: how-to-guides/deployment
-order: 50
+order: 10
 lead: "How to move your entire application to a new server or a new data center"
 legacy: false
 tags: ["high-availability"]

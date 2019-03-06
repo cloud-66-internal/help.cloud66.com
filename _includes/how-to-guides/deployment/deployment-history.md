@@ -9,9 +9,9 @@ A "Live" status indicates that the code in that commit is live on your servers.
 
 A <font color="green">green</font> deployment indicates that it has been successful, whereas a <font color="red">red</font> one indicates failure.
 
-A reverted deployment is one that is no longer on your servers (the stack was rolled back to an earlier deployment).
+A reverted deployment is one that is no longer on your servers (the application was rolled back to an earlier deployment).
 
 
 ## Usage
-Accessing your stack page, click _Deployment history_ in the right sidebar. On this page, you can see your previous commits, and revert back to previous commits. Any code revisions that have not been deployed will have a hollow circle.
+Accessing your Application Overview, click _Deployment history_ in the right sidebar. On this page, you can see your previous commits, and revert back to previous commits. Any code revisions that have not been deployed will have a hollow circle.
 

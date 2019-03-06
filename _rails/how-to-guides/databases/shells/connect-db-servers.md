@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Connecting to database servers
 categories: how-to-guides/databases
-order: 5
+order: 9
 lead: "How to connect directly to your database servers"
 legacy: false
 tags: ["debugging"]

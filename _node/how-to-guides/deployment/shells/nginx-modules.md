@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Add modules to Nginx
+title: Adding modules to Nginx
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to add custom modules to Nginx in Cloud 66"
 legacy: false
 tags: ["customization"]
 

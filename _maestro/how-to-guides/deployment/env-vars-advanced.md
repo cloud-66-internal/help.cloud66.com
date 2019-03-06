@@ -27,7 +27,7 @@ For example, if you have a [MySQL server](/maestro/tutorials/adding-database.htm
 
 For a list of environment variables available in your application: 
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Environment Variables*  in the **Application** panel on the right of the screen
 3. The initial page displays all the *Editable* variables. You can see all the *Read Only* variables by clicking on that tab.
 
@@ -50,7 +50,7 @@ Once your variables are set, *Save changes* and continue to deployment.
 
 ## Assigning environment variables after application build
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Environment Variables*  in the **Application** panel on the right of the screen
 3. Add or update the variables as required
 4. Save and redeploy
@@ -127,9 +127,8 @@ or
 `_env(STACK[APP_UID].ENV_VAR)`. 
 
 #### Note
-<div class="notice"><p>This syntax still uses the term "stack" which in the processing of being deprecated in Maestro. "Stack" means, for all intents and purposes, the same thing as "application".
-</p>
-</div>
+<div class="notice"><p>This syntax still uses the term "stack" which in the process of being deprecated in Maestro. "Stack" means, for all intents and purposes, the same thing as "application".
+</p></div>
 
 
 

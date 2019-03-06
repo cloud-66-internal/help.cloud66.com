@@ -80,7 +80,7 @@ Once replication is enabled, this environment variable is populated:
 `MONGODB_ADDRESSES` contains a comma separated list of all server names of the replica set. This usually looks like something like this:
 
 ```
-lion.mystack.c66.me,tiger.mystack.c66.me
+lion.myapp.c66.me,tiger.myapp.c66.me
 ```
 
 Once you have replica set enabled by scaling your MongoDB backend up, you will need to modify your client configuration accordingly. Your deployment might not work and your application might stop functioning if you don't do that.

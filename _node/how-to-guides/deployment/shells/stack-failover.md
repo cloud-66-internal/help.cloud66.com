@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: How to deal with a failover group
+title: Using failover groups
 categories: how-to-guides/deployment
 lead: ""
 legacy: false

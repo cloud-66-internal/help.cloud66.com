@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Integrating With Travis CI
+title: Integrating with Travis CI
 categories: integrations
 lead: "How to integrate Maestro into your Travis CI workflow"
 legacy: false

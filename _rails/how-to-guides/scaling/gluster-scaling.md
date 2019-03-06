@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Scaling your GlusterFS cluster
+title: Scaling GlusterFS clusters
 categories: how-to-guides/scaling
 order: 10
 lead: "How to scale  your GlusterFS cluster through Cloud 66"
@@ -24,6 +24,6 @@ You can specify replica_count when you are adding GlusterFS by addins. If you ar
 
 ### Note
 
-You can not change replica_count after GlusterFS added to your stack.
+You can not change replica_count after GlusterFS has been added to your application.
 
 

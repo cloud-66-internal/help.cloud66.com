@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "How to delete your Physical Servers"
 categories: how-to-guides/deployment
-order: 30
+order: 12
 lead: Deleting physical servers from your cloud
 tags: ['server', 'operations']
 legacy: false

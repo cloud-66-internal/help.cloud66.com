@@ -19,7 +19,7 @@ There are two major use cases for this:
 
 - **Application resilience**  
  By building and nominating a secondary backup on a different cloud provider or data center you can use a failover group to switch your visitors from the _Primary_ to the _Backup_ stack with ease.
-- **Cloning stacks**  
+- **Cloning applications**  
  If you need to clone or rebuild your stack, you can use a failover group to switch your traffic to the new stack without interruptions to your service.
 
 Failover groups follows the web head of your stack. In other words, it points to your web server when you don't have a load balancer, and if you have one, at your load balancer. Failover groups will also automatically update to point at a newly added load balancer. Similarly, it also gets automatically updated when you rename your stack or web servers.

@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Rackspace Cloud
+title: Rackspace
 categories: how-to-guides/clouds
 lead: ""
 legacy: false

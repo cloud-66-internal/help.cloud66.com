@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Manually managing database configuration
 categories: how-to-guides/databases
+order: 15
 lead: "How to stop Cloud 66 from automatically updating configurations for managed databases"
 legacy: false
 tags: ["Database"]

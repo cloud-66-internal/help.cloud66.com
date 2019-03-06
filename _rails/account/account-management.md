@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Manage your account
 categories: accounts
+order: 1
 lead: ""
 legacy: false
 tags: ["account"]

@@ -31,7 +31,7 @@ To point at the address provided in the failover group and wait for 24 hours to 
 
 ### 3. Database backup
 
-On application `A`, set backup for your databases (using the [Database Backup Add-in](/maestro/how-to-guides/add-ins/database-backup.html)).
+On application `A`, set backup for your databases (using the [Database Backup Add-in](/maestro/how-to-guides/add-ins/database-backups.html)).
 
 
 ### 4. Clone primary application

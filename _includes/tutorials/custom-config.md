@@ -16,7 +16,7 @@ Using the web based UI is very easy. Everything you need to use the web based UI
 
 ## Preview a template
 
-To use Nginx as an example, go to your Web Servers group detail page and click CONFIGURE NGINX in the right sidebar. This page will show you the template used to build the Nginx configuration when Nginx is deployed during your stack built or reconfigured. Once you’re done with editing your template, you can preview the results by clicking on the Preview button.
+To use Nginx as an example, go to your Web Servers group detail page and click CONFIGURE NGINX in the right sidebar. This page will show you the template used to build the Nginx configuration when Nginx is deployed during your application built or reconfigured. Once you’re done with editing your template, you can preview the results by clicking on the Preview button.
 
 See our documentation for more details about CustomConfig for [Nginx]({% if page.collection == "maestro" %}/maestro/references/nginx.html{%else%}/{{page.collection}}/references/nginx.html{%endif%}), HAProxy and [databases]({% if page.collection == "maestro" %}/maestro/how-to-guides/databases/shells/manage-backups.html{%else%}/{{page.collection}}/how-to-guides/databases/shells/manage-backups.html{%endif%}).
 
@@ -28,9 +28,9 @@ See our documentation for more details about CustomConfig for [Nginx]({% if page
 
 ## Submit template changes
 
-When you are happy with the results, enter a commit message and press the Commit to Server button. This will compile the configuration with real data and push it to all applicable servers in your stack. It also performs any post commit steps necessary like reloading Nginx with the new configuration file, putting your changes into effect.
+When you are happy with the results, enter a commit message and press the Commit to Server button. This will compile the configuration with real data and push it to all applicable servers in your application. It also performs any post commit steps necessary like reloading Nginx with the new configuration file, putting your changes into effect.
 
-This process takes place in the background and might take some time to complete depending on the number of servers in a stack and the nature of the configuration. Also, during the process cloud66 will update contents of [Custom git repository](/{{page.collection}}/tutorials/custom-config-git.html) so after fetching the latest version you can see the history of configuration changes in your own git client tool
+This process takes place in the background and might take some time to complete depending on the number of servers in an application and the nature of the configuration. Also, during the process cloud66 will update contents of [Custom git repository](/{{page.collection}}/tutorials/custom-config-git.html) so after fetching the latest version you can see the history of configuration changes in your own git client tool
 
 You can subsequently see the history of your configuration changes with simple colored diff views alongside dates and comments.
 
@@ -52,3 +52,8 @@ This will result in a merged_configuration file being created - please ensure th
 
 In the absence of merge errors, copy and paste the contents of the merged_template into your CustomConfig form and commit it.
 
+## What's next?
+
+* Learn how to customize your deployment workflow with [deploy hooks](/{{page.collection}}/tutorials/deploy-hooks.html).
+* Learn how to add custom [environment variables](/{{page.collection}}/tutorials/env-vars.html) to your application
+* Learn how to add a [load balancer](/{{page.collection}}/tutorials/load-balancing.html) to your application

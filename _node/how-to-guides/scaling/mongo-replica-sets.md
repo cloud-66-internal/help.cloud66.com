@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Scaling your MongoDB servers with replica sets
+title: Scaling MongoDB with replica sets
 categories: how-to-guides/scaling
 lead: ""
 legacy: false
@@ -22,7 +22,7 @@ When you select to scale up your MongoDB backend with Cloud 66, we perform the f
 - Create two more servers in your cloud (MongoDB replica sets require an odd number of servers)
 - Deploy and configure MongoDB on the new servers
 - Restore the backup on the new servers
-- Configure all MongoDB instances in the stack to act as a single replica set
+- Configure all MongoDB instances in the application to act as a single replica set
 - Generate appropriate environment variables with the addresses of the replica set servers
 
 It is important for backups to keep their referential integrity, otherwise different parts of the database might be backed up at different times, affecting database performance.
@@ -37,7 +37,7 @@ This interruption is during the backup and configuration steps of the scaling an
 
 ## Using a MongoDB replica set in your code
 
-All MongoDB drivers support replica sets, which means that you can pass the list of MongoDB servers in your replica set to them and they will adapt. However, switching from a single MongoDB to a replica set is something you need to test and be sure about. You shouldn't make such a change to your stack infrastructure with the click of a button!
+All MongoDB drivers support replica sets, which means that you can pass the list of MongoDB servers in your replica set to them and they will adapt. However, switching from a single MongoDB to a replica set is something you need to test and be sure about. You shouldn't make such a change to your application infrastructure with the click of a button!
 
 This is why we won't touch your configuration files after you scale your MongoDB up. This allows you to configure the client the way you see fit and go live with your replicated database backend when you are ready.
 **Note** 
@@ -82,10 +82,10 @@ Once replication is enabled, this environment variable is populated:
 `MONGODB_ADDRESSES` contains a comma separated list of all server names of the replica set. This usually looks like something like this:
 
 ```
-lion.mystack.c66.me,tiger.mystack.c66.me
+lion.myapplication.c66.me,tiger.myapplication.c66.me
 ```
 
-Once you have replica set enabled by scaling your MongoDB backend up, you will need to modify your client configuration accordingly. Your deployment might not work and your stack might stop functioning if you don't do that.
+Once you have replica set enabled by scaling your MongoDB backend up, you will need to modify your client configuration accordingly. Your deployment might not work and your application might stop functioning if you don't do that.
 
 **Note**
 
@@ -124,7 +124,7 @@ development:
 The reason for the ugly looking line is that `mongoid` requires the list of server addresses in the replica set to be in an array with port numbers. Since your replica set will be configured to work on the normal MongoDB port of 27017 by default, this line will split the comma separated list into an array in Ruby. The end result will look like something like this:
 
 ```
-["lion.mystack.c66.me:27017","tiger.mystack.c66.me:27017"]
+["lion.myapplication.c66.me:27017","tiger.myapplication.c66.me:27017"]
 ```
 
 

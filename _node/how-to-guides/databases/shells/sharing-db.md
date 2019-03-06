@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Sharing a database between stacks
+title: Sharing databases between applications
 categories: how-to-guides/databases
 lead: ""
 legacy: false

@@ -4,7 +4,7 @@
 
 [Docker](https://www.docker.com/) is an open-source project that helps developers publish applications inside containers. There are many benefits to using Docker: 
 
-- **Separation of Dev and Ops**: It has previously been difficult to seperate the responsibility between Dev and Ops. With Docker deployments, Devs simply put their code into a container (which they can verify works as expected), and Ops take responsibility for rolling it out and managing it.
+- **Separation of Dev and Ops**: It has previously been difficult to separate the responsibility between Dev and Ops. With Docker deployments, Devs simply put their code into a container (which they can verify works as expected), and Ops take responsibility for rolling it out and managing it.
 
 - **Micro-services** (multi-tenancy): Instead of running monolithic applications, we are now seeing an increasing amount of micro-services, whereby complex applications are composed of smaller components which speak with each other. Being able to run multiple micro-services on the same server (multi-tenancy) is easy with Docker.
 
@@ -17,18 +17,18 @@
 
 ## Cloud 66 Docker support
 
-Cloud 66 builds Docker stacks in two ways:
+Cloud 66 builds Docker applications in two ways:
 
 1. **Pulling your code from Git**: This option uses Cloud 66 [BuildGrid](/legacy_docker/references/build-grid.html) to build your Docker image, so that you don't have to. You just need to provide a [Dockerfile](https://docs.docker.com/reference/builder/) that specifies how you'd like us to build the image. Once your image is ready, it is pushed to your servers and managed. We also version the image and allow you to download it if needed.
 2. **User-provided image**: You provide a Docker image that you've built, which we push to your servers and manage. 
 
-We provide a set of tools and practices to help you run a full end to end production Docker based stack.
+We provide a set of tools and practices to help you run a full end to end production Docker based application.
 
 
 
 ### Ready?
 
-Are you ready to [build your first Docker stack](/{{page.collection}}/concepts/stack-definition.html)?
+Are you ready to [build your first Docker application](/{{page.collection}}/concepts/stack-definition.html)?
 
 Cloud 66 Docker includes the following:
    {% if page.collection == "maestro" %}- [Container life-cycle management](/maestro/quickstarts/getting_started.html){% else %}- [Container life-cycle management](/maestro/quickstarts/getting_started.html){% endif %}

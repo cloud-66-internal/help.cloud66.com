@@ -20,7 +20,7 @@ Before you start, please check you have the following:
 <div class="notice"><p>
 In this guide we are using a <a href="https://github.com/cloud66-samples/helloworld">simple project</a> that we've supplied on Github. It's a good idea to use this project in your initial Skycap set up so that the steps below correspond to your application.</p></div>
 
-* **A Working Kubernetes Cluster** &mdash; You can use [Cloud 66 Maestro](/maestro/quickstarts/getting_started.html) to create a cluster or use a cloud provider service like [Google GKE](https://cloud.google.com/kubernetes-engine), [AWS Fargate](https://aws.amazon.com/fargate) or [Microsoft Azure AKS](https://azure.microsoft.com/en-us/services/container-service), or [set it up yourself](https://kubernetes.io/docs/getting-started-guides/scratch).
+* **A Working Kubernetes Cluster** &mdash; You can use [Cloud 66 Maestro](/maestro/quickstarts/getting_started_with_clusters.html) to create a blank cluster or use a cloud provider service like [Google GKE](https://cloud.google.com/kubernetes-engine), [AWS Fargate](https://aws.amazon.com/fargate) or [Microsoft Azure AKS](https://azure.microsoft.com/en-us/services/container-service), or [set it up yourself](https://kubernetes.io/docs/getting-started-guides/scratch).
 For this example we are going to use [Minikube](https://github.com/kubernetes/minikube)
         
 * **A `kubectl` client** on your development machine or a server that is configured to communicate with your Kubernetes cluster.
@@ -33,18 +33,17 @@ Before getting started, let's get ourselves familiar with 3 main concepts of the
 
 ### Formation
 
-Formation is a "deployment destination" for your application. This could be a dedicated Kubernetes cluster or a shared one. A Formation allows you to manage the collection of Kubernetes configuration templates or **Stencils** that define an application and its environment.
+A Formation is a "deployment destination" for your application. This could be a dedicated Kubernetes cluster or a shared one. A Formation allows you to manage the collection of Kubernetes configuration templates or **Stencils** that define an application and its environment.
 
 <div class="notice"><p>You can find more detailed information about Formations <a href="/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-formation">here</a>.</p></div>
 
 ### Stencils
 
-A very good practice when configuring Kubernetes clusters is to put everything in configuration files rather than applying them directly via the command line. 
+A good practice when configuring Kubernetes clusters is to put everything in configuration files rather than applying changes directly via the command line. 
 
 Stencils are essentially dynamic Kubernetes configuration templates. They can contain one or many Kubernetes configuration items like `Services`, `Deployments`, `ConfigMaps` or others.
 
 Stencils can contain dynamic **placeholders** that are populated with the right values before they are applied to a Kubernetes cluster. This is called **Rendering** and it allows you to more easily re-use common templates.
-
 
 <div class="notice"><p>You can find more detailed information about Stencils <a href="/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-stencil">here</a>.</p></div>
 
@@ -56,28 +55,15 @@ All of these components (including all configurations) are then stored in a priv
 
 <div class="notice"><p>You can find more detailed information about Snapshots <a href="/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-snapshot">here</a>.</p></div>
 
-
 ## Getting Started
 
 ### Create your first Formation
 
-After the final step of [setting up an application](/skycap/quickstarts/getting_started.html) on Skycap, click the *Setup Deployment* button and select *Deploy with Formations*.
+After the final step of [setting up your application](/skycap/quickstarts/getting_started.html) on Skycap, click the *New Formation* button and give your Formation a name. 
 
-<img src="/assets/skycap/formation_step_1_NEW.gif"/>
+You can also add a few tags to it (these help to identify components later on). If you're using our sample project, calling your Formation "Hello World" is a good idea.
 
-#### Private Beta Notice
-
-<div class="notice"><p>If you can't see the selection form, you can contact Cloud 66 Support as Skycap Formation is currently a private beta feature. We will enable this feature for you.</p></div>
-
-Formations rely on "base templates" that are pulled from a git repository. Because your account doesn't have base template repository yet, you will need to add one now. We have supplied a set of [sample templates](https://github.com/cloud66/skycap-stencils/) on GitHub that you can use in this tutorial. 
-
-Click on the "New Formation" button and you will be promoted to add a template repo. You need to supply the git URL, the branch and a name for the template repo.
-
-<img alt="Template repo setup process" src="/assets/skycap/template_repo_ani.gif"/>
-
-Once your the template repo has been added, click on the *New Formation* button again. Enter a name for your Formation and add a few tags to it (these help to identify components later on). If you're using our sample project, calling your Formation "Hello World" is a good idea. Your Formation will automatically use the repo you connected in the previous step.
-
-<img src="/assets/skycap/formation_step_2_NEW.gif"/>
+<img src="/assets/skycap/skycap-new-formations-1.gif"/>
 
 ### Add your first Stencil
 
@@ -85,46 +71,28 @@ Once your the template repo has been added, click on the *New Formation* button 
 
 Now that you have a Formation defined you can begin populating it with **Stencils**. 
 
-To do this, click on the *Add Stencils* button in the "Getting Started with Formations" panel. 
+To do this, click on the *Add Stencils* button in the **Getting Started with Formations** panel. 
 
 A `namespace` is usually the first thing configured for a new Formation. To create yours, choose *setup.yml* from the menu that automatically opens on the next page.
 
-<img src="/assets/skycap/formation_step_3_NEW.gif"/>
+<img src="/assets/skycap/skycap-formations-add-stencil.gif"/>
 
 This creates a Stencil for a namespace configuration file for you. Let's look at it in a bit more detail:
 
 <pre class="prettyprint">
-# this sets up the cluster with namepsace etc
-# should be the first yaml to run
 apiVersion: v1
 kind: Namespace
 metadata:
   name: ${formation}
   annotations:
     cloud66.com/formation-uuid: ${formation["uuid"]}
-    cloud66.com/stencil-uuid: ${stencil["uuid"]}
----
-apiVersion: v1
-kind: Secret
-metadata:
-  namespace: ${formation}
-  name: cloud66-registry-pull-secret
-  annotations:
-    cloud66.com/formation-uuid: ${formation["uuid"]}
-    cloud66.com/stencil-uuid: ${stencil["uuid"]}
-data:
-  .dockerconfigjson: ${registry_credentials()}
-type: kubernetes.io/dockerconfigjson
 </pre>
 
+As you can see, the default `setup.yml` Stencil (from our sample repository) sets up the minimum required scaffolding for deploying an application to Kubernetes - a namespace.
 
-As you can see, the default `setup.yml` Stencil (from our sample repository) has two sections: the first sets up the namespace, and the second adds the credentials for a Docker repository to the namespace.
-
-You've probably already noticed the dynamic stencil placeholders like `${formation}`. These offer a simple way to replace some values in your configuration files at the time it "renders". 
+You've probably already noticed the dynamic stencil placeholder `${formation}`. Placeholder offer a simple way to replace some values in your configuration files at the time it "renders". 
 
 For example,`${formation}` gets replaced with a Kubernetes friendly version of your Formation's name. So if your Formation is called "My Sample Formation", the value of `${formation}` will be `my-sample-formation` when it renders (we will get to how to render the Stencils later).
-
-Looking at the `setup.yml` Stencil again, you see that the `${function(arguments)}` syntax is used in several places. For example `${formation("uuid")}` will be replaced by the unique identifier of the Formation that contains this Stencil and `${registry_credentials()}` will be replaced with docker registry credentials.
 
 You can see a full list of all Stencil functions [here](/skycap/references/stencil_placeholders.html).
 
@@ -192,15 +160,14 @@ Then, invoke the service using `minikube service` command, and a browser window 
 
 Congratulations! You just deployed your first Formation to a Kubernetes cluster.
 
-
 ## What's next?
 
 Formations are an extremely powerful tool to manage the flow of configuration files into Kubernetes. Here are some of their features:
 	
 * [Formations](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-formation) as an infrastucture time machine
-* Fine grained access control and permissions for each Formation and every Stencil for your team members
-* Ability to setup private [Base Templates](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-base-template) for your team
-* Powerful and very simple [Stencil placeholders syntax](/skycap/references/stencil_placeholders.html)
-* Bulk import of your environment variables and secrets into Stencils
+* Fine grained [access control and permissions](/skycap/tutorials/setting-up-access-control.html) for each Formation and every Stencil for your team members
+* The ability to setup private [Base Templates](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-base-template) for your team
+* The powerful [Stencil placeholders syntax](/skycap/references/stencil_placeholders.html)
+* Bulk import of your [environment variables](/skycap/tutorials/setting-environment-variables.html) and secrets into Stencils
 	
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deploying Your First Rails App
+title: Deploying your first Rails app
 categories: quickstarts
 order: 1
 legacy: false
@@ -26,14 +26,29 @@ permalink: /:collection/:path
 
 {% include general/cloud_provider_or_own_server_tabs.html %}
 
-<p>
-    Lets get started &mdash; Log into Cloud 66 website, if you're a new user you'll see four panels on your Apps Dashboard. In the Rails panel click the <strong>Start Trial</strong>.
-</p>
+
+## Choosing application type
+
+New users will be show the product selection wizard. For Skycap, choose "I have a native Ruby or Node app" and then "Deploy Rails & Rack Frameworks" (*Deploy a Ruby App*). 
+
+<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
+    <div class="Grid-cell">
+        <h4>Step 1</h4>
+        <img src="/assets/product_choice_1.png" alt="Product choice wizard - step 1">
+    </div>
+    <div class="Grid-cell">
+        <h4>Step 2</h4>
+        <img src="/assets/product_choice_3.png" alt="Product choice wizard - step 2">
+    </div>
+</div>
+
+If you're already using Cloud 66 just click *New Application &rarr; Rails (Rack frameworks)* button on the dashboard.
+
+<img src="/assets/skycap/skycap_new_dropdown_update.png" alt="Start a new Skycap build pipeline" width="200">
 
 ## Accessing your Git Repo
 
-<p> Cloud 66 supports both public and private Git repositories. If you're using a private Git repository you'll need to Add and approve the Cloud 66 public SSH key with your Git provider.
-</p>
+Cloud 66 supports both public and private Git repositories. If you're using a private Git repository you'll need to Add and approve the Cloud 66 public SSH key with your Git provider.
 
 <div class="Tabs">
     <nav>
@@ -85,84 +100,64 @@ permalink: /:collection/:path
 
 ## Defining your application
 
-<p>Now you need to tell us a bit of info about your app, then we can deploy, Please fill in the following fields:</p>
+Before we can deploy, we need some basic info about your application. Please fill in the following fields:
 
-<p><img src="/assets/rails/rails_about_app.png" alt="Fill in the information about your app: Git repo, name and environment"></p>
+<img src="/assets/rails/rails_about_app.png" alt="Fill in the information about your app: Git repo, name and environment">
 
-<ul>
-    <li>
-        <p>
-            <strong>Git repo URL for your app</strong> &mdash; We support <strong><kbd>http://</kbd>, <kbd>git://</kbd> or <kbd>git@</kbd></strong> URL formats. Please note that <strong>HTTPS isn't currently supported</strong>.
-        </p>
-    </li>
-    <li>
-        <p>
-            <strong>What branch do you want to deploy</strong> &mdash; This defaults to master but you can provide any branch you like.
-        </p>
-    </li>
-    <li>
-        <p><strong>Give your new application a name</strong> &mdash; This is the name that will be used in the Cloud 66 Dashboard once your app is deployed.</p>
-    </li>
-    <li>
-        <p><strong>Choose an Environment</strong> &mdash; Choose the Environment that you're deploying to: Production, Development, QA, Staging or Production.</p>
-    </li>
-</ul>
 
-<p>Now click the <strong>Analyze</strong> button - the results will be displayed in a few seconds.</p>
+* **Git repo URL for your app** &mdash; We support `http://`, `git://` and `git@` URL formats. Please note that **HTTPS isn't currently supported**.
+
+* **What branch do you want to deploy** &mdash; This defaults to master but you can provide any branch you like.
+
+* **Give your new application a name** &mdash; This is the name that will be used in the Cloud 66 Dashboard once your app is deployed.
+
+* **Choose an Environment** &mdash; Choose the Environment that you're deploying to: Development, QA, Staging or Production.
+
+Now click the *Analyze* button - the results will be displayed in a few seconds.
 
 ## Configuring your application
 
-<p>Once the analysis is complete you'll see a yellow Information Box that you can use to verify the analysis is correct.</p>
-<p>
-     <img src="/assets/rails/rails_about_your_app.png" alt="Rails Stack - analysis information">
-</p>
-<p>If there are any problems you can make changes and click <strong>Reanalyze my code</strong>. If necessary, you can also <a href="#">Add Environment Variables</a>.</p>
+Once the analysis is complete you'll see a yellow Information Box that you can use to verify the analysis is correct.
 
-<p>In App Configuration you can make changes to Stack configuration parameters.</p>
+<img src="/assets/rails/rails_about_your_app.png" alt="Rails application - analysis information">
 
-<p>
-    <img src="/assets/rails/rails_config_ruby_framework.png" alt="Rails Stack - Ruby version and Framework configuration">
-</p>
+If there are any problems you can make changes and click **Reanalyze my code**. If necessary, you can also add environment variables.
 
-<ul>
-    <li>
-        <p><strong>Ruby Version</strong> &mdash; That your app is using.</p></li>
-    <li>
-        <p><strong>Framework Info</strong> &mdash; This allow you alter information about Asset Pipeline precompilation and weather you want to run <code>rake db:schema:load</code>.</p>
-    </li>
-</ul>
+In App Configuration you can make changes to application configuration parameters.
+
+<img src="/assets/rails/rails_config_ruby_framework.png" alt="Rails application - Ruby version and Framework configuration">
+
+* **Ruby Version** &mdash; That your app is using.
+* **Framework Info** &mdash; This allows you alter information about asset pipeline precompilation and whether you want to run `rake db:schema:load`.
 
 ### Advanced Configurations
 
 <div class="notice">
-    <p>You can configure many aspects of your application using the Toolbelt or a manifest file.</p>
+<p>You can configure many aspects of your application using <a href="/rails/quickstarts/using-cloud66-toolbelt.html">Cloud 66 Toolbelt</a> or a <a href="/rails/quickstarts/getting-started-with-manifest.html">manifest file</a>.</p>
 </div>
 
 ## Choosing a deployment target
 
-<p>
 If you're deploying for the first time you need to add your Cloud provider credentials:
-</p>
 
 {% include general/clouds_accordion.html %}
 
 ## Finalizing Deployment Details
 
-<p>
-    Now you can decide how you want to configure your Frontend (Web) and Database Servers.
-    They can be shared or deployed to separate servers.
-</p>
+Now you can decide how you want to configure your Front end (Web) and Database Servers. They can be shared or deployed to separate servers.
 
 ### Deploying to Production
 
 <div class="notice">
-    <p>For production environments we always recommend separate servers. If you need fine grained control for more advanced deployments  you can use a <a href="#">manifest file</a>.</p>
+<p>For production environments we always recommend separate servers. If you need fine grained control for more advanced deployments  you can use a <a href="/rails/quickstarts/getting-started-with-manifest.html">manifest file</a>.</p>
 </div>
 
-<p>
-    <img src="/assets/rails/rails_deployment_details.png" alt="Choose where to deploy your database">
-</p>
+<img src="/assets/rails/rails_deployment_details.png" alt="Choose where to deploy your database">
 
-<p>
-    That's it! Now just click <strong>Deploy Stack</strong>.
-</p>
+That's it! Now just click *Deploy application* and watch your app roll out to your new servers.
+
+## What's next?
+
+* Get started with [manifest files](/rails/quickstarts/getting-started-with-manifest.html) - a powerful tool for defining your application's components
+* Learn about [CustomConfig](/rails/tutorials/custom-config.html) - a tool for defining and managing configuration templates
+* Learn how to use [Toolbelt](/rails/quickstarts/using-cloud66-toolbelt.html) - a powerful command-line interface for managing your Cloud 66 applications.

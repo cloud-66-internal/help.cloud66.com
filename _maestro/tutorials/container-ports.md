@@ -48,7 +48,7 @@ There are two ways to do this:
 
 To edit your ports using the standard Maestro user interface:
 
-1. Open the application overview page from your Dashboard
+1. Open the Application Overview from your Dashboard
 2. Click on the *Edit service* icon on the right-hand side of the *App Services* panel
 3. On the **Edit Services** page, click the green *Save changes* button (you don't need to make any changes first)
 4. On the **Edit port settings** page click the small planet icon to the left of the yellow *Configure service networking* panel
@@ -79,7 +79,7 @@ Note that the comma in Step 5 is vitally important. The end result should look l
 
         <section id="V2-First" class="Tabs-content js_tab_content">
 
-<p>You can test whether this has been properly applied by clicking on the name of the service you just modified (<em>demo-app</em>) in the <strong>App Services</strong> panel on the application overview page.</p>
+<p>You can test whether this has been properly applied by clicking on the name of the service you just modified (<em>demo-app</em>) in the <strong>App Services</strong> panel on the Application Overview.</p>
 
 <p>If you've followed the steps above correctly, the <strong>Services Config</strong> panel will list both <em>HTTP</em> and <em>HTTPS</em>.</p>
 
@@ -89,14 +89,14 @@ Note that the comma in Step 5 is vitally important. The end result should look l
         <section id="V1-First" class="Tabs-content js_tab_content is-hidden">
 
 <p>
-You can test whether this has been properly applied to your service by clicking on the respective &#9432; icon in the <strong>App Services</strong> panel on the application overview page.</p>
+You can test whether this has been properly applied to your service by clicking on the respective &#9432; icon in the <strong>App Services</strong> panel on the Application Overview.</p>
 
 <p>If you've followed the steps above correctly, the <strong>Services Config</strong> panel will list both <em>HTTP</em> and <em>HTTPS</em>.</p>
 
 		</section>
 </div>
 
-In order for these new settings to apply to your service, you will need to redeploy your application. To do this, click the *Build / Deploy* button on the application overview page. 
+In order for these new settings to apply to your service, you will need to redeploy your application. To do this, click the *Build / Deploy* button on the Application Overview. 
 
 #### Note
 
@@ -108,7 +108,7 @@ Maestro uses a YAML file called `service.yml` to define each service inside your
 
 To edit your `service.yml`:
 
-1. Open the application overview page from your Dashboard
+1. Open the Application Overview from your Dashboard
 2. Click on *Configuration Files* in the right-hand panel
 3. Edit the YAML directly in the editor
 4. When you are done, add a commit message and click *Commit*
@@ -146,7 +146,7 @@ databases:
 - redis
 {% endhighlight %}
 
-In order for these new settings to apply to your service, you will need to redeploy your application. To do this, click the *Build / Deploy* button on the application overview page. 
+In order for these new settings to apply to your service, you will need to redeploy your application. To do this, click the *Build / Deploy* button on the Application Overview. 
 
 ## What's next
 

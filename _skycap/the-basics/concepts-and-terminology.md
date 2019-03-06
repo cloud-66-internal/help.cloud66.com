@@ -116,3 +116,9 @@ Modern software development --- particularly for SaaS and web applications --- r
 In order to accommodate these requirements, many teams have adopted a continuous integration & continuous deployment strategy (CI/CD). This strategy automates most of the steps required by the testing and deployment process (such as unit testing and configuration updates), and involves humans only where absolutely necessary. 
 
 **Skycap** is an end-to-end **Container Deployment Pipeline** (CDP) that seamlessly automates the deployment of software (including microservices) as **containerized** applications to **clustered** environments managed by Kubernetes.
+
+## BuildGrid and Build Minutes
+
+BuildGrid is Skycap’s integrated Docker image builder. Whenever you build images from source code (for example by taking a new Snapshot), or retag existing images, you make use of a metered resource called Build Minutes. All Skycap accounts have a number of “free” Build Minutes per month.
+
+Learn more about Build Minutes, monthly allowances and overages in our [detailed guide](/skycap/references/build-minutes.html). 

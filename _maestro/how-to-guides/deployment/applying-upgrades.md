@@ -39,7 +39,7 @@ In the event of a security vulnerability on any of the components we deploy on t
 
 To manually trigger security upgrades:
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Clicking on the *Build / Deploy* button and choose *Deploy with Options*
 3. Click on the *More Options* tab
 4. Check *Apply Security Upgrades* and *Yes, reboot my servers if required*

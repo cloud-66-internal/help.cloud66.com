@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Amazon Web Services cloud
+title: Amazon Web Services
 categories: how-to-guides/clouds
 lead: ""
 legacy: false

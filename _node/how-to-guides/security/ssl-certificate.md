@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: How to add an SSL Certificate
+title: Adding SSL to an application
 categories: how-to-guides/security
 lead: ""
 legacy: false

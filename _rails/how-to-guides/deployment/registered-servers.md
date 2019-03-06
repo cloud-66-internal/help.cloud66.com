@@ -3,8 +3,8 @@ layout: post
 template: one-col
 title: Using your own servers with Cloud 66
 categories: how-to-guides/deployment
-order: 5
-lead: "How to use your own (self-managed) servers with Rails for Cloud 66"
+order: 10
+lead: "How to use your own (self-managed) servers with Cloud 66 for Rails"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path
@@ -12,7 +12,7 @@ permalink: /:collection/:path
 
 ## About registered servers
 
-Registered servers are a great way for operations teams to manage and allocate physical server resources for consumption by dev teams. Registered servers are essentially a pool of your own servers on a private or public cloud that can be used on any stack and configuration. Stacks can be deployed across a hybrid of cloud and registered servers - in this way you could have a dedicated server for your database and burst cloud servers for your front end.
+Registered servers are a great way for operations teams to manage and allocate physical server resources for consumption by dev teams. Registered servers are essentially a pool of your own servers on a private or public cloud that can be used on any application and configuration. Applications can be deployed across a hybrid of cloud and registered servers - in this way you could have a dedicated server for your database and burst cloud servers for your front end.
 
 
 ## Register a server
@@ -24,7 +24,7 @@ You can add any physical server as a registered server using the website, or the
 
 Visit the [_Registered Servers_](https://app.cloud66.com/registered_servers) page on Cloud 66, which will provide with you a shell script to run on your server - you can download it to inspect it first.
 
-Once the shell script has successfully completed, the server will now show up in the **New Servers** list for you to approve. Once it is approved, it will be available for you to use on any stack!
+Once the shell script has successfully completed, the server will now show up in the **New Servers** list for you to approve. Once it is approved, it will be available for you to use on any application!
 
 
 
@@ -68,10 +68,10 @@ $ cx register-server --org="My Team" --server=197.23.65.11 --user=root --tags="d
 
 ## Some pointers
 
-- Once a server is registered and used, it **cannot be reused** until a fresh copy of Ubuntu is installed again - this is to prevent possible conflicts with old files. When a stack with Registered Servers is deleted, the Registered Servers will appear in the **Orphaned Servers** list on your Registered Servers page. This list is here to allow operators to see which servers need to be destroyed/reset. Once a server is destroyed/reset it can be manually removed from the Orphaned Servers list.
-- If your server is in a cloud with native security groups (such as AWS Security Groups) then you must manually configure them such that your registered servers are able to talk to each other and Cloud 66. Open at least TCP port 80, 443 and 22 to the outside world. Cloud 66 install a firewall on each box that is blocking port 22. All servers must be allowed to communicate inside the security group on TCP port 6783. Port 6783 is needed to create the overlay network (Weave) for Docker stacks.  
-- If your servers in a stack are in different regions, then they will not be able to use their internal IPs to communicate with each other, so you will have to change your app to use the external IP environment variables. Keep in mind that this may incur additional traffic costs.
+- Once a server is registered and used, it **cannot be reused** until a fresh copy of Ubuntu is installed again - this is to prevent possible conflicts with old files. When an application with Registered Servers is deleted, the Registered Servers will appear in the **Orphaned Servers** list on your Registered Servers page. This list is here to allow operators to see which servers need to be destroyed/reset. Once a server is destroyed/reset it can be manually removed from the Orphaned Servers list.
+- If your server is in a cloud with native security groups (such as AWS Security Groups) then you must manually configure them such that your registered servers are able to talk to each other and Cloud 66. Open at least TCP port 80, 443 and 22 to the outside world. Cloud 66 install a firewall on each box that is blocking port 22. All servers must be allowed to communicate inside the security group on TCP port 6783. Port 6783 is needed to create the overlay network (Weave) for Docker applications.  
+- If the servers used by an application are in different regions, then they will not be able to use their internal IPs to communicate with each other, so you will have to change your app to use the external IP environment variables. Keep in mind that this may incur additional traffic costs.
 - Existing BYOS users will now be able to scale up and add a load balancer via registered servers.
-- Cross-cloud stacks are now possible, but not recommended due to substantial latency and other potential issues.
+- Cross-cloud applications are now possible, but not recommended due to substantial latency and other potential issues.
 - Detecting server's private IPs are very difficult as there might be more than one, so we cannot decide which one should be used -hence all the connections are going to be via Public IPs
 
