@@ -17,10 +17,10 @@ $ cx open [-s <stack>] [<server name>|<server ip>|<server role>]
     
 |		Parameter 		   |   Description    |
 |--| ----:|
-|stack 					   |		Name of your stack|
+|stack 					   |		Name of your application|
 |server name  (optional)   | 	Name of the server to access|
 |server ip (optional)	   |	 IP of the server to access|
-|server role (optional)	   | Role of the server to access (eg. web) |
+|server role (optional)	   | Role of the server to access (e.g. web) |
 {:.table}
 
 

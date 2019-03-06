@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: How to migrate your stack
+title: Migrating your application between servers
 categories: how-to-guides/deployment
 lead: ""
 legacy: false

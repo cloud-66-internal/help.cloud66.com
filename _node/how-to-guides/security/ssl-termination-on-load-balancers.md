@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Manually add an SSL certificate to a load balancer
+title: Enabling SSL termination on load balancers
 categories: how-to-guides/security
 lead: ""
 legacy: false

@@ -1,3 +1,0 @@
----
-newUrl: /maestro/references/
----

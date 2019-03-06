@@ -1,12 +1,12 @@
 
 
-[Memcached](http://memcached.org/) is an open source, high-performance, distributed memory object caching system, and it's easy to add to your stack as an add-in.
+[Memcached](http://memcached.org/) is an open source, high-performance, distributed memory object caching system, and it's easy to add to your application as an add-in.
 
 ## Add Memcached
-To add Memcached to your stack, access the add-ins menu, click _Memcached_ and confirm the installation. This will install Memcache on your servers for use with your application - you just need to ensure that your app is configured accordingly.
+To add Memcached to your application, access the add-ins menu, click _Memcached_ and confirm the installation. This will install Memcache on your servers for use with your application - you just need to ensure that your app is configured accordingly.
 
 ## Customize Memcached
-To customize Memcached, use the below syntax in your [manifest file](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html) and redeploy the stack with `Apply security upgrades` option.
+To customize Memcached, use the below syntax in your [manifest file](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html) and redeploy the application with `Apply security upgrades` option.
 
 <pre class="terminal">
 production:
@@ -19,9 +19,10 @@ production:
 </pre>
 
 {% if page.collection == 'legacy_docker' or page.collection == 'maestro' %}
+
+#### Note
 <div class="notice notice-danger">
-	<h3>Note</h3>
-	<p>For docker stacks this will be added to the host not as a container.</p>
+	<p>For docker applications this will be added to the host not as a container.</p>
 </div>
 {%endif%}
 

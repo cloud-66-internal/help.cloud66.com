@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Packet cloud
+title: Packet
 categories: how-to-guides/clouds
-lead: ""
+order: 10
+lead: "Configuring Packet for use with Cloud 66 for Rails"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path

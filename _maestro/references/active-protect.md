@@ -20,7 +20,7 @@ The **ActiveProtect** page shows a list of current and past attacks (in the last
 
 To reach the page:
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *ActiveProtect* in the **Application** panel on the right of the screen
 
 

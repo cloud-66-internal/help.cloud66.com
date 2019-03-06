@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Running the Rails Console
 categories: how-to-guides/deployment
-order: 1
+order: 3
 lead: "How to run the Rails console for your Cloud 66 application"
 tags: ["debugging"]
 legacy: false
@@ -11,7 +11,7 @@ legacy: false
 permalink: /:collection/:path
 ---
 
-Start by [SSHing to your server](/rails/how-to-guides/common-tools/ssh.html). Then go to your `STACK_PATH` (eg. `cd $STACK_PATH`) and run the following command:
+Start by [SSHing to your server](/rails/how-to-guides/common-tools/ssh.html). Then go to your `STACK_PATH` (e.g. `cd $STACK_PATH`) and run the following command:
 
 ```
 $ bundle exec rails c <environment>

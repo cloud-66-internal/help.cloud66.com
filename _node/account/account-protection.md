@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: What is Cloud 66 Account Protection?
+title: Cloud 66 account protection
 categories: accounts
 lead: ""
 legacy: false

@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Using the deployment timeline
 categories: how-to-guides/deployment
-order: 10
+order: 11
 lead: "How to use the deployment timeline to track and roll back deployments"
 legacy: false
 tags: ["operations"]

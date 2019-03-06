@@ -45,7 +45,7 @@ http {
             {% endif %}
         }
 
-        ## From here is for taking care of redirections settings for your stack
+        ## From here is for taking care of redirections settings for your application
         
         {% if red_http_to_https == true %}
         {% if has_load_balancer %}

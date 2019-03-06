@@ -6,8 +6,8 @@ label: Copper
 title: Copper DSL
 lead: Using Copper DSL for configuration validations
 legacy: false
+order: 5
 permalink: /:collection/:path
-order : 5
 ---
 
 ## Basics
@@ -16,7 +16,6 @@ Copper DSL is a simple language that's focused on fetching values from configura
 
 ### Copper files
 Copper files contain the Copper DSL script. They have text files and have a `.cop` extension. You can use any text editor to edit them.
-
 
 #### Copper Syntax Highlighting
 

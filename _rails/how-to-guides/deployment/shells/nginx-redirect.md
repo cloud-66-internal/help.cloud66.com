@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Configuring redirects through Nginx
 categories: how-to-guides/deployment
-order: 50
+order: 17
 lead: "How to configure redirects for your application using Nginx"
 tags: ["customization"]
 legacy: false

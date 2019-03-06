@@ -14,7 +14,7 @@ permalink: /:collection/:path
 
 You can scale your [Elasticsearch cluster](/maestro/how-to-guides/add-ins/elasticsearch.html) through the Maestro dashboard:
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on the *Servers* tab at the top of the main panel
 3. Find your Elasticsearch server(s) and click the green **+** to scale up.
 

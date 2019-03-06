@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Strong SSL Security on Nginx
+title: Enabling strong SSL security on Nginx
 categories: how-to-guides/security
 lead: ""
 legacy: false

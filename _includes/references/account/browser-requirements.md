@@ -6,5 +6,10 @@ We’re constantly optimizing our platform to be in line with current web standa
 
 In order to plan ahead and take full advantage of the features on Cloud66 as well as ensure optimal security, we recommend that you follow the guidelines below. This way you’ll get the safest, fastest and best Cloud66 experience possible.
 
-- Use a modern web browser, for example the latest version of Chrome, Safari, Firefox and Internet Explorer.
-- Have JavaScript enabled at all times.
+* Only use a the latest version of one of the following web browsers: 
+  * Chrome
+  * Safari
+  * Firefox
+  * Microsoft Edge
+  * Internet Explorer
+* Have JavaScript enabled at all times.

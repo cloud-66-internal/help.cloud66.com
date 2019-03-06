@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Cloud 66 Beta program
 categories: resources/beta-program
+order: 10
 lead: ""
 legacy: false
 

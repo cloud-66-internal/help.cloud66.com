@@ -28,5 +28,5 @@ To use a database client, you will first need to add a firewall rule to allow tr
 Once the firewall is open you can use a database client from your local computer to access the public IP address of the server hosting the database. You can find that IP by: 
 
 * Visting your [Dashboard](https://app.cloud66.com)
-* Opening the **Application overview** page for the app in question
+* Opening **Application Overview** for the app in question
 * Clicking on the *Servers* tab at the top of the main panel

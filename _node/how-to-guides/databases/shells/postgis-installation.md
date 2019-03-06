@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: How to install PostGIS
+title: Installing PostGIS
 categories: how-to-guides/databases
 lead: ""
 legacy: false

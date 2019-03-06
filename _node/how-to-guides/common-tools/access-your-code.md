@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Accessing your Git repository
+title: Using Git repositories with Cloud 66
 categories: how-to-guides/common-tools
 lead: "Connecting your git repository to Cloud 66"
 tags: ["git"]

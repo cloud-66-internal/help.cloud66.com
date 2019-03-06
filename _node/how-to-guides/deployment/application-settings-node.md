@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Specific settings for your Node.js application
+title: Customizing your Node.js configuration
 categories: how-to-guides/deployment
 lead: ""
 legacy: false
@@ -17,7 +17,7 @@ To change your Node.js version you need to update your `package.json` `engines` 
 
 ##  Change your datasource(s) 
 
-During the analyse phase we analyze your runtime depencies defined in the `package.json`. Inclusion of the following packages will result in relevant datasource to be provisioned on your stack.
+During the analyse phase we analyze your runtime depencies defined in the `package.json`. Inclusion of the following packages will result in relevant datasource to be provisioned on your application.
 
 *    the package `mysql` will trigger the provisioning of Mysql
 *    the package `mongoose` or `mongodb` will trigger the provisioning of MongoDB
@@ -109,10 +109,10 @@ work: node some_work.js
 
 ```
 
-The commands above would run node `server.js` and node `some_work.js` and monitor them. Cloud 66 will attempt to bring processes that go down or crash up again. Processes are also instructed to start when your server is booted. An overall view of your processes is available in your stack detail page.
+The commands above would run node `server.js` and node `some_work.js` and monitor them. Cloud 66 will attempt to bring processes that go down or crash up again. Processes are also instructed to start when your server is booted. An overall view of your processes is available in your Application Overview.
 
 
 ##  Final notes on managing storage
 
-None of the files created on the filesystem after the stack is deployed are persistent. If you need persistency for files, for example some uploaded data, [please use the GlusterFS add-in](/node/how-to-guides/add-ins/glusterfs.html).
+None of the files created on the filesystem after the application is deployed are persistent. If you need persistency for files, for example some uploaded data, [please use the GlusterFS add-in](/node/how-to-guides/add-ins/glusterfs.html).
 

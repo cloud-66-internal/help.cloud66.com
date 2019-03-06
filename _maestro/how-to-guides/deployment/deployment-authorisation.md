@@ -26,7 +26,7 @@ For applications where you want additional control over deployment authorization
 
 To lock down deployment for an application:
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Settings & Information*  in the **Application** panel on the right of the screen
 3. In the **Application Update Lockdown** panel, select the level of lockdown you require
 4. Click *Save Lockdown Settings*

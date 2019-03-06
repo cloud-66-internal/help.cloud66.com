@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Setting up custom LiveLog files
 categories: how-to-guides/deployment
-order: 100
+order: 20
 lead: "How to configure custom logs for your applications"
 legacy: false
 tags: ["debugging","logs"]

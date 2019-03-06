@@ -52,7 +52,7 @@ There are two ways to add a database to an existing app:
 
 To add MySQL to your application:
 
-1. Open the **application overview** from the [Dashboard](https://app.cloud66.com/dashboard).
+1. Open the **Application Overview** from the [Dashboard](https://app.cloud66.com/dashboard).
 2. Click *Explore Add-ins* or the green **+** in the **Add-ins** panel
 3. Click on *Install Now* under **MySQL**
 4. A pop-up window will appear, asking whether to install MySQL on a new virtual server, or on an existing server. Either will work, although beware of overloading a single server.

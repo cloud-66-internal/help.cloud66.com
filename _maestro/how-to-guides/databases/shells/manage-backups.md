@@ -10,7 +10,7 @@ tags: ["backups, databases"]
 permalink: /:collection/:path
 ---
 
-Maestro gives you tools to [automatically restore your database backups](/maestro/how-to-guides/add-ins/database-backup.html), but you can also manage them yourself. 
+Maestro gives you tools to [automatically restore your database backups](/maestro/how-to-guides/add-ins/database-backups.html), but you can also manage them yourself. 
 
 ## Downloading backups
 
@@ -22,7 +22,7 @@ The best way to retrieve your database backup is by using the [toolbelt backup m
 
 ### Maestro Dashboard
 
-1. Open the application overview page from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. In the **Add-Ins** panel, click the database backup you'd like to download
 3. Click the download (cloud) icon
 4. Click *Copy script to clipboard*

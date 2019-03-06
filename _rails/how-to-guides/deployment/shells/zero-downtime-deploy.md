@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Zero-downtime deployments
 categories: how-to-guides/deployment
-order: 80
+order: 15
 lead: "How to minimize downtime during deployments"
 legacy: false
 tags: ["high-availability"]

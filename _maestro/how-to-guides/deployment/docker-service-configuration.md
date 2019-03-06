@@ -28,7 +28,7 @@ For a full list of available options, see the [table](#service-configuration-opt
 
 While you're building your application, custom service configurations can be accessed by clicking on the _Advanced_ tab. This gives you direct access to editing the `service.yml` for your application.
 
-Once your application has been built, you can access `service.yml` under _Configuration Files_ in the right menu of your application page.
+Once your application has been built, you can access `service.yml` under _Configuration Files_ in the right menu of your Application Overview.
 
 ## Service configuration examples
 

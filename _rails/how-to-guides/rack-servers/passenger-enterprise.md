@@ -3,13 +3,14 @@ layout: post
 template: one-col
 title:  "Using Passenger Enterprise"
 categories: how-to-guides/rack-servers
+order: 3
 lead: Cloud 66 supports deploying with Passenger Enterprise
 legacy: false
 tags: ['Web server']
 permalink: /:collection/:path
 ---
 
-Passenger is an open-source, popular multi-language (Ruby, Python, Node) web & app server which can integrate into Apache and Nginx. Cloud 66 offers enterprise customers the ability to deploy stacks with Passenger Enterprise, which has several key benefits:
+Passenger is an open-source, popular multi-language (Ruby, Python, Node) web & app server which can integrate into Apache and Nginx. Cloud 66 offers enterprise customers the ability to deploy applications with Passenger Enterprise, which has several key benefits:
 
 - Rolling restarts
 - Concurrency and multi-threading
@@ -32,5 +33,5 @@ If both these conditions are met, any Passenger-based server is deployed with th
 
 #### Important
 <div class="notice">
-<p>We recommend that you choose Passenger Enterprise as your web server at the time of initial build of the stack. If you already have a stack, please <a href="/rails/how-to-guides/scaling/scaling.html">scale up</a> to a new application server and scale down the old one to add Passenger Enterprise.</p>
+<p>We recommend that you choose Passenger Enterprise as your web server at the time of initial build of the application. If you already have an application, please <a href="/rails/how-to-guides/scaling/scaling.html">scale up</a> to a new application server and scale down the old one to add Passenger Enterprise.</p>
 </div>

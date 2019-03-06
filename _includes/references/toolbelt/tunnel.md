@@ -21,11 +21,11 @@ Also, you need to specify at least the `remote` port. If `local` is missing, `re
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| ----:|
-|stack 					   |		—		| Name of the stack|
+|stack 					   |		—		| Name of the application|
 |server  		   | 	—			| Specify a server |
 |server name (optional)	   | 	—			| Name of the target server |
 |server ip (optional)	   | 	—			| IP of the server to access |
-|server role (optional)	   | 	—			| Role of the server to access (eg. web) |
+|server role (optional)	   | 	—			| Role of the server to access (e.g. web) |
 |remote 					   |		—		| Remote port for the tunnel |
 |local (optional)					   |		—		| Local port for the tunnel. If not specified, remote + 1 is used. |
 {:.table}

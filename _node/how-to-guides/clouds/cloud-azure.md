@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Microsoft Azure cloud
+title: Microsoft Azure
 categories: how-to-guides/clouds
 lead: ""
 legacy: false
