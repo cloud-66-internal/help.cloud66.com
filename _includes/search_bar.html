@@ -5,11 +5,9 @@
            class="search search--lrg u-fullWidth"
            placeholder="Search all product Documentation">
 
-
     {% if jekyll.environment == "production" %}
-    <input type="hidden" name="idx" value="help" />
+        <input type="hidden" name="idx" value="help" />
     {% else %}
-    <input type="hidden" name="idx" value="help_tmp" />
+        <input type="hidden" name="idx" value="help_tmp" />
     {% endif %}
-
 </form>

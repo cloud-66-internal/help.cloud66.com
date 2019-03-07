@@ -44,7 +44,7 @@ CB.help = ( function( $, window, document ) {
     };
 
     var init = function() {
-        console.log( 'init help' );
+        console.log( 'init the help base.js' );
 
         navHighlight();
         bindEvents();
