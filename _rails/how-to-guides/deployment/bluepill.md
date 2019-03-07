@@ -3,11 +3,10 @@ layout: post
 template: one-col
 title: Managing processes with Bluepill
 categories: how-to-guides/deployment
+order: 7
 lead: "Manage background workers in your application"
 legacy: false
 tags: ["code","workers"]
-order: 100
-
 permalink: /:collection/:path
 ---
 
@@ -102,7 +101,7 @@ $ sudo bluepill <process_name> quit
 
 
 
-
+### Note
 <div class="notice">
-  <h3>Note:</h3><p>Also remember that we configure the pill files to log to <code>&lt;STACK_PATH&gt;/log</code> folder.</p>
+  <p>Also remember that we configure the pill files to log to <code>&lt;STACK_PATH&gt;/log</code> folder.</p>
 </div>

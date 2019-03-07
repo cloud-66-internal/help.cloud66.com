@@ -1,7 +1,7 @@
 
 ## Environment variable setup
 
-These commands allow you to list and set environment variables on your stack.
+These commands allow you to list and set environment variables on your application.
 
 
 ## List environment variables
@@ -19,7 +19,7 @@ $ cx env-vars list [-s <stack>] [--history] [environment_variables]
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| -:|
-|stack 					   |		—		| Name of the stack|
+|stack 					   |		—		| Name of the application|
 |setting   				   | 	—			| Name of environment variable |
 |value					   | 	—			| Value for environment variable |
 {:.table}

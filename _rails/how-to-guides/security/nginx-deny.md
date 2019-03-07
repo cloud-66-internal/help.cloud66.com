@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Nginx allow and deny by IP
+title: Enabling IP access control via Nginx
 categories: how-to-guides/security
-lead: ""
+order: 2
+lead: "How to restrict access to your application by IP address using Nginx"
 legacy: false
 tags: ["nginx"]
 permalink: /:collection/:path

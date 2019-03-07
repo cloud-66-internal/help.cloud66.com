@@ -32,7 +32,9 @@ Let's save this as `input.yml`.
 With the above YAML used as input, `$` will be the entire document. This means `$.foo.bar` will be `ham`. Now let's make a change to the document:
 
 <pre class="prettyprint">
-$.foo.bar = "eggs"
+$$.forEach($ => {
+	$.foo.bar = "eggs"
+});
 </pre>
 
 Save the above script as `my_mod.js`.
@@ -53,7 +55,9 @@ As you can see, the input configuration file is loaded into a Javascript object 
 Using the previous input, let's write a modifier to add a new node to the `foo` array:
 
 <pre class="prettyprint">
-$.foo.push({ fuzz: "fish" })
+$$.forEach($ => {
+	$.foo.push({ fuzz: "fish" })
+});
 </pre>
 
 This will generate this output:

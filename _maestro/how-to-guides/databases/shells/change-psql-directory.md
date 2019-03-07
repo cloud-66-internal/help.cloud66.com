@@ -1,19 +1,20 @@
 ---
 layout: post
 template: one-col
-title: How to change the data directory for PostgreSQL
-categories: Tutorials
-lead: ""
+title: Changing the PostgreSQL data directory
+categories: how-to-guides/databases
+order: 30
+lead: "How to change the data directory used by PostgreSQL"
 legacy: false
 
 permalink: /:collection/:path
 ---
-{% assign product = "common" %}
 
 We use the default data folder when installing PostgreSQL on your server, which is  `/usr/local/pgsql/data`.
 To change this folder, follow the instructions below.
 
-1.  Connect to your servers via [SSH](/{{page.collection}}/how-to-guides/deployment/shells/ssh.html).
+1.  Connect to your servers via [SSH](/maestro/how-to-guides/common-tools/ssh-to-server.html).
+
 2.  Stop the PostgreSQL service by issuing the following command:
 		
 		$ (sudo -u postgres pg_ctl stop -D /usr/local/pgsql/data -m i -t 5 || true) && sudo stop postgresql 

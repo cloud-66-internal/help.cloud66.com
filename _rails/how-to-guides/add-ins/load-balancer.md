@@ -1,14 +1,13 @@
 ---
 layout: post
 template: one-col
-title:  "What is the Load balancer add-in"
+title:  "Using the load balancer Add-in"
 categories: how-to-guides/add-ins
-lead: Adding a load balancer couldn't be easier
+order: 7
+lead: Adding a load balancer to your application
 tags: ['Add in', 'Scaling']
 legacy: false
 permalink: /:collection/:path
 ---
-
-
 
 {% include how-to-guides/add-ins/load-balancer.md %}

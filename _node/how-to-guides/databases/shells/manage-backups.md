@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: How to manage your Cloud 66 backups
+title: Managing database backups
 categories: how-to-guides/databases
 lead: ""
 legacy: false

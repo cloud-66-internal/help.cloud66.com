@@ -16,7 +16,7 @@ $ cx stacks list [-e <environment>]
 
 |		Parameter 		   |   Description    |
 |--| | | | | :|
-|stack 					   	| Name of your stack |
+|stack 					   	| Name of your application |
 |y (optional)		  				   	| Answer yes to confirmations |
 |group (default web)		 	 			   	| Group of servers you wish to reboot (all, web, haproxy, db, mysql, redis, postgresql, mongodb) |
 |strategy		  	   	| Reboot in serial or parallel |
@@ -30,18 +30,18 @@ The strategy parameter specifies whether you want all your servers to be reboote
 ### Example
 
 ```
-$ cx stack reboot -s mystack
-$ cx stack reboot -s mystack --group web
-$ cx stack reboot -s mystack --group all
-$ cx stack reboot -s mystack --strategy parallel
-$ cx stack reboot -s mystack --group web --strategy serial
+$ cx application reboot -s mystack
+$ cx application reboot -s mystack --group web
+$ cx application reboot -s mystack --group all
+$ cx application reboot -s mystack --strategy parallel
+$ cx application reboot -s mystack --group web --strategy serial
 ```
 * * *
 
 
 ## Clear caches
 
-For improved performance, volatile code caches exist for your stack. It is possible for a those volatile caches to become invalid if you switch branches, change git repository URL, or rebase or force a commit. Since switching branch or changing git repository URL is done via the Cloud 66 interface, your volatile caches will automatically be purged. However, rebasing or forcing a commit doesn't have any association with Cloud 66, so this command can be used to purge the exising volatile caches.
+For improved performance, volatile code caches exist for your application. It is possible for a those volatile caches to become invalid if you switch branches, change git repository URL, or rebase or force a commit. Since switching branch or changing git repository URL is done via the Cloud 66 interface, your volatile caches will automatically be purged. However, rebasing or forcing a commit doesn't have any association with Cloud 66, so this command can be used to purge the exising volatile caches.
 
 
 ### Usage
@@ -58,7 +58,7 @@ $ cx stacks clear-caches [-s <stack>]
 
 |		Parameter 		   	|     Description    |
 || :|
-|stack 					   	| Name of your stack |
+|stack 					   	| Name of your application |
 {:.table}
 
  
@@ -95,8 +95,8 @@ $ cx stacks configure list [-s <stack>]
 |-:|
 |list 					   	|List of all versions of a configuration file|
 |download 	 			   	| Download a configuration file |
-|uplaod	  				   	| Upload a new version of configuration file |
-|stack (optional) 	   	   	| 	Name of your stack, this can be omitted if the current directory is a stack directory |
+|upload	  				   	| Upload a new version of configuration file |
+|stack (optional) 	   	   	| 	Name of your application, this can be omitted if the current directory is an application directory |
 |f (file) (optional)	   	| File name, accepted values are service.yml and manifest.yml |
 |e (environment) (optional) | 	Full or partial environment name |
 {:.table}

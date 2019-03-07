@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: How to connect to your database servers
+title: Connecting to database servers
 categories: how-to-guides/databases
 lead: ""
 legacy: false

@@ -13,7 +13,7 @@ return 301 https://$host$request_uri;
 
 ## Redirect between domains with HTTP and HTTPS
 
-If you have two separate domains (eg. A and B) for your app and need to redirect traffic from domain A to B, follow these instructions.
+If you have two separate domains (e.g. A and B) for your app and need to redirect traffic from domain A to B, follow these instructions.
 
 Create DNS records for domain A, pointing it at domain B. We will then create Nginx rules, so that visitors to domain A will be redirected to domain B. The method differs slightly between HTTP and HTTPS traffic, due to certificate complexities.
 

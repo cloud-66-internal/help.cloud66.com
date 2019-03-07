@@ -16,11 +16,11 @@ Optionally provide the server to act only on that server.
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| -:|
-|stack 					   |		—		|Name of the stack|
+|stack 					   |		—		|Name of the application|
 |service name			   |		—		| Name of the target service |
 |server name (optional)    | 	—		| Name of the target server |
-|group (optional)    | 	—		| Name of the target server group (ie. web/db/docker etc)|
-|count   | 	—		| Desired count (ie. +2, -3 or 5) |
+|group (optional)    | 	—		| Name of the target server group (i.e. web/db/docker etc)|
+|count   | 	—		| Desired count (i.e. +2, -3 or 5) |
 {:.table}
 
 
@@ -53,7 +53,7 @@ Optionally provide the server to act only on that server.
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| -:|
-|stack 					   |		—		|Name of the stack|
+|stack 					   |		—		|Name of the application|
 |service name			   |		—		| Name of the target service |
 |server name (optional)    | 	—		| Name of the target server |
 {:.table}
@@ -85,7 +85,7 @@ Optionally provide the server to act only on that server.
 
 |		Parameter 		   |	Default		|   Description    |
 |--|:--:| ----:|
-|stack 					   |		—		|Name of the stack|
+|stack 					   |		—		|Name of the application|
 |service name			   |		—		| Name of the target service |
 |server name (optional)    | 	—		| Name of the target server |
 {:.table}

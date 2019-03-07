@@ -9,6 +9,9 @@ tags: ["databases"]
 permalink: /:collection/:path
 ---
 
+## Notice
+<div class="notice notice-warning"><p>This documentation set has been merged with the <a href="/maestro/">Maestro Version 2</a> documentation and is officially deprecated. These pages will be redirected to their equivalents in that doc set within the next few weeks.</p></div>
+
 
 Use this add-in to backup your database on a schedule of your choosing.  You can choose from different settings to have your expected behavior :
 
@@ -23,7 +26,7 @@ Cloud 66 provides two types of backups: _managed_ and _unmanaged_.
 Having managed backups carries several benefits:
 
 - You can download database backups through the web UI and API
-- [Backup verifiers](/rails/tutorials/backup-verifiers.html) ensure that your backups actually contain what you expect
+- [Backup verifiers](/rails/how-to-guides/databases/backup-verifiers.html) ensure that your backups actually contain what you expect
 - Use [database replication](/rails/tutorials/database-replication.html) to scale your databases
 - You can easily restore database backups
 - Stored in Cloud 66 storage

@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title: What is the Cloud66 Status?
+title: Checking Cloud66 service status
 categories: resources
+order: 2
 lead: ""
 legacy: false
 

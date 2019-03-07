@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "What is the custom server add-in?"
+title:  "Using the custom server add-in"
 categories: how-to-guides/add-ins
+order: 2
 lead: Custom servers within the Cloud 66 ecosystem
 tags: ['Customization', 'Add in']
 legacy: false

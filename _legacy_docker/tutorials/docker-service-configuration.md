@@ -9,6 +9,9 @@ tags: ["customization", "service.yml"]
 permalink: /:collection/:path
 ---
 
+## Notice
+<div class="notice notice-warning"><p>This documentation set has been merged with the <a href="/maestro/">Maestro Version 2</a> documentation and is officially deprecated. These pages will be redirected to their equivalents in that doc set within the next few weeks.</p></div>
+
 
 
 ## What is service configuration?
@@ -150,7 +153,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies the load balancing method for this service. Accepted values are: <em>roundrobin</em>, <em>sticky</em>, <em>closest</em>. Default value is <em>roundrobin</em> </td> 
     </tr> 
     <tr> 
-     <td> <a href="/{{page.collection}}/how-to-guides/deployment/shells/setting-up-custom-livelogs.html">log_folder</a> </td> 
+     <td>log_folder</td> 
      <td> Folder your services logs to, mounted to <code>/var/log/containers/service</code> on the host filesystem. </td> 
     </tr> 
     <tr> 

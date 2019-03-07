@@ -10,9 +10,12 @@ tags: ["getting-started"]
 permalink: /:collection/:path
 ---
 
+## Notice
+<div class="notice notice-warning"><p>This documentation set has been merged with the <a href="/maestro/">Maestro Version 2</a> documentation and is officially deprecated. These pages will be redirected to their equivalents in that doc set within the next few weeks.</p></div>
+
 
 ## Setting up a Docker Deployment
- Once all of the services have been successfully built you'll see the option to Setup a new deployment. You can deploy your app to any of your favorite cloud providers or to your own [registered servers]({% if page.collection != "skycap" %}/{{page.collection}}/tutorials/registered-servers.html{%else%}/maestro/tutorials/registered-servers.html{%endif%}).
+ Once all of the services have been successfully built you'll see the option to Setup a new deployment. You can deploy your app to any of your favorite cloud providers or to your own [registered servers]({% if page.collection != "maestro" %}/{{page.collection}}/tutorials/registered-servers.html{%else%}/maestro/how-to-guides/deployment/registered-servers.html{%endif%}).
 
 
     
@@ -66,7 +69,7 @@ Lets add the MySQL Data Source, you can add as many Data Sources as your app req
 
 Now the Rails app is configured to run in a container and we've setup a separate MySQL database server. All that remains is to decide what cloud provider to use and what server size and region we should deploy to.
 
-Remember, you can also deploy to your own servers. However you should first [add them as registered servers]({% if page.collection != "skycap" %}/{{page.collection}}/tutorials/registered-servers.html{%else%}/maestro/tutorials/registered-servers.html{%endif%}).
+Remember, you can also deploy to your own servers. However you should first [add them as registered servers]({% if page.collection != "maestro" %}/{{page.collection}}/tutorials/registered-servers.html{%else%}/maestro/how-to-guides/deployment/registered-servers.html{%endif%}).
 
 
 ## Configuring Servers

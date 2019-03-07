@@ -10,6 +10,9 @@ tags: ["getting-started"]
 permalink: /:collection/:path
 ---
 
+## Notice
+<div class="notice notice-warning"><p>This documentation set has been merged with the <a href="/maestro/">Maestro Version 2</a> documentation and is officially deprecated. These pages will be redirected to their equivalents in that doc set within the next few weeks.</p></div>
+
 
 ## Overview & Prerequisites
 
@@ -49,7 +52,7 @@ Give the project a name, then you can add services. You can add as many services
 
 - **I'm using a GitHub Repo** — This is the easiest way to add services from GitHub repos. You will need to link your GitHub account with Cloud 66 before you can take advantage of this. You can do this by clicking the Lets link with GitHub now link that will appear if you haven't signed up to Cloud 66 with GitHub.
 
-- **I'm using a manual Git Repo** — Use this option if you have a private git repo or you're using another git provider such as BitBucket. You can also choose this if you don't want to link Cloud 66 to your GitHub account. You will need to [add and approve the Cloud 66 public key](/{{page.collection}}/references/connect-cloud66-to-git-repo.html) if your repo is private. You'll be prompted to do this if required.
+- **I'm using a manual Git Repo** — Use this option if you have a private git repo or you're using another git provider such as BitBucket. You can also choose this if you don't want to link Cloud 66 to your GitHub account. You will need to add and approve the Cloud 66 public key if your repo is private. You'll be prompted to do this if required.
 
 - **It's a Docker Image** — Use this to add pre-built images to a project. You can use a service like DockerHub or your own private image repo. If you're using a private repository you'll be prompted to add the necessary login credentials.
 

@@ -1,14 +1,13 @@
 ---
 layout: post
 template: one-col
-title: Setup Network Configuration for your services
+title: Configuring network access to your application
 categories: tutorials
-lead: "Configure the service network"
+lead: "How to configure your application to be available on the public internet"
 legacy: false
 tags: ["security", "customization", "service.yml"]
 permalink: /:collection/:path
 ---
-
 
 
 ## Traffic distribution
@@ -18,7 +17,7 @@ The external traffic to your server(s) is distributed by a Nginx reverse proxy f
 
 ## ContainerNet
 
-ContainerNet is a private and secure network (based on [Weave](http://weave.works/)) between all containers across all the servers and components in your stack, including databases. This network provides an internal IP address to each container, automatically updating with DHCP and DNS and is fully integrated with the {% if page.collection == "skycap" %}[life-cycle management of your services](/maestro/tutorials/service-network-configuration.html){% else %}[life-cycle management of your services](/{{page.collection}}/tutorials/service-network-configuration.html){% endif %}.
+ContainerNet is a private and secure network (based on [Weave](http://weave.works/)) between all containers across all the servers and components in your stack, including databases. This network provides an internal IP address to each container, automatically updating with DHCP and DNS and is fully integrated with the {% if page.collection == "skycap" %}[life-cycle management of your services](/maestro/how-to-guides/deployment/service-network-configuration.html){% else %}[life-cycle management of your services](/{{page.collection}}/tutorials/service-network-configuration.html){% endif %}.
 
 
 ### Encryption

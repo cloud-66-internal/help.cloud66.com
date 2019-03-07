@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Create symbolic links in Ubuntu
+title: Using symbolic links
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to use Ubuntu symbolic links with Cloud 66"
 legacy: false
 tags: ["customization"]
 
@@ -19,7 +19,7 @@ the public/system folder which is already auto-symlinked to shared/system on eac
 
 ## Symbolic link
 
-Alternatively, you can use [deploy hooks](/{{page.collection}}/tutorials/deploy-hooks.html) to create the symbolic link. Also, you can use _$STACK_BASE_ for your stack base path (eg. _$STACK_BASE/shared/uploads_) for your deploy hook script.
+Alternatively, you can use [deploy hooks](/{{page.collection}}/tutorials/deploy-hooks.html) to create the symbolic link. Also, you can use _$STACK_BASE_ for your application base path (eg. _$STACK_BASE/shared/uploads_) for your deploy hook script.
 
 To create the symbolic link, your deploy hook script could contain this:
 

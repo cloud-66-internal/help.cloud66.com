@@ -1,32 +1,28 @@
 ---
 layout: post
 template: one-col
-title: How to add an SSL Certificate
+title: Adding an SSL certificate to Nginx
 categories: how-to-guides/security
-lead: ""
+order: 1
+lead: "How to add an SSL certificate to Nginx within Maestro"
 legacy: false
 tags: ["ssl"]
 permalink: /:collection/:path
 ---
 
+## Generate a certificate
 
+First, generate a key and certificate signing request:
 
-## Certificate signing request
-
-To generate a key and certificate signing request, follow the steps below.
-
-1.  Generate a private _key_ through your command line, without specifying a passphrase:
-2.  Create a certificate signing request and enter your information as requested:
-3.  Provide this CSR file to your certificate authority, who will in turn provide you with a certificate (CRT) file.
+1.  Generate a private _key_ through your command line, without specifying a passphrase
+2.  Create a certificate signing request and enter your information as requested
+3.  Provide this CSR file to your certificate authority, who will, in turn, provide you with a certificate (CRT) file.
 4.  Use the original .key file together with this .crt file on Cloud 66.
 
-
+If you're not sure how to do any of the steps above, follow the first three steps of our [blog post](https://blog.cloud66.com/registering-ssl-certificate-with-amazon-elastic-load/).
 
 ## Important
-
-You cannot use passphrase protected certificate keys with Nginx. Learn how to [remove the passphrases from certificate keys](/{{page.collection}}/how-to-guides/security/ssl-certificate.html).
-
-
+<div class="notice notice-warning"><p>You cannot use passphrase protected certificate keys with Nginx. Learn how to <a href="/maestro/how-to-guides/security/remove-passphrase.html">remove the passphrases from certificate keys</a>.</p></div>
 
 ## Intermediate certificates
 
@@ -51,15 +47,13 @@ $ cat COMODORSAExtendedValidationSecureServerCA.crt COMODORSAAddTrustCA.crt AddT
 ```
 
 
-
-
 ## Separate domains with different certificates
 
 ```
-If this doesn't work make sure that your certificates don't need password.
+If this doesn't work make sure that your certificates don't need passwords.
 ```
 
-You may need to serve different parts of your application on separate domains, each with its own SSL certificate. You can use [Nginx CustomConfig](/{{page.collection}}/how-to-guides/deployment/shells/nginx-modules.html) to set this up - you will basically have two server blocks listening on different domains, and serving different certificates (located on the server):
+You may need to serve different parts of your application on separate domains, each with its own SSL certificate. You can use [Nginx CustomConfig](/maestro/how-to-guides/nginx/nginx-modules.html) to set this up - you will basically have two server blocks listening on different domains, and serving different certificates (located on the server):
 
 ```
 {% raw %}{% if allow_ssl == true %}

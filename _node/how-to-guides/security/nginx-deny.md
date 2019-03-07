@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Nginx allow and deny by IP
+title: Enabling IP access control via Nginx
 categories: how-to-guides/security
 lead: ""
 legacy: false

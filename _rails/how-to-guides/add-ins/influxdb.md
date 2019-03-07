@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title:  "How to use the InfluxDB Add-in"
+title:  "Using the InfluxDB Add-in"
 categories: how-to-guides/add-ins
-lead: Add InfluxDB to your stack with ease
+order: 10
+lead: Add InfluxDB to your application
 tags: ['Add in']
 legacy: false
 permalink: /:collection/:path

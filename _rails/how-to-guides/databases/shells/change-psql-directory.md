@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: How to change the data directory for PostgreSQL
+title: Chaning data directory for PostgreSQL
 categories: "how-to-guides/databases"
-lead: ""
+order: 5
+lead: "How to change the directory in which PostgreSQL stores its data"
 legacy: false
 tags: ["debugging","postgresql","customization"]
 

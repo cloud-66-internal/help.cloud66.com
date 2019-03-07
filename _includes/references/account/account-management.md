@@ -1,21 +1,28 @@
 
-## View account information
-To view your account information, visit the _Account_ link at the top right corner of your Cloud 66 account.
+## View & update account information
+
+1. Open your [Dashboard](https://app.cloud66.com/dashboard)
+2. Click on your account avatar (top-right) and select *Account Settings*
+
+You can use this interface to change things like contact details and global account settings like timezone. 
 
 ## Delete your account
-To delete your account, visit the _Account_ link at the top right corner of your Cloud 66 account. Next, click on 
-Delete My Account
- at the bottom, and confirm if you wish to proceed.
+
+To delete your account: 
+
+1. Open your [Dashboard](https://app.cloud66.com/dashboard)
+2. Click on your account avatar (top-right) and select *Account Settings*
+3. Click on **Delete My Account** at the bottom of the main panel, and confirm if you wish to proceed.
 
 If the link is not present, you will need to switch to your own organization (see below) and then it will appear.
 
 ## Organizations
 
-When you sign up for Cloud66 you will have your own organization even if you sign up to join a team. To switch your organization, use the dropdown menu in the top right corner of your Cloud 66 account, and simply select the name of the organization you would like to switch to.
+When you sign up for Cloud 66 you will have your own organization even if you sign up to join a team. To switch your organization, use the dropdown menu in the top right corner of your Cloud 66 account, and simply select the name of the organization you would like to switch to.
 
 
-## Note:
-
-There will not be any dropdown if you are part of **only one** (account owner) organization 
-
+#### Note
+<div class="notice notice-warning"><p>
+There will not be any dropdown if you are part of <strong>only one</strong> (account owner) organization 
+</p></div>
 

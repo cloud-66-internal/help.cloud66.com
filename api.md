@@ -2,7 +2,7 @@ FORMAT: 1A
 HOST: https://app.cloud66.com/api/3
 
 # Group Introduction
-[Cloud 66](http://www.cloud66.com) is a full stack container management as a service. It allows you to build, provision, configure and manage Docker containers on your own server on any cloud. You can find more information on Cloud 66 on [our help site](http://help.cloud66.com/).
+[Cloud 66](http://www.cloud66.com) provides full stack container management as a service. It allows you to build, provision, configure and manage Docker containers on your own server on any cloud. You can find more information on Cloud 66 on [our help site](http://help.cloud66.com/).
 
 ### Resource model
 The Cloud 66 API is organised around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). It is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors.

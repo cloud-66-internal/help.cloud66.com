@@ -1,12 +1,12 @@
 
 
-Global search is available on all pages and searches your stacks, servers, services, containers and more across your account.
+Global search is available on all pages and searches your applications (stacks), servers, services, containers and more across your account.
 
 ## Basic Search
 
 You can type and word or phrase in the search bar at the top of each page to start your search. By default this will search the following:
 
-- Stacks
+- Applications (stacks)
 - Servers
 - Services
 - Containers
@@ -25,17 +25,17 @@ You can narrow the search down with the "advanced search syntax". The general se
 type:server
 ```
 
-Global search supports thse generic search directives:
+Global search supports these generic search directives:
 
 - `tag` Search the tags
 - `type` Search by type. Valid values are `stack`, `server`, `service`, `container`, `firewall`, 'environment' and 'deployment'
 
 Each specific type might have some specific directives.
 
-### Stack directives
+### Application directives
 
-- `name` Search the stack name
-- `env` Search the stack environment
+- `name` Search the application name
+- `env` Search the application environment
 
 ### Server directives
 
@@ -59,9 +59,9 @@ Firewalls can be search only by their tags.
 - `image` Search by the image name used by the container
 - `server` Search by the name of the server running containers
 
-### Environment Variables
+### Environment Variables
 
-- `key` Search environment variables by their key
+* `key` Search environment variables by their key
 
 ### Deployment Variables
 
@@ -71,9 +71,9 @@ Firewalls can be search only by their tags.
 
 ## Complex queries
  
-You can always combine queries to narrow your search donw. Some examples are below:
+You can always combine queries to narrow your search down. Some examples are below:
 
 
-- `type:server type:stack` returns all servers and stack under your currently selected account
-- `env:production tag:active` returns all production stacks with a tag called `active`
+- `type:server type:stack` returns all servers and applications (stacks) under your currently selected account
+- `env:production tag:active` returns all production applications with a tag called `active`
 - `lion type:firewall type:server name:bigcustomer` returns everything within servers and firewall rules of any entity with a name of `bigcustomer` that has `lion` in it.

@@ -1,3 +1,3 @@
 ---
-newUrl: /rails/how-to-guides/
+newUrl: /rails/how-to-guides/deployment/
 ---

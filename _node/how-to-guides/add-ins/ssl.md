@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "About SSL certificate"
+title:  "Using the SSL certificate Add-in"
 categories: how-to-guides/add-ins
 lead: SSL certificate add-in
 legacy: false

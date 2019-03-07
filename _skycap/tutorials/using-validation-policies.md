@@ -64,12 +64,24 @@ In order to create a validation policy within any Formation:
 7. Type `kind: Service` into the *Selector* field (we’ll explain more about this later)
 8. Add a commit message and click *Save policy*
 
+## Using Selector field
+
+The Selector field allows you to specify which Stencils will use a verification policy by matching on a specified key-value pair. This allows you to use a single policy to check multiple Stencils of the same type within a Formation.
+
+In our example above we used the Selector `kind: Service`, so the validation will be applied only to Stencils containing that value. You can define any key-value pair as a Selector using the same `key: value` notation. 
 
 ## Testing a validation policy
 
 Validation policies are called each time you render a Formation. To test that our new *NoPort5000* policy is working, we simply visit the Formation detail page and click *Render Formation*.
 
 Since our Hello World Formation does use Port 5000 in the `helloworld_service.yml` our Render process will warn us about this issue when we try to download our stencils.
+
+
+## Managing multiple policies
+
+You can add as many validation policies as you need. The policies will be validated in the order in which they appear on the *Policies* tab (on the **Formations** detail page). This means you can insert a more generic policy first and then add more detailed and specific policies later in the list. 
+
+You can change the load order of policies by dragging and dropping them in the list. Once you’re satisfied with your policies you can render your formation by simply visit the Formation detail page and clicking *Render Formation*.
 
 
 ## What’s next?

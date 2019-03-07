@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: How to configure Nginx
+title: Nginx options and variables
 categories: references
 lead: "Nginx within the stack"
 legacy: false
@@ -14,7 +14,7 @@ permalink: /:collection/:path
 
 ## About Nginx
 
-Stacks deployed with Cloud 66 use [Nginx](http://nginx.com) as their web server, and its configuration is dependant on the resources of your server(s). Nginx is a high performance, open source web server used by some of the biggest web services in the world.
+Applications deployed with Cloud 66 use [Nginx](http://nginx.com) as their web server, and its configuration is dependant on the resources of your server(s). Nginx is a high performance, open source web server used by some of the biggest web services in the world.
 
 
 ## Nginx configuration
@@ -101,7 +101,7 @@ The following table outlines the default configuration of Nginx.
     <tr> 
      <td></td> 
      <td width="20%"> passenger_ruby </td> 
-     <td> [stack ruby shell] </td> 
+     <td> [application ruby shell] </td> 
     </tr> 
     <tr> 
      <td></td> 
@@ -178,7 +178,7 @@ The following table outlines the default configuration of Nginx.
     <tr> 
      <td></td> 
      <td width="20%"> rails_env </td> 
-     <td> [stack environment] </td> 
+     <td> [application environment] </td> 
     </tr> 
     <tr> 
      <td></td> 
@@ -188,7 +188,7 @@ The following table outlines the default configuration of Nginx.
     <tr> 
      <td></td> 
      <td width="20%"> root </td> 
-     <td> /var/deploy/[stack name]/web_head/current/public </td> 
+     <td> /var/deploy/[application name]/web_head/current/public </td> 
     </tr> 
     <tr> 
      <td></td> 
@@ -948,12 +948,12 @@ There are two ways for you to create a custom Nginx 50X error page:
 
 ## Customize your Nginx configuration
 
-Cloud 66 makes it easy for you to customize your Nginx configuration. From your stack detail page, access your web server group page (eg. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](/{{page.collection}}/tutorials/custom-config.html) to customize the configuration.
+Cloud 66 makes it easy for you to customize your Nginx configuration. From your Application Overview, access your web server group page (eg. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](/{{page.collection}}/tutorials/custom-config.html) to customize the configuration.
 
-Editing and committing your Nginx CustomConfig will perform the following steps on **every web server in your stack**, one by one, sequentially:
+Editing and committing your Nginx CustomConfig will perform the following steps on **every web server in your application**, one by one, sequentially:
 
 *   Check your template for Liquid syntax errors
-*   Determine the correct Passenger path (Passenger stacks only)
+*   Determine the correct Passenger path (Passenger applications only)
 *   Check the version of your Passenger, and determine if Nginx needs to use a Ruby shell wrapper
 *   Count the number of cores on the server
 *   Compile the Nginx configuration based on the information from the server
@@ -971,7 +971,7 @@ A bad configuration may stop your Nginx from functioning, so take extra care whe
 
 ### Nginx CustomConfig variables
 
-The following variables are available for use in your **Docker stack** Nginx CustomConfig.
+The following variables are available for use in your **Docker application** Nginx CustomConfig.
 
 <table class="table table-bordered table-striped"> 
    <colgroup> 
@@ -1095,7 +1095,7 @@ The following variables are available for use in your **Docker stack** Nginx Cus
     <tr> 
      <td>stack_supports_nginx_tcp_and_udp_reverse_proxy</td> 
      <td>boolean</td> 
-     <td>Does your stack support TCP and UDP reverse proxy?</td> 
+     <td>Does your application support TCP and UDP reverse proxy?</td> 
     </tr> 
     <tr> 
      <td>supports_tcp_proxy</td> 

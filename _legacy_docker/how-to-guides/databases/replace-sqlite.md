@@ -9,6 +9,9 @@ legacy: true
 permalink: /:collection/:path
 ---
 
+## Notice
+<div class="notice notice-warning"><p>This documentation set has been merged with the <a href="/maestro/">Maestro Version 2</a> documentation and is officially deprecated. These pages will be redirected to their equivalents in that doc set within the next few weeks.</p></div>
+
 
 ## Instructions
 Switching to another SQL-based database is easy, and the following instructions show you how to switch to MySQL or PostgreSQL in five simple steps.
@@ -31,5 +34,5 @@ Switching to another SQL-based database is easy, and the following instructions 
 4.  Commit and check changes in.
 5.  Rebuild your stack.
 
-More information about [databases](/{{page.collection}}/tutorials/database-backup.html) supported by Cloud 66.
+More information about [databases](/{{page.collection}}/how-to-guides/add-ins/database-backup.html) supported by Cloud 66.
 

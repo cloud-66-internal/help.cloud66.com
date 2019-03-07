@@ -9,6 +9,9 @@ tags: ["git"]
 permalink: /:collection/:path
 ---
 
+## Notice
+<div class="notice notice-warning"><p>This documentation set has been merged with the <a href="/maestro/">Maestro Version 2</a> documentation and is officially deprecated. These pages will be redirected to their equivalents in that doc set within the next few weeks.</p></div>
+
 ## Public repositories
 
 For public Git repositories, you don't need to add the SSH key provided to your Git account. You simply need to provide the Git URL as either

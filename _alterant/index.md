@@ -99,7 +99,9 @@ With Alterant, we can write a simple Javascript file to add the sidecar to any i
 
 ```javascript
 sidecar = YamlReader("sidecar.yaml")
-$.spec.template.spec.containers.push(sidecar)
+$$.forEach($ => {
+	$.spec.template.spec.containers.push(sidecar)
+});
 ```
 
 I can then put the sidecar configuration in a file called `sidecar.yaml`:

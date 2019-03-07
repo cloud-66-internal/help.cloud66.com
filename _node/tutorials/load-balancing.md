@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: What is Load Balancing?
+title: Adding a load balancer
 categories: tutorials
-lead: ""
+lead: "How to add a load balancer to your application"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path

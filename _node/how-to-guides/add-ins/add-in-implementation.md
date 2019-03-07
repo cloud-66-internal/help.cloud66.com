@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "How to implement Add-ins"
+title:  "An introduction to Add-ins"
 categories: how-to-guides/add-ins
-lead: Extend the functionality of your stack with add-ins
+lead: Extend the functionality of your application with add-ins
 tags: ['Add ins']
 legacy: false
 permalink: /:collection/:path

@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title:  "How to use the RabbitMQ Add-in"
+title:  "Using the RabbitMQ Add-in"
 categories: how-to-guides/add-ins
-lead: Add RabbitMQ to your stack with ease
+order: 10
+lead: Add RabbitMQ to your application
 tags: ['Add in']
 legacy: false
 permalink: /:collection/:path

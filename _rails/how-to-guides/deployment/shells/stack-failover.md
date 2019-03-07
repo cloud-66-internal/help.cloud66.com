@@ -1,9 +1,10 @@
 ---
 layout: post
 template: one-col
-title: How to deal with a failover group
+title: Using failover groups
 categories: how-to-guides/deployment
-lead: ""
+order: 16
+lead: "How to set up and use a failover group"
 legacy: false
 tags: ["high-availability"]
 

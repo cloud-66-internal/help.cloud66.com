@@ -1,5 +1,5 @@
 
-Cloud 66 makes it easy for you to run and restore your [database backups]({% if page.collection == "skycap" %}/maestro/tutorials/database-backup.html{% else %}/{{page.collection}}/tutorials/database-backup.html{% endif %}), but you can also manage them yourself. This includes downloading the backup, unzipping it, moving it to another server and restoring it. What follows is a logical scenario of what a user is likely to face in this situation.
+Cloud 66 makes it easy for you to run and restore your [database backups]({% if page.collection == "maestro" %}/maestro/how-to-guides/add-ins/database-backup.html{% else %}/{{page.collection}}/how-to-guides/add-ins/database-backups.html{% endif %}), but you can also manage them yourself. This includes downloading the backup, unzipping it, moving it to another server and restoring it. What follows is a logical scenario of what a user is likely to face in this situation.
 
 
 ## Download your backup
@@ -7,11 +7,11 @@ You can retrieve your backup in one of three ways:
 
 
 ### 1. Cloud 66 toolbelt
-The best way to retrieve your database backup is by using the [toolbelt backup management](/{{page.collection}}/references/shells/toolbelt.html#about-backup-management). Your backup may be bigger than 250 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
+The best way to retrieve your database backup is by using the [toolbelt backup management]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#about-backup-management). Your backup may be bigger than 250 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
 
 
 ### 2. Cloud 66 web UI
-Access your stack detail page, and click the link for your database backup add-in. This page lists your available database backups, and allows you to download and restore each one. Click the download icon to view the available downloads, and either download through your browser or with the command line (option 3 below).
+Access your Application Overview, and click the link for your database backup add-in. This page lists your available database backups, and allows you to download and restore each one. Click the download icon to view the available downloads, and either download through your browser or with the command line (option 3 below).
 
 
 ### 3. Command line
@@ -51,9 +51,6 @@ To move your backup to a remote server, we will use SCP:
 ```
 $ scp  -i <identity_file> database_dump.sql <remote_server_user>@<remote_server_address>:/tmp
 ```
-
-
-
 
 ## Restore your backup on another server
 
