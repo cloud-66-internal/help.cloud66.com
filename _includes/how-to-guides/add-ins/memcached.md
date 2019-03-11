@@ -2,6 +2,13 @@
 
 [Memcached](http://memcached.org/) is an open source, high-performance, distributed memory object caching system, and it's easy to add to your application as an add-in.
 
+<div class="notice notice-warning">
+    <p>
+        The Memcached add-in is designed for use with Classic Rails and CSV1 (container stack, V1) stacks.<br>
+        <a href="https://community.cloud66.com/t/how-do-i-add-memcached-to-my-application/54" title="An example of how to install Memcached as a Service">Newer CSV2 stacks should implement Memcached as a service</a>
+    </p>
+</div>
+
 ## Add Memcached
 To add Memcached to your application, access the add-ins menu, click _Memcached_ and confirm the installation. This will install Memcache on your servers for use with your application - you just need to ensure that your app is configured accordingly.
 

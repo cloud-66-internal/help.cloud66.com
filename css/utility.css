@@ -159,3 +159,10 @@
 .u-verticalAlignMiddle {
     vertical-align: middle;
 }
+
+.u-textMuted {
+  color: #a0a0a0 !important;
+}
+.u-text12 {
+  font-size: 12px !important;
+}

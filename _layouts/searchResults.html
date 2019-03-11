@@ -24,13 +24,12 @@
 		<link rel="icon" href="/images/ui/favicon.ico" type="image/png">
 		{% include styles.html %}
 		<link rel="stylesheet" href="/css/searchResults.css">
-
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-		<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-
-		<!-- Script for performing search & displaying results -->
-		<script type="text/javascript" src="js/searchResults.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		 crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/handlebars.js"></script>
+		<script type="text/javascript" src="js/google_custom_search.js"></script>
 	</head>
 
 	<body class="Body Body--home">
@@ -46,9 +45,14 @@
 
 			<!-- Container for the search results, filled in with JavaScript -->
 			<div id="hits" class="Landing">
-				<section class="LandingContainer content">
-					<h1 class="SearchResults-title" id="title"></h1> <!-- Content set in script -->
-					<ul class="SearchResults" id="search-results-container">
+				<section class="LandingContainer content" id="js_search_results_container">
+					<p id="js_search_title">You searched for <strong class="SearchResults-title"></strong></p>
+					<ul class="SearchResults" id="js_search_results_list">
+						<li>
+							<p>
+								<div class="is-loading"></div> Getting Search Results&hellip;
+							</p>
+						</li>
 					</ul>
 				</section>
 			</div>
@@ -56,6 +60,16 @@
 		</main>
 
 		{% include footer.html %}
+		<script>
+			// q
+			var url_string = window.location.href;
+			var url = new URL(url_string);
+			var q = url.searchParams.get("q");
+			// search
+			var script = document.createElement('script');
+			script.src = "https://www.googleapis.com/customsearch/v1/siterestrict?key=AIzaSyBKWduLZEHa_qmlnVlpd2JzSdLDDoY5uD4&cx=005542367771770094844:wfitaj44ofm&callback=C66.HelpSearch.init&q=" + q;
+			document.getElementsByTagName('script')[0].parentNode.appendChild(script);
+		</script>
 	</body>
 
 </html>

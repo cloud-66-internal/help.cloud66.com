@@ -46,20 +46,16 @@
     </ul>
 
     <form id="Search_box" class="Header-search"  action="/searchResults.html">
-
         {% if page.collection %}
 
         <input type="text" id="search-query-home" name="q" class="search" placeholder="Search the Docs" />
 
         {% if jekyll.environment == "production" %}
-        <input type="hidden" name="idx" value="help" />
+            <input type="hidden" name="idx" value="help" />
         {% else %}
-        <input type="hidden" name="idx" value="help_tmp" />
+            <input type="hidden" name="idx" value="help_tmp" />
         {% endif %}
-
-        <input type="hidden" name="product" value={{page.collection}} />
-
+            <input type="hidden" name="product" value={{page.collection}} />
         {% endif %}
-
     </form>
 </header>

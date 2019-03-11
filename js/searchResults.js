@@ -108,7 +108,7 @@ function displayOtherProducts() {
 	div.addEventListener('mouseout', (event) => {
 		document.getElementById('other-products').style.display = 'none';
 	});
-	
+
 	// when the user clicks on the product: the search is performed for this product
 	const productsList = document.getElementById('other-products').getElementsByTagName('li');
 	for (var i = 0; i < productsList.length; i++) {
@@ -154,4 +154,3 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	});
 
 });
-
