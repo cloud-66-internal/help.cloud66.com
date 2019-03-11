@@ -112,6 +112,37 @@ If you’d like to understand this concept better, read this [excellent in-depth
 <div class="notice"><p>
 In this context, <em>outside world</em> is used for any client of your service that's not inside the container. This includes any of your other services running on other environments.</p></div>
 
+## Nodes, masters & workers
+
+### Overview
+
+In Kubernetes nomenclature, each server (whether physical or virtual) running Kubernetes-related tasks is called a “node”. There are two main types of nodes:
+
+1. **Masters** which provide the control plane for a cluster
+2. **Workers** which run the application containers (AKA workloads)
+
+It’s quite common for nodes to be shared between Masters and Workers. This is useful for smaller and less complex Kubernetes environments but is not recommended for applications with significant traffic.
+
+### Shared vs dedicated Master nodes
+
+In a purist Kubernetes setup, Master nodes are kept separate from Worker nodes, but it’s often more efficient to allow your Master node to run workloads. This is particularly useful in development environments because it reduces the number of servers required by the cluster.
+
+The first time Cloud 66 provisions a new Kubernetes cluster, we default to the **shared master** architecture. This can be changed via the [Dashboard](/maestro/how-to-guides/scaling/scaling.html#kubernetes-cluster-servers) or [manifest.yml](/maestro/how-to-guides/deployment/building-a-manifest-file.html).
+
+## High availability & multiple masters
+
+### High availability for Worker nodes
+
+One of the benefits of using Kubernetes is its inherent capacity for high availability. Because pods and containers are ephemeral, workloads can easily be shifted between nodes. This makes achieving high availability for workloads very similar to scaling: by adding more Worker nodes you can achieve both scale and redundancy. 
+
+### High availability for Master nodes
+
+Unlike Workers, Master nodes don’t automatically benefit from being scaled horizontally. This is because Kubernetes masters use a **majority consensus** algorithm to resolve any disputes that might occur. This means that the minimum number of Masters required for high availability is **three**. 
+
+To understand why this is, consider the following example: You create a cluster with 10 Workers and 2 dedicated Masters. The cluster runs fine until there’s a network disruption and the Masters disagree about the state of one of the Workers. Since the replication algorithm relies on a majority consensus, the Masters will be unable to come to a majority “decision” (because there is a 50:50 split in “opinion”). So a cluster with two Masters is actually **less highly available** than a cluster with a single master.
+
+So, in order for a Kubernetes to be truly highly available, it needs to have **an odd number of Masters that is greater than 1**.
+
 ## Scaling 
 
 As your application gains users, it may require more resources to support its functions. In the context and Kubernetes (and thus Maestro) there are three main ways to scale an application:
