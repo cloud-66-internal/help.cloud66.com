@@ -50,10 +50,12 @@
 					<ul class="SearchResults" id="js_search_results_list">
 						<li>
 							<p>
-								<div class="is-loading"></div> Getting Search Results&hellip;
+								<span class="is-loading"></span> Getting Search Results&hellip;
 							</p>
 						</li>
 					</ul>
+					<div id="js_search_results_paging">
+					</div>
 				</section>
 			</div>
 
@@ -66,8 +68,10 @@
 			var url = new URL(url_string);
 			var q = url.searchParams.get("q");
 			// search
+			var key = "AIzaSyBKWduLZEHa_qmlnVlpd2JzSdLDDoY5uD4";
+			var cx = "005542367771770094844:wfitaj44ofm"; // custom search engine id
 			var script = document.createElement('script');
-			script.src = "https://www.googleapis.com/customsearch/v1/siterestrict?key=AIzaSyBKWduLZEHa_qmlnVlpd2JzSdLDDoY5uD4&cx=005542367771770094844:wfitaj44ofm&callback=C66.HelpSearch.init&q=" + q;
+			script.src = "https://www.googleapis.com/customsearch/v1/siterestrict?key="+key+"&cx="+cx+"&callback=C66.HelpSearch.init&q=" + q;
 			document.getElementsByTagName('script')[0].parentNode.appendChild(script);
 		</script>
 	</body>
