@@ -40,8 +40,6 @@ Handlebars.registerHelper('global', window);
 
 C66.HelpPager = {
 	bindEvents: function() {
-		console.log('hello worldz');
-		
 		$(document).on('click', 'a.js_next_link', function(e){
 			e.preventDefault();
 			$("#js_search_results_list").html('<p class="SearchResults-text">Loading next page</p>');
@@ -86,6 +84,7 @@ C66.HelpSearch = {
         this.renderSearchResultsTemplate(json, q);
         // this.renderSummaryTemplate(json);
     }
+	
   },
 
   renderNoResultsTemplate() {
@@ -102,24 +101,37 @@ C66.HelpSearch = {
 
   renderSearchResultsTemplate(json, q) {
 	console.log('render the search results template');
+	console.log(json);
     var compiledTemplate = Handlebars.getTemplate("searchResults");
     var searchResultsHtml = compiledTemplate(json);
     $("#js_search_results_list").html(searchResultsHtml);
 	$('#search-query-home').val(q);
 	
+	$('#js_search_results_paging').html('');
+	
+	console.log('render next page link')
 	if ( json.queries.nextPage ) {
-		var next = json.queries.nextPage[0].startIndex
-		console.log(next);
-		console.log(window.script.src+'&start='+next)
-		var nextLink = '<div class="Paging Paging-next"><a class="js_next_link" href="https://www.googleapis.com/customsearch/v1/siterestrict?key=AIzaSyBKWduLZEHa_qmlnVlpd2JzSdLDDoY5uD4&cx=005542367771770094844:wfitaj44ofm&q='+q+'&start='+next+'">Next</a></div>';
-		$('#js_search_results_paging').html(nextLink);
+		if ( json.queries.nextPage[0].startIndex ) {
+			var next = json.queries.nextPage[0].startIndex;
+			var nextLink = '<div class="Paging Paging-next"><a class="js_next_link" href="https://www.googleapis.com/customsearch/v1/siterestrict?key=AIzaSyBKWduLZEHa_qmlnVlpd2JzSdLDDoY5uD4&cx=005542367771770094844:wfitaj44ofm&q='+q+'&start='+next+'">Next</a></div>';
+			$('#js_search_results_paging').html(nextLink);
+		}
 	}
+
+	console.log('render prev page link')
 	if ( json.queries.previousPage ) {
 		var prev = json.queries.previousPage[0].startIndex
-		console.log(next);
-		console.log(window.script.src+'&start='+next)
 		var nextLink = '<div class="Paging Paging--prev"><a class="js_next_link" href="https://www.googleapis.com/customsearch/v1/siterestrict?key=AIzaSyBKWduLZEHa_qmlnVlpd2JzSdLDDoY5uD4&cx=005542367771770094844:wfitaj44ofm&q='+q+'&start='+prev+'">Previous</a><span style="margin:0 10px">•</span> </div>';
 		$('#js_search_results_paging').prepend(nextLink);
+	}
+	
+	if ( json.queries.request ) {
+		var count = json.queries.request[0].count;
+		var pageStart = json.queries.request[0].startIndex;
+		var pageEnd =  pageStart + count - 1;
+		var pageInfo = " Displaying " + pageStart + " to " + pageEnd;
+		console.log(pageInfo);
+		$('.SearchResults-meta').append(pageInfo);
 	}
   }
 };
