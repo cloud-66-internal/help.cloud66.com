@@ -44,9 +44,10 @@ C66.HelpPager = {
 		
 		$(document).on('click', 'a.js_next_link', function(e){
 			e.preventDefault();
+			$("#js_search_results_list").html('<p class="SearchResults-text">Loading next page</p>');
+			$("html, body").animate({ scrollTop: 0 }, "slow");
 	        $.getJSON( this.href, function( response ) {
 				console.log('success got some paging results');
-				$("#js_search_results_list").html('<p class="SearchResults-text">Loading next page</p>');
 				C66.HelpSearch.renderSearchResultsTemplate(response, $('#search-query-home').val());
 	        })
 	        .fail(function(jqXHR, textStatus, errorThrown) {
@@ -110,8 +111,15 @@ C66.HelpSearch = {
 		var next = json.queries.nextPage[0].startIndex
 		console.log(next);
 		console.log(window.script.src+'&start='+next)
-		var nextLink = '<div class="Paging" style="padding: 40px 0"><a class="js_next_link" href="https://www.googleapis.com/customsearch/v1/siterestrict?key=AIzaSyBKWduLZEHa_qmlnVlpd2JzSdLDDoY5uD4&cx=005542367771770094844:wfitaj44ofm&q=assets&start='+next+'">Next</a></div>';
+		var nextLink = '<div class="Paging Paging-next"><a class="js_next_link" href="https://www.googleapis.com/customsearch/v1/siterestrict?key=AIzaSyBKWduLZEHa_qmlnVlpd2JzSdLDDoY5uD4&cx=005542367771770094844:wfitaj44ofm&q='+q+'&start='+next+'">Next</a></div>';
 		$('#js_search_results_paging').html(nextLink);
+	}
+	if ( json.queries.previousPage ) {
+		var prev = json.queries.previousPage[0].startIndex
+		console.log(next);
+		console.log(window.script.src+'&start='+next)
+		var nextLink = '<div class="Paging Paging--prev"><a class="js_next_link" href="https://www.googleapis.com/customsearch/v1/siterestrict?key=AIzaSyBKWduLZEHa_qmlnVlpd2JzSdLDDoY5uD4&cx=005542367771770094844:wfitaj44ofm&q='+q+'&start='+prev+'">Previous</a><span style="margin:0 10px">•</span> </div>';
+		$('#js_search_results_paging').prepend(nextLink);
 	}
   }
 };

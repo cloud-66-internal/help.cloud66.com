@@ -1447,22 +1447,38 @@ body.Body--home #search-query-nav {
  * Search Results List
  * .SearchResults
  * ------------------------------------------------------------------  */
-.LandingContainer.content {
+
     .SearchResults-title {
         margin: 0 !important;
+		padding-bottom: 0 !important;
     }
+	
+	.SearchResults-meta {
+		margin-top: -6px;
+		padding-top: 0;
+		padding-left: 1px;
+		line-height: 1;
+		color: #a5a5a5;
+	}
 
     .SearchResults {
         list-style: none;
-        margin-top: -1em;
-        padding-top: 0em;
+        margin-top: 0;
+        padding-top: 12px;
         padding-left: 0;
-        padding-bottom: 1em;
+		padding-left: 0;
+        padding-bottom: 12px;
         line-height: 1;
     }
 
     .SearchResults-item {
-        padding-bottom: 1.2em;
+		padding-top: 0;
+        padding-bottom: 1.3em;
+		margin: 0 !important;
+		
+		a {
+			padding: 0 !important
+		}
 
         .Tag {
             margin-top: 2px;
@@ -1480,18 +1496,22 @@ body.Body--home #search-query-nav {
         line-height: 1;
     }
 
+
     .SearchResults-subTitle {
         font-size: 18px;
         font-weight: bold;
         color: #35689e;
+		padding-top: 0;
         padding-bottom: 2px;
+		margin-top: 0;
         margin-bottom: 0;
         line-height: 1.5;
     }
 
     .SearchResults-text {
         margin: 0;
-        padding-bottom: 0.1em !important;
+        padding-bottom: 0.1em;
+		padding-right: 38px;
         font-size: 15px;
         font-weight: 400;
         color: #666;
@@ -1502,7 +1522,7 @@ body.Body--home #search-query-nav {
         font-style: normal;
         background: #ffffe2;
     }
-}
+
 
 .SearchResults-ico {
     position:relative;
@@ -1531,6 +1551,12 @@ body.Body--home #search-query-nav {
 .SearchResults-ico--legacy_docker {
     background:  transparent url('/images/ui/docker_logo.svg') no-repeat 0 2px;
     background-size: 13px !important;
+}
+
+.Paging {
+	display: inline-block;
+	padding-bottom: 22px;
+	font-weight: 500;
 }
 
 /*

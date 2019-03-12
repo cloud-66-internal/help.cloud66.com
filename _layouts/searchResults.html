@@ -45,15 +45,17 @@
 
 			<!-- Container for the search results, filled in with JavaScript -->
 			<div id="hits" class="Landing">
-				<section class="LandingContainer content" id="js_search_results_container">
+				<section class="LandingContainer" id="js_search_results_container">
 					<p id="js_search_title">You searched for <strong class="SearchResults-title"></strong></p>
-					<ul class="SearchResults" id="js_search_results_list">
+					<div id="js_search_results_list">
+					<ul class="SearchResults">
 						<li>
 							<p>
 								<span class="is-loading"></span> Getting Search Results&hellip;
 							</p>
 						</li>
 					</ul>
+					</div>
 					<div id="js_search_results_paging">
 					</div>
 				</section>
