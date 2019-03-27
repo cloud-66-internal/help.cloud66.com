@@ -8,15 +8,17 @@ lead: "An introduction to the components of Maestro"
 legacy: false
 tags: ["operations", "docker"]
 permalink: /:collection/:path
+search_description: Maestro is a Complete Solution using Docker &amp; Kubernetes for Building and Managing Containerized Infrastructure, on any Cloud or your own Servers.
+product: Maestro  
 ---
 
 ## What is Maestro?
 
-Maestro is a service for configuring and managing the infrastructure required to serve and support containerized applications. 
+Maestro is a service for configuring and managing the infrastructure required to serve and support containerized applications.
 
 Maestro uses **Docker** and **Kubernetes** for container and application management, but it also supports many of the non-containerized services used by a typical application including components like **databases** and **load-balancers**.
 
-Maestro is designed as a complete solution - it can manage every aspect of your container infrastructure - but it can also be integrated with other services. 
+Maestro is designed as a complete solution - it can manage every aspect of your container infrastructure - but it can also be integrated with other services.
 
 Maestro is server-agnostic - it supports both physical and virtual servers and both public and private clouds.
 
@@ -45,7 +47,7 @@ The **Docker runtime** supports the elements that make up a container, and acts 
 
 The **Kubernetes** platform orchestrates the entire lifecycle of a containerized application including deployment, grouping, container-to-container networking and service discovery. It also facilitates the deployment of native components directly to servers, where required. This is often done with stateful components (like databases), although these can also be containerized if necessary.
 
-In the context of CSv2, **Nginx** is mainly used for SSL termination and load balancing. In the case of applications that span across different Kubernetes clusters, Nginx is used for communication between those clusters. 
+In the context of CSv2, **Nginx** is mainly used for SSL termination and load balancing. In the case of applications that span across different Kubernetes clusters, Nginx is used for communication between those clusters.
 
 ### Version 1
 
@@ -57,9 +59,9 @@ In order to manage containerized applications, Maestro Version 1 (CSv1) relies o
 
 The **Docker runtime** supports the elements that make up a container, and acts as a broker between those elements and the underlying infrastructure. It is the engine that makes containers “work”.
 
-The **Cloud 66 container management service** performs much the same task as Kubernetes does in CSv2 (see above) - it manages the lifecycle of containers in your environments. This includes container-to-container networking, as well as container-to-non-container (e.g. DBs) networking. It also includes DNS based service discovery 
+The **Cloud 66 container management service** performs much the same task as Kubernetes does in CSv2 (see above) - it manages the lifecycle of containers in your environments. This includes container-to-container networking, as well as container-to-non-container (e.g. DBs) networking. It also includes DNS based service discovery
 
-In the context of CSv1, **Nginx** is responsible for managing Layer-7 (HTTP/HTTPS) traffic from outside of the application into the containers and facilitates functions like SSL termination and load balancing. 
+In the context of CSv1, **Nginx** is responsible for managing Layer-7 (HTTP/HTTPS) traffic from outside of the application into the containers and facilitates functions like SSL termination and load balancing.
 
 ## Maestro vs Skycap
 
@@ -73,7 +75,7 @@ So, in a nutshell, Skycap helps you to containerize, configure and deploy your a
 
 ## About Docker
 
-[Docker](https://www.docker.com/) is an open-source project that helps developers publish applications inside containers. There are many benefits to using Docker: 
+[Docker](https://www.docker.com/) is an open-source project that helps developers publish applications inside containers. There are many benefits to using Docker:
 
 - **Separation of Dev and Ops**: It has previously been difficult to separate the responsibility between Dev and Ops. With Docker deployments, Devs simply put their code into a container (which they can verify works as expected), and Ops take responsibility for rolling it out and managing it.
 
@@ -90,7 +92,7 @@ So, in a nutshell, Skycap helps you to containerize, configure and deploy your a
 Cloud 66 builds Docker containers in two ways:
 
 1. **Pulling code from Git**: This option uses Cloud 66 BuildGrid to automatically build a Docker image from your code. You just need to provide a [Dockerfile](https://docs.docker.com/reference/builder/) that specifies how you'd like us to build the image. Once your image is ready, it is deployed to your servers and managed. We also version the image and allow you to download it if needed.
-2. **Pre-built image**: You provide a Docker image that you've built or one from a public repo. We deploy that image to your servers and manage its lifecycle. 
+2. **Pre-built image**: You provide a Docker image that you've built or one from a public repo. We deploy that image to your servers and manage its lifecycle.
 
 ## Maestro features
 
@@ -101,7 +103,7 @@ Maestro includes the following:
 - [Storage layer](/maestro/how-to-guides/deployment/service-storage.html)
 - [Scaling](/maestro/how-to-guides/scaling/)
 
-Maestro applications also enjoy the same benefits as other Cloud 66 applications, including: 
+Maestro applications also enjoy the same benefits as other Cloud 66 applications, including:
 
 - [Deployed and managed databases](/maestro/how-to-guides/databases/database-customization.html)
 - Database [backups](/maestro/how-to-guides/databases/shells/manage-backups.html)
