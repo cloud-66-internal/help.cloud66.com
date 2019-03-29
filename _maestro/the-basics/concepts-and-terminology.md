@@ -8,8 +8,8 @@ lead: "Defining the concepts and terms used in this documentation"
 legacy: false
 tags: ["concepts,terms"]
 permalink: /:collection/:path
-search_title: Maestro Concepts &amp; terminology
-search_description: The key concepts of Maestro including: Containerization, Orchestration, Services, Kubernetes, Scaling your app and BuildGrid
+search_title: Maestro Concepts and terminology
+search_description: The key concepts of Maestro including Containerization, Orchestration, Services, Kubernetes, Scaling your app and BuildGrid
 product: Maestro  
 ---
 
