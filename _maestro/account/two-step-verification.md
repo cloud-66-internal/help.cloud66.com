@@ -7,6 +7,7 @@ lead: ""
 legacy: false
 tags: ["account", "security"]
 permalink: /:collection/:path
+product: Maestro
 ---
 
 {%include references/account/two-step-verification.md %}

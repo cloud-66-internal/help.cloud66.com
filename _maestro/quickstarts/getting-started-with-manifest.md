@@ -8,11 +8,14 @@ lead: "Creating your first manifest file"
 legacy: false
 tags: ["manifest", "customization"]
 permalink: /:collection/:path
+search_title: Getting started with manifest files
+search_description: A manifest file defines the configuration of your application's components. It allows you to completely customise your application and control advanced settings not available in the web UI.
+product: Maestro  
 ---
 
 ## What is a manifest file?
 
-A manifest file - also known as `manifest.yml` - defines the configuration of your application's components. It allows you to completely customise the composition of your application and control settings that are not available through the Cloud 66 user interface or Toolbelt. 
+A manifest file - also known as `manifest.yml` - defines the configuration of your application's components. It allows you to completely customise the composition of your application and control settings that are not available through the Cloud 66 user interface or Toolbelt.
 
 ### Manifest file vs service.yml
 
@@ -42,7 +45,7 @@ To access the manifest file for any application:
 2. Click on *Configuration Files* in the right-hand panel
 3. Click on the *Manifest* tab at the top of the main panel
 
-You can now edit the text of your manifest file directly. 
+You can now edit the text of your manifest file directly.
 
 #### Warning
 
@@ -113,7 +116,7 @@ Be careful to ensure that the indentation of this new line is correct. It should
 
 ### Setting a custom Redis version
 
-In this example, we need to use an older version of Redis. To do that, we simply change the version number under `redis`. We will change to version `4.0.9`. 
+In this example, we need to use an older version of Redis. To do that, we simply change the version number under `redis`. We will change to version `4.0.9`.
 
 ### Deploying your application
 
@@ -141,7 +144,7 @@ redis:
 
 Once you are sure the settings are correct, click the green *Deploy* button to start the process.
 
-Once your application has been deployed, you can check whether the settings have been applied by accessing your server via SSH [using Cloud 66 Toolbelt](/maestro/quickstarts/using-cloud66-toolbelt.html). 
+Once your application has been deployed, you can check whether the settings have been applied by accessing your server via SSH [using Cloud 66 Toolbelt](/maestro/quickstarts/using-cloud66-toolbelt.html).
 
 * You can see the nameserver by checking the contents of the `/etc/resolvconf/resolv.conf` directory.
 * You can check the version of redis by typing `redis-server`
