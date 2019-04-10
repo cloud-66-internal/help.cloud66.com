@@ -10,6 +10,6 @@ legacy: false
 permalink: /:collection/:path
 ---
 
-{% assign product = 'maestro' %}
+{% assign product = 'node' %}
 
 {% include references/active-protect.md product = product %}

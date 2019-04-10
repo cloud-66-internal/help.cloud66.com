@@ -122,8 +122,7 @@ StackScore&trade; is a score that provides an indication of how reliable, resili
 - **Performance:** Checks if you have a load balancer, as well as different server configuration metrics.
 - **Security:** Tracks your firewall settings for potential security issues.
 
-### Suggestion
-
+#### Suggestion
 Always try to keep your stacks at an **A** StackScore&trade; level to ensure application health.
 
 Cloud 66 constantly seeks to update and improve the StackScore algorithm to consider new data points as well as external conditions, which means that your StackScore will change over time.

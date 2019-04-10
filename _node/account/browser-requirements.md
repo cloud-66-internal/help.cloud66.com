@@ -8,7 +8,7 @@ legacy: false
 tags: ["account"]
 permalink: /:collection/:path
 ---
-{% assign product = "General" %}
+{% assign product = 'node' %}
 
 
 {%include references/account/browser-requirements.md %}

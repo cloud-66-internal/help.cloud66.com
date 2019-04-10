@@ -2,8 +2,10 @@
 
 A manifest file allows you to be more explicit about your application composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your application. See [Getting started with manifest files](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) for an introduction.
 
-{% if include.product == "rails" %}
+{% if include.product == 'rails' %}
+
 For _Rails/Rack_ applications, place a file called `manifest.yml` in a folder named `.cloud66`, that is in turn located in the root of your source code and checked into your repository.
+
 {% endif %}
 
 Once you're ready, start by going through each section below to build your manifest file.
@@ -30,16 +32,14 @@ Next, select which component you would like to specify settings for. You can cho
 *   [Load balancers](#load-balancers)
 *   [Memcached](#memcached)
 *   [MongoDB](#mongodb)
-*   [MySQL](#mysql)
-*   [Nginx](#nginx)
-*   [Node](#node)
+*   [MySQL](#mysql) 
+*   [Nginx](#nginx) {% if include.product == "rails" %}
+*   [Node version](#node-version) {% endif %}
 *   [PostGIS](#postgis)
 *   [PostgreSQL](#postgresql)
-*   [Redis](#redis)
-{% if include.product == "rails" %}
+*   [Redis](#redis) {% if include.product == "rails" %}
 *   [Sinatra](#sinatra)
-*   [Rails](#rails)
-{% endif %}
+*   [Rails](#rails) {% endif %}
 
 ### ElasticSearch
 
@@ -222,6 +222,8 @@ production:
           credentials: true
 ```
 
+{% if include.product == 'rails' %}
+
 * * *
 
 ### Node version
@@ -238,6 +240,8 @@ rails:
 
 #### Applying changes
 <div class="notice notice-warning"><p>To apply changes to the Node version you need to update your manifest file, then <a href="/rails/how-to-guides/deployment/applying-upgrades.html#types">deploy-with-options</a> and select the <em>Apply Ruby/Node upgrades</em> option.</p></div>
+
+{% endif %}
 
 * * *
 
@@ -276,6 +280,8 @@ production:
 
 * * *
 
+{% if include.product == 'rails' %}
+
 ### Rails
 
 A Rails application type in the manifest file gives you fine control over things like the Ruby version or the server the rails application is deployed on.
@@ -296,7 +302,7 @@ A Rails application type in the manifest file gives you fine control over things
 
 #### Important
 <div class="notice notice-warning">
-<p>In order to use a <em>vpc_id</em>, you must provide </em> for all servers used by your application.</p>
+<p>In order to use a <em>vpc_id</em>, you must provide <em>subnet_id</em> for all servers used by your application.</p>
 </div>
 
 ```
@@ -358,6 +364,8 @@ production:
       nameservers: ['8.8.8.8', '8.8.4.4']
 ```
 
+{% endif %}
+
 ### Redis
 
 - **version**: Specify the version of Redis you want to install.
@@ -373,9 +381,13 @@ production:
       root_disk_type: ssd
 ```
 
+{% if include.product == 'rails' %} 
+
 ### Sinatra
 
 For Sinatra use [Rack](#rack)
+
+{% endif %}
 
 * * *
 

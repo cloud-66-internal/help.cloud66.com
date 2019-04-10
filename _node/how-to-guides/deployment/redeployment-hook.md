@@ -9,6 +9,6 @@ tags: ["operations"]
 permalink: /:collection/:path
 ---
 
-{% assign product = 'Node' %}
+{% assign product = 'node' %}
 
 {% include tutorials/redeployment-hook.md product = product %}

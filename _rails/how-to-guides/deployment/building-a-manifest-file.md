@@ -12,4 +12,4 @@ permalink: /:collection/:path
 
 {% assign product = 'rails' %}
 
-{% include how-to-guides/deployment/building-a-manifest-file.md %}
+{% include how-to-guides/deployment/building-a-manifest-file.md product = product %}

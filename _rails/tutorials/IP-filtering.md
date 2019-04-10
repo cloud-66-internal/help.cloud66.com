@@ -10,6 +10,6 @@ tags: ["operations"]
 permalink: /:collection/:path
 ---
 
-{% assign product = 'maestro' %}
+{% assign product = 'rails' %}
 
 {% include tutorials/network-settings.md product = product %}
