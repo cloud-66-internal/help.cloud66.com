@@ -7,7 +7,7 @@ categories: how-to-guides/formations
 lead: "How to import shared environment variables into Stencils"
 legacy: false
 tags: ["formations", "stencils"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

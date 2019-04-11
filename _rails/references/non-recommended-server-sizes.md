@@ -7,7 +7,7 @@ order: 8
 lead: "Choosing the right server size"
 legacy: false
 tags: ["performance"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Under-powered server sizes (not recommended)

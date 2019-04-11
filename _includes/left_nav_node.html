@@ -61,9 +61,9 @@
         </ul>
 
 	   <ul class="menu-root">
-            {% assign add-ins = include.collection | where:"categories","how-to-guides/scaling" | sort: "order" %}
+            {% assign scaling = include.collection | where:"categories","how-to-guides/scaling" | sort: "order" %}
             <li><h3><a href="/node/how-to-guides/scaling">How-to: Scaling</a></h3></li>
-       {% include left_nav_list.html section=add-ins current=page %}
+       {% include left_nav_list.html section=scaling current=page %}
         </ul>
 
 

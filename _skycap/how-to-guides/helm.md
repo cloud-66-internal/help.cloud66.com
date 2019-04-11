@@ -6,7 +6,7 @@ categories: how-to-guides
 lead: "How to integrate Helm package manager into Skycap"
 legacy: false
 tags: ["customization,helm"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

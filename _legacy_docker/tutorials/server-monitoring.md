@@ -6,7 +6,7 @@ categories: tutorials
 lead: We help you monitor your CPU, memory and disk space
 legacy: false
 tags: ['server', 'operations']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

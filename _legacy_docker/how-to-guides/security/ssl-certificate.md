@@ -6,7 +6,7 @@ categories: how-to-guides/security
 lead: ""
 legacy: true
 tags: ["ssl"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

@@ -7,7 +7,7 @@ lead: ""
 legacy: true
 order: 100
 tags: ["shell"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

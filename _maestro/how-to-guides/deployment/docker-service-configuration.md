@@ -7,7 +7,7 @@ order: 10
 lead: "How to specify custom service configurations for your application"
 legacy: false
 tags: ["customization", "service.yml"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

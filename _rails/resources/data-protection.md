@@ -7,7 +7,7 @@ order: 9
 lead: ""
 legacy: false
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

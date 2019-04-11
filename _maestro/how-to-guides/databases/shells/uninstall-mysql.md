@@ -7,6 +7,6 @@ order: 40
 lead: "How to uninstall default MySQL components on your own servers"
 legacy: false
 tags: ["mysql"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/databases/uninstall-mysql.md %}

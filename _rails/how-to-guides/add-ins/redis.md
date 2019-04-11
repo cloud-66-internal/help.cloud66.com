@@ -7,7 +7,7 @@ order: 4
 lead: Add Redis to your application
 tags: ['Add in']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

@@ -5,7 +5,7 @@ externallink: https://github.com/cloud66-oss/alterant
 title: Alterant Examples
 label: Alterant
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 order: 3
 ---
 

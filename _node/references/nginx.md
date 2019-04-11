@@ -7,7 +7,7 @@ lead: "Nginx within the stack"
 legacy: false
 tags: ["customization", "nginx"]
 order: 90
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

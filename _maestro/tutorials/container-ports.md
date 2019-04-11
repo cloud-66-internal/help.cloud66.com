@@ -7,7 +7,7 @@ order: 1
 lead: "How to map your containers to internal and external ports"
 legacy: false
 tags: ["customization", "service.yml"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

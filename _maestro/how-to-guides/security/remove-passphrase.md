@@ -7,7 +7,7 @@ order: 5
 lead: "How to remove a passphrase from a certificate key"
 legacy: false
 tags: ["security,SSL"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

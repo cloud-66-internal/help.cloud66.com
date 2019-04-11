@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: Simple web-based log analysis service for your servers
 tags: ['Logs', 'Add ins']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

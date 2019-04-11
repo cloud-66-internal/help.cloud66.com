@@ -6,7 +6,7 @@ categories: references
 lead: ""
 legacy: false
 tags: ["security"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

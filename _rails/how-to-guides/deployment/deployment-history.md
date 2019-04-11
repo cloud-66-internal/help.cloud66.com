@@ -7,7 +7,7 @@ order: 11
 lead: "How to use the deployment timeline to track and roll back deployments"
 legacy: false
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

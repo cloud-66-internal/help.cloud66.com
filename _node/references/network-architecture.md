@@ -7,7 +7,7 @@ categories: references
 order: 2
 lead: Understanding how Cloud 66 routes traffic to your applications and servers 
 tags: ['manifest']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include references/network-architecture.md %}

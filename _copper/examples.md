@@ -6,7 +6,7 @@ label: Copper
 title: Copper Examples
 lead: Common use cases and examples for Copper
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 order : 3
 ---
 

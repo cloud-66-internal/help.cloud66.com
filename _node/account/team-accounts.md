@@ -6,7 +6,7 @@ categories: accounts
 lead: ""
 legacy: false
 tags: ["account"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {%include references/account/team-accounts.md %}

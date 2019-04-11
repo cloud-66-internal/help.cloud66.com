@@ -7,7 +7,7 @@ order: 6
 lead: "How to add validation policies to Stencils"
 legacy: false
 tags: ["stencils,copper,policies"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview 

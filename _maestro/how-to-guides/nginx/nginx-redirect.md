@@ -8,7 +8,7 @@ lead: "How to configure redirects for your application using Nginx"
 tags: ["customization"]
 legacy: false
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

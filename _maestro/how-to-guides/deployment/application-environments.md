@@ -7,7 +7,7 @@ order: 30
 lead: "How to set up custom application environments in Maestro"
 legacy: false
 tags: ["Environments"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

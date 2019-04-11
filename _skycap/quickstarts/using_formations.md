@@ -6,7 +6,7 @@ categories: quickstarts
 legacy: false
 tags: ["getting started", "formations"]
 lead: Use Skycap to deploy your applications to any Kubernetes cluster
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 Formations are used to create, manage and deploy Kubernetes configuration files to any Kubernetes cluster.

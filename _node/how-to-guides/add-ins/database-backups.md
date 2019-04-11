@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: Managed and unmanaged database backups
 tags: ['database']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

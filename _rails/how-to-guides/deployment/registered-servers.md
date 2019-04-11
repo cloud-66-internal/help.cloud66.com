@@ -7,7 +7,7 @@ order: 10
 lead: "How to use your own (self-managed) servers with Cloud 66 for Rails"
 legacy: false
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## About registered servers

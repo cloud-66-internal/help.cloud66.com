@@ -7,6 +7,6 @@ lead: ""
 legacy: false
 tags: ["high-availability"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/deployment/multi-region-application.md %}

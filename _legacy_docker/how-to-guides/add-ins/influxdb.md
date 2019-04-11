@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: Add InfluxDB to your stack with ease
 tags: ['Add in']
 legacy: true
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

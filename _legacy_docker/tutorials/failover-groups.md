@@ -6,7 +6,7 @@ categories: tutorials
 lead: ""
 legacy: true
 tags: ["High-availability"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

@@ -7,7 +7,7 @@ order: 5
 lead: "How to enable Nginx's basic HTTP authentication"
 legacy: false
 change: true
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 tags: ["nginx"]
 ---
 {% assign product = "common" %}

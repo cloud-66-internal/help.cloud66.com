@@ -8,7 +8,7 @@ tags: ["Git"]
 legacy: false
 order: 200
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

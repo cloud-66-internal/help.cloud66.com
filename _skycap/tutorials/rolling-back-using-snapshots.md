@@ -7,7 +7,7 @@ order: 5
 lead: "Using Skycap as an infrastructure time machine"
 legacy: false
 tags: ["formations,versioning"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

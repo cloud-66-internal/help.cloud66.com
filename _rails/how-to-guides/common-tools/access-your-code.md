@@ -8,7 +8,7 @@ lead: "Connecting your git repository to Cloud 66"
 tags: ["git"]
 legacy: false
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/deployment/access-your-code.md %}
 

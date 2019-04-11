@@ -7,7 +7,7 @@ order: 7
 lead: Adding a load balancer to your application
 tags: ['Add in', 'Scaling']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include how-to-guides/add-ins/load-balancer.md %}

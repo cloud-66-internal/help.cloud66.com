@@ -7,7 +7,7 @@ order: 10
 lead: "How to build a manifest file for your application"
 legacy: false
 tags: ["manifest", "customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

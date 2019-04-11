@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: SSL certificate add-in
 legacy: false
 tags: ['Add in', 'Security']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include how-to-guides/add-ins/ssl.md %}

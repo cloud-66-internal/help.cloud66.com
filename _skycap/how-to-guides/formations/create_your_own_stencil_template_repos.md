@@ -7,7 +7,7 @@ categories: how-to-guides/formations
 lead: "A guide to creating and updating a custom template repository"
 legacy: false
 tags: ["formations", "stencils"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 Once you are familiar with base templates, you might need to add your own Stencil templates into a public or private repository and use them with Formations. 

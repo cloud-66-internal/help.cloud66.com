@@ -7,7 +7,7 @@ order: 6
 lead: We help you monitor your container CPU, memory, disk and network usage
 tags: ['operations']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include tutorials/service-monitoring.md %}

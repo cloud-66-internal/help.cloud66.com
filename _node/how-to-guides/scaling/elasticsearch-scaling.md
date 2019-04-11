@@ -6,9 +6,9 @@ categories: how-to-guides/scaling
 lead: ""
 legacy: false
 tags: ["Elasticsearch"]
-permalink: /:collection/:path
----
+permalink: /:collection/:path:output_ext
 
+---
 
 You can scale your Elasticsearch cluster through the Cloud 66 dashboard on the Elasticsearch server group page.
 

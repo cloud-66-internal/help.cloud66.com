@@ -6,7 +6,7 @@ categories: how-to-guides
 lead: "Using ConfigStore with Skycap Formations"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% assign product = 'skycap' %}

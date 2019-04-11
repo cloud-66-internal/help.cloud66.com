@@ -6,7 +6,7 @@ categories: how-to-guides/scaling
 lead: "How to scale MongoDB using replica sets within Maestro"
 legacy: false
 tags: ["MongoDB"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 #### Note

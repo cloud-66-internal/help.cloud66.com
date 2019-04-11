@@ -5,7 +5,7 @@ categories: references
 legacy: false
 tags: ["references", "placeholders", "formations", "stencils"]
 lead: A simple to use yet powerful template rendering engine
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

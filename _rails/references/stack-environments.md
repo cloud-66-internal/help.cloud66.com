@@ -7,7 +7,7 @@ order: 4
 lead: "Understanding different application environments"
 legacy: false
 tags: ["Environments"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

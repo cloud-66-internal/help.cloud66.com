@@ -7,7 +7,7 @@ categories: how-to-guides/deployment
 lead: How to congfigure your Maestro application for high availability with mutli-master architecture
 tags: ['server', 'operations']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

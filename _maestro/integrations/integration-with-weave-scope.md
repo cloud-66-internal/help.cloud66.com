@@ -6,7 +6,7 @@ categories: integrations
 lead: "How to integrate Maestro into Weave Scope"
 legacy: false
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {%include references/integrations/integration-with-weave-scope.md %}

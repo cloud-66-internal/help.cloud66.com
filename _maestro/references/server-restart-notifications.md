@@ -7,7 +7,7 @@ order: 5
 lead: Understanding server restart notifications in Maestro
 tags: ['server','notifications']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

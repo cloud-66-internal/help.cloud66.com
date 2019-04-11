@@ -8,7 +8,7 @@ lead: "Move your Rails application from Heroku to your own servers using Cloud 6
 legacy: false
 tags: ["migration"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

@@ -6,7 +6,7 @@ categories: tutorials
 lead: How you can manage your service life cycle
 legacy: true
 tags: ['service', 'operations']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

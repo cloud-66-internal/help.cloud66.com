@@ -7,7 +7,7 @@ order: 10
 lead: Add GlusterFS to your application with ease
 tags: ['Add in']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

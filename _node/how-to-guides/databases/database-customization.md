@@ -6,7 +6,7 @@ categories: how-to-guides/databases
 lead: "Customize your Database Configuration on Cloud 66 Node stacks"
 legacy: false
 tags: ["PostgreSQL", "MySQL", "Redis", "MongoDB"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 You can customize the database configuration on your servers using [CustomConfig](/{{page.collection}}/tutorials/custom-config.html). CustomConfig is available for MySQL, PostgreSQL, Redis and MongoDB.

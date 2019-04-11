@@ -7,7 +7,7 @@ lead: ""
 legacy: false
 order: 1
 tags: ["shell"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include references/toolbelt/toolbelt.md %}

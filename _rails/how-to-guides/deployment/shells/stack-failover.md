@@ -8,6 +8,6 @@ lead: "How to set up and use a failover group"
 legacy: false
 tags: ["high-availability"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/deployment/stack-failover.md %}

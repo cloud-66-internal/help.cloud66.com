@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: How to add Memcached to your application via Maestro
 tags: ['Add in']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 <div class="notice notice-danger"><p>PLEASE NOTE:<br/> This Add-in is only available for Version 1 of Maestro, also know as <em>CSv1</em>. Maestro version 2 applications should implement <a href="https://community.cloud66.com/t/how-do-i-add-memcached-to-my-application/54" title="An example of how to install Memcached as a Service">Memcached as a service</a></p></div>

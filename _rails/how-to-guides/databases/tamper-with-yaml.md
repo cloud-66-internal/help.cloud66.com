@@ -7,7 +7,7 @@ order: 15
 lead: "How to stop Cloud 66 from automatically updating configurations for managed databases"
 legacy: false
 tags: ["Database"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 If your Rails/Rack application uses a MySQL, PostgreSQL or MongoDB instance that is managed by Cloud 66, then we will (by default) automatically amend your configuration files to ensure that they have the correct username and password (where appropriate) and server address (should your server address change due to instance resizing or fixed IP allocation). We will automatically track these changes and insert the correct details on the next deployment.
