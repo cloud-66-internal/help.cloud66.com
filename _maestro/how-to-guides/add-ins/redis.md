@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: How to add Redis to your application via Maestro
 tags: ['Add in']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

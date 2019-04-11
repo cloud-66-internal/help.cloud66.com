@@ -7,7 +7,7 @@ order: 7
 lead: "Configuring Rackspace for use with Cloud 66 for Rails"
 legacy: false
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

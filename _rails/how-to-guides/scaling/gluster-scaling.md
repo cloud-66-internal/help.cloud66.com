@@ -7,7 +7,7 @@ order: 10
 lead: "How to scale  your GlusterFS cluster through Cloud 66"
 legacy: false
 tags: ["GlusterFS"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

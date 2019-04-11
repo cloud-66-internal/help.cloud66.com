@@ -7,7 +7,7 @@ order: 20
 lead: How to manage your container life cycle
 legacy: false
 tags: ['service', 'operations']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Orchestration engine

@@ -6,7 +6,7 @@ categories: tutorials
 lead: "How to use environment variables in Cloud 66 for Node"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% assign product = 'node' %}

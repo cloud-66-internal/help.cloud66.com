@@ -7,7 +7,7 @@ categories: how-to-guides/formations
 lead: "How to define and use StencilGroups and StencilGroup rules"
 legacy: false
 tags: ["formations", "stencils"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## How to define a StencilGroup

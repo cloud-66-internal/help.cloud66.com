@@ -7,7 +7,7 @@ order: 4
 lead: Run your Rack apps with Thin
 tags: ['Web server']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 [Thin](http://code.macournoyer.com/thin/) is a Ruby web server that can handle high levels of concurrency. 

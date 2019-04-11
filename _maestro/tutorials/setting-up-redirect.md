@@ -7,7 +7,7 @@ order: 10
 lead: "How to set up redirects in Maestro"
 legacy: false
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

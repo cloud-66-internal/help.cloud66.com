@@ -8,7 +8,7 @@ lead: "How to customize the configuration of the Maestro Nginx proxy"
 legacy: false
 tags: ["customization"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

@@ -6,7 +6,7 @@ categories: tutorials
 lead: "How to add a failover group to your application"
 legacy: false
 tags: ["High-availability"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

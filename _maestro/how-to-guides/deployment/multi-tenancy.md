@@ -7,7 +7,7 @@ order: 40
 lead: "How to configure applications to share the same infrastructure"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

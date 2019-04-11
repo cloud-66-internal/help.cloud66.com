@@ -6,7 +6,7 @@ order: 1
 legacy: false
 tags: ["getting started"]
 lead: How to deploy your application using Maestro
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 search_title: Getting started with Maestro
 search_description: A step by step tutorial that walks you through deploying a demo application with Maestro. The best place to get started!
 product: Maestro  

@@ -7,7 +7,7 @@ order: 7
 lead: "Manage background workers in your application"
 legacy: false
 tags: ["code","workers"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

@@ -7,7 +7,7 @@ order: 3
 lead: Understanding the underlying principles of manifest files
 tags: ['tags']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Classes of manifest file settings

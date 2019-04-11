@@ -6,9 +6,9 @@ categories: how-to-guides/security
 lead: ""
 legacy: false
 tags: ["ssl","nginx"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
-{% assign product = "common" %}
+{% assign product = 'node' %}
 
 You can strengthen nginx SSL security by adjusting its SSL cipher settings. You can change this using [CustonConfig](/{{page.collection}}/tutorials/custom-config.html). Please remember that the most secure settings (below) is not backward compatible with IE6 and Windows XP clients.
 

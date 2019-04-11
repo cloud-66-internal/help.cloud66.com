@@ -8,7 +8,7 @@ lead: "How to configure Websocket for a Cloud 66 Rails application"
 legacy: false
 tags: ["websocket"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% assign product = 'rails' %}

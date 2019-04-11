@@ -7,7 +7,7 @@ order: 40
 lead: "How to connect to public and private Docker image repositories via Maestro"
 tags: ["customization", "docker"]
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ### Connecting to public repositories

@@ -7,7 +7,7 @@ order: 4
 lead: "How to add a database to your application in Maestro"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

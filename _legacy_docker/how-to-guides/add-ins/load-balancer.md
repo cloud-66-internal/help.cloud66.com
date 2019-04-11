@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: Adding a load balancer couldn't be easier
 tags: ['Add in', 'Scaling']
 legacy: true
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

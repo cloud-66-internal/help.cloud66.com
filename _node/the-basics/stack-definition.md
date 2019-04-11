@@ -6,7 +6,7 @@ categories: the-basics
 lead: ""
 legacy: false
 tags: ["getting-started"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## What is Cloud 66 for Node?

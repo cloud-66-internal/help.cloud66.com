@@ -6,7 +6,7 @@ categories: how-to-guides/deployment
 lead: ""
 legacy: true
 tags: ["manifest", "customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

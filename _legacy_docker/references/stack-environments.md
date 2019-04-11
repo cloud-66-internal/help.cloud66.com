@@ -6,7 +6,7 @@ categories: references
 lead: ""
 legacy: true
 tags: ["Environments"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

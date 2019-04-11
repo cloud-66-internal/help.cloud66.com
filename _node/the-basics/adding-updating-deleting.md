@@ -7,7 +7,7 @@ categories: the-basics
 lead: "Adding, updating & deleting apps"
 legacy: false
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Building an application

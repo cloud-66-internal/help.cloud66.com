@@ -7,7 +7,7 @@ order: 10
 lead: "How to deploy an application across multiple servers simultaneously"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

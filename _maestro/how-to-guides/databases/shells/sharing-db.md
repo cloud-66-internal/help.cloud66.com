@@ -7,7 +7,7 @@ order: 40
 lead: "How to share a database between multiple applications in Maestro"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

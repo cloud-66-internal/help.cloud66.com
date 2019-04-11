@@ -7,7 +7,7 @@ order: 1
 lead: "Deploy your first Node app to any cloud"
 legacy: false
 tags: ["getting started"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 <h2 id="What-youll-need">
     <a href="#What-youll-need" class="headerlink" title="What you’ll need"></a>

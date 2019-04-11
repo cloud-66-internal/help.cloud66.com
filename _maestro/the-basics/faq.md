@@ -6,7 +6,7 @@ categories: the-basics
 order: 4
 lead: "Frequently asked questions about Maestro"
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 search_title: Maestro FAQs
 search_description: Frequently asked questions about Maestro
 product: Maestro

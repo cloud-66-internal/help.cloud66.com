@@ -7,6 +7,6 @@ lead: ""
 legacy: false
 tags: ["debugging"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/databases/connect-db-servers.md %}

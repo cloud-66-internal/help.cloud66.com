@@ -7,7 +7,7 @@ order: 2
 lead: "Creating your first manifest file"
 legacy: false
 tags: ["manifest", "customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 search_title: Getting started with manifest files
 search_description: A manifest file defines the configuration of your application's components. It allows you to completely customise your application and control advanced settings not available in the web UI.
 product: Maestro  

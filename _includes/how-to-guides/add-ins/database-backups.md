@@ -10,7 +10,7 @@ Cloud 66 provides two types of backups: _managed_ and _unmanaged_.
 Having managed backups carries several benefits:
 
 - You can download database backups through the web UI and API
-- {% if page.collection == 'rails' %}[Backup verifiers](/rails/how-to-guides/databases/backup-verifiers.html) ensure that your backups actually contain what you expect{%endif%}
+{% if page.collection == 'rails' %}- [Backup verifiers](/rails/how-to-guides/databases/backup-verifiers.html) ensure that your backups actually contain what you expect{%endif%}
 - Use [database replication](/rails/how-to-guides/databases/database-replication.html) to scale your databases
 - You can easily restore database backups
 - Stored in Cloud 66 storage

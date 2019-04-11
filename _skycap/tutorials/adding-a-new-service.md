@@ -7,7 +7,7 @@ order: 2
 lead: "Adding a new service or component to an application"
 legacy: false
 tags: ["docker"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 As your application grows in complexity and popularity, you may need to add new components. For example you may add a cache like Varnish or a new data store like MongoDB. 

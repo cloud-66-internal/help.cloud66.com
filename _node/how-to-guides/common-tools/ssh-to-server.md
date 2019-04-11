@@ -6,7 +6,7 @@ categories: how-to-guides/common-tools
 legacy: false
 lead: Connect directly to your servers for full control 
 tags: ['SSH', 'shell']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include how-to-guides/deployment/ssh-to-server.md %}

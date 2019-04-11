@@ -7,7 +7,7 @@ order: 4
 lead: "Configuring DigitalOcean for use with Maestro"
 legacy: false
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

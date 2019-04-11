@@ -8,6 +8,6 @@ lead: "How to use Cloud 66 ChatOps to manage applications via Slack"
 legacy: false
 tags: ["operations"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/deployment/manage-stacks-chatops.md %}

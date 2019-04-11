@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: Custom servers within the Cloud 66 ecosystem
 tags: ['Customization', 'Add in']
 legacy: true
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

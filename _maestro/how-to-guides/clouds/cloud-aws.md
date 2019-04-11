@@ -7,7 +7,7 @@ order: 1
 lead: "Configuring Amazon Web Services for use with Maestro"
 legacy: false
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

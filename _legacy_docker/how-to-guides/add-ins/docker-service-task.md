@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: Schedule automated tasks against a docker service
 tags: ['Add in']
 legacy: true
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

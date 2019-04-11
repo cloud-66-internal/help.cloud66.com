@@ -7,7 +7,7 @@ order: 1
 lead: "How to add an SSL certificate to your application"
 legacy: false
 tags: ["ssl"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

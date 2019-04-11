@@ -7,7 +7,7 @@ order: 3
 lead: "A detailed guide to the options and variables available for managing Nginx for Cloud 66"
 legacy: false
 tags: ["customization", "nginx"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

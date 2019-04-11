@@ -6,7 +6,7 @@ categories: how-to-guides/databases
 lead: Deploying and managing your database with Cloud 66
 tags: ['database']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include tutorials/database-management.md %}

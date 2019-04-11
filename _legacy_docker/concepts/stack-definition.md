@@ -6,7 +6,7 @@ categories: concepts
 lead: ""
 legacy: true
 tags: ["getting-started"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

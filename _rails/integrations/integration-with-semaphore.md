@@ -7,7 +7,7 @@ order: 3
 lead: "How to integrate Cloud 66 for Rails into your Semaphore pipeline"
 legacy: false
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {%include references/integrations/integration-with-semaphore.md %}

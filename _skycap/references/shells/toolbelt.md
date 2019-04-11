@@ -7,7 +7,7 @@ lead: "Reference guide to all the commands and parameters available in Cloud 66 
 legacy: false
 order: 100
 tags: ["shell","toolbelt","cx"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include references/toolbelt/toolbelt.md %}

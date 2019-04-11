@@ -6,7 +6,7 @@ categories: references
 lead: "Understanding access control policies"
 legacy: false
 tags: ["git"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

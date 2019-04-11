@@ -7,7 +7,7 @@ lead: "A detailed guide to the options and variables available for managing the 
 legacy: false
 tags: ["customization", "nginx"]
 order: 90
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## About Nginx

@@ -7,7 +7,7 @@ order: 3
 legacy: false
 lead: Connect directly to your servers via secure shell access 
 tags: ['SSH', 'shell']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 We provide two different ways for you to SSH to your servers - an automated way with Cloud 66 Toolbelt, or manual way.

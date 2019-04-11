@@ -7,7 +7,7 @@ lead: "How to deploy your application to a DMZ"
 order: 14
 legacy: false
 tags: ["security"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

@@ -7,7 +7,7 @@ order: 6
 lead: Tags reserved by Cloud 66 
 tags: ['tags']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include references/reserved-tags.md %}

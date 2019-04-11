@@ -7,7 +7,7 @@ lead: ""
 tags: ["high-availability","haproxy"]
 legacy: true
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

@@ -6,7 +6,7 @@ legacy: false
 categories: tutorials
 lead: Configure security and network settings
 tags: ['network']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

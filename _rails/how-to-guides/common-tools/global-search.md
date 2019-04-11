@@ -7,7 +7,7 @@ categories: how-to-guides/common-tools
 lead: Powerful search for your infrastructure
 legacy: false
 tags: ['Management']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include how-to-guides/global-search.md %}

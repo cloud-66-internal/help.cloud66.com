@@ -6,7 +6,7 @@ categories: how-to-guides/databases
 lead: "Customize your Database Configuration on Cloud 66 Docker stacks"
 legacy: true
 tags: ["PostgreSQL", "MySQL", "Redis", "MongoDB"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

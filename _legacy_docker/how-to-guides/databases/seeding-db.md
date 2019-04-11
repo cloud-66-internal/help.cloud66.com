@@ -6,7 +6,7 @@ categories: how-to-guides/databases
 lead: ""
 tags: ["customization"]
 legacy: true
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

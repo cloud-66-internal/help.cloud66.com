@@ -7,6 +7,6 @@ lead: ""
 tags: ["high-availability","haproxy"]
 legacy: false
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/deployment/haproxy-for-websocket.md %}

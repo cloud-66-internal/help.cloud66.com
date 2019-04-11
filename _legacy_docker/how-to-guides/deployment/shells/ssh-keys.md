@@ -7,7 +7,7 @@ lead: ""
 legacy: true
 tags: ["debugging"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

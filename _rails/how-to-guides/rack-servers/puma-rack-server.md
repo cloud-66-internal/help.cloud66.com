@@ -7,7 +7,7 @@ order: 1
 lead: Run your Rack apps with Puma
 tags: ['Web server']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 [Puma](http://puma.io/) is a light-weight Rack server built for speed and parallelism. Cloud 66 uses the following signals to control Puma:

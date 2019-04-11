@@ -7,7 +7,7 @@ lead: ""
 legacy: true
 order: 2
 tags: ["getting-started"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

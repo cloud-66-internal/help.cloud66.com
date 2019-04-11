@@ -6,6 +6,6 @@ categories: how-to-guides/security
 lead: ""
 legacy: false
 tags: ["security"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/deployment/lets-encrypt.md %}

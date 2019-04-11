@@ -7,7 +7,7 @@ categories: the-basics
 lead: "Defining the concepts and terms used in this documentation"
 legacy: false
 tags: ["concepts,terms"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 search_title: Maestro Concepts and terminology
 search_description: The key concepts of Maestro including Containerization, Orchestration, Services, Kubernetes, Scaling your app and BuildGrid
 product: Maestro  
@@ -83,6 +83,21 @@ In particular “stack” tends to include both underlying infrastructure and th
 However, when reading any documentation or our forums, it will often be helpful to think of “stack” and “application” as effectively synonymous.
 
 In a general sense, both these terms encapsulate the same thing: an interconnected collection of components, configurations and services that are presented to the world as a single, coherent piece of software.
+
+### What is StackScore?
+
+StackScore&trade; is a score that provides an indication of how reliable, resilient and performant your application is when deployed on your servers. It consists of five key metrics that are graded from **A** to **F**, and the overall StackScore is the lowest of the scores across these five metrics.
+
+- **Code:** Ensures your code does not have security issues by checking for known vulnerabilities.
+- **Backups and data integrity:** This tracks whether or not you are backing up your databases (with managed and/or unmanaged backups), and whether or not you verify your backups.
+- **Connectivity:** Checks whether or not you are sharing your front-end and back-end on the same server. This is affected by how much memory you have on your servers, among other factors.
+- **Performance:** Checks if you have a load balancer, as well as different server configuration metrics.
+- **Security:** Tracks your firewall settings for potential security issues.
+
+#### Suggestion
+Always try to keep your stacks at an **A** StackScore&trade; level to ensure application health.
+
+Cloud 66 constantly seeks to update and improve the StackScore algorithm to consider new data points as well as external conditions, which means that your StackScore will change over time.
 
 ## Container lifecycle management
 

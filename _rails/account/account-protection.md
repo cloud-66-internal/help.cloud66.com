@@ -7,7 +7,7 @@ order: 5
 lead: ""
 legacy: false
 tags: ["security", "account"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

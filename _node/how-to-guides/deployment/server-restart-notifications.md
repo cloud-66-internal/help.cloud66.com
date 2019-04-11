@@ -6,7 +6,7 @@ categories: how-to-guides/deployment
 lead: Cloud 66 server restart notifications
 tags: ['server','notifications']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include tutorials/server-restart-notifications.md %}

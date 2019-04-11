@@ -6,9 +6,9 @@ categories: how-to-guides/security
 lead: ""
 legacy: false
 tags: ["nginx"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
-{% assign product = "common" %}
+{% assign product = 'node' %}
 
 In addition to protecting your application (or parts of it) using [HTTP basic authentication](/{{page.collection}}/how-to-guides/security/nginx-auth.html), you can use Cloud 66 [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) to block (or allow) access to your application based on IP addresses.
 

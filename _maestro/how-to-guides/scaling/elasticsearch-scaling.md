@@ -6,7 +6,7 @@ categories: how-to-guides/scaling
 lead: "How to scale an Elasticsearch cluster in Maestro"
 legacy: false
 tags: ["Elasticsearch"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 #### Note

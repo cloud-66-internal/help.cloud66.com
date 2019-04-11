@@ -7,7 +7,7 @@ order: 4
 legacy: false
 lead: Cloud 66 supports the widely used Procfile format files
 tags: ['Deployment']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## About running background processes

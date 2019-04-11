@@ -6,7 +6,7 @@ order: 3
 legacy: false
 tags: ["getting started", "cluster", "maestro cluster"]
 lead: Create a Maestro cluster for shared server application deployments"
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 search_title: Getting started with Maestro Clusters
 search_description: A step by step tutorial that guides you through deploying a Cluster. Maestro Clusters let you to deploy multiple applications to the same set of servers.
 product: Maestro 

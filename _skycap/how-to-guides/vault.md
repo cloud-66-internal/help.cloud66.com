@@ -6,7 +6,7 @@ categories: how-to-guides
 lead: "How to integrate HashiCorp Vault into your Skycap workflows"
 legacy: false
 tags: ["integration,secrets"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

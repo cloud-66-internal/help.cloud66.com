@@ -6,7 +6,7 @@ categories: how-to-guides/databases
 lead: ""
 tags: ["postgresql","sqlite","mysql"]
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

@@ -7,7 +7,7 @@ order: 6
 lead: ""
 legacy: false
 tags: ["account", "security"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {%include references/account/two-step-verification.md %}

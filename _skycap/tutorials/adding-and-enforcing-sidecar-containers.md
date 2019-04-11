@@ -7,7 +7,7 @@ order: 6
 lead: "How to set up sidecar containers in Skycap"
 legacy: false
 tags: ["sidecar,containers"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview 
@@ -82,7 +82,7 @@ To create the inline Stencil we:
 1. Navigate to the Hello World Formation detail page
 2. Click on the **+** to add a new Stencil
 3. Choose `blank.yml`
-4. Change the **Filename** to ‘_auther.yml` (note, the underscore is important here)
+4. Change the **Filename** to `_auther.yml` (note, the underscore is important here)
 5. Copy and paste in the code block above
 6. Add a commit message and *Save changes*
 
