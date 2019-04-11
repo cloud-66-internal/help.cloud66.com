@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 template: one-col
 title: Setting up Account Notifications
@@ -7,6 +7,7 @@ lead: ""
 legacy: false
 tags: ["account"]
 permalink: /:collection/:path
+product: Maestro
 ---
 
 

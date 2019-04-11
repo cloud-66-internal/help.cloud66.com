@@ -7,6 +7,7 @@ lead: ""
 legacy: false
 tags: ["account"]
 permalink: /:collection/:path
+product: Maestro
 ---
 {% assign product = "General" %}
 

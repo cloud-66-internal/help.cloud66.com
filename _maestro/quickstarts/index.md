@@ -5,6 +5,8 @@ title:  "Getting Started"
 lead: Quick guides to getting up and running with Maestro
 legacy: false
 permalink: /:collection/quickstarts/index.html
+product: Maestro
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

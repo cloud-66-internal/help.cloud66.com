@@ -8,6 +8,7 @@ lead: "A powerful command line tool to interact with Cloud 66"
 legacy: false
 tags: ["toolbelt"]
 permalink: /:collection/:path
+product: Maestro
 ---
 
 

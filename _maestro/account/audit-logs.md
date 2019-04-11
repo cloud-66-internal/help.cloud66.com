@@ -7,6 +7,7 @@ lead: ""
 legacy: false
 tags: ["logs"]
 permalink: /:collection/:path
+product: Maestro
 ---
 
 
