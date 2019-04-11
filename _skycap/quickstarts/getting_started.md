@@ -6,7 +6,7 @@ categories: quickstarts
 legacy: false
 tags: ["getting started"]
 lead: Use Skycap to automatically turn your source code into container (Docker) images
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 Skycap is a Container Deployment Pipeline. You can use Skycap to automatically turn your source code into container (Docker) images, manage your Kubernetes configuration files and deploy your applications to any Kubernetes cluster.

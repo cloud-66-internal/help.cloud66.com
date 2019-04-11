@@ -7,7 +7,7 @@ categories: references
 lead: ""
 legacy: false
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

@@ -6,7 +6,7 @@ categories: Tutorials
 lead: ""
 legacy: true
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

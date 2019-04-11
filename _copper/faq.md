@@ -6,7 +6,7 @@ label: Copper
 title: Copper FAQ
 lead: Frequently Asked Questions
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 order : 4
 ---
 

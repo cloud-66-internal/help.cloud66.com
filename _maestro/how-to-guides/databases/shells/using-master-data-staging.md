@@ -7,7 +7,7 @@ order: 20
 lead: "How to configure your staging environment to use production data"
 legacy: false
 tags: ["high-availability","customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 There are three approaches to sharing data between environments:

@@ -6,7 +6,7 @@ legacy: false
 categories: how-to-guides/deployment
 lead: How you can pause and resume your services
 tags: ['operations']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

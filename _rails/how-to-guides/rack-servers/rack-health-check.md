@@ -7,7 +7,7 @@ categories: how-to-guides/rack-servers
 order: 5
 lead: Checking health during deployment
 tags: ['web-server']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Health Check During Deployment

@@ -8,7 +8,7 @@ lead: "Configuring replication between databases"
 legacy: false
 tags: ["databases","replication"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include how-to-guides/databases/database-replication.md %}

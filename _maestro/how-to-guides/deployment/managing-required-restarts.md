@@ -7,7 +7,7 @@ order: 40
 lead: "How to handle required restarts"
 tags: ['maintenance']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

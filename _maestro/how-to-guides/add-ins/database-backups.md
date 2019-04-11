@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: "Schedule and automate your database backups with this add-in"
 legacy: false
 tags: ["databases"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 Use this add-in to backup your database on a schedule of your choosing.

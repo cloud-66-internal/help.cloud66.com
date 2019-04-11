@@ -7,7 +7,7 @@ order: 11
 lead: "How to allow or deny traffic from IP addresses or IP ranges"
 legacy: false
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% assign product = 'maestro' %}

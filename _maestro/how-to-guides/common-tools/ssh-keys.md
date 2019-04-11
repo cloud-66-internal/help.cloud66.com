@@ -8,6 +8,6 @@ lead: "How to generate SSH keys on your local machine"
 legacy: false
 tags: ["ssh,keys"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/deployment/ssh-keys.md %}

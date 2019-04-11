@@ -7,7 +7,7 @@ order: 2
 lead: Run your Rack apps with Unicorn
 tags: ['Web server']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 [Unicorn](http://unicorn.bogomips.org/) is a Rack HTTP server that uses forked processes to handle multiple incoming requests concurrently.

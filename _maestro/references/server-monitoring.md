@@ -7,7 +7,7 @@ order: 30
 lead: A guide to Collectd - the default Maestro resource monitoring service
 legacy: false
 tags: ['server', 'operations']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include tutorials/server-monitoring.md %}

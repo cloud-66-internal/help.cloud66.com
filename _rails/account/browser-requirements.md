@@ -7,7 +7,7 @@ order: 7
 lead: ""
 legacy: false
 tags: ["account"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% assign product = "General" %}
 

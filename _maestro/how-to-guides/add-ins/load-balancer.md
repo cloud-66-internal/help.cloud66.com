@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: How to add a load balancer to your application in Maestro
 tags: ['Add in', 'Scaling']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include how-to-guides/add-ins/load-balancer.md %}

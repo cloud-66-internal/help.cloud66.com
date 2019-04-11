@@ -7,7 +7,7 @@ order: 10
 lead: "How to build a Docker service in Maestro (Version 1 only)"
 legacy: true
 tags: ["build"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 <div class="notice notice-danger">

@@ -7,7 +7,7 @@ order: 10
 lead: Execute a shell command on your server(s)
 tags: ['Add in']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

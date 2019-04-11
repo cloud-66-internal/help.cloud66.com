@@ -7,7 +7,7 @@ order: 2
 lead: "How to enable and disable asset pipeline precompilation for Rails applications"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% assign product = 'rails' %}

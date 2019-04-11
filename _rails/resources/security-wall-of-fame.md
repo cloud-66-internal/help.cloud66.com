@@ -7,7 +7,7 @@ order: 15
 lead: ""
 legacy: false
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {%include resources/security-wall-of-fame.md %}

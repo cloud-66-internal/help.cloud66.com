@@ -7,7 +7,7 @@ order: 3
 lead: Cloud 66 supports deploying with Passenger Enterprise
 legacy: false
 tags: ['Web server']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 Passenger is an open-source, popular multi-language (Ruby, Python, Node) web & app server which can integrate into Apache and Nginx. Cloud 66 offers enterprise customers the ability to deploy applications with Passenger Enterprise, which has several key benefits:

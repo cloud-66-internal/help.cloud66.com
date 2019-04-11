@@ -6,7 +6,7 @@ categories: tutorials
 lead: Cloud 66 makes it easy to handle your stack logs
 tags: ['Logs']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

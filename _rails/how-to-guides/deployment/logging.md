@@ -7,7 +7,7 @@ order: 7
 lead: Managing application logs with Cloud 66 for Rails
 tags: ['Logs']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include tutorials/logging.md %}

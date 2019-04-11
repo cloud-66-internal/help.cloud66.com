@@ -7,7 +7,7 @@ order: 10
 lead: "How to scale your Elasticsearch clusters through the Cloud 66"
 legacy: false
 tags: ["Elasticsearch"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

@@ -7,6 +7,6 @@ order: 20
 lead: "How to uninstall the default MySQL from your servers"
 legacy: false
 tags: ["mysql"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/databases/uninstall-mysql.md %}

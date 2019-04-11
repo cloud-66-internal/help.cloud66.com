@@ -7,7 +7,7 @@ order: 2
 lead: "How to enable automatic SSL termination on load balancers in Maestro"
 legacy: false
 tags: ["ssl"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Enable automatic SSL termination

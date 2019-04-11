@@ -7,7 +7,7 @@ order: 6
 lead: "How to set up sidecar containers in Skycap"
 legacy: false
 tags: ["sidecar,containers"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview 

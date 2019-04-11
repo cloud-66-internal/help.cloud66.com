@@ -6,7 +6,7 @@ categories: how-to-guides/common-tools
 lead: Powerful search for your infrastructure inventory
 legacy: false
 tags: ['Management']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

@@ -6,7 +6,7 @@ categories: tutorials
 lead: "How to configure your application to be available on the public internet"
 legacy: false
 tags: ["security", "customization", "service.yml"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

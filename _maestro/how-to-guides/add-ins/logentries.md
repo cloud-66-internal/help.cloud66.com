@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: Adding a web-based log analysis service to your servers via Maestro
 tags: ['Logs', 'Add ins']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

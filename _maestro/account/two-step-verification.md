@@ -6,7 +6,7 @@ categories: account
 lead: ""
 legacy: false
 tags: ["account", "security"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 product: Maestro
 ---
 

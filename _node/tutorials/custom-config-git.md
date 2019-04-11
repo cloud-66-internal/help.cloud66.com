@@ -6,7 +6,7 @@ categories: tutorials
 lead: "How to use CustomConfig Git to edit and track configuration files"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% assign product = 'node' %}

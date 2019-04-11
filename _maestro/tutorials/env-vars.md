@@ -7,7 +7,7 @@ order: 6
 lead: "How to use environment variables in Maestro"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

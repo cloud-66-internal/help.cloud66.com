@@ -7,7 +7,7 @@ order: 10
 lead: Syntax for using deploy hooks in Maestro
 tags: ['tags']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## What are deploy hooks?

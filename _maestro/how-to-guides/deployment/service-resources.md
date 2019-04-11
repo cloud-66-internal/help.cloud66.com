@@ -7,7 +7,7 @@ order: 30
 lead: Managing resource usage for your Docker services
 tags: ['operations', 'service']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Limiting CPU and RAM usage

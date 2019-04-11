@@ -8,6 +8,6 @@ lead: "How to set up HAProxy for Websocket in a Cloud 66 Rails application"
 tags: ["high-availability","haproxy"]
 legacy: false
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/deployment/haproxy-for-websocket.md %}

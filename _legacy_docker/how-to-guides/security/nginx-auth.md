@@ -6,7 +6,7 @@ categories: how-to-guides/security
 lead: ""
 legacy: true
 change: true
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 tags: ["nginx"]
 ---
 

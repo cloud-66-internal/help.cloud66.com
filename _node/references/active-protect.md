@@ -7,7 +7,7 @@ order: 10
 lead: "What is ActiveProtect&trade;?"
 tags: ['tags']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% assign product = 'node' %}

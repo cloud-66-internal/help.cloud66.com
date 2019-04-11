@@ -7,7 +7,7 @@ order: 10
 lead: "Advanced service network configuration and port mapping"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

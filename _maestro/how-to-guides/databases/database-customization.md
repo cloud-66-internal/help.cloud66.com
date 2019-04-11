@@ -7,7 +7,7 @@ order: 10
 lead: "How to customize database configurations for Maestro applications"
 legacy: false
 tags: ["PostgreSQL", "MySQL", "Redis", "MongoDB"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## How to customize database configs

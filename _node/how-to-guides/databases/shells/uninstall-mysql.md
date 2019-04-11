@@ -6,6 +6,6 @@ categories: how-to-guides/databases
 lead: ""
 legacy: false
 tags: ["mysql"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/databases/uninstall-mysql.md %}

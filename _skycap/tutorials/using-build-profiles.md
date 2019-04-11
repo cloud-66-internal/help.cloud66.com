@@ -7,7 +7,7 @@ order: 6
 lead: "How to create and use build profiles in Skycap"
 legacy: false
 tags: ["builds,customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 Build Profiles allow you to customise how the services inside your application are built when Snapshots are triggered. This is useful for more complex applications with many different components.

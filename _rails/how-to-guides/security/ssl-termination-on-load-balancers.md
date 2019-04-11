@@ -7,7 +7,7 @@ order: 6
 lead: "How to enable automatic SSL termination on load balancers in Cloud 66 for Rails"
 legacy: false
 tags: ["ssl"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

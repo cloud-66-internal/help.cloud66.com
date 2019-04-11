@@ -7,7 +7,7 @@ order: 1
 lead: "Defining the concepts and terms used in this documentation"
 legacy: false
 tags: ["getting-started"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 ## What is Cloud 66 for Rails?
 
