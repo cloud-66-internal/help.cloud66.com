@@ -1,4 +1,7 @@
 [[redirects]]
-	from = "/legacy_docker"
-	to = "/maestro"
-	status = 301
+  from = "/legacy_docker/how-to-guides/deployment/symlink-folders.html"
+  to = "/maestro/how-to-guides/deployment/symlink-folders.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/building-your-service.html"
+  to = "/maestro/how-to-guides/deployment/building-your-service.html"
