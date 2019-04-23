@@ -1,0 +1,4 @@
+[[redirects]]
+	from = "/legacy_docker"
+	to = "/maestro"
+	status = 301
