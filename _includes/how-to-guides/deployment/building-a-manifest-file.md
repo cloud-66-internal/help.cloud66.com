@@ -44,6 +44,7 @@ Next, select which component you would like to specify settings for. You can cho
 ### ElasticSearch
 
 - **version**: Specify the version of ElasticSearch you want to install.
+- **operating_system** (_Optional_): `ubuntu1404` or `ubuntu1604` (18.04 is coming soon)
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 
@@ -81,6 +82,7 @@ production:
 ### GlusterFS
 
 - **version**: Specify the version of GlusterFS you want to install.
+- **operating_system** (_Optional_): `ubuntu1404` or `ubuntu1604` (18.04 is coming soon)
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is `ssd`.
 - **replica_count** : Number of nodes in _GlusterFS cluster_ which a data will be replicated on it(i.e replica count 2 means your data exist on two nodes). Default value is 1.
@@ -137,6 +139,7 @@ production:
 - **memory**: Specify maximum memory (in MB) that can be used (default value is 64).
 - **port**: Specify connection port (default value is 11211).
 - **listen_ip**: Specify which IP address to listen on (default value is 0.0.0.0).
+- **operating_system** (_Optional_): `ubuntu1404` or `ubuntu1604` (18.04 is coming soon)
 
 ```
 production:
@@ -153,6 +156,7 @@ production:
 ### MongoDB
 
 - **version**: Specify the version of MongoDB you want to install (can only be set during application build).
+- **operating_system** (_Optional_): `ubuntu1404` or `ubuntu1604` (18.04 is coming soon)
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
@@ -172,6 +176,7 @@ production:
 ### MySQL
 
 - **version**: Specify the version of MySQL you want to install. Valid values are 5.5, 5.6 or 5.7 (can only be set during application build).
+- **operating_system** (_Optional_): `ubuntu1404` or `ubuntu1604` (18.04 is coming soon)
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **engine**: Specify the MySQL engine you want to install. Valid values are 'mysql' and 'percona' (can only be set during application build).
@@ -182,6 +187,7 @@ production:
   mysql:
     configuration:
       version: 5.5
+      operating_system: ubuntu1404
       root_disk_size: 100
       root_disk_type: ssd
       engine: percona
@@ -248,6 +254,7 @@ rails:
 ### PostgreSQL
 
 - **version**: Specify the version of PostgreSQL you want to install (can only be set during application build).
+- **operating_system** (_Optional_): `ubuntu1404` or `ubuntu1604` (18.04 is coming soon)
 - **postgis**: Specify whether to include PostGIS (can be added after initial application build).
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
@@ -269,6 +276,7 @@ production:
 ### PostGIS
 
 - **version**: Specify the version of PostGIS you want to install.
+- **operating_system** (_Optional_): `ubuntu1404` or `ubuntu1604` (18.04 is coming soon)
 
 ```
 production:
@@ -287,6 +295,7 @@ production:
 A Rails application type in the manifest file gives you fine control over things like the Ruby version or the server the rails application is deployed on.
 
 - **ruby_version**: Specify the version of Ruby to use (overridden if present in Gemfile).
+- **operating_system** (_Optional_): `ubuntu1404` or `ubuntu1604` (18.04 is coming soon)
 - **asset_pipeline_precompile**: Specify whether to use asset pipeline compilation - this will be taken into account during redeployment.
 - **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on a new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
@@ -330,6 +339,7 @@ production:
 The manifest file gives you fine control over things like the Ruby version or which server the application is deployed on.
 
 - **ruby_version**: Specify the version of Ruby to use (overridden if present in Gemfile).
+- **operating_system** (_Optional_): `ubuntu1404` or `ubuntu1604` (18.04 is coming soon)
 - **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
 - **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment.
@@ -369,6 +379,7 @@ production:
 ### Redis
 
 - **version**: Specify the version of Redis you want to install.
+- **operating_system** (_Optional_): `ubuntu1404` or `ubuntu1604` (18.04 is coming soon)
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 
@@ -511,21 +522,6 @@ production:
       balance: LEAST_CONNECTIONS
 ```
 
-* * *
-
-
-### CloudA load balancer
-
-Use a manifest file to customize the CloudA load balancer deployed by Cloud 66. These changes will only apply when you create a new load balancer.
-
-- **balance**: The load balancing strategy. You can use these values : ROUND_ROBIN, SOURCE_IP or LEAST_CONNECTIONS.
-
-```
-production:
-  load_balancer:
-    configuration:
-      balance: ROUND_ROBIN
-```
 * * *
 
 
