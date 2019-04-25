@@ -18,13 +18,15 @@ We built Alterant to make changes to Kubernetes configuration files in a consist
 This scripts and add sidecar to a pod in the Deployment.
 
 <pre class="prettyprint">
-if ($.kind == 'Deployment') {
-    var containers = $.spec.template.spec.containers
-    if (containers.length == 1) {
-        sidecar = { "image": "sidecar_image:latest", "name": "my-sidecar" }
-        containers.push(sidecar)
-    }
-}
+$$.forEach(function($) {
+	if ($.kind == 'Deployment') {
+	    var containers = $.spec.template.spec.containers
+	    if (containers.length == 1) {
+	        sidecar = { "image": "sidecar_image:latest", "name": "my-sidecar" }
+	        containers.push(sidecar)
+	    }
+	}
+})
 </pre>
 
 ### Change the port of a pod
@@ -65,21 +67,23 @@ metadata:
 ```
 
 <pre class="prettyprint">
+$$.forEach(function($) {
 var namespace = $.metadata.name
-deployment = {
-    apiVersion: "extensions/v1beta1",
-    kind: "Deployment",
-    metadata: [
-        { namespace: namespace },
-        { name: "web" }
-    ],
-    spec:
-        { template:
-            { spec:
-                { containers: [{ "image": "app_image:latest", "name": "my-pod" }] }
-            }
-        }
-    }
+	deployment = {
+	    apiVersion: "extensions/v1beta1",
+	    kind: "Deployment",
+	    metadata: [
+	        { namespace: namespace },
+	        { name: "web" }
+	    ],
+	    spec:
+	        { template:
+	            { spec:
+	                { containers: [{ "image": "app_image:latest", "name": "my-pod" }] }
+	            }
+	        }
+	    }
+})
 
 $$.push(deployment)
 </pre>

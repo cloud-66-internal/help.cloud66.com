@@ -15,20 +15,20 @@ Alterant comes with a set of helpers that make it easier to read, parse and modi
 
 ### YamlReader
 
-YamlReader loads a YAML file into an object which can be used in the modifier.
+YamlReader loads a YAML file into an JSON string which can be used in the modifier.
 
 <pre class="prettyprint">
-var data = YamlReader("foo.yaml");
+var data = JSON.parse(YamlReader("foo.yaml"));
 </pre>
 
 YamlReader only looks in the context folder (where the input file is located).
 
 ### JsonReader
 
-JsonReader loads a JSON file into an object which can be used in the modifier.
+JsonReader loads a JSON file into an JSON string which can be used in the modifier.
 
 <pre class="prettyprint">
-var data = JsonReader("foo.json");
+var data = JSON.parse(JsonReader("foo.json"));
 </pre>
 
 JsonReader only looks in the context folder (where the input file is located).
