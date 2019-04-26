@@ -20,9 +20,10 @@ If you’re not an existing Habitus user, you’ll need to read through its [doc
 
 Your application (or service) must define any secrets you want to access as environment variables (ENV vars) with the format: HABITUS_ + ENV key. For example to access the secret with the key `MY_SECRET` you need to set an environment variable of `HABITUS_MY_SECRET`.
 
-**Note**
-
-Adding any variables with the `HABITUS_` prefix will signal Skycap to automatically start Habitus in secret-serving mode
+#### Note
+<div class="notice"><p>
+Adding any variables with the `HABITUS_` prefix will signal Skycap to automatically start Habitus in secret-serving mode.
+</p></div>
 
 ## 2. Specify your secrets in your build.yml
 
