@@ -71,7 +71,7 @@ You can change your Git repository through the user interface or by using [Cloud
 
 ## Which Clouds are supported?
 
-Currently we support Amazon Web Services, Digital Ocean, Google Compute Engine, Linode, Microsoft Azure, Rackspace, and CloudA clouds.
+Currently we support Amazon Web Services, Digital Ocean, Google Compute Engine, Linode, Microsoft Azure and Rackspace clouds.
 
 * * *
 
