@@ -7,5 +7,5 @@
   to = "/maestro/how-to-guides/deployment/building-your-service.html"
   
   [[redirects]]
-  from = "/node/references/clouds/*"
-  to = "/node/how-to-guides/clouds/:splat"
+  from = "*/references/clouds/*"
+  to = "*/how-to-guides/clouds/:splat"
