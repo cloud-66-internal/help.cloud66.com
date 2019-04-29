@@ -12,21 +12,21 @@ order: 1
 
 
 <p class="lead">
-    Alterant is a tool that transforms configuration files based on custom scripts.  It reads configuration files in yaml or json and modifies them based on your scripts.
+		Alterant is a tool that transforms configuration files based on custom scripts.  It reads configuration files in yaml or json and modifies them based on your scripts.
 </p>
 
 <a class="ButtonOutlined" href="https://github.com/cloud66-oss/alterant" target="_blank">
-    <img src="/images/ui/github.svg" class="u-inlineBlock u-verticalAlignMiddle" width="30" alt="">
-    <span class="ButtonOutlined-text u-inlineBlock u-verticalAlignMiddle">View Alterant on Github</span>
+		<img src="/images/ui/github.svg" class="u-inlineBlock u-verticalAlignMiddle" width="30" alt="">
+		<span class="ButtonOutlined-text u-inlineBlock u-verticalAlignMiddle">View Alterant on Github</span>
 </a>
 
 ## Welcome to Alterant
 
-Alterant is a Descriptive Configuration Modifier. It reads configuration files in <code>yaml</code> or <code>json</code> and modifies them based on your scripts. You can think of it as an elegant and understandable equivalent of XSLT but for JSON and YAML!
+Alterant is a Descriptive Configuration Modifier. It reads configuration files in <code>yaml</code> or <code>json</code> and modifies them based on your scripts. You can think of it as an elegant and understandable equivalent of XSLT but for YAML!
 
 ### Why do I need Alterant?
 
-While Alterant can be used with any JSON or YAML file, it is most useful if you use it with Kubernetes configuration files. Kubernetes configuration files describe how infrastructure resources should be deployed and configured on a cluster. However, a lot of times we find ourselves applying the same modifications to many of them.
+While Alterant can be used with any YAML file, it is most useful if you use it with Kubernetes configuration files. Kubernetes configuration files describe how infrastructure resources should be deployed and configured on a cluster. However, a lot of times we find ourselves applying the same modifications to many of them.
 
 #### Here is an example: Make sure all pods have log collection
 
@@ -43,18 +43,18 @@ If you want to collect your pod's logs and send them to a log management facilit
 apiVersion: v1
 kind: Pod
 metadata:
-  name: counter
+	name: counter
 spec:
-  containers:
-  - name: count
-    image: my_app
-    args: ['--log-folder', '/var/log/app.log']
-    volumeMounts:
-    - name: varlog
-      mountPath: /var/log
-  volumes:
-  - name: varlog
-    emptyDir: {}
+	containers:
+	- name: count
+		image: my_app
+		args: ['--log-folder', '/var/log/app.log']
+		volumeMounts:
+		- name: varlog
+			mountPath: /var/log
+	volumes:
+	- name: varlog
+		emptyDir: {}
 ```
 
 *Your deployment with a sidecar:*
@@ -62,35 +62,35 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: counter
+	name: counter
 spec:
-  containers:
-  - name: count
-    image: my_app
-    args: ['--log-folder', '/var/log/app.log']
-    volumeMounts:
-    - name: varlog
-      mountPath: /var/log
-  - name: log-collector-sidecar
-    image: my_log_collector
-    args: ['--collect-from', '/var/log/app.log']
-    volumeMounts:
-    - name: varlog
-      mountPath: /var/log
-  volumes:
-  - name: varlog
-    emptyDir: {}
+	containers:
+	- name: count
+		image: my_app
+		args: ['--log-folder', '/var/log/app.log']
+		volumeMounts:
+		- name: varlog
+			mountPath: /var/log
+	- name: log-collector-sidecar
+		image: my_log_collector
+		args: ['--collect-from', '/var/log/app.log']
+		volumeMounts:
+		- name: varlog
+			mountPath: /var/log
+	volumes:
+	- name: varlog
+		emptyDir: {}
 ```
 
 As you can see, the following piece needs to be added to every Deployment configuration in your app:
 
 ```yaml
-  - name: log-collector-sidecar
-    image: my_log_collector
-    args: ['--collect-from', '/var/log/app.log']
-    volumeMounts:
-    - name: varlog
-      mountPath: /var/log
+	- name: log-collector-sidecar
+		image: my_log_collector
+		args: ['--collect-from', '/var/log/app.log']
+		volumeMounts:
+		- name: varlog
+			mountPath: /var/log
 ```
 
 **Deploying log collection with Alterant**
@@ -99,7 +99,7 @@ With Alterant, we can write a simple Javascript file to add the sidecar to any i
 
 ```javascript
 sidecar = YamlReader("sidecar.yaml")
-$$.forEach($ => {
+$$.forEach(functin($) {
 	$.spec.template.spec.containers.push(sidecar)
 });
 ```
@@ -107,12 +107,12 @@ $$.forEach($ => {
 I can then put the sidecar configuration in a file called `sidecar.yaml`:
 
 ```yaml
-  - name: log-collector-sidecar
-    image: my_log_collector
-    args: ['--collect-from', '/var/log/app.log']
-    volumeMounts:
-    - name: varlog
-      mountPath: /var/log
+	- name: log-collector-sidecar
+		image: my_log_collector
+		args: ['--collect-from', '/var/log/app.log']
+		volumeMounts:
+		- name: varlog
+			mountPath: /var/log
 ```
 
 Now all I have to do is to run Alterant:
