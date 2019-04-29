@@ -533,28 +533,3 @@ If the step 1 has a result use that as /path/to/database/back unless use /path/t
 <pre class="prettyprint">
 $ mongorestore --drop --db YOUR_DATABASE_NAME  /path/to/database/back 
 </pre>
-
-
-## Pricing
-
-<table class='table table-bordered table-striped table-small'>
-    <thead>
-        <tr>
-            <th align="center"></th>
-            <th align="center">Database/month</th>
-            <th align="center">GB/month</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Managed backup</td>
-            <td>$12</td>
-            <td>$0.12</td>
-        </tr>
-        <tr>
-            <td>Unmanaged backup</td>
-            <td>$5</td>
-            <td>&mdash;</td>
-        </tr>
-    </tbody>
-</table>
