@@ -2,9 +2,20 @@
   from = "/node/references/clouds/*"
   to = "/node/how-to-guides/clouds/:splat"
 
+  [[redirects]]
   from = "/rails/references/clouds/*"
   to = "/rails/how-to-guides/clouds/:splat"
 
+  [[redirects]]
   from = "/maestro/references/clouds/*"
   to = "/maestro/how-to-guides/clouds/:splat"
+
+  [[redirects]]
+  from = "/maestro/references/clouds/*"
+  to = "/maestro/how-to-guides/clouds/:splat"
+
+  [[redirects]]
+  from = "/node/references/integrations/*"
+  to = "/node/integrations/:splat"
+    
   
