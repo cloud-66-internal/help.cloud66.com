@@ -429,3 +429,13 @@
 [[redirects]]
   from = "/maestro/tutorials/haproxy.html"
   to = "/maestro/how-to-guides/deployment/haproxy.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/registered-servers.html"
+  to = "/maestro/how-to-guides/deployment/registered-servers.html"
+
+
+[[redirects]]
+  from = "/stack-features/db-backup.html"
+  to = "/rails/how-to-guides/add-ins/database-backups.html"
+
