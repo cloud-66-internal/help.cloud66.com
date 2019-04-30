@@ -90,4 +90,4 @@ $$.push(deployment)
 
 This modifier reads the name of the namespace and adds a new deployment to the output that was not there before. In other words, instead of modifying the object that's being processed, it adds a sibling node to the parent of that object. To access the parent for `$` we can use `$$`.
 
-These are just some simple examples of what you can do with Alterant. You can read about the [helper functions](/alterant/helpers.html), [extending Alterant](/alterant/extending-alterant.html) and the [Alterant CLI](/alterant/alterant-cli.html).
+These are just some simple examples of what you can do with Alterant. You can read about the [helper functions](/alterant/helpers.html) and the [Alterant CLI](/alterant/alterant-cli.html).
