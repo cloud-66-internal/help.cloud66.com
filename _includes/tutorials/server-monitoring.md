@@ -1,9 +1,7 @@
 
 ## Server resource monitoring has been partially deprecated 
 
-We have deprecated the integrated server metrics feature as of April 2019. We will continue to show the current resource utilisation of servers (see above) but graphs and historical data will no longer be available.
-
-We avoid deprecating features wherever possible, but in this case we found that:
+We have deprecated the integrated server metrics feature as of April 2019. We avoid deprecating features wherever possible, but in this case we found that:
 
 * The monitoring wasn’t hugely detailed or useful except as a very general overview
 * Our focus on core features has made this feature a low priority for us. As a small team, we need to direct our energy to features that make the most difference to our customers.
@@ -12,7 +10,7 @@ We avoid deprecating features wherever possible, but in this case we found that:
 
 ## We are keeping disk space alerts
 
-The one exception to the above is disk space alerts, which are quite widely used. We will be keeping that feature, so it will continue to work. You can add and update your alerts using the button at the top of the page.
+The one exception to the above is disk space alerts, which are quite widely used. We will be keeping that feature, so it will continue to work.
 
 ## Alternative solutions
 
