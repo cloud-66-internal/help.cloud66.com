@@ -1,19 +1,10 @@
-[[redirects]]
-  from = "/legacy_docker/how-to-guides/deployment/symlink-folders.html"
-  to = "/maestro/how-to-guides/deployment/symlink-folders.html"
-
-[[redirects]]
-  from = "/legacy_docker/how-to-guides/deployment/building-your-service.html"
-  to = "/maestro/how-to-guides/deployment/building-your-service.html"
-  
   [[redirects]]
   from = "/node/references/clouds/*"
   to = "/node/how-to-guides/clouds/:splat"
 
- [[redirects]]
   from = "/rails/references/clouds/*"
   to = "/rails/how-to-guides/clouds/:splat"
 
- [[redirects]]
   from = "/maestro/references/clouds/*"
   to = "/maestro/how-to-guides/clouds/:splat"
+  
