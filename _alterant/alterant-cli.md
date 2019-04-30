@@ -21,11 +21,10 @@ Shows the alterant version
 
 ```bash
 $ alterant version
-
-Alterant 0.0.1
-(c) 2018 Cloud66 Inc.
+stable/2.0.0
 ```
 
+The first part is the channel. The second part is the version. Alterant is released on `stable` and `edge` channels.
 
 #### Modify
 
@@ -40,23 +39,6 @@ To display the output on terminal, omit the `out` flag.
 To accept input from the pipe (stdin), use `-` for the `in` flag:
 
 ```bash
-alterant modify --in - --modifier foo.js
+cat somefile | alterant modify --in - --modifier foo.js
 ```
 
-To show the difference between the input and the modified output, you can use the `--diff` flag:
-
-```bash
-alterant modify --in input.yml --out output.txt --modifier foo.js --diff
-```
-
-This saves the diff file in `output.txt`
-
-If you would like to display full stack traces and console output, you can use the `--debug` flag:
-
-```bash
-alterant modify --in input.json --modifier foo.js --debug
-```
-
-### Debugging
-
-Modifier scripts support `console.log` (but not all normal Javascript `console` methods). You can use `console.log` just as you would in any Javascript file for debug purposes. You will need to run the CLI with the `--debug` flag to see the console output.

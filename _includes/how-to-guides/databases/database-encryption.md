@@ -1,15 +1,17 @@
 ## Overview 
 
-If you’re storing sensitive data (particularly private user data) you’ll probably need to encrypt that data to decrease the risk of theft or leaks, and to meet regulatory requirements. There are two main approaches to encrypting data:
+If you’re storing sensitive data (particularly private user or medical data) you’ll probably need to encrypt that data to decrease the risk of theft or leaks. 
 
-- Encrypting data using via your application code (Application level)
+There are two main approaches to encrypting your data:
+
+- Encrypting data using your application code (Application level)
 - Native encryption of the entire database (Database engine level)
 
-We’ll discuss your options below.
+This article is concerned with encrypting the data where it is stored (also know as “encryption at rest”), and while it is in use (“transactional encryption”) but you should also consider protecting your data while it is “in motion” by (for example) encrypting your database connections using SSL/TLS. 
 
 #### Note
 <div class="notice"><p>
-Cloud 66 doesn’t currently natively support full database encryption (TDE). We discuss your options for using this approach below.</p></note>
+While Cloud 66 doesn’t natively support full database encryption (TDE), there are several options available for encrypting your data - see below.</p></note>
 
 
 ## Data encryption via the application
@@ -22,7 +24,7 @@ Some examples are:
 - Node’s built-in [Crypto library](https://nodejs.org/api/crypto.html)
 - [pyca/cryptography](https://cryptography.io/en/latest/) for Python
 
-The main advantage of this approach is that your database architecture and structure don’t need to be completely changed - you simply “scramble” sensitive data as you store it and "unscramble” it as you retrieve it. This also allows you to only encrypt selected data and to leave the rest of your database unencrypted. 
+The main advantage of this approach is that your database architecture and structure don’t need to be completely changed - you simply encrypt sensitive data as you store it and decrypt it as you retrieve it. This also allows you to only encrypt selected data and to leave the rest of your database unencrypted. 
 
 The main drawbacks of this approach are that it requires development time, and can be prone to leaks and errors (because it relies on manual implementation). 
 
@@ -39,20 +41,21 @@ Many popular database engines offer this feature, but in most cases it is only a
 
 Some engines do support native encryption in their free versions, but these are increasingly rare and are often incomplete or require significant extra configuration. For example:
 
-- [PostgreSQL](https://www.postgresql.org/docs/8.1/encryption-options.html)
+- [PostgreSQL](https://www.postgresql.org/docs/10/encryption-options.html)
 - [MariaDB](https://mariadb.com/kb/en/library/data-at-rest-encryption-overview/)
 
 The main advantages of this approach are that your application code does not need significant changes to implement it, and that native solutions are generally more secure (because they are self-contained and don’t require manual implementation or coding). 
 
 The main disadvantage is the (often substantial) cost of the Enterprise versions of these engines, as well as the time to migrate any existing data into the new structure and to learn to work with the new technology.
 
-
 ## Implementing native database encryption (TDE) with Cloud 66
 
-Cloud 66 doesn’t currently support TDE for any of our native database engines. If you need this level of encryption, you have two options:
+If you need this level of encryption, you have two options:
 
-1. A managed database solution from a cloud provider 
+1. A managed, TDE-enabled database instance from a cloud provider 
 2. A manual installation of a database that supports TDE
+
+The first option will generally end up costing more in hosting fees, but will save a lot of time on setup and maintenance. 
 
 The first option will generally end up costing more in hosting fees, but will save a lot of time on setup and maintenance. 
 
@@ -61,3 +64,5 @@ Many cloud providers offer TDE-enabled managed databases (or data storage soluti
 - [Amazon RDS](https://aws.amazon.com/rds/)
 - [Rackspace](https://www.rackspace.com/data)
 - [Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-service-encryption)
+
+Once you have set up your external managed database, you will need to manually configure your application to connect to it securely.
