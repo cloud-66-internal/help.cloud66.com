@@ -533,4 +533,3 @@ If the step 1 has a result use that as /path/to/database/back unless use /path/t
 <pre class="prettyprint">
 $ mongorestore --drop --db YOUR_DATABASE_NAME  /path/to/database/back 
 </pre>
-
