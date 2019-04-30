@@ -414,4 +414,18 @@
   from = "/managing-your-stack/server-restart-notifications.html"
   to = "/"
 
+  [[redirects]]
+  from = "/node/how-to-guides/deployment/shells/lets-encrypt.html"
+  to = "/node/how-to-guides/security/lets-encrypt.html"
+
+  [[redirects]]
+  from = "/rails/how-to-guides/deployment/shells/lets-encrypt.html"
+  to = "/rails/how-to-guides/security/lets-encrypt.html"
   
+[[redirects]]
+  from = "/rails/tutorials/database-backup.html"
+  to = "/rails/how-to-guides/add-ins/database-backups.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/haproxy.html"
+  to = "/maestro/how-to-guides/deployment/haproxy.html"
