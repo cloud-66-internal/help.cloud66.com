@@ -45,13 +45,6 @@ collections:
 # Build settings
 markdown: kramdown
 
-defaults:
-  -
-    scope:
-      type: redirects
-    values:
-      layout: redirect
-
 sass:
     style:  compressed  # nested|expanded|compact|compressed
 
@@ -61,16 +54,3 @@ url: https://help.cloud66.com
 
 plugins:
   - jekyll-sitemap
-
-algolia:
-  application_id: 'TXUI53WBEH'
-  nodes_to_index: 'p,ul'
-  settings:
-    attributesToSnippet: ['raw_html:100']
-    attributeForDistinct: 'title'
-    distinct: true
-    removeWordsIfNoResults: 'lastWords'
-    highlightPreTag: '<mark>'
-    highlightPostTag: '</mark>'
-    attributesForFaceting: ['tags', 'type', 'title', 'collection']
-
