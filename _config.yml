@@ -54,3 +54,4 @@ url: https://help.cloud66.com
 
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
