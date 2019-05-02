@@ -524,7 +524,7 @@
   from = "/beta/*"
   to = "/"
 
-[redirects]]
+[[redirects]]
   from = "/maestro/tutorials/logging.html"
   to = "/maestro/how-to-guides/deployment/logging.html"
 
