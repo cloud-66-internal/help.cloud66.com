@@ -1,4 +1,4 @@
 ---
-newUrl: /skycap/how-to-guides/
 sitemap: false
+newUrl: /skycap/how-to-guides/
 ---
