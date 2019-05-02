@@ -439,3 +439,92 @@
   from = "/stack-features/db-backup.html"
   to = "/rails/how-to-guides/add-ins/database-backups.html"
 
+
+[[redirects]]
+  from = "/building-your-stack/*"
+  to = "/"
+
+[[redirects]]
+  from = "/database-management/*"
+  to = "/"
+
+[[redirects]]
+  from = "/deployment/*"
+  to = "/"
+
+[[redirects]]
+  from = "/getting-started/*"
+  to = "/"
+
+[[redirects]]
+  from = "/how-to/*"
+  to = "/"
+
+[[redirects]]
+  from = "/introduction-to-cloud-66/*"
+  to = "/"
+
+[[redirects]]
+  from = "/maestro/references/account/*"
+  to = "/maestro/account/:splat"
+
+[[redirects]]
+  from = "/node/references/account/*"
+  to = "/node/account/:splat"
+
+[[redirects]]
+  from = "/rails/references/account/*"
+  to = "/rails/account/:splat"
+
+[[redirects]]
+  from = "/skycap/references/account/*"
+  to = "/skycap/account/:splat"
+
+[[redirects]]
+  from = "/managing-your-stack/*"
+  to = "/"
+
+[[redirects]]
+  from = "/network/*"
+  to = "/"
+
+[[redirects]]
+  from = "/stack-add-ins/*"
+  to = "/"
+
+[[redirects]]
+  from = "/toolbelt/*"
+  to = "/"
+
+[[redirects]]
+  from = "/web-server/*"
+  to = "/"
+
+[[redirects]]
+  from = "/skycap/concepts/what-are-formations.html"
+  to = "/skycap/the-basics/formations-stencils-and-snapshots.html"
+
+[[redirects]]
+  from = "/rails/tutorials/logging.html"
+  to = "/rails/how-to-guides/deployment/logging.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/multi-region-stack.html"
+  to = "/maestro/how-to-guides/deployment/multi-region-stack.html"
+
+[[redirects]]
+  from = "/building-your-node-js-stack/getting-started-with-node-js-based-stacks"
+  to = "/node/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/cloud-providers/cloud-vexxhost.html"
+  to = "/"
+
+[[redirects]]
+  from = "/article/*"
+  to = "/"
+
+[[redirects]]
+  from = "/beta/*"
+  to = "/"
+
