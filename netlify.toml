@@ -521,10 +521,6 @@
   to = "/"
 
 [[redirects]]
-  from = "/article/*"
-  to = "/"
-
-[[redirects]]
   from = "/beta/*"
   to = "/"
 
@@ -572,4 +568,27 @@
   from = "/stack-features/*"
   to = "/"
 
+[[redirects]]
+  from = "/article/136-building-your-rails-rack-stack"
+  to = "/rails/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/135-docker-service-configuration"
+  to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
+
+[[redirects]]
+  from = "/article/279-getting-started-with-skycap"
+  to = "/skycap/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/283-getting-started-with-maestro"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/169-getting-started-with-node-js-based-stacks"
+  to = "/node/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/*"
+  to = "/"
 
