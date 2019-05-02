@@ -429,3 +429,166 @@
 [[redirects]]
   from = "/maestro/tutorials/haproxy.html"
   to = "/maestro/how-to-guides/deployment/haproxy.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/registered-servers.html"
+  to = "/maestro/how-to-guides/deployment/registered-servers.html"
+
+
+[[redirects]]
+  from = "/stack-features/db-backup.html"
+  to = "/rails/how-to-guides/add-ins/database-backups.html"
+
+
+[[redirects]]
+  from = "/building-your-stack/*"
+  to = "/"
+
+[[redirects]]
+  from = "/database-management/*"
+  to = "/"
+
+[[redirects]]
+  from = "/deployment/*"
+  to = "/"
+
+[[redirects]]
+  from = "/getting-started/*"
+  to = "/"
+
+[[redirects]]
+  from = "/how-to/*"
+  to = "/"
+
+[[redirects]]
+  from = "/introduction-to-cloud-66/*"
+  to = "/"
+
+[[redirects]]
+  from = "/maestro/references/account/*"
+  to = "/maestro/account/:splat"
+
+[[redirects]]
+  from = "/node/references/account/*"
+  to = "/node/account/:splat"
+
+[[redirects]]
+  from = "/rails/references/account/*"
+  to = "/rails/account/:splat"
+
+[[redirects]]
+  from = "/skycap/references/account/*"
+  to = "/skycap/account/:splat"
+
+[[redirects]]
+  from = "/managing-your-stack/*"
+  to = "/"
+
+[[redirects]]
+  from = "/network/*"
+  to = "/"
+
+[[redirects]]
+  from = "/stack-add-ins/*"
+  to = "/"
+
+[[redirects]]
+  from = "/toolbelt/*"
+  to = "/"
+
+[[redirects]]
+  from = "/web-server/*"
+  to = "/"
+
+[[redirects]]
+  from = "/skycap/concepts/what-are-formations.html"
+  to = "/skycap/the-basics/formations-stencils-and-snapshots.html"
+
+[[redirects]]
+  from = "/rails/tutorials/logging.html"
+  to = "/rails/how-to-guides/deployment/logging.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/multi-region-stack.html"
+  to = "/maestro/how-to-guides/deployment/multi-region-stack.html"
+
+[[redirects]]
+  from = "/building-your-node-js-stack/getting-started-with-node-js-based-stacks"
+  to = "/node/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/cloud-providers/cloud-vexxhost.html"
+  to = "/"
+
+[[redirects]]
+  from = "/beta/*"
+  to = "/"
+
+[[redirects]]
+  from = "/maestro/tutorials/logging.html"
+  to = "/maestro/how-to-guides/deployment/logging.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/docker-service-configuration.html"
+  to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/redeployment-hook.html"
+  to = "/maestro/how-to-guides/deployment/redeployment-hook.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/scaling.html"
+  to = "/maestro/how-to-guides/scaling/scaling.html"
+
+[[redirects]]
+  from = "/rails/tutorials/passenger-enterprise.html"
+  to = "/rails/how-to-guides/rack-servers/passenger-enterprise.html"
+
+[[redirects]]
+  from = "/maestro/references/deployment-authorisation.html"
+  to = "/maestro/how-to-guides/deployment/deployment-authorisation.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/docker-introduction.html"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/getting-started-with-manifest.html"
+  to = "/maestro/quickstarts/getting-started-with-manifest.html"
+
+[[redirects]]
+  from = "/node/tutorials/server-restart-notifications.html"
+  to = "/rails/how-to-guides/deployment/server-restart-notifications.html"
+
+[[redirects]]
+  from = "/ruby*"
+  to = "/rails/"
+
+[[redirects]]
+  from = "/stack-features/*"
+  to = "/"
+
+[[redirects]]
+  from = "/article/136-building-your-rails-rack-stack"
+  to = "/rails/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/135-docker-service-configuration"
+  to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
+
+[[redirects]]
+  from = "/article/279-getting-started-with-skycap"
+  to = "/skycap/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/283-getting-started-with-maestro"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/169-getting-started-with-node-js-based-stacks"
+  to = "/node/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/*"
+  to = "/"
+
