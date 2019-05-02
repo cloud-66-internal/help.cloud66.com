@@ -528,3 +528,48 @@
   from = "/beta/*"
   to = "/"
 
+[redirects]]
+  from = "/maestro/tutorials/logging.html"
+  to = "/maestro/how-to-guides/deployment/logging.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/docker-service-configuration.html"
+  to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/redeployment-hook.html"
+  to = "/maestro/how-to-guides/deployment/redeployment-hook.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/scaling.html"
+  to = "/maestro/how-to-guides/scaling/scaling.html"
+
+[[redirects]]
+  from = "/rails/tutorials/passenger-enterprise.html"
+  to = "/rails/how-to-guides/rack-servers/passenger-enterprise.html"
+
+[[redirects]]
+  from = "/maestro/references/deployment-authorisation.html"
+  to = "/maestro/how-to-guides/deployment/deployment-authorisation.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/docker-introduction.html"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/getting-started-with-manifest.html"
+  to = "/maestro/quickstarts/getting-started-with-manifest.html"
+
+[[redirects]]
+  from = "/node/tutorials/server-restart-notifications.html"
+  to = "/rails/how-to-guides/deployment/server-restart-notifications.html"
+
+[[redirects]]
+  from = "/ruby*"
+  to = "/rails/"
+
+[[redirects]]
+  from = "/stack-features/*"
+  to = "/"
+
+
