@@ -50,6 +50,13 @@ sass:
 
 safe: false
 
+defaults:
+  -
+    scope:
+      type: redirects
+    values:
+      layout: redirect
+
 url: https://help.cloud66.com
 
 plugins:
