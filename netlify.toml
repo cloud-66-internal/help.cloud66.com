@@ -592,3 +592,22 @@
   from = "/article/*"
   to = "/"
 
+[[redirects]]
+  from = "/maestro/references/shells/toolbelt.html"
+  to = "/maestro/references/toolbelt.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/database-management.html"
+  to = "/maestro/how-to-guides/databases/database-management.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/databases/shells/unistall-mysql.html"
+  to = "/node/how-to-guides/databases/shells/uninstall-mysql.html"
+
+[[redirects]]
+  from = "/node/tutorials/haproxy.html"
+  to = "/node/how-to-guides/deployment/haproxy.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/databases/shells/"
+  to = "/maestro/how-to-guides/databases/"
