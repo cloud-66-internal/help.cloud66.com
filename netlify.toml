@@ -589,10 +589,6 @@
   to = "/node/quickstarts/getting_started.html"
 
 [[redirects]]
-  from = "/article/*"
-  to = "/"
-
-[[redirects]]
   from = "/maestro/references/shells/toolbelt.html"
   to = "/maestro/references/toolbelt.html"
 
@@ -611,3 +607,11 @@
 [[redirects]]
   from = "/maestro/how-to-guides/databases/shells/"
   to = "/maestro/how-to-guides/databases/"
+  
+[[redirects]]
+  from = "/maestro/tutorials/service-lifecycle-management.html"
+  to = "/maestro/how-to-guides/deployment/service-lifecycle-management.html"  
+  
+[[redirects]]
+  from = "/article/*"
+  to = "/"
