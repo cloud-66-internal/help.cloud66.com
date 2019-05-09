@@ -1,10 +1,24 @@
 ## Overview
 
-A manifest file allows you to be more explicit about your application composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your application. See [Getting started with manifest files](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) for an introduction.
+A manifest file allows you to be more explicit about your application composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. 
+
+The file describes the setup of the components that run your application. See [Getting started with manifest files](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) for an introduction.
 
 {% if include.product == 'rails' %}
 
 For _Rails/Rack_ applications, place a file called `manifest.yml` in a folder named `.cloud66`, that is in turn located in the root of your source code and checked into your repository.
+
+{% endif %}
+
+{% if include.product == 'maestro' %}
+
+In Maestro there are two opportunities to edit your manifest file:
+
+* After your application code has been analyzed (and before you deploy it) by using the _advanced_ tab. 
+* After your application has been deployed, by clicking on *Configuration Files* and then the *Manifest* tab in the Dashboard
+
+#### Important
+<div class="notice notice-danger"><p>It is vital that you understand the limits and caveats of manifest settings. Please read our <a href="/maestro/references/manifest-structure.html#classes-of-manifest-file-settings">reference guide</a> before you start creating your own manifest files.</p></div>
 
 {% endif %}
 
@@ -26,6 +40,8 @@ You can also use your own custom environment names in your manifest file.
 
 Next, select which component you would like to specify settings for. You can choose from the following:
 
+{% if include.product == "maestro" %}
+*   [Docker](#docker){% endif %}
 *   [ElasticSearch](#elasticsearch)
 *   [Gateway](#gateway)
 *   [GlusterFS](#glusterfs)
@@ -40,6 +56,49 @@ Next, select which component you would like to specify settings for. You can cho
 *   [Redis](#redis) {% if include.product == "rails" %}
 *   [Sinatra](#sinatra)
 *   [Rails](#rails) {% endif %}
+
+{% if include.product == 'maestro' %}
+### Docker
+
+- **version**: Specify the version of Docker you want to install.
+- **weave_version** (_Optional_): Specify the version of Weave you want to install.
+- **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers.   
+ <span style="background-color: #FFFF00"> Note that you must provide [**subnet_id**](#servers) for all servers in your application.</span>
+- **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
+- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 20.
+- **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
+- **image_keep_count** (_Optional, defaults to 5_): Set the number of old images to save on your servers (besides the running image).
+- **nameservers** (_Optional, defaults to [ 8.8.8.8, 8.8.4.4 ]_): Set DNS servers for your application.  
+  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
+
+#### Examples
+
+```
+production:
+  docker:
+    configuration:
+      version: 1.7.0
+      weave_version: 1.0.3
+      vpc_id: vpc-64872001
+      root_disk_size: 100
+      root_disk_type: ssd
+      image_keep_count: 5
+      nameservers: ['8.8.8.8', '8.8.4.4']
+```
+
+```
+production:
+  docker:
+    configuration:
+      version: 1.12.0
+      weave_version: 1.0.3
+      vn_name: your_vn_name
+      root_disk_size: 100
+      root_disk_type: ssd
+      image_keep_count: 15
+```
+* * *
+{% endif %}
 
 ### ElasticSearch
 
@@ -677,11 +736,19 @@ Default values for each process type are:
 
 ## Specify additional LiveLog files
 
-Each component supports the additional partial configuration to add custom live log files for that component:
+Each component supports the additional partial configuration to add custom live log files for that component. For example:
 
 ```
 production:
   rails:
+    configuration:
+      custom_log_files: ["/tmp/mylog/*/*.log"]
+```
+...or
+
+```
+production:
+  docker:
     configuration:
       custom_log_files: ["/tmp/mylog/*/*.log"]
 ```
