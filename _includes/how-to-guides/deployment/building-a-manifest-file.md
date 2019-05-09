@@ -307,7 +307,8 @@ A Rails application type in the manifest file gives you fine control over things
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application.  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
-- **include_submodules** (Optional, default is true): Set this to false to exclude any Git submodules from being pulled during a build. 
+- **include_submodules** (Optional, default is true): Set this to false to exclude any Git submodules from being pulled during a build.
+- **keep_releases** *(Optional, Defaults to 5)* Specify the number of releases to keep on your server(s).
 
 #### Important
 <div class="notice notice-warning">
@@ -350,7 +351,8 @@ The manifest file gives you fine control over things like the Ruby version or wh
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application. <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
-- **include_submodules** (Optional, default is true): Set this to false to exclude any Git  submodules  from being pulled during a build. 
+- **include_submodules** (Optional, default is true): Set this to false to exclude any Git  submodules  from being pulled during a build.
+- **keep_releases** *(Optional, Defaults to 5)* Specify the number of releases to keep on your server(s).
 
 #### Important
 <div class="notice notice-warning">
