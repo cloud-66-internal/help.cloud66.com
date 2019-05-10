@@ -13,10 +13,10 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-Applications deployed with Maestro use [Nginx](http://nginx.com) as their web and reverse proxy server. You can customize the default configuration of Nginx to suit your needs.
+Applications deployed with Maestro use [Nginx](http://nginx.com) as their web and reverse proxy server. You can customize the [default configuration](/maestro/references/nginx.html) of Nginx to suit your needs.
 
 
-## Customize the Nginx error page
+## Customizing the Nginx error page
 
 There are two ways for you to create a custom Nginx 50X error page:
 
@@ -42,7 +42,7 @@ There are two ways for you to create a custom Nginx 50X error page:
     ``
 
 
-## Customize your Nginx configuration
+## Customizing your Nginx configuration
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Configuration files*  in the **Application** panel on the right of the screen.
