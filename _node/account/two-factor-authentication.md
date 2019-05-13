@@ -1,13 +1,13 @@
 ---
 layout: post
 template: one-col
-title: Using two-step verification
+title: Enabling two-factor authentication (2FA)
 categories: accounts
-order: 6
+order: 2
 lead: ""
 legacy: false
 tags: ["account", "security"]
 permalink: /:collection/:path:output_ext
 ---
 
-{%include references/account/two-step-verification.md %}
+{%include references/account/two-factor-authentication.md %}

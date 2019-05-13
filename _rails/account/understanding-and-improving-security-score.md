@@ -1,12 +1,13 @@
 ---
 layout: post
 template: one-col
-title: Using two-step verification
+title: Understanding & improving your Security Score
 categories: accounts
 lead: ""
 legacy: false
 tags: ["account", "security"]
 permalink: /:collection/:path:output_ext
+product: Rails
 ---
 
-{%include references/account/two-step-verification.md %}
+{%include references/account/understanding-and-improving-security-score.md %}
