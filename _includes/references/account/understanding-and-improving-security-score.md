@@ -30,7 +30,7 @@ Over the last five years hackers have stolen several billion password and userna
 
 This has provided criminals and other bad actors with an incredible toolkit for breaking into online services because it has dramatically narrowed the search space for passwords actually used by humans (compared to the total available combination of characters available for use in passwords). 
 
-If you're unconvinced of the dangers, we suggest you visit [Have I Been Pwned](https://haveibeenpwned.com/) to check your own exposure. 
+If you're unconvinced of the dangers, we suggest you visit [Have I Been Pwned?](https://haveibeenpwned.com/) to check your own exposure. 
 
 2FA is an order of magnitude more secure than simple passwords because it requires access to a second, independent device or mechanism (such as a mobile phone). This does not make an account un-hackable, but it makes hacking difficult enough that criminals may simply target other (less secure) accounts. 
 
@@ -59,7 +59,8 @@ There are a numbers of options available for physical keys:
 - USB-based keys such as the [YubiKey](https://www.yubico.com/)
 - Bluetooth-based keys (including wearables)
 - NFC-based keys (including many smartphones)
-- Any smartphone with the Krypton app installed (this is Cloud 66's preferred method)
+- Github's [SoftU2F project](https://github.com/github/SoftU2F) which uses software to emulate hardware keys
+- Any smartphone with the [Krypton app](https://krypt.co) installed (this is Cloud 66's preferred method)
 
 Follow our [how-to guide](/{{page.collection}}/account/two-factor-authentication.html#adding-a-physical-fido-security-key) to learn how to add a physical security key to your Cloud 66 account. 
 
@@ -67,7 +68,7 @@ Follow our [how-to guide](/{{page.collection}}/account/two-factor-authentication
 
 Sharing login details, while convenient, opens your account up to significant additional risks. Apart from the fact that shared passwords are more easily leaked, they can be abused by former team members or careless (or malicious) employees. 
 
-This practice also makes it almost impossible to audit who is responsible for changes on an account, and does not allow for different team members to have different levels of access and permissions. 
+Cloud 66 uses enhanced security techniques to detect sharing of logins, and we will warn you via email in those cases. However if you ignore this warning, it will be more difficult to audit who is responsible for changes on an account. It also does not allow for different team members to have different levels of access and permissions.
 
 ## Next steps
 

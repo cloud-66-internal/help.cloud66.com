@@ -27,8 +27,7 @@ You can also force all the members of your Cloud 66 account to use 2FA. To do th
 3. Click on *Login & Security* in the **Account** panel on the left
 4. Scroll down to the section named "Enforce 2FA for your Team" and click the green *Force 2FA for your_team_name* button.
 
-This will oblige all team members to set up 2FA before they are able to continue using their Cloud 66 account.
-
+This will oblige all team members to set up 2FA before they are able to access the team's Cloud 66 account.
 
 ## Adding a physical FIDO security key
 
