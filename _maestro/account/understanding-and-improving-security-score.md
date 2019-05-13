@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Using two-step verification
+title: Understanding & improving your Security Score
 categories: account
 lead: ""
 legacy: false
@@ -10,4 +10,4 @@ permalink: /:collection/:path:output_ext
 product: Maestro
 ---
 
-{%include references/account/two-step-verification.md %}
+{%include references/account/understanding-and-improving-security-score.md %}
