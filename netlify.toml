@@ -639,7 +639,23 @@
 [[redirects]]
   from = "/skycap/how-to-guides/deployment/shells/*"
   to = "/skycap/how-to-guides/deployment/:splat"
-  
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deploy"
+  to = "/maestro/how-to-guides/deployment/"
+
+[[redirects]]
+  from = "/maestro/tutorials/service-monitoring.html"
+  to = "/maestro/references/service-monitoring.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/databases/elasticsearch-scaling.html"
+  to = "/rails/how-to-guides/scaling/elasticsearch-scaling.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/migrate-the-stack.html"
+  to = "/skycap/how-to-guides/"
+    
 [[redirects]]
   from = "/article/*"
   to = "/"
