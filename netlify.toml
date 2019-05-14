@@ -635,6 +635,10 @@
 [[redirects]]
   from = "/maestro/maestro/*"
   to = "/maestro/:splat"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/*"
+  to = "/skycap/how-to-guides/deployment/:splat"
   
 [[redirects]]
   from = "/article/*"
