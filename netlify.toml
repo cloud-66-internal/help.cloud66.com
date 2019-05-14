@@ -611,6 +611,23 @@
 [[redirects]]
   from = "/maestro/tutorials/service-lifecycle-management.html"
   to = "/maestro/how-to-guides/deployment/service-lifecycle-management.html"  
+
+[[redirects]]
+  from = "/maestro/account/two-step-verification.html"
+  to = "/maestro/account/two-factor-authentication.html"
+
+[[redirects]]
+  from = "/node/account/two-step-verification.html"
+  to = "/node/account/two-factor-authentication.html"
+
+[[redirects]]
+  from = "/rails/account/two-step-verification.html"
+  to = "/rails/account/two-factor-authentication.html"
+
+[[redirects]]
+  from = "/skycap/account/two-step-verification.html"
+  to = "/skycap/account/two-factor-authentication.html"
+
   
 [[redirects]]
   from = "/article/*"

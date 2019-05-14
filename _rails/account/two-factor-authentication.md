@@ -1,12 +1,13 @@
 ---
 layout: post
 template: one-col
-title: What is Two-step Verification?
+title: Enabling two-factor authentication (2FA)
 categories: accounts
+order: 2
 lead: ""
 legacy: false
 tags: ["account", "security"]
 permalink: /:collection/:path:output_ext
 ---
 
-{%include references/account/two-step-verification.md %}
+{%include references/account/two-factor-authentication.md %}

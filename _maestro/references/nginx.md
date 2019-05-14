@@ -5,7 +5,7 @@ title: Nginx options and variables
 categories: references
 lead: "A detailed guide to the options and variables available for managing the Nginx reverse-proxy in Maestro"
 legacy: false
-tags: ["customization", "nginx"]
+tags: ["customization", "nginx","maestro"]
 order: 90
 permalink: /:collection/:path:output_ext
 ---
@@ -39,7 +39,7 @@ The following table outlines the default configuration of Nginx.
    </thead> 
    <tbody> 
     <tr class="header"> 
-     <td> <strong>General</strong> <span>-</span> </td> 
+     <td> <strong>General</strong> </td> 
      <td></td> 
      <td></td> 
     </tr> 
@@ -61,7 +61,7 @@ The following table outlines the default configuration of Nginx.
    </tbody> 
    <tbody> 
     <tr class="header"> 
-     <td> <strong>Events</strong> <span>-</span> </td> 
+     <td> <strong>Events</strong> </td> 
      <td></td> 
      <td></td> 
     </tr> 
@@ -73,7 +73,7 @@ The following table outlines the default configuration of Nginx.
    </tbody> 
    <tbody> 
     <tr class="header"> 
-     <td> <strong>HTTP</strong> <span>-</span> </td> 
+     <td> <strong>HTTP</strong> </td> 
      <td></td> 
      <td></td> 
     </tr> 
@@ -145,7 +145,7 @@ The following table outlines the default configuration of Nginx.
    </tbody> 
    <tbody> 
     <tr class="header"> 
-     <td> <strong>Server</strong> <span>-</span> </td> 
+     <td> <strong>Server</strong> </td> 
      <td></td> 
      <td></td> 
     </tr> 
@@ -182,8 +182,6 @@ The following table outlines the default configuration of Nginx.
    </tbody> 
   </table> 
 
-
-
 ## Nginx worker configuration
 
 The following table specifies the number of workers configured for your Nginx based on the server resources (CPU cores) on each cloud.
@@ -198,7 +196,7 @@ The following table specifies the number of workers configured for your Nginx ba
      </thead> 
      <tbody> 
       <tr class="header"> 
-       <td width="25%"> <strong>AWS</strong> <span>-</span> </td> 
+       <td width="25%"> <strong>AWS</strong> </td> 
        <td width="40%"></td> 
        <td width="70%"></td> 
       </tr> 
@@ -350,7 +348,7 @@ The following table specifies the number of workers configured for your Nginx ba
      </tbody> 
      <tbody> 
       <tr class="header"> 
-       <td width="25%"> <strong>DigitalOcean</strong> <span>-</span> </td> 
+       <td width="25%"> <strong>DigitalOcean</strong> </td> 
        <td></td> 
        <td></td> 
       </tr> 
@@ -407,7 +405,7 @@ The following table specifies the number of workers configured for your Nginx ba
      </tbody> 
      <tbody> 
       <tr class="header"> 
-       <td width="25%"> <strong>GCE</strong> <span>-</span> </td> 
+       <td width="25%"> <strong>GCE</strong> </td> 
        <td></td> 
        <td></td> 
       </tr> 
@@ -489,7 +487,7 @@ The following table specifies the number of workers configured for your Nginx ba
      </tbody> 
      <tbody> 
       <tr class="header"> 
-       <td width="25%"> <strong>Linode</strong> <span>-</span> </td> 
+       <td width="25%"> <strong>Linode</strong> </td> 
        <td></td> 
        <td></td> 
       </tr> 
@@ -541,7 +539,7 @@ The following table specifies the number of workers configured for your Nginx ba
      </tbody> 
      <tbody> 
       <tr class="header"> 
-       <td width="25%"> <strong>Microsoft Azure</strong> <span>-</span> </td> 
+       <td width="25%"> <strong>Microsoft Azure</strong> </td> 
        <td></td> 
        <td></td> 
       </tr> 
@@ -638,7 +636,7 @@ The following table specifies the number of workers configured for your Nginx ba
      </tbody> 
      <tbody> 
       <tr class="header"> 
-       <td width="25%"> <strong>Rackspace</strong> <span>-</span> </td> 
+       <td width="25%"> <strong>Rackspace</strong> </td> 
        <td></td> 
        <td></td> 
       </tr> 
@@ -818,77 +816,5 @@ The following table specifies the number of workers configured for your Nginx ba
        <td> 32 </td> 
       </tr> 
      </tbody> 
-     <tbody> 
-      <tr class="header"> 
-       <td width="25%"> <strong>CloudA</strong> <span>-</span> </td> 
-       <td></td> 
-       <td></td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td width="40%"> 512 MB </td> 
-       <td> 1 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 1 GB </td> 
-       <td> 1 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 2 GB </td> 
-       <td> 1 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 4 GB </td> 
-       <td> 2 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 8 GB </td> 
-       <td> 4 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 16 GB </td> 
-       <td> 6 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 32 GB </td> 
-       <td> 8 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 8 GB - HM </td> 
-       <td> 2 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 16 GB - HM </td> 
-       <td> 4 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 32 GB - HM </td> 
-       <td> 6 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 4 GB - HC </td> 
-       <td> 4 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 8 GB - HC </td> 
-       <td> 8 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 16 GB - HC </td> 
-       <td> 12 </td> 
-      </tr> 
-     </tbody> 
-    </table> 
+</table> 
 
