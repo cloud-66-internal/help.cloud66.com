@@ -628,6 +628,10 @@
   from = "/skycap/account/two-step-verification.html"
   to = "/skycap/account/two-factor-authentication.html"
 
+[[redirects]]
+  from = "/maestro/pricings"
+  to = "https://www.cloud66.com/containers/maestro"
+
   
 [[redirects]]
   from = "/article/*"
