@@ -632,6 +632,9 @@
   from = "/maestro/pricings"
   to = "https://www.cloud66.com/containers/maestro"
 
+[[redirects]]
+  from = "/maestro/maestro/*"
+  to = "/maestro/:splat"
   
 [[redirects]]
   from = "/article/*"
