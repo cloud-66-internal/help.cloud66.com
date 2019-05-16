@@ -13,18 +13,19 @@ To get started, simply download the [toolbelt executable](https://app.cloud66.co
 
 ## Initialize Toolbelt
 
-Before using Toolbelt, you need to link it to your Cloud 66 account. You can do this by issuing one of the available commands, which will return a URL that you need to copy and paste into your browser.
+Before using Toolbelt, you need to link it to your Cloud 66 account. You can do this by issuing one of the available commands, for example:
 
 ```
-$ cx stacks list
+cx stacks list
 ```
-Following this URL will redirect you to your account (you need to be logged in) and ask for your authorization to allow the toolbelt to view, edit, redeploy and administrate your applications and servers.
+
+This will automatically open your default browser and take you to your Cloud 66 dashboard (you need to be logged in). 
+
+It will then ask for your authorization to allow Toolbelt to view, edit, redeploy and administrate your applications and servers. The Dashboard will confirm that it has completed authorization and you can then close the window and start using Toolbelt right away.
 
 ### Advanced
 
-The authorization information is stored in the **~/.cloud66/cx.json** file. Removing this file will remove the authorization code from your client.
-
-Once authorized, you will be presented with an authorization code to paste into your toolbelt.
+The authorization information is stored on your computer in the **~/.cloud66/cx.json** file. Removing this file will remove the authorization code from your client.
 
 #### Note
 <div class="notice"><p>To deauthorize Toolbelt, login to your Cloud 66 account and click on the <em>Revoke access</em> button under your <em>Account</em> page.</p></div>
@@ -57,25 +58,55 @@ To connect to a server for any application:
 - `cx open -s 
 ` opens your web browser to visit the front-end of your application
 
-## Multiple Account Support
+## Profiles (multiple account support)
 
-By default, Toolbelt can work with all of the accounts you are member of. Once you accept a Team membership on Cloud 66, your Toolbelt will automatically work with the applications you have access to under that team's account without any change.
+When you join a Team on Cloud 66, your Toolbelt will automatically work with the applications you have access to under that team's account.
 
-If you have more than 1 Cloud 66 account (you are the owner of more than 1 account and not just a team member), then you can use the `--account` global option when using Toolbelt. Using the `account` option you can give your accounts different names and switch between them. Here is an example:
+If you have more than one Cloud 66 account (i.e. you are the owner of more than one account and not just a team member), then you will need to set up profiles in Toolbelt to switch between your accounts.
 
-```
-$ cx --account=personal stacks list
-```
+### Note
+<div class="notice notice-warning"><p>
+The <kbd>--account</kbd> function is now deprecated and has been replaced by cx profiles </p></div>
 
-This will ask for Toolbelt authorization when run the first time. Once authorized, it will work as expected.
+## Creating a cx profile
 
-To add a new account, simply change the value of the `account` parameter:
+Before you start **make sure you're logged into the account you'd like associate with this new profile** on your *default* web browser (the importance of this is explained below). 
 
-```
-$ cx --account=work stacks list
-```
+Next create a new profile in Toolbelt using the following command:
 
-This will again ask for authorization the first time you run it. Once authorized you can switch between `personal` and `work` (or any other name you would like) by just adding the `--account` option.
+    cx config create A_NICE_NAME
+
+...where `A_NICE_NAME` is the (arbitrary) name you'd like to use for that profile. 
+
+Then tell Toolbelt to use that new profile:
+
+    cx config use A_NICE_NAME
+
+Finally, issue a command to force Toolbelt to authenticate the new profile. For example:
+
+    cx stacks list
+
+...this will take you through the authorization process for the account you'd like to associate with the new profile. See the [Initialize Toolbelt](#initialize-toolbelt) section above for more details on how this works.
+
+### Careful
+<div class="notice notice-warning"><p>
+Make sure you are logged into the correct (alternate) account on the Cloud 66 dashboard before you start this process or it may not work correctly.</p></div>
+
+## Switching between profiles
+
+To switch between profiles, use the following command:
+
+    cx config use NAME
+
+So, following our example above, the command would be `cx config use MY_NICE_NAME`. 
+
+#### Note
+<div class="notice"><p>
+You always have a <kbd>default</kbd> profile which cannot be deleted or renamed. </p></div>
+
+## More help with profiles
+
+For more info on profiles (including organizations, renaming, deleting and updating) please read our [detailed reference guide](/{{page.collection}}/references/toolbelt.html#profile-commands).
 
 
 ## Update Toolbelt
