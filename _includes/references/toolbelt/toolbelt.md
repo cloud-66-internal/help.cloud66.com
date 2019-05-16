@@ -1,3 +1,5 @@
+{% include references/toolbelt/config.md %}
+
 {% include references/toolbelt/backups.md %}
 
 {% include references/toolbelt/databases.md %}
