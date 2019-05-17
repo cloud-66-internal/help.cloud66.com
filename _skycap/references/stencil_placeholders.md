@@ -2,6 +2,7 @@
 layout: post
 title: Stencil Placeholders syntax
 categories: references
+order: 2
 legacy: false
 tags: ["references", "placeholders", "formations", "stencils"]
 lead: A simple to use yet powerful template rendering engine

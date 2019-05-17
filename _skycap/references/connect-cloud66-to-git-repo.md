@@ -2,6 +2,7 @@
 layout: post
 template: one-col
 title: Connecting your Git repository
+order: 3
 categories: references
 lead: "Connecting Cloud 66 to a git repository"
 legacy: false
