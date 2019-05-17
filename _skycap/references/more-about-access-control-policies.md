@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: More about access control policies
 categories: references
+order: 10
 lead: "Understanding access control policies"
 legacy: false
 tags: ["git"]

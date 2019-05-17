@@ -839,8 +839,11 @@
 [[redirects]]
   from = "/skycap/the-basics/about-skycap.html"
   to = "/skycap/the-basics/formations-stencils-and-snapshots.html#overview"
+
+[[redirects]]
+  from = "/skycap/references/shells/toolbelt.html"
+  to = "/skycap/references/toolbelt.html"
   
-    
 [[redirects]]
   from = "/article/*"
   to = "/"
