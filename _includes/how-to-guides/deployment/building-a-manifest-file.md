@@ -353,7 +353,7 @@ production:
 
 A Rails application type in the manifest file gives you fine control over things like the Ruby version or the server the rails application is deployed on.
 
-- **ruby_version**: Specify the version of Ruby to use (overridden if present in Gemfile).
+- **ruby_version**: Specify the version of Ruby to use. Also applies when you want to upgrade your Ruby version. We recommend that you use this and *remove the Ruby version declaration from your Gemfile* to avoid situations where your application will not run on every server during an upgrade.
 - **operating_system** (_Optional_): `ubuntu1404`, `ubuntu1604` or `ubuntu1804`
 - **asset_pipeline_precompile**: Specify whether to use asset pipeline compilation - this will be taken into account during redeployment.
 - **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on a new application build.
@@ -398,7 +398,7 @@ production:
 
 The manifest file gives you fine control over things like the Ruby version or which server the application is deployed on.
 
-- **ruby_version**: Specify the version of Ruby to use (overridden if present in Gemfile).
+- **ruby_version**: Specify the version of Ruby to use. Also applies when you want to upgrade your Ruby version. We recommend that you use this and *remove the Ruby version declaration from your Gemfile* to avoid situations where your application will not run on every server during an upgrade.
 - **operating_system** (_Optional_): `ubuntu1404`, `ubuntu1604` or `ubuntu1804`
 - **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
