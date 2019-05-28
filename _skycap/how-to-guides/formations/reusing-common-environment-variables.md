@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Reusing common environment variables
-Order: 3
+order: 8
 categories: how-to-guides/formations
 lead: "How to import shared environment variables into Stencils"
 legacy: false

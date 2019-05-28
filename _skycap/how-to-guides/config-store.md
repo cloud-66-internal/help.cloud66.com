@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title: Using ConfigStore
 categories: how-to-guides
+order: 6
 lead: "Using ConfigStore with Skycap Formations"
 legacy: false
 tags: ["customization"]
