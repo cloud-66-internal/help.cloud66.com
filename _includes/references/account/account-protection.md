@@ -9,7 +9,7 @@ With the ultimate goal of protecting your infrastructure, data and code we can't
 
 ## What is Cloud 66 Account Protection?
 
-To reduce the probability of a security compromise we actively monitor your account activity (logins, logouts, [2 factor authentication](/{{page.collection}}/account/two-step-verification.html) attempts, page visit behavior and other measures) and look for anomalies like strange page visit patterns, concurrent or quick logins from different countries or a sudden change in an account's browser and computer attributes. 
+To reduce the probability of a security compromise we actively monitor your account activity (logins, logouts, [2 factor authentication](/{{page.collection}}/account/two-factor-authentication.html) attempts, page visit behavior and other measures) and look for anomalies like strange page visit patterns, concurrent or quick logins from different countries or a sudden change in an account's browser and computer attributes. 
 
 If any of those anomalies are detected we will send the account owner an email with the details of those issues. Account owners have the option of acknowledging the alert (which will teach our system this as an accepted pattern) or raising it as a possible security breach on your side.
 

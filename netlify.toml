@@ -843,6 +843,70 @@
 [[redirects]]
   from = "/skycap/references/shells/toolbelt.html"
   to = "/skycap/references/toolbelt.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/nginx-redirect.html"
+  to = "/maestro/how-to-guides/nginx/nginx-redirect.html"
+
+[[redirects]]
+  from = "/maestro/concepts/stack-definition.html"
+  to = "/maestro/the-basics/concepts-and-terminology.html#application-vs-stack"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/databases/shells/uninstall-phpmyadmin.html"
+  to = "/maestro/how-to-guides/databases/"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/databases/uninstall-phpmyadmin.html"
+  to = "/maestro/how-to-guides/databases/"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/nginx-redirect.html"
+  to = "/maestro/how-to-guides/nginx/nginx-redirect.html"
+
+[[redirects]]
+  from = "/skycap/resources/referral-program.html"
+  to = "/maestro/resources/referral-program.html"
+
+[[redirects]]
+  from = "/skycap/tutorials/service-networking.html"
+  to = "/skycap/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/maestro/references/build-grid.html"
+  to = "/maestro/the-basics/concepts-and-terminology.html#buildgrid-and-build-minutes"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/migrate-the-stack.html"
+  to = "/maestro/how-to-guides/deployment/migrating-applications.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/zero-downtime-deploy.html"
+  to = "/rails/how-to-guides/deployment/shells/zero-downtime-deploy.html"
+
+[[redirects]]
+  from = "/maestro/references/easy-deploy-repos.html"
+  to = "/maestro/how-to-guides/deployment/"
+
+[[redirects]]
+  from = "/node/how-to-guides/database/shells/uninstall-mysql.html"
+  to = "/node/how-to-guides/databases/shells/uninstall-mysql.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/websocket-support.html"
+  to = "/maestro/how-to-guides/deployment/websocket-support.html"
+
+[[redirects]]
+  from = "/skycap/integrations/integration-with-weave-scope.html"
+  to = "/maestro/integrations/integration-with-weave-scope.html"
+
+[[redirects]]
+  from = "/troubleshoot/lets-encrypt"
+  to = "/"
+
+[[redirects]]
+  from = "/tutorials/IP-filtering.html"
+  to = "/"  
   
 [[redirects]]
   from = "/article/*"

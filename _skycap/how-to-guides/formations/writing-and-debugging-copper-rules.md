@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Writing and debugging Copper rules
-Order: 3
+order: 5
 categories: how-to-guides/formations
 lead: "How to write validation policies in Copper DSL"
 legacy: false
