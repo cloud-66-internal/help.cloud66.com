@@ -6,7 +6,7 @@ categories: references/integrations
 lead: ""
 legacy: true
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

@@ -5,6 +5,7 @@ title:  "Account settings"
 lead: "A guide to account settings in Cloud 66"
 legacy: false
 permalink: /:collection/account/index.html
+product: Maestro
 ---
 
 <div class="Toc Toc--howto">
@@ -14,5 +15,3 @@ permalink: /:collection/account/index.html
     {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->
-
-

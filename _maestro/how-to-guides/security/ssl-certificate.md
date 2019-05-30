@@ -7,7 +7,7 @@ order: 1
 lead: "How to add an SSL certificate to Nginx within Maestro"
 legacy: false
 tags: ["ssl"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Generate a certificate

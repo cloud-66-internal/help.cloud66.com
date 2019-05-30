@@ -7,17 +7,14 @@ order: 3
 lead: "A detailed guide to the options and variables available for managing Nginx for Cloud 66"
 legacy: false
 tags: ["customization", "nginx"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
-
-
 
 ## About Nginx
 
-Applications deployed with Cloud 66 use [Nginx](http://nginx.com) as their web server, and its configuration is dependent on the resources of your server(s). Nginx is a high performance, open source web server used by some of the biggest web services in the world.
+Applications deployed with Cloud 66 use [Nginx](http://nginx.com) as their web server, and its configuration is dependent on the resources of your server(s).
 
-
-## Nginx configuration
+## Default Nginx configuration
 
 The following table outlines the default configuration of Nginx.
 <table id="fields" class="table table-bordered table-striped table-small fields"> 
@@ -842,132 +839,7 @@ The following table specifies the number of workers configured for your Nginx ba
        <td> 32 </td> 
       </tr> 
      </tbody> 
-     <tbody> 
-      <tr class="header"> 
-       <td> <strong>CloudA</strong></td> 
-       <td></td> 
-       <td></td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 512 MB </td> 
-       <td> 1 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 1 GB </td> 
-       <td> 1 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 2 GB </td> 
-       <td> 1 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 4 GB </td> 
-       <td> 2 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 8 GB </td> 
-       <td> 4 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 16 GB </td> 
-       <td> 6 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 32 GB </td> 
-       <td> 8 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 8 GB - HM </td> 
-       <td> 2 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 16 GB - HM </td> 
-       <td> 4 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 32 GB - HM </td> 
-       <td> 6 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 4 GB - HC </td> 
-       <td> 4 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 8 GB - HC </td> 
-       <td> 8 </td> 
-      </tr> 
-      <tr> 
-       <td></td> 
-       <td> 16 GB - HC </td> 
-       <td> 12 </td> 
-      </tr> 
-     </tbody> 
     </table> 
-
-## Default Cloud 66 Nginx error page
-
-When there is a problem with your upstream server (i.e. the application), requests will be passed to the default Cloud 66 error page. From there, you can visit the problematic server page in Cloud 66 dashboard to troubleshoot.
-
-## Custom Nginx error page
-
-There are two ways for you to create a custom Nginx 50X error page:
-
-**1\. Using a static page on you own server**
-
-Customize your Nginx configuration and replace the 50X.html location block with following:
-    
-```
-    location = /50x.html
-    {
-        root /var/containers/;
-    }
-```
-
-**2\. Using external static page**
- 
-* Upload your file to a server which is accessible from your server
-* Customize your Nginx configuration and replace the `50X.html` location block with following:
-    
-```
-    location = /50x.html
-    {
-        proxy_pass {url-of-your-custom-page};
-    }
-```
-
-## Customize your Nginx configuration
-
-Cloud 66 makes it easy for you to customize your Nginx configuration. From your Application Overview, access your web server group page (e.g. _Rails server_) and click _Customize Nginx_ in the right sidebar. Follow the [CustomConfig instructions](/{{page.collection}}/tutorials/custom-config.html) to customize the configuration.
-
-Editing and committing your Nginx CustomConfig will perform the following steps on **every web server used by your application**, one by one, sequentially:
-
-*   Check your template for Liquid syntax errors
-*   Determine the correct Passenger path (Passenger applications only)
-*   Check the version of your Passenger, and determine if Nginx needs to use a Ruby shell wrapper
-*   Count the number of cores on the server
-*   Compile the Nginx configuration based on the information from the server
-*   Upload the configuration to the server
-*   Reload Nginx
-
-Reloading Nginx does not interrupt the serving of traffic. This process will be stopped if an error is encountered. For example, if you have 3 web servers for your application, if the first server fails to be updated, the process will be halted for the other 2 servers to avoid complete service disruption.
-
-
-#### Warning
-<div class="notice notice-warning"><p>
-A bad configuration may stop your Nginx from functioning, so take extra care when making changes.
-</p></div>
 
 
 ### Nginx CustomConfig variables
@@ -1127,9 +999,6 @@ The following variables are available for use in your  Nginx CustomConfig.
   </table> 
 
   
-
-
-
 ### Boolean variables
 
 To ensure correct boolean condition checks within your template, always explicitly compare the variable with `true` or `false` (even if you are checking for true).

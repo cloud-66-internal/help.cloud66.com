@@ -6,7 +6,7 @@ categories: how-to-guides/deployment
 lead: ""
 tags: ["customization", "build"]
 legacy: true
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

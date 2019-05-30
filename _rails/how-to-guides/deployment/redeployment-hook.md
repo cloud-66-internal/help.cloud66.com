@@ -7,7 +7,7 @@ order: 7
 lead: "How to use redeployment hooks to achieve automated deployments"
 legacy: false
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% assign product = 'Rails' %}

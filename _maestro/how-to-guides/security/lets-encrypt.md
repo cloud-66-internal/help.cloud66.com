@@ -7,6 +7,6 @@ order: 2
 lead: "How to configure Let's Encrypt with Maestro"
 legacy: false
 tags: ["security"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/deployment/lets-encrypt.md %} 

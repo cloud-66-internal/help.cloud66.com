@@ -7,7 +7,7 @@ order: 1
 lead: "Updating the code of an existing service"
 legacy: false
 tags: ["docker"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

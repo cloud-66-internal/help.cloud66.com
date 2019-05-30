@@ -7,7 +7,7 @@ order: 1
 lead: Run your Rack apps with Passenger, Puma, Unicorn or Thin
 legacy: false
 tags: ['Web server, Rack server']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 By default, applications deployed by Cloud 66 run on <a href="https://www.phusionpassenger.com/" target="_blank">Phusion Passenger</a> behind <a href="http://wiki.nginx.org/Main" target="_blank">Nginx</a>. You can also choose to use one of several servers:

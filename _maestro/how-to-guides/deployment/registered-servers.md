@@ -7,7 +7,7 @@ order: 10
 lead: "How to use your own servers with Maestro"
 legacy: false
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

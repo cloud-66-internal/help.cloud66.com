@@ -7,7 +7,7 @@ lead: ""
 legacy: false
 tags: ["websocket"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% assign product = 'node' %}

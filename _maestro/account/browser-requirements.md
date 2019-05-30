@@ -6,7 +6,8 @@ categories: account
 lead: ""
 legacy: false
 tags: ["account"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
+product: Maestro
 ---
 {% assign product = "General" %}
 

@@ -1,27 +1,25 @@
 
-Although Cloud 66 detects server connectivity issues, we don't currently detect application states in the dashboard.
-There is a lot of complexity around the numerous scenarios possible, and some applications such as APIs may not have a _healthy_ state in the same way that web applications do. Other applications may not be open to the world.
+## Server resource monitoring has been partially deprecated 
 
-There are external services tailored for this type of monitoring, which allow you to customize your monitoring as required. For example, [Pingdom](https://www.pingdom.com/) offers a great amount of flexibility in this area.
+We have deprecated the integrated server metrics feature as of April 2019. We avoid deprecating features wherever possible, but in this case we found that:
 
-We use [Collectd](https://collectd.org) to monitor your servers for their CPU, memory and disk space. Collectd is a light-weight daemon that collects, transfers and stores performance data for servers. The charts for this information are displayed on your server page, and you can choose which interval you'd like to see:
+* The monitoring wasn’t hugely detailed or useful except as a very general overview
+* Our focus on core features has made this feature a low priority for us. As a small team, we need to direct our energy to features that make the most difference to our customers.
+* Since we initially added the feature several years ago, cloud monitoring services have dramatically improved and there are now far better solutions available (see below for some examples)
+* The monitoring tool has not been extensively used by most customers (probably as a result of all of the above)
 
-![Collectd interval](http://assets.cloud66.com/help/images/collectd_interval.png)
+## We are keeping disk space alerts
 
-#### CPU usage
-Contrary to other CPU usage metrics, the [Collectd CPU plugin](https://collectd.org/wiki/index.php/Plugin:CPU) does not collect percentages - instead it collects "jiffies", the units of scheduling.
-On many Linux systems there are circa 100 jiffies in one second, but this does not mean you will end up with a percentage.
-Depending on system load, hardware, whether or not the system is virtualized and possibly half a dozen other factors there may be more or less than 100 jiffies in one second.
-There is absolutely no guarantee that all states add up to 100, an absolute must for percentages.
+The one exception to the above is disk space alerts, which are quite widely used. We will be keeping that feature, so it will continue to work.
 
-![Collectd cpu usage](http://assets.cloud66.com/help/images/collectd_cpu.png)
+## Alternative solutions
 
-#### Memory usage
-Collectd uses the [Memory plugin](https://collectd.org/wiki/index.php/Plugin:Memory) to collect physical memory utilization. The values are reported by their use by the operating system, and include _used_, _buffered_, _cached_ and _free_.
+* Most cloud providers now offer built-in server resource monitoring via their online dashboard
+* There are several excellent (paid) SaaS monitoring platforms:
+  * [Datadog](https://www.datadoghq.com/)
+  * [Scout](https://scoutapp.com/)
+  * [New Relic](https://newrelic.com/)
 
-![Collectd memory usage](http://assets.cloud66.com/help/images/collectd_memory.png)
+## Questions?
 
-#### Disk usage
-Collectd uses the [DF plugin](https://collectd.org/wiki/index.php/Plugin:DF) to collect system usage information. It will show the same information as when running the `df` command directly on your server (divide the value given by 1024 to get MB).
-
-![Collectd disk usage](http://assets.cloud66.com/help/images/collectd_df.png)
+If you have any questions, comments or concerns, please get in touch with us via one of our support channels. 

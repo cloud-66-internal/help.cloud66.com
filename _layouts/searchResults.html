@@ -45,15 +45,19 @@
 
 			<!-- Container for the search results, filled in with JavaScript -->
 			<div id="hits" class="Landing">
-				<section class="LandingContainer content" id="js_search_results_container">
+				<section class="LandingContainer" id="js_search_results_container">
 					<p id="js_search_title">You searched for <strong class="SearchResults-title"></strong></p>
-					<ul class="SearchResults" id="js_search_results_list">
+					<div id="js_search_results_list">
+					<ul class="SearchResults">
 						<li>
 							<p>
-								<div class="is-loading"></div> Getting Search Results&hellip;
+								<span class="is-loading"></span> Getting Search Results&hellip;
 							</p>
 						</li>
 					</ul>
+					</div>
+					<div id="js_search_results_paging">
+					</div>
 				</section>
 			</div>
 
@@ -66,8 +70,10 @@
 			var url = new URL(url_string);
 			var q = url.searchParams.get("q");
 			// search
+			var key = "AIzaSyBKWduLZEHa_qmlnVlpd2JzSdLDDoY5uD4";
+			var cx = "005542367771770094844:wfitaj44ofm"; // custom search engine id
 			var script = document.createElement('script');
-			script.src = "https://www.googleapis.com/customsearch/v1/siterestrict?key=AIzaSyA3SJS6Ihqmwkn2az-xYFci3dKly048P4I&cx=007675478108651468565:im1lav30l2u&callback=C66.HelpSearch.init&q=" + q;
+			script.src = "https://www.googleapis.com/customsearch/v1/siterestrict?key="+key+"&cx="+cx+"&callback=C66.HelpSearch.init&q=" + q;
 			document.getElementsByTagName('script')[0].parentNode.appendChild(script);
 		</script>
 	</body>

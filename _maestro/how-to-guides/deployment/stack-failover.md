@@ -8,7 +8,7 @@ lead: "How to set up and use a failover group"
 legacy: false
 tags: ["high-availability"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Setup the failover group

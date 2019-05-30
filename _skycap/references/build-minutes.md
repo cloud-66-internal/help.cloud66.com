@@ -7,7 +7,7 @@ lead: "A guide to how Build Minutes are defined and measured"
 legacy: false
 order: 3
 tags: ["billing"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## What are Build Minutes?

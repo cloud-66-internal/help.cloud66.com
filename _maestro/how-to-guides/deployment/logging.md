@@ -7,7 +7,7 @@ order: 30
 lead: How to manage your application log files within Maestro
 tags: ['Logs']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include tutorials/logging.md %}

@@ -7,7 +7,7 @@ order: 14
 lead: "How to set up the Faye publish-subscribe messaging system with Cloud 66 for Rails"
 tags: ["websocket"]
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

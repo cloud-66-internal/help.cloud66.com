@@ -5,30 +5,30 @@ externallink: https://github.com/cloud66-oss/alterant
 title: Alterant Helpers
 label: Alterant
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 order: 4
 ---
 
 ## Helpers
 
-Alterant comes with a set of helpers that make it easier to read, parse and modify configuration files, especially Kubernetes files. Here is a list of Alterant helpers. You can [extend Alterant](/alterant/extending-alterant.html) and add new ones yourself.
+Alterant comes with a set of helpers that make it easier to read, parse and modify configuration files, especially Kubernetes files. Here is a list of Alterant helpers. 
 
 ### YamlReader
 
-YamlReader loads a YAML file into an object which can be used in the modifier.
+YamlReader loads a YAML file into an JSON string which can be used in the modifier.
 
 <pre class="prettyprint">
-var data = YamlReader("foo.yaml");
+var data = JSON.parse(YamlReader("foo.yaml"));
 </pre>
 
 YamlReader only looks in the context folder (where the input file is located).
 
 ### JsonReader
 
-JsonReader loads a JSON file into an object which can be used in the modifier.
+JsonReader loads a JSON file into an JSON string which can be used in the modifier.
 
 <pre class="prettyprint">
-var data = JsonReader("foo.json");
+var data = JSON.parse(JsonReader("foo.json"));
 </pre>
 
 JsonReader only looks in the context folder (where the input file is located).

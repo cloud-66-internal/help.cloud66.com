@@ -8,7 +8,7 @@ lead: "How to connect to your database servers within Maestro"
 legacy: false
 tags: ["debugging"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 There are two ways to connect to your databases running in Maestro:

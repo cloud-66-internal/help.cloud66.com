@@ -8,7 +8,7 @@ lead: "How to enable WebSocket in a Maestro application"
 legacy: false
 tags: ["websocket"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

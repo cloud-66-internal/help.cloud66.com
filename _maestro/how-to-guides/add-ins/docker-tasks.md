@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: Schedule automated tasks on a Docker server host and/or service
 tags: ['Add in']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 Maestro allows you to automate tasks for Docker at two different levels:

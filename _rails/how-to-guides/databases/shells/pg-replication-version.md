@@ -7,6 +7,6 @@ order: 6
 lead: "Troubleshooting data replication between PostgreSQL servers that use different versions"
 legacy: false
 tags: ["postgresql","high-availability"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/databases/pg-replication-version.md %}

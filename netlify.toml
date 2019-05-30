@@ -1,0 +1,913 @@
+[[redirects]]
+  from = "/node/references/clouds/*"
+  to = "/node/how-to-guides/clouds/:splat"
+
+[[redirects]]
+  from = "/rails/references/clouds/*"
+  to = "/rails/how-to-guides/clouds/:splat"
+
+[[redirects]]
+  from = "/maestro/references/clouds/*"
+  to = "/maestro/how-to-guides/clouds/:splat"
+
+[[redirects]]
+  from = "/maestro/references/clouds/*"
+  to = "/maestro/how-to-guides/clouds/:splat"
+    
+[[redirects]]
+  from = "/maestro/references/integrations/*"
+  to = "/maestro/integrations/:splat"
+
+[[redirects]]
+  from = "/node/references/integrations/*"
+  to = "/node/integrations/:splat"
+
+[[redirects]]
+  from = "/rails/references/integrations/*"
+  to = "/rails/integrations/:splat"
+  
+[[redirects]]
+  from = "/skycap/references/integrations/*"
+  to = "/skycap/integrations/:splat"
+  
+[[redirects]]
+  from = "/legacy_docker/index.html"
+  to = "/maestro/index.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/docker-service-configuration.html"
+  to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/custom-config-git.html"
+  to = "/maestro/tutorials/custom-config-git.html"
+
+[[redirects]]
+  from = "/legacy_docker/resources/cloud66-badge.html"
+  to = "/maestro/resources/cloud66-badge.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/symlink-folders.html"
+  to = "/maestro/how-to-guides/deployment/symlink-folders.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/building-your-service.html"
+  to = "/maestro/how-to-guides/deployment/building-your-service.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/build-grid.html"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/shells/nginx-modules.html"
+  to = "/maestro/how-to-guides/nginx/nginx-modules.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/shells/ssh.html"
+  to = "/maestro/how-to-guides/common-tools/ssh.html"
+
+[[redirects]]
+  from = "/legacy_docker/quickstarts/using-cloud66-toolbelt.html"
+  to = "/maestro/quickstarts/using-cloud66-toolbelt.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/service-network-configuration.html"
+  to = "/maestro/how-to-guides/deployment/service-network-configuration.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/service-networking.html"
+  to = "/maestro/how-to-guides/deployment/service-networking.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/image-repository.html"
+  to = "/maestro/how-to-guides/deployment/image-repository.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/scaling.html"
+  to = "/maestro/how-to-guides/scaling/scaling.html"
+
+[[redirects]]
+  from = "/legacy_docker/quickstarts/docker-getting-started-deployments.html"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/legacy_docker/quickstarts/docker-getting-started.html"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/building-a-manifest-file.html"
+  to = "/maestro/quickstarts/getting-started-with-manifest.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/container-ports.html"
+  to = "/maestro/tutorials/container-ports.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/custom-config.html"
+  to = "/maestro/tutorials/custom-config.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/security/nginx-deny.html"
+  to = "/maestro/how-to-guides/nginx/nginx-deny.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/load-balancing.html"
+  to = "/maestro/tutorials/load-balancing.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/parallel-deployment.html"
+  to = "/maestro/how-to-guides/deployment/parallel-deployment.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/security/nginx-auth.html"
+  to = "/maestro/how-to-guides/nginx/nginx-auth.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/nginx.html"
+  to = "/maestro/references/nginx.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/logging.html"
+  to = "/maestro/how-to-guides/deployment/logging.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/shells/setting-up-custom-livelogs.html"
+  to = "/maestro/how-to-guides/deployment/setting-up-custom-livelogs.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/shells/ssh-keys.html"
+  to = "/maestro/how-to-guides/common-tools/ssh-keys.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/shells/haproxy-for-websocket.html"
+  to = "/maestro/how-to-guides/deployment/haproxy-for-websocket.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/service-lifecycle-management.html"
+  to = "/maestro/how-to-guides/deployment/service-lifecycle-management.html"
+
+[[redirects]]
+  from = "/legacy_docker/quickstarts/"
+  to = "/maestro/quickstarts/"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/"
+  to = "/maestro/how-to-guides/deployment/"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/service-resources.html"
+  to = "/maestro/how-to-guides/deployment/service-resources.html"
+
+[[redirects]]
+  from = "/legacy_docker/quickstarts/"
+  to = "/maestro/quickstarts/"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/"
+  to = "/maestro/tutorials/"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/getting-started-with-manifest.html"
+  to = "/maestro/quickstarts/getting-started-with-manifest.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/shells/toolbelt.html"
+  to = "/maestro/references/toolbelt.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/shells/lets-encrypt.html"
+  to = "/maestro/how-to-guides/security/lets-encrypt.html"
+
+[[redirects]]
+  from = "/legacy_docker/concepts/stack-definition.html"
+  to = "/maestro/the-basics/concepts-and-terminology.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/server-ip-addresses.html"
+  to = "/maestro/references/server-ip-addresses.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/databases/mongo-replica-sets.html"
+  to = "/maestro/how-to-guides/scaling/mongo-replica-sets.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/databases/elasticsearch-scaling.html"
+  to = "/maestro/how-to-guides/scaling/elasticsearch-scaling.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/add-ins/database-backup.html"
+  to = "/maestro/how-to-guides/add-ins/database-backups.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/databases/shells/install-mysql.html"
+  to = "/maestro/how-to-guides/databases/shells/uninstall-mysql.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/databases/shells/postgis-installation.html"
+  to = "/maestro/how-to-guides/databases/postgis-installation.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/service-pause-resume.html"
+  to = "/maestro/how-to-guides/deployment/service-lifecycle-management.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/nginx-modules.html"
+  to = "/maestro/how-to-guides/nginx/nginx-modules.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/setting-up-custom-livelogs.html"
+  to = "/maestro/how-to-guides/deployment/setting-up-custom-livelogs.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/ssh-keys.html"
+  to = "/maestro/how-to-guides/common-tools/ssh-keys.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/ssh.html"
+  to = "/maestro/how-to-guides/common-tools/ssh.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/ssh-to-server.html"
+  to = "/maestro/how-to-guides/common-tools/ssh-to-server.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/security/nginx-deny.html"
+  to = "/maestro/how-to-guides/nginx/nginx-deny.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/databases/mongo-replica-sets.html"
+  to = "/node/how-to-guides/scaling/mongo-replica-sets.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/databases/shells/install-mysql.html"
+  to = "/node/how-to-guides/databases/shells/uninstall-mysql.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/deployment/shells/lets-encrypt.html"
+  to = "/node/how-to-guides/security/lets-encrypt.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/deployment/shells/ssh-keys.html"
+  to = "/node/how-to-guides/common-tools/ssh-keys.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/deployment/shells/ssh.html"
+  to = "/node/how-to-guides/common-tools/ssh.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/deployment/ssh-to-server.html"
+  to = "/node/how-to-guides/common-tools/ssh-to-server.html"
+
+[[redirects]]
+  from = "/node/references/account/team-accounts.html"
+  to = "/node/account/team-accounts.html"
+
+[[redirects]]
+  from = "/node/references/shells/toolbelt.html"
+  to = "/node/references/toolbelt.html"
+
+[[redirects]]
+  from = "/node/tutorials/database-backup.html"
+  to = "/node/how-to-guides/add-ins/database-backups.html"
+
+[[redirects]]
+  from = "/node/tutorials/getting-started-with-manifest.html"
+  to = "/node/quickstarts/getting-started-with-manifest.html"
+
+[[redirects]]
+  from = "/rails/tutorials/getting-started-with-manifest.html"
+  to = "/rails/quickstarts/getting-started-with-manifest.html"
+
+[[redirects]]
+  from = "/node/tutorials/server-monitoring.html"
+  to = "/node/references/server-monitoring.html"
+
+[[redirects]]
+  from = "/rails/tutorials/server-monitoring.html"
+  to = "/rails/references/server-monitoring.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/server-monitoring.html"
+  to = "/maestro/references/server-monitoring.html"
+
+[[redirects]]
+  from = "/node/tutorials/server-restart-notifications.html"
+  to = "/node/how-to-guides/deployment/server-restart-notifications.html"
+
+[[redirects]]
+  from = "/rails/tutorials/server-restart-notifications.html"
+  to = "/rails/how-to-guides/deployment/server-restart-notifications.html"
+
+[[redirects]]
+  from = "/rails/concepts/stack-definition.html"
+  to = "/rails/the-basics/stack-definition.html"
+
+[[redirects]]
+  from = "/node/concepts/stack-definition.html"
+  to = "/node/the-basics/stack-definition.html"
+
+[[redirects]]
+  from = "/rails/resources/faq.html"
+  to = "/rails/the-basics/faq.html"
+
+[[redirects]]
+  from = "/node/resources/faq.html"
+  to = "/node/the-basics/faq.html"
+
+[[redirects]]
+  from = "/rails/tutorials/applying-upgrades.html"
+  to = "/rails/how-to-guides/deployment/applying-upgrades.html"
+
+[[redirects]]
+  from = "/rails/tutorials/config-store.html"
+  to = "/rails/how-to-guides/deployment/config-store.html"
+
+[[redirects]]
+  from = "/rails/tutorials/database-management.html"
+  to = "/rails/how-to-guides/databases/database-management.html"
+
+[[redirects]]
+  from = "/rails/tutorials/database-replication.html"
+  to = "/rails/how-to-guides/databases/database-replication.html"
+
+[[redirects]]
+  from = "/rails/tutorials/getting-started-with-manifest.html"
+  to = "/rails/how-to-guides/deployment/building-a-manifest-file.html"
+
+[[redirects]]
+  from = "/rails/tutorials/puma-rack-server.html"
+  to = "/rails/how-to-guides/rack-servers/puma-rack-server.html"
+
+[[redirects]]
+  from = "/rails/tutorials/redeployment-hook.html"
+  to = "/rails/how-to-guides/deployment/redeployment-hook.html"
+
+[[redirects]]
+  from = "/rails/tutorials/scaling.html"
+  to = "/rails/how-to-guides/scaling/scaling.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/building/building-your-service.html"
+  to = "/skycap/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/building/image-repository.html"
+  to = "/skycap/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/building/shells/access-your-code.html"
+  to = "/skycap/references/connect-cloud66-to-git-repo.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/building-your-service.html"
+  to = "/skycap/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/nginx-modules.html"
+  to = "/maestro/how-to-guides/nginx/"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/ssh.html"
+  to = "/skycap/quickstarts/using-cloud66-toolbelt.html"
+
+[[redirects]]
+  from = "/skycap/tutorials/docker-introduction.html"
+  to = "/skycap/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/skycap/tutorials/docker-service-configuration.html"
+  to = "/skycap/quickstarts/using_formations.html"
+
+[[redirects]]
+  from = "/skycap/tutorials/env-vars.html"
+  to = "/skycap/how-to-guides/formations/reusing-common-environment-variables.html"
+
+[[redirects]]
+  from = "/building-your-stack/building-your-docker-service"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/136-building-your-rails-rack-stack"
+  to = "/rails/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/135-docker-service-configuration"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/toolbelt/toolbelt-introduction"
+  to = "/"
+
+[[redirects]]
+  from = "/article/283-getting-started-with-maestro"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/279-getting-started-with-skycap"
+  to = "/skycap/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/building-your-stack/docker-service-configuration"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/managing-your-stack/server-restart-notifications.html"
+  to = "/"
+
+  [[redirects]]
+  from = "/node/how-to-guides/deployment/shells/lets-encrypt.html"
+  to = "/node/how-to-guides/security/lets-encrypt.html"
+
+  [[redirects]]
+  from = "/rails/how-to-guides/deployment/shells/lets-encrypt.html"
+  to = "/rails/how-to-guides/security/lets-encrypt.html"
+  
+[[redirects]]
+  from = "/rails/tutorials/database-backup.html"
+  to = "/rails/how-to-guides/add-ins/database-backups.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/haproxy.html"
+  to = "/maestro/how-to-guides/deployment/haproxy.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/registered-servers.html"
+  to = "/maestro/how-to-guides/deployment/registered-servers.html"
+
+
+[[redirects]]
+  from = "/stack-features/db-backup.html"
+  to = "/rails/how-to-guides/add-ins/database-backups.html"
+
+
+[[redirects]]
+  from = "/building-your-stack/*"
+  to = "/"
+
+[[redirects]]
+  from = "/database-management/*"
+  to = "/"
+
+[[redirects]]
+  from = "/deployment/*"
+  to = "/"
+
+[[redirects]]
+  from = "/getting-started/*"
+  to = "/"
+
+[[redirects]]
+  from = "/how-to/*"
+  to = "/"
+
+[[redirects]]
+  from = "/introduction-to-cloud-66/*"
+  to = "/"
+
+[[redirects]]
+  from = "/maestro/references/account/*"
+  to = "/maestro/account/:splat"
+
+[[redirects]]
+  from = "/node/references/account/*"
+  to = "/node/account/:splat"
+
+[[redirects]]
+  from = "/rails/references/account/*"
+  to = "/rails/account/:splat"
+
+[[redirects]]
+  from = "/skycap/references/account/*"
+  to = "/skycap/account/:splat"
+
+[[redirects]]
+  from = "/managing-your-stack/*"
+  to = "/"
+
+[[redirects]]
+  from = "/network/*"
+  to = "/"
+
+[[redirects]]
+  from = "/stack-add-ins/*"
+  to = "/"
+
+[[redirects]]
+  from = "/toolbelt/*"
+  to = "/"
+
+[[redirects]]
+  from = "/web-server/*"
+  to = "/"
+
+[[redirects]]
+  from = "/skycap/concepts/what-are-formations.html"
+  to = "/skycap/the-basics/formations-stencils-and-snapshots.html"
+
+[[redirects]]
+  from = "/rails/tutorials/logging.html"
+  to = "/rails/how-to-guides/deployment/logging.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/multi-region-stack.html"
+  to = "/maestro/how-to-guides/deployment/multi-region-stack.html"
+
+[[redirects]]
+  from = "/building-your-node-js-stack/getting-started-with-node-js-based-stacks"
+  to = "/node/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/cloud-providers/cloud-vexxhost.html"
+  to = "/"
+
+[[redirects]]
+  from = "/beta/*"
+  to = "/"
+
+[[redirects]]
+  from = "/maestro/tutorials/logging.html"
+  to = "/maestro/how-to-guides/deployment/logging.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/docker-service-configuration.html"
+  to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/redeployment-hook.html"
+  to = "/maestro/how-to-guides/deployment/redeployment-hook.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/scaling.html"
+  to = "/maestro/how-to-guides/scaling/scaling.html"
+
+[[redirects]]
+  from = "/rails/tutorials/passenger-enterprise.html"
+  to = "/rails/how-to-guides/rack-servers/passenger-enterprise.html"
+
+[[redirects]]
+  from = "/maestro/references/deployment-authorisation.html"
+  to = "/maestro/how-to-guides/deployment/deployment-authorisation.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/docker-introduction.html"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/getting-started-with-manifest.html"
+  to = "/maestro/quickstarts/getting-started-with-manifest.html"
+
+[[redirects]]
+  from = "/node/tutorials/server-restart-notifications.html"
+  to = "/rails/how-to-guides/deployment/server-restart-notifications.html"
+
+[[redirects]]
+  from = "/ruby*"
+  to = "/rails/"
+
+[[redirects]]
+  from = "/stack-features/*"
+  to = "/"
+
+[[redirects]]
+  from = "/article/136-building-your-rails-rack-stack"
+  to = "/rails/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/135-docker-service-configuration"
+  to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
+
+[[redirects]]
+  from = "/article/279-getting-started-with-skycap"
+  to = "/skycap/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/283-getting-started-with-maestro"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/article/169-getting-started-with-node-js-based-stacks"
+  to = "/node/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/maestro/references/shells/toolbelt.html"
+  to = "/maestro/references/toolbelt.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/database-management.html"
+  to = "/maestro/how-to-guides/databases/database-management.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/databases/shells/unistall-mysql.html"
+  to = "/node/how-to-guides/databases/shells/uninstall-mysql.html"
+
+[[redirects]]
+  from = "/node/tutorials/haproxy.html"
+  to = "/node/how-to-guides/deployment/haproxy.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/databases/shells/"
+  to = "/maestro/how-to-guides/databases/"
+  
+[[redirects]]
+  from = "/maestro/tutorials/service-lifecycle-management.html"
+  to = "/maestro/how-to-guides/deployment/service-lifecycle-management.html"  
+
+[[redirects]]
+  from = "/maestro/account/two-step-verification.html"
+  to = "/maestro/account/two-factor-authentication.html"
+
+[[redirects]]
+  from = "/node/account/two-step-verification.html"
+  to = "/node/account/two-factor-authentication.html"
+
+[[redirects]]
+  from = "/rails/account/two-step-verification.html"
+  to = "/rails/account/two-factor-authentication.html"
+
+[[redirects]]
+  from = "/skycap/account/two-step-verification.html"
+  to = "/skycap/account/two-factor-authentication.html"
+
+[[redirects]]
+  from = "/maestro/pricings"
+  to = "https://www.cloud66.com/containers/maestro"
+
+[[redirects]]
+  from = "/maestro/maestro/*"
+  to = "/maestro/:splat"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/*"
+  to = "/skycap/how-to-guides/deployment/:splat"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deploy"
+  to = "/maestro/how-to-guides/deployment/"
+
+[[redirects]]
+  from = "/maestro/tutorials/service-monitoring.html"
+  to = "/maestro/references/service-monitoring.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/databases/elasticsearch-scaling.html"
+  to = "/rails/how-to-guides/scaling/elasticsearch-scaling.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/migrate-the-stack.html"
+  to = "/skycap/how-to-guides/"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/nginx-redirect.html"
+  to = "/maestro/how-to-guides/nginx/nginx-redirect.html"
+
+[[redirects]]
+  from = "/stack-definition/*"
+  to = "/"
+
+[[redirects]]
+  from = "/node/how-to-guides/databases/shells/null"
+  to = "/node/how-to-guides/databases/"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/databases/shells/uninstall-phpmyadmin.html"
+  to = "/maestro/how-to-guides/databases/shells/uninstall-mysql.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/applying-upgrades.html"
+  to = "/maestro/how-to-guides/deployment/applying-upgrades.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/migrate-the-stack.html"
+  to = "/skycap/how-to-guides/"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/optimizing-performance.html"
+  to = "/maestro/how-to-guides/scaling/optimizing-performance.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/ssh-to-server"
+  to = "/maestro/how-to-guides/common-tools/ssh-to-server.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/service-networking.html"
+  to = "/maestro/how-to-guides/deployment/service-networking.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/databases/elasticsearch-scaling.html"
+  to = "/rails/how-to-guides/scaling/elasticsearch-scaling.html"
+
+[[redirects]]
+  from = "/maestro/the-basics/stack-definition.html"
+  to = "/maestro/the-basics/concepts-and-terminology.html#applications-and-services"
+
+[[redirects]]
+  from = "/node/tutorials/database-management.html"
+  to = "/node/how-to-guides/databases/database-management.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/deployment/ssh-to-server.html"
+  to = "/rails/how-to-guides/common-tools/ssh-to-server.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/building/shells/manage-stacks-chatops.html"
+  to = "/skycap/quickstarts/"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/common-tools/ssh.html"
+  to = "/skycap/how-to-guides/"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/zero-downtime-deploy.html"
+  to = "/skycap/how-to-guides/"
+
+[[redirects]]
+  from = "/stack-definition/manifest-files.html"
+  to = "/"
+
+[[redirects]]
+  from = "/add-ins/rake-task.html"
+  to = "/rails/how-to-guides/add-ins/rake-task.html"
+
+[[redirects]]
+  from = "/add-ins/shell.html"
+  to = "/"
+
+[[redirects]]
+  from = "/building-your-docker-service"
+  to = "/maestro/how-to-guides/deployment/building-your-service.html"
+
+[[redirects]]
+  from = "/building-your-node-js-stack"
+  to = "/node/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/building-your-node-js-stack/specific-settings-for-your-node-js-application"
+  to = "/node/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/category/toolbelt"
+  to = "/"
+
+[[redirects]]
+  from = "/copper/faq.hmtl"
+  to = "/copper/faq.html"
+
+[[redirects]]
+  from = "/how-to-guides"
+  to = "/"
+
+[[redirects]]
+  from = "/how-to-guides/databases/shells/uninstall-mysql.html"
+  to = "/"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/service-network-configuration.html"
+  to = "/maestro/how-to-guides/deployment/service-networking.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/databases/replace-sqlite.html"
+  to = "/rails/how-to-guides/databases/replace-sqlite.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/nginx-modules.html"
+  to = "/maestro/how-to-guides/nginx/nginx-modules.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/github.html"
+  to = "/maestro/how-to-guides/common-tools/access-your-code.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/migrate-the-stack.html"
+  to = "/maestro/how-to-guides/deployment/migrating-applications.html"
+
+[[redirects]]
+  from = "/maestro/resources/faq.html"
+  to = "/maestro/the-basics/faq.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/network-configuration.html"
+  to = "/maestro/references/network-configuration.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/service-network-configuration.html"
+  to = "/maestro/how-to-guides/deployment/service-networking.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/add-ins/docker-service-task.html"
+  to = "/maestro/how-to-guides/add-ins/docker-tasks.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/building/"
+  to = "/node/how-to-guides/"
+
+[[redirects]]
+  from = "/node/how-to-guides/building/building-your-service.html"
+  to = "/node/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/databases/elasticsearch-scaling.html"
+  to = "/node/how-to-guides/scaling/elasticsearch-scaling.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/databases/mongo-replica-sets"
+  to = "/node/how-to-guides/scaling/mongo-replica-sets.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/deployment/lets-encrypt.html"
+  to = "/node/how-to-guides/security/lets-encrypt.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/deployment/ssh-to-server"
+  to = "/node/how-to-guides/common-tools/ssh-to-server.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/deployment/ssh-to-server.html"
+  to = "/rails/how-to-guides/common-tools/ssh-to-server.html"
+
+[[redirects]]
+  from = "/rails/references/shells/toolbelt.html"
+  to = "/rails/references/toolbelt.html"
+
+[[redirects]]
+  from = "/rails/tutorials/rack-health-check.html"
+  to = "/rails/how-to-guides/rack-servers/rack-health-check.html"
+
+[[redirects]]
+  from = "/skycap/tutorials/getting-started-with-manifest.html"
+  to = "/maestro/quickstarts/getting-started-with-manifest.html"
+
+[[redirects]]
+  from = "/skycap/the-basics/about-skycap.html"
+  to = "/skycap/the-basics/formations-stencils-and-snapshots.html#overview"
+
+[[redirects]]
+  from = "/skycap/references/shells/toolbelt.html"
+  to = "/skycap/references/toolbelt.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/nginx-redirect.html"
+  to = "/maestro/how-to-guides/nginx/nginx-redirect.html"
+
+[[redirects]]
+  from = "/maestro/concepts/stack-definition.html"
+  to = "/maestro/the-basics/concepts-and-terminology.html#application-vs-stack"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/databases/shells/uninstall-phpmyadmin.html"
+  to = "/maestro/how-to-guides/databases/"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/databases/uninstall-phpmyadmin.html"
+  to = "/maestro/how-to-guides/databases/"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/nginx-redirect.html"
+  to = "/maestro/how-to-guides/nginx/nginx-redirect.html"
+
+[[redirects]]
+  from = "/skycap/resources/referral-program.html"
+  to = "/maestro/resources/referral-program.html"
+
+[[redirects]]
+  from = "/skycap/tutorials/service-networking.html"
+  to = "/skycap/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/maestro/references/build-grid.html"
+  to = "/maestro/the-basics/concepts-and-terminology.html#buildgrid-and-build-minutes"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/migrate-the-stack.html"
+  to = "/maestro/how-to-guides/deployment/migrating-applications.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/zero-downtime-deploy.html"
+  to = "/rails/how-to-guides/deployment/shells/zero-downtime-deploy.html"
+
+[[redirects]]
+  from = "/maestro/references/easy-deploy-repos.html"
+  to = "/maestro/how-to-guides/deployment/"
+
+[[redirects]]
+  from = "/node/how-to-guides/database/shells/uninstall-mysql.html"
+  to = "/node/how-to-guides/databases/shells/uninstall-mysql.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/shells/websocket-support.html"
+  to = "/maestro/how-to-guides/deployment/websocket-support.html"
+
+[[redirects]]
+  from = "/skycap/integrations/integration-with-weave-scope.html"
+  to = "/maestro/integrations/integration-with-weave-scope.html"
+
+[[redirects]]
+  from = "/troubleshoot/lets-encrypt"
+  to = "/"
+
+[[redirects]]
+  from = "/tutorials/IP-filtering.html"
+  to = "/"  
+  
+[[redirects]]
+  from = "/article/*"
+  to = "/"

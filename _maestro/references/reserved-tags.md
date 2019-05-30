@@ -7,7 +7,7 @@ order: 90
 lead: Tags reserved for use by Maestro and Cloud 66
 tags: ['tags']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include references/reserved-tags.md %}

@@ -6,7 +6,7 @@ categories: quickstarts
 legacy: false
 tags: ["getting started", "formations"]
 lead: Use Skycap to deploy your applications to any Kubernetes cluster
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 Formations are used to create, manage and deploy Kubernetes configuration files to any Kubernetes cluster.
@@ -63,38 +63,55 @@ After the final step of [setting up your application](/skycap/quickstarts/gettin
 
 You can also add a few tags to it (these help to identify components later on). If you're using our sample project, calling your Formation "Hello World" is a good idea.
 
-<img src="/assets/skycap/skycap-new-formations-1.gif"/>
+<img src="/assets/skycap/formation_step_1_NEW.gif"/>
 
 ### Add your first Stencil
 
 <div class="notice notice-warning"><p>This section assumes you are familiar with Kubernetes configuration files at a basic level.</p></div>
 
-Now that you have a Formation defined you can begin populating it with **Stencils**. 
+Now that you have a Formation defined you can begin populating it with **Stencils**.
 
-To do this, click on the *Add Stencils* button in the **Getting Started with Formations** panel. 
+To do this, click on the *Add Stencils* button in the **Getting Started with Formations** panel.
 
 A `namespace` is usually the first thing configured for a new Formation. To create yours, choose *setup.yml* from the menu that automatically opens on the next page.
 
-<img src="/assets/skycap/skycap-formations-add-stencil.gif"/>
+<img src="/assets/skycap/formation_step_2_NEW.gif"/>
 
-This creates a Stencil for a namespace configuration file for you. Let's look at it in a bit more detail:
+This creates a Stencil for a namespace configuration file for you. Let's look at the first section of the template in a bit more detail:
 
-<pre class="prettyprint">
+{% highlight yaml %}
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: c66-system
+---
 apiVersion: v1
 kind: Namespace
 metadata:
   name: ${formation}
   annotations:
     cloud66.com/formation-uuid: ${formation["uuid"]}
-</pre>
+    cloud66.com/stencil-uuid: ${stencil["uuid"]}    
+    cloud66.com/snapshot-uid: ${snapshot["uid"]}
+    cloud66.com/snapshot-gitref: ${snapshot["gitref"]}
+{% endhighlight %}
 
-As you can see, the default `setup.yml` Stencil (from our sample repository) sets up the minimum required scaffolding for deploying an application to Kubernetes - a namespace.
+As you can see, the default `setup.yml` Stencil (from our [base template repository](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-base-template)) sets up the required scaffolding for deploying an application to Kubernetes starting with a namespace.
 
-You've probably already noticed the dynamic stencil placeholder `${formation}`. Placeholder offer a simple way to replace some values in your configuration files at the time it "renders". 
+#### Note
+<div class="notice"><p>
+We automatically connect a default repository of Stencils - called a "base template repository" - to each Cloud 66 account. You can also create your own template repositories. Read our guide on the subject for more info. </p></div>
 
-For example,`${formation}` gets replaced with a Kubernetes friendly version of your Formation's name. So if your Formation is called "My Sample Formation", the value of `${formation}` will be `my-sample-formation` when it renders (we will get to how to render the Stencils later).
+You've probably already noticed the dynamic stencil placeholders like `${formation}` and `${snapshot["gitref"]`. Placeholders offer a simple way to replace some values in your configuration files at the time it "renders".
 
-You can see a full list of all Stencil functions [here](/skycap/references/stencil_placeholders.html).
+For example,`${formation}` gets replaced with a Kubernetes friendly version of your Formation's name. So if your Formation is called "My Sample Formation", the value of `${formation}` will be `my-sample-formation` when it renders (we will get to how to render the Stencils later). You can see a full list of all Stencil functions and placeholders [here](/skycap/references/stencil_placeholders.html).
+
+You've probably also noticed that we automatically prepend `general-cloud66@` to the names of each YAML file. This is the name of the base template repository that this Stencil was drawn from. You can change this to whatever suits your needs. 
+
+We do this for two reasons:
+
+1. It allows you to keep multiple configuration files of the same type (e.g. multiple deploy.yml files) in the same application repository without running into naming conflicts.
+2. It reminds you of the base template repository you're using to create the file. This is helpful when you have multiple repos. (Don't worry though - editing this name won't affect the link between the template and the repo)
 
 Now that we are a bit more familiar with the Stencils, let's save our `setup.yml` without making any changes. To do this, scroll down and add a "commit message". For now just use `initial`. Then click *Save changes*. (Commit messages are required every time you save any Stencil.)
 
@@ -108,6 +125,10 @@ This example uses Skycap's integrated BuildGrid engine to build the container im
 
 A service running on Kubernetes consists of 2 parts: a `deployment` and a `service`. Our sample base template has a Stencil for each one. 
 
+#### Reminder
+<div class="notice"><p>
+We automatically name each new YAML file starting with the name of its original base template repository - in this case  "general-cloud66@" - but you can edit this as needed. However we recommend using a consistent and sensible naming scheme (e.g. by giving all the YAML files for the same application the same prefix)</p></div>
+
 Click on the **+** button and choose **deployment.yml**. In the generated Stencil, you can see the are some placeholders called `${require(...)}`. You need to replace these with values that are specific to your application. Let's do that for our Hello World application now.
 
 Set `containerPort` to `8080` (this is the port through which the Hello World container will serve traffic) and set `command` to `["/go/src/helloworld/helloworld"]` (Hellow World is written in Go and this command initialises that code).
@@ -116,7 +137,7 @@ Set `containerPort` to `8080` (this is the port through which the Hello World co
 
 ### Adding a Service
 
-By now you should have a `setup.yml` and a `helloworld_deployment.yml` in your Formation Stencils. The last file is a `service.yml` which tells Kubernetes to redirect web traffic from the cluster to the Hello World pod we just defined in our `helloworld_deploy.yml`.
+By now you should have a `setup.yml` and a `helloworld_deploy.yml` in your Formation Stencils. The last file is a `service.yml` which tells Kubernetes to redirect web traffic from the cluster to the Hello World pod we just defined in our `helloworld_deploy.yml`.
 
 Click on the **+** button again but choose the `service.yml` template this time. You will need to make a few changes to the template to make it work for you application. In our Hello World example, this is limited to the port numbers.
 
@@ -130,11 +151,11 @@ We now have all the configuration files we need to deploy our sample application
 
 ### Rendering
 
-Rendering of Stencils happens automatically when you download them from Skycap. 
+Rendering of Stencils happens automatically when you download them from Skycap.
 
 The easiest way to start Rendering is to click on the *Render this Formation* button in the "Getting Started with Formations" panel. This will add a formation to the tool panel on the right-hand side of the screen.
 
-<img src="/assets/skycap/formation_step_6_NEW.gif"/>
+<img src="/assets/skycap/formation_step_6_NEWer.gif"/>
 
 Now you should be able to see all your Stencils rendered and ready to be used on a Kubernetes cluster.
 

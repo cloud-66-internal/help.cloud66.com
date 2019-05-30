@@ -6,7 +6,7 @@ categories: references
 lead: "Choosing the right server size"
 legacy: true
 tags: ["performance"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

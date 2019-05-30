@@ -6,9 +6,9 @@ categories: Tutorials
 lead: ""
 legacy: false
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
-{% assign product = "common" %}
+{% assign product = 'node' %}
 
 We use the default data folder when installing PostgreSQL on your server, which is  `/usr/local/pgsql/data`.
 To change this folder, follow the instructions below.

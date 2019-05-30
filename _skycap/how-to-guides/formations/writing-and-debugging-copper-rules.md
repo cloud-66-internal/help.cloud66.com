@@ -2,12 +2,12 @@
 layout: post
 template: one-col
 title: Writing and debugging Copper rules
-Order: 3
+order: 5
 categories: how-to-guides/formations
 lead: "How to write validation policies in Copper DSL"
 legacy: false
 tags: ["formations", "stencils"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 Validation policies in Skycap rely on Copper, an open-source tool developed by Cloud 66. It has its own excellent [documentation](https://copper.sh/docs/copper-dsl/) and this should be the starting point for anyone wanting to craft their own validation policies for Skycap.

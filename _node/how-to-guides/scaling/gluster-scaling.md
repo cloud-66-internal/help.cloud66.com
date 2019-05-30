@@ -3,10 +3,11 @@ layout: post
 template: one-col
 title: Scaling GlusterFS clusters
 categories: how-to-guides/scaling
-lead: ""
+lead: "  "
 legacy: false
 tags: ["GlusterFS"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
+
 ---
 
 

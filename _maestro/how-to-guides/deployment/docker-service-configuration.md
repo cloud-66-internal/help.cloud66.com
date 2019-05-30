@@ -7,7 +7,7 @@ order: 10
 lead: "How to specify custom service configurations for your application"
 legacy: false
 tags: ["customization", "service.yml"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview
@@ -90,6 +90,19 @@ services:
     - 6379                            
 {% endhighlight %}
 
+### Using Habitus for builds
+
+[Habitus is a build workflow tool for Docker-based applications](http://www.habitus.io). It allows you to create a build workflow consisting of multiple steps for your Maestro application. Maestro fully supports Habitus. To enable Habitus on your Maestro application, you need to do the following:
+
+1.  Add a `build.yml` to your repository
+2.  Set `use_habitus` attribute to `true` in your `service.yml`
+3.  Set the `use_habitus_step` to the step you would like to use for your service in your `service.yml` 
+
+You can edit your `service.yml` directly from the Dashboard by clicking *Edit service* and then clicking the *Advanced* tab.
+
+A Habitus build usually has multiple steps and each step can generate a Docker image. Using `use_habitus_step` attribute you can specify which step's results you would like to use as the image for the container. 
+
+Check out the [Habitus website](http://www.habitus.io) for more information about generating a `build.yml`.
 
 ## Database configurations
 
@@ -215,12 +228,12 @@ Below is a table of the available configurations for a given service with a brie
      <td> The Git repository branch your Docker image will be based on. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html#using-habitus-for-builds">use_habitus</a> </td> 
+     <td> <a href="#using-habitus-for-builds">use_habitus</a> </td> 
      <td> Use <a href="http://www.habitus.io">Habitus</a> build workflow </td> 
     </tr> 
     <tr> 
-     <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html#using-habitus-for-builds">use_habitus_step</a> </td> 
-     <td> The <a href="http://www.habitus.io">Habitus</a> step to use for the build. </td> 
+     <td> <a href="#using-habitus-for-builds">use_habitus_step</a> </td> 
+     <td> The <a href="http://www.habitus.io">Habitus</a> step to use for the build. </td>
     </tr> 
     <tr>
      <td> <a href="/maestro/how-to-guides/deployment/service-lifecycle-management.html#health">health</a> </td>

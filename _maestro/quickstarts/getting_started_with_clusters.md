@@ -5,11 +5,11 @@ categories: quickstarts
 order: 3
 legacy: false
 tags: ["getting started", "cluster", "maestro cluster"]
-lead: Create a Maestro cluster for shared server application deployments"
-permalink: /:collection/:path
+lead: A step by step tutorial that guides you through deploying a Kubernetes cluster. Maestro Clusters let you to deploy multiple applications to the same set of servers.
+permalink: /:collection/:path:output_ext
 ---
 
-A Maestro Cluster is a "blank" instance of Kubernetes infrastructure - i.e. with no application specific components installed. You can use a Cluster to deploy multiple applications to the same set of servers. 
+A Maestro Cluster is a "blank" instance of Kubernetes infrastructure - i.e. with no application specific components installed. You can use a Cluster to deploy multiple applications to the same set of servers.
 
 #### Note
 <div class="notice"><p>Clusters are only compatible with applications built using Maestro <a href="/maestro/the-basics/about-maestro.html">Version 2</a>.</p></div>
@@ -49,7 +49,7 @@ Depending on which cloud or registered server you selected above, we can now cho
 
 ## Deployment
 
-Once you're happy with your choices; hit the *Create Cluster* button to start building your new Maestro cluster! 
+Once you're happy with your choices; hit the *Create Cluster* button to start building your new Maestro cluster!
 
 You can watch the progess of the build on your dashboard, or you can close the window and get on with other work. We will alert you via email when your cluster is up and running.
 
@@ -69,7 +69,7 @@ As we have a cluster that has multiple servers, we can easily switch our master 
 
 <img src="/assets/maestro/maestro_cluster_switch_dedicated.png" alt="Switch master to dedicated" style="width:30%">
 
-We can also easily add additional server nodes to this cluster or remove existing server nodes from this cluster. 
+We can also easily add additional server nodes to this cluster or remove existing server nodes from this cluster.
 (Note that the master server cannot be removed without deleting the entire cluster.)
 
 ## Deploying applications to the cluster

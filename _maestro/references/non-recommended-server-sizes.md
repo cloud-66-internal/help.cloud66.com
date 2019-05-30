@@ -7,7 +7,7 @@ order: 30
 lead: "A guide to the minimum server sizes recommended for use with Maestro"
 legacy: false
 tags: ["performance"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Under-powered server sizes (not recommended)

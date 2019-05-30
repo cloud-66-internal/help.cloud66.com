@@ -3,10 +3,11 @@ layout: post
 template: one-col
 title: Using Helm with Skycap
 categories: how-to-guides
+order: 8
 lead: "How to integrate Helm package manager into Skycap"
 legacy: false
 tags: ["customization,helm"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

@@ -7,7 +7,7 @@ order: 3
 lead: "How to configure multi-certificate SSL for HAProxy in Maestro"
 legacy: false
 tags: ["ssl","haproxy"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

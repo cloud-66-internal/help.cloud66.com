@@ -6,7 +6,7 @@ categories: references
 lead: Reserved tags for additional functionality
 tags: ['tags']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

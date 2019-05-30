@@ -6,7 +6,7 @@ categories: how-to-guides/databases
 lead: ""
 legacy: true
 tags: ["mysql"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

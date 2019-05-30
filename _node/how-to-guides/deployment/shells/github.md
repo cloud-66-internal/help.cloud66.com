@@ -7,6 +7,6 @@ lead: ""
 tags: ["git","github"]
 legacy: false
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/deployment/github.md %}

@@ -7,7 +7,7 @@ order: 6
 lead: "How to create access control policies in Skycap"
 legacy: false
 tags: ["security,access control,ACL"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 If you are working in a team, you will probably need to control who has access to Formations, and how much they can do with that access (i.e. their permissions). This guide walks you through the process of creating and maintaining access control policies in Skycap Formations.

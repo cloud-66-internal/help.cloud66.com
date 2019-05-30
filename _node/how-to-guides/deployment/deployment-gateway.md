@@ -6,7 +6,7 @@ categories: how-to-guides/deployment
 lead: "How to deploy your application to a DMZ"
 legacy: false
 tags: ["security"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

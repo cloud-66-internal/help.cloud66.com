@@ -6,7 +6,7 @@ order: 1
 legacy: false
 tags: ["getting started"]
 lead: Deploy your first Rails app to any cloud
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## What you’ll need

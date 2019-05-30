@@ -89,11 +89,11 @@ There are four types of deploy hooks, and the fields available (and required) va
      <td colspan="2"> <strong>HOOK TYPE: Snippets</strong> </td>
     </tr>
     <tr>
-     <td width="13%"> snippet <img class="table-img-required" src="http://assets.cloud66.com/help/images/required.gif"> </td>
+     <td width="13%"> snippet <img class="table-img-required" src="/assets/shared/required.gif"> </td>
      <td> Snippet to be used - runs in <em>/tmp/deploy_hooks</em> by default </td>
     </tr>
     <tr>
-     <td> target <img class="table-img-required" src="http://assets.cloud66.com/help/images/required.gif"> </td>
+     <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
      <td> Target server(s), with accepted values <em>any</em>, <em>rails</em>, <em>mysql</em>, <em>postgresql</em>, <em>mongodb</em>, <em>redis</em>, <em>sinatra</em>, <em>padrino</em>, <em>custom</em>
       <div class="notice notice-warning">
        <strong> Note:</strong> Please make sure you read the
@@ -151,11 +151,11 @@ If the application already contains this env var it will be overridden with the 
    <td colspan="2"> <strong>HOOK TYPE: Commands</strong> </td>
   </tr>
   <tr>
-   <td width="13%"> command <img class="table-img-required" src="http://assets.cloud66.com/help/images/required.gif"> </td>
+   <td width="13%"> command <img class="table-img-required" src="/assets/shared/required.gif"> </td>
    <td> Command to be used - run in <em>/tmp/deploy_hooks</em> by default </td>
   </tr>
   <tr>
-   <td> target <img class="table-img-required" src="http://assets.cloud66.com/help/images/required.gif"> </td>
+   <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
    <td> Target server(s), with accepted values <em>any</em>, <em>rails</em>, <em>docker</em>, <em>mysql</em>, <em>postgresql</em>, <em>mongodb</em>, <em>redis</em>, <em>sinatra</em>, <em>padrino</em>, <em>custom</em>
     <div class="notice notice-warning">
      <strong> Note:</strong> Please make sure you read the
@@ -212,11 +212,11 @@ If the application already contains this env var it will be overridden with the 
  <td colspan="2"> <strong>HOOK TYPE: Existing Scripts (Rails/Node applications only)</strong> </td>
 </tr>
 <tr>
- <td width="13%"> source <img class="table-img-required" src="http://assets.cloud66.com/help/images/required.gif"> </td>
+ <td width="13%"> source <img class="table-img-required" src="/assets/shared/required.gif"> </td>
  <td> This specifies the source location of your deploy hook file within your repository </td>
 </tr>
 <tr>
- <td> target <img class="table-img-required" src="http://assets.cloud66.com/help/images/required.gif"> </td>
+ <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
  <td> Target server(s), with accepted values <em>any</em>, <em>rails</em>, <em>mysql</em>, <em>postgresql</em>, <em>mongodb</em>, <em>redis</em>, <em>sinatra</em>, <em>padrino</em>, <em>custom</em>
   <div class="notice notice-warning">
    <strong> Note:</strong> Please make sure you read the
@@ -285,11 +285,11 @@ If the application already contains this env var it will be overridden with the 
  <td colspan="2"> <strong>HOOK TYPE: Inline Scripts</strong> </td>
 </tr>
 <tr>
- <td width="13%"> source <img class="table-img-required" src="http://assets.cloud66.com/help/images/required.gif"> </td>
+ <td width="13%"> source <img class="table-img-required" src="/assets/shared/required.gif"> </td>
  <td> This specifies the source location of your deploy hook file within your repository </td>
 </tr>
 <tr>
- <td> target <img class="table-img-required" src="http://assets.cloud66.com/help/images/required.gif"> </td>
+ <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
  <td> Target server(s), with accepted values <em>any</em>, <em>rails</em>, <em>mysql</em>, <em>postgresql</em>, <em>mongodb</em>, <em>redis</em>, <em>sinatra</em>, <em>padrino</em>, <em>custom</em>
   <div class="notice notice-warning">
    <strong> Note:</strong> Please make sure you read the

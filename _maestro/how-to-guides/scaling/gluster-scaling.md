@@ -6,7 +6,7 @@ categories: how-to-guides/scaling
 lead: "How to scale GlusterFS clusters within Maestro"
 legacy: false
 tags: ["GlusterFS"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 #### Note

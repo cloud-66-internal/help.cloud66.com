@@ -7,7 +7,7 @@ lead: "Reference guide for CustomConfig"
 legacy: false
 order: 2
 tags: ["shell"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## What is CustomConfig?

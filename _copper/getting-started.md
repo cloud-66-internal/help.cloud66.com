@@ -6,7 +6,7 @@ label: Copper
 title: Getting Started with Copper
 lead: Taking the first steps to validate your Kubernetes configuration files
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 order : 2
 ---
 

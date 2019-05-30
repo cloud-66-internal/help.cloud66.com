@@ -7,7 +7,7 @@ order: 20
 lead: Cloud 66 server restart notifications
 tags: ['server','notifications']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 When Cloud 66 provisions your server we will automatically install and configure the unattended-upgrades package. This package is responsible for automatically applying security patches that are released by the Ubuntu package maintainers. Sometimes a package will be updated that impacts an already running process on your box, and the only way to update the already running process is to restart it. 

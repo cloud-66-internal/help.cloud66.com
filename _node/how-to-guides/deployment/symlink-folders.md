@@ -7,7 +7,7 @@ lead: "How to use Ubuntu symbolic links with Cloud 66"
 legacy: false
 tags: ["customization"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

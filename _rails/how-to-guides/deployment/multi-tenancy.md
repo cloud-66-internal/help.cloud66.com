@@ -7,7 +7,7 @@ order: 8
 lead: "Configuring Cloud 66 applications to use a single server"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

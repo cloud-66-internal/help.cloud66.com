@@ -7,7 +7,7 @@ title: Copper DSL
 lead: Using Copper DSL for configuration validations
 legacy: false
 order: 5
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Basics

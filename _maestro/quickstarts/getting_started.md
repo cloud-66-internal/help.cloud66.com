@@ -5,8 +5,8 @@ categories: quickstarts
 order: 1
 legacy: false
 tags: ["getting started"]
-lead: How to deploy your application using Maestro
-permalink: /:collection/:path
+lead: A step by step tutorial that walks you through deploying a demo application with Maestro. The best place to get started!
+permalink: /:collection/:path:output_ext
 ---
 
 Maestro is a full container management service. Once your Docker images are ready we'll take care of deploying and managing your containers and infrastructure (servers, load balancers, etc).
@@ -27,7 +27,7 @@ Before you start, please check you have the following:
 
 ## Choosing application type
 
-New users will be show the product selection wizard. For Maestro, choose "I have a containerized application" and then "I need to build a Kubernetes cluster" (*Try Maestro*). 
+New users will be show the product selection wizard. For Maestro, choose "I have a containerized application" and then "I need to build a Kubernetes cluster" (*Try Maestro*).
 
 <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
     <div class="Grid-cell">
@@ -50,9 +50,9 @@ The first step is to give your application a **name**. This will be used to labe
 
 Next, you need to add at least one **service**. To your application. If you're using our demo application, you will need to add a single service called `demo-app` by pulling the code from this [public repo](https://github.com/cloud66/maestro-demo.git).
 
-To do this: 
+To do this:
 
-1. Copy the *Clone or download* link from Github 
+1. Copy the *Clone or download* link from Github
 2. Paste it into the **Git Repo URL** field
 3. Type *master* into the **branch** field
 4. Click *Go* to fetch and analyze the code
@@ -67,15 +67,15 @@ To do this:
 The *Where is your service image?* dropdown provides you with three options to specify the source of your services.
 
 * **Build Image from a GitHub repo** &mdash; This is the easiest way to add services if your code is hosted on GitHub. You'll need to link your GitHub account with Cloud 66 before you can take advantage of this. Just click the *Setup access to your GitHub projects.* link. (This is the option you should pick if you're using our "hello world" app)
-    
+
 * **Build image from any Git Repo** &mdash; Use this option if you have a private git repo or you're using another git provider such as BitBucket. You can also use this if you don't want to link Cloud 66 to your GitHub account. You will need to add your Cloud 66 public key if your repo is private. You'll be prompted to do this if it's required.
-    
-* **It's in a Docker image repository** &mdash; Use this to add pre-built images to a project. You can use a service like DockerHub or your own private image repo. If you're using a private repository you'll be prompted to add the necessary login credentials. 
+
+* **It's in a Docker image repository** &mdash; Use this to add pre-built images to a project. You can use a service like DockerHub or your own private image repo. If you're using a private repository you'll be prompted to add the necessary login credentials.
 
 
 ## Building application images
 
-Before you can deploy your application, you need to build your services into container images. To do this, click the green *Build Application Images* button. 
+Before you can deploy your application, you need to build your services into container images. To do this, click the green *Build Application Images* button.
 
 You can now watch the build log as Maestro fetches your application code and builds it into Docker images, ready for deployment.
 
@@ -107,7 +107,7 @@ The *demo-app* service listens to port 5000 so we need set the *Container Port* 
 The application also needs a redis data store, so we should add one now:
 
 1. Click on *Add Data Source*
-2. Select *Redis* from the list of available source 
+2. Select *Redis* from the list of available source
 3. Click *Done*
 
 <img alt="Adding a data source to an app in Maestro" src="/assets/maestro/maestro-getting-started-3.gif">
@@ -119,7 +119,7 @@ Our application is now configured and ready to deploy.
 Now we need to choose a cloud provider as a target for the deployment. You can do this using the dropdowns in the right-hand column.
 
 For this demo we'll use *DigitalOcean* and deploy the application to the *London, UK* region.
-        
+
 <img src="/assets/maestro/maestro_cloud_region.png" alt="Choose a cloud and region">
 
 You can also deploy to your own servers. First you need to <a href="/maestro/how-to-guides/deployment/registered-servers.html">add them as registered servers</a>.
@@ -147,11 +147,11 @@ During the build and deployment process you can view the log to see what's happe
 
 ## Test your app
 
-Once deployment is complete, you can test your application by visiting your app's detail page and clicking on the *Visit Site* link in the panel at the top of the Services tab. 
+Once deployment is complete, you can test your application by visiting your app's detail page and clicking on the *Visit Site* link in the panel at the top of the Services tab.
 
 If youre deployment has worked as planned, you will see the following text:
 
-"Hello World! I have been seen X times" 
+"Hello World! I have been seen X times"
 
 ...(where X is a positive integer). If you refresh the page, that number should increase by one. This dynamic data is coming from the redis data store that we added to the app.
 

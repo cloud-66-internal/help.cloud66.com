@@ -8,7 +8,7 @@ lead: "Choosing which version of Node is installed with your Rack/Rails applicat
 tags: ["debugging"]
 legacy: false
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Controlling the Node version for your Rails application

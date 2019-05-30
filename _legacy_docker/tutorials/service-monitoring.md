@@ -6,7 +6,7 @@ categories: tutorials
 lead: We help you monitor your container CPU, memory, disk and network usage
 tags: ['operations']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

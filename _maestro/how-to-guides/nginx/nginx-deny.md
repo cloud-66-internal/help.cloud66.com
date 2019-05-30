@@ -7,7 +7,7 @@ order: 3
 lead: "How to restrict access to your application by IP address using Nginx"
 legacy: false
 tags: ["nginx"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview
