@@ -7,7 +7,7 @@ order: 10
 lead: "How to scale MongoDB with Cloud 66 using replica sets"
 legacy: false
 tags: ["MongoDB"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 When it comes to MongoDB replication, **you really need to know how MongoDB replica sets work and how to use them** before trying to scale up your MongoDB backend. This is to ensure continuity of service without interruptions.

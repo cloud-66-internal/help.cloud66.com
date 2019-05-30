@@ -7,7 +7,7 @@ order: 40
 lead: "How to restrict which users can deploy your application(s)"
 legacy: false
 tags: ["security", "operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

@@ -7,7 +7,7 @@ order: 14
 lead: "How to add seed data to your database(s)"
 tags: ["customization"]
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

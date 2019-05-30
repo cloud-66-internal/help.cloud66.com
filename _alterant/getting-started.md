@@ -5,18 +5,17 @@ externallink: https://github.com/cloud66-oss/alterant
 title: Getting Started with Alterant
 label: Alterant
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 order: 2
 ---
 
 ## Installing Alterant
 
-Alterant is available as a Ruby gem. We recommend installing Alterant using [RubyGems](https://rubygems.org/pages/download) with the following command: <kbd>gem install alterant</kbd>
-Once installed, you should be able to check Alterant version <kbd>alterant version</kbd>
+Alterant is available as a single executable. You can install the latest Alterant from https://github.com/cloud66-oss/alterant/releases/latest
 
 ## Basics
 
-Alterant is very simple to use. Configuration file (YAML or JSON) comes in, a Javascript "modifier" is applied to it to modify it and the output is generated in YAML or JSON format.
+Alterant is very simple to use. Configuration file (YAML) comes in, a Javascript "modifier" is applied to it to modify it and the output is generated in YAML format.
 
 ### Writing your first modifier script
 
@@ -32,7 +31,7 @@ Let's save this as `input.yml`.
 With the above YAML used as input, `$` will be the entire document. This means `$.foo.bar` will be `ham`. Now let's make a change to the document:
 
 <pre class="prettyprint">
-$$.forEach($ => {
+$$.forEach(function($) {
 	$.foo.bar = "eggs"
 });
 </pre>
@@ -55,7 +54,7 @@ As you can see, the input configuration file is loaded into a Javascript object 
 Using the previous input, let's write a modifier to add a new node to the `foo` array:
 
 <pre class="prettyprint">
-$$.forEach($ => {
+$$.forEach(function($) {
 	$.foo.push({ fuzz: "fish" })
 });
 </pre>

@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: Run a scheduled or on-demand tasks on a server host or against a docker service
 tags: ['Add in']
 legacy: true
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

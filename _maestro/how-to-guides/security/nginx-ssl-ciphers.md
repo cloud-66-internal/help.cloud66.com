@@ -7,7 +7,7 @@ order: 4
 lead: "How to adjust SSL cipher settings in Nginx"
 legacy: false
 tags: ["ssl","nginx"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 You can strengthen Nginx's SSL security by adjusting its SSL cipher settings. You can change this using [CustomConfig](/maestro/tutorials/custom-config.html). 

@@ -7,7 +7,7 @@ order: 6
 lead: "Using Habitus flows within Skycap"
 legacy: false
 tags: ["habitus,workflow,build.yml"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 Skycap integrates build flows created using [Habitus](http://www.habitus.io/). This allows you to reuse your existing `build.yml` files to build your application images within Skycap.

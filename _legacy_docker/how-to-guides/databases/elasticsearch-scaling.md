@@ -6,7 +6,7 @@ categories: how-to-guides/databases
 lead: ""
 legacy: true
 tags: ["Elasticsearch"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

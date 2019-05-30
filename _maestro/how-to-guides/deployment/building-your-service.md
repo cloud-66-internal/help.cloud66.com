@@ -7,11 +7,11 @@ order: 10
 lead: "How to build a Docker service in Maestro (Version 1 only)"
 legacy: true
 tags: ["build"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 <div class="notice notice-danger">
-<p>PLEASE NOTE:<br/> This guide only applies to Version 1 of Maestro, also know as <em>CSv1</em>. If you are new to Maestro then you should use <a href="/skycap/quickstarts/getting_started.html">Skycap</a> to handle this function.</p></div>
+<p>PLEASE NOTE:<br/> This guide only applies to Version 1 of Maestro, also know as <em>CSv1</em>. New Maestro users should refer to <a href="/maestro/how-to-guides/deployment/docker-service-configuration.html">this guide</a> instead. </p></div>
 
 ## Pull code from Git
 

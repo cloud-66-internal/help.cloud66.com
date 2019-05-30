@@ -3,10 +3,11 @@ layout: post
 template: one-col
 title: Using HashiCorp Vault with Skycap
 categories: how-to-guides
+order: 12
 lead: "How to integrate HashiCorp Vault into your Skycap workflows"
 legacy: false
 tags: ["integration,secrets"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

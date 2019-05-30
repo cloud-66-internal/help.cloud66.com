@@ -5,7 +5,7 @@ externallink: https://github.com/cloud66-oss/alterant
 title: Alterant Examples
 label: Alterant
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 order: 3
 ---
 
@@ -18,13 +18,15 @@ We built Alterant to make changes to Kubernetes configuration files in a consist
 This scripts and add sidecar to a pod in the Deployment.
 
 <pre class="prettyprint">
-if ($.kind == 'Deployment') {
-    var containers = $.spec.template.spec.containers
-    if (containers.length == 1) {
-        sidecar = { "image": "sidecar_image:latest", "name": "my-sidecar" }
-        containers.push(sidecar)
-    }
-}
+$$.forEach(function($) {
+	if ($.kind == 'Deployment') {
+	    var containers = $.spec.template.spec.containers
+	    if (containers.length == 1) {
+	        sidecar = { "image": "sidecar_image:latest", "name": "my-sidecar" }
+	        containers.push(sidecar)
+	    }
+	}
+})
 </pre>
 
 ### Change the port of a pod
@@ -65,25 +67,27 @@ metadata:
 ```
 
 <pre class="prettyprint">
+$$.forEach(function($) {
 var namespace = $.metadata.name
-deployment = {
-    apiVersion: "extensions/v1beta1",
-    kind: "Deployment",
-    metadata: [
-        { namespace: namespace },
-        { name: "web" }
-    ],
-    spec:
-        { template:
-            { spec:
-                { containers: [{ "image": "app_image:latest", "name": "my-pod" }] }
-            }
-        }
-    }
+	deployment = {
+	    apiVersion: "extensions/v1beta1",
+	    kind: "Deployment",
+	    metadata: [
+	        { namespace: namespace },
+	        { name: "web" }
+	    ],
+	    spec:
+	        { template:
+	            { spec:
+	                { containers: [{ "image": "app_image:latest", "name": "my-pod" }] }
+	            }
+	        }
+	    }
+})
 
 $$.push(deployment)
 </pre>
 
 This modifier reads the name of the namespace and adds a new deployment to the output that was not there before. In other words, instead of modifying the object that's being processed, it adds a sibling node to the parent of that object. To access the parent for `$` we can use `$$`.
 
-These are just some simple examples of what you can do with Alterant. You can read about the [helper functions](/alterant/helpers.html), [extending Alterant](/alterant/extending-alterant.html) and the [Alterant CLI](/alterant/alterant-cli.html).
+These are just some simple examples of what you can do with Alterant. You can read about the [helper functions](/alterant/helpers.html) and the [Alterant CLI](/alterant/alterant-cli.html).

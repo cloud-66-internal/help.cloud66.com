@@ -7,7 +7,7 @@ order: 10
 lead: "Connecting Maestro to a git repository"
 legacy: false
 tags: ["git"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Public repositories

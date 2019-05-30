@@ -7,7 +7,7 @@ order: 6
 lead: "How to set, import and manage environment variables"
 legacy: false
 tags: ["environment,variables"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview 

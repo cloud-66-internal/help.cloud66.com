@@ -7,7 +7,7 @@ order: 30
 lead: "How to deploy an application across multiple servers simultaneously"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 When you deploy in parallel, all the deployment tasks for the servers in your application will run in parallel as opposed to running in serial. In other words, the tasks will run against each server simultaneously instead of running on one server at a time. For large applications, this can have significant time benefits.

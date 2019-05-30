@@ -7,6 +7,6 @@ lead: ""
 legacy: false
 tags: ["debugging","logs"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/deployment/setting-up-custom-livelogs.md %}

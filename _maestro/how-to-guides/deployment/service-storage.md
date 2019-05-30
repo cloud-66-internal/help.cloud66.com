@@ -7,7 +7,7 @@ order: 20
 lead: "How to add persistent storage to your application"
 legacy: false
 tags: ["operations", "storage"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

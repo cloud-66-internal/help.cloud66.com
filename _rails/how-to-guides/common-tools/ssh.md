@@ -6,7 +6,7 @@ categories: how-to-guides/common-tools
 order: 3
 lead: "How to troubleshoot issues with Toolbelt SSH access"
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 tags: ["debugging"]
 ---
 {% include how-to-guides/deployment/ssh.md %}

@@ -7,7 +7,7 @@ lead: "Understand the terminology specific to Skycap"
 order: 2
 legacy: false
 tags: ["the basics","concepts", "terminology","explanation"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

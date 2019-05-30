@@ -8,7 +8,7 @@ lead: "How to move your entire application to a new server or a new data center"
 legacy: false
 tags: ["high-availability"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Migrating between servers

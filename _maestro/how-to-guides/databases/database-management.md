@@ -7,7 +7,7 @@ order: 1
 lead: "Deploying and managing your database with Maestro"
 tags: ['database']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Deploying databases

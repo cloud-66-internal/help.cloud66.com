@@ -7,7 +7,7 @@ categories: the-basics
 lead: "Frequently asked questions"
 legacy: false
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

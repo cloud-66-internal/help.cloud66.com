@@ -7,7 +7,7 @@ categories: references
 order: 2
 lead: Understanding the underlying principles of manifest files
 tags: ['manifest']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include references/manifest-structure.md %}

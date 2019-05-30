@@ -7,7 +7,7 @@ lead: "A powerful command line tool to interact with Cloud 66"
 legacy: true
 order: 3
 tags: ["toolbelt"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

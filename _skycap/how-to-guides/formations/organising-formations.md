@@ -7,7 +7,7 @@ categories: how-to-guides/formations
 lead: "Best practices for naming and organising Stencils and Formations"
 legacy: false
 tags: ["getting-started"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Suggested Organization of Stencils

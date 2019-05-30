@@ -4,13 +4,13 @@
 Redeployment hooks allow you to achieve continuous deployment by deploying your application when you push a change to your Git repository or have a CI push success. Redeployment hooks differ slightly for Rails/Rack and Docker applications see sections below.
 
 
-
 ### Where to find your redeployment hook?
 
 Your redeployment hook URL is automatically generated for each of your applications. You can found your unique redeployment hook URL on your Application Information page (available via the **Settings & Information** link on the main Application Overview's right hand navigation menu)
 
 
 {% if include.product == 'legacy_docker' or include.product == 'maestro' or include.product == 'skycap' %}
+
 ### For Docker applications
 
 Docker applications can have multiple services which can rely on a combination of either Image or Git sources. Furthermore, the Git sources can be the same or different branches, or even completely different repositories. To handle this, we have introduced and addition _services modifier_ that can be appended to the redeployment hook to specify which services to redeploy (the _services modifier_ is a querystring parameter).

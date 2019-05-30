@@ -7,7 +7,7 @@ order: 30
 lead: "How to change the data directory used by PostgreSQL"
 legacy: false
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 We use the default data folder when installing PostgreSQL on your server, which is  `/usr/local/pgsql/data`.

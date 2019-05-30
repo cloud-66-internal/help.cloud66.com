@@ -8,7 +8,7 @@ lead: "Running Rake tasks on your Cloud 66 application"
 legacy: false
 tags: ["debugging"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

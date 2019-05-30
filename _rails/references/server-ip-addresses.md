@@ -7,7 +7,7 @@ order: 2
 lead: "How server IP addresses and hostnames are allocated and managed in Cloud 66 for Rails"
 legacy: false
 tags: ["security"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Cloud 66 Agent

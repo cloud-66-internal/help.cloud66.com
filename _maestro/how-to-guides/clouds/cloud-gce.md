@@ -7,7 +7,7 @@ order: 5
 lead: "Configuring Google Compute Engine for use with Maestro"
 legacy: false
 tags: ["operations"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

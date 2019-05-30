@@ -7,7 +7,7 @@ order: 6
 lead: "How to create, use and edit build profiles"
 legacy: false
 tags: ["build,services"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## What are build profiles?

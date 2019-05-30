@@ -7,7 +7,7 @@ order: 1
 lead: "A guide to scaling your application with Cloud 66"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% assign product = 'rails' %}

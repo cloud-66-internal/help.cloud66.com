@@ -7,7 +7,7 @@ order: 6
 lead: How to used our managed database backup add-in
 tags: ['database']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

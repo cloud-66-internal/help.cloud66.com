@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: Extend the functionality of your stack with add-ins
 tags: ['Add ins']
 legacy: true
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

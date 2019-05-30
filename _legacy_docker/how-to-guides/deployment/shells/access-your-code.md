@@ -8,7 +8,7 @@ tags: ["git"]
 legacy: true
 order: 200
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

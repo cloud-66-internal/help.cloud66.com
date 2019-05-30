@@ -6,7 +6,7 @@ categories: how-to-guides/add-ins
 lead: Adding a load balancer to your application
 tags: ['Add in', 'Scaling']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

@@ -7,7 +7,7 @@ order: 12
 lead: Deleting physical servers from your cloud
 tags: ['server', 'operations']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include how-to-guides/deployment/server-deletion.md %}

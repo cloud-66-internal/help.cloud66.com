@@ -7,7 +7,7 @@ order: 12
 lead: "How to replace a default SQLite server with MySQL or PostgreSQL"
 tags: ["postgresql","sqlite","mysql"]
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

@@ -5,11 +5,8 @@ categories: quickstarts
 order: 3
 legacy: false
 tags: ["getting started", "cluster", "maestro cluster"]
-lead: Create a Maestro cluster for shared server application deployments"
-permalink: /:collection/:path
-search_title: Getting started with Maestro Clusters
-search_description: A step by step tutorial that guides you through deploying a Cluster. Maestro Clusters let you to deploy multiple applications to the same set of servers.
-product: Maestro 
+lead: A step by step tutorial that guides you through deploying a Kubernetes cluster. Maestro Clusters let you to deploy multiple applications to the same set of servers.
+permalink: /:collection/:path:output_ext
 ---
 
 A Maestro Cluster is a "blank" instance of Kubernetes infrastructure - i.e. with no application specific components installed. You can use a Cluster to deploy multiple applications to the same set of servers.

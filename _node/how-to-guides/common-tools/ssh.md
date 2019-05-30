@@ -5,7 +5,7 @@ title: Debugging Toolbelt SSH access
 categories: how-to-guides/common-tools
 lead: "How to troubleshoot issues with Toolbelt SSH access"
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 tags: ["debugging"]
 ---
 {% include how-to-guides/deployment/ssh.md %}

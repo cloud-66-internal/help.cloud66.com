@@ -7,7 +7,7 @@ order: 7
 lead: "Customize your Database Configuration on Cloud 66 Rails"
 legacy: false
 tags: ["PostgreSQL", "MySQL", "Redis", "MongoDB"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% assign dbtype = "postgres" %}

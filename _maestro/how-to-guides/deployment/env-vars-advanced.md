@@ -7,7 +7,7 @@ order: 20
 lead: How to manage environment variables within Maestro
 tags: ['Logs']
 legacy: false
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Overview

@@ -6,7 +6,7 @@ categories: tutorials
 lead: "Configure the service network"
 legacy: true
 tags: ["security", "customization", "service.yml"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Notice

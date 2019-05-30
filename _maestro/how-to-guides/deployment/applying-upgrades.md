@@ -7,7 +7,7 @@ order: 50
 legacy: false
 lead: Applying upgrades and updates to your application components
 tags: ['upgrade', 'update']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Maestro Package Update Policy

@@ -5,11 +5,8 @@ categories: quickstarts
 order: 1
 legacy: false
 tags: ["getting started"]
-lead: How to deploy your application using Maestro
-permalink: /:collection/:path
-search_title: Getting started with Maestro
-search_description: A step by step tutorial that walks you through deploying a demo application with Maestro. The best place to get started!
-product: Maestro  
+lead: A step by step tutorial that walks you through deploying a demo application with Maestro. The best place to get started!
+permalink: /:collection/:path:output_ext
 ---
 
 Maestro is a full container management service. Once your Docker images are ready we'll take care of deploying and managing your containers and infrastructure (servers, load balancers, etc).

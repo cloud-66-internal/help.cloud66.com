@@ -7,7 +7,7 @@ order: 3
 lead: "How to configure multi-certificate SSL for HAProxy in Cloud 66 for Rails"
 legacy: false
 tags: ["ssl","haproxy"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

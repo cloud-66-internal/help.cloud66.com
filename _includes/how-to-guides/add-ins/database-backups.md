@@ -10,7 +10,7 @@ Cloud 66 provides two types of backups: _managed_ and _unmanaged_.
 Having managed backups carries several benefits:
 
 - You can download database backups through the web UI and API
-- {% if page.collection == 'rails' %}[Backup verifiers](/rails/how-to-guides/databases/backup-verifiers.html) ensure that your backups actually contain what you expect{%endif%}
+{% if page.collection == 'rails' %}- [Backup verifiers](/rails/how-to-guides/databases/backup-verifiers.html) ensure that your backups actually contain what you expect{%endif%}
 - Use [database replication](/rails/how-to-guides/databases/database-replication.html) to scale your databases
 - You can easily restore database backups
 - Stored in Cloud 66 storage
@@ -533,28 +533,3 @@ If the step 1 has a result use that as /path/to/database/back unless use /path/t
 <pre class="prettyprint">
 $ mongorestore --drop --db YOUR_DATABASE_NAME  /path/to/database/back 
 </pre>
-
-
-## Pricing
-
-<table class='table table-bordered table-striped table-small'>
-    <thead>
-        <tr>
-            <th align="center"></th>
-            <th align="center">Database/month</th>
-            <th align="center">GB/month</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Managed backup</td>
-            <td>$12</td>
-            <td>$0.12</td>
-        </tr>
-        <tr>
-            <td>Unmanaged backup</td>
-            <td>$5</td>
-            <td>&mdash;</td>
-        </tr>
-    </tbody>
-</table>

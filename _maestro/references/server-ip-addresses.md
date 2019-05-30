@@ -7,7 +7,7 @@ order: 10
 lead: "How server IP addresses and hostnames are allocated and managed in Maestro"
 legacy: false
 tags: ["security"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 ## Cloud 66 Agent

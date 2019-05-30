@@ -6,7 +6,7 @@ categories: how-to-guides/deployment
 lead: "How to use ConfigStore to centralize and manage config values"
 legacy: false
 tags: ["customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% assign product = 'node' %}

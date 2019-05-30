@@ -7,7 +7,7 @@ order: 20
 lead: "How to manage database backups in Maestro"
 legacy: false
 tags: ["backups, databases"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 Maestro gives you tools to [automatically restore your database backups](/maestro/how-to-guides/add-ins/database-backups.html), but you can also manage them yourself. 

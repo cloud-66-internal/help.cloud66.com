@@ -1,9 +1,25 @@
 ## Overview
 
-A manifest file allows you to be more explicit about your application composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that run your application. See [Getting started with manifest files](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) for an introduction.
+A manifest file allows you to be more explicit about your application composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. 
 
-{% if include.product == "rails" %}
+The file describes the setup of the components that run your application. See [Getting started with manifest files](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) for an introduction.
+
+{% if include.product == 'rails' %}
+
 For _Rails/Rack_ applications, place a file called `manifest.yml` in a folder named `.cloud66`, that is in turn located in the root of your source code and checked into your repository.
+
+{% endif %}
+
+{% if include.product == 'maestro' %}
+
+In Maestro there are two opportunities to edit your manifest file:
+
+* After your application code has been analyzed (and before you deploy it) by using the _advanced_ tab. 
+* After your application has been deployed, by clicking on *Configuration Files* and then the *Manifest* tab in the Dashboard
+
+#### Important
+<div class="notice notice-danger"><p>It is vital that you understand the limits and caveats of manifest settings. Please read our <a href="/maestro/references/manifest-structure.html#classes-of-manifest-file-settings">reference guide</a> before you start creating your own manifest files.</p></div>
+
 {% endif %}
 
 Once you're ready, start by going through each section below to build your manifest file.
@@ -24,26 +40,70 @@ You can also use your own custom environment names in your manifest file.
 
 Next, select which component you would like to specify settings for. You can choose from the following:
 
+{% if include.product == "maestro" %}
+*   [Docker](#docker){% endif %}
 *   [ElasticSearch](#elasticsearch)
 *   [Gateway](#gateway)
 *   [GlusterFS](#glusterfs)
 *   [Load balancers](#load-balancers)
 *   [Memcached](#memcached)
 *   [MongoDB](#mongodb)
-*   [MySQL](#mysql)
-*   [Nginx](#nginx)
-*   [Node](#node)
+*   [MySQL](#mysql) 
+*   [Nginx](#nginx) {% if include.product == "rails" %}
+*   [Node version](#node-version) {% endif %}
 *   [PostGIS](#postgis)
 *   [PostgreSQL](#postgresql)
-*   [Redis](#redis)
-{% if include.product == "rails" %}
+*   [Redis](#redis) {% if include.product == "rails" %}
 *   [Sinatra](#sinatra)
-*   [Rails](#rails)
+*   [Rails](#rails) {% endif %}
+
+{% if include.product == 'maestro' %}
+### Docker
+
+- **version**: Specify the version of Docker you want to install.
+- **weave_version** (_Optional_): Specify the version of Weave you want to install.
+- **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers.   
+ <span style="background-color: #FFFF00"> Note that you must provide [**subnet_id**](#servers) for all servers in your application.</span>
+- **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
+- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 20.
+- **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
+- **image_keep_count** (_Optional, defaults to 5_): Set the number of old images to save on your servers (besides the running image).
+- **nameservers** (_Optional, defaults to [ 8.8.8.8, 8.8.4.4 ]_): Set DNS servers for your application.  
+  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
+
+#### Examples
+
+```
+production:
+  docker:
+    configuration:
+      version: 1.7.0
+      weave_version: 1.0.3
+      vpc_id: vpc-64872001
+      root_disk_size: 100
+      root_disk_type: ssd
+      image_keep_count: 5
+      nameservers: ['8.8.8.8', '8.8.4.4']
+```
+
+```
+production:
+  docker:
+    configuration:
+      version: 1.12.0
+      weave_version: 1.0.3
+      vn_name: your_vn_name
+      root_disk_size: 100
+      root_disk_type: ssd
+      image_keep_count: 15
+```
+* * *
 {% endif %}
 
 ### ElasticSearch
 
 - **version**: Specify the version of ElasticSearch you want to install.
+- **operating_system** (_Optional_): `ubuntu1404`, `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 
@@ -81,6 +141,7 @@ production:
 ### GlusterFS
 
 - **version**: Specify the version of GlusterFS you want to install.
+- **operating_system** (_Optional_): `ubuntu1404`, `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is `ssd`.
 - **replica_count** : Number of nodes in _GlusterFS cluster_ which a data will be replicated on it(i.e replica count 2 means your data exist on two nodes). Default value is 1.
@@ -137,6 +198,7 @@ production:
 - **memory**: Specify maximum memory (in MB) that can be used (default value is 64).
 - **port**: Specify connection port (default value is 11211).
 - **listen_ip**: Specify which IP address to listen on (default value is 0.0.0.0).
+- **operating_system** (_Optional_): `ubuntu1404`, `ubuntu1604` or `ubuntu1804`
 
 ```
 production:
@@ -153,6 +215,7 @@ production:
 ### MongoDB
 
 - **version**: Specify the version of MongoDB you want to install (can only be set during application build).
+- **operating_system** (_Optional_): `ubuntu1404`, `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
@@ -172,6 +235,7 @@ production:
 ### MySQL
 
 - **version**: Specify the version of MySQL you want to install. Valid values are 5.5, 5.6 or 5.7 (can only be set during application build).
+- **operating_system** (_Optional_): `ubuntu1404`, `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **engine**: Specify the MySQL engine you want to install. Valid values are 'mysql' and 'percona' (can only be set during application build).
@@ -182,6 +246,7 @@ production:
   mysql:
     configuration:
       version: 5.5
+      operating_system: ubuntu1404
       root_disk_size: 100
       root_disk_type: ssd
       engine: percona
@@ -222,6 +287,8 @@ production:
           credentials: true
 ```
 
+{% if include.product == 'rails' %}
+
 * * *
 
 ### Node version
@@ -239,11 +306,14 @@ rails:
 #### Applying changes
 <div class="notice notice-warning"><p>To apply changes to the Node version you need to update your manifest file, then <a href="/rails/how-to-guides/deployment/applying-upgrades.html#types">deploy-with-options</a> and select the <em>Apply Ruby/Node upgrades</em> option.</p></div>
 
+{% endif %}
+
 * * *
 
 ### PostgreSQL
 
 - **version**: Specify the version of PostgreSQL you want to install (can only be set during application build).
+- **operating_system** (_Optional_): `ubuntu1404`, `ubuntu1604` or `ubuntu1804`
 - **postgis**: Specify whether to include PostGIS (can be added after initial application build).
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
@@ -265,6 +335,7 @@ production:
 ### PostGIS
 
 - **version**: Specify the version of PostGIS you want to install.
+- **operating_system** (_Optional_): `ubuntu1404`, `ubuntu1604` or `ubuntu1804`
 
 ```
 production:
@@ -276,11 +347,14 @@ production:
 
 * * *
 
+{% if include.product == 'rails' %}
+
 ### Rails
 
 A Rails application type in the manifest file gives you fine control over things like the Ruby version or the server the rails application is deployed on.
 
-- **ruby_version**: Specify the version of Ruby to use (overridden if present in Gemfile).
+- **ruby_version**: Specify the version of Ruby to use. Also applies when you want to upgrade your Ruby version. We recommend that you use this and *remove the Ruby version declaration from your Gemfile* to avoid situations where your application will not run on every server during an upgrade.
+- **operating_system** (_Optional_): `ubuntu1404`, `ubuntu1604` or `ubuntu1804`
 - **asset_pipeline_precompile**: Specify whether to use asset pipeline compilation - this will be taken into account during redeployment.
 - **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on a new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
@@ -292,11 +366,12 @@ A Rails application type in the manifest file gives you fine control over things
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application.  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
-- **include_submodules** (Optional, default is true): Set this to false to exclude any Git submodules from being pulled during a build. 
+- **include_submodules** (Optional, default is true): Set this to false to exclude any Git submodules from being pulled during a build.
+- **keep_releases** *(Optional, Defaults to 5)* Specify the number of releases to keep on your server(s).
 
 #### Important
 <div class="notice notice-warning">
-<p>In order to use a <em>vpc_id</em>, you must provide </em> for all servers used by your application.</p>
+<p>In order to use a <em>vpc_id</em>, you must provide <em>subnet_id</em> for all servers used by your application.</p>
 </div>
 
 ```
@@ -323,7 +398,8 @@ production:
 
 The manifest file gives you fine control over things like the Ruby version or which server the application is deployed on.
 
-- **ruby_version**: Specify the version of Ruby to use (overridden if present in Gemfile).
+- **ruby_version**: Specify the version of Ruby to use. Also applies when you want to upgrade your Ruby version. We recommend that you use this and *remove the Ruby version declaration from your Gemfile* to avoid situations where your application will not run on every server during an upgrade.
+- **operating_system** (_Optional_): `ubuntu1404`, `ubuntu1604` or `ubuntu1804`
 - **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
 - **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment.
@@ -334,7 +410,8 @@ The manifest file gives you fine control over things like the Ruby version or wh
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application. <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
-- **include_submodules** (Optional, default is true): Set this to false to exclude any Git  submodules  from being pulled during a build. 
+- **include_submodules** (Optional, default is true): Set this to false to exclude any Git  submodules  from being pulled during a build.
+- **keep_releases** *(Optional, Defaults to 5)* Specify the number of releases to keep on your server(s).
 
 #### Important
 <div class="notice notice-warning">
@@ -358,9 +435,12 @@ production:
       nameservers: ['8.8.8.8', '8.8.4.4']
 ```
 
+{% endif %}
+
 ### Redis
 
 - **version**: Specify the version of Redis you want to install.
+- **operating_system** (_Optional_): `ubuntu1404`, `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 
@@ -373,9 +453,13 @@ production:
       root_disk_type: ssd
 ```
 
+{% if include.product == 'rails' %} 
+
 ### Sinatra
 
 For Sinatra use [Rack](#rack)
+
+{% endif %}
 
 * * *
 
@@ -502,21 +586,6 @@ production:
 * * *
 
 
-### CloudA load balancer
-
-Use a manifest file to customize the CloudA load balancer deployed by Cloud 66. These changes will only apply when you create a new load balancer.
-
-- **balance**: The load balancing strategy. You can use these values : ROUND_ROBIN, SOURCE_IP or LEAST_CONNECTIONS.
-
-```
-production:
-  load_balancer:
-    configuration:
-      balance: ROUND_ROBIN
-```
-* * *
-
-
 ## Which server?
 
 Every component defined in the manifest file must be bound to a server. However, if you'd like configurations to apply to all your servers, you don't need to specify a server type. 
@@ -539,10 +608,10 @@ These are the parameters that the _server_ section can take:
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **subnet_id** (_Optional, AWS EC2 only_): ID of the AWS subnet in which you would like to create your servers.
-- **vendor** (_Optional, BYOC only_): Cloud vendor to fire the server up on. Valid values: aws, azure, digitalocean, googlecloud, linode, rackspace, and clouda
-- **key_name** (_Optional, BYOC only_): Key name of the cloud vendor to fire the server up on. This is used when the account has multiple keys for a given cloud vendor. The default value is `Default` when omitted.
-- **region** (_Optional, BYOC only_): [Data center region](http://developers.cloud66.com/#cloud-vendor-instance-regions) to create the server in.
-- **size** (_Optional, BYOC only_): [Size of the server instance](http://developers.cloud66.com/#cloud-vendor-instance-names) created.
+- **vendor** (_Optional_): Cloud vendor where the server will be built. Valid values: aws, azure (use azure_rm for new Azure accounts), digitalocean, googlecloud, linode, rackspace, and clouda
+- **key_name** (_Optional_): Key name of cloud vendor where the server will be built. This is used when an account has multiple keys for a given cloud vendor. The default value is `Default`.
+- **region** (_Optional_): [Data center region](http://developers.cloud66.com/#cloud-vendor-instance-regions)where the server will be built.
+- **size** (_Optional_): [Size of the server instance](http://developers.cloud66.com/#cloud-vendor-instance-names) created.
 - **availability_zone** (_Optional, AWS EC2 only_): Availability zone of the server instance in AWS EC2 region.
 
 #### Important
@@ -669,11 +738,19 @@ Default values for each process type are:
 
 ## Specify additional LiveLog files
 
-Each component supports the additional partial configuration to add custom live log files for that component:
+Each component supports the additional partial configuration to add custom live log files for that component. For example:
 
 ```
 production:
   rails:
+    configuration:
+      custom_log_files: ["/tmp/mylog/*/*.log"]
+```
+...or
+
+```
+production:
+  docker:
     configuration:
       custom_log_files: ["/tmp/mylog/*/*.log"]
 ```

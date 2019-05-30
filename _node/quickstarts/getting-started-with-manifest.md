@@ -7,7 +7,7 @@ order: 2
 lead: ""
 legacy: false
 tags: ["manifest", "customization"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 

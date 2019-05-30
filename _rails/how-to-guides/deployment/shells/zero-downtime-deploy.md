@@ -8,6 +8,6 @@ lead: "How to minimize downtime during deployments"
 legacy: false
 tags: ["high-availability"]
 
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 {% include how-to-guides/deployment/zero-downtime-deploy.md %}

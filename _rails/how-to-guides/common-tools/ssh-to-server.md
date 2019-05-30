@@ -7,7 +7,7 @@ order: 2
 legacy: false
 lead: Connect directly to your servers via secure shell 
 tags: ['SSH', 'shell']
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 ---
 
 {% include how-to-guides/deployment/ssh-to-server.md %}

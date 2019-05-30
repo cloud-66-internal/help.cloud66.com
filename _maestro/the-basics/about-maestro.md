@@ -7,7 +7,7 @@ order: 1
 lead: "An introduction to the components of Maestro"
 legacy: false
 tags: ["operations", "docker"]
-permalink: /:collection/:path
+permalink: /:collection/:path:output_ext
 search_title: About Maestro
 search_description: Maestro is a Complete Solution using Docker &amp; Kubernetes for Building and Managing Containerized Infrastructure, on any Cloud or your own Servers.
 product: Maestro  
