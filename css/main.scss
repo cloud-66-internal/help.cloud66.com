@@ -1452,7 +1452,7 @@ body.Body--home #search-query-nav {
         margin: 0 !important;
 		padding-bottom: 0 !important;
     }
-	
+
 	.SearchResults-meta {
 		margin-top: -6px;
 		padding-top: 0;
@@ -1475,7 +1475,7 @@ body.Body--home #search-query-nav {
 		padding-top: 0;
         padding-bottom: 1.3em;
 		margin: 0 !important;
-		
+
 		a {
 			padding: 0 !important
 		}
@@ -1510,7 +1510,7 @@ body.Body--home #search-query-nav {
 
     .SearchResults-text {
         margin: 0;
-        padding-bottom: 0.1em;
+        padding-bottom: 6px;
 		padding-right: 38px;
         font-size: 15px;
         font-weight: 400;
@@ -1530,7 +1530,7 @@ body.Body--home #search-query-nav {
     display: inline-block;
     width: 15px;
     height: 15px;
-    margin-right: 10px;
+    margin-right: 4px;
 }
 .SearchResults-ico--rails {
     background:  transparent url('/images/ui/ruby_logo.svg') no-repeat 0 1px;
