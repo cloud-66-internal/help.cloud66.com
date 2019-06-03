@@ -35,45 +35,17 @@ In the event of a security vulnerability on any of the components we deploy on t
 Note that some security packages may require a server restart. We don't automatically restart your server, and it is at your discretion to do so. If the file `/var/run/reboot-required` exists, your server does in fact require a restart. To see which packages contributed to the requirement for a restart, please see `/var/run/reboot-required.pkgs`.
 {% if page.collection == 'rails' %}
 ### Ruby
-There are generally three ways to upgrade Ruby on your application, in decreasing magnitude of risk. Please ensure that the upgrades and patches work with your code before applying them. Upgrade and patch your development and test environments to ensure there are no issues. Backup your environment via your cloud provider where possible.
 
-#### Scaling up
-<p>Arguably the best option to use when upgrading Ruby is to scale up a new server within the same application, and simply drop the old one. You can specify your new Ruby version in a <a href="/rails/how-to-guides/deployment/building-a-manifest-file.html"> manifest file </a>. Once you've pushed this change and deployed, scale up a new web server, which will use this version of Ruby. The previous server would remain on the old version of Ruby.</p>
+There are multiple options and considerations when upgrading your base version of Ruby. Please read our [detailed guide](/rails/how-to-guides/deployment/managing-and-upgrading-ruby-versions.html) on the subject.
 
-<div class="notice notice-danger">
- <p>Make sure you redeploy before you scale up, otherwise the new manifest will not be taken to account.</p>
-</div>
+A quick summary:
 
-There are a couple of small caveats to be aware of though - after you've done this process, you'll have servers in your application on different Ruby versions. If you were to enforce a Ruby version in your Gemfile, this would mean that your application would stop working on either one of the servers (depending on which version you chose in your Gemfile).
-
-You can scale-down your older web server to ensure all your web servers are the correct version, but your back-end servers will still be the older version of Ruby. This may or may-not have any implication, depending on what you're doing with your servers. However, if you were to then run the "Ruby upgrade" job, this would sync all your servers to your new version of Ruby, so your back-end servers would be upgraded at that point too.
-
-Also, if you have background jobs running on your old server, ensure that you gracefully shut these down before switching everything to the new server (to avoid lost jobs).
-
-#### In-place upgrades
-Performing in-place Ruby upgrades on your application carries some risk. Our deployment process always deploys the latest release of Ruby on new servers, so all new stacks and scaled up servers will have the latest version of Ruby installed.
-
-We roll out automatic upgrades in case of security issues, and this will be made clear in your [StackScore](/rails/the-basics/stack-definition.html#what-is-stackscore). You will need to redeploy your application with the _Apply Ruby upgrades_ option from _Deploy with Options_ menu which will apply the security patches and then redeploy your application as usual.
-
-If you have updated your base Ruby version in your Gemfile, we will attempt to upgrade your Ruby version to the latest patch version of your specified base version during the _Apply Upgrades_ step - note that there may be some server downtime during the Ruby base version upgrade operation.
-
-When you _Deploy with options_ and select _Apply Ruby upgrades_, in addition to other upgrades, we will upgrade your installed LibYAML version if we detect your version is not current.
-
-#### Tip / Warning!
-<div class="notice">
-    <p>If you have more than one server serving web, you can tick the <em>Serial Deployment</em> in <em>Deployment Options</em>, and it will deploy without down-time, however, during the deployment some servers will be serving the new code and some the old one.   </p>
-</div>
-
-#### Warning!
-<div class="notice notice-danger">
-    <p>If you are upgrading your Ruby base version then you should put your application in maintenance mode first as Passenger-based stacks (and possibly others) will have some down-time during the upgrade.</p>
-</div>
-
-#### Building a new application
-Although the in-place Ruby base version upgrade path is provided for simplicity and ease, the <i>least risk strategy</i> remains to apply the version changes to a new application in parallel, and switch over when appropriate (as per the immutable infrastructure guidelines).
+* Ruby version should be defined in your `manifest.yml` and *not* in a Gemfile (or `.ruby_version`)
+* A safe way to roll out the upgraded version is to use our "scale up" feature to create a new server that uses the new version of Ruby
 
 ### Rails
-You can bump up the Rails version in your `Gemfile` and redeploy your application. This will upgrade your Rails. Ensure that you upgrade your Ruby and Rails applications with [best practices](http://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html).
+
+Rails should be upgraded in the same way as Ruby. See above for details. 
 
 {% endif %}
 ### Passenger
