@@ -1,7 +1,7 @@
 
 ## Operating system
 
-Your servers are deployed with **Ubuntu 16.04 LTS**.
+Your servers are deployed with **Ubuntu 18.04 LTS**.
 
 ## Supported cloud providers
 
@@ -62,7 +62,7 @@ You are free to specify a version for a number of components in your [manifest f
 <tr><td>PostGIS</td><td>2.5</td></tr>
 <tr><td>PostgreSQL</td><td>11</td></tr>
 <tr><td>Redis</td><td>4.0.12</td></tr>
-<tr><td>Ruby</td><td>2.5.3</td></tr>
+<tr><td>Ruby</td><td>2.6.3</td></tr>
 <tr><td>Scaleio</td><td>2.0.7120</td></tr>
 <tr><td>Stack</td><td>1.4.6</td></tr>
 <tr><td>Telegraf</td><td>0.10.4</td></tr>
