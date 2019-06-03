@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <title>
-        {{ page.title }} | Help | Cloud 66
+        {{ page.title }} | {{ page.collection | capitalize }} | Cloud 66
     </title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- Generic -->
-    <meta name="title" content="{{ page.title }}">
+    <meta name="title" content="{{ page.title }} | {{ page.collection | capitalize }}">
     <meta name="description" content="{{ page.search_description }}">
 
     <!-- Used in to render search results from json -->
-    <meta name="search:title" content="{{ page.title }}">
+    <meta name="search:title" content="{{ page.title }} | {{ page.collection | capitalize }}">
     <meta name="search:description" content="{{ page.search_description }}">
     <meta name="search:product" content="{{ page.collection | capitalize }}">
 
@@ -23,13 +23,13 @@
 
     <!-- Open Graph: Social Media -->
     <meta property="og:type" content="article">
-    <meta property="og:title" content="{{ page.title }} — Cloud 66">
+    <meta property="og:title" content="{{ page.title }} | {{ page.collection | capitalize }} | Cloud 66">
     <meta property="og:description" content="{{ page.lead }}">
     <meta property="og:image" content="/images/ui/logo.svg">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{ page.title }} — Cloud 66">
+    <meta name="twitter:title" content="{{ page.title }} | {{ page.collection | capitalize }} | Cloud 66">
     <meta name="twitter:description" content="{{ page.lead }}">
     <meta name="twitter:image" content="/images/ui/logo.svg">
 
