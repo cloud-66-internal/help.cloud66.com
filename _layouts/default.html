@@ -15,7 +15,7 @@
     <!-- Used in to render search results from json -->
     <meta name="search:title" content="{{ page.title }}">
     <meta name="search:description" content="{{ page.search_description }}">
-    <meta name="search:product" content="{{ page.collection }}">
+    <meta name="search:product" content="{{ page.collection | capitalize }}">
 
     {% if page.noindex %}
     <meta name="robots" content="noindex">

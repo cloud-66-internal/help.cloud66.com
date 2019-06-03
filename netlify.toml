@@ -901,6 +901,18 @@
   to = "/maestro/integrations/integration-with-weave-scope.html"
 
 [[redirects]]
+  from = "/node/how-to-guides/databases/shells/mysql.html"
+  to = "/node/how-to-guides/databases/"
+
+[[redirects]]
+  from = "/rails/how-to-guides/deployment/shells/ssh.html"
+  to = "/rails/how-to-guides/common-tools/ssh.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/nginx-redirect.html"
+  to = "/maestro/how-to-guides/nginx/nginx-redirect.html"
+
+[[redirects]]
   from = "/troubleshoot/lets-encrypt"
   to = "/"
 
