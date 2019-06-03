@@ -16,8 +16,11 @@
             {{/if}}
         </a>
 
-        {{#ifEquals pagemap.metatags.[0].search:product "Maestro"}}
-            <div class="Tag Tag--lrg">Maestro</div>
+        {{#ifEquals displayLink "help.cloud66.com"}}
+            {{#if pagemap.metatags.[0].search:product}}
+                <div class="SearchResults-ico SearchResults-ico--{{pagemap.metatags.[0].search:product}}"></div>
+                <div class="Tag Tag--lrg">{{pagemap.metatags.[0].search:product}}</div>
+            {{/if}}
         {{/ifEquals}}
 
         {{#ifEquals displayLink "community.cloud66.com"}}
