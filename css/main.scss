@@ -1479,6 +1479,10 @@ body.Body--home #search-query-nav {
 		a {
 			padding: 0 !important
 		}
+        a:focus,
+        a:active {
+            outline: none;
+        }
 
         .Tag {
             margin-top: 2px;
@@ -1550,6 +1554,10 @@ body.Body--home #search-query-nav {
 }
 .SearchResults-ico--legacy_docker {
     background:  transparent url('/images/ui/docker_logo.svg') no-repeat 0 2px;
+    background-size: 13px !important;
+}
+.SearchResults-ico--community {
+    background:  transparent url('/images/ui/community.svg') no-repeat 0 2px;
     background-size: 13px !important;
 }
 
