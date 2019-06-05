@@ -5,6 +5,7 @@ title:  "Skycap How-To Guides"
 lead: How to use Cloud 66 Skycap
 legacy: false
 permalink: /:collection/how-to-guides/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -17,7 +18,7 @@ permalink: /:collection/how-to-guides/index.html
 
 {% include list_articles.html section=formations %}
 {% include list_articles.html section=section %}
-    
+
 </ul>
 
 

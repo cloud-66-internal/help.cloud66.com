@@ -5,6 +5,7 @@ title:  "Getting started: Cloud 66 for Rails"
 lead: Getting Started with Cloud 66 for Rails
 legacy: false
 permalink: /:collection/quickstarts/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -12,6 +13,6 @@ permalink: /:collection/quickstarts/index.html
     <ul>
     {% assign section = site.rails | where:"categories","quickstarts" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
+
     </ul>
 </div><!--/.Toc-->

@@ -5,6 +5,7 @@ title:  "Using Databases with Maestro"
 lead: How to configure databases for use with Maestro
 legacy: false
 permalink: /:collection/how-to-guides/databases/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

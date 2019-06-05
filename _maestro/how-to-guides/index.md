@@ -6,6 +6,7 @@ categories: how-to-guides
 lead: How to properly use Cloud 66 Maestro
 legacy: false
 permalink: /:collection/:categories/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -25,7 +26,7 @@ permalink: /:collection/:categories/index.html
     <ul>
     {% assign section = site.maestro | where:"categories","how-to-guides/databases" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
+
     </ul>
 
    <h2>Configuring Nginx</h2>
@@ -38,28 +39,28 @@ permalink: /:collection/:categories/index.html
     <ul>
     {% assign section = site.maestro | where:"categories","how-to-guides/security" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
+
     </ul>
 
    <h2>How to use Maestro with cloud providers</h2>
     <ul>
     {% assign section = site.maestro | where:"categories","how-to-guides/clouds" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
+
     </ul>
 
    <h2>Scaling your application</h2>
     <ul>
     {% assign section = site.maestro | where:"categories","how-to-guides/scaling" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
+
     </ul>
 
     <h2>Add-ins for your applications</h2>
     <ul>
     {% assign section = site.maestro | where:"categories","how-to-guides/add-ins" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
+
     </ul>
-    
+
  </div><!--/.Toc-->

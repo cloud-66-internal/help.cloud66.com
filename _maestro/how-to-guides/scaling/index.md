@@ -5,6 +5,7 @@ title:  "Maestro: Scaling"
 lead: How to scale your application
 legacy: false
 permalink: /:collection/how-to-guides/scaling/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

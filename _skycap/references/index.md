@@ -5,6 +5,7 @@ title:  "Skycap References"
 lead: "In Depth Documentation on Cloud 66 for Skycap"
 legacy: false
 permalink: /:collection/references/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -19,12 +20,10 @@ permalink: /:collection/references/index.html
     </ul>
 
     <!-- common -->
-    
+
     <h2>Account Management</h2>
     <ul>
     {% assign section = site.skycap | where:"categories","references/accounts" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->
-
-

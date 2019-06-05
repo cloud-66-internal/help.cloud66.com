@@ -5,6 +5,7 @@ title:  "Account management"
 lead: "Managing your Cloud 66 for Node account"
 legacy: false
 permalink: /:collection/account/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -14,5 +15,3 @@ permalink: /:collection/account/index.html
     </ul>
 
 </div><!--/.Toc-->
-
-

@@ -5,6 +5,7 @@ title:  "Detailed references for Maestro features"
 lead: "Reference guides for Maestro features"
 legacy: false
 permalink: /:collection/references/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -14,9 +15,7 @@ permalink: /:collection/references/index.html
 
     {% assign section = site.maestro | where:"categories","references" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
+
    </ul>
 
 </div><!--/.Toc-->
-
-

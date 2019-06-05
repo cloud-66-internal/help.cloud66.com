@@ -6,6 +6,7 @@ lead: "A guide to account settings in Cloud 66"
 legacy: false
 permalink: /:collection/account/index.html
 product: Maestro
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

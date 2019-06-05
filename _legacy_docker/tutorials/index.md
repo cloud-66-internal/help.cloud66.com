@@ -5,6 +5,7 @@ title:  "Docker Tutorials"
 lead: "Learn about Cloud 66 by exampls"
 legacy: true
 permalink: /:collection/tutorials/index.html
+noindex: true
 ---
 
 ## Notice
@@ -17,5 +18,3 @@ permalink: /:collection/tutorials/index.html
     {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->
-
-

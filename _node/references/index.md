@@ -5,6 +5,7 @@ title:  "Reference guides"
 lead: "In depth documentation on Cloud 66 for Node"
 legacy: false
 permalink: /:collection/references/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -16,5 +17,3 @@ permalink: /:collection/references/index.html
     {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->
-
-

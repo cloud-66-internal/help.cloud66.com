@@ -5,6 +5,7 @@ title:  "Configuring SSL security within Maestro"
 lead: How to secure your application
 legacy: false
 permalink: /:collection/how-to-guides/security/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

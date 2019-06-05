@@ -6,6 +6,7 @@ categories: how-to-guides
 lead: Extending Rails with Add-ins
 legacy: false
 permalink: /:collection/how-to-guides/add-ins/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -13,8 +14,6 @@ permalink: /:collection/how-to-guides/add-ins/index.html
 
     {% assign section = site.rails | where:"categories","how-to-guides/add-ins" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
+
     </ul>
 </div><!--/.Toc-->
-
-

@@ -5,6 +5,7 @@ title:  "Cloud 66 for Node Quickstarters"
 lead: Getting Started with Cloud 66 for Node
 legacy: false
 permalink: /:collection/quickstarts/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -12,6 +13,6 @@ permalink: /:collection/quickstarts/index.html
     <ul>
     {% assign section = site.node | where:"categories","quickstarts" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
+
     </ul>
 </div><!--/.Toc-->

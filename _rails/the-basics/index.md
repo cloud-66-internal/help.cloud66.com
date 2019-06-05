@@ -5,6 +5,7 @@ title:  "The Basics"
 lead: "In depth understanding of Cloud 66 concepts"
 legacy: false
 permalink: /:collection/the-basics/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -14,5 +15,3 @@ permalink: /:collection/the-basics/index.html
     </ul>
 
 </div><!--/.Toc-->
-
-

@@ -5,6 +5,7 @@ title:  "Cloud 66 for Node Tutorials"
 lead: "Learn about Cloud 66 by exampls"
 legacy: false
 permalink: /:collection/tutorials/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -14,5 +15,3 @@ permalink: /:collection/tutorials/index.html
     {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->
-
-

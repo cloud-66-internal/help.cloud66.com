@@ -5,6 +5,7 @@ title:  "Configuring cloud providers for use with Maestro"
 lead: How to configure cloud providers for use with Maestro
 legacy: false
 permalink: /:collection/how-to-guides/clouds/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
