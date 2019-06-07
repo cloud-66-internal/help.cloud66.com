@@ -1,40 +1,4 @@
 [[redirects]]
-  from = "/node/references/clouds/*"
-  to = "/node/how-to-guides/clouds/:splat"
-
-[[redirects]]
-  from = "/rails/references/clouds/*"
-  to = "/rails/how-to-guides/clouds/:splat"
-
-[[redirects]]
-  from = "/maestro/references/clouds/*"
-  to = "/maestro/how-to-guides/clouds/:splat"
-
-[[redirects]]
-  from = "/maestro/references/clouds/*"
-  to = "/maestro/how-to-guides/clouds/:splat"
-    
-[[redirects]]
-  from = "/maestro/references/integrations/*"
-  to = "/maestro/integrations/:splat"
-
-[[redirects]]
-  from = "/node/references/integrations/*"
-  to = "/node/integrations/:splat"
-
-[[redirects]]
-  from = "/rails/references/integrations/*"
-  to = "/rails/integrations/:splat"
-  
-[[redirects]]
-  from = "/skycap/references/integrations/*"
-  to = "/skycap/integrations/:splat"
-  
-[[redirects]]
-  from = "/legacy_docker/index.html"
-  to = "/maestro/index.html"
-
-[[redirects]]
   from = "/legacy_docker/tutorials/docker-service-configuration.html"
   to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
 
@@ -465,22 +429,6 @@
   to = "/"
 
 [[redirects]]
-  from = "/maestro/references/account/*"
-  to = "/maestro/account/:splat"
-
-[[redirects]]
-  from = "/node/references/account/*"
-  to = "/node/account/:splat"
-
-[[redirects]]
-  from = "/rails/references/account/*"
-  to = "/rails/account/:splat"
-
-[[redirects]]
-  from = "/skycap/references/account/*"
-  to = "/skycap/account/:splat"
-
-[[redirects]]
   from = "/managing-your-stack/*"
   to = "/"
 
@@ -633,14 +581,6 @@
   to = "https://www.cloud66.com/containers/maestro"
 
 [[redirects]]
-  from = "/maestro/maestro/*"
-  to = "/maestro/:splat"
-
-[[redirects]]
-  from = "/skycap/how-to-guides/deployment/shells/*"
-  to = "/skycap/how-to-guides/deployment/:splat"
-
-[[redirects]]
   from = "/maestro/how-to-guides/deploy"
   to = "/maestro/how-to-guides/deployment/"
 
@@ -675,10 +615,6 @@
 [[redirects]]
   from = "/maestro/tutorials/applying-upgrades.html"
   to = "/maestro/how-to-guides/deployment/applying-upgrades.html"
-
-[[redirects]]
-  from = "/skycap/how-to-guides/deployment/shells/migrate-the-stack.html"
-  to = "/skycap/how-to-guides/"
 
 [[redirects]]
   from = "/maestro/how-to-guides/deployment/shells/optimizing-performance.html"
@@ -877,10 +813,6 @@
   to = "/maestro/the-basics/concepts-and-terminology.html#buildgrid-and-build-minutes"
 
 [[redirects]]
-  from = "/skycap/how-to-guides/deployment/shells/migrate-the-stack.html"
-  to = "/maestro/how-to-guides/deployment/migrating-applications.html"
-
-[[redirects]]
   from = "/skycap/how-to-guides/deployment/shells/zero-downtime-deploy.html"
   to = "/rails/how-to-guides/deployment/shells/zero-downtime-deploy.html"
 
@@ -923,3 +855,60 @@
 [[redirects]]
   from = "/article/*"
   to = "/"
+  
+[[redirects]]
+  from = "/node/references/clouds/*"
+  to = "/node/how-to-guides/clouds/:splat"
+
+[[redirects]]
+  from = "/rails/references/clouds/*"
+  to = "/rails/how-to-guides/clouds/:splat"
+
+[[redirects]]
+  from = "/maestro/references/clouds/*"
+  to = "/maestro/how-to-guides/clouds/:splat"
+
+[[redirects]]
+  from = "/maestro/references/clouds/*"
+  to = "/maestro/how-to-guides/clouds/:splat"
+    
+[[redirects]]
+  from = "/maestro/references/integrations/*"
+  to = "/maestro/integrations/:splat"
+
+[[redirects]]
+  from = "/node/references/integrations/*"
+  to = "/node/integrations/:splat"
+
+[[redirects]]
+  from = "/rails/references/integrations/*"
+  to = "/rails/integrations/:splat"
+  
+[[redirects]]
+  from = "/skycap/references/integrations/*"
+  to = "/skycap/integrations/:splat"
+  
+[[redirects]]
+  from = "/legacy_docker/index.html"
+  to = "/maestro/index.html"
+  
+[[redirects]]
+  from = "/maestro/references/account/*"
+  to = "/maestro/account/:splat"
+
+[[redirects]]
+  from = "/node/references/account/*"
+  to = "/node/account/:splat"
+
+[[redirects]]
+  from = "/rails/references/account/*"
+  to = "/rails/account/:splat"
+
+[[redirects]]
+  from = "/skycap/references/account/*"
+  to = "/skycap/account/:splat"
+
+[[redirects]]
+  from = "/maestro/maestro/*"
+  to = "/maestro/:splat"
+  
