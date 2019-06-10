@@ -10,4 +10,6 @@ tags: ['manifest']
 permalink: /:collection/:path:output_ext
 ---
 
-{% include references/manifest-structure.md %}
+{% assign product = 'rails' %}
+
+{% include references/manifest-structure.md product = product %}

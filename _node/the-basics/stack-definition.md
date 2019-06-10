@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Concepts & Terminology
+title: Concepts &amp; Terminology
 categories: the-basics
 lead: ""
 legacy: false

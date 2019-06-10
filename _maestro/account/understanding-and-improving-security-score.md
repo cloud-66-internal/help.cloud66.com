@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Understanding & improving your Security Score
+title: Understanding &amp; improving your Security Score
 categories: account
 lead: ""
 legacy: false

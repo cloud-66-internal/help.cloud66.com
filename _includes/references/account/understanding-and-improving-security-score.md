@@ -24,6 +24,12 @@ Your account's score is based on six (interrelated) factors:
 
 To achieve a perfect Security Score, you would need to ensure all of the factors above follow best practices - i.e. no shared logins, 2FA enforced (and enabled) for all accounts, backup 2FA keys (to allow for lost or stolen devices) and no personal access tokens. 
 
+## What are personal access tokens?
+
+Personal access tokens are the method we use to give external services access to your Cloud 66 account (with your approval, of course!) You can check if you have any tokens on your account via [this link](https://app.cloud66.com/oauth/authorized_applications) or by visiting the **Account Settings** page and clicking on *Authorized Apps* in the **Settings** panel.
+
+Having personal access tokens associated with your account makes it inherently less secure because it gives an external service access to one of your applications. The external service may well be trustworthy, but our system cannot independently verify that trustworthiness and so it will always warn you about these tokens.
+
 ## Why do I need 2FA?
 
 Over the last five years hackers have stolen several billion password and username combinations from a variety of companies and services, including LinkedIn, Yahoo and Dropbox. 

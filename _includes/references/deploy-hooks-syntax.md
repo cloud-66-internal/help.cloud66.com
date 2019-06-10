@@ -1,87 +1,148 @@
 ## What are deploy hooks?
 
-Deploy hooks are scripts that allow you to automate actions at various points during the deployment process for your applications. If you’ve never used hooks before, we have [a tutorial](/rails/tutorials/deploy-hooks.html) that walks you through the basics. You can also use our examples at the bottom of this page.
+Deploy hooks are scripts that allow you to automate actions at various points during the deployment process for your applications. If you’ve never used hooks before, we have [a tutorial](/{{page.collection}}/tutorials/deploy-hooks.html) that walks you through the basics. You can also use our examples at the bottom of this page.
 
 ## Hook points
 
 The deployment process is divided into a number of steps, and hook points allow you to intervene at various points during this process.
 
+The table below is arranged in the order in which each hook point occurs in the deployment process (from earliest to latest):
+
 <table class="table table-bordered table-striped table-small">
    <tbody>
     <tr>
-     <td> <strong>Hook point</strong> </td>
-     <td> <strong>Description</strong> </td>
+     <td width="25%"> <strong>Hook point</strong> </td>
+     <td width="75%"> <strong>Description</strong> </td>
     </tr>
     <tr>
      <td> first_thing </td>
-     <td> The first thing (after after_checkout) that will happen on the server. A common use-case for this hook is to install packages to run your application </td>
-    </tr>
-    <tr>
-     <td> after_checkout </td>
-     <td> When we create your server, your code is pulled directly from Git to it. Use this hook if you want to make a change to your code after it is pulled (but before anything else). Happens during the code deployment of your application </td>
-    </tr>
-    <tr>
-     <td> before_ <em>x</em> </td>
-     <td> This hook will run before a server component is installed on your server. Accepted values for <em>x</em>: <em>redis</em>, <em>mysql</em>, <em>postgresql</em>, <em>mongodb</em> </td>
-    </tr>
-    <tr>
-     <td> after_ <em>x</em> </td>
-     <td> This hook will run after a server component is installed on your server. Accepted values for <em>x</em>: <em>redis</em>, <em>mysql</em>, <em>postgresql</em>, <em>mongodb</em> </td>
-    </tr>
-    <tr>
-     <td> before_rails </td>
-     <td> This hook will run before Rails is installed on your server </td>
-    </tr>
-    <tr>
-     <td> after_bundle </td>
-     <td> This hook will run after bundle but before other rake tasks, such as database migrations. Happens during the code deployment of your application
-      <div class="notice notice-warning">
-       <strong> Note:</strong> Set for this if you need to run deploy hooks that are invoked before the symlink is updated on the release path
-      </div> </td>
-    </tr>
-    <tr>
-     <td> after_symlink </td>
-     <td> Runs after the symbolic link to your current code folder has been created <p> Happens during the code deployment of your application </p> </td>
-    </tr>
-    <tr>
-     <td> custom_server </td>
-     <td> This hook will run on your custom servers </td>
-    </tr>
-    <tr>
-     <td> after_rails </td>
-     <td> This hook will run after Rails (and everything web related) is installed on your server </td>
-    </tr>
-    <tr>
+     <td> The first thing that will happen on the server after the operating system is installed. A common use-case for this hook is to install custom packages that your application relies on. </td>
+    </tr>    
+	<tr>
      <td> before_agent </td>
-     <td> This hook will run before the Cloud 66 agent is installed on your server </td>
+     <td> Runs before the Cloud 66 agent is installed on your server </td>
     </tr>
     <tr>
      <td> after_agent </td>
-     <td> This hook will run after the Cloud 66 agent is installed on your server </td>
+     <td> Runs after the Cloud 66 agent is installed on your server <a name="beforex"></a> </td>
     </tr>
     <tr>
+     <td> before_<kbd>x</kbd> </td>
+     <td> Runs before database and storage engine(s) are installed on your server. Accepted values for <kbd>x</kbd>: <kbd>redis</kbd>, <kbd>mysql</kbd>, <kbd>postgresql</kbd>, <kbd>mongodb</kbd>, <kbd>elasticsearch</kbd>, <kbd>rabbitmq</kbd>, <kbd>glusterfs</kbd>, <kbd>influxdb</kbd> </td>
+    </tr>
+    <tr>
+     <td> after_<kbd>x</kbd> </td>
+     <td> Runs after database and storage engine(s) are installed on your server. If multiple engines are installed it will wait until all of them are completed. Accepted values for <kbd>x</kbd>: <kbd>redis</kbd>, <kbd>mysql</kbd>, <kbd>postgresql</kbd>, <kbd>mongodb</kbd>, <kbd>elasticsearch</kbd>, <kbd>rabbitmq</kbd>, <kbd>glusterfs</kbd>, <kbd>influxdb</kbd> </td> <a name="beforey"></a>
+    </tr>
+    <tr>
+     <td> before_<kbd>y</kbd> </td>
+     <td> Runs before replication is configured for the database server(s). Accepted values for <em>y</em>: <kbd>glusterfs_config</kbd>, <kbd>redis_replication</kbd>, <kbd>mongodb_replication</kbd>, <kbd>mysql_replication</kbd>, <kbd>postgresql_replication</kbd></td>
+    </tr>
+    <tr>
+     <td> after_<kbd>y</kbd> </td>
+     <td> Runs after replication has been configured for the database server(s). Accepted values for <em>y</em>: <kbd>glusterfs_config</kbd>, <kbd>redis_replication</kbd>, <kbd>mongodb_replication</kbd>, <kbd>mysql_replication</kbd>, <kbd>postgresql_replication</kbd></td>
+    </tr>
+
+    <tr>
+     <td> before_data_mount </td>
+     <td> Runs before data is mounted from storage to your database server </td>
+    </tr>
+	<tr>
+     <td> after_data_mount </td>
+     <td> Runs right after data has been mounted to your database </td>
+    </tr>
+   <tr>
+     <td> custom_server </td>
+     <td> Runs only on your custom servers </td>
+    </tr>
+{% if include.product == "rails" %}
+    <tr>
+     <td> before_node </td>
+     <td> Runs before we install Node on your server </td>
+    </tr>
+    <tr>
+     <td> after_node </td>
+     <td> Runs directly after Node has been installed </td>
+    </tr>
+{% endif %}
+    <tr>
+     <td> before_nginx </td>
+     <td> Runs before we install NGINX on your server </td>
+    </tr>
+    <tr>
+     <td> after_nginx </td>
+     <td> Runs directly after we install NGINX on your server <a name="beforez"></a></td>
+    </tr>
+{% if include.product == "maestro" or include.product == "node" %}
+
+    <tr>
+     <td> before_docker </td>
+     <td> Runs before Docker is installed on your server. </td>
+    </tr>    
+	<tr>
+     <td> after_docker </td>
+     <td> Runs directly after Docker is installed on your server. </td>
+    </tr>   
+{% endif %}    
+{% if include.product == 'rails' %}
+    <tr>
+     <td> before_<kbd>z</kbd> </td>
+     <td> Runs before your application framework is installed on your server. Accepted values for <kbd>z</kbd>:  <kbd>rails</kbd>, <kbd>rack</kbd>, <kbd>sinatra</kbd>, <kbd>padrino</kbd> </td>
+    </tr>    
+	<tr>
+     <td> after_checkout </td>
+     <td> When we create your server, your code is pulled directly from Git. Use this hook if you want to make a change to your code after it is pulled. </td>
+    </tr>   
+    <tr>
+     <td> after_bundle </td>
+     <td> Runs after the bundle command(s) but before other rake tasks, such as database migrations. Happens during the code deployment of your application.
+       <strong> Note:</strong> Use this hook if you need to run commands that are invoked before the symlink is updated on the release path.
+	</td>
+    </tr>
+    <tr>
+     <td> after_symlink </td>
+     <td> Runs after the symbolic link to your current code folder has been created. Happens during the code deployment of your application. <a name="afterz"></a></td>
+    </tr>
+    <tr>
+     <td> after_<kbd>z</kbd> </td>
+     <td> Runs after your application framework (and everything web related) is installed on your server. Accepted values for <kbd>z</kbd>: <kbd>rails</kbd>, <kbd>rack</kbd>, <kbd>sinatra</kbd>, <kbd>padrino</kbd> </td>
+    </tr>
+    <tr>
+     <td> before_processes </td>
+     <td> Runs before any custom processes (i.e. Procfile or simmilar) </td>
+    </tr>
+    <tr>
+     <td> after_processes </td>
+     <td> Runs after any custom processes </td>
+    </tr>
+{% endif %}
+
+    <tr>
      <td> last_thing </td>
-     <td> This hook will run as the last thing that happens on your server </td>
+     <td> This hook will run as the last thing that happens on your server. If you have multiple servers, this hook will only trigger when all of them reach this point. </td>
     </tr>
    </tbody>
-</table>
+  </table>
+
 
 * * *
 
 ## Hook fields
 
-There are four types of deploy hooks, and the fields available (and required) vary by type:
+There are different types of deploy hooks, and the fields available (and required) vary by type:
 
-1.  **Snippets:** use pre-existing scripts to install common packages. These snippets are [open source](https://github.com/cloud66/snippets), and are created by Cloud 66 or third parties.
+1.  **Snippets:** use "off the shelf" scripts to install common packages. These snippets are [open source](https://github.com/cloud66/snippets), and are created by Cloud 66 or other third parties.
 2. **Commands:** run your own commands.
-3. **Existing Scripts:** use your own existing scripts for more comprehensive procedures (Rails/Node applications only)
-4. **Inline Scripts:** use your own inline scripts for more comprehensive procedures
+3. **Inline Scripts:** use your own inline scripts for more comprehensive procedures
+{% if include.product == 'rails' or include.product == 'node' %}4. **Existing Scripts:** use your own existing scripts for more comprehensive procedures (Rails/Node applications only){% endif %}
+
+## Hook fields: snippets 
 
  <table class="table table-bordered table-striped table-small">
    <thead valign="top">
     <tr>
-     <th> Field </th>
-     <th> Description </th>
+     <th width="30%"> Field </th>
+     <th width="70%"> Description </th>
     </tr>
    </thead>
    <tbody>
@@ -137,13 +198,13 @@ If the application already contains this env var it will be overridden with the 
    </tbody>
   </table>
 
-
+## Hook fields: commands
 
 <table class="table table-bordered table-striped table-small">
  <thead valign="top">
   <tr>
-   <th> Field </th>
-   <th> Description </th>
+   <th width="30%"> Field </th>
+   <th width="70%"> Description </th>
   </tr>
  </thead>
  <tbody>
@@ -199,12 +260,89 @@ If the application already contains this env var it will be overridden with the 
  </tbody>
 </table>
 
+## Hook fields: inline scripts
 
 <table class="table table-bordered table-striped table-small">
 <thead valign="top">
 <tr>
- <th> Field </th>
- <th> Description </th>
+ <th width="30%"> Field </th>
+ <th width="70%"> Description </th>
+</tr>
+</thead>
+<tbody>
+<tr class="header">
+ <td colspan="2"> <strong>HOOK TYPE: Inline Scripts</strong> </td>
+</tr>
+<tr>
+ <td width="13%"> source <img class="table-img-required" src="/assets/shared/required.gif"> </td>
+ <td> This specifies the source location of your deploy hook file within your repository </td>
+</tr>
+<tr>
+ <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
+ <td> Target server(s), with accepted values <em>any</em>, <em>rails</em>, <em>mysql</em>, <em>postgresql</em>, <em>mongodb</em>, <em>redis</em>, <em>sinatra</em>, <em>padrino</em>, <em>custom</em>
+  <div class="notice notice-warning">
+   <strong> Note:</strong> Please make sure you read the
+   <em>run_on</em> part, if your target is not
+   <em>any</em>
+  </div> </td>
+</tr>
+    <tr>
+     <td> env_vars </td>
+     <td> Hash of values that will be set when running this specific deploy hook. Only applies to deploy hooks that have execute = true
+If the application already contains this env var it will be overridden with the value specified here. </td>
+    </tr>
+<tr>
+ <td> execute <br> (false) </td>
+ <td> Set to true for the code to be executed during deployment </td>
+</tr>
+<tr>
+ <td> executable <br> (false) </td>
+ <td> Set to true for the snippet to be made executable on the target. Defaults to true if <em>execute</em> is true </td>
+</tr>
+<tr>
+ <td> destination </td>
+ <td> The destination path on your target server. You can also specify environment variables in your destination field; <em>&lt;%= ENV['STACK_PATH'] %&gt;</em> for example </td>
+</tr>
+<tr>
+ <td> apply_during <br> (all) </td>
+ <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+</tr>
+<tr>
+ <td> halt_on_error <br> (true) </td>
+ <td> Specify whether the execution should continue or halt in the event of an error </td>
+</tr>
+<tr>
+ <td> run_on <br> (single server) </td>
+ <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
+</tr>
+<tr>
+ <td> run_as <br> (server user) </td>
+ <td> If you execute a file on your target server, specify which user you would like the file to be executed as Note: you can't specify both this and <em>sudo</em> </td>
+</tr>
+<tr>
+ <td> sudo <br> (false) </td>
+ <td> If you are executing the file on your target server, specify whether you want that execution to be sudo-ed? Note: you can't specify both this and <em>run_as</em> </td>
+</tr>
+<tr>
+ <td> parse <br> (true) </td>
+ <td> Specifies whether the file being transferred should be parsed for <a href="/node/tutorials/env-vars.html">environment variables</a>. Using this you can embed <em>&lt;%= ENV['ENV_VAR'] %&gt; </em> for example in your source file, and have it resolved during the deploy hook action </td>
+</tr>
+<tr>
+ <td> owner <br> (your server user) </td>
+ <td> Ownership permissions for the file (and destination folder) on the target server. An example could be <em>user:group</em> </td>
+</tr>
+</tbody>
+</table>
+
+{% if include.product == 'rails' or include.product == 'node' %}
+
+## Hook fields: existing scripts
+
+<table class="table table-bordered table-striped table-small">
+<thead valign="top">
+<tr>
+ <th width="30%"> Field </th>
+ <th width="70%"> Description </th>
 </tr>
 </thead>
 <tbody>
@@ -272,75 +410,4 @@ If the application already contains this env var it will be overridden with the 
 </tbody>
 </table>
 
-
-<table class="table table-bordered table-striped table-small">
-<thead valign="top">
-<tr>
- <th> Field </th>
- <th> Description </th>
-</tr>
-</thead>
-<tbody>
-<tr class="header">
- <td colspan="2"> <strong>HOOK TYPE: Inline Scripts</strong> </td>
-</tr>
-<tr>
- <td width="13%"> source <img class="table-img-required" src="/assets/shared/required.gif"> </td>
- <td> This specifies the source location of your deploy hook file within your repository </td>
-</tr>
-<tr>
- <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
- <td> Target server(s), with accepted values <em>any</em>, <em>rails</em>, <em>mysql</em>, <em>postgresql</em>, <em>mongodb</em>, <em>redis</em>, <em>sinatra</em>, <em>padrino</em>, <em>custom</em>
-  <div class="notice notice-warning">
-   <strong> Note:</strong> Please make sure you read the
-   <em>run_on</em> part, if your target is not
-   <em>any</em>
-  </div> </td>
-</tr>
-    <tr>
-     <td> env_vars </td>
-     <td> Hash of values that will be set when running this specific deploy hook. Only applies to deploy hooks that have execute = true
-If the application already contains this env var it will be overridden with the value specified here. </td>
-    </tr>
-<tr>
- <td> execute <br> (false) </td>
- <td> Set to true for the code to be executed during deployment </td>
-</tr>
-<tr>
- <td> executable <br> (false) </td>
- <td> Set to true for the snippet to be made executable on the target. Defaults to true if <em>execute</em> is true </td>
-</tr>
-<tr>
- <td> destination </td>
- <td> The destination path on your target server. You can also specify environment variables in your destination field; <em>&lt;%= ENV['STACK_PATH'] %&gt;</em> for example </td>
-</tr>
-<tr>
- <td> apply_during <br> (all) </td>
- <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
-</tr>
-<tr>
- <td> halt_on_error <br> (true) </td>
- <td> Specify whether the execution should continue or halt in the event of an error </td>
-</tr>
-<tr>
- <td> run_on <br> (single server) </td>
- <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
-</tr>
-<tr>
- <td> run_as <br> (server user) </td>
- <td> If you execute a file on your target server, specify which user you would like the file to be executed as Note: you can't specify both this and <em>sudo</em> </td>
-</tr>
-<tr>
- <td> sudo <br> (false) </td>
- <td> If you are executing the file on your target server, specify whether you want that execution to be sudo-ed? Note: you can't specify both this and <em>run_as</em> </td>
-</tr>
-<tr>
- <td> parse <br> (true) </td>
- <td> Specifies whether the file being transferred should be parsed for <a href="/node/tutorials/env-vars.html">environment variables</a>. Using this you can embed <em>&lt;%= ENV['ENV_VAR'] %&gt; </em> for example in your source file, and have it resolved during the deploy hook action </td>
-</tr>
-<tr>
- <td> owner <br> (your server user) </td>
- <td> Ownership permissions for the file (and destination folder) on the target server. An example could be <em>user:group</em> </td>
-</tr>
-</tbody>
-</table>
+{% endif %}

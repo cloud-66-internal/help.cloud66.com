@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Network security & redirect settings"
+title:  "Network security &amp; redirect settings"
 legacy: false
 categories: references
 order: 9

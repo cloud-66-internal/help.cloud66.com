@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Editing, cloning & deleting apps
+title: Editing, cloning &amp; deleting apps
 order: 3
 categories: the-basics
 lead: "Adding, updating & deleting apps"
