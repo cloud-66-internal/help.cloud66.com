@@ -35,7 +35,38 @@ To create a deploy hook:
 3.  Choose your deploy hook type - _snippet_, _command_ or _script_.
 4.  Select any additional hook fields you require
 
+## Understanding hook points and ordering
 
+Hook points are used to define the point in your deployment process at which a hook should be invoked. This is obviously critical when there are tight dependencies between the components of your application (i.e. one component relies on another component being installed first), but it is also important in terms of what actions and commands are possible. For example, running tasks against a database before the database server is installed will not work!
+
+It's important to understand the order in which hook points will occur in the flow of deployment. The simplified deployment process below shows where each deploy hook is triggered. Hooks are marked in ***bold italic***. Some hooks have several possible values (`x`, `y`, `z`). Click on the hook name to see a list of available options:
+
+### Deployment process (simplified)
+
+1. Server is fired up
+2. Operating system and standard system components installed → ***first_thing***
+3. ***before_agent*** → Cloud 66 Agent is installed → ***after_agent***
+4. [***before_x***](/rails/references/deploy-hooks-syntax.html#beforex) → Database is installed → [***after_x***](/rails/references/deploy-hooks-syntax.html#beforex)
+5. [***before_y***](/rails/references/deploy-hooks-syntax.html#beforey) → Database replication is configured → [***after_y***](/rails/references/deploy-hooks-syntax.html#beforey)
+6. ***before_data_mount*** → Data is mounted → ***after_data_mount (GlusterFS specific)***
+7. ***custom_server*** (runs on custom servers only)
+8. ***before_node* →** Node is installed → ***after_node***
+9. ***before_nginx* →** NGINX is installed → ***after_nginx***
+10. [***before_z***](/rails/references/deploy-hooks-syntax.html#beforez)
+11. Application framework is installed 
+12. ***after_checkout*** 
+13. ***after_bundle*** 
+14. ***after_symlink*** 
+15. [***after_z***](/rails/references/deploy-hooks-syntax.html#afterz)
+16. ***before_processes* →** processes are handled → **after_processes**
+17. **last_thing**
+
+### Notes
+
+- `x`, `y` and `z` represent `database & storage engine installation` , `replication configuration` and `application framework installation` respectively.
+- For the ***after_checkout*** and ***after_bundle*** hook points, the `$STACK_PATH` points to the latest code, even though **after_symlink** has not run yet.
+- The source of the checkout hooks is the version of the code being deployed **at all times**
+- The **last_thing** hook runs only when ALL servers reach that point
 
 ## Debugging deploy hooks
 

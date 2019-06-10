@@ -10,4 +10,6 @@ legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-{% include references/deploy-hooks-syntax.md %}
+{% assign product = 'node' %}
+
+{% include references/deploy-hooks-syntax.md product = product %}
