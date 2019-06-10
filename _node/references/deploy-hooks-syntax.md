@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Deploy hooks - syntax & commands"
+title:  "Deploy hooks - syntax &amp; commands"
 categories: references
 order: 10
 lead: Syntax for using deploy hooks in Cloud 66 for Node 
@@ -10,4 +10,6 @@ legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-{% include references/deploy-hooks-syntax.md %}
+{% assign product = 'node' %}
+
+{% include references/deploy-hooks-syntax.md product = product %}

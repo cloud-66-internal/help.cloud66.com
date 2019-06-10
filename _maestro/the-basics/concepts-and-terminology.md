@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Concepts & terminology
+title: Concepts &amp; terminology
 order: 2
 categories: the-basics
 lead: "Defining the concepts and terms used in this documentation"
