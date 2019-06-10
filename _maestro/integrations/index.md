@@ -5,6 +5,7 @@ title:  "Integration guides"
 lead: "How to integrate Maestro with popular automation services"
 legacy: false
 permalink: /:collection/integrations/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -14,5 +15,3 @@ permalink: /:collection/integrations/index.html
     {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->
-
-

@@ -5,6 +5,7 @@ title:  "How-to Guides: Common tools"
 lead: How to use common tools with Cloud 66 for Rails
 legacy: false
 permalink: /:collection/how-to-guides/common-tools/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -12,9 +13,7 @@ permalink: /:collection/how-to-guides/common-tools/index.html
     <ul>
     {% assign section = site.rails | where:"categories","how-to-guides/common-tools" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
+
     </ul>
 
   </div><!--/.Toc-->
-
-

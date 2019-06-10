@@ -5,6 +5,7 @@ title:  "Integration Guides"
 lead: "How to integrate other services with Cloud 66"
 legacy: false
 permalink: /:collection/integrations/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -13,5 +14,3 @@ permalink: /:collection/integrations/index.html
     {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->
-
-

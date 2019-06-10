@@ -5,6 +5,7 @@ title:  "How-to Guides: Add-ins"
 lead: How to properly use Cloud 66 for Node
 legacy: false
 permalink: /:collection/how-to-guides/add-ins/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

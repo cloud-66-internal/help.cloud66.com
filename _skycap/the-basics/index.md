@@ -5,6 +5,7 @@ title:  "The Basics"
 lead: Basic concepts, terminology and frequently asked questions (FAQs)
 legacy: false
 permalink: /:collection/the-basics/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

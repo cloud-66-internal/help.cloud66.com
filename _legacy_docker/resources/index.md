@@ -5,6 +5,7 @@ title:  "Docker Resources"
 lead: "Useful Resources About Cloud 66"
 legacy: true
 permalink: /:collection/resources/index.html
+noindex: true
 ---
 
 ## Notice
@@ -22,5 +23,3 @@ permalink: /:collection/resources/index.html
     {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->
-
-

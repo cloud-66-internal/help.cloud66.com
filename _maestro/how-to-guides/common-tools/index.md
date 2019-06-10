@@ -5,6 +5,7 @@ title:  "Common tools used in Maestro"
 lead: How to properly use Cloud 66 Maestro
 legacy: false
 permalink: /:collection/how-to-guides/common-tools/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

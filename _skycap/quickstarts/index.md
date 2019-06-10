@@ -5,6 +5,7 @@ title:  "Getting started with Skycap"
 lead: Getting Started with Skycap
 legacy: false
 permalink: /:collection/quickstarts/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

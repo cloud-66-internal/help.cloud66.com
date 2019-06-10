@@ -5,6 +5,7 @@ title:  "How to configure & deploy an application in Maestro"
 lead: How to configure and deploy applications using Maestro
 legacy: false
 permalink: /:collection/how-to-guides/deployment/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

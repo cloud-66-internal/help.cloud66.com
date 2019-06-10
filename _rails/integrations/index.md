@@ -5,6 +5,7 @@ title:  "Integration guides"
 lead: "Integrating Cloud 66 for Rails with popular CI/CD services"
 legacy: false
 permalink: /:collection/integrations/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -14,5 +15,3 @@ permalink: /:collection/integrations/index.html
     </ul>
 
 </div><!--/.Toc-->
-
-

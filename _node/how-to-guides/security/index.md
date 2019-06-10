@@ -5,6 +5,7 @@ title:  "How-to Guides: Security"
 lead: How to properly use Cloud 66 for Node
 legacy: false
 permalink: /:collection/how-to-guides/security/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

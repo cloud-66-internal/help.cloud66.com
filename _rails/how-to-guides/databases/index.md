@@ -5,6 +5,7 @@ title:  "How-to Guides: Databases"
 lead: How to configure and manage databases with Cloud 66 for Rails
 legacy: false
 permalink: /:collection/how-to-guides/databases/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -12,9 +13,7 @@ permalink: /:collection/how-to-guides/databases/index.html
     <ul>
     {% assign section = site.rails | where:"categories","how-to-guides/databases" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
+
     </ul>
 
   </div><!--/.Toc-->
-
-

@@ -2,7 +2,7 @@
 <ul class="SearchResults">
 {{#each items}}
     <li class="SearchResults-item">
-        <a href="{{link}}">
+        <a class="SearchResults-link" href="{{link}}">
             {{#if pagemap.metatags.[0].search:title}}
                 <h3 class="SearchResults-subTitle">{{pagemap.metatags.[0].search:title}}</h3>
             {{else}}
@@ -18,12 +18,13 @@
 
         {{#ifEquals displayLink "help.cloud66.com"}}
             {{#if pagemap.metatags.[0].search:product}}
-                <div class="SearchResults-ico SearchResults-ico--{{pagemap.metatags.[0].search:product}}"></div>
+                <div class="SearchResults-ico SearchResults-ico--{{toLowerCase pagemap.metatags.[0].search:product}}"></div>
                 <div class="Tag Tag--lrg">{{pagemap.metatags.[0].search:product}}</div>
             {{/if}}
         {{/ifEquals}}
 
         {{#ifEquals displayLink "community.cloud66.com"}}
+            <div class="SearchResults-ico SearchResults-ico--community"></div>
         	<div class="Tag Tag--lrg">Community</div>
         {{/ifEquals}}
     </li>

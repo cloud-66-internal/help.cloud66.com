@@ -36,6 +36,10 @@ Handlebars.registerHelper('ifEquals', function (arg1, arg2, options) {
     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 });
 
+Handlebars.registerHelper('toLowerCase', function(str) {
+  return str.toLowerCase();
+});
+
 Handlebars.registerHelper('global', window);
 
 C66.HelpPager = {
@@ -52,7 +56,7 @@ C66.HelpPager = {
 	            console.error( 'Problem with paging' );
 				console.log("error " + textStatus);
 	        });
-		});  
+		});
 	}
 }
 
@@ -60,15 +64,15 @@ C66.HelpPager.bindEvents();
 
 C66.HelpSearch = {
   init: function(json) {
-	var self = this;	  
+	var self = this;
     console.log('HelpSearch: Render the Search results handlebars templates');
     console.log(json);
     var url_string = window.location.href;
     var url = new URL(url_string);
     var q = url.searchParams.get("q");
-    
+
     $('.SearchResults-title').text(q);
-	
+
 	if (json.error) {
 		var error = json.error.errors[0].message;
 		console.log('There was an issue with the search results.')
@@ -84,12 +88,12 @@ C66.HelpSearch = {
         this.renderSearchResultsTemplate(json, q);
         // this.renderSummaryTemplate(json);
     }
-	
+
   },
 
   renderNoResultsTemplate() {
       var message = "<p style='padding-top: 3em;font-size: 24px'>Sorry, we couldn't find any search results for <strong>" + q + "</strong></p>" + "<p style='padding-bottom: 6em'>Try another search term or browse through the documentation. If you still can't find what you need. <a href='http://app.cloud66.com/support_tickets/new'>Please get in touch</a></p>";
-      
+
       $("#js_search_results_container").html(message);
   },
 
@@ -106,9 +110,9 @@ C66.HelpSearch = {
     var searchResultsHtml = compiledTemplate(json);
     $("#js_search_results_list").html(searchResultsHtml);
 	$('#search-query-home').val(q);
-	
+
 	$('#js_search_results_paging').html('');
-	
+
 	console.log('render next page link')
 	if ( json.queries.nextPage ) {
 		if ( json.queries.nextPage[0].startIndex ) {
@@ -124,7 +128,7 @@ C66.HelpSearch = {
 		var nextLink = '<div class="Paging Paging--prev"><a class="js_next_link" href="https://www.googleapis.com/customsearch/v1/siterestrict?key=AIzaSyBKWduLZEHa_qmlnVlpd2JzSdLDDoY5uD4&cx=005542367771770094844:wfitaj44ofm&q='+q+'&start='+prev+'">Previous</a><span style="margin:0 10px">•</span> </div>';
 		$('#js_search_results_paging').prepend(nextLink);
 	}
-	
+
 	if ( json.queries.request ) {
 		var count = json.queries.request[0].count;
 		var pageStart = json.queries.request[0].startIndex;
@@ -135,4 +139,3 @@ C66.HelpSearch = {
 	}
   }
 };
-

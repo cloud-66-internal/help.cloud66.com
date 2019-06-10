@@ -5,6 +5,7 @@ title:  "How-to: Cloud providers"
 lead: Configuring cloud providers for use with Cloud 66 for Node
 legacy: false
 permalink: /:collection/how-to-guides/clouds/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -12,9 +13,7 @@ permalink: /:collection/how-to-guides/clouds/index.html
     <ul>
     {% assign section = site.node | where:"categories","how-to-guides/clouds" | sort: "order" %}
     {% include list_articles.html section=section %}
-    
+
     </ul>
 
   </div><!--/.Toc-->
-
-

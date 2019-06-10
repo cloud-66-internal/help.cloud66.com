@@ -5,6 +5,7 @@ title:  "How-to Guides: Deployment"
 lead: How to properly use Cloud 66 for Node
 legacy: false
 permalink: /:collection/how-to-guides/deployment/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

@@ -5,6 +5,8 @@ title:  "Cloud 66 Concepts"
 lead: "In depth understanding of Cloud 66 concepts"
 legacy: true
 permalink: /:collection/concepts/index.html
+noindex: true
+
 ---
 
 ## Notice
@@ -16,5 +18,3 @@ permalink: /:collection/concepts/index.html
     {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->
-
-

@@ -5,6 +5,7 @@ title:  "How to configure Nginx within Maestro"
 lead: How to configure Nginx
 legacy: false
 permalink: /:collection/how-to-guides/nginx/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

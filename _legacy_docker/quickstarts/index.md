@@ -5,6 +5,7 @@ title:  "Docker Quickstarters"
 lead: Getting Started with Docker
 legacy: true
 permalink: /:collection/quickstarts/index.html
+noindex: true
 ---
 
 ## Notice

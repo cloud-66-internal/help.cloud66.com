@@ -5,6 +5,7 @@ title:  "Cloud 66 for Rails Resources"
 lead: "Useful Resources About Cloud 66"
 legacy: false
 permalink: /:collection/resources/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
@@ -20,5 +21,3 @@ permalink: /:collection/resources/index.html
     </ul>
 
 </div><!--/.Toc-->
-
-

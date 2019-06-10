@@ -5,6 +5,7 @@ title:  "Account management"
 lead: Managing your Cloud 66 account
 legacy: false
 permalink: /:collection/account/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">

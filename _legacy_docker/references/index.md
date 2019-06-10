@@ -5,6 +5,7 @@ title:  "Docker References"
 lead: "In Depth Documentation on Cloud 66 Docker"
 legacy: true
 permalink: /:collection/references/index.html
+noindex: true
 ---
 
 ## Notice
@@ -23,7 +24,7 @@ permalink: /:collection/references/index.html
     {% assign section = site.legacy_docker | where:"categories","references/toolbelt" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
-    
+
     <h2>Account Management</h2>
     <ul>
     {% assign section = site.legacy_docker | where:"categories","references/accounts" | sort: "order" %}
@@ -42,5 +43,3 @@ permalink: /:collection/references/index.html
     {% include list_articles.html section=section %}
     </ul>
 </div><!--/.Toc-->
-
-

@@ -5,6 +5,7 @@ title:  "Extending Maestro with Add-ins"
 lead: How to use Add-ins for Maestro
 legacy: false
 permalink: /:collection/how-to-guides/add-ins/index.html
+noindex: true
 ---
 
 <div class="Toc Toc--howto">
