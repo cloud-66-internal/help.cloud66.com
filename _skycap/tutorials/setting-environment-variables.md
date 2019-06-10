@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Setting & managing environment variables
+title: Setting &amp; managing environment variables
 categories: tutorials
 order: 6
 lead: "How to set, import and manage environment variables"
