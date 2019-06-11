@@ -45,11 +45,11 @@ The table below is arranged in the order in which each hook point occurs in the 
 
     <tr>
      <td> before_data_mount </td>
-     <td> Runs before data is mounted from storage to your database server </td>
+     <td> Runs before data is mounted (GlusterFS only) </td>
     </tr>
 	<tr>
      <td> after_data_mount </td>
-     <td> Runs right after data has been mounted to your database </td>
+     <td> Runs right after data has been mounted in GlusterFS</td>
     </tr>
    <tr>
      <td> custom_server </td>
