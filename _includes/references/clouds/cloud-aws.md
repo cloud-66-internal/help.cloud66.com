@@ -32,7 +32,7 @@ You can also set more fine-grained permissions with the following JSON template 
 
 ```
 {
-    "Version": "2012-10-17",
+    "Version": "2019-05-09",
     "Statement": [
         {
             "Sid": "ResourceLevelActions",
@@ -55,10 +55,12 @@ You can also set more fine-grained permissions with the following JSON template 
         {
             "Sid": "NonResourceLevelActions",
             "Action": [
+                "ec2:DescribeAccountAttributes",
                 "ec2:DescribeAvailabilityZones",
                 "ec2:DescribeInstanceAttribute",
                 "ec2:DescribeInstanceStatus",
                 "ec2:DescribeInstances",
+                "ec2:DescribeInternetGateways",
                 "ec2:DescribeKeyPairs",
                 "ec2:DescribeNetworkInterfaces",
                 "ec2:DescribeRegions",
@@ -80,30 +82,38 @@ You can also set more fine-grained permissions with the following JSON template 
                 "elasticloadbalancing:ApplySecurityGroupsToLoadBalancer",
                 "elasticloadbalancing:ConfigureHealthCheck",
                 "elasticloadbalancing:CreateLBCookieStickinessPolicy",
+                "elasticloadbalancing:CreateListener",
                 "elasticloadbalancing:CreateLoadBalancer",
                 "elasticloadbalancing:CreateLoadBalancerListeners",
                 "elasticloadbalancing:CreateLoadBalancerPolicy",
+                "elasticloadbalancing:CreateTargetGroup",
                 "elasticloadbalancing:DeleteLoadBalancer",
                 "elasticloadbalancing:DeleteLoadBalancerListeners",
                 "elasticloadbalancing:DeleteLoadBalancerPolicy",
                 "elasticloadbalancing:DeregisterInstancesFromLoadBalancer",
                 "elasticloadbalancing:DescribeLoadBalancers",
+                "elasticloadbalancing:DescribeListeners",
                 "elasticloadbalancing:DescribeTags",
+                "elasticloadbalancing:DescribeTargetHealth",
                 "elasticloadbalancing:EnableAvailabilityZonesForLoadBalancer",
                 "elasticloadbalancing:ModifyLoadBalancerAttributes",
+                "elasticloadbalancing:ModifyTargetGroupAttributes",
                 "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
-		"elasticloadbalancing:SetLoadBalancerListenerSSLCertificate",
+                "elasticloadbalancing:RegisterTargets",
+                "elasticloadbalancing:SetLoadBalancerListenerSSLCertificate",
                 "iam:ListServerCertificates",
                 "iam:GetServerCertificate",
                 "iam:UpdateServerCertificate",
                 "iam:UploadServerCertificate",
-                "iam:DeleteServerCertificate"
-           ],
+                "iam:DeleteServerCertificate",
+                "iam:CreateServiceLinkedRole"
+            ],
             "Resource": "*",
             "Effect": "Allow"
         }
     ]
 }
+
 ```
 
 ### Add AWS keys to an application

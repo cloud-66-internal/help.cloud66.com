@@ -29,7 +29,7 @@ permalink: /:collection/:path:output_ext
 
 ## Choosing application type
 
-New users will be show the product selection wizard. For Skycap, choose "I have a native Ruby or Node app" and then "Deploy Rails & Rack Frameworks" (*Deploy a Ruby App*). 
+New users will be shown the product selection wizard. For Skycap, choose "I have a native Ruby or Node app" and then "Deploy Rails & Rack Frameworks" (*Deploy a Ruby App*). 
 
 <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
     <div class="Grid-cell">

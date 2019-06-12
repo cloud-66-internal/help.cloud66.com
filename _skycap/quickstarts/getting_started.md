@@ -34,7 +34,7 @@ Build pipelines are composed of all the individual ([containerized](/skycap/the-
 
 ## Choosing application type
 
-New users will be show the product selection wizard. For Skycap, choose "I have a containerized application" and then "I already have a Kubernetes cluster" (*Try Skycap*). 
+New users will be shown the product selection wizard. For Skycap, choose "I have a containerized application" and then "I already have a Kubernetes cluster" (*Try Skycap*). 
 
 <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
     <div class="Grid-cell">
