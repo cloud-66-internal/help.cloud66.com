@@ -5,6 +5,7 @@ title: Getting started with manifest files
 categories: tutorials
 lead: ""
 legacy: true
+sitemap: false
 tags: ["manifest", "customization"]
 permalink: /:collection/:path:output_ext
 ---

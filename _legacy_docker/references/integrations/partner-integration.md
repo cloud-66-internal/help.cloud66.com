@@ -5,6 +5,7 @@ title: Partner Integration
 categories: references/integrations
 lead: ""
 legacy: true
+sitemap: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext
 ---

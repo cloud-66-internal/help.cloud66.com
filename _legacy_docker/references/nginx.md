@@ -5,6 +5,7 @@ title: How to configure Nginx
 categories: references
 lead: "Nginx within the stack"
 legacy: true
+sitemap: false
 tags: ["customization", "nginx"]
 order: 90
 permalink: /:collection/:path:output_ext

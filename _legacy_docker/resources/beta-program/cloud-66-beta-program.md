@@ -5,6 +5,7 @@ title: Cloud 66 Beta program
 categories: resources/beta-program
 lead: ""
 legacy: true
+sitemap: false
 
 permalink: /:collection/:path:output_ext
 ---

@@ -5,6 +5,7 @@ title: Scaling your GlusterFS cluster
 categories: how-to-guides/databases
 lead: ""
 legacy: true
+sitemap: false
 tags: ["GlusterFS"]
 permalink: /:collection/:path:output_ext
 ---

@@ -5,6 +5,7 @@ title: Non-recommended server sizes
 categories: references
 lead: "Choosing the right server size"
 legacy: true
+sitemap: false
 tags: ["performance"]
 permalink: /:collection/:path:output_ext
 ---

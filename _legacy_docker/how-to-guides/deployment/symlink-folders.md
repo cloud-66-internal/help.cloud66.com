@@ -5,6 +5,7 @@ title: Create symbolic links in Ubuntu
 categories: how-to-guides/deployment
 lead: ""
 legacy: true
+sitemap: false
 tags: ["customization"]
 
 permalink: /:collection/:path:output_ext

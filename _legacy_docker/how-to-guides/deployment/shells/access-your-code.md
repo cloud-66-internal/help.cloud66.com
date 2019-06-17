@@ -6,6 +6,7 @@ categories: how-to-guides/deployment
 lead: "Connecting your git repository to Cloud 66"
 tags: ["git"]
 legacy: true
+sitemap: false
 order: 200
 
 permalink: /:collection/:path:output_ext

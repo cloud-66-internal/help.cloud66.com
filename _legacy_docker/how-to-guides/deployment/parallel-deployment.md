@@ -5,6 +5,7 @@ title: What are Parallel deployments?
 categories: how-to-guides/deployment
 lead: ""
 legacy: true
+sitemap: false
 tags: ["customization"]
 permalink: /:collection/:path:output_ext
 ---

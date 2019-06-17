@@ -5,6 +5,7 @@ title: Docker Getting Started (Deployment)
 categories: quickstarts
 lead: ""
 legacy: true
+sitemap: false
 order: 2
 tags: ["getting-started"]
 permalink: /:collection/:path:output_ext

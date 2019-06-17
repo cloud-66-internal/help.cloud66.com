@@ -5,6 +5,7 @@ title: Customize your Database Configuration with Docker
 categories: how-to-guides/databases
 lead: "Customize your Database Configuration on Cloud 66 Docker stacks"
 legacy: true
+sitemap: false
 tags: ["PostgreSQL", "MySQL", "Redis", "MongoDB"]
 permalink: /:collection/:path:output_ext
 ---

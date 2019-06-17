@@ -4,6 +4,7 @@ template: one-col
 title: Docker
 lead: Cloud 66 for Docker Stacks
 legacy: true
+sitemap: false
 permalink: /:collection/:categories/index.html
 ---
 

@@ -5,6 +5,7 @@ title: Server IP addresses and hostnames
 categories: references
 lead: ""
 legacy: true
+sitemap: false
 tags: ["security"]
 permalink: /:collection/:path:output_ext
 ---

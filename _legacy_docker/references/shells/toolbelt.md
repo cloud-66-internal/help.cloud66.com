@@ -5,6 +5,7 @@ title: Cloud 66 Toolbelt
 categories: references/toolbelt
 lead: ""
 legacy: true
+sitemap: false
 order: 100
 tags: ["shell"]
 permalink: /:collection/:path:output_ext

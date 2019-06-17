@@ -5,6 +5,7 @@ title: Everything about Scaling
 categories: tutorials
 lead: ""
 legacy: true
+sitemap: false
 tags: ["customization"]
 permalink: /:collection/:path:output_ext
 ---

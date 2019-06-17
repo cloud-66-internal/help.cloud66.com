@@ -5,6 +5,7 @@ title: Integration With Travis CI
 categories: references/integrations
 lead: ""
 legacy: true
+sitemap: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext
 ---

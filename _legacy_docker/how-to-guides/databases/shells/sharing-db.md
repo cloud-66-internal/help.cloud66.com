@@ -5,6 +5,7 @@ title: Sharing a database between stacks
 categories: how-to-guides/databases
 lead: ""
 legacy: true
+sitemap: false
 tags: ["customization"]
 permalink: /:collection/:path:output_ext
 ---

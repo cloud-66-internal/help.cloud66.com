@@ -5,6 +5,7 @@ title: Connecting your Git repository
 categories: references
 lead: "Connecting Cloud 66 to a git repository"
 legacy: true
+sitemap: false
 tags: ["git"]
 permalink: /:collection/:path:output_ext
 ---

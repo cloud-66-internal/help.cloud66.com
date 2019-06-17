@@ -5,6 +5,7 @@ title: How to manage your Cloud 66 backups
 categories: how-to-guides/databases
 lead: ""
 legacy: true
+sitemap: false
 tags: ["backups"]
 permalink: /:collection/:path:output_ext
 ---

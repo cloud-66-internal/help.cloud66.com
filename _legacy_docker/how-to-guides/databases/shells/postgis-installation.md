@@ -5,6 +5,7 @@ title: How to install PostGIS
 categories: how-to-guides/databases
 lead: ""
 legacy: true
+sitemap: false
 tags: ["postgresql","customization"]
 
 permalink: /:collection/:path:output_ext

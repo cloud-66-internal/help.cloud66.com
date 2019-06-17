@@ -5,6 +5,7 @@ title: Uninstalling MySQL
 categories: how-to-guides/databases
 lead: ""
 legacy: true
+sitemap: false
 tags: ["mysql"]
 permalink: /:collection/:path:output_ext
 ---

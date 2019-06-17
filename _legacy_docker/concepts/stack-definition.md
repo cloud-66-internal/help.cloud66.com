@@ -5,6 +5,7 @@ title: What is a stack?
 categories: concepts
 lead: ""
 legacy: true
+sitemap: false
 tags: ["getting-started"]
 permalink: /:collection/:path:output_ext
 ---

@@ -5,6 +5,7 @@ title: What are the Stack Environments?
 categories: references
 lead: ""
 legacy: true
+sitemap: false
 tags: ["Environments"]
 permalink: /:collection/:path:output_ext
 ---
