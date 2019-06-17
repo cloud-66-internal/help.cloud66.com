@@ -5,6 +5,7 @@ title: Manage your account
 categories: references/accounts
 lead: ""
 legacy: true
+sitemap: false
 tags: ["account"]
 permalink: /:collection/:path:output_ext
 ---

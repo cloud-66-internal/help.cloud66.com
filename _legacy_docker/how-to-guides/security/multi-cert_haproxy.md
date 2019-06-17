@@ -5,6 +5,7 @@ title: Configuring Multi Certificate for HAProxy
 categories: how-to-guides/security
 lead: ""
 legacy: true
+sitemap: false
 tags: ["ssl","haproxy"]
 permalink: /:collection/:path:output_ext
 ---

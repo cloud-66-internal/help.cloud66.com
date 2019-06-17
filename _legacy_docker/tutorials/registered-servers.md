@@ -5,6 +5,7 @@ title: Cloud 66 support for registered servers
 categories: tutorials
 lead: ""
 legacy: true
+sitemap: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext
 ---

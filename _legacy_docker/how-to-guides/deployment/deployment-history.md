@@ -5,6 +5,7 @@ title: What is Deployment History
 categories: how-to-guides/deployment
 lead: ""
 legacy: true
+sitemap: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext
 ---

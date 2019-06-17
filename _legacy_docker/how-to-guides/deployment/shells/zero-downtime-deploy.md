@@ -5,6 +5,7 @@ title: How to achieve zero-downtime deployments
 categories: how-to-guides/deployment
 lead: ""
 legacy: true
+sitemap: false
 tags: ["high-availability"]
 
 permalink: /:collection/:path:output_ext

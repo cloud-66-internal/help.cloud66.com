@@ -5,6 +5,7 @@ title:  "About SSL certificate"
 categories: how-to-guides/add-ins
 lead: SSL certificate add-in
 legacy: true
+sitemap: false
 tags: ['Add in', 'Security']
 permalink: /:collection/:path:output_ext
 ---

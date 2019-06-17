@@ -6,6 +6,7 @@ categories: how-to-guides/add-ins
 lead: Execute a shell command on your server(s)
 tags: ['Add in']
 legacy: true
+sitemap: false
 permalink: /:collection/:path:output_ext
 ---
 

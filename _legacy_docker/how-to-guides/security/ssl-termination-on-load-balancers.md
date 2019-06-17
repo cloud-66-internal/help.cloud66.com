@@ -5,6 +5,7 @@ title: Manually add an SSL certificate to a load balancer
 categories: how-to-guides/security
 lead: ""
 legacy: true
+sitemap: false
 tags: ["ssl"]
 permalink: /:collection/:path:output_ext
 ---

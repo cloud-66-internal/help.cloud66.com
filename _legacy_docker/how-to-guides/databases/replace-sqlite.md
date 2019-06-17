@@ -6,6 +6,7 @@ categories: how-to-guides/databases
 lead: ""
 tags: ["postgresql","sqlite","mysql"]
 legacy: true
+sitemap: false
 permalink: /:collection/:path:output_ext
 ---
 

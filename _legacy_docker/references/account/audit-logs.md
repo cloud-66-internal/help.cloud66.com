@@ -5,6 +5,7 @@ title: Audit log for account activities
 categories: references/accounts
 lead: ""
 legacy: true
+sitemap: false
 tags: ["logs"]
 permalink: /:collection/:path:output_ext
 ---

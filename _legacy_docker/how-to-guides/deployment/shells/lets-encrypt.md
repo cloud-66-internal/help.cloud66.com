@@ -5,6 +5,7 @@ title: How to use Let's Encrypt
 categories: how-to-guides/deployment
 lead: ""
 legacy: true
+sitemap: false
 tags: ["security"]
 permalink: /:collection/:path:output_ext
 ---

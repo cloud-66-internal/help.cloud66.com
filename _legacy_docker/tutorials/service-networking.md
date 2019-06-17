@@ -5,6 +5,7 @@ title: What is Service Networking?
 categories: tutorials
 lead: ""
 legacy: true
+sitemap: false
 tags: ["customization"]
 permalink: /:collection/:path:output_ext
 ---

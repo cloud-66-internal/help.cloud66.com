@@ -5,6 +5,7 @@ title: How to add an SSL Certificate
 categories: how-to-guides/security
 lead: ""
 legacy: true
+sitemap: false
 tags: ["ssl"]
 permalink: /:collection/:path:output_ext
 ---

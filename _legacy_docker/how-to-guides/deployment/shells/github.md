@@ -6,6 +6,7 @@ categories: how-to-guides/deployment
 lead: ""
 tags: ["git","github"]
 legacy: true
+sitemap: false
 
 permalink: /:collection/:path:output_ext
 ---

@@ -5,6 +5,7 @@ title: What is Load Balancing?
 categories: tutorials
 lead: ""
 legacy: true
+sitemap: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext
 ---

@@ -5,6 +5,7 @@ title: Integration With Semaphore
 categories: references/integrations
 lead: ""
 legacy: true
+sitemap: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext
 ---

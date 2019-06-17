@@ -5,6 +5,7 @@ title: What is the database backup add-in?
 categories: tutorials
 lead: ""
 legacy: true
+sitemap: false
 tags: ["databases"]
 permalink: /:collection/:path:output_ext
 ---

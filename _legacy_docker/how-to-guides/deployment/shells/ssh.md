@@ -5,6 +5,7 @@ title: How to use Toolbelt SSH
 categories: how-to-guides/deployment
 lead: ""
 legacy: true
+sitemap: false
 permalink: /:collection/:path:output_ext
 tags: ["debugging"]
 ---

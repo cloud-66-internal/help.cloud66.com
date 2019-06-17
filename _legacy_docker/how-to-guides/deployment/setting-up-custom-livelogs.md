@@ -5,6 +5,7 @@ title: Setting up custom LiveLog files
 categories: how-to-guides/deployment
 lead: ""
 legacy: true
+sitemap: false
 tags: ["debugging","logs"]
 
 permalink: /:collection/:path:output_ext

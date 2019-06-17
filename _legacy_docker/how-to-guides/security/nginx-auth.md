@@ -5,6 +5,7 @@ title: Nginx basic authorization
 categories: how-to-guides/security
 lead: ""
 legacy: true
+sitemap: false
 change: true
 permalink: /:collection/:path:output_ext
 tags: ["nginx"]

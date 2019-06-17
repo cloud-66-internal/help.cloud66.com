@@ -5,6 +5,7 @@ title: Nginx allow and deny by IP
 categories: how-to-guides/security
 lead: ""
 legacy: true
+sitemap: false
 tags: ["nginx"]
 permalink: /:collection/:path:output_ext
 ---

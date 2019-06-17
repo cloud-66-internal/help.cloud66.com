@@ -4,6 +4,7 @@ template: one-col
 title:  "Docker Tutorials"
 lead: "Learn about Cloud 66 by exampls"
 legacy: true
+sitemap: false
 permalink: /:collection/tutorials/index.html
 noindex: true
 ---
