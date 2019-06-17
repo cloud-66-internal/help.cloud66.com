@@ -4,6 +4,7 @@ template: one-col
 title:  "Docker Quickstarters"
 lead: Getting Started with Docker
 legacy: true
+sitemap: false
 permalink: /:collection/quickstarts/index.html
 noindex: true
 ---

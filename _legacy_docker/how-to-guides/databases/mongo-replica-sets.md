@@ -5,6 +5,7 @@ title: Scaling your MongoDB servers with replica sets
 categories: how-to-guides/databases
 lead: ""
 legacy: true
+sitemap: false
 tags: ["MongoDB"]
 permalink: /:collection/:path:output_ext
 ---

@@ -5,6 +5,7 @@ title: Strong SSL Security on Nginx
 categories: how-to-guides/security
 lead: ""
 legacy: true
+sitemap: false
 tags: ["ssl","nginx"]
 permalink: /:collection/:path:output_ext
 ---

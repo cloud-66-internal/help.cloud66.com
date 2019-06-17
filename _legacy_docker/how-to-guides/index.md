@@ -5,6 +5,7 @@ title:  "Docker How-to Guides"
 categories: how-to-guides
 lead: How to properly use Cloud 66 for Docker
 legacy: true
+sitemap: false
 permalink: /:collection/:categories/index.html
 noindex: true
 ---

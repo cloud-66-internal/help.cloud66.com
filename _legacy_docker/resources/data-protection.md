@@ -5,6 +5,7 @@ title: European data protection compliance
 categories: resources
 lead: ""
 legacy: true
+sitemap: false
 
 permalink: /:collection/:path:output_ext
 ---

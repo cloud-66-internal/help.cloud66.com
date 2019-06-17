@@ -5,6 +5,7 @@ title: Issues replicating data between two versions of PostgreSQL
 categories: Tutorials
 lead: ""
 legacy: true
+sitemap: false
 
 permalink: /:collection/:path:output_ext
 ---

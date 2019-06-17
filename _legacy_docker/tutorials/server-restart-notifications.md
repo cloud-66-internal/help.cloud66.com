@@ -6,6 +6,7 @@ categories: tutorials
 lead: Cloud 66 server restart notifications
 tags: ['server','notifications']
 legacy: true
+sitemap: false
 permalink: /:collection/:path:output_ext
 ---
 

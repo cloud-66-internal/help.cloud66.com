@@ -5,6 +5,7 @@ title: Packet cloud
 categories: references/clouds
 lead: ""
 legacy: true
+sitemap: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext
 ---

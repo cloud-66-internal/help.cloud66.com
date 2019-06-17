@@ -5,6 +5,7 @@ title: What is Cloud 66 Account Protection?
 categories: references/accounts
 lead: ""
 legacy: true
+sitemap: false
 tags: ["security", "account"]
 permalink: /:collection/:path:output_ext
 ---

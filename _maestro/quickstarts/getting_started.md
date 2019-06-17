@@ -27,7 +27,7 @@ Before you start, please check you have the following:
 
 ## Choosing application type
 
-New users will be show the product selection wizard. For Maestro, choose "I have a containerized application" and then "I need to build a Kubernetes cluster" (*Try Maestro*).
+New users will be shown the product selection wizard. For Maestro, choose "I have a containerized application" and then "I need to build a Kubernetes cluster" (*Try Maestro*).
 
 <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
     <div class="Grid-cell">

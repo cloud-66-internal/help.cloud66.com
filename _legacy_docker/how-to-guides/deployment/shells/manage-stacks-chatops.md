@@ -5,6 +5,7 @@ title: Manage your stacks from Slack with ChatOps
 categories: how-to-guides/deployment
 lead: ""
 legacy: true
+sitemap: false
 tags: ["operations"]
 
 permalink: /:collection/:path:output_ext

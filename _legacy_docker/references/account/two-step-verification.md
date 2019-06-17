@@ -5,6 +5,7 @@ title: What is Two-step Verification?
 categories: references/accounts
 lead: ""
 legacy: true
+sitemap: false
 tags: ["account", "security"]
 permalink: /:collection/:path:output_ext
 ---

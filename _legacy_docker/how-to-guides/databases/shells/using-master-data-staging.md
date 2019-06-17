@@ -5,6 +5,7 @@ title: Using production data on your staging stack
 categories: how-to-guides/databases
 lead: ""
 legacy: true
+sitemap: false
 tags: ["high-availability","customization"]
 permalink: /:collection/:path:output_ext
 ---

@@ -4,6 +4,7 @@ template: one-col
 title:  "Cloud 66 Concepts"
 lead: "In depth understanding of Cloud 66 concepts"
 legacy: true
+sitemap: false
 permalink: /:collection/concepts/index.html
 noindex: true
 

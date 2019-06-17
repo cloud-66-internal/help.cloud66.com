@@ -5,6 +5,7 @@ title: What is Build Grid?
 categories: references
 lead: ""
 legacy: true
+sitemap: false
 tags: ["build"]
 permalink: /:collection/:path:output_ext
 ---

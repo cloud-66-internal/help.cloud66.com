@@ -5,6 +5,7 @@ title: About Deployment Authorization
 categories: references
 lead: ""
 legacy: true
+sitemap: false
 tags: ["security", "operations"]
 permalink: /:collection/:path:output_ext
 ---

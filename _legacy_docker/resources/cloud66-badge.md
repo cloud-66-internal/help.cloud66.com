@@ -5,6 +5,7 @@ title: What is the Cloud66 Badge
 categories: resources
 lead: ""
 legacy: true
+sitemap: false
 
 permalink: /:collection/:path:output_ext
 ---

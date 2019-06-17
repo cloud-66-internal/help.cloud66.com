@@ -4,6 +4,7 @@ template: one-col
 title:  "Docker References"
 lead: "In Depth Documentation on Cloud 66 Docker"
 legacy: true
+sitemap: false
 permalink: /:collection/references/index.html
 noindex: true
 ---

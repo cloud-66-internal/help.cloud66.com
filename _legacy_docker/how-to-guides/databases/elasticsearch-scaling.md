@@ -5,6 +5,7 @@ title: Scaling your Elasticsearch cluster
 categories: how-to-guides/databases
 lead: ""
 legacy: true
+sitemap: false
 tags: ["Elasticsearch"]
 permalink: /:collection/:path:output_ext
 ---

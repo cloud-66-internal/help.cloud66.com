@@ -6,6 +6,7 @@ categories: how-to-guides/add-ins
 lead: Add GlusterFS to your stack with ease
 tags: ['Add in']
 legacy: true
+sitemap: false
 permalink: /:collection/:path:output_ext
 ---
 

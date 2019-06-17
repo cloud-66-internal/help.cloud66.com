@@ -4,6 +4,7 @@ template: one-col
 title:  "Docker Resources"
 lead: "Useful Resources About Cloud 66"
 legacy: true
+sitemap: false
 permalink: /:collection/resources/index.html
 noindex: true
 ---

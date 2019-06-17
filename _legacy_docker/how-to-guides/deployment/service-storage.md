@@ -5,6 +5,7 @@ title: What is Service storage?
 categories: how-to-guides/deployment
 lead: ""
 legacy: true
+sitemap: false
 tags: ["operations", "storage"]
 permalink: /:collection/:path:output_ext
 ---

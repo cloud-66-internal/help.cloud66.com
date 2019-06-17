@@ -5,6 +5,7 @@ title:  "About Service life-cycle management"
 categories: tutorials
 lead: How you can manage your service life cycle
 legacy: true
+sitemap: false
 tags: ['service', 'operations']
 permalink: /:collection/:path:output_ext
 ---

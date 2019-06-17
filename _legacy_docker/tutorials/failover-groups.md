@@ -5,6 +5,7 @@ title: What is a failover group?
 categories: tutorials
 lead: ""
 legacy: true
+sitemap: false
 tags: ["High-availability"]
 permalink: /:collection/:path:output_ext
 ---

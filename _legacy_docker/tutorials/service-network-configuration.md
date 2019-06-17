@@ -5,6 +5,7 @@ title: Setup Network Configuration for your services
 categories: tutorials
 lead: "Configure the service network"
 legacy: true
+sitemap: false
 tags: ["security", "customization", "service.yml"]
 permalink: /:collection/:path:output_ext
 ---

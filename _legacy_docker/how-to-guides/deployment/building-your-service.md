@@ -5,6 +5,7 @@ title: Building your Docker service
 categories: how-to-guides/deployment
 lead: ""
 legacy: true
+sitemap: false
 tags: ["build"]
 permalink: /:collection/:path:output_ext
 ---

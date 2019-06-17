@@ -5,6 +5,7 @@ title: Introduction to Docker deployments
 categories: tutorials
 lead: ""
 legacy: true
+sitemap: false
 tags: ["operations", "docker"]
 permalink: /:collection/:path:output_ext
 ---

@@ -5,6 +5,7 @@ title: Cloud 66 support for WebSocket
 categories: how-to-guides/deployment
 lead: ""
 legacy: true
+sitemap: false
 tags: ["websocket"]
 
 permalink: /:collection/:path:output_ext

@@ -5,6 +5,7 @@ title: Map your Container Ports
 categories: tutorials
 lead: ""
 legacy: true
+sitemap: false
 tags: ["customization", "service.yml"]
 permalink: /:collection/:path:output_ext
 ---

@@ -5,6 +5,7 @@ title: FAQs
 categories: resources
 lead: ""
 legacy: true
+sitemap: false
 
 permalink: /:collection/:path:output_ext
 ---

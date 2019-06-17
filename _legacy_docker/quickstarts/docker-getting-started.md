@@ -5,6 +5,7 @@ title: Docker Getting Started (Building Images)
 categories: quickstarts
 lead: ""
 legacy: true
+sitemap: false
 order: 1
 tags: ["getting-started"]
 permalink: /:collection/:path:output_ext

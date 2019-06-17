@@ -5,6 +5,7 @@ title: Setting Up SSH Keys
 categories: how-to-guides/deployment
 lead: ""
 legacy: true
+sitemap: false
 tags: ["debugging"]
 
 permalink: /:collection/:path:output_ext
