@@ -923,3 +923,5 @@
 [[redirects]]
   from = "/maestro/maestro/*"
   to = "/maestro/:splat"
+
+EOF
