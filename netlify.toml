@@ -1,4 +1,92 @@
 [[redirects]]
+  from = "/legacy_docker/tutorials/configure-dns.html"
+  to = "/maestro/how-to-guides/deployment/configure-dns.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/add-ins/docker-service-task.html"
+  to = "/maestro/how-to-guides/add-ins/docker-tasks.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/databases/gluster-scaling.html"
+  to = "/maestro/how-to-guides/scaling/gluster-scaling.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/add-ins/docker-server-task.html"
+  to = "/maestro/how-to-guides/add-ins/docker-tasks.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/shells/optimizing-performance.html"
+  to = "/maestro/how-to-guides/scaling/optimizing-performance.html"
+
+[[redirects]]
+  from = "/legacy_docker/concepts/"
+  to = "/maestro/the-basics/"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/global-search.html"
+  to = "/maestro/how-to-guides/common-tools/global-search.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/account/audit-logs.html"
+  to = "/maestro/account/audit-logs.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/account/team-accounts.html"
+  to = "/maestro/account/team-accounts.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/clouds/cloud-packet.html"
+  to = "/maestro/how-to-guides/clouds/cloud-packet.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/reserved-tags.html"
+  to = "/maestro/references/reserved-tags.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/stack-environments.html"
+  to = "/maestro/how-to-guides/deployment/application-environments.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/applying-upgrades.html"
+  to = "/maestro/how-to-guides/deployment/applying-upgrades.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/redeployment-hook.html"
+  to = "/maestro/how-to-guides/deployment/redeployment-hook.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/server-monitoring.html"
+  to = "/maestro/references/server-monitoring.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/shells/websocket-support.html"
+  to = "/maestro/how-to-guides/deployment/websocket-support.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/databases/shells/postgis-installation.html"
+  to = "/maestro/how-to-guides/databases/postgis-installation.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/integrations/integration-with-circle-ci.html"
+  to = "/maestro/integrations/integration-with-circle-ci.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/haproxy.html"
+  to = "/maestro/how-to-guides/deployment/haproxy.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/ssh-to-server.html"
+  to = "/maestro/how-to-guides/common-tools/ssh-to-server.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/clouds/*"
+  to = "/maestro/how-to-guides/clouds/:splat"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/databases/replace-sqlite.html"
+  to = "/rails/how-to-guides/databases/replace-sqlite.html"
+
+[[redirects]]
   from = "/legacy_docker/tutorials/docker-service-configuration.html"
   to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
 
