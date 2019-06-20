@@ -5,6 +5,7 @@ title:  "How to Pause and Resume a Service"
 legacy: false
 categories: how-to-guides/deployment
 lead: How you can pause and resume your services
+sitemap: false
 tags: ['operations']
 permalink: /:collection/:path:output_ext
 ---
