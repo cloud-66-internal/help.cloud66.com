@@ -845,6 +845,10 @@
   to = "/maestro/how-to-guides/nginx/nginx-redirect.html"
 
 [[redirects]]
+  from = "/rails/tutorials/thin-rack-server.html"
+  to = "/rails/how-to-guides/rack-servers/thin-rack-server.html"
+
+[[redirects]]
   from = "/troubleshoot/lets-encrypt"
   to = "/"
 
