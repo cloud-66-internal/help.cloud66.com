@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title:  "About your Stack Network Settings"
 legacy: false
+sitemap: false
 categories: tutorials
 lead: Configure security and network settings
 tags: ['network']

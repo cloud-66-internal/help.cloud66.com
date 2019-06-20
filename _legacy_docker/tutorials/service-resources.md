@@ -6,6 +6,7 @@ categories: how-to-guides/deployment
 lead: Managing resources for your Docker service
 tags: ['operations', 'service']
 legacy: false
+sitemap: false
 permalink: /:collection/:path:output_ext
 ---
 

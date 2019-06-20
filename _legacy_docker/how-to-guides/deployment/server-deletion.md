@@ -6,6 +6,7 @@ categories: how-to-guides/deployment
 lead: Physical servers deletion from your cloud
 tags: ['server', 'operations']
 legacy: false
+sitemap: false
 permalink: /:collection/:path:output_ext
 ---
 

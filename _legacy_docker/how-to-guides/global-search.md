@@ -5,6 +5,7 @@ title:  "Global Search"
 categories: how-to-guides/dashboard
 lead: Powerful search for your infrastructure inventory
 legacy: false
+sitemap: false
 tags: ['Management']
 permalink: /:collection/:path:output_ext
 ---

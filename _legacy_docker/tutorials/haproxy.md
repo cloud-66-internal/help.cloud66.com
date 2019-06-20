@@ -4,6 +4,7 @@ template: one-col
 title: "Everything about HAProxy"
 categories: tutorials
 legacy: false
+sitemap: false
 lead: Configuring HAProxy to work with your application
 tags: ['Scaling', 'addins']
 permalink: /:collection/:path:output_ext

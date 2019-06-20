@@ -6,6 +6,7 @@ categories: tutorials
 lead: Deploying and managing your database with Cloud 66
 tags: ['database']
 legacy: false
+sitemap: false
 permalink: /:collection/:path:output_ext
 ---
 

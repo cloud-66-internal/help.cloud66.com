@@ -1,4 +1,8 @@
 [[redirects]]
+  from = "/legacy_docker*"
+  to = "/maestro/:splat"
+
+[[redirects]]
   from = "/legacy_docker/tutorials/docker-service-configuration.html"
   to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
 
@@ -849,6 +853,10 @@
   to = "/rails/how-to-guides/rack-servers/thin-rack-server.html"
 
 [[redirects]]
+  from = "/rails/tutorials/backup-verifiers.html""
+  to = "/rails/how-to-guides/databases/backup-verifiers.html"
+
+[[redirects]]
   from = "/troubleshoot/lets-encrypt"
   to = "/"
 
@@ -914,8 +922,4 @@
 
 [[redirects]]
   from = "/maestro/maestro/*"
-  to = "/maestro/:splat"
-
-[[redirects]]
-  from = "/legacy_docker/*"
   to = "/maestro/:splat"

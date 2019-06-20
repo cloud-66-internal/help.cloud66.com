@@ -5,6 +5,7 @@ title:  "About Monitoring your Servers"
 categories: tutorials
 lead: We help you monitor your CPU, memory and disk space
 legacy: false
+sitemap: false
 tags: ['server', 'operations']
 permalink: /:collection/:path:output_ext
 ---

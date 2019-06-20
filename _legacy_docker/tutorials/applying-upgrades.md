@@ -4,7 +4,8 @@ template: one-col
 title:  "About applying upgrades"
 categories: tutorials
 legacy: false
-lead: Aapplying upgrades and updates to your stack
+sitemap: false
+lead: Applying upgrades and updates to your stack
 tags: ['upgrade', 'update']
 permalink: /:collection/:path:output_ext
 ---

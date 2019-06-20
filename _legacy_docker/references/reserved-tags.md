@@ -6,6 +6,7 @@ categories: references
 lead: Reserved tags for additional functionality
 tags: ['tags']
 legacy: false
+sitemap: false
 permalink: /:collection/:path:output_ext
 ---
 
