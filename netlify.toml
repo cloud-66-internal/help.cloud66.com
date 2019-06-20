@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/legacy_docker*"
+  from = "/legacy_docker/*"
   to = "/maestro/:splat"
 
 [[redirects]]
