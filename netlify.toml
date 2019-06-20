@@ -1,8 +1,4 @@
 [[redirects]]
-  from = "/legacy_docker/*"
-  to = "/maestro/:splat"
-
-[[redirects]]
   from = "/legacy_docker/tutorials/docker-service-configuration.html"
   to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
 
@@ -924,3 +920,6 @@
   from = "/maestro/maestro/*"
   to = "/maestro/:splat"
   
+[[redirects]]
+  from = "/legacy_docker/*"
+  to = "/maestro/:splat"
