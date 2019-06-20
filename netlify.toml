@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "/legacy_docker*"
-  to = "/maestro:splat"
+  from = "/legacy_docker/*"
+  to = "/maestro/:splat"
 
 [[redirects]]
   from = "/legacy_docker/tutorials/docker-service-configuration.html"
