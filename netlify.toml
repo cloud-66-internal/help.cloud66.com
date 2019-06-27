@@ -941,6 +941,22 @@
   to = "/rails/how-to-guides/databases/backup-verifiers.html"
 
 [[redirects]]
+  from = "/node/how-to-guides/databases/migrate-db.html"
+  to = "/node/how-to-guides/databases/database-management.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/migrate-the-stack.html"
+  to = "/skycap/quickstarts/using_formations.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/websocket-support.html"
+  to = "/maestro/how-to-guides/deployment/websocket-support.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/configure-dns.html"
+  to = "/maestro/how-to-guides/deployment/configure-dns.html"
+
+[[redirects]]
   from = "/troubleshoot/lets-encrypt"
   to = "/"
 
@@ -983,7 +999,15 @@
 [[redirects]]
   from = "/skycap/references/integrations/*"
   to = "/skycap/integrations/:splat"
-  
+
+[[redirects]]
+  from = "/maestro/concepts/"
+  to = "/maestro/the-basics/"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/databases/shell"
+  to = "/maestro/how-to-guides/databases/"
+
 [[redirects]]
   from = "/legacy_docker/index.html"
   to = "/maestro/index.html"
