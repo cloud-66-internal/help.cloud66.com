@@ -957,6 +957,30 @@
   to = "/maestro/how-to-guides/deployment/configure-dns.html"
 
 [[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/haproxy-for-websocket.html"
+  to = "/maestro/how-to-guides/deployment/haproxy-for-websocket.html"
+
+[[redirects]]
+  from = "/maestro/quickstarts/docker-getting-started"
+  to = "/maestro/quickstarts/getting_started.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/database-backup.html"
+  to = "/maestro/how-to-guides/databases/shells/manage-backups.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/building/shells/github.html"
+  to = "/skycap/references/connect-cloud66-to-git-repo.html"
+
+[[redirects]]
+  from = "/skycap/how-to-guides/building/shells/github.html"
+  to = "/skycap/references/connect-cloud66-to-git-repo.html"
+
+[[redirects]]
+  from = "/skycap/tutorials/applying-upgrades.html"
+  to = "/maestro/how-to-guides/deployment/applying-upgrades.html"
+
+[[redirects]]
   from = "/troubleshoot/lets-encrypt"
   to = "/"
 
