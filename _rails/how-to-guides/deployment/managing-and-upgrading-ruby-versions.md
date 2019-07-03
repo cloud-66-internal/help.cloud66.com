@@ -62,7 +62,7 @@ If you're currently defining your Ruby version in a Gemfile or a <kbd>.ruby_vers
 
 As with any upgrade, please ensure that the upgrades and patches work with your code before applying them. Upgrade and patch your development and test environments first to ensure there are no issues. Backup your environment via your cloud provider where possible.
 
-There are two main ways to deploy upgrades to Ruby for your application, in decreasing magnitude of risk:
+There are three main ways to deploy upgrades to Ruby for your application, in decreasing magnitude of risk:
 
 1. Set up and deploy a completely new version of your application that uses the new version of Ruby
 2. Create a new server ("scale up") with the new version of Ruby

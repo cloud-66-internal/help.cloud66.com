@@ -78,7 +78,7 @@ Currently we support Amazon Web Services, Digital Ocean, Google Compute Engine, 
 
 ## Which distributions of Linux are supported?
 
-We currently only support Ubuntu version 16.04 LTS.
+We currently support Ubuntu versions 16.04 and 18.04.
 
 * * *
 

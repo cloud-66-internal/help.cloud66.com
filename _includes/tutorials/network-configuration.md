@@ -45,6 +45,7 @@ You can block specific IPs and/or ranges from visiting the ports mentioned above
 
 The <i>Redirects</i> tab helps you perform simple but frequently used network redirects. These include redirecting traffic from <i>HTTP</i> to <i>HTTPS</i> or adding or removing the <i>www</i> prefix from your domain name.
 
+{% if include.product == 'rails' %}
 ### Maintenance mode
 When you have to make manual changes to your application or push out a breaking change, you may not be able to guarantee that your application will be able to serve content or act correctly.
 
@@ -59,6 +60,8 @@ You can find it in *Application Overview* --> *Network settings* --> *Redirects*
 <pre class="terminal">
 /.cloud66/maintenance.html
 </pre>
+
+{% endif %}
 
 ### Redirect HTTP to HTTPS
 You can easily <a href="/{{page.collection}}/how-to-guides/add-ins/ssl.html">add your SSL certificates</a> to your stacks and serve your traffic securely with HTTPS. To ensure that all your visitors use HTTPS instead of HTTP, you need to redirect anyone using HTTP to HTTPS.
