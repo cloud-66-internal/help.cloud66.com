@@ -10,4 +10,6 @@ tags: ['network']
 permalink: /:collection/:path:output_ext
 ---
 
-{% include tutorials/network-configuration.md %}
+{% assign product = 'rails' %}
+
+{% include tutorials/network-configuration.md product = product %}
