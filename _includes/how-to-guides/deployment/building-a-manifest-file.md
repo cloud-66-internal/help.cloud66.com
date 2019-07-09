@@ -140,8 +140,12 @@ production:
 
 ### GlusterFS
 
+<div class="notice notice-warning"><p>
+The version of GlusterFS currently offered via the Cloud 66 Add-in is not supported by Ubuntu 18.04. To use this add-in please ensure that all of your application components are installed on servers running <strong>Ubuntu 16.04</strong>. 
+</p></div>
+
 - **version**: Specify the version of GlusterFS you want to install.
-- **operating_system** (_Optional_): `ubuntu1404`, `ubuntu1604` or `ubuntu1804`
+- **operating_system** (_Optional_): `ubuntu1404` or `ubuntu1604`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is `ssd`.
 - **replica_count** : Number of nodes in _GlusterFS cluster_ which a data will be replicated on it(i.e replica count 2 means your data exist on two nodes). Default value is 1.
