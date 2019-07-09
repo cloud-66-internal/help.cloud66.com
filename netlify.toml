@@ -919,6 +919,10 @@
   to = "/maestro/how-to-guides/deployment/applying-upgrades.html"
 
 [[redirects]]
+  from = "/maestro/tutorials/scaling"
+  to = "/maestro/how-to-guides/scaling/"
+
+[[redirects]]
   from = "/troubleshoot/lets-encrypt"
   to = "/"
 
