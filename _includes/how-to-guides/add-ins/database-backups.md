@@ -221,18 +221,7 @@ $ find /path/to/unarchived/folder -name ibdata1 -type f  -exec dirname {} ';'
 
 3. Stop Mysql service : 
 
-3.1 Ubuntu 12.04 
-
-<pre class="prettyprint">
-$ sudo /etc/init.d/mysql stop
-</pre>
-
-3.2 Ubuntu 14.04 
-<pre class="prettyprint">
-$ sudo service mysql stop 
-</pre>
-
-3.3 Ubuntu 16.04 
+Ubuntu 16.04 
 <pre class="prettyprint">
 $ sudo systemctl stop mysql 
 </pre>
@@ -269,17 +258,7 @@ $ sudo chown -R mysql:mysql  /path/to/your/mysql/data/directory
 
 8. Start Mysql service
 
-8.1 Ubuntu 12.04 
-<pre class="prettyprint">
-$ sudo /etc/init.d/mysql start
-</pre>
-
-8.2 Ubuntu 14.04 
-<pre class="prettyprint">
-$ sudo service mysql start
-</pre>
-
-8.3 Ubuntu 16.04 
+Ubuntu 16.04 
 <pre class="prettyprint">
 $ sudo systemctl start mysql 
 </pre>
@@ -367,12 +346,7 @@ $ find /path/to/unarchived/folder -name raw -type d
 
 2. Stop Postgresql service : 
 
-2.1 Ubuntu 12.04 / 14.04  
-<pre class="prettyprint">
-$ (sudo -u postgres pg_ctl stop -D /usr/local/pgsql/data -m f -t 10 || true) && sudo stop postgresql
-</pre>
-
-2.2 Ubuntu 16.04 
+Ubuntu 16.04 
 <pre class="prettyprint">
 $ sudo systemctl stop postgresql 
 </pre>
@@ -408,17 +382,7 @@ $ sudo chown -R postgres:postgres /usr/local/pgsql/data
 
 7. Start Postgresql service
 
-7.1 Ubuntu 12.04 
-<pre class="prettyprint">
-$ sudo /etc/init.d/postgresql start
-</pre>
-
-7.2 Ubuntu 14.04 
-<pre class="prettyprint">
-$ sudo service postgresql start
-</pre>
-
-7.3 Ubuntu 16.04 
+Ubuntu 16.04 
 <pre class="prettyprint">
 $ sudo systemctl start  postgresql" 
 </pre>
