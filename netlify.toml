@@ -997,7 +997,3 @@
 [[redirects]]
   from = "/maestro/maestro/*"
   to = "/maestro/:splat"
-  
-[[redirects]]
-  from = "/legacy_docker/*"
-  to = "/maestro/:splat"
