@@ -65,7 +65,7 @@ As with any upgrade, please ensure that the upgrades and patches work with your 
 There are three main ways to deploy upgrades to Ruby for your application, in decreasing magnitude of risk:
 
 1. Set up and deploy a completely new version of your application that uses the new version of Ruby
-2. Create a new server ("scale up") with the new version of Ruby
+2. Add a new server with the new version of Ruby and then drop the old server
 3. Upgrade Ruby in place (which risks downtime and can possibly fail completely)
 
 #### Note
@@ -78,24 +78,32 @@ In this approach you build another completely separate version of your applicati
 
 ### Scaling up
 
-The second safest option to use when upgrading Ruby is to "scale up" a new server within the same application that uses the new version and, once you tested the new setup, drop the old one. 
+### Building a new application
 
-First specify your new Ruby version in your manifest file (see above for details). Make sure you have also removed any Ruby version declarations from your Gemfile. 
+In this approach you build another completely separate version of your application in parallel, deploy it to new servers and then switch traffic over to to your new version. This is the safest option of all because there is no impact on your existing production environment. However this is not always practical, so the next best option is to add a new server (see below).
 
-Once you've pushed this change to your repo, you can scale up a new web server which will use this version of Ruby. To do this:
+### Adding a new server
+
+The second safest option to use when upgrading Ruby is to add a new server within the same application that uses the new version of Ruby and, once you haved tested the new setup, drop the old one.
+
+First specify your new Ruby version in your Manifest file (see above for details). Make sure you have also removed any Ruby version declarations from your Gemfile.
+
+Once you’ve pushed this change to your repo, you can add a new web server which will use this version of Ruby. To do this:
 
 1. Open your application on the Cloud 66 Dashboard
-2. Click on the name of a server in the main panel
-3. Click on the green + next to the server you want to replicate (scale up) and confirm the action
-4. Wait for the new server to come online and test that it is working
+2. Deploy the new code by clicking the green *Deploy* button and selecting *Deploy stack* (don't worry, this won't affect the version of Ruby running on your existing servers)
+3. Once the redeployment has completed, click on *Rails Servers* in the main panel
+4. Click on the green *+ Add Web Server* button (Note: you will need to have a load balancer set up before you can add multiple servers - [read our guide](/rails/tutorials/load-balancing.html) if you need help adding one)
+5. Wait for the new server to come online and test that it is working
 
+#### Note
 <div class="notice notice-warning">
-<p>Make sure you redeploy before you scale up, otherwise the new Manifest settings will not be taken to account. </p>
+<p>Make sure you both commit <strong>and</strong> redeploy your code before you add a new server, otherwise the new Manifest file will not be taken to account. Your existing servers will not change their Ruby version unless you force them to using <em>Deploy with options</em> (which you should <strong>not</strong> do in this case). </p>
 </div>
 
-The previous server will remain on the old version of Ruby. You can then scale-down your older web server to ensure all your web servers are the correct version. 
+Your older servers will remain on the previous version of Ruby. Once you have thoroughly tested your new servers, you can then delete older web servers to ensure all of them use the correct version.
 
-Bear in mind that if you don't scale down your old server, you'll have servers in your application using different versions of Ruby. If you enforce a Ruby version in your Gemfile, your application will stop working on any of the servers that do not match the version defined in the Gemfile.
+Bear in mind that if you don’t remove your old server, you’ll have servers in your application using different versions of Ruby. If you enforce a Ruby version in your Gemfile, your application will stop working on any of the servers that do not match the version defined in the Gemfile.
 
 Also, if you have background jobs running on your old server, ensure that you gracefully shut these down before switching everything to the new server.
 
