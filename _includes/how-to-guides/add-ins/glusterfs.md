@@ -2,6 +2,12 @@
 
 [GlusterFS](http://www.gluster.org/) is a scalable network file-system, and it's easy to add to your application as an add-in.
 
+### Please note
+
+<div class="notice notice-warning"><p>
+The version of GlusterFS currently offered via the Cloud 66 Add-in is not supported by Ubuntu 18.04. To use this add-in please ensure that all of your application components are installed on servers running <strong>Ubuntu 16.04</strong>. For help with this please consult <a href="/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html">our guide to the application Manifest file</a>. 
+</p></div>
+
 ## Why would I need GlusterFS?
 Almost all applications have some sort of data storage needs. As your application grows and runs on multiple servers, you will need to be able to share this data storage between your servers. For example, a web application that allows its users to upload images, will need to store those images on a share storage accessible by all servers. 
 

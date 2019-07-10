@@ -199,10 +199,6 @@
   to = "/maestro/how-to-guides/deployment/service-lifecycle-management.html"
 
 [[redirects]]
-  from = "/legacy_docker/quickstarts/"
-  to = "/maestro/quickstarts/"
-
-[[redirects]]
   from = "/legacy_docker/how-to-guides/"
   to = "/maestro/how-to-guides/deployment/"
 
@@ -347,10 +343,6 @@
   to = "/node/how-to-guides/deployment/server-restart-notifications.html"
 
 [[redirects]]
-  from = "/rails/tutorials/server-restart-notifications.html"
-  to = "/rails/how-to-guides/deployment/server-restart-notifications.html"
-
-[[redirects]]
   from = "/rails/concepts/stack-definition.html"
   to = "/rails/the-basics/stack-definition.html"
 
@@ -381,10 +373,6 @@
 [[redirects]]
   from = "/rails/tutorials/database-replication.html"
   to = "/rails/how-to-guides/databases/database-replication.html"
-
-[[redirects]]
-  from = "/rails/tutorials/getting-started-with-manifest.html"
-  to = "/rails/how-to-guides/deployment/building-a-manifest-file.html"
 
 [[redirects]]
   from = "/rails/tutorials/puma-rack-server.html"
@@ -443,10 +431,6 @@
   to = "/rails/quickstarts/getting_started.html"
 
 [[redirects]]
-  from = "/article/135-docker-service-configuration"
-  to = "/maestro/quickstarts/getting_started.html"
-
-[[redirects]]
   from = "/toolbelt/toolbelt-introduction"
   to = "/"
 
@@ -455,22 +439,14 @@
   to = "/maestro/quickstarts/getting_started.html"
 
 [[redirects]]
-  from = "/article/279-getting-started-with-skycap"
-  to = "/skycap/quickstarts/getting_started.html"
-
-[[redirects]]
   from = "/building-your-stack/docker-service-configuration"
   to = "/maestro/quickstarts/getting_started.html"
 
 [[redirects]]
   from = "/managing-your-stack/server-restart-notifications.html"
   to = "/"
-
-  [[redirects]]
-  from = "/node/how-to-guides/deployment/shells/lets-encrypt.html"
-  to = "/node/how-to-guides/security/lets-encrypt.html"
-
-  [[redirects]]
+  
+[[redirects]]
   from = "/rails/how-to-guides/deployment/shells/lets-encrypt.html"
   to = "/rails/how-to-guides/security/lets-encrypt.html"
   
@@ -486,11 +462,9 @@
   from = "/maestro/tutorials/registered-servers.html"
   to = "/maestro/how-to-guides/deployment/registered-servers.html"
 
-
 [[redirects]]
   from = "/stack-features/db-backup.html"
   to = "/rails/how-to-guides/add-ins/database-backups.html"
-
 
 [[redirects]]
   from = "/building-your-stack/*"
@@ -593,7 +567,7 @@
   to = "/maestro/quickstarts/getting-started-with-manifest.html"
 
 [[redirects]]
-  from = "/node/tutorials/server-restart-notifications.html"
+  from = "/rails/tutorials/server-restart-notifications.html"
   to = "/rails/how-to-guides/deployment/server-restart-notifications.html"
 
 [[redirects]]
@@ -605,20 +579,12 @@
   to = "/"
 
 [[redirects]]
-  from = "/article/136-building-your-rails-rack-stack"
-  to = "/rails/quickstarts/getting_started.html"
-
-[[redirects]]
   from = "/article/135-docker-service-configuration"
   to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
 
 [[redirects]]
   from = "/article/279-getting-started-with-skycap"
   to = "/skycap/quickstarts/getting_started.html"
-
-[[redirects]]
-  from = "/article/283-getting-started-with-maestro"
-  to = "/maestro/quickstarts/getting_started.html"
 
 [[redirects]]
   from = "/article/169-getting-started-with-node-js-based-stacks"
@@ -677,10 +643,6 @@
   to = "/maestro/references/service-monitoring.html"
 
 [[redirects]]
-  from = "/rails/how-to-guides/databases/elasticsearch-scaling.html"
-  to = "/rails/how-to-guides/scaling/elasticsearch-scaling.html"
-
-[[redirects]]
   from = "/skycap/how-to-guides/deployment/shells/migrate-the-stack.html"
   to = "/skycap/how-to-guides/"
 
@@ -727,10 +689,6 @@
 [[redirects]]
   from = "/node/tutorials/database-management.html"
   to = "/node/how-to-guides/databases/database-management.html"
-
-[[redirects]]
-  from = "/rails/how-to-guides/deployment/ssh-to-server.html"
-  to = "/rails/how-to-guides/common-tools/ssh-to-server.html"
 
 [[redirects]]
   from = "/skycap/how-to-guides/building/shells/manage-stacks-chatops.html"
@@ -869,24 +827,12 @@
   to = "/skycap/references/toolbelt.html"
 
 [[redirects]]
-  from = "/skycap/how-to-guides/deployment/nginx-redirect.html"
-  to = "/maestro/how-to-guides/nginx/nginx-redirect.html"
-
-[[redirects]]
   from = "/maestro/concepts/stack-definition.html"
   to = "/maestro/the-basics/concepts-and-terminology.html#application-vs-stack"
 
 [[redirects]]
-  from = "/maestro/how-to-guides/databases/shells/uninstall-phpmyadmin.html"
-  to = "/maestro/how-to-guides/databases/"
-
-[[redirects]]
   from = "/maestro/how-to-guides/databases/uninstall-phpmyadmin.html"
   to = "/maestro/how-to-guides/databases/"
-
-[[redirects]]
-  from = "/skycap/how-to-guides/deployment/nginx-redirect.html"
-  to = "/maestro/how-to-guides/nginx/nginx-redirect.html"
 
 [[redirects]]
   from = "/skycap/resources/referral-program.html"
@@ -899,10 +845,6 @@
 [[redirects]]
   from = "/maestro/references/build-grid.html"
   to = "/maestro/the-basics/concepts-and-terminology.html#buildgrid-and-build-minutes"
-
-[[redirects]]
-  from = "/skycap/how-to-guides/deployment/shells/zero-downtime-deploy.html"
-  to = "/rails/how-to-guides/deployment/shells/zero-downtime-deploy.html"
 
 [[redirects]]
   from = "/maestro/references/easy-deploy-repos.html"
@@ -973,12 +915,12 @@
   to = "/skycap/references/connect-cloud66-to-git-repo.html"
 
 [[redirects]]
-  from = "/skycap/how-to-guides/building/shells/github.html"
-  to = "/skycap/references/connect-cloud66-to-git-repo.html"
-
-[[redirects]]
   from = "/skycap/tutorials/applying-upgrades.html"
   to = "/maestro/how-to-guides/deployment/applying-upgrades.html"
+
+[[redirects]]
+  from = "/maestro/tutorials/scaling"
+  to = "/maestro/how-to-guides/scaling/"
 
 [[redirects]]
   from = "/troubleshoot/lets-encrypt"
