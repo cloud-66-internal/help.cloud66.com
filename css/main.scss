@@ -1865,3 +1865,55 @@ li.active .TabMini-link {
 .accordion-content.open {
     display: block;
 }
+
+/*
+ *
+ * Callout
+ * ------------------------------------------------------------------  */
+
+
+.Callout {
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06);
+    border: 1px solid #E5D6B0;
+    border-radius: 4px;
+    background: #fff9ea;
+    color: #000;
+    padding: 12px;
+    font-weight: 500;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-bottom: 26px;
+
+  .Callout-text {
+      display: inline-block;
+      font-size: 17px;
+      font-weight: 500;
+      margin: 0 !important;
+      padding: 0;
+      padding-right: 18px;
+      color: #000;
+  }
+
+  .Callout-strong {
+      color: #000;
+      font-weight: 600;
+  }
+
+  .Callout-button {
+      border-radius: 4px;
+      display: inline-block;
+      padding: 12px 14px;
+      font-weight: 800;
+      background-color: #64c964;
+      color: white !important;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all .35s ease-in-out;
+
+      &:hover {
+          background-color: #57b257;
+      }
+  }
+}
