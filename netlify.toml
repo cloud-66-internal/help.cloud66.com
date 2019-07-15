@@ -933,6 +933,10 @@
 [[redirects]]
   from = "/article/*"
   to = "/"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/add-ins/*"
+  to = "/maestro/how-to-guides/add-ins/:splat"
   
 [[redirects]]
   from = "/node/references/clouds/*"
