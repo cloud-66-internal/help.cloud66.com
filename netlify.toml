@@ -919,6 +919,10 @@
   to = "/maestro/how-to-guides/deployment/applying-upgrades.html"
 
 [[redirects]]
+  from = "/maestro/how-to-guides/deployment/deployment-authorisation.html"
+  to = "/maestro/how-to-guides/deployment/deployment-authorization.html"
+
+[[redirects]]
   from = "/maestro/tutorials/scaling"
   to = "/maestro/how-to-guides/scaling/"
 
