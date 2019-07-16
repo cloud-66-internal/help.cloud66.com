@@ -5,6 +5,7 @@ title:  "Skycap Policies &amp; Specifications"
 lead: "Useful information about Cloud 66's policies and technical specifications"
 legacy: false
 permalink: /:collection/policies-specifications/index.html
+sitemap: false
 ---
 
 <div class="Toc Toc--policies">

@@ -6,6 +6,7 @@ lead: "Step by step guides to using Maestro's features"
 legacy: false
 permalink: /:collection/tutorials/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

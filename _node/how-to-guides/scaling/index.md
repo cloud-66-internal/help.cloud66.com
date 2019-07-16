@@ -6,6 +6,7 @@ lead: How to properly use Cloud 66 for Node
 legacy: false
 permalink: /:collection/how-to-guides/scaling/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

@@ -6,6 +6,7 @@ lead: How to configure and deploy Rails applications using Cloud 66
 legacy: false
 permalink: /:collection/how-to-guides/deployment/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

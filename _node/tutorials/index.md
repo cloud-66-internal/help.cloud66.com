@@ -6,6 +6,7 @@ lead: "Learn about Cloud 66 by exampls"
 legacy: false
 permalink: /:collection/tutorials/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

@@ -7,6 +7,7 @@ legacy: false
 permalink: /:collection/account/index.html
 product: Maestro
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

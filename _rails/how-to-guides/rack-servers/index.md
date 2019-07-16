@@ -6,6 +6,7 @@ lead: How to use your preferred Rack server with Cloud 66
 legacy: false
 permalink: /:collection/how-to-guides/rack-servers/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

@@ -6,6 +6,7 @@ lead: "In depth understanding of Cloud 66 concepts"
 legacy: false
 permalink: /:collection/the-basics/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

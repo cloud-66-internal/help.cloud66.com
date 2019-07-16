@@ -6,6 +6,7 @@ lead: How to use Cloud 66 Skycap
 legacy: false
 permalink: /:collection/how-to-guides/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

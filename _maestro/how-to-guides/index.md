@@ -7,6 +7,7 @@ lead: How to properly use Cloud 66 Maestro
 legacy: false
 permalink: /:collection/:categories/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">
