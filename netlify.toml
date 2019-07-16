@@ -923,8 +923,16 @@
   to = "/maestro/how-to-guides/deployment/deployment-authorization.html"
 
 [[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/nginx-modules"
+  to = "/maestro/how-to-guides/nginx/nginx-modules.html"
+
+[[redirects]]
   from = "/maestro/tutorials/scaling"
   to = "/maestro/how-to-guides/scaling/"
+
+[[redirects]]
+  from = "/cloud-66-toolbelt/*"
+  to = "/"
 
 [[redirects]]
   from = "/troubleshoot/lets-encrypt"
@@ -949,10 +957,6 @@
 [[redirects]]
   from = "/rails/references/clouds/*"
   to = "/rails/how-to-guides/clouds/:splat"
-
-[[redirects]]
-  from = "/maestro/references/clouds/*"
-  to = "/maestro/how-to-guides/clouds/:splat"
 
 [[redirects]]
   from = "/maestro/references/clouds/*"
