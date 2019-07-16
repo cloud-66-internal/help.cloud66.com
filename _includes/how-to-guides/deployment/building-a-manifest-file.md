@@ -18,12 +18,15 @@ In Maestro there are two opportunities to edit your manifest file:
 * After your application has been deployed, by clicking on *Configuration Files* and then the *Manifest* tab in the Dashboard
 
 #### Important
-<div class="notice notice-danger"><p>It is vital that you understand the limits and caveats of manifest settings. Please read our <a href="/maestro/references/manifest-structure.html#classes-of-manifest-file-settings">reference guide</a> before you start creating your own manifest files.</p></div>
+<div class="notice notice-warning"><p>It is vital that you understand the limits and caveats of manifest settings. Please read our <a href="/maestro/references/manifest-structure.html#classes-of-manifest-file-settings">reference guide</a> before you start creating your own manifest files.</p></div>
 
 {% endif %}
 
 Once you're ready, start by going through each section below to build your manifest file.
 
+#### Problems upgrading?
+<div class="notice"><p>
+If you explicitly set the version of any component in your manifest file, we will respect that setting even if it conflicts with other system changes or upgrades (for example upgrading Ubuntu). If you are having trouble upgrading any component of your application, remember to check your manifest file to ensure you have not previously locked the version of that component or one of its dependents. </p></div>
 
 ## Which environment?
 

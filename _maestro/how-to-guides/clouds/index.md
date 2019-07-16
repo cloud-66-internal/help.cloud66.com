@@ -6,6 +6,7 @@ lead: How to configure cloud providers for use with Maestro
 legacy: false
 permalink: /:collection/how-to-guides/clouds/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

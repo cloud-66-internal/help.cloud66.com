@@ -6,6 +6,7 @@ lead: How to configure and manage databases with Cloud 66 for Rails
 legacy: false
 permalink: /:collection/how-to-guides/databases/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

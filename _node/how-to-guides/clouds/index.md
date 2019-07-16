@@ -6,6 +6,7 @@ lead: Configuring cloud providers for use with Cloud 66 for Node
 legacy: false
 permalink: /:collection/how-to-guides/clouds/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

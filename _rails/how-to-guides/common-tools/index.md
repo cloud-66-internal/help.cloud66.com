@@ -6,6 +6,7 @@ lead: How to use common tools with Cloud 66 for Rails
 legacy: false
 permalink: /:collection/how-to-guides/common-tools/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

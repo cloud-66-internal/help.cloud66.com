@@ -6,6 +6,7 @@ lead: Basic concepts, terminology and frequently asked questions (FAQs)
 legacy: false
 permalink: /:collection/the-basics/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

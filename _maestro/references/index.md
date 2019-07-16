@@ -6,6 +6,7 @@ lead: "Reference guides for Maestro features"
 legacy: false
 permalink: /:collection/references/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

@@ -6,6 +6,7 @@ lead: How to configure security for your Rails application
 legacy: false
 permalink: /:collection/how-to-guides/security/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

@@ -6,6 +6,7 @@ lead: "Integrating Cloud 66 for Rails with popular CI/CD services"
 legacy: false
 permalink: /:collection/integrations/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

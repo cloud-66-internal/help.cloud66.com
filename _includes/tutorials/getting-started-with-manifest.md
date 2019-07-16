@@ -10,6 +10,10 @@ These are just some examples of the settings you can control with a manifest fil
 - Configure application components to share a server
 - Customizing component-specific configurations
 
+#### Note
+<div class="notice notice-warning"><p>
+If you explicitly set the version of any component in your manifest file, we will respect that setting even if it conflicts with other system changes or upgrades (for example upgrading Ubuntu). If you are having trouble upgrading any component of your application, remember to check your manifest file to ensure you have not previously locked the version of that component or one of its dependents. </p></div>
+
 {% if include.product == 'Rails' %}
 ## How do I use a manifest file?
 

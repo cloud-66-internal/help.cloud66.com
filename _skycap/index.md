@@ -6,6 +6,7 @@ categories:
 lead: Using Skycap
 legacy: false
 permalink: /:collection/:categories/index.html
+sitemap: false
 ---
 
 <p class="lead">Skycap is a Container Deployment Pipeline. Using Skycap you can turn your source code into container (Docker) images automatically, and easily manage your Kubernetes configuration files.</p>

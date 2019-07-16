@@ -6,6 +6,7 @@ lead: Getting Started with Cloud 66 for Rails
 legacy: false
 permalink: /:collection/quickstarts/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">
