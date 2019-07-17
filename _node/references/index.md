@@ -6,6 +6,7 @@ lead: "In depth documentation on Cloud 66 for Node"
 legacy: false
 permalink: /:collection/references/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

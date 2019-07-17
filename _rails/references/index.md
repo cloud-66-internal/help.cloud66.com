@@ -6,6 +6,7 @@ lead: "In Depth Documentation on Cloud 66 for Rails"
 legacy: false
 permalink: /:collection/references/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

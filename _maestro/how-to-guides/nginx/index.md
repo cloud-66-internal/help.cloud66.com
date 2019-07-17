@@ -6,6 +6,7 @@ lead: How to configure Nginx
 legacy: false
 permalink: /:collection/how-to-guides/nginx/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

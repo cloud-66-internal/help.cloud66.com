@@ -6,6 +6,7 @@ lead: "Useful Resources About Cloud 66"
 legacy: false
 permalink: /:collection/resources/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

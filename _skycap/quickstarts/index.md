@@ -6,6 +6,7 @@ lead: Getting Started with Skycap
 legacy: false
 permalink: /:collection/quickstarts/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

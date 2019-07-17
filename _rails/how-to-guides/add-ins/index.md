@@ -7,6 +7,7 @@ lead: Extending Rails with Add-ins
 legacy: false
 permalink: /:collection/how-to-guides/add-ins/index.html
 noindex: true
+sitemap: false
 ---
 
 <div class="Toc Toc--howto">

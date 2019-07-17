@@ -6,6 +6,7 @@ categories: how-to-guides
 lead: How to properly use Cloud 66 for Rails
 legacy: false
 permalink: /:collection/:categories/index.html
+sitemap: false
 noindex: true
 ---
 

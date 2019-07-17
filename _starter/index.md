@@ -7,6 +7,7 @@ label: Starter
 legacy: false
 permalink: /:collection/index.html
 index: true
+sitemap: false
 ---
 
 <p class="lead">Starter is an open-source command line tool to generate a <code>Dockerfile</code> and a <code>service.yml</code> file from arbitrary source code. The service.yml file is a Cloud 66 service definition file which is used to define the service configuration on a stack.</p>
