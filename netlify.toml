@@ -927,6 +927,14 @@
   to = "/maestro/how-to-guides/nginx/nginx-modules.html"
 
 [[redirects]]
+  from = "/maestro/how-to-guides/database/shells/uninstall-mysql.html"
+  to = "/maestro/how-to-guides/databases/shells/uninstall-mysql.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/security/nginx-deny"
+  to = "/maestro/how-to-guides/nginx/nginx-deny.html"
+
+[[redirects]]
   from = "/maestro/tutorials/scaling"
   to = "/maestro/how-to-guides/scaling/"
 
