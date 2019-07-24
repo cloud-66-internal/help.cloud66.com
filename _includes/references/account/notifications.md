@@ -30,6 +30,10 @@ Visit the Slack [Integrations page](https://slack.com/integrations) and select t
 
 ### Hipchat
 
+<div class="notice notice-danger"><p>
+Hipchat has been <a target="_blank" href="https://www.atlassian.com/partnerships/slack/faq#faq-3ccc5a61-711b-4ef2-9ca2-3a34b2ec143b">discontinued by Atlassian</a> and as a result we're going to sunset our Hitchat support on the 31st of August 2019. Consider migrating to Slack (see above) which we will continue support.
+</p></div>
+
 [Hipchat](http://hipchat.com/) is a hosted realtime chat service by Atlassian, and you can link your account to Cloud 66 to receive notifications on Hipchat.
 
 From the Hipchat _Account settings_ menu, click _API access_, and then the link for _API version 1_. Once on the API v1 page, create an API token. By selecting the Hipchat icon on the _account notifications_ page, you can add this token and select which room you would like your notifications to appear in. 

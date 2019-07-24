@@ -38,11 +38,12 @@ $ ssh user&#95;name@ip&#95;address -i /Users/xxx/Downloads/key.pem
 
 ## Troubleshooting
 
-<ol class="list">
-<b><li>Update your toolbelt version</li></b>
-Toolbelt updates are normally applied automatically in the background, but in some cases these may not work. If so, you may need to <a href="/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html#update-the-toolbelt">update the toolbelt manually</a>.<br/><br/>
+### Update your toolbelt version
 
-<b><li>Toolbelt SSH asking for password</li></b>
+Toolbelt updates are normally applied automatically in the background, but in some cases these may not work. If so, you may need to [update the toolbelt manually](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html#update-the-toolbelt).
+
+### Toolbelt SSH asking for password
+
 If your toolbelt SSH connection is asking for a password, there may be an issue with the local SSH key cache on your computer. To remove this cache, run the following commands:
 
 {% highlight bash %}
@@ -50,18 +51,18 @@ mkdir ~/.ssh/old_cx
 mv ~/.ssh/cx_* ~/.ssh/old_cx
 {% endhighlight %}
 
-This moves the cached SSH keys to a temporary folder, so that they are downloaded again.<br/><br/>
+This moves the cached SSH keys to a temporary folder, so that they are downloaded again.
 
-<b><li>Toolbelt exits command</li></b>
-If the toolbelt SSH connection exits while running, it helps to check the output log from the command. To see this, simply prepend <code>CXDEBUG=1</code> to your command. For example, you can run:
+### Toolbelt exits command
+If the toolbelt SSH connection exits while running, it helps to check the output log from the command. To see this, simply prepend `CXDEBUG=1` to your command. For example, you can run:
 
 {% highlight bash %}
 CXDEBUG=1 cx ssh -s "My Awesome App" web
 {% endhighlight %}
 
-This will show at which point the command fails, and if you run this manually, you should see more error details.<br/><br/>
+This will show at which point the command fails, and if you run this manually, you should see more error details.
 
-<b><li>Toolbelt exit status 255</li></b>
+### Toolbelt exit status 255
 You may see this output from the bottom of the previous command:
 
 <pre class="prettyprint">
@@ -69,14 +70,23 @@ Running Command /usr/bin/ssh with ([&lt;username&gt;@&lt;ip_address&gt; -i /User
 2015/04/23 17:41:12 error: exit status 255
 </pre>
 
-In this case, there has likely been an issue running the SSH command, though no logs are output from it (given the <i>LogLevel=QUIET</i> directive). We'll want to run that command directly (and switch the <i>LogLevel</i> to <i>VERBOSE</i>):
+In this case, there has likely been an issue running the SSH command, though no logs are output from it (given the *LogLevel=QUIET* directive). We'll want to run that command directly (and switch the *LogLevel* to *VERBOSE*):
 
 <pre class="prettyprint">
 ssh &lt;username&gt;@&lt;ip_address&gt; -i /Users/&lt;username&gt;/.ssh/cx_&lt;id&gt;_pkey -o UserKnownHostsFile=/dev/null -o CheckHostIP=no -o StrictHostKeyChecking=no -o LogLevel=VERBOSE -o IdentitiesOnly=yes -A -p 22
 </pre>
 
-The output from that command should help you understand what the root cause of the issue is.<br/><br/>
+The output from that command should help you understand what the root cause of the issue is.
 
-<b><li>SSH timeout</li></b>
+### SSH timeout
 SSH connection time-outs typically happen when the firewall connection isn't open. The toolbelt opens the firewall to your current IP address automatically, but your external IP address may change between this request and the actual connection. To verify this, try the manual connection method and see if you can connect.
-</ol>
+
+### Check the permissions of your /home and .ssh directories
+
+The SSH utility requires a certain level of permissions to be set in the `/home` directory of your Linux user before it will work. Those permissions are:
+
+- `/home/your_username` must be set to (at most) `755 (drwxr-xr-x)`
+- `/home/your_username/.ssh` must be set to `0700 (drwx------)`
+
+If these permissions are set too "open" (for example `0777`) SSH will refuse to work as it sees this as insecure. Normally these directories are set to the correct permissions by default, but they can be changed by external processes or (unintentionally) by shell commands by team members.
+
