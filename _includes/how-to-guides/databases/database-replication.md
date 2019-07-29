@@ -2,7 +2,7 @@
 
 Database replication involves configuring a master and slave database architecture, whereby the slave is an exact replica of the master at all times. This feature is supported for MySQL, PostgreSQL, Redis and MongoDB.
 
-Database replication can be set up for a single application, or between akspplication, with various benefits:
+Database replication can be set up for a single application, or between applications, with various benefits:
 
 ### For a single application
 
