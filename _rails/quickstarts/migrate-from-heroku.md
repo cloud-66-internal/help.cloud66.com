@@ -28,7 +28,7 @@ You can migrate your application from Heroku to Cloud 66 in 3 steps:
 
 Before you begin migrating your application please check you have the following:
 
-* **A Cloud 66 Account** &mdash; If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. There is a free community plan and you'll get full unlimited access to all products free for 14 days.
+* **A Cloud 66 Account** &mdash; If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. You'll get free unlimited access to all products for 4 weeks.
 * **A Git repo containing your application code** &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.
 * **A Cloud Account or Your Own Servers** &mdash; See below.
 
