@@ -943,6 +943,10 @@
   to = "/maestro/how-to-guides/deployment/symlink-folders.html"
 
 [[redirects]]
+  from = "/legacy_docker/how-to-guides/security/ssl-termination-on-load-balancers"
+  to = "/maestro/how-to-guides/security/ssl-termination-on-load-balancers.html"
+
+[[redirects]]
   from = "/maestro/tutorials/scaling"
   to = "/maestro/how-to-guides/scaling/"
 
