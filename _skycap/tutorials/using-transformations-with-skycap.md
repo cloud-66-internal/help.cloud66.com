@@ -22,7 +22,7 @@ Skycap Transformations are based on [Alterant](https://www.cloud66.com/alterant)
 
 Before you start, please check you have the following:
 
-- **A Cloud 66 Account** — If you don't already have one [sign up for a Cloud 66 account](https://app.cloud66.com/users/sign_up). There's a free community plan and you'll get full unlimited access to all products free for 14 days.
+- **A Cloud 66 Account** — If you don't already have one [sign up for a Cloud 66 account](https://app.cloud66.com/users/sign_up). You'll get free unlimited access to all products for 4 weeks.
 - **An existing application set up in Skycap** — You can learn how to do that with our [Getting started with Skycap](/skycap/quickstarts/getting_started.html) guide.
 - **An existing Formation defined in Skycap** — You can learn how to do that with our [Getting started with Skycap Formations](/skycap/quickstarts/using_formations.html) guide.
 
