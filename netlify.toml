@@ -947,6 +947,10 @@
   to = "/maestro/how-to-guides/security/ssl-termination-on-load-balancers.html"
 
 [[redirects]]
+  from = "/cloud-providers/cloud-gce.html"
+  to = "/rails/how-to-guides/clouds/cloud-gce.html"
+
+[[redirects]]
   from = "/maestro/tutorials/scaling"
   to = "/maestro/how-to-guides/scaling/"
 
