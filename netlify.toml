@@ -935,6 +935,22 @@
   to = "/maestro/how-to-guides/nginx/nginx-deny.html"
 
 [[redirects]]
+  from = "/legacy_docker/tutorials/docker-introduction.html"
+  to = "/maestro/the-basics/concepts-and-terminology.html#containers--containerization"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/symlink-folders"
+  to = "/maestro/how-to-guides/deployment/symlink-folders.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/security/ssl-termination-on-load-balancers"
+  to = "/maestro/how-to-guides/security/ssl-termination-on-load-balancers.html"
+
+[[redirects]]
+  from = "/cloud-providers/cloud-gce.html"
+  to = "/rails/how-to-guides/clouds/cloud-gce.html"
+
+[[redirects]]
   from = "/maestro/tutorials/scaling"
   to = "/maestro/how-to-guides/scaling/"
 

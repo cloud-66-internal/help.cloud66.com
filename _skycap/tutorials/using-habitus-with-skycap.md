@@ -22,7 +22,7 @@ Essentially Habitus allows you the define a workflow that controls the order and
 
 Before you start, please check you have the following:
 
-* **A Cloud 66 Account** &mdash; If you don't already have one [sign up for a Cloud 66 account](https://app.cloud66.com/users/sign_up). There's a free community plan and you'll get full unlimited access to all products free for 14 days.
+* **A Cloud 66 Account** &mdash; If you don't already have one [sign up for a Cloud 66 account](https://app.cloud66.com/users/sign_up). You'll get free unlimited access to all products for 4 weeks.
 
 * **A Habitus enabled project repository** &mdash; If you don’t have one, we have [a sample project](https://github.com/cloud66-samples/pilot-db/tree/dev) that you can use for this tutorial.
 
