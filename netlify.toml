@@ -955,6 +955,130 @@
   to = "/maestro/how-to-guides/scaling/"
 
 [[redirects]]
+  from = "/legacy_docker"
+  to = "/maestro"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/databases/database-customization.html"
+  to = "/maestro/how-to-guides/databases/database-customization.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/databases/seeding-db.html"
+  to = "/maestro/how-to-guides/databases/database-management.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/databases/shells/sharing-db.html"
+  to = "/maestro/how-to-guides/databases/shells/sharing-db.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/databases/shells/using-master-data-staging.html"
+  to = "/maestro/how-to-guides/databases/shells/using-master-data-staging.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/deployment-gateway.html"
+  to = "/maestro/how-to-guides/deployment/deployment-gateway.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/deployment-history.html"
+  to = "/maestro/how-to-guides/deployment/deployment-history.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/server-deletion.html"
+  to = "/maestro/how-to-guides/deployment/server-deletion.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/service-storage.html"
+  to = "/maestro/how-to-guides/deployment/service-storage.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/setting-up-custom-livelogs.html"
+  to = "/maestro/how-to-guides/deployment/setting-up-custom-livelogs.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/shells/access-your-code.html"
+  to = "/maestro/how-to-guides/common-tools/access-your-code.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/shells/github.html"
+  to = "/maestro/how-to-guides/common-tools/access-your-code.html#using-github-with-maestro"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/shells/manage-stacks-chatops.html"
+  to = "/maestro/how-to-guides/deployment/manage-stacks-chatops.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/shells/zero-downtime-deploy.html"
+  to = "/maestro/how-to-guides/deployment/"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/security/multi-cert_haproxy.html"
+  to = "/maestro/how-to-guides/security/multi-cert_haproxy.html"
+
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/security/nginx-ssl-ciphers.html"
+  to = "/maestro/how-to-guides/security/nginx-ssl-ciphers.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/account/account-protection.html"
+  to = "/maestro/account/account-protection.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/account/notifications.html"
+  to = "/maestro/account/notifications.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/account/two-step-verification.html"
+  to = "/maestro/account/two-factor-authentication.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/deployment-authorisation.html"
+  to = "/maestro/how-to-guides/deployment/deployment-authorization.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/integrations/integration-with-weave-scope.html"
+  to = "/maestro/integrations/integration-with-weave-scope.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/non-recommended-server-sizes.html"
+  to = "/maestro/references/non-recommended-server-sizes.html"
+
+[[redirects]]
+  from = "/legacy_docker/resources/security-wall-of-fame.html"
+  to = "/maestro/resources/security-wall-of-fame.html"
+
+[[redirects]]
+  from = "/legacy_docker/resources/security.html"
+  to = "/maestro/resources/security.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/database-backup.html"
+  to = "/maestro/how-to-guides/databases/shells/manage-backups.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/database-management.html"
+  to = "/maestro/how-to-guides/databases/database-management.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/deploy-hooks.html"
+  to = "/maestro/tutorials/deploy-hooks.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/failover-groups.html"
+  to = "/maestro/tutorials/failover-groups.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/network-configuration.html"
+  to = "/maestro/references/network-configuration.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/registered-servers.html"
+  to = "/maestro/how-to-guides/deployment/registered-servers.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/service-monitoring.html"
+  to = "/maestro/references/service-monitoring.html"
+
+[[redirects]]
   from = "/cloud-66-toolbelt/*"
   to = "/"
 
