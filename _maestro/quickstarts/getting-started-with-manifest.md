@@ -90,7 +90,7 @@ docker:
       same_as: master
 redis:
   configuration:
-    version: 4.0.10
+    version: 5.0.5
   servers:
   - server:
       unique_name: master
