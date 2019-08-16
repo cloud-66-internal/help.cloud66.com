@@ -451,7 +451,7 @@ production:
 
 ### Redis
 
-- **version**: Specify the version of Redis you want to install.
+- **version**: Specify the version of Redis you want to install (defaults to 5.0).
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
@@ -460,7 +460,7 @@ production:
 production:
   redis:
     configuration:
-      version: 2.6.10
+      version: 5.0.5
       root_disk_size: 100
       root_disk_type: ssd
 ```
