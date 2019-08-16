@@ -61,7 +61,7 @@ You are free to specify a version for a number of components in your [manifest f
 <tr><td>Passenger Enterprise</td><td>5.3.7</td></tr>
 <tr><td>PostGIS</td><td>2.5</td></tr>
 <tr><td>PostgreSQL</td><td>11</td></tr>
-<tr><td>Redis</td><td>4.0.12</td></tr>
+<tr><td>Redis</td><td>5.0</td></tr>
 <tr><td>Ruby</td><td>2.6.3</td></tr>
 <tr><td>Scaleio</td><td>2.0.7120</td></tr>
 <tr><td>Stack</td><td>1.4.6</td></tr>
