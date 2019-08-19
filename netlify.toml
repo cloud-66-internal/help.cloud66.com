@@ -640,7 +640,7 @@
 
 [[redirects]]
   from = "/maestro/tutorials/service-monitoring.html"
-  to = "/maestro/references/service-monitoring.html"
+  to = "/maestro/references/server-monitoring.html"
 
 [[redirects]]
   from = "/skycap/how-to-guides/deployment/shells/migrate-the-stack.html"
@@ -1076,7 +1076,19 @@
 
 [[redirects]]
   from = "/legacy_docker/tutorials/service-monitoring.html"
-  to = "/maestro/references/service-monitoring.html"
+  to = "/maestro/references/server-monitoring.html"
+
+[[redirects]]
+  from = "/how-to-guides/deployment/service-storage.html"
+  to = "/maestro/how-to-guides/deployment/service-storage.html"
+
+[[redirects]]
+  from = "/legacy_docker/tutorials/server-monitoring"
+  to = "/maestro/references/server-monitoring.html"
+
+[[redirects]]
+  from = "/maestro/references/service-monitoring.html"
+  to = "/maestro/references/server-monitoring.html"
 
 [[redirects]]
   from = "/cloud-66-toolbelt/*"
