@@ -2,6 +2,12 @@
 
 Toolbelt detects your IP, temporarily allows that IP through the firewall and then tunnels through to the server via SSH. There are some common issues that can occur with this process, which this guide addresses.
 
+### Have you recently restarted your server?
+
+<div class="notice"><p>
+Cloud providers frequently change the public IP addresses of servers when they are restarted. This includes all events that require the server to be shut down - including things like adding more capacity, or upgrading software components. This can (temporarily) cause our firewall to block connections to or from that server until our system detects the IP change and updates the firewall rules. This problem should resolve itself within a few minutes. If you'd like to avoid this issue completely, we recommend buying static IP addresses from your cloud provider for use with mission critical servers.
+</p></div>
+
 
 ## Debugging using verbose mode
 
