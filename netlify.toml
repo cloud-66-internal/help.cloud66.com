@@ -1091,6 +1091,15 @@
   to = "/maestro/references/server-monitoring.html"
 
 [[redirects]]
+  from = "/legacy_docker/how-to-guides/deployment/service-pause-resume.html"
+  to = "/maestro/how-to-guides/deployment/service-lifecycle-management.html"
+  
+[[redirects]]
+  from = "/legacy_docker/references/integrations/integration-with-travis-ci.html"
+  to = "/maestro/integrations/integration-with-travis-ci.html"
+
+
+[[redirects]]
   from = "/cloud-66-toolbelt/*"
   to = "/"
 
