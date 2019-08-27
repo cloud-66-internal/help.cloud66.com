@@ -16,14 +16,22 @@ Most deployments with Cloud 66 go smoothly, but if you've hit a snag it's usuall
 
 ## Problems reaching your servers
 
+
 If Cloud 66 is reporting that your server is not online or can't be reached, then follow these steps:
 
-1. Check with your cloud (or physical server) provider to ensure the servers are online and not locked up by excessive load. Reactivating or manually rebooting the machines via your Cloud provider dashboard may be necessary.
-2. If the servers appear to be functional, try to connect to them [via SSH](https://help.cloud66.com/rails/how-to-guides/common-tools/ssh-to-server.html) using the Cloud 66 Toolbelt (if this fails, try to connect via the [manual](https://help.cloud66.com/rails/how-to-guides/common-tools/ssh-to-server.html#manual-shell-access) method). 
-3. If you still can't connect, check that your firewall settings on your [cloud provider](https://help.cloud66.com/rails/how-to-guides/common-tools/ssh.html#cloud-providers-firewall-api-has-delay) are not blocking access to the servers for port 22 (which is the ssh connection port).
-4. Try connecting via your cloud provider's virtual / emulated terminal (where available) and check that the permissions have not been changed in your `.ssh` directories
+1. Have you recently restarted your server? See the note below.
+2. If not, check with your cloud (or physical server) provider to ensure the servers are online and not locked up by excessive load. Reactivating or manually rebooting the machines via your Cloud provider dashboard may be necessary.
+3. If the servers appear to be functional, try to connect to them [via SSH](https://help.cloud66.com/rails/how-to-guides/common-tools/ssh-to-server.html) using the Cloud 66 Toolbelt (if this fails, try to connect via the [manual](https://help.cloud66.com/rails/how-to-guides/common-tools/ssh-to-server.html#manual-shell-access) method). 
+4. If you still can't connect, check that your firewall settings on your [cloud provider](https://help.cloud66.com/rails/how-to-guides/common-tools/ssh.html#cloud-providers-firewall-api-has-delay) are not blocking access to the servers for port 22 (which is the ssh connection port).
+5. Try connecting via your cloud provider's virtual / emulated terminal (where available) and check that the permissions have not been changed in your `.ssh` directories
 
 If all of these fail, contact our support team and we will assist wherever possible. 
+
+### Have you recently restarted your server?
+
+<div class="notice"><p>
+Cloud providers frequently change the public IP addresses of servers when they are restarted. This includes all events that require the server to be shut down - including things like adding more capacity, or upgrading software components. This can (temporarily) cause our firewall to block connections to or from that server until our system detects the IP change and updates the firewall rules. This problem should resolve itself within a few minutes. If you'd like to avoid this issue completely, we recommend buying static IP addresses from your cloud provider for use with mission critical servers.
+</p></div>
 
 ## Problems with application components
 
