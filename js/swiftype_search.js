@@ -42,7 +42,8 @@ $(function() {
         resultContainingElement: '#js_search_results_list',
         engineKey: 'bN_9bsG93qxs_9H4Jc27',
         renderFunction: searchResultRenderFunction,
-        documentTypes: selectedProduct
+        documentTypes: selectedProduct,
+        perPage: 20
     });
 
     const query = getQuery();
