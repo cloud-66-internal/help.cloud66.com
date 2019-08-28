@@ -107,8 +107,6 @@ var searchResultRenderFunction = function(documentType, item) {
         description: item['description'],
         product: item['product'],
     };
-    var q =
-    console.log(q);
 
     return resultTemplate.render(data);
 };
@@ -138,13 +136,18 @@ $(function() {
         documentTypes: selectedProduct
     });
 
-
     const query = getQuery();
     if ( query ) {
         $('#search-query-home').val(query);
         $('#search-form').submit();
         $('#js_search_term').html( query );
     }
+
+    $( "#search-form" ).submit(function( event ) {
+        console.log('submit the form');
+        var searchTerm = $('#search-query-home').val();
+        $('#js_search_term').text( searchTerm );
+    });
 });
 </script>
 </body>
