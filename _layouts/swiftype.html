@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cloud 66 Documentation</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25691976-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-25691976-6');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Cloud 66 - Documentation">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Cloud 66 Documentation">
+    <meta property="og:description" content="Guides, Tutorials and Documentation for Cloud 66 Products">
+    <meta property="og:image" content="/images/ui/logo.svg">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Cloud 66 Documentation">
+    <meta name="twitter:description" content="Guides, Tutorials and Documentation for Cloud 66 Products">
+    <meta name="twitter:image" content="/images/ui/logo.svg">
+
+    <link rel="icon" href="/images/ui/favicon.ico" type="image/png">
+    {% include styles.html %}
+    <link rel="stylesheet" href="/css/searchResults.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://twitter.github.com/hogan.js/builds/2.0.0/hogan-2.0.0.js"></script>
+    <script type='text/javascript' src='js/jquery.swiftype.search.js'></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type="text/javascript" src="js/swiftype_search.js"></script>
+
+</head>
+
+<body class="Body Body--home">
+    <h1>Swiftype API search example</h1>
+
+
+    <form>
+      <input id="st-search-input" class="st-search-input" type="text" placeholder="Search...">
+
+	  <!--
+      <input type="radio" name="document_type" value="all" id="all" checked="checked"> <label for="all">All</label>
+      <input type="radio" name="document_type" value="rails" id="rails"> <label for="rails">Rails</label>
+      <input type="radio" name="document_type" value="node" id="node"> <label for="node">Node</label>
+		 -->
+    </form>
+
+	<div id="name">
+		<h3>Content</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+
+    <div id="st-results-container">
+		search results here
+    </div>
+
+
+
+
+
+    <script type="text/javascript">
+{% raw %}
+var resultTemplate = Hogan.compile('<ul class="SearchResults">' +
+										'<li class="SearchResults-item">' +
+											'<a href="{{url}}" class="SearchResults-link">' +
+												'<h3 class="SearchResults-subTitle">{{{title}}}</h3>' +
+                                   				'<p class="SearchResults-text">{{{description}}}</p>' +
+								   				'<div class="SearchResults-ico SearchResults-ico--{{{product}}}">{{{product}}}</div>' +
+											'</a>' +
+								   		'</li>' +
+									'</ul>');
+{% endraw %}
+
+var searchResultRenderFunction = function(documentType, item) {
+  var data = {
+    url: item['url'],
+    title: item['title'],
+	description: item['description'],
+	product: item['product'],
+  };
+
+  if (documentType === 'videos') {
+    data.body = (item['highlight']['caption'] || Swiftype.htmlEscape(item['caption']));
+  } else if (documentType === 'channels') {
+    data.body = (item['highlight']['description'] || Swiftype.htmlEscape(item['description']));
+  }
+  console.log(documentType);
+  console.log(item);
+  return resultTemplate.render(data);
+};
+
+var autocompleteTemplate = Hogan.compile('<p class="title">{{title}}</p>');
+
+var autocompleteRenderFunction = function(documentType, item) {
+  var data = {
+    thumbnailUrl: item['thumbnail_url'],
+    title: Swiftype.htmlEscape(item['title'])
+  };
+
+  return autocompleteTemplate.render(data);
+};
+
+var selectedProduct = function() {
+  var value = $("input[name=document_type]:radio:checked").val();
+  if (value === 'all') {
+    return [];
+  } else {
+    return [value];
+  }
+};
+
+$(function() {
+  $('#st-search-input').swiftypeSearch({
+    resultContainingElement: '#st-results-container',
+    engineKey: 'bN_9bsG93qxs_9H4Jc27',
+    renderFunction: searchResultRenderFunction,
+	filters: {'product': 'Rails'},
+    documentTypes: selectedProduct
+  });
+});
+    </script>
+  </body>
+</html>
