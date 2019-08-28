@@ -1545,6 +1545,11 @@ body.Body--home #search-query-nav {
 .st-next {
     padding-left: 8px;
 }
+// cancel the padding when only 1 paging link
+div.st-page a:only-child {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 
 
 .SearchResults-ico {
