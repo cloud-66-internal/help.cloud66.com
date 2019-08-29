@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Configuring for multi-tenancy
 categories: how-to-guides/deployment
-lead: ""
+lead: "Configuring multiple Cloud 66 applications to use a single server"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path:output_ext
@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-Sometimes you need to run multiple applications on the same application. This could be because none of those applications has enough traffic to justify having a dedicated application for itself or it could be because all the apps on the application share many resources. What ever the reason, you can achieve multi-tenancy for your applications with Cloud 66 for Docker.
+Sometimes you need to run multiple applications on the same server. This could be because none of those applications has enough traffic to justify having a dedicated application for itself or it could be because all the apps on the application share many resources. What ever the reason, you can achieve multi-tenancy for your applications with Cloud 66 for Docker.
 
 
 ## Multiple Services

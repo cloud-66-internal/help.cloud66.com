@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Configuring WebSocket
 categories: how-to-guides/deployment
-lead: ""
+lead: "How to configure Websocket for a Cloud 66 Node application"
 legacy: false
 tags: ["websocket"]
 

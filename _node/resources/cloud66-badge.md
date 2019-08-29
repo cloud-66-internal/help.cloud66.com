@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: What is the Cloud66 Badge
 categories: resources
-lead: ""
+lead: "How to add the Cloud 66 badge to your site"
 legacy: false
 
 permalink: /:collection/:path:output_ext

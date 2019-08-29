@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Replacing SQLite
 categories: how-to-guides/databases
-lead: ""
+lead: "How to replace your default SQLite database with MySQL or Postgres"
 tags: ["postgresql","sqlite","mysql"]
 legacy: false
 permalink: /:collection/:path:output_ext
@@ -11,7 +11,7 @@ permalink: /:collection/:path:output_ext
 
 
 ## Instructions
-Switching to another SQL-based database is easy, and the following instructions show you how to switch to MySQL or PostgreSQL in five simple steps.
+The following instructions show you how to switch from SQLite to MySQL or PostgreSQL in five steps.
 
 
 ## MySQL

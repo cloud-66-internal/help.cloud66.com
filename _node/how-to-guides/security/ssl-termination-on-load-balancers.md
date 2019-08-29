@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Enabling SSL termination on load balancers
 categories: how-to-guides/security
-lead: ""
+lead: "How to enable automatic SSL termination on load balancers in Cloud 66 for Node"
 legacy: false
 tags: ["ssl"]
 permalink: /:collection/:path:output_ext

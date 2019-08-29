@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Supported Node.js frameworks
 categories: references
-lead: ""
+lead: "A list of Node frameworks that are natively supported by Cloud 66"
 legacy: false
 tags: ["frameworks"]
 permalink: /:collection/:path:output_ext

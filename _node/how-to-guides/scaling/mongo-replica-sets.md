@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Scaling MongoDB with replica sets
 categories: how-to-guides/scaling
-lead: ""
+lead: "How to scale MongoDB with Cloud 66 using replica sets"
 legacy: false
 tags: ["MongoDB"]
 permalink: /:collection/:path:output_ext
