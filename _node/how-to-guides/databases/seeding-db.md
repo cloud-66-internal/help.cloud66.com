@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Seeding your database
 categories: how-to-guides/databases
-lead: ""
+lead: "How to add seed data to your database"
 tags: ["customization"]
 legacy: false
 permalink: /:collection/:path:output_ext
@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## Seed script
 
-Simply add a bash script to your repository that contains the script for seeding your database.
+The first step is to add a bash script to your repository that contains the script for seeding your database.
 
 This could be a *custom script*, a *custom rake command*, or the default Rails `rake db:seed command` depending on your requirements/implementation. 
 In our example, we will use the default Rails [rake db:seed command](http://edgeguides.rubyonrails.org/migrations.html#migrations-and-seed-data). 

@@ -2,8 +2,8 @@
 layout: post
 template: one-col
 title: Cloud 66 Beta program
-categories: resources/beta-program
-lead: ""
+categories: policies-specifications
+lead: "Details of the Cloud 66 Beta program"
 legacy: false
 
 permalink: /:collection/:path:output_ext

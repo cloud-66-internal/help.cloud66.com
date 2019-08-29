@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Concepts &amp; Terminology
 categories: the-basics
-lead: ""
+lead: "Defining the concepts and terms used in this documentation"
 legacy: false
 tags: ["getting-started"]
 permalink: /:collection/:path:output_ext

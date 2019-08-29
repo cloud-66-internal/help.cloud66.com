@@ -4,7 +4,7 @@ template: one-col
 title: Scaling Node.js
 categories: how-to-guides/deployment
 order: 1
-lead: ""
+lead: "How to scale up your Node application in Cloud 66"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext

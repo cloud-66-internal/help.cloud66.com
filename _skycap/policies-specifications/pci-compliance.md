@@ -4,7 +4,7 @@ template: one-col
 title: PCI DSS compliance guide
 categories: policies-specifications
 order: 4
-lead: ""
+lead: "Details of our compliance with the Payment Card Industry Data Security Standard"
 legacy: false
 
 permalink: /:collection/:path:output_ext
