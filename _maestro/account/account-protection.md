@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: What is Cloud 66 Account Protection?
+title: Cloud 66 account protection
 categories: account
-lead: ""
+lead: "Understanding Cloud 66's automated account security features"
 legacy: false
 tags: ["security", "account"]
 permalink: /:collection/:path:output_ext

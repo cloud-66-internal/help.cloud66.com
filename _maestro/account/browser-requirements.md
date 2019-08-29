@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Browser Requirements
+title: Browser requirements
 categories: account
-lead: ""
+lead: "The minimum browser requirements for Cloud 66's web interfaces"
 legacy: false
 tags: ["account"]
 permalink: /:collection/:path:output_ext
