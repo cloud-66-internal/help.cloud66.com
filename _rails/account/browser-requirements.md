@@ -4,7 +4,7 @@ template: one-col
 title: Browser Requirements
 categories: accounts
 order: 7
-lead: ""
+lead: "The minimum browser requirements for Cloud 66's web interfaces"
 legacy: false
 tags: ["account"]
 permalink: /:collection/:path:output_ext

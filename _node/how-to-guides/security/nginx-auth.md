@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Enabling basic authentication via Nginx
 categories: how-to-guides/security
-lead: ""
+lead: "How to enable Nginx's basic HTTP authentication"
 legacy: false
 change: true
 permalink: /:collection/:path:output_ext

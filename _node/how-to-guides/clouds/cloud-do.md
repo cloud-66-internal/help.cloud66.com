@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: DigitalOcean
+title: Digital Ocean
 categories: how-to-guides/clouds
-lead: ""
+lead: "Configuring Digital Ocean for use with Cloud 66 for Node"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext

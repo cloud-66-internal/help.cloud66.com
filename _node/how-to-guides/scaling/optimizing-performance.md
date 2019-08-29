@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Load testing
 categories: how-to-guides/scaling
-lead: ""
+lead: "How to test your application's ability to handle load"
 legacy: false
 tags: ["customization"]
 

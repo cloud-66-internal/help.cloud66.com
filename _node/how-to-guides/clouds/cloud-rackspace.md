@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Rackspace
 categories: how-to-guides/clouds
-lead: ""
+lead: "Configuring Rackspace for use with Cloud 66 for Node"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext
