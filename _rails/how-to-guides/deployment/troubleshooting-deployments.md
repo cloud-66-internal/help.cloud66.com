@@ -54,6 +54,12 @@ For very intensive migrations involving large database tables or thousands of fi
 
 If you need help with the above, contact our support team and we will assist wherever possible. 
 
+## Check your Git repo settings
+
+If your application is pointing at a Git branch (or repo) that has either been deleted or renamed since the last deployment, this is likely to cause any future deployment attempts to fail. 
+
+Check your application settings (click *Settings & Information* in the right-hand navigation) and check that your repo and branch are both correct. You can change either of them by clicking the *Edit* button to the right.
+
 ## My problem isn't covered by any of the above
 
 For more uncommon problems not covered above, it's worth following these steps before reaching out to support:
