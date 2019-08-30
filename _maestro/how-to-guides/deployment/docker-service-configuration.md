@@ -201,7 +201,7 @@ Below is a table of the available configurations for a given service with a brie
     </tr> 
     <tr> 
      <td> <a href="/maestro/how-to-guides/scaling/scaling.html">constraints</a> </td> 
-     <td> Specifies <a href="/maestro/how-to-guides/scaling/scaling.html">container amount</a> or resource constraints for a service across the cluster. </td> 
+     <td>Limits the <a href="/maestro/how-to-guides/deployment/service-resources.html#limiting-the-number-of-containers">number of containers</a> or the <a href="/maestro/how-to-guides/deployment/service-resources.html">resource usage</a> of a service across the cluster. </td> 
     </tr> 
     <tr> 
      <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html">deploy_command</a> </td> 
@@ -327,7 +327,7 @@ Below is a table of the available configurations for a given service with a brie
     </tr> 
     <tr> 
      <td> <a href="/maestro/how-to-guides/scaling/scaling.html">constraints</a> </td> 
-     <td> Specifies <a href="/maestro/how-to-guides/scaling/scaling.html">container amount</a> or resource constraints for a service across the cluster. </td> 
+     <td> Limits the <a href="/maestro/how-to-guides/deployment/service-resources.html#limiting-the-number-of-containers">number of containers</a> or the <a href="/maestro/how-to-guides/deployment/service-resources.html">resource usage</a> of a service across the cluster. </td> 
     </tr> 
     <tr> 
      <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html">deploy_command</a> </td> 
