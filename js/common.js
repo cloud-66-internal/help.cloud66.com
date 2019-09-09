@@ -29,6 +29,9 @@ $(function () {
    */
 
   function initMobileMenu () {
+     if ( $('body.Body--home').length ) {
+         return;
+     }
     console.log('=== initialize mobile nav ===');
     var mobileBar = document.getElementById('mobile-bar');
     var sidebar = document.querySelector('.sidebar');
@@ -72,6 +75,9 @@ $(function () {
    */
 
   function initSubHeaders () {
+      if ( $('body.Body--home').length ) {
+          return;
+      }
     console.log('=== initialize sub headers ===');
     var each = [].forEach
     var main = document.getElementById('main')
