@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Server IP addresses and hostnames
 categories: references
-lead: ""
+lead: "How server IP addresses and hostnames are allocated and managed in Cloud 66 for Node"
 legacy: false
 tags: ["security"]
 permalink: /:collection/:path:output_ext

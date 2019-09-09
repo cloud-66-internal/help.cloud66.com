@@ -4,7 +4,7 @@ template: one-col
 title: Deployment profiles
 order: 20
 categories: references
-lead: ""
+lead: "Create custom profiles that deploy only selective components of your application"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext

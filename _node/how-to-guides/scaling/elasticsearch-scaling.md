@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Scaling Elasticsearch clusters
 categories: how-to-guides/scaling
-lead: ""
+lead: "How to scale your Elasticsearch clusters through Cloud 66"
 legacy: false
 tags: ["Elasticsearch"]
 permalink: /:collection/:path:output_ext

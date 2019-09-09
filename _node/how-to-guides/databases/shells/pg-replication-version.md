@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Issues replicating data between two versions of PostgreSQL
 categories: Tutorials
-lead: ""
+lead: "Troubleshooting data replication between PostgreSQL servers that use different versions"
 legacy: false
 
 permalink: /:collection/:path:output_ext

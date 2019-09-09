@@ -61,6 +61,7 @@ You are free to specify a version for a number of components in your [manifest f
 <tr><td>Passenger Enterprise</td><td>5.3.7</td></tr>
 <tr><td>PostGIS</td><td>2.5</td></tr>
 <tr><td>PostgreSQL</td><td>11</td></tr>
+<tr><td>Rails*</td><td>All versions from 2.6.3 and up</td></tr>
 <tr><td>Redis</td><td>5.0</td></tr>
 <tr><td>Ruby</td><td>2.6.3</td></tr>
 <tr><td>Scaleio</td><td>2.0.7120</td></tr>
@@ -69,6 +70,8 @@ You are free to specify a version for a number of components in your [manifest f
 <tr><td>Weave</td><td>1.9.8</td></tr>
 <tr><td>White Rabbit (client)</td><td>0.1.5</td></tr>
 </table>
+
+\* We **don't** install a default version of Rails - the version installed is based on the requirements of your application. Versions earlier than 2.6.3 *may* work but have some compatibility issues with Ubuntu 16.04 and 18.04.
 
 
 #### Warning

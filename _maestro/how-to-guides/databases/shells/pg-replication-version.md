@@ -4,7 +4,7 @@ template: one-col
 title: Issues replicating data between two versions of PostgreSQL
 order: 30
 categories: Tutorials
-lead: ""
+lead: "Understanding and troubleshooting problems with replicating data between Postgres databases"
 legacy: false
 
 permalink: /:collection/:path:output_ext

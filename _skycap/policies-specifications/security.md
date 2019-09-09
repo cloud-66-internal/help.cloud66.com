@@ -4,7 +4,7 @@ template: one-col
 title: Security summary
 categories: policies-specifications
 order: 2
-lead: ""
+lead: "A summary of Cloud 66's security measures"
 legacy: false
 
 permalink: /:collection/:path:output_ext
