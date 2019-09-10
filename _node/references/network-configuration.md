@@ -4,9 +4,12 @@ template: one-col
 title:  "Network security &amp; redirect settings"
 legacy: false
 categories: references
+order: 9
 lead: Configure settings for firewall, access control and redirection
 tags: ['network']
 permalink: /:collection/:path:output_ext
 ---
 
-{% include tutorials/network-configuration.md %}
+{% assign product = 'node' %}
+
+{% include tutorials/network-configuration.md product = product %}
