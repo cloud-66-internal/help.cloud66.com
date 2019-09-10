@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cloud 66 Documentation | Search Reults</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25691976-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-25691976-6');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Cloud 66 - Documentation">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Cloud 66 Documentation">
+    <meta property="og:description" content="Guides, Tutorials and Documentation for Cloud 66 Products">
+    <meta property="og:image" content="/images/ui/logo.svg">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Cloud 66 Documentation">
+    <meta name="twitter:description" content="Guides, Tutorials and Documentation for Cloud 66 Products">
+    <meta name="twitter:image" content="/images/ui/logo.svg">
+
+    <link rel="icon" href="/images/ui/favicon.ico" type="image/png">
+    {% include styles.html %}
+    <link rel="stylesheet" href="/css/searchResults.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+    <script type='text/javascript' src="js/jquery.min.js"></script>
+    <script type='text/javascript' src="js/hogan-2.0.0.js"></script>
+    <script type='text/javascript' src='js/jquery.swiftype.search.js'></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type="text/javascript" src="js/swiftype_search.js"></script>
+
+</head>
+
+<body class="Body Body--home">
+
+
+{% include top_nav_bar.html %}
+
+<main id="main">
+    <!-- Search bar. -->
+    <section class="LandingContainer">
+        <form id="search-form" method="get">
+            <input type="text"
+                   id="search-query-home"
+                   name="q"
+                   class="search search--lrg u-fullWidth"
+                   placeholder="Search all product Documentation">
+        </form>
+    </section>
+
+    <!-- Container for the search results, filled in with JavaScript -->
+    <div id="hits" class="Landing">
+        <section class="LandingContainer" id="js_search_results_container">
+            <p id="js_search_title">You searched for <strong class="SearchResults-title" id="js_search_term"></strong></p>
+            <div id="js_search_results_list">
+                <ul class="SearchResults" id="js_search_results_list">
+                    <li>
+                        <p>
+                            <span class="is-loading"></span> Getting Search Results&hellip;
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div id="js_search_results_paging">
+            </div>
+        </section>
+    </div>
+
+</main>
+
+{% include footer.html %}
+</body>
+
+</html>

@@ -1098,6 +1098,18 @@
   from = "/legacy_docker/references/integrations/integration-with-travis-ci.html"
   to = "/maestro/integrations/integration-with-travis-ci.html"
 
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/databases/shells/pg-replication-version.html"
+  to = "/maestro/how-to-guides/databases/database-replication.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/nginx"
+  to = "/maestro/how-to-guides/nginx/"
+
+[[redirects]]
+  from = "/skycap/policies-specifications/technical-specifications.html"
+  to = "/skycap/policies-specifications/"
+
 
 [[redirects]]
   from = "/cloud-66-toolbelt/*"

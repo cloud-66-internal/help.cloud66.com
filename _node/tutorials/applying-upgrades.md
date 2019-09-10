@@ -9,4 +9,4 @@ tags: ['upgrade', 'update']
 permalink: /:collection/:path:output_ext
 ---
 
-{% include tutorials/applying-upgrades.md %}
+{% include how-to-guides/deployment/applying-upgrades.md %}

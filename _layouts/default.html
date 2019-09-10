@@ -26,7 +26,7 @@
     <meta class="swiftype" name="description" data-type="string" content="{{ page.lead }}" />
     <meta class="swiftype" name="product" data-type="string" content="{{ page.collection | capitalize }}" />
     <meta class="swiftype" name="category" data-type="string" content="{{ page.categories }}" />
-    
+
     <!-- Open Graph: Social Media -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{ page.title }} • {{ page.collection | capitalize }}">
@@ -64,13 +64,15 @@
                     <div class="sidebar-inner">
 
                         <!-- Mobile search form -->
+                        <!--
                         <ul class="main-menu">
                             <li>
                                 <form id="search-form">
                                     <input type="text" id="search-query-sidebar" class="search">
                                 </form>
-                            </li> -->
-                        </ul><!--/.main-menu-->
+                            </li>
+                        </ul>
+                        -->
 
                         <!-- ==== The main left hand navigation list ==== -->
                         {% include left_nav.html %}
