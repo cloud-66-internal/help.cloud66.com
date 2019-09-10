@@ -1110,6 +1110,21 @@
   from = "/skycap/policies-specifications/technical-specifications.html"
   to = "/skycap/policies-specifications/"
 
+[[redirects]]
+  from = "/legacy_docker/references/build-grid"
+  to = "/maestro/the-basics/concepts-and-terminology.html#buildgrid-and-build-minutes"
+  
+[[redirects]]
+  from = "/legacy_docker/references/reserved-tags"
+  to = "/maestro/references/reserved-tags.html"
+  
+[[redirects]]
+  from = "/legacy_docker/resources/beta-program/cloud-66-beta-program.html"
+  to = "/maestro/resources/cloud-66-beta-program.html"
+  
+[[redirects]]
+  from = "/legacy_docker/tutorials/env-vars.html"
+  to = "/maestro/tutorials/env-vars.html"  
 
 [[redirects]]
   from = "/cloud-66-toolbelt/*"
