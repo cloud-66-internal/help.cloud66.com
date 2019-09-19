@@ -1127,6 +1127,10 @@
   to = "/maestro/tutorials/env-vars.html"  
 
 [[redirects]]
+  from = "/skycap/how-to-guides/deployment/service-network-configuration.html"
+  to = "/maestro/how-to-guides/deployment/service-network-configuration.html"
+
+[[redirects]]
   from = "/cloud-66-toolbelt/*"
   to = "/"
 
