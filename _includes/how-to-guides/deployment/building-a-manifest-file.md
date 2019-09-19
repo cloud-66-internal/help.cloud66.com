@@ -64,6 +64,7 @@ Next, select which component you would like to specify settings for. You can cho
 ### Docker
 
 - **version**: Specify the version of Docker you want to install.
+- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **weave_version** (_Optional_): Specify the version of Weave you want to install.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers.   
  <span style="background-color: #FFFF00"> Note that you must provide [**subnet_id**](#servers) for all servers in your application.</span>
@@ -106,7 +107,6 @@ production:
 ### ElasticSearch
 
 - **version**: Specify the version of ElasticSearch you want to install.
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 
@@ -148,7 +148,6 @@ The version of GlusterFS currently offered via the Cloud 66 Add-in is not suppor
 </p></div>
 
 - **version**: Specify the version of GlusterFS you want to install.
-- **operating_system** (_Optional_): `ubuntu1604`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is `ssd`.
 - **replica_count** : Number of nodes in _GlusterFS cluster_ which a data will be replicated on it(i.e replica count 2 means your data exist on two nodes). Default value is 1.
@@ -205,7 +204,6 @@ production:
 - **memory**: Specify maximum memory (in MB) that can be used (default value is 64).
 - **port**: Specify connection port (default value is 11211).
 - **listen_ip**: Specify which IP address to listen on (default value is 0.0.0.0).
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 
 ```
 production:
@@ -222,7 +220,6 @@ production:
 ### MongoDB
 
 - **version**: Specify the version of MongoDB you want to install (can only be set during application build).
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
@@ -242,7 +239,6 @@ production:
 ### MySQL
 
 - **version**: Specify the version of MySQL you want to install. Valid values are 5.7 or 8.0 (can only be set during application build).
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **engine**: Specify the MySQL engine you want to install. Valid values are 'mysql' and 'percona' (can only be set during application build).
@@ -253,7 +249,6 @@ production:
   mysql:
     configuration:
       version: 5.7
-      operating_system: ubuntu1604
       root_disk_size: 100
       root_disk_type: ssd
       engine: percona
@@ -325,7 +320,6 @@ If you need a newer version of Node, you can install one using the same method a
 ### PostgreSQL
 
 - **version**: Specify the version of PostgreSQL you want to install (can only be set during application build).
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **postgis**: Specify whether to include PostGIS (can be added after initial application build).
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
@@ -347,8 +341,6 @@ production:
 ### PostGIS
 
 - **version**: Specify the version of PostGIS you want to install.
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
-
 ```
 production:
   postgresql:
@@ -452,7 +444,6 @@ production:
 ### Redis
 
 - **version**: Specify the version of Redis you want to install (defaults to 5.0).
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 
