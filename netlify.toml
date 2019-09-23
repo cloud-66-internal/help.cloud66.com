@@ -1131,6 +1131,18 @@
   to = "/maestro/how-to-guides/deployment/service-network-configuration.html"
 
 [[redirects]]
+  from = "/legacy_docker/references/shells/toolbelt"
+  to = "/maestro/references/toolbelt.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/manage-stacks-chatops.html"
+  to = "/maestro/how-to-guides/deployment/manage-stacks-chatops.html"
+
+[[redirects]]
+  from = "/maestro/resources/security-wall-of-fame.html"
+  to = "/maestro/"
+
+[[redirects]]
   from = "/cloud-66-toolbelt/*"
   to = "/"
 
