@@ -143,10 +143,10 @@ The hook below will copy a file from your repository to your *tmp* folder and ex
 
 ```
 production: # Environment
-    after_rails: # Hook point
+    after_nginx: # Hook point
       - source: /.cloud66/script.sh # Hook type
         destination: /tmp/script.sh
-        target: rails # Hook fields
+        target: any # Hook fields
         execute: true
         apply_during: build_only
 ```
