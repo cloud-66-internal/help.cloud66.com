@@ -96,10 +96,10 @@ The hook below will copy a file from your repository to your *tmp* folder and ex
 
 ```
 production: # Environment
-    after_rails: # Hook point
+    after_nginx: # Hook point
       - source: /.cloud66/script.sh # Hook type
         destination: /tmp/script.sh
-        target: rails # Hook fields
+        target: any # Hook fields
         execute: true
         apply_during: build_only
 ```
@@ -141,6 +141,6 @@ before_nginx:
 ## What's next?
 
 * Dig deeper with our [in-depth guide](/{{page.collection}}/references/deploy-hooks-syntax.html) to hook syntax
-* Learn how to use [Manifest files](/rails/quickstarts/getting-started-with-manifest.html) to customize the components of your application 
+* Learn how to use [Manifest files](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) to customize the components of your application 
 * Learn how to add custom [environment variables](/{{page.collection}}/tutorials/env-vars.html) to your application
 * Learn how to use [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) - a powerful tool for configuring the components of your application.
