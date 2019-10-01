@@ -34,8 +34,14 @@ Every server fired up with Cloud 66 has a unique animal-themed name. This should
 
 Load Balancers also get a name from Cloud 66 DNS. The load balancer names look like `[app_name].[environment].c66.me`. For example, the DNS could look like: `myapp.test.c66.me`. Production applications don't have the environment in their names, for example `myapp.c66.me`.
 
+If you need more detail on the best way to configure DNS records with Cloud 66 please read our [detailed how-to guide](/maestro/how-to-guides/deployment/configure-dns.html).
+
 
 ## Finding your Cloud 66 hostname
 
-To find your Cloud 66 hostname, start by visiting your Application Overview. From there, click into the web server group for the server you would like the hostname for (eg. _Rails server_). Next, click the name of your server. This page displays your server _Primary address_ (hostname) as well as the _Secondary address_ (IP address).
+To find the Cloud 66 hostname for any server: 
+
+1. Open your Dashboard and click on the application 
+2. Click the _Server_ tab.
+3. Click the name of your server. This page displays your server's _Primary address_ (hostname) as well as the _Secondary address_ (IP address).
 
