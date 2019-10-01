@@ -57,4 +57,4 @@ This method creates a 301 permanent redirect to a specified subdomain for all ro
 2. Create a CNAME record with value `www` pointed at the Cloud 66 hostname.
 
 ### Important
-<div class="notice notice-warning"><p>This method will not work if you are serving content with SSL and only works for HTTP traffic (i.e. not TCP/UDP or other protocols).</a></div>
+<div class="notice notice-warning"><p>This method will not work if you are serving content with SSL and only works for standard HTTP traffic (i.e. not TCP/UDP or other protocols).</p></div>
