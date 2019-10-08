@@ -26,10 +26,11 @@ Cloud 66 defaults to the best available deployment strategy for your web server.
 
 ## Changing your application's deployment strategy
 
-There are two ways to choose a deployment strategy for an app:
+There are three ways to set a deployment strategy for an app:
 
 1. Using the Dashboard and selecting "Deploy with options"
-2. Setting deployment strategy using Cloud 66 Toolbelt
+2. Creating a deployment profile that defines a strategy
+3. Setting deployment strategy using Cloud 66 Toolbelt
 
 ### Using "Deploy with options"
 
