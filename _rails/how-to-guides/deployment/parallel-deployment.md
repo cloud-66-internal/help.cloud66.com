@@ -18,7 +18,7 @@ Your application's deployment strategy dictates how we push changes out to your 
 2. Parallel deployment 
 3. Rolling deployment 
 
-We cover how to set the strategy for your application, as well as the [pros and cons](#pros-and-cons-of-each-deployment-strategy) of each strategy below.
+We cover how to set the strategy for your application, as well as the [pros and cons](#pros-and-cons-of-each-deployment-strategy) of each strategy below. 
 
 #### Note
 <div class="notice"><p>
@@ -79,6 +79,10 @@ All the deployment strategies have a few things in common:
 - Database migrations always occur first, regardless of strategy. Given that some of your servers will be running legacy code for a (hopefully short) period, you should follow best practice around migrations. For example, don't delete columns/tables that are currently in use by legacy code.
 - By definition all three strategies require at least some of your servers to be unavailable during deployment - the only difference is how many servers, and for how long. If your application has no redundancy, we strongly recommend scaling your application up (even temporarily).
 
+#### Tip
+<div class="notice"><p>
+If you're planning to use parallel or rolling deployments, we recommend <a href="/rails/how-to-guides/deployment/deployment-health-checks.html">adding health checks</a> to your deployment process. </p></div>
+
 ### Serial deployment
 
 In this strategy we deploy to each server one at a time. We take each server off the load balancer and then add it back once the deployment has succeeded. If a server fails to deploy we will halt the process and alert you. 
@@ -121,3 +125,5 @@ Rolling deployments work as follows:
     <td>Requires at least 4 webservers and a load balancer. Half your servers will be unavailable during deployment so load on the application needs to be managed carefully</td>
   </tr>
 </table>
+
+
