@@ -58,7 +58,8 @@ Next, select which component you would like to specify settings for. You can cho
 *   [PostgreSQL](#postgresql)
 *   [Redis](#redis) {% if include.product == "rails" %}
 *   [Sinatra](#sinatra)
-*   [Rails](#rails) {% endif %}
+*   [Rails](#rails) 
+*   [Rails health checks](#rails-rack-deployment-health-checks){% endif %}
 
 {% if include.product == 'maestro' %}
 ### Docker
@@ -438,6 +439,32 @@ production:
       root_disk_type: ssd
       nameservers: ['8.8.8.8', '8.8.4.4']
 ```
+
+### Rails (Rack) deployment health checks
+
+These checks define tests to confirm whether your application has been successfully deployed, and to mark a deployment as "failed" if any do not pass. They have the following options:
+
+- **protocol**: which protocol(s) to use when running the check. Acceptable values are `http` or `https`
+- **host**: The hostname or IP address that will we called during the check
+- **port**: The port number that must be used when submitting the request. The default is `80` if you set `http` as your protocol and `443` if you set it to `https`
+- **endpoint**: The URL, path or endpoint that should be checked. This can be any URL in the application.
+- **accept**: A comma separated list of the HTTP response codes that should be considered as a "pass" of this check. All values must be enclosed in quotes.  Ranges can be defined with dashes and both the first and last port numbers are included.
+- **timeout**: The wait, in seconds, before the check will time out. The max is 120.
+
+All of these are optional. For more details on health checks please read our [how-to guide](/rails/how-to-guides/deployment/deployment-health-checks.html).
+
+#### Example:
+
+    rails/rack:
+    	configuration:
+    		health:
+    			protocol: 'https'
+    			host: '127.0.0.1'
+    			port: 4430
+    			endpoint: '/'
+    			accept: ["200", "300-399"]
+    			timeout: 30
+
 
 {% endif %}
 
