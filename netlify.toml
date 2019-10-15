@@ -1143,6 +1143,11 @@
   to = "/maestro/"
 
 [[redirects]]
+  from = "/node/tutorials/network-configuration.html"
+  to = "/node/tutorials/service-network-configuration.html"
+
+
+[[redirects]]
   from = "/cloud-66-toolbelt/*"
   to = "/"
 
