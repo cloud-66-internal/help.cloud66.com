@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Application resource monitoring"
 categories: references
-lead: We help you monitor your CPU, memory and disk space
+lead: How to integrate monitoring tools into your Cloud 66 application.
 legacy: false
 tags: ['server', 'operations']
 permalink: /:collection/:path:output_ext

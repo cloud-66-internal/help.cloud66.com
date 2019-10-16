@@ -15,8 +15,7 @@ There are two main ways to add a monitoring service to your application:
 
 Deploy hooks are generally the best choice because they integrate the monitoring tool into your deployment pipeline and ensure it will be rolled out to every server in your application when you scale up, and that the latest version will be fetched whenever you redeploy. 
 
-If you use a deploy hook, you should consider using Cloud 66's [ConfigStore](/how-to-guides/deployment/config-store.html) to manage the configuration variables for the service.
-
+If you use a deploy hook, you should consider using Cloud 66's [custom environment variables](/{{page.collection}}/tutorials/env-vars.html) feature to manage the configuration variables for the service. This will allow you to control configuration without having to commit sensitive config files to your repo. 
 
 ## Common monitoring solutions
 
