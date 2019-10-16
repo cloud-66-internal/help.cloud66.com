@@ -1,13 +1,13 @@
 ---
 layout: post
 template: one-col
-title:  "Server resource monitoring"
+title:  "Application resource monitoring"
 categories: references
 order: 30
-lead: A guide to Collectd - the default Maestro resource monitoring service
+lead: How to integrate monitoring tools into your Cloud 66 application.
 legacy: false
 tags: ['server', 'operations']
 permalink: /:collection/:path:output_ext
 ---
 
-{% include tutorials/server-monitoring.md %}
+{% include references/server-monitoring.md %}

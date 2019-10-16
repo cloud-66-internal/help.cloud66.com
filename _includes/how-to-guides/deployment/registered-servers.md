@@ -4,6 +4,10 @@
 
 Applications can be deployed across a hybrid of cloud and registered servers. In this way you could have, for example, a dedicated server for your database and use burst cloud servers for your front end.
 
+#### Check your firewalls
+<div class="notice notice-warning"><p>Any firewalls or security systems that protect to your servers will need to be configured to work with Cloud 66's specifications (see below).</p></div>
+
+
 ## Register a server
 
 You can add any physical server as a registered server using the website, or the Cloud 66 toolbelt as long as it meets [certain criteria](#server-requirements).
@@ -45,14 +49,23 @@ $ cx register-server --org="My Team" --server=197.23.65.11 --user=root --tags="d
 - **Sudo**: As Cloud 66 connects to your server and provisions applications from scratch, administrator permissions are sometimes necessary. Therefore our script creates a new user to use for deployment that is a member of the sudoers group and that does not require a password to invoke sudo.
 - **Bash**: We currently only support Bourne-again shell (Bash). The error `sh: n: source: not found` during deployment may arise if you are not using the Bash shell.
 - **CPU Architecture**: We only support deploying to 64-bit machines.
+- **Firewalls & security:** Cloud 66 needs the following (TCP) ports open to allow us to deploy and manage your application: 
+	- `80` 
+	- `443`
+	- `22`
+	- In addition we need port `3022` set to allow access from `159.89.253.143` (this IP is static)
+
+If your server is in a cloud with native security groups (such as AWS Security Groups) then you must manually configure them such that your registered servers are able to talk to each other and Cloud 66 via the ports listed above. 
+
+{% if include.product == 'maestro' %}All servers must be allowed to communicate inside the security group on TCP port `6783`, which is needed to create the overlay network (Weave) for [CSv1](/maestro/the-basics/about-maestro.html#version-1-vs-version-2) applications.{% endif %} 
+
+For more detail please read our guide to [Using Cloud 66 through Firewalls].
 
 ## Technical considerations
 
 - Once a server is registered and used, it **cannot be reused** until a fresh copy of Ubuntu is installed. This is to prevent possible conflicts with old files. 
 
 - When an application with Registered Servers is deleted, the Registered Servers will appear in the **Orphaned Servers** list on your Registered Servers page. This list is here to allow operators to see which servers need to be destroyed/reset. Once a server is destroyed/reset it can be manually removed from the Orphaned Servers list.
-
-- If your server is in a cloud with native security groups (such as AWS Security Groups) then you must manually configure them such that your registered servers are able to talk to each other and Cloud 66. Open (at least) TCP ports `80`, `443` and `22` to the outside world. Cloud 66 installs a firewall on each box which blocks port `22`. All servers must be allowed to communicate inside the security group on TCP port `6783`. {% if include.product == 'maestro' %}Port `6783` is needed to create the overlay network (Weave) for [CSv1](/maestro/the-basics/about-maestro.html#version-1-vs-version-2) applications.{% endif %} 
 
 - If the servers running an application are in different regions, then they will not be able to use their internal IPs to communicate with each other, so you will have to change your app to use the external IP environment variables. Keep in mind that this may incur additional traffic costs.
 
