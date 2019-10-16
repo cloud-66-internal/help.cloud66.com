@@ -9,4 +9,4 @@ tags: ['server', 'operations']
 permalink: /:collection/:path:output_ext
 ---
 
-{% include tutorials/server-monitoring.md %}
+{% include references/server-monitoring.md %}
