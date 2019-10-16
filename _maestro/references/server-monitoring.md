@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Server resource monitoring"
+title:  "Application resource monitoring"
 categories: references
 order: 30
 lead: How to integrate monitoring tools into your Cloud 66 application.
