@@ -24,3 +24,9 @@ If your servers are under heavy load - such as high CPU usage or high network tr
 This is a notable variation on the issue described above. An error in your application code may be gradually reserving RAM without ever releasing it. The typical symptoms are that the average usage of RAM climbs consistently over time, as does the swap usage of the disk (as the server tries to compensate by using "virtual memory"), eventually maxing out. 
 
 Note that simply increasing the capacity of your servers will not fix this issue - it will simply prolong the period before RAM is exhausted. The best solution to this issue is to find and fix the leak. A temporary fix is to regularly restart your servers to flush the RAM usage, but we don't recommend this approach for critical and/or production servers.
+
+## "Noisy Neighbours" on shared hosting
+
+Any kind of shared hosting - including most cloud VMs - can be disrupted by a particularly resource-hungry tenant. If your virtual server happens to be allocated to the the same physical host as a particularly "noisy" neighbour (i.e. one that consumes disproportionate CPU, network or disk resources), it can disrupt the operation of your own server. This includes making it impossible to reach the server via SSH.
+
+While this is not particularly common, we have seen several cases over the past few years. If you are experiencing an unexplained and/or intermittent inability to connect to one of your servers, consider asking your hosting provider to confirm that the physical host is not experiencing this kind of disruption.
