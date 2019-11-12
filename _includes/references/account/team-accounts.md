@@ -7,9 +7,13 @@ Adding new users to your Cloud 66 account is a great way to work in a team, and 
 
 The account administrator is the only user who can invite other members and change access rights for these members (unless this privilege is granted to another user). There are two types of users - _Finance users_ and _Application (stack) users_.
 
-Finance users only have access to your _Payment_ page, and can change billing information. They will receive payment notifications (successful and unsuccessful payments), but have no access rights to applications. We do not charge for Finance users.
+### Finance users
 
-Application users have access rights to applications and different part of the organization under Cloud 66. You can specify the exact access rights you would like to grant to per application by choosing a role for them (you can define a customized role). The available roles for application users are:
+*Finance users* only have access to your _Payment_ page, and can change billing information. They will automatically receive email payment notifications (successful and unsuccessful payments), but have no access rights to applications. **We do not charge for Finance users.**
+
+### Application users
+
+*Application users* have access rights to applications and different part of the organization under Cloud 66. You can specify the exact access rights you would like to grant to per application by choosing a role for them (you can define a customized role). The available roles for *Application users* are:
 
 - No role
 - Viewer
@@ -23,8 +27,7 @@ By definition, any user with access to an application will automatically be give
 
 You also have the option of allowing team members to create a new application. The creator of an application becomes its default administrator, although this setting can be changed by the team leader. In addition to this, you can also allow a user to control permissions for others.
 
-## Add a team member
-
+## Add a new user (team member)
 
 1. Open your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on your account avatar (top-right) and select *Account Settings*

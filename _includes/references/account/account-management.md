@@ -6,6 +6,10 @@
 
 You can use this interface to change things like contact details and global account settings like timezone. 
 
+## Add or remove users
+
+You can do this via the *Account Settings* page described above. For detailed help please read our [how-to guide on user management](/{{page.collection}}//account/team-accounts.html).
+
 ## Delete your account
 
 To delete your account: 
