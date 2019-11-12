@@ -47,14 +47,6 @@ Remember to give your application a few minutes to enable this change. Then open
 
 You can still safely redeploy your application while maintenance mode is enabled - the maintenance page will be served until you turn off maintenance mode.
 
-### Add a custom maintenance page
-
-To add your own maintenance page, place your HTML file in the following path of your code repository:
-
-<pre class="terminal">
-/.cloud66/maintenance.html
-</pre>
-
 ## Redirect HTTP to HTTPS
 
 If you have <a href="/maestro/how-to-guides/add-ins/ssl.html">added SSL certificates</a> to an application, you can redirect all traffic to use HTTPS instead of HTTP.

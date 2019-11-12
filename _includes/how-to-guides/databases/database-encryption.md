@@ -11,7 +11,7 @@ This article is concerned with encrypting the data where it is stored (also know
 
 #### Note
 <div class="notice"><p>
-While Cloud 66 doesn’t natively support full database encryption (TDE), there are several options available for encrypting your data - see below.</p></note>
+While Cloud 66 doesn’t natively support full database encryption (TDE), there are several options available for encrypting your data - see below.</p></div>
 
 
 ## Data encryption via the application
