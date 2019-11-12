@@ -9,4 +9,4 @@ legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-{% include tutorials/logging.md %}
+{% include how-to-guides/deployment/logging.md %}
