@@ -101,7 +101,7 @@ The table below is arranged in the order in which each hook point occurs in the 
     </tr>
     <tr>
      <td> after_symlink </td>
-     <td> Runs after the symbolic link to your current code folder has been created. Happens during the code deployment of your application. <a name="afterz"></a></td>
+     <td> Runs after the symbolic link to your current code folder has been created. Happens during the code deployment of your application. This is a suitable hook point for running rake tasks like <kbd>db:migrate</kbd>, <kbd>db:seed</kbd> and <kbd>db:rollback</kbd> <a name="afterz"></a></td>
     </tr>
     <tr>
      <td> after_<kbd>z</kbd> </td>
