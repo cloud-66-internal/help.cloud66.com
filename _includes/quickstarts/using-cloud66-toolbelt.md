@@ -23,6 +23,10 @@ This will automatically open your default browser and take you to your Cloud 66 
 
 It will then ask for your authorization to allow Toolbelt to view, edit, redeploy and administrate your applications and servers. The Dashboard will confirm that it has completed authorization and you can then close the window and start using Toolbelt right away.
 
+### Installing cx without a browser
+
+You can also install a "headless" Toolbelt on servers or machines without a browser. Our [detailed reference guide](/{{page.collection}}/references/toolbelt.html#installing-on-a-server-headless) has details on how to do this.
+
 ### Advanced
 
 The authorization information is stored on your computer in the **~/.cloud66/cx.json** file. Removing this file will remove the authorization code from your client.

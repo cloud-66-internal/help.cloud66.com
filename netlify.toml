@@ -1146,6 +1146,17 @@
   from = "/node/tutorials/network-configuration.html"
   to = "/node/tutorials/service-network-configuration.html"
 
+[[redirects]]
+  from = "/rails/references/network-architecture.html"
+  to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
+
+[[redirects]]
+  from = "/node/references/network-architecture.html"
+  to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/rack-servers/rack-health-check.html"
+  to = "/rails/how-to-guides/deployment/deployment-health-checks.html"
 
 [[redirects]]
   from = "/cloud-66-toolbelt/*"
