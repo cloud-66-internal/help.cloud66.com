@@ -363,7 +363,7 @@ A Rails application type in the manifest file gives you fine control over things
 - **asset_pipeline_precompile**: Specify whether to use asset pipeline compilation - this will be taken into account during redeployment.
 - **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on a new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
-- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment.
+- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment. This is equivalent to the `passenger_pool_max` variable in the [CustomConfig settings for Nginx](/rails/references/nginx.html#boolean-variables) and can be used to set that variable from your Manifest file (i.e. without modifying the Nginx config directly).
 - **locked_passenger_version**: Force the version of passenger to use. Note: this only applies during server build and is not supported on Passenger Enterprise applications.
 - **activeprotect**: Specify a whitelist of IPs that should be ignored by your ActiveProtect configuration.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers. <span style="background-color: #FFFF00">Note that you must provide  [**subnet_id**](#servers) for all servers in your application.</span>
@@ -407,7 +407,7 @@ The manifest file gives you fine control over things like the Ruby version or wh
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
-- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment.
+- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment. This is equivalent to the `passenger_pool_max` variable in the [CustomConfig settings for Nginx](/rails/references/nginx.html#boolean-variables) and can be used to set that variable from your Manifest file (i.e. without modifying the Nginx config directly).
 - **locked_passenger_version**: Force the version of passenger to use. Note: this only applies during server build and is not supported on Passenger Enterprise applications.
 - **activeprotect**: Specify a whitelist of IPs that should be ignored by your ActiveProtect configuration.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers.
