@@ -1,4 +1,4 @@
-We recommend using the [Cloud 66 database backup add-in]({% if page.collection == "maestro" %}/maestro/how-to-guides/add-ins/database-backup.html{% else %}/{{page.collection}}/how-to-guides/add-ins/database-backups.html{% endif %}) to manage and restore database backups, but you can also manage them manually. This includes downloading the backup, decompressing it, moving it to another server and restoring it. 
+We recommend using the [Cloud 66 database backup add-in](/{{page.collection}}/how-to-guides/add-ins/database-backups.html) to manage and restore database backups, but you can also manage them manually. This includes downloading the backup, decompressing it, moving it to another server and restoring it. 
 
 ## Downloading a backup
 
@@ -6,7 +6,7 @@ You can retrieve your backup in one of three ways:
 
 ### 1. Using Cloud 66 Toolbelt
 
-If you are using managed backups, you can retrieve your database backup by using [Cloud 66 Toolbelt]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#about-backup-management). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
+If you are using managed backups, you can retrieve your database backup by using [Cloud 66 Toolbelt](/{{page.collection}}/references/toolbelt.html#about-backup-management). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
 
 ### 2. Via Cloud 66 web UI
 

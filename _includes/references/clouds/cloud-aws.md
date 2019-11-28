@@ -45,10 +45,10 @@ This policy contains the minimum permissions required for Cloud 66 to work via y
 
 ```
 {
-    "Version": "2019-05-09",
+    "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "ResourceLevelActions",
+            "Sid": "Actions",
             "Action": [
                 "ec2:AuthorizeSecurityGroupIngress",
                 "ec2:RevokeSecurityGroupIngress",
@@ -58,16 +58,7 @@ This policy contains the minimum permissions required for Cloud 66 to work via y
                 "ec2:RunInstances",
                 "ec2:StartInstances",
                 "ec2:StopInstances",
-                "ec2:TerminateInstances"
-            ],
-            "Resource": [
-                "*"
-            ],
-            "Effect": "Allow"
-        },
-        {
-            "Sid": "NonResourceLevelActions",
-            "Action": [
+                "ec2:TerminateInstances",
                 "ec2:DescribeAccountAttributes",
                 "ec2:DescribeAvailabilityZones",
                 "ec2:DescribeInstanceAttribute",
@@ -103,6 +94,7 @@ This policy contains the minimum permissions required for Cloud 66 to work via y
                 "elasticloadbalancing:DeleteLoadBalancer",
                 "elasticloadbalancing:DeleteLoadBalancerListeners",
                 "elasticloadbalancing:DeleteLoadBalancerPolicy",
+                "elasticloadbalancing:DeregisterTargets",
                 "elasticloadbalancing:DeregisterInstancesFromLoadBalancer",
                 "elasticloadbalancing:DescribeLoadBalancers",
                 "elasticloadbalancing:DescribeListeners",
