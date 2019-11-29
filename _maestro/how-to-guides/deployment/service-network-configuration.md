@@ -104,3 +104,15 @@ services:
         traffic_matches: ["app.your_domain.com", "*.anotherdomain.com"]
 {% endhighlight %}
 
+
+### Using traffic_matches to reroute all traffic
+
+The `traffic_matches` option can also be used to ensure that any and all traffic hitting your servers is routed to a specific service. To do this, add  `traffic_matches` to that service and set it to match `"_"` (underscore). This is will route any traffic that hits your servers to this service. For example:
+
+{% highlight yaml %}
+    services:
+        <service_name>:
+            traffic_matches: ["_"]
+{% endhighlight %}
+
+Be cautious with this approach as it is effectively a global setting and may disrupt your other services if there are any conflicts.

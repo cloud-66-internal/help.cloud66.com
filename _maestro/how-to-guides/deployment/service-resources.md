@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Setting resource limits"
+title:  "Setting limits for services"
 categories: how-to-guides/deployment
 order: 30
 lead: Managing resource usage for your Docker services
@@ -9,6 +9,10 @@ tags: ['operations', 'service']
 legacy: false
 permalink: /:collection/:path:output_ext
 ---
+
+## Overview
+In general Docker services will consume resources and spawn containers as needed, but you may want to explicitly limit a particularly resource-hungry services, or to set minimum or maximum limits for the number of containers a service may use. 
+
 
 ## Limiting CPU and RAM usage
 
@@ -73,7 +77,18 @@ services:
         </section>
 </div>
 
+## Limiting the number of containers
 
+You can also limit the number of containers that a service may use. You can set both minimum and maximum limits for each service. For example:
+
+```
+services:
+    your_service_name:
+        constraints:
+            min_count: 2
+            max_count: 7
+```
+This would ensure that the service would always have at least 2 containers, but that it would never have more than 7. 
 
 ## Removing existing constraints
 

@@ -58,12 +58,14 @@ Next, select which component you would like to specify settings for. You can cho
 *   [PostgreSQL](#postgresql)
 *   [Redis](#redis) {% if include.product == "rails" %}
 *   [Sinatra](#sinatra)
-*   [Rails](#rails) {% endif %}
+*   [Rails](#rails) 
+*   [Rails health checks](#rails-rack-deployment-health-checks){% endif %}
 
 {% if include.product == 'maestro' %}
 ### Docker
 
 - **version**: Specify the version of Docker you want to install.
+- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **weave_version** (_Optional_): Specify the version of Weave you want to install.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers.   
  <span style="background-color: #FFFF00"> Note that you must provide [**subnet_id**](#servers) for all servers in your application.</span>
@@ -106,7 +108,6 @@ production:
 ### ElasticSearch
 
 - **version**: Specify the version of ElasticSearch you want to install.
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 
@@ -148,7 +149,6 @@ The version of GlusterFS currently offered via the Cloud 66 Add-in is not suppor
 </p></div>
 
 - **version**: Specify the version of GlusterFS you want to install.
-- **operating_system** (_Optional_): `ubuntu1604`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is `ssd`.
 - **replica_count** : Number of nodes in _GlusterFS cluster_ which a data will be replicated on it(i.e replica count 2 means your data exist on two nodes). Default value is 1.
@@ -205,7 +205,6 @@ production:
 - **memory**: Specify maximum memory (in MB) that can be used (default value is 64).
 - **port**: Specify connection port (default value is 11211).
 - **listen_ip**: Specify which IP address to listen on (default value is 0.0.0.0).
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 
 ```
 production:
@@ -222,7 +221,6 @@ production:
 ### MongoDB
 
 - **version**: Specify the version of MongoDB you want to install (can only be set during application build).
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
@@ -242,7 +240,6 @@ production:
 ### MySQL
 
 - **version**: Specify the version of MySQL you want to install. Valid values are 5.7 or 8.0 (can only be set during application build).
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **engine**: Specify the MySQL engine you want to install. Valid values are 'mysql' and 'percona' (can only be set during application build).
@@ -253,7 +250,6 @@ production:
   mysql:
     configuration:
       version: 5.7
-      operating_system: ubuntu1604
       root_disk_size: 100
       root_disk_type: ssd
       engine: percona
@@ -325,7 +321,6 @@ If you need a newer version of Node, you can install one using the same method a
 ### PostgreSQL
 
 - **version**: Specify the version of PostgreSQL you want to install (can only be set during application build).
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **postgis**: Specify whether to include PostGIS (can be added after initial application build).
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
@@ -347,8 +342,6 @@ production:
 ### PostGIS
 
 - **version**: Specify the version of PostGIS you want to install.
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
-
 ```
 production:
   postgresql:
@@ -370,7 +363,7 @@ A Rails application type in the manifest file gives you fine control over things
 - **asset_pipeline_precompile**: Specify whether to use asset pipeline compilation - this will be taken into account during redeployment.
 - **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on a new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
-- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment.
+- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment. This is equivalent to the `passenger_pool_max` variable in the [CustomConfig settings for Nginx](/rails/references/nginx.html#boolean-variables) and can be used to set that variable from your Manifest file (i.e. without modifying the Nginx config directly).
 - **locked_passenger_version**: Force the version of passenger to use. Note: this only applies during server build and is not supported on Passenger Enterprise applications.
 - **activeprotect**: Specify a whitelist of IPs that should be ignored by your ActiveProtect configuration.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers. <span style="background-color: #FFFF00">Note that you must provide  [**subnet_id**](#servers) for all servers in your application.</span>
@@ -414,7 +407,7 @@ The manifest file gives you fine control over things like the Ruby version or wh
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
-- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment.
+- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment. This is equivalent to the `passenger_pool_max` variable in the [CustomConfig settings for Nginx](/rails/references/nginx.html#boolean-variables) and can be used to set that variable from your Manifest file (i.e. without modifying the Nginx config directly).
 - **locked_passenger_version**: Force the version of passenger to use. Note: this only applies during server build and is not supported on Passenger Enterprise applications.
 - **activeprotect**: Specify a whitelist of IPs that should be ignored by your ActiveProtect configuration.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers.
@@ -447,12 +440,37 @@ production:
       nameservers: ['8.8.8.8', '8.8.4.4']
 ```
 
+### Rails (Rack) deployment health checks
+
+These checks define tests to confirm whether your application has been successfully deployed, and to mark a deployment as "failed" if any do not pass. They have the following options:
+
+- **protocol**: which protocol(s) to use when running the check. Acceptable values are `http` or `https`
+- **host**: The hostname or IP address that will we called during the check
+- **port**: The port number that must be used when submitting the request. The default is `80` if you set `http` as your protocol and `443` if you set it to `https`
+- **endpoint**: The URL, path or endpoint that should be checked. This can be any URL in the application.
+- **accept**: A comma separated list of the HTTP response codes that should be considered as a "pass" of this check. All values must be enclosed in quotes.  Ranges can be defined with dashes and both the first and last port numbers are included.
+- **timeout**: The wait, in seconds, before the check will time out. The max is 120.
+
+All of these are optional. For more details on health checks please read our [how-to guide](/rails/how-to-guides/deployment/deployment-health-checks.html).
+
+#### Example:
+
+    rails/rack:
+    	configuration:
+    		health:
+    			protocol: 'https'
+    			host: '127.0.0.1'
+    			port: 4430
+    			endpoint: '/'
+    			accept: ["200", "300-399"]
+    			timeout: 30
+
+
 {% endif %}
 
 ### Redis
 
 - **version**: Specify the version of Redis you want to install (defaults to 5.0).
-- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 

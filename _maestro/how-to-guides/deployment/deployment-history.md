@@ -26,7 +26,7 @@ This timeline includes information about:
 The timeline is available for any Maestro application that has been deployed at least once.
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Build & Deploy*  in the **Application** panel on the right of the screen.
+2. Click on *Deployments*  in the **Application** panel on the right of the screen.
 3. Scroll through the history (it's in descending date order)
 
 The **left-hand side** of the timeline lists every time you took a *Snapshot* of your code (i.e. built it from source), the **right-hand side** list each time you *Published* your application (i.e. deployed the code to servers)

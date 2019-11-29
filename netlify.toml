@@ -1098,6 +1098,65 @@
   from = "/legacy_docker/references/integrations/integration-with-travis-ci.html"
   to = "/maestro/integrations/integration-with-travis-ci.html"
 
+[[redirects]]
+  from = "/legacy_docker/how-to-guides/databases/shells/pg-replication-version.html"
+  to = "/maestro/how-to-guides/databases/database-replication.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/nginx"
+  to = "/maestro/how-to-guides/nginx/"
+
+[[redirects]]
+  from = "/skycap/policies-specifications/technical-specifications.html"
+  to = "/skycap/policies-specifications/"
+
+[[redirects]]
+  from = "/legacy_docker/references/build-grid"
+  to = "/maestro/the-basics/concepts-and-terminology.html#buildgrid-and-build-minutes"
+  
+[[redirects]]
+  from = "/legacy_docker/references/reserved-tags"
+  to = "/maestro/references/reserved-tags.html"
+  
+[[redirects]]
+  from = "/legacy_docker/resources/beta-program/cloud-66-beta-program.html"
+  to = "/maestro/resources/cloud-66-beta-program.html"
+  
+[[redirects]]
+  from = "/legacy_docker/tutorials/env-vars.html"
+  to = "/maestro/tutorials/env-vars.html"  
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/service-network-configuration.html"
+  to = "/maestro/how-to-guides/deployment/service-network-configuration.html"
+
+[[redirects]]
+  from = "/legacy_docker/references/shells/toolbelt"
+  to = "/maestro/references/toolbelt.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/deployment/shells/manage-stacks-chatops.html"
+  to = "/maestro/how-to-guides/deployment/manage-stacks-chatops.html"
+
+[[redirects]]
+  from = "/maestro/resources/security-wall-of-fame.html"
+  to = "/maestro/"
+
+[[redirects]]
+  from = "/node/tutorials/network-configuration.html"
+  to = "/node/tutorials/service-network-configuration.html"
+
+[[redirects]]
+  from = "/rails/references/network-architecture.html"
+  to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
+
+[[redirects]]
+  from = "/node/references/network-architecture.html"
+  to = "/maestro/how-to-guides/deployment/docker-service-configuration.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/rack-servers/rack-health-check.html"
+  to = "/rails/how-to-guides/deployment/deployment-health-checks.html"
 
 [[redirects]]
   from = "/cloud-66-toolbelt/*"

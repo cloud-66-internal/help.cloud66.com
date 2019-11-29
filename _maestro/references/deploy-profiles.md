@@ -10,15 +10,13 @@ tags: ["operations"]
 permalink: /:collection/:path:output_ext
 ---
 
-
-
 ## What are deployment profiles?
 
-Deploy profiles enable you to deploy without having to set the settings each time you need to deploy. Cloud 66 has divided the deploy process into two separate operations, Build and Publish. The build operation builds the code into a docker image, publish is when the built image is pushed to servers. With deploy profiles, you can save different profiles to have different operations on different services, including the way they need to be deployed.
+Deployment profiles enable you to customise the deployment process depending on the situation. For example, you may only want to deploy your front-end servers, and leave your  databases undisturbed. Rather than manually setting this up each time you need it, you can save it as a profile.
 
+Cloud 66 has divided the deployment process into two separate operations, Build and Publish. The build operation builds the code into a docker image, the publish operation pushes the image to your servers. 
 
 ## Option for deployments
-
 
 ### Build / Publish Services
 
@@ -28,7 +26,7 @@ Under this section, you can see all your services are listed. You can choose one
 - **Publish**:   Push the built image to servers.
 
 
-### Deployment Method
+### Deployment strategy
 
 - **Parallel Deployment**: Deploy all the services together.
 - **Serial Deployment**:   Deploy services sequentially.

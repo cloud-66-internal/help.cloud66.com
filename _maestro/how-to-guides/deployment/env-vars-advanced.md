@@ -85,7 +85,7 @@ You can define a new environment variable and reference it to an existing enviro
 
 You can reference another environment variable using the following syntax:  
 
-`{{ENV_VAR}}`
+<kbd>&#123;&#123;ENV_VAR&#125;&#125;</kbd>
 
 or
 
@@ -163,6 +163,23 @@ username: <%= ENV['DB_USER'] %>
 ```
 working_directory "#{ENV['STACK_PATH']}"
 ```
+
+## Using environment variables in a Dockerfile
+
+You can pass environment variables into a Dockerfile during your build process with the `$VARIABLE` syntax, which will be populated with environment variable(s) set on the application. For example, to call a env named `MY_VARIABLE` you would use `ENV MY_VARIABLE "$MY_VARIABLE"` 
+
+The same example, in context:
+
+```
+FROM ruby:latest
+RUN mkdir /myapp
+WORKDIR /myapp
+COPY . /myapp
+ENV MY_VARIABLE "$MY_VARIABLE"
+EXPOSE 3000
+CMD ["/myapp/main.rb"]
+```
+
 
 
 ## Pre-defined environment variables

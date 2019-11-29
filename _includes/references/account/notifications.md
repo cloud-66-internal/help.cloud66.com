@@ -1,7 +1,7 @@
 
 ## Available settings
 
-You can control when and how you would like to receive notifications from Cloud 66. There is a range of events that trigger notifications, which can be sent as emails or via Hipchat, iOS push, Slack or Webhooks.
+You can control when and how you would like to receive notifications from Cloud 66. There is a range of events that trigger notifications, which can be sent as emails or via Slack or Webhooks.
 
 ## Editing account notifications
 
@@ -10,6 +10,9 @@ You can control when and how you would like to receive notifications from Cloud 
 3. Click on *Notifications* in the left panel
 4. Click on the tab for the notification type (either *Account notification* or *Application notifications*)
 5. Next to each notification type, click on the icon(s) of the channel through which you want to be notified. (Clicking the icons of already active channels deactivates them)
+
+#### Billing notifications
+<div class="notice"><p>If you would prefer for your billing notifications to go straight to your finance team, you should <a href="/{{page.collection}}/account/team-accounts.html#finance-users">create a Finance user</a> using their email address, and then (optionally) deactivate finance notifications to your primary account.</p></div>
 
 
 ## Notification channels
@@ -27,20 +30,6 @@ Email notifications are enabled by default for all users. By default, you will g
 [Slack](https://slack.com/) is a real-time messaging, archiving and search application developed by Tiny Speck.
 
 Visit the Slack [Integrations page](https://slack.com/integrations) and select the Cloud 66 integration. Choose the channel you would like to receive notifications in (or create a new one), and click _Add Cloud 66 Integration_. You will then receive a URL, which you can provide in Cloud 66 integration modal.
-
-### Hipchat
-
-<div class="notice notice-danger"><p>
-Hipchat has been <a target="_blank" href="https://www.atlassian.com/partnerships/slack/faq#faq-3ccc5a61-711b-4ef2-9ca2-3a34b2ec143b">discontinued by Atlassian</a> and as a result we're going to sunset our Hitchat support on the 31st of August 2019. Consider migrating to Slack (see above) which we will continue support.
-</p></div>
-
-[Hipchat](http://hipchat.com/) is a hosted realtime chat service by Atlassian, and you can link your account to Cloud 66 to receive notifications on Hipchat.
-
-From the Hipchat _Account settings_ menu, click _API access_, and then the link for _API version 1_. Once on the API v1 page, create an API token. By selecting the Hipchat icon on the _account notifications_ page, you can add this token and select which room you would like your notifications to appear in. 
-
-### iOS
-
-Download the [Cloud 66 iOS application](https://itunes.apple.com/us/app/cloud-66/id642299804?mt=8&uo=4) to get iOS push notifications on your phone.
 
 ### Webhooks
 

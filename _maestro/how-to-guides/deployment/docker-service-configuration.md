@@ -157,7 +157,22 @@ services:
 
 In above example, all defined environment variables except `ENV_NAME1` are referenced to other environment variables. You can specify a default value for referenced environment variables that will be set if there is no suitable link value (such as `ENV_NAME3`).
 
-In addition to this, you can pass environment variables into your Dockerfile during your build process with the `$VARIABLE` syntax, which will be populated with environment variable(s) set on the application.
+## Using environment variables in a Dockerfile
+
+You can pass environment variables into a Dockerfile during your build process with the `$VARIABLE` syntax, which will be populated with environment variable(s) set on the application. For example, to call a env named `MY_VARIABLE` you would use `ENV MY_VARIABLE "$MY_VARIABLE"` 
+
+The same example, in context:
+
+```
+FROM ruby:latest
+RUN mkdir /myapp
+WORKDIR /myapp
+COPY . /myapp
+ENV MY_VARIABLE "$MY_VARIABLE"
+EXPOSE 3000
+CMD ["/myapp/main.rb"]
+```
+
 
 ## Service configuration options
 
@@ -201,7 +216,7 @@ Below is a table of the available configurations for a given service with a brie
     </tr> 
     <tr> 
      <td> <a href="/maestro/how-to-guides/scaling/scaling.html">constraints</a> </td> 
-     <td> Specifies <a href="/maestro/how-to-guides/scaling/scaling.html">container amount</a> or resource constraints for a service across the cluster. </td> 
+     <td>Limits the <a href="/maestro/how-to-guides/deployment/service-resources.html#limiting-the-number-of-containers">number of containers</a> or the <a href="/maestro/how-to-guides/deployment/service-resources.html">resource usage</a> of a service across the cluster. </td> 
     </tr> 
     <tr> 
      <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html">deploy_command</a> </td> 
@@ -327,7 +342,7 @@ Below is a table of the available configurations for a given service with a brie
     </tr> 
     <tr> 
      <td> <a href="/maestro/how-to-guides/scaling/scaling.html">constraints</a> </td> 
-     <td> Specifies <a href="/maestro/how-to-guides/scaling/scaling.html">container amount</a> or resource constraints for a service across the cluster. </td> 
+     <td> Limits the <a href="/maestro/how-to-guides/deployment/service-resources.html#limiting-the-number-of-containers">number of containers</a> or the <a href="/maestro/how-to-guides/deployment/service-resources.html">resource usage</a> of a service across the cluster. </td> 
     </tr> 
     <tr> 
      <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html">deploy_command</a> </td> 

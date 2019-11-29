@@ -130,7 +130,7 @@ The server size can be set by clicking on the cog at the top right the server.
 
 <img alt="Selecting a server size in Maestro" src="/assets/maestro/maestro-getting-started-4.gif">
 
-Learn more about [choosing the right size](/{{page.collection}}/references/non-recommended-server-sizes.html) for your servers.
+Learn more about [choosing the right size](/maestro/references/minimum-specs-kubernetes.html) for your servers.
 
 ## Deploy your app
 

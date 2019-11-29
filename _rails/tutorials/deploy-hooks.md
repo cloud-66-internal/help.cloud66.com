@@ -65,6 +65,7 @@ It's important to understand the order in which hook points will occur in the fl
 
 - `x`, `y` and `z` represent `database & storage engine installation` , `replication configuration` and `application framework installation` respectively.
 - For the ***after_checkout*** and ***after_bundle*** hook points, the `$STACK_PATH` points to the latest code, even though **after_symlink** has not run yet.
+- Rake tasks should only be run ***after_symlink*** or later to ensure the database is available to execute the command(s)
 - The source of the checkout hooks is the version of the code being deployed **at all times**
 - The **last_thing** hook runs only when ALL servers reach that point
 
@@ -122,20 +123,20 @@ production: # Environment
 <div class="notice notice-warning"><p>
 When automating the installation of packages, remember to use the <em>-y</em> flag to answer yes to all prompts.</p></div>
 
-### Custom Rake task command
+### Running custom Rake tasks using hooks
 
-The example below can be used to run custom rake tasks during server build. If you need to run it more than once, consider using the [rake task add-in](/rails/how-to-guides/deployment/running-rake-tasks.html).
+You can use "command" hooks to run any specific or custom Rake tasks your application might need. This includes commands like `db:migrate` , `db:seed` and `db:rollback`. 
 
-```
-production: # Environment
-    last_thing: # Hook point
-      - command: cd $APP_PATH && bundle exec rake dev:setup # Hook type
-        target: rails # Hook fields
-        run_on: single_server
-        apply_during: build_only
-```
+The example below can be used to run custom rake tasks during server build: 
 
-This will run our rake task on one Rails server and only during the initial build. We run this as a last_thing hook because if we ran it earlier the application wouldn't exist on the server and be usable.
+    production: # Environment
+        last_thing: # Hook point
+          - command: cd $APP_PATH && bundle exec rake dev:setup # Hook type
+            target: rails # Hook fields
+            run_on: single_server
+            apply_during: build_only
+
+This will run our rake task on one Rails server and only during the initial build. We run this as a `last_thing` hook because if we ran it earlier the application wouldn't exist on the server and be usable. If you need to run tasks more than once, consider using the [rake task add-in](notion://www.notion.so/rails/how-to-guides/deployment/running-rake-tasks.html).
 
 ## Using existing script deploy hooks 
 
@@ -143,10 +144,10 @@ The hook below will copy a file from your repository to your *tmp* folder and ex
 
 ```
 production: # Environment
-    after_rails: # Hook point
+    after_nginx: # Hook point
       - source: /.cloud66/script.sh # Hook type
         destination: /tmp/script.sh
-        target: rails # Hook fields
+        target: any # Hook fields
         execute: true
         apply_during: build_only
 ```
@@ -187,6 +188,7 @@ before_nginx:
 
 ## What's next?
 
+* Use the [detailed reference guide for deploy hooks](/rails/references/deploy-hooks-syntax.html) to set up the exact hooks your app needs.
 * Learn how to use [Manifest files](/rails/quickstarts/getting-started-with-manifest.html) to customize the components of your application 
 * Learn how to add custom [environment variables](/{{page.collection}}/tutorials/env-vars.html) to your application
 * Learn how to use [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) - a powerful tool for configuring the components of your application.
