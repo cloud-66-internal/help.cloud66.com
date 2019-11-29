@@ -496,43 +496,47 @@ For Sinatra use [Rack](#rack)
 
 ## Load balancers
 
-
 ### AWS load balancer
 
-Use a manifest file to customize the AWS load balancer deployed by Cloud 66. These changes will only apply when you create a new load balancer.
+You can use your Manifest file to customize the AWS load balancer deployed by Cloud 66. 
 
 Available settings:
 
-- **httpchk**: The URL visited to check your server health.
+- **httpchk**: The URL visited to check your server health (applies to newly created load balancers only).
+- **wait_after_adding_servers**: The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
+- **wait_after_removing_servers**: The time (in seconds) we will wait after removing a server from the load balancer before we begin deploying to it. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 
 ```
-production:
-  load_balancer:
-    configuration:
-      httpchk: /
+    production:
+      load_balancer:
+        configuration:
+          httpchk: /
+          wait_after_adding_servers:30 # default is 0
+          wait_after_removing_servers:10 # default is 0
 ```
-* * *
+---
 
 ### GCE load balancer
 
-Use a manifest file to customize the GCE load balancer deployed by Cloud 66. These changes will only apply when you create a new load balancer.
+You can use your Manifest file to customize the GCE load balancer deployed by Cloud 66. 
 
 Available settings (refer to the [GCE documentation](https://cloud.google.com/compute/docs/load-balancing/network/target-pools) for more information):
 
-- **httpchk**: The URL visited to check your server health.
-
-- **balance**: The load balancing strategy. You can use these values: `NONE`, `CLIENT_IP` or `CLIENT_IP_PROTO`.
+- **httpchk**: The URL visited to check your server health (applies to newly created load balancers only).
+- **balance**: The load balancing strategy. Valid values: `NONE`, `CLIENT_IP` or `CLIENT_IP_PROTO` (applies to newly created load balancers only).
+- **wait_after_adding_servers**: The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
+- **wait_after_removing_servers**: The time (in seconds) we will wait after removing a server from the load balancer before we begin deploying to it. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 
 ```
-production:
-  load_balancer:
-    configuration:
-      httpchk: /
-      balance: CLIENT_IP_PROTO
+    production:
+      load_balancer:
+        configuration:
+          httpchk: /
+          balance: CLIENT_IP_PROTO
+          wait_after_adding_servers:30 # default is 0
+          wait_after_removing_servers:10 # default is 0
 ```
-
-* * *
-
+---
 
 ### HAProxy
 
@@ -542,79 +546,86 @@ Available settings (refer to the [HAProxy documentation](http://haproxy.1wt.eu/d
 
 **Server definitions**
 
-* **unique_name**: Name of the instance
-* **size**: The size of the instance (mandatory)
-* **region**: Digital Ocean's region (mandatory)
-* **vendor**: digitalocean (mandatory)
-* **key_name**: Default (mandatory)
+- **unique_name**: Name of the instance
+- **size**: The size of the instance (mandatory)
+- **region**: Digital Ocean's region (mandatory)
+- **vendor**: digitalocean (mandatory)
+- **key_name**: Default (mandatory)
 
 **Configuration**
 
-* **httpchk**: The health-check configuration.
-* **balance**: The load balancing strategy. Options include `roundrobin`, `leastconn` and `source` 
-* **errorfile_\***: Location of your own custom error page content to serve in the case of receiving a HTTP error code on the load balancer.
+- **httpchk**: The health-check configuration.
+- **balance**: The load balancing strategy. Options include `roundrobin`, `leastconn` and `source`
+- **errorfile_\***: Location of your own custom error page content to serve in the case of receiving a HTTP error code on the load balancer.
+- **wait_after_adding_servers**: The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
+- **wait_after_removing_servers**: The time (in seconds) we will wait after removing a server from the load balancer before we begin deploying to it. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 
 ```
-production:
-  load_balancer:
-    servers:
-    - server:
-        unique_name: bananana
-        size: 1gb
-        region: ams2
-        vendor: digitalocean
-        key_name: Default
-    configuration:
-      httpchk: HEAD / HTTP/1.1\r\nHost:haproxy  #default value
-      balance: roundrobin #default value
-      errorfile_400: /etc/haproxy/errors/400.http
-      errorfile_403: /etc/haproxy/errors/403.http
-      errorfile_408: /etc/haproxy/errors/408.http
-      errorfile_500: /etc/haproxy/errors/500.http
-      errorfile_502: /etc/haproxy/errors/502.http
-      errorfile_503: /etc/haproxy/errors/503.http
-      errorfile_504: /etc/haproxy/errors/504.https
+    production:
+      load_balancer:
+        servers:
+        - server:
+            unique_name: bananana
+            size: 1gb
+            region: ams2
+            vendor: digitalocean
+            key_name: Default
+        configuration:
+          httpchk: HEAD / HTTP/1.1\\r\\nHost:haproxy  #default value
+          balance: roundrobin #default value
+          errorfile_400: /etc/haproxy/errors/400.http
+          errorfile_403: /etc/haproxy/errors/403.http
+          errorfile_408: /etc/haproxy/errors/408.http
+          errorfile_500: /etc/haproxy/errors/500.http
+          errorfile_502: /etc/haproxy/errors/502.http
+          errorfile_503: /etc/haproxy/errors/503.http
+          errorfile_504: /etc/haproxy/errors/504.https
+          wait_after_adding_servers:30 # default is 0
+          wait_after_removing_servers:10 # default is 0
 ```
-* * *
-
+---
 
 ### Linode Nodebalancer
 
-Use a manifest file to the Linode Nodebalancer deployed by Cloud 66. These changes will only apply when you create a new load balancer.
+Use a manifest file to the Linode Nodebalancer deployed by Cloud 66.
 
 Available settings (refer to the [Linode documentation](https://www.linode.com/docs/platform/nodebalancer/nodebalancer-reference-guide) for more information):
 
-- **httpchk**: The health-check configuration
-- **balance**: The load balancing strategy. You can use these values : roundrobin, leastconn or source.
+- **httpchk**: The health-check configuration (applies to newly created load balancers only).
+- **balance**: The load balancing strategy. Valid values : `roundrobin`, `leastconn` or `source` (applies to newly created load balancers only).
+- **wait_after_adding_servers**: The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
+- **wait_after_removing_servers**: The time (in seconds) we will wait after removing a server from the load balancer before we begin deploying to it. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 
 ```
-production:
-  load_balancer:
-    configuration:
-      httpchk: /
-      balance: leastconn
+    production:
+      load_balancer:
+        configuration:
+          httpchk: /
+          balance: leastconn
+          wait_after_adding_servers:30 # default is 0
+          wait_after_removing_servers:10 # default is 0
 ```
-
-* * *
-
+---
 
 ### Rackspace load balancer
 
-Use a manifest file to customize the Rackspace load balancer deployed by Cloud 66. These changes will only apply when you create a new load balancer.
+Use a manifest file to customize the Rackspace load balancer deployed by Cloud 66. 
 
 Available settings (refer to the [Rackspace documentation](http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/Algorithms-d1e4367.html) for more information):
 
-- **balance**: The load balancing strategy. You can use these values : `ROUND_ROBIN`, `RANDOM` or `LEAST_CONNECTIONS`.
+- **balance**: The load balancing strategy. Valid values : `ROUND_ROBIN`, `RANDOM` or `LEAST_CONNECTIONS`  (applies to newly created load balancers only).
+- **wait_after_adding_servers**: The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
+- **wait_after_removing_servers**: The time (in seconds) we will wait after removing a server from the load balancer before we begin deploying to it. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 
 ```
-production:
-  load_balancer:
-    configuration:
-      balance: LEAST_CONNECTIONS
+    production:
+      load_balancer:
+        configuration:
+          balance: LEAST_CONNECTIONS
+          wait_after_adding_servers:30 # default is 0
+          wait_after_removing_servers:10 # default is 0
 ```
-
-* * *
-
+---
 
 ## Which server?
 
