@@ -126,4 +126,22 @@ Rolling deployments work as follows:
   </tr>
 </table>
 
+## Coping with load balancer configuration lag
+
+Load balancers - particularly native cloud load balancers - can be prone to configuration lags. In other words, they can sometimes report that they have removed a server whereas, in reality, some traffic is still being routed to that server for a few seconds or minutes. 
+
+This can also work in the opposite direction - the load balancer may report that it has added a server but it does not actually begin routing traffic to a server for a short period.
+
+For many lag-tolerant applications this short delay does not matter, but some applications are more sensitive and can suffer adverse affects from this configuration lag.
+
+If your application is "lag-sensitive" we recommend adding short delays to your [load balancer configurations](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html#aws-load-balancer). You can do this using the **`wait_after_adding_servers`** and **`wait_after_removing_servers`** options under the load balancers section of your application's [manifest file](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html#aws-load-balancer). 
+
+Bear in mind that adding these delays can slow down the deployment process significantly. For **serial deployments** the additional delay will be: 
+
+*(wait time per server)x(number of servers) = (extra deployment time).* 
+
+#### Note
+<div class="notice notice-warning"><p>If you use this option in your manifest, subsequent deployments will use the value set. To remove this delay, set the value to <kbd>0</kbd> in your manifest, and then redeploy. Simply deleting this value from your manifest will not result in removing the setting once it has been applied.
+</p></div>
+
 
