@@ -41,7 +41,7 @@ $(function() {
             perPage: 20,
             filters: {
                 "page" : {
-                    "product" : productName
+                    "product" : [productName, 'Discourse']
                 }
             }
         });
