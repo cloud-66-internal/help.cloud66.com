@@ -37,3 +37,6 @@ This is quite likely to result in some downtime. We strongly recommend reading [
 - **Apply Security Upgrades**: Install the latest Ubuntu security packages immediately (they are applied once a day by default).
 - **Apply Ruby/Node upgrades**: Upgrade the version(s) of Ruby and Node to the latest stable version. 
 
+## Calling a deployment profile via a redeployment hook
+
+Redeployment hooks allow you to initiate a deployment simply by calling a URI. These hooks can be combined with deployment profiles to completely automate the deployment pipeline. Read our [how-to guide on redeployment hooks](/{{page.collection}}/how-to-guides/deployment/redeployment-hook.html#calling-a-deployment-profile-via-a-redeployment-hook) for details on how to achieve this.

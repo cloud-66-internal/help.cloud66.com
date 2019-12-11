@@ -11,4 +11,4 @@ permalink: /:collection/:path:output_ext
 
 {% assign product = 'node' %}
 
-{% include tutorials/redeployment-hook.md product = product %}
+{% include how-to-guides/deployment/redeployment-hook.md product = product %}
