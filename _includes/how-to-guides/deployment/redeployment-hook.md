@@ -60,6 +60,8 @@ When a redeployment hook is invoked:
 #### Note
 <div class="notice"><p>In the case where the payload of the commit hook does not contain any branch information (Github and Bitbucket payload formats are supported) then the application will redeploy without attempting to match branch.</p></div>
 
+{% if include.product == 'maestro' or include.product == 'skycap' or include.product == 'rails' %}
+
 ## Calling a deployment profile via a redeployment hook
 
 [Deployment profiles](/{{page.collection}}/references/deploy-profiles.html) allow you to customise the deployment process depending on your requirements - for example deploying some components and not others. You can also call deployment profiles directly via redeployment hooks using the following syntax:
@@ -69,6 +71,8 @@ https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy/?deployment_profile=name_of_
 ```
 
 The name of the profile can be found via your app Dashboard under Settings & Information &rarr; Build & Deployment Profiles. If your deployment profile's name has spaces in it, you should replace each space with either `+` or `%20`. 
+
+{% endif %}
 
 ## Github integration
 
