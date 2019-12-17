@@ -363,9 +363,8 @@ A Rails application type in the manifest file gives you fine control over things
 - **asset_pipeline_precompile**: Specify whether to use asset pipeline compilation - this will be taken into account during redeployment.
 - **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on a new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
-- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment. This is equivalent to the `passenger_pool_max` variable in the [CustomConfig settings for Nginx](/rails/references/nginx.html#boolean-variables) and can be used to set that variable from your Manifest file (i.e. without modifying the Nginx config directly).
+- **passenger_process_memory**: A value (in MB) that Cloud 66 will use for each Passenger process. This is also used to calculate the value of the `passenger_pool_max` variable in your [Nginx configuration](/rails/references/nginx.html#pool-max) which in turn sets `passenger_max_pool_size`.
 - **locked_passenger_version**: Force the version of passenger to use. Note: this only applies during server build and is not supported on Passenger Enterprise applications.
-- **activeprotect**: Specify a whitelist of IPs that should be ignored by your ActiveProtect configuration.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers. <span style="background-color: #FFFF00">Note that you must provide  [**subnet_id**](#servers) for all servers in your application.</span>
 - **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
@@ -373,6 +372,9 @@ A Rails application type in the manifest file gives you fine control over things
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application.  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git submodules from being pulled during a build.
 - **keep_releases** *(Optional, Defaults to 5)* Specify the number of releases to keep on your server(s).
+- **activeprotect**:
+    - **whitelist:** Specify a comma-separated whitelist of IPs that should be ignored by your ActiveProtect configuration.
+    - **http_ban_rate:** Set the threshold of *requests per minute* from a single IP address. The default is 2000.
 
 #### Important
 <div class="notice notice-warning">
@@ -391,6 +393,7 @@ production:
       locked_passenger_version: 4.0.59
       activeprotect:
         whitelist: 123.123.123.123,234.234.234.234
+        http_ban_rate: 2000 # Default
       vpc_id: vpc-64872001
       root_disk_size: 100
       root_disk_type: ssd
@@ -407,9 +410,8 @@ The manifest file gives you fine control over things like the Ruby version or wh
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
-- **passenger_process_memory**: A value in MB that Cloud 66 will use for each Passenger process when calculating the `passenger_max_pool_size` (Passenger-based applications only) - this will be taken into account during redeployment. This is equivalent to the `passenger_pool_max` variable in the [CustomConfig settings for Nginx](/rails/references/nginx.html#boolean-variables) and can be used to set that variable from your Manifest file (i.e. without modifying the Nginx config directly).
+- **passenger_process_memory**: A value (in MB) that Cloud 66 will use for each Passenger process. This is also used to calculate the value of the `passenger_pool_max` variable in your [Nginx configuration](/rails/references/nginx.html#pool-max) which in turn sets `passenger_max_pool_size`.
 - **locked_passenger_version**: Force the version of passenger to use. Note: this only applies during server build and is not supported on Passenger Enterprise applications.
-- **activeprotect**: Specify a whitelist of IPs that should be ignored by your ActiveProtect configuration.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers.
 - **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 20.
@@ -417,6 +419,9 @@ The manifest file gives you fine control over things like the Ruby version or wh
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application. <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git  submodules  from being pulled during a build.
 - **keep_releases** *(Optional, Defaults to 5)* Specify the number of releases to keep on your server(s).
+- **activeprotect**:
+    - **whitelist:** Specify a comma-separated whitelist of IPs that should be ignored by your ActiveProtect configuration.
+    - **http_ban_rate:** Set the threshold of *requests per minute* from a single IP address. The default is 2000.
 
 #### Important
 <div class="notice notice-warning">
