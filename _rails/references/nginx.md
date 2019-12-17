@@ -308,7 +308,7 @@ The following variables are available for use in your Nginx [CustomConfig](/rail
     <tr> 
      <td>letsencrypt_primary_address</td> 
      <td>string</td> 
-     <td>The primary address used by your Let's Encrypt certificate</td> 
+     <td>Sets the address of the host that "owns" the Let's Encrypt certificate. Can then be used with the <kbd>proxy_pass</kbd> directive to serve SSL requests via other hosts.</td> 
     </tr>     
     <tr> 
      <td>load_balancer_address</td> 
