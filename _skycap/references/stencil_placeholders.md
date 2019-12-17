@@ -15,10 +15,7 @@ Stencil Placeholders is a simple to use and yet powerful syntax for the renderin
 
 Stencil Placeholders lack control flows like `if then else` or `for loops` to encourage simplicity of the templates. By providing adequate tools to manage groups of Stencils through Formations, Base Templates and sections as well as tags, breaking up of large and complex Stencils are encouraged.
 
-
-## Syntax
-
-### Basics
+## Syntax basics
 
 All Stencil Placeholders are placed inside `${...}`.
 
@@ -31,37 +28,61 @@ There are 2 types of placeholders:
 
 Functions are used to retrieve or manipulate data. For example you can use the `concat("foo", "bar")` function to concatenate 2 or more strings together. Another example is `now()` which returns the time now. Functions are always followed by `(arguments)`. If no argument is passed to a function, the `()` should still be present.
 
-
 #### Directives
 
 Directives are like constants that are set at the beginning of rendering. Their value doesn't change throughout the rendering and they are not used to manipulate data but only to retrieve it. An example is `formation` which returns the name of the formation or `snapshot` which returns the unique ID of the snapshot being used for rendering a Stencil.
 
-
 It is possible for a directive to have multiple parts. For example, the `service` directive has different parts like `image` and `tag` which return the service's Docker image name and image tag. To address the different parts of a directive, use `["part"]` syntax: `service["image"]`
 
-
-#### Syntax basics
+### Rules for placeholders
 
 1. Placeholders are always used in a single line. Multi-line placeholders are not valid although the result of a placeholder could be multiple lines.
 
 2. Placeholders always return a string.
 
+### Data types and operators 
 
-## Reference
+The Placeholders syntax supports some common data formats and operators:
 
-### Directives
+#### Arrays:
 
-<h4 class="placeholder"><code>stackname</code></h4>
+These use a similar format to Ruby arrays.
+
+Example:
+`[1, 2, "abc", formation]`
+
+#### Hashes:
+These use a similar format to Ruby hashes.
+
+For example: 
+```
+{ "foo": 1, "formation_name" : formation, "complex" : concat("hey", " you")}
+```
+
+#### `if` statements:
+
+These use the format `if(CONDITION, TRUE_RESULT, FALSE_RESULT)` where CONDITION is any boolean condition (no AND or OR). Comparisons supported are `==`, `!=` `>=`, `<=`, `>` and `<`.
+
+#### `true` and `false`:
+
+
+
+
+## Directives 
+
+### `stackname`
 
 Returns the Kubernetes friendly name of the Skycap Stack (application). All invalid characters are replaced with `-` (dash).
 
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-<h4 class="placeholder"><code>formation</code></h4>
+### `formation`
 
 Returns the Kubernetes friendly name of the Formation. All invalid characters are replaced with `-` (dash).
 
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-<h4 class="placeholder"><code>service</code></h4>
+### `service`
 
 Returns the Kubernetes friendly name of the service that's relevant for this Stencil. You can choose the relevant service to a Stencil when creating and editing a Stencil. For example `service["image"]` returns the Docker image name of this service.
 
@@ -76,8 +97,9 @@ If no part name is provided, this will return the service name. Options for part
 * `tags` &ndash; Array of all tags for this service
 * `source_type` &ndash; Base of this service: `image` or `git`
 
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-<h4 class="placeholder"><code>snapshot</code></h4>
+### `snapshot`
 
 Returns the snapshot unique identifier. For example, `snapshot["gitref"]` returns the gitref for the Stencil. Options for parts are:
 
@@ -85,9 +107,9 @@ Returns the snapshot unique identifier. For example, `snapshot["gitref"]` return
 * `gitref` &ndash; Gitref for the Stencil used from the Stencil's git repository
 
 
-### Functions
+## Functions
 
-<h4 class="placeholder"><code>registry_credentials([registry_address])</code></h4>
+### `registry_credentials([registry_address])`
 
 Returns the <strong>base 64</strong> encoded version of the Kubernetes friendly credentials for a Docker registry. See <a href="https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/">Pulling image from a private registry in Kubernetes</a> document for more information. The result of this function can be used directly as the value for the `.dockerconfigjson` secret of `kubernetes.io/dockerconfigjson` type.
 
@@ -116,19 +138,37 @@ spec:
       - name: bar-docker-registry-secret-name
 </pre>
 
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-<h4 class="placeholder"><code>concat("stringA", "stringB")</code></h4>
+
+### `concat("stringA", "stringB")`
 
 Concatenates the specified strings into a single string. 
 
-<h4 class="placeholder"><code>env(name, default)</code></h4>
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
+
+### `count`
+
+Returns the number of items in an array or any countable objects e.g. strings. For example:
+
+```
+count([4578, 2178] # returns 2
+count([dog, fish, bird] # returns 3
+count("abc") # returns 3
+
+```
+
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
+
+### `env(name, default)`
 
 Returns the value of an environment variable from the Stack Environment Variables. For example `env("RAILS_ENV")` returns the value for `RAILS_ENV`. `env("RAILS_ENV", "production")` returns `production` if there is no value available for `RAILS_ENV`.
 
 If an environment variable is defined in both Stack Environment Variables and `service.yml` for the service this Stencil is related to, the service defined environment variable will be returned.
 
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-<h4 class="placeholder"><code>vault("/path_root/path_to_key", "key_name")</code></h4>
+### `vault("/path_root/path_to_key", "key_name")`
 
 Fetches the named value from the specified path in the Vault that is attached to the current Cloud 66 account (i.e. the one which holds the current application).
 
@@ -138,7 +178,9 @@ For example, if your production MySQL password is stored in `/production/MySQL` 
 {vault("/production/MySQL", "mysql_pass")}
 </pre>
 
-<h4 class="placeholder"><code>vaultlist("/path_root/path_to_keys", indent_level)</code></h4>
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
+
+### `vaultlist("/path_root/path_to_keys", indent_level)`
 
 Fetches *all* the available values from any path in Vault. As above, the Vault must be attached to the current Cloud 66 account 
 
@@ -162,12 +204,15 @@ data:
   ${vaultlist("/production/mysql", 2)}
 </pre>
 
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-<h4 class="placeholder"><code>configstore("key")</code></h4>
+### `configstore("key")`
 
 Returns the value of the `key` specified. By default this will use the **application-level** ConfigStore.
 
-<h4 class="placeholder"><code>configstore("key", account["configstore_namespace"])</code></h4>
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
+
+### `configstore("key", account["configstore_namespace"])`
 
 As above, but returns the value from an **account-level ConfigStore** using the namespace UID as the lookup. The same can be done using the `application` parameter to fetch values from another application-level ConfigStore.
 
@@ -192,18 +237,34 @@ spec:
 
 </pre>
 
-<h4 class="placeholder"><code>inline(stencil)</code></h4>
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
+
+### `inline(stencil, indent, locals)`
 
 Returns the rendered content of a Stencil. For example: `inline("disks.yml")` will return the rendered value of an inline Stencil called `_disks.yml`.
 
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-<h4 class="placeholder"><code>sanitize(text)</code></h4>
+### `repeat_inline(filename, indent, locals, count)`
+
+LOCALS can be an array or hash. If it is an array, each item should be a hash and the inline will be rendered count(LOCALS) times, each time with LOCALS[index] as the locals in the normal inline call.
+
+If COUNT is provided, it should be a number. In this case inline will be repeated COUNT times, each time with LOCALS provided as the locals in the normal inline function. In this case LOCALS should be a hash. Examples below:
+
+```
+${repeat_inline("test.yml", 8, [ { "foo" : "bar" }, { "foo" : "buzz" } ])} # render test twice, one with foo=bar and once with foo=buzz
+${repeat_inline("test.yml", 4, { "foo": "bar" }, 12)} # render test 12 times, every time with foo=bar  
+
+```
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
+
+### `sanitize(text)`
 
 Returns the "DNS friendly" version of the given text. For example `sanitize("Hello World!")` will return `hello-world-`.
 
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-
-<h4 class="placeholder"><code>envlist(indent[, tag])</code></h4>
+### `envlist(indent[, tag])`
 
 Returns a YAML compatible list of all Stack Environment Variables. This is useful when you don't want to keep adding new environment variables to every deployment one by one. For example `envlist(2)` returns the following:
 
@@ -213,16 +274,17 @@ Returns a YAML compatible list of all Stack Environment Variables. This is usefu
   - API_ENDPOINT: 'https://api.acme.org'
 </pre>
 
-
 As Stencils are almost always yaml files, the indentation is important. `indent` argument ensures all returned values of the list are indented with the given number of spaces. `tag` only returns the environment variables that match it. You can set the tags for each environment variable on the Stack Environment Variables page on Skycap dashboard: `envlist(4, "secret")` returns only the list of environment variables tagged with `secret`.
 
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-<h4 class="placeholder"><code>require(message)</code></h4>
+### `require(message)`
 
 Stops rendering of the Stencil and returns an error with the message. This is used when you would like to create a Stencil template and make sure the end user of the Stencil fills some value before attempting to render it. For example `require("PORT")` will return a render error saying <strong>PORT is required</strong>
 
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-<h4 class="placeholder"><code>now([formatting])</code></h4>
+### `now([formatting])`
 
 Returns the time of rendering. If no formatting is provided, it will return the date and time like this `2018-03-07 09:57:36 UTC`. Valid values for the formatting are:
 
@@ -329,13 +391,15 @@ Combination:
   %+ - date(1) (%a %b %e %H:%M:%S %Z %Y)
 </pre>
 
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-<h4 class="placeholder"><code>random(length)</code></h4>
+### `random(length)`
 
 Returns a random string with the given length.
 
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-<h4 class="placeholder"><code>digest(text, algorithm, encoding)</code></h4>
+### `digest(text, algorithm, encoding)`
 
 Returns an encoded and digested copy of the given text. The options for algorithm are:
 

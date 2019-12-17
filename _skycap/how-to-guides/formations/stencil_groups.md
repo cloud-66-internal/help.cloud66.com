@@ -16,44 +16,40 @@ permalink: /:collection/:path:output_ext
 
 To define a StencilGroup click on the New Group button on the Formation detail page. This will open a form with three fields: Name, Tags and Rules. 
 
-Name and Tags should be self explanatory. Rules are JSON objects that determine what's included in or excluded from your StencilGroup. For example the following rule, includes any Stencil named `setup.yml` in this group:
+Name and Tags should be self explanatory. Rules are logical statements that determine what's included in or excluded from your StencilGroup. For example the following rule, includes any Stencil named `setup.yml` in this group:
 
-<pre class="prettyprint">
-	{
-		"include" : ["name:setup.yml"]
-	}
-	</pre>
+```
+(name == setup.yml)
+```
 
 ...while the following rule includes any Stencil with the `production` tag in the group:
 
-<pre class="prettyprint">
-	{
-		"include" : ["tag:production"]
-	}
-</pre>
+```
+(tag == "production")
+```
+
+You can also *exclude* any stencils based on either tag or name. For example:
+
+```
+(tag != "production")
+```
+...will explicitly exclude all stencils tagged with `production` from a group.
 
 In this demonstration we create a group that contains only the namespace definition (setup.yml) and excludes anything tagged as "production":
 
 <img src="/assets/skycap/StencilGroups.gif">
 
-## More about StencilGroup rules
+## Complex StencilGroup rules
 
-Each StencilGroup JSON object (rule) must start with **one** of two possible keys: `"include"` or `"exclude"`. Each object (rule) is a JSON array of strings, each selecting Stencils by `name` or `tag`.
+Each StencilGroup rule must have at least *one* selector - either `name` or `tag`. You can also create more complex rules using logical operators (`||` and `&&`).
 
-To select Stencils by name use the `name:foo.yml` format and to select Stencils by tag, use the `tag:foo` format. Selectors can be used together (as ANDs) separated by commas: `["name:foo.yml", "name:bar.yml", "tag:fuzz", "tag:buzz"]`
+For example this rule will include all templates that are named `setup.yml` as long as they also tagged either `production` or `version_5`: 
 
-If both `include` and `exclude` keys exist, the list of Stencils is selected by first applying the `include` selectors and then removing the `exclude` ones.
+```
+(name == "setup.yaml" && (tag == "production") || (tag == "version_5")
+```
 
-Here is an example of a complete StencilGroup rule:
-
-<pre class="prettyprint">
-	{
-		"include" : ["name:setup.yml", "tag:config"],
-		"exclude" : ["tag:test", "tag:qa", "name:deployment.yml"]
-	}
-</pre>
-
-As you can see, this includes the base set up for the application along with all its configurations, but excludes all the components tagged as "test" and "qa" as well as the Kubernetes Deployment definition.
+Rules within a group should separated by line breaks. In the case of any logical conflicts, a rule will default to the last complete statement.
 
 ## Rendering StencilGroups
 
