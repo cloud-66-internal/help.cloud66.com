@@ -25,15 +25,16 @@ Under this section, you can see all your services are listed. You can choose one
 - **Build**:     Builds the code into a docker image.
 - **Publish**:   Push the built image to servers.
 
-
 ### Deployment strategy
 
 - **Parallel Deployment**: Deploy all the services together.
 - **Serial Deployment**:   Deploy services sequentially.
-
 
 ### Upgrades
 
 - **Apply Docker upgrades**: Apply the Docker version and Weave version specified in the manifest file.
 - **Apply Security Upgrades**: Install the latest Ubuntu security packages immediately (they are applied once a day by default).
 
+## Calling a deployment profile via a redeployment hook
+
+Redeployment hooks allow you to initiate a deployment simply by calling a URI. These hooks can be combined with deployment profiles to completely automate the deployment pipeline. Read our [how-to guide on redeployment hooks](/{{page.collection}}/how-to-guides/deployment/redeployment-hook.html#calling-a-deployment-profile-via-a-redeployment-hook) for details on how to achieve this.
