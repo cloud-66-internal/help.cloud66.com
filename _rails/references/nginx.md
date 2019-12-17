@@ -222,7 +222,7 @@ The following table outlines the default configuration of Nginx.
    </tbody> 
   </table> 
 
-### Nginx CustomConfig variables
+## Nginx CustomConfig variables
 
 The following variables are available for use in your Nginx [CustomConfig](/rails/tutorials/custom-config.html).
 
