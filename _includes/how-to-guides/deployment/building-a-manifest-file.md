@@ -410,7 +410,7 @@ The manifest file gives you fine control over things like the Ruby version or wh
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **do_initial_db_schema_load**: Specify whether to perform `rake db:schema:load` on new application build.
 - **reserved_server_memory**: A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values, and will be taken into account during redeployment.
-- **passenger_process_memory**: A value (in MB) that Cloud 66 will use for each Passenger process. This is also used to calculate the value of the `passenger_pool_max` variable in your [Nginx configuration](/rails/references/nginx.html#boolean-variables) which in turn sets `passenger_max_pool_size`.
+- **passenger_process_memory**: A value (in MB) that Cloud 66 will use for each Passenger process. This is also used to calculate the value of the `passenger_pool_max` variable in your [Nginx configuration](/rails/references/nginx.html#pool-max) which in turn sets `passenger_max_pool_size`.
 - **locked_passenger_version**: Force the version of passenger to use. Note: this only applies during server build and is not supported on Passenger Enterprise applications.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers.
 - **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
