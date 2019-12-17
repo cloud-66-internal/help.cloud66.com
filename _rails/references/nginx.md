@@ -424,7 +424,8 @@ The following variables are available for use in your Nginx [CustomConfig](/rail
 `passenger_pool_max` is a Cloud-66-specific variable that we use to dynamically set a value in Nginx for the native Passenger setting `passenger_max_pool` (note the subtle difference in names).
 
 We calculate the value for `passenger_pool_max` as follows:
->>passenger_pool_max = ( server's memory - reserved_server_memory ) / [passenger_process_memory](/rails/how-to-guides/deployment/building-a-manifest-file.html#rails)
+
+passenger_pool_max = ( server's memory - reserved_server_memory ) / [passenger_process_memory](/rails/how-to-guides/deployment/building-a-manifest-file.html#rails)
 
 ...and this is rounded down to the nearest integer. So if your server has 4GB of free RAM and each process uses 600MB the your `passenger_pool_max` will be 6. 
 
