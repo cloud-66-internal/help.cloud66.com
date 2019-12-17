@@ -14,6 +14,23 @@ permalink: /:collection/:path:output_ext
 
 Applications deployed with Cloud 66 use [Nginx](http://nginx.com) as their web server, and its configuration is dependent on the resources of your server(s).
 
+### Boolean variables
+
+To ensure correct boolean condition checks within your template, always explicitly compare the variable with `true` or `false` (even if you are checking for true).
+
+**Good syntax:**
+
+*   if passenger != true
+*   if passenger != false
+*   if passenger == true
+*   if passenger == false	
+
+**Bad syntax:**
+
+*   Bad: if passenger
+*   Bad: if !passenger
+
+
 ## Default Nginx configuration
 
 The following table outlines the default configuration of Nginx.
@@ -27,7 +44,7 @@ The following table outlines the default configuration of Nginx.
    </thead> 
    <tbody> 
     <tr class="header"> 
-     <td> <strong>General</strong> <span></span> </td> 
+     <td> <strong>General</strong></td> 
      <td></td> 
      <td></td> 
     </tr> 
@@ -207,61 +224,56 @@ The following table outlines the default configuration of Nginx.
 
 ### Nginx CustomConfig variables
 
-The following variables are available for use in your  Nginx CustomConfig.
+The following variables are available for use in your Nginx [CustomConfig](/rails/tutorials/custom-config.html).
 
 <table class="table table-bordered table-striped"> 
    <thead> 
     <tr> 
-     <th width="50%">Variable Name</th> 
-     <th width="15%">Type</th> 
-     <th width="35%">Description</th> 
+     <th width="48%">Variable Name</th> 
+     <th width="12%">Type</th> 
+     <th>Description</th> 
     </tr> 
    </thead> 
-   <tbody> 
-    <tr> 
-     <td>user_name</td> 
-     <td>string</td> 
-     <td>User name running the application process</td> 
-    </tr> 
-    <tr> 
-     <td>environment</td> 
-     <td>string</td> 
-     <td>Application environment name (lowercase)</td> 
-    </tr> 
-    <tr> 
-     <td>server_address</td> 
-     <td>string</td> 
-     <td>Server address (IP or fqdn)</td> 
-    </tr> 
-    <tr> 
-     <td>workers</td> 
-     <td>integer</td> 
-     <td>Number of CPU cores on the server</td> 
-    </tr> 
-    <tr> 
-     <td>app_name</td> 
-     <td>string</td> 
-     <td>Application name (lowercase)</td> 
-    </tr> 
-    <tr> 
-     <td>envars</td> 
-     <td>hash</td> 
-     <td>Hash of all environment variables on the application</td> 
-    </tr> 
+   <tbody>
     <tr> 
      <td>allow_ssl</td> 
      <td>boolean</td> 
      <td>Is an SSL Certificate configured on the application?</td> 
     </tr> 
     <tr> 
-     <td>perfect_forward_secrecy</td> 
+     <td>app_name</td> 
+     <td>string</td> 
+     <td>Application name (lowercase)</td> 
+    </tr>     
+    <tr> 
+     <td>blacklist</td> 
+     <td>hash</td> 
+     <td>List of IPs you are blacklisting</td> 
+    </tr> 
+    <tr> 
+     <td>cors_all_origins</td> 
      <td>boolean</td> 
-     <td>Is perfect forward secrecy enabled on the application?</td> 
+     <td>CORS allow all origins</td> 
+    </tr> 
+    <tr> 
+     <td>cors_credentials</td> 
+     <td>boolean</td> 
+     <td>CORS allow credentials</td> 
     </tr> 
     <tr> 
      <td>cors_enabled</td> 
      <td>boolean</td> 
      <td>Is CORS enabled on the application?</td> 
+    </tr> 
+    <tr> 
+     <td>cors_headers</td> 
+     <td>string</td> 
+     <td>CORS allowed custom headers</td> 
+    </tr> 
+    <tr> 
+     <td>cors_methods</td> 
+     <td>string</td> 
+     <td>CORS Methods</td> 
     </tr> 
     <tr> 
      <td>cors_origin</td> 
@@ -272,175 +284,6 @@ The following variables are available for use in your  Nginx CustomConfig.
      <td>cors_origins</td> 
      <td>array</td> 
      <td>List of CORS origins</td> 
-    </tr> 
-    <tr> 
-     <td>cors_all_origins</td> 
-     <td>boolean</td> 
-     <td>CORS allow all origins</td> 
-    </tr> 
-    <tr> 
-     <td>cors_methods</td> 
-     <td>string</td> 
-     <td>CORS Methods</td> 
-    </tr> 
-    <tr> 
-     <td>cors_headers</td> 
-     <td>string</td> 
-     <td>CORS allowed custom headers</td> 
-    </tr> 
-    <tr> 
-     <td>cors_credentials</td> 
-     <td>boolean</td> 
-     <td>CORS allow credentials</td> 
-    </tr> 
-    <tr> 
-     <td>has_ha_proxy_load_balancer</td> 
-     <td>boolean</td> 
-     <td>Are you using a HAProxy load balancer?</td> 
-    </tr> 
-    <tr> 
-     <td>load_balancer_address</td> 
-     <td>string</td> 
-     <td>Address of your load balancer</td> 
-    </tr> 
-    <tr> 
-     <td>red_http_to_https</td> 
-     <td>boolean</td> 
-     <td>Are you redirecting HTTP to HTTPS?</td> 
-    </tr> 
-    <tr> 
-     <td>red_www</td> 
-     <td>boolean</td> 
-     <td>Are you redirecting traffic to www?</td> 
-    </tr> 
-    <tr> 
-     <td>blacklist</td> 
-     <td>hash</td> 
-     <td>List of IPs you are blacklisting</td> 
-    </tr> 
-    <tr> 
-     <td>supports_realip_module</td> 
-     <td>boolean</td> 
-     <td>Does your Nginx instance use the Real IP module?</td> 
-    </tr> 
-    <tr> 
-     <td>stack_supports_nginx_tcp_and_udp_reverse_proxy</td> 
-     <td>boolean</td> 
-     <td>Does your application support TCP and UDP reverse proxy?</td> 
-    </tr> 
-    <tr> 
-     <td>supports_tcp_proxy</td> 
-     <td>boolean</td> 
-     <td>Does your NGINX version support TCP reverse proxy and load balancing?</td> 
-    </tr> 
-    <tr> 
-     <td>supports_udp_proxy</td> 
-     <td>boolean</td> 
-     <td>Does your NGINX version support UDP reverse proxy and load balancing?</td> 
-    </tr> 
-    <tr> 
-     <td>has_load_balancer</td> 
-     <td>boolean</td> 
-     <td>Are you using a load balancer?</td> 
-    </tr> 
-    <tr> 
-     <td>service_containers</td> 
-     <td>array</td> 
-     <td>Contains all services (with <i>service_name</i> and <i>upstreams</i> information)</td> 
-    </tr> 
-    <tr> 
-     <td>service_name</td> 
-     <td>string</td> 
-     <td>Part of the <i>service_containers</i> hierarchy, containing the name of a specific service</td> 
-    </tr> 
-    <tr> 
-     <td>upstreams</td> 
-     <td>array</td> 
-     <td>Part of the <i>service_containers</i> hierarchy, containing an upstream name, private IPs, traffic matches and port</td> 
-    </tr> 
-   </tbody> 
-  </table> 
-
-  
-### Boolean variables
-
-To ensure correct boolean condition checks within your template, always explicitly compare the variable with `true` or `false` (even if you are checking for true).
-
-**Good syntax:**
-
-*   if passenger != true
-*   if passenger != false
-*   if passenger == true
-*   if passenger == false	
-
-**Bad syntax:**
-
-*   Bad: if passenger
-*   Bad: if !passenger
-
-<table class="table table-bordered table-striped"> 
-   <thead> 
-    <tr> 
-     <th width="32%">Variable Name</th> 
-     <th width="15%">Type</th> 
-     <th>Description</th> 
-    </tr> 
-   </thead> 
-   <tbody> 
-    <tr> 
-     <td>passenger</td> 
-     <td>boolean</td> 
-     <td>Is nginx running Passenger or a custom web server?</td> 
-    </tr> 
-    <tr> 
-     <td>passenger_supports_cgi_param</td> 
-     <td>boolean</td> 
-     <td>Does the current Passenger version support CGI param?</td> 
-    </tr> 
-    <tr> 
-     <td>passenger_enterprise</td> 
-     <td>boolean</td> 
-     <td>Are you using Passenger enterprise?</td> 
-    </tr> 
-    <tr> 
-     <td>user_name</td> 
-     <td>string</td> 
-     <td>User name running the application process</td> 
-    </tr> 
-    <tr> 
-     <td>environment</td> 
-     <td>string</td> 
-     <td>Application environment name (lowercase)</td> 
-    </tr> 
-    <tr> 
-     <td>server_address</td> 
-     <td>string</td> 
-     <td>Server address (IP or fqdn)</td> 
-    </tr> 
-    <tr> 
-     <td>workers</td> 
-     <td>integer</td> 
-     <td>Number of CPU cores on the server</td> 
-    </tr> 
-    <tr> 
-     <td><a href="/rails/how-to-guides/deployment/building-a-manifest-file.html#rails">passenger_pool_max</a></td> 
-     <td>integer</td> 
-     <td>Size of the passenger pool in MB - used to calculate <kbd>passenger_max_pool_size</kbd>. Can also be set via your <a href="/rails/how-to-guides/deployment/building-a-manifest-file.html#rails">manifest file</a>.</td> 
-    </tr> 
-    <tr> 
-     <td>use_ruby_shell</td> 
-     <td>boolean</td> 
-     <td>Used internally</td> 
-    </tr> 
-    <tr> 
-     <td>ruby_shell</td> 
-     <td>string</td> 
-     <td>/var/deploy/ruby_shell</td> 
-    </tr> 
-    <tr> 
-     <td>app_name</td> 
-     <td>string</td> 
-     <td>Application name (lowercase)</td> 
     </tr> 
     <tr> 
      <td>deploy_to</td> 
@@ -453,69 +296,64 @@ To ensure correct boolean condition checks within your template, always explicit
      <td>Hash of all environment variables on the application</td> 
     </tr> 
     <tr> 
-     <td>envars</td> 
-     <td>hash</td> 
-     <td>Hash of all environment variables on the application</td> 
-    </tr> 
-    <tr> 
-     <td>passenger_location</td> 
+     <td>environment</td> 
      <td>string</td> 
-     <td>Passenger location (Passenger only)</td> 
-    </tr> 
-    <tr> 
-     <td>allow_ssl</td> 
-     <td>boolean</td> 
-     <td>Is an SSL Certificate configured on the application?</td> 
-    </tr> 
-    <tr> 
-     <td>perfect_forward_secrecy</td> 
-     <td>boolean</td> 
-     <td>Is perfect forward secrecy enabled on the application?</td> 
-    </tr> 
-    <tr> 
-     <td>cors_enabled</td> 
-     <td>boolean</td> 
-     <td>Is CORS enabled on the application?</td> 
-    </tr> 
-    <tr> 
-     <td>cors_origin</td> 
-     <td>string</td> 
-     <td>CORS Origins string</td> 
-    </tr> 
-    <tr> 
-     <td>cors_origins</td> 
-     <td>array</td> 
-     <td>List of CORS origins</td> 
-    </tr> 
-    <tr> 
-     <td>cors_all_origins</td> 
-     <td>boolean</td> 
-     <td>CORS allow all origins</td> 
-    </tr> 
-    <tr> 
-     <td>cors_methods</td> 
-     <td>string</td> 
-     <td>CORS Methods</td> 
-    </tr> 
-    <tr> 
-     <td>cors_headers</td> 
-     <td>string</td> 
-     <td>CORS allowed custom headers</td> 
-    </tr> 
-    <tr> 
-     <td>cors_credentials</td> 
-     <td>boolean</td> 
-     <td>CORS allow credentials</td> 
+     <td>Application environment name (lowercase)</td> 
     </tr> 
     <tr> 
      <td>has_ha_proxy_load_balancer</td> 
      <td>boolean</td> 
      <td>Are you using a HAProxy load balancer?</td> 
-    </tr> 
+    </tr>     
+    <tr> 
+     <td>letsencrypt_primary_address</td> 
+     <td>string</td> 
+     <td>The primary address used by your Let's Encrypt certificate</td> 
+    </tr>     
     <tr> 
      <td>load_balancer_address</td> 
      <td>string</td> 
      <td>Address of your load balancer</td> 
+    </tr> 
+     <tr> 
+     <td>load_balancer_address</td> 
+     <td>string</td> 
+     <td>Address of your load balancer</td> 
+    </tr> 
+    <tr> 
+     <td>maintenance_mode_active</td> 
+     <td>boolean</td> 
+     <td>Is the application in maintenance mode?</td> 
+    </tr>   
+    <tr> 
+     <td>passenger</td> 
+     <td>boolean</td> 
+     <td>Is nginx running Passenger or a custom web server?</td> 
+    </tr> 
+    <tr> 
+     <td>passenger_enterprise</td> 
+     <td>boolean</td> 
+     <td>Are you using Passenger enterprise?</td> 
+    </tr> 
+    <tr> 
+     <td>passenger_location</td> 
+     <td>string</td> 
+     <td>Passenger location (Passenger only)<a name="pool-max"></a></td> 
+    </tr> 
+    <tr> 
+     <td><a href="/rails/how-to-guides/deployment/building-a-manifest-file.html#rails">passenger_pool_max</a></td> 
+     <td>integer</td> 
+     <td>The maximum number of processes that Passenger will spawn. This value is derived from <kbd>passenger_process_memory</kbd> which can be set via the <a href="/rails/how-to-guides/deployment/building-a-manifest-file.html#rails">manifest file</a>. See below for an explanation on <a href="#how-passenger_pool_max-is-calculated">how this is calculated</a>.</td> 
+    </tr> 
+    <tr> 
+     <td>passenger_supports_cgi_param</td> 
+     <td>boolean</td> 
+     <td>Does the current Passenger version support CGI param?</td> 
+    </tr> 
+    <tr> 
+     <td>perfect_forward_secrecy</td> 
+     <td>boolean</td> 
+     <td>Is perfect forward secrecy enabled on the application?</td> 
     </tr> 
     <tr> 
      <td>red_http_to_https</td> 
@@ -528,9 +366,19 @@ To ensure correct boolean condition checks within your template, always explicit
      <td>Are you redirecting traffic to www?</td> 
     </tr> 
     <tr> 
-     <td>blacklist</td> 
-     <td>hash</td> 
-     <td>List of IPs you are blacklisting</td> 
+     <td>ruby_shell</td> 
+     <td>string</td> 
+     <td>/var/deploy/ruby_shell</td> 
+    </tr> 
+    <tr> 
+     <td>server_address</td> 
+     <td>string</td> 
+     <td>Server address (IP or fqdn)</td> 
+    </tr> 
+    <tr> 
+     <td>stack_supports_nginx_tcp_and_udp_reverse_proxy</td> 
+     <td>boolean</td> 
+     <td>Does your application support TCP and UDP reverse proxy?</td> 
     </tr> 
     <tr> 
      <td>supports_realip_module</td> 
@@ -538,13 +386,47 @@ To ensure correct boolean condition checks within your template, always explicit
      <td>Does your Nginx instance use the Real IP module?</td> 
     </tr> 
     <tr> 
-     <td>has_load_balancer</td> 
+     <td>supports_tcp_proxy</td> 
      <td>boolean</td> 
-     <td>Are you using a load balancer?</td> 
+     <td>Does your NGINX version support TCP reverse proxy and load balancing?</td> 
+    </tr> 
+    <tr> 
+     <td>supports_udp_proxy</td> 
+     <td>boolean</td> 
+     <td>Does your NGINX version support UDP reverse proxy and load balancing?</td> 
+    </tr> 
+    <tr> 
+     <td>use_ruby_shell</td> 
+     <td>boolean</td> 
+     <td>Used internally</td> 
+    </tr>    
+    <tr> 
+     <td>user_name</td> 
+     <td>string</td> 
+     <td>User name running the application process</td> 
+    </tr> 
+    <tr> 
+     <td>websocket_support</td> 
+     <td>boolean</td> 
+     <td>Does this version of Nginx support websocket?</td> 
+    </tr>
+    <tr> 
+     <td>workers</td> 
+     <td>integer</td> 
+     <td>Number of CPU cores on the server</td> 
     </tr>  
-   </tbody>
-  </table>
+   </tbody> 
+  </table> 
 
+
+### How passenger_pool_max is calculated
+
+`passenger_pool_max` is a Cloud-66-specific variable that we use to dynamically set a value in Nginx for the native Passenger setting `passenger_max_pool` (note the subtle difference in names).
+
+We calculate the value for `passenger_pool_max` as follows:
+>>passenger_pool_max = ( server's memory - reserved_server_memory ) / [passenger_process_memory](/rails/how-to-guides/deployment/building-a-manifest-file.html#rails)
+
+...and this is rounded down to the nearest integer. So if your server has 4GB of free RAM and each process uses 600MB the your `passenger_pool_max` will be 6. 
 
 ## Nginx worker configuration
 
