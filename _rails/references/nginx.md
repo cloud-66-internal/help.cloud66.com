@@ -421,7 +421,7 @@ The following variables are available for use in your Nginx [CustomConfig](/rail
 
 ### How passenger_pool_max is calculated
 
-`passenger_pool_max` is a Cloud-66-specific variable that we use to dynamically set a value in Nginx for the native Passenger setting `passenger_max_pool` (note the subtle difference in names).
+`passenger_pool_max` is a Cloud-66-specific variable that we use to dynamically set a value in Nginx for the native Passenger setting `passenger_max_pool_size`.
 
 We calculate the value for `passenger_pool_max` as follows:
 
