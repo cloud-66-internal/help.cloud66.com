@@ -11,22 +11,61 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-Stencil Placeholders is a simple to use and yet powerful syntax for the rendering of Stencils. They are focused on simplicity of use and simplicity of maintenance.
+Stencil Placeholders is a simple to use and yet powerful syntax for the rendering of Stencils. They are focused on simplicity of use and maintenance.
 
 Stencil Placeholders lack control flows like `if then else` or `for loops` to encourage simplicity of the templates. By providing adequate tools to manage groups of Stencils through Formations, Base Templates and sections as well as tags, breaking up of large and complex Stencils are encouraged.
 
 ## Syntax basics
 
-All Stencil Placeholders are placed inside `${...}`.
+* All Stencil Placeholders are placed inside `${...}`.
+* Placeholders are always used in a single line. Multi-line placeholders are not valid although the result of a placeholder could be multiple lines.
+
+### Dot notation
+
+You can call any hierarchical elements of an application via Placeholders using dot notation. For example `${service.port.container}` will fetch the `targetport` for a particular service. 
+
+As with all Stencil Placeholders, this notation is context-dependent - for example `${service.port.container}` will only work correctly if it is nested within a YAML file that sets a `namespace` and `service.name` correctly. 
+
+### Data types and operators
+
+The Placeholders syntax supports some common data formats and operators:
+
+#### Arrays:
+
+These use a similar format to Ruby arrays - comma separated values with quote-delimited strings.
+
+Example:
+`[1, 2, "abc", formation]`
+
+#### Hashes:
+
+These use a similar format to Ruby hashes - comma separated key:value pairs with with quote-delimited strings.
+
+Example: 
+```
+{ "foo": 1, "formation_name" : formation, "complex" : concat("hey", " you")}
+```
+#### Locals:
+
+`Locals` are local variables defined within the context of the current template. These are useful for `inline` functions (see below) because they allow you to set or call values contextually (e.g. "pull in my `_deployspec.yml` and but set the port to `8080`")
+
+#### Simple `if` statements:
+
+These use the format `if(CONDITION, TRUE_RESULT, FALSE_RESULT)` where CONDITION is any boolean condition (no AND or OR). Comparisons supported are `==`, `!=` `>=`, `<=`, `>` and `<`. `True` and `False` are also supported conditions.
+
+Example:
+```
+namespace: ${if(formation != production, dev, live)}
+```
+This would set the namespace to "live" if the formation is named "production" or to "dev" if it's named anything else. 
+
+
+### Placeholder types
 
 There are 2 types of placeholders:
 
-* Functions
 * Directives
-
-#### Functions
-
-Functions are used to retrieve or manipulate data. For example you can use the `concat("foo", "bar")` function to concatenate 2 or more strings together. Another example is `now()` which returns the time now. Functions are always followed by `(arguments)`. If no argument is passed to a function, the `()` should still be present.
+* Functions
 
 #### Directives
 
@@ -34,63 +73,41 @@ Directives are like constants that are set at the beginning of rendering. Their 
 
 It is possible for a directive to have multiple parts. For example, the `service` directive has different parts like `image` and `tag` which return the service's Docker image name and image tag. To address the different parts of a directive, use `["part"]` syntax: `service["image"]`
 
-### Rules for placeholders
+#### Functions
 
-1. Placeholders are always used in a single line. Multi-line placeholders are not valid although the result of a placeholder could be multiple lines.
-
-2. Placeholders always return a string.
-
-### Data types and operators 
-
-The Placeholders syntax supports some common data formats and operators:
-
-#### Arrays:
-
-These use a similar format to Ruby arrays.
-
-Example:
-`[1, 2, "abc", formation]`
-
-#### Hashes:
-These use a similar format to Ruby hashes.
-
-For example: 
-```
-{ "foo": 1, "formation_name" : formation, "complex" : concat("hey", " you")}
-```
-
-#### `if` statements:
-
-These use the format `if(CONDITION, TRUE_RESULT, FALSE_RESULT)` where CONDITION is any boolean condition (no AND or OR). Comparisons supported are `==`, `!=` `>=`, `<=`, `>` and `<`.
-
-#### `true` and `false`:
-
-
+Functions are used to retrieve or manipulate data. For example you can use the `concat("foo", "bar")` function to concatenate 2 or more strings together. Another example is `now()` which returns the time now. Functions are always followed by `(arguments)`. If no argument is passed to a function, the `()` should still be present.
 
 
 ## Directives 
 
-### `stackname`
+### stackname
 
-Returns the Kubernetes friendly name of the Skycap Stack (application). All invalid characters are replaced with `-` (dash).
+Usage: `${stackname}`
+
+Returns the Kubernetes-friendly name of a Skycap application (stack). All invalid characters are replaced with `-` (dash).
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-### `formation`
+### formation
+
+Usage: `${formation}`
 
 Returns the Kubernetes friendly name of the Formation. All invalid characters are replaced with `-` (dash).
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-### `service`
+### service
 
-Returns the Kubernetes friendly name of the service that's relevant for this Stencil. You can choose the relevant service to a Stencil when creating and editing a Stencil. For example `service["image"]` returns the Docker image name of this service.
+Usage: `${service["part"]}`
 
+Returns the Kubernetes friendly name of the service that's relevant for this Stencil. You can choose the relevant service when creating and editing a Stencil. 
 
-If no part name is provided, this will return the service name. Options for parts are:
+You can provide a part name to pull information on a specific part of the service. If no part name is provided, this will return the service name. 
+
+Options for parts are:
 
 * `name` (default) &ndash; Name of the service
-* `image` &ndash; Image name
+* `image` &ndash; Docker image name
 * `tag` &ndash; Image tag
 * `display_name` &ndash; Display name of the service
 * `address` &ndash; Services DNS address
@@ -99,122 +116,44 @@ If no part name is provided, this will return the service name. Options for part
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-### `snapshot`
+### snapshot
 
-Returns the snapshot unique identifier. For example, `snapshot["gitref"]` returns the gitref for the Stencil. Options for parts are:
+Usage: `${snapshot["part"]}`
+
+Returns the unique identifier for a snapshot. For example, `snapshot["gitref"]` returns the gitref for the Stencil. 
+
+Options for parts are:
 
 * `uid` (default) &ndash; Unique ID of the Snapshot
-* `gitref` &ndash; Gitref for the Stencil used from the Stencil's git repository
+* `gitref` &ndash; Gitref for a Stencil from that Stencil's git repository
 
 
 ## Functions
 
-### `registry_credentials([registry_address])`
+### base64
 
-Returns the <strong>base 64</strong> encoded version of the Kubernetes friendly credentials for a Docker registry. See <a href="https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/">Pulling image from a private registry in Kubernetes</a> document for more information. The result of this function can be used directly as the value for the `.dockerconfigjson` secret of `kubernetes.io/dockerconfigjson` type.
+Usage: `base64([array,of,keys])`
 
-If no `registry_address` is given, the BuildGrid registry credentials are returned. To pull any other registry's credentials, use the name of the registry used when adding it to your Cloud 66 Skycap account under <strong>Accounts / External Keys and Services</strong> section. For example, if you have a Quay.io added to the list of your registries, you can use `registry_credentials("quay.io")` to retrieve the credential.
+Encodes a set of values in Base64 format. Only the values are encoded - not the keys.
 
-Here is an example on how to use `registry_credentials`:
+### concat
 
-<pre class="prettyprint">
-apiVersion: v1
-kind: Secret
-metadata:
-  namespace: foo
-  name: bar-docker-registry-secret-name
-data:
-  .dockerconfigjson: ${registry_credentials()}
-type: kubernetes.io/dockerconfigjson
----
-apiVersion: extensions/v1beta1
-kind: Deployment
-metadata:
-  namespace: foo
-spec:
-  template:
-    spec:
-      imagePullSecrets:
-      - name: bar-docker-registry-secret-name
-</pre>
-
-<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
-
-
-### `concat("stringA", "stringB")`
+Usage: `concat("stringA", "stringB")`
 
 Concatenates the specified strings into a single string. 
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-### `count`
+### configstore
 
-Returns the number of items in an array or any countable objects e.g. strings. For example:
+Usage: 
 
-```
-count([4578, 2178] # returns 2
-count([dog, fish, bird] # returns 3
-count("abc") # returns 3
+* `configstore("key", account["configstore_namespace"])` *OR* 
+* `configstore("key", application["configstore_namespace"])`
 
-```
+Returns the value for a key from a Cloud 66 ConfigStore. If no namespace is specified this will default to the **application-level** ConfigStore of the current app.
 
-<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
-
-### `env(name, default)`
-
-Returns the value of an environment variable from the Stack Environment Variables. For example `env("RAILS_ENV")` returns the value for `RAILS_ENV`. `env("RAILS_ENV", "production")` returns `production` if there is no value available for `RAILS_ENV`.
-
-If an environment variable is defined in both Stack Environment Variables and `service.yml` for the service this Stencil is related to, the service defined environment variable will be returned.
-
-<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
-
-### `vault("/path_root/path_to_key", "key_name")`
-
-Fetches the named value from the specified path in the Vault that is attached to the current Cloud 66 account (i.e. the one which holds the current application).
-
-For example, if your production MySQL password is stored in `/production/MySQL` with the key name `mysql_pass` then the placeholder would be:
-
-<pre class="prettyprint">
-{vault("/production/MySQL", "mysql_pass")}
-</pre>
-
-<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
-
-### `vaultlist("/path_root/path_to_keys", indent_level)`
-
-Fetches *all* the available values from any path in Vault. As above, the Vault must be attached to the current Cloud 66 account 
-
-The example below would pull all of the values from the `/production/mysql` path and indent them with 2 spaces.
-
-<pre class="prettyprint">
-apiVersion: v1
-kind: Secret
-metadata:
-  namespace: another_app
-  name: all_secrets
-  annotations:
-    cloud66.com/formation-uuid: ${formation["uuid"]}
-    cloud66.com/stencil-uuid: ${stencil["uuid"]}
-    cloud66.com/snapshot-uid: ${snapshot["uid"]}
-    cloud66.com/snapshot-gitref: ${snapshot["gitref"]}
-  labels:
-    app: ${stackname}
-type: Opaque
-data:
-  ${vaultlist("/production/mysql", 2)}
-</pre>
-
-<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
-
-### `configstore("key")`
-
-Returns the value of the `key` specified. By default this will use the **application-level** ConfigStore.
-
-<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
-
-### `configstore("key", account["configstore_namespace"])`
-
-As above, but returns the value from an **account-level ConfigStore** using the namespace UID as the lookup. The same can be done using the `application` parameter to fetch values from another application-level ConfigStore.
+You can also fetch values from an **account-level ConfigStore** using the namespace UID as the lookup. The same can be done using the `application` parameter to fetch values from *another* application-level ConfigStore.
 
 For example:
 
@@ -239,34 +178,54 @@ spec:
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-### `inline(stencil, indent, locals)`
 
-Returns the rendered content of a Stencil. For example: `inline("disks.yml")` will return the rendered value of an inline Stencil called `_disks.yml`.
+### count
 
-<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
+Usage: `count([array values])`
 
-### `repeat_inline(filename, indent, locals, count)`
-
-LOCALS can be an array or hash. If it is an array, each item should be a hash and the inline will be rendered count(LOCALS) times, each time with LOCALS[index] as the locals in the normal inline call.
-
-If COUNT is provided, it should be a number. In this case inline will be repeated COUNT times, each time with LOCALS provided as the locals in the normal inline function. In this case LOCALS should be a hash. Examples below:
+Returns the number of items in an array or any countable objects e.g. strings. For example:
 
 ```
-${repeat_inline("test.yml", 8, [ { "foo" : "bar" }, { "foo" : "buzz" } ])} # render test twice, one with foo=bar and once with foo=buzz
-${repeat_inline("test.yml", 4, { "foo": "bar" }, 12)} # render test 12 times, every time with foo=bar  
+count([4578, 2178] # returns 2
+count([dog, fish, bird] # returns 3
+count("abc") # returns 3
 
 ```
-<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
-
-### `sanitize(text)`
-
-Returns the "DNS friendly" version of the given text. For example `sanitize("Hello World!")` will return `hello-world-`.
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-### `envlist(indent[, tag])`
+### digest
 
-Returns a YAML compatible list of all Stack Environment Variables. This is useful when you don't want to keep adding new environment variables to every deployment one by one. For example `envlist(2)` returns the following:
+Usage: `digest(text, algorithm, encoding)`
+
+Returns an encoded and digested copy of the given text. The options for algorithm are:
+
+* `md5`
+* `sha1`
+* `sha2`
+
+The options for encoding are:
+
+* `base64`
+* `hex`
+
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
+
+### env
+
+Usage: `env(name, default)` 
+
+Returns the value of an environment variable from the Stack Environment Variables. For example `env("RAILS_ENV")` returns the value for `RAILS_ENV`. `env("RAILS_ENV", "production")` returns `production` if there is no value available for `RAILS_ENV`.
+
+If an environment variable is defined in both Stack Environment Variables and `service.yml` for the service this Stencil is related to, the service defined environment variable will be returned.
+
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
+
+### envlist
+
+Usage: `envlist(tag)`
+
+Returns a YAML compatible list of all Stack Environment Variables. This is useful when you don't want to keep adding new environment variables to every deployment one by one. For example `envlist` returns the following:
 
 <pre class="prettyprint">
   - RAILS_ENV: 'production'
@@ -274,17 +233,53 @@ Returns a YAML compatible list of all Stack Environment Variables. This is usefu
   - API_ENDPOINT: 'https://api.acme.org'
 </pre>
 
-As Stencils are almost always yaml files, the indentation is important. `indent` argument ensures all returned values of the list are indented with the given number of spaces. `tag` only returns the environment variables that match it. You can set the tags for each environment variable on the Stack Environment Variables page on Skycap dashboard: `envlist(4, "secret")` returns only the list of environment variables tagged with `secret`.
+Using `tag` returns only the environment variables that match it. You can set the tags for each environment variable on the Stack Environment Variables page on Skycap dashboard. 
+
+Example: `envlist("secret")` returns only the list of environment variables tagged with `secret`.
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-### `require(message)`
 
-Stops rendering of the Stencil and returns an error with the message. This is used when you would like to create a Stencil template and make sure the end user of the Stencil fills some value before attempting to render it. For example `require("PORT")` will return a render error saying <strong>PORT is required</strong>
+### inline
+
+Usage: `inline(stencil, indent, locals)`
+
+Returns the rendered content of a Stencil. For example: `inline("disks.yml")` will return the rendered value of an inline Stencil called `_disks.yml`. 
+
+As Stencils are almost always yaml files, indentation is important. The `indent` argument ensures all returned values are indented by the contextually-appropriate number of spaces.
+
+The `locals` parameter is optional and can be a hash. It will use any keys provided as directives. For example `inline("test.yml", 2, { "foo": "bar" })` will fetch the contents of test.yml, indent it by two spaces and then set the Placeholder named `${foo}` to the value "bar".
+
+Example:
+
+<pre class="prettyprint">
+kind: Deployment
+metadata:
+  namespace: ${formation}
+  name: ${concat(service, "-dep")}
+  annotations:
+    cloud66.com/formation-uuid: ${formation["uuid"]}
+    cloud66.com/stencil-uuid: ${stencil["uuid"]}
+    cloud66.com/snapshot-uid: ${snapshot["uid"]}
+    cloud66.com/snapshot-gitref: ${snapshot["gitref"]}
+spec:
+  template:
+    metadata:
+      labels:
+        app: ${stackname}
+        tier: ${service}
+    spec:
+    $inline("_deploy_spec.yml",4,{ "service.port.http": "8080" })
+
+</pre>
+
+This example fetches the contents of a partial Stencil called `deploy_spec`, indents it by four spaces and then sets the `service.port.http` to 8080.
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-### `now([formatting])`
+### now
+
+Usage: `now([formatting])` 
 
 Returns the time of rendering. If no formatting is provided, it will return the date and time like this `2018-03-07 09:57:36 UTC`. Valid values for the formatting are:
 
@@ -295,7 +290,6 @@ Returns the time of rendering. If no formatting is provided, it will return the 
 * `minute`
 * `second`
 * `epoch`
-
 
 Alternatively you can use the following:
 
@@ -393,23 +387,132 @@ Combination:
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-### `random(length)`
+### random
+
+Usage: `random(length)`
 
 Returns a random string with the given length.
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
-### `digest(text, algorithm, encoding)`
 
-Returns an encoded and digested copy of the given text. The options for algorithm are:
+### registry_credentials
 
-* `md5`
-* `sha1`
-* `sha2`
+Usage: `registry_credentials([registry_address])`
 
-The options for encoding are:
+Returns the <strong>base 64</strong> encoded version of the Kubernetes friendly credentials for a Docker registry. See <a href="https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/">Pulling image from a private registry in Kubernetes</a> document for more information. The result of this function can be used directly as the value for the `.dockerconfigjson` secret of `kubernetes.io/dockerconfigjson` type.
 
-* `base64`
-* `hex`
+If no `registry_address` is given, the BuildGrid registry credentials are returned. To pull any other registry's credentials, use the name of the registry used when adding it to your Cloud 66 Skycap account under <strong>Accounts / External Keys and Services</strong> section. For example, if you have a Quay.io added to the list of your registries, you can use `registry_credentials("quay.io")` to retrieve the credential.
+
+Here is an example on how to use `registry_credentials`:
+
+<pre class="prettyprint">
+apiVersion: v1
+kind: Secret
+metadata:
+  namespace: foo
+  name: bar-docker-registry-secret-name
+data:
+  .dockerconfigjson: ${registry_credentials()}
+type: kubernetes.io/dockerconfigjson
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  namespace: foo
+spec:
+  template:
+    spec:
+      imagePullSecrets:
+      - name: bar-docker-registry-secret-name
+</pre>
+
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
+
+### repeat_inline
+
+Usage: `repeat_inline(filename, indent, locals, count)`
+
+This is an extension of the `inline` function (see above) which repeats an inline either by the number of variables set in `locals` or by the `count` parameter. 
+
+In this context `locals` can be an array or hash. If it is an array, each item should be expressed as a hash. The inline will be rendered count(locals) times (i.e. if there are 3 items in the array, it will be repeated 3 times), each time using the value of each hash in the array. 
+
+For example:
+```
+${repeat_inline("test.yml", 8, [ { "foo" : "bar" }, { "foo" : "buzz" } ])} # render test twice, one with foo=bar and once with foo=buzz
+```
+
+If `count` is provided, it should be a number. In this case inline will be repeated `count` times, each time with `locals` provided as the locals in the normal inline function. In this case `locals` should be a hash. For example:
+
+```
+${repeat_inline("test.yml", 4, { "foo": "bar" }, 12)} # render test 12 times, every time with foo=bar  
+```
+
+Repeating inlines can fetch loop information using `locals_index` (for the current iteration index) and `locals_count` (for the total count). For example you could use this:
+```
+This is the ${locals_index} time out of ${locals_count} renders of ${foo}
+
+```
+...to check which iteration of an inline is being rendered. 
+
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
+
+### require
+
+Usage: `require(message)`
+
+Stops rendering of the Stencil and returns an error with the message. This is used when you would like to create a Stencil template and make sure the end user of the Stencil fills some value before attempting to render it. For example `require("PORT")` will return a render error saying <strong>PORT is required</strong>
+
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
 
+### sanitize
+
+Usage: `sanitize(text)`
+
+Returns the "DNS friendly" version of the given text. For example `sanitize("Hello World!")` will return `hello-world-`.
+
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
+
+
+### vault
+
+Usage: `vault("/path_root/path_to_key", "key_name")`
+
+Fetches the named value from the specified path in the Vault that is attached to the current Cloud 66 account (i.e. the one which holds the current application).
+
+For example, if your production MySQL password is stored in `/production/MySQL` with the key name `mysql_pass` then the placeholder would be:
+
+<pre class="prettyprint">
+{vault("/production/MySQL", "mysql_pass")}
+</pre>
+
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
+
+### vaultlist
+
+Usage: `vaultlist("/path_root/path_to_keys")` 
+
+Fetches *all* the available values from any path in Vault. As above, the Vault must be attached to the current Cloud 66 account 
+
+The example below would pull all of the values from the `/production/mysql` path.
+
+<pre class="prettyprint">
+apiVersion: v1
+kind: Secret
+metadata:
+  namespace: another_app
+  name: all_secrets
+  annotations:
+    cloud66.com/formation-uuid: ${formation["uuid"]}
+    cloud66.com/stencil-uuid: ${stencil["uuid"]}
+    cloud66.com/snapshot-uid: ${snapshot["uid"]}
+    cloud66.com/snapshot-gitref: ${snapshot["gitref"]}
+  labels:
+    app: ${stackname}
+type: Opaque
+data:
+  ${vaultlist("/production/mysql", 2)}
+</pre>
+
+<div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
