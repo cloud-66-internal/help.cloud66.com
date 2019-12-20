@@ -7,7 +7,7 @@ This is an alias for the `stacks redeploy` command, which triggers the deploymen
 ### Usage
 
 ```
-$ cx redeploy [-s <stack>] [-y] [--git-ref <git_ref>] [--service <service>] [--service <service>] [--service <service>]
+$ cx redeploy [-s <stack>] [-y] [--git-ref <git_ref>] [--service <service>] [--service <service>] [--service <service>] [--deploy-strategy <strategy>] [--deployment-profile <profile name>]
 ```
 
 
@@ -23,13 +23,15 @@ $ cx redeploy [-s <stack>] [-y] [--git-ref <git_ref>] [--service <service>] [--s
 |git-ref (optional, non-Docker)  |  Redeploy the specific git reference (branch, tag or hash). Non-Docker applications only. |
 |service (optional, repeatable, Docker only)	   |	Will deploy the specified services from your application only. Each service can have an optional colon-separated reference which is image tag or git reference for image based services, or for git based services. |
 |listen (optional)	   |	Will follow the deployment and log progress output  |
+|deploy-strategy (optional) | Set a strategy for this redeployment. Options: `parallel`, `fast`. |
+|deployment-profile (optional) | Use an existing profile for this redeployment. |
 {:.table}
 
 
 ### Examples
 
 ```
-$ cx redeploy -s "My Awesome App" -e production
+$ cx redeploy -s "My Awesome App" -e production --deploy-strategy fast
 ```
 
 ```

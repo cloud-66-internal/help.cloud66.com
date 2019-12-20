@@ -104,6 +104,24 @@ A Habitus build usually has multiple steps and each step can generate a Docker i
 
 Check out the [Habitus website](http://www.habitus.io) for more information about generating a `build.yml`.
 
+## Adding a DaemonSet
+
+A DaemonSet ensures that a (single) copy of a specific Pod is added to every Node. This is useful for running background processes (aka daemons) but has many other uses. For more detail pleased read our [explanatory doc](/maestro/the-basics/concepts-and-terminology.html#daemonsets) on the subject. 
+
+To create a DaemonSet we simply set the `type` of any service to `daemon_set`. For example:
+
+{% highlight yaml %}
+    service:
+      web:
+        image: training/webapp
+        type: daemon_set
+        ports:
+        - container: 5000
+          http: 80
+{% endhighlight %}
+
+This will use the image called "webapp" to spawn a single Pod called "web" on every Node in your Cluster.
+
 ## Database configurations
 
 You can specify any required databases in the service configuration. As databases are fairly static components that rarely change without a migration, they aren't run in containers. This avoids the complexity and overhead of running databases in a container and allows Cloud 66 to perform replication and backups as normal. These databases will be deployed and configured automatically, and their addresses and access credentials will be made available to the containers across the application with environment variables.
@@ -297,7 +315,11 @@ Below is a table of the available configurations for a given service with a brie
     <tr> 
      <td> <a href="/{{page.collection}}/how-to-guides/deployment/service-network-configuration.html#traffic_matches">traffic_matches</a> </td> 
      <td> The automatically configured traffic names in your Nginx config that will route traffic to these containers based on request DNS name. Allows microservices on the same port routes by subdomain for instance. </td> 
-    </tr> 
+    </tr>
+    <tr> 
+     <td>type</td> 
+     <td> Specifies the type of service being defined. Accepted values: <kbd>service</kbd>, <kbd>deployment</kbd>, <kbd>daemon_set</kbd> </td> 
+    </tr>  
     <tr> 
      <td> <a href="/maestro/how-to-guides/deployment/service-storage.html">volumes</a> </td> 
      <td> The volumes that are mounted from your host into your container. <span style="background-color: #FFFF00"><strong>Note:</strong> must use absolute paths.</span> </td> 
