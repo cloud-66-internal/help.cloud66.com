@@ -130,6 +130,16 @@ If you’d like to understand this concept better, read this [excellent in-depth
 <div class="notice"><p>
 In this context, <em>outside world</em> is used for any client of your service that's not inside the container. This includes any of your other services running on other environments.</p></div>
 
+## DaemonSets
+
+DaemonSets ensure that each Node in your cluster runs a single copy of specific Pod. Whenever a new Node is added, the DaemonSet ensure a copy of the chosen Pod is spawned on that Node. 
+
+As their name suggests, DaemonSets are useful for running background processes like log collection and monitoring, but they can be used for any purpose that requires a service (or set of services) to be present on every Node in a cluster. 
+
+If you need more technical detail you can read the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) on DaemonSets, but this is not necessary to use Maestro. 
+
+If you'd like to start adding DaemonSets to your application, you can go straight to our [how-to guide](/maestro/how-to-guides/deployment/docker-service-configuration.html#adding-a-daemonset).
+
 ## Nodes, masters & workers
 
 ### Overview
