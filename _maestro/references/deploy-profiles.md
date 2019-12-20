@@ -27,8 +27,9 @@ Under this section, you can see all your services are listed. You can choose one
 
 ### Deployment strategy
 
-- **Parallel Deployment**: Deploy all the services together.
-- **Serial Deployment**:   Deploy services sequentially.
+- **Parallel Deployment**: Complete deployment of all services
+- **Fast Deployment**: Deploys only changes to code and/or images.
+
 
 ### Upgrades
 
