@@ -1,21 +1,31 @@
-
-
 You can use Cloud 66 to provision and deploy your code to servers in any Google Compute Engine (GCE) region.
 
 ## Generate GCE API keys
-You need to provide your GCE API keys in order for Cloud 66 to access your account. To generate these, access the Developers Console of your Google account, and create a project if you don’t already have one. Once you have a project, access it and click the APIs & auth -> APIs menu. On this page, make sure that the option for *Google Compute Engine API* is turned On.
 
-Next, in the same menu, click *Credentials* and then *Create credentials*. Select Service account key from the options provided, and click *Create*. This will automatically download a JSON file for you, which contains your credentials.
+You need to provide your GCE API keys in order for Cloud 66 to access your account. 
+To generate these: 
 
-We need three credentials to connect with your account:
+1. Access the [Console](https://console.cloud.google.com) of your Google account
+2. Create a project (if you don't already have one)
+3. Switch to your desired project
+4. Use the search bar at the top of the page to search for "APIs & Services" and click the first result
+5. Click on *Credentials* in the left-hand navigation menu
+6. Click on *+ Create Credentials* at the top of the page; Select *Service Account*
+7. Give your service account a name (like "cloud66") and an optional description; Click *Create*
+8. Add the role "Compute Admin" and then click *Continue* (NOTE: this will grant Cloud 66 the rights to create/amend/delete compute resources in this project)
+9. Leave the *User Access* options blank; Click *Create Key*, and select *JSON* then click *Create*. Download and save your JSON key somewhere locally (this contains your credentials)
+10. Click *Done*
 
-1. Email address - this is available on the APIs -> _Credentials page under **Service Accounts**.
-2. JSON key - the file that was automatically downloaded for you
-3. Project ID - this is available at the top of the **Overview** page
+Once the above is done, we will need three things to connect with your account:
 
-Please remember to enable Google Compute in the API list under **API & auth** for the integration to work.
+1. **Email address** - this is the email address of the service account you just created (ie. like cloud66@<project-id>.iam.gserviceaccount.com)
+2. **Project ID** - this is your project ID (available at the top of the Overview page)
+3. **JSON key** - the file that you downloaded and saved above
 
-You may also have to enable billing for your account through the Billing and settings menu.
+#### Note
+<div class="notice"><p>
+Depending on the age of your Google account, you may need to "+ Enable APIs and Services" in the API list under <em>APIs & Services</em> for this integration to work
+</p></div>
 
 ### Add GCE keys to an application
 
