@@ -417,7 +417,7 @@ data:
 ...and then use it in a deployment.
 
 <pre class="prettyprint">
-apiVersion: extensions/v1beta1
+apiVersion: v1
 kind: Deployment
 metadata:
  namespace: foo
