@@ -194,7 +194,7 @@ CMD ["/myapp/main.rb"]
 
 Kubernetes relies on its "[Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)" feature to manage the identity of processes running inside Pods. 
 
-By default all services belong to a service account named `default`. You can set a custom Service Account for any service using `service_account_name`. For example:
+By default all services belong to a service account named `default`. Normally this provides sufficient access for your application. However, should you require elevated access (e.g. to allow for log collection or metrics gathering), you can set a custom Service Account for any service using the `service_account_name`. For example:
 
 {% highlight yaml %}
 services:
@@ -205,7 +205,9 @@ services:
  service_account_name: public-front-end
 {% endhighlight %}
 
-This will identify this service as "public-front-end". Bear in mind that Kubernetes still needs to be configured to recognize and assign permissions to this Service Account.
+This will make the service named "web" run under the "public-front-end" Service Account in Kubernetes.  
+
+Bear in mind that this service account will first need to be created on your cluster (with associated access bindings) before it will function correctly. Please read the [Kubernetes guide to configuring Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) for more detail.
 
 ## Service configuration options
 
