@@ -9,4 +9,4 @@ legacy: false
 permalink: /:collection/:path:output_ext
 tags: ["debugging"]
 ---
-{% include how-to-guides/deployment/ssh.md %}
+{% include how-to-guides/common-tools/ssh.md %}

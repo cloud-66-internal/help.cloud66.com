@@ -14,7 +14,7 @@ Cloud providers frequently change the public IP addresses of servers when they a
 Verbose mode gives you more information on the SSH command running. It is a good way of finding out more detail about what is preventing SSH from working. To run the SSH in verbose mode, use the following command:
 
 ```
-cx -vvv ssh -s <APP_NAME> -e <ENVIRONMENT> <SERVER_NAME>
+cx ssh -vvv -s <APP_NAME> -e <ENVIRONMENT> <SERVER_NAME>
 ```
 
 
