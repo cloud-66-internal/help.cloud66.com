@@ -136,7 +136,6 @@ databases:
     - elasticsearch
 {% endhighlight %}
 
-
 ## Environment variables
 
 Any environment variable defined in your application will be made available within your service container. You can also define a new environment variable for a service or reference an environment variable in other applications or services using the following syntax:
@@ -191,6 +190,24 @@ EXPOSE 3000
 CMD ["/myapp/main.rb"]
 ```
 
+## Setting a Service Account name
+
+Kubernetes relies on its "[Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)" feature to manage the identity of processes running inside Pods. 
+
+By default all services belong to a service account named `default`. Normally this provides sufficient access for your application. However, should you require elevated access (e.g. to allow for log collection or metrics gathering), you can set a custom Service Account for any service using the `service_account_name`. For example:
+
+{% highlight yaml %}
+services:
+ web:
+  ports:
+   - container: 3000
+     http: 80
+ service_account_name: public-front-end
+{% endhighlight %}
+
+This will make the service named "web" run under the "public-front-end" Service Account in Kubernetes.  
+
+Bear in mind that this service account will first need to be created on your cluster (with associated access bindings) before it will function correctly. Please read the [Kubernetes guide to configuring Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) for more detail.
 
 ## Service configuration options
 
@@ -287,7 +304,11 @@ Below is a table of the available configurations for a given service with a brie
     <tr> 
      <td> <a href="/{{page.collection}}/how-to-guides/deployment/service-network-configuration.html#ports">ports</a> </td> 
      <td> The ports that are running within the container, as well as their corresponding external ports. </td> 
-    </tr> 
+    </tr>
+    <tr> 
+     <td> <a href="#setting-a-service-account-name">service_account_name</a> </td> 
+     <td> Assigns the service to a specific Kubernetes Service Account. The default value is <kbd>default</kbd> </td> 
+    </tr>  
     <tr> 
      <td> privileged <em>(default: false)</em> </td> 
      <td> Boolean value to indicate whether the container should be <a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities">run with extended privileges</a>. </td> 
