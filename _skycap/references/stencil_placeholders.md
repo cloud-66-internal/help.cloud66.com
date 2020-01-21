@@ -397,7 +397,7 @@ Returns a random string with the given length.
 
 Usage: `registry_credentials([registry_address])`
 
-Returns the <strong>base 64</strong> encoded version of the Kubernetes friendly credentials for a Docker registry. See <a href="[https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)">Pulling image from a private registry in Kubernetes</a> document for more information. The result of this function can be used directly as the value for the `.dockerconfigjson` secret of `kubernetes.io/dockerconfigjson` type.
+Returns the **base 64 encoded** version of the Kubernetes friendly credentials for a Docker registry. Read the [Pulling image from a private registry in Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/) document for more information. The result of this function can be used directly as the value for the `.dockerconfigjson` secret of `kubernetes.io/dockerconfigjson` type.
 
 If no `registry_address` is given, the BuildGrid registry credentials are returned. To pull any other registry's credentials, use the name of the registry used when adding it to your Cloud 66 Skycap account under <strong>Accounts / External Keys and Services</strong> section. For example, if you have a [Quay.io](http://quay.io/) added to the list of your registries, you can use `registry_credentials("quay.io")` to retrieve the credential.
 
