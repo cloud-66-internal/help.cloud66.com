@@ -9,15 +9,15 @@ lead: A step by step tutorial that walks you through deploying a demo applicatio
 permalink: /:collection/:path:output_ext
 ---
 
-Maestro is a full container management service. Once your Docker images are ready we'll take care of deploying and managing your containers and infrastructure (servers, load balancers, etc).
+Maestro builds and manages Kubernetes clusters for you on your own servers on any cloud. We build your code into Docker images and/or fetch existing images from repostitories. We also take care of deploying and managing your containers and infrastructure (servers, load balancers, etc).
 
 ## What you'll need
 
 Before you start, please check you have the following:
 
 * **A Cloud 66 Account** &mdash; If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. You'll get free unlimited access to all products for 4 weeks.
-* **Container Images to deploy** &mdash; These can be images you've built with [Skycap](https://www.cloud66.com/containers/skycap) or your own pre-built images that are hosted in an image repository.
-* **A Cloud Account or Your Own Servers** &mdash; See below.
+* **Application code and/or container images ready to deploy** &mdash; Application code should be hosted in a (secure) publicly accessible git repository and pre-built images should be hosted in image publicly accessible repositories.
+* **A Cloud account linked to Cloud 66 or your own servers set up** &mdash; See below.
 
 {% include general/cloud_provider_or_own_server_tabs.html %}
 
@@ -44,18 +44,24 @@ If you're already using Cloud 66 just click *New Application &rarr; Maestro (Bui
 
 <img src="/assets/skycap/skycap_new_dropdown_update.png" alt="Start a new Skycap build pipeline" width="200">
 
-## Adding services
+## Adding application services
 
-The first step is to give your application a **name**. This will be used to label your application throughout the Cloud 66 dashboard.
+The first step is to give your application a **name**. This will be used to label your application throughout the Cloud 66 dashboard, and will not be visible to public users of your application.
 
-Next, you need to add at least one **service**. To your application. If you're using our demo application, you will need to add a single service called `demo-app` by pulling the code from this [public repo](https://github.com/cloud66/maestro-demo.git).
+Next, we need to analyze your application's code so that we can build container images for you. 
 
-To do this:
+Click the green *Analyze My Code* button. If you haven't already linked your Git service provider to Cloud 66 we will walk you through the process. We also have a [dedicated how-to guide](https://help.cloud66.com/maestro/how-to-guides/common-tools/access-your-code.html) if you get stuck.
+
+Once your Git provider is linked, we can analyze your code. To do this:
 
 1. Copy the *Clone or download* link from Github
-2. Paste it into the **Git Repo URL** field
+2. Paste it into the **Git repo URL** field
 3. Type *master* into the **branch** field
 4. Click *Go* to fetch and analyze the code
+
+If you're using our demo application, you will need to add a single service called `demo-app` by pulling the code from this [public repo](https://github.com/cloud66/maestro-demo.git).
+
+
 
 <img src="/assets/maestro/maestro-adding-services.gif" alt="Adding services to a Maestro application">
 
