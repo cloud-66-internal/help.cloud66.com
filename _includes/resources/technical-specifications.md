@@ -47,14 +47,14 @@ You are free to specify a version for a number of components in your [manifest f
 <th width="30%">Component</th>
 <th>Default version</th></thead>
 
-<tr><td>BX</td><td>0.0.23</td></tr>
+<tr><td>BX</td><td>0.0.25</td></tr>
 <tr><td>CAdvisor</td><td>0.0.3</td></tr>
 <tr><td>Delphi</td><td>2.0.4</td></tr>
-<tr><td>Docker</td><td>18.06.3-ce (as per Kubernetes guidelines)</td></tr>
-<tr><td>ElasticSearch</td><td>5.1.2</td></tr>
+<tr><td>Docker</td><td>18.09.9-ce (as per Kubernetes guidelines)</td></tr>
+<tr><td>ElasticSearch</td><td>7.1.0</td></tr>
 <tr><td>GlusterFS</td><td>3.12.6</td></tr>
 <tr><td>Gotty</td><td>1.0.0</td></tr>
-<tr><td>Kubernetes</td><td>1.14.4</td></tr>
+<tr><td>Kubernetes</td><td>1.14.10</td></tr>
 <tr><td>MongoDB</td><td>2.6.11</td></tr>
 <tr><td>MySQL</td><td>8.0</td></tr>
 <tr><td>Phusion Passenger</td><td>5.3.7</td></tr>
@@ -62,11 +62,12 @@ You are free to specify a version for a number of components in your [manifest f
 <tr><td>PostGIS</td><td>2.5</td></tr>
 <tr><td>PostgreSQL</td><td>11</td></tr>
 <tr><td>Rails*</td><td>All versions from 2.6.3 and up</td></tr>
-<tr><td>Redis</td><td>5.0</td></tr>
+<tr><td>Redis</td><td>5.0.5</td></tr>
 <tr><td>Ruby</td><td>2.6.3</td></tr>
 <tr><td>Scaleio</td><td>2.0.7120</td></tr>
 <tr><td>Stack</td><td>1.4.6</td></tr>
 <tr><td>Telegraf</td><td>0.10.4</td></tr>
+<tr><td>Teleport</td><td>4.0.6</td></tr>
 <tr><td>Weave</td><td>1.9.8</td></tr>
 <tr><td>White Rabbit (client)</td><td>0.1.5</td></tr>
 </table>

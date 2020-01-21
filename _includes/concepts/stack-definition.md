@@ -5,7 +5,7 @@ Cloud 66 for Rails is a DevOps-automation service that allows you to easily buil
 Cloud 66 for Rails allows you to centralize the provisioning and management of:
 
 * Rack-based applications (and app servers)
-* Databases
+* Databases 
 * Load Balancers
 * Caches 
 * Message queues
