@@ -20,8 +20,8 @@ A Maestro Cluster is a "blank" instance of Kubernetes infrastructure - i.e. with
 Before you start, please check you have the following:
 
 * **A Cloud 66 Account** &mdash; If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. You'll get free unlimited access to all products for 4 weeks.
-* **Container Images to deploy** &mdash; These can be images you've built with [Skycap](https://www.cloud66.com/containers/skycap) or your own pre-built images that are hosted in an image repository.
-* **A Cloud Account or Your Own Servers** &mdash; See below.
+* **Application code and/or pre-built images** &mdash; Application code should be hosted in a (secure) publicly accessible git repository and pre-built images should be hosted in image publicly accessible repositories.
+* **A Cloud account linked to Cloud 66 or your own servers set up** &mdash; See below.
 
 {% include general/cloud_provider_or_own_server_tabs.html %}
 
