@@ -66,13 +66,11 @@ In the context of CSv1, **Nginx** is responsible for managing Layer-7 (HTTP/HTTP
 
 ## Maestro vs Skycap
 
-Maestro and Skycap are designed to be complementary services that handle different parts of your application’s lifecycle.
+**Skycap** is a **Container Deployment Pipeline** (CDP) that automates the building and deployment of software as **containerized** applications. Skycap is focussed on configuring and building your application into containers, and their deployment to (existing) Kubernetes clusters.
 
-**Skycap** is a **Container Deployment Pipeline** (CDP) that automates the building and deployment of software as **containerized** applications. Skycap is focussed on configuring and building your application into containers, and their deployment to Kubernetes clusters.
+**Maestro** is a **Container Lifecycle Management Service** - a complete solution for configuring, building and operating containerized applications based on Kubernetes. Maestro is an end-to-end solution that takes you from code to cluster, as well as managing all the other components and resources required to support containerized applications (such as databases, storage, backups and load balancers).
 
-**Maestro** is a **Container Lifecycle Management Service** - a complete solution for building and operating containerized infrastructure based on Kubernetes. Maestro is focused on building and managing the Kubernetes clusters on which your containerized application(s) run, and managing all the other components and resources required to support those clusters (such as databases, storage, backups and load balancers).
-
-So, in a nutshell, Skycap helps you to containerize, configure and deploy your application, and Maestro provides the platform to host and orchestrate that application. Skycap is aimed primarily at **developers**, while Maestro is aimed at **operators**.
+So, in a nutshell, Skycap helps you to containerize, configure and deploy your application to an *existing* cluster, while Maestro allows you to build a containerized application, and cluster on which to host it, from scratch.
 
 ## About Docker
 
