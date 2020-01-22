@@ -9,7 +9,7 @@ lead: A step by step tutorial that walks you through deploying a demo applicatio
 permalink: /:collection/:path:output_ext
 ---
 
-Maestro builds and manages Kubernetes clusters for you on your own servers on any cloud. We build your code into Docker images and/or fetch pre-built images from your repostitories. We also take care of deploying and managing your containers and infrastructure (servers, load balancers, etc).
+Maestro is an end-to-end solution for building, deploying and managing containerized applications. We build your code into Docker images and/or fetch pre-built images from your repostitories. We also take care of deploying and managing your containers and infrastructure (servers, load balancers, etc).
 
 ## What you'll need
 
