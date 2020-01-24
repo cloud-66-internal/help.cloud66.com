@@ -1,5 +1,14 @@
 We recommend using the [Cloud 66 database backup add-in](/{{page.collection}}/how-to-guides/add-ins/database-backups.html) to manage and restore database backups, but you can also manage them manually. This includes downloading the backup, decompressing it, moving it to another server and restoring it. 
 
+## Restoring an automated backup
+
+You can restore a backup directly through Cloud66 dashboard backup page. There is a **restore button** for each backup that will automatically download that backup to your server and restore it. If you'd prefer to do so manually, follow one of the guides below.
+
+## Migrating data using automated backups
+
+You can use automated database backups to migrate data between servers using the Dashboard, but there are some format restrictions for 
+
+
 ## Downloading a backup
 
 You can retrieve your backup in one of three ways:
@@ -8,7 +17,7 @@ You can retrieve your backup in one of three ways:
 
 If you are using managed backups, you can retrieve your database backup by using [Cloud 66 Toolbelt](/{{page.collection}}/references/toolbelt.html#about-backup-management). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
 
-### 2. Via Cloud 66 web UI
+### 2. From your Cloud 66 Dashboard
 
 If you are using managed backups, you can download backups via your Cloud 66 Dashboard. To do so, open your Application Overview and click the link for your database backup add-in. 
 
@@ -25,10 +34,6 @@ You can also copy the direct links (see above) and then manually `curl` these li
 $ curl -o "YOUR_BACKUP_FILE_NAME" "GENERATED_URL"
 {% endhighlight %}
 
-## Restoring a backup
-
-You can restore a backup directly through Cloud66 dashboard backup page. There is a **restore button** for each backup that will automatically download that backup to your server and restore it. If you'd prefer to do so manually, follow one of the guides below. 
-
 ## Preparing files for manual restoration
 
 After downloading a backup you will need to follow several steps to restore that data. Except for the first two, these steps differ by database engine.
@@ -39,7 +44,9 @@ After downloading a backup you will need to follow several steps to restore that
 
 If your total backup is larger than 350MB we will split it across multiple files in increments of 350MB. Before restoring this data, you will need to concatenate (join) these files into a single large file. For example:
 
-    $ cat file.tar-aa file.tar-ab file.tar-ac > file_combined.tar
+{% highlight bash %}
+$ cat file.tar-aa file.tar-ab file.tar-ac > file_combined.tar
+{% endhighlight %}
 
 ### Unarchive the backup files
 
