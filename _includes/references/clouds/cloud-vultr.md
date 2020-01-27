@@ -23,9 +23,11 @@ Visit the Cloud 66 Dashboard and select _Get started building an application_. A
 
 Vultr doesn't natively support Ubuntu 14.04, so only versions 16.04 and 18.04 are deployable through Cloud 66.
 
+<!--
 #### Note
 <div class="notice notice-warning"><p>
 If you delete your application from Cloud 66, your servers will not be deleted on your cloud provider unless the <a href="/{{page.collection}}/how-to-guides/deployment/server-deletion.html">physical server deletion</a> setting is turned on.</p></div>
+-->
 
 ### External links
 
