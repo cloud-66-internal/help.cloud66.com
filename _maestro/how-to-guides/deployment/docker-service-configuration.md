@@ -189,6 +189,7 @@ ENV MY_VARIABLE "$MY_VARIABLE"
 EXPOSE 3000
 CMD ["/myapp/main.rb"]
 ```
+Please read our detailed [how-to guide](/maestro/how-to-guides/deployment/env-vars-in-dockerfile.html) if you need more help.
 
 ## Setting a Service Account name
 

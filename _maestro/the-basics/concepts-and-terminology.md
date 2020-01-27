@@ -33,8 +33,6 @@ Many of these firms began by taking existing software and repackaging it into co
 
 Containerization is made possible by **container engines** - systems that allow containers to be developed, packaged and run on your infrastructure. At Cloud 66 we support [Docker](https://www.docker.com/) which is the market leading container engine (or “runtime”).
 
-If you’d like to learn more about this concept, we have an in-depth guide in our Skycap documentation.
-
 ## Orchestration
 
 Software orchestration is a way to automate the routine management of your applications and the infrastructural environments on which those applications run.

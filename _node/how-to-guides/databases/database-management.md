@@ -9,4 +9,4 @@ legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-{% include tutorials/database-management.md %}
+{% include how-to-guides/databases/database-management.md %}
