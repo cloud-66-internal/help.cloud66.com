@@ -2,16 +2,49 @@ We recommend using the [Cloud 66 database backup add-in](/{{page.collection}}/ho
 
 ## Restoring an automated backup
 
-You can restore a backup directly through Cloud66 dashboard backup page. There is a **restore button** for each backup that will automatically download that backup to your server and restore it. If you'd prefer to do so manually, follow one of the guides below.
+You can restore a backup directly through Cloud66 dashboard backup page. There is a **Restore** button for each backup that will automatically download that backup to your server and restore it. If you'd prefer to do so manually, follow one of the guides below.
 
-## Migrating data using automated backups
+## Migrating data between applications
 
-You can use automated database backups to migrate data between servers using the Dashboard, but there are some format restrictions for 
+You can use automated database backups to migrate data between applications using the Dashboard, but there are some format restrictions when doing so:
 
+<table class='table table-bordered table-striped'>
+  <tr>
+    <th>DB Engine</th>
+    <th>Compatible backup format(s) for migration</th>
+  </tr>
+  <tr>
+    <td>MySQL</td>
+    <td>Binary only</td>
+  </tr>
+  <tr>
+    <td>PostgreSQL</td>
+    <td>Text only</td>
+  </tr>
+  <tr>
+    <td>Mongo</td>
+    <td>Either</td>
+  </tr>
+  <tr>
+    <td>Redis</td>
+    <td>Either</td>
+  </tr>
+</table>
+
+This only applies to migrations between applications - restores to the original database (i.e. in the same application) will work regardless of format. 
+
+To migrate data between applications:
+
+1. Add a new server of the same type (e.g. MySQL) on the destination application
+2. Visit the new server's page in the Cloud 66 Dashboard (click on the server type and then the name of the server)
+3. Click the *Import Database* button (on the right-hand side)
+4. Choose the source application (i.e. where you're pulling the backup from) and click *Import* - this will automatically "restore" the latest database backup to your new server.
+
+Remember to wait for the task to be completed before you start trying to use the database for anything. 
 
 ## Downloading a backup
 
-You can retrieve your backup in one of three ways:
+You can manually retrieve a backup in one of three ways:
 
 ### 1. Using Cloud 66 Toolbelt
 
@@ -26,7 +59,7 @@ This page lists your available database backups, and allows you to download and 
 1. Copy the script (shell command) by clicking on the link, and then paste this into a terminal (or shell) on the machine where you want the files to be downloaded. This will automatically download and concatenate your backup files to the destination chosen.
 2. Click on the "more" link to display the direct link(s) to the backup file(s). These links are only active for a few minutes, so you should use them immediately. Clicking a link will download that file via your browser.
 
-### 3. Manually via command line
+### 3. Via command line
 
 You can also copy the direct links (see above) and then manually `curl` these links to your computer or server. Remember that these links are time-bound - they will expire after a few minutes.
 
