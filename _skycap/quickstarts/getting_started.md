@@ -13,7 +13,7 @@ Skycap is a Container Deployment Pipeline. You can use Skycap to automatically t
 
 ## What you’ll need
 
-Before you start, please check you have the following:
+Before you start this guide, please check you have the following:
 
 * **A Cloud 66 Account** &mdash; If you don't already have one [sign up for a Cloud 66 account](https://app.cloud66.com/users/sign_up). You'll get free unlimited access to all products for 4 weeks.
 
@@ -32,7 +32,7 @@ Build pipelines are composed of all the individual ([containerized](/skycap/the-
 * **Pre-built Container Images** &mdash; These can be hosted in any public image repo like Dockerhub or your own private repo. 
 
 
-## Choosing application type
+## 1. Choosing application type
 
 New users will be shown the product selection wizard. For Skycap, choose "I have a containerized application" and then "I already have a Kubernetes cluster" (*Try Skycap*). 
 
@@ -51,23 +51,26 @@ If you're already using Cloud 66 just click *New Application &rarr; Skycap (Depl
 
 <img src="/assets/skycap/skycap_new_dropdown_update.png" alt="Start a new Skycap build pipeline" width="200">
 
-## Adding Services
+## 2. Add application services
 
-The first step is to give your application a **name**. This will be used to label your application throughout the Cloud 66 dashboard.
+The first step is to give your application a **name**. This will be used to label your application throughout the Cloud 66 dashboard and will not be visible to public users.
 
-Next, you need to add at least one **service**. To your application. If you're using our demo application, you will need to add a single service called "hello-world" by pulling the code from this [public repo](https://github.com/cloud66-samples/helloworld).
+Next, click the green *Analyze My Code* button. If you haven't already linked your Git service provider to Cloud 66 we will walk you through the process. We also have a [dedicated how-to guide](https://help.cloud66.com/maestro/how-to-guides/common-tools/access-your-code.html) if you get stuck.
 
-To do this: 
+Once your Git provider is linked, we can analyze your code. To do this: 
 
 1. Copy the *Clone or download* link from Github 
 2. Paste it into the **Git Repo URL** field
-3. Type *master* into the **branch** field
+3. Check that you're using the correct **branch** (we default to master)
 4. Click *Go* to fetch and analyze the code
+
+If you're using our demo application, you can copy this link for Step 2: [hello-world](https://github.com/cloud66-samples/helloworld.git)
 
 <img src="/assets/skycap/skycap_add_services_ani_update.gif" alt="Adding services to a Skycap build pipeline">
 
+When your code had been analyzed you will see a list of the services that will become your Skycap application.  
 
-You can add as many other services as required by clicking the green *+ Add Service* button at the bottom of the page. You will need to supply a source for each service you add (more info on this [below](#specifying-the-source-of-images)).
+You can add as many other services as required by clicking the green *+ Add another service* button at the bottom of the page. You will need to supply a source for each service you add (more info on this [below](#specifying-the-source-of-images)).
 
 Once you have added all your services, click the green *Next* button.
 
