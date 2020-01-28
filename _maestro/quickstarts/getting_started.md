@@ -25,7 +25,7 @@ Before you start, please check you have the following:
 </p></div>
 
 
-## 1. Choose application type
+## 1. Choose an application type
 
 New users will be shown the product selection wizard. For Maestro, choose "I have a containerized application" and then "I need to build a Kubernetes cluster" (*Try Maestro*).
 
@@ -63,9 +63,9 @@ If you're using our demo application, you can copy this link for Step 2: [maestr
 
 <img src="/assets/maestro/maestro-getting-started-1.gif" alt="Adding services to a Maestro application">
 
-When your code had been analyzed you will see a list of the services that will become your Maestro application. At this point you can add pre-built images (see below), and change the names of each service as needed. 
+When your code had been analyzed you will see a list of the services that will become your Maestro application. At this point you can add pre-built images (see below), and change the names of each service as needed. To add other services click the green *+ Add another service* button.
 
-You can also configure ports and commands for each service, but we can also skip this (optional) step and set our ports up later.
+You can also configure ports and commands for each service, but we can skip this (optional) step and set our ports up later.
 
 If you're using our demo application, you should rename the service to `demo-app` and then click the green *Next* button to move to the next step (building images).
 

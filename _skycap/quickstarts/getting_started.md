@@ -32,7 +32,7 @@ Build pipelines are composed of all the individual ([containerized](/skycap/the-
 * **Pre-built Container Images** &mdash; These can be hosted in any public image repo like Dockerhub or your own private repo. 
 
 
-## 1. Choosing application type
+## 1. Choose an application type
 
 New users will be shown the product selection wizard. For Skycap, choose "I have a containerized application" and then "I already have a Kubernetes cluster" (*Try Skycap*). 
 
@@ -70,29 +70,31 @@ If you're using our demo application, you can copy this link for Step 2: [hello-
 
 When your code had been analyzed you will see a list of the services that will become your Skycap application.  
 
-You can add as many other services as required by clicking the green *+ Add another service* button at the bottom of the page. You will need to supply a source for each service you add (more info on this [below](#specifying-the-source-of-images)).
+You can add as many other services as required by clicking the green *+ Add another service* button at the bottom of the page. You will need to supply a source for each service you add (more info on this [below](#3-specifying-the-source-of-images)).
 
-Once you have added all your services, click the green *Next* button.
+You can also configure ports and commands for each service, but we can skip this (optional) step and set our ports up later.
 
-## Specifying the source of images
+If you're using our demo application, you should rename the service to `hello-world` and then click the green *Next* button to move to the next step (building images).
+
+## 3. Specify the source of images
 
 <img src="/assets/skycap/skycap_service_image.png" alt="Specifying the source of your service" style="float:right; margin-top: 0.25em">
 
 The *Where is your service image?* dropdown provides you with three options to specify the source of your services.
 
-* **Build Image from a GitHub repo** &mdash; This is the easiest way to add services if your code is hosted on GitHub. You'll need to link your GitHub account with Cloud 66 before you can take advantage of this. Just click the *Setup access to your GitHub projects.* link. (This is the option you should pick if you're using our "hello world" app)
+* **Build Image from a GitHub repo** &mdash; This is the easiest way to add services if your code is hosted on GitHub. You'll need to link your GitHub account with Cloud 66 before you can take advantage of this. Just click the *Setup access to your GitHub projects.* link.
     
 * **Build image from any Git Repo** &mdash; Use this option if you have a private git repo or you're using another git provider such as BitBucket. You can also use this if you don't want to link Cloud 66 to your GitHub account. You will need to add your Cloud 66 public key if your repo is private. You'll be prompted to do this if it's required.
     
 * **It's in a Docker image repository** &mdash; Use this to add pre-built images to a project. You can use a service like DockerHub or your own private image repo. If you're using a private repository you'll be prompted to add the necessary login credentials. 
  
-## Snapshots and building images
+## 4. Snapshot and build images
 
-After you have added your services you will be taken to your **Application Overview** page. To start the build process you should click the green *Take Snapshot* button at the bottom of the main panel.
+After you have added your services you will be taken to your **Application Overview** page. To start the build process click the green *Take Snapshot* button at the bottom of the main panel.
 
-A snapshot captures all the components of your application including application images, environment variables and configuration items, in preparation for deployment. 
+A **Snapshot** captures all the components of your application including application images, environment variables and configuration items, in preparation for deployment. 
 
-Because this is the first time you are creating a snapshot for this application, Skycap will fetch and build your code into images, as well as fetching any pre-built images. 
+Because this is the first time you are creating a Snapshot for this application, Skycap will fetch and build your code into images, as well as fetching any pre-built images. 
 
 All of these components are then stored in a private repository on your Cloud 66 account so that you can roll back easily at any time.
 
@@ -101,7 +103,7 @@ During the build process you can view the status of each individual build. You c
 <img src="/assets/skycap/skycap_buildgrid_queue.png" alt="Adding services to a Skycap build pipeline">
 
 
-## Deploying your application
+## 5. Deploy your application
 
 Once you've built your images, you're ready to deploy your application using Skycap's **Formations** feature. To do this, you should follow our guide: [Get started with Skycap Formations](/skycap/quickstarts/using_formations.html)
  
