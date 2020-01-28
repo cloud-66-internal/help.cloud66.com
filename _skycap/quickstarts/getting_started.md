@@ -66,7 +66,7 @@ Once your Git provider is linked, we can analyze your code. To do this:
 
 If you're using our demo application, you can copy this link for Step 2: [hello-world](https://github.com/cloud66-samples/helloworld.git)
 
-<img src="/assets/skycap/skycap_add_services_ani_update.gif" alt="Adding services to a Skycap build pipeline">
+<img src="/assets/skycap/skycap-getting-started-1.gif" alt="Adding services to a Skycap build pipeline">
 
 When your code had been analyzed you will see a list of the services that will become your Skycap application.  
 
