@@ -87,7 +87,7 @@ You can change the load order of policies by dragging and dropping them in the l
 ## What’s next?
 
 * A guide to [writing and debugging Copper rules](/skycap/how-to-guides/formations/writing-and-debugging-copper-rules.html)
-* Learn how to add policies to a [Base Template Repository](/skycap/how-to-guides/formations/adding-policies-to-BTRs.html)
+* Learn how to add policies to a [Template Library](/skycap/how-to-guides/formations/adding-policies-to-BTRs.html)
 * Learn how to add [custom environment variables](/skycap/tutorials/setting-environment-variables.html) to your application.
 * Learn how to set up [access control and permissions](/skycap/tutorials/setting-up-access-control.html) on your Formations and Stencils
 * Learn how to use your [Habitus build flow](/skycap/tutorials/using-habitus-with-skycap.html) within Skycap.

@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Creating a Base Template Repository
+title: Creating a Template Library
 Order: 3
 categories: how-to-guides/formations
-lead: "A guide to creating and updating a custom template repository for Skycap"
+lead: "A guide to creating and updating a custom Template Library for Skycap"
 legacy: false
 tags: ["formations", "stencils"]
 permalink: /:collection/:path:output_ext
@@ -12,17 +12,17 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-Once you are familiar with base templates, you might want to create your own templates in a public or private repository and use them with Formations. This guide walks you through that process.
+Once you are familiar with our default Template Library, you might want to create your own library in a public or private repository and use it with Formations. This guide walks you through that process.
 
-Because Stencils are designed to be reusable, operators or developers can generate these BTR's and make them available to the rest of the team via this feature.
+Because Stencils are designed to be reusable, operators or developers can generate these Libraries and make them available to the rest of the team via this feature.
 
 These Stencils are usable by anyone with the appropriate permissions and can be enforced by the operators of the cluster to ensure good governance of the infrastructure.
 
-## Setting up a Base Template Repository
+## Setting up a Template Library
 
-A Base Template Repository (BTR) is simply a collection of YAML-formatted Kubernetes configuration templates (i.e. Stencils) in a Git repository.  
+A Template Library is simply a collection of YAML-formatted Kubernetes configuration templates (i.e. Stencils) in a Git repository.  
 
-A BTR must include a single `templates.json` file that holds meta-data about the templates you have in the repo. Here is a sample `templates.json` that describes a BTR for a Ruby-based application:
+A Template Library must include a single `templates.json` file that holds meta-data about the templates you have in the repo. Here is a sample `templates.json` that describes a Template Library for a Ruby-based application:
 
 {% highlight json %}
     {
@@ -118,16 +118,16 @@ A BTR must include a single `templates.json` file that holds meta-data about the
     }
 {% endhighlight %}
 
-### Components of the JSON definition for a BTR
+### Components of the JSON definition
 
-The BTR itself has the following attributes:
+The Template Library itself has the following attributes:
 
 - `version` is always `v1` at the moment.
 - `templates` is an array, listing all template files in the repo
 - `name` is the unique name of the base template repo, usually in the format *stencils-language-framework*
-- `public` is a boolean value that specifies if the BTR is public
+- `public` is a boolean value that specifies if the Template Library is public
 - `long_name` is the name that will appear in the Skycap UI
-- `description` is a brief description to remind you of which BTR you are using
+- `description` is a brief description to remind you of which Template Library you are using
 
 Each entry under `templates` has the following attributes:
 
@@ -142,20 +142,20 @@ Each entry under `templates` has the following attributes:
 - `min-usage` is an integer that governs the minimum number of times a Stencil should be used in a Formation (can be zero)
 - `min-usage` is an integer that governs the maximum number of times a Stencil should be used in a Formation (must be greater than zero)
 
-### Directory structure for BTRs
+### Directory structure for Template Libraries
 
-BTRs must be organized as follows:
+Template Libraries must be organized as follows:
 
 - The `templates.json` must be placed in the root directory
 - The YAML files for templates must be placed in a directory named `templates`
 
 #### Note
 <div class="notice"><p>
-The example BTR above also includes definitions for Policies and Transformations. To find our more about those features, please read the separate guides. </p></div>
+The example Template Library above also includes definitions for Policies and Transformations. To find our more about those features, please read the separate guides. </p></div>
 
 ## Adding a Base Template Repository to your Cloud 66 account
 
-Once you have set up your BTR, you will need to connect it to your Skycap account. To do this: 
+Once you have set up your Template Library, you will need to connect it to your Skycap account. To do this: 
 
 1. Open your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on your account avatar (top-right) and select *Account Settings*
@@ -165,9 +165,9 @@ Once you have set up your BTR, you will need to connect it to your Skycap accoun
 6. Give your new repo a distinctive name, and add the Git URL (change the branch if needed)
 7. Click the *Add Template Repository* button
 
-Skycap will now pull the contents of the BTR down, validate them and make the repo available to use in your Formations.
+Skycap will now pull the contents of the Template Library down, validate them and make the repo available to use in your Formations.
 
-## Updating BTRs in Skycap
+## Updating Template Libraries in Skycap
 
 Once a Base Template Repo is added to Skycap, a copy of it is stored in a private repo on your Cloud 66 account.
 
