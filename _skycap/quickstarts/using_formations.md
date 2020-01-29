@@ -67,7 +67,14 @@ You'll notice that you can choose to include (or exclude) Template Libraries at 
 <div class="notice"><p>
 Template Libraries are git repositories that contain sets of pre-defined Stencils. Read <a href="/skycap/how-to-guides/formations/create_your_own_stencil_template_repos.html">our guide</a> on the subject for more info on how to create your own. </p></div>
 
-<img src="/assets/skycap/formation_step_1_NEW.gif"/>
+## ANI-GIF
+<img src="/assets/skycap/skycap-formations-step-1a.gif"/>
+
+## VIDEO
+<video controls width="680">
+<source src="/assets/skycap/skycap-formations-step-1.mp4" type="video/mp4" width="680">
+<source src="/assets/skycap/skycap-formations-step-1.webm" type="video/webm" width="680">
+</video>
 
 ### 2. Add your first Stencil
 
@@ -184,7 +191,7 @@ Formations are an extremely powerful tool for managing the flow of configuration
 	
 * [Formations](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-formation) as an infrastucture time machine
 * Fine grained [access control and permissions](/skycap/tutorials/setting-up-access-control.html) for each Formation and every Stencil for your team members
-* The ability to setup private [Template Libraries](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-base-template) for your team
+* The ability to setup private [Template Libraries](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-template-library) for your team
 * The powerful [Stencil placeholders syntax](/skycap/references/stencil_placeholders.html)
 * Bulk import of your [environment variables](/skycap/tutorials/setting-environment-variables.html) and secrets into Stencils
 	
