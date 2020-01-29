@@ -80,15 +80,15 @@ Rendering is the act of merging Stencils with a Snapshot and generating the resu
 <img src="/assets/skycap/rendering.png" width="200px"/>
 
 
-## What is a Base Template?
+## What is a Template Library?
 
-Base Templates are a set of Stencils that can be used as the base for any new Formation. They contain the Stencils and their grouping. 
+A Template Library is a set of Stencils that can be used to quickly set up any new Formation. They contain the Stencils and their grouping. 
 
-For example you might choose to create a Base Template for your team so they can deploy the most commonly used components of your infrastructure to your Kubernetes cluster provider (for example AWS Fargate or Google GKE). 
+For example you might choose to create a Template Library for your team so they can deploy the most commonly used components of your infrastructure to your Kubernetes cluster provider (for example AWS Fargate or Google GKE). 
 
-Base Templates can also group Stencils into arbitrary functional groups like Services and Configurations or Application, Databases, Storage, etc. Your Base Templates are stored in a git repository.
+Template Libraries can also group Stencils into arbitrary functional groups like Services and Configurations or Application, Databases, Storage, etc. Your Template Libraries are stored in a git repository.
 
-We provide a [public library](https://github.com/cloud66/stencils/tree/production) of Base Template Stencils on Github for you to use. In the spirit of open-source collaboration, we encourage you to contribute suggestions and new templates to this repo. 
+We provide a [public Template Library](https://github.com/cloud66/stencils/tree/production) on Github for you to use. In the spirit of open-source collaboration, we encourage you to contribute suggestions and new templates to this repo. 
 
 ## Why use Formations and Stencils?
 
@@ -110,7 +110,7 @@ This could be based on the application environment (QA, Staging, Production), ge
 
 The other side of this ability is the challenges of managing configuration across all the different deployments (Formations in Skycap language).
 
-Stencils support reuse of configuration sections (inlines). Moreover, Formations can be generated using Base Templates that are made available by operators to the users of the cluster based on best practices and compliance policies.
+Stencils support reuse of configuration sections (inlines). Moreover, Formations can be generated using Template Libraries that are made available by operators to the users of the cluster based on best practices and compliance policies.
 
 
 ## What's next?
