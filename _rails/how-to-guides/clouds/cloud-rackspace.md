@@ -11,4 +11,4 @@ permalink: /:collection/:path:output_ext
 ---
 
 
-{% include references/clouds/cloud-rackspace.md  product = page.collection %}
+{% include how-to-guides/clouds/cloud-rackspace.md  product = page.collection %}

@@ -12,4 +12,4 @@ permalink: /:collection/:path:output_ext
 
 
 
-{% include references/clouds/cloud-gce.md  product = page.collection %}
+{% include how-to-guides/clouds/cloud-gce.md  product = page.collection %}

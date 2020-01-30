@@ -13,4 +13,4 @@ permalink: /:collection/:path:output_ext
 
 
 
-{% include references/clouds/cloud-packet.md  product = page.collection %}
+{% include how-to-guides/clouds/cloud-packet.md  product = page.collection %}
