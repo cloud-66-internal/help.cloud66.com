@@ -10,4 +10,4 @@ permalink: /:collection/:path:output_ext
 ---
 
 
-{% include references/clouds/cloud-aws.md  product = page.collection %}
+{% include how-to-guides/clouds/cloud-aws.md  product = page.collection %}
