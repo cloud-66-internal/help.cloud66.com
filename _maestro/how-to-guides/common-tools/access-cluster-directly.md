@@ -4,6 +4,7 @@ template: one-col
 title: Accessing your Kubernetes instance directly
 categories: how-to-guides/common-tools
 lead: "You can quickly access the cluster instance for any Maestro app. Here is how to do it."
+order: 7
 legacy: false
 permalink: /:collection/:path:output_ext
 tags: ["debugging"]
