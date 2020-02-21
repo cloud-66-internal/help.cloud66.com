@@ -11,7 +11,7 @@ permalink: /:collection/:path:output_ext
 tags: ["nginx"]
 ---
 
-You can use Cloud 66 [CustomConfig](notion://www.notion.so/%7B%7Bpage.collection%7D%7D/tutorials/custom-config.html) to protect your application or parts of it with a username and password based on HTTP basic authentication. Follow the instructions below to accomplish this:
+You can use Cloud 66 [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) to protect your application or parts of it with a username and password based on HTTP basic authentication. Follow the instructions below to accomplish this:
 
 1. We'll use [htpasswd](http://httpd.apache.org/docs/2.2/programs/htpasswd.html) to create your password file - it encrypts it the password with MD5. Install it as follows:
 
