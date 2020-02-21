@@ -44,7 +44,7 @@ Depending on which cloud or registered server you selected above, we can now cho
 <img class="ContentImage" src="/assets/maestro/maestro_cluster_new_form_bottom.png" alt="Choose server specifics">
 
 #### Note
-<div class="notice"><p>The first server in your cluster will always be your Kubenetes master node. You can decide later if you would like this server to share application workloads or only run Kubernetes management tasks.</p></div>
+<div class="notice"><p>The first server in your cluster will always be your Kubernetes master node. You can decide later if you would like this server to share application workloads or only run Kubernetes management tasks.</p></div>
 
 
 ## Deployment
