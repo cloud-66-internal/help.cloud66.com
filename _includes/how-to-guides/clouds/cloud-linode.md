@@ -10,11 +10,11 @@ You need to generate a personal access token for your Linode account to grant Cl
 2. Click on your username at the top of the screen and select *My Profile*.
 3. Click *API Tokens* and then *Add a Personal Access Token*
 4. Set your access rights to a minimum of:
-Account: Read-only
-Kubernetes: Read/Write
-Linodes: Read/Write
-NodeBalancers: Read/Write
-Volumes: Read/Write
+	* Account: Read-only
+	* Kubernetes: Read/Write
+	* Linodes: Read/Write
+	* NodeBalancers: Read/Write
+	* Volumes: Read/Write
 5. Submit and then copy the API token. Note it won't be displayed by Linode again, so store it somewhere secure. 
 
 Linode has [more detailed instructions](https://www.linode.com/docs/platform/api/getting-started-with-the-linode-api/#get-an-access-token) if you need them.
