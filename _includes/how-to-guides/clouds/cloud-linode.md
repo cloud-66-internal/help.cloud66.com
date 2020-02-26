@@ -2,13 +2,37 @@ You can use Cloud 66 to provision and deploy your code to servers in any [Linode
 
 Private networking is automatically enabled for all servers deployed by Cloud 66. This means that servers can communicate freely between each other on the same network without counting towards bandwidth costs.
 
-## Generate a Linode API key
-You need to provide your Linode API keys in order for Cloud 66 to access your account. To generate one, access the _my profile_ page of your Linode account, and go to the _API Keys_ menu (you may be asked to provide your password again for security reasons). 
+## Generate a Linode access token
 
-Once there, create a label for your new key, as well as an expiry date, and then hit _Create API Key_. Take careful note of the key provided - it cannot be displayed again.
+You need to generate a personal access token for your Linode account to grant Cloud 66 access. To do this:
 
-## Add Linode key to an application
-Visit the Cloud 66 Dashboard and select _Get started building an application_. After connecting to your Git repository and analyzing your code, you will be asked to _Add your cloud platform_. From this menu, select *Linode* and provide your API key. 
+1. Log into [Linode Cloud Manager](https://cloud.linode.com/)
+2. Click on your username at the top of the screen and select *My Profile*.
+3. Click *API Tokens* and then *Add a Personal Access Token*
+4. Set your access rights to a minimum of:
+Account: Read-only
+Kubernetes: Read/Write
+Linodes: Read/Write
+NodeBalancers: Read/Write
+Volumes: Read/Write
+5. Submit and then copy the API token. Note it won't be displayed by Linode again, so store it somewhere secure. 
+
+Linode has [more detailed instructions](https://www.linode.com/docs/platform/api/getting-started-with-the-linode-api/#get-an-access-token) if you need them.
+
+## Add a Linode access token to a new application
+
+1. Log into your Cloud 66 Dashboard and click *New Application*. 
+2. Connect your Git repository and analyzing your code, 
+3. Click *Add Cloud* 
+4. Select *Linode,* provide your access token and click *Add Cloud*
+5. Choose a server region and sizes and then complete the deployment process
+
+## Update an existing Linode access token
+
+1. Log into Cloud 66 as account owner 
+2. Open the [Cloud Keys](https://app.cloud66.com/clouds) page under *Settings*. 
+3. Click on the "edit cloud" button next to your Linode cloud key
+4. Enter the new Personal Access Token and click *Save*
 
 #### Note
 <div class="notice notice-warning"><p>
