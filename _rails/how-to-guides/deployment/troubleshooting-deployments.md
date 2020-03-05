@@ -46,7 +46,7 @@ If all of these fail, contact our support team and we will assist wherever possi
 
 ## Process or migration timeouts
 
-If a deployment depends on a process to finish running - particularly data or file migrations - it's possible for that process to timeout. This can happen (rarely) with the Ruby asset precompile process, for example. 
+If a deployment depends on a process to finish running - particularly data or file migrations - it's possible for that process to timeout. This can happen (rarely) with the Ruby [asset precompile process](/rails/how-to-guides/deployment/enable-disable-asset-pipeline.html), for example. 
 
 The cause of the timeout will usually appear in the detailed deployment logs, so be sure to check those. If you are running a CPU or disk intensive process, you might consider running that process locally to debug each step to find any bottlenecks.
 
