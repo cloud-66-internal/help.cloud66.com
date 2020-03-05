@@ -8,6 +8,7 @@ tags: ["getting started", "cluster", "maestro cluster"]
 lead: A step by step tutorial that guides you through deploying a Kubernetes cluster. Maestro Clusters let you to deploy multiple applications to the same set of servers.
 permalink: /:collection/:path:output_ext
 ---
+{% assign product = 'maestro' %}
 
 A Maestro Cluster is a "blank" instance of Kubernetes infrastructure - i.e. with no application specific components installed. You can use a Cluster to deploy multiple applications to the same set of servers.
 
@@ -23,7 +24,7 @@ Before you start, please check you have the following:
 * **Application code and/or pre-built images** &mdash; Application code should be hosted in a (secure) publicly accessible git repository and pre-built images should be hosted in image publicly accessible repositories.
 * **A Cloud account linked to Cloud 66 or your own servers set up** &mdash; See below.
 
-{% include general/cloud_provider_or_own_server_tabs.html %}
+{% include general/cloud_provider_or_own_server_tabs.html product = product %}
 
 ## Creating a Maestro Cluster
 

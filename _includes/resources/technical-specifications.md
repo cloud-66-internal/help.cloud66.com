@@ -6,12 +6,12 @@ Your servers are deployed with **Ubuntu 18.04 LTS**.
 ## Supported cloud providers
 
 Cloud 66 currently supports the following cloud providers:
-*   [Amazon Web Services](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html)
-*   [Digital Ocean](/{{page.collection}}/how-to-guides/clouds/cloud-do.html)
-*   [Google Compute Engine](/{{page.collection}}/how-to-guides/clouds/cloud-gce.html)
-*   [Linode](/{{page.collection}}/how-to-guides/clouds/cloud-linode.html)
-*   [Microsoft Azure](/{{page.collection}}/how-to-guides/clouds/cloud-azure.html)
-*   [Rackspace](/{{page.collection}}/how-to-guides/clouds/cloud-rackspace.html)
+* [Amazon Web Services](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html)
+* [Digital Ocean](/{{page.collection}}/how-to-guides/clouds/cloud-do.html)
+* [Google Compute Engine](/{{page.collection}}/how-to-guides/clouds/cloud-gce.html){% if include.product != 'maestro' %}
+* [Linode](/{{page.collection}}/how-to-guides/clouds/cloud-linode.html){%endif%}
+* [Microsoft Azure](/{{page.collection}}/how-to-guides/clouds/cloud-azure.html)
+* [Rackspace](/{{page.collection}}/how-to-guides/clouds/cloud-rackspace.html)
 
 
 ## Supported platforms

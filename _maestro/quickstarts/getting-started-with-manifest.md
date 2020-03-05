@@ -9,6 +9,7 @@ legacy: false
 tags: ["manifest", "customization"]
 permalink: /:collection/:path:output_ext
 ---
+{% assign product = 'maestro' %}
 
 ## What is a manifest file?
 
@@ -65,7 +66,7 @@ Before you start, please check you have the following:
 * **Application code and/or pre-built images** &mdash; Application code should be hosted in a (secure) publicly accessible git repository and pre-built images should be hosted in image publicly accessible repositories.
 * **A Cloud account linked to Cloud 66 or your own servers set up** &mdash; See below.
 
-{% include general/cloud_provider_or_own_server_tabs.html %}
+{% include general/cloud_provider_or_own_server_tabs.html product = product %}
 
 ### Customizing your manifest file
 

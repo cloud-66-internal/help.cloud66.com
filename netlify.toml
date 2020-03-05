@@ -1159,6 +1159,10 @@
   to = "/rails/how-to-guides/deployment/deployment-health-checks.html"
 
 [[redirects]]
+  from = "/whenever"
+  to = "/rails/how-to-guides/add-ins/add-ins-jobs.html#support-for-whenever-gem"
+
+[[redirects]]
   from = "/cloud-66-toolbelt/*"
   to = "/"
 

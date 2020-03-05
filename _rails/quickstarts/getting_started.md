@@ -8,6 +8,7 @@ tags: ["getting started"]
 lead: Deploy your first Rails app to any cloud
 permalink: /:collection/:path:output_ext
 ---
+{% assign product = 'rails' %}
 
 ## What you’ll need
 
@@ -24,7 +25,7 @@ permalink: /:collection/:path:output_ext
     </li>
 </ul>
 
-{% include general/cloud_provider_or_own_server_tabs.html %}
+{% include general/cloud_provider_or_own_server_tabs.html product = product %}
 
 ### Rails version support
 <div class="notice"><p>

@@ -10,7 +10,7 @@ tags: ["migration"]
 
 permalink: /:collection/:path:output_ext
 ---
-
+{% assign product = 'rails' %}
 
 ## Overview
 
@@ -32,7 +32,7 @@ Before you begin migrating your application please check you have the following:
 * **A Git repo containing your application code** &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.
 * **A Cloud Account or Your Own Servers** &mdash; See below.
 
-{% include general/cloud_provider_or_own_server_tabs.html %}
+{% include general/cloud_provider_or_own_server_tabs.html product = product %}
 
 
 #### What server size do I need?
