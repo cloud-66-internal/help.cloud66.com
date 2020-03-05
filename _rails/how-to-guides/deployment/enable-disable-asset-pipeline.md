@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Configure asset pipeline compilation
+title: Configuring asset pipeline compilation
 categories: how-to-guides/deployment
 order: 2
-lead: "How to configure asset pipeline precompilation for Rails / Rack applications"
+lead: "How to configure asset pipeline compilation (APC) and precompilation for Rails / Rack applications"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path:output_ext
@@ -28,7 +28,7 @@ You can manually enable/disable APC either:
 
 ### Manifest.yml
 
-You can use a [manifest file](/quickstarts/getting-started-with-manifest.html) to enable/disable the APC using the following parameters with a true or false:
+You can use a [manifest file](/rails/quickstarts/getting-started-with-manifest.html) to enable/disable the APC using the following parameters with a true or false:
 
 {% highlight yaml %}
 development:
