@@ -22,6 +22,11 @@ Once the above is done, we will need three things to connect with your account:
 2. **Project ID** - this is your project ID (available at the top of the Overview page)
 3. **JSON key** - the file that you downloaded and saved above
 
+#### Permissions issues with GCE trial accounts
+<div class="notice notice-warning"><p>
+If you set up your API access while using a free trial account, you may need to recreate your credentials when you transition to a paid account. <a href="https://community.cloud66.com/t/looks-like-this-cloud-key-isnt-valid-error-for-google-compute-engine-users/113">Get more info here</a>.
+</p></div>
+
 #### Note
 <div class="notice"><p>
 Depending on the age of your Google account, you may need to "+ Enable APIs and Services" in the API list under <em>APIs & Services</em> for this integration to work
