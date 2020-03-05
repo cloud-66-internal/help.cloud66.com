@@ -9,6 +9,8 @@ legacy: false
 tags: ["getting started"]
 permalink: /:collection/:path:output_ext
 ---
+{% assign product = 'node' %}
+
 <h2 id="What-youll-need">
     <a href="#What-youll-need" class="headerlink" title="What you’ll need"></a>
     What you’ll need
@@ -27,7 +29,7 @@ permalink: /:collection/:path:output_ext
     </li>
 </ul>
 
-{% include general/cloud_provider_or_own_server_tabs.html %}
+{% include general/cloud_provider_or_own_server_tabs.html product = product %}
 
 ## Choosing application type
 

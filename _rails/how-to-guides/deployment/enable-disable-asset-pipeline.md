@@ -28,7 +28,7 @@ You can manually enable/disable APC either:
 
 ### Manifest.yml
 
-You can use a [manifest file](/rails/quickstarts/getting-started-with-manifest) to enable/disable the APC using the following parameters with a true or false:
+You can use a [manifest file](/rails/quickstarts/getting-started-with-manifest.html) to enable/disable the APC using the following parameters with a true or false:
 
 {% highlight yaml %}
 development:
