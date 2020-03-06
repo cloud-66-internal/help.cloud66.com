@@ -2,16 +2,16 @@ You can automatically provision and deploy to OVHcloud servers in any supported 
 
 ## Integrating OVH with Cloud 66
 
-OVHcloud uses Project IDs (rather than API keys) to manage access to cloud resources. To enable Cloud 66 to manage your servers you need to:
+We use Project IDs to access to your cloud resources on OVHcloud. To enable Cloud 66 to manage your servers you need to:
 
 1. Create a new Project using your [OVHcloud dashboard](https://ovh.com/manager/) (or open an existing one)
 2. Open the Project and click on *Private Network* (in the left nav) and then *Create a vRack* 
 3. Choose *New vRack* and then click *Create (*wait for the vRack to be set up before moving on).
-4. Copy the **Project ID** (at the top left, just below your project's name
+4. Copy the Project ID (at the top left, just below your project's name
 5. Log into your Cloud 66 dashboard and go to *Account Settings* → *Cloud Keys*.
-6. Click the green + and then select *OVH* as your cloud platform. Choose your region, paste in your Project ID and then click *continue*.
-7. You will be taken to a sign-in page on the OVH site where you can confirm all the details and supply your login details to confirm our access to your Project.
-8. Once you've signed in successfully you will be taken back to Cloud 66. You can now begin deploying to OVH.
+6. Click the green + and then select *OVH* as your cloud platform. Give your key a name, choose your region, paste in your Project ID and then click *Add Cloud*.
+7. You will be taken to a sign-in page on the OVH site where you can confirm the required permissions and then log in to authenticate Cloud 66's access to your Project.
+8. Once you've authenticated successfully you will be taken back to Cloud 66. You can now begin deploying to OVH.
 
 ## Using multiple keys with OVH
 
