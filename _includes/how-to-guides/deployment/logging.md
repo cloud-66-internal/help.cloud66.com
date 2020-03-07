@@ -17,16 +17,25 @@ services:
 {%endif%}
 
 {% if page.collection == 'rails' %}
-## Rails stacks
 
-### Web logs
+## Rails applications
 
-Web logs are stored in `$STACK_PATH/log`:
+### Web (application) server logs
 
-* Web logger: `$STACK_PATH/log/<environment>.log`
-* Nginx error log: `$STACK_PATH/log/nginx_error.log`
+#### Default Rails deployments
 
-If you are using a [custom web server](/rails/tutorials/custom-web-servers.html), such as [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html), you can find your web server bluepill logs in `/tmp/web_server_bluepill.log`
+Default Rails deployments on Cloud 66 use Passenger (via Nginx) and the logs are stored in `$STACK_PATH/log`:
+
+* Application log: `$STACK_PATH/log/<environment>.log`
+* Nginx error (server) log: `$STACK_PATH/log/nginx_error.log`
+
+#### Custom Rails deployments
+
+If you are using a [custom web server](/rails/tutorials/custom-web-servers.html), such as [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html): 
+
+* Application log: `$STACK_PATH/log/<environment>.log`
+* Server (bluepill) logs in `/tmp/web_server_bluepill.log`
+
 {%endif%}
 
 ### Background processes
