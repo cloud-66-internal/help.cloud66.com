@@ -12,7 +12,7 @@ tags: ["debugging"]
 
 ## Overview
 
-Although Maestro is designed to make managing your clusters a hands-off experience, you still have full access to all the features of Kubernetes whenever you need them. If you'd like access a Kubernetes  instance directly (for example to perform in-depth debugging) you can easily access your cluster using one of the two methods below. 
+Although Maestro is designed to make managing your clusters a hands-off experience, you still have full access to all the features of Kubernetes whenever you need them. If you'd like to access a Kubernetes instance directly (for example to perform in-depth debugging) you can easily access your cluster using one of the two methods below. 
 
 #### Note
 <div class="notice"><p>We don't recommend that users who are new to Kubernetes access their cluster directly on production environments until they're comfortable with doing so in testing environment (like minikube).</p></div>
@@ -46,7 +46,12 @@ To set this up, you first need to have Kubernetes installed on your local machin
 4. Now click through to your master server (click the *Servers* tab on the application overview and then *master*)
 5. Click on the *Download Kubeconfig* button and download the `kubeconfig` file somewhere sensible on your local machine
 6. Set the environment variable using `export KUBECONFIG=/file/path`
-7. Access your cluster (e.g. `kubectl get nodes`)
+7. You can now access your cluster and run whatever commands you need using the certificate on your computer. For example:
+
+{% highlight bash %}
+kubectl get nodes
+{% endhighlight %}
+
 
 #### Warning
 <div class="notice notice-warning"><p>

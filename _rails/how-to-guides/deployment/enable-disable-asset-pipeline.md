@@ -1,82 +1,71 @@
 ---
 layout: post
 template: one-col
-title: Enable/Disable asset pipeline compilation
+title: Configuring asset pipeline compilation
 categories: how-to-guides/deployment
 order: 2
-lead: "How to enable and disable asset pipeline precompilation for Rails applications"
+lead: "How to configure asset pipeline compilation (APC) and precompilation for Rails / Rack applications"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path:output_ext
 ---
 
-You can enable/disable asset pipeline precompilation for Rails applications after the analysis step of your application creation, or in your manifest file.
+## Overview
 
-The asset pipeline compilation option will be hidden if you have enabled/disabled asset pipeline compilation in your application.rb or in the manifest file.
+[Asset Pipeline Compilation](https://guides.rubyonrails.org/asset_pipeline.html) (APC) is the process that Rails uses to consolidate and optimise assets like JavaScript and CSS, and to automate the compilation of embedded languages. For more information about this.
 
-### Using live compilation
+Cloud 66 gives you complete control over your asset pipeline: 
 
-If you disable Asset Pipeline Precompilation but want to use Asset Pipeline Compilation, you need to use Live Compilation (on demand) by adding the following line to your `application.rb`:
+- We will automatically run APC on each of your deploys. You can choose to disable this.
+- You can nominate one of your servers to handle the APC workload, leaving your other servers free to run your application as usual.
 
-	config.assets.compile = true
+## Enable or disable APC
 
-Live Compilation (on-demand) [does not perform as well as Precompilation](http://guides.rubyonrails.org/asset_pipeline.html#live-compilation) and is generaly not recommended for production environments.
+You can manually enable/disable APC either:  
 
-### Application.rb
-
-Asset Pipeline precompilation will be disabled if `config.assets.enabled` variable is assigned to false in your `application.rb` file:
-
-	config.assets.enabled = false
-
-Setting this value to false means that your application doesn't use the asset pipeline at all, so precompilation is not relevant.
+- When you first deploy your app (after the analysis step)
+- In your manifest file (for apps that are already deployed)
 
 ### Manifest.yml
 
-You can use a [manifest file](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) to enable/disable the asset pipeline and pre-compilation using the following parameters with a true or false:
+You can use a [manifest file](/rails/quickstarts/getting-started-with-manifest.html) to enable/disable the APC using the following parameters with a true or false:
 
-```
+{% highlight yaml %}
 development:
-    rails:
-        configuration:
-         asset_pipeline_enabled: true
-         asset_pipeline_precompile: true
-```
-Note that we need to enable the pipeline *and also* set precompile to true.
+ rails:
+  configuration:
+  asset_pipeline_enabled: true
+  asset_pipeline_precompile: true
+{% endhighlight %}
 
-There is an hierarchical order to set up asset pipeline precompilation. The top one will override the others.
+Note that we must enable the pipeline *and also* set precompile to true (this is the default).
 
-1. In application.rb
-2. In the Cloud 66 manifest file
-3. In the Cloud 66 interface
+Any conflicts or gaps in APC settings will be resolved in the following order of priority:
 
-### Asset pipeline compilation requirements
+1. Application.rb
+2. Cloud 66 manifest file
+3. The Cloud 66 dashboard
 
-Asset pipeline compilation uses _ExecJS_ to run _JavaScript_ code from within Ruby.
+(i.e. the settings in your `application.rb` will overrule anything in your manifest)
 
-The ExecJS library in turn requires that you have at least one library available on your server that is capable of compiling Javascript. Libraries for Javascript compilation on your server that are currently supported by Cloud 66 are:
+## Nominating a dedicated compilation server
 
-1. **therubyracer** — Google V8 embedded within Ruby. Installed by including “therubyracer” in your Gemfile.
-2. **Node.js** — Cloud 66 will automatically install this on your server if you don’t include “therubyracer” in your Gemfile.
+Compilation is a resource intensive process that can congest your servers. To mitigate this issue, you can nominate one of your application servers to act as a **dedicated compiler.** When you enable this feature, the compilation process changes as follows:
 
-### Compile only modified assets
+1. Code is deployed to the dedicated server 
+2. Assets are compiled on that server (using your settings)
+3. Code is deployed to the rest of your servers
+4. Assets are synched to the rest of your servers
 
-Cloud 66 supports this through [Turbo Sprockets](https://github.com/ndbroadbent/turbo-sprockets-rails3). All you need to do is to add Turbo Sprocket gem to your Gemfile. This is only supported for Rails 3.2 and above.
+We strongly recommend choosing your most powerful and/or least busy server to handle this load. 
 
-### Speeding up Rails deployments
+### Enabling dedicated compilation
 
-While Cloud 66 works hard to improve your deployment speeds on our side, we recommend the following enhancements to [Asset Pipeline Compilation](http://guides.rubyonrails.org/asset_pipeline.html) on your side to speed up your deployments.
+In order to designate a application server as your dedicated compiler, you need to:
 
-#### Below Rails 3.2
+1. Log into your [Cloud 66 Dashboard](https://app.cloud66.com/) and click through to your Rails app
+2. Click through to the overview page for the server you plan to use as a compiler
+3. Click on the *Tags* icon and then *Add Tags*
+4. Add a tag named `c66.compilation.run` and *Save*
 
-Unfortunately these measures are not available to Rails versions before 3.2.
-
-#### Rails 3.2 and above
-
-If you are running Rails 3.2 or later, you can use [Turbo Sprockets](https://github.com/ndbroadbent/turbo-sprockets-rails3), which speeds up deployments by only compiling changed assets.
-
-It is also good practice to use [Asset Sync](https://github.com/rumblelabs/asset_sync) to sync your assets with a CDN like S3. This means that only the first server in your application will compile the assets and the rest will simply refer to the CDN.
-
-#### Rails 4 and above
-
-Rails 4 has Turbo Sprockets enabled by default, and again, we suggest that you use [Asset Sync](https://github.com/rumblelabs/asset_sync) to sync your assets with a CDN like S3.
-
+The next time you redeploy your application assets will be compiled on the nominated server.

@@ -8,6 +8,7 @@ tags: ["getting started"]
 lead: A step by step tutorial that walks you through deploying a demo application with Maestro. The best place to get started!
 permalink: /:collection/:path:output_ext
 ---
+{% assign product = 'maestro' %}
 
 Maestro is an end-to-end solution for building, deploying and managing containerized applications. We build your code into Docker images and/or fetch pre-built images from your repostitories. We also take care of deploying and managing your containers and infrastructure (servers, load balancers, etc).
 
@@ -19,7 +20,7 @@ Before you start, please check you have the following:
 * **Application code and/or pre-built images** &mdash; Application code should be hosted in a (secure) publicly accessible git repository and pre-built images should be hosted in image publicly accessible repositories.
 * **A Cloud account linked to Cloud 66 or your own servers set up** &mdash; See below.
 
-{% include general/cloud_provider_or_own_server_tabs.html %}
+{% include general/cloud_provider_or_own_server_tabs.html product = product %}
 
 <div class="notice"><p>If you don't have images or code ready, you can use this <a href="https://github.com/cloud66/maestro-demo.git">simple visit counter application</a> we've supplied on Github. (You can also use this project with our next tutorial on Clusters.)
 </p></div>

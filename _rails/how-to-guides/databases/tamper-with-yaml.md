@@ -10,14 +10,21 @@ tags: ["Database"]
 permalink: /:collection/:path:output_ext
 ---
 
-If your Rails/Rack application uses a MySQL, PostgreSQL or MongoDB instance that is managed by Cloud 66, then we will (by default) automatically amend your configuration files to ensure that they have the correct username and password (where appropriate) and server address (should your server address change due to instance resizing or fixed IP allocation). We will automatically track these changes and insert the correct details on the next deployment.
+If your Rails/Rack application uses a MySQL, PostgreSQL or MongoDB instance that is managed by Cloud 66, then we will (by default) automatically amend your configuration files (specifically `database.yml`) to ensure that they have the correct username and password (where appropriate) and server address (should your server address change due to instance resizing or fixed IP allocation). 
 
-However if you would prefer to manage these configurations manually you can add this line to your manifest.yml file: `
+We will automatically track these changes and insert the correct details on the next deployment. These automatic changes happen at the deployment step named `deploy:tamper:db_configs`. 
+
+#### Custom database configs
+<div class="notice"><p>If you have significantly customised your <kbd>database.yml</kbd> (for example with multiple databases and/or external databases) and you have not disabled our "tampering" (see below) then you are highly likely to encounter issues. Our automated updates will tend to strip out the other databases or cause errors in their configuration.</p></div>
+
+## Disabling automated config updates
+
+If you would prefer to manage these configurations manually you can add this line to your manifest.yml file: `
 
 ```
 tamper_with_yml: false
 ```
-This will prevent our system from making any automated changes to the configuration files.
+This will prevent our system from making any automated changes to the configuration files (including `database.yml`).
 
 #### Warning
 
