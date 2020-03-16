@@ -1,17 +1,22 @@
-
-## Package Update Policy
+## Automated package update policy
 
 Cloud 66 aims to make it easier to build **immutable** infrastructure. Building servers and applications from scratch is much better than modifying existing server configurations and tinkering with settings until things start to work.
 
-So, when an upgrade is available, our first recommendation is to build a new application and redirect your traffic to the new application using your [Failover Address](/{{page.collection}}/tutorials/failover-groups.html).
+When a new server is provisioned we automatically install the latest versions of packages. After the server is created we only auto-install packages that are marked as `security updates`. Cloud 66 doesn't (typically) automatically update other packages because it doesn't want to risk disrupting your existing application. However, depending on your configuration, we *may* update your packages each time you redeploy your app (see below).
 
-When a new server is created we automatically update all the packages to the latest version. After the server is created we only auto-install packages that are marked as `security updates`. Cloud 66 doesn't typically automatically update other packages because it doesn't want to risk disrupting your existing application.
+## Controlling package updates
+
+You can add custom Linux (Ubuntu) packages to your application using Deploy Hooks (read our full guide here.)  Depending on how you've set them up,  Deploy Hooks can either install packages only when a new server is created, or on every (re)deploy (or both). 
+
+## Managing high-risk updates
+
+If you're concerned about a major update to one of the packages you depend on, our first recommendation is to build a new application and redirect your traffic to the new application using your [Failover Address](notion://www.notion.so/%7B%7Bpage.collection%7D%7D/tutorials/failover-groups.html).
 
 If rebuilding is impractical or impossible, there are three approaches to dealing with the issue:
 
-*  Ignore the package updates &mdash; this is the safest bet if you're concerned about app stability, but can create issues in the longer term.
-* Manually update the packages by logging into the servers and using `sudo apt-get -y upgrade` or `dist-upgrade`
-* Update the packages indirectly through scaling up a new server, and then dropping the old one. New servers will have the latest packages installed on them unless you have locked package versions using your manifest or deploy hooks.
+- Ignore the package update — this is the safest bet if you're concerned about app stability, but can create issues in the longer term. Be sure to check and update your Deploy Hooks so that the package doesn't get automatically installed the next time you deploy.
+- Manually update the packages by logging into the servers and using `sudo apt-get -y upgrade` or `dist-upgrade`
+- Update the packages indirectly through scaling up a new server, and then dropping the old one. New servers will have the latest packages installed on them unless you have explicitly locked package versions using Deploy Hooks.
 
 #### Note
 <div class="notice"><p>Some package updates require server-reboot. When scaling up we restart your new servers automatically to ensure everything works correctly. Alternatively, you can reboot your servers manually or via the Toolbelt.</p></div>
@@ -63,7 +68,7 @@ It is best to keep your Docker and Weave versions up to date as they are release
 
 1. Update your manifest file (Configuration Files -> Manifest.yml) and change the Docker and Weave version to the [latest ones](/maestro/resources/technical-specifications.html#component-versions).
 
-2. Click on **DEPLOY** and choose **Deploy with options**
+2. Click on **Deploy** and choose **Deploy with options**
 3. Go to the **More options** tab and tick the **Apply Docker upgrades** check box.
 
 #### Warning
