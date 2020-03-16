@@ -1,33 +1,42 @@
 
-## Cloud66 Update Packages Policy
+## Package Update Policy
 
-Cloud 66 aims to make it easier to build **immutable** infrastructure. Building servers and stacks from scratch is much better than modifying existing server configurations and tinkering with settings until things start to work.
+Cloud 66 aims to make it easier to build **immutable** infrastructure. Building servers and applications from scratch is much better than modifying existing server configurations and tinkering with settings until things start to work.
 
-So in all cases of upgrade, our first recommendation is to build a new application and redirect your traffic to the new application using our [Elastic Address](/{{page.collection}}/tutorials/failover-groups.html).
+So, when an upgrade is available, our first recommendation is to build a new application and redirect your traffic to the new application using your [Failover Address](/{{page.collection}}/tutorials/failover-groups.html).
 
-Following that principle, whenever a new server is created we automatically update all the packages to the latest. After the server is created we only auto-install packages that are marked as `security updates`. So Cloud66 doesn't typically update other packages because we don't want to risk breaking or damaging your live application (a condition that doesn't apply when a server is newly created).
+When a new server is created we automatically update all the packages to the latest version. After the server is created we only auto-install packages that are marked as `security updates`. Cloud 66 doesn't typically automatically update other packages because it doesn't want to risk disrupting your existing application.
 
-You have a few options for dealing with upgrades to packages:
+If rebuilding is impractical or impossible, there are three approaches to dealing with the issue:
 
-* Don't apply the package updates. This is the safest bet if you're concerned about your app's stability, but can create issues in the longer term.
-* Update the packages yourself through `sudo apt-get -y upgrade` or `dist-upgrade` package (if there is a new feature you're after or just want to be running the latest)
-* Update the packages indirectly through scaling up a new server, and then dropping the old one (the new server will always get the latest packages installed on it)
+*  Ignore the package updates &mdash; this is the safest bet if you're concerned about app stability, but can create issues in the longer term.
+* Manually update the packages by logging into the servers and using `sudo apt-get -y upgrade` or `dist-upgrade`
+* Update the packages indirectly through scaling up a new server, and then dropping the old one. New servers will have the latest packages installed on them unless you have locked package versions using your manifest or deploy hooks.
 
-#### Tip
-<div class="notice">
-<p>Some package and security updates require a server reboot. When you scale up we restart your new servers automatically to ensure everything is neat and clean. Alternatively you can reboot your servers manually or via the toolbelt if you prefer</p>
-</div>
+#### Note
+<div class="notice"><p>Some package updates require server-reboot. When scaling up we restart your new servers automatically to ensure everything works correctly. Alternatively, you can reboot your servers manually or via the Toolbelt.</p></div>
 
 ## Upgrade package types
 
 ### Security updates
 
-In the event of a security vulnerability on any of the components we deploy on the servers, we aim to be as quick as possible to roll out the recommended patches for Ubuntu, Ruby and Rails.
+In the event of a security vulnerability on any of the components we deploy on the servers, we aim to be as quick as possible to roll out the recommended patches.
 
 ### Ubuntu
-From the _Deploy_ menu, choose _Deploy with Options_. By selecting _Apply security upgrades_, Cloud 66 will perform operating system security package upgrades and set up [unattended upgrades](https://help.ubuntu.com/community/AutomaticSecurityUpdates) for your application. Unattended upgrades will automatically check for and install the latest Ubuntu security packages on a daily basis.
 
-Note that some security packages may require a server restart. We don't automatically restart your server, and it is at your discretion to do so. If the file `/var/run/reboot-required` exists, your server does in fact require a restart. To see which packages contributed to the requirement for a restart, please see `/var/run/reboot-required.pkgs`.
+To manually trigger security upgrades:
+
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
+2. Clicking on the *Build / Deploy* button and choose *Deploy with Options*
+3. Click on the *More Options* tab
+4. Check *Apply Security Upgrades* and *Yes, reboot my servers if required*
+5. Click *Run Now*
+
+This will perform operating system security package upgrades and also set up <a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates">unattended upgrades</a> for your application. Unattended upgrades will automatically check for and install the latest Ubuntu security packages on a daily basis.
+
+Note that some security packages may require a server restart. We don't automatically restart your server, and it is at your discretion to do so. 
+
+If the file `/var/run/reboot-required` exists, that means your server requires a restart. To see which packages contributed to the requirement for a restart, read `/var/run/reboot-required.pkgs`.
 {% if page.collection == 'rails' %}
 ### Ruby
 
@@ -46,6 +55,20 @@ Rails should be upgraded in the same way as Ruby. See above for details.
 ### Passenger
 
 The recommended way to upgrade your passenger to the latest one is to deploy to a new web server and drop the old one, so the scaled up one will automatically have the [latest version](/{{page.collection}}/resources/technical-specifications.html#component-versions) supported by Cloud 66.
+
+{% if include.product == 'maestro' %}
+### Docker and Weave
+
+It is best to keep your Docker and Weave versions up to date as they are released quite frequently with bug/security fixes.
+
+1. Update your manifest file (Configuration Files -> Manifest.yml) and change the Docker and Weave version to the [latest ones](/maestro/resources/technical-specifications.html#component-versions).
+
+2. Click on **DEPLOY** and choose **Deploy with options**
+3. Go to the **More options** tab and tick the **Apply Docker upgrades** check box.
+
+#### Warning
+<div class="notice notice-danger"><p>Upgrading in-place involves downtime as the Docker engine and local files are all upgraded. To maintain zero down-time you should clone your application and use <a href="/maestro/tutorials/failover-groups.html">failover groups</a> to switch to the new instance.</p></div>
+{% endif %}
 
 ## About manual upgrades
 If you need to upgrade any part of your application the best course of action is always to build a new server. However, if that is not desirable or possible, you can always perform manual upgrades.

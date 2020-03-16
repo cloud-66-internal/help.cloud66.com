@@ -1,66 +1,77 @@
+## Overview
 
-[WebSocket](http://www.websocket.org) is a protocol that allows bi-directional web communication between client and server.
+[WebSocket](http://www.websocket.org/) is a protocol that allows bi-directional web communication between client and server. You can configure your Maestro application to communicate via WebSocket using the method below.
 
+## Configuring for WebSocket
 
-## Cloud 66 configuration for WebSocket
+{% if include.product == 'maestro' %}
+Maestro opens ports **8080** and **8443** by default on your servers to allow you to use WebSocket. To work with optimally Maestro, your WebSocket servers need to listen to these ports.
 
-Cloud 66 opens **8080** and **8443** ports by default on your servers to allow you to use WebSocket.
+To configure your Maestro app to communicate with your WebSocket server, you need to set up your [Service's ports](/maestro/tutorials/container-ports.html) to allow your container to communicate via port 8080 (or 8443 for TLS). 
 
-If you want to use WebSocket with Cloud 66, your WebSocket servers need to listen to the following ports:
+For example, this service (**ws-app**) is running on port `3000`, and communicating with WebSocket via `8080`:
 
-- **8080**
-- **8443** for SSL
+{% highlight yaml %}
+    version: 2
+    services:
+      ws-app:
+        ports:
+        - container: 3000
+          http: 8080
+{% endhighlight %}    
 
-You can use a different port to use WebSocket (not supported by Cloud 66) but you will need manually open the ports to allow external connections to your servers.
+{% endif %}
+{% if include.product != 'maestro' %}
+Cloud 66 opens ports **8080** and **8443** (for TLS) by default on your servers to allow you to use WebSocket. To work with optimally Cloud 66, your WebSocket servers need to listen to these ports.
+{% endif %}
 
-Find out more about [service networking]({% if page.collection == "maestro" %}/maestro/how-to-guides/deployment/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}).
+### Using custom ports for WebSocket
 
+If necessary you can use different ports for WebSocket, but you will need to [manually open those ports](/{{page.collection}}/references/network-configuration.html#firewall)  on Cloud 66 to allow external connections to your servers. 
+
+## Testing a WebSocket connection
+
+To test if your WebSocket server is connecting to your application correctly, you can create a `.html` file with the code below. Make sure to replace *<your_address>* with your WebSocket server IP address and finally, open it in a web browser.
+
+    <html>
+      <head>
+        <script src="<http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js>"></script>
+          <script>
+          $(document).ready(function(){
+            function debug( str ) {
+              $("#debug").append( str );
+            };
+    
+            ws = new WebSocket("ws://your address");
+            ws.onmessage = function(evt) {
+              $("#msg").append("evt.data");
+            };
+            ws.onclose = function() {
+              debug("socket closed");
+            };
+            ws.onopen = function() {
+              debug("connected...");
+              ws.send("hello server");
+            };
+          });
+        </script>
+      </head>
+      <body>
+        <div id="debug"></div>
+        <div id="msg"></div>
+      </body>
+    </html>
 
 ## WebSocket through a load balancer
 
-You can use a load balancer and scale up your servers to have more redundancy and capacity for your WebSocket servers.
+You can use WebSocket if your application is using a load balancer, but you may need to make some configuration changes (depending on the load balancer). Cloud 66's default load balancer is HAProxy. 
 
-### Note
+### Using WebSocket via HAProxy
 
-ELB (Amazon) doesn't support WebSocket traffic.
+By default, all HAProxy servers configured by Cloud 66 will redirect all WebSocket traffic from ports **80** or **443** to ports **8080** or **8443** of your web servers, so it should work with no additional configuration (assuming your WebSocket server uses the default ports).
 
-Learn more about [Cloud 66 HAProxy and WebSocket]({% if page.collection == 'maestro' %}/maestro/how-to-guides/deployment/haproxy-for-websocket.html{%else%}/{{page.collection}}/how-to-guides/deployment/shells/haproxy-for-websocket.html{%endif%}) setup.
+To bypass this redirection by HAProxy, you can connect your WebSocket servers via ports **8080** and **8443**. The HAProxy server is configured to pass through all traffic on ports **8080** and **8443** to the corresponding ports on the web servers.
 
-On **Linode** alternative HTTP ports 8080 and 8443 are opened on NodeBalancers and can be used for WebSockets.
+### Using WebSocket via native cloud load balancers
 
-
-## Test your WebSocket server
-
-To test your WebSocket server, create a `.html` file with the code below, make sure to replace *\<your_address\>* with your WebSocket server IP address and finally, open it in a web browser.
-
-```
-<html>
-  <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-      <script>
-      $(document).ready(function(){
-        function debug( str ) {
-          $("#debug").append( str );
-        };
-
-        ws = new WebSocket("ws://your address");
-        ws.onmessage = function(evt) {
-          $("#msg").append("evt.data");
-        };
-        ws.onclose = function() {
-          debug("socket closed");
-        };
-        ws.onopen = function() {
-          debug("connected...");
-          ws.send("hello server");
-        };
-      });
-    </script>
-  </head>
-  <body>
-    <div id="debug"></div>
-    <div id="msg"></div>
-  </body>
-</html>
-```
-
+If you have manually set up a native load balancer with your cloud provider, and you are using it to distribute traffic to your application, you should consult your cloud provider's documentation to ensure you've configured the load balancer to handle WebSocket traffic appropriately.
