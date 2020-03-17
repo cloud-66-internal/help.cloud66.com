@@ -6,11 +6,11 @@ When a new server is provisioned we automatically install the latest versions of
 
 ## Controlling package updates
 
-You can add custom Linux (Ubuntu) packages to your application using Deploy Hooks (read our full guide here.)  Depending on how you've set them up,  Deploy Hooks can either install packages only when a new server is created, or on every (re)deploy (or both). 
+You can add custom Linux (Ubuntu) packages to your application using Deploy Hooks (read [our full guide here](/{{page.collection}}/how-to-guides/deployment/managing-custom-packages.html).)  Depending on how you've set them up,  Deploy Hooks can either install packages only when a new server is created, or on every (re)deploy (or both). 
 
 ## Managing high-risk updates
 
-If you're concerned about a major update to one of the packages you depend on, our first recommendation is to build a new application and redirect your traffic to the new application using your [Failover Address](notion://www.notion.so/%7B%7Bpage.collection%7D%7D/tutorials/failover-groups.html).
+If you're concerned about a major update to one of the packages you depend on, our first recommendation is to build a new application and redirect your traffic to the new application using your [Failover Address](/{{page.collection}}/tutorials/failover-groups.html).
 
 If rebuilding is impractical or impossible, there are three approaches to dealing with the issue:
 
