@@ -136,7 +136,7 @@ The example below can be used to run custom rake tasks during server build:
             run_on: single_server
             apply_during: build_only
 
-This will run our rake task on one Rails server and only during the initial build. We run this as a `last_thing` hook because if we ran it earlier the application wouldn't exist on the server and be usable. If you need to run tasks more than once, consider using the [rake task add-in](notion://www.notion.so/rails/how-to-guides/deployment/running-rake-tasks.html).
+This will run our rake task on one Rails server and only during the initial build. We run this as a `last_thing` hook because if we ran it earlier the application wouldn't exist on the server and be usable. If you need to run tasks more than once, consider using the [rake task add-in](/rails/how-to-guides/deployment/running-rake-tasks.html).
 
 ## Using existing script deploy hooks 
 
