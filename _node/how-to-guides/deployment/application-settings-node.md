@@ -4,6 +4,7 @@ template: one-col
 title: Customizing your Node.js configuration
 categories: how-to-guides/deployment
 lead: "How to customize the deployment configuration of your Node.js application via Cloud 66"
+order: 10
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path:output_ext
