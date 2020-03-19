@@ -30,10 +30,11 @@ Node for Cloud 66 creates a Dockerfile for each app deployed. You can access thi
 
 You can open ports to your application using the [EXPOSE instruction](https://docs.docker.com/engine/reference/builder/#expose) in your Dockerfile. For example:
 
-```
+{% highlight ruby %}
 EXPOSE 7080/tcp
 EXPOSE 7080/udp
-```
+{% endhighlight %}
+
 ...will "open" port 7080 to both TCP and UDP traffic. When your app is next "published" (deployed) this port will be enabled. 
 
 Remember you will need to configure both your application and Nginx to route and accept requests on whatever ports you set up this way.
