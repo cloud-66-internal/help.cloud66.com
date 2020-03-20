@@ -14,27 +14,15 @@ permalink: /:collection/:path:output_ext
 
 Node for Cloud 66 is designed to be a simple, hands-off solution for deploying Node applications. As such the complexity around exposing and using ports is largely automated and not editable.
 
-If you need more control over the ports used by your application and its components, you have two options:
+If you need to use non-standard ports for your application or any of its components, you have two options:
 
 1. Migrate your Node application to [Cloud 66 Maestro](https://www.cloud66.com/containers/maestro/) which is designed for exactly this use case (we'll give you 4 weeks free to test it out)
-2. Edit your application's Dockerfile to expose ports
+2. Modify your application's code to force it to use different ports
 
-## Managing ports via your Dockerfile
+We strongly recommend Option 1 for any application that requires a non-standard set up. 
 
-Node for Cloud 66 creates a Dockerfile for each app deployed. You can access this file via your dashboard:
+## Changing ports in your application code
 
-1. Open your application overview
-2. Click on *Configuration* in the right-hand panel
-3. Click on the *Configuration Files* tab
-4. Click on the *Dockerfile* sub-tab
+When you deploy an application using Node for Cloud 66, we analyse your application code and set up your infrastructure according to what we find in your code.  
 
-You can open ports to your application using the [EXPOSE instruction](https://docs.docker.com/engine/reference/builder/#expose) in your Dockerfile. For example:
-
-{% highlight ruby %}
-EXPOSE 7080/tcp
-EXPOSE 7080/udp
-{% endhighlight %}
-
-...will "open" port 7080 to both TCP and UDP traffic. When your app is next "published" (deployed) this port will be enabled. 
-
-Remember you will need to configure both your application and Nginx to route and accept requests on whatever ports you set up this way.
+Given the almost infinite number of ways to write software, we can't recommend any particular method for achieving this. [Here is a simple example](https://expressjs.com/en/starter/hello-world.html) from the Express documentation.
