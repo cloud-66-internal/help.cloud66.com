@@ -4,6 +4,7 @@ template: one-col
 title: Configuring WebSocket
 categories: how-to-guides/deployment
 lead: "How to configure Websocket for a Cloud 66 Node application"
+order: 30
 legacy: false
 tags: ["websocket"]
 

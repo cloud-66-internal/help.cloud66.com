@@ -4,6 +4,7 @@ template: one-col
 title: Using redeployment hooks
 categories: how-to-guides/deployment
 lead: "How to use redeployment hooks to achieve automated deployments"
+order: 10
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext
