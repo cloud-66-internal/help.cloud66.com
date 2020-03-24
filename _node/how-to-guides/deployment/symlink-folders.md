@@ -4,6 +4,7 @@ template: one-col
 title: Using symbolic links
 categories: how-to-guides/deployment
 lead: "How to use Ubuntu symbolic links with Cloud 66"
+order: 20
 legacy: false
 tags: ["customization"]
 
