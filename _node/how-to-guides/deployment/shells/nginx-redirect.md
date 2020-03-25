@@ -4,6 +4,7 @@ template: one-col
 title: Configuring redirects through Nginx
 categories: how-to-guides/deployment
 lead: "How to configure redirects for your application using Nginx"
+order: 15
 tags: ["customization"]
 legacy: false
 

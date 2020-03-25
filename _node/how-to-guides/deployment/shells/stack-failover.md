@@ -4,6 +4,7 @@ template: one-col
 title: Using failover groups
 categories: how-to-guides/deployment
 lead: "How to set up and use a failover group"
+order: 15
 legacy: false
 tags: ["high-availability"]
 
