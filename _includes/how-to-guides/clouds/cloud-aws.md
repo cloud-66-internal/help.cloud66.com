@@ -17,9 +17,14 @@ After selecting the **Security Credentials** option, select the *Access Keys* op
 
 ### Option B:  Identity Access Management (IAM)
 
-After selecting the **IAM option** follow [this guide in AWS docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#create-an-iam-user) to set up a new IAM user for Cloud 66. We recommend naming the user `cloud66` for clarity. Be sure to copy or save the **Access Key ID** and **Secret Access Key** for this user - you will need these credentials to connect your Cloud 66 account. 
+After selecting the **IAM option** follow [this guide in AWS docs]() to set up a new IAM user for Cloud 66. We recommend naming the user `cloud66` for clarity. 
 
-In order to function correctly the `cloud66` user needs either **AmazonVPCFullAccess** permissions (for VPC users) or **AmazonEC2FullAccess** (for legacy EC2-Classic users).
+Be sure to copy or save the **Access Key ID** and **Secret Access Key** for this user - you will need these credentials to connect your Cloud 66 account. 
+
+ the `cloud66` user the following permissions: 
+
+* **AmazonVPCFullAccess** 
+* **AmazonEC2FullAccess**
 
 If you need to add a SSL certificates to your applications, you need to add **IAMFullAccess.**
 
@@ -38,88 +43,6 @@ For **existing Cloud 66 users**
 5. Provide your AWS credentials and click *Add Cloud*
 
 You will now be able to deploy to your AWS account.
-
-## IAM policy template
-
-This policy contains the minimum permissions required for Cloud 66 to work via your AWS account. You can adjust the value of `Resource` to limit access to specific VPC instances.
-
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "Actions",
-            "Action": [
-                "ec2:AuthorizeSecurityGroupIngress",
-                "ec2:RevokeSecurityGroupIngress",
-                "ec2:DeleteSecurityGroup",
-                "ec2:DeleteVolume",
-                "ec2:RebootInstances",
-                "ec2:RunInstances",
-                "ec2:StartInstances",
-                "ec2:StopInstances",
-                "ec2:TerminateInstances",
-                "ec2:DescribeAccountAttributes",
-                "ec2:DescribeAvailabilityZones",
-                "ec2:DescribeInstanceAttribute",
-                "ec2:DescribeInstanceStatus",
-                "ec2:DescribeInstances",
-                "ec2:DescribeInternetGateways",
-                "ec2:DescribeKeyPairs",
-                "ec2:DescribeNetworkInterfaces",
-                "ec2:DescribeRegions",
-                "ec2:DescribeReservedInstances",
-                "ec2:DescribeReservedInstancesListings",
-                "ec2:DescribeSecurityGroups",
-                "ec2:DescribeSubnets",
-                "ec2:DescribeVolumeAttribute",
-                "ec2:DescribeVolumeStatus",
-                "ec2:DescribeVolumes",
-                "ec2:DescribeVpcs",
-                "ec2:CreateKeyPair",
-                "ec2:CreateSecurityGroup",
-                "ec2:CreateSubnet",
-                "ec2:CreateVolume",
-                "ec2:DeleteKeyPair",
-                "ec2:ModifyInstanceAttribute",
-                "ec2:CreateTags",
-                "elasticloadbalancing:ApplySecurityGroupsToLoadBalancer",
-                "elasticloadbalancing:ConfigureHealthCheck",
-                "elasticloadbalancing:CreateLBCookieStickinessPolicy",
-                "elasticloadbalancing:CreateListener",
-                "elasticloadbalancing:CreateLoadBalancer",
-                "elasticloadbalancing:CreateLoadBalancerListeners",
-                "elasticloadbalancing:CreateLoadBalancerPolicy",
-                "elasticloadbalancing:CreateTargetGroup",
-                "elasticloadbalancing:DeleteLoadBalancer",
-                "elasticloadbalancing:DeleteLoadBalancerListeners",
-                "elasticloadbalancing:DeleteLoadBalancerPolicy",
-                "elasticloadbalancing:DeregisterTargets",
-                "elasticloadbalancing:DeregisterInstancesFromLoadBalancer",
-                "elasticloadbalancing:DescribeLoadBalancers",
-                "elasticloadbalancing:DescribeListeners",
-                "elasticloadbalancing:DescribeTags",
-                "elasticloadbalancing:DescribeTargetHealth",
-                "elasticloadbalancing:EnableAvailabilityZonesForLoadBalancer",
-                "elasticloadbalancing:ModifyLoadBalancerAttributes",
-                "elasticloadbalancing:ModifyTargetGroupAttributes",
-                "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
-                "elasticloadbalancing:RegisterTargets",
-                "elasticloadbalancing:SetLoadBalancerListenerSSLCertificate",
-                "iam:ListServerCertificates",
-                "iam:GetServerCertificate",
-                "iam:UpdateServerCertificate",
-                "iam:UploadServerCertificate",
-                "iam:DeleteServerCertificate",
-                "iam:CreateServiceLinkedRole"
-            ],
-            "Resource": "*",
-            "Effect": "Allow"
-        }
-    ]
-}
-
-```
 
 #### Note
 <div class="notice notice-warning"><p>
