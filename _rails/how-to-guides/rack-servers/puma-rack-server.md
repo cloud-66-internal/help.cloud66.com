@@ -32,7 +32,7 @@ sudo bluepill cloud66_web_server restart
 {% endhighlight %}
 
 {% highlight shell %}
-kill -USR2 &lt;pid>
+kill -USR2 <pid>
 {% endhighlight %}
 
 ## Deploy with Puma
