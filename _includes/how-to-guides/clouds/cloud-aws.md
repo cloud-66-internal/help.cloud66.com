@@ -81,7 +81,7 @@ curl https://help.cloud66.com/c66_aws_iam_policy.json > c66_aws_iam_policy.json 
 <li>Click <em>Create Policy</em></li>
 </ol>
 
-<p>If you need more detail please read <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console">the AWS docs</a> on this subject.</p>
+<p>If you need more detail please read <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console" target="_blank">the AWS docs</a> on this subject.</p>
 
 </section>
 </div>
