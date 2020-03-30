@@ -13,41 +13,33 @@ permalink: /:collection/:path:output_ext
 [Puma](http://puma.io/) is a light-weight Rack server built for speed and parallelism. Cloud 66 uses the following signals to control Puma:
 
 ### Stop the web server
-<p>
-<kbd>
-	sudo bluepill cloud66&#95;web&#95;server stop
-</kbd>
-</p>
+{% highlight shell %}
+sudo bluepill cloud66_web_server stop
+{% endhighlight %}
 
 ### Start the web server
-<p>
-<kbd>
-	sudo bluepill cloud66&#95;web&#95;server quit
-</kbd><br/>
-<kbd>
-	sudo bluepill load /etc/bluepill/autoload/cloud66&#95;web&#95;server.pill
-</kbd>
-</p>
+{% highlight shell %}
+sudo bluepill cloud66_web_server quit
+{% endhighlight %}
+
+{% highlight shell %}
+sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill
+{% endhighlight %}
 
 ### Restart the web server (hot-restart)
-<p>
-<kbd>
-	sudo bluepill cloud66&#95;web&#95;server restart
-</kbd>
-</p>
-<p>
-<kbd>
-	kill -USR2 &lt;pid>
-</kbd>
-</p>
+{% highlight shell %}
+sudo bluepill cloud66_web_server restart
+{% endhighlight %}
+
+{% highlight shell %}
+kill -USR2 &lt;pid>
+{% endhighlight %}
 
 ## Deploy with Puma
 You need to choose your web server at the time of initial build of the application. Changes to or from Passenger (the default app server) will not be applied after your application has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
 
-To run a Puma Rack server, add a line to your Procfile labeled as custom&#95;web. Here is an example:
+To run a Puma Rack server, add a line to your Procfile labeled as custom_web. Here is an example:
 
-<pre class='terminal'>
-custom&#95;web: bundle exec puma -e $RACK&#95;ENV -b unix:///tmp/web&#95;server.sock --pidfile /tmp/web&#95;server.pid -d
-</pre>
-
-Take note that Puma is running in Daemon mode with the `-d` parameter.
+{% highlight shell %}
+custom_web: bundle exec puma -e $RACK_ENV -b unix:///tmp/web_server.sock --pidfile /tmp/web_server.pid
+{% endhighlight %}
