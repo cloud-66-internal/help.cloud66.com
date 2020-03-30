@@ -1,0 +1,20 @@
+{
+   "Version":"2012-10-17",
+   "Statement":[
+      {
+         "Sid":"Actions",
+         "Action":[
+            "ec2:*",
+            "elasticloadbalancing:*",
+            "iam:ListServerCertificates",
+            "iam:GetServerCertificate",
+            "iam:UpdateServerCertificate",
+            "iam:UploadServerCertificate",
+            "iam:DeleteServerCertificate",
+            "iam:CreateServiceLinkedRole"
+         ],
+         "Resource":"*",
+         "Effect":"Allow"
+      }
+   ]
+}
