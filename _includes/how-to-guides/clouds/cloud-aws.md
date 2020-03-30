@@ -1,48 +1,91 @@
 You can use Cloud 66 to provision and deploy your code to servers in any Amazon Web Services (AWS) region. Cloud 66 supports both VPC and (for AWS accounts created before 2014) EC2-Classic. We also support reserved instances. To use a VPC, your account must conform with the [default VPC guidelines](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/default-vpc.html#launching-into).
 
-## Generate AWS access keys
+## Granting Cloud 66 access to AWS
 
-You need to provide your AWS access keys in order for Cloud 66 to access your account. To generate these: 
+You need to configure AWS so that Cloud 66 to access your account. To to this:
 
-1. Log into the web interface for your AWS account 
+1. Log into the web interface for your AWS account
 2. Click on the name of your account in the top right corner of your AWS account, and select *My Security Credentials*.
 
 On the next screen, some users will be asked to choose between *Security Credentials* and *IAM users*. We support both methods but we recommend that experienced users select IAM for better security.
 
 IAM stands for *Identity and Access Management.* It allows you to set permissions for specific users. We will guide you through generating access keys based on both of these methods:
 
-### Option A: Security credentials
+## Option A: Using root credentials
 
-After selecting the **Security Credentials** option, select the *Access Keys* option from the menu. Now click *Create new access key*, and either download the key file or click *Show access key* and take note of your access key ID and secret access key. These are the credentials needed for Cloud 66 to access your account.
+After selecting the **Security Credentials** option: 
 
-### Option B:  Identity Access Management (IAM)
+1. Select the *Access Keys* option from the menu. 
+2. Click *Create new access key*
+3. Either download the key file or click *Show access key* and take note of your access key ID and secret access key. These are the credentials needed for Cloud 66 to access your account.
 
-After selecting the **IAM option** follow [this guide in AWS docs]() to set up a new IAM user for Cloud 66. We recommend naming the user `cloud66` for clarity. 
+## Option B: Identity Access Management (IAM)
 
-Be sure to copy or save the **Access Key ID** and **Secret Access Key** for this user - you will need these credentials to connect your Cloud 66 account. 
+### Step 1: Create a user
 
- the `cloud66` user the following permissions: 
+After selecting the **IAM option** follow [this guide in AWS docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) to set up a new IAM user for Cloud 66. We recommend naming the user `cloud66` for clarity.
 
-* **AmazonVPCFullAccess** 
-* **AmazonEC2FullAccess**
+Be sure to copy or save the **Access Key ID** and **Secret Access Key** for this user - you will need these credentials to connect your Cloud 66 account.
 
-If you need to add a SSL certificates to your applications, you need to add **IAMFullAccess.**
+### Step 2: Set up access policies
 
-If you need more fine-grained control over permissions you can click *Create Policy* and use our JSON template below to set one up.
+You'll need to assign access policies for the `cloud66` user so that it will have the access it requires to provision and manage your servers. 
 
-## Add AWS keys to an application
+You can see them here: [recommended minimum policies](https://help.cloud66.com/c66_aws_iam_policy.json).
 
-For **new Cloud 66 users** - visit the Cloud 66 Dashboard and click the green *New Application* button. After connecting to your Git repository and analyzing your code, you will be asked to Add your cloud platform. From this menu, select *Amazon Web Services* and provide your credentials.
+There are two method for assigning policies: using the **AWS CLI** or the **web console**:
 
-For **existing Cloud 66 users** 
+<div class="Tabs Tabs--enclosed">
+<nav>
+<ul class="TabMini js_tabs">
+<li class="TabMini-item active">
+<a href="#CLI" class="TabMini-link">
+AWS CLI
+</a>
+</li>
+<li class="TabMini-item">
+<a href="#WEB" class="TabMini-link">
+Web console
+</a>
+</li>
+</ul>
+</nav>
 
-1. Open your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on your account avatar (top-right) and select *Account Settings*
-3. Click on *Cloud Keys* in the **Settings** panel
-4. Click on the green +
-5. Provide your AWS credentials and click *Add Cloud*
+<section id="CLI" class="Tabs-content js_tab_content">
 
-You will now be able to deploy to your AWS account.
+<h3>Using the AWS CLI</h3>
+<p>If you have the AWS CLI tool installed, you can set up your access policies by running this command:</p>
+
+<p><pre class="prettyprint" style="font-size:12px">
+curl https://help.cloud66.com/c66_aws_iam_policy.json > c66_aws_iam_policy.json && aws iam put-user-policy --user-name cloud66 --policy-name ExamplePolicy --policy-document file://c66_aws_iam_policy.json</pre> 
+</p>
+
+<p>This downloads our JSON template to your machine and then submits it via the CLI. Note that this assumes you have named your user <kbd>cloud66</kbd> as recommended. You can find more info <a href="https://docs.aws.amazon.com/cli/latest/reference/iam/put-user-policy.html" target="_blank">in the AWS docs</a> if you need it.</p>
+
+</section>
+
+
+<section id="WEB" class="Tabs-content js_tab_content is-hidden">
+
+<h3>Using the web console</h3>
+
+<p>You can add policies via the <a href="https://console.aws.amazon.com/iam/" target="_blank">IAM management console</a>.</p> 
+<ol style="font-size:14px">
+<li>Click on <em>Access management</em> → <em>Users</em></li>
+<li>Click on your <kbd>cloud66</kbd> user</li>
+<li>Click the <em>Add inline policy</em> button</li>
+<li>In another browser tab Open our <a href="https://help.cloud66.com/c66_aws_iam_policy.json">JSON template</a> copy the whole page to your clipboard</li>
+<li>Back in the IAM console, click the JSON tab and paste in the template you just copied</li>
+<li>Click <em>Review Policy</em></li>
+<li>Give your policy a name  </li>
+<li>Click <em>Create Policy</em></li>
+</ol>
+
+<p>If you need more detail please read <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console">the AWS docs</a> on this subject.</p>
+
+</section>
+</div>
+
 
 #### Note
 <div class="notice notice-warning"><p>
