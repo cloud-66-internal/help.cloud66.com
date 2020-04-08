@@ -256,7 +256,7 @@ Returns the rendered content of a Stencil. For example: `inline("disks.yml")` wi
 
 As Stencils are almost always yaml files, indentation is important. The `indent` argument ensures all returned values are indented by the contextually-appropriate number of spaces.
 
-The `locals` parameter is optional and can be a hash. It will use any keys provided as Directives. For example `inline("test.yml", 2, { "foo": "bar" })` will fetch the contents of test.yml, indent it by two spaces and then set the Placeholder named `${foo}` to the value "bar".
+The `locals` parameter is optional and can be a hash. It will use any keys provided as Directives. For example `inline("test.yml", 2, { "foo": "bar" })` will fetch the contents of test.yml, indent it by two spaces and then set the Placeholder named `${locals.foo}` to the value "bar".
 
 Example:
 
