@@ -101,6 +101,7 @@ Maestro includes the following:
 - [Networking layer and DNS](/maestro/how-to-guides/deployment/service-network-configuration.html)
 - [Storage layer](/maestro/how-to-guides/deployment/service-storage.html)
 - [Scaling](/maestro/how-to-guides/scaling/)
+- [Fast deployments](/maestro/how-to-guides/deployment/parallel-deployment.html#fast-deployments)
 
 Maestro applications also enjoy the same benefits as other Cloud 66 applications, including:
 
