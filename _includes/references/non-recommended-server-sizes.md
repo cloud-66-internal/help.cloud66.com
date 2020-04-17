@@ -7,7 +7,7 @@ Although most cloud providers offer servers with the minimum specs required to r
 - At least 25GB of storage
 
 {% if include.product == 'maestro' %}
-This is particularly important for machines running [Kubernetes workloads](:https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/:). Given the requirements of Kubernetes, apps running on machines with lower specs may simply not function. 
+This is particularly important for machines running [Kubernetes workloads](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/). Given the requirements of Kubernetes, apps running on machines with lower specs may simply not function. 
 {% endif %}
 
 ## Under-powered server sizes (not recommended)
