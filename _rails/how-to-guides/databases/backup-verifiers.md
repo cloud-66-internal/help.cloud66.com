@@ -23,10 +23,6 @@ This feature supports both MySQL and PostgreSQL databases, and requires the use 
  * `backup_verifier_pg.sql` for PostgreSQL
 2. You can also specify which environment to run backup verifiers for by appending the environment to the filename. For example, `backup_verifier_mysql_production.sql` or `backup_verifier_pg_staging.sql`.
 
-#### Important
-<div class="notice notice-warning"><p>
-By including this script in your repository, you are opting in to the use of verified backups and will be charged accordingly. Please see our <a href="https://www.cloud66.com/rails/pricing">pricing page</a> for more info. </p></div>
-
 To verify your backup, the script must contain a SQL query that returns a data set containing a single column called "Result" with a value of `true` or `false`. We have examples for each type of database below.
 
 Your backup will be assumed to be verified if the value returned from the query is `true`.

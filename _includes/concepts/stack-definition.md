@@ -71,7 +71,7 @@ Cloud 66 makes it easy for you to [backup your database]({% if page.collection =
 
 ### Operating system
 
-Your servers will be deployed with **Ubuntu 16.04 LTS**. On the operating system level, you can [monitor disk, CPU and memory](/{{page.collection}}/resources/technical-specifications.html) from the dashboard.
+Your servers will be deployed with **Ubuntu 18.04 LTS**. On the operating system level, you can [monitor disk, CPU and memory](/{{page.collection}}/resources/technical-specifications.html) from the dashboard.
 
 
 ### Cloud vendor
