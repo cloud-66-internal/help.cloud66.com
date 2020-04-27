@@ -101,7 +101,7 @@ By default, Cloud 66 will deploy your application with Phusion Passenger, but yo
 
 To run a custom web server, we require a `custom_web` entry. It is important to set this before analyzing your application, to avoid building the application with Passenger.
 
-You can also use the [Procfile](/rails/how-to-guides/deployment/bluepill.html) to define other background jobs.
+You can also use the [Procfile](/rails/how-to-guides/deployment/systemd.html) to define other background jobs.
 
 
 ### Dyno recycling
