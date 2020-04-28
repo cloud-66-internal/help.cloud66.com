@@ -10,21 +10,25 @@ tags: ["code","workers"]
 permalink: /:collection/:path:output_ext
 ---
 
+## Overview
+
+Bluepill *was* Cloud 66's default process manager until May 2020. It has been replaced by [systemd](/rails/how-to-guides/deployment/systemd.html). The only servers still using Bluepill are those running Ubuntu 14.04 and below.  
+
+<div class="notice notice-warning"><p>If your servers are <strong>not</strong> running Ubuntu 14.04 then you are reading the wrong guide. Please visit the <a href="/rails/how-to-guides/deployment/systemd.html">systemd doc</a> instead.
+</p></div>
 
 ## Commands
 
-When [bluepill](https://github.com/bluepill-rb/bluepill) is installed on your server, you can control your processes manually from your server command-line interface.
+If [bluepill](https://github.com/bluepill-rb/bluepill) is installed on your server, you can control your processes manually from your server command-line interface.
 
 A process Bluepill config is saved into a `.pill` file. Bluepill loads pill files for each process it manages. See also [Bluepill gem page](http://rubygems.org/gems/bluepill).
 
 When you add processes through Cloud 66 interface, they will be managed by Cloud 66. For instance if you restart your server, they will be automatically restart aswell.
 
 
-
-## Process names convention
+## Process naming convention
 
 Cloud 66 processes beging with "cloud66\_" and user processes with "user\_"
-
 
 
 ## Build your own pill file
@@ -36,9 +40,6 @@ Don't forget to add a log file in your pill config. For instance:
 ```
 process.stdout = process.stderr = "<STACK_PATH>/log/process.log"
 ```
-
-
-
 
 ## Status
 

@@ -26,15 +26,16 @@ services:
 
 Default Rails deployments on Cloud 66 use Passenger (via Nginx) and the logs are stored in `$STACK_PATH/log`:
 
-* Application log: `$STACK_PATH/log/<environment>.log`
+* Rails log: `$STACK_PATH/log/<environment>.log`
 * Nginx error (server) log: `$STACK_PATH/log/nginx_error.log`
 
 #### Custom Rails deployments
 
-If you are using a [custom web server](/rails/tutorials/custom-web-servers.html), such as [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html): 
+If you are using a [custom web server](/rails/tutorials/custom-web-servers.html), such as [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html), [Thin](/rails/how-to-guides/rack-servers/thin-rack-server.html) or [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html): 
 
-* Application log: `$STACK_PATH/log/<environment>.log`
-* Server (bluepill) logs in `/tmp/web_server_bluepill.log`
+* Rails log: `$STACK_PATH/log/<environment>.log`
+* System log: `$STACK_PATH/log/custom_web.log`
+* Bluepill log: `/tmp/web_server_bluepill.log` (Ubuntu 14.04 only)
 
 {%endif%}
 
@@ -43,7 +44,7 @@ If you are using a [custom web server](/rails/tutorials/custom-web-servers.html)
 Logs for background processes can also be found in `$STACK_PATH/log`, and depend on the name of the process:
 
 * Process log: `$STACK_PATH/log/user_<name>.log`
-* Process bluepill log: `$STACK_PATH/log/user_<name>.pill`
+* Bluepill log: `$STACK_PATH/log/user_<name>.pill` (Ubuntu 14.04 only)
 
 ### Other
 
