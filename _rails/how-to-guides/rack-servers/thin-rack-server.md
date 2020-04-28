@@ -12,51 +12,52 @@ permalink: /:collection/:path:output_ext
 
 [Thin](http://code.macournoyer.com/thin/) is a Ruby web server that can handle high levels of concurrency. 
 
-## Deploy with Thin
+## Deploying with Thin
 You need to choose your web server at the time of initial build of the application. Changes to or from Passenger (the default web server) will not be applied after your application has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
 
-To run a Thin Rack server, add a line to your Procfile labeled as custom&#95;web. Here is an example:
+To run a Thin Rack server, add a line to your Procfile labeled as custom_web. Here is an example:
 
-<pre class='terminal'>
-custom&#95;web: bundle exec thin start --socket /tmp/web&#95;server.sock --pid /tmp/web&#95;server.pid -e $RACK&#95;ENV -d
-</pre>
-Please take note that Thin is running in Daemon mode with the `-d` parameter.
+{% highlight shell %}
+custom_web: bundle exec thin start --socket /tmp/web_server.sock --pid /tmp/web_server.pid -e $RACK_ENV
+{% endhighlight %}
 
-#### Important
-<div class="notice">
-	<p>Your web server is not automatically restarted during redeployment. If you would like for it to restart automatically, you can accomplish this using a <a href='#'>deploy hook</a>.</p>
-</div>
-
-## Controlling your Thin server
+## Controlling Thin with systemd
 
 Cloud 66 uses the following signals to control Thin:
 
 ### Stop the web server
-<p>
-<kbd>
-	sudo bluepill cloud66&#95;web&#95;server stop
-</kbd>
-</p>
+{% highlight shell %}
+sudo systemctl stop cloud66_web_server.service
+{% endhighlight %}
 
 ### Start the web server
-<p>
-<kbd>
-	sudo bluepill cloud66&#95;web&#95;server quit
-</kbd><br/>
-<kbd>
-	sudo bluepill load /etc/bluepill/autoload/cloud66&#95;web&#95;server.pill
-</kbd>
-</p>
+{% highlight shell %}
+sudo systemctl start cloud66_web_server.service
+{% endhighlight %}
 
 ### Restart the web server (hot-restart)
-<p>
-<kbd>
-	sudo bluepill cloud66&#95;web&#95;server restart
-</kbd>
-</p>
-<p>
-<kbd>
-	kill -USR2 &lt;pid>
-</kbd>
-</p>
+{% highlight shell %}
+sudo systemctl restart cloud66_web_server.service
+{% endhighlight %}
 
+If you need more control over your restarts, you can define a custom restart sequence in the [procfile_metadata](/rails/how-to-guides/deployment/building-a-manifest-file.html#processes) section of your [Manifest file](/rails/quickstarts/getting-started-with-manifest.html). 
+
+## Controlling Thin with Bluepill
+
+#### Warning
+<div class="notice notice-warning"><p>
+As of May 2020 Bluepill is officially deprecated for all servers managed by Cloud 66 <em>except</em> those running Ubuntu 14.04 and earlier. Please use systemd commands (above).
+</p></div>
+
+### Stop the web server
+{% highlight shell %} sudo bluepill cloud66_web_server stop {% endhighlight %}
+
+### Start the web server
+{% highlight shell %} sudo bluepill cloud66_web_server quit {% endhighlight %}
+
+{% highlight shell %} sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill {% endhighlight %}
+
+### Restart the web server (hot-restart)
+{% highlight shell %} sudo bluepill cloud66_web_server restart {% endhighlight %}
+
+{% highlight shell %} kill -USR2 {% endhighlight %}

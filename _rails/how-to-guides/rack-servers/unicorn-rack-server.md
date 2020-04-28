@@ -18,10 +18,8 @@ You need to choose your Rack server at the time of initial build of the applicat
 To run a Unicorn Rack server, add a line to your Procfile labeled as <em>custom_web</em>. Here is an example:
 
 {% highlight ruby %}
-custom_web: bundle exec unicorn_rails -c config/unicorn.rb -E $RAILS_ENV -D
+custom_web: bundle exec unicorn_rails -c config/unicorn.rb -E $RAILS_ENV
 {% endhighlight %}
-
-Please take note that Unicorn is running in Daemon mode with the `-D` parameter.
 
 #### Warning
 <div class="notice notice-warning">
@@ -70,37 +68,43 @@ after_fork do |server, worker|
 end
 {% endhighlight %}
 
-## Controlling your Unicorn server
+## Controlling Unicorn with systemd
 
 Cloud 66 uses the following signals to control Unicorn:
 
-### Kill the web server
-
-- kill -QUIT &lt;pid>: Stop the process
-- kill -USR2 &lt;pid>: Spin off another master process.
-- kill -s TTIN &lt;pid>: Add a new worker to the master process
-
 ### Stop the web server
-<p>
-<kbd>
-	sudo bluepill cloud66_web_server stop
-</kbd>
-</p>
+{% highlight shell %}
+sudo systemctl stop cloud66_web_server.service
+{% endhighlight %}
 
 ### Start the web server
-<p>
-<kbd>
-	sudo bluepill cloud66_web_server quit
-</kbd><br/>
-<kbd>
-	sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill
-</kbd>
-</p>
+{% highlight shell %}
+sudo systemctl start cloud66_web_server.service
+{% endhighlight %}
 
-### Restart the web server (zero-downtime)
-<p>
-<kbd>
-	sudo bluepill cloud66_web_server restart
-</kbd>
-</p>
+### Restart the web server (zero downtime)
+{% highlight shell %}
+sudo systemctl restart cloud66_web_server.service
+{% endhighlight %}
 
+If you need more control over your restarts, you can define a custom restart sequence in the [procfile_metadata](/rails/how-to-guides/deployment/building-a-manifest-file.html#processes) section of your [Manifest file](/rails/quickstarts/getting-started-with-manifest.html). 
+
+## Controlling Unicorn with Bluepill
+
+#### Warning
+<div class="notice notice-warning"><p>
+As of May 2020 Bluepill is officially deprecated for all servers managed by Cloud 66 <em>except</em> those running Ubuntu 14.04 and earlier. Please use systemd commands (above).
+</p></div>
+
+### Stop the web server
+{% highlight shell %} sudo bluepill cloud66_web_server stop {% endhighlight %}
+
+### Start the web server
+{% highlight shell %} sudo bluepill cloud66_web_server quit {% endhighlight %}
+
+{% highlight shell %} sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill {% endhighlight %}
+
+### Restart the web server (hot-restart)
+{% highlight shell %} sudo bluepill cloud66_web_server restart {% endhighlight %}
+
+{% highlight shell %} kill -USR2 {% endhighlight %}
