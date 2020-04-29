@@ -21,6 +21,10 @@ To run a Thin Rack server, add a line to your Procfile labeled as custom_web. He
 custom_web: bundle exec thin start --socket /tmp/web_server.sock --pid /tmp/web_server.pid -e $RACK_ENV
 {% endhighlight %}
 
+You **should not** daemonize the `custom_web` process. In other words, please do not use the `-d` or `-daemonize` flags in your initialization string. Please also make sure your config file does not enable daemonization.
+
+We do not support old-style daemonization because it is more reliable to allow the system's process manager (systemd) to handle persistent processes.
+
 ## Controlling Thin with systemd
 
 Cloud 66 uses the following signals to control Thin:

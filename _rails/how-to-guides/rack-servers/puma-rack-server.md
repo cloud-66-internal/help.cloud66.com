@@ -21,6 +21,10 @@ To run a Puma Rack server, add a line to your Procfile labeled as custom_web. He
 custom_web: bundle exec puma
 {% endhighlight %}
 
+You **should not** daemonize the `custom_web` process. In other words, please do not use the `-d` or `-daemon` flags in your initialization string. Please also make sure your config file does not enable daemonization.
+
+We do not support old-style daemonization because it is more reliable to allow the system's process manager (systemd) to handle persistent processes.
+
 ## Sample config file for Puma
 
 The following config file will work with Cloud 66. Please take careful note that it enables features like `preload_app!` and explicitly sets the number of workers. This will prevent you from using rolling restarts (see below), so will need to be changed if you intend to use that feature. 

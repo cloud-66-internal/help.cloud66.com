@@ -21,6 +21,10 @@ To run a Unicorn Rack server, add a line to your Procfile labeled as <em>custom_
 custom_web: bundle exec unicorn_rails -c config/unicorn.rb -E $RAILS_ENV
 {% endhighlight %}
 
+You **should not** daemonize the `custom_web` process. In other words, please do not use the `-D` or `-daemonize` flags in your initialization string. Please also make sure your config file does not enable daemonization.
+
+We do not support old-style daemonization because it is more reliable to allow the system's process manager (systemd) to handle persistent processes.
+
 #### Warning
 <div class="notice notice-warning">
     <p>Please ensure to follow the conventions set out in the configuration below if you are having issues, and that you are using an up-to-date version of Unicorn.</p>
