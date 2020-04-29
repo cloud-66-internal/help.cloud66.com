@@ -26,14 +26,14 @@ services:
 
 Default Rails deployments on Cloud 66 use Passenger (via Nginx) and the logs are stored in `$STACK_PATH/log`:
 
-* Rails log: `$STACK_PATH/log/<environment>.log`
+* Application (Rails) log: `$STACK_PATH/log/<environment>.log`
 * Nginx error (server) log: `$STACK_PATH/log/nginx_error.log`
 
 #### Custom Rails deployments
 
 If you are using a [custom web server](/rails/tutorials/custom-web-servers.html), such as [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html), [Thin](/rails/how-to-guides/rack-servers/thin-rack-server.html) or [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html): 
 
-* Rails log: `$STACK_PATH/log/<environment>.log`
+* Application (Rails) log: `$STACK_PATH/log/<environment>.log`
 * System log: `$STACK_PATH/log/custom_web.log`
 * Bluepill log: `/tmp/web_server_bluepill.log` (Ubuntu 14.04 only)
 
