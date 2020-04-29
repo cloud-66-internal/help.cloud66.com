@@ -20,31 +20,39 @@ services:
 
 ## Rails applications
 
-### Web (application) server logs
-
-#### Default Rails deployments
+### Default Rails deployments
 
 Default Rails deployments on Cloud 66 use Passenger (via Nginx) and the logs are stored in `$STACK_PATH/log`:
 
-* Application (Rails) log: `$STACK_PATH/log/<environment>.log`
-* Nginx error (server) log: `$STACK_PATH/log/nginx_error.log`
+- Application (Rails) log: `$STACK_PATH/log/<environment>.log`
+- Nginx error (server) log: `$STACK_PATH/log/nginx_error.log`
+- Background processes: `$STACK_PATH/log/<PROCESS_NAME>_<NUMBER_OF_PROCESS>.log`
 
-#### Custom Rails deployments
+### Custom Rails deployments
 
-If you are using a [custom web server](/rails/tutorials/custom-web-servers.html), such as [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html), [Thin](/rails/how-to-guides/rack-servers/thin-rack-server.html) or [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html): 
+If you are using a [custom web server](notion://www.notion.so/rails/tutorials/custom-web-servers.html), such as [Puma](notion://www.notion.so/rails/how-to-guides/rack-servers/puma-rack-server.html), [Thin](notion://www.notion.so/rails/how-to-guides/rack-servers/thin-rack-server.html) or [Unicorn](notion://www.notion.so/rails/how-to-guides/rack-servers/unicorn-rack-server.html) then your log file paths will depend on whether you're using a newer (Ubuntu 16.04 and above) or legacy (Ubuntu 14.04) operating system. 
 
-* Application (Rails) log: `$STACK_PATH/log/<environment>.log`
-* System log: `$STACK_PATH/log/custom_web.log`
-* Bluepill log: `/tmp/web_server_bluepill.log` (Ubuntu 14.04 only)
+#### Newer servers (using systemd)
+
+- Application (Rails) log: `$STACK_PATH/log/<environment>.log`
+- Application logs (STDOUT + STDERR):  
+    &#9702; Web: `$STACK_PATH/log/custom_web.log`  
+    &#9702; Background processes: `$STACK_PATH/log/<PROCESS_NAME>_<NUMBER_OF_PROCESS>.log`  
+- System logs  
+    &#9702; Web server: `sudo journalctl -u cloud66_web_server`  
+    &#9702; Background processes: `sudo journalctl -u cloud66_process_<PROCESS_NAME>@* -f`
+
+#### Legacy servers (using Bluepill)
+
+- Application (Rails) log: `$STACK_PATH/log/<environment>.log`
+- Application logs (STDOUT + STDERR):  
+  &#9702; Web: `$STACK_PATH/log/unicorn_bluepill.log`  
+  &#9702; Background processes: `$STACK_PATH/log/user_<PROCESS_NAME>_<NUMBER_OF_PROCESS>.log`
+- System logs:  
+  &#9702; Web server: `/tmp/web_server_bluepill.log`  
+  &#9702; Background processes: `$STACK_PATH/log/user_<PROCESS_NAME>_pill.log`
 
 {%endif%}
-
-### Background processes
-
-Logs for background processes can also be found in `$STACK_PATH/log`, and depend on the name of the process:
-
-* Process log: `$STACK_PATH/log/user_<name>.log`
-* Bluepill log: `$STACK_PATH/log/user_<name>.pill` (Ubuntu 14.04 only)
 
 ### Other
 
