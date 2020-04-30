@@ -12,9 +12,13 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-Bluepill *was* Cloud 66's default process manager until May 2020. It has been replaced by [systemd](/rails/how-to-guides/deployment/systemd.html). The only servers still using Bluepill are those running Ubuntu 14.04 and below.  
+Bluepill *was* Cloud 66's default process manager until June 2020. It has been replaced by [systemd](/rails/how-to-guides/deployment/systemd.html). Some legacy servers (deployed before June 2020) may still be using Bluepill. To check this:
 
-<div class="notice notice-warning"><p>If your servers are <strong>not</strong> running Ubuntu 14.04 then you are reading the wrong guide. Please visit the <a href="/rails/how-to-guides/deployment/systemd.html">systemd doc</a> instead.
+- Open your [Cloud 66 Dashboard](https://app.cloud66.com/), and click the application in question
+- Click ⚙*Settings & Information* in the right-hand panel
+- Find the **Process Manager** line - it will show you which one your application is using
+
+<div class="notice notice-warning"><p>If your servers are <strong>not</strong> running Bluepill then you are reading the wrong guide. Please visit the <a href="/rails/how-to-guides/deployment/systemd.html">systemd doc</a> instead.
 </p></div>
 
 ## Commands

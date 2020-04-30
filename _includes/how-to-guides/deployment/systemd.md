@@ -1,6 +1,14 @@
 ## Overview
 
-By default Cloud 66 uses [**systemd**](http://manpages.ubuntu.com/manpages/bionic/man1/systemd.1.html){:target="_blank"} to monitor and manage processes on all new servers. It is automatically installed on all servers provisioned through Cloud 66. The only exception to this is for servers still running Ubuntu 14.04 (or older). These servers use [bluepill](https://github.com/bluepill-rb/bluepill){:target="_blank"}. If you need help with bluepill please see our [separate (legacy) guide](/rails/how-to-guides/deployment/bluepill-legacy.html). 
+By default Cloud 66 uses [**systemd**](http://manpages.ubuntu.com/manpages/bionic/man1/systemd.1.html){:target="_blank"} to monitor and manage processes on all new servers. It is automatically installed on all servers provisioned through Cloud 66. 
+
+The only exception to this is for some legacy servers deployed before June 2020. These servers may use [bluepill](https://github.com/bluepill-rb/bluepill){:target="_blank"}. You can check which process manager your application is using:
+
+- Open your [Cloud 66 Dashboard](https://app.cloud66.com/), and click the application in question
+- Click ⚙*Settings & Information* in the right-hand panel
+- Find the **Process Manager** line - it will show you which one your application is using
+
+If you need help with bluepill please see our [separate (legacy) guide](/rails/how-to-guides/deployment/bluepill-legacy.html). 
 
 ## Using systemd
 
