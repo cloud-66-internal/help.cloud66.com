@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title:  "Using Thin rack server"
+title:  "Using Thin web server"
 categories: how-to-guides/rack-servers
 order: 4
-lead: Run your Rack apps with Thin
+lead: Run your Rack apps with Thin web server
 tags: ['Web server']
 legacy: false
 permalink: /:collection/:path:output_ext
@@ -15,7 +15,7 @@ permalink: /:collection/:path:output_ext
 ## Deploying with Thin
 You need to choose your web server at the time of initial build of the application. Changes to or from Passenger (the default web server) will not be applied after your application has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
 
-To run a Thin Rack server, add a line to your Procfile labeled as custom_web. Here is an example:
+To run a Thin web server, add a line to your Procfile labeled as custom_web. Here is an example:
 
 {% highlight shell %}
 custom_web: bundle exec thin start --socket /tmp/web_server.sock --pid /tmp/web_server.pid -e $RACK_ENV

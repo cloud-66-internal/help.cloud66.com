@@ -1,21 +1,21 @@
 ---
 layout: post
 template: one-col
-title:  "Using Unicorn Rack server"
+title:  "Using Unicorn web server"
 categories: how-to-guides/rack-servers
 order: 2
-lead: Run your Rack apps with Unicorn
+lead: Run your Rack apps with Unicorn web server
 tags: ['Web server']
 legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-[Unicorn](http://unicorn.bogomips.org/) is a Rack HTTP server that uses forked processes to handle multiple incoming requests concurrently.
+[Unicorn](http://unicorn.bogomips.org/) is a web server that uses forked processes to handle multiple incoming requests concurrently.
 
 ## Deploy with Unicorn
-You need to choose your Rack server at the time of initial build of the application. Changes to or from Passenger (the default web app / Rack server) will not be applied after your application has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
+You need to choose your web server at the time of initial build of the application. Changes to or from Passenger (the default web app server) will not be applied after your application has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
 
-To run a Unicorn Rack server, add a line to your Procfile labeled as <em>custom_web</em>. Here is an example:
+To run a Unicorn web server, add a line to your Procfile labeled as <em>custom_web</em>. Here is an example:
 
 {% highlight ruby %}
 custom_web: bundle exec unicorn_rails -c config/unicorn.rb -E $RAILS_ENV

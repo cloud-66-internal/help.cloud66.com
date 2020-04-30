@@ -1,21 +1,21 @@
 ---
 layout: post
 template: one-col
-title:  "Using Puma rack server"
+title:  "Using Puma web server"
 categories: how-to-guides/rack-servers
 order: 1
-lead: Run your Rack apps with Puma
+lead: Run your Rack apps with Puma web server
 tags: ['Web server']
 legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-[Puma](http://puma.io/) is a light-weight Rack server built for speed and parallelism. 
+[Puma](http://puma.io/) is a light-weight web server built for speed and parallelism. 
 
 ## Deploying with Puma
 You need to choose your web server at the time of initial build of the application. Changes to or from Passenger (the default app server) will not be applied after your application has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.
 
-To run a Puma Rack server, add a line to your Procfile labeled as custom_web. Here is an example that relies on our sample config file below:
+To run a Puma web server, add a line to your Procfile labeled as custom_web. Here is an example that relies on our sample config file below:
 
 {% highlight shell %}
 custom_web: bundle exec puma
