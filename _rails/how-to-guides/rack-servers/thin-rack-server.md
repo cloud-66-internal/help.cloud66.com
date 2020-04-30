@@ -72,7 +72,7 @@ sudo systemctl restart cloud66_web_server.service
 
 <section id="bluepill" class="Tabs-content js_tab_content is-hidden">
 
-Cloud 66 uses the following signals to control Puma via <a href="/rails/how-to-guides/deployment/bluepill.html">Bluepill</a>:
+Cloud 66 uses the following signals to control Puma via <a href="/rails/how-to-guides/deployment/bluepill-legacy.html">Bluepill</a>:
 
 <h3>Stop the web server</h3>
 <pre class="prettyprint"> sudo bluepill cloud66_web_server stop </pre>
