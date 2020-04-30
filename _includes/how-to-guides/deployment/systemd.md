@@ -108,3 +108,21 @@ $ sudo systemctl disable <application>.service
 {% endhighlight %}
 
 An example of this in practice would be `systemctl disable nginx.service`
+
+## Migrating from Bluepill to systemd
+
+If your servers are currently using Bluepill and you would like to transition to using systemd then please follow this checklist:
+
+Before migrating from Bluepill to systemd you need to:
+
+1. Ensure none of your process **initialization strings** - including processes for custom web servers - use daemonization flags like `-d` or `-daemonize`.  Using these flag with systemd will cause the process to terminate prematurely. 
+2. Check and update any of your **config files** that enable daemonization. This is particularly relevant for users using custom web servers:
+    - [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html)
+    - [Thin](/rails/how-to-guides/rack-servers/thin-rack-server.html)
+    - [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html)
+3. Set your application(s) to migrate (NOTE that this will require admin perms on the stack)
+    - Using the web Dashboard: Click *⚙Settings & Information* in the right-hand panel, then click *Switch to Systemd* (in the Process Manager line)
+    - Using the Toolbelt command: `cx settings set -s APPLICATION_NAME migrate.bluepill.to.systemd true`
+4. **Redeploy** your application
+
+As always, we recommend testing your changes in a non-production environment before updating your live application.

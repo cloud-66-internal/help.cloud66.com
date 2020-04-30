@@ -21,6 +21,8 @@ Bluepill *was* Cloud 66's default process manager until June 2020. It has been r
 <div class="notice notice-warning"><p>If your servers are <strong>not</strong> running Bluepill then you are reading the wrong guide. Please visit the <a href="/rails/how-to-guides/deployment/systemd.html">systemd doc</a> instead.
 </p></div>
 
+If you'd like to migrate from Bluepill to systemd, please follow [the migration checklist](/rails/how-to-guides/deployment/systemd.html#migrating-from-bluepill-to-systemd).
+
 ## Commands
 
 If [bluepill](https://github.com/bluepill-rb/bluepill) is installed on your server, you can control your processes manually from your server command-line interface.

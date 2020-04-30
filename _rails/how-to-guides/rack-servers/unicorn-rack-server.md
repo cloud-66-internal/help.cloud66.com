@@ -80,6 +80,8 @@ You can manage your web server directly from your terminal. The commands you nee
 - Click ⚙*Settings & Information* in the right-hand panel
 - Find the **Process Manager** line - it will show you which one your application is using
 
+(If you'd like to migrate from Bluepill to systemd, please follow [the migration checklist](/rails/how-to-guides/deployment/systemd.html#migrating-from-bluepill-to-systemd).)
+
 <div class="Tabs Tabs--enclosed">
 <nav>
 <ul class="TabMini js_tabs">
