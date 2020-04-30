@@ -72,43 +72,68 @@ after_fork do |server, worker|
 end
 {% endhighlight %}
 
-## Controlling Unicorn with systemd
+## Controlling Unicorn via your terminal
 
-Cloud 66 uses the following signals to control Unicorn:
+You can manage your web server directly from your terminal. The commands you need to use will depend on whether your servers use systemd or Bluepill to manage processes. To check which process manager your application uses:
 
-### Stop the web server
-{% highlight shell %}
+- Open your [Cloud 66 Dashboard](https://app.cloud66.com/), and click the application in question
+- Click ⚙*Settings & Information* in the right-hand panel
+- Find the **Process Manager** line - it will show you which one your application is using
+
+<div class="Tabs Tabs--enclosed">
+<nav>
+<ul class="TabMini js_tabs">
+<li class="TabMini-item active">
+<a href="#systemd" class="TabMini-link">
+systemd
+</a>
+</li>
+<li class="TabMini-item">
+<a href="#bluepill" class="TabMini-link">
+Bluepill (legacy)
+</a>
+</li>
+</ul>
+</nav>
+
+<section id="systemd" class="Tabs-content js_tab_content">
+
+Cloud 66 uses the following signals to control Puma via <a href="/rails/how-to-guides/deployment/systemd.html">systemd</a>:
+
+<h3>Stop the web server</h3>
+<pre class="prettyprint">
 sudo systemctl stop cloud66_web_server.service
-{% endhighlight %}
+</pre>
 
-### Start the web server
-{% highlight shell %}
+<h3>Start the web server</h3>
+<pre class="prettyprint">
 sudo systemctl start cloud66_web_server.service
-{% endhighlight %}
+</pre>
 
-### Restart the web server (zero downtime)
-{% highlight shell %}
+<h3>Restart the web server</h3>
+<pre class="prettyprint">
 sudo systemctl restart cloud66_web_server.service
-{% endhighlight %}
+</pre>
 
-If you need more control over your restarts, you can define a custom restart sequence in the [procfile_metadata](/rails/how-to-guides/deployment/building-a-manifest-file.html#processes) section of your [Manifest file](/rails/quickstarts/getting-started-with-manifest.html). 
+</section>
 
-## Controlling Unicorn with Bluepill
+<section id="bluepill" class="Tabs-content js_tab_content is-hidden">
 
-#### Warning
-<div class="notice notice-warning"><p>
-As of May 2020 Bluepill is officially deprecated for all servers managed by Cloud 66 <em>except</em> those running Ubuntu 14.04 and earlier. Please use systemd commands (above).
-</p></div>
+Cloud 66 uses the following signals to control Puma via <a href="/rails/how-to-guides/deployment/bluepill.html">Bluepill</a>:
 
-### Stop the web server
-{% highlight shell %} sudo bluepill cloud66_web_server stop {% endhighlight %}
+<h3>Stop the web server</h3>
+<pre class="prettyprint"> sudo bluepill cloud66_web_server stop </pre>
 
-### Start the web server
-{% highlight shell %} sudo bluepill cloud66_web_server quit {% endhighlight %}
 
-{% highlight shell %} sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill {% endhighlight %}
+<h3>Start the web server</h3>
+<pre class="prettyprint"> sudo bluepill cloud66_web_server quit </pre>
 
-### Restart the web server (hot-restart)
-{% highlight shell %} sudo bluepill cloud66_web_server restart {% endhighlight %}
+<pre class="prettyprint"> sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill </pre>
 
-{% highlight shell %} kill -USR2 {% endhighlight %}
+<h3>Restart the web server (hot-restart)</h3>
+<pre class="prettyprint"> sudo bluepill cloud66_web_server restart </pre>
+
+<pre class="prettyprint"> kill -USR2 </pre>
+
+</section>
+</div>

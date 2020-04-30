@@ -79,8 +79,7 @@ An important caveat here: this will not apply when you make changes to environme
 
 ## Controlling Puma via your terminal
 
-
-You can manage your web server directly from your terminal. The commands you need to use will depend on whether your servers use systemd or Bluepill to manage processes. To check which manager your application uses:
+You can manage your web server directly from your terminal. The commands you need to use will depend on whether your servers use systemd or Bluepill to manage processes. To check which process manager your application uses:
 
 - Open your [Cloud 66 Dashboard](https://app.cloud66.com/), and click the application in question
 - Click ⚙*Settings & Information* in the right-hand panel
@@ -96,7 +95,7 @@ systemd
 </li>
 <li class="TabMini-item">
 <a href="#bluepill" class="TabMini-link">
-Bluepill
+Bluepill (legacy)
 </a>
 </li>
 </ul>
@@ -124,6 +123,8 @@ sudo systemctl restart cloud66_web_server.service
 </section>
 
 <section id="bluepill" class="Tabs-content js_tab_content is-hidden">
+
+Cloud 66 uses the following signals to control Puma via <a href="/rails/how-to-guides/deployment/bluepill.html">Bluepill</a>:
 
 <h3>Stop the web server</h3>
 <pre class="prettyprint"> sudo bluepill cloud66_web_server stop </pre>
