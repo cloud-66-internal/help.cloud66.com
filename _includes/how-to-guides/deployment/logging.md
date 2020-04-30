@@ -30,9 +30,13 @@ Default Rails deployments on Cloud 66 use Passenger (via Nginx) and the logs are
 
 ### Custom Rails deployments
 
-If you are using a [custom web server](notion://www.notion.so/rails/tutorials/custom-web-servers.html), such as [Puma](notion://www.notion.so/rails/how-to-guides/rack-servers/puma-rack-server.html), [Thin](notion://www.notion.so/rails/how-to-guides/rack-servers/thin-rack-server.html) or [Unicorn](notion://www.notion.so/rails/how-to-guides/rack-servers/unicorn-rack-server.html) then your log file paths will depend on whether you're using a newer (Ubuntu 16.04 and above) or legacy (Ubuntu 14.04) operating system. 
+If you are using a [custom web server](notion://www.notion.so/rails/tutorials/custom-web-servers.html), such as [Puma](notion://www.notion.so/rails/how-to-guides/rack-servers/puma-rack-server.html), [Thin](notion://www.notion.so/rails/how-to-guides/rack-servers/thin-rack-server.html) or [Unicorn](notion://www.notion.so/rails/how-to-guides/rack-servers/unicorn-rack-server.html) then your log file paths will depend on whether your servers use [systemd](/rails/how-to-guides/deployment/systemd.html) or [Bluepill](/rails/how-to-guides/deployment/bluepill-legacy.html) to manage processes. To check this:
 
-#### Newer servers (using systemd)
+- Open your [Cloud 66 Dashboard](https://app.cloud66.com/), and click the application in question
+- Click ⚙*Settings & Information* in the right-hand panel
+- Find the **Process Manager** line - it will show you which one your application is using
+
+#### Servers using systemd
 
 - Application (Rails) log: `$STACK_PATH/log/<environment>.log`
 - Application logs (STDOUT + STDERR):  
@@ -42,7 +46,7 @@ If you are using a [custom web server](notion://www.notion.so/rails/tutorials/cu
     &#9702; Web server: `sudo journalctl -u cloud66_web_server`  
     &#9702; Background processes: `sudo journalctl -u cloud66_process_<PROCESS_NAME>@* -f`
 
-#### Legacy servers (using Bluepill)
+#### Servers using Bluepill (legacy)
 
 - Application (Rails) log: `$STACK_PATH/log/<environment>.log`
 - Application logs (STDOUT + STDERR):  

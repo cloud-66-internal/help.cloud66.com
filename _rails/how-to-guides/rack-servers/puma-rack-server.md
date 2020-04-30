@@ -77,41 +77,72 @@ Please be sure you understand the tradeoffs of using `USR1` - [read this for mor
 An important caveat here: this will not apply when you make changes to environment variables. That requires a full (hard) restart.
 </p></div>
 
-## Controlling Puma with systemd
+## Controlling Puma via your terminal
 
-Cloud 66 uses the following signals to control Puma via [systemd](/rails/how-to-guides/deployment/systemd.html):
 
-### Stop the web server
-{% highlight shell %}
+You can manage your web server directly from your terminal. The commands you need to use will depend on whether your servers use systemd or Bluepill to manage processes. To check which manager your application uses:
+
+- Open your [Cloud 66 Dashboard](https://app.cloud66.com/), and click the application in question
+- Click ⚙*Settings & Information* in the right-hand panel
+- Find the **Process Manager** line - it will show you which one your application is using
+
+<div class="Tabs Tabs--enclosed">
+<nav>
+<ul class="TabMini js_tabs">
+<li class="TabMini-item active">
+<a href="#systemd" class="TabMini-link">
+systemd
+</a>
+</li>
+<li class="TabMini-item">
+<a href="#bluepill" class="TabMini-link">
+Bluepill
+</a>
+</li>
+</ul>
+</nav>
+
+<section id="systemd" class="Tabs-content js_tab_content">
+
+Cloud 66 uses the following signals to control Puma via <a href="/rails/how-to-guides/deployment/systemd.html">systemd</a>:
+
+<h3>Stop the web server</h3>
+<pre class="prettyprint">
 sudo systemctl stop cloud66_web_server.service
-{% endhighlight %}
+</pre>
 
-### Start the web server
-{% highlight shell %}
+<h3>Start the web server</h3>
+<pre class="prettyprint">
 sudo systemctl start cloud66_web_server.service
-{% endhighlight %}
+</pre>
 
-### Restart the web server
-{% highlight shell %}
+<h3>Restart the web server</h3>
+<pre class="prettyprint">
 sudo systemctl restart cloud66_web_server.service
-{% endhighlight %}
+</pre>
 
-## Controlling Puma with Bluepill
+</section>
 
-#### Warning
-<div class="notice notice-warning"><p>
-As of May 2020 Bluepill is officially deprecated for all servers managed by Cloud 66 <em>except</em> those running Ubuntu 14.04 and earlier. Please use systemd commands (above).
-</p></div>
+<section id="bluepill" class="Tabs-content js_tab_content is-hidden">
 
-### Stop the web server
-{% highlight shell %} sudo bluepill cloud66_web_server stop {% endhighlight %}
+<h3>Stop the web server</h3>
+<pre class="prettyprint"> sudo bluepill cloud66_web_server stop </pre>
 
-### Start the web server
-{% highlight shell %} sudo bluepill cloud66_web_server quit {% endhighlight %}
 
-{% highlight shell %} sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill {% endhighlight %}
+<h3>Start the web server</h3>
+<pre class="prettyprint"> sudo bluepill cloud66_web_server quit </pre>
 
-### Restart the web server (hot-restart)
-{% highlight shell %} sudo bluepill cloud66_web_server restart {% endhighlight %}
+<pre class="prettyprint"> sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill </pre>
 
-{% highlight shell %} kill -USR2 {% endhighlight %}
+<h3>Restart the web server (hot-restart)</h3>
+<pre class="prettyprint"> sudo bluepill cloud66_web_server restart </pre>
+
+<pre class="prettyprint"> kill -USR2 </pre>
+
+</section>
+</div>
+
+
+
+
+
