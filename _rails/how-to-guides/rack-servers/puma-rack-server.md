@@ -53,13 +53,22 @@ If you'd prefer to use Puma without having a config file, you can simply use thi
 custom_web: bundle exec puma -e $RACK_ENV -b unix:///tmp/web_server.sock --pidfile /tmp/web_server.pid
 {% endhighlight %}
 
-## Achieving zero downtime reloads with Puma
+## Customizing shutdown and reload signals
+
+The default shutdown sequence for Puma servers on Cloud 66 is:
+```
+:term,90,:kill
+```
+
+If you need your web server to shut down in a particular sequence, or with longer or shorter delays, you can define a custom restart sequence in the [procfile_metadata](/rails/how-to-guides/deployment/building-a-manifest-file.html#processes) section of your [Manifest file](/rails/quickstarts/getting-started-with-manifest.html).
+
+## Achieving zero downtime reloads
 
 If you'd like your application servers to be able to reload without any downtime then you need to make some changes to the configuration of your restart sequence.
 
-Our default restart sequence for Puma servers uses the `USR2` [signal](https://github.com/puma/puma/blob/master/docs/signals.md#puma-signals), which restart workers and reloads the Puma configuration file, if there is one.. To achieve a rolling restart (i.e. zero downtime) you need to set your Puma servers to use the `USR1` signal instead. 
+Our default restart sequence for Puma servers uses the `USR2` [signal](https://github.com/puma/puma/blob/master/docs/signals.md#puma-signals), which restart workers and reloads the Puma configuration file, if there is one. To achieve a rolling restart (i.e. zero downtime) you need to set your Puma servers to use the `USR1` signal instead. See above for instructions on customizing your signals. 
 
-You can define a custom restart sequence in the [procfile_metadata](/rails/how-to-guides/deployment/building-a-manifest-file.html#processes) section of your [Manifest file](/rails/quickstarts/getting-started-with-manifest.html). The result would look something like this:
+The result would look something like this:
 
 {% highlight yaml %}
 production:

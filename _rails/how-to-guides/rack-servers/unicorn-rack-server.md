@@ -30,7 +30,9 @@ We do not support old-style daemonization because it is more reliable to allow t
     <p>Please ensure to follow the conventions set out in the configuration below if you are having issues, and that you are using an up-to-date version of Unicorn.</p>
 </div>
 
-Here is a **unicorn.rb** configuration file that is compatible with Cloud 66 requirements (following the Procfile line above, this should be located under the `config` folder of your Rails app):
+## Sample config file for Unicorn
+
+This `unicorn.rb` configuration file is compatible with Cloud 66 requirements (following the Procfile initialization string above, this should be located under the `config` folder of your Rails app):
 
 {% highlight ruby %}
 worker_processes 2
@@ -71,6 +73,15 @@ after_fork do |server, worker|
 		ActiveRecord::Base.establish_connection
 end
 {% endhighlight %}
+
+## Customizing shutdown and reload signals
+
+The default shutdown sequence for Unicorn servers on Cloud 66 is:
+```
+:quit,75,:term,15,:kill
+```
+
+If you need your web server to shut down in a particular sequence, or with longer or shorter delays, you can define a custom restart sequence in the [procfile_metadata](/rails/how-to-guides/deployment/building-a-manifest-file.html#processes) section of your [Manifest file](/rails/quickstarts/getting-started-with-manifest.html).
 
 ## Controlling Unicorn via your terminal
 

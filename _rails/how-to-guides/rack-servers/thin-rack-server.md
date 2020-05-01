@@ -25,6 +25,16 @@ You **should not** daemonize the `custom_web` process. In other words, please do
 
 We do not support old-style daemonization because it is more reliable to allow the system's process manager (systemd) to handle persistent processes.
 
+## Customizing shutdown and reload signals
+
+The default shutdown sequence for Thin servers on Cloud 66 is:
+```
+:quit,75,:int,15,:kill
+```
+
+If you need your web server to shut down in a particular sequence, or with longer or shorter delays, you can define a custom restart sequence in the [procfile_metadata](/rails/how-to-guides/deployment/building-a-manifest-file.html#processes) section of your [Manifest file](/rails/quickstarts/getting-started-with-manifest.html).
+
+
 ## Controlling Thin via your terminal
 
 You can manage your web server directly from your terminal. The commands you need to use will depend on whether your servers use systemd or Bluepill to manage processes. To check which process manager your application uses:
