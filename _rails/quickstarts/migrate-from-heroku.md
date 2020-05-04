@@ -97,11 +97,11 @@ Once you're ready to serve traffic from your Cloud 66 application, you need to d
 
 ### Web server and Procfile
 
-By default, Cloud 66 will deploy your application with Phusion Passenger, but you can also choose a [custom Rack server](/{{page.collection}}/how-to-guides/deployment/shells/nginx-modules.html#passenger) like Unicorn. You may have a `web` entry in your Procfile to do this on Heroku. Cloud 66 ignores this entry to avoid compatibility issues.
+By default, Cloud 66 will deploy your application with Phusion Passenger, but you can also choose a [custom Rack server](/{{page.collection}}/how-to-guides/deployment/shells/nginx-modules.html#passenger) like [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html), [Thin](/rails/how-to-guides/rack-servers/thin-rack-server.html) or [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html). You may have a `web` entry in your Procfile to do this on Heroku. Cloud 66 ignores this entry to avoid compatibility issues.
 
 To run a custom web server, we require a `custom_web` entry. It is important to set this before analyzing your application, to avoid building the application with Passenger.
 
-You can also use the [Procfile](/rails/how-to-guides/deployment/bluepill.html) to define other background jobs.
+You can also use the [Procfile](/rails/how-to-guides/deployment/systemd.html) to define other background jobs.
 
 
 ### Dyno recycling

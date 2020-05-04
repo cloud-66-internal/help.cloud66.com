@@ -18,9 +18,9 @@ There are three alerts that can be enabled at application level that will notify
 
 **Started** alerts fire whenever your web application goes from any other state to "Started". 
 
-**Stopped** alerts indicate that your web application has entered a "stopped" state. This usually means that it has failed for some reason. From this state, Bluepill will automatically try to restart the application. 
+**Stopped** alerts indicate that your web application has entered a "stopped" state. This usually means that it has failed for some reason. From this state, the [process manager](/rails/how-to-guides/deployment/systemd.html) will automatically try to restart the application. 
 
-**Unmonitored** alerts indicate that Bluepill is no longer controlling your web process. This typically happens when Bluepill needs to reload your application (for example when an environment variable changes) or when your application itself dissappears completely (in the case of Out Of Memory killer for example).
+**Unmonitored** alerts indicate that the [process manager](/rails/how-to-guides/deployment/systemd.html) is no longer controlling your web process. This typically happens when the process manager needs to reload your application (for example when an environment variable changes) or when your application itself dissappears completely (in the case of Out Of Memory killer for example).
 
 ## Alert limits
 

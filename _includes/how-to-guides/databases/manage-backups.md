@@ -363,7 +363,7 @@ $ gzip -d /path/to/unarchived/folder/data_file_from_previous_step
 **Step 4:** Use following command to stop Redis service :
 
 {% highlight bash %}
-$ sudo bluepill cloud66_redis stop || sudo service redis stop
+$ sudo systemctl redis.service stop || sudo service redis stop
 {% endhighlight %}
 
 **Step 5:** Use following command to delete Redis data file
@@ -393,7 +393,7 @@ $ sudo chown -R redis:redis /data/redis
 **Step 8:** Run following command to start Redis service
 
 {% highlight bash %}
-$ sudo bluepill cloud66_redis start || sudo service redis start
+$ sudo systemctl redis.service start || sudo service redis start
 {% endhighlight %}
 
 ## Restoring a MongoDB backup

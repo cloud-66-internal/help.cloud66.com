@@ -1173,6 +1173,10 @@
 [[redirects]]
   from = "/node/how-to-guides/deployment/shells/websocket-support.html"
   to = "/node/how-to-guides/deployment/websocket-support.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/deployment/bluepill.html"
+  to = "/rails/how-to-guides/deployment/systemd.html"
   
 [[redirects]]
   from = "/whenever"

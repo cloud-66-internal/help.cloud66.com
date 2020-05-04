@@ -13,7 +13,7 @@ permalink: /:collection/:path:output_ext
 
 ## Introduction
 
-[Faye](http://faye.jcoglan.com/) is a publish-subscribe messaging system that provides messaging services. At Cloud 66, we recommend running Faye as a [background process](/rails/how-to-guides/deployment/bluepill.html) on your application behind a [Thin rack server](http://code.macournoyer.com/thin/).
+[Faye](http://faye.jcoglan.com/) is a publish-subscribe messaging system that provides messaging services. At Cloud 66, we recommend running Faye as a [background process](/rails/how-to-guides/deployment/systemd.html) on your application behind a [Thin rack server](http://code.macournoyer.com/thin/).
 
 
 ## Implementation
@@ -51,7 +51,7 @@ sudo gem install faye --no-ri --no-rdoc
 
 
 ### 3. RAILS_ROOT/Procfile
-Here we are creating a [background process](/rails/how-to-guides/deployment/bluepill.html) for Faye so that we can control and monitor it from the Cloud 66 dashboard.
+Here we are creating a [background process](/rails/how-to-guides/deployment/systemd.html) for Faye so that we can control and monitor it from the Cloud 66 dashboard.
 
 ```
 $ faye: thin -R $STACK_PATH/faye/config.ru start
