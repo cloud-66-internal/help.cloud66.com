@@ -42,7 +42,7 @@ You can reference your application environment variables with a `$` before the n
 To assign a unique identifier to your process (for example with Sidekiq), use the <kbd>&#123;&#123;UNIQUE_INT&#125;&#125;</kbd> notation. For example, your process could look as follows:
 
 <pre class="terminal">
-worker: bundle exec sidekiq -e production -i &#123;&#123;UNIQUE_INT&#125;&#125;
+worker: bundle exec sidekiq -e production
 </pre>	
 
 This integer should be unique across processes, so that multiple processes won't clash, but may not be unique across servers.
