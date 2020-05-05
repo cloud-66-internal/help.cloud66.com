@@ -88,4 +88,4 @@ You can use Zapier to automatically trigger your applications to scale up or dow
 If you're planning to use this feature for an application please be sure of the following:
 
 - Ensure the application has a load balancer in place. Without a load balancer the additional app servers cannot share the traffic! (This applies even if your minimum number of app servers is one).
-- If your application has servers that should not be scaled down (because they are running a custom component or workload), be sure to tag them with delete protection
+- If your application has servers that should not be scaled down (because they are running a custom component or workload), be sure to tag them with [delete protection](/{{page.collection}}/how-to-guides/scaling/scaling.html#delete-protection).
