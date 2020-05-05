@@ -10,7 +10,7 @@ tags: ['Web server, Rack server']
 permalink: /:collection/:path:output_ext
 ---
 
-By default, applications deployed by Cloud 66 run on <a href="https://www.phusionpassenger.com/" target="_blank">Phusion Passenger</a> behind <a href="http://wiki.nginx.org/Main" target="_blank">Nginx</a>. You can also choose to use one of several servers:
+By default, applications deployed by Cloud 66 run on [Phusion Passenger](https://www.phusionpassenger.com/) behind [Nginx](http://wiki.nginx.org/Main). You can also choose to use one of several servers:
 
 - [Passenger Enterprise](/rails/how-to-guides/rack-servers/passenger-enterprise.html)
 - [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html)
@@ -34,38 +34,10 @@ For the traffic to be redirected to your web app server, it should use a Unix so
 ### PID file
 For the web app server to be managed and restarted properly by Cloud 66, it needs to have it's PID file at `/tmp/web_server.pid`
 
-## Manual control of the web servers
-To control your web app servers manually you can use the following commands:
-
-### Stop the web app server
-<p>
-<kbd>
-	sudo bluepill cloud66&#95;web&#95;server stop
-</kbd>
-</p>
-
-### Start the web app server
-<p>
-<kbd>
-	sudo bluepill cloud66&#95;web&#95;server quit
-</kbd><br/>
-<kbd>
-	sudo bluepill load /etc/bluepill/autoload/cloud66&#95;web&#95;server.pill
-</kbd>
-</p>
-
-### Restart the web app server
-If supported by your web app server, you can use the following command to restart the web app server with no down time (this will send a USR2 signal to the server)
-<p>
-<kbd>
-	sudo bluepill cloud66&#95;web&#95;server restart
-</kbd>
-</p>
-
-
 ## What’s next?
 
 * Learn how to [add a load balancer](/rails/tutorials/load-balancing.html) to your application
 * Learn how to [set up your DNS records](/rails/tutorials/configure-dns.html) to work with Cloud 66
 * Learn how to [configure network access](/rails/tutorials/service-network-configuration.html) to your application
 * Learn how to configure other web app servers like [Puma, Thin and Unicorn](/rails/how-to-guides/rack-servers/)
+* Learn how to [manage processes on your web server](/rails/how-to-guides/deployment/systemd.html) directly via your terminal

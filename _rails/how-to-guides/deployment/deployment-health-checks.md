@@ -25,7 +25,7 @@ If your app uses a custom web server such as Puma, Unicorn or Thin (i.e. anythin
 
 We use two metrics to ensure your application is healthy: 
 
-- We check if Bluepill is reporting that your application is healthy
+- We check if [systemd]() is reporting that your application is healthy
 - We check that your application process IDs change in some way on redeployment.
 
 If either of these two checks fail, we mark the deployment as failed.
