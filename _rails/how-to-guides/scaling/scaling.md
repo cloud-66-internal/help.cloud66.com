@@ -12,4 +12,4 @@ permalink: /:collection/:path:output_ext
 
 {% assign product = 'rails' %}
 
-{% include tutorials/scaling.md product = product %}
+{% include /how-to-guides/scaling/scaling.md product = product %}
