@@ -28,12 +28,12 @@ Cloud 66 currently reserves the following tags:
 <tr>
 	<td>c66.build-commands.run</td>
 	<td>server (Rack only - does not apply to Rails)</td>
-	<td>Nominates a server to handle the workload of the declared custom build command (as specified in your manifest or during the initial build process). Only applies during the initial build of the application.</td>
+	<td>Nominates a server to handle the workload of the declared custom build command (as specified in your <a href="/rails/quickstarts/getting-started-with-manifest.html">manifest</a> or during the initial build process). Only applies during the initial build of the application.</td>
 </tr>
 <tr>
 	<td>c66.deploy-commands.run</td>
 	<td>server (Rack only - does not apply to Rails)</td>
-	<td>Nominates a server to handle the workload of the declared custom deploy command (as specified in your manifest or during the initial build process). Applies during subsequent deployments of the application.</td>
+	<td>Nominates a server to handle the workload of the declared custom deploy command (as specified in your <a href="/rails/quickstarts/getting-started-with-manifest.html">manifest</a> or during the initial build process). Applies during subsequent deployments of the application.</td>
 </tr>
 </table>
 
