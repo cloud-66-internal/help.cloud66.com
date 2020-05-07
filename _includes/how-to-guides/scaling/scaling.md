@@ -60,3 +60,29 @@ Note that if you have a load balancer and are using AWS as your cloud vendor, th
 Scaling vertically on AWS with the instructions above will therefore only work with back-end servers but not app servers, as these are served via the load balancer. For application servers, we recommend that you scale up a new server (with your desired size) and delete the old one.
 
 {% endif %}
+
+## Delete Protection
+
+Delete Protection stops servers from being accidentally deleted from an account - for example when you scale down your application. This helps you to prevent your applications from accidentally going down and gives more control over your server mix, including avoiding deletion of servers when scaling down via the API.
+
+To enable Delete Protection feature on any server, simply [add a `c66.delete.protection` tag](/{{page.collection}}/references/reserved-tags.html) to that server. When Delete Protection is enabled on a server, it will be not deleted if a server group is scaled down via the API. Any specific requests to delete the server (via web or API) will also be rejected until the tag is removed.
+
+### Adding and removing Delete Protection
+
+To **add** Delete Protection to a server:
+
+1. Log into your Cloud 66 dashboard and click on your application
+2. Click on the Servers tab in the main panel
+3. Click on the name of the server you'd like to protect
+4. Click on the tag icon (🏷) at the top right of the Server info panel and then click on Add Tags
+5. Type in `c66.delete.protection` (it will prompt you to autocomplete if you prefer) and then click Save.
+6. You should now be able to see the tag in red just below your server's name.
+
+To **remove** Delete Protection:
+
+1. Open the server page as above and click the three dots to the right of the tag
+2. Click the `x` next to the tag.
+3. You will be warned about deleting the tag - accept the warning
+4. Click Save
+
+Your server can now be deleted as normal.

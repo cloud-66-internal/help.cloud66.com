@@ -11,4 +11,4 @@ permalink: /:collection/:path:output_ext
 
 {% assign product = 'node' %}
 
-{% include tutorials/scaling.md product = product %}
+{% include /how-to-guides/scaling/scaling.md product = product %}
