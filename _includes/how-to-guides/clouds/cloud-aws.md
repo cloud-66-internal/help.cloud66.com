@@ -1,5 +1,11 @@
 You can use Cloud 66 to provision and deploy your code to servers in any Amazon Web Services (AWS) region. Cloud 66 supports both VPC and (for AWS accounts created before 2014) EC2-Classic. We also support reserved instances. To use a VPC, your account must conform with the [default VPC guidelines](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/default-vpc.html#launching-into).
 
+{% if include.product == 'rails' %}
+## Bring Your Own Images (BYOI)
+
+We support BYOI with this cloud provider, which allows you to spin up new servers for your applications that are based on your custom server images. Read our [BYOI guide](/{{page.collection}}/clouds/bring-your-own-images.html#cloud-providers-with-byoi-support) for more details.
+{% endif %}
+
 ## Granting Cloud 66 access to AWS
 
 You need to configure AWS so that Cloud 66 to access your account. To to this:

@@ -3,6 +3,12 @@ You can use Cloud 66 to provision and deploy your code to servers (droplets) in 
 
 Private networking is enabled for all data centers that support it. This means that servers can communicate freely between each other on the same network without counting towards bandwidth costs.
 
+{% if include.product == 'rails' %}
+## Bring Your Own Images (BYOI)
+
+We support BYOI with this cloud provider, which allows you to spin up new servers for your applications that are based on your custom server images. Read our [BYOI guide](/{{page.collection}}/clouds/bring-your-own-images.html#cloud-providers-with-byoi-support) for more details.
+{% endif %}
+
 ### Authorise Cloud 66 with DigitalOcean
 
 Cloud 66 supports DigitalOcean API v2, which uses OAuth to authenticate requests. To authorize Cloud 66 to access your DigitalOcean account, Visit the Cloud 66 Dashboard and click the green *New Application* button. After connecting to your Git repository and analyzing your code, you will be asked to *Add your cloud platform*. From this menu, select *DigitalOcean*.

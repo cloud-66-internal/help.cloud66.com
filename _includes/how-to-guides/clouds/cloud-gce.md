@@ -1,5 +1,11 @@
 You can use Cloud 66 to provision and deploy your code to servers in any Google Compute Engine (GCE) region.
 
+{% if include.product == 'rails' %}
+## Bring Your Own Images (BYOI)
+
+We support BYOI with this cloud provider, which allows you to spin up new servers for your applications that are based on your custom server images. Read our [BYOI guide](/{{page.collection}}/clouds/bring-your-own-images.html#cloud-providers-with-byoi-support) for more details.
+{% endif %}
+
 ## Generate GCE API keys
 
 You need to provide your GCE API keys in order for Cloud 66 to access your account. 
