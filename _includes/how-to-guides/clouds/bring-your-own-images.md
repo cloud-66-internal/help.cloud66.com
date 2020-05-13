@@ -8,7 +8,7 @@ Bring Your Own Images (BYOI) allows you to spin up new servers for your applicat
 
 ## How BYOI works
 
-Some cloud providers (see [our supported list](l#cloud-providers-with-byoi-support) below), allow you to "snapshot" an image of a server running in your cloud account, and then use that image as a template to spin up new versions of the same server. 
+Some cloud providers (see [our supported list](#cloud-providers-with-byoi-support) below), allow you to "snapshot" an image of a server running in your cloud account, and then use that image as a template to spin up new versions of the same server. 
 
 You can set a Cloud 66 application to use one or more of these images whenever it creates new servers (for example when scaling up). Whenever you create a new server based on a custom image we will:
 
