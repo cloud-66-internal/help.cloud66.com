@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: DigitalOcean
 categories: how-to-guides/clouds
-order: 2
+order: 4
 lead: "Configuring DigitalOcean for use with Cloud 66 for Rails"
 legacy: false
 tags: ["operations"]
