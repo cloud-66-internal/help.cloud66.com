@@ -16,6 +16,7 @@ There are two ways to connect to your databases running in Maestro:
 * Accessing the server directly via SSH and then logging in using terminal commands
 * Using a desktop database client
 
+(If you need help connecting your application code to your database via a connection string, consult our [database management guide](/maestro/how-to-guides/databases/database-management.html#connecting-your-app-to-your-db-in-maestro).
 
 ## Via SSH
 
