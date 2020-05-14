@@ -45,4 +45,3 @@ We currently support BYOI for the following cloud providers:
 - Amazon Web Services via [Amazon Machine Images](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) (AMI)
 - Google Compute Engine ([Custom Images](https://cloud.google.com/compute/docs/images#custom_images))
 - Digital Ocean ([Images](https://www.digitalocean.com/docs/images/))
-- TBD -  Microsoft Azure ([Capure VM to image](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/capture-image-resource))
