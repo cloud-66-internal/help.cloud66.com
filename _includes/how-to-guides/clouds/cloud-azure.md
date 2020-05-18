@@ -13,10 +13,12 @@ Cloud 66 needs some credentials to authenticate our agent to provision your infr
 You can find those by following the [step by step guide created by Microsoft](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal).
 
 Make sure you give your Active Directory App the right access. Check if your Active Directory Application is added to your Azure subscription and has the role Contributor.
+ 
+## Microsoft Azure Legacy
 
-<hr> 
+The following instructions apply to the now-deprecated legacy cloud adapter for Microsoft Azure.
+This is here for historic purposes only. 
 
-## Azure Legacy
 ### Generating a management certificate
 
 The Azure management certificate is a certificate used to authenticate an agent, such as Cloud 66, to your Azure account. These certificates are uploaded to Azure Legacy Cloud and stored at the subscription level.
