@@ -14,7 +14,10 @@ You can find those by following the [step by step guide created by Microsoft](ht
 
 Make sure you give your Active Directory App the right access. Check if your Active Directory Application is added to your Azure subscription and has the role Contributor.
 
-### Generating a management certificate for Azure Legacy Cloud
+<hr> 
+
+## Azure Legacy
+### Generating a management certificate
 
 The Azure management certificate is a certificate used to authenticate an agent, such as Cloud 66, to your Azure account. These certificates are uploaded to Azure Legacy Cloud and stored at the subscription level.
 
