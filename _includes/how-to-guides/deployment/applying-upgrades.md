@@ -52,14 +52,23 @@ A quick summary:
 * Ruby version should be defined in your `manifest.yml` and *not* in a Gemfile (or `.ruby_version`)
 * A safe way to roll out the upgraded version is to use our "scale up" feature to create a new server that uses the new version of Ruby
 
+### Bundler
+
+We automatically install the latest available version of Bundler whenever either:
+
+- a new server is created
+- the version of Ruby is upgraded on an existing server
+
+If an existing server is throwing errors related to your Bundler version, the best option is usually to [upgrade Ruby](/rails/how-to-guides/deployment/managing-and-upgrading-ruby-versions.html) to a more recent version. Be sure to follow our best practice (linked above) when doing so to ensure the upgrade runs smoothly.
+
 ### Rails
 
 Rails should be upgraded in the same way as Ruby. See above for details. 
 
-{% endif %}
 ### Passenger
 
 The recommended way to upgrade your passenger to the latest one is to deploy to a new web server and drop the old one, so the scaled up one will automatically have the [latest version](/{{page.collection}}/resources/technical-specifications.html#component-versions) supported by Cloud 66.
+{% endif %}
 
 {% if include.product == 'maestro' %}
 ### Docker and Weave

@@ -8,19 +8,24 @@ We support BYOI with this cloud provider, which allows you to spin up new server
 
 ## Generate GCE API keys
 
-You need to provide your GCE API keys in order for Cloud 66 to access your account. 
-To generate these: 
+You need to provide your GCE API keys in order for Cloud 66 to access your account.
+To generate these:
 
-1. Access the [Console](https://console.cloud.google.com) of your Google account
+1. Access the [Console](https://console.cloud.google.com/) of your Google account
 2. Create a project (if you don't already have one)
 3. Switch to your desired project
 4. Use the search bar at the top of the page to search for "APIs & Services" and click the first result
-5. Click on *Credentials* in the left-hand navigation menu
-6. Click on *+ Create Credentials* at the top of the page; Select *Service Account*
-7. Give your service account a name (like "cloud66") and an optional description; Click *Create*
-8. Add the role "Compute Admin" and then click *Continue* (NOTE: this will grant Cloud 66 the rights to create/amend/delete compute resources in this project)
-9. Leave the *User Access* options blank; Click *Create Key*, and select *JSON* then click *Create*. Download and save your JSON key somewhere locally (this contains your credentials)
-10. Click *Done*
+5. Click on the blue button (at the top of the main panel) named *+ Enable APIs and Services*
+6. Search the API library for "Compute Engine API" and click on the top result
+7. If the page **does not** have a green tick with "API enabled" click the blue *Enable* button (newer accounts tend to have the API already enabled, but it is worth checking)
+8. Return to the "APIs & Services" dashboard (you can use search as you did in step 4)
+9. Click on *Credentials* in the left-hand panel
+10. Click on *+ Create Credentials* at the top of the page; Select *Service Account*
+11. Give your service account a name (like "cloud66") and an optional description; Click *Create*
+12. Add the role "Compute Admin" and then click *Continue* (NOTE: this will grant Cloud 66 the rights to create/amend/delete compute resources in this project)
+13. Leave the *User Access* options blank; Click *Create Key*, and select *JSON* then click *Create*. 
+14. Download and save your JSON key somewhere locally (this contains your credentials, so treat it with care)
+15. Click *Done*
 
 Once the above is done, we will need three things to connect with your account:
 
