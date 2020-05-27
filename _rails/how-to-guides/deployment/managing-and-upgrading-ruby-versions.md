@@ -16,6 +16,9 @@ Ruby applications have multiple way to define which version of Ruby they are usi
 
 Cloud 66's default method for defining package versions is via a `manifest.yml` file and we strongly recommend using that method for all your deployments via our system. See below for detailed instructions on using this method. 
 
+#### Note
+<div class="notice"><p>If you're looking for details on updating your version of Bundler, you can <a href="/rails/how-to-guides/deployment/applying-upgrades.html#bundler">find them here</a>. Essentially we update Bundler whenever you update your version of Ruby.</p></div>
+
 ## How we determine the version to use
 
 When you configure a new Ruby application in Cloud 66 we set the version based on one of the following (in order of preference):

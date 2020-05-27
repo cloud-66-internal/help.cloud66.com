@@ -14,7 +14,7 @@ You can add any physical server as a registered server using the website, or the
 
 ### Via the Dashboard
 
-Visit the [_Registered Servers_](https://app.cloud66.com/registered_servers) page on Cloud 66, which will provide with you a shell script to run on your server - you can download it to inspect it first.
+Visit the *[Registered Servers](https://app.cloud66.com/registered_servers)* page on Cloud 66, which will provide with you a shell script to run on your server - you can download it to inspect it first.
 
 Once the shell script has successfully completed, the server will now show up in the **New Servers** list for you to approve. Once it is approved, it will be available for you to use with any application!
 
@@ -59,7 +59,7 @@ If your server is in a cloud with native security groups (such as AWS Security G
 
 {% if include.product == 'maestro' %}All servers must be allowed to communicate inside the security group on TCP port `6783`, which is needed to create the overlay network (Weave) for [CSv1](/maestro/the-basics/about-maestro.html#version-1-vs-version-2) applications.{% endif %} 
 
-For more detail please read our guide to [Using Cloud 66 through Firewalls].
+For more detail please read our guide to [Using Cloud 66 through firewalls](/{{page.collection}}/how-to-guides/deployment/using-c66-via-firewall.html).
 
 ## Technical considerations
 

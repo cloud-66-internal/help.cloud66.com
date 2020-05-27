@@ -13,7 +13,6 @@ We currently support the following databases, with no need for additional config
 * GlusterFS
 * InfluxDB
 
-{% if page.collection == "maestro" %}When creating a Maestro application, you can [add as many databases as you need in your service configuration during the application build](/maestro/how-to-guides/deployment/docker-service-configuration.html#database-configurations). {%endif%}
 {%if page.collection=='rails' %}For Rack-based stacks, Cloud 66 automatically detects whether your application relies on a database or not during your code analysis. This is based on a combination of your Gemfile and your `database.yml` or `mongoid.yml` files.{%endif%}
 
 After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. If you haven't specified a username and password for your database, Cloud 66 will automatically generate these credentials for you. They will be available as environment variables and your application will be configured to use them.
@@ -47,7 +46,7 @@ You can control your Rails database migrations by setting the `run.deploy.comman
 $ cx settings set -s my_stack run.deploy.command true
 </pre>
 
-When you have disabled `run.deploy.command` in [Application settings]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#settings-variables) , you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
+When you have disabled `run.deploy.command` in [Application settings](/{{page.collection}}/references/toolbelt.html#settings-variables), you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
 {%endif%}
 
 ## Customize your database configuration
@@ -71,7 +70,7 @@ Editing and committing your database CustomConfig will perform the following ste
 ### Database customization variables
 There are a number of variables available for use in your database CustomConfig. Some are general for all database types, while others are database specific.
 
-<b>Global variables</b>
+**Global variables**
 
 The following variables are available to any database CustomConfig.
 
@@ -113,7 +112,7 @@ The following variables are available to any database CustomConfig.
 </table>
 
 
-<b>MySQL variables</b>
+**MySQL variables**
 
 The following variables are only available in the MySQL CustomConfig.
 
@@ -148,9 +147,10 @@ The following variables are only available in the MySQL CustomConfig.
 		</tr>
   </tbody>
 </table>
-<h5>&#42;It is 0 for standalone servers, 1 for master servers and a number greater than 1 for slave servers</h5>
 
-<b>PostgreSQL variables</b>
+&#42;It is 0 for standalone servers, 1 for master servers and a number greater than 1 for slave servers
+
+**PostgreSQL variables**
 
 The following variables are only available in the PostgreSQL CustomConfig.
 
@@ -176,7 +176,7 @@ The following variables are only available in the PostgreSQL CustomConfig.
   </tbody>
 </table>
 
-<b>Redis variables</b>
+**Redis variables**
 
 The following variables are only available in the Redis CustomConfig.
 

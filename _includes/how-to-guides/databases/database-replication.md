@@ -68,10 +68,10 @@ To enable replication for a single application, you need to scale up to create a
 
 To enable replication between applications, ensure that you have a secondary application deployed, and that its database server contains at least twice as much disk space as the size of your database backup. Then:
 
-1. Open the Application Overview for the primary application from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview for the secondary application from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on the *Servers* tab 
-3. Click on the name of the database server
-4. Click _Configure data replication_ in the right sidebar, and select a source application. 
+3. Click on the name of the database server (this will become a slave of the source/master database)
+4. Click _Configure data replication_ in the right sidebar, and select a source application (i.e the source/master database). 
 5. Confirm to commence the replication process.
 
 ## Disable database replication

@@ -28,6 +28,38 @@ When creating a Maestro application, you can add as many databases as you need i
 
 After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. If you haven't specified a username and password for your database, Cloud 66 will automatically generate these credentials for you. They will be available as environment variables and your application will be configured to use them.
 
+## Connecting your app to your DB in Maestro
+
+Databases in Maestro run as separate components and aren't containerized. Even though they may be running on the same private network as your cluster servers, you will not be able to connect to them via localhost because of the nature of containers (which are, by definition, abstracted from operating the system).
+
+Instead, we we automatically create a Kubernetes services for each DB that connects out from your cluster to the database server(s). To see these on your cluster, you can list the namespaces and then select your namespace and list the services associated with it with the following commands:
+
+```bash
+$ kubectl get namespaces
+$ kubectl -n <your-namespace> get svc
+```
+
+This will show you all the services running, some of which will be your databases. 
+
+So a typical connection string might have: 
+
+- The protocol
+- The username and password (where required)
+- The name of the Kubernetes service (e.g. "mongodb")
+- The name of the DB server (e.g. "mongo_production_1")
+
+So to connect to a MongoDB server named "mongo_production_1" and running in your app namespace as "mongodb" you would use something like:
+
+```bash
+$ mongodb://mongodb/mongo_production_1
+```
+
+A similar setup for a Postgres server would look something like this:
+
+```bash
+$ postgresql://username:password@service_name/database
+```
+
 ## Deployment types
 
 ### No database (external)
