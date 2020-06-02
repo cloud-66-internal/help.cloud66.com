@@ -61,6 +61,7 @@ If your server is in a cloud with native security groups (such as AWS Security G
 
 {% if include.product == 'maestro' %}All servers must be allowed to communicate inside the security group on TCP port `6783`, which is needed to create the overlay network (Weave) for [CSv1](/maestro/the-basics/about-maestro.html#version-1-vs-version-2) applications.{% endif %} 
 
+For more detail please read our guide to [Using Cloud 66 through firewalls](/{{page.collection}}/how-to-guides/deployment/using-c66-via-firewall.html).
 
 ## Technical considerations
 
