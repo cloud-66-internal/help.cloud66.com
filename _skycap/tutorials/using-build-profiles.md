@@ -22,7 +22,7 @@ Before you start, please check you have the following:
 
 * **An existing Formation defined in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap Formations](/skycap/quickstarts/using_formations.html) guide.
 
-* **At least two services defined in your application** &mdash; You can add a sidecar service to your application by following [this guide] (/skycap/tutorials…).
+* **At least two services defined in your application** &mdash; You can add a sidecar service to your application by following [this guide](/skycap/tutorials/adding-and-enforcing-sidecar-containers.html).
 
 <div class="notice"><p>In this example we’re using the same <a href="https://github.com/cloud66-samples/helloworld.git">simple "hello world" project</a> that we used in our Getting Started guides and our other tutorials.</p></div>
 
