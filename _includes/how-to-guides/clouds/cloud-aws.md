@@ -98,6 +98,12 @@ curl https://help.cloud66.com/c66_aws_iam_policy.json > c66_aws_iam_policy.json 
 If you delete your application from Cloud 66, your servers will not be deleted on your cloud provider unless the <a href="/{{page.collection}}/how-to-guides/deployment/server-deletion.html">physical server deletion</a> setting is turned on.
 </p></div>
 
+## Using IAM instance profiles with your servers
+
+Instance profiles are a way to set specific roles on new servers that you spin up with AWS. You can read more about [creating your own instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) in the AWS docs. 
+
+You can use your instance profiles via Cloud 66 by [calling them in the manifest file](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html#which-component) of your application. You can set a different profile for each component of an application (e.g. MySQL or Redis). We will then use that profile whenever we provision a server for that component.
+
 ## Reserved instances
 
 [AWS reserved instances](http://aws.amazon.com/ec2/purchasing-options/reserved-instances/) enable users to reserve instances for one to three years, which has pricing benefits when compared to on-demand instances.

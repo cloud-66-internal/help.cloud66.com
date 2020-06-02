@@ -67,14 +67,14 @@ Next, select which component you would like to specify settings for. You can cho
 - **version**: Specify the version of Docker you want to install.
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **weave_version** (_Optional_): Specify the version of Weave you want to install.
-- **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers.   
- <span style="background-color: #FFFF00"> Note that you must provide [**subnet_id**](#servers) for all servers in your application.</span>
+- **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers. Note that you must provide [**subnet_id**](#servers) for all servers in your application.
 - **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **image_keep_count** (_Optional, defaults to 5_): Set the number of old images to save on your servers (besides the running image).
 - **nameservers** (_Optional, defaults to [ 8.8.8.8, 8.8.4.4 ]_): Set DNS servers for your application.  
-  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
+  Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers
+- **iam_instance_profile_name** (*optional, AWS only*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 
 #### Examples
 
@@ -82,6 +82,7 @@ Next, select which component you would like to specify settings for. You can cho
 production:
   docker:
     configuration:
+      iam_instance_profile_name: docker-perms
       version: 1.7.0
       weave_version: 1.0.3
       vpc_id: vpc-64872001
@@ -110,11 +111,13 @@ production:
 - **version**: Specify the version of ElasticSearch you want to install.
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
+- **iam_instance_profile_name** (*optional, AWS only*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 
 ```
 production:
   elasticsearch:
     configuration:
+      iam_instance_profile_name: elastic-perms
       version: 0.90.7
       root_disk_size: 100
       root_disk_type: ssd
@@ -128,7 +131,7 @@ production:
 - **name**: Specify the name of gateway you want to use for your application.
 - **username** (_Optional_) Specify the username which should be used to connect to bastion server.
 
-### Note
+#### Note
 <div class="notice">
 <p>The gateway should be defined and open before you can use it in manifest.</p>
 </div>
@@ -153,6 +156,7 @@ The version of GlusterFS currently offered via the Cloud 66 Add-in is not suppor
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is `ssd`.
 - **replica_count** : Number of nodes in _GlusterFS cluster_ which a data will be replicated on it(i.e replica count 2 means your data exist on two nodes). Default value is 1.
 - **mount_targets** : List of _Servers_ and _Server Groups_ you need GlusterFS mounted on them. You can specify the name of the _server_ or _server group_ (i.e rails,docker,mysql,...). You can also use `app` and `db` keywords, `app` is your main app server group (i.e docker, rails, ...)  and `db` is your db server groups (i.e mysql,redis,postgresql,... ). Default value is `app`.
+- **iam_instance_profile_name** (*optional, AWS only*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 - **volumes**: List of volumes you want in your GlusterFS Cluster.  By default we are creating a volume called `cloud66-vol`  and mounted to `/mnt/data-store`.
 
 Available settings for a volume are:
@@ -224,6 +228,7 @@ production:
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
+- **iam_instance_profile_name** (*optional, AWS only*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 
 ```
 production:
@@ -244,6 +249,8 @@ production:
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **engine**: Specify the MySQL engine you want to install. Valid values are 'mysql' and 'percona' (can only be set during application build).
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
+- **iam_instance_profile_name** (*optional, AWS only*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
+
 
 ```
 production:
@@ -253,6 +260,7 @@ production:
       root_disk_size: 100
       root_disk_type: ssd
       engine: percona
+      iam_instance_profile_name: mysql-perms
 ```
 
 * * *
@@ -325,11 +333,13 @@ If you need a newer version of Node, you can install one using the same method a
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
+- **iam_instance_profile_name** (*optional, AWS only*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 
 ```
 production:
   postgresql:
     configuration:
+      iam_instance_profile_name: psql-perms
       version: 9.3.4
       postgis: true
       root_disk_size: 100
@@ -369,12 +379,14 @@ A Rails application type in the manifest file gives you fine control over things
 - **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
+- **iam_instance_profile_name** (*optional, AWS only*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application.  <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git submodules from being pulled during a build.
 - **keep_releases** *(Optional, Defaults to 5)* Specify the number of releases to keep on your server(s).
 - **activeprotect**:
     - **whitelist:** Specify a comma-separated whitelist of IPs that should be ignored by your ActiveProtect configuration.
     - **http_ban_rate:** Set the threshold of *requests per minute* from a single IP address. The default is 2000.
+
 
 #### Important
 <div class="notice notice-warning">
@@ -398,6 +410,7 @@ production:
       root_disk_size: 100
       root_disk_type: ssd
       nameservers: ['8.8.8.8', '8.8.4.4']
+      iam_instance_profile_name: rails-perms
 ```
 
 * * *
@@ -416,6 +429,7 @@ The manifest file gives you fine control over things like the Ruby version or wh
 - **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
+- **iam_instance_profile_name** (*optional, AWS only*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application. <span style="background-color: #FFFF00">Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers</span>
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git  submodules  from being pulled during a build.
 - **keep_releases** *(Optional, Defaults to 5)* Specify the number of releases to keep on your server(s).
@@ -443,6 +457,7 @@ production:
       root_disk_size: 100
       root_disk_type: ssd
       nameservers: ['8.8.8.8', '8.8.4.4']
+      iam_instance_profile_name: rack-perms
 ```
 
 ### Rails (Rack) deployment health checks
@@ -478,6 +493,7 @@ All of these are optional. For more details on health checks please read our [ho
 - **version**: Specify the version of Redis you want to install (defaults to 5.0).
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
+- **iam_instance_profile_name** (*optional, AWS only*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 
 ```
 production:
@@ -486,6 +502,7 @@ production:
       version: 5.0.5
       root_disk_size: 100
       root_disk_type: ssd
+      iam_instance_profile_name: redis-perms
 ```
 
 {% if include.product == 'rails' %} 
