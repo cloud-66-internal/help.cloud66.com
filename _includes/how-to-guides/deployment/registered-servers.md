@@ -49,11 +49,13 @@ $ cx register-server --org="My Team" --server=197.23.65.11 --user=root --tags="d
 - **Sudo**: As Cloud 66 connects to your server and provisions applications from scratch, administrator permissions are sometimes necessary. Therefore our script creates a new user to use for deployment that is a member of the sudoers group and that does not require a password to invoke sudo.
 - **Bash**: We currently only support Bourne-again shell (Bash). The error `sh: n: source: not found` during deployment may arise if you are not using the Bash shell.
 - **CPU Architecture**: We only support deploying to 64-bit machines.
-- **Firewalls & security:** Cloud 66 needs the following (TCP) ports open to allow us to deploy and manage your application: 
-	- `80` 
-	- `443`
-	- `22`
-	- In addition we need port `3022` set to allow access from `159.89.253.143` (this IP is static)
+- **Firewalls & security:** Cloud 66 needs the following (TCP) ports open to allow us to deploy and manage your application:
+    - `22`
+    - Port `3022` set to allow access from `159.89.253.143` (this IP is static)
+
+For more detail please read our guide to [Using Cloud 66 through firewalls](/{{page.collection}}/how-to-guides/deployment/using-c66-via-firewall.html).
+
+If your application needs to accept connections from the public web you will also need to open ports `80` and/or `443` but we do not require that these be open in order for us to manage a server.
 
 If your server is in a cloud with native security groups (such as AWS Security Groups) then you must manually configure them such that your registered servers are able to talk to each other and Cloud 66 via the ports listed above. 
 

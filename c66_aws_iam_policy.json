@@ -11,7 +11,8 @@
             "iam:UpdateServerCertificate",
             "iam:UploadServerCertificate",
             "iam:DeleteServerCertificate",
-            "iam:CreateServiceLinkedRole"
+            "iam:CreateServiceLinkedRole",
+            "iam:PassRole"
          ],
          "Resource":"*",
          "Effect":"Allow"
