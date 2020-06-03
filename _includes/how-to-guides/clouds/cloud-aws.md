@@ -1,5 +1,10 @@
 You can use Cloud 66 to provision and deploy your code to servers in any Amazon Web Services (AWS) region. Cloud 66 supports both VPC and (for AWS accounts created before 2014) EC2-Classic. We also support reserved instances. To use a VPC, your account must conform with the [default VPC guidelines](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/default-vpc.html#launching-into).
 
+#### Note
+<div class="notice notice-warning"><p>
+If you delete your application from Cloud 66, your servers will not be deleted on your cloud provider unless the <a href="/{{page.collection}}/how-to-guides/deployment/server-deletion.html">physical server deletion</a> setting is turned on.
+</p></div>
+
 {% if include.product == 'rails' %}
 ## Bring Your Own Images (BYOI)
 
@@ -92,13 +97,11 @@ curl https://help.cloud66.com/c66_aws_iam_policy.json > c66_aws_iam_policy.json 
 </section>
 </div>
 
-
-#### Note
-<div class="notice notice-warning"><p>
-If you delete your application from Cloud 66, your servers will not be deleted on your cloud provider unless the <a href="/{{page.collection}}/how-to-guides/deployment/server-deletion.html">physical server deletion</a> setting is turned on.
-</p></div>
-
 ## Using IAM instance profiles with your servers
+
+#### Beta only
+<div class="notice"><p>
+This feature is currently only available to users in our Beta Programme. If you'd like to join the programme please <a href="/{{page.collection}}/resources/cloud-66-beta-program.html">follow our quick guide</a> to add yourself to the programme.</p></div>
 
 Instance profiles are a way to set specific roles on new servers that you spin up with AWS. You can read more about [creating your own instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) in the AWS docs. 
 
