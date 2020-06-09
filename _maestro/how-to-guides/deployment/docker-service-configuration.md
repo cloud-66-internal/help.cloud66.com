@@ -138,58 +138,18 @@ databases:
 
 ## Environment variables
 
-Any environment variable defined in your application will be made available within your service container. You can also define a new environment variable for a service or reference an environment variable in other applications or services using the following syntax:
+Any [environment variable](/maestro/how-to-guides/deployment/env-vars-advanced.html) defined in your application will be made available within your service container. 
+
+The syntax for calling environment variables in a service definition is:
 
 {% highlight yaml %}
 services:
-    <service_name>:
-        env_vars:
-            # Setting an environment variable
-            ENV_NAME1: VALUE
-
-            # Referencing an application-wide variable
-            ENV_NAME2: _env(STACK_ENV_VAR_NAME)
-
-            # Referencing an application-wide variable (with default fall-back)
-            ENV_NAME3: _env(APP_ENV_VAR_NAME:Default)
-
-            # Referencing a service's variable
-            ENV_NAME4: _env(SERVICE[SERVICE_NAME].ENV_VAR_NAME)
-
-            # Referencing a service's variable (with default fall-back)
-            ENV_NAME5: _env(SERVICE[SERVICE_NAME].ENV_VAR_NAME:Default)
-
-            # Referencing another application's variable
-            ENV_NAME6: _env(STACK[APP_UID].ENV_VAR_NAME)
-
-            # Referencing another application's variable (with default fall-back)
-            ENV_NAME7: _env(STACK[APP_UID].ENV_VAR_NAME:Default)
-
-            # Referencing another application's service variable
-            ENV_NAME8: _env(STACK[APP_UID].SERVICE[SERVICE_NAME].ENV_VAR_NAME)
-
-            # Referencing another application's service variable (with default fall-back)
-            ENV_NAME9: _env(STACK[APP_UID].SERVICE[SERVICE_NAME].ENV_VAR_NAME:Default)
+ service_name:
+   env_vars:
+    VAR1: _env(VALUE_OF_VARIABLE)
 {% endhighlight %}
 
-In above example, all defined environment variables except `ENV_NAME1` are referenced to other environment variables. You can specify a default value for referenced environment variables that will be set if there is no suitable link value (such as `ENV_NAME3`).
-
-## Using environment variables in a Dockerfile
-
-You can pass environment variables into a Dockerfile during your build process with the `$VARIABLE` syntax, which will be populated with environment variable(s) set on the application. For example, to call a env named `MY_VARIABLE` you would use `ENV MY_VARIABLE "$MY_VARIABLE"` 
-
-The same example, in context:
-
-```
-FROM ruby:latest
-RUN mkdir /myapp
-WORKDIR /myapp
-COPY . /myapp
-ENV MY_VARIABLE "$MY_VARIABLE"
-EXPOSE 3000
-CMD ["/myapp/main.rb"]
-```
-Please read our detailed [how-to guide](/maestro/how-to-guides/deployment/env-vars-in-dockerfile.html) if you need more help.
+You can also define a new environment variable for a service or reference an environment variable in other applications or services, and then call these in your service definition. For more info please read our [detailed guide](/maestro/how-to-guides/deployment/env-vars-advanced.html#syntax-examples) to the sharing env vars between apps and services.
 
 ## Setting a Service Account name
 
@@ -483,5 +443,7 @@ Below is a table of the available configurations for a given service with a brie
         </section>
 </div>
 
+## More help
 
-
+* Learn how to call environment variables in a service defintion 
+* [Using environment variables in a Dockerfile](/maestro/how-to-guides/deployment/env-vars-advanced.html#using-environment-variables-in-a-dockerfile)

@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-This guide assumes you already know the basics of adding and editing environment variables in Maestro. If you need help with this, please follow [our tutorial](/maestro/tutorials/env-vars.html) on the subject.
+This guide assumes you already know the basics of adding and editing environment variables (env vars) in Maestro. If you need help with this, please follow [our tutorial](/maestro/tutorials/env-vars.html) on the subject.
 
 
 ## Default environment variables
@@ -31,7 +31,9 @@ For a list of environment variables available in your application:
 2. Click on *Environment Variables*  in the **Application** panel on the right of the screen
 3. The initial page displays all the *Editable* variables. You can see all the *Read Only* variables by clicking on that tab.
 
-## Assigning environment variables during deployment
+## Assigning environment variables
+
+### During deployment
 
 If your application relies on specific environment variables to complete the deployment process, you will need to add them before deploying. 
 
@@ -48,7 +50,9 @@ KEY_2=value_2
 Once your variables are set, *Save changes* and continue to deployment. 
 
 
-## Assigning environment variables after application build
+### After application build
+
+You can also assign environment variables on an application that has already been built and/or deployed.
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Environment Variables*  in the **Application** panel on the right of the screen
@@ -73,9 +77,9 @@ When you deploy your application, Cloud 66 will replace these placeholders with 
 
 Using this, you can safely commit your env file to your git repository without exposing the actual values of your environment variables.
 
-## Define referenced environment variable
+## Referencing existing env vars
 
-You can define a new environment variable and reference it to an existing environment variable.
+You can define new environment variables that reference existing env vars:
 
 - **You can reference other environment variables on the same application**  &mdash; This is useful when referencing an environment variable which you don't control such as a server IP address.
 
@@ -85,13 +89,13 @@ You can define a new environment variable and reference it to an existing enviro
 
 You can reference another environment variable using the following syntax:  
 
-<kbd>&#123;&#123;ENV_VAR&#125;&#125;</kbd>
+`{{ENV_VAR}}`
 
 or
 
 `_env(ENV_VAR:DEFAULT_VALUE)`  
 
-The second method is useful when you want to specify a default value. If cloud66 can’t find the referenced environment variable it will use default value instead. (**DEFAULT_VALUE** is optional). 
+The second method is useful when you want to specify a default value. If Cloud 66 can’t find the referenced environment variable it will use default value instead. (**DEFAULT_VALUE** is optional). 
 
 ### Examples
 
