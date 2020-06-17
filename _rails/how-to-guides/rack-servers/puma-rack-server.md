@@ -50,7 +50,7 @@ bind ENV.fetch("BIND") { "unix:///tmp/web_server.sock" }
 If you'd prefer to use Puma without having a config file, you can simply use this catch-all initialization string:
 
 {% highlight shell %}
-custom_web: bundle exec puma -e $RACK_ENV -b unix:///tmp/web_server.sock --pidfile /tmp/web_server.pid
+custom_web: bundle exec puma -e $RACK_ENV -b unix:///tmp/web_server.sock --pidfile /tmp/web_server.pid --dir $STACK_PATH
 {% endhighlight %}
 
 ## Customizing shutdown and reload signals
