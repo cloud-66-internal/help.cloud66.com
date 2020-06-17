@@ -8,11 +8,13 @@ Your servers are deployed with **Ubuntu 18.04 LTS**.
 Cloud 66 currently supports the following cloud providers:
 * [Amazon Web Services](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html)
 * [Digital Ocean](/{{page.collection}}/how-to-guides/clouds/cloud-do.html)
-* [Google Compute Engine](/{{page.collection}}/how-to-guides/clouds/cloud-gce.html){% if include.product != 'maestro' %}
+* [Google Compute Engine](/{{page.collection}}/how-to-guides/clouds/cloud-gce.html)
+* [Hetzner Cloud](/{{page.collection}}/how-to-guides/clouds/cloud-hetzner.html){% if include.product != 'maestro' %}
 * [Linode](/{{page.collection}}/how-to-guides/clouds/cloud-linode.html){%endif%}
+* [OVHcloud](/{{page.collection}}/how-to-guides/clouds/cloud-ovh.html)
 * [Microsoft Azure](/{{page.collection}}/how-to-guides/clouds/cloud-azure.html)
 * [Rackspace](/{{page.collection}}/how-to-guides/clouds/cloud-rackspace.html)
-
+* [Vultr](/{{page.collection}}/how-to-guides/clouds/cloud-vultr.html)
 
 ## Supported platforms
 
@@ -54,11 +56,11 @@ You are free to specify a version for a number of components in your [manifest f
 <tr><td>ElasticSearch</td><td>7.1.0</td></tr>
 <tr><td>GlusterFS</td><td>3.12.6</td></tr>
 <tr><td>Gotty</td><td>1.0.0</td></tr>
-<tr><td>Kubernetes</td><td>1.15</td></tr>
+<tr><td>Kubernetes</td><td>1.18.3</td></tr>
 <tr><td>MongoDB</td><td>2.6.11</td></tr>
 <tr><td>MySQL</td><td>8.0</td></tr>
-<tr><td>Phusion Passenger</td><td>5.3.7</td></tr>
-<tr><td>Passenger Enterprise</td><td>5.3.7</td></tr>
+<tr><td>Phusion Passenger</td><td>6.0.5</td></tr>
+<tr><td>Passenger Enterprise</td><td>6.0.5</td></tr>
 <tr><td>PostGIS</td><td>2.5</td></tr>
 <tr><td>PostgreSQL</td><td>11</td></tr>
 <tr><td>Rails*</td><td>All versions from 2.6.3 and up</td></tr>

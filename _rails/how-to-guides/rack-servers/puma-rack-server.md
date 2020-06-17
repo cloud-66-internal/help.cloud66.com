@@ -47,6 +47,10 @@ bind ENV.fetch("BIND") { "unix:///tmp/web_server.sock" }
 
 (We also have a [commented plain-text version](/rails/how-to-guides/rack-servers/puma-config.txt) of this config with explanatory notes)
 
+#### Note
+<div class="notice"><p>
+The directory block in the above config ensures that Puma will use the latest version of your code when it is deployed. Without this block, some versions of Puma will continue to point to older versions of code until "hard" restarted. You can also find this in the init string below (<kbd>--dir $STACK_PATH</kbd>).</p></div>
+
 If you'd prefer to use Puma without having a config file, you can simply use this catch-all initialization string:
 
 {% highlight shell %}
