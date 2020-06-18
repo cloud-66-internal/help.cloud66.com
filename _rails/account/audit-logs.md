@@ -12,4 +12,4 @@ permalink: /:collection/:path:output_ext
 
 
 
-{%include references/account/audit-logs.md %}
+{%include account/audit-logs.md %}

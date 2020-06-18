@@ -10,4 +10,4 @@ tags: ["account", "security"]
 permalink: /:collection/:path:output_ext
 ---
 
-{%include references/account/two-factor-authentication.md %}
+{%include account/two-factor-authentication.md %}

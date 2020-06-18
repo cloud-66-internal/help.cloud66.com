@@ -10,4 +10,4 @@ permalink: /:collection/:path:output_ext
 ---
 
 
-{%include references/account/account-management.md %}
+{%include account/account-management.md %}

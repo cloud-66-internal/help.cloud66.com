@@ -12,4 +12,4 @@ product: Maestro
 {% assign product = "General" %}
 
 
-{%include references/account/browser-requirements.md %}
+{%include account/browser-requirements.md %}

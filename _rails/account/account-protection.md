@@ -11,4 +11,4 @@ permalink: /:collection/:path:output_ext
 ---
 
 
-{%include references/account/account-protection.md %}
+{%include account/account-protection.md %}
