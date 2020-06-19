@@ -4,7 +4,7 @@ This feature is currently only available to users in our Beta Programme. If you'
 
 ## Overview
 
-If you (or one of your clients) needs to temporarily suspend an application, you can archive the application on Cloud 66. This will preserve the structure and configuration of the application, allowing you to reactivate it in future without having to rebuild it from scratch.  Archiving an application will turn off any cloud servers used by that application, but **will not** delete them. 
+If you (or one of your clients) needs to temporarily suspend an application, you can archive the application on Cloud 66. This will preserve the structure and configuration of the application, allowing you to reactivate it in future without having to rebuild it from scratch.  Archiving an application will turn off any cloud servers used by that application, but **will not** delete them. We will, however, **delete any backups**.
 
 ## Archiving an application
 
@@ -15,6 +15,8 @@ In order to archive an application, you need to have admin rights and access to 
 3. Click the *Archive Application* button and confirm the action - this will require you to settle any outstanding charges before the archiving will be completed.
 
 The application is now archived. You will not be able to open or edit it until you restore it. Servers used by this application will be turned off (deactivated) but not deleted. These servers will be effectively inaccessible until the application is restored. **Please do not delete these servers**, or you will not be able to restore your application. 
+
+When we archive your application we will also stop any scheduled backups and **we will delete any existing backups** that we are storing.
 
 #### Note
 <div class="notice"><p>
