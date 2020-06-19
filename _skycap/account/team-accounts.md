@@ -9,4 +9,4 @@ tags: ["account"]
 permalink: /:collection/:path:output_ext
 ---
 
-{%include references/account/team-accounts.md %}
+{%include account/team-accounts.md %}

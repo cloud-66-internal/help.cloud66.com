@@ -11,4 +11,4 @@ permalink: /:collection/:path:output_ext
 
 
 
-{%include references/account/notifications.md %}
+{%include account/notifications.md %}
