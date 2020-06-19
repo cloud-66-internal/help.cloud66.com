@@ -12,4 +12,4 @@ product: Maestro
 
 
 
-{%include references/account/notifications.md %}
+{%include account/notifications.md %}

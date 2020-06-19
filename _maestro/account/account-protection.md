@@ -11,4 +11,4 @@ product: Maestro
 ---
 
 
-{%include references/account/account-protection.md %}
+{%include account/account-protection.md %}

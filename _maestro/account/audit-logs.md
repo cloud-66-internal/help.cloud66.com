@@ -12,4 +12,4 @@ product: Maestro
 
 
 
-{%include references/account/audit-logs.md %}
+{%include account/audit-logs.md %}

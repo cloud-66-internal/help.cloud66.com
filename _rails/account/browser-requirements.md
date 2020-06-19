@@ -12,4 +12,4 @@ permalink: /:collection/:path:output_ext
 {% assign product = "General" %}
 
 
-{%include references/account/browser-requirements.md product = product %}
+{%include account/browser-requirements.md product = product %}
