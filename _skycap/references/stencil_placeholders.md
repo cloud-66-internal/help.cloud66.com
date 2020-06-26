@@ -92,7 +92,7 @@ Returns the attributes of an application. Default (with no attribute) returns th
 **Attributes:**
 
 - `name`  (default) – Name of the application
-- `configstore_namspace` - UID of the application's [ConfigStore](/skycap/how-to-guides/config-store.html)
+- `configstore_namspace` - UID of the application's [ConfigStore](/skycap/how-to-guides/configuration/config-store.html)
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
