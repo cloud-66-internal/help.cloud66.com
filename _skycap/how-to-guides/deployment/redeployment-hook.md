@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Using redeployment hooks
-categories: how-to-guides
+categories: how-to-guides/deployment
 order: 10
 lead: "How to use redeployment hooks to achieve automated deployments"
 legacy: false
