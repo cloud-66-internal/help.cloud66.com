@@ -1177,7 +1177,27 @@
 [[redirects]]
   from = "/rails/how-to-guides/deployment/bluepill.html"
   to = "/rails/how-to-guides/deployment/systemd.html"
-  
+
+[[redirects]]
+  from = "/skycap/how-to-guides/helm.html"
+  to = "/skycap/how-to-guides/deployment/helm.html" 
+
+[[redirects]]
+  from = "/skycap/how-to-guides/config-store.html"
+  to = "/skycap/how-to-guides/configuration/config-store.html" 
+
+[[redirects]]
+  from = "/skycap/how-to-guides/deployment/habitus-secrets.html"
+  to = "/skycap/how-to-guides/configuration/habitus-secrets.html" 
+
+[[redirects]]
+  from = "/skycap/how-to-guides/global-search.html"
+  to = "/skycap/how-to-guides/common-tools/global-search.html" 
+
+[[redirects]]
+  from = "/skycap/how-to-guides/vault.html"
+  to = "/skycap/how-to-guides/configuration/vault.html" 
+
 [[redirects]]
   from = "/whenever"
   to = "/rails/how-to-guides/add-ins/add-ins-jobs.html#support-for-whenever-gem"

@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title:  "Global Search"
-categories: how-to-guides/dashboard
+categories: how-to-guides/common-tools
 lead: Powerful search for your infrastructure inventory
 legacy: false
 tags: ['Management']

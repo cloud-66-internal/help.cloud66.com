@@ -2,9 +2,9 @@
 layout: post
 template: one-col
 title: Using ConfigStore
-categories: how-to-guides
+categories: how-to-guides/configuration
 order: 6
-lead: "Using ConfigStore with Skycap Formations"
+lead: "Using ConfigStore with Skycap"
 legacy: false
 tags: ["customization"]
 permalink: /:collection/:path:output_ext
