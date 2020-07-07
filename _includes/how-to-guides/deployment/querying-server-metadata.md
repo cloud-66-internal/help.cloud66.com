@@ -18,7 +18,7 @@ Some important things to note:
 The command above will return **all** the available metadata for the server. However, you can also query subsets of the metadata using the names for each element and sub-element. For example this command:
 
 ```bash
-curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata**/**$CLOUD66_APPLICATION_API_KEY/deployment/triggered_by
+curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/deployment/triggered_by
 ```
 
 ...will return metadata about who **triggered** the last **deployment**. 
@@ -34,7 +34,7 @@ apt install -y jq
 ### 1. deployment information
 
 ```shell
-$ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata**/**$CLOUD66_APPLICATION_API_KEY/deployment | jq
+$ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/deployment | jq
 
 {
   "response": {
