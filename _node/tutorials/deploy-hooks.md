@@ -172,6 +172,7 @@ before_nginx:
 
 ## What's next?
 
+* Get to grips with some [working examples of deploy hooks](/{{page.collection}}/how-to-guides/deployment/deploy-hook-examples.html) to set up the exact hooks your app needs.
 * Dig deeper with our [in-depth guide](/{{page.collection}}/references/deploy-hooks-syntax.html) to hook syntax
 * Learn how to use [Manifest files](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) to customize the components of your application 
 * Learn how to add custom [environment variables](/{{page.collection}}/tutorials/env-vars.html) to your application
