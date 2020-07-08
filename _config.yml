@@ -44,8 +44,7 @@ collections:
     permalink: /:path/
 # Build settings
 markdown: kramdown
- syntax_highlighter_opts:
-  disable : true
+highlighter: none
 
 sass:
     style:  compressed  # nested|expanded|compact|compressed
