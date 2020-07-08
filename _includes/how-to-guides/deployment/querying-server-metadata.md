@@ -25,7 +25,7 @@ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.clo
 
 Finally, when querying for metadata, it can be useful to parse the json response. We suggest installing and using `jq` for this. To install `jq`
 
-```shell
+```shell 
 apt install -y jq
 ```
 
