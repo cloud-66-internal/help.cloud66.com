@@ -12,4 +12,4 @@ permalink: /:collection/:path:output_ext
 
 {% assign product = 'maestro' %}
 
-{% include how-to-guides/deployment/querying-server-metadata.md product = product %}
+{% include how-to-guides/deployment/querying-server-metadata.md product = product %} 
