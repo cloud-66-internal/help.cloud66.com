@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Integrating Habitus secrets with Skycap
-categories: how-to-guides
+categories: how-to-guides/configuration
 order: 10
 lead: "How to integrate a Habitus build workflow with secrets into a Skycap application"
 legacy: false

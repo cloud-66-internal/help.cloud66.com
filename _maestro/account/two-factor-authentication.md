@@ -10,4 +10,4 @@ permalink: /:collection/:path:output_ext
 product: Maestro
 ---
 
-{%include references/account/two-factor-authentication.md %}
+{%include account/two-factor-authentication.md %}

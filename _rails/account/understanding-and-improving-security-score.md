@@ -10,4 +10,4 @@ permalink: /:collection/:path:output_ext
 product: Rails
 ---
 
-{%include references/account/understanding-and-improving-security-score.md %}
+{%include account/understanding-and-improving-security-score.md %}

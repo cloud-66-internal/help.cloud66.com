@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Using Helm with Skycap
-categories: how-to-guides
+categories: how-to-guides/deployment
 order: 8
 lead: "How to integrate Helm package manager into Skycap"
 legacy: false
@@ -81,7 +81,7 @@ master:
 
 ```
 
-This makes it simple to share and (re)use environment variables and other configuration values between your main application and your Helm releases. This is particularly powerful when combined with [ConfigStore](/skycap/how-to-guides/config-store.html) (see below).
+This makes it simple to share and (re)use environment variables and other configuration values between your main application and your Helm releases. This is particularly powerful when combined with [ConfigStore](/skycap/how-to-guides/configuration/config-store.html) (see below).
 
 ### Tagging Helm releases
 
@@ -93,7 +93,7 @@ To tag any `values.yaml` file, click on the link for the file (on the **Helm Rel
 
 ### Using ConfigStore with Helm 
 
-[ConfigStore](/skycap/how-to-guides/config-store.html) is a centralised repo for configuration values that can be shared across and between your applications. 
+[ConfigStore](/skycap/how-to-guides/configuration/config-store.html) is a centralised repo for configuration values that can be shared across and between your applications. 
 
 Since ConfigStore also uses Stencil Placeholders to pull config values, they work almost identically to our example above. So, if we wanted to tell our Redis release to use the custom port, and that port was defined in CustomConfig, the Placeholder would be something like:
 
@@ -109,7 +109,7 @@ The big difference here is that `REDIS_PORT` is not set as an environment variab
 
 ### Using Vault with Helm 
 
-Skycap also integrates with [HashiCorp Vault](/skycap/how-to-guides/vault.html). You can pull values directly from a Vault connected to your Skycap account using Placeholders, in much the same way as ConfigStore above. 
+Skycap also integrates with [HashiCorp Vault](/skycap/how-to-guides/configuration/vault.html). You can pull values directly from a Vault connected to your Skycap account using Placeholders, in much the same way as ConfigStore above. 
 
 The syntax is: `vault("/path_root/path_to_key","key_name")`
 

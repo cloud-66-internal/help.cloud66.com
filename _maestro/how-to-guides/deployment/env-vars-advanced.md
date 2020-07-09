@@ -66,6 +66,17 @@ Be aware of the following while assigning environment variables:
 
 - **Some environment variables cannot be modified** &mdash; For example, environment variables for your server IP addresses cannot be changed because they are automatically set and updated based on reported IP addresses.
 
+## Managing environment variables using Toolbelt
+
+You can also manage your environment variables using your [Cloud 66 Toolbelt](/{{page.collection}}/references/toolbelt.html#configuring-toolbelt). There are four methods for managing env vars via Toolbelt:
+
+- [Listing environment variables](/{{page.collection}}/references/toolbelt.html#list-environment-variables)
+- [Downloading variables](/{{page.collection}}/references/toolbelt.html#download-environment-variables) as a file
+- [Setting individual variables](/{{page.collection}}/references/toolbelt.html#set-environment-variables)
+- Setting variables in bulk by [uploading a file](/{{page.collection}}/references/toolbelt.html#upload-environment-variables)
+
+Please click on the links above for detailed instructions on each of these methods.
+
 
 ## Using AUTO_GENERATE
 

@@ -9,4 +9,4 @@ tags: ["account", "security"]
 permalink: /:collection/:path:output_ext
 ---
 
-{%include references/account/understanding-and-improving-security-score.md %}
+{%include account/understanding-and-improving-security-score.md %}

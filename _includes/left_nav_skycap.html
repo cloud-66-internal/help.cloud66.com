@@ -27,11 +27,30 @@
         </ul>
 
      <ul class="menu-root">
-            {% assign section = include.collection | where:"categories","how-to-guides" | sort: "order" %}
+            {% assign section = include.collection | where:"categories","how-to-guides/common-tools" | sort: "order" %}
+
+            <li><h3><a href="/{{product}}/how-to-guides/common-tools">How-to: Common tools</a></h3></li>
+	        {% include left_nav_list.html section=section current=page %}
+        </ul>
+
+     <ul class="menu-root">
             {% assign formations = include.collection | where:"categories","how-to-guides/formations" | sort: "order" %}
 
-            <li><h3><a href="/{{product}}/how-to-guides">How-to Guides</a></h3></li>
+            <li><h3><a href="/{{product}}/how-to-guides/formations">How-to: Formations</a></h3></li>
             {% include left_nav_list.html section=formations current=page %}
+        </ul>
+
+     <ul class="menu-root">
+            {% assign section = include.collection | where:"categories","how-to-guides/configuration" | sort: "order" %}
+
+            <li><h3><a href="/{{product}}/how-to-guides/configuration">How-to: Configuration</a></h3></li>
+	        {% include left_nav_list.html section=section current=page %}
+        </ul>
+
+     <ul class="menu-root">
+            {% assign section = include.collection | where:"categories","how-to-guides/deployment" | sort: "order" %}
+
+            <li><h3><a href="/{{product}}/how-to-guides/deployment">How-to: Deployment</a></h3></li>
 	        {% include left_nav_list.html section=section current=page %}
         </ul>
 

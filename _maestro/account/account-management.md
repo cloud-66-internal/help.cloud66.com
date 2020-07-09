@@ -11,4 +11,4 @@ product: Maestro
 ---
 
 
-{%include references/account/account-management.md %}
+{%include account/account-management.md %}

@@ -2,6 +2,28 @@
 
 Deploy hooks are a powerful tool for customising the components on your servers, and automating the setup process whenever you add new servers. We've put together some examples of the most common use cases, but there an almost infinite number of possibilities. Essentially if you can install it on a Linux server or code it into a shell script, you can run it from a deploy hook.
 
+## Querying server metadata 
+
+You can query a server's metadata (including deployment details) using the following command:
+
+```shell
+curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY
+```
+You can use this command in a deploy hook, for example:
+
+```yaml
+first_thing:
+- target: any
+  execute: true
+  apply_during: all 
+  sudo: false
+  inline: |
+    #!/usr/bin/env bash
+    current_deployer=$(curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/deployment/triggered_by | jq -r '.response')
+    echo "Deployed by: $current_deployer"
+```
+For more details please read our full [Querying server metadata](/{{page.collection}}/how-to-guides/deployment/querying-server-metadata.html) doc.
+
 ## How do I install a package or library on each server I deploy?
 
 If your application relies on a package or software library that is not installed by default by Ubuntu, or by Cloud 66, you can use a [deploy hook](/{{page.collection}}/tutorials/deploy-hooks.html) to fetch and install the package whenever you deploy a server.  

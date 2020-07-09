@@ -11,4 +11,4 @@ permalink: /:collection/:path:output_ext
 {% assign product = 'node' %}
 
 
-{%include references/account/browser-requirements.md %}
+{%include account/browser-requirements.md %}
