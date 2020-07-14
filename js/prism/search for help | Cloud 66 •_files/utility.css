@@ -87,12 +87,7 @@
    white-space: nowrap !important;
    word-wrap: normal !important; /* 2 */
  }
-.u-overflowX {
-    overflow-x: auto;
-}
-.u-whiteSpaceNoWrap {
-    white-space: pre-wrap !important;
-}
+
  /**
   * Prevent whitespace wrapping
   */

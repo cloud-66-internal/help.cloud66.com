@@ -73,11 +73,12 @@ kbd {
     -webkit-font-smoothing: initial;
     -moz-osx-font-smoothing: initial;
 }
-code, kbd {
-    color: #e96900;
-    padding: 4px 6px;
-    border-radius: 2px;
-}
+// commenting out as conflicts with prism, may need to namespace.
+// code, kbd {
+//     color: #e96900;
+//     padding: 4px 6px;
+//     border-radius: 2px;
+// }
 em {
     color: $strong-color;
 }
