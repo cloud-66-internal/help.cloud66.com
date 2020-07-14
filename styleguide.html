@@ -285,20 +285,29 @@ var hello = "world";</code></pre>
 <h3>Copy code examples to Clipboard</h3>
 
 <div class="CodeBlock">
-<button class="js-copy-btn" data-clipboard-target="#copy-eg-1">Copy</button>
-<pre><code id="copy-eg-1" class="line-numbers language-yml">production:
-  docker:
-    configuration:
-      iam_instance_profile_name: docker-perms
-      version: 1.7.0
-      weave_version: 1.0.3
-      vpc_id: vpc-64872001
-      root_disk_size: 100
-      root_disk_type: ssd
-      image_keep_count: 5
-      nameservers: ['8.8.8.8', '8.8.4.4']
-</code></pre>
+    <button class="js-copy-btn" data-clipboard-target="#copy-1">Copy</button>
+    <pre><code id="copy-1" class="line-numbers language-yml">production:
+      docker:
+        configuration:
+          iam_instance_profile_name: docker-perms
+          version: 1.7.0
+          weave_version: 1.0.3
+          vpc_id: vpc-64872001
+          root_disk_size: 100
+          root_disk_type: ssd
+          image_keep_count: 5
+          nameservers: ['8.8.8.8', '8.8.4.4']
+    </code></pre>
 </div>
+
+<p>The above example is marked up with the following html:</p>
+<pre><code class="line-numbers language-markup">&lt;div class=&quot;CodeBlock&quot;&gt;
+    &lt;button class=&quot;js-copy-btn&quot; data-clipboard-target=&quot;#copy-1&quot;&gt;Copy&lt;/button&gt;
+    &lt;pre&gt;&lt;code id=&quot;copy-1&quot; class=&quot;line-numbers language-yml&quot;&gt;production:
+      ...
+    &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</code></pre>
 
 <h2>Terminal class</h2>
 
