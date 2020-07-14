@@ -171,3 +171,7 @@
 .u-text12 {
   font-size: 12px !important;
 }
+
+.u-positionRelative {
+    position: relative;
+}

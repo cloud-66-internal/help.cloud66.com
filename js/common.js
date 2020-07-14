@@ -21,14 +21,27 @@ $(function () {
     // <div>hello</div>
     // <button class="btn" data-clipboard-action="copy" data-clipboard-target="div">Copy</button>
 
-    var clipboard = new ClipboardJS('.js-copy-btn');
+    var clipboard = new ClipboardJS('button.js-copy-btn');
 
     clipboard.on('success', function(e) {
        console.log(e);
+       console.info('Action:', e.action);
+       console.info('Text:', e.text);
+       console.info('Trigger:', e.trigger);
+       e.clearSelection();
     });
 
     clipboard.on('error', function(e) {
-       console.log(e);
+        console.log('There was an issue with clipboard.js: ')
+        console.log(e);
+    });
+
+    $('button.js-copy-btn').on('click', function(){
+        var $this = $(this);
+        $this.text('Copied!');
+        setTimeout(function () {
+            $this.text('Copy');
+        }, 2000);
     });
 });
 
