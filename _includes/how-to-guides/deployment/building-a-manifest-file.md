@@ -1,6 +1,6 @@
 ## Overview
 
-A manifest file allows you to be more explicit about your application composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. 
+A manifest file allows you to be more explicit about your application composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt.
 
 The file describes the setup of the components that run your application. See [Getting started with manifest files](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) for an introduction.
 
@@ -14,7 +14,7 @@ For _Rails/Rack_ applications, place a file called `manifest.yml` in a folder na
 
 In Maestro there are two opportunities to edit your manifest file:
 
-* After your application code has been analyzed (and before you deploy it) by using the _advanced_ tab. 
+* After your application code has been analyzed (and before you deploy it) by using the _advanced_ tab.
 * After your application has been deployed, by clicking on *Configuration Files* and then the *Manifest* tab in the Dashboard
 
 #### Important
@@ -51,14 +51,14 @@ Next, select which component you would like to specify settings for. You can cho
 *   [Load balancers](#load-balancers)
 *   [Memcached](#memcached)
 *   [MongoDB](#mongodb)
-*   [MySQL](#mysql) 
+*   [MySQL](#mysql)
 *   [Nginx](#nginx) {% if include.product == "rails" %}
 *   [Node version](#node-version) {% endif %}
 *   [PostGIS](#postgis)
 *   [PostgreSQL](#postgresql)
 *   [Redis](#redis) {% if include.product == "rails" %}
 *   [Sinatra](#sinatra)
-*   [Rails](#rails) 
+*   [Rails](#rails)
 *   [Rails health checks](#rails-rack-deployment-health-checks){% endif %}
 
 {% if include.product == 'maestro' %}
@@ -78,7 +78,7 @@ Next, select which component you would like to specify settings for. You can cho
 
 #### Examples
 
-```
+```yml
 production:
   docker:
     configuration:
@@ -92,7 +92,7 @@ production:
       nameservers: ['8.8.8.8', '8.8.4.4']
 ```
 
-```
+```yml
 production:
   docker:
     configuration:
@@ -113,7 +113,7 @@ production:
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **iam_instance_profile_name** (*optional, AWS only, [Beta users only](/{{page.collection}}//resources/cloud-66-beta-program.html)*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 
-```
+```yml
 production:
   elasticsearch:
     configuration:
@@ -137,7 +137,7 @@ production:
 </div>
 
 
-```
+```yml
 production:
   gateway:
     name: aws_bastion
@@ -148,7 +148,7 @@ production:
 ### GlusterFS
 
 <div class="notice notice-warning"><p>
-The version of GlusterFS currently offered via the Cloud 66 Add-in is not supported by Ubuntu 18.04. To use this add-in please ensure that all of your application components are installed on servers running <strong>Ubuntu 16.04</strong>. 
+The version of GlusterFS currently offered via the Cloud 66 Add-in is not supported by Ubuntu 18.04. To use this add-in please ensure that all of your application components are installed on servers running <strong>Ubuntu 16.04</strong>.
 </p></div>
 
 - **version**: Specify the version of GlusterFS you want to install.
@@ -179,7 +179,7 @@ After you change the volume list, you need to redeploy your application for new 
 </div>
 
 
-```
+```yml
 production:
   glusterfs:
     configuration:
@@ -210,7 +210,7 @@ production:
 - **port**: Specify connection port (default value is 11211).
 - **listen_ip**: Specify which IP address to listen on (default value is 0.0.0.0).
 
-```
+```yml
 production:
   memcached:
     configuration:
@@ -230,7 +230,7 @@ production:
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
 - **iam_instance_profile_name** (*optional, AWS only, [Beta users only](/{{page.collection}}//resources/cloud-66-beta-program.html)*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 
-```
+```yml
 production:
   mongodb:
     configuration:
@@ -252,7 +252,7 @@ production:
 - **iam_instance_profile_name** (*optional, AWS only, [Beta users only](/{{page.collection}}//resources/cloud-66-beta-program.html)*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 
 
-```
+```yml
 production:
   mysql:
     configuration:
@@ -272,7 +272,7 @@ production:
 - **extra-build-arguments**: (applies to Rack/Passenger applications only). Extra build argument string to be added the nginx build command. Note: if you require additional modules that themselves require specific source to be present, you should use a `BEFORE_NGINX` [deploy hook](/{{page.collection}}/references/deploy-hooks-syntax.html#hook-points) to ensure that source is present. You can use the `cloud66/download` snippet to achieve this easily. The following build arguments are currently always added: `--with-http_realip_module --with-ipv6 --with-http_v2_module` regardless of this value.
 - **perfect_forward_secrecy** (_deprecated_): Enable [Perfect Forward Secrecy](http://en.wikipedia.org/wiki/Perfect_forward_secrecy) - this will be taken into account when your Nginx configuration is reloaded.
 
-```
+```yml
 production:
   rails:
     configuration:
@@ -286,7 +286,7 @@ production:
 
 If required, you can also specify the allowed origin (as '\*' or a single origin) and methods. For applications created since 21st September 2016, you can also specify a comma-seperated list of origins, headers, and whether to allow credentials for CORS.
 
-```
+```yml
 production:
   rails:
     configuration:
@@ -304,14 +304,14 @@ production:
 
 ### Node version (for Rails applications)
 
-We automatically install the latest release of Node version 6.x.x when we set up your Rack/Rails application servers. You can control which version is installed by editing the manifest file for any Rails application as follows: 
+We automatically install the latest release of Node version 6.x.x when we set up your Rack/Rails application servers. You can control which version is installed by editing the manifest file for any Rails application as follows:
 
-``` 
+```yml
 rails:
   configuration:
     node_version: "6"       # will install latest release of v6.x.x
 ```
-``` 
+```yml
 rails:
   configuration:
     node_version: "6.14.4"  # will install specific v6.14.4
@@ -335,7 +335,7 @@ If you need a newer version of Node, you can install one using the same method a
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
 - **iam_instance_profile_name** (*optional, AWS only, [Beta users only](/{{page.collection}}//resources/cloud-66-beta-program.html)*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 
-```
+```yml
 production:
   postgresql:
     configuration:
@@ -352,7 +352,7 @@ production:
 ### PostGIS
 
 - **version**: Specify the version of PostGIS you want to install.
-```
+```yml
 production:
   postgresql:
     configuration:
@@ -393,7 +393,7 @@ A Rails application type in the manifest file gives you fine control over things
 <p>In order to use a <em>vpc_id</em>, you must provide <em>subnet_id</em> for all servers used by your application.</p>
 </div>
 
-```
+```yml
 production:
   rails:
     configuration:
@@ -442,7 +442,7 @@ The manifest file gives you fine control over things like the Ruby version or wh
 <p>In order to use a <em>vpc_id</em>, you must provide <em>subnet_id</em> for all servers used by your application.</p>
 </div>
 
-```
+```yml
 production:
   rack:
     configuration:
@@ -474,7 +474,7 @@ These checks define tests to confirm whether your application has been successfu
 All of these are optional. For more details on health checks please read our [how-to guide](/rails/how-to-guides/deployment/deployment-health-checks.html).
 
 #### Example:
-
+```yml
     rails/rack:
     	configuration:
     		health:
@@ -484,7 +484,7 @@ All of these are optional. For more details on health checks please read our [ho
     			endpoint: '/'
     			accept: ["200", "300-399"]
     			timeout: 30
-
+```
 
 {% endif %}
 
@@ -495,7 +495,7 @@ All of these are optional. For more details on health checks please read our [ho
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **iam_instance_profile_name** (*optional, AWS only, [Beta users only](/{{page.collection}}//resources/cloud-66-beta-program.html)*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 
-```
+```yml
 production:
   redis:
     configuration:
@@ -505,7 +505,7 @@ production:
       iam_instance_profile_name: redis-perms
 ```
 
-{% if include.product == 'rails' %} 
+{% if include.product == 'rails' %}
 
 ### Sinatra
 
@@ -520,7 +520,7 @@ For Sinatra use [Rack](#rack)
 
 ### AWS load balancer
 
-You can use your Manifest file to customize the AWS load balancer deployed by Cloud 66. 
+You can use your Manifest file to customize the AWS load balancer deployed by Cloud 66.
 
 Available settings:
 
@@ -528,7 +528,7 @@ Available settings:
 - **wait_after_adding_servers**: The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 - **wait_after_removing_servers**: The time (in seconds) we will wait after removing a server from the load balancer before we begin deploying to it. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 
-```
+```yml
     production:
       load_balancer:
         configuration:
@@ -540,7 +540,7 @@ Available settings:
 
 ### GCE load balancer
 
-You can use your Manifest file to customize the GCE load balancer deployed by Cloud 66. 
+You can use your Manifest file to customize the GCE load balancer deployed by Cloud 66.
 
 Available settings (refer to the [GCE documentation](https://cloud.google.com/compute/docs/load-balancing/network/target-pools) for more information):
 
@@ -549,7 +549,7 @@ Available settings (refer to the [GCE documentation](https://cloud.google.com/co
 - **wait_after_adding_servers**: The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 - **wait_after_removing_servers**: The time (in seconds) we will wait after removing a server from the load balancer before we begin deploying to it. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 
-```
+```yml
     production:
       load_balancer:
         configuration:
@@ -582,7 +582,7 @@ Available settings (refer to the [HAProxy documentation](http://haproxy.1wt.eu/d
 - **wait_after_adding_servers**: The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 - **wait_after_removing_servers**: The time (in seconds) we will wait after removing a server from the load balancer before we begin deploying to it. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 
-```
+```yml
     production:
       load_balancer:
         servers:
@@ -618,7 +618,7 @@ Available settings (refer to the [Linode documentation](https://www.linode.com/d
 - **wait_after_adding_servers**: The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 - **wait_after_removing_servers**: The time (in seconds) we will wait after removing a server from the load balancer before we begin deploying to it. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 
-```
+```yml
     production:
       load_balancer:
         configuration:
@@ -631,7 +631,7 @@ Available settings (refer to the [Linode documentation](https://www.linode.com/d
 
 ### Rackspace load balancer
 
-Use a manifest file to customize the Rackspace load balancer deployed by Cloud 66. 
+Use a manifest file to customize the Rackspace load balancer deployed by Cloud 66.
 
 Available settings (refer to the [Rackspace documentation](http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/Algorithms-d1e4367.html) for more information):
 
@@ -639,7 +639,7 @@ Available settings (refer to the [Rackspace documentation](http://docs.rackspace
 - **wait_after_adding_servers**: The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 - **wait_after_removing_servers**: The time (in seconds) we will wait after removing a server from the load balancer before we begin deploying to it. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 
-```
+```yml
     production:
       load_balancer:
         configuration:
@@ -651,13 +651,13 @@ Available settings (refer to the [Rackspace documentation](http://docs.rackspace
 
 ## Which server?
 
-Every component defined in the manifest file must be bound to a server. However, if you'd like configurations to apply to all your servers, you don't need to specify a server type. 
+Every component defined in the manifest file must be bound to a server. However, if you'd like configurations to apply to all your servers, you don't need to specify a server type.
 
 Servers can be deployed specifically to host a single component, be shared between multiple components (e.g. Rails and MySQL on the same server) or be an external server (e.g. using an external database).
 
 Here is an example of a server definition:
 
-```
+```yml
 production:
   rails:
     servers:
@@ -682,7 +682,7 @@ These are the parameters that the _server_ section can take:
 <p>Only a single cloud vendor and region is supported for servers used by an application.</p>
 </div>
 
-```
+```yml
 production:
   rails:
     servers:
@@ -702,7 +702,7 @@ production:
 
 - **address** (_Optional, Registered Server only_): Address of the server, only applicable to Registered Servers. For Registered Servers, _unique_name_ and _address_ should be defined.
 
-```
+```yml
 production:
   rails:
     server:
@@ -730,7 +730,7 @@ If you would like to use an external server for a component (like using your own
 
 External server definitions specify that the component is hosted on a server external to Cloud 66. This is not a valid target for your main application (e.g. rails) but may be appropriate for another component (e.g. MongoDB):
 
-```
+```yml
 production:
   mysql:
     server: external
@@ -748,7 +748,7 @@ You can add your environment variables to your manifest files.
 
 Here is an example:
 
-```
+```yml
 production:
   environment_variables:
     SOME_VARIABLE: value
@@ -770,7 +770,7 @@ Any environment variable that is generated by the result of the code analysis (l
 
 If you would like more flexibility over the signals used to control the processes, you can use the `procfile_metadata` section. Here is an example:
 
-```
+```yml
 production:
   procfile_metadata:
     worker:
@@ -793,7 +793,7 @@ Default values for each process type are:
 - Web/Custom Web Processes:
   - Stop Signal `stop_sequence`: `quit`
   - Restart Signal `restart_signal`: `usr2`
-- Non-Web Processes: 
+- Non-Web Processes:
   - Stop Signal `stop_sequence`: `term,35,kill` (if sidekiq detected)  
   - Stop Signal `stop_sequence`: `quit,30,term,11,kill` (if sidekiq NOT detected)  
   - Restart `restart_on_deploy`: `true`
@@ -803,7 +803,7 @@ Default values for each process type are:
 
 Each component supports the additional partial configuration to add custom live log files for that component. For example:
 
-```
+```yml
 production:
   rails:
     configuration:
@@ -811,7 +811,7 @@ production:
 ```
 ...or
 
-```
+```yml
 production:
   docker:
     configuration:
