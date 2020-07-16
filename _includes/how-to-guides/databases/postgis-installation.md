@@ -9,13 +9,13 @@ Installing through Cloud 66 is as simple as a manifest file entry. Refer to our 
 In order for your manifest file to be picked up, you need a file called **manifest.yml** to be present within a folder named **.cloud66**, which is in turn located in the root of your source code, checked into your repository.
 
 
-```
+```shell
 [source_repo]/.cloud66/manifest.yml
 ```
 
 For Cloud 66 to install PostGIS, your manifest file should contain the following:
 
-```
+```yaml
 production:
     postgresql:
         configuration:
@@ -25,7 +25,7 @@ production:
 If you would like to specify versions, it should look something like this:
 
 
-```
+```yaml
 production:
     postgresql:
         configuration:
@@ -48,7 +48,7 @@ A number of prerequisites are needed, which can either be built from source or i
 
 Install packages using:
 
-```
+```shell
 $ sudo apt-get install postgresql-9.6-postgis-2.3 postgresql-contrib-9.6 postgresql-9.6-postgis-scripts
 
 ```

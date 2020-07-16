@@ -27,13 +27,13 @@ To generate a management certificate you can use OpenSSL:
 
 * Run the following command in your console:
 
-```
+```bash
 	$ openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout azure.pem -out azure.pem
 ```
 
 * Now use the created azure.pem file and run the following command:
 
-```
+```bash
 	$ openssl x509 -inform pem -in azure.pem -outform der -out azure.cer
 ```
 
