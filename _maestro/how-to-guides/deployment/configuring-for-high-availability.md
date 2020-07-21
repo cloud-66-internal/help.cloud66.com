@@ -4,7 +4,7 @@ template: one-col
 title:  "Configuring for high availability"
 order: 10
 categories: how-to-guides/deployment
-lead: How to congfigure your Maestro application for high availability with mutli-master architecture
+lead: How to configure your Maestro application for high availability with multi-master architecture
 tags: ['server', 'operations']
 legacy: false
 permalink: /:collection/:path:output_ext
