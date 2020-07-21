@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-Service configuration allows you to be more explicit about your Maestro services and control settings that are not usually available through the user interface or Cloud 66 Toolbelt. 
+Service configuration allows you to be more explicit about your Maestro services and control settings that are not usually available through the user interface or Cloud 66 Toolbelt.
 
 These settings describe the composition of your services. Here are some common examples of service configurations you can define:
 
@@ -26,147 +26,149 @@ For a full list of available options, see the [table](#service-configuration-opt
 
 ## Specifying service configurations
 
-While you're building your application, custom service configurations can be accessed by clicking on the _Advanced_ tab. This gives you direct access to editing the `service.yml` for your application.
+While you're building your application, custom service configurations can be accessed by clicking on the *Advanced* tab. This gives you direct access to editing the `service.yml` for your application.
 
-Once your application has been built, you can access `service.yml` under _Configuration Files_ in the right menu of your Application Overview.
+Once your application has been built, you can access `service.yml` under *Configuration Files* in the right menu of your Application Overview.
 
 ## Service configuration examples
 
-We have taken these examples from our public Samples repository that you can [access here](https://github.com/cloud66-samples). They are not intended for use as anything except examples. 
+We have taken these examples from our public Samples repository that you can [access here](https://github.com/cloud66-samples). They are not intended for use as anything except examples.
 
 ### Single service with MySQL database
 
-In this example, we'll be configuring a service called _web_, which is pulled from a Git repository and requires a MySQL database.
+In this example, we'll be configuring a service called *web*, which is pulled from a Git repository and requires a MySQL database.
 
-{% highlight yaml %}
+```yaml
 services:
-  web:
-    log_folder: "/usr/src/app/log"
-    ports:
-    - container: 3000
+ web:
+  log_folder: "/usr/src/app/log"
+  ports:
+   - container: 3000
       http: 80
       https: 443
-    git_url: https://github.com/cloud66-samples/pilot
-    git_branch: master
-    dockerfile_path: Dockerfile
+   git_url: https://github.com/cloud66-samples/pilot
+   git_branch: master
+   dockerfile_path: Dockerfile
 databases:
-- mysql                            
-{% endhighlight %}
+- mysql
+```
 
-As you can see above, the _web_ service is pulled from a sample project on Github called Pilot. It specifies both a path for the Dockerfile and a logging folder. Finally, the container is set to listen on port 3000 and uses external ports 80 and 443.
+As you can see above, the *web* service is pulled from a sample project on GitHub called Pilot. It specifies both a path for the Dockerfile and a logging folder. Finally, the container is set to listen on port 3000 and uses external ports 80 and 443.
 
 ### Multiple services and databases
 
-In this example, we'll be running three services - one called *seller*, one called *buyer* and one called *dashboard*  as well as a Redis database.
+In this example, we'll be running three services - one called *seller*, one called *buyer* and one called *dashboard* as well as a Redis database. You can define as many services as you need. 
 
-You can define as many services as you need. The first time you build your application, those services will be started on the first server you build but you can use the UI, Toolbelt or the API to move them around.
-
-{% highlight yaml %}
+```yaml
 services:
-  seller:
-    git_url: https://github.com/cloud66-samples/acme.git
-    git_branch: master
-    dockerfile_path: "./Dockerfile"
-    build_root: seller
-    command: seller --redis redis:6379
-  buyer:
-    git_url: https://github.com/cloud66-samples/acme.git
-    git_branch: master
-    dockerfile_path: "./Dockerfile"
-    build_root: buyer
-    command: buyer --redis redis:6379
-  dashboard:
-    git_url: https://github.com/cloud66-samples/acme.git
-    git_branch: master
-    ports:
-    - container: 5000
-      http: 80
-    dockerfile_path: "./Dockerfile"
-    build_root: dashboard
-    command: "/go/src/dashboard/dashboard --redis redis:6379"
-  redis:
-    image: redis
-    ports:
-    - 6379                            
-{% endhighlight %}
+ seller:
+  git_url: https://github.com/cloud66-samples/acme.git
+  git_branch: master
+  dockerfile_path: "./Dockerfile"
+  build_root: seller
+  command: seller --redis redis:6379
+ buyer:
+  git_url: https://github.com/cloud66-samples/acme.git
+  git_branch: master
+  dockerfile_path: "./Dockerfile"
+  build_root: buyer
+  command: buyer --redis redis:6379
+ dashboard:
+  git_url: https://github.com/cloud66-samples/acme.git
+  git_branch: master
+  ports:
+  - container: 5000
+     http: 80
+  dockerfile_path: "./Dockerfile"
+  build_root: dashboard
+  command: "/go/src/dashboard/dashboard --redis redis:6379"
+ redis:
+  image: redis
+  ports:
+  - 6379
+```
 
 ### Using Habitus for builds
 
-[Habitus is a build workflow tool for Docker-based applications](http://www.habitus.io). It allows you to create a build workflow consisting of multiple steps for your Maestro application. Maestro fully supports Habitus. To enable Habitus on your Maestro application, you need to do the following:
+[Habitus is a build workflow tool for Docker-based applications](http://www.habitus.io/). It allows you to create a build workflow consisting of multiple steps for your Maestro application. Maestro fully supports Habitus. To enable Habitus on your Maestro application, you need to do the following:
 
-1.  Add a `build.yml` to your repository
-2.  Set `use_habitus` attribute to `true` in your `service.yml`
-3.  Set the `use_habitus_step` to the step you would like to use for your service in your `service.yml` 
+1. Add a `build.yml` to your repository
+2. Set `use_habitus` attribute to `true` in your `service.yml`
+3. Set the `use_habitus_step` to the step you would like to use for your service in your `service.yml`
 
 You can edit your `service.yml` directly from the Dashboard by clicking *Edit service* and then clicking the *Advanced* tab.
 
-A Habitus build usually has multiple steps and each step can generate a Docker image. Using `use_habitus_step` attribute you can specify which step's results you would like to use as the image for the container. 
+A Habitus build usually has multiple steps and each step can generate a Docker image. Using `use_habitus_step` attribute you can specify which step's results you would like to use as the image for the container.
 
-Check out the [Habitus website](http://www.habitus.io) for more information about generating a `build.yml`.
+Check out the [Habitus website](http://www.habitus.io/) for more information about generating a `build.yml`.
 
 ## Adding a DaemonSet
 
-A DaemonSet ensures that a (single) copy of a specific Pod is added to every Node. This is useful for running background processes (aka daemons) but has many other uses. For more detail pleased read our [explanatory doc](/maestro/the-basics/concepts-and-terminology.html#daemonsets) on the subject. 
+A DaemonSet ensures that a (single) copy of a specific Pod is added to every Node. This is useful for running background processes (aka daemons) but has many other uses. For more detail pleased read our [explanatory doc](notion://www.notion.so/maestro/the-basics/concepts-and-terminology.html#daemonsets) on the subject.
 
 To create a DaemonSet we simply set the `type` of any service to `daemon_set`. For example:
 
 {% highlight yaml %}
-    service:
-      web:
-        image: training/webapp
-        type: daemon_set
-        ports:
-        - container: 5000
-          http: 80
+service:
+ web:
+  image: training/webapp
+  type: daemon_set
+  ports:
+  - container: 5000
+     http: 80
 {% endhighlight %}
 
 This will use the image called "webapp" to spawn a single Pod called "web" on every Node in your Cluster.
 
 ## Database configurations
 
-You can specify any required databases in the service configuration. As databases are fairly static components that rarely change without a migration, they aren't run in containers. This avoids the complexity and overhead of running databases in a container and allows Cloud 66 to perform replication and backups as normal. These databases will be deployed and configured automatically, and their addresses and access credentials will be made available to the containers across the application with environment variables.
+The first time you deploy an application, you can specify any required databases in the service configuration. These databases will be deployed and configured automatically, and their addresses and access credentials will be made available to the containers across the application with environment variables.
+
+Once your application has been deployed, you can still add databases, but you need to do so using our database [Add-Ins](/maestro/how-to-guides/add-ins/) feature. 
+
+As databases are fairly static components that rarely change without a migration, they aren't run in containers. This avoids the complexity and overhead of running databases in a container and allows Cloud 66 to perform replication and backups as normal. 
 
 The allowed database values are: `postgresql`, `mysql`, `redis`, `mongodb`, `elasticsearch` , `rabbitmq` and `glusterfs`. For example:
 
 {% highlight yaml %}
 services:
-    <service_name>:
+<service_name>:
 databases:
-    - mysql
-    - elasticsearch
+- mysql
+- elasticsearch
 {% endhighlight %}
 
 ## Environment variables
 
-Any [environment variable](/maestro/how-to-guides/deployment/env-vars-advanced.html) defined in your application will be made available within your service container. 
+Any [environment variable](notion://www.notion.so/maestro/how-to-guides/deployment/env-vars-advanced.html) defined in your application will be made available within your service container.
 
 The syntax for calling environment variables in a service definition is:
 
 {% highlight yaml %}
 services:
- service_name:
-   env_vars:
-    VAR1: _env(VALUE_OF_VARIABLE)
+service_name:
+env_vars:
+VAR1: _env(VALUE_OF_VARIABLE)
 {% endhighlight %}
 
-You can also define a new environment variable for a service or reference an environment variable in other applications or services, and then call these in your service definition. For more info please read our [detailed guide](/maestro/how-to-guides/deployment/env-vars-advanced.html#syntax-examples) to the sharing env vars between apps and services.
+You can also reference environment variable in other applications or services. For more info please read our [detailed guide](notion://www.notion.so/maestro/how-to-guides/deployment/env-vars-advanced.html#syntax-examples) to the sharing env vars between apps and services.
 
 ## Setting a Service Account name
 
-Kubernetes relies on its "[Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)" feature to manage the identity of processes running inside Pods. 
+Kubernetes relies on its "[Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)" feature to manage the identity of processes running inside Pods.
 
 By default all services belong to a service account named `default`. Normally this provides sufficient access for your application. However, should you require elevated access (e.g. to allow for log collection or metrics gathering), you can set a custom Service Account for any service using the `service_account_name`. For example:
 
-{% highlight yaml %}
+```yaml
 services:
- web:
-  ports:
-   - container: 3000
-     http: 80
- service_account_name: public-front-end
-{% endhighlight %}
+web:
+ports:
+- container: 3000
+http: 80
+service_account_name: public-front-end
+```
 
-This will make the service named "web" run under the "public-front-end" Service Account in Kubernetes.  
+This will make the service named "web" run under the "public-front-end" Service Account in Kubernetes.
 
 Bear in mind that this service account will first need to be created on your cluster (with associated access bindings) before it will function correctly. Please read the [Kubernetes guide to configuring Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) for more detail.
 
