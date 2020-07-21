@@ -12,55 +12,75 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-This guide assumes you already know the basics of adding and editing environment variables in Maestro. If you need help with this, please follow [our tutorial](/maestro/tutorials/env-vars.html) on the subject.
-
+This guide assumes you already know the basics of adding and editing environment variables (env vars) in Maestro. If you need help with this, please follow [our tutorial](notion://www.notion.so/maestro/tutorials/env-vars.html) on the subject.
 
 ## Default environment variables
 
 Cloud 66 creates a number of default environment variables, which can be used in addition to those that you define. Depending on your application configuration, the environment variables available will differ.
 
-For example, if you have a [MySQL server](/maestro/tutorials/adding-database.html), the following variables are created and inserted into your _database.yml_ (unless you have specified your own):
+For example, if you have a [MySQL server](notion://www.notion.so/maestro/tutorials/adding-database.html), the following variables are created and inserted into your *database.yml* (unless you have specified your own):
 
-- **MYSQL_ADDRESS** &mdash; The physical address of your server
-- **MYSQL_USERNAME** &mdash; Randomly generated string
-- **MYSQL_PASSWORD** &mdash; Randomly generated string
+- **MYSQL_ADDRESS** — The physical address of your server
+- **MYSQL_USERNAME** — Randomly generated string
+- **MYSQL_PASSWORD** — Randomly generated string
 
-For a list of environment variables available in your application: 
+### Pre-defined environment variables
+
+There are some also special variables that are predefined by Cloud 66:
+
+**SERVER_NAME:** Is defined on each server and is only available inside the server
+
+**DOCKER_HOST_IP:** Is injected to each container and is only available inside containers
+
+## Listing environment variables
+
+For a list of environment variables available in your application:
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Environment Variables*  in the **Application** panel on the right of the screen
+2. Click on *Environment Variables* in the **Application** panel on the right of the screen
 3. The initial page displays all the *Editable* variables. You can see all the *Read Only* variables by clicking on that tab.
 
-## Assigning environment variables during deployment
+## Assigning environment variables
 
-If your application relies on specific environment variables to complete the deployment process, you will need to add them before deploying. 
+### During deployment
+
+If your application relies on specific environment variables to complete the deployment process, you will need to add them before deploying.
 
 To do this:
 
-1. After you have taken a snapshot of your code (i.e. the first build) click on *Environment Variables* in the panel on the right.
+1. After you have defined your services, but before you build your application images, click on *Configuration* in the right-hand panel
 2. Set your variables by either manually entering them, or uploading a file that contains the variables. This file should use the following format:
 
-```
+```bash
 KEY_1=value_1
 KEY_2=value_2
 ```
 
-Once your variables are set, *Save changes* and continue to deployment. 
+Once your variables are set, *Save changes* and continue to deployment.
 
 
-## Assigning environment variables after application build
+### After application build
+
+You can also assign environment variables to an application that has already been built and/or deployed.
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Environment Variables*  in the **Application** panel on the right of the screen
+2. Click on *Configuration* in the **Application** panel on the right of the screen
 3. Add or update the variables as required
 4. Save and redeploy
 
 Be aware of the following while assigning environment variables:
 
-- **Environment variables are not escaped** &mdash; However, they are always wrapped in double quotes (eg. 
-`"ENV_VAR"`) so you can use them with multi-line variables like SSH keys.
+- **Some environment variables cannot be modified** — For example, environment variables for your server IP addresses cannot be changed because they are automatically set and updated based on reported IP addresses.
 
-- **Some environment variables cannot be modified** &mdash; For example, environment variables for your server IP addresses cannot be changed because they are automatically set and updated based on reported IP addresses.
+### Using AUTO_GENERATE
+
+**AUTO_GENERATE** allows you to insert placeholder environment variables into your application, and Cloud 66 will automatically replace them with a random string. This is useful to have Cloud 66 automatically generate values for secrets that you do not want to have committed into your repository.
+
+To use **AUTO_GENERATE**, you define any (editable) environment variable with the value `AUTO_GENERATE` or `AUTO_GENERATE_{number}` where the number is the length of the value to auto-generate - ie. **AUTO_GENERATE_32**.
+
+When you deploy your application, Cloud 66 will replace these placeholders with a random string of the specified length (10 is the default length).
+
+Using this, you can safely commit your env file to your git repository without exposing the actual values of your environment variables.
 
 ## Managing environment variables using Toolbelt
 
@@ -74,114 +94,142 @@ You can also manage your environment variables using your [Cloud 66 Toolbelt](/{
 Please click on the links above for detailed instructions on each of these methods.
 
 
-## Using AUTO_GENERATE
+## Referencing existing variables
 
-**AUTO_GENERATE** allows you to insert placeholder environment variables into your application, and Cloud 66 will automatically replace them with a random string. This is useful to have Cloud 66 automatically generate values for secrets that you do not want to have committed into your repository.
+You can define environment variables that reference (i.e. pull in) existing variables:
 
-To use **AUTO_GENERATE**, you define any (editable) environment variable with the value `AUTO_GENERATE` or `AUTO_GENERATE_{number}` where the number is the length of the value to auto-generate - ie. **AUTO_GENERATE_32**.
+- **You can reference other environment variables on the same application** — This is useful when referencing an environment variable which you don't control such as a server IP address.
+- **You can reference environment variables available on other applications** — You need administrative privileges on the target application to reference environment variables on it.
+- **You can reference environment variables available on other services** — You need administrative privileges on the target application to reference environment variables in its services.
 
-When you deploy your application, Cloud 66 will replace these placeholders with a random string of the specified length (10 is the default length). 
+### Basic referencing syntax
 
-Using this, you can safely commit your env file to your git repository without exposing the actual values of your environment variables.
+You can reference another environment variable in the same application using the following syntax:
 
-## Define referenced environment variable
-
-You can define a new environment variable and reference it to an existing environment variable.
-
-- **You can reference other environment variables on the same application**  &mdash; This is useful when referencing an environment variable which you don't control such as a server IP address.
-
-- **You can reference environment variables available on other applications** &mdash;  You need administrative privileges on the target application to reference environment variables on it. You cannot use intra-application environment variables to gain access to database credentials, only database addresses.
-
-- **You can reference environment variables available on other services**  &mdash; You need administrative privileges on the target application to reference environment variables on it.
-
-You can reference another environment variable using the following syntax:  
-
-<kbd>&#123;&#123;ENV_VAR&#125;&#125;</kbd>
+{% raw %}`{{ENV_VAR}}`{% endraw %}
 
 or
 
-`_env(ENV_VAR:DEFAULT_VALUE)`  
+`_env(ENV_VAR:DEFAULT_VALUE)`
 
-The second method is useful when you want to specify a default value. If cloud66 can’t find the referenced environment variable it will use default value instead. (**DEFAULT_VALUE** is optional). 
+The second method is useful when you want to specify a default value. If Cloud 66 can’t find the referenced environment variable it will use default value instead. (**DEFAULT_VALUE** is optional).
 
-### Examples
+For example, this sets a health check variable to use the external web address variable of the application:
 
-This example sets a health check variable to use the external web address variable of the application:
-
-```
+```bash
 MY_HEALTH_CHECK=http://_env(WEB_ADDRESS_EXT)/health_check.html
-
 ```
 
 This example sets the key to use the external web address of the application, and sets a default IP if that variable is not available:
 
-```
+```bash
 MY_KEY_1=_env(WEB_ADDRESS_EXT:192.168.0.1)
-
 ```
 
 ### Intra-app referencing syntax
 
-To reference an environment variable from another application you will need: 
+To reference an environment variable from another application you will need:
 
-* The unique identifier (APP_UID) for that application
-* Admin access to that application
+- The unique identifier (APP_UID) for that application
+- Admin access to that application
 
 You can find an application's APP_UID by clicking on *Settings & Information* in the **Application** panel on the right of the screen and then clicking on the *Information* tab at the top of the main panel.
 
 The syntax for referencing variables from another app is:
 
-`{% raw %}{{STACK[APP_UID].ENV_VAR}}{% endraw %}` 
+{% raw %}`{{STACK[APP_UID].ENV_VAR}}`{% endraw %}
 
-or 
+or
 
-`_env(STACK[APP_UID].ENV_VAR)`. 
+`_env(STACK[APP_UID].ENV_VAR)`
 
-#### Note
+### Note
+
 <div class="notice"><p>This syntax still uses the term "stack" which in the process of being deprecated in Maestro. "Stack" means, for all intents and purposes, the same thing as "application".
 </p></div>
 
-
-
 ### Intra-service referencing
 
-To refer to an environment variable on other services you can use 
+To refer to an environment variable in other services you can use
 
-`{% raw %}{{STACK[STACK_UID].SERVICE[SERVICE_NAME].ENV_VAR}}{% endraw %}`  
+{% raw %}`{{STACK[STACK_UID].SERVICE[SERVICE_NAME].ENV_VAR}}`{% endraw %}
 
-or 
+or
 
-`_env(STACK[STACK_UID].SERVICE[SERVICE_NAME].ENV_VAR)`.
+`_env(STACK[STACK_UID].SERVICE[SERVICE_NAME].ENV_VAR)`
 
+## Calling environment variables in a service
 
-## Calling environment variables in code
+Environment variables can be used in a Maestro service definition (`service.yml` file) to pass variables between application components. 
 
-Using environment variables in your application logic is done differently depending on your application settings. Here are some common examples:
+The syntax for calling environment variables in a service definition is:
 
-### Bash scripts
-```
-$ENV_VAR
-```
-
-### YAML files 
-
-```
-username: <%= ENV['DB_USER'] %>
+```yaml
+services:
+ service_name:
+   env_vars:
+    VAR1: _env(VALUE_OF_VARIABLE)
 ```
 
-### .RB files
+You can also use `_env(VALUE_OF_VARIABLE)` if you prefer that syntax. 
 
+## Syntax examples
+
+```yaml
+services:
+ <service_name>:
+  env_vars:
+   # Setting an environment variable
+   ENV_NAME1: VALUE
+
+   # Referencing an application-wide variable
+   ENV_NAME2: _env(STACK_ENV_VAR_NAME)
+
+   # Referencing an application-wide variable with a default fall-back
+   ENV_NAME3: _env(APP_ENV_VAR_NAME:Default)
+
+   # Referencing a variable from another service
+   ENV_NAME4: _env(SERVICE[SERVICE_NAME].ENV_VAR_NAME)
+
+   # Referencing a variable from another service with a default fall-back
+   ENV_NAME5: _env(SERVICE[SERVICE_NAME].ENV_VAR_NAME:Default)
+
+   # Referencing a variable from another application
+   ENV_NAME6: _env(STACK[APP_UID].ENV_VAR_NAME)
+
+   # Referencing a variable from another application with default fall-back
+   ENV_NAME7: _env(STACK[APP_UID].ENV_VAR_NAME:Default)
+
+   # Referencing a service variable from another application
+   ENV_NAME8: _env(STACK[APP_UID].SERVICE[SERVICE_NAME].ENV_VAR_NAME)
+
+   # Referencing a service variable from another application with default fall-back
+   ENV_NAME9: _env(STACK[APP_UID].SERVICE[SERVICE_NAME].ENV_VAR_NAME:Default)
 ```
-working_directory "#{ENV['STACK_PATH']}"
+
+### Working example
+
+In this example we are adding **pgbouncer**, a popular connection pooler for PostgreSQL, to an application. We're adding pgbouncer as a container, and we need to point it at to our Postgres instances so that it can work its magic. The environment variables section of the `service.yml` would look something like this:
+
+```yaml
+services:
+ pgbouncer:
+  env_vars:
+   DATABASES_HOST: _env(POSTGRESQL_ADDRESS)
+   DATABASES_PORT: _env(POSTGRESQL_PORT)
+   DATABASES_USER: _env(POSTGRESQL_USERNAME)
+   DATABASES_PASSWORD: _env(POSTGRESQL_PASSWORD)
+   DATABASES_DBNAME: _env(POSTGRESQL_DATABASE)
+   PGBOUNCER_LISTEN_PORT: 5439
 ```
 
-## Using environment variables in a Dockerfile
+## Calling env vars in a Dockerfile
 
-You can pass environment variables into a Dockerfile during your build process with the `$VARIABLE` syntax, which will be populated with environment variable(s) set on the application. For example, to call a env named `MY_VARIABLE` you would use `ENV MY_VARIABLE "$MY_VARIABLE"` 
+You can pass environment variables into a Dockerfile during your build process with the `$VARIABLE` syntax, which will be populated with environment variable(s) set on the application. For example, to call a env named `MY_VARIABLE` you would use `ENV MY_VARIABLE "$MY_VARIABLE"`
 
 The same example, in context:
 
-```
+```docker
 FROM ruby:latest
 RUN mkdir /myapp
 WORKDIR /myapp
@@ -191,18 +239,26 @@ EXPOSE 3000
 CMD ["/myapp/main.rb"]
 ```
 
+For more examples, please read our [full how-to guide on using env vars in Dockerfiles](/maestro/how-to-guides/deployment/env-vars-in-dockerfile.html).
 
+## Calling environment variables in code
 
-## Pre-defined environment variables
+Using environment variables in your application logic is done differently depending on your application settings. Here are some common examples:
 
-There are some variables that are predefined by Cloud 66:
+### Bash scripts
 
-**SERVER_NAME:** Is on each server and is only available inside the server
+```bash
+$ENV_VAR
+```
 
-**DOCKER_HOST_IP:** Is injected to each container and is only available inside containers
+### YAML files
 
+```yaml
+username: <%= ENV['DB_USER'] %>
+```
 
-Note that predefined environment variables are preferable! for instance, you can define `MEMCACHED_ADDRESS` to be `_env(DOCKER_HOST_IP)` to refer to the `DOCKER_HOST_IP` which is one of the predefined ones.
+### .RB files
 
-
-
+```ruby
+working_directory "#{ENV['STACK_PATH']}"
+```
