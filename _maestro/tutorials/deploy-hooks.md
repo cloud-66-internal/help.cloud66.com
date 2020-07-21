@@ -48,14 +48,14 @@ The simplest kind of hook is the `command`. This simply executes a command in th
 
 We're going to add the hook below to our demo application:
 
-```
+```yaml
 production: # Environment
     first_thing: # Hook point
       - command: apt-get install nmap -y # Hook type
         target: any # Hook fields
         execute: true
-
 ```
+
 This hook will install the `nmap` package on our server during the deployment process. We've added the `execute` hook field because we want the command to be executed during deployment. If you don't add this field, the code you're calling won't be executed. 
 
 #### Important
@@ -121,7 +121,7 @@ Snippets are pre-defined hook scripts hosted in a [Cloud 66 repository](https://
 
 For example the [Cloud 66 ImageMagick snippet](https://github.com/cloud66/snippets/blob/master/cloud66/imagemagick) installs ImageMagick, the popular image processing application. You can use the example below to test it in your *demo* app:
 
-```
+```yaml
 production: # Environment
     first_thing: # Hook point
       - snippet: cloud66/imagemagick # Hook type
@@ -137,7 +137,7 @@ Script hooks allow you to add your own logic to a deploy hook, either by calling
 
 The hook below will create an arbitrary log file in /tmp using a simple inline script:
 
-```
+```yaml
 first_thing: # Hook point
  - inline: |
 

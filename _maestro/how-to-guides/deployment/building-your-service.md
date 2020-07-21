@@ -41,24 +41,20 @@ There are a number of directives you can set in your service configuration to cu
 
 Specifies the command you would like to run during application build (runs on your Docker host).
 
-```
-
+```yaml
 services:
     <service_name>:
         build_command: bundle exec rake db:schema:load
-
 ```
 
 ### Build root
 
 Specifies the directory of your repository in which you wish to run your Docker build. You can also specify a [Dockerfile path](/maestro/how-to-guides/deployment/building-your-service.html#dockerfile_path), which will be the Dockerfile used when building your service which is a relative value to this one.
 
-```
-
+```yaml
 services:
     <service_name>:
         build_root: my_app_subfolder
-
 ```
 
 This will default to the _root folder_ of your repository if not specified.
@@ -70,12 +66,10 @@ This will default to the _root folder_ of your repository if not specified.
 
 Specifies the command used to start your container(s) (runs on your Docker host).
 
-```
-
+```yaml
 services:
     <service_name>:
         command: bundle exec rails s
-
 ```
 
 * * *
@@ -85,12 +79,10 @@ services:
 
 Specifies the command you would like to run during application deploy (runs once per service, on your Docker host).
 
-```
-
+```yaml
 services:
     <service_name>:
         deploy_command: bundle exec rake db:migrate
-
 ```
 
 * * *
@@ -100,12 +92,10 @@ services:
 
 Specifies a relative path for your Dockerfile (from your _build_root_) to be used for building this service. For example, if you have a subfolder in the root of your repository called _docker_ where your Dockerfile lives, you can specify this as follows:
 
-```
-
+```yaml
 services:
     <service_name>:
         dockerfile_path: docker/Dockerfile
-
 ```
 
 This will default to the value of _build_root_/Dockerfile if not specified.
@@ -117,12 +107,10 @@ This will default to the value of _build_root_/Dockerfile if not specified.
 
 The Git repository URL your Docker image will be built with. The Git URL you use to [allow us access to your repository](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html) will differ for public and private repositories.
 
-```
-
+```yaml
 services:
     <service_name>:
         git_url: git@github.com:pkallberg/node-js-app.git
-
 ```
 
 * * *
@@ -132,12 +120,10 @@ services:
 
 The Git repository branch your Docker image will be based on, for example `master`.
 
-```
-
+```yaml
 services:
     <service_name>:
         git_branch: master
-
 ```
 
 * * *
@@ -147,32 +133,26 @@ services:
 
 The source of your Docker image, which can come from a private repository that the credentials are provided. For [Docker Hub](https://registry.hub.docker.com/) images, use the following URL format:
 
-```
-
+```yaml
 services:
     <service_name>:
         image: <namespace>/<image_name>:/<tag>
-
 ```
 
 If you are pulling a public image from Docker Hub, use the following format:
 
-```
-
+```yaml
 services:
     <service_name>:
         image: <namespace>/<image_name>:/<tag>
-
 ```
 
 If you are using [Quay.io](https://quay.io/) for your image repository, you will use the following URL format:
 
-```
-
+```yaml
 services:
     <service_name>:
         image: quay.io/<namespace>/<image_name>:/<tag>
-
 ```
 
 

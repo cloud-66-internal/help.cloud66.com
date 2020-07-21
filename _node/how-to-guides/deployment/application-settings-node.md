@@ -32,15 +32,10 @@ If you need other datasources later on, you can always add new datasource using 
 
 If your application binds to a port, we need to expose it to the internet and make sure we can load balance traffic to your application. We provide you with an environment variable called `PORT` to tell which port your need to bind your application to. Make sure your use the following line:
 
-```
-
+```js
 var port = process.env.PORT || 8080;
 app.listen(port);
-
 ```
-
-
-
 
 ##  Connect to your datasource(s)
 
@@ -49,17 +44,13 @@ Your application need to know which URL to use to connect to your database. We p
 
 ### MongoDB
 
-```
-
+```js
 mongoose.connect(process.env.MONGODB_URL);
-
 ```
-
 
 ### Mysql
 
-```
-
+```js
 var connection = mysql.createConnection({
   host     : process.env.MYSQL_URL,
   user     : process.env.MYSQL_USERNAME,
@@ -67,13 +58,11 @@ var connection = mysql.createConnection({
   database : process.env.MYSQL_DATABASE
 });
 connection.connect();
-
 ```
 
 ### Postgresql
 
-```
-
+```js
 var config = {
   user: process.env.POSTGRESDB_USERNAME,
   database: process.env.POSTGRESDB_DATABASE,
@@ -83,19 +72,13 @@ var config = {
   idleTimeoutMillis: 30000,
 };
 var pool = new pg.Pool(config);
-
 ```
 
 ### Redis
 
-```
-
+```js
 redis.createClient(6379, process.env.REDIS_URL)
-
 ```
-
-
-
 
 ##  Fire up some workers 
 
@@ -103,11 +86,9 @@ You can use Procfiles to ensure that your background jobs run and are monitored.
 
 A typical Procfile may look something like this:
 
-```
-
+```shell
 web: node server.js
 work: node some_work.js
-
 ```
 
 The commands above would run node `server.js` and node `some_work.js` and monitor them. Cloud 66 will attempt to bring processes that go down or crash up again. Processes are also instructed to start when your server is booted. An overall view of your processes is available in your Application Overview.

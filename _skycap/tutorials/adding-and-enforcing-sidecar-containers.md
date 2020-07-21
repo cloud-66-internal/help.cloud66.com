@@ -62,7 +62,7 @@ To do this we need to create a special kind of Stencil called an *inline*. This 
 
 The code we’re going to use to deploy our Auther service is:
 
-```
+```yaml
 - name: web-auther
   image: cloud66/auther:latest
   command: 

@@ -10,7 +10,7 @@ This command lists the possible settings for a specific server.
 
 ### Usage
 
-```
+```shell
 $ cx servers settings list [-s <stack>] --server <server name>|<server ip>|<server role>
 ```
 
@@ -30,7 +30,7 @@ $ cx servers settings list [-s <stack>] --server <server name>|<server ip>|<serv
 
 ### Examples
 
-```
+```shell
 $ cx servers settings set -s "My Awesome App" --server lion
 ```
 
@@ -42,7 +42,7 @@ Use this command to reboot a specific server from the command line
 
 ### Usage
 
-```
+```shell
 $ cx servers reboot [-s <stack>] [-e application environment] --server <server name> 
 ```
 
@@ -60,6 +60,6 @@ $ cx servers reboot [-s <stack>] [-e application environment] --server <server n
 
 ### Example
 
-```
+```shell
 $ cx server reboot -s mystack --server lion -e production
 ```

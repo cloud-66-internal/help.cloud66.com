@@ -70,7 +70,7 @@ Nginx supports HTTP2 and this can be enabled on your application by editing your
 
 Update the `listen` directive in the `server` block from this:
 
-```
+```shell
 server {
         listen 443;
         ssl on;
@@ -78,7 +78,7 @@ server {
 
 ...to this:
 
-```
+```shell
 server {
         listen 443 ssl http2;
 ```

@@ -43,7 +43,7 @@ To build your own process with Bluepill, please refer to this [page](https://git
 
 Don't forget to add a log file in your pill config. For instance:
 
-```
+```shell
 process.stdout = process.stderr = "<STACK_PATH>/log/process.log"
 ```
 
@@ -51,46 +51,37 @@ process.stdout = process.stderr = "<STACK_PATH>/log/process.log"
 
 To get all processes status:
 
-```
+```shell
 $ sudo bluepill status
 ```
 
 To get a specific process status:
 
-```
+```shell
 $ sudo bluepill <process_name> status
 ```
-
-
-
 
 ## Stop
 
 To stop a specific process:
 
-```
+```shell
 $ sudo bluepill <process_name> stop
 ```
-
-
-
 
 ## Start
 
 To start a specific process:
 
-```
+```shell
 $ sudo bluepill <process_name> start
 ```
-
-
-
 
 ## Load a process
 
 To load a `.pill` file into bluepill:
 
-```
+```shell
 $ sudo bluepill load /etc/bluepill/autoload/<process_name>.pill
 ```
 
@@ -101,7 +92,7 @@ $ sudo bluepill load /etc/bluepill/autoload/<process_name>.pill
 
 To quit a process from bluepill:
 
-```
+```shell
 $ sudo bluepill <process_name> quit
 ```
 

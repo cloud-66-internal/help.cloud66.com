@@ -25,7 +25,7 @@ You can optionally add `ro` or `rw` to specify that the container can read/write
 #### Note 
 <div class="notice notice-warning"><p>Paths must be absolute.</p></div>
 
-```
+```yaml
 services:
     <service_name>:
         volumes: ["/tmp:/tmp_host", "/readonly/folder:/mnted_readony:ro"]

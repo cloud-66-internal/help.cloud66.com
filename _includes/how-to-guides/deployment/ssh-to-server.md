@@ -6,17 +6,17 @@ You can use [Cloud 66 Toolbelt](/{{page.collection}}/quickstarts/using-cloud66-t
 
 ### Full command
 
-```
+```shell
 cx ssh [--gateway-key <<The path to the key of gateway server>>] [-s "your application name"] "your server name"|<<server ip>>|<<server role>>
 ```
 Many of these parameters are optional or mutually exclusive. For example you don't need to provide both the server name and the IP address.
 
 ### Examples
 
-{% highlight bash %}
+```shell
 cx ssh -s "My Awesome App" web
 cx ssh --gateway-key ~/.ssh/bastion_key  -s "My Awesome App" Lion -e production
-{% endhighlight %}
+```
 
 See [toolbelt shortcuts](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html), for information on how you can make this even easier.
 

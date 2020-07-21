@@ -1,6 +1,6 @@
 ### Usage
 
-```
+```shell
 $ cx tail [-s <stack>] <server name>|<server ip>|<server role> <log filename>
 ```
 
@@ -21,6 +21,6 @@ At least one of the optional parameters are necessary in order to identify which
 
 ### Example
 
-```
+```shell
 $ cx tail -s "My Awesome App" web nginx_error.log
 ```

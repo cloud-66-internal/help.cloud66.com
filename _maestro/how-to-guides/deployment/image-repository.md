@@ -14,17 +14,14 @@ permalink: /:collection/:path:output_ext
 
 For public [Docker Hub](https://registry.hub.docker.com/) images, use the following URL format:
 
-```
+```shell
 <namespace>/<image_name>:<tag>
-
 ```
 
 If you are using [Quay.io](https://quay.io/) for your image repository, you will use the following URL format:
 
-```
-
+```shell
 quay.io/<namespace>/<image_name>:<tag>
-
 ```
 
 ## Connecting to private repositories

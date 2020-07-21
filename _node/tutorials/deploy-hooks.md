@@ -21,7 +21,7 @@ To make use of deploy hooks, your application should have a file called *deploy_
 
 For **Node** applications this file should be present within a folder named _.cloud66_, which is in turn located in the root of your source code.
 
-```
+```shell
 /.cloud66/deploy_hooks.yml
 ```
 
@@ -79,7 +79,7 @@ If a specific command doesn't show any output, you can use the `echo $?` command
 
 Below is a bare-bone example of using a snippet with the required fields. It will execute the [Cloud 66 Node snippet](https://github.com/cloud66/snippets/blob/master/cloud66/node) as the first thing on all production servers.
 
-```
+```yaml
 production: # Environment
     first_thing: # Hook point
       - snippet: cloud66/node # Hook type
@@ -89,7 +89,7 @@ production: # Environment
 
 You can also run multiple snippets at the same hook point:
 
-```
+```yaml
 production: # Environment
     first_thing: # Hook point
       - snippet: cloud66/{{page.collection}} # Hook type
@@ -107,7 +107,7 @@ See the available [hook points](/{{page.collection}}/references/deploy-hooks-syn
 
 The hook example below can be used to install anything from packages to fonts on your server, and you can nest different hooks for the same hook point like follows:
 
-```
+```yaml
 production: # Environment
     first_thing: # Hook point
       - command: apt-get install curl -y # Hook type
@@ -126,7 +126,7 @@ When automating the installation of packages, remember to use the <em>-y</em> fl
 
 The hook below will copy a file from your repository to your *tmp* folder and execute it during build.
 
-```
+```yaml
 production: # Environment
     after_nginx: # Hook point
       - source: /.cloud66/script.sh # Hook type
@@ -140,7 +140,7 @@ production: # Environment
 
 The hook below will create an arbitrary log file in /tmp
 
-```
+```yaml
 first_thing: # Hook point
  - inline: |
 
@@ -157,7 +157,7 @@ first_thing: # Hook point
 
 This example shows how to use the env_vars parameter.
 
-```
+```yaml
 before_nginx:
    snippet: cloud66/download
    target: {{page.collection}}

@@ -112,14 +112,15 @@ value: ${configstore("key", account["configstore_namespace"])}
 
 To load values from ConfigStore as environment variables in any application, open the [Environment Variables](/skycap/tutorials/setting-environment-variables.html) page via your Dashboard and use the following format as the *value* for any key:
 
-```
+```shell
 _configstore(NAMESPACE_UUID.KEY)
 ```
 
 ### Service.yml placeholder
-The following syntax must be used for  service.yml :
 
-```
+The following syntax must be used for service.yml:
+
+```yaml
 envs:
   - ABC: _env(XYZ)
 ```

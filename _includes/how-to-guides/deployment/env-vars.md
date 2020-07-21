@@ -53,7 +53,7 @@ When you create a new application, you are given the option to assign your own e
 
 You can set your own by either manually entering them, or uploading a file that contain the variables. This file should use the following format:
 
-```
+```shell
 KEY_1=value_1
 KEY_2=value_2
 ```
@@ -96,25 +96,23 @@ Creating a reference can be done using `{% raw %}{{ENV_VAR}}{% endraw %}` or `_e
 
 The second form is useful when you want to specify a default value. If cloud66 can’t find referenced environment variable it will use default value instead. **DEFAULT_VALUE** is optional.
 
-```
-MY_HEALTH_HECK=http://_env(WEB_ADDRESS_EXT)/health_check.html
-
+```shell
+MY_HEALTH_CHECK=http://_env(WEB_ADDRESS_EXT)/health_check.html
 ```
 
 If you are not using prefix/suffix in environment variable definition, you can use
 `_env:(ENV_VAR:DEFAULT_VALUE)` syntax
 
-```
+```shell
 MY_KEY_1=_env(WEB_ADDRESS_EXT:192.168.0.1)
-
 ```
 
 ### Referencing other env vars on the same app
 
 This is useful when referencing an environment variable which you don't control such as a server IP address. To do this you can use:  
 
-- `{% raw %}{{ENV_VAR}}{% endraw %}` OR
-- `_env(ENV_VAR:DEFAULT_VALUE)`
+ * `{% raw %}{{ENV_VAR}}{% endraw %}` OR
+ * `_env(ENV_VAR:DEFAULT_VALUE)`
 
 ### Referencing env vars on other apps
 
@@ -145,19 +143,19 @@ Using environment variables is done differently depending on your application se
 
 - **Bash scripts**
 
-```
+```bash
 $ENV_VAR
 ```
 
 - **.YML files**  
 
-```
+```yaml
 username: <%= ENV['DB_USER'] %>
 ```
 
 - **.RB files**  
 
-```
+```ruby
 working_directory "#{ENV['APP_PATH']}"
 ```
 

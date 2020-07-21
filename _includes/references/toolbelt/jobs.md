@@ -9,7 +9,7 @@ This command lists all jobs on an application or a server.
 
 ### Usage
 
-```
+```shell
 $ cx jobs list [-s <stack>] --server <server name>|<server ip>|<server role> --service <service name>
 ```
 
@@ -26,7 +26,7 @@ $ cx jobs list [-s <stack>] --server <server name>|<server ip>|<server role> --s
 
 ### Examples
 
-```
+```shell
 $ cx job run -s "My Awesome App" my_job
 $ cx job run -s "My Awesome App" --arg "arg1" --arg "arg2" my_job
 ```

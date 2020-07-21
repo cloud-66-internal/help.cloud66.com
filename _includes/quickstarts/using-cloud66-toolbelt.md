@@ -15,7 +15,7 @@ To get started, simply download the [toolbelt executable](https://app.cloud66.co
 
 Before using Toolbelt, you need to link it to your Cloud 66 account. You can do this by issuing one of the available commands, for example:
 
-```
+```shell
 cx stacks list
 ```
 

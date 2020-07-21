@@ -5,7 +5,7 @@ This command opens an SSH tunnel from your local machine to a remote server on t
 
 ### Usage
 
-```
+```shell
 $ cx tunnel -s <stack> --server <server name>|<server ip>|<server role> --remote <remote port> --local <local port>
 ```
 
@@ -33,7 +33,7 @@ Also, you need to specify at least the `remote` port. If `local` is missing, `re
 
 ### Examples
 
-```
+```shell
 $ cx tunnel -s "My Awesome App" --server mysql --remote 3306 --local 13306
 ```
 

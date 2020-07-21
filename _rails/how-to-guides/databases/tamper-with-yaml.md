@@ -21,7 +21,7 @@ We will automatically track these changes and insert the correct details on the 
 
 If you would prefer to manage these configurations manually you can add this line to your manifest.yml file: `
 
-```
+```shell
 tamper_with_yml: false
 ```
 This will prevent our system from making any automated changes to the configuration files (including `database.yml`).
@@ -36,14 +36,14 @@ The location of this setting depends on the database type. For example:
 
 ### MySQL
 
-```
+```yaml
   mysql:
     configuration:
       tamper_with_yml: false
 ```
 
 ### Postgres
-```
+```yaml
   postgresql:
     configuration:
       tamper_with_yml: false
@@ -51,9 +51,8 @@ The location of this setting depends on the database type. For example:
 
 ### MongoDB
 
-```
+```yaml
   mongodb:
     configuration:
       tamper_with_yml: false
-
 ```

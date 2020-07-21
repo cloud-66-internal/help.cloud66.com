@@ -37,25 +37,25 @@ Through the [AWS ELB command line interface](http://aws.amazon.com/developertool
 
 *   Run the command below to add a new SSL certificate:
 
-```
+```shell
 $ iam-servercertupload -b <CA authenticated SSL> -k <private key file(.pem)> -s <certificate name>  -c  <certificate chain file> –v
 ```
 
 * You should retrieve any available SSL certificate using this command:
 
-```
+```shell
 $ iam-servercertlistbypathx
 ```
 
 * Run the command below to attach the SSL certificate to the load balancer:
 
-```
+```shell
 $ elb-create-lb-listeners ELBConfigureSSL --listener "protocol=HTTPS,lb-port=443,instance-port=80,instance-protocol=HTTP, cert-id=&<certificate name>"
 ```
 
 * To delete a certificate, run the following command:
 
-```
+```shell
 $ iam-servercertdel -s <certificate name>
 ```
 

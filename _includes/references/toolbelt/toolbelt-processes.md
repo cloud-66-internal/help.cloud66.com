@@ -4,7 +4,7 @@
 
 ### Usage
 
-```
+```shell
 $ cx processes list [-s <stack>] [--server <server name>]
 ```
 List all the processes running on an application or a server. Optionally provide the server to list only the processes running on that server.
@@ -23,7 +23,7 @@ List all the processes running on an application or a server. Optionally provide
 
 ### Example
 
-```
+```shell
 $ cx processes scale -s mystack --server backend1 --name worker [+5]
 $ cx processes scale -s mystack --server backend2 --name worker [-5]
 $ cx processes scale -s mystack --server backend3 --name worker 15

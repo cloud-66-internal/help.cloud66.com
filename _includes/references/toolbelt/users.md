@@ -6,7 +6,7 @@ This command shows a list of all users you have access to. This is a list of all
 
 ### Usage
 
-```
+```shell
 $ cx --org <organization_name> users list
 ```
 
@@ -22,7 +22,7 @@ $ cx --org <organization_name> users list
 
 ### Examples
 
-```
+```shell
 $ cx --org My_Awesome_org users show jim@gmail.com
 $ cx --org My_Awesome_org users show jim@gmail.com --json /tmp/jim_profile.json
 ```
@@ -41,7 +41,7 @@ Apply Profile allows you to apply a user's Access Profile to another one. To use
 
 ### Usage
 
-```
+```shell
 $ cx --org <organization_name> users apply-profile <username> --json <json_file_path> [--override]
 ```
 
@@ -58,7 +58,7 @@ $ cx --org <organization_name> users apply-profile <username> --json <json_file_
 
 ### Examples
 
-```
+```shell
 $ cx --org My_Awesome_org users apply-profile jack@gmail.com --json /tmp/jim_profile.json
 $ cx --org My_Awesome_org users apply-profile jack@gmail.com --json /tmp/jim_profile.json --override
 ```

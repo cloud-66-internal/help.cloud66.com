@@ -12,7 +12,7 @@ A Let's Encrypt Python script called _acme_tiny.py_  puts a file with random nam
 
 If, while installing, you see an error simmilar to this:
 
-```
+```shell
 Wrote file to /etc/cloud66/webroot/FILENAME, but couldn't download http://DNS_NAME/.well-known/acme-challenge/FILENAME 
 ```
 

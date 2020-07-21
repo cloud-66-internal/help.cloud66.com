@@ -17,7 +17,7 @@ That's why clipboard.js exists.
 
 You can get it on npm.
 
-```
+```shell
 npm install clipboard --save
 ```
 

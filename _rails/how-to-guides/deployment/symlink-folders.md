@@ -24,7 +24,7 @@ Alternatively, you can use [deploy hooks](/{{page.collection}}/tutorials/deploy-
 
 To create the symbolic link, your deploy hook script could contain this:
 
-```
+```shell
 mkdir -p $STACK_BASE/shared/uploads
 chown nginx:app_writers $STACK_BASE/shared/uploads
 rm -rf $STACK_PATH/uploads
@@ -35,7 +35,7 @@ it places a link to the source directory inside the target directory, so we have
 
 The deploy hook would look like this:
 
-```
+```yaml
 production:
     after_symlink:
       - source: /.cloud66/my_script.sh

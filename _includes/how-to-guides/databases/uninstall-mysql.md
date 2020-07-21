@@ -20,7 +20,7 @@ Remove the MySQL folder:
 
 Delete all MySQL files on your server:
 
-```
+```shell
 $ sudo find / -iname 'mysql*' -exec rm -rf {} \;
 ```
 Your system should no longer contain default MySQL related files.

@@ -17,7 +17,7 @@ As such, we cannot establish replication between servers running different major
 
 For example, if you set up replication between a master (on 9.3) and a slave (9.4), you may see this error on the slave server:
 
-```
+```shell
 FATAL:  database files are incompatible with server
 DETAIL:  The data directory was initialized by PostgreSQL version 9.3, which is not compatible with this version 9.4.x.
 ```
@@ -26,7 +26,7 @@ In this case, you need to upgrade the data and libraries of the master server (9
 
 Remember that you can set the version of PostgreSQL to install on your application by using a [manifest file](/{{page.collection}}/quickstarts/getting-started-with-manifest.html), like so:
 
-```
+```yaml
 production:
     postgresql:
         configuration:

@@ -97,7 +97,7 @@ In our example below you can see that we're using Digital Ocean as our `vendor` 
 
 ## Example of manifest file
 
-```
+```yaml
 docker:
   configuration:
     version: 18.03.0-ce
@@ -115,6 +115,5 @@ redis:
       region: lon1
       vendor: digitalocean
       key_name: My_Key
-
 ```
 

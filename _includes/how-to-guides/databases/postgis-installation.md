@@ -50,26 +50,26 @@ Install packages using:
 
 ```shell
 $ sudo apt-get install postgresql-9.6-postgis-2.3 postgresql-contrib-9.6 postgresql-9.6-postgis-scripts
-
 ```
 
 To install the commandline tools:
 
-```
+```shell
 $ sudo apt-get install postgis
 ```
 
 ### pgRouting
-```
+
+```shell
 # Install pgRouting 2.3 package 
 $ sudo apt-get install postgresql-9.6-pgrouting
-
 ```
 
 ### Enable Adminpack 
 
 While in terminal, log in to the psql console as postgres user:
-````
+
+```shell
 sudo -u postgres psql
 CREATE EXTENSION adminpack;
 ```
@@ -77,10 +77,12 @@ CREATE EXTENSION adminpack;
 ### PostGIS extension for PostgreSQL
 
 Never install PostGIS in the postgres database, create a user database instead. You can also enable the PostGIS extension here:
-```
+
+```shell
 sudo -u postgres psql
 ```
-```
+
+```sql
 CREATE DATABASE gisdb;
 \connect gisdb;
 
@@ -92,7 +94,8 @@ SELECT postgis_full_version();
 ```
 This should give you output something like this:
 
-```                                                                        postgis_full_version
+```shell
+postgis_full_version
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  POSTGIS="2.3.2 r15302" GEOS="3.5.0-CAPI-1.9.0 r4084" PROJ="Rel. 4.9.2, 08 September 2015" GDAL="GDAL 1.11.3, released 2015/09/16" LIBXML="2.9.3" LIBJSON="0.11.99" RASTER
 (1 row)
@@ -100,19 +103,20 @@ This should give you output something like this:
 
 To add topology support, a second extension can be created on the database:
 
-```
+```sql
 $ CREATE EXTENSION postgis_topology;
 ```
 
 ### Install pgRouting
 
-```
+```sql
 CREATE  EXTENSION pgrouting;
 SELECT * FROM pgr_version();
 ```
 
 This should give you:
-```
+
+```shell
 version |  tag   |   hash    | branch | boost
 ---------+--------+-----------+--------+--------
  2.3.2   | v2.3.2 | 1f2af3c52 | master | 1.58.0

@@ -6,7 +6,7 @@ Lists all the stacks available to your account.
 
 ### Usage
 
-```
+```shell
 $ cx stacks list [-e <environment>]
 ```
 
@@ -29,7 +29,7 @@ The strategy parameter specifies whether you want all your servers to be reboote
 
 ### Example
 
-```
+```shell
 $ cx application reboot -s mystack
 $ cx application reboot -s mystack --group web
 $ cx application reboot -s mystack --group all
@@ -46,7 +46,7 @@ For improved performance, volatile code caches exist for your application. It is
 
 ### Usage
 
-```
+```shell
 $ cx stacks clear-caches [-s <stack>]
 ```
 
@@ -67,7 +67,7 @@ $ cx stacks clear-caches [-s <stack>]
 
 ### Example
 
-```
+```shell
 $ cx stacks listen -s "My Awesome App" -e production
 ```
 You can leave the command by pressing `Ctrl-C` at any time.
@@ -82,7 +82,7 @@ List, download and upload of configuration files such as a _service.yml_ or _man
 
 ### Usage
 
-```
+```shell
 $ cx stacks configure list [-s <stack>]
 ```
 
@@ -112,7 +112,7 @@ Shows a list of commands or help for one command.
 
 ### Usage
 
-```
+```shell
 $ cx stacks help [<command>]
 ```
 

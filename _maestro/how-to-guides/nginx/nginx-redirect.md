@@ -25,7 +25,7 @@ If you only want to serve HTTPS traffic through your application, you may also w
 
 Simply add this code to the _server_ section of your Nginx configuration using [CustomConfig](/{{page.collection}}/tutorials/custom-config.html).
 
-```
+```shell
 return 301 https://$host$request_uri;
 ```
 
@@ -42,7 +42,7 @@ The method differs slightly between HTTP and HTTPS traffic, due to certificate c
 
 Add a permanent redirect for visitors from domain A to domain B:
 
-```
+```shell
 server {
     server_name             _;
     listen                  80;
@@ -57,7 +57,7 @@ The above method will not work for HTTPS traffic, because visitors from domain A
 
 As such, users from domain A must first be presented with the SSL certificate for that domain, and then be redirected to domain B and presented with certificates for domain B.
 
-```
+```shell
 {% raw %}{% if allow_ssl == true %}
 server {
     server_name          *.domaina.com;

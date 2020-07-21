@@ -311,6 +311,7 @@ rails:
   configuration:
     node_version: "6"       # will install latest release of v6.x.x
 ```
+
 ```yml
 rails:
   configuration:

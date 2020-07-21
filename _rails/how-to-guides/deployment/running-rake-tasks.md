@@ -26,7 +26,7 @@ You can use [deploy hooks](/rails/tutorials/deploy-hooks.html) to execute your r
 
 Simply add a bash script to the application that contains the rake task. For example, create the file `/.cloud66/scripts/rake_task.sh` as below:
 
-```
+```shell
 #!/bin/bash
 cd $STACK_PATH
 bundle exec rake your:task
@@ -34,7 +34,7 @@ bundle exec rake your:task
 
 Then add a deploy_hook to execute the above script on each deploy: create the file `.cloud66/deploy_hooks.yml` as below:
 
-```
+```yaml
 production:
   after_rails:
     - source: /.cloud66/scripts/rake_task.sh
@@ -49,7 +49,7 @@ production:
 ## Manually
 This is done by starting a [terminal connection to your server](/rails/how-to-guides/common-tools/ssh.html) and executing your rake task.
 
-```
+```shell
 $ cd $APP_PATH
 $ bundle exec rake your:task
 ```

@@ -34,19 +34,19 @@ To handle this you can append your redployment hook with a  _services modifier_ 
 
 An example redeployment hook **without a services modifier:**
 
-```
+```shell
 https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy
 ```
 
 An example redeployment **hook with a single services modifier:**
 
-```
+```shell
 https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy?services=my-web-service
 ```
 
 An example redeployment **hook with a many-service modifier:**
 
-```
+```shell
 https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy?services=my-web-service,api
 ```
 #### Note 
@@ -72,7 +72,7 @@ Users who have signed in through Github (and who have enough access to create an
 
 To do this: access your [Application settings](/skycap/references/toolbelt.html#settings-variables) via the toolbelt and set **continuous.deploy** to _true_.
 
-```
+```shell
 $ cx settings set -s my_app_name continuous.deploy true
 ```
 
@@ -109,7 +109,7 @@ Most Git providers have a commit hook mechanism that you can use to post to the 
 
 To invoke the redeployment hook manually, you can POST an HTTP request to your redeployment hook URL. You can do this in curl like this:
 
-```
+```shell
 curl -X POST [your redeployment hook URL]
 ```
 

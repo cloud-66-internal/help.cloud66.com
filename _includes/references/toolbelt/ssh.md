@@ -9,7 +9,7 @@ If your server deployed behind a bastion server, you need to provide the private
 
 ### Usage
 
-```
+```shell
 $ cx ssh  [--gateway-key <The path to the key of gateway server>]    [-s <stack>] <server name>|<server ip>|<server role>
 ```
 
@@ -29,7 +29,7 @@ $ cx ssh  [--gateway-key <The path to the key of gateway server>]    [-s <stack>
 
 ### Example
 
-```
+```shell
 $ cx ssh -s "My Awesome App" Lion -e production
 $ cx ssh --gateway-key ~/.ssh/bastion_key  -s "My Awesome App" Lion -e production
 ```

@@ -4,7 +4,7 @@
 
 ### Usage
 
-```
+```shell
 $ cx services list [-s <stack>] [--server <slave server name>|<slave server ip>]
 ```
 
@@ -26,7 +26,7 @@ Optionally provide the server to act only on that server.
 
 ### Example
 
-```
+```shell
 $ cx services scale -s mystack my_web_service 1
 $ cx services scale -s mystack a_backend_service --server backend +5
 $ cx services scale -s mystack a_backend_service -2
@@ -41,7 +41,7 @@ $ cx services scale -s mystack a_backend_service --group docker 3
 
 ### Usage
 
-```
+```shell
 $ cx services stop [-s <stack>] <service name> [--server <server name>|<server ip>]
 ```
 
@@ -61,7 +61,7 @@ Optionally provide the server to act only on that server.
 
 ### Example
 
-```
+```shell
 $ cx services restart -s mystack my_web_service
 $ cx services restart -s mystack a_backend_service
 $ cx services restart -s mystack --server my_server my_web_service
@@ -75,7 +75,7 @@ $ cx services restart -s mystack --server my_server my_web_service
 
 ### Usage
 
-```
+```shell
 $ cx services info [-s <stack>] <service name> [--server <server name>|<server ip>]
 ```
 Gets information about the given service such as `service name, source type`, `git-ref`, `image info`, `container count`  and `docker commands`.
@@ -92,7 +92,7 @@ Optionally provide the server to act only on that server.
 
 ### Example
 
-```
+```shell
 $ cx services info -s mystack my_web_service
 $ cx services info -s mystack a_backend_service
 $ cx services info -s mystack --server my_server my_web_service
@@ -103,7 +103,7 @@ $ cx services info -s mystack --server my_server my_web_service
 
 ### Result
 
-```
+```shell
 NAME             VALUE
 name             web
 source type      git

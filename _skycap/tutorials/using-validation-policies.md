@@ -43,11 +43,10 @@ We also have [another guide](/skycap/how-to-guides/formations/writing-and-debugg
 
 For now we’re just going to use a single simple example rule:
 
-```
+```shell
 rule NoPort5000 ensure {
     fetch("$.spec.ports[?(@.port == 80)].targetPort").first == 5000
 }
-
 ```
 This rule tells Copper to check that none of the stencils specified should be using port 5000 as a `targetPort` and refuses to render the Formation if it finds a stencil that breaks this rule.
 

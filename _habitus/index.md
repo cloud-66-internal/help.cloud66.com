@@ -26,7 +26,7 @@ You can install Habitus by downloading a single executable for your platform of 
 
 Habitus uses a yml file as a descriptor for builds. Here is an example:
 
-``` yaml
+```yaml
 build:
   version: 2016-02-13 // version of the build schema.
   steps:
@@ -52,7 +52,6 @@ build:
       depends_on:
         - ironmountain
       command: s3cmd --access_key=_env(ACCESS_KEY) --secret_key=_env(SECRET_KEY) put /app/iron-mountain s3://uploads.aws.com
-
 ```
 
 Build files can be made up of multiple steps. Each step is independent of the other ones and downstream steps can use upstream ones as source (in `FROM` command).

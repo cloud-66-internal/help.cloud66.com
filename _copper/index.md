@@ -108,14 +108,14 @@ As this configuration file is changed, we want to make sure the image tag for My
 
 To do this, we use Copper's simple DSL to check the configuration validation:
 
-<pre class="prettyprint">
+```js
 rule NoLatest ensure {  // use of latest as image tag is not allowed
   fetch("$.spec.template.spec.containers..image")
   .as(:image)
   .pick(:tag)
   .contains("latest") == false
 }
-</pre>
+```
 
 Save this file as <code>my_rules.cop</code> and run Copper CLI:
 
@@ -123,9 +123,10 @@ Save this file as <code>my_rules.cop</code> and run Copper CLI:
 
 <p>Here is what you will see:</p>
 
-<pre class="prettyprint">
+```js
 Validating part 0
-noLatest - PASS</pre>
+noLatest - PASS
+```
 
 ## Can I use Copper for configuration files other than Kubernetes?
 

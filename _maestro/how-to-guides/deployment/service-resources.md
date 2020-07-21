@@ -161,7 +161,7 @@ The example above will ensure this service always has access to at least 10% of 
 
 You can limit the number of containers that a service may use. You can set both minimum and maximum limits for each service. For example:
 
-```
+```yaml
 services:
     your_service_name:
         constraints:

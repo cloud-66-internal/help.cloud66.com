@@ -295,7 +295,7 @@ Returns the time of rendering. If no formatting is provided, it will return the 
 
 Alternatively you can use the following:
 
-```
+```shell
 %Y - Year with century (can be negative, 4 digits at least)
 -0001, 0000, 1995, 2009, 14292, etc.
 %C - year / 100 (round down. 20 in 2009)
