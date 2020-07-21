@@ -108,7 +108,7 @@ A DaemonSet ensures that a (single) copy of a specific Pod is added to every Nod
 
 To create a DaemonSet we simply set the `type` of any service to `daemon_set`. For example:
 
-{% highlight yaml %}
+```yaml
 service:
  web:
   image: training/webapp
@@ -116,7 +116,7 @@ service:
   ports:
   - container: 5000
      http: 80
-{% endhighlight %}
+```
 
 This will use the image called "webapp" to spawn a single Pod called "web" on every Node in your Cluster.
 
@@ -130,13 +130,13 @@ As databases are fairly static components that rarely change without a migration
 
 The allowed database values are: `postgresql`, `mysql`, `redis`, `mongodb`, `elasticsearch` , `rabbitmq` and `glusterfs`. For example:
 
-{% highlight yaml %}
+```yaml
 services:
-<service_name>:
-databases:
-- mysql
-- elasticsearch
-{% endhighlight %}
+ <service_name>:
+  databases:
+  - mysql
+  - elasticsearch
+```
 
 ## Environment variables
 
@@ -144,12 +144,12 @@ Any [environment variable](notion://www.notion.so/maestro/how-to-guides/deployme
 
 The syntax for calling environment variables in a service definition is:
 
-{% highlight yaml %}
+```yaml
 services:
-service_name:
-env_vars:
-VAR1: _env(VALUE_OF_VARIABLE)
-{% endhighlight %}
+ service_name:
+  env_vars:
+  VAR1: _env(VALUE_OF_VARIABLE)
+```
 
 You can also reference environment variable in other applications or services. For more info please read our [detailed guide](notion://www.notion.so/maestro/how-to-guides/deployment/env-vars-advanced.html#syntax-examples) to the sharing env vars between apps and services.
 
@@ -161,11 +161,11 @@ By default all services belong to a service account named `default`. Normally th
 
 ```yaml
 services:
-web:
-ports:
-- container: 3000
-http: 80
-service_account_name: public-front-end
+ web:
+  ports:
+  - container: 3000
+    http: 80
+ service_account_name: public-front-end
 ```
 
 This will make the service named "web" run under the "public-front-end" Service Account in Kubernetes.
