@@ -130,6 +130,6 @@ The reason for the ugly looking line is that `mongoid` requires the list of serv
 
 #### Note
 <div class="notice"><p>
-You cannot use complex Ruby code (like <kbd>if</kbd>) in your YML files. That's why the new hosts value is generated with string replacements and simple Ruby commands.
+You cannot use complex Ruby code (like <code>if</code>) in your YML files. That's why the new hosts value is generated with string replacements and simple Ruby commands.
 </p></div>
 

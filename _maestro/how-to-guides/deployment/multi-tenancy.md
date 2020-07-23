@@ -18,7 +18,7 @@ Sometimes you need to run multiple applications on the same server. This could b
 
 To host multiple applications on the same server, we need to define each one as a separate service. This can be done using the `service.yml` file:
 
-{% highlight yaml %}
+```yaml
 services:
   first_app:
     git_url: git@github.com:khash/my_first_app.git
@@ -41,13 +41,13 @@ services:
     - container: 5000
       http: 80  
       https: 443
-{% endhighlight %}
+```
 
 This, however, has a problem: all applications share the same public ports (80 and 443). This means traffic coming to the server on port 80 (or 443) will be randomly served by any of the applications each time.
 
 To fix this issue we can use the Domain Matching feature. Domain Matching allows us to share ports and split the traffic by the URL domain name that the client has requested:
 
-{% highlight yaml %}
+```yaml
 services:
   first_app:
     git_url: git@github.com:khash/my_first_app.git
@@ -73,7 +73,7 @@ services:
       http: 80  
       https: 443
     traffic_matches: ["thirdapplication.com", "*.thirdapplication.com"]
-{% endhighlight %}
+```
 
 In this example, we split the traffic based on the requested domain. As you can see you can match traffic based on multiple domains as well as wildcard (`*`) subdomains.
 

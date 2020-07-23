@@ -12,7 +12,7 @@ Your application performance is dependant on many factors, such as code efficien
 As an example, an application that takes 1 second to respond and which is running on a server with 1 worker (thread) would need 1,000 servers to handle 1,000 concurrent connections. If your servers have 10 workers, you would need 100 servers. The more workers you have, the more resources you require, and consequently the more concurrent requests you can handle.
 
 {% if page.collection == 'rails' %}
-<p>Determining the number of Unicorn workers you can have on your server <a href="http://stackoverflow.com/questions/11056362/unicorn-which-number-of-worker-processes-to-use">depends on many factors</a> (e.g. what types of operations your application is performing), so it's good to test this to find a sweet spot.<br/>You can generally test using up to 5 times the number of cores for your workers during a load test to see how it's handled (e.g. 2 cores = up to 10 workers). <a href="https://bogomips.org/unicorn/">Set the number of Unicorn workers</a> in your <kbd>config/unicorn.rb</kbd> file.</p>
+<p>Determining the number of Unicorn workers you can have on your server <a href="http://stackoverflow.com/questions/11056362/unicorn-which-number-of-worker-processes-to-use">depends on many factors</a> (e.g. what types of operations your application is performing), so it's good to test this to find a sweet spot.<br/>You can generally test using up to 5 times the number of cores for your workers during a load test to see how it's handled (e.g. 2 cores = up to 10 workers). <a href="https://bogomips.org/unicorn/">Set the number of Unicorn workers</a> in your <code>config/unicorn.rb</code> file.</p>
 {% endif %}
 
 ## Preparing for server load

@@ -11,14 +11,14 @@ To configure your Maestro app to communicate with your WebSocket server, you nee
 
 For example, this service (**ws-app**) is running on port `3000`, and communicating with WebSocket via `8080`:
 
-{% highlight yaml %}
+```yaml
     version: 2
     services:
       ws-app:
         ports:
         - container: 3000
           http: 8080
-{% endhighlight %}    
+```    
 
 {% endif %}
 {% if include.product != 'maestro' %}

@@ -27,20 +27,20 @@ The table below is arranged in the order in which each hook point occurs in the 
      <td> Runs after the Cloud 66 agent is installed on your server <a name="beforex"></a> </td>
     </tr>
     <tr>
-     <td> before_<kbd>x</kbd> </td>
-     <td> Runs before database and storage engine(s) are installed on your server. Accepted values for <kbd>x</kbd>: <kbd>redis</kbd>, <kbd>mysql</kbd>, <kbd>postgresql</kbd>, <kbd>mongodb</kbd>, <kbd>elasticsearch</kbd>, <kbd>rabbitmq</kbd>, <kbd>glusterfs</kbd>, <kbd>influxdb</kbd> </td>
+     <td> before_<code>x</code> </td>
+     <td> Runs before database and storage engine(s) are installed on your server. Accepted values for <code>x</code>: <code>redis</code>, <code>mysql</code>, <code>postgresql</code>, <code>mongodb</code>, <code>elasticsearch</code>, <code>rabbitmq</code>, <code>glusterfs</code>, <code>influxdb</code> </td>
     </tr>
     <tr>
-     <td> after_<kbd>x</kbd> </td>
-     <td> Runs after database and storage engine(s) are installed on your server. If multiple engines are installed it will wait until all of them are completed. Accepted values for <kbd>x</kbd>: <kbd>redis</kbd>, <kbd>mysql</kbd>, <kbd>postgresql</kbd>, <kbd>mongodb</kbd>, <kbd>elasticsearch</kbd>, <kbd>rabbitmq</kbd>, <kbd>glusterfs</kbd>, <kbd>influxdb</kbd> </td> <a name="beforey"></a>
+     <td> after_<code>x</code> </td>
+     <td> Runs after database and storage engine(s) are installed on your server. If multiple engines are installed it will wait until all of them are completed. Accepted values for <code>x</code>: <code>redis</code>, <code>mysql</code>, <code>postgresql</code>, <code>mongodb</code>, <code>elasticsearch</code>, <code>rabbitmq</code>, <code>glusterfs</code>, <code>influxdb</code> </td> <a name="beforey"></a>
     </tr>
     <tr>
-     <td> before_<kbd>y</kbd> </td>
-     <td> Runs before replication is configured for the database server(s). Accepted values for <em>y</em>: <kbd>glusterfs_config</kbd>, <kbd>redis_replication</kbd>, <kbd>mongodb_replication</kbd>, <kbd>mysql_replication</kbd>, <kbd>postgresql_replication</kbd></td>
+     <td> before_<code>y</code> </td>
+     <td> Runs before replication is configured for the database server(s). Accepted values for <code>y</code>: <code>glusterfs_config</code>, <code>redis_replication</code>, <code>mongodb_replication</code>, <code>mysql_replication</code>, <code>postgresql_replication</code></td>
     </tr>
     <tr>
-     <td> after_<kbd>y</kbd> </td>
-     <td> Runs after replication has been configured for the database server(s). Accepted values for <em>y</em>: <kbd>glusterfs_config</kbd>, <kbd>redis_replication</kbd>, <kbd>mongodb_replication</kbd>, <kbd>mysql_replication</kbd>, <kbd>postgresql_replication</kbd></td>
+     <td> after_<code>y</code> </td>
+     <td> Runs after replication has been configured for the database server(s). Accepted values for <code>y</code>: <code>glusterfs_config</code>, <code>redis_replication</code>, <code>mongodb_replication</code>, <code>mysql_replication</code>, <code>postgresql_replication</code></td>
     </tr>
 
     <tr>
@@ -86,8 +86,8 @@ The table below is arranged in the order in which each hook point occurs in the 
 {% endif %}    
 {% if include.product == 'rails' %}
     <tr>
-     <td> before_<kbd>z</kbd> </td>
-     <td> Runs before your application framework is installed on your server. Accepted values for <kbd>z</kbd>:  <kbd>rails</kbd>, <kbd>rack</kbd>, <kbd>sinatra</kbd>, <kbd>padrino</kbd> </td>
+     <td> before_<code>z</code> </td>
+     <td> Runs before your application framework is installed on your server. Accepted values for <code>z</code>:  <code>rails</code>, <code>rack</code>, <code>sinatra</code>, <code>padrino</code> </td>
     </tr>    
 	<tr>
      <td> after_checkout </td>
@@ -101,11 +101,11 @@ The table below is arranged in the order in which each hook point occurs in the 
     </tr>
     <tr>
      <td> after_symlink </td>
-     <td> Runs after the symbolic link to your current code folder has been created. Happens during the code deployment of your application. This is a suitable hook point for running rake tasks like <kbd>db:migrate</kbd>, <kbd>db:seed</kbd> and <kbd>db:rollback</kbd> <a name="afterz"></a></td>
+     <td> Runs after the symbolic link to your current code folder has been created. Happens during the code deployment of your application. This is a suitable hook point for running rake tasks like <code>db:migrate</code>, <code>db:seed</code> and <code>db:rollback</code> <a name="afterz"></a></td>
     </tr>
     <tr>
-     <td> after_<kbd>z</kbd> </td>
-     <td> Runs after your application framework (and everything web related) is installed on your server. Accepted values for <kbd>z</kbd>: <kbd>rails</kbd>, <kbd>rack</kbd>, <kbd>sinatra</kbd>, <kbd>padrino</kbd> </td>
+     <td> after_<code>z</code> </td>
+     <td> Runs after your application framework (and everything web related) is installed on your server. Accepted values for <code>z</code>: <code>rails</code>, <code>rack</code>, <code>sinatra</code>, <code>padrino</code> </td>
     </tr>
     <tr>
      <td> before_processes </td>
@@ -151,15 +151,15 @@ There are different types of deploy hooks, and the fields available (and require
     </tr>
     <tr>
      <td width="13%"> snippet <img class="table-img-required" src="/assets/shared/required.gif"> </td>
-     <td> Snippet to be used - runs in <em>/tmp/deploy_hooks</em> by default </td>
+     <td> Snippet to be used - runs in <code>/tmp/deploy_hooks</code> by default </td>
     </tr>
     <tr>
      <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
-     <td> Target server(s), with accepted values <em>any</em>, <em>rails</em>, <em>mysql</em>, <em>postgresql</em>, <em>mongodb</em>, <em>redis</em>, <em>sinatra</em>, <em>padrino</em>, <em>custom</em>
+     <td> Target server(s), with accepted values <code>any</code>, <code>rails</code>, <code>mysql</code>, <code>postgresql</code>, <code>mongodb</code>, <code>redis</code>, <code>sinatra</code>, <code>padrino</code>, <code>custom</code>
       <div class="notice notice-warning">
        <strong> Note:</strong> Please make sure you read the
-       <em>run_on</em> part, if your target is not
-       <em>any</em>
+       <code>run_on</code> part, if your target is not
+       <code>any</code>
       </div> </td>
     </tr>
     <tr>
@@ -168,11 +168,11 @@ There are different types of deploy hooks, and the fields available (and require
     </tr>
     <tr>
      <td> executable <br> (false) </td>
-     <td> Set to true for the code to be made executable on the target. Defaults to true if <em>execute</em> is true </td>
+     <td> Set to true for the code to be made executable on the target. Defaults to true if <code>execute</code> is true </td>
     </tr>
     <tr>
      <td> apply_during <br> (all) </td>
-     <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+     <td> Specify when you want the deploy hook action to take place. Accepted values are <code>build_only</code>, <code>deploy_only</code> or <code>all</code>. The <code>build</code> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <code>deploy</code> steps </td>
     </tr>
     <tr>
      <td> env_vars </td>
@@ -185,15 +185,15 @@ If the application already contains this env var it will be overridden with the 
     </tr>
     <tr>
      <td> run_on <br> (single server) </td>
-     <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
+     <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <code>single_server</code> or <code>all_servers</code>. If you've specified <code>target: any</code> above, this will apply to all servers </td>
     </tr>
     <tr>
      <td> run_as <br> (server user) </td>
-     <td> If you execute a file on your target server, specify which user you would like the file to be executed as Note: you can't specify both this and <em>sudo</em> </td>
+     <td> If you execute a file on your target server, specify which user you would like the file to be executed as Note: you can't specify both this and <code>sudo</code> </td>
     </tr>
     <tr>
      <td> sudo <br> (false) </td>
-     <td> If you are executing the file on your target server, specify whether you want that execution to be sudo-ed? Note: you can't specify both this and <em>run_as</em> </td>
+     <td> If you are executing the file on your target server, specify whether you want that execution to be sudo-ed? Note: you can't specify both this and <code>run_as</code> </td>
     </tr>
    </tbody>
   </table>
@@ -213,15 +213,15 @@ If the application already contains this env var it will be overridden with the 
   </tr>
   <tr>
    <td width="13%"> command <img class="table-img-required" src="/assets/shared/required.gif"> </td>
-   <td> Command to be used - run in <em>/tmp/deploy_hooks</em> by default </td>
+   <td> Command to be used - run in <code>/tmp/deploy_hooks</code> by default </td>
   </tr>
   <tr>
    <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
-   <td> Target server(s), with accepted values <em>any</em>, <em>rails</em>, <em>docker</em>, <em>mysql</em>, <em>postgresql</em>, <em>mongodb</em>, <em>redis</em>, <em>sinatra</em>, <em>padrino</em>, <em>custom</em>
+   <td> Target server(s), with accepted values <code>any</code>, <code>rails</code>, <code>docker</code>, <code>mysql</code>, <code>postgresql</code>, <code>mongodb</code>, <code>redis</code>, <code>sinatra</code>, <code>padrino</code>, <code>custom</code>
     <div class="notice notice-warning">
      <strong> Note:</strong> Please make sure you read the
-     <em>run_on</em> part, if your target is not
-     <em>any</em>
+     <code>run_on</code> part, if your target is not
+     <code>any</code>
     </div> </td>
   </tr>
   <tr>
@@ -230,11 +230,11 @@ If the application already contains this env var it will be overridden with the 
   </tr>
   <tr>
    <td> executable <br> (false) </td>
-   <td> Set to true for the code to be made executable on the target. Defaults to true if <em>execute</em> is true </td>
+   <td> Set to true for the code to be made executable on the target. Defaults to true if <code>execute</code> is true </td>
   </tr>
   <tr>
    <td> apply_during <br> (all) </td>
-   <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+   <td> Specify when you want the deploy hook action to take place. Accepted values are <code>build_only</code>, <code>deploy_only</code> or <code>all</code>. The <code>build</code> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <code>deploy</code> steps </td>
   </tr>
     <tr>
      <td> env_vars </td>
@@ -247,15 +247,15 @@ If the application already contains this env var it will be overridden with the 
   </tr>
   <tr>
    <td> run_on <br> (single server) </td>
-   <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
+   <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <code>single_server</code> or <code>all_servers</code>. If you've specified <code>target: any</code> above, this will apply to all servers </td>
   </tr>
   <tr>
    <td> run_as <br> (server user) </td>
-   <td> If you execute a file on your target server, specify which user you would like the file to be executed as Note: you can't specify both this and <em>sudo</em> </td>
+   <td> If you execute a file on your target server, specify which user you would like the file to be executed as Note: you can't specify both this and <code>sudo</code> </td>
   </tr>
   <tr>
    <td> sudo <br> (false) </td>
-   <td> If you are executing the file on your target server, specify whether you want that execution to be sudo-ed? Note: you can't specify both this and <em>run_as</em> </td>
+   <td> If you are executing the file on your target server, specify whether you want that execution to be sudo-ed? Note: you can't specify both this and <code>run_as</code> </td>
   </tr>
  </tbody>
 </table>
@@ -279,11 +279,11 @@ If the application already contains this env var it will be overridden with the 
 </tr>
 <tr>
  <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
- <td> Target server(s), with accepted values <em>any</em>, <em>rails</em>, <em>mysql</em>, <em>postgresql</em>, <em>mongodb</em>, <em>redis</em>, <em>sinatra</em>, <em>padrino</em>, <em>custom</em>
+ <td> Target server(s), with accepted values <code>any</code>, <code>rails</code>, <code>mysql</code>, <code>postgresql</code>, <code>mongodb</code>, <code>redis</code>, <code>sinatra</code>, <code>padrino</code>, <code>custom</code>
   <div class="notice notice-warning">
    <strong> Note:</strong> Please make sure you read the
-   <em>run_on</em> part, if your target is not
-   <em>any</em>
+   <code>run_on</code> part, if your target is not
+   <code>any</code>
   </div> </td>
 </tr>
     <tr>
@@ -297,15 +297,15 @@ If the application already contains this env var it will be overridden with the 
 </tr>
 <tr>
  <td> executable <br> (false) </td>
- <td> Set to true for the snippet to be made executable on the target. Defaults to true if <em>execute</em> is true </td>
+ <td> Set to true for the snippet to be made executable on the target. Defaults to true if <code>execute</code> is true </td>
 </tr>
 <tr>
  <td> destination </td>
- <td> The destination path on your target server. You can also specify environment variables in your destination field; <em>&lt;%= ENV['STACK_PATH'] %&gt;</em> for example </td>
+ <td> The destination path on your target server. You can also specify environment variables in your destination field; <code>&lt;%= ENV['STACK_PATH'] %&gt;</code> for example </td>
 </tr>
 <tr>
  <td> apply_during <br> (all) </td>
- <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+ <td> Specify when you want the deploy hook action to take place. Accepted values are <code>build_only</code>, <code>deploy_only</code> or <code>all</code>. The <code>build</code> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <code>deploy</code> steps </td>
 </tr>
 <tr>
  <td> halt_on_error <br> (true) </td>
@@ -313,23 +313,23 @@ If the application already contains this env var it will be overridden with the 
 </tr>
 <tr>
  <td> run_on <br> (single server) </td>
- <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
+ <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <code>single_server</code> or <code>all_servers</code>. If you've specified <code>target: any</code> above, this will apply to all servers </td>
 </tr>
 <tr>
  <td> run_as <br> (server user) </td>
- <td> If you execute a file on your target server, specify which user you would like the file to be executed as Note: you can't specify both this and <em>sudo</em> </td>
+ <td> If you execute a file on your target server, specify which user you would like the file to be executed as Note: you can't specify both this and <code>sudo</code> </td>
 </tr>
 <tr>
  <td> sudo <br> (false) </td>
- <td> If you are executing the file on your target server, specify whether you want that execution to be sudo-ed? Note: you can't specify both this and <em>run_as</em> </td>
+ <td> If you are executing the file on your target server, specify whether you want that execution to be sudo-ed? Note: you can't specify both this and <code>run_as</code> </td>
 </tr>
 <tr>
  <td> parse <br> (true) </td>
- <td> Specifies whether the file being transferred should be parsed for <a href="/node/tutorials/env-vars.html">environment variables</a>. Using this you can embed <em>&lt;%= ENV['ENV_VAR'] %&gt; </em> for example in your source file, and have it resolved during the deploy hook action </td>
+ <td> Specifies whether the file being transferred should be parsed for <a href="/node/tutorials/env-vars.html">environment variables</a>. Using this you can embed <code>&lt;%= ENV['ENV_VAR'] %&gt; </code> for example in your source file, and have it resolved during the deploy hook action </td>
 </tr>
 <tr>
  <td> owner <br> (your server user) </td>
- <td> Ownership permissions for the file (and destination folder) on the target server. An example could be <em>user:group</em> </td>
+ <td> Ownership permissions for the file (and destination folder) on the target server. An example could be <code>user:group</code> </td>
 </tr>
 </tbody>
 </table>
@@ -355,11 +355,11 @@ If the application already contains this env var it will be overridden with the 
 </tr>
 <tr>
  <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
- <td> Target server(s), with accepted values <em>any</em>, <em>rails</em>, <em>mysql</em>, <em>postgresql</em>, <em>mongodb</em>, <em>redis</em>, <em>sinatra</em>, <em>padrino</em>, <em>custom</em>
+ <td> Target server(s), with accepted values <code>any</code>, <code>rails</code>, <code>mysql</code>, <code>postgresql</code>, <code>mongodb</code>, <code>redis</code>, <code>sinatra</code>, <code>padrino</code>, <code>custom</code>
   <div class="notice notice-warning">
    <strong> Note:</strong> Please make sure you read the
-   <em>run_on</em> part, if your target is not
-   <em>any</em>
+   <code>run_on</code> part, if your target is not
+   <code>any</code>
   </div> </td>
 </tr>
     <tr>
@@ -373,15 +373,15 @@ If the application already contains this env var it will be overridden with the 
 </tr>
 <tr>
  <td> executable <br> (false) </td>
- <td> Set to true for the snippet to be made executable on the target. Defaults to true if <em>execute</em> is true </td>
+ <td> Set to true for the snippet to be made executable on the target. Defaults to true if <code>execute</code> is true </td>
 </tr>
 <tr>
  <td> destination </td>
- <td> The destination path on your target server. You can also specify environment variables in your destination field; <em>&lt;%= ENV['STACK_PATH'] %&gt;</em> for example </td>
+ <td> The destination path on your target server. You can also specify environment variables in your destination field; <code>&lt;%= ENV['STACK_PATH'] %&gt;</code> for example </td>
 </tr>
 <tr>
  <td> apply_during <br> (all) </td>
- <td> Specify when you want the deploy hook action to take place. Accepted values are <em>build_only</em>, <em>deploy_only</em> or <em>all</em>. The <em>build</em> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <em>deploy</em> steps </td>
+ <td> Specify when you want the deploy hook action to take place. Accepted values are <code>build_only</code>, <code>deploy_only</code> or <code>all</code>. The <code>build</code> step occurs the first time an application is deployed, and will re-occur until the application has been successfully deployed at least once. After this subsequent deployments are <code>deploy</code> steps </td>
 </tr>
 <tr>
  <td> halt_on_error <br> (true) </td>
@@ -389,23 +389,23 @@ If the application already contains this env var it will be overridden with the 
 </tr>
 <tr>
  <td> run_on <br> (single server) </td>
- <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <em>single_server</em> or <em>all_servers</em>. If you've specified <em>target: any</em> above, this will apply to all servers </td>
+ <td> If you have multiple servers in the same group (e.g. scaled-up Rails servers), you can specify whether you want the deploy hook action to occur just once or once against each server in that group. Valid values are: <code>single_server</code> or <code>all_servers</code>. If you've specified <code>target: any</code> above, this will apply to all servers </td>
 </tr>
 <tr>
  <td> run_as <br> (server user) </td>
- <td> If you execute a file on your target server, specify which user you would like the file to be executed as Note: you can't specify both this and <em>sudo</em> </td>
+ <td> If you execute a file on your target server, specify which user you would like the file to be executed as Note: you can't specify both this and <code>sudo</code> </td>
 </tr>
 <tr>
  <td> sudo <br> (false) </td>
- <td> If you are executing the file on your target server, specify whether you want that execution to be sudo-ed? Note: you can't specify both this and <em>run_as</em> </td>
+ <td> If you are executing the file on your target server, specify whether you want that execution to be sudo-ed? Note: you can't specify both this and <code>run_as</code> </td>
 </tr>
 <tr>
  <td> parse <br> (true) </td>
- <td> Specifies whether the file being transferred should be parsed for <a href="/node/tutorials/env-vars.html">environment variables</a>. Using this you can embed <em>&lt;%= ENV['ENV_VAR'] %&gt; </em> for example in your source file, and have it resolved during the deploy hook action </td>
+ <td> Specifies whether the file being transferred should be parsed for <a href="/node/tutorials/env-vars.html">environment variables</a>. Using this you can embed <code>&lt;%= ENV['ENV_VAR'] %&gt; </code> for example in your source file, and have it resolved during the deploy hook action </td>
 </tr>
 <tr>
  <td> owner <br> (your server user) </td>
- <td> Ownership permissions for the file (and destination folder) on the target server. An example could be <em>user:group</em> </td>
+ <td> Ownership permissions for the file (and destination folder) on the target server. An example could be <code>user:group</code> </td>
 </tr>
 </tbody>
 </table>

@@ -15,7 +15,7 @@ If your Rails/Rack application uses a MySQL, PostgreSQL or MongoDB instance that
 We will automatically track these changes and insert the correct details on the next deployment. These automatic changes happen at the deployment step named `deploy:tamper:db_configs`. 
 
 #### Custom database configs
-<div class="notice"><p>If you have significantly customised your <kbd>database.yml</kbd> (for example with multiple databases and/or external databases) and you have not disabled our "tampering" (see below) then you are highly likely to encounter issues. Our automated updates will tend to strip out the other databases or cause errors in their configuration.</p></div>
+<div class="notice"><p>If you have significantly customised your <code>database.yml</code> (for example with multiple databases and/or external databases) and you have not disabled our "tampering" (see below) then you are highly likely to encounter issues. Our automated updates will tend to strip out the other databases or cause errors in their configuration.</p></div>
 
 ## Disabling automated config updates
 

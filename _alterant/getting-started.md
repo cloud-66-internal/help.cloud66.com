@@ -53,11 +53,11 @@ As you can see, the input configuration file is loaded into a Javascript object 
 
 Using the previous input, let's write a modifier to add a new node to the `foo` array:
 
-<pre class="prettyprint">
+```js
 $$.forEach(function($) {
 	$.foo.push({ fuzz: "fish" })
 });
-</pre>
+```
 
 This will generate this output:
 

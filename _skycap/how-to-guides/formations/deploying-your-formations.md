@@ -35,7 +35,9 @@ To render the Stencils of a Formation using the Toolbelt:
 
 The cx command includes everything you need to render the Stencils with the Toolbelt. Here is an example of what a command will look like:
 
-<pre class="prettyprint">$ cx snapshots render --stack 'My Stack' --snapshot 'sn-xivam-nymip-tobor-hasif-migyv-hytob-lanun-hotif-cixox' --formation 'fm-4556aff7cfbe1fc2419b414360167e24'</pre>
+```shell
+$ cx snapshots render --stack 'My Stack' --snapshot 'sn-xivam-nymip-tobor-hasif-migyv-hytob-lanun-hotif-cixox' --formation 'fm-4556aff7cfbe1fc2419b414360167e24'
+```
 
 This will render all of your Stencils as a single yaml file, arranged in the same order as the Stencils are sorted on the Formation detail page.
 
@@ -49,7 +51,9 @@ From the Formations detail page, select the StencilGroup you want to render and 
 
 As you can see in the example below, the command has an additional parameter that defines the StencilGroup to be used:
 
-<pre class="prettyprint">$ cx snapshots render --stack 'Central Test' --snapshot 'sn-xivam-nymip-tobor-hasif-migyv-hytob-lanun-hotif-cixox' --formation 'fm-4556aff7cfbe1fc2419b414360167e24' --stencil-group 'stg-54a733469be013c2aa535b4e1bc86c2a'</pre>
+```shell
+$ cx snapshots render --stack 'Central Test' --snapshot 'sn-xivam-nymip-tobor-hasif-migyv-hytob-lanun-hotif-cixox' --formation 'fm-4556aff7cfbe1fc2419b414360167e24' --stencil-group 'stg-54a733469be013c2aa535b4e1bc86c2a'
+```
 
 This will render the Stencils in this Group as a single yaml file, arranged in the same order as the Stencils are sorted on the Formation detail page. As in our first example above, you can pipe this output to `kubectl` now.
 
@@ -57,14 +61,17 @@ This will render the Stencils in this Group as a single yaml file, arranged in t
 
 Rendered Stencil files can be downloaded as individual files. You can click on the download icon (top right of each rendered file) to download them to your local machine and then apply them using `kubectl`:
 
-<pre class="prettyprint">$ kubectl apply -f foo.yml</pre>
+```shell
+$ kubectl apply -f foo.yml
+```
 
 
 ## Using tarballs
 
 You can select some or all of the rendered Stencils to download as a tarball. All files will be placed in a single tarball with their names prefixed with a 3 digit number representing their order so they can be applied in the right order. For example:
 
-<pre class="prettyprint">
+```shell
 $ kubectl apply -f 001_foo.yml
-$ kubectl apply -f 002_bar.yml</pre>
+$ kubectl apply -f 002_bar.yml
+```
 

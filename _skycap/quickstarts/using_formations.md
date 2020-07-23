@@ -79,7 +79,7 @@ A `namespace` is usually the first thing configured for a new Formation. To crea
 
 This creates a Stencil for a namespace configuration file for you. Let's look at the first section of the template in a bit more detail:
 
-{% highlight yaml %}
+```yaml
 kind: Namespace
 apiVersion: v1
 metadata:
@@ -94,7 +94,7 @@ metadata:
     cloud66.com/stencil-uuid: ${stencil["uuid"]}    
     cloud66.com/snapshot-uid: ${snapshot["uid"]}
     cloud66.com/snapshot-gitref: ${snapshot["gitref"]}
-{% endhighlight %}
+```
 
 As you can see, the default `setup.yml` Stencil (from our [base template repository](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-base-template)) sets up the required scaffolding for deploying an application to Kubernetes starting with a namespace.
 
@@ -166,7 +166,10 @@ One way to apply your rendered Stencils to the cluster is by downloading them as
 A simpler way is to use [Cloud 66 Toolbelt](/skycap/quickstarts/using-cloud66-toolbelt.html) (cx). Simply click on the "copy" icon next to the command at the top of the page and use it to pipe the Stencils directly to your cluster by appending `| kubectl apply -f -` to the end of the command.
 
 The end result should look something like this:
-<pre class="prettyprint">cx snapshots render --stack 'Hello World' --snapshot 'sn-xizeh-zamic-zycic-vakoh-sufes-gyrah-vipoz-kovuf-boxex' --formation 'fm-220346840f481e7c5576ebb80384daee' | kubectl apply -f -</pre> 
+
+```shell
+cx snapshots render --stack 'Hello World' --snapshot 'sn-xizeh-zamic-zycic-vakoh-sufes-gyrah-vipoz-kovuf-boxex' --formation 'fm-220346840f481e7c5576ebb80384daee' | kubectl apply -f -
+``` 
 (Don't use this exact example command - the IDs of your own app will be completely different)
 
 The `cx snapshots render` command pulls the rendered versions of your Stencils from your Formation and concatenates them so they can be piped into your cluster using `kubectl`. 

@@ -22,7 +22,7 @@ This guide assumes you have a working knowledge of both <a href="/skycap/how-to-
 
 Transformations are defined in a BTR via a central `templates.json` file that sits in the root of the repo. This is an excerpt from a `templates.json` file that illustrates the structure of the `transformations` section:
 
-{% highlight json %}
+```json
     "transformations": [
              {
                 "name": "Insert Sidecar",
@@ -33,7 +33,7 @@ Transformations are defined in a BTR via a central `templates.json` file that si
                 "preferred_sequence": 0
              },
           ]
-{% endhighlight %}
+```
 
 The same `templates.json` file is also used to define the Kubernetes templates (Stencils) and any policies applied to those templates. For more info, please read our guides to these features.
 

@@ -42,9 +42,9 @@ Cloud 66 chooses a server to perform the migrations - all other servers will wai
 You can control your Rails database migrations by setting the `run.deploy.command` option through application settings via 
 [Toolbelt](/rails/quickstarts/using-cloud66-toolbelt.html) which gives you the option of running migrations or not.
 
-<pre class="prettyprint">
+```shell
 $ cx settings set -s my_stack run.deploy.command true
-</pre>
+```
 
 When you have disabled `run.deploy.command` in [Application settings](/{{page.collection}}/references/toolbelt.html#settings-variables), you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
 {%endif%}

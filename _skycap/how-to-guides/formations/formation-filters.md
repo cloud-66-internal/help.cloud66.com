@@ -34,9 +34,9 @@ You can create a filter to exclude or include any of the following Skycap compon
 
 ...based on whether they match a filter. When you run a deployment command using Toolbelt, you can call a Filter to intelligently include and exclude components based on your rules. For example:
 
-{% highlight bash %}
+```bash
 cx snapshots render --stack "Hello World" --snapshot "SNAPSHOT_ID" --formation "FORMATION_ID" --filter "dev-only.json"
-{% endhighlight %}
+```
 
 ...will use the Filter named `dev-only.json` to select which components will be subject to the `render` command. Filters are technically JSON formatted files, but the syntax for writing rules is not JSON-based (see below).
 
@@ -72,15 +72,15 @@ Once a Filter has been saved, you can call it via the Toolbelt whenever you rend
 
 Filters are primarily used via the Cloud 66 Toolbelt (cx). This can be as simple as adding a filter argument to any cx command. For example:
 
-{% highlight shell %}
+```shell
 cx formations deploy -s "My App" -f "my-formation"
-{% endhighlight %}
+```
 
 ...would deploy all the components of "My App" as configured under "my-formation", whereas:
 
-{% highlight bash %}
+```bash
 cx formations deploy -s "My App" -f "my-formation" --filter "dev-only"
-{% endhighlight %}
+```
 
 ...would only deploy the components specified in the "dev-only" filter and ignore the rest.
 
@@ -101,6 +101,6 @@ You can find specific `cx` commands for a filter by visiting its detail page. To
 
 For example:
 
-{% highlight bash %}
+```bash
 cx snapshots render --stack "My App" --snapshot "SNAPSHOT_ID" --formation "my-formation" --filter "filtername"
-{% endhighlight %}
+```

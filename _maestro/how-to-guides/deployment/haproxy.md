@@ -27,11 +27,15 @@ You can also specify your own test interval if you like - this is done in the _s
 
 To change the test interval to every 30 seconds (instead of the default 2 seconds), the template should look like this:
 
-<pre class="terminal">server web&#123;&#123; forloop.index &#125;&#125; &#123;&#123; server.ext_ipv4 &#125;&#125;:80 cookie "LSW_WEB&#123;&#123; forloop.index &#125;&#125;" check inter 30000</pre>
+```
+{% raw %}server web{{ forloop.index }} {{ server.ext_ipv4 }}:80 cookie "LSW_WEB{{ forloop.index }}" check inter 30000{% endraw %}
+```
 
 Please note the `inter 3000` at the end - this defines the test interval as 3000 milliseconds. Once this template is applied, it looks like this:
 
-<pre class="terminal">server web1 107.170.99.39:80 cookie "LSW_WEB1" check inter 30000</pre>
+```shell
+server web1 107.170.99.39:80 cookie "LSW_WEB1" check inter 30000
+```
 
 ## Change the HAProxy endpoint
 
@@ -135,12 +139,14 @@ You can set your HAproxy to show a maintenance page when it cannot connect to a 
 
 * Create custom maintenance page
 * Upload to haproxy server using the toolbelt
-  <pre class="prettyprint">cx upload -s application_name_ --server haproxy_server_name maintenance.html</pre>
+```shell
+cx upload -s application_name_ --server haproxy_server_name maintenance.html
+```
   
 * Move the file haproxy directory
-  <pre class="prettyprint">
-sudo mv /tmp/maintenance.html /etc/haproxy/maintenance.html</pre>
+  ```shell
+sudo mv /tmp/maintenance.html /etc/haproxy/maintenance.html```
 
 * Configure haproxy to show the maintenance file by adding the below line to the end of the default section
-   <pre class="terminal">errorfile 503 /etc/haproxy/maintenance.html</pre>
+`errorfile 503 /etc/haproxy/maintenance.html`
 

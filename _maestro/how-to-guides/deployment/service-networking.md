@@ -33,23 +33,23 @@ To achieve this via the *edit service* interface:
 
 If you'd prefer to make these changes directly in the `service.yml` the result would look similar to this:
 
-{% highlight yaml %}
+```yaml
 services:
     my_service:
         ports:
           - container: 5454
             udp: 111
-{% endhighlight %}
+```
 
 In the example below, our service listens to TCP port 8787 and we want to make it available on port 9000 to the outside world:
 
-{% highlight yaml %}
+```yaml
 services:
     my_service:
         ports:
           - container: 8787
             tcp: 9000
-{% endhighlight %}
+```
 
 Note that you don't need to set the protocol for the container port - that is defined by the service itself. By specifying the protocol of the *Public Internet Port* you're ensuring that requests that reach the container are using the same networking protocol as the service itself.
 
@@ -57,7 +57,7 @@ Note that you don't need to set the protocol for the container port - that is de
 
 Some services listen to multiple ports. An example is InfluxDB which listens to different ports for queries and admin controls. You can map these relationships using an array in the `service.yml`. For example:
 
-{% highlight yaml %}
+```yaml
 services:
     my_service:
         ports:
@@ -65,7 +65,7 @@ services:
             tcp: 9000
           - container: 8788
             tcp: 9001
-{% endhighlight %}
+```
 
 ## Examples of default ports
 

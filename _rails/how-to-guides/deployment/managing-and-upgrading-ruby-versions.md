@@ -37,7 +37,7 @@ You can check the latest version of Ruby we currently support on our [technical 
 
 #### Warning
 <div class="notice notice-warning"><p>
-If your <kbd>manifest.yml</kbd> specifies a different version to your Gemfile, this will cause problems when you deploy your code. The safest option is to remove the Ruby version declaration from everything except the Manifest file.</p></div> 
+If your <code>manifest.yml</code> specifies a different version to your Gemfile, this will cause problems when you deploy your code. The safest option is to remove the Ruby version declaration from everything except the Manifest file.</p></div> 
 
 ## Defining your Ruby version via the Manifest file
 
@@ -59,7 +59,7 @@ If you'd like more context, we have a detailed guide to all the settings availab
 
 #### Note
 <div class="notice"><p>
-If you're currently defining your Ruby version in a Gemfile or a <kbd>.ruby_version</kbd> file, we strongly recommend moving to using a Manifest file whenever you deploy code. The alternative is likely to result in significant conflicts and issues between servers and applications. Gemfile version declarations can cause problems when upgrading, because your application will no longer run unless the version declared is the same as the underlying version of Ruby.</p></div>
+If you're currently defining your Ruby version in a Gemfile or a <code>.ruby_version</code> file, we strongly recommend moving to using a Manifest file whenever you deploy code. The alternative is likely to result in significant conflicts and issues between servers and applications. Gemfile version declarations can cause problems when upgrading, because your application will no longer run unless the version declared is the same as the underlying version of Ruby.</p></div>
 
 ## Deployment strategies for Ruby version upgrades
 

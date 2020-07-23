@@ -23,7 +23,7 @@ You need to go through the following steps:
 3.  There could be some parts missing in your Nginx config, probably due to customization or config file not being up to date. The following parts take care of redirections - like HTTP to HTTPS redirection or adding/removing www to the link. Ensure these sections of your own Nginx config match up with the examples below.
     
 {% raw %}
-```
+```shell
 http {
     .
     .

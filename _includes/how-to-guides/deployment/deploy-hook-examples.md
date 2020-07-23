@@ -39,12 +39,12 @@ We need to set up our deploy hook to install the package from the Ubuntu. Every 
 
 Our hook code will look like this:
 
-{% highlight yaml %}
+```yaml
 first_thing:
  - command: sudo apt-get install glances
    target: any
    execute: true
-{% endhighlight %}
+```
 
 Now that we have our hook code ready, we need to add it to our application. We do this by creating a file in the `/.cloud66` directory of our repo called `deploy_hooks.yml` and dropping in the YAML code we just wrote above. If you're not well versed in YAML, it's often helpful to use an [online linter](http://www.yamllint.com/) to test that your code is valid and conformant. 
 
@@ -65,7 +65,7 @@ We need to set up our deploy hook to download the [source code](https://github.c
 
 Hooks are written in YAML and ours will look like this:
 
-{% highlight yaml %}
+```yaml
 first_thing:
 - target: rails
   execute: true
@@ -96,7 +96,7 @@ first_thing:
     rm -f /tmp/image-magick-"$version".tar.gz
 
     echo "ImageMagick install complete!"
-{% endhighlight %}
+```
 
 Two things to take note of here:
 

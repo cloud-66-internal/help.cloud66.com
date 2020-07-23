@@ -18,19 +18,19 @@ To define a StencilGroup click on the New Group button on the Formation detail p
 
 Name and Tags should be self explanatory. Rules are JSON objects that determine what's included in or excluded from your StencilGroup. For example the following rule, includes any Stencil named `setup.yml` in this group:
 
-<pre class="prettyprint">
+```json
 	{
 		"include" : ["name:setup.yml"]
 	}
-	</pre>
+```
 
 ...while the following rule includes any Stencil with the `production` tag in the group:
 
-<pre class="prettyprint">
+```json
 	{
 		"include" : ["tag:production"]
 	}
-</pre>
+```
 
 In this demonstration we create a group that contains only the namespace definition (setup.yml) and excludes anything tagged as "production":
 
@@ -46,12 +46,12 @@ If both `include` and `exclude` keys exist, the list of Stencils is selected by 
 
 Here is an example of a complete StencilGroup rule:
 
-<pre class="prettyprint">
+```json
 	{
 		"include" : ["name:setup.yml", "tag:config"],
 		"exclude" : ["tag:test", "tag:qa", "name:deployment.yml"]
 	}
-</pre>
+```
 
 As you can see, this includes the base set up for the application along with all its configurations, but excludes all the components tagged as "test" and "qa" as well as the Kubernetes Deployment definition.
 

@@ -44,9 +44,9 @@ These use a similar format to Ruby hashes - comma separated key:value pairs with
 
 Example:
 
-<pre class="prettyprint">
+```shell
 { "foo": 1, "formation_name" : formation, "complex" : concat("hey", " you")}
-</pre>
+```
 
 ### Locals:
 
@@ -58,9 +58,9 @@ These use the format `if(CONDITION, TRUE_RESULT, FALSE_RESULT)` where CONDITION 
 
 Example:
 
-<pre class="prettyprint">
+```shell
 namespace: ${if(formation != "production", "dev", "live")}
-</pre>
+```
 
 This would set the namespace to "live" if the formation is named "production" or to "dev" if it's named anything else.
 
@@ -173,7 +173,7 @@ You can also fetch values from an **account-level ConfigStore** using the namesp
 
 For example:
 
-<pre class="prettyprint">
+```yaml
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
@@ -185,7 +185,7 @@ spec:
  resources:
   requests:
    storage: ${configstore("mysql_storage", application.configstore_namespace)}
-</pre>
+```
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
@@ -195,11 +195,11 @@ Usage: `count([array values])`
 
 Returns the number of items in an array or any countable objects e.g. strings. For example:
 
-<pre class="prettyprint">
+```shell
 count([4578, 2178] # returns 2
 count([dog, fish, bird] # returns 3
 count("abc") # returns 3
-</pre>
+```
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
@@ -236,11 +236,11 @@ Usage: `envlist(tag)`
 
 Returns a YAML compatible list of all Stack Environment Variables. This is useful when you don't want to keep adding new environment variables to every deployment one by one. For example `envlist` returns the following:
 
-<pre class="prettyprint">
+```shell
 - RAILS_ENV: 'production'
 - USER_ID: 'e25fa2bhc'
 - API_ENDPOINT: '[https://api.acme.org](https://api.acme.org/)'
-</pre>
+```
 
 Using `tag` returns only the environment variables that match it. You can set the tags for each environment variable on the Stack Environment Variables page on Skycap dashboard.
 
@@ -260,7 +260,7 @@ The `locals` parameter is optional and can be a hash. It will use any keys provi
 
 Example:
 
-<pre class="prettyprint">
+```yaml
 kind: Deployment
 metadata:
  namespace: ${formation}
@@ -273,7 +273,7 @@ metadata:
     tier: ${service}
   spec:
    $inline("_deploy_spec.yml",4,{ "service.port.http": "8080" })
-</pre>
+```
 
 This example fetches the contents of a partial Stencil called `deploy_spec`, indents it by four spaces and then sets the `service.port.http` to 8080.
 
@@ -403,7 +403,7 @@ If no `registry_address` is given, the BuildGrid registry credentials are return
 
 Here is an example on how to set up a secret using `registry_credentials`,
 
-<pre class="prettyprint">
+```yaml
 apiVersion: v1
 kind: Secret
 metadata:
@@ -412,11 +412,11 @@ metadata:
 type: Opaque
 data:
  .dockerconfigjson: ${registry_credentials()}
-</pre>
+```
 
 ...and then use it in a deployment.
 
-<pre class="prettyprint">
+```yaml
 apiVersion: v1
 kind: Deployment
 metadata:
@@ -426,7 +426,7 @@ metadata:
     spec:
     imagePullSecrets:
      - name: bar-docker-registry-secret-name
-</pre>
+```
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
@@ -439,21 +439,21 @@ This is an extension of the `inline` function (see above) which repeats an inlin
 In this context `locals` can be an array or hash. If it is an array, each item should be expressed as a hash. The inline will be rendered count(locals) times (i.e. if there are 3 items in the array, it will be repeated 3 times), each time using the value of each hash in the array.
 
 For example:
-<pre class="prettyprint">
+```shell
 ${repeat_inline("test.yml", 8, [ { "foo" : "bar" }, { "foo" : "buzz" } ])} # render test twice, one with foo=bar and once with foo=buzz
-</pre>
+```
 
 If `count` is provided, it should be a number. In this case inline will be repeated `count` times, each time with `locals` provided as the locals in the normal inline function. In this case `locals` should be a hash. For example:
 
-<pre class="prettyprint">
+```shell
 ${repeat_inline("test.yml", 4, { "foo": "bar" }, 12)} # render test 12 times, every time with foo=bar
-</pre>
+```
 
 Repeating inlines can fetch loop information using `locals_index` (for the current iteration index) and `locals_count` (for the total count). For example you could use this:
 
-<pre class="prettyprint">
+```shell
 This is the ${locals_index} time out of ${locals_count} renders of ${foo}
-</pre>
+```
 
 ...to check which iteration of an inline is being rendered.
 
@@ -483,9 +483,9 @@ Fetches the named value from the specified path in the Vault that is attached to
 
 For example, if your production MySQL password is stored in `/production/MySQL` with the key name `mysql_pass` then the placeholder would be:
 
-<pre class="prettyprint">
+```shell
 {vault("/production/MySQL", "mysql_pass")}
-</pre>
+```
 
 <div style="border-bottom: 1px dashed #CCC;margin-top:20px;margin-bottom:20px;"></div>
 
@@ -497,7 +497,7 @@ Fetches *all* the available values from any path in Vault. As above, the Vault m
 
 The example below would pull all of the values from the `/production/mysql` path.
 
-<pre class="prettyprint">
+```yaml
 apiVersion: v1
 kind: Secret
 metadata:
@@ -508,4 +508,4 @@ metadata:
 type: Opaque
 data:
  ${vaultlist("/production/mysql", 2)}
-</pre>
+```

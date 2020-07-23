@@ -69,11 +69,11 @@ You can change the load balancing method of ElasticDNS with the `load_balancing`
 
 The `ports` option allows you to specify ports definitions for your service. The format of the ports definition is a list of `CONTAINER_PORT:HTTP_PORT:HTTPS_PORT`. Note that the `HTTP_PORT` and `HTTPS_PORT` fields are optional, and you can have HTTPS without HTTP if you wish and vice-versa by including the colons, but leaving that corresponding port number blank. You can define multiple port definition triplets for a single service using the above format, for example:
 
-{% highlight yaml %}
+```yaml
 services:
     <service_name>:
         ports: ["3000:80:443", "4000::8443", "5000"]
-{% endhighlight %}
+```
 
 In this example, the application is listening on port 3000 in the container, and that port is exposed via HTTP on port 80, and HTTPS on port 443. Port 4000 inside the container is also available on port 8443 externally, and port 5000 in the container is available locally on the server. These HTTP/HTTPS ports are available from outside the server, and any traffic to these ports will be redirected to any containers running this service. During scaling, any containers running this service will get traffic distributed to them in a round robin fashion. 
 
@@ -81,7 +81,7 @@ In this example, the application is listening on port 3000 in the container, and
 
 You can also specify ports declaratively, and assign tcp/udp mappings directly to the host. This will mean that containers are mapped directly to the corresponding tcp/udp port on the host. Please note that if you use tcp/udp port mappings then you can only have a single container of that service running per server (cannot map multiple containers to the same host port). Note that each port specification is optional. Http/Https ports will be mapped via Nginx automatically. For example:
 
-{% highlight yaml %}
+```yaml
 services:
     <service_name>:
         ports:
@@ -90,7 +90,7 @@ services:
             https: 443
             tcp: 25
             udp: 111
-{% endhighlight %}
+```
 
 * * *
 
@@ -98,21 +98,21 @@ services:
 
 The `traffic_matches` option allows you to specify an array of string server name matches for your service. These are automatically configured in your reverse proxy service (Nginx). In the following example, if traffic comes in on `app.your_domain.com` or `*.anotherdomain.com` on this service port, then traffic will automatically get routed to it. This option also allows you to have multiple services listening on the same port (port 80 for example) as long as they have different rules for matching server names.
 
-{% highlight yaml %}
+```yaml
 services:
     <service_name>:
         traffic_matches: ["app.your_domain.com", "*.anotherdomain.com"]
-{% endhighlight %}
+```
 
 
 ### Using traffic_matches to reroute all traffic
 
 The `traffic_matches` option can also be used to ensure that any and all traffic hitting your servers is routed to a specific service. To do this, add  `traffic_matches` to that service and set it to match `"_"` (underscore). This is will route any traffic that hits your servers to this service. For example:
 
-{% highlight yaml %}
+```yaml
     services:
         <service_name>:
             traffic_matches: ["_"]
-{% endhighlight %}
+```
 
 Be cautious with this approach as it is effectively a global setting and may disrupt your other services if there are any conflicts.

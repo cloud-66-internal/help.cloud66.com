@@ -17,9 +17,9 @@ You need to choose your web server at the time of initial build of the applicati
 
 To run a Puma web server, add a line to your Procfile labeled as custom_web. Here is an example that relies on our sample config file below:
 
-{% highlight shell %}
+```shell
 custom_web: bundle exec puma
-{% endhighlight %}
+```
 
 You **should not** daemonize the `custom_web` process. In other words, please do not use the `-d` or `-daemon` flags in your initialization string. Please also make sure your config file does not enable daemonization.
 
@@ -29,7 +29,7 @@ We do not support old-style daemonization because it is more reliable to allow t
 
 The following config file will work with Cloud 66. Please take careful note that it enables features like `preload_app!` and explicitly sets the number of workers. This will prevent you from using rolling restarts (see below), so will need to be changed if you intend to use that feature. 
 
-{% highlight config %}
+```shell
 max_threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }
 min_threads_count = ENV.fetch("RAILS_MIN_THREADS") { max_threads_count }
 threads min_threads_count, max_threads_count
@@ -43,24 +43,24 @@ preload_app!
 
 directory ENV.fetch("STACK_PATH") { "." }
 bind ENV.fetch("BIND") { "unix:///tmp/web_server.sock" }
-{% endhighlight %}
+```
 
 (We also have a [commented plain-text version](/rails/how-to-guides/rack-servers/puma-config.txt) of this config with explanatory notes)
 
 #### Note
 <div class="notice"><p>
-The directory block in the above config ensures that Puma will use the latest version of your code when it is deployed. Without this block, some versions of Puma will continue to point to older versions of code until "hard" restarted. You can also find this in the init string below (<kbd>--dir $STACK_PATH</kbd>).</p></div>
+The directory block in the above config ensures that Puma will use the latest version of your code when it is deployed. Without this block, some versions of Puma will continue to point to older versions of code until "hard" restarted. You can also find this in the init string below (<code class="language-bash">--dir $STACK_PATH</code>).</p></div>
 
 If you'd prefer to use Puma without having a config file, you can simply use this catch-all initialization string:
 
-{% highlight shell %}
-custom_web: bundle exec puma -e $RACK_ENV -b unix:///tmp/web_server.sock --pidfile /tmp/web_server.pid --dir $STACK_PATH
-{% endhighlight %}
+<pre class="language-bash line-numbers u-whiteSpaceNoWrap"><code>custom_web: bundle exec puma -e $RACK_ENV -b unix:///tmp/web_server.sock --pidfile /tmp/web_server.pid --dir $STACK_PATH</code></pre>
+
 
 ## Customizing shutdown and reload signals
 
 The default shutdown sequence for Puma servers on Cloud 66 is:
-```
+
+```terminal
 :term,90,:kill
 ```
 
@@ -74,12 +74,12 @@ Our default restart sequence for Puma servers uses the `USR2` [signal](https://g
 
 The result would look something like this:
 
-{% highlight yaml %}
+```yaml
 production:
   procfile_metadata:
     web:
       restart_signal: usr1
-{% endhighlight %}
+```
 
 Please be sure you understand the tradeoffs of using `USR1` - [read this for more context](https://github.com/puma/puma/blob/master/docs/deployment.md#restarting). You may also need to make changes to your **Puma config files** as per the [same doc](https://github.com/puma/puma/blob/master/docs/deployment.md#restarting). In short:
 
@@ -121,19 +121,15 @@ Bluepill (legacy)
 Cloud 66 uses the following signals to control Puma via <a href="/rails/how-to-guides/deployment/systemd.html">systemd</a>:
 
 <h3>Stop the web server</h3>
-<pre class="prettyprint">
-sudo systemctl stop cloud66_web_server.service
-</pre>
+<pre><code class="language-bash">sudo systemctl stop cloud66_web_server.service</code></pre>
 
 <h3>Start the web server</h3>
-<pre class="prettyprint">
-sudo systemctl start cloud66_web_server.service
-</pre>
+
+<pre><code class="language-bash">sudo systemctl start cloud66_web_server.service</code></pre>
 
 <h3>Restart the web server</h3>
-<pre class="prettyprint">
-sudo systemctl restart cloud66_web_server.service
-</pre>
+
+<pre><code class="language-bash">sudo systemctl restart cloud66_web_server.service</code></pre>
 
 </section>
 
@@ -142,18 +138,20 @@ sudo systemctl restart cloud66_web_server.service
 Cloud 66 uses the following signals to control Puma via <a href="/rails/how-to-guides/deployment/bluepill-legacy.html">Bluepill</a>:
 
 <h3>Stop the web server</h3>
-<pre class="prettyprint"> sudo bluepill cloud66_web_server stop </pre>
 
+<pre><code class="language-bash">sudo bluepill cloud66_web_server stop</code></pre>
 
 <h3>Start the web server</h3>
-<pre class="prettyprint"> sudo bluepill cloud66_web_server quit </pre>
 
-<pre class="prettyprint"> sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill </pre>
+<pre><code class="language-bash">sudo bluepill cloud66_web_server quit</code></pre><br/>
+
+<pre><code class="language-bash">sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill</code></pre>
 
 <h3>Restart the web server (hot-restart)</h3>
-<pre class="prettyprint"> sudo bluepill cloud66_web_server restart </pre>
 
-<pre class="prettyprint"> kill -USR2 </pre>
+<pre><code class="language-bash">sudo bluepill cloud66_web_server restart</code></pre>
+
+<pre><code class="language-bash">kill -USR2</code></pre>
 
 </section>
 </div>

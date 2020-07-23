@@ -717,12 +717,12 @@ You can share a server between two components. This could be in cases like using
 
 Each shared server definition specifies the name of another server definition in the manifest file for which the components will then share the physical server:
 
-{% highlight yaml %}
+```yaml
 production:
   rails:
     server:
       same_as: *another_existing_servers_unique_name*
-{% endhighlight %}
+```
 
 
 ### External Servers

@@ -82,7 +82,7 @@ server {
 ```
 
 #### Careful
-<div class="notice notice-warning"><p>Be sure to remove the separate <kbd>ssl on</kbd> directive from the config, or it will not work.
+<div class="notice notice-warning"><p>Be sure to remove the separate <code>ssl on</code> directive from the config, or it will not work.
 </p></div>
 
 

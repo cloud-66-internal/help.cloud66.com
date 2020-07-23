@@ -70,7 +70,7 @@ If you have more than one Cloud 66 account (i.e. you are the owner of more than 
 
 ### Note
 <div class="notice notice-warning"><p>
-The <kbd>--account</kbd> function is now deprecated and has been replaced by cx profiles </p></div>
+The <code>--account</code> function is now deprecated and has been replaced by cx profiles </p></div>
 
 ## Creating a cx profile
 
@@ -106,7 +106,7 @@ So, following our example above, the command would be `cx config use MY_NICE_NAM
 
 #### Note
 <div class="notice"><p>
-You always have a <kbd>default</kbd> profile which cannot be deleted or renamed. </p></div>
+You always have a <code>default</code> profile which cannot be deleted or renamed. </p></div>
 
 ## More help with profiles
 

@@ -19,9 +19,11 @@ Copper is available as a Ruby gem. We recommend installing Copper using Rubygems
 
 To install Copper, use the following command:
 
-<kbd>gem install c66-copper</kbd>
+```shell
+gem install c66-copper
+```
 
-You should now be able to run <kbd>copper version</kbd> successfully.
+You should now be able to run `copper version` successfully.
 
 ## Copper DSL
 
@@ -33,11 +35,13 @@ Rules are stored in files and each file can contain one of many rules. You can r
 
 Open up your favorite text editor and enter the following text into a new file called `my_rule.cop`:
 
-<pre class="prettyprint linenums">
-rule ApiV1Only ensure {
+<div class="CodeBlock">
+    <button class="js-copy-btn" data-clipboard-target="#copy-1">Copy</button>
+    <pre><code id="copy-1" class="line-numbers language-js">rule ApiV1Only ensure {
   fetch("$.apiVersion").first == "v1" // we only allow the use of v1 API functions
 }
-</pre>
+</code></pre>
+</div>
 
 ### Let's break this down
 
@@ -68,14 +72,14 @@ Let's save this file as `service.yml` and validate it.
 
 With your rule `my_rule.cop` and configuration file `service.yml` to hand, hit the Copper CLI:
 
-<kbd>copper check --rules my_rule.cop --file service.yml</kbd>
+```shell
+copper check --rules my_rule.cop --file service.yml
+```
 
-You should now see something like this (without the line numbers):
+You should now see something like this:
 
-<pre class="prettyprint linenums">
-Validating part 0
-    ApiV1Only - PASS
-</pre>
+<pre class="language-bash line-numbers"><code>Validating part 0
+    ApiV1Only - PASS</code></pre>
 
 **Line 1**: Copper CLI can read multi-part YAML files, separated by `---`. `Validating part 0` means Copper is now validating the first part of the YAML configuration file. As our configuration file only has 1 part, we are only going to see `Validation part 0`.
 
@@ -93,21 +97,21 @@ kind: Service
 
 Now let's run the validation again:
 
-<pre class="prettyprint">
+```shell
 Validating part 0
     ApiV1Only - FAIL
-</pre>
+```
 
 ### Taking it one step further
 
 Now let's allow both `v1` and `extensions/v1beta` values as `apiVersion` in our configuration files, but nothing more:
 
-<pre class="prettyprint linenums">
+```js
 rule ApiV1Only ensure {
   fetch("$.apiVersion").first == "v1" or // both v1
   fetch("$.apiVersion").first == "extensions/v1beta1" // and v1beta are allowed
 }
-</pre>
+```
 
 Easy!
 

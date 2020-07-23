@@ -25,12 +25,14 @@ Starter works in the same way as <a href="https://devcenter.heroku.com/articles/
 
 Here is a <a href="https://github.com/cloud66-oss/starter#quick-start">quick guide on installing Starter</a>. Once installed, you run Starter like this:
 
-<kbd>$ cd /my/project</kbd>
-<kbd>$ starter -g dockerfile,service,docker-compose</kbd>
+```bash
+$ cd /my/project
+$ starter -g dockerfile,service,docker-compose
+```
 
 This will analyze the project in the current folder and generate the three files: <code>Dockerfile</code>, <code>docker-compose.yml</code> and <code>service.yml</code> in the same folder, prompting for information when required.
 
-<pre class="prettyprint">
+```shell
 Cloud 66 Starter ~ (c) 2016 Cloud 66
 Detecting framework for the project at /Users/awesome/work/boom
 Found ruby application
@@ -51,19 +53,23 @@ This command will be run after each deployment: '/bin/sh -c "RAILS_ENV=_env:RAIL
 ----> Writing docker-compose.yml...
 ----> Writing service.yml
 Done
-</pre>
+```
 
 Starter supports <a href="https://devcenter.heroku.com/articles/procfile">Procfiles</a> and generates a service in <code>service.yml</code> for each item in the Procfile. It’s highly advised to use a Procfile to define your own service commands, as otherwise, Starter will only detect the web service.
 
 To use Starter on a different folder, you can use the <code>p</code> option:
 
-<kbd>$ starter -p /my/project</kbd>
+```shell
+$ starter -p /my/project
+```
 
 <p>For more options, please see:</p>
 
-<kbd>$ starter help</kbd>
+```shell
+$ starter help
+```
 
-Starter can generate a <code>Dockerfile</code> , <code>docker-compose.yml</code> and a Cloud 66 specific <code>service.yml</code> for you:
+Starter can generate a <code>Dockerfile</code>, <code>docker-compose.yml</code> and a Cloud 66 specific <code>service.yml</code> for you:
 
 <ul>
     <li>
@@ -83,10 +89,10 @@ Starter can generate a <code>Dockerfile</code> , <code>docker-compose.yml</code>
 
 Once you have the <code>docker-compose.yml</code> and <code>Dockerfile</code> generated, you can open them up in your favourite text editor for inspection or modifications:
 
-<kbd>
+<code>
 $ atom Dockerfile
 $ atom docker-compose.yml
-</kbd>
+</code>
 
 The <code>docker-compose.yml</code> file is a good start to run your containerized application in production. Depending on your target platform, you need to adjust the settings or translate the <code>docker-compose.yml</code> in a specific service configuration for your target platform.
 
@@ -96,17 +102,17 @@ Once done, you can now use these files to build and deploy your application on C
 
 Cloud 66 inspects your <code>Dockerfile</code> via your source code, so we’ll need to commit that into the code in your Git repository.
 
-<pre class="prettyprint">
+```shell
 git add Dockerfile
 git commit -m "adding Dockerfile"
 git push origin master
-</pre>
+```
 
 Now you can use the web interface <a href="http://help.cloud66.com/introduction-to-cloud-66/introduction-to-cloud-66">to create a new stack</a> for your app in Cloud 66. All you need to do is to copy and paste the generated <code>service.yml</code> to the advanced settings of the stack creation step.
 
 Alternatively you can use the <a href="http://help.cloud66.com/toolbelt/toolbelt-stack-management">Cloud 66 Toolbelt</a> to create your stack from the command line:
 
-<kbd>$ cx stacks create --name "My Awesome Stack" --environment "production" --service_yaml service.yaml</kbd>
+<code>$ cx stacks create --name "My Awesome Stack" --environment "production" --service_yaml service.yaml</code>
 
 Find more information on <a href="http://help.cloud66.com/toolbelt/toolbelt-stack-management">creating a stack with the Toolbelt</a>.
 
@@ -159,19 +165,19 @@ If you want to contribute to Starter. You can build Starter using <a href="/habi
 
 Run Habitus in the root directory of this repository. The latest version is generated (after tests) inside the <code>/artifacts/compiled</code> directory.
 
-<kbd>$ sudo habitus –host $DOCKER_HOST –certs $DOCKER_CERT_PATH</kbd>
+<code>$ sudo habitus –host $DOCKER_HOST –certs $DOCKER_CERT_PATH</code>
 
 To make sure you a have isolated development environment for contribution. You can use the docker-compose for developing, testing and compiling.
 
-<kbd>$ docker-compose run starter</kbd>
+<code>$ docker-compose run starter</code>
 
 Building Starter inside a docker container:
 
-<kbd>$ root@xx:/usr/local/go/src/github.com/cloud66/starter# go build</kbd>
+<code>$ root@xx:/usr/local/go/src/github.com/cloud66/starter# go build</code>
 
 Running the tests:
 
-<kbd>$ root@xx:/usr/local/go/src/github.com/cloud66/starter# go test</kbd>
+<code>$ root@xx:/usr/local/go/src/github.com/cloud66/starter# go test</code>
 
 And you are ready to start your contributions to Starter.
 

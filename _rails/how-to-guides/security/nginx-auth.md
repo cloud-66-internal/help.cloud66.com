@@ -15,22 +15,22 @@ You can use Cloud 66 [CustomConfig](/{{page.collection}}/tutorials/custom-config
 
 1. We'll use [htpasswd](http://httpd.apache.org/docs/2.2/programs/htpasswd.html) to create your password file - it encrypts it the password with MD5. Install it as follows:
 
-{% highlight bash %}
+```bash
 sudo apt-get install apache2-utils -y
-{% endhighlight %}
+```
 
 2. Once that is installed, we're ready to create a password file. We recommend that you create this file within your repository, which will be deployed to your servers. This command will prompt you to input a password:
 
-{% highlight bash %}
+```bash
 sudo htpasswd -c <directory>.htpasswd <user_name>
-{% endhighlight %}
+```
 
 3. Now we can customize our Nginx configuration. To do this add the following code within the server section(s) of your Nginx configuration: 
 
-{% highlight bash %}
+```bash
     auth_basic "Restricted";
     	auth_basic_user_file {{ deploy_to }}/current/.htpasswd;
-{% endhighlight %}
+```
 
 Where you put it will depend on which Rack server you are running, and whether or not you are using HTTPS traffic: 
 

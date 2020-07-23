@@ -74,7 +74,7 @@ If multiple services attempt to use a CPU and the aggregate demand is greater th
 
 ### Example of limits
 
-{% highlight yaml %}
+```yaml
 services:
  your_service_name:
   constraints:
@@ -82,7 +82,7 @@ services:
     requests:
      memory: "100m"
      cpu: 500m
-{% endhighlight %}
+```
 
 
 ## Requesting CPU and RAM
@@ -126,7 +126,7 @@ CPU usage is measured in *millicpu*. One full CPU is 1000m, so 100m is equivalen
 
 ### Example of requests
 
-{% highlight yaml %}
+```yaml
 services:
  your_service_name:
   constraints:
@@ -134,7 +134,7 @@ services:
     requests:
      memory: "100m"
      cpu: 500m
-{% endhighlight %}
+```
 
 
 

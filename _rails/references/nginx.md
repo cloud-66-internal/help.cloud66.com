@@ -308,7 +308,7 @@ The following variables are available for use in your Nginx [CustomConfig](/rail
     <tr> 
      <td>letsencrypt_primary_address</td> 
      <td>string</td> 
-     <td>Sets the address of the host that "owns" the Let's Encrypt certificate. Can then be used with the <kbd>proxy_pass</kbd> directive to serve SSL requests via other hosts.</td> 
+     <td>Sets the address of the host that "owns" the Let's Encrypt certificate. Can then be used with the <code>proxy_pass</code> directive to serve SSL requests via other hosts.</td> 
     </tr>     
     <tr> 
      <td>load_balancer_address</td> 
@@ -343,7 +343,7 @@ The following variables are available for use in your Nginx [CustomConfig](/rail
     <tr> 
      <td><a href="/rails/how-to-guides/deployment/building-a-manifest-file.html#rails">passenger_pool_max</a></td> 
      <td>integer</td> 
-     <td>The maximum number of processes that Passenger will spawn. This value is derived from <kbd>passenger_process_memory</kbd> which can be set via the <a href="/rails/how-to-guides/deployment/building-a-manifest-file.html#rails">manifest file</a>. See below for an explanation on <a href="#how-passenger_pool_max-is-calculated">how this is calculated</a>.</td> 
+     <td>The maximum number of processes that Passenger will spawn. This value is derived from <code>passenger_process_memory</code> which can be set via the <a href="/rails/how-to-guides/deployment/building-a-manifest-file.html#rails">manifest file</a>. See below for an explanation on <a href="#how-passenger_pool_max-is-calculated">how this is calculated</a>.</td> 
     </tr> 
     <tr> 
      <td>passenger_supports_cgi_param</td> 
