@@ -13,7 +13,7 @@ permalink: /:collection/:path:output_ext
 
 Start by [SSHing to your server](/rails/how-to-guides/common-tools/ssh.html). Then go to your `STACK_PATH` (e.g. `cd $STACK_PATH`) and run the following command:
 
-```
+```shell
 $ bundle exec rails c <environment>
 ```
 
@@ -25,7 +25,7 @@ $ bundle exec rails c <environment>
 
 To run your Rails console as the Nginx user, you can use the following command:
 
-```
+```shell
 $ sudo -u nginx bash -c 'source /var/.cloud66_env && bundle exec rails c'
 ```
 

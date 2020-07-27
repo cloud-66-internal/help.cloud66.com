@@ -24,7 +24,7 @@ Policies are defined in a BTR via a central `templates.json` file that sits in t
 
 This is an excerpt from a `templates.json` file that illustrates the structure of the `policies` section:
 
-{% highlight json %}
+```json
     "policies": [
              {
                 "name": "No Port in Services",
@@ -35,7 +35,7 @@ This is an excerpt from a `templates.json` file that illustrates the structure o
                 "preferred_sequence": 0
              },
           ],
-{% endhighlight %}
+```
 
 The same `templates.json` file is also used to define the Kubernetes templates (Stencils) and any transformations applied to those templates. For more info, please read our guides to these features. 
 

@@ -11,14 +11,14 @@ To configure your Maestro app to communicate with your WebSocket server, you nee
 
 For example, this service (**ws-app**) is running on port `3000`, and communicating with WebSocket via `8080`:
 
-{% highlight yaml %}
+```yaml
     version: 2
     services:
       ws-app:
         ports:
         - container: 3000
           http: 8080
-{% endhighlight %}    
+```    
 
 {% endif %}
 {% if include.product != 'maestro' %}
@@ -33,6 +33,7 @@ If necessary you can use different ports for WebSocket, but you will need to [ma
 
 To test if your WebSocket server is connecting to your application correctly, you can create a `.html` file with the code below. Make sure to replace *<your_address>* with your WebSocket server IP address and finally, open it in a web browser.
 
+```html
     <html>
       <head>
         <script src="<http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js>"></script>
@@ -61,7 +62,7 @@ To test if your WebSocket server is connecting to your application correctly, yo
         <div id="msg"></div>
       </body>
     </html>
-
+```
 ## WebSocket through a load balancer
 
 You can use WebSocket if your application is using a load balancer, but you may need to make some configuration changes (depending on the load balancer). Cloud 66's default load balancer is HAProxy. 

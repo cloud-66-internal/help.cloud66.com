@@ -6,7 +6,7 @@ Use this command to download a file from the remote server to your local compute
 
 ### Usage
 
-```
+```shell
 $ cx download [-s <stack>] [--server <server name>] [source file] [target directory]
 ```
 If you don't specify a target directory, the file will be downloaded to your current local directory.
@@ -25,6 +25,6 @@ If you don't specify a target directory, the file will be downloaded to your cur
 
 ### Example
 
-```
+```shell
 $ cx download -s "My Awesome App" --server web /tmp/file.txt /tmp/file.txt
 ```

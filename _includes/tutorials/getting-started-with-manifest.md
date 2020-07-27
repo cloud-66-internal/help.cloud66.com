@@ -34,7 +34,7 @@ You can use this file to make configuration changes to an existing application. 
 
 To get started, open up your `manifest.yml` file in a text editor and enter the following lines:
 
-```
+```yaml
 production:
     {{ include.product | downcase }}:
         configuration:
@@ -78,7 +78,7 @@ Although redeploying your application will update its configuration, it will not
 
 To force Nginx configuration changes to be pushed to your servers, we can use a command in the [Cloud 66 toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html ) called `reconfigure.nginx`. Use the following command to push the change (replacing `my_app` with your application name):
 
-```
+```shell
 $ cx settings set -s my_app reconfigure.nginx true
 ```
 

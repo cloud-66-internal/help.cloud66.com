@@ -14,18 +14,18 @@ These are some examples for common use cases of Copper and are provided to help 
 
 ### Ban use of `latest` as image tag
 
-<pre class="prettyprint">
+```js
 rule NoLatest ensure {
     fetch("$.spec.template.spec.containers..image")
         .as(:image)
         .pick(:tag)
         .contains("latest") == false
 }
-</pre>
+```
 
 ### Only allow minor version upgrades
 
-<pre class="prettyprint">
+```js
 rule MySQLVersionCheck ensure {
     fetch("$.spec.template.spec.containers[?(@.name == 'mysql')].image")
 		.first
@@ -34,50 +34,50 @@ rule MySQLVersionCheck ensure {
 		.as(:semver)
 		.satisfies("~> 5.6") == true
 }
-</pre>
+```
 
 ### Enforce filename policies
 
-<pre class="prettyprint">
+```js
 rule DeploymentFilenamePolicy ensure {
 	filename.ext == ".yml" and // extension is yml
 	filename.name == fetch("$[?(@['kind'] == 'Deployment')].metadata.name").first and
 	filename.path.split("/").last == "deployments"
 }
-</pre>
+```
 
 ### Load Balancer IP is within the range
 
-<pre class="prettyprint">
+```js
 rule LoadBalancerIPInRange ensure {
 	fetch("$.spec[?(@['type'] == 'LoadBalancer')].loadBalancerIP")
 		.first
 		.as(:ipaddress) in ipaddress("232.12.87.0/24")
 }
-</pre>
+```
 
 ### Namespace is available and not default
 
-<pre class="prettyprint">
+```js
 rule NoDefaultNamespace ensure {
 	fetch("$.metadata.namespace").first == "foobar"
 }
-</pre>
+```
 
 ### No DockerHub images
 
-<pre class="prettyprint">
+```js
 rule NoDockerHub ensure {
     fetch("$.spec.template.spec.containers..image")
         .as(:image)
         .pick(:registry)
 		.contains("index.docker.io") == false
 }
-</pre>
+```
 
 ### Only pull images from our private registry
 
-<pre class="prettyprint">
+```js
 rule PrivateRepoOnly ensure {
     fetch("$.spec.template.spec.containers..image")
         .as(:image)
@@ -85,4 +85,4 @@ rule PrivateRepoOnly ensure {
 		.extract("(.*)\/.*", 1) // image name is in the namespace/name format
 		.unique == ["acme"]
 }
-</pre>
+```

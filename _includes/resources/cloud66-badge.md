@@ -8,7 +8,7 @@ All you have to do is drop us a line at [hello@cloud66.com](mailto:hello@cloud66
 
 #### HTTP:
 
-```
+```html
 <a href="http://www.cloud66.com">
     <img src="http://assets.cloud66.com/public/powered-by-cloud66.png" title="Powered by Cloud 66">
 </a>
@@ -18,7 +18,7 @@ All you have to do is drop us a line at [hello@cloud66.com](mailto:hello@cloud66
 
 #### HTTPS:
 
-```
+```html
 <a href="http://www.cloud66.com">
     <img src="https://assets.cloud66.com/public/powered-by-cloud66.png" title="Powered by Cloud 66"/>
 </a>

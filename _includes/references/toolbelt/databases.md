@@ -9,7 +9,7 @@ Promotes the specified slave database server to a standalone master. The slave w
 
 ### Usage
 
-```
+```shell
 cx databases promote-slave -s <stack> <slave server name>
 cx databases promote-slave -s <stack> --dbtype=postgresql <slave server name>
 ```
@@ -30,7 +30,7 @@ Re-syncs the specified slave database server with its master database server.
 
 ### Usage
 
-```
+```shell
 $ cx databases resync-slave [-s <stack>] <slave server name>
 ```
 
@@ -57,7 +57,7 @@ The server provided must have already been configured as a replication slave via
 ### Example
 
 
-```
+```shell
 $ cx databases resync-slave -s My_Awesome_App my_slave_server_name
 $ cx databases resync-slave -s My_Awesome_App --dbtype postgresql my_slave_server_name
 ```

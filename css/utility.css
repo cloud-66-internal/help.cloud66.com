@@ -87,7 +87,12 @@
    white-space: nowrap !important;
    word-wrap: normal !important; /* 2 */
  }
-
+.u-overflowX {
+    overflow-x: auto;
+}
+.u-whiteSpaceNoWrap {
+    white-space: pre-wrap !important;
+}
  /**
   * Prevent whitespace wrapping
   */
@@ -165,4 +170,8 @@
 }
 .u-text12 {
   font-size: 12px !important;
+}
+
+.u-positionRelative {
+    position: relative;
 }

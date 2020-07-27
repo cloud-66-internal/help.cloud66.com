@@ -27,7 +27,7 @@ You can use _$STACK_BASE_ for your application base path (eg. _$STACK_BASE/share
 
 To create the symbolic link, your deploy hook script could contain this:
 
-```
+```shell
 mkdir -p $STACK_BASE/shared/uploads
 chown nginx:app_writers $STACK_BASE/shared/uploads
 rm -rf $STACK_PATH/uploads
@@ -38,7 +38,7 @@ The reason we are runninng `rm -rf` on the _$STACK_PATH/uploads_ directory is du
 
 Save the script as a `.sh` file and add it to your repo. The resulting deploy hook would look like this:
 
-```
+```yaml
 production:
     after_symlink:
       - source: /.cloud66/my_symlink.sh

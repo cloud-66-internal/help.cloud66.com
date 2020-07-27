@@ -32,7 +32,7 @@ You can scale your Docker services horizontally across your Docker cluster by cl
 
 In your service configuration, you can also specify constraints for a service across the cluster, which currently includes `max_count`, or the max number of containers for a service across the cluster. This doesn’t affect deploys, but comes into account when scaling up/down on server or cluster.
 
-```
+```yaml
 services:
     <service_name>:
         constraints:

@@ -30,19 +30,19 @@ When you are running a job on demand via dashboard or [toolbelt]({% if page.coll
 ### Notation
 Jobs use a facility in the shell called <i>positional parameters</i>. Positional parameters are a series of special variables ($1, $2 ... $n) that contain the contents of the command line. Where <strong>n</strong> is greater than 9 using braces. For example, to refer to the 15th positional parameter, use the notation `${15}`. 
  
-<pre class="prettyprint">
+```shell
 cp $1 $2
 ls $1 $2 $3 $4 $5 $6 $7 $8 $9 ${10} ${11}
-</pre>
+```
 
 ### Default values
 You can handle default value for the parameter with following notation: `${n:-YOUR_DEFAULT_VALUE}`. This is useful when you have ha job that scheduled and also you need to run it on demand sometimes.
 
 Example below cp file `$1` to `tmp` directory by default
 
-<pre class="prettyprint">
+```shell
 cp $1 ${2:-/tmp}
-</pre>
+```
 
 ### Pass parameters to job
 
@@ -50,8 +50,8 @@ Since job is using positional parameters pass you arguments in order, eg: if you
 
 You can also quote your argument if there is a space in the value.
 
-<pre class="prettyprint">
+```shell
 job command: cp $1 ${2:-/tmp}
 passing arguments in dashboard: "log*.txt" tmp/logs
 passing arguments in toolbelt: --arg "log*.txt" -- arg tmp/logs
-</pre>
+```

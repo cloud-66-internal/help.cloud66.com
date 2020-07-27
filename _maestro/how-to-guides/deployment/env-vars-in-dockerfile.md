@@ -18,9 +18,9 @@ Your application may need to call environment variables during its build step - 
 
 You can pull the value of an environment variable from your Cloud 66 account into a Dockerfile using the `ENV` command and the format `$NAME_OF_KEY`. Note that the key name **must** be capitalized. For example the following:
 
-{% highlight docker %}
+```docker
 ENV WEB_IP "$WEB_ADDRESS_INT"
-{% endhighlight %}
+```
 
 ...would pull the internal IP address of the application's webserver into the Dockerfile and assign it to a local variable named "WEB_IP". 
 
@@ -28,9 +28,9 @@ Note that this assumes that the environment variable you are calling **already e
 
 You can also use the following format if you don't need to set the output as a variable and just need the value of the key for another operation.
 
-{% highlight docker %}
+```docker
 RUN echo $WEB_ADDRESS_INT
-{% endhighlight %}
+```
 
 ## Pulling binaries into your Dockerfile using env_vars
 

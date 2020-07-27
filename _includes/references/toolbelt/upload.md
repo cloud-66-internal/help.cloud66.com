@@ -5,7 +5,7 @@ Use this command to copy a file from your local computer to the remote server.
 
 ### Usage
 
-```
+```shell
 $ cx upload [-s <stack>] [--server <server name>] [source file] [target directory]
 ```
 If you don't specify a target directory, the file will be uploaded to /tmp on your remote server.
@@ -24,6 +24,6 @@ If you don't specify a target directory, the file will be uploaded to /tmp on yo
 
 ### Example
 
-```
+```shell
 $ cx upload -s "My Awesome App" --server web /tmp/file.txt /tmp/file.txt
 ```

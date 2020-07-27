@@ -37,14 +37,14 @@ The easiest way to trigger a Fast Deployment is using the *Deploy with Options* 
 
 You can also trigger a Fast Deployment using Cloud 66 Toolbelt using the following command:
 
-```
+```shell
 cx stacks redeploy --deploy-strategy fast
 ```
 If you're planning to use this strategy regularly, you should consider creating a [deployment profile](/maestro/references/deploy-profiles.html) to make triggering Fast Deployments quicker. You can do this via the *Deploy with Options* menu by clicking the *Save these deployment options?* link. 
 
 Remember you can also trigger deployment profiles using Toolbelt:
 
-```
+```shell
 cx stacks redeploy --deployment-profile my-fast-deploy
 ```
 

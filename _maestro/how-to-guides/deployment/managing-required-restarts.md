@@ -30,13 +30,13 @@ You can also use the [maintenance page](/maestro/how-to-guides/deployment/servic
 
 To restart your server, it is recommended that you [SSH](/maestro/how-to-guides/common-tools/ssh.html) to your server and run either of the following terminal commands:
 
-<pre class="terminal">
+```shell
 sudo reboot 
-</pre>
+```
 
-<pre class="terminal">
+```shell
 sudo shutdown -r now
-</pre>
+```
 
 ### Important
 <div class="notice">

@@ -92,34 +92,35 @@ You access ConfigStore data by using the following syntax:
 
 The basic syntax for Stencil placeholders is:
 
-<pre class="terminal">
+```shell
 value: ${configstore("key")}
-</pre>
+```
 
 If you need to pull a value from the ConfigStore for a **specific application** the syntax is:
 
-<pre class="terminal">
+```shell
 value: ${configstore("key", application["configstore_namespace"])}
-</pre>
+```
 
 To fetch a value from the **account-level** ConfigStore, use the following syntax:
 
-<pre class="terminal">
+```shell
 value: ${configstore("key", account["configstore_namespace"])}
-</pre>
+```
 
 ### Environment Variables
 
 To load values from ConfigStore as environment variables in any application, open the [Environment Variables](/skycap/tutorials/setting-environment-variables.html) page via your Dashboard and use the following format as the *value* for any key:
 
-```
+```shell
 _configstore(NAMESPACE_UUID.KEY)
 ```
 
 ### Service.yml placeholder
-The following syntax must be used for  service.yml :
 
-```
+The following syntax must be used for service.yml:
+
+```yaml
 envs:
   - ABC: _env(XYZ)
 ```
@@ -148,7 +149,9 @@ If you are using Mac or Linux Auto Install by pasting the curl command in the Te
 
 ### Auto Install
 
-<kbd>curl -ssl https://s3.amazonaws.com/</kbd>
+```shell
+curl -ssl https://s3.amazonaws.com/
+```
 
 ### ConfigStore Binaries
 <p>

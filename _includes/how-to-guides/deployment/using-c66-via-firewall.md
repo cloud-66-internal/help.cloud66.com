@@ -21,7 +21,7 @@ In general, with most cloud providers, we are able to gain access to these ports
 
 Cloud 66 connects to users' servers from a set of authorized IP addresses:
 
-```
+```shell
 {% include general/public_ips.html %}
 ```
 

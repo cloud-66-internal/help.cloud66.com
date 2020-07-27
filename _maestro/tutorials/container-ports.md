@@ -114,7 +114,7 @@ To edit your `service.yml`:
 4. When you are done, add a commit message and click *Commit*
 
 If you followed our Getting Started guide, your `service.yml` should initially look a lot like this:
-{% highlight yaml %}
+```yaml
 version: 2
 services:
   demo-app:
@@ -126,12 +126,12 @@ services:
     dockerfile_path: Dockerfile
 databases:
 - redis
-{% endhighlight %}
+```
 
 To add https access, you would modify the *ports* sub-section under the *demo-app* section of *services*, adding `https: 443` on a new line. 
 
 The end result should look like this:
-{% highlight yaml %}
+```yaml
 version: 2
 services:
   demo-app:
@@ -144,7 +144,7 @@ services:
     dockerfile_path: Dockerfile
 databases:
 - redis
-{% endhighlight %}
+```
 
 In order for these new settings to apply to your service, you will need to redeploy your application. To do this, click the *Build / Deploy* button on the Application Overview. 
 

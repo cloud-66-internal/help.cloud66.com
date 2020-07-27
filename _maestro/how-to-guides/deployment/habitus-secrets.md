@@ -31,7 +31,7 @@ Adding any variables with the `HABITUS_` prefix will signal Maestro to automatic
 
 Your `build.yml` file needs to specify the secrets that you want to be available during the build. For example the secret `MY_SECRET` defined above would be specified like this:
 
-{% highlight yaml %}
+```yaml
 build: 
  version: 2016-03-14 
  steps: 
@@ -43,19 +43,19 @@ build:
     my_secret: 
      type: env 
      value: MY_SECRET
-{% endhighlight %}
+```
 
 ### 3. Call your secrets from your Dockerfile
 
 Your Dockerfile can now securely call and use secrets via `ARG` and `$` statements. For example:
 
-{% highlight docker %}
+```docker
 ARG habitus_host
 ARG habitus_port
 ARG habitus_password
 ARG habitus_user
 RUN curl -s -u $habitus_user:$habitus_password http://$habitus_host:$habitus_port/v1/secrets/env/my_secret # && do something with secret && remove the secret
-{% endhighlight %}
+```
 
 
 #### Careful

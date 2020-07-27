@@ -15,11 +15,16 @@ You can also specify your own test interval if you like - this is done in the _s
 
 To change the test interval to every 30 seconds (instead of the default 2 seconds), the template should look like this:
 
-<pre class="terminal">server web&#123;&#123; forloop.index &#125;&#125; &#123;&#123; server.ext_ipv4 &#125;&#125;:80 cookie "LSW_WEB&#123;&#123; forloop.index &#125;&#125;" check inter 30000</pre>
+```shell
+{% raw %} server web {{ forloop.index }} {{ server.ext_ipv4 }}:80 cookie "LSW_WEB{{ forloop.index }}" check inter 30000 {% endraw %}
+```
 
 Please note the `inter 3000` at the end - this defines the test interval as 3000 milliseconds. Once this template is applied, it looks like this:
 
-<pre class="terminal">server web1 107.170.99.39:80 cookie "LSW_WEB1" check inter 30000</pre>
+
+```shell
+server web1 107.170.99.39:80 cookie "LSW_WEB1" check inter 30000
+```
 
 ## Change the HAProxy endpoint
 By default, HAProxy will visit the _/_ endpoint on your application every 2 seconds to determine its state. This endpoint may need to change if that endpoint isn't available to the load balancer.
@@ -118,17 +123,13 @@ This process will be stopped if an error is encountered.
 ## Configuring HAProxy for maintenance mode
 For <strong>Docker applications</strong> you can set your HAproxy to show a maintenance page when it cannot connect to the container.
 
-<ul class="list">
-  <li>Create custom maintenance page</li>
-  <li>Upload to haproxy server using the toolbelt</li>
-  <pre class="prettyprint">
+* Create custom maintenance page
+* Upload to haproxy server using the toolbelt:
+```shell
 cx upload -s stack_name --server haproxy_server_name maintenance.html
-</pre>
-
-  <li>Move the file haproxy directory</li>
-  <pre class="prettyprint">
+```
+* Move the file haproxy directory:
+```shell
 sudo mv /tmp/maintenance.html /etc/haproxy/maintenance.html
-</pre>
-  <li>Configure haproxy to show the maintenance file by adding the below line to the end of the default section</li>
-   <pre class="terminal">errorfile 503 /etc/haproxy/maintenance.html</pre>
-</ul>
+```
+* Configure haproxy to show the maintenance file by adding the below line to the end of the default section: `errorfile 503 /etc/haproxy/maintenance.html`

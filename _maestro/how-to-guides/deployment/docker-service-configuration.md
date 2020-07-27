@@ -270,7 +270,7 @@ Below is a table of the available configurations for a given service with a brie
     </tr>
     <tr> 
      <td> <a href="#setting-a-service-account-name">service_account_name</a> </td> 
-     <td> Assigns the service to a specific Kubernetes Service Account. The default value is <kbd>default</kbd> </td> 
+     <td> Assigns the service to a specific Kubernetes Service Account. The default value is <code>default</code> </td> 
     </tr>  
     <tr> 
      <td> privileged <em>(default: false)</em> </td> 
@@ -302,7 +302,7 @@ Below is a table of the available configurations for a given service with a brie
     </tr>
     <tr> 
      <td>type</td> 
-     <td> Specifies the type of service being defined. Accepted values: <kbd>service</kbd>, <kbd>deployment</kbd>, <kbd>daemon_set</kbd> </td> 
+     <td> Specifies the type of service being defined. Accepted values: <code>service</code>, <code>deployment</code>, <code>daemon_set</code> </td> 
     </tr>  
     <tr> 
      <td> <a href="/maestro/how-to-guides/deployment/service-storage.html">volumes</a> </td> 

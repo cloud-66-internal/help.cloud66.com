@@ -30,13 +30,13 @@ You can manually enable/disable APC either:
 
 You can use a [manifest file](/rails/quickstarts/getting-started-with-manifest.html) to enable/disable the APC using the following parameters with a true or false:
 
-{% highlight yaml %}
+```yaml
 development:
  rails:
   configuration:
   asset_pipeline_enabled: true
   asset_pipeline_precompile: true
-{% endhighlight %}
+```
 
 Note that we must enable the pipeline *and also* set precompile to true (this is the default).
 

@@ -4,7 +4,7 @@
 
 ### Usage
 
-```
+```shell
 $ cx settings list [-s <stack>] [-e <environment>]
 ```
 
@@ -24,7 +24,7 @@ $ cx settings list [-s <stack>] [-e <environment>]
 
 ### Example
 
-```
+```shell
 $ cx settings set -s "My Awesome App" git.repository git://github.com/cloud66-samples/rails-mysql.git -e production
 
 $ cx settings set -s my_stack deploy.parallel true

@@ -15,7 +15,7 @@ To get started, simply download the [toolbelt executable](https://app.cloud66.co
 
 Before using Toolbelt, you need to link it to your Cloud 66 account. You can do this by issuing one of the available commands, for example:
 
-```
+```shell
 cx stacks list
 ```
 
@@ -70,7 +70,7 @@ If you have more than one Cloud 66 account (i.e. you are the owner of more than 
 
 ### Note
 <div class="notice notice-warning"><p>
-The <kbd>--account</kbd> function is now deprecated and has been replaced by cx profiles </p></div>
+The <code>--account</code> function is now deprecated and has been replaced by cx profiles </p></div>
 
 ## Creating a cx profile
 
@@ -78,17 +78,23 @@ Before you start **make sure you're logged into the account you'd like associate
 
 Next create a new profile in Toolbelt using the following command:
 
-    cx config create A_NICE_NAME
+```shell
+cx config create A_NICE_NAME
+```
 
 ...where `A_NICE_NAME` is the (arbitrary) name you'd like to use for that profile. 
 
 Then tell Toolbelt to use that new profile:
 
-    cx config use A_NICE_NAME
+```shell
+cx config use A_NICE_NAME
+```
 
 Finally, issue a command to force Toolbelt to authenticate the new profile. For example:
 
-    cx stacks list
+```shell
+cx stacks list
+```
 
 ...this will take you through the authorization process for the account you'd like to associate with the new profile. See the [Initialize Toolbelt](#initialize-toolbelt) section above for more details on how this works.
 
@@ -100,13 +106,15 @@ Make sure you are logged into the correct (alternate) account on the Cloud 66 da
 
 To switch between profiles, use the following command:
 
-    cx config use NAME
+```shell
+cx config use NAME
+```
 
 So, following our example above, the command would be `cx config use MY_NICE_NAME`. 
 
 #### Note
 <div class="notice"><p>
-You always have a <kbd>default</kbd> profile which cannot be deleted or renamed. </p></div>
+You always have a <code>default</code> profile which cannot be deleted or renamed. </p></div>
 
 ## More help with profiles
 

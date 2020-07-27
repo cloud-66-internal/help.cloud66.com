@@ -90,10 +90,12 @@ If you'd like to learn how to do this, follow our [dedicated envlist guide](/sky
 You can manage your environment variables in bulk by uploading them in a `.txt` file with each variable declared on a separate line, and key value pairs separated by `=` signs. The Key should always be in uppercase.
 
 For example:
-<pre>DEV_PORT=80
+```shell
+DEV_PORT=80
 LIVE_PORT=8080
 FOO=Bar
-YES=Green</pre> 
+YES=Green
+``` 
 
 To upload a file:
 

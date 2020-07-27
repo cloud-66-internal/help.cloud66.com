@@ -28,9 +28,9 @@ Once you have Toolbelt installed:
 3. Copy the command under "Connect with Toolbelt"  in the right-hand column and paste it into your terminal
 4. You can now access your cluster and run whatever commands you need using the certificate on the server. For example:
 
-{% highlight bash %}
+```bash
 sudo kubectl --kubeconfig=/etc/kubernetes/admin.conf get nodes
-{% endhighlight %}
+```
 
 This method is best if you only need to access you cluster occasionally. If you need to access it regularly, we recommend using method 2 below. 
 
@@ -48,11 +48,11 @@ To set this up, you first need to have Kubernetes installed on your local machin
 6. Set the environment variable using `export KUBECONFIG=/file/path`
 7. You can now access your cluster and run whatever commands you need using the certificate on your computer. For example:
 
-{% highlight bash %}
+```bash
 kubectl get nodes
-{% endhighlight %}
+```
 
 
 #### Warning
 <div class="notice notice-warning"><p>
-Because this method gives a remote machine direct, super-admin-style access to a cluster, we recommend using it with caution and treating the <kbd>kubeconfig</kbd> file with care.</p></div>
+Because this method gives a remote machine direct, super-admin-style access to a cluster, we recommend using it with caution and treating the <code>kubeconfig</code> file with care.</p></div>

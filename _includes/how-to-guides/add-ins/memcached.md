@@ -15,15 +15,15 @@ To add Memcached to your application, access the add-ins menu, click _Memcached_
 ## Customize Memcached
 To customize Memcached, use the below syntax in your [manifest file](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html) and redeploy the application with `Apply security upgrades` option.
 
-<pre class="terminal">
+```shell
 production:
     memcached:
-        shared&#95;group: db
+        shared_group: db
         configuration:
             memory: 1024
             port: 11215
-            listen&#95;ip: 127.0.0.1
-</pre>
+            listen_ip: 127.0.0.1
+```
 
 {% if page.collection == 'legacy_docker' or page.collection == 'maestro' %}
 

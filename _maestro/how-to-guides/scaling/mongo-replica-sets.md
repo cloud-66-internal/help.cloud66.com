@@ -61,13 +61,13 @@ Without replica sets, you can connect to your MongoDB using environment variable
 
 `MONGODO_URL_INT` contains a MongoDB client friendly URL to the server with its internal address. It usually looks like this:
 
-```
+```shell
 mongodb://192.168.12.34:27017/my_database
 ```
 
 `MONGODO_URL_EXT` contains a MongoDB client friendly URL to the server with its external address. It usually looks like this:
 
-```
+```shell
 mongodb://50.45.87.46:27017/my_database
 ```
 
@@ -79,7 +79,7 @@ Once replication is enabled, this environment variable is populated:
 
 `MONGODB_ADDRESSES` contains a comma separated list of all server names of the replica set. This usually looks like something like this:
 
-```
+```shell
 lion.myapp.c66.me,tiger.myapp.c66.me
 ```
 

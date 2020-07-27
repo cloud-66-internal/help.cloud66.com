@@ -28,10 +28,7 @@ order : 1
     <li>
         <p>
         Let developers make changes to Kubernetes configuration files as needed instead of restricting what they can do with another layer of APIs on top.
-        </p>
-    </li>
-    <li>
-        <p>
+
         Make sure all configuration files applied to the Kubernetes clusters are tested and adhere to the relevant infrastructure policies.
         </p>
     </li>
@@ -46,39 +43,12 @@ If you use systems like Kubernetes, commit configuration files into a code repos
 
 These are some of the things we check in our configuration files committed into our git repository:
 
-<ul>
-    <li>
-        <p>
-            <code>latest</code> is not used as the image tag for any Deployment.
-        </p>
-    </li>
-    <li>
-        <p>
-        Image versions are not changed for important components (like databases) except for minor versions and patches.
-        </p>
-    </li>
-    <li>
-        <p>
-        Load balancer IP address is not changed in Service configuration by mistake.
-        </p>
-    </li>
-    <li>
-        <p>
-        Any fixed IP address used is within a valid range.
-        </p>
-    </li>
-    <li>
-        <p>
-        No secret is committed into the configuration repository (we use <a href="http://gifnoc.com/">Gifnoc</a> to replace those later on a secure machine).
-        </p>
-    </li>
-    <li>
-        <p>
-            Certain images come from our trusted repositories and not public ones.
-        </p>
-    </li>
-</ul>
-
+* <code>latest</code> is not used as the image tag for any Deployment.
+* Image versions are not changed for important components (like databases) except for minor versions and patches.
+* Load balancer IP address is not changed in Service configuration by mistake.
+* Any fixed IP address used is within a valid range.
+* No secret is committed into the configuration repository (we use <a href="http://gifnoc.com/">Gifnoc</a> to replace those later on a secure machine).
+* Certain images come from our trusted repositories and not public ones.
 
 For us these checks are like unit tests: they are there to make sure changes are made with confidence and human or machine errors are mitigated. Obviously these are not security measures and should be developed and treated exactly like your CI code tests.
 
@@ -88,7 +58,7 @@ You can use Copper as a command line or docker image, integrating it with you CI
 
 ### A Basic Example
 
-This is a very simple Kubernetes configuration file. We have saved it as <code>deploy.yml</code>:
+This is a very simple Kubernetes configuration file. We have saved it as `deploy.yml`:
 
 ```yaml
 apiVersion: extensions/v1beta1
@@ -108,24 +78,27 @@ As this configuration file is changed, we want to make sure the image tag for My
 
 To do this, we use Copper's simple DSL to check the configuration validation:
 
-<pre class="prettyprint">
+```js
 rule NoLatest ensure {  // use of latest as image tag is not allowed
   fetch("$.spec.template.spec.containers..image")
   .as(:image)
   .pick(:tag)
   .contains("latest") == false
 }
-</pre>
+```
 
 Save this file as <code>my_rules.cop</code> and run Copper CLI:
 
-<kbd>$ copper check --rules my_rules.cop --file deploy.yml</kbd>
+```shell
+$ copper check --rules my_rules.cop --file deploy.yml
+```
 
 <p>Here is what you will see:</p>
 
-<pre class="prettyprint">
+```js
 Validating part 0
-noLatest - PASS</pre>
+noLatest - PASS
+```
 
 ## Can I use Copper for configuration files other than Kubernetes?
 

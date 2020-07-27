@@ -25,7 +25,7 @@ You will then reference the database credentials from your first application in 
 
 You can reference the environment variables for these credentials on your first application using this format: 
 
-```
+```shell
 {% raw %}{{ STACK[APP_UID].ENV_VAR }}{% endraw %}
 ```
 
@@ -33,7 +33,7 @@ Your application UID is available via the Dashboard on the **Settings & Informat
 
 For example, your environment variables would be set like this:
 
-```
+```shell
 {% raw %}MYSQL_ADDRESS={{ STACK[xyz].MYSQL_ADDRESS_INT }}{% endraw %}
 {% raw %}MYSQL_DATABASE={{ STACK[xyz].MYSQL_DATABASE }}{% endraw %}
 ```
@@ -42,7 +42,7 @@ For example, your environment variables would be set like this:
 
 Database credentials such as username and password are not available for cross-application referencing for security reasons. Instead, copy and paste them across as environment variables. Your database configuration file would look something like this:
 
-```
+```shell
 host: \<%= ENV['MYSQL_ADDRESS'] %\>
 username: \<%= ENV['MYSQL_USERNAME'] %\>
 password: \<%= ENV['MYSQL_PASSWORD'] %\>

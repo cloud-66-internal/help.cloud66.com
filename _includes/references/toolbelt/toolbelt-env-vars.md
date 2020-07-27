@@ -13,7 +13,7 @@ This commands allows you to list environment variables for your application.
 
 ### Usage
 
-```
+```shell
 $ cx env-vars list [-s <stack>] [--history] [environment_variables] 
 ```
 
@@ -33,7 +33,7 @@ This command allows you to set (update) environment variables for your applicati
 
 ### Usage
 
-```
+```shell
 $ cx env-vars set My_Awesome_App FIRST_VAR=123
 ```
 

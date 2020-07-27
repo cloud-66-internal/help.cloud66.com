@@ -141,7 +141,7 @@ Bear in mind that adding these delays can slow down the deployment process signi
 *(wait time per server)x(number of servers) = (extra deployment time).* 
 
 #### Note
-<div class="notice notice-warning"><p>If you use this option in your manifest, subsequent deployments will use the value set. To remove this delay, set the value to <kbd>0</kbd> in your manifest, and then redeploy. Simply deleting this value from your manifest will not result in removing the setting once it has been applied.
+<div class="notice notice-warning"><p>If you use this option in your manifest, subsequent deployments will use the value set. To remove this delay, set the value to <code>0</code> in your manifest, and then redeploy. Simply deleting this value from your manifest will not result in removing the setting once it has been applied.
 </p></div>
 
 

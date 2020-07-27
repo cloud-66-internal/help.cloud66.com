@@ -17,7 +17,7 @@ We built Alterant to make changes to Kubernetes configuration files in a consist
 
 This scripts and add sidecar to a pod in the Deployment.
 
-<pre class="prettyprint">
+```js
 $$.forEach(function($) {
 	if ($.kind == 'Deployment') {
 	    var containers = $.spec.template.spec.containers
@@ -27,17 +27,17 @@ $$.forEach(function($) {
 	    }
 	}
 })
-</pre>
+```
 
 ### Change the port of a pod
 
 Sometimes you might want to "highjack" the traffic coming into a pod. For example you might want to do this to inject a reverse proxy into the flow.
 
-<pre class="prettyprint">
+```js
 var web_container = new Containers($.spec.template.spec.containers).by_name("web");
 var ports = [{ containerPort: 81 }]
 web_container.ports = ports
-</pre>
+```
 
 As you can see, this example uses the `Containers` helper class which can find a container in a Deployment by its name.
 
@@ -45,13 +45,13 @@ As you can see, this example uses the `Containers` helper class which can find a
 
 Sometimes you might want to modify the image tag of an image. For example, you might want to make sure all of your services in the application are deployed from the same image tag that comes out of your CI build process.
 
-<pre class="prettyprint">
+```js
 var containers = new Containers($.spec.template.spec.containers)
 var web_container = containers.by_name("web")
 var containerImage = new DockerImage(web_container.image)
 containerImage.tag = "1.2"
 web_container.image = containerImage.address()
-</pre>
+```
 
 Here we are using the `DockerImage` helper to read and parse container Docker image names.
 
@@ -66,7 +66,7 @@ metadata:
   name: foos
 ```
 
-<pre class="prettyprint">
+```js
 $$.forEach(function($) {
 var namespace = $.metadata.name
 	deployment = {
@@ -86,7 +86,7 @@ var namespace = $.metadata.name
 })
 
 $$.push(deployment)
-</pre>
+```
 
 This modifier reads the name of the namespace and adds a new deployment to the output that was not there before. In other words, instead of modifying the object that's being processed, it adds a sibling node to the parent of that object. To access the parent for `$` we can use `$$`.
 

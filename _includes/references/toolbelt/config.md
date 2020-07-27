@@ -28,13 +28,15 @@ Toolbelt supports user with multiple Cloud 66 accounts via profiles.
 
 ### Profile commands
 
-    cx config create NAME [arguments]
-    cx config use NAME
-    cx config rename OLD_NAME NEW_NAME
-    cx config delete NAME
-    cx config list
-    cx config show NAME
-    cx config update NAME [arguments]
+```shell
+cx config create NAME [arguments]
+cx config use NAME
+cx config rename OLD_NAME NEW_NAME
+cx config delete NAME
+cx config list
+cx config show NAME
+cx config update NAME [arguments]
+```
 
 **Arguments**
 
@@ -42,11 +44,13 @@ Toolbelt supports user with multiple Cloud 66 accounts via profiles.
 
 The following arguments are used for Cloud 66 Enteprise
 
-    --client-id
-    --client-secret
-    --api-url
-    --base-url
-    --faye-endpoint
+```shell
+--client-id
+--client-secret
+--api-url
+--base-url
+--faye-endpoint
+```
 
 ### Usage
 
@@ -60,7 +64,7 @@ For more detailed help on installation please refer to our [Getting Started](/{{
 
 #### Note
 <div class="notice"><p>
-You always have a <kbd>default</kbd> profile which cannot be deleted or renamed. </p></div>
+You always have a <code>default</code> profile which cannot be deleted or renamed. </p></div>
 
 #### Switching between profiles
 
@@ -72,13 +76,17 @@ All commands from that point onwards will run against the `NAME` profile. This i
 
 If you would like to run a command with a different profile other than the current profile, you can use the `--profile` argument with all commands:
 
-    cx --profile NAME stacks list
+```shell
+cx --profile NAME stacks list
+```
 
 #### Using profiles with organizations
 
 When you create a profile you can specify the organization to which this new profile should be linked. For example:
 
-    cx config create hobby --org my_private_sandbox
+```shell
+cx config create hobby --org my_private_sandbox
+```
 
 ...will create a profile named "hobby" that is linked to a Cloud 66 organization named "my_private_sandbox".
 

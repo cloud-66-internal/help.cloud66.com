@@ -4,7 +4,7 @@ If you only want to serve HTTPS traffic through your application, you may also w
 
 Simply add this code to the _server_ section of your Nginx configuration using [CustomConfig](/{{page.collection}}/tutorials/custom-config.html), for example on line 81. This will work even if you're not using Cloud 66.
 
-```
+```shell
 return 301 https://$host$request_uri;
 ```
 
@@ -21,7 +21,7 @@ Create DNS records for domain A, pointing it at domain B. We will then create Ng
 ### HTTP
 We simply want to add a permanent redirect for visitors to domain A towards domain B (you can add this around line 65):
 
-```
+```shell
 server {
     server_name             _;
     listen                  80;
@@ -37,7 +37,7 @@ The above method will not work for HTTPS traffic, because visitors from domain A
 
 As such, users from domain A must first be met with the SSL certificate for that domain, and then be redirected to domain B (and met with those certificates).
 
-```
+```shell
 {% raw %}{% if allow_ssl == true %}
 server {
     server_name          *.domaina.com;

@@ -98,7 +98,7 @@ The rules below are available to both health checks - note that you aren't requi
 <li> <strong>http_headers</strong> (<em>array, defaults to []</em>): Custom headers to add for HTTP traffic. Only for the <strong>http</strong>, and <strong>https</strong> types. Contains an array of hashes with the <strong>name</strong> and <strong>value</strong> keys, both of string type.</li>
 </ul>
 
-{% highlight yaml %}
+```yaml
 services:
     [service_name]:
         health:
@@ -115,7 +115,7 @@ services:
                 http_headers:
                 - name: 'X-ID-Header'
                   value: 'john-smith'
-{% endhighlight %}
+```
 
 You can also use the default health rules with <code>health: default</code>, or explicitly disable health checking by leaving the <code>health</code> option out or specifying <code>health: none</code>.
 </section>
@@ -142,7 +142,7 @@ The rules below are available to health checks - note that you aren't required t
 </ul>
 </p>
 
-{% highlight yaml %}
+```yaml
 services:
     [service_name]:
         health:
@@ -151,7 +151,7 @@ services:
           protocol: "http"
           timeout: "45s"
           accept: ["200"]
-{% endhighlight %}
+```
 
 <p>You can also use the default health rules with <code>health: default</code>, or explicitly disable health checking by leaving the <code>health</code> option out or specifying <code>health: none</code>.</p>
 
@@ -182,11 +182,11 @@ services:
 
 <p>This is a signal that is sent to the existing containers of the service before the new containers are started during deployment. An example could be <code>USR1</code> - but it depends on what your container is running as to which signals make sense.</p>
 
-{% highlight yaml %}
+```yaml
 services:
     [service_name]:
         pre_start_signal: USR1
-{% endhighlight %}
+```
 
 </section>
 
@@ -221,19 +221,19 @@ services:
 
 <p>This is a stop sequence that is executed on your running containers before they are shut down. It is a sequence of wait times and signals to send to the process. If the sequence completes and the container is still running, a force kill will be sent. For example:</p>
 
-{% highlight yaml %}
+```yaml
 services:
     [service_name]:
         pre_stop_sequence: 1m:USR2:30s:USR1:50s
-{% endhighlight %}
+```
 
 <p>The example above, we'll wait 1 minute before sending the USR2 signal, then wait 30 seconds before sending the USR1 signal, and then wait 50 seconds before we force a kill. These are some examples of duration values that <code>stop_grace</code> and <code>pre_stop_sequence</code> can use - <code>1m</code> (1 minute), <code>30s</code> (30 seconds) and <code>1h</code> (1 hour).</p>
 
 <p>Valid time values are <code>s</code> for seconds, <code>m</code> for minutes and <code>h</code> for hours. Valid signal values for a signal are (without the quotes):</p>
 
-{% highlight ruby %}
+```ruby
 'ABRT', 'ALRM', 'BUS', 'CHLD', 'CONT', 'FPE', 'HUP', 'ILL', 'INT', 'IO', 'IOT', 'KILL', 'PIPE', 'PROF', 'QUIT', 'SEGV', 'STOP', 'SYS', 'TERM', 'TRAP', 'TSTP', 'TTIN', 'TTOU', 'URG', 'USR1', 'USR2', 'VTALRM', 'WINCH', 'XCPU', 'XFSZ'
-{% endhighlight %}
+```
 
 </section>
 
@@ -250,24 +250,24 @@ services:
 
 In some cases, you may want to make sure that a service is only started if another, related service is also started. The `requires` option allows you to set such dependencies. For example:
 
-{% highlight yaml %}
+```yaml
 services:
     [service_name]:
         image: cloud66/sample
         requires:
           - "my_api"
-{% endhighlight %}
+```
 
 
 ### Restart on deploy
 
 A boolean value to indicate whether the containers of this service should be restarted during deployment (set to <i>true</i> by default). For example:
 
-{% highlight yaml %}
+```yaml
 services:
     [service_name]:
         restart_on_deploy: false
-{% endhighlight %}
+```
 
 
 
@@ -275,9 +275,9 @@ services:
 
 Sets the duration between the Docker <code>TERM</code> and <code>KILL</code> signals when Docker stop is run and a container is stopped. For example:
 
-{% highlight yaml %}
+```yaml
 services:
     [service_name]:
         stop_grace: 30
-{% endhighlight %}
+```
 

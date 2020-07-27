@@ -63,13 +63,13 @@ Without replica sets, you can connect to your MongoDB using environment variable
 
 `MONGODO_URL_INT` contains a MongoDB client friendly URL to the server with its internal address. It usually looks like this:
 
-```
+```shell
 mongodb://192.168.12.34:27017/my_database
 ```
 
 `MONGODO_URL_EXT` contains a MongoDB client friendly URL to the server with its external address. It usually looks like this:
 
-```
+```shell
 mongodb://50.45.87.46:27017/my_database
 ```
 
@@ -81,7 +81,7 @@ Once replication is enabled, this environment variable is populated:
 
 `MONGODB_ADDRESSES` contains a comma separated list of all server names of the replica set. This usually looks like something like this:
 
-```
+```shell
 lion.myapplication.c66.me,tiger.myapplication.c66.me
 ```
 
@@ -99,7 +99,7 @@ As the most popular Ruby client for MongoDB, here is an example of how to change
 
 Before having a replica set, you had the following setup:
 
-```
+```yaml
 development:
 	sessions:
 		default:
@@ -111,7 +111,7 @@ development:
 
 After replica sets are enabled you can use something like this:
 
-```
+```yaml
 development:
 	sessions:
 		default:
@@ -123,7 +123,7 @@ development:
 
 The reason for the ugly looking line is that `mongoid` requires the list of server addresses in the replica set to be in an array with port numbers. Since your replica set will be configured to work on the normal MongoDB port of 27017 by default, this line will split the comma separated list into an array in Ruby. The end result will look like something like this:
 
-```
+```shell
 ["lion.myapplication.c66.me:27017","tiger.myapplication.c66.me:27017"]
 ```
 

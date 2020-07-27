@@ -38,9 +38,9 @@ The unattended-upgrades package signals to the operating system that a restart i
 
 It can take up to 12 hours for your notifications to be cleared. Deploying your application will cause an immediate refresh of your restart notification state (after deployment completes). You can also manually check your restart required status on your server by running the command:
 
-<pre class="terminal">
+```shell
 sudo bash -c "if [ -f /var/run/reboot-required ]; then echo 'Server is requesting restart'; fi"
-</pre>
+```
 
 ## Additional information
 

@@ -33,13 +33,13 @@ Should you need to change your verification script at some point, simply commit 
 
 This query will count the number of records in the users table, and returns a 1 if that number is not zero.
 
-```
+```sql
 select count(*)<>0 as result from users
 ```
 
 That query may return the following output (non-zero values are interpreted as true in MySQL), indicating that your users table holds data.
 
-```
+```sql
 result
 1
 ```
@@ -48,13 +48,13 @@ result
 
 This query counts the number of records in the users table, and returns a boolean of true if that number is not zero.
 
-```
+```sql
 select count(*)<>0 as result from users
 ```
 
 The result of this query may be the following, indicating that your users table holds data.
 
-```
+```sql
 result
 --------
 t

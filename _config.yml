@@ -42,6 +42,7 @@ collections:
   redirects:
     output: true
     permalink: /:path/
+
 # Build settings
 markdown: kramdown
 
@@ -49,6 +50,8 @@ sass:
     style:  compressed  # nested|expanded|compact|compressed
 
 safe: false
+
+highlighter: none
 
 defaults:
   -

@@ -31,7 +31,7 @@ All queries can be a full or partial string. So both `awesome` and `awes` will f
 
 You can narrow the search down with the "advanced search syntax". The general search syntax is `key:value`. This means you can run queries like this:
 
-```
+```shell
 type:server
 ```
 

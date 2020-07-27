@@ -27,15 +27,15 @@ systemd does not require or support daemonized services. Unlike some other proce
 
 To get the status for all processes:
 
-{% highlight shell %}
+```shell
 $ sudo systemctl 
-{% endhighlight %}
+```
 
 To get the status for a specific process:
 
-{% highlight shell %} 
+```shell 
 $ sudo systemctl status <application>.service 
-{% endhighlight %}
+```
 
 An example of this in practice would be `systemctl status nginx.service`
 
@@ -43,9 +43,9 @@ An example of this in practice would be `systemctl status nginx.service`
 
 To stop a service:
 
-{% highlight shell %} 
+```shell 
 $ sudo systemctl stop <application>.service 
-{% endhighlight %}
+```
 
 An example of this in practice would be `systemctl stop nginx.service`
 
@@ -53,9 +53,9 @@ An example of this in practice would be `systemctl stop nginx.service`
 
 To start a service:
 
-{% highlight shell %} 
+```shell 
 $ sudo systemctl start <application>.service 
-{% endhighlight %}
+```
 
 An example of this in practice would be `systemctl start nginx.service`
 
@@ -63,9 +63,9 @@ An example of this in practice would be `systemctl start nginx.service`
 
 Stops and then starts a service. Useful for refreshing a service after a configuration update:
 
-{% highlight shell %} 
+```shell 
 $ sudo systemctl restart <application>.service 
-{% endhighlight %}
+```
 
 An example of this in practice would be `systemctl reload nginx.service`
 
@@ -73,9 +73,9 @@ An example of this in practice would be `systemctl reload nginx.service`
 
 When supported, this reloads a service's config file without interrupting pending operations:
 
-{% highlight shell %} 
+```shell 
 $ sudo systemctl reload <application>.service 
-{% endhighlight %}
+```
 
 An example of this in practice would be `systemctl reload nginx.service`
 
@@ -83,9 +83,9 @@ An example of this in practice would be `systemctl reload nginx.service`
 
 Check if a service is currently running (active):
 
-{% highlight shell %} 
+```shell 
 $ sudo systemctl is-active <application>.service 
-{% endhighlight %}
+```
 
 An example of this in practice would be `systemctl is-active nginx.service`
 
@@ -93,9 +93,9 @@ An example of this in practice would be `systemctl is-active nginx.service`
 
 To set a service to start whenever the server is booted:
 
-{% highlight shell %} 
+```shell 
 $ sudo systemctl enable <application>.service 
-{% endhighlight %}
+```
 
 An example of this in practice would be `systemctl enable nginx.service`
 
@@ -103,9 +103,9 @@ An example of this in practice would be `systemctl enable nginx.service`
 
 To set a service to start whenever the server is booted:
 
-{% highlight shell %} 
+```shell 
 $ sudo systemctl disable <application>.service 
-{% endhighlight %}
+```
 
 An example of this in practice would be `systemctl disable nginx.service`
 

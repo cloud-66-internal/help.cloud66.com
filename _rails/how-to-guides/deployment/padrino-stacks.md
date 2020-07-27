@@ -21,7 +21,7 @@ Given that Padrino applications can have different database frameworks, we allow
     <strong>Custom build command</strong> &mdash; This command will run every time until the first build is successful. Example:
     </p>
     <p>
-      <kbd>bundle exec rake db:seed</kbd>
+      <code>bundle exec rake db:seed</code>
     </p>
   </li>
   <li>
@@ -29,28 +29,28 @@ Given that Padrino applications can have different database frameworks, we allow
       <strong>Custom deploy command</strong> &mdash; This command will run on every deployment (including initial build). Example:
     </p>
     <p>
-      <kbd>bundle exec rake db:migrate</kbd>
+      <code>bundle exec rake db:migrate</code>
     </p>
   </li>
 </ul>
 
 These commands can be set via [Toolbelt](/rails/references/toolbelt.html#settings-variables),
 
-<pre class="prettyprint">
+```shell
 $ cx settings set -s my_app custom.build.command "rake db:seed"
 
 $ cx settings set -s my_app custom.deploy.command "rake db:migrate"
-</pre>
+```
 
 But also in your [manifest file](/rails/quickstarts/getting-started-with-manifest.html).
 
-<pre class="prettyprint">
+```yaml
 development:
     padrino:
         configuration:
             custom_build_command: rake db:seed
             custom_deploy_command: rake db:migrate
-</pre>
+```
 
 ## Connect to your database
 If a database is detected, it will automatically be provisioned as required (including the database itself), and environment variables will be created. You will need to update your code with the environment variables you wish to use, for example `MYSQL_URL`.
@@ -63,29 +63,29 @@ Should you wish to change the database username/password after build, you will h
 
 ### MySQL YML
 
-<pre class="prettyprint">
+```yaml
 production:
   adapter: mysql2
   username: <%= ENV['MYSQL_USERNAME'] %>
   password: <%= ENV['MYSQL_PASSWORD'] %>
   host: <%= ENV['MYSQL_ADDRESS'] %>
   database: <%= ENV['MYSQL_DATABASE'] %>
-</pre>
+```
 
 **PostgreSQL YML**
 
-<pre class="prettyprint">
+```yaml
 production:
   adapter: postgresql
   username: <%= ENV['POSTGRESQL_USERNAME'] %>
   password: <%= ENV['POSTGRESQL_PASSWORD'] %>
   host: <%= ENV['POSTGRESQL_ADDRESS'] %>
   database: <%= ENV['POSTGRESQL_DATABASE'] %>
-</pre>
+```
 
 **Declarative**
 
-<pre class="prettyprint">
+```shell
 ActiveRecord::Base.configurations[:development] = {
   :adapter   => 'mysql2',
   :encoding  => 'utf8',
@@ -96,26 +96,26 @@ ActiveRecord::Base.configurations[:development] = {
   :password  => ENV['MYSQL_PASSWORD'],
   :host      => ENV['MYSQL_ADDRESS'],
 }
-</pre>
+```
 
 ### DataMapper
-<pre class="prettyprint">
+```shell
 DataMapper::setup(:default, "ENV['POSTGRESQL_URL']")
-</pre>
+```
 
 ### MongoMapper
-<pre class="prettyprint">
+```shell
 MongoMapper.connection = Mongo::Connection.from_uri(ENV['MONGODB_URL'])
-</pre>
+```
 
 ### Mongoid
-<pre class="prettyprint">
+```yaml
 development:
   sessions:
     default:
       database: mongoid
       hosts: ["<%= ENV['MONGODB_ADDRESS']%>:27017"]
-</pre>
+```
 
 
 #### Note

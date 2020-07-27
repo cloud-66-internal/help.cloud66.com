@@ -16,7 +16,7 @@ User integration API has three steps:
 
 Cloud 66 user sees an integration option on his dashboard and clicks on it. He is redirected to the partner's website with the following payload:
 
-```
+```http
 GET http://partner/url?uid=abc123&email=jon@smith.com&callback=https://app.cloud66.com/url
 ```
 

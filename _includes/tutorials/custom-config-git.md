@@ -8,7 +8,9 @@ The easiest way to modify CustomConfig files is through the UI. However if you w
 ### Getting Started with CustomConfig git
 Each application on Cloud 66 has its own private CustomConfig git repository. You can find the URL of this repository under application’s information page (right hand side menu). There you will find a URL like this for CustomConfig git:
 
-	git@git1.cloud66.com:warmhearted-wondrous-tiger-9262.git
+```shell
+git@git1.cloud66.com:warmhearted-wondrous-tiger-9262.git
+```
 
 ### Uploading your SSH public key
 
@@ -20,7 +22,9 @@ You can upload your public SSH key at **Account / Keys / Public Key** when logge
 
 To make a change to a CustomConfig file you need to first clone the application’s CustomConfig git repository locally. Using git commandline this is possible with something like this:
 
-	$ git clone git@git1.cloud66.com:warmhearted-wondrous-tiger-9262.git
+```shell
+$ git clone git@git1.cloud66.com:warmhearted-wondrous-tiger-9262.git
+```
 
 This will clone the CustomConfig git repository for the first time to your disk under a folder called `warmhearted-wondrous-tiger-9262`.
 
@@ -28,8 +32,10 @@ Now you can `cd` to this folder and see the list of files available to edit. By 
 
 Now open the file you want to change in your favorite text editor. Once done, save the file and commit your changes like any normal git workflow:
 
-	$ git commit -m "increate nginx pool size"
-	$ git push origin master
+```shell
+$ git commit -m "increate nginx pool size"
+$ git push origin master
+```
 
 Done!
 

@@ -74,11 +74,10 @@ Skycap treats `values.yaml` as just another Stencil, so all (valid) [Stencil Pla
 
 Just as with a Stencil you add Placeholders using the following format: `${...}` So, for example, you could edit the configuration of a Helm release for Redis and use the following placeholder to force Redis to use another port defined as an environment variable:
 
-```
+```yaml
 master:
   ## Redis port
   port: ${env("REDIS_PORT"}
-
 ```
 
 This makes it simple to share and (re)use environment variables and other configuration values between your main application and your Helm releases. This is particularly powerful when combined with [ConfigStore](/skycap/how-to-guides/configuration/config-store.html) (see below).
@@ -98,11 +97,10 @@ To tag any `values.yaml` file, click on the link for the file (on the **Helm Rel
 Since ConfigStore also uses Stencil Placeholders to pull config values, they work almost identically to our example above. So, if we wanted to tell our Redis release to use the custom port, and that port was defined in CustomConfig, the Placeholder would be something like:
 
 
-```
+```yaml
 master:
   ## Redis port
   port: ${configstore("REDIS_PORT"}
-
 ```
 
 The big difference here is that `REDIS_PORT` is not set as an environment variable in the operating system, but is instead fetched directly from the ConfigStore repo via an API call.
