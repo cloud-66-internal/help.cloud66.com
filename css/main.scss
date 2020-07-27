@@ -74,12 +74,23 @@ kbd {
     -moz-osx-font-smoothing: initial;
 }
 
-p {
+p,
+li {
     code,
     kbd {
         color: #e96900;
-        padding: 4px 6px;
+        padding: 2px 3px;
         border-radius: 2px;
+    }
+}
+table {
+    code,
+    kbd {
+        color: #e96900;
+        padding: 0 !important;
+        border-radius: 2px;
+        background: transparent !important;
+        font-size: 13px;
     }
 }
 em {
