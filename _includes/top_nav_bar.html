@@ -37,7 +37,7 @@
     <form id="Search_box" class="Header-search"  action="/search_results.html">
         {% if page.collection %}
 
-        <input type="text" id="search-query-home" name="q" class="search" placeholder="Search the Docs" />
+        <input type="text" id="search-query-home" name="q" class="search" placeholder="Search the {{page.collection | capitalize}} docs" />
 
         {% if jekyll.environment == "production" %}
             <input type="hidden" name="idx" value="help" />
