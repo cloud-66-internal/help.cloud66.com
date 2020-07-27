@@ -74,7 +74,9 @@ kbd {
     -moz-osx-font-smoothing: initial;
 }
 
-p {
+p,
+li,
+table {
     code,
     kbd {
         color: #e96900;
