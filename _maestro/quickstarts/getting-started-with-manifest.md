@@ -82,7 +82,7 @@ To customize the `manifest.yml` for your application:
 
 The contents of the file should look very simmilar to this:
 
-```
+```yaml
 docker:
   configuration:
     version: 18.03.0-ce
@@ -110,7 +110,7 @@ Next we are going to customise our application in two ways.
 
 In order to force our application to use specific nameservers, we insert the following line into our `manifest.yml' under the Docker configuration section:
 
-```
+```yaml
       nameservers: ['8.8.8.8', '8.8.4.4']
 ```
 
@@ -124,7 +124,7 @@ In this example, we need to use an older version of Redis. To do that, we simply
 
 The end result of both changes should look like this:
 
-```
+```yaml
 docker:
   configuration:
     version: 18.03.0-ce

@@ -35,18 +35,18 @@ A condition is a boolean logic that should be true for the rule to pass.
 
 #### Syntax
 
-<pre class="prettyprint">
+```js
 rule NAME (warn | ensure) {
 	CONDITION
 }
-</pre>
+```
 
 **Example**
-<pre class="prettyprint">
+```js
 rule foo ensure {
 	1 = 1
 }
-</pre>
+```
 
 <p class="small">
 Defines a rule called <code>foo</code> which ensures the statement <code>1 = 1</code> returns <code>true</code>
@@ -56,28 +56,28 @@ Defines a rule called <code>foo</code> which ensures the statement <code>1 = 1</
 You can define variables in Copper files as a way to avoid repeating the same things over and over again. For example, you can keep your the valid range of ports in a variable and use that variable in different rules. In Copper DSL, variables are more like constants in other languages and cannot be changed once set.
 
 #### Syntax
-<pre class="prettyprint">
+```js
 var VARIABLE = VALUE
-</pre>
+```
 
 **Example**
-<pre class="prettyprint">
+```js
 var foo = 1
 var bar = "hello"
 var valid_ports = (8000..9000)
-</pre>
+```
 
 **Using variables in a rule**
-<pre class="prettyprint">
+```js
 rule bar warn {
 	8050 in valid_ports == true
 }
-</pre>
+```
 
 ### Comments
 Copper files can be commented. Copper supports the Java comment syntax:
 
-<pre class="prettyprint">
+```js
 rule foo warn { // this is a single inline comment
 	1 = 1 /* this is a single line block comment */
 }
@@ -86,7 +86,7 @@ rule foo warn { // this is a single inline comment
 rule bar ensure {
 	false = true
 }*/
-</pre>
+```
 
 ### Comparisons
 The condition inside of a rule is usually made up of a value compared against another value. The result of this comparison is either true or false.
@@ -108,12 +108,12 @@ The comparison operation can be one of the following:
 Comparisons can be combined with `and` and `or` to make up more complex conditions.
 
 **Example**
-<pre class="prettyprint">
+```js
 rule ComplexRulesAreUs warn {
 	2 > 1 and 3 == 3 or 2 != 8 and
 	8 in [1,2,3,4]
 }
-</pre>
+```
 
 <table class="striped">
 	<tr><th>Boolean Operand</th><th>Meaning</th></tr>
@@ -128,20 +128,20 @@ Copper DSL supports the following data types:
 A number is integer or decimal.
 
 **Example**
-<pre class="prettyprint">
+```js
 var my_int = 12
 rule foo ensure {
 	my_int > 11.43
 }
-</pre>
+```
 
 #### String
 Strings are wrapped in double quotes `"`.
 
 **Example**
-<pre class="prettyprint">
+```js
 var a_string = "foo"
-</pre>
+```
 
 Strings have the following attributes:
 
@@ -167,9 +167,9 @@ Splits the string into an array: `"foo/bar/baz".split("/")` returns `["foo", "ba
 Arrays can contain any number of values. Arrays can hold values of different types. An array is wrapped in `[` and `]` and each item is separated by a `,`.
 
 **Example**
-<pre class="prettyprint">
+```js
 var my_array = [1,2,3,4]
-</pre>
+```
 
 Arrays have the following attributes:
 
@@ -239,9 +239,9 @@ You can use the `in` comparison for arrays: `1 in [1,2,3]` is true and `"foo" in
 Range contains all the numbers between two numbers. Ranges are wrapped in `(` and `)` with `..` between the low and the high numbers. Range is inclusive of both ends.
 
 **Example**
-<pre class="prettyprint">
+```js
 var the_range = (1..10)
-</pre>
+```
 
 <h5><span class="code-attribute">contains</span></h5>
 
@@ -261,10 +261,10 @@ Copper DSL supports a growing set of configuration specific data types. Currentl
 An IPAddress can hold an IP address and/or subnet. You can use IPAddress to check various things about an IPAddress, like it's range, inclusion of other IP addresses, its class and more.
 
 **Example**
-<pre class="prettyprint">
+```js
 var internal = ipaddress("62.0.0.0/24")
 var front_end = ipaddress("62.0.2.45")
-</pre>
+```
 
 IPAddress has the following attributes:
 
@@ -327,10 +327,10 @@ Returns true if the given IP address is a class A IP address. `ipaddress("192.16
 Semver holds and parses a string as a [Semantic version](https://semver.org/). This allows support of semantic versioning and checks.
 
 **Example**
-<pre class="prettyprint">
+```js
 var mysql_version = semver("6.5.0")
 var web_server = semver("1.2.4-pre")
-</pre>
+```
 
 <h5><span class="code-attribute">major</span></h5>
 
@@ -399,9 +399,9 @@ In most cases, values read from a configuration file are strings. In order for t
 Here, we are assuming the value of the `mysql_version` variable is a string `"5.6.7"`:
 </p>
 
-<pre class="prettyprint">
+```js
 mysql_version.as(:semver).satisfies("~> 5.6")
-</pre>
+```
 
 ### Accessing configuration filename
 
@@ -462,21 +462,21 @@ spec:
 
 To fetch the value of `type` under `spec` (which is `NodePort` in the file above), we can use the following JSONPath format:
 
-<pre class="prettyprint">
+```js
 fetch("$.spec.type") // will return ["NodePort"]
-</pre>
+```
 
 To return all the `targetPort` values under `spec.port` you can use attribute selectors:
 
-<pre class="prettyprint">
+```js
 fetch("$.spec.ports..targetPort") // will return [8090, 8100]
-</pre>
+```
 
 To return the value of `targetPort` for the `8080` port (`8090` in the example above) you can use the filters:
 
-<pre class="prettyprint">
+```js
 fetch("$.spect.ports[?(@.port == 8080)]") // will return [8090]
-</pre>
+```
 
 #### JSONPath syntax
 
@@ -560,13 +560,13 @@ spec:
 
 <div>
 	<p class="small">Get the image tag of all containers</p>
-	<pre class="prettyprint">
+	```js
 fetch("$.spec.spec.containers..image").extract(".*:(.*)", 1) // returns ["latest", "2.3.0", "latest"]
-</pre>
+```
 	<p class="small">Get the image name of the container named <code>mysql</code></p>
-	<pre class="prettyprint">
+	```js
 fetch("$.spec.spec.containers[?(@.name == 'mysql')]") // will return ["index.docker.io/library/ubuntu:latest"]
-</pre>
+```
 </div>
 
 ### Debugging
@@ -579,37 +579,37 @@ You can dump the results of variables and comparisons to the console using the `
 </div>
 
 
-<pre class="prettyprint">
+```js
 $ copper check --rules rule.cop --file config.yml --debug
-</pre>
+```
 
 **Example**
 <p class="small">
 Write the value of variable `mysql_version` to the console
 </p>
 
-<pre class="prettyprint">
+```js
 rule foo warn {
 	mysql_variable -> console
 }
-</pre>
+```
 
 <p class="small">
 Write the result of a comparison to the console
 </p>
 
-<pre class="prettyprint">
+```js
 rule foo warn {
 	fetch("$.spec.template.images").contain("ubuntu") -> console
 }
-</pre>
+```
 
 <p class="small">
 Write the result of a <code>fetch</code> to console
 </p>
 
-<pre class="prettyprint">
+```js
 rule foo warn {
 	fetch("$.spec.ports..targetPort") -> console
 }
-</pre>
+```

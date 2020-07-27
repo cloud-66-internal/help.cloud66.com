@@ -23,14 +23,14 @@ We do this to ensure that any outdated application code lingering in images does
 
 You can set an application component to use a custom image using your application's Manifest file. You should use the `server_image` setting under a component and reference the image using the unique identifier provided by your Cloud host. For example:
 
-{% highlight bash %}
+```bash
 production:
   rails:
     configuration:
       ruby_version: 2.7.0
       asset_pipeline_precompile: true
    server-image: my-server-image
-{% endhighlight %}
+```
 
 ## Best practices when using custom images
 

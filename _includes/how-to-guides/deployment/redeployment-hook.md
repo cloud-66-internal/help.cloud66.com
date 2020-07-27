@@ -16,7 +16,7 @@ You can use the **Redeployment Hook** URL to trigger automated deployments via y
 
 An example of a standard redeployment hook:
 
-```
+```shell
 https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy
 ```
 
@@ -35,13 +35,13 @@ To handle this you can append your redployment hook with a  _services modifier_ 
 
 An example redeployment **hook with a single services modifier:**
 
-```
+```shell
 https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy?services=my-web-service
 ```
 
 An example redeployment **hook with a many-service modifier:**
 
-```
+```shell
 https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy?services=my-web-service,api
 ```
 
@@ -66,7 +66,7 @@ When a redeployment hook is invoked:
 
 [Deployment profiles](/{{page.collection}}/references/deploy-profiles.html) allow you to customise the deployment process depending on your requirements - for example deploying some components and not others. You can also call deployment profiles directly via redeployment hooks using the following syntax:
 
-```
+```shell
 https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy/?deployment_profile=name_of_deployment_profile
 ```
 
@@ -80,7 +80,7 @@ Users who have signed in through Github (and who have enough access to create an
 
 To do this: access your [Application settings](/{{page.collection}}/references/toolbelt.html#settings-variables) via the toolbelt and set **continuous.deploy** to _true_.
 
-```
+```shell
 $ cx settings set -s my_app_name continuous.deploy true
 ```
 
@@ -117,7 +117,7 @@ Most Git providers have a commit hook mechanism that you can use to post to the 
 
 To invoke the redeployment hook manually, you can POST an HTTP request to your redeployment hook URL. You can do this in curl like this:
 
-```
+```shell
 curl -X POST [your redeployment hook URL]
 ```
 

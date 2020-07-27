@@ -5,7 +5,7 @@ Opens a port on your server firewall to temporarily allow access from a specifie
 
 ### Usage
 
-```
+```shell
 $ cx lease [-s <stack>] [-f <from IP>] [-t <time to open>] [-p <port>]
 ```
 
@@ -26,7 +26,7 @@ $ cx lease [-s <stack>] [-f <from IP>] [-t <time to open>] [-p <port>]
 
 ### Example
 
-```
+```shell
 $ cx lease -s "My Awesome App" -f 123.123.123.123 -t 30 -e production
 ```
 For more fine grained access control, use the [Application network settings]({% if page.collection == "maestro" or page.collection == "skycap" %}/maestro/how-to-guides/deployment/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}) page.

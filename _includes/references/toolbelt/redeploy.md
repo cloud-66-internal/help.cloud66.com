@@ -6,7 +6,7 @@ This is an alias for the `stacks redeploy` command, which triggers the deploymen
 
 ### Usage
 
-```
+```shell
 $ cx redeploy [-s <stack>] [-y] [--git-ref <git_ref>] [--service <service>] [--service <service>] [--service <service>] [--deploy-strategy <strategy>] [--deployment-profile <profile name>]
 ```
 
@@ -30,15 +30,15 @@ $ cx redeploy [-s <stack>] [-y] [--git-ref <git_ref>] [--service <service>] [--s
 
 ### Examples
 
-```
+```shell
 $ cx redeploy -s "My Awesome App" -e production --deploy-strategy fast
 ```
 
-```
+```shell
 $ cx redeploy -s "My Awesome App" -e production -y --git-ref my_git_ref_value
 ```
 
-```
+```shell
 $ cx redeploy -s "My Awesome Docker App" --service web:8c7f3d393162f88b8b9493f6babec574b03ca957 --service api:latest
 ```
 

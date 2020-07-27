@@ -67,11 +67,10 @@ Web console
 <h3>Using the AWS CLI</h3>
 <p>If you have the AWS CLI tool installed, you can set up your access policies by running this command:</p>
 
-<p><pre class="prettyprint" style="font-size:12px">
-curl https://help.cloud66.com/c66_aws_iam_policy.json > c66_aws_iam_policy.json && aws iam put-user-policy --user-name cloud66 --policy-name ExamplePolicy --policy-document file://c66_aws_iam_policy.json</pre> 
+<p><pre class="language-shell line-numbers u-whiteSpaceNoWrap"><code>curl https://help.cloud66.com/c66_aws_iam_policy.json > c66_aws_iam_policy.json && aws iam put-user-policy --user-name cloud66 --policy-name ExamplePolicy --policy-document file://c66_aws_iam_policy.json</code></pre> 
 </p>
 
-<p>This downloads our JSON template to your machine and then submits it via the CLI. Note that this assumes you have named your user <kbd>cloud66</kbd> as recommended. You can find more info <a href="https://docs.aws.amazon.com/cli/latest/reference/iam/put-user-policy.html" target="_blank">in the AWS docs</a> if you need it.</p>
+<p>This downloads our JSON template to your machine and then submits it via the CLI. Note that this assumes you have named your user <code>cloud66</code> as recommended. You can find more info <a href="https://docs.aws.amazon.com/cli/latest/reference/iam/put-user-policy.html" target="_blank">in the AWS docs</a> if you need it.</p>
 
 </section>
 
@@ -83,7 +82,7 @@ curl https://help.cloud66.com/c66_aws_iam_policy.json > c66_aws_iam_policy.json 
 <p>You can add policies via the <a href="https://console.aws.amazon.com/iam/" target="_blank">IAM management console</a>.</p> 
 <ol style="font-size:14px">
 <li>Click on <em>Access management</em> → <em>Users</em></li>
-<li>Click on your <kbd>cloud66</kbd> user</li>
+<li>Click on your <code>cloud66</code> user</li>
 <li>Click the <em>Add inline policy</em> button</li>
 <li>In another browser tab Open our <a href="https://help.cloud66.com/c66_aws_iam_policy.json">JSON template</a> copy the whole page to your clipboard</li>
 <li>Back in the IAM console, click the JSON tab and paste in the template you just copied</li>

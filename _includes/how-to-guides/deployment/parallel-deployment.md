@@ -15,7 +15,7 @@ Although database migrations only occur on one server, depending on the changes,
 
 To activate parallel deployments, access your [Application settings]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#settings-variables) via [Toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) and set `deploy.parallel` to `true`. 
 
-```
+```shell
 $ cx settings set -s my_app deploy.parallel true
 ```
 Once set, any future deployments will be done in parallel. Should you wish to do a one-off deployment in serial, you can do so by clicking _Deploy_ -> _Deploy with options_ and selecting _Deploy in serial_. Similarly, if you have your application set to deploy in serial, you can perform a one-off deploying in parallel through this menu.

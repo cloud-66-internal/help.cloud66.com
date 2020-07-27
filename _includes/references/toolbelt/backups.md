@@ -16,7 +16,7 @@ managed backups of an application grouped by their database type and/or backup s
 
 ### Usage
 
-```
+```shell
 $ cx backups list [-s <stack>] [-l] [<db type>]
 ```
 
@@ -37,7 +37,7 @@ $ cx backups list [-s <stack>] [-l] [<db type>]
 
 ### Example
 
-```
+```shell
 $ cx backups list -s "My Awesome App" -e production
 ```
 
@@ -52,7 +52,7 @@ database backup through the command line, concatenating separate files into one 
 
 ### Usage
 
-```
+```shell
 $ cx backups download [-s <stack>] [-d <download directory>] <backup id>
 ```
 
@@ -76,7 +76,7 @@ $ cx backups download [-s <stack>] [-d <download directory>] <backup id>
 
 ### Example
 
-```
+```shell
 $ cx backups new -s mystack --dbtypes=postgresql --frequency="0 */1 * * *" --keep 50 --gzip=true exclude-tables=my_log_table --run-on-replica=false
 ```
 

@@ -22,9 +22,9 @@ To make use of deploy hooks, your application should have a file called *deploy_
 
 For **Rails/Rack** applications this file should be present within a folder named _.cloud66_, which is in turn located in the root of your source code.
 
-```
+</pre>bash
 /.cloud66/deploy_hooks.yml
-```
+</pre>
 
 This file should be YAML formatted, and you can use a service like [YAMLlint](http://yamllint.com/) to validate it.
 
@@ -53,10 +53,10 @@ It's important to understand the order in which hook points will occur in the fl
 8. ***before_node* →** Node is installed → ***after_node***
 9. ***before_nginx* →** NGINX is installed → ***after_nginx***
 10. [***before_z***](/rails/references/deploy-hooks-syntax.html#beforez)
-11. Application framework is installed 
-12. ***after_checkout*** 
-13. ***after_bundle*** 
-14. ***after_symlink*** 
+11. Application framework is installed
+12. ***after_checkout***
+13. ***after_bundle***
+14. ***after_symlink***
 15. [***after_z***](/rails/references/deploy-hooks-syntax.html#afterz)
 16. ***before_processes* →** processes are handled → **after_processes**
 17. **last_thing**
@@ -71,7 +71,7 @@ It's important to understand the order in which hook points will occur in the fl
 
 ## Debugging deploy hooks
 
-Automating deploy hooks can sometimes be tricky. To avoid issues, it's good practice to run each of your commands manually to see that they complete successfully. 
+Automating deploy hooks can sometimes be tricky. To avoid issues, it's good practice to run each of your commands manually to see that they complete successfully.
 
 If a specific command doesn't show any output, you can use the `echo $?` command after issuing your command to see its exit code. If it returns a _zero_, your command was successful, whereas a _one_ means it has failed.
 
@@ -80,26 +80,29 @@ If a specific command doesn't show any output, you can use the `echo $?` command
 
 Below is a bare-bone example of using a snippet with the required fields. It will execute the [Cloud 66 Node snippet](https://github.com/cloud66/snippets/blob/master/cloud66/node) as the first thing on all production servers.
 
-```
-production: # Environment
+
+<div class="CodeBlock">
+    <button class="js-copy-btn" data-clipboard-target="#copy-bare">Copy</button>
+    <pre><code id="copy-bare" class="language-yml">production: # Environment
     first_thing: # Hook point
       - snippet: cloud66/node # Hook type
         target: any # Hook fields
-        execute: true
-```
+        execute: true</code></pre>
+</div>
 
 You can also run multiple snippets at the same hook point:
 
-```
-production: # Environment
+<div class="CodeBlock">
+    <button class="js-copy-btn" data-clipboard-target="#copy-multi">Copy</button>
+    <pre><code id="copy-multi" class="language-yml">production: # Environment
     first_thing: # Hook point
       - snippet: cloud66/{% if page.collection == 'maestro' or page.collection =='legacy_docker' %}docker{%else%}{{page.collection}}{%endif%} # Hook type
         target: any # Hook fields
         execute: true
       - snippet: cloud66/bower
         target: any
-        execute: true
-```
+        execute: true</code></pre>
+</div>
 
 See the available hook points and fields for more ways to customize this.
 
@@ -108,16 +111,17 @@ See the available hook points and fields for more ways to customize this.
 
 The hook example below can be used to install anything from packages to fonts on your server, and you can nest different hooks for the same hook point like follows:
 
-```
-production: # Environment
+<div class="CodeBlock">
+    <button class="js-copy-btn" data-clipboard-target="#copy-hook">Copy</button>
+    <pre><code id="copy-hook" class="language-yml">production: # Environment
     first_thing: # Hook point
       - command: apt-get install curl -y # Hook type
         target: any # Hook fields
         execute: true
       - command: apt-get install ncdu -y # Hook type
         target: any # Hook fields
-        execute: true
-```
+        execute: true</code></pre>
+</div>
 
 #### Important
 <div class="notice notice-warning"><p>
@@ -125,39 +129,44 @@ When automating the installation of packages, remember to use the <em>-y</em> fl
 
 ### Running custom Rake tasks using hooks
 
-You can use "command" hooks to run any specific or custom Rake tasks your application might need. This includes commands like `db:migrate` , `db:seed` and `db:rollback`. 
+You can use "command" hooks to run any specific or custom Rake tasks your application might need. This includes commands like `db:migrate` , `db:seed` and `db:rollback`.
 
-The example below can be used to run custom rake tasks during server build: 
+The example below can be used to run custom rake tasks during server build:
 
-    production: # Environment
+<div class="CodeBlock">
+    <button class="js-copy-btn" data-clipboard-target="#copy-build">Copy</button>
+    <pre><code id="copy-build" class="language-yml">production: # Environment
         last_thing: # Hook point
           - command: cd $APP_PATH && bundle exec rake dev:setup # Hook type
             target: rails # Hook fields
             run_on: single_server
-            apply_during: build_only
+            apply_during: build_only</code></pre>
+</div>
 
 This will run our rake task on one Rails server and only during the initial build. We run this as a `last_thing` hook because if we ran it earlier the application wouldn't exist on the server and be usable. If you need to run tasks more than once, consider using the [rake task add-in](/rails/how-to-guides/deployment/running-rake-tasks.html).
 
-## Using existing script deploy hooks 
+## Using existing script deploy hooks
 
 The hook below will copy a file from your repository to your *tmp* folder and execute it during build.
 
-```
-production: # Environment
+<div class="CodeBlock">
+    <button class="js-copy-btn" data-clipboard-target="#copy-existing">Copy</button>
+    <pre><code id="copy-existing" class="language-yml">production: # Environment
     after_nginx: # Hook point
       - source: /.cloud66/script.sh # Hook type
         destination: /tmp/script.sh
         target: any # Hook fields
         execute: true
-        apply_during: build_only
-```
+        apply_during: build_only</code></pre>
+</div>
 
 ## Using inline script deploy hooks
 
 The hook below will create an arbitrary log file in /tmp
 
-```
-first_thing: # Hook point
+<div class="CodeBlock">
+    <button class="js-copy-btn" data-clipboard-target="#copy-inline">Copy</button>
+    <pre><code id="copy-inline" class="language-yml">first_thing: # Hook point
  - inline: |
 
      #!/usr/bin/env bash
@@ -165,16 +174,17 @@ first_thing: # Hook point
    target: any
    execute: true
    apply_during: all
-   owner: root:root
-```
+   owner: root:root</code></pre>
+</div>
 
 
 ### Example: env_vars parameter
 
 This example shows how to use the env_vars parameter.
 
-```
-before_nginx:
+<div class="CodeBlock">
+    <button class="js-copy-btn" data-clipboard-target="#copy-env">Copy</button>
+    <pre><code id="copy-env" class="language-yml">before_nginx:
    snippet: cloud66/download
    target: {{page.collection}}
    execute: true
@@ -183,13 +193,14 @@ before_nginx:
    env_vars:
      SOURCE_URL: "https://github.com/openresty/headers-more-nginx-module/archive/v0.33.tar.gz"
      TARGET_PATH: /usr/local/build/nginx-modules/headers-more-nginx-module
-     UNTAR: true
-```
+     UNTAR: true</code></pre>
+ </div>
+
 
 ## What's next?
 
 * Get to grips with some [working examples of deploy hooks](/{{page.collection}}/how-to-guides/deployment/deploy-hook-examples.html) to set up the exact hooks your app needs.
 * Use the [detailed reference guide for deploy hooks](/rails/references/deploy-hooks-syntax.html) to set up the exact hooks your app needs.
-* Learn how to use [Manifest files](/rails/quickstarts/getting-started-with-manifest.html) to customize the components of your application 
+* Learn how to use [Manifest files](/rails/quickstarts/getting-started-with-manifest.html) to customize the components of your application
 * Learn how to add custom [environment variables](/{{page.collection}}/tutorials/env-vars.html) to your application
 * Learn how to use [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) - a powerful tool for configuring the components of your application.

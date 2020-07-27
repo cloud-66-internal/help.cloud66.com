@@ -30,13 +30,13 @@ Gateway management is available through [toolbelt](/{{page.collection}}/referenc
 
 First you need to define a gateway:
 
-```
+```shell
 $ cx gateways add --name aws_bastion --address 1.1.1.1  --username ec2-user  --private-ip 2.2.2.2
 ```
 
 In order to use this gateway for a application deployment, you need to first specify it in the manifest:
 
-```
+```yaml
 production:
    	gateway:
    	    name: aws_bastion
@@ -45,7 +45,7 @@ production:
 
 and then make it available before you start the deployment:
 
-```
+```shell
 $ cx gateways open --name aws_bastion --key /tmp/gateway.pem --ttl 1h
 ```
 
@@ -53,7 +53,7 @@ Now you can start deploying your application.
 
 After the deployment is finished you can invalidate the gateway or leave it until the TTL is over.
 
-```
+```shell
 $ cx gateways close --name aws_bastion
 ```
 
@@ -62,7 +62,7 @@ $ cx gateways close --name aws_bastion
 
 If you want to connect to your servers behind the bastion server firstly you will need to have access to the bastion server's key, then you can use toolbelt to connect to your server:
 
-```
+```shell
 $ cx ssh --gateway-key ~/.ssh/bastion_key  -s "My Awesome App" Lion
 ```
 

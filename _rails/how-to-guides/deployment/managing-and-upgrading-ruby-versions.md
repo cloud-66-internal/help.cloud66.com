@@ -37,7 +37,7 @@ You can check the latest version of Ruby we currently support on our [technical 
 
 #### Warning
 <div class="notice notice-warning"><p>
-If your <kbd>manifest.yml</kbd> specifies a different version to your Gemfile, this will cause problems when you deploy your code. The safest option is to remove the Ruby version declaration from everything except the Manifest file.</p></div> 
+If your <code>manifest.yml</code> specifies a different version to your Gemfile, this will cause problems when you deploy your code. The safest option is to remove the Ruby version declaration from everything except the Manifest file.</p></div> 
 
 ## Defining your Ruby version via the Manifest file
 
@@ -45,21 +45,25 @@ If you've never used a Manifest file before, please read through our [Getting St
 
 Ruby version is defined in `manifest.yml` as follows:
 
+```yaml
     rails:
        configuration:
          ruby_version: x.y.z
+```
 
 This is obviously for applications using Rails, but you can do something similar for other Rack frameworks using this format:
 
+```yaml
     rack:
         configuration:
           ruby_version: x.y.z
+```
 
 If you'd like more context, we have a detailed guide to all the settings available via Manifest files for both [Rails](/rails/how-to-guides/deployment/building-a-manifest-file.html#rails) and [Rack](/rails/how-to-guides/deployment/building-a-manifest-file.html#rack) applications.
 
 #### Note
 <div class="notice"><p>
-If you're currently defining your Ruby version in a Gemfile or a <kbd>.ruby_version</kbd> file, we strongly recommend moving to using a Manifest file whenever you deploy code. The alternative is likely to result in significant conflicts and issues between servers and applications. Gemfile version declarations can cause problems when upgrading, because your application will no longer run unless the version declared is the same as the underlying version of Ruby.</p></div>
+If you're currently defining your Ruby version in a Gemfile or a <code>.ruby_version</code> file, we strongly recommend moving to using a Manifest file whenever you deploy code. The alternative is likely to result in significant conflicts and issues between servers and applications. Gemfile version declarations can cause problems when upgrading, because your application will no longer run unless the version declared is the same as the underlying version of Ruby.</p></div>
 
 ## Deployment strategies for Ruby version upgrades
 

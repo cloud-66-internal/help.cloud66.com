@@ -8,7 +8,7 @@ Check out your [CustomConfig](/{{page.collection}}/tutorials/custom-config-git.h
 
 Add the following deploy hook to your *deploy_hooks.yml* file.
 
-```
+```yaml
 production: # Environment or your choice
   last_thing: # Importent to run the weavescope hook as the last thing during server deployment
     - snippet: cloud66/weave_scope # our weavescope snippet

@@ -17,9 +17,9 @@ You need to choose your web server at the time of initial build of the applicati
 
 To run a Unicorn web server, add a line to your Procfile labeled as <em>custom_web</em>. Here is an example:
 
-{% highlight ruby %}
+```ruby
 custom_web: bundle exec unicorn_rails -c config/unicorn.rb -E $RAILS_ENV
-{% endhighlight %}
+```
 
 You **should not** daemonize the `custom_web` process. In other words, please do not use the `-D` or `-daemonize` flags in your initialization string. Please also make sure your config file does not enable daemonization.
 
@@ -34,7 +34,7 @@ We do not support old-style daemonization because it is more reliable to allow t
 
 This `unicorn.rb` configuration file is compatible with Cloud 66 requirements (following the Procfile initialization string above, this should be located under the `config` folder of your Rails app):
 
-{% highlight ruby %}
+```ruby
 worker_processes 2
 
 working_directory "#{ENV['STACK_PATH']}"
@@ -72,12 +72,12 @@ after_fork do |server, worker|
 	defined?(ActiveRecord::Base) and
 		ActiveRecord::Base.establish_connection
 end
-{% endhighlight %}
+```
 
 ## Customizing shutdown and reload signals
 
 The default shutdown sequence for Unicorn servers on Cloud 66 is:
-```
+```terminal
 :quit,75,:term,15,:kill
 ```
 
@@ -114,19 +114,15 @@ Bluepill (legacy)
 Cloud 66 uses the following signals to control Puma via <a href="/rails/how-to-guides/deployment/systemd.html">systemd</a>:
 
 <h3>Stop the web server</h3>
-<pre class="prettyprint">
-sudo systemctl stop cloud66_web_server.service
-</pre>
+<pre><code class="language-bash">sudo systemctl stop cloud66_web_server.service</code></pre>
 
 <h3>Start the web server</h3>
-<pre class="prettyprint">
-sudo systemctl start cloud66_web_server.service
-</pre>
+
+<pre><code class="language-bash">sudo systemctl start cloud66_web_server.service</code></pre>
 
 <h3>Restart the web server</h3>
-<pre class="prettyprint">
-sudo systemctl restart cloud66_web_server.service
-</pre>
+
+<pre><code class="language-bash">sudo systemctl restart cloud66_web_server.service</code></pre>
 
 </section>
 
@@ -135,18 +131,20 @@ sudo systemctl restart cloud66_web_server.service
 Cloud 66 uses the following signals to control Puma via <a href="/rails/how-to-guides/deployment/bluepill-legacy.html">Bluepill</a>:
 
 <h3>Stop the web server</h3>
-<pre class="prettyprint"> sudo bluepill cloud66_web_server stop </pre>
 
+<pre><code class="language-bash">sudo bluepill cloud66_web_server stop</code></pre>
 
 <h3>Start the web server</h3>
-<pre class="prettyprint"> sudo bluepill cloud66_web_server quit </pre>
 
-<pre class="prettyprint"> sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill </pre>
+<pre><code class="language-bash">sudo bluepill cloud66_web_server quit</code></pre><br/>
+
+<pre><code class="language-bash">sudo bluepill load /etc/bluepill/autoload/cloud66_web_server.pill</code></pre>
 
 <h3>Restart the web server (hot-restart)</h3>
-<pre class="prettyprint"> sudo bluepill cloud66_web_server restart </pre>
 
-<pre class="prettyprint"> kill -USR2 </pre>
+<pre><code class="language-bash">sudo bluepill cloud66_web_server restart</code></pre>
+
+<pre><code class="language-bash">kill -USR2</code></pre>
 
 </section>
 </div>

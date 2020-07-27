@@ -32,14 +32,14 @@ The default number of CPU shares given to a service is 1024. This is a relative 
 
 <p><strong>For example:</strong></p>
 
-{% highlight yaml %}
+```yaml
 services:
     your_service_name:
         constraints:
             resources:
                 memory: "100M"
                 cpu: 512
-{% endhighlight %}
+```
 
         </section>
 
@@ -49,14 +49,14 @@ services:
 
 <p><strong>For example:</strong></p>
 
-{% highlight yaml %}
+```yaml
 services:
     your_service_name:
         constraints:
             resources:
                 memory: "100m"
                 cpu: 512
-{% endhighlight %}
+```
 
         </section>
 </div>

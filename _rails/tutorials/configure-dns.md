@@ -14,7 +14,7 @@ permalink: /:collection/:path:output_ext
 
 Cloud 66 creates unique [DNS hostnames](/rails/references/server-ip-addresses.html#cloud-66-hostnames) for each server you deploy with us. These use animal names to make them more easily recognizable. For example:
 
-```
+```shell
 puma.railsdemo.development.c66.me
 walrus.myapp.production.c66.me
 ```

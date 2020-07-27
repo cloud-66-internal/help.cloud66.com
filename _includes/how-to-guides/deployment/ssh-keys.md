@@ -15,10 +15,10 @@ Copy the public key into the
 ~/.ssh/authorized_keys
  file on your server, using the following commands. Substitute your own SSH user and host names:
 
-{% highlight bash %}
+```bash
 scp ~/.ssh/id_rsa.pub squire@example.com:/home/user/.ssh/uploaded_key.pub
 ssh squire@example.com "echo `cat ~/.ssh/uploaded+key.pub` >> ~/.ssh/authorized_keys"
-{% endhighlight %}
+```
 
 You can now log in to your server using your public key.
 
@@ -35,15 +35,15 @@ If you're using PuTTY in Windows for SSH services, you can still use SSH keys. P
 
 Simply ensure that your public key contents are included in ~/.ssh/authorized_keys on the target server. Then you should be able to connect with:
 
-{% highlight bash %}
+```bash
 ssh {server user}@{server address}
-{% endhighlight %}
+```
 
 If you are using a non-standard key name or location, then you can connect to your server using
 
-{% highlight bash %}
+```bash
 ssh -i {your private key location} {server user}@{server address}
-{% endhighlight %}
+```
 
 
 #### Important

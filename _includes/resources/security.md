@@ -18,7 +18,7 @@ We take a wide range of other measures to improve [application security]({% if p
 
 Cloud 66 connects to users' servers from a set of authorized IP addresses:
 
-```
+```shell
 {% include general/public_ips.html %}
 ```
 

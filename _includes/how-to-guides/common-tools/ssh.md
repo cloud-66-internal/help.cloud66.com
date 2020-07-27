@@ -13,7 +13,7 @@ Cloud providers frequently change the public IP addresses of servers when they a
 
 Verbose mode gives you more information on the SSH command running. It is a good way of finding out more detail about what is preventing SSH from working. To run the SSH in verbose mode, use the following command:
 
-```
+```bash
 cx ssh -vvv -s <APP_NAME> -e <ENVIRONMENT> <SERVER_NAME>
 ```
 
@@ -22,7 +22,7 @@ cx ssh -vvv -s <APP_NAME> -e <ENVIRONMENT> <SERVER_NAME>
 
 API delays with cloud firewalls can cause SSH to fail. This can often be solved by adding a short delay between the firewall request (`lease`) and the SSH attempt using the command below:
 
-```
+```bash
 cx lease -s <APP_NAME> -e <ENVIRONMENT> -p 22 -t 10
 sleep 10
 cx ssh -s <APP_NAME> -e <ENVIRONMENT> <SERVER_NAME>
@@ -34,7 +34,7 @@ Toolbelt detects your public IP, but some network providers may use a different 
 
 To get around this, you will need to temporarily open your server to traffic from all IP addresses using the command below:
 
-```
+```bash
 cx lease -s <APP_NAME> -e <ENVIRONMENT> -p 22 -t 10 -f 0.0.0.0/0
 cx ssh -s <APP_NAME> -e <ENVIRONMENT> <SERVER_NAME>
 ```

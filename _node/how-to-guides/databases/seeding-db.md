@@ -19,7 +19,7 @@ In our example, we will use the default Rails [rake db:seed command](http://edge
 
 Create the file `/.cloud66/dbseed.sh` as below:
 
-```
+```shell
 #!/bin/bash
 cd $STACK_PATH
 bundle exec rake db:seed
@@ -34,7 +34,7 @@ Add a deploy hook to execute the above script during the first deploy (on the fi
 
 Create the file `.cloud66/deploy_hooks.yml` as below (replacing *production* with your target environment).
 
-```
+```yaml
 production:
   after_symlink: # Or use after_rails depending on your application
     - source: /.cloud66/dbseed.sh

@@ -16,11 +16,11 @@ In order to prevent this from happening, you need to whitelist any IP addresses 
 
 IP addresses and ranges can be entered as comma separated lists. For example:
 
-<pre class="prettyprint">
+```shell
 23.213.76.19
 23.213.76.1/16
 23.213.76.19,31.152.18.22,197.222.132.0/24
-</pre>
+```
 
 
 ### Cloudflare edge server support
@@ -39,11 +39,11 @@ Whitelisting is useful in cases where you need to lock down an application compl
 
 IP addresses and ranges can be entered as comma separated lists. For example:
 
-<pre class="prettyprint">
+```shell
 23.213.76.19
 23.213.76.1/16
 23.213.76.19,31.152.18.22,197.222.132.0/24
-</pre>
+```
 
 #### Note
 <div class="notice"><p>Whitelisting is not the same as removing rate limits. These are two separate lists with separate functions. A whitelisted IP could still be rate limited.</p></div>

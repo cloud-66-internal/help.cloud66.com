@@ -20,7 +20,7 @@ This guide assumes you are familiar with Cloud 66 Toolbelt. If you aren't we hav
 
 Run the following command on your local machine:
 
-```
+```shell
 cat CERT1.CRT_PATH [CERT1_MID.crt_path] PRIVATE1.key_PATH > websitename1.pem
 
 cat CERT2.CRT_PATH [CERT2_MID.crt_PATH] PRIVATE2.key_PATH > websitename2.pem
@@ -29,21 +29,21 @@ cat CERT2.CRT_PATH [CERT2_MID.crt_PATH] PRIVATE2.key_PATH > websitename2.pem
 
 ### 2. Upload them to /tmp on the server
 
-```
+```shell
 cx upload -s app_name --server haproxy_server_name websitename1.pem_PATH websitename1.pem
 cx upload -s app_name --server haproxy_server_name websitename2.pem_PATH websitename2.pem
 ```
 
 ### 3. Log into your HAproxy server
 
-```
+```shell
 cx ssh -s app_name haproxy_server_name
 ```
 
 
 ### 4. Copy the cert files from /tmp to their directory
 
-```
+```shell
 sudo cp /tmp/websitename1.pem /etc/ssl/private/websitename1.pem
 sudo cp /tmp/websitename2.pem /etc/ssl/private/websitename2.pem
 ```

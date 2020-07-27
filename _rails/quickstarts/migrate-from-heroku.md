@@ -64,27 +64,27 @@ From your Heroku toolbelt, create a database backup URL by running `heroku pgbac
 
 Start by dumping your existing database. Refer to the [ClearDB documentation for common problems](http://www.cleardb.com/blog/entry?id=common-problems-2).
 
-{% highlight bash %}
+```bash
 $ mysqldump -u [username] -p[password] [dbname] > backup.sql 
-{% endhighlight %}
+```
 
 Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/{{page.collection}}/references/toolbelt.html#upload) to upload the file to your application database server. Remember to replace the fields below with your values.
 
-{% highlight bash %}
+```bash
 $ cx upload -s "[app_name]" --server [database_server_name] backup.sql /tmp/backup.sql
-{% endhighlight %}
+```
 
 Next, use the toolbelt to SSH to your server.
 
-{% highlight bash %}
+```bash
 $ cx ssh -s "[app_name]" [server_first_name]
-{% endhighlight %}
+```
 
 Finally, use the command below to import your backup into the database. You can find the generated username, password and database name by visiting your Application Overview and clicking into your database server (e.g. _MySQL server_).
 
-{% highlight bash %}
+```bash
 $ mysql -u [generated_user_name] -p [generated_password] "[database_name]" < /tmp/backupfile.sql 
-{% endhighlight %}
+```
 
 
 ### 3. Traffic
@@ -108,9 +108,9 @@ You can also use the [Procfile](/rails/how-to-guides/deployment/systemd.html) to
 
 Heroku restarts all dynos at 24 hours of uptime, which may conceal possible memory leaks in your application. When you migrate to Cloud 66, these will become noticeable because we don't restart your workers (other than during a deployment), so the leak can grow to be bigger. A temporary solution is to re-create the Heroku restart behavior, for example with this script:
 
-{% highlight bash %}
+```bash
 for OUTPUT in $(pgrep -f sidekiq); do kill -TERM $OUTPUT; done
-{% endhighlight %}
+```
 
 This will send a TERM signal to any Sidekiq workers, giving them 10 seconds (by default) to finish gracefully. Any workers that don't finish within this time period are forcefully terminated and their messages are sent back to Redis for future processing. You can customize this script to fit your needs, and add it to your application as a shell add-in.
 

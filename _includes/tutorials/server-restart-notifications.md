@@ -15,13 +15,13 @@ In order to minimize down-time, you can restart one server at a time (assuming y
 
 To restart your server, it is recommended that you <a href="{% if page.collection == "maestro" %}/maestro/how-to-guides/common-tools/ssh.html{%else%}/{{page.collection}}/how-to-guides/common-tools/ssh.html{%endif%}">SSH to your server</a> and run either of the following terminal commands:
 
-<pre class="terminal">
+```shell
 sudo reboot 
-</pre>
+```
 
-<pre class="terminal">
+```shell
 sudo shutdown -r now
-</pre>
+```
 
 #### Important
 <div class="notice">
@@ -34,9 +34,9 @@ The unattended-upgrades package signals to the operating system that a restart i
 ## I've restarted, but I still see the notification
 Due to the periodic checking of your server (as stated above) it can take up to 12 hours for your notifications to be cleared. Deploying your application will cause an immediate refresh of your restart notification state (after deployment completes). You can also manually check your restart required status on your server by running the command:
 
-<pre class="terminal">
+```shell
 sudo bash -c "if [ -f /var/run/reboot-required ]; then echo 'Server is requesting restart'; fi"
-</pre>
+```
 
 ## Additional information
 Visit the <a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates">Ubuntu documentation on automatic security updates</a> for additional information about Ubuntu unattended-upgrades.

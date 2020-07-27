@@ -239,16 +239,18 @@ title: search for help | Cloud 66
     </div>
 </div>
 
-<h2>Jekyll Pygments Syntax highlighter</h2>
+<h2>Prism Syntax Highlighter</h2>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>As of July 2020 we have removed the Jekyll syntax highlighter and the js based Google Code Prettify. These have been replaced with the <a href="https://prismjs.com">Prism</a> js code highlighter.</p>
 
+<p>Basic Examples of use are documented below:</p>
 
-<p>Highlight with numbers</p>
+<p>Prism will be automatically invoked on a page when you add a <em>language-xxx</em> class to either the <code>code</code> or <code>pre</code> elements in a code block. For example <code>&lt;code class=&quot;language-javascript&quot;&gt;var foo = &quot;bar&quot;;&lt;/code&gt;</code></p>
 
-{% highlight ruby linenos %}def foo
-  puts 'foo'
-end{% endhighlight %}
+<pre><code class="language-javascript">var foo = "bar";</code></pre>
+
+<pre><code class="language-css">p { color: red }</code></pre>
+
 
 <p>Default code highlighter</p>
 
@@ -265,23 +267,52 @@ $ pwd
 $ echo
 {% endhighlight %}
 
+<h3>Adding line numbers with prism</h3>
+<p>Add the line-numbers class, for example: <code>&lt;pre class=&quot;language-javascript line-numbers&quot;&gt;&lt;code&gt;var foo = &quot;bar&quot;;
+var hello = &quot;world&quot;;&lt;/code&gt;&lt;/pre&gt;</code></p>
+
+<pre class="language-javascript line-numbers"><code>var foo = "bar";
+var hello = "world";</code></pre>
+
+<h3>Soft line wrap</h3>
+<p>Use the <code>&lt;pre class=&quot;line-numbers u-whiteSpaceNoWrap&quot;&gt;</code> in the code below.</p>
+
+<pre class="line-numbers language-none line-numbers u-whiteSpaceNoWrap"><code>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</code></pre>
+
+<h3>Default wrap</h3>
+<pre class="line-numbers language-none line-numbers"><code>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</code></pre>
+
+<h3>Copy code examples to Clipboard</h3>
+
+<div class="CodeBlock">
+    <button class="js-copy-btn" data-clipboard-target="#copy-1">Copy</button>
+    <pre><code id="copy-1" class="line-numbers language-yml">production:
+      docker:
+        configuration:
+          iam_instance_profile_name: docker-perms
+          version: 1.7.0
+          weave_version: 1.0.3
+          vpc_id: vpc-64872001
+          root_disk_size: 100
+          root_disk_type: ssd
+          image_keep_count: 5
+          nameservers: ['8.8.8.8', '8.8.4.4']
+    </code></pre>
+</div>
+
+<p>The above example is marked up with the following html:</p>
+<pre><code class="line-numbers language-markup">&lt;div class=&quot;CodeBlock&quot;&gt;
+    &lt;button class=&quot;js-copy-btn&quot; data-clipboard-target=&quot;#copy-1&quot;&gt;Copy&lt;/button&gt;
+    &lt;pre&gt;&lt;code id=&quot;copy-1&quot; class=&quot;line-numbers language-yml&quot;&gt;production:
+      ...
+    &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h2>Terminal class</h2>
+
 For values returned by the system use the normal `terminal` class:
 
 <pre class="terminal">
 /Users/me/my_awesome_project
 </pre>
-
-<h3>Google Code Prettify Syntax Highlighter</h3>
-<p>This is a JavaScript alternative to the Jekyll Pygments tool. It may be a better option.</p>
-<pre class="prettyprint">var hello = function() {
-    for (var i = 42; --i >= 0;) {
-        console.log('hello');
-    }
-  // This is a comment with a link <a href="#voila2">tags</a>.
-}</pre>
-
-
-
-
-
-

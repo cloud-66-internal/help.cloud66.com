@@ -75,7 +75,7 @@ The third level of the manifest file determines the specific settings for the co
 
 For example, this is how to set the version of Ruby used in a Rails application:
 
-```
+```yaml
 production:
   rails:
     configuration:
@@ -92,7 +92,7 @@ In our example below you can see that we're using Digital Ocean as our `vendor` 
 
 ## Example of manifest file
 
-```
+```yaml
 rails:
   configuration:
     ruby_version: 2.5.1
@@ -110,5 +110,4 @@ redis:
       region: lon1
       vendor: digitalocean
       key_name: My_Key
-
 ```

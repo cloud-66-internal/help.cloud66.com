@@ -6,9 +6,7 @@ Although your Cloud 66 Dashboard provides a complete view of all your applicatio
 
 In order to manually query a server's metadata, you must first [log into the server via SSH](/{{page.collection}}/how-to-guides/common-tools/ssh-to-server.html). Once you are logged in, you can use the following command:
 
-```bash
-curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY
-```
+<pre class="language-bash line-numbers u-whiteSpaceNoWrap"><code>curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY</code></pre>
 
 Some important things to note:
 
@@ -17,15 +15,14 @@ Some important things to note:
 
 The command above will return **all** the available metadata for the server. However, you can also query subsets of the metadata using the names for each element and sub-element. For example this command:
 
-```bash
-curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/deployment/triggered_by
-```
+<pre class="language-bash line-numbers u-whiteSpaceNoWrap"><code>curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/deployment/triggered_by</code></pre>
+
 
 ...will return metadata about who **triggered** the last **deployment**. 
 
 Finally, when querying for metadata, it can be useful to parse the json response. We suggest installing and using `jq` for this. To install `jq`
 
-```
+```shell
 apt install -y jq
 ```
 
@@ -33,9 +30,9 @@ apt install -y jq
 
 ### 1. deployment information
 
-```shell
-$ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/deployment | jq
+<pre class="language-bash line-numbers u-whiteSpaceNoWrap"><code>$ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/deployment | jq</code></pre>
 
+<pre class="language-bash u-whiteSpaceNoWrap"><code>
 {
   "response": {
     "finished_at": "2020-07-07T13:40:51Z",
@@ -51,28 +48,26 @@ $ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.c
     }
   }
 }
-```
+</code></pre>
 
 ### 2. Server OS information
 
-```shell
-$ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/server/os | jq
+<pre class="language-bash line-numbers u-whiteSpaceNoWrap"><code>$ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/server/os | jq</code></pre>
 
+<pre class="language-bash u-whiteSpaceNoWrap"><code>
 {
   "response": {
     "distro": "ubuntu",
     "version": "18.04"
   }
 }
-```
+</code></pre>
 
 ### 3. Find out who deployed last (or currently)
 
-```shell
-$ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/deployment/triggered_by | jq -r '.response'
+<pre class="language-bash line-numbers u-whiteSpaceNoWrap"><code>$ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/deployment/triggered_by | jq -r '.response'</code></pre>
 
-your-email@yourdomain.com
-```
+<pre class="language-bash u-whiteSpaceNoWrap"><code>your-email@yourdomain.com</code></pre>
 
 ## Using metadata in a workflow
 
@@ -80,8 +75,7 @@ One handy way to call this method is via a [deploy hook](/{{page.collection}}/tu
 
 The deploy hook to achieve that would look something like this:
 
-```yaml
-first_thing:
+<pre class="language-yaml line-numbers u-whiteSpaceNoWrap"><code>first_thing:
 - target: any
   execute: true
   apply_during: all 
@@ -90,6 +84,6 @@ first_thing:
     #!/usr/bin/env bash
     current_deployer=$(curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/deployment/triggered_by | jq -r '.response')
     echo "Deployed by: $current_deployer"
-```
+</code></pre>
 
 This hook will fire as soon as deployment starts (`first_thing`) and will query the `triggered_by` field and store the value in a variable. You can then use this variable as you need!

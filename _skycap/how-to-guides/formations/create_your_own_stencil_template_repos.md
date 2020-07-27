@@ -24,7 +24,7 @@ A Base Template Repository (BTR) is simply a collection of YAML-formatted Kubern
 
 A BTR must include a single `templates.json` file that holds meta-data about the templates you have in the repo. Here is a sample `templates.json` that describes a BTR for a Ruby-based application:
 
-{% highlight json %}
+```json
     {
        "version": "v1",
        "public": true,
@@ -116,7 +116,7 @@ A BTR must include a single `templates.json` file that holds meta-data about the
           ]
        }
     }
-{% endhighlight %}
+```
 
 ### Components of the JSON definition for a BTR
 

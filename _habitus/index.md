@@ -26,7 +26,7 @@ You can install Habitus by downloading a single executable for your platform of 
 
 Habitus uses a yml file as a descriptor for builds. Here is an example:
 
-``` yaml
+```yaml
 build:
   version: 2016-02-13 // version of the build schema.
   steps:
@@ -52,7 +52,6 @@ build:
       depends_on:
         - ironmountain
       command: s3cmd --access_key=_env(ACCESS_KEY) --secret_key=_env(SECRET_KEY) put /app/iron-mountain s3://uploads.aws.com
-
 ```
 
 Build files can be made up of multiple steps. Each step is independent of the other ones and downstream steps can use upstream ones as source (in `FROM` command).
@@ -133,11 +132,15 @@ artifacts:
 
 This will be replaced before the build file is fed into the build engine. By default Habitus inherits all environment variables of its parent process. This can be overridden by passing environment variables into Habitus explicitly through the env command parameter:
 
-<kbd>$ habitus -env SERVICE_NAME=abc -env RAILS_ENV=production</kbd>
+```shell
+$ habitus -env SERVICE_NAME=abc -env RAILS_ENV=production
+```
 
 In the example above, you can pass in AWS S3 key and secret like this:
 
-<kbd>$ habitus -env ACCESS_KEY=$ACCESS_KEY -env SECRET_KEY=$SECRET_KEY</kbd>
+```shell
+$ habitus -env ACCESS_KEY=$ACCESS_KEY -env SECRET_KEY=$SECRET_KEY
+```
 
 ### Running commands
 
@@ -193,7 +196,9 @@ All builds and images will be tagged with the `uid` for this unless a step name 
 
 Habitus requires running in privileged more (sudo) so it can run the squash method (keeping file permissions across images). It also requires the following environment variables: `DOCKER_HOST` and `DOCKER_CERT_PATH`. These are usually available when Docker is running on a machine, but might not be available in sudo mode. To fix this, you can pass them into the app with command line params:
 
-<kbd>$ sudo habitus –host $DOCKER_HOST –certs $DOCKER_CERT_PATH</kbd>
+```shell
+$ sudo habitus –host $DOCKER_HOST –certs $DOCKER_CERT_PATH
+```
 
 ### Dependencies
 

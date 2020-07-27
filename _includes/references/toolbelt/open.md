@@ -4,7 +4,7 @@
 
 ### Usage
 
-```
+```shell
 $ cx open [-s <stack>] [<server name>|<server ip>|<server role>]
 ```
 
@@ -26,7 +26,7 @@ $ cx open [-s <stack>] [<server name>|<server ip>|<server role>]
 
 ### Example
 
-```
+```shell
 $ cx open -s "My Awesome App"
 ```
 

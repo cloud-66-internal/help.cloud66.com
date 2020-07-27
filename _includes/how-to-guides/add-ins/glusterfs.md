@@ -27,10 +27,10 @@ Now that you have a share storage service provided by GlusterFS in your applicat
 
 To see how your shared file system works, you can SSH to one of you web servers and run the following commands:
 
-<pre class="prettyprint">
+```shell
 $ cd /mnt/data-store
 $ touch hello.txt
-</pre>
+```
 
 Now SSH to another web server on your application and you should be able to see `hello.txt` under `/mnt/data-store`.
 

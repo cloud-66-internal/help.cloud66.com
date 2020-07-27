@@ -34,20 +34,16 @@ When installing multi-domain certificates, certificate authorities such as Comod
 
 To use these, you have to concatenate all files except for the last one (the certificate):
 
-```
+```shell
 $ cat COMODORSAExtendedValidationSecureServerCA.crt COMODORSAAddTrustCA.crt AddTrustExternalCARoot.crt > bundle_file
 ```
-
+If this doesn't work make sure that your certificates don't need passwords.
 
 ## Separate domains with different certificates
 
-```
-If this doesn't work make sure that your certificates don't need passwords.
-```
-
 You may need to serve different parts of your application on separate domains, each with its own SSL certificate. You can use [Nginx CustomConfig](/maestro/how-to-guides/nginx/nginx-modules.html) to set this up - you will basically have two server blocks listening on different domains, and serving different certificates (located on the server):
 
-```
+```shell
 {% raw %}{% if allow_ssl == true %}
 
 # main domain

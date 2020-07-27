@@ -25,7 +25,7 @@ We will use four files containing the following commands to accomplish this setu
 
 [Deploy hooks](/{{page.collection}}/tutorials/deploy-hooks.html) allow you to take action at various points during a build and/or deployment on Cloud 66. This one will run the bash script that we will create in the next step before Rails is installed on your server.
 
-```
+```yaml
 production:
     before_rails:
       - source: /.cloud66/files/add_thin_and_faye.sh
@@ -43,7 +43,7 @@ If you are adding Faye to an **existing application**, you should temporarily ch
 ### 2. RAILS_ROOT/.cloud66/files/add_thin_and_faye.sh
 This bash script ensures that Thin and Faye are installed on your server during deployment.
 
-```
+```shell
 !/bin/bash
 sudo gem install thin --no-ri --no-rdoc
 sudo gem install faye --no-ri --no-rdoc
@@ -53,7 +53,7 @@ sudo gem install faye --no-ri --no-rdoc
 ### 3. RAILS_ROOT/Procfile
 Here we are creating a [background process](/rails/how-to-guides/deployment/systemd.html) for Faye so that we can control and monitor it from the Cloud 66 dashboard.
 
-```
+```shell
 $ faye: thin -R $STACK_PATH/faye/config.ru start
 ```
 
@@ -63,7 +63,7 @@ $ faye: thin -R $STACK_PATH/faye/config.ru start
 ### 4. RAILS_ROOT/faye/config.ru
 These are settings specific to your Faye setup, which will vary depending on your requirements. You will need to insert the port that your Faye setup is running on in the last line.
 
-```
+```shell
 require 'faye'
 faye_server = Faye::RackAdapter.new(:mount => '/your_faye_mount', :timeout => 45)
 Faye::WebSocket.load_adapter('thin')

@@ -5,7 +5,7 @@ This command will execute a command directly on the remote server. It does this 
 
 ### Usage
 
-```
+```shell
 $ cx run -s <stack> --server <server name>|<server ip>|<server role> --service '<command>'
 ```
 
@@ -30,18 +30,18 @@ At least one of the optional server parameters are necessary in order to identif
 
 ### Examples
 
-```
+```shell
 $ cx run -s "My Awesome App" --server web1 'pwd'
 ```
 
 The service parameter applies to Docker applications and allows you to enter a Docker container with your command (based on the latest image of that service). Some examples are:
 
-```
+```shell
 $ cx run -s My_Awesome_App --server web1 --service my_api_service '/bin/bash'
 ```
 
 
-```
+```shell
 $ cx run -s My_Awesome_App --server web1 --service my_api_service 'bundle exec rails c'
 ```
 

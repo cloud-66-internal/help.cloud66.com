@@ -15,13 +15,13 @@ If your Rails/Rack application uses a MySQL, PostgreSQL or MongoDB instance that
 We will automatically track these changes and insert the correct details on the next deployment. These automatic changes happen at the deployment step named `deploy:tamper:db_configs`. 
 
 #### Custom database configs
-<div class="notice"><p>If you have significantly customised your <kbd>database.yml</kbd> (for example with multiple databases and/or external databases) and you have not disabled our "tampering" (see below) then you are highly likely to encounter issues. Our automated updates will tend to strip out the other databases or cause errors in their configuration.</p></div>
+<div class="notice"><p>If you have significantly customised your <code>database.yml</code> (for example with multiple databases and/or external databases) and you have not disabled our "tampering" (see below) then you are highly likely to encounter issues. Our automated updates will tend to strip out the other databases or cause errors in their configuration.</p></div>
 
 ## Disabling automated config updates
 
 If you would prefer to manage these configurations manually you can add this line to your manifest.yml file: `
 
-```
+```shell
 tamper_with_yml: false
 ```
 This will prevent our system from making any automated changes to the configuration files (including `database.yml`).
@@ -36,14 +36,14 @@ The location of this setting depends on the database type. For example:
 
 ### MySQL
 
-```
+```yaml
   mysql:
     configuration:
       tamper_with_yml: false
 ```
 
 ### Postgres
-```
+```yaml
   postgresql:
     configuration:
       tamper_with_yml: false
@@ -51,9 +51,8 @@ The location of this setting depends on the database type. For example:
 
 ### MongoDB
 
-```
+```yaml
   mongodb:
     configuration:
       tamper_with_yml: false
-
 ```

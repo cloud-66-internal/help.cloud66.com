@@ -116,7 +116,7 @@ If you're already using Cloud 66 just click *New Application &rarr; Node (Node f
 <ul>
     <li>
         <p>
-            <strong>Git repo URL for your app</strong> &mdash; We support <strong><kbd>http://</kbd>, <kbd>git://</kbd> or <kbd>git@</kbd></strong> URL formats. Please note that <strong>HTTPS isn't currently supported</strong>.
+            <strong>Git repo URL for your app</strong> &mdash; We support <code>http://</code>, <code>git://</code> or <code>git@</code> URL formats. Please note that <strong>HTTPS isn't currently supported</strong>.
         </p>
     </li>
     <li>

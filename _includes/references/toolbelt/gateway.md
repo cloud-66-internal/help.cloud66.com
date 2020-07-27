@@ -10,7 +10,7 @@ This command lists all gateways on your account.
 
 ### Usage
 
-```
+```shell
 $ cx --org <organization_name> gateways list [ --verbose]
 ```
 
@@ -28,7 +28,7 @@ $ cx --org <organization_name> gateways list [ --verbose]
 
 ### Example
 
-```
+```shell
 $ cx --org My_Awesome_org gateways add --name aws_bastion --address 1.1.1.1  --username ec2-user  --private-ip 2.2.2.2
 ```
 
@@ -41,7 +41,7 @@ Make the gateway available to use with cloud66 for ttl amount of time.
 
 ### Usage
 
-```
+```shell
 $ cx --org <organization_name> gateways open --name <gateway name> --key <The path to the gateway server key> --ttl <time to live >
 ```
 
@@ -58,7 +58,7 @@ $ cx --org <organization_name> gateways open --name <gateway name> --key <The pa
 
 ### Example
 
-```
+```shell
 $ cx --org My_Awesome_org gateways close --name aws_bastion
 ```
 
@@ -71,7 +71,7 @@ This command will remove the gateway from your account
 
 ### Usage
 
-```
+```shell
 $ cx --org <organization_name> gateways remove --name <gateway name>
 ```
 
@@ -87,7 +87,7 @@ $ cx --org <organization_name> gateways remove --name <gateway name>
 
 ### Example
 
-```
+```shell
 $ cx --org My_Awesome_org gateways remove --name aws_bastion
 ```
 

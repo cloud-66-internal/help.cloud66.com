@@ -17,9 +17,9 @@ Alterant comes with a set of helpers that make it easier to read, parse and modi
 
 YamlReader loads a YAML file into an JSON string which can be used in the modifier.
 
-<pre class="prettyprint">
+```js
 var data = JSON.parse(YamlReader("foo.yaml"));
-</pre>
+```
 
 YamlReader only looks in the context folder (where the input file is located).
 
@@ -27,9 +27,9 @@ YamlReader only looks in the context folder (where the input file is located).
 
 JsonReader loads a JSON file into an JSON string which can be used in the modifier.
 
-<pre class="prettyprint">
+```js
 var data = JSON.parse(JsonReader("foo.json"));
-</pre>
+```
 
 JsonReader only looks in the context folder (where the input file is located).
 
@@ -37,9 +37,9 @@ JsonReader only looks in the context folder (where the input file is located).
 
 DockerImage contains helpers for processing Docker images.
 
-<pre class="prettyprint">
+```js
 var image = new DockerImage("ubuntu");
-</pre>
+```
 
 #### Attributes
 
