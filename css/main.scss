@@ -75,13 +75,22 @@ kbd {
 }
 
 p,
-li,
-table {
+li {
     code,
     kbd {
         color: #e96900;
         padding: 4px 6px;
         border-radius: 2px;
+    }
+}
+table {
+    code,
+    kbd {
+        color: #e96900;
+        padding: 0 !important;
+        border-radius: 2px;
+        background: transparent !important;
+        font-size: 13px;
     }
 }
 em {
