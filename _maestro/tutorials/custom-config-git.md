@@ -52,7 +52,9 @@ You will now be able to access your CustomConfig git repos using a git client.
 
 To make a change to a CustomConfig file you need to first clone the application's CustomConfig git repository locally. Using git commandline this is possible with something like this:
 
-	$ git clone git@git1.cloud66.com:warmhearted-wondrous-tiger-9262.git
+```shell
+$ git clone git@git1.cloud66.com:warmhearted-wondrous-tiger-9262.git
+```
 
 This will clone the CustomConfig git repository for the first time to your disk under a folder called `warmhearted-wondrous-tiger-9262`.
 
@@ -62,8 +64,10 @@ For example, if you are using HAProxy as load balancer, you will see `haproxy.co
 
 Now open the file you want to change in your favourite text editor. Once done, save the file and commit your changes as you would for any normal git workflow. For example:
 
-	$ git commit -m "increase nginx pool size"
-	$ git push origin master
+```shell
+$ git commit -m "increase nginx pool size"
+$ git push origin master
+```
 
 Done!
 

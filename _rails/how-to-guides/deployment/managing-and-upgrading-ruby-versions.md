@@ -45,15 +45,19 @@ If you've never used a Manifest file before, please read through our [Getting St
 
 Ruby version is defined in `manifest.yml` as follows:
 
+```yaml
     rails:
        configuration:
          ruby_version: x.y.z
+```
 
 This is obviously for applications using Rails, but you can do something similar for other Rack frameworks using this format:
 
+```yaml
     rack:
         configuration:
           ruby_version: x.y.z
+```
 
 If you'd like more context, we have a detailed guide to all the settings available via Manifest files for both [Rails](/rails/how-to-guides/deployment/building-a-manifest-file.html#rails) and [Rack](/rails/how-to-guides/deployment/building-a-manifest-file.html#rack) applications.
 

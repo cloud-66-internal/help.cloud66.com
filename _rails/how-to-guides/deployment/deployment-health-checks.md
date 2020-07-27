@@ -48,6 +48,7 @@ This can help to catch deployments that don't throw any errors, but are problema
 
 Custom health checks are defined in your application's [manifest file](/rails/quickstarts/getting-started-with-manifest.html). Health checks have the following options:
 
+```yaml
     rails/rack:
     	configuration:
     		health:
@@ -57,14 +58,17 @@ Custom health checks are defined in your application's [manifest file](/rails/qu
     			endpoint: '/'
     			accept: ["200", "300-399"]
     			timeout: 30
+```
 
 The values above are the default values and are all optional. Any options that are excluded will simply use the defaults above. You can see a complete list of supported options in our [detailed manifest guide](/rails/how-to-guides/deployment/building-a-manifest-file.html).
 
 To simply use all these defaults with no changes, you can set:
 
+```yaml
     rails/rack:
     	configuration:
     		health: default
+```
 
 ## The limitations of health checks
 

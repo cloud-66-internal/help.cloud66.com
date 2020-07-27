@@ -146,7 +146,7 @@ In this example we will add two policies to our Hello World app:
 To add these policies, we follow the same steps as in our [tutorial](/skycap/tutorials/using-validation-policies.html), but we use `kind: Deployment` as the selector. 
 
 We add the following rules:
-```
+```js
 rule CheckAutherSidecar ensure {
     fetch("$.spec.template.spec.containers..image").contains("cloud66/auther:latest") == true
 }

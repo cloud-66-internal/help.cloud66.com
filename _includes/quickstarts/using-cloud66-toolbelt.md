@@ -78,17 +78,23 @@ Before you start **make sure you're logged into the account you'd like associate
 
 Next create a new profile in Toolbelt using the following command:
 
-    cx config create A_NICE_NAME
+```shell
+cx config create A_NICE_NAME
+```
 
 ...where `A_NICE_NAME` is the (arbitrary) name you'd like to use for that profile. 
 
 Then tell Toolbelt to use that new profile:
 
-    cx config use A_NICE_NAME
+```shell
+cx config use A_NICE_NAME
+```
 
 Finally, issue a command to force Toolbelt to authenticate the new profile. For example:
 
-    cx stacks list
+```shell
+cx stacks list
+```
 
 ...this will take you through the authorization process for the account you'd like to associate with the new profile. See the [Initialize Toolbelt](#initialize-toolbelt) section above for more details on how this works.
 
@@ -100,7 +106,9 @@ Make sure you are logged into the correct (alternate) account on the Cloud 66 da
 
 To switch between profiles, use the following command:
 
-    cx config use NAME
+```shell
+cx config use NAME
+```
 
 So, following our example above, the command would be `cx config use MY_NICE_NAME`. 
 

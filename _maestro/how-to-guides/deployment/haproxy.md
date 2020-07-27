@@ -27,7 +27,7 @@ You can also specify your own test interval if you like - this is done in the _s
 
 To change the test interval to every 30 seconds (instead of the default 2 seconds), the template should look like this:
 
-```
+```shell
 {% raw %}server web{{ forloop.index }} {{ server.ext_ipv4 }}:80 cookie "LSW_WEB{{ forloop.index }}" check inter 30000{% endraw %}
 ```
 
@@ -144,9 +144,12 @@ cx upload -s application_name_ --server haproxy_server_name maintenance.html
 ```
   
 * Move the file haproxy directory
-  ```shell
-sudo mv /tmp/maintenance.html /etc/haproxy/maintenance.html```
+```shell
+sudo mv /tmp/maintenance.html /etc/haproxy/maintenance.html
+```
 
 * Configure haproxy to show the maintenance file by adding the below line to the end of the default section
-`errorfile 503 /etc/haproxy/maintenance.html`
+```shell
+errorfile 503 /etc/haproxy/maintenance.html
+```
 

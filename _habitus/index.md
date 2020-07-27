@@ -138,7 +138,7 @@ $ habitus -env SERVICE_NAME=abc -env RAILS_ENV=production
 
 In the example above, you can pass in AWS S3 key and secret like this:
 
-```
+```shell
 $ habitus -env ACCESS_KEY=$ACCESS_KEY -env SECRET_KEY=$SECRET_KEY
 ```
 

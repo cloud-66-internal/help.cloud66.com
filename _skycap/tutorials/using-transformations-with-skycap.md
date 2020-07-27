@@ -70,8 +70,10 @@ Transformations are applied each time you render a Formation. To test that our `
 
 If our Transformation is working correctly, our `helloworld_service.yml` will have a couple of extra lines that look simmilar to this:
 
+```yaml
     annotations:
       - cloud66.com/deployed-at: 1558616203485
+```
 
 ## Managing multiple Transformations
 

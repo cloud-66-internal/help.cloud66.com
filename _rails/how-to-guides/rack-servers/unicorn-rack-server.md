@@ -77,7 +77,7 @@ end
 ## Customizing shutdown and reload signals
 
 The default shutdown sequence for Unicorn servers on Cloud 66 is:
-```
+```terminal
 :quit,75,:term,15,:kill
 ```
 
