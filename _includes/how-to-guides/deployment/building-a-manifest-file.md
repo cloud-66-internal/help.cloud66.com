@@ -536,8 +536,8 @@ Available settings:
       load_balancer:
         configuration:
           httpchk: /
-          wait_after_adding_servers:30 # default is 0
-          wait_after_removing_servers:10 # default is 0
+          wait_after_adding_servers: 30 # default is 0
+          wait_after_removing_servers: 10 # default is 0
           elb_ssl_policy: ELBSecurityPolicy-TLS-1-2-2017-01 # default
           alb_ssl_policy: ELBSecurityPolicy-FS-1-2-2019-08 # default  
 ```
@@ -560,8 +560,8 @@ Available settings (refer to the [GCE documentation](https://cloud.google.com/co
         configuration:
           httpchk: /
           balance: CLIENT_IP_PROTO
-          wait_after_adding_servers:30 # default is 0
-          wait_after_removing_servers:10 # default is 0
+          wait_after_adding_servers: 30 # default is 0
+          wait_after_removing_servers: 10 # default is 0
 ```
 ---
 
@@ -607,8 +607,8 @@ Available settings (refer to the [HAProxy documentation](http://haproxy.1wt.eu/d
           errorfile_502: /etc/haproxy/errors/502.http
           errorfile_503: /etc/haproxy/errors/503.http
           errorfile_504: /etc/haproxy/errors/504.https
-          wait_after_adding_servers:30 # default is 0
-          wait_after_removing_servers:10 # default is 0
+          wait_after_adding_servers: 30 # default is 0
+          wait_after_removing_servers: 10 # default is 0
 ```
 ---
 
@@ -629,8 +629,8 @@ Available settings (refer to the [Linode documentation](https://www.linode.com/d
         configuration:
           httpchk: /
           balance: leastconn
-          wait_after_adding_servers:30 # default is 0
-          wait_after_removing_servers:10 # default is 0
+          wait_after_adding_servers: 30 # default is 0
+          wait_after_removing_servers: 10 # default is 0
 ```
 ---
 
@@ -649,8 +649,8 @@ Available settings (refer to the [Rackspace documentation](http://docs.rackspace
       load_balancer:
         configuration:
           balance: LEAST_CONNECTIONS
-          wait_after_adding_servers:30 # default is 0
-          wait_after_removing_servers:10 # default is 0
+          wait_after_adding_servers: 30 # default is 0
+          wait_after_removing_servers: 10 # default is 0
 ```
 ---
 
