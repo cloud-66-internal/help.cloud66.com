@@ -528,6 +528,8 @@ Available settings:
 - **httpchk**: The URL visited to check your server health (applies to newly created load balancers only).
 - **wait_after_adding_servers**: The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
 - **wait_after_removing_servers**: The time (in seconds) we will wait after removing a server from the load balancer before we begin deploying to it. Read our [separate guide](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag) on configuration lag for more details. (Redeployment required to change setting)
+- **alb_ssl_policy**: The SSL policy to associate with your ALB when performing SSL termination. See the official AWS docs for [available ALB SSL policies](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html#describe-ssl-policies).
+- **elb_ssl_policy**: The SSL policy to associate with your ELB when performing SSL termination. See the official AWS docs for [available ELB SSL policies](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-security-policy-table.html).  
 
 ```yml
     production:
@@ -536,6 +538,8 @@ Available settings:
           httpchk: /
           wait_after_adding_servers:30 # default is 0
           wait_after_removing_servers:10 # default is 0
+          elb_ssl_policy: ELBSecurityPolicy-TLS-1-2-2017-01 # default
+          alb_ssl_policy: ELBSecurityPolicy-FS-1-2-2019-08 # default  
 ```
 ---
 
