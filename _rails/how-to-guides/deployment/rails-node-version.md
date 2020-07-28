@@ -18,9 +18,9 @@ We automatically install the latest release of Node version 6.x.x when we set up
 ```yaml
 rails:
   configuration:
-    node_version: "6"       # will install latest v6.x.x
-    node_version: "6.14"    # will install latest v6.14.x
-    node_version: "6.14.4"  # will install specific v6.14.4
+    node_version: "12"       # will install latest v12.x.x
+    node_version: "12.18"    # will install latest v12.18.x
+    node_version: "12.18.3"  # will install specific v12.18.4
 ```
 
 #### Applying changes
