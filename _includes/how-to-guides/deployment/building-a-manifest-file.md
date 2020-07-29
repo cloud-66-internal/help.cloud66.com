@@ -537,9 +537,9 @@ Available settings:
         configuration:
           httpchk: /
           wait_after_adding_servers: 30 # default is 0
-          wait_after_removing_servers: 10 # default is 0
-          elb_ssl_policy: ELBSecurityPolicy-TLS-1-2-2017-01 # default
-          alb_ssl_policy: ELBSecurityPolicy-FS-1-2-2019-08 # default  
+          wait_after_removing_servers: 10 # default is 0         
+          alb_ssl_policy: ELBSecurityPolicy-FS-1-2-2019-08 # default
+          elb_ssl_policy: ELBSecurityPolicy-TLS-1-2-2017-01 # default  
 ```
 ---
 
