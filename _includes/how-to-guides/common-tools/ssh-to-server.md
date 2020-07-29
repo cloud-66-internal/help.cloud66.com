@@ -6,9 +6,8 @@ You can use [Cloud 66 Toolbelt](/{{page.collection}}/quickstarts/using-cloud66-t
 
 ### Full command
 
-```shell
-cx ssh [--gateway-key <<The path to the key of gateway server>>] [-s "your application name"] "your server name"|<<server ip>>|<<server role>>
-```
+<pre class="language-shell line-numbers u-whiteSpaceNoWrap"><code>cx ssh [--gateway-key &lt;&lt;The path to the key of gateway server&gt;&gt;] [-s "your application name"] "your server name"|&lt;&lt;server ip&gt;&gt;|&lt;&lt;server role&gt;&gt;</code></pre>
+
 Many of these parameters are optional or mutually exclusive. For example you don't need to provide both the server name and the IP address.
 
 ### Examples
@@ -67,16 +66,12 @@ This will show at which point the command fails, and if you run this manually, y
 
 You may see this output from the bottom of the previous command:
 
-```shell
-Running Command /usr/bin/ssh with ([&lt;username&gt;@&lt;ip_address&gt; -i /Users/&lt;username&gt;/.ssh/cx_&lt;id&tt;_pkey -o UserKnownHostsFile=/dev/null -o CheckHostIP=no -o StrictHostKeyChecking=no -o LogLevel=QUIET -o IdentitiesOnly=yes -A -p 22])
-2015/04/23 17:41:12 error: exit status 255
-```
+<pre class="language-shell line-numbers u-whiteSpaceNoWrap"><code>Running Command /usr/bin/ssh with ([&lt;username&gt;@&lt;ip_address&gt; -i /Users/&lt;username&gt;/.ssh/cx_&lt;id&gt;_pkey -o UserKnownHostsFile=/dev/null -o CheckHostIP=no -o StrictHostKeyChecking=no -o LogLevel=QUIET -o IdentitiesOnly=yes -A -p 22])
+2020/07/23 17:41:12 error: exit status 255</code></pre>
 
 In this case, there has likely been an issue running the SSH command, though no logs are output from it (given the `LogLevel=QUIET` directive). We'll want to run that command directly (and switch the `LogLevel` to `VERBOSE`):
 
-```bash
-ssh &lt;username&gt;@&lt;ip_address&gt; -i /Users/&lt;username&gt;/.ssh/cx_&lt;id&gt;_pkey -o UserKnownHostsFile=/dev/null -o CheckHostIP=no -o StrictHostKeyChecking=no -o LogLevel=VERBOSE -o IdentitiesOnly=yes -A -p 22
-```
+<pre class="language-shell line-numbers u-whiteSpaceNoWrap"><code>ssh &lt;username&gt;@&lt;ip_address&gt; -i /Users/&lt;username&gt;/.ssh/cx_&lt;id&gt;_pkey -o UserKnownHostsFile=/dev/null -o CheckHostIP=no -o StrictHostKeyChecking=no -o LogLevel=VERBOSE -o IdentitiesOnly=yes -A -p 22</code></pre>
 
 The output from that command should help you understand what the root cause of the issue is.
 
@@ -90,6 +85,8 @@ The SSH utility requires a certain level of permissions to be set in the `/home`
 
 - `/home/your_username` must be set to (at most) `755 (drwxr-xr-x)`
 - `/home/your_username/.ssh` must be set to `0700 (drwx------)`
+
+In addition, make sure your `.ssh/authorized_keys` file is set to `600 (-rw-------)`.
 
 If these permissions are set too "open" (for example `0777`) SSH will refuse to work as it sees this as insecure. Normally these directories are set to the correct permissions by default, but they can be changed by external processes or (unintentionally) by shell commands by team members.
 
