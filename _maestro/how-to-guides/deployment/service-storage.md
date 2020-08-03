@@ -42,9 +42,9 @@ Advanced storage volumes are also defined in YAML format, but in a more verbose 
 services:
  <service_name>:
   volumes:
-  - mount_path: "/tmp"
-    host_path: 
-     path: "/tmp_host"
+    - mount_path: "/tmp"
+      host_path: 
+       path: "/tmp_host"
 ```
 
 Maestro supports all Kubernetes-valid syntax for volume definitions.  For example an [emptyDir volume](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir)  would look something like:
@@ -54,8 +54,8 @@ services:
  <service_name>:
   volumes:
 	 - mount_path: "/cache"
-      empty_dir:
-       medium: Memory
+       empty_dir:
+        medium: Memory
 ```
 
 This would mount an emptyDir volume in the `/cache` folder of your container(s) and that volume would use RAM for storage instead of the disk (because `medium` is set to "memory").
