@@ -64,15 +64,44 @@ This would mount an emptyDir volume in the `/cache` folder of your container(s) 
 
 Maestro supports the following general settings for all volume-types:
 
-- `mount_path:` *string*
-    - Path within the container at which the volume should be mounted. Must not contain `:`
-- `mount_propagation:` *string*
-    - Determines how mounts are propagated from the host to container and the other way around. When not set, `None` is used.
-- `read_only:` *boolean*
-    - Mounted read-only if true, read-write otherwise. Defaults to false.
-- `sub_path:` *string*
-    - The path within the volume from which the container's volume should be mounted. Defaults to `""` (volume's root). Mutually exclusive with `sub_path_expr`.
-- `sub_path_expr:` *string*
-    - Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to `sub_path` but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to `""` (volume's root). Mutually exclusive with `sub_path`.
+<table class='table table-bordered table-striped'>
+	<thead>
+	<tr>
+		<th width="20%">Option</th>
+		<th width="10%">Format</th>
+		<th width="70%">Description</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>mount_path</td>
+		<td>string</td>
+		<td>Path within the container at which the volume should be mounted. Must not contain <code>:</code></td>
+	</tr>
+	<tr>
+		<td>mount_propagation</td>
+		<td>string</td>
+		<td>Determines how mounts are propagated from the host to container and the other way around. When not set, <code>None</code> is used.
+</td>
+	</tr>
+	<tr>
+		<td>read_only</td>
+		<td>boolean</td>
+		<td>Mounted read-only if true, read-write otherwise. Defaults to false.</td>
+	</tr>
+	<tr>
+		<td>sub_path</td>
+		<td>string</td>
+		<td>The path within the volume from which the container's volume should be mounted. Defaults to <code>""</code> (volume's root). Mutually exclusive with <code>sub_path_expr</code>.</td>
+	</tr>
+	<tr>
+		<td>sub_path_expr</td>
+		<td>string</td>
+		<td>Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to <code>sub_path</code> but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to <code>""</code> (volume's root). Mutually exclusive with <code>sub_path</code>.</td>
+	</tr>
+	</tbody>
+</table>
+
+
 
 For more information on any of these settings, please consult the [official Kubernetes docs](https://kubernetes.io/docs/concepts/storage/volumes/) about volumes.
