@@ -53,9 +53,9 @@ Maestro supports all Kubernetes-valid syntax for volume definitions.  For exampl
 services:
  <service_name>:
   volumes:
-	- mount_path: "/cache"
-    empty_dir: {}
-     medium: Memory
+	 - mount_path: "/cache"
+      empty_dir:
+       medium: Memory
 ```
 
 This would mount an emptyDir volume in the `/cache` folder of your container(s) and that volume would use RAM for storage instead of the disk (because `medium` is set to "memory").
