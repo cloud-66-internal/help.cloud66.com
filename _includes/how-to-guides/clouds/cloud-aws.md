@@ -121,6 +121,10 @@ If your AWS account was created before 2014 you can choose to create servers on 
 
 Please be sure to read the documentation for [EC2-Classic](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-classic-platform.html) before deploying to that platform.
 
+## ELB Websocket support
+
+AWS Classic Load Balancers do not support [websockets](/{{page.collection}}/how-to-guides/deployment/websocket-support.html) natively. We recommend switching to one of Amazon's newer load balancers - either Application Load Balancer or Network Load Balancer depending on your specific use-case.
+
 ### External links
 
 - [AWS regions](http://aws.amazon.com/about-aws/globalinfrastructure/)
