@@ -10,8 +10,6 @@ tags: ["operations", "storage"]
 permalink: /:collection/:path:output_ext
 ---
 
-Updating this doc: [https://help.cloud66.com/maestro/how-to-guides/deployment/service-storage.html](https://help.cloud66.com/maestro/how-to-guides/deployment/service-storage.html)
-
 ## Overview
 
 Given the ephemeral nature of containers, it’s important to consider storage solutions to avoid data loss. We suggest mounting volumes from your container to the host.
@@ -44,9 +42,9 @@ Advanced storage volumes are also defined in YAML format, but in a more verbose 
 services:
  <service_name>:
   volumes:
-  - mount_path: "/tmp"
-    host_path: 
-     path: "/tmp_host"
+    - mount_path: "/tmp"
+      host_path: 
+       path: "/tmp_host"
 ```
 
 Maestro supports all Kubernetes-valid syntax for volume definitions.  For example an [emptyDir volume](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir)  would look something like:
@@ -55,9 +53,9 @@ Maestro supports all Kubernetes-valid syntax for volume definitions.  For exampl
 services:
  <service_name>:
   volumes:
-	- mount_path: "/cache"
-    empty_dir: {}
-     medium: Memory
+	 - mount_path: "/cache"
+       empty_dir:
+        medium: Memory
 ```
 
 This would mount an emptyDir volume in the `/cache` folder of your container(s) and that volume would use RAM for storage instead of the disk (because `medium` is set to "memory").
