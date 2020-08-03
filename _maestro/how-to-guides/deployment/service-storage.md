@@ -10,8 +10,6 @@ tags: ["operations", "storage"]
 permalink: /:collection/:path:output_ext
 ---
 
-Updating this doc: [https://help.cloud66.com/maestro/how-to-guides/deployment/service-storage.html](https://help.cloud66.com/maestro/how-to-guides/deployment/service-storage.html)
-
 ## Overview
 
 Given the ephemeral nature of containers, it’s important to consider storage solutions to avoid data loss. We suggest mounting volumes from your container to the host.
