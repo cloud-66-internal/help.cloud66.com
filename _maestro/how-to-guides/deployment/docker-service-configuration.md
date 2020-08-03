@@ -431,8 +431,13 @@ Below is a table of the available configurations for a given service with a brie
      <td> The automatically configured traffic names in your Nginx config that will route traffic to these containers based on request DNS name. Allows microservices on the same port routes by subdomain for instance. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/maestro/how-to-guides/deployment/service-storage.html">volumes</a> </td> 
-     <td> The volumes that are mounted from your host into your container. <span style="background-color: #FFFF00"><strong>Note:</strong> must use absolute paths.</span> </td> 
+     <td> volumes </td> 
+     <td> Volumes mounted from host into container. Syntax: Array of absolute paths, with the format <code>HOST_FOLDER:CONTAINER_FOLDER</code>. Optional 'ro' on the end for read-only. e.g.
+<pre><code class="language-yaml">volumes:
+ - "/tmp/host:/tmp/container"
+ - "/tmp/host:/tmp/container:ro"
+</code></pre>
+</td> 
     </tr> 
     <tr> 
      <td> work_dir </td> 

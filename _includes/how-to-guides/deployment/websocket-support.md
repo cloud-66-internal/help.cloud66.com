@@ -1,6 +1,12 @@
 ## Overview
 
-[WebSocket](http://www.websocket.org/) is a protocol that allows bi-directional web communication between client and server. You can configure your Maestro application to communicate via WebSocket using the method below.
+[WebSocket](http://www.websocket.org/) is a protocol that allows bi-directional web communication between client and server. You can configure your application to communicate via WebSocket using the method below.
+
+#### Note for AWS users
+
+<div class="notice notice-warning"><p>
+AWS Classic Load Balancers do not support websockets natively. We recommend switching to one of Amazon's newer load balancers.</p></div>
+
 
 ## Configuring for WebSocket
 
