@@ -14,25 +14,27 @@ permalink: /:collection/:path:output_ext
 
 In general Maestro services will consume resources and spawn containers as needed, but you may want to explicitly limit a particularly resource-hungry service, or ensure that a service is only assigned (scheduled) to a node with sufficient resources to handle its needs. You can also set a minimum or maximum number of containers a service may use.
 
-Maestro supports three kinds of resource allocations:
+Maestro supports four kinds of resource allocations:
 
 - Limits
 - Requests
 - Number of containers
+- Node allocation
 
 ## Understanding resource management options
 
-When setting resource parameters, it's vital to understand the differences between your options. 
+When setting resource parameters, it's vital to understand the differences between your options.
 
-- **Limits** act like a ceiling on the resource usage for any service. They tell your cluster that the service may only use a *maximum* of the specified resource.
-- **Requests** act like a floor on the resources for a service. They tell your cluster "this service needs X" in order to run. Maestro uses these requests to decide how services should be distributed ("scheduled") on your physical nodes. For example a service which has a request of 4GB of RAM will never be scheduled to a node with only 1GB of RAM.
-- **Number of containers** sets a hard limit on the number of containers your cluster will spawn for a service. This can be a minimum (e.g. "always spawn at least one container") or a maximum ("no more than 10") or a combination.
+- **[Limits](#limiting-cpu-and-ram-usage)** act like a ceiling on the resource usage for any service. They tell your cluster that the service may only use a *maximum* of the specified resource.
+- **[Requests](#requesting-cpu-and-ram)** act like a floor on the resources for a service. They tell your cluster "this service needs X" in order to run. Maestro uses these requests to decide how services should be distributed ("scheduled") on your physical nodes. For example a service which has a request of 4GB of RAM will never be scheduled to a node with only 1GB of RAM.
+- **[Number of containers](#limiting-the-number-of-containers)** sets a hard limit on the number of containers your cluster will spawn for a service. This can be a minimum (e.g. "always spawn at least one container") or a maximum ("no more than 10") or a combination.
+- **[Node allocation](#allocating-services-to-nodes)** limits containers to run only on certain nodes based on the names and/or tags of those nodes.
 
-For more detailed information on Limits and Requests, please read the [in-depth Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) on the subject.
+For more detailed information on Limits and Requests, please read the [in-depth Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) on the subject. For more detailed info on node allocation please read the Kubernetes documentation on [node affinity](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes-using-node-affinity/).
 
 ## Limiting CPU and RAM usage
 
-By default, Docker services will use as much CPU and memory as they require. You may wish to set a hard limit on memory, or the relative CPU shares used by a service. 
+By default, Docker services will use as much CPU and memory as they require. You may wish to set a hard limit on memory, or the relative CPU shares used by a service.
 
 This can be accomplished in Maestro by adding the `constraints/resources` directive to your service's `service.yml`.
 
@@ -45,20 +47,20 @@ If multiple services attempt to use a CPU and the aggregate demand is greater th
 ### RAM limits
 
 <div class="Tabs Tabs--enclosed">
-    <nav>
-      <ul class="TabMini js_tabs">
-        <li class="TabMini-item active">
-          <a href="#V2-First" class="TabMini-link">
-            Maestro V2
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#V1-First" class="TabMini-link">
-            Maestro V1
-          </a>
-        </li>
-      </ul>
-    </nav>
+<nav>
+<ul class="TabMini js_tabs">
+<li class="TabMini-item active">
+<a href="#V2-First" class="TabMini-link">
+Maestro V2
+</a>
+</li>
+<li class="TabMini-item">
+<a href="#V1-First" class="TabMini-link">
+Maestro V1
+</a>
+</li>
+</ul>
+</nav>
 
 <section id="V2-First" class="Tabs-content js_tab_content">
 
@@ -82,12 +84,12 @@ services:
     requests:
      memory: "100m"
      cpu: 500m
-```
 
+```
 
 ## Requesting CPU and RAM
 
-To request resources for a service, you should add the `constraints/resources` directive to your service's `service.yml`.  If the aggregate resource requests of all of the services in an application exceed the capacity of the destination cluster, some services will not be distributed. Please read the [in-depth Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) to understand the implications of this.
+To request resources for a service, you should add the `constraints/resources` directive to your service's `service.yml`. If the aggregate resource requests of all of the services in an application exceed the capacity of the destination cluster, some services will not be distributed. Please read the [in-depth Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) to understand the implications of this.
 
 ### CPU requests
 
@@ -96,20 +98,20 @@ CPU usage is measured in *millicpu*. One full CPU is 1000m, so 100m is equivalen
 ### RAM requests
 
 <div class="Tabs Tabs--enclosed">
-    <nav>
-      <ul class="TabMini js_tabs">
-        <li class="TabMini-item active">
-          <a href="#V2-First" class="TabMini-link">
-            Maestro V2
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#V1-First" class="TabMini-link">
-            Maestro V1
-          </a>
-        </li>
-      </ul>
-    </nav>
+<nav>
+<ul class="TabMini js_tabs">
+<li class="TabMini-item active">
+<a href="#V2-First" class="TabMini-link">
+Maestro V2
+</a>
+</li>
+<li class="TabMini-item">
+<a href="#V1-First" class="TabMini-link">
+Maestro V1
+</a>
+</li>
+</ul>
+</nav>
 
 <section id="V2-First" class="Tabs-content js_tab_content">
 
@@ -123,7 +125,6 @@ CPU usage is measured in *millicpu*. One full CPU is 1000m, so 100m is equivalen
 </section>
 </div>
 
-
 ### Example of requests
 
 ```yaml
@@ -136,11 +137,9 @@ services:
      cpu: 500m
 ```
 
-
-
 ## Combining limits and requests
 
-You can set both requests and limits for a service. By definition **request** values must always be lower than **limit** values. 
+You can set both requests and limits for a service. By definition **request** values must always be lower than **limit** values.
 
 ```yaml
 services:
@@ -168,5 +167,59 @@ services:
             min_count: 2
             max_count: 7
 ```
-This would ensure that the service would always have at least 2 containers, but that it would never have more than 7. 
 
+This would ensure that the service would always have at least 2 containers, but that it would never have more than 7.
+
+## Allocating services to nodes
+
+Node allocation is a mechanism for ensuring that services only spawn on nodes that meet certain criteria. You might want services with high volume of disk I/O to only spawn on the nodes that have access to SSD drives, for example. 
+
+To allocate a service to nodes, you need to specify nodes using **name(s)** and/or **tag(s)**. A very simple example would be:
+
+```yaml
+services:
+  webapp:
+    constraints:                    
+      servers: 
+        names:                      
+        - "alpha"
+        - "zeta"
+```
+
+This will ensure that the **webapp** service will only ever spawn on any nodes (servers) named **alpha** *or* **zeta**. These names are totally arbitrary and can be whatever you like. 
+
+Kubernetes will still handle the scheduling as usual, and other constraints may also affect the outcome. For example if all the nodes named Alpha are over capacity, the service may only spawn on Zeta nodes. 
+
+### Allocating nodes using tags
+
+You can also limit services to only use nodes that match (arbitrary) tags. To use this method, you first need to tag the node(s) in question using the format "key=value" (for example `disk=large`). Once you have tagged nodes according to your needs, you can allocate services to them like this:
+
+```yaml
+services:
+  webapp:
+    constraints:                    
+      servers: 
+        tags:                       
+        - "disk=large"
+```
+
+This will ensure that the **webapp** service will only spawn on nodes that are tagged with `disk=large`. Since the tags are arbitrary and do not reflect the underlying nature of a Node, it's critical to tag your nodes with great care. Setting everything to `disk=large`, for example, will defeat the point.
+
+### Allocating nodes using a combination of names and tags
+
+You can use a combination of names and tags allocate your services to nodes. If you include both these criteria, this is interpreted as a logical *AND*. For example this:
+
+```yaml
+services:
+  webapp:
+    constraints:                    
+      servers: 
+        names:                      
+        - "alpha"
+        - "zeta"      
+        tags:                       
+        - "priority=high"
+        - "priority=medium"
+```
+
+...tells your service that it must spawn on nodes that are named `alpha` *or* `zeta` AND that are tagged `priority=high` *or* `priority=medium`. If, for example, a node is named Alpha but is tagged as low priority, the **webapp** service will not use that node.
