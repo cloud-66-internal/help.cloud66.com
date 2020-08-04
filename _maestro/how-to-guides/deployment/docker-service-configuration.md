@@ -213,8 +213,8 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies the command used to start your container. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/maestro/how-to-guides/scaling/scaling.html">constraints</a> </td> 
-     <td>Limits the <a href="/maestro/how-to-guides/deployment/service-resources.html#limiting-the-number-of-containers">number of containers</a> or the <a href="/maestro/how-to-guides/deployment/service-resources.html">resource usage</a> of a service across the cluster, or <a href="/maestro/how-to-guides/deployment/service-resources.html#allocating-services-to-nodes">allocate services to nodes</a> based on names and/or tags. </td> 
+     <td> <a href="/maestro/how-to-guides/deployment/service-resources.html">constraints</a> </td> 
+     <td>Limits the <a href="/maestro/how-to-guides/deployment/service-resources.html#limiting-the-number-of-containers">number of containers</a> or the <a href="/maestro/how-to-guides/deployment/service-resources.html">resource usage</a> of a service across the cluster, or <a href="/maestro/how-to-guides/deployment/service-resources.html#allocating-services-to-nodes">allocates services to nodes</a> based on names and/or tags. </td> 
     </tr> 
     <tr> 
      <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html">deploy_command</a> </td> 
