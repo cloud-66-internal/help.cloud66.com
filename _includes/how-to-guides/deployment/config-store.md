@@ -63,6 +63,7 @@ To access your account-wide ConfigStore:
 This provides a way to store config information **globally** that can be referenced by all of your applications. This is useful for sharing common variables and variable patterns across all of your applications. 
 
 This approach requires some additional care and planning to prevent unintended consequences, such as applications connecting to incorrect resources or cloud services and creating confusion or dirty data. 
+
 ## ConfigStore metadata
 
 The *Metadata* field in ConfigStore is intended to store useful reminders about the nature of the configuration variable being stored. This can include:
