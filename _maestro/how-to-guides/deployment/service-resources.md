@@ -192,7 +192,7 @@ Kubernetes will still handle the scheduling as usual, and other constraints may 
 
 ### Allocating nodes using tags
 
-You can also limit services to only use nodes that match (arbitrary) tags. To use this method, you first need to tag the node(s) in question using the format "key=value" (for example `disk=large`). Once you have tagged nodes according to your needs, you can allocate services to them like this:
+You can also limit services to only use nodes that match (arbitrary) tags. To use this method, you first need to [tag the node(s)](/maestro/how-to-guides/deployment/tagging-components.html#adding-tags-to-a-server) in question using the format "key=value" (for example `disk=large`). Once you have tagged nodes according to your needs, you can allocate services to them like this:
 
 ```yaml
 services:
