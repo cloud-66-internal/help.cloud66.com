@@ -37,7 +37,7 @@ While this is not particularly common, we have seen several cases over the past 
 
 Maestro uses Kubernetes to host containers on your cluster. If you are unable to connect to your cluster you should step through this checklist:
 
-1. Are your Master server(s) up? You will be able to see this in your Cloud 66 dashboard. If your servers are having issues, please check through the troubleshooting advice above. 
+1. Are your Master server(s) up? You will be able to see this in your [Cloud 66 dashboard](https://app.cloud66.com/dashboard). If your servers are having issues, please check through the troubleshooting advice above. 
 2. If you servers are up, can you connect to your Master(s) via SSH? If not, do you have any custom firewall rules on your Master(s)?
 3. If you can connect to your Master(s) via SSH, can you query Kubernetes? Use `sudo kubectl --kubeconfig=/etc/kubernetes/admin.conf get nodes` to check if the cluster is responsive. 
 4. If your cluster is unresponsive, it may be over-utilized. In this case it can be difficult to scale the cluster because it may be too busy to even accept your commands. In this case we recommend you repair/rebuild you cluster. (see below)
@@ -46,7 +46,7 @@ Maestro uses Kubernetes to host containers on your cluster. If you are unable to
 
 If your cluster has become completely unresponsive and remaining that way for any significant length of time, your best option may be to rebuild it. To do this:
 
-1. Log into your dashboard and click on your Maestro app
+1. Log into your [dashboard](https://app.cloud66.com/dashboard) and click on your Maestro app
 2. Click the *Deploy* button and then the *Deploy Options* tab
 3. Check the *Apply Docker/Kubernetes* Upgrades box and then check *Clean Installation - Will Uninstall First* box.
 4. Click the *Run Now* button to start the process
