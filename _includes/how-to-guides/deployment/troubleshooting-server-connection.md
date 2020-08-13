@@ -1,6 +1,6 @@
 ## Overview
 
-If you're having trouble connecting to one of your servers, or your servers can't reach one another, it's often the result of a common issue that is easily resolved once you know what to look for. We've listed the most common issues and their resolutions below.
+If you're having trouble connecting to one of your servers, or your servers can't reach one another or are unresponsive, it's often the result of a common issue that is easily resolved once you know what to look for. We've listed the most common issues and their resolutions below.
 
 ## Temporary network interruptions
 
@@ -30,3 +30,26 @@ Note that simply increasing the capacity of your servers will not fix this issue
 Any kind of shared hosting - including most cloud VMs - can be disrupted by a particularly resource-hungry tenant. If your virtual server happens to be allocated to the the same physical host as a particularly "noisy" neighbour (i.e. one that consumes disproportionate CPU, network or disk resources), it can disrupt the operation of your own server. This includes making it impossible to reach the server via SSH.
 
 While this is not particularly common, we have seen several cases over the past few years. If you are experiencing an unexplained and/or intermittent inability to connect to one of your servers, consider asking your hosting provider to confirm that the physical host is not experiencing this kind of disruption.
+
+{% if include.product == 'maestro' %}
+
+## Issues with your Kubernetes cluster
+
+Maestro uses Kubernetes to host containers on your cluster. If you are unable to connect to your cluster you should step through this checklist:
+
+1. Are your Master server(s) up? You will be able to see this in your [Cloud 66 dashboard](https://app.cloud66.com/dashboard). If your servers are having issues, please check through the troubleshooting advice above. 
+2. If you servers are up, can you connect to your Master(s) via SSH? If not, do you have any custom firewall rules on your Master(s)?
+3. If you can connect to your Master(s) via SSH, can you query Kubernetes? Use `sudo kubectl --kubeconfig=/etc/kubernetes/admin.conf get nodes` to check if the cluster is responsive. 
+4. If your cluster is unresponsive, it may be over-utilized. In this case it can be difficult to scale the cluster because it may be too busy to even accept your commands. In this case we recommend you repair/rebuild you cluster. (see below)
+
+### Rebuilding your cluster
+
+If your cluster has become completely unresponsive and remaining that way for any significant length of time, your best option may be to rebuild it. To do this:
+
+1. Log into your [dashboard](https://app.cloud66.com/dashboard) and click on your Maestro app
+2. Click the *Deploy* button and then the *Deploy Options* tab
+3. Check the *Apply Docker/Kubernetes* Upgrades box and then check *Clean Installation - Will Uninstall First* box.
+4. Click the *Run Now* button to start the process
+
+As you have no doubt assumed, this will result in downtime for the cluster while it is being rebuilt. To avoid this in future, consider running multiple masters as this makes the failure of a single Master recoverable.
+{% endif %}
