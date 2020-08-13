@@ -48,7 +48,7 @@ If your cluster has become completely unresponsive and remaining that way for an
 
 1. Log into your [dashboard](https://app.cloud66.com/dashboard) and click on your Maestro app
 2. Click the *Deploy* button and then the *Deploy Options* tab
-3. Check the *Apply Docker/Kubernetes* Upgrades box and then check *Clean Installation - Will Uninstall First* box.
+3. Check the *Apply Docker/Kubernetes* Upgrades box and then check *Clean Installation - Repair/Rebuild this Cluster* box.
 4. Click the *Run Now* button to start the process
 
 As you have no doubt assumed, this will result in downtime for the cluster while it is being rebuilt. To avoid this in future, consider running multiple masters as this makes the failure of a single Master recoverable.
