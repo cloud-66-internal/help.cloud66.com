@@ -123,3 +123,47 @@ The following event types are available:
   </tbody>
 
 </table>
+
+
+## Service account notifications
+
+Service accounts let you centralize your Slack notifications under a single account, so that people can leave and join your team(s) without any danger of disrupting or duplicating your notifications. 
+
+Unlike normal account notifications, service account notifications are set at **application** level, rather than at **account** level. You can receive service account notifications via Slack or webhooks, but not via email because service accounts don't have (real) email addresses associated with them. 
+
+For more detail on setting up service accounts please read our [separate guide](/{{page.collection}}/account/service-accounts.html).
+
+### Slack notifications for service accounts
+
+To set up Slack notifications for a service account:
+
+1. Ensure you have set up Slack as a notification channel
+2. Create a service account & assign it permissions for the application
+3. Open the application and click *Settings & Information* in the right-hand panel
+4. Click the *Notifications* tab
+5. Click on the *Switch User* dropdown at the top-right of the **Personal Notifications** panel and select the service account
+6. Click on the Slack icons next to the notifications you wish to enable
+
+### Webhooks for service accounts
+
+To set up webhooks for a service account:
+
+1. Create a service account & assign it permissions for the application
+2. Open the application and click *Settings & Information* in the right-hand panel
+3. Click the *Notifications* tab
+4. Click on the *Switch User* dropdown at the top-right of the **Personal Notifications** panel and select the service account
+5. Click on the Webhook icon next to a notification trigger that you wish to enable
+6. Paste in the URL of the webhook you wish to call when that trigger occurs, and click *Enable Webhook*
+7. Repeat for any other webhooks you would like to set up
+
+### Copying notification settings between apps
+
+Since service account notifications are at application level, it would be time consuming to drill down into each app one at a time to check on the settings. Instead you can use the admin interface to view and copy settings between your applications. To access the admin interface:
+
+1. Click your avatar at the top right of the screen and then *Account Settings*
+2. Click on *Notifications* in the **Account** panel on the left
+3. Click the *Service Account Notifications* tab at the top of the main panel
+4. Type in the **service account** you want to query in the format `user:username` and/or type in the name of the **app** that you wish to query in the format `app:app-name` 
+5. You will now see a list of all of the apps that match your filter(s), along with the current notification settings for each one - you can copy notifications **into** an application by clicking the copy icon at the top-right of each application panel
+6. A drawer will open from the left with dropdown that lets you select the source of the notifications (i.e. one of your other apps) that you want to copy
+7. Check the notification settings are correct and then click the *Copy* button

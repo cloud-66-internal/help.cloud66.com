@@ -32,4 +32,6 @@ There will not be any dropdown if you are part of <strong>only one</strong> (acc
 
 ## Service accounts
 
-Service accounts are special, limited accounts that belong to a team (not to account owners) and that have no login privileges on your main Cloud 66 account. They are useful for centralizing automated actions such as webhooks, API calls and notifications. This allows people to leave and join your team(s) without any danger of breaking integrations or duplicating notifications. For more info please read our full guide to service accounts.
+Service accounts are special, limited accounts that belong to a team (not to account owners) and that have no login privileges on your main Cloud 66 account. They are useful for centralizing automated actions such as webhooks, API calls and notifications. This allows people to leave and join your team(s) without any danger of breaking integrations or duplicating notifications. 
+
+For more info please read our [full guide to service accounts](/{{page.collection}}/account/service-accounts.html).
