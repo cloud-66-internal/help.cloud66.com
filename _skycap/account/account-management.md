@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Manage your account
-categories: accounts
+categories: account
 lead: "How to view & update your account information and settings."
 legacy: false
 tags: ["account"]

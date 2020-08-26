@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Archiving applications
-categories: accounts
+categories: account
 order: 10
 lead: "How to temporarily archive a dormant application with Cloud 66"
 legacy: false
