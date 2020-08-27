@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Cloud 66 account protection
-categories: accounts
+categories: account
 lead: "Understanding Cloud 66's automated account security features"
 legacy: false
 tags: ["security", "account"]

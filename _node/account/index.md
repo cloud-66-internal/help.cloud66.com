@@ -11,7 +11,7 @@ sitemap: false
 
 <div class="Toc Toc--howto">
     <ul>
-    {% assign section = site.node | where:"categories","accounts" | sort: "order" %}
+    {% assign section = site.node | where:"categories","account" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
 

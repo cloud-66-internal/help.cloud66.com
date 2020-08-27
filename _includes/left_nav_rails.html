@@ -101,7 +101,7 @@
 
 
         <ul class="menu-root">
-            {% assign section = include.collection | where:"categories","accounts" | sort: "order" %}
+            {% assign section = include.collection | where:"categories","account" | sort: "order" %}
             <li><h3><a href="/rails/account">Account management</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>

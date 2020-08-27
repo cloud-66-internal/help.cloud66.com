@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Setting up Account Notifications
-categories: accounts
+categories: account
 order: 2
 lead: "Managing notifications from your Cloud 66 account"
 legacy: false
