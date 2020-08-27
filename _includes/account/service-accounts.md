@@ -20,7 +20,7 @@ To create a service account:
 5. Assign the new account the required permissions
 6. Click *Add Organization* User
 
-You'll notice that you don't (and can't) associate an email address with a service account. Instead we will automatically assign each service account a dummy email address. This address is used exclusively as a unique identifier for the account - it isn't attached to a working email system and has no MX records.
+You'll notice that you don't (and can't) associate an email address with a service account. Instead we will automatically assign each service account a dummy email address. This address is used exclusively as a unique identifier for the account - it isn't attached to a working email system.
 
 You also cannot use this dummy address to sign into Cloud 66. Service accounts are designed specifically to act as "headless" automation drones. However, this does not mean you should assign them overly broad privileges on your account. These accounts still have programmatic access to your account and applications and should be treated with the same care as your normal user accounts.
 
@@ -38,9 +38,8 @@ You can now use this token to programmatically access the API via the service ac
 
 You can also adjust the scope of a service account token whenever you need to. Just click on the edit icon next to the token, adjust the scope and click *Save Changes*.
 
-### Careful!
-
-You will only ever be shown a token once. If you lose a token, you will need to delete and recreate a service account to gain access to the API. Please be sure to record the token somewhere safe and reliable.
+#### Careful!
+<div class="notice notice-warning"><p>You will only ever be shown a token once. If you lose a token, you will need to delete and recreate a service account to regain access to the API. This token grants access to any of the resources attached to the service account, so please be sure to keep it somewhere safe and reliable. If it is compromised or lost, please delete and recreate the service account to ensure your account remains secure.</p></div>
 
 ## Configuring notifications and webhooks
 
