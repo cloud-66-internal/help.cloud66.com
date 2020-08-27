@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Browser Requirements
-categories: accounts
+categories: account
 order: 7
 lead: "The minimum browser requirements for Cloud 66's web interfaces"
 legacy: false
