@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Using the Server Jobs Add-in"
 categories: how-to-guides/add-ins
-order: 10
+order: 3
 lead: How to automate shell commands on your server(s) via Cloud 66 for Rails
 tags: ['Add in']
 legacy: false

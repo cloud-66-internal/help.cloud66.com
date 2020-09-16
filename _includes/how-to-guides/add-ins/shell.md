@@ -2,6 +2,10 @@
 
 The Server Jobs add-in allows you to define and schedule regular server tasks (shell commands). Under the hood, these are run as cronjobs.
 
+{% if include.product == 'maestro' %}
+If you need to run a job against a Maestro service (i.e. inside a container), rather than on the underlying server, you should use the [Application Job add-in](/maestro/how-to-guides/add-ins/docker-tasks.html) instead.
+{% endif %}
+
 ## Adding a new server job
 
 To add a new server job: 
@@ -45,8 +49,11 @@ Since job is using positional parameters pass you arguments in order, eg: if you
 
 You can also quote your argument if there is a space in the value.
 
-**Job command:** `cp $1 ${2:-/tmp}`
-
-**Passing arguments via dashboard:** `"log*.txt" tmp/logs`
-
-**Passing arguments via Toolbelt:** `--arg "log*.txt" -- arg tmp/logs`
+#### Example
+<table class='table table-bordered table-striped'>
+<tbody>
+<tr><td width="35%">Job command</td> <td><code>cp $1 ${2:-/tmp}</code></td></tr>
+<tr><td>Passing arguments via dashboard</td><td><code>"log*.txt" tmp/logs</code></td></tr>
+<tr><td>Passing arguments via Toolbelt</td><td><code>--arg "log*.txt" -- arg tmp/logs</code></td></tr>
+</tbody>
+</table>
