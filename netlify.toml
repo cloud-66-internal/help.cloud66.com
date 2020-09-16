@@ -1197,6 +1197,10 @@
 [[redirects]]
   from = "/skycap/how-to-guides/vault.html"
   to = "/skycap/how-to-guides/configuration/vault.html" 
+  
+[[redirects]]
+  from = "*/how-to-guides/add-ins/add-ins-jobs.html"
+  to = "*/how-to-guides/add-ins/shell.html" 
 
 [[redirects]]
   from = "/whenever"
