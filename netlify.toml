@@ -1199,8 +1199,16 @@
   to = "/skycap/how-to-guides/configuration/vault.html" 
   
 [[redirects]]
-  from = "*/how-to-guides/add-ins/add-ins-jobs.html"
-  to = "*/how-to-guides/add-ins/shell.html" 
+  from = "/rails/how-to-guides/add-ins/add-ins-jobs.html"
+  to = "/rails/how-to-guides/add-ins/shell.html" 
+
+[[redirects]]
+  from = "/maestro/how-to-guides/add-ins/add-ins-jobs.html"
+  to = "/maestro/how-to-guides/add-ins/shell.html" 
+
+[[redirects]]
+  from = "/node/how-to-guides/add-ins/add-ins-jobs.html"
+  to = "/node/how-to-guides/add-ins/shell.html" 
 
 [[redirects]]
   from = "/whenever"
