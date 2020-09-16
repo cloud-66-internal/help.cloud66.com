@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title:  "Using the Redis Add-in"
 categories: how-to-guides/add-ins
+order: 3
 lead: Add Redis to your application with ease
 tags: ['Add in']
 legacy: false
