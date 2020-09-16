@@ -284,7 +284,7 @@ production:
 
 #### CORS configuration
 
-If required, you can also specify the allowed origin (as '\*' or a single origin) and methods. For applications created since 21st September 2016, you can also specify a comma-seperated list of origins, headers, and whether to allow credentials for CORS.
+If required, you can also specify the allowed origin (as '\*' or a single origin) and methods. For applications created after September 2016, or if you have updated your application to use the latest NGINX configuration, you can also specify a comma-separated list of origins, headers, and whether to allow credentials for CORS.
 
 ```yml
 production:

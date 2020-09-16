@@ -12,17 +12,13 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-This guide assumes you already know the basics of adding and editing environment variables (env vars) in Maestro. If you need help with this, please follow [our tutorial](notion://www.notion.so/maestro/tutorials/env-vars.html) on the subject.
+This guide assumes you already know the basics of adding and editing environment variables (env vars) in Maestro. If you need help with this, please follow [our tutorial](/maestro/tutorials/env-vars.html) on the subject.
 
 ## Default environment variables
 
 Cloud 66 creates a number of default environment variables, which can be used in addition to those that you define. Depending on your application configuration, the environment variables available will differ.
 
-For example, if you have a [MySQL server](notion://www.notion.so/maestro/tutorials/adding-database.html), the following variables are created and inserted into your *database.yml* (unless you have specified your own):
-
-- **MYSQL_ADDRESS** — The physical address of your server
-- **MYSQL_USERNAME** — Randomly generated string
-- **MYSQL_PASSWORD** — Randomly generated string
+For a full list of environment variables available in your application, visit the *Environment Variables* link in the right sidebar of your Application Overview. If you don’t currently have an application, the environment variables available to you are shown after your code analysis.
 
 ### Pre-defined environment variables
 

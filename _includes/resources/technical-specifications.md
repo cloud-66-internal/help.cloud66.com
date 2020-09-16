@@ -78,7 +78,7 @@ You are free to specify a version for a number of components in your [manifest f
 
 
 #### Warning
-<div class="notice notice-danger"><p>We cannot take responsibility for issues arising from non-recognized or incompatible versions.</p></div>
+<div class="notice notice-danger"><p>If you're using different (non-default) versions of components, we strongly recommend testing your application thoroughly in a non-production environment before deploying.</p></div>
 
 ### Suggest version changes
 
