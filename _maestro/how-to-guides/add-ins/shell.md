@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Using the shell command Add-in"
+title:  "Using the Server Jobs Add-in"
 categories: how-to-guides/add-ins
 lead: How to automate shell commands on your server(s) via Maestro
 tags: ['Add in']

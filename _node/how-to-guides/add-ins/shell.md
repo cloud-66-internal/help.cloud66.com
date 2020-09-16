@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title:  "Using the Shell Command Add-in"
+title:  "Using the Server Jobs Add-in"
 categories: how-to-guides/add-ins
-lead: Execute a shell command on your server(s)
+lead: How to automate shell commands on your server(s) via Cloud 66 for Node
 tags: ['Add in']
 legacy: false
 permalink: /:collection/:path:output_ext
