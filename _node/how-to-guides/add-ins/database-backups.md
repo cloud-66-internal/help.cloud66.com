@@ -3,6 +3,7 @@ layout: post
 template: one-col
 title:  "Using the database backup add-in"
 categories: how-to-guides/add-ins
+order: 2
 lead: Managed and unmanaged database backups
 tags: ['database']
 legacy: false

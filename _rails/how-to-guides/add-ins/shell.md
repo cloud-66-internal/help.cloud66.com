@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title:  "Using the Shell Command add-in"
+title:  "Using the Server Jobs Add-in"
 categories: how-to-guides/add-ins
-order: 10
-lead: Execute a shell command on your server(s)
+order: 3
+lead: How to automate shell commands on your server(s) via Cloud 66 for Rails
 tags: ['Add in']
 legacy: false
 permalink: /:collection/:path:output_ext

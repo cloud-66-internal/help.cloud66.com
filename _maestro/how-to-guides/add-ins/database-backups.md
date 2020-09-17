@@ -1,8 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Using the database backup add-in
+title: Using the database backup Add-In
 categories: how-to-guides/add-ins
+order: 2
 lead: "Schedule and automate your database backups with this add-in"
 legacy: false
 tags: ["databases"]

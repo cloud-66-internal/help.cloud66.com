@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Using the SSL certificate add-in"
 categories: how-to-guides/add-ins
-order: 10
+order: 3
 lead: Add SSL certificate(s) to your application
 legacy: false
 tags: ['Add in', 'Security']
