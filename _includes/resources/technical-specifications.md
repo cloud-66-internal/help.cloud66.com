@@ -56,7 +56,7 @@ You are free to specify a version for a number of components in your [manifest f
 <tr><td>ElasticSearch</td><td>7.1.0</td></tr>
 <tr><td>GlusterFS</td><td>3.12.6</td></tr>
 <tr><td>Gotty</td><td>1.0.0</td></tr>
-<tr><td>Kubernetes</td><td>1.18.3</td></tr>
+<tr><td>Kubernetes</td><td>1.18.8</td></tr>
 <tr><td>MongoDB</td><td>2.6.11</td></tr>
 <tr><td>MySQL</td><td>8.0</td></tr>
 <tr><td>Phusion Passenger</td><td>6.0.5</td></tr>

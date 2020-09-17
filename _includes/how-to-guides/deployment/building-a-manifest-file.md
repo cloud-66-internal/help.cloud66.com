@@ -109,6 +109,7 @@ production:
 ### ElasticSearch
 
 - **version**: Specify the version of ElasticSearch you want to install.
+- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **iam_instance_profile_name** (*optional, AWS only, [Beta users only](/{{page.collection}}//resources/cloud-66-beta-program.html)*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
@@ -225,6 +226,7 @@ production:
 ### MongoDB
 
 - **version**: Specify the version of MongoDB you want to install (can only be set during application build).
+- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
@@ -245,6 +247,7 @@ production:
 ### MySQL
 
 - **version**: Specify the version of MySQL you want to install. Valid values are 5.7 or 8.0 (can only be set during application build).
+- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **engine**: Specify the MySQL engine you want to install. Valid values are 'mysql' and 'percona' (can only be set during application build).
@@ -330,6 +333,7 @@ If you need a newer version of Node, you can install one using the same method a
 ### PostgreSQL
 
 - **version**: Specify the version of PostgreSQL you want to install (can only be set during application build).
+- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **postgis**: Specify whether to include PostGIS (can be added after initial application build).
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
@@ -492,6 +496,7 @@ All of these are optional. For more details on health checks please read our [ho
 ### Redis
 
 - **version**: Specify the version of Redis you want to install (defaults to 5.0).
+- **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **iam_instance_profile_name** (*optional, AWS only, [Beta users only](/{{page.collection}}//resources/cloud-66-beta-program.html)*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
