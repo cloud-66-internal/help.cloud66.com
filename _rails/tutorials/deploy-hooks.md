@@ -22,9 +22,9 @@ To make use of deploy hooks, your application should have a file called *deploy_
 
 For **Rails/Rack** applications this file should be present within a folder named _.cloud66_, which is in turn located in the root of your source code.
 
-</pre>bash
+```bash
 /.cloud66/deploy_hooks.yml
-</pre>
+```
 
 This file should be YAML formatted, and you can use a service like [YAMLlint](http://yamllint.com/) to validate it.
 
