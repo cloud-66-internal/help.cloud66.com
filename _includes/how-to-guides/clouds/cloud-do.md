@@ -19,6 +19,12 @@ After clicking the *Authorize* button, you will be redirected to DigitalOcean to
 
 If you need to upgrade your existing key from API v1 to v2, visit your _Account_ [Cloud keys](https://app.cloud66.com/clouds) page and edit your existing cloud key to authorize it with DigitalOcean. You need to be the account owner in order to update these credentials.
 
+## Cloud 66 tag propagation
+
+DigitalOcean supports the propagation of (some) component tags from Cloud 66. This means that if you tag your servers in Cloud 66, those tags will be added to the corresponding servers on your DigitalOcean account (after some transformations).  
+
+For more details on how this works please read our full guide on the [propagation of tags to cloud providers](/{{page.collection}}/how-to-guides/deployment/tagging-components.html#propagation-of-tags-to-cloud-providers).
+
 #### Note
 <div class="notice notice-warning"><p>
 If you delete your application from Cloud 66, your droplets will not be deleted on your cloud provider unless the <a href="/{{page.collection}}/how-to-guides/deployment/server-deletion.html">physical server deletion</a> setting is turned on.
