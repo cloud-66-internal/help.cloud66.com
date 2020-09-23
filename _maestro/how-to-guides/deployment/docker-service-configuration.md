@@ -201,6 +201,10 @@ Below is a table of the available configurations for a given service with a brie
      <td> <strong>Description</strong> </td> 
     </tr> 
     <tr> 
+     <td> <a href="/maestro/how-to-guides/deployment/service-tags-annotations.html#service-annotations">annotations</a> </td> 
+     <td>Annotations for your services in key/value format - these will also become annotations on your Kubernetes resources </td> 
+    </tr>  
+    <tr> 
      <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html">build_command</a> </td> 
      <td> Specifies the command you would like to run during application build. </td> 
     </tr> 
@@ -300,6 +304,11 @@ Below is a table of the available configurations for a given service with a brie
      <td> <a href="/{{page.collection}}/how-to-guides/deployment/service-network-configuration.html#traffic_matches">traffic_matches</a> </td> 
      <td> The automatically configured traffic names in your Nginx config that will route traffic to these containers based on request DNS name. Allows microservices on the same port routes by subdomain for instance. </td> 
     </tr>
+    <tr> 
+     <td> <a href="/maestro/how-to-guides/deployment/service-tags-annotations.html">tags</a> </td> 
+     <td>Arbitrary text tags for your services - these will also become labels on your Kubernetes resources </td> 
+    </tr>    
+
     <tr> 
      <td>type</td> 
      <td> Specifies the type of service being defined. Accepted values: <code>service</code>, <code>deployment</code>, <code>daemon_set</code> </td> 

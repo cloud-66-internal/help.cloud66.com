@@ -125,6 +125,12 @@ Please be sure to read the documentation for [EC2-Classic](https://docs.aws.amaz
 
 AWS Classic Load Balancers do not support [websockets](/{{page.collection}}/how-to-guides/deployment/websocket-support.html) natively. We recommend switching to one of Amazon's newer load balancers - either Application Load Balancer or Network Load Balancer depending on your specific use-case.
 
+## Cloud 66 tag propagation
+
+AWS supports the propagation of (some) component tags from Cloud 66. This means that if you tag your servers or load balancers in Cloud 66, those tags will be added to the corresponding components on your AWS account (after some transformations).  
+
+For more details on how this works please read our full guide on the [propagation of tags to cloud providers](/{{page.collection}}/how-to-guides/deployment/tagging-components.html#propagation-of-tags-to-cloud-providers).
+
 ### External links
 
 - [AWS regions](http://aws.amazon.com/about-aws/globalinfrastructure/)

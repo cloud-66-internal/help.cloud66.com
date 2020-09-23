@@ -26,6 +26,13 @@ You will be able to choose between API keys (and therefore between your Hetzner 
 
 Hetzner doesn't natively support Ubuntu 14.04, so only versions 16.04 and 18.04 are deployable through Cloud 66.
 
+## Cloud 66 tag propagation
+
+Hetzner supports the propagation of (some) component tags from Cloud 66. This means that if you tag your servers in Cloud 66, those tags will be added to the corresponding servers on your Hetzner account (after some transformations).  
+
+For more details on how this works please read our full guide on the [propagation of tags to cloud providers](/{{page.collection}}/how-to-guides/deployment/tagging-components.html#propagation-of-tags-to-cloud-providers).
+
+
 <!--
 #### Note
 <div class="notice notice-warning"><p>
