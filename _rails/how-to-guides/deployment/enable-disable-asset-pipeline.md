@@ -19,6 +19,10 @@ Cloud 66 gives you complete control over your asset pipeline:
 - We will automatically run APC on each of your deploys. You can choose to disable this.
 - You can nominate one of your servers to handle the APC workload, leaving your other servers free to run your application as usual.
 
+#### Note
+
+<div class="notice notice-warning"><p>If your app uses webpack, ensure you define your NODE_ENV <a href="/{{page.collection}}/tutorials/env-vars.html">environment variable</a>. If it is not set it can interfere with the compilation process (both standard and dedicated).</p></div>
+
 ## Enable or disable APC
 
 You can manually enable/disable APC either:  

@@ -9,6 +9,6 @@ tags: ['Add in']
 legacy: false
 permalink: /:collection/:path:output_ext
 ---
+{% assign product = 'rails' %}
 
-
-{% include how-to-guides/add-ins/shell.md %}
+{% include how-to-guides/add-ins/shell.md product = product %}

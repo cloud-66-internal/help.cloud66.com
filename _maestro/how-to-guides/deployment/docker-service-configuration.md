@@ -104,7 +104,7 @@ Check out the [Habitus website](http://www.habitus.io/) for more information abo
 
 ## Adding a DaemonSet
 
-A DaemonSet ensures that a (single) copy of a specific Pod is added to every Node. This is useful for running background processes (aka daemons) but has many other uses. For more detail pleased read our [explanatory doc](notion://www.notion.so/maestro/the-basics/concepts-and-terminology.html#daemonsets) on the subject.
+A DaemonSet ensures that a (single) copy of a specific Pod is added to every Node. This is useful for running background processes (aka daemons) but has many other uses. For more detail pleased read our [explanatory doc](/maestro/the-basics/concepts-and-terminology.html#daemonsets) on the subject.
 
 To create a DaemonSet we simply set the `type` of any service to `daemon_set`. For example:
 
@@ -140,7 +140,7 @@ services:
 
 ## Environment variables
 
-Any [environment variable](notion://www.notion.so/maestro/how-to-guides/deployment/env-vars-advanced.html) defined in your application will be made available within your service container.
+Any [environment variable](/maestro/how-to-guides/deployment/env-vars-advanced.html) defined in your application will be made available within your service container.
 
 The syntax for calling environment variables in a service definition is:
 
@@ -151,7 +151,7 @@ services:
   VAR1: _env(VALUE_OF_VARIABLE)
 ```
 
-You can also reference environment variable in other applications or services. For more info please read our [detailed guide](notion://www.notion.so/maestro/how-to-guides/deployment/env-vars-advanced.html#syntax-examples) to the sharing env vars between apps and services.
+You can also reference environment variable in other applications or services. For more info please read our [detailed guide](/maestro/how-to-guides/deployment/env-vars-advanced.html#syntax-examples) to the sharing env vars between apps and services.
 
 ## Setting a Service Account name
 
