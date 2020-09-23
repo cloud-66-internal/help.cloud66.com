@@ -57,3 +57,20 @@ You can also quote your argument if there is a space in the value.
 <tr><td>Passing arguments via Toolbelt</td><td><code>--arg "log*.txt" -- arg tmp/logs</code></td></tr>
 </tbody>
 </table>
+
+
+{% if include.product == 'rails' %}
+
+## Support for whenever gem
+
+We also support the [whenever gem](https://github.com/javan/whenever) for managing CRON jobs. However, we recommend using our native Jobs Add-in (see above) instead. The Add-in has many benefits:
+
+1. It allows you to choose which server these tasks run on 
+2. It gives visibility in the UI when tasks are running, and displays their outputs
+3. You can set tasks to run on-demand
+4. It alerts you if tasks fail
+
+If you'd prefer to use the gem, simply add `whenever` to your Gemfile and redploy your code. We will automatically use the config/schedule.rb in your source code to build the CRON jobs on the relevant servers. You should see the message "Handling whenever schedule" on your server detail page log.
+
+
+{% endif %}

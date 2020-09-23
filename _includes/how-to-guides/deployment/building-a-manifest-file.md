@@ -38,6 +38,10 @@ The first level of your manifest file is the **environment** - this allows you t
 
 You can also use your own custom environment names in your manifest file.
 
+### Applying settings across all environments
+
+If you would like you a manifest setting to apply to **all environments**, you can simple drop the root level environment node from your YAML. This will ensure a component is always provisioned, regardless of environment.
+
 
 ## Which component?
 
