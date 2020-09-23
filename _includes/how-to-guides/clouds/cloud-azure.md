@@ -45,6 +45,12 @@ Access Management portal of your Azure account and go to the Settings menu. You 
 
 Now visit your Cloud 66 dashboard and [build your first application](/{{page.collection}}/quickstarts/). When adding your Azure credentials, you will be asked to input your *subscription ID* and upload the azure.pem file you created earlier.
 
+## Cloud 66 tag propagation
+
+Azure Cloud (not legacy) supports the propagation of (some) component tags from Cloud 66. This means that if you tag your servers or load balancers in Cloud 66, those tags will be added to the corresponding components on your Azure Cloud account (after some transformations).  
+
+For more details on how this works please read our full guide on the [propagation of tags to cloud providers](/{{page.collection}}/how-to-guides/deployment/tagging-components.html#propagation-of-tags-to-cloud-providers).
+
 #### Note
 <div class="notice notice-warning"><p>
 If you delete your application from Cloud 66, your servers will not be deleted on your cloud provider unless the <a href="/{{page.collection}}/how-to-guides/deployment/server-deletion.html">physical server deletion</a> setting is turned on.
