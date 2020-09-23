@@ -233,10 +233,6 @@ Below is a table of the available configurations for a given service with a brie
      <td> Specifies the location of the Dockerfile to be used for building this service, eg. <em>docker/Dockerfile</em>. </td> 
     </tr> 
     <tr> 
-     <td> tags </td> 
-     <td> Arbitrary tags for services </td> 
-    </tr> 
-    <tr> 
      <td> <a href="/maestro/how-to-guides/deployment/building-your-service.html">git_url</a> </td> 
      <td> The URL for the Git repository from which your Docker image will be built. </td> 
     </tr> 
