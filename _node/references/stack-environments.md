@@ -10,7 +10,7 @@ permalink: /:collection/:path:output_ext
 ---
 
 
-### Stack environments
+### Application environments
 
 To reflect the different stages of your software, you can deploy your applications in different environments:
 

@@ -64,6 +64,5 @@ You can test this by accessing your server via SSH using [Cloud 66 Toolbelt](/ma
 
 * Learn more about [managing environment variables](/maestro/how-to-guides/deployment/env-vars-advanced.html) via Maestro, including how to reference variables in other applications.
 * Learn how to [customise the configuration](/maestro/tutorials/custom-config.html) of your application's components.
-* Learn more about [application environments](/maestro/how-to-guides/deployment/application-environments.html)
 
 

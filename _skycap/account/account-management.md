@@ -9,5 +9,7 @@ tags: ["account"]
 permalink: /:collection/:path:output_ext
 ---
 
+{% assign product = 'skycap' %}
 
-{%include account/account-management.md %}
+
+{%include account/account-management.md product = product %}
