@@ -276,7 +276,7 @@ production:
 ### Nginx
 
 - **cors**: Enable [Cross Origin Resource Sharing](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) - this will be taken into account when your Nginx configuration is reloaded.
-- **extra-build-arguments**: (applies to Rack/Passenger applications only). Extra build argument string to be added the nginx build command. Note: if you require additional modules that themselves require specific source to be present, you should use a `BEFORE_NGINX` [deploy hook](/{{page.collection}}/references/deploy-hooks-syntax.html#hook-points) to ensure that source is present. You can use the `cloud66/download` snippet to achieve this easily. The following build arguments are currently always added: `--with-http_realip_module --with-ipv6 --with-http_v2_module` regardless of this value.
+- **extra_build_arguments**: (applies to Rack/Passenger applications only). Extra build argument string to be added the nginx build command. Note: if you require additional modules that themselves require specific source to be present, you should use a `BEFORE_NGINX` [deploy hook](/{{page.collection}}/references/deploy-hooks-syntax.html#hook-points) to ensure that source is present. You can use the `cloud66/download` snippet to achieve this easily. The following build arguments are currently always added: `--with-http_realip_module --with-ipv6 --with-http_v2_module` regardless of this value.
 - **perfect_forward_secrecy** (_deprecated_): Enable [Perfect Forward Secrecy](http://en.wikipedia.org/wiki/Perfect_forward_secrecy) - this will be taken into account when your Nginx configuration is reloaded.
 
 ```yml
@@ -285,7 +285,7 @@ production:
     configuration:
       nginx:
         cors: true
-        extra-build-arguments: "--add-module=/path/to/module"
+        extra_build_arguments: "--add-module=/path/to/module"
         perfect_forward_secrecy: true # deprecated
 ```
 
