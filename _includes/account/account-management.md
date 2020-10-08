@@ -42,9 +42,9 @@ You will need to delete or remove **all** (non-owner) users from your account be
 
 ### If your account has applications...
 
-You will need to delete all your applications from your account before you can close it. To do this follow the instructions in our [App deletion guide](/{{page.collection}}/the-basics/adding-updating-deleting.html#deleting-an-application).
+You will need to delete all your applications from your account before you can close it. {% if include.product != 'skycap' %}To do this follow the instructions in our [App deletion guide](/{{page.collection}}/the-basics/adding-updating-deleting.html#deleting-an-application).{% endif %}
 
 ### If your account has an outstanding balance...
 
-We will calculate your final bill and display it to you. You can click the *Pay Now* button to trigger a credit card payment and clear this balance. Please bear in mind that this balance may include pro-rata charges for partial periods of usage (particularly if you have just deleted applications).
+We will calculate your final bill and display it to you. You can click the *Pay Final Bill* button to trigger a credit card payment and clear this balance. Please bear in mind that this balance may include pro-rata charges for partial periods of usage (particularly if you have just deleted applications).
 
