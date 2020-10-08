@@ -1211,6 +1211,10 @@
   to = "/node/how-to-guides/add-ins/shell.html" 
 
 [[redirects]]
+  from = "/maestro/how-to-guides/deployment/application-environments.html"
+  to = "/maestro/how-to-guides/deployment/" 
+
+[[redirects]]
   from = "/whenever"
   to = "/rails/how-to-guides/add-ins/add-ins-jobs.html#support-for-whenever-gem"
 

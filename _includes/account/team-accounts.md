@@ -37,6 +37,22 @@ You also have the option of allowing team members to create a new application. T
 
 An email will be sent to the email address specified, giving this user the option to sign up for Cloud 66 with their specified email address. If the invited email already has a Cloud 66 account, they will be notified of the pending invitation. By accepting the invitation, they will join your team.
 
+## Deleting user accounts & teams
+
+If you are the **owner** of an account you can remove (delete) secondary accounts from your (primary) organization and also delete any teams under that organization. 
+
+To delete users:
+
+1. Open your **[Dashboard](https://app.cloud66.com/dashboard)**
+2. Click on your account avatar (top-right) and select *Account Settings*
+3. Click *Teams* in the left-hand panel
+4. Click the red *remove* icon next to the users you want to remove (and confirm each one)
+
+To delete teams:
+
+1. Follow steps 1 - 3 above
+2. Click the red *remove* icon next to the names of the teams you wish to delete
+
 ## Switch organizations
 
 If you are part of several organizations, you will have to switch organization to see applications that belong to a different organization. 
