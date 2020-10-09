@@ -167,4 +167,4 @@ If youre deployment has worked as planned, you will see the following text:
 
 * Containers can also serve non-HTTP traffic. TCP and UDP protocols are also supported. Learn more about Container Port Mapping in our [detailed tutorial](/maestro/tutorials/container-ports.html)
 
-* Your deployment configuration is stored in a *manifest.yml* file. Learn how to [edit your manifest file](/maestro/how-to-guides/deployment/building-a-manifest-file.html) to access advanced deployment features.
+* Your deployment configuration is stored in a *manifest.yml* file. Learn how to [edit your manifest file](/maestro/how-to-guides/build-and-config/building-a-manifest-file.html) to access advanced deployment features.

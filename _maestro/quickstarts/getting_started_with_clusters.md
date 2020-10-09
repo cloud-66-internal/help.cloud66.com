@@ -84,4 +84,4 @@ If you now create a new Maestro application (see [Getting Started with Maestro f
 * Learn how to add a [load balancer](/maestro/tutorials/load-balancing.html) to your application.
 * Learn about using [failover groups](/maestro/tutorials/failover-groups.html) to make your application highly available
 * Learn how to [deploy your service(s) in parallel](/maestro/how-to-guides/deployment/parallel-deployment.html) to speed up the deployment process.
-* Your deployment configuration is stored in a *manifest.yml* file. Learn how to [edit your manifest file](/maestro/how-to-guides/deployment/building-a-manifest-file.html) to access advanced deployment features.
+* Your deployment configuration is stored in a *manifest.yml* file. Learn how to [edit your manifest file](/maestro/how-to-guides/build-and-config/building-a-manifest-file.html) to access advanced deployment features.

@@ -1214,6 +1214,98 @@
   from = "/maestro/how-to-guides/deployment/application-environments.html"
   to = "/maestro/how-to-guides/deployment/" 
 
+ [[redirects]]			
+  from = "/maestro/how-to-guides/deployment/building-a-manifest-file.html"	
+  to = "/maestro/how-to-guides/build-and-config/building-a-manifest-file.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/building-your-service.html"	
+  to = "/maestro/how-to-guides/build-and-config/building-your-service.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/config-store.html"	
+  to = "/maestro/how-to-guides/build-and-config/config-store.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/configuring-for-high-availability.html"	
+  to = "/maestro/how-to-guides/build-and-config/configuring-for-high-availability.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/docker-service-configuration.html"	
+  to = "/maestro/how-to-guides/build-and-config/docker-service-configuration.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/env-vars-advanced.html"	
+  to = "/maestro/how-to-guides/build-and-config/env-vars-advanced.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/env-vars-in-dockerfile.html"	
+  to = "/maestro/how-to-guides/build-and-config/env-vars-in-dockerfile.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/habitus-secrets.html"	
+  to = "/maestro/how-to-guides/build-and-config/habitus-secrets.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/haproxy.html"	
+  to = "/maestro/how-to-guides/build-and-config/haproxy.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/image-repository.html"	
+  to = "/maestro/how-to-guides/build-and-config/image-repository.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/logging.html"	
+  to = "/maestro/how-to-guides/build-and-config/logging.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/managing-custom-packages.html"	
+  to = "/maestro/how-to-guides/build-and-config/managing-custom-packages.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/multi-tenancy.html"	
+  to = "/maestro/how-to-guides/build-and-config/multi-tenancy.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/service-lifecycle-management.html"	
+  to = "/maestro/how-to-guides/build-and-config/service-lifecycle-management.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/service-network-configuration.html"	
+  to = "/maestro/how-to-guides/build-and-config/service-network-configuration.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/service-networking.html"	
+  to = "/maestro/how-to-guides/build-and-config/service-networking.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/service-resources.html"	
+  to = "/maestro/how-to-guides/build-and-config/service-resources.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/service-storage.html"	
+  to = "/maestro/how-to-guides/build-and-config/service-storage.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/setting-up-custom-livelogs.html"	
+  to = "/maestro/how-to-guides/build-and-config/setting-up-custom-livelogs.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/stack-failover.html"	
+  to = "/maestro/how-to-guides/build-and-config/stack-failover.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/symlink-folders.html"	
+  to = "/maestro/how-to-guides/build-and-config/symlink-folders.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/using-c66-via-firewall.html"	
+  to = "/maestro/how-to-guides/build-and-config/using-c66-via-firewall.html"	
+
+ [[redirects]]
+  from = "/maestro/how-to-guides/deployment/websocket-support.html"	
+  to = "/maestro/how-to-guides/build-and-config/websocket-support.html"	  
+
 [[redirects]]
   from = "/whenever"
   to = "/rails/how-to-guides/add-ins/add-ins-jobs.html#support-for-whenever-gem"

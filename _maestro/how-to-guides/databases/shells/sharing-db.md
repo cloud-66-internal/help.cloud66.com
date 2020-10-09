@@ -16,7 +16,7 @@ It is possible for two Maestro applications to share a single database server. H
 
 ## Configuring for a shared database
 
-Firstly, you need to [open your firewall](/maestro/how-to-guides/deployment/service-network-configuration.html) on the first application to allow your second applications web servers to access the database.
+Firstly, you need to [open your firewall](/maestro/how-to-guides/build-and-config/service-network-configuration.html) on the first application to allow your second applications web servers to access the database.
 
 You will then reference the database credentials from your first application in the configuration file of your second application. 
 

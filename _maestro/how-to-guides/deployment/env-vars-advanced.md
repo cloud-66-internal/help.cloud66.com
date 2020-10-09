@@ -235,7 +235,7 @@ EXPOSE 3000
 CMD ["/myapp/main.rb"]
 ```
 
-For more examples, please read our [full how-to guide on using env vars in Dockerfiles](/maestro/how-to-guides/deployment/env-vars-in-dockerfile.html).
+For more examples, please read our [full how-to guide on using env vars in Dockerfiles](/maestro/how-to-guides/build-and-config/env-vars-in-dockerfile.html).
 
 ## Calling environment variables in code
 

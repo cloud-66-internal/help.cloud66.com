@@ -136,7 +136,7 @@ As their name suggests, DaemonSets are useful for running background processes l
 
 If you need more technical detail you can read the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) on DaemonSets, but this is not necessary to use Maestro. 
 
-If you'd like to start adding DaemonSets to your application, you can go straight to our [how-to guide](/maestro/how-to-guides/deployment/docker-service-configuration.html#adding-a-daemonset).
+If you'd like to start adding DaemonSets to your application, you can go straight to our [how-to guide](/maestro/how-to-guides/build-and-config/docker-service-configuration.html#adding-a-daemonset).
 
 ## Nodes, masters & workers
 
@@ -153,7 +153,7 @@ It’s quite common for nodes to be shared between Masters and Workers. This is 
 
 In a purist Kubernetes setup, Master nodes are kept separate from Worker nodes, but it’s often more efficient to allow your Master node to run workloads. This is particularly useful in development environments because it reduces the number of servers required by the cluster.
 
-The first time Cloud 66 provisions a new Kubernetes cluster, we default to the **shared master** architecture. This can be changed via the [Dashboard](/maestro/how-to-guides/scaling/scaling.html#kubernetes-cluster-servers) or [manifest.yml](/maestro/how-to-guides/deployment/building-a-manifest-file.html).
+The first time Cloud 66 provisions a new Kubernetes cluster, we default to the **shared master** architecture. This can be changed via the [Dashboard](/maestro/how-to-guides/scaling/scaling.html#kubernetes-cluster-servers) or [manifest.yml](/maestro/how-to-guides/build-and-config/building-a-manifest-file.html).
 
 ## High availability & multiple masters
 

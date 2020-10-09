@@ -98,8 +98,8 @@ Cloud 66 builds Docker containers in two ways:
 Maestro includes the following:
 
 - [Container life-cycle management](/maestro/quickstarts/getting_started.html)
-- [Networking layer and DNS](/maestro/how-to-guides/deployment/service-network-configuration.html)
-- [Storage layer](/maestro/how-to-guides/deployment/service-storage.html)
+- [Networking layer and DNS](/maestro/how-to-guides/build-and-config/service-network-configuration.html)
+- [Storage layer](/maestro/how-to-guides/build-and-config/service-storage.html)
 - [Scaling](/maestro/how-to-guides/scaling/)
 - [Fast deployments](/maestro/how-to-guides/deployment/parallel-deployment.html#fast-deployments)
 
@@ -111,6 +111,6 @@ Maestro applications also enjoy the same benefits as other Cloud 66 applications
 - Firewall management and brute force protection for web and SSH
 - [Team and organisation management](/maestro/account/team-accounts.html)
 - Fast-response 100% SLA DNS layer [failover groups](/maestro/tutorials/failover-groups.html) for quick traffic switch overs
-- [Server monitoring tools](/maestro/how-to-guides/deployment/setting-up-custom-livelogs.html)
+- [Server monitoring tools](/maestro/how-to-guides/build-and-config/setting-up-custom-livelogs.html)
 - [Intuitive UI](https://app.cloud66.com/dashboard)
 - [API](http://developers.cloud66.com) and [command line Toolbelt](/maestro/quickstarts/using-cloud66-toolbelt.html)

@@ -93,5 +93,5 @@ This is done by committing the changes to the CustomConfig git repository by Clo
 
 ## What's next?
 
-* Learn how to use CustomConfig to configure [Nginx](/maestro/references/nginx.html), [HAProxy](/maestro/how-to-guides/deployment/haproxy.html) and [databases](/maestro/how-to-guides/databases/database-customization.html).
+* Learn how to use CustomConfig to configure [Nginx](/maestro/references/nginx.html), [HAProxy](/maestro/how-to-guides/build-and-config/haproxy.html) and [databases](/maestro/how-to-guides/databases/database-customization.html).
 * Learn how to [patch your CustomConfig files](/maestro/references/custom-config-reference.html) when there is a change to the base template for a component.

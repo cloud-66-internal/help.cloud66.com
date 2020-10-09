@@ -11,7 +11,7 @@ permalink: /:collection/:path:output_ext
 ---
 
 <div class="notice notice-danger">
-<p>PLEASE NOTE:<br/> This guide only applies to Version 1 of Maestro, also know as <em>CSv1</em>. New Maestro users should refer to <a href="/maestro/how-to-guides/deployment/docker-service-configuration.html">this guide</a> instead. </p></div>
+<p>PLEASE NOTE:<br/> This guide only applies to Version 1 of Maestro, also know as <em>CSv1</em>. New Maestro users should refer to <a href="/maestro/how-to-guides/build-and-config/docker-service-configuration.html">this guide</a> instead. </p></div>
 
 ## Pull code from Git
 
@@ -49,7 +49,7 @@ services:
 
 ### Build root
 
-Specifies the directory of your repository in which you wish to run your Docker build. You can also specify a [Dockerfile path](/maestro/how-to-guides/deployment/building-your-service.html#dockerfile_path), which will be the Dockerfile used when building your service which is a relative value to this one.
+Specifies the directory of your repository in which you wish to run your Docker build. You can also specify a [Dockerfile path](/maestro/how-to-guides/build-and-config/building-your-service.html#dockerfile_path), which will be the Dockerfile used when building your service which is a relative value to this one.
 
 ```yaml
 services:
