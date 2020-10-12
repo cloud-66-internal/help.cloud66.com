@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Troubleshooting server issues"
 categories: how-to-guides/deployment
-order: 10
+order: 6
 lead: How to diagnose and fix some common issues that may cause your servers to be unreachable or unresponsive.
 tags: ['Troubleshooting']
 legacy: false

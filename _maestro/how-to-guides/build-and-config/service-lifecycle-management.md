@@ -2,8 +2,8 @@
 layout: post
 template: one-col
 title:  "Customizing service life-cycle management"
-categories: how-to-guides/deployment
-order: 20
+categories: how-to-guides/build-and-config
+order: 3
 lead: How to manage your container life cycle
 legacy: false
 tags: ['service', 'operations']

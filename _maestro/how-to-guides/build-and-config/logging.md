@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title:  "Managing log files"
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 30
 lead: How to manage your application log files within Maestro
 tags: ['Logs']

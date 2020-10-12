@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: "Configuring HAProxy"
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 20
 legacy: false
 lead: Configuring HAProxy to work with your Maestro application

@@ -104,7 +104,12 @@ This feature is currently only available to users in our Beta Programme. If you'
 
 Instance profiles are a way to set specific roles on new servers that you spin up with AWS. You can read more about [creating your own instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) in the AWS docs. 
 
+{% if include.product != 'maestro' %}
 You can use your instance profiles via Cloud 66 by [calling them in the manifest file](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html#which-component) of your application. You can set a different profile for each component of an application (e.g. MySQL or Redis). We will then use that profile whenever we provision a server for that component.
+{% endif %}
+{% if include.product == 'maestro' %}
+You can use your instance profiles via Cloud 66 by [calling them in the manifest file](/{{page.collection}}/how-to-guides/build-and-config/building-a-manifest-file.html#which-component) of your application. You can set a different profile for each component of an application (e.g. MySQL or Redis). We will then use that profile whenever we provision a server for that component.
+{% endif %}
 
 ## Reserved instances
 
@@ -122,8 +127,12 @@ If your AWS account was created before 2014 you can choose to create servers on 
 Please be sure to read the documentation for [EC2-Classic](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-classic-platform.html) before deploying to that platform.
 
 ## ELB Websocket support
-
-AWS Classic Load Balancers do not support [websockets](/{{page.collection}}/how-to-guides/deployment/websocket-support.html) natively. We recommend switching to one of Amazon's newer load balancers - either Application Load Balancer or Network Load Balancer depending on your specific use-case.
+{% if include.product != 'maestro' %}
+AWS Classic Load Balancers do not support [Websocket](/{{page.collection}}/how-to-guides/deployment/websocket-support.html) natively. We recommend switching to one of Amazon's newer load balancers - either Application Load Balancer or Network Load Balancer depending on your specific use-case.
+{% endif %}
+{% if include.product == 'maestro' %}
+AWS Classic Load Balancers do not support [Websocket](/{{page.collection}}/how-to-guides/build-and-config/websocket-support.html) natively. We recommend switching to one of Amazon's newer load balancers - either Application Load Balancer or Network Load Balancer depending on your specific use-case.
+{% endif %}
 
 ## Cloud 66 tag propagation
 

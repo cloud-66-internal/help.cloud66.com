@@ -10,6 +10,6 @@ legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
+{% assign product = 'maestro' %}
 
-
-{% include how-to-guides/add-ins/glusterfs.md %}
+{% include how-to-guides/add-ins/glusterfs.md product = product %}

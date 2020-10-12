@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Connecting to Docker image repositories
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 40
 lead: "How to connect to public and private Docker image repositories via Maestro"
 tags: ["customization", "docker"]

@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Configuring Service storage
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 20
 lead: "How to add persistent storage to your application"
 legacy: false

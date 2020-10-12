@@ -32,11 +32,19 @@
             {% include left_nav_list.html section=common-tools current=page %}
        
         </ul>
+
+       <ul class="menu-root">
+            {% assign deployments = include.collection | where:"categories","how-to-guides/build-and-config" | sort: "order" %}
+       
+    		<li><h3><a href="/maestro/how-to-guides/build-and-config">How-to: Build & Config</a></h3></li>
+            {% include left_nav_list.html section=deployments current=page %}
+       
+        </ul>
   
        <ul class="menu-root">
             {% assign deployments = include.collection | where:"categories","how-to-guides/deployment" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/how-to-guides/deployment">How-to: Config & Deployment</a></h3></li>
+    		<li><h3><a href="/maestro/how-to-guides/deployment">How-to: Deployment</a></h3></li>
             {% include left_nav_list.html section=deployments current=page %}
        
         </ul>

@@ -29,7 +29,7 @@ Some examples of the settings you can control with a manifest file:
 - Configuring several components to share a server
 - Customizing component-specific configurations
 
-If you're already familiar with the basics of manifest files, refer to [Building a manifest file](/maestro/how-to-guides/deployment/building-a-manifest-file.html) for a more detailed guide.
+If you're already familiar with the basics of manifest files, refer to [Building a manifest file](/maestro/how-to-guides/build-and-config/building-a-manifest-file.html) for a more detailed guide.
 
 #### Note
 <div class="notice notice-warning"><p>
@@ -168,5 +168,5 @@ To do this:
 ## What's next?
 
 * Understand the [structure of manifest files](/maestro/references/manifest-structure.html).
-* Learn more about the power of manifest files with our [detailed how-to guide](/maestro/how-to-guides/deployment/building-a-manifest-file.html).
+* Learn more about the power of manifest files with our [detailed how-to guide](/maestro/how-to-guides/build-and-config/building-a-manifest-file.html).
 * Learn how to use [CustomConfig](/maestro/tutorials/custom-config.html) - a powerful tool for configuring the components of your application.

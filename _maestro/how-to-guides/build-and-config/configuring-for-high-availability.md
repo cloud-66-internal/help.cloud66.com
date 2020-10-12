@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Configuring for high availability"
 order: 10
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 lead: How to configure your Maestro application for high availability with multi-master architecture
 tags: ['server', 'operations']
 legacy: false
