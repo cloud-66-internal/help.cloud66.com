@@ -24,7 +24,7 @@ Doing so after-hours is recommended to minimize disruption.
 
 In order to minimize downtime, you can restart one server at a time if you have a [load balancer](/maestro/tutorials/load-balancing.html) in place, or you can use [failover groups](/maestro/tutorials/failover-groups.html) to achieve the same thing.
 
-You can also use the [maintenance page](/maestro/how-to-guides/deployment/service-network-configuration.html) to temporarily notify your users that you are performing maintenance.
+You can also use the [maintenance page](/maestro/how-to-guides/build-and-config/service-network-configuration.html) to temporarily notify your users that you are performing maintenance.
 
 ### Restarting via SSH
 

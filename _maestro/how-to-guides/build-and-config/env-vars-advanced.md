@@ -2,8 +2,8 @@
 layout: post
 template: one-col
 title:  "Managing environment variables"
-categories: how-to-guides/deployment
-order: 20
+categories: how-to-guides/build-and-config
+order: 5
 lead: How to manage environment variables within Maestro
 tags: ['Logs']
 legacy: false
@@ -235,7 +235,7 @@ EXPOSE 3000
 CMD ["/myapp/main.rb"]
 ```
 
-For more examples, please read our [full how-to guide on using env vars in Dockerfiles](/maestro/how-to-guides/deployment/env-vars-in-dockerfile.html).
+For more examples, please read our [full how-to guide on using env vars in Dockerfiles](/maestro/how-to-guides/build-and-config/env-vars-in-dockerfile.html).
 
 ## Calling environment variables in code
 

@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Using ConfigStore
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 10
 lead: "How to use ConfigStore to centralize and manage config values"
 legacy: false

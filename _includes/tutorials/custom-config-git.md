@@ -1,7 +1,12 @@
 
 CustomConfig git is a private git repository available on every application in your Cloud 66 account. This git repository is hosted by Cloud 66 and allows you to modify [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) files for your application using familiar git commands.
 
-If you are familiar with [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) you know how it can be a powerful tool to customize configuration for [Nginx](/{{page.collection}}/references/nginx.html) or [HAProxy](/{{page.collection}}/how-to-guides/deployment/haproxy.html). 
+If you are familiar with [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) you know how it can be a powerful tool to customize configuration for [Nginx](/{{page.collection}}/references/nginx.html) or {% if include.product != 'maestro' %}
+[HAProxy](/{{page.collection}}/how-to-guides/deployment/haproxy.html). 
+{% endif %}{% if include.product == 'maestro' %}
+[HAProxy](/{{page.collection}}/how-to-guides/build-and-deploy/haproxy.html). 
+{% endif %}
+
 
 The easiest way to modify CustomConfig files is through the UI. However if you would like to edit CustomConfig files in your favorite editor or enjoy git merge and flow control features you can use CustomConfig git.
 

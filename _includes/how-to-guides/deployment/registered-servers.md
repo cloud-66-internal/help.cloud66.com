@@ -51,15 +51,18 @@ $ cx register-server --org="My Team" --server=197.23.65.11 --user=root --tags="d
     - `22`
     - Port `3022` set to allow access from `159.89.253.143` (this IP is static)
 
+{% if include.product != 'maestro' %}
 For more detail please read our guide to [Using Cloud 66 through firewalls](/{{page.collection}}/how-to-guides/deployment/using-c66-via-firewall.html).
+{% endif %}
+{% if include.product == 'maestro' %}
+For more detail please read our guide to [Using Cloud 66 through firewalls](/{{page.collection}}/how-to-guides/build-and-config/using-c66-via-firewall.html).
+{% endif %}
 
 If your application needs to accept connections from the public web you will also need to open ports `80` and/or `443` but we do not require that these be open in order for us to manage a server.
 
 If your server is in a cloud with native security groups (such as AWS Security Groups) then you must manually configure them such that your registered servers are able to talk to each other and Cloud 66 via the ports listed above. 
 
 {% if include.product == 'maestro' %}All servers must be allowed to communicate inside the security group on TCP port `6783`, which is needed to create the overlay network (Weave) for [CSv1](/maestro/the-basics/about-maestro.html#version-1-vs-version-2) applications.{% endif %} 
-
-For more detail please read our guide to [Using Cloud 66 through firewalls](/{{page.collection}}/how-to-guides/deployment/using-c66-via-firewall.html).
 
 ## Technical considerations
 

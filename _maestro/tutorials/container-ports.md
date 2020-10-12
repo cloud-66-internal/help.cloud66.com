@@ -150,5 +150,5 @@ In order for these new settings to apply to your service, you will need to redep
 
 ## What's next
 
-* Learn how to configure for more [advanced service networking](/maestro/how-to-guides/deployment/service-networking.html) use cases (such as non-HTTP traffic)
+* Learn how to configure for more [advanced service networking](/maestro/how-to-guides/build-and-config/service-networking.html) use cases (such as non-HTTP traffic)
 * Learn how to [add a rule to the firewall](/maestro/tutorials/firewall-rule.html) to allow traffic to (or from) a non-standard port.

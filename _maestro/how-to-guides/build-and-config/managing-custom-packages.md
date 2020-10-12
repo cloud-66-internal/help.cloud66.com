@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title:  "Managing custom packages"
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 8
 legacy: false
 lead: Adding and managing custom Ubuntu packages on your application servers

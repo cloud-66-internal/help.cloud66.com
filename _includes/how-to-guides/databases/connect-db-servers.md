@@ -5,5 +5,5 @@ You can connect directly into your database server and invoke a database console
 
 ## With a client
 
-You can also open a firewall port in your database server to allow a remote machine to connect the it. This is possible using the [Application security]({% if page.collection == "maestro" %}/maestro/how-to-guides/deployment/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}) page, and then you can use a database client from your local computer.
+You can also open a firewall port in your database server to allow a remote machine to connect the it. This is possible using the [Application security]({% if page.collection == "maestro" %}/maestro/how-to-guides/build-and-config/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}) page, and then you can use a database client from your local computer.
 

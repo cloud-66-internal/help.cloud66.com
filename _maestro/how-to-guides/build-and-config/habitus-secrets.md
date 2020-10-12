@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Integrating Habitus secrets with Maestro
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 10
 lead: "How to integrate a Habitus build workflow with secrets into a Maestro application"
 legacy: false
@@ -14,7 +14,7 @@ permalink: /:collection/:path:output_ext
 
 Habitus is a great tool for securely managing secrets during builds (among other things). If you'd like to integrate your existing Habitus build flow into a Maestro application, you need to ensure the conditions below are met.
 
-If you’re not an existing Habitus user, you’ll need to read through its [documentation](http://www.habitus.io/) to fully understand the purpose and power of the tool. You should also familiarise yourself with basics of [using Habitus with Maestro](/maestro/how-to-guides/deployment/docker-service-configuration.html#using-habitus-for-builds).
+If you’re not an existing Habitus user, you’ll need to read through its [documentation](http://www.habitus.io/) to fully understand the purpose and power of the tool. You should also familiarise yourself with basics of [using Habitus with Maestro](/maestro/how-to-guides/build-and-config/docker-service-configuration.html#using-habitus-for-builds).
 
 ## 1. Explicitly define secrets as Habitus environment variables
 

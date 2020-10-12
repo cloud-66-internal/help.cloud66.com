@@ -1,6 +1,10 @@
 ## What is a manifest file?
 
-A manifest files allows you to be more explicit about your application composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that make up your application. If you're already familiar with manifest files, refer to [Building a manifest file](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html).
+{% if include.product != 'maestro' %}
+A manifest files allows you to be more explicit about your application composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that make up your application. If you're already familiar with manifest files, refer to [Building a manifest file](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html).{% endif %}
+
+{% if include.product == 'maestro' %}
+A manifest files allows you to be more explicit about your application composition and control settings that are not usually available through the user interface or Cloud 66 toolbelt. The file describes the setup of the components that make up your application. If you're already familiar with manifest files, refer to [Building a manifest file](/{{page.collection}}/how-to-guides/build-and-config/building-a-manifest-file.html).{% endif %}
 
 These are just some examples of the settings you can control with a manifest file:
 
@@ -92,5 +96,5 @@ This will force your Nginx configuration to be rebuilt during the next redeploym
 ## What's next?
 
 * Understand the [structure of manifest files](/{{page.collection}}/references/manifest-structure.html).
-* Learn more about the power of manifest files with our [detailed how-to guide](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html).
+{% if include.product != 'maestro' %}* Learn more about the power of manifest files with our [detailed how-to guide](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html).{% endif %}{% if include.product == 'maestro' %}* Learn more about the power of manifest files with our [detailed how-to guide](/{{page.collection}}/how-to-guides/build-and-config/building-a-manifest-file.html).{% endif %}
 * Learn how to use [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) - a powerful tool for configuring the components of your application.

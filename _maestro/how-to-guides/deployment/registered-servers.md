@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Using your own servers with Maestro
 categories: how-to-guides/deployment
-order: 10
+order: 1
 lead: "How to use your own servers with Maestro"
 legacy: false
 tags: ["operations"]

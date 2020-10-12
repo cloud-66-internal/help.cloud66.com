@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Enabling Deployment Authorization
 categories: how-to-guides/deployment
-order: 40
+order: 10
 lead: "How to restrict which users can deploy your application(s)"
 legacy: false
 tags: ["security", "operations"]

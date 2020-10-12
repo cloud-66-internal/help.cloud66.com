@@ -72,6 +72,6 @@ Once you are connected to your server, you can `cat` your config file. The comma
 
 ## What's next?
 
-* Learn how to use CustomConfig to configure [Nginx](/maestro/references/nginx.html), [HAProxy](/maestro/how-to-guides/deployment/haproxy.html) and [databases](/maestro/how-to-guides/databases/database-customization.html).
+* Learn how to use CustomConfig to configure [Nginx](/maestro/references/nginx.html), [HAProxy](/maestro/how-to-guides/build-and-config/haproxy.html) and [databases](/maestro/how-to-guides/databases/database-customization.html).
 * Learn how to edit and maintain configuration templates via your favourite git client using [CustomConfig git](/maestro/tutorials/custom-config-git.html).
 * Learn how to [patch your CustomConfig files](/maestro/references/custom-config-reference.html) when there is a change to the base template for a component.
