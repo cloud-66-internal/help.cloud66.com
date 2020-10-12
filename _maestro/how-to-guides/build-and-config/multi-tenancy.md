@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Configuring for Multi-Tenancy
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 40
 lead: "How to configure applications to share the same infrastructure"
 legacy: false

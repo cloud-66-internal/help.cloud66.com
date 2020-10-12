@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Using failover groups
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 30
 lead: "How to set up and use a failover group"
 legacy: false

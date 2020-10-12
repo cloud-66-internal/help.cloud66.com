@@ -831,5 +831,9 @@ production:
     configuration:
       custom_log_files: ["/tmp/mylog/*/*.log"]
 ```
-
+{% if include.product != 'maestro' %}
 For more information about **LiveLogs** and additional examples, please see the [LiveLogs help page](/{{page.collection}}/how-to-guides/deployment/setting-up-custom-livelogs.html).
+{% endif %}
+{% if include.product == 'maestro' %}
+For more information about **LiveLogs** and additional examples, please see the [LiveLogs help page](/{{page.collection}}/how-to-guides/build-and-config/setting-up-custom-livelogs.html).
+{% endif %}

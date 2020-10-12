@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Using symbolic links
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 40
 lead: "Using symlinks in Maestro applications"
 legacy: false

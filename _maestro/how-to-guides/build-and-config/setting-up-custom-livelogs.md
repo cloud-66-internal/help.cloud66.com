@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Setting up custom LiveLog files
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 40
 lead: "How to configure custom logs for your applications"
 legacy: false

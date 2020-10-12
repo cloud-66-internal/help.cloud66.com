@@ -14,7 +14,7 @@ permalink: /:collection/:path:output_ext
 
 We currently support the following databases, with no need for additional configuration after deployment.
 
-* MySQL (or Percona if [configured via Manifest](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html#mysql))
+* MySQL (or Percona if [configured via Manifest](/{{page.collection}}/how-to-guides/build-and-config/building-a-manifest-file.html#mysql))
 * PostgreSQL
 * MongoDB
 * Redis

@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Custom service configurations 
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 10
 lead: "How to specify custom service configurations for your application"
 legacy: false
@@ -257,7 +257,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> The image you would typically run <code>docker pull</code> from. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/{{page.collection}}/how-to-guides/deployment/service-network-configuration.html#load_balancing">load_balancing</a> </td> 
+     <td> <a href="/maestro/how-to-guides/build-and-config/service-network-configuration.html#load_balancing">load_balancing</a> </td> 
      <td> Specifies the load balancing method for this service. Accepted values: <em>roundrobin</em>, <em>sticky</em>, <em>closest</em>. Default value is <em>roundrobin</em> </td> 
     </tr> 
     <tr> 
@@ -265,7 +265,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Folder your services logs to, mounted to <code>/var/log/containers/service</code> on the host filesystem. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/{{page.collection}}/how-to-guides/deployment/service-network-configuration.html#ports">ports</a> </td> 
+     <td> <a href="/maestro/how-to-guides/build-and-config/service-network-configuration.html#ports">ports</a> </td> 
      <td> The ports that are running within the container, as well as their corresponding external ports. </td> 
     </tr>
     <tr> 
@@ -289,7 +289,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Array of other defined service names that should be started before this service during build and deployment. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/{{page.collection}}/how-to-guides/deployment/service-network-configuration.html#restart">restart_on_deploy</a> <em>(default: true)</em> </td> 
+     <td> <a href="/maestro/how-to-guides/build-and-config/service-network-configuration.html#restart">restart_on_deploy</a> <em>(default: true)</em> </td> 
      <td> Boolean value to indicate whether the containers of this service should be restarted during deployment. </td> 
     </tr> 
     <tr> 
@@ -297,7 +297,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Duration between the Docker <code>TERM</code> and <code>KILL</code> signals when Docker stop is run and a container is stopped. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/{{page.collection}}/how-to-guides/deployment/service-network-configuration.html#traffic_matches">traffic_matches</a> </td> 
+     <td> <a href="/maestro/how-to-guides/build-and-config/service-network-configuration.html#traffic-matches">traffic_matches</a> </td> 
      <td> The automatically configured traffic names in your Nginx config that will route traffic to these containers based on request DNS name. Allows microservices on the same port routes by subdomain for instance. </td> 
     </tr>
     <tr> 
@@ -392,7 +392,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> The image you would typically run <code>docker pull</code> from. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/{{page.collection}}/how-to-guides/deployment/service-network-configuration.html#load_balancing">load_balancing</a> </td> 
+     <td> <a href="/maestro/how-to-guides/build-and-config/service-network-configuration.html#load-balancing">load_balancing</a> </td> 
      <td> Specifies the load balancing method for this service. Accepted values: <em>roundrobin</em>, <em>sticky</em>, <em>closest</em>. Default value is <em>roundrobin</em> </td> 
     </tr> 
     <tr> 
@@ -400,7 +400,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Folder your services logs to, mounted to <code>/var/log/containers/service</code> on the host filesystem. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/{{page.collection}}/how-to-guides/deployment/service-network-configuration.html#ports">ports</a> </td> 
+     <td> <a href="/maestro/how-to-guides/build-and-config/service-network-configuration.html#ports">ports</a> </td> 
      <td> The ports that are running within the container, as well as their corresponding external ports. </td> 
     </tr> 
     <tr> 
@@ -420,7 +420,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Array of other defined service names that should be started before this service during build and deployment. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/{{page.collection}}/how-to-guides/deployment/service-network-configuration.html#restart">restart_on_deploy</a> <em>(default: true)</em> </td> 
+     <td> <a href="/maestro/how-to-guides/build-and-config/service-network-configuration.html#restart">restart_on_deploy</a> <em>(default: true)</em> </td> 
      <td> Boolean value to indicate whether the containers of this service should be restarted during deployment. </td> 
     </tr> 
     <tr> 
@@ -428,7 +428,7 @@ Below is a table of the available configurations for a given service with a brie
      <td> Duration between the Docker <code>TERM</code> and <code>KILL</code> signals when Docker stop is run and a container is stopped. </td> 
     </tr> 
     <tr> 
-     <td> <a href="/{{page.collection}}/how-to-guides/deployment/service-network-configuration.html#traffic_matches">traffic_matches</a> </td> 
+     <td> <a href="/maestro/how-to-guides/build-and-config/service-network-configuration.html#traffic_matches">traffic_matches</a> </td> 
      <td> The automatically configured traffic names in your Nginx config that will route traffic to these containers based on request DNS name. Allows microservices on the same port routes by subdomain for instance. </td> 
     </tr> 
     <tr> 

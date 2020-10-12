@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Building your Docker service (V1)
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 10
 lead: "How to build a Docker service in Maestro (Version 1 only)"
 legacy: true

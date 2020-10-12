@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Configure Service Networking
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 10
 lead: "Advanced service network configuration and port mapping"
 legacy: false

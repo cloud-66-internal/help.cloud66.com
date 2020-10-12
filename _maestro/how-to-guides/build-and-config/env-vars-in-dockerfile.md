@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Using environment variables in a Dockerfile
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 10
 lead: "How to automatically pull environment variables into a Dockerfile"
 legacy: false

@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title:  "Managing environment variables"
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 20
 lead: How to manage environment variables within Maestro
 tags: ['Logs']

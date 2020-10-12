@@ -5,7 +5,9 @@
 ### Please note
 
 <div class="notice notice-warning"><p>
-The version of GlusterFS currently offered via the Cloud 66 Add-in is not supported by Ubuntu 18.04. To use this add-in please ensure that all of your application components are installed on servers running <strong>Ubuntu 16.04</strong>. For help with this please consult <a href="/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html">our guide to the application Manifest file</a>. 
+The version of GlusterFS currently offered via the Cloud 66 Add-in is not supported by Ubuntu 18.04. To use this add-in please ensure that all of your application components are installed on servers running <strong>Ubuntu 16.04</strong>. {% if include.product != 'maestro' %}For help with this please consult <a href="/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html">our guide to the application Manifest file</a>.{% endif %} {% if include.product == 'maestro' %}For help with this please consult <a href="/{{page.collection}}/how-to-guides/build-and-config/building-a-manifest-file.html">our guide to the application Manifest file</a>.
+{% endif %}
+
 </p></div>
 
 ## Why would I need GlusterFS?
@@ -34,17 +36,21 @@ $ touch hello.txt
 
 Now SSH to another web server on your application and you should be able to see `hello.txt` under `/mnt/data-store`.
 
-{% if page.collection == 'legacy_docker' or page.collection == 'maestro' %}
+{% if page.collection == 'maestro' %}
 ## What about my containers?
-So far we saw how you can create a share disk volume on every server. But what about accessing this share storage from each container? You can [mount](/{{page.collection}}/how-to-guides/deployment/service-storage.html) the `/mnt/data-store` directory into any directory inside your container. This means your code can read and write to `/mnt/data-store` from inside a container without any further changes.
-
+So far we saw how you can create a share disk volume on every server. But what about accessing this share storage from each container? You can [mount](/maestro/how-to-guides/build-and-config/service-storage.html) the `/mnt/data-store` directory into any directory inside your container. This means your code can read and write to `/mnt/data-store` from inside a container without any further changes.
 {% endif %}
+
 ## Fine grained access control for your data
 By default Cloud 66 builds a GlusterFS cluster for your application, creates a default mount point on it and mounts that onto every application server. This is great to start with and for many workloads.
 
 But what if you need to make sure some services have read/write access to your data and some only readonly access?
 
-This is achieved using the [manifest](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html) file. Using manifest file, you can control the GlusterFS volumes you have as well as grant read/write or readonly access to containers of a specific service. 
+{% if include.product != 'maestro' %}
+This is achieved using the [manifest](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html) file. Using manifest file, you can control the GlusterFS volumes you have as well as grant read/write or readonly access to containers of a specific service.{% endif %}
+
+{% if include.product == 'maestro' %}
+This is achieved using the [manifest](/{{page.collection}}/how-to-guides/build-and-config/building-a-manifest-file.html) file. Using manifest file, you can control the GlusterFS volumes you have as well as grant read/write or readonly access to containers of a specific service.{% endif %}
 
 Using the manifest file also allows you to choose the servers you would like to have the volumes mounted (like application servers or your database servers).
  

@@ -9,4 +9,4 @@ tags: ["customization"]
 
 permalink: /:collection/:path:output_ext
 ---
-{% include how-to-guides/deployment/optimizing-performance.md %}
+{% include how-to-guides/deployment/optimizing-performance.md product = page.collection %}

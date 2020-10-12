@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Integrating Habitus secrets with Maestro
-categories: how-to-guides/deployment
+categories: how-to-guides/build-and-config
 order: 10
 lead: "How to integrate a Habitus build workflow with secrets into a Maestro application"
 legacy: false
