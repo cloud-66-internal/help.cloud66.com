@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title:  "Setting limits for services"
 categories: how-to-guides/build-and-config
-order: 30
+order: 10
 lead: Managing resource usage for your Docker services
 tags: ['operations', 'service']
 legacy: false

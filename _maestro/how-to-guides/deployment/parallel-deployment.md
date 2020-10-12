@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Choosing a deployment strategy
 categories: how-to-guides/deployment
-order: 30
+order: 5
 lead: "How to choose and set a deployment strategy for your application - serial or parallel."
 legacy: false
 tags: ["customization"]

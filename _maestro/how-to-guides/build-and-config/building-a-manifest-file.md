@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Building a manifest file
 categories: how-to-guides/build-and-config
-order: 10
+order: 1
 lead: "How to build a manifest file for your Maestro application"
 legacy: false
 tags: ["manifest", "customization"]

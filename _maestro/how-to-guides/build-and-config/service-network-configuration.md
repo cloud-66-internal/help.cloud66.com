@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Service networking configuration (V1)
 categories: how-to-guides/build-and-config
-order: 20
+order: 100
 lead: "Configure the service network"
 legacy: false
 tags: ["security", "customization", "service.yml"]

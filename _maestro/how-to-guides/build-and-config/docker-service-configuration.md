@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Custom service configurations 
 categories: how-to-guides/build-and-config
-order: 10
+order: 2
 lead: "How to specify custom service configurations for your application"
 legacy: false
 tags: ["customization", "service.yml"]
