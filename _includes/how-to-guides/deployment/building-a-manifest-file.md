@@ -73,7 +73,7 @@ Next, select which component you would like to specify settings for. You can cho
 - **weave_version** (_Optional_): Specify the version of Weave you want to install.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers. Note that you must provide [**subnet_id**](#servers) for all servers in your application.
 - **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 50.
+- **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **image_keep_count** (_Optional, defaults to 5_): Set the number of old images to save on your servers (besides the running image).
 - **nameservers** (_Optional, defaults to [ 8.8.8.8, 8.8.4.4 ]_): Set DNS servers for your application.  
@@ -114,7 +114,7 @@ production:
 
 - **version**: Specify the version of ElasticSearch you want to install.
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
+- **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **iam_instance_profile_name** (*optional, AWS only, [Beta users only](/{{page.collection}}//resources/cloud-66-beta-program.html)*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 
@@ -157,7 +157,7 @@ The version of GlusterFS currently offered via the Cloud 66 Add-in is not suppor
 </p></div>
 
 - **version**: Specify the version of GlusterFS you want to install.
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
+- **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is `ssd`.
 - **replica_count** : Number of nodes in _GlusterFS cluster_ which a data will be replicated on it(i.e replica count 2 means your data exist on two nodes). Default value is 1.
 - **mount_targets** : List of _Servers_ and _Server Groups_ you need GlusterFS mounted on them. You can specify the name of the _server_ or _server group_ (i.e rails,docker,mysql,...). You can also use `app` and `db` keywords, `app` is your main app server group (i.e docker, rails, ...)  and `db` is your db server groups (i.e mysql,redis,postgresql,... ). Default value is `app`.
@@ -231,7 +231,7 @@ production:
 
 - **version**: Specify the version of MongoDB you want to install (can only be set during application build).
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 50.
+- **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
 - **iam_instance_profile_name** (*optional, AWS only, [Beta users only](/{{page.collection}}//resources/cloud-66-beta-program.html)*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
@@ -252,7 +252,7 @@ production:
 
 - **version**: Specify the version of MySQL you want to install. Valid values are 5.7 or 8.0 (can only be set during application build).
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
+- **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **engine**: Specify the MySQL engine you want to install. Valid values are 'mysql' and 'percona' (can only be set during application build).
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
@@ -339,7 +339,7 @@ If you need a newer version of Node, you can install one using the same method a
 - **version**: Specify the version of PostgreSQL you want to install (can only be set during application build).
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **postgis**: Specify whether to include PostGIS (can be added after initial application build).
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
+- **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **tamper_with_yml** (*Optional*): Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is *yes*.
 - **iam_instance_profile_name** (*optional, AWS only, [Beta users only](/{{page.collection}}//resources/cloud-66-beta-program.html)*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
@@ -386,7 +386,7 @@ A Rails application type in the manifest file gives you fine control over things
 - **locked_passenger_version**: Force the version of passenger to use. Note: this only applies during server build and is not supported on Passenger Enterprise applications.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers. Note that you must provide  [**subnet_id**](#servers) for all servers in your application.
 - **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
+- **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **iam_instance_profile_name** (*optional, AWS only, [Beta users only](/{{page.collection}}//resources/cloud-66-beta-program.html)*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application.  Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers
@@ -436,7 +436,7 @@ The manifest file gives you fine control over things like the Ruby version or wh
 - **locked_passenger_version**: Force the version of passenger to use. Note: this only applies during server build and is not supported on Passenger Enterprise applications.
 - **vpc_id** (_Optional, AWS EC2 only_): ID of the AWS VPC in which you would like to create your servers.
 - **vn_name** (_Optional, AZURE only_): Name of the Virtual Network in which you would like to create your servers.
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
+- **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **iam_instance_profile_name** (*optional, AWS only, [Beta users only](/{{page.collection}}//resources/cloud-66-beta-program.html)*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application. Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers
@@ -501,7 +501,7 @@ All of these are optional. For more details on health checks please read our [ho
 
 - **version**: Specify the version of Redis you want to install (defaults to 5.0).
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
+- **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **iam_instance_profile_name** (*optional, AWS only, [Beta users only](/{{page.collection}}//resources/cloud-66-beta-program.html)*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 
@@ -682,7 +682,7 @@ production:
 These are the parameters that the _server_ section can take:
 
 - **unique_name** (_Required if you are specifying a server type_): A unique name for this server.
-- **root_disk_size** (_Optional, AWS EC2 and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
+- **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
 - **root_disk_type** (_Optional, AWS EC2 and GCE only_): Disk type, accepted values being _ssd_ and _magnetic_. Default value is _ssd_.
 - **subnet_id** (_Optional, AWS EC2 only_): ID of the AWS subnet in which you would like to create your servers.
 - **vendor** (_Optional_): Cloud vendor where the server will be built. Valid values: aws, azure (use azure_rm for new Azure accounts), digitalocean, googlecloud, linode, rackspace, and clouda

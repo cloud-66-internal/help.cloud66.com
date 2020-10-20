@@ -145,8 +145,3 @@ Similarly, if you only have one web server, you can type _w_ instead of _web_.
 
 Follow our [instructions](https://github.com/cloud66/cx/wiki/Setting-up-Auto-complete-for-the-toolbelt) to add an auto-complete feature to your toolbelt, which will make typing commands out by hand much quicker.
 
-
-## Contributing
-
-Fork our [repository](https://github.com/cloud66/cx), create a feature branch (and commit/push your changes) and then create a pull request.
-
