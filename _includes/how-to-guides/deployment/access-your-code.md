@@ -26,6 +26,10 @@ For Cloud 66 to access your private repositories (with read-only access), you fi
 
 You can add this SSH key globally to your git provider by adding it to your **Account settings**, or allow access to a specific repository by adding it to that repository as a **deploy key**.
 
+Once this is done, use a Git URL in the following format:
+
+`git@<git provider>:<username>/<repository>.git`
+
 ### GitHub example
 
 #### Adding the SSH key globally
@@ -38,6 +42,10 @@ To add the SSH key globally:
 * Give the key a useful title (e.g. Cloud 66) 
 * Paste the key you copied from Cloud 66 and click *Add SSH Key*
 
+Once this is done, use a Git URL in the following format in the Cloud 66 UI:
+
+`git@github.com:<username>/<repository>.git`
+
 #### Adding the SSH key to a specific repository
     
 * Access the Settings menu for that repository using the tab at the top of the main panel.  
@@ -45,6 +53,10 @@ To add the SSH key globally:
 * Click *Add deploy key* 
 * Give your key a useful title 
 * Paste the key you copied from Cloud 66 and click *Add Key*
+
+Once this is done, use a Git URL in the following format in the Cloud 66 UI:
+
+`git@github.com:<username>/<repository>.git`
 
 ### BitBucket example
 
@@ -57,6 +69,10 @@ To add the SSH key globally:
 * Paste the key you copied from Maestro into the text box
 * Click *Add key*
 
+Once this is done, use a Git URL in the following format in the Cloud 66 UI:
+
+`git@bitbucket.org:<username>/<repository>.git`
+
 #### Adding the SSH key to a specific repository
 
 To add the SSH key to a specific repository: 
@@ -65,3 +81,7 @@ To add the SSH key to a specific repository:
 * Click Deployment keys 
 * Paste the key you copied from Maestro into the text box
 * Click *Add key*
+
+Once this is done, use a Git URL in the following format in the Cloud 66 UI:
+
+`git@bitbucket.org:<username>/<repository>.git`
