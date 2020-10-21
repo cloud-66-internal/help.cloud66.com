@@ -1307,6 +1307,10 @@
   to = "/maestro/how-to-guides/build-and-config/websocket-support.html"	  
 
 [[redirects]]
+  from = "/maestro/how-to-guides/deployment/ssh-to-server.htm"
+  to = "/maestro/how-to-guides/common-tools/ssh-to-server.html"
+
+[[redirects]]
   from = "/whenever"
   to = "/rails/how-to-guides/add-ins/add-ins-jobs.html#support-for-whenever-gem"
 
