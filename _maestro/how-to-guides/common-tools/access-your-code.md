@@ -83,6 +83,6 @@ To add the SSH key to a specific repository:
 
 ## Using Github with Maestro
 
-For a tutorial on how to build code from Github into an application for use with Maestro, please follow our [Getting Started](/maestro/quickstarts/getting_started.html) guide which walks you through the process.
+For a tutorial on how to build code from Github into an application for use with Maestro, please follow our [Getting Started](/maestro/quickstarts/getting-started.html) guide which walks you through the process.
 
 

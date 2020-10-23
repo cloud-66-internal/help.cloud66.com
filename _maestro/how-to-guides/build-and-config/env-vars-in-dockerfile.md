@@ -32,7 +32,7 @@ You can also use the following format if you don't need to set the output as a v
 RUN echo $WEB_ADDRESS_INT
 ```
 
-## Pulling binaries into your Dockerfile using env_vars
+## Pulling binaries into your Dockerfile using env vars
 
 It's possible to add small binary files (30KB or smaller) to your application during the build step using a combination of Base64 encoding and environment variables. To do so:
 

@@ -343,7 +343,7 @@ The following variables are available for use in your Nginx [CustomConfig](/rail
     <tr> 
      <td><a href="/rails/how-to-guides/deployment/building-a-manifest-file.html#rails">passenger_pool_max</a></td> 
      <td>integer</td> 
-     <td>The maximum number of processes that Passenger will spawn. This value is derived from <code>passenger_process_memory</code> which can be set via the <a href="/rails/how-to-guides/deployment/building-a-manifest-file.html#rails">manifest file</a>. See below for an explanation on <a href="#how-passenger_pool_max-is-calculated">how this is calculated</a>.</td> 
+     <td>The maximum number of processes that Passenger will spawn. This value is derived from <code>passenger_process_memory</code> which can be set via the <a href="/rails/how-to-guides/deployment/building-a-manifest-file.html#rails">manifest file</a>. See below for an explanation on <a href="#how-passenger-pool-max-is-calculated">how this is calculated</a>.</td> 
     </tr> 
     <tr> 
      <td>passenger_supports_cgi_param</td> 
@@ -419,7 +419,7 @@ The following variables are available for use in your Nginx [CustomConfig](/rail
   </table> 
 
 
-### How passenger_pool_max is calculated
+### How passenger pool max is calculated
 
 `passenger_pool_max` is a Cloud-66-specific variable that we use to dynamically set a value in Nginx for the native Passenger setting `passenger_max_pool_size`.
 

@@ -28,12 +28,12 @@ If you prefer to build your own images, simply provide the location of this imag
 
 There are a number of directives you can set in your service configuration to customize your service network settings:
 
-- [build_command](#build_command)
-- [build_root](#build_root)
+- [build command](#build-command)
+- [build root](#build-root)
 - [command](#command)
-- [deploy_command](#deploy_command)
-- [git_url](#git_url)
-- [git_branch](#git-branch)
+- [deploy command](#deploy-command)
+- [git url](#git-url)
+- [git branch](#git-branch)
 - [image](#image)
 
 

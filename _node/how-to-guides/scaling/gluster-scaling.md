@@ -16,7 +16,7 @@ When you are scaling up, cloud66 will add servers to your cluster based on repli
 When you are scaling down, cloud66 will remove the server (and all related servers which scaled up with this server) and remove their bricks for current volumes from _GlusterFS Cluster_
 
 
-## Configure a GlusterFS replica_count
+## Configure a GlusterFS replica count
 
 You can specify replica_count when you are adding GlusterFS by addins. If you are using manifest to add GlusterFS, you can add replica_count in configuration.
 

@@ -75,7 +75,7 @@ We can also easily add additional server nodes to this cluster or remove existin
 
 ## Deploying applications to the cluster
 
-If you now create a new Maestro application (see [Getting Started with Maestro for help with this(/maestro/quickstarts/getting_started.html)) at the point where you can select your Cloud provider, you will now see additional items clusters. Select your cluster, and deploy your application!
+If you now create a new Maestro application (see [Getting Started with Maestro for help with this(/maestro/quickstarts/getting-started.html)) at the point where you can select your Cloud provider, you will now see additional items clusters. Select your cluster, and deploy your application!
 
 <img src="/assets/maestro/maestro_cluster_deploy_application.png" alt="Deploy application to cluster">
 

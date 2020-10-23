@@ -108,7 +108,7 @@
 
 [[redirects]]
   from = "/legacy_docker/references/build-grid.html"
-  to = "/maestro/quickstarts/getting_started.html"
+  to = "/maestro/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/legacy_docker/how-to-guides/deployment/shells/nginx-modules.html"
@@ -140,11 +140,11 @@
 
 [[redirects]]
   from = "/legacy_docker/quickstarts/docker-getting-started-deployments.html"
-  to = "/maestro/quickstarts/getting_started.html"
+  to = "/maestro/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/legacy_docker/quickstarts/docker-getting-started.html"
-  to = "/maestro/quickstarts/getting_started.html"
+  to = "/maestro/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/legacy_docker/how-to-guides/deployment/building-a-manifest-file.html"
@@ -388,11 +388,11 @@
 
 [[redirects]]
   from = "/skycap/how-to-guides/building/building-your-service.html"
-  to = "/skycap/quickstarts/getting_started.html"
+  to = "/skycap/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/skycap/how-to-guides/building/image-repository.html"
-  to = "/skycap/quickstarts/getting_started.html"
+  to = "/skycap/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/skycap/how-to-guides/building/shells/access-your-code.html"
@@ -400,7 +400,7 @@
 
 [[redirects]]
   from = "/skycap/how-to-guides/deployment/building-your-service.html"
-  to = "/skycap/quickstarts/getting_started.html"
+  to = "/skycap/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/skycap/how-to-guides/deployment/shells/nginx-modules.html"
@@ -412,11 +412,11 @@
 
 [[redirects]]
   from = "/skycap/tutorials/docker-introduction.html"
-  to = "/skycap/quickstarts/getting_started.html"
+  to = "/skycap/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/skycap/tutorials/docker-service-configuration.html"
-  to = "/skycap/quickstarts/using_formations.html"
+  to = "/skycap/quickstarts/using-formations.html"
 
 [[redirects]]
   from = "/skycap/tutorials/env-vars.html"
@@ -424,11 +424,11 @@
 
 [[redirects]]
   from = "/building-your-stack/building-your-docker-service"
-  to = "/maestro/quickstarts/getting_started.html"
+  to = "/maestro/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/article/136-building-your-rails-rack-stack"
-  to = "/rails/quickstarts/getting_started.html"
+  to = "/rails/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/toolbelt/toolbelt-introduction"
@@ -436,11 +436,11 @@
 
 [[redirects]]
   from = "/article/283-getting-started-with-maestro"
-  to = "/maestro/quickstarts/getting_started.html"
+  to = "/maestro/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/building-your-stack/docker-service-configuration"
-  to = "/maestro/quickstarts/getting_started.html"
+  to = "/maestro/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/managing-your-stack/server-restart-notifications.html"
@@ -524,7 +524,7 @@
 
 [[redirects]]
   from = "/building-your-node-js-stack/getting-started-with-node-js-based-stacks"
-  to = "/node/quickstarts/getting_started.html"
+  to = "/node/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/cloud-providers/cloud-vexxhost.html"
@@ -560,7 +560,7 @@
 
 [[redirects]]
   from = "/maestro/tutorials/docker-introduction.html"
-  to = "/maestro/quickstarts/getting_started.html"
+  to = "/maestro/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/maestro/tutorials/getting-started-with-manifest.html"
@@ -584,11 +584,11 @@
 
 [[redirects]]
   from = "/article/279-getting-started-with-skycap"
-  to = "/skycap/quickstarts/getting_started.html"
+  to = "/skycap/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/article/169-getting-started-with-node-js-based-stacks"
-  to = "/node/quickstarts/getting_started.html"
+  to = "/node/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/maestro/references/shells/toolbelt.html"
@@ -720,11 +720,11 @@
 
 [[redirects]]
   from = "/building-your-node-js-stack"
-  to = "/node/quickstarts/getting_started.html"
+  to = "/node/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/building-your-node-js-stack/specific-settings-for-your-node-js-application"
-  to = "/node/quickstarts/getting_started.html"
+  to = "/node/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/category/toolbelt"
@@ -784,7 +784,7 @@
 
 [[redirects]]
   from = "/node/how-to-guides/building/building-your-service.html"
-  to = "/node/quickstarts/getting_started.html"
+  to = "/node/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/node/how-to-guides/databases/elasticsearch-scaling.html"
@@ -840,7 +840,7 @@
 
 [[redirects]]
   from = "/skycap/tutorials/service-networking.html"
-  to = "/skycap/quickstarts/getting_started.html"
+  to = "/skycap/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/maestro/references/build-grid.html"
@@ -888,7 +888,7 @@
 
 [[redirects]]
   from = "/skycap/how-to-guides/deployment/migrate-the-stack.html"
-  to = "/skycap/quickstarts/using_formations.html"
+  to = "/skycap/quickstarts/using-formations.html"
 
 [[redirects]]
   from = "/maestro/how-to-guides/deployment/shells/websocket-support.html"
@@ -904,7 +904,7 @@
 
 [[redirects]]
   from = "/maestro/quickstarts/docker-getting-started"
-  to = "/maestro/quickstarts/getting_started.html"
+  to = "/maestro/quickstarts/getting-started.html"
 
 [[redirects]]
   from = "/maestro/tutorials/database-backup.html"
@@ -1327,13 +1327,61 @@
   to = "/"  
   
 [[redirects]]
+  from = "/maestro/tutorials/IP-filtering.html"
+  to = "/maestro/tutorials/ip-filtering.html"
+
+[[redirects]]
+  from = "/node/tutorials/IP-filtering.html"
+  to = "/node/tutorials/ip-filtering.html"
+
+[[redirects]]
+  from = "/rails/tutorials/IP-filtering.html"
+  to = "/rails/tutorials/ip-filtering.html"
+
+[[redirects]]
+  from = "skycap/how-to-guides/formations/adding-policies-to-BTRs.html"
+  to = "skycap/how-to-guides/formations/adding-policies-to-btrs.html"
+
+[[redirects]]
+  from = "skycap/how-to-guides/formations/adding-transformations-to-BTRs.html"
+  to = "skycap/how-to-guides/formations/adding-transformations-to-btrs.html"
+
+[[redirects]]
+  from = "/maestro/quickstarts/getting_started.html"
+  to = "/maestro/quickstarts/getting-started.html"
+
+[[redirects]]
+  from = "/maestro/quickstarts/getting_started_with_clusters.html"
+  to = "/maestro/quickstarts/getting-started-with-clusters.html"
+
+[[redirects]]
+  from = "skycap/references/stencil_placeholders.html"
+  to = "skycap/references/stencil-placeholders.html"
+
+[[redirects]]
+  from = "node/quickstarts/getting_started.html"
+  to = "node/quickstarts/getting-started.html"
+
+[[redirects]]
+  from = "rails/quickstarts/getting_started.html"
+  to = "rails/quickstarts/getting-started.html"
+
+[[redirects]]
+  from = "skycap/quickstarts/getting_started.html"
+  to = "skycap/quickstarts/getting-started.html"
+
+[[redirects]]
+  from = "skycap/quickstarts/using_formations.html"
+  to = "skycap/quickstarts/using-formations.html"
+
+[[redirects]]
   from = "/article/*"
   to = "/"
 
 [[redirects]]
   from = "/legacy_docker/how-to-guides/add-ins/*"
   to = "/maestro/how-to-guides/add-ins/:splat"
-  
+
 [[redirects]]
   from = "/node/references/clouds/*"
   to = "/node/how-to-guides/clouds/:splat"

@@ -25,17 +25,17 @@ Maestro natively supports the following databases and datastores:
 
 There are two main routes to add a database to a Maestro application:
 
-1. As part of the [initial build and deploy process](/maestro/quickstarts/getting_started.html)
+1. As part of the [initial build and deploy process](/maestro/quickstarts/getting-started.html)
 2. After the app has already been deployed 
 
-This guide deals with the second of these cases. For the first, please consult our [Getting Started](/maestro/quickstarts/getting_started.html) guide.
+This guide deals with the second of these cases. For the first, please consult our [Getting Started](/maestro/quickstarts/getting-started.html) guide.
 
 ## What you'll need
 
 Before you start, please check you have the following:
 
 * **A Cloud 66 Account** &mdash; If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. You'll get free unlimited access to all products for 4 weeks.
-* **An existing application set up in Maestro** &mdash; To make the most of this tutorial you need to have an app already set up in Maestro. Follow our [Getting Started guide](/maestro/quickstarts/getting_started.html) if you're not sure how to do this.
+* **An existing application set up in Maestro** &mdash; To make the most of this tutorial you need to have an app already set up in Maestro. Follow our [Getting Started guide](/maestro/quickstarts/getting-started.html) if you're not sure how to do this.
 
 ## Adding a database to an existing app
 
@@ -43,7 +43,7 @@ Let's assume that your application was previously completely stateless, but now 
 
 There are two ways to add a database to an existing app:
 1. Using Add-ins
-2. Building a new completely new version of the app, and adding the database [during the build process](/maestro/quickstarts/getting_started.html#adding-a-data-source).
+2. Building a new completely new version of the app, and adding the database [during the build process](/maestro/quickstarts/getting-started.html#adding-a-data-source).
 
 #### Note
 <div class="notice"><p>Although option 2 might seem extreme, it follows the principle of "immutability". It is always more reliable and more manageable to deploy an updated application as though it were new, rather than trying to patch an existing setup.</p></div>

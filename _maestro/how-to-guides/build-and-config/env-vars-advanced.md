@@ -68,7 +68,7 @@ Be aware of the following while assigning environment variables:
 
 - **Some environment variables cannot be modified** — For example, environment variables for your server IP addresses cannot be changed because they are automatically set and updated based on reported IP addresses.
 
-### Using AUTO_GENERATE
+### Using AUTO GENERATE
 
 **AUTO_GENERATE** allows you to insert placeholder environment variables into your application, and Cloud 66 will automatically replace them with a random string. This is useful to have Cloud 66 automatically generate values for secrets that you do not want to have committed into your repository.
 

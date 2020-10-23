@@ -59,24 +59,24 @@ Cloud 66 supports both public and private Git repositories. If you're using a pr
     <nav>
       <ul class="TabMini js_tabs">
         <li class="TabMini-item active">
-          <a href="#github_content" class="TabMini-link">
+          <a href="#github-content" class="TabMini-link">
             Github
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#bitbucket_content" class="TabMini-link">
+          <a href="#bitbucket-content" class="TabMini-link">
             Bitbucket
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#other_git_content" class="TabMini-link">
+          <a href="#other-git-content" class="TabMini-link">
             Other git repositories
           </a>
         </li>
       </ul>
     </nav>
 
-    <section id="github_content" class="Tabs-content js_tab_content">
+    <section id="github-content" class="Tabs-content js_tab_content">
         <h4>Public Repository</h4>
         <p>If your code is in a public repository, you don't need to do anything.</p>
         <h4>Private Repository</h4>
@@ -87,7 +87,7 @@ Cloud 66 supports both public and private Git repositories. If you're using a pr
         <p><em>Copy the public SSH Key</em> (starts with ssh-rsa and ends with the email address you used to sign up) and then <em>Click Go to GitHub</em>. The GitHub SSH keys page will open in a new browser tab. Click the <em>New SSH key</em> button and paste your public key.</p>
     </section>
 
-    <section id="bitbucket_content" class="Tabs-content js_tab_content is-hidden">
+    <section id="bitbucket-content" class="Tabs-content js_tab_content is-hidden">
         <h4>Public Repository</h4>
         <p>If your code is in a public repository, you don't need to do anything.</p>
         <h4>Private Repository</h4>
@@ -97,7 +97,7 @@ Cloud 66 supports both public and private Git repositories. If you're using a pr
         </p>
     </section>
 
-    <section id="other_git_content" class="Tabs-content js_tab_content is-hidden">
+    <section id="other-git-content" class="Tabs-content js_tab_content is-hidden">
         <h4>Private Repository</h4>
         <p>To grant access to your private git repository, add the public SSH key to the list of git users (refer to your git server manual) and make sure your git repository accepts connections on port 22, from Cloud 66 public IP addresses: {% include general/public_ips.html %}</p>
     </section>

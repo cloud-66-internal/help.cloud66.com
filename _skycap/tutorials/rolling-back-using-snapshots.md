@@ -22,7 +22,7 @@ A Snapshot includes both the container images and the configuration files and va
 2. Click on *Snapshots* in the right-hand panel
 3. Find the Snapshot you wish to rebuild in the timeline and click *Rebuild* (you will be asked to confirm before the rebuild starts)
 3. Wait for the rebuild to be completed (you can view a live log of the build process by clicking the *view APPNAME build logs* link)
-4. When the rebuild is complete, you can redeploy application by following [this guide](/skycap/quickstarts/using_formations.html#deploying-it-all-to-your-cluster).
+4. When the rebuild is complete, you can redeploy application by following [this guide](/skycap/quickstarts/using-formations#deploying-it-all-to-your-cluster).
 
 #### Note:
 <div class="notice"><p>Each time you roll back you actually create a new Snapshot that copies the contents of an older Snapshot. We suggest taking note of the UIDs (or timestamps) of “stable” Snapshots to make this process easier to manage.</p></div>
@@ -44,7 +44,7 @@ To do this:
 Find the Snapshot you need and click on *Formations*
 3. Click on the name of the Formation which you’d like to examine
 
-You can now look through all the Stencils in this Formation, and/or download them as a single YML file. You can also deploy them to your cluster using the recommended `cx` command. If you’re not sure how to do that, [follow this guide](/skycap/quickstarts/using_formations.html#deploying-it-all-to-your-cluster). 
+You can now look through all the Stencils in this Formation, and/or download them as a single YML file. You can also deploy them to your cluster using the recommended `cx` command. If you’re not sure how to do that, [follow this guide](/skycap/quickstarts/using-formations#deploying-it-all-to-your-cluster). 
 
 #### Warning:
 <div class="notice notice-warning"><p>Be cautious when using older Formations to deploy changes to your cluster(s). Remember that Skycap stores copies of all your images at that point in time. Always check that you are not accidentally deploying older code that may break your application.</p></div>

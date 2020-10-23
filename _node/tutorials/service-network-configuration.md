@@ -17,7 +17,7 @@ What you'll need
 Before you start, please check you have the following:
 
 - **A Cloud 66 Account** — If you don't already have one, [sign up](https://app.cloud66.com/users/sign_up){:target="_blank"} sign up for a Cloud 66 account. You'll get free unlimited access to all products for 4 weeks.
-- **An existing application set up in Node** — To make the most of this tutorial you need to have a Node app already set up in Cloud 66. Follow our [Getting Started guide](/node/quickstarts/getting_started.html) if you're not sure how to do this.
+- **An existing application set up in Node** — To make the most of this tutorial you need to have a Node app already set up in Cloud 66. Follow our [Getting Started guide](/node/quickstarts/getting-started.html) if you're not sure how to do this.
 
 ## Changing the HTTP port
 
