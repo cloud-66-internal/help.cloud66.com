@@ -53,9 +53,15 @@ def perform(directory)
 		# find the name key
 		name = File.basename(file_path, ".*")
 		# exclude js files
-		next if SKIPPED_REGEX.any? { |regex| file_path =~ regex }
+		if SKIPPED_REGEX.any? { |regex| file_path =~ regex }
+			puts "skipping (regex): #{file_path}"
+			next
+		end
 		# exclude specific pages
-		next if SKIPPED_PAGES.any? { |skipped_page| name == skipped_page }
+		if SKIPPED_PAGES.any? { |skipped_page| name == skipped_page }
+			puts "skipping (page): #{name}"
+			next
+		end
 		# check for upcase in path
 		fatal("Uppercase chars found in \"#{file_path}\"") if file_path =~ /[A-Z]/
 		# find the product
