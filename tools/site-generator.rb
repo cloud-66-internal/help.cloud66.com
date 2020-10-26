@@ -48,6 +48,8 @@ def perform(directory)
 	full_file_paths = ::Dir.glob("#{directory}/**/*.html").select { |file_path| File.file?(file_path) }
 	# process them
 	full_file_paths.each do |full_file_path|
+		puts "FOUND: #{full_file_path}"
+
 		# strip the root_path from the full_file_path
 		file_path = full_file_path.gsub("#{root_path}/", '')
 		# find the name key
