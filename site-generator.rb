@@ -1,17 +1,25 @@
 #! /usr/bin/env ruby
 require 'yaml'
 PRODUCTS = %w[maestro rails node skycap]
+
+# explicitly skipped pages/anchors
+SKIPPED_REGEX = [/js\//i]
+SKIPPED_PAGES = %w[searchResults search_results styleguide swiftype]
+SKIPPED_ANCHORS = %w[registry_credentials repeat_inline]
+
 def fatal(message)
 	puts "FATAL! #{message}"
 	exit -1
 end
+
 def warning(message)
 	puts "WARNING: #{message}"
 end
+
 def configure
 	# defaults
 	directory = '.'
-	output = 'site.yml'
+	output = 'help_links.yml'
 	# parse args
 	args = []
 	::ARGV.each { |arg| arg.strip.gsub(/-/, '').split('=').each { |part| args << part } }
@@ -31,6 +39,7 @@ def configure
 	output = "#{root_path}/#{output}" unless output.start_with?('/')
 	[directory, output]
 end
+
 def perform(directory)
 	result = {}
 	# create placeholders for each product
@@ -41,14 +50,19 @@ def perform(directory)
 	full_file_paths.each do |full_file_path|
 		# strip the root_path from the full_file_path
 		file_path = full_file_path.gsub("#{root_path}/", '')
+		# find the name key
+		name = File.basename(file_path, ".*")
+		# exclude js files
+		next if SKIPPED_REGEX.any? { |regex| file_path =~ regex }
+		# exclude specific pages
+		next if SKIPPED_PAGES.any? { |skipped_page| name == skipped_page }
 		# check for upcase in path
-		warning("Uppercase chars found in \"#{file_path}\"") if file_path =~ /[A-Z]/
+		fatal("Uppercase chars found in \"#{file_path}\"") if file_path =~ /[A-Z]/
 		# find the product
 		path = File.dirname(file_path)
 		product = PRODUCTS.detect { |prod| path =~ /#{prod}/i }
+		# skip if we don't have a product
 		next if product.nil?
-		# find the name key
-		name = File.basename(file_path, ".*")
 		name_key = name.gsub(/-/, '_')
 		# special case for "index.html" pages
 		if name_key == 'index'
@@ -60,20 +74,23 @@ def perform(directory)
 		content = ::IO.read(full_file_path)
 		href_anchors = content.scan(/href\s?=\s?["']#(?<anchor>[a-z0-9\-_]+)["']/).flatten
 		h_anchors = content.scan(/\<h[2|3].*?id\s?=\s?["'](?<anchor>[a-z0-9\-_]+)["']/).flatten
-		anchors = href_anchors | h_anchors
-		anchors = anchors.sort
+		page_anchors = href_anchors | h_anchors
+		page_anchors = page_anchors.sort
+		# exclude specific page anchors
+		page_anchors = page_anchors.reject { |page_anchor| SKIPPED_ANCHORS.any? { |skipped_anchor| page_anchor == skipped_anchor } }
 		# check for upcase in path
-		warning("Anchor with underscore char found \"#{file_path}\" --> \"#{anchors.join(',')}\"") if anchors.any? { |anchor| anchor =~ /_/ }
+		fatal("Anchor with underscore char found \"#{file_path}\" --> \"#{page_anchors.join(',')}\"") if page_anchors.any? { |anchor| anchor =~ /_/ }
 		# store info in the pages hash
 		product_hash = result[product]
 		fatal("Duplicate page found. \"#{name}\"=\"#{file_path}\" has already been added as \"#{name}\"=\"#{product_hash[name_key]}\"") if product_hash.has_key?(name_key)
-		product_hash[name_key] = { page: file_path, anchors: anchors }
+		product_hash[name_key] = { page: file_path, page_anchors: page_anchors }
 	end
 	# sort the hash by keys
 	PRODUCTS.each { |product| result[product] = result[product].sort.to_h }
 	# return sorted result
 	result.sort.to_h
 end
+
 def dump(result, output)
 	# convert to yaml
 	yaml_content = result.to_yaml(indentation: 2, line_width: -1)
@@ -81,6 +98,7 @@ def dump(result, output)
 	# write to file
 	File.open(output, 'w') { |file| file.puts yaml_content }
 end
+
 # configure directory and output
 directory, output = configure
 puts "[Starting]"
