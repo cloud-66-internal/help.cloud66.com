@@ -44,26 +44,17 @@ def perform(directory)
 	result = {}
 	# create placeholders for each product
 	PRODUCTS.each { |product| result[product] = {} }
-	root_path = ::Dir.pwd
 	full_file_paths = ::Dir.glob("#{directory}/**/*.html").select { |file_path| File.file?(file_path) }
 	# process them
 	full_file_paths.each do |full_file_path|
-		puts "FOUND: #{full_file_path}"
-
 		# strip the root_path from the full_file_path
-		file_path = full_file_path.gsub("#{root_path}/", '')
+		file_path = full_file_path.gsub(/#{directory}\/?/, '')
 		# find the name key
 		name = File.basename(file_path, ".*")
 		# exclude js files
-		if SKIPPED_REGEX.any? { |regex| file_path =~ regex }
-			puts "skipping (regex): #{file_path}"
-			next
-		end
+		next if SKIPPED_REGEX.any? { |regex| file_path =~ regex }
 		# exclude specific pages
-		if SKIPPED_PAGES.any? { |skipped_page| name == skipped_page }
-			puts "skipping (page): #{name}"
-			next
-		end
+		next if SKIPPED_PAGES.any? { |skipped_page| name == skipped_page }
 		# check for upcase in path
 		fatal("Uppercase chars found in \"#{file_path}\"") if file_path =~ /[A-Z]/
 		# find the product
@@ -74,9 +65,8 @@ def perform(directory)
 		name_key = name.gsub(/-/, '_')
 		# special case for "index.html" pages
 		if name_key == 'index'
-			name_key = path.gsub(/\//, '-')
-			name_key = name_key.gsub(/#{product}\-?/, '')
-			name_key = product if name_key.strip.empty?
+			path_key = path.gsub(/\//, '_').gsub(/-/, '_').gsub(/#{product}_?/, '').strip
+			name_key = "#{path_key}_#{name_key}" unless path_key.empty?
 		end
 		# generate anchors list
 		content = ::IO.read(full_file_path)
