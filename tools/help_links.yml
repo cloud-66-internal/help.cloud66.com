@@ -1,7 +1,7 @@
 maestro:
   about_maestro:
-    :page: maestro/the-basics/about-maestro.html
-    :page_anchors:
+    page: maestro/the-basics/about-maestro.html
+    page_anchors:
     - about-docker
     - cloud-66-docker-support
     - maestro-architecture
@@ -13,15 +13,15 @@ maestro:
     - version-2
     - what-is-maestro
   access_cluster_directly:
-    :page: maestro/how-to-guides/common-tools/access-cluster-directly.html
-    :page_anchors:
+    page: maestro/how-to-guides/common-tools/access-cluster-directly.html
+    page_anchors:
     - maestro-product-heading
     - method-1-connect-to-the-server
     - method-2-connect-from-your-own-machine
     - overview
   access_your_code:
-    :page: maestro/how-to-guides/common-tools/access-your-code.html
-    :page_anchors:
+    page: maestro/how-to-guides/common-tools/access-your-code.html
+    page_anchors:
     - accessing-private-repositories
     - bitbucket-example
     - github-example
@@ -30,12 +30,12 @@ maestro:
     - public-repositories
     - using-github-with-maestro
   account_index:
-    :page: maestro/account/index.html
-    :page_anchors:
+    page: maestro/account/index.html
+    page_anchors:
     - maestro-product-heading
   account_management:
-    :page: maestro/account/account-management.html
-    :page_anchors:
+    page: maestro/account/account-management.html
+    page_anchors:
     - add-or-remove-users
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
@@ -46,27 +46,27 @@ maestro:
     - service-accounts
     - view--update-account-information
   account_protection:
-    :page: maestro/account/account-protection.html
-    :page_anchors:
+    page: maestro/account/account-protection.html
+    page_anchors:
     - account-protection-alerts
     - maestro-product-heading
     - overview
     - what-is-cloud-66-account-protection
   active_protect:
-    :page: maestro/references/active-protect.html
-    :page_anchors:
+    page: maestro/references/active-protect.html
+    page_anchors:
     - activeprotect-interface
     - configuring-activeprotect
     - maestro-product-heading
     - ssh-soft-blocking
     - what-is-activeprotect
   add_in_implementation:
-    :page: maestro/how-to-guides/add-ins/add-in-implementation.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/add-in-implementation.html
+    page_anchors:
     - maestro-product-heading
   adding_database:
-    :page: maestro/tutorials/adding-database.html
-    :page_anchors:
+    page: maestro/tutorials/adding-database.html
+    page_anchors:
     - adding-a-database-to-an-existing-app
     - configure-a-database-using-add-ins
     - maestro-product-heading
@@ -74,16 +74,16 @@ maestro:
     - testing-your-new-database
     - what-youll-need
   adding_updating_deleting:
-    :page: maestro/the-basics/adding-updating-deleting.html
-    :page_anchors:
+    page: maestro/the-basics/adding-updating-deleting.html
+    page_anchors:
     - building-an-application
     - clone-an-application
     - deleting-an-application
     - maestro-product-heading
     - updating-application-properties
   applying_upgrades:
-    :page: maestro/how-to-guides/deployment/applying-upgrades.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/applying-upgrades.html
+    page_anchors:
     - about-manual-upgrades
     - automated-package-update-policy
     - controlling-package-updates
@@ -99,35 +99,35 @@ maestro:
     - unable-to-find-expected-entry-errors
     - upgrade-package-types
   archiving_applications:
-    :page: maestro/account/archiving-applications.html
-    :page_anchors:
+    page: maestro/account/archiving-applications.html
+    page_anchors:
     - archiving-an-application
     - limits-and-effects-of-archiving
     - maestro-product-heading
     - overview
     - restoring-an-application
   audit_logs:
-    :page: maestro/account/audit-logs.html
-    :page_anchors:
+    page: maestro/account/audit-logs.html
+    page_anchors:
     - accessing-audit-logs
     - audit-logging
     - maestro-product-heading
     - searching-audit-logs
   browser_requirements:
-    :page: maestro/account/browser-requirements.html
-    :page_anchors:
+    page: maestro/account/browser-requirements.html
+    page_anchors:
     - maestro-product-heading
   build_minutes:
-    :page: maestro/references/build-minutes.html
-    :page_anchors:
+    page: maestro/references/build-minutes.html
+    page_anchors:
     - build-minute-overages
     - calculating-build-minutes
     - maestro-product-heading
     - monthly-build-minutes
     - what-are-build-minutes
   building_a_manifest_file:
-    :page: maestro/how-to-guides/build-and-config/building-a-manifest-file.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/building-a-manifest-file.html
+    page_anchors:
     - applying-settings-across-all-environments
     - aws-load-balancer
     - deploy-to-your-own-server
@@ -158,8 +158,8 @@ maestro:
     - which-environment
     - which-server
   building_your_service:
-    :page: maestro/how-to-guides/build-and-config/building-your-service.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/building-your-service.html
+    page_anchors:
     - build-command
     - build-root
     - command
@@ -174,30 +174,30 @@ maestro:
     - pull-code-from-git
     - using-habitus-for-builds
   change_psql_directory:
-    :page: maestro/how-to-guides/databases/shells/change-psql-directory.html
-    :page_anchors:
+    page: maestro/how-to-guides/databases/shells/change-psql-directory.html
+    page_anchors:
     - maestro-product-heading
   cloud66_badge:
-    :page: maestro/resources/cloud66-badge.html
-    :page_anchors:
+    page: maestro/resources/cloud66-badge.html
+    page_anchors:
     - important
     - maestro-product-heading
   cloud66_status:
-    :page: maestro/resources/cloud66-status.html
-    :page_anchors:
+    page: maestro/resources/cloud66-status.html
+    page_anchors:
     - latest-updates
     - maestro-product-heading
     - status-and-uptime
   cloud_66_beta_program:
-    :page: maestro/resources/cloud-66-beta-program.html
-    :page_anchors:
+    page: maestro/resources/cloud-66-beta-program.html
+    page_anchors:
     - joining-the-beta-programme
     - maestro-product-heading
     - overview
     - reporting-issues
   cloud_aws:
-    :page: maestro/how-to-guides/clouds/cloud-aws.html
-    :page_anchors:
+    page: maestro/how-to-guides/clouds/cloud-aws.html
+    page_anchors:
     - cloud-66-tag-propagation
     - elb-websocket-support
     - external-links
@@ -211,8 +211,8 @@ maestro:
     - using-ec2-classic
     - using-iam-instance-profiles-with-your-servers
   cloud_azure:
-    :page: maestro/how-to-guides/clouds/cloud-azure.html
-    :page_anchors:
+    page: maestro/how-to-guides/clouds/cloud-azure.html
+    page_anchors:
     - cloud-66-tag-propagation
     - generating-a-management-certificate
     - generating-credentials-for-azure-cloud
@@ -220,28 +220,28 @@ maestro:
     - microsoft-azure-legacy
     - using-your-management-certificate
   cloud_clouda:
-    :page: maestro/how-to-guides/clouds/cloud-clouda.html
-    :page_anchors:
+    page: maestro/how-to-guides/clouds/cloud-clouda.html
+    page_anchors:
     - adding-your-cloud-a-credentials
     - maestro-product-heading
   cloud_do:
-    :page: maestro/how-to-guides/clouds/cloud-do.html
-    :page_anchors:
+    page: maestro/how-to-guides/clouds/cloud-do.html
+    page_anchors:
     - authorise-cloud-66-with-digitalocean
     - cloud-66-tag-propagation
     - external-links
     - maestro-product-heading
     - upgrading-account-keys
   cloud_gce:
-    :page: maestro/how-to-guides/clouds/cloud-gce.html
-    :page_anchors:
+    page: maestro/how-to-guides/clouds/cloud-gce.html
+    page_anchors:
     - add-gce-keys-to-an-application
     - external-links
     - generate-gce-api-keys
     - maestro-product-heading
   cloud_hetzner:
-    :page: maestro/how-to-guides/clouds/cloud-hetzner.html
-    :page_anchors:
+    page: maestro/how-to-guides/clouds/cloud-hetzner.html
+    page_anchors:
     - cloud-66-tag-propagation
     - external-links
     - how-to-add-your-hetzner-api-key-to-cloud-66
@@ -249,36 +249,36 @@ maestro:
     - support-for-older-versions-of-ubuntu
     - using-multiple-api-keys-with-hetzner
   cloud_ovh:
-    :page: maestro/how-to-guides/clouds/cloud-ovh.html
-    :page_anchors:
+    page: maestro/how-to-guides/clouds/cloud-ovh.html
+    page_anchors:
     - integrating-ovh-with-cloud-66
     - maestro-product-heading
     - using-multiple-keys-with-ovh
   cloud_packet:
-    :page: maestro/how-to-guides/clouds/cloud-packet.html
-    :page_anchors:
+    page: maestro/how-to-guides/clouds/cloud-packet.html
+    page_anchors:
     - adding-your-packet-credentials
     - cloud-66-tag-propagation
     - maestro-product-heading
   cloud_rackspace:
-    :page: maestro/how-to-guides/clouds/cloud-rackspace.html
-    :page_anchors:
+    page: maestro/how-to-guides/clouds/cloud-rackspace.html
+    page_anchors:
     - add-rackspace-key-to-an-application
     - external-links
     - generate-a-rackspace-api-key
     - maestro-product-heading
     - note
   cloud_vultr:
-    :page: maestro/how-to-guides/clouds/cloud-vultr.html
-    :page_anchors:
+    page: maestro/how-to-guides/clouds/cloud-vultr.html
+    page_anchors:
     - add-vultr-key-to-an-application
     - add-your-vultr-api-key-to-cloud-66
     - external-links
     - maestro-product-heading
     - support-for-older-versions-of-ubuntu
   concepts_and_terminology:
-    :page: maestro/the-basics/concepts-and-terminology.html
-    :page_anchors:
+    page: maestro/the-basics/concepts-and-terminology.html
+    page_anchors:
     - application-vs-service
     - application-vs-stack
     - applications-and-services
@@ -301,8 +301,8 @@ maestro:
     - what-is-an-application
     - what-is-stackscore
   config_store:
-    :page: maestro/how-to-guides/build-and-config/config-store.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/config-store.html
+    page_anchors:
     - accessing-configstore-variables
     - account-level
     - application-level
@@ -318,8 +318,8 @@ maestro:
     - serviceyml-placeholder
     - skycap-stencils
   configure_dns:
-    :page: maestro/how-to-guides/deployment/configure-dns.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/configure-dns.html
+    page_anchors:
     - 1-use-a-modern-dns-provider
     - 2-use-an-a-record
     - 3-subdomain-redirection
@@ -328,21 +328,21 @@ maestro:
     - maestro-product-heading
     - overview
   configuring_for_high_availability:
-    :page: maestro/how-to-guides/build-and-config/configuring-for-high-availability.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/configuring-for-high-availability.html
+    page_anchors:
     - adding-nodes-to-an-application
     - maestro-product-heading
     - overview
   configuring_pod_updates:
-    :page: maestro/how-to-guides/deployment/configuring-pod-updates.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/configuring-pod-updates.html
+    page_anchors:
     - maestro-product-heading
     - overview
     - using-the-max-surge-setting
     - using-the-max-unavailable-setting
   connect_cloud66_to_git_repo:
-    :page: maestro/references/connect-cloud66-to-git-repo.html
-    :page_anchors:
+    page: maestro/references/connect-cloud66-to-git-repo.html
+    page_anchors:
     - bitbucket-example
     - github-example
     - maestro-product-heading
@@ -350,14 +350,14 @@ maestro:
     - private-repositories
     - public-repositories
   connect_db_servers:
-    :page: maestro/how-to-guides/databases/shells/connect-db-servers.html
-    :page_anchors:
+    page: maestro/how-to-guides/databases/shells/connect-db-servers.html
+    page_anchors:
     - maestro-product-heading
     - via-ssh
     - with-a-client
   container_ports:
-    :page: maestro/tutorials/container-ports.html
-    :page_anchors:
+    page: maestro/tutorials/container-ports.html
+    page_anchors:
     - editing-config-files-directly
     - editing-via-the-ui
     - maestro-product-heading
@@ -367,8 +367,8 @@ maestro:
     - what-youll-need
     - whats-next
   custom_config:
-    :page: maestro/tutorials/custom-config.html
-    :page_anchors:
+    page: maestro/tutorials/custom-config.html
+    page_anchors:
     - applying-configuration-changes
     - editing-a-template
     - maestro-product-heading
@@ -378,8 +378,8 @@ maestro:
     - whats-next
     - why-do-we-need-preview
   custom_config_git:
-    :page: maestro/tutorials/custom-config-git.html
-    :page_anchors:
+    page: maestro/tutorials/custom-config-git.html
+    page_anchors:
     - accessing-your-customconfig-git-repo
     - automatic-updates
     - changes-made-in-customconfig-ui
@@ -392,8 +392,8 @@ maestro:
     - what-youll-need
     - whats-next
   custom_config_reference:
-    :page: maestro/references/custom-config-reference.html
-    :page_anchors:
+    page: maestro/references/custom-config-reference.html
+    page_anchors:
     - accessing-customconfig
     - components-supported-by-customconfig
     - dynamic-templating
@@ -401,14 +401,14 @@ maestro:
     - patching-configuration-files
     - what-is-customconfig
   custom_server:
-    :page: maestro/how-to-guides/add-ins/custom-server.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/custom-server.html
+    page_anchors:
     - add-a-custom-server
     - maestro-product-heading
     - what-is-the-custom-server-add-in
   customizing_nginx:
-    :page: maestro/how-to-guides/nginx/customizing-nginx.html
-    :page_anchors:
+    page: maestro/how-to-guides/nginx/customizing-nginx.html
+    page_anchors:
     - customizing-the-nginx-error-page
     - editing-nginx-configurations
     - enabling-http2
@@ -417,12 +417,12 @@ maestro:
     - overview
     - working-examples
   data_protection:
-    :page: maestro/resources/data-protection.html
-    :page_anchors:
+    page: maestro/resources/data-protection.html
+    page_anchors:
     - maestro-product-heading
   database_backups:
-    :page: maestro/how-to-guides/add-ins/database-backups.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/database-backups.html
+    page_anchors:
     - backup-format
     - backup-schedule
     - backup-types
@@ -437,23 +437,23 @@ maestro:
     - unmanaged-backups
     - what-is-the-database-backup-add-in
   database_customization:
-    :page: maestro/how-to-guides/databases/database-customization.html
-    :page_anchors:
+    page: maestro/how-to-guides/databases/database-customization.html
+    page_anchors:
     - database-customization-variables
     - how-to-customize-database-configs
     - maestro-product-heading
     - more-info
   database_encryption:
-    :page: maestro/how-to-guides/databases/database-encryption.html
-    :page_anchors:
+    page: maestro/how-to-guides/databases/database-encryption.html
+    page_anchors:
     - data-encryption-via-the-application
     - implementing-native-database-encryption-tde-with-cloud-66
     - maestro-product-heading
     - native-database-encryption
     - overview
   database_management:
-    :page: maestro/how-to-guides/databases/database-management.html
-    :page_anchors:
+    page: maestro/how-to-guides/databases/database-management.html
+    page_anchors:
     - connecting-your-app-to-your-db-in-maestro
     - customizing-your-database
     - dedicated-database
@@ -464,8 +464,8 @@ maestro:
     - no-database-external
     - upgrading-your-database
   database_replication:
-    :page: maestro/how-to-guides/databases/database-replication.html
-    :page_anchors:
+    page: maestro/how-to-guides/databases/database-replication.html
+    page_anchors:
     - between-applications
     - disable-database-replication
     - enable-database-replication
@@ -478,16 +478,16 @@ maestro:
     - re-synchronizing-slave-with-master
     - single-application
   deploy_hook_examples:
-    :page: maestro/how-to-guides/deployment/deploy-hook-examples.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/deploy-hook-examples.html
+    page_anchors:
     - how-do-i-install-a-package-or-library-on-each-server-i-deploy
     - how-do-i-install-a-specific-non-standard-version-of-a-package-or-library
     - maestro-product-heading
     - overview
     - querying-server-metadata
   deploy_hooks:
-    :page: maestro/tutorials/deploy-hooks.html
-    :page_anchors:
+    page: maestro/tutorials/deploy-hooks.html
+    page_anchors:
     - adding-the-hook-to-your-app
     - creating-a-deploy-hook
     - deploying-and-testing
@@ -502,8 +502,8 @@ maestro:
     - whats-next
     - writing-the-yaml
   deploy_hooks_syntax:
-    :page: maestro/references/deploy-hooks-syntax.html
-    :page_anchors:
+    page: maestro/references/deploy-hooks-syntax.html
+    page_anchors:
     - hook-fields
     - hook-fields-commands
     - hook-fields-inline-scripts
@@ -512,8 +512,8 @@ maestro:
     - maestro-product-heading
     - what-are-deploy-hooks
   deploy_profiles:
-    :page: maestro/references/deploy-profiles.html
-    :page_anchors:
+    page: maestro/references/deploy-profiles.html
+    page_anchors:
     - build--publish-services
     - calling-a-deployment-profile-via-a-redeployment-hook
     - deployment-strategy
@@ -522,32 +522,32 @@ maestro:
     - upgrades
     - what-are-deployment-profiles
   deployment_authorization:
-    :page: maestro/how-to-guides/deployment/deployment-authorization.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/deployment-authorization.html
+    page_anchors:
     - about-deployment-authorization
     - cloud-lockdown
     - enabling-deployment-lockdown
     - how-lockdown-works
     - maestro-product-heading
   deployment_gateway:
-    :page: maestro/how-to-guides/deployment/deployment-gateway.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/deployment-gateway.html
+    page_anchors:
     - about-deployment-gateways
     - accessing-servers-behind-a-gateway
     - deploying-an-application-behind-a-gateway
     - important
     - maestro-product-heading
   deployment_history:
-    :page: maestro/how-to-guides/deployment/deployment-history.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/deployment-history.html
+    page_anchors:
     - accessing-the-timeline
     - deployment-status
     - maestro-product-heading
     - overview
     - rolling-back-using-the-timeline
   docker_service_configuration:
-    :page: maestro/how-to-guides/build-and-config/docker-service-configuration.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/docker-service-configuration.html
+    page_anchors:
     - adding-a-daemonset
     - database-configurations
     - environment-variables
@@ -562,8 +562,8 @@ maestro:
     - specifying-service-configurations
     - using-habitus-for-builds
   docker_tasks:
-    :page: maestro/how-to-guides/add-ins/docker-tasks.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/docker-tasks.html
+    page_anchors:
     - adding-a-new-application-job
     - default-values
     - maestro-product-heading
@@ -572,18 +572,18 @@ maestro:
     - passing-parameters-to-a-job
     - using-parameters
   elasticsearch:
-    :page: maestro/how-to-guides/add-ins/elasticsearch.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/elasticsearch.html
+    page_anchors:
     - add-elasticearch
     - maestro-product-heading
   elasticsearch_scaling:
-    :page: maestro/how-to-guides/scaling/elasticsearch-scaling.html
-    :page_anchors:
+    page: maestro/how-to-guides/scaling/elasticsearch-scaling.html
+    page_anchors:
     - general-recommendations
     - maestro-product-heading
   env_vars:
-    :page: maestro/tutorials/env-vars.html
-    :page_anchors:
+    page: maestro/tutorials/env-vars.html
+    page_anchors:
     - adding-an-environmental-variable
     - editing-an-existing-variable
     - maestro-product-heading
@@ -592,8 +592,8 @@ maestro:
     - what-youll-need
     - whats-next
   env_vars_advanced:
-    :page: maestro/how-to-guides/build-and-config/env-vars-advanced.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/env-vars-advanced.html
+    page_anchors:
     - after-application-build
     - assigning-environment-variables
     - bash-scripts
@@ -618,15 +618,15 @@ maestro:
     - working-example
     - yaml-files
   env_vars_in_dockerfile:
-    :page: maestro/how-to-guides/build-and-config/env-vars-in-dockerfile.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/env-vars-in-dockerfile.html
+    page_anchors:
     - calling-an-environment-variable-in-a-dockerfile
     - maestro-product-heading
     - overview
     - pulling-binaries-into-your-dockerfile-using-env-vars
   failover_groups:
-    :page: maestro/tutorials/failover-groups.html
-    :page_anchors:
+    page: maestro/tutorials/failover-groups.html
+    page_anchors:
     - adding-a-secondary-application
     - creating-a-failover-group
     - environment-variables
@@ -638,8 +638,8 @@ maestro:
     - what-youll-need
     - why-use-failover-groups
   faq:
-    :page: maestro/the-basics/faq.html
-    :page_anchors:
+    page: maestro/the-basics/faq.html
+    page_anchors:
     - are-their-any-requirements-for-the-user-on-my-servers
     - can-i-deploy-multiple-apps-on-a-single-server
     - can-i-use-cloud-66-with-my-own-servers
@@ -654,14 +654,14 @@ maestro:
     - who-pays-for-the-servers
     - why-do-you-need-my-server-ssh-key
   filebeat:
-    :page: maestro/how-to-guides/add-ins/filebeat.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/filebeat.html
+    page_anchors:
     - about-using-filebeat
     - add-filebeat-to-your-application
     - maestro-product-heading
   firewall_rule:
-    :page: maestro/tutorials/firewall-rule.html
-    :page_anchors:
+    page: maestro/tutorials/firewall-rule.html
+    page_anchors:
     - adding-a-custom-firewall-rule
     - adding-and-applying-the-rule
     - default-firewall-rules
@@ -673,8 +673,8 @@ maestro:
     - testing-the-rule
     - what-youll-need
   getting_started:
-    :page: maestro/quickstarts/getting-started.html
-    :page_anchors:
+    page: maestro/quickstarts/getting-started.html
+    page_anchors:
     - 1-choose-application-type
     - 2-add-application-services
     - 3-specify-the-source-of-images
@@ -692,8 +692,8 @@ maestro:
     - what-youll-need
     - whats-next
   getting_started_with_clusters:
-    :page: maestro/quickstarts/getting-started-with-clusters.html
-    :page_anchors:
+    page: maestro/quickstarts/getting-started-with-clusters.html
+    page_anchors:
     - cloud-content
     - configuring-the-cluster
     - creating-a-maestro-cluster
@@ -704,8 +704,8 @@ maestro:
     - what-youll-need
     - whats-next
   getting_started_with_manifest:
-    :page: maestro/quickstarts/getting-started-with-manifest.html
-    :page_anchors:
+    page: maestro/quickstarts/getting-started-with-manifest.html
+    page_anchors:
     - a-working-example
     - cloud-content
     - customizing-your-manifest-file
@@ -722,8 +722,8 @@ maestro:
     - what-youll-need
     - whats-next
   global_search:
-    :page: maestro/how-to-guides/common-tools/global-search.html
-    :page_anchors:
+    page: maestro/how-to-guides/common-tools/global-search.html
+    page_anchors:
     - advanced-search
     - application-directives
     - basic-search
@@ -737,13 +737,13 @@ maestro:
     - server-directives
     - service-directives
   gluster_scaling:
-    :page: maestro/how-to-guides/scaling/gluster-scaling.html
-    :page_anchors:
+    page: maestro/how-to-guides/scaling/gluster-scaling.html
+    page_anchors:
     - configure-glusterfs-replica-count
     - maestro-product-heading
   glusterfs:
-    :page: maestro/how-to-guides/add-ins/glusterfs.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/glusterfs.html
+    page_anchors:
     - accessing-your-glusterfs-servers
     - fine-grained-access-control-for-your-data
     - how-can-i-use-glusterfs-in-my-application
@@ -753,16 +753,16 @@ maestro:
     - what-about-my-containers
     - why-would-i-need-glusterfs
   habitus_secrets:
-    :page: maestro/how-to-guides/build-and-config/habitus-secrets.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/habitus-secrets.html
+    page_anchors:
     - 1-explicitly-define-secrets-as-habitus-environment-variables
     - 2-specify-your-secrets-in-your-buildyml
     - 3-call-your-secrets-from-your-dockerfile
     - maestro-product-heading
     - overview
   haproxy:
-    :page: maestro/how-to-guides/build-and-config/haproxy.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/haproxy.html
+    page_anchors:
     - about-configuring-haproxy
     - change-the-haproxy-endpoint
     - committing-haproxy-customconfig
@@ -774,91 +774,91 @@ maestro:
     - specify-an-haproxy-test-interval
     - view-haproxy-stats
   how_to_guides_add_ins_index:
-    :page: maestro/how-to-guides/add-ins/index.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/index.html
+    page_anchors:
     - maestro-product-heading
   how_to_guides_automation_index:
-    :page: maestro/how-to-guides/automation/index.html
-    :page_anchors:
+    page: maestro/how-to-guides/automation/index.html
+    page_anchors:
     - maestro-product-heading
   how_to_guides_build_and_config_index:
-    :page: maestro/how-to-guides/build-and-config/index.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/index.html
+    page_anchors:
     - maestro-product-heading
   how_to_guides_clouds_index:
-    :page: maestro/how-to-guides/clouds/index.html
-    :page_anchors:
+    page: maestro/how-to-guides/clouds/index.html
+    page_anchors:
     - maestro-product-heading
   how_to_guides_common_tools_index:
-    :page: maestro/how-to-guides/common-tools/index.html
-    :page_anchors:
+    page: maestro/how-to-guides/common-tools/index.html
+    page_anchors:
     - maestro-product-heading
   how_to_guides_databases_index:
-    :page: maestro/how-to-guides/databases/index.html
-    :page_anchors:
+    page: maestro/how-to-guides/databases/index.html
+    page_anchors:
     - maestro-product-heading
   how_to_guides_deployment_index:
-    :page: maestro/how-to-guides/deployment/index.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/index.html
+    page_anchors:
     - maestro-product-heading
   how_to_guides_index:
-    :page: maestro/how-to-guides/index.html
-    :page_anchors:
+    page: maestro/how-to-guides/index.html
+    page_anchors:
     - maestro-product-heading
   how_to_guides_nginx_index:
-    :page: maestro/how-to-guides/nginx/index.html
-    :page_anchors:
+    page: maestro/how-to-guides/nginx/index.html
+    page_anchors:
     - maestro-product-heading
   how_to_guides_scaling_index:
-    :page: maestro/how-to-guides/scaling/index.html
-    :page_anchors:
+    page: maestro/how-to-guides/scaling/index.html
+    page_anchors:
     - maestro-product-heading
   how_to_guides_security_index:
-    :page: maestro/how-to-guides/security/index.html
-    :page_anchors:
+    page: maestro/how-to-guides/security/index.html
+    page_anchors:
     - maestro-product-heading
   image_repository:
-    :page: maestro/how-to-guides/build-and-config/image-repository.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/image-repository.html
+    page_anchors:
     - connecting-to-private-repositories
     - connecting-to-public-repositories
     - maestro-product-heading
   index:
-    :page: maestro/index.html
-    :page_anchors:
+    page: maestro/index.html
+    page_anchors:
     - maestro-product-heading
   influxdb:
-    :page: maestro/how-to-guides/add-ins/influxdb.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/influxdb.html
+    page_anchors:
     - add-influxdb
     - maestro-product-heading
   integration_with_circle_ci:
-    :page: maestro/integrations/integration-with-circle-ci.html
-    :page_anchors:
+    page: maestro/integrations/integration-with-circle-ci.html
+    page_anchors:
     - maestro-product-heading
   integration_with_semaphore:
-    :page: maestro/integrations/integration-with-semaphore.html
-    :page_anchors:
+    page: maestro/integrations/integration-with-semaphore.html
+    page_anchors:
     - maestro-product-heading
   integration_with_travis_ci:
-    :page: maestro/integrations/integration-with-travis-ci.html
-    :page_anchors:
+    page: maestro/integrations/integration-with-travis-ci.html
+    page_anchors:
     - maestro-product-heading
   integration_with_weave_scope:
-    :page: maestro/integrations/integration-with-weave-scope.html
-    :page_anchors:
+    page: maestro/integrations/integration-with-weave-scope.html
+    page_anchors:
     - maestro-product-heading
     - step-1-check-out-your-customconfig
     - step-2-add-the-weavescope-snippet
     - step-3-commit-and-redeploy-your-application
     - step-4-open-port-4040
   integrations_index:
-    :page: maestro/integrations/index.html
-    :page_anchors:
+    page: maestro/integrations/index.html
+    page_anchors:
     - maestro-product-heading
   ip_filtering:
-    :page: maestro/tutorials/ip-filtering.html
-    :page_anchors:
+    page: maestro/tutorials/ip-filtering.html
+    page_anchors:
     - allowing-traffic-whitelisting
     - cloudflare-edge-server-support
     - denying-traffic-blacklisting
@@ -866,45 +866,45 @@ maestro:
     - overview
     - rate-limiting-exceptions
   lets_encrypt:
-    :page: maestro/how-to-guides/security/lets-encrypt.html
-    :page_anchors:
+    page: maestro/how-to-guides/security/lets-encrypt.html
+    page_anchors:
     - installing-lets-encrypt
     - maestro-product-heading
     - troubleshooting
   load_balancer:
-    :page: maestro/how-to-guides/add-ins/load-balancer.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/load-balancer.html
+    page_anchors:
     - add-a-load-balancer
     - adding-multiple-load-balancers
     - maestro-product-heading
     - switching-between-load-balancers
   load_balancing:
-    :page: maestro/tutorials/load-balancing.html
-    :page_anchors:
+    page: maestro/tutorials/load-balancing.html
+    page_anchors:
     - adding-a-load-balancer
     - load-balancer-configuration
     - maestro-product-heading
     - overview
     - whats-next
   logentries:
-    :page: maestro/how-to-guides/add-ins/logentries.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/logentries.html
+    page_anchors:
     - about-using-logentries
     - add-logentries-to-your-application
     - maestro-product-heading
     - no-logs-or-logs-are-empty-in-logentries
     - troubleshoot
   logging:
-    :page: maestro/how-to-guides/build-and-config/logging.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/logging.html
+    page_anchors:
     - containerized-applications
     - log-rotation
     - maestro-product-heading
     - other
     - overview
   manage_backups:
-    :page: maestro/how-to-guides/databases/shells/manage-backups.html
-    :page_anchors:
+    page: maestro/how-to-guides/databases/shells/manage-backups.html
+    page_anchors:
     - 1-using-cloud-66-toolbelt
     - 2-from-your-cloud-66-dashboard
     - 3-via-command-line
@@ -922,8 +922,8 @@ maestro:
     - restoring-an-automated-backup
     - unarchive-the-backup-files
   manage_stacks_chatops:
-    :page: maestro/how-to-guides/deployment/manage-stacks-chatops.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/manage-stacks-chatops.html
+    page_anchors:
     - cloud-66-chatops
     - create-a-slack-bot
     - deregister
@@ -932,15 +932,15 @@ maestro:
     - maestro-product-heading
     - quick-install
   managing_custom_packages:
-    :page: maestro/how-to-guides/build-and-config/managing-custom-packages.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/managing-custom-packages.html
+    page_anchors:
     - adding-custom-packages-to-your-application
     - maestro-product-heading
     - more-help
     - overview
   managing_required_restarts:
-    :page: maestro/how-to-guides/deployment/managing-required-restarts.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/managing-required-restarts.html
+    page_anchors:
     - important
     - maestro-product-heading
     - overview
@@ -948,8 +948,8 @@ maestro:
     - restarting-servers
     - restarting-via-ssh
   manifest_structure:
-    :page: maestro/references/manifest-structure.html
-    :page_anchors:
+    page: maestro/references/manifest-structure.html
+    page_anchors:
     - class-1-once-off-settings
     - class-2-sticky-settings
     - class-3-flexible-settings
@@ -962,15 +962,15 @@ maestro:
     - third-level-1-configurations
     - third-level-2-servers
   memcached:
-    :page: maestro/how-to-guides/add-ins/memcached.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/memcached.html
+    page_anchors:
     - add-memcached
     - check-memcached
     - customize-memcached
     - maestro-product-heading
   migrating_applications:
-    :page: maestro/how-to-guides/deployment/migrating-applications.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/migrating-applications.html
+    page_anchors:
     - 1-set-a-failover-group
     - 10-switch-to-the-new-application
     - 11-optional-switch-your-dns-record-to-the-new-application
@@ -987,22 +987,28 @@ maestro:
     - migrating-between-servers
     - note-1
   minimum_specs_kubernetes:
-    :page: maestro/references/minimum-specs-kubernetes.html
-    :page_anchors:
+    page: maestro/references/minimum-specs-kubernetes.html
+    page_anchors:
     - allowing-headroom-for-your-app
     - maestro-product-heading
     - minimum-specs-for-a-kubernetes-cluster
     - overview
+  missing_page:
+    page: maestro/missing-page.html
+    page_anchors:
+    - maestro-product-heading
+    - this-help-page-is-missing-sorry
+    - well-fix-this-asap
   mongo_replica_sets:
-    :page: maestro/how-to-guides/scaling/mongo-replica-sets.html
-    :page_anchors:
+    page: maestro/how-to-guides/scaling/mongo-replica-sets.html
+    page_anchors:
     - configure-a-mongodb-replica-set
     - environment-variables
     - maestro-product-heading
     - using-a-mongodb-replica-set-in-your-code
   multi_cert_haproxy:
-    :page: maestro/how-to-guides/security/multi-cert_haproxy.html
-    :page_anchors:
+    page: maestro/how-to-guides/security/multi-cert_haproxy.html
+    page_anchors:
     - 1-concatenate-the-certificate-files
     - 2-upload-them-to-tmp-on-the-server
     - 3-log-into-your-haproxy-server
@@ -1012,18 +1018,18 @@ maestro:
     - note
     - overview
   multi_region_stack:
-    :page: maestro/how-to-guides/deployment/multi-region-stack.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/multi-region-stack.html
+    page_anchors:
     - maestro-product-heading
   multi_tenancy:
-    :page: maestro/how-to-guides/build-and-config/multi-tenancy.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/multi-tenancy.html
+    page_anchors:
     - maestro-product-heading
     - multiple-services
     - overview
   network_configuration:
-    :page: maestro/references/network-configuration.html
-    :page_anchors:
+    page: maestro/references/network-configuration.html
+    page_anchors:
     - add-a-firewall-rule
     - allowing-traffic
     - configure-network-traffic
@@ -1035,8 +1041,8 @@ maestro:
     - what-is-activeprotect
     - www-or-non-www-in-your-url
   nginx:
-    :page: maestro/references/nginx.html
-    :page_anchors:
+    page: maestro/references/nginx.html
+    page_anchors:
     - about-nginx
     - boolean-variables
     - default-cloud-66-nginx-error-page
@@ -1045,27 +1051,27 @@ maestro:
     - nginx-customconfig-variables
     - nginx-worker-configuration
   nginx_auth:
-    :page: maestro/how-to-guides/nginx/nginx-auth.html
-    :page_anchors:
+    page: maestro/how-to-guides/nginx/nginx-auth.html
+    page_anchors:
     - enabling-basic-authentication
     - maestro-product-heading
     - overview
   nginx_deny:
-    :page: maestro/how-to-guides/nginx/nginx-deny.html
-    :page_anchors:
+    page: maestro/how-to-guides/nginx/nginx-deny.html
+    page_anchors:
     - maestro-product-heading
     - overview
     - set-up-ip-access-control-manually
   nginx_modules:
-    :page: maestro/how-to-guides/nginx/nginx-modules.html
-    :page_anchors:
+    page: maestro/how-to-guides/nginx/nginx-modules.html
+    page_anchors:
     - custom-rack-servers
     - introduction
     - maestro-product-heading
     - passenger
   nginx_redirect:
-    :page: maestro/how-to-guides/nginx/nginx-redirect.html
-    :page_anchors:
+    page: maestro/how-to-guides/nginx/nginx-redirect.html
+    page_anchors:
     - for-http
     - for-https
     - maestro-product-heading
@@ -1073,12 +1079,12 @@ maestro:
     - redirect-between-domains-with-http-and-https
     - redirect-from-http-to-https
   nginx_ssl_ciphers:
-    :page: maestro/how-to-guides/security/nginx-ssl-ciphers.html
-    :page_anchors:
+    page: maestro/how-to-guides/security/nginx-ssl-ciphers.html
+    page_anchors:
     - maestro-product-heading
   non_recommended_server_sizes:
-    :page: maestro/references/non-recommended-server-sizes.html
-    :page_anchors:
+    page: maestro/references/non-recommended-server-sizes.html
+    page_anchors:
     - amazon-web-services
     - cloud-a
     - digitalocean
@@ -1091,8 +1097,8 @@ maestro:
     - under-powered-server-sizes-not-recommended
     - vultr
   notifications:
-    :page: maestro/account/notifications.html
-    :page_anchors:
+    page: maestro/account/notifications.html
+    page_anchors:
     - available-settings
     - browser-notifications
     - copying-notification-settings-between-apps
@@ -1106,21 +1112,21 @@ maestro:
     - webhooks
     - webhooks-for-service-accounts
   optimizing_performance:
-    :page: maestro/how-to-guides/scaling/optimizing-performance.html
-    :page_anchors:
+    page: maestro/how-to-guides/scaling/optimizing-performance.html
+    page_anchors:
     - load-testing
     - maestro-product-heading
     - preparing-for-server-load
   parallel_deployment:
-    :page: maestro/how-to-guides/deployment/parallel-deployment.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/parallel-deployment.html
+    page_anchors:
     - enabling-fast-deployments
     - fast-deployments
     - maestro-product-heading
     - overview
   partner_integration:
-    :page: maestro/integrations/partner-integration.html
-    :page_anchors:
+    page: maestro/integrations/partner-integration.html
+    page_anchors:
     - maestro-product-heading
     - provisioning
     - redirecting-to-partners-website
@@ -1131,8 +1137,8 @@ maestro:
     - user-integration-api
     - using-oauth2
   pci_compliance:
-    :page: maestro/resources/pci-compliance.html
-    :page_anchors:
+    page: maestro/resources/pci-compliance.html
+    page_anchors:
     - how-does-cloud-66-access-my-servers
     - how-does-cloud-66-prevent-access-to-customer-servers-in-case-of-a-breach
     - is-cloud-66-pci-compliant
@@ -1141,12 +1147,12 @@ maestro:
     - where-are-the-ssh-keys-stored-on-cloud-66
     - will-my-websitemobile-back-endapi-be-pci-compliant-if-i-use-cloud-66
   pg_replication_version:
-    :page: maestro/how-to-guides/databases/shells/pg-replication-version.html
-    :page_anchors:
+    page: maestro/how-to-guides/databases/shells/pg-replication-version.html
+    page_anchors:
     - maestro-product-heading
   postgis_installation:
-    :page: maestro/how-to-guides/databases/postgis-installation.html
-    :page_anchors:
+    page: maestro/how-to-guides/databases/postgis-installation.html
+    page_anchors:
     - enable-adminpack
     - install-pgrouting
     - installing-with-cloud-66
@@ -1157,8 +1163,8 @@ maestro:
     - postgis-extension-for-postgresql
     - prerequisites
   querying_server_metadata:
-    :page: maestro/how-to-guides/deployment/querying-server-metadata.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/querying-server-metadata.html
+    page_anchors:
     - 1-deployment-information
     - 2-server-os-information
     - 3-find-out-who-deployed-last-or-currently
@@ -1168,17 +1174,17 @@ maestro:
     - overview
     - using-metadata-in-a-workflow
   quickstarts_index:
-    :page: maestro/quickstarts/index.html
-    :page_anchors:
+    page: maestro/quickstarts/index.html
+    page_anchors:
     - maestro-product-heading
   rabbitmq:
-    :page: maestro/how-to-guides/add-ins/rabbitmq.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/rabbitmq.html
+    page_anchors:
     - add-rabbitmq
     - maestro-product-heading
   redeployment_hook:
-    :page: maestro/how-to-guides/deployment/redeployment-hook.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/redeployment-hook.html
+    page_anchors:
     - accessing-redeployment-hooks
     - adding-redeployment-hooks-to-your-pipeline
     - bitbucket-setup
@@ -1194,90 +1200,90 @@ maestro:
     - usage-example
     - usage-examples
   redis:
-    :page: maestro/how-to-guides/add-ins/redis.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/redis.html
+    page_anchors:
     - about-adding-redis-to-your-application
     - add-redis-to-your-application
     - maestro-product-heading
   references_index:
-    :page: maestro/references/index.html
-    :page_anchors:
+    page: maestro/references/index.html
+    page_anchors:
     - maestro-product-heading
   references_shells_backups_index:
-    :page: maestro/references/shells/backups/index.html
-    :page_anchors: []
+    page: maestro/references/shells/backups/index.html
+    page_anchors: []
   references_shells_databases_index:
-    :page: maestro/references/shells/databases/index.html
-    :page_anchors: []
+    page: maestro/references/shells/databases/index.html
+    page_anchors: []
   references_shells_download_index:
-    :page: maestro/references/shells/download/index.html
-    :page_anchors: []
+    page: maestro/references/shells/download/index.html
+    page_anchors: []
   references_shells_gateway_index:
-    :page: maestro/references/shells/gateway/index.html
-    :page_anchors: []
+    page: maestro/references/shells/gateway/index.html
+    page_anchors: []
   references_shells_index:
-    :page: maestro/references/shells/index.html
-    :page_anchors: []
+    page: maestro/references/shells/index.html
+    page_anchors: []
   references_shells_jobs_index:
-    :page: maestro/references/shells/jobs/index.html
-    :page_anchors: []
+    page: maestro/references/shells/jobs/index.html
+    page_anchors: []
   references_shells_lease_index:
-    :page: maestro/references/shells/lease/index.html
-    :page_anchors: []
+    page: maestro/references/shells/lease/index.html
+    page_anchors: []
   references_shells_login_index:
-    :page: maestro/references/shells/login/index.html
-    :page_anchors: []
+    page: maestro/references/shells/login/index.html
+    page_anchors: []
   references_shells_open_index:
-    :page: maestro/references/shells/open/index.html
-    :page_anchors: []
+    page: maestro/references/shells/open/index.html
+    page_anchors: []
   references_shells_redeploy_index:
-    :page: maestro/references/shells/redeploy/index.html
-    :page_anchors: []
+    page: maestro/references/shells/redeploy/index.html
+    page_anchors: []
   references_shells_run_index:
-    :page: maestro/references/shells/run/index.html
-    :page_anchors: []
+    page: maestro/references/shells/run/index.html
+    page_anchors: []
   references_shells_servers_index:
-    :page: maestro/references/shells/servers/index.html
-    :page_anchors: []
+    page: maestro/references/shells/servers/index.html
+    page_anchors: []
   references_shells_services_index:
-    :page: maestro/references/shells/services/index.html
-    :page_anchors: []
+    page: maestro/references/shells/services/index.html
+    page_anchors: []
   references_shells_settings_index:
-    :page: maestro/references/shells/settings/index.html
-    :page_anchors: []
+    page: maestro/references/shells/settings/index.html
+    page_anchors: []
   references_shells_ssh_index:
-    :page: maestro/references/shells/ssh/index.html
-    :page_anchors: []
+    page: maestro/references/shells/ssh/index.html
+    page_anchors: []
   references_shells_stacks_index:
-    :page: maestro/references/shells/stacks/index.html
-    :page_anchors: []
+    page: maestro/references/shells/stacks/index.html
+    page_anchors: []
   references_shells_tail_index:
-    :page: maestro/references/shells/tail/index.html
-    :page_anchors: []
+    page: maestro/references/shells/tail/index.html
+    page_anchors: []
   references_shells_toolbelt_env_vars_index:
-    :page: maestro/references/shells/toolbelt-env-vars/index.html
-    :page_anchors: []
+    page: maestro/references/shells/toolbelt-env-vars/index.html
+    page_anchors: []
   references_shells_toolbelt_processes_index:
-    :page: maestro/references/shells/toolbelt-processes/index.html
-    :page_anchors: []
+    page: maestro/references/shells/toolbelt-processes/index.html
+    page_anchors: []
   references_shells_tunnel_index:
-    :page: maestro/references/shells/tunnel/index.html
-    :page_anchors: []
+    page: maestro/references/shells/tunnel/index.html
+    page_anchors: []
   references_shells_upload_index:
-    :page: maestro/references/shells/upload/index.html
-    :page_anchors: []
+    page: maestro/references/shells/upload/index.html
+    page_anchors: []
   references_shells_users_index:
-    :page: maestro/references/shells/users/index.html
-    :page_anchors: []
+    page: maestro/references/shells/users/index.html
+    page_anchors: []
   referral_program:
-    :page: maestro/resources/referral-program.html
-    :page_anchors:
+    page: maestro/resources/referral-program.html
+    page_anchors:
     - how-it-works
     - maestro-product-heading
     - your-referral-code
   registered_servers:
-    :page: maestro/how-to-guides/deployment/registered-servers.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/registered-servers.html
+    page_anchors:
     - maestro-product-heading
     - overview
     - register-a-server
@@ -1286,28 +1292,28 @@ maestro:
     - using-cloud-66-toolbelt
     - via-the-dashboard
   remove_passphrase:
-    :page: maestro/how-to-guides/security/remove-passphrase.html
-    :page_anchors:
+    page: maestro/how-to-guides/security/remove-passphrase.html
+    page_anchors:
     - acknowledgement
     - maestro-product-heading
     - overview
     - removing-a-passphrase-using-openssl
   reserved_tags:
-    :page: maestro/references/reserved-tags.html
-    :page_anchors:
+    page: maestro/references/reserved-tags.html
+    page_anchors:
     - adding-tags-to-a-server
     - maestro-product-heading
     - reserved-tags
   resources_beta_program_index:
-    :page: maestro/resources/beta-program/index.html
-    :page_anchors: []
+    page: maestro/resources/beta-program/index.html
+    page_anchors: []
   resources_index:
-    :page: maestro/resources/index.html
-    :page_anchors:
+    page: maestro/resources/index.html
+    page_anchors:
     - maestro-product-heading
   scaling:
-    :page: maestro/how-to-guides/scaling/scaling.html
-    :page_anchors:
+    page: maestro/how-to-guides/scaling/scaling.html
+    page_anchors:
     - about-scaling-servers
     - database-servers
     - horizontal-scaling
@@ -1315,16 +1321,16 @@ maestro:
     - maestro-product-heading
     - scaling-services
   security:
-    :page: maestro/resources/security.html
-    :page_anchors:
+    page: maestro/resources/security.html
+    page_anchors:
     - credit-card-information
     - customer-protection
     - infrastructure-security
     - maestro-product-heading
     - reporting-security-issues
   server_deletion:
-    :page: maestro/how-to-guides/deployment/server-deletion.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/server-deletion.html
+    page_anchors:
     - aws
     - azure
     - clouda
@@ -1335,8 +1341,8 @@ maestro:
     - packet
     - rackspace
   server_ip_addresses:
-    :page: maestro/references/server-ip-addresses.html
-    :page_anchors:
+    page: maestro/references/server-ip-addresses.html
+    page_anchors:
     - cloud-66-agent
     - cloud-66-hostnames
     - finding-your-cloud-66-hostname
@@ -1344,15 +1350,15 @@ maestro:
     - maestro-product-heading
     - new-ip-addresses
   server_monitoring:
-    :page: maestro/references/server-monitoring.html
-    :page_anchors:
+    page: maestro/references/server-monitoring.html
+    page_anchors:
     - adding-a-monitoring-service-to-your-app
     - common-monitoring-solutions
     - maestro-product-heading
     - overview
   server_restart_notifications:
-    :page: maestro/references/server-restart-notifications.html
-    :page_anchors:
+    page: maestro/references/server-restart-notifications.html
+    page_anchors:
     - additional-information
     - do-i-need-to-take-immediate-action
     - how-do-a-restart-my-servers
@@ -1361,16 +1367,16 @@ maestro:
     - overview
     - restart-criteria
   service_accounts:
-    :page: maestro/account/service-accounts.html
-    :page_anchors:
+    page: maestro/account/service-accounts.html
+    page_anchors:
     - configuring-notifications-and-webhooks
     - creating-a-service-account
     - granting-api-access-to-a-service-account
     - maestro-product-heading
     - overview
   service_lifecycle_management:
-    :page: maestro/how-to-guides/build-and-config/service-lifecycle-management.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/service-lifecycle-management.html
+    page_anchors:
     - configuration
     - deploying-your-application
     - health
@@ -1385,8 +1391,8 @@ maestro:
     - restart-on-deploy
     - stop-grace
   service_network_configuration:
-    :page: maestro/how-to-guides/build-and-config/service-network-configuration.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/service-network-configuration.html
+    page_anchors:
     - configuration
     - containernet
     - dns-behaviour
@@ -1399,16 +1405,16 @@ maestro:
     - traffic-matches
     - using-traffic-matches-to-reroute-all-traffic
   service_networking:
-    :page: maestro/how-to-guides/build-and-config/service-networking.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/service-networking.html
+    page_anchors:
     - examples-of-default-ports
     - maestro-product-heading
     - mapping-multiple-ports
     - non-http-ports-tcp-and-udp
     - overview
   service_resources:
-    :page: maestro/how-to-guides/build-and-config/service-resources.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/service-resources.html
+    page_anchors:
     - allocating-nodes-using-a-combination-of-names-and-tags
     - allocating-nodes-using-names
     - allocating-nodes-using-tags
@@ -1427,8 +1433,8 @@ maestro:
     - requesting-cpu-and-ram
     - understanding-resource-management-options
   service_storage:
-    :page: maestro/how-to-guides/build-and-config/service-storage.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/service-storage.html
+    page_anchors:
     - adding-advanced-storage-volumes
     - adding-simple-storage-volumes
     - maestro-product-heading
@@ -1436,19 +1442,19 @@ maestro:
     - overview
     - volume-settings
   service_tags_annotations:
-    :page: maestro/how-to-guides/deployment/service-tags-annotations.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/service-tags-annotations.html
+    page_anchors:
     - maestro-product-heading
     - service-annotations
     - service-tags
   setting_up_custom_livelogs:
-    :page: maestro/how-to-guides/build-and-config/setting-up-custom-livelogs.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/setting-up-custom-livelogs.html
+    page_anchors:
     - maestro-product-heading
     - note
   setting_up_redirect:
-    :page: maestro/tutorials/setting-up-redirect.html
-    :page_anchors:
+    page: maestro/tutorials/setting-up-redirect.html
+    page_anchors:
     - accessing-redirect-settings
     - maestro-product-heading
     - overview
@@ -1457,15 +1463,15 @@ maestro:
     - what-youll-need
     - www-or-non-www
   sharing_db:
-    :page: maestro/how-to-guides/databases/shells/sharing-db.html
-    :page_anchors:
+    page: maestro/how-to-guides/databases/shells/sharing-db.html
+    page_anchors:
     - configuring-for-a-shared-database
     - database-credentials
     - maestro-product-heading
     - overview
   shell:
-    :page: maestro/how-to-guides/add-ins/shell.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/shell.html
+    page_anchors:
     - adding-a-new-server-job
     - default-values
     - maestro-product-heading
@@ -1474,8 +1480,8 @@ maestro:
     - passing-parameters-to-job
     - using-parameters
   slack_notifications:
-    :page: maestro/how-to-guides/common-tools/slack-notifications.html
-    :page_anchors:
+    page: maestro/how-to-guides/common-tools/slack-notifications.html
+    page_anchors:
     - help-with-the-cloud-66-slack-app
     - installing-the-cloud-66-slack-app
     - maestro-product-heading
@@ -1483,8 +1489,8 @@ maestro:
     - removing-the-cloud-66-slack-app
     - what-does-the-cloud-66-slack-app-do
   ssh:
-    :page: maestro/how-to-guides/common-tools/ssh.html
-    :page_anchors:
+    page: maestro/how-to-guides/common-tools/ssh.html
+    page_anchors:
     - cloud-providers-firewall-api-has-delay
     - debugging-using-verbose-mode
     - detected-ip-is-different
@@ -1493,15 +1499,15 @@ maestro:
     - maestro-product-heading
     - prompted-for-password
   ssh_keys:
-    :page: maestro/how-to-guides/common-tools/ssh-keys.html
-    :page_anchors:
+    page: maestro/how-to-guides/common-tools/ssh-keys.html
+    page_anchors:
     - connect-to-your-server-using-your-key
     - generate-keys-on-linux-and-mac
     - generate-keys-on-windows
     - maestro-product-heading
   ssh_to_server:
-    :page: maestro/how-to-guides/common-tools/ssh-to-server.html
-    :page_anchors:
+    page: maestro/how-to-guides/common-tools/ssh-to-server.html
+    page_anchors:
     - check-the-permissions-of-your-home-and-ssh-directories
     - cloud-66-toolbelt
     - examples
@@ -1515,14 +1521,14 @@ maestro:
     - troubleshooting
     - update-your-toolbelt-version
   ssl:
-    :page: maestro/how-to-guides/add-ins/ssl.html
-    :page_anchors:
+    page: maestro/how-to-guides/add-ins/ssl.html
+    page_anchors:
     - lets-encrypt-ssl-certificate
     - maestro-product-heading
     - standard-ssl-certificate
   ssl_certificate:
-    :page: maestro/how-to-guides/security/ssl-certificate.html
-    :page_anchors:
+    page: maestro/how-to-guides/security/ssl-certificate.html
+    page_anchors:
     - generate-a-certificate
     - important
     - intermediate-certificates
@@ -1531,8 +1537,8 @@ maestro:
     - overview
     - separate-domains-with-different-certificates
   ssl_termination_on_load_balancers:
-    :page: maestro/how-to-guides/security/ssl-termination-on-load-balancers.html
-    :page_anchors:
+    page: maestro/how-to-guides/security/ssl-termination-on-load-balancers.html
+    page_anchors:
     - amazon-elastic-load-balancer
     - enable-automatic-ssl-termination
     - maestro-product-heading
@@ -1540,8 +1546,8 @@ maestro:
     - using-the-aws-command-line
     - using-the-aws-dashboard
   stack_failover:
-    :page: maestro/how-to-guides/build-and-config/stack-failover.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/stack-failover.html
+    page_anchors:
     - 1-code
     - 2-data
     - 3-traffic
@@ -1549,14 +1555,14 @@ maestro:
     - maestro-product-heading
     - setup-the-failover-group
   symlink_folders:
-    :page: maestro/how-to-guides/build-and-config/symlink-folders.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/symlink-folders.html
+    page_anchors:
     - adding-symbolic-links
     - maestro-product-heading
     - using-the-public-folder
   tagging_components:
-    :page: maestro/how-to-guides/deployment/tagging-components.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/tagging-components.html
+    page_anchors:
     - adding-tags-to-a-server
     - beta-only
     - keyvalue-tags
@@ -1568,8 +1574,8 @@ maestro:
     - syntax-of-propagated-tags
     - tag-limits
   team_accounts:
-    :page: maestro/account/team-accounts.html
-    :page_anchors:
+    page: maestro/account/team-accounts.html
+    page_anchors:
     - add-a-new-user-team-member
     - application-users
     - deleting-user-accounts--teams
@@ -1580,8 +1586,8 @@ maestro:
     - user-roles-and-permissions
     - using-team-accounts
   technical_specifications:
-    :page: maestro/resources/technical-specifications.html
-    :page_anchors:
+    page: maestro/resources/technical-specifications.html
+    page_anchors:
     - 1-components-built-via-apt-packages
     - 2-components-built-from-source
     - component-versions
@@ -1591,24 +1597,24 @@ maestro:
     - supported-cloud-providers
     - supported-platforms
   terminology:
-    :page: maestro/resources/terminology.html
-    :page_anchors:
+    page: maestro/resources/terminology.html
+    page_anchors:
     - maestro-product-heading
   the_basics_index:
-    :page: maestro/the-basics/index.html
-    :page_anchors:
+    page: maestro/the-basics/index.html
+    page_anchors:
     - maestro-product-heading
   tls_versions:
-    :page: maestro/how-to-guides/security/tls-versions.html
-    :page_anchors:
+    page: maestro/how-to-guides/security/tls-versions.html
+    page_anchors:
     - disabling-tls-10-on-a-load-balancer
     - disabling-tls-10-on-the-web-server
     - maestro-product-heading
     - overview
     - warning
   toolbelt:
-    :page: maestro/references/toolbelt.html
-    :page_anchors:
+    page: maestro/references/toolbelt.html
+    page_anchors:
     - a-note-on-overwriting-access-profiles
     - about-backup-management
     - access-control-for-toolbelt-login
@@ -1754,8 +1760,8 @@ maestro:
     - usage-8
     - usage-9
   troubleshooting_server_connection:
-    :page: maestro/how-to-guides/deployment/troubleshooting-server-connection.html
-    :page_anchors:
+    page: maestro/how-to-guides/deployment/troubleshooting-server-connection.html
+    page_anchors:
     - heavy-load-on-the-servers
     - issues-with-your-kubernetes-cluster
     - maestro-product-heading
@@ -1766,12 +1772,12 @@ maestro:
     - recent-server-restarts
     - temporary-network-interruptions
   tutorials_index:
-    :page: maestro/tutorials/index.html
-    :page_anchors:
+    page: maestro/tutorials/index.html
+    page_anchors:
     - maestro-product-heading
   two_factor_authentication:
-    :page: maestro/account/two-factor-authentication.html
-    :page_anchors:
+    page: maestro/account/two-factor-authentication.html
+    page_anchors:
     - add-a-recovery-phone-number
     - adding-a-physical-fido-security-key
     - enabling-2fa-on-your-account
@@ -1783,8 +1789,8 @@ maestro:
     - troubleshooting
     - what-is-two-factor-authentication
   understanding_and_improving_security_score:
-    :page: maestro/account/understanding-and-improving-security-score.html
-    :page_anchors:
+    page: maestro/account/understanding-and-improving-security-score.html
+    page_anchors:
     - fido-authentication
     - finding-your-security-score
     - how-fido-works
@@ -1797,28 +1803,28 @@ maestro:
     - why-cant-we-share-logins
     - why-do-i-need-2fa
   understanding_failover_groups:
-    :page: maestro/references/understanding-failover-groups.html
-    :page_anchors:
+    page: maestro/references/understanding-failover-groups.html
+    page_anchors:
     - how-failover-groups-work
     - maestro-product-heading
     - testing-failover-groups
     - using-failover-groups-with-ssl-certificates
     - why-use-failover-groups
   uninstall_mysql:
-    :page: maestro/how-to-guides/databases/shells/uninstall-mysql.html
-    :page_anchors:
+    page: maestro/how-to-guides/databases/shells/uninstall-mysql.html
+    page_anchors:
     - maestro-product-heading
   using_c66_via_firewall:
-    :page: maestro/how-to-guides/build-and-config/using-c66-via-firewall.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/using-c66-via-firewall.html
+    page_anchors:
     - cloud-66s-authorized-ip-addresses
     - maestro-product-heading
     - overview
     - ports-that-cloud-66-requires
     - warning
   using_cloud66_toolbelt:
-    :page: maestro/quickstarts/using-cloud66-toolbelt.html
-    :page_anchors:
+    page: maestro/quickstarts/using-cloud66-toolbelt.html
+    page_anchors:
     - advanced
     - careful
     - creating-a-cx-profile
@@ -1835,12 +1841,12 @@ maestro:
     - view-toolbelt-information
     - what-is-toolbelt
   using_master_data_staging:
-    :page: maestro/how-to-guides/databases/shells/using-master-data-staging.html
-    :page_anchors:
+    page: maestro/how-to-guides/databases/shells/using-master-data-staging.html
+    page_anchors:
     - maestro-product-heading
   websocket_support:
-    :page: maestro/how-to-guides/build-and-config/websocket-support.html
-    :page_anchors:
+    page: maestro/how-to-guides/build-and-config/websocket-support.html
+    page_anchors:
     - configuring-for-websocket
     - maestro-product-heading
     - overview
@@ -1851,20 +1857,20 @@ maestro:
     - websocket-through-a-load-balancer
 node:
   access_your_code:
-    :page: node/how-to-guides/common-tools/access-your-code.html
-    :page_anchors:
+    page: node/how-to-guides/common-tools/access-your-code.html
+    page_anchors:
     - bitbucket-example
     - github-example
     - node-product-heading
     - private-repositories
     - public-repositories
   account_index:
-    :page: node/account/index.html
-    :page_anchors:
+    page: node/account/index.html
+    page_anchors:
     - node-product-heading
   account_management:
-    :page: node/account/account-management.html
-    :page_anchors:
+    page: node/account/account-management.html
+    page_anchors:
     - add-or-remove-users
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
@@ -1875,35 +1881,35 @@ node:
     - service-accounts
     - view--update-account-information
   account_protection:
-    :page: node/account/account-protection.html
-    :page_anchors:
+    page: node/account/account-protection.html
+    page_anchors:
     - account-protection-alerts
     - node-product-heading
     - overview
     - what-is-cloud-66-account-protection
   active_protect:
-    :page: node/references/active-protect.html
-    :page_anchors:
+    page: node/references/active-protect.html
+    page_anchors:
     - activeprotect-interface
     - configuring-activeprotect
     - node-product-heading
     - ssh-soft-blocking
     - what-is-activeprotect
   add_in_implementation:
-    :page: node/how-to-guides/add-ins/add-in-implementation.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/add-in-implementation.html
+    page_anchors:
     - node-product-heading
   adding_updating_deleting:
-    :page: node/the-basics/adding-updating-deleting.html
-    :page_anchors:
+    page: node/the-basics/adding-updating-deleting.html
+    page_anchors:
     - building-an-application
     - clone-an-application
     - deleting-an-application
     - node-product-heading
     - updating-application-properties
   application_settings_node:
-    :page: node/how-to-guides/deployment/application-settings-node.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/application-settings-node.html
+    page_anchors:
     - change-your-datasources
     - change-your-nodejs-version
     - connect-to-your-datasources
@@ -1916,8 +1922,8 @@ node:
     - postgresql
     - redis
   applying_upgrades:
-    :page: node/how-to-guides/deployment/applying-upgrades.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/applying-upgrades.html
+    page_anchors:
     - about-manual-upgrades
     - automated-package-update-policy
     - controlling-package-updates
@@ -1932,27 +1938,27 @@ node:
     - unable-to-find-expected-entry-errors
     - upgrade-package-types
   archiving_applications:
-    :page: node/account/archiving-applications.html
-    :page_anchors:
+    page: node/account/archiving-applications.html
+    page_anchors:
     - archiving-an-application
     - limits-and-effects-of-archiving
     - node-product-heading
     - overview
     - restoring-an-application
   audit_logs:
-    :page: node/account/audit-logs.html
-    :page_anchors:
+    page: node/account/audit-logs.html
+    page_anchors:
     - accessing-audit-logs
     - audit-logging
     - node-product-heading
     - searching-audit-logs
   browser_requirements:
-    :page: node/account/browser-requirements.html
-    :page_anchors:
+    page: node/account/browser-requirements.html
+    page_anchors:
     - node-product-heading
   building_a_manifest_file:
-    :page: node/how-to-guides/deployment/building-a-manifest-file.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/building-a-manifest-file.html
+    page_anchors:
     - applying-settings-across-all-environments
     - aws-load-balancer
     - deploy-to-your-own-server
@@ -1981,30 +1987,30 @@ node:
     - which-environment
     - which-server
   change_psql_directory:
-    :page: node/how-to-guides/databases/shells/change-psql-directory.html
-    :page_anchors:
+    page: node/how-to-guides/databases/shells/change-psql-directory.html
+    page_anchors:
     - node-product-heading
   cloud66_badge:
-    :page: node/resources/cloud66-badge.html
-    :page_anchors:
+    page: node/resources/cloud66-badge.html
+    page_anchors:
     - important
     - node-product-heading
   cloud66_status:
-    :page: node/resources/cloud66-status.html
-    :page_anchors:
+    page: node/resources/cloud66-status.html
+    page_anchors:
     - latest-updates
     - node-product-heading
     - status-and-uptime
   cloud_66_beta_program:
-    :page: node/resources/cloud-66-beta-program.html
-    :page_anchors:
+    page: node/resources/cloud-66-beta-program.html
+    page_anchors:
     - joining-the-beta-programme
     - node-product-heading
     - overview
     - reporting-issues
   cloud_aws:
-    :page: node/how-to-guides/clouds/cloud-aws.html
-    :page_anchors:
+    page: node/how-to-guides/clouds/cloud-aws.html
+    page_anchors:
     - cloud-66-tag-propagation
     - elb-websocket-support
     - external-links
@@ -2018,8 +2024,8 @@ node:
     - using-ec2-classic
     - using-iam-instance-profiles-with-your-servers
   cloud_azure:
-    :page: node/how-to-guides/clouds/cloud-azure.html
-    :page_anchors:
+    page: node/how-to-guides/clouds/cloud-azure.html
+    page_anchors:
     - cloud-66-tag-propagation
     - generating-a-management-certificate
     - generating-credentials-for-azure-cloud
@@ -2027,28 +2033,28 @@ node:
     - node-product-heading
     - using-your-management-certificate
   cloud_clouda:
-    :page: node/how-to-guides/clouds/cloud-clouda.html
-    :page_anchors:
+    page: node/how-to-guides/clouds/cloud-clouda.html
+    page_anchors:
     - adding-your-cloud-a-credentials
     - node-product-heading
   cloud_do:
-    :page: node/how-to-guides/clouds/cloud-do.html
-    :page_anchors:
+    page: node/how-to-guides/clouds/cloud-do.html
+    page_anchors:
     - authorise-cloud-66-with-digitalocean
     - cloud-66-tag-propagation
     - external-links
     - node-product-heading
     - upgrading-account-keys
   cloud_gce:
-    :page: node/how-to-guides/clouds/cloud-gce.html
-    :page_anchors:
+    page: node/how-to-guides/clouds/cloud-gce.html
+    page_anchors:
     - add-gce-keys-to-an-application
     - external-links
     - generate-gce-api-keys
     - node-product-heading
   cloud_hetzner:
-    :page: node/how-to-guides/clouds/cloud-hetzner.html
-    :page_anchors:
+    page: node/how-to-guides/clouds/cloud-hetzner.html
+    page_anchors:
     - cloud-66-tag-propagation
     - external-links
     - how-to-add-your-hetzner-api-key-to-cloud-66
@@ -2056,44 +2062,44 @@ node:
     - support-for-older-versions-of-ubuntu
     - using-multiple-api-keys-with-hetzner
   cloud_linode:
-    :page: node/how-to-guides/clouds/cloud-linode.html
-    :page_anchors:
+    page: node/how-to-guides/clouds/cloud-linode.html
+    page_anchors:
     - add-a-personal-access-token-to-a-new-application
     - external-links
     - generate-a-personal-access-token
     - node-product-heading
     - update-an-existing-personal-access-token
   cloud_ovh:
-    :page: node/how-to-guides/clouds/cloud-ovh.html
-    :page_anchors:
+    page: node/how-to-guides/clouds/cloud-ovh.html
+    page_anchors:
     - integrating-ovh-with-cloud-66
     - node-product-heading
     - using-multiple-keys-with-ovh
   cloud_packet:
-    :page: node/how-to-guides/clouds/cloud-packet.html
-    :page_anchors:
+    page: node/how-to-guides/clouds/cloud-packet.html
+    page_anchors:
     - adding-your-packet-credentials
     - cloud-66-tag-propagation
     - node-product-heading
   cloud_rackspace:
-    :page: node/how-to-guides/clouds/cloud-rackspace.html
-    :page_anchors:
+    page: node/how-to-guides/clouds/cloud-rackspace.html
+    page_anchors:
     - add-rackspace-key-to-an-application
     - external-links
     - generate-a-rackspace-api-key
     - node-product-heading
     - note
   cloud_vultr:
-    :page: node/how-to-guides/clouds/cloud-vultr.html
-    :page_anchors:
+    page: node/how-to-guides/clouds/cloud-vultr.html
+    page_anchors:
     - add-vultr-key-to-an-application
     - add-your-vultr-api-key-to-cloud-66
     - external-links
     - node-product-heading
     - support-for-older-versions-of-ubuntu
   config_store:
-    :page: node/how-to-guides/deployment/config-store.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/config-store.html
+    page_anchors:
     - accessing-configstore-variables
     - account-level
     - application-level
@@ -2109,8 +2115,8 @@ node:
     - serviceyml-placeholder
     - skycap-stencils
   configure_dns:
-    :page: node/tutorials/configure-dns.html
-    :page_anchors:
+    page: node/tutorials/configure-dns.html
+    page_anchors:
     - 1-use-a-modern-dns-provider
     - 2-use-an-a-record
     - 3-subdomain-redirection
@@ -2119,14 +2125,14 @@ node:
     - important
     - node-product-heading
   configuring_custom_ports:
-    :page: node/how-to-guides/deployment/configuring-custom-ports.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/configuring-custom-ports.html
+    page_anchors:
     - changing-ports-in-your-application-code
     - node-product-heading
     - overview
   connect_cloud66_to_git_repo:
-    :page: node/references/connect-cloud66-to-git-repo.html
-    :page_anchors:
+    page: node/references/connect-cloud66-to-git-repo.html
+    page_anchors:
     - bitbucket-example
     - github-example
     - node-product-heading
@@ -2134,14 +2140,14 @@ node:
     - private-repositories
     - public-repositories
   connect_db_servers:
-    :page: node/how-to-guides/databases/shells/connect-db-servers.html
-    :page_anchors:
+    page: node/how-to-guides/databases/shells/connect-db-servers.html
+    page_anchors:
     - node-product-heading
     - on-the-server
     - with-a-client
   custom_config:
-    :page: node/tutorials/custom-config.html
-    :page_anchors:
+    page: node/tutorials/custom-config.html
+    page_anchors:
     - accessing-customconfig
     - node-product-heading
     - preview-a-template
@@ -2149,8 +2155,8 @@ node:
     - updates-to-configuration-files-and-patches
     - whats-next
   custom_config_git:
-    :page: node/tutorials/custom-config-git.html
-    :page_anchors:
+    page: node/tutorials/custom-config-git.html
+    page_anchors:
     - automatic-updates
     - changes-made-in-customconfig-ui
     - changes-made-through-customconfig-git
@@ -2161,14 +2167,14 @@ node:
     - uploading-your-ssh-public-key
     - whats-next
   custom_server:
-    :page: node/how-to-guides/add-ins/custom-server.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/custom-server.html
+    page_anchors:
     - add-a-custom-server
     - node-product-heading
     - what-is-the-custom-server-add-in
   customizing_nginx:
-    :page: node/how-to-guides/deployment/customizing-nginx.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/customizing-nginx.html
+    page_anchors:
     - customizing-the-nginx-error-page
     - editing-nginx-configurations
     - enabling-http2
@@ -2177,12 +2183,12 @@ node:
     - overview
     - working-examples
   data_protection:
-    :page: node/resources/data-protection.html
-    :page_anchors:
+    page: node/resources/data-protection.html
+    page_anchors:
     - node-product-heading
   database_backups:
-    :page: node/how-to-guides/add-ins/database-backups.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/database-backups.html
+    page_anchors:
     - backup-format
     - backup-schedule
     - backup-types
@@ -2197,22 +2203,22 @@ node:
     - unmanaged-backups
     - what-is-the-database-backup-add-in
   database_customization:
-    :page: node/how-to-guides/databases/database-customization.html
-    :page_anchors:
+    page: node/how-to-guides/databases/database-customization.html
+    page_anchors:
     - database-customization-variables
     - global-variables
     - node-product-heading
   database_encryption:
-    :page: node/how-to-guides/databases/database-encryption.html
-    :page_anchors:
+    page: node/how-to-guides/databases/database-encryption.html
+    page_anchors:
     - data-encryption-via-the-application
     - implementing-native-database-encryption-tde-with-cloud-66
     - native-database-encryption
     - node-product-heading
     - overview
   database_management:
-    :page: node/how-to-guides/databases/database-management.html
-    :page_anchors:
+    page: node/how-to-guides/databases/database-management.html
+    page_anchors:
     - about-deploying-databases
     - customize-your-database-configuration
     - database-customization-variables
@@ -2224,8 +2230,8 @@ node:
     - upgrading-your-database
     - warning
   database_replication:
-    :page: node/how-to-guides/databases/database-replication.html
-    :page_anchors:
+    page: node/how-to-guides/databases/database-replication.html
+    page_anchors:
     - between-applications
     - disable-database-replication
     - enable-database-replication
@@ -2238,16 +2244,16 @@ node:
     - re-synchronizing-slave-with-master
     - single-application
   deploy_hook_examples:
-    :page: node/how-to-guides/deployment/deploy-hook-examples.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/deploy-hook-examples.html
+    page_anchors:
     - how-do-i-install-a-package-or-library-on-each-server-i-deploy
     - how-do-i-install-a-specific-non-standard-version-of-a-package-or-library
     - node-product-heading
     - overview
     - querying-server-metadata
   deploy_hooks:
-    :page: node/tutorials/deploy-hooks.html
-    :page_anchors:
+    page: node/tutorials/deploy-hooks.html
+    page_anchors:
     - debugging-deploy-hooks
     - deployment-process-simplified
     - example-env-vars-parameter
@@ -2262,8 +2268,8 @@ node:
     - using-snippet-deploy-hooks
     - whats-next
   deploy_hooks_syntax:
-    :page: node/references/deploy-hooks-syntax.html
-    :page_anchors:
+    page: node/references/deploy-hooks-syntax.html
+    page_anchors:
     - hook-fields
     - hook-fields-commands
     - hook-fields-existing-scripts
@@ -2273,33 +2279,33 @@ node:
     - node-product-heading
     - what-are-deploy-hooks
   deployment_gateway:
-    :page: node/how-to-guides/deployment/deployment-gateway.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/deployment-gateway.html
+    page_anchors:
     - about-deployment-gateways
     - accessing-your-servers-behind-the-gateway-server
     - how-to-deploy-your-application-behind-the-gateway-server
     - important
     - node-product-heading
   deployment_history:
-    :page: node/how-to-guides/deployment/deployment-history.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/deployment-history.html
+    page_anchors:
     - accessing-the-timeline
     - deployment-status
     - node-product-heading
     - overview
   elasticsearch:
-    :page: node/how-to-guides/add-ins/elasticsearch.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/elasticsearch.html
+    page_anchors:
     - add-elasticearch
     - node-product-heading
   elasticsearch_scaling:
-    :page: node/how-to-guides/scaling/elasticsearch-scaling.html
-    :page_anchors:
+    page: node/how-to-guides/scaling/elasticsearch-scaling.html
+    page_anchors:
     - general-recommendations
     - node-product-heading
   env_vars:
-    :page: node/tutorials/env-vars.html
-    :page_anchors:
+    page: node/tutorials/env-vars.html
+    page_anchors:
     - about-environment-variables
     - assign-env-vars-after-app-build
     - assign-env-vars-for-deployment
@@ -2314,15 +2320,15 @@ node:
     - using-environment-variables
     - whats-next
   failover_groups:
-    :page: node/tutorials/failover-groups.html
-    :page_anchors:
+    page: node/tutorials/failover-groups.html
+    page_anchors:
     - add-a-failover-group
     - environment-variables
     - node-product-heading
     - notes
   faq:
-    :page: node/the-basics/faq.html
-    :page_anchors:
+    page: node/the-basics/faq.html
+    page_anchors:
     - are-their-any-requirements-for-the-user-on-my-servers
     - can-i-deploy-multiple-apps-on-a-single-server
     - can-i-use-cloud-66-with-my-own-servers
@@ -2337,14 +2343,14 @@ node:
     - who-pays-for-the-servers
     - why-do-you-need-my-server-ssh-key
   filebeat:
-    :page: node/how-to-guides/add-ins/filebeat.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/filebeat.html
+    page_anchors:
     - about-using-filebeat
     - add-filebeat-to-your-application
     - node-product-heading
   getting_started:
-    :page: node/quickstarts/getting-started.html
-    :page_anchors:
+    page: node/quickstarts/getting-started.html
+    page_anchors:
     - accessing-your-git-repo
     - bitbucket-content
     - choosing-a-deployment-target
@@ -2359,8 +2365,8 @@ node:
     - other-git-content
     - what-youll-need
   getting_started_with_manifest:
-    :page: node/quickstarts/getting-started-with-manifest.html
-    :page_anchors:
+    page: node/quickstarts/getting-started-with-manifest.html
+    page_anchors:
     - a-working-example
     - change-cors-settings
     - force-nginx-to-update
@@ -2368,8 +2374,8 @@ node:
     - what-is-a-manifest-file
     - whats-next
   global_search:
-    :page: node/how-to-guides/common-tools/global-search.html
-    :page_anchors:
+    page: node/how-to-guides/common-tools/global-search.html
+    page_anchors:
     - advanced-search
     - application-directives
     - basic-search
@@ -2382,14 +2388,14 @@ node:
     - server-directives
     - service-directives
   gluster_scaling:
-    :page: node/how-to-guides/scaling/gluster-scaling.html
-    :page_anchors:
+    page: node/how-to-guides/scaling/gluster-scaling.html
+    page_anchors:
     - configure-a-glusterfs-replica-count
     - node-product-heading
     - note
   glusterfs:
-    :page: node/how-to-guides/add-ins/glusterfs.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/glusterfs.html
+    page_anchors:
     - accessing-your-glusterfs-servers
     - fine-grained-access-control-for-your-data
     - how-can-i-use-glusterfs-in-my-application
@@ -2398,8 +2404,8 @@ node:
     - please-note
     - why-would-i-need-glusterfs
   haproxy:
-    :page: node/how-to-guides/deployment/haproxy.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/haproxy.html
+    page_anchors:
     - about-configuring-haproxy
     - about-configuring-haproxy-with-customconfig
     - change-the-haproxy-endpoint
@@ -2411,83 +2417,83 @@ node:
     - specify-an-haproxy-test-interval
     - view-haproxy-stats
   how_to_guides_add_ins_index:
-    :page: node/how-to-guides/add-ins/index.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/index.html
+    page_anchors:
     - node-product-heading
   how_to_guides_automation_index:
-    :page: node/how-to-guides/automation/index.html
-    :page_anchors:
+    page: node/how-to-guides/automation/index.html
+    page_anchors:
     - node-product-heading
   how_to_guides_clouds_index:
-    :page: node/how-to-guides/clouds/index.html
-    :page_anchors:
+    page: node/how-to-guides/clouds/index.html
+    page_anchors:
     - node-product-heading
   how_to_guides_common_tools_index:
-    :page: node/how-to-guides/common-tools/index.html
-    :page_anchors:
+    page: node/how-to-guides/common-tools/index.html
+    page_anchors:
     - node-product-heading
   how_to_guides_databases_index:
-    :page: node/how-to-guides/databases/index.html
-    :page_anchors:
+    page: node/how-to-guides/databases/index.html
+    page_anchors:
     - node-product-heading
   how_to_guides_databases_shells_index:
-    :page: node/how-to-guides/databases/shells/index.html
-    :page_anchors: []
+    page: node/how-to-guides/databases/shells/index.html
+    page_anchors: []
   how_to_guides_deployment_index:
-    :page: node/how-to-guides/deployment/index.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/index.html
+    page_anchors:
     - node-product-heading
   how_to_guides_deployment_shells_index:
-    :page: node/how-to-guides/deployment/shells/index.html
-    :page_anchors: []
+    page: node/how-to-guides/deployment/shells/index.html
+    page_anchors: []
   how_to_guides_index:
-    :page: node/how-to-guides/index.html
-    :page_anchors:
+    page: node/how-to-guides/index.html
+    page_anchors:
     - node-product-heading
   how_to_guides_scaling_index:
-    :page: node/how-to-guides/scaling/index.html
-    :page_anchors:
+    page: node/how-to-guides/scaling/index.html
+    page_anchors:
     - node-product-heading
   how_to_guides_security_index:
-    :page: node/how-to-guides/security/index.html
-    :page_anchors:
+    page: node/how-to-guides/security/index.html
+    page_anchors:
     - node-product-heading
   index:
-    :page: node/index.html
-    :page_anchors:
+    page: node/index.html
+    page_anchors:
     - node-product-heading
   influxdb:
-    :page: node/how-to-guides/add-ins/influxdb.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/influxdb.html
+    page_anchors:
     - add-influxdb
     - node-product-heading
   integration_with_circle_ci:
-    :page: node/integrations/integration-with-circle-ci.html
-    :page_anchors:
+    page: node/integrations/integration-with-circle-ci.html
+    page_anchors:
     - node-product-heading
   integration_with_semaphore:
-    :page: node/integrations/integration-with-semaphore.html
-    :page_anchors:
+    page: node/integrations/integration-with-semaphore.html
+    page_anchors:
     - node-product-heading
   integration_with_travis_ci:
-    :page: node/integrations/integration-with-travis-ci.html
-    :page_anchors:
+    page: node/integrations/integration-with-travis-ci.html
+    page_anchors:
     - node-product-heading
   integration_with_weave_scope:
-    :page: node/integrations/integration-with-weave-scope.html
-    :page_anchors:
+    page: node/integrations/integration-with-weave-scope.html
+    page_anchors:
     - node-product-heading
     - step-1-check-out-your-customconfig
     - step-2-add-the-weavescope-snippet
     - step-3-commit-and-redeploy-your-application
     - step-4-open-port-4040
   integrations_index:
-    :page: node/integrations/index.html
-    :page_anchors:
+    page: node/integrations/index.html
+    page_anchors:
     - node-product-heading
   ip_filtering:
-    :page: node/tutorials/ip-filtering.html
-    :page_anchors:
+    page: node/tutorials/ip-filtering.html
+    page_anchors:
     - allowing-traffic-whitelisting
     - cloudflare-edge-server-support
     - denying-traffic-blacklisting
@@ -2495,44 +2501,44 @@ node:
     - overview
     - rate-limiting-exceptions
   lets_encrypt:
-    :page: node/how-to-guides/security/lets-encrypt.html
-    :page_anchors:
+    page: node/how-to-guides/security/lets-encrypt.html
+    page_anchors:
     - installing-lets-encrypt
     - node-product-heading
     - troubleshooting
   load_balancer:
-    :page: node/how-to-guides/add-ins/load-balancer.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/load-balancer.html
+    page_anchors:
     - add-a-load-balancer
     - adding-multiple-load-balancers
     - node-product-heading
     - switching-between-load-balancers
   load_balancing:
-    :page: node/tutorials/load-balancing.html
-    :page_anchors:
+    page: node/tutorials/load-balancing.html
+    page_anchors:
     - adding-a-load-balancer
     - load-balancers-by-cloud-provider
     - node-product-heading
     - overview
     - whats-next
   logentries:
-    :page: node/how-to-guides/add-ins/logentries.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/logentries.html
+    page_anchors:
     - about-using-logentries
     - add-logentries-to-your-application
     - no-logs-or-logs-are-empty-in-logentries
     - node-product-heading
     - troubleshoot
   logging:
-    :page: node/how-to-guides/deployment/logging.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/logging.html
+    page_anchors:
     - log-rotation
     - node-product-heading
     - other
     - overview
   manage_backups:
-    :page: node/how-to-guides/databases/shells/manage-backups.html
-    :page_anchors:
+    page: node/how-to-guides/databases/shells/manage-backups.html
+    page_anchors:
     - 1-using-cloud-66-toolbelt
     - 2-from-your-cloud-66-dashboard
     - 3-via-command-line
@@ -2550,8 +2556,8 @@ node:
     - restoring-an-automated-backup
     - unarchive-the-backup-files
   manage_stacks_chatops:
-    :page: node/how-to-guides/common-tools/manage-stacks-chatops.html
-    :page_anchors:
+    page: node/how-to-guides/common-tools/manage-stacks-chatops.html
+    page_anchors:
     - cloud-66-chatops
     - create-a-slack-bot
     - deregister
@@ -2560,15 +2566,15 @@ node:
     - node-product-heading
     - quick-install
   managing_custom_packages:
-    :page: node/how-to-guides/deployment/managing-custom-packages.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/managing-custom-packages.html
+    page_anchors:
     - adding-custom-packages-to-your-application
     - more-help
     - node-product-heading
     - overview
   manifest_structure:
-    :page: node/references/manifest-structure.html
-    :page_anchors:
+    page: node/references/manifest-structure.html
+    page_anchors:
     - class-1-once-off-settings
     - class-2-sticky-settings
     - class-3-flexible-settings
@@ -2581,15 +2587,15 @@ node:
     - third-level-1-configurations
     - third-level-2-servers
   memcached:
-    :page: node/how-to-guides/add-ins/memcached.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/memcached.html
+    page_anchors:
     - add-memcached
     - check-memcached
     - customize-memcached
     - node-product-heading
   migrate_the_stack:
-    :page: node/how-to-guides/deployment/shells/migrate-the-stack.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/shells/migrate-the-stack.html
+    page_anchors:
     - 1-set-a-failover-group
     - 10-switch-to-the-new-application
     - 11-optionalswitch-your-dns-record-to-the-new-application
@@ -2605,9 +2611,15 @@ node:
     - node-product-heading
     - note
     - note-1
+  missing_page:
+    page: node/missing-page.html
+    page_anchors:
+    - node-product-heading
+    - this-help-page-is-missing-sorry
+    - well-fix-this-asap
   mongo_replica_sets:
-    :page: node/how-to-guides/scaling/mongo-replica-sets.html
-    :page_anchors:
+    page: node/how-to-guides/scaling/mongo-replica-sets.html
+    page_anchors:
     - configure-a-mongodb-replica-set
     - configure-mongoid
     - environment-variables
@@ -2615,8 +2627,8 @@ node:
     - note
     - using-a-mongodb-replica-set-in-your-code
   multi_cert_haproxy:
-    :page: node/how-to-guides/security/multi-cert_haproxy.html
-    :page_anchors:
+    page: node/how-to-guides/security/multi-cert_haproxy.html
+    page_anchors:
     - 1-concatanate-each-certifications-files-to-one-file
     - 2-upload-them-to-tmp-of-your-server
     - 3-login-to-your-haproxy-server
@@ -2625,16 +2637,16 @@ node:
     - node-product-heading
     - note
   multi_region_stack:
-    :page: node/how-to-guides/deployment/shells/multi-region-stack.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/shells/multi-region-stack.html
+    page_anchors:
     - node-product-heading
   multi_tenancy:
-    :page: node/how-to-guides/deployment/multi-tenancy.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/multi-tenancy.html
+    page_anchors:
     - node-product-heading
   network_configuration:
-    :page: node/references/network-configuration.html
-    :page_anchors:
+    page: node/references/network-configuration.html
+    page_anchors:
     - add-a-firewall-rule
     - allowing-traffic
     - configure-network-traffic
@@ -2646,8 +2658,8 @@ node:
     - what-is-activeprotect
     - www-or-non-www-in-your-url
   nginx:
-    :page: node/references/nginx.html
-    :page_anchors:
+    page: node/references/nginx.html
+    page_anchors:
     - about-nginx
     - boolean-variables
     - default-nginx-configuration
@@ -2655,35 +2667,35 @@ node:
     - nginx-worker-configuration
     - node-product-heading
   nginx_auth:
-    :page: node/how-to-guides/security/nginx-auth.html
-    :page_anchors:
+    page: node/how-to-guides/security/nginx-auth.html
+    page_anchors:
     - node-product-heading
   nginx_deny:
-    :page: node/how-to-guides/security/nginx-deny.html
-    :page_anchors:
+    page: node/how-to-guides/security/nginx-deny.html
+    page_anchors:
     - node-product-heading
   nginx_modules:
-    :page: node/how-to-guides/deployment/shells/nginx-modules.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/shells/nginx-modules.html
+    page_anchors:
     - custom-rack-servers
     - introduction
     - node-product-heading
     - passenger
   nginx_redirect:
-    :page: node/how-to-guides/deployment/shells/nginx-redirect.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/shells/nginx-redirect.html
+    page_anchors:
     - http
     - https
     - node-product-heading
     - redirect-between-domains-with-http-and-https
     - redirect-from-http-to-https
   nginx_ssl_ciphers:
-    :page: node/how-to-guides/security/nginx-ssl-ciphers.html
-    :page_anchors:
+    page: node/how-to-guides/security/nginx-ssl-ciphers.html
+    page_anchors:
     - node-product-heading
   non_recommended_server_sizes:
-    :page: node/references/non-recommended-server-sizes.html
-    :page_anchors:
+    page: node/references/non-recommended-server-sizes.html
+    page_anchors:
     - amazon-web-services
     - cloud-a
     - digitalocean
@@ -2696,8 +2708,8 @@ node:
     - under-powered-server-sizes-not-recommended
     - vultr
   notifications:
-    :page: node/account/notifications.html
-    :page_anchors:
+    page: node/account/notifications.html
+    page_anchors:
     - available-settings
     - browser-notifications
     - copying-notification-settings-between-apps
@@ -2711,20 +2723,20 @@ node:
     - webhooks
     - webhooks-for-service-accounts
   optimizing_performance:
-    :page: node/how-to-guides/scaling/optimizing-performance.html
-    :page_anchors:
+    page: node/how-to-guides/scaling/optimizing-performance.html
+    page_anchors:
     - load-testing
     - node-product-heading
     - preparing-for-server-load
   parallel_deployment:
-    :page: node/how-to-guides/deployment/parallel-deployment.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/parallel-deployment.html
+    page_anchors:
     - configure-parallel-deployment
     - node-product-heading
     - note
   partner_integration:
-    :page: node/integrations/partner-integration.html
-    :page_anchors:
+    page: node/integrations/partner-integration.html
+    page_anchors:
     - node-product-heading
     - provisioning
     - redirecting-to-partners-website
@@ -2735,8 +2747,8 @@ node:
     - user-integration-api
     - using-oauth2
   pci_compliance:
-    :page: node/resources/pci-compliance.html
-    :page_anchors:
+    page: node/resources/pci-compliance.html
+    page_anchors:
     - how-does-cloud-66-access-my-servers
     - how-does-cloud-66-prevent-access-to-customer-servers-in-case-of-a-breach
     - is-cloud-66-pci-compliant
@@ -2745,12 +2757,12 @@ node:
     - where-are-the-ssh-keys-stored-on-cloud-66
     - will-my-websitemobile-back-endapi-be-pci-compliant-if-i-use-cloud-66
   pg_replication_version:
-    :page: node/how-to-guides/databases/shells/pg-replication-version.html
-    :page_anchors:
+    page: node/how-to-guides/databases/shells/pg-replication-version.html
+    page_anchors:
     - node-product-heading
   postgis_installation:
-    :page: node/how-to-guides/databases/shells/postgis-installation.html
-    :page_anchors:
+    page: node/how-to-guides/databases/shells/postgis-installation.html
+    page_anchors:
     - enable-adminpack
     - install-pgrouting
     - installing-with-cloud-66
@@ -2761,8 +2773,8 @@ node:
     - postgis-extension-for-postgresql
     - prerequisites
   querying_server_metadata:
-    :page: node/how-to-guides/deployment/querying-server-metadata.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/querying-server-metadata.html
+    page_anchors:
     - 1-deployment-information
     - 2-server-os-information
     - 3-find-out-who-deployed-last-or-currently
@@ -2772,17 +2784,17 @@ node:
     - overview
     - using-metadata-in-a-workflow
   quickstarts_index:
-    :page: node/quickstarts/index.html
-    :page_anchors:
+    page: node/quickstarts/index.html
+    page_anchors:
     - node-product-heading
   rabbitmq:
-    :page: node/how-to-guides/add-ins/rabbitmq.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/rabbitmq.html
+    page_anchors:
     - add-rabbitmq
     - node-product-heading
   redeployment_hook:
-    :page: node/how-to-guides/deployment/redeployment-hook.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/redeployment-hook.html
+    page_anchors:
     - accessing-redeployment-hooks
     - adding-redeployment-hooks-to-your-pipeline
     - bitbucket-setup
@@ -2794,27 +2806,27 @@ node:
     - overview
     - usage-example
   redis:
-    :page: node/how-to-guides/add-ins/redis.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/redis.html
+    page_anchors:
     - about-adding-redis-to-your-application
     - add-redis-to-your-application
     - node-product-heading
   references_index:
-    :page: node/references/index.html
-    :page_anchors:
+    page: node/references/index.html
+    page_anchors:
     - node-product-heading
   references_shells_index:
-    :page: node/references/shells/index.html
-    :page_anchors: []
+    page: node/references/shells/index.html
+    page_anchors: []
   referral_program:
-    :page: node/resources/referral-program.html
-    :page_anchors:
+    page: node/resources/referral-program.html
+    page_anchors:
     - how-it-works
     - node-product-heading
     - your-referral-code
   registered_servers:
-    :page: node/how-to-guides/deployment/registered-servers.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/registered-servers.html
+    page_anchors:
     - node-product-heading
     - overview
     - register-a-server
@@ -2823,33 +2835,33 @@ node:
     - using-cloud-66-toolbelt
     - via-the-dashboard
   replace_sqlite:
-    :page: node/how-to-guides/databases/replace-sqlite.html
-    :page_anchors:
+    page: node/how-to-guides/databases/replace-sqlite.html
+    page_anchors:
     - instructions
     - mysql
     - node-product-heading
     - postgresql
   reserved_tags:
-    :page: node/references/reserved-tags.html
-    :page_anchors:
+    page: node/references/reserved-tags.html
+    page_anchors:
     - adding-tags-to-a-server
     - node-product-heading
     - reserved-tags
   resources_beta_program_index:
-    :page: node/resources/beta-program/index.html
-    :page_anchors: []
+    page: node/resources/beta-program/index.html
+    page_anchors: []
   resources_index:
-    :page: node/resources/index.html
-    :page_anchors:
+    page: node/resources/index.html
+    page_anchors:
     - node-product-heading
   scale_node:
-    :page: node/how-to-guides/scaling/scale-node.html
-    :page_anchors:
+    page: node/how-to-guides/scaling/scale-node.html
+    page_anchors:
     - node-product-heading
     - scale-your-instances
   scaling:
-    :page: node/how-to-guides/scaling/scaling.html
-    :page_anchors:
+    page: node/how-to-guides/scaling/scaling.html
+    page_anchors:
     - about-scaling-servers
     - adding-and-removing-delete-protection
     - database-servers
@@ -2859,23 +2871,23 @@ node:
     - process-servers
     - web-servers
   security:
-    :page: node/resources/security.html
-    :page_anchors:
+    page: node/resources/security.html
+    page_anchors:
     - credit-card-information
     - customer-protection
     - infrastructure-security
     - node-product-heading
     - reporting-security-issues
   seeding_db:
-    :page: node/how-to-guides/databases/seeding-db.html
-    :page_anchors:
+    page: node/how-to-guides/databases/seeding-db.html
+    page_anchors:
     - deploy-hook
     - node-product-heading
     - note
     - seed-script
   server_deletion:
-    :page: node/how-to-guides/deployment/server-deletion.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/server-deletion.html
+    page_anchors:
     - aws
     - azure
     - clouda
@@ -2886,8 +2898,8 @@ node:
     - packet
     - rackspace
   server_ip_addresses:
-    :page: node/references/server-ip-addresses.html
-    :page_anchors:
+    page: node/references/server-ip-addresses.html
+    page_anchors:
     - cloud-66-agent
     - cloud-66-hostnames
     - finding-your-cloud-66-hostname
@@ -2895,15 +2907,15 @@ node:
     - new-ip-addresses
     - node-product-heading
   server_monitoring:
-    :page: node/references/server-monitoring.html
-    :page_anchors:
+    page: node/references/server-monitoring.html
+    page_anchors:
     - adding-a-monitoring-service-to-your-app
     - common-monitoring-solutions
     - node-product-heading
     - overview
   server_restart_notifications:
-    :page: node/how-to-guides/deployment/server-restart-notifications.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/server-restart-notifications.html
+    page_anchors:
     - additional-information
     - how-do-i-actually-restart-my-servers
     - how-does-cloud-66-determine-my-server-needs-a-restart
@@ -2911,16 +2923,16 @@ node:
     - ive-restarted-but-i-still-see-the-notification
     - node-product-heading
   service_accounts:
-    :page: node/account/service-accounts.html
-    :page_anchors:
+    page: node/account/service-accounts.html
+    page_anchors:
     - configuring-notifications-and-webhooks
     - creating-a-service-account
     - granting-api-access-to-a-service-account
     - node-product-heading
     - overview
   service_network_configuration:
-    :page: node/tutorials/service-network-configuration.html
-    :page_anchors:
+    page: node/tutorials/service-network-configuration.html
+    page_anchors:
     - changing-the-http-port
     - more-advanced-options
     - node-product-heading
@@ -2929,17 +2941,17 @@ node:
     - overview
     - whats-next
   setting_up_custom_livelogs:
-    :page: node/how-to-guides/deployment/setting-up-custom-livelogs.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/setting-up-custom-livelogs.html
+    page_anchors:
     - node-product-heading
     - note
   sharing_db:
-    :page: node/how-to-guides/databases/shells/sharing-db.html
-    :page_anchors:
+    page: node/how-to-guides/databases/shells/sharing-db.html
+    page_anchors:
     - node-product-heading
   shell:
-    :page: node/how-to-guides/add-ins/shell.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/shell.html
+    page_anchors:
     - adding-a-new-server-job
     - default-values
     - node-product-heading
@@ -2948,8 +2960,8 @@ node:
     - passing-parameters-to-job
     - using-parameters
   slack_notifications:
-    :page: node/how-to-guides/common-tools/slack-notifications.html
-    :page_anchors:
+    page: node/how-to-guides/common-tools/slack-notifications.html
+    page_anchors:
     - help-with-the-cloud-66-slack-app
     - installing-the-cloud-66-slack-app
     - node-product-heading
@@ -2957,8 +2969,8 @@ node:
     - removing-the-cloud-66-slack-app
     - what-does-the-cloud-66-slack-app-do
   ssh:
-    :page: node/how-to-guides/common-tools/ssh.html
-    :page_anchors:
+    page: node/how-to-guides/common-tools/ssh.html
+    page_anchors:
     - cloud-providers-firewall-api-has-delay
     - debugging-using-verbose-mode
     - detected-ip-is-different
@@ -2967,15 +2979,15 @@ node:
     - node-product-heading
     - prompted-for-password
   ssh_keys:
-    :page: node/how-to-guides/common-tools/ssh-keys.html
-    :page_anchors:
+    page: node/how-to-guides/common-tools/ssh-keys.html
+    page_anchors:
     - connect-to-your-server-using-your-key
     - generate-keys-on-linux-and-mac
     - generate-keys-on-windows
     - node-product-heading
   ssh_to_server:
-    :page: node/how-to-guides/common-tools/ssh-to-server.html
-    :page_anchors:
+    page: node/how-to-guides/common-tools/ssh-to-server.html
+    page_anchors:
     - check-the-permissions-of-your-home-and-ssh-directories
     - cloud-66-toolbelt
     - examples
@@ -2989,14 +3001,14 @@ node:
     - troubleshooting
     - update-your-toolbelt-version
   ssl:
-    :page: node/how-to-guides/add-ins/ssl.html
-    :page_anchors:
+    page: node/how-to-guides/add-ins/ssl.html
+    page_anchors:
     - lets-encrypt-ssl-certificate
     - node-product-heading
     - standard-ssl-certificate
   ssl_certificate:
-    :page: node/how-to-guides/security/ssl-certificate.html
-    :page_anchors:
+    page: node/how-to-guides/security/ssl-certificate.html
+    page_anchors:
     - generate-a-certificate
     - important
     - intermediate-certificates
@@ -3005,16 +3017,16 @@ node:
     - overview
     - separate-domains-with-different-certificates
   ssl_termination_on_load_balancers:
-    :page: node/how-to-guides/security/ssl-termination-on-load-balancers.html
-    :page_anchors:
+    page: node/how-to-guides/security/ssl-termination-on-load-balancers.html
+    page_anchors:
     - amazon-elastic-load-balancer
     - cloud-66-now-supports-automatic-ssl-termination
     - important
     - node-product-heading
     - rackspace
   stack_definition:
-    :page: node/the-basics/stack-definition.html
-    :page_anchors:
+    page: node/the-basics/stack-definition.html
+    page_anchors:
     - application-components
     - application-environments
     - application-vs-stack
@@ -3031,13 +3043,13 @@ node:
     - what-is-cloud-66-for-node
     - what-is-stackscore
   stack_environments:
-    :page: node/references/stack-environments.html
-    :page_anchors:
+    page: node/references/stack-environments.html
+    page_anchors:
     - application-environments
     - node-product-heading
   stack_failover:
-    :page: node/how-to-guides/deployment/shells/stack-failover.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/shells/stack-failover.html
+    page_anchors:
     - 1-code
     - 2-data
     - 3-traffic
@@ -3045,19 +3057,19 @@ node:
     - node-product-heading
     - setup-the-failover-group
   supported_frameworks:
-    :page: node/references/supported-frameworks.html
-    :page_anchors:
+    page: node/references/supported-frameworks.html
+    page_anchors:
     - node-product-heading
     - which-frameworks-do-we-support
   symlink_folders:
-    :page: node/how-to-guides/deployment/symlink-folders.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/symlink-folders.html
+    page_anchors:
     - node-product-heading
     - public-folder
     - symbolic-link
   system_architecture:
-    :page: node/references/system-architecture.html
-    :page_anchors:
+    page: node/references/system-architecture.html
+    page_anchors:
     - containernet
     - docker
     - elasticdns
@@ -3066,8 +3078,8 @@ node:
     - node-product-heading
     - overview
   tagging_components:
-    :page: node/how-to-guides/deployment/tagging-components.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/tagging-components.html
+    page_anchors:
     - adding-tags-to-a-server
     - beta-only
     - keyvalue-tags
@@ -3079,8 +3091,8 @@ node:
     - syntax-of-propagated-tags
     - tag-limits
   team_accounts:
-    :page: node/account/team-accounts.html
-    :page_anchors:
+    page: node/account/team-accounts.html
+    page_anchors:
     - add-a-new-user-team-member
     - application-users
     - deleting-user-accounts--teams
@@ -3091,8 +3103,8 @@ node:
     - user-roles-and-permissions
     - using-team-accounts
   technical_specifications:
-    :page: node/resources/technical-specifications.html
-    :page_anchors:
+    page: node/resources/technical-specifications.html
+    page_anchors:
     - 1-components-built-via-apt-packages
     - 2-components-built-from-source
     - component-versions
@@ -3102,20 +3114,20 @@ node:
     - supported-cloud-providers
     - supported-platforms
   the_basics_index:
-    :page: node/the-basics/index.html
-    :page_anchors:
+    page: node/the-basics/index.html
+    page_anchors:
     - node-product-heading
   tls_versions:
-    :page: node/how-to-guides/security/tls-versions.html
-    :page_anchors:
+    page: node/how-to-guides/security/tls-versions.html
+    page_anchors:
     - disabling-tls-10-on-a-load-balancer
     - disabling-tls-10-on-the-web-server
     - node-product-heading
     - overview
     - warning
   toolbelt:
-    :page: node/references/toolbelt.html
-    :page_anchors:
+    page: node/references/toolbelt.html
+    page_anchors:
     - a-note-on-overwriting-access-profiles
     - about-backup-management
     - access-control-for-toolbelt-login
@@ -3261,8 +3273,8 @@ node:
     - usage-8
     - usage-9
   troubleshooting_server_connection:
-    :page: node/how-to-guides/deployment/troubleshooting-server-connection.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/troubleshooting-server-connection.html
+    page_anchors:
     - heavy-load-on-the-servers
     - memory-leaks
     - node-product-heading
@@ -3271,12 +3283,12 @@ node:
     - recent-server-restarts
     - temporary-network-interruptions
   tutorials_index:
-    :page: node/tutorials/index.html
-    :page_anchors:
+    page: node/tutorials/index.html
+    page_anchors:
     - node-product-heading
   two_factor_authentication:
-    :page: node/account/two-factor-authentication.html
-    :page_anchors:
+    page: node/account/two-factor-authentication.html
+    page_anchors:
     - add-a-recovery-phone-number
     - adding-a-physical-fido-security-key
     - enabling-2fa-on-your-account
@@ -3288,8 +3300,8 @@ node:
     - troubleshooting
     - what-is-two-factor-authentication
   understanding_and_improving_security_score:
-    :page: node/account/understanding-and-improving-security-score.html
-    :page_anchors:
+    page: node/account/understanding-and-improving-security-score.html
+    page_anchors:
     - fido-authentication
     - finding-your-security-score
     - how-fido-works
@@ -3302,28 +3314,28 @@ node:
     - why-cant-we-share-logins
     - why-do-i-need-2fa
   understanding_failover_groups:
-    :page: node/references/understanding-failover-groups.html
-    :page_anchors:
+    page: node/references/understanding-failover-groups.html
+    page_anchors:
     - how-failover-groups-work
     - node-product-heading
     - testing-failover-groups
     - using-failover-groups-with-ssl-certificates
     - why-use-failover-groups
   uninstall_mysql:
-    :page: node/how-to-guides/databases/shells/uninstall-mysql.html
-    :page_anchors:
+    page: node/how-to-guides/databases/shells/uninstall-mysql.html
+    page_anchors:
     - node-product-heading
   using_c66_via_firewall:
-    :page: node/how-to-guides/deployment/using-c66-via-firewall.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/using-c66-via-firewall.html
+    page_anchors:
     - cloud-66s-authorized-ip-addresses
     - node-product-heading
     - overview
     - ports-that-cloud-66-requires
     - warning
   using_cloud66_toolbelt:
-    :page: node/quickstarts/using-cloud66-toolbelt.html
-    :page_anchors:
+    page: node/quickstarts/using-cloud66-toolbelt.html
+    page_anchors:
     - advanced
     - careful
     - creating-a-cx-profile
@@ -3340,12 +3352,12 @@ node:
     - view-toolbelt-information
     - what-is-toolbelt
   using_master_data_staging:
-    :page: node/how-to-guides/databases/shells/using-master-data-staging.html
-    :page_anchors:
+    page: node/how-to-guides/databases/shells/using-master-data-staging.html
+    page_anchors:
     - node-product-heading
   websocket_support:
-    :page: node/how-to-guides/deployment/websocket-support.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/websocket-support.html
+    page_anchors:
     - configuring-for-websocket
     - node-product-heading
     - overview
@@ -3355,27 +3367,27 @@ node:
     - using-websocket-via-native-cloud-load-balancers
     - websocket-through-a-load-balancer
   zero_downtime_deploy:
-    :page: node/how-to-guides/deployment/shells/zero-downtime-deploy.html
-    :page_anchors:
+    page: node/how-to-guides/deployment/shells/zero-downtime-deploy.html
+    page_anchors:
     - 1-using-a-web-server-that-supports-hot-rollover
     - 2-deploying-in-serial
     - node-product-heading
 rails:
   access_your_code:
-    :page: rails/how-to-guides/common-tools/access-your-code.html
-    :page_anchors:
+    page: rails/how-to-guides/common-tools/access-your-code.html
+    page_anchors:
     - bitbucket-example
     - github-example
     - private-repositories
     - public-repositories
     - rails-product-heading
   account_index:
-    :page: rails/account/index.html
-    :page_anchors:
+    page: rails/account/index.html
+    page_anchors:
     - rails-product-heading
   account_management:
-    :page: rails/account/account-management.html
-    :page_anchors:
+    page: rails/account/account-management.html
+    page_anchors:
     - add-or-remove-users
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
@@ -3386,35 +3398,35 @@ rails:
     - service-accounts
     - view--update-account-information
   account_protection:
-    :page: rails/account/account-protection.html
-    :page_anchors:
+    page: rails/account/account-protection.html
+    page_anchors:
     - account-protection-alerts
     - overview
     - rails-product-heading
     - what-is-cloud-66-account-protection
   active_protect:
-    :page: rails/references/active-protect.html
-    :page_anchors:
+    page: rails/references/active-protect.html
+    page_anchors:
     - activeprotect-interface
     - configuring-activeprotect
     - rails-product-heading
     - ssh-soft-blocking
     - what-is-activeprotect
   add_in_implementation:
-    :page: rails/how-to-guides/add-ins/add-in-implementation.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/add-in-implementation.html
+    page_anchors:
     - rails-product-heading
   adding_updating_deleting:
-    :page: rails/the-basics/adding-updating-deleting.html
-    :page_anchors:
+    page: rails/the-basics/adding-updating-deleting.html
+    page_anchors:
     - building-an-application
     - clone-an-application
     - deleting-an-application
     - rails-product-heading
     - updating-application-properties
   applying_upgrades:
-    :page: rails/how-to-guides/deployment/applying-upgrades.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/applying-upgrades.html
+    page_anchors:
     - about-manual-upgrades
     - automated-package-update-policy
     - bundler
@@ -3433,23 +3445,23 @@ rails:
     - unable-to-find-expected-entry-errors
     - upgrade-package-types
   archiving_applications:
-    :page: rails/account/archiving-applications.html
-    :page_anchors:
+    page: rails/account/archiving-applications.html
+    page_anchors:
     - archiving-an-application
     - limits-and-effects-of-archiving
     - overview
     - rails-product-heading
     - restoring-an-application
   audit_logs:
-    :page: rails/account/audit-logs.html
-    :page_anchors:
+    page: rails/account/audit-logs.html
+    page_anchors:
     - accessing-audit-logs
     - audit-logging
     - rails-product-heading
     - searching-audit-logs
   backup_verifiers:
-    :page: rails/how-to-guides/databases/backup-verifiers.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/backup-verifiers.html
+    page_anchors:
     - example-query-mysql
     - example-query-postgresql
     - rails-product-heading
@@ -3457,8 +3469,8 @@ rails:
     - view-backup-verification-status
     - what-is-a-backup-verifier
   bluepill_legacy:
-    :page: rails/how-to-guides/deployment/bluepill-legacy.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/bluepill-legacy.html
+    page_anchors:
     - build-your-own-pill-file
     - commands
     - load-a-process
@@ -3471,8 +3483,8 @@ rails:
     - stop
     - unload-a-process
   bring_your_own_images:
-    :page: rails/how-to-guides/clouds/bring-your-own-images.html
-    :page_anchors:
+    page: rails/how-to-guides/clouds/bring-your-own-images.html
+    page_anchors:
     - best-practices-when-using-custom-images
     - cloud-providers-with-byoi-support
     - how-byoi-works
@@ -3480,12 +3492,12 @@ rails:
     - overview
     - rails-product-heading
   browser_requirements:
-    :page: rails/account/browser-requirements.html
-    :page_anchors:
+    page: rails/account/browser-requirements.html
+    page_anchors:
     - rails-product-heading
   building_a_manifest_file:
-    :page: rails/how-to-guides/deployment/building-a-manifest-file.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/building-a-manifest-file.html
+    page_anchors:
     - applying-settings-across-all-environments
     - aws-load-balancer
     - deploy-to-your-own-server
@@ -3522,30 +3534,30 @@ rails:
     - which-environment
     - which-server
   change_psql_directory:
-    :page: rails/how-to-guides/databases/shells/change-psql-directory.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/shells/change-psql-directory.html
+    page_anchors:
     - rails-product-heading
   cloud66_badge:
-    :page: rails/resources/cloud66-badge.html
-    :page_anchors:
+    page: rails/resources/cloud66-badge.html
+    page_anchors:
     - important
     - rails-product-heading
   cloud66_status:
-    :page: rails/resources/cloud66-status.html
-    :page_anchors:
+    page: rails/resources/cloud66-status.html
+    page_anchors:
     - latest-updates
     - rails-product-heading
     - status-and-uptime
   cloud_66_beta_program:
-    :page: rails/resources/cloud-66-beta-program.html
-    :page_anchors:
+    page: rails/resources/cloud-66-beta-program.html
+    page_anchors:
     - joining-the-beta-programme
     - overview
     - rails-product-heading
     - reporting-issues
   cloud_aws:
-    :page: rails/how-to-guides/clouds/cloud-aws.html
-    :page_anchors:
+    page: rails/how-to-guides/clouds/cloud-aws.html
+    page_anchors:
     - bring-your-own-images-byoi
     - cloud-66-tag-propagation
     - elb-websocket-support
@@ -3560,8 +3572,8 @@ rails:
     - using-ec2-classic
     - using-iam-instance-profiles-with-your-servers
   cloud_azure:
-    :page: rails/how-to-guides/clouds/cloud-azure.html
-    :page_anchors:
+    page: rails/how-to-guides/clouds/cloud-azure.html
+    page_anchors:
     - cloud-66-tag-propagation
     - generating-a-management-certificate
     - generating-credentials-for-azure-cloud
@@ -3569,13 +3581,13 @@ rails:
     - rails-product-heading
     - using-your-management-certificate
   cloud_clouda:
-    :page: rails/how-to-guides/clouds/cloud-clouda.html
-    :page_anchors:
+    page: rails/how-to-guides/clouds/cloud-clouda.html
+    page_anchors:
     - adding-your-cloud-a-credentials
     - rails-product-heading
   cloud_do:
-    :page: rails/how-to-guides/clouds/cloud-do.html
-    :page_anchors:
+    page: rails/how-to-guides/clouds/cloud-do.html
+    page_anchors:
     - authorise-cloud-66-with-digitalocean
     - bring-your-own-images-byoi
     - cloud-66-tag-propagation
@@ -3583,16 +3595,16 @@ rails:
     - rails-product-heading
     - upgrading-account-keys
   cloud_gce:
-    :page: rails/how-to-guides/clouds/cloud-gce.html
-    :page_anchors:
+    page: rails/how-to-guides/clouds/cloud-gce.html
+    page_anchors:
     - add-gce-keys-to-an-application
     - bring-your-own-images-byoi
     - external-links
     - generate-gce-api-keys
     - rails-product-heading
   cloud_hetzner:
-    :page: rails/how-to-guides/clouds/cloud-hetzner.html
-    :page_anchors:
+    page: rails/how-to-guides/clouds/cloud-hetzner.html
+    page_anchors:
     - cloud-66-tag-propagation
     - external-links
     - how-to-add-your-hetzner-api-key-to-cloud-66
@@ -3600,44 +3612,44 @@ rails:
     - support-for-older-versions-of-ubuntu
     - using-multiple-api-keys-with-hetzner
   cloud_linode:
-    :page: rails/how-to-guides/clouds/cloud-linode.html
-    :page_anchors:
+    page: rails/how-to-guides/clouds/cloud-linode.html
+    page_anchors:
     - add-a-personal-access-token-to-a-new-application
     - external-links
     - generate-a-personal-access-token
     - rails-product-heading
     - update-an-existing-personal-access-token
   cloud_ovh:
-    :page: rails/how-to-guides/clouds/cloud-ovh.html
-    :page_anchors:
+    page: rails/how-to-guides/clouds/cloud-ovh.html
+    page_anchors:
     - integrating-ovh-with-cloud-66
     - rails-product-heading
     - using-multiple-keys-with-ovh
   cloud_packet:
-    :page: rails/how-to-guides/clouds/cloud-packet.html
-    :page_anchors:
+    page: rails/how-to-guides/clouds/cloud-packet.html
+    page_anchors:
     - adding-your-packet-credentials
     - cloud-66-tag-propagation
     - rails-product-heading
   cloud_rackspace:
-    :page: rails/how-to-guides/clouds/cloud-rackspace.html
-    :page_anchors:
+    page: rails/how-to-guides/clouds/cloud-rackspace.html
+    page_anchors:
     - add-rackspace-key-to-an-application
     - external-links
     - generate-a-rackspace-api-key
     - note
     - rails-product-heading
   cloud_vultr:
-    :page: rails/how-to-guides/clouds/cloud-vultr.html
-    :page_anchors:
+    page: rails/how-to-guides/clouds/cloud-vultr.html
+    page_anchors:
     - add-vultr-key-to-an-application
     - add-your-vultr-api-key-to-cloud-66
     - external-links
     - rails-product-heading
     - support-for-older-versions-of-ubuntu
   config_store:
-    :page: rails/how-to-guides/deployment/config-store.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/config-store.html
+    page_anchors:
     - accessing-configstore-variables
     - account-level
     - application-level
@@ -3653,8 +3665,8 @@ rails:
     - serviceyml-placeholder
     - skycap-stencils
   configure_dns:
-    :page: rails/tutorials/configure-dns.html
-    :page_anchors:
+    page: rails/tutorials/configure-dns.html
+    page_anchors:
     - 1-use-an-alias-or-aname
     - 2-use-an-a-record-with-a-load-balancer
     - 3-subdomain-redirection
@@ -3665,14 +3677,14 @@ rails:
     - rails-product-heading
     - whats-next
   connect_db_servers:
-    :page: rails/how-to-guides/databases/shells/connect-db-servers.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/shells/connect-db-servers.html
+    page_anchors:
     - on-the-server
     - rails-product-heading
     - with-a-client
   custom_config:
-    :page: rails/tutorials/custom-config.html
-    :page_anchors:
+    page: rails/tutorials/custom-config.html
+    page_anchors:
     - accessing-customconfig
     - preview-a-template
     - rails-product-heading
@@ -3680,8 +3692,8 @@ rails:
     - updates-to-configuration-files-and-patches
     - whats-next
   custom_config_git:
-    :page: rails/tutorials/custom-config-git.html
-    :page_anchors:
+    page: rails/tutorials/custom-config-git.html
+    page_anchors:
     - automatic-updates
     - changes-made-in-customconfig-ui
     - changes-made-through-customconfig-git
@@ -3692,14 +3704,14 @@ rails:
     - uploading-your-ssh-public-key
     - whats-next
   custom_server:
-    :page: rails/how-to-guides/add-ins/custom-server.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/custom-server.html
+    page_anchors:
     - add-a-custom-server
     - rails-product-heading
     - what-is-the-custom-server-add-in
   custom_web_servers:
-    :page: rails/tutorials/custom-web-servers.html
-    :page_anchors:
+    page: rails/tutorials/custom-web-servers.html
+    page_anchors:
     - configuring-a-custom-rack-server
     - important
     - pid-file
@@ -3707,8 +3719,8 @@ rails:
     - traffic-socket
     - whats-next
   customizing_nginx:
-    :page: rails/how-to-guides/deployment/customizing-nginx.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/customizing-nginx.html
+    page_anchors:
     - customizing-the-nginx-error-page
     - editing-nginx-configurations
     - enabling-http2
@@ -3717,12 +3729,12 @@ rails:
     - rails-product-heading
     - working-examples
   data_protection:
-    :page: rails/resources/data-protection.html
-    :page_anchors:
+    page: rails/resources/data-protection.html
+    page_anchors:
     - rails-product-heading
   database_backups:
-    :page: rails/how-to-guides/add-ins/database-backups.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/database-backups.html
+    page_anchors:
     - backup-format
     - backup-schedule
     - backup-types
@@ -3737,23 +3749,23 @@ rails:
     - unmanaged-backups
     - what-is-the-database-backup-add-in
   database_customization:
-    :page: rails/how-to-guides/databases/database-customization.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/database-customization.html
+    page_anchors:
     - customize-your-database-configuration
     - database-customization-variables
     - global-variables
     - rails-product-heading
   database_encryption:
-    :page: rails/how-to-guides/databases/database-encryption.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/database-encryption.html
+    page_anchors:
     - data-encryption-via-the-application
     - implementing-native-database-encryption-tde-with-cloud-66
     - native-database-encryption
     - overview
     - rails-product-heading
   database_management:
-    :page: rails/how-to-guides/databases/database-management.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/database-management.html
+    page_anchors:
     - about-deploying-databases
     - control-your-rails-database-migrations
     - customize-your-database-configuration
@@ -3766,8 +3778,8 @@ rails:
     - upgrading-your-database
     - warning
   database_replication:
-    :page: rails/how-to-guides/databases/database-replication.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/database-replication.html
+    page_anchors:
     - between-applications
     - disable-database-replication
     - enable-database-replication
@@ -3780,16 +3792,16 @@ rails:
     - re-synchronizing-slave-with-master
     - single-application
   deploy_hook_examples:
-    :page: rails/how-to-guides/deployment/deploy-hook-examples.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/deploy-hook-examples.html
+    page_anchors:
     - how-do-i-install-a-package-or-library-on-each-server-i-deploy
     - how-do-i-install-a-specific-non-standard-version-of-a-package-or-library
     - overview
     - querying-server-metadata
     - rails-product-heading
   deploy_hooks:
-    :page: rails/tutorials/deploy-hooks.html
-    :page_anchors:
+    page: rails/tutorials/deploy-hooks.html
+    page_anchors:
     - debugging-deploy-hooks
     - deployment-process-simplified
     - example-env-vars-parameter
@@ -3805,8 +3817,8 @@ rails:
     - using-snippet-deploy-hooks
     - whats-next
   deploy_hooks_syntax:
-    :page: rails/references/deploy-hooks-syntax.html
-    :page_anchors:
+    page: rails/references/deploy-hooks-syntax.html
+    page_anchors:
     - hook-fields
     - hook-fields-commands
     - hook-fields-existing-scripts
@@ -3816,8 +3828,8 @@ rails:
     - rails-product-heading
     - what-are-deploy-hooks
   deploy_profiles:
-    :page: rails/references/deploy-profiles.html
-    :page_anchors:
+    page: rails/references/deploy-profiles.html
+    page_anchors:
     - calling-a-deployment-profile-via-a-redeployment-hook
     - database-migration
     - deployment-strategy
@@ -3826,16 +3838,16 @@ rails:
     - upgrades
     - what-are-deployment-profiles
   deployment_gateway:
-    :page: rails/how-to-guides/deployment/deployment-gateway.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/deployment-gateway.html
+    page_anchors:
     - about-deployment-gateways
     - accessing-your-servers-behind-the-gateway-server
     - how-to-deploy-your-application-behind-the-gateway-server
     - important
     - rails-product-heading
   deployment_health_checks:
-    :page: rails/how-to-guides/deployment/deployment-health-checks.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/deployment-health-checks.html
+    page_anchors:
     - automated-health-checks
     - custom-health-checks
     - dealing-with-domain-access-controls
@@ -3846,25 +3858,25 @@ rails:
     - rails-product-heading
     - the-limitations-of-health-checks
   deployment_history:
-    :page: rails/how-to-guides/deployment/deployment-history.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/deployment-history.html
+    page_anchors:
     - accessing-the-timeline
     - deployment-status
     - overview
     - rails-product-heading
   elasticsearch:
-    :page: rails/how-to-guides/add-ins/elasticsearch.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/elasticsearch.html
+    page_anchors:
     - add-elasticearch
     - rails-product-heading
   elasticsearch_scaling:
-    :page: rails/how-to-guides/scaling/elasticsearch-scaling.html
-    :page_anchors:
+    page: rails/how-to-guides/scaling/elasticsearch-scaling.html
+    page_anchors:
     - general-recommendations
     - rails-product-heading
   enable_disable_asset_pipeline:
-    :page: rails/how-to-guides/deployment/enable-disable-asset-pipeline.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/enable-disable-asset-pipeline.html
+    page_anchors:
     - enable-or-disable-apc
     - enabling-dedicated-compilation
     - manifestyml
@@ -3872,8 +3884,8 @@ rails:
     - overview
     - rails-product-heading
   env_vars:
-    :page: rails/tutorials/env-vars.html
-    :page_anchors:
+    page: rails/tutorials/env-vars.html
+    page_anchors:
     - about-environment-variables
     - assign-env-vars-after-app-build
     - assign-env-vars-for-deployment
@@ -3888,8 +3900,8 @@ rails:
     - using-environment-variables
     - whats-next
   failover_groups:
-    :page: rails/tutorials/failover-groups.html
-    :page_anchors:
+    page: rails/tutorials/failover-groups.html
+    page_anchors:
     - adding-a-failover-group
     - environment-variables
     - overview
@@ -3897,8 +3909,8 @@ rails:
     - requirements-and-limits
     - whats-next
   faq:
-    :page: rails/the-basics/faq.html
-    :page_anchors:
+    page: rails/the-basics/faq.html
+    page_anchors:
     - are-their-any-requirements-for-the-user-on-my-servers
     - can-i-deploy-multiple-apps-on-a-single-server
     - can-i-use-cloud-66-with-my-own-servers
@@ -3913,14 +3925,14 @@ rails:
     - who-pays-for-the-servers
     - why-do-you-need-my-server-ssh-key
   filebeat:
-    :page: rails/how-to-guides/add-ins/filebeat.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/filebeat.html
+    page_anchors:
     - about-using-filebeat
     - add-filebeat-to-your-application
     - rails-product-heading
   getting_started:
-    :page: rails/quickstarts/getting-started.html
-    :page_anchors:
+    page: rails/quickstarts/getting-started.html
+    page_anchors:
     - accessing-your-git-repo
     - advanced-configurations
     - bitbucket-content
@@ -3939,8 +3951,8 @@ rails:
     - what-youll-need
     - whats-next
   getting_started_with_manifest:
-    :page: rails/quickstarts/getting-started-with-manifest.html
-    :page_anchors:
+    page: rails/quickstarts/getting-started-with-manifest.html
+    page_anchors:
     - a-working-example
     - change-cors-settings
     - force-nginx-to-update
@@ -3949,8 +3961,8 @@ rails:
     - what-is-a-manifest-file
     - whats-next
   global_search:
-    :page: rails/how-to-guides/common-tools/global-search.html
-    :page_anchors:
+    page: rails/how-to-guides/common-tools/global-search.html
+    page_anchors:
     - advanced-search
     - application-directives
     - basic-search
@@ -3963,14 +3975,14 @@ rails:
     - server-directives
     - service-directives
   gluster_scaling:
-    :page: rails/how-to-guides/scaling/gluster-scaling.html
-    :page_anchors:
+    page: rails/how-to-guides/scaling/gluster-scaling.html
+    page_anchors:
     - configure-a-glusterfs-replica-count
     - note
     - rails-product-heading
   glusterfs:
-    :page: rails/how-to-guides/add-ins/glusterfs.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/glusterfs.html
+    page_anchors:
     - accessing-your-glusterfs-servers
     - fine-grained-access-control-for-your-data
     - how-can-i-use-glusterfs-in-my-application
@@ -3979,8 +3991,8 @@ rails:
     - rails-product-heading
     - why-would-i-need-glusterfs
   haproxy:
-    :page: rails/how-to-guides/deployment/haproxy.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/haproxy.html
+    page_anchors:
     - about-configuring-haproxy
     - about-configuring-haproxy-with-customconfig
     - change-the-haproxy-endpoint
@@ -3992,54 +4004,54 @@ rails:
     - specify-an-haproxy-test-interval
     - view-haproxy-stats
   how_to_guides_add_ins_index:
-    :page: rails/how-to-guides/add-ins/index.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/index.html
+    page_anchors:
     - rails-product-heading
   how_to_guides_automation_index:
-    :page: rails/how-to-guides/automation/index.html
-    :page_anchors:
+    page: rails/how-to-guides/automation/index.html
+    page_anchors:
     - rails-product-heading
   how_to_guides_clouds_index:
-    :page: rails/how-to-guides/clouds/index.html
-    :page_anchors:
+    page: rails/how-to-guides/clouds/index.html
+    page_anchors:
     - rails-product-heading
   how_to_guides_common_tools_index:
-    :page: rails/how-to-guides/common-tools/index.html
-    :page_anchors:
+    page: rails/how-to-guides/common-tools/index.html
+    page_anchors:
     - rails-product-heading
   how_to_guides_databases_index:
-    :page: rails/how-to-guides/databases/index.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/index.html
+    page_anchors:
     - rails-product-heading
   how_to_guides_databases_shells_index:
-    :page: rails/how-to-guides/databases/shells/index.html
-    :page_anchors: []
+    page: rails/how-to-guides/databases/shells/index.html
+    page_anchors: []
   how_to_guides_deployment_index:
-    :page: rails/how-to-guides/deployment/index.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/index.html
+    page_anchors:
     - rails-product-heading
   how_to_guides_deployment_shells_index:
-    :page: rails/how-to-guides/deployment/shells/index.html
-    :page_anchors: []
+    page: rails/how-to-guides/deployment/shells/index.html
+    page_anchors: []
   how_to_guides_index:
-    :page: rails/how-to-guides/index.html
-    :page_anchors:
+    page: rails/how-to-guides/index.html
+    page_anchors:
     - rails-product-heading
   how_to_guides_rack_servers_index:
-    :page: rails/how-to-guides/rack-servers/index.html
-    :page_anchors:
+    page: rails/how-to-guides/rack-servers/index.html
+    page_anchors:
     - rails-product-heading
   how_to_guides_scaling_index:
-    :page: rails/how-to-guides/scaling/index.html
-    :page_anchors:
+    page: rails/how-to-guides/scaling/index.html
+    page_anchors:
     - rails-product-heading
   how_to_guides_security_index:
-    :page: rails/how-to-guides/security/index.html
-    :page_anchors:
+    page: rails/how-to-guides/security/index.html
+    page_anchors:
     - rails-product-heading
   implementing_faye:
-    :page: rails/how-to-guides/deployment/implementing-faye.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/implementing-faye.html
+    page_anchors:
     - 1-the-deploy-hooks-file
     - 2-the-installer-bash-script
     - 3-the-procfile
@@ -4049,41 +4061,41 @@ rails:
     - rails-product-heading
     - troubleshooting
   index:
-    :page: rails/index.html
-    :page_anchors:
+    page: rails/index.html
+    page_anchors:
     - rails-product-heading
   influxdb:
-    :page: rails/how-to-guides/add-ins/influxdb.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/influxdb.html
+    page_anchors:
     - add-influxdb
     - rails-product-heading
   integration_with_circle_ci:
-    :page: rails/integrations/integration-with-circle-ci.html
-    :page_anchors:
+    page: rails/integrations/integration-with-circle-ci.html
+    page_anchors:
     - rails-product-heading
   integration_with_semaphore:
-    :page: rails/integrations/integration-with-semaphore.html
-    :page_anchors:
+    page: rails/integrations/integration-with-semaphore.html
+    page_anchors:
     - rails-product-heading
   integration_with_travis_ci:
-    :page: rails/integrations/integration-with-travis-ci.html
-    :page_anchors:
+    page: rails/integrations/integration-with-travis-ci.html
+    page_anchors:
     - rails-product-heading
   integration_with_weave_scope:
-    :page: rails/integrations/integration-with-weave-scope.html
-    :page_anchors:
+    page: rails/integrations/integration-with-weave-scope.html
+    page_anchors:
     - rails-product-heading
     - step-1-check-out-your-customconfig
     - step-2-add-the-weavescope-snippet
     - step-3-commit-and-redeploy-your-application
     - step-4-open-port-4040
   integrations_index:
-    :page: rails/integrations/index.html
-    :page_anchors:
+    page: rails/integrations/index.html
+    page_anchors:
     - rails-product-heading
   ip_filtering:
-    :page: rails/tutorials/ip-filtering.html
-    :page_anchors:
+    page: rails/tutorials/ip-filtering.html
+    page_anchors:
     - allowing-traffic-whitelisting
     - cloudflare-edge-server-support
     - denying-traffic-blacklisting
@@ -4091,37 +4103,37 @@ rails:
     - rails-product-heading
     - rate-limiting-exceptions
   lets_encrypt:
-    :page: rails/how-to-guides/security/lets-encrypt.html
-    :page_anchors:
+    page: rails/how-to-guides/security/lets-encrypt.html
+    page_anchors:
     - installing-lets-encrypt
     - rails-product-heading
     - troubleshooting
   load_balancer:
-    :page: rails/how-to-guides/add-ins/load-balancer.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/load-balancer.html
+    page_anchors:
     - add-a-load-balancer
     - adding-multiple-load-balancers
     - rails-product-heading
     - switching-between-load-balancers
   load_balancing:
-    :page: rails/tutorials/load-balancing.html
-    :page_anchors:
+    page: rails/tutorials/load-balancing.html
+    page_anchors:
     - adding-a-load-balancer
     - load-balancers-by-cloud-provider
     - overview
     - rails-product-heading
     - whats-next
   logentries:
-    :page: rails/how-to-guides/add-ins/logentries.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/logentries.html
+    page_anchors:
     - about-using-logentries
     - add-logentries-to-your-application
     - no-logs-or-logs-are-empty-in-logentries
     - rails-product-heading
     - troubleshoot
   logging:
-    :page: rails/how-to-guides/deployment/logging.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/logging.html
+    page_anchors:
     - custom-rails-deployments
     - default-rails-deployments
     - log-rotation
@@ -4130,8 +4142,8 @@ rails:
     - rails-applications
     - rails-product-heading
   manage_backups:
-    :page: rails/how-to-guides/databases/shells/manage-backups.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/shells/manage-backups.html
+    page_anchors:
     - 1-using-cloud-66-toolbelt
     - 2-from-your-cloud-66-dashboard
     - 3-via-command-line
@@ -4149,8 +4161,8 @@ rails:
     - restoring-an-automated-backup
     - unarchive-the-backup-files
   manage_stacks_chatops:
-    :page: rails/how-to-guides/common-tools/manage-stacks-chatops.html
-    :page_anchors:
+    page: rails/how-to-guides/common-tools/manage-stacks-chatops.html
+    page_anchors:
     - cloud-66-chatops
     - create-a-slack-bot
     - deregister
@@ -4159,8 +4171,8 @@ rails:
     - quick-install
     - rails-product-heading
   managing_and_upgrading_ruby_versions:
-    :page: rails/how-to-guides/deployment/managing-and-upgrading-ruby-versions.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/managing-and-upgrading-ruby-versions.html
+    page_anchors:
     - adding-a-new-server
     - building-a-new-application
     - building-a-new-application-1
@@ -4172,15 +4184,15 @@ rails:
     - rails-product-heading
     - scaling-up
   managing_custom_packages:
-    :page: rails/how-to-guides/deployment/managing-custom-packages.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/managing-custom-packages.html
+    page_anchors:
     - adding-custom-packages-to-your-application
     - more-help
     - overview
     - rails-product-heading
   managing_gem_configs:
-    :page: rails/how-to-guides/deployment/managing-gem-configs.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/managing-gem-configs.html
+    page_anchors:
     - cloud-66-permissions
     - configuration-of-gems
     - environment-variables
@@ -4189,8 +4201,8 @@ rails:
     - permissions-errors
     - rails-product-heading
   manifest_structure:
-    :page: rails/references/manifest-structure.html
-    :page_anchors:
+    page: rails/references/manifest-structure.html
+    page_anchors:
     - class-1-once-off-settings
     - class-2-sticky-settings
     - class-3-flexible-settings
@@ -4203,15 +4215,15 @@ rails:
     - third-level-1-configurations
     - third-level-2-servers
   memcached:
-    :page: rails/how-to-guides/add-ins/memcached.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/memcached.html
+    page_anchors:
     - add-memcached
     - check-memcached
     - customize-memcached
     - rails-product-heading
   migrate_from_heroku:
-    :page: rails/quickstarts/migrate-from-heroku.html
-    :page_anchors:
+    page: rails/quickstarts/migrate-from-heroku.html
+    page_anchors:
     - 1-build-and-deploy-your-code
     - 2-data
     - 3-traffic
@@ -4227,8 +4239,8 @@ rails:
     - what-youll-need
     - whats-next
   migrate_the_stack:
-    :page: rails/how-to-guides/deployment/shells/migrate-the-stack.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/shells/migrate-the-stack.html
+    page_anchors:
     - 1-set-a-failover-group
     - 10-switch-to-the-new-application
     - 11-optionalswitch-your-dns-record-to-the-new-application
@@ -4244,9 +4256,15 @@ rails:
     - note
     - note-1
     - rails-product-heading
+  missing_page:
+    page: rails/missing-page.html
+    page_anchors:
+    - rails-product-heading
+    - this-help-page-is-missing-sorry
+    - well-fix-this-asap
   mongo_replica_sets:
-    :page: rails/how-to-guides/scaling/mongo-replica-sets.html
-    :page_anchors:
+    page: rails/how-to-guides/scaling/mongo-replica-sets.html
+    page_anchors:
     - configure-a-mongodb-replica-set
     - configure-mongoid
     - environment-variables
@@ -4254,8 +4272,8 @@ rails:
     - rails-product-heading
     - using-a-mongodb-replica-set-in-your-code
   multi_cert_haproxy:
-    :page: rails/how-to-guides/security/multi-cert_haproxy.html
-    :page_anchors:
+    page: rails/how-to-guides/security/multi-cert_haproxy.html
+    page_anchors:
     - 1-concatanate-each-certifications-files-to-one-file
     - 2-upload-them-to-tmp-of-your-server
     - 3-login-to-your-haproxy-server
@@ -4264,18 +4282,18 @@ rails:
     - note
     - rails-product-heading
   multi_region_stack:
-    :page: rails/how-to-guides/deployment/shells/multi-region-stack.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/shells/multi-region-stack.html
+    page_anchors:
     - rails-product-heading
   multi_tenancy:
-    :page: rails/how-to-guides/deployment/multi-tenancy.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/multi-tenancy.html
+    page_anchors:
     - multiple-services
     - overview
     - rails-product-heading
   network_configuration:
-    :page: rails/references/network-configuration.html
-    :page_anchors:
+    page: rails/references/network-configuration.html
+    page_anchors:
     - add-a-firewall-rule
     - allowing-traffic
     - configure-network-traffic
@@ -4288,8 +4306,8 @@ rails:
     - what-is-activeprotect
     - www-or-non-www-in-your-url
   nginx:
-    :page: rails/references/nginx.html
-    :page_anchors:
+    page: rails/references/nginx.html
+    page_anchors:
     - about-nginx
     - boolean-variables
     - default-nginx-configuration
@@ -4298,37 +4316,37 @@ rails:
     - nginx-worker-configuration
     - rails-product-heading
   nginx_auth:
-    :page: rails/how-to-guides/security/nginx-auth.html
-    :page_anchors:
+    page: rails/how-to-guides/security/nginx-auth.html
+    page_anchors:
     - for-passenger-servers
     - other-rack-servers
     - rails-product-heading
   nginx_deny:
-    :page: rails/how-to-guides/security/nginx-deny.html
-    :page_anchors:
+    page: rails/how-to-guides/security/nginx-deny.html
+    page_anchors:
     - rails-product-heading
   nginx_modules:
-    :page: rails/how-to-guides/deployment/shells/nginx-modules.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/shells/nginx-modules.html
+    page_anchors:
     - custom-rack-servers
     - introduction
     - passenger
     - rails-product-heading
   nginx_redirect:
-    :page: rails/how-to-guides/deployment/shells/nginx-redirect.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/shells/nginx-redirect.html
+    page_anchors:
     - http
     - https
     - rails-product-heading
     - redirect-between-domains-with-http-and-https
     - redirect-from-http-to-https
   nginx_ssl_ciphers:
-    :page: rails/how-to-guides/security/nginx-ssl-ciphers.html
-    :page_anchors:
+    page: rails/how-to-guides/security/nginx-ssl-ciphers.html
+    page_anchors:
     - rails-product-heading
   non_recommended_server_sizes:
-    :page: rails/references/non-recommended-server-sizes.html
-    :page_anchors:
+    page: rails/references/non-recommended-server-sizes.html
+    page_anchors:
     - amazon-web-services
     - cloud-a
     - digitalocean
@@ -4341,8 +4359,8 @@ rails:
     - under-powered-server-sizes-not-recommended
     - vultr
   notifications:
-    :page: rails/account/notifications.html
-    :page_anchors:
+    page: rails/account/notifications.html
+    page_anchors:
     - available-settings
     - browser-notifications
     - copying-notification-settings-between-apps
@@ -4356,14 +4374,14 @@ rails:
     - webhooks
     - webhooks-for-service-accounts
   optimizing_performance:
-    :page: rails/how-to-guides/scaling/optimizing-performance.html
-    :page_anchors:
+    page: rails/how-to-guides/scaling/optimizing-performance.html
+    page_anchors:
     - load-testing
     - preparing-for-server-load
     - rails-product-heading
   padrino_stacks:
-    :page: rails/how-to-guides/deployment/padrino-stacks.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/padrino-stacks.html
+    page_anchors:
     - active-record
     - connect-to-your-database
     - custom-commands
@@ -4374,8 +4392,8 @@ rails:
     - mysql-yml
     - rails-product-heading
   parallel_deployment:
-    :page: rails/how-to-guides/deployment/parallel-deployment.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/parallel-deployment.html
+    page_anchors:
     - changing-your-applications-deployment-strategy
     - coping-with-load-balancer-configuration-lag
     - how-deployment-strategies-work
@@ -4389,8 +4407,8 @@ rails:
     - using-deploy-with-options
     - using-the-toolbelt-command-line
   partner_integration:
-    :page: rails/integrations/partner-integration.html
-    :page_anchors:
+    page: rails/integrations/partner-integration.html
+    page_anchors:
     - provisioning
     - rails-product-heading
     - redirecting-to-partners-website
@@ -4401,13 +4419,13 @@ rails:
     - user-integration-api
     - using-oauth2
   passenger_enterprise:
-    :page: rails/how-to-guides/rack-servers/passenger-enterprise.html
-    :page_anchors:
+    page: rails/how-to-guides/rack-servers/passenger-enterprise.html
+    page_anchors:
     - deploy-with-passenger-enterprise
     - rails-product-heading
   pci_compliance:
-    :page: rails/resources/pci-compliance.html
-    :page_anchors:
+    page: rails/resources/pci-compliance.html
+    page_anchors:
     - how-does-cloud-66-access-my-servers
     - how-does-cloud-66-prevent-access-to-customer-servers-in-case-of-a-breach
     - is-cloud-66-pci-compliant
@@ -4416,12 +4434,12 @@ rails:
     - where-are-the-ssh-keys-stored-on-cloud-66
     - will-my-websitemobile-back-endapi-be-pci-compliant-if-i-use-cloud-66
   pg_replication_version:
-    :page: rails/how-to-guides/databases/shells/pg-replication-version.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/shells/pg-replication-version.html
+    page_anchors:
     - rails-product-heading
   postgis_installation:
-    :page: rails/how-to-guides/databases/shells/postgis-installation.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/shells/postgis-installation.html
+    page_anchors:
     - enable-adminpack
     - install-pgrouting
     - installing-with-cloud-66
@@ -4432,8 +4450,8 @@ rails:
     - prerequisites
     - rails-product-heading
   proc_files:
-    :page: rails/how-to-guides/deployment/proc-files.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/proc-files.html
+    page_anchors:
     - about-running-background-processes
     - how-to-run-background-processes
     - important
@@ -4442,8 +4460,8 @@ rails:
     - running-processes-with-unique-identifiers
     - scaling-background-processes
   puma_rack_server:
-    :page: rails/how-to-guides/rack-servers/puma-rack-server.html
-    :page_anchors:
+    page: rails/how-to-guides/rack-servers/puma-rack-server.html
+    page_anchors:
     - achieving-zero-downtime-reloads
     - bluepill
     - controlling-puma-via-your-terminal
@@ -4453,8 +4471,8 @@ rails:
     - sample-config-file-for-puma
     - systemd
   querying_server_metadata:
-    :page: rails/how-to-guides/deployment/querying-server-metadata.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/querying-server-metadata.html
+    page_anchors:
     - 1-deployment-information
     - 2-server-os-information
     - 3-find-out-who-deployed-last-or-currently
@@ -4464,37 +4482,37 @@ rails:
     - rails-product-heading
     - using-metadata-in-a-workflow
   quickstarts_index:
-    :page: rails/quickstarts/index.html
-    :page_anchors:
+    page: rails/quickstarts/index.html
+    page_anchors:
     - rails-product-heading
   rabbitmq:
-    :page: rails/how-to-guides/add-ins/rabbitmq.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/rabbitmq.html
+    page_anchors:
     - add-rabbitmq
     - rails-product-heading
   rack_status_alerts:
-    :page: rails/how-to-guides/rack-servers/rack-status-alerts.html
-    :page_anchors:
+    page: rails/how-to-guides/rack-servers/rack-status-alerts.html
+    page_anchors:
     - alert-limits
     - rails-product-heading
   rails_console:
-    :page: rails/how-to-guides/deployment/rails-console.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/rails-console.html
+    page_anchors:
     - rails-product-heading
   rails_node_version:
-    :page: rails/how-to-guides/deployment/rails-node-version.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/rails-node-version.html
+    page_anchors:
     - controlling-the-node-version-for-your-rails-application
     - rails-product-heading
   rake_task:
-    :page: rails/how-to-guides/add-ins/rake-task.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/rake-task.html
+    page_anchors:
     - adding-a-new-rake-job
     - overview
     - rails-product-heading
   redeployment_hook:
-    :page: rails/how-to-guides/deployment/redeployment-hook.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/redeployment-hook.html
+    page_anchors:
     - accessing-redeployment-hooks
     - adding-redeployment-hooks-to-your-pipeline
     - bitbucket-setup
@@ -4506,36 +4524,36 @@ rails:
     - rails-product-heading
     - usage-example
   redis:
-    :page: rails/how-to-guides/add-ins/redis.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/redis.html
+    page_anchors:
     - about-adding-redis-to-your-application
     - add-redis-to-your-application
     - rails-product-heading
   references_account_index:
-    :page: rails/references/account/index.html
-    :page_anchors: []
+    page: rails/references/account/index.html
+    page_anchors: []
   references_clouds_index:
-    :page: rails/references/clouds/index.html
-    :page_anchors: []
+    page: rails/references/clouds/index.html
+    page_anchors: []
   references_index:
-    :page: rails/references/index.html
-    :page_anchors:
+    page: rails/references/index.html
+    page_anchors:
     - rails-product-heading
   references_integrations_index:
-    :page: rails/references/integrations/index.html
-    :page_anchors: []
+    page: rails/references/integrations/index.html
+    page_anchors: []
   references_shells_index:
-    :page: rails/references/shells/index.html
-    :page_anchors: []
+    page: rails/references/shells/index.html
+    page_anchors: []
   referral_program:
-    :page: rails/resources/referral-program.html
-    :page_anchors:
+    page: rails/resources/referral-program.html
+    page_anchors:
     - how-it-works
     - rails-product-heading
     - your-referral-code
   registered_servers:
-    :page: rails/how-to-guides/deployment/registered-servers.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/registered-servers.html
+    page_anchors:
     - overview
     - rails-product-heading
     - register-a-server
@@ -4544,36 +4562,36 @@ rails:
     - using-cloud-66-toolbelt
     - via-the-dashboard
   replace_sqlite:
-    :page: rails/how-to-guides/databases/replace-sqlite.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/replace-sqlite.html
+    page_anchors:
     - instructions
     - mysql
     - postgresql
     - rails-product-heading
   reserved_tags:
-    :page: rails/references/reserved-tags.html
-    :page_anchors:
+    page: rails/references/reserved-tags.html
+    page_anchors:
     - adding-tags-to-a-server
     - rails-product-heading
     - reserved-tags
   resources_beta_program_index:
-    :page: rails/resources/beta-program/index.html
-    :page_anchors: []
+    page: rails/resources/beta-program/index.html
+    page_anchors: []
   resources_index:
-    :page: rails/resources/index.html
-    :page_anchors:
+    page: rails/resources/index.html
+    page_anchors:
     - rails-product-heading
   running_rake_tasks:
-    :page: rails/how-to-guides/deployment/running-rake-tasks.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/running-rake-tasks.html
+    page_anchors:
     - introduction
     - manually
     - rails-product-heading
     - scheduling-rake-tasks
     - using-deploy-hooks
   scaling:
-    :page: rails/how-to-guides/scaling/scaling.html
-    :page_anchors:
+    page: rails/how-to-guides/scaling/scaling.html
+    page_anchors:
     - about-scaling-servers
     - adding-and-removing-delete-protection
     - database-servers
@@ -4585,23 +4603,23 @@ rails:
     - vertical-scaling
     - web-servers
   security:
-    :page: rails/resources/security.html
-    :page_anchors:
+    page: rails/resources/security.html
+    page_anchors:
     - credit-card-information
     - customer-protection
     - infrastructure-security
     - rails-product-heading
     - reporting-security-issues
   seeding_db:
-    :page: rails/how-to-guides/databases/seeding-db.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/seeding-db.html
+    page_anchors:
     - deploy-hook
     - note
     - rails-product-heading
     - seed-script
   server_deletion:
-    :page: rails/how-to-guides/deployment/server-deletion.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/server-deletion.html
+    page_anchors:
     - aws
     - azure
     - clouda
@@ -4612,23 +4630,23 @@ rails:
     - rackspace
     - rails-product-heading
   server_ip_addresses:
-    :page: rails/references/server-ip-addresses.html
-    :page_anchors:
+    page: rails/references/server-ip-addresses.html
+    page_anchors:
     - cloud-66-agent
     - cloud-66-hostnames
     - finding-your-cloud-66-hostname
     - new-ip-addresses
     - rails-product-heading
   server_monitoring:
-    :page: rails/references/server-monitoring.html
-    :page_anchors:
+    page: rails/references/server-monitoring.html
+    page_anchors:
     - adding-a-monitoring-service-to-your-app
     - common-monitoring-solutions
     - overview
     - rails-product-heading
   server_restart_notifications:
-    :page: rails/how-to-guides/deployment/server-restart-notifications.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/server-restart-notifications.html
+    page_anchors:
     - additional-information
     - how-do-i-actually-restart-my-servers
     - how-does-cloud-66-determine-my-server-needs-a-restart
@@ -4636,40 +4654,40 @@ rails:
     - ive-restarted-but-i-still-see-the-notification
     - rails-product-heading
   service_accounts:
-    :page: rails/account/service-accounts.html
-    :page_anchors:
+    page: rails/account/service-accounts.html
+    page_anchors:
     - configuring-notifications-and-webhooks
     - creating-a-service-account
     - granting-api-access-to-a-service-account
     - overview
     - rails-product-heading
   service_network_configuration:
-    :page: rails/tutorials/service-network-configuration.html
-    :page_anchors:
+    page: rails/tutorials/service-network-configuration.html
+    page_anchors:
     - changing-the-http-port
     - more-advanced-options
     - overview
     - rails-product-heading
     - whats-next
   setting_up_custom_livelogs:
-    :page: rails/how-to-guides/deployment/setting-up-custom-livelogs.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/setting-up-custom-livelogs.html
+    page_anchors:
     - note
     - rails-product-heading
   setting_write_permissions:
-    :page: rails/how-to-guides/deployment/setting-write-permissions.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/setting-write-permissions.html
+    page_anchors:
     - cloud-66-default-linux-users-and-groups
     - overview
     - rails-product-heading
     - setting-permissions-for-your-writable-directory
   sharing_db:
-    :page: rails/how-to-guides/databases/shells/sharing-db.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/shells/sharing-db.html
+    page_anchors:
     - rails-product-heading
   shell:
-    :page: rails/how-to-guides/add-ins/shell.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/shell.html
+    page_anchors:
     - adding-a-new-server-job
     - default-values
     - notation
@@ -4679,8 +4697,8 @@ rails:
     - support-for-whenever-gem
     - using-parameters
   sinatra_stacks:
-    :page: rails/how-to-guides/deployment/sinatra-stacks.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/sinatra-stacks.html
+    page_anchors:
     - active-record
     - connect-to-your-database
     - custom-commands
@@ -4690,8 +4708,8 @@ rails:
     - mongomapper
     - rails-product-heading
   slack_notifications:
-    :page: rails/how-to-guides/common-tools/slack-notifications.html
-    :page_anchors:
+    page: rails/how-to-guides/common-tools/slack-notifications.html
+    page_anchors:
     - help-with-the-cloud-66-slack-app
     - installing-the-cloud-66-slack-app
     - overview
@@ -4699,8 +4717,8 @@ rails:
     - removing-the-cloud-66-slack-app
     - what-does-the-cloud-66-slack-app-do
   ssh:
-    :page: rails/how-to-guides/common-tools/ssh.html
-    :page_anchors:
+    page: rails/how-to-guides/common-tools/ssh.html
+    page_anchors:
     - cloud-providers-firewall-api-has-delay
     - debugging-using-verbose-mode
     - detected-ip-is-different
@@ -4709,15 +4727,15 @@ rails:
     - prompted-for-password
     - rails-product-heading
   ssh_keys:
-    :page: rails/how-to-guides/common-tools/ssh-keys.html
-    :page_anchors:
+    page: rails/how-to-guides/common-tools/ssh-keys.html
+    page_anchors:
     - connect-to-your-server-using-your-key
     - generate-keys-on-linux-and-mac
     - generate-keys-on-windows
     - rails-product-heading
   ssh_to_server:
-    :page: rails/how-to-guides/common-tools/ssh-to-server.html
-    :page_anchors:
+    page: rails/how-to-guides/common-tools/ssh-to-server.html
+    page_anchors:
     - check-the-permissions-of-your-home-and-ssh-directories
     - cloud-66-toolbelt
     - examples
@@ -4731,14 +4749,14 @@ rails:
     - troubleshooting
     - update-your-toolbelt-version
   ssl:
-    :page: rails/how-to-guides/add-ins/ssl.html
-    :page_anchors:
+    page: rails/how-to-guides/add-ins/ssl.html
+    page_anchors:
     - lets-encrypt-ssl-certificate
     - rails-product-heading
     - standard-ssl-certificate
   ssl_certificate:
-    :page: rails/how-to-guides/security/ssl-certificate.html
-    :page_anchors:
+    page: rails/how-to-guides/security/ssl-certificate.html
+    page_anchors:
     - generate-a-certificate
     - important
     - intermediate-certificates
@@ -4747,15 +4765,15 @@ rails:
     - rails-product-heading
     - separate-domains-with-different-certificates
   ssl_termination_on_load_balancers:
-    :page: rails/how-to-guides/security/ssl-termination-on-load-balancers.html
-    :page_anchors:
+    page: rails/how-to-guides/security/ssl-termination-on-load-balancers.html
+    page_anchors:
     - amazon-elastic-load-balancer
     - enable-automatic-ssl-termination
     - rackspace
     - rails-product-heading
   stack_definition:
-    :page: rails/the-basics/stack-definition.html
-    :page_anchors:
+    page: rails/the-basics/stack-definition.html
+    page_anchors:
     - application-components
     - application-environments
     - application-vs-stack
@@ -4771,13 +4789,13 @@ rails:
     - what-is-cloud-66-for-rails
     - what-is-stackscore
   stack_environments:
-    :page: rails/references/stack-environments.html
-    :page_anchors:
+    page: rails/references/stack-environments.html
+    page_anchors:
     - application-environments
     - rails-product-heading
   stack_failover:
-    :page: rails/how-to-guides/deployment/shells/stack-failover.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/shells/stack-failover.html
+    page_anchors:
     - 1-code
     - 2-data
     - 3-traffic
@@ -4785,14 +4803,14 @@ rails:
     - rails-product-heading
     - setup-the-failover-group
   symlink_folders:
-    :page: rails/how-to-guides/deployment/symlink-folders.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/symlink-folders.html
+    page_anchors:
     - public-folder
     - rails-product-heading
     - symbolic-link
   systemd:
-    :page: rails/how-to-guides/deployment/systemd.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/systemd.html
+    page_anchors:
     - check-if-a-service-is-running
     - migrating-from-bluepill-to-systemd
     - overview
@@ -4806,8 +4824,8 @@ rails:
     - stop-a-service
     - using-systemd
   tagging_components:
-    :page: rails/how-to-guides/deployment/tagging-components.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/tagging-components.html
+    page_anchors:
     - adding-tags-to-a-server
     - beta-only
     - keyvalue-tags
@@ -4819,8 +4837,8 @@ rails:
     - syntax-of-propagated-tags
     - tag-limits
   tamper_with_yaml:
-    :page: rails/how-to-guides/databases/tamper-with-yaml.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/tamper-with-yaml.html
+    page_anchors:
     - disabling-automated-config-updates
     - examples
     - mongodb
@@ -4828,8 +4846,8 @@ rails:
     - postgres
     - rails-product-heading
   team_accounts:
-    :page: rails/account/team-accounts.html
-    :page_anchors:
+    page: rails/account/team-accounts.html
+    page_anchors:
     - add-a-new-user-team-member
     - application-users
     - deleting-user-accounts--teams
@@ -4840,8 +4858,8 @@ rails:
     - user-roles-and-permissions
     - using-team-accounts
   technical_specifications:
-    :page: rails/resources/technical-specifications.html
-    :page_anchors:
+    page: rails/resources/technical-specifications.html
+    page_anchors:
     - 1-components-built-via-apt-packages
     - 2-components-built-from-source
     - component-versions
@@ -4851,12 +4869,12 @@ rails:
     - supported-cloud-providers
     - supported-platforms
   the_basics_index:
-    :page: rails/the-basics/index.html
-    :page_anchors:
+    page: rails/the-basics/index.html
+    page_anchors:
     - rails-product-heading
   thin_rack_server:
-    :page: rails/how-to-guides/rack-servers/thin-rack-server.html
-    :page_anchors:
+    page: rails/how-to-guides/rack-servers/thin-rack-server.html
+    page_anchors:
     - bluepill
     - controlling-thin-via-your-terminal
     - customizing-shutdown-and-reload-signals
@@ -4864,16 +4882,16 @@ rails:
     - rails-product-heading
     - systemd
   tls_versions:
-    :page: rails/how-to-guides/security/tls-versions.html
-    :page_anchors:
+    page: rails/how-to-guides/security/tls-versions.html
+    page_anchors:
     - disabling-tls-10-on-a-load-balancer
     - disabling-tls-10-on-the-web-server
     - overview
     - rails-product-heading
     - warning
   toolbelt:
-    :page: rails/references/toolbelt.html
-    :page_anchors:
+    page: rails/references/toolbelt.html
+    page_anchors:
     - a-note-on-overwriting-access-profiles
     - about-backup-management
     - access-control-for-toolbelt-login
@@ -5019,8 +5037,8 @@ rails:
     - usage-8
     - usage-9
   troubleshooting_deployments:
-    :page: rails/how-to-guides/deployment/troubleshooting-deployments.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/troubleshooting-deployments.html
+    page_anchors:
     - check-your-git-repo-settings
     - have-you-recently-restarted-your-server
     - my-problem-isnt-covered-by-any-of-the-above
@@ -5030,8 +5048,8 @@ rails:
     - process-or-migration-timeouts
     - rails-product-heading
   troubleshooting_server_connection:
-    :page: rails/how-to-guides/deployment/troubleshooting-server-connection.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/troubleshooting-server-connection.html
+    page_anchors:
     - heavy-load-on-the-servers
     - memory-leaks
     - noisy-neighbours-on-shared-hosting
@@ -5040,12 +5058,12 @@ rails:
     - recent-server-restarts
     - temporary-network-interruptions
   tutorials_index:
-    :page: rails/tutorials/index.html
-    :page_anchors:
+    page: rails/tutorials/index.html
+    page_anchors:
     - rails-product-heading
   two_factor_authentication:
-    :page: rails/account/two-factor-authentication.html
-    :page_anchors:
+    page: rails/account/two-factor-authentication.html
+    page_anchors:
     - add-a-recovery-phone-number
     - adding-a-physical-fido-security-key
     - enabling-2fa-on-your-account
@@ -5057,8 +5075,8 @@ rails:
     - troubleshooting
     - what-is-two-factor-authentication
   understanding_and_improving_security_score:
-    :page: rails/account/understanding-and-improving-security-score.html
-    :page_anchors:
+    page: rails/account/understanding-and-improving-security-score.html
+    page_anchors:
     - fido-authentication
     - finding-your-security-score
     - how-fido-works
@@ -5071,16 +5089,16 @@ rails:
     - why-cant-we-share-logins
     - why-do-i-need-2fa
   understanding_failover_groups:
-    :page: rails/references/understanding-failover-groups.html
-    :page_anchors:
+    page: rails/references/understanding-failover-groups.html
+    page_anchors:
     - how-failover-groups-work
     - rails-product-heading
     - testing-failover-groups
     - using-failover-groups-with-ssl-certificates
     - why-use-failover-groups
   unicorn_rack_server:
-    :page: rails/how-to-guides/rack-servers/unicorn-rack-server.html
-    :page_anchors:
+    page: rails/how-to-guides/rack-servers/unicorn-rack-server.html
+    page_anchors:
     - bluepill
     - controlling-unicorn-via-your-terminal
     - customizing-shutdown-and-reload-signals
@@ -5089,20 +5107,20 @@ rails:
     - sample-config-file-for-unicorn
     - systemd
   uninstall_mysql:
-    :page: rails/how-to-guides/databases/shells/uninstall-mysql.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/shells/uninstall-mysql.html
+    page_anchors:
     - rails-product-heading
   using_c66_via_firewall:
-    :page: rails/how-to-guides/deployment/using-c66-via-firewall.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/using-c66-via-firewall.html
+    page_anchors:
     - cloud-66s-authorized-ip-addresses
     - overview
     - ports-that-cloud-66-requires
     - rails-product-heading
     - warning
   using_cloud66_toolbelt:
-    :page: rails/quickstarts/using-cloud66-toolbelt.html
-    :page_anchors:
+    page: rails/quickstarts/using-cloud66-toolbelt.html
+    page_anchors:
     - advanced
     - careful
     - creating-a-cx-profile
@@ -5119,12 +5137,12 @@ rails:
     - view-toolbelt-information
     - what-is-toolbelt
   using_master_data_staging:
-    :page: rails/how-to-guides/databases/shells/using-master-data-staging.html
-    :page_anchors:
+    page: rails/how-to-guides/databases/shells/using-master-data-staging.html
+    page_anchors:
     - rails-product-heading
   websocket_support:
-    :page: rails/how-to-guides/deployment/websocket-support.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/websocket-support.html
+    page_anchors:
     - configuring-for-websocket
     - overview
     - rails-product-heading
@@ -5134,8 +5152,8 @@ rails:
     - using-websocket-via-native-cloud-load-balancers
     - websocket-through-a-load-balancer
   zapier:
-    :page: rails/how-to-guides/automation/zapier.html
-    :page_anchors:
+    page: rails/how-to-guides/automation/zapier.html
+    page_anchors:
     - making-a-simple-zap
     - overview
     - rails-product-heading
@@ -5145,19 +5163,19 @@ rails:
     - step-3-trigger-your-zap
     - zaps-triggers-and-actions
   zero_downtime_deploy:
-    :page: rails/how-to-guides/deployment/shells/zero-downtime-deploy.html
-    :page_anchors:
+    page: rails/how-to-guides/deployment/shells/zero-downtime-deploy.html
+    page_anchors:
     - 1-using-a-web-server-that-supports-hot-rollover
     - 2-deploying-in-serial
     - rails-product-heading
 skycap:
   account_index:
-    :page: skycap/account/index.html
-    :page_anchors:
+    page: skycap/account/index.html
+    page_anchors:
     - skycap-product-heading
   account_management:
-    :page: skycap/account/account-management.html
-    :page_anchors:
+    page: skycap/account/account-management.html
+    page_anchors:
     - add-or-remove-users
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
@@ -5168,15 +5186,15 @@ skycap:
     - skycap-product-heading
     - view--update-account-information
   account_protection:
-    :page: skycap/account/account-protection.html
-    :page_anchors:
+    page: skycap/account/account-protection.html
+    page_anchors:
     - account-protection-alerts
     - overview
     - skycap-product-heading
     - what-is-cloud-66-account-protection
   adding_a_new_service:
-    :page: skycap/tutorials/adding-a-new-service.html
-    :page_anchors:
+    page: skycap/tutorials/adding-a-new-service.html
+    page_anchors:
     - adding-a-new-component-service-to-your-application
     - adding-a-second-deploymentyml
     - adding-a-second-serviceyml
@@ -5187,8 +5205,8 @@ skycap:
     - what-youll-need
     - whats-next
   adding_and_enforcing_sidecar_containers:
-    :page: skycap/tutorials/adding-and-enforcing-sidecar-containers.html
-    :page_anchors:
+    page: skycap/tutorials/adding-and-enforcing-sidecar-containers.html
+    page_anchors:
     - adding-a-sidecar
     - adding-the-authentication-service
     - creating-an-inline-stencil
@@ -5202,8 +5220,8 @@ skycap:
     - what-youll-need
     - whats-next
   adding_policies_to_btrs:
-    :page: skycap/how-to-guides/formations/adding-policies-to-btrs.html
-    :page_anchors:
+    page: skycap/how-to-guides/formations/adding-policies-to-btrs.html
+    page_anchors:
     - components-of-the-json-definition
     - directory-structure-for-policies-in-btrs
     - how-to-add-policies-to-a-btr
@@ -5212,8 +5230,8 @@ skycap:
     - related-guides
     - skycap-product-heading
   adding_transformations_to_btrs:
-    :page: skycap/how-to-guides/formations/adding-transformations-to-btrs.html
-    :page_anchors:
+    page: skycap/how-to-guides/formations/adding-transformations-to-btrs.html
+    page_anchors:
     - components-of-the-json-definition
     - directory-structure-for-transformations-in-btrs
     - how-to-add-transformations-to-a-btr
@@ -5222,45 +5240,45 @@ skycap:
     - related-guides
     - skycap-product-heading
   audit_logs:
-    :page: skycap/account/audit-logs.html
-    :page_anchors:
+    page: skycap/account/audit-logs.html
+    page_anchors:
     - accessing-audit-logs
     - audit-logging
     - searching-audit-logs
     - skycap-product-heading
   browser_requirements:
-    :page: skycap/account/browser-requirements.html
-    :page_anchors:
+    page: skycap/account/browser-requirements.html
+    page_anchors:
     - skycap-product-heading
   build_minutes:
-    :page: skycap/references/build-minutes.html
-    :page_anchors:
+    page: skycap/references/build-minutes.html
+    page_anchors:
     - build-minute-overages
     - calculating-build-minutes
     - monthly-build-minutes
     - skycap-product-heading
     - what-are-build-minutes
   cloud66_badge:
-    :page: skycap/policies-specifications/cloud66-badge.html
-    :page_anchors:
+    page: skycap/policies-specifications/cloud66-badge.html
+    page_anchors:
     - important
     - skycap-product-heading
   cloud66_status:
-    :page: skycap/policies-specifications/cloud66-status.html
-    :page_anchors:
+    page: skycap/policies-specifications/cloud66-status.html
+    page_anchors:
     - latest-updates
     - skycap-product-heading
     - status-and-uptime
   cloud_66_beta_program:
-    :page: skycap/policies-specifications/cloud-66-beta-program.html
-    :page_anchors:
+    page: skycap/policies-specifications/cloud-66-beta-program.html
+    page_anchors:
     - joining-the-beta-programme
     - overview
     - reporting-issues
     - skycap-product-heading
   concepts_and_terminology:
-    :page: skycap/the-basics/concepts-and-terminology.html
-    :page_anchors:
+    page: skycap/the-basics/concepts-and-terminology.html
+    page_anchors:
     - buildgrid-and-build-minutes
     - container-deployment-pipeline-cdp
     - containers-and-containerization
@@ -5272,8 +5290,8 @@ skycap:
     - service-oriented-architecture-soa
     - skycap-product-heading
   config_store:
-    :page: skycap/how-to-guides/configuration/config-store.html
-    :page_anchors:
+    page: skycap/how-to-guides/configuration/config-store.html
+    page_anchors:
     - accessing-configstore-variables
     - account-level
     - application-level
@@ -5289,8 +5307,8 @@ skycap:
     - skycap-product-heading
     - skycap-stencils
   connect_cloud66_to_git_repo:
-    :page: skycap/references/connect-cloud66-to-git-repo.html
-    :page_anchors:
+    page: skycap/references/connect-cloud66-to-git-repo.html
+    page_anchors:
     - bitbucket-example
     - github-example
     - notice
@@ -5298,8 +5316,8 @@ skycap:
     - public-repositories
     - skycap-product-heading
   create_your_own_stencil_template_repos:
-    :page: skycap/how-to-guides/formations/create_your_own_stencil_template_repos.html
-    :page_anchors:
+    page: skycap/how-to-guides/formations/create_your_own_stencil_template_repos.html
+    page_anchors:
     - adding-a-base-template-repository-to-your-cloud-66-account
     - components-of-the-json-definition-for-a-btr
     - directory-structure-for-btrs
@@ -5308,12 +5326,12 @@ skycap:
     - skycap-product-heading
     - updating-btrs-in-skycap
   data_protection:
-    :page: skycap/policies-specifications/data-protection.html
-    :page_anchors:
+    page: skycap/policies-specifications/data-protection.html
+    page_anchors:
     - skycap-product-heading
   deploying_your_formations:
-    :page: skycap/how-to-guides/formations/deploying-your-formations.html
-    :page_anchors:
+    page: skycap/how-to-guides/formations/deploying-your-formations.html
+    page_anchors:
     - deploying-formations-to-kubernetes
     - deploying-stencilgroups
     - deploying-with-toolbelt
@@ -5322,8 +5340,8 @@ skycap:
     - using-individual-files
     - using-tarballs
   faq:
-    :page: skycap/the-basics/faq.html
-    :page_anchors:
+    page: skycap/the-basics/faq.html
+    page_anchors:
     - are-their-any-requirements-for-the-user-on-my-servers
     - can-i-deploy-multiple-apps-on-a-single-server
     - can-i-use-cloud-66-with-my-own-servers
@@ -5338,8 +5356,8 @@ skycap:
     - who-pays-for-the-servers
     - why-do-you-need-my-server-ssh-key
   formation_filters:
-    :page: skycap/how-to-guides/formations/formation-filters.html
-    :page_anchors:
+    page: skycap/how-to-guides/formations/formation-filters.html
+    page_anchors:
     - adding-filters-to-a-formation
     - filter-syntax
     - how-formation-filters-work
@@ -5348,8 +5366,8 @@ skycap:
     - skycap-product-heading
     - using-filters-with-toolbelt-cx
   formations_stencils_and_snapshots:
-    :page: skycap/the-basics/formations-stencils-and-snapshots.html
-    :page_anchors:
+    page: skycap/the-basics/formations-stencils-and-snapshots.html
+    page_anchors:
     - overview
     - reusability
     - skycap-product-heading
@@ -5363,8 +5381,8 @@ skycap:
     - whats-next
     - why-use-formations-and-stencils
   getting_started:
-    :page: skycap/quickstarts/getting-started.html
-    :page_anchors:
+    page: skycap/quickstarts/getting-started.html
+    page_anchors:
     - adding-services
     - choosing-application-type
     - deploying-your-application
@@ -5375,8 +5393,8 @@ skycap:
     - what-youll-need
     - whats-next
   global_search:
-    :page: skycap/how-to-guides/common-tools/global-search.html
-    :page_anchors:
+    page: skycap/how-to-guides/common-tools/global-search.html
+    page_anchors:
     - advanced-search
     - application-directives
     - basic-search
@@ -5389,16 +5407,16 @@ skycap:
     - service-directives
     - skycap-product-heading
   habitus_secrets:
-    :page: skycap/how-to-guides/configuration/habitus-secrets.html
-    :page_anchors:
+    page: skycap/how-to-guides/configuration/habitus-secrets.html
+    page_anchors:
     - 1-explicitly-define-secrets-as-habitus-environment-variables
     - 2-specify-your-secrets-in-your-buildyml
     - 3-call-your-secrets-from-your-dockerfile
     - overview
     - skycap-product-heading
   helm:
-    :page: skycap/how-to-guides/deployment/helm.html
-    :page_anchors:
+    page: skycap/how-to-guides/deployment/helm.html
+    page_anchors:
     - adding-helm-releases-to-a-formation
     - configuring-a-helm-release
     - deploying-a-helm-release
@@ -5410,72 +5428,78 @@ skycap:
     - using-vault-with-helm
     - what-youll-need
   how_to_guides_automation_index:
-    :page: skycap/how-to-guides/automation/index.html
-    :page_anchors:
+    page: skycap/how-to-guides/automation/index.html
+    page_anchors:
     - skycap-product-heading
   how_to_guides_building_index:
-    :page: skycap/how-to-guides/building/index.html
-    :page_anchors: []
+    page: skycap/how-to-guides/building/index.html
+    page_anchors: []
   how_to_guides_common_tools_index:
-    :page: skycap/how-to-guides/common-tools/index.html
-    :page_anchors:
+    page: skycap/how-to-guides/common-tools/index.html
+    page_anchors:
     - skycap-product-heading
   how_to_guides_configuration_index:
-    :page: skycap/how-to-guides/configuration/index.html
-    :page_anchors:
+    page: skycap/how-to-guides/configuration/index.html
+    page_anchors:
     - skycap-product-heading
   how_to_guides_databases_index:
-    :page: skycap/how-to-guides/databases/index.html
-    :page_anchors: []
+    page: skycap/how-to-guides/databases/index.html
+    page_anchors: []
   how_to_guides_databases_shells_index:
-    :page: skycap/how-to-guides/databases/shells/index.html
-    :page_anchors: []
+    page: skycap/how-to-guides/databases/shells/index.html
+    page_anchors: []
   how_to_guides_deployment_index:
-    :page: skycap/how-to-guides/deployment/index.html
-    :page_anchors:
+    page: skycap/how-to-guides/deployment/index.html
+    page_anchors:
     - skycap-product-heading
   how_to_guides_formations_index:
-    :page: skycap/how-to-guides/formations/index.html
-    :page_anchors:
+    page: skycap/how-to-guides/formations/index.html
+    page_anchors:
     - skycap-product-heading
   how_to_guides_index:
-    :page: skycap/how-to-guides/index.html
-    :page_anchors:
+    page: skycap/how-to-guides/index.html
+    page_anchors:
     - skycap-product-heading
   how_to_guides_security_index:
-    :page: skycap/how-to-guides/security/index.html
-    :page_anchors: []
+    page: skycap/how-to-guides/security/index.html
+    page_anchors: []
   index:
-    :page: skycap/index.html
-    :page_anchors:
+    page: skycap/index.html
+    page_anchors:
     - skycap-product-heading
   integration_with_circle_ci:
-    :page: skycap/integrations/integration-with-circle-ci.html
-    :page_anchors:
+    page: skycap/integrations/integration-with-circle-ci.html
+    page_anchors:
     - skycap-product-heading
   integration_with_semaphore:
-    :page: skycap/integrations/integration-with-semaphore.html
-    :page_anchors:
+    page: skycap/integrations/integration-with-semaphore.html
+    page_anchors:
     - skycap-product-heading
   integration_with_travis_ci:
-    :page: skycap/integrations/integration-with-travis-ci.html
-    :page_anchors:
+    page: skycap/integrations/integration-with-travis-ci.html
+    page_anchors:
     - skycap-product-heading
   integrations_index:
-    :page: skycap/integrations/index.html
-    :page_anchors:
+    page: skycap/integrations/index.html
+    page_anchors:
     - skycap-product-heading
   managing_build_profiles:
-    :page: skycap/how-to-guides/formations/managing-build-profiles.html
-    :page_anchors:
+    page: skycap/how-to-guides/formations/managing-build-profiles.html
+    page_anchors:
     - managing-build-profiles
     - skycap-product-heading
     - using-build-profiles
     - what-are-build-profiles
     - why-create-build-profiles
+  missing_page:
+    page: skycap/missing-page.html
+    page_anchors:
+    - skycap-product-heading
+    - this-help-page-is-missing-sorry
+    - well-fix-this-asap
   more_about_access_control_policies:
-    :page: skycap/references/more-about-access-control-policies.html
-    :page_anchors:
+    page: skycap/references/more-about-access-control-policies.html
+    page_anchors:
     - access-control-principles
     - advanced-use-cases
     - assigning-permissions
@@ -5488,8 +5512,8 @@ skycap:
     - warning
     - warning-1
   notifications:
-    :page: skycap/account/notifications.html
-    :page_anchors:
+    page: skycap/account/notifications.html
+    page_anchors:
     - available-settings
     - browser-notifications
     - copying-notification-settings-between-apps
@@ -5503,13 +5527,13 @@ skycap:
     - webhooks
     - webhooks-for-service-accounts
   organising_formations:
-    :page: skycap/how-to-guides/formations/organising-formations.html
-    :page_anchors:
+    page: skycap/how-to-guides/formations/organising-formations.html
+    page_anchors:
     - skycap-product-heading
     - suggested-organization-of-stencils
   partner_integration:
-    :page: skycap/integrations/partner-integration.html
-    :page_anchors:
+    page: skycap/integrations/partner-integration.html
+    page_anchors:
     - provisioning
     - redirecting-to-partners-website
     - single-sign-on-sso
@@ -5520,8 +5544,8 @@ skycap:
     - user-integration-api
     - using-oauth2
   pci_compliance:
-    :page: skycap/policies-specifications/pci-compliance.html
-    :page_anchors:
+    page: skycap/policies-specifications/pci-compliance.html
+    page_anchors:
     - how-does-cloud-66-access-my-servers
     - how-does-cloud-66-prevent-access-to-customer-servers-in-case-of-a-breach
     - is-cloud-66-pci-compliant
@@ -5530,16 +5554,16 @@ skycap:
     - where-are-the-ssh-keys-stored-on-cloud-66
     - will-my-websitemobile-back-endapi-be-pci-compliant-if-i-use-cloud-66
   policies_specifications_index:
-    :page: skycap/policies-specifications/index.html
-    :page_anchors:
+    page: skycap/policies-specifications/index.html
+    page_anchors:
     - skycap-product-heading
   quickstarts_index:
-    :page: skycap/quickstarts/index.html
-    :page_anchors:
+    page: skycap/quickstarts/index.html
+    page_anchors:
     - skycap-product-heading
   redeployment_hook:
-    :page: skycap/how-to-guides/deployment/redeployment-hook.html
-    :page_anchors:
+    page: skycap/how-to-guides/deployment/redeployment-hook.html
+    page_anchors:
     - accessing-redeployment-hooks
     - adding-redeployment-hooks
     - bitbucket-setup
@@ -5554,30 +5578,30 @@ skycap:
     - skycap-product-heading
     - usage-examples
   references_account_index:
-    :page: skycap/references/account/index.html
-    :page_anchors: []
+    page: skycap/references/account/index.html
+    page_anchors: []
   references_index:
-    :page: skycap/references/index.html
-    :page_anchors:
+    page: skycap/references/index.html
+    page_anchors:
     - skycap-product-heading
   references_integrations_index:
-    :page: skycap/references/integrations/index.html
-    :page_anchors: []
+    page: skycap/references/integrations/index.html
+    page_anchors: []
   references_shells_index:
-    :page: skycap/references/shells/index.html
-    :page_anchors: []
+    page: skycap/references/shells/index.html
+    page_anchors: []
   referral_program:
-    :page: skycap/policies-specifications/referral-program.html
-    :page_anchors:
+    page: skycap/policies-specifications/referral-program.html
+    page_anchors:
     - how-it-works
     - skycap-product-heading
     - your-referral-code
   resources_beta_program_index:
-    :page: skycap/resources/beta-program/index.html
-    :page_anchors: []
+    page: skycap/resources/beta-program/index.html
+    page_anchors: []
   reusing_common_environment_variables:
-    :page: skycap/how-to-guides/formations/reusing-common-environment-variables.html
-    :page_anchors:
+    page: skycap/how-to-guides/formations/reusing-common-environment-variables.html
+    page_anchors:
     - a-working-example
     - adding-multiple-variables
     - adding-the-placeholder-code
@@ -5588,8 +5612,8 @@ skycap:
     - tagging-variables-1
     - testing-our-new-stencil
   rolling_back_using_snapshots:
-    :page: skycap/tutorials/rolling-back-using-snapshots.html
-    :page_anchors:
+    page: skycap/tutorials/rolling-back-using-snapshots.html
+    page_anchors:
     - checking-the-build-information-for-snapshots
     - downloading-older-formations
     - how-to-roll-back-to-an-older-snapshot
@@ -5598,24 +5622,24 @@ skycap:
     - skycap-product-heading
     - whats-next
   security:
-    :page: skycap/policies-specifications/security.html
-    :page_anchors:
+    page: skycap/policies-specifications/security.html
+    page_anchors:
     - credit-card-information
     - customer-protection
     - infrastructure-security
     - reporting-security-issues
     - skycap-product-heading
   service_accounts:
-    :page: skycap/account/service-accounts.html
-    :page_anchors:
+    page: skycap/account/service-accounts.html
+    page_anchors:
     - configuring-notifications-and-webhooks
     - creating-a-service-account
     - granting-api-access-to-a-service-account
     - overview
     - skycap-product-heading
   setting_environment_variables:
-    :page: skycap/tutorials/setting-environment-variables.html
-    :page_anchors:
+    page: skycap/tutorials/setting-environment-variables.html
+    page_anchors:
     - adding-a-custom-variable
     - calling-variables-in-stencils
     - downloading-variables-as-a-file
@@ -5629,8 +5653,8 @@ skycap:
     - what-youll-need
     - whats-next
   setting_up_access_control:
-    :page: skycap/tutorials/setting-up-access-control.html
-    :page_anchors:
+    page: skycap/tutorials/setting-up-access-control.html
+    page_anchors:
     - creating-a-formation-access-policy-for-a-user
     - creating-a-stencil-access-policy-for-a-user
     - editing-or-revoking-access
@@ -5640,15 +5664,15 @@ skycap:
     - what-youll-need
     - whats-next
   stencil_groups:
-    :page: skycap/how-to-guides/formations/stencil_groups.html
-    :page_anchors:
+    page: skycap/how-to-guides/formations/stencil_groups.html
+    page_anchors:
     - how-to-define-a-stencilgroup
     - more-about-stencilgroup-rules
     - rendering-stencilgroups
     - skycap-product-heading
   stencil_placeholders:
-    :page: skycap/references/stencil-placeholders.html
-    :page_anchors:
+    page: skycap/references/stencil-placeholders.html
+    page_anchors:
     - application
     - arrays
     - base64
@@ -5682,8 +5706,8 @@ skycap:
     - vault
     - vaultlist
   team_accounts:
-    :page: skycap/account/team-accounts.html
-    :page_anchors:
+    page: skycap/account/team-accounts.html
+    page_anchors:
     - add-a-new-user-team-member
     - application-users
     - deleting-user-accounts--teams
@@ -5694,12 +5718,12 @@ skycap:
     - user-roles-and-permissions
     - using-team-accounts
   the_basics_index:
-    :page: skycap/the-basics/index.html
-    :page_anchors:
+    page: skycap/the-basics/index.html
+    page_anchors:
     - skycap-product-heading
   toolbelt:
-    :page: skycap/references/toolbelt.html
-    :page_anchors:
+    page: skycap/references/toolbelt.html
+    page_anchors:
     - a-note-on-overwriting-access-profiles
     - about-backup-management
     - access-control-for-toolbelt-login
@@ -5845,12 +5869,12 @@ skycap:
     - usage-8
     - usage-9
   tutorials_index:
-    :page: skycap/tutorials/index.html
-    :page_anchors:
+    page: skycap/tutorials/index.html
+    page_anchors:
     - skycap-product-heading
   two_factor_authentication:
-    :page: skycap/account/two-factor-authentication.html
-    :page_anchors:
+    page: skycap/account/two-factor-authentication.html
+    page_anchors:
     - add-a-recovery-phone-number
     - adding-a-physical-fido-security-key
     - enabling-2fa-on-your-account
@@ -5862,8 +5886,8 @@ skycap:
     - troubleshooting
     - what-is-two-factor-authentication
   understanding_and_improving_security_score:
-    :page: skycap/account/understanding-and-improving-security-score.html
-    :page_anchors:
+    page: skycap/account/understanding-and-improving-security-score.html
+    page_anchors:
     - fido-authentication
     - finding-your-security-score
     - how-fido-works
@@ -5876,8 +5900,8 @@ skycap:
     - why-cant-we-share-logins
     - why-do-i-need-2fa
   updating_an_existing_service:
-    :page: skycap/tutorials/updating-an-existing-service.html
-    :page_anchors:
+    page: skycap/tutorials/updating-an-existing-service.html
+    page_anchors:
     - deploying-your-updated-application
     - overview
     - skycap-product-heading
@@ -5885,15 +5909,15 @@ skycap:
     - what-youll-need
     - whats-next
   using_build_profiles:
-    :page: skycap/tutorials/using-build-profiles.html
-    :page_anchors:
+    page: skycap/tutorials/using-build-profiles.html
+    page_anchors:
     - create-a-build-profile
     - skycap-product-heading
     - what-youll-need
     - whats-next
   using_cloud66_toolbelt:
-    :page: skycap/quickstarts/using-cloud66-toolbelt.html
-    :page_anchors:
+    page: skycap/quickstarts/using-cloud66-toolbelt.html
+    page_anchors:
     - advanced
     - careful
     - creating-a-cx-profile
@@ -5910,8 +5934,8 @@ skycap:
     - view-toolbelt-information
     - what-is-toolbelt
   using_formations:
-    :page: skycap/quickstarts/using-formations.html
-    :page_anchors:
+    page: skycap/quickstarts/using-formations.html
+    page_anchors:
     - add-your-first-stencil
     - adding-a-service
     - adding-configuration-files-for-your-service
@@ -5927,16 +5951,16 @@ skycap:
     - what-youll-need
     - whats-next
   using_habitus_with_skycap:
-    :page: skycap/tutorials/using-habitus-with-skycap.html
-    :page_anchors:
+    page: skycap/tutorials/using-habitus-with-skycap.html
+    page_anchors:
     - skycap-product-heading
     - using-a-habitus-build-flow-with-skycap
     - what-is-habitus
     - what-youll-need
     - whats-next
   using_transformations_with_skycap:
-    :page: skycap/tutorials/using-transformations-with-skycap.html
-    :page_anchors:
+    page: skycap/tutorials/using-transformations-with-skycap.html
+    page_anchors:
     - adding-a-transformation-to-skycap
     - managing-multiple-transformations
     - overview
@@ -5947,8 +5971,8 @@ skycap:
     - what-youll-need
     - whats-next
   using_validation_policies:
-    :page: skycap/tutorials/using-validation-policies.html
-    :page_anchors:
+    page: skycap/tutorials/using-validation-policies.html
+    page_anchors:
     - creating-a-validation-policy
     - managing-multiple-policies
     - overview
@@ -5959,8 +5983,8 @@ skycap:
     - what-youll-need
     - whats-next
   using_workflows:
-    :page: skycap/how-to-guides/formations/using-workflows.html
-    :page_anchors:
+    page: skycap/how-to-guides/formations/using-workflows.html
+    page_anchors:
     - adding-a-workflow-on-skycap
     - how-workflows-function
     - manual-enqueuing
@@ -5971,15 +5995,15 @@ skycap:
     - understanding-run-steps
     - why-use-workflows
   vault:
-    :page: skycap/how-to-guides/configuration/vault.html
-    :page_anchors:
+    page: skycap/how-to-guides/configuration/vault.html
+    page_anchors:
     - enabling-vault-integration
     - examples
     - overview
     - skycap-product-heading
     - using-vault-with-skycap
   writing_and_debugging_copper_rules:
-    :page: skycap/how-to-guides/formations/writing-and-debugging-copper-rules.html
-    :page_anchors:
+    page: skycap/how-to-guides/formations/writing-and-debugging-copper-rules.html
+    page_anchors:
     - debugging-copper-dsl
     - skycap-product-heading

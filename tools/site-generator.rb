@@ -81,7 +81,7 @@ def perform(directory)
 		# store info in the pages hash
 		product_hash = result[product]
 		fatal("Duplicate page found. \"#{name}\"=\"#{file_path}\" has already been added as \"#{name}\"=\"#{product_hash[name_key]}\"") if product_hash.has_key?(name_key)
-		product_hash[name_key] = { page: file_path, page_anchors: page_anchors }
+		product_hash[name_key] = { 'page' => file_path, 'page_anchors' => page_anchors }
 	end
 	# sort the hash by keys
 	PRODUCTS.each { |product| result[product] = result[product].sort.to_h }
