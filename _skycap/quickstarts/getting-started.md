@@ -100,12 +100,12 @@ During the build process you can view the status of each individual build. You c
 
 ## Deploying your application
 
-Once you've built your images, you're ready to deploy your application using Skycap's **Formations** feature. To do this, you should follow our guide: [Get started with Skycap Formations](/skycap/quickstarts/using_formations.html)
+Once you've built your images, you're ready to deploy your application using Skycap's **Formations** feature. To do this, you should follow our guide: [Get started with Skycap Formations](/skycap/quickstarts/using-formations.html)
  
 ## What's next?
 
 Now that you have your first application defined, you can learn how to make that application live:
 
-* [Create your first Formation](/skycap/quickstarts/using_formations.html) and use it to [deploy your application](/skycap/quickstarts/using_formations.html#deploying-it-all-to-your-cluster) to a Minikube cluster
+* [Create your first Formation](/skycap/quickstarts/using-formations.html) and use it to [deploy your application](/skycap/quickstarts/using-formations#deploying-it-all-to-your-cluster) to a Minikube cluster
 
-* If you don't already have a cluster, consider using [Maestro](/maestro/quickstarts/getting_started.html), Cloud 66's full container management service, to deploy and manage your containers and infrastructure.
+* If you don't already have a cluster, consider using [Maestro](/maestro/quickstarts/getting-started.html), Cloud 66's full container management service, to deploy and manage your containers and infrastructure.

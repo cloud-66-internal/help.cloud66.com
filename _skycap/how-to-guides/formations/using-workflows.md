@@ -46,7 +46,7 @@ ${repeat_inline("_helm_upgrade@cloud66.yml", 2, fetch(concat("$.stack.helm.relea
 
 As you can see, it has a single step called `setup` that runs a Toolbelt (`cx`) command to deploy a new release to a cluster. However, before running this step, the Worflow will check that CX and kubectl are installed on the target machine (or container). It also appends the deploy command with any applicable Helm charts currently in use by the application. 
 
-In Skycap, Workflows follow the same syntax and flow as Formation files, like [Stencils](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-stencil). As such they also support [Placeholders](/skycap/references/stencil_placeholders.html) and use the same dot notation (`${directive.attribute}`). You can find a full list of the available [Workflow attributes](https://github.com/cloud66-oss/trackman/blob/master/README.md#workflow-attributes) and [step attributes](https://github.com/cloud66-oss/trackman/blob/master/README.md#step-attributes) in the Trackman docs. 
+In Skycap, Workflows follow the same syntax and flow as Formation files, like [Stencils](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-stencil). As such they also support [Placeholders](/skycap/references/stencil-placeholders.html) and use the same dot notation (`${directive.attribute}`). You can find a full list of the available [Workflow attributes](https://github.com/cloud66-oss/trackman/blob/master/README.md#workflow-attributes) and [step attributes](https://github.com/cloud66-oss/trackman/blob/master/README.md#step-attributes) in the Trackman docs. 
 
 ## Why use Workflows?
 
@@ -58,7 +58,7 @@ Workflows also allow you to run these commands directly from your Cloud 66 Dashb
 
 ## Adding a Workflow on Skycap
 
-In Skycap, Workflows are a feature of [Formations](/skycap/quickstarts/using_formations.html). Each Formation has its own set of Workflows. To add a Workflows for a Formation:
+In Skycap, Workflows are a feature of [Formations](/skycap/quickstarts/using-formations.html). Each Formation has its own set of Workflows. To add a Workflows for a Formation:
 
 1. Open your [Cloud 66 Dashboard](https://app.cloud66.com/) and click on the Skycap application in question
 2. Click on the name of the Formation 

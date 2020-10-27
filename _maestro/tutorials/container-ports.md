@@ -28,14 +28,14 @@ Port mapping is a small (but important) part of a core system that underpins con
 Before you start, please check you have the following:
 
 * **A Cloud 66 Account** &mdash; If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. You'll get free unlimited access to all products for 4 weeks.
-* **An existing application set up in Maestro** &mdash; To make the most of this tutorial you need to have an app already set up in Maestro. Follow our [Getting Started guide](/maestro/quickstarts/getting_started.html) if you're not sure how to do this.
+* **An existing application set up in Maestro** &mdash; To make the most of this tutorial you need to have an app already set up in Maestro. Follow our [Getting Started guide](/maestro/quickstarts/getting-started.html) if you're not sure how to do this.
 
 #### Note
 <div class="notice"><p>This tutorial uses the <a href="https://github.com/cloud66/maestro-demo.git">simple visit counter application</a> we've supplied on Github as a working example.</p></div>
 
 ## Mapping ports
 
-When we set up our *demo-app* service we [configured our ports](/maestro/quickstarts/getting_started.html#configure-your-services) so that our internal port `5000` was mapped to the public port `80`. 
+When we set up our *demo-app* service we [configured our ports](/maestro/quickstarts/getting-started.html#configure-your-services) so that our internal port `5000` was mapped to the public port `80`. 
 
 Now imagine that your app has evolved to offer secure web (SSL / TLS) access as well as standard web access. TLS traffic typically flows over port `443`, so we need to add this to the port mapping for our application.
 

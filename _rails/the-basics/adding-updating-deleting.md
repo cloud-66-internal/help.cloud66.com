@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## Building an application
 
-To build your first application, see our [Getting Started guide](/{{page.collection}}/quickstarts/getting_started.html). If you have existing application(s), simply click _New Application_ from your Cloud 66 [Dashboard](https://app.cloud66.com/dashboard).
+To build your first application, see our [Getting Started guide](/{{page.collection}}/quickstarts/getting-started.html). If you have existing application(s), simply click _New Application_ from your Cloud 66 [Dashboard](https://app.cloud66.com/dashboard).
 
 ## Updating application properties
 

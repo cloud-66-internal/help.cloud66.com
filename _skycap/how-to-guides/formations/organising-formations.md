@@ -14,7 +14,7 @@ permalink: /:collection/:path:output_ext
 
 Most of the time, each Formation is a separate Kubernetes Namespace. As such the first Stencil to add to a Formation is usually the one that creates a new Namespace.
 
-The public Base Template library has an example of the template which we used in the [Getting Started](/skycap/quickstarts/using_formations.html) guide. We usually place those Stencils in the **Config** section of the Stencils.
+The public Base Template library has an example of the template which we used in the [Getting Started](/skycap/quickstarts/using-formations.html) guide. We usually place those Stencils in the **Config** section of the Stencils.
 
 Once you have a Stencil to configure your Namespace and perhaps add basic credentials for your Docker repository, you can start adding the other Stencils needed to support your application's components such as databases, queues and middleware.
 

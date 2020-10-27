@@ -56,7 +56,7 @@ You can now edit the text of your manifest file directly.
 
 ## A working example
 
-In this example we are going to deploy another instance of the simple application we used in our [Getting started with Maestro](/maestro/quickstarts/getting_started.html) guide. However, instead of using the generic `manifest.yml` we are going to customise it.
+In this example we are going to deploy another instance of the simple application we used in our [Getting started with Maestro](/maestro/quickstarts/getting-started.html) guide. However, instead of using the generic `manifest.yml` we are going to customise it.
 
 ### What you'll need
 
@@ -72,7 +72,7 @@ Before you start, please check you have the following:
 
 To customize the `manifest.yml` for your application:
 
-1. Follow the steps in the [Getting Started with Maestro](/maestro/quickstarts/getting_started.html#build-your-containers) guide but *stop before* the **Deploy your App** step.
+1. Follow the steps in the [Getting Started with Maestro](/maestro/quickstarts/getting-started.html#build-your-containers) guide but *stop before* the **Deploy your App** step.
 
 2. Click on the *Edit config files* link above the server configuration box. This will open the "Advanced Deploy" page.
 

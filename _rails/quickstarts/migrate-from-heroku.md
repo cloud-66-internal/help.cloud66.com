@@ -47,7 +47,7 @@ Using Heroku, you can choose between 1X (512 MB), 2X (1 GB) and PX (6 GB) server
 
 Using the [Cloud 66 Dashboard](https://app.cloud66.com/dashboard), you can pull your code directly from your Git repository and build it into a new version of your application on your own servers. 
 
-If you need help getting started, please read our [Deploying your first Rails app](/rails/quickstarts/getting_started.html) guide.
+If you need help getting started, please read our [Deploying your first Rails app](/rails/quickstarts/getting-started.html) guide.
 
 We also have a guide to [accessing your Git repository](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html).
 

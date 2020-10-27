@@ -23,8 +23,8 @@ Skycap Transformations are based on [Alterant](https://www.cloud66.com/alterant)
 Before you start, please check you have the following:
 
 - **A Cloud 66 Account** — If you don't already have one [sign up for a Cloud 66 account](https://app.cloud66.com/users/sign_up). You'll get free unlimited access to all products for 4 weeks.
-- **An existing application set up in Skycap** — You can learn how to do that with our [Getting started with Skycap](/skycap/quickstarts/getting_started.html) guide.
-- **An existing Formation defined in Skycap** — You can learn how to do that with our [Getting started with Skycap Formations](/skycap/quickstarts/using_formations.html) guide.
+- **An existing application set up in Skycap** — You can learn how to do that with our [Getting started with Skycap](/skycap/quickstarts/getting-started.html) guide.
+- **An existing Formation defined in Skycap** — You can learn how to do that with our [Getting started with Skycap Formations](/skycap/quickstarts/using-formations.html) guide.
 
 <div class="notice"><p>In this example we’re using the same <a href="https://github.com/cloud66-samples/helloworld.git">simple "hello world" project</a> that we used in our Getting Started guides.</p></div>
 
@@ -84,7 +84,7 @@ You can change the execution order of Transformations by dragging and dropping t
 ## What’s next?
 
 - The [full documentation](https://help.cloud66.com/alterant/) for Alterant
-- A guide to adding Transformations to [Base Template Repositories](/skycap/how-to-guides/formations/adding-transformations-to-BTRs.html)
+- A guide to adding Transformations to [Base Template Repositories](/skycap/how-to-guides/formations/adding-transformations-to-btrs.html)
 - Learn how to add **[custom environment variables](/skycap/tutorials/setting-environment-variables.html)** to your application.
 - Learn how to use your **[Habitus build flow](/skycap/tutorials/using-habitus-with-skycap.html)** within Skycap.
 

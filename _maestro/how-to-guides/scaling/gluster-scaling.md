@@ -25,7 +25,7 @@ After Server deployment is finished, Maestro will create new bricks for current 
 When you are scaling down, Maestro will remove the server (and all related servers which scaled up with this server) and remove their bricks for current volumes from _GlusterFS Cluster_
 
 
-## Configure GlusterFS replica_count
+## Configure GlusterFS replica count
 
 You can specify `replica_count` when you configure the [GlusterFS Add-in](/maestro/how-to-guides/add-ins/glusterfs.html). If you are using a manifest to add GlusterFS, you can add replica_count to your `manifest.yml`.
 

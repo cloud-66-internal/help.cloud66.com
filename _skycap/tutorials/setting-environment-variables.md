@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## Overview 
 
-One of the benefits of using Formations and Stencils is that you can define environment variables centrally and then pull them into different configuration files as you need them, using the powerful [Stencil Placeholder syntax](/skycap/references/stencil_placeholders.html).
+One of the benefits of using Formations and Stencils is that you can define environment variables centrally and then pull them into different configuration files as you need them, using the powerful [Stencil Placeholder syntax](/skycap/references/stencil-placeholders.html).
 
 You can create, edit and manage environment variables for each of your applications via your Cloud 66 dashboard.
 
@@ -22,9 +22,9 @@ Before you start, please check you have the following:
 
 * **A Cloud 66 Account** &mdash; If you don't already have one [sign up for a Cloud 66 account](https://app.cloud66.com/users/sign_up). You'll get free unlimited access to all products for 4 weeks.
 
-* **An existing application set up in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap](/skycap/quickstarts/getting_started.html) guide.
+* **An existing application set up in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap](/skycap/quickstarts/getting-started.html) guide.
 
-* **An existing Formation defined in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap Formations](/skycap/quickstarts/using_formations.html) guide.
+* **An existing Formation defined in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap Formations](/skycap/quickstarts/using-formations.html) guide.
 
 <div class="notice"><p>In this example we’re using the same <a href="https://github.com/cloud66-samples/helloworld.git">simple "hello world" project</a> that we used in our Getting Started guides and our other tutorials.</p></div>
 
@@ -61,7 +61,7 @@ To take a Snapshot, click the green *Snapshot* button at the top right of the sc
 
 ### Calling variables in Stencils
 
-Now we need to pull our new `DEV_PORT` variable into our `helloworld_service.yml` Stencil. We do this using a snippet of [Stencil Placeholder](/skycap/references/stencil_placeholders.html) syntax:
+Now we need to pull our new `DEV_PORT` variable into our `helloworld_service.yml` Stencil. We do this using a snippet of [Stencil Placeholder](/skycap/references/stencil-placeholders.html) syntax:
 
 1. Click on *Formations* in the right-hand panel
 Click on the edit icon next to the “Hello World” service Stencil

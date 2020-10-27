@@ -24,9 +24,9 @@ Before you start, please check you have the following:
 
 * **A Cloud 66 Account** &mdash; If you don't already have one [sign up for a Cloud 66 account](https://app.cloud66.com/users/sign_up). You'll get free unlimited access to all products for 4 weeks.
 
-* **An existing application set up in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap](/skycap/quickstarts/getting_started.html) guide.
+* **An existing application set up in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap](/skycap/quickstarts/getting-started.html) guide.
 
-* **An existing Formation defined in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap Formations](/skycap/quickstarts/using_formations.html) guide.
+* **An existing Formation defined in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap Formations](/skycap/quickstarts/using-formations.html) guide.
 
 <div class="notice"><p>In this example we’re using the same <a href="https://github.com/cloud66-samples/helloworld.git">simple "hello world" project</a> that we used in our Getting Started guides.</p></div>
 
@@ -86,7 +86,7 @@ You can change the load order of policies by dragging and dropping them in the l
 ## What’s next?
 
 * A guide to [writing and debugging Copper rules](/skycap/how-to-guides/formations/writing-and-debugging-copper-rules.html)
-* Learn how to add policies to a [Base Template Repository](/skycap/how-to-guides/formations/adding-policies-to-BTRs.html)
+* Learn how to add policies to a [Base Template Repository](/skycap/how-to-guides/formations/adding-policies-to-btrs.html)
 * Learn how to add [custom environment variables](/skycap/tutorials/setting-environment-variables.html) to your application.
 * Learn how to set up [access control and permissions](/skycap/tutorials/setting-up-access-control.html) on your Formations and Stencils
 * Learn how to use your [Habitus build flow](/skycap/tutorials/using-habitus-with-skycap.html) within Skycap.
