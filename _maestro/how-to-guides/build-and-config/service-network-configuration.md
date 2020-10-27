@@ -52,10 +52,10 @@ ElasticDNS is clever enough to know which version of the app is running in a con
 
 There are a number of directives you can set in your service configuration to customize your service network settings:
 
-- [dns_behaviour](#dns-behaviour)
-- [load_balancing](#load-balancing)
+- [dns behaviour](#dns-behaviour)
+- [load balancing](#load-balancing)
 - [ports](#ports)
-- [traffic_matches](#traffic-matches)
+- [traffic matches](#traffic-matches)
 
 ### DNS Behaviour
 
@@ -105,7 +105,7 @@ services:
 ```
 
 
-### Using traffic_matches to reroute all traffic
+### Using traffic matches to reroute all traffic
 
 The `traffic_matches` option can also be used to ensure that any and all traffic hitting your servers is routed to a specific service. To do this, add  `traffic_matches` to that service and set it to match `"_"` (underscore). This is will route any traffic that hits your servers to this service. For example:
 

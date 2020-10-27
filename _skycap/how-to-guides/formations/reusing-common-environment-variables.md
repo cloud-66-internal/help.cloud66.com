@@ -23,7 +23,7 @@ Tagging your environment variables allows you to filter them during imports, so 
 
 ## Importing multiple variables into a Stencil
 
-You already know how to pull an individual environment variable into a stencil using the `env` [placeholder](/skycap/references/stencil_placeholders.html). You can use another placeholder - `envlist` - to pull an entire list of variables into a Stencil.
+You already know how to pull an individual environment variable into a stencil using the `env` [placeholder](/skycap/references/stencil-placeholders.html). You can use another placeholder - `envlist` - to pull an entire list of variables into a Stencil.
 
 The complete syntax for this placeholder is: `envlist(indent[, tag])`
 
@@ -34,7 +34,7 @@ Remember that all placeholders need to be wrapped in `${...}`
 
 ## A working example
 
-<div class="notice"><p>In this example we’re using the same <a href="https://github.com/cloud66-samples/helloworld.git">simple "hello world" project</a> that we used in our <a href="/skycap/quickstarts/using_formations.html">Getting Started</a> guides.</p></div>
+<div class="notice"><p>In this example we’re using the same <a href="https://github.com/cloud66-samples/helloworld.git">simple "hello world" project</a> that we used in our <a href="/skycap/quickstarts/using-formations.html">Getting Started</a> guides.</p></div>
 
 To add a set of environment variables to a Stencil in our Hello World application we need to:
 

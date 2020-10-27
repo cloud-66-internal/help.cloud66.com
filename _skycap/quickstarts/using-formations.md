@@ -15,12 +15,12 @@ Formations are used to create, manage and deploy Kubernetes configuration files 
 
 Before you start, please check you have the following:
 
-* **An application set up with Skycap** &mdash; You can quickly set up an application with Skycap by following our [getting started guide](/skycap/quickstarts/getting_started.html).
+* **An application set up with Skycap** &mdash; You can quickly set up an application with Skycap by following our [getting started guide](/skycap/quickstarts/getting-started.html).
 
 <div class="notice"><p>
 In this guide we are using a <a href="https://github.com/cloud66-samples/helloworld">simple project</a> that we've supplied on Github. It's a good idea to use this project in your initial Skycap set up so that the steps below correspond to your application.</p></div>
 
-* **A Working Kubernetes Cluster** &mdash; You can use [Cloud 66 Maestro](/maestro/quickstarts/getting_started_with_clusters.html) to create a blank cluster or use a cloud provider service like [Google GKE](https://cloud.google.com/kubernetes-engine), [AWS Fargate](https://aws.amazon.com/fargate) or [Microsoft Azure AKS](https://azure.microsoft.com/en-us/services/container-service), or [set it up yourself](https://kubernetes.io/docs/getting-started-guides/scratch).
+* **A Working Kubernetes Cluster** &mdash; You can use [Cloud 66 Maestro](/maestro/quickstarts/getting-started-with-clusters.html) to create a blank cluster or use a cloud provider service like [Google GKE](https://cloud.google.com/kubernetes-engine), [AWS Fargate](https://aws.amazon.com/fargate) or [Microsoft Azure AKS](https://azure.microsoft.com/en-us/services/container-service), or [set it up yourself](https://kubernetes.io/docs/getting-started-guides/scratch).
 For this example we are going to use [Minikube](https://github.com/kubernetes/minikube)
         
 * **A `kubectl` client** on your development machine or a server that is configured to communicate with your Kubernetes cluster.
@@ -59,7 +59,7 @@ All of these components (including all configurations) are then stored in a priv
 
 ### Create your first Formation
 
-After the final step of [setting up your application](/skycap/quickstarts/getting_started.html) on Skycap, click the *New Formation* button and give your Formation a name. 
+After the final step of [setting up your application](/skycap/quickstarts/getting-started.html) on Skycap, click the *New Formation* button and give your Formation a name. 
 
 You can also add a few tags to it (these help to identify components later on). If you're using our sample project, calling your Formation "Hello World" is a good idea.
 
@@ -104,7 +104,7 @@ We automatically connect a default repository of Stencils - called a "base templ
 
 You've probably already noticed the dynamic stencil placeholders like `${formation}` and `${snapshot["gitref"]`. Placeholders offer a simple way to replace some values in your configuration files at the time it "renders".
 
-For example,`${formation}` gets replaced with a Kubernetes friendly version of your Formation's name. So if your Formation is called "My Sample Formation", the value of `${formation}` will be `my-sample-formation` when it renders (we will get to how to render the Stencils later). You can see a full list of all Stencil functions and placeholders [here](/skycap/references/stencil_placeholders.html).
+For example,`${formation}` gets replaced with a Kubernetes friendly version of your Formation's name. So if your Formation is called "My Sample Formation", the value of `${formation}` will be `my-sample-formation` when it renders (we will get to how to render the Stencils later). You can see a full list of all Stencil functions and placeholders [here](/skycap/references/stencil-placeholders.html).
 
 You've probably also noticed that we automatically prepend `general-cloud66@` to the names of each YAML file. This is the name of the base template repository that this Stencil was drawn from. You can change this to whatever suits your needs. 
 
@@ -191,7 +191,7 @@ Formations are an extremely powerful tool to manage the flow of configuration fi
 * [Formations](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-formation) as an infrastucture time machine
 * Fine grained [access control and permissions](/skycap/tutorials/setting-up-access-control.html) for each Formation and every Stencil for your team members
 * The ability to setup private [Base Templates](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-base-template) for your team
-* The powerful [Stencil placeholders syntax](/skycap/references/stencil_placeholders.html)
+* The powerful [Stencil placeholders syntax](/skycap/references/stencil-placeholders.html)
 * Bulk import of your [environment variables](/skycap/tutorials/setting-environment-variables.html) and secrets into Stencils
 	
 

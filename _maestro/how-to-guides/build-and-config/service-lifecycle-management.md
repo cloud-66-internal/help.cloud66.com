@@ -41,11 +41,11 @@ The above can be summarized as the life-cycle management of your containers, whi
 There are a number of directives you can set in your service configuration (`service.yml`) to customize your container life-cycle management:
 
 - [health](#health)
-- [pre_start_signal](#pre_start)
-- [pre_stop_sequence](#pre_stop)
+- [pre_start_signal](#pre-start)
+- [pre_stop_sequence](#pre-stop)
 - [requires](#requires)
 - [restart_on_deploy](#restart)
-- [stop_grace](#stop_grace)
+- [stop_grace](#stop-grace)
 
 
 ### Health

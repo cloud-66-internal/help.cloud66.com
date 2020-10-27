@@ -2,23 +2,23 @@
     <nav>
       <ul class="TabMini js_tabs">
         <li class="TabMini-item active">
-          <a href="#cloud_content" class="TabMini-link">
+          <a href="#cloud-content" class="TabMini-link">
             Using a Cloud Provider
           </a>
         </li>
         <li class="TabMini-item">
-          <a href="#no_cloud_content" class="TabMini-link">
+          <a href="#no-cloud-content" class="TabMini-link">
             Using Your Own Server
           </a>
         </li>
       </ul>
     </nav>
 
-    <section id="cloud_content" class="Tabs-content js_tab_content">
+    <section id="cloud-content" class="Tabs-content js_tab_content">
         <p>An account with your cloud provider of choice. Cloud 66 supports {% include general/supported_clouds.html %}</p>
     </section>
 
-    <section id="no_cloud_content" class="Tabs-content js_tab_content is-hidden">
+    <section id="no-cloud-content" class="Tabs-content js_tab_content is-hidden">
         <p>Registered servers are a great way for operations teams to manage and allocate physical server resources for consumption by dev teams. Registered servers are a pool of your own servers (on a private or public cloud) that can be used for any application and configuration. For more information on how to add your own registered servers, we recommend <a href="{% if page.collection == 'maestro' %}/maestro/how-to-guides/deployment/registered-servers.html#register-a-server{%else%}/{{page.collection}}/how-to-guides/deployment/registered-servers.html#register-a-server{%endif%}">this tutorial</a>.</p>
     </section>
 </div>

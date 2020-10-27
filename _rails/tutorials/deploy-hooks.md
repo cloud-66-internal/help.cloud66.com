@@ -178,7 +178,7 @@ The hook below will create an arbitrary log file in /tmp
 </div>
 
 
-### Example: env_vars parameter
+### Example: env vars parameter
 
 This example shows how to use the env_vars parameter.
 

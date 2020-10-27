@@ -97,7 +97,7 @@ Cloud 66 builds Docker containers in two ways:
 
 Maestro includes the following:
 
-- [Container life-cycle management](/maestro/quickstarts/getting_started.html)
+- [Container life-cycle management](/maestro/quickstarts/getting-started.html)
 - [Networking layer and DNS](/maestro/how-to-guides/build-and-config/service-network-configuration.html)
 - [Storage layer](/maestro/how-to-guides/build-and-config/service-storage.html)
 - [Scaling](/maestro/how-to-guides/scaling/)

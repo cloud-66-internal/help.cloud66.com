@@ -27,9 +27,9 @@ Before you start, please check you have the following:
 
 * **A Cloud 66 Account** &mdash; If you don't already have one [sign up for a Cloud 66 account](https://app.cloud66.com/users/sign_up). You'll get free unlimited access to all products for 4 weeks.
 
-* **An existing application set up in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap](/skycap/quickstarts/getting_started.html) guide.
+* **An existing application set up in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap](/skycap/quickstarts/getting-started.html) guide.
 
-* **An existing Formation defined in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap Formations](/skycap/quickstarts/using_formations.html) guide.
+* **An existing Formation defined in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap Formations](/skycap/quickstarts/using-formations.html) guide.
 
 <div class="notice"><p>In this example we’re using the same <a href="https://github.com/cloud66-samples/helloworld.git">simple "hello world" project</a> that we used in our Getting Started guides.</p></div>
 
@@ -88,7 +88,7 @@ To create the inline Stencil we:
 
 ### Including our inline Stencil
 
-Now that we have our inline ready, we need to pull it into our `helloworld_deployment.yml` using a handy [Stencil placeholder](/skycap/references/stencil_placeholders.html) called `inline` and then change our port settings to accommodate the Auther sidecar. 
+Now that we have our inline ready, we need to pull it into our `helloworld_deployment.yml` using a handy [Stencil placeholder](/skycap/references/stencil-placeholders.html) called `inline` and then change our port settings to accommodate the Auther sidecar. 
 
 To include `_Auther.yml` in the existing deployment Stencil we:
 
@@ -118,9 +118,9 @@ These changes force the Hello World service to use port 5001 instead of its defa
 
 ### Rendering and deploying
 
-You can now render the final version of the Formation. If you need a quick reminder on how to do this, follow our [Getting Started](/skycap/quickstarts/using_formations.html#rendering) guide.
+You can now render the final version of the Formation. If you need a quick reminder on how to do this, follow our [Getting Started](/skycap/quickstarts/using-formations#rendering) guide.
 
-Next, take your rendered configuration files and apply them to your cluster. We recommend using Cloud 66 Toolbelt, as we did in our [previous tutorials](/skycap/quickstarts/using_formations.html#rendering). 
+Next, take your rendered configuration files and apply them to your cluster. We recommend using Cloud 66 Toolbelt, as we did in our [previous tutorials](/skycap/quickstarts/using-formations#rendering). 
 
 ### Testing your sidecar 
 
@@ -128,7 +128,7 @@ If you’ve successfully deployed your updated application, you will be able to 
 
 If everything has been configured correctly, your default web browser will open a blank webpage that will ask you for a username and password. The correct values are “user” and “password” respectively. 
 
-Once you authenticate yourself, the *success* web page we used in our [previous guide](/skycap/quickstarts/using_formations.html#deploying-it-all-to-your-cluster) should appear.
+Once you authenticate yourself, the *success* web page we used in our [previous guide](/skycap/quickstarts/using-formations#deploying-it-all-to-your-cluster) should appear.
 
 ## Enforcing a sidecar
 

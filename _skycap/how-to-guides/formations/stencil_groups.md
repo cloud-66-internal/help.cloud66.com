@@ -61,4 +61,4 @@ After you have defined a StencilGroup, you can click on the cog icon for that gr
 
 Once you have rendered the group you can apply it to your Kubernetes cluster(s) as needed by either downloading the stencils or by using Cloud66 Toolbelt.
 
-<div class="notice"><p>If you need help using Formations with your cluster, check out our "<a href="/skycap/quickstarts/using_formations.html">Getting Started with Skycap Formations</a>" guide.</p></div>
+<div class="notice"><p>If you need help using Formations with your cluster, check out our "<a href="/skycap/quickstarts/using-formations.html">Getting Started with Skycap Formations</a>" guide.</p></div>

@@ -26,8 +26,8 @@ If you’re not already using Helm, and familiar with all its complexities, we s
 
 In order to get the most out of this guide, you should have:
 
-* **An existing application set up in Skycap** &mdash; Follow our [Getting Started guide](/skycap/quickstarts/getting_started.html) if you're not sure how to do this. 
-* **At least one Formation set up in Skycap** &mdash; We have another guide to [get you started with Formations](/skycap/quickstarts/getting_started.html)
+* **An existing application set up in Skycap** &mdash; Follow our [Getting Started guide](/skycap/quickstarts/getting-started.html) if you're not sure how to do this. 
+* **At least one Formation set up in Skycap** &mdash; We have another guide to [get you started with Formations](/skycap/quickstarts/getting-started.html)
 * **Helm installed on your cluster** &mdash; Helm has [a guide to get you started](https://docs.helm.sh/using_helm/#quickstart).
 * **A firm grasp on both Stencils and Helm configuration files** &mdash; Each of these are relatively complex subjects, so learning them separately is highly recommended before you attempt to integrate them.
 
@@ -70,7 +70,7 @@ To make use use any of these features, you need to edit the `values.yaml` file f
 
 ### Using Placeholders with Helm 
 
-Skycap treats `values.yaml` as just another Stencil, so all (valid) [Stencil Placeholders](/skycap/references/stencil_placeholders.html) will work in a Helm configuration file.
+Skycap treats `values.yaml` as just another Stencil, so all (valid) [Stencil Placeholders](/skycap/references/stencil-placeholders.html) will work in a Helm configuration file.
 
 Just as with a Stencil you add Placeholders using the following format: `${...}` So, for example, you could edit the configuration of a Helm release for Redis and use the following placeholder to force Redis to use another port defined as an environment variable:
 

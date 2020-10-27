@@ -23,7 +23,7 @@ We also have a more [detailed guide](/maestro/references/custom-config-reference
 Before you start, please check you have the following:
 
 * **A Cloud 66 Account** &mdash; If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. You'll get free unlimited access to all products for 4 weeks.
-* **An existing application set up in Maestro** &mdash; To make the most of this tutorial you need to have an app already set up in Maestro. Follow our [Getting Started guide](/maestro/quickstarts/getting_started.html) if you're not sure how to do this.
+* **An existing application set up in Maestro** &mdash; To make the most of this tutorial you need to have an app already set up in Maestro. Follow our [Getting Started guide](/maestro/quickstarts/getting-started.html) if you're not sure how to do this.
 
 #### Note
 <div class="notice"><p>This tutorial uses the <a href="https://github.com/cloud66/maestro-demo.git">simple visit counter application</a> we've supplied on Github as a working example.</p></div>

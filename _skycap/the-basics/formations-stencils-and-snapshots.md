@@ -38,7 +38,7 @@ In most applications a repeating set of configuration sections are applied to ma
 
 Stencils are version controlled configuration templates for Kubernetes. They are used together with Formations to provide a secure, easy and flexible way of generating Kubernetes configuration files based on your application requirements.
 
-Stencils support a light-weight [templating language](/skycap/references/stencil_placeholders.html) that is very easy to use while deliberately lacking full scale control flows like programming languages or templating / scripting markup.
+Stencils support a light-weight [templating language](/skycap/references/stencil-placeholders.html) that is very easy to use while deliberately lacking full scale control flows like programming languages or templating / scripting markup.
 
 Lack of control flows like `if then else` or `for loop` encourages more understandable and maintainable configuration files.
 
@@ -116,5 +116,5 @@ Stencils support reuse of configuration sections (inlines). Moreover, Formations
 ## What's next?
 
 * Fine grained access control and permissions for each Formation and every Stencil for your team members
-* Powerful and very simple [Stencil placeholders syntax](/skycap/references/stencil_placeholders.html)
+* Powerful and very simple [Stencil placeholders syntax](/skycap/references/stencil-placeholders.html)
 * Bulk import of your environment variables and secrets into Stencils

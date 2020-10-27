@@ -21,7 +21,7 @@ You can connect it to up to two instances of an application at any time - a _pri
 Before you start, please check you have the following:
 
 * **A Cloud 66 Account** &mdash; If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. You'll get free unlimited access to all products for 4 weeks.
-* **An existing application set up in Maestro** &mdash; To make the most of this tutorial you need to have an app already set up in Maestro. Follow our [Getting Started guide](/maestro/quickstarts/getting_started.html) if you're not sure how to do this.
+* **An existing application set up in Maestro** &mdash; To make the most of this tutorial you need to have an app already set up in Maestro. Follow our [Getting Started guide](/maestro/quickstarts/getting-started.html) if you're not sure how to do this.
 
 ## Creating a failover group
 
@@ -34,7 +34,7 @@ To add your first Failover Group:
 
 You'll now be taken to a list of your Failover Groups, and you'll see the Group you just set up. 
 
-Notice that the group has its own unique domain, separate from your application servers. If you click on that domain, you will reach the same *demo-app* that you created in our [Getting Started](/maestro/quickstarts/getting_started.html) guide. 
+Notice that the group has its own unique domain, separate from your application servers. If you click on that domain, you will reach the same *demo-app* that you created in our [Getting Started](/maestro/quickstarts/getting-started.html) guide. 
 
 This is the power of Failover Groups at work - the public CNAME for your application can stay static while the underlying servers change within a matter of minutes.
 

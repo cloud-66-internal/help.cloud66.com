@@ -153,7 +153,7 @@ first_thing: # Hook point
 ```
 
 
-### Example: env_vars parameter
+### Example: env vars parameter
 
 This example shows how to use the env_vars parameter.
 

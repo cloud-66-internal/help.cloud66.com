@@ -18,9 +18,9 @@ Before you start, please check you have the following:
 
 * **A Cloud 66 Account** &mdash; If you don't already have one [sign up for a Cloud 66 account](https://app.cloud66.com/users/sign_up). You'll get free unlimited access to all products for 4 weeks.
 
-* **An existing application set up in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap](/skycap/quickstarts/getting_started.html) guide.
+* **An existing application set up in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap](/skycap/quickstarts/getting-started.html) guide.
 
-* **An existing Formation defined in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap Formations](/skycap/quickstarts/using_formations.html) guide.
+* **An existing Formation defined in Skycap** &mdash; You can learn how to do that with our [Getting started with Skycap Formations](/skycap/quickstarts/using-formations.html) guide.
 
 * **At least two team members on Cloud 66** (including yourself) &mdash; You can add team members using the [Teams section](/skycap/account/team-accounts.html#add-a-team-member) of the [Account Settings](https://app.cloud66.com/me) interface.
 

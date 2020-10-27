@@ -15,9 +15,9 @@ To reach the page:
 
 ActiveProtect is intended to be fully automated, but there are some cases where you can modify its behaviour.
 
-* You can exclude your own IP addresses from being rate limited using the [Network Tools](https://help.cloud66.com/{{page.collection}}/tutorials/IP-filtering.html#rate-limiting-exceptions) in your Dashboard. {% if include.product == 'rails' %}
+* You can exclude your own IP addresses from being rate limited using the [Network Tools](https://help.cloud66.com/{{page.collection}}/tutorials/ip-filtering.html#rate-limiting-exceptions) in your Dashboard. {% if include.product == 'rails' %}
 * You can add the same exception directly via your [Manifest file](/rails/how-to-guides/deployment/building-a-manifest-file.html#rails). The value to modify in this case is `{{ include.product | downcase }}/configuration/activeprotect/http_ban_rate` {% endif %}
-* You can also manually [whitelist or block IP addresses](/{{page.collection}}/tutorials/IP-filtering.html#allowing-traffic-whitelisting) using the same methods. 
+* You can also manually [whitelist or block IP addresses](/{{page.collection}}/tutorials/ip-filtering.html#allowing-traffic-whitelisting) using the same methods. 
 
 
 ## SSH soft blocking
