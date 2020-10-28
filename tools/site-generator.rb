@@ -20,9 +20,14 @@ def configure
 	# defaults
 	directory = '.'
 	output = 'help_links.yml'
+	$verbose = false
+
 	# parse args
 	args = []
 	::ARGV.each { |arg| arg.strip.gsub(/-/, '').split('=').each { |part| args << part } }
+
+	args.delete_if {|arg| if %w[v verbose].include?(arg) ; $verbose = true ; next true ; end ; false }
+
 	args.each_slice(2) do |key_value|
 		key = key_value[0].strip.gsub(/-/, '')
 		value = key_value[1].strip
@@ -36,7 +41,7 @@ def configure
 	elsif !directory.start_with?('/')
 		directory = "#{root_path}/#{directory}"
 	end
-	output = "#{root_path}/#{output}" unless output.start_with?('/')
+	output = "#{root_path}/#{output}" unless output.start_with?('/')	
 	[directory, output]
 end
 
@@ -47,6 +52,7 @@ def perform(directory)
 	full_file_paths = ::Dir.glob("#{directory}/**/*.html").select { |file_path| File.file?(file_path) }
 	# process them
 	full_file_paths.each do |full_file_path|
+		puts full_file_path if $verbose 
 		# strip the root_path from the full_file_path
 		file_path = full_file_path.gsub(/#{directory}\/?/, '')
 		# find the name key
@@ -102,6 +108,8 @@ directory, output = configure
 puts "[Starting]"
 puts "Directory --> \"#{directory}\""
 puts "Output --> \"#{output}\""
+puts "Verbose --> #{$verbose}"
+raise 'exit'
 # find all relevant files
 result = perform(directory)
 # dump result as needed
