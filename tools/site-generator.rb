@@ -109,7 +109,6 @@ puts "[Starting]"
 puts "Directory --> \"#{directory}\""
 puts "Output --> \"#{output}\""
 puts "Verbose --> #{$verbose}"
-raise 'exit'
 # find all relevant files
 result = perform(directory)
 # dump result as needed
