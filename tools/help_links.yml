@@ -931,6 +931,15 @@ maestro:
     - for-more-information-on-how-to-use-igor
     - maestro-product-heading
     - quick-install
+  managing_advanced_firewall_rules:
+    page: maestro/how-to-guides/deployment/managing-advanced-firewall-rules.html
+    page_anchors:
+    - automated-updates-for-cross-application-firewall-rules
+    - cross-application-firewall-rules
+    - example-of-a-cross-application-firewall-rule
+    - maestro-product-heading
+    - overview
+    - understanding-automated-rules
   managing_custom_packages:
     page: maestro/how-to-guides/build-and-config/managing-custom-packages.html
     page_anchors:
@@ -2348,6 +2357,19 @@ node:
     - about-using-filebeat
     - add-filebeat-to-your-application
     - node-product-heading
+  firewall_rule:
+    page: node/tutorials/firewall-rule.html
+    page_anchors:
+    - adding-a-custom-firewall-rule
+    - adding-and-applying-the-rule
+    - default-firewall-rules
+    - enabling-temporary-access
+    - gathering-the-required-info
+    - node-product-heading
+    - overview
+    - removing-a-custom-firewall-rule
+    - testing-the-rule
+    - what-youll-need
   getting_started:
     page: node/quickstarts/getting-started.html
     page_anchors:
@@ -2565,6 +2587,15 @@ node:
     - for-more-information-on-how-to-use-igor
     - node-product-heading
     - quick-install
+  managing_advanced_firewall_rules:
+    page: node/how-to-guides/deployment/managing-advanced-firewall-rules.html
+    page_anchors:
+    - automated-updates-for-cross-application-firewall-rules
+    - cross-application-firewall-rules
+    - example-of-a-cross-application-firewall-rule
+    - node-product-heading
+    - overview
+    - understanding-automated-rules
   managing_custom_packages:
     page: node/how-to-guides/deployment/managing-custom-packages.html
     page_anchors:
@@ -3930,6 +3961,19 @@ rails:
     - about-using-filebeat
     - add-filebeat-to-your-application
     - rails-product-heading
+  firewall_rule:
+    page: rails/tutorials/firewall-rule.html
+    page_anchors:
+    - adding-a-custom-firewall-rule
+    - adding-and-applying-the-rule
+    - default-firewall-rules
+    - enabling-temporary-access
+    - gathering-the-required-info
+    - overview
+    - rails-product-heading
+    - removing-a-custom-firewall-rule
+    - testing-the-rule
+    - what-youll-need
   getting_started:
     page: rails/quickstarts/getting-started.html
     page_anchors:
@@ -4170,6 +4214,15 @@ rails:
     - for-more-information-on-how-to-use-igor
     - quick-install
     - rails-product-heading
+  managing_advanced_firewall_rules:
+    page: rails/how-to-guides/deployment/managing-advanced-firewall-rules.html
+    page_anchors:
+    - automated-updates-for-cross-application-firewall-rules
+    - cross-application-firewall-rules
+    - example-of-a-cross-application-firewall-rule
+    - overview
+    - rails-product-heading
+    - understanding-automated-rules
   managing_and_upgrading_ruby_versions:
     page: rails/how-to-guides/deployment/managing-and-upgrading-ruby-versions.html
     page_anchors:
