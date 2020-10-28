@@ -24,12 +24,13 @@ def configure
 
 	# parse args
 	args = []
-	::ARGV.each { |arg| arg.strip.gsub(/-/, '').split('=').each { |part| args << part } }
-
+	::ARGV.each { |arg| arg.strip.gsub(/^-{0,}/, '').split('=').each { |part| args << part } }
+	
+	# handle verbose
 	args.delete_if {|arg| if %w[v verbose].include?(arg) ; $verbose = true ; next true ; end ; false }
 
 	args.each_slice(2) do |key_value|
-		key = key_value[0].strip.gsub(/-/, '')
+		key = key_value[0].strip
 		value = key_value[1].strip
 		directory = value if %w[d directory].include?(key)
 		output = value if %w[o output].include?(key)
