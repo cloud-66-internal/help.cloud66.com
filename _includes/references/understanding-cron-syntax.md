@@ -22,7 +22,7 @@ Each cron field is mapped to a specific function:
 <table class='table table-bordered table-striped'>
 <thead>
   <tr>
-    <th width="20%">Field</th>
+    <th width="10%">Field</th>
     <th>Function</th>
   </tr>
 </thead>
