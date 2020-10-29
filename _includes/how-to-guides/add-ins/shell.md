@@ -1,6 +1,6 @@
 ## Overview
 
-The Server Jobs add-in allows you to define and schedule regular server tasks (shell commands). Under the hood, these are run as cronjobs.
+The Server Jobs add-in allows you to define and schedule regular server tasks (shell commands). Under the hood, these are run as [cronjobs](/{{page.collection}}/references/understanding-cron-syntax.html).
 
 {% if include.product == 'maestro' %}
 If you need to run a job against a Maestro service (i.e. inside a container), rather than on the underlying server, you should use the [Application Job add-in](/maestro/how-to-guides/add-ins/docker-tasks.html) instead.
@@ -14,7 +14,7 @@ To add a new server job:
 2. Click the Install Now button on the Server Jobs add-in block. 
 3. Choose a server and give your new job a name
 4. Specify the shell command you want to run
-5. Set a schedule for the job, or set it to run only on demand. 
+5. Set a schedule for the job, or set it to run only on demand. (You can use [cron syntax](/{{page.collection}}/references/understanding-cron-syntax.html) for more control over your scheduling) 
 6. Clicks the green Create Job button
 
 You will now see your new job listed in your Application Overview.  You can edit it, or run it on demand by clicking on the small downward arrow. Your run results (success, failure and any output) can be seen in real-time on the job detail page.
