@@ -1339,12 +1339,12 @@
   to = "/rails/tutorials/ip-filtering.html"
 
 [[redirects]]
-  from = "skycap/how-to-guides/formations/adding-policies-to-BTRs.html"
-  to = "skycap/how-to-guides/formations/adding-policies-to-btrs.html"
+  from = "/skycap/how-to-guides/formations/adding-policies-to-BTRs.html"
+  to = "/skycap/how-to-guides/formations/adding-policies-to-btrs.html"
 
 [[redirects]]
-  from = "skycap/how-to-guides/formations/adding-transformations-to-BTRs.html"
-  to = "skycap/how-to-guides/formations/adding-transformations-to-btrs.html"
+  from = "/skycap/how-to-guides/formations/adding-transformations-to-BTRs.html"
+  to = "/skycap/how-to-guides/formations/adding-transformations-to-btrs.html"
 
 [[redirects]]
   from = "/maestro/quickstarts/getting_started.html"
@@ -1355,24 +1355,24 @@
   to = "/maestro/quickstarts/getting-started-with-clusters.html"
 
 [[redirects]]
-  from = "skycap/references/stencil_placeholders.html"
-  to = "skycap/references/stencil-placeholders.html"
+  from = "/skycap/references/stencil_placeholders.html"
+  to = "/skycap/references/stencil-placeholders.html"
 
 [[redirects]]
-  from = "node/quickstarts/getting_started.html"
-  to = "node/quickstarts/getting-started.html"
+  from = "/node/quickstarts/getting_started.html"
+  to = "/node/quickstarts/getting-started.html"
 
 [[redirects]]
-  from = "rails/quickstarts/getting_started.html"
-  to = "rails/quickstarts/getting-started.html"
+  from = "/rails/quickstarts/getting_started.html"
+  to = "/rails/quickstarts/getting-started.html"
 
 [[redirects]]
-  from = "skycap/quickstarts/getting_started.html"
-  to = "skycap/quickstarts/getting-started.html"
+  from = "/skycap/quickstarts/getting_started.html"
+  to = "/skycap/quickstarts/getting-started.html"
 
 [[redirects]]
-  from = "skycap/quickstarts/using_formations.html"
-  to = "skycap/quickstarts/using-formations.html"
+  from = "/skycap/quickstarts/using_formations.html"
+  to = "/skycap/quickstarts/using-formations.html"
 
 [[redirects]]
   from = "/article/*"
