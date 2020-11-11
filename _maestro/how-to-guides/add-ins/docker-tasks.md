@@ -24,10 +24,10 @@ To add a new application job:
 2. Click the Install Now button on the Application Jobs add-in block. 
 3. Choose a service and give your new job a name
 4. Specify the shell command you want to run
-5. Set a schedule for the job, or set it to run only on demand. 
+5. Set a schedule for the job, or set it to run only on demand. (You can use [cron syntax](/{{page.collection}}/references/understanding-cron-syntax.html) for more control over your scheduling) 
 6. Clicks the green Create Job button
 
-You will now see your new job listed in your Application Overview.  You can edit it, or run it on demand by clicking on the small downward arrow. Your run results (success, failure and any output) can be seen in real-time on the job detail page.
+You will now see your new job listed in your Application Overview.  You can edit it, or run it on demand by clicking on the small downward arrow. Your run results (success, failure and any output) can be seen in real-time on the job detail page. 
 
 ## Using parameters
 
