@@ -38,19 +38,9 @@ Cloud 66 uses remote SSH keys to set up an SSH tunnel to your server and execute
 
 * * *
 
-{% if page.collection == "maestro" or page.collection == "skycap" %}
-
-## Are their any requirements for the user on my servers?
-
-Yes. As Cloud 66 will be provisioning services on your servers from scratch, the server must meet a number of requirements outlined in the [Registered servers](/maestro/how-to-guides/deployment/registered-servers.html) documentation.
-
-{%else%}
-
 ## Are their any requirements for the user on my servers?
 
 Yes. As Cloud 66 will be provisioning services on your servers from scratch, the server must meet a number of requirements outlined in the [Registered servers](/{{page.collection}}/how-to-guides/deployment/registered-servers.html) documentation.
-
-{%endif%}
 
 * * *
 
@@ -85,7 +75,21 @@ We currently support Ubuntu versions 16.04 and 18.04.
 
 ## How much does it cost?
 
-Please see our [pricing page](http://www.cloud66.com/pricing) for more information.
+{% if include.product == 'rails' %}
+Please see our [product page](https://www.cloud66.com/rails) for more information.
+{% endif %}
+
+{% if include.product == 'node' %}
+Please see our [product page](https://www.cloud66.com/node) for more information.
+{% endif %}
+
+{% if include.product == 'maestro' %}
+Please see our [product page](https://www.cloud66.com/containers/maestro) for more information.
+{% endif %}
+
+{% if include.product == 'skycap' %}
+Please see our [product page](https://www.cloud66.com/containers/skycap) for more information.
+{% endif %}
 
 * * *
 
