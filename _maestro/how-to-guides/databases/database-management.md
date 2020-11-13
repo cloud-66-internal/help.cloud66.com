@@ -41,24 +41,40 @@ $ kubectl -n <your-namespace> get svc
 
 This will show you all the services running, some of which will be your databases. 
 
-So a typical connection string might have: 
+### Service names for database groups
+
+If your application has two or more [database groups](/maestro/how-to-guides/databases/attaching-multiple-databases.html), your Kubernetes database services will inherit those names. For example, if you have three MySQL database groups named `main`, `spare` and `archive` then the Kubernetes services will be named:
+
+- mysql-main
+- mysql-spare
+- mysql-archive
+
+If one of these groups is set as your "[primary](/maestro/how-to-guides/databases/attaching-multiple-databases.html#understanding-primary-database-groups)" then it will use the default service name (`mysql`) instead of its group-specific name.
+
+### Connection strings in Maestro
+
+A typical connection string might have:
 
 - The protocol
 - The username and password (where required)
-- The name of the Kubernetes service (e.g. "mongodb")
-- The name of the DB server (e.g. "mongo_production_1")
+- The name of the Kubernetes service, including database groups (e.g. `mongodb-spare`)
+- The name of the DB server (e.g. `mongo_production_1`)
 
-So to connect to a MongoDB server named "mongo_production_1" and running in your app namespace as "mongodb" you would use something like:
+So to connect to a MongoDB server named `mongo_production_1` and running in your app namespace as `mongodb-spare` you would use something like:
 
-```bash
-$ mongodb://mongodb/mongo_production_1
+```
+$ mongodb://mongodb-spare/mongo_production_1
 ```
 
 A similar setup for a Postgres server would look something like this:
 
-```bash
+```
 $ postgresql://username:password@service_name/database
 ```
+
+## Connecting your app to your DB in Maestro V1
+
+To connect to a database in Version 1 of Maestro, you should use its ElasticDNS address. Please read our [full guide on ElasticDNS](/maestro/how-to-guides/build-and-config/service-network-configuration.html#elasticdns) for more details.
 
 ## Deployment types
 

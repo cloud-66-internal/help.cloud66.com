@@ -40,6 +40,17 @@ The client has a DNS server and local cache and runs in a container on your serv
 
 ElasticDNS knows your infrastructure and your data sources are also added to the service discovery. For example, your MySQL database can be discovered using the DNS name `mysql.cloud66.local`, MongoDB can be found using `mongodb.cloud66.local`.
 
+### Using database groups with ElasticDNS
+
+If your application has two or more [database groups](/maestro/how-to-guides/databases/attaching-multiple-databases.html), then the ElasticDNS addresses for those groups will be derived from their names. For example if you have two MySQL database groups named `main` and `spare` then the ElasticDNS addresses will be:
+
+- `main.mysql.cloud66.local`
+- `spare.mysql.cloud66.local`
+
+If one of these groups is set as the ["primary"](/maestro/how-to-guides/databases/attaching-multiple-databases.html#understanding-primary-database-groups), it will also be mapped to the default mysql group (`mysql.cloud66.local`).
+
+### Dynamic routing
+
 As ElasticDNS is centrally backed, it also knows about the caller, which is important when you have multiple versions of your application running at any given moment (during deployment for example). 
 
 Consider the following scenario: you have an app consisting of 2 services: a `web` service (accessible externally) and an `API` service which is used by the web service internally. Every time you deploy your application a new version of both services is rolled out to your servers.

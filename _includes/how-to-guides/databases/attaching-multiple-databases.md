@@ -53,9 +53,8 @@ If you are using your Manifest file to build an application from scratch, it wil
 
 If you are adding a new database group (or server) to an **existing application** it will use *either* the specifications in your Manifest file *or*, if no specification exists, the most recent version supported by Cloud 66. So, if you need to add a new group with a specific version, you should first add the group to your Manifest and then use the same name when you add the group via your Dashboard (see above).
 
-**Note**
-
-Simply adding or removing configurations from your Manifest will not add or remove the associated database servers or groups from your application. Please read our full guide to understand how best to use the Manifest file.
+#### Note
+<div class="notice notice-warning"><p>Simply adding or removing configurations from your Manifest will not add or remove the associated database servers or groups from your application. Please read our <a href="/{{page.collection}}/quickstarts/getting-started-with-manifest.html">full guide</a> to understand how best to use the Manifest file.</p></div>
 
 ## Accessing database groups from an app
 
@@ -78,22 +77,20 @@ This means that the root level environment variables that we create for that dat
 
 For example if the group named "Default" set as your **primary MySQL group** then the env vars are mapped as follows:
 
-`MYSQL_ADDRESS` -> `MYSQL_DEFAULT_ADDRESS`
-`MYSQL_PASSWORD` -> `MYSQL_DEFAULT_PASSWORD`
+`MYSQL_ADDRESS` &rarr; `MYSQL_DEFAULT_ADDRESS`
 
-etc.
+`MYSQL_PASSWORD` &rarr; `MYSQL_DEFAULT_PASSWORD`
 
 At any point you can set another group to be your primary group, which will change the root level environment variables for that database type to point at new values. For example if you set the group "upgrade" as your primary:
-`MYSQL_ADDRESS` -> `MYSQL_UPGRADE_ADDRESS`
-`MYSQL_PASSWORD` -> `MYSQL_UPGRADE_PASSWORD`
 
-etc.
+`MYSQL_ADDRESS` &rarr; `MYSQL_UPGRADE_ADDRESS`
+
+`MYSQL_PASSWORD` &rarr; `MYSQL_UPGRADE_PASSWORD`
 
 You can set your primary group in your Dashboard by clicking through on the *Server* tab from the Application overview and clicking the button. **We will not apply any changes in env vars to your application immediately.** They will only be applied when you next redeploy your stack (we recommend you do this immediately or as soon as possible).
 
-**Note:**
-
-You can choose to use the **group-specific environment variables** in your app configuration, rather than using the root level environment variables. So if, for example, your current primary group is named "Upgrade" you can still use `MYSQL_UPGRADE_ADDRESS` rather than `MYSQL_ADDRESS`. 
+#### Note
+<div class="notice"><p>You can choose to use the <strong>group-specific environment variables</strong> in your app configuration, rather than using the root level environment variables. So if, for example, your current primary group is named "Upgrade" you can still use <code>MYSQL_UPGRADE_ADDRESS</code> rather than <code>MYSQL_ADDRESS</code>.</p></div>
 
 ## Moving data between database groups
 
