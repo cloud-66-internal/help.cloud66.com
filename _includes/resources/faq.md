@@ -38,12 +38,14 @@ Cloud 66 uses remote SSH keys to set up an SSH tunnel to your server and execute
 
 * * *
 
+{% if include.product != 'skycap' %}
 ## Are their any requirements for the user on my servers?
 
 Yes. As Cloud 66 will be provisioning services on your servers from scratch, the server must meet a number of requirements outlined in the [Registered servers](/{{page.collection}}/how-to-guides/deployment/registered-servers.html) documentation.
 
 * * *
 
+{% endif %}
 
 ## Can I deploy multiple apps on a single server?
 
