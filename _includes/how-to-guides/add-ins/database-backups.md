@@ -25,6 +25,10 @@ Unmanaged backups are stored on your local server and are available under `/var/
 	<p>In order for backups to work, you are required to have twice as much space on your server as your backup consumes.</p>
 </div>
 
+## Pricing
+
+We charge per GB (or part thereof) of data stored. See our [pricing page](/{{page.collection}}/resources/pricing.html) for the most up to date price.
+
 ## Backup format
 The backup format for redis and mongodb is always **binary**.  For _MySQL_ and _Postgresql_ you can choose between **binary** and **text**. 
 
@@ -83,3 +87,27 @@ We recommend using the automated restore process to restore backups. To do this:
 - Confirm the action
 
 If you need to manually download and/or restore a backup, please read our in-depth guide on [manually managing database backups](/{{page.collection}}/how-to-guides/databases/shells/manage-backups.html).
+
+## Backup storage locations
+
+We store your backups in the closest possible AWS region to your servers. At the moment we store data in the following regions:
+
+* af-south-1 
+* ap-east-1
+* ap-northeast-1
+* ap-northeast-2
+* ap-south-1
+* ap-southeast-1
+* ap-southeast-2
+* ca-central-1 
+* eu-central-1 
+* eu-north-1
+* eu-west-1
+* eu-west-2
+* eu-west-3
+* me-south-1
+* sa-east-1
+* us-east-1 
+* us-east-2
+* us-west-1
+* us-west-2

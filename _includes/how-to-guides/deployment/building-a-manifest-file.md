@@ -112,6 +112,7 @@ production:
 
 ### ElasticSearch
 
+- **Groups:** (*Optional*) Used to define multiple separate [database groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html) (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.
 - **version**: Specify the version of ElasticSearch you want to install.
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
@@ -121,11 +122,17 @@ production:
 ```yml
 production:
   elasticsearch:
-    configuration:
-      iam_instance_profile_name: elastic-perms
-      version: 0.90.7
-      root_disk_size: 100
-      root_disk_type: ssd
+    groups:
+      my_main:
+        configuration:
+          iam_instance_profile_name: elastic-perms
+          version: 0.90.7
+          root_disk_size: 100
+          root_disk_type: ssd
+      my_spare:
+        configuration:
+          version: 0.90.7
+
 ```
 
 * * *
@@ -229,6 +236,7 @@ production:
 
 ### MongoDB
 
+- **Groups:** (*Optional*) Used to define multiple separate [database groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html) (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.
 - **version**: Specify the version of MongoDB you want to install (can only be set during application build).
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers in application. Default value is 50.
@@ -239,10 +247,15 @@ production:
 ```yml
 production:
   mongodb:
-    configuration:
-      version: 2.4.8
-      root_disk_size: 100
-      root_disk_type: ssd
+    groups:
+      my_mongo:
+        configuration:
+          version: 2.4.8
+          root_disk_size: 100
+          root_disk_type: ssd
+      spare_mongo:
+        configuration:
+          version: 2.4.8
 ```
 
 * * *
@@ -250,6 +263,7 @@ production:
 
 ### MySQL
 
+- **Groups:** (*Optional*) Used to define multiple separate [database groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html) (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.
 - **version**: Specify the version of MySQL you want to install. Valid values are 5.7 or 8.0 (can only be set during application build).
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.
@@ -262,12 +276,20 @@ production:
 ```yml
 production:
   mysql:
-    configuration:
-      version: 5.7
-      root_disk_size: 100
-      root_disk_type: ssd
-      engine: percona
-      iam_instance_profile_name: mysql-perms
+    live-db:
+      configuration:
+        version: 5.7
+        root_disk_size: 100
+        root_disk_type: ssd
+        engine: percona
+        iam_instance_profile_name: mysql-perms
+    upgrade:
+      configuration:
+        version: 8.0
+        root_disk_size: 100
+        root_disk_type: ssd
+        engine: percona
+        iam_instance_profile_name: mysql-perms
 ```
 
 * * *
@@ -336,6 +358,7 @@ If you need a newer version of Node, you can install one using the same method a
 
 ### PostgreSQL
 
+- **Groups:** (*Optional*) Used to define multiple separate [database groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html) (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.
 - **version**: Specify the version of PostgreSQL you want to install (can only be set during application build).
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **postgis**: Specify whether to include PostGIS (can be added after initial application build).
@@ -347,12 +370,18 @@ If you need a newer version of Node, you can install one using the same method a
 ```yml
 production:
   postgresql:
-    configuration:
-      iam_instance_profile_name: psql-perms
-      version: 9.3.4
-      postgis: true
-      root_disk_size: 100
-      root_disk_type: ssd
+    groups:
+      live-data:
+        configuration:
+          iam_instance_profile_name: psql-perms
+          version: 9.3.4
+          postgis: true
+          root_disk_size: 100
+          root_disk_type: ssd
+      spare-data:
+        configuration:
+          version: 9.3.4
+
 ```
 
 * * *
@@ -499,6 +528,7 @@ All of these are optional. For more details on health checks please read our [ho
 
 ### Redis
 
+- **Groups:** (*Optional*) Used to define multiple separate [database groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html) (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.
 - **version**: Specify the version of Redis you want to install (defaults to 5.0).
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
 - **root_disk_size** (_Optional, AWS EC2, Azure and GCE only_): Default size of root disk (in GB) for servers used by application. Default value is 50.

@@ -13,4 +13,4 @@ product: Maestro
 ---
 
 
-{%include resources/faq.md %}
+{%include resources/faq.md product = page.collection %}
