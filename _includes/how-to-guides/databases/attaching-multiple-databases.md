@@ -91,7 +91,6 @@ You can set your primary group in your Dashboard by clicking through on the *Ser
 
 {% if include.product == 'maestro' %}
 This pattern also applies to the **service networking addresses** of your Maestro components. For more details please read our [full guide on the subject](/maestro/how-to-guides/databases/database-management.html#service-names-for-database-groups).
-
 {% endif %}
 
 #### Note
@@ -117,7 +116,7 @@ Replication has the following rules:
 - A replication master in one group cannot be a slave of another group
 - A group with a single server can be slaved to a replication master from another group
 
-Essentially, as soon as a group has internal replication (between it's own master and slaves) it can no longer be slaved to another group.
+Essentially, as soon as a group has internal replication (between its own master and slaves) it can no longer be slaved to another group.
 
 To set up replication *between* database groups:
 
@@ -129,4 +128,4 @@ To set up replication *between* database groups:
 
 Replication will now be set up. It may take some time for data to sync between your databases. For large databases we recommend importing a (recent) backup from the **source** before enabling replication. 
 
-For more details on replication please read our full How-To Guide.
+For more details on replication please read our [full How-To Guide](/{{page.collection}}/how-to-guides/databases/database-replication.html).
