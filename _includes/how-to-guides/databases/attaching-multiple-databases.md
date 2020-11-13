@@ -89,6 +89,11 @@ At any point you can set another group to be your primary group, which will chan
 
 You can set your primary group in your Dashboard by clicking through on the *Server* tab from the Application overview and clicking the button. **We will not apply any changes in env vars to your application immediately.** They will only be applied when you next redeploy your stack (we recommend you do this immediately or as soon as possible).
 
+{% if include.product == 'maestro' %}
+This pattern also applies to the **service networking addresses** of your Maestro components. For more details please read our [full guide on the subject](/maestro/how-to-guides/databases/database-management.html#service-names-for-database-groups).
+
+{% endif %}
+
 #### Note
 <div class="notice"><p>You can choose to use the <strong>group-specific environment variables</strong> in your app configuration, rather than using the root level environment variables. So if, for example, your current primary group is named "Upgrade" you can still use <code>MYSQL_UPGRADE_ADDRESS</code> rather than <code>MYSQL_ADDRESS</code>.</p></div>
 
