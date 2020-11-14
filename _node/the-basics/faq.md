@@ -11,4 +11,4 @@ permalink: /:collection/:path:output_ext
 ---
 
 
-{%include resources/faq.md %}
+{%include resources/faq.md product = page.collection %}
