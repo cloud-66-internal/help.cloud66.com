@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Managing databases groups
+title: Using Multi-DB
 categories: how-to-guides/databases
 order: 4
 lead: "How to use multiple groups of databases with a single application"

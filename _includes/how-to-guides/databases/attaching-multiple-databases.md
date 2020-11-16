@@ -1,6 +1,6 @@
 ## Overview
 
-Applications can have multiple **database groups** attached to them. A database group is a collection of one or more databases of the *same* type (e.g. MySQL). Different groups can have different database types, allowing a single app to use multiple types of databases (e.g. Postgres *and* Redis).  
+Multi-DB allows you to attach multiple **database groups** to an application. A database group is a collection of one or more databases of the *same* type (e.g. MySQL). Different groups can have different database types, allowing a single app to use multiple types of databases (e.g. Postgres *and* Redis), or they can have the same type (e.g. two *separate* groups of MySQL servers).
 
 ## Understanding database groups
 
