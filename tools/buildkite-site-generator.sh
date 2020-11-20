@@ -17,11 +17,14 @@ echo "whoami: $(whoami)"
 mkdir -p _site
 chmod 0777 _site
 chown buildkite-agent:buildkite-agent _site
-docker run --rm  --volume="$pwd:/srv/jekyll" -it jekyll/builder:4 jekyll build
+
+tmpdir="/tmp/dev-$uid"
+mkdir -p $tmpdir
+docker run --rm  --volume="$pwd:/srv/jekyll" --volume="tmpdir:/output" -it jekyll/builder:4 jekyll build -d /output
+
 echo " ---> Generating help_links.yml via tools/site-generator.rb"
 # run the site generator
 tools/site-generator.rb --directory="$pwd/_site" --output="$pwd/tools/help_links.yml"
-rm -rf _site
 # commit if changed
 echo " ---> testing yml file for differences"
 set +e
