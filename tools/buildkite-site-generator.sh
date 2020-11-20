@@ -7,14 +7,10 @@ if [[ -z "$BUILDKITE_BUILD_ID" ]] || [[ -z "$BUILDKITE_BRANCH" ]]; then
   echo "FATAL: Build env vars missing"
   exit 22
 fi
-
 uid="$BUILDKITE_BUILD_ID"
 tmpfile="/tmp/help_links-$uid.yml"
-current_path=$(pwd)
-pwd=$(dirname "$current_path")
-
+pwd=$(pwd)
 echo " ---> Generating site via docker/jekyll"
-echo "current_path: $current_path"
 echo "pwd_path: $pwd"
 # generate jekyll files in _site
 docker run --rm  --volume="$pwd:/srv/jekyll" -it jekyll/builder:4 jekyll build
