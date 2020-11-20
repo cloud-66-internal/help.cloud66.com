@@ -9,6 +9,7 @@ if [[ -z "$BUILDKITE_BUILD_ID" ]] || [[ -z "$BUILDKITE_BRANCH" ]]; then
 fi
 uid="$BUILDKITE_BUILD_ID"
 tmpfile="/tmp/help_links-$uid.yml"
+site_path="/tmp/jekyll-build"
 pwd=$(pwd)
 echo " ---> Generating site via docker/jekyll"
 echo "pwd_path: $pwd"
@@ -17,14 +18,23 @@ echo "whoami: $(whoami)"
 mkdir -p _site
 chmod 0777 _site
 chown buildkite-agent:buildkite-agent _site
-
 tmpdir="/tmp/dev-$uid"
 mkdir -p $tmpdir
-docker run --rm --user $(id -u):$(id -g) --volume="$pwd:/srv/jekyll" --volume="tmpdir:/output" -it jekyll/builder:4 jekyll build -d /output
-exit -1
+set +e
+docker rm --force "jekyll-build"
+set -e
+echo "running the docker jekyll builder"
+docker run --name="jekyll-build" --volume="$pwd:/srv/jekyll" -it jekyll/builder:4 bash -c "jekyll build -d /tmp"
+echo "copying generated files to $site_path"
+docker cp jekyll-build:/tmp "$site_path"
+echo "removing the docker container"
+docker rm --force "jekyll-build"
+
 echo " ---> Generating help_links.yml via tools/site-generator.rb"
 # run the site generator
-tools/site-generator.rb --directory="$pwd/_site" --output="$pwd/tools/help_links.yml"
+tools/site-generator.rb --directory="$site_path" --output="$pwd/tools/help_links.yml"
+echo "removing $site_path"
+rm -rf $site_path
 # commit if changed
 echo " ---> testing yml file for differences"
 set +e
