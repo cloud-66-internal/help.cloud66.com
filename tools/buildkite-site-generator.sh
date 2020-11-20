@@ -13,6 +13,8 @@ pwd=$(pwd)
 echo " ---> Generating site via docker/jekyll"
 echo "pwd_path: $pwd"
 # generate jekyll files in _site
+mkdir -p _site
+chmod 0777 _site
 docker run --rm  --volume="$pwd:/srv/jekyll" -it jekyll/builder:4 jekyll build
 echo " ---> Generating help_links.yml via tools/site-generator.rb"
 # run the site generator
