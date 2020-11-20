@@ -20,8 +20,8 @@ chown buildkite-agent:buildkite-agent _site
 
 tmpdir="/tmp/dev-$uid"
 mkdir -p $tmpdir
-docker run --rm  --volume="$pwd:/srv/jekyll" --volume="tmpdir:/output" -it jekyll/builder:4 jekyll build -d /output
-
+docker run --rm --user $(id -u):$(id -g) --volume="$pwd:/srv/jekyll" --volume="tmpdir:/output" -it jekyll/builder:4 jekyll build -d /output
+exit -1
 echo " ---> Generating help_links.yml via tools/site-generator.rb"
 # run the site generator
 tools/site-generator.rb --directory="$pwd/_site" --output="$pwd/tools/help_links.yml"
