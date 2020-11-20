@@ -11,9 +11,10 @@ fi
 uid="$BUILDKITE_BUILD_ID"
 tmpfile="/tmp/help_links-$uid.yml"
 
+
 echo " ---> Generating site via docker/jekyll"
 # generate jekyll files in _site
-docker run --rm  --volume="$PWD:/srv/jekyll" -it jekyll/builder:latest jekyll build
+docker run --rm  --volume="$PWD:/srv/jekyll" -it jekyll/builder:4 jekyll build
 echo " ---> Generating help_links.yml via tools/site-generator.rb"
 # run the site generator
 tools/site-generator.rb --directory="$PWD/_site" --output="$PWD/tools/help_links.yml"
