@@ -10,21 +10,24 @@ fi
 
 uid="$BUILDKITE_BUILD_ID"
 tmpfile="/tmp/help_links-$uid.yml"
-
+current_path=$(pwd)
+pwd=$(dirname "$current_path")
 
 echo " ---> Generating site via docker/jekyll"
+echo "current_path: $current_path"
+echo "pwd_path: $pwd"
 # generate jekyll files in _site
-docker run --rm  --volume="$PWD:/srv/jekyll" -it jekyll/builder:4 jekyll build
+docker run --rm  --volume="$pwd:/srv/jekyll" -it jekyll/builder:4 jekyll build
 echo " ---> Generating help_links.yml via tools/site-generator.rb"
 # run the site generator
-tools/site-generator.rb --directory="$PWD/_site" --output="$PWD/tools/help_links.yml"
+tools/site-generator.rb --directory="$pwd/_site" --output="$pwd/tools/help_links.yml"
 # commit if changed
 echo " ---> testing yml file for differences"
 git ls-files -m | grep site-generator.yml
 if [[ "$?" == "0" ]]; then
   set +e
   echo " ---> A difference was found"
-  cp "$PWD/tools/help_links.yml" "$tmpfile"
+  cp "$pwd/tools/help_links.yml" "$tmpfile"
   echo " ---> Preparing to commit changes"
   current_ref=$(git rev-parse HEAD)
   echo " ---> current ref is $current_ref"
