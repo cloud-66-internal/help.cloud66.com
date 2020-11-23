@@ -1,4 +1,17 @@
 maestro:
+  about_maestro:
+    page: maestro/the-basics/about-maestro.html
+    page_anchors:
+    - about-docker
+    - cloud-66-docker-support
+    - maestro-architecture
+    - maestro-features
+    - maestro-product-heading
+    - maestro-vs-skycap
+    - version-1
+    - version-1-vs-version-2
+    - version-2
+    - what-is-maestro
   access_cluster_directly:
     page: maestro/how-to-guides/common-tools/access-cluster-directly.html
     page_anchors:
@@ -68,6 +81,16 @@ maestro:
     - deleting-an-application
     - maestro-product-heading
     - updating-application-properties
+  application_transfer:
+    page: maestro/account/application-transfer.html
+    page_anchors:
+    - account--user-criteria
+    - application-criteria
+    - dealing-with-a-failed-transfer
+    - maestro-product-heading
+    - overview
+    - transferring-an-application
+    - understanding-the-application-transfer-process
   applying_upgrades:
     page: maestro/how-to-guides/deployment/applying-upgrades.html
     page_anchors:
@@ -93,6 +116,18 @@ maestro:
     - maestro-product-heading
     - overview
     - restoring-an-application
+  attaching_multiple_databases:
+    page: maestro/how-to-guides/databases/attaching-multiple-databases.html
+    page_anchors:
+    - accessing-database-groups-from-an-app
+    - adding-a-database-group-to-an-app
+    - maestro-product-heading
+    - moving-data-between-database-groups
+    - overview
+    - replicating-data-between-database-groups
+    - specifying-database-groups-via-manifest
+    - understanding-database-groups
+    - understanding-primary-database-groups
   audit_logs:
     page: maestro/account/audit-logs.html
     page_anchors:
@@ -412,6 +447,7 @@ maestro:
     page_anchors:
     - backup-format
     - backup-schedule
+    - backup-storage-locations
     - backup-types
     - binary
     - compression
@@ -419,6 +455,7 @@ maestro:
     - install-on-replica
     - maestro-product-heading
     - managed-backups
+    - pricing
     - restoring-database-backups
     - text
     - unmanaged-backups
@@ -442,6 +479,8 @@ maestro:
     page: maestro/how-to-guides/databases/database-management.html
     page_anchors:
     - connecting-your-app-to-your-db-in-maestro
+    - connecting-your-app-to-your-db-in-maestro-v1
+    - connection-strings-in-maestro
     - customizing-your-database
     - dedicated-database
     - deploying-databases
@@ -449,18 +488,24 @@ maestro:
     - local-database
     - maestro-product-heading
     - no-database-external
+    - service-names-for-database-groups
     - upgrading-your-database
   database_replication:
     page: maestro/how-to-guides/databases/database-replication.html
     page_anchors:
     - between-applications
+    - between-database-groups
     - disable-database-replication
     - enable-database-replication
     - environment-variables
-    - for-a-single-application
+    - for-a-single-application-with-one-db-group
     - for-multiple-applications
+    - for-multiple-database-groups
     - how-it-works
+    - important
     - maestro-product-heading
+    - note
+    - note-1
     - overview
     - re-synchronizing-slave-with-master
     - single-application
@@ -1158,6 +1203,15 @@ maestro:
     - pgrouting
     - postgis-extension-for-postgresql
     - prerequisites
+  pricing:
+    page: maestro/resources/pricing.html
+    page_anchors:
+    - add-on-services
+    - maestro
+    - maestro-product-heading
+    - node
+    - rails
+    - skycap
   querying_server_metadata:
     page: maestro/how-to-guides/deployment/querying-server-metadata.html
     page_anchors:
@@ -1392,6 +1446,7 @@ maestro:
     - configuration
     - containernet
     - dns-behaviour
+    - dynamic-routing
     - elasticdns
     - encryption
     - load-balancing
@@ -1399,6 +1454,7 @@ maestro:
     - ports
     - traffic-distribution
     - traffic-matches
+    - using-database-groups-with-elasticdns
     - using-traffic-matches-to-reroute-all-traffic
   service_networking:
     page: maestro/how-to-guides/build-and-config/service-networking.html
@@ -1798,6 +1854,24 @@ maestro:
     - what-are-personal-access-tokens
     - why-cant-we-share-logins
     - why-do-i-need-2fa
+  understanding_buildgrid:
+    page: maestro/references/understanding-buildgrid.html
+    page_anchors:
+    - accessing-your-buildgrid-repository
+    - finding-image-details-via-build--deployment-timeline
+    - maestro-product-heading
+    - overview
+    - running-an-image-locally
+    - understanding-buildgrid-urls
+  understanding_cron_syntax:
+    page: maestro/references/understanding-cron-syntax.html
+    page_anchors:
+    - maestro-product-heading
+    - more-help
+    - overview
+    - setting-more-complex-schedules
+    - the-basics-of-cron
+    - understanding-cron-fields
   understanding_failover_groups:
     page: maestro/references/understanding-failover-groups.html
     page_anchors:
@@ -1917,6 +1991,16 @@ node:
     - node-product-heading
     - postgresql
     - redis
+  application_transfer:
+    page: node/account/application-transfer.html
+    page_anchors:
+    - account--user-criteria
+    - application-criteria
+    - dealing-with-a-failed-transfer
+    - node-product-heading
+    - overview
+    - transferring-an-application
+    - understanding-the-application-transfer-process
   applying_upgrades:
     page: node/how-to-guides/deployment/applying-upgrades.html
     page_anchors:
@@ -1941,6 +2025,18 @@ node:
     - node-product-heading
     - overview
     - restoring-an-application
+  attaching_multiple_databases:
+    page: node/how-to-guides/databases/attaching-multiple-databases.html
+    page_anchors:
+    - accessing-database-groups-from-an-app
+    - adding-a-database-group-to-an-app
+    - moving-data-between-database-groups
+    - node-product-heading
+    - overview
+    - replicating-data-between-database-groups
+    - specifying-database-groups-via-manifest
+    - understanding-database-groups
+    - understanding-primary-database-groups
   audit_logs:
     page: node/account/audit-logs.html
     page_anchors:
@@ -2187,6 +2283,7 @@ node:
     page_anchors:
     - backup-format
     - backup-schedule
+    - backup-storage-locations
     - backup-types
     - binary
     - compression
@@ -2194,6 +2291,7 @@ node:
     - install-on-replica
     - managed-backups
     - node-product-heading
+    - pricing
     - restoring-database-backups
     - text
     - unmanaged-backups
@@ -2229,13 +2327,18 @@ node:
     page: node/how-to-guides/databases/database-replication.html
     page_anchors:
     - between-applications
+    - between-database-groups
     - disable-database-replication
     - enable-database-replication
     - environment-variables
-    - for-a-single-application
+    - for-a-single-application-with-one-db-group
     - for-multiple-applications
+    - for-multiple-database-groups
     - how-it-works
+    - important
     - node-product-heading
+    - note
+    - note-1
     - overview
     - re-synchronizing-slave-with-master
     - single-application
@@ -2790,6 +2893,15 @@ node:
     - pgrouting
     - postgis-extension-for-postgresql
     - prerequisites
+  pricing:
+    page: node/resources/pricing.html
+    page_anchors:
+    - add-on-services
+    - maestro
+    - node
+    - node-product-heading
+    - rails
+    - skycap
   querying_server_metadata:
     page: node/how-to-guides/deployment/querying-server-metadata.html
     page_anchors:
@@ -3331,6 +3443,15 @@ node:
     - what-are-personal-access-tokens
     - why-cant-we-share-logins
     - why-do-i-need-2fa
+  understanding_cron_syntax:
+    page: node/references/understanding-cron-syntax.html
+    page_anchors:
+    - more-help
+    - node-product-heading
+    - overview
+    - setting-more-complex-schedules
+    - the-basics-of-cron
+    - understanding-cron-fields
   understanding_failover_groups:
     page: node/references/understanding-failover-groups.html
     page_anchors:
@@ -3442,6 +3563,16 @@ rails:
     - deleting-an-application
     - rails-product-heading
     - updating-application-properties
+  application_transfer:
+    page: rails/account/application-transfer.html
+    page_anchors:
+    - account--user-criteria
+    - application-criteria
+    - dealing-with-a-failed-transfer
+    - overview
+    - rails-product-heading
+    - transferring-an-application
+    - understanding-the-application-transfer-process
   applying_upgrades:
     page: rails/how-to-guides/deployment/applying-upgrades.html
     page_anchors:
@@ -3470,6 +3601,18 @@ rails:
     - overview
     - rails-product-heading
     - restoring-an-application
+  attaching_multiple_databases:
+    page: rails/how-to-guides/databases/attaching-multiple-databases.html
+    page_anchors:
+    - accessing-database-groups-from-an-app
+    - adding-a-database-group-to-an-app
+    - moving-data-between-database-groups
+    - overview
+    - rails-product-heading
+    - replicating-data-between-database-groups
+    - specifying-database-groups-via-manifest
+    - understanding-database-groups
+    - understanding-primary-database-groups
   audit_logs:
     page: rails/account/audit-logs.html
     page_anchors:
@@ -3755,12 +3898,14 @@ rails:
     page_anchors:
     - backup-format
     - backup-schedule
+    - backup-storage-locations
     - backup-types
     - binary
     - compression
     - exclude-tables
     - install-on-replica
     - managed-backups
+    - pricing
     - rails-product-heading
     - restoring-database-backups
     - text
@@ -3799,12 +3944,17 @@ rails:
     page: rails/how-to-guides/databases/database-replication.html
     page_anchors:
     - between-applications
+    - between-database-groups
     - disable-database-replication
     - enable-database-replication
     - environment-variables
-    - for-a-single-application
+    - for-a-single-application-with-one-db-group
     - for-multiple-applications
+    - for-multiple-database-groups
     - how-it-works
+    - important
+    - note
+    - note-1
     - overview
     - rails-product-heading
     - re-synchronizing-slave-with-master
@@ -4489,6 +4639,15 @@ rails:
     - postgis-extension-for-postgresql
     - prerequisites
     - rails-product-heading
+  pricing:
+    page: rails/resources/pricing.html
+    page_anchors:
+    - add-on-services
+    - maestro
+    - node
+    - rails
+    - rails-product-heading
+    - skycap
   proc_files:
     page: rails/how-to-guides/deployment/proc-files.html
     page_anchors:
@@ -5128,6 +5287,15 @@ rails:
     - what-are-personal-access-tokens
     - why-cant-we-share-logins
     - why-do-i-need-2fa
+  understanding_cron_syntax:
+    page: rails/references/understanding-cron-syntax.html
+    page_anchors:
+    - more-help
+    - overview
+    - rails-product-heading
+    - setting-more-complex-schedules
+    - the-basics-of-cron
+    - understanding-cron-fields
   understanding_failover_groups:
     page: rails/references/understanding-failover-groups.html
     page_anchors:
@@ -5382,7 +5550,6 @@ skycap:
   faq:
     page: skycap/the-basics/faq.html
     page_anchors:
-    - are-their-any-requirements-for-the-user-on-my-servers
     - can-i-deploy-multiple-apps-on-a-single-server
     - can-i-use-cloud-66-with-my-own-servers
     - how-can-i-change-my-git-repository
@@ -5596,6 +5763,15 @@ skycap:
   policies_specifications_index:
     page: skycap/policies-specifications/index.html
     page_anchors:
+    - skycap-product-heading
+  pricing:
+    page: skycap/policies-specifications/pricing.html
+    page_anchors:
+    - add-on-services
+    - maestro
+    - node
+    - rails
+    - skycap
     - skycap-product-heading
   quickstarts_index:
     page: skycap/quickstarts/index.html
