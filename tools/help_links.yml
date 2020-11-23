@@ -1,6 +1,17 @@
 maestro:
-
-
+  about_maestro:
+    page: maestro/the-basics/about-maestro.html
+    page_anchors:
+    - about-docker
+    - cloud-66-docker-support
+    - maestro-architecture
+    - maestro-features
+    - maestro-product-heading
+    - maestro-vs-skycap
+    - version-1
+    - version-1-vs-version-2
+    - version-2
+    - what-is-maestro
   access_cluster_directly:
     page: maestro/how-to-guides/common-tools/access-cluster-directly.html
     page_anchors:
