@@ -25,7 +25,6 @@ echo "copying generated files to $site_path"
 docker cp jekyll-build:/tmp "$site_path"
 echo "removing the docker container"
 docker rm --force "jekyll-build"
-
 echo " ---> Generating help_links.yml via tools/site-generator.rb"
 # run the site generator
 tools/site-generator.rb --directory="$site_path" --output="$pwd/tools/help_links.yml"
@@ -34,7 +33,7 @@ rm -rf "$site_path"
 # commit if changed
 echo " ---> testing yml file for differences"
 set +e
-git ls-files -m | grep help_link.yml
+git ls-files -m | grep help_links.yml
 if [[ "$?" == "0" ]]; then
   echo " ---> A difference was found"
   cp "$pwd/tools/help_links.yml" "$tmpfile"
