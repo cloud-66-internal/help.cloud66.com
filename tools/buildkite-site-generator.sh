@@ -35,6 +35,7 @@ echo " ---> testing yml file for differences"
 set +e
 git ls-files -m | grep help_links.yml
 if [[ "$?" == "0" ]]; then
+  set -e
   echo " ---> A difference was found"
   cp "$pwd/tools/help_links.yml" "$tmpfile"
   echo " ---> Preparing to commit changes"

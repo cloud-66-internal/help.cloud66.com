@@ -1,4 +1,6 @@
 maestro:
+
+
   access_cluster_directly:
     page: maestro/how-to-guides/common-tools/access-cluster-directly.html
     page_anchors:
