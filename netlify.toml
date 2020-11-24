@@ -1415,12 +1415,12 @@
   to = "/maestro/the-basics/"
 
 [[redirects]]
-  from = "/maestro/how-to-guides/databases/shell"
+  from = "/maestro/how-to-sdsguides/databases/shell"
   to = "/maestro/how-to-guides/databases/"
 
 [[redirects]]
   from = "/legacy_docker/index.html"
-  to = "/maestro/index.html"
+  to = "/maestro/indsdfsdfex.html"
   
 [[redirects]]
   from = "/maestro/references/account/*"
