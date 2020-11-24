@@ -18,7 +18,7 @@ tools/redirects-generator.rb --input="$pwd/netlify.toml" --output="$pwd/netlify-
 echo "nohup npx http-server $pwd/netlify-redirects -a 127.0.0.1 >/tmp/http-server.log 2>&1 &"
 nohup npx http-server "$pwd/netlify-redirects" -a 127.0.0.1 >/tmp/http-server.log 2>&1 &
 # run the link checker
-echo "blc http://127.0.0.1:8080/netlify-redirects.html -o -f --host-request 4 --requests 4 -g --filter-level 3"
+echo "blc http://127.0.0.1:8080/netlify-redirects.html -o -v -f --host-request 4 --requests 4 -g --filter-level 3"
 blc "http://127.0.0.1:8080/netlify-redirects.html" -v -o -f --host-request 4 --requests 4 -g --filter-level 3
 # all done
 echo "---> I'm Mr. Meeseeks! Look at me!"
