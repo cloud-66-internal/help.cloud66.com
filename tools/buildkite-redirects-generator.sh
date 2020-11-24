@@ -2,7 +2,6 @@
 set -e
 # load env vars
 source ~/.profile
-
 if [[ -z "$BUILDKITE_BUILD_ID" ]] || [[ -z "$BUILDKITE_BRANCH" ]]; then
   echo "FATAL: Build env vars missing"
   exit 22

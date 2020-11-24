@@ -49,19 +49,23 @@ def perform(input, subdomain)
 	contents = IO.read(input)
 	# process contents
 	links = { from: [], to: [] }
+	all_links = {}
 	contents.lines.each do |line|
 		next unless line.strip =~ TOML_LINK_REGEX
 		direction = $~[:direction].to_sym
 		raw_link = $~[:link]
-		# ignore links ending with /*
-		next if raw_link =~ /\/\*$/
-		# ignore links ending /:splat /*
-		next if raw_link =~ /\/:splat$/
-		fatal("the link \"#{direction} #{raw_link}\" has more than one redirect defined") if direction == :from && links[direction].include?(raw_link)
+		# ignore links ending with *
+		next if raw_link =~ /\*$/
+		# ignore links ending :splat
+		next if raw_link =~ /:splat$/
+		fatal("the link \"from #{raw_link}\" has more than one redirect defined") if direction == :from && links[:from].include?(raw_link)
+		# only add links once
+		next if all_links.has_key?(raw_link)
+		all_links[raw_link] = true
 		links[direction] << raw_link
 	end
-	links[:from] = links[:from].sort.map { |link,| "https://#{subdomain}#{link}" }
-	links[:to] = links[:to].sort.map { |link,| "https://#{subdomain}#{link}" }
+	links[:from] = links[:from].sort.uniq.map { |link,| "https://#{subdomain}#{link}" }
+	links[:to] = links[:to].sort.uniq.map { |link,| "https://#{subdomain}#{link}" }
 	links
 end
 
