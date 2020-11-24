@@ -4492,6 +4492,7 @@ rails:
     - maintenance-mode
     - rails-product-heading
     - redirect-http-to-https
+    - use-a-custom-maintenance-page
     - using-network-redirects
     - what-is-activeprotect
     - www-or-non-www-in-your-url

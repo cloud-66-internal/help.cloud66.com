@@ -513,7 +513,7 @@ All of these are optional. For more details on health checks please read our [ho
 
 #### Example:
 ```yml
-    rails/rack:
+    rails:
     	configuration:
     		health:
     			protocol: 'https'
