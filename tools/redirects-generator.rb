@@ -72,10 +72,12 @@ end
 def dump(links, output)
 	# convert to yaml
 	content = "<html>"
+	content = "#{content}\n<body>"
 	content = "#{content}\n<h1>FROM Links</h1>"
-	links[:from].each { |link| content = "#{content}\n<a href=\"#{link}\">#{link}</a><br/>" }
+	links[:from].each { |link| content = "#{content}\n<a href=\"#{link}\">#{link}</a>\n<br/>" }
 	content = "#{content}\n<h1>TO Links</h1>"
-	links[:to].each { |link| content = "#{content}\n<a href=\"#{link}\">#{link}</a><br/>" }
+	links[:to].each { |link| content = "#{content}\n<a href=\"#{link}\">#{link}</a>\n<br/>" }
+	content = "#{content}\n</body>"
 	content = "#{content}\n</html>"
 	File.open(output, 'w') { |file| file.puts content }
 end
