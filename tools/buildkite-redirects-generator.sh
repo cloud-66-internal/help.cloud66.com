@@ -11,7 +11,7 @@ pwd=$(pwd)
 echo " ---> Generating netlify-redirects.html via tools/redirects-generator.rb"
 # run the site generator
 mkdir -p netlify-redirects
-tools/redirect-generator.rb --input="$pwd/netlify.toml" --output="$pwd/netlify-redirects/netlify-redirects.html"
+tools/redirects-generator.rb --input="$pwd/netlify.toml" --output="$pwd/netlify-redirects/netlify-redirects.html"
 # start a webserver for this
 nohup npx http-server "$pwd/netlify-redirects" -a 127.0.0.1 >/tmp/http-server.log 2>&1 &
 # run the link checker
