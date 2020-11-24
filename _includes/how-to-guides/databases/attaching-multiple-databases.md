@@ -12,7 +12,7 @@ Adding a database to an existing group ([scaling up](/{{page.collection}}/how-to
 
 ## Adding a database group to an app
 
-To add a database group to an application, you need to first deploy your application using Cloud 66 (here's a guide to get you started).
+To add a database group to an application, you need to first deploy your application using Cloud 66 (here's [a guide to get you started](/{{page.collection}}/quickstarts/getting-started.html)).
 
 To add a new database group to an existing application using the Dashboard:
 

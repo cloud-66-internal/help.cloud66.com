@@ -10,4 +10,4 @@ tags: ['network']
 permalink: /:collection/:path:output_ext
 ---
 
-{% include tutorials/network-configuration.md %}
+{% include references/network-configuration.md product = page.collection %}

@@ -53,9 +53,11 @@ During such times, you can set your application into <i>maintenance mode</i>, wh
 
 You can still safely redeploy your application while maintenance mode is enabled - the maintenance page will be served until you turn off maintenance mode on your application.
 
-To supply your own maintenance page, simply place your file in the following path of your repository:
+You can find it in *Application Overview* --> *Network settings* --> *Redirects* tab 
 
-You can find it in *Application Overview* --> *Network settings* --> *Redirects* tab
+### Use a custom maintenance page
+
+To supply your own maintenance page, simply place your file in the following path of your repository:
 
 ```shell
 /.cloud66/maintenance.html
