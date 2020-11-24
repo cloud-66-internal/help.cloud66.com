@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "/legacy_docker/sdfsdfsdfsdf/tutorials/configure-dns.html"
-  to = "/maestro/how-to-guides/deploymsdfsfdsdfsdfent/configure-dns.html"
+  from = "/legacy_docker/tutorials/configure-dns.html"
+  to = "/maestro/how-to-guides/deployment/configure-dns.html"
 
 [[redirects]]
   from = "/legacy_docker/how-to-guides/add-ins/docker-service-task.html"
