@@ -15,11 +15,6 @@ To **add** a tag to a server:
 
 ![Tagging a server](/assets/shared/tagging-server.png "How to tag a server")
 
-### Beta only
-
-<div class="notice notice-warning"><p>
-The tag propagation feature below is currently only available to users in our Beta Programme. If you'd like to join the programme please <a href="/{{page.collection}}/resources/cloud-66-beta-program.html">follow our quick guide</a> to add yourself to the programme.</p></div>
-
 ## Propagation of tags to cloud providers
 
 Some cloud providers (see table below) support the propagation of your Cloud 66 tags into their own tagging systems. This allows you to more easily identify and link components across different platforms. At the moment the only components that support this feature are **cloud servers** and **load balancers.** The level of support also differs depending on cloud provider. 

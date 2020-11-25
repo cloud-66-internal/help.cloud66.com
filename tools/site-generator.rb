@@ -24,7 +24,7 @@ def configure
 
 	# parse args
 	args = []
-	::ARGV.each { |arg| arg.strip.gsub(/^-{0,}/, '').split('=').each { |part| args << part } }
+	::ARGV.each { |arg| arg.strip.gsub(/^-*/, '').split('=').each { |part| args << part } }
 	
 	# handle verbose
 	args.delete_if {|arg| if %w[v verbose].include?(arg) ; $verbose = true ; next true ; end ; false }

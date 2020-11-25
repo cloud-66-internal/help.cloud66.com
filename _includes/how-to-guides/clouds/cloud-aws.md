@@ -98,10 +98,6 @@ Web console
 
 ## Using IAM instance profiles with your servers
 
-#### Beta only
-<div class="notice"><p>
-This feature is currently only available to users in our Beta Programme. If you'd like to join the programme please <a href="/{{page.collection}}/resources/cloud-66-beta-program.html">follow our quick guide</a> to add yourself to the programme.</p></div>
-
 Instance profiles are a way to set specific roles on new servers that you spin up with AWS. You can read more about [creating your own instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) in the AWS docs. 
 
 {% if include.product != 'maestro' %}
