@@ -1616,7 +1616,6 @@ maestro:
     page: maestro/how-to-guides/deployment/tagging-components.html
     page_anchors:
     - adding-tags-to-a-server
-    - beta-only
     - keyvalue-tags
     - maestro-product-heading
     - overview
@@ -3211,7 +3210,6 @@ node:
     page: node/how-to-guides/deployment/tagging-components.html
     page_anchors:
     - adding-tags-to-a-server
-    - beta-only
     - keyvalue-tags
     - node-product-heading
     - overview
@@ -5027,7 +5025,6 @@ rails:
     page: rails/how-to-guides/deployment/tagging-components.html
     page_anchors:
     - adding-tags-to-a-server
-    - beta-only
     - keyvalue-tags
     - overview
     - propagation-of-tags-to-cloud-providers
