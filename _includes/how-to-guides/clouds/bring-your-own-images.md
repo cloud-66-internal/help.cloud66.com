@@ -1,7 +1,3 @@
-#### Beta only
-<div class="notice notice-warning"><p>
-This feature is currently only available to users in our Beta Programme. If you'd like to join the programme please <a href="/{{page.collection}}/resources/cloud-66-beta-program.html">follow our quick guide</a> to add yourself to the programme.</p></div>
-
 ## Overview
 
 Bring Your Own Images (BYOI) allows you to spin up new servers for your applications that are based on custom server images rather than on a generic Ubuntu server. Because these custom server images can have all the libraries and components required by your application pre-installed (such as language and framework), they can dramatically reduce the time for a new server to be provisioned. 
