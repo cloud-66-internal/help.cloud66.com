@@ -64,8 +64,12 @@ def perform(input, subdomain)
 		all_links[raw_link] = true
 		links[direction] << raw_link
 	end
-	links[:from] = links[:from].sort.uniq.map { |link,| "https://#{subdomain}#{link}" }
-	links[:to] = links[:to].sort.uniq.map { |link,| "https://#{subdomain}#{link}" }
+	links[:from] = links[:from].sort.uniq.map do |link|
+		link.start_with?('http') ? link : "https://#{subdomain}#{link}"
+	end
+	links[:to] = links[:to].sort.uniq.map do |link|
+		link.start_with?('http') ? link : "https://#{subdomain}#{link}"
+	end
 	links
 end
 
