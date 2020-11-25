@@ -1,7 +1,3 @@
-#### Beta only
-<div class="notice notice-warning"><p>
-This feature is currently only available to users in our Beta Programme. If you'd like to join the programme please <a href="/{{page.collection}}/resources/cloud-66-beta-program.html">follow our quick guide</a> to add yourself to the programme.</p></div>
-
 ## Overview
 
 If you (or one of your clients) needs to temporarily suspend an application, you can archive the application on Cloud 66. This will preserve the structure and configuration of the application, allowing you to reactivate it in future without having to rebuild it from scratch.  Archiving an application will turn off any cloud servers used by that application, but **will not** delete them. We will, however, **delete any backups**.
