@@ -92,7 +92,7 @@ puts "[Starting]"
 puts "Input --> \"#{input}\""
 puts "Output --> \"#{output}\""
 puts "Subdomain --> \"#{subdomain}\""
-puts "Verbose --> #{$verbose}"
+# puts "Verbose --> #{$verbose}"
 # find all relevant files
 links = perform(input, subdomain)
 # dump links as needed
