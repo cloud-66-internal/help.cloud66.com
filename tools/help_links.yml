@@ -1606,6 +1606,14 @@ maestro:
     - how-to-use-the-failover-application
     - maestro-product-heading
     - setup-the-failover-group
+  support_tickets:
+    page: maestro/how-to-guides/common-tools/support-tickets.html
+    page_anchors:
+    - application-availability-testing
+    - checking-the-status-of-a-ticket
+    - logging-a-new-support-issue
+    - maestro-product-heading
+    - overview
   symlink_folders:
     page: maestro/how-to-guides/build-and-config/symlink-folders.html
     page_anchors:
@@ -3185,6 +3193,14 @@ node:
     - how-to-use-the-failover-application
     - node-product-heading
     - setup-the-failover-group
+  support_tickets:
+    page: node/how-to-guides/common-tools/support-tickets.html
+    page_anchors:
+    - application-availability-testing
+    - checking-the-status-of-a-ticket
+    - logging-a-new-support-issue
+    - node-product-heading
+    - overview
   supported_frameworks:
     page: node/references/supported-frameworks.html
     page_anchors:
@@ -5000,6 +5016,14 @@ rails:
     - how-to-use-the-failover-application
     - rails-product-heading
     - setup-the-failover-group
+  support_tickets:
+    page: rails/how-to-guides/common-tools/support-tickets.html
+    page_anchors:
+    - application-availability-testing
+    - checking-the-status-of-a-ticket
+    - logging-a-new-support-issue
+    - overview
+    - rails-product-heading
   symlink_folders:
     page: rails/how-to-guides/deployment/symlink-folders.html
     page_anchors:
@@ -5919,6 +5943,13 @@ skycap:
     - syntax-basics
     - vault
     - vaultlist
+  support_tickets:
+    page: skycap/how-to-guides/common-tools/support-tickets.html
+    page_anchors:
+    - checking-the-status-of-a-ticket
+    - logging-a-new-support-issue
+    - overview
+    - skycap-product-heading
   team_accounts:
     page: skycap/account/team-accounts.html
     page_anchors:
