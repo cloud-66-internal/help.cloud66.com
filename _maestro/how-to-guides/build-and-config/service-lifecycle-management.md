@@ -38,7 +38,7 @@ The above can be summarized as the life-cycle management of your containers, whi
 
 ## Configuration
 
-There are a number of directives you can set in your service configuration (`service.yml`) to customize your container life-cycle management:
+There are several directives you can set in your service configuration (`service.yml`) to customize your container life-cycle management:
 
 - [health](#health)
 - [pre_start_signal](#pre-start)
@@ -68,13 +68,17 @@ There are a number of directives you can set in your service configuration (`ser
 
 <section id="V2-First" class="Tabs-content js_tab_content">
  
-<p>The <code>health</code> option allows you to specify one of two types of checks on your containers - <strong>readiness</strong> checks, and <strong>liveness</strong> checks. Both checks define a set of rules that are used to determine whether your application is currently healthy. For instance, you can check that the application is responding on an HTTP endpoint; or a post-initialization file is present.
+<p>The <code>health</code> option allows you to specify different types of checks on your containers - <strong>readiness</strong> checks, <strong>liveness</strong> checks, and <strong>startup</strong> checks. These checks define a set of rules that determine whether your application is currently healthy. For instance, you can check whether an application is responding on an HTTP endpoint, or if a post-initialization file is present.
 </p><p>
-<b>Readiness health checks</b> are used to determine if your newly started containers are ready to replace the old containers. Until the new containers are ready, the old containers will not be killed, and the new containers will not be served traffic. This effectively provides zero down-time deployments.
+<b>Readiness checks</b> test whether newly started containers are ready to replace old containers. Until the new containers are ready, the old containers will not be killed, and the new containers will not be served traffic. This effectively provides zero down-time deployments.
 </p><p>
-<b>Liveness health checks</b>, on the other hand, are used to continuously monitor your application once it's already running. If your application fails a liveness check, it will be restarted - this is useful for issues that can not be resolved otherwise.
+<b>Liveness checks</b> continuously monitor your application while it is running. If your application fails a liveness check, it will be restarted. This is useful for issues that cannot be resolved otherwise.
 </p><p>
-The rules below are available to both health checks - note that you aren't required to specify all options. Any options not used will use their default values.
+<b>Startup checks</b> detect when a container has started. An active startup check will disable liveness and readiness checks until it succeeds. This prevents other checks from interrupting application startup. This is particularly useful for slow starting containers, because otherwise liveness checks might cause them to be killed before they are up and running.
+</p><p>
+Please see <a target="_blank" href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/">the official Kubernetes documentation</a> regarding these checks.
+</p><p>
+The options below are available for all health checks. Note that you aren't required to configure all the options. Any options not configured will use their default values.
 </p>
 <ul>
 <li> <strong>type</strong> (<em>string, defaults to 'http'</em>): Accepted values are <strong>http</strong>, <strong>https</strong>, <strong>tcp</strong>, and <strong>exec</strong>.</li>
@@ -115,6 +119,9 @@ services:
                 http_headers:
                 - name: 'X-ID-Header'
                   value: 'john-smith'
+            startup:
+                type: exec
+                command: 'cat /tmp/app_started'                  
 </code></pre>
 
 You can also use the default health rules with <code>health: default</code>, or explicitly disable health checking by leaving the <code>health</code> option out or specifying <code>health: none</code>.
@@ -132,7 +139,7 @@ A healthy container would be expected to POST <code>{"ready":true}</code> as its
 </p><p>
 The rules below are available to health checks - note that you aren't required to specify all options. Any options not used will use their default values.
 </p>
-<p>
+
 <ul>
 <li><strong>type</strong> (<em>defaults to inbound</em>): Accepted values are <code>inbound</code> or <code>outbound</code>.</li>
 <li><strong>endpoint</strong> (<em>defaults to <code>/</code></em>): The endpoint tested for status.</li>
@@ -140,7 +147,7 @@ The rules below are available to health checks - note that you aren't required t
 <li><strong>timeout</strong> (<em>defaults to 30s</em>): Maximum time to wait for a container to start, in seconds.</li>
 <li><strong>accept</strong> (<em>defaults to 200 and 300-399</em>): HTTP response codes to accept.</li>
 </ul>
-</p>
+
 <pre class="language-yaml"><code>
 services:
     [service_name]:

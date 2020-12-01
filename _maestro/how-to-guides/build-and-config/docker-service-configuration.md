@@ -250,7 +250,7 @@ Below is a table of the available configurations for a given service with a brie
     </tr> 
     <tr>
      <td> <a href="/maestro/how-to-guides/build-and-config/service-lifecycle-management.html#health">health</a> </td>
-     <td> One of the values: <em>default</em>, <em>none</em> or a hash. </td>
+     <td> One of the values: <em>default</em>, <em>none</em> or a hash. Use this to configure <em>Readiness</em>, <em>Liveness</em>, and <em>Startup</em> probes</td>
     </tr>
     <tr> 
      <td> <a href="/maestro/how-to-guides/build-and-config/building-your-service.html#image">image</a> </td> 
