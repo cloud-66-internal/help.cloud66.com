@@ -32,13 +32,19 @@ apt install -y jq
 
 <pre class="language-bash line-numbers u-whiteSpaceNoWrap"><code>$ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/deployment | jq</code></pre>
 
-<pre class="language-bash u-whiteSpaceNoWrap"><code>
-{
+<pre class="language-bash line-numbers u-whiteSpaceNoWrap"><code>{
   "response": {
     "finished_at": "2020-07-07T13:40:51Z",
     "outcome": {
       "code": 1,
       "meaning": "success"
+    },
+    "source": {
+      "app": {
+        "repo": "git://github.com/cloud66-samples/rails-mysql",
+        "branch": "feature/redis",
+        "hash": "a99f026df617ffaf9688d6c01fb1c4497189afd8"
+      }
     },
     "started_at": "2020-07-07T13:37:35Z",
     "triggered_by": "your-email@yourdomain.com",
@@ -54,8 +60,7 @@ apt install -y jq
 
 <pre class="language-bash line-numbers u-whiteSpaceNoWrap"><code>$ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/server/os | jq</code></pre>
 
-<pre class="language-bash u-whiteSpaceNoWrap"><code>
-{
+<pre class="language-bash u-whiteSpaceNoWrap"><code>{
   "response": {
     "distro": "ubuntu",
     "version": "18.04"
@@ -68,6 +73,36 @@ apt install -y jq
 <pre class="language-bash line-numbers u-whiteSpaceNoWrap"><code>$ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/deployment/triggered_by | jq -r '.response'</code></pre>
 
 <pre class="language-bash u-whiteSpaceNoWrap"><code>your-email@yourdomain.com</code></pre>
+
+### 4. Find out which version of the code is deployed
+
+<pre class="language-bash line-numbers u-whiteSpaceNoWrap"><code>$ curl -s -H "Accept: application/json" https://$CLOUD66_ACCOUNT_API_KEY:X@app.cloud66.com/api/tooling/metadata/$CLOUD66_APPLICATION_API_KEY/deployment/source | jq -r '.response'</code></pre>
+
+
+#### Sample for Rails applications
+
+<pre class="language-bash u-whiteSpaceNoWrap line-numbers"><code>{
+  "app": {
+    "repo": "git://github.com/cloud66-samples/rails-mysql",
+    "branch": "feature/samples",
+    "hash": "a99f026df617************1fb1c4497189afd8"
+  }
+}
+</code></pre>
+
+#### Sample for Maestro applications
+
+<pre class="language-bash u-whiteSpaceNoWrap line-numbers"><code>{
+  "webapp1": {
+    "image": "my/webapp:123"
+  },
+  "webapp2": {
+    "repo": "git://github.com/cloud66-samples/rails-mysql",
+    "branch": "feature/samples",
+    "hash": "a99f026df617************1fb1c4497189afd8"
+  }
+}
+</code></pre>
 
 ## Using metadata in a workflow
 
