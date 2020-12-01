@@ -74,7 +74,7 @@ There are several directives you can set in your service configuration (`service
 </p><p>
 <b>Liveness checks</b> continuously monitor your application while it is running. If your application fails a liveness check, it will be restarted. This is useful for issues that cannot be resolved otherwise.
 </p><p>
-<b>Startup checks</b> detect when a container has started. An active startup check will disable liveness and readiness checks until it succeeds. This prevents other checks from interrupting application startup. This is particularly useful for slow starting containers, because otherwise liveness checks might cause them to be killed before they are up and running.
+<b>Startup checks</b> detect when a container has started. An active startup check will disable liveness and readiness checks until it succeeds. This prevents other checks from interrupting application startup. This is particularly useful for slow starting containers, because otherwise liveness checks might cause them to be killed before they are up and running. <i>Requires Kubernetes v1.16 or greater.</i>
 </p><p>
 Please see <a target="_blank" href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/">the official Kubernetes documentation</a> regarding these checks.
 </p><p>
