@@ -1218,6 +1218,7 @@ maestro:
     - 1-deployment-information
     - 2-server-os-information
     - 3-find-out-who-deployed-last-or-currently
+    - 4-find-out-which-version-of-the-code-is-deployed
     - examples-of-available-metadata
     - how-to-query-metadata-from-a-server
     - maestro-product-heading
@@ -2915,6 +2916,7 @@ node:
     - 1-deployment-information
     - 2-server-os-information
     - 3-find-out-who-deployed-last-or-currently
+    - 4-find-out-which-version-of-the-code-is-deployed
     - examples-of-available-metadata
     - how-to-query-metadata-from-a-server
     - node-product-heading
@@ -4690,6 +4692,7 @@ rails:
     - 1-deployment-information
     - 2-server-os-information
     - 3-find-out-who-deployed-last-or-currently
+    - 4-find-out-which-version-of-the-code-is-deployed
     - examples-of-available-metadata
     - how-to-query-metadata-from-a-server
     - overview
