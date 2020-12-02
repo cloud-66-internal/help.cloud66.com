@@ -76,12 +76,16 @@ end
 
 ## Customizing shutdown and reload signals
 
-The default shutdown sequence for Unicorn servers on Cloud 66 is:
+The default shutdown command for Unicorn servers on Cloud 66 is `USR2` and the default shutdown sequence for applications using **systemd** (our default process manager) is:
+
 ```terminal
 :quit,75,:term,15,:kill
 ```
+<div class="notice"><p>If your application still uses Bluepill (our legacy process manager), please refer to the <a href="/rails/how-to-guides/deployment/bluepill-legacy.html#process-signals">separate guide</a> on the subject.</p></div>
 
-If you need your web server to shut down in a particular sequence, or with longer or shorter delays, you can define a custom restart sequence in the [procfile_metadata](/rails/how-to-guides/deployment/building-a-manifest-file.html#processes) section of your [Manifest file](/rails/quickstarts/getting-started-with-manifest.html).
+If you need your web server to shut down using a different command, or in a particular sequence, or with longer or shorter delays, you can define a custom restart sequence in the [procfile_metadata](/rails/how-to-guides/deployment/building-a-manifest-file.html#processes) section of your [Manifest file](/rails/quickstarts/getting-started-with-manifest.html).
+
+For non-web process signals, please consult our [systemd guide](/rails/how-to-guides/deployment/systemd.html#process-signals).
 
 ## Controlling Unicorn via your terminal
 

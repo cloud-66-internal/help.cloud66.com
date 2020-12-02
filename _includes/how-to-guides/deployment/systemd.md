@@ -109,6 +109,31 @@ $ sudo systemctl disable <application>.service
 
 An example of this in practice would be `systemctl disable nginx.service`
 
+## Process signals
+
+The default process signals for systemd processes are:
+
+Generic web restart / reload signal:
+
+- `restart_signal`: `:hup`
+
+Non-Web Processes:
+
+- For **sidekiq** processes `stop_sequence`: `:term,90,:kill`
+- For **resque** processes `stop_sequence`: `:quit,75,:term,15,:kill`
+- For generic processes: `stop_sequence`: `:term,90,:kill`
+- Restart `restart_on_deploy`: `true`
+
+For the default signals for specific web servers, click the links below:
+
+For the default signals for web servers, click the links below:
+
+- [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html#customizing-shutdown-and-reload-signals)
+- [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html#customizing-shutdown-and-reload-signals)
+- [Thin](/rails/how-to-guides/rack-servers/thin-rack-server.html#customizing-shutdown-and-reload-signals)
+
+If you'd like to specify custom process signals you can do this in [your Manifest file](/rails/how-to-guides/deployment/building-a-manifest-file.html#processes).
+
 ## Migrating from Bluepill to systemd
 
 If your servers are currently using Bluepill and you would like to transition to using systemd then please follow this checklist:
