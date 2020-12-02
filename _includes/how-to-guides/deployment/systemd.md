@@ -126,8 +126,6 @@ Non-Web Processes:
 
 For the default signals for specific web servers, click the links below:
 
-For the default signals for web servers, click the links below:
-
 - [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html#customizing-shutdown-and-reload-signals)
 - [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html#customizing-shutdown-and-reload-signals)
 - [Thin](/rails/how-to-guides/rack-servers/thin-rack-server.html#customizing-shutdown-and-reload-signals)
