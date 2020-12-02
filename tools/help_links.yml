@@ -3654,6 +3654,7 @@ rails:
     - note
     - overview
     - process-naming-convention
+    - process-signals
     - rails-product-heading
     - start
     - status
@@ -5039,6 +5040,7 @@ rails:
     - check-if-a-service-is-running
     - migrating-from-bluepill-to-systemd
     - overview
+    - process-signals
     - process-status
     - rails-product-heading
     - reload-a-service

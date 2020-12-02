@@ -86,8 +86,6 @@ $ sudo bluepill load /etc/bluepill/autoload/<process_name>.pill
 ```
 
 
-
-
 ## Unload a process
 
 To quit a process from bluepill:
@@ -96,10 +94,39 @@ To quit a process from bluepill:
 $ sudo bluepill <process_name> quit
 ```
 
-
-
-
 ### Note
 <div class="notice">
   <p>Also remember that we configure the pill files to log to <code>&lt;STACK_PATH&gt;/log</code> folder.</p>
 </div>
+
+## Process signals 
+
+
+The default process signals for Bluepill processes are:
+
+Generic web restart / reload signal: 
+
+* `restart_signal`: `:usr2`
+
+Stop sequences:
+
+<table class='table table-bordered table-striped'>
+<tr>
+<th>Process type</th>
+<th>Signal</th>
+</tr>
+<tr>
+<td>sidekiq processes</td>
+<td><code>stop_sequence</code>: <code>:term,31,:kill</code></td>
+</tr>
+<tr>
+<td>All other processes (including web servers)</td>
+<td><code>stop_sequence</code>: <code>:quit,30,:term,11,:kill</code></td>
+</tr>
+<tr>
+<td>Restart</td>
+<td><code>restart_on_deploy</code>: <code>true</code></td>
+</tr>
+</table>
+
+If you'd like to specify custom process signals you can do this in [your Manifest file](/rails/how-to-guides/deployment/building-a-manifest-file.html#processes).
