@@ -834,8 +834,6 @@ All processes restart during each redeployment of the application. If you want t
 
 The default values for **process signals** depend on which web server and/or process manager you are using. 
 
-For web server processes: 
-
 For the default signals for web servers, click the links below:
 
 - [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html#customizing-shutdown-and-reload-signals)
