@@ -832,15 +832,20 @@ As for `web` or `custom_web` processes, you can specify a `restart_signal` which
 
 All processes restart during each redeployment of the application. If you want to avoid this, you can set `restart_on_deploy` to `false`.
 
-Default values for each process type are:
+The default values for **process signals** depend on which web server and/or process manager you are using. 
 
-- Web/Custom Web Processes:
-  - Stop Signal `stop_sequence`: `quit`
-  - Restart Signal `restart_signal`: `usr2`
-- Non-Web Processes:
-  - Stop Signal `stop_sequence`: `term,35,kill` (if sidekiq detected)  
-  - Stop Signal `stop_sequence`: `quit,30,term,11,kill` (if sidekiq NOT detected)  
-  - Restart `restart_on_deploy`: `true`
+For web server processes: 
+
+For the default signals for web servers, click the links below:
+
+- [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html#customizing-shutdown-and-reload-signals)
+- [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html#customizing-shutdown-and-reload-signals)
+- [Thin](/rails/how-to-guides/rack-servers/thin-rack-server.html#customizing-shutdown-and-reload-signals)
+
+For non-web processes:
+
+- [systemd](/rails/how-to-guides/deployment/systemd.html) (our default process manager)
+- [Bluepill](/rails/how-to-guides/deployment/bluepill-legacy.html) (legacy pre-June 2020)
 {% endif %}
 
 ## Specify additional LiveLog files
