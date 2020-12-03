@@ -3650,8 +3650,8 @@ rails:
     page_anchors:
     - build-your-own-pill-file
     - commands
+    - generic-web-reload-signal
     - load-a-process
-    - note
     - overview
     - process-naming-convention
     - process-signals
@@ -3659,6 +3659,7 @@ rails:
     - start
     - status
     - stop
+    - stop-sequences
     - unload-a-process
   bring_your_own_images:
     page: rails/how-to-guides/clouds/bring-your-own-images.html
@@ -5039,6 +5040,7 @@ rails:
     page_anchors:
     - check-if-a-service-is-running
     - migrating-from-bluepill-to-systemd
+    - non-web-processes
     - overview
     - process-signals
     - process-status
@@ -5047,9 +5049,11 @@ rails:
     - restart-a-service
     - set-a-service-to-not-start-at-bootup
     - set-a-service-to-start-at-bootup
+    - specifying-custom-signals
     - start-a-service
     - stop-a-service
     - using-systemd
+    - web-reload-signals
   tagging_components:
     page: rails/how-to-guides/deployment/tagging-components.html
     page_anchors:

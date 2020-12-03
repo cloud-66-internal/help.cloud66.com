@@ -61,7 +61,7 @@ If you'd prefer to use Puma without having a config file, you can simply use thi
 The default shutdown command for Puma servers on Cloud 66 is `USR2` and the default shutdown sequence for applications using **systemd** (our default process manager) is:
 
 ```terminal
-:term,90,:kill
+term, 90, kill
 ```
 <div class="notice"><p>If your application still uses Bluepill (our legacy process manager), please refer to the <a href="/rails/how-to-guides/deployment/bluepill-legacy.html#process-signals">separate guide</a> on the subject.</p></div>
 
