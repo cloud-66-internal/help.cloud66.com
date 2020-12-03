@@ -113,22 +113,42 @@ An example of this in practice would be `systemctl disable nginx.service`
 
 The default process signals for systemd processes are:
 
-Generic web restart / reload signal:
+### Web reload signals
 
-- `restart_signal`: `:hup`
-
-Non-Web Processes:
-
-- For **sidekiq** processes `stop_sequence`: `:term,90,:kill`
-- For **resque** processes `stop_sequence`: `:quit,75,:term,15,:kill`
-- For generic processes: `stop_sequence`: `:term,90,:kill`
-- Restart `restart_on_deploy`: `true`
+The generic web process restart (reload) signal is `restart_signal`: `hup`
 
 For the default signals for specific web servers, click the links below:
 
 - [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html#customizing-shutdown-and-reload-signals)
 - [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html#customizing-shutdown-and-reload-signals)
 - [Thin](/rails/how-to-guides/rack-servers/thin-rack-server.html#customizing-shutdown-and-reload-signals)
+
+### Non-Web processes
+
+<table class='table table-bordered table-striped'>
+<tr>
+<th width="25%">Process type</th>
+<th>Signal</th>
+</tr>
+<tr>
+<td>sidekiq processes</td>
+<td><code>stop_sequence</code>: <code>term, 90, kill</code> </td>
+</tr>
+<tr>
+<td>resque processes</td>
+<td><code>stop_sequence</code>: <code>quit, 75, term, 15, kill</code></td>
+</tr>
+<tr>
+<td>generic processes</td>
+<td><code>stop_sequence</code>: <code>term, 90, kill</code></td>
+</tr>
+<tr>
+<td>Restart</td>
+<td><code>restart_on_deploy</code>: <code>true</code></td>
+</tr>
+</table>
+
+### Specifying custom signals
 
 If you'd like to specify custom process signals you can do this in [your Manifest file](/rails/how-to-guides/deployment/building-a-manifest-file.html#processes).
 

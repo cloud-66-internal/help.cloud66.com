@@ -94,21 +94,21 @@ To quit a process from bluepill:
 $ sudo bluepill <process_name> quit
 ```
 
-### Note
+#### Note
 <div class="notice">
   <p>Also remember that we configure the pill files to log to <code>&lt;STACK_PATH&gt;/log</code> folder.</p>
 </div>
 
 ## Process signals 
 
-
 The default process signals for Bluepill processes are:
 
-Generic web restart / reload signal: 
 
-* `restart_signal`: `:usr2`
+### Generic web reload signal 
 
-Stop sequences:
+* `restart_signal`: `usr2`
+
+### Stop sequences
 
 <table class='table table-bordered table-striped'>
 <tr>
@@ -117,11 +117,11 @@ Stop sequences:
 </tr>
 <tr>
 <td>sidekiq processes</td>
-<td><code>stop_sequence</code>: <code>:term,31,:kill</code></td>
+<td><code>stop_sequence</code>: <code>term, 31, kill</code></td>
 </tr>
 <tr>
 <td>All other processes (including web servers)</td>
-<td><code>stop_sequence</code>: <code>:quit,30,:term,11,:kill</code></td>
+<td><code>stop_sequence</code>: <code>quit, 30, term, 11, kill</code></td>
 </tr>
 <tr>
 <td>Restart</td>
