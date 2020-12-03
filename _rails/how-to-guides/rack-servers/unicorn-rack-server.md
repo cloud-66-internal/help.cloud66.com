@@ -79,7 +79,7 @@ end
 The default shutdown command for Unicorn servers on Cloud 66 is `USR2` and the default shutdown sequence for applications using **systemd** (our default process manager) is:
 
 ```terminal
-:quit,75,:term,15,:kill
+quit, 75, term, 15, kill
 ```
 <div class="notice"><p>If your application still uses Bluepill (our legacy process manager), please refer to the <a href="/rails/how-to-guides/deployment/bluepill-legacy.html#process-signals">separate guide</a> on the subject.</p></div>
 
