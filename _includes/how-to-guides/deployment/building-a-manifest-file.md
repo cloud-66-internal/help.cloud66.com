@@ -421,6 +421,7 @@ A Rails application type in the manifest file gives you fine control over things
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application.  Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git submodules from being pulled during a build.
 - **keep_releases** *(Optional, Defaults to 5)* Specify the number of releases to keep on your server(s).
+- **memory_allocator** (*Optional*): The memory allocation library that will be used for your Ruby installation. Options are `malloc` or `jemalloc`. Defaults to `malloc`.
 - **activeprotect**:
     - **whitelist:** Specify a comma-separated whitelist of IPs that should be ignored by your ActiveProtect configuration.
     - **http_ban_rate:** Set the threshold of *requests per minute* from a single IP address. The default is 2000.
@@ -440,6 +441,7 @@ production:
       do_initial_db_schema_load: false
       reserved_server_memory: 0 #default value
       passenger_process_memory: 200 #default value
+      memory_allocator: jemalloc # malloc is default
       locked_passenger_version: 4.0.59
       activeprotect:
         whitelist: 123.123.123.123,234.234.234.234
@@ -471,6 +473,7 @@ The manifest file gives you fine control over things like the Ruby version or wh
 - **nameservers** (_Optional, defaults [ 8.8.8.8, 8.8.4.4 ]): Set DNS servers for your application. Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers
 - **include_submodules** (Optional, default is true): Set this to false to exclude any Git  submodules  from being pulled during a build.
 - **keep_releases** *(Optional, Defaults to 5)* Specify the number of releases to keep on your server(s).
+- **memory_allocator** (*Optional*): The memory allocation library that will be used for your Ruby installation. Options are `malloc` or `jemalloc`. Defaults to `malloc`.
 - **activeprotect**:
     - **whitelist:** Specify a comma-separated whitelist of IPs that should be ignored by your ActiveProtect configuration.
     - **http_ban_rate:** Set the threshold of *requests per minute* from a single IP address. The default is 2000.
@@ -488,6 +491,7 @@ production:
       do_initial_db_schema_load: false
       reserved_server_memory: 0 #default value
       passenger_process_memory: 200 #default value
+      memory_allocator: jemalloc # malloc is default
       locked_passenger_version: 4.0.59
       activeprotect:
         whitelist: 123.123.123.123,234.234.234.234
