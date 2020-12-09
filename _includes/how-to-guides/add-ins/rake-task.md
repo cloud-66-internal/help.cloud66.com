@@ -10,7 +10,8 @@ To add a new Rake job:
 2. Click the Install Now button on the Rake Jobs add-in block. 
 3. Choose a server and give your new job a name
 4. Specify the Rake command you want to run
-5. Set a schedule for the job, or set it to run only on demand. 
-6. Clicks the green Create Job button
+5. Choose which (Linux) user should run the command (the options are `cloud66-user` or `nginx`)
+6. Set a schedule for the job, or set it to run only on demand. (You can use [cron syntax](/{{page.collection}}/references/understanding-cron-syntax.html) for more control over your scheduling)
+7. Clicks the green Create Job button
 
 You will now see your new job listed in your Application Overview.  You can edit it, or run it on demand by clicking on the small downward arrow. Results of running tasks can also be seen here.
