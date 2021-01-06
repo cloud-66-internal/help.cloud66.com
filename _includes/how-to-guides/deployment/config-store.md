@@ -31,10 +31,6 @@ Data edited in ConfigStore via the [Dashboard](https://app.cloud66.com/dashboard
 * **Value** &mdash; A text based `Value`.
 * **Metadata** &mdash; A comma separated list of `key=value` pairs. For example: `key1=value1, key2=value2`
 
-<!--
-If you need to store binary data you should <a href="#download-configstore-cli">use the <abbr title="Command Line Interface">CLI</abbr></a>.
--->
-
 ## Levels of ConfigStore
 
 There are two levels of ConfigStore:
@@ -127,42 +123,3 @@ envs:
 ```
 
 This will define `XYZ` as an environment variable for the given service, which pulls `ABC` from the Application which in turn could come from the ConfigStore.
-
-<!--
-
-## CLI &amp; Advanced Features  
-
-Access to advanced features is provided by the ConfigStore Command Line Interface. For example storing binary data in ConfigStore records. The CLI provides the following advanced features:
-
-<ul>
-    <li>
-        <p>
-            <strong>Binary Data</strong> &mdash; Support for storage of binary data.
-        </p>
-    </li>
-</ul>
-
-
-## Download ConfigStore CLI
-
-If you are using Mac or Linux Auto Install by pasting the curl command in the Terminal is the easiest way to Install ConfigStore CLI.
-
-
-### Auto Install
-
-```shell
-curl -ssl https://s3.amazonaws.com/
-```
-
-### ConfigStore Binaries
-<p>
-    <strong>Mac</strong> &mdash; <a href="#">Download ConfigStore CLI for Mac</a>
-</p>
-<p>
-    <strong>Linux</strong> &mdash; <a href="#">Download ConfigStore CLI for Linux</a>
-</p>
-<p>
-    <strong>Windows</strong> &mdash; <a href="#">Download ConfigStore CLI for Windows</a>
-</p>
-
--->
