@@ -331,7 +331,6 @@ maestro:
     - configstore-data-structure
     - configstore-metadata
     - configstore-vs-environment-variables
-    - download-configstore-cli
     - environment-variables
     - levels-of-configstore
     - maestro-product-heading
@@ -1165,6 +1164,7 @@ maestro:
     - fast-deployments
     - maestro-product-heading
     - overview
+    - serial-deployment-v1-only
   partner_integration:
     page: maestro/integrations/partner-integration.html
     page_anchors:
@@ -2206,7 +2206,6 @@ node:
     - configstore-data-structure
     - configstore-metadata
     - configstore-vs-environment-variables
-    - download-configstore-cli
     - environment-variables
     - levels-of-configstore
     - namespaces
@@ -3835,7 +3834,6 @@ rails:
     - configstore-data-structure
     - configstore-metadata
     - configstore-vs-environment-variables
-    - download-configstore-cli
     - environment-variables
     - levels-of-configstore
     - namespaces
@@ -5537,7 +5535,6 @@ skycap:
     - configstore-data-structure
     - configstore-metadata
     - configstore-vs-environment-variables
-    - download-configstore-cli
     - environment-variables
     - levels-of-configstore
     - namespaces
