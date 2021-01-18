@@ -13,7 +13,7 @@ If you're looking for the Manifest settings for [data, caching & storage compone
 
 {% if include.product == 'maestro' %}
 
-### Docker
+## Docker
 
 - **version**: Specify the version of Docker you want to install.
 - **operating_system** (_Optional_): `ubuntu1604` or `ubuntu1804`
@@ -27,7 +27,7 @@ If you're looking for the Manifest settings for [data, caching & storage compone
   Note that if you specify empty array i.e **[ ]**, it won't add any nameserver to your servers
 - **iam_instance_profile_name** (*optional, AWS only*): The name of the [IAM instance profile](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that should be used when provisioning this server. ([More info here](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers))
 
-#### Examples
+### Example YAML for Docker
 
 ```yml
 production:
@@ -356,7 +356,7 @@ production:
 
 * * *
 
-### Rack
+## Rack
 
 The manifest file gives you fine control over things like the Ruby version or which server the application is deployed on.
 
@@ -512,7 +512,7 @@ production:
       iam_instance_profile_name: rack-perms
 ```
 
-### Rails (Rack) deployment health checks
+## Rails (Rack) deployment health checks
 
 These checks define tests to confirm whether your application has been successfully deployed, and to mark a deployment as "failed" if any do not pass. They have the following options:
 
