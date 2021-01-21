@@ -14,7 +14,7 @@ If you're looking for the Manifest settings for [webservers & frameworks](/{{pag
 
 [Elasticsearch](https://www.elastic.co/elastic-stack) is a search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.
 
-The following settings are available via the Manifest file (\* required fields):
+The following settings are available via the Manifest file:
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -27,10 +27,10 @@ The following settings are available via the Manifest file (\* required fields):
 </thead>
 <tbody>
   <tr>
-    <td><code>version</code> <strong>*</strong></td>
-    <td><div class="tooltip">Deploy with upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
-    <td>The version of ElasticSearch you want to install</td>
-    <td>All</td>
+    <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
+    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
+    <td>AWS</td>
   </tr>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html"><code>groups</code></a></td>
@@ -57,29 +57,30 @@ The following settings are available via the Manifest file (\* required fields):
     <td>AWS, GCE</td>
   </tr>
   <tr>
-    <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
-    <td>AWS</td>
+    <td><code>version</code></td>
+    <td><div class="tooltip">Deploy with upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td>The version of ElasticSearch you want to install</td>
+    <td>All</td>
   </tr>
+ 
+ 
 </tbody>
 </table>
 
 ### Example YAML for ElasticSearch
 
 ```yml
-production:
-  elasticsearch:
-    groups:
-      my_main:
-        configuration:
-          iam_instance_profile_name: elastic-perms
-          version: 0.90.7
-          root_disk_size: 100
-          root_disk_type: ssd
-      my_spare:
-        configuration:
-          version: 0.90.7
+elasticsearch:
+  groups:
+    my_main:
+      configuration:
+        iam_instance_profile_name: elastic-perms
+        version: 0.90.7
+        root_disk_size: 1000
+        root_disk_type: ssd
+    my_spare:
+      configuration:
+        root_disk_size: 100
 
 ```
 
@@ -98,7 +99,7 @@ The version of GlusterFS currently offered via the Cloud 66 Add-in is not suppor
 - You cannot change <code>replica_count</code> after GlusterFS added to your application.
 - You cannot use <code>glusterfs group</code> or any of its servers in <code>mount_targets</code>.
 
-The following settings are available via the Manifest file (\* required fields):
+The following settings are available via the Manifest file:
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -111,39 +112,21 @@ The following settings are available via the Manifest file (\* required fields):
 </thead>
 <tbody>
   <tr>
-    <td><code>version</code> *</td>
+    <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
     <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Specify the version of GlusterFS you want to install.</td>
-    <td>All</td>
+    <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
+    <td>AWS</td>
   </tr>
   <tr>
-    <td><code>replica_count</code> *</td>
-    <td></td>
-    <td>The number of nodes in the GlusterFS cluster to which data will be replicated (e.g. <code>2</code> means your data exist on two nodes). Default value is <code>1</code>.</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>mount_targets</code> *</td>
-    <td></td>
+    <td><code>mount_targets</code></td>
+    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>List of servers and server groups on which GlusterFS should be mounted. You can specify the name of the server or server group (e.g. <code>rails</code> or <code>mysql</code>). You can also use app and db keywords: <code>app</code> is your main app server group (e.g. rails) and <code>db</code> is your database server groups (e.g. <code>mysql</code> or <code>redis</code>). The default value is <code>app</code>.</td>
     <td>All</td>
   </tr>
   <tr>
-    <td><code>volumes</code> *</td>
-    <td></td>
-    <td>List of volumes you want in your GlusterFS cluster. By default we create a volume called <code>cloud66-vol</code> and mount it to <code>/mnt/data-store</code>.</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>name</code> *</td>
-    <td></td>
-    <td>Specify the name of volume. (Applies to <code>volumes</code> only)</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>mount</code> *</td>
-    <td>All</td>
-    <td>Specify the mount point of the volume on clients. (Applies to <code>volumes</code> only)</td>
+    <td><code>replica_count</code></td>
+    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td>The number of nodes in the GlusterFS cluster to which data will be replicated (e.g. <code>2</code> means your data exist on two nodes). Default value is <code>1</code>.</td>
     <td>All</td>
   </tr>
   <tr>
@@ -152,18 +135,36 @@ The following settings are available via the Manifest file (\* required fields):
     <td>Default size of root disk (in GB) for servers used by GlusterFS. Default value is <code>50</code>.</td>
     <td>AWS, Azure, GCE</td>
   </tr>
-  <tr>
+    <tr>
     <td><code>root_disk_type</code></td>
     <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Disk type for servers used by GlusterFS, accepted values being <code>ssd</code> and <code>magnetic</code>. Default value is <code>ssd</code>.</td>
     <td>AWS, GCE</td>
   </tr>
   <tr>
-    <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
+    <td><code>version</code></td>
+    <td><div class="tooltip">Deploy with upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td>Specify the version of GlusterFS you want to install.</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>volumes</code> </td>
     <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
-    <td>AWS</td>
+    <td>List of volumes you want in your GlusterFS cluster. By default we create a volume called <code>cloud66-vol</code> and mount it to <code>/mnt/data-store</code>.</td>
+    <td>All</td>
+  </tr>
+    <tr>
+    <td><code>volumes / mount</code> </td>
+    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td>Specify the mount point of the volume on clients.</td>
+    <td>All</td>
   </tr>  
+  <tr>
+    <td><code>volumes / name</code> </td>
+    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td>Specify the name of volume.</td>
+    <td>All</td>
+  </tr>
 </tbody>
 </table>
 
@@ -171,34 +172,31 @@ The following settings are available via the Manifest file (\* required fields):
 ### Example YAML for GlusterFS
 
 ```yml
-production:
-  glusterfs:
-    configuration:
-      version: 3.7
-      replica_count: 2
-      mount_targets: ['app','redis']
-      volumes:
-      - volume:
-          name: images-data
-          mount: "/mnt/images"
-          access_control:
-            read: ['web', 'api']
-            write: ['web']
-      - volume:
-          name: videos
-          mount: /mnt-data/videos
-          access_control:
-            read: ['web']
-            write: ['web']
+glusterfs:
+  configuration:
+    version: 3.7
+    replica_count: 2
+    mount_targets: ['app','redis']
+    volumes:
+      -  volume:
+         name: images-data
+         mount: "/mnt/images"
+         access_control:
+           read: ['web', 'api']
+           write: ['web']
+      -  volume:
+         name: videos
+         mount: /mnt-data/videos
+         access_control:
+           read: ['web']
+           write: ['web']
 ```
-
-
 
 ## Memcached
 
 [Memcached](https://memcached.org/) is a general-purpose distributed memory-caching system. It is often used to speed up dynamic database-driven websites by caching data and objects in RAM to reduce the number of times an external data source must be read.
 
-The following settings are available via the Manifest file (\* required fields):
+The following settings are available via the Manifest file :
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -211,21 +209,21 @@ The following settings are available via the Manifest file (\* required fields):
 </thead>
 <tbody>
   <tr>
-    <td><code>memory</code> <strong>*</strong></td>
+    <td><code>listen_ip</code> </td>
+    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Specify which IP address to listen on (default value is <code>0.0.0.0</code>)</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>memory</code> </td>
     <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Specify maximum memory (in MB) that can be used (default is <code>64</code>)</td>
     <td>All</td>
   </tr>
   <tr>
-    <td><code>port</code> <strong>*</strong></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><code>port</code> </td>
+    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>Specify connection port (default is <code>11211</code>)</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>listen_ip</code> <strong>*</strong></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Specify which IP address to listen on (default value is <code>0.0.0.0</code>)</td>
     <td>All</td>
   </tr>
 </tbody>
@@ -234,12 +232,11 @@ The following settings are available via the Manifest file (\* required fields):
 ### Example YAML for Memcached
 
 ```yml
-production:
-  memcached:
-    configuration:
-      memory: 1024
-      port: 11211
-      listen_ip: 127.0.0.1
+memcached:
+  configuration:
+    memory: 1024
+    port: 11211
+    listen_ip: 127.0.0.1
 ```
 
 
@@ -247,7 +244,7 @@ production:
 
 [MongoDB](https://www.mongodb.com/) is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
 
-The following settings are available via the Manifest file (\* required fields):
+The following settings are available via the Manifest file :
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -260,14 +257,14 @@ The following settings are available via the Manifest file (\* required fields):
 </thead>
 <tbody>
   <tr>
-    <td><code>version</code> <strong>*</strong></td>
+    <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
     <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Specify the version of MongoDB you want to install.</td>
-    <td>All</td>
+    <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
+    <td>AWS</td>
   </tr>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html"><code>groups</code></a></td>
-    <td></td>
+    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
     <td>All</td>
   </tr>
@@ -291,15 +288,15 @@ The following settings are available via the Manifest file (\* required fields):
   </tr>
   <tr>
     <td><code>tamper_with_yml</code></td>
-    <td></td>
-    <td>Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is <code>yes</code>. </td>
+    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is <code>yes</code>.</td>
     <td>All</td>
   </tr>
   <tr>
-    <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
-    <td>AWS</td>
+    <td><code>version</code> </td>
+    <td><div class="tooltip">Deploy with upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td>Specify the version of MongoDB you want to install.</td>
+    <td>All</td>
   </tr>
 </tbody>
 </table>
@@ -307,24 +304,23 @@ The following settings are available via the Manifest file (\* required fields):
 ### Example YAML for MongoDB
 
 ```yml
-production:
-  mongodb:
-    groups:
-      my_mongo:
-        configuration:
-          version: 2.4.8
-          root_disk_size: 100
-          root_disk_type: ssd
-      spare_mongo:
-        configuration:
-          version: 2.4.8
+mongodb:
+  groups:
+    my_mongo:
+      configuration:
+        version: 2.4.8
+        root_disk_size: 100
+        root_disk_type: ssd
+    spare_mongo:
+      configuration:
+        version: 2.4.8
 ```
 
 ## MySQL
 
 [MySQL](https://www.mysql.com/) is an open-source relational database management system.
 
-The following settings are available via the Manifest file (\* required fields):
+The following settings are available via the Manifest file :
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -337,20 +333,20 @@ The following settings are available via the Manifest file (\* required fields):
 </thead>
 <tbody>
   <tr>
-    <td><code>version</code> <strong>*</strong></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Specify the version of MySQL you want to install. Valid values are <code>5.7</code> or <code>8.0</code></td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>engine</code> <strong>*</strong></td>
+    <td><code>engine</code> </td>
     <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Specify the MySQL engine you want to install. Valid values are <code>mysql</code> and <code>percona</code></td>
     <td>All</td>
   </tr>
   <tr>
+    <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
+    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
+    <td>AWS</td>
+  </tr>
+  <tr>
     <td><a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">groups</a></td>
-    <td></td>
+    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
     <td>All</td>
   </tr>
@@ -374,15 +370,15 @@ The following settings are available via the Manifest file (\* required fields):
   </tr>
   <tr>
     <td><code>tamper_with_yml</code></td>
-    <td></td>
+    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is <code>yes</code>. </td>
     <td>All</td>
   </tr>
   <tr>
-    <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
-    <td>AWS</td>
+    <td><code>version</code> </td>
+    <td><div class="tooltip">Deploy with upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td>Specify the version of MySQL you want to install. Valid values are <code>5.7</code> or <code>8.0</code></td>
+    <td>All</td>
   </tr>
 </tbody>
 </table>
@@ -391,8 +387,8 @@ The following settings are available via the Manifest file (\* required fields):
 ### Example YAML for MySQL
 
 ```yml
-production:
-  mysql:
+mysql:
+  groups:
     live-db:
       configuration:
         version: 5.7
@@ -413,7 +409,7 @@ production:
 
 [PostgreSQL](https://www.postgresql.org/) is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
 
-The following settings are available via the Manifest file (\* required fields):
+The following settings are available via the Manifest file :
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -426,27 +422,27 @@ The following settings are available via the Manifest file (\* required fields):
 </thead>
 <tbody>
   <tr>
-    <td><code>version</code> <strong>*</strong></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Specify the version of PostgreSQL you want to install.</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>postgis</code></td>
-    <td></td>
-    <td>Specify whether to include <a href="https://postgis.net/">PostGIS</a></td>
-    <td>All</td>
-  </tr>
-  <tr>
     <td><a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">groups</a></td>
-    <td></td>
+    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
     <td>All</td>
+  </tr>
+  <tr>
+    <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
+    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
+    <td>AWS</td>
   </tr>
   <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>The version of Ubuntu to install on the server that hosts PostgreSQL. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>postgis</code></td>
+    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td>Specify whether to include <a href="https://postgis.net/">PostGIS</a></td>
     <td>All</td>
   </tr>
   <tr>
@@ -463,15 +459,15 @@ The following settings are available via the Manifest file (\* required fields):
   </tr>
   <tr>
     <td><code>tamper_with_yml</code></td>
-    <td></td>
+    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is <code>yes</code>.</td>
     <td>All</td>
   </tr>
   <tr>
-    <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
-    <td>AWS</td>
+    <td><code>version</code> </td>
+    <td><div class="tooltip">Deploy with upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td>Specify the version of PostgreSQL you want to install.</td>
+    <td>All</td>
   </tr>
 </tbody>
 </table>
@@ -479,19 +475,18 @@ The following settings are available via the Manifest file (\* required fields):
 ### Example YAML for PostgreSQL
 
 ```yml
-production:
-  postgresql:
-    groups:
-      live-data:
-        configuration:
-          iam_instance_profile_name: psql-perms
-          version: 9.3.4
-          postgis: true
-          root_disk_size: 100
-          root_disk_type: ssd
-      spare-data:
-        configuration:
-          version: 9.3.4
+postgresql:
+  groups:
+    live-data:
+      configuration:
+        iam_instance_profile_name: psql-perms
+        version: 9.3.4
+        postgis: true
+        root_disk_size: 100
+        root_disk_type: ssd
+    spare-data:
+      configuration:
+        version: 9.3.4
 
 ```
 
@@ -499,7 +494,7 @@ production:
 
 PostGIS is a spatial database extender for PostgreSQL object-relational database. It adds support for geographic objects allowing location queries to be run in SQL.
 
-The following settings are available via the Manifest file (\* required fields):
+The following settings are available via the Manifest file :
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -512,7 +507,7 @@ The following settings are available via the Manifest file (\* required fields):
 </thead>
 <tbody>
   <tr>
-    <td><code>version</code> <strong>*</strong></td>
+    <td><code>version</code> </td>
     <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Specify the version of PostGIS you want to install. Must be nested in <code>postgres</code> settings</td>
     <td>All</td>
@@ -523,18 +518,17 @@ The following settings are available via the Manifest file (\* required fields):
 ### Example YAML for PostGIS
  
 ```yml
-production:
-  postgresql:
-    configuration:
-      postgis:
-        version: 2.1.1
+postgresql:
+  configuration:
+    postgis:
+      version: 2.1.1
 ```
 
 ## Redis
 
 [Redis](https://redis.io/) is an in-memory data structure store, used as a distributed, in-memory key–value database, cache and message broker, with optional durability.
 
-The following settings are available via the Manifest file (\* required fields):
+The following settings are available via the Manifest file :
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -547,14 +541,14 @@ The following settings are available via the Manifest file (\* required fields):
 </thead>
 <tbody>
   <tr>
-    <td><code>version</code> <strong>*</strong></td>
+    <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
     <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Specify the version of Redis you want to install.</td>
-    <td>All</td>
+    <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
+    <td>AWS</td>
   </tr>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html"><code>groups</code></a></td>
-    <td></td>
+    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
     <td>All</td>
   </tr>
@@ -576,11 +570,11 @@ The following settings are available via the Manifest file (\* required fields):
     <td>Disk type for servers used by Redis, accepted values being <code>ssd</code> and <code>magnetic</code>. Default value is <code>ssd</code>.</td>
     <td>AWS, GCE</td>
   </tr>
-  <tr>
-    <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
-    <td>AWS</td>
+    <tr>
+    <td><code>version</code> </td>
+    <td><div class="tooltip">Deploy with upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td>Specify the version of Redis you want to install.</td>
+    <td>All</td>
   </tr>
 </tbody>
 </table>
@@ -589,13 +583,12 @@ The following settings are available via the Manifest file (\* required fields):
 ### Example YAML for Redis
 
 ```yml
-production:
-  redis:
-    configuration:
-      version: 5.0.5
-      root_disk_size: 100
-      root_disk_type: ssd
-      iam_instance_profile_name: redis-perms
+redis:
+  configuration:
+    version: 5.0.5
+    root_disk_size: 100
+    root_disk_type: ssd
+    iam_instance_profile_name: redis-perms
 ```
 
 ## More on Manifest files
