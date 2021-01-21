@@ -2,7 +2,7 @@
 
 This reference doc details all the Manifest settings for **data**, **caching** and **storage** components. If you're unfamiliar with Manifest files and how they work, please follow our [getting started guide](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) and [detailed how-to guide](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html). 
 
-If you're looking for the Manifest settings for [webservers & frameworks](/{{page.collection}}/references/manifest-web-settings.html) or [loadbalancers](/{{page.collection}}/references/manifest-loadbalancer-settings.html), please see our respective reference documents for those components.
+If you're looking for the Manifest settings for [webservers & frameworks](/{{page.collection}}/references/manifest-web-settings.html) or [load balancers](/{{page.collection}}/references/manifest-loadbalancer-settings.html), please see our respective reference documents for those components.
 
 ### Key to table headings
 

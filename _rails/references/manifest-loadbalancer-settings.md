@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title:  "Manifest settings for loadbalancers"
+title:  "Manifest settings for load balancers"
 categories: references
 order: 10
-lead: "The available manifest settings for loadbalancers"
+lead: "The available manifest settings for load balancers"
 tags: ['tags']
 legacy: false
 permalink: /:collection/:path:output_ext

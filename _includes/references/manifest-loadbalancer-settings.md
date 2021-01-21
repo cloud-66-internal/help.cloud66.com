@@ -13,7 +13,7 @@ If you're looking for the Manifest settings for [webservers & frameworks](/{{pag
 
 You can use your Manifest file to customize the AWS load balancer deployed by Cloud 66.
 
-The following settings are available via the Manifest file (\* required fields):
+The following settings are available via the Manifest file:
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -72,7 +72,7 @@ The following settings are available via the Manifest file (\* required fields):
 You can use your Manifest file to customize any GCE load balancers deployed by Cloud 66.
 
 
-The following settings are available via the Manifest file (\* required fields):
+The following settings are available via the Manifest file:
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -126,7 +126,7 @@ Refer to the [GCE documentation](https://cloud.google.com/compute/docs/load-bala
 
 You can use your Manifest file to configure and define any HAProxy load balancers deployed by Cloud 66. These changes will be either be applied when you redeploy an application with more than one server, rebuild HAProxy or edit [HAProxy CustomConfig](/{{page.collection}}/how-to-guides/security/multi-cert_haproxy.html). 
 
-Because HAProxy load balancers are not "cloud native", you will need to specify the **server configuration** in the same YAML node as your HAproxy settings. The server configuration settings are (\* required fields):
+Because HAProxy load balancers are not "cloud native", you will need to specify the **server configuration** in the same YAML node as your HAproxy settings. The server configuration settings are :
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -138,29 +138,29 @@ Because HAProxy load balancers are not "cloud native", you will need to specify 
 </thead>
 <tbody>
   <tr>
-  <td><code>unique_name</code> *</td>
+  <td><code>unique_name</code></td>
   <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
   <td>Name of the instance</td>
   </tr>
   <tr>
-  <td><code>size</code> *</td>
+  <td><code>size</code></td>
   <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
   <td>The size of the instance</td>
   </tr>
   <tr>
-  <td><code>region</code> *</td>
+  <td><code>region</code></td>
   <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
   <td>Digital Ocean’s region</td>
   </tr>
   <tr>
-  <td><code>key_name</code> *</td>
+  <td><code>key_name</code></td>
   <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
   <td>Default</td>
   </tr>
 </tbody>
 </table>
 
-The following **HAproxy settings** are available via the Manifest file (\* required fields):
+The following **HAproxy settings** are available via the Manifest file:
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -234,7 +234,7 @@ Refer to the [HAProxy documentation](http://haproxy.1wt.eu/download/1.3/doc/conf
 
 You can use a manifest file to configure Linode Nodebalancers deployed by Cloud 66.
 
-The following settings are available via the Manifest file (\* required fields):
+The following settings are available via the Manifest file:
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -287,7 +287,7 @@ Refer to the [Linode documentation](https://www.linode.com/docs/platform/nodebal
 
 Use a manifest file to customize the Rackspace load balancer deployed by Cloud 66.
 
-The following settings are available via the Manifest file (\* required fields):
+The following settings are available via the Manifest file:
 
 <table class='table table-bordered table-striped'>
 <thead>
