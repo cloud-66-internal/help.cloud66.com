@@ -183,12 +183,12 @@ The following settings are available via the Manifest file:
     <td>Enable Cross Origin Resource Sharing</td>
     <td>All</td>
   </tr>
-  <tr>
+{% if include.product == 'rails' %}<tr>
     <td><code>extra_build_arguments</code></td>
     <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>(Applies to Rack/Passenger applications only) Extra build argument string that will be added to the <code>nginx build</code> command. If you require additional modules that themselves require specific source to be present, you should use a <code>BEFORE_NGINX</code> <a href="/{{page.collection}}/references/deploy-hooks-syntax.html#hook-points">deploy hook</a> to ensure that source is present. You can use the <code>cloud66/download</code> snippet to achieve this easily. The following build arguments are currently always added: <code>--with-http_realip_module --with-ipv6 --with-http_v2_module</code> regardless of this value.</td>
+    <td>Extra build argument string that will be added to the <code>nginx build</code> command. If you require additional modules that themselves require specific source to be present, you should use a <code>BEFORE_NGINX</code> <a href="/{{page.collection}}/references/deploy-hooks-syntax.html#hook-points">deploy hook</a> to ensure that source is present. You can use the <code>cloud66/download</code> snippet to achieve this easily. The following build arguments are currently always added: <code>--with-http_realip_module --with-ipv6 --with-http_v2_module</code> regardless of this value.</td>
     <td>All</td>
-  </tr>
+  </tr>{% endif %}
   <tr>
     <td><code>perfect_forward_secrecy</code> (<em>deprecated</em>)</td>
     <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
@@ -583,15 +583,15 @@ All of these are optional. For more details on health checks please read our [ho
 ### Example YAML for Rails Health Checks
 
 ```yml
-    rails:
-    	configuration:
-    		health:
-    			protocol: 'https'
-    			host: '127.0.0.1'
-    			port: 4430
-    			endpoint: '/'
-    			accept: ["200", "300-399"]
-    			timeout: 30
+  rails:
+    configuration:
+      health:
+        protocol: 'https'
+        host: '127.0.0.1'
+        port: 4430
+        endpoint: '/'
+        accept: ["200", "300-399"]
+        timeout: 30
 ```
 
 ## Sinatra
