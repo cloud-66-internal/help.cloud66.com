@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Using the Filebeat Add-in"
+title:  "Using the Filebeat Add-in (DEPRECATED)"
 categories: how-to-guides/add-ins
 order: 10
 lead: Adding a simple web-based log analysis service to your servers in Maestro
