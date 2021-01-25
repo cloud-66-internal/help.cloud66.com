@@ -10,13 +10,31 @@ Lists all the stacks available to your account.
 $ cx stacks list [-e <environment>]
 ```
 
-
 ### Parameters
 
 
 |		Parameter 		   |   Description    |
 |--| | | | | :|
 |stack 					   	| Name of your application |
+|e (environment) (optional)		 | 	Full or partial environment name |
+{:.table}
+
+## Reboot your stacks
+
+Reboot your application.
+
+### Usage
+
+```shell
+$ cx stacks reboot [-s <name of application>] [-y] [--group <group name>] [--strategy <serial or parallel>] [-e <environment>]
+```
+
+### Parameters
+
+
+|		Parameter 		   |   Description    |
+|--| | | | | :|
+|-s 					   	| Name of your application |
 |y (optional)		  				   	| Answer yes to confirmations |
 |group (default web)		 	 			   	| Group of servers you wish to reboot (all, web, haproxy, db, mysql, redis, postgresql, mongodb) |
 |strategy		  	   	| Reboot in serial or parallel |
@@ -27,14 +45,14 @@ The group parameter specifies which group of servers you wish to reboot. Valid v
 
 The strategy parameter specifies whether you want all your servers to be rebooted in parallel or in serial. Valid values for this parameter are “serial” or “parallel”; “serial” reboots involves web servers being removed/re-added to the LB one by one. Note that for this only applies to web servers; non-web server will still be rebooted in parallel. If this value is left unspecified, Cloud 66 will determine the best strategy based on your infrastructure layout.
 
-### Example
+### Examples
 
 ```shell
-$ cx application reboot -s mystack
-$ cx application reboot -s mystack --group web
-$ cx application reboot -s mystack --group all
-$ cx application reboot -s mystack --strategy parallel
-$ cx application reboot -s mystack --group web --strategy serial
+$ cx stacks reboot -s mystack
+$ cx stacks reboot -s mystack --group web
+$ cx stacks reboot -s mystack --group all
+$ cx stacks reboot -s mystack --strategy parallel
+$ cx stacks reboot -s mystack --group web --strategy serial
 ```
 * * *
 
@@ -50,28 +68,18 @@ For improved performance, volatile code caches exist for your application. It is
 $ cx stacks clear-caches [-s <stack>]
 ```
 
-
-
-
 ### Parameters
 
-
 |		Parameter 		   	|     Description    |
-|| :|
 |stack 					   	| Name of your application |
 {:.table}
-
- 
- 
 
 
 ### Example
 
 ```shell
-$ cx stacks listen -s "My Awesome App" -e production
+$ cx stacks clear-caches -s "My Awesome App"
 ```
-You can leave the command by pressing `Ctrl-C` at any time.
-
 * * *
 
 
@@ -85,9 +93,6 @@ List, download and upload of configuration files such as a _service.yml_ or _man
 ```shell
 $ cx stacks configure list [-s <stack>]
 ```
-
-
-
 
 ### Parameters
 
@@ -115,9 +120,6 @@ Shows a list of commands or help for one command.
 ```shell
 $ cx stacks help [<command>]
 ```
-
-
-
 
 ### Parameters
 
