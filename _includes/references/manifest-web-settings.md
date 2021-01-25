@@ -201,6 +201,7 @@ The following settings are available via the Manifest file:
 
 ### Example YAML for Nginx
 
+{% if include.product == 'rails' %}
 ```yml
 rails:
   configuration:
@@ -208,6 +209,15 @@ rails:
       extra_build_arguments: "--add-module=/path/to/module"
       perfect_forward_secrecy: true # deprecated
 ```
+{% endif %}
+{% if include.product != 'rails' %}
+```yml
+rails:
+  configuration:
+    nginx:
+      perfect_forward_secrecy: true # deprecated
+```
+{% endif %}
 
 ### CORS configuration
 
@@ -569,16 +579,56 @@ rack:
 
 ## Rails (Rack) deployment health checks
 
-These checks define tests to confirm whether your application has been successfully deployed, and to mark a deployment as "failed" if any do not pass. They have the following options:
+These checks define tests to confirm whether your application has been successfully deployed, and to mark a deployment as "failed" if any do not pass. For more details on health checks please read our [how-to guide](/rails/how-to-guides/deployment/deployment-health-checks.html). Health Checks have the following Manifest options:
 
-- **protocol**: which protocol(s) to use when running the check. Acceptable values are `http` or `https`
-- **host**: The hostname or IP address that will we called during the check
-- **port**: The port number that must be used when submitting the request. The default is `80` if you set `http` as your protocol and `443` if you set it to `https`
-- **endpoint**: The URL, path or endpoint that should be checked. This can be any URL in the application.
-- **accept**: A comma separated list of the HTTP response codes that should be considered as a "pass" of this check. All values must be enclosed in quotes.  Ranges can be defined with dashes and both the first and last port numbers are included.
-- **timeout**: The wait, in seconds, before the check will time out. The max is 120.
-
-All of these are optional. For more details on health checks please read our [how-to guide](/rails/how-to-guides/deployment/deployment-health-checks.html).
+<table class='table table-bordered table-striped'>
+<thead>
+  <tr>
+    <th width="32%">Option</th>
+    <th width="16%">Applied on</th>
+    <th>Description</th>
+    <th width="10%">Clouds</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><code>protocol</code></td>
+     <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The protocol(s) to use when running the check(s). Acceptable values are <code>http</code> or <code>https</code>.</td>
+    <td>All</td>
+  </tr> 
+  <tr>
+    <td><code>host</code></td>
+     <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The hostname or IP address that will we called during the check.</td>
+    <td>All</td>
+  </tr> 
+  <tr>
+    <td><code>port</code></td>
+     <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The port number that must be used when submitting the request. The default is <code>80</code> if you set <code>http</code> as your protocol and <code>443</code> if you set it to <code>https</code></td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>port</code></td>
+     <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The URL, path or endpoint that should be checked. This can be any URL in the application.</td>
+    <td>All</td>
+  </tr>  
+  <tr>
+    <td><code>accept</code></td>
+     <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>A comma separated list of the HTTP response codes that should be considered as a "pass" of this check. All values must be enclosed in quotes.  Ranges can be defined with dashes and both the first and last port numbers must be included. For example <code>["200-201", "300-305"]</code></td>
+    <td>All</td>
+  </tr>  
+  <tr>
+    <td><code>timeout</code></td>
+     <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The wait, in seconds, before the check will time out. The max is 120.</td>
+    <td>All</td>
+  </tr>  
+</tbody>
+</table>
 
 ### Example YAML for Rails Health Checks
 
@@ -599,4 +649,10 @@ All of these are optional. For more details on health checks please read our [ho
 For Sinatra use [Rack](#rack)
 
 {% endif %}
+
+## More on Manifest files
+
+- [Getting started guide](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) 
+- [Detailed how-to guide](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html)
+- [Understanding manifest files](/{{page.collection}}/references/manifest-structure.html) 
 
