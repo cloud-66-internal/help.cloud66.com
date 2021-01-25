@@ -17,6 +17,8 @@ echo "whoami: $(whoami)"
 set +e
 docker rm --force "jekyll-build"
 set -e
+# allow docker to write here
+chmod u=rwX,g=rwX,o=rwX "$pwd/Gemfile.lock"
 echo "running the docker jekyll builder"
 docker run --name="jekyll-build" --volume="$pwd:/srv/jekyll" -it jekyll/builder:4 bash -c "jekyll build -d /tmp"
 echo "removing existing $site_path"
