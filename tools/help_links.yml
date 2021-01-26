@@ -331,7 +331,6 @@ maestro:
     - configstore-data-structure
     - configstore-metadata
     - configstore-vs-environment-variables
-    - download-configstore-cli
     - environment-variables
     - levels-of-configstore
     - maestro-product-heading
@@ -1165,6 +1164,7 @@ maestro:
     - fast-deployments
     - maestro-product-heading
     - overview
+    - serial-deployment-v1-only
   partner_integration:
     page: maestro/integrations/partner-integration.html
     page_anchors:
@@ -1697,7 +1697,6 @@ maestro:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -1713,6 +1712,7 @@ maestro:
     - examples-4
     - examples-5
     - examples-6
+    - examples-7
     - gateway-management
     - getting-service-information
     - installation
@@ -1753,12 +1753,13 @@ maestro:
     - parameters-24
     - parameters-25
     - parameters-26
-    - parameters-28
+    - parameters-27
     - parameters-29
     - parameters-3
     - parameters-30
     - parameters-31
     - parameters-32
+    - parameters-33
     - parameters-4
     - parameters-5
     - parameters-6
@@ -1768,6 +1769,7 @@ maestro:
     - profile-commands
     - profiles-for-multiple-account-support
     - reboot-servers
+    - reboot-your-stacks
     - redeploy-your-application
     - remove-gateway
     - result
@@ -1813,6 +1815,7 @@ maestro:
     - usage-32
     - usage-33
     - usage-34
+    - usage-35
     - usage-4
     - usage-5
     - usage-6
@@ -2206,7 +2209,6 @@ node:
     - configstore-data-structure
     - configstore-metadata
     - configstore-vs-environment-variables
-    - download-configstore-cli
     - environment-variables
     - levels-of-configstore
     - namespaces
@@ -3296,7 +3298,6 @@ node:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -3312,6 +3313,7 @@ node:
     - examples-4
     - examples-5
     - examples-6
+    - examples-7
     - gateway-management
     - getting-service-information
     - installation
@@ -3352,12 +3354,13 @@ node:
     - parameters-24
     - parameters-25
     - parameters-26
-    - parameters-28
+    - parameters-27
     - parameters-29
     - parameters-3
     - parameters-30
     - parameters-31
     - parameters-32
+    - parameters-33
     - parameters-4
     - parameters-5
     - parameters-6
@@ -3367,6 +3370,7 @@ node:
     - profile-commands
     - profiles-for-multiple-account-support
     - reboot-servers
+    - reboot-your-stacks
     - redeploy-your-application
     - remove-gateway
     - result
@@ -3412,6 +3416,7 @@ node:
     - usage-32
     - usage-33
     - usage-34
+    - usage-35
     - usage-4
     - usage-5
     - usage-6
@@ -3835,7 +3840,6 @@ rails:
     - configstore-data-structure
     - configstore-metadata
     - configstore-vs-environment-variables
-    - download-configstore-cli
     - environment-variables
     - levels-of-configstore
     - namespaces
@@ -5144,7 +5148,6 @@ rails:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -5160,6 +5163,7 @@ rails:
     - examples-4
     - examples-5
     - examples-6
+    - examples-7
     - gateway-management
     - getting-service-information
     - installation
@@ -5199,12 +5203,13 @@ rails:
     - parameters-24
     - parameters-25
     - parameters-26
-    - parameters-28
+    - parameters-27
     - parameters-29
     - parameters-3
     - parameters-30
     - parameters-31
     - parameters-32
+    - parameters-33
     - parameters-4
     - parameters-5
     - parameters-6
@@ -5215,6 +5220,7 @@ rails:
     - profiles-for-multiple-account-support
     - rails-product-heading
     - reboot-servers
+    - reboot-your-stacks
     - redeploy-your-application
     - remove-gateway
     - result
@@ -5260,6 +5266,7 @@ rails:
     - usage-32
     - usage-33
     - usage-34
+    - usage-35
     - usage-4
     - usage-5
     - usage-6
@@ -5537,7 +5544,6 @@ skycap:
     - configstore-data-structure
     - configstore-metadata
     - configstore-vs-environment-variables
-    - download-configstore-cli
     - environment-variables
     - levels-of-configstore
     - namespaces
@@ -6000,7 +6006,6 @@ skycap:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -6016,6 +6021,7 @@ skycap:
     - examples-4
     - examples-5
     - examples-6
+    - examples-7
     - gateway-management
     - getting-service-information
     - installation
@@ -6055,12 +6061,13 @@ skycap:
     - parameters-24
     - parameters-25
     - parameters-26
-    - parameters-28
+    - parameters-27
     - parameters-29
     - parameters-3
     - parameters-30
     - parameters-31
     - parameters-32
+    - parameters-33
     - parameters-4
     - parameters-5
     - parameters-6
@@ -6070,6 +6077,7 @@ skycap:
     - profile-commands
     - profiles-for-multiple-account-support
     - reboot-servers
+    - reboot-your-stacks
     - redeploy-your-application
     - remove-gateway
     - result
@@ -6116,6 +6124,7 @@ skycap:
     - usage-32
     - usage-33
     - usage-34
+    - usage-35
     - usage-4
     - usage-5
     - usage-6

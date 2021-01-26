@@ -48,3 +48,9 @@ Remember you can also trigger deployment profiles using Toolbelt:
 cx stacks redeploy --deployment-profile my-fast-deploy
 ```
 
+## Serial deployment (V1 only)
+
+<div class="notice notice-danger">
+<p>PLEASE NOTE:<br/> This feature is only available in Version 1 of Maestro, also know as <em>CSv1</em>. </p></div>
+
+In this strategy we deploy to each server one at a time. We take each server off the load balancer and then add it back once the deployment has succeeded. If a server fails to deploy we will halt the process and alert you.
