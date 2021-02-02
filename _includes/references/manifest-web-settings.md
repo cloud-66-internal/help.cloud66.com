@@ -403,7 +403,7 @@ A Rails application type in the manifest file gives you fine control over things
 ```yml
 rails:
   configuration:
-    ruby_version: 2.2.0
+    ruby_version: 2.7.2
     asset_pipeline_precompile: true
     do_initial_db_schema_load: false
     reserved_server_memory: 0 #default value
@@ -562,7 +562,7 @@ The manifest file gives you fine control over things like the Ruby version or wh
 ```yml
 rack:
   configuration:
-    ruby_version: 1.9.3
+    ruby_version: 2.7.2
     do_initial_db_schema_load: false
     reserved_server_memory: 0 #default value
     passenger_process_memory: 200 #default value
