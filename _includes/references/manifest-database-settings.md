@@ -28,37 +28,37 @@ The following settings are available via the Manifest file:
 <tbody>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
   </tr>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html"><code>groups</code></a></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
   <td>All</td>
   </tr>
   <tr>
     <td><code>operating_system</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>The version of Ubuntu to install on the server that hosts ElasticSearch. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
   <td>All</td>
   </tr>
   <tr>
     <td><code>root_disk_size</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Default size of root disk (in GB) for servers used by ElasticSearch. Default value is <code>50</code>.</td>
   <td>AWS, Azure, GCE</td>
   </tr>
   <tr>
     <td><code>root_disk_type</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Disk type for servers used by ElasticSearch, accepted values being <code>ssd</code> and <code>magnetic</code>. Default value is <code>ssd</code>.</td>
     <td>AWS, GCE</td>
   </tr>
   <tr>
     <td><code>version</code></td>
-    <td><div class="tooltip">Deploy with upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
     <td>The version of ElasticSearch you want to install</td>
     <td>All</td>
   </tr>
@@ -113,55 +113,55 @@ The following settings are available via the Manifest file:
 <tbody>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
   </tr>
   <tr>
     <td><code>mount_targets</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>List of servers and server groups on which GlusterFS should be mounted. You can specify the name of the server or server group (e.g. <code>rails</code> or <code>mysql</code>). You can also use app and db keywords: <code>app</code> is your main app server group (e.g. rails) and <code>db</code> is your database server groups (e.g. <code>mysql</code> or <code>redis</code>). The default value is <code>app</code>.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>replica_count</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>The number of nodes in the GlusterFS cluster to which data will be replicated (e.g. <code>2</code> means your data exist on two nodes). Default value is <code>1</code>.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>root_disk_size</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>    
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>    
     <td>Default size of root disk (in GB) for servers used by GlusterFS. Default value is <code>50</code>.</td>
     <td>AWS, Azure, GCE</td>
   </tr>
     <tr>
     <td><code>root_disk_type</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Disk type for servers used by GlusterFS, accepted values being <code>ssd</code> and <code>magnetic</code>. Default value is <code>ssd</code>.</td>
     <td>AWS, GCE</td>
   </tr>
   <tr>
     <td><code>version</code></td>
-    <td><div class="tooltip">Deploy with upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
     <td>Specify the version of GlusterFS you want to install.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>volumes</code> </td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>List of volumes you want in your GlusterFS cluster. By default we create a volume called <code>cloud66-vol</code> and mount it to <code>/mnt/data-store</code>.</td>
     <td>All</td>
   </tr>
     <tr>
     <td><code>volumes / mount</code> </td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Specify the mount point of the volume on clients.</td>
     <td>All</td>
   </tr>  
   <tr>
     <td><code>volumes / name</code> </td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Specify the name of volume.</td>
     <td>All</td>
   </tr>
@@ -210,19 +210,19 @@ The following settings are available via the Manifest file :
 <tbody>
   <tr>
     <td><code>listen_ip</code> </td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>Specify which IP address to listen on (default value is <code>0.0.0.0</code>)</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>memory</code> </td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Specify maximum memory (in MB) that can be used (default is <code>64</code>)</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>port</code> </td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>Specify connection port (default is <code>11211</code>)</td>
     <td>All</td>
   </tr>
@@ -258,43 +258,43 @@ The following settings are available via the Manifest file :
 <tbody>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
   </tr>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html"><code>groups</code></a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>operating_system</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>The version of Ubuntu to install on the server that hosts MongoDB. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>root_disk_size</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Default size of root disk (in GB) for servers used by MongoDB. Default value is <code>50</code>.</td>
     <td>AWS, Azure, GCE</td>
   </tr>
   <tr>
     <td><code>root_disk_type</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Disk type for servers used by MongoDB, accepted values being <code>ssd</code> and <code>magnetic</code>. Default value is <code>ssd</code>.</td>
     <td>AWS, GCE</td>
   </tr>
   <tr>
     <td><code>tamper_with_yml</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is <code>yes</code>.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>version</code> </td>
-    <td><div class="tooltip">Deploy with upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
     <td>Specify the version of MongoDB you want to install.</td>
     <td>All</td>
   </tr>
@@ -334,49 +334,49 @@ The following settings are available via the Manifest file :
 <tbody>
   <tr>
     <td><code>engine</code> </td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Specify the MySQL engine you want to install. Valid values are <code>mysql</code> and <code>percona</code></td>
     <td>All</td>
   </tr>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
   </tr>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">groups</a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>operating_system</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>The version of Ubuntu to install on the server that hosts MySQL. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>root_disk_size</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Default size of root disk (in GB) for servers used by MySQL. Default value is <code>50</code>.</td>
     <td>AWS, Azure, GCE</td>
   </tr>
   <tr>
     <td><code>root_disk_type</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Disk type for servers used by MySQL, accepted values being <code>ssd</code> and <code>magnetic</code>. Default value is <code>ssd</code>.</td>
     <td>AWS, GCE</td>
   </tr>
   <tr>
     <td><code>tamper_with_yml</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is <code>yes</code>. </td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>version</code> </td>
-    <td><div class="tooltip">Deploy with upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
     <td>Specify the version of MySQL you want to install. Valid values are <code>5.7</code> or <code>8.0</code></td>
     <td>All</td>
   </tr>
@@ -423,49 +423,49 @@ The following settings are available via the Manifest file :
 <tbody>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">groups</a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
   </tr>
   <tr>
     <td><code>operating_system</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>The version of Ubuntu to install on the server that hosts PostgreSQL. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>postgis</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Specify whether to include <a href="https://postgis.net/">PostGIS</a></td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>root_disk_size</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Default size of root disk (in GB) for servers used by PostgreSQL. Default value is <code>50</code>.</td>
     <td>AWS, Azure, GCE</td>
   </tr>
   <tr>
     <td><code>root_disk_type</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Disk type for servers used by PostgreSQL, accepted values being <code>ssd</code> and <code>magnetic</code>. Default value is <code>ssd</code>.</td>
     <td>AWS, GCE</td>
   </tr>
   <tr>
     <td><code>tamper_with_yml</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>Determines whether Cloud 66 can automatically update your database configuration (username, password and server address). Default is <code>yes</code>.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>version</code> </td>
-    <td><div class="tooltip">Deploy with upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
     <td>Specify the version of PostgreSQL you want to install.</td>
     <td>All</td>
   </tr>
@@ -508,7 +508,7 @@ The following settings are available via the Manifest file :
 <tbody>
   <tr>
     <td><code>version</code> </td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Specify the version of PostGIS you want to install. Must be nested in <code>postgres</code> settings</td>
     <td>All</td>
   </tr>
@@ -542,37 +542,37 @@ The following settings are available via the Manifest file :
 <tbody>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers"><code>iam_instance_profile_name</code></a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
   </tr>
   <tr>
     <td><a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html"><code>groups</code></a></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>operating_system</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>The version of Ubuntu to install on the server that hosts Redis. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>root_disk_size</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Default size of root disk (in GB) for servers used by Redis. Default value is <code>50</code>.</td>
     <td>AWS, Azure, GCE</td>
   </tr>
   <tr>
     <td><code>root_disk_type</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Disk type for servers used by Redis, accepted values being <code>ssd</code> and <code>magnetic</code>. Default value is <code>ssd</code>.</td>
     <td>AWS, GCE</td>
   </tr>
     <tr>
     <td><code>version</code> </td>
-    <td><div class="tooltip">Deploy with upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
     <td>Specify the version of Redis you want to install.</td>
     <td>All</td>
   </tr>

@@ -26,27 +26,27 @@ The following settings are available via the Manifest file:
 <tbody>
   <tr>
     <td><code>alb_ssl_policy</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The SSL policy to associate with your ALB when performing SSL termination. See the official AWS docs for <a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html#describe-ssl-policies">available ALB SSL policies.</a> (Applies only to Application Load Balancers)</td>
   </tr>
   <tr>
     <td><code>elb_ssl_policy</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The SSL policy to associate with your ELB when performing SSL termination. See the official AWS docs for <a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-security-policy-table.html">available ELB SSL policies</a>. (Applies only to Classic Load Balancers)</td>
   </tr>
   <tr>
     <td><code>httpchk</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The URL visited to check your server health</td>
   </tr>
   <tr>
     <td><code>wait_after_adding_servers</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our <a href="/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag">in-depth guide on configuration lag</a> for more details.</td>
   </tr>
   <tr>
     <td><code>wait_after_removing_servers</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our <a href="/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag">in-depth guide on configuration lag</a> for more details.</td>
   </tr>  
 </tbody>
@@ -82,22 +82,22 @@ The following settings are available via the Manifest file:
 <tbody>
   <tr>
     <td><code>balance</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The load balancing strategy. Valid values: <code>NONE</code>, <code>CLIENT_IP</code> or <code>CLIENT_IP_PROTO</code></td>
   </tr>
   <tr>
     <td><code>httpchk</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The URL visited to check your server health</td>
   </tr>
   <tr>
     <td><code>wait_after_adding_servers</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our <a href="/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag">in-depth guide on configuration lag</a> for more details.</td>
   </tr>
   <tr>
     <td><code>wait_after_removing_servers</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our <a href="/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag">in-depth guide on configuration lag</a> for more details.</td>
   </tr>
 </tbody>
@@ -134,22 +134,22 @@ Because HAProxy load balancers are not "cloud native", you will need to specify 
 <tbody>
   <tr>
   <td><code>key_name</code></td>
-  <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+  <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
   <td>Default</td>
   </tr>
   <tr>
   <td><code>region</code></td>
-  <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+  <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
   <td>Digital Ocean’s region</td>
   </tr>
   <tr>
   <td><code>size</code></td>
-  <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+  <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
   <td>The size of the instance</td>
   </tr>
   <tr>
   <td><code>unique_name</code></td>
-  <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+  <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
   <td>Name of the instance</td>
  </tr>
 </tbody>
@@ -168,27 +168,27 @@ The following **HAproxy settings** are available via the Manifest file:
 <tbody>
   <tr>
     <td><code>balance</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The load balancing strategy. Valid values: <code>roundrobin</code>, <code>leastconn</code> or <code>source</code></td>
   </tr>
   <tr>
     <td><code>errorfile_*ERROR_CODE*</code></td>
-    <td><div class="tooltip">Build only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
     <td>Location of your own custom error page(s) to serve in the case of receiving a HTTP error code on the load balancer. You can configure one page per error code.</td>
   </tr>
   <tr>
     <td><code>httpchk</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The URL visited to check your server health</td>
   </tr>
   <tr>
     <td><code>wait_after_adding_servers</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our <a href="/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag">in-depth guide on configuration lag</a> for more details.</td>
   </tr>
   <tr>
     <td><code>wait_after_removing_servers</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our <a href="/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag">in-depth guide on configuration lag</a> for more details.</td>
   </tr>
 </tbody>
@@ -237,22 +237,22 @@ The following settings are available via the Manifest file:
 <tbody>
   <tr>
     <td><code>balance</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The load balancing strategy. Valid values: <code>roundrobin</code>, <code>leastconn</code> or <code>source</code></td>
   </tr>
   <tr>
     <td><code>httpchk</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The URL visited to check your server health</td>
   </tr>
   <tr>
     <td><code>wait_after_adding_servers</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our <a href="/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag">in-depth guide on configuration lag</a> for more details.</td>
   </tr>
   <tr>
     <td><code>wait_after_removing_servers</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our <a href="/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag">in-depth guide on configuration lag</a> for more details.</td>
   </tr>
 </tbody>
@@ -289,17 +289,17 @@ The following settings are available via the Manifest file:
 <tbody>
   <tr>
     <td><code>balance</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The load balancing strategy. Valid values: <code>ROUND_ROBIN</code>, <code>RANDOM</code> or <code>LEAST_CONNECTIONS</code></td>
   </tr>
   <tr>
     <td><code>wait_after_adding_servers</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our <a href="/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag">in-depth guide on configuration lag</a> for more details.</td>
   </tr>
   <tr>
     <td><code>wait_after_removing_servers</code></td>
-    <td><div class="tooltip">Deploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our <a href="/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag">in-depth guide on configuration lag</a> for more details.</td>
   </tr>
 </tbody>
