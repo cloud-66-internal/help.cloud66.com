@@ -1,6 +1,6 @@
 ## Overview
 
-This reference doc details all the Manifest settings for **webserver**, **proxy** and **framework** components. If you're unfamiliar with Manifest files and how they work, please follow our [getting started guide](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) and [detailed how-to guide](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html). 
+This reference doc details all the Manifest settings for **webserver**, **proxy** and **framework** components. If you're unfamiliar with Manifest files and how they work, please follow our [getting started guide](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) and {% if include.product != 'maestro' %}[detailed how-to guide](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html).{% endif %}{% if include.product == 'maestro' %}[detailed how-to guide](/{{page.collection}}/how-to-guides/build-and-config/building-a-manifest-file.html).{% endif %}
 
 If you're looking for the Manifest settings for [data, caching & storage components](/{{page.collection}}/references/manifest-database-settings.html) or [load balancers](/{{page.collection}}/references/manifest-loadbalancer-settings.html), please see our respective reference documents for those components.
 
@@ -652,7 +652,7 @@ For Sinatra use [Rack](#rack)
 
 ## More on Manifest files
 
-- [Getting started guide](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) 
-- [Detailed how-to guide](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html)
+- [Getting started guide](/{{page.collection}}/quickstarts/getting-started-with-manifest.html){% if include.product != 'maestro' %}
+- [Detailed how-to guide](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html){% endif %}{% if include.product == 'maestro' %}
+- [Detailed how-to guide](/maestro/how-to-guides/build-and-config/building-a-manifest-file.html){% endif %}
 - [Understanding manifest files](/{{page.collection}}/references/manifest-structure.html) 
-
