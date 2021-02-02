@@ -641,7 +641,7 @@ Available settings (refer to the [HAProxy documentation](http://haproxy.1wt.eu/d
             vendor: digitalocean
             key_name: Default
         configuration:
-          httpchk: HEAD / HTTP/1.1\\r\\nHost:haproxy  #default value
+          httpchk: HEAD / HTTP/1.1\r\nHost:haproxy  #default value
           balance: roundrobin #default value
           errorfile_400: /etc/haproxy/errors/400.http
           errorfile_403: /etc/haproxy/errors/403.http
