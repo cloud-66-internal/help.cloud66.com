@@ -31,6 +31,15 @@ We require two simple steps to deploy with Passenger Enterprise:
 
 If both these conditions are met, any Passenger-based server is deployed with the Enterprise edition installed. Ensure that Passenger Enterprise is displayed in the _About your app_ section of your analysis before deploying.
 
+### Updating your license key
+
+If you need to update or change your license key for any reason (e.g. to license a server that was deployed using the trial version of Passenger Enterprise), then you will need to:
+
+1. Copy the new `passenger-enterprise-license` into the .cloud66 folder (overwriting any existing key)
+2. In your app [Dashboard](https://app.cloud66.com/), click Deploy &rarr; Deploy with Options and check the *Apply Security Upgrades* box.
+3. Click *Run Now* to deploy
+
+
 #### Important
 <div class="notice">
 <p>We recommend that you choose Passenger Enterprise as your web server at the time of initial build of the application. If you already have an application, please <a href="/rails/how-to-guides/scaling/scaling.html">scale up</a> to a new application server and scale down the old one to add Passenger Enterprise.</p>
