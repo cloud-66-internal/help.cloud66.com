@@ -4636,6 +4636,7 @@ rails:
     page_anchors:
     - deploy-with-passenger-enterprise
     - rails-product-heading
+    - updating-your-license-key
   pci_compliance:
     page: rails/resources/pci-compliance.html
     page_anchors:
