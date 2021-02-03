@@ -35,10 +35,11 @@ If both these conditions are met, any Passenger-based server is deployed with th
 
 If you need to update or change your license key for any reason (e.g. to license a server that was deployed using the trial version of Passenger Enterprise), then you will need to:
 
-1. Copy the new `passenger-enterprise-license` into the .cloud66 folder (overwriting any existing key)
-2. In your app [Dashboard](https://app.cloud66.com/), click *Deploy* &rarr; *Deploy with Options* 
-3. Check the *Apply Security Upgrades* box.
-4. Click *Run Now* to deploy
+1. Copy the new `passenger-enterprise-license` file into the .cloud66 folder (overwriting any existing file) 
+2. Commit and push your code to your repository
+3. In your app [Dashboard](https://app.cloud66.com/), click *Deploy* &rarr; *Deploy with Options* 
+4. Check the *Apply Security Upgrades* box.
+5. Click *Run Now* to deploy
 
 
 #### Important
