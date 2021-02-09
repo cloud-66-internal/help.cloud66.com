@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Enabling disk space alerts
+title: Disk space alerts
 categories: how-to-guides/common-tools
 lead: "How to enable and manage disk space alerts"
 legacy: false
