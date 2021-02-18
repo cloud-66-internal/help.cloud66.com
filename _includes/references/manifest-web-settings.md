@@ -423,7 +423,7 @@ rails:
 
 ## Rack
 
-For Rack use [Rails](#rails) settings (note that `asset_pipeline_precompile` does not apply to Rack servers). 
+For Rack you should use the same settings as [Rails](#rails) but the top node in your YAML **must** be `rack` (see below). Also note that `asset_pipeline_precompile` only applies to Rails servers. 
 
 ### Example YAML for Rack
 
@@ -514,7 +514,7 @@ These checks define tests to confirm whether your application has been successfu
 
 ## Sinatra
 
-For Sinatra use [Rails](#rails)
+For Sinatra use [Rack](#rack)
 
 {% endif %}
 
