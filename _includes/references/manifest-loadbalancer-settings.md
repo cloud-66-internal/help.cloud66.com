@@ -7,7 +7,7 @@ If you're looking for the Manifest settings for [webservers & frameworks](/{{pag
 ### Key to table headings
 
 * **Option** - the name of the setting as used in the YAML of your Manifest file
-* **Applied on** - the type of deployment required to update this settings. In many cases settings only apply when an application (and associated load balancer) is first built, or when it is cloned. Hover over the names of each condition to see more info.
+* **Applied on** - the type of deployment required to update this setting. In many cases settings only apply when an application (and associated load balancer) is first built, or when new loadbalancers are added or the app is cloned. Hover over the names of each condition to see more info.
 
 ## AWS load balancer
 
@@ -36,7 +36,7 @@ The following settings are available via the Manifest file:
   </tr>
   <tr>
     <td><code>httpchk</code></td>
-    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The URL visited to check your server health</td>
   </tr>
   <tr>
@@ -82,12 +82,12 @@ The following settings are available via the Manifest file:
 <tbody>
   <tr>
     <td><code>balance</code></td>
-    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The load balancing strategy. Valid values: <code>NONE</code>, <code>CLIENT_IP</code> or <code>CLIENT_IP_PROTO</code></td>
   </tr>
   <tr>
     <td><code>httpchk</code></td>
-    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The URL visited to check your server health</td>
   </tr>
   <tr>
@@ -134,22 +134,22 @@ Because HAProxy load balancers are not "cloud native", you will need to specify 
 <tbody>
   <tr>
   <td><code>key_name</code></td>
-  <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+  <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
   <td>Default</td>
   </tr>
   <tr>
   <td><code>region</code></td>
-  <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+  <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
   <td>Digital Ocean’s region</td>
   </tr>
   <tr>
   <td><code>size</code></td>
-  <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+  <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
   <td>The size of the instance</td>
   </tr>
   <tr>
   <td><code>unique_name</code></td>
-  <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+  <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
   <td>Name of the instance</td>
  </tr>
 </tbody>
@@ -173,8 +173,18 @@ The following **HAproxy settings** are available via the Manifest file:
   </tr>
   <tr>
     <td><code>errorfile_*ERROR_CODE*</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Location of your own custom error page(s) to serve in the case of receiving a HTTP error code on the load balancer. You can configure one page per error code.</td>
+  </tr>
+    <tr>
+    <td><code>haproxy_password</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The password for your HAproxy stats interface.</td>
+  </tr>
+  <tr>
+    <td><code>haproxy_username</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The username for your HAproxy stats interface.</td>
   </tr>
   <tr>
     <td><code>httpchk</code></td>
@@ -237,12 +247,12 @@ The following settings are available via the Manifest file:
 <tbody>
   <tr>
     <td><code>balance</code></td>
-    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The load balancing strategy. Valid values: <code>roundrobin</code>, <code>leastconn</code> or <code>source</code></td>
   </tr>
   <tr>
     <td><code>httpchk</code></td>
-    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The URL visited to check your server health</td>
   </tr>
   <tr>
@@ -289,7 +299,7 @@ The following settings are available via the Manifest file:
 <tbody>
   <tr>
     <td><code>balance</code></td>
-    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The load balancing strategy. Valid values: <code>ROUND_ROBIN</code>, <code>RANDOM</code> or <code>LEAST_CONNECTIONS</code></td>
   </tr>
   <tr>

@@ -7,9 +7,8 @@ If you're looking for the Manifest settings for [data, caching & storage compone
 ### Key to table headings
 
 * **Option** - the name of the setting as used in the YAML of your Manifest file
-* **Applied on** - the type of deployment required to update this settings. In many cases settings only apply when an application is first built, or when it is cloned. Hover over the names of each condition to see more info.
+* **Applied on** - the type of deployment required to update this setting. In many cases settings only apply when an application is first built, or when new servers are created or it is cloned. Hover over the names of each condition to see more info.
 * **Clouds** - the cloud providers on which a setting can be used.
-
 
 {% if include.product == 'maestro' %}
 
@@ -26,63 +25,63 @@ If you're looking for the Manifest settings for [data, caching & storage compone
 </thead>
 <tbody>
   <tr>
+    <td><code>docker_version</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>Specify the version of Docker you want to install.</td>
+    <td>All</td>
+  </tr>
+  <tr>
     <td><code>iam_instance_profile_name</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server. <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">Read our guide</a>.</td>
     <td>AWS</td>
   </tr>
   <tr>
     <td><code>image_keep_count</code></td>
-     <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Set the number of old images to save on your servers (besides the running image). Defaults to <code>2</code>.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>nameservers</code></td>
-     <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Set DNS servers for your application.  Note that if you specify empty array i.e <strong>[ ]</strong>, it won't add any nameserver to your servers. Default is <code>[ 8.8.8.8, 8.8.4.4 ]</code>
 </td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>operating_system</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The version of Ubuntu to install on the server that hosts your Rails app. Accepted values: <code>ubuntu1604</code> or <code>ubuntu1804</code></td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>root_disk_size</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Default size of root disk (in GB) for servers used by application. Default value is 50.</td>
     <td>AWS, Azure, GCE</td>
   </tr>
   <tr>
     <td><code>root_disk_type</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Disk type, accepted values being <code>ssd</code> and <code>magnetic</code>. Default is <code>ssd</code>.</td>
     <td>AWS, GCE</td>
   </tr>
   <tr>
-    <td><code>version</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Specify the version of Docker you want to install.</td>
-    <td>All</td>
-  </tr>
-  <tr>
     <td><code>vn_name</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the Virtual Network in which you would like to create your servers.</td>
     <td>Azure</td>
   </tr>
   <tr>
     <td><code>vpc_id</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>ID of the AWS VPC in which you would like to create your servers. Note that you must provide subnet_id for all servers in your application.</td>
     <td>AWS</td>
   </tr>
   <tr>
     <td><code>weave_version</code> <br/>(Maestro V1 only)</td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+        <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
     <td>Specify the version of Weave you want to install. Maestro V1 only.</td>
     <td>All</td>
   </tr>  
@@ -95,7 +94,7 @@ If you're looking for the Manifest settings for [data, caching & storage compone
 docker:
   configuration:
     iam_instance_profile_name: docker-perms
-    version: 1.7.0
+    docker_version: 1.7.0
     weave_version: 1.0.3
     vpc_id: vpc-64872001
     root_disk_size: 100
@@ -107,7 +106,7 @@ docker:
 ```yml
 docker:
   configuration:
-    version: 1.12.0
+    docker_version: 1.12.0
     weave_version: 1.0.3
     vn_name: your_vn_name
     root_disk_size: 100
@@ -185,7 +184,7 @@ The following settings are available via the Manifest file:
   </tr>
 {% if include.product == 'rails' %}<tr>
     <td><code>extra_build_arguments</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Extra build argument string that will be added to the <code>nginx build</code> command. If you require additional modules that themselves require specific source to be present, you should use a <code>BEFORE_NGINX</code> <a href="/{{page.collection}}/references/deploy-hooks-syntax.html#hook-points">deploy hook</a> to ensure that source is present. You can use the <code>cloud66/download</code> snippet to achieve this easily. The following build arguments are currently always added: <code>--with-http_realip_module --with-ipv6 --with-http_v2_module</code> regardless of this value.</td>
     <td>All</td>
   </tr>{% endif %}
@@ -292,24 +291,24 @@ A Rails application type in the manifest file gives you fine control over things
   <tr>
     <td><code>asset_pipeline_precompile</code></td>
     <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
-    <td>Specify whether to use asset pipeline compilation - this will be taken into account during redeployment.</td>
+    <td>Specify whether to use asset pipeline compilation - this will be taken into account during redeployment. NOTE: <strong>Rails only</strong> - does not apply to other Rack servers.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>do_initial_db_schema_load</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies the first time the app is built,</span></div></td>
     <td>Specify whether to perform <code>rake db:schema:load</code> on a new application build.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>iam_instance_profile_name</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server. <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">Read our guide</a>.</td>
     <td>AWS</td>
   </tr>
   <tr>
     <td><code>include_submodules</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>Set this to <code>false</code> to exclude any Git submodules from being pulled during a build. Default is <code>true</code>
 </td>
     <td>All</td>
@@ -329,21 +328,21 @@ A Rails application type in the manifest file gives you fine control over things
   </tr> 
     <tr>
     <td><code>memory_allocator</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
     <td>The memory allocation library that will be used for your Ruby installation. Options are <code>malloc</code> or <code>jemalloc</code>. Defaults to <code>malloc</code>.
 </td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>nameservers</code></td>
-     <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Set DNS servers for your application.  Note that if you specify empty array i.e <strong>[ ]</strong>, it won't add any nameserver to your servers. Default is <code>[ 8.8.8.8, 8.8.4.4 ]</code>
 </td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>operating_system</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The version of Ubuntu to install on the server that hosts your Rails app. Accepted values: <code>ubuntu1604</code> or <code>ubuntu1804</code></td>
     <td>All</td>
   </tr>
@@ -361,13 +360,13 @@ A Rails application type in the manifest file gives you fine control over things
   </tr>
   <tr>
     <td><code>root_disk_size</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Default size of root disk (in GB) for servers used by application. Default value is 50.</td>
     <td>AWS, Azure, GCE</td>
   </tr>
   <tr>
     <td><code>root_disk_type</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Disk type, accepted values being <code>ssd</code> and <code>magnetic</code>. Default is <code>ssd</code>.</td>
     <td>AWS, GCE</td>
   </tr>
@@ -379,13 +378,13 @@ A Rails application type in the manifest file gives you fine control over things
   </tr>   
   <tr>
     <td><code>vn_name</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the Virtual Network in which you would like to create your servers.</td>
     <td>Azure</td>
   </tr>
   <tr>
     <td><code>vpc_id</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>ID of the AWS VPC in which you would like to create your servers. Note that you must provide subnet_id for all servers in your application.</td>
     <td>AWS</td>
   </tr>
@@ -424,138 +423,7 @@ rails:
 
 ## Rack
 
-The manifest file gives you fine control over things like the Ruby version or which server the application is deployed on.
-
-<table class='table table-bordered table-striped'>
-<thead>
-  <tr>
-    <th width="32%">Option</th>
-    <th width="16%">Applied on</th>
-    <th>Description</th>
-    <th width="10%">Clouds</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td><code>ruby_version</code></td>
-    <td><div class="tooltip">Reload &#9432;<span class="tooltiptext">This setting will be applied when the server is reloaded.</span></div></td>
-    <td>Specify the version of Ruby to use. Also applies when you want to upgrade your Ruby version. We recommend that you use this and *remove the Ruby version declaration from your Gemfile* to avoid situations where your application will not run on every server during an upgrade.</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>operating_system</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts your Rails app. Accepted values: <code>ubuntu1604</code> or <code>ubuntu1804</code></td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>do_initial_db_schema_load</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Specify whether to perform <code>rake db:schema:load</code> on a new application build.</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>reserved_server_memory</code></td>
-    <td><div class="tooltip">Reload &#9432;<span class="tooltiptext">This setting will be applied when the server is reloaded.</span></div></td>
-    <td>A value in MB that Cloud 66 will assume should be left available. This will affect any automatically calculated values.</td>
-    <td>All</td>
-  </tr>  
-  <tr>
-    <td><code>passenger_process_memory</code></td>
-    <td><div class="tooltip">Reload &#9432;<span class="tooltiptext">This setting will be applied when the server is reloaded.</span></div></td>
-    <td>A value (in MB) that Cloud 66 will use for each Passenger process. This is also used to calculate the value of the <code>passenger_pool_max</code> variable in your <a href="/rails/references/nginx.html#pool-max">Nginx configuration</a> which in turn sets <code>passenger_max_pool_size</code>.</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>locked_passenger_version</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Force the app to use a specific version of Passenger. This is not supported on Passenger Enterprise applications.</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>vpc_id</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>ID of the AWS VPC in which you would like to create your servers. Note that you must provide subnet_id for all servers in your application.</td>
-    <td>AWS</td>
-  </tr>
-  <tr>
-    <td><code>vn_name</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>The name of the Virtual Network in which you would like to create your servers.</td>
-    <td>Azure</td>
-  </tr>
-  <tr>
-    <td><code>root_disk_size</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Default size of root disk (in GB) for servers used by application. Default value is 50.</td>
-    <td>AWS, Azure, GCE</td>
-  </tr>
-  <tr>
-    <td><code>root_disk_size</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Disk type, accepted values being <code>ssd</code> and <code>magnetic</code>. Default is <code>ssd</code>.</td>
-    <td>AWS, GCE</td>
-  </tr>
-  <tr>
-    <td><code>iam_instance_profile_name</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server. <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">Read our guide</a>.</td>
-    <td>AWS</td>
-  </tr>
-  <tr>
-    <td><code>nameservers</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Set DNS servers for your application.  Note that if you specify empty array i.e <strong>[ ]</strong>, it won't add any nameserver to your servers. Default is <code>[ 8.8.8.8, 8.8.4.4 ]</code>
-</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>include_submodules</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Set this to <code>false</code> to exclude any Git submodules from being pulled during a build. Default is <code>true</code>
-</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>keep_releases</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Specify the number of releases to keep on your server(s). Default is <code>5</code>.
-</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>memory_allocator</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>The memory allocation library that will be used for your Ruby installation. Options are <code>malloc</code> or <code>jemalloc</code>. Defaults to <code>malloc</code>.
-</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>activeprotect</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>The parent node for ActiveProtect settings (see <code>whitelist</code> and <code>http_ban_rate</code> below)</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>whitelist</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Must be nested under <code>activeprotect</code>. A comma-separated whitelist of IPs that should be ignored by your ActiveProtect configuration.</td>
-    <td>All</td>
-  </tr>
-  <tr>
-    <td><code>http_ban_rate</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
-    <td>Set the threshold of *requests per minute* from a single IP address. The default is <code>2000</code>.</td>
-    <td>All</td>
-  </tr> 
-</tbody>
-</table>
-
-
-#### Important
-<div class="notice notice-warning">
-<p>In order to use a <em>vpc_id</em>, you must provide <em>subnet_id</em> for all servers used by your application.</p>
-</div>
+For Rack use [Rails](#rails) settings (note that `asset_pipeline_precompile` does not apply to Rack servers). 
 
 ### Example YAML for Rack
 
@@ -610,7 +478,7 @@ These checks define tests to confirm whether your application has been successfu
     <td>All</td>
   </tr>
   <tr>
-    <td><code>port</code></td>
+    <td><code>endpoint</code></td>
      <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The URL, path or endpoint that should be checked. This can be any URL in the application.</td>
     <td>All</td>
@@ -646,7 +514,7 @@ These checks define tests to confirm whether your application has been successfu
 
 ## Sinatra
 
-For Sinatra use [Rack](#rack)
+For Sinatra use [Rails](#rails)
 
 {% endif %}
 

@@ -125,55 +125,55 @@ These are the parameters that the _server_ section can take:
 <tbody>
   <tr>
     <td><code>unique_name</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>A unique name for this server (<strong>Required</strong> if you are specifying a server type)</td>
     <td>All</td>
   </tr>
     <tr>
     <td><code>availability_zone</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Availability zone of the server instance in AWS EC2 region.</td>
     <td>AWS</td>
   </tr>
   <tr>
     <td><code>key_name</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the API key for the cloud account where the server will be built. You can see (and edit) all your cloud API key names in your <a href="https://app.cloud66.com/clouds">Dashboard Settings</a>. This is used when an account has multiple keys for a given cloud vendor. The default value is <code>Default</code>.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>region</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The <a href="http://developers.cloud66.com/#cloud-vendor-instance-regions">data center region</a> where the server will be built.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>root_disk_size</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Default size of root disk (in GB) for servers used by application. Default value is 50.</td>
     <td>AWS, Azure, GCE</td>
   </tr>
   <tr>
     <td><code>root_disk_type</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Disk type, accepted values being <code>ssd</code> and <code>magnetic</code>. Default is <code>ssd</code>.</td>
     <td>AWS, GCE</td>
   </tr>
   <tr>
     <td><code>size</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The <a href="http://developers.cloud66.com/#cloud-vendor-instance-names">size of the server instance</a> to be created.</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>subnet_id</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>ID of the AWS subnet in which you would like to create your servers.</td>
     <td>AWS</td>
   </tr>
   <tr>
     <td><code>vendor</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Cloud vendor where the server will be built. Valid values: <code>aws</code>, <code>azure_rm</code> (use <code>azure</code> for older Azure accounts), <code>clouda</code>, <code>digitalocean</code>, <code>googlecloud</code>, <code>hetzner</code>, <code>linode</code>, <code>ovh</code>, <code>packet</code>, <code>rackspace</code>, and <code>vultr</code></td>
     <td>All</td>
   </tr>
@@ -218,13 +218,13 @@ You can deploy to one of your [Registered servers](/{{page.collection}}/how-to-g
 <tbody>
   <tr>
     <td><code>address</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>IP address of the server, only applicable to <a href="/{{page.collection}}/how-to-guides/deployment/registered-servers.html">Registered Servers</a></td>
     <td>Registered servers</td>
   </tr>
   <tr>
     <td><code>unique_name</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Unique name for the registered server</td>
     <td>Registered servers</td>
   </tr>
@@ -257,7 +257,7 @@ You can share a server between two components. This allows you to, for example, 
 <tbody>
   <tr>
     <td><code>same_as</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built or cloned.</span></div></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of another server definition in the same manifest file. This component will use the same server when it is deployed.</td>
     <td>All</td>
   </tr>
