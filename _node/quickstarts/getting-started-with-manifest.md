@@ -13,4 +13,4 @@ permalink: /:collection/:path:output_ext
 
 {% assign product = 'node' %}
 
-{% include tutorials/getting-started-with-manifest.md product = product %}
+{% include quickstarts/getting-started-with-manifest.md product = product %}

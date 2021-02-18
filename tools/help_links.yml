@@ -151,34 +151,20 @@ maestro:
     page: maestro/how-to-guides/build-and-config/building-a-manifest-file.html
     page_anchors:
     - applying-settings-across-all-environments
-    - aws-load-balancer
+    - component-settings
+    - custom-livelog-files
     - deploy-to-your-own-server
-    - docker
-    - elasticsearch
+    - detailed-examples-of-manifest-files
+    - environment-settings
+    - environment-variables
+    - example-of-registered-server
+    - example-of-shared-server
     - external-servers
-    - gateway
-    - gce-load-balancer
-    - glusterfs
-    - haproxy
-    - linode-nodebalancer
-    - load-balancers
     - maestro-product-heading
-    - memcached
-    - mongodb
-    - mysql
-    - nginx
     - overview
-    - postgis
-    - postgresql
-    - rackspace-load-balancer
-    - redis
-    - servers
+    - server-definitions
     - shared-servers
-    - specify-additional-livelog-files
-    - specify-environment-variables
-    - which-component
-    - which-environment
-    - which-server
+    - the-structure-of-a-manifest-file
   building_your_service:
     page: maestro/how-to-guides/build-and-config/building-your-service.html
     page_anchors:
@@ -999,6 +985,45 @@ maestro:
     - preparing-to-restart
     - restarting-servers
     - restarting-via-ssh
+  manifest_database_settings:
+    page: maestro/references/manifest-database-settings.html
+    page_anchors:
+    - elasticsearch
+    - example-yaml-for-elasticsearch
+    - example-yaml-for-glusterfs
+    - example-yaml-for-memcached
+    - example-yaml-for-mongodb
+    - example-yaml-for-mysql
+    - example-yaml-for-postgis
+    - example-yaml-for-postgresql
+    - example-yaml-for-redis
+    - glusterfs
+    - key-to-table-headings
+    - maestro-product-heading
+    - memcached
+    - mongodb
+    - more-on-manifest-files
+    - mysql
+    - overview
+    - postgresql
+    - redis
+  manifest_loadbalancer_settings:
+    page: maestro/references/manifest-loadbalancer-settings.html
+    page_anchors:
+    - aws-load-balancer
+    - example-yaml-for-aws-load-balancers
+    - example-yaml-for-gce-load-balancers
+    - example-yaml-for-haproxy-load-balancers
+    - example-yaml-for-linode-nodebalancer
+    - example-yaml-for-rackspace-load-balancer
+    - gce-load-balancer
+    - haproxy
+    - key-to-table-headings
+    - linode-nodebalancer
+    - maestro-product-heading
+    - more-on-manifest-files
+    - overview
+    - rackspace-load-balancer
   manifest_structure:
     page: maestro/references/manifest-structure.html
     page_anchors:
@@ -1013,6 +1038,20 @@ maestro:
     - second-level-component-type
     - third-level-1-configurations
     - third-level-2-servers
+  manifest_web_settings:
+    page: maestro/references/manifest-web-settings.html
+    page_anchors:
+    - cors-configuration
+    - docker
+    - example-yaml-for-gateway
+    - example-yaml-for-nginx
+    - examples-yaml-for-docker
+    - gateway
+    - key-to-table-headings
+    - maestro-product-heading
+    - more-on-manifest-files
+    - nginx
+    - overview
   memcached:
     page: maestro/how-to-guides/add-ins/memcached.html
     page_anchors:
@@ -2075,32 +2114,20 @@ node:
     page: node/how-to-guides/deployment/building-a-manifest-file.html
     page_anchors:
     - applying-settings-across-all-environments
-    - aws-load-balancer
+    - component-settings
+    - custom-livelog-files
     - deploy-to-your-own-server
-    - elasticsearch
+    - detailed-examples-of-manifest-files
+    - environment-settings
+    - environment-variables
+    - example-of-registered-server
+    - example-of-shared-server
     - external-servers
-    - gateway
-    - gce-load-balancer
-    - glusterfs
-    - haproxy
-    - linode-nodebalancer
-    - load-balancers
-    - memcached
-    - mongodb
-    - mysql
-    - nginx
     - node-product-heading
     - overview
-    - postgis
-    - postgresql
-    - rackspace-load-balancer
-    - redis
+    - server-definitions
     - shared-servers
-    - specify-additional-livelog-files
-    - specify-environment-variables
-    - which-component
-    - which-environment
-    - which-server
+    - the-structure-of-a-manifest-file
   change_psql_directory:
     page: node/how-to-guides/databases/shells/change-psql-directory.html
     page_anchors:
@@ -2514,10 +2541,14 @@ node:
     page: node/quickstarts/getting-started-with-manifest.html
     page_anchors:
     - a-working-example
-    - change-cors-settings
-    - force-nginx-to-update
+    - caution
+    - cloud-content
+    - defining-a-server-for-your-component
+    - no-cloud-content
     - node-product-heading
+    - setting-up-your-first-manifest-file
     - what-is-a-manifest-file
+    - what-youll-need
     - whats-next
   global_search:
     page: node/how-to-guides/common-tools/global-search.html
@@ -2727,6 +2758,45 @@ node:
     - more-help
     - node-product-heading
     - overview
+  manifest_database_settings:
+    page: node/references/manifest-database-settings.html
+    page_anchors:
+    - elasticsearch
+    - example-yaml-for-elasticsearch
+    - example-yaml-for-glusterfs
+    - example-yaml-for-memcached
+    - example-yaml-for-mongodb
+    - example-yaml-for-mysql
+    - example-yaml-for-postgis
+    - example-yaml-for-postgresql
+    - example-yaml-for-redis
+    - glusterfs
+    - key-to-table-headings
+    - memcached
+    - mongodb
+    - more-on-manifest-files
+    - mysql
+    - node-product-heading
+    - overview
+    - postgresql
+    - redis
+  manifest_loadbalancer_settings:
+    page: node/references/manifest-loadbalancer-settings.html
+    page_anchors:
+    - aws-load-balancer
+    - example-yaml-for-aws-load-balancers
+    - example-yaml-for-gce-load-balancers
+    - example-yaml-for-haproxy-load-balancers
+    - example-yaml-for-linode-nodebalancer
+    - example-yaml-for-rackspace-load-balancer
+    - gce-load-balancer
+    - haproxy
+    - key-to-table-headings
+    - linode-nodebalancer
+    - more-on-manifest-files
+    - node-product-heading
+    - overview
+    - rackspace-load-balancer
   manifest_structure:
     page: node/references/manifest-structure.html
     page_anchors:
@@ -2741,6 +2811,18 @@ node:
     - second-level-component-type
     - third-level-1-configurations
     - third-level-2-servers
+  manifest_web_settings:
+    page: node/references/manifest-web-settings.html
+    page_anchors:
+    - cors-configuration
+    - example-yaml-for-gateway
+    - example-yaml-for-nginx
+    - gateway
+    - key-to-table-headings
+    - more-on-manifest-files
+    - nginx
+    - node-product-heading
+    - overview
   memcached:
     page: node/how-to-guides/add-ins/memcached.html
     page_anchors:
@@ -3707,40 +3789,21 @@ rails:
     page: rails/how-to-guides/deployment/building-a-manifest-file.html
     page_anchors:
     - applying-settings-across-all-environments
-    - aws-load-balancer
+    - component-settings
+    - custom-livelog-files
     - deploy-to-your-own-server
-    - elasticsearch
+    - detailed-examples-of-manifest-files
+    - environment-settings
+    - environment-variables
+    - example-of-registered-server
+    - example-of-shared-server
     - external-servers
-    - gateway
-    - gce-load-balancer
-    - glusterfs
-    - haproxy
-    - linode-nodebalancer
-    - load-balancers
-    - memcached
-    - mongodb
-    - mysql
-    - nginx
-    - node-version
-    - node-version-for-rails-applications
     - overview
-    - postgis
-    - postgresql
     - processes
-    - rack
-    - rackspace-load-balancer
-    - rails
     - rails-product-heading
-    - rails-rack-deployment-health-checks
-    - redis
-    - servers
+    - server-definitions
     - shared-servers
-    - sinatra
-    - specify-additional-livelog-files
-    - specify-environment-variables
-    - which-component
-    - which-environment
-    - which-server
+    - the-structure-of-a-manifest-file
   change_psql_directory:
     page: rails/how-to-guides/databases/shells/change-psql-directory.html
     page_anchors:
@@ -4193,11 +4256,15 @@ rails:
     page: rails/quickstarts/getting-started-with-manifest.html
     page_anchors:
     - a-working-example
-    - change-cors-settings
-    - force-nginx-to-update
+    - caution
+    - cloud-content
+    - defining-a-server-for-your-component
     - how-do-i-use-a-manifest-file
+    - no-cloud-content
     - rails-product-heading
+    - setting-up-your-first-manifest-file
     - what-is-a-manifest-file
+    - what-youll-need
     - whats-next
   global_search:
     page: rails/how-to-guides/common-tools/global-search.html
@@ -4448,6 +4515,45 @@ rails:
     - overview
     - permissions-errors
     - rails-product-heading
+  manifest_database_settings:
+    page: rails/references/manifest-database-settings.html
+    page_anchors:
+    - elasticsearch
+    - example-yaml-for-elasticsearch
+    - example-yaml-for-glusterfs
+    - example-yaml-for-memcached
+    - example-yaml-for-mongodb
+    - example-yaml-for-mysql
+    - example-yaml-for-postgis
+    - example-yaml-for-postgresql
+    - example-yaml-for-redis
+    - glusterfs
+    - key-to-table-headings
+    - memcached
+    - mongodb
+    - more-on-manifest-files
+    - mysql
+    - overview
+    - postgresql
+    - rails-product-heading
+    - redis
+  manifest_loadbalancer_settings:
+    page: rails/references/manifest-loadbalancer-settings.html
+    page_anchors:
+    - aws-load-balancer
+    - example-yaml-for-aws-load-balancers
+    - example-yaml-for-gce-load-balancers
+    - example-yaml-for-haproxy-load-balancers
+    - example-yaml-for-linode-nodebalancer
+    - example-yaml-for-rackspace-load-balancer
+    - gce-load-balancer
+    - haproxy
+    - key-to-table-headings
+    - linode-nodebalancer
+    - more-on-manifest-files
+    - overview
+    - rackspace-load-balancer
+    - rails-product-heading
   manifest_structure:
     page: rails/references/manifest-structure.html
     page_anchors:
@@ -4462,6 +4568,26 @@ rails:
     - second-level-component-type
     - third-level-1-configurations
     - third-level-2-servers
+  manifest_web_settings:
+    page: rails/references/manifest-web-settings.html
+    page_anchors:
+    - cors-configuration
+    - example-yaml-for-gateway
+    - example-yaml-for-nginx
+    - example-yaml-for-rack
+    - example-yaml-for-rails
+    - example-yaml-for-rails-health-checks
+    - gateway
+    - key-to-table-headings
+    - more-on-manifest-files
+    - nginx
+    - node-version-for-rails-applications
+    - overview
+    - rack
+    - rails
+    - rails-product-heading
+    - rails-rack-deployment-health-checks
+    - sinatra
   memcached:
     page: rails/how-to-guides/add-ins/memcached.html
     page_anchors:

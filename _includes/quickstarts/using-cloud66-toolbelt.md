@@ -141,7 +141,8 @@ We apply naming shortcuts to both application and server names, as well as serve
 We just need you to type enough of a name for it to be unique. For example, if you only have one application that starts with _m_, you can simply type _m_.
 Similarly, if you only have one web server, you can type _w_ instead of _web_.
 
+<!---
 **Auto-complete**
 
 Follow our [instructions](https://github.com/cloud66/cx/wiki/Setting-up-Auto-complete-for-the-toolbelt) to add an auto-complete feature to your toolbelt, which will make typing commands out by hand much quicker.
-
+--->
