@@ -123,12 +123,6 @@ These are the parameters that the _server_ section can take:
   </tr>
 </thead>
 <tbody>
-  <tr>
-    <td><code>unique_name</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>A unique name for this server (<strong>Required</strong> if you are specifying a server type)</td>
-    <td>All</td>
-  </tr>
     <tr>
     <td><code>availability_zone</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
@@ -170,6 +164,12 @@ These are the parameters that the _server_ section can take:
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>ID of the AWS subnet in which you would like to create your servers.</td>
     <td>AWS</td>
+  </tr>
+  <tr>
+    <td><code>unique_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>A unique name for this server (<strong>Required</strong> if you are specifying a server type)</td>
+    <td>All</td>
   </tr>
   <tr>
     <td><code>vendor</code></td>
