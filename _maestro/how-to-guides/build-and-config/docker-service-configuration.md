@@ -192,7 +192,7 @@ Below is a table of the available configurations for a given service with a brie
       </ul>
     </nav>
 
-        <section id="V2-First" class="Tabs-content js_tab_content">
+<section id="V2-First" class="Tabs-content js_tab_content">
 
 <table class="table table-bordered table-striped table-small"> 
    <tbody> 
@@ -271,11 +271,7 @@ Below is a table of the available configurations for a given service with a brie
     <tr> 
      <td> <a href="#setting-a-service-account-name">service_account_name</a> </td> 
      <td> Assigns the service to a specific Kubernetes Service Account. The default value is <code>default</code> </td> 
-    </tr>  
-    <tr> 
-     <td> privileged <em>(default: false)</em> </td> 
-     <td> Boolean value to indicate whether the container should be <a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities">run with extended privileges</a>. </td> 
-    </tr> 
+    </tr>   
     <tr> 
      <td> <a href="/maestro/how-to-guides/build-and-config/service-lifecycle-management.html#pre_start">pre_start_signal</a> </td> 
      <td> This is a signal that is sent to the existing running containers of the service before the new service containers are started during deployment. </td> 
@@ -292,6 +288,10 @@ Below is a table of the available configurations for a given service with a brie
      <td> <a href="/maestro/how-to-guides/build-and-config/service-network-configuration.html#restart">restart_on_deploy</a> <em>(default: true)</em> </td> 
      <td> Boolean value to indicate whether the containers of this service should be restarted during deployment. </td> 
     </tr> 
+    <tr> 
+     <td> security_context </td> 
+     <td> This is a hash containing the Kubernetes security context values you wish to apply. Valid keys are: <i>fs_group, host_ipc, host_network, host_pid, privileged, run_as_group, run_as_non_root, run_as_user, supplemental_groups</i>. </td> 
+    </tr>
     <tr> 
      <td> <a href="/maestro/how-to-guides/build-and-config/service-network-configuration.html#stop_grace">stop_grace</a> </td> 
      <td> Duration between the Docker <code>TERM</code> and <code>KILL</code> signals when Docker stop is run and a container is stopped. </td> 
@@ -328,10 +328,10 @@ Below is a table of the available configurations for a given service with a brie
    </tbody> 
   </table> 
 
-        </section>
+</section>
 
 
-        <section id="V1-First" class="Tabs-content js_tab_content is-hidden">
+<section id="V1-First" class="Tabs-content js_tab_content is-hidden">
 
 <table class="table table-bordered table-striped table-small"> 
    <tbody> 
@@ -448,7 +448,7 @@ Below is a table of the available configurations for a given service with a brie
   </table> 
   
   
-        </section>
+</section>
 </div>
 
 ## More help
