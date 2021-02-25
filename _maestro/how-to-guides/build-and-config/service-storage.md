@@ -29,7 +29,7 @@ You can optionally add `ro` or `rw` to specify that the container can read/write
 ```yaml
 services:
   <service_name>:
-    volumes: ["/tmp/foo:/tmp/host/foo", "/tmp/bar:/tmp/host/bar:ro"]
+    volumes: ["/tmp/host/foo:/tmp/container/foo", "/tmp/host/bar:/tmp/container/bar:ro"]
 ```
 
 This is the equivalent expanded form of the example above:
@@ -37,13 +37,13 @@ This is the equivalent expanded form of the example above:
 services:
   <service_name>:
     volumes:
-    - mount_path: "/tmp/host/foo"
+    - mount_path: "/tmp/container/foo"
       host_path: 
-        path: "/tmp/foo"
-    - mount_path: "/tmp/host/bar"
+        path: "/tmp/host/foo"
+    - mount_path: "/tmp/container/bar"
       read_only: true
       host_path: 
-        path: "/tmp/bar"
+        path: "/tmp/host/bar"
 ```
 
 ## Adding Secret and/or ConfigMap storage volumes
@@ -67,11 +67,13 @@ services:
     - mount_path: "/secret-config-store"
       secret: 
         from: "config_store"
+
     # Include all Environment Variables into a ConfigMap
     # and mount it in your container at: "/config-map-env-vars" 
     - mount_path: "/config-map-env-vars"
       config_map:
         from: "env_vars"
+
     # Include ConfigStore entries with metadata matching "mount=true" into a Secret
     # and mount it in your container at: "/secret-config-store-filtered" 
     - mount_path: "/secret-config-store-filtered"
@@ -83,19 +85,7 @@ services:
 ## Adding custom storage volumes (advanced)
 
 If you need to connect a container to a non-standard volume (for example NFS), Maestro supports all the same [volume types as Kubernetes.](https://kubernetes.io/docs/concepts/storage/volumes/#types-of-volumes) 
-
-Advanced storage volumes are also defined in YAML format, but in a more verbose syntax. Our "simple" example above, [using hostPath](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath), would be written as:
-
-```yaml
-services:
-  <service_name>:
-    volumes:
-    - mount_path: "/tmp"
-      host_path: 
-        path: "/tmp_host"
-```
-
-Maestro supports all Kubernetes-valid syntax for volume definitions.  For example an [emptyDir volume](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir)  would look something like:
+For example a custom [emptyDir volume](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir)  would look something like:
 
 ```yaml
 services:
