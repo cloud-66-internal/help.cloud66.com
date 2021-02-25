@@ -154,11 +154,11 @@ or
 
 `_env(STACK[STACK_UID].SERVICE[SERVICE_NAME].ENV_VAR)`
 
-## Calling environment variables in a service
+## Defining environment variables in a service
 
 Environment variables can be used in a Maestro service definition (`service.yml` file) to pass variables between application components. 
 
-The syntax for calling environment variables in a service definition is:
+The syntax for defining environment variables in a service definition is:
 
 ```yaml
 services:
@@ -237,7 +237,7 @@ CMD ["/myapp/main.rb"]
 
 For more examples, please read our [full how-to guide on using env vars in Dockerfiles](/maestro/how-to-guides/build-and-config/env-vars-in-dockerfile.html).
 
-## Calling environment variables in code
+## Using environment variables in code
 
 Using environment variables in your application logic is done differently depending on your application settings. Here are some common examples:
 

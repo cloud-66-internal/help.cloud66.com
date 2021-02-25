@@ -142,7 +142,7 @@ services:
 
 Any [environment variable](/maestro/how-to-guides/build-and-config/env-vars-advanced.html) defined in your application will be made available within your service container.
 
-The syntax for calling environment variables in a service definition is:
+The syntax for defining environment variables in a service definition is:
 
 ```yaml
 services:

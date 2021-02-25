@@ -28,13 +28,61 @@ You can optionally add `ro` or `rw` to specify that the container can read/write
 
 ```yaml
 services:
-    <service_name>:
-        volumes: ["/tmp:/tmp_host", "/readonly/folder:/mnted_readony:ro"]
+  <service_name>:
+    volumes: ["/tmp/foo:/tmp/host/foo", "/tmp/bar:/tmp/host/bar:ro"]
 ```
 
-## Adding advanced storage volumes
+This is the equivalent expanded form of the example above:
+```yaml
+services:
+  <service_name>:
+    volumes:
+    - mount_path: "/tmp/host/foo"
+      host_path: 
+        path: "/tmp/foo"
+    - mount_path: "/tmp/host/bar"
+      read_only: true
+      host_path: 
+        path: "/tmp/bar"
+```
 
-If you need to connect a container to a non-standard volume (for example nfs), Maestro supports all the same [volume types as Kubernetes.](https://kubernetes.io/docs/concepts/storage/volumes/#types-of-volumes) 
+## Adding Secret and/or ConfigMap storage volumes
+
+Cloud 66 has a specific syntax to allow you to generate a [Kubernetes Secret](https://kubernetes.io/docs/concepts/configuration/secret/) (or [Kubernetes ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/)), and mount them to a path inside your service containers - making them available in a local folder your service application. 
+
+You can choose whether to populate the mounted folder from a Secret or ConfigMap - the contents of which are automatically generated from your application [ConfigStore](/maestro/how-to-guides/build-and-config/config-store.html) or [Environment Variables](/maestro/how-to-guides/build-and-config/env-vars-advanced.html). 
+
+Optionally you can filter the included values based on a tag/metadata filter. The filter must be of the syntax `key=value` ie. `foo=bar`. When applied to ConfigStore entries, it will match based on the entry metadata. When applied to Environment Variables, it will match based on [tags](/maestro/how-to-guides/deployment/tagging-components.html).
+
+<div class="notice notice-warning"><p>Because Secret and ConfigMap stores are not reference service-specific, you can not use service-level Environment Variables.</p></div>
+
+The following examples illustrate your options: 
+
+```yaml
+services:
+  <service_name>:
+    volumes:
+    # Include all ConfigStore into a Secret
+    # and mount it in your container at: "/secret-config-store" 
+    - mount_path: "/secret-config-store"
+      secret: 
+        from: "config_store"
+    # Include all Environment Variables into a ConfigMap
+    # and mount it in your container at: "/config-map-env-vars" 
+    - mount_path: "/config-map-env-vars"
+      config_map:
+        from: "env_vars"
+    # Include ConfigStore entries with metadata matching "mount=true" into a Secret
+    # and mount it in your container at: "/secret-config-store-filtered" 
+    - mount_path: "/secret-config-store-filtered"
+      secret:
+        from: "config_store"
+        filter: "mount=true"
+```
+
+## Adding custom storage volumes (advanced)
+
+If you need to connect a container to a non-standard volume (for example NFS), Maestro supports all the same [volume types as Kubernetes.](https://kubernetes.io/docs/concepts/storage/volumes/#types-of-volumes) 
 
 Advanced storage volumes are also defined in YAML format, but in a more verbose syntax. Our "simple" example above, [using hostPath](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath), would be written as:
 
