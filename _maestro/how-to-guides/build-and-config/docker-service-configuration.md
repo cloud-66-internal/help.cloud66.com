@@ -221,6 +221,10 @@ Below is a table of the available configurations for a given service with a brie
      <td>Limits the <a href="/maestro/how-to-guides/build-and-config/service-resources.html#limiting-the-number-of-containers">number of containers</a> or the <a href="/maestro/how-to-guides/build-and-config/service-resources.html">resource usage</a> of a service across the cluster, or <a href="/maestro/how-to-guides/build-and-config/service-resources.html#allocating-services-to-nodes">allocates services to nodes</a> based on names and/or tags. </td> 
     </tr> 
     <tr> 
+     <td> constraints/tolerations </td> 
+     <td> This is an optional hash for advanced configuration of <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/">Kubernetes Tolerations</a>.</td> 
+    </tr>
+    <tr> 
      <td> <a href="/maestro/how-to-guides/build-and-config/building-your-service.html">deploy_command</a> </td> 
      <td> Specifies the command you would like to run during application deploy (runs once per service). </td> 
     </tr> 
@@ -290,12 +294,12 @@ Below is a table of the available configurations for a given service with a brie
     </tr> 
     <tr> 
      <td> security_context </td> 
-     <td> This is a hash containing the Kubernetes security context values you wish to apply. Valid keys are: <i>fs_group, host_ipc, host_network, host_pid, privileged, run_as_group, run_as_non_root, run_as_user, supplemental_groups</i>. </td> 
+     <td> This is an optional hash for advanced configuration of Kubernetes Security Context. Valid keys are: <i>fs_group, host_ipc, host_network, host_pid, privileged, run_as_group, run_as_non_root, run_as_user, supplemental_groups</i>. </td> 
     </tr>
     <tr> 
      <td> <a href="/maestro/how-to-guides/build-and-config/service-network-configuration.html#stop_grace">stop_grace</a> </td> 
      <td> Duration between the Docker <code>TERM</code> and <code>KILL</code> signals when Docker stop is run and a container is stopped. </td> 
-    </tr> 
+    </tr>
     <tr> 
      <td> <a href="/maestro/how-to-guides/build-and-config/service-network-configuration.html#traffic-matches">traffic_matches</a> </td> 
      <td> The automatically configured traffic names in your Nginx config that will route traffic to these containers based on request DNS name. Allows microservices on the same port routes by subdomain for instance. </td> 
