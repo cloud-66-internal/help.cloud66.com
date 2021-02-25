@@ -54,7 +54,7 @@ You can choose whether to populate the mounted folder from a Secret or ConfigMap
 
 Optionally you can filter the included values based on a tag/metadata filter. The filter must be of the syntax `key=value` ie. `foo=bar`. When applied to ConfigStore entries, it will match based on the entry metadata. When applied to Environment Variables, it will match based on [tags](/maestro/how-to-guides/deployment/tagging-components.html).
 
-<div class="notice notice-warning"><p>Because Secret and ConfigMap stores are not reference service-specific, you can not use service-level Environment Variables.</p></div>
+<div class="notice notice-warning"><p>Because Secret and ConfigMap stores are application level and not service-specific, you can not use service-level Environment Variables.</p></div>
 
 The following examples illustrate your options: 
 
