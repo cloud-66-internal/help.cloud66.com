@@ -1122,9 +1122,10 @@ maestro:
     page: maestro/references/network-configuration.html
     page_anchors:
     - add-a-firewall-rule
-    - allowing-traffic
-    - configure-network-traffic
-    - denying-traffic
+    - allowed-web-sources
+    - configuring-traffic-rules
+    - deny-access-from-rules
+    - dont-block-access-from-rules
     - firewall
     - maestro-product-heading
     - redirect-http-to-https
@@ -1767,6 +1768,7 @@ maestro:
     - examples-7
     - gateway-management
     - getting-service-information
+    - how-to-uninstall-the-toolbelt
     - installation
     - installing-on-a-server-headless
     - job-management
@@ -2886,9 +2888,10 @@ node:
     page: node/references/network-configuration.html
     page_anchors:
     - add-a-firewall-rule
-    - allowing-traffic
-    - configure-network-traffic
-    - denying-traffic
+    - allowed-web-sources
+    - configuring-traffic-rules
+    - deny-access-from-rules
+    - dont-block-access-from-rules
     - firewall
     - node-product-heading
     - redirect-http-to-https
@@ -3423,6 +3426,7 @@ node:
     - examples-7
     - gateway-management
     - getting-service-information
+    - how-to-uninstall-the-toolbelt
     - installation
     - installing-on-a-server-headless
     - job-management
@@ -4670,9 +4674,10 @@ rails:
     page: rails/references/network-configuration.html
     page_anchors:
     - add-a-firewall-rule
-    - allowing-traffic
-    - configure-network-traffic
-    - denying-traffic
+    - allowed-web-sources
+    - configuring-traffic-rules
+    - deny-access-from-rules
+    - dont-block-access-from-rules
     - firewall
     - maintenance-mode
     - rails-product-heading
@@ -5330,6 +5335,7 @@ rails:
     - examples-7
     - gateway-management
     - getting-service-information
+    - how-to-uninstall-the-toolbelt
     - installation
     - installing-on-a-server-headless
     - job-management
@@ -6188,6 +6194,7 @@ skycap:
     - examples-7
     - gateway-management
     - getting-service-information
+    - how-to-uninstall-the-toolbelt
     - installation
     - installing-on-a-server-headless
     - job-management
