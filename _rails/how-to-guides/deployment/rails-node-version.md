@@ -13,14 +13,14 @@ permalink: /:collection/:path:output_ext
 
 ## Controlling the Node version for your Rails application
 
-We automatically install the latest release of Node version 6.x.x when we set up your Rack/Rails application servers. You can control which version is installed by editing the [manifest file](/rails/how-to-guides/deployment/building-a-manifest-file.html) for the Rails application. 
+We automatically install the latest release of Node version 10.x.x when we set up your Rack/Rails application servers. You can control which version is installed by editing the [manifest file](/rails/how-to-guides/deployment/building-a-manifest-file.html) for the Rails application. 
 
 ```yaml
 rails:
   configuration:
     node_version: "12"       # will install latest v12.x.x
     node_version: "12.18"    # will install latest v12.18.x
-    node_version: "12.18.3"  # will install specific v12.18.4
+    node_version: "12.18.3"  # will install specific v12.18.3
 ```
 
 #### Applying changes

@@ -41,3 +41,5 @@
 {% include references/toolbelt/upload.md %}
 
 {% include references/toolbelt/users.md %}
+
+{% include references/toolbelt/uninstall.md %}
