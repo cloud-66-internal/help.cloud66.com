@@ -86,7 +86,14 @@ $ cx settings set -s my_app_name continuous.deploy true
 
 This will create a new webhook for your repository on GitHub or simply modify an existing one to let Cloud66 receive _deployment_ events as well.
 
+#### Warning
+<div class="notice notice-warning"><p>If you edit your webhooks manually on Github, they must be configured to be triggered by both <em>Push</em> and <em>Deployment</em> events in order for continuous deployment to work.</p></div>
+
 With this feature enabled, whenever you push a new commit, Cloud 66 will automatically generate a new _deployment event_ based on receiving the _push event_ from GitHub. We will also send _deployment status events_ on different deployment statuses, such as started, canceled, succeeded and failed.
+
+#### Note
+<div class="notice"><p>The deployment event will be created with the same environment as your application.</p></div>
+
 
 ## Adding redeployment hooks to your pipeline
 
