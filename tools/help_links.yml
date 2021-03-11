@@ -628,9 +628,8 @@ maestro:
     - bash-scripts
     - basic-referencing-syntax
     - calling-env-vars-in-a-dockerfile
-    - calling-environment-variables-in-a-service
-    - calling-environment-variables-in-code
     - default-environment-variables
+    - defining-environment-variables-in-a-service
     - during-deployment
     - intra-app-referencing-syntax
     - intra-service-referencing
@@ -644,6 +643,7 @@ maestro:
     - referencing-existing-variables
     - syntax-examples
     - using-auto-generate
+    - using-environment-variables-in-code
     - working-example
     - yaml-files
   env_vars_in_dockerfile:
@@ -1539,7 +1539,8 @@ maestro:
   service_storage:
     page: maestro/how-to-guides/build-and-config/service-storage.html
     page_anchors:
-    - adding-advanced-storage-volumes
+    - adding-custom-storage-volumes-advanced
+    - adding-secret-andor-configmap-storage-volumes
     - adding-simple-storage-volumes
     - maestro-product-heading
     - note
