@@ -541,9 +541,9 @@ maestro:
   deployment_authorization:
     page: maestro/how-to-guides/deployment/deployment-authorization.html
     page_anchors:
-    - about-deployment-authorization
+    - about-application-update-lockdown
     - cloud-lockdown
-    - enabling-deployment-lockdown
+    - enabling-application-update-lockdown
     - how-lockdown-works
     - maestro-product-heading
   deployment_gateway:
