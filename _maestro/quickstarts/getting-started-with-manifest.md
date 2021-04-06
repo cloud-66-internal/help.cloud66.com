@@ -28,7 +28,7 @@ If you're already familiar with the basics of manifest files, refer to [Building
 
 At first glance, `manifest.yml` may seem very similar to the service definition in `service.yml`. However, they do very different things:
 
-* **service.yml** defines your Docker containers and other application *services*
+* **[service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html)** defines your Docker containers and other application *services*
 * **manifest.yml** defines the infrastructure on which those services run. This includes both the "hardware" (virtual or real servers) and the "software" (such as the version of Docker your application uses).
 
 ### Validating YAML

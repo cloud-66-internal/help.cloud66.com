@@ -10,4 +10,4 @@ order: 1
 permalink: /:collection/:path:output_ext
 ---
 
-{% include references/toolbelt/toolbelt.md %}
+{% include references/toolbelt/toolbelt.md product = page.collection %}

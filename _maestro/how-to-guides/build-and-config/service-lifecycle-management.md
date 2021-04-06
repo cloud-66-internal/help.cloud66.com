@@ -47,6 +47,7 @@ There are several directives you can set in your service configuration (`service
 - [restart_on_deploy](#restart)
 - [stop_grace](#stop-grace)
 
+(Read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help on customizing your service configuration.)
 
 ### Health
 

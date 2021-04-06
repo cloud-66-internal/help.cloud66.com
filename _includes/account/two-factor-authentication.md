@@ -57,7 +57,3 @@ To add a physical key (including a Krypton key):
     - Touch the "scan" button at the bottom of the app
     - Scan the QR code displayed by in the pairing panel
 - After you have paired your browser to Krypton, follow the instructions above to add a Krypton key to Cloud 66. It's best to have the Krypton app open when you start the process as this speeds things up.
-
-## Add a recovery phone number
-
-We strongly suggest that you add your phone number on the *Account* page to recover your account should you at some point not be able to access your verification codes on your phone.
