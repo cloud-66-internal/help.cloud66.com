@@ -27,6 +27,7 @@ service:
     - "customer:fred"
     - "highvisibility"
 ```
+(Read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help on customizing your service configuration.)
 
 When you deploy the service defined above, the following labels will be added to your Kubernetes Workload Resources for this service (ie. Deployments, Daemonsets, Jobs and Pods):
 

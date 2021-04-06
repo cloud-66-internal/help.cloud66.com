@@ -10,12 +10,11 @@ tags: ["customization"]
 permalink: /:collection/:path:output_ext
 ---
 
-
-
 ## Overview
 
 Sometimes you need to run multiple applications on the same server. This could be because none of those applications has enough traffic to justify having a dedicated application for itself or it could be because all the apps on the application share many resources. Whatever the reason, you can achieve multi-tenancy for your applications with [Maestro](https://www.cloud66.com/containers/maestro).
 
+These custom configurations all rely on `service.yml`. You can also read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more a more in-depth look service configurations.
 
 ## Multiple Services
 

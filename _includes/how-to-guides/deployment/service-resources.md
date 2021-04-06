@@ -2,7 +2,7 @@
 
 By default, Docker services will use as much CPU and memory as they require. You may wish to set a hard limit on memory, or the relative CPU shares used by a service. 
 
-This can be accomplished in Maestro by adding the `constraints/resources` directive to your service's `service.yml`.
+This can be accomplished in Maestro by adding the `constraints/resources` directive to your service's `service.yml`. Read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help.
 
 ### CPU limits
 

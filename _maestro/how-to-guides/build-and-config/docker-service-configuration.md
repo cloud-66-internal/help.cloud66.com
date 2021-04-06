@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-Service configuration allows you to be more explicit about your Maestro services and control settings that are not usually available through the user interface or Cloud 66 Toolbelt.
+Service configuration allows you to be more explicit about your Maestro services and control settings that are not usually available through the user interface or Cloud 66 Toolbelt. These are defined in the `service.yml` file. 
 
 These settings describe the composition of your services. Here are some common examples of service configurations you can define:
 
@@ -24,7 +24,7 @@ These settings describe the composition of your services. Here are some common e
 
 For a full list of available options, see the [table](#service-configuration-options) at the end of this document.
 
-## Specifying service configurations
+## Accessing service.yml
 
 While you're building your application, custom service configurations can be accessed by clicking on the *Advanced* tab. This gives you direct access to editing the `service.yml` for your application.
 
@@ -32,7 +32,7 @@ Once your application has been built, you can access `service.yml` under *Config
 
 ## Service configuration examples
 
-We have taken these examples from our public Samples repository that you can [access here](https://github.com/cloud66-samples). They are not intended for use as anything except examples.
+We have taken these examples from our public samples repository that you can [access here](https://github.com/cloud66-samples). They are not intended for use as anything except examples.
 
 ### Single service with MySQL database
 

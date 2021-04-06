@@ -19,7 +19,7 @@ The settings described below allow you to control the pace of this process and m
 - Max Unavailable
 - Max Surge
 
-These settings are service-specific, so different services in a single app can use different options. Both can be specified under the `constraints` directive in the `service.yml`.
+These settings are service-specific, so different services in a single app can use different options. Both can be specified under the `constraints` directive in the `service.yml`. Read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help.
 
 ## Using the Max Unavailable setting
 
