@@ -164,10 +164,8 @@ The syntax for defining environment variables in a service definition is:
 services:
  service_name:
    env_vars:
-    VAR1: _env(VALUE_OF_VARIABLE)
+    VAR1: _env(VARIABLE_NAME)
 ```
-
-You can also use `_env(VALUE_OF_VARIABLE)` if you prefer that syntax. 
 
 ## Syntax examples
 
@@ -176,7 +174,7 @@ services:
  <service_name>:
   env_vars:
    # Setting an environment variable
-   ENV_NAME1: VALUE
+   ENV_NAME1: VAR_NAME
 
    # Referencing an application-wide variable
    ENV_NAME2: _env(STACK_ENV_VAR_NAME)
