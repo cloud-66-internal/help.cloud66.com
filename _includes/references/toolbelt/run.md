@@ -24,24 +24,33 @@ At least one of the optional server parameters are necessary in order to identif
 |server name (optional) 	   | 	—		| Name of the server to access |
 |server ip (optional)	 	   |	—	| IP of the server to access |
 |server role (optional)	 	   |	—	| Role of the server to access (e.g. web) |
-|service (optional)	 	   |	—	| The service in which to run the command (Docker applications only) |
+|service (optional)	 	   |	—	| The service in which to run the command (Maestro applications only) |
 {:.table}
 
 
-### Examples
+### Example
 
 ```shell
 $ cx run -s "My Awesome App" --server web1 'pwd'
 ```
 
-The service parameter applies to Docker applications and allows you to enter a Docker container with your command (based on the latest image of that service). Some examples are:
+### Examples of service usage
 
+The service parameter only applies to Maestro applications and allows you to enter a Docker container with your command (based on the latest image of that service).
+
+* This command runs "ls -la" in a **new** container of the "webapp" service, returns the output, and exits:
 ```shell
-$ cx run -s My_Awesome_App --server web1 --service my_api_service '/bin/bash'
+$ cx run -s mystack --svc webapp 'ls -la'
 ```
 
-
+* This command runs "bundle exec rails c" in a **new** container of the "api" service, and remains in the session
 ```shell
-$ cx run -s My_Awesome_App --server web1 --service my_api_service 'bundle exec rails c'
+$ cx run -s mystack --service api --interactive 'bundle exec rails c'
 ```
+
+* This command runs "bundle exec rails c" **inside** the specified container (web-123), and remains in the session.
+```shell
+$ cx run -s mystack --container web-123 -i 'bundle exec rails c'
+```
+
 
