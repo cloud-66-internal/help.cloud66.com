@@ -577,6 +577,7 @@ maestro:
   docker_service_configuration:
     page: maestro/how-to-guides/build-and-config/docker-service-configuration.html
     page_anchors:
+    - accessing-serviceyml
     - adding-a-daemonset
     - database-configurations
     - environment-variables
@@ -588,7 +589,6 @@ maestro:
     - service-configuration-options
     - setting-a-service-account-name
     - single-service-with-mysql-database
-    - specifying-service-configurations
     - using-habitus-for-builds
   docker_tasks:
     page: maestro/how-to-guides/add-ins/docker-tasks.html
@@ -1750,6 +1750,7 @@ maestro:
     - example-16
     - example-17
     - example-18
+    - example-19
     - example-2
     - example-3
     - example-4
@@ -1765,7 +1766,7 @@ maestro:
     - examples-4
     - examples-5
     - examples-6
-    - examples-7
+    - examples-of-service-usage
     - gateway-management
     - getting-service-information
     - how-to-uninstall-the-toolbelt
@@ -1895,7 +1896,6 @@ maestro:
   two_factor_authentication:
     page: maestro/account/two-factor-authentication.html
     page_anchors:
-    - add-a-recovery-phone-number
     - adding-a-physical-fido-security-key
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
@@ -3408,6 +3408,7 @@ node:
     - example-16
     - example-17
     - example-18
+    - example-19
     - example-2
     - example-3
     - example-4
@@ -3423,7 +3424,7 @@ node:
     - examples-4
     - examples-5
     - examples-6
-    - examples-7
+    - examples-of-service-usage
     - gateway-management
     - getting-service-information
     - how-to-uninstall-the-toolbelt
@@ -3551,7 +3552,6 @@ node:
   two_factor_authentication:
     page: node/account/two-factor-authentication.html
     page_anchors:
-    - add-a-recovery-phone-number
     - adding-a-physical-fido-security-key
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
@@ -5317,6 +5317,7 @@ rails:
     - example-16
     - example-17
     - example-18
+    - example-19
     - example-2
     - example-3
     - example-4
@@ -5332,7 +5333,7 @@ rails:
     - examples-4
     - examples-5
     - examples-6
-    - examples-7
+    - examples-of-service-usage
     - gateway-management
     - getting-service-information
     - how-to-uninstall-the-toolbelt
@@ -5471,7 +5472,6 @@ rails:
   two_factor_authentication:
     page: rails/account/two-factor-authentication.html
     page_anchors:
-    - add-a-recovery-phone-number
     - adding-a-physical-fido-security-key
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
@@ -6176,6 +6176,7 @@ skycap:
     - example-16
     - example-17
     - example-18
+    - example-19
     - example-2
     - example-3
     - example-4
@@ -6191,7 +6192,7 @@ skycap:
     - examples-4
     - examples-5
     - examples-6
-    - examples-7
+    - examples-of-service-usage
     - gateway-management
     - getting-service-information
     - how-to-uninstall-the-toolbelt
@@ -6309,7 +6310,6 @@ skycap:
   two_factor_authentication:
     page: skycap/account/two-factor-authentication.html
     page_anchors:
-    - add-a-recovery-phone-number
     - adding-a-physical-fido-security-key
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
