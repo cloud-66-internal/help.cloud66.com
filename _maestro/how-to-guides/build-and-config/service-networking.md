@@ -16,6 +16,8 @@ This guide covers more complex and advanced cases of service networking. If you'
 
 If you need an introduction to the concept of Service Networking, you can find one [here](/maestro/the-basics/concepts-and-terminology.html#service-networking).
 
+Read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help on customizing your service configuration.
+
 ## Non-HTTP ports (TCP and UDP)
 
 If your application does not use HTTP traffic you can map ports by specifying the protocol (TCP or UDP).

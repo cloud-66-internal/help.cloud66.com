@@ -42,8 +42,8 @@ These are the available settings:
 |continuous.deploy|false|Enable or disable [continuous deployment on Github](/{{page.collection}}/how-to-guides/deployment/redeployment-hook.html#github-integration). |
 |custom.build.command|-|Set custom build command. Only applies to [Sinatra](/rails/how-to-guides/deployment/sinatra-stacks.html) or [Padrino stacks](/rails/how-to-guides/deployment/padrino-stacks.html)|
 |custom.deploy.command|-|Set custom deploy command. Only applies to [Sinatra](/rails/how-to-guides/deployment/sinatra-stacks.html) or [Padrino stacks](/rails/how-to-guides/deployment/padrino-stacks.html)|
-|db.check.backup.size|true|Enable/Disable Check free space before taking backup|
-|deploy.parallel|true|Enable or disable [parallel deployments](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html) on the application.|
+|db.check.backup.size|true|Enable/Disable Check free space before taking backup|{% if include.product == 'rails' %}
+|deploy.parallel|true|Enable or disable [parallel deployments](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html) on the application.|{% endif %}
 |git.branch|-|Change the Git branch of the application repository|
 |git.repository|-|Change the Git repository URL|
 |logrotate.app.frequency|daily| For application specific log files accepted value: `hourly`, `daily`, `weekly` and `monthly`|

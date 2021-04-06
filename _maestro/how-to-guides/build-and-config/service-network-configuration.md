@@ -68,6 +68,8 @@ There are a number of directives you can set in your service configuration to cu
 - [ports](#ports)
 - [traffic matches](#traffic-matches)
 
+(Read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help on customizing your service configuration.)
+
 ### DNS Behaviour
 
 The `dns_behaviour` directive allows you to change the default behavior of returned DNS addresses of different versions. As outlined above, ElasticDNS always try to return the version of the container that has the same version of the caller. You can change this behavior by setting `dns_behaviour` value to `non-versioned`, in which case ElasticDNS will return the address of containers with the latest version.

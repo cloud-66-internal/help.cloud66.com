@@ -6,7 +6,7 @@ categories: tutorials
 order: 4
 lead: "How to configure the service network"
 legacy: false
-tags: ["security", "customization", "service.yml"]
+tags: ["security", "customization"]
 permalink: /:collection/:path:output_ext
 ---
 

@@ -44,6 +44,8 @@ There are two ways to do this:
 * Using the standard *edit service* interface
 * Directly modifying the `service.yml` for your application (this is only recommended for advanced users)
 
+You can also read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help.
+
 ### Editing via the UI
 
 To edit your ports using the standard Maestro user interface:

@@ -21,6 +21,8 @@ Maestro supports four kinds of resource allocations:
 - Number of containers
 - Node allocation
 
+All of these service configurations are defined in your application's `service.yml` file. Read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help on customizing your service configuration.
+
 ## Understanding resource management options
 
 When setting resource parameters, it's vital to understand the differences between your options.

@@ -156,7 +156,7 @@ or
 
 ## Defining environment variables in a service
 
-Environment variables can be used in a Maestro service definition (`service.yml` file) to pass variables between application components. 
+Environment variables can be used in a Maestro service definition (`service.yml` file) to pass variables between application components. Read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help.
 
 The syntax for defining environment variables in a service definition is:
 
@@ -216,6 +216,7 @@ services:
    DATABASES_DBNAME: _env(POSTGRESQL_DATABASE)
    PGBOUNCER_LISTEN_PORT: 5439
 ```
+Read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help.
 
 ## Calling env vars in a Dockerfile
 

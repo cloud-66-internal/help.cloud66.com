@@ -164,7 +164,7 @@ services:
 2.  Set `use_habitus` attribute to `true` in your `service.yml`
 3.  Set the `use_habitus_step` to the step you would like to use for your service in your `service.yml`
 
-Check out the [Habitus website](http://www.habitus.io) for more information about generating a `build.yml`.
+Check out the [Habitus website](http://www.habitus.io) for more information about generating a `build.yml`. Read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help on custom service configurations.
 
 A Habitus build usually has multiple steps and each step can generate a Docker image. Using `use_habitus_step` attribute you can specify which step's results you would like to use as the image for the container. 
 

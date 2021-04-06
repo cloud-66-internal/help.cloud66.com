@@ -16,11 +16,13 @@ Given the ephemeral nature of containers, it’s important to consider storage s
 
 ## Adding simple storage volumes
 
-The `volumes` directive of the `service.yml` allows you to mount custom host folders inside your container. This is useful if you need to run a database service for instance, as data written to the local filesystem of your container will not be persisted between container instances.
+The `volumes` directive of the `service.yml` allows you to mount custom host folders inside your container. This is useful if you need to run a database service for instance, as data written to the local filesystem of your container will not be persisted between container instances. 
 
 The **volumes** option is expressed as a comma separated list with the following form: `HOST_FOLDER:CONTAINER_FOLDER`.
 
 You can optionally add `ro` or `rw` to specify that the container can read/write to the host folder (the default is read/write).
+
+(Read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help on customizing your service configuration.)
 
 ### Note
 
