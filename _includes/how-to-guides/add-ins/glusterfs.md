@@ -2,8 +2,18 @@
 
 [GlusterFS](http://www.gluster.org/) is a scalable network file-system, and it's easy to add to your application as an add-in.
 
-### Please note
+## Adding GlusterFS
 
+To add GlusterFS to your application:
+
+1. Open the **Application Overview** from the [Dashboard](https://app.cloud66.com/dashboard).
+2. Click *Explore Add-ins* or the green **+** in the **Add-ins** panel
+3. Click on *Install Now* under **GlusterFS**
+4. A panel will slide out from the left with options. Configure as needed and then click *Add Server* to continue.
+
+You can now watch the logs, as usual to see the progress of the process.
+
+#### Please note
 <div class="notice notice-warning"><p>
 The version of GlusterFS currently offered via the Cloud 66 Add-in is not supported by Ubuntu 18.04. To use this add-in please ensure that all of your application components are installed on servers running <strong>Ubuntu 16.04</strong>. {% if include.product != 'maestro' %}For help with this please consult <a href="/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html">our guide to the application Manifest file</a>.{% endif %} {% if include.product == 'maestro' %}For help with this please consult <a href="/{{page.collection}}/how-to-guides/build-and-config/building-a-manifest-file.html">our guide to the application Manifest file</a>.
 {% endif %}
@@ -11,6 +21,7 @@ The version of GlusterFS currently offered via the Cloud 66 Add-in is not suppor
 </p></div>
 
 ## Why would I need GlusterFS?
+
 Almost all applications have some sort of data storage needs. As your application grows and runs on multiple servers, you will need to be able to share this data storage between your servers. For example, a web application that allows its users to upload images, will need to store those images on a share storage accessible by all servers. 
 
 {% if page.collection == 'legacy_docker' or page.collection == 'maestro' %}

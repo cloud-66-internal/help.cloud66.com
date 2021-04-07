@@ -33,7 +33,7 @@ New users will be shown the product selection wizard. For Maestro, choose "I hav
 <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
     <div class="Grid-cell">
         <h4>Step 1</h4>
-        <img src="/assets/product_choice_1.png" alt="Product choice wizard - step 1">
+        <img src="/assets/shared/product_choice_1.png" alt="Product choice wizard - step 1">
     </div>
     <div class="Grid-cell">
         <h4>Step 2</h4>

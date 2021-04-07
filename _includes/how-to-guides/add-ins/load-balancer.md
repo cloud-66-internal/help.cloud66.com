@@ -9,7 +9,7 @@ To add a load balancer to your application:
 1. Open the **Application Overview** from the [Dashboard](https://app.cloud66.com/dashboard).
 2. Click *Explore Add-ins* or the green **+** in the **Add-ins** panel
 3. Click on *Install Now* under **Load Balancer**
-4. A pop-up window will appear, explaining the process for your cloud provider. Click *Add Load Balancer* to continue.
+4. A panel will slide out from the left with options. Select what you need and then click *Add Load Balancer* to continue.
 
 You can now watch the logs, as usual to see the progress of the process. Depending on which cloud provider you use, this load balancer will be set up differently:
 

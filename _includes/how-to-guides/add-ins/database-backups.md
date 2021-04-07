@@ -1,6 +1,13 @@
 ## What is the database backup add-in?
 
-Use this add-in to automatically back up your database on a schedule of your choosing.
+Use this add-in to automatically back up your database on a schedule of your choosing. To enable database backups:
+
+1. Open the **Application Overview** from the [Dashboard](https://app.cloud66.com/dashboard).
+2. Click *Explore Add-ins* or the green **+** in the **Add-ins** panel
+3. Click on *Install Now* under **Database Backup**
+4. A panel will slide out from the left with options. Configure as needed and then click *Add Server* to continue.
+
+You can now watch the logs, as usual to see the progress of the process.
 
 ## Backup types
 Cloud 66 supports two types of backups: _managed_ and _unmanaged_.

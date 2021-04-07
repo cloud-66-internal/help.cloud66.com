@@ -5,7 +5,15 @@
 Logentries is a great service for centralizing your log files, and this add-in makes it easy to add across your servers.
 
 ## Add Logentries to your application
-To add Logentries, access the add-ins menu of your application and click _Logentries_.
+
+To add Logentries:
+
+1. Open the **Application Overview** from the [Dashboard](https://app.cloud66.com/dashboard).
+2. Click *Explore Add-ins* or the green **+** in the **Add-ins** panel
+3. Click on *Install Now* under **Custom Server**
+4. A panel will slide out from the left with options. Configure as needed and then click *Add Server* to continue.
+
+You can now watch the logs, as usual to see the progress of the process.
 
 We'll ask you for your Logentries account key - if you don't have one, you can signup to a Logentries account.
 
