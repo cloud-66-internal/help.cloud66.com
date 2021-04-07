@@ -1444,4 +1444,4 @@
 
 [[redirects]]
   from = "*/add-ins/filebeat.html"
-  to = "*/add-ins/"
+  to = "../add-ins/"
