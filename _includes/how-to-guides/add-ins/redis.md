@@ -1,7 +1,9 @@
 
 
-## About adding Redis to your application
-This add-in makes it really simple for you to install Redis to an existing application.
-
 ## Add Redis to your application
-To add Redis, access the add-ins menu of your application and click _Redis_. You'll be given the option of installing it on an existing server in your application, or deploy a new server for Redis.
+To add a Redis instance to your application: 
+
+1. Open the **Application Overview** from the [Dashboard](https://app.cloud66.com/dashboard).
+2. Click *Explore Add-ins* or the green **+** in the **Add-ins** panel
+3. Click on *Install Now* under **Redis**
+4. A panel will slide out from the left with options. Configure as needed and then click *Add Server* to continue.

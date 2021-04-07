@@ -1444,4 +1444,16 @@
 
 [[redirects]]
   from = "*/add-ins/filebeat.html"
-  to = "../add-ins/"
+  to = "../add-ins/"	
+  status = 301
+
+[[redirects]]
+  from = "*/add-ins/filebeat.html"
+  to = "../add-ins/"	
+  status = 301
+
+[[redirects]]
+  from = "*/add-ins/logentries.html"
+  to = "../add-ins/"	
+  status = 301
+
