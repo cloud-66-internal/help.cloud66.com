@@ -85,6 +85,7 @@ This namespace can be used to reference a particular ConfigStore, either via the
 
 You access ConfigStore data by using the following syntax:
 
+{% if include.product == 'skycap' %}
 ### Skycap Stencils
 
 The basic syntax for Stencil placeholders is:
@@ -104,6 +105,7 @@ To fetch a value from the **account-level** ConfigStore, use the following synta
 ```shell
 value: ${configstore("key", account["configstore_namespace"])}
 ```
+{% endif %}
 
 ### Environment Variables
 

@@ -51,15 +51,12 @@ You can also read [our guide to using service.yml](/maestro/how-to-guides/build-
 To edit your ports using the standard Maestro user interface:
 
 1. Open the Application Overview from your Dashboard
-2. Click on the *Edit service* icon on the right-hand side of the *App Services* panel
-3. On the **Edit Services** page, click the green *Save changes* button (you don't need to make any changes first)
-4. On the **Edit port settings** page click the small planet icon to the left of the yellow *Configure service networking* panel
-5. In the configuration pop-up, add the following to the *Public Internet Port* field, separated from the existing entry by a comma: `https:443`
-6. Click *Done* and then *Save changes*
+2. Click on the *Services* tab
+3. Click on the *Edit service* icon next to the service you wish to configure. This will open a panel on the left-hand side of your screen.
+4. Edit the ports as needed and then click *Save Service*
 
-Note that the comma in Step 5 is vitally important. The end result should look like this: `http:80,https:443`
 
-<img alt="Mapping container ports in Maestro" src="/assets/maestro/maestro-mapping-ports.gif">
+<img alt="Mapping container ports in Maestro" src="/assets/maestro/maestro-mapping-ports-new.gif">
 
 ### Testing your changes
 
@@ -81,9 +78,10 @@ Note that the comma in Step 5 is vitally important. The end result should look l
 
         <section id="V2-First" class="Tabs-content js_tab_content">
 
-<p>You can test whether this has been properly applied by clicking on the name of the service you just modified (<em>demo-app</em>) in the <strong>App Services</strong> panel on the Application Overview.</p>
+<p>You can test whether this has been properly applied by looking at that the Network column of the <em>Services</em> panel.
+</p>
 
-<p>If you've followed the steps above correctly, the <strong>Services Config</strong> panel will list both <em>HTTP</em> and <em>HTTPS</em>.</p>
+<p>If you've followed the steps above correctly, the <strong>Network</strong> column will list both port <em>80</em> and port <em>443</em>.</p>
 
         </section>
 
@@ -106,49 +104,12 @@ In order for these new settings to apply to your service, you will need to redep
 
 ### Editing config files directly
 
-Maestro uses a YAML file called `service.yml` to define each service inside your application(s). You can edit this file directly using the Dashboard.
+Maestro uses a YAML file called `service.yml` to define each service inside your application(s). You can edit the content of this file directly using the Dashboard in two ways:
 
-To edit your `service.yml`:
+1. Via the Services UI, using the left-hand panel we described above - but click the *YAML* tab instead of *Network & Storage*
+2. Via the *Configuration Files* interface 
 
-1. Open the Application Overview from your Dashboard
-2. Click on *Configuration Files* in the right-hand panel
-3. Edit the YAML directly in the editor
-4. When you are done, add a commit message and click *Commit*
-
-If you followed our Getting Started guide, your `service.yml` should initially look a lot like this:
-```yaml
-version: 2
-services:
-  demo-app:
-    git_url: https://github.com/cloud66/maestro-demo
-    git_branch: master
-    ports:
-    - container: 5000
-      http: 80
-    dockerfile_path: Dockerfile
-databases:
-- redis
-```
-
-To add https access, you would modify the *ports* sub-section under the *demo-app* section of *services*, adding `https: 443` on a new line. 
-
-The end result should look like this:
-```yaml
-version: 2
-services:
-  demo-app:
-    git_url: https://github.com/cloud66/maestro-demo
-    git_branch: master
-    ports:
-    - container: 5000
-      http: 80
-      https: 443
-    dockerfile_path: Dockerfile
-databases:
-- redis
-```
-
-In order for these new settings to apply to your service, you will need to redeploy your application. To do this, click the *Build / Deploy* button on the Application Overview. 
+Note that with method 1 you are only editing the section of `service.yml` **specific to your context**. So in this case you would be editing the `ports` section of your  `service.yml`. To edit the file as a whole, you'll need to use method 2.
 
 ## What's next
 
