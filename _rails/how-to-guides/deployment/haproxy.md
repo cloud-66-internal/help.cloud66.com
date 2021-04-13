@@ -10,4 +10,4 @@ tags: ['Scaling', 'addins']
 permalink: /:collection/:path:output_ext
 ---
 
-{% include tutorials/haproxy.md %}
+{% include how-to-guides/deployment/haproxy.md %}
