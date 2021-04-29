@@ -323,7 +323,6 @@ maestro:
     - namespaces
     - overview
     - serviceyml-placeholder
-    - skycap-stencils
   configure_dns:
     page: maestro/how-to-guides/deployment/configure-dns.html
     page_anchors:
@@ -411,6 +410,7 @@ maestro:
     page: maestro/how-to-guides/add-ins/custom-server.html
     page_anchors:
     - add-a-custom-server
+    - cloud-66-features-on-custom-servers
     - maestro-product-heading
     - what-is-the-custom-server-add-in
   customizing_nginx:
@@ -577,10 +577,11 @@ maestro:
   docker_service_configuration:
     page: maestro/how-to-guides/build-and-config/docker-service-configuration.html
     page_anchors:
-    - accessing-serviceyml
     - adding-a-daemonset
     - database-configurations
+    - editing-serviceyml
     - environment-variables
+    - getting-started-serviceyml
     - maestro-product-heading
     - more-help
     - multiple-services-and-databases
@@ -682,12 +683,6 @@ maestro:
     - which-distributions-of-linux-are-supported
     - who-pays-for-the-servers
     - why-do-you-need-my-server-ssh-key
-  filebeat:
-    page: maestro/how-to-guides/add-ins/filebeat.html
-    page_anchors:
-    - about-using-filebeat
-    - add-filebeat-to-your-application
-    - maestro-product-heading
   firewall_rule:
     page: maestro/tutorials/firewall-rule.html
     page_anchors:
@@ -775,11 +770,11 @@ maestro:
     page: maestro/how-to-guides/add-ins/glusterfs.html
     page_anchors:
     - accessing-your-glusterfs-servers
+    - adding-glusterfs
     - fine-grained-access-control-for-your-data
     - how-can-i-use-glusterfs-in-my-application
     - how-do-i-add-glusterfs-to-my-application
     - maestro-product-heading
-    - please-note
     - what-about-my-containers
     - why-would-i-need-glusterfs
   habitus_secrets:
@@ -916,14 +911,6 @@ maestro:
     - maestro-product-heading
     - overview
     - whats-next
-  logentries:
-    page: maestro/how-to-guides/add-ins/logentries.html
-    page_anchors:
-    - about-using-logentries
-    - add-logentries-to-your-application
-    - maestro-product-heading
-    - no-logs-or-logs-are-empty-in-logentries
-    - troubleshoot
   logging:
     page: maestro/how-to-guides/build-and-config/logging.html
     page_anchors:
@@ -1218,6 +1205,7 @@ maestro:
     - maestro-product-heading
     - overview
     - serial-deployment-v1-only
+    - via-the-toolbelt
   partner_integration:
     page: maestro/integrations/partner-integration.html
     page_anchors:
@@ -1306,7 +1294,6 @@ maestro:
   redis:
     page: maestro/how-to-guides/add-ins/redis.html
     page_anchors:
-    - about-adding-redis-to-your-application
     - add-redis-to-your-application
     - maestro-product-heading
   references_index:
@@ -2266,7 +2253,6 @@ node:
     - node-product-heading
     - overview
     - serviceyml-placeholder
-    - skycap-stencils
   configure_dns:
     page: node/tutorials/configure-dns.html
     page_anchors:
@@ -2323,6 +2309,7 @@ node:
     page: node/how-to-guides/add-ins/custom-server.html
     page_anchors:
     - add-a-custom-server
+    - cloud-66-features-on-custom-servers
     - node-product-heading
     - what-is-the-custom-server-add-in
   customizing_nginx:
@@ -2514,12 +2501,6 @@ node:
     - which-distributions-of-linux-are-supported
     - who-pays-for-the-servers
     - why-do-you-need-my-server-ssh-key
-  filebeat:
-    page: node/how-to-guides/add-ins/filebeat.html
-    page_anchors:
-    - about-using-filebeat
-    - add-filebeat-to-your-application
-    - node-product-heading
   firewall_rule:
     page: node/tutorials/firewall-rule.html
     page_anchors:
@@ -2587,22 +2568,22 @@ node:
     page: node/how-to-guides/add-ins/glusterfs.html
     page_anchors:
     - accessing-your-glusterfs-servers
+    - adding-glusterfs
     - fine-grained-access-control-for-your-data
     - how-can-i-use-glusterfs-in-my-application
     - how-do-i-add-glusterfs-to-my-application
     - node-product-heading
-    - please-note
     - why-would-i-need-glusterfs
   haproxy:
     page: node/how-to-guides/deployment/haproxy.html
     page_anchors:
     - about-configuring-haproxy
-    - about-configuring-haproxy-with-customconfig
     - change-the-haproxy-endpoint
     - commit-haproxy-customconfig
     - config-variables
     - configure-haproxy-to-use-internal-ips
     - configuring-haproxy-for-maintenance-mode
+    - configuring-haproxy-with-customconfig
     - node-product-heading
     - specify-an-haproxy-test-interval
     - view-haproxy-stats
@@ -2711,14 +2692,6 @@ node:
     - node-product-heading
     - overview
     - whats-next
-  logentries:
-    page: node/how-to-guides/add-ins/logentries.html
-    page_anchors:
-    - about-using-logentries
-    - add-logentries-to-your-application
-    - no-logs-or-logs-are-empty-in-logentries
-    - node-product-heading
-    - troubleshoot
   logging:
     page: node/how-to-guides/deployment/logging.html
     page_anchors:
@@ -3069,7 +3042,6 @@ node:
   redis:
     page: node/how-to-guides/add-ins/redis.html
     page_anchors:
-    - about-adding-redis-to-your-application
     - add-redis-to-your-application
     - node-product-heading
   references_index:
@@ -3956,7 +3928,6 @@ rails:
     - overview
     - rails-product-heading
     - serviceyml-placeholder
-    - skycap-stencils
   configure_dns:
     page: rails/tutorials/configure-dns.html
     page_anchors:
@@ -4000,6 +3971,7 @@ rails:
     page: rails/how-to-guides/add-ins/custom-server.html
     page_anchors:
     - add-a-custom-server
+    - cloud-66-features-on-custom-servers
     - rails-product-heading
     - what-is-the-custom-server-add-in
   custom_web_servers:
@@ -4236,12 +4208,6 @@ rails:
     - which-distributions-of-linux-are-supported
     - who-pays-for-the-servers
     - why-do-you-need-my-server-ssh-key
-  filebeat:
-    page: rails/how-to-guides/add-ins/filebeat.html
-    page_anchors:
-    - about-using-filebeat
-    - add-filebeat-to-your-application
-    - rails-product-heading
   firewall_rule:
     page: rails/tutorials/firewall-rule.html
     page_anchors:
@@ -4314,22 +4280,22 @@ rails:
     page: rails/how-to-guides/add-ins/glusterfs.html
     page_anchors:
     - accessing-your-glusterfs-servers
+    - adding-glusterfs
     - fine-grained-access-control-for-your-data
     - how-can-i-use-glusterfs-in-my-application
     - how-do-i-add-glusterfs-to-my-application
-    - please-note
     - rails-product-heading
     - why-would-i-need-glusterfs
   haproxy:
     page: rails/how-to-guides/deployment/haproxy.html
     page_anchors:
     - about-configuring-haproxy
-    - about-configuring-haproxy-with-customconfig
     - change-the-haproxy-endpoint
     - commit-haproxy-customconfig
     - config-variables
     - configure-haproxy-to-use-internal-ips
     - configuring-haproxy-for-maintenance-mode
+    - configuring-haproxy-with-customconfig
     - rails-product-heading
     - specify-an-haproxy-test-interval
     - view-haproxy-stats
@@ -4453,14 +4419,6 @@ rails:
     - overview
     - rails-product-heading
     - whats-next
-  logentries:
-    page: rails/how-to-guides/add-ins/logentries.html
-    page_anchors:
-    - about-using-logentries
-    - add-logentries-to-your-application
-    - no-logs-or-logs-are-empty-in-logentries
-    - rails-product-heading
-    - troubleshoot
   logging:
     page: rails/how-to-guides/deployment/logging.html
     page_anchors:
@@ -4937,7 +4895,6 @@ rails:
   redis:
     page: rails/how-to-guides/add-ins/redis.html
     page_anchors:
-    - about-adding-redis-to-your-application
     - add-redis-to-your-application
     - rails-product-heading
   references_account_index:
