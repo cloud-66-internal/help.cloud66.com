@@ -31,11 +31,11 @@ registry-z2.buildgrid.net/minstrel/qq-maestro-demo.github-com-cloud66-maestro-de
 You can see details of older images from your builds using the Build & Deployment Timeline. To do this:
 
 1. Open your Application from your [Cloud 66 Dashboard](https://app.cloud66.com/)
-2. Click on Build & Deploy in the right-hand panel
+2. Click on *Build & Deploy* in the right-hand panel
 3. Scroll down your timeline until you find the build in question (your builds are all in the left column)
-4. Click on the service name
+4. Click on the *Deploy Log* link
 
-You will now see the full historical log of the build process, including the final URL of the image that resulted.
+You will now see the full historical log of the build process, including the final URL of the image that resulted. You can filter the log by server, service name and pod name.
 
 ## Accessing your BuildGrid repository
 

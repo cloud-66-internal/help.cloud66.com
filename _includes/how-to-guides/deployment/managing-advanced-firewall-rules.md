@@ -8,7 +8,7 @@ This guide assumes you already know the basics of working with firewall rules on
 
 The automated firewall rules on your applications are **role-based** rather than **IP-based**. This means that when you add, for example, a new MySQL server it will be automatically added to your firewall rules.
 
-![Firewall rules](/assets/firewall-rules.png "Firewall rules")
+![Firewall rules](/assets/shared/firewall-rules.png "Firewall rules")
 
 
 This means you don't need to individually configure native components or servers within a Cloud 66 application - they will inherit rules from your existing roles. This logic also applies when components are removed - they will automatically be removed from your firewall.

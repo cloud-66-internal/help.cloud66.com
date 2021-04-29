@@ -33,7 +33,14 @@ If you have made any other changes to your application apart from changing the c
 
 ### Enabling Fast Deployments
 
-The easiest way to trigger a Fast Deployment is using the *Deploy with Options* option under the green *Build/Deploy* button on the application dashboard. 
+The easiest way to trigger a Fast Deployment is via the Dashboard:
+
+1. Click *Deploy* (top right) and choose  *Deploy with Options* 
+2. In the panel that opens (on the left), click the *Options* tab
+3. Select *Fast Deployment* and click *Deploy*
+
+
+### Via the Toolbelt
 
 You can also trigger a Fast Deployment using Cloud 66 Toolbelt using the following command:
 

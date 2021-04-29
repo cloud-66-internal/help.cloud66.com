@@ -24,15 +24,63 @@ These settings describe the composition of your services. Here are some common e
 
 For a full list of available options, see the [table](#service-configuration-options) at the end of this document.
 
-## Accessing service.yml
+## Editing service.yml
 
-While you're building your application, custom service configurations can be accessed by clicking on the *Advanced* tab. This gives you direct access to editing the `service.yml` for your application.
+There are three ways to directly edit your `service.yml` file:
 
-Once your application has been built, you can access `service.yml` under *Configuration Files* in the right menu of your Application Overview.
+1. While you're **building** an application, by clicking on the *Advanced* tab. 
+2. For **existing** apps, by visiting your **Application Overview**, clicking *Configuration* in the right-hand panel and then clicking the *Configuration Files* tab.
+3. By editing your apps **services** or **images** and clicking the *YAML* tab (note that this only edits the portion of the file related to that component)
 
 ## Service configuration examples
 
-We have taken these examples from our public samples repository that you can [access here](https://github.com/cloud66-samples). They are not intended for use as anything except examples.
+### Getting Started service.yml
+
+If you followed our Getting Started guide, your `service.yml` should initially look a lot like this:
+
+```yaml
+version: 2
+services:
+  demo-app:
+    git_url: <https://github.com/cloud66/maestro-demo>
+    git_branch: master
+    ports:
+    - container: 5000
+      http: 80
+    dockerfile_path: Dockerfile
+databases:
+- redis
+
+```
+
+To edit this file: 
+
+1. Open the **Application Overview** from the [Dashboard](https://app.cloud66.com/dashboard).
+2. Click on *Configuration* in the right-hand panel
+3. Click on the the *Configuration Files* tab
+
+To add https access, you would modify the *ports* sub-section under the *demo-app* section of *services*, adding `https: 443` on a new line.
+
+The end result should look like this:
+
+```yaml
+version: 2
+services:
+  demo-app:
+    git_url: <https://github.com/cloud66/maestro-demo>
+    git_branch: master
+    ports:
+    - container: 5000
+      http: 80
+      https: 443
+    dockerfile_path: Dockerfile
+databases:
+- redis
+```
+
+Now add a commit message for the update and click *Commit*. To test if these changes have worked, open your Application Overview and click on the *Services* tab. The **Network** column of the **Services** panel should now list the new ports.
+
+In order for these new settings to apply to your service, you will need to redeploy your application. To do this, click the *Build / Deploy* button on the Application Overview.
 
 ### Single service with MySQL database
 

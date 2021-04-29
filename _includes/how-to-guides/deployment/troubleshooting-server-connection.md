@@ -47,7 +47,7 @@ Maestro uses Kubernetes to host containers on your cluster. If you are unable to
 If your cluster has become completely unresponsive and remaining that way for any significant length of time, your best option may be to rebuild it. To do this:
 
 1. Log into your [dashboard](https://app.cloud66.com/dashboard) and click on your Maestro app
-2. Click the *Deploy* button and then the *Deploy Options* tab
+2. Click the *Deploy* button and then the *Options* tab
 3. Check the *Apply Docker/Kubernetes* Upgrades box and then check *Clean Installation - Repair/Rebuild this Cluster* box.
 4. Click the *Run Now* button to start the process
 

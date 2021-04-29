@@ -42,6 +42,6 @@ If you need more detail on the best way to configure DNS records with Cloud 66 p
 To find the Cloud 66 hostname for any server: 
 
 1. Open your Dashboard and click on the application 
-2. Click the _Server_ tab.
+2. Click the _Servers_ tab.
 3. Click the name of your server. This page displays your server's _Primary address_ (hostname) as well as the _Secondary address_ (IP address).
 
