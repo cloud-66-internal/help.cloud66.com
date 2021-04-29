@@ -1311,6 +1311,36 @@
   to = "/maestro/how-to-guides/common-tools/ssh-to-server.html"
 
 [[redirects]]
+  from = "/maestro/how-to-guides/add-ins/filebeat.html"
+  to = "../add-ins/"	
+  status = 301
+
+[[redirects]]
+  from = "/rails/how-to-guides/add-ins/filebeat.html"
+  to = "../add-ins/"	
+  status = 301
+
+[[redirects]]
+  from = "/node/how-to-guides/add-ins/filebeat.html"
+  to = "../add-ins/"	
+  status = 301
+
+[[redirects]]
+  from = "/maestro/how-to-guides/add-ins/logentries.html"
+  to = "../add-ins/"	
+  status = 301
+
+[[redirects]]
+  from = "/rails/how-to-guides/add-ins/logentries.html"
+  to = "../add-ins/"	
+  status = 301
+
+[[redirects]]
+  from = "/node/how-to-guides/add-ins/logentries.html"
+  to = "../add-ins/"	
+  status = 301
+
+[[redirects]]
   from = "/whenever"
   to = "/rails/how-to-guides/add-ins/add-ins-jobs.html#support-for-whenever-gem"
 
@@ -1442,13 +1472,5 @@
   from = "/maestro/maestro/*"
   to = "/maestro/:splat"
 
-[[redirects]]
-  from = "*/add-ins/filebeat.html"
-  to = "../add-ins/"	
-  status = 301
 
-[[redirects]]
-  from = "*/add-ins/logentries.html"
-  to = "../add-ins/"	
-  status = 301
 
