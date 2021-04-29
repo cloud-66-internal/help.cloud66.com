@@ -718,6 +718,7 @@ maestro:
     - iv-configure-server-size
     - maestro-product-heading
     - no-cloud-content
+    - server-build-states
     - what-youll-need
     - whats-next
   getting_started_with_clusters:
@@ -1431,6 +1432,14 @@ maestro:
     - infrastructure-security
     - maestro-product-heading
     - reporting-security-issues
+  server_build_states:
+    page: maestro/references/server-build-states.html
+    page_anchors:
+    - build-states-explained
+    - maestro-product-heading
+    - optimized-servers
+    - overview
+    - ready-servers
   server_deletion:
     page: maestro/how-to-guides/deployment/server-deletion.html
     page_anchors:
@@ -2539,6 +2548,7 @@ node:
     - no-cloud-content
     - node-product-heading
     - other-git-content
+    - server-build-states
     - what-youll-need
   getting_started_with_manifest:
     page: node/quickstarts/getting-started-with-manifest.html
@@ -3136,6 +3146,14 @@ node:
     - node-product-heading
     - note
     - seed-script
+  server_build_states:
+    page: node/references/server-build-states.html
+    page_anchors:
+    - build-states-explained
+    - node-product-heading
+    - optimized-servers
+    - overview
+    - ready-servers
   server_deletion:
     page: node/how-to-guides/deployment/server-deletion.html
     page_anchors:
@@ -4255,6 +4273,7 @@ rails:
     - other-git-content
     - rails-product-heading
     - rails-version-support
+    - server-build-states
     - what-youll-need
     - whats-next
   getting_started_with_manifest:
@@ -5009,6 +5028,14 @@ rails:
     - note
     - rails-product-heading
     - seed-script
+  server_build_states:
+    page: rails/references/server-build-states.html
+    page_anchors:
+    - build-states-explained
+    - optimized-servers
+    - overview
+    - rails-product-heading
+    - ready-servers
   server_deletion:
     page: rails/how-to-guides/deployment/server-deletion.html
     page_anchors:

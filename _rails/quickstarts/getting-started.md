@@ -161,6 +161,17 @@ Now you can decide how you want to configure your Front end (Web) and Database S
 
 That's it! Now just click *Deploy application* and watch your app roll out to your new servers.
 
+### Server build states
+
+In order to allow you to start working with your new app as soon as possible, there are two build states (or stages) for application servers:
+
+1. [Ready](/rails/references/server-build-states.html#ready-servers) - server is available to use, with the minimum required configuration 
+2. [Optimized](/rails/references/server-build-states.html#optimized-servers) - all the latest packages are installed & optimized
+
+![Build state progress bars](/assets/shared/server-build-state-bars.png)
+
+Servers will automatically progress from "ready" to "optimized".
+
 ## What's next?
 
 * Get started with [manifest files](/rails/quickstarts/getting-started-with-manifest.html) - a powerful tool for defining your application's components
