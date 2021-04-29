@@ -43,7 +43,7 @@ New users will be shown the product selection wizard. For Skycap, choose "I have
     </div>
     <div class="Grid-cell">
         <h4>Step 2</h4>
-        <img src="/assets/product_choice_3.png" alt="Product choice wizard - step 2">
+        <img src="/assets/shared/product_choice_3.png" alt="Product choice wizard - step 2">
     </div>
 </div>
 

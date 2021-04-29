@@ -34,13 +34,13 @@ New users will be shown the product selection wizard. For Skycap, choose "I have
     </div>
     <div class="Grid-cell">
         <h4>Step 2</h4>
-        <img src="/assets/product_choice_3.png" alt="Product choice wizard - step 2">
+        <img src="/assets/shared/product_choice_3.png" alt="Product choice wizard - step 2">
     </div>
 </div>
 
 If you're already using Cloud 66 just click *New Application &rarr; Node (Node frameworks)* button on the dashboard.
 
-<img src="/assets/skycap/skycap_new_dropdown_update.png" alt="Start a new Skycap build pipeline" width="200">
+<img src="/assets/skycap/skycap_new_dropdown_update.png" alt="New application dropdown menu" width="200">
 
 ## Accessing your Git Repo
 
