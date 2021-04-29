@@ -106,8 +106,8 @@ In order for these new settings to apply to your service, you will need to redep
 
 Maestro uses a YAML file called `service.yml` to define each service inside your application(s). You can edit the content of this file directly using the Dashboard in two ways:
 
-1. Via the Services UI, using the left-hand panel we described above - but click the *YAML* tab instead of *Network & Storage*
-2. Via the *Configuration Files* interface 
+1. Via the *Services UI*, using the left-hand panel we described [above](#editing-via-the-ui) - but click the *YAML* tab instead of *Network & Storage*
+2. Via the [Configuration Files interface](/maestro/how-to-guides/build-and-config/docker-service-configuration.html#getting-started-serviceyml) 
 
 Note that with method 1 you are only editing the section of `service.yml` **specific to your context**. So in this case you would be editing the `ports` section of your  `service.yml`. To edit the file as a whole, you'll need to use method 2.
 
