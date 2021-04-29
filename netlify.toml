@@ -1312,32 +1312,32 @@
 
 [[redirects]]
   from = "/maestro/how-to-guides/add-ins/filebeat.html"
-  to = "../add-ins/"	
+  to = "/maestro/how-to-guides/add-ins/"	
   status = 301
 
 [[redirects]]
   from = "/rails/how-to-guides/add-ins/filebeat.html"
-  to = "../add-ins/"	
+  to = "/rails/how-to-guides/add-ins/"	
   status = 301
 
 [[redirects]]
   from = "/node/how-to-guides/add-ins/filebeat.html"
-  to = "../add-ins/"	
+  to = "/node/how-to-guides/add-ins/"	
   status = 301
 
 [[redirects]]
   from = "/maestro/how-to-guides/add-ins/logentries.html"
-  to = "../add-ins/"	
+  to = "/maestro/how-to-guides/add-ins/"	
   status = 301
 
 [[redirects]]
   from = "/rails/how-to-guides/add-ins/logentries.html"
-  to = "../add-ins/"	
+  to = "/rails/how-to-guides/add-ins/"	
   status = 301
 
 [[redirects]]
   from = "/node/how-to-guides/add-ins/logentries.html"
-  to = "../add-ins/"	
+  to = "/node/how-to-guides/add-ins/"	
   status = 301
 
 [[redirects]]
