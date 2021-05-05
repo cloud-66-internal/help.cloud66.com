@@ -33,11 +33,11 @@ New users will be shown the product selection wizard. For Maestro, choose "I hav
 <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
     <div class="Grid-cell">
         <h4>Step 1</h4>
-        <img src="/assets/product_choice_1.png" alt="Product choice wizard - step 1">
+        <img src="/assets/shared/product_choice_1.png" alt="Product choice wizard - step 1">
     </div>
     <div class="Grid-cell">
         <h4>Step 2</h4>
-        <img src="/assets/product_choice_2.png" alt="Product choice wizard - step 2">
+        <img src="/assets/shared/product_choice_2.png" alt="Product choice wizard - step 2">
     </div>
 </div>
 
@@ -150,8 +150,19 @@ During the build and deployment process you can view the log to see what's happe
 
 <img src="/assets/maestro/maestro_deployment.gif" alt="Deploying your application">
 
+### Server build states
+
+In order to allow you to start working with your new app as soon as possible, there are two build states (or stages) for application servers:
+
+1. [Ready](/maestro/references/server-build-states.html#ready-servers) - server is available to use, with the minimum required configuration 
+2. [Optimized](/maestro/references/server-build-states.html#optimized-servers) - all the latest packages are installed & optimized
+
+![Build state progress bars](/assets/shared/server-build-state-bars.png)
+
+Servers will automatically progress from "ready" to "optimized".
+
 #### Note
-<div class="notice notice-warning"><p>The initial deployment process may take 15 minutes or more, because Maestro needs to provision the new server from the ground up. You can close the window and Maestro will send you an email when the deployment is complete.</p></div>
+<div class="notice notice-warning"><p>The full build and deployment process may take 15 minutes or more, because Maestro needs to provision the new servers from the ground up. You can close the window and Maestro will send you an email when the deployment is complete.</p></div>
 
 ## 7. Test your app
 

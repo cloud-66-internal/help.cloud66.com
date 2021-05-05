@@ -30,8 +30,8 @@ To add nodes to an existing application:
 3. Click on the green **+** at the top right of the **Kubernetes Cluster** panel
 4. Choose whether the new node(s) will be Master(s) or a Worker(s)
 5. Choose how many new nodes to add
-6. Choose the size for the new node(s)
-7. Click *Go* to provision your new node(s)
+6. Choose the server size for the new node(s)
+7. Click *Add Server* to provision your new node(s)
 
 #### Note
 <div class="notice"><p>

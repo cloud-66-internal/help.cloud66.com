@@ -22,7 +22,6 @@ To add a new database group to an existing application using the Dashboard:
 4. Choose the type of database group you'd like to add and click **Install Now**
 5. Choose the server type and size
 6. Give your new database group a name 
-7. (Optional) Give your server a name
 
 We will now build your new database server and alert you when it is ready.
 

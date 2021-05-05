@@ -51,7 +51,7 @@ You can edit / update any custom variables you have added to Maestro, as well as
 To do this:
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Environment Variables*  in the **Application** panel on the right of the screen
+2. Click on *Configuration*  in the **Application** panel on the right of the screen
 3. Find the key you'd like to change, for example `MYSQL_PASSWORD` and update the value
 5. Save and redeploy as you did above
 

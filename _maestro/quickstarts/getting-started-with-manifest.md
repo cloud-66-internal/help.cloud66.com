@@ -45,6 +45,8 @@ To access the manifest file for any application:
 
 You can now edit the text of your manifest file directly.
 
+<img src="/assets/maestro/maestro-gsw-manifest-1.gif" alt="Editing your manifest file after deployment">
+
 #### Warning
 
 <div class="notice notice-warning"><p>Be cautious when editing the manifest file for any application particularly if it is running in a production environment. A single stray character or space can cause the application to fail to deploy or to deploy in a degraded state.</p></div>
@@ -74,7 +76,7 @@ To customize the `manifest.yml` for your application:
 
 3. Click on the *Configure Manifest* tab to access the `manifest.yml` for your app.
 
-<img src="/assets/maestro/maestro-gsw-manifest-1.gif" alt="Editing your manifest file">
+<img src="/assets/maestro/maestro-gsw-manifest-2.gif" alt="Editing your manifest file during deployment">
 
 The contents of the file should look very simmilar to this:
 

@@ -30,17 +30,17 @@ New users will be shown the product selection wizard. For Skycap, choose "I have
 <div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
     <div class="Grid-cell">
         <h4>Step 1</h4>
-        <img src="/assets/product_choice_1.png" alt="Product choice wizard - step 1">
+        <img src="/assets/shared/product_choice_1.png" alt="Product choice wizard - step 1">
     </div>
     <div class="Grid-cell">
         <h4>Step 2</h4>
-        <img src="/assets/product_choice_3.png" alt="Product choice wizard - step 2">
+        <img src="/assets/shared/product_choice_3.png" alt="Product choice wizard - step 2">
     </div>
 </div>
 
 If you're already using Cloud 66 just click *New Application &rarr; Node (Node frameworks)* button on the dashboard.
 
-<img src="/assets/skycap/skycap_new_dropdown_update.png" alt="Start a new Skycap build pipeline" width="200">
+<img src="/assets/skycap/skycap_new_dropdown_update.png" alt="New application dropdown menu" width="200">
 
 ## Accessing your Git Repo
 
@@ -140,3 +140,14 @@ They can be shared or deployed to separate servers.
 <img src="/assets/node/node_deployment_details.png" alt="Choose where to deploy your database">
 
 That's it! Now just click **Deploy Stack**.
+
+### Server build states
+
+In order to allow you to start working with your new app as soon as possible, there are two build states (or stages) for application servers:
+
+1. [Ready](/node/references/server-build-states.html#ready-servers) - server is available to use, with the minimum required configuration 
+2. [Optimized](/node/references/server-build-states.html#optimized-servers) - all the latest packages are installed & optimized
+
+![Build state progress bars](/assets/shared/server-build-state-bars.png)
+
+Servers will automatically progress from "ready" to "optimized".
