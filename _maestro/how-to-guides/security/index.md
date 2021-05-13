@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title:  "Configuring SSL security within Maestro"
+title:  "Configuring security features in Maestro"
 lead: How to secure your application
 legacy: false
 permalink: /:collection/how-to-guides/security/index.html
