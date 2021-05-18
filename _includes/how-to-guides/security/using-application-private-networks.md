@@ -64,7 +64,7 @@ You can find the IP address of a server on your Cloud 66 Dashboard:
 
 The APN also has a private DNS based on the names of the servers that allows you to route internal application traffic more easily (without having to use IP addresses). You'll find these domain names for each server in the same place and their APN IP addresses (see above).
 
-The format is always: `<animal name of server>.apn`
+The format is always: `<name of server>.apn`
 
 You'll notice that there is also a DNS entry that uses the **application's private domain name.** This allows applications to communicate with each other without namespace collisions. 
 
