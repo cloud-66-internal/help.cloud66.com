@@ -1405,6 +1405,18 @@
   to = "/skycap/quickstarts/using-formations.html"
 
 [[redirects]]
+  from = "/account-management/*"
+  to = "/"
+
+[[redirects]]
+  from = "/partner-integration/*"
+  to = "/"
+
+[[redirects]]
+  from = "/category/*"
+  to = "/"
+
+[[redirects]]
   from = "/article/*"
   to = "/"
 
