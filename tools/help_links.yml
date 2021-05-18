@@ -1411,6 +1411,21 @@ maestro:
     - kubernetes-cluster-servers
     - maestro-product-heading
     - scaling-services
+  securely_accessing_applications:
+    page: maestro/tutorials/securely-accessing-applications.html
+    page_anchors:
+    - 1-configure-your-apn-client
+    - 2-allow-access-via-your-application-firewall
+    - 3-connect-to-your-apn
+    - 4-connect-to-your-servers
+    - configuring-a-computer
+    - configuring-a-mobile-device
+    - giving-team-members-access-to-the-apn
+    - maestro-product-heading
+    - more-help
+    - note
+    - overview
+    - what-youll-need
   security:
     page: maestro/resources/security.html
     page_anchors:
@@ -1915,6 +1930,15 @@ maestro:
     - what-are-personal-access-tokens
     - why-cant-we-share-logins
     - why-do-i-need-2fa
+  understanding_application_private_networks:
+    page: maestro/references/understanding-application-private-networks.html
+    page_anchors:
+    - maestro-product-heading
+    - more-help
+    - more-info
+    - our-implementation-of-wireguard
+    - overview
+    - the-security-profile-of-wireguard
   understanding_buildgrid:
     page: maestro/references/understanding-buildgrid.html
     page_anchors:
@@ -1945,6 +1969,18 @@ maestro:
     page: maestro/how-to-guides/databases/shells/uninstall-mysql.html
     page_anchors:
     - maestro-product-heading
+  using_application_private_networks:
+    page: maestro/how-to-guides/security/using-application-private-networks.html
+    page_anchors:
+    - accessing-your-servers-remotely-via-apn
+    - allowing-access-via-your-firewall
+    - apn-specific-ip-ranges--private-dns
+    - configuring-your-apn
+    - exchanging-data-between-servers-via-apn
+    - maestro-product-heading
+    - more-help
+    - overview
+    - private-dns
   using_c66_via_firewall:
     page: maestro/how-to-guides/build-and-config/using-c66-via-firewall.html
     page_anchors:
@@ -3103,6 +3139,21 @@ node:
     - node-product-heading
     - process-servers
     - web-servers
+  securely_accessing_applications:
+    page: node/tutorials/securely-accessing-applications.html
+    page_anchors:
+    - 1-configure-your-apn-client
+    - 2-allow-access-via-your-application-firewall
+    - 3-connect-to-your-apn
+    - 4-connect-to-your-servers
+    - configuring-a-computer
+    - configuring-a-mobile-device
+    - giving-team-members-access-to-the-apn
+    - more-help
+    - node-product-heading
+    - note
+    - overview
+    - what-youll-need
   security:
     page: node/resources/security.html
     page_anchors:
@@ -3565,6 +3616,15 @@ node:
     - what-are-personal-access-tokens
     - why-cant-we-share-logins
     - why-do-i-need-2fa
+  understanding_application_private_networks:
+    page: node/references/understanding-application-private-networks.html
+    page_anchors:
+    - more-help
+    - more-info
+    - node-product-heading
+    - our-implementation-of-wireguard
+    - overview
+    - the-security-profile-of-wireguard
   understanding_cron_syntax:
     page: node/references/understanding-cron-syntax.html
     page_anchors:
@@ -3586,6 +3646,18 @@ node:
     page: node/how-to-guides/databases/shells/uninstall-mysql.html
     page_anchors:
     - node-product-heading
+  using_application_private_networks:
+    page: node/how-to-guides/security/using-application-private-networks.html
+    page_anchors:
+    - accessing-your-servers-remotely-via-apn
+    - allowing-access-via-your-firewall
+    - apn-specific-ip-ranges--private-dns
+    - configuring-your-apn
+    - exchanging-data-between-servers-via-apn
+    - more-help
+    - node-product-heading
+    - overview
+    - private-dns
   using_c66_via_firewall:
     page: node/how-to-guides/deployment/using-c66-via-firewall.html
     page_anchors:
@@ -4970,6 +5042,21 @@ rails:
     - rails-product-heading
     - vertical-scaling
     - web-servers
+  securely_accessing_applications:
+    page: rails/tutorials/securely-accessing-applications.html
+    page_anchors:
+    - 1-configure-your-apn-client
+    - 2-allow-access-via-your-application-firewall
+    - 3-connect-to-your-apn
+    - 4-connect-to-your-servers
+    - configuring-a-computer
+    - configuring-a-mobile-device
+    - giving-team-members-access-to-the-apn
+    - more-help
+    - note
+    - overview
+    - rails-product-heading
+    - what-youll-need
   security:
     page: rails/resources/security.html
     page_anchors:
@@ -5479,6 +5566,15 @@ rails:
     - what-are-personal-access-tokens
     - why-cant-we-share-logins
     - why-do-i-need-2fa
+  understanding_application_private_networks:
+    page: rails/references/understanding-application-private-networks.html
+    page_anchors:
+    - more-help
+    - more-info
+    - our-implementation-of-wireguard
+    - overview
+    - rails-product-heading
+    - the-security-profile-of-wireguard
   understanding_cron_syntax:
     page: rails/references/understanding-cron-syntax.html
     page_anchors:
@@ -5509,6 +5605,18 @@ rails:
   uninstall_mysql:
     page: rails/how-to-guides/databases/shells/uninstall-mysql.html
     page_anchors:
+    - rails-product-heading
+  using_application_private_networks:
+    page: rails/how-to-guides/security/using-application-private-networks.html
+    page_anchors:
+    - accessing-your-servers-remotely-via-apn
+    - allowing-access-via-your-firewall
+    - apn-specific-ip-ranges--private-dns
+    - configuring-your-apn
+    - exchanging-data-between-servers-via-apn
+    - more-help
+    - overview
+    - private-dns
     - rails-product-heading
   using_c66_via_firewall:
     page: rails/how-to-guides/deployment/using-c66-via-firewall.html
