@@ -62,7 +62,7 @@ You are free to specify a version for a number of components in your [manifest f
 <tr><td>Phusion Passenger</td><td>6.0.5</td></tr>
 <tr><td>Passenger Enterprise</td><td>6.0.5</td></tr>
 <tr><td>PostGIS</td><td>2.5</td></tr>
-<tr><td>PostgreSQL</td><td>11</td></tr>
+<tr><td>PostgreSQL</td><td>13</td></tr>
 <tr><td>Rails*</td><td>All versions from 2.6.3 and up</td></tr>
 <tr><td>Redis</td><td>6.2.3</td></tr>
 <tr><td>Ruby</td><td>2.6.3</td></tr>
