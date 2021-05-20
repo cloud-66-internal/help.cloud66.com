@@ -56,16 +56,16 @@ You are free to specify a version for a number of components in your [manifest f
 <tr><td>ElasticSearch</td><td>7.1.0</td></tr>
 <tr><td>GlusterFS</td><td>3.12.6</td></tr>
 <tr><td>Gotty</td><td>1.0.0</td></tr>
-<tr><td>Kubernetes</td><td>1.18.8</td></tr>
-<tr><td>MongoDB</td><td>2.6.11</td></tr>
+<tr><td>Kubernetes</td><td>1.18.18</td></tr>
+<tr><td>MongoDB</td><td>4.4.x</td></tr>
 <tr><td>MySQL</td><td>8.0</td></tr>
 <tr><td>Phusion Passenger</td><td>6.0.5</td></tr>
 <tr><td>Passenger Enterprise</td><td>6.0.5</td></tr>
-<tr><td>PostGIS</td><td>2.5</td></tr>
+<tr><td>PostGIS</td><td>3.1</td></tr>
 <tr><td>PostgreSQL</td><td>13</td></tr>
 <tr><td>Rails*</td><td>All versions from 2.6.3 and up</td></tr>
 <tr><td>Redis</td><td>6.2.3</td></tr>
-<tr><td>Ruby</td><td>2.6.3</td></tr>
+<tr><td>Ruby</td><td>3.0.1</td></tr>
 <tr><td>Scaleio</td><td>2.0.7120</td></tr>
 <tr><td>Stack</td><td>1.4.6</td></tr>
 <tr><td>Telegraf</td><td>0.10.4</td></tr>
