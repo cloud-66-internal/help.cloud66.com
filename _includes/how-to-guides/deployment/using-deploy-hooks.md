@@ -62,6 +62,12 @@ It's important to understand the order in which hook points will occur in the fl
 
 For more details on hook points, please read our [Reference guide](/{{page.collection}}/references/deploy-hooks-syntax.html).
 
+## Targets
+
+The **target** of a hook is the server or set of servers on which it must be executed. 
+
+You can use `any` to run the hook across your entire application, but you can also choose to run it on a [specific type of server](/{{page.collection}}/references/deploy-hooks-syntax.html#targets).
+
 ## Hook types
 
 There are different types of deploy hooks, and the fields available (and required) vary by type:
