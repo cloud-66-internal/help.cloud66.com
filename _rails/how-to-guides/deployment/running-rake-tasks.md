@@ -50,7 +50,7 @@ production:
 This is done by starting a [terminal connection to your server](/rails/how-to-guides/common-tools/ssh.html) and executing your rake task.
 
 ```shell
-$ cd $APP_PATH
+$ cd $STACK_PATH
 $ bundle exec rake your:task
 ```
 
