@@ -36,6 +36,21 @@ Every deploy hook needs, at a minimum:
 - a **target** - which type(s) of servers will use this hook
 - a **hook field** - the command or script being run (or invoked)
 
+{% if include.product == 'rails' or include.product == 'node' %} 
+### Specifiying app environment
+
+Unless you explicitly specify an **environment** - e.g. `production` - as the top node of your yaml, your hook will be applied to all of your application environments. For example:
+
+```yaml
+  production: #Environment
+    first_thing: # Hook point
+      - command: apt-get install nmap -y # Hook type
+        target: any # Hook fields
+        execute: true
+```
+
+{% endif %}
+
 ## Understanding hook points and ordering
 
 Hook points are used to define the point in your deployment process at which a hook should be invoked. This is obviously critical when there are tight dependencies between the components of your application (i.e. one component relies on another component being installed first), but it is also important in terms of what actions and commands are possible. For example, running tasks against a database before the database server is installed will not work!
@@ -67,6 +82,16 @@ For more details on hook points, please read our [Reference guide](/{{page.colle
 The **target** of a hook is the server or set of servers on which it must be executed. 
 
 You can use `any` to run the hook across your entire application, but you can also choose to run it on a [specific type of server](/{{page.collection}}/references/deploy-hooks-syntax.html#targets).
+
+## Calling environment variables in deploy hooks
+
+You can pull environment variables from your application configuration into your hooks using the following format:
+
+```yaml
+username: <%= ENV['DB_USER'] %>
+```
+
+These environment variables need to be available in your app before the deploy hook will work correctly. Please follow [our tutorial](/{{page.collection}}/tutorials/env-vars.html) if you're unsure of how to do this.
 
 ## Hook types
 

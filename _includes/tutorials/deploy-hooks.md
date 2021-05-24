@@ -40,12 +40,11 @@ A deploy hook needs, at a minimum:
 
 So, to write a deploy hook you must:
 
-{% if include.product == 'rails' or include.product == 'node' %}1. Choose your **environment** - e.g. `production`{% endif %}
-2. Choose your [**hook point**](/{{page.collection}}/references/deploy-hooks-syntax.html#hook-points) - e.g. `first_thing`
-3. Choose your [**hook type**](/{{page.collection}}/references/deploy-hooks-syntax.html#hook-types) - e.g. `command`
-4. Set a [**target**](/{{page.collection}}/references/deploy-hooks-syntax.html#targets) server-type for the hook - e.g. `mysql`
-5. If your **target** is *not* `any` then set the **run_on** to either `single_server` or `all_servers`.
-6. Configure the [**hook fields**](/{{page.collection}}/references/deploy-hooks-syntax.html#hook-fields) you require
+1. Choose your [**hook point**](/{{page.collection}}/references/deploy-hooks-syntax.html#hook-points) - e.g. `first_thing`
+2. Choose your [**hook type**](/{{page.collection}}/references/deploy-hooks-syntax.html#hook-types) - e.g. `command`
+3. Set a [**target**](/{{page.collection}}/references/deploy-hooks-syntax.html#targets) server-type for the hook - e.g. `mysql`
+4. If your **target** is *not* `any` then set the **run_on** to either `single_server` or `all_servers`.
+5. Configure the [**hook fields**](/{{page.collection}}/references/deploy-hooks-syntax.html#hook-fields) you require
 
 While this is the bare minimum required to write a functional deploy hook, there are extensive options available for customization. Please read our [reference guide](/{{page.collection}}/references/deploy-hooks-syntax.html) to understand all the possibilities.
 
@@ -56,7 +55,6 @@ The simplest kind of hook is the `command`. This simply executes a command in th
 We're going to add the hook below to our demo application:
 
 ```yaml
-production: # Environment
     first_thing: # Hook point
       - command: apt-get install nmap -y # Hook type
         target: any # Hook fields
