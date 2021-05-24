@@ -1,6 +1,8 @@
 ## What are deploy hooks?
 
-Deploy hooks are scripts that allow you to automate actions at various points during the deployment process for your applications. If you’ve never used hooks before, we have [a tutorial](/{{page.collection}}/tutorials/deploy-hooks.html) that walks you through the basics. You can also use our examples at the bottom of this page.
+Deploy hooks are scripts that allow you to automate actions at various points during the deployment process for your applications. 
+
+If you’ve never used hooks before, we have [a tutorial](/{{page.collection}}/tutorials/deploy-hooks.html) that walks you through the basics. For more detailed examples of using hooks in practice please read the in-depth [How-to Guide](/{{page.collection/how-to-guides/deployment/using-deploy-hooks.html}}).
 
 ## Debugging deploy hooks
 
