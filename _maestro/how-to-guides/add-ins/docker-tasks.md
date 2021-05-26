@@ -21,17 +21,17 @@ If you need to run a job on the underlying server, rather than the service, you 
 To add a new application job: 
 
 1. Click the *+* button on the add-ins panel of your Application Overview
-2. Click the Install Now button on the Application Jobs add-in block. 
+2. Click the Install Now button on the Application Jobs add-in block
 3. Choose a service and give your new job a name
 4. Specify the shell command you want to run
-5. Set a schedule for the job, or set it to run only on demand. (You can use [cron syntax](/{{page.collection}}/references/understanding-cron-syntax.html) for more control over your scheduling) 
+5. Set a schedule for the job - you can use [cron syntax](/{{page.collection}}/references/understanding-cron-syntax.html) for more control over your scheduling
 6. Clicks the green Create Job button
 
-You will now see your new job listed in your Application Overview.  You can edit it, or run it on demand by clicking on the small downward arrow. Your run results (success, failure and any output) can be seen in real-time on the job detail page. 
+You will now see your new job listed in your Application Overview. You can edit it by clicking on the small downward arrow. Your run results (success, failure and any output) can be seen in real-time on the job detail page. 
 
 ## Using parameters
 
-When you are running a job on demand via dashboard or [toolbelt]({% if page.collection == "maestro" %}/maestro/references/toolbelt.html{%else%}/{{page.collection}}/references/toolbelt.html{%endif%}#job-management), you can pass it parameters (if it is written to accept them).
+When you run a job you can pass it parameters (if it is written to accept them).
 
 ### Notation
 
@@ -45,7 +45,7 @@ ls $1 $2 $3 $4 $5 $6 $7 $8 $9 ${10} ${11}
 
 ### Default values
 
-You can handle default value for the parameter with following notation: `${n:-YOUR_DEFAULT_VALUE}`. This is useful when you have ha job that scheduled and also you need to run it on demand sometimes.
+You can handle default value for the parameter with following notation: `${n:-YOUR_DEFAULT_VALUE}`.
 
 Example below cp file `$1` to `tmp` directory by default
 
