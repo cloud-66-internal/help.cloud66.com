@@ -40,7 +40,9 @@ To enable automated health checks on an application:
 
 ## Custom health checks
 
-Custom health checks allow you to define simple tests (in YAML format) to confirm whether your Rails (or Rack) application has been successfully deployed, and to mark a deployment as "failed" if any of these checks do not pass.
+Custom health checks allow you to define simple tests (in YAML format) to confirm whether your Rails (or Rack) application has been successfully deployed, and to mark a deployment as “failed” if any of these checks do not pass. 
+
+These tests send a request to one of your app's endpoints (as defined by you) and assign a status ("pass" or "fail") based on the range of acceptable HTTP response code.
 
 This can help to catch deployments that don't throw any errors, but are problematic for other reasons (such as issues at the code or database level). This is particularly useful for serial or rolling [deployment strategies](/rails/how-to-guides/deployment/parallel-deployment.html) to ensure that bad code doesn't bring your entire application down.
 

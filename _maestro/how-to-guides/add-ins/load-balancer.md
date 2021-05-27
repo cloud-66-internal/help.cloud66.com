@@ -10,4 +10,4 @@ legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-{% include how-to-guides/add-ins/load-balancer.md %}
+{% include how-to-guides/add-ins/load-balancer.md product = page.collection %}

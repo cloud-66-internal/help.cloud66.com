@@ -9,7 +9,19 @@ The account administrator is the only user who can invite other members and chan
 
 ### Finance users
 
-*Finance users* only have access to your _Payment_ page, and can change billing information. They will automatically receive email payment notifications (successful and unsuccessful payments), but have no access rights to applications. **We do not charge for Finance users.**
+*Finance users* only have access to your *Payment* page, and can change billing information. They will automatically receive email payment notifications (successful and unsuccessful payments) and invoices, but have no access rights to applications.
+
+#### Note
+<div class="notice"><p>A finance user still needs to create a standard Cloud 66 account before they can access records or receive invoices and will be prompted via email to do so if they have not already.</p></div>
+
+You can also opt to simply *cc* other email addresses whenever invoices are sent to you. To do this:
+
+1. Open your **[Dashboard](https://app.cloud66.com/dashboard)**
+2. Click on your account avatar (top-right) and select *Account Settings*
+3. Click *Organizations* in the left-hand panel
+4. Click on the name of organization you wish to update
+5. Scroll down to the "**Copy invoices to**" field and add the addresses (separated by commas)
+6. Click *Save*
 
 ### Application users
 

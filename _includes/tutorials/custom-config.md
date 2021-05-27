@@ -7,18 +7,32 @@ CustomConfig uses the [Liquid templating language](http://www.liquidmarkup.org/)
 
 You can access and modify CustomConfig files in two different ways:
 
-1. Using the web based UI
+1. Using the Cloud 66 Dashboard
 2. Using CustomConfig git repository
 
-Using the web based UI is very easy. Everything you need to use the web based UI is on this page.
+### Using the Dashboard
 
-**CustomConfig git** is a private git repository that allows you make changes to CustomConfig files using the well known git tooling. You can find more information about CustomConfig git repository [here](/{{page.collection}}/tutorials/custom-config-git.html).
+You can find all the CustomConfig templates for your application by:
+
+1. Logging into your Cloud 66 Dashboard
+2. Clicking on your app to open the Overview 
+3. Clicking on *Configuration* in the right-hand column
+4. Clicking on the *Configuration Files* tab at the top of the main panel
+
+You will now see all your configuration files as sub-tabs (as well as your Manifest and other config files depending on your app's particular features).
+
+#### Note
+<div class="notice"><p>You first need to add a component to your app using the generic configuration before you can set up CustomConfig for it. The system does not support pre-emptive configuration.</p></div>
+
+### Using git
+
+**CustomConfig git** is a private git repository that allows you manage changes to CustomConfig files the way you do with code. For more information please read our [CustomConfig git guide](/{{page.collection}}/tutorials/custom-config-git.html).
 
 ## Preview a template
 
 To use Nginx as an example, go to your Web Servers group detail page and click CONFIGURE NGINX in the right sidebar. This page will show you the template used to build the Nginx configuration when Nginx is deployed during your application built or reconfigured. Once you’re done with editing your template, you can preview the results by clicking on the Preview button.
 
-See our documentation for more details about CustomConfig for [Nginx]({% if page.collection == "maestro" %}/maestro/references/nginx.html{%else%}/{{page.collection}}/references/nginx.html{%endif%}), HAProxy and [databases]({% if page.collection == "maestro" %}/maestro/how-to-guides/databases/shells/manage-backups.html{%else%}/{{page.collection}}/how-to-guides/databases/shells/manage-backups.html{%endif%}).
+See our documentation for more details about CustomConfig for [Nginx]({% if page.collection == "maestro" %}/maestro/references/nginx.html{%else%}/{{page.collection}}/references/nginx.html{%endif%}), HAProxy and [databases]({% if page.collection == "maestro" %}/maestro/how-to-guides/databases/database-customization.html{%else%}/{{page.collection}}/how-to-guides/databases/database-management.html#customize-your-database-configuration{%endif%}).
 
 #### Important
 <div class="notice">

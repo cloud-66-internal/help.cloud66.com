@@ -2,6 +2,11 @@ A load balancer is used to distribute traffic across your web servers, and offer
 
 You can add either native load balancers (for cloud vendors) or an HAProxy load balancer for Registered Servers.
 
+{% if include.product == 'rails' %}
+### Warning: check your config.hosts
+<div class="notice notice-warning"><p>If you have set your <code>config.hosts</code> in Rails to only allow traffic from your own domain(s), your load balancer <em>can</em> be seen as a different host and be blocked by your application, which can bring down your entire application. You will need to add your load balancer's hostname to your allowed list, or disable the config.hosts feature (which we recommend against)</p></div>
+{% endif %}
+
 ## Add a load balancer
 
 To add a load balancer to your application: 

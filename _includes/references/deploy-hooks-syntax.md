@@ -1,6 +1,14 @@
 ## What are deploy hooks?
 
-Deploy hooks are scripts that allow you to automate actions at various points during the deployment process for your applications. If you’ve never used hooks before, we have [a tutorial](/{{page.collection}}/tutorials/deploy-hooks.html) that walks you through the basics. You can also use our examples at the bottom of this page.
+Deploy hooks are scripts that allow you to automate actions at various points during the deployment process for your applications. 
+
+If you’ve never used hooks before, we have [a tutorial](/{{page.collection}}/tutorials/deploy-hooks.html) that walks you through the basics. For more detailed examples of using hooks in practice please read the in-depth [How-to Guide](/{{page.collection/how-to-guides/deployment/using-deploy-hooks.html}}).
+
+## Debugging deploy hooks
+
+Automating deploy hooks can sometimes be tricky. To avoid issues, it's good practice to run each of your commands manually to see that they complete successfully.
+
+If a specific command doesn't show any output, you can use the `echo $?` command after issuing your command to see its exit code. If it returns a _zero_, your command was successful, whereas a _one_ means it has failed.
 
 ## Hook points
 
@@ -127,7 +135,13 @@ The table below is arranged in the order in which each hook point occurs in the 
 
 * * *
 
-## Hook fields
+## Targets
+
+Every deploy hook must have a **target** - a server or set of servers on which it must be executed. You can simply choose `any` to run the hook across your entire application, but you can also choose to run it on a specific type of server. The options are `any`, `rails`, `mysql`, `postgresql`, `mongodb`, `redis`, `sinatra`, `padrino`, `custom`.
+
+If you set the target of a hook to anything other than `any` then you will need to pay attention to the **run_on** field. This determines whether the hook will be applied to a *single server* in that group (the default) or to *all* the servers in that group.
+
+## Hook types
 
 There are different types of deploy hooks, and the fields available (and required) vary by type:
 
@@ -135,6 +149,13 @@ There are different types of deploy hooks, and the fields available (and require
 2. **Commands:** run your own commands.
 3. **Inline Scripts:** use your own inline scripts for more comprehensive procedures
 {% if include.product == 'rails' or include.product == 'node' %}4. **Existing Scripts:** use your own existing scripts for more comprehensive procedures (Rails/Node applications only){% endif %}
+
+## Hook fields
+
+Each hook type has a different set of hook fields available, with some shared fields. Please be careful to note that:
+
+- Some fields are mutually exclusive (e.g. you cannot specify both **sudo** and **run_as** fields)
+- Some fields have different defaults for different hook types. For example the **execute** field defaults to `false` for inline scripts and snippets, but to `true` for commands.
 
 ## Hook fields: snippets 
 
