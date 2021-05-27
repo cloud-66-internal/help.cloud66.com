@@ -107,6 +107,12 @@ You can use your instance profiles via Cloud 66 by [calling them in the manifest
 You can use your instance profiles via Cloud 66 by [calling them in the manifest file](/{{page.collection}}/how-to-guides/build-and-config/building-a-manifest-file.html#which-component) of your application. You can set a different profile for each component of an application (e.g. MySQL or Redis). We will then use that profile whenever we provision a server for that component.
 {% endif %}
 
+## Cloud 66 Security Groups on AWS
+
+Whenever we provision servers for a new application on AWS, we configure separate AWS Security Groups for each type of server (e.g. application servers or database servers). 
+
+If new servers are added to a group on Cloud 66 (e.g. scaling up your web servers), then they are added to the corresponding Security Group on AWS. If servers are removed from Cloud 66, they are also removed from their Security Group on AWS.
+
 ## Reserved instances
 
 [AWS reserved instances](http://aws.amazon.com/ec2/purchasing-options/reserved-instances/) enable users to reserve instances for one to three years, which has pricing benefits when compared to on-demand instances.
