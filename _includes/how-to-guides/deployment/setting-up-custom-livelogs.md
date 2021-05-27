@@ -1,6 +1,11 @@
 ## Overview
 
+{% if include.product != 'maestro' %}
 Live Logs is Cloud 66's real-time logging interface. It allows you to monitor your app via the Cloud 66 Dashboard. You can set up custom Live Logs via your [Manifest file](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html#custom-livelog-files).
+{% endif %}
+{% if include.product == 'maestro' %}
+Live Logs is Maestro's real-time logging interface. It allows you to monitor your app via the Cloud 66 Dashboard. You can set up custom Live Logs via your [Manifest file](/{{page.collection}}/how-to-guides/build-and-config/building-a-manifest-file.html#custom-livelog-files).
+{% endif %}
 
 ## Defining custom Live Logs
 

@@ -10,4 +10,4 @@ tags: ["debugging","logs"]
 
 permalink: /:collection/:path:output_ext
 ---
-{% include how-to-guides/deployment/setting-up-custom-livelogs.md %}
+{% include how-to-guides/deployment/setting-up-custom-livelogs.md product = page.collection %}
