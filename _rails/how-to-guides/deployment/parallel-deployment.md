@@ -92,6 +92,11 @@ In this strategy we deploy to each server one at a time. We take each server off
 In this strategy we deploy to all your server simultaneously. Servers are not taken off the load balancer. If your webserver does not support zero-downtime reloads you will most likely have some downtime while your application reloads.
 
 ### Rolling deployment
+In order to use rolling deployments, your application needs: 
+
+- A load balancer
+- At least four servers (not including the load balancer)...
+- ...two of which **must be web servers**
 
 Rolling deployments work as follows:
 
@@ -122,7 +127,7 @@ Rolling deployments work as follows:
   <tr>
     <td>Rolling</td>
     <td>A balance between safe and fast. Very brief overlap of old and new code being served</td>
-    <td>Requires at least 4 webservers and a load balancer. Half your servers will be unavailable during deployment so load on the application needs to be managed carefully</td>
+    <td>Requires at least 4 servers and a load balancer. Half your servers will be unavailable during deployment so load on the application needs to be managed carefully</td>
   </tr>
 </table>
 

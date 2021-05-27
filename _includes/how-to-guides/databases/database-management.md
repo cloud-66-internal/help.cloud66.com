@@ -13,15 +13,36 @@ We currently support the following databases, with no need for additional config
 * GlusterFS
 * InfluxDB
 
-{%if page.collection=='rails' %}For Rack-based stacks, Cloud 66 automatically detects whether your application relies on a database or not during your code analysis. This is based on a combination of your Gemfile and your `database.yml` or `mongoid.yml` files.{%endif%}
+{%if page.collection=='rails' %}For Rack-based stacks, Cloud 66 automatically detects whether your application relies on a database or not during your code analysis. This is based on a combination of your Gemfile and your `database.yml` or `mongoid.yml` files.
+
+{%endif%}
 
 After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. If you haven't specified a username and password for your database, Cloud 66 will automatically generate these credentials for you. They will be available as environment variables and your application will be configured to use them.
+
+{%if page.collection=='rails' %}
+#### Note 
+<div class="notice notice-warning"><p>If your <code>database.yml</code> file has a <code>url</code> defined, we will assume that you are using <strong>an external (self-managed) database</strong>, and will follow that URL accordingly. This also means we <strong>won't</strong> set any of the database variables (such as username and password) the way we would normally do.</p></div>
+
+### Managing YAML configs
+
+A Rails app must have either a `config/database.yml` file or `config/mongoid.yml` in order to work on Cloud 66. We will create these files automatically if they don't exist. 
+
+If you want to specify a different DB config per environment, you can name the files `config/database.yml.environment-name` (e.g. `config/database.yml.dev`)
+
+If you don't want to use the standard config setup, you can also add a `config/database.yml.cloud66` or `config/mongoid.yml.cloud66` file instead.
+
+We will prioritise these configs as follows:
+
+1. Files ending `.cloud66`
+2. Files ending with a `.environment-name`
+3. The standard YAML config file
+{% endif %}
 
 ## Database deployment types
 
 ### No database (external)
-This option allows you to deploy your application without a database managed by Cloud 66, and is ideal if it is hosted externally.
-Please note that if there is no connectivity to your database, or your database host is not configured correctly, the deployment will fail.
+This option allows you to deploy your application without a database managed by Cloud 66, and is ideal for externally hosted databases.
+Please note that if there is no connectivity to your database, or your database host is not configured correctly, the deployment will fail. {%if page.collection=='rails' %}For Rails apps, if you have a `url` set in your `database.yml` then we will assume that you are using an external DB.{% endif %}
 
 ### Local database
 This option deploys your chosen database to the same server as your web server - this is intended primarily for development, as running your database locally in production is not advised. In this case, your application database configuration will be amended to target your local database server. If you scale up your web server, these settings will also be amend automatically to reflect your database configuration.
@@ -51,7 +72,7 @@ When you have disabled `run.deploy.command` in [Application settings](/{{page.co
 
 ## Customize your database configuration
 
-You can customize the database configuration on your servers using [CustomConfig](/{{page.collection}}/tutorials/custom-config-git.html). CustomConfig is available for MySQL, PostgreSQL, Redis and MongoDB.
+You can customize the database configuration on your servers using [CustomConfig](/{{page.collection}}/tutorials/custom-config.html). CustomConfig is available for MySQL, PostgreSQL, Redis and MongoDB.
 
 Editing and committing your database CustomConfig will perform the following steps on every database server in your application, one by one, sequentially:
 

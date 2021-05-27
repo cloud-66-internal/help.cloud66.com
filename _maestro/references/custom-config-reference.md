@@ -35,10 +35,26 @@ CustomConfig templates are available for the following components:
 
 You can access and modify CustomConfig files in two different ways:
 
-1. Using the [web-based UI](https://app.cloud66.com/)
+1. Using your [Cloud 66 Dashboard](https://app.cloud66.com/)
 2. Using CustomConfig git repository
 
-**CustomConfig git** is a private git repository that allows you make changes to CustomConfig files using the well-known git tooling. You can find more information about CustomConfig git [here](/maestro/tutorials/custom-config-git.html).
+### Using the Dashboard
+
+You can find all the CustomConfig templates for your application by:
+
+1. Logging into your Cloud 66 Dashboard
+2. Clicking on your app to open the Overview 
+3. Clicking on *Configuration* in the right-hand column
+4. Clicking on the *Configuration Files* tab at the top of the main panel
+
+You will now see all your configuration files as sub-tabs (as well as your Manifest and other config files depending on your app's particular features).
+
+#### Note
+<div class="notice"><p>You first need to add a component to your app using the generic configuration before you can set up CustomConfig for it. The system does not support pre-emptive configuration.</p></div>
+
+### Using git
+
+**CustomConfig git** is a private git repository that allows you manage changes to CustomConfig files the way you do with code. For more information please read our [CustomConfig git guide](/{{page.collection}}/tutorials/custom-config-git.html).
 
 ## Dynamic templating
 

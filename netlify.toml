@@ -1405,6 +1405,18 @@
   to = "/skycap/quickstarts/using-formations.html"
 
 [[redirects]]
+  from = "/maestro/how-to-guides/deployment/deploy-hook-examples.html"
+  to = "/maestro/how-to-guides/deployment/using-deploy-hooks.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/deployment/deploy-hook-examples.html"
+  to = "/rails/how-to-guides/deployment/using-deploy-hooks.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/deployment/deploy-hook-examples.html"
+  to = "/node/how-to-guides/deployment/using-deploy-hooks.html"
+
+[[redirects]]
   from = "/account-management/*"
   to = "/"
 
