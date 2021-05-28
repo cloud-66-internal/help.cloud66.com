@@ -2,7 +2,7 @@
 
 Deploy hooks are scripts that allow you to automate actions at various points during the deployment process for your applications. This allows you to customise your deployments  by, for example, installing software packages or upgrading components. 
 
-We will be walking through a simple example in this tutorial. For more detailed examples please read the in-depth [How-to Guide](/{{page.collection/how-to-guides/deployment/using-deploy-hooks.html}}). For a full list of every available option please read our [reference guide](/{{page.collection}}/references/deploy-hooks-syntax.html).
+We will be walking through a simple example in this tutorial. For more detailed examples please read the in-depth [How-to Guide](/{{page.collection}}/how-to-guides/deployment/using-deploy-hooks.html). For a full list of every available option please read our [reference guide](/{{page.collection}}/references/deploy-hooks-syntax.html).
 
 ## What you'll need
 

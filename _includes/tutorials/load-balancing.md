@@ -43,7 +43,7 @@ The time required to set up your load balancer will depend on which cloud provid
 
 ## What's next?
 
-* Learn how to [set up your DNS records](/{{page.collection}}/tutorials/configure-dns.html) to work with Cloud 66
+{% if include.product == 'rails' %}* Learn how to [set up your DNS records](/{{page.collection}}/tutorials/configure-dns.html) to work with Cloud 66{% endif %}{% if include.product == 'maestro' %}* Learn how to [set up your DNS records](/maestro/how-to-guides/deployment/configure-dns.html) to work with Maestro{% endif %}
 * Learn how to add a [Failover Group](/{{page.collection}}/tutorials/failover-groups.html) to your application, to further improve resilience. 
 * Learn how to add a [firewall rule](/{{page.collection}}/tutorials/firewall-rule.html) to your application.
 

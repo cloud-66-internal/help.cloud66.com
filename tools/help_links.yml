@@ -405,6 +405,8 @@ maestro:
     - dynamic-templating
     - maestro-product-heading
     - patching-configuration-files
+    - using-git
+    - using-the-dashboard
     - what-is-customconfig
   custom_server:
     page: maestro/how-to-guides/add-ins/custom-server.html
@@ -494,39 +496,30 @@ maestro:
     - overview
     - re-synchronizing-slave-with-master
     - single-application
-  deploy_hook_examples:
-    page: maestro/how-to-guides/deployment/deploy-hook-examples.html
-    page_anchors:
-    - how-do-i-install-a-package-or-library-on-each-server-i-deploy
-    - how-do-i-install-a-specific-non-standard-version-of-a-package-or-library
-    - maestro-product-heading
-    - overview
-    - querying-server-metadata
   deploy_hooks:
     page: maestro/tutorials/deploy-hooks.html
     page_anchors:
     - adding-the-hook-to-your-app
     - creating-a-deploy-hook
     - deploying-and-testing
-    - deployment-process-simplified
     - maestro-product-heading
-    - notes
+    - note
     - overview
-    - understanding-hook-points-and-ordering
-    - using-inline-scripts
-    - using-snippets
     - what-youll-need
     - whats-next
     - writing-the-yaml
   deploy_hooks_syntax:
     page: maestro/references/deploy-hooks-syntax.html
     page_anchors:
+    - debugging-deploy-hooks
     - hook-fields
     - hook-fields-commands
     - hook-fields-inline-scripts
     - hook-fields-snippets
     - hook-points
+    - hook-types
     - maestro-product-heading
+    - targets
     - what-are-deploy-hooks
   deploy_profiles:
     page: maestro/references/deploy-profiles.html
@@ -917,7 +910,7 @@ maestro:
     - containerized-applications
     - log-rotation
     - maestro-product-heading
-    - other
+    - other-log-directories
     - overview
   manage_backups:
     page: maestro/how-to-guides/databases/shells/manage-backups.html
@@ -1567,8 +1560,9 @@ maestro:
   setting_up_custom_livelogs:
     page: maestro/how-to-guides/build-and-config/setting-up-custom-livelogs.html
     page_anchors:
+    - defining-custom-live-logs
     - maestro-product-heading
-    - note
+    - overview
   setting_up_redirect:
     page: maestro/tutorials/setting-up-redirect.html
     page_anchors:
@@ -2007,6 +2001,25 @@ maestro:
     - update-toolbelt
     - view-toolbelt-information
     - what-is-toolbelt
+  using_deploy_hooks:
+    page: maestro/how-to-guides/deployment/using-deploy-hooks.html
+    page_anchors:
+    - advanced-examples-of-deploy-hooks
+    - calling-environment-variables-in-deploy-hooks
+    - creating-or-editing-deploy-hooks
+    - deployment-process-simplified
+    - hook-types
+    - install-packages-on-each-server-deployed
+    - installing-non-standard-versions-of-packages
+    - maestro-product-heading
+    - notes
+    - overview
+    - querying-server-metadata
+    - targets
+    - understanding-hook-points-and-ordering
+    - using-command-hooks
+    - using-inline-script-hooks
+    - using-snippet-hooks
   using_master_data_staging:
     page: maestro/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
@@ -2328,6 +2341,8 @@ node:
     - preview-a-template
     - submit-template-changes
     - updates-to-configuration-files-and-patches
+    - using-git
+    - using-the-dashboard
     - whats-next
   custom_config_git:
     page: node/tutorials/custom-config-git.html
@@ -2426,40 +2441,31 @@ node:
     - overview
     - re-synchronizing-slave-with-master
     - single-application
-  deploy_hook_examples:
-    page: node/how-to-guides/deployment/deploy-hook-examples.html
-    page_anchors:
-    - how-do-i-install-a-package-or-library-on-each-server-i-deploy
-    - how-do-i-install-a-specific-non-standard-version-of-a-package-or-library
-    - node-product-heading
-    - overview
-    - querying-server-metadata
   deploy_hooks:
     page: node/tutorials/deploy-hooks.html
     page_anchors:
-    - debugging-deploy-hooks
-    - deployment-process-simplified
-    - example-env-vars-parameter
-    - how-to-use-deploy-hooks
+    - adding-the-hook-to-your-app
+    - creating-a-deploy-hook
+    - deploying-and-testing
     - node-product-heading
-    - notes
+    - note
     - overview
-    - understanding-hook-points-and-ordering
-    - using-command-deploy-hooks
-    - using-existing-script-deploy-hooks
-    - using-inline-script-deploy-hooks
-    - using-snippet-deploy-hooks
+    - what-youll-need
     - whats-next
+    - writing-the-yaml
   deploy_hooks_syntax:
     page: node/references/deploy-hooks-syntax.html
     page_anchors:
+    - debugging-deploy-hooks
     - hook-fields
     - hook-fields-commands
     - hook-fields-existing-scripts
     - hook-fields-inline-scripts
     - hook-fields-snippets
     - hook-points
+    - hook-types
     - node-product-heading
+    - targets
     - what-are-deploy-hooks
   deployment_gateway:
     page: node/how-to-guides/deployment/deployment-gateway.html
@@ -2724,7 +2730,7 @@ node:
     page: node/tutorials/load-balancing.html
     page_anchors:
     - adding-a-load-balancer
-    - load-balancers-by-cloud-provider
+    - load-balancer-configuration
     - node-product-heading
     - overview
     - whats-next
@@ -2733,7 +2739,7 @@ node:
     page_anchors:
     - log-rotation
     - node-product-heading
-    - other
+    - other-log-directories
     - overview
   manage_backups:
     page: node/how-to-guides/databases/shells/manage-backups.html
@@ -3235,8 +3241,9 @@ node:
   setting_up_custom_livelogs:
     page: node/how-to-guides/deployment/setting-up-custom-livelogs.html
     page_anchors:
+    - defining-custom-live-logs
     - node-product-heading
-    - note
+    - overview
   sharing_db:
     page: node/how-to-guides/databases/shells/sharing-db.html
     page_anchors:
@@ -3684,6 +3691,26 @@ node:
     - update-toolbelt
     - view-toolbelt-information
     - what-is-toolbelt
+  using_deploy_hooks:
+    page: node/how-to-guides/deployment/using-deploy-hooks.html
+    page_anchors:
+    - advanced-examples-of-deploy-hooks
+    - calling-environment-variables-in-deploy-hooks
+    - creating-or-editing-deploy-hooks
+    - deployment-process-simplified
+    - hook-types
+    - install-packages-on-each-server-deployed
+    - installing-non-standard-versions-of-packages
+    - node-product-heading
+    - notes
+    - overview
+    - querying-server-metadata
+    - specifiying-app-environment
+    - targets
+    - understanding-hook-points-and-ordering
+    - using-command-hooks
+    - using-inline-script-hooks
+    - using-snippet-hooks
   using_master_data_staging:
     page: node/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
@@ -4026,6 +4053,8 @@ rails:
     - rails-product-heading
     - submit-template-changes
     - updates-to-configuration-files-and-patches
+    - using-git
+    - using-the-dashboard
     - whats-next
   custom_config_git:
     page: rails/tutorials/custom-config-git.html
@@ -4112,6 +4141,7 @@ rails:
     - database-deployment-types
     - dedicated-database
     - local-database
+    - managing-yaml-configs
     - no-database-external
     - rails-product-heading
     - upgrading-your-database
@@ -4135,41 +4165,31 @@ rails:
     - rails-product-heading
     - re-synchronizing-slave-with-master
     - single-application
-  deploy_hook_examples:
-    page: rails/how-to-guides/deployment/deploy-hook-examples.html
-    page_anchors:
-    - how-do-i-install-a-package-or-library-on-each-server-i-deploy
-    - how-do-i-install-a-specific-non-standard-version-of-a-package-or-library
-    - overview
-    - querying-server-metadata
-    - rails-product-heading
   deploy_hooks:
     page: rails/tutorials/deploy-hooks.html
     page_anchors:
-    - debugging-deploy-hooks
-    - deployment-process-simplified
-    - example-env-vars-parameter
-    - how-to-use-deploy-hooks
-    - notes
+    - adding-the-hook-to-your-app
+    - creating-a-deploy-hook
+    - deploying-and-testing
+    - note
     - overview
     - rails-product-heading
-    - running-custom-rake-tasks-using-hooks
-    - understanding-hook-points-and-ordering
-    - using-command-deploy-hooks
-    - using-existing-script-deploy-hooks
-    - using-inline-script-deploy-hooks
-    - using-snippet-deploy-hooks
+    - what-youll-need
     - whats-next
+    - writing-the-yaml
   deploy_hooks_syntax:
     page: rails/references/deploy-hooks-syntax.html
     page_anchors:
+    - debugging-deploy-hooks
     - hook-fields
     - hook-fields-commands
     - hook-fields-existing-scripts
     - hook-fields-inline-scripts
     - hook-fields-snippets
     - hook-points
+    - hook-types
     - rails-product-heading
+    - targets
     - what-are-deploy-hooks
   deploy_profiles:
     page: rails/references/deploy-profiles.html
@@ -4483,11 +4503,12 @@ rails:
     - adding-multiple-load-balancers
     - rails-product-heading
     - switching-between-load-balancers
+    - warning-check-your-confighosts
   load_balancing:
     page: rails/tutorials/load-balancing.html
     page_anchors:
     - adding-a-load-balancer
-    - load-balancers-by-cloud-provider
+    - load-balancer-configuration
     - overview
     - rails-product-heading
     - whats-next
@@ -4497,7 +4518,7 @@ rails:
     - custom-rails-deployments
     - default-rails-deployments
     - log-rotation
-    - other
+    - other-log-directories
     - overview
     - rails-applications
     - rails-product-heading
@@ -5135,7 +5156,8 @@ rails:
   setting_up_custom_livelogs:
     page: rails/how-to-guides/deployment/setting-up-custom-livelogs.html
     page_anchors:
-    - note
+    - defining-custom-live-logs
+    - overview
     - rails-product-heading
   setting_write_permissions:
     page: rails/how-to-guides/deployment/setting-write-permissions.html
@@ -5644,6 +5666,26 @@ rails:
     - update-toolbelt
     - view-toolbelt-information
     - what-is-toolbelt
+  using_deploy_hooks:
+    page: rails/how-to-guides/deployment/using-deploy-hooks.html
+    page_anchors:
+    - advanced-examples-of-deploy-hooks
+    - calling-environment-variables-in-deploy-hooks
+    - creating-or-editing-deploy-hooks
+    - deployment-process-simplified
+    - hook-types
+    - install-packages-on-each-server-deployed
+    - installing-non-standard-versions-of-packages
+    - notes
+    - overview
+    - querying-server-metadata
+    - rails-product-heading
+    - specifiying-app-environment
+    - targets
+    - understanding-hook-points-and-ordering
+    - using-command-hooks
+    - using-inline-script-hooks
+    - using-snippet-hooks
   using_master_data_staging:
     page: rails/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
