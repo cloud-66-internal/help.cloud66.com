@@ -111,6 +111,8 @@ You can use your instance profiles via Cloud 66 by [calling them in the manifest
 
 Whenever we provision servers for a new application on AWS, we configure separate AWS Security Groups for each type of server (e.g. application servers or database servers). 
 
+This requires Cloud 66 to have IAM permissions on your AWS account, so please be sure to set them up [as explained above](#option-b-identity-access-management-iam).
+
 If new servers are added to a group on Cloud 66 (e.g. scaling up your web servers), then they are added to the corresponding Security Group on AWS. If servers are removed from Cloud 66, they are also removed from their Security Group on AWS.
 
 ## Reserved instances
