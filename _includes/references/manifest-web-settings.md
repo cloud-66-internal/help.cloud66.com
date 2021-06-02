@@ -295,6 +295,12 @@ A Rails application type in the manifest file gives you fine control over things
     <td>All</td>
   </tr>
   <tr>
+    <td><code>bundler / options</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Customise your <code>bundle install</code> command by specifying options. <a href="#examples-of-bundle-install-options-railsrack">See below</a> for some example options and defaults.</td>
+    <td>All</td>
+  </tr>
+  <tr>
     <td><code>do_initial_db_schema_load</code></td>
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies the first time the app is built,</span></div></td>
     <td>Specify whether to perform <code>rake db:schema:load</code> on a new application build.</td>
@@ -404,6 +410,9 @@ rails:
   configuration:
     ruby_version: 2.7.2
     asset_pipeline_precompile: true
+    bundler:
+      options:
+        without: ["dev", "admin"]
     do_initial_db_schema_load: false
     reserved_server_memory: 0 #default value
     passenger_process_memory: 200 #default value
@@ -417,6 +426,62 @@ rails:
     root_disk_type: ssd
     nameservers: ['8.8.8.8', '8.8.4.4']
     iam_instance_profile_name: rails-perms
+```
+
+### Examples of Bundle Install options (Rails/Rack)
+
+This allows you to customise your `bundle install` command by specifying options in your Manifest. We've listed some common examples below. 
+
+#### Note
+<div class="notice notice-warning"><p>This feature requires a thorough understanding of Bundler in order to be used properly. If you are at all unsure, rather do not set these options because doing so incorrectly could cause your app to break.</p></div>
+
+<table class='table table-bordered table-striped'>
+<thead>
+  <tr>
+    <th width="40%">Option</th>
+    <th width="16%">Applied on</th>
+    <th>Description</th>
+    <th width="10%">Clouds</th>
+  </tr>
+</thead>
+<tbody>
+   <tr>
+    <td><code>bundler / options / without</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>An array of environments you want to exclude during bundle install e.g. <code>["development", "test", "custom"]</code> Default: <code>[]</code> if Rails env is development, or <code>["development", "mock", "test"]</code> otherwise.</td>
+    <td>All</td>
+  </tr>
+   <tr>
+    <td><code>bundler / options / deployment</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Default: <code>true</code></td>
+    <td>All</td>
+  </tr>
+     <tr>
+    <td><code>bundler / options / quiet</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Default: <code>true</code></td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>bundler / options / full-index</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Default: <code>false</code></td>
+    <td>All</td>
+  </tr>
+</tbody>
+</table>
+
+### Example YAML for Bundle Install options in Rails
+
+```yaml
+rails:
+    configuration:
+      bundler:
+        options:
+          without: ["dev", "admin"]
+          deployment: false
+          quiet: true
 ```
 
 * * *
