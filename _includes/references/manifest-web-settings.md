@@ -433,7 +433,7 @@ rails:
 This allows you to customise your `bundle install` command by specifying options in your Manifest. We've listed some common examples below. 
 
 #### Note
-<div class="notice notice-warning"><p>This feature requires a thorough understanding of Bundler in order to be used properly. If you are at all unsure, rather do not set these options because doing so incorrectly could cause your app to break.</p></div>
+<div class="notice notice-warning"><p>This is an advanced feature for expert users of Bundler.</p></div>
 
 <table class='table table-bordered table-striped'>
 <thead>
@@ -469,6 +469,12 @@ This allows you to customise your `bundle install` command by specifying options
     <td>Default: <code>false</code></td>
     <td>All</td>
   </tr>
+  <tr>
+    <td><code>bundler / options / ...</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Any other valid <code>bundle install</code> options you want to apply</td>
+    <td>All</td>
+  </tr>
 </tbody>
 </table>
 
@@ -479,8 +485,8 @@ rails:
     configuration:
       bundler:
         options:
-          without: ["dev", "admin"]
-          deployment: false
+          without: ["development", "test", "custom"]
+          deployment: true
           quiet: true
 ```
 
