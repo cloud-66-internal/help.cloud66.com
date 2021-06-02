@@ -412,7 +412,7 @@ rails:
     asset_pipeline_precompile: true
     bundler:
       options:
-        without: ["dev", "admin"]
+        without: ["development", "test", "custom"]
     do_initial_db_schema_load: false
     reserved_server_memory: 0 #default value
     passenger_process_memory: 200 #default value
