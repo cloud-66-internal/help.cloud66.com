@@ -11,6 +11,7 @@ Cloud 66 currently supports the following cloud providers:
 * [Google Compute Engine](/{{page.collection}}/how-to-guides/clouds/cloud-gce.html)
 * [Hetzner Cloud](/{{page.collection}}/how-to-guides/clouds/cloud-hetzner.html){% if include.product != 'maestro' %}
 * [Linode](/{{page.collection}}/how-to-guides/clouds/cloud-linode.html){%endif%}
+* [Maxihost](/{{page.collection}}/how-to-guides/clouds/cloud-maxihost.html)
 * [OVHcloud](/{{page.collection}}/how-to-guides/clouds/cloud-ovh.html)
 * [Microsoft Azure](/{{page.collection}}/how-to-guides/clouds/cloud-azure.html)
 * [Rackspace](/{{page.collection}}/how-to-guides/clouds/cloud-rackspace.html)
