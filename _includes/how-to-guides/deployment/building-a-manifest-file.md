@@ -174,7 +174,7 @@ These are the parameters that the _server_ section can take:
   <tr>
     <td><code>vendor</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>Cloud vendor where the server will be built. Valid values: <code>aws</code>, <code>azure_rm</code> (use <code>azure</code> for older Azure accounts), <code>clouda</code>, <code>digitalocean</code>, <code>googlecloud</code>, <code>hetzner</code>, <code>linode</code>, <code>ovh</code>, <code>packet</code>, <code>rackspace</code>, and <code>vultr</code></td>
+    <td>Cloud vendor where the server will be built. Valid values: <code>aws</code>, <code>azure_rm</code> (use <code>azure</code> for older Azure accounts), <code>clouda</code>, <code>digitalocean</code>, <code>googlecloud</code>, <code>hetzner</code>, <code>linode</code>, <code>maxihost</code>, <code>ovh</code>, <code>packet</code>, <code>rackspace</code>, and <code>vultr</code></td>
     <td>All</td>
   </tr>
 </tbody>
