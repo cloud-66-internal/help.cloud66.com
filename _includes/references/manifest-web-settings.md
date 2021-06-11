@@ -169,8 +169,8 @@ The following settings are available via the Manifest file:
 <table class='table table-bordered table-striped'>
 <thead>
   <tr>
-    <th width="32%">Option</th>
-    <th width="16%">Applied on</th>
+    <th width="26%">Option</th>
+    <th width="15%">Applied on</th>
     <th>Description</th>
     <th width="10%">Clouds</th>
   </tr>
@@ -180,6 +180,12 @@ The following settings are available via the Manifest file:
     <td><code>cors</code></td>
     <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>Enable Cross Origin Resource Sharing</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>nginx/precompiled_url</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>A URL pointing to a file in <code>tar.gz</code> format that contains a custom version of Nginx that will be used with your application. This Nginx package <strong>MUST be compiled using our <a href="https://github.com/cloud66-oss/nginx-compiler" target="_blank">Cloud 66 compiler</a></strong>. Please read the <a href="https://github.com/cloud66-oss/nginx-compiler#readme">docs on the Github page</a> for more details.</td>
     <td>All</td>
   </tr>
 {% if include.product == 'rails' %}<tr>
