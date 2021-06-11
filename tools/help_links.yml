@@ -98,6 +98,14 @@ maestro:
     - overview
     - transferring-an-application
     - understanding-the-application-transfer-process
+  application_updates:
+    page: maestro/how-to-guides/common-tools/application-updates.html
+    page_anchors:
+    - list-of-application-updates
+    - maestro-product-heading
+    - overview
+    - setting-a-maintenance-window
+    - using-application-updates
   applying_upgrades:
     page: maestro/how-to-guides/deployment/applying-upgrades.html
     page_anchors:
@@ -1724,6 +1732,7 @@ maestro:
     - 2-components-built-from-source
     - component-versions
     - maestro-product-heading
+    - nginx-modules
     - operating-system
     - suggest-version-changes
     - supported-cloud-providers
@@ -2132,6 +2141,14 @@ node:
     - overview
     - transferring-an-application
     - understanding-the-application-transfer-process
+  application_updates:
+    page: node/how-to-guides/common-tools/application-updates.html
+    page_anchors:
+    - list-of-application-updates
+    - node-product-heading
+    - overview
+    - setting-a-maintenance-window
+    - using-application-updates
   applying_upgrades:
     page: node/how-to-guides/deployment/applying-upgrades.html
     page_anchors:
@@ -3442,6 +3459,7 @@ node:
     - 1-components-built-via-apt-packages
     - 2-components-built-from-source
     - component-versions
+    - nginx-modules
     - node-product-heading
     - operating-system
     - suggest-version-changes
@@ -3829,6 +3847,14 @@ rails:
     - rails-product-heading
     - transferring-an-application
     - understanding-the-application-transfer-process
+  application_updates:
+    page: rails/how-to-guides/common-tools/application-updates.html
+    page_anchors:
+    - list-of-application-updates
+    - overview
+    - rails-product-heading
+    - setting-a-maintenance-window
+    - using-application-updates
   applying_upgrades:
     page: rails/how-to-guides/deployment/applying-upgrades.html
     page_anchors:
@@ -5403,6 +5429,7 @@ rails:
     - 1-components-built-via-apt-packages
     - 2-components-built-from-source
     - component-versions
+    - nginx-modules
     - operating-system
     - rails-product-heading
     - suggest-version-changes
