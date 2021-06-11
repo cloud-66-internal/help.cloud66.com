@@ -183,7 +183,7 @@ The following settings are available via the Manifest file:
     <td>All</td>
   </tr>
 {% if include.product == 'rails' %}<tr>
-    <td><code>extra_build_arguments</code></td>
+    <td><code>extra_build_arguments</code> (<em>deprecated</em>)</td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Extra build argument string that will be added to the <code>nginx build</code> command. If you require additional modules that themselves require specific source to be present, you should use a <code>BEFORE_NGINX</code> <a href="/{{page.collection}}/references/deploy-hooks-syntax.html#hook-points">deploy hook</a> to ensure that source is present. You can use the <code>cloud66/download</code> snippet to achieve this easily. The following build arguments are currently always added: <code>--with-http_realip_module --with-ipv6 --with-http_v2_module</code> regardless of this value.</td>
     <td>All</td>
