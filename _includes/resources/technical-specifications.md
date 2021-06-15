@@ -60,7 +60,7 @@ You are free to specify a version for a number of components in your [manifest f
 <tr><td>Kubernetes</td><td>1.18.18</td></tr>
 <tr><td>MongoDB</td><td>4.4.x</td></tr>
 <tr><td>MySQL</td><td>8.0</td></tr>
-<tr><td>Nginx (<a href="#nginx-modules">see below</a> for modules)</td><td>1.20.1</td></tr>
+<tr><td>Nginx</td><td>We deploy a custom release of Nginx. <a href="#nginx-release">See below</a> for details.</td></tr>
 <tr><td>Phusion Passenger</td><td>6.0.5</td></tr>
 <tr><td>Passenger Enterprise</td><td>6.0.5</td></tr>
 <tr><td>PostGIS</td><td>3.1</td></tr>
@@ -81,98 +81,85 @@ You are free to specify a version for a number of components in your [manifest f
 #### Warning
 <div class="notice notice-danger"><p>If you're using different (non-default) versions of components, we strongly recommend testing your application thoroughly in a non-production environment before deploying.</p></div>
 
+### Nginx release
+
+Cloud 66 maintains our own self-contained release of Nginx which includes all of the modules listed below. For more info please read the [Releases page on our Github project](https://github.com/cloud66-oss/nginx-compiler/releases/tag/v1.0.0). 
+
 ### Nginx modules
 
-We install the Nginx modules listed below by default. These are used to provide additional features and functions to applications managed by Cloud 66.
+We install the Nginx modules listed below by default. These are used to provide additional features and functions to applications managed by Cloud 66. You can see the latest versions of all of these modules on the [Releases page](https://github.com/cloud66-oss/nginx-compiler/releases/tag/v1.0.0) of our Nginx project on Github.
 
 <table class='table table-bordered table-striped'>
     <thead>
       <tr>
-        <th>Module</th>
-        <th>Version</th>
+        <th width="25%">Module</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
          <td><a href="https://github.com/FRiCKLE/ngx_cache_purge">Cache Purge</a></td>
-         <td>2.4.3</td>
          <td>Adds ability to purge content from FastCGI, proxy, and uWSGI caches</td>
       </tr>
       <tr>
          <td><a href="https://github.com/vision5/ngx_devel_kit">Devel kit</a></td>
-         <td>0.3.1</td>
          <td>Nginx Development Kit (NDK)</td>
       </tr>
       <tr>
          <td><a href="https://github.com/openresty/echo-nginx-module">Echo</a></td>
-        <td>0.62</td>
          <td>ngx_echo - Brings "echo", "sleep", "time", "exec" and more shell-style goodies to Nginx config file</td>
       </tr>
       <tr>
          <td><a href="https://github.com/aperezdc/ngx-fancyindex">Fancy Index</a></td>
-         <td>0.5.1</td>
          <td>Like the built-in autoindex module, but fancier</td>
       </tr>
       <tr>
          <td><a href="https://github.com/openresty/headers-more-nginx-module">Headers More</a></td>
-        <td>0.33</td>
          <td>Set and clear input and output headers more than just "add!"</td>
       </tr>
       <tr>
          <td><a href="https://github.com/leev/ngx_http_geoip2_module">GeoIp2</a></td>
-        <td>3.3</td>
          <td>ngx_http_geoip2_module - creates variables with values from the maxmind geoip2 databases based on the client IP (default) or from a specific variable (supports both IPv4 and IPv6)</td>
       </tr>
       <tr>
          <td><a href="https://github.com/yaoweibin/ngx_http_substitutions_filter_module">HTTP Substitutions</a></td>
-         <td>0.6.4</td>
          <td>nginx_substitutions_filter is a filter module which can do both regular expression and fixed string substitutions on response bodies</td>
       </tr>
       <tr>
          <td><a href="https://github.com/openresty/lua-nginx-module">Lua</a></td>
-         <td>0.10.19</td>
          <td>Embed the power of Lua into Nginx HTTP Servers</td>
       </tr>
       <tr>
          <td><a href="https://github.com/spiderlabs/modsecurity/">ModSecurity</a></td>
-         <td>1.0.1</td>
          <td>Web application firewall</td>
       </tr>
       <tr>
         <td><a href="https://github.com/matsumotory/ngx_mruby">mruby</a></td>
-        <td>2.2.3</td>
         <td>Embedded mruby script language for nginx-module</td>
      </tr>
       <tr>
          <td><a href="https://github.com/slact/nchan">Nchan</a></td>
-         <td>1.2.8</td>
          <td>Pubsub server for Websockets, Long-Poll, EventSource etc.</td>
       </tr>
       <tr>
         <td><a href="https://github.com/sto/ngx_http_auth_pam_module">PAM Authentication</a></td>
-        <td>1.5.2</td>
         <td>HTTP Basic Authentication using PAM</td>
      </tr>
       <tr>
          <td><a href="https://github.com/arut/nginx-rtmp-module">RTMP</a></td>
-         <td>1.2.1</td>
         <td>RTMP protocol support. Live streaming and video on demand</td>
       </tr>
       <tr>
          <td><a href="https://github.com/masterzen/nginx-upload-progress-module">Upload Progress</a></td>
-         <td>0.9.2</td>
          <td>nginx_upload_progress_module is an implementation of an upload progress system, that monitors RFC1867 POST upload as they are transmitted to upstream servers</td>
       </tr>
       <tr>
          <td><a href="https://github.com/gnosek/nginx-upstream-fair">Upstream Fair Balancer</a></td>
-         <td>0.1.3</td>
          <td>Distributes incoming requests to least-busy servers</td>
       </tr>
       <tr>
         <td><a href="https://github.com/arut/nginx-dav-ext-module">WebDAV</a></td>
-        <td>3.0.0</td>
-        <td>nginx WebDAV PROPFIND,OPTIONS,LOCK,UNLOCK support</td>
+        <td>nginx WebDAV PROPFIND, OPTIONS, LOCK, UNLOCK support</td>
      </tr>
     </tbody>
     </table>
