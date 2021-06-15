@@ -1733,6 +1733,7 @@ maestro:
     - component-versions
     - maestro-product-heading
     - nginx-modules
+    - nginx-release
     - operating-system
     - suggest-version-changes
     - supported-cloud-providers
@@ -3460,6 +3461,7 @@ node:
     - 2-components-built-from-source
     - component-versions
     - nginx-modules
+    - nginx-release
     - node-product-heading
     - operating-system
     - suggest-version-changes
@@ -5430,6 +5432,7 @@ rails:
     - 2-components-built-from-source
     - component-versions
     - nginx-modules
+    - nginx-release
     - operating-system
     - rails-product-heading
     - suggest-version-changes
