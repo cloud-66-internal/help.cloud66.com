@@ -83,11 +83,11 @@ You are free to specify a version for a number of components in your [manifest f
 
 ### Nginx release
 
-Cloud 66 maintains our own self-contained release of Nginx which includes all of the modules listed below. For more info please read the [Releases page on our Github project](https://github.com/cloud66-oss/nginx-compiler/releases/tag/v1.0.0). 
+Cloud 66 maintains our own self-contained release of Nginx which includes all of the modules listed below. For more info please read the [Releases page on our Github project](https://github.com/cloud66-oss/nginx-compiler/releases). 
 
 ### Nginx modules
 
-We install the Nginx modules listed below by default. These are used to provide additional features and functions to applications managed by Cloud 66. You can see the latest versions of all of these modules on the [Releases page](https://github.com/cloud66-oss/nginx-compiler/releases/tag/v1.0.0) of our Nginx project on Github.
+We install the Nginx modules listed below by default. These are used to provide additional features and functions to applications managed by Cloud 66. You can see the latest versions of all of these modules on the [Releases page](https://github.com/cloud66-oss/nginx-compiler/releases) of our Nginx project on Github.
 
 <table class='table table-bordered table-striped'>
     <thead>
