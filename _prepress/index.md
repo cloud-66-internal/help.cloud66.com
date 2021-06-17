@@ -1,8 +1,8 @@
 ---
 layout: post
 template: one-col
-title: Cloud 66 for Rails
-lead: Cloud 66 for Rails
+title: Prepress
+lead: Prepress
 legacy: false
 permalink: /:collection/:categories/index.html
 noindex: true
