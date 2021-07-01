@@ -269,6 +269,8 @@ If you need a newer version of Node, you can install one using the same method a
 
 You can configure your application to automatically run [health checks](/{{page.collection}}/how-to-guides/security/application-health-checks.html) against an HTTP endpoint each time it is deployed. Results of these checks are available on your Cloud 66 dashboard under *ActiveProtect*. 
 
+<div class="notice"><p>Note that all of the Health Check settings must be nested under the <code>configuration</code> &rarr; <code>activeprotect</code> &rarr; <code>health_check</code> sub-node.</p></div>
+
 The following settings are available via the Manifest file:
 
 <table class='table table-bordered table-striped'>
