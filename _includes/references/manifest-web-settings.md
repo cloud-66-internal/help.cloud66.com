@@ -322,11 +322,11 @@ rails:
   configuration:
     activeprotect:
       health_check:
-      endpoint: '/' # Default is root '/'
-      accept: ["200", "300-399"] # Default is 200
-      timeout: 2 # Default is 5
-      max_redirects: 5 # Default is 3
-      cooldown: 120 # Default is 0 
+        endpoint: '/' # Default is root '/'
+        accept: ["200", "300-399"] # Default is 200
+        timeout: 2 # Default is 5
+        max_redirects: 5 # Default is 3
+        cooldown: 120 # Default is 0 
 ```
 
 {% if include.product == 'rails' %}
