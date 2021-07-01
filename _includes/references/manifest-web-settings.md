@@ -285,31 +285,31 @@ The following settings are available via the Manifest file:
 <tbody>
   <tr>
     <td><code>endpoint</code></td>
-    <td>Redeploy</td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The endpoint to that will be queried during the check</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>accept</code></td>
-    <td>Redeploy</td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The set of HTTP codes we will accept as valid from the endpoint (as an array)</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>timeout</code></td>
-    <td>Redeploy</td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The timeout limit in seconds of the endpoint (limit: <code>10</code>)</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>max_redirects</code></td>
-    <td>Redeploy</td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The number of acceptable HTTP redirects (limit: <code>10</code>)</td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>cooldown</code></td>
-    <td>Redeploy</td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
     <td>The delay between the end of the deployment process and the start of the test, in seconds. (limit: <code>1800</code>)</td>
     <td>All</td>
   </tr>
