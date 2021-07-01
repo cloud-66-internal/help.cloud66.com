@@ -276,7 +276,7 @@ The following settings are available via the Manifest file:
 <table class='table table-bordered table-striped'>
 <thead>
   <tr>
-    <th width="32%">Option</th>
+    <th width="18%">Option</th>
     <th width="16%">Applied on</th>
     <th>Description</th>
     <th width="10%">Clouds</th>
