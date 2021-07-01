@@ -239,6 +239,7 @@ rails:
         credentials: true
 ```
 
+
 {% if include.product == 'rails' %}
 
 ## Node version (for Rails applications)
@@ -261,6 +262,74 @@ If you need a newer version of Node, you can install one using the same method a
 
 #### Applying changes
 <div class="notice notice-warning"><p>To apply changes to the Node version you need to update your manifest file, then <a href="/rails/how-to-guides/deployment/applying-upgrades.html#types">deploy-with-options</a> and select the <em>Apply Ruby/Node upgrades</em> option.</p></div>
+
+{% endif %}
+
+## Post-deployment health checks
+
+You can configure your application to automatically run [health checks](/{{page.collection}}/how-to-guides/security/application-health-checks.html) against an HTTP endpoint each time it is deployed. Results of these checks are available on your Cloud 66 dashboard under *ActiveProtect*. 
+
+The following settings are available via the Manifest file:
+
+<table class='table table-bordered table-striped'>
+<thead>
+  <tr>
+    <th width="32%">Option</th>
+    <th width="16%">Applied on</th>
+    <th>Description</th>
+    <th width="10%">Clouds</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><code>endpoint</code></td>
+    <td>Redeploy</td>
+    <td>The endpoint to that will be queried during the check</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>accept</code></td>
+    <td>Redeploy</td>
+    <td>The set of HTTP codes we will accept as valid from the endpoint (as an array)</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>timeout</code></td>
+    <td>Redeploy</td>
+    <td>The timeout limit in seconds of the endpoint (limit: <code>10</code>)</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>max_redirects</code></td>
+    <td>Redeploy</td>
+    <td>The number of acceptable HTTP redirects (limit: <code>10</code>)</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>cooldown</code></td>
+    <td>Redeploy</td>
+    <td>The delay between the end of the deployment process and the start of the test, in seconds. (limit: <code>1800</code>)</td>
+    <td>All</td>
+  </tr>
+</tbody>
+</table>
+
+
+### Example YAML for post-deployment health check
+
+```yaml
+rails:
+  configuration:
+    activeprotect:
+      health_check:
+      endpoint: '/' # Default is root '/'
+      accept: ["200", "300-399"] # Default is 200
+      timeout: 2 # Default is 5
+      max_redirects: 5 # Default is 3
+      cooldown: 120 # Default is 0 
+```
+
+{% if include.product == 'rails' %}
 
 ## Rails
 
