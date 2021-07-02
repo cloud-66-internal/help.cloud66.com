@@ -84,10 +84,13 @@ maestro:
   application_health_checks:
     page: maestro/how-to-guides/security/application-health-checks.html
     page_anchors:
+    - configuring-a-post-deployment-check
     - how-the-tests-work
     - maestro-product-heading
     - overview
-    - running-a-check
+    - post-deployment-health-checks
+    - running-an-on-demand-health-check
+    - viewing-results-of-post-deployment-checks
   application_transfer:
     page: maestro/account/application-transfer.html
     page_anchors:
@@ -1048,6 +1051,7 @@ maestro:
     - docker
     - example-yaml-for-gateway
     - example-yaml-for-nginx
+    - example-yaml-for-post-deployment-health-check
     - examples-yaml-for-docker
     - gateway
     - key-to-table-headings
@@ -1055,6 +1059,7 @@ maestro:
     - more-on-manifest-files
     - nginx
     - overview
+    - post-deployment-health-checks
   memcached:
     page: maestro/how-to-guides/add-ins/memcached.html
     page_anchors:
@@ -2114,10 +2119,13 @@ node:
   application_health_checks:
     page: node/how-to-guides/security/application-health-checks.html
     page_anchors:
+    - configuring-a-post-deployment-check
     - how-the-tests-work
     - node-product-heading
     - overview
-    - running-a-check
+    - post-deployment-health-checks
+    - running-an-on-demand-health-check
+    - viewing-results-of-post-deployment-checks
   application_settings_node:
     page: node/how-to-guides/deployment/application-settings-node.html
     page_anchors:
@@ -2891,12 +2899,14 @@ node:
     - cors-configuration
     - example-yaml-for-gateway
     - example-yaml-for-nginx
+    - example-yaml-for-post-deployment-health-check
     - gateway
     - key-to-table-headings
     - more-on-manifest-files
     - nginx
     - node-product-heading
     - overview
+    - post-deployment-health-checks
   memcached:
     page: node/how-to-guides/add-ins/memcached.html
     page_anchors:
@@ -3835,10 +3845,13 @@ rails:
   application_health_checks:
     page: rails/how-to-guides/security/application-health-checks.html
     page_anchors:
+    - configuring-a-post-deployment-check
     - how-the-tests-work
     - overview
+    - post-deployment-health-checks
     - rails-product-heading
-    - running-a-check
+    - running-an-on-demand-health-check
+    - viewing-results-of-post-deployment-checks
   application_transfer:
     page: rails/account/application-transfer.html
     page_anchors:
@@ -4720,6 +4733,7 @@ rails:
     - example-yaml-for-bundle-install-options-in-rails
     - example-yaml-for-gateway
     - example-yaml-for-nginx
+    - example-yaml-for-post-deployment-health-check
     - example-yaml-for-rack
     - example-yaml-for-rails
     - example-yaml-for-rails-health-checks
@@ -4730,6 +4744,7 @@ rails:
     - nginx
     - node-version-for-rails-applications
     - overview
+    - post-deployment-health-checks
     - rack
     - rails
     - rails-product-heading
