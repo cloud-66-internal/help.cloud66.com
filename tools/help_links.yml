@@ -1129,16 +1129,20 @@ maestro:
   network_configuration:
     page: maestro/references/network-configuration.html
     page_anchors:
-    - add-a-firewall-rule
-    - allowed-web-sources
-    - configuring-traffic-rules
-    - deny-access-from-rules
-    - dont-block-access-from-rules
+    - adding-a-firewall-rule
+    - application-surge-protection
+    - cors
     - firewall
+    - load-balancer-traffic
     - maestro-product-heading
+    - managing-traffic-filters
+    - owasp-rules
     - redirect-http-to-https
+    - temporary-ssh-access
+    - traffic-filters
+    - traffic-settings
     - using-network-redirects
-    - what-is-activeprotect
+    - web-application-firewalls
     - www-or-non-www-in-your-url
   nginx:
     page: maestro/references/nginx.html
@@ -2053,6 +2057,16 @@ maestro:
     page: maestro/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
     - maestro-product-heading
+  web_application_firewalls:
+    page: maestro/how-to-guides/security/web-application-firewalls.html
+    page_anchors:
+    - adding-rules-manually-to-modsecurity
+    - applying-relevant-configurations
+    - configuring-your-web-application-firewall
+    - enabling-and-disabling-your-waf
+    - maestro-product-heading
+    - overview
+    - using-owasp-rules-with-your-waf
   websocket_support:
     page: maestro/how-to-guides/build-and-config/websocket-support.html
     page_anchors:
@@ -2968,16 +2982,20 @@ node:
   network_configuration:
     page: node/references/network-configuration.html
     page_anchors:
-    - add-a-firewall-rule
-    - allowed-web-sources
-    - configuring-traffic-rules
-    - deny-access-from-rules
-    - dont-block-access-from-rules
+    - adding-a-firewall-rule
+    - application-surge-protection
+    - cors
     - firewall
+    - load-balancer-traffic
+    - managing-traffic-filters
     - node-product-heading
+    - owasp-rules
     - redirect-http-to-https
+    - temporary-ssh-access
+    - traffic-filters
+    - traffic-settings
     - using-network-redirects
-    - what-is-activeprotect
+    - web-application-firewalls
     - www-or-non-www-in-your-url
   nginx:
     page: node/references/nginx.html
@@ -3773,6 +3791,16 @@ node:
     page: node/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
     - node-product-heading
+  web_application_firewalls:
+    page: node/how-to-guides/security/web-application-firewalls.html
+    page_anchors:
+    - adding-rules-manually-to-modsecurity
+    - applying-relevant-configurations
+    - configuring-your-web-application-firewall
+    - enabling-and-disabling-your-waf
+    - node-product-heading
+    - overview
+    - using-owasp-rules-with-your-waf
   websocket_support:
     page: node/how-to-guides/deployment/websocket-support.html
     page_anchors:
@@ -4830,18 +4858,22 @@ rails:
   network_configuration:
     page: rails/references/network-configuration.html
     page_anchors:
-    - add-a-firewall-rule
-    - allowed-web-sources
-    - configuring-traffic-rules
-    - deny-access-from-rules
-    - dont-block-access-from-rules
+    - adding-a-firewall-rule
+    - application-surge-protection
+    - cors
     - firewall
+    - load-balancer-traffic
     - maintenance-mode
+    - managing-traffic-filters
+    - owasp-rules
     - rails-product-heading
     - redirect-http-to-https
+    - temporary-ssh-access
+    - traffic-filters
+    - traffic-settings
     - use-a-custom-maintenance-page
     - using-network-redirects
-    - what-is-activeprotect
+    - web-application-firewalls
     - www-or-non-www-in-your-url
   nginx:
     page: rails/references/nginx.html
@@ -5779,6 +5811,16 @@ rails:
     page: rails/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
     - rails-product-heading
+  web_application_firewalls:
+    page: rails/how-to-guides/security/web-application-firewalls.html
+    page_anchors:
+    - adding-rules-manually-to-modsecurity
+    - applying-relevant-configurations
+    - configuring-your-web-application-firewall
+    - enabling-and-disabling-your-waf
+    - overview
+    - rails-product-heading
+    - using-owasp-rules-with-your-waf
   websocket_support:
     page: rails/how-to-guides/deployment/websocket-support.html
     page_anchors:
