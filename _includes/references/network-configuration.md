@@ -33,11 +33,12 @@ The *Traffic* tab allows you to configure five different sets of rules that gove
 
 - **Traffic filters**: Black and white listing traffic based on source IP
 - **Web Application Firewall:** an Nginx-based WAF powered by ModSecurity (may require an [application update](/{{page.collection}}/how-to-guides/common-tools/application-updates.html))
-- **OWASP rules**: automated rules for the application WAF (may require an [application update](/{{page.collection}}/how-to-guides/common-tools/application-updates.html))
+- **OWASP rules**: automated rules for the application WAF (may require an [application update](/{{page.collection}}/how-to-guides/common-tools/application-updates.html)) - please read our [separate guide](/{{page.collection}}/how-to-guides/security/web-application-firewalls.html) for details.
 - **Surge protection**: prevents DDOS attacks by rate-limiting based on IP addresses
 - **CORS**: Rules for Cross-Origin Resource Sharing (CORS)
 
-## Traffic Filters
+
+### Traffic Filters
 
 By default, all web traffic is allowed to visit your servers on your desired ports. For Rails applications this is `80`, `443`, `8080` and `8443`. For Maestro applications these ports are extracted from your exposed service configurations. The *Traffic Filters* tab allows you to set rules for access via these ports. 
 
@@ -65,7 +66,7 @@ To implement or update Traffic Filters for your application:
 6. Click *Review Changes* 
 7. Review the rules that will be applied and then click *Apply Changes* 
 
-## Load Balancer Traffic
+### Load Balancer Traffic
 
 You can configure your application to only allow web traffic via your load balancers. This is useful for hardening your other servers against intrusions. However you may still want your own team to be able to query your other servers directly via the web. To allow this, you can specify a set of IP addresses that are exceptions to this rule.
 
@@ -79,7 +80,15 @@ To force all web traffic to flow via your load balancer:
 6. Click *Review Changes* 
 7. Review the rules that will be applied and then click *Apply Changes* 
 
-## Application Surge Protection
+### Web Application Firewalls
+
+Please read our [separate guide](/{{page.collection}}/how-to-guides/security/web-application-firewalls.html) for details on WAF.
+
+### OWASP Rules
+
+Please read our [separate guide](/{{page.collection}}/how-to-guides/security/web-application-firewalls.html#using-owasp-rules-with-your-waf) for details on OWASP rules for WAF.
+
+### Application Surge Protection
 
 To help prevent denial of service (DOS) attack, Cloud 66 automatically blocks any IP address that makes more than 1,500 requests per minute to your server(s). We call this Surge Protection. You can see if any IP addresses are currently being block by clicking on [Active Protect](/{{page.collection}}/references/active-protect.html) in the right-hand column. 
 
@@ -97,7 +106,7 @@ To configure Surge Protection for your application:
 8. Click *Review Changes* 
 9. Review the rules that will be applied and then click *Apply Changes* 
 
-## CORS
+### CORS
 
 Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served. This allows, for example, Ajax requests across domains. We strongly recommend [learning about CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) before attempting to implement it. 
 
