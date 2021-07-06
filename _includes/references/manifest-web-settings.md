@@ -31,6 +31,12 @@ If you're looking for the Manifest settings for [data, caching & storage compone
     <td>All</td>
   </tr>
   <tr>
+    <td><code>firewall / create_web_rules</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Cloud 66 automatically creates firewall rules to expose your web application to the outside world. You can configure this via your <a href="/{{page.collection}}/references/network-configuration.html#firewall">Traffic settings</a>, or disable it completely by setting this value to <code>false</code>. Default is <code>true</code>.</td>
+    <td>All</td>
+  </tr>
+  <tr>
     <td><code>iam_instance_profile_name</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server. <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">Read our guide</a>.</td>
@@ -381,6 +387,12 @@ A Rails application type in the manifest file gives you fine control over things
     <td><code>do_initial_db_schema_load</code></td>
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies the first time the app is built,</span></div></td>
     <td>Specify whether to perform <code>rake db:schema:load</code> on a new application build.</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>firewall / create_web_rules</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Cloud 66 automatically creates firewall rules to expose your web application to the outside world. You can configure this via your <a href="/{{page.collection}}/references/network-configuration.html#firewall">Traffic settings</a>, or disable it completely by setting this value to <code>false</code>. Default is <code>true</code>.</td>
     <td>All</td>
   </tr>
   <tr>
