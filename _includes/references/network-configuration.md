@@ -31,7 +31,7 @@ To add your own rules, click *Add a new firewall rule*. You can input single IP 
 
 The *Traffic* tab allows you to configure five different sets of rules that govern web traffic flowing to your application:
 
-- **Traffic filters**: Black and white listing traffic based on source IP
+- **Traffic filters**: Black and white listing traffic based on source IP and/or country of origin
 - **Web Application Firewall:** an Nginx-based WAF powered by ModSecurity (may require an [application update](/{{page.collection}}/how-to-guides/common-tools/application-updates.html))
 - **OWASP rules**: automated rules for the application WAF (may require an [application update](/{{page.collection}}/how-to-guides/common-tools/application-updates.html)) - please read our [separate guide](/{{page.collection}}/how-to-guides/security/web-application-firewalls.html) for details.
 - **Surge protection**: prevents DDOS attacks by rate-limiting based on IP addresses
@@ -42,11 +42,18 @@ The *Traffic* tab allows you to configure five different sets of rules that gove
 
 By default, all web traffic is allowed to visit your servers on your desired ports. For Rails applications this is `80`, `443`, `8080` and `8443`. For Maestro applications these ports are extracted from your exposed service configurations. The *Traffic Filters* tab allows you to set rules for access via these ports. 
 
-You have three (mutually exclusive) options for filtering your traffic:
+You can filter traffic based on:
 
-1. Allow traffic from any source (the default)
-2. Only allow traffic from certain sources ("whitelisting")
-3. Block traffic from certain sources ("blacklisting")
+- The **source** (IP address range) it originates from
+- The **country** it originates from
+
+Each of these filters has three (mutually exclusive) strategies:
+
+1. Allow traffic from any source and/or country (the default)
+2. Only allow traffic from certain sources and/or countries ("whitelisting")
+3. Block traffic from specific sources and/or countries  ("blacklisting")
+
+#### Source filtering
 
 For the "allow" and "block" rules, you can use any combination of:
 
@@ -54,17 +61,21 @@ For the "allow" and "block" rules, you can use any combination of:
 - IP ranges (e.g. `23.12.123.54/16`)
 - A URL that lists IP addresses (comma separated, in plain text)
 
-### Managing Traffic Filters
+#### Country filtering
+
+To add a country as a filter condition, click on the dropdown and then select it from the list. You can also type in the name of the country to "search" the list.
+
+#### Managing Traffic Filters
 
 To implement or update Traffic Filters for your application:
 
-1. Log in to your [Cloud 66 Dashboard](https://app.cloud66.com/) and click on your application
+1. Log in to your Cloud 66 Dashboard and click on your application
 2. Click on *Network* in the right-hand column
 3. Click on the *Traffic* tab at the top of the main panel 
-4. Click on the radio button of the rule type you want to implement
-5. Add your sources as needed (multiple sources are supported for both *block* and *allow*)
+4. Click on the radio buttons of the rule types you want to implement
+5. Add your sources and/or countries as needed (multiple sources are supported for both block and allow)
 6. Click *Review Changes* 
-7. Review the rules that will be applied and then click *Apply Changes* 
+7. Review the rules that will be applied and then click *Apply Changes*
 
 ### Load Balancer Traffic
 
