@@ -1135,7 +1135,6 @@ maestro:
     - firewall
     - load-balancer-traffic
     - maestro-product-heading
-    - managing-traffic-filters
     - owasp-rules
     - redirect-http-to-https
     - temporary-ssh-access
@@ -2987,7 +2986,6 @@ node:
     - cors
     - firewall
     - load-balancer-traffic
-    - managing-traffic-filters
     - node-product-heading
     - owasp-rules
     - redirect-http-to-https
@@ -4864,7 +4862,6 @@ rails:
     - firewall
     - load-balancer-traffic
     - maintenance-mode
-    - managing-traffic-filters
     - owasp-rules
     - rails-product-heading
     - redirect-http-to-https
