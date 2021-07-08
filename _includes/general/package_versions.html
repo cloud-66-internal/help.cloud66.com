@@ -5,8 +5,8 @@
 
 {% for package in site.data.versions %}
 <tr>
-  <td>{{ package.component }}</td>
-  <td>{{ package.version }}</td>
+  <td>{{ package.component }}  </td>
+  <td>{{ package.version }} {% if package.component == 'Docker' %} (as per Kubernetes guidelines) {% endif %}</td>
 </tr>
 {% endfor %}
 

@@ -10,7 +10,7 @@
   version: "2.0.4"
 - 
   component: Docker
-  version: "18.09.9-ce (as per Kubernetes guidelines)"
+  version: "18.09.9-ce"
 - 
   component: ElasticSearch
   version: "7.1.0"
