@@ -1,0 +1,70 @@
+--- 
+- 
+  component: BX
+  version: "0.0.25"
+- 
+  component: CAdvisor
+  version: "0.0.3"
+- 
+  component: Delphi
+  version: "2.0.4"
+- 
+  component: Docker
+  version: "18.09.9-ce (as per Kubernetes guidelines)"
+- 
+  component: ElasticSearch
+  version: "7.1.0"
+- 
+  component: GlusterFS
+  version: "3.12.6"
+- 
+  component: Gotty
+  version: "1.0.0"
+- 
+  component: Kubernetes
+  version: "1.18.18"
+- 
+  component: MongoDB
+  version: 4.4.x
+- 
+  component: MySQL
+  version: 8.0
+- 
+  component: "Phusion Passenger"
+  version: "6.0.5"
+- 
+  component: "Passenger Enterprise"
+  version: "6.0.5"
+- 
+  component: PostGIS
+  version: 3.1
+- 
+  component: PostgreSQL
+  version: 13
+- 
+  component: Rails*
+  version: "All versions from 2.6.3 and up"
+- 
+  component: Redis
+  version: "6.2.3"
+- 
+  component: Ruby
+  version: "3.0.1"
+- 
+  component: Scaleio
+  version: "2.0.7120"
+- 
+  component: Stack
+  version: "1.4.6"
+- 
+  component: Telegraf
+  version: "0.10.4"
+- 
+  component: Teleport
+  version: "4.0.6"
+- 
+  component: Weave
+  version: "1.9.8"
+- 
+  component: "White Rabbit (client)"
+  version: "0.1.5"

@@ -1,0 +1,13 @@
+<table class='table table-bordered table-striped'>
+  <thead>
+  <th width="30%">Component</th>
+  <th>Default version</th></thead>
+
+{% for package in site.data.versions %}
+<tr>
+  <td>{{ package.component }}</td>
+  <td>{{ package.version }}</td>
+</tr>
+{% endfor %}
+
+</table>
