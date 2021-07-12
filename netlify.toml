@@ -1,4 +1,12 @@
 [[redirects]]
+  from = "/rails/how-to-guides/deployment/shells/migrate-the-stack.html"
+  to = "/rails/how-to-guides/deployment/migrating-applications.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/deployment/shells/migrate-the-stack.html"
+  to = "/node/how-to-guides/deployment/migrating-applications.html"
+
+[[redirects]]
   from = "/legacy_docker/tutorials/configure-dns.html"
   to = "/maestro/how-to-guides/deployment/configure-dns.html"
 
@@ -1495,6 +1503,3 @@
 [[redirects]]
   from = "/maestro/maestro/*"
   to = "/maestro/:splat"
-
-
-
