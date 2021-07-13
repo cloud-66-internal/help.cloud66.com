@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Bring Your Own Images
 categories: how-to-guides/clouds
-order: 10
+order: 20
 lead: "Using custom server images to build cloud servers more quickly via Cloud 66"
 legacy: false
 tags: ["operations"]
