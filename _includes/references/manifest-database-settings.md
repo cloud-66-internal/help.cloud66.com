@@ -76,6 +76,7 @@ elasticsearch:
     root_disk_type: ssd
 
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## GlusterFS
 
@@ -303,6 +304,7 @@ mongodb:
     root_disk_size: 100
     root_disk_type: ssd
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## MySQL
 
@@ -383,6 +385,7 @@ mysql:
     engine: percona
     iam_instance_profile_name: mysql-perms
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## PostgreSQL
 
@@ -468,6 +471,7 @@ postgresql:
     root_disk_size: 100
     root_disk_type: ssd
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ### Example YAML for PostGIS
  
@@ -544,6 +548,7 @@ redis:
     root_disk_type: ssd
     iam_instance_profile_name: redis-perms
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## More on Manifest files
 
