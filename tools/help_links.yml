@@ -494,6 +494,7 @@ maestro:
     - connecting-your-app-to-your-db-in-maestro-v1
     - connection-strings-in-maestro
     - customizing-your-database
+    - database-authentication
     - dedicated-database
     - deploying-databases
     - deployment-types
@@ -1105,6 +1106,12 @@ maestro:
     - environment-variables
     - maestro-product-heading
     - using-a-mongodb-replica-set-in-your-code
+  mongodb:
+    page: maestro/how-to-guides/add-ins/mongodb.html
+    page_anchors:
+    - add-mongodb-to-your-application
+    - maestro-product-heading
+    - mongodb-authentication-and-roles
   multi_cert_haproxy:
     page: maestro/how-to-guides/security/multi-cert_haproxy.html
     page_anchors:
@@ -2481,6 +2488,7 @@ node:
     page_anchors:
     - about-deploying-databases
     - customize-your-database-configuration
+    - database-authentication
     - database-customization-variables
     - database-deployment-types
     - dedicated-database
@@ -2960,6 +2968,12 @@ node:
     - node-product-heading
     - note
     - using-a-mongodb-replica-set-in-your-code
+  mongodb:
+    page: node/how-to-guides/add-ins/mongodb.html
+    page_anchors:
+    - add-mongodb-to-your-application
+    - mongodb-authentication-and-roles
+    - node-product-heading
   multi_cert_haproxy:
     page: node/how-to-guides/security/multi-cert_haproxy.html
     page_anchors:
@@ -4246,6 +4260,7 @@ rails:
     - about-deploying-databases
     - control-your-rails-database-migrations
     - customize-your-database-configuration
+    - database-authentication
     - database-customization-variables
     - database-deployment-types
     - dedicated-database
@@ -4833,6 +4848,12 @@ rails:
     - expected-downtime
     - rails-product-heading
     - using-a-mongodb-replica-set-in-your-code
+  mongodb:
+    page: rails/how-to-guides/add-ins/mongodb.html
+    page_anchors:
+    - add-mongodb-to-your-application
+    - mongodb-authentication-and-roles
+    - rails-product-heading
   multi_cert_haproxy:
     page: rails/how-to-guides/security/multi-cert_haproxy.html
     page_anchors:
