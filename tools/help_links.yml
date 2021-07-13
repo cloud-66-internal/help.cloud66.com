@@ -2927,8 +2927,8 @@ node:
     - check-memcached
     - customize-memcached
     - node-product-heading
-  migrate_the_stack:
-    page: node/how-to-guides/deployment/shells/migrate-the-stack.html
+  migrating_applications:
+    page: node/how-to-guides/deployment/migrating-applications.html
     page_anchors:
     - 1-set-a-failover-group
     - 10-switch-to-the-new-application
@@ -4800,8 +4800,8 @@ rails:
     - web-server-and-procfile
     - what-youll-need
     - whats-next
-  migrate_the_stack:
-    page: rails/how-to-guides/deployment/shells/migrate-the-stack.html
+  migrating_applications:
+    page: rails/how-to-guides/deployment/migrating-applications.html
     page_anchors:
     - 1-set-a-failover-group
     - 10-switch-to-the-new-application
