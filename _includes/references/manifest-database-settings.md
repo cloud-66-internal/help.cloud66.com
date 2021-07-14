@@ -69,18 +69,14 @@ The following settings are available via the Manifest file:
 
 ```yml
 elasticsearch:
-  groups:
-    my_main:
-      configuration:
-        iam_instance_profile_name: elastic-perms
-        version: 0.90.7
-        root_disk_size: 1000
-        root_disk_type: ssd
-    my_spare:
-      configuration:
-        root_disk_size: 100
+  configuration:
+    iam_instance_profile_name: elastic-perms
+    version: 0.90.7
+    root_disk_size: 1000
+    root_disk_type: ssd
 
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## GlusterFS
 
@@ -303,16 +299,12 @@ The following settings are available via the Manifest file :
 
 ```yml
 mongodb:
-  groups:
-    my_mongo:
-      configuration:
-        version: 2.4.8
-        root_disk_size: 100
-        root_disk_type: ssd
-    spare_mongo:
-      configuration:
-        version: 2.4.8
+  configuration:
+    version: 2.4.8
+    root_disk_size: 100
+    root_disk_type: ssd
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## MySQL
 
@@ -386,22 +378,14 @@ The following settings are available via the Manifest file :
 
 ```yml
 mysql:
-  groups:
-    live-db:
-      configuration:
-        version: 5.7
-        root_disk_size: 100
-        root_disk_type: ssd
-        engine: percona
-        iam_instance_profile_name: mysql-perms
-    upgrade:
-      configuration:
-        version: 8.0
-        root_disk_size: 100
-        root_disk_type: ssd
-        engine: percona
-        iam_instance_profile_name: mysql-perms
+  configuration:
+    version: 5.7
+    root_disk_size: 100
+    root_disk_type: ssd
+    engine: percona
+    iam_instance_profile_name: mysql-perms
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## PostgreSQL
 
@@ -480,19 +464,14 @@ The following settings are available via the Manifest file :
 
 ```yml
 postgresql:
-  groups:
-    live-data:
-      configuration:
-        iam_instance_profile_name: psql-perms
-        version: 9.3.4
-        postgis: true
-        root_disk_size: 100
-        root_disk_type: ssd
-    spare-data:
-      configuration:
-        version: 9.3.4
-
+  configuration:
+    iam_instance_profile_name: psql-perms
+    version: 9.3.4
+    postgis: true
+    root_disk_size: 100
+    root_disk_type: ssd
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ### Example YAML for PostGIS
  
@@ -569,6 +548,7 @@ redis:
     root_disk_type: ssd
     iam_instance_profile_name: redis-perms
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## More on Manifest files
 
