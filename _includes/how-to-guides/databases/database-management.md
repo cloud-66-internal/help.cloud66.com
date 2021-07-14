@@ -49,8 +49,14 @@ We will prioritise these configs as follows:
 ## Database deployment types
 
 ### No database (external)
-This option allows you to deploy your application without a database managed by Cloud 66, and is ideal for externally hosted databases.
-Please note that if there is no connectivity to your database, or your database host is not configured correctly, the deployment will fail. {%if page.collection=='rails' %}For Rails apps, if you have a `url` set in your `database.yml` then we will assume that you are using an external DB.{% endif %}
+
+This option allows you to deploy your application without a database managed by Cloud 66, and is ideal for externally hosted databases. 
+
+{%if page.collection=='rails' %}For Rails apps, if you have a `url` set in your `database.yml` then we will assume that you are using an external DB.{% endif %}
+
+You can also configure an external database via your [Manifest file](/{{page.collection}}/references/manifest-database-settings.html#specifying-external-databases-via-your-manifest) by specifying the `server` node as `external`. 
+
+Please note that if there is no connectivity to your external database, or your external database host is not configured correctly, the deployment will fail.
 
 ### Local database
 This option deploys your chosen database to the same server as your web server - this is intended primarily for development, as running your database locally in production is not advised. In this case, your application database configuration will be amended to target your local database server. If you scale up your web server, these settings will also be amend automatically to reflect your database configuration.
