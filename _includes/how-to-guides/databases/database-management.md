@@ -25,9 +25,9 @@ When we deploy a database we automatically generate the required users and passw
 
 They will be available as environment variables and your application will be configured to use them.
 
-If you'd prefer to manage your users and password manually (i.e. your config files), you can [prevent your configs from being modified].
-
 {%if page.collection=='rails' %}
+If you'd prefer to manage your users and password manually (i.e. your config files), you can [prevent your configs from being modified](/rails/how-to-guides/databases/tamper-with-yaml.html).
+
 #### Note 
 <div class="notice notice-warning"><p>If your <code>database.yml</code> file has a <code>url</code> defined, we will assume that you are using <strong>an external (self-managed) database</strong>, and will follow that URL accordingly. This also means we <strong>won't</strong> set any of the database variables (such as username and password) the way we would normally do.</p></div>
 
