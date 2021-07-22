@@ -22,7 +22,9 @@ If you don't have a Dockerfile in your repo, we will analyze your code and sugge
 
 Click on the link for your app's language or framework for a detailed guide on writing your own Dockerfile:
 
-
+* [Writing a custom Dockerfile for Ruby](/maestro/how-to-guides/dockerfiles/dockerfile-for-ruby.html)
+* [Writing a custom Dockerfile for Node](/maestro/how-to-guides/dockerfiles/dockerfile-for-node.html)
+* [Writing a custom Dockerfile for PHP](/maestro/how-to-guides/dockerfiles/dockerfile-for-php.html)
 
 ## Putting a Dockerfile in a sub-directory
 

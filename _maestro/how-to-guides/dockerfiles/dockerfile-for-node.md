@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Writing a custom Dockerfile for Node
 categories: how-to-guides/dockerfiles
-order: 2
+order: 3
 lead: "Writing a custom Dockerfile for a Node application"
 legacy: false
 tags: ["operations"]
@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-If we detect that your application uses Node we will suggest a default Dockerfile for you to use (see below). This file should work for most Node applications, but if your app has some special cases you may need to modify it or write your own from scratch. This doc will walk you through the basics of doing so.
+If we detect that your application uses Node we will suggest a default [Dockerfile](/maestro/how-to-guides/dockerfiles/writing-a-dockerfile.html) for you to use (see below). This file should work for most Node applications, but if your app has some special cases you may need to modify it or write your own from scratch. This doc will walk you through the basics of doing so.
 
 Before following this guide, we recommend getting acquainted with [the basics of the Docker platform](https://docs.docker.com/get-started/overview/). Because you're using Maestro, most of the Docker tasks and processes described will be completely automated, but it is useful to understand why a Dockerfile is necessary and what it does.
 
