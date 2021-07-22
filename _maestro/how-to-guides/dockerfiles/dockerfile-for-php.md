@@ -89,7 +89,7 @@ WORKDIR /app
 # Changes uid and gid of apache to docker user uid/gid
 RUN usermod -u 1000 www-data && groupmod -g 1000 www-data
 
-# Sets Apache configs
+# Sets Apache to run via the app directory
 RUN sed -i -e "s/var\/www/app/g" /etc/apache2/apache2.conf && sed -i -e "s/html/public/g" /etc/apache2/apache2.conf
 
 # Copies your code to the image
@@ -99,4 +99,6 @@ COPY . /app
 RUN chown -R www-data:www-data
 ```
 
-This image is obviously missing a lot components that you might need - it has no database drivers for example - but you can add these as needed.
+This image is obviously missing a lot components that you might need - it has no database drivers for example - but you can add these as needed. 
+
+You'll notice that we do not set up any virtual hosts - this is because traffic to Cloud 66 apps is handled by Nginx. Apache is only required to serve traffic to the [internal container (service) network](/maestro/how-to-guides/build-and-config/service-networking.html).
