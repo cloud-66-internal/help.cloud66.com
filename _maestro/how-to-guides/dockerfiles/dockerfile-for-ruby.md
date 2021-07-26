@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Writing a custom Dockerfile for Ruby
+title: Writing a custom Dockerfile for Rails
 categories: how-to-guides/dockerfiles
 order: 2
-lead: "Writing a custom Dockerfile for a Ruby application"
+lead: "Writing a custom Dockerfile for a Ruby-on-Rails or Rack application"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext
@@ -12,13 +12,13 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-If we detect that your application uses Ruby we will suggest a default [Dockerfile](/maestro/how-to-guides/dockerfiles/writing-a-dockerfile.html) for you to use (see below). This file should work for most Ruby applications, but if your app has some unusual requirements you may need to modify it or write your own from scratch. This doc will walk you through the basics of doing so.
+If we detect that your application uses Rails we will suggest a default [Dockerfile](/maestro/how-to-guides/dockerfiles/writing-a-dockerfile.html) for you to use (see below). This file should work for most Rails (or Rack) applications, but if your app has some unusual requirements you may need to modify it or write your own from scratch. This doc will walk you through the basics of doing so.
 
 Before following this guide, we recommend getting acquainted with [the basics of the Docker platform](https://docs.docker.com/get-started/overview/). Because you're using Maestro, most of the Docker tasks and processes described will be completely automated, but it is useful to understand why a Dockerfile is necessary and what it does.
 
-## Default Ruby Dockerfile
+## Default Rails Dockerfile
 
-This is the Dockerfile we will suggest for Ruby apps that do not already have one:
+This is the Dockerfile we will suggest for Rails apps that do not already have one:
 
 ```docker
 FROM ruby:latest
@@ -54,7 +54,7 @@ We generally recommend against writing your own Dockerfile from scratch, but the
 
 The order of the commands is extremely important. If you try to run a component before one of its dependencies, the build will fail.
 
-The simplest possible Dockerfile for a Ruby application looks something like this:
+The simplest possible Dockerfile for a Rails application looks something like this:
 
 ```docker
 FROM ruby:latest  # Tells the image to use the latest version of Ruby

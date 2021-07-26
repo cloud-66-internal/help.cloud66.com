@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Writing a custom Dockerfile for Node
+title: Writing a custom Dockerfile for NodeJS
 categories: how-to-guides/dockerfiles
 order: 3
-lead: "Writing a custom Dockerfile for a Node application"
+lead: "Writing a custom Dockerfile for a NodeJS application"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext
@@ -12,13 +12,13 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-If we detect that your application uses Node we will suggest a default [Dockerfile](/maestro/how-to-guides/dockerfiles/writing-a-dockerfile.html) for you to use (see below). This file should work for most Node applications, but if your app has some special cases you may need to modify it or write your own from scratch. This doc will walk you through the basics of doing so.
+If we detect that your application uses NodeJS we will suggest a default [Dockerfile](/maestro/how-to-guides/dockerfiles/writing-a-dockerfile.html) for you to use (see below). This file should work for most NodeJS applications, but if your app has some special cases you may need to modify it or write your own from scratch. This doc will walk you through the basics of doing so.
 
 Before following this guide, we recommend getting acquainted with [the basics of the Docker platform](https://docs.docker.com/get-started/overview/). Because you're using Maestro, most of the Docker tasks and processes described will be completely automated, but it is useful to understand why a Dockerfile is necessary and what it does.
 
-## Default Node Dockerfile
+## Default NodeJS Dockerfile
 
-This is the Dockerfile we will suggest for Node apps that do not already have one:
+This is the Dockerfile we will suggest for NodeJS apps that do not already have one:
 
 ```docker
 FROM node:latest
@@ -49,7 +49,7 @@ We generally recommend against writing your own Dockerfile from scratch, but the
 
 The order of the commands is extremely important. If you try to run a component before one of its dependencies, the build will fail.
 
-The simplest possible Dockerfile for a Node application looks something like this:
+The simplest possible Dockerfile for a NodeJS application looks something like this:
 
 ```docker
 FROM node:latest  # Tells the image to use the latest version of Node
