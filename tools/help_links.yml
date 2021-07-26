@@ -620,6 +620,27 @@ maestro:
     - overview
     - passing-parameters-to-a-job
     - using-parameters
+  dockerfile_for_node:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-node.html
+    page_anchors:
+    - default-nodejs-dockerfile
+    - maestro-product-heading
+    - overview
+    - writing-your-own-dockerfile
+  dockerfile_for_php:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-php.html
+    page_anchors:
+    - default-php-dockerfile
+    - maestro-product-heading
+    - overview
+    - writing-your-own-dockerfile
+  dockerfile_for_ruby:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-ruby.html
+    page_anchors:
+    - default-rails-dockerfile
+    - maestro-product-heading
+    - overview
+    - writing-your-own-dockerfile
   elasticsearch:
     page: maestro/how-to-guides/add-ins/elasticsearch.html
     page_anchors:
@@ -843,6 +864,10 @@ maestro:
     - maestro-product-heading
   how_to_guides_deployment_index:
     page: maestro/how-to-guides/deployment/index.html
+    page_anchors:
+    - maestro-product-heading
+  how_to_guides_dockerfiles_index:
+    page: maestro/how-to-guides/dockerfiles/index.html
     page_anchors:
     - maestro-product-heading
   how_to_guides_index:
@@ -2084,6 +2109,16 @@ maestro:
     - using-websocket-via-haproxy
     - using-websocket-via-native-cloud-load-balancers
     - websocket-through-a-load-balancer
+  writing_a_dockerfile:
+    page: maestro/how-to-guides/dockerfiles/writing-a-dockerfile.html
+    page_anchors:
+    - caching--build-speed
+    - how-to-guides-by-framework
+    - important-dockerfile-principles
+    - maestro-product-heading
+    - more-help
+    - putting-a-dockerfile-in-a-sub-directory
+    - writing-a-dockerfile-for-your-app
 node:
   access_your_code:
     page: node/how-to-guides/common-tools/access-your-code.html
