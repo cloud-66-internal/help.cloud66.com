@@ -459,15 +459,15 @@ maestro:
     page_anchors:
     - backup-format
     - backup-schedule
-    - backup-storage-locations
     - backup-types
     - binary
     - compression
     - exclude-tables
     - install-on-replica
     - maestro-product-heading
+    - managed-backup-storage-locations
     - managed-backups
-    - pricing
+    - pricing-of-managed-backups
     - restoring-database-backups
     - text
     - unmanaged-backups
@@ -1039,6 +1039,7 @@ maestro:
     - overview
     - postgresql
     - redis
+    - specifying-external-databases-via-your-manifest
   manifest_loadbalancer_settings:
     page: maestro/references/manifest-loadbalancer-settings.html
     page_anchors:
@@ -2491,15 +2492,15 @@ node:
     page_anchors:
     - backup-format
     - backup-schedule
-    - backup-storage-locations
     - backup-types
     - binary
     - compression
     - exclude-tables
     - install-on-replica
+    - managed-backup-storage-locations
     - managed-backups
     - node-product-heading
-    - pricing
+    - pricing-of-managed-backups
     - restoring-database-backups
     - text
     - unmanaged-backups
@@ -2918,6 +2919,7 @@ node:
     - overview
     - postgresql
     - redis
+    - specifying-external-databases-via-your-manifest
   manifest_loadbalancer_settings:
     page: node/references/manifest-loadbalancer-settings.html
     page_anchors:
@@ -4261,14 +4263,14 @@ rails:
     page_anchors:
     - backup-format
     - backup-schedule
-    - backup-storage-locations
     - backup-types
     - binary
     - compression
     - exclude-tables
     - install-on-replica
+    - managed-backup-storage-locations
     - managed-backups
-    - pricing
+    - pricing-of-managed-backups
     - rails-product-heading
     - restoring-database-backups
     - text
@@ -4771,6 +4773,7 @@ rails:
     - postgresql
     - rails-product-heading
     - redis
+    - specifying-external-databases-via-your-manifest
   manifest_loadbalancer_settings:
     page: rails/references/manifest-loadbalancer-settings.html
     page_anchors:
