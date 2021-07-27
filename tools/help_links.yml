@@ -459,15 +459,15 @@ maestro:
     page_anchors:
     - backup-format
     - backup-schedule
-    - backup-storage-locations
     - backup-types
     - binary
     - compression
     - exclude-tables
     - install-on-replica
     - maestro-product-heading
+    - managed-backup-storage-locations
     - managed-backups
-    - pricing
+    - pricing-of-managed-backups
     - restoring-database-backups
     - text
     - unmanaged-backups
@@ -494,6 +494,7 @@ maestro:
     - connecting-your-app-to-your-db-in-maestro-v1
     - connection-strings-in-maestro
     - customizing-your-database
+    - database-authentication
     - dedicated-database
     - deploying-databases
     - deployment-types
@@ -619,6 +620,27 @@ maestro:
     - overview
     - passing-parameters-to-a-job
     - using-parameters
+  dockerfile_for_node:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-node.html
+    page_anchors:
+    - default-nodejs-dockerfile
+    - maestro-product-heading
+    - overview
+    - writing-your-own-dockerfile
+  dockerfile_for_php:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-php.html
+    page_anchors:
+    - default-php-dockerfile
+    - maestro-product-heading
+    - overview
+    - writing-your-own-dockerfile
+  dockerfile_for_ruby:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-ruby.html
+    page_anchors:
+    - default-rails-dockerfile
+    - maestro-product-heading
+    - overview
+    - writing-your-own-dockerfile
   elasticsearch:
     page: maestro/how-to-guides/add-ins/elasticsearch.html
     page_anchors:
@@ -844,6 +866,10 @@ maestro:
     page: maestro/how-to-guides/deployment/index.html
     page_anchors:
     - maestro-product-heading
+  how_to_guides_dockerfiles_index:
+    page: maestro/how-to-guides/dockerfiles/index.html
+    page_anchors:
+    - maestro-product-heading
   how_to_guides_index:
     page: maestro/how-to-guides/index.html
     page_anchors:
@@ -1013,6 +1039,7 @@ maestro:
     - overview
     - postgresql
     - redis
+    - specifying-external-databases-via-your-manifest
   manifest_loadbalancer_settings:
     page: maestro/references/manifest-loadbalancer-settings.html
     page_anchors:
@@ -1105,6 +1132,12 @@ maestro:
     - environment-variables
     - maestro-product-heading
     - using-a-mongodb-replica-set-in-your-code
+  mongodb:
+    page: maestro/how-to-guides/add-ins/mongodb.html
+    page_anchors:
+    - add-mongodb-to-your-application
+    - maestro-product-heading
+    - mongodb-authentication-and-roles
   multi_cert_haproxy:
     page: maestro/how-to-guides/security/multi-cert_haproxy.html
     page_anchors:
@@ -2077,6 +2110,16 @@ maestro:
     - using-websocket-via-haproxy
     - using-websocket-via-native-cloud-load-balancers
     - websocket-through-a-load-balancer
+  writing_a_dockerfile:
+    page: maestro/how-to-guides/dockerfiles/writing-a-dockerfile.html
+    page_anchors:
+    - caching--build-speed
+    - how-to-guides-by-framework
+    - important-dockerfile-principles
+    - maestro-product-heading
+    - more-help
+    - putting-a-dockerfile-in-a-sub-directory
+    - writing-a-dockerfile-for-your-app
 node:
   access_your_code:
     page: node/how-to-guides/common-tools/access-your-code.html
@@ -2449,15 +2492,15 @@ node:
     page_anchors:
     - backup-format
     - backup-schedule
-    - backup-storage-locations
     - backup-types
     - binary
     - compression
     - exclude-tables
     - install-on-replica
+    - managed-backup-storage-locations
     - managed-backups
     - node-product-heading
-    - pricing
+    - pricing-of-managed-backups
     - restoring-database-backups
     - text
     - unmanaged-backups
@@ -2481,6 +2524,7 @@ node:
     page_anchors:
     - about-deploying-databases
     - customize-your-database-configuration
+    - database-authentication
     - database-customization-variables
     - database-deployment-types
     - dedicated-database
@@ -2875,6 +2919,7 @@ node:
     - overview
     - postgresql
     - redis
+    - specifying-external-databases-via-your-manifest
   manifest_loadbalancer_settings:
     page: node/references/manifest-loadbalancer-settings.html
     page_anchors:
@@ -2960,6 +3005,12 @@ node:
     - node-product-heading
     - note
     - using-a-mongodb-replica-set-in-your-code
+  mongodb:
+    page: node/how-to-guides/add-ins/mongodb.html
+    page_anchors:
+    - add-mongodb-to-your-application
+    - mongodb-authentication-and-roles
+    - node-product-heading
   multi_cert_haproxy:
     page: node/how-to-guides/security/multi-cert_haproxy.html
     page_anchors:
@@ -4212,14 +4263,14 @@ rails:
     page_anchors:
     - backup-format
     - backup-schedule
-    - backup-storage-locations
     - backup-types
     - binary
     - compression
     - exclude-tables
     - install-on-replica
+    - managed-backup-storage-locations
     - managed-backups
-    - pricing
+    - pricing-of-managed-backups
     - rails-product-heading
     - restoring-database-backups
     - text
@@ -4246,6 +4297,7 @@ rails:
     - about-deploying-databases
     - control-your-rails-database-migrations
     - customize-your-database-configuration
+    - database-authentication
     - database-customization-variables
     - database-deployment-types
     - dedicated-database
@@ -4721,6 +4773,7 @@ rails:
     - postgresql
     - rails-product-heading
     - redis
+    - specifying-external-databases-via-your-manifest
   manifest_loadbalancer_settings:
     page: rails/references/manifest-loadbalancer-settings.html
     page_anchors:
@@ -4833,6 +4886,12 @@ rails:
     - expected-downtime
     - rails-product-heading
     - using-a-mongodb-replica-set-in-your-code
+  mongodb:
+    page: rails/how-to-guides/add-ins/mongodb.html
+    page_anchors:
+    - add-mongodb-to-your-application
+    - mongodb-authentication-and-roles
+    - rails-product-heading
   multi_cert_haproxy:
     page: rails/how-to-guides/security/multi-cert_haproxy.html
     page_anchors:

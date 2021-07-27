@@ -17,15 +17,23 @@ We currently support the following databases, with no need for additional config
 
 {%endif%}
 
-After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. If you haven't specified a username and password for your database, Cloud 66 will automatically generate these credentials for you. They will be available as environment variables and your application will be configured to use them.
+After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. 
+
+### Database authentication
+
+When we deploy a database we automatically generate the required users and passwords to allow authentication. You can find these values via your Dashboard in the detail page of any database server. 
+
+They will be available as environment variables and your application will be configured to use them.
 
 {%if page.collection=='rails' %}
+If you'd prefer to manage your users and password manually (i.e. your config files), you can [prevent your configs from being modified](/rails/how-to-guides/databases/tamper-with-yaml.html).
+
 #### Note 
 <div class="notice notice-warning"><p>If your <code>database.yml</code> file has a <code>url</code> defined, we will assume that you are using <strong>an external (self-managed) database</strong>, and will follow that URL accordingly. This also means we <strong>won't</strong> set any of the database variables (such as username and password) the way we would normally do.</p></div>
 
 ### Managing YAML configs
 
-A Rails app must have either a `config/database.yml` file or `config/mongoid.yml` in order to work on Cloud 66. We will create these files automatically if they don't exist. 
+A Rails app must have either a `config/database.yml` file or `config/mongoid.yml` in order to work on Cloud 66. We will create these files automatically if they don't exist. We will update any existing files with new values (for example passwords) as required. (See above for how to prevent this)
 
 If you want to specify a different DB config per environment, you can name the files `config/database.yml.environment-name` (e.g. `config/database.yml.dev`)
 
@@ -41,8 +49,14 @@ We will prioritise these configs as follows:
 ## Database deployment types
 
 ### No database (external)
-This option allows you to deploy your application without a database managed by Cloud 66, and is ideal for externally hosted databases.
-Please note that if there is no connectivity to your database, or your database host is not configured correctly, the deployment will fail. {%if page.collection=='rails' %}For Rails apps, if you have a `url` set in your `database.yml` then we will assume that you are using an external DB.{% endif %}
+
+This option allows you to deploy your application without a database managed by Cloud 66, and is ideal for externally hosted databases. 
+
+{%if page.collection=='rails' %}For Rails apps, if you have a `url` set in your `database.yml` then we will assume that you are using an external DB.{% endif %}
+
+You can also configure an external database via your [Manifest file](/{{page.collection}}/references/manifest-database-settings.html#specifying-external-databases-via-your-manifest) by specifying the `server` node as `external`. 
+
+Please note that if there is no connectivity to your external database, or your external database host is not configured correctly, the deployment will fail.
 
 ### Local database
 This option deploys your chosen database to the same server as your web server - this is intended primarily for development, as running your database locally in production is not advised. In this case, your application database configuration will be amended to target your local database server. If you scale up your web server, these settings will also be amend automatically to reflect your database configuration.
