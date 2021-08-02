@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Cloud 66 for Rails Resources"
 lead: "Useful Resources for Cloud 66 users"

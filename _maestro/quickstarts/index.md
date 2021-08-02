@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Getting Started"
 lead: Quick guides to getting up and running with Maestro

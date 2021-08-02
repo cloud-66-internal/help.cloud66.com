@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "The Basics"
 lead: Basic concepts, terminology and frequently asked questions (FAQs)

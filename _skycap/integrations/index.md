@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Integration Guides"
 lead: "How to integrate other services with Cloud 66"

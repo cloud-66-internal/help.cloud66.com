@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title: Maestro
 lead: Cloud 66 Maestro for Containerized Applications

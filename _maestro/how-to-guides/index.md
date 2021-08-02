@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Maestro How-to Guides"
 categories: how-to-guides

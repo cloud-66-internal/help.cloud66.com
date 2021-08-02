@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Cloud 66 for Node Quickstarters"
 lead: Getting Started with Cloud 66 for Node
