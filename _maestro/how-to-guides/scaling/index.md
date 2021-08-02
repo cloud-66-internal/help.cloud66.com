@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Maestro: Scaling"
 lead: How to scale your application

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How to configure Nginx within Maestro"
 lead: How to configure Nginx

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How-to: Cloud providers"
 lead: Configuring cloud providers for use with Cloud 66 for Node

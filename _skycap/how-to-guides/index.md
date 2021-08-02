@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Skycap How-To Guides"
 lead: How to use Cloud 66 Skycap

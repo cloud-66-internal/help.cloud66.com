@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How-to Guides: Add-ins"
 categories: how-to-guides

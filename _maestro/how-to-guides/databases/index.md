@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Using Databases with Maestro"
 lead: How to configure databases for use with Maestro

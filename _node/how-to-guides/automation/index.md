@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How-to Guides: Automation"
 lead: How to automate management tasks for your Node application on Cloud 66

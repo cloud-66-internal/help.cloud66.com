@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Cloud 66 for Node Resources"
 lead: "Useful Resources About Cloud 66"

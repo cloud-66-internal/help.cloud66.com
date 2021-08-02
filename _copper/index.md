@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: oss
 externallink: https://github.com/cloud66-oss/copper
 label: Copper

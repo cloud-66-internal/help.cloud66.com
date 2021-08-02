@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How-to: Automation"
 lead: Automating management tasks for your Skycap application

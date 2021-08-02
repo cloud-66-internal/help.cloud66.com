@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How-to Guides: Databases"
 lead: How to configure and manage databases with Cloud 66 for Rails

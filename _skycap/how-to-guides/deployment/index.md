@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How-To guides for deploying Skycap applications"
 lead: How to deploy via Skycap
