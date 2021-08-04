@@ -1,0 +1,47 @@
+---
+layout: default
+bodyclass: section
+---
+
+{% assign current_cat = page.categories %}
+
+<h1 class="article-title">{{ page.title }}</h1>
+
+
+    {% if page.version %}
+        <div style="margin-top: -38px; height: 0px; color: mediumseagreen; text-align: right;">VERSION: {{ page.version }}</div>
+    {% endif %}
+    {% assign trimmedURL = page.url | remove_first: '/' | remove_first: '.html' %}
+    {% assign gitlnker = "https://github.com/cloud66/help/edit/feature/inlines/_" | append: trimmedURL | append: ".md" %}
+
+    <!--
+    {% if jekyll.environment == "development" %}
+    <a href={{gitlnker}}>github link</a>
+    {% endif %}
+    -->
+
+    {% if page.legacy %}
+       <!--
+        <div class="notice notice-red">
+            <p>Contents of this page are for a legacy version of {{ page.collection | replace: "_", " " | capitalize }}</p>
+        </div>
+       -->
+    {% endif %}
+
+    {{ content }}
+
+    {% if page.recommendedLinks.size>0 %}
+     <div class="RelatedLinks">
+        <h3 class="RelatedLinks-title">Related Links</h3>
+        <ul class="RelatedLinks-list">
+      {% for i in (0..30) %}
+         {% if i == page.recommendedLinks.size %}
+             {% break %}
+         {% else %}
+            <li><a href={{page.recommendedLinks[i]}}>{{ page.recommendedName[i] }}</a></li>
+         {% endif %}
+      {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+

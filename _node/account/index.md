@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Account management"
 lead: "Managing your Cloud 66 for Node account"

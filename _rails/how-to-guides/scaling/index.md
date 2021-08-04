@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How-to: Scaling"
 lead: Scaling your Rails application with Cloud 66

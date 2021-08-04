@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Getting started with Skycap"
 lead: Getting Started with Skycap

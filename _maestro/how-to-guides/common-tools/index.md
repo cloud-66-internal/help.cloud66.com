@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Common tools used in Maestro"
 lead: How to properly use Cloud 66 Maestro

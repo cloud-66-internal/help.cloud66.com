@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Maestro Tutorials"
 lead: "Step by step guides to using Maestro's features"

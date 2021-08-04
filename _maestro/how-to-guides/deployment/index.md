@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How to deploy an application in Maestro"
 lead: How to deploy applications using Maestro

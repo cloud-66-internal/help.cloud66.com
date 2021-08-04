@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Account settings"
 lead: "A guide to account settings in Cloud 66"

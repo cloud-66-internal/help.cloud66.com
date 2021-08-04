@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How to write Dockerfiles for use with Maestro"
 lead: How to write Dockerfiles for use with Maestro
