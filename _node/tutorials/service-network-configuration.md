@@ -55,4 +55,3 @@ Editing your Nginx configuration should be approached with caution as an incorre
 - Learn how to use [CustomConfig](/node/tutorials/custom-config.html) to manage the configuration files for components like Nginx
 - Learn how to [configure your public DNS](/node/tutorials/configure-dns.html) to work optimally with Cloud 66 for Node
 - Learn how to [add a load balancer](/node/tutorials/configure-dns.html) to your application
-- Learn how to set up [custom redirects](/node/how-to-guides/deployment/shells/nginx-redirect.html) through Nginx
