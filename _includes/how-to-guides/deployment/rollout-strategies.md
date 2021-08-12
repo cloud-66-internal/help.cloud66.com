@@ -202,7 +202,7 @@ This command will <strong>roll-back</strong> to the code to the previous version
 
 <pre class="language-shell u-whiteSpaceNoWrap">
 cx stacks variants rollback -s my-application
-</pre>
+</pre> 
 
 This command will set the Canary variant ("green") to receive 25% of all traffic to the same app:
 

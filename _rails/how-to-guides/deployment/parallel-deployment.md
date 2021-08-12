@@ -19,7 +19,7 @@ Whenever you update your application code, you can adjust two aspects of the way
 
 This guide is concerned with the first aspect - how the new code gets to your servers. 
 
-If you need help with the second aspect - how the new version of your application is presented to your customers - please read our separate [guide to rollout strategies](/{{{page.collection}}/how-to-guides/deployment/rollout-strategies.html).
+If you need help with the second aspect - how the new version of your application is presented to your customers - please read our separate [guide to rollout strategies](/{{page.collection}}/how-to-guides/deployment/rollout-strategies.html).
 
 ## Types of deployment strategies
 
