@@ -12,6 +12,17 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
+Whenever you update your application code, you can adjust two aspects of the way it is updated:
+
+1. How the updated code is pushed to your servers (the **deployment strategy**) 
+2. How the updated version is shown to customers (the **rollout strategy**) 
+
+This guide is concerned with the first aspect - how the new code gets to your servers. 
+
+If you need help with the second aspect - how the new version of your application is presented to your customers - please read our separate [guide to rollout strategies](/{{{page.collection}}/how-to-guides/deployment/rollout-strategies.html).
+
+## Types of deployment strategies
+
 Your application's deployment strategy dictates how we push changes out to your servers. There are three strategies available:
 
 1. Serial deployment
@@ -36,7 +47,7 @@ There are three ways to set a deployment strategy for an app:
 
 You can trigger a deployment that uses any of the three strategies by clicking the *Deploy* button on your **Application Overview** page and choosing *Deploy with Options*. This will allow you to choose between the three strategies. 
 
-**This will only apply to the current deployment** - it does not change the default deployment strategy for your app.
+*This will only apply to the current deployment* - it does not change the default deployment strategy for your app.
 
 #### Note
 <div class="notice"><p>

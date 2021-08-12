@@ -10,8 +10,8 @@ The first aspect is concerned with how the new code gets to your servers - how q
 The second aspect, the subject of this guide, is concerned with how the new version of your application is presented to your customers. There are three strategies:
 
 1. **No rollout strategy** (the default) - as soon as new code is deployed, all your customers see it
-2. **Blue / Green rollout** - runs the previous version of your app alongside the new version and allows a limited set of people to see the new version. You can then either switch everyone over to the new version, or roll back to the previous one.
-3. **Canary** **rollout** - as with Blue / Green, you maintain both versions of your application but you only direct a small proportion of web traffic to the new version. You then gradually switch your users across to the new version if it meets your expectations.
+2. **Blue / Green rollout** - runs the previous version of your app alongside the new version and directs people to each version based on specific conditions (such as HTTP headers).
+3. **Canary rollout** - as with Blue / Green, you maintain both versions of your application but you only direct a small proportion of web traffic to the new version. You then gradually switch your users across to the new version if it meets your expectations.
 
 <div class="notice notice-warning"><p>Rollout strategies only apply to direct updates to the code of your web application - they are NOT intended for infrastructure changes (like background process, Ruby version or Web server changes, for example).</p></div>
 
@@ -61,12 +61,11 @@ You can add the `rollout-strategy` parameter to a Toolbelt command to roll out y
 - `canary`
 - `blue_green_immediate`
 - `blue_green_delayed`
-- `blue_green`
 
 For example, this would deploy your application with a canary rollout variant:
 
 ```bash
-
+cx stacks redeploy -rollout-strategy canary -s my-app
 ```
 
 ## How rollout strategies work
@@ -85,10 +84,8 @@ You can see an application's current rollout state at the top of the Application
 
 Blue / Green rollouts are intended for two main purposes: 
 
-1. To allow a specific set of people to test a new version of an app in the live environment 
-2. To quickly roll back a newly deployed version if problems are encountered
-
-You can use Blue / Green for either or both of these, but point 1 requires that you select "Delayed Switchover" when you're selecting a rollout strategy. 
+1. To allow a specific set of people to test a new version of an app in the live environment before directing customers to it ("Delayed switchover")
+2. To quickly roll back a newly deployed version if problems are encountered ("Immediate switchover")
 
 When you choose to deploy using Blue / Green:
 
@@ -154,38 +151,64 @@ As such if a new version of an application requires a new value for an environme
 
 ## Manage rollouts using Cloud 66 Toolbelt (cx)
 
-You can control your rollouts entirely via your command line Toolbelt (`cx`). The operative command is:
+<div class="Tabs Tabs--enclosed">
+<nav>
+<ul class="TabMini js_tabs">
+<li class="TabMini-item active">
+<a href="#cx-command" class="TabMini-link">
+Toolbelt (cx) command
+</a>
+</li>
+<li class="TabMini-item">
+<a href="#cx-examples" class="TabMini-link">
+Examples
+</a>
+</li>
+</ul>
+</nav>
 
-```bash
+<section id="cx-command" class="Tabs-content js_tab_content">
+
+You can control your rollouts entirely via your command line Toolbelt. The operative command is:
+<pre class="language-shell">
 cx stacks variants
+</pre>
 
-USAGE:
+<strong>USAGE:</strong>
+<pre class="language-shell u-whiteSpaceNoWrap">
 cx stacks variants [global options] command [command options] [arguments...]
+</pre>
 
-COMMANDS:
-list			       list application variants
-commit		          commit your new rollout application variant
-rollback		       rollback to your old rollout application variant
-update-percentage   update the traffic percentage of your canary rollout application variant
-delete		          delete an existing preview application variant
-```
+<strong>COMMANDS:</strong>
+<pre class="language-shell u-whiteSpaceNoWrap">
+   list			list application variants
+   commit		commit your new rollout application variant
+   rollback		rollback to your old rollout application variant
+   update-percentage	update the traffic percentage of your canary rollout
+   delete		delete an existing preview application variant
+   help, h		Shows a list of commands or help for one command   
+</pre>
+</section>
 
-### Examples
+<section id="cx-examples" class="Tabs-content js_tab_content is-hidden">
 
-This command will **commit** the "new" rollout variant (aka `green`) for the application named `my-application`:
+This command will <strong>commit</strong> the "new" rollout variant (aka "green") for the application named <code>my-application</code>:
 
-```bash
+<pre class="language-shell u-whiteSpaceNoWrap">
 cx stacks variants commit -s my-application
-```
+</pre>
 
-This command will roll-back to the code to the previous version (aka `blue`) for the same application:
+This command will <strong>roll-back</strong> to the code to the previous version (aka "blue") for the same application:
 
-```bash
+<pre class="language-shell u-whiteSpaceNoWrap">
 cx stacks variants rollback -s my-application
-```
+</pre>
 
-This command will set the Canary variant (`green`) to receive 25% of all traffic to the same app:
+This command will set the Canary variant ("green") to receive 25% of all traffic to the same app:
 
-```bash
+<pre class="language-shell u-whiteSpaceNoWrap">
 cx stacks variants update-percentage 25 -s my-application
-```
+</pre>
+</section>
+</div>
+
