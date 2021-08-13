@@ -34,16 +34,19 @@ We do not support old-style daemonization because it is more reliable to allow t
 
 This `unicorn.rb` configuration file is compatible with Cloud 66 requirements (following the Procfile initialization string above, this should be located under the `config` folder of your Rails app):
 
-```ruby
+
+<div class="CodeBlock">
+    <button class="js-copy-btn" data-clipboard-target="#copy-1">Copy</button>
+    <pre><code id="copy-1" class="language-ruby">
 worker_processes 2
 
 working_directory "#{ENV['STACK_PATH']}"
 
-listen "/tmp/web_server.sock", :backlog => 64
+listen "#{ENV['CUSTOM_WEB_SOCKET_FILE']}", :backlog => 64
 
 timeout 30
 
-pid '/tmp/web_server.pid'
+pid "#{ENV['CUSTOM_WEB_PID_FILE']}"
 
 stderr_path "#{ENV['STACK_PATH']}/log/unicorn.stderr.log"
 stdout_path "#{ENV['STACK_PATH']}/log/unicorn.stdout.log"
@@ -55,7 +58,7 @@ GC.respond_to?(:copy_on_write_friendly=) and
 check_client_connection false
 
 before_fork do |server, worker|
-	old_pid = '/tmp/web_server.pid.oldbin'
+	old_pid = "#{ENV['CUSTOM_WEB_PID_FILE']}.oldbin"
 	if File.exists?(old_pid) && server.pid != old_pid
 		begin
 			Process.kill("QUIT", File.read(old_pid).to_i)
@@ -72,7 +75,7 @@ after_fork do |server, worker|
 	defined?(ActiveRecord::Base) and
 		ActiveRecord::Base.establish_connection
 end
-```
+</code></pre></div>
 
 ## Customizing shutdown and reload signals
 
