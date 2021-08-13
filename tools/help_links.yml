@@ -5029,6 +5029,7 @@ rails:
     - rails-product-heading
     - rolling-deployment
     - serial-deployment
+    - types-of-deployment-strategies
     - using-a-deployment-profile
     - using-deploy-with-options
     - using-the-toolbelt-command-line
@@ -5217,6 +5218,26 @@ rails:
     page: rails/resources/index.html
     page_anchors:
     - rails-product-heading
+  rollout_strategies:
+    page: rails/how-to-guides/deployment/rollout-strategies.html
+    page_anchors:
+    - browser-plugins-for-http-headers
+    - browsing-rollout-variants-for-canary-releases
+    - changing-your-applications-rollout-strategy
+    - cx-command
+    - cx-examples
+    - environment-variables-in-rollouts
+    - how-rollout-strategies-work
+    - manage-rollouts-using-cloud-66-toolbelt-cx
+    - managing-a-blue--green-rollout
+    - managing-a-canary-rollout
+    - overview
+    - rails-product-heading
+    - setting-an-http-header-via-curl
+    - using-a-deployment-profile
+    - using-deploy-with-options
+    - using-http-headers-to-view-blue-or-green-versions
+    - using-the-toolbelt-command-line
   running_rake_tasks:
     page: rails/how-to-guides/deployment/running-rake-tasks.html
     page_anchors:
