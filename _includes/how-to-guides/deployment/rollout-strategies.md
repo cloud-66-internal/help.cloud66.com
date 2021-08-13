@@ -67,6 +67,7 @@ For example, this would deploy your application with a canary rollout variant:
 ```bash
 cx stacks redeploy -rollout-strategy canary -s my-app
 ```
+You can manage most aspects of your rollouts via the Cloud 66 Toolbelt. [See below for more help](#manage-rollouts-using-cloud-66-toolbelt-cx).
 
 ## How rollout strategies work
 
