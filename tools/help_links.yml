@@ -5077,6 +5077,21 @@ rails:
     - postgis-extension-for-postgresql
     - prerequisites
     - rails-product-heading
+  preview_deployments:
+    page: rails/how-to-guides/deployment/preview-deployments.html
+    page_anchors:
+    - browsing-and-managing-previews
+    - deleting-previews
+    - deleting-previews-using-cloud-66-toolbelt
+    - disabling-previews
+    - enabling-and-disabling-preview-deployments
+    - monitoring-preview-deployments
+    - overview
+    - rails-product-heading
+    - redeploying-previews
+    - setting-up-previews-on-github
+    - triggering-preview-deployments-via-your-git-provider
+    - types-of-preview-deployments
   pricing:
     page: rails/resources/pricing.html
     page_anchors:
