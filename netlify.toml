@@ -1,4 +1,64 @@
 [[redirects]]
+  from = "/maestro/how-to-guides/nginx/nginx-auth.html"
+  to = "/maestro/how-to-guides/nginx/customizing-nginx.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/nginx/nginx-deny.html"
+  to = "/maestro/how-to-guides/nginx/customizing-nginx.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/nginx/nginx-modules.html"
+  to = "/maestro/how-to-guides/nginx/customizing-nginx.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/nginx/nginx-redirect.html"
+  to = "/maestro/how-to-guides/nginx/customizing-nginx.html"
+
+[[redirects]]
+  from = "/maestro/how-to-guides/nginx/nginx-ssl-ciphers.html"
+  to = "/maestro/how-to-guides/nginx/customizing-nginx.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/security/nginx-auth.html"
+  to = "/rails/how-to-guides/deployment/customizing-nginx.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/deployment/shells/nginx-modules.html"
+  to = "/rails/how-to-guides/deployment/customizing-nginx.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/deployment/shells/nginx-redirect.html"
+  to = "/rails/how-to-guides/deployment/customizing-nginx.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/security/nginx-deny.html"
+  to = "/rails/how-to-guides/deployment/customizing-nginx.html"
+
+[[redirects]]
+  from = "/rails/how-to-guides/security/nginx-ssl-ciphers.html"
+  to = "/rails/how-to-guides/deployment/customizing-nginx.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/security/nginx-auth.html"
+  to = "/node/how-to-guides/deployment/customizing-nginx.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/deployment/shells/nginx-modules.html"
+  to = "/node/how-to-guides/deployment/customizing-nginx.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/deployment/shells/nginx-redirect.html"
+  to = "/node/how-to-guides/deployment/customizing-nginx.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/security/nginx-deny.html"
+  to = "/node/how-to-guides/deployment/customizing-nginx.html"
+
+[[redirects]]
+  from = "/node/how-to-guides/security/nginx-ssl-ciphers.html"
+  to = "/node/how-to-guides/deployment/customizing-nginx.html"
+
+[[redirects]]
   from = "/rails/how-to-guides/deployment/shells/migrate-the-stack.html"
   to = "/rails/how-to-guides/deployment/migrating-applications.html"
 
