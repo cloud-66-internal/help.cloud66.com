@@ -3,15 +3,15 @@
 Whenever you update your application code, you can adjust two aspects of the way it is updated:
 
 1. How the updated code is pushed to your servers (the **deployment strategy**) 
-2. How the updated version is shown to customers (the **rollout strategy**) 
+2. How the updated version is shown to visitors (the **rollout strategy**) 
 
 The first aspect is concerned with how the new code gets to your servers - how quickly it happens, in what order, and whether this causes any downtime. If you need help with this aspect, please read our [full guide on the subject](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html).
 
-The second aspect, the subject of this guide, is concerned with how the new version of your application is presented to your customers. There are three strategies:
+The second aspect, the subject of this guide, is concerned with how the new version of your application is presented to your visitors. There are three strategies:
 
-1. **No rollout strategy** (the default) - as soon as new code is deployed, all your customers see it
+1. **No rollout strategy** (the default) - as soon as new code is deployed, all your visitors see it
 2. **Blue / Green rollout** - runs the previous version of your app alongside the new version and directs people to each version based on specific conditions (such as HTTP headers).
-3. **Canary rollout** - as with Blue / Green, you maintain both versions of your application but you only direct a small proportion of web traffic to the new version. You then gradually switch your users across to the new version if it meets your expectations.
+3. **Canary rollout** - as with Blue / Green, you maintain both versions of your application but you only direct a small proportion of web traffic to the new version. You then gradually switch your visitors across to the new version if it meets your expectations.
 
 <div class="notice notice-warning"><p>Rollout strategies only apply to direct updates to the code of your web application - they are NOT intended for infrastructure changes (like background process, Ruby version or Web server changes, for example).</p></div>
 
@@ -75,9 +75,9 @@ Both Blue / Green and Canary rollouts use the same underlying mechanism:
 
 1. We deploy the new version of your app to your servers and configure it to run alongside the current version.
 2. We then use Nginx to route web traffic to these different versions, depending on your chosen strategy.
-3. Then you either *Finalise* a rollout (which removes the older version and directs all traffic to the new version) or *Discard* it (essentially a roll back).
+3. Then you either *Finalize* a rollout (which removes the older version and directs all traffic to the new version) or *Discard* it (essentially a roll back).
 
-You can see an application's current rollout state at the top of the Application Overview page. This interface also allows you to adjust, finalise or discard the current rollout. 
+You can see an application's current rollout state at the top of the Application Overview page. This interface also allows you to adjust, finalize or discard the current rollout. 
 
 ![Rollout panel on Application Overview page](/assets/shared/rollouts-app-overview.png)
 
@@ -85,21 +85,23 @@ You can see an application's current rollout state at the top of the Application
 
 Blue / Green rollouts are intended for two main purposes: 
 
-1. To allow a specific set of people to test a new version of an app in the live environment before directing customers to it ("Delayed switchover")
+1. To allow a specific set of people to test a new version of an app in the live environment before directing visitors to it ("Delayed switchover")
 2. To quickly roll back a newly deployed version if problems are encountered ("Immediate switchover")
 
 When you choose to deploy using Blue / Green:
 
-- We will deploy the new version of your code (always referred to as "Green") to your servers, while continuing to host the previous version of the app (always referred to as "Blue")
-- Depending on which option you've selected, we will direct all traffic to either Green or Blue.
+- We will deploy the new version of your code (always referred to as `Green`) to your servers, while continuing to host the previous version of the app (always referred to as `Blue`)
+- By default, all visitors will see the current version of the application code. The current version depends on the rollout option selected. If you select "Immediate switchover" then the current version is `Green` - and if you select "delayed switchover" the current version is `Blue`.
 - You can then choose to switch web traffic between the different versions of your code using the buttons at the top of your Application Overview (in your Cloud 66 Dashboard) or using your Cloud 66 Toolbelt (see below)
 - You can directly browse either version of the application by adding custom HTTP headers (see below)
 
 ### Using HTTP headers to view Blue or Green versions
 
-You can browse either the Blue or Green version your app directly by adding an `X-Rollout-Version` HTTP header to your requests. You can assign the header a value of either `green` or `blue` as needed. 
+By default, all visitors will see the **current** version of the application code, as explained above.
 
-This is particularly useful when you have chosen the "Delayed switchover" option because it allows your team (or selected customers) to see the new version "in the wild" before switching the general public over to the new version.
+However you can browse either the Blue or Green version your app directly (regardless of which is current) by adding an `X-Rollout-Version` HTTP header to your requests. You can assign the header a value of either `green` or `blue` as needed. 
+
+This is particularly useful when you have chosen the "Delayed switchover" option because it allows your team (or selected visitors) to see the new version "in the wild" before switching the general public over to the new version.
 
 You can set your HTTP headers in a number of ways, including:
 
@@ -124,18 +126,20 @@ If all you need is to pull the raw HTML, then simply running a `curl` command vi
 curl -H "X-Rollout-Version: blue" http://wasp.sampleapp-868240.c66.me/
 ```
 
-You can use either your app's internal Cloud 66 DNS address, or it's public address.
+You can use either your app's internal Cloud 66 DNS address, or its public address.
 
 ## Managing a Canary rollout
 
-Canary rollouts allow you to gradually shift your customers over from a previous version of your application to a new version. While they use a similar mechanism to Blue / Green rollouts, they behave differently in important ways. 
+Canary rollouts allow you to gradually shift your visitors over from a previous version of your application to a new version. While they use a similar mechanism to Blue / Green rollouts, they behave differently in important ways. 
 
 When you choose to deploy using a Canary release:
 
 - We will deploy the new version of your code to your servers, while continuing to host the previous version of the app
-- We direct a small percentage of traffic to the new version (depending on your initial setting)
+- We randomly direct a small percentage of visitors to the new version (depending on your initial setting)
 - You can then adjust the percentage of web traffic being routed to each of the the different versions of your code using the buttons at the top of your Application Overview (in your Cloud 66 Dashboard)
-- At any point you can then either *Finalise* a rollout (which removes the older version and directs all traffic to the new version) or *Discard* it (essentially a roll back)
+- At any point you can then either *Finalize* a rollout (which removes the older version and directs all traffic to the new version) or *Discard* it (essentially a roll back)
+
+<div class="notice"><p>The random cohort of visitors that is assigned to the Canary release will be directed to that release persistently (i.e. they will not bounce between Canary and non-Canary versions of the code).</p></div>
 
 ### Browsing rollout variants for Canary releases
 

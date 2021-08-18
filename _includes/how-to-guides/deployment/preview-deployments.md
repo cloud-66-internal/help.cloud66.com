@@ -83,7 +83,7 @@ You can manually trigger the redeploy of a Preview by clicking the icon next to 
 
 You can use this interface to delete old or unwanted Preview Deployments. To do so, click on the trash-bin icon next to any Preview to delete it. Remember that if you push code to the same branch again, you will also spawn the Preview again.
 
-<div class="notice notice-warning"><p>While we do not limit the number of Previews an app can have, we strongly recommend against having more than a few at any time. By their nature, Previews require resources to run (RAM, CPU cycles etc.) and thus reduce the capacity of your application to serve your customers. For this reason <strong>we recommend running previews in non-production environments</strong> when you are doing rapid feature iterations</p></div>
+<div class="notice notice-warning"><p>While we do not limit the number of Previews an app can have, we strongly recommend against having more than a few at any time. By their nature, Previews require resources to run (RAM, CPU cycles etc.) and thus reduce the capacity of your application to serve your visitors. For this reason <strong>we recommend running previews in non-production environments</strong> when you are doing rapid feature iterations</p></div>
 
 
 ### Deleting Previews using Cloud 66 Toolbelt
