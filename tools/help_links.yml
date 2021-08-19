@@ -1186,38 +1186,6 @@ maestro:
     - maestro-product-heading
     - nginx-customconfig-variables
     - nginx-worker-configuration
-  nginx_auth:
-    page: maestro/how-to-guides/nginx/nginx-auth.html
-    page_anchors:
-    - enabling-basic-authentication
-    - maestro-product-heading
-    - overview
-  nginx_deny:
-    page: maestro/how-to-guides/nginx/nginx-deny.html
-    page_anchors:
-    - maestro-product-heading
-    - overview
-    - set-up-ip-access-control-manually
-  nginx_modules:
-    page: maestro/how-to-guides/nginx/nginx-modules.html
-    page_anchors:
-    - custom-rack-servers
-    - introduction
-    - maestro-product-heading
-    - passenger
-  nginx_redirect:
-    page: maestro/how-to-guides/nginx/nginx-redirect.html
-    page_anchors:
-    - for-http
-    - for-https
-    - maestro-product-heading
-    - overview
-    - redirect-between-domains-with-http-and-https
-    - redirect-from-http-to-https
-  nginx_ssl_ciphers:
-    page: maestro/how-to-guides/security/nginx-ssl-ciphers.html
-    page_anchors:
-    - maestro-product-heading
   non_recommended_server_sizes:
     page: maestro/references/non-recommended-server-sizes.html
     page_anchors:
@@ -3054,33 +3022,6 @@ node:
     - default-nginx-configuration
     - nginx-customconfig-variables
     - nginx-worker-configuration
-    - node-product-heading
-  nginx_auth:
-    page: node/how-to-guides/security/nginx-auth.html
-    page_anchors:
-    - node-product-heading
-  nginx_deny:
-    page: node/how-to-guides/security/nginx-deny.html
-    page_anchors:
-    - node-product-heading
-  nginx_modules:
-    page: node/how-to-guides/deployment/shells/nginx-modules.html
-    page_anchors:
-    - custom-rack-servers
-    - introduction
-    - node-product-heading
-    - passenger
-  nginx_redirect:
-    page: node/how-to-guides/deployment/shells/nginx-redirect.html
-    page_anchors:
-    - http
-    - https
-    - node-product-heading
-    - redirect-between-domains-with-http-and-https
-    - redirect-from-http-to-https
-  nginx_ssl_ciphers:
-    page: node/how-to-guides/security/nginx-ssl-ciphers.html
-    page_anchors:
     - node-product-heading
   non_recommended_server_sizes:
     page: node/references/non-recommended-server-sizes.html
@@ -4941,35 +4882,6 @@ rails:
     - nginx-customconfig-variables
     - nginx-worker-configuration
     - rails-product-heading
-  nginx_auth:
-    page: rails/how-to-guides/security/nginx-auth.html
-    page_anchors:
-    - for-passenger-servers
-    - other-rack-servers
-    - rails-product-heading
-  nginx_deny:
-    page: rails/how-to-guides/security/nginx-deny.html
-    page_anchors:
-    - rails-product-heading
-  nginx_modules:
-    page: rails/how-to-guides/deployment/shells/nginx-modules.html
-    page_anchors:
-    - custom-rack-servers
-    - introduction
-    - passenger
-    - rails-product-heading
-  nginx_redirect:
-    page: rails/how-to-guides/deployment/shells/nginx-redirect.html
-    page_anchors:
-    - http
-    - https
-    - rails-product-heading
-    - redirect-between-domains-with-http-and-https
-    - redirect-from-http-to-https
-  nginx_ssl_ciphers:
-    page: rails/how-to-guides/security/nginx-ssl-ciphers.html
-    page_anchors:
-    - rails-product-heading
   non_recommended_server_sizes:
     page: rails/references/non-recommended-server-sizes.html
     page_anchors:
@@ -5029,6 +4941,7 @@ rails:
     - rails-product-heading
     - rolling-deployment
     - serial-deployment
+    - types-of-deployment-strategies
     - using-a-deployment-profile
     - using-deploy-with-options
     - using-the-toolbelt-command-line
@@ -5076,6 +4989,21 @@ rails:
     - postgis-extension-for-postgresql
     - prerequisites
     - rails-product-heading
+  preview_deployments:
+    page: rails/how-to-guides/deployment/preview-deployments.html
+    page_anchors:
+    - browsing-and-managing-previews
+    - deleting-previews
+    - deleting-previews-using-cloud-66-toolbelt
+    - disabling-previews
+    - enabling-and-disabling-preview-deployments
+    - monitoring-preview-deployments
+    - overview
+    - rails-product-heading
+    - redeploying-previews
+    - setting-up-previews-on-github
+    - triggering-preview-deployments-via-your-git-provider
+    - types-of-preview-deployments
   pricing:
     page: rails/resources/pricing.html
     page_anchors:
@@ -5217,6 +5145,26 @@ rails:
     page: rails/resources/index.html
     page_anchors:
     - rails-product-heading
+  rollout_strategies:
+    page: rails/how-to-guides/deployment/rollout-strategies.html
+    page_anchors:
+    - browser-plugins-for-http-headers
+    - browsing-rollout-variants-for-canary-releases
+    - changing-your-applications-rollout-strategy
+    - cx-command
+    - cx-examples
+    - environment-variables-in-rollouts
+    - how-rollout-strategies-work
+    - manage-rollouts-using-cloud-66-toolbelt-cx
+    - managing-a-blue--green-rollout
+    - managing-a-canary-rollout
+    - overview
+    - rails-product-heading
+    - setting-an-http-header-via-curl
+    - using-a-deployment-profile
+    - using-deploy-with-options
+    - using-http-headers-to-view-blue-or-green-versions
+    - using-the-toolbelt-command-line
   running_rake_tasks:
     page: rails/how-to-guides/deployment/running-rake-tasks.html
     page_anchors:

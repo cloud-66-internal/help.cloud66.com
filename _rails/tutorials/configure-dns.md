@@ -79,6 +79,5 @@ This method creates a 301 permanent redirect to a specified subdomain for all ro
 
 * Learn how to set up a [Failover Group](/rails/tutorials/failover-groups.html)
 * Learn how to [configure network access](/rails/tutorials/service-network-configuration.html) to your application
-* Learn how to [add a load balancer](/rails/tutorials/load-balancing.html) to your application 
-* Learn how to set up [custom redirects](/rails/how-to-guides/deployment/shells/nginx-redirect.html) through Nginx
+* Learn how to [add a load balancer](/rails/tutorials/load-balancing.html) to your application
 

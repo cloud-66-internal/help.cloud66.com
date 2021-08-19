@@ -1,6 +1,6 @@
 ## Overview 
 
-This guide is for applications that require manual set up of SSL certificates on Nginx. In general we recommend that applications use our integrated [SSL Add-In](https://help.cloud66.com/maestro/how-to-guides/add-ins/ssl.html) and only use this manual method if the add-in doesn't support their specific use-case.
+This guide is for applications that require manual set up of SSL certificates on Nginx. In general we recommend that applications use our integrated [SSL Add-In](/{{page.collection}}/how-to-guides/add-ins/ssl.html) and only use this manual method if the add-in doesn't support their specific use-case.
 
 ## Generate a certificate
 
@@ -41,7 +41,7 @@ If this doesn't work make sure that your certificates don't need passwords.
 
 ## Separate domains with different certificates
 
-You may need to serve different parts of your application on separate domains, each with its own SSL certificate. You can use [Nginx CustomConfig](/maestro/how-to-guides/nginx/nginx-modules.html) to set this up - you will basically have two server blocks listening on different domains, and serving different certificates (located on the server):
+You may need to serve different parts of your application on separate domains, each with its own SSL certificate. You can use [Nginx CustomConfig](/maestro/how-to-guides/nginx/customizing-nginx.html) to set this up - you will basically have two server blocks listening on different domains, and serving different certificates (located on the server):
 
 ```shell
 {% raw %}{% if allow_ssl == true %}
