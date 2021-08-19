@@ -1399,6 +1399,7 @@ maestro:
   registered_servers:
     page: maestro/how-to-guides/deployment/registered-servers.html
     page_anchors:
+    - adding-servers-behind-a-gateway
     - maestro-product-heading
     - overview
     - register-a-server
@@ -3166,6 +3167,7 @@ node:
   registered_servers:
     page: node/how-to-guides/deployment/registered-servers.html
     page_anchors:
+    - adding-servers-behind-a-gateway
     - node-product-heading
     - overview
     - register-a-server
@@ -4308,8 +4310,8 @@ rails:
     page_anchors:
     - about-deployment-gateways
     - accessing-your-servers-behind-the-gateway-server
-    - how-to-deploy-your-application-behind-the-gateway-server
-    - important
+    - adding-servers-behind-an-on-premises-gateway
+    - how-to-deploy-your-application-behind-a-gateway-server
     - rails-product-heading
   deployment_health_checks:
     page: rails/how-to-guides/deployment/deployment-health-checks.html
@@ -5118,6 +5120,7 @@ rails:
   registered_servers:
     page: rails/how-to-guides/deployment/registered-servers.html
     page_anchors:
+    - adding-servers-behind-a-gateway
     - overview
     - rails-product-heading
     - register-a-server
