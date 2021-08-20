@@ -10,4 +10,4 @@ legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-{% include how-to-guides/deployment/rollout-strategies.md %}
+{% include how-to-guides/deployment/rollout-strategies.md product = 'rails' %}

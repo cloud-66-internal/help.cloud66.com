@@ -23,15 +23,15 @@ There are three ways to set a rollout strategy for an app:
 2. Creating a deployment profile that defines a strategy
 3. Deploying via Cloud 66 Toolbelt using the `rollout-strategy` parameter
 
+{% if include.product == 'rails' %}
+<div class="notice"><p>If you are using Unicorn, you will need to acknowledge that you have made the required changes to your <a href="/rails/how-to-guides/rack-servers/unicorn-rack-server.html">Unicorn configuration</a> in your code, otherwise these strategies will not work as desired.</p></div>
+{% endif %}
+
 ### Using "Deploy with options"
 
 You can trigger a deployment that uses either of the two rollout strategies by clicking the *Deploy* button on your **Application Overview** page and choosing *Deploy with Options*. This will allow you to choose between the two strategies.
 
 **This will only apply to the current deployment** - it does not change the default rollout strategy for your app.
-
-{% if include.product == 'rails' %}
-If you are using Unicorn, you will need to acknowledge that you have made the required changes to your [Unicorn configuration](/rails/how-to-guides/rack-servers/unicorn-rack-server.html) in your code, otherwise these strategies will not work as desired.
-{% endif %}
 
 ### Using a deployment profile
 
