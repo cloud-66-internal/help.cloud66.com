@@ -5001,6 +5001,7 @@ rails:
     - enabling-and-disabling-preview-deployments
     - monitoring-preview-deployments
     - overview
+    - previews--database-migrations
     - rails-product-heading
     - redeploying-previews
     - setting-up-previews-on-github
@@ -5161,7 +5162,9 @@ rails:
     - manage-rollouts-using-cloud-66-toolbelt-cx
     - managing-a-blue--green-rollout
     - managing-a-canary-rollout
+    - migrating-your-customized-nginx-file
     - overview
+    - preparing-existing-applications-for-rollout-strategies
     - rails-product-heading
     - setting-an-http-header-via-curl
     - using-a-deployment-profile
