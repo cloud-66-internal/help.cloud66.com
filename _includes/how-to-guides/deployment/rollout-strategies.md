@@ -15,6 +15,30 @@ The second aspect, the subject of this guide, is concerned with how the new vers
 
 <div class="notice notice-warning"><p>Rollout strategies only apply to direct updates to the code of your web application - they are NOT intended for infrastructure changes (like background process, Ruby version or Web server changes, for example).</p></div>
 
+## Preparing existing applications for rollout strategies
+
+Applications created on Cloud 66 before mid-August 2021 may need to be prepared before they are able to use these rollout strategies - particularly if those applications have [custom Nginx configuration files](/{{page.collection}}/how-to-guides/deployment/customizing-nginx.html). 
+
+Before using rollout strategies with your existing application, you should:
+
+1. Check that there are no [Application Updates](/{{page.collection}}/how-to-guides/common-tools/application-updates.html) that need to be applied
+2. If you have made modifications to the Nginx config for your application, follow the steps below.
+
+### Migrating your customized Nginx file.
+
+Supporting Rollout Strategies requires an upgrade of Nginx as well as a new Nginx configuration. If you have made changes to your Nginx configuration, you can follow these steps to ensure your changes are not lost when the Application Updates run.
+
+#### Important 
+<div class="notice notice-warning"><p>Application Updates will override the modifications you've made to your Nginx configurations, unless these steps are followed. You can see this as a warning on the Application Updates page shown in yellow. If no warning is shown, then no Nginx configuration update is required and your changes will not be lost.</p></div>
+
+1. Copy your customized Nginx file to a local file for backup and reference
+2. Reset the your configs to default using the button on the page, but don’t apply them
+3. Add your changes manually to the new file (see below)
+4. Commit the new file
+
+A string named `$unique_suffix` should remain in the final Nginx config file otherwise the file will be overwritten during the upgrade. Ensure sure that string doesn’t get removed when you are applying your changes.
+
+
 ## Changing your application’s rollout strategy
 
 There are three ways to set a rollout strategy for an app:

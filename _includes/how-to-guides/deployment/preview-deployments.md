@@ -18,6 +18,10 @@ We support three kinds of (mutually exclusive) Preview Deployments:
 
 Both **branches** and **tags** can be matched using the [glob format](https://en.wikipedia.org/wiki/Glob_(programming)) - so, for example, if you specify `feature*` as your branch name, we will create a Preview for any branch with the word "feature" in it.
 
+## Previews & database migrations
+
+Preview Deployments run database migrations if needed. As such, **please be sure that any database changes are backward-compatible**, as both the "live" application and the preview will be use the newly migrated database.
+
 ## Enabling and disabling Preview Deployments
 
 By default Preview Deployments are disabled. You can enable Preview Deployments via you Cloud 66 Dashboard:
