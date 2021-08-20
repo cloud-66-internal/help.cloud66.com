@@ -1399,6 +1399,7 @@ maestro:
   registered_servers:
     page: maestro/how-to-guides/deployment/registered-servers.html
     page_anchors:
+    - adding-servers-behind-a-gateway
     - maestro-product-heading
     - overview
     - register-a-server
@@ -3166,6 +3167,7 @@ node:
   registered_servers:
     page: node/how-to-guides/deployment/registered-servers.html
     page_anchors:
+    - adding-servers-behind-a-gateway
     - node-product-heading
     - overview
     - register-a-server
@@ -4308,8 +4310,8 @@ rails:
     page_anchors:
     - about-deployment-gateways
     - accessing-your-servers-behind-the-gateway-server
-    - how-to-deploy-your-application-behind-the-gateway-server
-    - important
+    - adding-servers-behind-an-on-premises-gateway
+    - how-to-deploy-your-application-behind-a-gateway-server
     - rails-product-heading
   deployment_health_checks:
     page: rails/how-to-guides/deployment/deployment-health-checks.html
@@ -4999,6 +5001,7 @@ rails:
     - enabling-and-disabling-preview-deployments
     - monitoring-preview-deployments
     - overview
+    - previews--database-migrations
     - rails-product-heading
     - redeploying-previews
     - setting-up-previews-on-github
@@ -5118,6 +5121,7 @@ rails:
   registered_servers:
     page: rails/how-to-guides/deployment/registered-servers.html
     page_anchors:
+    - adding-servers-behind-a-gateway
     - overview
     - rails-product-heading
     - register-a-server
@@ -5158,7 +5162,9 @@ rails:
     - manage-rollouts-using-cloud-66-toolbelt-cx
     - managing-a-blue--green-rollout
     - managing-a-canary-rollout
+    - migrating-your-customized-nginx-file
     - overview
+    - preparing-existing-applications-for-rollout-strategies
     - rails-product-heading
     - setting-an-http-header-via-curl
     - using-a-deployment-profile
