@@ -90,6 +90,8 @@ List, download and upload of configuration files such as a _service.yml_ or _man
 
 ```bash
 $ cx stacks configure list-versions [-f <filename>] [-s <stack>]
+$ cx stacks configure download [-f <filename>] [-s <stack>]
+$ cx stacks configure upload [-f <filename>] [-s <stack>]
 ```
 
 ### Parameters
