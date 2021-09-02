@@ -12,7 +12,13 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-Cloud 66 provides [DNS hostnames](/maestro/references/server-ip-addresses.html) for each server you deploy with us. This allows us to assign a new IP address to your application on your behalf if need be, while still maintaining the same hostname.
+Cloud 66 provides [DNS hostnames](/maestro/references/server-ip-addresses.html) for each server you deploy with us. These use animal names to make them more easily recognizable. For example:
+
+```shell
+puma.railsdemo.development.c66.me
+walrus.myapp.production.c66.me
+```
+This allows us to assign a new IP address to your application on your behalf if need be, while still maintaining the same hostname.
 
 You will need to manage the DNS records of your domain name to ensure that it's pointing to Cloud 66. For maximum reliability, you should point it at a [failover group address](/maestro/tutorials/failover-groups.html), which allows you to switch traffic between applications quickly and easily.
 
@@ -22,10 +28,11 @@ However, this may not be possible with your DNS provider. While CNAME records do
 
 To use wildcard subdomains with Cloud 66 hostnames, simply create a CNAME record pointing `*. .com` to your Cloud 66 hostname. 
 
+<div class="notice notice-warning"><p>You cannot call your app via the Cloud 66 host address over HTTPS. If you have a <a href="/{{page.collection}}/references/network-configuration.html#redirect-http-to-https">redirect from HTTP to HTTPS</a> turned on, you will need to turn it off first.</p></div>
+
 ## Configuring your DNS
 
 There are three approaches to configuring your DNS - in the following recommended order:
-
 
 ### 1. Use a modern DNS provider
 
