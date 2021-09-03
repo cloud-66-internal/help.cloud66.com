@@ -1789,7 +1789,6 @@ maestro:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -1806,6 +1805,7 @@ maestro:
     - examples-5
     - examples-6
     - examples-7
+    - examples-8
     - examples-of-service-usage
     - gateway-management
     - getting-service-information
@@ -1877,6 +1877,7 @@ maestro:
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
     - stopping-services
+    - tail
     - temporary-lease
     - tunnel-command
     - upload
@@ -3524,7 +3525,6 @@ node:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -3541,6 +3541,7 @@ node:
     - examples-5
     - examples-6
     - examples-7
+    - examples-8
     - examples-of-service-usage
     - gateway-management
     - getting-service-information
@@ -3612,6 +3613,7 @@ node:
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
     - stopping-services
+    - tail
     - temporary-lease
     - tunnel-command
     - upload
@@ -5542,7 +5544,6 @@ rails:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -5559,6 +5560,7 @@ rails:
     - examples-5
     - examples-6
     - examples-7
+    - examples-8
     - examples-of-service-usage
     - gateway-management
     - getting-service-information
@@ -5630,6 +5632,7 @@ rails:
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
     - stopping-services
+    - tail
     - temporary-lease
     - tunnel-command
     - upload
@@ -6453,7 +6456,6 @@ skycap:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -6470,6 +6472,7 @@ skycap:
     - examples-5
     - examples-6
     - examples-7
+    - examples-8
     - examples-of-service-usage
     - gateway-management
     - getting-service-information
@@ -6541,6 +6544,7 @@ skycap:
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
     - stopping-services
+    - tail
     - temporary-lease
     - tunnel-command
     - upload
