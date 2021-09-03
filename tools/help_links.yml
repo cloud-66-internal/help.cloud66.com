@@ -1482,10 +1482,10 @@ maestro:
   server_ip_addresses:
     page: maestro/references/server-ip-addresses.html
     page_anchors:
+    - browsing-your-app-via-cloud-66-dns
     - cloud-66-agent
     - cloud-66-hostnames
     - finding-your-cloud-66-hostname
-    - important
     - maestro-product-heading
     - new-ip-addresses
   server_monitoring:
@@ -5245,6 +5245,7 @@ rails:
   server_ip_addresses:
     page: rails/references/server-ip-addresses.html
     page_anchors:
+    - browsing-your-app-via-cloud-66-dns
     - cloud-66-agent
     - cloud-66-hostnames
     - finding-your-cloud-66-hostname
