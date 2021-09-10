@@ -84,10 +84,13 @@ maestro:
   application_health_checks:
     page: maestro/how-to-guides/security/application-health-checks.html
     page_anchors:
+    - configuring-a-post-deployment-check
     - how-the-tests-work
     - maestro-product-heading
     - overview
-    - running-a-check
+    - post-deployment-health-checks
+    - running-an-on-demand-health-check
+    - viewing-results-of-post-deployment-checks
   application_transfer:
     page: maestro/account/application-transfer.html
     page_anchors:
@@ -456,15 +459,15 @@ maestro:
     page_anchors:
     - backup-format
     - backup-schedule
-    - backup-storage-locations
     - backup-types
     - binary
     - compression
     - exclude-tables
     - install-on-replica
     - maestro-product-heading
+    - managed-backup-storage-locations
     - managed-backups
-    - pricing
+    - pricing-of-managed-backups
     - restoring-database-backups
     - text
     - unmanaged-backups
@@ -491,6 +494,7 @@ maestro:
     - connecting-your-app-to-your-db-in-maestro-v1
     - connection-strings-in-maestro
     - customizing-your-database
+    - database-authentication
     - dedicated-database
     - deploying-databases
     - deployment-types
@@ -616,6 +620,27 @@ maestro:
     - overview
     - passing-parameters-to-a-job
     - using-parameters
+  dockerfile_for_node:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-node.html
+    page_anchors:
+    - default-nodejs-dockerfile
+    - maestro-product-heading
+    - overview
+    - writing-your-own-dockerfile
+  dockerfile_for_php:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-php.html
+    page_anchors:
+    - default-php-dockerfile
+    - maestro-product-heading
+    - overview
+    - writing-your-own-dockerfile
+  dockerfile_for_ruby:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-ruby.html
+    page_anchors:
+    - default-rails-dockerfile
+    - maestro-product-heading
+    - overview
+    - writing-your-own-dockerfile
   elasticsearch:
     page: maestro/how-to-guides/add-ins/elasticsearch.html
     page_anchors:
@@ -841,6 +866,10 @@ maestro:
     page: maestro/how-to-guides/deployment/index.html
     page_anchors:
     - maestro-product-heading
+  how_to_guides_dockerfiles_index:
+    page: maestro/how-to-guides/dockerfiles/index.html
+    page_anchors:
+    - maestro-product-heading
   how_to_guides_index:
     page: maestro/how-to-guides/index.html
     page_anchors:
@@ -1010,6 +1039,7 @@ maestro:
     - overview
     - postgresql
     - redis
+    - specifying-external-databases-via-your-manifest
   manifest_loadbalancer_settings:
     page: maestro/references/manifest-loadbalancer-settings.html
     page_anchors:
@@ -1048,6 +1078,7 @@ maestro:
     - docker
     - example-yaml-for-gateway
     - example-yaml-for-nginx
+    - example-yaml-for-post-deployment-health-check
     - examples-yaml-for-docker
     - gateway
     - key-to-table-headings
@@ -1055,6 +1086,7 @@ maestro:
     - more-on-manifest-files
     - nginx
     - overview
+    - post-deployment-health-checks
   memcached:
     page: maestro/how-to-guides/add-ins/memcached.html
     page_anchors:
@@ -1100,6 +1132,12 @@ maestro:
     - environment-variables
     - maestro-product-heading
     - using-a-mongodb-replica-set-in-your-code
+  mongodb:
+    page: maestro/how-to-guides/add-ins/mongodb.html
+    page_anchors:
+    - add-mongodb-to-your-application
+    - maestro-product-heading
+    - mongodb-authentication-and-roles
   multi_cert_haproxy:
     page: maestro/how-to-guides/security/multi-cert_haproxy.html
     page_anchors:
@@ -1124,16 +1162,19 @@ maestro:
   network_configuration:
     page: maestro/references/network-configuration.html
     page_anchors:
-    - add-a-firewall-rule
-    - allowed-web-sources
-    - configuring-traffic-rules
-    - deny-access-from-rules
-    - dont-block-access-from-rules
+    - adding-a-firewall-rule
+    - application-surge-protection
+    - cors
     - firewall
+    - load-balancer-traffic
     - maestro-product-heading
+    - owasp-rules
     - redirect-http-to-https
+    - temporary-ssh-access
+    - traffic-filters
+    - traffic-settings
     - using-network-redirects
-    - what-is-activeprotect
+    - web-application-firewalls
     - www-or-non-www-in-your-url
   nginx:
     page: maestro/references/nginx.html
@@ -1145,38 +1186,6 @@ maestro:
     - maestro-product-heading
     - nginx-customconfig-variables
     - nginx-worker-configuration
-  nginx_auth:
-    page: maestro/how-to-guides/nginx/nginx-auth.html
-    page_anchors:
-    - enabling-basic-authentication
-    - maestro-product-heading
-    - overview
-  nginx_deny:
-    page: maestro/how-to-guides/nginx/nginx-deny.html
-    page_anchors:
-    - maestro-product-heading
-    - overview
-    - set-up-ip-access-control-manually
-  nginx_modules:
-    page: maestro/how-to-guides/nginx/nginx-modules.html
-    page_anchors:
-    - custom-rack-servers
-    - introduction
-    - maestro-product-heading
-    - passenger
-  nginx_redirect:
-    page: maestro/how-to-guides/nginx/nginx-redirect.html
-    page_anchors:
-    - for-http
-    - for-https
-    - maestro-product-heading
-    - overview
-    - redirect-between-domains-with-http-and-https
-    - redirect-from-http-to-https
-  nginx_ssl_ciphers:
-    page: maestro/how-to-guides/security/nginx-ssl-ciphers.html
-    page_anchors:
-    - maestro-product-heading
   non_recommended_server_sizes:
     page: maestro/references/non-recommended-server-sizes.html
     page_anchors:
@@ -1390,6 +1399,7 @@ maestro:
   registered_servers:
     page: maestro/how-to-guides/deployment/registered-servers.html
     page_anchors:
+    - adding-servers-behind-a-gateway
     - maestro-product-heading
     - overview
     - register-a-server
@@ -1472,10 +1482,10 @@ maestro:
   server_ip_addresses:
     page: maestro/references/server-ip-addresses.html
     page_anchors:
+    - browsing-your-app-via-cloud-66-dns
     - cloud-66-agent
     - cloud-66-hostnames
     - finding-your-cloud-66-hostname
-    - important
     - maestro-product-heading
     - new-ip-addresses
   server_monitoring:
@@ -1779,7 +1789,6 @@ maestro:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -1795,6 +1804,8 @@ maestro:
     - examples-4
     - examples-5
     - examples-6
+    - examples-7
+    - examples-8
     - examples-of-service-usage
     - gateway-management
     - getting-service-information
@@ -1866,6 +1877,7 @@ maestro:
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
     - stopping-services
+    - tail
     - temporary-lease
     - tunnel-command
     - upload
@@ -1899,7 +1911,6 @@ maestro:
     - usage-32
     - usage-33
     - usage-34
-    - usage-35
     - usage-4
     - usage-5
     - usage-6
@@ -2048,6 +2059,16 @@ maestro:
     page: maestro/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
     - maestro-product-heading
+  web_application_firewalls:
+    page: maestro/how-to-guides/security/web-application-firewalls.html
+    page_anchors:
+    - adding-rules-manually-to-modsecurity
+    - applying-relevant-configurations
+    - configuring-your-web-application-firewall
+    - enabling-and-disabling-your-waf
+    - maestro-product-heading
+    - overview
+    - using-owasp-rules-with-your-waf
   websocket_support:
     page: maestro/how-to-guides/build-and-config/websocket-support.html
     page_anchors:
@@ -2059,6 +2080,16 @@ maestro:
     - using-websocket-via-haproxy
     - using-websocket-via-native-cloud-load-balancers
     - websocket-through-a-load-balancer
+  writing_a_dockerfile:
+    page: maestro/how-to-guides/dockerfiles/writing-a-dockerfile.html
+    page_anchors:
+    - caching--build-speed
+    - how-to-guides-by-framework
+    - important-dockerfile-principles
+    - maestro-product-heading
+    - more-help
+    - putting-a-dockerfile-in-a-sub-directory
+    - writing-a-dockerfile-for-your-app
 node:
   access_your_code:
     page: node/how-to-guides/common-tools/access-your-code.html
@@ -2114,10 +2145,13 @@ node:
   application_health_checks:
     page: node/how-to-guides/security/application-health-checks.html
     page_anchors:
+    - configuring-a-post-deployment-check
     - how-the-tests-work
     - node-product-heading
     - overview
-    - running-a-check
+    - post-deployment-health-checks
+    - running-an-on-demand-health-check
+    - viewing-results-of-post-deployment-checks
   application_settings_node:
     page: node/how-to-guides/deployment/application-settings-node.html
     page_anchors:
@@ -2428,15 +2462,15 @@ node:
     page_anchors:
     - backup-format
     - backup-schedule
-    - backup-storage-locations
     - backup-types
     - binary
     - compression
     - exclude-tables
     - install-on-replica
+    - managed-backup-storage-locations
     - managed-backups
     - node-product-heading
-    - pricing
+    - pricing-of-managed-backups
     - restoring-database-backups
     - text
     - unmanaged-backups
@@ -2460,6 +2494,7 @@ node:
     page_anchors:
     - about-deploying-databases
     - customize-your-database-configuration
+    - database-authentication
     - database-customization-variables
     - database-deployment-types
     - dedicated-database
@@ -2854,6 +2889,7 @@ node:
     - overview
     - postgresql
     - redis
+    - specifying-external-databases-via-your-manifest
   manifest_loadbalancer_settings:
     page: node/references/manifest-loadbalancer-settings.html
     page_anchors:
@@ -2891,12 +2927,14 @@ node:
     - cors-configuration
     - example-yaml-for-gateway
     - example-yaml-for-nginx
+    - example-yaml-for-post-deployment-health-check
     - gateway
     - key-to-table-headings
     - more-on-manifest-files
     - nginx
     - node-product-heading
     - overview
+    - post-deployment-health-checks
   memcached:
     page: node/how-to-guides/add-ins/memcached.html
     page_anchors:
@@ -2904,8 +2942,8 @@ node:
     - check-memcached
     - customize-memcached
     - node-product-heading
-  migrate_the_stack:
-    page: node/how-to-guides/deployment/shells/migrate-the-stack.html
+  migrating_applications:
+    page: node/how-to-guides/deployment/migrating-applications.html
     page_anchors:
     - 1-set-a-failover-group
     - 10-switch-to-the-new-application
@@ -2937,6 +2975,12 @@ node:
     - node-product-heading
     - note
     - using-a-mongodb-replica-set-in-your-code
+  mongodb:
+    page: node/how-to-guides/add-ins/mongodb.html
+    page_anchors:
+    - add-mongodb-to-your-application
+    - mongodb-authentication-and-roles
+    - node-product-heading
   multi_cert_haproxy:
     page: node/how-to-guides/security/multi-cert_haproxy.html
     page_anchors:
@@ -2958,16 +3002,19 @@ node:
   network_configuration:
     page: node/references/network-configuration.html
     page_anchors:
-    - add-a-firewall-rule
-    - allowed-web-sources
-    - configuring-traffic-rules
-    - deny-access-from-rules
-    - dont-block-access-from-rules
+    - adding-a-firewall-rule
+    - application-surge-protection
+    - cors
     - firewall
+    - load-balancer-traffic
     - node-product-heading
+    - owasp-rules
     - redirect-http-to-https
+    - temporary-ssh-access
+    - traffic-filters
+    - traffic-settings
     - using-network-redirects
-    - what-is-activeprotect
+    - web-application-firewalls
     - www-or-non-www-in-your-url
   nginx:
     page: node/references/nginx.html
@@ -2977,33 +3024,6 @@ node:
     - default-nginx-configuration
     - nginx-customconfig-variables
     - nginx-worker-configuration
-    - node-product-heading
-  nginx_auth:
-    page: node/how-to-guides/security/nginx-auth.html
-    page_anchors:
-    - node-product-heading
-  nginx_deny:
-    page: node/how-to-guides/security/nginx-deny.html
-    page_anchors:
-    - node-product-heading
-  nginx_modules:
-    page: node/how-to-guides/deployment/shells/nginx-modules.html
-    page_anchors:
-    - custom-rack-servers
-    - introduction
-    - node-product-heading
-    - passenger
-  nginx_redirect:
-    page: node/how-to-guides/deployment/shells/nginx-redirect.html
-    page_anchors:
-    - http
-    - https
-    - node-product-heading
-    - redirect-between-domains-with-http-and-https
-    - redirect-from-http-to-https
-  nginx_ssl_ciphers:
-    page: node/how-to-guides/security/nginx-ssl-ciphers.html
-    page_anchors:
     - node-product-heading
   non_recommended_server_sizes:
     page: node/references/non-recommended-server-sizes.html
@@ -3148,6 +3168,7 @@ node:
   registered_servers:
     page: node/how-to-guides/deployment/registered-servers.html
     page_anchors:
+    - adding-servers-behind-a-gateway
     - node-product-heading
     - overview
     - register-a-server
@@ -3504,7 +3525,6 @@ node:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -3520,6 +3540,8 @@ node:
     - examples-4
     - examples-5
     - examples-6
+    - examples-7
+    - examples-8
     - examples-of-service-usage
     - gateway-management
     - getting-service-information
@@ -3591,6 +3613,7 @@ node:
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
     - stopping-services
+    - tail
     - temporary-lease
     - tunnel-command
     - upload
@@ -3624,7 +3647,6 @@ node:
     - usage-32
     - usage-33
     - usage-34
-    - usage-35
     - usage-4
     - usage-5
     - usage-6
@@ -3763,6 +3785,16 @@ node:
     page: node/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
     - node-product-heading
+  web_application_firewalls:
+    page: node/how-to-guides/security/web-application-firewalls.html
+    page_anchors:
+    - adding-rules-manually-to-modsecurity
+    - applying-relevant-configurations
+    - configuring-your-web-application-firewall
+    - enabling-and-disabling-your-waf
+    - node-product-heading
+    - overview
+    - using-owasp-rules-with-your-waf
   websocket_support:
     page: node/how-to-guides/deployment/websocket-support.html
     page_anchors:
@@ -3835,10 +3867,13 @@ rails:
   application_health_checks:
     page: rails/how-to-guides/security/application-health-checks.html
     page_anchors:
+    - configuring-a-post-deployment-check
     - how-the-tests-work
     - overview
+    - post-deployment-health-checks
     - rails-product-heading
-    - running-a-check
+    - running-an-on-demand-health-check
+    - viewing-results-of-post-deployment-checks
   application_transfer:
     page: rails/account/application-transfer.html
     page_anchors:
@@ -4173,14 +4208,14 @@ rails:
     page_anchors:
     - backup-format
     - backup-schedule
-    - backup-storage-locations
     - backup-types
     - binary
     - compression
     - exclude-tables
     - install-on-replica
+    - managed-backup-storage-locations
     - managed-backups
-    - pricing
+    - pricing-of-managed-backups
     - rails-product-heading
     - restoring-database-backups
     - text
@@ -4207,6 +4242,7 @@ rails:
     - about-deploying-databases
     - control-your-rails-database-migrations
     - customize-your-database-configuration
+    - database-authentication
     - database-customization-variables
     - database-deployment-types
     - dedicated-database
@@ -4276,8 +4312,8 @@ rails:
     page_anchors:
     - about-deployment-gateways
     - accessing-your-servers-behind-the-gateway-server
-    - how-to-deploy-your-application-behind-the-gateway-server
-    - important
+    - adding-servers-behind-an-on-premises-gateway
+    - how-to-deploy-your-application-behind-a-gateway-server
     - rails-product-heading
   deployment_health_checks:
     page: rails/how-to-guides/deployment/deployment-health-checks.html
@@ -4682,6 +4718,7 @@ rails:
     - postgresql
     - rails-product-heading
     - redis
+    - specifying-external-databases-via-your-manifest
   manifest_loadbalancer_settings:
     page: rails/references/manifest-loadbalancer-settings.html
     page_anchors:
@@ -4720,6 +4757,7 @@ rails:
     - example-yaml-for-bundle-install-options-in-rails
     - example-yaml-for-gateway
     - example-yaml-for-nginx
+    - example-yaml-for-post-deployment-health-check
     - example-yaml-for-rack
     - example-yaml-for-rails
     - example-yaml-for-rails-health-checks
@@ -4730,6 +4768,7 @@ rails:
     - nginx
     - node-version-for-rails-applications
     - overview
+    - post-deployment-health-checks
     - rack
     - rails
     - rails-product-heading
@@ -4759,8 +4798,8 @@ rails:
     - web-server-and-procfile
     - what-youll-need
     - whats-next
-  migrate_the_stack:
-    page: rails/how-to-guides/deployment/shells/migrate-the-stack.html
+  migrating_applications:
+    page: rails/how-to-guides/deployment/migrating-applications.html
     page_anchors:
     - 1-set-a-failover-group
     - 10-switch-to-the-new-application
@@ -4792,6 +4831,12 @@ rails:
     - expected-downtime
     - rails-product-heading
     - using-a-mongodb-replica-set-in-your-code
+  mongodb:
+    page: rails/how-to-guides/add-ins/mongodb.html
+    page_anchors:
+    - add-mongodb-to-your-application
+    - mongodb-authentication-and-roles
+    - rails-product-heading
   multi_cert_haproxy:
     page: rails/how-to-guides/security/multi-cert_haproxy.html
     page_anchors:
@@ -4815,18 +4860,21 @@ rails:
   network_configuration:
     page: rails/references/network-configuration.html
     page_anchors:
-    - add-a-firewall-rule
-    - allowed-web-sources
-    - configuring-traffic-rules
-    - deny-access-from-rules
-    - dont-block-access-from-rules
+    - adding-a-firewall-rule
+    - application-surge-protection
+    - cors
     - firewall
+    - load-balancer-traffic
     - maintenance-mode
+    - owasp-rules
     - rails-product-heading
     - redirect-http-to-https
+    - temporary-ssh-access
+    - traffic-filters
+    - traffic-settings
     - use-a-custom-maintenance-page
     - using-network-redirects
-    - what-is-activeprotect
+    - web-application-firewalls
     - www-or-non-www-in-your-url
   nginx:
     page: rails/references/nginx.html
@@ -4837,35 +4885,6 @@ rails:
     - how-passenger-pool-max-is-calculated
     - nginx-customconfig-variables
     - nginx-worker-configuration
-    - rails-product-heading
-  nginx_auth:
-    page: rails/how-to-guides/security/nginx-auth.html
-    page_anchors:
-    - for-passenger-servers
-    - other-rack-servers
-    - rails-product-heading
-  nginx_deny:
-    page: rails/how-to-guides/security/nginx-deny.html
-    page_anchors:
-    - rails-product-heading
-  nginx_modules:
-    page: rails/how-to-guides/deployment/shells/nginx-modules.html
-    page_anchors:
-    - custom-rack-servers
-    - introduction
-    - passenger
-    - rails-product-heading
-  nginx_redirect:
-    page: rails/how-to-guides/deployment/shells/nginx-redirect.html
-    page_anchors:
-    - http
-    - https
-    - rails-product-heading
-    - redirect-between-domains-with-http-and-https
-    - redirect-from-http-to-https
-  nginx_ssl_ciphers:
-    page: rails/how-to-guides/security/nginx-ssl-ciphers.html
-    page_anchors:
     - rails-product-heading
   non_recommended_server_sizes:
     page: rails/references/non-recommended-server-sizes.html
@@ -4926,6 +4945,7 @@ rails:
     - rails-product-heading
     - rolling-deployment
     - serial-deployment
+    - types-of-deployment-strategies
     - using-a-deployment-profile
     - using-deploy-with-options
     - using-the-toolbelt-command-line
@@ -4973,6 +4993,22 @@ rails:
     - postgis-extension-for-postgresql
     - prerequisites
     - rails-product-heading
+  preview_deployments:
+    page: rails/how-to-guides/deployment/preview-deployments.html
+    page_anchors:
+    - browsing-and-managing-previews
+    - deleting-previews
+    - deleting-previews-using-cloud-66-toolbelt
+    - disabling-previews
+    - enabling-and-disabling-preview-deployments
+    - monitoring-preview-deployments
+    - overview
+    - previews--database-migrations
+    - rails-product-heading
+    - redeploying-previews
+    - setting-up-previews-on-github
+    - triggering-preview-deployments-via-your-git-provider
+    - types-of-preview-deployments
   pricing:
     page: rails/resources/pricing.html
     page_anchors:
@@ -5087,6 +5123,7 @@ rails:
   registered_servers:
     page: rails/how-to-guides/deployment/registered-servers.html
     page_anchors:
+    - adding-servers-behind-a-gateway
     - overview
     - rails-product-heading
     - register-a-server
@@ -5114,6 +5151,28 @@ rails:
     page: rails/resources/index.html
     page_anchors:
     - rails-product-heading
+  rollout_strategies:
+    page: rails/how-to-guides/deployment/rollout-strategies.html
+    page_anchors:
+    - browser-plugins-for-http-headers
+    - browsing-rollout-variants-for-canary-releases
+    - changing-your-applications-rollout-strategy
+    - cx-command
+    - cx-examples
+    - environment-variables-in-rollouts
+    - how-rollout-strategies-work
+    - manage-rollouts-using-cloud-66-toolbelt-cx
+    - managing-a-blue--green-rollout
+    - managing-a-canary-rollout
+    - migrating-your-customized-nginx-file
+    - overview
+    - preparing-existing-applications-for-rollout-strategies
+    - rails-product-heading
+    - setting-an-http-header-via-curl
+    - using-a-deployment-profile
+    - using-deploy-with-options
+    - using-http-headers-to-view-blue-or-green-versions
+    - using-the-toolbelt-command-line
   running_rake_tasks:
     page: rails/how-to-guides/deployment/running-rake-tasks.html
     page_anchors:
@@ -5188,6 +5247,7 @@ rails:
   server_ip_addresses:
     page: rails/references/server-ip-addresses.html
     page_anchors:
+    - browsing-your-app-via-cloud-66-dns
     - cloud-66-agent
     - cloud-66-hostnames
     - finding-your-cloud-66-hostname
@@ -5484,7 +5544,6 @@ rails:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -5500,6 +5559,8 @@ rails:
     - examples-4
     - examples-5
     - examples-6
+    - examples-7
+    - examples-8
     - examples-of-service-usage
     - gateway-management
     - getting-service-information
@@ -5571,6 +5632,7 @@ rails:
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
     - stopping-services
+    - tail
     - temporary-lease
     - tunnel-command
     - upload
@@ -5604,7 +5666,6 @@ rails:
     - usage-32
     - usage-33
     - usage-34
-    - usage-35
     - usage-4
     - usage-5
     - usage-6
@@ -5616,6 +5677,7 @@ rails:
     page_anchors:
     - check-your-git-repo-settings
     - have-you-recently-restarted-your-server
+    - issues-with-bundler-223
     - my-problem-isnt-covered-by-any-of-the-above
     - overview
     - problems-reaching-your-servers
@@ -5764,6 +5826,16 @@ rails:
     page: rails/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
     - rails-product-heading
+  web_application_firewalls:
+    page: rails/how-to-guides/security/web-application-firewalls.html
+    page_anchors:
+    - adding-rules-manually-to-modsecurity
+    - applying-relevant-configurations
+    - configuring-your-web-application-firewall
+    - enabling-and-disabling-your-waf
+    - overview
+    - rails-product-heading
+    - using-owasp-rules-with-your-waf
   websocket_support:
     page: rails/how-to-guides/deployment/websocket-support.html
     page_anchors:
@@ -6384,7 +6456,6 @@ skycap:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -6400,6 +6471,8 @@ skycap:
     - examples-4
     - examples-5
     - examples-6
+    - examples-7
+    - examples-8
     - examples-of-service-usage
     - gateway-management
     - getting-service-information
@@ -6471,6 +6544,7 @@ skycap:
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
     - stopping-services
+    - tail
     - temporary-lease
     - tunnel-command
     - upload
@@ -6504,7 +6578,6 @@ skycap:
     - usage-32
     - usage-33
     - usage-34
-    - usage-35
     - usage-4
     - usage-5
     - usage-6

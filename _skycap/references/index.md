@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Skycap References"
 lead: "In Depth Documentation on Cloud 66 for Skycap"

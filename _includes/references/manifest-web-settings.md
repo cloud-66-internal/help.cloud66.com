@@ -31,6 +31,12 @@ If you're looking for the Manifest settings for [data, caching & storage compone
     <td>All</td>
   </tr>
   <tr>
+    <td><code>firewall / create_web_rules</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Cloud 66 automatically creates firewall rules to expose your web application to the outside world. You can configure this via your <a href="/{{page.collection}}/references/network-configuration.html#firewall">Traffic settings</a>, or disable it completely by setting this value to <code>false</code>. Default is <code>true</code>.</td>
+    <td>All</td>
+  </tr>
+  <tr>
     <td><code>iam_instance_profile_name</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">IAM instance profile</a> that should be used when provisioning this server. <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">Read our guide</a>.</td>
@@ -239,6 +245,7 @@ rails:
         credentials: true
 ```
 
+
 {% if include.product == 'rails' %}
 
 ## Node version (for Rails applications)
@@ -261,6 +268,76 @@ If you need a newer version of Node, you can install one using the same method a
 
 #### Applying changes
 <div class="notice notice-warning"><p>To apply changes to the Node version you need to update your manifest file, then <a href="/rails/how-to-guides/deployment/applying-upgrades.html#types">deploy-with-options</a> and select the <em>Apply Ruby/Node upgrades</em> option.</p></div>
+
+{% endif %}
+
+## Post-deployment health checks
+
+You can configure your application to automatically run [health checks](/{{page.collection}}/how-to-guides/security/application-health-checks.html) against an HTTP endpoint each time it is deployed. Results of these checks are available on your Cloud 66 dashboard under *ActiveProtect*. 
+
+<div class="notice"><p>Note that all of the Health Check settings must be nested under the <code>configuration</code> &rarr; <code>activeprotect</code> &rarr; <code>health_check</code> sub-node.</p></div>
+
+The following settings are available via the Manifest file:
+
+<table class='table table-bordered table-striped'>
+<thead>
+  <tr>
+    <th width="18%">Option</th>
+    <th width="16%">Applied on</th>
+    <th>Description</th>
+    <th width="10%">Clouds</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><code>endpoint</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The endpoint to that will be queried during the check</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>accept</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The set of HTTP codes we will accept as valid from the endpoint (as an array)</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>timeout</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The timeout limit in seconds of the endpoint (limit: <code>10</code>)</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>max_redirects</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The number of acceptable HTTP redirects (limit: <code>10</code>)</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>cooldown</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The delay between the end of the deployment process and the start of the test, in seconds. (limit: <code>1800</code>)</td>
+    <td>All</td>
+  </tr>
+</tbody>
+</table>
+
+
+### Example YAML for post-deployment health check
+
+```yaml
+rails:
+  configuration:
+    activeprotect:
+      health_check:
+        endpoint: '/' # Default is root '/'
+        accept: ["200", "300-399"] # Default is 200
+        timeout: 2 # Default is 5
+        max_redirects: 5 # Default is 3
+        cooldown: 120 # Default is 0 
+```
+
+{% if include.product == 'rails' %}
 
 ## Rails
 
@@ -310,6 +387,12 @@ A Rails application type in the manifest file gives you fine control over things
     <td><code>do_initial_db_schema_load</code></td>
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies the first time the app is built,</span></div></td>
     <td>Specify whether to perform <code>rake db:schema:load</code> on a new application build.</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>firewall / create_web_rules</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Cloud 66 automatically creates firewall rules to expose your web application to the outside world. You can configure this via your <a href="/{{page.collection}}/references/network-configuration.html#firewall">Traffic settings</a>, or disable it completely by setting this value to <code>false</code>. Default is <code>true</code>.</td>
     <td>All</td>
   </tr>
   <tr>

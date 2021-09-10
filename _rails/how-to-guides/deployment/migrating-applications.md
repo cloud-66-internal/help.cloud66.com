@@ -10,8 +10,5 @@ tags: ["high-availability"]
 
 permalink: /:collection/:path:output_ext
 ---
-{% include how-to-guides/deployment/migrate-the-stack.md %}
 
-## Migrating between data centers
-
-{% include how-to-guides/deployment/migrate-across-dc.md %}
+{% include how-to-guides/deployment/migrating-applications.md %}

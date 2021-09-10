@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How to build and configure an application in Maestro"
 lead: How to configure and build applications using Maestro

@@ -26,7 +26,13 @@ We currently support the following databases, with no need for additional config
 
 When creating a Maestro application, you can add as many databases as you need in your [service configuration](/maestro/how-to-guides/build-and-config/docker-service-configuration.html#database-configurations) during the application build. 
 
-After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. If you haven't specified a username and password for your database, Cloud 66 will automatically generate these credentials for you. They will be available as environment variables and your application will be configured to use them.
+After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. 
+
+### Database authentication
+
+When we deploy a database we automatically generate the required users and passwords to allow authentication. You can find these values via your Dashboard in the detail page of any database server.
+
+They will be available as environment variables and your application will be configured to use them.
 
 ## Connecting your app to your DB in Maestro
 
@@ -80,6 +86,8 @@ To connect to a database in Version 1 of Maestro, you should use its ElasticDNS 
 
 ### No database (external)
 This option allows you to deploy your application without a database managed by Cloud 66, and is ideal if it is hosted externally.
+
+You can also configure an external database via your [Manifest file](/{{page.collection}}/references/manifest-database-settings.html#specifying-external-databases-via-your-manifest) by specifying the server node as external.
 
 Please note that if there is no connectivity to your database, or your database host is not configured correctly, the deployment will fail.
 

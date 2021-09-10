@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Configuring security features in Maestro"
 lead: How to secure your application

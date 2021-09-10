@@ -88,24 +88,31 @@ $ cx stacks clear-caches -s "My Awesome App"
 List, download and upload of configuration files such as a _service.yml_ or _manifest.yml_.
 
 
-### Usage
-
-```shell
-$ cx stacks configure list [-s <stack>]
+```bash
+$ cx stacks configure list-versions [-f <filename>] [-s <stack>]
+$ cx stacks configure download [-f <filename>] [-s <stack>]
+$ cx stacks configure upload [-f <filename>] [-s <stack>]
 ```
 
 ### Parameters
 
 |		Parameter 		   	|   Description    |
 |-:|
-|list 					   	|List of all versions of a configuration file|
+|list-versions 					|List of all versions of a configuration file|
 |download 	 			   	| Download a configuration file |
 |upload	  				   	| Upload a new version of configuration file |
-|stack (optional) 	   	   	| 	Name of your application, this can be omitted if the current directory is an application directory |
-|f (file) (optional)	   	| File name, accepted values are service.yml and manifest.yml |
+|f (file) 	   	| File name, accepted values are `service.yml` and `manifest.yml` |
+|stack (optional) 	   	   	|Name of your application, this can be omitted if the current directory is an application directory |
 |e (environment) (optional) | 	Full or partial environment name |
 {:.table}
 
+### Examples
+
+```bash
+cx stacks configure download -f manifest.yml --stack my-maestro-cluster #downloads the Manifest file
+
+cx stacks configure list-versions -f service.yml -s my-maestro-cluster #list the version history of your app's Service config file
+```
 
 * * *
 

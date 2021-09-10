@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How-to: Security"
 lead: How to configure security for your Rails application

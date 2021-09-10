@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Skycap Policies &amp; Specifications"
 lead: "Useful information about Cloud 66's policies and technical specifications"

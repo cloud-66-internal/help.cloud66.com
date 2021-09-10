@@ -4,6 +4,16 @@ This reference doc details all the Manifest settings for **data**, **caching** a
 
 If you're looking for the Manifest settings for [webservers & frameworks](/{{page.collection}}/references/manifest-web-settings.html) or [load balancers](/{{page.collection}}/references/manifest-loadbalancer-settings.html), please see our respective reference documents for those components.
 
+## Specifying external databases via your manifest
+
+If your app uses databases that aren't managed by Cloud 66 you can still specify them via your Manifest. To set a database as external via your manifest, use the following syntax:
+
+```yaml
+# For example, an external MySQL server
+mysql: 
+  server: external
+```
+
 ### Key to table headings
 
 * **Option** - the name of the setting as used in the YAML of your Manifest file
@@ -69,18 +79,14 @@ The following settings are available via the Manifest file:
 
 ```yml
 elasticsearch:
-  groups:
-    my_main:
-      configuration:
-        iam_instance_profile_name: elastic-perms
-        version: 0.90.7
-        root_disk_size: 1000
-        root_disk_type: ssd
-    my_spare:
-      configuration:
-        root_disk_size: 100
+  configuration:
+    iam_instance_profile_name: elastic-perms
+    version: 0.90.7
+    root_disk_size: 1000
+    root_disk_type: ssd
 
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## GlusterFS
 
@@ -303,16 +309,12 @@ The following settings are available via the Manifest file :
 
 ```yml
 mongodb:
-  groups:
-    my_mongo:
-      configuration:
-        version: 2.4.8
-        root_disk_size: 100
-        root_disk_type: ssd
-    spare_mongo:
-      configuration:
-        version: 2.4.8
+  configuration:
+    version: 2.4.8
+    root_disk_size: 100
+    root_disk_type: ssd
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## MySQL
 
@@ -386,22 +388,14 @@ The following settings are available via the Manifest file :
 
 ```yml
 mysql:
-  groups:
-    live-db:
-      configuration:
-        version: 5.7
-        root_disk_size: 100
-        root_disk_type: ssd
-        engine: percona
-        iam_instance_profile_name: mysql-perms
-    upgrade:
-      configuration:
-        version: 8.0
-        root_disk_size: 100
-        root_disk_type: ssd
-        engine: percona
-        iam_instance_profile_name: mysql-perms
+  configuration:
+    version: 5.7
+    root_disk_size: 100
+    root_disk_type: ssd
+    engine: percona
+    iam_instance_profile_name: mysql-perms
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## PostgreSQL
 
@@ -480,19 +474,14 @@ The following settings are available via the Manifest file :
 
 ```yml
 postgresql:
-  groups:
-    live-data:
-      configuration:
-        iam_instance_profile_name: psql-perms
-        version: 9.3.4
-        postgis: true
-        root_disk_size: 100
-        root_disk_type: ssd
-    spare-data:
-      configuration:
-        version: 9.3.4
-
+  configuration:
+    iam_instance_profile_name: psql-perms
+    version: 9.3.4
+    postgis: true
+    root_disk_size: 100
+    root_disk_type: ssd
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ### Example YAML for PostGIS
  
@@ -569,6 +558,7 @@ redis:
     root_disk_type: ssd
     iam_instance_profile_name: redis-perms
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## More on Manifest files
 

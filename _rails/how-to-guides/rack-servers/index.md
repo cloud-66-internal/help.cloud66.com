@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How-to: Custom Rack servers"
 lead: How to use your preferred Rack server with Cloud 66

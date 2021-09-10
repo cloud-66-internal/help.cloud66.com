@@ -11,14 +11,14 @@ They are useful for centralizing automated actions such as webhooks, API calls a
 
 Service accounts are created like normal users, and can be set up by the owner of a team or any team member who is assigned `create` permissions under `service accounts`.
 
-To create a service account: 
+To create a service account:
 
 1. Log into your Dashboard, click your avatar at the top right of the screen and then *Account Settings*
 2. Click on *Teams* in the **Account** panel on the left
-3. Click on the green + at the top right of your **Organization** panel
+3. Click on the green + at the top right of the **Team** panel
 4. Select *Service Account*
 5. Assign the new account the required permissions
-6. Click *Add Organization* User
+6. Click *Invite Team Member*
 
 You'll notice that you don't (and can't) associate an email address with a service account. Instead we will automatically assign each service account a dummy email address. This address is used exclusively as a unique identifier for the account - it isn't attached to a working email system.
 
@@ -28,7 +28,7 @@ You also cannot use this dummy address to sign into Cloud 66. Service accounts a
 
 Each service account can be granted scoped API access to your account via a unique access token. To set up an access token for a service account:
 
-1. On the **Teams** page in **Settings**, click on the *Access Token* link next to a service account (or click *Access Tokens* in the **Settings** panel on the left)
+1. On the **Teams** page in **Settings**, click on the *Access Token* icon next to a service account (or click *Access Tokens* in the **Settings** panel on the left)
 2. Find the service account in question in the Service Account Tokens panel and click the edit icon next to it
 3. Check the boxes as required to assign the scope of the permissions you wish to grant the account
 4. Click *Save Changes*

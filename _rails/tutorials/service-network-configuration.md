@@ -55,4 +55,3 @@ Editing your Nginx configuration should be approached with caution as an incorre
 * Learn how to use [CustomConfig](/rails/tutorials/custom-config.html) to manage the configuration files for components like Nginx 
 * Learn how to [configure your public DNS](/rails/tutorials/configure-dns.html) to work optimally with Cloud 66 for Rails
 * Learn how to [add a load balancer](/rails/tutorials/configure-dns.html) to your application 
-* Learn how to set up [custom redirects](/rails/how-to-guides/deployment/shells/nginx-redirect.html) through Nginx

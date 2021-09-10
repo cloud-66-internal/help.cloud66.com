@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Configuring cloud providers for use with Maestro"
 lead: How to configure cloud providers for use with Maestro
