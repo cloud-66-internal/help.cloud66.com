@@ -1,0 +1,55 @@
+<nav class="list">
+        <div class="sticky-sidebar">
+            <h2 class="product-title" id="prepress-product-heading">
+                Prepress Documentation
+            </h2>
+        </div>
+        {% assign product = page.collection | downcase %}
+
+        <ul class="menu-root">
+            {% assign section = include.collection | where:"categories","the-basics" | sort: "order" %}
+            <li><h3 class="u-flushTop"><a href="/{{product}}/the-basics">The Basics</a></h3></li>
+            {% include left_nav_list.html section=section current=page %}
+        </ul>
+
+        <ul class="menu-root">
+            {% assign section = include.collection | where:"categories","quickstarts" | sort: "order" %}
+            <li><h3><a href="/{{product}}/quickstarts">Getting Started</a></h3></li>
+            {% include left_nav_list.html section=section current=page %}
+        </ul>
+
+  <ul class="menu-root">
+            {% assign section = include.collection | where:"categories","tutorials" | sort: "order" %}
+            <li><h3><a href="/{{product}}/tutorials">Tutorials</a></h3></li>
+            {% include left_nav_list.html section=section current=page %}
+        </ul>
+
+     <ul class="menu-root">
+            {% assign section = include.collection | where:"categories","how-to-guides" | sort: "order" %}
+
+            <li><h3><a href="/{{product}}/how-to-guides/">How-to Guides</a></h3></li>
+	        {% include left_nav_list.html section=section current=page %}
+        </ul>
+
+    <ul class="menu-root">
+            {% assign section = include.collection | where:"categories","references" | sort: "order" %}
+            <li><h3><a href="/{{product}}/references">Reference guides</a></h3></li>
+            {% include left_nav_list.html section=section current=page %}
+            {% assign section = include.collection | where:"categories","references/toolbelt" | sort: "order" %}
+            {% include left_nav_list.html section=section current=page %}
+
+        </ul>
+
+        <ul class="menu-root">
+            <li><h3><a href="/{{product}}/account">Account management </a></h3></li>
+            {% assign section = include.collection | where:"categories","account" | sort: "order" %}
+            {% include left_nav_list.html section=section current=page %}
+        </ul>
+
+        <ul class="menu-root">
+            <li><h3><a href="/{{product}}/policies-specifications">Policies & specifications</a></h3></li>
+            {% assign section = include.collection | where:"categories","policies-specifications" | sort: "order" %}
+            {% include left_nav_list.html section=section current=page %}
+        </ul>
+</nav>
+
