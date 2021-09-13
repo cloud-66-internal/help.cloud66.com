@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Understanding &amp; improving your Security Score
+title: Understanding &amp; improving Security Score
 categories: account
 order: 6
 lead: "How to find, understand and improve your Cloud 66 Security Score"
