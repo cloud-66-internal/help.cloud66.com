@@ -21,7 +21,7 @@ permalink: /:collection/:path:output_ext
         <p><strong>A Git Repo containing your application code</strong> &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.</p>
     </li>
     <li>
-        <p><strong>A Cloud Account or Your Own Servers</strong> &mdash; See below.</p>
+        <p><strong>A Cloud Account </strong> &mdash; See below.</p>
     </li>
 </ul>
 
