@@ -18,7 +18,7 @@ Prepress makes building, deploying and managing **prebuilt web applications** on
 - Hugo (Go)
 - Gatsby (React JS)
 
-Prepress allows you to benefit from the power of the [Jamstack](https://jamstack.org/) without being locked into a proprietary infrastructure solution. Your application is hosted on your own block storage via your own cloud account. 
+Prepress allows you to benefit from the power of the [Jamstack](https://jamstack.org/) without being locked into a proprietary infrastructure solution. Your application is hosted on your own object storage via your own cloud account. 
 
 Prepress gives you access to all of Cloud 66's best-in-class management and automation tools, allowing you to easily manage deployments, previews, team access and notifications. 
 
