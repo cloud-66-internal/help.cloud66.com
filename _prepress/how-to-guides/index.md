@@ -17,13 +17,13 @@ noindex: true
     {% assign section = site.prepress | where:"categories","how-to-guides" | sort: "order" %}
     {% include list_articles.html section=section %}
 
+<!---
     </ul>
 
     <h2>Add-ins for your Applications</h2>
     <ul>
-    {% assign section = site.rails | where:"categories","how-to-guides/add-ins" | sort: "order" %}
+    {% assign section = site.prepress | where:"categories","how-to-guides/add-ins" | sort: "order" %}
     {% include list_articles.html section=section %}
-
     </ul>
-
+--->
 </div><!--/.Toc-->

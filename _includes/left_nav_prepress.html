@@ -24,11 +24,17 @@
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
-     <ul class="menu-root">
-            {% assign section = include.collection | where:"categories","how-to-guides" | sort: "order" %}
+        <ul class="menu-root">
+            {% assign common-tools = include.collection | where:"categories","how-to-guides/common-tools" | sort: "order" %}
 
-            <li><h3><a href="/{{product}}/how-to-guides/">How-to Guides</a></h3></li>
-	        {% include left_nav_list.html section=section current=page %}
+            <li><h3><a href="/prepress/how-to-guides/common-tools">How-to: Common tools</a></h3></li>
+            {% include left_nav_list.html section=common-tools current=page %}
+        </ul>
+
+        <ul class="menu-root">
+            {% assign deployment = include.collection | where:"categories","how-to-guides/deployment" | sort: "order" %}
+            <li><h3><a href="/prepress/how-to-guides/deployment">How-to: Config & Deployment</a></h3></li>
+            {% include left_nav_list.html section=deployment current=page %}
         </ul>
 
     <ul class="menu-root">

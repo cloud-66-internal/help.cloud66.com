@@ -14,9 +14,9 @@ permalink: /:collection/:path:output_ext
 
 Prepress makes building, deploying and managing **prebuilt web applications** on your own infrastructure easy, reliable and fast. In just a few minutes you can have your static site up and running on your own hosting account. We support the major static site generators:
 
-- Jekyll (Ruby)
-- Hugo (Go)
-- Gatsby (React JS)
+- [Jekyll](https://jekyllrb.com/) (Ruby)
+- [Hugo](https://gohugo.io/) (Go)
+- [Gatsby](https://www.gatsbyjs.com/) (React JS)
 
 Prepress allows you to benefit from the power of the [Jamstack](https://jamstack.org/) without being locked into a proprietary infrastructure solution. Your application is hosted on your own object storage via your own cloud account. 
 
@@ -71,4 +71,4 @@ You can have your first Prepress application up and running in literally minutes
 - An Amazon Web Services account
 - A Cloud 66 account (we offer 14 day free trials with no credit card required)
 
-Our Getting Started Guide will have you up and running in minutes.
+Follow our 5 minute [Getting Started Guide](/prepress/quickstarts/getting-started.html).
