@@ -21,6 +21,16 @@ walrus.myapp.production.c66.me
 
 This allows you to change the servers (and therefore IP addresses) for your application without needing to change any public DNS entries.
 
+You will need to manage the DNS records of your domain name to ensure that it's pointing to Cloud 66.
+
+Where possible, you should avoid using a DNS A-record (which points directly at an IP address). Instead, you should use CNAME records to point your domain at a hostname (either your server hostname or a failover group address). 
+
+However, this may not be possible with your DNS provider. While CNAME records do not require hard-coded IP addresses, they are not available to root domains (eg. example.com). In other words, you would not be able to set a CNAME record pointing example.com to a Cloud 66 hostname.
+
+To use wildcard subdomains with Cloud 66 hostnames, simply create a CNAME record pointing `*. .com` to your Cloud 66 hostname. 
+
+<div class="notice notice-warning"><p>You cannot call your app via the Cloud 66 host address over HTTPS. If you have a <a href="/{{page.collection}}/references/network-configuration.html#redirect-http-to-https">redirect from HTTP to HTTPS</a> turned on, you will need to turn it off first.</p></div>
+
 ### Failover hostnames
 
 In addition to unique hostnames per server, Cloud 66 also offers [Failover Groups](/rails/tutorials/failover-groups.html) - managed, quick-response DNS addresses that automatically follow the web endpoints of applications.

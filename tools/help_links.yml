@@ -1482,10 +1482,10 @@ maestro:
   server_ip_addresses:
     page: maestro/references/server-ip-addresses.html
     page_anchors:
+    - browsing-your-app-via-cloud-66-dns
     - cloud-66-agent
     - cloud-66-hostnames
     - finding-your-cloud-66-hostname
-    - important
     - maestro-product-heading
     - new-ip-addresses
   server_monitoring:
@@ -1789,7 +1789,6 @@ maestro:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -1805,6 +1804,8 @@ maestro:
     - examples-4
     - examples-5
     - examples-6
+    - examples-7
+    - examples-8
     - examples-of-service-usage
     - gateway-management
     - getting-service-information
@@ -1876,6 +1877,7 @@ maestro:
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
     - stopping-services
+    - tail
     - temporary-lease
     - tunnel-command
     - upload
@@ -1909,7 +1911,6 @@ maestro:
     - usage-32
     - usage-33
     - usage-34
-    - usage-35
     - usage-4
     - usage-5
     - usage-6
@@ -3524,7 +3525,6 @@ node:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -3540,6 +3540,8 @@ node:
     - examples-4
     - examples-5
     - examples-6
+    - examples-7
+    - examples-8
     - examples-of-service-usage
     - gateway-management
     - getting-service-information
@@ -3611,6 +3613,7 @@ node:
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
     - stopping-services
+    - tail
     - temporary-lease
     - tunnel-command
     - upload
@@ -3644,7 +3647,6 @@ node:
     - usage-32
     - usage-33
     - usage-34
-    - usage-35
     - usage-4
     - usage-5
     - usage-6
@@ -5245,6 +5247,7 @@ rails:
   server_ip_addresses:
     page: rails/references/server-ip-addresses.html
     page_anchors:
+    - browsing-your-app-via-cloud-66-dns
     - cloud-66-agent
     - cloud-66-hostnames
     - finding-your-cloud-66-hostname
@@ -5541,7 +5544,6 @@ rails:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -5557,6 +5559,8 @@ rails:
     - examples-4
     - examples-5
     - examples-6
+    - examples-7
+    - examples-8
     - examples-of-service-usage
     - gateway-management
     - getting-service-information
@@ -5628,6 +5632,7 @@ rails:
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
     - stopping-services
+    - tail
     - temporary-lease
     - tunnel-command
     - upload
@@ -5661,7 +5666,6 @@ rails:
     - usage-32
     - usage-33
     - usage-34
-    - usage-35
     - usage-4
     - usage-5
     - usage-6
@@ -6452,7 +6456,6 @@ skycap:
     - example-16
     - example-17
     - example-18
-    - example-19
     - example-2
     - example-3
     - example-4
@@ -6468,6 +6471,8 @@ skycap:
     - examples-4
     - examples-5
     - examples-6
+    - examples-7
+    - examples-8
     - examples-of-service-usage
     - gateway-management
     - getting-service-information
@@ -6539,6 +6544,7 @@ skycap:
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
     - stopping-services
+    - tail
     - temporary-lease
     - tunnel-command
     - upload
@@ -6572,7 +6578,6 @@ skycap:
     - usage-32
     - usage-33
     - usage-34
-    - usage-35
     - usage-4
     - usage-5
     - usage-6
