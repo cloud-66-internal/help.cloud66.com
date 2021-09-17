@@ -9,6 +9,6 @@ noindex: true
 sitemap: false
 ---
 
-<p class="lead">Prepress reduces the load on your DevOps resources.</p>
+<p class="lead">Prepress lets you deploy static websites to your own cloud account, and automates the entire process for you.</p>
 
-{% include category_nav_rails.html %}
+{% include category_nav_prepress.html %}

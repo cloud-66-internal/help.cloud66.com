@@ -36,7 +36,11 @@
             <li><h3><a href="/prepress/how-to-guides/deployment">How-to: Config & Deployment</a></h3></li>
             {% include left_nav_list.html section=deployment current=page %}
         </ul>
-
+        <ul class="menu-root">
+            {% assign clouds = include.collection | where:"categories","how-to-guides/clouds" | sort: "order" %}
+            <li><h3><a href="/prepress/how-to-guides/clouds">How-to: Cloud providers</a></h3></li>
+            {% include left_nav_list.html section=clouds current=page %}
+        </ul>
     <ul class="menu-root">
             {% assign section = include.collection | where:"categories","references" | sort: "order" %}
             <li><h3><a href="/{{product}}/references">Reference guides</a></h3></li>
