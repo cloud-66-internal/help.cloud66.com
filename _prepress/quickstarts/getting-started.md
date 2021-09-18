@@ -5,39 +5,32 @@ categories: quickstarts
 order: 1
 legacy: false
 tags: ["getting started"]
-lead: Deploy your first Prepress app to any cloud
+lead: Deploy your first Prepress application
 permalink: /:collection/:path:output_ext
 ---
-{% assign product = 'rails' %}
 
 ## What you’ll need
 
-<p>Before you can deploy your app please check you have the following:</p>
-<ul>
-    <li>
-        <p><strong>A Cloud 66 Account</strong> &mdash; If you don't already have one <a href="https://app.cloud66.com/users/sign_up" target="_blank">Sign up for a free Cloud 66 account</a>. You'll get free unlimited access to all products for 4 weeks.</p>
-    </li>
-    <li>
-        <p><strong>A Git Repo containing your application code</strong> &mdash; This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.</p>
-    </li>
-    <li>
-        <p><strong>A Cloud Account </strong> &mdash; See below.</p>
-    </li>
-</ul>
+Before you can deploy your app please check you have the following:
 
-{% include general/cloud_provider_or_own_server_tabs.html product = product %}
+- **A Cloud 66 Account** — If you don't already have one **[Sign up for a free Cloud 66 account](https://app.cloud66.com/users/sign_up)**. You'll get free unlimited access to all products for 4 weeks.
+- **A Git Repo containing your application code** — This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.
+- **A Cloud Account** — at the moment we only support AWS S3 (we will be adding more cloud providers soon)
 
+## 1. Choose your application type
 
-## Choosing application type
+New users will be shown the product selection wizard. For Prepress, click the Getting Started button in the block headed "Need to Deploy a Static Site?".
 
-TBC
+![Choose application type](/assets/prepress/app-type-prepress.png)
 
 If you're already using Cloud 66 just click *New Application &rarr; Prepress* button on the dashboard.
 
 
-## Accessing your Git Repo
+## 2. Access your Git Repo
 
-Cloud 66 supports both public and private Git repositories. If you're using a private Git repository you'll need to Add and approve the Cloud 66 public SSH key with your Git provider.
+Cloud 66 supports both public and private Git repositories. If you’re using a private Git repository you’ll need to Add and approve the Cloud 66 public SSH key with your Git provider. 
+
+Click the *How to link Cloud 66 with your git provider* link above the main panel - this will open up a yellow box that will allow you to configure access to your git provider.
 
 <div class="Tabs">
     <nav>
@@ -87,77 +80,58 @@ Cloud 66 supports both public and private Git repositories. If you're using a pr
     </section>
 </div>
 
-## Defining your application
+## 3. Define your application
 
-Before we can deploy, we need some basic info about your application. Please fill in the following fields:
+- Connect your Git provider (see above) and select one of your repos
+    - *OR* click the link to switch to manual mode and then paste in the **Git repo URL for your app** (we support `http://`, `git://` and `git@` URL formats. **HTTPS isn’t supported**.)
+- **Define the branch do you want to deploy** — This defaults to master but you can provide any branch you like.
+- **Choose an Environment** — decide which environment you’re deploying to: Development, QA, Staging or Production.
+- **Give your new application a name** — This is the name that will be used in the Cloud 66 Dashboard once your app is deployed.
 
-<img src="/assets/rails/rails_about_app.png" alt="Fill in the information about your app: Git repo, name and environment">
+Now click the *Analyze* button - the results will be displayed in a few seconds.
 
+## 4. Configuring your application
 
-* **Git repo URL for your app** &mdash; We support `http://`, `git://` and `git@` URL formats. Please note that **HTTPS isn't currently supported**.
+Once the analysis is complete you’ll see a yellow Information box that you can use to verify the analysis is correct.
 
-* **What branch do you want to deploy** &mdash; This defaults to master but you can provide any branch you like.
-
-* **Give your new application a name** &mdash; This is the name that will be used in the Cloud 66 Dashboard once your app is deployed.
-
-* **Choose an Environment** &mdash; Choose the Environment that you're deploying to: Development, QA, Staging or Production.
-
-Now click the *Analyze* button - the results will be displayed in a few seconds.
-
-## Configuring your application
-
-Once the analysis is complete you'll see a yellow Information Box that you can use to verify the analysis is correct.
-
-<img src="/assets/rails/rails_about_your_app.png" alt="Rails application - analysis information">
+<img src="/assets/prepress/about_your_app.png" alt="Prepress application - analysis information">
 
 If there are any problems you can make changes and click **Reanalyze my code**. If necessary, you can also add environment variables.
 
-In App Configuration you can make changes to application configuration parameters.
+## 5. Choosing a deployment target
 
-<img src="/assets/rails/rails_config_ruby_framework.png" alt="Rails application - Ruby version and Framework configuration">
+If you’re deploying for the first time you need to add your Cloud provider credentials. 
 
-* **Ruby Version** &mdash; That your app is using.
-* **Framework Info** &mdash; This allows you alter information about asset pipeline precompilation and whether you want to run `rake db:schema:load`.
+At the moment Prepress only supports S3 from Amazon Web Services. To add your AWS account: 
 
-### Advanced Configurations
+1. Click the *Add Cloud Provider* button 
+2. Paste in the **AWS Access key ID** & **AWS Secret Access Key** (see below for how to generate these)
+3. Give your deployment target a name  (this makes it easier to distinguish between multiple accounts)
+4. Click *Add Cloud Provider*
+5. Choose the region in which you want to host your app
 
-<div class="notice">
-<p>You can configure many aspects of your application using <a href="/rails/quickstarts/using-cloud66-toolbelt.html">Cloud 66 Toolbelt</a> or a <a href="/rails/quickstarts/getting-started-with-manifest.html">manifest file</a>.</p>
-</div>
+### Setting up cloud & access keys on AWS S3
 
-## Choosing a deployment target
+1. Log into the web interface for your AWS account
+2. Click on the name of your account in the top right corner of your AWS account, and select *My Security Credentials*.
+3. Click Access keys in the accordion to open the panel
+4. Click Create New Access key 
+5. Either download the key file or click *Show access key* and take note of your access key ID and secret access key. These are the credentials needed for Cloud 66 to access your account.
 
-If you're deploying for the first time you need to add your Cloud provider credentials:
+This gives Cloud 66 root access to your account. If you'd prefer to restrict access to the minimum needed, we suggest using Amazon's IAM. Please read our [full guide on setting up AWS](/prepress/how-to-guides/clouds/cloud-aws.html#option-b-identity-access-management-iam) for more info.
 
-{% include general/clouds_accordion.html %}
+## 6. Deploy your app
 
-## Finalizing Deployment Details
+Now everything is ready to go, hit the *Deploy site* button.
 
-Now you can decide how you want to configure your Front end (Web) and Database Servers. They can be shared or deployed to separate servers.
+During the build and deployment process you can view the log to see what’s happening behind the scenes.
 
-### Deploying to Production
+<img src="/assets/prepress/deploying.png" alt="Deploying Prepress application">
 
-<div class="notice">
-<p>For production environments we always recommend separate servers. If you need fine grained control for more advanced deployments  you can use a <a href="/rails/quickstarts/getting-started-with-manifest.html">manifest file</a>.</p>
-</div>
+## What's Next?
 
-<img src="/assets/rails/rails_deployment_details.png" alt="Choose where to deploy your database">
+- [Setting up DNS records](/prepress/tutorials/prepress-dns.html) for your Prepress app
+- Setting up SSL for your Prepress app
+- Setting up [preview deployments](/prepress/how-to-guides/deployment/preview-deployments.html)
 
-That's it! Now just click *Deploy application* and watch your app roll out to your new servers.
 
-### Server build states
-
-In order to allow you to start working with your new app as soon as possible, there are two build states (or stages) for application servers:
-
-1. [Ready](/rails/references/server-build-states.html#ready-servers) - server is available to use, with the minimum required configuration 
-2. [Optimized](/rails/references/server-build-states.html#optimized-servers) - all the latest packages are installed & optimized
-
-![Build state progress bars](/assets/shared/server-build-state-bars.png)
-
-Servers will automatically progress from "ready" to "optimized".
-
-## What's next?
-
-* Get started with [manifest files](/rails/quickstarts/getting-started-with-manifest.html) - a powerful tool for defining your application's components
-* Learn about [CustomConfig](/rails/tutorials/custom-config.html) - a tool for defining and managing configuration templates
-* Learn how to use [Toolbelt](/rails/quickstarts/using-cloud66-toolbelt.html) - a powerful command-line interface for managing your Cloud 66 applications.
