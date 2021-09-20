@@ -6,31 +6,33 @@ Your servers are deployed with **Ubuntu 18.04 LTS**.
 ## Supported cloud providers
 
 Cloud 66 currently supports the following cloud providers:
-* [Amazon Web Services](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html)
+* [Amazon Web Services](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html){% if include.product != 'prepress' %}
 * [Digital Ocean](/{{page.collection}}/how-to-guides/clouds/cloud-do.html)
 * [Google Compute Engine](/{{page.collection}}/how-to-guides/clouds/cloud-gce.html)
-* [Hetzner Cloud](/{{page.collection}}/how-to-guides/clouds/cloud-hetzner.html){% if include.product != 'maestro' %}
-* [Linode](/{{page.collection}}/how-to-guides/clouds/cloud-linode.html){%endif%}
+* [Hetzner Cloud](/{{page.collection}}/how-to-guides/clouds/cloud-hetzner.html){%endif%}{% if include.product != 'maestro' and include.product != 'prepress' %}
+* [Linode](/{{page.collection}}/how-to-guides/clouds/cloud-linode.html){%endif%}{% if include.product != 'prepress' %}
 * [Maxihost](/{{page.collection}}/how-to-guides/clouds/cloud-maxihost.html)
 * [OVHcloud](/{{page.collection}}/how-to-guides/clouds/cloud-ovh.html)
 * [Microsoft Azure](/{{page.collection}}/how-to-guides/clouds/cloud-azure.html)
 * [Rackspace](/{{page.collection}}/how-to-guides/clouds/cloud-rackspace.html)
-* [Vultr](/{{page.collection}}/how-to-guides/clouds/cloud-vultr.html)
+* [Vultr](/{{page.collection}}/how-to-guides/clouds/cloud-vultr.html){% endif %}
 
 ## Supported platforms
 
-Broadly, we support three types of applications:  
+Broadly, we support four types of applications:  
 
 1. Ruby applications running on Rails (or variants like Sinatra)
 2. Javascript applications running on NodeJS
-3. Docker applications running on Kubernetes clusters
+3. Prebuilt or "static" websites built in Jekyll, Hugo or Gatsby
+4. Docker applications running on Kubernetes clusters
 
 The first two platforms are best suited to traditional "monolithic" application types where all of the components run on a common framework. 
 
-The third platform is best suited to containerized applications with a strong service orientation. Since Docker effectively supports virtually every programming language and framework, it is possible to use it to host any type of application. 
+The third platform is specifically designed to build and host [Jamstack](https://jamstack.org/what-is-jamstack/)-style preprocessed application on object storage services.
 
-We support end-to-end Docker deployments. You can either let us build your Docker image (with a Dockerfile), or provide your own.
+The fourth platform is best suited to containerized applications with a strong service orientation. Since Docker effectively supports virtually every programming language and framework, it is possible to use it to host any type of application. We support end-to-end Docker deployments. You can either let us build your Docker image (with a Dockerfile), or provide your own.
 
+{% if include.product != 'prepress' %}
 ## Component versions
 
 Cloud 66 servers have two types of components with differing policies on versioning.
@@ -164,7 +166,7 @@ We install the Nginx modules listed below by default. These are used to provide 
     </tbody>
     </table>
 
-
 ### Suggest version changes
 
 Would you like to suggest a version change? [Email us](mailto:support@cloud66.com?subject=Version update)!
+{% endif %}

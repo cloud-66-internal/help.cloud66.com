@@ -1,9 +1,11 @@
 You can use Cloud 66 to provision and deploy your code to servers in any Amazon Web Services (AWS) region. Cloud 66 supports both VPC and (for AWS accounts created before 2014) EC2-Classic. We also support reserved instances. To use a VPC, your account must conform with the [default VPC guidelines](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/default-vpc.html#launching-into).
 
+{% if include.product != 'prepress' %}
 #### Note
 <div class="notice notice-warning"><p>
 If you delete your application from Cloud 66, your servers will not be deleted on your cloud provider unless the <a href="/{{page.collection}}/how-to-guides/deployment/server-deletion.html">physical server deletion</a> setting is turned on.
 </p></div>
+{% endif %}
 
 {% if include.product == 'rails' %}
 ## Bring Your Own Images (BYOI)
@@ -96,11 +98,13 @@ Web console
 </section>
 </div>
 
+{% if include.product != 'prepress' %}
 ## Using IAM instance profiles with your servers
 
 Instance profiles are a way to set specific roles on new servers that you spin up with AWS. You can read more about [creating your own instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) in the AWS docs. 
+{% endif %}
 
-{% if include.product != 'maestro' %}
+{% if include.product != 'maestro' and include.product != 'prepress' %}
 You can use your instance profiles via Cloud 66 by [calling them in the manifest file](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html#which-component) of your application. You can set a different profile for each component of an application (e.g. MySQL or Redis). We will then use that profile whenever we provision a server for that component.
 {% endif %}
 {% if include.product == 'maestro' %}
@@ -115,6 +119,7 @@ This requires Cloud 66 to have IAM permissions on your AWS account, so please be
 
 If new servers are added to a group on Cloud 66 (e.g. scaling up your web servers), then they are added to the corresponding Security Group on AWS. If servers are removed from Cloud 66, they are also removed from their Security Group on AWS.
 
+{% if include.product != 'prepress' %}
 ## Reserved instances
 
 [AWS reserved instances](http://aws.amazon.com/ec2/purchasing-options/reserved-instances/) enable users to reserve instances for one to three years, which has pricing benefits when compared to on-demand instances.
@@ -129,20 +134,24 @@ To use Cloud 66 with AWS reserved instances:
 If your AWS account was created before 2014 you can choose to create servers on the EC2-Classic platform. Cloud 66 does support EC2-Classic, however we strongly recommend using VPC instead. Several instance types, such as the T2, require the use of VPC.
 
 Please be sure to read the documentation for [EC2-Classic](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-classic-platform.html) before deploying to that platform.
+{% endif %}
 
+{% if include.product != 'maestro' and  include.product != 'prepress' %}
 ## ELB Websocket support
-{% if include.product != 'maestro' %}
 AWS Classic Load Balancers do not support [Websocket](/{{page.collection}}/how-to-guides/deployment/websocket-support.html) natively. We recommend switching to one of Amazon's newer load balancers - either Application Load Balancer or Network Load Balancer depending on your specific use-case.
 {% endif %}
-{% if include.product == 'maestro' %}
+{% if include.product == 'maestro' and  include.product != 'prepress' %}
+## ELB Websocket support
 AWS Classic Load Balancers do not support [Websocket](/{{page.collection}}/how-to-guides/build-and-config/websocket-support.html) natively. We recommend switching to one of Amazon's newer load balancers - either Application Load Balancer or Network Load Balancer depending on your specific use-case.
 {% endif %}
 
+{% if include.product != 'prepress' %}
 ## Cloud 66 tag propagation
 
 AWS supports the propagation of (some) component tags from Cloud 66. This means that if you tag your servers or load balancers in Cloud 66, those tags will be added to the corresponding components on your AWS account (after some transformations).  
 
 For more details on how this works please read our full guide on the [propagation of tags to cloud providers](/{{page.collection}}/how-to-guides/deployment/tagging-components.html#propagation-of-tags-to-cloud-providers).
+{% endif %}
 
 ### External links
 

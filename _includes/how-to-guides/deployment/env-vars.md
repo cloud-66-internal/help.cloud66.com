@@ -76,6 +76,7 @@ However, they are always wrapped in double quotes (e.g.
 
 For example, environment variables for your server IP addresses cannot be changed because they are automatically set and updated based on reported IP addresses.
 
+{% if include.product != 'prepress' %}
 ## Managing environment variables using Toolbelt
 
 You can also manage your environment variables using your [Cloud 66 Toolbelt](/{{page.collection}}/references/toolbelt.html#configuring-toolbelt). There are four methods for managing env vars via Toolbelt:
@@ -86,7 +87,7 @@ You can also manage your environment variables using your [Cloud 66 Toolbelt](/{
 - Setting variables in bulk by [uploading a file](/{{page.collection}}/references/toolbelt.html#upload-environment-variables)
 
 Please click on the links above for detailed instructions on each of these methods.
-
+{% endif %}
 
 ## Referencing environment variables
 
@@ -174,9 +175,10 @@ Note that predefined environment variables are referable! for instance you can d
 
 **SERVER_NAME:** Is on each server and is only available inside the server
 
+## {% if include.product != 'prepress' %}
 ## What's next?
 
-* Learn how to use [Manifest files](/rails/quickstarts/getting-started-with-manifest.html) to customize the components of your application 
-* Learn how to use [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) - a powerful tool for configuring the components of your application.
-* Learn how to customize your deployment workflow with [deploy hooks](/{{page.collection}}/tutorials/deploy-hooks.html).
+* Learn how to use [Manifest files](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) to customize the components of your application
+* Learn how to use [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) - a powerful tool for configuring the components of your application. 
+* Learn how to customize your deployment workflow with [deploy hooks](/{{page.collection}}/tutorials/deploy-hooks.html).{% endif %}
 

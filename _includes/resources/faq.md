@@ -11,7 +11,6 @@ Cloud 66 builds the servers needed to run your application, deploys your applica
 
 * * *
 
-
 ## Where is it hosted?
 
 Cloud 66 is hosted in the cloud and is available as a service. You don't need to install, deploy or configure anything on your servers to use it.
@@ -60,7 +59,7 @@ Yes - you can have any number of applications running on a single server at any 
 
 ## How can I change my Git repository?
 
-You can change your Git repository through the user interface or by using [Cloud 66 Toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html).
+You can change your Git repository through the user interface {% if include.product != 'prepress' %}or by using [Cloud 66 Toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html){% endif %}.
 
 * * *
 
@@ -71,7 +70,7 @@ Currently we support Amazon Web Services, Digital Ocean, Google Compute Engine, 
 {% endif %}
 
 {% if include.product == 'prepress' %}
-Currently we support Amazon Web Services' block storage (S3) but we have plans to roll out to other providers soon.
+Currently, for Prepress we support Amazon Web Services' block storage (S3) but we have plans to roll out to other providers soon.
 {% endif %}
 * * *
 
