@@ -37,15 +37,15 @@ The following variables are created for Rack-based applications (among others):
 - **STACK_PATH** &mdash; The directory path to which your code is deployed
 
 {% endif %}
-
+{% if include.product != 'prepress' %}
 If you have a MySQL server, the following variables are created and inserted into your _database.yml_ (unless you have specified your own):
 
 - **MYSQL_ADDRESS** &mdash; The physical address of your server
 - **MYSQL_USERNAME** &mdash; Randomly generated string
 - **MYSQL_PASSWORD** &mdash; Randomly generated string
+{% endif %}
 
 For a full list of environment variables available in your application, visit the _Environment variables_ link in the right sidebar of your Application Overview. If you don't currently have an application, the environment variables available to you are shown after your code analysis.
-
 
 ## Assign env-vars for deployment
 
@@ -67,12 +67,13 @@ You can also set environment variables on an existing application by visiting th
 
 Be aware of the following while assigning environment variables:
 
-- **Environment variables are not escaped**  
+#### Environment variables are not escaped
 
 However, they are always wrapped in double quotes (e.g. 
 "ENV_VAR"
 ) so you can use them with multi-line variables like SSH keys.
-- **Some environment variables cannot be modified**  
+
+#### Some environment variables cannot be modified
 
 For example, environment variables for your server IP addresses cannot be changed because they are automatically set and updated based on reported IP addresses.
 
@@ -160,25 +161,25 @@ username: <%= ENV['DB_USER'] %>
 working_directory "#{ENV['APP_PATH']}"
 ```
 
-
+{% if include.product != 'prepress' %}
 ## Pre-defined environment variables
 
 There are some variables that are predefined by Cloud66 which are listed at bellow.
-
-{% if include.product == 'legacy_docker' %}
+{% endif %}
+{% if include.product == 'maestro' %}
 
 Note that predefined environment variables are referable! for instance you can define `MEMCACHED_ADDRESS` to be `_env(DOCKER_HOST_IP)` to refer to the `DOCKER_HOST_IP` which is one of the predefined ones.
 
 **DOCKER_HOST_IP:** Is injected to each container and is only available inside containers
 
 {% endif %}
-
+{% if include.product != 'prepress' %}
 **SERVER_NAME:** Is on each server and is only available inside the server
 
-## {% if include.product != 'prepress' %}
 ## What's next?
 
 * Learn how to use [Manifest files](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) to customize the components of your application
 * Learn how to use [CustomConfig](/{{page.collection}}/tutorials/custom-config.html) - a powerful tool for configuring the components of your application. 
-* Learn how to customize your deployment workflow with [deploy hooks](/{{page.collection}}/tutorials/deploy-hooks.html).{% endif %}
+* Learn how to customize your deployment workflow with [deploy hooks](/{{page.collection}}/tutorials/deploy-hooks.html).
+{% endif %}
 
