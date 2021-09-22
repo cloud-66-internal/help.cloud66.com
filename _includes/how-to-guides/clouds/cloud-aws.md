@@ -47,7 +47,7 @@ You'll need to assign access policies for the `cloud66` user so that it will hav
 You can see them here: [recommended minimum policies](https://help.cloud66.com/c66_aws_iam_policy.json).
 
 There are two method for assigning policies: using the **AWS CLI** or the **web console**:
-
+{% if include.product != 'prepress' %}
 <div class="Tabs Tabs--enclosed">
 <nav>
 <ul class="TabMini js_tabs">
@@ -76,7 +76,6 @@ Web console
 
 </section>
 
-
 <section id="WEB" class="Tabs-content js_tab_content is-hidden">
 
 <h3>Using the web console</h3>
@@ -97,7 +96,57 @@ Web console
 
 </section>
 </div>
-
+{% endif %}
+{% if include.product == 'prepress' %}
+<div class="Tabs Tabs--enclosed">
+    <nav>
+    <ul class="TabMini js_tabs">
+    <li class="TabMini-item active">
+    <a href="#CLI" class="TabMini-link">
+    AWS CLI
+    </a>
+    </li>
+    <li class="TabMini-item">
+    <a href="#WEB" class="TabMini-link">
+    Web console
+    </a>
+    </li>
+    </ul>
+    </nav>
+    
+<section id="CLI" class="Tabs-content js_tab_content">
+    
+    <h3>Using the AWS CLI</h3>
+    <p>If you have the AWS CLI tool installed, you can set up your access policies by running this command:</p>
+    
+    <p><pre class="language-shell line-numbers u-whiteSpaceNoWrap"><code>curl https://help.cloud66.com/c66_prepress_aws_iam_policy.json > c66_prepress_aws_iam_policy.json && aws iam put-user-policy --user-name cloud66 --policy-name ExamplePolicy --policy-document file://c66_prepress_aws_iam_policy.json</code></pre> 
+    </p>
+    
+    <p>This downloads our JSON template to your machine and then submits it via the CLI. Note that this assumes you have named your user <code>cloud66</code> as recommended. You can find more info <a href="https://docs.aws.amazon.com/cli/latest/reference/iam/put-user-policy.html" target="_blank">in the AWS docs</a> if you need it.</p>
+    
+    </section>
+    
+    <section id="WEB" class="Tabs-content js_tab_content is-hidden">
+    
+    <h3>Using the web console</h3>
+    
+    <p>You can add policies via the <a href="https://console.aws.amazon.com/iam/" target="_blank">IAM management console</a>.</p> 
+    <ol style="font-size:14px">
+    <li>Click on <em>Access management</em> → <em>Users</em></li>
+    <li>Click on your <code>cloud66</code> user</li>
+    <li>Click the <em>Add inline policy</em> button</li>
+    <li>In another browser tab Open our <a href="/c66_prepress_aws_iam_policy.json">JSON template</a> copy the whole page to your clipboard</li>
+    <li>Back in the IAM console, click the JSON tab and paste in the template you just copied</li>
+    <li>Click <em>Review Policy</em></li>
+    <li>Give your policy a name  </li>
+    <li>Click <em>Create Policy</em></li>
+    </ol>
+    
+    <p>If you need more detail please read <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console" target="_blank">the AWS docs</a> on this subject.</p>
+    
+    </section>
+    </div>
+{% endif %}
 {% if include.product != 'prepress' %}
 ## Using IAM instance profiles with your servers
 

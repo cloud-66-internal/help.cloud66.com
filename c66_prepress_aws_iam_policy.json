@@ -1,0 +1,50 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PrepressPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "acm:DeleteCertificate",
+                "s3:GetBucketTagging",
+                "s3:DeleteObjectVersion",
+                "s3:ListBucketVersions",
+                "s3:CreateBucket",
+                "s3:ListBucket",
+                "cloudfront:CreateFunction",
+                "cloudfront:CreateInvalidation",
+                "cloudfront:GetDistribution",
+                "s3:GetObjectAcl",
+                "acm:RequestCertificate",
+                "s3:PutBucketTagging",
+                "cloudfront:UpdateFunction",
+                "acm:ListCertificates",
+                "cloudfront:UpdateDistribution",
+                "cloudfront:GetDistributionConfig",
+                "s3:DeleteObject",
+                "s3:DeleteBucket",
+                "s3:PutObjectAcl",
+                "cloudfront:UntagResource",
+                "cloudfront:PublishFunction",
+                "cloudfront:TagResource",
+                "cloudfront:GetInvalidation",
+                "acm:AddTagsToCertificate",
+                "cloudfront:CreateDistributionWithTags",
+                "cloudfront:CreateDistribution",
+                "acm:ListTagsForCertificate",
+                "s3:PutObject",
+                "s3:GetObject",
+                "cloudfront:DescribeFunction",
+                "acm:DescribeCertificate",
+                "s3:ListAllMyBuckets",
+                "acm:RemoveTagsFromCertificate",
+                "cloudfront:ListTagsForResource",
+                "cloudfront:ListDistributions",
+                "cloudfront:DeleteDistribution",
+                "s3:GetBucketLocation",
+                "s3:GetObjectVersion"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
