@@ -131,7 +131,7 @@ During the build and deployment process you can view the log to see what’s hap
 ## What's Next?
 
 - [Setting up DNS records](/prepress/tutorials/prepress-dns.html) for your Prepress app
-- Setting up SSL for your Prepress app
+- Configuring continuous deployment using [redeployment hooks](/prepress/how-to-guides/deployment/redeployment-hook.html)
 - Setting up [preview deployments](/prepress/how-to-guides/deployment/preview-deployments.html)
 
 

@@ -69,6 +69,6 @@ You can have your first Prepress application up and running in literally minutes
 
 - An online git repository (public or private) containing your app's code
 - An Amazon Web Services account
-- A Cloud 66 account (we offer 14 day free trials with no credit card required)
+- A Cloud 66 account (we offer 4-week free trials with no credit card required)
 
 Follow our 5 minute [Getting Started Guide](/prepress/quickstarts/getting-started.html).
