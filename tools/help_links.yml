@@ -706,11 +706,11 @@ maestro:
     - requirements-and-limitations
     - switching-between-instances
     - what-youll-need
+    - whats-next
     - why-use-failover-groups
   faq:
     page: maestro/the-basics/faq.html
     page_anchors:
-    - are-their-any-requirements-for-the-user-on-my-servers
     - can-i-deploy-multiple-apps-on-a-single-server
     - can-i-use-cloud-66-with-my-own-servers
     - how-can-i-change-my-git-repository
@@ -2604,14 +2604,20 @@ node:
   failover_groups:
     page: node/tutorials/failover-groups.html
     page_anchors:
-    - add-a-failover-group
+    - adding-a-secondary-application
+    - creating-a-failover-group
     - environment-variables
+    - how-failover-groups-work
     - node-product-heading
-    - notes
+    - overview
+    - requirements-and-limitations
+    - switching-between-instances
+    - what-youll-need
+    - whats-next
+    - why-use-failover-groups
   faq:
     page: node/the-basics/faq.html
     page_anchors:
-    - are-their-any-requirements-for-the-user-on-my-servers
     - can-i-deploy-multiple-apps-on-a-single-server
     - can-i-use-cloud-66-with-my-own-servers
     - how-can-i-change-my-git-repository
@@ -4384,16 +4390,20 @@ rails:
   failover_groups:
     page: rails/tutorials/failover-groups.html
     page_anchors:
-    - adding-a-failover-group
+    - adding-a-secondary-application
+    - creating-a-failover-group
     - environment-variables
+    - how-failover-groups-work
     - overview
     - rails-product-heading
-    - requirements-and-limits
+    - requirements-and-limitations
+    - switching-between-instances
+    - what-youll-need
     - whats-next
+    - why-use-failover-groups
   faq:
     page: rails/the-basics/faq.html
     page_anchors:
-    - are-their-any-requirements-for-the-user-on-my-servers
     - can-i-deploy-multiple-apps-on-a-single-server
     - can-i-use-cloud-66-with-my-own-servers
     - how-can-i-change-my-git-repository
@@ -4447,7 +4457,6 @@ rails:
     - caution
     - cloud-content
     - defining-a-server-for-your-component
-    - how-do-i-use-a-manifest-file
     - no-cloud-content
     - rails-product-heading
     - setting-up-your-first-manifest-file
@@ -5086,6 +5095,7 @@ rails:
     - accessing-redeployment-hooks
     - adding-redeployment-hooks-to-your-pipeline
     - bitbucket-setup
+    - calling-a-deployment-profile-via-a-redeployment-hook
     - generic-setup
     - github-integration
     - github-setup
