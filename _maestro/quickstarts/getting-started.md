@@ -20,11 +20,10 @@ Before you start, please check you have the following:
 * **Application code and/or pre-built images** &mdash; Application code should be hosted in a (secure) publicly accessible git repository and pre-built images should be hosted in image publicly accessible repositories.
 * **A Cloud account linked to Cloud 66 or your own servers set up** &mdash; See below.
 
-{% include general/cloud_provider_or_own_server_tabs.html product = product %}
-
 <div class="notice"><p>If you don't have images or code ready, you can use this <a href="https://github.com/cloud66/maestro-demo.git">simple visit counter application</a> we've supplied on Github. (You can also use this project with our next tutorial on Clusters.)
 </p></div>
 
+{% include general/cloud_provider_or_own_server_tabs.html product = product %}
 
 ## 1. Choose application type
 
@@ -43,7 +42,7 @@ New users will be shown the product selection wizard. For Maestro, choose "I hav
 
 If you're already using Cloud 66 just click *New Application &rarr; Maestro (Build a new cluster)* button on the dashboard.
 
-<img src="/assets/skycap/skycap_new_dropdown_update.png" alt="Build a new Maestro application" width="200">
+<img src="/assets/shared/new_app_dropdown.png" alt="Build a new Maestro application">
 
 ## 2. Add application services
 

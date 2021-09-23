@@ -60,7 +60,7 @@ When a redeployment hook is invoked:
 #### Note
 <div class="notice"><p>In the case where the payload of the commit hook does not contain any branch information (Github and Bitbucket payload formats are supported) then the application will redeploy without attempting to match branch.</p></div>
 
-{% if include.product == 'maestro' or include.product == 'skycap' or include.product == 'rails' %}
+{% if include.product != 'node' and include.product != 'prepress' %}
 
 ## Calling a deployment profile via a redeployment hook
 
@@ -73,7 +73,7 @@ https://hooks.cloud66.com/stacks/redeploy/xxxx/yyyy/?deployment_profile=name_of_
 The name of the profile can be found via your app Dashboard under Settings & Information &rarr; Build & Deployment Profiles. If your deployment profile's name has spaces in it, you should replace each space with either `+` or `%20`. 
 
 {% endif %}
-
+{% if include.product != 'prepress' %}
 ## Github integration
 
 Users who have signed in through Github (and who have enough access to create and edit deployment events for their applications on GitHub) can activate continuous deployments on GitHub. 
@@ -93,7 +93,7 @@ With this feature enabled, whenever you push a new commit, Cloud 66 will automat
 
 #### Note
 <div class="notice"><p>The deployment event will be created with the same environment as your application.</p></div>
-
+{% endif %}
 
 ## Adding redeployment hooks to your pipeline
 
@@ -114,7 +114,6 @@ On your Application Overview, click _Settings & information_ in the right sideba
 
 Next, visit your Bitbucket repository, click _Settings_ in the left sidebar, and then _Hooks_ in the settings menu that appears. In the _Select a hook_ field, select a _POST_ hook, click _Add hook_ and paste your redeployment hook URL into the field provided. Click _Save_ to confirm.
 
-
 ### Generic Setup
 
 Most Git providers have a commit hook mechanism that you can use to post to the Cloud 66 redeployment hook URL. Please check your Git provider documentation for this information. If your Git provider has a non-conforming payload format (not compatible with Github or BitBucket formats) then please get in touch and we can extend our payload support!
@@ -128,6 +127,7 @@ To invoke the redeployment hook manually, you can POST an HTTP request to your r
 curl -X POST [your redeployment hook URL]
 ```
 
-
+{% if include.product != 'prepress' %}
 #### Note
 <div class="notice"><p>If you are manually invoking redeployments you should consider using <a href="/{{page.collection}}/references/toolbelt.html#redeploy-your-stack">Cloud 66 Toolbelt</a> instead, as it has additional features!</p></div>
+{% endif %}

@@ -6,7 +6,9 @@ Preview Deployments are triggered by changes in the git repository of your appli
 
 Previews run on separate, unique subdomains so they are only visible to your team and those you specifically choose to share them with (such as clients or beta testers)
 
+{% if include.product != 'prepress' %}
 <div class="notice"><p>Preview Deployments only apply to your applications <strong>web components</strong>  - they use the same database(s), and the same environment variables, components and manifest settings as the base application. They are <em>not</em> a truly separate instance of your application and should not be treated as such. <strong>We recommend running previews in non-production environments</strong> when you are doing rapid feature iterations.</p></div>
+{% endif %} 
 
 ## Types of Preview Deployments
 
@@ -18,9 +20,11 @@ We support three kinds of (mutually exclusive) Preview Deployments:
 
 Both **branches** and **tags** can be matched using the [glob format](https://en.wikipedia.org/wiki/Glob_(programming)) - so, for example, if you specify `feature*` as your branch name, we will create a Preview for any branch with the word "feature" in it.
 
+{% if include.product != 'prepress' %}
 ## Previews & database migrations
 
 Preview Deployments run database migrations if needed. As such, **please be sure that any database changes are backward-compatible**, as both the "live" application and the preview will be use the newly migrated database.
+{% endif %}
 
 ## Enabling and disabling Preview Deployments
 
@@ -54,7 +58,7 @@ To enable Preview Deployments on GitHub:
 3. Click on Webhooks in the left-hand nav
 4. Click the *Add Webhook* button
 5. Paste the webhook URL from your dashboard into the *Payload URL* field 
-6. Under the events section, select "Send me **everything**" 
+6. Under the events section, select *Send me everything*
 7. Click *Add Webhook*
 
 Now, every time you add or push a branch or tag that matches the conditions you set in your Dashboard, we will automatically deploy a Preview to your servers.
@@ -87,6 +91,7 @@ You can manually trigger the redeploy of a Preview by clicking the icon next to 
 
 You can use this interface to delete old or unwanted Preview Deployments. To do so, click on the trash-bin icon next to any Preview to delete it. Remember that if you push code to the same branch again, you will also spawn the Preview again.
 
+{% if include.product != 'prepress' %}
 <div class="notice notice-warning"><p>While we do not limit the number of Previews an app can have, we strongly recommend against having more than a few at any time. By their nature, Previews require resources to run (RAM, CPU cycles etc.) and thus reduce the capacity of your application to serve your visitors. For this reason <strong>we recommend running previews in non-production environments</strong> when you are doing rapid feature iterations</p></div>
 
 
@@ -99,3 +104,4 @@ cx stacks variants list -s my-stack --type preview  # Lists previews with UIDs
 
 cx stacks variants delete [UID] -s my-stack # Deletes a preview by UID
 ```
+{% endif %}
