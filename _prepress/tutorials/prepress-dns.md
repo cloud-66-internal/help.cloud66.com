@@ -30,8 +30,8 @@ In order to use a custom domain you need to verify that you own the domain and u
 
 Before you start, please check you have the following:
 
-- **A Cloud 66 Account** — If you don't already have one, <a href="[https://app.cloud66.com/users/sign_up](https://app.cloud66.com/users/sign_up)" target="_blank">sign up for a Cloud 66 account</a>. You'll get free unlimited access to all products for 4 weeks.
-- **An existing Prepress application set up in Cloud 66** — To make the most of this tutorial you need to have an app already set up in Cloud 66. Follow our [Getting Started guide](http://127.0.0.1:4000/prepress/quickstarts/getting-started.html) if you're not sure how to do this.
+- **A Cloud 66 Account** — If you don't already have one, [sign up for a Cloud 66 account](https://app.cloud66.com/users/sign_up). You'll get free unlimited access to all products for 4 weeks.
+- **An existing Prepress application set up in Cloud 66** — To make the most of this tutorial you need to have an app already set up in Cloud 66. Follow our [Getting Started guide](/prepress/quickstarts/getting-started.html) if you're not sure how to do this.
 - **A registered domain** — You need to have full administration rights to the domain and access to the interface that allows you to change its DNS records.
 
 ## Setting up a Custom Domain 
