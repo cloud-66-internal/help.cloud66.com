@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## What is a manifest file?
 
-A manifest files allows you to be more explicit about your application composition and control settings that are not usually available through the user interface. The file describes the setup of the components that make up your application. If you're already familiar with manifest files, refer to [Building a manifest file](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html).
+A manifest files allows you to be more explicit about your application composition and control settings that are not usually available through the user interface. The file describes the setup of the components that make up your application.
 
 ## How do I use a manifest file? 
 
@@ -60,15 +60,55 @@ To set up a `manifest.yml` file for your application:
 
 You'll see that we're defining several things in this YAML:
 
-- The component type we are configuring (`rails`)
-- The version of Ruby that will be installed as part of this component ( `ruby_version`)
+- The language your application is written in (`ruby`)
+- The version of Ruby that it's using ( `language_version`)
+- The framework (`jekyll`) and version (`1.2.3`) 
+- Your custom build command (`jekyll build --config _alt_config.yml`)
 
-
+```YAML
+prepress:
+  configuration:
+    language: ruby
+    language_version: 2.5
+    framework: jekyll
+    framework_version: 1.2.3
+    build_command: jekyll build --config _alt_config.yml
+```
 
 ### YAML sample: Gatsby
 
+You'll see that we're defining several things in this YAML:
 
+- The language your application is written in (`nodejs`)
+- The version of NodeJS that it's using ( `language_version`)
+- The framework (`gatsby`) and version ( 
+- Your custom build command (`gatsby build --profile --prefix-paths`)
+
+```YAML
+prepress:
+  configuration:
+    language: nodejs
+    language_version: 12.13
+    framework: gatsby
+    framework_version: 3.14.0
+    build_command: gatsby build --profile --prefix-paths
+```
 
 
 ### YAML sample: Hugo
 
+You'll see that we're defining several things in this YAML:
+
+- The language your application is written in (`go`)
+- The version of Ruby that it's using ( `language_version`)
+- The framework (`hugo`) 
+- Your custom build command (`hugo --gc --minify --config debugconfig.toml`)
+
+```YAML
+prepress:
+  configuration:
+    language: go
+    language_version: 1.10.3
+    framework: hugo
+    build_command: hugo --gc --minify --config debugconfig.toml
+```

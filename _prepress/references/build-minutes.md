@@ -29,8 +29,8 @@ All other actions and functions **do not** consume BuildGrid minutes. This inclu
 
 Each Prepress account has a quota of Build Minutes included which refreshes each month. The number of Minutes available depends on the kind of account you have:
 
-* Trial accounts (14 days): 120 Build Minutes 
-* Paid accounts: 120 Build Minutes / month
+* Trial accounts (4 weeks): 120 Build Minutes 
+* Paid accounts: 120 Build Minutes per month - shared across all your Prepress applications
 
 ## Build Minute overages
 
