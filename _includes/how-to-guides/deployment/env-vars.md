@@ -44,7 +44,12 @@ If you have a MySQL server, the following variables are created and inserted int
 - **MYSQL_USERNAME** &mdash; Randomly generated string
 - **MYSQL_PASSWORD** &mdash; Randomly generated string
 {% endif %}
+{% if include.product != 'prepress' %}
+Prepress applications have a default env var named `CLOUD66_SITE_URL`. This is the base URL currently in use by your site. If your application has a custom domain configured, this variable will reflect that value.
 
+This variable is available during your application's build process. 
+
+{% endif %}
 For a full list of environment variables available in your application, visit the _Environment variables_ link in the right sidebar of your Application Overview. If you don't currently have an application, the environment variables available to you are shown after your code analysis.
 
 ## Assign env-vars for deployment

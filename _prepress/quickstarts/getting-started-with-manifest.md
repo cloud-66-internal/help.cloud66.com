@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## What is a manifest file?
 
-A manifest files allows you to be more explicit about your application composition and control settings that are not usually available through the user interface. The file describes the setup of the components that make up your application.
+A manifest files allows you to be more explicit about your application composition and control settings that are not usually available through the user interface. The file describes the setup of the components that make up your application. The manifest file is **completely optional** - you can use Prepress without ever creating a manifest file.
 
 ## How do I use a manifest file? 
 
@@ -100,7 +100,6 @@ prepress:
 You'll see that we're defining several things in this YAML:
 
 - The language your application is written in (`go`)
-- The version of Ruby that it's using ( `language_version`)
 - The framework (`hugo`) 
 - Your custom build command (`hugo --gc --minify --config debugconfig.toml`)
 
@@ -108,7 +107,13 @@ You'll see that we're defining several things in this YAML:
 prepress:
   configuration:
     language: go
-    language_version: 1.10.3
     framework: hugo
     build_command: hugo --gc --minify --config debugconfig.toml
 ```
+
+## What's next?
+
+* For more detailed information on the compostion of your Manifest, please read our [How-To Guide](/prepress/how-to-guides/deployment/building-a-manifest-file.html). 
+* [Setting up DNS records](/prepress/tutorials/prepress-dns.html) for your Prepress app
+* Configuring continuous deployment using [redeployment hooks](/prepress/how-to-guides/deployment/redeployment-hook.html)
+* Setting up [preview deployments](/prepress/how-to-guides/deployment/preview-deployments.html)

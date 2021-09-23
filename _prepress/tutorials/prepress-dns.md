@@ -24,7 +24,7 @@ You can point your own (custom) domain at your Prepress application but, because
 In order to use a custom domain you need to verify that you own the domain and update your DNS with specific records. Follow the steps below and you will be up and running in minutes.
 
 ### Note
-<div class="notice"><p>We automatically enable SSL on your domain when we set up your DNS. We will also automatically redirect any visits to HTTP to HTTPS. See our guide to SSL for more information.</p></div>
+<div class="notice"><p>We automatically enable SSL on your domain when we set up your DNS. We will also automatically redirect any visits to HTTP to HTTPS.</p></div>
 
 ## What you'll need
 
