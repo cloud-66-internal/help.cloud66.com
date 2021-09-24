@@ -3818,6 +3818,397 @@ node:
     - 1-using-a-web-server-that-supports-hot-rollover
     - 2-deploying-in-serial
     - node-product-heading
+prepress:
+  access_your_code:
+    page: prepress/how-to-guides/common-tools/access-your-code.html
+    page_anchors:
+    - bitbucket-example
+    - github-example
+    - prepress-product-heading
+    - private-repositories
+    - public-repositories
+  account_index:
+    page: prepress/account/index.html
+    page_anchors:
+    - prepress-product-heading
+  account_management:
+    page: prepress/account/account-management.html
+    page_anchors:
+    - add-or-remove-users
+    - closing-your-account
+    - if-your-account-has-an-outstanding-balance
+    - if-your-account-has-applications
+    - if-your-account-has-secondary-users
+    - organizations
+    - prepress-product-heading
+    - service-accounts
+    - view--update-account-information
+  account_protection:
+    page: prepress/account/account-protection.html
+    page_anchors:
+    - account-protection-alerts
+    - overview
+    - prepress-product-heading
+    - what-is-cloud-66-account-protection
+  adding_updating_deleting:
+    page: prepress/the-basics/adding-updating-deleting.html
+    page_anchors:
+    - building-an-application
+    - clone-an-application
+    - deleting-an-application
+    - prepress-product-heading
+    - updating-application-properties
+  application_transfer:
+    page: prepress/account/application-transfer.html
+    page_anchors:
+    - account--user-criteria
+    - application-criteria
+    - dealing-with-a-failed-transfer
+    - overview
+    - prepress-product-heading
+    - transferring-an-application
+    - understanding-the-application-transfer-process
+  audit_logs:
+    page: prepress/account/audit-logs.html
+    page_anchors:
+    - accessing-audit-logs
+    - audit-logging
+    - prepress-product-heading
+    - searching-audit-logs
+  browser_requirements:
+    page: prepress/account/browser-requirements.html
+    page_anchors:
+    - prepress-product-heading
+  build_minutes:
+    page: prepress/references/build-minutes.html
+    page_anchors:
+    - build-minute-overages
+    - calculating-build-minutes
+    - monthly-build-minutes
+    - prepress-product-heading
+    - what-are-build-minutes
+  building_a_manifest_file:
+    page: prepress/how-to-guides/deployment/building-a-manifest-file.html
+    page_anchors:
+    - combined-example
+    - dependency-configurations
+    - framework-configurations
+    - gatsby-example
+    - hugo-example
+    - overview
+    - prepress-product-heading
+    - problems-upgrading
+    - ruby-example
+    - the-structure-of-a-manifest-file
+    - whats-next
+  cloud66_status:
+    page: prepress/policies-specifications/cloud66-status.html
+    page_anchors:
+    - latest-updates
+    - prepress-product-heading
+    - status-and-uptime
+  cloud_66_beta_program:
+    page: prepress/policies-specifications/cloud-66-beta-program.html
+    page_anchors:
+    - joining-the-beta-programme
+    - overview
+    - prepress-product-heading
+    - reporting-issues
+  cloud_aws:
+    page: prepress/how-to-guides/clouds/cloud-aws.html
+    page_anchors:
+    - cloud-66-security-groups-on-aws
+    - external-links
+    - granting-cloud-66-access-to-aws
+    - option-a-using-root-credentials
+    - option-b-identity-access-management-iam
+    - prepress-product-heading
+    - step-1-create-a-user
+    - step-2-set-up-access-policies
+  data_protection:
+    page: prepress/policies-specifications/data-protection.html
+    page_anchors:
+    - prepress-product-heading
+  env_vars:
+    page: prepress/tutorials/env-vars.html
+    page_anchors:
+    - about-environment-variables
+    - assign-env-vars-after-app-build
+    - assign-env-vars-for-deployment
+    - auto-generate-variables
+    - default-env-vars
+    - prepress-product-heading
+    - referencing-env-vars-on-other-apps
+    - referencing-environment-variables
+    - referencing-other-env-vars-on-the-same-app
+    - using-environment-variables
+  failover_groups:
+    page: prepress/tutorials/failover-groups.html
+    page_anchors:
+    - adding-a-secondary-application
+    - creating-a-failover-group
+    - environment-variables
+    - how-failover-groups-work
+    - overview
+    - prepress-product-heading
+    - requirements-and-limitations
+    - switching-between-instances
+    - what-youll-need
+    - whats-next
+    - why-use-failover-groups
+  faq:
+    page: prepress/the-basics/faq.html
+    page_anchors:
+    - how-can-i-change-my-git-repository
+    - how-can-i-use-cloud-66
+    - how-much-does-it-cost
+    - prepress-product-heading
+    - what-is-cloud-66
+    - where-is-it-hosted
+    - which-clouds-are-supported
+    - who-pays-for-the-servers
+  framework_support:
+    page: prepress/references/framework-support.html
+    page_anchors:
+    - determining-components-versions
+    - frameworks-currently-supported
+    - nodejs-version
+    - prepress-product-heading
+    - ruby-version
+  getting_started:
+    page: prepress/quickstarts/getting-started.html
+    page_anchors:
+    - 1-choose-your-application-type
+    - 2-access-your-git-repo
+    - 3-define-your-application
+    - 4-configuring-your-application
+    - 5-choosing-a-deployment-target
+    - 6-deploy-your-app
+    - bitbucket-content
+    - github-content
+    - other-git-content
+    - prepress-product-heading
+    - setting-up-cloud--access-keys-on-aws-s3
+    - what-youll-need
+    - whats-next
+  getting_started_with_manifest:
+    page: prepress/quickstarts/getting-started-with-manifest.html
+    page_anchors:
+    - a-working-example
+    - how-do-i-use-a-manifest-file
+    - prepress-product-heading
+    - setting-up-your-first-manifest-file
+    - what-is-a-manifest-file
+    - what-youll-need
+    - whats-next
+    - yaml-sample-gatsby
+    - yaml-sample-hugo
+    - yaml-sample-jekyll
+  global_search:
+    page: prepress/how-to-guides/common-tools/global-search.html
+    page_anchors:
+    - advanced-search
+    - application-directives
+    - basic-search
+    - complex-queries
+    - container-directives
+    - deployment-variables
+    - environment-variables
+    - firewall-directives
+    - prepress-product-heading
+    - server-directives
+    - service-directives
+  how_to_guides_clouds_index:
+    page: prepress/how-to-guides/clouds/index.html
+    page_anchors:
+    - prepress-product-heading
+  how_to_guides_common_tools_index:
+    page: prepress/how-to-guides/common-tools/index.html
+    page_anchors:
+    - prepress-product-heading
+  how_to_guides_deployment_index:
+    page: prepress/how-to-guides/deployment/index.html
+    page_anchors:
+    - prepress-product-heading
+  how_to_guides_index:
+    page: prepress/how-to-guides/index.html
+    page_anchors:
+    - prepress-product-heading
+  index:
+    page: prepress/index.html
+    page_anchors:
+    - prepress-product-heading
+  notifications:
+    page: prepress/account/notifications.html
+    page_anchors:
+    - available-settings
+    - browser-notifications
+    - copying-notification-settings-between-apps
+    - editing-account-notifications
+    - emails
+    - notification-channels
+    - prepress-product-heading
+    - service-account-notifications
+    - slack
+    - slack-notifications-for-service-accounts
+    - webhooks
+    - webhooks-for-service-accounts
+  pci_compliance:
+    page: prepress/policies-specifications/pci-compliance.html
+    page_anchors:
+    - how-does-cloud-66-access-my-servers
+    - how-does-cloud-66-prevent-access-to-customer-servers-in-case-of-a-breach
+    - is-cloud-66-pci-compliant
+    - prepress-product-heading
+    - what-firewalls-are-installed-on-servers-deployed-by-cloud-66
+    - where-are-the-ssh-keys-stored-on-cloud-66
+    - will-my-websitemobile-back-endapi-be-pci-compliant-if-i-use-cloud-66
+  policies_specifications_index:
+    page: prepress/policies-specifications/index.html
+    page_anchors:
+    - prepress-product-heading
+  prepress_dns:
+    page: prepress/tutorials/prepress-dns.html
+    page_anchors:
+    - note
+    - overview
+    - prepress-product-heading
+    - setting-up-a-custom-domain
+    - what-youll-need
+    - whats-next
+  preview_deployments:
+    page: prepress/how-to-guides/deployment/preview-deployments.html
+    page_anchors:
+    - browsing-and-managing-previews
+    - deleting-previews
+    - disabling-previews
+    - enabling-and-disabling-preview-deployments
+    - monitoring-preview-deployments
+    - overview
+    - prepress-product-heading
+    - redeploying-previews
+    - setting-up-previews-on-github
+    - triggering-preview-deployments-via-your-git-provider
+    - types-of-preview-deployments
+  pricing:
+    page: prepress/policies-specifications/pricing.html
+    page_anchors:
+    - add-on-services
+    - maestro
+    - node
+    - prepress-product-heading
+    - rails
+    - skycap
+  quickstarts_index:
+    page: prepress/quickstarts/index.html
+    page_anchors:
+    - prepress-product-heading
+  redeployment_hook:
+    page: prepress/how-to-guides/deployment/redeployment-hook.html
+    page_anchors:
+    - accessing-redeployment-hooks
+    - adding-redeployment-hooks-to-your-pipeline
+    - bitbucket-setup
+    - generic-setup
+    - github-setup
+    - invoking-your-redeployment-hook-manually
+    - overview
+    - prepress-product-heading
+    - usage-example
+  references_index:
+    page: prepress/references/index.html
+    page_anchors:
+    - prepress-product-heading
+  security:
+    page: prepress/policies-specifications/security.html
+    page_anchors:
+    - credit-card-information
+    - customer-protection
+    - infrastructure-security
+    - prepress-product-heading
+    - reporting-security-issues
+  service_accounts:
+    page: prepress/account/service-accounts.html
+    page_anchors:
+    - configuring-notifications-and-webhooks
+    - creating-a-service-account
+    - granting-api-access-to-a-service-account
+    - overview
+    - prepress-product-heading
+  slack_notifications:
+    page: prepress/how-to-guides/common-tools/slack-notifications.html
+    page_anchors:
+    - help-with-the-cloud-66-slack-app
+    - installing-the-cloud-66-slack-app
+    - overview
+    - prepress-product-heading
+    - removing-the-cloud-66-slack-app
+    - what-does-the-cloud-66-slack-app-do
+  support_tickets:
+    page: prepress/how-to-guides/common-tools/support-tickets.html
+    page_anchors:
+    - application-availability-testing
+    - checking-the-status-of-a-ticket
+    - logging-a-new-support-issue
+    - overview
+    - prepress-product-heading
+  team_accounts:
+    page: prepress/account/team-accounts.html
+    page_anchors:
+    - add-a-new-user-team-member
+    - application-users
+    - deleting-user-accounts--teams
+    - finance-users
+    - leave-a-team
+    - prepress-product-heading
+    - switch-organizations
+    - user-roles-and-permissions
+    - using-team-accounts
+  technical_specifications:
+    page: prepress/policies-specifications/technical-specifications.html
+    page_anchors:
+    - operating-system
+    - prepress-product-heading
+    - supported-cloud-providers
+    - supported-platforms
+  the_basics_index:
+    page: prepress/the-basics/index.html
+    page_anchors:
+    - prepress-product-heading
+  tutorials_index:
+    page: prepress/tutorials/index.html
+    page_anchors:
+    - prepress-product-heading
+  two_factor_authentication:
+    page: prepress/account/two-factor-authentication.html
+    page_anchors:
+    - adding-a-physical-fido-security-key
+    - enabling-2fa-on-your-account
+    - enforcing-2fa-for-your-team
+    - if-youre-using-a-usb-based-device
+    - if-youre-using-the-krypton-app
+    - logging-in-with-2fa
+    - prepress-product-heading
+    - troubleshooting
+    - what-is-two-factor-authentication
+  understanding_failover_groups:
+    page: prepress/references/understanding-failover-groups.html
+    page_anchors:
+    - how-failover-groups-work
+    - prepress-product-heading
+    - testing-failover-groups
+    - using-failover-groups-with-ssl-certificates
+    - why-use-failover-groups
+  what_is_prepress:
+    page: prepress/the-basics/what-is-prepress.html
+    page_anchors:
+    - are-prebuilt-apps-completely-static
+    - do-i-need-to-learn-a-new-language
+    - how-do-i-get-started
+    - prepress-product-heading
+    - welcome-to-prepress
+    - what-are-prebuilt-web-apps
+    - what-are-the-advantages-of-prebuilt-apps
 rails:
   access_your_code:
     page: rails/how-to-guides/common-tools/access-your-code.html
