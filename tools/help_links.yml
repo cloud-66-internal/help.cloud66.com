@@ -3942,20 +3942,6 @@ prepress:
     - referencing-environment-variables
     - referencing-other-env-vars-on-the-same-app
     - using-environment-variables
-  failover_groups:
-    page: prepress/tutorials/failover-groups.html
-    page_anchors:
-    - adding-a-secondary-application
-    - creating-a-failover-group
-    - environment-variables
-    - how-failover-groups-work
-    - overview
-    - prepress-product-heading
-    - requirements-and-limitations
-    - switching-between-instances
-    - what-youll-need
-    - whats-next
-    - why-use-failover-groups
   faq:
     page: prepress/the-basics/faq.html
     page_anchors:
@@ -4038,6 +4024,12 @@ prepress:
     page: prepress/index.html
     page_anchors:
     - prepress-product-heading
+  missing_page:
+    page: prepress/missing-page.html
+    page_anchors:
+    - prepress-product-heading
+    - this-help-page-is-missing-sorry
+    - well-fix-this-asap
   notifications:
     page: prepress/account/notifications.html
     page_anchors:
@@ -4191,14 +4183,6 @@ prepress:
     - prepress-product-heading
     - troubleshooting
     - what-is-two-factor-authentication
-  understanding_failover_groups:
-    page: prepress/references/understanding-failover-groups.html
-    page_anchors:
-    - how-failover-groups-work
-    - prepress-product-heading
-    - testing-failover-groups
-    - using-failover-groups-with-ssl-certificates
-    - why-use-failover-groups
   what_is_prepress:
     page: prepress/the-basics/what-is-prepress.html
     page_anchors:
