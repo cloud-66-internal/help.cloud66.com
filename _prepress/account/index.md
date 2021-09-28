@@ -2,7 +2,7 @@
 layout: section
 template: one-col
 title:  "Account management"
-lead: "Integrating Cloud 66 for Rails with popular CI/CD services"
+lead: "Managing your Cloud 66 user account"
 legacy: false
 permalink: /:collection/account/index.html
 noindex: true
