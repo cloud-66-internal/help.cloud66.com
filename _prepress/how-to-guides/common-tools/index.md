@@ -2,7 +2,7 @@
 layout: section
 template: one-col
 title:  "How-to Guides: Common tools"
-lead: How to use common tools with Cloud 66 for Rails
+lead: How to use common tools with Prepress
 legacy: false
 permalink: /:collection/how-to-guides/common-tools/index.html
 noindex: true
