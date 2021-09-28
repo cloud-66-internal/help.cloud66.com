@@ -1,6 +1,6 @@
 #! /usr/bin/env ruby
 require 'yaml'
-PRODUCTS = %w[maestro rails node skycap]
+PRODUCTS = %w[maestro rails node skycap prepress]
 
 # explicitly skipped pages/anchors
 SKIPPED_REGEX = [/js\//i]

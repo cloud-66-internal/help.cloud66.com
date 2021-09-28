@@ -40,7 +40,7 @@ New users will be shown the product selection wizard. For Skycap, choose "I have
 
 If you're already using Cloud 66 just click *New Application &rarr; Node (Node frameworks)* button on the dashboard.
 
-<img src="/assets/skycap/skycap_new_dropdown_update.png" alt="New application dropdown menu" width="200">
+<img src="/assets/shared/new_app_dropdown.png" alt="New application dropdown menu">
 
 ## Accessing your Git Repo
 

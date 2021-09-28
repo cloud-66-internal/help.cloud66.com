@@ -1,6 +1,6 @@
 ## What is two-factor authentication?
 
-Two-factor authentication (2FA) requires a second set of credentials, in addition to a password and username, before it will allow access to an account. You can read more about the concept in [our Security Score guide](/{{page.collection}}/account/understanding-and-improving-security-score.html#why-do-i-need-2fa). 
+Two-factor authentication (2FA) requires a second set of credentials, in addition to a password and username, before it will allow access to an account. {% if include.product != 'prepress' %}You can read more about the concept in [our Security Score guide](/{{page.collection}}/account/understanding-and-improving-security-score.html#why-do-i-need-2fa).{% endif %} 
 
 ## Enabling 2FA on your account
 
@@ -31,7 +31,7 @@ This will oblige all team members to set up 2FA before they are able to access t
 
 ## Adding a physical FIDO security key
 
-Physical security keys add another layer of security to your account, making it even harder for anyone to gain unauthorised access. If you need more background info on physical keys please read our [detailed guide](/{{page.collection}}/account/understanding-and-improving-security-score.html#fido-authentication) on the subject.
+Physical security keys add another layer of security to your account, making it even harder for anyone to gain unauthorised access. {% if include.product != 'prepress' %}If you need more background info on physical keys please read our [detailed guide](/{{page.collection}}/account/understanding-and-improving-security-score.html#fido-authentication) on the subject.{% endif %}
 
 To add a physical key (including a Krypton key):
 

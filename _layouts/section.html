@@ -14,12 +14,6 @@ bodyclass: section
     {% assign trimmedURL = page.url | remove_first: '/' | remove_first: '.html' %}
     {% assign gitlnker = "https://github.com/cloud66/help/edit/feature/inlines/_" | append: trimmedURL | append: ".md" %}
 
-    <!--
-    {% if jekyll.environment == "development" %}
-    <a href={{gitlnker}}>github link</a>
-    {% endif %}
-    -->
-
     {% if page.legacy %}
        <!--
         <div class="notice notice-red">
