@@ -42,7 +42,7 @@ function createH1(queryParams) {
 function createH1Enhanced(queryParams) {
 	const productQuery = queryParams['product'];
 
-	const products = ['All products', 'Rails', 'Node', 'Maestro', 'Skycap'];
+	const products = ['All products', 'Rails', 'Node', 'Maestro', 'Skycap', 'Prepress'];
 
 	const productDisplayed = productQuery ? productQuery.charAt(0).toUpperCase() + productQuery.slice(1) : 'All products';
 	products.splice(products.indexOf(productDisplayed), 1);
