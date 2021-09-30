@@ -1,26 +1,41 @@
 ## Installing Let's Encrypt
 
-A Let's Encrypt Python script called _acme_tiny.py_  puts a file with random name under `/etc/cloud66/webroot/` on one of your web servers. Then tries to connect to your server and download that file via HTTP. It needs 
-<span style="background-color: #FFFF00">a non-secure HTTP endpoint</span> (/.well-known/acme_challenge/*) to invoke and reissue certificates.
+A Let's Encrypt Python script called _acme_tiny.py_  puts a file with random name under `/etc/cloud66/webroot/` on one of your web servers. Then tries to connect to your server and download that file via HTTP. It needs <span style="background-color: #FFFF00">a non-secure HTTP endpoint</span> (<your-application-domain>/.well-known/acme_challenge/*) to invoke and reissue certificates.
 
 
 #### Note
-<div class="notice notice-warning"><p>Let's encrypt needs to be updated every 3 months, so you'd need to keep the settings needed for issueing.</p></div>
+<div class="notice notice-warning"><p>Let's Encrypt needs to be updated every 3 months, so you should keep this configuration in place to allow for automatic renewal.</p></div>
+
+## Configuring Let's Encrypt with Cloudflare
+
+If you route your application traffic through Cloudflare, you will need to add a [Page Rule](https://support.cloudflare.com/hc/en-us/articles/218411427-Understanding-and-Configuring-Cloudflare-Page-Rules-Page-Rules-Tutorial-) to your Cloudflare configuration in order for the challenge process (see above) to work.
+
+The URL for the page rule should be the challenge URL for your server: http://YOURSITE.com/.well-known/acme-challenge/
+
+To set up your application:
+
+1. Ensure the challenge file is in the folder
+2. Log into your Cloudflare dashboard and create a new Page Rule
+3. Set the challenge URL as an exact match for the Page
+4. Set *SSL* to "off"
+5. Set *Automatic HTTPS Rewrites* to "off"
+6. Save and deploy the rule (after testing)
+
+The challenge should now succeed. If it does not, please read our troubleshooting guide below.
 
 
 ## Troubleshooting
 
-If, while installing, you see an error simmilar to this:
+If, while installing, you see an error similar to this:
 
 ```shell
 Wrote file to /etc/cloud66/webroot/FILENAME, but couldn't download http://DNS_NAME/.well-known/acme-challenge/FILENAME 
 ```
-
 You need to go through the following steps:
 
-1.  Delete the SSL certificate (vital)
-2.  If your infrastructure uses [Cloudflare](https://www.cloudflare.com) and you have a global HTTPS redirect you need a [pagerule](https://support.cloudflare.com/hc/en-us/articles/200168306-Is-there-a-tutorial-for-Page-Rules-) to allow traffic from Let's Encrypt through HTTP, which requires a non-secure HTTP endpoint (/.well-known/acme_challenge/*) to invoke and reissue certificates.
-3.  There could be some parts missing in your Nginx config, probably due to customization or config file not being up to date. The following parts take care of redirections - like HTTP to HTTPS redirection or adding/removing www to the link. Ensure these sections of your own Nginx config match up with the examples below.
+1. Delete the SSL certificate (vital)
+2. If you use Cloudflare, ensure you have have Page Rule in place ([see above](#configuring-lets-encrypt-with-cloudflare))
+3. There could be some sections missing (or misconfigured) in your Nginx config, probably due to customization or config file not being up to date. The following blocks take care of redirections. Ensure these sections of your own Nginx config match up with the examples below.
     
 {% raw %}
 ```shell
