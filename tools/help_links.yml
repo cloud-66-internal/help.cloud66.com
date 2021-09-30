@@ -937,6 +937,7 @@ maestro:
   lets_encrypt:
     page: maestro/how-to-guides/security/lets-encrypt.html
     page_anchors:
+    - configuring-lets-encrypt-with-cloudflare
     - installing-lets-encrypt
     - maestro-product-heading
     - troubleshooting
@@ -1669,6 +1670,7 @@ maestro:
     - lets-encrypt-ssl-certificate
     - maestro-product-heading
     - standard-ssl-certificate
+    - using-lets-encrypt-with-cloudflare
   ssl_certificate:
     page: maestro/how-to-guides/security/ssl-certificate.html
     page_anchors:
@@ -2803,6 +2805,7 @@ node:
   lets_encrypt:
     page: node/how-to-guides/security/lets-encrypt.html
     page_anchors:
+    - configuring-lets-encrypt-with-cloudflare
     - installing-lets-encrypt
     - node-product-heading
     - troubleshooting
@@ -3378,6 +3381,7 @@ node:
     - lets-encrypt-ssl-certificate
     - node-product-heading
     - standard-ssl-certificate
+    - using-lets-encrypt-with-cloudflare
   ssl_certificate:
     page: node/how-to-guides/security/ssl-certificate.html
     page_anchors:
@@ -4983,6 +4987,7 @@ rails:
   lets_encrypt:
     page: rails/how-to-guides/security/lets-encrypt.html
     page_anchors:
+    - configuring-lets-encrypt-with-cloudflare
     - installing-lets-encrypt
     - rails-product-heading
     - troubleshooting
@@ -5756,6 +5761,7 @@ rails:
     - lets-encrypt-ssl-certificate
     - rails-product-heading
     - standard-ssl-certificate
+    - using-lets-encrypt-with-cloudflare
   ssl_certificate:
     page: rails/how-to-guides/security/ssl-certificate.html
     page_anchors:
