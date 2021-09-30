@@ -937,6 +937,7 @@ maestro:
   lets_encrypt:
     page: maestro/how-to-guides/security/lets-encrypt.html
     page_anchors:
+    - configuring-lets-encrypt-with-cloudflare
     - installing-lets-encrypt
     - maestro-product-heading
     - troubleshooting
@@ -1669,6 +1670,7 @@ maestro:
     - lets-encrypt-ssl-certificate
     - maestro-product-heading
     - standard-ssl-certificate
+    - using-lets-encrypt-with-cloudflare
   ssl_certificate:
     page: maestro/how-to-guides/security/ssl-certificate.html
     page_anchors:
@@ -2803,6 +2805,7 @@ node:
   lets_encrypt:
     page: node/how-to-guides/security/lets-encrypt.html
     page_anchors:
+    - configuring-lets-encrypt-with-cloudflare
     - installing-lets-encrypt
     - node-product-heading
     - troubleshooting
@@ -3378,6 +3381,7 @@ node:
     - lets-encrypt-ssl-certificate
     - node-product-heading
     - standard-ssl-certificate
+    - using-lets-encrypt-with-cloudflare
   ssl_certificate:
     page: node/how-to-guides/security/ssl-certificate.html
     page_anchors:
@@ -3942,20 +3946,6 @@ prepress:
     - referencing-environment-variables
     - referencing-other-env-vars-on-the-same-app
     - using-environment-variables
-  failover_groups:
-    page: prepress/tutorials/failover-groups.html
-    page_anchors:
-    - adding-a-secondary-application
-    - creating-a-failover-group
-    - environment-variables
-    - how-failover-groups-work
-    - overview
-    - prepress-product-heading
-    - requirements-and-limitations
-    - switching-between-instances
-    - what-youll-need
-    - whats-next
-    - why-use-failover-groups
   faq:
     page: prepress/the-basics/faq.html
     page_anchors:
@@ -4038,6 +4028,12 @@ prepress:
     page: prepress/index.html
     page_anchors:
     - prepress-product-heading
+  missing_page:
+    page: prepress/missing-page.html
+    page_anchors:
+    - prepress-product-heading
+    - this-help-page-is-missing-sorry
+    - well-fix-this-asap
   notifications:
     page: prepress/account/notifications.html
     page_anchors:
@@ -4191,14 +4187,6 @@ prepress:
     - prepress-product-heading
     - troubleshooting
     - what-is-two-factor-authentication
-  understanding_failover_groups:
-    page: prepress/references/understanding-failover-groups.html
-    page_anchors:
-    - how-failover-groups-work
-    - prepress-product-heading
-    - testing-failover-groups
-    - using-failover-groups-with-ssl-certificates
-    - why-use-failover-groups
   what_is_prepress:
     page: prepress/the-basics/what-is-prepress.html
     page_anchors:
@@ -4999,6 +4987,7 @@ rails:
   lets_encrypt:
     page: rails/how-to-guides/security/lets-encrypt.html
     page_anchors:
+    - configuring-lets-encrypt-with-cloudflare
     - installing-lets-encrypt
     - rails-product-heading
     - troubleshooting
@@ -5772,6 +5761,7 @@ rails:
     - lets-encrypt-ssl-certificate
     - rails-product-heading
     - standard-ssl-certificate
+    - using-lets-encrypt-with-cloudflare
   ssl_certificate:
     page: rails/how-to-guides/security/ssl-certificate.html
     page_anchors:

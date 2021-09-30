@@ -1,7 +1,7 @@
 ---
 layout: section
 template: one-col
-title:  "Cloud 66 for Rails References"
+title:  "Prepress References"
 lead: "In Depth Documentation on Prepress"
 legacy: false
 permalink: /:collection/references/index.html

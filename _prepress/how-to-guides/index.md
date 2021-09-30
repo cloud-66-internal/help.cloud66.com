@@ -11,19 +11,16 @@ noindex: true
 ---
 
 <div class="Toc Toc--howto">
-
     <h2>Deploying Your Applications</h2>
     <ul>
-    {% assign section = site.prepress | where:"categories","how-to-guides" | sort: "order" %}
+    {% assign section = site.prepress | where:"categories","how-to-guides/deployment" | sort: "order" %}
     {% include list_articles.html section=section %}
+	</ul>
 
-<!---
-    </ul>
-
-    <h2>Add-ins for your Applications</h2>
+    <h2>Common Tools</h2>
     <ul>
-    {% assign section = site.prepress | where:"categories","how-to-guides/add-ins" | sort: "order" %}
+    {% assign section = site.prepress | where:"categories","how-to-guides/common-tools" | sort: "order" %}
     {% include list_articles.html section=section %}
-    </ul>
---->
-</div><!--/.Toc-->
+	</ul>
+
+</div>

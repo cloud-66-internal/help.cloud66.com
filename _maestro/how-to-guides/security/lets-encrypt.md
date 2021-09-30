@@ -9,4 +9,4 @@ legacy: false
 tags: ["security"]
 permalink: /:collection/:path:output_ext
 ---
-{% include how-to-guides/deployment/lets-encrypt.md %} 
+{% include how-to-guides/security/lets-encrypt.md %} 
