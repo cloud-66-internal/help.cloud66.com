@@ -19,7 +19,8 @@ To set up your application:
 3. Set the challenge URL as an exact match for the Page
 4. Set *SSL* to "off"
 5. Set *Automatic HTTPS Rewrites* to "off"
-6. Save and deploy the rule (after testing)
+6. Set *Browser Integrity Check* to "off"
+7. Save and deploy the rule (after testing)
 
 The challenge should now succeed. If it does not, please read our troubleshooting guide below.
 

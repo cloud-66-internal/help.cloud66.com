@@ -5,6 +5,7 @@ SSL is an acronym for Secure Sockets Layer, an encryption technology that was cr
 Cloud 66 provides two types of SSL, one is the standard one and the other is the [Let's Encrypt](https://letsencrypt.org) one.
 
 ## Standard SSL Certificate
+
 You can easily add a SSL certificate to your application from the add-in page. Apart from the certificate key and SSL certificate, you can also provide an intermediate certificate and allowed server names (with wildcards accepted).
 
 Once you've provided your SSL certificate and key, we'll install them on all your web servers.
@@ -18,13 +19,13 @@ Refer to our [documentation](/{{page.collection}}/how-to-guides/security/ssl-cer
 Adding this SSL certificate is even easier, you only need to add the DNS name for this. 
 
 #### Warning
-
-<div class="notice notice-danger">
-	<p>The DNS name <b>won't accept wild cards</b> , also having "<b>_</b>" (underscore) in your <b>DNS name won't work</b>.</p>
+<div class="notice notice-danger"><p>The DNS name <b>won't accept wild cards</b> , also having "<b>_</b>" (underscore) in your <b>DNS name won't work</b>.</p>
 </div>
 
-If your infrastructure is behind [Cloudflare](https://www.cloudflare.com) and your are using a global HTTPS redirect you need a [pagerule](https://support.cloudflare.com/hc/en-us/articles/200168306-Is-there-a-tutorial-for-Page-Rules-) to get things working. Make sure you add a [pagerule](https://support.cloudflare.com/hc/en-us/articles/200168306-Is-there-a-tutorial-for-Page-Rules-) because Let's Encrypt need a non-secure HTTP endpoint (/.well-known/acme_challenge/\*) to invoke and reissue certificates. 
+### Using Let's Encrypt with Cloudflare
 
-If your domain application is running on *www.example.io* for example you need a page rule for the following URL: *www.example.io/.well-known/acme-challenge/\**, browser integrity check off, SSL off, cache expiration: 4 hours.
+If your infrastructure is behind Cloudflare you need to add a [Page Rule](/{{page.collection}}/how-to-guides/security/lets-encrypt.html#configuring-lets-encrypt-with-cloudflare) to get things working because Let's Encrypt needs a non-secure HTTP endpoint (/.well-known/acme_challenge/\*) to invoke and reissue certificates. *Automatic HTTPS Rewrites*, *SSL* and *Browser Integrity Check* must all be turned off. 
 
-If you still have issue installing Lets Encrypt please have a look at [this page](/{{page.collection}}/how-to-guides/security/lets-encrypt.html)
+If you need more help please read our full [Let's Encrypt guide](/{{page.collection}}/how-to-guides/security/lets-encrypt.html#configuring-lets-encrypt-with-cloudflare). 
+
+
