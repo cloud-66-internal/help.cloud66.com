@@ -39,7 +39,7 @@ Once your application has been deployed, you can find your PostGIS file in `/etc
 
 ## Manual installation
 
-This applies specifically to Ubuntu 16.04.
+This applies specifically to Ubuntu 20.04.
 
 
 ### Prerequisites
