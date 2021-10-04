@@ -1260,15 +1260,9 @@ maestro:
   postgis_installation:
     page: maestro/how-to-guides/databases/postgis-installation.html
     page_anchors:
-    - enable-adminpack
-    - install-pgrouting
     - installing-with-cloud-66
     - maestro-product-heading
-    - manual-installation
     - more-info
-    - pgrouting
-    - postgis-extension-for-postgresql
-    - prerequisites
   pricing:
     page: maestro/resources/pricing.html
     page_anchors:
@@ -3104,15 +3098,9 @@ node:
   postgis_installation:
     page: node/how-to-guides/databases/shells/postgis-installation.html
     page_anchors:
-    - enable-adminpack
-    - install-pgrouting
     - installing-with-cloud-66
-    - manual-installation
     - more-info
     - node-product-heading
-    - pgrouting
-    - postgis-extension-for-postgresql
-    - prerequisites
   pricing:
     page: node/resources/pricing.html
     page_anchors:
@@ -5373,14 +5361,8 @@ rails:
   postgis_installation:
     page: rails/how-to-guides/databases/shells/postgis-installation.html
     page_anchors:
-    - enable-adminpack
-    - install-pgrouting
     - installing-with-cloud-66
-    - manual-installation
     - more-info
-    - pgrouting
-    - postgis-extension-for-postgresql
-    - prerequisites
     - rails-product-heading
   preview_deployments:
     page: rails/how-to-guides/deployment/preview-deployments.html
