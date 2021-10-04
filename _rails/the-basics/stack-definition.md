@@ -83,7 +83,7 @@ Cloud 66 makes it easy for you to [backup your database](/rails/how-to-guides/ad
 
 ### Operating system
 
-Your servers will be deployed with **Ubuntu 18.04 LTS**. On the operating system level, you can [monitor disk, CPU and memory](/rails/resources/technical-specifications.html) from the dashboard.
+Your servers will be deployed with **Ubuntu 20.04 LTS**.
 
 
 ### Cloud vendor

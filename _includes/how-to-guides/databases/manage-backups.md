@@ -178,7 +178,7 @@ $ find /path/to/unarchived/folder -name ibdata1 -type f -exec dirname {} ';'
 
 **Step 3:** Stop the MySQL service :
 
-Ubuntu 16.04 & 18.04
+Ubuntu 18.04 & 20.04
 ```bash
 $ sudo systemctl stop MySQL
 ```
@@ -215,7 +215,7 @@ $ sudo chown -R MySQL:MySQL /path/to/your/MySQL/data/directory
 
 **Step 8:** Start MySQL service
 
-For Ubuntu 16.04 & 18.04 use:
+For Ubuntu 18.04 & 20.04 use:
 ```bash
 $ sudo systemctl start MySQL
 ```
@@ -296,7 +296,7 @@ $ find /path/to/unarchived/folder -name raw -type d
 
 **Step 2:** Stop the postgresql service :
 
-Ubuntu 16.04 & 18.04
+Ubuntu 18.04 & 20.04
 ```bash
 $ sudo systemctl stop postgresql
 ```
@@ -333,7 +333,7 @@ $ sudo chown -R postgres:postgres /usr/local/pgsql/data
 
 **Step 7:** Start the postgresql service
 
-Ubuntu 16.04 & 18.04
+Ubuntu 18.04 & 20.04
 ```bash
 $ sudo systemctl start postgresql
 ```

@@ -1,7 +1,7 @@
 
 ## Operating system
 
-Your servers are deployed with **Ubuntu 18.04 LTS**.
+Your servers are deployed with **Ubuntu 20.04 LTS**.
 
 ## Supported cloud providers
 
@@ -74,7 +74,7 @@ You are free to specify a version for a number of components in your [manifest f
 <tr><td>White Rabbit (client)</td><td>0.1.5</td></tr>
 </table>
 
-\* We **don't** install a default version of Rails - the version installed is based on the requirements of your application. Versions earlier than 2.6.3 *may* work but have some compatibility issues with Ubuntu 16.04 and 18.04.
+\* We **don't** install a default version of Rails - the version installed is based on the requirements of your application. Versions earlier than 2.6.3 *may* work but have some compatibility issues with Ubuntu 18.04 and 20.04.
 
 #### Warning
 <div class="notice notice-danger"><p>If you're using different (non-default) versions of components, we strongly recommend testing your application thoroughly in a non-production environment before deploying.</p></div>

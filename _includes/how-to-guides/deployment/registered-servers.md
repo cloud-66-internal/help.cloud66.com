@@ -55,7 +55,7 @@ To add a server behind your gateway:
 ## Server requirements
 
 {% if include.product == 'maestro' %}- For **Kubernetes (Maestro) clusters**, we strongly recommend that your servers meet [these mininum specs](/maestro/references/minimum-specs-kubernetes.html) to be able to handle the additional load required by the platform.{% endif %}
-- **Operating system**: We currently support **Ubuntu 16.04** and **Ubuntu 18.04**. The OS needs to be *freshly installed* on your server.
+- **Operating system**: We currently support **Ubuntu 18.04** and **Ubuntu 20.04**. The OS needs to be *freshly installed* on your server.
 - **Connection**: For security reasons, Cloud 66 only connects to your server using your secure keys on **port 22**.
 - **Sudo**: As Cloud 66 connects to your server and provisions applications from scratch, administrator permissions are sometimes necessary. Therefore our script creates a new user to use for deployment that is a member of the sudoers group and that does not require a password to invoke sudo.
 - **Bash**: We currently only support Bourne-again shell (Bash). The error `sh: n: source: not found` during deployment may arise if you are not using the Bash shell.
