@@ -44,7 +44,7 @@ mysql:
      version: "8.1"
   legacy:
    configuration:
-	 operating_system: ubuntu1604
+	 operating_system: ubuntu1804
      version: "5.6"
 ```
 

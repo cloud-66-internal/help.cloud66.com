@@ -51,7 +51,7 @@ The following settings are available via the Manifest file:
   <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts ElasticSearch. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts ElasticSearch. Accepted values <code>ubuntu1804</code>, <code>ubuntu2004</code></td>
   <td>All</td>
   </tr>
   <tr>
@@ -91,10 +91,6 @@ If you need help specifying multiple databases of the same type via your Manifes
 ## GlusterFS
 
 [GlusterFS](https://www.gluster.org/) is a scalable network filesystem suitable for data-intensive tasks such as cloud storage and media streaming.
-
-<div class="notice notice-warning"><p>
-The version of GlusterFS currently offered via the Cloud 66 Add-in is not supported by Ubuntu 18.04. To use this add-in please ensure that all of your application components are installed on servers running <strong>Ubuntu 16.04</strong>.
-</p></div>
 
 #### Restrictions with GlusterFS
 
@@ -275,7 +271,7 @@ The following settings are available via the Manifest file :
   <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts MongoDB. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts MongoDB. Accepted values <code>ubuntu1804</code>, <code>ubuntu2004</code></td>
     <td>All</td>
   </tr>
   <tr>
@@ -353,7 +349,7 @@ The following settings are available via the Manifest file :
   <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts MySQL. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts MySQL. Accepted values <code>ubuntu1804</code>, <code>ubuntu2004</code></td>
     <td>All</td>
   </tr>
   <tr>
@@ -428,7 +424,7 @@ The following settings are available via the Manifest file :
   <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts PostgreSQL. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts PostgreSQL. Accepted values <code>ubuntu1804</code>, <code>ubuntu2004</code></td>
     <td>All</td>
   </tr>
   <tr>
@@ -523,7 +519,7 @@ The following settings are available via the Manifest file :
   <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts Redis. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts Redis. Accepted values <code>ubuntu1804</code>, <code>ubuntu2004</code></td>
     <td>All</td>
   </tr>
   <tr>

@@ -24,7 +24,7 @@ You will be able to choose between API keys (and therefore between your Hetzner 
 
 ## Support for older versions of Ubuntu
 
-Hetzner doesn't natively support Ubuntu 14.04, so only versions 16.04 and 18.04 are deployable through Cloud 66.
+Hetzner doesn't natively support Ubuntu 14.04, so only versions 16.04, 18.04 and 20.04 are deployable through Cloud 66.
 
 ## Cloud 66 tag propagation
 

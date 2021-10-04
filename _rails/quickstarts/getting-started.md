@@ -29,7 +29,7 @@ permalink: /:collection/:path:output_ext
 
 ### Rails version support
 <div class="notice"><p>
-We support every version of Rails from 2.6.3 and upwards, including version 6.0.0. The version installed during deployment is based on the requirements of your application. Versions earlier than 2.6.3 <em>may</em> work but will have some compatibility issues with Ubuntu 16.04 and 18.04.
+We support every version of Rails from 2.6.3 and upwards, including version 6.0.0. The version installed during deployment is based on the requirements of your application. Versions earlier than 2.6.3 <em>may</em> work but will have some compatibility issues with Ubuntu 18.04 and 20.04.
 </p></div>
 
 ## Choosing application type
