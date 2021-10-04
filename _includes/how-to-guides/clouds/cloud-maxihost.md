@@ -19,4 +19,4 @@ You need to add a Maxihost API key to your Cloud 66 account in order to integrat
 
 ## Support for older versions of Ubuntu
 
-Maxihost doesn't natively support Ubuntu 14.04 - only versions 18.04 and 20.04 are deployable through Cloud 66.
+Only versions 18.04 and 20.04 are deployable through Cloud 66.
