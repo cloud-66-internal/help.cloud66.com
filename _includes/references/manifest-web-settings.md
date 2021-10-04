@@ -58,7 +58,7 @@ If you're looking for the Manifest settings for [data, caching & storage compone
   <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts your Rails app. Accepted values: <code>ubuntu1604</code> or <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts your Rails app. Accepted values: <code>ubuntu1804</code> or <code>ubuntu2004</code></td>
     <td>All</td>
   </tr>
   <tr>
@@ -429,16 +429,16 @@ A Rails application type in the manifest file gives you fine control over things
     <td>All</td>
   </tr>
   <tr>
-    <td><code>nameservers</code></td>
+    <td><code><a id="definition-operating-system"></a>nameservers</code></td>
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Set DNS servers for your application.  Note that if you specify empty array i.e <strong>[ ]</strong>, it won't add any nameserver to your servers. Default is <code>[ 8.8.8.8, 8.8.4.4 ]</code>
 </td>
     <td>All</td>
   </tr>
-  <tr>
+<tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts your Rails app. Accepted values: <code>ubuntu1604</code> or <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts your Rails app. Accepted values: <code>ubuntu1804</code> or <code>ubuntu2004</code></td>
     <td>All</td>
   </tr>
   <tr>

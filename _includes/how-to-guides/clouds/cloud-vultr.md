@@ -21,7 +21,7 @@ Visit the Cloud 66 Dashboard and select _Get started building an application_. A
 
 ## Support for older versions of Ubuntu
 
-Vultr doesn't natively support Ubuntu 14.04, so only versions 16.04 and 18.04 are deployable through Cloud 66.
+Only versions 18.04 and 20.04 are deployable through Cloud 66.
 
 <!--
 #### Note
