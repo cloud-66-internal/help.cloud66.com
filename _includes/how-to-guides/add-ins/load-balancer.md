@@ -26,9 +26,18 @@ You can now watch the logs, as usual to see the progress of the process. Dependi
 - **Rackspace**: [Rackspace Load Balancing](http://www.rackspace.com/cloud/load-balancing/)
 - **CloudA**: [Load Balancing as a service](https://www.clouda.ca/technology/vpc-virtual-private-cloud/)
 
-The time required to set up your load balancer will depend on which cloud provider you use. Once your load balancer is set up, it will be ready to distribute the load between your web servers. <strong>All your existing web servers</strong> will automatically be added to the load balancer.
+### Automatic endpoint test
 
-When you have a load balancer on your application, your deployments can take place in serial to reduce downtime, or in [parallel](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html). Deploying in serial involves removing each server from the load balancer, deploying to it and then re-adding it to the load balancer in sequence.
+Once your load balancer is set up, we run a test to ensure your load balancer can reach your web endpoint. We will ping the root path of your application (`/`) and if we receive a `200` response code we will consider the test passed. 
+
+If your application does not have a valid endpoint or route set for `/` then you can specify a custom path under the `httpchk` option in your [manifest file](/{{page.collection}}/references/manifest-loadbalancer-settings.html) to ensure your application responds appropriately. 
+
+Once this test is passed, your load balancer is ready to distribute the load between your web servers.  **All your existing web servers** will then automatically be added to the load balancer.
+
+{% if include.product == 'rails' %}
+### Parallel deployments
+
+When you have a load balancer on your application, your deployments can take place in serial to reduce downtime, or in [parallel](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html). Deploying in serial involves removing each server from the load balancer, deploying to it and then re-adding it to the load balancer in sequence.{% endif %}
 
 ## Adding multiple load balancers
 

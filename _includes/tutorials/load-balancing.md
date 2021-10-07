@@ -20,7 +20,9 @@ To add a load balancer to your application:
 
 You can now watch the logs, as usual to see the progress of the process.
 
-The time required to set up your load balancer will depend on which cloud provider you use. Once your load balancer is set up, it will be ready to distribute the load between your web servers. **All your existing web servers** will automatically be added to the load balancer.
+The time required to set up your load balancer will depend on which cloud provider you use. 
+
+Once your load balancer is set up and [has checked it can reach your servers](/{{page.collection}}/how-to-guides/add-ins/load-balancer.html#automatic-endpoint-test), it will be ready to distribute the load between your web servers. **All your existing web servers** will automatically be added to the load balancer. (If the load balancer cannot reach your application server, the process will fail - [see here for more info](/{{page.collection}}/how-to-guides/add-ins/load-balancer.html#automatic-endpoint-test).)
 
 #### Note
 <div class="notice"><p>
