@@ -1,7 +1,6 @@
 
 ## Listing services
 
-
 ### Usage
 
 ```shell
@@ -32,8 +31,6 @@ $ cx services scale -s mystack a_backend_service --server backend +5
 $ cx services scale -s mystack a_backend_service -2
 $ cx services scale -s mystack a_backend_service --group docker 3
 ```
-
-
 
 
 ## Stopping services
@@ -68,8 +65,6 @@ $ cx services restart -s mystack --server my_server my_web_service
 ```
 
 
-
-
 ## Getting service information
 
 
@@ -97,8 +92,6 @@ $ cx services info -s mystack my_web_service
 $ cx services info -s mystack a_backend_service
 $ cx services info -s mystack --server my_server my_web_service
 ```
-
-
 
 
 ### Result
