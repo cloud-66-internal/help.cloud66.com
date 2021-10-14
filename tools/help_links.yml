@@ -3520,9 +3520,6 @@ node:
     - example-13
     - example-14
     - example-15
-    - example-16
-    - example-17
-    - example-18
     - example-2
     - example-3
     - example-4
@@ -3542,7 +3539,6 @@ node:
     - examples-8
     - examples-of-service-usage
     - gateway-management
-    - getting-service-information
     - how-to-uninstall-the-toolbelt
     - installation
     - installing-on-a-server-headless
@@ -3556,7 +3552,6 @@ node:
     - list-your-backups
     - list-your-stacks
     - listing-processes
-    - listing-services
     - manage-your-configuration-files
     - node-product-heading
     - note-2
@@ -3580,15 +3575,12 @@ node:
     - parameters-22
     - parameters-23
     - parameters-24
-    - parameters-25
     - parameters-26
     - parameters-27
+    - parameters-28
     - parameters-29
     - parameters-3
     - parameters-30
-    - parameters-31
-    - parameters-32
-    - parameters-33
     - parameters-4
     - parameters-5
     - parameters-6
@@ -3601,7 +3593,6 @@ node:
     - reboot-your-stacks
     - redeploy-your-application
     - remove-gateway
-    - result
     - resyncing-slave-from-master
     - run-command
     - server-management
@@ -3610,7 +3601,6 @@ node:
     - show-help-pages-for-a-command
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
-    - stopping-services
     - tail
     - temporary-lease
     - tunnel-command
@@ -3642,9 +3632,6 @@ node:
     - usage-3
     - usage-30
     - usage-31
-    - usage-32
-    - usage-33
-    - usage-34
     - usage-4
     - usage-5
     - usage-6
@@ -5914,9 +5901,6 @@ rails:
     - example-13
     - example-14
     - example-15
-    - example-16
-    - example-17
-    - example-18
     - example-2
     - example-3
     - example-4
@@ -5936,7 +5920,6 @@ rails:
     - examples-8
     - examples-of-service-usage
     - gateway-management
-    - getting-service-information
     - how-to-uninstall-the-toolbelt
     - installation
     - installing-on-a-server-headless
@@ -5950,7 +5933,6 @@ rails:
     - list-your-backups
     - list-your-stacks
     - listing-processes
-    - listing-services
     - manage-your-configuration-files
     - note-2
     - open-gateway
@@ -5973,15 +5955,12 @@ rails:
     - parameters-22
     - parameters-23
     - parameters-24
-    - parameters-25
     - parameters-26
     - parameters-27
+    - parameters-28
     - parameters-29
     - parameters-3
     - parameters-30
-    - parameters-31
-    - parameters-32
-    - parameters-33
     - parameters-4
     - parameters-5
     - parameters-6
@@ -5995,7 +5974,6 @@ rails:
     - reboot-your-stacks
     - redeploy-your-application
     - remove-gateway
-    - result
     - resyncing-slave-from-master
     - run-command
     - server-management
@@ -6004,7 +5982,6 @@ rails:
     - show-help-pages-for-a-command
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
-    - stopping-services
     - tail
     - temporary-lease
     - tunnel-command
@@ -6036,9 +6013,6 @@ rails:
     - usage-3
     - usage-30
     - usage-31
-    - usage-32
-    - usage-33
-    - usage-34
     - usage-4
     - usage-5
     - usage-6
@@ -6826,9 +6800,6 @@ skycap:
     - example-13
     - example-14
     - example-15
-    - example-16
-    - example-17
-    - example-18
     - example-2
     - example-3
     - example-4
@@ -6848,7 +6819,6 @@ skycap:
     - examples-8
     - examples-of-service-usage
     - gateway-management
-    - getting-service-information
     - how-to-uninstall-the-toolbelt
     - installation
     - installing-on-a-server-headless
@@ -6862,7 +6832,6 @@ skycap:
     - list-your-backups
     - list-your-stacks
     - listing-processes
-    - listing-services
     - manage-your-configuration-files
     - note-2
     - open-gateway
@@ -6885,15 +6854,12 @@ skycap:
     - parameters-22
     - parameters-23
     - parameters-24
-    - parameters-25
     - parameters-26
     - parameters-27
+    - parameters-28
     - parameters-29
     - parameters-3
     - parameters-30
-    - parameters-31
-    - parameters-32
-    - parameters-33
     - parameters-4
     - parameters-5
     - parameters-6
@@ -6906,7 +6872,6 @@ skycap:
     - reboot-your-stacks
     - redeploy-your-application
     - remove-gateway
-    - result
     - resyncing-slave-from-master
     - run-command
     - server-management
@@ -6916,7 +6881,6 @@ skycap:
     - skycap-product-heading
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
-    - stopping-services
     - tail
     - temporary-lease
     - tunnel-command
@@ -6948,9 +6912,6 @@ skycap:
     - usage-3
     - usage-30
     - usage-31
-    - usage-32
-    - usage-33
-    - usage-34
     - usage-4
     - usage-5
     - usage-6
