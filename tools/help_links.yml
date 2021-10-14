@@ -946,6 +946,7 @@ maestro:
     page_anchors:
     - add-a-load-balancer
     - adding-multiple-load-balancers
+    - automatic-endpoint-test
     - maestro-product-heading
     - switching-between-load-balancers
   load_balancing:
@@ -2808,6 +2809,7 @@ node:
     page_anchors:
     - add-a-load-balancer
     - adding-multiple-load-balancers
+    - automatic-endpoint-test
     - node-product-heading
     - switching-between-load-balancers
   load_balancing:
@@ -4971,6 +4973,8 @@ rails:
     page_anchors:
     - add-a-load-balancer
     - adding-multiple-load-balancers
+    - automatic-endpoint-test
+    - parallel-deployments
     - rails-product-heading
     - switching-between-load-balancers
     - warning-check-your-confighosts
