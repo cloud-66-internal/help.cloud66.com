@@ -28,11 +28,11 @@ You can now watch the logs, as usual to see the progress of the process. Dependi
 
 ### Automatic endpoint test
 
-Once your load balancer is set up, we run a test to ensure your load balancer can reach your web endpoint. We will ping the root path of your application (`/`) and if we receive a `200` response code we will consider the test passed. 
+When a new load balancer is set up it will begin to ping your web endpoints to check their health. By default load balancers ping the root path of your application (`/`) and if they receive a `200` response code, they will consider a server healthy.
 
-If your application does not have a valid endpoint or route set for `/` then you can specify a custom path under the `httpchk` option in your [manifest file](/{{page.collection}}/references/manifest-loadbalancer-settings.html) to ensure your application responds appropriately. 
+If your application does not have a valid endpoint or route set for `/` then you can specify a custom path under the `httpchk` option in your [manifest file](/{{page.collection}}/references/manifest-loadbalancer-settings.html) to ensure your application responds appropriately. We will configure the load balancer to ping that path rather than the root.
 
-Once this test is passed, your load balancer is ready to distribute the load between your web servers.  **All your existing web servers** will then automatically be added to the load balancer.
+If your servers respond positively to the ping test, the load balancer will begin to distribute the load between them. If any of these ping tests fail, the load balancer will not distribute traffic to those servers that failed.
 
 {% if include.product == 'rails' %}
 ### Parallel deployments
