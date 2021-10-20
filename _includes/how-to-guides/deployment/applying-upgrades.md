@@ -4,13 +4,7 @@ Cloud 66 aims to make it easier to build **immutable** infrastructure. Building 
 
 When a new server is provisioned we automatically install the latest versions of packages. After the server is created we only auto-install packages that are marked as `security updates`. Cloud 66 doesn't (typically) automatically update other packages because it doesn't want to risk disrupting your existing application. However, depending on your configuration, we *may* update your packages each time you redeploy your app (see below).
 
-#### Do not configure servers manually
-{% if include.product != 'maestro' %}
-<div class="notice notice-danger"><p>Cloud 66 has a number of features that <a href="/{{page.collection}}/the-basics/stack-definition.html#automation-and-repeatability">systematize and automate server configuration</a>. Manual changes to configuration files and settings on servers and components are very likely to be either overwritten or cause conflicts. </p></div>
-{% endif %}
-{% if include.product == 'maestro' %}
-<div class="notice notice-danger"><p>Cloud 66 has a number of features that <a href="/maestro/the-basics/concepts-and-terminology.html#automation-and-repeatability">systematize and automate server configuration</a>. Manual changes to configuration files and settings on servers and components are very likely to be either overwritten or cause conflicts. </p></div>
-{% endif %}
+{% include general/do_not_configure_servers_manually.html product = page.collection %}
 
 ## Controlling package updates
 {% if include.product != 'maestro' %}
