@@ -37,6 +37,7 @@ maestro:
     page: maestro/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
@@ -2104,6 +2105,7 @@ node:
     page: node/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
@@ -2476,7 +2478,8 @@ node:
     page: node/how-to-guides/databases/database-customization.html
     page_anchors:
     - database-customization-variables
-    - global-variables
+    - how-to-customize-database-configs
+    - more-info
     - node-product-heading
   database_encryption:
     page: node/how-to-guides/databases/database-encryption.html
@@ -3816,6 +3819,7 @@ prepress:
     page: prepress/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
@@ -4191,6 +4195,7 @@ rails:
     page: rails/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
@@ -4586,9 +4591,9 @@ rails:
   database_customization:
     page: rails/how-to-guides/databases/database-customization.html
     page_anchors:
-    - customize-your-database-configuration
     - database-customization-variables
-    - global-variables
+    - how-to-customize-database-configs
+    - more-info
     - rails-product-heading
   database_encryption:
     page: rails/how-to-guides/databases/database-encryption.html
@@ -6224,6 +6229,7 @@ skycap:
     page: skycap/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
