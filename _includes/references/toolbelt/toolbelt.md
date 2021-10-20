@@ -1,3 +1,4 @@
+
 {% include references/toolbelt/config.md %}
 
 {% include references/toolbelt/backups.md %}
@@ -22,7 +23,8 @@
 
 {% include references/toolbelt/servers.md %}
 
-{% include references/toolbelt/services.md %}
+{% if include.product == 'maestro' %}
+{% include references/toolbelt/services.md %}{% endif %}
 
 {% include references/toolbelt/settings.md %}
 

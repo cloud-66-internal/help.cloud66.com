@@ -51,7 +51,7 @@ If you're looking for the Manifest settings for [data, caching & storage compone
   <tr>
     <td><code>nameservers</code></td>
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>Set DNS servers for your application.  Note that if you specify empty array i.e <strong>[ ]</strong>, it won't add any nameserver to your servers. Default is <code>[ 8.8.8.8, 8.8.4.4 ]</code>
+    <td>Set DNS servers for your application.  Note that if you specify empty array i.e <strong>[ ]</strong>, it won't add any nameserver to your servers. Default is an empty array: <code>[ ]</code>
 </td>
     <td>All</td>
   </tr>
@@ -431,7 +431,7 @@ A Rails application type in the manifest file gives you fine control over things
   <tr>
     <td><code><a id="definition-operating-system"></a>nameservers</code></td>
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>Set DNS servers for your application.  Note that if you specify empty array i.e <strong>[ ]</strong>, it won't add any nameserver to your servers. Default is <code>[ 8.8.8.8, 8.8.4.4 ]</code>
+    <td>Set DNS servers for your application.  Note that if you specify empty array i.e <strong>[ ]</strong>, it won't add any nameserver to your servers. Default is an empty array: <code>[ ]</code>
 </td>
     <td>All</td>
   </tr>

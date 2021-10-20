@@ -1,13 +1,15 @@
 ## Overview
 
-Preview Deployments are automatically generated deployments of newer versions of your application code that run alongside your live application. They are designed to allow you to quickly test changes to your application code without having to deploy to a separate environment. 
+Preview Deployments are automatically generated deployments of newer versions of your application code that run alongside your active application. They are designed to allow you to quickly test changes to your application code without having to deploy to a separate environment. 
 
 Preview Deployments are triggered by changes in the git repository of your application - this means that simply pulling new code into your repo can automatically update your Preview (depending on your settings).
 
 Previews run on separate, unique subdomains so they are only visible to your team and those you specifically choose to share them with (such as clients or beta testers)
 
 {% if include.product != 'prepress' %}
-<div class="notice"><p>Preview Deployments only apply to your applications <strong>web components</strong>  - they use the same database(s), and the same environment variables, components and manifest settings as the base application. They are <em>not</em> a truly separate instance of your application and should not be treated as such. <strong>We recommend running previews in non-production environments</strong> when you are doing rapid feature iterations.</p></div>
+Previews are **not available for Production environments**. They are intended for rapid iteration testing and are not suitable for production servers that may be sensitive to the additional capacity required to run a preview instance of your app.
+
+<div class="notice"><p>Preview Deployments only apply to your applications <strong>web components</strong>  - they use the same database(s), and the same environment variables, components and manifest settings as the base application. They are <em>not</em> a truly separate instance of your application and should not be treated as such. </p></div>
 {% endif %} 
 
 ## Types of Preview Deployments
@@ -23,7 +25,7 @@ Both **branches** and **tags** can be matched using the [glob format](https://en
 {% if include.product != 'prepress' %}
 ## Previews & database migrations
 
-Preview Deployments run database migrations if needed. As such, **please be sure that any database changes are backward-compatible**, as both the "live" application and the preview will be use the newly migrated database.
+Preview Deployments run database migrations if needed. As such, **please be sure that any database changes are backward-compatible**, as both the "active" application and the preview will be use the newly migrated database.
 {% endif %}
 
 ## Enabling and disabling Preview Deployments
@@ -92,7 +94,7 @@ You can manually trigger the redeploy of a Preview by clicking the icon next to 
 You can use this interface to delete old or unwanted Preview Deployments. To do so, click on the trash-bin icon next to any Preview to delete it. Remember that if you push code to the same branch again, you will also spawn the Preview again.
 
 {% if include.product != 'prepress' %}
-<div class="notice notice-warning"><p>While we do not limit the number of Previews an app can have, we strongly recommend against having more than a few at any time. By their nature, Previews require resources to run (RAM, CPU cycles etc.) and thus reduce the capacity of your application to serve your visitors. For this reason <strong>we recommend running previews in non-production environments</strong> when you are doing rapid feature iterations</p></div>
+<div class="notice notice-warning"><p>While we do not limit the number of Previews an app can have, we strongly recommend against having more than a few at any time. By their nature, Previews require resources to run (RAM, CPU cycles etc.) and thus reduce the capacity of your application to serve your visitors. For this reason <strong>we do not support previews for production environments.</strong></p></div>
 
 
 ### Deleting Previews using Cloud 66 Toolbelt

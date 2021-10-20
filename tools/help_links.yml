@@ -37,6 +37,7 @@ maestro:
     page: maestro/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
@@ -946,6 +947,7 @@ maestro:
     page_anchors:
     - add-a-load-balancer
     - adding-multiple-load-balancers
+    - automatic-endpoint-test
     - maestro-product-heading
     - switching-between-load-balancers
   load_balancing:
@@ -2103,6 +2105,7 @@ node:
     page: node/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
@@ -2475,7 +2478,8 @@ node:
     page: node/how-to-guides/databases/database-customization.html
     page_anchors:
     - database-customization-variables
-    - global-variables
+    - how-to-customize-database-configs
+    - more-info
     - node-product-heading
   database_encryption:
     page: node/how-to-guides/databases/database-encryption.html
@@ -2808,6 +2812,7 @@ node:
     page_anchors:
     - add-a-load-balancer
     - adding-multiple-load-balancers
+    - automatic-endpoint-test
     - node-product-heading
     - switching-between-load-balancers
   load_balancing:
@@ -3520,9 +3525,6 @@ node:
     - example-13
     - example-14
     - example-15
-    - example-16
-    - example-17
-    - example-18
     - example-2
     - example-3
     - example-4
@@ -3542,7 +3544,6 @@ node:
     - examples-8
     - examples-of-service-usage
     - gateway-management
-    - getting-service-information
     - how-to-uninstall-the-toolbelt
     - installation
     - installing-on-a-server-headless
@@ -3556,7 +3557,6 @@ node:
     - list-your-backups
     - list-your-stacks
     - listing-processes
-    - listing-services
     - manage-your-configuration-files
     - node-product-heading
     - note-2
@@ -3580,15 +3580,12 @@ node:
     - parameters-22
     - parameters-23
     - parameters-24
-    - parameters-25
     - parameters-26
     - parameters-27
+    - parameters-28
     - parameters-29
     - parameters-3
     - parameters-30
-    - parameters-31
-    - parameters-32
-    - parameters-33
     - parameters-4
     - parameters-5
     - parameters-6
@@ -3601,7 +3598,6 @@ node:
     - reboot-your-stacks
     - redeploy-your-application
     - remove-gateway
-    - result
     - resyncing-slave-from-master
     - run-command
     - server-management
@@ -3610,7 +3606,6 @@ node:
     - show-help-pages-for-a-command
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
-    - stopping-services
     - tail
     - temporary-lease
     - tunnel-command
@@ -3642,9 +3637,6 @@ node:
     - usage-3
     - usage-30
     - usage-31
-    - usage-32
-    - usage-33
-    - usage-34
     - usage-4
     - usage-5
     - usage-6
@@ -3827,6 +3819,7 @@ prepress:
     page: prepress/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
@@ -4202,6 +4195,7 @@ rails:
     page: rails/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
@@ -4597,9 +4591,9 @@ rails:
   database_customization:
     page: rails/how-to-guides/databases/database-customization.html
     page_anchors:
-    - customize-your-database-configuration
     - database-customization-variables
-    - global-variables
+    - how-to-customize-database-configs
+    - more-info
     - rails-product-heading
   database_encryption:
     page: rails/how-to-guides/databases/database-encryption.html
@@ -4984,6 +4978,8 @@ rails:
     page_anchors:
     - add-a-load-balancer
     - adding-multiple-load-balancers
+    - automatic-endpoint-test
+    - parallel-deployments
     - rails-product-heading
     - switching-between-load-balancers
     - warning-check-your-confighosts
@@ -5914,9 +5910,6 @@ rails:
     - example-13
     - example-14
     - example-15
-    - example-16
-    - example-17
-    - example-18
     - example-2
     - example-3
     - example-4
@@ -5936,7 +5929,6 @@ rails:
     - examples-8
     - examples-of-service-usage
     - gateway-management
-    - getting-service-information
     - how-to-uninstall-the-toolbelt
     - installation
     - installing-on-a-server-headless
@@ -5950,7 +5942,6 @@ rails:
     - list-your-backups
     - list-your-stacks
     - listing-processes
-    - listing-services
     - manage-your-configuration-files
     - note-2
     - open-gateway
@@ -5973,15 +5964,12 @@ rails:
     - parameters-22
     - parameters-23
     - parameters-24
-    - parameters-25
     - parameters-26
     - parameters-27
+    - parameters-28
     - parameters-29
     - parameters-3
     - parameters-30
-    - parameters-31
-    - parameters-32
-    - parameters-33
     - parameters-4
     - parameters-5
     - parameters-6
@@ -5995,7 +5983,6 @@ rails:
     - reboot-your-stacks
     - redeploy-your-application
     - remove-gateway
-    - result
     - resyncing-slave-from-master
     - run-command
     - server-management
@@ -6004,7 +5991,6 @@ rails:
     - show-help-pages-for-a-command
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
-    - stopping-services
     - tail
     - temporary-lease
     - tunnel-command
@@ -6036,9 +6022,6 @@ rails:
     - usage-3
     - usage-30
     - usage-31
-    - usage-32
-    - usage-33
-    - usage-34
     - usage-4
     - usage-5
     - usage-6
@@ -6246,6 +6229,7 @@ skycap:
     page: skycap/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
@@ -6826,9 +6810,6 @@ skycap:
     - example-13
     - example-14
     - example-15
-    - example-16
-    - example-17
-    - example-18
     - example-2
     - example-3
     - example-4
@@ -6848,7 +6829,6 @@ skycap:
     - examples-8
     - examples-of-service-usage
     - gateway-management
-    - getting-service-information
     - how-to-uninstall-the-toolbelt
     - installation
     - installing-on-a-server-headless
@@ -6862,7 +6842,6 @@ skycap:
     - list-your-backups
     - list-your-stacks
     - listing-processes
-    - listing-services
     - manage-your-configuration-files
     - note-2
     - open-gateway
@@ -6885,15 +6864,12 @@ skycap:
     - parameters-22
     - parameters-23
     - parameters-24
-    - parameters-25
     - parameters-26
     - parameters-27
+    - parameters-28
     - parameters-29
     - parameters-3
     - parameters-30
-    - parameters-31
-    - parameters-32
-    - parameters-33
     - parameters-4
     - parameters-5
     - parameters-6
@@ -6906,7 +6882,6 @@ skycap:
     - reboot-your-stacks
     - redeploy-your-application
     - remove-gateway
-    - result
     - resyncing-slave-from-master
     - run-command
     - server-management
@@ -6916,7 +6891,6 @@ skycap:
     - skycap-product-heading
     - slave-promotion-to-standalone-master
     - sshing-to-your-server
-    - stopping-services
     - tail
     - temporary-lease
     - tunnel-command
@@ -6948,9 +6922,6 @@ skycap:
     - usage-3
     - usage-30
     - usage-31
-    - usage-32
-    - usage-33
-    - usage-34
     - usage-4
     - usage-5
     - usage-6
