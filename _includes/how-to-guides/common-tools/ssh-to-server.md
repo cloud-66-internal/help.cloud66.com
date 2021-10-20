@@ -1,5 +1,12 @@
-
 We provide two different ways for you to SSH to your servers - an automated way with Cloud 66 Toolbelt, or manual way.
+
+#### Do not configure servers manually
+{% if include.product != 'maestro' %}
+<div class="notice notice-danger"><p>Cloud 66 has a number of features that <a href="/{{page.collection}}/the-basics/stack-definition.html#automation-and-repeatability">systematize and automate server configuration</a>. Manual changes to configuration files and settings on servers and components are very likely to be either overwritten or cause conflicts. </p></div>
+{% endif %}
+{% if include.product == 'maestro' %}
+<div class="notice notice-danger"><p>Cloud 66 has a number of features that <a href="/maestro/the-basics/concepts-and-terminology.html#automation-and-repeatability">systematize and automate server configuration</a>. Manual changes to configuration files and settings on servers and components are very likely to be either overwritten or cause conflicts. </p></div>
+{% endif %}
 
 ## Cloud 66 toolbelt
 You can use [Cloud 66 Toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) to easily SSH to your servers. Once you have installed Toolbelt the following command can be used from your terminal:
