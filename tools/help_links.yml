@@ -316,6 +316,7 @@ maestro:
     - application-vs-service
     - application-vs-stack
     - applications-and-services
+    - automation-and-repeatability
     - buildgrid-and-build-minutes
     - container-lifecycle-management
     - containers--containerization
@@ -332,6 +333,7 @@ maestro:
     - scaling
     - service-networking
     - shared-vs-dedicated-master-nodes
+    - the-principle-of-immutability
     - what-is-an-application
     - what-is-stackscore
   config_store:
@@ -3399,6 +3401,7 @@ node:
     - application-components
     - application-environments
     - application-vs-stack
+    - automation-and-repeatability
     - background-workers-optional
     - cloud-vendor
     - database-servers-optional
@@ -3408,6 +3411,7 @@ node:
     - node-product-heading
     - operating-system
     - suggestion
+    - the-principle-of-immutability
     - web-servers
     - what-is-cloud-66-for-node
     - what-is-stackscore
@@ -5763,6 +5767,7 @@ rails:
     - application-components
     - application-environments
     - application-vs-stack
+    - automation-and-repeatability
     - background-workers-optional
     - cloud-vendor
     - database-servers-optional
@@ -5771,6 +5776,7 @@ rails:
     - load-balancer-optional
     - operating-system
     - rails-product-heading
+    - the-principle-of-immutability
     - web-servers
     - what-is-cloud-66-for-rails
     - what-is-stackscore
