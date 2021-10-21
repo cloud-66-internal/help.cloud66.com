@@ -82,7 +82,21 @@ However, when reading any documentation or our forums, it will often be helpful 
 
 In a general sense, both these terms encapsulate the same thing: an interconnected collection of components, configurations and services that are presented to the world as a single, coherent piece of software.
 
-### What is StackScore?
+## The principle of immutability
+
+At Cloud 66 we believe in the principle that application components should be treated as **immutable** whenever possible. This means that, if a configuration change is required, **it is always preferable to build a new version of that component** from scratch, and swap it with an existing component than to manually modify the configuration of that component. 
+
+That's why we focus our efforts on making the building and deploying of components as quick, reliable and automated as possible. If spinning up a new version of an existing component takes ten minutes, why bother trying to fiddle with configurations, or upgrade in place - actions that could easily break your application?
+
+## Automation and repeatability
+
+Whether upgrading, building from scratch or scaling horizontally, we focus on making the roll-out of components as automated, consistent and repeatable as possible. We have many features that support this, including:
+
+- The [Manifest file](/maestro/quickstarts/getting-started-with-manifest.html) captures settings for infrastructural components in a simple YAML format, making it quick and easy to roll out additional instances of a component without any manual intervention
+- [CustomConfig](/maestro/tutorials/custom-config.html) gives you a powerful, version-controlled interface for customizing the configuration files for components like databases and Nginx
+- [Deploy Hooks](/maestro/tutorials/deploy-hooks.html) allow you to automate the customization of components during your build and deployment process - for example installing a custom package, or a series of packages that depend on one another.
+
+## What is StackScore?
 
 StackScore&trade; is a score that provides an indication of how reliable, resilient and performant your application is when deployed on your servers. It consists of five key metrics that are graded from **A** to **F**, and the overall StackScore is the lowest of the scores across these five metrics.
 

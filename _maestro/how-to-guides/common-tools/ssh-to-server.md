@@ -10,4 +10,4 @@ tags: ['SSH', 'shell']
 permalink: /:collection/:path:output_ext
 ---
 
-{% include how-to-guides/common-tools/ssh-to-server.md %}
+{% include how-to-guides/common-tools/ssh-to-server.md product = page.collection %}
