@@ -1,31 +1,3 @@
-
-## Configuring Toolbelt
-
-### Installation
-
-1. Download the [cx executable](https://app.cloud66.com/toolbelt) to a directory in your PATH
-2. Initialize it by running `cx stacks list`  
-3. Authenticate using your browser
-
-For more detailed help on installation please refer to our [Getting Started](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) guide.
-
-### Installing on a server (headless)
-
-To install Toolbelt on a server (without a browser):
-
-1. Install and authenticate `cx` on your local machine (see above)
-2. Log into your server via your terminal and move to the `.cloud66` directory (under `home`) 
-3. Create a file named `cx.json` in that folder
-4. Go to the terminal on your local machine, where you already have Toolbelt authorised and execute `cx dump-token`, which will give you your authorisation token
-5. Copy this token and paste it into the (remote) `cx.json` file that you created in Step 3
-6. Save the file and then run `cx stacks list` on the server to confirm that Toolbelt is initialised
-
-
-### Profiles for multiple account support
-
-Toolbelt supports user with multiple Cloud 66 accounts via profiles.  
-
-
 ### Profile commands
 
 ```shell
@@ -42,7 +14,7 @@ cx config update NAME [arguments]
 
 `--org ORGANIZATION_NAME` 
 
-The following arguments are used for Cloud 66 Enteprise
+The following arguments are used for Cloud 66 Enterprise
 
 ```shell
 --client-id
@@ -91,4 +63,3 @@ cx config create hobby --org my_private_sandbox
 ...will create a profile named "hobby" that is linked to a Cloud 66 organization named "my_private_sandbox".
 
 If you're unsure about the name of an organization you can run the `cx info` command and looking at the `Name` field. You can also see this by logging into your Dashboard, visiting Account Settings and clicking on Organisations in the Account panel on the left. 
-
