@@ -4,6 +4,8 @@ Cloud 66 aims to make it easier to build **immutable** infrastructure. Building 
 
 When a new server is provisioned we automatically install the latest versions of packages. After the server is created we only auto-install packages that are marked as `security updates`. Cloud 66 doesn't (typically) automatically update other packages because it doesn't want to risk disrupting your existing application. However, depending on your configuration, we *may* update your packages each time you redeploy your app (see below).
 
+{% include general/do_not_configure_servers_manually.html product = page.collection %}
+
 ## Controlling package updates
 {% if include.product != 'maestro' %}
 You can add custom Linux (Ubuntu) packages to your application using Deploy Hooks (read [our full guide here](/{{page.collection}}/how-to-guides/deployment/managing-custom-packages.html).)  Depending on how you've set them up,  Deploy Hooks can either install packages only when a new server is created, or on every (re)deploy (or both).{% endif %}

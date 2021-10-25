@@ -1,5 +1,6 @@
-
 We provide two different ways for you to SSH to your servers - an automated way with Cloud 66 Toolbelt, or manual way.
+
+{% include general/do_not_configure_servers_manually.html product = page.collection %}
 
 ## Cloud 66 toolbelt
 You can use [Cloud 66 Toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) to easily SSH to your servers. Once you have installed Toolbelt the following command can be used from your terminal:

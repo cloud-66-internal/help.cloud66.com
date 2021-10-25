@@ -77,6 +77,8 @@ If your server is in a cloud with native security groups (such as AWS Security G
 
 {% if include.product == 'maestro' %}All servers must be allowed to communicate inside the security group on TCP port `6783`, which is needed to create the overlay network (Weave) for [CSv1](/maestro/the-basics/about-maestro.html#version-1-vs-version-2) applications.{% endif %} 
 
+{% include general/do_not_configure_servers_manually.html product = page.collection %}
+
 ## Technical considerations
 
 - Once a server is registered and used, it **cannot be reused** until a fresh copy of Ubuntu is installed. This is to prevent possible conflicts with old files. 
