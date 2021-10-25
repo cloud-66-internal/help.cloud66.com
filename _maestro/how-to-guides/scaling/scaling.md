@@ -32,7 +32,73 @@ You can also scale down your servers. From your Application Overview, click on t
 
 ## Scaling services
 
-You can scale your services horizontally across your Kubernetes cluster by clicking the `+` and `-` buttons in front of each service to increase or decrease the number of running containers/pods.
+To scale up a service in a Maestro app via the Dashboard:
+
+1. Log into your [Cloud 66 Dashboard](https://app.cloud66.com/)
+2. In the Services panel, click on the edit icon in the same row as the service you want to scale
+3. A panel will slide in from the left. Update the *Desired Count* field to the number you require
+4. Click Save Service (this will close the panel)
+5. Click the update icon (to the left of the **Instances** column) and then click *Apply* in the panel to immediately update that service
+
+If you need to scale multiple services simultaneously:
+
+1. Follow steps 1 to 4 above for each of the services 
+2. Click the green *Apply* button in the yellow bar above the **Services** panel to apply all your service changes to your cluster
+
+![How to scale services in the dashboard](/assets/maestro/scale-services.gif)
+
+### Scaling services with Toolbelt (cx)
+
+<div class="Tabs Tabs--enclosed">
+<nav>
+<ul class="TabMini js_tabs">
+<li class="TabMini-item active">
+<a href="#cx-command" class="TabMini-link">
+Toolbelt (cx) command
+</a>
+</li>
+<li class="TabMini-item">
+<a href="#cx-examples" class="TabMini-link">
+Examples
+</a>
+</li>
+</ul>
+</nav>
+
+<section id="cx-command" class="Tabs-content js_tab_content">
+<p>You can scale your service entirely via your command line Toolbelt. The operative command is:</p>
+<pre class="language-shell">
+cx services scale &lt;service_name&gt; &lt;count&gt;
+</pre>
+
+<p>
+Starts <code>&lt;count&gt;</code> containers of the given service across the stack.
+If <code>&lt;count&gt;</code> is an absolute value like <code>2</code>, then there will be a total of <code>&lt;count&gt;</code> containers across the stack.
+</p>
+<p>
+If <code>&lt;count&gt;</code> is a relative value like <code>[+2]</code> or <code>[-3]</code>, then the current total count of containers across the stack will be changed by <code>&lt;count&gt;</code>.
+</p>
+
+</section>
+
+<section id="cx-examples" class="Tabs-content js_tab_content is-hidden">
+
+<p>The following command sets <code>my_web_service</code> to use 5 containers:</p>
+<pre class="language-shell u-whiteSpaceNoWrap">
+cx service scale -s my_app my_web_service 5
+</pre>
+
+<p>The following command adds 2 more <code>image_processor</code> containers to your cluster:</p>
+<pre class="language-shell u-whiteSpaceNoWrap">
+cx service scale -s my_app image_processor [+2]
+</pre> 
+
+<p>The following command removes one <code>my_web_service</code> container from your cluster:</p>
+<pre class="language-shell u-whiteSpaceNoWrap">
+cx service scale -s my_app my_web_service [-1]
+</pre>
+</section>
+</div>
 
 <div class="notice">
      <h3>Note:</h3><p>
