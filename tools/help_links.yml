@@ -1430,11 +1430,14 @@ maestro:
     page: maestro/how-to-guides/scaling/scaling.html
     page_anchors:
     - about-scaling-servers
+    - cx-command
+    - cx-examples
     - database-servers
     - horizontal-scaling
     - kubernetes-cluster-servers
     - maestro-product-heading
     - scaling-services
+    - scaling-services-with-toolbelt-cx
   securely_accessing_applications:
     page: maestro/tutorials/securely-accessing-applications.html
     page_anchors:
