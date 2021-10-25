@@ -47,7 +47,7 @@ If you need to scale multiple services simultaneously:
 
 ![How to scale services in the dashboard](/assets/maestro/scale-services.gif)
 
-### Scaling service with Toolbelt (cx)
+### Scaling services with Toolbelt (cx)
 
 <div class="Tabs Tabs--enclosed">
 <nav>
