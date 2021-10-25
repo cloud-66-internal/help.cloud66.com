@@ -73,7 +73,7 @@ cx services scale &lt;service_name&gt; &lt;count&gt;
 
 <p>
 Starts <code>&lt;count&gt;</code> containers of the given service across the stack.
-If <code>&lt;count&gt;</code> is an absolute value like <code>2</code>, then there will be a total of &lt;count&gt; containers across the stack.
+If <code>&lt;count&gt;</code> is an absolute value like <code>2</code>, then there will be a total of <code>&lt;count&gt;</code> containers across the stack.
 </p>
 <p>
 If <code>&lt;count&gt;</code> is a relative value like <code>[+2]</code> or <code>[-3]</code>, then the current total count of containers across the stack will be changed by <code>&lt;count&gt;</code>.
