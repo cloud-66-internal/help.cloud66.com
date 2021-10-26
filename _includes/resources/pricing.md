@@ -15,7 +15,7 @@ $14.99 per server per month*
 
 Database backups: $0.38 per GB per month.
 
-## Prepres
+## Prepress
 
 $1.99 / application per month.
 
