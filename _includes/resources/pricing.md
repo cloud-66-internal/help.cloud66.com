@@ -3,30 +3,29 @@ Our products are priced based on the number of servers we manage for you. These 
 ## Rails
 $14.99 per server per month*
 
-See our [Rails product info page](https://www.cloud66.com/rails) for more.
+Database backups: $0.38 per GB per month.
 
 ## Node
 $14.99 per server per month*
 
-See our [Node product info page](https://www.cloud66.com/node) for more.
+Database backups: $0.38 per GB per month.
 
 ## Maestro
 $14.99 per server per month*
 
-See our [Maestro product info page](https://www.cloud66.com/containers/maestro) for more.
+Database backups: $0.38 per GB per month.
+
+## Prepres
+
+$1.99 / application per month.
+
+120 Free Build minutes per month. Above that, there is an over quota charge of $0.03 per minute.
 
 ## Skycap
 $3.99 per service per month*
 
-See our [Skycap product info page](https://www.cloud66.com/containers/skycap) for more.
+120 Free Build minutes per month. Above that, there is an over quota charge of $0.03 per minute.
+
 
 #### Note
 <div class="notice"><p>* Prices do not include the cost of the servers paid to your cloud or hosting provider.</p></div>
-
-## Add on services
-
-We also offer add-on services at the following prices:
-
-**[BuildGrid:](/skycap/the-basics/concepts-and-terminology.html#buildgrid-and-build-minutes)** First 120 minutes free. $0.03 per minute afterward
-
-**Backups:** $0.38 per GB per month.
