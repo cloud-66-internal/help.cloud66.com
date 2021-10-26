@@ -1270,10 +1270,11 @@ maestro:
   pricing:
     page: maestro/resources/pricing.html
     page_anchors:
-    - add-on-services
+    - annual-payments
     - maestro
     - maestro-product-heading
     - node
+    - prepress
     - rails
     - skycap
   querying_server_metadata:
@@ -3114,10 +3115,11 @@ node:
   pricing:
     page: node/resources/pricing.html
     page_anchors:
-    - add-on-services
+    - annual-payments
     - maestro
     - node
     - node-product-heading
+    - prepress
     - rails
     - skycap
   querying_server_metadata:
@@ -4077,9 +4079,10 @@ prepress:
   pricing:
     page: prepress/policies-specifications/pricing.html
     page_anchors:
-    - add-on-services
+    - annual-payments
     - maestro
     - node
+    - prepress
     - prepress-product-heading
     - rails
     - skycap
@@ -5386,9 +5389,10 @@ rails:
   pricing:
     page: rails/resources/pricing.html
     page_anchors:
-    - add-on-services
+    - annual-payments
     - maestro
     - node
+    - prepress
     - rails
     - rails-product-heading
     - skycap
@@ -6620,9 +6624,10 @@ skycap:
   pricing:
     page: skycap/policies-specifications/pricing.html
     page_anchors:
-    - add-on-services
+    - annual-payments
     - maestro
     - node
+    - prepress
     - rails
     - skycap
     - skycap-product-heading

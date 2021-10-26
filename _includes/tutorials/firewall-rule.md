@@ -65,7 +65,7 @@ Remember to give your application a few minutes to apply the new setting(s).
 
 If you need to access your server (via SSH or another protocol), there is a quick way to do this without setting a permanent rule:
 
-1. . Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
+1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on *Network Settings*  in the **Application** panel on the right of the screen
 3. Click the small plug icon at the top right of the Application Firewall Rules panel
 4. This will automatically fetch your current IP address, but you can also manually enter any IP address
