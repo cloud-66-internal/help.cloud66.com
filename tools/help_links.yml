@@ -386,6 +386,7 @@ maestro:
   connect_db_servers:
     page: maestro/how-to-guides/databases/shells/connect-db-servers.html
     page_anchors:
+    - finding-database-credentials
     - maestro-product-heading
     - via-ssh
     - with-a-client
@@ -493,19 +494,21 @@ maestro:
   database_management:
     page: maestro/how-to-guides/databases/database-management.html
     page_anchors:
+    - about-deploying-databases
     - connecting-your-app-to-your-db-in-maestro
     - connecting-your-app-to-your-db-in-maestro-v1
     - connection-strings-in-maestro
-    - customizing-your-database
+    - customize-your-database-configuration
     - database-authentication
+    - database-customization-variables
+    - database-deployment-types
     - dedicated-database
-    - deploying-databases
-    - deployment-types
     - local-database
     - maestro-product-heading
     - no-database-external
     - service-names-for-database-groups
     - upgrading-your-database
+    - warning
   database_replication:
     page: maestro/how-to-guides/databases/database-replication.html
     page_anchors:
@@ -2415,8 +2418,9 @@ node:
   connect_db_servers:
     page: node/how-to-guides/databases/shells/connect-db-servers.html
     page_anchors:
+    - finding-database-credentials
     - node-product-heading
-    - on-the-server
+    - via-ssh
     - with-a-client
   custom_config:
     page: node/tutorials/custom-config.html
@@ -4524,8 +4528,9 @@ rails:
   connect_db_servers:
     page: rails/how-to-guides/databases/shells/connect-db-servers.html
     page_anchors:
-    - on-the-server
+    - finding-database-credentials
     - rails-product-heading
+    - via-ssh
     - with-a-client
   custom_config:
     page: rails/tutorials/custom-config.html
