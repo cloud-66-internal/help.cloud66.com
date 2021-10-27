@@ -4,7 +4,7 @@ Application Groups are arbitrary collections of your applications that can be de
 
 ## Adding Application Groups
 
-Application Groups are managed via the main landing page (the application list page) of your Cloud 66 account.  They are simply filtered lists of your existing applications.
+Application Groups are managed via the main landing page (the application list page) of your Cloud 66 account. They are simply filtered lists of your existing applications.
 
 To add an Application Group:
 
