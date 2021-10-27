@@ -1009,6 +1009,15 @@ maestro:
     - maestro-product-heading
     - overview
     - understanding-automated-rules
+  managing_application_groups:
+    page: maestro/how-to-guides/common-tools/managing-application-groups.html
+    page_anchors:
+    - adding-application-groups
+    - deploying-application-groups
+    - editing-and-deleting-groups
+    - maestro-product-heading
+    - overview
+    - using-glob-patterns-for-groups
   managing_custom_packages:
     page: maestro/how-to-guides/build-and-config/managing-custom-packages.html
     page_anchors:
@@ -2001,6 +2010,12 @@ maestro:
     - testing-failover-groups
     - using-failover-groups-with-ssl-certificates
     - why-use-failover-groups
+  understanding_globs:
+    page: maestro/how-to-guides/common-tools/understanding-globs.html
+    page_anchors:
+    - glob-syntax
+    - maestro-product-heading
+    - what-is-a-glob
   uninstall_mysql:
     page: maestro/how-to-guides/databases/shells/uninstall-mysql.html
     page_anchors:
@@ -2878,6 +2893,15 @@ node:
     - node-product-heading
     - overview
     - understanding-automated-rules
+  managing_application_groups:
+    page: node/how-to-guides/common-tools/managing-application-groups.html
+    page_anchors:
+    - adding-application-groups
+    - deploying-application-groups
+    - editing-and-deleting-groups
+    - node-product-heading
+    - overview
+    - using-glob-patterns-for-groups
   managing_custom_packages:
     page: node/how-to-guides/deployment/managing-custom-packages.html
     page_anchors:
@@ -3722,6 +3746,12 @@ node:
     - testing-failover-groups
     - using-failover-groups-with-ssl-certificates
     - why-use-failover-groups
+  understanding_globs:
+    page: node/how-to-guides/common-tools/understanding-globs.html
+    page_anchors:
+    - glob-syntax
+    - node-product-heading
+    - what-is-a-glob
   uninstall_mysql:
     page: node/how-to-guides/databases/shells/uninstall-mysql.html
     page_anchors:
@@ -4022,6 +4052,15 @@ prepress:
     page: prepress/index.html
     page_anchors:
     - prepress-product-heading
+  managing_application_groups:
+    page: prepress/how-to-guides/common-tools/managing-application-groups.html
+    page_anchors:
+    - adding-application-groups
+    - deploying-application-groups
+    - editing-and-deleting-groups
+    - overview
+    - prepress-product-heading
+    - using-glob-patterns-for-groups
   missing_page:
     page: prepress/missing-page.html
     page_anchors:
@@ -4182,6 +4221,12 @@ prepress:
     - prepress-product-heading
     - troubleshooting
     - what-is-two-factor-authentication
+  understanding_globs:
+    page: prepress/how-to-guides/common-tools/understanding-globs.html
+    page_anchors:
+    - glob-syntax
+    - prepress-product-heading
+    - what-is-a-glob
   what_is_prepress:
     page: prepress/the-basics/what-is-prepress.html
     page_anchors:
@@ -5067,6 +5112,15 @@ rails:
     - overview
     - rails-product-heading
     - scaling-up
+  managing_application_groups:
+    page: rails/how-to-guides/common-tools/managing-application-groups.html
+    page_anchors:
+    - adding-application-groups
+    - deploying-application-groups
+    - editing-and-deleting-groups
+    - overview
+    - rails-product-heading
+    - using-glob-patterns-for-groups
   managing_custom_packages:
     page: rails/how-to-guides/deployment/managing-custom-packages.html
     page_anchors:
@@ -6124,6 +6178,12 @@ rails:
     - testing-failover-groups
     - using-failover-groups-with-ssl-certificates
     - why-use-failover-groups
+  understanding_globs:
+    page: rails/how-to-guides/common-tools/understanding-globs.html
+    page_anchors:
+    - glob-syntax
+    - rails-product-heading
+    - what-is-a-glob
   unicorn_rack_server:
     page: rails/how-to-guides/rack-servers/unicorn-rack-server.html
     page_anchors:
@@ -6552,6 +6612,15 @@ skycap:
     page: skycap/integrations/index.html
     page_anchors:
     - skycap-product-heading
+  managing_application_groups:
+    page: skycap/how-to-guides/common-tools/managing-application-groups.html
+    page_anchors:
+    - adding-application-groups
+    - deploying-application-groups
+    - editing-and-deleting-groups
+    - overview
+    - skycap-product-heading
+    - using-glob-patterns-for-groups
   managing_build_profiles:
     page: skycap/how-to-guides/formations/managing-build-profiles.html
     page_anchors:
@@ -6977,6 +7046,12 @@ skycap:
     - what-are-personal-access-tokens
     - why-cant-we-share-logins
     - why-do-i-need-2fa
+  understanding_globs:
+    page: skycap/how-to-guides/common-tools/understanding-globs.html
+    page_anchors:
+    - glob-syntax
+    - skycap-product-heading
+    - what-is-a-glob
   updating_an_existing_service:
     page: skycap/tutorials/updating-an-existing-service.html
     page_anchors:
