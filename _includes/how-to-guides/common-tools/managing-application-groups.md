@@ -18,12 +18,12 @@ You will now see that a new tab has been added to your application list page. Th
 
 ### Using glob patterns for Groups
 
-Rather than choosing individual applications, you can specify a [glob](/{{page.collection}}/how-to-guides/common-tools/understanding-globs.html) that will match applications based on any one of the following:
+Rather than choosing individual applications, you can specify a [glob](/{{page.collection}}/how-to-guides/common-tools/understanding-globs.html) that will match applications based on any one of the following selectors:
 
-- (application) Name
-- Branch
-- Environment
-- Tag
+- `name` (i.e. name of the application)
+- `branch` (i.e. name of the git branch used by the application)
+- `environment` (i.e. environment of the application)
+- `tag` (i.e. application's tag)
 
 The format is `<selector>`:`<glob>` - for example `tag:*revamp*` will find **all** applications with a tag that contains the string "revamp". You cannot use multiple selectors in a single group.
 
