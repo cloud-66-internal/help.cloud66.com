@@ -10,4 +10,4 @@ tags: ["debugging"]
 
 permalink: /:collection/:path:output_ext
 ---
-{% include how-to-guides/databases/connect-db-servers.md %}
+{% include how-to-guides/databases/connect-db-servers.md product = page.collection %}
