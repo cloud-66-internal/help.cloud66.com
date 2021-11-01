@@ -43,9 +43,6 @@ When you have a load balancer on your application, your deployments can take pla
 
 One potential drawback of having a load balancer is that it is a single point of failure. To improve the high availability of an application, you can add more than one load balancer to it.
 
-#### Please note
-<div class="notice notice-warning"><p>This feature is not currently supported by Digital Ocean (pending the release of DigitalOcean native load balancers) or for any other providers that have HAproxy as their only load balancer option.</p></div>
-
 To add a second load balancer to your application:
 
 * First add a standard load balancer to your application. You can follow the instructions above to do so. 
