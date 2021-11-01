@@ -4677,6 +4677,7 @@ rails:
     - managing-yaml-configs
     - no-database-external
     - rails-product-heading
+    - the-strong-migration-gem
     - upgrading-your-database
     - warning
   database_replication:
