@@ -133,6 +133,12 @@ $ cx settings set -s my_stack run.deploy.command true
 ```
 
 When you have disabled `run.deploy.command` in [Application settings](/{{page.collection}}/references/toolbelt.html#settings-variables), you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
+
+## The Strong Migration gem
+
+Sometimes operations can cause database migrations to lock the entire database for minutes at a time - even if the structural change is simple, or made to a relatively small table. If you'd like to understand the mechanisms behind this, we recommend reading this excellent [blog post](https://medium.com/doctolib/stop-worrying-about-postgresql-locks-in-your-rails-migrations-3426027e9cc9). 
+
+To mitigate the potential for this to happen, we recommend including the [Strong Migration](https://github.com/ankane/strong_migrations) gem in your application. This will catch any potentially unsafe migrations and suggest how to avoid or reduce the risk.
 {%endif%}
 
 ## Customize your database configuration
