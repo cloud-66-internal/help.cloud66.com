@@ -56,6 +56,14 @@ If you're looking for the Manifest settings for [data, caching & storage compone
     <td>All</td>
   </tr>
   <tr>
+    <td><code>network</code> / <code>mode</code></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+<td>
+Specifies whether your servers should communicate over <code>private</code> or <code>public</code> IP addresses. Defaults to <code>private</code> if your servers are <em>either</em> all cloud <em>or</em> all <a href="/{{page.collection}}/how-to-guides/deployment/registered-servers.html">Registered</a>. If your application uses a <em>mix</em> of cloud and Registered servers, the default will be <code>public</code>.    
+</td>
+    <td>All</td>
+  </tr>
+  <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The version of Ubuntu to install on the server that hosts your Rails app. Accepted values: <code>ubuntu1804</code> or <code>ubuntu2004</code></td>
@@ -432,6 +440,14 @@ A Rails application type in the manifest file gives you fine control over things
     <td><code><a id="definition-operating-system"></a>nameservers</code></td>
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Set DNS servers for your application.  Note that if you specify empty array i.e <strong>[ ]</strong>, it won't add any nameserver to your servers. Default is an empty array: <code>[ ]</code>
+</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>network</code> / <code>mode</code></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+<td>
+Specifies whether your servers should communicate over <code>private</code> or <code>public</code> IP addresses. Defaults to <code>private</code> if your servers are <em>either</em> all cloud <em>or</em> all <a href="/{{page.collection}}/how-to-guides/deployment/registered-servers.html">Registered</a>. If your application uses a <em>mix</em> of cloud and Registered servers, the default will be <code>public</code>.    
 </td>
     <td>All</td>
   </tr>
