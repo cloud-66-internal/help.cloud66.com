@@ -2119,7 +2119,9 @@ node:
     - bitbucket-example
     - github-example
     - node-product-heading
+    - other-public-repos
     - private-repositories
+    - public-github-repos
     - public-repositories
   account_index:
     page: node/account/index.html
@@ -3851,8 +3853,10 @@ prepress:
     page_anchors:
     - bitbucket-example
     - github-example
+    - other-public-repos
     - prepress-product-heading
     - private-repositories
+    - public-github-repos
     - public-repositories
   account_index:
     page: prepress/account/index.html
@@ -4243,7 +4247,9 @@ rails:
     page_anchors:
     - bitbucket-example
     - github-example
+    - other-public-repos
     - private-repositories
+    - public-github-repos
     - public-repositories
     - rails-product-heading
   account_index:
@@ -4677,6 +4683,7 @@ rails:
     - managing-yaml-configs
     - no-database-external
     - rails-product-heading
+    - the-strong-migration-gem
     - upgrading-your-database
     - warning
   database_replication:
