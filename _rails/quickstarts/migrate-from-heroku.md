@@ -56,11 +56,13 @@ We also have a guide to [accessing your Git repository](/{{page.collection}}/how
 
 Once your code is deployed, you'll need to migrate your data across. The process differs for PostgreSQL and MySQL databases:
 
-**PostgreSQL**  
+#### PostgreSQL
 
 From your Heroku toolbelt, create a database backup URL by running `heroku pgbackups:url`. Next, visit your Application Overview and click the _Import Heroku data_ link. Paste the URL provided by the toolbelt into the field, and click _Import Heroku data_.
 
-**MySQL**  
+<div class="notice"><p>The <em>Import Heroku Data</em> button will disappear 2 weeks after you set up your app. If you need to access it, add <code>/heroku_import</code> to the end of your app's Dashboard URL. For example <code>https://app.cloud66.com/stacks/XXXXX/heroku_import</code></p></div>
+
+#### MySQL
 
 Start by dumping your existing database. Refer to the [ClearDB documentation for common problems](http://www.cleardb.com/blog/entry?id=common-problems-2).
 

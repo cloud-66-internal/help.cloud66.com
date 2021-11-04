@@ -1,9 +1,8 @@
-
 ## About deploying databases
 
 We currently support the following databases, with no need for additional configuration after deployment.
 
-* MySQL (or Percona if [configured via Manifest](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html#mysql))
+{% if include.product != 'maestro' %}* MySQL (or Percona if [configured via Manifest](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html#mysql)){% endif %}{% if include.product == 'maestro' %}* MySQL (or Percona if [configured via Manifest](/maestro/how-to-guides/build-and-config/building-a-manifest-file.html#mysql)){% endif %}
 * PostgreSQL
 * MongoDB
 * Redis
@@ -13,19 +12,21 @@ We currently support the following databases, with no need for additional config
 * GlusterFS
 * InfluxDB
 
-{%if page.collection=='rails' %}For Rack-based stacks, Cloud 66 automatically detects whether your application relies on a database or not during your code analysis. This is based on a combination of your Gemfile and your `database.yml` or `mongoid.yml` files.
-
+{%if page.collection =='rails' %}For Rack-based stacks, Cloud 66 automatically detects whether your application relies on a database or not during your code analysis. This is based on a combination of your Gemfile and your `database.yml` or `mongoid.yml` files.
 {%endif%}
+{%if page.collection =='maestro' %}
+When creating a Maestro application, you can add as many databases as you need in your [service configuration](/maestro/how-to-guides/build-and-config/docker-service-configuration.html#database-configurations) during the application build.
+{%endif%} 
 
 After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. 
 
 ### Database authentication
 
-When we deploy a database we automatically generate the required users and passwords to allow authentication. You can find these values via your Dashboard in the detail page of any database server. 
+When we deploy a database we automatically generate the required users and passwords to allow authentication. You can find these values via your Dashboard in the [detail page of any database server](/{{page.collection}}/how-to-guides/databases/shells/connect-db-servers.html#finding-database-credentials). 
 
 They will be available as environment variables and your application will be configured to use them.
 
-{%if page.collection=='rails' %}
+{%if page.collection == 'rails' %}
 If you'd prefer to manage your users and password manually (i.e. your config files), you can [prevent your configs from being modified](/rails/how-to-guides/databases/tamper-with-yaml.html).
 
 #### Note 
@@ -45,6 +46,56 @@ We will prioritise these configs as follows:
 2. Files ending with a `.environment-name`
 3. The standard YAML config file
 {% endif %}
+{%if page.collection =='maestro' %}
+## Connecting your app to your DB in Maestro
+
+Databases in Maestro run as separate components and aren't containerized. Even though they may be running on the same private network as your cluster servers, you will not be able to connect to them via localhost because of the nature of containers (which are, by definition, abstracted from operating the system).
+
+Instead, we we automatically create a Kubernetes services for each DB that connects out from your cluster to the database server(s). To see these on your cluster, you can list the namespaces and then select your namespace and list the services associated with it with the following commands:
+
+```bash
+$ kubectl get namespaces
+$ kubectl -n <your-namespace> get svc
+```
+
+This will show you all the services running, some of which will be your databases. 
+
+### Service names for database groups
+
+If your application has two or more [database groups](/maestro/how-to-guides/databases/attaching-multiple-databases.html), your Kubernetes database services will inherit those names. For example, if you have three MySQL database groups named `main`, `spare` and `archive` then the Kubernetes services will be named:
+
+- mysql-main
+- mysql-spare
+- mysql-archive
+
+If one of these groups is set as your "[primary](/maestro/how-to-guides/databases/attaching-multiple-databases.html#understanding-primary-database-groups)" then it will use the default service name (`mysql`) instead of its group-specific name.
+
+### Connection strings in Maestro
+
+A typical connection string might have:
+
+- The protocol
+- The username and password (where required)
+- The name of the Kubernetes service, including database groups (e.g. `mongodb-spare`)
+- The name of the DB server (e.g. `mongo_production_1`)
+
+So to connect to a MongoDB server named `mongo_production_1` and running in your app namespace as `mongodb-spare` you would use something like:
+
+```
+$ mongodb://mongodb-spare/mongo_production_1
+```
+
+A similar setup for a Postgres server would look something like this:
+
+```
+$ postgresql://username:password@service_name/database
+```
+
+## Connecting your app to your DB in Maestro V1
+
+To connect to a database in Version 1 of Maestro, you should use its ElasticDNS address. Please read our [full guide on ElasticDNS](/maestro/how-to-guides/build-and-config/service-network-configuration.html#elasticdns) for more details.
+{% endif %}
+
 
 ## Database deployment types
 
@@ -82,6 +133,12 @@ $ cx settings set -s my_stack run.deploy.command true
 ```
 
 When you have disabled `run.deploy.command` in [Application settings](/{{page.collection}}/references/toolbelt.html#settings-variables), you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
+
+## The Strong Migration gem
+
+Sometimes operations can cause database migrations to lock the entire database for minutes at a time - even if the structural change is simple, or made to a relatively small table. If you'd like to understand the mechanisms behind this, we recommend reading this excellent [blog post](https://medium.com/doctolib/stop-worrying-about-postgresql-locks-in-your-rails-migrations-3426027e9cc9). 
+
+To mitigate the potential for this to happen, we recommend including the [Strong Migration](https://github.com/ankane/strong_migrations) gem in your application. This will catch any potentially unsafe migrations and suggest how to avoid or reduce the risk.
 {%endif%}
 
 ## Customize your database configuration
