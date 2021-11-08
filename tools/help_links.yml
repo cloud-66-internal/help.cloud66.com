@@ -267,6 +267,7 @@ maestro:
     - external-links
     - generate-gce-api-keys
     - maestro-product-heading
+    - using-gce-service-accounts-with-cloud-66
   cloud_hetzner:
     page: maestro/how-to-guides/clouds/cloud-hetzner.html
     page_anchors:
@@ -2341,6 +2342,7 @@ node:
     - external-links
     - generate-gce-api-keys
     - node-product-heading
+    - using-gce-service-accounts-with-cloud-66
   cloud_hetzner:
     page: node/how-to-guides/clouds/cloud-hetzner.html
     page_anchors:
@@ -4498,6 +4500,7 @@ rails:
     - external-links
     - generate-gce-api-keys
     - rails-product-heading
+    - using-gce-service-accounts-with-cloud-66
   cloud_hetzner:
     page: rails/how-to-guides/clouds/cloud-hetzner.html
     page_anchors:
