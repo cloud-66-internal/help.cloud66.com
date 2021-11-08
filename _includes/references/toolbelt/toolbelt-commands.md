@@ -77,31 +77,53 @@ Lists all the **managed database backups** for an application grouped by their d
 
 Download a managed database backup via command line. The command will automatically concatenate separate files into one if the backup consists of numerous files.
 
-### Usage
+<div class="Tabs Tabs--enclosed">
+    <nav>
+    <ul class="TabMini js_tabs">
+    <li class="TabMini-item active">
+    <a href="#usage" class="TabMini-link">
+    Usage
+    </a>
+    </li>
+    <li class="TabMini-item">
+    <a href="#parameters" class="TabMini-link">
+    Parameters
+    </a>
+    </li>
+    <li class="TabMini-item">
+        <a href="#examples" class="TabMini-link">
+        Examples
+        </a>
+        </li>   
+    </ul>
+ </nav>   
+    <section id="usage" class="Tabs-content js_tab_content">		
+	<pre class="language-shell u-whiteSpaceNoWrap"><code>$ cx backups download [-s &lt;stack&gt;] [-d &lt;download directory&gt;] &lt;backup id&gt;</code></pre>
+    </section>
+    
+    <section id="parameters" class="Tabs-content js_tab_content is-hidden">
+   <table class='table table-bordered table-striped'>
+	<thead>
+	<tr>
+	<th>Parameter</th> 	
+            <th width="10%">Required?</th>
+<th width="15%">Default</th>
+	<th>Description</th>
+	</tr>
+	</thead>
+	<tbody><tr><td><code>stack</code></td><td>Required</td><td><code>—</code></td><td>Name of your application</td></tr><tr><td><code>dbtypes</code></td><td>Optional</td><td><code>all</code></td><td>Comma separated list of Database types which need backup tasks</td></tr><tr><td><code>frequency</code></td><td>Optional</td><td><code>0 */1 * * *</code></td><td>Frequency of backup task in cron schedule format</td></tr><tr><td><code>keep</code></td><td>Optional</td><td><code>100</code></td><td>Number of previous backups to keep</td></tr><tr><td><code>gzip</code></td><td>Optional</td><td><code>TRUE</code></td><td>Compress your backups with gzip</td></tr><tr><td><code>exclude-tables</code></td><td>Optional</td><td><code>—</code></td><td>Tables that must be excluded from the backup</td></tr><tr><td><code>run-on-replica</code></td><td>Optional</td><td><code>TRUE</code></td><td>Run backup task on replica server if available</td></tr>	</tbody>
+	</table>
+    
+    </section>
+    <section id="examples" class="Tabs-content js_tab_content is-hidden">
+    
+		<pre class="language-shell u-whiteSpaceNoWrap"><code>$ cx backups new -s mystack --dbtypes=postgresql --frequency="0 */1 * * *" --keep 50 --gzip=true exclude-tables=my_log_table --run-on-replica=false</code></pre>		        
+    </section>
+    </div>
 
-```shell
-$ cx backups download [-s <stack>] [-d <download directory>] <backup id>
-```
 
+## config
 
-### Parameters
+Allows you to configure multiple profiles in cx to support multiple Cloud 66 accounts. Please read our separate guide on installing and configuring Toolbelt.
 
-
-|		Parameter 		   |	Default		|   Description    |
-|--|:--:| -:|
-|stack 					   |	—			|Name of your application|
-|dbtypes (optional) 	   | 	all			|Comma separated list of Database types which need backup tasks|
-|frequency (optional) 	   |	0 */1 * * *	|Frequency of backup task in cron schedule format|
-|keep (optional) 		   |	100			|Number of previous backups to keep|
-|gzip (optional)		   |	true		|Compress your backups with gzip|
-|exclude-tables (optional) |	—			|Tables that must be excluded from the backup|
-|run-on-replica (optional) |	true		|Run backup task on replica server if available|
-{:.table}
-
-
-### Example
-
-```shell
-$ cx backups new -s mystack --dbtypes=postgresql --frequency="0 */1 * * *" --keep 50 --gzip=true exclude-tables=my_log_table --run-on-replica=false
-```
 
