@@ -52,6 +52,23 @@ Visit the Cloud 66 Dashboard and click the green *New Application* button. After
 If you delete your application from Cloud 66, your servers will not be deleted on your cloud provider unless the <a href="/{{page.collection}}/how-to-guides/deployment/server-deletion.html">physical server deletion</a> setting is turned on.
 </p></div>
 
+## Using GCE service accounts with Cloud 66
+
+A [service account](https://cloud.google.com/iam/docs/service-accounts#types){:target="_blank"} is a GCE identity that Google Cloud can use to run API requests on your behalf. If you've never used a GCE service account before, please read [Google's documentation](https://cloud.google.com/iam/docs/service-accounts#types){:target="_blank"} before starting.
+
+To use a GCE service account with a Cloud 66 application, you must add the name of the account to your [manifest](/{{page.collection}}/quickstarts/getting-started-with-manifest.html) using the format `configuration/instance_service_account_name`. For example, this would configure MySQL to use the GCE service account named `mysql-user@my-project-name.iam.gserviceaccount.com`:
+
+```yaml
+mysql:
+  configuration:
+    version: 5.7
+    root_disk_size: 100
+    root_disk_type: ssd
+    instance_service_account_name: mysql-user@my-project-name.iam.gserviceaccount.com
+```
+
+Cloud 66 will now associate any MySQL instances created with the GCE service account you specified.
+
 ### External links
 - [GCE regions](https://developers.google.com/compute/docs/zones#available)
 - [GCE pricing](https://cloud.google.com/compute/pricing)

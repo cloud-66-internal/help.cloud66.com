@@ -48,6 +48,12 @@ If you're looking for the Manifest settings for [data, caching & storage compone
     <td>Set the number of old images to save on your servers (besides the running image). Defaults to <code>2</code>.</td>
     <td>All</td>
   </tr>
+<tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
+  </tr>
   <tr>
     <td><code>nameservers</code></td>
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
@@ -415,6 +421,12 @@ A Rails application type in the manifest file gives you fine control over things
     <td>Set this to <code>false</code> to exclude any Git submodules from being pulled during a build. Default is <code>true</code>
 </td>
     <td>All</td>
+  </tr>
+ <tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
   </tr>
   <tr>
     <td><code>keep_releases</code></td>
