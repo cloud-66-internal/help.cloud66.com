@@ -92,6 +92,13 @@ maestro:
     - post-deployment-health-checks
     - running-an-on-demand-health-check
     - viewing-results-of-post-deployment-checks
+  application_protection:
+    page: maestro/how-to-guides/common-tools/application-protection.html
+    page_anchors:
+    - enabling-application-protection
+    - maestro-product-heading
+    - more-ways-to-protect-your-app
+    - what-is-application-protection
   application_transfer:
     page: maestro/account/application-transfer.html
     page_anchors:
@@ -2178,6 +2185,13 @@ node:
     - post-deployment-health-checks
     - running-an-on-demand-health-check
     - viewing-results-of-post-deployment-checks
+  application_protection:
+    page: node/how-to-guides/common-tools/application-protection.html
+    page_anchors:
+    - enabling-application-protection
+    - more-ways-to-protect-your-app
+    - node-product-heading
+    - what-is-application-protection
   application_settings_node:
     page: node/how-to-guides/deployment/application-settings-node.html
     page_anchors:
@@ -4308,6 +4322,13 @@ rails:
     - rails-product-heading
     - running-an-on-demand-health-check
     - viewing-results-of-post-deployment-checks
+  application_protection:
+    page: rails/how-to-guides/common-tools/application-protection.html
+    page_anchors:
+    - enabling-application-protection
+    - more-ways-to-protect-your-app
+    - rails-product-heading
+    - what-is-application-protection
   application_transfer:
     page: rails/account/application-transfer.html
     page_anchors:
