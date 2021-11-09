@@ -70,5 +70,5 @@ You'll notice that there is also a DNS entry that uses the **application's priva
 
 ## More help
 
-- How to [connect to your servers remotely using APN](/{{page.collection/tutorials/securely-accessing-applications.html}})
+- How to [connect to your servers remotely using APN](/{{page.collection}}/tutorials/securely-accessing-applications.html)
 - A [reference guide to APNs](/{{page.collection}}/references/understanding-application-private-networks.html) (including security specifications)
