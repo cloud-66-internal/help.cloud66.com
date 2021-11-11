@@ -160,6 +160,14 @@ services:
 
 <hr>
 
+### Pre-start command
+
+This is a `command` that executes immediately after a container is created.
+
+### Pre-stop command
+
+This is a `command` that executes immediately before a container is terminated.
+
 ### Pre-start signal
 
 <div class="Tabs Tabs--enclosed">
