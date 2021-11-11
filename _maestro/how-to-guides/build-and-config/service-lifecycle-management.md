@@ -4,7 +4,7 @@ template: one-col
 title:  "Customizing service life-cycle management"
 categories: how-to-guides/build-and-config
 order: 3
-lead: How to manage your container life cycle
+lead: How to manage and customize your container life cycle
 legacy: false
 tags: ['service', 'operations']
 permalink: /:collection/:path:output_ext
@@ -38,14 +38,7 @@ The above can be summarized as the life-cycle management of your containers, whi
 
 ## Configuration
 
-There are several directives you can set in your service configuration (`service.yml`) to customize your container life-cycle management:
-
-- [health](#health)
-- [pre_start_signal](#pre-start)
-- [pre_stop_sequence](#pre-stop)
-- [requires](#requires)
-- [restart_on_deploy](#restart)
-- [stop_grace](#stop-grace)
+Below are all the directives you can set in your service configuration (`service.yml`) to customize your container life-cycle management.
 
 (Read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help on customizing your service configuration.)
 
@@ -275,7 +268,6 @@ services:
     [service_name]:
         restart_on_deploy: false
 ```
-
 
 
 ### Stop grace
