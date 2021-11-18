@@ -153,7 +153,7 @@ maestro:
     - replicating-data-between-database-groups
     - specifying-database-groups-via-manifest
     - understanding-database-groups
-    - understanding-primary-database-groups
+    - understanding-default-database-groups
   audit_logs:
     page: maestro/account/audit-logs.html
     page_anchors:
@@ -514,7 +514,6 @@ maestro:
     - no-database-external
     - service-names-for-database-groups
     - upgrading-your-database
-    - warning
   database_replication:
     page: maestro/how-to-guides/databases/database-replication.html
     page_anchors:
@@ -2285,7 +2284,7 @@ node:
     - replicating-data-between-database-groups
     - specifying-database-groups-via-manifest
     - understanding-database-groups
-    - understanding-primary-database-groups
+    - understanding-default-database-groups
   audit_logs:
     page: node/account/audit-logs.html
     page_anchors:
@@ -2571,7 +2570,6 @@ node:
     - no-database-external
     - node-product-heading
     - upgrading-your-database
-    - warning
   database_replication:
     page: node/how-to-guides/databases/database-replication.html
     page_anchors:
@@ -4412,7 +4410,7 @@ rails:
     - replicating-data-between-database-groups
     - specifying-database-groups-via-manifest
     - understanding-database-groups
-    - understanding-primary-database-groups
+    - understanding-default-database-groups
   audit_logs:
     page: rails/account/audit-logs.html
     page_anchors:
@@ -4735,7 +4733,6 @@ rails:
     - rails-product-heading
     - the-strong-migration-gem
     - upgrading-your-database
-    - warning
   database_replication:
     page: rails/how-to-guides/databases/database-replication.html
     page_anchors:
@@ -5562,6 +5559,14 @@ rails:
   rails_console:
     page: rails/how-to-guides/deployment/rails-console.html
     page_anchors:
+    - rails-product-heading
+  rails_multidb:
+    page: rails/how-to-guides/databases/rails-multidb.html
+    page_anchors:
+    - configuring-a-primary-and-replica-database
+    - configuring-multiple-separate-databases
+    - customising-rails-multidb-instances-via-manifest
+    - overview
     - rails-product-heading
   rails_node_version:
     page: rails/how-to-guides/deployment/rails-node-version.html
