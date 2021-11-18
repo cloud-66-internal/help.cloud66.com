@@ -153,7 +153,7 @@ maestro:
     - replicating-data-between-database-groups
     - specifying-database-groups-via-manifest
     - understanding-database-groups
-    - understanding-primary-database-groups
+    - understanding-default-database-groups
   audit_logs:
     page: maestro/account/audit-logs.html
     page_anchors:
@@ -197,15 +197,13 @@ maestro:
     - build-command
     - build-root
     - command
-    - configuration
     - deploy-command
     - dockerfile-path
     - git-branch
     - git-url
     - image
     - maestro-product-heading
-    - provide-a-docker-image
-    - pull-code-from-git
+    - overview
     - using-habitus-for-builds
   change_psql_directory:
     page: maestro/how-to-guides/databases/shells/change-psql-directory.html
@@ -516,7 +514,6 @@ maestro:
     - no-database-external
     - service-names-for-database-groups
     - upgrading-your-database
-    - warning
   database_replication:
     page: maestro/how-to-guides/databases/database-replication.html
     page_anchors:
@@ -948,6 +945,22 @@ maestro:
     - maestro-product-heading
     - overview
     - rate-limiting-exceptions
+  legacy_building_your_service_csv1:
+    page: maestro/how-to-guides/build-and-config/legacy-building-your-service-csv1.html
+    page_anchors:
+    - build-command
+    - build-root
+    - command
+    - configuration
+    - deploy-command
+    - dockerfile-path
+    - git-branch
+    - git-url
+    - image
+    - maestro-product-heading
+    - provide-a-docker-image
+    - pull-code-from-git
+    - using-habitus-for-builds
   lets_encrypt:
     page: maestro/how-to-guides/security/lets-encrypt.html
     page_anchors:
@@ -1536,6 +1549,14 @@ maestro:
     - granting-api-access-to-a-service-account
     - maestro-product-heading
     - overview
+  service_configuration_options:
+    page: maestro/references/service-configuration-options.html
+    page_anchors:
+    - maestro-product-heading
+    - overview
+    - service-configuration-options
+    - setting-a-service-account-name
+    - using-habitus-for-builds
   service_lifecycle_management:
     page: maestro/how-to-guides/build-and-config/service-lifecycle-management.html
     page_anchors:
@@ -1544,12 +1565,11 @@ maestro:
     - health
     - maestro-product-heading
     - orchestration-engine
-    - pre-start
+    - pre-start-command
     - pre-start-signal
-    - pre-stop
+    - pre-stop-command
     - pre-stop-sequence
     - requires
-    - restart
     - restart-on-deploy
     - stop-grace
   service_network_configuration:
@@ -1571,11 +1591,16 @@ maestro:
   service_networking:
     page: maestro/how-to-guides/build-and-config/service-networking.html
     page_anchors:
+    - dns-behaviour
     - examples-of-default-ports
+    - load-balancing
     - maestro-product-heading
+    - managing-traffic-matching-via-the-dashboard
     - mapping-multiple-ports
     - non-http-ports-tcp-and-udp
     - overview
+    - traffic-matching
+    - using-traffic-matches-to-reroute-all-traffic
   service_resources:
     page: maestro/how-to-guides/build-and-config/service-resources.html
     page_anchors:
@@ -2259,7 +2284,7 @@ node:
     - replicating-data-between-database-groups
     - specifying-database-groups-via-manifest
     - understanding-database-groups
-    - understanding-primary-database-groups
+    - understanding-default-database-groups
   audit_logs:
     page: node/account/audit-logs.html
     page_anchors:
@@ -2545,7 +2570,6 @@ node:
     - no-database-external
     - node-product-heading
     - upgrading-your-database
-    - warning
   database_replication:
     page: node/how-to-guides/databases/database-replication.html
     page_anchors:
@@ -4386,7 +4410,7 @@ rails:
     - replicating-data-between-database-groups
     - specifying-database-groups-via-manifest
     - understanding-database-groups
-    - understanding-primary-database-groups
+    - understanding-default-database-groups
   audit_logs:
     page: rails/account/audit-logs.html
     page_anchors:
@@ -4709,7 +4733,6 @@ rails:
     - rails-product-heading
     - the-strong-migration-gem
     - upgrading-your-database
-    - warning
   database_replication:
     page: rails/how-to-guides/databases/database-replication.html
     page_anchors:
@@ -5536,6 +5559,14 @@ rails:
   rails_console:
     page: rails/how-to-guides/deployment/rails-console.html
     page_anchors:
+    - rails-product-heading
+  rails_multidb:
+    page: rails/how-to-guides/databases/rails-multidb.html
+    page_anchors:
+    - configuring-a-primary-and-replica-database
+    - configuring-multiple-separate-databases
+    - customising-rails-multidb-instances-via-manifest
+    - overview
     - rails-product-heading
   rails_node_version:
     page: rails/how-to-guides/deployment/rails-node-version.html

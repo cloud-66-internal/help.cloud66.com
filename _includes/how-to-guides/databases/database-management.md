@@ -20,6 +20,11 @@ When creating a Maestro application, you can add as many databases as you need i
 
 After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. 
 
+{% if page.collection =='rails' %}
+<div class="notice" markdown="1">Cloud 66 supports multiple databases for Rails (i.e. multiple databases with Active Record). Please read our [MultiDB for Rails guide](/rails/how-to-guides/databases/rails-multidb.html) to learn how to configure this feature.
+</div>
+{% endif %} 
+
 ### Database authentication
 
 When we deploy a database we automatically generate the required users and passwords to allow authentication. You can find these values via your Dashboard in the [detail page of any database server](/{{page.collection}}/how-to-guides/databases/shells/connect-db-servers.html#finding-database-credentials). 
@@ -29,8 +34,7 @@ They will be available as environment variables and your application will be con
 {%if page.collection == 'rails' %}
 If you'd prefer to manage your users and password manually (i.e. your config files), you can [prevent your configs from being modified](/rails/how-to-guides/databases/tamper-with-yaml.html).
 
-#### Note 
-<div class="notice notice-warning"><p>If your <code>database.yml</code> file has a <code>url</code> defined, we will assume that you are using <strong>an external (self-managed) database</strong>, and will follow that URL accordingly. This also means we <strong>won't</strong> set any of the database variables (such as username and password) the way we would normally do.</p></div>
+<div class="notice notice-warning"><p>⚠️ If your <code>database.yml</code> file has a <code>url</code> defined, we will assume that you are using <strong>an external (self-managed) database</strong>, and will follow that URL accordingly. This also means we <strong>won't</strong> set any of the database variables (such as username and password) the way we would normally do.</p></div>
 
 ### Managing YAML configs
 
@@ -154,9 +158,8 @@ Editing and committing your database CustomConfig will perform the following ste
 - Upload the configuration to the server
 - Restart your database
 
-### Warning
 <div class="notice notice-warning">
-<p>A bad database configuration might stop your database from working. Take extra care to make sure the configuration is correct.</p>
+<p>🚨 A bad database configuration might stop your database from working. Take extra care to make sure the configuration is correct.</p>
 </div>
 
 ### Database customization variables

@@ -113,3 +113,64 @@ Some example of default ports used by popular programming frameworks or applicat
     </tr> 
    </tbody> 
   </table> 
+
+## Traffic matching
+
+The `traffic_matches` option allows you to route incoming traffic to different services based on the incoming domain name. You can specify an array of domains (as strings) to match to your service.
+
+In the following example, if traffic comes in on `app.your_domain.com` or `www.anotherdomain.com` on this service port, then traffic will automatically get routed to `my-service`. 
+
+```yaml
+services:
+  my-service:
+    traffic_matches: ["app.your_domain.com", "www.anotherdomain.com"]
+```
+
+This option also allows you to have multiple services listening on the same port (port 80 for example) as long as they have different rules for matching server names. For example:
+
+```yaml
+services:
+  my-first-service:
+    traffic_matches: ["app.your_domain.com", "www.anotherdomain.com"]
+    ports:
+    - container: 5000
+      http: 80
+  my-second-service:
+    traffic_matches: ["app.third_domain.com", "fourthdomain.com"]
+    ports:
+    - container: 3000
+      http: 80
+```
+
+### Managing traffic matching via the Dashboard
+
+You can also add and update traffic matching via the dashboard. To edit an existing service: 
+
+1. Log into your [Dashboard](https://app.cloud66.com/)
+2. Click through to the app you need to update
+3. In the **Services** panel, click the edit icon next to the service you need to update
+4. In the drawer that slides out from the left, click the *Network & Storage* tab (at the top)
+5. Add or update (or remove) your domain matching strings
+6. Click *Save Service*
+7. Apply the change to the service by clicking the green Apply button (above the **Services** panel)
+8. Redeploy your application to roll out the change
+
+### Using traffic matches to reroute all traffic
+
+The `traffic_matches` option can also be used to ensure that any and all traffic hitting your servers is routed to a specific service. To do this, add  `traffic_matches` to that service and set it to match `"_"` (underscore). This is will route any traffic that hits your servers to this service. For example:
+
+```yaml
+    services:
+        <service_name>:
+            traffic_matches: ["_"]
+```
+
+Be cautious with this approach as it is effectively a global setting and may disrupt your other services if there are any conflicts.
+
+## DNS Behaviour
+
+The `dns_behaviour` directive allows you to change the default behavior of returned DNS addresses of different versions. As outlined above, ElasticDNS always try to return the version of the container that has the same version of the caller. You can change this behavior by setting `dns_behaviour` value to `non-versioned`, in which case ElasticDNS will return the address of containers with the latest version.
+
+## Load Balancing
+
+You can change the container network load balancing method with the `load_balancing` directive. The accepted values are `roundrobin`, `sticky` and `closest`, and the default value is `roundrobin` which return the list of container's IP for the requested service in roundrobin. If you choose the `sticky` option, you will get the last IP you got (if you request after 1 minute you may get a new IP). If you choose the `closest` option, you will get the list of container's IP that exists on caller server (it will return all available IPs if there is no container of the requested service on caller server).
