@@ -9,7 +9,7 @@ legacy: false
 tags: ["MySQL", "PostgreSQL", "MongoDB", "Redis"]
 permalink: /:collection/:path:output_ext
 ---
-
+ 
 ## Overview
 
 Rails version 6 (and above) natively supports attaching multiple databases to your application. This is built into Active Record and supports a number of very useful features - like replicas and automatic connection switching. 
