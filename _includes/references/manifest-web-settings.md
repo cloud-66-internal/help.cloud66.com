@@ -24,6 +24,24 @@ If you're looking for the Manifest settings for [data, caching & storage compone
   </tr>
 </thead>
 <tbody>
+   <tr>
+    <td><code>activeprotect</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The parent node for ActiveProtect settings (see <code>whitelist</code> and <code>http_ban_rate</code> below)</td>
+    <td>All</td>
+  </tr>
+    <tr>
+    <td><code>activeprotect / whitelist</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>A comma-separated whitelist of IPs that should be ignored by your ActiveProtect configuration. Must be nested under <code>activeprotect</code>.</td>
+    <td>All</td>
+  </tr> 
+ <tr>
+    <td><code>activeprotect / http_ban_rate</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Set the threshold of *requests per minute* from a single IP address. The default is <code>2000</code>. Must be nested under <code>activeprotect</code>.</td>
+    <td>All</td>
+  </tr>
   <tr>
     <td><code>docker_version</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
