@@ -71,7 +71,7 @@ To enable replication for a single application, you need to scale up to create a
 
 ### Between database groups
 
-Please see our full guide on database groups for details on how this works.
+Please see our [guide to database groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html) for details on how this works.
 
 ### Between applications
 
