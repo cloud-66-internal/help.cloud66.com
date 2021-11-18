@@ -118,7 +118,7 @@ services:
                 command: 'cat /tmp/app_started'                  
 </code></pre>
 
-You can also use the default health rules with <code>health: default</code>, or explicitly disable health checking by leaving the <code>health</code> option out or specifying <code>health: none</code>.
+<p>You can also use the default health rules with <code>health: default</code>, or explicitly disable health checking by leaving the <code>health</code> option out or specifying <code>health: none</code>.</p>
 </section>
 
 <section id="V1-First" class="Tabs-content js_tab_content is-hidden">
@@ -133,7 +133,6 @@ A healthy container would be expected to POST <code>{"ready":true}</code> as its
 </p><p>
 The rules below are available to health checks - note that you aren't required to specify all options. Any options not used will use their default values.
 </p>
-
 <ul>
 <li><strong>type</strong> (<em>defaults to inbound</em>): Accepted values are <code>inbound</code> or <code>outbound</code>.</li>
 <li><strong>endpoint</strong> (<em>defaults to <code>/</code></em>): The endpoint tested for status.</li>
@@ -188,6 +187,12 @@ This is a `command` that executes immediately before a container is terminated.
 
 <section id="V2-2" class="Tabs-content js_tab_content">
 
+<p><strong>This command is not supported by Maestro Version 2.</strong></p>
+
+</section>
+
+<section id="V1-2" class="Tabs-content js_tab_content is-hidden">
+
 <p>This is a signal that is sent to the existing containers of the service before the new containers are started during deployment. An example could be <code>USR1</code> - but it depends on what your container is running as to which signals make sense.</p>
 
 <pre class="language-yaml"><code>
@@ -195,12 +200,6 @@ services:
     [service_name]:
         pre_start_signal: USR1
 </code></pre>
-
-</section>
-
-<section id="V1-2" class="Tabs-content js_tab_content is-hidden">
-
-<p><strong>This command is not supported by Maestro Version 1.</strong></p>
 
 </section>
 </div>
@@ -227,6 +226,12 @@ services:
 
 <section id="V2-3" class="Tabs-content js_tab_content">
 
+<p><strong>This command is not supported by Maestro Version 2.</strong></p>
+
+</section>
+
+<section id="V1-3" class="Tabs-content js_tab_content is-hidden">
+
 <p>This is a stop sequence that is executed on your running containers before they are shut down. It is a sequence of wait times and signals to send to the process. If the sequence completes and the container is still running, a force kill will be sent. For example:</p>
 
 <pre class="language-yaml"><code>
@@ -242,12 +247,6 @@ services:
 <pre class="language-ruby line-numbers u-whiteSpaceNoWrap"><code>
 'ABRT', 'ALRM', 'BUS', 'CHLD', 'CONT', 'FPE', 'HUP', 'ILL', 'INT', 'IO', 'IOT', 'KILL', 'PIPE', 'PROF', 'QUIT', 'SEGV', 'STOP', 'SYS', 'TERM', 'TRAP', 'TSTP', 'TTIN', 'TTOU', 'URG', 'USR1', 'USR2', 'VTALRM', 'WINCH', 'XCPU', 'XFSZ'
 </code></pre>
-
-</section>
-
-<section id="V1-3" class="Tabs-content js_tab_content is-hidden">
-
-<p><strong>This command is not supported by Maestro Version 1.</strong></p>
 
 </section>
 </div>
