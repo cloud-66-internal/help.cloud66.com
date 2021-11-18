@@ -5,7 +5,7 @@ Multi Database Support allows you to attach multiple **database groups** to an a
 {% if include.product == 'rails' %}
 Database Groups allow you to attach multiple databases to a single application. A database group is a collection of one or more databases of the *same* type (e.g. MySQL). Different groups can have different database types, allowing a single app to use multiple types of databases (e.g. Postgres *and* Redis), or they can have the same type (e.g. two *separate* groups of MySQL servers).
 
-If you are using the **native** Rails multiDB feature (i.e. multiple databases with Active Record) then please read our [Rails MultiDB guide](/rails/how-to-guides/databases/rails-multi-DB.html). (The feature actually uses Database Groups, but does so via another method).
+If you are using the **native** Rails multiDB feature (i.e. multiple databases with Active Record) then please read our [Rails MultiDB guide](/rails/how-to-guides/databases/rails-multidb.html). (The feature actually uses Database Groups, but does so via another method).
 {% endif %}
 ## Understanding database groups
 

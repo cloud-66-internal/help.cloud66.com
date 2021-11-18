@@ -20,8 +20,10 @@ When creating a Maestro application, you can add as many databases as you need i
 
 After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. 
 
-<div class="notice" markdown="1">Cloud 66 supports multiple databases for Rails (i.e. multiple databases with Active Record). Please read our [MultiDB for Rails guide](/rails/how-to-guides/databases/rails-multi-DB.html) to learn how to configure this feature.
+{% if page.collection =='rails' %}
+<div class="notice" markdown="1">Cloud 66 supports multiple databases for Rails (i.e. multiple databases with Active Record). Please read our [MultiDB for Rails guide](/rails/how-to-guides/databases/rails-multidb.html) to learn how to configure this feature.
 </div>
+{% endif %} 
 
 ### Database authentication
 
