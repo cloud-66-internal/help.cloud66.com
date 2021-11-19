@@ -121,7 +121,7 @@ To connect to a database in Version 1 of Maestro, you should use its ElasticDNS 
 
 This option allows you to deploy your application without a database managed by Cloud 66, and is ideal for externally hosted databases. 
 
-{%if page.collection=='rails' %}For Rails apps, if you have a `url` set in your `database.yml` then we will assume that you are using an external DB.{% endif %}
+{%if page.collection=='rails' %}For Rails apps, if you have a `url` set in your `database.yml` then we will assume that you are using an external DB. You will need to [set your own env vars](#environment-variables-during-deployment) during deployment, to ensure we can connect to it.{% endif %}
 
 You can also configure an external database via your [Manifest file](/{{page.collection}}/references/manifest-database-settings.html#specifying-external-databases-via-your-manifest) by specifying the `server` node as `external`. 
 
