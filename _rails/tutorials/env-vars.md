@@ -10,6 +10,4 @@ tags: ["customization"]
 permalink: /:collection/:path:output_ext
 ---
 
-{% assign product = 'rails' %}
-
-{% include how-to-guides/deployment/env-vars.md product = product %}
+{% include tutorials/env-vars.md product = page.collection %}

@@ -10,4 +10,4 @@ tags: ["customization"]
 permalink: /:collection/:path:output_ext
 ---
 
-{% include how-to-guides/deployment/env-vars.md product = page.collection %}
+{% include tutorials/env-vars.md product = page.collection %}

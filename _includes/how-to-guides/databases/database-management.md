@@ -34,11 +34,12 @@ They will be available as environment variables and your application will be con
 {%if page.collection == 'rails' %}
 If you'd prefer to manage your users and password manually (i.e. your config files), you can [prevent your configs from being modified](/rails/how-to-guides/databases/tamper-with-yaml.html).
 
-<div class="notice notice-warning"><p>⚠️ If your <code>database.yml</code> file has a <code>url</code> defined, we will assume that you are using <strong>an external (self-managed) database</strong>, and will follow that URL accordingly. This also means we <strong>won't</strong> set any of the database variables (such as username and password) the way we would normally do.</p></div>
+<div class="notice notice-warning" markdown="1">⚠️ If your `database.yml` file has a `url` defined, we will assume that you are using an **external (self-managed) database**, and will follow that URL accordingly. This also means we **won't** set any of the database variables (such as username and password) the way we would normally do. You will need to set these yourself - either in your YAML config file, or by manually adding environment variables (see below).
+</div>
 
 ### Managing YAML configs
 
-A Rails app must have either a `config/database.yml` file or `config/mongoid.yml` in order to work on Cloud 66. We will create these files automatically if they don't exist. We will update any existing files with new values (for example passwords) as required. (See above for how to prevent this)
+A Rails app must have either a `config/database.yml` file or `config/mongoid.yml` in order to work on Cloud 66. We will create these files automatically if they don't exist. We will update any existing files with new values (for example passwords) as required. You can [turn this feature off](/rails/how-to-guides/databases/tamper-with-yaml.html) if needed. (See [below](#environment-variables-during-deployment) for more on env vars)
 
 If you want to specify a different DB config per environment, you can name the files `config/database.yml.environment-name` (e.g. `config/database.yml.dev`)
 
@@ -49,6 +50,19 @@ We will prioritise these configs as follows:
 1. Files ending `.cloud66`
 2. Files ending with a `.environment-name`
 3. The standard YAML config file
+
+### Environment variables during deployment
+
+When you set up an application on Cloud 66, we detect its database type(s) (from your code) and generate a set of variables for things like `username` and `password` and `URL`. We only generate these "analyzed variables" **after** you have confirmed that we will be managing the database(s). 
+
+You can see a list of these variables during application creation by clicking on the *Add Environment Variables* button and then clicking the *Show variables* link under Analysed Variables. 
+
+For databases that we manage, we will generate all of these variables, and replace any existing variables you have in your YAML config files (unless you [turn the auto-replacement feature off](/rails/how-to-guides/databases/tamper-with-yaml.html)).
+
+If your application uses an externally hosted (self-managed) database, **we will not generate any of the analysed variables**. If your config files rely on environment variables, you will need to set these manually before you deploy, or we will not be able to connect to your database. 
+
+To do this, click on the *Add Environment Variables* button (in the yellow **Review your Rails application** box) and then add your keys and values to the Custom Variables section.
+
 {% endif %}
 {%if page.collection =='maestro' %}
 ## Connecting your app to your DB in Maestro
@@ -107,7 +121,7 @@ To connect to a database in Version 1 of Maestro, you should use its ElasticDNS 
 
 This option allows you to deploy your application without a database managed by Cloud 66, and is ideal for externally hosted databases. 
 
-{%if page.collection=='rails' %}For Rails apps, if you have a `url` set in your `database.yml` then we will assume that you are using an external DB.{% endif %}
+{%if page.collection=='rails' %}For Rails apps, if you have a `url` set in your `database.yml` then we will assume that you are using an external DB. You will need to [set your own env vars](#environment-variables-during-deployment) during deployment, to ensure we can connect to it.{% endif %}
 
 You can also configure an external database via your [Manifest file](/{{page.collection}}/references/manifest-database-settings.html#specifying-external-databases-via-your-manifest) by specifying the `server` node as `external`. 
 

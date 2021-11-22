@@ -38,18 +38,21 @@ The following variables are created for Rack-based applications (among others):
 
 {% endif %}
 {% if include.product != 'prepress' %}
-If you have a MySQL server, the following variables are created and inserted into your _database.yml_ (unless you have specified your own):
+For database servers **that we manage**, we automatically create variables and insert them into your `database.yml` and/or `mongoid.yml`. For example, for a MySQL database we would create variables such as:
 
-- **MYSQL_ADDRESS** &mdash; The physical address of your server
-- **MYSQL_USERNAME** &mdash; Randomly generated string
-- **MYSQL_PASSWORD** &mdash; Randomly generated string
+- **MYSQL_ADDRESS** — The physical address of your server
+- **MYSQL_USERNAME** — Randomly generated string
+- **MYSQL_PASSWORD** — Randomly generated string
+- **MYSQL_DATABASE** — the name of the database
+
+If your application uses an externally hosted (self-managed) database, **we will not generate any of these variables**. If your config files rely on environment variables, you will need to set these manually before you deploy, or we will not be able to connect to your database. Please read our [database management guide](/rails/how-to-guides/databases/database-management.html#environment-variables-during-deployment) for more details.
 {% endif %}
-{% if include.product != 'prepress' %}
+{% if include.product == 'prepress' %}
 Prepress applications have a default env var named `CLOUD66_SITE_URL`. This is the base URL currently in use by your site. If your application has a custom domain configured, this variable will reflect that value.
 
 This variable is available during your application's build process. 
-
 {% endif %}
+
 For a full list of environment variables available in your application, visit the _Environment variables_ link in the right sidebar of your Application Overview. If you don't currently have an application, the environment variables available to you are shown after your code analysis.
 
 ## Assign env-vars for deployment
