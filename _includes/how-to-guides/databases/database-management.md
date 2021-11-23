@@ -55,14 +55,15 @@ We will prioritise these configs as follows:
 
 When you set up an application on Cloud 66, we detect its database type(s) (from your code) and generate a set of variables for things like `username` and `password` and `URL`. We only generate these "analyzed variables" **after** you have confirmed that we will be managing the database(s). 
 
-You can see a list of these variables during application creation by clicking on the *Add Environment Variables* button and then clicking the *Show variables* link under Analysed Variables. 
+You can see a list of these variables during application creation by clicking on the *Add Environment Variables* button (in the yellow **Review your Rails application** box) . You will see the list of analyzed variables for your database(s) at the top of the panel.
 
-For databases that we manage, we will generate all of these variables, and replace any existing variables you have in your YAML config files (unless you [turn the auto-replacement feature off](/rails/how-to-guides/databases/tamper-with-yaml.html)).
+For databases that we manage, we will generate all of these variables, and replace any existing variables you have in your YAML config files unless you [turn the auto-replacement feature off](/rails/how-to-guides/databases/tamper-with-yaml.html). (You can also override the values of these variables manually, one by one, if you wish - see below)
 
 If your application uses an externally hosted (self-managed) database, **we will not generate any of the analysed variables**. If your config files rely on environment variables, you will need to set these manually before you deploy, or we will not be able to connect to your database. 
 
-To do this, click on the *Add Environment Variables* button (in the yellow **Review your Rails application** box) and then add your keys and values to the Custom Variables section.
+### Setting variables manually (overriding)
 
+To add your own values to the analyzed variables, click on the *Add Environment Variables* button and then click the *Override* link next to each of the variables you wish to update. Remember, for **external databases**, we will discard any variables which do not have values set manually.
 {% endif %}
 {%if page.collection =='maestro' %}
 ## Connecting your app to your DB in Maestro
