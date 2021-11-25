@@ -1,5 +1,7 @@
 {% case page.collection %}
-	{% when 'rails' %}
+    {% when 'objectives' %}
+    {% include left_nav_objectives.html collection=site.objectives %}
+    {% when 'rails' %}
     {% include left_nav_rails.html collection=site.rails %}
 	{% when 'node' %}
     {% include left_nav_node.html collection=site.node %}
@@ -9,12 +11,4 @@
     {% include left_nav_skycap.html collection=site.skycap %}
 	{% when 'prepress' %}
     {% include left_nav_prepress.html collection=site.prepress %}
-	{% when 'habitus' %}
-    {% include oss_left_nav.html collection=site.habitus %}
-	{% when 'starter' %}
-    {% include oss_left_nav.html collection=site.starter %}
-    {% when 'copper' %}
-    {% include oss_left_nav.html collection=site.copper %}
-    {% when 'alterant' %}
-    {% include oss_left_nav.html collection=site.alterant %}
 {% endcase %}
