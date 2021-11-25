@@ -1,15 +1,15 @@
 ---
 layout: section
 template: one-col
-title: Scaling
+title: Disaster Recovery
 lead: Cloud 66 for Rails
 legacy: false
-permalink: /:collection/:categories/scaling.html
+permalink: /:collection/:categories/disaster-recovery.html
 noindex: true
 sitemap: false
 ---
 
-<p class="lead">Guide to Scaling clever lead paragraph - the list below is pulled by tag instead of collection 🚀</p>
+<p class="lead">Guide to Disaster Recovery</p>
 
 <br/>
 

@@ -6,7 +6,7 @@ categories: how-to-guides/scaling
 order: 1
 lead: "A guide to scaling your application with Cloud 66"
 legacy: false
-tags: ["customization"]
+tags: ["customization","scaling"]
 permalink: /:collection/:path:output_ext
 ---
 

@@ -6,7 +6,7 @@ categories: how-to-guides/scaling
 order: 10
 lead: "How to scale  your GlusterFS cluster through Cloud 66"
 legacy: false
-tags: ["GlusterFS"]
+tags: ["GlusterFS","scaling"]
 permalink: /:collection/:path:output_ext
 ---
 

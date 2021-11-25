@@ -6,7 +6,7 @@ categories: how-to-guides/scaling
 order: 10
 lead: "How to scale MongoDB with Cloud 66 using replica sets"
 legacy: false
-tags: ["MongoDB"]
+tags: ["MongoDB","scaling"]
 permalink: /:collection/:path:output_ext
 ---
 
