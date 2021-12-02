@@ -18,6 +18,15 @@ sitemap: false
     {% assign section = site.rails | where:"tags","security" | sort: "order" %}
     {% include list_articles.html section=section %}
     </ul>
+    
+    <div class="Toc Toc--howto">
+Database
+    <ul>
+    {% assign section = site.maestro | where:"tags","database" | sort: "order" %}
+    {% assign section = site.rails | where:"tags","database" | sort: "order" %}
+    {% include list_articles.html section=section %}
+    </ul>
+
 
 </div><!--/.Toc-->
 
