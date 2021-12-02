@@ -1650,7 +1650,6 @@ maestro:
     - maestro-product-heading
     - overview
     - redirect-http-to-https
-    - using-maintenance-mode
     - what-youll-need
     - www-or-non-www
   sharing_db:
@@ -2110,6 +2109,13 @@ maestro:
     - using-command-hooks
     - using-inline-script-hooks
     - using-snippet-hooks
+  using_maintenance_mode:
+    page: maestro/how-to-guides/common-tools/using-maintenance-mode.html
+    page_anchors:
+    - maestro-product-heading
+    - overview
+    - setting-a-custom-maintenance-page
+    - using-maintenance-mode
   using_master_data_staging:
     page: maestro/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
@@ -3856,6 +3862,13 @@ node:
     - using-command-hooks
     - using-inline-script-hooks
     - using-snippet-hooks
+  using_maintenance_mode:
+    page: node/how-to-guides/common-tools/using-maintenance-mode.html
+    page_anchors:
+    - node-product-heading
+    - overview
+    - setting-a-custom-maintenance-page
+    - using-maintenance-mode
   using_master_data_staging:
     page: node/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
@@ -4271,6 +4284,13 @@ prepress:
     - glob-syntax
     - prepress-product-heading
     - what-is-a-glob
+  using_maintenance_mode:
+    page: prepress/how-to-guides/common-tools/using-maintenance-mode.html
+    page_anchors:
+    - overview
+    - prepress-product-heading
+    - setting-a-custom-maintenance-page
+    - using-maintenance-mode
   what_is_prepress:
     page: prepress/the-basics/what-is-prepress.html
     page_anchors:
@@ -5363,14 +5383,12 @@ rails:
     - cors
     - firewall
     - load-balancer-traffic
-    - maintenance-mode
     - owasp-rules
     - rails-product-heading
     - redirect-http-to-https
     - temporary-ssh-access
     - traffic-filters
     - traffic-settings
-    - use-a-custom-maintenance-page
     - using-network-redirects
     - web-application-firewalls
     - www-or-non-www-in-your-url
@@ -6320,6 +6338,13 @@ rails:
     - using-command-hooks
     - using-inline-script-hooks
     - using-snippet-hooks
+  using_maintenance_mode:
+    page: rails/how-to-guides/common-tools/using-maintenance-mode.html
+    page_anchors:
+    - overview
+    - rails-product-heading
+    - setting-a-custom-maintenance-page
+    - using-maintenance-mode
   using_master_data_staging:
     page: rails/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
