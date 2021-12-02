@@ -4732,6 +4732,7 @@ rails:
     - managing-yaml-configs
     - no-database-external
     - rails-product-heading
+    - setting-variables-manually-overriding
     - the-strong-migration-gem
     - upgrading-your-database
   database_replication:
