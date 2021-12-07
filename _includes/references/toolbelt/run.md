@@ -1,56 +1,29 @@
-## Run command
+Execute a command directly on a remote server, in a service, or in a existing container. To do this it: 
 
-This command will execute a command directly on the remote server. It does this by first opening the firewall for SSH from your IP address temporarily (20 minutes), downloads your SSH key if you don't have it, starts a SSH session, executes the command specified and returns its output.
+1. Opens the firewall for SSH from your IP address temporarily (20 minutes)
+2. Downloads your SSH key if you don’t have it 
+3. Starts a SSH session 
+4. Executes the command specified and returns its output.
 
+You need to have the correct access permissions to use this command. You can use either the server name (e.g. `lion`) or the server IP (e.g. `123.123.123.123`) or the server role (e.g. `web`). If a role is specified the command will connect to the first server with that role. 
 
-### Usage
+This command is only supported on Linux and OS X clients (for Windows you can run this in a virtual machine if necessary)
 
-```shell
-$ cx run -s <stack> --server <server name>|<server ip>|<server role> --service '<command>'
-```
-
-
-
-
-### Parameters
-
-
-At least one of the optional server parameters are necessary in order to identify which server to run the command on.
-
-|		Parameter 		   |	Default		|   Description    |
-|--|:--:| ----:|
-|stack 					   |		—		|Name of the application|
-|server					   |		—		| Specify a server |
-|server name (optional) 	   | 	—		| Name of the server to access |
-|server ip (optional)	 	   |	—	| IP of the server to access |
-|server role (optional)	 	   |	—	| Role of the server to access (e.g. web) |
-|service (optional)	 	   |	—	| The service in which to run the command (Maestro applications only) |
-{:.table}
-
-
-### Example
-
-```shell
-$ cx run -s "My Awesome App" --server web1 'pwd'
-```
-
-### Examples of service usage
-
-The service parameter only applies to Maestro applications and allows you to enter a Docker container with your command (based on the latest image of that service).
-
-* This command runs "ls -la" in a **new** container of the "webapp" service, returns the output, and exits:
-```shell
+{% include references/toolbelt/boilerplate/top-tabs.html %}
+$ cx run --stack <application name> [--server <server name> | <IP address>] [--service <service name>] [--container <container name>] [--interactive] '<commands>'
+{% include references/toolbelt/boilerplate/args.html %}
+| Argument | Required? | Default | Description |
+|  ---  |  ---  |  ---  |  ---  |
+| \--stack, -s &lt;application name&gt; | yes | — | Name of the application |
+| \--server, --svr &lt;server name&gt; | &lt;IP address&gt; | either/or | — | The name or IP address of the server on which to run the command |
+| \--service, --svc &lt;service name&gt; | either/or | — | (Maestro only) Name of the service in which to run the command |
+| \--container, --cnt &lt;container name&gt; | either/or | — | (Maestro only) Name of the pod/container in which to run the command  |
+| \--interactive, -i | no | — | The username to use when connecting to server(s) |
+| &lt;commands&gt; | yes | — | The linux commands to run.  |
+{% include references/toolbelt/boilerplate/example.html %}
+$ cx run -s mystack --server lion 'ls -la'
+$ cx run -s mystack --server lion -i
 $ cx run -s mystack --svc webapp 'ls -la'
-```
-
-* This command runs "bundle exec rails c" in a **new** container of the "api" service, and remains in the session
-```shell
 $ cx run -s mystack --service api --interactive 'bundle exec rails c'
-```
-
-* This command runs "bundle exec rails c" **inside** the specified container (web-123), and remains in the session.
-```shell
 $ cx run -s mystack --container web-123 -i 'bundle exec rails c'
-```
-
-
+{% include references/toolbelt/boilerplate/footer.html %}

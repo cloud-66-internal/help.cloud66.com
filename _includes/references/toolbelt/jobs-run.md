@@ -1,14 +1,14 @@
-Opens the default web browser and opens the web end-point of a given application.
+Runs the given job once with the given parameters.
 
 {% include references/toolbelt/boilerplate/top-tabs.html %}
-$ cx open --stack <application name> <server name>
+$ cx jobs run --stack <application name> --arg [--arg option --arg option] <job name>
 {% include references/toolbelt/boilerplate/args.html %}
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |
 | \--stack, -s &lt;application name&gt; | yes | — | Full or partial name of the application |
-| &lt;server name&gt; | no | — | The name of the web server to query |
+| &lt;job name&gt; | yes | — | The name of the job |
+| \--arg [--arg option --arg option] | no | — | ??? Parameters to be passed to the job |
 {% include references/toolbelt/boilerplate/example.html %}
-$ cx open lion
-$ cx open -s mystack
-$ cx open -s mystack lion
+$ cx job run -s "My Awesome App" my_job
+$ cx job run -s "My Awesome App" --arg "arg1" --arg "arg2" my_job
 {% include references/toolbelt/boilerplate/footer.html %}

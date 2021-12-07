@@ -1,35 +1,23 @@
+Allows direct SSH shell into your servers by opening the firewall temporarily for the source IP address, downloading the SSH key and starting a SSH session with one command.
 
-## SSHing to your server
+Your server SSH key is downloaded to `~/.ssh` and re-used in subsequent SSH connections via the toolbelt. You need to have shell to server rights over the application to use this command.
 
-Allows direct SSH shell into your servers by opening the firewall temporarily for the source IP address, downloading the SSH key and starting a SSH session with one command. 
+If your server deployed behind a gateway, you need to provide the private key in order to pass through the gateway.
 
-Your server SSH key is downloaded to `~/.ssh` and re-used in subsequent SSH connections via the toolbelt. You need to have shell to server rights over the application to use this command.
-
-If your server deployed behind a bastion server, you need to provide the private key needed to connecting to bastion server to be able to connect to your server.
-
-### Usage
-
-```shell
-$ cx ssh  [--gateway-key <The path to the key of gateway server>]    [-s <stack>] <server name>|<server ip>|<server role>
-```
-
-
-### Parameters
-
-
-|		Parameter 		   |	Default		|   Description    |
-|--|:--:| ----:|
-|stack name |		—		|Name of the application to access|
-|gateway-key (optional)		   |		—		|The path to the key of gateway server|
-|server name (optional) 	   | 	—		| Name of the server to access |
-|server ip (optional)	 	   |	—	| IP of the server to access |
-|server role (optional)	 	   |	—	| Role of the server to access (e.g. web) |
-|e (optional) 	   |	—	| Your application environment|
-{:.table}
-
-### Example
-
-```shell
-$ cx ssh -s "My Awesome App" Lion -e production
-$ cx ssh --gateway-key ~/.ssh/bastion_key  -s "My Awesome App" Lion -e production
-```
+{% include references/toolbelt/boilerplate/top-tabs.html %}
+$ cx ssh  [--gateway-key <path to gateway key>] --stack <application name> <server name>|<server ip>|<server role> --vv
+{% include references/toolbelt/boilerplate/args.html %}
+| Argument | Required? | Default | Description |
+|  ---  |  ---  |  ---  |  ---  |
+| \--stack, -s &lt;application name&gt; | yes | — | Name of the application |
+| \--gateway-key &lt;path to gateway key&gt; | no | — | Path to the private key for the gateway server |
+| -v, --vv, --vvv | no | — | Set the verbosity level of the output |
+| &lt;server name&gt; | either/or | — | The name of the server to access |
+| &lt;server IP&gt; | either/or | — | The IP address of the server to access |
+| &lt;server role&gt; | either/or | — | Role of the server to access (e.g. web) |
+{% include references/toolbelt/boilerplate/example.html %}
+$ cx ssh -s mystack lion
+$ cx ssh -s mystack 52.65.34.98
+$ cx ssh -s mystack web
+$ cx ssh --gateway-key ~/.ssh/bastion_key  -s mystack db
+{% include references/toolbelt/boilerplate/footer.html %}

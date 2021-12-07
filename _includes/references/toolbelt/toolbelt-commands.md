@@ -1,129 +1,420 @@
 These commands are listed alphabetically by top level command name. 
 
-## backups - list
 
-Lists all the **managed database backups** for an application grouped by their database type and/or backup schedule.
+## backups download
+{% include references/toolbelt/backups-download.md %}
 
-<div class="Tabs Tabs--enclosed">
-    <nav>
-    <ul class="TabMini js_tabs">
-    <li class="TabMini-item active">
-    <a href="#usage" class="TabMini-link">
-    Usage
-    </a>
-    </li>
-    <li class="TabMini-item">
-    <a href="#parameters" class="TabMini-link">
-    Parameters
-    </a>
-    </li>
-    <li class="TabMini-item">
-        <a href="#examples" class="TabMini-link">
-        Examples
-        </a>
-        </li>   
-    </ul>
-    </nav>
-    
-    <section id="usage" class="Tabs-content js_tab_content">
-		
-		<pre class="language-shell u-whiteSpaceNoWrap"><code>$ cx backups list [-s {stack}] [-l] [{db type}]</code></pre>
+## backups list
+{% include references/toolbelt/backups-list.md %}
 
-    </section>
-    
-    <section id="parameters" class="Tabs-content js_tab_content is-hidden">
-    
-   <table class='table table-bordered table-striped'>
-	<thead>
-	<tr>
-	<th align="right">Parameter</th>
-	<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-	<td align="right">application</td>
-	<td>Name of your application</td>
-	</tr>
-	<tr>
-	<td align="right">db type (optional)</td>
-	<td>The type of DB you'd like to list backups for (e.g. mysql)</td>
-	</tr>
-	<tr>
-	<td align="right">l (optional)</td>
-	<td>Returns the latest successful backup</td>
-	</tr>
-	<tr>
-	<td align="right">e (optional)</td>
-	<td>Your application environment</td>
-	</tr>
-	</tbody>
-	</table>
-    
-    </section>
-    <section id="examples" class="Tabs-content js_tab_content is-hidden">
-    
-		<pre class="language-shell u-whiteSpaceNoWrap"><code>backups list -s "My Awesome App" -e production</code></pre>
-		        
-    </section>
-
-    </div>
-#### Note
-<div class="notice">
-<p>This command only applies to managed backups and not the unmanaged ones.</p>
-</div>
-
-## backups - download
-
-Download a managed database backup via command line. The command will automatically concatenate separate files into one if the backup consists of numerous files.
-
-<div class="Tabs Tabs--enclosed">
-    <nav>
-    <ul class="TabMini js_tabs">
-    <li class="TabMini-item active">
-    <a href="#usage" class="TabMini-link">
-    Usage
-    </a>
-    </li>
-    <li class="TabMini-item">
-    <a href="#parameters" class="TabMini-link">
-    Parameters
-    </a>
-    </li>
-    <li class="TabMini-item">
-        <a href="#examples" class="TabMini-link">
-        Examples
-        </a>
-        </li>   
-    </ul>
- </nav>   
-    <section id="usage" class="Tabs-content js_tab_content">		
-	<pre class="language-shell u-whiteSpaceNoWrap"><code>$ cx backups download [-s &lt;stack&gt;] [-d &lt;download directory&gt;] &lt;backup id&gt;</code></pre>
-    </section>
-    
-    <section id="parameters" class="Tabs-content js_tab_content is-hidden">
-   <table class='table table-bordered table-striped'>
-	<thead>
-	<tr>
-	<th>Parameter</th> 	
-            <th width="10%">Required?</th>
-<th width="15%">Default</th>
-	<th>Description</th>
-	</tr>
-	</thead>
-	<tbody><tr><td><code>stack</code></td><td>Required</td><td><code>—</code></td><td>Name of your application</td></tr><tr><td><code>dbtypes</code></td><td>Optional</td><td><code>all</code></td><td>Comma separated list of Database types which need backup tasks</td></tr><tr><td><code>frequency</code></td><td>Optional</td><td><code>0 */1 * * *</code></td><td>Frequency of backup task in cron schedule format</td></tr><tr><td><code>keep</code></td><td>Optional</td><td><code>100</code></td><td>Number of previous backups to keep</td></tr><tr><td><code>gzip</code></td><td>Optional</td><td><code>TRUE</code></td><td>Compress your backups with gzip</td></tr><tr><td><code>exclude-tables</code></td><td>Optional</td><td><code>—</code></td><td>Tables that must be excluded from the backup</td></tr><tr><td><code>run-on-replica</code></td><td>Optional</td><td><code>TRUE</code></td><td>Run backup task on replica server if available</td></tr>	</tbody>
-	</table>
-    
-    </section>
-    <section id="examples" class="Tabs-content js_tab_content is-hidden">
-    
-		<pre class="language-shell u-whiteSpaceNoWrap"><code>$ cx backups new -s mystack --dbtypes=postgresql --frequency="0 */1 * * *" --keep 50 --gzip=true exclude-tables=my_log_table --run-on-replica=false</code></pre>		        
-    </section>
-    </div>
-
+## backups new
+{% include references/toolbelt/backups-new.md %}
 
 ## config
-
 Allows you to configure multiple profiles in cx to support multiple Cloud 66 accounts. Please read our separate guide on installing and configuring Toolbelt.
+
+## containers attach
+Alias: `container attach`
+
+{% include references/toolbelt/containers-attach.md %}
+
+## containers list
+Alias: `container list`
+
+{% include references/toolbelt/containers-list.md %}
+
+## containers stop
+Alias: `container stop`
+
+{% include references/toolbelt/containers-stop.md %}
+
+## containers restart
+Alias: `container restart`
+
+{% include references/toolbelt/containers-restart.md %}
+
+
+## databases promote-slave
+Alias: `database promote-slave`
+
+{% include references/toolbelt/databases-promote-slave.md %}
+
+## databases resync-slave
+Alias: `database resync-slave`
+
+{% include references/toolbelt/databases-resync-slave.md %}
+
+## download
+
+{% include references/toolbelt/download.md %}
+
+## dump-token
+
+{% include references/toolbelt/dump-token.md %}
+
+## env-vars download
+
+{% include references/toolbelt/env-vars-download.md %}
+
+## env-vars list
+
+{% include references/toolbelt/env-vars-list.md %}
+
+## env-vars set
+
+{% include references/toolbelt/env-vars-set.md %}
+
+## env-vars upload
+
+{% include references/toolbelt/env-vars-upload.md %}
+
+## formations bundle
+Alias: `formation bundle`
+
+{% include references/toolbelt/formations-bundle.md %}
+
+## formations commit
+Alias: `formation commit`
+
+{% include references/toolbelt/formations-commit.md %}
+
+## formations create
+Alias: `formation create`
+
+{% include references/toolbelt/formations-create.md %}
+
+## formations deploy
+Alias: `formation deploy`
+
+{% include references/toolbelt/formations-deploy.md %}
+
+## formations fetch
+Alias: `formation fetch`
+
+{% include references/toolbelt/formations-fetch.md %}
+
+## formations list
+Alias: `formation list`
+
+{% include references/toolbelt/formations-list.md %}
+
+## formations stencils list
+Alias: `formation stencils list`
+
+{% include references/toolbelt/formations-stencils-list.md %}
+
+## gateways list
+
+{% include references/toolbelt/gateways-list.md %}
+
+## gateways add
+
+{% include references/toolbelt/gateways-add.md %}
+
+## gateways close
+
+{% include references/toolbelt/gateways-close.md %}
+
+## gateways open
+
+{% include references/toolbelt/gateways-open.md %}
+
+## gateways remove
+
+{% include references/toolbelt/gateways-remove.md %}
+
+## help
+
+{% include references/toolbelt/help.md %}
+
+## help-environ
+
+{% include references/toolbelt/help-environ.md %}
+
+## info
+
+{% include references/toolbelt/info.md %}
+
+## init
+Initializes the Toolbelt. Please read our separate guide on installing and configuring Toolbelt.
+
+{% include references/toolbelt/init.md %}
+
+## init agent
+Initializes the Toolbelt as a standalone (headless) agent. Please read our separate guide on installing and configuring Toolbelt.
+
+{% include references/toolbelt/init-agent.md %}
+
+## init setup
+???
+
+{% include references/toolbelt/init-setup.md %}
+
+## jobs list
+Alias: `job list`
+
+{% include references/toolbelt/jobs-list.md %}
+
+## jobs run
+Alias: `job run`
+
+{% include references/toolbelt/jobs-run.md %}
+
+## lease
+
+{% include references/toolbelt/lease.md %}
+
+## login
+
+{% include references/toolbelt/login.md %}
+
+
+## open
+
+{% include references/toolbelt/open.md %}
+
+## processes list
+Alias: `process list`
+
+{% include references/toolbelt/processes-list.md %}
+
+## processes pause
+Alias: `process pause`
+
+{% include references/toolbelt/processes-pause.md %}
+
+## processes restart
+Alias: `process restart`
+
+{% include references/toolbelt/processes-restart.md %}
+
+## processes resume
+Alias: `process resume`
+
+{% include references/toolbelt/processes-resume.md %}
+
+## processes scale
+Alias: `process scale`
+
+{% include references/toolbelt/processes-scale.md %}
+
+## redeploy
+Alias: `stacks redeploy`
+
+{% include references/toolbelt/redeploy.md %}
+
+## register-server
+
+{% include references/toolbelt/register-server.md %}
+
+## run
+
+{% include references/toolbelt/run.md %}
+
+## servers list
+Alias: `server list`
+
+{% include references/toolbelt/servers-list.md %}
+
+## servers reboot
+Alias: `server reboot`
+
+{% include references/toolbelt/servers-reboot.md %}
+
+## servers settings list
+Alias: `server settings list`
+
+{% include references/toolbelt/servers-settings-list.md %}
+
+## services info
+Alias: `service info`
+
+{% include references/toolbelt/services-info.md %}
+
+## services list
+Alias: `service list`
+
+{% include references/toolbelt/services-list.md %}
+
+## services pause
+Alias: `service pause`
+
+{% include references/toolbelt/services-pause.md %}
+
+## services restart
+Alias: `service restart`
+
+{% include references/toolbelt/services-restart.md %}
+
+## services resume
+Alias: `service resume`
+
+{% include references/toolbelt/services-resume.md %}
+
+## services scale
+Alias: `service scale`
+
+{% include references/toolbelt/services-scale.md %}
+
+## services stop
+Alias: `service stop`
+
+{% include references/toolbelt/services-stop.md %}
+
+## settings list
+Alias: `setting list`
+
+{% include references/toolbelt/settings-list.md %}
+
+## settings set
+Alias: `setting set`
+
+{% include references/toolbelt/settings-set.md %}
+
+## skycap listen
+
+{% include references/toolbelt/skycap-listen.md %}
+
+## snapshots list
+
+{% include references/toolbelt/snapshots-list.md %}
+
+## snapshots render
+
+{% include references/toolbelt/snapshots-render.md %}
+
+## ssh
+
+{% include references/toolbelt/ssh.md %}
+
+
+## stacks clear-caches
+Alias: `stack clear-caches`
+
+{% include references/toolbelt/stacks-clear-caches.md %}
+
+## stacks configure download
+Alias: `stack configure download`
+
+{% include references/toolbelt/stacks-configure-download.md %}
+
+## stacks configure list-versions
+Alias: `stack configure list-versions`
+
+{% include references/toolbelt/stacks-configure-list-versions.md %}
+
+## stacks configure upload
+Alias: `stack configure upload`
+
+{% include references/toolbelt/stacks-configure-upload.md %}
+
+## stacks configuration apply
+Alias: `stack configuration apply`
+
+{% include references/toolbelt/stacks-configuration-apply.md %}
+
+## stacks configuration download
+Alias: `stack configuration download`
+
+{% include references/toolbelt/stacks-configuration-download.md %}
+
+## stacks configuration list
+Alias: `stack configuration list`
+
+{% include references/toolbelt/stacks-configuration-list.md %}
+
+## stacks configuration upload
+Alias: `stack configuration upload`
+
+{% include references/toolbelt/stacks-configuration-upload.md %}
+
+## stacks create
+Alias: `stack create`
+
+{% include references/toolbelt/stacks-create.md %}
+
+## stacks list
+Alias: `stack list`
+
+{% include references/toolbelt/stacks-list.md %}
+
+## stacks listen
+Alias: `stack listen`
+
+{% include references/toolbelt/stacks-listen.md %}
+
+## stacks reboot
+Alias: `stack reboot`
+
+{% include references/toolbelt/stacks-reboot.md %}
+
+## stacks redeploy
+Alias: `stack redeploy`
+
+Triggers the deployment of an application. Alias of `redeploy` function.
+
+## stacks restart
+Alias: `stack restart`
+
+{% include references/toolbelt/stacks-restart.md %}
+
+## stacks ssl
+Alias: `stack ssl`
+
+{% include references/toolbelt/stacks-ssl.md %}
+
+## tags add
+
+{% include references/toolbelt/tags-add.md %}
+
+## tags delete
+
+{% include references/toolbelt/tags-delete.md %}
+
+## tail
+
+{% include references/toolbelt/tail.md %}
+
+## templates list
+
+{% include references/toolbelt/templates-list.md %}
+
+
+## templates resync
+
+{% include references/toolbelt/templates-resync.md %}
+
+## templates show
+
+{% include references/toolbelt/templates-show.md %}
+
+## test
+
+{% include references/toolbelt/test.md %}
+
+
+## tunnel
+
+{% include references/toolbelt/tunnel.md %}
+
+## update
+
+{% include references/toolbelt/update.md %}
+
+## upload
+
+{% include references/toolbelt/upload.md %}
+
+## users apply-profile
+
+{% include references/toolbelt/users-apply-profile.md %}
+
+## users list
+
+{% include references/toolbelt/users-list.md %}
+
+## users show
+
+{% include references/toolbelt/users-show.md %}
 
 
