@@ -1,4 +1,4 @@
-### Profile commands
+## Profile commands
 
 ```shell
 cx config create NAME [arguments]
@@ -14,35 +14,23 @@ cx config update NAME [arguments]
 
 `--org ORGANIZATION_NAME` 
 
-The following arguments are used for Cloud 66 Enterprise
 
-```shell
---client-id
---client-secret
---api-url
---base-url
---faye-endpoint
-```
+## Setting up a profile:
 
-### Usage
-
-#### To set up a profile:
-
-1. Run `cx config create NAME` where "name" is your chosen (arbitrary) profile name
-2. Run `cx config use NAME` to switch to the new profile and initialize it by running  `cx stacks list` 
+1. Run `cx config create <name>` where `<name>` is your chosen profile name
+2. Run `cx config use <name>` to switch to the new profile and initialize it by running  `cx stacks list` 
 3. Authenticate using your browser (be sure to log into the correct account)
 
 For more detailed help on installation please refer to our [Getting Started](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) guide.
 
-#### Note
 <div class="notice"><p>
 You always have a <code>default</code> profile which cannot be deleted or renamed. </p></div>
 
-#### Switching between profiles
+## Switching between profiles
 
-To switch between profiles, use `cx config use NAME`
+To switch between profiles, use `cx config use <name>`
 
-All commands from that point onwards will run against the `NAME` profile. This is persisted between different terminal sessions until it's changed.
+All commands from that point onwards will run against the `<name>` profile. This is persisted between different terminal sessions until it's changed.
 
 #### Setting Profile per command
 
