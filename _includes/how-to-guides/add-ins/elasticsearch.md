@@ -14,9 +14,9 @@ This adds three environment variables to your application: `ELASTICSEARCH_ADDRES
 </div>
 {% endif %}
 
-## Replacing your current version of Elasticsearch
+## Upgrading Elasticsearch
 
-Cloud 66 does not support an in-place upgrade for Elasticsearch. Instead you should follow the checklist below to create a new group of Elasticsearch instances, and migrate your data to it.
+Cloud 66 does not support in-place upgrades for Elasticsearch. Instead you should follow the checklist below to create a new Elasticsearch Cluster, and migrate your data to it.
 
 ### Step 1: Create a new Elasticsearch server and group
 
