@@ -656,7 +656,6 @@ maestro:
     page: maestro/how-to-guides/add-ins/elasticsearch.html
     page_anchors:
     - add-elasticearch
-    - apache-log4j-vulnerability
     - maestro-product-heading
     - overview
     - replacing-your-current-version-of-elasticsearch
@@ -2660,7 +2659,6 @@ node:
     page: node/how-to-guides/add-ins/elasticsearch.html
     page_anchors:
     - add-elasticearch
-    - apache-log4j-vulnerability
     - node-product-heading
     - overview
     - replacing-your-current-version-of-elasticsearch
@@ -4869,7 +4867,6 @@ rails:
     page: rails/how-to-guides/add-ins/elasticsearch.html
     page_anchors:
     - add-elasticearch
-    - apache-log4j-vulnerability
     - overview
     - rails-product-heading
     - replacing-your-current-version-of-elasticsearch
