@@ -14,12 +14,6 @@ This adds three environment variables to your application: `ELASTICSEARCH_ADDRES
 </div>
 {% endif %}
 
-## Apache Log4j vulnerability
-
-On the 9th of December 2021 Apache disclosed a high severity vulnerability (CVE-2021-44228) in its [Log4j 2](https://logging.apache.org/log4j/2.x/) project which is [used in Elasticsearch](https://discuss.elastic.co/t/apache-log4j2-remote-code-execution-rce-vulnerability-cve-2021-44228-esa-2021-31/291476). 
-
-We strongly recommend all customers using Elasticsearch upgrade to the latest version, at least v7.16.1 (which is now the default Cloud 66 version) - particularly those running v5.x.x and below, all of which are more severely affected. Follow the instructions in the next section to do so.
-
 ## Replacing your current version of Elasticsearch
 
 Cloud 66 does not support an in-place upgrade for Elasticsearch. Instead you should follow the checklist below to create a new group of Elasticsearch instances, and migrate your data to it.
