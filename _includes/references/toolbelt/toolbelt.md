@@ -7,6 +7,8 @@
 
 {% include references/toolbelt/download.md %}
 
+{% include references/toolbelt/failover-groups.md %}
+
 {% include references/toolbelt/gateway.md %}
 
 {% include references/toolbelt/jobs.md %}
@@ -16,6 +18,8 @@
 {% include references/toolbelt/login.md %}
 
 {% include references/toolbelt/open.md %}
+
+{% include references/toolbelt/notifications.md %}
 
 {% include references/toolbelt/redeploy.md %}
 
