@@ -61,12 +61,7 @@ ElasticDNS is clever enough to know which version of the app is running in a con
 
 ## Configuration
 
-There are a number of directives you can set in your service configuration to customize your service network settings:
-
-- [dns behaviour](#dns-behaviour)
-- [load balancing](#load-balancing)
-- [ports](#ports)
-- [traffic matches](#traffic-matches)
+There are a number of directives you can set in your service configuration to customize your service network settings.
 
 (Read [our guide to using service.yml](/maestro/how-to-guides/build-and-config/docker-service-configuration.html) for more help on customizing your service configuration.)
 

@@ -37,16 +37,22 @@ The following settings are available via the Manifest file:
 </thead>
 <tbody>
   <tr>
+    <td><code>groups</code></td>
+    <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
+  <td>All</td>
+  </tr>
+  <tr>
     <td><code>iam_instance_profile_name</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
   </tr>
-  <tr>
-    <td><code>groups</code></td>
-    <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
-    <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
-  <td>All</td>
+<tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
   </tr>
   <tr>
     <td><code>operating_system</code></td>
@@ -116,6 +122,12 @@ The following settings are available via the Manifest file:
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
+  </tr>
+<tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
   </tr>
   <tr>
     <td><code>mount_targets</code></td>
@@ -257,16 +269,22 @@ The following settings are available via the Manifest file :
 </thead>
 <tbody>
   <tr>
+    <td><code>groups</code></td>
+    <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
+    <td>All</td>
+  </tr>
+  <tr>
     <td><code>iam_instance_profile_name</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
   </tr>
-  <tr>
-    <td><code>groups</code></td>
-    <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
-    <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
-    <td>All</td>
+<tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
   </tr>
   <tr>
     <td><code>operating_system</code></td>
@@ -335,16 +353,22 @@ The following settings are available via the Manifest file :
     <td>All</td>
   </tr>
   <tr>
+    <td><code>groups</code></td>
+    <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
+    <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
+    <td>All</td>
+  </tr>
+  <tr>
     <td><code>iam_instance_profile_name</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
   </tr>
-  <tr>
-    <td><code>groups</code></td>
-    <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
-    <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
-    <td>All</td>
+<tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
   </tr>
   <tr>
     <td><code>operating_system</code></td>
@@ -420,6 +444,12 @@ The following settings are available via the Manifest file :
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
+  </tr>
+<tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
   </tr>
   <tr>
     <td><code>operating_system</code></td>
@@ -509,6 +539,12 @@ The following settings are available via the Manifest file :
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
+  </tr>
+ <tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
   </tr>
   <tr>
     <td><code>groups</code></td>

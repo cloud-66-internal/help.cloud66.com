@@ -1,6 +1,6 @@
 ## Overview
 
-Disk space alerts will send you a (single) alert via your preferred notification channel(s) when the disk of a server crosses the space usage threshold you have set. The default threshold is **80% usage** but you can choose any value from `0` - `100`.  Setting a threshold value of `100` will disable alerts for that server.
+Disk space alerts will send you a (single) alert via your preferred notification channel(s) when the disk of a server crosses the usage threshold you have set. This applies to both space usage, and [inode](https://en.wikipedia.org/wiki/Inode) usage. The default threshold is **80% usage** but you can choose any value from `0` - `100`.  Setting a threshold value of `100` will disable alerts for that server.
 
 ## Changing the disk space alert threshold on a server
 
@@ -13,10 +13,10 @@ By default, servers have their disk usage threshold set to 80%. To change this:
 
 You will now be alerted when the server's root disk exceeds that level of usage. The method by which you will be alerted depends on your **notification settings** (see below)**.**
 
-We will also display a red warning symbol in your server detail page next to any server filesystem that has breached its disk space threshold.
+We will also display a red warning symbol in your server detail page next to any server filesystem that has breached its usage threshold.
 
 ### Important
-<div class="notice"><p>We will only send you a single notification when your disk crosses its threshold (and when it crosses back). We won't repeat this notification if you server continues to stay above the threshold. Be sure to monitor your disk space notifications as low disk space availability will cause unpredictable errors.</p></div>
+<div class="notice"><p>We will only send you a single notification when your disk crosses its threshold (and when it crosses back). We won't repeat this notification if your server continues to stay above the threshold. Be sure to monitor your disk space notifications as low disk availability will cause unpredictable errors.</p></div>
 
 ## Managing your notification channel(s)
 

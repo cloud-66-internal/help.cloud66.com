@@ -24,6 +24,24 @@ If you're looking for the Manifest settings for [data, caching & storage compone
   </tr>
 </thead>
 <tbody>
+   <tr>
+    <td><code>activeprotect</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The parent node for ActiveProtect settings (see <code>whitelist</code> and <code>http_ban_rate</code> below)</td>
+    <td>All</td>
+  </tr>
+    <tr>
+    <td><code>activeprotect / whitelist</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>A comma-separated whitelist of IPs that should be ignored by your ActiveProtect configuration. Must be nested under <code>activeprotect</code>.</td>
+    <td>All</td>
+  </tr> 
+ <tr>
+    <td><code>activeprotect / http_ban_rate</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Set the threshold of *requests per minute* from a single IP address. The default is <code>2000</code>. Must be nested under <code>activeprotect</code>.</td>
+    <td>All</td>
+  </tr>
   <tr>
     <td><code>docker_version</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
@@ -47,6 +65,12 @@ If you're looking for the Manifest settings for [data, caching & storage compone
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Set the number of old images to save on your servers (besides the running image). Defaults to <code>2</code>.</td>
     <td>All</td>
+  </tr>
+<tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
   </tr>
   <tr>
     <td><code>nameservers</code></td>
@@ -415,6 +439,12 @@ A Rails application type in the manifest file gives you fine control over things
     <td>Set this to <code>false</code> to exclude any Git submodules from being pulled during a build. Default is <code>true</code>
 </td>
     <td>All</td>
+  </tr>
+ <tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
   </tr>
   <tr>
     <td><code>keep_releases</code></td>
