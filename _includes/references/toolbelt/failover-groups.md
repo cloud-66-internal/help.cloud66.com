@@ -12,7 +12,7 @@ $ cx failover-groups list [--output <view>]
 
 | Arguments | Required? | Default | Description |
 | --- | --- | --- | --- |
-| --output, -o <view> | no | standard | Tailor the output view (standard or wide) |
+| --output, -o \<view\> | no | standard | Tailor the output view (standard or wide) |
 {: .table .table-bordered .table-striped}
 
 **Example**
@@ -23,12 +23,12 @@ $ cx failover-groups list -o wide
 
 ## failover-groups add
 
-Adds a new Failover Group to a Cloud 66 account.
+Adds a new Failover Group to a Cloud 66 account. You can create an empty Failover Group with neither primary nor secondary app set.
 
 **Usage**
 
 ```bash
-$ cx failover-group add [--primary <primary app>] [--secondary <secondary app>] [--current <app pointer>] [--no-primary] [--no-secondary]
+$ cx failover-group add [--primary <primary app>] [--secondary <secondary app>] [--current <current app>] [--no-primary] [--no-secondary]
 
 ```
 
@@ -36,9 +36,9 @@ $ cx failover-group add [--primary <primary app>] [--secondary <secondary app>] 
 
 | Argument | Required? | Default | Description |
 | --- | --- | --- | --- |
-| --primary, -p <primary app> | no | — | The name of the application which should be set as "primary" in the Failover Group |
-| --secondary, -s <secondary app> | no | — | The name of the application which should be set as "secondary" in the Failover Group |
-| --current <app pointer> | no | 1 | Sets the Failover Group to point at either the primary app (1) - or the secondary app (2) |
+| --primary, -p \<primary app\> | no | — | The name of the application which should be set as "primary" in the Failover Group |
+| --secondary, -s \<secondary app\> | no | — | The name of the application which should be set as "secondary" in the Failover Group |
+| --current \<current app\> | no | -- | Sets the Failover Group to point at either the `primary` app - or the `secondary` app |
 | --no-primary | no | — | Create a Failover Group with no primary application |
 | --no-secondary | no | — | Create a Failover Group with no secondary application |
 {: .table .table-bordered .table-striped}
@@ -65,9 +65,9 @@ $ cx failover-group update --uid <failover UID> [--primary <primary app>] [--sec
 | Argument | Required? | Default | Description |
 | --- | --- | --- | --- |
 | --uid <failover UID> | yes | — | The UID of the Failover Group to be updated. |
-| --primary, -p <primary app> | either/or | — | The name of the application which should be set as "primary" in the Failover Group. (The current value will not be updated if this is not specified) |
-| --secondary, -s <secondary app> | either/or | — | The name of the application which should be set as "secondary" in the Failover Group. (The current value will not be updated if this is not specified) |
-| --current <app pointer> | no | — | Sets the Failover Group to point at either the primary app (1) - or the secondary app (2) |
+| --primary, -p \<primary app\> | either/or | — | The name of the application which should be set as "primary" in the Failover Group. (The current value will not be updated if this is not specified) |
+| --secondary, -s \<secondary app\> | either/or | — | The name of the application which should be set as "secondary" in the Failover Group. (The current value will not be updated if this is not specified) |
+| --current \<current app\> | no | — | Sets the Failover Group to point at either the `primary` app - or the `secondary` app |
 | --no-primary | no | — | Remove the current primary application from the Failover Group |
 | --no-secondary | no | — | Remove the current secondary application from the Failover Group |
 {: .table .table-bordered .table-striped}
@@ -92,7 +92,7 @@ $ cx failover-groups delete --uid <failover UID>
 
 | Arguments | Required? | Default | Description |
 | --- | --- | --- | --- |
-| --uid <failover UID> | yes | — | The UID of the Failover Group to be deleted. |
+| --uid \<failover UID\> | yes | — | The UID of the Failover Group to be deleted. |
 {: .table .table-bordered .table-striped}
 
 **Example**

@@ -12,8 +12,8 @@ $ cx notifications download --stack <application name> --file <filename>
 
 | Arguments | Required? | Default | Description |
 | --- | --- | --- | --- |
-| -stack, -s <application name> | yes | — | The name of the application |
-| --file, -f <filename> | yes | — | The name of the file in which the notification settings will be saved. |
+| -stack, -s \<application name\> | yes | — | The name of the application |
+| --file, -f \<filename\> | yes | — | The name of the file in which the notification settings will be saved. |
 {: .table .table-bordered .table-striped}
 
 **Example**
@@ -36,9 +36,9 @@ $ cx notifications upload [--stack <application name> | --application-group <gro
 
 | Arguments | Required? | Default | Description |
 | --- | --- | --- | --- |
-| -stack, -s <application name> | either/or | — | The name of the application to be updated  |
-| --application-group, -a <group name> | either/or | — | The name of the application group to be updated |
-| --file, -f <filename> | yes | — | The name of the file containing the notification settings that will be uploaded |
+| -stack, -s \<application name\> | either/or | — | The name of the application to be updated  |
+| --application-group, -a \<group name\> | either/or | — | The name of the application group to be updated |
+| --file, -f \<filename\> | yes | — | The name of the file containing the notification settings that will be uploaded |
 {: .table .table-bordered .table-striped}
 
 **Example**
