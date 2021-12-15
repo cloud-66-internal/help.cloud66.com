@@ -658,12 +658,12 @@ maestro:
     - add-elasticearch
     - maestro-product-heading
     - overview
-    - replacing-your-current-version-of-elasticsearch
     - step-1-create-a-new-elasticsearch-server-and-group
     - step-2-scale-up-more-servers-in-the-group-optional
     - step-3-migrate-your-elasticsearch-data-to-your-new-database-group
     - step-4-promote-your-new-group-to-default
     - step-5-redeploy-and-test
+    - upgrading-elasticsearch
   elasticsearch_scaling:
     page: maestro/how-to-guides/scaling/elasticsearch-scaling.html
     page_anchors:
@@ -1862,6 +1862,10 @@ maestro:
     - examples-7
     - examples-8
     - examples-of-service-usage
+    - failover-groups-add
+    - failover-groups-delete
+    - failover-groups-list
+    - failover-groups-update
     - gateway-management
     - getting-service-information
     - how-to-uninstall-the-toolbelt
@@ -1881,6 +1885,8 @@ maestro:
     - maestro-product-heading
     - manage-your-configuration-files
     - note-2
+    - notifications-download
+    - notifications-upload
     - open-gateway
     - open-your-website
     - parameters
@@ -2661,12 +2667,12 @@ node:
     - add-elasticearch
     - node-product-heading
     - overview
-    - replacing-your-current-version-of-elasticsearch
     - step-1-create-a-new-elasticsearch-server-and-group
     - step-2-scale-up-more-servers-in-the-group-optional
     - step-3-migrate-your-elasticsearch-data-to-your-new-database-group
     - step-4-promote-your-new-group-to-default
     - step-5-redeploy-and-test
+    - upgrading-elasticsearch
   elasticsearch_scaling:
     page: node/how-to-guides/scaling/elasticsearch-scaling.html
     page_anchors:
@@ -3642,6 +3648,10 @@ node:
     - examples-7
     - examples-8
     - examples-of-service-usage
+    - failover-groups-add
+    - failover-groups-delete
+    - failover-groups-list
+    - failover-groups-update
     - gateway-management
     - how-to-uninstall-the-toolbelt
     - installation
@@ -3659,6 +3669,8 @@ node:
     - manage-your-configuration-files
     - node-product-heading
     - note-2
+    - notifications-download
+    - notifications-upload
     - open-gateway
     - open-your-website
     - parameters
@@ -4869,12 +4881,12 @@ rails:
     - add-elasticearch
     - overview
     - rails-product-heading
-    - replacing-your-current-version-of-elasticsearch
     - step-1-create-a-new-elasticsearch-server-and-group
     - step-2-scale-up-more-servers-in-the-group-optional
     - step-3-migrate-your-elasticsearch-data-to-your-new-database-group
     - step-4-promote-your-new-group-to-default
     - step-5-redeploy-and-test
+    - upgrading-elasticsearch
   elasticsearch_scaling:
     page: rails/how-to-guides/scaling/elasticsearch-scaling.html
     page_anchors:
@@ -6103,6 +6115,10 @@ rails:
     - examples-7
     - examples-8
     - examples-of-service-usage
+    - failover-groups-add
+    - failover-groups-delete
+    - failover-groups-list
+    - failover-groups-update
     - gateway-management
     - how-to-uninstall-the-toolbelt
     - installation
@@ -6119,6 +6135,8 @@ rails:
     - listing-processes
     - manage-your-configuration-files
     - note-2
+    - notifications-download
+    - notifications-upload
     - open-gateway
     - open-your-website
     - parameters
@@ -7026,6 +7044,10 @@ skycap:
     - examples-7
     - examples-8
     - examples-of-service-usage
+    - failover-groups-add
+    - failover-groups-delete
+    - failover-groups-list
+    - failover-groups-update
     - gateway-management
     - how-to-uninstall-the-toolbelt
     - installation
@@ -7042,6 +7064,8 @@ skycap:
     - listing-processes
     - manage-your-configuration-files
     - note-2
+    - notifications-download
+    - notifications-upload
     - open-gateway
     - open-your-website
     - parameters
