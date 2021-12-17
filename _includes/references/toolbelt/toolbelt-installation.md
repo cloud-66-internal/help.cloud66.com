@@ -23,4 +23,4 @@ To install Toolbelt on a server (without a browser):
 
 ### Multi-account support
 
-Toolbelt supports user with multiple Cloud 66 accounts via profiles. Please read our complete guide for more details.
+Toolbelt supports user with multiple Cloud 66 accounts via profiles. Please read our [separate guide](/{{page.collection}}/references/toolbelt/toolbelt-profiles.html) for more details.

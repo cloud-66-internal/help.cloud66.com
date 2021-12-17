@@ -1,19 +1,63 @@
-## Profile commands
+## Overviews
+
+You can configure your Toolbelt to work with multiple Cloud 66 accounts and/or organizations using configuration profiles.
+
+## Configuration profile commands
+
+### config create
+
+Creates a new configuration profile
 
 ```shell
-cx config create NAME [arguments]
-cx config use NAME
-cx config rename OLD_NAME NEW_NAME
-cx config delete NAME
-cx config list
-cx config show NAME
-cx config update NAME [arguments]
+$ cx config create <name> [--org <org name>]
+```
+### config use
+
+Switches to using the named configuration profile.
+
+```shell
+$ cx config use <name>
 ```
 
-**Arguments**
+### config rename
 
-`--org ORGANIZATION_NAME` 
+Renames an existing configuration profile.
 
+```shell
+$ cx config rename <old name> <new name>
+```
+
+### config delete
+
+Delete a configuration profile.
+
+```shell
+$ cx config delete <name>
+```
+
+### config list
+
+Lists all your configuration profiles.
+
+```shell
+$ cx config list
+```
+
+### config show
+
+Show the details for a profile
+
+```shell
+$ cx config show <name>
+```
+
+### config update
+
+Set a configuration profile to point to an organization.
+
+```shell
+cx config update NAME [--org <org name>]
+```
 
 ## Setting up a profile:
 

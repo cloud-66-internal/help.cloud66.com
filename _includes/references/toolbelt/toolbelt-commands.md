@@ -1,6 +1,5 @@
 These commands are listed alphabetically by top level command name. 
 
-
 ## backups download
 {% include references/toolbelt/backups-download.md %}
 
@@ -11,7 +10,7 @@ These commands are listed alphabetically by top level command name.
 {% include references/toolbelt/backups-new.md %}
 
 ## config
-Allows you to configure multiple profiles in cx to support multiple Cloud 66 accounts. Please read our separate guide on installing and configuring Toolbelt.
+Allows you to configure multiple profiles in cx to support multiple Cloud 66 accounts. Please read our [separate guide](/{{page.collection}}/references/toolbelt/toolbelt-profiles.html) on configuring Toolbelt.
 
 ## containers attach
 Alias: `container attach`
@@ -68,10 +67,11 @@ Alias: `database resync-slave`
 
 {% include references/toolbelt/env-vars-upload.md %}
 
-## formations bundle
+<!-- ## formations bundle
 Alias: `formation bundle`
 
 {% include references/toolbelt/formations-bundle.md %}
+-->
 
 ## formations commit
 Alias: `formation commit`
@@ -127,28 +127,28 @@ Alias: `formation stencils list`
 
 {% include references/toolbelt/help.md %}
 
+<!--
 ## help-environ
 
 {% include references/toolbelt/help-environ.md %}
+-->
 
 ## info
 
 {% include references/toolbelt/info.md %}
 
 ## init
-Initializes the Toolbelt. Please read our separate guide on installing and configuring Toolbelt.
-
-{% include references/toolbelt/init.md %}
+Initializes the Toolbelt. Please read our separate guide on [installing and configuring Toolbelt](/{{page.collection}}/references/toolbelt/toolbelt-installation.html).
 
 ## init agent
-Initializes the Toolbelt as a standalone (headless) agent. Please read our separate guide on installing and configuring Toolbelt.
+Initializes the Toolbelt as a standalone (headless) agent. Please read our separate guide on [installing and configuring Toolbelt](/{{page.collection}}/references/toolbelt/toolbelt-installation.html).
 
-{% include references/toolbelt/init-agent.md %}
-
+<!--
 ## init setup
 ???
 
 {% include references/toolbelt/init-setup.md %}
+-->
 
 ## jobs list
 Alias: `job list`
