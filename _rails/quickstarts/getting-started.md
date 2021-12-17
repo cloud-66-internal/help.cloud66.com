@@ -32,76 +32,13 @@ permalink: /:collection/:path:output_ext
 We support every version of Rails from 2.6.3 and upwards, including version 6.0.0. The version installed during deployment is based on the requirements of your application. Versions earlier than 2.6.3 <em>may</em> work but will have some compatibility issues with Ubuntu 18.04 and 20.04.
 </p></div>
 
-## Choosing application type
-
-New users will be shown the product selection wizard. For Skycap, choose "I have a native Ruby or Node app" and then "Deploy Rails & Rack Frameworks" (*Deploy a Ruby App*). 
-
-<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
-    <div class="Grid-cell">
-        <h4>Step 1</h4>
-        <img src="/assets/shared/product_choice_1.png" alt="Product choice wizard - step 1">
-    </div>
-    <div class="Grid-cell">
-        <h4>Step 2</h4>
-        <img src="/assets/shared/product_choice_3.png" alt="Product choice wizard - step 2">
-    </div>
-</div>
 
 If you're already using Cloud 66 just click *New Application &rarr; Rails (Rack frameworks)* button on the dashboard.
 
 <img src="/assets/shared/new_app_dropdown.png" alt="Deploy a new Rails app">
 
-## Accessing your Git Repo
 
-Cloud 66 supports both public and private Git repositories. If you're using a private Git repository you'll need to Add and approve the Cloud 66 public SSH key with your Git provider.
 
-<div class="Tabs">
-    <nav>
-      <ul class="TabMini js_tabs">
-        <li class="TabMini-item active">
-          <a href="#github-content" class="TabMini-link">
-            Github
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#bitbucket-content" class="TabMini-link">
-            Bitbucket
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#other-git-content" class="TabMini-link">
-            Other git repositories
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <section id="github-content" class="Tabs-content js_tab_content">
-        <h4>Public Repository</h4>
-        <p>If your code is in a public repository, you don't need to do anything.</p>
-        <h4>Private Repository</h4>
-        <p>To grant access to a private Github repository, you need to add your public SSH key you see on the screen to your Github account. </p>
-        <p>
-            <img src="/assets/rails/rails_add_public_key.png" alt="Adding your Public Key to GitHub">
-        </p>
-        <p><em>Copy the public SSH Key</em> (starts with ssh-rsa and ends with the email address you used to sign up) and then <em>Click Go to GitHub</em>. The GitHub SSH keys page will open in a new browser tab. Click the <em>New SSH key</em> button and paste your public key.</p>
-    </section>
-
-    <section id="bitbucket-content" class="Tabs-content js_tab_content is-hidden">
-        <h4>Public Repository</h4>
-        <p>If your code is in a public repository, you don't need to do anything.</p>
-        <h4>Private Repository</h4>
-        <p>To grant access to a private Bitbucket repository, you need to add your public SSH key you see on the screen to your Bitbucket account.</p>
-        <p>
-            <img src="/assets/rails/rails_add_public_key_bitbucket.png" alt="Adding the Public Key to BitBucket">
-        </p>
-    </section>
-
-    <section id="other-git-content" class="Tabs-content js_tab_content is-hidden">
-        <h4>Private Repository</h4>
-        <p>To grant access to your private git repository, add the public SSH key to the list of git users (refer to your git server manual) and make sure your git repository accepts connections on port 22, from Cloud 66 public IP addresses: {% include general/public_ips.html %}</p>
-    </section>
-</div>
 
 ## Defining your application
 

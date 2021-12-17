@@ -52,7 +52,7 @@ If you already have your code built into images and stored in a registry:
 1. Click *I'm deploying Docker images* 
 - If you're using the Docker public image repo, enter the name of the Docker image (be sure to spell it correctly)
 - If you're using a private image repo, click the *Add your credentials* link, choose your provider and your credentials, then click Save and enter the full image name (including the repository) in the form.
-2.  Move to **Step 2** below
+2.  Move to **Step 3** below
 
 ## Step 2: Add repo details
 
@@ -104,7 +104,7 @@ If you're using our sample application you should set the HTTP port to `80` and 
 
 ![Maestro Step 4 - configure ports](/assets/maestro/step-4-ports-maestro-onboarding.gif)
 
-<div class="notice"><p>💡 Obviously this settings panel is used for both networking and storage options - so you can configure them simultaneously if you'd prefer.</p></div>
+<div class="notice"><p>💡 This settings panel is used for both networking and storage options - so you can configure them simultaneously if you'd prefer.</p></div>
 
 ### B. Configure storage (optional)
 
@@ -159,7 +159,7 @@ Click *Add Deployment Target* once complete.
 
 When you're satisfied with your servers, click the *Start Deployment* button. During the build and deployment process you can view the log to see what’s happening behind the scenes.
 
-<div class="notice notice-warning"><p>The full build and deployment process may take 15 minutes or more because Maestro needs to provision the new servers from the ground up. You can close the window and Maestro will send you an email when the deployment is complete.</p></div>
+<div class="notice notice-warning"><p>The full build and deployment process may take 15 minutes or more because Maestro needs to provision the new servers from the ground up. You can close the window and Cloud 66 will send you an email when the deployment is complete.</p></div>
 
 ## Step 7: Test your app
 
