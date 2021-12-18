@@ -24,7 +24,7 @@ Class 1 settings include:
 
 These are settings that require a specific action to trigger their roll-out. 
 
-For example, in order to implement changes to cross-origin scripting (CORS) settings in Nginx, you need to use the `reconfigure.nginx` command in [Cloud 66 Toolbelt](/{{page.collection}}/references/toolbelt.html) to force the settings to propagate.
+For example, in order to implement changes to cross-origin scripting (CORS) settings in Nginx, you need to use the `reconfigure.nginx` command in [Cloud 66 Toolbelt](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#settings-set) to force the settings to propagate.
 
 
 ### Class 3: Flexible settings
