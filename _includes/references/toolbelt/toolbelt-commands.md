@@ -1,10 +1,10 @@
 These commands are listed alphabetically by top level command name. 
 
-## backups download
-{% include references/toolbelt/backups-download.md %}
-
 ## backups list
 {% include references/toolbelt/backups-list.md %}
+
+## backups download
+{% include references/toolbelt/backups-download.md %}
 
 ## backups new
 {% include references/toolbelt/backups-new.md %}
@@ -12,15 +12,15 @@ These commands are listed alphabetically by top level command name.
 ## config
 Allows you to configure multiple profiles in cx to support multiple Cloud 66 accounts. Please read our [separate guide](/{{page.collection}}/references/toolbelt/toolbelt-profiles.html) on configuring Toolbelt.
 
-## containers attach
-Alias: `container attach`
-
-{% include references/toolbelt/containers-attach.md %}
-
 ## containers list
 Alias: `container list`
 
 {% include references/toolbelt/containers-list.md %}
+
+## containers attach
+Alias: `container attach`
+
+{% include references/toolbelt/containers-attach.md %}
 
 ## containers stop
 Alias: `container stop`
@@ -51,13 +51,13 @@ Alias: `database resync-slave`
 
 {% include references/toolbelt/dump-token.md %}
 
-## env-vars download
-
-{% include references/toolbelt/env-vars-download.md %}
-
 ## env-vars list
 
 {% include references/toolbelt/env-vars-list.md %}
+
+## env-vars download
+
+{% include references/toolbelt/env-vars-download.md %}
 
 ## env-vars set
 
@@ -72,6 +72,23 @@ Alias: `formation bundle`
 
 {% include references/toolbelt/formations-bundle.md %}
 -->
+
+## failover-groups list
+{% include references/toolbelt/failover-groups-list.md %}
+
+## failover-groups add
+{% include references/toolbelt/failover-groups-add.md %}
+
+## failover-groups delete
+{% include references/toolbelt/failover-groups-delete.md %}
+
+## failover-groups update
+{% include references/toolbelt/failover-groups-update.md %}
+
+## formations list
+Alias: `formation list`
+
+{% include references/toolbelt/formations-list.md %}
 
 ## formations commit
 Alias: `formation commit`
@@ -92,11 +109,6 @@ Alias: `formation deploy`
 Alias: `formation fetch`
 
 {% include references/toolbelt/formations-fetch.md %}
-
-## formations list
-Alias: `formation list`
-
-{% include references/toolbelt/formations-list.md %}
 
 ## formations stencils list
 Alias: `formation stencils list`
@@ -168,6 +180,13 @@ Alias: `job run`
 
 {% include references/toolbelt/login.md %}
 
+## notifications download
+
+{% include references/toolbelt/notifications-download.md %}
+
+## notifications upload
+
+{% include references/toolbelt/notifications-upload.md %}
 
 ## open
 
@@ -287,7 +306,6 @@ Alias: `setting set`
 
 {% include references/toolbelt/ssh.md %}
 
-
 ## stacks clear-caches
 Alias: `stack clear-caches`
 
@@ -308,6 +326,11 @@ Alias: `stack configure upload`
 
 {% include references/toolbelt/stacks-configure-upload.md %}
 
+## stacks configuration list
+Alias: `stack configuration list`
+
+{% include references/toolbelt/stacks-configuration-list.md %}
+
 ## stacks configuration apply
 Alias: `stack configuration apply`
 
@@ -318,25 +341,20 @@ Alias: `stack configuration download`
 
 {% include references/toolbelt/stacks-configuration-download.md %}
 
-## stacks configuration list
-Alias: `stack configuration list`
-
-{% include references/toolbelt/stacks-configuration-list.md %}
-
 ## stacks configuration upload
 Alias: `stack configuration upload`
 
 {% include references/toolbelt/stacks-configuration-upload.md %}
 
-## stacks create
-Alias: `stack create`
-
-{% include references/toolbelt/stacks-create.md %}
-
 ## stacks list
 Alias: `stack list`
 
 {% include references/toolbelt/stacks-list.md %}
+
+## stacks create
+Alias: `stack create`
+
+{% include references/toolbelt/stacks-create.md %}
 
 ## stacks listen
 Alias: `stack listen`
@@ -379,7 +397,6 @@ Alias: `stack ssl`
 
 {% include references/toolbelt/templates-list.md %}
 
-
 ## templates resync
 
 {% include references/toolbelt/templates-resync.md %}
@@ -391,7 +408,6 @@ Alias: `stack ssl`
 ## test
 
 {% include references/toolbelt/test.md %}
-
 
 ## tunnel
 
@@ -405,13 +421,13 @@ Alias: `stack ssl`
 
 {% include references/toolbelt/upload.md %}
 
-## users apply-profile
-
-{% include references/toolbelt/users-apply-profile.md %}
-
 ## users list
 
 {% include references/toolbelt/users-list.md %}
+
+## users apply-profile
+
+{% include references/toolbelt/users-apply-profile.md %}
 
 ## users show
 
