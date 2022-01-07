@@ -34,6 +34,12 @@
             {% include left_nav_list.html section=common-tools current=page %}
         </ul>
 
+    <ul class="menu-root">
+            {% assign toolbelt = include.collection | where:"categories","toolbelt" | sort: "order" %}
+
+            <li><h3><a href="/node/references/toolbelt.html">Cloud 66 Toolbelt (cx)</a></h3></li>
+            {% include left_nav_list.html section=toolbelt current=page %}
+        </ul>    
 
         <ul class="menu-root">
             {% assign deployment = include.collection | where:"categories","how-to-guides/deployment" | sort: "order" %}

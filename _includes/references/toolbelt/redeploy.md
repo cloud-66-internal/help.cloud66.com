@@ -1,46 +1,21 @@
+Enqueues redeployment of an existing application. If the app is already building, another build will be enqueued and performed immediately after the current one is finished.
 
-## Redeploy your application
-
-This is an alias for the `stacks redeploy` command, which triggers the deployment of an application from the command line, just like clicking on _redeploy_ in the UI.
-
-
-### Usage
-
-```shell
-$ cx redeploy [-s <stack>] [-y] [--git-ref <git_ref>] [--service <service>] [--service <service>] [--service <service>] [--deploy-strategy <strategy>] [--deployment-profile <profile name>]
-```
-
-
-
-
-### Parameters
-
-|		Parameter 		   |   Description    |
-|--| ----:|
-|stack 					   |		Name of your application|
-|e  (optional)   | 	Your application environment|
-|y (optional)	   |Automatically answer yes to any prompts|
-|git-ref (optional, non-Docker)  |  Redeploy the specific git reference (branch, tag or hash). Non-Docker applications only. |
-|service (optional, repeatable, Docker only)	   |	Will deploy the specified services from your application only. Each service can have an optional colon-separated reference which is image tag or git reference for image based services, or for git based services. |
-|listen (optional)	   |	Will follow the deployment and log progress output  |
-|deploy-strategy (optional) | Set a strategy for this redeployment. Options: `parallel`, `fast`. |
-|deployment-profile (optional) | Use an existing profile for this redeployment. |
-{:.table}
-
-
-### Examples
-
-```shell
+{% include references/toolbelt/boilerplate/top-tabs.html %}
+$ cx redeploy --stack <application name> --listen [-y] [--git-ref <git_ref>] [--service <service>] [--deploy-strategy <strategy>] [--rollout-strategy <strategy>] [--canary-percentage <percentage>] [--deployment-profile <profile name>]
+{% include references/toolbelt/boilerplate/args.html %}
+| Argument | Required? | Default | Description |
+|  ---  |  ---  |  ---  |  ---  |
+| \--stack, -s &lt;application name&gt; | yes | — | Full or partial name of the application |
+| -y | no | — | Answer yes to confirmations |
+| \--listen | no | — | Waits for deployment to complete, shows progress and log output when available |
+| \--git-ref &lt;git_ref&gt; | no | — | Redeploy the specific git reference (branch, tag or hash). |
+| \--service &lt;service&gt; | no | — | Will deploy the specified services from your application. Each service can have an optional colon-separated reference which is an image tag or git reference. |
+| \--deploy-strategy &lt;strategy&gt; | no | — | Set a strategy for this redeployment. Options are serial, parallel, rolling (Rails/Rack) or fast (Maestro) |
+| \--rollout-strategy &lt;strategy&gt; | no | none | Set a rollout strategy for this redeployment. Options are none, blue_green_immediate, blue_green_delayed, or canary |
+| \--canary-percentage &lt;percentage&gt; | no | — | Set the percentage of traffic to direct to a canary rollout |
+| \--deployment-profile &lt;profile name&gt; | no | — | Use an existing profile for this redeployment. |
+{% include references/toolbelt/boilerplate/example.html %}
 $ cx redeploy -s "My Awesome App" -e production --deploy-strategy fast
-```
-
-```shell
 $ cx redeploy -s "My Awesome App" -e production -y --git-ref my_git_ref_value
-```
-
-```shell
-$ cx redeploy -s "My Awesome Docker App" --service web:8c7f3d393162f88b8b9493f6babec574b03ca957 --service api:latest
-```
-
-Deploying an application that is already being deployed will enqueue your redeploy command and will run it immediately after the current deployment is finished.
-
+$ cx redeploy -s "My Awesome Containerized App" --service web:8c7f3d393162f88b8b9493f6babec574b03ca957 --service api:latest
+{% include references/toolbelt/boilerplate/footer.html %}

@@ -48,7 +48,7 @@ You can manually retrieve a backup in one of three ways:
 
 ### 1. Using Cloud 66 Toolbelt
 
-If you are using managed backups, you can retrieve your database backup by using [Cloud 66 Toolbelt](/{{page.collection}}/references/toolbelt.html#about-backup-management). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
+If you are using managed backups, you can retrieve your database backup by using [Cloud 66 Toolbelt](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#backups-download). Your backup may be bigger than 350 MB, in which case it will be divided into several files. By using the toolbelt, the files are downloaded and concatenated automatically for you.
 
 ### 2. From your Cloud 66 Dashboard
 

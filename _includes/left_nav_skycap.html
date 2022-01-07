@@ -32,7 +32,12 @@
             <li><h3><a href="/{{product}}/how-to-guides/common-tools">How-to: Common tools</a></h3></li>
 	        {% include left_nav_list.html section=section current=page %}
         </ul>
+        <ul class="menu-root">
+            {% assign toolbelt = include.collection | where:"categories","toolbelt" | sort: "order" %}
 
+            <li><h3><a href="/rails/references/toolbelt.html">Cloud 66 Toolbelt (cx)</a></h3></li>
+            {% include left_nav_list.html section=toolbelt current=page %}
+        </ul>
      <ul class="menu-root">
             {% assign formations = include.collection | where:"categories","how-to-guides/formations" | sort: "order" %}
 
