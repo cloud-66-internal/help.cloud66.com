@@ -1,4 +1,4 @@
-Shows a list of all the users in an organization that you have rights to manage. You can find your <organization name> by using `cx info`.
+Shows a list of all the users in an organization that you have rights to manage. You can find your `<organization name>` by using `cx info`.
 
 {% include references/toolbelt/boilerplate/top-tabs.html %}
 $ cx --org <organization name> users list
