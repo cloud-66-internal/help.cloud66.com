@@ -16,7 +16,7 @@ $ cx settings set -s mystack maintenance.mode  1|true|on|enable
 $ cx settings set -s mystack maintenance.mode  0|false|off|disable
 {% include references/toolbelt/boilerplate/footer.html %}
 
-### Settings
+#### Available settings
 
 | Setting | Default | Description |
 |  ---  |  ---  |  ---  |

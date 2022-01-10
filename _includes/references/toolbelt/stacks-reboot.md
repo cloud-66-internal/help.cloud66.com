@@ -1,4 +1,4 @@
-Reboots groups of servers in your application. Valid values for the <group> argument are `all`, `web`, `haproxy`, and `db`.  Database specific values like `mysql` or `redis` are also supported.
+Reboots groups of servers in your application. Valid values for the `<group>` argument are `all`, `web`, `haproxy`, and `db`.  Database specific values like `mysql` or `redis` are also supported.
 
 `<strategy>` specifies whether you want your web servers to be rebooted in `parallel` or in `serial`.  For serial reboots web servers are removed and re-added to the load balancer one by one. Non-web server will always be rebooted in parallel. If this value is left unspecified, Cloud 66 will determine the best strategy based on your infrastructure layout.
 
