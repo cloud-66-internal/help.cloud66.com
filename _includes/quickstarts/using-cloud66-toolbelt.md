@@ -25,7 +25,7 @@ It will then ask for your authorization to allow Toolbelt to view, edit, redeplo
 
 ### Installing cx without a browser
 
-You can also install a "headless" Toolbelt on servers or machines without a browser. Our [detailed reference guide](/{{page.collection}}/references/toolbelt.html#installing-on-a-server-headless) has details on how to do this.
+You can also install a "headless" Toolbelt on servers or machines without a browser. Our [detailed reference guide](/{{page.collection}}/references/toolbelt/toolbelt-installation.html#installing-on-a-server-headless) has details on how to do this.
 
 ### Advanced
 
@@ -118,7 +118,7 @@ You always have a <code>default</code> profile which cannot be deleted or rename
 
 ## More help with profiles
 
-For more info on profiles (including organizations, renaming, deleting and updating) please read our [detailed reference guide](/{{page.collection}}/references/toolbelt.html#profile-commands).
+For more info on profiles (including organizations, renaming, deleting and updating) please read our [detailed reference guide](/{{page.collection}}/references/toolbelt/toolbelt-profiles.html).
 
 
 ## Update Toolbelt

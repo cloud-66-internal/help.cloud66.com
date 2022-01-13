@@ -49,7 +49,7 @@ We'll now build another server for your cluster. You can repeat this step as man
 
 Next, transfer your data from your existing Elasticsearch instance to your new group. We recommend following the [official documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) to do so - be sure to select the correct version of your (existing) instance. 
 
-You can use [Toolbelt (cx) commands](/{{page.collection}}/references/toolbelt.html) like `ssh` , `download` and `upload` to make the process easier, or `scp` directly between your servers if you're more comfortable with that.
+You can use [Toolbelt (cx) commands](/{{page.collection}}/references/toolbelt/toolbelt-commands.html) like `ssh` , `download` and `upload` to make the process easier, or `scp` directly between your servers if you're more comfortable with that.
 
 ### Step 4: Promote your new group to "default"
 

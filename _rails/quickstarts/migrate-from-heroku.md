@@ -70,7 +70,7 @@ Start by dumping your existing database. Refer to the [ClearDB documentation for
 $ mysqldump -u [username] -p[password] [dbname] > backup.sql 
 ```
 
-Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/{{page.collection}}/references/toolbelt.html#upload) to upload the file to your application database server. Remember to replace the fields below with your values.
+Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#upload) to upload the file to your application database server. Remember to replace the fields below with your values.
 
 ```bash
 $ cx upload -s "[app_name]" --server [database_server_name] backup.sql /tmp/backup.sql

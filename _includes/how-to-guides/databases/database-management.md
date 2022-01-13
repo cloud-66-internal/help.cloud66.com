@@ -151,7 +151,7 @@ You can control your Rails database migrations by setting the `run.deploy.comman
 $ cx settings set -s my_stack run.deploy.command true
 ```
 
-When you have disabled `run.deploy.command` in [Application settings](/{{page.collection}}/references/toolbelt.html#settings-variables), you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
+When you have disabled `run.deploy.command` in [Application settings](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#settings-set), you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
 
 ## The Strong Migration gem
 

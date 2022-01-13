@@ -1,11 +1,12 @@
 ---
-layout: post
+layout: section
 template: one-col
 title: Cloud 66 Toolbelt 
-categories: references
 lead: "Reference guide for Cloud 66 Toolbelt commands"
 legacy: false
 tags: ["Toolbelt"]
+noindex: true
+sitemap: false
 order: 1
 permalink: /:collection/:path:output_ext
 ---

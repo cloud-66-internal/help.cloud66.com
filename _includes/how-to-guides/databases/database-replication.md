@@ -97,7 +97,7 @@ To disable replication between applications:
 From time-to-time your slave database may go out of sync with its master. You can re-synchronize a slave in two ways:
 
 - Via the Dashboard (click through to the detail page for the slave and then click *Resync Slave*)
-- Via the Cloud 66 Toolbelt's [database management commands](/{{page.collection}}/references/toolbelt.html#database-management).
+- Via the Cloud 66 Toolbelt's [database management commands](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#databases-promote-slave).
 
 
 
