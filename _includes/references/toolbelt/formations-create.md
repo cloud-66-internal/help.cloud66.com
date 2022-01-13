@@ -1,7 +1,7 @@
 Creates a new Formation in the specified Skycap application.
 
 {% include references/toolbelt/boilerplate/top-tabs.html %}
-$ formations create --stack <application name>] --name <formation name> --template-repo <template repo URL> --template-branch <branch name> [--tags <tagA> <tagB>] 
+$ cx formations create --stack <application name>] --name <formation name> --template-repo <template repo URL> --template-branch <branch name> [--tags <tagA> <tagB>] 
 {% include references/toolbelt/boilerplate/args.html %}
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |

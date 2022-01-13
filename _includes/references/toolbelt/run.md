@@ -15,10 +15,10 @@ $ cx run --stack <application name> [--server <server name> | <IP address>] [--s
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |
 | \--stack, -s &lt;application name&gt; | yes | — | Name of the application |
-| \--server, --svr &lt;server name&gt; | &lt;IP address&gt; | either/or | — | The name or IP address of the server on which to run the command |
+| \--server, --svr &lt;server name&gt; \| &lt;IP address&gt; | either/or | — | The name or IP address of the server on which to run the command |
 | \--service, --svc &lt;service name&gt; | either/or | — | (Maestro only) Name of the service in which to run the command |
 | \--container, --cnt &lt;container name&gt; | either/or | — | (Maestro only) Name of the pod/container in which to run the command  |
-| \--interactive, -i | no | — | The username to use when connecting to server(s) |
+| \--interactive, -i | no | — | Set the session to interactive mode |
 | &lt;commands&gt; | yes | — | The linux commands to run.  |
 {% include references/toolbelt/boilerplate/example.html %}
 $ cx run -s mystack --server lion 'ls -la'

@@ -9,7 +9,7 @@ $ cx databases resync-slave --stack <application name> --dbtype <database type> 
 |  ---  |  ---  |  ---  |  ---  |
 | \--stack, -s &lt;application name&gt; | yes | — | Name of your application |
 | &lt;slave server name&gt; | yes | — | Name of slave server to be resynced with master |
-| \--dbtype &lt;database type&gt; | no | — | The Database type mysql |
+| \--dbtype &lt;database type&gt; | no | — | The database type (`mysql`,`postgresql`) |
 {% include references/toolbelt/boilerplate/example.html %}
 $ cx databases resync-slave -s My_Awesome_App my_slave_server_name
 $ cx databases resync-slave -s My_Awesome_App --dbtype=postgresql my_slave_server_name

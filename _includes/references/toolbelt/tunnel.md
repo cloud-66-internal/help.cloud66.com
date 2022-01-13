@@ -23,7 +23,7 @@ $ cx tunnel --stack <application name> --server <server name> | <server IP> | <s
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |
 | \--stack, -s &lt;application name&gt; | yes | — | The application name |
-| \--server &lt;server name&gt; | &lt;server ip&gt; | &lt;server role&gt; | either/or | — | Name or IP or role of the server to access |
+| \--server &lt;server name&gt; \| &lt;server ip&gt; \| &lt;server role&gt; | either/or | — | Name or IP or role of the server to access |
 | -local, -l &lt;local port&gt; | no | — | Local port for the tunnel |
 | -remote, -r &lt;remote port&gt; | yes | — | Remote port for the tunnel |
 {% include references/toolbelt/boilerplate/example.html %}
