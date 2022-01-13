@@ -4927,22 +4927,20 @@ rails:
   getting_started:
     page: rails/quickstarts/getting-started.html
     page_anchors:
-    - accessing-your-git-repo
+    - a-add-deployment-target
     - advanced-configurations
-    - bitbucket-content
-    - choosing-a-deployment-target
-    - choosing-application-type
+    - b-specify-servers
     - cloud-content
-    - configuring-your-application
-    - defining-your-application
-    - deploying-to-production
-    - finalizing-deployment-details
-    - github-content
     - no-cloud-content
-    - other-git-content
     - rails-product-heading
     - rails-version-support
     - server-build-states
+    - step-1-choose-a-source
+    - step-2-add-repo-details
+    - step-3-configure-app
+    - step-4-configure-servers-for-deployment
+    - step-5-deploy-your-app
+    - using-a-non-github-host
     - what-youll-need
     - whats-next
   getting_started_with_manifest:
