@@ -12,7 +12,7 @@ $ cx databases promote-slave --stack <stack name> [--dbtype <database type>] <sl
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |
 | \--stack, -s &lt;stack name&gt; | yes | — | Name of your application |
-| \--dbtype &lt;database type&gt; | no | — | The Database type mysql |
+| \--dbtype &lt;database type&gt; | no | — | The database type (`mysql`,`postgresql`,`redis`) |
 | &lt;slave server name&gt; | yes | — | Name of slave server to promote to master |
 {% include references/toolbelt/boilerplate/example.html %}
 $ cx databases promote-slave -s My_Awesome_App my_redis_replication_slave

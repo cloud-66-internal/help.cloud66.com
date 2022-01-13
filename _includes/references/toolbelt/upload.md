@@ -10,9 +10,9 @@ $ cx upload --stack <application name> --server <server name> | <server IP> | <s
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |
 | \--stack, -s &lt;application name&gt; | yes | — | The application name |
-| \--server &lt;server name&gt; | &lt;server ip&gt; | &lt;server role&gt; | yes | — | Name or IP or role of the server to which the file will be uploaded |
+| \--server &lt;server name&gt; \| &lt;server ip&gt; \| &lt;server role&gt; | yes | — | Name or IP or role of the server to which the file will be uploaded |
 | /path/to/source/file | yes | — | Local path to the file that will be uploaded |
-| /path/to/target/directory | no | /tmp | Path on the server where the file will be saved |
+| /path/to/target/dir | no | /tmp | Path on the server where the file will be saved |
 {% include references/toolbelt/boilerplate/example.html %}
 $ cx upload -s mystack --server lion /tmp/file.txt
 $ cx upload -s mystack --server lion /mydir/files/file.txt /var/www/app

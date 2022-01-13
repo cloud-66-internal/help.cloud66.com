@@ -6,8 +6,6 @@ $ cx --org <organization name> users list
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |
 | \--org &lt;organization name&gt; | yes | — | The email address associated with the user's Cloud 66 account |
-| \--json &lt;access profile&gt; | yes | — | The access profile to be applied to the user |
-| \--override | no | — | Will override the access rights instead of append |
 {% include references/toolbelt/boilerplate/example.html %}
 $ cx --org my-org users list
 {% include references/toolbelt/boilerplate/footer.html %}

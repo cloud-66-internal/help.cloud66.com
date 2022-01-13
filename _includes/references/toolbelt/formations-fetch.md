@@ -1,7 +1,7 @@
 Fetches all stencils from a Formation in a Skycap application and downloads them to a local directory.
 
 {% include references/toolbelt/boilerplate/top-tabs.html %}
-$ formations fetch --stack <application name> -f <formation name> [--outdir <directory path>] [--overwrite <bool>]
+$ cx formations fetch --stack <application name> -f <formation name> [--outdir <directory path>] [--overwrite <bool>]
 {% include references/toolbelt/boilerplate/args.html %}
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |

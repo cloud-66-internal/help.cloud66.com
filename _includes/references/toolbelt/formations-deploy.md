@@ -1,7 +1,7 @@
 Deploys a Formation in a Skycap application.
 
 {% include references/toolbelt/boilerplate/top-tabs.html %}
-$ formations deploy --stack <application name> -f <formation name> [--snapshot-uid <UID>] [--use-latest <boolean>] [-w <workflow name>]
+$ cx formations deploy --stack <application name> -f <formation name> [--snapshot-uid <UID>] [--use-latest <boolean>] [-w <workflow name>]
 {% include references/toolbelt/boilerplate/args.html %}
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |

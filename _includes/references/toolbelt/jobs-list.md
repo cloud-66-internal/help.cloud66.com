@@ -6,7 +6,7 @@ $ cx jobs list --stack <application name> --server <server name>|<server ip>|<se
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |
 | \--stack, -s &lt;application name&gt; | yes | — | Full or partial name of the application |
-| \--server &lt;server name&gt;|&lt;server ip&gt;|&lt;server role&gt; | no | — | The name, IP address or role of the server. |
+| \--server &lt;server name&gt;\|&lt;server ip&gt;\|&lt;server role&gt; | no | — | The name, IP address or role of the server. |
 | \--service &lt;service name&gt; | no | — | The name of the service  |
 {% include references/toolbelt/boilerplate/example.html %}
 $ cx jobs list -s my-app

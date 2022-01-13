@@ -11,5 +11,5 @@ $ cx gateways add --name <gateway name> --address <gateway address> --username <
 | \--private-ip &lt;private ip of gateway&gt; | yes | — | The private IP address to use to access the network behind the gateway |
 {% include references/toolbelt/boilerplate/example.html %}
 $ cx gateways add --name aws_bastion --address 192.168.100.100  --username ec2-user  --private-ip 192.168.1.1
-$ cx --org My_Awesome_org gateways add --name aws_bastion --address 1.1.1.1  --username ec2-user  --private-ip 2.2.2.2
+$ cx --org My_Awesome_org gateways add --name aws_bastion --address 1.1.1.1  --username ec2-user  --private-ip 192.168.2.2
 {% include references/toolbelt/boilerplate/footer.html %}

@@ -1,7 +1,7 @@
 List all the formations of a stack in a Skycap application by name and UID.
 
 {% include references/toolbelt/boilerplate/top-tabs.html %}
-$ formations list --stack <application name> <formation names>
+$ cx formations list --stack <application name> <formation names>
 {% include references/toolbelt/boilerplate/args.html %}
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |

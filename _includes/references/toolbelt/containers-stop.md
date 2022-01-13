@@ -7,7 +7,7 @@ $ cx containers stop --stack <application name> <container ID>|<container name>
 |  ---  |  ---  |  ---  |  ---  |
 | \--stack, -s &lt;application name&gt; | yes | — | Name of your application |
 | &lt;container ID&gt; | either\or | — | The ID of the container to stop |
-| <container name? | either\or | — | The name of the container to stop |
+| &lt;container name&gt; | either\or | — | The name of the container to stop |
 {% include references/toolbelt/boilerplate/example.html %}
 $ cx containers stop -s mystack 2844142cbfc064123777b6be765b3914e43a9e083
 $ cx containers stop -s mystack 2844142c

@@ -9,5 +9,5 @@ $ cx stacks configure list-versions --file <filename> --stack <application name>
 | \--file, -o &lt;filename&gt; | yes | — | Name of the config file. Accepted values are service.yml and manifest.yml |
 | \--version, -v &lt;file version type&gt; | no | — | Full or partial file version |
 {% include references/toolbelt/boilerplate/example.html %}
-$ cx stacks configure download -f service.yml -s myapp
+$ cx stacks configure list-versions -o service.yml -s myapp
 {% include references/toolbelt/boilerplate/footer.html %}

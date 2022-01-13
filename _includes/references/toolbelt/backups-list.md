@@ -7,7 +7,7 @@ $ cx backups list --stack <application name> --latest
 |  ---  |  ---  |  ---  |  ---  |
 | \--stack, -s &lt;application name&gt; | yes | — | The name of the application |
 | \--dbtypes &lt;type&gt; | no | — | Database type to be listed. (all, mysql, postgresql, mongodb, redis) |
-| \--latest, -l | yes | — | The backup ID (you can get this using the backup list command) |
+| \--latest, -l | yes | — | List the latest backup |
 {% include references/toolbelt/boilerplate/example.html %}
 $ cx backups list -s "My Awesome App" --dbtypes mysql --latest
 {% include references/toolbelt/boilerplate/footer.html %}
