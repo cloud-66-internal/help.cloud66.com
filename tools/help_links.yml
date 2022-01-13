@@ -1889,7 +1889,6 @@ maestro:
     - services-resume
     - services-scale
     - services-stop
-    - settings
     - settings-list
     - settings-set
     - skycap-listen
@@ -3655,7 +3654,6 @@ node:
     - services-resume
     - services-scale
     - services-stop
-    - settings
     - settings-list
     - settings-set
     - skycap-listen
@@ -6112,7 +6110,6 @@ rails:
     - services-resume
     - services-scale
     - services-stop
-    - settings
     - settings-list
     - settings-set
     - skycap-listen
@@ -7030,7 +7027,6 @@ skycap:
     - services-resume
     - services-scale
     - services-stop
-    - settings
     - settings-list
     - settings-set
     - skycap-listen
