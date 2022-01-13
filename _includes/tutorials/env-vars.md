@@ -88,12 +88,12 @@ For example, environment variables for your server IP addresses cannot be change
 {% if include.product != 'prepress' %}
 ## Managing environment variables using Toolbelt
 
-You can also manage your environment variables using your [Cloud 66 Toolbelt](/{{page.collection}}/references/toolbelt.html#configuring-toolbelt). There are four methods for managing env vars via Toolbelt:
+You can also manage your environment variables using your [Cloud 66 Toolbelt](/{{page.collection}}/references/toolbelt/toolbelt-installation.html). There are four methods for managing env vars via Toolbelt:
 
-- [Listing environment variables](/{{page.collection}}/references/toolbelt.html#list-environment-variables)
-- [Downloading variables](/{{page.collection}}/references/toolbelt.html#download-environment-variables) as a file
-- [Setting individual variables](/{{page.collection}}/references/toolbelt.html#set-environment-variables)
-- Setting variables in bulk by [uploading a file](/{{page.collection}}/references/toolbelt.html#upload-environment-variables)
+- [Listing environment variables](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#env-vars-list)
+- [Downloading variables](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#env-vars-download) as a file
+- [Setting individual variables](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#env-vars-set)
+- Setting variables in bulk by [uploading a file](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#env-vars-upload)
 
 Please click on the links above for detailed instructions on each of these methods.
 {% endif %}

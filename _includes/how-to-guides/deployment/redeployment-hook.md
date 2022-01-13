@@ -78,7 +78,7 @@ The name of the profile can be found via your app Dashboard under Settings & Inf
 
 Users who have signed in through Github (and who have enough access to create and edit deployment events for their applications on GitHub) can activate continuous deployments on GitHub. 
 
-To do this: access your [Application settings](/{{page.collection}}/references/toolbelt.html#settings-variables) via the toolbelt and set **continuous.deploy** to _true_.
+To do this: access your [Application settings](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#settings-set) via the toolbelt and set **continuous.deploy** to _true_.
 
 ```shell
 $ cx settings set -s my_app_name continuous.deploy true

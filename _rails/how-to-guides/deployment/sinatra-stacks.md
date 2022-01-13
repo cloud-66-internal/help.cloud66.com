@@ -35,7 +35,7 @@ Given that Sinatran applications can have different database frameworks, we allo
 </ul>
 
 
-These commands can be set via [Toolbelt](/rails/references/toolbelt.html#settings-variables),
+These commands can be set via [Toolbelt](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#settings-set),
 
 ```shell
 $ cx settings set -s my_app custom.build.command "rake db:seed"
