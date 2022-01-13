@@ -79,5 +79,5 @@ Your logs in `$STACK_PATH/log` and `/var/log` are automatically rotated on a dai
 
 #### Note
 <div class="notice">
-<p>You can set the frequency and the number of rotations to be kept <a href="/{{page.collection}}/references/toolbelt.html#list-your-stack-settings">using the Cloud 66 Toolbelt</a>.</p>
+<p>You can set the frequency and the number of rotations to be kept <a href="/{{page.collection}}/references/toolbelt/toolbelt-commands.html#stacks-configuration-list">using the Cloud 66 Toolbelt</a>.</p>
 </div>

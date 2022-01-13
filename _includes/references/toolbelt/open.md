@@ -1,32 +1,14 @@
+Opens the default web browser and opens the web end-point of a given application.
 
-## Open your website
-
-
-### Usage
-
-```shell
-$ cx open [-s <stack>] [<server name>|<server ip>|<server role>]
-```
-
-
-
-
-### Parameters
-
-
-    
-|		Parameter 		   |   Description    |
-|--| ----:|
-|stack 					   |		Name of your application|
-|server name  (optional)   | 	Name of the server to access|
-|server ip (optional)	   |	 IP of the server to access|
-|server role (optional)	   | Role of the server to access (e.g. web) |
-{:.table}
-
-
-### Example
-
-```shell
-$ cx open -s "My Awesome App"
-```
-
+{% include references/toolbelt/boilerplate/top-tabs.html %}
+$ cx open --stack <application name> <server name>
+{% include references/toolbelt/boilerplate/args.html %}
+| Argument | Required? | Default | Description |
+|  ---  |  ---  |  ---  |  ---  |
+| \--stack, -s &lt;application name&gt; | yes | — | Full or partial name of the application |
+| &lt;server name&gt; | no | — | The name of the web server to query |
+{% include references/toolbelt/boilerplate/example.html %}
+$ cx open lion
+$ cx open -s mystack
+$ cx open -s mystack lion
+{% include references/toolbelt/boilerplate/footer.html %}

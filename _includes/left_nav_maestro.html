@@ -30,9 +30,14 @@
        
     		<li><h3><a href="/maestro/how-to-guides/common-tools">How-to: Common Tools</a></h3></li>
             {% include left_nav_list.html section=common-tools current=page %}
-       
-        </ul
-        >
+
+        <ul class="menu-root">
+                {% assign toolbelt = include.collection | where:"categories","toolbelt" | sort: "order" %}
+    
+                <li><h3><a href="/maestro/references/toolbelt.html">Cloud 66 Toolbelt (cx)</a></h3></li>
+                {% include left_nav_list.html section=toolbelt current=page %}
+        </ul>       
+        </ul>
         <ul class="menu-root">
             {% assign dockerfiles = include.collection | where:"categories","how-to-guides/dockerfiles" | sort: "order" %}
            
