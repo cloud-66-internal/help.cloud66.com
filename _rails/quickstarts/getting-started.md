@@ -32,6 +32,12 @@ permalink: /:collection/:path:output_ext
 We support every version of Rails from 2.6.3 and upwards, including versions 6.x.x The version installed during deployment is based on the requirements of your application. Versions earlier than 2.6.3 <em>may</em> work but will have some compatibility issues with Ubuntu 18.04 and 20.04.
 </p></div>
 
+If you're already using Cloud 66 just click *New Application &rarr; Rails (Rack frameworks)* button on the dashboard.
+
+<img src="/assets/shared/new_app_dropdown.png" alt="Deploy a new Rails app">
+
+## Defining your application
+
 ## Step 1: Choose a source
 
 The first thing we need is access to your code, so that we can build and deploy it for you. The easiest option is to give us (read-only) access to a Github repo. To do this:
