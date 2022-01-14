@@ -3,126 +3,51 @@
     <div class="accordion-content">
         <ul>
             <li>
-                <p>
+                    <strong>AWS Access key ID</strong>  &mdash; You get this info from your AWS account Dashboard. (<a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#option-a-using-root-credentials" target="_blank">more help</a>)
+            </li>
+            <li>
+                    <strong>AWS Secret Access Key</strong>  &mdash; You get this info from your AWS account dashboard, when you create your AWS account. (<a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#option-a-using-root-credentials" target="_blank">more help</a>)
+            </li>
+            <li>
                     <strong>Give this cloud key a name</strong> &mdash; This is to give you the option of deploying to multiple AWS accounts. If you are deploying to a single account only, you can leave it as default.
-                </p>
-            </li>
-            <li>
-                <p>
-                    <strong>AWS Access key ID</strong>  &mdash; You get this info from your AWS account Dashboard.
-                </p>
-            </li>
-            <li>
-                <p>
-                    <strong>AWS Secret Access Key</strong>  &mdash; You get this info from your AWS account dashboard, when you create your AWS account.
-                </p>
-            </li>
-        </ul>
-        <p>Once you've added your AWS Cloud credentials you need to choose the following:</p>
-        <ul>
-            <li>
-                <p>
-                    <strong>Server Region</strong>  &mdash; For example <em>US East (Northern Virginia)</em>, <em>Europe (London)</em>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <strong>Server Size</strong>  &mdash; For example <em>Compute optimized (C4.large)</em>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <strong>AWS platform</strong>  &mdash; EC2 Classic or EC2-VPC (<a target="_blank" href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-vpc.html">Learn more about AWS Platforms</a>)
-                </p>
-            </li>
-        </ul>
-    </div><!--/.accordion-content-->
-
-    <h4 class="accordion-toggle">Google Compute Engine</h4>
-    <div class="accordion-content">
-        <ul>
-            <li>
-                <p>
-                    <strong>GCE Client Email</strong> &mdash; You get this info from your GCE account Dashboard. Under <em>Service Accounts</em> &rarr; <em>API's</em> &rarr; <em>Credentials</em>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <strong>GCE Project Id</strong> &mdash; You get this info from your GCE Dashboard. It's located at the top of the <em>Overview</em> page.
-                </p>
-            </li>
-            <li>
-                <p>
-                    <strong>GCE Key</strong> &mdash; This is a JSON file you need to upload, you get this from your GCE Dashboard.
-                </p>
-            </li>
-        </ul>
-        <p>Once you've added your GCE Cloud credentials you need to choose the following:</p>
-        <ul>
-            <li>
-                <p>
-                    <strong>Server Region</strong>  &mdash; For example <em>US East (Northern Virginia)</em>, <em>Europe (London)</em>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <strong>Server Size</strong>  &mdash; For example <em>Compute optimized (C4.large)</em>
-                </p>
             </li>
         </ul>
     </div>
-
-    <h4 class="accordion-toggle">Microsoft Azure</h4>
-    <div class="accordion-content">
-        <ul>
-            <li>
-                <p>
-                    <strong>Azure Subscription ID</strong> &mdash; You get this info from your Azure cloud Dashboard.
-                </p>
-            </li>
-            <li>
-                <p>
-                    <strong>Client ID</strong> &mdash; You get this info from your Azure Dashboard.
-                </p>
-            </li>
-            <li>
-                <p>
-                    <strong>Client Secret</strong> &mdash; You get this info from your Azure Dashboard.
-                </p>
-            </li>
-            <li>
-                <p>
-                    <strong>Tenant ID</strong> &mdash; You get this info from your Azure Dashboard.
-                </p>
-            </li>
-        </ul>
-    </div>
-
     <h4 class="accordion-toggle">DigitalOcean</h4>
     <div class="accordion-content">
         <ul>
             <li>
-                <p>
+
                     <strong>Give this cloud key a name</strong> &mdash; this is to give you the option of deploying to multiple accounts with the same cloud provider. If you only have 1 account you can leave it as default.
-                </p>
+
             </li>
             <li>
-                <p>
+
                     <strong>Click Add Cloud</strong>  &mdash; this will redirect you to the DigitalOcean dashboard. You'll need to login to DigitalOcean to finish adding the key.
-                </p>
+
             </li>
         </ul>
-        <p>Once the DigitalOcean key is validated you'll need to choose the following:</p>
+    </div>
+    <h4 class="accordion-toggle">Google Compute Engine</h4>
+    <div class="accordion-content">
         <ul>
             <li>
-                <p>
-                    <strong>Server Region</strong>  &mdash; For example <em>Amsterdam 2, Netherlands</em>
-                </p>
+                    <strong>GCE Client Email</strong> &mdash; You get this info from your GCE account Dashboard. Under <em>Service Accounts</em> &rarr; <em>API's</em> &rarr; <em>Credentials</em> (<a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html" target="_blank">more help</a>)
             </li>
             <li>
-                <p>
-                    <strong>Server Size</strong>  &mdash; For example <em>2GB - 2 CPU (Standard)</em>
-                </p>
+                    <strong>GCE Project Id</strong> &mdash; You get this info from your GCE Dashboard. It's located at the top of the <em>Overview</em> page. (<a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html" target="_blank">more help</a>)
+            </li>
+            <li>
+                    <strong>GCE Key</strong> &mdash; This is a JSON file you need to upload, you get this from your GCE Dashboard.
+            </li>
+        </ul>
+    </div>
+
+    <h4 class="accordion-toggle">Hetzner Cloud</h4>
+    <div class="accordion-content">
+        <ul>
+            <li>
+                    <strong>Hetzner API key</strong> &mdash; You can find this under Access &rarr; API tokens &rarr; Generate API Token (<a href="/{{page.collection}}/how-to-guides/clouds/cloud-hetzner.html" target="_blank">more help</a>)
             </li>
         </ul>
     </div>
@@ -131,37 +56,68 @@
     <div class="accordion-content">
         <ul>
             <li>
-                <p>
                     <strong>Give this cloud key a name</strong> &mdash; this is to give you the option of deploying to multiple Linode different Linode accounts. If you only have one account you can leave it as default.
-                </p>
             </li>
             <li>
-                <p>
+
                     <strong>Linode API Key</strong>  &mdash; You get this information from your Linode Cloud Dashboard. <em>my profile</em> &rarr; <em>API Keys</em> tab.
-                </p>
-            </li>
-        </ul>
-        <p>Once the Linode key is validated you'll need to choose your deployment options:</p>
-        <ul>
-            <li>
-                <p>
-                    <strong>Server Region</strong>  &mdash; For example <em>Dallas, TX, USA</em>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <strong>Server Size</strong>  &mdash; For example <em>Linode 2048</em>
-                </p>
+
             </li>
         </ul>
     </div>
+
+    <h4 class="accordion-toggle">Maxihost</h4>
+    <div class="accordion-content">
+        <ul>
+            <li>
+
+                    <strong>Maxihost API Key</strong> &mdash; You can find this under Settings & Billing &rarr; API Keys &rarr; Create API key (<a href="/{{page.collection}}/how-to-guides/clouds/cloud-maxihost.html" target="_blank">more help</a>)
+
+            </li>
+        </ul>
+    </div>
+    <h4 class="accordion-toggle">Microsoft Azure</h4>
+    <div class="accordion-content">
+        <ul>
+            <li>
+                    <strong>Azure Subscription ID</strong> &mdash; You get this info from your Azure cloud Dashboard. (<a href="/{{page.collection}}/how-to-guides/clouds/cloud-azure.html" target="_blank">more help</a>)
+            </li>
+            <li>
+
+                    <strong>Client ID</strong> &mdash; You get this info from your Azure Dashboard.
+
+            </li>
+            <li>
+
+                    <strong>Client Secret</strong> &mdash; You get this info from your Azure Dashboard.
+
+            </li>
+            <li>
+
+                    <strong>Tenant ID</strong> &mdash; You get this info from your Azure Dashboard.
+
+            </li>
+        </ul>
+    </div>
+    <h4 class="accordion-toggle">OVH Cloud</h4>
+    <div class="accordion-content">
+        <ul>
+            <li>
+                <strong>API region</strong> &mdash; You need to specify which API region your project uses
+        </li>
+            <li>
+                    <strong>OVH Project ID</strong> &mdash; You can find this on your OVH project dashboard (<a href="/{{page.collection}}/how-to-guides/clouds/cloud-ovh.html" target="_blank">more help</a>)
+            </li>
+        </ul>
+    </div>
+
     <h4 class="accordion-toggle">Packet</h4>
     <div class="accordion-content">
         <ul>
             <li>
-                <p>
+
                     <strong>Packet API Key</strong> &mdash; You get this info from your Packet Cloud Dashboard.
-                </p>
+
             </li>
         </ul>
     </div>
@@ -169,44 +125,40 @@
     <div class="accordion-content">
         <ul>
             <li>
-                <p>
+
                     <strong>Rackspace Username</strong> &mdash; You get this info from your Rackspace Cloud Dashboard.
-                </p>
+
             </li>
             <li>
-                <p>
-                    <strong>Rackspace API Key</strong> &mdash; You get this info from your Rackspace Cloud Dashboard.
-                </p>
+
+                    <strong>Rackspace API Key</strong> &mdash; You get this info from your Rackspace Cloud Dashboard. (<a href="/{{page.collection}}/how-to-guides/clouds/cloud-rackspace.html" target="_blank">more help</a>)
+
             </li>
             <li>
-                <p>
+
                     <strong>Rackspace user base </strong> &mdash; Select either UK or US.
-                </p>
+
             </li>
         </ul>
     </div>
-    <h4 class="accordion-toggle">Cloud A</h4>
-    <div class="accordion-content">
-        <ul>
-            <li>
-                <p>
-                    <strong>CloudA Username</strong> &mdash; You get this info from your CloudA Dashboard.
-                </p>
-            </li>
-            <li>
-                <p>
-                    <strong>CloudA API Key</strong> &mdash; You get this info from your CloudA Dashboard.
-                </p>
-            </li>
-        </ul>
-    </div>
+        <h4 class="accordion-toggle">Vultr</h4>
+        <div class="accordion-content">
+            <ul>
+                <li>
+                    You will need to explicity grant Cloud 66 access via the Vultr firewall. You can either allow access from all IP addresses, or <a href="https://app.cloud66.com/authorized_ips" target="_blank">authorized IP addresses</a> if you prefer.
+                </li>
+                <li>
+                        <strong>Vultr API key</strong> &mdash; You can find this under Account &rarr; API (<a href="/{{page.collection}}/how-to-guides/clouds/cloud-vultr.html" target="_blank">more help</a>)
+                </li>
+            </ul>
+        </div>
     <h4 class="accordion-toggle">Your Own Servers</h4>
     <div class="accordion-content">
         <ul>
             <li>
-                <p>
-                    <strong>Registered Servers</strong> &mdash; First you need to Register your server as a deployment target with Cloud 66. Click on the <em>Add Registered Servers</em> link. You can also navigate to the Registered Servers page from the right hand menu of the Cloud 66 Stacks Dashboard.
-                </p>
+
+                    <strong>Registered Servers</strong> &mdash; First you need to <a href="/{{page.collection}}/how-to-guides/deployment/registered-servers.html" target="_blank">Register your server</a> as a deployment target with Cloud 66. Click on the <em>Add Registered Servers</em> link. You can also navigate to the Registered Servers page under Account Settings.
+
             </li>
             <li>
                 <strong>Copy &amp; run the command</strong> &mdash; Run the provided command in the terminal on your server. Once this has successfully completed you can then approve the server and it will become available as a Cloud 66 deployment target.
