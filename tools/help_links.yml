@@ -757,21 +757,23 @@ maestro:
   getting_started:
     page: maestro/quickstarts/getting-started.html
     page_anchors:
-    - 1-choose-application-type
-    - 2-add-application-services
-    - 3-specify-the-source-of-images
-    - 4-build-application-images
-    - 5-configure-deployment
-    - 6-deploy-your-app
-    - 7-test-your-app
+    - a-configure-ports
+    - a-specify-servers
+    - b-add-deployment-target
+    - b-configure-storage-optional
+    - c-set-the-desired-number-of-instances-optional
     - cloud-content
-    - i-container-network-configuration
-    - ii-adding-a-data-source
-    - iii-choose-a-cloud-provider
-    - iv-configure-server-size
     - maestro-product-heading
     - no-cloud-content
-    - server-build-states
+    - step-1-choose-a-source
+    - step-2-add-repo-details
+    - step-3-add-validate-and-build-images
+    - step-4-configure-services
+    - step-5-configure-servers-for-deployment
+    - step-6-deploy-your-app
+    - step-7-test-your-app
+    - using-a-non-github-host
+    - using-a-prebuilt-image
     - what-youll-need
     - whats-next
   getting_started_with_clusters:
@@ -4931,6 +4933,7 @@ rails:
     - advanced-configurations
     - b-specify-servers
     - cloud-content
+    - defining-your-application
     - no-cloud-content
     - rails-product-heading
     - rails-version-support
