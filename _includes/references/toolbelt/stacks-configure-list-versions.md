@@ -6,7 +6,7 @@ $ cx stacks configure list-versions --file <filename> --stack <application name>
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |
 | \--stack, -s &lt;application name&gt; | yes | — | Name of the application |
-| \--file, -o &lt;filename&gt; | yes | — | Name of the config file. Accepted values are service.yml and manifest.yml |
+| \--file, -o &lt;filename&gt; | yes | — | Name of the config file. Accepted values: <br/>`service.yml`,<br/> `manifest.yml` |
 | \--version, -v &lt;file version type&gt; | no | — | Full or partial file version |
 {% include references/toolbelt/boilerplate/example.html %}
 $ cx stacks configure list-versions -o service.yml -s myapp

@@ -6,7 +6,7 @@ $ cx stacks configure upload --file <filename> --stack <application name> --comm
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |
 | \--stack, -s &lt;application name&gt; | yes | — | Name of the application |
-| \--file, -f &lt;filename&gt; | yes | — | Name of the config file. Accepted values are service.yml and manifest.yml |
+| \--file, -f &lt;filename&gt; | yes | — | Name of the config file. Accepted values: <br/>`service.yml`,<br/>`manifest.yml` |
 | \--comments, -c &lt;comment&gt; | yes | — | A brief description of your changes |
 {% include references/toolbelt/boilerplate/example.html %}
 $ cx stacks configure upload -f service.yml -s myapp -c "updates to ports"
