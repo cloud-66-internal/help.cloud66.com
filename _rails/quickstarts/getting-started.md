@@ -29,102 +29,49 @@ permalink: /:collection/:path:output_ext
 
 ### Rails version support
 <div class="notice"><p>
-We support every version of Rails from 2.6.3 and upwards, including version 6.0.0. The version installed during deployment is based on the requirements of your application. Versions earlier than 2.6.3 <em>may</em> work but will have some compatibility issues with Ubuntu 18.04 and 20.04.
+We support every version of Rails from 2.6.3 and upwards, including versions 6.x.x The version installed during deployment is based on the requirements of your application. Versions earlier than 2.6.3 <em>may</em> work but will have some compatibility issues with Ubuntu 18.04 and 20.04.
 </p></div>
-
-## Choosing application type
-
-New users will be shown the product selection wizard. For Skycap, choose "I have a native Ruby or Node app" and then "Deploy Rails & Rack Frameworks" (*Deploy a Ruby App*). 
-
-<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
-    <div class="Grid-cell">
-        <h4>Step 1</h4>
-        <img src="/assets/shared/product_choice_1.png" alt="Product choice wizard - step 1">
-    </div>
-    <div class="Grid-cell">
-        <h4>Step 2</h4>
-        <img src="/assets/shared/product_choice_3.png" alt="Product choice wizard - step 2">
-    </div>
-</div>
 
 If you're already using Cloud 66 just click *New Application &rarr; Rails (Rack frameworks)* button on the dashboard.
 
 <img src="/assets/shared/new_app_dropdown.png" alt="Deploy a new Rails app">
 
-## Accessing your Git Repo
-
-Cloud 66 supports both public and private Git repositories. If you're using a private Git repository you'll need to Add and approve the Cloud 66 public SSH key with your Git provider.
-
-<div class="Tabs">
-    <nav>
-      <ul class="TabMini js_tabs">
-        <li class="TabMini-item active">
-          <a href="#github-content" class="TabMini-link">
-            Github
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#bitbucket-content" class="TabMini-link">
-            Bitbucket
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#other-git-content" class="TabMini-link">
-            Other git repositories
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <section id="github-content" class="Tabs-content js_tab_content">
-        <h4>Public Repository</h4>
-        <p>If your code is in a public repository, you don't need to do anything.</p>
-        <h4>Private Repository</h4>
-        <p>To grant access to a private Github repository, you need to add your public SSH key you see on the screen to your Github account. </p>
-        <p>
-            <img src="/assets/rails/rails_add_public_key.png" alt="Adding your Public Key to GitHub">
-        </p>
-        <p><em>Copy the public SSH Key</em> (starts with ssh-rsa and ends with the email address you used to sign up) and then <em>Click Go to GitHub</em>. The GitHub SSH keys page will open in a new browser tab. Click the <em>New SSH key</em> button and paste your public key.</p>
-    </section>
-
-    <section id="bitbucket-content" class="Tabs-content js_tab_content is-hidden">
-        <h4>Public Repository</h4>
-        <p>If your code is in a public repository, you don't need to do anything.</p>
-        <h4>Private Repository</h4>
-        <p>To grant access to a private Bitbucket repository, you need to add your public SSH key you see on the screen to your Bitbucket account.</p>
-        <p>
-            <img src="/assets/rails/rails_add_public_key_bitbucket.png" alt="Adding the Public Key to BitBucket">
-        </p>
-    </section>
-
-    <section id="other-git-content" class="Tabs-content js_tab_content is-hidden">
-        <h4>Private Repository</h4>
-        <p>To grant access to your private git repository, add the public SSH key to the list of git users (refer to your git server manual) and make sure your git repository accepts connections on port 22, from Cloud 66 public IP addresses: {% include general/public_ips.html %}</p>
-    </section>
-</div>
-
 ## Defining your application
 
-Before we can deploy, we need some basic info about your application. Please fill in the following fields:
+## Step 1: Choose a source
 
-<img src="/assets/rails/rails_about_app.png" alt="Fill in the information about your app: Git repo, name and environment">
+The first thing we need is access to your code, so that we can build and deploy it for you. The easiest option is to give us (read-only) access to a Github repo. To do this:
 
+1. Click *Get Started*
+2. On the next page click *Link with Github*
+3. We'll send you to our app on Github (you'll need to sign in) 
+4. Once you're signed in, click *Configure* & then select the account you wish to link to Cloud 66
+5. Install and authorize our Github app (you can restrict our access to specific repos if needed)
+6. You will be redirected back to your Cloud 66 dashboard and you can move on to Step 2.
 
-* **Git repo URL for your app** &mdash; We support `http://`, `git://` and `git@` URL formats. Please note that **HTTPS isn't currently supported**.
+### Using a non-Github host
 
-* **What branch do you want to deploy** &mdash; This defaults to master but you can provide any branch you like.
+If you'd prefer to use another git host, or your own self-hosted repository: 
 
-* **Give your new application a name** &mdash; This is the name that will be used in the Cloud 66 Dashboard once your app is deployed.
+1. Click *I'd rather enter a git repo URL.* 
+2. Copy the SSH key 
+3. Open your repo and add the key to the settings (usually found under *SSH* or *SSH keys*)
+4. Come back to Cloud 66 and click the green *Next...* button
 
-* **Choose an Environment** &mdash; Choose the Environment that you're deploying to: Development, QA, Staging or Production.
+## Step 2: Add repo details
 
-Now click the *Analyze* button - the results will be displayed in a few seconds.
+Now that we have access to your code, we can set up your application:
 
-## Configuring your application
+1. Choose the repo you want to deploy and set the branch
+2. Choose an environment for your application
+3. Give your application a name (this will be used to label your application throughout the Cloud 66 dashboard, and will not be visible to public users.)
+4. Click *Analyze*
+
+## Step 3: Configure app
 
 Once the analysis is complete you'll see a yellow Information Box that you can use to verify the analysis is correct.
 
-<img src="/assets/rails/rails_about_your_app.png" alt="Rails application - analysis information">
+<img src="/assets/rails/about-app.png" alt="Rails application - analysis information">
 
 If there are any problems you can make changes and click **Reanalyze my code**. If necessary, you can also add environment variables.
 
@@ -141,25 +88,37 @@ In App Configuration you can make changes to application configuration parameter
 <p>You can configure many aspects of your application using <a href="/rails/quickstarts/using-cloud66-toolbelt.html">Cloud 66 Toolbelt</a> or a <a href="/rails/quickstarts/getting-started-with-manifest.html">manifest file</a>.</p>
 </div>
 
-## Choosing a deployment target
+## Step 4: Configure servers for deployment
 
-If you're deploying for the first time you need to add your Cloud provider credentials:
+### A. Add deployment target
+
+We need access to your cloud account in order to provision and manage servers on your behalf. How you configure that access differs from provider to provider. Click the link to your provider below if you need help.
 
 {% include general/clouds_accordion.html %}
 
-## Finalizing Deployment Details
+To add cloud credentials click the *Add a Deployment Target* button. This will open a panel that will let you configure access to your provider.
 
-Now you can decide how you want to configure your Front end (Web) and Database Servers. They can be shared or deployed to separate servers.
+Click the green *Add Deployment Target* button once complete.
 
-### Deploying to Production
+### B. Specify servers
+
+Next you need to specify where your servers will be situated, how large they should be, and where your data will be stored:
+
+1. Choose a **Server Region**
+2. We will suggest a size for your application server - you can change it as needed
+3. Specify whether your datastore will share the app server (not recommended for Production), or have its own server. (You can also use an existing [external database server](/rails/how-to-guides/databases/database-management.html#no-database-external) if you prefer)
+
+<img src="/assets/rails/rails_deployment_details.png" alt="Choose where to deploy your database">
 
 <div class="notice">
 <p>For production environments we always recommend separate servers. If you need fine grained control for more advanced deployments  you can use a <a href="/rails/quickstarts/getting-started-with-manifest.html">manifest file</a>.</p>
 </div>
 
-<img src="/assets/rails/rails_deployment_details.png" alt="Choose where to deploy your database">
+## Step 5: Deploy your app
 
-That's it! Now just click *Deploy application* and watch your app roll out to your new servers.
+When you're satisfied with your servers, click the *Start Deployment* button. During the build and deployment process you can view the log to see what’s happening behind the scenes. 
+
+You can also close the window and come back later. We will email you once the application is deployed (or if it fails).
 
 ### Server build states
 
