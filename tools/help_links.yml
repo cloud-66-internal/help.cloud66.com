@@ -1783,8 +1783,12 @@ maestro:
   team_accounts:
     page: maestro/account/team-accounts.html
     page_anchors:
+    - account-level-permissions
     - add-a-new-user-team-member
+    - application-level-permissions--roles
     - application-users
+    - assigning-application-roles-to-a-user
+    - creating-and-editing-roles
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
@@ -3552,8 +3556,12 @@ node:
   team_accounts:
     page: node/account/team-accounts.html
     page_anchors:
+    - account-level-permissions
     - add-a-new-user-team-member
+    - application-level-permissions--roles
     - application-users
+    - assigning-application-roles-to-a-user
+    - creating-and-editing-roles
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
@@ -4235,8 +4243,12 @@ prepress:
   team_accounts:
     page: prepress/account/team-accounts.html
     page_anchors:
+    - account-level-permissions
     - add-a-new-user-team-member
+    - application-level-permissions--roles
     - application-users
+    - assigning-application-roles-to-a-user
+    - creating-and-editing-roles
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
@@ -5998,8 +6010,12 @@ rails:
   team_accounts:
     page: rails/account/team-accounts.html
     page_anchors:
+    - account-level-permissions
     - add-a-new-user-team-member
+    - application-level-permissions--roles
     - application-users
+    - assigning-application-roles-to-a-user
+    - creating-and-editing-roles
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
@@ -6946,8 +6962,12 @@ skycap:
   team_accounts:
     page: skycap/account/team-accounts.html
     page_anchors:
+    - account-level-permissions
     - add-a-new-user-team-member
+    - application-level-permissions--roles
     - application-users
+    - assigning-application-roles-to-a-user
+    - creating-and-editing-roles
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
