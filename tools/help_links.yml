@@ -37,6 +37,7 @@ maestro:
     page: maestro/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
@@ -91,6 +92,13 @@ maestro:
     - post-deployment-health-checks
     - running-an-on-demand-health-check
     - viewing-results-of-post-deployment-checks
+  application_protection:
+    page: maestro/how-to-guides/common-tools/application-protection.html
+    page_anchors:
+    - enabling-application-protection
+    - maestro-product-heading
+    - more-ways-to-protect-your-app
+    - what-is-application-protection
   application_transfer:
     page: maestro/account/application-transfer.html
     page_anchors:
@@ -145,7 +153,7 @@ maestro:
     - replicating-data-between-database-groups
     - specifying-database-groups-via-manifest
     - understanding-database-groups
-    - understanding-primary-database-groups
+    - understanding-default-database-groups
   audit_logs:
     page: maestro/account/audit-logs.html
     page_anchors:
@@ -189,15 +197,13 @@ maestro:
     - build-command
     - build-root
     - command
-    - configuration
     - deploy-command
     - dockerfile-path
     - git-branch
     - git-url
     - image
     - maestro-product-heading
-    - provide-a-docker-image
-    - pull-code-from-git
+    - overview
     - using-habitus-for-builds
   change_psql_directory:
     page: maestro/how-to-guides/databases/shells/change-psql-directory.html
@@ -266,6 +272,7 @@ maestro:
     - external-links
     - generate-gce-api-keys
     - maestro-product-heading
+    - using-gce-service-accounts-with-cloud-66
   cloud_hetzner:
     page: maestro/how-to-guides/clouds/cloud-hetzner.html
     page_anchors:
@@ -315,6 +322,7 @@ maestro:
     - application-vs-service
     - application-vs-stack
     - applications-and-services
+    - automation-and-repeatability
     - buildgrid-and-build-minutes
     - container-lifecycle-management
     - containers--containerization
@@ -331,6 +339,7 @@ maestro:
     - scaling
     - service-networking
     - shared-vs-dedicated-master-nodes
+    - the-principle-of-immutability
     - what-is-an-application
     - what-is-stackscore
   config_store:
@@ -383,6 +392,7 @@ maestro:
   connect_db_servers:
     page: maestro/how-to-guides/databases/shells/connect-db-servers.html
     page_anchors:
+    - finding-database-credentials
     - maestro-product-heading
     - via-ssh
     - with-a-client
@@ -459,15 +469,15 @@ maestro:
     page_anchors:
     - backup-format
     - backup-schedule
-    - backup-storage-locations
     - backup-types
     - binary
     - compression
     - exclude-tables
     - install-on-replica
     - maestro-product-heading
+    - managed-backup-storage-locations
     - managed-backups
-    - pricing
+    - pricing-of-managed-backups
     - restoring-database-backups
     - text
     - unmanaged-backups
@@ -490,13 +500,15 @@ maestro:
   database_management:
     page: maestro/how-to-guides/databases/database-management.html
     page_anchors:
+    - about-deploying-databases
     - connecting-your-app-to-your-db-in-maestro
     - connecting-your-app-to-your-db-in-maestro-v1
     - connection-strings-in-maestro
-    - customizing-your-database
+    - customize-your-database-configuration
+    - database-authentication
+    - database-customization-variables
+    - database-deployment-types
     - dedicated-database
-    - deploying-databases
-    - deployment-types
     - local-database
     - maestro-product-heading
     - no-database-external
@@ -619,11 +631,39 @@ maestro:
     - overview
     - passing-parameters-to-a-job
     - using-parameters
+  dockerfile_for_node:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-node.html
+    page_anchors:
+    - default-nodejs-dockerfile
+    - maestro-product-heading
+    - overview
+    - writing-your-own-dockerfile
+  dockerfile_for_php:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-php.html
+    page_anchors:
+    - default-php-dockerfile
+    - maestro-product-heading
+    - overview
+    - writing-your-own-dockerfile
+  dockerfile_for_ruby:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-ruby.html
+    page_anchors:
+    - default-rails-dockerfile
+    - maestro-product-heading
+    - overview
+    - writing-your-own-dockerfile
   elasticsearch:
     page: maestro/how-to-guides/add-ins/elasticsearch.html
     page_anchors:
     - add-elasticearch
     - maestro-product-heading
+    - overview
+    - step-1-create-a-new-elasticsearch-server-and-group
+    - step-2-scale-up-more-servers-in-the-group-optional
+    - step-3-migrate-your-elasticsearch-data-to-your-new-database-group
+    - step-4-promote-your-new-group-to-default
+    - step-5-redeploy-and-test
+    - upgrading-elasticsearch
   elasticsearch_scaling:
     page: maestro/how-to-guides/scaling/elasticsearch-scaling.html
     page_anchors:
@@ -684,11 +724,11 @@ maestro:
     - requirements-and-limitations
     - switching-between-instances
     - what-youll-need
+    - whats-next
     - why-use-failover-groups
   faq:
     page: maestro/the-basics/faq.html
     page_anchors:
-    - are-their-any-requirements-for-the-user-on-my-servers
     - can-i-deploy-multiple-apps-on-a-single-server
     - can-i-use-cloud-66-with-my-own-servers
     - how-can-i-change-my-git-repository
@@ -717,21 +757,23 @@ maestro:
   getting_started:
     page: maestro/quickstarts/getting-started.html
     page_anchors:
-    - 1-choose-application-type
-    - 2-add-application-services
-    - 3-specify-the-source-of-images
-    - 4-build-application-images
-    - 5-configure-deployment
-    - 6-deploy-your-app
-    - 7-test-your-app
+    - a-configure-ports
+    - a-specify-servers
+    - b-add-deployment-target
+    - b-configure-storage-optional
+    - c-set-the-desired-number-of-instances-optional
     - cloud-content
-    - i-container-network-configuration
-    - ii-adding-a-data-source
-    - iii-choose-a-cloud-provider
-    - iv-configure-server-size
     - maestro-product-heading
     - no-cloud-content
-    - server-build-states
+    - step-1-choose-a-source
+    - step-2-add-repo-details
+    - step-3-add-validate-and-build-images
+    - step-4-configure-services
+    - step-5-configure-servers-for-deployment
+    - step-6-deploy-your-app
+    - step-7-test-your-app
+    - using-a-non-github-host
+    - using-a-prebuilt-image
     - what-youll-need
     - whats-next
   getting_started_with_clusters:
@@ -844,6 +886,10 @@ maestro:
     page: maestro/how-to-guides/deployment/index.html
     page_anchors:
     - maestro-product-heading
+  how_to_guides_dockerfiles_index:
+    page: maestro/how-to-guides/dockerfiles/index.html
+    page_anchors:
+    - maestro-product-heading
   how_to_guides_index:
     page: maestro/how-to-guides/index.html
     page_anchors:
@@ -908,9 +954,26 @@ maestro:
     - maestro-product-heading
     - overview
     - rate-limiting-exceptions
+  legacy_building_your_service_csv1:
+    page: maestro/how-to-guides/build-and-config/legacy-building-your-service-csv1.html
+    page_anchors:
+    - build-command
+    - build-root
+    - command
+    - configuration
+    - deploy-command
+    - dockerfile-path
+    - git-branch
+    - git-url
+    - image
+    - maestro-product-heading
+    - provide-a-docker-image
+    - pull-code-from-git
+    - using-habitus-for-builds
   lets_encrypt:
     page: maestro/how-to-guides/security/lets-encrypt.html
     page_anchors:
+    - configuring-lets-encrypt-with-cloudflare
     - installing-lets-encrypt
     - maestro-product-heading
     - troubleshooting
@@ -919,6 +982,7 @@ maestro:
     page_anchors:
     - add-a-load-balancer
     - adding-multiple-load-balancers
+    - automatic-endpoint-test
     - maestro-product-heading
     - switching-between-load-balancers
   load_balancing:
@@ -975,6 +1039,15 @@ maestro:
     - maestro-product-heading
     - overview
     - understanding-automated-rules
+  managing_application_groups:
+    page: maestro/how-to-guides/common-tools/managing-application-groups.html
+    page_anchors:
+    - adding-application-groups
+    - deploying-application-groups
+    - editing-and-deleting-groups
+    - maestro-product-heading
+    - overview
+    - using-glob-patterns-for-groups
   managing_custom_packages:
     page: maestro/how-to-guides/build-and-config/managing-custom-packages.html
     page_anchors:
@@ -1013,6 +1086,7 @@ maestro:
     - overview
     - postgresql
     - redis
+    - specifying-external-databases-via-your-manifest
   manifest_loadbalancer_settings:
     page: maestro/references/manifest-loadbalancer-settings.html
     page_anchors:
@@ -1105,6 +1179,12 @@ maestro:
     - environment-variables
     - maestro-product-heading
     - using-a-mongodb-replica-set-in-your-code
+  mongodb:
+    page: maestro/how-to-guides/add-ins/mongodb.html
+    page_anchors:
+    - add-mongodb-to-your-application
+    - maestro-product-heading
+    - mongodb-authentication-and-roles
   multi_cert_haproxy:
     page: maestro/how-to-guides/security/multi-cert_haproxy.html
     page_anchors:
@@ -1153,38 +1233,6 @@ maestro:
     - maestro-product-heading
     - nginx-customconfig-variables
     - nginx-worker-configuration
-  nginx_auth:
-    page: maestro/how-to-guides/nginx/nginx-auth.html
-    page_anchors:
-    - enabling-basic-authentication
-    - maestro-product-heading
-    - overview
-  nginx_deny:
-    page: maestro/how-to-guides/nginx/nginx-deny.html
-    page_anchors:
-    - maestro-product-heading
-    - overview
-    - set-up-ip-access-control-manually
-  nginx_modules:
-    page: maestro/how-to-guides/nginx/nginx-modules.html
-    page_anchors:
-    - custom-rack-servers
-    - introduction
-    - maestro-product-heading
-    - passenger
-  nginx_redirect:
-    page: maestro/how-to-guides/nginx/nginx-redirect.html
-    page_anchors:
-    - for-http
-    - for-https
-    - maestro-product-heading
-    - overview
-    - redirect-between-domains-with-http-and-https
-    - redirect-from-http-to-https
-  nginx_ssl_ciphers:
-    page: maestro/how-to-guides/security/nginx-ssl-ciphers.html
-    page_anchors:
-    - maestro-product-heading
   non_recommended_server_sizes:
     page: maestro/references/non-recommended-server-sizes.html
     page_anchors:
@@ -1258,22 +1306,17 @@ maestro:
   postgis_installation:
     page: maestro/how-to-guides/databases/postgis-installation.html
     page_anchors:
-    - enable-adminpack
-    - install-pgrouting
     - installing-with-cloud-66
     - maestro-product-heading
-    - manual-installation
     - more-info
-    - pgrouting
-    - postgis-extension-for-postgresql
-    - prerequisites
   pricing:
     page: maestro/resources/pricing.html
     page_anchors:
-    - add-on-services
+    - annual-payments
     - maestro
     - maestro-product-heading
     - node
+    - prepress
     - rails
     - skycap
   querying_server_metadata:
@@ -1398,6 +1441,7 @@ maestro:
   registered_servers:
     page: maestro/how-to-guides/deployment/registered-servers.html
     page_anchors:
+    - adding-servers-behind-a-gateway
     - maestro-product-heading
     - overview
     - register-a-server
@@ -1429,11 +1473,14 @@ maestro:
     page: maestro/how-to-guides/scaling/scaling.html
     page_anchors:
     - about-scaling-servers
+    - cx-command
+    - cx-examples
     - database-servers
     - horizontal-scaling
     - kubernetes-cluster-servers
     - maestro-product-heading
     - scaling-services
+    - scaling-services-with-toolbelt-cx
   securely_accessing_applications:
     page: maestro/tutorials/securely-accessing-applications.html
     page_anchors:
@@ -1480,10 +1527,10 @@ maestro:
   server_ip_addresses:
     page: maestro/references/server-ip-addresses.html
     page_anchors:
+    - browsing-your-app-via-cloud-66-dns
     - cloud-66-agent
     - cloud-66-hostnames
     - finding-your-cloud-66-hostname
-    - important
     - maestro-product-heading
     - new-ip-addresses
   server_monitoring:
@@ -1511,6 +1558,14 @@ maestro:
     - granting-api-access-to-a-service-account
     - maestro-product-heading
     - overview
+  service_configuration_options:
+    page: maestro/references/service-configuration-options.html
+    page_anchors:
+    - maestro-product-heading
+    - overview
+    - service-configuration-options
+    - setting-a-service-account-name
+    - using-habitus-for-builds
   service_lifecycle_management:
     page: maestro/how-to-guides/build-and-config/service-lifecycle-management.html
     page_anchors:
@@ -1519,12 +1574,11 @@ maestro:
     - health
     - maestro-product-heading
     - orchestration-engine
-    - pre-start
+    - pre-start-command
     - pre-start-signal
-    - pre-stop
+    - pre-stop-command
     - pre-stop-sequence
     - requires
-    - restart
     - restart-on-deploy
     - stop-grace
   service_network_configuration:
@@ -1546,11 +1600,16 @@ maestro:
   service_networking:
     page: maestro/how-to-guides/build-and-config/service-networking.html
     page_anchors:
+    - dns-behaviour
     - examples-of-default-ports
+    - load-balancing
     - maestro-product-heading
+    - managing-traffic-matching-via-the-dashboard
     - mapping-multiple-ports
     - non-http-ports-tcp-and-udp
     - overview
+    - traffic-matching
+    - using-traffic-matches-to-reroute-all-traffic
   service_resources:
     page: maestro/how-to-guides/build-and-config/service-resources.html
     page_anchors:
@@ -1600,7 +1659,6 @@ maestro:
     - maestro-product-heading
     - overview
     - redirect-http-to-https
-    - using-maintenance-mode
     - what-youll-need
     - www-or-non-www
   sharing_db:
@@ -1667,6 +1725,7 @@ maestro:
     - lets-encrypt-ssl-certificate
     - maestro-product-heading
     - standard-ssl-certificate
+    - using-lets-encrypt-with-cloudflare
   ssl_certificate:
     page: maestro/how-to-guides/security/ssl-certificate.html
     page_anchors:
@@ -1724,8 +1783,12 @@ maestro:
   team_accounts:
     page: maestro/account/team-accounts.html
     page_anchors:
+    - account-level-permissions
     - add-a-new-user-team-member
+    - application-level-permissions--roles
     - application-users
+    - assigning-application-roles-to-a-user
+    - creating-and-editing-roles
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
@@ -1765,155 +1828,138 @@ maestro:
   toolbelt:
     page: maestro/references/toolbelt.html
     page_anchors:
-    - a-note-on-overwriting-access-profiles
-    - about-backup-management
-    - access-control-for-toolbelt-login
-    - apply-profile-command
-    - clear-caches
-    - cloud-66-easy-login
-    - configuring-toolbelt
-    - database-management
+    - maestro-product-heading
+  toolbelt_commands:
+    page: maestro/references/toolbelt/toolbelt-commands.html
+    page_anchors:
+    - arguments
+    - backups-download
+    - backups-list
+    - backups-new
+    - config
+    - containers-attach
+    - containers-list
+    - containers-restart
+    - containers-stop
+    - databases-promote-slave
+    - databases-resync-slave
     - download
-    - download-environment-variables
-    - download-your-backups
-    - example
-    - example-1
-    - example-10
-    - example-11
-    - example-12
-    - example-13
-    - example-14
-    - example-15
-    - example-16
-    - example-17
-    - example-18
-    - example-19
-    - example-2
-    - example-3
-    - example-4
-    - example-5
-    - example-6
-    - example-7
-    - example-8
-    - example-9
+    - dump-token
+    - env-vars-download
+    - env-vars-list
+    - env-vars-set
+    - env-vars-upload
     - examples
-    - examples-1
-    - examples-2
-    - examples-3
-    - examples-4
-    - examples-5
-    - examples-6
-    - examples-of-service-usage
-    - gateway-management
-    - getting-service-information
-    - how-to-uninstall-the-toolbelt
+    - failover-groups-add
+    - failover-groups-delete
+    - failover-groups-list
+    - failover-groups-update
+    - formations-commit
+    - formations-create
+    - formations-deploy
+    - formations-fetch
+    - formations-list
+    - formations-stencils-list
+    - gateways-add
+    - gateways-close
+    - gateways-list
+    - gateways-open
+    - gateways-remove
+    - help
+    - info
+    - init
+    - init-agent
+    - jobs-list
+    - jobs-run
+    - lease
+    - login
+    - maestro-product-heading
+    - notifications-download
+    - notifications-upload
+    - open
+    - processes-list
+    - processes-pause
+    - processes-restart
+    - processes-resume
+    - processes-scale
+    - redeploy
+    - register-server
+    - run
+    - servers-list
+    - servers-reboot
+    - servers-settings-list
+    - services-info
+    - services-list
+    - services-pause
+    - services-restart
+    - services-resume
+    - services-scale
+    - services-stop
+    - settings-list
+    - settings-set
+    - skycap-listen
+    - snapshots-list
+    - snapshots-render
+    - ssh
+    - stacks-clear-caches
+    - stacks-configuration-apply
+    - stacks-configuration-download
+    - stacks-configuration-list
+    - stacks-configuration-upload
+    - stacks-configure-download
+    - stacks-configure-list-versions
+    - stacks-configure-upload
+    - stacks-create
+    - stacks-list
+    - stacks-listen
+    - stacks-reboot
+    - stacks-redeploy
+    - stacks-restart
+    - stacks-ssl
+    - tags-add
+    - tags-delete
+    - tail
+    - templates-list
+    - templates-resync
+    - templates-show
+    - test
+    - tunnel
+    - update
+    - upload
+    - usage
+    - users-apply-profile
+    - users-list
+    - users-show
+  toolbelt_installation:
+    page: maestro/references/toolbelt/toolbelt-installation.html
+    page_anchors:
+    - configuring-toolbelt
     - installation
     - installing-on-a-server-headless
-    - job-management
-    - list-command
-    - list-environment-variables
-    - list-gateways
-    - list-jobs
-    - list-server-settings
-    - list-your-application-settings
-    - list-your-backups
-    - list-your-stacks
-    - listing-processes
-    - listing-services
     - maestro-product-heading
-    - manage-your-configuration-files
-    - note-2
-    - open-gateway
-    - open-your-website
-    - parameters
-    - parameters-1
-    - parameters-10
-    - parameters-11
-    - parameters-12
-    - parameters-13
-    - parameters-14
-    - parameters-15
-    - parameters-16
-    - parameters-17
-    - parameters-18
-    - parameters-19
-    - parameters-2
-    - parameters-20
-    - parameters-21
-    - parameters-22
-    - parameters-23
-    - parameters-24
-    - parameters-25
-    - parameters-26
-    - parameters-27
-    - parameters-29
-    - parameters-3
-    - parameters-30
-    - parameters-31
-    - parameters-32
-    - parameters-33
-    - parameters-4
-    - parameters-5
-    - parameters-6
-    - parameters-7
-    - parameters-8
-    - parameters-9
-    - profile-commands
-    - profiles-for-multiple-account-support
-    - reboot-servers
-    - reboot-your-stacks
-    - redeploy-your-application
-    - remove-gateway
-    - result
-    - resyncing-slave-from-master
-    - run-command
-    - server-management
-    - set-environment-variables
-    - settings-variables
-    - show-help-pages-for-a-command
-    - slave-promotion-to-standalone-master
-    - sshing-to-your-server
-    - stopping-services
-    - temporary-lease
-    - tunnel-command
-    - upload
-    - upload-environment-variables
-    - usage
-    - usage-1
-    - usage-10
-    - usage-11
-    - usage-12
-    - usage-13
-    - usage-14
-    - usage-15
-    - usage-16
-    - usage-17
-    - usage-18
-    - usage-19
-    - usage-2
-    - usage-20
-    - usage-21
-    - usage-22
-    - usage-23
-    - usage-24
-    - usage-25
-    - usage-26
-    - usage-27
-    - usage-28
-    - usage-29
-    - usage-3
-    - usage-30
-    - usage-31
-    - usage-32
-    - usage-33
-    - usage-34
-    - usage-35
-    - usage-4
-    - usage-5
-    - usage-6
-    - usage-7
-    - usage-8
-    - usage-9
+    - multi-account-support
+  toolbelt_profiles:
+    page: maestro/references/toolbelt/toolbelt-profiles.html
+    page_anchors:
+    - config-create
+    - config-delete
+    - config-list
+    - config-rename
+    - config-show
+    - config-update
+    - config-use
+    - configuration-profile-commands
+    - maestro-product-heading
+    - overviews
+    - setting-up-a-profile
+    - switching-between-profiles
+  toolbelt_shortcuts:
+    page: maestro/references/toolbelt/toolbelt-shortcuts.html
+    page_anchors:
+    - maestro-product-heading
+    - naming-shortcuts
+    - running-cx-in-a-git-directory
+    - shortcuts
   troubleshooting_server_connection:
     page: maestro/how-to-guides/deployment/troubleshooting-server-connection.html
     page_anchors:
@@ -1991,6 +2037,12 @@ maestro:
     - testing-failover-groups
     - using-failover-groups-with-ssl-certificates
     - why-use-failover-groups
+  understanding_globs:
+    page: maestro/how-to-guides/common-tools/understanding-globs.html
+    page_anchors:
+    - glob-syntax
+    - maestro-product-heading
+    - what-is-a-glob
   uninstall_mysql:
     page: maestro/how-to-guides/databases/shells/uninstall-mysql.html
     page_anchors:
@@ -2052,6 +2104,13 @@ maestro:
     - using-command-hooks
     - using-inline-script-hooks
     - using-snippet-hooks
+  using_maintenance_mode:
+    page: maestro/how-to-guides/common-tools/using-maintenance-mode.html
+    page_anchors:
+    - maestro-product-heading
+    - overview
+    - setting-a-custom-maintenance-page
+    - using-maintenance-mode
   using_master_data_staging:
     page: maestro/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
@@ -2077,6 +2136,16 @@ maestro:
     - using-websocket-via-haproxy
     - using-websocket-via-native-cloud-load-balancers
     - websocket-through-a-load-balancer
+  writing_a_dockerfile:
+    page: maestro/how-to-guides/dockerfiles/writing-a-dockerfile.html
+    page_anchors:
+    - caching--build-speed
+    - how-to-guides-by-framework
+    - important-dockerfile-principles
+    - maestro-product-heading
+    - more-help
+    - putting-a-dockerfile-in-a-sub-directory
+    - writing-a-dockerfile-for-your-app
 node:
   access_your_code:
     page: node/how-to-guides/common-tools/access-your-code.html
@@ -2084,7 +2153,9 @@ node:
     - bitbucket-example
     - github-example
     - node-product-heading
+    - other-public-repos
     - private-repositories
+    - public-github-repos
     - public-repositories
   account_index:
     page: node/account/index.html
@@ -2094,6 +2165,7 @@ node:
     page: node/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
@@ -2139,6 +2211,13 @@ node:
     - post-deployment-health-checks
     - running-an-on-demand-health-check
     - viewing-results-of-post-deployment-checks
+  application_protection:
+    page: node/how-to-guides/common-tools/application-protection.html
+    page_anchors:
+    - enabling-application-protection
+    - more-ways-to-protect-your-app
+    - node-product-heading
+    - what-is-application-protection
   application_settings_node:
     page: node/how-to-guides/deployment/application-settings-node.html
     page_anchors:
@@ -2206,7 +2285,7 @@ node:
     - replicating-data-between-database-groups
     - specifying-database-groups-via-manifest
     - understanding-database-groups
-    - understanding-primary-database-groups
+    - understanding-default-database-groups
   audit_logs:
     page: node/account/audit-logs.html
     page_anchors:
@@ -2303,6 +2382,7 @@ node:
     - external-links
     - generate-gce-api-keys
     - node-product-heading
+    - using-gce-service-accounts-with-cloud-66
   cloud_hetzner:
     page: node/how-to-guides/clouds/cloud-hetzner.html
     page_anchors:
@@ -2397,8 +2477,9 @@ node:
   connect_db_servers:
     page: node/how-to-guides/databases/shells/connect-db-servers.html
     page_anchors:
+    - finding-database-credentials
     - node-product-heading
-    - on-the-server
+    - via-ssh
     - with-a-client
   custom_config:
     page: node/tutorials/custom-config.html
@@ -2449,15 +2530,15 @@ node:
     page_anchors:
     - backup-format
     - backup-schedule
-    - backup-storage-locations
     - backup-types
     - binary
     - compression
     - exclude-tables
     - install-on-replica
+    - managed-backup-storage-locations
     - managed-backups
     - node-product-heading
-    - pricing
+    - pricing-of-managed-backups
     - restoring-database-backups
     - text
     - unmanaged-backups
@@ -2466,7 +2547,8 @@ node:
     page: node/how-to-guides/databases/database-customization.html
     page_anchors:
     - database-customization-variables
-    - global-variables
+    - how-to-customize-database-configs
+    - more-info
     - node-product-heading
   database_encryption:
     page: node/how-to-guides/databases/database-encryption.html
@@ -2481,6 +2563,7 @@ node:
     page_anchors:
     - about-deploying-databases
     - customize-your-database-configuration
+    - database-authentication
     - database-customization-variables
     - database-deployment-types
     - dedicated-database
@@ -2488,7 +2571,6 @@ node:
     - no-database-external
     - node-product-heading
     - upgrading-your-database
-    - warning
   database_replication:
     page: node/how-to-guides/databases/database-replication.html
     page_anchors:
@@ -2566,6 +2648,13 @@ node:
     page_anchors:
     - add-elasticearch
     - node-product-heading
+    - overview
+    - step-1-create-a-new-elasticsearch-server-and-group
+    - step-2-scale-up-more-servers-in-the-group-optional
+    - step-3-migrate-your-elasticsearch-data-to-your-new-database-group
+    - step-4-promote-your-new-group-to-default
+    - step-5-redeploy-and-test
+    - upgrading-elasticsearch
   elasticsearch_scaling:
     page: node/how-to-guides/scaling/elasticsearch-scaling.html
     page_anchors:
@@ -2590,14 +2679,20 @@ node:
   failover_groups:
     page: node/tutorials/failover-groups.html
     page_anchors:
-    - add-a-failover-group
+    - adding-a-secondary-application
+    - creating-a-failover-group
     - environment-variables
+    - how-failover-groups-work
     - node-product-heading
-    - notes
+    - overview
+    - requirements-and-limitations
+    - switching-between-instances
+    - what-youll-need
+    - whats-next
+    - why-use-failover-groups
   faq:
     page: node/the-basics/faq.html
     page_anchors:
-    - are-their-any-requirements-for-the-user-on-my-servers
     - can-i-deploy-multiple-apps-on-a-single-server
     - can-i-use-cloud-66-with-my-own-servers
     - how-can-i-change-my-git-repository
@@ -2783,6 +2878,7 @@ node:
   lets_encrypt:
     page: node/how-to-guides/security/lets-encrypt.html
     page_anchors:
+    - configuring-lets-encrypt-with-cloudflare
     - installing-lets-encrypt
     - node-product-heading
     - troubleshooting
@@ -2791,6 +2887,7 @@ node:
     page_anchors:
     - add-a-load-balancer
     - adding-multiple-load-balancers
+    - automatic-endpoint-test
     - node-product-heading
     - switching-between-load-balancers
   load_balancing:
@@ -2846,6 +2943,15 @@ node:
     - node-product-heading
     - overview
     - understanding-automated-rules
+  managing_application_groups:
+    page: node/how-to-guides/common-tools/managing-application-groups.html
+    page_anchors:
+    - adding-application-groups
+    - deploying-application-groups
+    - editing-and-deleting-groups
+    - node-product-heading
+    - overview
+    - using-glob-patterns-for-groups
   managing_custom_packages:
     page: node/how-to-guides/deployment/managing-custom-packages.html
     page_anchors:
@@ -2875,6 +2981,7 @@ node:
     - overview
     - postgresql
     - redis
+    - specifying-external-databases-via-your-manifest
   manifest_loadbalancer_settings:
     page: node/references/manifest-loadbalancer-settings.html
     page_anchors:
@@ -2927,8 +3034,8 @@ node:
     - check-memcached
     - customize-memcached
     - node-product-heading
-  migrate_the_stack:
-    page: node/how-to-guides/deployment/shells/migrate-the-stack.html
+  migrating_applications:
+    page: node/how-to-guides/deployment/migrating-applications.html
     page_anchors:
     - 1-set-a-failover-group
     - 10-switch-to-the-new-application
@@ -2960,6 +3067,12 @@ node:
     - node-product-heading
     - note
     - using-a-mongodb-replica-set-in-your-code
+  mongodb:
+    page: node/how-to-guides/add-ins/mongodb.html
+    page_anchors:
+    - add-mongodb-to-your-application
+    - mongodb-authentication-and-roles
+    - node-product-heading
   multi_cert_haproxy:
     page: node/how-to-guides/security/multi-cert_haproxy.html
     page_anchors:
@@ -3003,33 +3116,6 @@ node:
     - default-nginx-configuration
     - nginx-customconfig-variables
     - nginx-worker-configuration
-    - node-product-heading
-  nginx_auth:
-    page: node/how-to-guides/security/nginx-auth.html
-    page_anchors:
-    - node-product-heading
-  nginx_deny:
-    page: node/how-to-guides/security/nginx-deny.html
-    page_anchors:
-    - node-product-heading
-  nginx_modules:
-    page: node/how-to-guides/deployment/shells/nginx-modules.html
-    page_anchors:
-    - custom-rack-servers
-    - introduction
-    - node-product-heading
-    - passenger
-  nginx_redirect:
-    page: node/how-to-guides/deployment/shells/nginx-redirect.html
-    page_anchors:
-    - http
-    - https
-    - node-product-heading
-    - redirect-between-domains-with-http-and-https
-    - redirect-from-http-to-https
-  nginx_ssl_ciphers:
-    page: node/how-to-guides/security/nginx-ssl-ciphers.html
-    page_anchors:
     - node-product-heading
   non_recommended_server_sizes:
     page: node/references/non-recommended-server-sizes.html
@@ -3101,22 +3187,17 @@ node:
   postgis_installation:
     page: node/how-to-guides/databases/shells/postgis-installation.html
     page_anchors:
-    - enable-adminpack
-    - install-pgrouting
     - installing-with-cloud-66
-    - manual-installation
     - more-info
     - node-product-heading
-    - pgrouting
-    - postgis-extension-for-postgresql
-    - prerequisites
   pricing:
     page: node/resources/pricing.html
     page_anchors:
-    - add-on-services
+    - annual-payments
     - maestro
     - node
     - node-product-heading
+    - prepress
     - rails
     - skycap
   querying_server_metadata:
@@ -3174,6 +3255,7 @@ node:
   registered_servers:
     page: node/how-to-guides/deployment/registered-servers.html
     page_anchors:
+    - adding-servers-behind-a-gateway
     - node-product-heading
     - overview
     - register-a-server
@@ -3377,6 +3459,7 @@ node:
     - lets-encrypt-ssl-certificate
     - node-product-heading
     - standard-ssl-certificate
+    - using-lets-encrypt-with-cloudflare
   ssl_certificate:
     page: node/how-to-guides/security/ssl-certificate.html
     page_anchors:
@@ -3401,6 +3484,7 @@ node:
     - application-components
     - application-environments
     - application-vs-stack
+    - automation-and-repeatability
     - background-workers-optional
     - cloud-vendor
     - database-servers-optional
@@ -3410,6 +3494,7 @@ node:
     - node-product-heading
     - operating-system
     - suggestion
+    - the-principle-of-immutability
     - web-servers
     - what-is-cloud-66-for-node
     - what-is-stackscore
@@ -3471,8 +3556,12 @@ node:
   team_accounts:
     page: node/account/team-accounts.html
     page_anchors:
+    - account-level-permissions
     - add-a-new-user-team-member
+    - application-level-permissions--roles
     - application-users
+    - assigning-application-roles-to-a-user
+    - creating-and-editing-roles
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
@@ -3508,155 +3597,138 @@ node:
   toolbelt:
     page: node/references/toolbelt.html
     page_anchors:
-    - a-note-on-overwriting-access-profiles
-    - about-backup-management
-    - access-control-for-toolbelt-login
-    - apply-profile-command
-    - clear-caches
-    - cloud-66-easy-login
-    - configuring-toolbelt
-    - database-management
+    - node-product-heading
+  toolbelt_commands:
+    page: node/references/toolbelt/toolbelt-commands.html
+    page_anchors:
+    - arguments
+    - backups-download
+    - backups-list
+    - backups-new
+    - config
+    - containers-attach
+    - containers-list
+    - containers-restart
+    - containers-stop
+    - databases-promote-slave
+    - databases-resync-slave
     - download
-    - download-environment-variables
-    - download-your-backups
-    - example
-    - example-1
-    - example-10
-    - example-11
-    - example-12
-    - example-13
-    - example-14
-    - example-15
-    - example-16
-    - example-17
-    - example-18
-    - example-19
-    - example-2
-    - example-3
-    - example-4
-    - example-5
-    - example-6
-    - example-7
-    - example-8
-    - example-9
+    - dump-token
+    - env-vars-download
+    - env-vars-list
+    - env-vars-set
+    - env-vars-upload
     - examples
-    - examples-1
-    - examples-2
-    - examples-3
-    - examples-4
-    - examples-5
-    - examples-6
-    - examples-of-service-usage
-    - gateway-management
-    - getting-service-information
-    - how-to-uninstall-the-toolbelt
+    - failover-groups-add
+    - failover-groups-delete
+    - failover-groups-list
+    - failover-groups-update
+    - formations-commit
+    - formations-create
+    - formations-deploy
+    - formations-fetch
+    - formations-list
+    - formations-stencils-list
+    - gateways-add
+    - gateways-close
+    - gateways-list
+    - gateways-open
+    - gateways-remove
+    - help
+    - info
+    - init
+    - init-agent
+    - jobs-list
+    - jobs-run
+    - lease
+    - login
+    - node-product-heading
+    - notifications-download
+    - notifications-upload
+    - open
+    - processes-list
+    - processes-pause
+    - processes-restart
+    - processes-resume
+    - processes-scale
+    - redeploy
+    - register-server
+    - run
+    - servers-list
+    - servers-reboot
+    - servers-settings-list
+    - services-info
+    - services-list
+    - services-pause
+    - services-restart
+    - services-resume
+    - services-scale
+    - services-stop
+    - settings-list
+    - settings-set
+    - skycap-listen
+    - snapshots-list
+    - snapshots-render
+    - ssh
+    - stacks-clear-caches
+    - stacks-configuration-apply
+    - stacks-configuration-download
+    - stacks-configuration-list
+    - stacks-configuration-upload
+    - stacks-configure-download
+    - stacks-configure-list-versions
+    - stacks-configure-upload
+    - stacks-create
+    - stacks-list
+    - stacks-listen
+    - stacks-reboot
+    - stacks-redeploy
+    - stacks-restart
+    - stacks-ssl
+    - tags-add
+    - tags-delete
+    - tail
+    - templates-list
+    - templates-resync
+    - templates-show
+    - test
+    - tunnel
+    - update
+    - upload
+    - usage
+    - users-apply-profile
+    - users-list
+    - users-show
+  toolbelt_installation:
+    page: node/references/toolbelt/toolbelt-installation.html
+    page_anchors:
+    - configuring-toolbelt
     - installation
     - installing-on-a-server-headless
-    - job-management
-    - list-command
-    - list-environment-variables
-    - list-gateways
-    - list-jobs
-    - list-server-settings
-    - list-your-application-settings
-    - list-your-backups
-    - list-your-stacks
-    - listing-processes
-    - listing-services
-    - manage-your-configuration-files
+    - multi-account-support
     - node-product-heading
-    - note-2
-    - open-gateway
-    - open-your-website
-    - parameters
-    - parameters-1
-    - parameters-10
-    - parameters-11
-    - parameters-12
-    - parameters-13
-    - parameters-14
-    - parameters-15
-    - parameters-16
-    - parameters-17
-    - parameters-18
-    - parameters-19
-    - parameters-2
-    - parameters-20
-    - parameters-21
-    - parameters-22
-    - parameters-23
-    - parameters-24
-    - parameters-25
-    - parameters-26
-    - parameters-27
-    - parameters-29
-    - parameters-3
-    - parameters-30
-    - parameters-31
-    - parameters-32
-    - parameters-33
-    - parameters-4
-    - parameters-5
-    - parameters-6
-    - parameters-7
-    - parameters-8
-    - parameters-9
-    - profile-commands
-    - profiles-for-multiple-account-support
-    - reboot-servers
-    - reboot-your-stacks
-    - redeploy-your-application
-    - remove-gateway
-    - result
-    - resyncing-slave-from-master
-    - run-command
-    - server-management
-    - set-environment-variables
-    - settings-variables
-    - show-help-pages-for-a-command
-    - slave-promotion-to-standalone-master
-    - sshing-to-your-server
-    - stopping-services
-    - temporary-lease
-    - tunnel-command
-    - upload
-    - upload-environment-variables
-    - usage
-    - usage-1
-    - usage-10
-    - usage-11
-    - usage-12
-    - usage-13
-    - usage-14
-    - usage-15
-    - usage-16
-    - usage-17
-    - usage-18
-    - usage-19
-    - usage-2
-    - usage-20
-    - usage-21
-    - usage-22
-    - usage-23
-    - usage-24
-    - usage-25
-    - usage-26
-    - usage-27
-    - usage-28
-    - usage-29
-    - usage-3
-    - usage-30
-    - usage-31
-    - usage-32
-    - usage-33
-    - usage-34
-    - usage-35
-    - usage-4
-    - usage-5
-    - usage-6
-    - usage-7
-    - usage-8
-    - usage-9
+  toolbelt_profiles:
+    page: node/references/toolbelt/toolbelt-profiles.html
+    page_anchors:
+    - config-create
+    - config-delete
+    - config-list
+    - config-rename
+    - config-show
+    - config-update
+    - config-use
+    - configuration-profile-commands
+    - node-product-heading
+    - overviews
+    - setting-up-a-profile
+    - switching-between-profiles
+  toolbelt_shortcuts:
+    page: node/references/toolbelt/toolbelt-shortcuts.html
+    page_anchors:
+    - naming-shortcuts
+    - node-product-heading
+    - running-cx-in-a-git-directory
+    - shortcuts
   troubleshooting_server_connection:
     page: node/how-to-guides/deployment/troubleshooting-server-connection.html
     page_anchors:
@@ -3723,6 +3795,12 @@ node:
     - testing-failover-groups
     - using-failover-groups-with-ssl-certificates
     - why-use-failover-groups
+  understanding_globs:
+    page: node/how-to-guides/common-tools/understanding-globs.html
+    page_anchors:
+    - glob-syntax
+    - node-product-heading
+    - what-is-a-glob
   uninstall_mysql:
     page: node/how-to-guides/databases/shells/uninstall-mysql.html
     page_anchors:
@@ -3785,6 +3863,13 @@ node:
     - using-command-hooks
     - using-inline-script-hooks
     - using-snippet-hooks
+  using_maintenance_mode:
+    page: node/how-to-guides/common-tools/using-maintenance-mode.html
+    page_anchors:
+    - node-product-heading
+    - overview
+    - setting-a-custom-maintenance-page
+    - using-maintenance-mode
   using_master_data_staging:
     page: node/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
@@ -3816,13 +3901,420 @@ node:
     - 1-using-a-web-server-that-supports-hot-rollover
     - 2-deploying-in-serial
     - node-product-heading
+prepress:
+  access_your_code:
+    page: prepress/how-to-guides/common-tools/access-your-code.html
+    page_anchors:
+    - bitbucket-example
+    - github-example
+    - other-public-repos
+    - prepress-product-heading
+    - private-repositories
+    - public-github-repos
+    - public-repositories
+  account_index:
+    page: prepress/account/index.html
+    page_anchors:
+    - prepress-product-heading
+  account_management:
+    page: prepress/account/account-management.html
+    page_anchors:
+    - add-or-remove-users
+    - adding-another-organization-to-your-account
+    - closing-your-account
+    - if-your-account-has-an-outstanding-balance
+    - if-your-account-has-applications
+    - if-your-account-has-secondary-users
+    - organizations
+    - prepress-product-heading
+    - service-accounts
+    - view--update-account-information
+  account_protection:
+    page: prepress/account/account-protection.html
+    page_anchors:
+    - account-protection-alerts
+    - overview
+    - prepress-product-heading
+    - what-is-cloud-66-account-protection
+  adding_updating_deleting:
+    page: prepress/the-basics/adding-updating-deleting.html
+    page_anchors:
+    - building-an-application
+    - clone-an-application
+    - deleting-an-application
+    - prepress-product-heading
+    - updating-application-properties
+  application_transfer:
+    page: prepress/account/application-transfer.html
+    page_anchors:
+    - account--user-criteria
+    - application-criteria
+    - dealing-with-a-failed-transfer
+    - overview
+    - prepress-product-heading
+    - transferring-an-application
+    - understanding-the-application-transfer-process
+  audit_logs:
+    page: prepress/account/audit-logs.html
+    page_anchors:
+    - accessing-audit-logs
+    - audit-logging
+    - prepress-product-heading
+    - searching-audit-logs
+  browser_requirements:
+    page: prepress/account/browser-requirements.html
+    page_anchors:
+    - prepress-product-heading
+  build_minutes:
+    page: prepress/references/build-minutes.html
+    page_anchors:
+    - build-minute-overages
+    - calculating-build-minutes
+    - monthly-build-minutes
+    - prepress-product-heading
+    - what-are-build-minutes
+  building_a_manifest_file:
+    page: prepress/how-to-guides/deployment/building-a-manifest-file.html
+    page_anchors:
+    - combined-example
+    - dependency-configurations
+    - framework-configurations
+    - gatsby-example
+    - hugo-example
+    - overview
+    - prepress-product-heading
+    - problems-upgrading
+    - ruby-example
+    - the-structure-of-a-manifest-file
+    - whats-next
+  cloud66_status:
+    page: prepress/policies-specifications/cloud66-status.html
+    page_anchors:
+    - latest-updates
+    - prepress-product-heading
+    - status-and-uptime
+  cloud_66_beta_program:
+    page: prepress/policies-specifications/cloud-66-beta-program.html
+    page_anchors:
+    - joining-the-beta-programme
+    - overview
+    - prepress-product-heading
+    - reporting-issues
+  cloud_aws:
+    page: prepress/how-to-guides/clouds/cloud-aws.html
+    page_anchors:
+    - cloud-66-security-groups-on-aws
+    - external-links
+    - granting-cloud-66-access-to-aws
+    - option-a-using-root-credentials
+    - option-b-identity-access-management-iam
+    - prepress-product-heading
+    - step-1-create-a-user
+    - step-2-set-up-access-policies
+  data_protection:
+    page: prepress/policies-specifications/data-protection.html
+    page_anchors:
+    - prepress-product-heading
+  env_vars:
+    page: prepress/tutorials/env-vars.html
+    page_anchors:
+    - about-environment-variables
+    - assign-env-vars-after-app-build
+    - assign-env-vars-for-deployment
+    - auto-generate-variables
+    - default-env-vars
+    - prepress-product-heading
+    - referencing-env-vars-on-other-apps
+    - referencing-environment-variables
+    - referencing-other-env-vars-on-the-same-app
+    - using-environment-variables
+  faq:
+    page: prepress/the-basics/faq.html
+    page_anchors:
+    - how-can-i-change-my-git-repository
+    - how-can-i-use-cloud-66
+    - how-much-does-it-cost
+    - prepress-product-heading
+    - what-is-cloud-66
+    - where-is-it-hosted
+    - which-clouds-are-supported
+    - who-pays-for-the-servers
+  framework_support:
+    page: prepress/references/framework-support.html
+    page_anchors:
+    - determining-components-versions
+    - frameworks-currently-supported
+    - nodejs-version
+    - prepress-product-heading
+    - ruby-version
+  getting_started:
+    page: prepress/quickstarts/getting-started.html
+    page_anchors:
+    - 1-choose-your-application-type
+    - 2-access-your-git-repo
+    - 3-define-your-application
+    - 4-configuring-your-application
+    - 5-choosing-a-deployment-target
+    - 6-deploy-your-app
+    - bitbucket-content
+    - github-content
+    - other-git-content
+    - prepress-product-heading
+    - setting-up-cloud--access-keys-on-aws-s3
+    - what-youll-need
+    - whats-next
+  getting_started_with_manifest:
+    page: prepress/quickstarts/getting-started-with-manifest.html
+    page_anchors:
+    - a-working-example
+    - how-do-i-use-a-manifest-file
+    - prepress-product-heading
+    - setting-up-your-first-manifest-file
+    - what-is-a-manifest-file
+    - what-youll-need
+    - whats-next
+    - yaml-sample-gatsby
+    - yaml-sample-hugo
+    - yaml-sample-jekyll
+  global_search:
+    page: prepress/how-to-guides/common-tools/global-search.html
+    page_anchors:
+    - advanced-search
+    - application-directives
+    - basic-search
+    - complex-queries
+    - container-directives
+    - deployment-variables
+    - environment-variables
+    - firewall-directives
+    - prepress-product-heading
+    - server-directives
+    - service-directives
+  how_to_guides_clouds_index:
+    page: prepress/how-to-guides/clouds/index.html
+    page_anchors:
+    - prepress-product-heading
+  how_to_guides_common_tools_index:
+    page: prepress/how-to-guides/common-tools/index.html
+    page_anchors:
+    - prepress-product-heading
+  how_to_guides_deployment_index:
+    page: prepress/how-to-guides/deployment/index.html
+    page_anchors:
+    - prepress-product-heading
+  how_to_guides_index:
+    page: prepress/how-to-guides/index.html
+    page_anchors:
+    - prepress-product-heading
+  index:
+    page: prepress/index.html
+    page_anchors:
+    - prepress-product-heading
+  managing_application_groups:
+    page: prepress/how-to-guides/common-tools/managing-application-groups.html
+    page_anchors:
+    - adding-application-groups
+    - deploying-application-groups
+    - editing-and-deleting-groups
+    - overview
+    - prepress-product-heading
+    - using-glob-patterns-for-groups
+  missing_page:
+    page: prepress/missing-page.html
+    page_anchors:
+    - prepress-product-heading
+    - this-help-page-is-missing-sorry
+    - well-fix-this-asap
+  notifications:
+    page: prepress/account/notifications.html
+    page_anchors:
+    - available-settings
+    - browser-notifications
+    - copying-notification-settings-between-apps
+    - editing-account-notifications
+    - emails
+    - notification-channels
+    - prepress-product-heading
+    - service-account-notifications
+    - slack
+    - slack-notifications-for-service-accounts
+    - webhooks
+    - webhooks-for-service-accounts
+  pci_compliance:
+    page: prepress/policies-specifications/pci-compliance.html
+    page_anchors:
+    - how-does-cloud-66-access-my-servers
+    - how-does-cloud-66-prevent-access-to-customer-servers-in-case-of-a-breach
+    - is-cloud-66-pci-compliant
+    - prepress-product-heading
+    - what-firewalls-are-installed-on-servers-deployed-by-cloud-66
+    - where-are-the-ssh-keys-stored-on-cloud-66
+    - will-my-websitemobile-back-endapi-be-pci-compliant-if-i-use-cloud-66
+  policies_specifications_index:
+    page: prepress/policies-specifications/index.html
+    page_anchors:
+    - prepress-product-heading
+  prepress_dns:
+    page: prepress/tutorials/prepress-dns.html
+    page_anchors:
+    - note
+    - overview
+    - prepress-product-heading
+    - setting-up-a-custom-domain
+    - what-youll-need
+    - whats-next
+  preview_deployments:
+    page: prepress/how-to-guides/deployment/preview-deployments.html
+    page_anchors:
+    - browsing-and-managing-previews
+    - deleting-previews
+    - disabling-previews
+    - enabling-and-disabling-preview-deployments
+    - monitoring-preview-deployments
+    - overview
+    - prepress-product-heading
+    - redeploying-previews
+    - setting-up-previews-on-github
+    - triggering-preview-deployments-via-your-git-provider
+    - types-of-preview-deployments
+  pricing:
+    page: prepress/policies-specifications/pricing.html
+    page_anchors:
+    - annual-payments
+    - maestro
+    - node
+    - prepress
+    - prepress-product-heading
+    - rails
+    - skycap
+  quickstarts_index:
+    page: prepress/quickstarts/index.html
+    page_anchors:
+    - prepress-product-heading
+  redeployment_hook:
+    page: prepress/how-to-guides/deployment/redeployment-hook.html
+    page_anchors:
+    - accessing-redeployment-hooks
+    - adding-redeployment-hooks-to-your-pipeline
+    - bitbucket-setup
+    - generic-setup
+    - github-setup
+    - invoking-your-redeployment-hook-manually
+    - overview
+    - prepress-product-heading
+    - usage-example
+  references_index:
+    page: prepress/references/index.html
+    page_anchors:
+    - prepress-product-heading
+  security:
+    page: prepress/policies-specifications/security.html
+    page_anchors:
+    - credit-card-information
+    - customer-protection
+    - infrastructure-security
+    - prepress-product-heading
+    - reporting-security-issues
+  service_accounts:
+    page: prepress/account/service-accounts.html
+    page_anchors:
+    - configuring-notifications-and-webhooks
+    - creating-a-service-account
+    - granting-api-access-to-a-service-account
+    - overview
+    - prepress-product-heading
+  slack_notifications:
+    page: prepress/how-to-guides/common-tools/slack-notifications.html
+    page_anchors:
+    - help-with-the-cloud-66-slack-app
+    - installing-the-cloud-66-slack-app
+    - overview
+    - prepress-product-heading
+    - removing-the-cloud-66-slack-app
+    - what-does-the-cloud-66-slack-app-do
+  support_tickets:
+    page: prepress/how-to-guides/common-tools/support-tickets.html
+    page_anchors:
+    - application-availability-testing
+    - checking-the-status-of-a-ticket
+    - logging-a-new-support-issue
+    - overview
+    - prepress-product-heading
+  team_accounts:
+    page: prepress/account/team-accounts.html
+    page_anchors:
+    - account-level-permissions
+    - add-a-new-user-team-member
+    - application-level-permissions--roles
+    - application-users
+    - assigning-application-roles-to-a-user
+    - creating-and-editing-roles
+    - deleting-user-accounts--teams
+    - finance-users
+    - leave-a-team
+    - prepress-product-heading
+    - switch-organizations
+    - user-roles-and-permissions
+    - using-team-accounts
+  technical_specifications:
+    page: prepress/policies-specifications/technical-specifications.html
+    page_anchors:
+    - operating-system
+    - prepress-product-heading
+    - supported-cloud-providers
+    - supported-platforms
+  the_basics_index:
+    page: prepress/the-basics/index.html
+    page_anchors:
+    - prepress-product-heading
+  tutorials_index:
+    page: prepress/tutorials/index.html
+    page_anchors:
+    - prepress-product-heading
+  two_factor_authentication:
+    page: prepress/account/two-factor-authentication.html
+    page_anchors:
+    - adding-a-physical-fido-security-key
+    - enabling-2fa-on-your-account
+    - enforcing-2fa-for-your-team
+    - if-youre-using-a-usb-based-device
+    - if-youre-using-the-krypton-app
+    - logging-in-with-2fa
+    - prepress-product-heading
+    - troubleshooting
+    - what-is-two-factor-authentication
+  understanding_globs:
+    page: prepress/how-to-guides/common-tools/understanding-globs.html
+    page_anchors:
+    - glob-syntax
+    - prepress-product-heading
+    - what-is-a-glob
+  using_maintenance_mode:
+    page: prepress/how-to-guides/common-tools/using-maintenance-mode.html
+    page_anchors:
+    - overview
+    - prepress-product-heading
+    - setting-a-custom-maintenance-page
+    - using-maintenance-mode
+  what_is_prepress:
+    page: prepress/the-basics/what-is-prepress.html
+    page_anchors:
+    - are-prebuilt-apps-completely-static
+    - do-i-need-to-learn-a-new-language
+    - how-do-i-get-started
+    - prepress-product-heading
+    - welcome-to-prepress
+    - what-are-prebuilt-web-apps
+    - what-are-the-advantages-of-prebuilt-apps
 rails:
   access_your_code:
     page: rails/how-to-guides/common-tools/access-your-code.html
     page_anchors:
     - bitbucket-example
     - github-example
+    - other-public-repos
     - private-repositories
+    - public-github-repos
     - public-repositories
     - rails-product-heading
   account_index:
@@ -3833,6 +4325,7 @@ rails:
     page: rails/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
@@ -3878,6 +4371,13 @@ rails:
     - rails-product-heading
     - running-an-on-demand-health-check
     - viewing-results-of-post-deployment-checks
+  application_protection:
+    page: rails/how-to-guides/common-tools/application-protection.html
+    page_anchors:
+    - enabling-application-protection
+    - more-ways-to-protect-your-app
+    - rails-product-heading
+    - what-is-application-protection
   application_transfer:
     page: rails/account/application-transfer.html
     page_anchors:
@@ -3935,7 +4435,7 @@ rails:
     - replicating-data-between-database-groups
     - specifying-database-groups-via-manifest
     - understanding-database-groups
-    - understanding-primary-database-groups
+    - understanding-default-database-groups
   audit_logs:
     page: rails/account/audit-logs.html
     page_anchors:
@@ -4070,6 +4570,7 @@ rails:
     - external-links
     - generate-gce-api-keys
     - rails-product-heading
+    - using-gce-service-accounts-with-cloud-66
   cloud_hetzner:
     page: rails/how-to-guides/clouds/cloud-hetzner.html
     page_anchors:
@@ -4151,8 +4652,9 @@ rails:
   connect_db_servers:
     page: rails/how-to-guides/databases/shells/connect-db-servers.html
     page_anchors:
-    - on-the-server
+    - finding-database-credentials
     - rails-product-heading
+    - via-ssh
     - with-a-client
   custom_config:
     page: rails/tutorials/custom-config.html
@@ -4212,14 +4714,14 @@ rails:
     page_anchors:
     - backup-format
     - backup-schedule
-    - backup-storage-locations
     - backup-types
     - binary
     - compression
     - exclude-tables
     - install-on-replica
+    - managed-backup-storage-locations
     - managed-backups
-    - pricing
+    - pricing-of-managed-backups
     - rails-product-heading
     - restoring-database-backups
     - text
@@ -4228,9 +4730,9 @@ rails:
   database_customization:
     page: rails/how-to-guides/databases/database-customization.html
     page_anchors:
-    - customize-your-database-configuration
     - database-customization-variables
-    - global-variables
+    - how-to-customize-database-configs
+    - more-info
     - rails-product-heading
   database_encryption:
     page: rails/how-to-guides/databases/database-encryption.html
@@ -4246,15 +4748,18 @@ rails:
     - about-deploying-databases
     - control-your-rails-database-migrations
     - customize-your-database-configuration
+    - database-authentication
     - database-customization-variables
     - database-deployment-types
     - dedicated-database
+    - environment-variables-during-deployment
     - local-database
     - managing-yaml-configs
     - no-database-external
     - rails-product-heading
+    - setting-variables-manually-overriding
+    - the-strong-migration-gem
     - upgrading-your-database
-    - warning
   database_replication:
     page: rails/how-to-guides/databases/database-replication.html
     page_anchors:
@@ -4315,8 +4820,8 @@ rails:
     page_anchors:
     - about-deployment-gateways
     - accessing-your-servers-behind-the-gateway-server
-    - how-to-deploy-your-application-behind-the-gateway-server
-    - important
+    - adding-servers-behind-an-on-premises-gateway
+    - how-to-deploy-your-application-behind-a-gateway-server
     - rails-product-heading
   deployment_health_checks:
     page: rails/how-to-guides/deployment/deployment-health-checks.html
@@ -4353,7 +4858,14 @@ rails:
     page: rails/how-to-guides/add-ins/elasticsearch.html
     page_anchors:
     - add-elasticearch
+    - overview
     - rails-product-heading
+    - step-1-create-a-new-elasticsearch-server-and-group
+    - step-2-scale-up-more-servers-in-the-group-optional
+    - step-3-migrate-your-elasticsearch-data-to-your-new-database-group
+    - step-4-promote-your-new-group-to-default
+    - step-5-redeploy-and-test
+    - upgrading-elasticsearch
   elasticsearch_scaling:
     page: rails/how-to-guides/scaling/elasticsearch-scaling.html
     page_anchors:
@@ -4387,16 +4899,20 @@ rails:
   failover_groups:
     page: rails/tutorials/failover-groups.html
     page_anchors:
-    - adding-a-failover-group
+    - adding-a-secondary-application
+    - creating-a-failover-group
     - environment-variables
+    - how-failover-groups-work
     - overview
     - rails-product-heading
-    - requirements-and-limits
+    - requirements-and-limitations
+    - switching-between-instances
+    - what-youll-need
     - whats-next
+    - why-use-failover-groups
   faq:
     page: rails/the-basics/faq.html
     page_anchors:
-    - are-their-any-requirements-for-the-user-on-my-servers
     - can-i-deploy-multiple-apps-on-a-single-server
     - can-i-use-cloud-66-with-my-own-servers
     - how-can-i-change-my-git-repository
@@ -4425,22 +4941,21 @@ rails:
   getting_started:
     page: rails/quickstarts/getting-started.html
     page_anchors:
-    - accessing-your-git-repo
+    - a-add-deployment-target
     - advanced-configurations
-    - bitbucket-content
-    - choosing-a-deployment-target
-    - choosing-application-type
+    - b-specify-servers
     - cloud-content
-    - configuring-your-application
     - defining-your-application
-    - deploying-to-production
-    - finalizing-deployment-details
-    - github-content
     - no-cloud-content
-    - other-git-content
     - rails-product-heading
     - rails-version-support
     - server-build-states
+    - step-1-choose-a-source
+    - step-2-add-repo-details
+    - step-3-configure-app
+    - step-4-configure-servers-for-deployment
+    - step-5-deploy-your-app
+    - using-a-non-github-host
     - what-youll-need
     - whats-next
   getting_started_with_manifest:
@@ -4450,7 +4965,6 @@ rails:
     - caution
     - cloud-content
     - defining-a-server-for-your-component
-    - how-do-i-use-a-manifest-file
     - no-cloud-content
     - rails-product-heading
     - setting-up-your-first-manifest-file
@@ -4602,6 +5116,7 @@ rails:
   lets_encrypt:
     page: rails/how-to-guides/security/lets-encrypt.html
     page_anchors:
+    - configuring-lets-encrypt-with-cloudflare
     - installing-lets-encrypt
     - rails-product-heading
     - troubleshooting
@@ -4610,6 +5125,8 @@ rails:
     page_anchors:
     - add-a-load-balancer
     - adding-multiple-load-balancers
+    - automatic-endpoint-test
+    - parallel-deployments
     - rails-product-heading
     - switching-between-load-balancers
     - warning-check-your-confighosts
@@ -4682,6 +5199,15 @@ rails:
     - overview
     - rails-product-heading
     - scaling-up
+  managing_application_groups:
+    page: rails/how-to-guides/common-tools/managing-application-groups.html
+    page_anchors:
+    - adding-application-groups
+    - deploying-application-groups
+    - editing-and-deleting-groups
+    - overview
+    - rails-product-heading
+    - using-glob-patterns-for-groups
   managing_custom_packages:
     page: rails/how-to-guides/deployment/managing-custom-packages.html
     page_anchors:
@@ -4721,6 +5247,7 @@ rails:
     - postgresql
     - rails-product-heading
     - redis
+    - specifying-external-databases-via-your-manifest
   manifest_loadbalancer_settings:
     page: rails/references/manifest-loadbalancer-settings.html
     page_anchors:
@@ -4800,8 +5327,8 @@ rails:
     - web-server-and-procfile
     - what-youll-need
     - whats-next
-  migrate_the_stack:
-    page: rails/how-to-guides/deployment/shells/migrate-the-stack.html
+  migrating_applications:
+    page: rails/how-to-guides/deployment/migrating-applications.html
     page_anchors:
     - 1-set-a-failover-group
     - 10-switch-to-the-new-application
@@ -4833,6 +5360,12 @@ rails:
     - expected-downtime
     - rails-product-heading
     - using-a-mongodb-replica-set-in-your-code
+  mongodb:
+    page: rails/how-to-guides/add-ins/mongodb.html
+    page_anchors:
+    - add-mongodb-to-your-application
+    - mongodb-authentication-and-roles
+    - rails-product-heading
   multi_cert_haproxy:
     page: rails/how-to-guides/security/multi-cert_haproxy.html
     page_anchors:
@@ -4861,14 +5394,12 @@ rails:
     - cors
     - firewall
     - load-balancer-traffic
-    - maintenance-mode
     - owasp-rules
     - rails-product-heading
     - redirect-http-to-https
     - temporary-ssh-access
     - traffic-filters
     - traffic-settings
-    - use-a-custom-maintenance-page
     - using-network-redirects
     - web-application-firewalls
     - www-or-non-www-in-your-url
@@ -4881,35 +5412,6 @@ rails:
     - how-passenger-pool-max-is-calculated
     - nginx-customconfig-variables
     - nginx-worker-configuration
-    - rails-product-heading
-  nginx_auth:
-    page: rails/how-to-guides/security/nginx-auth.html
-    page_anchors:
-    - for-passenger-servers
-    - other-rack-servers
-    - rails-product-heading
-  nginx_deny:
-    page: rails/how-to-guides/security/nginx-deny.html
-    page_anchors:
-    - rails-product-heading
-  nginx_modules:
-    page: rails/how-to-guides/deployment/shells/nginx-modules.html
-    page_anchors:
-    - custom-rack-servers
-    - introduction
-    - passenger
-    - rails-product-heading
-  nginx_redirect:
-    page: rails/how-to-guides/deployment/shells/nginx-redirect.html
-    page_anchors:
-    - http
-    - https
-    - rails-product-heading
-    - redirect-between-domains-with-http-and-https
-    - redirect-from-http-to-https
-  nginx_ssl_ciphers:
-    page: rails/how-to-guides/security/nginx-ssl-ciphers.html
-    page_anchors:
     - rails-product-heading
   non_recommended_server_sizes:
     page: rails/references/non-recommended-server-sizes.html
@@ -4970,6 +5472,7 @@ rails:
     - rails-product-heading
     - rolling-deployment
     - serial-deployment
+    - types-of-deployment-strategies
     - using-a-deployment-profile
     - using-deploy-with-options
     - using-the-toolbelt-command-line
@@ -5008,21 +5511,32 @@ rails:
   postgis_installation:
     page: rails/how-to-guides/databases/shells/postgis-installation.html
     page_anchors:
-    - enable-adminpack
-    - install-pgrouting
     - installing-with-cloud-66
-    - manual-installation
     - more-info
-    - pgrouting
-    - postgis-extension-for-postgresql
-    - prerequisites
     - rails-product-heading
+  preview_deployments:
+    page: rails/how-to-guides/deployment/preview-deployments.html
+    page_anchors:
+    - browsing-and-managing-previews
+    - deleting-previews
+    - deleting-previews-using-cloud-66-toolbelt
+    - disabling-previews
+    - enabling-and-disabling-preview-deployments
+    - monitoring-preview-deployments
+    - overview
+    - previews--database-migrations
+    - rails-product-heading
+    - redeploying-previews
+    - setting-up-previews-on-github
+    - triggering-preview-deployments-via-your-git-provider
+    - types-of-preview-deployments
   pricing:
     page: rails/resources/pricing.html
     page_anchors:
-    - add-on-services
+    - annual-payments
     - maestro
     - node
+    - prepress
     - rails
     - rails-product-heading
     - skycap
@@ -5077,6 +5591,14 @@ rails:
     page: rails/how-to-guides/deployment/rails-console.html
     page_anchors:
     - rails-product-heading
+  rails_multidb:
+    page: rails/how-to-guides/databases/rails-multidb.html
+    page_anchors:
+    - configuring-a-primary-and-replica-database
+    - configuring-multiple-separate-databases
+    - customising-rails-multidb-instances-via-manifest
+    - overview
+    - rails-product-heading
   rails_node_version:
     page: rails/how-to-guides/deployment/rails-node-version.html
     page_anchors:
@@ -5094,6 +5616,7 @@ rails:
     - accessing-redeployment-hooks
     - adding-redeployment-hooks-to-your-pipeline
     - bitbucket-setup
+    - calling-a-deployment-profile-via-a-redeployment-hook
     - generic-setup
     - github-integration
     - github-setup
@@ -5131,6 +5654,7 @@ rails:
   registered_servers:
     page: rails/how-to-guides/deployment/registered-servers.html
     page_anchors:
+    - adding-servers-behind-a-gateway
     - overview
     - rails-product-heading
     - register-a-server
@@ -5158,6 +5682,28 @@ rails:
     page: rails/resources/index.html
     page_anchors:
     - rails-product-heading
+  rollout_strategies:
+    page: rails/how-to-guides/deployment/rollout-strategies.html
+    page_anchors:
+    - browser-plugins-for-http-headers
+    - browsing-rollout-variants-for-canary-releases
+    - changing-your-applications-rollout-strategy
+    - cx-command
+    - cx-examples
+    - environment-variables-in-rollouts
+    - how-rollout-strategies-work
+    - manage-rollouts-using-cloud-66-toolbelt-cx
+    - managing-a-blue--green-rollout
+    - managing-a-canary-rollout
+    - migrating-your-customized-nginx-file
+    - overview
+    - preparing-existing-applications-for-rollout-strategies
+    - rails-product-heading
+    - setting-an-http-header-via-curl
+    - using-a-deployment-profile
+    - using-deploy-with-options
+    - using-http-headers-to-view-blue-or-green-versions
+    - using-the-toolbelt-command-line
   running_rake_tasks:
     page: rails/how-to-guides/deployment/running-rake-tasks.html
     page_anchors:
@@ -5232,6 +5778,7 @@ rails:
   server_ip_addresses:
     page: rails/references/server-ip-addresses.html
     page_anchors:
+    - browsing-your-app-via-cloud-66-dns
     - cloud-66-agent
     - cloud-66-hostnames
     - finding-your-cloud-66-hostname
@@ -5355,6 +5902,7 @@ rails:
     - lets-encrypt-ssl-certificate
     - rails-product-heading
     - standard-ssl-certificate
+    - using-lets-encrypt-with-cloudflare
   ssl_certificate:
     page: rails/how-to-guides/security/ssl-certificate.html
     page_anchors:
@@ -5378,6 +5926,7 @@ rails:
     - application-components
     - application-environments
     - application-vs-stack
+    - automation-and-repeatability
     - background-workers-optional
     - cloud-vendor
     - database-servers-optional
@@ -5386,6 +5935,7 @@ rails:
     - load-balancer-optional
     - operating-system
     - rails-product-heading
+    - the-principle-of-immutability
     - web-servers
     - what-is-cloud-66-for-rails
     - what-is-stackscore
@@ -5460,8 +6010,12 @@ rails:
   team_accounts:
     page: rails/account/team-accounts.html
     page_anchors:
+    - account-level-permissions
     - add-a-new-user-team-member
+    - application-level-permissions--roles
     - application-users
+    - assigning-application-roles-to-a-user
+    - creating-and-editing-roles
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
@@ -5506,160 +6060,144 @@ rails:
   toolbelt:
     page: rails/references/toolbelt.html
     page_anchors:
-    - a-note-on-overwriting-access-profiles
-    - about-backup-management
-    - access-control-for-toolbelt-login
-    - apply-profile-command
-    - clear-caches
-    - cloud-66-easy-login
-    - configuring-toolbelt
-    - database-management
+    - rails-product-heading
+  toolbelt_commands:
+    page: rails/references/toolbelt/toolbelt-commands.html
+    page_anchors:
+    - arguments
+    - backups-download
+    - backups-list
+    - backups-new
+    - config
+    - containers-attach
+    - containers-list
+    - containers-restart
+    - containers-stop
+    - databases-promote-slave
+    - databases-resync-slave
     - download
-    - download-environment-variables
-    - download-your-backups
-    - example
-    - example-1
-    - example-10
-    - example-11
-    - example-12
-    - example-13
-    - example-14
-    - example-15
-    - example-16
-    - example-17
-    - example-18
-    - example-19
-    - example-2
-    - example-3
-    - example-4
-    - example-5
-    - example-6
-    - example-7
-    - example-8
-    - example-9
+    - dump-token
+    - env-vars-download
+    - env-vars-list
+    - env-vars-set
+    - env-vars-upload
     - examples
-    - examples-1
-    - examples-2
-    - examples-3
-    - examples-4
-    - examples-5
-    - examples-6
-    - examples-of-service-usage
-    - gateway-management
-    - getting-service-information
-    - how-to-uninstall-the-toolbelt
+    - failover-groups-add
+    - failover-groups-delete
+    - failover-groups-list
+    - failover-groups-update
+    - formations-commit
+    - formations-create
+    - formations-deploy
+    - formations-fetch
+    - formations-list
+    - formations-stencils-list
+    - gateways-add
+    - gateways-close
+    - gateways-list
+    - gateways-open
+    - gateways-remove
+    - help
+    - info
+    - init
+    - init-agent
+    - jobs-list
+    - jobs-run
+    - lease
+    - login
+    - notifications-download
+    - notifications-upload
+    - open
+    - processes-list
+    - processes-pause
+    - processes-restart
+    - processes-resume
+    - processes-scale
+    - rails-product-heading
+    - redeploy
+    - register-server
+    - run
+    - servers-list
+    - servers-reboot
+    - servers-settings-list
+    - services-info
+    - services-list
+    - services-pause
+    - services-restart
+    - services-resume
+    - services-scale
+    - services-stop
+    - settings-list
+    - settings-set
+    - skycap-listen
+    - snapshots-list
+    - snapshots-render
+    - ssh
+    - stacks-clear-caches
+    - stacks-configuration-apply
+    - stacks-configuration-download
+    - stacks-configuration-list
+    - stacks-configuration-upload
+    - stacks-configure-download
+    - stacks-configure-list-versions
+    - stacks-configure-upload
+    - stacks-create
+    - stacks-list
+    - stacks-listen
+    - stacks-reboot
+    - stacks-redeploy
+    - stacks-restart
+    - stacks-ssl
+    - tags-add
+    - tags-delete
+    - tail
+    - templates-list
+    - templates-resync
+    - templates-show
+    - test
+    - tunnel
+    - update
+    - upload
+    - usage
+    - users-apply-profile
+    - users-list
+    - users-show
+  toolbelt_installation:
+    page: rails/references/toolbelt/toolbelt-installation.html
+    page_anchors:
+    - configuring-toolbelt
     - installation
     - installing-on-a-server-headless
-    - job-management
-    - list-command
-    - list-environment-variables
-    - list-gateways
-    - list-jobs
-    - list-server-settings
-    - list-your-application-settings
-    - list-your-backups
-    - list-your-stacks
-    - listing-processes
-    - listing-services
-    - manage-your-configuration-files
-    - note-2
-    - open-gateway
-    - open-your-website
-    - parameters
-    - parameters-1
-    - parameters-10
-    - parameters-11
-    - parameters-12
-    - parameters-13
-    - parameters-14
-    - parameters-15
-    - parameters-16
-    - parameters-17
-    - parameters-18
-    - parameters-19
-    - parameters-2
-    - parameters-20
-    - parameters-21
-    - parameters-22
-    - parameters-23
-    - parameters-24
-    - parameters-25
-    - parameters-26
-    - parameters-27
-    - parameters-29
-    - parameters-3
-    - parameters-30
-    - parameters-31
-    - parameters-32
-    - parameters-33
-    - parameters-4
-    - parameters-5
-    - parameters-6
-    - parameters-7
-    - parameters-8
-    - parameters-9
-    - profile-commands
-    - profiles-for-multiple-account-support
+    - multi-account-support
     - rails-product-heading
-    - reboot-servers
-    - reboot-your-stacks
-    - redeploy-your-application
-    - remove-gateway
-    - result
-    - resyncing-slave-from-master
-    - run-command
-    - server-management
-    - set-environment-variables
-    - settings-variables
-    - show-help-pages-for-a-command
-    - slave-promotion-to-standalone-master
-    - sshing-to-your-server
-    - stopping-services
-    - temporary-lease
-    - tunnel-command
-    - upload
-    - upload-environment-variables
-    - usage
-    - usage-1
-    - usage-10
-    - usage-11
-    - usage-12
-    - usage-13
-    - usage-14
-    - usage-15
-    - usage-16
-    - usage-17
-    - usage-18
-    - usage-19
-    - usage-2
-    - usage-20
-    - usage-21
-    - usage-22
-    - usage-23
-    - usage-24
-    - usage-25
-    - usage-26
-    - usage-27
-    - usage-28
-    - usage-29
-    - usage-3
-    - usage-30
-    - usage-31
-    - usage-32
-    - usage-33
-    - usage-34
-    - usage-35
-    - usage-4
-    - usage-5
-    - usage-6
-    - usage-7
-    - usage-8
-    - usage-9
+  toolbelt_profiles:
+    page: rails/references/toolbelt/toolbelt-profiles.html
+    page_anchors:
+    - config-create
+    - config-delete
+    - config-list
+    - config-rename
+    - config-show
+    - config-update
+    - config-use
+    - configuration-profile-commands
+    - overviews
+    - rails-product-heading
+    - setting-up-a-profile
+    - switching-between-profiles
+  toolbelt_shortcuts:
+    page: rails/references/toolbelt/toolbelt-shortcuts.html
+    page_anchors:
+    - naming-shortcuts
+    - rails-product-heading
+    - running-cx-in-a-git-directory
+    - shortcuts
   troubleshooting_deployments:
     page: rails/how-to-guides/deployment/troubleshooting-deployments.html
     page_anchors:
     - check-your-git-repo-settings
     - have-you-recently-restarted-your-server
+    - issues-with-bundler-223
     - my-problem-isnt-covered-by-any-of-the-above
     - overview
     - problems-reaching-your-servers
@@ -5732,6 +6270,12 @@ rails:
     - testing-failover-groups
     - using-failover-groups-with-ssl-certificates
     - why-use-failover-groups
+  understanding_globs:
+    page: rails/how-to-guides/common-tools/understanding-globs.html
+    page_anchors:
+    - glob-syntax
+    - rails-product-heading
+    - what-is-a-glob
   unicorn_rack_server:
     page: rails/how-to-guides/rack-servers/unicorn-rack-server.html
     page_anchors:
@@ -5804,6 +6348,13 @@ rails:
     - using-command-hooks
     - using-inline-script-hooks
     - using-snippet-hooks
+  using_maintenance_mode:
+    page: rails/how-to-guides/common-tools/using-maintenance-mode.html
+    page_anchors:
+    - overview
+    - rails-product-heading
+    - setting-a-custom-maintenance-page
+    - using-maintenance-mode
   using_master_data_staging:
     page: rails/how-to-guides/databases/shells/using-master-data-staging.html
     page_anchors:
@@ -5855,6 +6406,7 @@ skycap:
     page: skycap/account/account-management.html
     page_anchors:
     - add-or-remove-users
+    - adding-another-organization-to-your-account
     - closing-your-account
     - if-your-account-has-an-outstanding-balance
     - if-your-account-has-applications
@@ -6159,6 +6711,15 @@ skycap:
     page: skycap/integrations/index.html
     page_anchors:
     - skycap-product-heading
+  managing_application_groups:
+    page: skycap/how-to-guides/common-tools/managing-application-groups.html
+    page_anchors:
+    - adding-application-groups
+    - deploying-application-groups
+    - editing-and-deleting-groups
+    - overview
+    - skycap-product-heading
+    - using-glob-patterns-for-groups
   managing_build_profiles:
     page: skycap/how-to-guides/formations/managing-build-profiles.html
     page_anchors:
@@ -6236,9 +6797,10 @@ skycap:
   pricing:
     page: skycap/policies-specifications/pricing.html
     page_anchors:
-    - add-on-services
+    - annual-payments
     - maestro
     - node
+    - prepress
     - rails
     - skycap
     - skycap-product-heading
@@ -6400,8 +6962,12 @@ skycap:
   team_accounts:
     page: skycap/account/team-accounts.html
     page_anchors:
+    - account-level-permissions
     - add-a-new-user-team-member
+    - application-level-permissions--roles
     - application-users
+    - assigning-application-roles-to-a-user
+    - creating-and-editing-roles
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
@@ -6416,155 +6982,138 @@ skycap:
   toolbelt:
     page: skycap/references/toolbelt.html
     page_anchors:
-    - a-note-on-overwriting-access-profiles
-    - about-backup-management
-    - access-control-for-toolbelt-login
-    - apply-profile-command
-    - clear-caches
-    - cloud-66-easy-login
-    - configuring-toolbelt
-    - database-management
+    - skycap-product-heading
+  toolbelt_commands:
+    page: skycap/references/toolbelt/toolbelt-commands.html
+    page_anchors:
+    - arguments
+    - backups-download
+    - backups-list
+    - backups-new
+    - config
+    - containers-attach
+    - containers-list
+    - containers-restart
+    - containers-stop
+    - databases-promote-slave
+    - databases-resync-slave
     - download
-    - download-environment-variables
-    - download-your-backups
-    - example
-    - example-1
-    - example-10
-    - example-11
-    - example-12
-    - example-13
-    - example-14
-    - example-15
-    - example-16
-    - example-17
-    - example-18
-    - example-19
-    - example-2
-    - example-3
-    - example-4
-    - example-5
-    - example-6
-    - example-7
-    - example-8
-    - example-9
+    - dump-token
+    - env-vars-download
+    - env-vars-list
+    - env-vars-set
+    - env-vars-upload
     - examples
-    - examples-1
-    - examples-2
-    - examples-3
-    - examples-4
-    - examples-5
-    - examples-6
-    - examples-of-service-usage
-    - gateway-management
-    - getting-service-information
-    - how-to-uninstall-the-toolbelt
+    - failover-groups-add
+    - failover-groups-delete
+    - failover-groups-list
+    - failover-groups-update
+    - formations-commit
+    - formations-create
+    - formations-deploy
+    - formations-fetch
+    - formations-list
+    - formations-stencils-list
+    - gateways-add
+    - gateways-close
+    - gateways-list
+    - gateways-open
+    - gateways-remove
+    - help
+    - info
+    - init
+    - init-agent
+    - jobs-list
+    - jobs-run
+    - lease
+    - login
+    - notifications-download
+    - notifications-upload
+    - open
+    - processes-list
+    - processes-pause
+    - processes-restart
+    - processes-resume
+    - processes-scale
+    - redeploy
+    - register-server
+    - run
+    - servers-list
+    - servers-reboot
+    - servers-settings-list
+    - services-info
+    - services-list
+    - services-pause
+    - services-restart
+    - services-resume
+    - services-scale
+    - services-stop
+    - settings-list
+    - settings-set
+    - skycap-listen
+    - skycap-product-heading
+    - snapshots-list
+    - snapshots-render
+    - ssh
+    - stacks-clear-caches
+    - stacks-configuration-apply
+    - stacks-configuration-download
+    - stacks-configuration-list
+    - stacks-configuration-upload
+    - stacks-configure-download
+    - stacks-configure-list-versions
+    - stacks-configure-upload
+    - stacks-create
+    - stacks-list
+    - stacks-listen
+    - stacks-reboot
+    - stacks-redeploy
+    - stacks-restart
+    - stacks-ssl
+    - tags-add
+    - tags-delete
+    - tail
+    - templates-list
+    - templates-resync
+    - templates-show
+    - test
+    - tunnel
+    - update
+    - upload
+    - usage
+    - users-apply-profile
+    - users-list
+    - users-show
+  toolbelt_installation:
+    page: skycap/references/toolbelt/toolbelt-installation.html
+    page_anchors:
+    - configuring-toolbelt
     - installation
     - installing-on-a-server-headless
-    - job-management
-    - list-command
-    - list-environment-variables
-    - list-gateways
-    - list-jobs
-    - list-server-settings
-    - list-your-application-settings
-    - list-your-backups
-    - list-your-stacks
-    - listing-processes
-    - listing-services
-    - manage-your-configuration-files
-    - note-2
-    - open-gateway
-    - open-your-website
-    - parameters
-    - parameters-1
-    - parameters-10
-    - parameters-11
-    - parameters-12
-    - parameters-13
-    - parameters-14
-    - parameters-15
-    - parameters-16
-    - parameters-17
-    - parameters-18
-    - parameters-19
-    - parameters-2
-    - parameters-20
-    - parameters-21
-    - parameters-22
-    - parameters-23
-    - parameters-24
-    - parameters-25
-    - parameters-26
-    - parameters-27
-    - parameters-29
-    - parameters-3
-    - parameters-30
-    - parameters-31
-    - parameters-32
-    - parameters-33
-    - parameters-4
-    - parameters-5
-    - parameters-6
-    - parameters-7
-    - parameters-8
-    - parameters-9
-    - profile-commands
-    - profiles-for-multiple-account-support
-    - reboot-servers
-    - reboot-your-stacks
-    - redeploy-your-application
-    - remove-gateway
-    - result
-    - resyncing-slave-from-master
-    - run-command
-    - server-management
-    - set-environment-variables
-    - settings-variables
-    - show-help-pages-for-a-command
+    - multi-account-support
     - skycap-product-heading
-    - slave-promotion-to-standalone-master
-    - sshing-to-your-server
-    - stopping-services
-    - temporary-lease
-    - tunnel-command
-    - upload
-    - upload-environment-variables
-    - usage
-    - usage-1
-    - usage-10
-    - usage-11
-    - usage-12
-    - usage-13
-    - usage-14
-    - usage-15
-    - usage-16
-    - usage-17
-    - usage-18
-    - usage-19
-    - usage-2
-    - usage-20
-    - usage-21
-    - usage-22
-    - usage-23
-    - usage-24
-    - usage-25
-    - usage-26
-    - usage-27
-    - usage-28
-    - usage-29
-    - usage-3
-    - usage-30
-    - usage-31
-    - usage-32
-    - usage-33
-    - usage-34
-    - usage-35
-    - usage-4
-    - usage-5
-    - usage-6
-    - usage-7
-    - usage-8
-    - usage-9
+  toolbelt_profiles:
+    page: skycap/references/toolbelt/toolbelt-profiles.html
+    page_anchors:
+    - config-create
+    - config-delete
+    - config-list
+    - config-rename
+    - config-show
+    - config-update
+    - config-use
+    - configuration-profile-commands
+    - overviews
+    - setting-up-a-profile
+    - skycap-product-heading
+    - switching-between-profiles
+  toolbelt_shortcuts:
+    page: skycap/references/toolbelt/toolbelt-shortcuts.html
+    page_anchors:
+    - naming-shortcuts
+    - running-cx-in-a-git-directory
+    - shortcuts
+    - skycap-product-heading
   tutorials_index:
     page: skycap/tutorials/index.html
     page_anchors:
@@ -6595,6 +7144,12 @@ skycap:
     - what-are-personal-access-tokens
     - why-cant-we-share-logins
     - why-do-i-need-2fa
+  understanding_globs:
+    page: skycap/how-to-guides/common-tools/understanding-globs.html
+    page_anchors:
+    - glob-syntax
+    - skycap-product-heading
+    - what-is-a-glob
   updating_an_existing_service:
     page: skycap/tutorials/updating-an-existing-service.html
     page_anchors:

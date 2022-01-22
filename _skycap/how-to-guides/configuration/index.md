@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How-To guides for configuring Skycap applications"
 lead: How to configure components to work with Skycap

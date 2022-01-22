@@ -10,4 +10,4 @@ legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-{% include how-to-guides/databases/database-management.md %}
+{% include how-to-guides/databases/database-management.md product = page.collection %}

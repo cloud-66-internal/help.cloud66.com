@@ -26,16 +26,22 @@ You can now watch the logs, as usual to see the progress of the process. Dependi
 - **Rackspace**: [Rackspace Load Balancing](http://www.rackspace.com/cloud/load-balancing/)
 - **CloudA**: [Load Balancing as a service](https://www.clouda.ca/technology/vpc-virtual-private-cloud/)
 
-The time required to set up your load balancer will depend on which cloud provider you use. Once your load balancer is set up, it will be ready to distribute the load between your web servers. <strong>All your existing web servers</strong> will automatically be added to the load balancer.
+### Automatic endpoint test
 
-When you have a load balancer on your application, your deployments can take place in serial to reduce downtime, or in [parallel](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html). Deploying in serial involves removing each server from the load balancer, deploying to it and then re-adding it to the load balancer in sequence.
+When a new load balancer is set up it will begin to ping your web endpoints to check their health. By default load balancers ping the root path of your application (`/`) and if they receive a `200` response code, they will consider a server healthy.
+
+If your application does not have a valid endpoint or route set for `/` then you can specify a custom path under the `httpchk` option in your [manifest file](/{{page.collection}}/references/manifest-loadbalancer-settings.html) to ensure your application responds appropriately. We will configure the load balancer to ping that path rather than the root.
+
+If your servers respond positively to the ping test, the load balancer will begin to distribute the load between them. If any of these ping tests fail, the load balancer will not distribute traffic to those servers that failed.
+
+{% if include.product == 'rails' %}
+### Parallel deployments
+
+When you have a load balancer on your application, your deployments can take place in serial to reduce downtime, or in [parallel](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html). Deploying in serial involves removing each server from the load balancer, deploying to it and then re-adding it to the load balancer in sequence.{% endif %}
 
 ## Adding multiple load balancers
 
 One potential drawback of having a load balancer is that it is a single point of failure. To improve the high availability of an application, you can add more than one load balancer to it.
-
-#### Please note
-<div class="notice notice-warning"><p>This feature is not currently supported by Digital Ocean (pending the release of DigitalOcean native load balancers) or for any other providers that have HAproxy as their only load balancer option.</p></div>
 
 To add a second load balancer to your application:
 

@@ -16,7 +16,6 @@ All Maestro applications come with a built-in tool to quickly enable commonly-us
 
 * Redirecting traffic from HTTP to HTTPS
 * Adding or removing the `www` subdomain from URLs
-* Redirecting to a maintenance page ("Maintenance Mode")
 
 ## What you'll need
 
@@ -32,20 +31,6 @@ Before you start, please check you have the following:
 3. Click on the *Redirects* tab at the top of the main panel
 
 You can now use this page to set (or remove) redirects.
-
-## Using Maintenance Mode
-
-When you have to make manual changes to your application or push out a breaking change, you may not be able to guarantee that your application will be able to serve content or act correctly.
-
-During such times, you can set your application into *maintenance mode*, which serves a static holding page (either a default Cloud 66 page, or your own) for the duration of your maintenance work.
-
-To enable maintenance mode: 
-* check the *Put Application in Maintenance Mode* box 
-* click *Apply Redirects*
-
-Remember to give your application a few minutes to enable this change. Then open your app in a browser. Instead of the normal visit count, you should see the default Cloud 66 maintenance page.
-
-You can still safely redeploy your application while maintenance mode is enabled - the maintenance page will be served until you turn off maintenance mode.
 
 ## Redirect HTTP to HTTPS
 

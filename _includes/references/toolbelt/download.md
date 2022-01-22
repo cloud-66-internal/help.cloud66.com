@@ -1,30 +1,14 @@
+Use this command to download a copy of file from the remote server to your local computer. If you don’t specify a target directory, the file will be downloaded to your current local directory.
 
-## Download
-
-Use this command to download a file from the remote server to your local computer.
-
-
-### Usage
-
-```shell
-$ cx download [-s <stack>] [--server <server name>] [source file] [target directory]
-```
-If you don't specify a target directory, the file will be downloaded to your current local directory.
-
-
-### Parameters
-
-|		Parameter 		   |	Default		|   Description    |
-|--|:--:| ----:|
-|stack 					   |		—		|Name of the application|
-|server name 	   | 	—		| Name of the server to access|
-|source file	   |	—	| The path to the file on your server |
-|target directory (optional)	   |	—	| Your local target path |
-{:.table}
-
-
-### Example
-
-```shell
+{% include references/toolbelt/boilerplate/top-tabs.html %}
+$ cx download --stack <application name> --server <server name> <path to source file> [<target directory>]
+{% include references/toolbelt/boilerplate/args.html %}
+| Argument | Required? | Default | Description |
+|  ---  |  ---  |  ---  |  ---  |
+| \--stack, -s &lt;application name&gt; | yes | — | Name of your application |
+| \--server &lt;server name&gt; | yes | — | Name of the server which contains the file |
+| &lt;path to source file&gt; | yes | — | The path to the file on the server |
+| &lt;target directory&gt; | no | — | The path to the local directory in which the file will be saved |
+{% include references/toolbelt/boilerplate/example.html %}
 $ cx download -s "My Awesome App" --server web /tmp/file.txt /tmp/file.txt
-```
+{% include references/toolbelt/boilerplate/footer.html %}

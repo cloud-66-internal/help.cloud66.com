@@ -1,7 +1,12 @@
 ## Overview
-
+{% if include.product != 'rails' %}
 Multi Database Support allows you to attach multiple **database groups** to an application. A database group is a collection of one or more databases of the *same* type (e.g. MySQL). Different groups can have different database types, allowing a single app to use multiple types of databases (e.g. Postgres *and* Redis), or they can have the same type (e.g. two *separate* groups of MySQL servers).
+{% endif %}
+{% if include.product == 'rails' %}
+Database Groups allow you to attach multiple databases to a single application. A database group is a collection of one or more databases of the *same* type (e.g. MySQL). Different groups can have different database types, allowing a single app to use multiple types of databases (e.g. Postgres *and* Redis), or they can have the same type (e.g. two *separate* groups of MySQL servers).
 
+If you are using the **native** Rails multiDB feature (i.e. multiple databases with Active Record) then please read our [Rails MultiDB guide](/rails/how-to-guides/databases/rails-multidb.html). (The feature actually uses Database Groups, but does so via another method).
+{% endif %}
 ## Understanding database groups
 
 Database groups are discrete groups ("clusters") of database servers of the same type. If your application already has a database, you already have your first "group". 
@@ -44,7 +49,7 @@ mysql:
      version: "8.1"
   legacy:
    configuration:
-	 operating_system: ubuntu1604
+	 operating_system: ubuntu1804
      version: "5.6"
 ```
 
@@ -57,7 +62,7 @@ If you are adding a new database group (or server) to an **existing application*
 
 ## Accessing database groups from an app
 
-Applications can access different database groups using environment variables. For each kind of database (i.e. each database engine), one group will be set as the "primary group" (see below for more details). This primary group will use the default env vars for that database type (e.g. `MYSQL_ADDRESS`), while the rest of the groups will use specific env vars derived from their group name - for example `MYSQL_VENUS_ADDRESS`.
+Applications can access different database groups using environment variables. For each kind of database (i.e. each database engine), one group will be set as the "default group" (see below for more details). This default group will use the default env vars for that database type (e.g. `MYSQL_ADDRESS`), while the rest of the groups will use specific env vars derived from their group name - for example `MYSQL_VENUS_ADDRESS`.
 
 To find the environment variables for a database group: 
 
@@ -68,32 +73,32 @@ To find the environment variables for a database group:
 
 This allows your application to use two or more database groups simultaneously. We recommend extra caution if your application has two or more groups that use the same database type, as it is easy to become confused. 
 
-### Understanding primary database groups
+### Understanding default database groups
 
-When you have multiple database groups of the same type (e.g. multiple MySQL groups), one of those groups will be set as your primary group (normally it is the first group created).
+When you have multiple database groups of the same type (e.g. multiple MySQL groups), one of those groups will be set as your default group (normally it is the first group created).
 
-This means that the root level environment variables that we create for that database type will redirect to the environment variables of the **primary group**. The rest of the groups will use specific env vars derived from their group name (e.g. `MYSQL_VENUS_ADDRESS`).
+This means that the root level environment variables that we create for that database type will redirect to the environment variables of the **default group**. The rest of the groups will use specific env vars derived from their group name (e.g. `MYSQL_VENUS_ADDRESS`).
 
-For example if the group named "Default" set as your **primary MySQL group** then the env vars are mapped as follows:
+For example if the group named "Default" set as your **default MySQL group** then the env vars are mapped as follows:
 
 `MYSQL_ADDRESS` &rarr; `MYSQL_DEFAULT_ADDRESS`
 
 `MYSQL_PASSWORD` &rarr; `MYSQL_DEFAULT_PASSWORD`
 
-At any point you can set another group to be your primary group, which will change the root level environment variables for that database type to point at new values. For example if you set the group "upgrade" as your primary:
+At any point you can set another group to be your default group, which will change the root level environment variables for that database type to point at new values. For example if you set the group "upgrade" as your default:
 
 `MYSQL_ADDRESS` &rarr; `MYSQL_UPGRADE_ADDRESS`
 
 `MYSQL_PASSWORD` &rarr; `MYSQL_UPGRADE_PASSWORD`
 
-You can set your primary group in your Dashboard by clicking through on the *Server* tab from the Application overview and clicking the button. **We will not apply any changes in env vars to your application immediately.** They will only be applied when you next redeploy your stack (we recommend you do this immediately or as soon as possible).
+You can set your default group in your Dashboard by clicking through on the *Server* tab from the Application overview and clicking the button. **We will not apply any changes in env vars to your application immediately.** They will only be applied when you next redeploy your stack (we recommend you do this immediately or as soon as possible).
 
 {% if include.product == 'maestro' %}
 This pattern also applies to the **service networking addresses** of your Maestro components. For more details please read our [full guide on the subject](/maestro/how-to-guides/databases/database-management.html#service-names-for-database-groups).
 {% endif %}
 
 #### Note
-<div class="notice"><p>You can choose to use the <strong>group-specific environment variables</strong> in your app configuration, rather than using the root level environment variables. So if, for example, your current primary group is named "Upgrade" you can still use <code>MYSQL_UPGRADE_ADDRESS</code> rather than <code>MYSQL_ADDRESS</code>.</p></div>
+<div class="notice"><p>You can choose to use the <strong>group-specific environment variables</strong> in your app configuration, rather than using the root level environment variables. So if, for example, your current default group is named "Upgrade" you can still use <code>MYSQL_UPGRADE_ADDRESS</code> rather than <code>MYSQL_ADDRESS</code>.</p></div>
 
 ## Moving data between database groups
 

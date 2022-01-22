@@ -16,7 +16,6 @@ Most deployments with Cloud 66 go smoothly, but if you've hit a snag it's usuall
 
 ## Problems reaching your servers
 
-
 If Cloud 66 is reporting that your server is not online or can't be reached, then follow these steps:
 
 1. Have you recently restarted your server? See the note below.
@@ -43,6 +42,25 @@ Most modern applications rely on a wide range of components, and where these dep
 4. Check which version of Ubuntu your servers are using (you can find this on the detail page for any server, under the **Overview** tab). Older servers may be running version 16.04 or even 14.04, both of which are now deprecated and this can cause issues. Consider [upgrading](https://help.cloud66.com/rails/how-to-guides/deployment/applying-upgrades.html) these servers. 
 
 If all of these fail, contact our support team and we will assist wherever possible. 
+
+## Issues with Bundler 2.2.3+
+
+Due to an [issue](https://github.com/rubygems/rubygems/issues/4269) in Bundler 2.2.3+, it no longer uses a generic platform when creating the `Gemfile.lock` file. Instead it defaults to the platform of your development machine. As a result, you may get errors like this one during deployment:
+
+```bash
+Your bundle only supports platforms ["x86_64-darwin-19"] but your local platform is x86_64-linux. Add the current platform to the lockfile with `bundle lock
+--add-platform x86_64-linux` and try again
+```
+
+In order to solve this, you need to explicitly lock your platforms as follows:
+
+```bash
+$ bundle lock --add-platform ruby
+$ bundle lock --add-platform x86_64-linux
+$ bundle install
+```
+
+You should commit your code again after doing this.
 
 ## Process or migration timeouts
 

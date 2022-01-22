@@ -141,26 +141,6 @@ As mentioned above, you can also managed these settings via your [Manifest file]
 
 The *Redirects* tab helps you perform simple but frequently used network redirects. These include redirecting traffic from *HTTP* to *HTTPS* or adding or removing the *www* prefix from your domain.
 
-{% if include.product == 'rails' %}
-### Maintenance mode
-When you have to make manual changes to your application or push out a breaking change, you may not be able to guarantee that your application will be able to serve content or act correctly.
-
-During such times, you can set your application into *maintenance mode*, which puts up a holding page (either a default Cloud 66 page, or your own) for the duration of your maintenance work.
-
-You can still safely redeploy your application while maintenance mode is enabled - the maintenance page will be served until you turn off maintenance mode on your application.
-
-You can find it in *Application Overview* &rarr; *Network settings* &rarr; *Redirects* tab 
-
-### Use a custom maintenance page
-
-To supply your own maintenance page, simply place your file in the following path of your repository:
-
-```shell
-/.cloud66/maintenance.html
-```
-
-{% endif %}
-
 ### Redirect HTTP to HTTPS
 
 You use the Cloud 66 [SSL Add-in](/{{page.collection}}/how-to-guides/add-ins/ssl.html) to add a certificate to your application and serve your traffic securely via HTTPS. To ensure that all your visitors use HTTPS, you should redirect anyone using HTTP to HTTPS.

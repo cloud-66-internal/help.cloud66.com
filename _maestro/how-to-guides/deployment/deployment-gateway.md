@@ -22,7 +22,7 @@ Team members should have **Edit Deploy Gateways** access rights to be able to us
 
 ## Deploying an application behind a gateway
 
-Gateway management is available through [toolbelt](/maestro/references/toolbelt.html#gateway-management) .
+Gateway management is available through [toolbelt](/maestro/references/toolbelt/toolbelt-commands.html#gateways-list) .
 
 First, you need to define a gateway. For example:
 

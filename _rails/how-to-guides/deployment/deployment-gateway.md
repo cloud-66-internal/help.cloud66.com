@@ -11,20 +11,16 @@ permalink: /:collection/:path:output_ext
 ---
 
 
-
 ## About deployment gateways
 
 If you want to deploy your application in a DMZ, you should prepare a bastion server which enables you to connect to your DMZ. You should define a **Deployment Gateway** in your Cloud66 account and specify the information of the bastion server, then you will be able to deploy your application in the DMZ.
 
 
-
-### Important
-
-Team members should have **Edit Deploy Gateways** access rights to be able to use the deployment gateway.
+#### Important
+<div class="notice notice-warning"><p>Team members must have **Edit Deploy Gateways** access rights to be able to use the deployment gateway.</p></div>
 
 
-
-## How to deploy your application behind the gateway server
+## How to deploy your application behind a gateway server
 
 Gateway management is available through [toolbelt](/{{page.collection}}/references/toolbelt.html#gateway-management) .
 
@@ -56,6 +52,19 @@ After the deployment is finished you can invalidate the gateway or leave it unti
 ```shell
 $ cx gateways close --name aws_bastion
 ```
+
+## Adding servers behind an on-premises gateway
+
+You can add [registered servers](/rails/how-to-guides/deployment/registered-servers.html#register-a-server) to Cloud 66 via an on-premises gateway server as long as:
+
+1. The registered servers are on the same network as the gateway
+2. You are deploying a Rails application
+
+To add a server behind your gateway:
+
+1. SSH to the server and run the registered server [registration script](/rails/how-to-guides/deployment/registered-servers.html#register-a-server) **with** the `--header X-Fixed-IP:123.123.123.123` option - where `X-Fixed-IP` is set to the IP address that the gateway will use to access the server (usually the private IP address of the server).
+2. Set up the gateway server and configure your application to use it via the manifest as specified above
+3. Open the gateway and add the newly registered server to your application. Because the application is configured to use the gateway, it will go through the gateway and then direct requests to the IP address under `X-Fixed-IP`.
 
 
 ## Accessing your servers behind the gateway server

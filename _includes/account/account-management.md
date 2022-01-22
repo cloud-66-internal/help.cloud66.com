@@ -12,12 +12,26 @@ You can do this via the *Account Settings* page described above. For detailed he
 
 ## Organizations
 
-When you sign up for Cloud 66 you will have your own organization even if you sign up to join a team. To switch your organization, use the dropdown menu in the top right corner of your Cloud 66 account, and simply select the name of the organization you would like to switch to.
+Organizations are the primary organizational unit of Cloud 66 accounts. Organizations contain all the other elements of a Cloud 66 account including teams, applications, settings, payment details etc.
+
+Every Cloud 66 account belongs to its own organization - even if that account only signed up to work in a single team. When you join a team, you are also joining the organization of the account that "owns" that team.
+
+To switch between organizations, use the dropdown menu in the top right corner of your Cloud 66 account, and select the name of the organization you would like to switch to.
 
 #### Note
-<div class="notice notice-warning"><p>
+<div class="notice notice"><p>
 If you are only part of your default (account owner) organization, you will not see this dropdown.
 </p></div>
+
+
+### Adding another organization to your account
+
+Organizations can only be owned by a single Cloud 66 account with a unique email address (i.e. an address not already used by another Cloud 66 account). If you need to maintain separate organizations for practical or regulatory purposes, you should:
+
+1. Sign up for an entirely new Cloud 66 account using a new (unique) email address
+2. Create a new team in your new account (be sure to name it distinctly to avoid confusion between organizations)
+3. Add your other Cloud 66 account as a team member via their email address, as well as any other team members as needed.
+{% if include.product != 'skycap' %}4. [Transfer across applications](/{{page.collection}}/account/application-transfer.html#transferring-an-application) from your other account (if needed), or build a new application in your new organization{% endif %}
 
 ## Service accounts
 

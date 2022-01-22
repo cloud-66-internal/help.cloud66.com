@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Using common development tools with Skycap"
 lead: How to use dev tools with Skycap

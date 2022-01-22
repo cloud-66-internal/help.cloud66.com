@@ -4,7 +4,7 @@ We strongly recommend monitoring the resource usage of your servers - particular
 
 If you need additional detail or better reporting, we recommend implementing one of the many excellent cloud reporting solutions. 
 
-Cloud 66 essentially supports any third-party resource monitoring solution that is compatible with servers running Ubuntu 16.04 and above. We have listed some commonly used solutions below, but this list is not exhaustive. 
+Cloud 66 essentially supports any third-party resource monitoring solution that is compatible with servers running Ubuntu 18.04 and above. We have listed some commonly used solutions below, but this list is not exhaustive. 
 
 ## Adding a monitoring service to your app
 

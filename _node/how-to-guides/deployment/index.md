@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How-to Guides: Deployment"
 lead: How to properly use Cloud 66 for Node

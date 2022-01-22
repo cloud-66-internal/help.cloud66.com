@@ -71,7 +71,7 @@ To enable replication for a single application, you need to scale up to create a
 
 ### Between database groups
 
-Please see our full guide on database groups for details on how this works.
+Please see our [guide to database groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html) for details on how this works.
 
 ### Between applications
 
@@ -97,7 +97,7 @@ To disable replication between applications:
 From time-to-time your slave database may go out of sync with its master. You can re-synchronize a slave in two ways:
 
 - Via the Dashboard (click through to the detail page for the slave and then click *Resync Slave*)
-- Via the Cloud 66 Toolbelt's [database management commands](/{{page.collection}}/references/toolbelt.html#database-management).
+- Via the Cloud 66 Toolbelt's [database management commands](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#databases-promote-slave).
 
 
 

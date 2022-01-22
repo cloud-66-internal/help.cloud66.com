@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "How-To Guides for Skycap Formations"
 lead: How to use Formations in Skycap

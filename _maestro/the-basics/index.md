@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "The Basics"
 lead: "Understanding the concepts and terminology used in these help docs"

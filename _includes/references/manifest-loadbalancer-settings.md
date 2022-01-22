@@ -37,7 +37,7 @@ The following settings are available via the Manifest file:
   <tr>
     <td><code>httpchk</code></td>
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The URL visited to check your server health</td>
+    <td>The URL visited to <a href="/{{page.collection}}/how-to-guides/add-ins/load-balancer.html#automatic-endpoint-test">check your server health</a></td>
   </tr>
   <tr>
     <td><code>wait_after_adding_servers</code></td>
@@ -88,7 +88,7 @@ The following settings are available via the Manifest file:
   <tr>
     <td><code>httpchk</code></td>
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The URL visited to check your server health</td>
+    <td>The URL visited to <a href="/{{page.collection}}/how-to-guides/add-ins/load-balancer.html#automatic-endpoint-test">check your server health</a></td>
   </tr>
   <tr>
     <td><code>wait_after_adding_servers</code></td>
@@ -189,7 +189,7 @@ The following **HAproxy settings** are available via the Manifest file:
   <tr>
     <td><code>httpchk</code></td>
     <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
-    <td>The URL visited to check your server health</td>
+    <td>The URL visited to <a href="/{{page.collection}}/how-to-guides/add-ins/load-balancer.html#automatic-endpoint-test">check your server health</a></td>
   </tr>
   <tr>
     <td><code>wait_after_adding_servers</code></td>
@@ -253,7 +253,7 @@ The following settings are available via the Manifest file:
   <tr>
     <td><code>httpchk</code></td>
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The URL visited to check your server health</td>
+    <td>The URL visited to <a href="/{{page.collection}}/how-to-guides/add-ins/load-balancer.html#automatic-endpoint-test">check your server health</a></td>
   </tr>
   <tr>
     <td><code>wait_after_adding_servers</code></td>

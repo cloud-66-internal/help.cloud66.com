@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Account management"
 lead: "Integrating Cloud 66 for Rails with popular CI/CD services"

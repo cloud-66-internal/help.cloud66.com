@@ -24,6 +24,24 @@ If you're looking for the Manifest settings for [data, caching & storage compone
   </tr>
 </thead>
 <tbody>
+   <tr>
+    <td><code>activeprotect</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The parent node for ActiveProtect settings (see <code>whitelist</code> and <code>http_ban_rate</code> below)</td>
+    <td>All</td>
+  </tr>
+    <tr>
+    <td><code>activeprotect / whitelist</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>A comma-separated whitelist of IPs that should be ignored by your ActiveProtect configuration. Must be nested under <code>activeprotect</code>.</td>
+    <td>All</td>
+  </tr> 
+ <tr>
+    <td><code>activeprotect / http_ban_rate</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>Set the threshold of *requests per minute* from a single IP address. The default is <code>2000</code>. Must be nested under <code>activeprotect</code>.</td>
+    <td>All</td>
+  </tr>
   <tr>
     <td><code>docker_version</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
@@ -48,17 +66,31 @@ If you're looking for the Manifest settings for [data, caching & storage compone
     <td>Set the number of old images to save on your servers (besides the running image). Defaults to <code>2</code>.</td>
     <td>All</td>
   </tr>
+<tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
+  </tr>
   <tr>
     <td><code>nameservers</code></td>
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>Set DNS servers for your application.  Note that if you specify empty array i.e <strong>[ ]</strong>, it won't add any nameserver to your servers. Default is <code>[ 8.8.8.8, 8.8.4.4 ]</code>
+    <td>Set DNS servers for your application.  Note that if you specify empty array i.e <strong>[ ]</strong>, it won't add any nameserver to your servers. Default is an empty array: <code>[ ]</code>
+</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td><code>network</code> / <code>mode</code></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+<td>
+Specifies whether your servers should communicate over <code>private</code> or <code>public</code> IP addresses. Defaults to <code>private</code> if your servers are <em>either</em> all cloud <em>or</em> all <a href="/{{page.collection}}/how-to-guides/deployment/registered-servers.html">Registered</a>. If your application uses a <em>mix</em> of cloud and Registered servers, the default will be <code>public</code>.    
 </td>
     <td>All</td>
   </tr>
   <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts your Rails app. Accepted values: <code>ubuntu1604</code> or <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts your Rails app. Accepted values: <code>ubuntu1804</code> or <code>ubuntu2004</code></td>
     <td>All</td>
   </tr>
   <tr>
@@ -408,6 +440,12 @@ A Rails application type in the manifest file gives you fine control over things
 </td>
     <td>All</td>
   </tr>
+ <tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
+  </tr>
   <tr>
     <td><code>keep_releases</code></td>
      <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
@@ -429,16 +467,24 @@ A Rails application type in the manifest file gives you fine control over things
     <td>All</td>
   </tr>
   <tr>
-    <td><code>nameservers</code></td>
+    <td><code><a id="definition-operating-system"></a>nameservers</code></td>
         <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>Set DNS servers for your application.  Note that if you specify empty array i.e <strong>[ ]</strong>, it won't add any nameserver to your servers. Default is <code>[ 8.8.8.8, 8.8.4.4 ]</code>
+    <td>Set DNS servers for your application.  Note that if you specify empty array i.e <strong>[ ]</strong>, it won't add any nameserver to your servers. Default is an empty array: <code>[ ]</code>
 </td>
     <td>All</td>
   </tr>
   <tr>
+    <td><code>network</code> / <code>mode</code></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+<td>
+Specifies whether your servers should communicate over <code>private</code> or <code>public</code> IP addresses. Defaults to <code>private</code> if your servers are <em>either</em> all cloud <em>or</em> all <a href="/{{page.collection}}/how-to-guides/deployment/registered-servers.html">Registered</a>. If your application uses a <em>mix</em> of cloud and Registered servers, the default will be <code>public</code>.    
+</td>
+    <td>All</td>
+  </tr>
+<tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts your Rails app. Accepted values: <code>ubuntu1604</code> or <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts your Rails app. Accepted values: <code>ubuntu1804</code> or <code>ubuntu2004</code></td>
     <td>All</td>
   </tr>
   <tr>

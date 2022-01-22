@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Integration guides"
 lead: "Integrating Cloud 66 for Node with popular CI/CD services"

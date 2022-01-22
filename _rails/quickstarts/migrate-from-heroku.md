@@ -56,11 +56,13 @@ We also have a guide to [accessing your Git repository](/{{page.collection}}/how
 
 Once your code is deployed, you'll need to migrate your data across. The process differs for PostgreSQL and MySQL databases:
 
-**PostgreSQL**  
+#### PostgreSQL
 
 From your Heroku toolbelt, create a database backup URL by running `heroku pgbackups:url`. Next, visit your Application Overview and click the _Import Heroku data_ link. Paste the URL provided by the toolbelt into the field, and click _Import Heroku data_.
 
-**MySQL**  
+<div class="notice"><p>The <em>Import Heroku Data</em> button will disappear 2 weeks after you set up your app. If you need to access it, add <code>/heroku_import</code> to the end of your app's Dashboard URL. For example <code>https://app.cloud66.com/stacks/XXXXX/heroku_import</code></p></div>
+
+#### MySQL
 
 Start by dumping your existing database. Refer to the [ClearDB documentation for common problems](http://www.cleardb.com/blog/entry?id=common-problems-2).
 
@@ -68,7 +70,7 @@ Start by dumping your existing database. Refer to the [ClearDB documentation for
 $ mysqldump -u [username] -p[password] [dbname] > backup.sql 
 ```
 
-Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/{{page.collection}}/references/toolbelt.html#upload) to upload the file to your application database server. Remember to replace the fields below with your values.
+Once you have a MySQL dump file, use the [Cloud 66 toolbelt](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#upload) to upload the file to your application database server. Remember to replace the fields below with your values.
 
 ```bash
 $ cx upload -s "[app_name]" --server [database_server_name] backup.sql /tmp/backup.sql
@@ -97,7 +99,7 @@ Once you're ready to serve traffic from your Cloud 66 application, you need to d
 
 ### Web server and Procfile
 
-By default, Cloud 66 will deploy your application with Phusion Passenger, but you can also choose a [custom Rack server](/{{page.collection}}/how-to-guides/deployment/shells/nginx-modules.html#passenger) like [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html), [Thin](/rails/how-to-guides/rack-servers/thin-rack-server.html) or [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html). You may have a `web` entry in your Procfile to do this on Heroku. Cloud 66 ignores this entry to avoid compatibility issues.
+By default, Cloud 66 will deploy your application with Phusion Passenger, but you can also choose a custom Rack server like [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html), [Thin](/rails/how-to-guides/rack-servers/thin-rack-server.html) or [Unicorn](/rails/how-to-guides/rack-servers/unicorn-rack-server.html). You may have a `web` entry in your Procfile to do this on Heroku. Cloud 66 ignores this entry to avoid compatibility issues.
 
 To run a custom web server, we require a `custom_web` entry. It is important to set this before analyzing your application, to avoid building the application with Passenger.
 

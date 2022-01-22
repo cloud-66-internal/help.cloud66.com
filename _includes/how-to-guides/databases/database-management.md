@@ -1,9 +1,8 @@
-
 ## About deploying databases
 
 We currently support the following databases, with no need for additional configuration after deployment.
 
-* MySQL (or Percona if [configured via Manifest](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html#mysql))
+{% if include.product != 'maestro' %}* MySQL (or Percona if [configured via Manifest](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html#mysql)){% endif %}{% if include.product == 'maestro' %}* MySQL (or Percona if [configured via Manifest](/maestro/how-to-guides/build-and-config/building-a-manifest-file.html#mysql)){% endif %}
 * PostgreSQL
 * MongoDB
 * Redis
@@ -13,19 +12,34 @@ We currently support the following databases, with no need for additional config
 * GlusterFS
 * InfluxDB
 
-{%if page.collection=='rails' %}For Rack-based stacks, Cloud 66 automatically detects whether your application relies on a database or not during your code analysis. This is based on a combination of your Gemfile and your `database.yml` or `mongoid.yml` files.
-
+{%if page.collection =='rails' %}For Rack-based stacks, Cloud 66 automatically detects whether your application relies on a database or not during your code analysis. This is based on a combination of your Gemfile and your `database.yml` or `mongoid.yml` files.
 {%endif%}
+{%if page.collection =='maestro' %}
+When creating a Maestro application, you can add as many databases as you need in your [service configuration](/maestro/how-to-guides/build-and-config/docker-service-configuration.html#database-configurations) during the application build.
+{%endif%} 
 
-After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. If you haven't specified a username and password for your database, Cloud 66 will automatically generate these credentials for you. They will be available as environment variables and your application will be configured to use them.
+After you have analyzed your code, ensure that your desired database type is displayed in the _About your app_ section of the analysis results. 
 
-{%if page.collection=='rails' %}
-#### Note 
-<div class="notice notice-warning"><p>If your <code>database.yml</code> file has a <code>url</code> defined, we will assume that you are using <strong>an external (self-managed) database</strong>, and will follow that URL accordingly. This also means we <strong>won't</strong> set any of the database variables (such as username and password) the way we would normally do.</p></div>
+{% if page.collection =='rails' %}
+<div class="notice" markdown="1">Cloud 66 supports multiple databases for Rails (i.e. multiple databases with Active Record). Please read our [MultiDB for Rails guide](/rails/how-to-guides/databases/rails-multidb.html) to learn how to configure this feature.
+</div>
+{% endif %} 
+
+### Database authentication
+
+When we deploy a database we automatically generate the required users and passwords to allow authentication. You can find these values via your Dashboard in the [detail page of any database server](/{{page.collection}}/how-to-guides/databases/shells/connect-db-servers.html#finding-database-credentials). 
+
+They will be available as environment variables and your application will be configured to use them.
+
+{%if page.collection == 'rails' %}
+If you'd prefer to manage your users and password manually (i.e. your config files), you can [prevent your configs from being modified](/rails/how-to-guides/databases/tamper-with-yaml.html).
+
+<div class="notice notice-warning" markdown="1">⚠️ If your `database.yml` file has a `url` defined, we will assume that you are using an **external (self-managed) database**, and will follow that URL accordingly. This also means we **won't** set any of the database variables (such as username and password) the way we would normally do. You will need to set these yourself - either in your YAML config file, or by manually adding environment variables (see below).
+</div>
 
 ### Managing YAML configs
 
-A Rails app must have either a `config/database.yml` file or `config/mongoid.yml` in order to work on Cloud 66. We will create these files automatically if they don't exist. 
+A Rails app must have either a `config/database.yml` file or `config/mongoid.yml` in order to work on Cloud 66. We will create these files automatically if they don't exist. We will update any existing files with new values (for example passwords) as required. You can [turn this feature off](/rails/how-to-guides/databases/tamper-with-yaml.html) if needed. (See [below](#environment-variables-during-deployment) for more on env vars)
 
 If you want to specify a different DB config per environment, you can name the files `config/database.yml.environment-name` (e.g. `config/database.yml.dev`)
 
@@ -36,13 +50,83 @@ We will prioritise these configs as follows:
 1. Files ending `.cloud66`
 2. Files ending with a `.environment-name`
 3. The standard YAML config file
+
+### Environment variables during deployment
+
+When you set up an application on Cloud 66, we detect its database type(s) (from your code) and generate a set of variables for things like `username` and `password` and `URL`. We only generate these "analyzed variables" **after** you have confirmed that we will be managing the database(s). 
+
+You can see a list of these variables during application creation by clicking on the *Add Environment Variables* button (in the yellow **Review your Rails application** box) . You will see the list of analyzed variables for your database(s) at the top of the panel.
+
+For databases that we manage, we will generate all of these variables, and replace any existing variables you have in your YAML config files unless you [turn the auto-replacement feature off](/rails/how-to-guides/databases/tamper-with-yaml.html). (You can also override the values of these variables manually, one by one, if you wish - see below)
+
+If your application uses an externally hosted (self-managed) database, **we will not generate any of the analysed variables**. If your config files rely on environment variables, you will need to set these manually before you deploy, or we will not be able to connect to your database. 
+
+### Setting variables manually (overriding)
+
+To add your own values to the analyzed variables, click on the *Add Environment Variables* button and then click the *Override* link next to each of the variables you wish to update. Remember, for **external databases**, we will discard any variables which do not have values set manually.
 {% endif %}
+{%if page.collection =='maestro' %}
+## Connecting your app to your DB in Maestro
+
+Databases in Maestro run as separate components and aren't containerized. Even though they may be running on the same private network as your cluster servers, you will not be able to connect to them via localhost because of the nature of containers (which are, by definition, abstracted from operating the system).
+
+Instead, we we automatically create a Kubernetes services for each DB that connects out from your cluster to the database server(s). To see these on your cluster, you can list the namespaces and then select your namespace and list the services associated with it with the following commands:
+
+```bash
+$ kubectl get namespaces
+$ kubectl -n <your-namespace> get svc
+```
+
+This will show you all the services running, some of which will be your databases. 
+
+### Service names for database groups
+
+If your application has two or more [database groups](/maestro/how-to-guides/databases/attaching-multiple-databases.html), your Kubernetes database services will inherit those names. For example, if you have three MySQL database groups named `main`, `spare` and `archive` then the Kubernetes services will be named:
+
+- mysql-main
+- mysql-spare
+- mysql-archive
+
+If one of these groups is set as your "[primary](/maestro/how-to-guides/databases/attaching-multiple-databases.html#understanding-primary-database-groups)" then it will use the default service name (`mysql`) instead of its group-specific name.
+
+### Connection strings in Maestro
+
+A typical connection string might have:
+
+- The protocol
+- The username and password (where required)
+- The name of the Kubernetes service, including database groups (e.g. `mongodb-spare`)
+- The name of the DB server (e.g. `mongo_production_1`)
+
+So to connect to a MongoDB server named `mongo_production_1` and running in your app namespace as `mongodb-spare` you would use something like:
+
+```
+$ mongodb://mongodb-spare/mongo_production_1
+```
+
+A similar setup for a Postgres server would look something like this:
+
+```
+$ postgresql://username:password@service_name/database
+```
+
+## Connecting your app to your DB in Maestro V1
+
+To connect to a database in Version 1 of Maestro, you should use its ElasticDNS address. Please read our [full guide on ElasticDNS](/maestro/how-to-guides/build-and-config/service-network-configuration.html#elasticdns) for more details.
+{% endif %}
+
 
 ## Database deployment types
 
 ### No database (external)
-This option allows you to deploy your application without a database managed by Cloud 66, and is ideal for externally hosted databases.
-Please note that if there is no connectivity to your database, or your database host is not configured correctly, the deployment will fail. {%if page.collection=='rails' %}For Rails apps, if you have a `url` set in your `database.yml` then we will assume that you are using an external DB.{% endif %}
+
+This option allows you to deploy your application without a database managed by Cloud 66, and is ideal for externally hosted databases. 
+
+{%if page.collection=='rails' %}For Rails apps, if you have a `url` set in your `database.yml` then we will assume that you are using an external DB. You will need to [set your own env vars](#environment-variables-during-deployment) during deployment, to ensure we can connect to it.{% endif %}
+
+You can also configure an external database via your [Manifest file](/{{page.collection}}/references/manifest-database-settings.html#specifying-external-databases-via-your-manifest) by specifying the `server` node as `external`. 
+
+Please note that if there is no connectivity to your external database, or your external database host is not configured correctly, the deployment will fail.
 
 ### Local database
 This option deploys your chosen database to the same server as your web server - this is intended primarily for development, as running your database locally in production is not advised. In this case, your application database configuration will be amended to target your local database server. If you scale up your web server, these settings will also be amend automatically to reflect your database configuration.
@@ -67,7 +151,13 @@ You can control your Rails database migrations by setting the `run.deploy.comman
 $ cx settings set -s my_stack run.deploy.command true
 ```
 
-When you have disabled `run.deploy.command` in [Application settings](/{{page.collection}}/references/toolbelt.html#settings-variables), you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
+When you have disabled `run.deploy.command` in [Application settings](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#settings-set), you still have the option to run migrations on a one-off deployment by clicking _Deploy_ -> _Deploy with options_ and selecting _Run database migrations_.
+
+## The Strong Migration gem
+
+Sometimes operations can cause database migrations to lock the entire database for minutes at a time - even if the structural change is simple, or made to a relatively small table. If you'd like to understand the mechanisms behind this, we recommend reading this excellent [blog post](https://medium.com/doctolib/stop-worrying-about-postgresql-locks-in-your-rails-migrations-3426027e9cc9). 
+
+To mitigate the potential for this to happen, we recommend including the [Strong Migration](https://github.com/ankane/strong_migrations) gem in your application. This will catch any potentially unsafe migrations and suggest how to avoid or reduce the risk.
 {%endif%}
 
 ## Customize your database configuration
@@ -83,9 +173,8 @@ Editing and committing your database CustomConfig will perform the following ste
 - Upload the configuration to the server
 - Restart your database
 
-### Warning
 <div class="notice notice-warning">
-<p>A bad database configuration might stop your database from working. Take extra care to make sure the configuration is correct.</p>
+<p>🚨 A bad database configuration might stop your database from working. Take extra care to make sure the configuration is correct.</p>
 </div>
 
 ### Database customization variables

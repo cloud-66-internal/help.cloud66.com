@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Reference guides"
 lead: "In depth documentation on Cloud 66 for Node"

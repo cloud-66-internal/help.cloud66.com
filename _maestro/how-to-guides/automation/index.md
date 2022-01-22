@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Maestro: Automation"
 lead: How to automate management and monitoring tasks for your application

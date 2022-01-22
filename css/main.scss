@@ -269,12 +269,12 @@ hr.nav-hr {
     background:  transparent url('/images/ui/skycap_logo.svg') no-repeat 18px 8px;
     background-size: 14px;
 }
-#nav-link-meastro {
+#nav-link-maestro {
     background:  transparent url('/images/ui/maestro_logo.svg') no-repeat 18px 8px;
     background-size: 14px;
 }
-#nav-link-docker {
-    background:  transparent url('/images/ui/docker_logo.svg') no-repeat 18px 8px;
+#nav-link-prepress {
+    background:  transparent url('/images/ui/prepress_logo.svg') no-repeat 18px 8px;
     background-size: 15px;
 }
 #nav-link-habitus {
@@ -319,8 +319,8 @@ hr.nav-hr {
     background-size: 16px;
     padding-left: 24px;
 }
-#legacy_docker-product-heading {
-    background:  transparent url('/images/ui/docker_logo.svg') no-repeat 0 4px;
+#prepress-product-heading {
+    background:  transparent url('/images/ui/prepress_logo.svg') no-repeat 0 4px;
     background-size: 18px;
     padding-left: 24px;
 }
@@ -1356,12 +1356,12 @@ body.Body--home #search-query-nav {
     background:  transparent url('/images/ui/skycap_logo.svg') no-repeat 0 8px !important;
     background-size: 17px !important;
 }
-.link-icon-meastro {
+.link-icon-maestro {
     background:  transparent url('/images/ui/maestro_logo.svg') no-repeat 0 8px !important;
     background-size: 17px !important;
 }
-.link-icon-docker {
-    background:  transparent url('/images/ui/docker_logo.svg') no-repeat 0 8px !important;
+.link-icon-prepress {
+    background:  transparent url('/images/ui/prepress_logo.svg') no-repeat 0 8px !important;
     background-size: 17px !important;
 }
 .link-icon-habitus {
@@ -1450,17 +1450,11 @@ body.Body--home #search-query-nav {
 .Product-topBar--node {
     background: #80BE42;
 }
-.Product-topBar--habitus {
-    background: #46966F;
+.Product-topBar--prepress {
+    background: #087C54;
 }
-.Product-topBar--copper {
+.Product-topBar--toolbelt {
     background: #4A90E2;
-}
-.Product-topBar--starter {
-    background: #357494;
-}
-.Product-topBar--alterant {
-    background: #18BC9C;
 }
 
 /*
@@ -1600,8 +1594,8 @@ div.st-page a:only-child {
     background:  transparent url('/images/ui/node_logo.svg') no-repeat 0 0;
     background-size: 13px !important;
 }
-.SearchResults-ico--legacy_docker {
-    background:  transparent url('/images/ui/docker_logo.svg') no-repeat 0 2px;
+.SearchResults-ico--prepress {
+    background:  transparent url('/images/ui/prepress_logo.svg') no-repeat 0 2px;
     background-size: 13px !important;
 }
 .SearchResults-ico--community {
@@ -1725,9 +1719,9 @@ div.st-page a:only-child {
         fill: #80BE42;
     }
 }
-.NavCats--docker {
+.NavCats--toolbelt {
     .Media-figure {
-        fill: #4FA4DA;
+        fill: #4A90E2;
     }
 }
 

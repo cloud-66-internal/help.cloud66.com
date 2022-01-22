@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Installing PostGIS
 categories: how-to-guides/databases
-order: 15
+order: 50
 lead: "How to install PostGIS on your Postgres database"
 legacy: false
 tags: ["postgresql","customization"]

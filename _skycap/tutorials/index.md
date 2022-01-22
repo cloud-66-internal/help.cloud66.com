@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Skycap Tutorials"
 lead: "Learn about Cloud 66 by exampls"

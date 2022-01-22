@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Extending Maestro with Add-ins"
 lead: How to use Add-ins for Maestro

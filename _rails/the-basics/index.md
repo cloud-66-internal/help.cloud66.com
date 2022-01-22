@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "The Basics"
 lead: "In depth understanding of Cloud 66 concepts"

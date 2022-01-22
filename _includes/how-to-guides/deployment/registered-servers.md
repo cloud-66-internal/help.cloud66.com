@@ -39,10 +39,23 @@ To add tags to the registered servers, use the `tags` option:
 $ cx register-server --org="My Team" --server=197.23.65.11 --user=root --tags="dc-1,az US"
 ```
 
+## Adding servers behind a gateway
+
+You can add registered servers to Cloud 66 via an on-premises [gateway server](/{{page.collection}}/how-to-guides/deployment/deployment-gateway.html) as long as:
+
+1. The registered servers are on the same network as the gateway
+2. You are deploying a Rails application
+
+To add a server behind your gateway:
+
+1. SSH to the server and run the registered server [registration script](#register-a-server) **with** the `--header X-Fixed-IP:123.123.123.123` option - where `X-Fixed-IP` is set to the IP address that the gateway will use to access the server (usually the private IP address of the server).
+2. Set up the gateway server and configure your application to use it via the manifest as specified above
+3. Open the gateway and add the newly registered server to your application. Because the application is configured to use the gateway, it will go through the gateway and then direct requests to the IP address under `X-Fixed-IP`.
+
 ## Server requirements
 
 {% if include.product == 'maestro' %}- For **Kubernetes (Maestro) clusters**, we strongly recommend that your servers meet [these mininum specs](/maestro/references/minimum-specs-kubernetes.html) to be able to handle the additional load required by the platform.{% endif %}
-- **Operating system**: We currently support **Ubuntu 16.04** and **Ubuntu 18.04**. The OS needs to be *freshly installed* on your server.
+- **Operating system**: We currently support **Ubuntu 18.04** and **Ubuntu 20.04**. The OS needs to be *freshly installed* on your server.
 - **Connection**: For security reasons, Cloud 66 only connects to your server using your secure keys on **port 22**.
 - **Sudo**: As Cloud 66 connects to your server and provisions applications from scratch, administrator permissions are sometimes necessary. Therefore our script creates a new user to use for deployment that is a member of the sudoers group and that does not require a password to invoke sudo.
 - **Bash**: We currently only support Bourne-again shell (Bash). The error `sh: n: source: not found` during deployment may arise if you are not using the Bash shell.
@@ -63,6 +76,8 @@ If your application needs to accept connections from the public web you will als
 If your server is in a cloud with native security groups (such as AWS Security Groups) then you must manually configure them such that your registered servers are able to talk to each other and Cloud 66 via the ports listed above. 
 
 {% if include.product == 'maestro' %}All servers must be allowed to communicate inside the security group on TCP port `6783`, which is needed to create the overlay network (Weave) for [CSv1](/maestro/the-basics/about-maestro.html#version-1-vs-version-2) applications.{% endif %} 
+
+{% include general/do_not_configure_servers_manually.html product = page.collection %}
 
 ## Technical considerations
 

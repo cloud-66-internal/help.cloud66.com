@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: section
 template: one-col
 title:  "Policies &amp; Specifications"
 lead: "Useful Resources About Cloud 66"

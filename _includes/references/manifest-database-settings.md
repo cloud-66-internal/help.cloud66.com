@@ -4,6 +4,16 @@ This reference doc details all the Manifest settings for **data**, **caching** a
 
 If you're looking for the Manifest settings for [webservers & frameworks](/{{page.collection}}/references/manifest-web-settings.html) or [load balancers](/{{page.collection}}/references/manifest-loadbalancer-settings.html), please see our respective reference documents for those components.
 
+## Specifying external databases via your manifest
+
+If your app uses databases that aren't managed by Cloud 66 you can still specify them via your Manifest. To set a database as external via your manifest, use the following syntax:
+
+```yaml
+# For example, an external MySQL server
+mysql: 
+  server: external
+```
+
 ### Key to table headings
 
 * **Option** - the name of the setting as used in the YAML of your Manifest file
@@ -27,21 +37,27 @@ The following settings are available via the Manifest file:
 </thead>
 <tbody>
   <tr>
-    <td><code>iam_instance_profile_name</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
-    <td>AWS</td>
-  </tr>
-  <tr>
     <td><code>groups</code></td>
     <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
     <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
   <td>All</td>
   </tr>
   <tr>
+    <td><code>iam_instance_profile_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
+    <td>AWS</td>
+  </tr>
+<tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
+  </tr>
+  <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts ElasticSearch. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts ElasticSearch. Accepted values <code>ubuntu1804</code>, <code>ubuntu2004</code></td>
   <td>All</td>
   </tr>
   <tr>
@@ -69,26 +85,18 @@ The following settings are available via the Manifest file:
 
 ```yml
 elasticsearch:
-  groups:
-    my_main:
-      configuration:
-        iam_instance_profile_name: elastic-perms
-        version: 0.90.7
-        root_disk_size: 1000
-        root_disk_type: ssd
-    my_spare:
-      configuration:
-        root_disk_size: 100
+  configuration:
+    iam_instance_profile_name: elastic-perms
+    version: 0.90.7
+    root_disk_size: 1000
+    root_disk_type: ssd
 
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## GlusterFS
 
 [GlusterFS](https://www.gluster.org/) is a scalable network filesystem suitable for data-intensive tasks such as cloud storage and media streaming.
-
-<div class="notice notice-warning"><p>
-The version of GlusterFS currently offered via the Cloud 66 Add-in is not supported by Ubuntu 18.04. To use this add-in please ensure that all of your application components are installed on servers running <strong>Ubuntu 16.04</strong>.
-</p></div>
 
 #### Restrictions with GlusterFS
 
@@ -114,6 +122,12 @@ The following settings are available via the Manifest file:
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
+  </tr>
+<tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
   </tr>
   <tr>
     <td><code>mount_targets</code></td>
@@ -255,21 +269,27 @@ The following settings are available via the Manifest file :
 </thead>
 <tbody>
   <tr>
-    <td><code>iam_instance_profile_name</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
-    <td>AWS</td>
-  </tr>
-  <tr>
     <td><code>groups</code></td>
     <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
     <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
     <td>All</td>
   </tr>
   <tr>
+    <td><code>iam_instance_profile_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
+    <td>AWS</td>
+  </tr>
+<tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
+  </tr>
+  <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts MongoDB. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts MongoDB. Accepted values <code>ubuntu1804</code>, <code>ubuntu2004</code></td>
     <td>All</td>
   </tr>
   <tr>
@@ -303,16 +323,12 @@ The following settings are available via the Manifest file :
 
 ```yml
 mongodb:
-  groups:
-    my_mongo:
-      configuration:
-        version: 2.4.8
-        root_disk_size: 100
-        root_disk_type: ssd
-    spare_mongo:
-      configuration:
-        version: 2.4.8
+  configuration:
+    version: 2.4.8
+    root_disk_size: 100
+    root_disk_type: ssd
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## MySQL
 
@@ -337,21 +353,27 @@ The following settings are available via the Manifest file :
     <td>All</td>
   </tr>
   <tr>
-    <td><code>iam_instance_profile_name</code></td>
-    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
-    <td>AWS</td>
-  </tr>
-  <tr>
     <td><code>groups</code></td>
     <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
     <td>Used to define multiple separate <a href="/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html">database groups</a> (of the same type), each with their own configuration. The name of each group in your Manifest must match the names in your Dashboard.</td>
     <td>All</td>
   </tr>
   <tr>
+    <td><code>iam_instance_profile_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
+    <td>AWS</td>
+  </tr>
+<tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
+  </tr>
+  <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts MySQL. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts MySQL. Accepted values <code>ubuntu1804</code>, <code>ubuntu2004</code></td>
     <td>All</td>
   </tr>
   <tr>
@@ -386,22 +408,14 @@ The following settings are available via the Manifest file :
 
 ```yml
 mysql:
-  groups:
-    live-db:
-      configuration:
-        version: 5.7
-        root_disk_size: 100
-        root_disk_type: ssd
-        engine: percona
-        iam_instance_profile_name: mysql-perms
-    upgrade:
-      configuration:
-        version: 8.0
-        root_disk_size: 100
-        root_disk_type: ssd
-        engine: percona
-        iam_instance_profile_name: mysql-perms
+  configuration:
+    version: 5.7
+    root_disk_size: 100
+    root_disk_type: ssd
+    engine: percona
+    iam_instance_profile_name: mysql-perms
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## PostgreSQL
 
@@ -431,10 +445,16 @@ The following settings are available via the Manifest file :
     <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
   </tr>
+<tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
+  </tr>
   <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts PostgreSQL. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts PostgreSQL. Accepted values <code>ubuntu1804</code>, <code>ubuntu2004</code></td>
     <td>All</td>
   </tr>
   <tr>
@@ -480,19 +500,14 @@ The following settings are available via the Manifest file :
 
 ```yml
 postgresql:
-  groups:
-    live-data:
-      configuration:
-        iam_instance_profile_name: psql-perms
-        version: 9.3.4
-        postgis: true
-        root_disk_size: 100
-        root_disk_type: ssd
-    spare-data:
-      configuration:
-        version: 9.3.4
-
+  configuration:
+    iam_instance_profile_name: psql-perms
+    version: 9.3.4
+    postgis: true
+    root_disk_size: 100
+    root_disk_type: ssd
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ### Example YAML for PostGIS
  
@@ -525,6 +540,12 @@ The following settings are available via the Manifest file :
     <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-aws.html#using-iam-instance-profiles-with-your-servers">IAM instance profile</a> that should be used when provisioning this server.</td>
     <td>AWS</td>
   </tr>
+ <tr>
+    <td><code>instance_service_account_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the <a href="/{{page.collection}}/how-to-guides/clouds/cloud-gce.html#using-gce-service-accounts-with-cloud-66">GCE Service Account</a> that should be used when provisioning this server.</td>
+    <td>GCE</td>
+  </tr>
   <tr>
     <td><code>groups</code></td>
     <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
@@ -534,7 +555,7 @@ The following settings are available via the Manifest file :
   <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts Redis. Accepted values <code>ubuntu1604</code>, <code>ubuntu1804</code></td>
+    <td>The version of Ubuntu to install on the server that hosts Redis. Accepted values <code>ubuntu1804</code>, <code>ubuntu2004</code></td>
     <td>All</td>
   </tr>
   <tr>
@@ -569,6 +590,7 @@ redis:
     root_disk_type: ssd
     iam_instance_profile_name: redis-perms
 ```
+If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
 
 ## More on Manifest files
 

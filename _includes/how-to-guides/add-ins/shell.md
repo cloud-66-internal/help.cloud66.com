@@ -22,7 +22,7 @@ You will now see your new job listed in your Application Overview.  You can edit
 
 ## Using parameters
 
-When you are running a job on demand via dashboard or [toolbelt](/{{page.collection}}/references/toolbelt.html#job-management), you can pass it parameters (if it is written to accept them).
+When you are running a job on demand via dashboard or [toolbelt](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#jobs-run), you can pass it parameters (if it is written to accept them).
 
 ### Notation
 
