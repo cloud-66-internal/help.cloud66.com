@@ -61,7 +61,9 @@ You can specify the exact access rights you would like to grant a user per appli
 - Power user
 - Administrator (has all permissions)
 
-The administrator has permissions to everything and the other default roles have the following permissions:
+The **owner** of an account always has the maximum permissions for all applications and does not need to be assigned any roles. 
+
+The Administrator role has permissions to everything and the other default roles have the following permissions:
 
 | Role / Perms | Viewer | Deployer | Dev | Ops | Power |
 | --- | --- | --- | --- | --- | --- |
