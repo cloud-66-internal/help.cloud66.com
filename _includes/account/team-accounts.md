@@ -25,19 +25,118 @@ You can also opt to simply *cc* other email addresses whenever invoices are sent
 
 ### Application users
 
-*Application users* have access rights to applications and different part of the organization under Cloud 66. You can specify the exact access rights you would like to grant to per application by choosing a role for them (you can define a customized role). The available roles for *Application users* are:
+*Application users* have access rights to view and manage applications, and (depending on access level) to manage the entire Cloud 66 account. 
 
-- No role
+There are two levels of permissions:
+
+1. Account-level permissions 
+2. Application (AKA stack) level permissions
+
+### Account-level permissions
+
+These permissions are focused on global account settings like managing users, adding or removing cloud providers and setting notifications.
+
+To set these permissions for a user:
+
+1. Log into your Cloud 66 Dashboard
+2. Click your avatar and then *Account Settings*
+3. Click *Teams*
+4. Click the edit icon next to the user in question
+5. Check or uncheck permissions as needed
+6. Click Save Changes 
+
+You can also use this page to manage application-level permissions (see below). 
+
+### Application-level permissions & roles
+
+Every user has a set of permissions *explicitly* assigned for applications, regardless of their account-level permissions. These are assigned when a user is added. If no permissions are added, the user will have no access to applications. Application permissions are set via roles.
+
+You can specify the exact access rights you would like to grant a user per application by choosing a role for them. The available roles are:
+
+- No role (i.e. not assigned to an app)
 - Viewer
 - Deployer
 - Developer
 - Operation
 - Power user
-- Administrator
+- Administrator (has all permissions)
 
-By definition, any user with access to an application will automatically be given the rights for the lower levels of permissions. For example, a user who can control an application will also be able to deploy and view that same application. You can even customize these pre-defined roles, however, we recommend adding a role for custom permissions.
+The administrator has permissions to everything and the other default roles have the following permissions:
 
-You also have the option of allowing team members to create a new application. The creator of an application becomes its default administrator, although this setting can be changed by the team leader. In addition to this, you can also allow a user to control permissions for others.
+| Role / Perms | Viewer | Deployer | Dev | Ops | Power |
+| --- | --- | --- | --- | --- | --- |
+| View App | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Deploy App |  | ✅ | ✅ | ✅ | ✅ |
+| Edit App |  |  | ✅ | ✅ | ✅ |
+| Shell to Servers |  |  |  | ✅ | ✅ |
+| Delete App |  |  |  |  | ✅ |
+| App Admin |  |  |  |  |  |
+| View service.yml | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Edit service.yml |  |  | ✅ | ✅ | ✅ |
+| View manifest.yml | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Edit manifest.yml |  |  | ✅ | ✅ | ✅ |
+| View Firewall Rules | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Edit Firewall Rules |  |  | ✅ | ✅ | ✅ |
+| View Network Redirects Settings | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Edit Network Redirects Settings |  |  | ✅ | ✅ | ✅ |
+| View Network Traffic Settings |  |  | ✅ | ✅ | ✅ |
+| Edit Network Traffic Settings |  |  | ✅ | ✅ | ✅ |
+| View ActiveProtect | ✅ | ✅ | ✅ | ✅ | ✅ |
+| View Environment Variables | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Edit Environment Variables |  |  | ✅ | ✅ | ✅ |
+| View App Info | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Edit App Info |  |  | ✅ | ✅ | ✅ |
+| View Deploy History | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Revert Deployment |  |  | ✅ | ✅ | ✅ |
+| Edit Notification Channels |  |  |  |  |  |
+| View Live Logs | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Remove Add-ins |  |  | ✅ | ✅ | ✅ |
+| Edit Stack Settings |  |  | ✅ | ✅ | ✅ |
+| Scale Stack |  |  | ✅ | ✅ | ✅ |
+| Download SSH Key |  |  |  | ✅ | ✅ |
+| Download SSL Cert |  |  |  |  |  |
+| Manage Containers |  |  |  |  | ✅ |
+| Access APN |  |  | ✅ | ✅ | ✅ |
+{: .table .table-bordered .table-striped}
+
+These roles can be edited, and custom roles can also be created. We recommend creating custom roles rather than editing the defaults. The account owner always has full access to all settings on all applications.
+
+By definition, any user with access to an application will automatically be given the rights for the lower levels of permissions. For example, a user who can deploy an application will also be able to view the same application. 
+
+### Assigning application roles to a user
+
+To assign a user permissions for an application:
+
+1. Log into your Cloud 66 Dashboard
+2. Click your avatar and then *Account Settings*
+3. Click *Teams*
+4. Click the edit icon next to the user in question
+5. Scroll down to find the application in question and click on the multi-select box
+6. Choose the role you want the user to have for the application
+7. Click Save Changes 
+
+You can also quickly assign a user the same role on **all** your application by clicking on the **Default Roles** multi-select, selecting the desired role and then clicking the *Copy roles to ALL existing Applications* link. This will also set the user to use this default role for any new applications created on the account. 
+
+### Creating and editing roles
+
+You can customize the default permissions for the existing roles (not recommended) or create custom roles for your account.
+
+To create a custom role:
+
+1. Log into your Cloud 66 Dashboard
+2. Click your avatar and then *Account Settings*
+3. Click *Teams*
+4. Click the *Roles & Permissions* tab (top of the main panel)
+5. Click the green + button to add a role
+6. Give it a name and click Save Role
+
+To edit the permissions for a role:
+
+1. Follow 1 - 4 above 
+2. Scroll down and use the dropdown to select the role to edit
+3. Check the boxes next to the permissions you wish to add (or remove)
+
+<div class="notice notice-warning"><p>🚨 Editing the permissions for a role will change the permissions for all existing users assigned that role. Be cautious when doing so.</p></div>
 
 ## Add a new user (team member)
 
