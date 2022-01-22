@@ -167,6 +167,10 @@ If you'd like to specify custom process signals you can do this in [your Manifes
 
 ## Migrating from Bluepill to systemd
 
+<div class="notice notice-danger"><p>
+🚨 systemd is only supported by Ubuntu version 16.04 and up. Please do not attempt to upgrade previous versions to use systemd - it will fail.
+</p></div>
+
 If your servers are currently using Bluepill and you would like to transition to using systemd then please follow this checklist:
 
 1. Ensure none of your process **initialization strings** - including processes for custom web servers - use daemonization flags like `-d` or `-daemonize`.  Using these flag with systemd will cause the process to terminate prematurely. 
