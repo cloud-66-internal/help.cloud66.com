@@ -14,6 +14,8 @@ permalink: /:collection/:path:output_ext
 
 Node for Cloud 66 is designed to be a simple, hands-off solution for deploying Node applications. As such the complexity around exposing and using ports is largely automated and not editable.
 
+By default your Cloud 66 application will be set to listen on port `3000`, so please ensure your application code is configured accordingly.
+
 If you need to use non-standard ports for your application or any of its components, you have two options:
 
 1. Migrate your Node application to [Cloud 66 Maestro](https://www.cloud66.com/containers/maestro/) which is designed for exactly this use case (we'll give you 4 weeks free to test it out)
