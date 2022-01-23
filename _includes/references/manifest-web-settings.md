@@ -90,7 +90,7 @@ Specifies whether your servers should communicate over <code>private</code> or <
   <tr>
     <td><code>operating_system</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The version of Ubuntu to install on the server that hosts your Rails app. Accepted values: <code>ubuntu1804</code> or <code>ubuntu2004</code></td>
+    <td>The version of Ubuntu to install on the server that hosts your app. Accepted values: <code>ubuntu1804</code> or <code>ubuntu2004</code></td>
     <td>All</td>
   </tr>
   <tr>
@@ -267,7 +267,7 @@ cluster:
       perfect_forward_secrecy: true # deprecated
 ```
 
-<div class="notice notice-warning"><p>
+<div class="notice notice-warning"><p markdown="1">
 🚨 Note that Nginx is set using `cluster` not `maestro`.
 </p></div>
 
@@ -300,7 +300,7 @@ cluster:
         headers: 'Custom-Header, Another-Header'
         credentials: true
 ```
-<div class="notice notice-warning"><p>
+<div class="notice notice-warning"><p markdown="1">
 🚨 Note that Nginx is set using `cluster` not `maestro`.
 </p></div>
 
@@ -381,6 +381,21 @@ The following settings are available via the Manifest file:
 </tbody>
 </table>
 
+{% if include.product == 'maestro' %}
+```yaml
+maestro:
+  configuration:
+    activeprotect:
+      health_check:
+        endpoint: '/' # Default is root '/'
+        accept: ["200", "300-399"] # Default is 200
+        timeout: 2 # Default is 5
+        max_redirects: 5 # Default is 3
+        cooldown: 120 # Default is 0 
+```
+{% endif %}
+
+{% if include.product == 'rails' %}
 
 ### Example YAML for post-deployment health check
 
@@ -395,8 +410,6 @@ rails:
         max_redirects: 5 # Default is 3
         cooldown: 120 # Default is 0 
 ```
-
-{% if include.product == 'rails' %}
 
 ## Rails
 
@@ -733,6 +746,7 @@ These checks define tests to confirm whether your application has been successfu
 
 ### Example YAML for Rails Health Checks
 
+{% if include.product == 'rails' %}
 ```yml
   rails:
     configuration:
@@ -744,6 +758,7 @@ These checks define tests to confirm whether your application has been successfu
         accept: ["200", "300-399"]
         timeout: 30
 ```
+{% endif %}
 
 ## Sinatra
 
