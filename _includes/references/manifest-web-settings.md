@@ -244,7 +244,7 @@ The following settings are available via the Manifest file:
 {% if include.product == 'rails' %}
 ### Customizing Nginx in Maestro
 
-Nginx is not hosted in the same logical group as your Maestro app - so it uses the `cluster` node in `manifest.yml` instead of the `maestro` node.
+Nginx uses the `docker` node in `manifest.yml`. See below for examples.
 
 {% endif %}
 
@@ -261,15 +261,11 @@ rails:
 {% endif %}
 {% if include.product == 'maestro' %}
 ```yml
-cluster:
+docker:
   configuration:
     nginx:
       perfect_forward_secrecy: true # deprecated
 ```
-
-<div class="notice notice-warning"><p markdown="1">
-🚨 Note that Nginx is set using `cluster` not `maestro`.
-</p></div>
 
 {% endif %}
 
@@ -291,7 +287,7 @@ rails:
 {% endif %}
 {% if include.product == 'maestro' %}
 ```yml
-cluster:
+docker:
   configuration:
     nginx:
       cors:
@@ -300,10 +296,6 @@ cluster:
         headers: 'Custom-Header, Another-Header'
         credentials: true
 ```
-<div class="notice notice-warning"><p markdown="1">
-🚨 Note that Nginx is set using `cluster` not `maestro`.
-</p></div>
-
 {% endif %}
 {% if include.product == 'rails' %}
 
@@ -383,7 +375,7 @@ The following settings are available via the Manifest file:
 
 {% if include.product == 'maestro' %}
 ```yaml
-maestro:
+docker:
   configuration:
     activeprotect:
       health_check:
