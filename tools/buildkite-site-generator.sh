@@ -21,7 +21,7 @@ set -e
 echo "setting the Gemfile.lock as writable"
 chmod u=rwX,g=rwX,o=rwX "$pwd/Gemfile.lock"
 echo "running the docker jekyll builder"
-docker run --name="jekyll-build" --volume="$pwd:/srv/jekyll" --volume="$pwd/.jekyll-cache:/srv/jekyll/.jekyll-cache" --volume="$pwd:/srv/jekyll/_site" -it jekyll/builder:4 bash -c "jekyll build -d /tmp"
+docker run --name="jekyll-build" --volume="$pwd:/srv/jekyll" --volume="$pwd/.jekyll-cache:/srv/jekyll/.jekyll-cache" -it jekyll/builder:4 bash -c "jekyll build -d /tmp"
 echo "removing existing $site_path"
 rm -rf $site_path
 echo "copying generated files to $site_path"
