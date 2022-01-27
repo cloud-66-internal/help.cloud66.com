@@ -1125,7 +1125,6 @@ maestro:
     - docker
     - example-yaml-for-gateway
     - example-yaml-for-nginx
-    - example-yaml-for-post-deployment-health-check
     - examples-yaml-for-docker
     - gateway
     - key-to-table-headings
@@ -3019,7 +3018,6 @@ node:
     - cors-configuration
     - example-yaml-for-gateway
     - example-yaml-for-nginx
-    - example-yaml-for-post-deployment-health-check
     - gateway
     - key-to-table-headings
     - more-on-manifest-files
@@ -5283,6 +5281,7 @@ rails:
     page: rails/references/manifest-web-settings.html
     page_anchors:
     - cors-configuration
+    - customizing-nginx-in-maestro
     - example-yaml-for-bundle-install-options-in-rails
     - example-yaml-for-gateway
     - example-yaml-for-nginx
