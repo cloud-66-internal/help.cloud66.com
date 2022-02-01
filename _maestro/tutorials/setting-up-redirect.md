@@ -27,7 +27,7 @@ Before you start, please check you have the following:
 ## Accessing redirect settings
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Network Settings*  in the **Application** panel on the right of the screen
+2. Click on *Network*  in the **Application** panel on the right of the screen
 3. Click on the *Redirects* tab at the top of the main panel
 
 You can now use this page to set (or remove) redirects.
