@@ -29,7 +29,7 @@ Before we start you need to look up your current public IP. You can simply googl
 ### Adding and applying the rule
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Network Settings*  in the **Application** panel on the right of the screen
+2. Click on *Network*  in the **Application** panel on the right of the screen
 3. The page will open on the Firewall tab (but note that you can also reach the **Traffic** and **Redirects** pages this way
 4. Click the *Add a new firewall rule* button
 5. This will add a set of input fields that allow you to configure your first rule.
@@ -54,7 +54,7 @@ Note that, unless you have set up an authentication key, your login attempt will
 ## Removing a custom firewall rule
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Network Settings*  in the **Application** panel on the right of the screen
+2. Click on *Network*  in the **Application** panel on the right of the screen
 3. Click the small red icon next to the rule you want to remove
 4. Click *Apply Rules*
 
@@ -66,7 +66,7 @@ Remember to give your application a few minutes to apply the new setting(s).
 If you need to access your server (via SSH or another protocol), there is a quick way to do this without setting a permanent rule:
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Network Settings*  in the **Application** panel on the right of the screen
+2. Click on *Network*  in the **Application** panel on the right of the screen
 3. Click the small plug icon at the top right of the Application Firewall Rules panel
 4. This will automatically fetch your current IP address, but you can also manually enter any IP address
 5. Choose how long the port should be open (10 or 20 mins)
