@@ -4,6 +4,35 @@ We recommend using the [Cloud 66 database backup add-in](/{{page.collection}}/ho
 
 You can restore a backup directly through Cloud66 dashboard backup page. There is a **Restore** button for each backup that will automatically download that backup to your server and restore it. If you'd prefer to do so manually, follow one of the guides below.
 
+## Managed backup disk space requirements
+
+Although managed backups are stored separately from servers, the creation of each backup is run on your database server before the archive is moved to Cloud 66’s managed backup servers.
+
+As such your server requires enough disk space to (temporarily) hold a single database backup. If your server is low on disk space you may encounter an error like this:
+`Not enough free space. You need at least xxx MB free space for this backup`
+
+Before taking backups we calculate the size of your data directory and make sure that your server has **at least twice** that much storage free. This ensures that the backup doesn’t fill up the hard drive entirely. 
+
+We have suggested some methods for adding or clearing up disk space below, but before proceeding we recommend you have a solid grasp on how disks and volumes work in Ubuntu (and Linux in general). This [excellent thread](https://stackoverflow.com/questions/24429949/device-vs-partition-vs-file-system-vs-volume-how-do-these-concepts-relate-to-ea){:target="_blank"}, this [guide to mount command](https://www.computerhope.com/unix/umount.htm){:target="_blank"}, and this [guide to partitions](https://tldp.org/LDP/sag/html/partitions.html){:target="_blank"} explain all the concepts.
+
+### Resolving space issues
+
+There are three main ways to resolve a lack of storage space:
+
+### 1. Add additional disk space to your cloud server
+
+Attach a new disk to your server and mount `"/var/cloud66/backups"` on the new disk. Please remove the existing `/var/cloud66/backups` by running `"sudo rm -rf /var/cloud66/backups"` before mounting `"/var/cloud66/backups"`.
+
+### 2. Clear your server of unneeded files
+
+Your server may have outdated or unneeded files (logs are a common culprit). A handy way to identify these is to use the `ncdu` command - [this comprehensive guide](https://computingforgeeks.com/ncdu-analyze-disk-usage-in-linux-with-ncdu/){:target="_blank"} explains how to install and use `ncdu`.
+
+### 3. Disable backup size checks
+
+If you are confident that you have enough space and the first option is not possible, you can use the [Cloud 66 Toolbelt](https://help.cloud66.com/rails/references/toolbelt/toolbelt-commands.html#settings-set) to run `"cx settings set -s STACK_NAME db.check.backup.size false"` where `STACK_NAME` is the name of your application. This will disable backup size checks.
+
+<div class="notice notice-danger" markdown="1"><p>🚨 If your server does not have enough space to accommodate the backup, this setting could cause the backup to fail, or the server disk to be fully utilised</p></div>
+
 ## Migrating data between applications
 
 You can use automated database backups to migrate data between applications using the Dashboard, but there are some format restrictions when doing so:
