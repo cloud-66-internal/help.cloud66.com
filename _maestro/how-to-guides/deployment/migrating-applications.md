@@ -58,7 +58,7 @@ To add application `B` as a backup to the failover group, edit the related failo
 ### 8. Put the primary application into maintenance mode
 
 - Go to the overview page for application `A`
-- Click on *Network Settings*
+- Click on *Network*
 - Click on the *Redirects* tab
 - Check _"Put application in Maintenance Mode"_ box
 - Click *Apply Redirects*

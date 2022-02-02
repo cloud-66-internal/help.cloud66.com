@@ -31,7 +31,7 @@ In this example we are giving the web server of one application access to all th
 
 1. Open your Cloud 66 [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on the **source** application (the one with the MySQL server)
-3. Click on *Network Settings* in the right-hand panel
+3. Click on *Network* in the right-hand panel
 4. Click on the green *+ Add a new firewall rule* button
 5. In the *From* dropdown, find the name of the **requesting** web server that needs to access the databases and select it.
 6. In the *To* dropdown, select **MySQL Servers**
