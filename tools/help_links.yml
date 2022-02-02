@@ -1004,14 +1004,19 @@ maestro:
   manage_backups:
     page: maestro/how-to-guides/databases/shells/manage-backups.html
     page_anchors:
+    - 1-add-additional-disk-space-to-your-cloud-server
     - 1-using-cloud-66-toolbelt
+    - 2-clear-your-server-of-unneeded-files
     - 2-from-your-cloud-66-dashboard
+    - 3-disable-backup-size-checks
     - 3-via-command-line
     - concatenate-multiple-files
     - downloading-a-backup
     - maestro-product-heading
+    - managed-backup-disk-space-requirements
     - migrating-data-between-applications
     - preparing-files-for-manual-restoration
+    - resolving-space-issues
     - restoring-a-mongodb-backup
     - restoring-a-mysql-binary-backup
     - restoring-a-mysql-text-backup
@@ -1784,7 +1789,7 @@ maestro:
     page_anchors:
     - account-level-permissions
     - add-a-new-user-team-member
-    - application-level-permissions--roles
+    - application-level-permissions-and-roles
     - application-users
     - assigning-application-roles-to-a-user
     - creating-and-editing-roles
@@ -2907,14 +2912,19 @@ node:
   manage_backups:
     page: node/how-to-guides/databases/shells/manage-backups.html
     page_anchors:
+    - 1-add-additional-disk-space-to-your-cloud-server
     - 1-using-cloud-66-toolbelt
+    - 2-clear-your-server-of-unneeded-files
     - 2-from-your-cloud-66-dashboard
+    - 3-disable-backup-size-checks
     - 3-via-command-line
     - concatenate-multiple-files
     - downloading-a-backup
+    - managed-backup-disk-space-requirements
     - migrating-data-between-applications
     - node-product-heading
     - preparing-files-for-manual-restoration
+    - resolving-space-issues
     - restoring-a-mongodb-backup
     - restoring-a-mysql-binary-backup
     - restoring-a-mysql-text-backup
@@ -3556,7 +3566,7 @@ node:
     page_anchors:
     - account-level-permissions
     - add-a-new-user-team-member
-    - application-level-permissions--roles
+    - application-level-permissions-and-roles
     - application-users
     - assigning-application-roles-to-a-user
     - creating-and-editing-roles
@@ -4243,7 +4253,7 @@ prepress:
     page_anchors:
     - account-level-permissions
     - add-a-new-user-team-member
-    - application-level-permissions--roles
+    - application-level-permissions-and-roles
     - application-users
     - assigning-application-roles-to-a-user
     - creating-and-editing-roles
@@ -4751,6 +4761,7 @@ rails:
     - database-deployment-types
     - dedicated-database
     - environment-variables-during-deployment
+    - external-databases
     - local-database
     - managing-yaml-configs
     - no-database-external
@@ -5149,14 +5160,19 @@ rails:
   manage_backups:
     page: rails/how-to-guides/databases/shells/manage-backups.html
     page_anchors:
+    - 1-add-additional-disk-space-to-your-cloud-server
     - 1-using-cloud-66-toolbelt
+    - 2-clear-your-server-of-unneeded-files
     - 2-from-your-cloud-66-dashboard
+    - 3-disable-backup-size-checks
     - 3-via-command-line
     - concatenate-multiple-files
     - downloading-a-backup
+    - managed-backup-disk-space-requirements
     - migrating-data-between-applications
     - preparing-files-for-manual-restoration
     - rails-product-heading
+    - resolving-space-issues
     - restoring-a-mongodb-backup
     - restoring-a-mysql-binary-backup
     - restoring-a-mysql-text-backup
@@ -6011,7 +6027,7 @@ rails:
     page_anchors:
     - account-level-permissions
     - add-a-new-user-team-member
-    - application-level-permissions--roles
+    - application-level-permissions-and-roles
     - application-users
     - assigning-application-roles-to-a-user
     - creating-and-editing-roles
@@ -6342,6 +6358,7 @@ rails:
     - querying-server-metadata
     - rails-product-heading
     - specifiying-app-environment
+    - switching-config-files-during-build
     - targets
     - understanding-hook-points-and-ordering
     - using-command-hooks
@@ -6963,7 +6980,7 @@ skycap:
     page_anchors:
     - account-level-permissions
     - add-a-new-user-team-member
-    - application-level-permissions--roles
+    - application-level-permissions-and-roles
     - application-users
     - assigning-application-roles-to-a-user
     - creating-and-editing-roles
