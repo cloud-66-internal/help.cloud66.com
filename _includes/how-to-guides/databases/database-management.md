@@ -58,7 +58,7 @@ If you are using an external database (i.e. one not managed by Cloud 66), then w
 
 If your `database.yml` file has a `url` defined, we will assume that you are using an external (self-managed) database, and will follow that URL accordingly.
 
-External databases **do not** natively support multiple database config files (e.g. per environment), or files with the `.cloud66` suffix. If you need to maintain separate config files for your external databases, you can achieve the same thing using a [deploy hook](/{{page.collection}}/rails/tutorials/deploy-hooks.html). For example:
+External databases **do not** natively support multiple database config files (e.g. per environment), or files with the `.cloud66` suffix. If you need to maintain separate config files for your external databases, you can achieve the same thing using a [deploy hook](/{{page.collection}}/tutorials/deploy-hooks.html). For example:
 
 ```yaml
 after_checkout:
