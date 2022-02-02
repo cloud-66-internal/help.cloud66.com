@@ -168,7 +168,7 @@ If you'd like to specify custom process signals you can do this in [your Manifes
 ## Migrating from Bluepill to systemd
 
 <div class="notice notice-danger"><p>
-🚨 systemd is only supported by Ubuntu version 16.04 and up. Please do not attempt to upgrade previous versions to use systemd - it will fail.
+🚨 systemd is only supported by Ubuntu version 16.04 and up. As such you cannot migrate servers running 14.04 and below to systemd. Ruby is only compatible with Ruby up to version 2.2 - so you will need to migrate your app to a newer version of Ubuntu before you upgrade.
 </p></div>
 
 If your servers are currently using Bluepill and you would like to transition to using systemd then please follow this checklist:
