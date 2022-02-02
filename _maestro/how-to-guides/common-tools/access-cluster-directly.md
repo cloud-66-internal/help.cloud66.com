@@ -41,7 +41,7 @@ This method downloads a `kubeconfig` file to your computer that allows you to ru
 To set this up, you first need to have Kubernetes installed on your local machine. Once that is done:
 
 1. Open your app in Cloud 66 Dashboard
-2. Click on *Network Settings* in the right-hand panel
+2. Click on *Network* in the right-hand panel
 3. Set up firewall rule that allows access FROM your **own IP address** (or range) TO your **master** server using **TCP** and port **6443**. (If you need help, please read our [Firewall guide](/maestro/tutorials/firewall-rule.html))
 4. Now click through to your master server (click the *Servers* tab on the application overview and then *master*)
 5. Click on the *Download Kubeconfig* button and download the `kubeconfig` file somewhere sensible on your local machine

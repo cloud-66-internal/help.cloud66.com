@@ -47,7 +47,7 @@ To set these permissions for a user:
 
 You can also use this page to manage application-level permissions (see below). 
 
-### Application-level permissions & roles
+### Application-level permissions and roles
 
 Every user has a set of permissions *explicitly* assigned for applications, regardless of their account-level permissions. These are assigned when a user is added. If no permissions are added, the user will have no access to applications. Application permissions are set via roles.
 

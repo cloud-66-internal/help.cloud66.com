@@ -206,7 +206,7 @@ Now that we have our hook code ready, we need to add it to our application. We d
 
 Once you have added the `deploy_hooks.yml` file to your repo you can deploy (or redeploy) your application and glances will be installed during the process. To test that it is installed correctly you can SSH into your server and run `glances` - it should bring up the monitoring interface.
 
-## Installing non-standard versions of packages
+### Installing non-standard versions of packages
 
 If your application depends on a specific version of a Linux package or software library, the best way to ensure the correct version is installed is by using a [deploy hook](https://help.cloud66.com/maestro/tutorials/deploy-hooks.html). 
 
@@ -262,3 +262,20 @@ Two things to take note of here:
 Now that we have our hook code ready, we need to add it to our application. We do this by creating a file in the `/.cloud66` directory of our repo called `deploy_hooks.yml` and dropping in the YAML code we just wrote above. If you're not well versed in YAML, it's often helpful to use an [online linter](http://www.yamllint.com/) to test that your code is valid and conformant. 
 
 Once you have added the `deploy_hooks.yml` file to your repo you can deploy (or redeploy) your application and version 6.9.9-51 of ImageMagick will be installed during the process. To test that it is installed correctly you can SSH into your server and run `identify -version`.
+
+{% if include.product == 'rails' %}
+### Switching config files during build
+
+This hook simply overwrites a standard config file with the config file of your choice at the start of the deployment process. The example is for a `database.yml` but you could use it for any config file.
+
+```yaml
+after_checkout:
+command: mv $STACK_PATH/config/database.yml.cloud66 $STACK_PATH/config/database.yml
+target: rails
+run_on: all_servers
+execute: true
+```
+
+For more info on doing this for external databases, read our separate guide to [database management](/rails/how-to-guides/databases/database-management.html#external-databases).
+
+{% endif %}

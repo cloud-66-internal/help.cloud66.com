@@ -32,7 +32,7 @@ You can also choose not to block traffic coming from Cloudflare edge servers. Cl
 Whitelisting is useful in cases where you need to lock down an application completely and only allow access for a specific IP (or range of IPs). To whitelist an IP, or IP range:
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Network Settings*  in the **Application** panel on the right of the screen
+2. Click on *Network*  in the **Application** panel on the right of the screen
 3. Click on the *Traffic* tab at the top of the main panel
 4. 	Add the IP address or range to the *Allowed Web Sources* field
 5. Click *Review changes* and then *Apply changes*
@@ -53,7 +53,7 @@ IP addresses and ranges can be entered as comma separated lists. For example:
 You can also blacklist specific IPs and/or ranges from visiting the ports mentioned above. To do so:
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Network Settings*  in the **Application** panel on the right of the screen
+2. Click on *Network*  in the **Application** panel on the right of the screen
 3. Click on the *Traffic* tab at the top of the main panel
 4. 	Add the IP address or range to the *Deny Access From* field
 5. Click *Review changes* and then *Apply changes*

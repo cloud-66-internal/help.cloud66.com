@@ -34,8 +34,7 @@ They will be available as environment variables and your application will be con
 {%if page.collection == 'rails' %}
 If you'd prefer to manage your users and password manually (i.e. your config files), you can [prevent your configs from being modified](/rails/how-to-guides/databases/tamper-with-yaml.html).
 
-<div class="notice notice-warning" markdown="1">⚠️ If your `database.yml` file has a `url` defined, we will assume that you are using an **external (self-managed) database**, and will follow that URL accordingly. This also means we **won't** set any of the database variables (such as username and password) the way we would normally do. You will need to set these yourself - either in your YAML config file, or by manually adding environment variables (see below).
-</div>
+<div class="notice notice-warning"><p markdown="1">⚠️ The info above **does not apply to external (self-managed) databases**. See the [dedicated section below](#external-databases) for more details.</p></div>
 
 ### Managing YAML configs
 
@@ -50,6 +49,27 @@ We will prioritise these configs as follows:
 1. Files ending `.cloud66`
 2. Files ending with a `.environment-name`
 3. The standard YAML config file
+
+<div class="notice notice-warning"><p markdown="1">⚠️ The info above **does not apply to external (self-managed) databases**. See the [dedicated section below](#external-databases) for more details.</p></div>
+
+### External databases
+
+If you are using an external database (i.e. one not managed by Cloud 66), then we **won’t** set any of the database variables (such as username and password) the way we would normally do. You will need to set these yourself - either in your YAML config file, or by manually adding environment variables (see below).
+
+If your `database.yml` file has a `url` defined, we will assume that you are using an external (self-managed) database, and will follow that URL accordingly.
+
+External databases **do not** natively support multiple database config files (e.g. per environment), or files with the `.cloud66` suffix. If you need to maintain separate config files for your external databases, you can achieve the same thing using a [deploy hook](/{{page.collection}}/tutorials/deploy-hooks.html). For example:
+
+```yaml
+after_checkout:
+command: mv $STACK_PATH/config/database.yml.cloud66 $STACK_PATH/config/database.yml
+target: rails
+run_on: all_servers
+execute: true
+```
+
+This hook simply overwrites the standard config file with the config file of your choice at the start of the deployment process. Please read our [full guide to deploy hooks](/{{page.collection}}/how-to-guides/deployment/using-deploy-hooks.html) to learn how to implement this hook.
+
 
 ### Environment variables during deployment
 
