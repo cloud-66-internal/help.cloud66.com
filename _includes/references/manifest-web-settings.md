@@ -306,13 +306,13 @@ We automatically install the latest release of Node version 16.x.x when we set u
 ```yml
 rails:
   configuration:
-    node_version: "18"       # will install latest release of v12.x.x
+    node_version: "18"       # will install latest release of v18.x.x
 ```
 
 ```yml
 rails:
   configuration:
-    node_version: "18.1.3"  # will install specific v18.1.3
+    node_version: "18.1"  # will install latest v18.1.x
 ```
 
 If you need a newer version of Node, you can install one using the same method above. We support any version of Node that is supported by our [version manager](https://github.com/tj/n) (which itself supports the [Node distribution list](https://nodejs.org/dist/)).

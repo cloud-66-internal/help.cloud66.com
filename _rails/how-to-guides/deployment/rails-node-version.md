@@ -20,7 +20,6 @@ rails:
   configuration:
     node_version: "18"       # will install latest v18.x.x
     node_version: "18.1"    # will install latest v18.1.x
-    node_version: "18.1.3"  # will install specific v18.1.3
 ```
 
 #### Applying changes
