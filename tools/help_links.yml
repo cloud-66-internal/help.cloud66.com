@@ -1127,6 +1127,7 @@ maestro:
     page: maestro/references/manifest-web-settings.html
     page_anchors:
     - cors-configuration
+    - customizing-nginx-in-maestro
     - docker
     - example-yaml-for-gateway
     - example-yaml-for-nginx
@@ -5297,7 +5298,6 @@ rails:
     page: rails/references/manifest-web-settings.html
     page_anchors:
     - cors-configuration
-    - customizing-nginx-in-maestro
     - example-yaml-for-bundle-install-options-in-rails
     - example-yaml-for-gateway
     - example-yaml-for-nginx

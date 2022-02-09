@@ -241,7 +241,7 @@ The following settings are available via the Manifest file:
 </tbody>
 </table>
 
-{% if include.product == 'rails' %}
+{% if include.product == 'maestro' %}
 ### Customizing Nginx in Maestro
 
 Nginx uses the `docker` node in `manifest.yml`. See below for examples.
@@ -301,18 +301,18 @@ docker:
 
 ## Node version (for Rails applications)
 
-We automatically install the latest release of Node version 6.x.x when we set up your Rack/Rails application servers. You can control which version is installed by editing the manifest file for any Rails application as follows:
+We automatically install the latest release of Node version 16.x.x when we set up your Rack/Rails application servers. You can control which version is installed by editing the manifest file for any Rails application as follows:
 
 ```yml
 rails:
   configuration:
-    node_version: "12"       # will install latest release of v12.x.x
+    node_version: "18"       # will install latest release of v18.x.x
 ```
 
 ```yml
 rails:
   configuration:
-    node_version: "12.18.3"  # will install specific v12.18.3
+    node_version: "18.1"  # will install latest v18.1.x
 ```
 
 If you need a newer version of Node, you can install one using the same method above. We support any version of Node that is supported by our [version manager](https://github.com/tj/n) (which itself supports the [Node distribution list](https://nodejs.org/dist/)).
