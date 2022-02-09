@@ -26,7 +26,7 @@ To achieve a perfect Security Score, you would need to ensure all of the factors
 
 ## What are personal access tokens?
 
-Personal access tokens are the method we use to give external services access to your Cloud 66 account (with your approval, of course!) You can check if you have any tokens on your account via [this link](https://app.cloud66.com/oauth/authorized_applications) or by visiting the **Account Settings** page and clicking on *Authorized Apps* in the **Settings** panel.
+Personal access tokens are the method we use to give external services access to your Cloud 66 account (with your approval, of course!) You can check if you have any tokens on your account via [this link](https://app.cloud66.com/oauth/authorized_applications){:target="_blank"} or by visiting the **Account Settings** page and clicking on *Authorized Apps* in the **Settings** panel.
 
 Having personal access tokens associated with your account makes it inherently less secure because it gives an external service access to one of your applications. The external service may well be trustworthy, but our system cannot independently verify that trustworthiness and so it will always warn you about these tokens.
 
@@ -36,25 +36,27 @@ Over the last five years hackers have stolen several billion password and userna
 
 This has provided criminals and other bad actors with an incredible toolkit for breaking into online services because it has dramatically narrowed the search space for passwords actually used by humans (compared to the total available combination of characters available for use in passwords). 
 
-If you're unconvinced of the dangers, we suggest you visit [Have I Been Pwned?](https://haveibeenpwned.com/) to check your own exposure. 
+If you're unconvinced of the dangers, we suggest you visit [Have I Been Pwned?](https://haveibeenpwned.com/){:target="_blank"} to check your own exposure. 
 
 2FA is an order of magnitude more secure than simple passwords because it requires access to a second, independent device or mechanism (such as a mobile phone). This does not make an account un-hackable, but it makes hacking difficult enough that criminals may simply target other (less secure) accounts. 
 
-## FIDO Authentication
+## FIDO2 Authentication
 
-Cloud 66's 2FA uses the [FIDO](https://fidoalliance.org/what-is-fido/) (Fast IDentity Online) standard. This means:
+Cloud 66's 2FA uses the [FIDO2](https://fidoalliance.org/what-is-fido/){:target="_blank"} (Fast IDentity Online v2) standard. This means:
 
 - Greater security (thanks to public key cryptography)
 - Less friction (multi-factor authentication and BYOD)
 - Best practice implementation based on global standards
 
-## How FIDO works
+## How FIDO2 works
 
 When a user enables 2FA on their account, the user's chosen authenticator (which can be a smartphone app, a physical key or other device) creates a public/private key pair and shares the public key with Cloud 66. 
 
 Then, whenever anyone requests to log in, Cloud 66 will ask the designated authenticator to prove that it has the correct private key by signing the login request with that key. This is then compared to the public key and, if they correspond, the user is logged in.
 
 You can [read more about the process here](https://fidoalliance.org/how-fido-works/).
+
+Cloud 66 fully supports the [FIDO2 standard](https://fidoalliance.org/fido2/){:target="_blank"}, including WebAuthn and Client to Authenticator Protocol (CTAP). This new standard is backward compatible with all existing FIDO U2F and UAF keys.
 
 ## Physical security keys
 
@@ -65,8 +67,6 @@ There are a numbers of options available for physical keys:
 - USB-based keys such as the [YubiKey](https://www.yubico.com/)
 - Bluetooth-based keys (including wearables)
 - NFC-based keys (including many smartphones)
-- Github's [SoftU2F project](https://github.com/github/SoftU2F) which uses software to emulate hardware keys
-- Any smartphone with the [Krypton app](https://krypt.co) installed (this is Cloud 66's preferred method)
 
 Follow our [how-to guide](/{{page.collection}}/account/two-factor-authentication.html#adding-a-physical-fido-security-key) to learn how to add a physical security key to your Cloud 66 account. 
 
