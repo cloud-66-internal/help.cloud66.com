@@ -1984,11 +1984,10 @@ maestro:
   two_factor_authentication:
     page: maestro/account/two-factor-authentication.html
     page_anchors:
-    - adding-a-physical-fido-security-key
+    - adding-a-physical-fido2-security-key
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
-    - if-youre-using-the-krypton-app
     - logging-in-with-2fa
     - maestro-product-heading
     - troubleshooting
@@ -1996,9 +1995,9 @@ maestro:
   understanding_and_improving_security_score:
     page: maestro/account/understanding-and-improving-security-score.html
     page_anchors:
-    - fido-authentication
+    - fido2-authentication
     - finding-your-security-score
-    - how-fido-works
+    - how-fido2-works
     - maestro-product-heading
     - next-steps
     - overview
@@ -3755,11 +3754,10 @@ node:
   two_factor_authentication:
     page: node/account/two-factor-authentication.html
     page_anchors:
-    - adding-a-physical-fido-security-key
+    - adding-a-physical-fido2-security-key
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
-    - if-youre-using-the-krypton-app
     - logging-in-with-2fa
     - node-product-heading
     - troubleshooting
@@ -3767,9 +3765,9 @@ node:
   understanding_and_improving_security_score:
     page: node/account/understanding-and-improving-security-score.html
     page_anchors:
-    - fido-authentication
+    - fido2-authentication
     - finding-your-security-score
-    - how-fido-works
+    - how-fido2-works
     - next-steps
     - node-product-heading
     - overview
@@ -4283,11 +4281,10 @@ prepress:
   two_factor_authentication:
     page: prepress/account/two-factor-authentication.html
     page_anchors:
-    - adding-a-physical-fido-security-key
+    - adding-a-physical-fido2-security-key
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
-    - if-youre-using-the-krypton-app
     - logging-in-with-2fa
     - prepress-product-heading
     - troubleshooting
@@ -6236,11 +6233,10 @@ rails:
   two_factor_authentication:
     page: rails/account/two-factor-authentication.html
     page_anchors:
-    - adding-a-physical-fido-security-key
+    - adding-a-physical-fido2-security-key
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
-    - if-youre-using-the-krypton-app
     - logging-in-with-2fa
     - rails-product-heading
     - troubleshooting
@@ -6248,9 +6244,9 @@ rails:
   understanding_and_improving_security_score:
     page: rails/account/understanding-and-improving-security-score.html
     page_anchors:
-    - fido-authentication
+    - fido2-authentication
     - finding-your-security-score
-    - how-fido-works
+    - how-fido2-works
     - next-steps
     - overview
     - physical-security-keys
@@ -7137,11 +7133,10 @@ skycap:
   two_factor_authentication:
     page: skycap/account/two-factor-authentication.html
     page_anchors:
-    - adding-a-physical-fido-security-key
+    - adding-a-physical-fido2-security-key
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
-    - if-youre-using-the-krypton-app
     - logging-in-with-2fa
     - skycap-product-heading
     - troubleshooting
@@ -7149,9 +7144,9 @@ skycap:
   understanding_and_improving_security_score:
     page: skycap/account/understanding-and-improving-security-score.html
     page_anchors:
-    - fido-authentication
+    - fido2-authentication
     - finding-your-security-score
-    - how-fido-works
+    - how-fido2-works
     - next-steps
     - overview
     - physical-security-keys
