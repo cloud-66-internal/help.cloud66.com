@@ -27,14 +27,23 @@ After you have analyzed your code, ensure that your desired database type is dis
 
 ### Database authentication
 
-When we deploy a database we automatically generate the required users and passwords to allow authentication. You can find these values via your Dashboard in the [detail page of any database server](/{{page.collection}}/how-to-guides/databases/shells/connect-db-servers.html#finding-database-credentials). 
+When we deploy a database we automatically generate the required users and passwords to allow authentication. You can find these values via your Dashboard in the [detail page of any database server](/{{page.collection}}/how-to-guides/databases/shells/connect-db-servers.html#finding-database-credentials). They will be available as environment variables and your application will be configured to use them.
 
-They will be available as environment variables and your application will be configured to use them.
+**MySQL** and **PostgreSQL** databases managed by Cloud 66 automatically have the following users created: 
+
+- a Database Application user
+- a Database Admin user
+- a Database Replication user (where replication is required)
+
+The Application and Replication users always have **the same password**. The associated Linux users for these will differ depending on database type.
+
+<div class="notice"><p markdown="1">If you switch to managing your passwords manually, be sure to update all of these users whenever you change passwords. Remember that the Application and Replication users must use the same password.</p></div>
 
 {%if page.collection == 'rails' %}
 If you'd prefer to manage your users and password manually (i.e. your config files), you can [prevent your configs from being modified](/rails/how-to-guides/databases/tamper-with-yaml.html).
 
 <div class="notice notice-warning"><p markdown="1">⚠️ The info above **does not apply to external (self-managed) databases**. See the [dedicated section below](#external-databases) for more details.</p></div>
+
 
 ### Managing YAML configs
 
