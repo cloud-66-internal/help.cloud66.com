@@ -4418,6 +4418,7 @@ rails:
     - rails-product-heading
     - ruby
     - security-updates
+    - switching-from-malloc-to-jemalloc
     - troubleshooting-package-upgrades
     - ubuntu
     - unable-to-find-expected-entry-errors
