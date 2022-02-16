@@ -949,11 +949,11 @@ maestro:
     page: maestro/tutorials/ip-filtering.html
     page_anchors:
     - allowing-traffic-whitelisting
-    - cloudflare-edge-server-support
+    - blacklisting-by-country
     - denying-traffic-blacklisting
     - maestro-product-heading
     - overview
-    - rate-limiting-exceptions
+    - whitelisting-by-country
   legacy_building_your_service_csv1:
     page: maestro/how-to-guides/build-and-config/legacy-building-your-service-csv1.html
     page_anchors:
@@ -2874,11 +2874,11 @@ node:
     page: node/tutorials/ip-filtering.html
     page_anchors:
     - allowing-traffic-whitelisting
-    - cloudflare-edge-server-support
+    - blacklisting-by-country
     - denying-traffic-blacklisting
     - node-product-heading
     - overview
-    - rate-limiting-exceptions
+    - whitelisting-by-country
   lets_encrypt:
     page: node/how-to-guides/security/lets-encrypt.html
     page_anchors:
@@ -5115,11 +5115,11 @@ rails:
     page: rails/tutorials/ip-filtering.html
     page_anchors:
     - allowing-traffic-whitelisting
-    - cloudflare-edge-server-support
+    - blacklisting-by-country
     - denying-traffic-blacklisting
     - overview
     - rails-product-heading
-    - rate-limiting-exceptions
+    - whitelisting-by-country
   lets_encrypt:
     page: rails/how-to-guides/security/lets-encrypt.html
     page_anchors:
