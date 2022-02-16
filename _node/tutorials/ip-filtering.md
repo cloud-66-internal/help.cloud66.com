@@ -10,6 +10,4 @@ tags: ["operations"]
 permalink: /:collection/:path:output_ext
 ---
 
-{% assign product = 'node' %}
-
-{% include tutorials/network-settings.md product = product %}
+{% include tutorials/ip-filtering.md product = page.collection %} 
