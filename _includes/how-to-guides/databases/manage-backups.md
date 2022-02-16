@@ -23,6 +23,20 @@ There are three main ways to resolve a lack of storage space:
 
 Attach a new disk to your server and mount `"/var/cloud66/backups"` on the new disk. Please remove the existing `/var/cloud66/backups` by running `"sudo rm -rf /var/cloud66/backups"` before mounting `"/var/cloud66/backups"`.
 
+You can mount the volume using a command like this:
+
+```json
+$ mount -o discard,defaults,noatime /dev/disk/by-id/<ID-OF-DISK> /var/cloud66/backups
+```
+
+Your cloud provider will provide the **ID of the disk**, as well as its path (usually under `/dev`). Note that this is different from the default name of the volume that they create for you.
+
+If you want your disk mount to persist after the server is restarted, you should use a command like this one: 
+
+```bash
+$ echo "/dev/disk/by-id/<ID-OF-DISK> /var/cloud66/backups ext4 discard,nofail,defaults 0 0" >> /etc/fstab
+```
+
 ### 2. Clear your server of unneeded files
 
 Your server may have outdated or unneeded files (logs are a common culprit). A handy way to identify these is to use the `ncdu` command - [this comprehensive guide](https://computingforgeeks.com/ncdu-analyze-disk-usage-in-linux-with-ncdu/){:target="_blank"} explains how to install and use `ncdu`.

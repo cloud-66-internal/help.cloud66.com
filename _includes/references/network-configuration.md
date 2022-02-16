@@ -59,7 +59,21 @@ For the "allow" and "block" rules, you can use any combination of:
 
 - Single IP addresses
 - IP ranges (e.g. `23.12.123.54/16`)
-- A URL that lists IP addresses (comma separated, in plain text)
+- A URL that lists IP addresses in either `.txt` or `JSON` format.
+
+Addresses in text format can be either comma separated or newline separated (but **not** a combination).
+
+The JSON document can list IP addresses as an array:
+
+```json
+[192.168.1.1, 192.168.1.2] 
+```
+
+...or as a hash with a key where the key can be either "ips" or "ip_addresses", or "addresses" pointing to array:
+
+```json
+{ips:[192.168.1.1, 192.168.1.2, 192.168.2.2]}
+```
 
 #### Country filtering
 
