@@ -396,6 +396,15 @@ maestro:
     - maestro-product-heading
     - via-ssh
     - with-a-client
+  connecting_between_containerized_services:
+    page: maestro/how-to-guides/build-and-config/connecting-between-containerized-services.html
+    page_anchors:
+    - connecting-to-a-service-in-the-same-application
+    - connecting-to-databases
+    - connecting-to-services-in-different-applications
+    - finding-service-names-and-namespaces
+    - maestro-product-heading
+    - overview
   container_ports:
     page: maestro/tutorials/container-ports.html
     page_anchors:
