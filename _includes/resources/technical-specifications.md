@@ -45,7 +45,7 @@ We default the latest stable major version available from the maintainers of tha
 
 Cloud 66 maintains an internal list of versions for most components built from source, which is updated periodically after testing.
 
-You are free to specify a version for a number of components in your [manifest file](/{{page.collection}}/quickstarts/getting-started-with-manifest.html).
+You are free to **specify an alternative version** for most of these components in your [manifest file](/{{page.collection}}/quickstarts/getting-started-with-manifest.html).
 
 <table class='table table-bordered table-striped'>
 <thead>
