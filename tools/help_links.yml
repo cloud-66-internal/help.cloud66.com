@@ -1686,6 +1686,7 @@ maestro:
   slack_notifications:
     page: maestro/how-to-guides/common-tools/slack-notifications.html
     page_anchors:
+    - enabling-slack-for-account-level-notification
     - help-with-the-cloud-66-slack-app
     - installing-the-cloud-66-slack-app
     - maestro-product-heading
@@ -3423,6 +3424,7 @@ node:
   slack_notifications:
     page: node/how-to-guides/common-tools/slack-notifications.html
     page_anchors:
+    - enabling-slack-for-account-level-notification
     - help-with-the-cloud-66-slack-app
     - installing-the-cloud-66-slack-app
     - node-product-heading
@@ -4233,6 +4235,7 @@ prepress:
   slack_notifications:
     page: prepress/how-to-guides/common-tools/slack-notifications.html
     page_anchors:
+    - enabling-slack-for-account-level-notification
     - help-with-the-cloud-66-slack-app
     - installing-the-cloud-66-slack-app
     - overview
@@ -5871,6 +5874,7 @@ rails:
   slack_notifications:
     page: rails/how-to-guides/common-tools/slack-notifications.html
     page_anchors:
+    - enabling-slack-for-account-level-notification
     - help-with-the-cloud-66-slack-app
     - installing-the-cloud-66-slack-app
     - overview

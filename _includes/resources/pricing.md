@@ -5,13 +5,10 @@ $14.99 per server per month*
 
 Managed database backups: $0.38 per GB per month.
 
-## Node
-$14.99 per server per month*
-
-Managed database backups: $0.38 per GB per month.
-
 ## Maestro
 $14.99 per server per month*
+
+120 Free Build minutes per month. Above that, there is an over quota charge of $0.03 per minute.
 
 Managed database backups: $0.38 per GB per month.
 
@@ -26,7 +23,11 @@ $3.99 per service per month*
 
 120 Free Build minutes per month. Above that, there is an over quota charge of $0.03 per minute.
 
-#### Note
+## Node
+$14.99 per server per month*
+
+Managed database backups: $0.38 per GB per month.
+
 <div class="notice"><p>* Prices do not include the cost of the servers paid to your cloud or hosting provider.</p></div>
 
 ## Annual payments

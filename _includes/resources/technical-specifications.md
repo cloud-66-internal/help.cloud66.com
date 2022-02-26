@@ -45,32 +45,30 @@ We default the latest stable major version available from the maintainers of tha
 
 Cloud 66 maintains an internal list of versions for most components built from source, which is updated periodically after testing.
 
-You are free to specify a version for a number of components in your [manifest file](/{{page.collection}}/quickstarts/getting-started-with-manifest.html).
+You are free to **specify an alternative version** for most of these components in your [manifest file](/{{page.collection}}/quickstarts/getting-started-with-manifest.html).
 
 <table class='table table-bordered table-striped'>
 <thead>
 <th width="30%">Component</th>
 <th>Default version</th></thead>
 
-<tr><td>CAdvisor</td><td>0.0.3</td></tr>
-<tr><td>Docker</td><td>18.09.9-ce (as per Kubernetes guidelines)</td></tr>
-<tr><td>ElasticSearch</td><td>7.1.0</td></tr>
+<tr><td>Docker</td><td>20.10.8-ce (as per Kubernetes guidelines)</td></tr>
+<tr><td>ElasticSearch</td><td>7.16.1</td></tr>
 <tr><td>GlusterFS</td><td>8.5</td></tr>
 <tr><td>Gotty</td><td>1.0.0</td></tr>
-<tr><td>Kubernetes</td><td>1.21.4</td></tr>
+<tr><td>Kubernetes</td><td>1.21.5</td></tr>
 <tr><td>MongoDB</td><td>4.4.x</td></tr>
 <tr><td>MySQL</td><td>8.0</td></tr>
 <tr><td>Nginx</td><td>We deploy a custom release of Nginx. <a href="#nginx-release">See below</a> for details.</td></tr>
-<tr><td>Phusion Passenger</td><td>6.0.5</td></tr>
-<tr><td>Passenger Enterprise</td><td>6.0.5</td></tr>
+<tr><td>Phusion Passenger</td><td>6.0.9</td></tr>
+<tr><td>Passenger Enterprise</td><td>6.0.9</td></tr>
 <tr><td>PostGIS</td><td>3.1</td></tr>
 <tr><td>PostgreSQL</td><td>13</td></tr>
 <tr><td>Rails*</td><td>All versions from 2.6.3 and up</td></tr>
-<tr><td>Redis</td><td>6.2.3</td></tr>
-<tr><td>Ruby</td><td>3.0.1</td></tr>
-<tr><td>Scaleio</td><td>2.0.7120</td></tr>
-<tr><td>Stack</td><td>1.4.6</td></tr>
-<tr><td>Weave</td><td>1.9.8</td></tr>
+<tr><td>Redis</td><td>6.2.5</td></tr>
+<tr><td>Ruby</td><td>3.1.1</td></tr>
+<tr><td>Stack</td><td>1.4.8</td></tr>
+<tr><td>Weave</td><td>2.6.2</td></tr>
 <tr><td>White Rabbit (client)</td><td>0.1.5</td></tr>
 </table>
 
