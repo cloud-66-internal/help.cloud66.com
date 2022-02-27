@@ -101,21 +101,21 @@ Once this is done, use a Git URL in the following format in the Cloud 66 UI:
 {% if include.product == 'rails' %}
 ## Querying git hashes
 
-When we pull code from a git repo, we store the most recent commit hash as an environment variable in your Cloud 66 application. You can fetch this hash value in three ways:
+When we pull code from a git repo, we store the most recent commit hash in your application’s metadata. You can fetch this hash value in three ways:
 
 1. by querying from inside your app code: e.g. `git_ref = 'git rev-parse HEAD'.strip`
 2. by querying our [metadata service](/{{page.collection}}/how-to-guides/deployment/querying-server-metadata.html)
-3. By calling the [API deployment method](https://developers.cloud66.com/#deployment) which returns details on applications including `git_hash`
+3. by calling the [API deployment method](https://developers.cloud66.com/#deployment) which returns details on applications including `git_hash`
 {% endif %}
 
 {% if include.product == 'maestro' %}
-## Querying git hashes
+## Querying git hashes for services
 
-When we pull code from a git repo, we store the most recent commit hash as an environment variable in your Cloud 66 application. You can fetch this hash value in three ways:
+When we pull code from a git repo to build a service in Maestro, we store the most recent commit hash as an environment variable. You can fetch this hash value in three ways:
 
-1. by querying from inside your app code: e.g. `git_ref = 'git rev-parse HEAD'.strip`
-2. by querying our [metadata service](/{{page.collection}}/how-to-guides/deployment/querying-server-metadata.html)
-3. By calling the [API deployment method](https://developers.cloud66.com/#deployment) which returns details on applications including `git_hash`
+1. by querying the environment variable named `CLOUD66_SERVICE_GIT_REF`
+2. by querying from inside your app code: e.g. `git_ref = 'git rev-parse HEAD'.strip`
+3. by calling the [API container show method](https://developers.cloud66.com/#container-show) which returns details on services running in containers including `git_hash`
 
 ## Using Github with Maestro
 
