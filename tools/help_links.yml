@@ -22,12 +22,14 @@ maestro:
   access_your_code:
     page: maestro/how-to-guides/common-tools/access-your-code.html
     page_anchors:
-    - accessing-private-repositories
     - bitbucket-example
     - github-example
     - maestro-product-heading
-    - overview
+    - other-public-repos
+    - private-repositories
+    - public-github-repos
     - public-repositories
+    - querying-git-hashes-for-services
     - using-github-with-maestro
   account_index:
     page: maestro/account/index.html
@@ -520,6 +522,7 @@ maestro:
     - dedicated-database
     - local-database
     - maestro-product-heading
+    - migrating-to-an-external-database
     - no-database-external
     - service-names-for-database-groups
     - upgrading-your-database
@@ -2582,6 +2585,7 @@ node:
     - database-deployment-types
     - dedicated-database
     - local-database
+    - migrating-to-an-external-database
     - no-database-external
     - node-product-heading
     - upgrading-your-database
@@ -4334,6 +4338,7 @@ rails:
     - private-repositories
     - public-github-repos
     - public-repositories
+    - querying-git-hashes
     - rails-product-heading
   account_index:
     page: rails/account/index.html
@@ -4775,6 +4780,7 @@ rails:
     - external-databases
     - local-database
     - managing-yaml-configs
+    - migrating-to-an-external-database
     - no-database-external
     - rails-product-heading
     - setting-variables-manually-overriding
