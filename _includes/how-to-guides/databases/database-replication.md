@@ -96,8 +96,9 @@ To disable replication between applications:
 
 From time-to-time your slave database may go out of sync with its master. You can re-synchronize a slave in two ways:
 
-- Via the Dashboard (click through to the detail page for the slave and then click *Resync Slave*)
+- Via the Dashboard (click through to the detail page for the slave and then click Resync Slave) - this requires that you have [managed backups](/{{page.collection}}/how-to-guides/add-ins/database-backups.html) enabled.
 - Via the Cloud 66 Toolbelt's [database management commands](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#databases-promote-slave).
 
-
+<div class="notice notice-warning"><p markdown="1">
+⚠️ If your managed backups are set to run on your slave server, you will not be able to automatically resync your slave from that backup. You will need to disable this option and run the backup on your master server before you can resync.</p></div>
 
