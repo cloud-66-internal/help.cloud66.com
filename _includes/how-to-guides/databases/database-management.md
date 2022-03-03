@@ -350,3 +350,19 @@ The following variables are only available in the Redis CustomConfig.
 		</tr>
   </tbody>
 </table>
+
+## Migrating to an external database
+
+If you need to migrate a database managed by Cloud 66 to an external provider, you should bear in mind the following:
+
+- Updating your [Manifest file](/{{page.collection}}/references/manifest-database-settings.html) will not be sufficient to reconfigure your application - you will need to connect your application manually to your new database servers, including authentication credentials, ideally via your app’s [environment variables](/{{page.collection}}/tutorials/env-vars.html).
+- Your existing database servers will need to be manually removed from your application after you have migrated. They will not be automatically removed or deleted.
+
+The exact migration process will differ widely depending on both the database used, and the host to which you are migrating your data, but all of them share the following steps:
+
+1. Switch off your application ([maintenance mode](/{{page.collection}}/how-to-guides/common-tools/using-maintenance-mode.html) is useful here)
+2. Migrate your data to the new host 
+3. Set up authentication credentials and connection details
+4. Add a [firewall rule](/{{page.collection}}/tutorials/firewall-rule.html) to allow your app to reach the new data host (and vice versa)
+5. Turn your application back on 
+6. Delete your defunct Cloud 66 database servers
