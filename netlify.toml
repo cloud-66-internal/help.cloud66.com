@@ -1,7 +1,7 @@
 [[redirects]]
-  from = "/maestro/old-path/"
-  to = "/maestro/quickstarts/"
-  force = true
+  from = "/maestro/old-path/?path=:path"
+  to = "/maestro/:path/"
+  query = {path = ":path"}
 
 [[redirects]]
   from = "/maestro/how-to-guides/nginx/nginx-auth.html"
