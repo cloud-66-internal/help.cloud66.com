@@ -1,4 +1,8 @@
 [[redirects]]
+  from = "/maestro/old-path/"
+  to = "/maestro/quickstarts/"
+
+[[redirects]]
   from = "/maestro/how-to-guides/nginx/nginx-auth.html"
   to = "/maestro/how-to-guides/nginx/customizing-nginx.html"
 
