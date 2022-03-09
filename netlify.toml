@@ -1,6 +1,7 @@
 [[redirects]]
   from = "/maestro/old-path/"
   to = "/maestro/quickstarts/"
+  force = true
 
 [[redirects]]
   from = "/maestro/how-to-guides/nginx/nginx-auth.html"
