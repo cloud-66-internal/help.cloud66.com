@@ -4,6 +4,11 @@
   query = {path = ":path"}
 
 [[redirects]]
+  from = "/maestro/old-path2/"
+  to = "/maestro/:sub/:path"
+  query = {path = ":path", sub = ":sub" }
+
+[[redirects]]
   from = "/maestro/how-to-guides/nginx/nginx-auth.html"
   to = "/maestro/how-to-guides/nginx/customizing-nginx.html"
 
