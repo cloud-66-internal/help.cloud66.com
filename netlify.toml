@@ -14,6 +14,13 @@
   query = {path = ":path"}
 
 [[redirects]]
+  from = "/maestro/old-path4/"
+  to = "/maestro/:path/"
+  query = {path = ":path"}
+  status = 200
+
+
+[[redirects]]
   from = "/maestro/how-to-guides/nginx/nginx-auth.html"
   to = "/maestro/how-to-guides/nginx/customizing-nginx.html"
 
