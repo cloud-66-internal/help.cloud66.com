@@ -4,7 +4,7 @@
   query = {path = ":path"}
 
 [[redirects]]
-  #query = {path = ":path", sub = ":sub" }
+  query = {path = ":path", sub = ":sub" }
   from = "/maestro/old-path2/"
   #to = "/maestro/:sub/:path/"
   to = "/maestro/the-basics2/"
