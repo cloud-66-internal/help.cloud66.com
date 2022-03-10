@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/maestro/old-path/?path=:path"
+  from = "/maestro/old-path/"
   to = "/maestro/:path/"
   query = {path = ":path"}
 
