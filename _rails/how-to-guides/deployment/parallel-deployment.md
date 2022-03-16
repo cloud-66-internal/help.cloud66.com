@@ -92,7 +92,7 @@ All the deployment strategies have a few things in common:
 
 #### Tip
 <div class="notice"><p>
-If you're planning to use parallel or rolling deployments, we recommend <a href="/rails/how-to-guides/deployment/deployment-health-checks.html">adding health checks</a> to your deployment process. </p></div>
+If you're planning to use parallel or rolling deployments, we recommend <a href="/rails/how-to-guides/security/application-health-checks.html#deployment-success-checks">adding health checks</a> to your deployment process. </p></div>
 
 ### Serial deployment
 
