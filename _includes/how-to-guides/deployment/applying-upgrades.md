@@ -88,6 +88,16 @@ It is best to keep your Docker and Weave versions up to date as they are release
 <div class="notice notice-danger"><p>Upgrading in-place involves downtime as the Docker engine and local files are all upgraded. To maintain zero down-time you should clone your application and use <a href="/maestro/tutorials/failover-groups.html">failover groups</a> to switch to the new instance.</p></div>
 {% endif %}
 
+{% if include.product == 'rails' %}
+## Switching from malloc to jemalloc
+
+If you’d prefer to use [jemalloc](http://jemalloc.net/){:target="_blank"} as your memory allocator, you can change this via your [manifest file](/rails/references/manifest-web-settings.html#rails). However, when you deploy (with upgrades) this **will** cause downtime as it is applied to each server. There are two solutions for avoiding downtime: 
+
+1. Use a [rolling deployment strategy](/rails/how-to-guides/deployment/parallel-deployment.html) (requires a load balancer & at least four servers)
+2. Scale up new servers, upgrade them, and then switch them with the current servers ([see above](#managing-high-risk-updates))
+
+{% endif %}
+
 ## About manual upgrades
 If you need to upgrade any part of your application the best course of action is always to build a new server. However, if that is not desirable or possible, you can always perform manual upgrades.
 

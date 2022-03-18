@@ -1,6 +1,6 @@
 ## Overview
 
-You can choose to receive notifications from your Cloud 66 account in your team's Slack workspace. To set up Slack notifications you need to connect Cloud 66 to your Slack account using the **Cloud 66 Slack App** which we have created in partnership with Slack. The app is hosted (and approved) by Slack.
+You can choose to receive notifications from your Cloud 66 account in your team's Slack workspace. To set up Slack notifications you need to connect Cloud 66 to your Slack account using the [Cloud 66 Slack App](https://slack.com/apps/AMJ4WVAP4-cloud-66-v2?tab=more_info) which we have created in partnership with Slack. The app is hosted (and approved) by Slack.
 
 ## What does the Cloud 66 Slack App do?
 
@@ -11,26 +11,39 @@ The Cloud 66 Slack App does two things:
 
 ## Installing the Cloud 66 Slack App
 
-The simplest way to add the app to your Slack account is to click the "Add to Slack" button below. You need to be signed into your Slack account on your default browser in order for this to work correctly. If you have multiple Slack workspaces, be careful to add the Cloud 66 app to the correct workspace.
+The simplest way to add the app to your Slack account is via your application settings:
 
-<a href="https://slack.com/oauth/authorize?scope=incoming-webhook&client_id=2151604965.732166996786"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+1. Log into your [Cloud 66 Dashboard](https://app.cloud66.com/) 
+2. Open the application for which you want Slack notifications
+3. Click ⚙️Settings & Information in the right-hand panel
+4. Click the *Notifications* tab at the top of the main panel
+5. Click on the Slack icon next to any notification type
+6. A pop-up will appear that will allow you to start the linking process (you will need to sign into Slack on the same browser)
+7. Grant the Cloud 66 application the required permissions on Slack, and set the channel in which you wish to receive the notifications
+8. You will be redirected back to your Notifications page where you can enable (or disable) notifications as required.
 
-If you're more comfortable installing directly via the Slack interface, you can do so by: 
+If you have multiple Slack workspaces, be careful to add the Cloud 66 app to the correct workspace.
 
-- Logging into your workspace
-- Visiting the app's page in the Slack App directory (you can also search "Cloud 66" from the directory homepage)
-- Clicking the **Add to Slack** button on that page
+### Enabling Slack for account-level notification
 
-In either case you will need to step through the standard Slack approval process to confirm that you want to add the app to your Slack account and grant it the permissions it requires to function. 
+You can also enable Slack for your Cloud 66 account notifications. The process is very similar to the one above:
+
+1. Log into your Cloud 66 Dashboard and open the [Notification settings](https://app.cloud66.com/alerts) page (under Account Settings)
+2. Click on the Slack icon next to any notification type
+3. A pop-up will appear that will allow you to start the linking process (you will need to sign into Slack on the same browser)
+4. Grant the Cloud 66 application the required permissions on Slack, and set the channel in which you wish to receive the notifications
+5. You will be redirected back to your Notifications page where you can enable (or disable) notifications as required.
 
 ## Removing the Cloud 66 Slack App
 
-If you need to remove the Cloud 66 App from your Slack account for any reason, you can do so by:
+If you need to remove the Cloud 66 App from your Slack account:
 
-- Logging into your workspace
-- Clicking **Menu** and then **Configure Apps**
-- Clicking on the name of the App (Cloud 66)
-- Clicking the **Disable** or **Remove** at the top of the Configuration page
+- Log into your workspace
+- Click **Menu** and then **Settings & Administration**
+- Under Administration click **Manage Apps**
+- Click on the name of the app (Cloud 66 V2) - this will open the Cloud 66 app's page in the Slack app directory
+- Click on the **Configuration** tab at the top of the main panel
+- Click the **Remove App** button
 
 If you have set up multiple configurations enabled under the App, you will need to deactivate and/or remove them one by one. 
 

@@ -10,4 +10,4 @@ tags: ['upgrade', 'update']
 permalink: /:collection/:path:output_ext
 ---
 
-{% include how-to-guides/deployment/applying-upgrades.md %}
+{% include how-to-guides/deployment/applying-upgrades.md product = page.collection %}

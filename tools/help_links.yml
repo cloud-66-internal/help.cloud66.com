@@ -22,12 +22,14 @@ maestro:
   access_your_code:
     page: maestro/how-to-guides/common-tools/access-your-code.html
     page_anchors:
-    - accessing-private-repositories
     - bitbucket-example
     - github-example
     - maestro-product-heading
-    - overview
+    - other-public-repos
+    - private-repositories
+    - public-github-repos
     - public-repositories
+    - querying-git-hashes-for-services
     - using-github-with-maestro
   account_index:
     page: maestro/account/index.html
@@ -396,6 +398,15 @@ maestro:
     - maestro-product-heading
     - via-ssh
     - with-a-client
+  connecting_between_containerized_services:
+    page: maestro/how-to-guides/build-and-config/connecting-between-containerized-services.html
+    page_anchors:
+    - connecting-to-a-service-in-the-same-application
+    - connecting-to-databases
+    - connecting-to-services-in-different-applications
+    - finding-service-names-and-namespaces
+    - maestro-product-heading
+    - overview
   container_ports:
     page: maestro/tutorials/container-ports.html
     page_anchors:
@@ -511,6 +522,7 @@ maestro:
     - dedicated-database
     - local-database
     - maestro-product-heading
+    - migrating-to-an-external-database
     - no-database-external
     - service-names-for-database-groups
     - upgrading-your-database
@@ -949,11 +961,11 @@ maestro:
     page: maestro/tutorials/ip-filtering.html
     page_anchors:
     - allowing-traffic-whitelisting
-    - cloudflare-edge-server-support
+    - blacklisting-by-country
     - denying-traffic-blacklisting
     - maestro-product-heading
     - overview
-    - rate-limiting-exceptions
+    - whitelisting-by-country
   legacy_building_your_service_csv1:
     page: maestro/how-to-guides/build-and-config/legacy-building-your-service-csv1.html
     page_anchors:
@@ -1686,6 +1698,7 @@ maestro:
   slack_notifications:
     page: maestro/how-to-guides/common-tools/slack-notifications.html
     page_anchors:
+    - enabling-slack-for-account-level-notification
     - help-with-the-cloud-66-slack-app
     - installing-the-cloud-66-slack-app
     - maestro-product-heading
@@ -2572,6 +2585,7 @@ node:
     - database-deployment-types
     - dedicated-database
     - local-database
+    - migrating-to-an-external-database
     - no-database-external
     - node-product-heading
     - upgrading-your-database
@@ -2874,11 +2888,11 @@ node:
     page: node/tutorials/ip-filtering.html
     page_anchors:
     - allowing-traffic-whitelisting
-    - cloudflare-edge-server-support
+    - blacklisting-by-country
     - denying-traffic-blacklisting
     - node-product-heading
     - overview
-    - rate-limiting-exceptions
+    - whitelisting-by-country
   lets_encrypt:
     page: node/how-to-guides/security/lets-encrypt.html
     page_anchors:
@@ -3423,6 +3437,7 @@ node:
   slack_notifications:
     page: node/how-to-guides/common-tools/slack-notifications.html
     page_anchors:
+    - enabling-slack-for-account-level-notification
     - help-with-the-cloud-66-slack-app
     - installing-the-cloud-66-slack-app
     - node-product-heading
@@ -4233,6 +4248,7 @@ prepress:
   slack_notifications:
     page: prepress/how-to-guides/common-tools/slack-notifications.html
     page_anchors:
+    - enabling-slack-for-account-level-notification
     - help-with-the-cloud-66-slack-app
     - installing-the-cloud-66-slack-app
     - overview
@@ -4322,6 +4338,7 @@ rails:
     - private-repositories
     - public-github-repos
     - public-repositories
+    - querying-git-hashes
     - rails-product-heading
   account_index:
     page: rails/account/index.html
@@ -4418,6 +4435,7 @@ rails:
     - rails-product-heading
     - ruby
     - security-updates
+    - switching-from-malloc-to-jemalloc
     - troubleshooting-package-upgrades
     - ubuntu
     - unable-to-find-expected-entry-errors
@@ -4762,6 +4780,7 @@ rails:
     - external-databases
     - local-database
     - managing-yaml-configs
+    - migrating-to-an-external-database
     - no-database-external
     - rails-product-heading
     - setting-variables-manually-overriding
@@ -5115,11 +5134,11 @@ rails:
     page: rails/tutorials/ip-filtering.html
     page_anchors:
     - allowing-traffic-whitelisting
-    - cloudflare-edge-server-support
+    - blacklisting-by-country
     - denying-traffic-blacklisting
     - overview
     - rails-product-heading
-    - rate-limiting-exceptions
+    - whitelisting-by-country
   lets_encrypt:
     page: rails/how-to-guides/security/lets-encrypt.html
     page_anchors:
@@ -5870,6 +5889,7 @@ rails:
   slack_notifications:
     page: rails/how-to-guides/common-tools/slack-notifications.html
     page_anchors:
+    - enabling-slack-for-account-level-notification
     - help-with-the-cloud-66-slack-app
     - installing-the-cloud-66-slack-app
     - overview
