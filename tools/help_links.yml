@@ -248,11 +248,11 @@ maestro:
   cloud_azure:
     page: maestro/how-to-guides/clouds/cloud-azure.html
     page_anchors:
+    - azure-legacy-cloud
     - cloud-66-tag-propagation
     - generating-a-management-certificate
     - generating-credentials-for-azure-cloud
     - maestro-product-heading
-    - microsoft-azure-legacy
     - using-your-management-certificate
   cloud_clouda:
     page: maestro/how-to-guides/clouds/cloud-clouda.html
@@ -264,7 +264,6 @@ maestro:
     page_anchors:
     - authorise-cloud-66-with-digitalocean
     - cloud-66-tag-propagation
-    - external-links
     - maestro-product-heading
     - upgrading-account-keys
   cloud_gce:
@@ -2373,10 +2372,10 @@ node:
   cloud_azure:
     page: node/how-to-guides/clouds/cloud-azure.html
     page_anchors:
+    - azure-legacy-cloud
     - cloud-66-tag-propagation
     - generating-a-management-certificate
     - generating-credentials-for-azure-cloud
-    - microsoft-azure-legacy
     - node-product-heading
     - using-your-management-certificate
   cloud_clouda:
@@ -2389,7 +2388,6 @@ node:
     page_anchors:
     - authorise-cloud-66-with-digitalocean
     - cloud-66-tag-propagation
-    - external-links
     - node-product-heading
     - upgrading-account-keys
   cloud_gce:
@@ -4033,6 +4031,34 @@ prepress:
     - prepress-product-heading
     - step-1-create-a-user
     - step-2-set-up-access-policies
+  cloud_azure:
+    page: prepress/how-to-guides/clouds/cloud-azure.html
+    page_anchors:
+    - azure-legacy-cloud
+    - cloud-66-tag-propagation
+    - generating-a-management-certificate
+    - generating-credentials-for-azure-cloud
+    - prepress-product-heading
+    - using-your-management-certificate
+  cloud_do:
+    page: prepress/how-to-guides/clouds/cloud-do.html
+    page_anchors:
+    - adding-spaces-to-your-cloud-66-account
+    - configuring-digitalocean-for-prepress
+    - prepress-product-heading
+  cloud_gce:
+    page: prepress/how-to-guides/clouds/cloud-gce.html
+    page_anchors:
+    - external-links
+    - generate-gce-api-keys
+    - prepress-product-heading
+  cloud_linode:
+    page: prepress/how-to-guides/clouds/cloud-linode.html
+    page_anchors:
+    - adding-linode-cloud-storage-to-your-cloud-66-account
+    - configuring-linode-for-prepress
+    - external-links
+    - prepress-product-heading
   data_protection:
     page: prepress/policies-specifications/data-protection.html
     page_anchors:
@@ -4566,10 +4592,10 @@ rails:
   cloud_azure:
     page: rails/how-to-guides/clouds/cloud-azure.html
     page_anchors:
+    - azure-legacy-cloud
     - cloud-66-tag-propagation
     - generating-a-management-certificate
     - generating-credentials-for-azure-cloud
-    - microsoft-azure-legacy
     - rails-product-heading
     - using-your-management-certificate
   cloud_clouda:
@@ -4583,7 +4609,6 @@ rails:
     - authorise-cloud-66-with-digitalocean
     - bring-your-own-images-byoi
     - cloud-66-tag-propagation
-    - external-links
     - rails-product-heading
     - upgrading-account-keys
   cloud_gce:
