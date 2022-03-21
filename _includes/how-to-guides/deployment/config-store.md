@@ -21,7 +21,9 @@ When you add environment variables to your application they become Linux operati
 
 ConfigStore provides an alternative place to store centralised information that will not be exposed in OS level environment variables.
 
+{% if include.product == 'skycap' %}
 This is particularly useful for information that you need to access from Kubernetes configuration files (for example within [Skycap Stencil Templates](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-stencil)) which may not have direct access to the underlying operating system.
+{% endif %}
 
 ## ConfigStore Data Structure
 
@@ -108,8 +110,10 @@ value: ${configstore("key", account["configstore_namespace"])}
 {% endif %}
 
 ### Environment Variables
-
+{% if include.product == 'skycap' %}
 To load values from ConfigStore as environment variables in any application, open the [Environment Variables](/skycap/tutorials/setting-environment-variables.html) page via your Dashboard and use the following format as the *value* for any key:
+{% endif %}{% if include.product != 'skycap' %}
+To load values from ConfigStore as environment variables in any application, open the [Environment Variables](/{{page.collection}}/tutorials/env-vars.html) page via your Dashboard and use the following format as the *value* for any key:{% endif %}
 
 ```shell
 _configstore(NAMESPACE_UUID.KEY)
