@@ -1,5 +1,4 @@
-
-You can use Cloud 66 to provision and deploy your code to servers in any Azure region. We support both the classic model (Azure Legacy Cloud) and the resource model (Azure Cloud).
+You can use Cloud 66 to provision and deploy your code to servers in any Azure region.
 
 ## Generating credentials for Azure Cloud 
 
@@ -10,8 +9,9 @@ Cloud 66 needs some credentials to authenticate our agent to provision your infr
 * Client Secret 
 * Tenant ID
 
-You can find those by following the [step by step guide created by Microsoft](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal).
+You can find those by following the [step by step guide created by Microsoft](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal){:target="_blank"}.
 
+{% if include.product == 'prepress' %}
 For Prepress you need to add the `Microsoft.Storage` Resource provider. To do this: 
 
 1. Log into your Azure Portal
@@ -21,7 +21,8 @@ For Prepress you need to add the `Microsoft.Storage` Resource provider. To do th
 5. Click on `Microsoft.Storage` and then the *Register* button at the top of the panel (it will take a while to react because, Microsoft) 
 6. Click Refresh after 2 or 3 minutes to check that it is now registered.
 
-For more details [read this guide](https://docs.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-portal#solution). 
+For more details [read this guide](https://docs.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-portal#solution){:target="_blank"}. 
+{% endif %}
 
 Make sure you give your Active Directory App a high enough level of access. Check that your Active Directory Application is added to your Azure subscription and has the role Contributor.
  
