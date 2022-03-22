@@ -4001,10 +4001,10 @@ prepress:
     - framework-configurations
     - gatsby-example
     - hugo-example
+    - jekyll-example
     - overview
     - prepress-product-heading
     - problems-upgrading
-    - ruby-example
     - the-structure-of-a-manifest-file
     - whats-next
   cloud66_status:
@@ -4035,7 +4035,6 @@ prepress:
     page: prepress/how-to-guides/clouds/cloud-azure.html
     page_anchors:
     - azure-legacy-cloud
-    - cloud-66-tag-propagation
     - generating-a-management-certificate
     - generating-credentials-for-azure-cloud
     - prepress-product-heading
@@ -4121,9 +4120,15 @@ prepress:
     - what-is-a-manifest-file
     - what-youll-need
     - whats-next
+    - yaml-sample-docusaurus-v1--v2
     - yaml-sample-gatsby
     - yaml-sample-hugo
     - yaml-sample-jekyll
+    - yaml-sample-middleman
+    - yaml-sample-nextjs
+    - yaml-sample-nuxtjs
+    - yaml-sample-svelte
+    - yaml-sample-vuejs
   global_search:
     page: prepress/how-to-guides/common-tools/global-search.html
     page_anchors:

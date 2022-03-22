@@ -22,7 +22,7 @@ For Prepress applications the path for `manifest.yml` is:
 
 The `.cloud66` folder must in the root of your source code & repo.
 
-### **Problems upgrading?**
+### Problems upgrading?
 
 If you explicitly set the version of any component in your manifest file, we will respect that setting even if it conflicts with other system changes or upgrades. If you are having trouble upgrading any component of your application, remember to check your manifest file to ensure you have not previously locked the version of that component or one of its dependents.
 
@@ -37,17 +37,17 @@ A typical block of settings will contain some combination the following:
 
 ## Framework configurations
 
-For each framework supported by Prepress you can explicitly define:
+For each application generator supported by Prepress you can explicitly define:
 
 - The **language** it's written in
-- The **version** of that language that your app uses
+- The **version** of that language that your app generator uses
 - The **framework** being used
 - The **version of that framework**
 - The **build command** used to build the application
 
 The examples below illustrate these configurations.
 
-### Ruby example
+### Jekyll example
 
 ```yaml
 prepress:
