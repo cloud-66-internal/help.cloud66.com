@@ -12,17 +12,11 @@ permalink: /:collection/:path:output_ext
 
 ## Frameworks currently supported
 
-At the moment Prepress supports the following static site frameworks: 
+At the moment Prepress supports the following static site framworks: 
 
-- [Jekyll](https://jekyllrb.com/){:target="_blank"} (Ruby)
-- [Hugo](https://gohugo.io/){:target="_blank"} (Go)
-- [Gatsby](https://www.gatsbyjs.com/){:target="_blank"} (React)
-- [Next.js](https://nextjs.org/){:target="_blank"} (React)
-- [Vue.js](https://vuejs.org/){:target="_blank"}
-- [Nuxt.js](https://nuxtjs.org/){:target="_blank"} (Vue.js)
-- [Svelte](https://svelte.dev/){:target="_blank"}
-- [Middleman](https://middlemanapp.com/){:target="_blank"}
-- [Docusaurus](https://docusaurus.io/){:target="_blank"} (React)
+- [Jekyll](https://jekyllrb.com/) (Ruby)
+- [Hugo](https://gohugo.io/) (Go)
+- [Gatsby](https://www.gatsbyjs.com/) (React JS)
 
 If your application uses another framework, please use the feedback button below to share your preferred framework so that we can consider supporting it in future. 
 
