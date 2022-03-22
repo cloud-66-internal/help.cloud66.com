@@ -4210,10 +4210,13 @@ prepress:
   prepress_dns:
     page: prepress/tutorials/prepress-dns.html
     page_anchors:
+    - editing-your-custom-domain
     - note
     - overview
     - prepress-product-heading
     - setting-up-a-custom-domain
+    - stage-1-add-a-cname-to-your-dns-records
+    - stage-2-enable-your-custom-domain
     - what-youll-need
     - whats-next
   preview_deployments:
