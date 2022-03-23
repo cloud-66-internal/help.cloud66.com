@@ -105,6 +105,8 @@ Rewrite {
 
 ### Examples of rewrite rules
 
+
+
 ## Blocking traffic with Webflow
 
 - `when` - defines the condition(s) when the rule will apply
