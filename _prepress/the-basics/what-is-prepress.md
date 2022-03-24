@@ -36,7 +36,7 @@ Prebuilt applications are also known as "preprocessed", "pre-rendered" or "stati
 - Javascript
 - Images
 
-These static files are faster to server and easier to scale. They can be hosted across multiple regions without any extra coding, putting them closer to your users without the hassle and expense of replicating data or managing multiple application stacks. They are generally hosted on object storage solutions (such as Amazon S3) which are relatively cheap and much easier to scale up.
+These static files are faster to serve and easier to scale. They can be hosted across multiple regions without any extra coding, putting them closer to your users without the hassle and expense of replicating data or managing multiple application stacks. They are generally hosted on object storage solutions (such as Amazon S3) which are relatively cheap and much easier to scale up.
 
 They are also generally more secure because they have less "surface area" to attack and fewer moving parts that need to be secured (database servers, application code etc).
 
