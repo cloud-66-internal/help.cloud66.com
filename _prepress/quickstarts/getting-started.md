@@ -17,110 +17,98 @@ Before you can deploy your app please check you have the following:
 - **A Git Repo containing your application code** — This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.
 - **A Cloud Account** — at the moment we only support AWS S3 (we will be adding more cloud providers soon)
 
-## 1. Choose your application type
 
-New users will be shown the product selection wizard. For Prepress, click the Getting Started button in the block headed "Need to Deploy a Static Site?".
+## 1. Connect your Git Repo
 
-![Choose application type](/assets/prepress/app-type-prepress.png)
-
-If you're already using Cloud 66 just click *New Application &rarr; Prepress* button on the dashboard.
-
-
-## 2. Access your Git Repo
-
-Cloud 66 supports both public and private Git repositories. If you’re using a private Git repository you’ll need to Add and approve the Cloud 66 public SSH key with your Git provider. 
-
-Click the *How to link Cloud 66 with your git provider* link above the main panel - this will open up a yellow box that will allow you to configure access to your git provider.
+The first thing we need is access to your code, so that we can build and deploy it for you.  
 
 <div class="Tabs">
     <nav>
       <ul class="TabMini js_tabs">
         <li class="TabMini-item active">
           <a href="#github-content" class="TabMini-link">
-            Github
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#bitbucket-content" class="TabMini-link">
-            Bitbucket
+            GitHub
           </a>
         </li>
         <li class="TabMini-item">
           <a href="#other-git-content" class="TabMini-link">
-            Other git repositories
+            Other git repos
           </a>
         </li>
       </ul>
     </nav>
 
-    <section id="github-content" class="Tabs-content js_tab_content">
-        <h4>Public Repository</h4>
-        <p>If your code is in a public repository, you don't need to do anything.</p>
-        <h4>Private Repository</h4>
-        <p>To grant access to a private Github repository, you need to add your public SSH key you see on the screen to your Github account. </p>
-        <p>
-            <img src="/assets/rails/rails_add_public_key.png" alt="Adding your Public Key to GitHub">
-        </p>
-        <p><em>Copy the public SSH Key</em> (starts with ssh-rsa and ends with the email address you used to sign up) and then <em>Click Go to GitHub</em>. The GitHub SSH keys page will open in a new browser tab. Click the <em>New SSH key</em> button and paste your public key.</p>
-    </section>
+    <section id="github-content" class="Tabs-content js_tab_content" markdown="1">
 
-    <section id="bitbucket-content" class="Tabs-content js_tab_content is-hidden">
-        <h4>Public Repository</h4>
-        <p>If your code is in a public repository, you don't need to do anything.</p>
-        <h4>Private Repository</h4>
-        <p>To grant access to a private Bitbucket repository, you need to add your public SSH key you see on the screen to your Bitbucket account.</p>
-        <p>
-            <img src="/assets/rails/rails_add_public_key_bitbucket.png" alt="Adding the Public Key to BitBucket">
-        </p>
-    </section>
+The easiest option is to give us (read-only) access to a GitHub repo. To do this:
 
-    <section id="other-git-content" class="Tabs-content js_tab_content is-hidden">
-        <h4>Private Repository</h4>
-        <p>To grant access to your private git repository, add the public SSH key to the list of git users (refer to your git server manual) and make sure your git repository accepts connections on port 22, from Cloud 66 public IP addresses: {% include general/public_ips.html %}</p>
-    </section>
-</div>
+1. Click Get Started
+2. On the next page click *Link with Github*
+3. We’ll send you to our app on Github (you’ll need to sign in)
+4. Once you’re signed in, click *Configure* & then select the account you wish to link to Cloud 66
+5. Install and authorize our Github app (you can restrict our access to specific repos if needed)
+6. You will be redirected back to your Cloud 66 dashboard and you can move on to Step 2.
 
-## 3. Define your application
+**Public Github Repositories**
 
-- Connect your Git provider (see above) and select one of your repos
-    - *OR* click the link to switch to manual mode and then paste in the **Git repo URL for your app** (we support `http://`, `git://` and `git@` URL formats. **HTTPS isn’t supported**.)
-- **Define the branch do you want to deploy** — This defaults to master but you can provide any branch you like.
+If your code is in a public GitHub repository then you can add it using its public link without installing our GitHub app. To do so, follow the instructions under the *Other git repos* tab (above).
+
+</section><section id="other-git-content" class="Tabs-content js_tab_content is-hidden" markdown="1">
+
+### Using a non-Github host
+
+If you’d prefer to use another git host, or your own self-hosted repository:
+
+1. Click *I’d rather enter a git repo URL*.
+2. Click *View SSH key*
+3. Open your repo and add the key to its settings (usually found under *SSH* or *SSH keys*)
+4. Come back to Cloud 66 and click the green *Next…* button
+
+Make sure your git repository accepts connections on port 22, from Cloud 66 public IP addresses: {% include general/public_ips.html %}
+
+</section></div>
+
+## 2. Define your application
+
+- **Select one of your repos** *OR* click *Enter repo link* to switch to manual mode and then paste in the Git repo URL for your app (we support `http://`, `git://` and `git@` URL formats.)
+- **Set the branch** — This defaults to master but you can provide any branch you like.
 - **Choose an Environment** — decide which environment you’re deploying to: Development, QA, Staging or Production.
-- **Give your new application a name** — This is the name that will be used in the Cloud 66 Dashboard once your app is deployed.
+- **Give your application a name** — This is the name that will be used in the Cloud 66 Dashboard once your app is deployed.
 
 Now click the *Analyze* button - the results will be displayed in a few seconds.
 
-## 4. Configuring your application
+## 3. Configuring your application
 
-Once the analysis is complete you’ll see a yellow Information box that you can use to verify the analysis is correct.
+Once the analysis is complete you’ll see a yellow information box that you can use to verify the analysis is correct.
 
 <img src="/assets/prepress/about_your_app.png" alt="Prepress application - analysis information">
 
 If there are any problems you can make changes and click **Reanalyze my code**. If necessary, you can also add environment variables.
 
-## 5. Choosing a deployment target
+## 4. Adding a cloud provider
 
-If you’re deploying for the first time you need to add your Cloud provider credentials. 
+### A. Set up your cloud provider 
 
-At the moment Prepress only supports S3 from Amazon Web Services. To add your AWS account: 
+We need access to your cloud account in order to provision and manage applications on your behalf. How you configure that access differs from provider to provider. Click the link to your provider below if you need help.
 
-1. Click the *Add Cloud Provider* button 
-2. Paste in the **AWS Access key ID** & **AWS Secret Access Key** (see below for how to generate these)
-3. Give your deployment target a name  (this makes it easier to distinguish between multiple accounts)
-4. Click *Add Cloud Provider*
+* [Amazon Web Services (S3)](/prepress/how-to-guides/clouds/cloud-aws.html)
+* [Microsoft Azure Cloud Storage](/prepress/how-to-guides/clouds/cloud-azure.html)
+* [DigitalOcean (Spaces)](/prepress/how-to-guides/clouds/cloud-do.html)
+* [Google Compute Engine](/prepress/how-to-guides/clouds/cloud-gce.html)
+* [Linode Cloud Storage](/prepress/how-to-guides/clouds/cloud-linode.html)
+
+### B. Add your cloud provider to Cloud 66
+
+Once you have set up your cloud storage account:
+
+1. Click the *Add Cloud Provider* button (a drawer will slide out from the left)
+2. Choose your preferred cloud provider
+3. Give your cloud account a name (this makes it easier to distinguish between multiple accounts)
+4. Fill in your cloud crednetials
+4. Click *Add Cloud*
 5. Choose the region in which you want to host your app
 
-### Setting up cloud & access keys on AWS S3
-
-1. Log into the web interface for your AWS account
-2. Click on the name of your account in the top right corner of your AWS account, and select *My Security Credentials*.
-3. Click Access keys in the accordion to open the panel
-4. Click Create New Access key 
-5. Either download the key file or click *Show access key* and take note of your access key ID and secret access key. These are the credentials needed for Cloud 66 to access your account.
-
-This gives Cloud 66 root access to your account. If you'd prefer to restrict access to the minimum needed, we suggest using Amazon's IAM. Please read our [full guide on setting up AWS](/prepress/how-to-guides/clouds/cloud-aws.html#option-b-identity-access-management-iam) for more info.
-
-## 6. Deploy your app
+## 5. Deploy your app
 
 Now everything is ready to go, hit the *Deploy site* button.
 

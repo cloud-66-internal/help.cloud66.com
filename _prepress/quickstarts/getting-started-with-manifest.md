@@ -44,8 +44,8 @@ In this example we are going to modify the configuration of the simple applicati
 Before you start, please check you have the following:
 
 - **A Cloud 66 Account** — If you don't already have one, <a href="https://app.cloud66.com/users/sign_up" target="_blank">sign up for a Cloud 66 account</a>. You'll get free unlimited access to all products for 4 weeks.
-- **Application code**  — Application code should be hosted in a (secure) publicly accessible git repository and pre-built images should be hosted in image publicly accessible repositories.
-- **A Cloud account linked to Cloud 66 or your own servers set up** 
+- **Application code** — Application code should be hosted in a (secure) publicly accessible git repository and pre-built images should be hosted in image publicly accessible repositories.
+- **A Cloud storage account** linked to Cloud 66. 
 
 ### Setting up your first manifest file
 
@@ -54,7 +54,7 @@ To set up a `manifest.yml` file for your application:
 1. Create a file named `manifest.yml` in a folder named `.cloud66`, that is in turn located in the root of your source code and checked into your repository.
 2. Add YAML from one of the samples below to your `manifest.yml` file.
 3. Save the file and check that the YAML is valid. 
-4. Commit the file to your repo & [deploy your application](/prepress/quickstarts/getting-started.html)
+4. Commit the file to your repo & [deploy your application](/prepress/quickstarts/getting-started.html).
 
 ### YAML sample: Jekyll
 
@@ -80,8 +80,8 @@ prepress:
 You'll see that we're defining several things in this YAML:
 
 - The language your site generator is written in (`nodejs`)
-- The version of NodeJS that it's using ( `12.13`)
-- The framework (`gatsby`) and version ( 
+- The version of NodeJS that it's using (`12.13`)
+- The framework (`gatsby`) and version (`3.14.0`)
 - Your custom build command (`gatsby build --profile --prefix-paths`)
 
 ```YAML

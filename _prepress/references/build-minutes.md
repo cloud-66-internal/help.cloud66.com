@@ -40,8 +40,6 @@ All **paid** accounts can exceed their monthly quota of Build Minutes. You will 
 
 So, for example, 4 extra hours of Build time would cost $1\.20 (240 mins x half a cent per minute = $1.20).
 
-(Community accounts can’t exceed the quota and builds will stop if they exceed the limit) 
-
 #### Rounding up during billing
 <div class="notice"><p>
 At the end of each billing period we add up all overages and then round up to the nearest dollar.

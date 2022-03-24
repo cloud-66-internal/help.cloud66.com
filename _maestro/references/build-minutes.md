@@ -29,7 +29,6 @@ All other actions and functions do not consume BuildGrid minutes. This includes:
 
 Each Maestro account has a quota of Build Minutes included which refreshes each month. The number of Minutes available depends on the kind of account you have:
 
-* Community (free) accounts: 30 Build Minutes / month 
 * Trial accounts (4 weeks): 120 Build Minutes 
 * Growth and above: 120 Build Minutes / month
 
