@@ -1,19 +1,22 @@
-
+{% if include.product != 'prepress' %}
 ## Operating system
 
 Your servers are deployed with **Ubuntu 20.04 LTS**.
+{%endif%}
 
 ## Supported cloud providers
 
-Cloud 66 currently supports the following cloud providers:
-* [Amazon Web Services](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html){% if include.product != 'prepress' %}
+{% if include.product != 'prepress' %}Cloud 66 currently supports the following cloud providers:{%endif%}
+{% if include.product == 'prepress' %}Prepress currently supports the following cloud providers:{%endif%}
+
+* [Amazon Web Services](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html)
 * [Digital Ocean](/{{page.collection}}/how-to-guides/clouds/cloud-do.html)
-* [Google Compute Engine](/{{page.collection}}/how-to-guides/clouds/cloud-gce.html)
-* [Hetzner Cloud](/{{page.collection}}/how-to-guides/clouds/cloud-hetzner.html){%endif%}{% if include.product != 'maestro' and include.product != 'prepress' %}
+* [Google Compute Engine](/{{page.collection}}/how-to-guides/clouds/cloud-gce.html){% if include.product != 'prepress' %}
+* [Hetzner Cloud](/{{page.collection}}/how-to-guides/clouds/cloud-hetzner.html){%endif%}{% if include.product != 'maestro' %}
 * [Linode](/{{page.collection}}/how-to-guides/clouds/cloud-linode.html){%endif%}{% if include.product != 'prepress' %}
 * [Maxihost](/{{page.collection}}/how-to-guides/clouds/cloud-maxihost.html)
-* [OVHcloud](/{{page.collection}}/how-to-guides/clouds/cloud-ovh.html)
-* [Microsoft Azure](/{{page.collection}}/how-to-guides/clouds/cloud-azure.html)
+* [OVHcloud](/{{page.collection}}/how-to-guides/clouds/cloud-ovh.html){%endif%}
+* [Microsoft Azure](/{{page.collection}}/how-to-guides/clouds/cloud-azure.html){% if include.product != 'prepress' %}
 * [Rackspace](/{{page.collection}}/how-to-guides/clouds/cloud-rackspace.html)
 * [Vultr](/{{page.collection}}/how-to-guides/clouds/cloud-vultr.html){% endif %}
 

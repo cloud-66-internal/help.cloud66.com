@@ -16,7 +16,13 @@ Prepress makes building, deploying and managing **prebuilt web applications** on
 
 - [Jekyll](https://jekyllrb.com/) (Ruby)
 - [Hugo](https://gohugo.io/) (Go)
-- [Gatsby](https://www.gatsbyjs.com/) (React JS)
+- [Gatsby](https://www.gatsbyjs.com/) (React)
+- [Next.js](https://nextjs.org/) (React)
+- [Vue.js](https://vuejs.org/) (Node)
+- [Nuxt.js](https://nuxtjs.org/) (Vue.js)
+- [Svelte](https://svelte.dev/) (Node)
+- [Middleman](https://middlemanapp.com/) (Ruby)
+- [Docusaurus](https://docusaurus.io/) (React)
 
 Prepress allows you to benefit from the power of the [Jamstack](https://jamstack.org/) without being locked into a proprietary infrastructure solution. Your application is hosted on your own object storage via your own cloud account. 
 
@@ -30,7 +36,7 @@ Prebuilt applications are also known as "preprocessed", "pre-rendered" or "stati
 - Javascript
 - Images
 
-These static files are faster to server and easier to scale. They can be hosted across multiple regions without any extra coding, putting them closer to your users without the hassle and expense of replicating data or managing multiple application stacks. They are generally hosted on object storage solutions (such as Amazon S3) which are relatively cheap and much easier to scale up.
+These static files are faster to serve and easier to scale. They can be hosted across multiple regions without any extra coding, putting them closer to your users without the hassle and expense of replicating data or managing multiple application stacks. They are generally hosted on object storage solutions (such as Amazon S3) which are relatively cheap and much easier to scale up.
 
 They are also generally more secure because they have less "surface area" to attack and fewer moving parts that need to be secured (database servers, application code etc).
 
@@ -68,7 +74,7 @@ If you are already building and running a web applications, then you already hav
 You can have your first Prepress application up and running in literally minutes. All you need is:
 
 - An online git repository (public or private) containing your app's code
-- An Amazon Web Services account
+- A cloud storage account with AWS, Google Compute Engine, DigitalOcean, Azure, or Linode
 - A Cloud 66 account (we offer 4-week free trials with no credit card required)
 
 Follow our 5 minute [Getting Started Guide](/prepress/quickstarts/getting-started.html).

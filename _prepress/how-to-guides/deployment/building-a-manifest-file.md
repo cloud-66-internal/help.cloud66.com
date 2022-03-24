@@ -83,9 +83,94 @@ prepress:
     build_command: hugo --gc --minify --config debugconfig.toml
 ```
 
+### Next.js example
+
+```yaml
+prepress:
+  configuration:
+    language: node
+    language_version: 12.13
+    framework: next
+    framework_version: 12.1
+    build_command: next build --profile
+```
+
+### Vue.js example
+
+```yaml
+prepress:
+  configuration:
+    language: node
+    language_version: 12.13
+    framework: vue
+    framework_version: 3.0
+    build_command: npm run build
+```
+
+### Nuxt.js example
+
+```yaml
+prepress:
+  configuration:
+    language: node
+    language_version: 12.13
+    framework: nuxt
+    framework_version: 3.0
+    build_command: npm run build
+```
+
+### Svelte example
+
+```yaml
+prepress:
+  configuration:
+    language: node
+    language_version: 12.13
+    framework: svelte
+    framework_version: 3.0
+    build_command: npm run build
+```
+
+### Middleman example
+
+
+```yaml
+prepress:
+  configuration:
+    language: ruby
+    language_version: 3.0.3
+    framework: middleman
+    framework_version: 4.2
+    build_command: middleman build --clean
+```
+
+### Docusaurus V1 example
+
+```yaml
+prepress:
+  configuration:
+    language: node
+    language_version: 12.13
+    framework: docusaurus_v1
+    framework_version: 1.14.7
+    build_command: npm run build
+```
+
+### Docusaurus V2 example
+
+```yaml
+prepress:
+  configuration:
+    language: node
+    language_version: 12.13
+    framework: docusaurus_v2
+    framework_version: 2.0.0
+    build_command: npm run build
+```
+
 ## Dependency configurations
 
-If your application's build process relies on specific Linux packages you can specify that these packages be automatically installed as part of the build workflow . These will be installed via `apt`. For example: 
+If your application's build process relies on specific Linux packages you can specify that these packages be automatically installed as part of the build workflow. These will be installed via `apt`. For example: 
 
 ```yaml
 prepress:
