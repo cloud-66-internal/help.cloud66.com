@@ -85,6 +85,29 @@ Redirect {
 
 ### Examples of redirect rules
 
+#### Example 1: redirect a single page to a new path
+
+This rule permanently redirects a path of an older version of a page to its new location (and/or filename). Query strings are preserved.
+
+```jsx
+Redirect {	
+	from: "^/how-to-guides/nginx/nginx-auth.html(?P<query>[?].*)?$",
+  to: "/how-to-guides/nginx/customizing-nginx.html${query}",
+  with: 301
+```
+
+#### Example 2: convert query strings into directories
+
+This rule temporarily redirects anyone hitting the `/main` directory of the site with a query string named `path` to a subdirectory with the same name as the the value of the query. This would redirect `/main/?path=foo` to `/main/foo/`.
+
+```jsx
+Redirect {	
+	from: "^/main/[?]path=(?P<path>[^&]+)$",
+  to: "/main/${path}/?path=${path}",
+  with: temporary
+}
+```
+
 ## Rewriting URLs with Webflow
 
 Rewrite rules have three keywords:
@@ -105,7 +128,36 @@ Rewrite {
 
 ### Examples of rewrite rules
 
+#### Example 1: Rewrite a single page to a new path
 
+This will serve the file located at `/how-to-guides/nginx/nginx-auth.html` but display the url `/how-to-guides/nginx/customizing-nginx.html`
+
+```jsx
+Rewrite {	
+	from: "^/how-to-guides/nginx/nginx-auth.html(?P<query>[?].*)?$",
+  to: "/how-to-guides/nginx/customizing-nginx.html${query}",
+}
+```
+
+#### Example 2: Rewrite query-stringed paths to friendly URLs
+
+This will accept requests to the URL pattern `/main/foo/` and serve the underlying URL`/main/?path=foo`.
+
+```jsx
+Rewrite {	
+  from: "/main/${path}/?path=${path}",
+	to: "^/main/[?]path=(?P<path>[^&]+)$",
+}
+```
+
+#### Example 3: Add "index.html" to all paths that don't have an extension
+
+```jsx
+Rewrite {
+	from: "^(?P<path>[^?]*)/(?P<leaf>[^/?.]+)(?P<query>[?].*)?$",
+  to: "${path}/${leaf}/index.html${query}"
+}
+```
 
 ## Blocking traffic with Webflow
 
@@ -125,6 +177,8 @@ Block {
 
 ### Examples of block rules
 
+#### Example 1: Block by country code, IP range or browser
+
 The following rule checks whether a user is *either* in the UK or in the IP range `10.0.0.0/8` *or* using the Chrome browser, and blocks any users that meet *any* of those conditions:
 
 ```jsx
@@ -133,6 +187,16 @@ Block {
         inRange(origin.ip, "10.0.0.0/8") || 
         request.user_agent.client.family == "Chrome",
     message: "You are in the UK or running Chrome",
+}
+```
+
+#### Example 2: Block all non-Apple devices in India
+
+```jsx
+Block {
+    when: device.family.brand != "Apple" &&
+					origin.country_code == "IN",
+		with: 404
 }
 ```
 
