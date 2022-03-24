@@ -116,6 +116,10 @@ If you are not using prefix/suffix in environment variable definition, you can u
 ```shell
 MY_KEY_1=_env(WEB_ADDRESS_EXT:192.168.0.1)
 ```
+### Referencing env vars in manifest files
+
+You can add environment variables to your manifest files, either globally or per environment. Read our [manifest guide](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html#environment-variables) for more details.
+
 
 ### Referencing other env vars on the same app
 
