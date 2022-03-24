@@ -18,6 +18,8 @@ $1.99 / application per month*
 
 120 Free Build minutes per month. Above that, there is an over quota charge of $0.03 per minute.
 
+Traffic $0.095 per GB
+
 ## Skycap
 $3.99 per service per month*
 

@@ -18,7 +18,7 @@ To build your first application, see our [Getting Started guide](/{{page.collect
 
 You can access your _Settings & Information_ page from the right sidebar of your Application Overview. This page shows you general information about your application. For more detailed info, click the **Information tab**.
 
-It also allows you to edit your application name, and you can edit your Docker service configuration under the _Configuration_ menu on the Application Overview. For Rack-based applications, you can edit your Git repository and branch by clicking the _Edit_ button next to each field on the _Settings & Information_ page. Editing your application name has an important implication.
+It also allows you to edit your application name, and you can edit your Git repository and branch by clicking the _Edit_ button next to each field. Editing your application name will change your site's internal Cloud 66 domain.
 
 ## Clone an application
 
