@@ -22,7 +22,7 @@ For Prepress applications the path for `manifest.yml` is:
 
 The `.cloud66` folder must in the root of your source code & repo.
 
-### **Problems upgrading?**
+### Problems upgrading?
 
 If you explicitly set the version of any component in your manifest file, we will respect that setting even if it conflicts with other system changes or upgrades. If you are having trouble upgrading any component of your application, remember to check your manifest file to ensure you have not previously locked the version of that component or one of its dependents.
 
@@ -37,17 +37,17 @@ A typical block of settings will contain some combination the following:
 
 ## Framework configurations
 
-For each framework supported by Prepress you can explicitly define:
+For each application generator supported by Prepress you can explicitly define:
 
 - The **language** it's written in
-- The **version** of that language that your app uses
+- The **version** of that language that your app generator uses
 - The **framework** being used
 - The **version of that framework**
 - The **build command** used to build the application
 
 The examples below illustrate these configurations.
 
-### Ruby example
+### Jekyll example
 
 ```yaml
 prepress:
@@ -83,9 +83,94 @@ prepress:
     build_command: hugo --gc --minify --config debugconfig.toml
 ```
 
+### Next.js example
+
+```yaml
+prepress:
+  configuration:
+    language: node
+    language_version: 12.13
+    framework: next
+    framework_version: 12.1
+    build_command: next build --profile
+```
+
+### Vue.js example
+
+```yaml
+prepress:
+  configuration:
+    language: node
+    language_version: 12.13
+    framework: vue
+    framework_version: 3.0
+    build_command: npm run build
+```
+
+### Nuxt.js example
+
+```yaml
+prepress:
+  configuration:
+    language: node
+    language_version: 12.13
+    framework: nuxt
+    framework_version: 3.0
+    build_command: npm run build
+```
+
+### Svelte example
+
+```yaml
+prepress:
+  configuration:
+    language: node
+    language_version: 12.13
+    framework: svelte
+    framework_version: 3.0
+    build_command: npm run build
+```
+
+### Middleman example
+
+
+```yaml
+prepress:
+  configuration:
+    language: ruby
+    language_version: 3.0.3
+    framework: middleman
+    framework_version: 4.2
+    build_command: middleman build --clean
+```
+
+### Docusaurus V1 example
+
+```yaml
+prepress:
+  configuration:
+    language: node
+    language_version: 12.13
+    framework: docusaurus_v1
+    framework_version: 1.14.7
+    build_command: npm run build
+```
+
+### Docusaurus V2 example
+
+```yaml
+prepress:
+  configuration:
+    language: node
+    language_version: 12.13
+    framework: docusaurus_v2
+    framework_version: 2.0.0
+    build_command: npm run build
+```
+
 ## Dependency configurations
 
-If your application's build process relies on specific Linux packages you can specify that these packages be automatically installed as part of the build workflow . These will be installed via `apt`. For example: 
+If your application's build process relies on specific Linux packages you can specify that these packages be automatically installed as part of the build workflow. These will be installed via `apt`. For example: 
 
 ```yaml
 prepress:
