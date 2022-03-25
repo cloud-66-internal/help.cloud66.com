@@ -1,4 +1,8 @@
 [[redirects]]
+  from = "/rails/how-to-guides/deployment/deployment-health-checks.html"
+  to = "/rails/how-to-guides/security/application-health-checks.html#deployment-success-checks"
+
+[[redirects]]
   from = "/maestro/how-to-guides/nginx/nginx-auth.html"
   to = "/maestro/how-to-guides/nginx/customizing-nginx.html"
 
