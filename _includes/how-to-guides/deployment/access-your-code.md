@@ -1,3 +1,18 @@
+## Private GitHub repositories
+
+Cloud 66 offers a native integration with GitHub. When creating a new application, click on the *Deploy from Github* link and we will install the **Cloud 66 Deployments** GitHub application on your account. This gives us read-only access to the repositories you specify. 
+
+### Updating GitHub application settings
+
+You can easily grant or deny permission to repositories as required in future. To change permissions:
+
+1. Log into your GitHub account
+2. Click on your avatar and then *Settings*
+3. Click on *Applications* (in the left-hand navigation under **Integrations**)
+4. Click the *Configure* button next to the **Cloud 66 Deployments** application
+5. Scroll down to **Repository access** 
+6. Adjust permissions as required and then click *Save*
+
 ## Public repositories
 
 For public Git repositories, you don't need to add the SSH key provided to your Git account. You simply need to provide the Git URL. This differs depending on provider.
