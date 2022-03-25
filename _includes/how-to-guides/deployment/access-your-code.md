@@ -4,19 +4,19 @@ Cloud 66 offers a native integration with GitHub. When creating a new applicatio
 
 ### Adding or updating GitHub accounts
 
-If you have access to multiple GitHub accounts, you will need to add each account separately. To  add more accounts:
+If you have access to multiple GitHub accounts or organizations, you will need to add each separately. To add more accounts or orgs:
 
 1. Log into your Cloud 66 Dashboard
 2. Click on your avatar (top right) and then *Account Settings*
 3. Click on *External Services* in the **Settings** panel (on the left)
-4. Click the *Configure GitHub app* link next to the GitHub app
-5. Click on the name of the account to add - you will be sent to GitHub to configure your access
-6. On the GitHub page, select the required repositories (or the entire account)
+4. Click the *Configure GitHub app* link next to the GitHub app - you will be sent to GitHub to configure your access
+5. Click on the name of the GitHub account or organization you wish to add or update
+6. Select the required repositories (or the entire account / org)
 7. Click *Authorize & Request* 
 8. You will be redirected back to Cloud 66
 
 <div class="notice"><p markdown="1">
-💡 If the account you’ve added requires someone to approve access, you will need to get that approval before its repositories will be available via Cloud 66.
+💡 If the account or organization you’ve added requires someone to approve access, you will need to get that approval before its repositories will be available via Cloud 66.
 </p></div>
 
 
