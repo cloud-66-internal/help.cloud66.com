@@ -12,16 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-Cloud 66 creates unique DNS hostnames for each site you deploy with Prepress. These are based on the name and environment of your site. For example:
-
-```shell
-gatsbydemo.development.c66.me
-myjekyll.production.c66.me
-```
-
-You can point your own (custom) domain at your Prepress application but, because Prepress uses object storage rather than standard web servers, **its domain setup is different from a standard web application**. 
-
-In order to use a custom domain you need to verify that you own the domain and update your DNS with specific records. Follow the steps below and you will be up and running in minutes.
+You can add a custom domain to any Prepress application. Because Prepress uses object storage rather than standard web servers, **its domain setup is slightly different from a standard web application**. You need to point your domain at `ct.cloud66content.com` using a CNAME record. See below for detailed instructions.
 
 ### Note
 <div class="notice"><p>We automatically enable SSL on your domain when we set up your DNS. We will also automatically redirect any visits to HTTP to HTTPS.</p></div>
@@ -36,18 +27,35 @@ Before you start, please check you have the following:
 
 ## Setting up a Custom Domain 
 
-To set up a custom domain for your Prepress app:
+Setting up a custom domain for your Prepress app has two stages - setting up a DNS record for your domain and then enabling it in Cloud 66.
+
+### Stage 1: Add a CNAME to your DNS records
+
+Before you enable your custom domain on your Prepress app, you need to set it up to point to Cloud 66. To do this:
+
+1. Log into your domain provider 
+2. Navigate to the DNS record manager (or editor)
+3. Add `ct.cloud66content.com` as a CNAME record 
+
+If you’re not sure how to do any of the above, google your domain providers name (e.g. GoDaddy) and the phrase “add CNAME record”.
+
+It can take up to 24 hours for this change to propagate, so you may need to attempt Stage 2 several times.
+
+### Stage 2: Enable your custom domain
 
 1. Log into your [Cloud 66 dashboard](https://app.cloud66.com/) and click on the app
 2. Click *Settings & Information* in the right-hand column
 3. Click the *Add a Custom Domain*  link in the main panel 
-4. Enter the full custom domain you want to use and click *SAVE*
-5. Add the two CNAME records to your DNS records
-6. Click the *Done, I've Updated My DNS* records button
+3. Enter the custom domain you want to use and click *SAVE*
+4. We will now attempt to set up a SSL certificate for your domain. If your DNS record is not properly set up or has not propagated yet, this process will fail.
+5. To retry the process, click the *View Certificate* link and then the *Request Renewal* button
 
-It may take some time for your DNS records to propagate (this can take up to 24 hours), so you can also wait a few hours and try again. Come back to the page above and click the *Verify* button to retry the confirmation process. 
+## Editing your custom domain
 
-When the process is complete, a green tick and the word "verified" will appear below your Custom Domain in the main Settings panel.
+You can update your custom domain at any time by clicking the *Edit* button and then saving the update. However bear in mind that:
+
+- You will need to update the DNS records for the new domain before this will work
+- Editing your custom domain will trigger the creation of a new certificate for your app
 
 ## What's next?
 

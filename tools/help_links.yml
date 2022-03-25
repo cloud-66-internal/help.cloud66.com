@@ -248,11 +248,11 @@ maestro:
   cloud_azure:
     page: maestro/how-to-guides/clouds/cloud-azure.html
     page_anchors:
+    - azure-legacy-cloud
     - cloud-66-tag-propagation
     - generating-a-management-certificate
     - generating-credentials-for-azure-cloud
     - maestro-product-heading
-    - microsoft-azure-legacy
     - using-your-management-certificate
   cloud_clouda:
     page: maestro/how-to-guides/clouds/cloud-clouda.html
@@ -264,7 +264,6 @@ maestro:
     page_anchors:
     - authorise-cloud-66-with-digitalocean
     - cloud-66-tag-propagation
-    - external-links
     - maestro-product-heading
     - upgrading-account-keys
   cloud_gce:
@@ -418,6 +417,13 @@ maestro:
     - testing-your-changes
     - what-youll-need
     - whats-next
+  continuous_deployment:
+    page: maestro/how-to-guides/deployment/continuous-deployment.html
+    page_anchors:
+    - continuous-integration-tests
+    - enabling-automated-continuous-deployment
+    - maestro-product-heading
+    - overview
   custom_config:
     page: maestro/tutorials/custom-config.html
     page_anchors:
@@ -748,7 +754,7 @@ maestro:
     - how-much-does-it-cost
     - maestro-product-heading
     - what-is-cloud-66
-    - where-is-it-hosted
+    - where-is-cloud-66-hosted
     - which-clouds-are-supported
     - which-distributions-of-linux-are-supported
     - who-pays-for-the-servers
@@ -2373,10 +2379,10 @@ node:
   cloud_azure:
     page: node/how-to-guides/clouds/cloud-azure.html
     page_anchors:
+    - azure-legacy-cloud
     - cloud-66-tag-propagation
     - generating-a-management-certificate
     - generating-credentials-for-azure-cloud
-    - microsoft-azure-legacy
     - node-product-heading
     - using-your-management-certificate
   cloud_clouda:
@@ -2389,7 +2395,6 @@ node:
     page_anchors:
     - authorise-cloud-66-with-digitalocean
     - cloud-66-tag-propagation
-    - external-links
     - node-product-heading
     - upgrading-account-keys
   cloud_gce:
@@ -2498,6 +2503,13 @@ node:
     - node-product-heading
     - via-ssh
     - with-a-client
+  continuous_deployment:
+    page: node/how-to-guides/deployment/continuous-deployment.html
+    page_anchors:
+    - continuous-integration-tests
+    - enabling-automated-continuous-deployment
+    - node-product-heading
+    - overview
   custom_config:
     page: node/tutorials/custom-config.html
     page_anchors:
@@ -2718,7 +2730,7 @@ node:
     - how-much-does-it-cost
     - node-product-heading
     - what-is-cloud-66
-    - where-is-it-hosted
+    - where-is-cloud-66-hosted
     - which-clouds-are-supported
     - which-distributions-of-linux-are-supported
     - who-pays-for-the-servers
@@ -3966,6 +3978,12 @@ prepress:
     - deleting-an-application
     - prepress-product-heading
     - updating-application-properties
+  application_protection:
+    page: prepress/how-to-guides/common-tools/application-protection.html
+    page_anchors:
+    - enabling-application-protection
+    - prepress-product-heading
+    - what-is-application-protection
   application_transfer:
     page: prepress/account/application-transfer.html
     page_anchors:
@@ -4000,14 +4018,21 @@ prepress:
     page_anchors:
     - combined-example
     - dependency-configurations
+    - docusaurus-v1-example
+    - docusaurus-v2-example
     - framework-configurations
     - gatsby-example
     - hugo-example
+    - jekyll-example
+    - middleman-example
+    - nextjs-example
+    - nuxtjs-example
     - overview
     - prepress-product-heading
     - problems-upgrading
-    - ruby-example
+    - svelte-example
     - the-structure-of-a-manifest-file
+    - vuejs-example
     - whats-next
   cloud66_status:
     page: prepress/policies-specifications/cloud66-status.html
@@ -4033,6 +4058,40 @@ prepress:
     - prepress-product-heading
     - step-1-create-a-user
     - step-2-set-up-access-policies
+  cloud_azure:
+    page: prepress/how-to-guides/clouds/cloud-azure.html
+    page_anchors:
+    - azure-legacy-cloud
+    - generating-a-management-certificate
+    - generating-credentials-for-azure-cloud
+    - prepress-product-heading
+    - using-your-management-certificate
+  cloud_do:
+    page: prepress/how-to-guides/clouds/cloud-do.html
+    page_anchors:
+    - adding-spaces-to-your-cloud-66-account
+    - configuring-digitalocean-for-prepress
+    - prepress-product-heading
+  cloud_gce:
+    page: prepress/how-to-guides/clouds/cloud-gce.html
+    page_anchors:
+    - external-links
+    - generate-gce-api-keys
+    - prepress-product-heading
+  cloud_linode:
+    page: prepress/how-to-guides/clouds/cloud-linode.html
+    page_anchors:
+    - adding-linode-cloud-storage-to-your-cloud-66-account
+    - configuring-linode-for-prepress
+    - external-links
+    - prepress-product-heading
+  continuous_deployment:
+    page: prepress/how-to-guides/deployment/continuous-deployment.html
+    page_anchors:
+    - continuous-integration-tests
+    - enabling-automated-continuous-deployment
+    - overview
+    - prepress-product-heading
   data_protection:
     page: prepress/policies-specifications/data-protection.html
     page_anchors:
@@ -4058,9 +4117,9 @@ prepress:
     - how-much-does-it-cost
     - prepress-product-heading
     - what-is-cloud-66
-    - where-is-it-hosted
+    - where-is-cloud-66-hosted
     - which-clouds-are-supported
-    - who-pays-for-the-servers
+    - who-pays-for-the-cloud-storage
   framework_support:
     page: prepress/references/framework-support.html
     page_anchors:
@@ -4072,17 +4131,17 @@ prepress:
   getting_started:
     page: prepress/quickstarts/getting-started.html
     page_anchors:
-    - 1-choose-your-application-type
-    - 2-access-your-git-repo
-    - 3-define-your-application
-    - 4-configuring-your-application
-    - 5-choosing-a-deployment-target
-    - 6-deploy-your-app
-    - bitbucket-content
+    - 1-connect-your-git-repo
+    - 2-define-your-application
+    - 3-configuring-your-application
+    - 4-adding-a-cloud-provider
+    - 5-deploy-your-app
+    - a-set-up-your-cloud-provider
+    - b-add-your-cloud-provider-to-cloud-66
     - github-content
     - other-git-content
     - prepress-product-heading
-    - setting-up-cloud--access-keys-on-aws-s3
+    - using-a-non-github-host
     - what-youll-need
     - whats-next
   getting_started_with_manifest:
@@ -4095,9 +4154,15 @@ prepress:
     - what-is-a-manifest-file
     - what-youll-need
     - whats-next
+    - yaml-sample-docusaurus-v1--v2
     - yaml-sample-gatsby
     - yaml-sample-hugo
     - yaml-sample-jekyll
+    - yaml-sample-middleman
+    - yaml-sample-nextjs
+    - yaml-sample-nuxtjs
+    - yaml-sample-svelte
+    - yaml-sample-vuejs
   global_search:
     page: prepress/how-to-guides/common-tools/global-search.html
     page_anchors:
@@ -4179,10 +4244,13 @@ prepress:
   prepress_dns:
     page: prepress/tutorials/prepress-dns.html
     page_anchors:
+    - editing-your-custom-domain
     - note
     - overview
     - prepress-product-heading
     - setting-up-a-custom-domain
+    - stage-1-add-a-cname-to-your-dns-records
+    - stage-2-enable-your-custom-domain
     - what-youll-need
     - whats-next
   preview_deployments:
@@ -4282,7 +4350,6 @@ prepress:
   technical_specifications:
     page: prepress/policies-specifications/technical-specifications.html
     page_anchors:
-    - operating-system
     - prepress-product-heading
     - supported-cloud-providers
     - supported-platforms
@@ -4311,13 +4378,27 @@ prepress:
     - glob-syntax
     - prepress-product-heading
     - what-is-a-glob
-  using_maintenance_mode:
-    page: prepress/how-to-guides/common-tools/using-maintenance-mode.html
+  using_webflow_rules_to_route_traffic:
+    page: prepress/how-to-guides/deployment/using-webflow-rules-to-route-traffic.html
     page_anchors:
+    - block-rule-format-and-parameters
+    - blocking-traffic-with-webflow
+    - creating-and-managing-rules
+    - examples-of-block-rules
+    - examples-of-header-rules
+    - examples-of-redirect-rules
+    - examples-of-rewrite-rules
+    - header-format-and-parameters
+    - modifying-headers-with-webflow
     - overview
     - prepress-product-heading
-    - setting-a-custom-maintenance-page
-    - using-maintenance-mode
+    - redirect-format-and-parameters
+    - redirecting-traffic-with-webflow
+    - rewrite-format-and-parameters
+    - rewriting-urls-with-webflow
+    - syntax-for-webflow-rules
+    - testing-rules
+    - webflow-and-protocol-buffer-grammar
   what_is_prepress:
     page: prepress/the-basics/what-is-prepress.html
     page_anchors:
@@ -4566,10 +4647,10 @@ rails:
   cloud_azure:
     page: rails/how-to-guides/clouds/cloud-azure.html
     page_anchors:
+    - azure-legacy-cloud
     - cloud-66-tag-propagation
     - generating-a-management-certificate
     - generating-credentials-for-azure-cloud
-    - microsoft-azure-legacy
     - rails-product-heading
     - using-your-management-certificate
   cloud_clouda:
@@ -4583,7 +4664,6 @@ rails:
     - authorise-cloud-66-with-digitalocean
     - bring-your-own-images-byoi
     - cloud-66-tag-propagation
-    - external-links
     - rails-product-heading
     - upgrading-account-keys
   cloud_gce:
@@ -4680,6 +4760,13 @@ rails:
     - rails-product-heading
     - via-ssh
     - with-a-client
+  continuous_deployment:
+    page: rails/how-to-guides/deployment/continuous-deployment.html
+    page_anchors:
+    - continuous-integration-tests
+    - enabling-automated-continuous-deployment
+    - overview
+    - rails-product-heading
   custom_config:
     page: rails/tutorials/custom-config.html
     page_anchors:
@@ -4946,7 +5033,7 @@ rails:
     - how-much-does-it-cost
     - rails-product-heading
     - what-is-cloud-66
-    - where-is-it-hosted
+    - where-is-cloud-66-hosted
     - which-clouds-are-supported
     - which-distributions-of-linux-are-supported
     - who-pays-for-the-servers
@@ -6610,7 +6697,7 @@ skycap:
     - how-much-does-it-cost
     - skycap-product-heading
     - what-is-cloud-66
-    - where-is-it-hosted
+    - where-is-cloud-66-hosted
     - which-clouds-are-supported
     - which-distributions-of-linux-are-supported
     - who-pays-for-the-servers
