@@ -23,9 +23,11 @@ Depending on your deployment strategy, the deployment process will stop if a ser
 
 Web Success Checks send a request to a **web server’s** HTTP endpoint and assign a status (“pass” or “fail”) based on the range of acceptable HTTP response code. You can configure a non-standard endpoint if required. See below for how to configure these checks.
 
+<!--
 ### Non-Web Success Checks
 
 For Non-Web Success Checks, **we offer an endpoint** that *your* code can call after it is deployed to confirm it is available. This is the mirror image of Web Success Checks above - *your* code calls *our* internal endpoint. See below for how to configure these checks.
+-->
 
 ### Process Success Checks
 
