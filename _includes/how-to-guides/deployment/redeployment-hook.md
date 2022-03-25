@@ -2,7 +2,7 @@
 
 Redeployment hooks allow you to achieve continuous deployment by deploying your application whenever you push a change to your Git repository or when your continuous integration pipeline builds successfully.
 
-Cloud 66 offers several methods for achieving continuous integration. Please read our continuous integration guide to compare and select the ideal method to suit your requirements.
+Cloud 66 offers several methods for achieving continuous integration. Please read our [continuous integration guide](/{{page.collection}}/how-to-guides/deployment/continuous-deployment.html) to compare and select the ideal method to suit your requirements.
 
 ## Accessing redeployment hooks
 
