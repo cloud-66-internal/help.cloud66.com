@@ -2,6 +2,10 @@
 
 Cloud 66 offers a native integration with GitHub. When creating a new application, click on the *Deploy from Github* link and we will install the **Cloud 66 Deployments** GitHub application on your account. This gives us read-only access to the repositories you specify. 
 
+<div class="notice notice-warning"><p markdown="1">
+⚠️ Please make sure you add the Cloud 66 Deployments app to your primary (personal) GitHub profile. This ensures we have the necessary level of access to your repos.
+</p></div>
+
 ### Adding or updating GitHub accounts
 
 If you have access to multiple GitHub accounts or organizations, you will need to add each separately. To add more accounts or orgs:
