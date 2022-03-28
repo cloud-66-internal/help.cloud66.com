@@ -19,20 +19,61 @@ Webflow allows you to define arbitrarily complex rules to route and modify traff
 - Blocking traffic
 - Modifying headers
 
-You set and manage Webflow rules via your Cloud 66 Dashboard. We provide templates to help you write rules, or you can write them from scratch. 
+You set and manage Webflow rules via your Cloud 66 Dashboard. We provide templates to help you write rules, or you can write them from scratch. Webflow is built on top of [Google’s Common Expression Language](https://github.com/google/cel-spec#common-expression-language){:target="_blank"} (CEL). 
 
-## Syntax for Webflow rules
+If you need more detailed info on rules we have an in-depth guide to [understanding rules](/prepress/references/understanding-webflow-rules.html) as well as a reference to [Webflow CEL functions](/prepress/references/webflow-cel-functions.html).
 
-Webflow rules use keywords to define specific functions. The common keywords are:
+## How Webflow rules work
 
-- `from` - defines the pattern of the incoming traffic (*source*) that must be routed using **regex**
-- `to` - defines the pattern of the *destination* for this traffic using **regex with substitution**
-- `when` - sets conditions under which the rule will be applied (**boolean** or **logical**) - see the Webflow grammar section below for more details
-- `with` - defines modifiers that will be applied to the traffic when it is routed (these differ by context)
+Webflow consist of one or more functions that run in a sequence. They run from top to bottom and affect the route that each web request to your application takes. They can also block traffic based on different conditions. If traffic is blocked, it will not run through the rest of the rules that come after the current one.
 
-There are also keywords specific to modifying headers - see the header section below. 
+Each rule is a single function. There are 4 functions in Webflow: `Rewrite`, `Redirect`, `Header` and `Block`. Each function takes a number of parameters, some required and some optional. The values for each parameter is defined by a type. and you can learn more about these types in [CEL documentation](https://github.com/google/cel-spec/blob/master/doc/langdef.md). 
 
-Rules are formatted as colon-delimited keywords separated by line breaks and wrapped in curly brackets. See below for examples.
+Now, let’s look at a practical example: we have changed the name of a page and we want the URL to reflect the new name without moving the underlying resource. For this we can use the `Rewrite` function:
+
+```jsx
+Rewrite {
+	from: "/old_page/index.html",
+	to: "/new_page/index.html"
+}
+```
+
+Let’s break this function down: 
+
+- The function is `Rewrite` (note the case sensitivity). This example has two parameters:
+- `from` is a simple string that defines the URL that will be rewritten
+- `to` is another string that defines the location of the underlying resource
+
+Rewrites can also have an optional `when` parameter - a boolean test that determines whether the rule should be applied to the traffic that it matches. You can use any [boolean expression supported by CEL](https://github.com/google/cel-spec/blob/master/doc/langdef.md#syntax).
+
+Let’s look at a more complex example: you have changed the name of a section of your website from “projects” to “subjects”, which you want to reflect in the public-facing URL, but without changing the underlying location of the files. For this we can use the `Rewrite` function:
+
+```jsx
+Rewrite {
+	from: "^/subjects/(?P<projectname>[?].*)?$",
+	to: "/projects/${projectname}"
+}
+```
+
+Let’s break this function down: 
+
+- The function is `Rewrite` (note the case sensitivity). This example has two parameters:
+- `from` is a regular-expression-capable string against which incoming requests to the `/subjects` path are evaluated. Note that it preserves the sub-path (`projectname`) being requested as a variable to be used by the `to` parameter.
+- `to` is also a regular-expression-capable string, but its purpose is to transform the URL evaluated by the `from` parameter so that it points at the correct underlying resource. You can see how it uses the variables from the `from` parameter to construct the URL that is passed to the rewrite engine.
+
+Let’s look at a final example - this time of a `Redirect` with a `when` parameter. 
+
+```jsx
+Redirect {
+	from: "^/main/(?P<splat>[^?]*)(?P<query>[?].*)?$",
+  to: "/es/main/${splat}${query}",
+  with: 301
+	when: origin.country_code == "ES" || origin.country_code == "MX"
+}
+```
+
+As we can see, this function will redirect traffic originating in Spain and Mexico to a Spanish version of the site, and preserve any query strings.  This redirect is set to *permanent* (`301`) by the `with` parameter because it should always apply to this traffic. You can also use `temporary` and `permanent` here - they are aliases of the underlying HTTP codes.
+
 
 ## Creating and managing rules
 
@@ -51,237 +92,93 @@ Rules are managed using your Cloud 66 Dashboard. To create a new rule:
 
 Rules are applied in the order in which they appear on this page. If rules conflict, we will default to the rule higher up in this list. You can drag rules to reorder them. 
 
-### Testing rules
+## References for rule types
 
-We recommend testing your new rule before setting it live. To do this, choose the **Test status** when creating a rule and then apply the new rule. This will record the results of the rules in your Live Logs without actually routing the traffic. 
+Our full reference guide has detailed explanations and examples of syntax for each type of rule. Click the name of a rule below for more details:
+
+- [Redirect rules](/prepress/references/understanding-webflow-rules.html#redirect-rules)
+- [Rewrite rules](/prepress/references/understanding-webflow-rules.html#rewrite-rules)
+- [Block rules](/prepress/references/understanding-webflow-rules.html#block-rules)
+- [Header rules](/prepress/references/understanding-webflow-rules.html#header-rules)
+
+## Testing Webflow with real payloads
+
+Rules can be challenging to read and debug in the absence of real traffic data. We recommend testing your new rule before setting it live. To do this, choose the **Test status** when creating a rule and then apply the new rule. This will record the results of the rules in your Live Logs without actually routing the traffic. 
 
 To see the logs for your test rule:
 
 1. Click on *Live Logs* in the right-hand column
 2. Check the box in the right-hand column next to the rule you wish to test 
-3. Visit one of the URLs to which the URL should apply
+3. Visit one of the URLs to which the rule should apply
 
-The output of the logs will record the results of the rule (including any errors).
+The output of the logs will record the results of the rule (including any errors). Note that LiveLogs are streamed and are not persisted - they will reset if you close or refresh the page.
 
-## Redirecting traffic with Webflow
+## Debugging and rule construction
 
-Redirect rules support four keywords:
+Watching the LiveLogs for your Webflow rules is useful for a number of different reasons:
 
-- `from` - defines the URL or set of URLs to be redirected
-- `to` - defines the URL or set of URLs to which the traffic will be directed
-- `with` (optional) - defines the method of redirection (permanent or temporary)
-- `when` (optional) - defines the condition(s) when the entire rule will apply
+1. It allows you to see which traffic is being filtered (and which is being ignored)
+2. It gives you detailed examples of traffic payloads, which you can use to construct new or more specific rules
 
-### Redirect format and parameters
+For example, this is a sample payload from LiveLogs:
 
-```jsx
-Redirect {
-    from: <regexp>,
-    to: <regexp substitute>,
-    with: <status code | temporary | permanent , optional>,
-    when: <condition, optional>,
+```json
+{
+   "origin":{
+      "asn":"AS2089",
+      "city_name":"Chiswick",
+      "continent_code":"EU",
+      "country_code":"GB",
+      "ip":"88.11.41.153",
+      "latitude":51.2222,
+      "longitude":-0.2222,
+      "timezone":"Europe/London"
+   },
+   "request":{
+      "host":"help.cloud66.com",
+      "method":"GET",
+      "path":"/css/legacy.css",
+      "url":"/css/legacy.css",
+      "user_agent":{
+         "client":{
+            "family":"Chrome",
+            "major":"99",
+            "minor":"0",
+            "patch":"4844"
+         },
+         "device":{
+            "brand":"Apple",
+            "family":"Mac",
+            "model":"Mac"
+         },
+         "os":{
+            "family":"Mac OS X",
+            "major":"10",
+            "minor":"15",
+            "patch":"7"
+         }
+      },
+      "user_agent_raw":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36"
+   }
 }
 ```
 
-### Examples of redirect rules
-
-#### Example 1: redirect a single page to a new path
-
-This rule permanently redirects a path of an older version of a page to its new location (and/or filename). Query strings are preserved.
+This gives you practical examples for writing rules for everything from geographical filters to browser versions to device types. You could write a function that targets this traffic like so:
 
 ```jsx
-Redirect {	
-	from: "^/how-to-guides/nginx/nginx-auth.html(?P<query>[?].*)?$",
-  to: "/how-to-guides/nginx/customizing-nginx.html${query}",
-  with: 301
+origin.asn == "AS2089" && 
+origin.city_name == "Chiswick" && 
+device.brand == Apple
 ```
 
-#### Example 2: convert query strings into directories
+## Performance
 
-This rule temporarily redirects anyone hitting the `/main` directory of the site with a query string named `path` to a subdirectory with the same name as the the value of the query. This would redirect `/main/?path=foo` to `/main/foo/`.
+Webflow rules are super fast but inevitably there is a linear performance cost associated with them: the more rules that run, the longer the processing takes. We’re talking milliseconds for hundreds of rules, but in production every millisecond counts.  
 
-```jsx
-Redirect {	
-	from: "^/main/[?]path=(?P<path>[^&]+)$",
-  to: "/main/${path}/?path=${path}",
-  with: temporary
-}
-```
+Note if any rule stops the traffic the rest of the rules won’t evaluated. As such we recommend putting `Block` rules higher up in the list.
 
-## Rewriting URLs with Webflow
+## What’s next?
 
-Rewrite rules have three keywords:
-
-- `from` - defines the URL or set of URLs to be rewritten
-- `to` - defines the URL or set of URLs to which the traffic will be directed
-- `when` (optional) - defines the condition(s) when the rule will apply
-
-### Rewrite format and parameters
-
-```jsx
-Rewrite {
-    from: <regexp>,
-    to: <regexp substitute>,
-    when: <condition, optional>,
-}
-```
-
-### Examples of rewrite rules
-
-#### Example 1: Rewrite a single page to a new path
-
-This will serve the file located at `/how-to-guides/nginx/nginx-auth.html` but display the url `/how-to-guides/nginx/customizing-nginx.html`
-
-```jsx
-Rewrite {	
-	from: "^/how-to-guides/nginx/nginx-auth.html(?P<query>[?].*)?$",
-  to: "/how-to-guides/nginx/customizing-nginx.html${query}",
-}
-```
-
-#### Example 2: Rewrite query-stringed paths to friendly URLs
-
-This will accept requests to the URL pattern `/main/foo/` and serve the underlying URL`/main/?path=foo`.
-
-```jsx
-Rewrite {	
-  from: "/main/${path}/?path=${path}",
-	to: "^/main/[?]path=(?P<path>[^&]+)$",
-}
-```
-
-#### Example 3: Add "index.html" to all paths that don't have an extension
-
-```jsx
-Rewrite {
-	from: "^(?P<path>[^?]*)/(?P<leaf>[^/?.]+)(?P<query>[?].*)?$",
-  to: "${path}/${leaf}/index.html${query}"
-}
-```
-
-## Blocking traffic with Webflow
-
-- `when` - defines the condition(s) when the rule will apply
-- `with` - defines the HTTP status code that will be returned to blocked requests (default is `404`)
-- `message` (optional) - the message that will be returned to blocked users
-
-### Block rule format and parameters
-
-```jsx
-Block {
-    when: <condition>,
-    with: <status code, optional>,
-    message: <message,optional>,
-}
-```
-
-### Examples of block rules
-
-#### Example 1: Block by country code, IP range or browser
-
-The following rule checks whether a user is *either* in the UK or in the IP range `10.0.0.0/8` *or* using the Chrome browser, and blocks any users that meet *any* of those conditions:
-
-```jsx
-Block {
-    when: origin.country_code == "GB" || 
-        inRange(origin.ip, "10.0.0.0/8") || 
-        request.user_agent.client.family == "Chrome",
-    message: "You are in the UK or running Chrome",
-}
-```
-
-#### Example 2: Block all non-Apple devices in India
-
-```jsx
-Block {
-    when: device.family.brand != "Apple" &&
-					origin.country_code == "IN",
-		with: 404
-}
-```
-
-## Modifying headers with Webflow
-
-- `add` - Add new key:value pair(s) to the HTTP header
-- `remove` - Remove any key:value pairs where the key matches the conditions
-- `set` - Modify an existing key:value pair in the HTTP header
-- `when` - (optional) - defines the condition(s) when the rule will apply
-
-### Header format and parameters
-
-```jsx
-Header {
-  add: { "key": "value" },
-  remove: [ "key" ],
-  set: { "key": "value" },
-  when: <condition> (optional)
-}
-```
-
-### Examples of header rules
-
-The following rule adds an `X-Country` header when the origin country is the UK, and sets the value of the key to (lowercase) `gb`.
-
-```jsx
-Header {
-  add: { "X-Country": origin.country_code.lowerAscii() },
-  when: origin.country_code.startsWith("GB")
-}
-```
-
-## Webflow and Protocol Buffer grammar
-
-Webflow is built on top of Google’s [Common Expression Language](https://github.com/google/cel-spec) (CEL) and as such can use the [grammar supported by CEL](https://github.com/google/cel-spec/blob/master/doc/langdef.md#syntax). The applies particularly to the `when` conditions in rules, since these use logical operators (such as `==` for “equals” and `!=` for “does not equal”). 
-
-Webflow supports string functions such as `join` and `LowerAscii`. The [CEL Go library](https://github.com/google/cel-go/blob/master/ext/strings.go) has good examples in its comments.
-
-Webflow also supports a subset of **protocol buffer types**. These allow rules to reference components of the web traffic that needs to be routed using dot notation. The buffer types supported are:
-
-```jsx
-message Client {    
-    string family = 1;
-    string major = 2;
-    string minor = 3;
-    string patch = 4;
-}
-
-message OS {
-    string family = 1;
-    string major = 2;
-    string minor = 3;
-    string patch = 4;
-    string patch_minor = 5;
-}
-
-message Device {
-    string family = 1;
-    string brand = 2;
-    string model = 3;
-}
-
-message UserAgent {
-    Client client = 1;
-    OS os = 2;
-    Device device = 3;
-}
-
-message Request {
-    string user_agent_raw = 1;
-    UserAgent user_agent = 2;
-    string url = 3;
-    string path = 4;
-    string method = 5;
-    string host = 6;
-}
-
-message Origin {
-    string ip = 1;
-    string continent_code = 2;
-    string country_code = 3;
-    string city_name = 4;
-    float latitude = 5;
-    float longitude = 6;
-    string timezone = 7;
-    string asn = 8;
-}
-```
+- Lean more about Webflow in our [reference guide](/prepress/references/understanding-webflow-rules.html)
+- Set up a [custom domain](/prepress/tutorials/prepress-dns.html) for your Prepress site
+- Learn about [Manifest files](/prepress/quickstarts/getting-started-with-manifest.html) - a powerful configuration tool
