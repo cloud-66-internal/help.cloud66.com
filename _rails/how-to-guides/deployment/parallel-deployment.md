@@ -117,6 +117,8 @@ Rolling deployments work as follows:
 4. If either group deployment fails, it will not be added back to load balancer and deployment will stop.
 5. When deploying again, the previously failed group (if present) will always go first
 
+<div class="notice notice-warning"><p markdown="1">We strongly recommend adding [deployment success checks](/{{page.collection}}/how-to-guides/security/application-health-checks.html#deployment-success-checks) to your application to help catch a wider range of errors (i.e. errors that may not disrupt code deployment but that nonetheless break your application).</p></div>
+
 ## Pros and cons of each deployment strategy
 
 <table class='table table-bordered table-striped'>
