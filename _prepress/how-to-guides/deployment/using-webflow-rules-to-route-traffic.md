@@ -19,7 +19,9 @@ Webflow allows you to define arbitrarily complex rules to route and modify traff
 - Blocking traffic
 - Modifying headers
 
-You set and manage Webflow rules via your Cloud 66 Dashboard. We provide templates to help you write rules, or you can write them from scratch. Webflow is built on top of [Google’s Common Expression Language](https://github.com/google/cel-spec#common-expression-language){:target="_blank"} (CEL).
+You set and manage Webflow rules via your Cloud 66 Dashboard. We provide templates to help you write rules, or you can write them from scratch. Webflow is built on top of [Google’s Common Expression Language](https://github.com/google/cel-spec#common-expression-language){:target="_blank"} (CEL). 
+
+If you need more detailed info on rules we have an in-depth guide to [understanding rules](/prepress/references/understanding-webflow-rules.html) as well as a reference to [Webflow CEL functions](/prepress/references/webflow-cel-functions.html).
 
 ## How Webflow rules work
 

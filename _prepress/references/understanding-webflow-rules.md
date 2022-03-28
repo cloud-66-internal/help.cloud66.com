@@ -193,7 +193,7 @@ Header {
 
 Webflow is built on top of Google’s [Common Expression Language](https://github.com/google/cel-spec#readme) (CEL) and as such can use any [grammar supported by CEL](https://github.com/google/cel-spec/blob/master/doc/langdef.md#syntax). The applies particularly to the `when` conditions in rules, since these use logical operators (such as `==` for “equals” and `!=` for “does not equal”). 
 
-Webflow supports string functions such as `replace`, `join` and `LowerAscii`.  We have a separate reference doc that lists all of them.
+Webflow supports string functions such as `replace`, `join` and `LowerAscii`.  We have a [separate reference doc](/prepress/references/webflow-cel-functions.html) that lists all of them.
 
 Webflow supports a set of types specific to web traffic. These allow rules to reference components of the web traffic that needs to be routed using dot notation. The buffer types supported are:
 
