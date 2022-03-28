@@ -4418,27 +4418,52 @@ prepress:
     - glob-syntax
     - prepress-product-heading
     - what-is-a-glob
-  using_webflow_rules_to_route_traffic:
-    page: prepress/how-to-guides/deployment/using-webflow-rules-to-route-traffic.html
+  understanding_webflow_rules:
+    page: prepress/references/understanding-webflow-rules.html
     page_anchors:
     - block-rule-format-and-parameters
-    - blocking-traffic-with-webflow
-    - creating-and-managing-rules
+    - block-rules
     - examples-of-block-rules
     - examples-of-header-rules
     - examples-of-redirect-rules
     - examples-of-rewrite-rules
-    - header-format-and-parameters
-    - modifying-headers-with-webflow
+    - examples-of-webflow-types
+    - header-rule-format-and-parameters
+    - header-rules
     - overview
     - prepress-product-heading
-    - redirect-format-and-parameters
-    - redirecting-traffic-with-webflow
-    - rewrite-format-and-parameters
-    - rewriting-urls-with-webflow
-    - syntax-for-webflow-rules
-    - testing-rules
-    - webflow-and-protocol-buffer-grammar
+    - redirect-rule-format-and-parameters
+    - redirect-rules
+    - rewrite-rule-format-and-parameters
+    - rewrite-rules
+    - webflow-and-cel-grammar
+  using_webflow_rules_to_route_traffic:
+    page: prepress/how-to-guides/deployment/using-webflow-rules-to-route-traffic.html
+    page_anchors:
+    - creating-and-managing-rules
+    - debugging-and-rule-construction
+    - how-webflow-rules-work
+    - overview
+    - performance
+    - prepress-product-heading
+    - references-for-rule-types
+    - testing-webflow-with-real-payloads
+    - whats-next
+  webflow_cel_functions:
+    page: prepress/references/webflow-cel-functions.html
+    page_anchors:
+    - charat
+    - indexof
+    - lastindexof
+    - lowerascii
+    - overview
+    - prepress-product-heading
+    - replace
+    - split
+    - string-functions
+    - substring
+    - trim
+    - upperascii
   what_is_prepress:
     page: prepress/the-basics/what-is-prepress.html
     page_anchors:
