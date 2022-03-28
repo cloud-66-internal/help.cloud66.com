@@ -96,10 +96,10 @@ Rules are applied in the order in which they appear on this page. If rules confl
 
 Our full reference guide has detailed explanations and examples of syntax for each type of rule. Click the name of a rule below for more details:
 
-- Redirect rules
-- Rewrite rules
-- Block rules
-- Header rules
+- [Redirect rules](/prepress/references/understanding-webflow-rules.html#redirect-rules)
+- [Rewrite rules](/prepress/references/understanding-webflow-rules.html#rewrite-rules)
+- [Block rules](/prepress/references/understanding-webflow-rules.html#block-rules)
+- [Header rules](/prepress/references/understanding-webflow-rules.html#header-rules)
 
 ## Testing Webflow with real payloads
 
@@ -123,7 +123,44 @@ Watching the LiveLogs for your Webflow rules is useful for a number of different
 For example, this is a sample payload from LiveLogs:
 
 ```json
-{"origin":{"asn":"AS2089","city_name":"Chiswick","continent_code":"EU","country_code":"GB","ip":"88.11.41.153","latitude":51.2222,"longitude":-0.2222,"timezone":"Europe/London"},"request":{"host":"help.cloud66.com","method":"GET","path":"/css/legacy.css","url":"/css/legacy.css","user_agent":{"client":{"family":"Chrome","major":"99","minor":"0","patch":"4844"},"device":{"brand":"Apple","family":"Mac","model":"Mac"},"os":{"family":"Mac OS X","major":"10","minor":"15","patch":"7"}},"user_agent_raw":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36"}}
+{
+   "origin":{
+      "asn":"AS2089",
+      "city_name":"Chiswick",
+      "continent_code":"EU",
+      "country_code":"GB",
+      "ip":"88.11.41.153",
+      "latitude":51.2222,
+      "longitude":-0.2222,
+      "timezone":"Europe/London"
+   },
+   "request":{
+      "host":"help.cloud66.com",
+      "method":"GET",
+      "path":"/css/legacy.css",
+      "url":"/css/legacy.css",
+      "user_agent":{
+         "client":{
+            "family":"Chrome",
+            "major":"99",
+            "minor":"0",
+            "patch":"4844"
+         },
+         "device":{
+            "brand":"Apple",
+            "family":"Mac",
+            "model":"Mac"
+         },
+         "os":{
+            "family":"Mac OS X",
+            "major":"10",
+            "minor":"15",
+            "patch":"7"
+         }
+      },
+      "user_agent_raw":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36"
+   }
+}
 ```
 
 This gives you practical examples for writing rules for everything from geographical filters to browser versions to device types. You could write a function that targets this traffic like so:
