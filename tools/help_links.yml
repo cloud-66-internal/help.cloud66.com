@@ -22,10 +22,11 @@ maestro:
   access_your_code:
     page: maestro/how-to-guides/common-tools/access-your-code.html
     page_anchors:
+    - adding-or-updating-github-accounts
     - bitbucket-example
-    - github-example
     - maestro-product-heading
     - other-public-repos
+    - private-github-repositories
     - private-repositories
     - public-github-repos
     - public-repositories
@@ -88,12 +89,21 @@ maestro:
     page: maestro/how-to-guides/security/application-health-checks.html
     page_anchors:
     - configuring-a-post-deployment-check
-    - how-the-tests-work
+    - configuring-web-success-checks
+    - dealing-with-domain-access-controls
+    - deployment-success-checks
+    - global-availability-checks
+    - how-availability-tests-work
+    - load-balancer-health-checks
     - maestro-product-heading
     - overview
-    - post-deployment-health-checks
-    - running-an-on-demand-health-check
+    - post-deployment-global-availability-checks
+    - process-success-checks
+    - running-an-on-demand-check
+    - service-checks
+    - the-limitations-of-web-success-checks
     - viewing-results-of-post-deployment-checks
+    - web-success-checks
   application_protection:
     page: maestro/how-to-guides/common-tools/application-protection.html
     page_anchors:
@@ -420,10 +430,17 @@ maestro:
   continuous_deployment:
     page: maestro/how-to-guides/deployment/continuous-deployment.html
     page_anchors:
+    - arguments
+    - continuous-deployment-via-redeployment-hooks
+    - continuous-deployment-via-the-cloud-66-toolbelt
     - continuous-integration-tests
     - enabling-automated-continuous-deployment
+    - examples
     - maestro-product-heading
     - overview
+    - the-cx-redeploy-command
+    - usage
+    - via-the-cloud-66-api
   custom_config:
     page: maestro/tutorials/custom-config.html
     page_anchors:
@@ -1149,6 +1166,7 @@ maestro:
     - docker
     - example-yaml-for-gateway
     - example-yaml-for-nginx
+    - example-yaml-for-post-deployment-global-availability-checks
     - examples-yaml-for-docker
     - gateway
     - key-to-table-headings
@@ -1156,7 +1174,7 @@ maestro:
     - more-on-manifest-files
     - nginx
     - overview
-    - post-deployment-health-checks
+    - post-deployment-availability-checks
   memcached:
     page: maestro/how-to-guides/add-ins/memcached.html
     page_anchors:
@@ -2173,10 +2191,11 @@ node:
   access_your_code:
     page: node/how-to-guides/common-tools/access-your-code.html
     page_anchors:
+    - adding-or-updating-github-accounts
     - bitbucket-example
-    - github-example
     - node-product-heading
     - other-public-repos
+    - private-github-repositories
     - private-repositories
     - public-github-repos
     - public-repositories
@@ -2228,12 +2247,20 @@ node:
     page: node/how-to-guides/security/application-health-checks.html
     page_anchors:
     - configuring-a-post-deployment-check
-    - how-the-tests-work
+    - configuring-web-success-checks
+    - dealing-with-domain-access-controls
+    - deployment-success-checks
+    - global-availability-checks
+    - how-availability-tests-work
+    - load-balancer-health-checks
     - node-product-heading
     - overview
-    - post-deployment-health-checks
-    - running-an-on-demand-health-check
+    - post-deployment-global-availability-checks
+    - process-success-checks
+    - running-an-on-demand-check
+    - the-limitations-of-web-success-checks
     - viewing-results-of-post-deployment-checks
+    - web-success-checks
   application_protection:
     page: node/how-to-guides/common-tools/application-protection.html
     page_anchors:
@@ -2506,10 +2533,17 @@ node:
   continuous_deployment:
     page: node/how-to-guides/deployment/continuous-deployment.html
     page_anchors:
+    - arguments
+    - continuous-deployment-via-redeployment-hooks
+    - continuous-deployment-via-the-cloud-66-toolbelt
     - continuous-integration-tests
     - enabling-automated-continuous-deployment
+    - examples
     - node-product-heading
     - overview
+    - the-cx-redeploy-command
+    - usage
+    - via-the-cloud-66-api
   custom_config:
     page: node/tutorials/custom-config.html
     page_anchors:
@@ -2701,6 +2735,7 @@ node:
     - managing-environment-variables-using-toolbelt
     - node-product-heading
     - pre-defined-environment-variables
+    - referencing-env-vars-in-manifest-files
     - referencing-env-vars-on-other-apps
     - referencing-environment-variables
     - referencing-other-env-vars-on-the-same-app
@@ -3054,13 +3089,14 @@ node:
     - cors-configuration
     - example-yaml-for-gateway
     - example-yaml-for-nginx
+    - example-yaml-for-post-deployment-global-availability-checks
     - gateway
     - key-to-table-headings
     - more-on-manifest-files
     - nginx
     - node-product-heading
     - overview
-    - post-deployment-health-checks
+    - post-deployment-availability-checks
   memcached:
     page: node/how-to-guides/add-ins/memcached.html
     page_anchors:
@@ -3939,10 +3975,11 @@ prepress:
   access_your_code:
     page: prepress/how-to-guides/common-tools/access-your-code.html
     page_anchors:
+    - adding-or-updating-github-accounts
     - bitbucket-example
-    - github-example
     - other-public-repos
     - prepress-product-heading
+    - private-github-repositories
     - private-repositories
     - public-github-repos
     - public-repositories
@@ -4088,10 +4125,12 @@ prepress:
   continuous_deployment:
     page: prepress/how-to-guides/deployment/continuous-deployment.html
     page_anchors:
+    - continuous-deployment-via-redeployment-hooks
     - continuous-integration-tests
     - enabling-automated-continuous-deployment
     - overview
     - prepress-product-heading
+    - via-the-cloud-66-api
   data_protection:
     page: prepress/policies-specifications/data-protection.html
     page_anchors:
@@ -4105,6 +4144,7 @@ prepress:
     - auto-generate-variables
     - default-env-vars
     - prepress-product-heading
+    - referencing-env-vars-in-manifest-files
     - referencing-env-vars-on-other-apps
     - referencing-environment-variables
     - referencing-other-env-vars-on-the-same-app
@@ -4413,9 +4453,10 @@ rails:
   access_your_code:
     page: rails/how-to-guides/common-tools/access-your-code.html
     page_anchors:
+    - adding-or-updating-github-accounts
     - bitbucket-example
-    - github-example
     - other-public-repos
+    - private-github-repositories
     - private-repositories
     - public-github-repos
     - public-repositories
@@ -4469,12 +4510,20 @@ rails:
     page: rails/how-to-guides/security/application-health-checks.html
     page_anchors:
     - configuring-a-post-deployment-check
-    - how-the-tests-work
+    - configuring-web-success-checks
+    - dealing-with-domain-access-controls
+    - deployment-success-checks
+    - global-availability-checks
+    - how-availability-tests-work
+    - load-balancer-health-checks
     - overview
-    - post-deployment-health-checks
+    - post-deployment-global-availability-checks
+    - process-success-checks
     - rails-product-heading
-    - running-an-on-demand-health-check
+    - running-an-on-demand-check
+    - the-limitations-of-web-success-checks
     - viewing-results-of-post-deployment-checks
+    - web-success-checks
   application_protection:
     page: rails/how-to-guides/common-tools/application-protection.html
     page_anchors:
@@ -4763,10 +4812,17 @@ rails:
   continuous_deployment:
     page: rails/how-to-guides/deployment/continuous-deployment.html
     page_anchors:
+    - arguments
+    - continuous-deployment-via-redeployment-hooks
+    - continuous-deployment-via-the-cloud-66-toolbelt
     - continuous-integration-tests
     - enabling-automated-continuous-deployment
+    - examples
     - overview
     - rails-product-heading
+    - the-cx-redeploy-command
+    - usage
+    - via-the-cloud-66-api
   custom_config:
     page: rails/tutorials/custom-config.html
     page_anchors:
@@ -4936,18 +4992,6 @@ rails:
     - adding-servers-behind-an-on-premises-gateway
     - how-to-deploy-your-application-behind-a-gateway-server
     - rails-product-heading
-  deployment_health_checks:
-    page: rails/how-to-guides/deployment/deployment-health-checks.html
-    page_anchors:
-    - automated-health-checks
-    - custom-health-checks
-    - dealing-with-domain-access-controls
-    - defining-custom-health-checks
-    - enabling-automated-health-checks
-    - need-more-detail
-    - overview
-    - rails-product-heading
-    - the-limitations-of-health-checks
   deployment_history:
     page: rails/how-to-guides/deployment/deployment-history.html
     page_anchors:
@@ -5004,6 +5048,7 @@ rails:
     - managing-environment-variables-using-toolbelt
     - pre-defined-environment-variables
     - rails-product-heading
+    - referencing-env-vars-in-manifest-files
     - referencing-env-vars-on-other-apps
     - referencing-environment-variables
     - referencing-other-env-vars-on-the-same-app
@@ -5401,10 +5446,11 @@ rails:
     page: rails/references/manifest-web-settings.html
     page_anchors:
     - cors-configuration
+    - deployment-success-checks
     - example-yaml-for-bundle-install-options-in-rails
     - example-yaml-for-gateway
     - example-yaml-for-nginx
-    - example-yaml-for-post-deployment-health-check
+    - example-yaml-for-post-deployment-global-availability-checks
     - example-yaml-for-rack
     - example-yaml-for-rails
     - example-yaml-for-rails-health-checks
@@ -5415,11 +5461,10 @@ rails:
     - nginx
     - node-version-for-rails-applications
     - overview
-    - post-deployment-health-checks
+    - post-deployment-availability-checks
     - rack
     - rails
     - rails-product-heading
-    - rails-rack-deployment-health-checks
     - sinatra
   memcached:
     page: rails/how-to-guides/add-ins/memcached.html
