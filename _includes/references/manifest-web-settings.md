@@ -322,9 +322,9 @@ If you need a newer version of Node, you can install one using the same method a
 
 {% endif %}
 
-## Post-deployment health checks
+## Post-deployment availability checks
 
-You can configure your application to automatically run [health checks](/{{page.collection}}/how-to-guides/security/application-health-checks.html) against an HTTP endpoint each time it is deployed. Results of these checks are available on your Cloud 66 dashboard under *ActiveProtect*. 
+You can configure your application to automatically run [global availability checks](/{{page.collection}}/how-to-guides/security/application-health-checks.html) against an HTTP endpoint each time it is deployed. Results of these checks are available on your Cloud 66 dashboard under *ActiveProtect*. 
 
 <div class="notice"><p>Note that all of the Health Check settings must be nested under the <code>configuration</code> &rarr; <code>activeprotect</code> &rarr; <code>health_check</code> sub-node.</p></div>
 
@@ -373,6 +373,8 @@ The following settings are available via the Manifest file:
 </tbody>
 </table>
 
+### Example YAML for post-deployment global availability checks
+
 {% if include.product == 'maestro' %}
 ```yaml
 docker:
@@ -388,8 +390,6 @@ docker:
 {% endif %}
 
 {% if include.product == 'rails' %}
-
-### Example YAML for post-deployment health check
 
 ```yaml
 rails:
@@ -683,9 +683,9 @@ rack:
     iam_instance_profile_name: rack-perms
 ```
 
-## Rails (Rack) deployment health checks
+## Deployment Success Checks
 
-These checks define tests to confirm whether your application has been successfully deployed, and to mark a deployment as "failed" if any do not pass. For more details on health checks please read our [how-to guide](/rails/how-to-guides/deployment/deployment-health-checks.html). Health Checks have the following Manifest options:
+These checks define tests to confirm whether your application has been successfully deployed, and to mark a deployment as "failed" if any do not pass. For more details on health checks please read our [how-to guide](/rails/how-to-guides/security/application-health-checks.html#deployment-success-checks). Health Checks have the following Manifest options:
 
 <table class='table table-bordered table-striped'>
 <thead>

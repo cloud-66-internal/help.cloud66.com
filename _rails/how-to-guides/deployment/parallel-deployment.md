@@ -92,7 +92,7 @@ All the deployment strategies have a few things in common:
 
 #### Tip
 <div class="notice"><p>
-If you're planning to use parallel or rolling deployments, we recommend <a href="/rails/how-to-guides/deployment/deployment-health-checks.html">adding health checks</a> to your deployment process. </p></div>
+If you're planning to use parallel or rolling deployments, we recommend <a href="/rails/how-to-guides/security/application-health-checks.html#deployment-success-checks">adding health checks</a> to your deployment process. </p></div>
 
 ### Serial deployment
 
@@ -116,6 +116,8 @@ Rolling deployments work as follows:
 3. If the first group deploys successfully, the second group will then be taken off the load balancer, deployed to in parallel, then added back
 4. If either group deployment fails, it will not be added back to load balancer and deployment will stop.
 5. When deploying again, the previously failed group (if present) will always go first
+
+<div class="notice notice-warning"><p markdown="1">We strongly recommend adding [deployment success checks](/{{page.collection}}/how-to-guides/security/application-health-checks.html#deployment-success-checks) to your application to help catch a wider range of errors (i.e. errors that may not disrupt code deployment but that nonetheless break your application).</p></div>
 
 ## Pros and cons of each deployment strategy
 

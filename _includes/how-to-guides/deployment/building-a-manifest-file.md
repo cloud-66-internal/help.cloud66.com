@@ -89,7 +89,7 @@ The (mandatory) component settings define how a component is configured. The Man
 *   [Redis](/{{page.collection}}/references/manifest-database-settings.html#redis) {% if include.product == "rails" %}
 *   [Sinatra](/{{page.collection}}/references/manifest-web-settings.html#sinatra)
 *   [Rails](/{{page.collection}}/references/manifest-web-settings.html#rails)
-*   [Rails health checks](/{{page.collection}}/references/manifest-web-settings.html#rails-rack-deployment-health-checks){% endif %}
+*   [Rails health checks](/{{page.collection}}/references/manifest-web-settings.html#post-deployment-availability-checks){% endif %}
 
 #### Note
 <div class="notice notice-warning"><p>

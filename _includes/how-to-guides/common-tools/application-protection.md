@@ -25,8 +25,10 @@ When an app is protected, you will not be able to trigger a deployment or to sca
 
 You can easily see which of your applications are currently protected by visiting your Dashboard's app list - protected apps are clearly marked.
 
+{% if include.product != 'prepress' %}
 ## More ways to protect your app:
 
 - [Application Private Networks](/{{page.collection}}/how-to-guides/security/using-application-private-networks.html) - a VPN built into your application
 - [Web Application Firewalls](/{{page.collection}}/how-to-guides/security/web-application-firewalls.html)
 - [Failover Groups](/{{page.collection}}/tutorials/failover-groups.html) - managed, quick-response DNS addresses that automatically follow your application’s web endpoints
+{% endif %}
