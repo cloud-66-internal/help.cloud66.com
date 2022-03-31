@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Using Webflow rules to route traffic
+title: Using Traffic rules to route traffic
 categories: how-to-guides/deployment
 order: 1
-lead: "How write, set and manage Webflow rules to route traffic to your Prepress app"
+lead: "How write, set and manage Traffic rules to route traffic to your Prepress app"
 legacy: false
 tags: ["routing","redirects","rewrites"]
 permalink: /:collection/:path:output_ext
@@ -12,22 +12,22 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-Webflow allows you to define arbitrarily complex rules to route and modify traffic to your Prepress application. This includes:
+Traffic allows you to define arbitrarily complex rules to route and modify traffic to your Prepress application. This includes:
 
 - Redirecting traffic from one set of URLs to another
 - Rewriting URLs
 - Blocking traffic
 - Modifying headers
 
-You set and manage Webflow rules via your Cloud 66 Dashboard. We provide templates to help you write rules, or you can write them from scratch. Webflow is built on top of [Google’s Common Expression Language](https://github.com/google/cel-spec#common-expression-language){:target="_blank"} (CEL). 
+You set and manage Traffic rules via your Cloud 66 Dashboard. We provide templates to help you write rules, or you can write them from scratch. Traffic is built on top of [Google’s Common Expression Language](https://github.com/google/cel-spec#common-expression-language){:target="_blank"} (CEL). 
 
-If you need more detailed info on rules we have an in-depth guide to [understanding rules](/prepress/references/understanding-webflow-rules.html) as well as a reference to [Webflow CEL functions](/prepress/references/webflow-cel-functions.html).
+If you need more detailed info on rules we have an in-depth guide to [understanding rules](/prepress/references/understanding-traffic-rules.html) as well as a reference to [Traffic CEL functions](/prepress/references/traffic-cel-functions.html).
 
-## How Webflow rules work
+## How Traffic rules work
 
-Webflow consist of one or more functions that run in a sequence. They run from top to bottom and affect the route that each web request to your application takes. They can also block traffic based on different conditions. If traffic is blocked, it will not run through the rest of the rules that come after the current one.
+Traffic consist of one or more functions that run in a sequence. They run from top to bottom and affect the route that each web request to your application takes. They can also block traffic based on different conditions. If traffic is blocked, it will not run through the rest of the rules that come after the current one.
 
-Each rule is a single function. There are 4 functions in Webflow: `Rewrite`, `Redirect`, `Header` and `Block`. Each function takes a number of parameters, some required and some optional. The values for each parameter is defined by a type. and you can learn more about these types in [CEL documentation](https://github.com/google/cel-spec/blob/master/doc/langdef.md). 
+Each rule is a single function. There are 4 functions in Traffic: `Rewrite`, `Redirect`, `Header` and `Block`. Each function takes a number of parameters, some required and some optional. The values for each parameter is defined by a type. and you can learn more about these types in [CEL documentation](https://github.com/google/cel-spec/blob/master/doc/langdef.md). 
 
 Now, let’s look at a practical example: we have changed the name of a page and we want the URL to reflect the new name without moving the underlying resource. For this we can use the `Rewrite` function:
 
@@ -96,12 +96,12 @@ Rules are applied in the order in which they appear on this page. If rules confl
 
 Our full reference guide has detailed explanations and examples of syntax for each type of rule. Click the name of a rule below for more details:
 
-- [Redirect rules](/prepress/references/understanding-webflow-rules.html#redirect-rules)
-- [Rewrite rules](/prepress/references/understanding-webflow-rules.html#rewrite-rules)
-- [Block rules](/prepress/references/understanding-webflow-rules.html#block-rules)
-- [Header rules](/prepress/references/understanding-webflow-rules.html#header-rules)
+- [Redirect rules](/prepress/references/understanding-traffic-rules.html#redirect-rules)
+- [Rewrite rules](/prepress/references/understanding-traffic-rules.html#rewrite-rules)
+- [Block rules](/prepress/references/understanding-traffic-rules.html#block-rules)
+- [Header rules](/prepress/references/understanding-traffic-rules.html#header-rules)
 
-## Testing Webflow with real payloads
+## Testing Traffic with real payloads
 
 Rules can be challenging to read and debug in the absence of real traffic data. We recommend testing your new rule before setting it live. To do this, choose the **Test status** when creating a rule and then apply the new rule. This will record the results of the rules in your Live Logs without actually routing the traffic. 
 
@@ -115,7 +115,7 @@ The output of the logs will record the results of the rule (including any errors
 
 ## Debugging and rule construction
 
-Watching the LiveLogs for your Webflow rules is useful for a number of different reasons:
+Watching the LiveLogs for your Traffic rules is useful for a number of different reasons:
 
 1. It allows you to see which traffic is being filtered (and which is being ignored)
 2. It gives you detailed examples of traffic payloads, which you can use to construct new or more specific rules
@@ -173,12 +173,12 @@ device.brand == Apple
 
 ## Performance
 
-Webflow rules are super fast but inevitably there is a linear performance cost associated with them: the more rules that run, the longer the processing takes. We’re talking milliseconds for hundreds of rules, but in production every millisecond counts.  
+Traffic rules are super fast but inevitably there is a linear performance cost associated with them: the more rules that run, the longer the processing takes. We’re talking milliseconds for hundreds of rules, but in production every millisecond counts.  
 
 Note if any rule stops the traffic the rest of the rules won’t evaluated. As such we recommend putting `Block` rules higher up in the list.
 
 ## What’s next?
 
-- Lean more about Webflow in our [reference guide](/prepress/references/understanding-webflow-rules.html)
+- Lean more about Traffic in our [reference guide](/prepress/references/understanding-traffic-rules.html)
 - Set up a [custom domain](/prepress/tutorials/prepress-dns.html) for your Prepress site
 - Learn about [Manifest files](/prepress/quickstarts/getting-started-with-manifest.html) - a powerful configuration tool

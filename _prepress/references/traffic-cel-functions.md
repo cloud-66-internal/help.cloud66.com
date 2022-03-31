@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: CEL functions in Webflow
+title: CEL functions in Traffic
 categories: references
-lead: "A guide to the extended CEL functions available in Webflow"
+lead: "A guide to the extended CEL functions available in Traffic"
 legacy: false
 order: 3
 tags: ["billing"]
@@ -12,9 +12,9 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-Webflow encompasses extensions to CEL (common expression language), in particular functions for string manipulation. These are extremely useful for constructing rules. All of the available functions are described below. Note that all indices are zero-based.
+Traffic encompasses extensions to CEL (common expression language), in particular functions for string manipulation. These are extremely useful for constructing rules. All of the available functions are described below. Note that all indices are zero-based.
 
-If you’re unfamiliar with Webflow, please read our [how-to guide](/prepress/how-to-guides/deployment/using-webflow-rules-to-route-traffic.html) first.
+If you’re unfamiliar with Traffic, please read our [how-to guide](/prepress/how-to-guides/deployment/using-traffic-rules-to-route-traffic.html) first.
 
 <div class="notice"><p markdown="1">
 💡 This guide was adapted from Google’s [CEL-Go extension](https://pkg.go.dev/github.com/google/cel-go/ext#section-readme) documentation
