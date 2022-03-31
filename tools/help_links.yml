@@ -4418,8 +4418,8 @@ prepress:
     - glob-syntax
     - prepress-product-heading
     - what-is-a-glob
-  understanding_traffic_rules:
-    page: prepress/references/understanding-traffic-rules.html
+  understanding_webflow_rules:
+    page: prepress/references/understanding-webflow-rules.html
     page_anchors:
     - block-rule-format-and-parameters
     - block-rules
@@ -4437,8 +4437,8 @@ prepress:
     - rewrite-rule-format-and-parameters
     - rewrite-rules
     - traffic-and-cel-grammar
-  using_traffic_rules_to_route_traffic:
-    page: prepress/how-to-guides/deployment/using-traffic-rules-to-route-traffic.html
+  using_webflow_rules_to_route_traffic:
+    page: prepress/how-to-guides/deployment/using-webflow-rules-to-route-traffic.html
     page_anchors:
     - creating-and-managing-rules
     - debugging-and-rule-construction
@@ -4449,8 +4449,8 @@ prepress:
     - references-for-rule-types
     - testing-traffic-with-real-payloads
     - whats-next
-  traffic_cel_functions:
-    page: prepress/references/traffic-cel-functions.html
+  webflow_cel_functions:
+    page: prepress/references/webflow-cel-functions.html
     page_anchors:
     - charat
     - indexof
