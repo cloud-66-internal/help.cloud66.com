@@ -25,12 +25,6 @@ Web Success Checks send a request to a **web server’s** HTTP endpoint and assi
 
 The deployment process will stop if a server fails its Web Success Check. This can help to catch deployments that don’t throw any errors, but are problematic for other reasons (such as issues at the code or database level). This is useful for serial and rolling deployment strategies.
 
-<!--
-### Non-Web Success Checks
-
-For Non-Web Success Checks, **we offer an endpoint** that *your* code can call after it is deployed to confirm it is available. This is the mirror image of Web Success Checks above - *your* code calls *our* internal endpoint. See below for how to configure these checks.
--->
-
 ### Process Success Checks
 
 If your application uses a custom web server such as Puma, Unicorn or Thin (i.e. anything other than Passenger, our default web server) then we offer automated Process Success Checks after each deployment.
