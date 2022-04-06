@@ -120,6 +120,8 @@ Rolling deployments work as follows:
 
 You can [tag your application servers](/{{page.collection}}/how-to-guides/deployment/tagging-components.html) as either `c66.deployment.group.first` or `c66.deployment.group.last` to indicate your preference for ordering. We will abide by this ordering where possible (but cannot guarantee it).
 
+<div class="notice notice-warning"><p markdown="1">We strongly recommend adding [deployment success checks](/{{page.collection}}/how-to-guides/security/application-health-checks.html#deployment-success-checks) to your application to help catch a wider range of errors (i.e. errors that may not disrupt code deployment but that nonetheless break your application).</p></div>
+
 ## Pros and cons of each deployment strategy
 
 <table class='table table-bordered table-striped'>

@@ -12,6 +12,10 @@ Cloud 66 offers several ways to achieve continuous deployment for your applicati
 {: .table .table-bordered .table-striped}
 {% endif %}
 
+<div class="notice notice-danger"><p markdown="1">
+🚨 If you had already enabled continuous integration via the Toolbelt and added redeployment hooks to your GitHub repo (before January 2022), you will now be sending two deployment signals to Cloud 66. Please remove any redeployment hooks from GitHub if you are using automated continuous deployment (see below).
+</p></div>
+
 ## Enabling automated continuous deployment
 
 This method is only available if you have connected your Cloud 66 account to GitHub by installing the Cloud 66 GitHub account. If you have not done this, please [follow our guide](/{{page.collection}}/how-to-guides/common-tools/access-your-code.html).
@@ -35,7 +39,7 @@ $ cx settings set -s my_app_name continuous.deploy true
 Your application will now be deployed every time you commit changes to the branch of your repo which the application is set to use. 
 
 <div class="notice notice-warning"><p markdown="1">
-🚨 This is particularly useful for development versions of your application, but we advise caution when using this feature with your live application.
+⚠️ This is particularly useful for development versions of your application, but we advise caution when using this feature with your live application.
 </p></div>
 
 ## Continuous integration tests
