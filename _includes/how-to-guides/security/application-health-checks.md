@@ -42,7 +42,7 @@ Web Success Checks are defined in your application’s **[manifest file](/{{pag
 ```yaml
     rails:
     	configuration:
-    		health:
+    		health_check:
     			protocol: 'http'
     			host: 'localhost'
     			port: 80
@@ -63,7 +63,7 @@ To simply use all these defaults with no changes, you can set:
 ```yaml
     rails:
     	configuration:
-    		health: default
+    		health_check: default
 ```
 
 ### Dealing with domain access controls
