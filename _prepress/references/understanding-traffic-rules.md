@@ -1,9 +1,9 @@
 ---
 layout: post
 template: one-col
-title: Understanding Webflow rules 
+title: Understanding Traffic rules 
 categories: references
-lead: "A reference guide to Webflow rules and parameters"
+lead: "A reference guide to Traffic rules and parameters"
 legacy: false
 order: 1
 tags: ["billing"]
@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## Overview 
 
-Webflow allows you to define arbitrarily complex rules to route and modify traffic to your Prepress application. If you need help writing, testing or implementing Webflow rules, please read our [how-to guide](/prepress/how-to-guides/deployment/using-webflow-rules-to-route-traffic.html). This reference guide describes rule functions and their parameters in more detail for those who need to write more complex rules.
+Traffic allows you to define arbitrarily complex rules to route and modify traffic to your Prepress application. If you need help writing, testing or implementing Traffic rules, please read our [how-to guide](/prepress/how-to-guides/deployment/using-traffic-rules-to-route-traffic.html). This reference guide describes rule functions and their parameters in more detail for those who need to write more complex rules.
 
 
 ## Redirect rules
@@ -189,13 +189,13 @@ Header {
 }
 ```
 
-## Webflow and CEL grammar
+## Traffic and CEL grammar
 
-Webflow is built on top of Google’s [Common Expression Language](https://github.com/google/cel-spec#readme) (CEL) and as such can use any [grammar supported by CEL](https://github.com/google/cel-spec/blob/master/doc/langdef.md#syntax). The applies particularly to the `when` conditions in rules, since these use logical operators (such as `==` for “equals” and `!=` for “does not equal”). 
+Traffic is built on top of Google’s [Common Expression Language](https://github.com/google/cel-spec#readme) (CEL) and as such can use any [grammar supported by CEL](https://github.com/google/cel-spec/blob/master/doc/langdef.md#syntax). The applies particularly to the `when` conditions in rules, since these use logical operators (such as `==` for “equals” and `!=` for “does not equal”). 
 
-Webflow supports string functions such as `replace`, `join` and `LowerAscii`.  We have a [separate reference doc](/prepress/references/webflow-cel-functions.html) that lists all of them.
+Traffic supports string functions such as `replace`, `join` and `LowerAscii`.  We have a [separate reference doc](/prepress/references/traffic-cel-functions.html) that lists all of them.
 
-Webflow supports a set of types specific to web traffic. These allow rules to reference components of the web traffic that needs to be routed using dot notation. The buffer types supported are:
+Traffic supports a set of types specific to web traffic. These allow rules to reference components of the web traffic that needs to be routed using dot notation. The buffer types supported are:
 
 ```jsx
 Client {    
@@ -246,9 +246,9 @@ Origin {
 }
 ```
 
-## Examples of Webflow types
+## Examples of Traffic types
 
-A good way to get practical examples of the types supported by Webflow is to watch your app’s LiveLogs for Web Traffic. These are JSON formatted so they can be easily grabbed and reformatted for easier reading.
+A good way to get practical examples of the types supported by Traffic is to watch your app’s LiveLogs for Web Traffic. These are JSON formatted so they can be easily grabbed and reformatted for easier reading.
 
 For example:
 

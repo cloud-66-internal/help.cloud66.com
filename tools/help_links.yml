@@ -4122,6 +4122,21 @@ prepress:
     - configuring-linode-for-prepress
     - external-links
     - prepress-product-heading
+  config_store:
+    page: prepress/how-to-guides/deployment/config-store.html
+    page_anchors:
+    - accessing-configstore-variables
+    - account-level
+    - application-level
+    - configstore-data-structure
+    - configstore-metadata
+    - configstore-vs-environment-variables
+    - environment-variables
+    - levels-of-configstore
+    - namespaces
+    - overview
+    - prepress-product-heading
+    - serviceyml-placeholder
   continuous_deployment:
     page: prepress/how-to-guides/deployment/continuous-deployment.html
     page_anchors:
@@ -4397,6 +4412,21 @@ prepress:
     page: prepress/the-basics/index.html
     page_anchors:
     - prepress-product-heading
+  traffic_cel_functions:
+    page: prepress/references/traffic-cel-functions.html
+    page_anchors:
+    - charat
+    - indexof
+    - lastindexof
+    - lowerascii
+    - overview
+    - prepress-product-heading
+    - replace
+    - split
+    - string-functions
+    - substring
+    - trim
+    - upperascii
   tutorials_index:
     page: prepress/tutorials/index.html
     page_anchors:
@@ -4418,8 +4448,8 @@ prepress:
     - glob-syntax
     - prepress-product-heading
     - what-is-a-glob
-  understanding_webflow_rules:
-    page: prepress/references/understanding-webflow-rules.html
+  understanding_traffic_rules:
+    page: prepress/references/understanding-traffic-rules.html
     page_anchors:
     - block-rule-format-and-parameters
     - block-rules
@@ -4427,7 +4457,7 @@ prepress:
     - examples-of-header-rules
     - examples-of-redirect-rules
     - examples-of-rewrite-rules
-    - examples-of-webflow-types
+    - examples-of-traffic-types
     - header-rule-format-and-parameters
     - header-rules
     - overview
@@ -4436,34 +4466,19 @@ prepress:
     - redirect-rules
     - rewrite-rule-format-and-parameters
     - rewrite-rules
-    - webflow-and-cel-grammar
-  using_webflow_rules_to_route_traffic:
-    page: prepress/how-to-guides/deployment/using-webflow-rules-to-route-traffic.html
+    - traffic-and-cel-grammar
+  using_traffic_rules_to_route_traffic:
+    page: prepress/how-to-guides/deployment/using-traffic-rules-to-route-traffic.html
     page_anchors:
     - creating-and-managing-rules
     - debugging-and-rule-construction
-    - how-webflow-rules-work
+    - how-traffic-rules-work
     - overview
     - performance
     - prepress-product-heading
     - references-for-rule-types
-    - testing-webflow-with-real-payloads
+    - testing-traffic-with-real-payloads
     - whats-next
-  webflow_cel_functions:
-    page: prepress/references/webflow-cel-functions.html
-    page_anchors:
-    - charat
-    - indexof
-    - lastindexof
-    - lowerascii
-    - overview
-    - prepress-product-heading
-    - replace
-    - split
-    - string-functions
-    - substring
-    - trim
-    - upperascii
   what_is_prepress:
     page: prepress/the-basics/what-is-prepress.html
     page_anchors:

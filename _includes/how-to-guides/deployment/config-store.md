@@ -21,7 +21,9 @@ When you add environment variables to your application they become Linux operati
 
 ConfigStore provides an alternative place to store centralised information that will not be exposed in OS level environment variables.
 
+{% if include.product == 'Skycap' %}
 This is particularly useful for information that you need to access from Kubernetes configuration files (for example within [Skycap Stencil Templates](/skycap/the-basics/formations-stencils-and-snapshots.html#what-is-a-stencil)) which may not have direct access to the underlying operating system.
+{% endif %}
 
 ## ConfigStore Data Structure
 
