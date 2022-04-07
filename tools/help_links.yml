@@ -4122,6 +4122,21 @@ prepress:
     - configuring-linode-for-prepress
     - external-links
     - prepress-product-heading
+  config_store:
+    page: prepress/how-to-guides/deployment/config-store.html
+    page_anchors:
+    - accessing-configstore-variables
+    - account-level
+    - application-level
+    - configstore-data-structure
+    - configstore-metadata
+    - configstore-vs-environment-variables
+    - environment-variables
+    - levels-of-configstore
+    - namespaces
+    - overview
+    - prepress-product-heading
+    - serviceyml-placeholder
   continuous_deployment:
     page: prepress/how-to-guides/deployment/continuous-deployment.html
     page_anchors:

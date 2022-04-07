@@ -736,13 +736,13 @@ These checks define tests to confirm whether your application has been successfu
 </tbody>
 </table>
 
-### Example YAML for Rails Health Checks
+### Example YAML for Deployment Success Checks
 
 {% if include.product == 'rails' %}
 ```yml
   rails:
     configuration:
-      health:
+      health_check:
         protocol: 'https'
         host: '127.0.0.1'
         port: 4430

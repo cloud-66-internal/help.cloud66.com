@@ -11,10 +11,9 @@ This doc explains how each health check works, how they differ and how to implem
 
 ## Deployment Success Checks
 
-Deployment Success Checks monitor whether your code has been deployed properly by checking on the status of your Rails application. There are three varieties of Deployment Success Checks:
+Deployment Success Checks monitor whether your code has been deployed properly by checking on the status of your Rails application. There are two varieties of Deployment Success Checks:
 
 - Web Success Checks
-- Non-Web Success Checks
 - Process success checks
 
 Depending on your deployment strategy, the deployment process will stop if a server fails its Deployment Success Check. This can help to catch deployments that don’t throw any errors, but are problematic for other reasons (such as issues at the code or database level). This is particularly useful for serial or rolling **[deployment strategies](/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html)** to ensure that bad code doesn’t bring your entire application down.
@@ -24,12 +23,6 @@ Depending on your deployment strategy, the deployment process will stop if a ser
 Web Success Checks send a request to a **web server’s** HTTP endpoint and assign a status (“pass” or “fail”) based on the range of acceptable HTTP response code. You can configure a non-standard endpoint if required. See below for how to configure these checks.
 
 The deployment process will stop if a server fails its Web Success Check. This can help to catch deployments that don’t throw any errors, but are problematic for other reasons (such as issues at the code or database level). This is useful for serial and rolling deployment strategies.
-
-<!--
-### Non-Web Success Checks
-
-For Non-Web Success Checks, **we offer an endpoint** that *your* code can call after it is deployed to confirm it is available. This is the mirror image of Web Success Checks above - *your* code calls *our* internal endpoint. See below for how to configure these checks.
--->
 
 ### Process Success Checks
 
@@ -49,7 +42,7 @@ Web Success Checks are defined in your application’s **[manifest file](/{{pag
 ```yaml
     rails:
     	configuration:
-    		health:
+    		health_check:
     			protocol: 'http'
     			host: 'localhost'
     			port: 80
@@ -70,7 +63,7 @@ To simply use all these defaults with no changes, you can set:
 ```yaml
     rails:
     	configuration:
-    		health: default
+    		health_check: default
 ```
 
 ### Dealing with domain access controls
