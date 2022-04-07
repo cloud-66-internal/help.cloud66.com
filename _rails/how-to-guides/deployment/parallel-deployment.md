@@ -103,19 +103,22 @@ In this strategy we deploy to each server one at a time. We take each server off
 In this strategy we deploy to all your server simultaneously. Servers are not taken off the load balancer. If your webserver does not support zero-downtime reloads you will most likely have some downtime while your application reloads.
 
 ### Rolling deployment
-In order to use rolling deployments, your application needs: 
+
+In order to use rolling deployments, your application needs:
 
 - A load balancer
-- At least four servers (not including the load balancer)...
-- ...two of which **must be web servers**
+- At least four servers (not including the load balancer)…
+- …two of which **must be web servers**
 
 Rolling deployments work as follows:
 
-1. Your servers are split as evenly as possible into two groups
-2. The first group will be taken off the load balancer, deployed to in parallel, then added back to load balancer
+1. Your servers are split into two groups based on a heuristic that takes factors like server size into account. The groups are balanced by server load and role (as far as possible).
+2. The first group is taken off the load balancer, deployed to in parallel, then added back to the load balancer
 3. If the first group deploys successfully, the second group will then be taken off the load balancer, deployed to in parallel, then added back
 4. If either group deployment fails, it will not be added back to load balancer and deployment will stop.
 5. When deploying again, the previously failed group (if present) will always go first
+
+You can [tag your application servers](/{{page.collection}}/how-to-guides/deployment/tagging-components.html) as either `c66.deployment.group.sapphire` or `c66.deployment.group.emerald` to indicate your preference for grouping. We will abide by this grouping wherever possible (but cannot guarantee it).
 
 <div class="notice notice-warning"><p markdown="1">We strongly recommend adding [deployment success checks](/{{page.collection}}/how-to-guides/security/application-health-checks.html#deployment-success-checks) to your application to help catch a wider range of errors (i.e. errors that may not disrupt code deployment but that nonetheless break your application).</p></div>
 
