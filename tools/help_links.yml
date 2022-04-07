@@ -5488,12 +5488,12 @@ rails:
     - cors-configuration
     - deployment-success-checks
     - example-yaml-for-bundle-install-options-in-rails
+    - example-yaml-for-deployment-success-checks
     - example-yaml-for-gateway
     - example-yaml-for-nginx
     - example-yaml-for-post-deployment-global-availability-checks
     - example-yaml-for-rack
     - example-yaml-for-rails
-    - example-yaml-for-rails-health-checks
     - examples-of-bundle-install-options-railsrack
     - gateway
     - key-to-table-headings
