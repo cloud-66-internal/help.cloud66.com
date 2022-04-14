@@ -15,7 +15,7 @@ Before you can deploy your app please check you have the following:
 
 - **A Cloud 66 Account** — If you don't already have one **[Sign up for a free Cloud 66 account](https://app.cloud66.com/users/sign_up)**. You'll get free unlimited access to all products for 4 weeks.
 - **A Git Repo containing your application code** — This can be a public or private repo. You can use any Git provider like GitHub / BitBucket or use your own privately hosted repo.
-- **A Cloud Account** — at the moment we only support AWS S3 (we will be adding more cloud providers soon)
+- **A Cloud Account with object storage enabled** — [see below](#a-set-up-your-cloud-provider).
 
 
 ## 1. Connect your Git Repo
@@ -119,7 +119,7 @@ During the build and deployment process you can view the log to see what’s hap
 ## What's Next?
 
 - [Setting up DNS records](/prepress/tutorials/prepress-dns.html) for your Prepress app
-- Configuring continuous deployment using [redeployment hooks](/prepress/how-to-guides/deployment/redeployment-hook.html)
+- Configuring [continuous deployment](/prepress/how-to-guides/deployment/continuous-deployment.html) 
 - Setting up [preview deployments](/prepress/how-to-guides/deployment/preview-deployments.html)
 
 

@@ -78,8 +78,8 @@ execute: true
 ```
 
 This hook simply overwrites the standard config file with the config file of your choice at the start of the deployment process. Please read our [full guide to deploy hooks](/{{page.collection}}/how-to-guides/deployment/using-deploy-hooks.html) to learn how to implement this hook.
-
-
+{% endif %}
+{% if page.collection !='maestro' %}
 ### Environment variables during deployment
 
 When you set up an application on Cloud 66, we detect its database type(s) (from your code) and generate a set of variables for things like `username` and `password` and `URL`. We only generate these "analyzed variables" **after** you have confirmed that we will be managing the database(s). 
