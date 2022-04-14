@@ -255,6 +255,30 @@ services:
 
 ### Requires
 
+<div class="Tabs Tabs--enclosed">
+    <nav>
+      <ul class="TabMini js_tabs">
+        <li class="TabMini-item active">
+          <a href="#V2-3" class="TabMini-link">
+            Maestro V2
+          </a>
+        </li>
+        <li class="TabMini-item">
+          <a href="#V1-3" class="TabMini-link">
+            Maestro V1
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+<section id="V2-3" class="Tabs-content js_tab_content" markdown="1">
+
+<p><strong>This command is not supported by Maestro Version 2.</strong></p>
+
+</section>
+
+<section id="V1-3" class="Tabs-content js_tab_content is-hidden" markdown="1">
+
 In some cases, you may want to make sure that a service is only started if another, related service is also started. The `requires` option allows you to set such dependencies. For example:
 
 ```yaml
@@ -264,6 +288,9 @@ services:
         requires:
           - "my_api"
 ```
+
+</section>
+</div>
 
 
 ### Restart on deploy
