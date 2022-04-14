@@ -2630,10 +2630,12 @@ node:
     - database-customization-variables
     - database-deployment-types
     - dedicated-database
+    - environment-variables-during-deployment
     - local-database
     - migrating-to-an-external-database
     - no-database-external
     - node-product-heading
+    - setting-variables-manually-overriding
     - upgrading-your-database
   database_replication:
     page: node/how-to-guides/databases/database-replication.html
@@ -4248,6 +4250,17 @@ prepress:
     page: prepress/how-to-guides/index.html
     page_anchors:
     - prepress-product-heading
+  import_netlify:
+    page: prepress/quickstarts/import-netlify.html
+    page_anchors:
+    - 1-build-and-deploy-your-code
+    - 2-check-your-traffic-rules
+    - 3-update-your-dns
+    - cloud-providers-supported
+    - overview
+    - prepress-product-heading
+    - what-youll-need
+    - whats-next
   index:
     page: prepress/index.html
     page_anchors:
