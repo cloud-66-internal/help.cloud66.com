@@ -1,4 +1,12 @@
 [[redirects]]
+  from = "/maestro/references/connect-cloud66-to-git-repo.html"
+  to = "/maestro/how-to-guides/common-tools/access-your-code.html"
+
+[[redirects]]
+  from = "/node/references/connect-cloud66-to-git-repo.html"
+  to = "/node/how-to-guides/common-tools/access-your-code.html"
+
+[[redirects]]
   from = "/rails/how-to-guides/deployment/deployment-health-checks.html"
   to = "/rails/how-to-guides/security/application-health-checks.html#deployment-success-checks"
 
