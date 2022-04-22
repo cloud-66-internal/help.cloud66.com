@@ -24,14 +24,18 @@ maestro:
     page_anchors:
     - adding-or-updating-github-accounts
     - bitbucket-example
+    - deploying-manually-configured-github-repos
     - maestro-product-heading
+    - manually-configuring-github-access
+    - other-private-repositories
     - other-public-repos
+    - overview
     - private-github-repositories
-    - private-repositories
     - public-github-repos
     - public-repositories
     - querying-git-hashes-for-services
     - using-github-with-maestro
+    - working-with-multiple-github-accounts
   account_index:
     page: maestro/account/index.html
     page_anchors:
@@ -391,15 +395,6 @@ maestro:
     - overview
     - using-the-max-surge-setting
     - using-the-max-unavailable-setting
-  connect_cloud66_to_git_repo:
-    page: maestro/references/connect-cloud66-to-git-repo.html
-    page_anchors:
-    - bitbucket-example
-    - github-example
-    - maestro-product-heading
-    - notice
-    - private-repositories
-    - public-repositories
   connect_db_servers:
     page: maestro/how-to-guides/databases/shells/connect-db-servers.html
     page_anchors:
@@ -2193,12 +2188,16 @@ node:
     page_anchors:
     - adding-or-updating-github-accounts
     - bitbucket-example
+    - deploying-manually-configured-github-repos
+    - manually-configuring-github-access
     - node-product-heading
+    - other-private-repositories
     - other-public-repos
+    - overview
     - private-github-repositories
-    - private-repositories
     - public-github-repos
     - public-repositories
+    - working-with-multiple-github-accounts
   account_index:
     page: node/account/index.html
     page_anchors:
@@ -2514,15 +2513,6 @@ node:
     - changing-ports-in-your-application-code
     - node-product-heading
     - overview
-  connect_cloud66_to_git_repo:
-    page: node/references/connect-cloud66-to-git-repo.html
-    page_anchors:
-    - bitbucket-example
-    - github-example
-    - node-product-heading
-    - notice
-    - private-repositories
-    - public-repositories
   connect_db_servers:
     page: node/how-to-guides/databases/shells/connect-db-servers.html
     page_anchors:
@@ -2789,9 +2779,7 @@ node:
     page: node/quickstarts/getting-started.html
     page_anchors:
     - accessing-your-git-repo
-    - bitbucket-content
     - choosing-a-deployment-target
-    - choosing-application-type
     - cloud-content
     - configuring-your-application
     - defining-your-application
@@ -2801,6 +2789,7 @@ node:
     - node-product-heading
     - other-git-content
     - server-build-states
+    - using-a-non-github-host
     - what-youll-need
   getting_started_with_manifest:
     page: node/quickstarts/getting-started-with-manifest.html
@@ -3979,12 +3968,16 @@ prepress:
     page_anchors:
     - adding-or-updating-github-accounts
     - bitbucket-example
+    - deploying-manually-configured-github-repos
+    - manually-configuring-github-access
+    - other-private-repositories
     - other-public-repos
+    - overview
     - prepress-product-heading
     - private-github-repositories
-    - private-repositories
     - public-github-repos
     - public-repositories
+    - working-with-multiple-github-accounts
   account_index:
     page: prepress/account/index.html
     page_anchors:
@@ -4508,13 +4501,17 @@ rails:
     page_anchors:
     - adding-or-updating-github-accounts
     - bitbucket-example
+    - deploying-manually-configured-github-repos
+    - manually-configuring-github-access
+    - other-private-repositories
     - other-public-repos
+    - overview
     - private-github-repositories
-    - private-repositories
     - public-github-repos
     - public-repositories
     - querying-git-hashes
     - rails-product-heading
+    - working-with-multiple-github-accounts
   account_index:
     page: rails/account/index.html
     page_anchors:
@@ -6829,7 +6826,6 @@ skycap:
     page: skycap/quickstarts/getting-started.html
     page_anchors:
     - adding-services
-    - choosing-application-type
     - deploying-your-application
     - skycap-product-heading
     - snapshots-and-building-images
