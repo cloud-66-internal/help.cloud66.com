@@ -23,89 +23,66 @@ Before you can deploy your app please check you have the following:
 
 {% include general/cloud_provider_or_own_server_tabs.html product = product %}
 
-## Choosing application type
-
-New users will be shown the product selection wizard. For Skycap, choose "I have a native Ruby or Node app" and then "Deploy Rails & Rack Frameworks" (*Deploy a Ruby App*). 
-
-<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
-    <div class="Grid-cell">
-        <h4>Step 1</h4>
-        <img src="/assets/shared/product_choice_1.png" alt="Product choice wizard - step 1">
-    </div>
-    <div class="Grid-cell">
-        <h4>Step 2</h4>
-        <img src="/assets/shared/product_choice_3.png" alt="Product choice wizard - step 2">
-    </div>
-</div>
-
-If you're already using Cloud 66 just click *New Application &rarr; Node (Node frameworks)* button on the dashboard.
-
-<img src="/assets/shared/new_app_dropdown.png" alt="New application dropdown menu">
-
 ## Accessing your Git Repo
 
-Cloud 66 supports both public and private Git repositories. If you're using a private Git repository you'll need to Add and approve the Cloud 66 public SSH key with your Git provider.
+The first thing we need is access to your code, so that we can build and deploy it for you.  
 
 <div class="Tabs">
     <nav>
       <ul class="TabMini js_tabs">
         <li class="TabMini-item active">
           <a href="#github-content" class="TabMini-link">
-            Github
-          </a>
-        </li>
-        <li class="TabMini-item">
-          <a href="#bitbucket-content" class="TabMini-link">
-            Bitbucket
+            GitHub
           </a>
         </li>
         <li class="TabMini-item">
           <a href="#other-git-content" class="TabMini-link">
-            Other git repositories
+            Other git repos
           </a>
         </li>
       </ul>
     </nav>
 
-    <section id="github-content" class="Tabs-content js_tab_content">
-        <h4>Public Repository</h4>
-        <p>If your code is in a public repository, you don't need to do anything.</p>
-        <h4>Private Repository</h4>
-        <p>To grant access to a private Github repository, you need to add your public SSH key you see on the screen to your Github account. </p>
-        <p>
-            <img src="/assets/rails/rails_add_public_key.png" alt="Adding your Public Key to GitHub">
-        </p>
-        <p><em>Copy the public SSH Key</em> (starts with ssh-rsa and ends with the email address you used to sign up) and then <em>Click Go to GitHub</em>. The GitHub SSH keys page will open in a new browser tab. Click the <em>New SSH key</em> button and paste your public key.</p>
-    </section>
+    <section id="github-content" class="Tabs-content js_tab_content" markdown="1">
 
-    <section id="bitbucket-content" class="Tabs-content js_tab_content is-hidden">
-        <h4>Public Repository</h4>
-        <p>If your code is in a public repository, you don't need to do anything.</p>
-        <h4>Private Repository</h4>
-        <p>To grant access to a private Bitbucket repository, you need to add your public SSH key you see on the screen to your Bitbucket account.</p>
-        <p>
-            <img src="/assets/rails/rails_add_public_key_bitbucket.png" alt="Adding the Public Key to BitBucket">
-        </p>
-    </section>
+The easiest option is to give us (read-only) access to a GitHub repo. To do this:
 
-    <section id="other-git-content" class="Tabs-content js_tab_content is-hidden">
-        <h4>Private Repository</h4>
-        <p>To grant access to your private git repository, add the public SSH key to the list of git users (refer to your git server manual) and make sure your git repository accepts connections on port 22, from Cloud 66 public IP addresses: {% include general/public_ips.html %}</p>
-    </section>
-</div>
+1. Click Get Started
+2. On the next page click *Link with Github*
+3. We’ll send you to our app on Github (you’ll need to sign in)
+4. Once you’re signed in, click *Configure* & then select the account you wish to link to Cloud 66
+5. Install and authorize our Github app (you can restrict our access to specific repos if needed)
+6. You will be redirected back to your Cloud 66 dashboard and you can move on to Step 2.
+
+**Public Github Repositories**
+
+If your code is in a public GitHub repository then you can add it using its public link without installing our GitHub app. To do so, follow the instructions under the *Other git repos* tab (above).
+
+</section><section id="other-git-content" class="Tabs-content js_tab_content is-hidden" markdown="1">
+
+### Using a non-Github host
+
+If you’d prefer to use another git host, or your own self-hosted repository:
+
+1. Click *I’d rather enter a git repo URL*.
+2. Click *View SSH key*
+3. Open your repo and add the key to its settings (usually found under *SSH* or *SSH keys*)
+4. Come back to Cloud 66 and click the green *Next…* button
+
+Make sure your git repository accepts connections on port 22, from Cloud 66 public IP addresses: {% include general/public_ips.html %}
+
+</section></div>
 
 ## Defining your application
 
-Now you need to tell us a bit of info about your app, then we can deploy, Please fill in the following fields:
+Now that we have access to your code, we can set up your application:
 
-<img src="/assets/node/node_about_app.png" alt="Fill in the information about your app: Git repo, name and environment">
+1. Choose the repo you want to deploy and set the branch
+2. Choose an environment for your application
+3. Give your application a name (this will be used to label your application throughout the Cloud 66 dashboard, and will not be visible to public users.)
+4. Click *Analyze*
 
-* Git repo URL for your app &mdash; We support `http://`, `git://` or `git@` URL formats. Please note that **HTTPS isn't currently supported**.
-* **What branch do you want to deploy** &mdash; This defaults to master but you can provide any branch you like.
-* **Give your new application a name** &mdash; This is the name that will be used in the Cloud 66 Dashboard once your app is deployed.
-* **Choose an Environment** &mdash; Choose the Environment that you're deploying to: Production, Development, QA, Staging or Production.
-
-Now click the **Analyze** button. Hang tight, the results will be displayed in a few seconds...
+Hang tight, the results will be displayed in a few seconds...
 
 ## Configuring your application
 

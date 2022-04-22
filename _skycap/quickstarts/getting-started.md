@@ -31,26 +31,6 @@ Build pipelines are composed of all the individual ([containerized](/skycap/the-
     
 * **Pre-built Container Images** &mdash; These can be hosted in any public image repo like Dockerhub or your own private repo. 
 
-
-## Choosing application type
-
-New users will be shown the product selection wizard. For Skycap, choose "I have a containerized application" and then "I already have a Kubernetes cluster" (*Try Skycap*). 
-
-<div class="Grid Grid--gutters Grid--full large-Grid--fit med-Grid--guttersXl">
-    <div class="Grid-cell">
-        <h4>Step 1</h4>
-        <img src="/assets/shared/product_choice_1.png" alt="Product choice wizard - step 1">
-    </div>
-    <div class="Grid-cell">
-        <h4>Step 2</h4>
-        <img src="/assets/shared/product_choice_2.png" alt="Product choice wizard - step 2">
-    </div>
-</div>
-
-If you're already using Cloud 66 just click *New Application &rarr; Skycap (Deploy to a cluster)* button on the dashboard.
-
-<img src="/assets/shared/new_app_dropdown.png" alt="Build a new Node app">
-
 ## Adding Services
 
 The first step is to give your application a **name**. This will be used to label your application throughout the Cloud 66 dashboard.
