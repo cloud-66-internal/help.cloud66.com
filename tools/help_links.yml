@@ -4305,6 +4305,9 @@ prepress:
   prepress_dns:
     page: prepress/tutorials/prepress-dns.html
     page_anchors:
+    - adding-a-subdomain-record
+    - adding-an-apex-record
+    - adding-multiple-custom-domains
     - editing-your-custom-domain
     - note
     - overview
