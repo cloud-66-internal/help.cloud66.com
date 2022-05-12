@@ -92,7 +92,7 @@ To disable replication between applications:
 - Click *Configure data replication* in the right sidebar
 - Select *Disable replication, c*onfirm to commence the disabling process.
 
-## Re-synchronizing slave with master
+## Re-synchronizing replica with master
 
 From time-to-time your replica database may go out of sync with its master. You can re-synchronize a replica in two ways:
 
