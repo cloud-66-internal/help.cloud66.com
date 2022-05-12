@@ -8,11 +8,13 @@ To enable two-factor authentication on your Cloud 66 account:
 
 1. Open your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on your account avatar (top-right) and select *Account Settings*
-3. Click on *Login & Security* in the **Account** panel on the left
+3. Click on *Login & Security* in the **Account** panel on the left (if you don't see this option, switch to your default organisation) <sup>[*]</sup>
 4. Click on the *Two-factor Authentication* tab
 5. Install an authenticator app on your phone (links are provided), or open 1Password and then click the green *Next - Scan barcode and verify*  button
 6. Scan the barcode provided using your newly installed authenticator app, or [using 1Password](https://support.1password.com/one-time-passwords/){:target="_blank"}. You can also manually enter the details of the key if you're having trouble scanning the barcode.
 7. Enter the verification code provided by your chosen authenticator and click the *Verify* button
+
+\[*] You can switch organisations using the dropdown at the top right of the screen. You need to be in your default organisation in order to change security settings.
 
 ## Logging in with 2FA
 

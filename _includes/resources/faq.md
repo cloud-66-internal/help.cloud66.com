@@ -79,7 +79,7 @@ Currently Prepress supports AWS (S3), Google Compute Engine, DigitalOcean Spaces
 {% if include.product != 'prepress' %}
 ## Which distributions of Linux are supported?
 
-We currently support Ubuntu versions 16.04 and 18.04.
+We currently support Ubuntu versions 18.04 and 20.04.
 
 * * *
 {% endif %}
