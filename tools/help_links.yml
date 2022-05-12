@@ -2023,6 +2023,7 @@ maestro:
     - logging-in-with-2fa
     - maestro-product-heading
     - troubleshooting
+    - using-mac-touch-id-as-a-physical-key
     - what-is-two-factor-authentication
   understanding_and_improving_security_score:
     page: maestro/account/understanding-and-improving-security-score.html
@@ -3815,6 +3816,7 @@ node:
     - logging-in-with-2fa
     - node-product-heading
     - troubleshooting
+    - using-mac-touch-id-as-a-physical-key
     - what-is-two-factor-authentication
   understanding_and_improving_security_score:
     page: node/account/understanding-and-improving-security-score.html
@@ -4450,6 +4452,7 @@ prepress:
     - logging-in-with-2fa
     - prepress-product-heading
     - troubleshooting
+    - using-mac-touch-id-as-a-physical-key
     - what-is-two-factor-authentication
   understanding_globs:
     page: prepress/how-to-guides/common-tools/understanding-globs.html
@@ -6445,6 +6448,7 @@ rails:
     - logging-in-with-2fa
     - rails-product-heading
     - troubleshooting
+    - using-mac-touch-id-as-a-physical-key
     - what-is-two-factor-authentication
   understanding_and_improving_security_score:
     page: rails/account/understanding-and-improving-security-score.html
@@ -7344,6 +7348,7 @@ skycap:
     - logging-in-with-2fa
     - skycap-product-heading
     - troubleshooting
+    - using-mac-touch-id-as-a-physical-key
     - what-is-two-factor-authentication
   understanding_and_improving_security_score:
     page: skycap/account/understanding-and-improving-security-score.html

@@ -62,13 +62,7 @@ Cloud 66 fully supports the [FIDO2 standard](https://fidoalliance.org/fido2/){:t
 
 Although app-based authentication is already very secure, you may prefer to use physical security keys for an additional layer of security. Physical keys are virtually impossible to spoof because the physical presence of a specific device is required. So, not only is the authentication key unique, it is also paired to a specific device which must be physically present during authentication.
 
-There are a numbers of options available for physical keys:
-
-- USB-based keys such as the [YubiKey](https://www.yubico.com/)
-- Bluetooth-based keys (including wearables)
-- NFC-based keys (including many smartphones)
-
-Follow our [how-to guide](/{{page.collection}}/account/two-factor-authentication.html#adding-a-physical-fido2-security-key) to learn how to add a physical security key to your Cloud 66 account. 
+Follow our [how-to guide](/{{page.collection}}/account/two-factor-authentication.html#adding-a-physical-fido2-security-key) to learn how to add a physical security key to your Cloud 66 account.  
 
 ## Why can't we share logins?
 

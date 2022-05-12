@@ -98,7 +98,7 @@ First specify your new Ruby version in your Manifest file (see above for details
 Once you’ve pushed this change to your repo, you can add a new web server which will use this version of Ruby. To do this:
 
 1. Open your application on the Cloud 66 Dashboard
-2. Deploy the new code by clicking the green *Deploy* button and selecting *Deploy stack* (don't worry, this won't affect the version of Ruby running on your existing servers)
+2. Deploy the new code by clicking the green *Deploy* button and selecting *Deploy application* (don't worry, this won't affect the version of Ruby running on your existing servers)
 3. Once the redeployment has completed, click on *Rails Servers* in the main panel
 4. Click on the green *+ Add Web Server* button (Note: you will need to have a load balancer set up before you can add multiple servers - [read our guide](/rails/tutorials/load-balancing.html) if you need help adding one)
 5. Wait for the new server to come online and test that it is working
