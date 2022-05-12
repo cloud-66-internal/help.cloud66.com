@@ -116,7 +116,7 @@ They can be shared or deployed to separate servers.
 
 <img src="/assets/node/node_deployment_details.png" alt="Choose where to deploy your database">
 
-That's it! Now just click **Deploy Stack**.
+That's it! Now just click **Deploy**.
 
 ### Server build states
 
