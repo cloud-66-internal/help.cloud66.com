@@ -1,8 +1,8 @@
-Promotes the specified slave database server to a standalone master. The slave will be reconfigured as the new standalone DB. Providing the database type is optional and is only necessary for shared servers where we can’t automatically determine the target database type.
+Promotes the specified replica database server to a standalone master. The replica will be reconfigured as the new standalone DB. Providing the database type is optional and is only necessary for shared servers where we can’t automatically determine the target database type.
 
 <div class="notice notice-warning"><p>⚠️ This action could result in application downtime, it is advisable to choose a low traffic time to perform this action, and to place your application in maintenance mode.</p></div>
 
-The existing master and other slaves will need to be removed after this process as after this the new configuration will have only a single database. You will be able to configure replication again by scaling up new servers. 
+The existing master and other replicas will need to be removed after this process as after this the new configuration will have only a single database. You will be able to configure replication again by scaling up new servers. 
 
 In the case of any servers not being accessible during this time, those servers will remain unchanged. It is therefore important to stop/shut down those servers in this case (or to manually stop the DB service on those servers) as having multiple masters in a cluster could cause problems throughout the cluster.
 

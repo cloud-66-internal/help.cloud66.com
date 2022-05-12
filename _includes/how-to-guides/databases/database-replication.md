@@ -1,12 +1,12 @@
 ## Overview
 
-Database replication involves configuring a master and slave database architecture, whereby the slave is an exact replica of the master at all times. This feature is supported for MySQL, PostgreSQL, Redis and MongoDB.
+Database replication involves configuring a master and replica database architecture, whereby the replica is an exact copy of the master at all times. This feature is supported for MySQL, PostgreSQL, Redis and MongoDB.
 
 Database replication can be set up for a single application, between applications, or between database groups with various benefits:
 
 ### For a single application with one DB group
 
-- Improved read performance: The slave server only allows reads and is ideal for use with reporting tools, and any database backups are taken from the slave rather than the master.
+- Improved read performance: The replica server only allows reads and is ideal for use with reporting tools, and any database backups are taken from the replica rather than the master.
 - Improved application reliability: Having a second server with your data, in case of hardware issues (no single point of failure).
 
 ### For multiple database groups
@@ -28,7 +28,7 @@ Database replication can be set up for a single application, between application
 When you start replicating your database, the Cloud 66 will do the following:
 
 1. Take a full backup of the master database server in your source application.
-2. Configure a secondary database to be a slave of the source database
+2. Configure a secondary database to be a replica of the source database
 3. Configure the source database to act as the replication master of the secondary database
 4. The relevant environment variables are updated for use in your code and scripts
 
@@ -37,7 +37,7 @@ In the case of a single application, we create a secondary database server in yo
 Similarly, when you disable replication, we do the following:
 
 1. We disable replication on your master database, and configure it to be a standalone database server
-2. The secondary database server is removed as a slave from the master database server on the source
+2. The secondary database server is removed as a replica from the master database server on the source
 3. The source database server is configured as a standalone database server
 4. The relevant environment variables are updated for use in your code and scripts
 
@@ -45,7 +45,7 @@ Similarly, when you disable replication, we do the following:
 
 Cloud 66 generates and maintains a number of environment variables automatically on your servers, including those that hold the address for your database server.
 
-When you enable database replication, we will generate additional environment variables for your slave server(s). The value of these variables will change when you enable or disable replication.
+When you enable database replication, we will generate additional environment variables for your replica server(s). The value of these variables will change when you enable or disable replication.
 
 In the case that an environment variable contains multiple values, such as IP addresses, these are separated by comma.
 
@@ -59,7 +59,7 @@ The process of enabling database replication varies slightly for a single applic
 
 ### Single application
 
-To enable replication for a single application, you need to scale up to create a slave:
+To enable replication for a single application, you need to scale up to create a replica:
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on the *Servers* tab
@@ -79,7 +79,7 @@ To enable replication between applications, ensure that you have a secondary app
 
 1. Open the Application Overview for the secondary application from your [Dashboard](https://app.cloud66.com/dashboard)
 2. Click on the *Servers* tab
-3. Click on the name of the database server (this will become a slave of the source/master database)
+3. Click on the name of the database server (this will become a replica of the source/master database)
 4. Click *Configure data replication* in the right sidebar, and select a source application (i.e the source/master database).
 5. Confirm to commence the replication process.
 
@@ -94,11 +94,11 @@ To disable replication between applications:
 
 ## Re-synchronizing slave with master
 
-From time-to-time your slave database may go out of sync with its master. You can re-synchronize a slave in two ways:
+From time-to-time your replica database may go out of sync with its master. You can re-synchronize a replica in two ways:
 
-- Via the Dashboard (click through to the detail page for the slave and then click Resync Slave) - this requires that you have [managed backups](/{{page.collection}}/how-to-guides/add-ins/database-backups.html) enabled.
+- Via the Dashboard (click through to the detail page for the replica and then click Resync Replica) - this requires that you have [managed backups](/{{page.collection}}/how-to-guides/add-ins/database-backups.html) enabled.
 - Via the Cloud 66 Toolbelt's [database management commands](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#databases-promote-slave).
 
 <div class="notice notice-warning"><p markdown="1">
-⚠️ If your managed backups are set to run on your slave server, you will not be able to automatically resync your slave from that backup. You will need to disable this option and run the backup on your master server before you can resync.</p></div>
+⚠️ If your managed backups are set to run on your replica server, you will not be able to automatically resync your replica from that backup. You will need to disable this option and run the backup on your master server before you can resync.</p></div>
 

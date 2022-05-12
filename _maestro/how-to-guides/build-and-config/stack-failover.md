@@ -23,7 +23,7 @@ Clone your existing application to a different cloud vendor or data center, and 
 
 ### 2. Data
 
-Enable database replication between your applications - this will set up a master/slave architecture between your applications, whereby the slave is an exact replica of the master at all times. 
+Enable database replication between your applications - this will set up a master/replica architecture between your applications, whereby the replica is an exact duplicate of the master at all times. 
 
 
 ### 3. Traffic
@@ -37,6 +37,6 @@ If and when your main application fails, you will need to switch to the failover
 
 1.  Set your main application into [maintenance mode](/maestro/how-to-guides/build-and-config/service-network-configuration.html), to prevent new data being written to it.
 2.  Turn off the database replication
-3.  Make your [database slave a master](/maestro/references//toolbelt/toolbelt-commands.html#databases-promote-slave) - this will allow data to be written to the database.
+3.  Make your [database replica a master](/maestro/references//toolbelt/toolbelt-commands.html#databases-promote-slave) - this will allow data to be written to the database.
 4.  Turn off [maintenance mode](/maestro/how-to-guides/build-and-config/service-network-configuration.html) on your failover application.
 5.  Use your [Failover group](/maestro/tutorials/failover-groups.html) menu to switch your traffic to the failover application. The TTL on the Failover address is 5 minutes, so you should see your users on the new application momentarily.

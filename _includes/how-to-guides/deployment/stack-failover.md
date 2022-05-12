@@ -10,7 +10,7 @@ As with any migration, you will need to deal with moving your code, data and tra
 
 ### 2. Data
 
-Enable [database replication between your stacks](/rails/how-to-guides/databases/database-replication.html) - this will setup a master/slave architecture between your stacks, whereby the slave is an exact replica of the master at all times. 
+Enable [database replication between your stacks](/rails/how-to-guides/databases/database-replication.html) - this will setup a master/replica architecture between your stacks, whereby the replica is an exact replica of the master at all times. 
 
 
 ### 3. Traffic
@@ -24,7 +24,7 @@ If and when your main application fails, you will need to switch to the failover
 
 1.  Set your main application into [maintenance mode]({% if page.collection == "maestro" %}/maestro/how-to-guides/build-and-config/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}), to prevent new data being written to it.
 2.  Turn off the [database replication](/rails/how-to-guides/databases/database-replication.html).
-3.  Make your [database slave a master](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#databases-promote-slave) - this will allow data to be written to the database.
+3.  Make your [database replica a master](/{{page.collection}}/references/toolbelt/toolbelt-commands.html#databases-promote-slave) - this will allow data to be written to the database.
 4.  Turn off [maintenance mode]({% if page.collection == "maestro" %}/maestro/how-to-guides/build-and-config/service-network-configuration.html{% else %}/{{page.collection}}/tutorials/service-network-configuration.html{% endif %}) on your failover application.
 5.  Use your [Failover group]({% if page.collection == "maestro" %}/maestro/tutorials/failover-groups.html{% else %}/{{page.collection}}/tutorials/failover-groups.html{% endif %}) menu to switch your traffic to the failover application. The TTL on the Failover address is 5 minutes, so you should see your users on the new application momentarily. We will automatically transfer your SLL certificates if you follow the guidelines in our [reference guide](/{{page.collection}}/references/understanding-failover-groups.html#using-failover-groups-with-ssl-certificates).
 
