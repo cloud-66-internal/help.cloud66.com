@@ -7,14 +7,14 @@ The existing master and other replicas will need to be removed after this proces
 In the case of any servers not being accessible during this time, those servers will remain unchanged. It is therefore important to stop/shut down those servers in this case (or to manually stop the DB service on those servers) as having multiple masters in a cluster could cause problems throughout the cluster.
 
 {% include references/toolbelt/boilerplate/top-tabs.html %}
-$ cx databases promote-slave --stack <stack name> [--dbtype <database type>] <slave server name>
+$ cx databases promote-replica --stack <stack name> [--dbtype <database type>] <replica server name>
 {% include references/toolbelt/boilerplate/args.html %}
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |
 | \--stack, -s &lt;stack name&gt; | yes | — | Name of your application |
 | \--dbtype &lt;database type&gt; | no | — | The database type (`mysql`,`postgresql`,`redis`) |
-| &lt;slave server name&gt; | yes | — | Name of slave server to promote to master |
+| &lt;replica server name&gt; | yes | — | Name of replica server to promote to master |
 {% include references/toolbelt/boilerplate/example.html %}
-$ cx databases promote-slave -s My_Awesome_App my_redis_replication_slave
-$ cx databases promote-slave --stack My_Awesome_App --dbtype=mysql my_slave_server_name
+$ cx databases promote-replica -s My_Awesome_App my_redis_replication_replica
+$ cx databases promote-replica --stack My_Awesome_App --dbtype=mysql my_replica_server_name
 {% include references/toolbelt/boilerplate/footer.html %}

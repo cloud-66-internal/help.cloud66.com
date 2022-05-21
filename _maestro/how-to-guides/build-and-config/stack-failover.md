@@ -37,6 +37,6 @@ If and when your main application fails, you will need to switch to the failover
 
 1.  Set your main application into [maintenance mode](/maestro/how-to-guides/build-and-config/service-network-configuration.html), to prevent new data being written to it.
 2.  Turn off the database replication
-3.  Make your [database replica a master](/maestro/references//toolbelt/toolbelt-commands.html#databases-promote-slave) - this will allow data to be written to the database.
+3.  Make your [database replica a master](/maestro/references//toolbelt/toolbelt-commands.html#databases-promote-replica) - this will allow data to be written to the database.
 4.  Turn off [maintenance mode](/maestro/how-to-guides/build-and-config/service-network-configuration.html) on your failover application.
 5.  Use your [Failover group](/maestro/tutorials/failover-groups.html) menu to switch your traffic to the failover application. The TTL on the Failover address is 5 minutes, so you should see your users on the new application momentarily.
