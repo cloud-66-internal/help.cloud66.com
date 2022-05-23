@@ -9,7 +9,9 @@
     {% include left_nav_skycap.html collection=site.skycap %}
 	{% when 'prepress' %}
     {% include left_nav_prepress.html collection=site.prepress %}
-	{% when 'habitus' %}
+    {% when 'guides' %}
+    {% include left_nav_guides.html collection=site.guides %}
+    {% when 'habitus' %}
     {% include oss_left_nav.html collection=site.habitus %}
 	{% when 'starter' %}
     {% include oss_left_nav.html collection=site.starter %}
