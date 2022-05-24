@@ -561,7 +561,7 @@ maestro:
     - note
     - note-1
     - overview
-    - re-synchronizing-slave-with-master
+    - re-synchronizing-replica-with-master
     - single-application
   deploy_hooks:
     page: maestro/tutorials/deploy-hooks.html
@@ -1878,8 +1878,8 @@ maestro:
     - containers-list
     - containers-restart
     - containers-stop
-    - databases-promote-slave
-    - databases-resync-slave
+    - databases-promote-replica
+    - databases-resync-replica
     - download
     - dump-token
     - env-vars-download
@@ -2645,7 +2645,7 @@ node:
     - note
     - note-1
     - overview
-    - re-synchronizing-slave-with-master
+    - re-synchronizing-replica-with-master
     - single-application
   deploy_hooks:
     page: node/tutorials/deploy-hooks.html
@@ -3673,8 +3673,8 @@ node:
     - containers-list
     - containers-restart
     - containers-stop
-    - databases-promote-slave
-    - databases-resync-slave
+    - databases-promote-replica
+    - databases-resync-replica
     - download
     - dump-token
     - env-vars-download
@@ -5002,7 +5002,7 @@ rails:
     - note-1
     - overview
     - rails-product-heading
-    - re-synchronizing-slave-with-master
+    - re-synchronizing-replica-with-master
     - single-application
   deploy_hooks:
     page: rails/tutorials/deploy-hooks.html
@@ -6293,8 +6293,8 @@ rails:
     - containers-list
     - containers-restart
     - containers-stop
-    - databases-promote-slave
-    - databases-resync-slave
+    - databases-promote-replica
+    - databases-resync-replica
     - download
     - dump-token
     - env-vars-download
@@ -7215,8 +7215,8 @@ skycap:
     - containers-list
     - containers-restart
     - containers-stop
-    - databases-promote-slave
-    - databases-resync-slave
+    - databases-promote-replica
+    - databases-resync-replica
     - download
     - dump-token
     - env-vars-download
