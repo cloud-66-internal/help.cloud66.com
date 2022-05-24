@@ -117,10 +117,10 @@ You can set up replication between database groups of the **same type and compat
 
 Replication has the following rules:
 
-- A replication master in one group cannot be a slave of another group
-- A group with a single server can be slaved to a replication master from another group
+- A replication master in one group cannot be a replica of another group
+- A group with a single server can be the replica of a master from another group
 
-Essentially, as soon as a group has internal replication (between its own master and slaves) it can no longer be slaved to another group.
+Essentially, as soon as a group has internal replication (between its own master and replicas) it can no longer be a replica of another group.
 
 To set up replication *between* database groups:
 
