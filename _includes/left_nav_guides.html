@@ -1,0 +1,14 @@
+<nav class="list">
+        <div class="sticky-sidebar">
+            <h2 class="product-title" id="guides-product-heading">
+                Guides
+            </h2>
+        </div>
+        {% assign product = page.collection | downcase %}
+
+        <ul class="menu-root">
+            {% assign section = include.collection | where:"categories","guides" | sort: "order" %}
+            {% include left_nav_list.html section=section current=page %}
+        </ul>
+</nav>
+
