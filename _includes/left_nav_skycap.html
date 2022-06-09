@@ -8,66 +8,66 @@
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","the-basics" | sort: "order" %}
-            <li><h3 class="u-flushTop"><a href="/{{product}}/the-basics">The Basics</a></h3></li>
+            <li><h3 class="u-flushTop"><a href="/{{product}}/the-basics/">The Basics</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","quickstarts" | sort: "order" %}
-            <li><h3><a href="/{{product}}/quickstarts">Getting Started</a></h3></li>
+            <li><h3><a href="/{{product}}/quickstarts/">Getting Started</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
 
   <ul class="menu-root">
             {% assign section = include.collection | where:"categories","tutorials" | sort: "order" %}
-            <li><h3><a href="/{{product}}/tutorials">Tutorials</a></h3></li>
+            <li><h3><a href="/{{product}}/tutorials/">Tutorials</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
      <ul class="menu-root">
             {% assign section = include.collection | where:"categories","how-to-guides/common-tools" | sort: "order" %}
 
-            <li><h3><a href="/{{product}}/how-to-guides/common-tools">How-to: Common tools</a></h3></li>
+            <li><h3><a href="/{{product}}/how-to-guides/common-tools/">How-to: Common tools</a></h3></li>
 	        {% include left_nav_list.html section=section current=page %}
         </ul>
         <ul class="menu-root">
             {% assign toolbelt = include.collection | where:"categories","toolbelt" | sort: "order" %}
 
-            <li><h3><a href="/rails/references/toolbelt.html">Cloud 66 Toolbelt (cx)</a></h3></li>
+            <li><h3><a href="/rails/references/toolbelt.html/">Cloud 66 Toolbelt (cx)</a></h3></li>
             {% include left_nav_list.html section=toolbelt current=page %}
         </ul>
      <ul class="menu-root">
             {% assign formations = include.collection | where:"categories","how-to-guides/formations" | sort: "order" %}
 
-            <li><h3><a href="/{{product}}/how-to-guides/formations">How-to: Formations</a></h3></li>
+            <li><h3><a href="/{{product}}/how-to-guides/formations/">How-to: Formations</a></h3></li>
             {% include left_nav_list.html section=formations current=page %}
         </ul>
 
      <ul class="menu-root">
             {% assign section = include.collection | where:"categories","how-to-guides/configuration" | sort: "order" %}
 
-            <li><h3><a href="/{{product}}/how-to-guides/configuration">How-to: Configuration</a></h3></li>
+            <li><h3><a href="/{{product}}/how-to-guides/configuration/">How-to: Configuration</a></h3></li>
 	        {% include left_nav_list.html section=section current=page %}
         </ul>
 
      <ul class="menu-root">
             {% assign section = include.collection | where:"categories","how-to-guides/deployment" | sort: "order" %}
 
-            <li><h3><a href="/{{product}}/how-to-guides/deployment">How-to: Deployment</a></h3></li>
+            <li><h3><a href="/{{product}}/how-to-guides/deployment/">How-to: Deployment</a></h3></li>
 	        {% include left_nav_list.html section=section current=page %}
         </ul>
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","integrations" | sort: "order" %}
-            <li><h3><a href="/{{product}}/integrations">Integration guides</a></h3></li>
+            <li><h3><a href="/{{product}}/integrations/">Integration guides</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
     <ul class="menu-root">
             {% assign section = include.collection | where:"categories","references" | sort: "order" %}
-            <li><h3><a href="/{{product}}/references">Reference guides</a></h3></li>
+            <li><h3><a href="/{{product}}/references/">Reference guides</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
             {% assign section = include.collection | where:"categories","references/toolbelt" | sort: "order" %}
             {% include left_nav_list.html section=section current=page %}
@@ -75,7 +75,7 @@
         </ul>
 
         <ul class="menu-root">
-            <li><h3><a href="/{{product}}/account">Account management </a></h3></li>
+            <li><h3><a href="/{{product}}/account/">Account management </a></h3></li>
             {% assign section = include.collection | where:"categories","account" | sort: "order" %}
             {% include left_nav_list.html section=section current=page %}
         </ul>
@@ -83,7 +83,7 @@
 
 
         <ul class="menu-root">
-            <li><h3><a href="/{{product}}/policies-specifications">Policies & specifications</a></h3></li>
+            <li><h3><a href="/{{product}}/policies-specifications/">Policies & specifications</a></h3></li>
             {% assign section = include.collection | where:"categories","policies-specifications" | sort: "order" %}
             {% include left_nav_list.html section=section current=page %}
         </ul>
