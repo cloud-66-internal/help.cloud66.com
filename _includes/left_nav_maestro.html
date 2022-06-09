@@ -8,27 +8,27 @@
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","the-basics" | sort: "order" %}
-            <li><h3 class="u-flushTop"><a href="/maestro/the-basics">The Basics</a></h3></li>
+            <li><h3 class="u-flushTop"><a href="/maestro/the-basics/">The Basics</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
        
        
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","quickstarts" | sort: "order" %}
-            <li><h3><a href="/maestro/quickstarts">Getting Started</a></h3></li>
+            <li><h3><a href="/maestro/quickstarts/">Getting Started</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","tutorials" | sort: "order" %}
-            <li><h3><a href="/maestro/tutorials">Tutorials</a></h3></li>
+            <li><h3><a href="/maestro/tutorials/">Tutorials</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
        <ul class="menu-root">
         {% assign common-tools = include.collection | where:"categories","how-to-guides/common-tools" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/how-to-guides/common-tools">How-to: Common Tools</a></h3></li>
+    		<li><h3><a href="/maestro/how-to-guides/common-tools/">How-to: Common Tools</a></h3></li>
             {% include left_nav_list.html section=common-tools current=page %}
 
         <ul class="menu-root">
@@ -41,7 +41,7 @@
         <ul class="menu-root">
             {% assign dockerfiles = include.collection | where:"categories","how-to-guides/dockerfiles" | sort: "order" %}
            
-                <li><h3><a href="/maestro/how-to-guides/dockerfiles">How-to: Dockerfiles</a></h3></li>
+                <li><h3><a href="/maestro/how-to-guides/dockerfiles/">How-to: Dockerfiles</a></h3></li>
                 {% include left_nav_list.html section=dockerfiles current=page %}
            
             </ul>
@@ -49,7 +49,7 @@
        <ul class="menu-root">
             {% assign deployments = include.collection | where:"categories","how-to-guides/build-and-config" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/how-to-guides/build-and-config">How-to: Build & Config</a></h3></li>
+    		<li><h3><a href="/maestro/how-to-guides/build-and-config/">How-to: Build & Config</a></h3></li>
             {% include left_nav_list.html section=deployments current=page %}
        
         </ul>
@@ -57,7 +57,7 @@
        <ul class="menu-root">
             {% assign deployments = include.collection | where:"categories","how-to-guides/deployment" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/how-to-guides/deployment">How-to: Deployment</a></h3></li>
+    		<li><h3><a href="/maestro/how-to-guides/deployment/">How-to: Deployment</a></h3></li>
             {% include left_nav_list.html section=deployments current=page %}
        
         </ul>
@@ -65,7 +65,7 @@
        <ul class="menu-root">
             {% assign databases = include.collection | where:"categories","how-to-guides/databases" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/how-to-guides/databases">How-to: Databases</a></h3></li>
+    		<li><h3><a href="/maestro/how-to-guides/databases/">How-to: Databases</a></h3></li>
             {% include left_nav_list.html section=databases current=page %}
        
         </ul>
@@ -74,7 +74,7 @@
        <ul class="menu-root">
             {% assign nginx = include.collection | where:"categories","how-to-guides/nginx" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/how-to-guides/nginx">How-to: Nginx</a></h3></li>
+    		<li><h3><a href="/maestro/how-to-guides/nginx/">How-to: Nginx</a></h3></li>
             {% include left_nav_list.html section=nginx current=page %}
        
         </ul>
@@ -82,7 +82,7 @@
   
          <ul class="menu-root">
             {% assign security = include.collection | where:"categories","how-to-guides/security" | sort: "order" %}
-            <li><h3><a href="/maestro/how-to-guides/security">How-to: Security</a></h3></li>
+            <li><h3><a href="/maestro/how-to-guides/security/">How-to: Security</a></h3></li>
             {% include left_nav_list.html section=security current=page %}
 
         </ul>
@@ -90,7 +90,7 @@
         <ul class="menu-root">
             {% assign clouds = include.collection | where:"categories","how-to-guides/clouds" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/how-to-guides/clouds">How-to: Cloud Providers</a></h3></li>
+    		<li><h3><a href="/maestro/how-to-guides/clouds/">How-to: Cloud Providers</a></h3></li>
             {% include left_nav_list.html section=clouds current=page %}
        
         </ul>
@@ -98,7 +98,7 @@
         <ul class="menu-root">
             {% assign scaling = include.collection | where:"categories","how-to-guides/scaling" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/how-to-guides/scaling">How-to: Scaling</a></h3></li>
+    		<li><h3><a href="/maestro/how-to-guides/scaling/">How-to: Scaling</a></h3></li>
             {% include left_nav_list.html section=scaling current=page %}
        
         </ul>
@@ -106,7 +106,7 @@
        <ul class="menu-root">
             {% assign add-ins = include.collection | where:"categories","how-to-guides/add-ins" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/how-to-guides/add-ins">How-to: Add-ins</a></h3></li>
+    		<li><h3><a href="/maestro/how-to-guides/add-ins/">How-to: Add-ins</a></h3></li>
             {% include left_nav_list.html section=add-ins current=page %}
        
         </ul>
@@ -114,7 +114,7 @@
        <ul class="menu-root">
             {% assign integrations = include.collection | where:"categories","integrations" | sort: "order" %}
        
-    		<li><h3><a href="/maestro/integrations">Integration guides</a></h3></li>
+    		<li><h3><a href="/maestro/integrations/">Integration guides</a></h3></li>
             {% include left_nav_list.html section=integrations current=page %}
        
         </ul>
@@ -123,19 +123,19 @@
         
         <ul class="menu-root">
             {% assign section = include.collection | where:"categories","references" | sort: "order" %}
-            <li><h3><a href="/maestro/references">Reference guides</a></h3></li>
+            <li><h3><a href="/maestro/references/">Reference guides</a></h3></li>
             {% include left_nav_list.html section=section current=page %}
 
         </ul>
 
        <ul class="menu-root">
-            <li><h3><a href="/maestro/account">Account management</a></h3></li>
+            <li><h3><a href="/maestro/account/">Account management</a></h3></li>
             {% assign section = include.collection | where:"categories","account" | sort: "order" %}
             {% include left_nav_list.html section=section current=page %}
         </ul>
 
         <ul class="menu-root">
-            <li><h3><a href="/maestro/resources">Policies & specifications</a></h3></li>
+            <li><h3><a href="/maestro/resources/">Policies & specifications</a></h3></li>
             {% assign section = include.collection | where:"categories","resources" | sort: "order" %}
             {% include left_nav_list.html section=section current=page %}
         </ul>
