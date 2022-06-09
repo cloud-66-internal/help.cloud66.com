@@ -4,7 +4,7 @@ title: Configuring your Rails application for High-Availability
 categories: guides
 order: 1
 legacy: false
-tags: ["rails"]
+tags: ["rails","rs-guide"]
 lead: Configuring your Rails application for High-Availability
 permalink: /:collection/:path:output_ext
 ---
