@@ -98,7 +98,7 @@ The following variables are only available in the MySQL CustomConfig.
   </tbody>
 </table>
 
-&#42; Will be 0 for standalone servers, 1 for master servers and a number greater than 1 for slave servers
+&#42; Will be 0 for standalone servers, 1 for master servers and a number greater than 1 for replica servers
 
 #### PostgreSQL variables
 

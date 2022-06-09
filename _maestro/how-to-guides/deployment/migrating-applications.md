@@ -46,7 +46,7 @@ Add database or all the databases you need on to the application `B` (the clone)
 
 ### 6. Set up replication between applications
 
-On application `B` go to the database server (Redis, MySQL or etc.) and choose the server. On the right sidebar click on "configure replication" choose application A (you have to be Administrator on application `A `otherwise it won't be listed). This makes application `B` database into a slave for application `A`.
+On application `B` go to the database server (Redis, MySQL or etc.) and choose the server. On the right sidebar click on "configure replication" choose application A (you have to be Administrator on application `A `otherwise it won't be listed). This makes application `B` database into a replica for application `A`.
 
 ### 7. Add the second application to the failover group
 
@@ -83,12 +83,12 @@ Do you want to move your application from one cloud vendor or region to another?
 
 1.  Reduce the TTL of your DNS to 5 minutes, and leave it for 24 hours so that it has time to propagate the network.
 2.  Clone your application and deploy it to the new data center. This will save any environment variables you had configured on the source application.
-3.  Set up your target application as a database slave, which means that any changes to your source database will be replicated across to the target application until you switch it off.
+3.  Set up your target application as a database replica, which means that any changes to your source database will be replicated across to the target application until you switch it off.
 **OR**
 4.  Use our one-time database import feature to migrate your data across.
 
 When you're happy with this new application, simply switch your DNS over to it. As the TTL is 5 minutes (set earlier), it should take effect quickly.
 
-If you followed step 3 above, switch the target database from being a slave to a master (as outlined in the [database replication between applications](/maestro/how-to-guides/databases/shells/pg-replication-version.html) documentation).
+If you followed step 3 above, switch the target database from being a replica to a master (as outlined in the [database replication between applications](/maestro/how-to-guides/databases/shells/pg-replication-version.html) documentation).
 
 

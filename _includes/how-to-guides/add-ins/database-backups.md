@@ -43,7 +43,7 @@ A binary backup is a snapshot of the data folder of your database service along 
 As this backup contains raw data of your database server (rather than a human readable SQL dump file) you can expect much faster backup/restore process, particularly for large databases. This method can be up to 4 times faster which can be very helpful in failover scenarios. But there are some limitations:
 
 - You cannot restore it on a server with different version of the database engine
-- You cannot use it on slave servers
+- You cannot use it on replica servers
 - You cannot use it on servers with data folders symlinked to other locations
 - You cannot use it on encrypted databases 
 - You need to shut down the database service during the restore 
@@ -57,7 +57,7 @@ As the output of the backup is a simple SQL dump file, you can use it to import 
 These are other benefits of this type of backup: 
 
 - You can restore this backup while the server is running.
-- You can move backup jobs to your slave servers (if available) to reduce your master server load
+- You can move backup jobs to your replica servers (if available) to reduce your master server load
 
 ## Backup schedule
 

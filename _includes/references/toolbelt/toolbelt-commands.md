@@ -33,13 +33,17 @@ Alias: `container restart`
 {% include references/toolbelt/containers-restart.md %}
 
 
-## databases promote-slave
-Alias: `database promote-slave`
+## databases promote-replica
+Alias: `database promote-replica` <br/>
+Alias: `database promote-slave` (deprecated) <br/>
+Alias: `databases promote-slave` (deprecated)
 
 {% include references/toolbelt/databases-promote-slave.md %}
 
-## databases resync-slave
-Alias: `database resync-slave`
+## databases resync-replica
+Alias: `database resync-replica` <br/>
+Alias: `database resync-slave` (deprecated) <br/>
+Alias: `databases resync-slave` (deprecated)
 
 {% include references/toolbelt/databases-resync-slave.md %}
 
