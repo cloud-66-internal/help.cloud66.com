@@ -11,8 +11,14 @@
     <!-- Generic -->
     <meta name="title" content="{{ page.title }} • {{ page.collection | capitalize }}">
     <meta name="description" content="{{ page.lead }}">
+ 
+    <!-- Canonical url -->
+    {% if page.tags contains 'rs-guide' %}
+    <link rel="canonical" href="https://realscale.cloud66.com{{ page.url | remove: '/guides' }}" />
+    {% endif %}
 
-	{% if page.noindex %}
+    <!-- noindex -->
+    {% if page.noindex %}
     <meta name="robots" content="noindex">
     {% endif %}
 
