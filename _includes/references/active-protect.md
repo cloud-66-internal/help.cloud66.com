@@ -1,6 +1,6 @@
 ## What is ActiveProtect&trade;?
 
-All applications deployed with Cloud 66 are automatically protected against [denial of service](http://en.wikipedia.org/wiki/Denial-of-service_attack) and [brute-force](http://en.wikipedia.org/wiki/Brute-force_attack) attacks. ActiveProtect also notifies you if important config files (such as `/etc/hosts`) are modified.
+All applications deployed with Cloud 66 are automatically protected against [denial of service](https://en.wikipedia.org/wiki/Denial-of-service_attack) and [brute-force](https://en.wikipedia.org/wiki/Brute-force_attack) attacks. ActiveProtect also notifies you if important config files (such as `/etc/hosts`) are modified.
 
 ## ActiveProtect&trade; interface
 

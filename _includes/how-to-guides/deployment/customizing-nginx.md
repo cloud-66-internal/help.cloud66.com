@@ -1,6 +1,6 @@
 ## Overview
 
-Applications deployed with Cloud 66 use [Nginx](http://nginx.com) as their web and reverse proxy server. You can customize the [default configuration](/{{page.collection}}/references/nginx.html#default-nginx-configuration) of Nginx to suit your needs.
+Applications deployed with Cloud 66 use [Nginx](https://nginx.com) as their web and reverse proxy server. You can customize the [default configuration](/{{page.collection}}/references/nginx.html#default-nginx-configuration) of Nginx to suit your needs.
 
 ## Editing Nginx configurations
 

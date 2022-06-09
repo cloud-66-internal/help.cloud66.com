@@ -138,7 +138,7 @@ services:
 
 ### Using Habitus for builds
 
-[Habitus is a build workflow tool for Docker-based applications](http://www.habitus.io/). It allows you to create a build workflow consisting of multiple steps for your Maestro application. Maestro fully supports Habitus. To enable Habitus on your Maestro application, you need to do the following:
+[Habitus is a build workflow tool for Docker-based applications](https://www.habitus.io/). It allows you to create a build workflow consisting of multiple steps for your Maestro application. Maestro fully supports Habitus. To enable Habitus on your Maestro application, you need to do the following:
 
 1. Add a `build.yml` to your repository
 2. Set `use_habitus` attribute to `true` in your `service.yml`
@@ -148,7 +148,7 @@ You can edit your `service.yml` directly from the Dashboard by clicking *Edit se
 
 A Habitus build usually has multiple steps and each step can generate a Docker image. Using `use_habitus_step` attribute you can specify which step's results you would like to use as the image for the container.
 
-Check out the [Habitus website](http://www.habitus.io/) for more information about generating a `build.yml`.
+Check out the [Habitus website](https://www.habitus.io/) for more information about generating a `build.yml`.
 
 ## Adding a DaemonSet
 

@@ -10,11 +10,11 @@ tags: ["habitus,workflow,build.yml"]
 permalink: /:collection/:path:output_ext
 ---
 
-Skycap integrates build flows created using [Habitus](http://www.habitus.io/). This allows you to reuse your existing `build.yml` files to build your application images within Skycap.
+Skycap integrates build flows created using [Habitus](https://www.habitus.io/). This allows you to reuse your existing `build.yml` files to build your application images within Skycap.
 
 ## What is Habitus?
 
-If you’re not an existing Habitus user, you’ll need to read through its [documentation](http://www.habitus.io/) to fully understand the purpose and power of the tool. 
+If you’re not an existing Habitus user, you’ll need to read through its [documentation](https://www.habitus.io/) to fully understand the purpose and power of the tool. 
 
 Essentially Habitus allows you the define a workflow that controls the order and manner in which your code is built into Docker images. This is especially useful if your containers have multiple components or dependencies that need to be built in a specific order.
 

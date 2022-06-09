@@ -1,6 +1,6 @@
 ## Overview
 
-[Elasticsearch](http://www.elasticsearch.org/) is a powerful open source search and analytics engine, and it's easy to add to your application as an add-in.
+[Elasticsearch](https://www.elastic.co/elastic-stack/) is a powerful open source search and analytics engine, and it's easy to add to your application as an add-in.
 
 ## Add Elasticearch
 To add Elasticsearch to your application, access the add-ins menu, click _Elasticsearch_ and choose the size of your new server. 

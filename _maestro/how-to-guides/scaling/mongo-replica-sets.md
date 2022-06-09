@@ -14,7 +14,7 @@ permalink: /:collection/:path:output_ext
 
 Before scaling MongoDB, it's vital that you **understand how replica sets work and how to use them**, or you will risk downtime.
 
-There is a lot of excellent material about [MongoDB replica sets](http://docs.mongodb.org/manual/replication/) available online, which we won't repeat here. We will focus on how Maestro scales your MongoDB servers and how you can use them in your code.
+There is a lot of excellent material about [MongoDB replica sets](https://docs.mongodb.org/manual/replication/) available online, which we won't repeat here. We will focus on how Maestro scales your MongoDB servers and how you can use them in your code.
 
 ## Configure a MongoDB replica set
 
@@ -54,7 +54,7 @@ Without replica sets, you can connect to your MongoDB using environment variable
 * MONGODB\_URL\_INT
 * MONGODB\_URL\_EXT
 
-`MONGODB_ADDRESS` contains the IP address of your MongoDB. In [Mongoid](http://mongoid.org/en/mongoid/index.html) for example, it can be used in your mongoid.yml with `host` (mongoid 
+`MONGODB_ADDRESS` contains the IP address of your MongoDB. In Mongoid for example, it can be used in your mongoid.yml with `host` (mongoid 
  3).
 
 `MONGODB_ADDRESS_INT` and `MONGODB_ADDRESS_EXT` contain the internal and external network addresses for the same server. You usually want to connect to the internal address to avoid paying for traffic between your web servers and database servers. `MONGODB_ADDRESS` is configured with the internal address `{{MONGODB_ADDRESS_INT}}`, but you can [change that](/maestro/tutorials/env-vars.html) if you need.

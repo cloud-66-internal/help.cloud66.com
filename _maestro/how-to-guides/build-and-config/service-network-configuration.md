@@ -23,20 +23,20 @@ If you have multiple containers running for your service(s), round-robin will be
 
 ## ContainerNet
 
-ContainerNet is a private and secure network (based on [Weave](http://weave.works/)) between all containers across all the servers and components in your application, including databases. 
+ContainerNet is a private and secure network (based on [Weave](https://weave.works/)) between all containers across all the servers and components in your application, including databases. 
 
 This network provides an internal IP address to each container, automatically updating with DHCP and DNS and is fully integrated with the [life-cycle management of your services](/maestro/how-to-guides/build-and-config/service-network-configuration.html).
 
 ### Encryption
 
-Weave includes a secure, performant authenticated [encryption mechanism](http://blog.weave.works/2015/06/16/weave-net-cryptography-faq/) which we automatically configure on your behalf, so you don’t have to take any custom encryption actions yourself.
+Weave includes a secure, performant authenticated [encryption mechanism](https://www.weave.works/blog/weave-net-cryptography-faq/) which we automatically configure on your behalf, so you don’t have to take any custom encryption actions yourself.
 
 
 ## ElasticDNS
 
 ElasticDNS sits on top of ContainerNet to provide simple DNS-based service discovery without having to change your code. This service consists of two parts: a small client and a central service. 
 
-The client has a DNS server and local cache and runs in a container on your server(s). It serves DNS queries ending with `.cloud66.local` by making a query to the central server and caching the results for their [TTL duration](http://en.wikipedia.org/wiki/Time_to_live). This means that you can call, for example, `api.cloud66.local` to contact a container running your API service. 
+The client has a DNS server and local cache and runs in a container on your server(s). It serves DNS queries ending with `.cloud66.local` by making a query to the central server and caching the results for their [TTL duration](https://en.wikipedia.org/wiki/Time_to_live). This means that you can call, for example, `api.cloud66.local` to contact a container running your API service. 
 
 ElasticDNS knows your infrastructure and your data sources are also added to the service discovery. For example, your MySQL database can be discovered using the DNS name `mysql.cloud66.local`, MongoDB can be found using `mongodb.cloud66.local`.
 

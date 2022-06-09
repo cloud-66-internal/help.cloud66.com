@@ -91,7 +91,7 @@ It is best to keep your Docker and Weave versions up to date as they are release
 {% if include.product == 'rails' %}
 ## Switching from malloc to jemalloc
 
-If you’d prefer to use [jemalloc](http://jemalloc.net/){:target="_blank"} as your memory allocator, you can change this via your [manifest file](/rails/references/manifest-web-settings.html#rails). However, when you deploy (with upgrades) this **will** cause downtime as it is applied to each server. There are two solutions for avoiding downtime: 
+If you’d prefer to use [jemalloc](https://jemalloc.net/){:target="_blank"} as your memory allocator, you can change this via your [manifest file](/rails/references/manifest-web-settings.html#rails). However, when you deploy (with upgrades) this **will** cause downtime as it is applied to each server. There are two solutions for avoiding downtime: 
 
 1. Use a [rolling deployment strategy](/rails/how-to-guides/deployment/parallel-deployment.html) (requires a load balancer & at least four servers)
 2. Scale up new servers, upgrade them, and then switch them with the current servers ([see above](#managing-high-risk-updates))

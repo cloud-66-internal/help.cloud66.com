@@ -19,7 +19,7 @@ You can activate SSL termination on **HAProxy 1.5.x or higher** and **Amazon Ela
 
 ## Amazon Elastic Load Balancer
 
-To register an SSL certificate with Amazon Elastic Load Balancer, please refer to our [blog post](http://blog.cloud66.com/registering-ssl-certificate-with-amazon-elastic-load/).
+To register an SSL certificate with Amazon Elastic Load Balancer, please refer to our [blog post](https://blog.cloud66.com/registering-ssl-certificate-with-amazon-elastic-load/).
 
 Thanks to the AWS dashboard or the command line interface, you can easily upload your SSL certificates to relevant load balancers.
 
@@ -36,7 +36,7 @@ Through the AWS dashboard:
 Ensure that the certificate is valid: current date must be between the certificate’s start and end date. Certificate keys also should not be password protected
 
 
-Through the [AWS ELB command line interface](http://aws.amazon.com/developertools/2536):
+Through the [AWS ELB command line interface](https://aws.amazon.com/developertools/2536):
 
 *   Run the command below to add a new SSL certificate:
 
@@ -62,10 +62,10 @@ $ elb-create-lb-listeners ELBConfigureSSL --listener "protocol=HTTPS,lb-port=443
 $ iam-servercertdel -s <certificate name>
 ```
 
-Refer to the [AWS documentation for more information](http://docs.aws.amazon.com/IAM/latest/UserGuide/InstallCert.html).
+Refer to the [AWS documentation for more information](https://docs.aws.amazon.com/IAM/latest/UserGuide/InstallCert.html).
 
 
 ## Rackspace
 
-Rackspace make it very easy for you to [add SSL certificates to their cloud load balancer](http://www.rackspace.com/knowledge_center/product-faq/cloud-load-balancers), straight from their control panel.
+Rackspace make it very easy for you to add SSL certificates to their cloud load balancer, straight from their control panel.
 

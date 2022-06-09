@@ -1,4 +1,4 @@
-You can use Cloud 66 to provision and deploy your code to servers in any Amazon Web Services (AWS) region. Cloud 66 supports both VPC and (for AWS accounts created before 2014) EC2-Classic. We also support reserved instances. To use a VPC, your account must conform with the [default VPC guidelines](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/default-vpc.html#launching-into).
+You can use Cloud 66 to provision and deploy your code to servers in any Amazon Web Services (AWS) region. Cloud 66 supports both VPC and (for AWS accounts created before 2014) EC2-Classic. We also support reserved instances. To use a VPC, your account must conform with the [default VPC guidelines](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/default-vpc.html#launching-into).
 
 {% if include.product != 'prepress' %}
 #### Note
@@ -171,7 +171,7 @@ If new servers are added to a group on Cloud 66 (e.g. scaling up your web server
 {% if include.product != 'prepress' %}
 ## Reserved instances
 
-[AWS reserved instances](http://aws.amazon.com/ec2/purchasing-options/reserved-instances/) enable users to reserve instances for one to three years, which has pricing benefits when compared to on-demand instances.
+[AWS reserved instances](https://aws.amazon.com/ec2/purchasing-options/reserved-instances/) enable users to reserve instances for one to three years, which has pricing benefits when compared to on-demand instances.
 
 To use Cloud 66 with AWS reserved instances: 
 
@@ -204,6 +204,6 @@ For more details on how this works please read our full guide on the [propagatio
 
 ### External links
 
-- [AWS regions](http://aws.amazon.com/about-aws/globalinfrastructure/)
-- [AWS pricing](http://aws.amazon.com/ec2/pricing/)
+- [AWS regions](https://aws.amazon.com/about-aws/globalinfrastructure/)
+- [AWS pricing](https://aws.amazon.com/ec2/pricing/)
 

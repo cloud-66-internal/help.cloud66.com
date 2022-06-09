@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-By default Cloud 66 uses [**systemd**](http://manpages.ubuntu.com/manpages/bionic/man1/systemd.1.html){:target="_blank"} to monitor and manage processes on all new servers. It is automatically installed on all servers provisioned through Cloud 66. 
+By default Cloud 66 uses [**systemd**](https://manpages.ubuntu.com/manpages/bionic/man1/systemd.1.html){:target="_blank"} to monitor and manage processes on all new servers. It is automatically installed on all servers provisioned through Cloud 66. 
 
 The only exception to this is for some legacy servers deployed before June 2020. These servers may use [bluepill](https://github.com/bluepill-rb/bluepill){:target="_blank"}. You can check which process manager your application is using:
 
@@ -29,7 +29,7 @@ You can use systemd to manually control processes on your servers using the comm
 
 When you add processes through the Cloud 66 web interface, they will will also use systemd but will be managed by Cloud 66.
 
-We have documented some of the most common commands below, but please r[ead the full man page for systemd](http://manpages.ubuntu.com/manpages/bionic/man1/systemd.1.html){:target="_blank"} if you need more detail. You might also read [this excellent guide](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units){:target="_blank"} from DigitalOcean.
+We have documented some of the most common commands below, but please r[ead the full man page for systemd](https://manpages.ubuntu.com/manpages/bionic/man1/systemd.1.html){:target="_blank"} if you need more detail. You might also read [this excellent guide](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units){:target="_blank"} from DigitalOcean.
 
 #### Note
 <div class="notice"><p>

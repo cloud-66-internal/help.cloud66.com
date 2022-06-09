@@ -10,7 +10,7 @@ tags: ['Web server, Rack server']
 permalink: /:collection/:path:output_ext
 ---
 
-By default, applications deployed by Cloud 66 run on [Phusion Passenger](https://www.phusionpassenger.com/) behind [Nginx](http://wiki.nginx.org/Main). You can also choose to use one of several servers:
+By default, applications deployed by Cloud 66 run on [Phusion Passenger](https://www.phusionpassenger.com/) behind [Nginx](https://wiki.nginx.org/Main). You can also choose to use one of several servers:
 
 - [Passenger Enterprise](/rails/how-to-guides/rack-servers/passenger-enterprise.html)
 - [Puma](/rails/how-to-guides/rack-servers/puma-rack-server.html)

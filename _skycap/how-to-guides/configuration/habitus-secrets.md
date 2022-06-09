@@ -14,7 +14,7 @@ permalink: /:collection/:path:output_ext
 
 Habitus is a great tool for securely managing secrets during builds (among other things). If you'd like to integrate your existing Habitus build flow into a Skycap application, you need to ensure the conditions below are met.
 
-If you’re not an existing Habitus user, you’ll need to read through its [documentation](http://www.habitus.io/) to fully understand the purpose and power of the tool.
+If you’re not an existing Habitus user, you’ll need to read through its [documentation](https://www.habitus.io/) to fully understand the purpose and power of the tool.
 
 ## 1. Explicitly define secrets as Habitus environment variables
 

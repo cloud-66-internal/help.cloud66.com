@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## About Nginx
 
-Applications deployed with Maestro use [Nginx](http://nginx.com) as their web server, and its configuration is dependant on the resources of your server(s). Nginx is a high performance, open source web server used by some of the biggest web services in the world.
+Applications deployed with Maestro use [Nginx](https://nginx.com) as their web server, and its configuration is dependant on the resources of your server(s). Nginx is a high performance, open source web server used by some of the biggest web services in the world.
 
 ## Default Cloud 66 Nginx error page
 
@@ -490,4 +490,4 @@ Bad syntax:
 
 ## Nginx worker configuration
 
-Nginx now supports [autodetection of CPU cores](http://nginx.org/en/docs/ngx_core_module.html#worker_processes) (and other system resources) so there is no need to configure your worker processes differently depending on your cloud.
+Nginx now supports [autodetection of CPU cores](https://nginx.org/en/docs/ngx_core_module.html#worker_processes) (and other system resources) so there is no need to configure your worker processes differently depending on your cloud.

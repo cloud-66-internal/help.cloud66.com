@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## About Nginx
 
-Applications deployed with Cloud 66 use [Nginx](http://nginx.com) as their web server, and its configuration is dependent on the resources of your server(s).
+Applications deployed with Cloud 66 use [Nginx](https://nginx.com) as their web server, and its configuration is dependent on the resources of your server(s).
 
 ### Boolean variables
 
@@ -431,4 +431,4 @@ passenger_pool_max = ( server's memory - reserved_server_memory ) / [passenger_p
 
 ## Nginx worker configuration
 
-Nginx now supports [autodetection of CPU cores](http://nginx.org/en/docs/ngx_core_module.html#worker_processes) (and other system resources) so there is no need to configure your worker processes differently depending on your cloud.
+Nginx now supports [autodetection of CPU cores](https://nginx.org/en/docs/ngx_core_module.html#worker_processes) (and other system resources) so there is no need to configure your worker processes differently depending on your cloud.

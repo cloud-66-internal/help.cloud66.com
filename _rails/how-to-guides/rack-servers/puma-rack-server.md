@@ -10,7 +10,7 @@ legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-[Puma](http://puma.io/) is a light-weight web server built for speed and parallelism. 
+[Puma](https://puma.io/) is a light-weight web server built for speed and parallelism. 
 
 ## Deploying with Puma
 You need to choose your web server at the time of initial build of the application. Changes to or from Passenger (the default app server) will not be applied after your application has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.

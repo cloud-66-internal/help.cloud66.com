@@ -8,7 +8,7 @@ In Cloud 66 we have created an easier way to edit and control these tasks from y
 
 Cron stores its entries in a file named `crontab` (short for "cron table"), usually located in the `/etc` directory. 
 
-In our example below there are two jobs in the `/etc/crontab` file. The first job backs up the /etc directory nightly. The second job runs the [Analog](https://web.archive.org/web/20170507174724/http://www.analog.cx/) program to calculate server stats.
+In our example below there are two jobs in the `/etc/crontab` file. The first job backs up the /etc directory nightly. The second job runs the Analog program to calculate server stats.
 
 ```bash
 30 1 * * * root tar czf /usr/local/backups/daily/etc.tar.gz /etc >> /dev/null 2>&1

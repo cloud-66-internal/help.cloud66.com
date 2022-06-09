@@ -7,7 +7,7 @@ This timeline includes information about:
 * Who deployed
 * When they deployed
 * What code revision was deployed 
-* How the deployment was triggered (web, [API](http://developers.cloud66.com) or [redeployment hook](/{{page.collection}}/how-to-guides/deployment/redeployment-hook.html)). 
+* How the deployment was triggered (web, [API](https://developers.cloud66.com) or [redeployment hook](/{{page.collection}}/how-to-guides/deployment/redeployment-hook.html)). 
 
 {% if include.product == 'rails' %}
 In addition to this, you can also revert back to previous commits if need be. Reverting to a previous commit will only affect your code - you might still need to restore a [database backup](/{{page.collection}}/how-to-guides/add-ins/database-backups.html). If you wish, you can [switch off your database migrations](/{{page.collection}}/how-to-guides/databases/database-customization.html), roll back your database and then roll back your code.

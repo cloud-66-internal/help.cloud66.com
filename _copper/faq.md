@@ -45,7 +45,7 @@ We think Copper DSL satisfies all these goals and is going to get even better be
 
 ## Why is Copper written in Ruby and not X?
 
-You're probably thinking why Copper is not written in Go! As a matter of fact all of our other open source products ([Starter](http://www.startwithdocker.com/), [Habitus](http://www.habitus.io/) and [Gifnoc](http://gifnoc.com/)) are written in Go. Ruby however lends itself very well to writing a DSL and the Gem infrastructure is a good way to distribute libraries and binaries. Since all Copper users are familiar with Docker and it will most likely be running somewhere in your CI/CD pipeline, it is best wrapped in a Docker image.
+You're probably thinking why Copper is not written in Go! As a matter of fact all of our other open source products ([Starter](https://www.startwithdocker.com/) and [Habitus](https://www.habitus.io/)) are written in Go. Ruby however lends itself very well to writing a DSL and the Gem infrastructure is a good way to distribute libraries and binaries. Since all Copper users are familiar with Docker and it will most likely be running somewhere in your CI/CD pipeline, it is best wrapped in a Docker image.
 
 ## Can I help / contribute?
 

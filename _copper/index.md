@@ -47,7 +47,7 @@ These are some of the things we check in our configuration files committed into 
 * Image versions are not changed for important components (like databases) except for minor versions and patches.
 * Load balancer IP address is not changed in Service configuration by mistake.
 * Any fixed IP address used is within a valid range.
-* No secret is committed into the configuration repository (we use <a href="http://gifnoc.com/">Gifnoc</a> to replace those later on a secure machine).
+* No secret is committed into the configuration repository.
 * Certain images come from our trusted repositories and not public ones.
 
 For us these checks are like unit tests: they are there to make sure changes are made with confidence and human or machine errors are mitigated. Obviously these are not security measures and should be developed and treated exactly like your CI code tests.

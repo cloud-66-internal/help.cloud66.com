@@ -42,7 +42,7 @@ The next step depends on the kind of domain record you want to use. There are tw
 
 If you’d like your site to use a subdomain like `help.mysite.com` or `blog.mysite.com` then you will add a **CNAME** record pointing to `ct.cloud66content.com`
 
-For example, to set up your site to use `http://blog.mysite.com`:
+For example, to set up your site to use `https://blog.mysite.com`:
 
 1. Log into your domain provider and open the DNS manager
 2. Add a CNAME record with the **host** (or **name**) field set to `blog`

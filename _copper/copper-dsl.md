@@ -429,7 +429,7 @@ Returns the full filename of the configuration file. For example `samples/test.y
 Returns the full expanded file path of the configuration file. For example `samples/test.yml` will return (depending on the absolute location of the file) something like `/Users/john/projects/tests/kubernetes/samples/test.yml`.
 
 ### Reading from configuration files
-Copper DSL uses [JSONPath](http://goessner.net/articles/JsonPath/) format to read values from a configuration file. For any configuration file format, the content is first read and converted in to JSON which makes it possible to use JSONPath to find nodes and attributes in the configuration file.
+Copper DSL uses [JSONPath](https://goessner.net/articles/JsonPath/) format to read values from a configuration file. For any configuration file format, the content is first read and converted in to JSON which makes it possible to use JSONPath to find nodes and attributes in the configuration file.
 
 The `fetch` function accepts the JSONPath and returns an array of all matching nodes and attributes in the configuration.
 
@@ -480,7 +480,7 @@ fetch("$.spect.ports[?(@.port == 8080)]") // will return [8090]
 
 #### JSONPath syntax
 
-You can use the [JSONPath reference](http://goessner.net/articles/JsonPath/) as a syntax guideline. Copper DSL implements a subset of JSONPath, listed below. You can also use the [Online JSONPath](http://jsonpath.com/) evaluator for testing or refer to the debugging section below:
+You can use the [JSONPath reference](https://goessner.net/articles/JsonPath/) as a syntax guideline. Copper DSL implements a subset of JSONPath, listed below. You can also use the [Online JSONPath](https://jsonpath.com/) evaluator for testing or refer to the debugging section below:
 
 <table class="striped">
 	<tr><th>Operation</th><th>Meaning</th></tr>
