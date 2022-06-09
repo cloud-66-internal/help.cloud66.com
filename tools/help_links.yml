@@ -319,7 +319,6 @@ maestro:
     page: maestro/how-to-guides/clouds/cloud-rackspace.html
     page_anchors:
     - add-rackspace-key-to-an-application
-    - external-links
     - generate-a-rackspace-api-key
     - maestro-product-heading
     - note
@@ -2471,7 +2470,6 @@ node:
     page: node/how-to-guides/clouds/cloud-rackspace.html
     page_anchors:
     - add-rackspace-key-to-an-application
-    - external-links
     - generate-a-rackspace-api-key
     - node-product-heading
     - note
@@ -4819,7 +4817,6 @@ rails:
     page: rails/how-to-guides/clouds/cloud-rackspace.html
     page_anchors:
     - add-rackspace-key-to-an-application
-    - external-links
     - generate-a-rackspace-api-key
     - note
     - rails-product-heading

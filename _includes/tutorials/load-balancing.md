@@ -33,12 +33,12 @@ This feature is only available if you have deployed using a cloud vendor, and fo
 
 Depending on which cloud provider you use, your load balancer will be set up differently:
 
-- Amazon AWS: [Elastic Load Balancing](http://aws.amazon.com/elasticloadbalancing/)
+- Amazon AWS: [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/)
 - DigitalOcean: [HAProxy](http://haproxy.1wt.eu/)
 - Google Cloud Engine: [Forwarding rules, target pools & health checks](https://developers.google.com/compute/docs/load-balancing/)
 - Linode: [NodeBalancer](https://www.linode.com/nodebalancers/)
-- Microsoft Azure: [TrafficManager](http://msdn.microsoft.com/en-us/library/azure/hh744833.aspx)
-- Rackspace: [Rackspace Load Balancing](http://www.rackspace.com/cloud/load-balancing/)
+- Microsoft Azure: [TrafficManager](https://msdn.microsoft.com/en-us/library/azure/hh744833.aspx)
+- Rackspace: [Rackspace Load Balancing](https://www.rackspace.com/cloud/load-balancing/)
 - CloudA: [Load Balancing as a service](https://www.clouda.ca/technology/vpc-virtual-private-cloud/)
 
 The time required to set up your load balancer will depend on which cloud provider you use. 

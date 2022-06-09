@@ -1,6 +1,6 @@
 
 
-[Memcached](http://memcached.org/) is an open source, high-performance, distributed memory object caching system, and it's easy to add to your application as an add-in.
+[Memcached](https://memcached.org/) is an open source, high-performance, distributed memory object caching system, and it's easy to add to your application as an add-in.
 
 <div class="notice notice-warning">
     <p>

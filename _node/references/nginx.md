@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## About Nginx
 
-Applications deployed with Cloud 66 use [Nginx](http://nginx.com) as their web server, and its configuration is dependant on the resources of your server(s).
+Applications deployed with Cloud 66 use [Nginx](https://nginx.com) as their web server, and its configuration is dependant on the resources of your server(s).
 
 If you need help customizing your Nginx configuration, please read our [how-to guide](/node/how-to-guides/deployment/customizing-nginx.html) on the subject.
 
@@ -502,4 +502,4 @@ Bad syntax:
 
 ## Nginx worker configuration
 
-Nginx now supports [autodetection of CPU cores](http://nginx.org/en/docs/ngx_core_module.html#worker_processes) (and other system resources) so there is no need to configure your worker processes differently depending on your cloud.
+Nginx now supports [autodetection of CPU cores](https://nginx.org/en/docs/ngx_core_module.html#worker_processes) (and other system resources) so there is no need to configure your worker processes differently depending on your cloud.

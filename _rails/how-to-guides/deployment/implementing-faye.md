@@ -13,7 +13,7 @@ permalink: /:collection/:path:output_ext
 
 ## Introduction
 
-[Faye](http://faye.jcoglan.com/) is a publish-subscribe messaging system that provides messaging services. At Cloud 66, we recommend running Faye as a [background process](/rails/how-to-guides/deployment/systemd.html) on your application behind a [Thin rack server](http://code.macournoyer.com/thin/).
+[Faye](https://faye.jcoglan.com/) is a publish-subscribe messaging system that provides messaging services. At Cloud 66, we recommend running Faye as a [background process](/rails/how-to-guides/deployment/systemd.html) on your application behind a [Thin rack server](https://github.com/macournoyer/thin).
 
 
 ## Implementation

@@ -1,6 +1,6 @@
 ## Overview
 
-[WebSocket](http://www.websocket.org/) is a protocol that allows bi-directional web communication between client and server. You can configure your application to communicate via WebSocket using the method below.
+WebSocket is a protocol that allows bi-directional web communication between client and server. You can configure your application to communicate via WebSocket using the method below.
 
 #### Note for AWS users
 

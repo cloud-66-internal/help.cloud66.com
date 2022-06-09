@@ -1,6 +1,6 @@
 
 
-[RabbitMQ](http://www.rabbitmq.com) is a powerful open source message broker.
+[RabbitMQ](https://www.rabbitmq.com) is a powerful open source message broker.
 
 ## Add RabbitMQ
 

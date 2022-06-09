@@ -33,7 +33,7 @@ At first glance, `manifest.yml` may seem very similar to the service definition 
 
 ### Validating YAML
 
-Manifest files are YAML formatted. You can check the validity of your configuration with [YAML Lint](http://www.yamllint.com/). If you'd like to learn more about writing YAML, [this is a useful beginner's guide](https://circleci.com/blog/what-is-yaml-a-beginner-s-guide/).
+Manifest files are YAML formatted. You can check the validity of your configuration with [YAML Validator](https://codebeautify.org/yaml-validator). If you'd like to learn more about writing YAML, [this is a useful beginner's guide](https://circleci.com/blog/what-is-yaml-a-beginner-s-guide/).
 
 ## Editing manifest files
 

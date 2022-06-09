@@ -113,4 +113,4 @@ Maestro applications also enjoy the same benefits as other Cloud 66 applications
 - Fast-response 100% SLA DNS layer [failover groups](/maestro/tutorials/failover-groups.html) for quick traffic switch overs
 - [Server monitoring tools](/maestro/how-to-guides/build-and-config/setting-up-custom-livelogs.html)
 - [Intuitive UI](https://app.cloud66.com/dashboard)
-- [API](http://developers.cloud66.com) and [command line Toolbelt](/maestro/quickstarts/using-cloud66-toolbelt.html)
+- [API](https://developers.cloud66.com) and [command line Toolbelt](/maestro/quickstarts/using-cloud66-toolbelt.html)

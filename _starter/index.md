@@ -19,7 +19,7 @@ sitemap: false
 
 ## Welcome to Starter
 
-Starter works in the same way as <a href="https://devcenter.heroku.com/articles/buildpacks">BuildPacks</a> do, but only generates the above mentioned files; the image compile step happens on <a href="http://help.cloud66.com/building-your-stack/building-your-docker-service">BuildGrid</a>. Starter does not require any additional third party tools or frameworks to work (it's compiled as a Go executable).
+Starter works in the same way as <a href="https://devcenter.heroku.com/articles/buildpacks">BuildPacks</a> do, but only generates the above mentioned files; the image compile step happens on <a href="https://help.cloud66.com/building-your-stack/building-your-docker-service">BuildGrid</a>. Starter does not require any additional third party tools or frameworks to work (it's compiled as a Go executable).
 
 ## Getting Started
 
@@ -108,13 +108,13 @@ git commit -m "adding Dockerfile"
 git push origin master
 ```
 
-Now you can use the web interface <a href="http://help.cloud66.com/introduction-to-cloud-66/introduction-to-cloud-66">to create a new stack</a> for your app in Cloud 66. All you need to do is to copy and paste the generated <code>service.yml</code> to the advanced settings of the stack creation step.
+Now you can use the web interface <a href="https://help.cloud66.com/introduction-to-cloud-66/introduction-to-cloud-66">to create a new stack</a> for your app in Cloud 66. All you need to do is to copy and paste the generated <code>service.yml</code> to the advanced settings of the stack creation step.
 
-Alternatively you can use the <a href="http://help.cloud66.com/toolbelt/toolbelt-stack-management">Cloud 66 Toolbelt</a> to create your stack from the command line:
+Alternatively you can use the <a href="https://help.cloud66.com/toolbelt/toolbelt-stack-management">Cloud 66 Toolbelt</a> to create your stack from the command line:
 
 <code>$ cx stacks create --name "My Awesome Stack" --environment "production" --service_yaml service.yaml</code>
 
-Find more information on <a href="http://help.cloud66.com/toolbelt/toolbelt-stack-management">creating a stack with the Toolbelt</a>.
+Find more information on <a href="https://help.cloud66.com/toolbelt/toolbelt-stack-management">creating a stack with the Toolbelt</a>.
 
 ## Support for new frameworks and languages
 

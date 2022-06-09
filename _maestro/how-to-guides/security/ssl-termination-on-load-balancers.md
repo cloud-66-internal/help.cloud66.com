@@ -18,7 +18,7 @@ If you need help getting started with SSL and certificates on Maestro [follow ou
 
 ## Amazon Elastic Load Balancer
 
-To register an SSL certificate with Amazon Elastic Load Balancer, first, generate your certificate(s). If you're not sure how to do this, follow our [blog post](http://blog.cloud66.com/registering-ssl-certificate-with-amazon-elastic-load/) on the subject.
+To register an SSL certificate with Amazon Elastic Load Balancer, first, generate your certificate(s). If you're not sure how to do this, follow our [blog post](https://blog.cloud66.com/registering-ssl-certificate-with-amazon-elastic-load/) on the subject.
 
 You can upload your SSL certificates to the relevant load balancers using the AWS dashboard or the command line interface.
 
@@ -59,9 +59,9 @@ $ elb-create-lb-listeners ELBConfigureSSL --listener "protocol=HTTPS,lb-port=443
 $ iam-servercertdel -s <certificate name>
 ```
 
-Refer to the [AWS documentation for more information](http://docs.aws.amazon.com/IAM/latest/UserGuide/InstallCert.html).
+Refer to the [AWS documentation for more information](https://docs.aws.amazon.com/IAM/latest/UserGuide/InstallCert.html).
 
 
 ## Rackspace
 
-Rackspace makes it very easy for you to [add SSL certificates to their cloud load balancer](http://www.rackspace.com/knowledge_center/product-faq/cloud-load-balancers), straight from its control panel.
+Rackspace makes it very easy for you to add SSL certificates to their cloud load balancer, straight from its control panel.

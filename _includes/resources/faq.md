@@ -20,7 +20,7 @@ Cloud 66 is hosted in the cloud and is available as a service. You don't need to
 
 ## How can I use Cloud 66?
 
-[Sign up](http://app.cloud66.com/users/sign_up) for an account and start by building your first application. Specify a Git repository containing your application code, or provide a Docker image. A few seconds later you can configure your deployment and point your application to the infrastructure on which you would like it run.
+[Sign up](https://app.cloud66.com/users/sign_up) for an account and start by building your first application. Specify a Git repository containing your application code, or provide a Docker image. A few seconds later you can configure your deployment and point your application to the infrastructure on which you would like it run.
 
 * * *
 

@@ -30,7 +30,7 @@ To get started:
 4. Deploy your application
 
 #### Is my yaml valid?
-<div class="notice"><p>The manifest file is YAML formatted. You can check its validity at <a href="http://www.yamllint.com/">YAML Lint</a> or with this command:<br/>
+<div class="notice"><p>The manifest file is YAML formatted. You can check its validity at <a href="https://codebeautify.org/yaml-validator">YAML Validator</a> or with this command:<br/>
 <code class="highlighter-rouge">$ ruby -e "require 'yaml'; YAML.load_file('.cloud66/manifest.yml')"</code>
 </p></div>
 

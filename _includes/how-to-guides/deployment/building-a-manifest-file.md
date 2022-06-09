@@ -138,7 +138,7 @@ These are the parameters that the _server_ section can take:
   <tr>
     <td><code>region</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The <a href="http://developers.cloud66.com/#cloud-vendor-instance-regions">data center region</a> where the server will be built.</td>
+    <td>The <a href="https://developers.cloud66.com/#cloud-vendor-instance-regions">data center region</a> where the server will be built.</td>
     <td>All</td>
   </tr>
   <tr>
@@ -156,7 +156,7 @@ These are the parameters that the _server_ section can take:
   <tr>
     <td><code>size</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>The <a href="http://developers.cloud66.com/#cloud-vendor-instance-names">size of the server instance</a> to be created.</td>
+    <td>The <a href="https://developers.cloud66.com/#cloud-vendor-instance-names">size of the server instance</a> to be created.</td>
     <td>All</td>
   </tr>
   <tr>
