@@ -17,7 +17,7 @@ User integration API has three steps:
 Cloud 66 user sees an integration option on his dashboard and clicks on it. He is redirected to the partner's website with the following payload:
 
 ```http
-GET http://partner/url?uid=abc123&email=jon@smith.com&callback=https://app.cloud66.com/url
+GET https://partner/url?uid=abc123&email=jon@smith.com&callback=https://app.cloud66.com/url
 ```
 
 - **uid**       A unique ID of the user
@@ -88,5 +88,5 @@ Provider needs to recalculate the multipass and signature and check its authenti
 
 ## Using OAuth2
 
-If a partner requires specific permissions over a user's account, they can use the [Cloud 66 oAuth2 API](http://developers.cloud66.com/) instead or in addition to the SSO method above.
+If a partner requires specific permissions over a user's account, they can use the [Cloud 66 oAuth2 API](https://developers.cloud66.com/) instead or in addition to the SSO method above.
 

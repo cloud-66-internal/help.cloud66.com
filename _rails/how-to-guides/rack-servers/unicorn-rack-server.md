@@ -10,7 +10,7 @@ legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-[Unicorn](http://unicorn.bogomips.org/) is a web server that uses forked processes to handle multiple incoming requests concurrently.
+[Unicorn](https://yhbt.net/unicorn/README.html) is a web server that uses forked processes to handle multiple incoming requests concurrently.
 
 ## Deploy with Unicorn
 You need to choose your web server at the time of initial build of the application. Changes to or from Passenger (the default web app server) will not be applied after your application has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.

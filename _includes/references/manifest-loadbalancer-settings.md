@@ -315,7 +315,7 @@ The following settings are available via the Manifest file:
 </tbody>
 </table>
 
-Refer to the [Rackspace documentation](http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/Algorithms-d1e4367.html) for more detail on these settings.
+Refer to the [Rackspace documentation](https://docs.rackspace.com/docs) for more detail on these settings.
 
 ### Example YAML for Rackspace load balancer
 

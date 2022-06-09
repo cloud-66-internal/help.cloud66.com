@@ -19,7 +19,7 @@ This timeline includes information about:
 * Who deployed
 * When they deployed
 * What code revision was deployed 
-* How the deployment was triggered (web, [API](http://developers.cloud66.com) or [redeployment hook](/maestro/how-to-guides/deployment/redeployment-hook.html). 
+* How the deployment was triggered (web, [API](https://developers.cloud66.com) or [redeployment hook](/maestro/how-to-guides/deployment/redeployment-hook.html). 
 
 ## Accessing the timeline
 

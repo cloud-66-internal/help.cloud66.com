@@ -22,7 +22,7 @@ For **Rails/Rack** applications this file should be present within a folder name
 /.cloud66/deploy_hooks.yml
 ```
 
-This file should be YAML formatted, and you can use a service like [YAMLlint](http://yamllint.com/) to validate it.
+This file should be YAML formatted, and you can use a service like [YAML Validator](https://codebeautify.org/yaml-validator) to validate it.
 {% endif %}
 {% if include.product == 'maestro' %}
 Deploy hooks can be added to an application via the Dashboard. Like most other configuration templates in Maestro, Deploy hooks are YAML-formatted.

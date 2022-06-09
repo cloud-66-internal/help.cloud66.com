@@ -33,7 +33,7 @@ Visit the Slack [Integrations page](https://slack.com/integrations) and select t
 
 ### Webhooks
 
-The [Webhooks](http://www.webhooks.org/) standard uses HTTP POST to connect different systems, and is very simple to use but very powerful.
+The [Webhooks](https://www.webhooks.org/) standard uses HTTP POST to connect different systems, and is very simple to use but very powerful.
 
 All notification types from Cloud 66 can trigger a webhook. To setup your webhook, click on the _Webhook_ icon. There you can enter the URL for your webhook endpoint and test it to see how it behaves.
 

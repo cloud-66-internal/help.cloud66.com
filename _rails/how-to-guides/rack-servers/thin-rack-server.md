@@ -10,7 +10,7 @@ legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-[Thin](http://code.macournoyer.com/thin/) is a Ruby web server that can handle high levels of concurrency. 
+[Thin](https://github.com/macournoyer/thin) is a Ruby web server that can handle high levels of concurrency. 
 
 ## Deploying with Thin
 You need to choose your web server at the time of initial build of the application. Changes to or from Passenger (the default web server) will not be applied after your application has initially been analyzed. You can however change freely between other supported servers by simply updating your Gems and Procfile.

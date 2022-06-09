@@ -64,7 +64,7 @@ From your Heroku toolbelt, create a database backup URL by running `heroku pgbac
 
 #### MySQL
 
-Start by dumping your existing database. Refer to the [ClearDB documentation for common problems](http://www.cleardb.com/blog/entry?id=common-problems-2).
+Start by dumping your existing database. Refer to the [ClearDB documentation for common problems](https://www.cleardb.com/blog/entry?id=common-problems-2).
 
 ```bash
 $ mysqldump -u [username] -p[password] [dbname] > backup.sql 

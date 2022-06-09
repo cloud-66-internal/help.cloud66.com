@@ -58,7 +58,7 @@ You will now see all your configuration files as sub-tabs (as well as your Manif
 
 ## Dynamic templating
 
-CustomConfig uses the [Liquid templating language](http://www.liquidmarkup.org/) developed by [Shopify](http://www.shopify.com/) and used by many websites. 
+CustomConfig uses the [Liquid templating language](https://shopify.github.io/liquid/) developed by [Shopify](https://www.shopify.com/) and used by many websites. 
 
 Liquid allows you to make your templates truly dynamic by incorporating features like variables, logical flow, and operators.
 

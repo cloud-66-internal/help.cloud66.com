@@ -1,6 +1,6 @@
 
 ## About configuring HAProxy
-HAProxy CustomConfig allows you to configure your load balancer through the comfort of your browser. In addition to the settings described below, you could also refer to the [HAProxy documentation](http://www.haproxy.org/#docs) for more information about configurations.
+HAProxy CustomConfig allows you to configure your load balancer through the comfort of your browser. In addition to the settings described below, you could also refer to the [HAProxy documentation](https://www.haproxy.org/#docs) for more information about configurations.
 
 ## View HAProxy stats
 While on your Application Overview, click on the load balancer add-in to login to your HAProxy stats page. Once logged in, you will see a variety of statistics for your load balancer, and any potential issues.
@@ -40,7 +40,7 @@ In this case, you could replace the _httpchk_ section with this:
 ## Configuring HAProxy with CustomConfig
 You can customize the HAProxy configuration on your HAProxy server using CustomConfig (below).
 
-CustomConfig uses the [Liquid templating language](http://liquidmarkup.org/). You can find many incredible guides and tutorials into the Liquid syntax around the web, but the syntax is easy enough to pick up in minutes.
+CustomConfig uses the [Liquid templating language](https://shopify.github.io/liquid/s). You can find many incredible guides and tutorials into the Liquid syntax around the web, but the syntax is easy enough to pick up in minutes.
 
 The following variables are available to use in HAProxy CustomConfig.
 

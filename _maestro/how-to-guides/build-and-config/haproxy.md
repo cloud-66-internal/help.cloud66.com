@@ -52,7 +52,7 @@ In this case, you could replace the _httpchk_ section with this:
 ## Configuring HAProxy with CustomConfig
 You can customize the HAProxy configuration on your HAProxy server using CustomConfig (below).
 
-CustomConfig uses the [Liquid templating language](http://liquidmarkup.org/). You can find many incredible guides and tutorials into the Liquid syntax around the web, but the syntax is easy enough to pick up in minutes.
+CustomConfig uses the [Liquid templating language](https://shopify.github.io/liquid/). You can find many incredible guides and tutorials into the Liquid syntax around the web, but the syntax is easy enough to pick up in minutes.
 
 The following variables are available to use in HAProxy CustomConfig.
 

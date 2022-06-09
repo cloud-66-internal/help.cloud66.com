@@ -28,7 +28,7 @@ You can now log in to your server using your public key.
 
 ## Generate Keys on Windows
 
-If you're using PuTTY in Windows for SSH services, you can still use SSH keys. PuTTY can generate keys using the puttygen program, [download PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
+If you're using PuTTY in Windows for SSH services, you can still use SSH keys. PuTTY can generate keys using the puttygen program, [download PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/).
 
 
 ## Connect to your server using your key

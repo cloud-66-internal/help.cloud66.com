@@ -10,7 +10,7 @@ legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-Cloud 66 supports applications based on the [Padrino framework](http://www.padrinorb.com/), a light-weight web framework built upon [Sinatra](/rails/how-to-guides/deployment/sinatra-stacks.html).
+Cloud 66 supports applications based on the [Padrino framework](https://www.padrinorb.com/), a light-weight web framework built upon [Sinatra](/rails/how-to-guides/deployment/sinatra-stacks.html).
 
 ## Custom commands
 Given that Padrino applications can have different database frameworks, we allow you to specify custom commands which are run at specific points during deployment:
@@ -120,5 +120,5 @@ development:
 
 #### Note
 <div class="notice">
-  <p>You can use <a href="http://yamllint.com/" target="_blank">Yamllint.com</a> to check your YAML syntax before committing.</p>
+  <p>You can use <a href="https://codebeautify.org/yaml-validator" target="_blank">Yamllint.com</a> to check your YAML syntax before committing.</p>
 </div>

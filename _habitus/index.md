@@ -161,7 +161,7 @@ ADD ./iron-mountain /app/iron-mountain
 
 The Dockerfile here is a simple one that starts from `cloud66/uploader` and adds one of the build artifacts to the image so it can be uploaded to S3.
 
-  [S3CMD]: http://s3tools.org/s3cmd
+  [S3CMD]: https://s3tools.org/s3cmd
 
 ### Command line parameters
 

@@ -10,7 +10,7 @@ legacy: false
 permalink: /:collection/:path:output_ext
 ---
 
-Cloud 66 supports applications based on the [Sinatra framework](http://www.sinatrarb.com/), a light-weight web framework written in Ruby.
+Cloud 66 supports applications based on the [Sinatra framework](https://github.com/sinatra/sinatra), a light-weight web framework written in Ruby.
 
 ## Custom commands
 Given that Sinatran applications can have different database frameworks, we allow you to specify custom commands which are run at specific points during deployment:
@@ -60,7 +60,7 @@ Should you wish to change the database username/password after build, you will h
 
 #### Note
 <div class="notice">
-  <p>You can use <a href="http://yamllint.com/" target="_blank">Yamllint.com</a> to check your YAML syntax before committing.</p>
+  <p>You can use <a href="https://codebeautify.org/yaml-validator" target="_blank">Yamllint.com</a> to check your YAML syntax before committing.</p>
 </div>
 
 ### Examples of connecting to your database:

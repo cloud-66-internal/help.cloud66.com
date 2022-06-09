@@ -1,6 +1,6 @@
 
 
-[GlusterFS](http://www.gluster.org/) is a scalable network file-system, and it's easy to add to your application as an add-in.
+[GlusterFS](https://www.gluster.org/) is a scalable network file-system, and it's easy to add to your application as an add-in.
 
 ## Adding GlusterFS
 
@@ -59,7 +59,7 @@ This is achieved using the [manifest](/{{page.collection}}/how-to-guides/build-a
 Using the manifest file also allows you to choose the servers you would like to have the volumes mounted (like application servers or your database servers).
  
 ## Accessing your GlusterFS servers
-GlusterFS servers are added to a new group called _GlusterFS Cluster_ under your application. These servers are accessible via the usual GlusterFS tooling (available from [GlusterFS website](http://www.gluster.org/)).
+GlusterFS servers are added to a new group called _GlusterFS Cluster_ under your application. These servers are accessible via the usual GlusterFS tooling (available from [GlusterFS website](https://www.gluster.org/)).
 
 Every server in your application will have the following 3 environment variables available by default:
 
