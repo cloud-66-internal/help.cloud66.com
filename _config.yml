@@ -23,6 +23,10 @@ collections:
     output: true
     permalink: /:collection/:path/
     icon: foundicon-idea
+  guides:
+    output: true
+    permalink: /:collection/:path/
+    icon: foundicon-idea
   habitus:
     output: true
     permalink: /:collection/:path/
