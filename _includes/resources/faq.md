@@ -82,29 +82,13 @@ Currently Prepress supports AWS (S3), Google Compute Engine, DigitalOcean Spaces
 We currently support Ubuntu versions 18.04 and 20.04.
 
 * * *
+
 {% endif %}
 
 ## How much does it cost?
 
-{% if include.product == 'rails' %}
-Please see our [product page](https://www.cloud66.com/rails) for more information.
-{% endif %}
+Please see our [main site](https://www.cloud66.com/) for more information.
 
-{% if include.product == 'maestro' %}
-Please see our [product page](https://www.cloud66.com/containers/maestro) for more information.
-{% endif %}
-
-{% if include.product == 'prepress' %}
-Please see our [product page](https://www.cloud66.com/frameworks/jamstack) for more information.
-{% endif %}
-
-{% if include.product == 'node' %}
-Please see our [product page](https://www.cloud66.com/node) for more information.
-{% endif %}
-
-{% if include.product == 'skycap' %}
-Please see our [product page](https://www.cloud66.com/containers/skycap) for more information.
-{% endif %}
 
 * * *
 
@@ -115,6 +99,7 @@ You do. Cloud 66 helps you with configuring and deploying your application to th
 {% endif %}
 {% if include.product == 'prepress' %}
 ## Who pays for the cloud storage?
+
 You do. Cloud 66 helps you with configuring and deploying your application to your cloud provider.
 {% endif %}
 
