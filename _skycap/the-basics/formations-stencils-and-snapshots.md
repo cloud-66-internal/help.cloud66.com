@@ -28,7 +28,7 @@ Formations are like "deployment destinations" for your application. Each applica
 
 Each Formation is a collection of multiple Stencils. While you can put all of your Kuberentes configuration files into a single Stencil, using multiple Stencils per Formation helps with grouping and managing them as they grow in complexity.
 
-<img src="/assets/skycap/formation_schematic.png" width="600px">
+<img src="/assets/skycap/formation_schematic.png" width="600px" alt="The structure of a Formation">
 
 A micro-services based application is made up of one or more services. These services are run and managed by Kubernetes as `Deployments` and / or `Services`. To deploy these to Kubernetes you need to generate Kubernetes configuration files for `Namespace`, `Deployment`, `Service`, `ConfigMap` or `Secrets` and possibly more.
 
@@ -54,7 +54,7 @@ StencilGroups help you group the Stencils of a Formation into dynamic or static 
 
 A Snapshot is the state of your application at a point in time. It includes all your applications images and their unique tags, environment variables and configuration items that are defined in your Skycap application. 
 
-<img src="/assets/skycap/retagging.png" width="600px">
+<img src="/assets/skycap/retagging.png" width="600px" alt="A Snapshot">
 
 All of these components are then stored in a private repository on your Cloud 66 account so that you can roll back easily at any time.
 
@@ -77,7 +77,7 @@ These are possible when code, configuration and all other parameters like enviro
 
 Rendering is the act of merging Stencils with a Snapshot and generating the resulting configuration files. Stencils of a Formation are rendered automatically when they are downloaded via the Cloud 66 UI or the Toolbelt CLI.
 
-<img src="/assets/skycap/rendering.png" width="200px"/>
+<img src="/assets/skycap/rendering.png" alt="The Rendering process" width="200px"/>
 
 
 ## What is a Base Template?

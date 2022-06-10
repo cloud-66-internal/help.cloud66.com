@@ -75,7 +75,7 @@ To do this, click on the *Add Stencils* button in the **Getting Started with For
 
 A `namespace` is usually the first thing configured for a new Formation. To create yours, choose *setup.yml* from the menu that automatically opens on the next page.
 
-<img src="/assets/skycap/formation_step_2_NEW.gif" alt="Formation Step 1"/>
+<img src="/assets/skycap/formation_step_2_NEW.gif" alt="Formation Step 2"/>
 
 This creates a Stencil for a namespace configuration file for you. Let's look at the first section of the template in a bit more detail:
 
@@ -131,7 +131,7 @@ We automatically name each new YAML file starting with the name of its original 
 
 Click on the **+** button and choose **deployment.yml**. In the generated Stencil, you can see the are some placeholders called `${require(...)}`. You need to replace these with values that are specific to your application. Let's do that for our Hello World application now.
 
-Set `containerPort` to `8080` (this is the port through which the Hello World container will serve traffic) and set `command` to `["/go/src/helloworld/helloworld"]` (Hellow World is written in Go and this command initialises that code).
+Set `containerPort` to `8080` (this is the port through which the Hello World container will serve traffic) and set `command` to `["/go/src/helloworld/helloworld"]` (Hello World is written in Go and this command initialises that code).
 
 <img src="/assets/skycap/formation_step_4_NEW.gif" alt="Formation Step 3"/>
 
@@ -180,7 +180,7 @@ Next, run `kubectl get ns` to check that your new namespace is up and running. Y
 
 Then, invoke the service using `minikube service` command, and a browser window should open confirming that the app is up and running.
 
-<img src="/assets/skycap/formation_step_7_NEW.gif"/>
+<img src="/assets/skycap/formation_step_7_NEW.gif" alt="Formation Step 6"/>
 
 Congratulations! You just deployed your first Formation to a Kubernetes cluster.
 
