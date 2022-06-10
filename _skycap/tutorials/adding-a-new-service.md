@@ -49,7 +49,7 @@ In this example you have decided to make your **Hello World** application dynami
 
 6. Once Skycap has successfully analysed the Redis image, click *Save Changes* 
 
-<img src="/assets/skycap/tutorial-adding-service-1.gif"/>
+<img src="/assets/skycap/tutorial-adding-service-1.gif" alt="Adding a service" />
 
 You should now be able to see the Redis service below your original “Hello World” service.
 
@@ -71,7 +71,7 @@ Select “redis” from the *Service* dropdown (on the right-hand side)
 In the Stencil code change both `port` and `targetPort` to `6379` (the standard Redis port)
 Add a commit message and click *Save changes*
 
-<img src="/assets/skycap/tutorial-adding-service-2.gif"/>
+<img src="/assets/skycap/tutorial-adding-service-2.gif" alt="Adding a second service"/>
 
 You should now see a new Stencil called redis_service.yml in your Formation. Next, we need to define our Redis deployment.
 
@@ -83,7 +83,7 @@ In the Stencil code change `containerPort` to `6379`
 Delete the `command` entirely - we don’t need it for this example
 Add a commit message and click *Save changes*
 
-<img src="/assets/skycap/tutorial-adding-service-3.gif"/>
+<img src="/assets/skycap/tutorial-adding-service-3.gif" alt="Adding a deployment.yml"/>
 
 We are now nearly ready to deploy our updated Hello World app. We just need to create a new Snapshot and render our enlarged Formation.
 

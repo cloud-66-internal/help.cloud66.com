@@ -171,11 +171,11 @@ Each hook type has a different set of hook fields available, with some shared fi
      <td colspan="2"> <strong>HOOK TYPE: Snippets</strong> </td>
     </tr>
     <tr>
-     <td width="13%"> snippet <img class="table-img-required" src="/assets/shared/required.gif"> </td>
+     <td width="13%"> snippet <img class="table-img-required" src="/assets/shared/required.gif" alt="Required element"> </td>
      <td> Snippet to be used - runs in <code>/tmp/deploy_hooks</code> by default </td>
     </tr>
     <tr>
-     <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
+     <td> target <img class="table-img-required" src="/assets/shared/required.gif" alt="Required element"> </td>
      <td> Target server(s), with accepted values <code>any</code>, <code>rails</code>, <code>mysql</code>, <code>postgresql</code>, <code>mongodb</code>, <code>redis</code>, <code>sinatra</code>, <code>padrino</code>, <code>custom</code>
       <div class="notice notice-warning">
        <strong> Note:</strong> Please make sure you read the
@@ -233,11 +233,11 @@ If the application already contains this env var it will be overridden with the 
    <td colspan="2"> <strong>HOOK TYPE: Commands</strong> </td>
   </tr>
   <tr>
-   <td width="13%"> command <img class="table-img-required" src="/assets/shared/required.gif"> </td>
+   <td width="13%"> command <img class="table-img-required" src="/assets/shared/required.gif" alt="Required element"> </td>
    <td> Command to be used - run in <code>/tmp/deploy_hooks</code> by default </td>
   </tr>
   <tr>
-   <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
+   <td> target <img class="table-img-required" src="/assets/shared/required.gif" alt="Required element"> </td>
    <td> Target server(s), with accepted values <code>any</code>, <code>rails</code>, <code>docker</code>, <code>mysql</code>, <code>postgresql</code>, <code>mongodb</code>, <code>redis</code>, <code>sinatra</code>, <code>padrino</code>, <code>custom</code>
     <div class="notice notice-warning">
      <strong> Note:</strong> Please make sure you read the
@@ -295,11 +295,11 @@ If the application already contains this env var it will be overridden with the 
  <td colspan="2"> <strong>HOOK TYPE: Inline Scripts</strong> </td>
 </tr>
 <tr>
- <td width="13%"> source <img class="table-img-required" src="/assets/shared/required.gif"> </td>
+ <td width="13%"> source <img class="table-img-required" src="/assets/shared/required.gif" alt="Required element"> </td>
  <td> This specifies the source location of your deploy hook file within your repository </td>
 </tr>
 <tr>
- <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
+ <td> target <img class="table-img-required" src="/assets/shared/required.gif" alt="Required element"> </td>
  <td> Target server(s), with accepted values <code>any</code>, <code>rails</code>, <code>mysql</code>, <code>postgresql</code>, <code>mongodb</code>, <code>redis</code>, <code>sinatra</code>, <code>padrino</code>, <code>custom</code>
   <div class="notice notice-warning">
    <strong> Note:</strong> Please make sure you read the
@@ -371,11 +371,11 @@ If the application already contains this env var it will be overridden with the 
  <td colspan="2"> <strong>HOOK TYPE: Existing Scripts (Rails/Node applications only)</strong> </td>
 </tr>
 <tr>
- <td width="13%"> source <img class="table-img-required" src="/assets/shared/required.gif"> </td>
+ <td width="13%"> source <img class="table-img-required" src="/assets/shared/required.gif" alt="Required element"> </td>
  <td> This specifies the source location of your deploy hook file within your repository </td>
 </tr>
 <tr>
- <td> target <img class="table-img-required" src="/assets/shared/required.gif"> </td>
+ <td> target <img class="table-img-required" src="/assets/shared/required.gif" alt="Required element"> </td>
  <td> Target server(s), with accepted values <code>any</code>, <code>rails</code>, <code>mysql</code>, <code>postgresql</code>, <code>mongodb</code>, <code>redis</code>, <code>sinatra</code>, <code>padrino</code>, <code>custom</code>
   <div class="notice notice-warning">
    <strong> Note:</strong> Please make sure you read the
