@@ -34,7 +34,7 @@ Name and Tags should be self explanatory. Rules are JSON objects that determine 
 
 In this demonstration we create a group that contains only the namespace definition (setup.yml) and excludes anything tagged as "production":
 
-<img src="/assets/skycap/StencilGroups.gif">
+<img src="/assets/skycap/StencilGroups.gif" alt="Stencil groups">
 
 ## More about StencilGroup rules
 

@@ -63,7 +63,7 @@ After the final step of [setting up your application](/skycap/quickstarts/gettin
 
 You can also add a few tags to it (these help to identify components later on). If you're using our sample project, calling your Formation "Hello World" is a good idea.
 
-<img src="/assets/skycap/formation_step_1_NEW.gif"/>
+<img src="/assets/skycap/formation_step_1_NEW.gif" alt="Formation Step 1"/>
 
 ### Add your first Stencil
 
@@ -75,7 +75,7 @@ To do this, click on the *Add Stencils* button in the **Getting Started with For
 
 A `namespace` is usually the first thing configured for a new Formation. To create yours, choose *setup.yml* from the menu that automatically opens on the next page.
 
-<img src="/assets/skycap/formation_step_2_NEW.gif"/>
+<img src="/assets/skycap/formation_step_2_NEW.gif" alt="Formation Step 1"/>
 
 This creates a Stencil for a namespace configuration file for you. Let's look at the first section of the template in a bit more detail:
 
@@ -133,7 +133,7 @@ Click on the **+** button and choose **deployment.yml**. In the generated Stenci
 
 Set `containerPort` to `8080` (this is the port through which the Hello World container will serve traffic) and set `command` to `["/go/src/helloworld/helloworld"]` (Hellow World is written in Go and this command initialises that code).
 
-<img src="/assets/skycap/formation_step_4_NEW.gif"/>
+<img src="/assets/skycap/formation_step_4_NEW.gif" alt="Formation Step 3"/>
 
 ### Adding a Service
 
@@ -143,7 +143,7 @@ Click on the **+** button again but choose the `service.yml` template this time.
 
 Make the following changes: change `port` to `8080` and `targetPort` to `5000`. This tells Kubernetes that our service container is serving on port `8080` and that we are going to expose this to the outside using port `5000`
 
-<img src="/assets/skycap/formation_step_5_NEW.gif"/>
+<img src="/assets/skycap/formation_step_5_NEW.gif" alt="Formation Step 4"/>
 
 ## Deploying it all to your cluster
 
@@ -155,7 +155,7 @@ Rendering of Stencils happens automatically when you download them from Skycap.
 
 The easiest way to start Rendering is to click on the *Render this Formation* button in the "Getting Started with Formations" panel. This will add a formation to the tool panel on the right-hand side of the screen.
 
-<img src="/assets/skycap/formation_step_6_NEWer.gif"/>
+<img src="/assets/skycap/formation_step_6_NEWer" alt="Formation Step 5" />
 
 Now you should be able to see all your Stencils rendered and ready to be used on a Kubernetes cluster.
 

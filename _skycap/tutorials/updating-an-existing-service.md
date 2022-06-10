@@ -38,7 +38,7 @@ In this example, you have decided to deploy a beta version of the Hello World ap
 
 4. Once Skycap has confirmed access to the new code location, click *Save changes*
 
-<img src="/assets/skycap/tutorial-editing-service-1.gif"/>
+<img src="/assets/skycap/tutorial-editing-service-1.gif" alt="Editing a service" />
 
 #### Warning
 <div class="notice notice-warning"><p>The changes you make here will not reflect in either your Formations or your Maestro deployments until you take a new Snapshot of the updated application.</p></div>
@@ -55,7 +55,7 @@ To do this:
 4. Click on the “Hello World” Formation
 5. Click on the *Render Formation* button
 
-<img src="/assets/skycap/tutorial-editing-service-2.gif"/>
+<img src="/assets/skycap/tutorial-editing-service-2.gif" alt="Deploying a service"/>
 
 You can now use the Cloud 66 Toolbelt to redeploy your application to Minikube following the same steps as in our [Getting Started with Formations](/skycap/quickstarts/using-formations#deploying-it-all-to-your-cluster) guide.
 
