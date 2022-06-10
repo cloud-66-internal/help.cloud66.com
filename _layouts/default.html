@@ -12,9 +12,6 @@
     {% if page.tags contains 'rs-guide' %}
     <link rel="canonical" href="https://realscale.cloud66.com{{ page.url | remove: '/guides' }}" />
     {% endif %}
-    {% if page.rel contains 'canonical' %}
-    <link rel="canonical" href="https://help.cloud66.com{{ page.url }}" />
-    {% endif %}
     <!-- noindex -->
     {% if page.noindex %}
     <meta name="robots" content="noindex">
