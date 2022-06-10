@@ -63,7 +63,7 @@ Now that we have access to your code, we can set up your app's container images.
 3. Give your application a name (this will be used to label your application throughout the Cloud 66 dashboard, and will not be visible to public users.)
 4. Click *Analyze* 
 
-![Maestro Step 2 - add repo details](/assets/maestro/step-2-new-onboarding.gif)
+![Maestro Step 2 - add repo details](/assets/maestro/step-2-new-onboarding.gif "Adding repo details")
 
 ## Step 3: Add, validate and build images
 
@@ -76,7 +76,7 @@ You can now **validate your code repo** to ensure we can access it, and that it 
 
 Note that you can skip this step, but we will still need to validate your repo before you can deploy.
 
-![Maestro Step 3 - validate your image](/assets/maestro/step-3-validate-new-onboarding.gif)
+![Maestro Step 3 - validate your image](/assets/maestro/step-3-validate-new-onboarding.gif "Validating your image")
 
 If needed, you can also **add additional Docker images** to your application as needed: 
 
@@ -102,7 +102,7 @@ To configure the internal and external ports for a service:
 
 If you're using our sample application you should set the HTTP port to `80` and the Container port to `5000`.
 
-![Maestro Step 4 - configure ports](/assets/maestro/step-4-ports-maestro-onboarding.gif)
+![Maestro Step 4 - configure ports](/assets/maestro/step-4-ports-maestro-onboarding.gif "Configuring ports")
 
 <div class="notice"><p>💡 This settings panel is used for both networking and storage options - so you can configure them simultaneously if you'd prefer.</p></div>
 
@@ -143,7 +143,7 @@ You can also add a data source to your cluster server, but we do not recommend y
 
 If you're using our sample application you will need to set up a Redis instance at this point.
 
-![Maestro Step 5 - configure servers](/assets/maestro/step-5-deploy-maestro-onboarding.gif)
+![Maestro Step 5 - configure servers](/assets/maestro/step-5-deploy-maestro-onboarding.gif "Configuring servers")
 
 ### B. Add deployment target
 

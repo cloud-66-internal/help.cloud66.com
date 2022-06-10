@@ -103,7 +103,7 @@ Both Blue / Green and Canary rollouts use the same underlying mechanism:
 
 You can see an application's current rollout state at the top of the Application Overview page. This interface also allows you to adjust, finalize or discard the current rollout. 
 
-![Rollout panel on Application Overview page](/assets/shared/rollouts-app-overview.png)
+![Rollout panel on Application Overview page](/assets/shared/rollouts-app-overview.png "Rollout panel on Application Overview page")
 
 ## Managing a Blue / Green rollout
 

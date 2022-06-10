@@ -3,7 +3,8 @@ layout: post
 template: one-col
 title: Cloud 66 Toolbelt 
 lead: "Reference guide for Cloud 66 Toolbelt commands"
-legacy: false
+noindex: true
+sitemap: false
 order: 1
 tags: ["shell"]
 permalink: /:collection/:path:output_ext

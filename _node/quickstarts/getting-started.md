@@ -125,6 +125,6 @@ In order to allow you to start working with your new app as soon as possible, th
 1. [Ready](/node/references/server-build-states.html#ready-servers) - server is available to use, with the minimum required configuration 
 2. [Optimized](/node/references/server-build-states.html#optimized-servers) - all the latest packages are installed & optimized
 
-![Build state progress bars](/assets/shared/server-build-state-bars.png)
+![Build state progress bars](/assets/shared/server-build-state-bars.png "Build state progress")
 
 Servers will automatically progress from "ready" to "optimized".
