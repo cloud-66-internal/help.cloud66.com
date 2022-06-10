@@ -2,7 +2,7 @@
 layout: post
 template: one-col
 title: Issues replicating data between two versions of PostgreSQL
-categories: Tutorials
+categories: how-to-guides/databases
 lead: "Troubleshooting data replication between PostgreSQL servers that use different versions"
 legacy: false
 

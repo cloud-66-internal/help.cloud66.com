@@ -30,5 +30,5 @@ Go to the registration page from the `Browse` of your Igor registration containe
 
 ### For more information on how to use Igor:
 
-Please go to : [http://chatops.cloud66.com](http://chatops.cloud66.com)
+Please go to : [https://chatops.cloud66.com](https://chatops.cloud66.com)
 

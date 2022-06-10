@@ -7,7 +7,7 @@ Whenever you add new application servers (either when deploying a new app, or ad
 
 We do this to allow you to start working with the new server(s) as soon as possible, while we optimize their configuration in the background.
 
-![Build state progress bars](/assets/shared/server-build-state-bars.png)
+![Build state progress bars](/assets/shared/server-build-state-bars.png "Build state progress bars")
 
 ## Build states explained
 
