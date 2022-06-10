@@ -71,7 +71,7 @@ Whenever a Preview Deployment is underway, a link will appear on the Previews pa
 
 If the deployment fails for any reason we will keep the logs, otherwise we will discard them after the deployment is complete.
 
-![Preview Deploymemnt logs interface](/assets/shared/preview-deploy-logs.png)
+![Preview Deploymemnt logs interface](/assets/shared/preview-deploy-logs.png "Preview deployment logs")
 
 ## Browsing and managing Previews
 

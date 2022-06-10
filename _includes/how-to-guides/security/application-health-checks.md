@@ -98,7 +98,7 @@ To run an on-demand Global Availability Check on an application:
 2. Click on the app you wish to check
 3. Click the *Health Check* link at the top of the main panel (next to your application's name)
 
-![Health Check link](/assets/shared/application-health-checks.png)
+![Health Check link](/assets/shared/application-health-checks.png "Health check link")
 
 This will open a drawer from the left of the screen which will show you the results of the test.
 

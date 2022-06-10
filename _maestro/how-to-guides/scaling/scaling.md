@@ -45,7 +45,7 @@ If you need to scale multiple services simultaneously:
 1. Follow steps 1 to 4 above for each of the services 
 2. Click the green *Apply* button in the yellow bar above the **Services** panel to apply all your service changes to your cluster
 
-![How to scale services in the dashboard](/assets/maestro/scale-services.gif)
+![How to scale services in the dashboard](/assets/maestro/scale-services.gif "Scaling services in dashboard")
 
 ### Scaling services with Toolbelt (cx)
 
