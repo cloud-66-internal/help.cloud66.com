@@ -83,7 +83,6 @@ You can change the execution order of Transformations by dragging and dropping t
 
 ## What’s next?
 
-- The [full documentation](https://help.cloud66.com/alterant/) for Alterant
 - A guide to adding Transformations to [Base Template Repositories](/skycap/how-to-guides/formations/adding-transformations-to-btrs.html)
 - Learn how to add **[custom environment variables](/skycap/tutorials/setting-environment-variables.html)** to your application.
 - Learn how to use your **[Habitus build flow](/skycap/tutorials/using-habitus-with-skycap.html)** within Skycap.
