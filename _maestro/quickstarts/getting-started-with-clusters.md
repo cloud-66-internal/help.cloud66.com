@@ -5,7 +5,7 @@ categories: quickstarts
 order: 3
 legacy: false
 tags: ["getting started", "cluster", "maestro cluster"]
-lead: A step by step tutorial that guides you through deploying a Kubernetes cluster. Maestro Clusters let you to deploy multiple applications to the same set of servers.
+lead: A step by step tutorial that guides you through deploying a  Maestro (Kubernetes) Cluster.
 permalink: /:collection/:path:output_ext
 ---
 {% assign product = 'maestro' %}
