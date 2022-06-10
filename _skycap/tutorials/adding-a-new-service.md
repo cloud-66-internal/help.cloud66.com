@@ -109,7 +109,7 @@ Once `kubectl` has applied all the changes, you will be able to run the `minikub
 
 This will open up the Hello World web page, as usual, but this version of the page is different. If you have successfully deployed Redis, the page will say “(connected to Redis)” in the sub-headline and will have a green check mark next to it. 
 
-<img src="/assets/skycap/tutorial-adding-service-final.jpg"/>
+<img src="/assets/skycap/tutorial-adding-service-final.jpg" alt="Final step"/>
 
 If the command fails, double check that the pod has started up completely by using the `get pods` command. It will take slightly longer to start up than the previous example.
 
