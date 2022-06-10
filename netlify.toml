@@ -815,10 +815,6 @@
   to = "/"
 
 [[redirects]]
-  from = "/copper/faq.hmtl"
-  to = "/copper/faq.html"
-
-[[redirects]]
   from = "/how-to-guides"
   to = "/"
 
