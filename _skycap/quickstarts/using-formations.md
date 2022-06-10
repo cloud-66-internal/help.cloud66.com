@@ -155,7 +155,7 @@ Rendering of Stencils happens automatically when you download them from Skycap.
 
 The easiest way to start Rendering is to click on the *Render this Formation* button in the "Getting Started with Formations" panel. This will add a formation to the tool panel on the right-hand side of the screen.
 
-<img src="/assets/skycap/formation_step_6_NEWer" alt="Formation Step 5" />
+<img src="/assets/skycap/formation_step_6_NEWer.gif" alt="Formation Step 5" />
 
 Now you should be able to see all your Stencils rendered and ready to be used on a Kubernetes cluster.
 
