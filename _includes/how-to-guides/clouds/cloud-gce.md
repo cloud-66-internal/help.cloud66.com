@@ -4,7 +4,7 @@ You can use Cloud 66 to provision and deploy your code to servers in any Google 
 
 You need to provide your GCE API keys in order for Cloud 66 to access your account. To generate these:
 
-1. Access the [Console](https://console.cloud.google.com/) of your Google account
+1. Access the Console of your Google Cloud account
 2. Create a project (if you don't already have one)
 3. Switch to your desired project
 4. Use the search bar at the top of the page to search for "APIs & Services" and click the first result
