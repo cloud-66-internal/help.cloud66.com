@@ -1487,7 +1487,6 @@ maestro:
   remove_passphrase:
     page: maestro/how-to-guides/security/remove-passphrase.html
     page_anchors:
-    - acknowledgement
     - maestro-product-heading
     - overview
     - removing-a-passphrase-using-openssl

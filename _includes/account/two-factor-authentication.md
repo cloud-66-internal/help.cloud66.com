@@ -79,4 +79,4 @@ Mac devices which have fingerprint sensors (”Touch ID”) can be used as keys 
 
 - Ensure you've read the installation and usage instructions from the manufacturer
 - Ensure that your computer recognises and is able to read the device (including that it is properly inserted into a compatible port)
-- Work through this [troubleshooting guide](https://support.yubico.com/support/solutions/articles/15000008691-basic-yubikey-troubleshooting) from Yubikey (many of these issues are common to other USB devices)
+- Work through this [troubleshooting guide](https://support.yubico.com/hc/en-us/articles/360013707540-Basic-YubiKey-Troubleshooting) from Yubikey (many of these issues are common to other USB devices)
