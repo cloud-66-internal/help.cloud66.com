@@ -32,10 +32,10 @@ Once you have made the changes, add a commit message and save. The new configura
 
 If your SSL terminates on your load balancer, then you will need to disable TLS 1.0 on the load balancer itself for this to take effect. The method for doing this differs depending on the load balancer you use. We have linked to solutions for popular load balancers below:
 
-- [HAproxy](https://www.haproxy.com/documentation/aloha/9-5/traffic-management/lb-layer7/tls/) (our default load balancer - you can configure it via {% if include.product != 'maestro' %}[Custom Config](/{{page.collection}}/how-to-guides/deployment/haproxy.html){% endif %}{% if include.product == 'maestro' %}[Custom Config](/{{page.collection}}/how-to-guides/build-and-config/haproxy.html){% endif %})
+- [HAproxy](https://www.haproxy.com/documentation/aloha/) (our default load balancer - you can configure it via {% if include.product != 'maestro' %}[Custom Config](/{{page.collection}}/how-to-guides/deployment/haproxy.html){% endif %}{% if include.product == 'maestro' %}[Custom Config](/{{page.collection}}/how-to-guides/build-and-config/haproxy.html){% endif %})
 - [Amazon ELB](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html#describe-ssl-policies.)
 - [Google Cloud Load Balancing](https://cloud.google.com/load-balancing/docs/use-ssl-policies) (via SSL policies)
 - [Linode NodeBalancer](https://www.linode.com/docs/platform/nodebalancer/nodebalancer-reference-guide/#tls-cipher-suites) (via cipher suites)
 - [Microsoft Azure Application Gateway](https://docs.microsoft.com/en-us/azure/application-gateway/ssl-overview)
 - [Rackspace Cloud Load Balancer](https://docs.microsoft.com/en-us/azure/application-gateway/ssl-overview)
-- Hetzner does not have a native load balancer but you can use [HAproxy](https://community.hetzner.com/tutorials/howto-highly-available-load-balancer-hetzner-cloud-ansible) and configure TLS directly
+- Hetzner does not have a native load balancer but you can use [HAproxy](https://www.haproxy.com/documentation/aloha/) and configure TLS directly

@@ -31,7 +31,3 @@ Unencrypted headers look like this:
 6BD407785DD187EF...
 -----END RSA PRIVATE KEY-----
 ```
-
-### Acknowledgement
-
-This guide was adapted from [this article](https://knowledge.digicert.com/solution/SO5292.html).
