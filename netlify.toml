@@ -1,4 +1,16 @@
 [[redirects]]
+  from = "/habitus/*"
+  to = "https://www.habitus.io/"
+
+[[redirects]]
+  from = "/starter/*"
+  to = "https://github.com/cloud66-oss/starter"
+
+[[redirects]]
+  from = "/copper/*"
+  to = "https://github.com/cloud66-oss/copper"
+
+[[redirects]]
   from = "/opensource/*"
   to = "/"
 
