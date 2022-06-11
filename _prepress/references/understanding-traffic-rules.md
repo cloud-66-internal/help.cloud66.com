@@ -6,7 +6,7 @@ categories: references
 lead: "A reference guide to Traffic rules and parameters"
 legacy: false
 order: 1
-tags: ["billing"]
+tags: ["traffic"]
 permalink: /:collection/:path:output_ext
 ---
 
@@ -46,8 +46,9 @@ This rule permanently redirects a path of an older version of a page to its new 
 ```jsx
 Redirect {	
 	from: "^/how-to-guides/nginx/nginx-auth.html(?P<query>[?].*)?$",
-  to: "/how-to-guides/nginx/customizing-nginx.html${query}",
-  with: 301
+	to: "/how-to-guides/nginx/customizing-nginx.html${query}",
+	with: 301
+}
 ```
 
 #### Example 2: convert query strings into directories
@@ -57,8 +58,8 @@ This rule temporarily redirects anyone hitting the `/main` directory of the site
 ```jsx
 Redirect {	
 	from: "^/main/[?]path=(?P<path>[^&]+)$",
-  to: "/main/${path}/?path=${path}",
-  with: temporary
+	to: "/main/${path}/?path=${path}",
+	with: temporary
 }
 ```
 
@@ -89,7 +90,7 @@ This will serve the file located at `/how-to-guides/nginx/customizing-nginx.html
 ```jsx
 Rewrite {	
 	from: "^/how-to-guides/nginx/nginx-auth.html(?P<query>[?].*)?$",
-  to: "/how-to-guides/nginx/customizing-nginx.html${query}",
+	to: "/how-to-guides/nginx/customizing-nginx.html${query}",
 }
 ```
 
@@ -99,8 +100,8 @@ This will accept requests to the URL pattern `/main/foo/` and serve the underlyi
 
 ```jsx
 Rewrite {	
-  from: "/main/${path}/?path=${path}",
-	to: "^/main/[?]path=(?P<path>[^&]+)$",
+	from: "^/main/[?]path=(?P<path>[^&]+)$",
+	to: "/main/${path}/?path=${path}",
 }
 ```
 
@@ -109,7 +110,7 @@ Rewrite {
 ```jsx
 Rewrite {
 	from: "^(?P<path>[^?]*)/(?P<leaf>[^/?.]+)(?P<query>[?].*)?$",
-  to: "${path}/${leaf}/index.html${query}"
+	to: "${path}/${leaf}/index.html${query}"
 }
 ```
 
@@ -141,9 +142,9 @@ The following rule checks whether a user is *either* in the UK or in the IP rang
 
 ```jsx
 Block {
-    when: origin.country_code == "GB" || 
-	        inRange(origin.ip, "10.0.0.0/8") || 
-	        request.user_agent.client.family == "Chrome",
+    when:	origin.country_code == "GB" || 
+			inRange(origin.ip, "10.0.0.0/8") || 
+			request.user_agent.client.family == "Chrome",
     message: "You are in the UK or running Chrome",
 }
 ```
@@ -153,8 +154,8 @@ Block {
 ```jsx
 Block {
     when: device.family.brand != "Apple" &&
-					origin.country_code == "IN",
-		with: 404
+			origin.country_code == "IN",
+	with: 404
 }
 ```
 
@@ -184,8 +185,8 @@ The following rule adds an `X-Country` header when the origin country is the UK,
 
 ```jsx
 Header {
-  add: { "X-Country": origin.country_code.lowerAscii() },
-  when: origin.country_code.startsWith("GB")
+	add: { "X-Country": origin.country_code.lowerAscii() },
+	when: origin.country_code.startsWith("GB")
 }
 ```
 
@@ -311,10 +312,10 @@ We could now craft parameters that use these variables to route traffic as neede
 
 ```jsx
 Block {
-	when: origin.city_name == "Cape Town" && 
-				request.user_agent.os.family == "Mac OS X" && 
-				request.user_agent.os.major > 9 && 
-				request.user_agent.os.minor < 15
+	when:	origin.city_name == "Cape Town" && 
+			request.user_agent.os.family == "Mac OS X" && 
+			request.user_agent.os.major > 9 && 
+			request.user_agent.os.minor < 15
 	message: "Please upgrade to OS X 10.15"
 }
 ```
