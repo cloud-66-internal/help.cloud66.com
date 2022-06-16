@@ -1503,6 +1503,17 @@ maestro:
     page: maestro/resources/index.html
     page_anchors:
     - maestro-product-heading
+  running_toolbelt_inside_docker:
+    page: maestro/references/toolbelt/running-toolbelt-inside-docker.html
+    page_anchors:
+    - how-to-set-up-toolbelt-in-docker
+    - maestro-product-heading
+    - overview
+    - step-1-start-an-ubuntu-container
+    - step-2-install-requireduseful-tools
+    - step-3-create-some-default-folders
+    - step-4-install-toolbelt
+    - step-5-register-toolbelt
   scaling:
     page: maestro/how-to-guides/scaling/scaling.html
     page_anchors:
@@ -1973,6 +1984,7 @@ maestro:
     - installing-on-a-server-headless
     - maestro-product-heading
     - multi-account-support
+    - running-toolbelt-inside-a-docker-container
   toolbelt_profiles:
     page: maestro/references/toolbelt/toolbelt-profiles.html
     page_anchors:
@@ -3342,6 +3354,17 @@ node:
     page: node/resources/index.html
     page_anchors:
     - node-product-heading
+  running_toolbelt_inside_docker:
+    page: node/references/toolbelt/running-toolbelt-inside-docker.html
+    page_anchors:
+    - how-to-set-up-toolbelt-in-docker
+    - node-product-heading
+    - overview
+    - step-1-start-an-ubuntu-container
+    - step-2-install-requireduseful-tools
+    - step-3-create-some-default-folders
+    - step-4-install-toolbelt
+    - step-5-register-toolbelt
   scale_node:
     page: node/how-to-guides/scaling/scale-node.html
     page_anchors:
@@ -3767,6 +3790,7 @@ node:
     - installing-on-a-server-headless
     - multi-account-support
     - node-product-heading
+    - running-toolbelt-inside-a-docker-container
   toolbelt_profiles:
     page: node/references/toolbelt/toolbelt-profiles.html
     page_anchors:
@@ -5927,6 +5951,17 @@ rails:
     - rails-product-heading
     - scheduling-rake-tasks
     - using-deploy-hooks
+  running_toolbelt_inside_docker:
+    page: rails/references/toolbelt/running-toolbelt-inside-docker.html
+    page_anchors:
+    - how-to-set-up-toolbelt-in-docker
+    - overview
+    - rails-product-heading
+    - step-1-start-an-ubuntu-container
+    - step-2-install-requireduseful-tools
+    - step-3-create-some-default-folders
+    - step-4-install-toolbelt
+    - step-5-register-toolbelt
   scaling:
     page: rails/how-to-guides/scaling/scaling.html
     page_anchors:
@@ -6386,6 +6421,7 @@ rails:
     - installing-on-a-server-headless
     - multi-account-support
     - rails-product-heading
+    - running-toolbelt-inside-a-docker-container
   toolbelt_profiles:
     page: rails/references/toolbelt/toolbelt-profiles.html
     page_anchors:
@@ -7084,6 +7120,17 @@ skycap:
     - see-more-detailed-logs
     - skycap-product-heading
     - whats-next
+  running_toolbelt_inside_docker:
+    page: skycap/references/toolbelt/running-toolbelt-inside-docker.html
+    page_anchors:
+    - how-to-set-up-toolbelt-in-docker
+    - overview
+    - skycap-product-heading
+    - step-1-start-an-ubuntu-container
+    - step-2-install-requireduseful-tools
+    - step-3-create-some-default-folders
+    - step-4-install-toolbelt
+    - step-5-register-toolbelt
   security:
     page: skycap/policies-specifications/security.html
     page_anchors:
@@ -7307,6 +7354,7 @@ skycap:
     - installation
     - installing-on-a-server-headless
     - multi-account-support
+    - running-toolbelt-inside-a-docker-container
     - skycap-product-heading
   toolbelt_profiles:
     page: skycap/references/toolbelt/toolbelt-profiles.html
