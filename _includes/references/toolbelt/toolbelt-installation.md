@@ -20,7 +20,10 @@ To install Toolbelt on a server (without a browser):
 5. Copy this token and paste it into the (remote) `cx.json` file that you created in Step 3
 6. Save the file and then run `cx stacks list` on the server to confirm that Toolbelt is initialised
 
-
 ### Multi-account support
 
 Toolbelt supports user with multiple Cloud 66 accounts via profiles. Please read our [separate guide](/{{page.collection}}/references/toolbelt/toolbelt-profiles.html) for more details.
+
+## Running Toolbelt inside a Docker container
+
+You can run the Cloud 66 Toolbelt inside a Docker container, although this is not officially supported. To run CX in Docker [follow this guide](/{{page.collection}}/references/toolbelt/running-toolbelt-inside-docker.html).
