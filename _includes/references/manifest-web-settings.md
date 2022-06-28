@@ -112,6 +112,12 @@ Specifies whether your servers should communicate over <code>private</code> or <
     <td>Azure</td>
   </tr>
   <tr>
+    <td><code>rg_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the Resource Group in which you would like to create your servers.</td>
+    <td>Azure</td>
+  </tr>
+  <tr>
     <td><code>vpc_id</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>ID of the AWS VPC in which you would like to create your servers. Note that you must provide subnet_id for all servers in your application.</td>
@@ -553,6 +559,12 @@ Specifies whether your servers should communicate over <code>private</code> or <
     <td><code>vn_name</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>The name of the Virtual Network in which you would like to create your servers.</td>
+    <td>Azure</td>
+  </tr>
+  <tr>
+    <td><code>rg_name</code></td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The name of the Resource Group in which you would like to create your servers.</td>
     <td>Azure</td>
   </tr>
   <tr>
