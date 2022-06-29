@@ -6664,14 +6664,11 @@ rails:
   websocket_support:
     page: rails/how-to-guides/deployment/websocket-support.html
     page_anchors:
-    - configuring-for-websocket
+    - configuring-your-app-for-action-cable
+    - custom-application-server-configuration
+    - default-application-server-configuration
     - overview
     - rails-product-heading
-    - testing-a-websocket-connection
-    - using-custom-ports-for-websocket
-    - using-websocket-via-haproxy
-    - using-websocket-via-native-cloud-load-balancers
-    - websocket-through-a-load-balancer
   zapier:
     page: rails/how-to-guides/automation/zapier.html
     page_anchors:
