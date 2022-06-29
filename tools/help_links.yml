@@ -1595,6 +1595,19 @@ maestro:
     - maestro-product-heading
     - overview
     - restart-criteria
+  server_warning_no_communication:
+    page: maestro/references/server-warning-no-communication.html
+    page_anchors:
+    - are-there-any-network-connectivity-problems
+    - i-have-none-of-these-problems-but-i-still-see-this-message
+    - is-cloud-66-down
+    - is-the-server-down
+    - is-the-server-unresponsive-due-to-high-load
+    - is-your-cloud-provider-down
+    - maestro-product-heading
+    - overview
+    - what-does-the-error-mean
+    - why-has-my-server-lost-communication-with-cloud-66
   service_accounts:
     page: maestro/account/service-accounts.html
     page_anchors:
@@ -3456,6 +3469,19 @@ node:
     - is-this-important-do-i-need-immediate-action
     - ive-restarted-but-i-still-see-the-notification
     - node-product-heading
+  server_warning_no_communication:
+    page: node/references/server-warning-no-communication.html
+    page_anchors:
+    - are-there-any-network-connectivity-problems
+    - i-have-none-of-these-problems-but-i-still-see-this-message
+    - is-cloud-66-down
+    - is-the-server-down
+    - is-the-server-unresponsive-due-to-high-load
+    - is-your-cloud-provider-down
+    - node-product-heading
+    - overview
+    - what-does-the-error-mean
+    - why-has-my-server-lost-communication-with-cloud-66
   service_accounts:
     page: node/account/service-accounts.html
     page_anchors:
@@ -6050,6 +6076,19 @@ rails:
     - is-this-important-do-i-need-immediate-action
     - ive-restarted-but-i-still-see-the-notification
     - rails-product-heading
+  server_warning_no_communication:
+    page: rails/references/server-warning-no-communication.html
+    page_anchors:
+    - are-there-any-network-connectivity-problems
+    - i-have-none-of-these-problems-but-i-still-see-this-message
+    - is-cloud-66-down
+    - is-the-server-down
+    - is-the-server-unresponsive-due-to-high-load
+    - is-your-cloud-provider-down
+    - overview
+    - rails-product-heading
+    - what-does-the-error-mean
+    - why-has-my-server-lost-communication-with-cloud-66
   service_accounts:
     page: rails/account/service-accounts.html
     page_anchors:
