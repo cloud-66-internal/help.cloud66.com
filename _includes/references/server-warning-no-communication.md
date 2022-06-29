@@ -10,12 +10,11 @@ If you see the following warning message on your dashboard:
 
 ## What does the error mean?
 
-If Cloud 66 is not able to communicate with one of your servers for **20** minutes it will display the *Server Warning* notice on the dashboard and on the individual server detail page.
+If the Cloud 66 agent on a server is not able to ping Cloud 66 for **20 minutes**, we will display the *Server Warning* notice on the dashboard and on the individual server detail page.  (We will also notify you directly via your chosen channels.)
 
 ## Why has my Server lost Communication with Cloud 66?
 
-This may happen for a number of reasons. We’ll explore some of the common scenarios below
-and describe how you might troubleshoot this problem and determine what action you should take.
+This may happen for a number of reasons. We’ll explore some of the common scenarios below and describe how you might troubleshoot this problem and determine what action you should take.
 
 ### Is the Server Down?
 
