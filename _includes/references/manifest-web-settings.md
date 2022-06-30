@@ -108,8 +108,7 @@ Specifies whether your servers should communicate over <code>private</code> or <
   <tr>
     <td><code>subnet_id</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>
-    ID of the AWS subnet in which you would like to create your servers. If not supplied, we will attempt to identify the single <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-mappubliciponlaunch" target="_blank">map_public_ip_on_launch</a> set to true
+    <td><b>ID</b> or <b>name</b> of the AWS subnet in which you would like to create your servers. If not supplied, we will attempt to identify the single <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-mappubliciponlaunch" target="_blank">map_public_ip_on_launch</a> set to true
 </td>
     <td>AWS</td>
   </tr>
@@ -122,7 +121,7 @@ Specifies whether your servers should communicate over <code>private</code> or <
   <tr>
     <td><code>vpc_id</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>ID of the AWS VPC in which you would like to create your servers. Note that you must provide subnet_id for all servers in your application.</td>
+    <td><b>ID</b> or <b>name</b> of the AWS VPC in which you would like to create your servers. Note that you must provide subnet_id for all servers in your application.</td>
     <td>AWS</td>
   </tr>
   <tr>
@@ -560,8 +559,7 @@ Specifies whether your servers should communicate over <code>private</code> or <
   <tr>
     <td><code>subnet_id</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>
-    ID of the AWS subnet in which you would like to create your servers. If not supplied, we will attempt to identify the single subnet with <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-mappubliciponlaunch" target="_blank">map_public_ip_on_launch</a> set to true
+    <td><b>ID</b> or <b>name</b> of the AWS subnet in which you would like to create your servers. If not supplied, we will attempt to identify the single subnet with <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-mappubliciponlaunch" target="_blank">map_public_ip_on_launch</a> set to true
 </td>
     <td>AWS</td>
   </tr>
@@ -574,7 +572,7 @@ Specifies whether your servers should communicate over <code>private</code> or <
   <tr>
     <td><code>vpc_id</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>ID of the AWS VPC in which you would like to create your servers. Note that you must provide subnet_id for all servers in your application.</td>
+    <td><b>ID</b> or <b>name</b> of the AWS VPC in which you would like to create your servers. Note that you must provide subnet_id for all servers in your application.</td>
     <td>AWS</td>
   </tr>
 </tbody>
@@ -604,7 +602,7 @@ rails:
     activeprotect:
       whitelist: 123.123.123.123,234.234.234.234
       http_ban_rate: 2000 # Default
-    vpc_id: vpc-64872001
+    vpc_id: my-vpc-name
     root_disk_size: 100
     root_disk_type: ssd
     nameservers: ['8.8.8.8', '8.8.4.4']
