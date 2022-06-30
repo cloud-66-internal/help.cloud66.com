@@ -162,7 +162,9 @@ These are the parameters that the _server_ section can take:
   <tr>
     <td><code>subnet_id</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td>ID of the AWS subnet in which you would like to create your servers.</td>
+    <td>
+    ID of the AWS subnet in which you would like to create your servers. If not supplied, we will attempt to identify the single <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-mappubliciponlaunch" target="_blank">map_public_ip_on_launch</a> set to true
+</td>
     <td>AWS</td>
   </tr>
   <tr>
