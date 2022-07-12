@@ -347,6 +347,12 @@ The following settings are available via the Manifest file :
 </thead>
 <tbody>
   <tr>
+    <td><code>encoding</code> </td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>Specify the encoding (AKA charset) for the database. Valid values can be found in the <a href="https://dev.mysql.com/doc/refman/8.0/en/charset-charsets.html" target="_blank">MySQL charset docs</a>.</td>
+    <td>All</td>
+  </tr>
+  <tr>
     <td><code>engine</code> </td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
     <td>Specify the MySQL engine you want to install. Valid values are <code>mysql</code> and <code>percona</code></td>
@@ -413,6 +419,7 @@ mysql:
     root_disk_size: 100
     root_disk_type: ssd
     engine: percona
+    encoding: koi8u
     iam_instance_profile_name: mysql-perms
 ```
 If you need help specifying multiple databases of the same type via your Manifest, please read our guide on [Database Groups](/{{page.collection}}/how-to-guides/databases/attaching-multiple-databases.html#specifying-database-groups-via-manifest).
@@ -433,6 +440,12 @@ The following settings are available via the Manifest file :
   </tr>
 </thead>
 <tbody>
+  <tr>
+    <td><code>encoding</code> </td>
+    <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>Specify the encoding (AKA charset) for the database. Valid values can be found in the <a href="https://www.postgresql.org/docs/current/multibyte.html#MULTIBYTE-CHARSET-SUPPORTED"  target="_blank">Postgres character set docs</a>.</td>
+    <td>All</td>
+  </tr>
   <tr>
     <td><code>groups</code></td>
     <td><div class="tooltip">Deploy-with-upgrades &#9432;<span class="tooltiptext">Changes to this setting will only be applied if you choose the "Deploy with upgrades" option</span></div></td>
@@ -503,6 +516,7 @@ postgresql:
   configuration:
     iam_instance_profile_name: psql-perms
     version: 9.3.4
+    encoding: ISO_8859_8
     postgis: true
     root_disk_size: 100
     root_disk_type: ssd
