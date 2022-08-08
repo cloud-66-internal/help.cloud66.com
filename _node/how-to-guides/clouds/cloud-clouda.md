@@ -1,11 +1,12 @@
 ---
 layout: post
 template: one-col
-title: Cloud-A
+title: Cloud-A (Deprecated)
 categories: how-to-guides/clouds
 order: 3
 lead: "Configuring Cloud-A for use with Cloud 66 for Node"
-legacy: false
+noindex: true
+sitemap: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext
 ---
