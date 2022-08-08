@@ -24,7 +24,6 @@ You can now watch the logs, as usual to see the progress of the process. Dependi
 - **Linode**: [NodeBalancer](https://www.linode.com/nodebalancers/)
 - **Microsoft Azure**: [TrafficManager](https://docs.microsoft.com/en-us/azure/traffic-manager/)
 - **Rackspace**: [Rackspace Load Balancing](https://www.rackspace.com/)
-- **CloudA**: [Load Balancing as a service](https://www.clouda.ca/technology/vpc-virtual-private-cloud/)
 
 ### Automatic endpoint test
 

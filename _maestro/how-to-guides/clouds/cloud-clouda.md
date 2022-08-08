@@ -1,8 +1,8 @@
 ---
 layout: post
 template: one-col
-title: Cloud-A
-categories: how-to-guides/clouds
+title: Cloud-A (Deprecated)
+categories: 
 order: 3
 lead: "Configuring Cloud-A for use with Maestro"
 legacy: false

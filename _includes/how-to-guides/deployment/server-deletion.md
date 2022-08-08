@@ -29,12 +29,6 @@ Here is the list of items (Deleted/Not Deleted) depending on the cloud:
 ### Linode
 `Deleted:` Servers, NodeBalancers
 
-
-### CloudA
-`Deleted:` Servers, Load Balancers, Security Groups, Keypaires, Public IPs
-
-`Not Deleted:` Networks, Subnets, Routers
-
 ### Azure
 `Deleted:` Virtual Machines, Cloud Services, Storage, Traffic Manager
 
