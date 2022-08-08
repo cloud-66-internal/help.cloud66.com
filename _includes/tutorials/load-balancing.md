@@ -39,7 +39,6 @@ Depending on which cloud provider you use, your load balancer will be set up dif
 - Linode: [NodeBalancer](https://www.linode.com/nodebalancers/)
 - Microsoft Azure: [TrafficManager](https://msdn.microsoft.com/en-us/library/azure/hh744833.aspx)
 - Rackspace: [Rackspace Load Balancing](https://www.rackspace.com/cloud/load-balancing/)
-- CloudA: [Load Balancing as a service](https://www.clouda.ca/technology/vpc-virtual-private-cloud/)
 
 The time required to set up your load balancer will depend on which cloud provider you use. 
 
