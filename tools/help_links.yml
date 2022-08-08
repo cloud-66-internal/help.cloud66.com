@@ -1562,7 +1562,6 @@ maestro:
     page_anchors:
     - aws
     - azure
-    - clouda
     - digitalocean
     - gce
     - linode
@@ -3437,7 +3436,6 @@ node:
     page_anchors:
     - aws
     - azure
-    - clouda
     - digitalocean
     - gce
     - linode
@@ -6044,7 +6042,6 @@ rails:
     page_anchors:
     - aws
     - azure
-    - clouda
     - digitalocean
     - gce
     - linode
