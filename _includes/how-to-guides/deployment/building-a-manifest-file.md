@@ -75,8 +75,8 @@ The (mandatory) component settings define how a component is configured. The Man
 
 {% if include.product == "maestro" %}
 *   [Docker](/{{page.collection}}/references/manifest-web-settings.html#docker){% endif %}
-*   [ElasticSearch](/{{page.collection}}/references/manifest-database-settings.html#elasticsearch)
-*   [Gateway](/{{page.collection}}/references/manifest-web-settings.html#gateway)
+*   [ElasticSearch](/{{page.collection}}/references/manifest-database-settings.html#elasticsearch) {% if include.product == "rails" %}
+*   [Gateway](/{{page.collection}}/references/manifest-web-settings.html#gateway) {% endif %}
 *   [GlusterFS](/{{page.collection}}/references/manifest-database-settings.html#glusterfs)
 *   [Load balancers](/{{page.collection}}/references/manifest-loadbalancer-settings.html)
 *   [Memcached](/{{page.collection}}/references/manifest-database-settings.html#memcached)
