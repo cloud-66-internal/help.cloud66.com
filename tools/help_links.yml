@@ -608,10 +608,7 @@ maestro:
   deployment_gateway:
     page: maestro/how-to-guides/deployment/deployment-gateway.html
     page_anchors:
-    - about-deployment-gateways
-    - accessing-servers-behind-a-gateway
-    - deploying-an-application-behind-a-gateway
-    - important
+    - deployment-gateways-not-supported
     - maestro-product-heading
   deployment_history:
     page: maestro/how-to-guides/deployment/deployment-history.html
@@ -1158,11 +1155,9 @@ maestro:
     - cors-configuration
     - customizing-nginx-in-maestro
     - docker
-    - example-yaml-for-gateway
     - example-yaml-for-nginx
     - example-yaml-for-post-deployment-global-availability-checks
     - examples-yaml-for-docker
-    - gateway
     - key-to-table-headings
     - maestro-product-heading
     - more-on-manifest-files
@@ -1476,7 +1471,6 @@ maestro:
   registered_servers:
     page: maestro/how-to-guides/deployment/registered-servers.html
     page_anchors:
-    - adding-servers-behind-a-gateway
     - maestro-product-heading
     - overview
     - register-a-server
@@ -1912,17 +1906,6 @@ maestro:
     - failover-groups-delete
     - failover-groups-list
     - failover-groups-update
-    - formations-commit
-    - formations-create
-    - formations-deploy
-    - formations-fetch
-    - formations-list
-    - formations-stencils-list
-    - gateways-add
-    - gateways-close
-    - gateways-list
-    - gateways-open
-    - gateways-remove
     - help
     - info
     - init
@@ -1956,8 +1939,6 @@ maestro:
     - settings-list
     - settings-set
     - skycap-listen
-    - snapshots-list
-    - snapshots-render
     - ssh
     - stacks-clear-caches
     - stacks-configuration-apply
@@ -1977,9 +1958,6 @@ maestro:
     - tags-add
     - tags-delete
     - tail
-    - templates-list
-    - templates-resync
-    - templates-show
     - test
     - tunnel
     - update
@@ -2697,10 +2675,7 @@ node:
   deployment_gateway:
     page: node/how-to-guides/deployment/deployment-gateway.html
     page_anchors:
-    - about-deployment-gateways
-    - accessing-your-servers-behind-the-gateway-server
-    - how-to-deploy-your-application-behind-the-gateway-server
-    - important
+    - deployment-gateways-not-supported
     - node-product-heading
   deployment_history:
     page: node/how-to-guides/deployment/deployment-history.html
@@ -3100,10 +3075,8 @@ node:
     page: node/references/manifest-web-settings.html
     page_anchors:
     - cors-configuration
-    - example-yaml-for-gateway
     - example-yaml-for-nginx
     - example-yaml-for-post-deployment-global-availability-checks
-    - gateway
     - key-to-table-headings
     - more-on-manifest-files
     - nginx
@@ -3338,7 +3311,6 @@ node:
   registered_servers:
     page: node/how-to-guides/deployment/registered-servers.html
     page_anchors:
-    - adding-servers-behind-a-gateway
     - node-product-heading
     - overview
     - register-a-server
@@ -3730,17 +3702,6 @@ node:
     - failover-groups-delete
     - failover-groups-list
     - failover-groups-update
-    - formations-commit
-    - formations-create
-    - formations-deploy
-    - formations-fetch
-    - formations-list
-    - formations-stencils-list
-    - gateways-add
-    - gateways-close
-    - gateways-list
-    - gateways-open
-    - gateways-remove
     - help
     - info
     - init
@@ -3774,8 +3735,6 @@ node:
     - settings-list
     - settings-set
     - skycap-listen
-    - snapshots-list
-    - snapshots-render
     - ssh
     - stacks-clear-caches
     - stacks-configuration-apply
@@ -3795,9 +3754,6 @@ node:
     - tags-add
     - tags-delete
     - tail
-    - templates-list
-    - templates-resync
-    - templates-show
     - test
     - tunnel
     - update
@@ -6373,12 +6329,6 @@ rails:
     - failover-groups-delete
     - failover-groups-list
     - failover-groups-update
-    - formations-commit
-    - formations-create
-    - formations-deploy
-    - formations-fetch
-    - formations-list
-    - formations-stencils-list
     - gateways-add
     - gateways-close
     - gateways-list
@@ -6417,8 +6367,6 @@ rails:
     - settings-list
     - settings-set
     - skycap-listen
-    - snapshots-list
-    - snapshots-render
     - ssh
     - stacks-clear-caches
     - stacks-configuration-apply
@@ -6438,9 +6386,6 @@ rails:
     - tags-add
     - tags-delete
     - tail
-    - templates-list
-    - templates-resync
-    - templates-show
     - test
     - tunnel
     - update
@@ -7310,11 +7255,6 @@ skycap:
     - formations-fetch
     - formations-list
     - formations-stencils-list
-    - gateways-add
-    - gateways-close
-    - gateways-list
-    - gateways-open
-    - gateways-remove
     - help
     - info
     - init

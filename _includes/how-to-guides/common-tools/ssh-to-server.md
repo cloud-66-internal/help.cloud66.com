@@ -6,7 +6,7 @@ We provide two different ways for you to SSH to your servers - an automated way 
 You can use [Cloud 66 Toolbelt](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html) to easily SSH to your servers. Once you have installed Toolbelt the following command can be used from your terminal:
 
 ### Full command
-
+{% if include.product == 'rails' %}
 <pre class="language-shell line-numbers u-whiteSpaceNoWrap"><code>cx ssh [--gateway-key &lt;&lt;The path to the key of gateway server&gt;&gt;] [-s "your application name"] "your server name"|&lt;&lt;server ip&gt;&gt;|&lt;&lt;server role&gt;&gt;</code></pre>
 
 Many of these parameters are optional or mutually exclusive. For example you don't need to provide both the server name and the IP address.
@@ -17,7 +17,19 @@ Many of these parameters are optional or mutually exclusive. For example you don
 cx ssh -s "My Awesome App" web
 cx ssh --gateway-key ~/.ssh/bastion_key  -s "My Awesome App" Lion -e production
 ```
+{% endif %}
+{% if include.product != 'rails' %}
+<pre class="language-shell line-numbers u-whiteSpaceNoWrap"><code>cx ssh [-s "your application name"] "your server name"|&lt;&lt;server ip&gt;&gt;|&lt;&lt;server role&gt;&gt;</code></pre>
 
+Many of these parameters are optional or mutually exclusive. For example you don't need to provide both the server name and the IP address.
+
+### Examples
+
+```shell
+cx ssh -s "My Awesome App" web
+cx ssh -s "My Awesome App" Lion -e production
+```
+{% endif %}
 See [toolbelt shortcuts](/{{page.collection}}/quickstarts/using-cloud66-toolbelt.html), for information on how you can make this even easier.
 
 ## Manual shell access
