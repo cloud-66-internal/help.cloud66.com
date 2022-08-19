@@ -4,8 +4,9 @@ Your server SSH key is downloaded to `~/.ssh` and re-used in subsequent SSH co
 
 {% if include.product == 'rails' %}
 If your server deployed behind a gateway, you need to provide the private key in order to pass through the gateway.
+{% endif %}{% if include.product != 'rails' %}
+Note that Gateway settings and options are only available for native Rails applications.
 {% endif %}
-
 {% include references/toolbelt/boilerplate/top-tabs.html %}
 $ cx ssh  [--gateway-key <path to gateway key>] --stack <application name> <server name>|<server ip>|<server role> --vv
 {% include references/toolbelt/boilerplate/args.html %}
