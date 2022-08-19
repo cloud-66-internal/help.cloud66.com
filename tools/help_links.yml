@@ -1051,16 +1051,6 @@ maestro:
     - restoring-a-redis-backup
     - restoring-an-automated-backup
     - unarchive-the-backup-files
-  manage_stacks_chatops:
-    page: maestro/how-to-guides/deployment/manage-stacks-chatops.html
-    page_anchors:
-    - cloud-66-chatops
-    - create-a-slack-bot
-    - deregister
-    - download-igor
-    - for-more-information-on-how-to-use-igor
-    - maestro-product-heading
-    - quick-install
   managing_advanced_firewall_rules:
     page: maestro/how-to-guides/deployment/managing-advanced-firewall-rules.html
     page_anchors:
@@ -1997,6 +1987,16 @@ maestro:
     - naming-shortcuts
     - running-cx-in-a-git-directory
     - shortcuts
+  troubleshooting_containers:
+    page: maestro/how-to-guides/deployment/troubleshooting-containers.html
+    page_anchors:
+    - checking-containers-via-command-line
+    - checking-containers-via-the-dashboard
+    - checking-the-status-of-your-containers
+    - maestro-product-heading
+    - overview
+    - troubleshooting-a-container-that-has-started
+    - troubleshooting-a-container-that-wont-start
   troubleshooting_server_connection:
     page: maestro/how-to-guides/deployment/troubleshooting-server-connection.html
     page_anchors:
@@ -2982,16 +2982,6 @@ node:
     - restoring-a-redis-backup
     - restoring-an-automated-backup
     - unarchive-the-backup-files
-  manage_stacks_chatops:
-    page: node/how-to-guides/common-tools/manage-stacks-chatops.html
-    page_anchors:
-    - cloud-66-chatops
-    - create-a-slack-bot
-    - deregister
-    - download-igor
-    - for-more-information-on-how-to-use-igor
-    - node-product-heading
-    - quick-install
   managing_advanced_firewall_rules:
     page: node/how-to-guides/deployment/managing-advanced-firewall-rules.html
     page_anchors:
@@ -5386,16 +5376,6 @@ rails:
     - restoring-a-redis-backup
     - restoring-an-automated-backup
     - unarchive-the-backup-files
-  manage_stacks_chatops:
-    page: rails/how-to-guides/common-tools/manage-stacks-chatops.html
-    page_anchors:
-    - cloud-66-chatops
-    - create-a-slack-bot
-    - deregister
-    - download-igor
-    - for-more-information-on-how-to-use-igor
-    - quick-install
-    - rails-product-heading
   managing_advanced_firewall_rules:
     page: rails/how-to-guides/deployment/managing-advanced-firewall-rules.html
     page_anchors:

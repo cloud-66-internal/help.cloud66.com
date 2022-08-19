@@ -1,7 +1,7 @@
 Lists all the containers running on an application or server (depending on your parameters).
 
 {% include references/toolbelt/boilerplate/top-tabs.html %}
-$ cx containers list --stack <application name> [--server <server name>][--enviornment <environment name>][--verbose]
+$ cx containers list --stack <application name> [--server <server name>][--environment <environment name>][--verbose]
 {% include references/toolbelt/boilerplate/args.html %}
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |
