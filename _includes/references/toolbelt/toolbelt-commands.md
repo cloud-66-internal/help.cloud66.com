@@ -89,6 +89,7 @@ Alias: `formation bundle`
 ## failover-groups update
 {% include references/toolbelt/failover-groups-update.md %}
 
+{% if include.product == 'skycap' %}
 ## formations list
 Alias: `formation list`
 
@@ -118,7 +119,8 @@ Alias: `formation fetch`
 Alias: `formation stencils list`
 
 {% include references/toolbelt/formations-stencils-list.md %}
-
+{% endif %}
+{% if include.product == 'rails' %}
 ## gateways list
 
 {% include references/toolbelt/gateways-list.md %}
@@ -138,7 +140,7 @@ Alias: `formation stencils list`
 ## gateways remove
 
 {% include references/toolbelt/gateways-remove.md %}
-
+{% endif %}
 ## help
 
 {% include references/toolbelt/help.md %}
@@ -298,6 +300,7 @@ Alias: `setting set`
 
 {% include references/toolbelt/skycap-listen.md %}
 
+{% if include.product == 'skycap' %}
 ## snapshots list
 
 {% include references/toolbelt/snapshots-list.md %}
@@ -305,7 +308,7 @@ Alias: `setting set`
 ## snapshots render
 
 {% include references/toolbelt/snapshots-render.md %}
-
+{% endif %}
 ## ssh
 
 {% include references/toolbelt/ssh.md %}
@@ -397,6 +400,7 @@ Alias: `stack ssl`
 
 {% include references/toolbelt/tail.md %}
 
+{% if include.product == 'skycap' %}
 ## templates list
 
 {% include references/toolbelt/templates-list.md %}
@@ -408,7 +412,7 @@ Alias: `stack ssl`
 ## templates show
 
 {% include references/toolbelt/templates-show.md %}
-
+{% endif %}
 ## test
 
 {% include references/toolbelt/test.md %}
