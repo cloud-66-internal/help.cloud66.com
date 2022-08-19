@@ -13,7 +13,7 @@ $ cx ssh  [--gateway-key <path to gateway key>] --stack <application name> <serv
 | Argument | Required? | Default | Description |
 |  ---  |  ---  |  ---  |  ---  |
 | \--stack, -s &lt;application name&gt; | yes | — | Name of the application |
-| \--gateway-key &lt;path to gateway key&gt; | no | — | Path to the private key for the gateway server |
+| \--gateway-key &lt;path to gateway key&gt; | no | — | Path to the private key for the gateway server (Rails only) |
 | -v, --vv, --vvv | no | — | Set the verbosity level of the output |
 | &lt;server name&gt; | either/or | — | The name of the server to access |
 | &lt;server IP&gt; | either/or | — | The IP address of the server to access |
