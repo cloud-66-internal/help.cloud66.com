@@ -2,7 +2,9 @@ Allows direct SSH shell into your servers by opening the firewall temporarily fo
 
 Your server SSH key is downloaded to `~/.ssh` and re-used in subsequent SSH connections via the toolbelt. You need to have shell to server rights over the application to use this command.
 
+{% if include.product == 'rails' %}
 If your server deployed behind a gateway, you need to provide the private key in order to pass through the gateway.
+{% endif %}
 
 {% include references/toolbelt/boilerplate/top-tabs.html %}
 $ cx ssh  [--gateway-key <path to gateway key>] --stack <application name> <server name>|<server ip>|<server role> --vv

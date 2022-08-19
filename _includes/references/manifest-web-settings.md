@@ -160,7 +160,7 @@ docker:
 ```
 {% endif %}
 
-
+{% if include.product == 'rails' %}
 ## Gateway
 
 #### Note
@@ -198,12 +198,12 @@ The following settings are available via the Manifest file:
 
 ### Example YAML for gateway
 
-
 ```yml
 gateway:
   name: aws_bastion
   username: ec2-user
 ```
+{% endif %}
 
 ## Nginx
 

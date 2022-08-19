@@ -39,6 +39,7 @@ To add tags to the registered servers, use the `tags` option:
 $ cx register-server --org="My Team" --server=197.23.65.11 --user=root --tags="dc-1,az US"
 ```
 
+{% if include.product == 'rails' %}
 ## Adding servers behind a gateway
 
 You can add registered servers to Cloud 66 via an on-premises [gateway server](/{{page.collection}}/how-to-guides/deployment/deployment-gateway.html) as long as:
@@ -51,6 +52,7 @@ To add a server behind your gateway:
 1. SSH to the server and run the registered server [registration script](#register-a-server) **with** the `--header X-Fixed-IP:123.123.123.123` option - where `X-Fixed-IP` is set to the IP address that the gateway will use to access the server (usually the private IP address of the server).
 2. Set up the gateway server and configure your application to use it via the manifest as specified above
 3. Open the gateway and add the newly registered server to your application. Because the application is configured to use the gateway, it will go through the gateway and then direct requests to the IP address under `X-Fixed-IP`.
+{% endif %}
 
 ## Server requirements
 

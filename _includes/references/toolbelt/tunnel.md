@@ -7,7 +7,9 @@ Opens an SSH tunnel between your local machine and the remote server on a specif
 3. Starts an SSH tunnel between your machine and the server on the given ports
 4. Closes the tunnel when you exit the Toolbelt (Ctrl-C)
 
+{% if include.product == 'rails' %}
 Applications using gateways (Bastion servers) are not supported.
+{% endif %}
 
 If a role is specified the command will connect to the first server with that role.
 
