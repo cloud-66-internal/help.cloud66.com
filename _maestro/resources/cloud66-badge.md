@@ -5,7 +5,7 @@ title: Cloud 66 Badge
 categories: resources
 lead: "How to add the Cloud 66 badge to your site"
 legacy: false
-
+order: 10
 permalink: /:collection/:path:output_ext
 ---
 
