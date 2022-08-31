@@ -5,7 +5,7 @@ title: Cloud 66 Technical specifications
 categories: resources
 lead: "A summary of the cloud providers, platforms and component versions supported by Cloud 66"
 legacy: false
-
+order: 1
 permalink: /:collection/:path:output_ext
 ---
 
