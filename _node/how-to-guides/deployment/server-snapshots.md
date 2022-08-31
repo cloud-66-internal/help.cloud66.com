@@ -8,4 +8,4 @@ lead: Using Server Snapshots to speed up deployments
 permalink: /:collection/:path:output_ext
 ---
 
-{% include how-to-guides/deployment/post-deployment-snapshots.md product = page.collection %}
+{% include how-to-guides/deployment/server-snapshots.md product = page.collection %}
