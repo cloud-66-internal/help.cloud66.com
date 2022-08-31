@@ -1578,6 +1578,20 @@ maestro:
     - maestro-product-heading
     - overview
     - restart-criteria
+  server_snapshots:
+    page: maestro/how-to-guides/deployment/server-snapshots.html
+    page_anchors:
+    - aws-ec2
+    - cost-implications
+    - digitalocean
+    - enabling-server-snapshots-at-account-level
+    - enabling-server-snapshots-per-application
+    - google-cloud
+    - how-server-snapshots-work
+    - how-to-enable-server-snapshots
+    - maestro-product-heading
+    - overview
+    - permissions-required
   server_warning_no_communication:
     page: maestro/references/server-warning-no-communication.html
     page_anchors:
@@ -1851,10 +1865,6 @@ maestro:
     - suggest-version-changes
     - supported-cloud-providers
     - supported-platforms
-  terminology:
-    page: maestro/resources/terminology.html
-    page_anchors:
-    - maestro-product-heading
   the_basics_index:
     page: maestro/the-basics/index.html
     page_anchors:
@@ -3429,6 +3439,20 @@ node:
     - is-this-important-do-i-need-immediate-action
     - ive-restarted-but-i-still-see-the-notification
     - node-product-heading
+  server_snapshots:
+    page: node/how-to-guides/deployment/server-snapshots.html
+    page_anchors:
+    - aws-ec2
+    - cost-implications
+    - digitalocean
+    - enabling-server-snapshots-at-account-level
+    - enabling-server-snapshots-per-application
+    - google-cloud
+    - how-server-snapshots-work
+    - how-to-enable-server-snapshots
+    - node-product-heading
+    - overview
+    - permissions-required
   server_warning_no_communication:
     page: node/references/server-warning-no-communication.html
     page_anchors:
@@ -6008,6 +6032,20 @@ rails:
     - how-does-cloud-66-determine-my-server-needs-a-restart
     - is-this-important-do-i-need-immediate-action
     - ive-restarted-but-i-still-see-the-notification
+    - rails-product-heading
+  server_snapshots:
+    page: rails/how-to-guides/deployment/server-snapshots.html
+    page_anchors:
+    - aws-ec2
+    - cost-implications
+    - digitalocean
+    - enabling-server-snapshots-at-account-level
+    - enabling-server-snapshots-per-application
+    - google-cloud
+    - how-server-snapshots-work
+    - how-to-enable-server-snapshots
+    - overview
+    - permissions-required
     - rails-product-heading
   server_warning_no_communication:
     page: rails/references/server-warning-no-communication.html
