@@ -3,7 +3,7 @@ layout: post
 template: one-col
 title: Pricing
 categories: resources
-order: 1
+order: 10
 lead: "Cloud 66 service pricing"
 legacy: false
 

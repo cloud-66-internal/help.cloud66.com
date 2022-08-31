@@ -10,7 +10,7 @@ Your servers are deployed with **Ubuntu 20.04 LTS**.
 {% if include.product == 'prepress' %}Prepress currently supports the following cloud providers:{%endif%}
 
 * [Amazon Web Services](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html)
-* [Digital Ocean](/{{page.collection}}/how-to-guides/clouds/cloud-do.html)
+* [DigitalOcean](/{{page.collection}}/how-to-guides/clouds/cloud-do.html)
 * [Google Compute Engine](/{{page.collection}}/how-to-guides/clouds/cloud-gce.html){% if include.product != 'prepress' %}
 * [Hetzner Cloud](/{{page.collection}}/how-to-guides/clouds/cloud-hetzner.html){%endif%}{% if include.product != 'maestro' %}
 * [Linode](/{{page.collection}}/how-to-guides/clouds/cloud-linode.html){%endif%}{% if include.product != 'prepress' %}
@@ -81,7 +81,11 @@ You are free to **specify an alternative version** for most of these components 
 
 ### Nginx release
 
-Cloud 66 maintains our own self-contained release of Nginx which includes all of the modules listed below. For more info please read the [Releases page on our Github project](https://github.com/cloud66-oss/nginx-compiler/releases). 
+Cloud 66 maintains our own self-contained release of Nginx which includes all of the modules listed below. 
+
+The current NGINX version used by our custom release is **1.22.0**.
+
+For more info please read the [Releases page on our Github project](https://github.com/cloud66-oss/nginx-compiler/releases). 
 
 ### Nginx modules
 
