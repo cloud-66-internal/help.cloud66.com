@@ -1096,7 +1096,7 @@
 
 [[redirects]]
   from = "/legacy_docker/how-to-guides/deployment/shells/manage-stacks-chatops.html"
-  to = "/maestro/how-to-guides/deployment/"
+  to = "/maestro/how-to-guides/deployment/manage-stacks-chatops.html"
 
 [[redirects]]
   from = "/legacy_docker/how-to-guides/deployment/shells/zero-downtime-deploy.html"
@@ -1228,7 +1228,7 @@
 
 [[redirects]]
   from = "/maestro/how-to-guides/deployment/shells/manage-stacks-chatops.html"
-  to = "/maestro/how-to-guides/deployment/"
+  to = "/maestro/how-to-guides/deployment/manage-stacks-chatops.html"
 
 [[redirects]]
   from = "/maestro/resources/security-wall-of-fame.html"
