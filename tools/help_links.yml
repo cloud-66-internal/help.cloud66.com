@@ -1323,20 +1323,6 @@ maestro:
     page: maestro/how-to-guides/databases/shells/pg-replication-version.html
     page_anchors:
     - maestro-product-heading
-  post_deployment_snapshots:
-    page: maestro/how-to-guides/deployment/post-deployment-snapshots.html
-    page_anchors:
-    - aws-ec2
-    - cost-implications
-    - digitalocean
-    - enabling-server-snapshots-at-account-level
-    - enabling-server-snapshots-per-application
-    - google-cloud
-    - how-server-snapshots-work
-    - how-to-enable-server-snapshots
-    - maestro-product-heading
-    - overview
-    - permissions-required
   postgis_installation:
     page: maestro/how-to-guides/databases/postgis-installation.html
     page_anchors:
@@ -1592,6 +1578,20 @@ maestro:
     - maestro-product-heading
     - overview
     - restart-criteria
+  server_snapshots:
+    page: maestro/how-to-guides/deployment/server-snapshots.html
+    page_anchors:
+    - aws-ec2
+    - cost-implications
+    - digitalocean
+    - enabling-server-snapshots-at-account-level
+    - enabling-server-snapshots-per-application
+    - google-cloud
+    - how-server-snapshots-work
+    - how-to-enable-server-snapshots
+    - maestro-product-heading
+    - overview
+    - permissions-required
   server_warning_no_communication:
     page: maestro/references/server-warning-no-communication.html
     page_anchors:
@@ -3240,20 +3240,6 @@ node:
     page: node/how-to-guides/databases/shells/pg-replication-version.html
     page_anchors:
     - node-product-heading
-  post_deployment_snapshots:
-    page: node/how-to-guides/deployment/post-deployment-snapshots.html
-    page_anchors:
-    - aws-ec2
-    - cost-implications
-    - digitalocean
-    - enabling-server-snapshots-at-account-level
-    - enabling-server-snapshots-per-application
-    - google-cloud
-    - how-server-snapshots-work
-    - how-to-enable-server-snapshots
-    - node-product-heading
-    - overview
-    - permissions-required
   postgis_installation:
     page: node/how-to-guides/databases/shells/postgis-installation.html
     page_anchors:
@@ -3453,6 +3439,20 @@ node:
     - is-this-important-do-i-need-immediate-action
     - ive-restarted-but-i-still-see-the-notification
     - node-product-heading
+  server_snapshots:
+    page: node/how-to-guides/deployment/server-snapshots.html
+    page_anchors:
+    - aws-ec2
+    - cost-implications
+    - digitalocean
+    - enabling-server-snapshots-at-account-level
+    - enabling-server-snapshots-per-application
+    - google-cloud
+    - how-server-snapshots-work
+    - how-to-enable-server-snapshots
+    - node-product-heading
+    - overview
+    - permissions-required
   server_warning_no_communication:
     page: node/references/server-warning-no-communication.html
     page_anchors:
@@ -5731,20 +5731,6 @@ rails:
     page: rails/how-to-guides/databases/shells/pg-replication-version.html
     page_anchors:
     - rails-product-heading
-  post_deployment_snapshots:
-    page: rails/how-to-guides/deployment/post-deployment-snapshots.html
-    page_anchors:
-    - aws-ec2
-    - cost-implications
-    - digitalocean
-    - enabling-server-snapshots-at-account-level
-    - enabling-server-snapshots-per-application
-    - google-cloud
-    - how-server-snapshots-work
-    - how-to-enable-server-snapshots
-    - overview
-    - permissions-required
-    - rails-product-heading
   postgis_installation:
     page: rails/how-to-guides/databases/shells/postgis-installation.html
     page_anchors:
@@ -6046,6 +6032,20 @@ rails:
     - how-does-cloud-66-determine-my-server-needs-a-restart
     - is-this-important-do-i-need-immediate-action
     - ive-restarted-but-i-still-see-the-notification
+    - rails-product-heading
+  server_snapshots:
+    page: rails/how-to-guides/deployment/server-snapshots.html
+    page_anchors:
+    - aws-ec2
+    - cost-implications
+    - digitalocean
+    - enabling-server-snapshots-at-account-level
+    - enabling-server-snapshots-per-application
+    - google-cloud
+    - how-server-snapshots-work
+    - how-to-enable-server-snapshots
+    - overview
+    - permissions-required
     - rails-product-heading
   server_warning_no_communication:
     page: rails/references/server-warning-no-communication.html
