@@ -62,6 +62,24 @@ $ bundle install
 
 You should commit your code again after doing this.
 
+## "You have already activated X…" error
+
+If you see an error like this during deployment, or in your application’s logs viewed on the server or via LiveLogs: 
+
+```yaml
+Could not be loaded...You have already activated (…) but your Gemfile requires (…)
+```
+…this usually means that you have upgraded your Rails / Rack version and it now conflicts with the gems you have specified in your `Gemfile` (i.e. the new framework version requires a newer version of the gem).
+
+The simplest way to fix this is:
+
+1. Check what the default version of that gem is for the version of Rails / Rack that you have installed (you can usually find this on the [Ruby Gems](https://rubygems.org/) site)
+2. Edit your `Gemfile` locally to update the current version specified for that gem to the new default version 
+3. Run `bundle install` locally to generate a new `Gemfile.lock` file
+4. Test that this runs locally
+5. Commit and push your changes
+6. Redeploy your application
+
 ## Process or migration timeouts
 
 If a deployment depends on a process to finish running - particularly data or file migrations - it's possible for that process to timeout. This can happen (rarely) with the Ruby [asset precompile process](/rails/how-to-guides/deployment/enable-disable-asset-pipeline.html), for example. 
