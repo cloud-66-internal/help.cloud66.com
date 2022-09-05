@@ -56,22 +56,19 @@ You are free to **specify an alternative version** for most of these components 
 <th>Default version</th></thead>
 
 <tr><td>Docker</td><td>20.10.x</td></tr>
-<tr><td>ElasticSearch</td><td>7.16.1</td></tr>
+<tr><td>ElasticSearch</td><td>7.17.x</td></tr>
 <tr><td>GlusterFS</td><td>8.5</td></tr>
-<tr><td>Gotty</td><td>1.0.0</td></tr>
-<tr><td>Kubernetes</td><td>1.22.x</td></tr>
+<tr><td>Kubernetes</td><td>1.23.x</td></tr>
 <tr><td>MongoDB</td><td>4.4.x</td></tr>
 <tr><td>MySQL</td><td>8.0</td></tr>
 <tr><td>Nginx</td><td>We deploy a custom release of Nginx. <a href="#nginx-release">See below</a> for details.</td></tr>
-<tr><td>Phusion Passenger</td><td>6.0.10</td></tr>
-<tr><td>Passenger Enterprise</td><td>6.0.10</td></tr>
+<tr><td>Phusion Passenger</td><td>6.0.14</td></tr>
+<tr><td>Passenger Enterprise</td><td>6.0.14</td></tr>
 <tr><td>PostGIS</td><td>3.1</td></tr>
 <tr><td>PostgreSQL</td><td>14</td></tr>
-<tr><td>Rails*</td><td>All versions from 2.6.3 and up</td></tr>
+<tr><td>Rails*</td><td>All versions</td></tr>
 <tr><td>Redis</td><td>6.2.6</td></tr>
-<tr><td>Ruby</td><td>3.1.1</td></tr>
-<tr><td>Stack</td><td>1.4.8</td></tr>
-<tr><td>Weave</td><td>2.6.2</td></tr>
+<tr><td>Ruby</td><td>All versions</td></tr>
 </table>
 
 \* We **don't** install a default version of Rails - the version installed is based on the requirements of your application. Versions earlier than 2.6.3 *may* work but have some compatibility issues with Ubuntu 18.04 and 20.04.
@@ -83,7 +80,7 @@ You are free to **specify an alternative version** for most of these components 
 
 Cloud 66 maintains our own self-contained release of Nginx which includes all of the modules listed below. 
 
-The current NGINX version used by our custom release is **1.22.0**.
+The current NGINX version used by our custom release is **1.23.x**.
 
 For more info please read the [Releases page on our Github project](https://github.com/cloud66-oss/nginx-compiler/releases). 
 
