@@ -1,24 +1,27 @@
 ---
 layout: post
 template: one-col
-title:  "How to upgrade clusters without downtime"
+title:  "How to upgrade Maestro clusters"
 categories: how-to-guides/build-and-config
 order: 30
-lead: How to upgrade Kubernetes clusters without downtime
+lead: How to upgrade Kubernetes clusters on Maestro
 permalink: /:collection/:path:output_ext
 ---
 
-## Overview 
+## Overview
 
-It’s possible to upgrade both major and minor versions of Kubernetes running on your cluster without any downtime if you follow the instructions below. 
+There are two strategies for upgrading the version of Kubernetes running on your Maestro cluster:
+
+- **Without downtime**: you swap out current servers individually for ones running newer versions until the entire cluster is updated - see the [respective section](#upgrading-your-cluster-without-downtime) below for instructions.
+- **With downtime**: we update your entire cluster in parallel - this is much faster, but will bring down the entire cluster for a period of time - see the [respective section](#upgrading-with-downtime) below for instructions
+
+## Upgrading your cluster without downtime
+
+It’s possible to upgrade both major and minor versions of Kubernetes running on your cluster without any downtime. This upgrade method revolves around scaling up new servers and swapping them out with the current servers (which are then decommissioned). As such it’s important to prepare thoroughly to avoid any possible downtime.
 
 <div class="notice notice-warning"><p markdown="1">
 Never step up more than one major version level at a time - instead run this process multiple times.
 </p></div>
-
-## Preparing for the upgrade
-
-This upgrade method revolves around scaling up new servers and swapping them out with the current servers (which are then decommissioned). As such it’s important to prepare thoroughly to avoid any possible downtime. 
 
 ### Check your current version
 
@@ -61,7 +64,7 @@ docker:
 
 Take careful note of the type, capacity and number of cluster servers - both nodes and masters. You will need to replicate this setup to fully upgrade your cluster.
 
-## Upgrading your cluster
+### Upgrade your cluster
 
 1. Ensure your Manifest is updated to the NEXT major version of Kubernetes (**don’t** jump more than one major version)
 2. Scale up sufficient new Kubernetes servers via your Dashboard (click the *Servers* tab and then the *+ Scale up Kubernetes* button) 
