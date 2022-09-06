@@ -657,9 +657,26 @@ maestro:
     - overview
     - passing-parameters-to-a-job
     - using-parameters
+  dockerfile_for_django:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-django.html
+    page_anchors:
+    - adding-a-dockerfile-to-your-repo
+    - maestro-product-heading
+    - overview
+    - writing-a-custom-dockerfile-for-django
+    - writing-your-own-dockerfile
+  dockerfile_for_express:
+    page: maestro/how-to-guides/dockerfiles/dockerfile-for-express.html
+    page_anchors:
+    - adding-a-dockerfile-to-your-repo
+    - maestro-product-heading
+    - overview
+    - writing-a-custom-dockerfile-for-express
+    - writing-your-own-dockerfile
   dockerfile_for_node:
     page: maestro/how-to-guides/dockerfiles/dockerfile-for-node.html
     page_anchors:
+    - adding-a-dockerfile-to-your-repo
     - default-nodejs-dockerfile
     - maestro-product-heading
     - overview
@@ -667,6 +684,7 @@ maestro:
   dockerfile_for_php:
     page: maestro/how-to-guides/dockerfiles/dockerfile-for-php.html
     page_anchors:
+    - adding-a-dockerfile-to-your-repo
     - default-php-dockerfile
     - maestro-product-heading
     - overview
@@ -674,6 +692,7 @@ maestro:
   dockerfile_for_ruby:
     page: maestro/how-to-guides/dockerfiles/dockerfile-for-ruby.html
     page_anchors:
+    - adding-a-dockerfile-to-your-repo
     - default-rails-dockerfile
     - maestro-product-heading
     - overview
@@ -2094,6 +2113,17 @@ maestro:
     page: maestro/how-to-guides/databases/shells/uninstall-mysql.html
     page_anchors:
     - maestro-product-heading
+  upgrading_cluster:
+    page: maestro/how-to-guides/build-and-config/upgrading-cluster.html
+    page_anchors:
+    - assess-your-current-server-capacity
+    - check-your-current-version
+    - maestro-product-heading
+    - overview
+    - update-your-manifest
+    - upgrade-your-cluster
+    - upgrading-with-downtime
+    - upgrading-your-cluster-without-downtime
   using_application_private_networks:
     page: maestro/how-to-guides/security/using-application-private-networks.html
     page_anchors:
@@ -2186,6 +2216,7 @@ maestro:
   writing_a_dockerfile:
     page: maestro/how-to-guides/dockerfiles/writing-a-dockerfile.html
     page_anchors:
+    - adding-a-dockerfile-to-your-repo
     - caching--build-speed
     - how-to-guides-by-framework
     - important-dockerfile-principles
@@ -6455,6 +6486,7 @@ rails:
     - problems-with-application-components
     - process-or-migration-timeouts
     - rails-product-heading
+    - you-have-already-activated-x-error
   troubleshooting_server_connection:
     page: rails/how-to-guides/deployment/troubleshooting-server-connection.html
     page_anchors:
