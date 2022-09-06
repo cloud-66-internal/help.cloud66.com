@@ -15,6 +15,10 @@ If we detect that your application uses Django we will suggest a default [Docke
 
 Before following this guide, we recommend getting acquainted with [the basics of the Docker platform](https://docs.docker.com/get-started/overview/). Because you’re using Maestro, most of the Docker tasks and processes described will be completely automated, but it is useful to understand why a Dockerfile is necessary and what it does.
 
+## Adding a Dockerfile to your repo
+
+A `Dockerfile` is essentially a plaintext file with no file extension that you add to the root of your repository. If for some reason you can’t have it in the root, you can specify this in your Cloud 66 [service config](/maestro/how-to-guides/dockerfiles/writing-a-dockerfile.html#putting-a-dockerfile-in-a-sub-directory).
+
 ## Writing a custom Dockerfile for Django
 
 This is a typical example of the kind of Dockerfile we will suggest for Django apps that do not already have one. We will only use `latest` if we cannot detect the version of Python required by your application. 

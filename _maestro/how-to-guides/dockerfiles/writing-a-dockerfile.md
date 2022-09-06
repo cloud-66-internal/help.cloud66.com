@@ -18,6 +18,10 @@ The "build" process uses the set of instructions in the Dockerfile to build up a
 
 If you don't have a Dockerfile in your repo, we will analyze your code and suggest a Dockerfile for your app. If that file is unsuitable, use one of the guides below to write your own.
 
+## Adding a Dockerfile to your repo
+
+A `Dockerfile` is essentially a plaintext file with no file extension that you add to the root of your repository. If for some reason you can’t have it in the root, you can specify this in your Cloud 66 [service config](/maestro/how-to-guides/dockerfiles/writing-a-dockerfile.html#putting-a-dockerfile-in-a-sub-directory).
+
 ## How-To Guides by framework
 
 Click on the link for your app's language or framework for a detailed guide on writing your own Dockerfile:
