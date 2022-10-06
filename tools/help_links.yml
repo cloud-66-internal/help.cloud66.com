@@ -1864,13 +1864,14 @@ maestro:
     - application-users
     - assigning-application-roles-to-a-user
     - creating-and-editing-roles
+    - creating-and-managing-groups
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
     - maestro-product-heading
+    - overview
     - switch-organizations
     - user-roles-and-permissions
-    - using-team-accounts
   technical_specifications:
     page: maestro/resources/technical-specifications.html
     page_anchors:
@@ -3686,13 +3687,14 @@ node:
     - application-users
     - assigning-application-roles-to-a-user
     - creating-and-editing-roles
+    - creating-and-managing-groups
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
     - node-product-heading
+    - overview
     - switch-organizations
     - user-roles-and-permissions
-    - using-team-accounts
   technical_specifications:
     page: node/resources/technical-specifications.html
     page_anchors:
@@ -4452,13 +4454,14 @@ prepress:
     - application-users
     - assigning-application-roles-to-a-user
     - creating-and-editing-roles
+    - creating-and-managing-groups
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
+    - overview
     - prepress-product-heading
     - switch-organizations
     - user-roles-and-permissions
-    - using-team-accounts
   technical_specifications:
     page: prepress/policies-specifications/technical-specifications.html
     page_anchors:
@@ -6308,13 +6311,14 @@ rails:
     - application-users
     - assigning-application-roles-to-a-user
     - creating-and-editing-roles
+    - creating-and-managing-groups
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
+    - overview
     - rails-product-heading
     - switch-organizations
     - user-roles-and-permissions
-    - using-team-accounts
   technical_specifications:
     page: rails/resources/technical-specifications.html
     page_anchors:
@@ -7259,13 +7263,14 @@ skycap:
     - application-users
     - assigning-application-roles-to-a-user
     - creating-and-editing-roles
+    - creating-and-managing-groups
     - deleting-user-accounts--teams
     - finance-users
     - leave-a-team
+    - overview
     - skycap-product-heading
     - switch-organizations
     - user-roles-and-permissions
-    - using-team-accounts
   the_basics_index:
     page: skycap/the-basics/index.html
     page_anchors:
