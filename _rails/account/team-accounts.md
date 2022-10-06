@@ -1,7 +1,7 @@
 ---
 layout: post
 template: one-col
-title: Using team accounts
+title: Managing teams and groups
 categories: account
 order: 4
 lead: "Managing users, roles and permissions for your Cloud 66 account"
