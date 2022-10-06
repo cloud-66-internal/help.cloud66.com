@@ -1,5 +1,5 @@
 
-## Using team accounts
+## Overview
 
 Adding new users to your Cloud 66 account is a great way to work in a team, and access rights can be fine-tuned per application. Access levels range from no privileges on an application to full administrative privileges.
 
@@ -165,6 +165,20 @@ To delete teams:
 
 1. Follow steps 1 - 3 above
 2. Click the red *remove* icon next to the names of the teams you wish to delete
+
+## Creating and managing Groups
+
+Groups allow you to create subsets of users within a team. This is useful for setting some users’ access tokens to expire within a specified time period. To add a Group:
+
+- Open Account Settings
+- Click on Groups in the Collaboration panel
+- Click the *+ Add Group* button (top right of the main panel)
+- Name the the Group and add a description if needed
+- Select the members of the team to add to the Group
+- Set the expiry time for their access tokens (optional - leaving it empty will set tokens to never expire)
+- Click Create Group
+
+You can also edit Groups by clicking on their names in the list, or delete them by clicking the trashcan icon next to their names and confirming the deletion.
 
 ## Switch organizations
 
