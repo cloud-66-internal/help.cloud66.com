@@ -5,7 +5,7 @@ Adding new users to your Cloud 66 account is a great way to work in a team, and 
 
 ## User roles and permissions
 
-The account administrator is the only user who can invite other members and change access rights for these members (unless this privilege is granted to another user). There are two types of users - _Finance users_ and _Application (stack) users_.
+The account administrator is the only user who can invite other members and change access rights for these members (unless this privilege is granted to another user). There are three types of users - _Finance users_, _Application (stack) users_ and _Service Accounts_ (please read our separate guide on [Service Accounts](/{{page.collection}}/account/service-accounts.html)).
 
 ### Finance users
 
@@ -40,7 +40,8 @@ To set these permissions for a user:
 
 1. Log into your Cloud 66 Dashboard
 2. Click your avatar and then *Account Settings*
-3. Click *Teams*
+3. Click *Teams* (under *Collaboration*)
+4. Click *Manage Team Members* 
 4. Click the edit icon next to the user in question
 5. Check or uncheck permissions as needed
 6. Click Save Changes 
@@ -72,7 +73,7 @@ The Administrator role has permissions to everything and the other default roles
 | Edit App |  |  | ✅ | ✅ | ✅ |
 | Shell to Servers |  |  |  | ✅ | ✅ |
 | Delete App |  |  |  |  | ✅ |
-| App Admin |  |  |  |  |  |
+| App Admin |  |  |  |  | ✅ |
 | View service.yml | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Edit service.yml |  |  | ✅ | ✅ | ✅ |
 | View manifest.yml | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -90,13 +91,13 @@ The Administrator role has permissions to everything and the other default roles
 | Edit App Info |  |  | ✅ | ✅ | ✅ |
 | View Deploy History | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Revert Deployment |  |  | ✅ | ✅ | ✅ |
-| Edit Notification Channels |  |  |  |  |  |
+| Edit Notification Channels |  |  |  |  | ✅ |
 | View Live Logs | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Remove Add-ins |  |  | ✅ | ✅ | ✅ |
 | Edit Stack Settings |  |  | ✅ | ✅ | ✅ |
 | Scale Stack |  |  | ✅ | ✅ | ✅ |
 | Download SSH Key |  |  |  | ✅ | ✅ |
-| Download SSL Cert |  |  |  |  |  |
+| Download SSL Cert |  |  |  |  | ✅ |
 | Manage Containers |  |  |  |  | ✅ |
 | Access APN |  |  | ✅ | ✅ | ✅ |
 {: .table .table-bordered .table-striped}
