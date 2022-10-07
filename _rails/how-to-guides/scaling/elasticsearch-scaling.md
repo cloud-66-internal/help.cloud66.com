@@ -10,6 +10,8 @@ tags: ["Elasticsearch"]
 permalink: /:collection/:path:output_ext
 ---
 
+#### Note
+<div class="notice"><p>This guide assumes that you have used the <a href="/rails/how-to-guides/add-ins/elasticsearch.html">Cloud 66 Add-in for Elasticsearch</a>. If you have configured the service manually then this will not apply</p></div>
 
 You can scale your Elasticsearch cluster through the Cloud 66 dashboard on the Elasticsearch server group page.
 
@@ -18,6 +20,12 @@ Elasticsearch scaling works by splitting your **indices** into **shards**, and p
 You specify the number of shards for individual indices when creating them, and can dynamically change the number of replicas with the API. 
 
 By moving primary and replica shards to different nodes, Elasticsearch achieves both data reduncancy and improved performance.
+
+## Resizing Elasticsearch servers
+
+When Cloud 66 provisions an Elasticsearch server, we configure its resource usage (such as memory) to fit the server size you initially choose. If you later change the size of that server, it can cause issues with Elasticsearch - particularly if you are reducing the capacity of the server. As such **we do not recommend resizing existing servers**. 
+
+Instead of changing the size of the current server we recommend provisioning a new server with the desired capacity and then swapping it out with the existing one.
 
 
 ## General recommendations
