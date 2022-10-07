@@ -33,6 +33,26 @@ You can also force all the members of your Cloud 66 account to use 2FA. To do th
 
 This will oblige all team members to set up 2FA before they are able to access the team's Cloud 66 account.
 
+## Advanced Protection Level
+
+Advanced Protection Level (APL) allows you to set the conditions under which 2FA will be checked when team members log into the Cloud 66 Dashboard (UI). By default APL will only issue 2FA challenges when a login appears to be irregular - for example from an unknown location or device. However you can set the system to check more or less frequently as required.
+
+There are three levels available, in ascending order of security:
+
+- **Relax** - the most permissive - reduces the likelihood of 2FA challenges
+- **Normal** - the default setting - a balance between security and convenience
+- **Strict** - users are presented with 2FA challenges whenever they log in
+
+### Changing your APL settings
+
+To set your APL:
+
+1. Log into Cloud 66 and visit Account Settings (click your avatar at the top right of the page)
+2. Click *Login & Security* 
+3. Scroll down to **Account Protection Level**
+4. Choose a level and click *Save*
+
+
 ## Adding a physical FIDO2 security key
 
 Physical security keys add another layer of security to your account, making it even harder for anyone to gain unauthorised access. 
