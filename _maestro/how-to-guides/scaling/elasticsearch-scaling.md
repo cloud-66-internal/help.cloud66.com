@@ -26,6 +26,12 @@ You specify the number of shards for individual indices when creating them, and 
 
 By moving primary and replica shards to different nodes, Elasticsearch achieves both data redundancy and improved performance.
 
+## Resizing Elasticsearch servers
+
+When Cloud 66 provisions an Elasticsearch server, we configure its resource usage (such as memory) to fit the server size you initially choose. If you later change the size of that server, it can cause issues with Elasticsearch - particularly if you are reducing the capacity of the server. As such **we do not recommend resizing existing servers**. 
+
+Instead of changing the size of the current server we recommend provisioning a new server with the desired capacity and then swapping it out with the existing one.
+
 ## General recommendations
 
 - **It is preferable to scale to three or more servers.** This is because that in order to avoid a [split brain](https://en.wikipedia.org/wiki/Split-brain_(computing)), there must be a majority of the master eligible nodes present for the cluster to be active and elect a master node. For two nodes this number is two, so the loss of connectivity between the nodes for whatever reason will render the cluster inoperable until connectivity is restored.
