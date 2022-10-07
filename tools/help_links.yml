@@ -2049,6 +2049,8 @@ maestro:
     page: maestro/account/two-factor-authentication.html
     page_anchors:
     - adding-a-physical-fido2-security-key
+    - advanced-protection-level
+    - changing-your-apl-settings
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
@@ -3861,6 +3863,8 @@ node:
     page: node/account/two-factor-authentication.html
     page_anchors:
     - adding-a-physical-fido2-security-key
+    - advanced-protection-level
+    - changing-your-apl-settings
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
@@ -4498,6 +4502,8 @@ prepress:
     page: prepress/account/two-factor-authentication.html
     page_anchors:
     - adding-a-physical-fido2-security-key
+    - advanced-protection-level
+    - changing-your-apl-settings
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
@@ -6512,6 +6518,8 @@ rails:
     page: rails/account/two-factor-authentication.html
     page_anchors:
     - adding-a-physical-fido2-security-key
+    - advanced-protection-level
+    - changing-your-apl-settings
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
@@ -7417,6 +7425,8 @@ skycap:
     page: skycap/account/two-factor-authentication.html
     page_anchors:
     - adding-a-physical-fido2-security-key
+    - advanced-protection-level
+    - changing-your-apl-settings
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
