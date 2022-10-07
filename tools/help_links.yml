@@ -714,6 +714,7 @@ maestro:
     page_anchors:
     - general-recommendations
     - maestro-product-heading
+    - resizing-elasticsearch-servers
   env_vars:
     page: maestro/tutorials/env-vars.html
     page_anchors:
@@ -954,6 +955,7 @@ maestro:
   image_repository:
     page: maestro/how-to-guides/build-and-config/image-repository.html
     page_anchors:
+    - connecting-to-google-image-registries
     - connecting-to-private-repositories
     - connecting-to-public-repositories
     - maestro-product-heading
@@ -2755,6 +2757,7 @@ node:
     page_anchors:
     - general-recommendations
     - node-product-heading
+    - resizing-elasticsearch-servers
   env_vars:
     page: node/tutorials/env-vars.html
     page_anchors:
@@ -5132,6 +5135,7 @@ rails:
     page_anchors:
     - general-recommendations
     - rails-product-heading
+    - resizing-elasticsearch-servers
   enable_disable_asset_pipeline:
     page: rails/how-to-guides/deployment/enable-disable-asset-pipeline.html
     page_anchors:
@@ -5988,7 +5992,6 @@ rails:
     - database-servers
     - delete-protection
     - horizontal-scaling
-    - note
     - process-servers
     - rails-product-heading
     - vertical-scaling

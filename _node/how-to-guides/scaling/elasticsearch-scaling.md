@@ -18,6 +18,12 @@ You specify the number of shards for individual indices when creating them, and 
 
 By moving primary and replica shards to different nodes, Elasticsearch achieves both data reduncancy and improved performance.
 
+## Resizing Elasticsearch servers
+
+When Cloud 66 provisions an Elasticsearch server, we configure its resource usage (such as memory) to fit the server size you initially choose. If you later change the size of that server, it can cause issues with Elasticsearch - particularly if you are reducing the capacity of the server. As such **we do not recommend resizing existing servers**. 
+
+Instead of changing the size of the current server we recommend provisioning a new server with the desired capacity and then swapping it out with the existing one.
+
 
 ## General recommendations
 
