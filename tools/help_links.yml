@@ -954,6 +954,7 @@ maestro:
   image_repository:
     page: maestro/how-to-guides/build-and-config/image-repository.html
     page_anchors:
+    - connecting-to-google-image-registries
     - connecting-to-private-repositories
     - connecting-to-public-repositories
     - maestro-product-heading
