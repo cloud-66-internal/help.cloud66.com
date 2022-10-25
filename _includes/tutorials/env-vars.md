@@ -53,7 +53,7 @@ Prepress applications have a default env var named `CLOUD66_SITE_URL`. This is t
 This variable is available during your application's build process. 
 {% endif %}
 
-For a full list of environment variables available in your application, visit the _Environment variables_ link in the right sidebar of your Application Overview. If you don't currently have an application, the environment variables available to you are shown after your code analysis.
+For a full list of environment variables available in your application, click the ⚙️*Application Settings link in the right sidebar of your Application Overview and then click Environment Variables. If you don't currently have an application, the environment variables available to you are shown after your code analysis.
 
 ## Assign env-vars for deployment
 
@@ -71,15 +71,22 @@ If your application relies on specific environment variables to complete the dep
 
 ## Assign env-vars after app build
 
-You can also set environment variables on an existing application by visiting the _Environment variables_ link in the right sidebar of your Application Overview. Once you click _Save_, these variables will be propagated to all your servers automatically, ready for your use.
+You can set environment variables on an existing application:
+
+1. Log into your [Cloud 66 Dashboard](https://app.cloud66.com/dashboard)
+2. Click on your application
+3. Click on ⚙️*Application Settings* in the right-hand panel
+4. Click on *Environment Variables* in the sub-nav that opens
+5. Make the changes required and then click *Save Changes*
+
+When you click _Save Changes_, these variables will be propagated to all your servers automatically, ready for your use.
 
 Be aware of the following while assigning environment variables:
 
 #### Environment variables are not escaped
 
 However, they are always wrapped in double quotes (e.g. 
-"ENV_VAR"
-) so you can use them with multi-line variables like SSH keys.
+"ENV_VAR") so you can use them with multi-line variables like SSH keys.
 
 #### Some environment variables cannot be modified
 

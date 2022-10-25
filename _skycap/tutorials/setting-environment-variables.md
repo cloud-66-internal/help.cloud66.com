@@ -45,9 +45,10 @@ To achieve this, we need to four things:
 To add our variable, we:
 
 1. Open your [Cloud 66 dashboard](https://app.cloud66.com/dashboard) and click on the *Hello World* application
-2. Click on *Environment Variables* in the right-hand panel
-3. Add the key name `DEV_PORT` and the value `80`
-4. Click *Save Changes*
+2. Click on ⚙️*Application Settings* in the right-hand panel
+3. Click on *Environment Variables* in the sub-nav that opens
+4. Add the key name `DEV_PORT` and the value `80`
+5. Click *Save Changes*
 
 <img src="/assets/skycap/tutorial-env-variable-add.gif" alt="Screencast of process of adding a custom variable">
 
