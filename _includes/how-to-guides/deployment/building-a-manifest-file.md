@@ -19,7 +19,7 @@ The `.cloud66` folder must in the root of your source code & repo.
 In Maestro there are two opportunities to edit your manifest file:
 
 * After your application code has been analyzed (but before you deploy it) by using the _advanced_ tab.
-* After your application has been deployed, by clicking on *Configuration Files* and then the *Manifest* tab in the Dashboard
+* After your application has been deployed, by clicking on *Application Settings* &rar; *Configuration Files* and then the *Manifest* tab in the Dashboard
 
 {% endif %}
 
@@ -28,7 +28,7 @@ In Maestro there are two opportunities to edit your manifest file:
 In Cloud 66 for Node, there are two opportunities to edit your manifest file:
 
 * After your application code has been analyzed (but before you deploy it) by using the _advanced_ tab.
-* After your application has been deployed, by clicking on *Configuration Files* and then the *Manifest* tab in the Dashboard
+* After your application has been deployed, by clicking on *Application Settings* &rar; *Configuration Files* and then the *Manifest* tab in the Dashboard
 
 {% endif %}
 

@@ -5,7 +5,7 @@ Applications deployed with Cloud 66 use [Nginx](https://nginx.com) as their web 
 ## Editing Nginx configurations
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Configuration files*  in the **Application** panel on the right of the screen.
+2. Click on *Application Settings* &rar; *Configuration files*  in the **Application** panel on the right of the screen.
 3. Click on the *NGINX* tab at the top of the main panel 
 4. Follow the [CustomConfig instructions](/{{page.collection}}/tutorials/custom-config.html) to customize the configuration.
 
