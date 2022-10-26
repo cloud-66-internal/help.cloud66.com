@@ -61,9 +61,10 @@ Once your variables are set, *Save changes* and continue to deployment.
 You can also assign environment variables to an application that has already been built and/or deployed.
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Configuration* in the **Application** panel on the right of the screen
-3. Add or update the variables as required
-4. Save and redeploy
+2. Click on ⚙️*Application Settings* in the right-hand panel
+3. Click on *Environment Variables* in the sub-nav that opens
+4. Add or update the variables as required
+5. Save and redeploy
 
 Be aware of the following while assigning environment variables:
 
