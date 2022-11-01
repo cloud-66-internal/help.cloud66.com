@@ -18,12 +18,13 @@ To add a load balancer to your application:
 
 You can now watch the logs, as usual to see the progress of the process. Depending on which cloud provider you use, this load balancer will be set up differently:
 
-- **Amazon AWS**: [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/)
-- **DigitalOcean**: HAProxy
-- **Google Cloud Engine**: [Forwarding rules, target pools & health checks](https://developers.google.com/compute/docs/load-balancing/)
-- **Linode**: [NodeBalancer](https://www.linode.com/nodebalancers/)
-- **Microsoft Azure**: [TrafficManager](https://docs.microsoft.com/en-us/azure/traffic-manager/)
-- **Rackspace**: [Rackspace Load Balancing](https://www.rackspace.com/)
+- Amazon AWS: [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/)
+- DigitalOcean: [HAProxy](http://haproxy.1wt.eu/)
+- Google Cloud Engine: [Forwarding rules, target pools & health checks](https://developers.google.com/compute/docs/load-balancing/)
+- Hetzner Cloud: [Load Balancers](https://docs.hetzner.com/cloud/load-balancers/overview)
+- Linode: [NodeBalancer](https://www.linode.com/nodebalancers/)
+- Microsoft Azure: [TrafficManager](https://msdn.microsoft.com/en-us/library/azure/hh744833.aspx)
+- Rackspace: [Rackspace Load Balancing](https://www.rackspace.com/cloud/load-balancing/)
 
 ### Automatic endpoint test
 

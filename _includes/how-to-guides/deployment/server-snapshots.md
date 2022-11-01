@@ -2,7 +2,7 @@
 
 Server Snapshots can make scaling your application (i.e. adding servers) significantly quicker. Instead of provisioning servers from scratch we save a “snapshot” of the server disk and use that as a base for your additional servers. 
 
-<div class="notice"><p markdown="1">Server Snapshots are only available for supported cloud providers - at the moment this includes **AWS**, **Google Cloud** and **DigitalOcean** </p></div>
+<div class="notice"><p markdown="1">Server Snapshots are only available for supported cloud providers - at the moment this includes **AWS**, **Google Cloud**, **Hetzner Cloud** and **DigitalOcean** </p></div>
 
 ## How to enable Server Snapshots
 
@@ -49,6 +49,10 @@ ec2:DescribeImages
 ec2:DescribeSnapshots
 ```
 
+### DigitalOcean
+
+DigitalOcean does not require additional permissions.
+
 ### Google Cloud
 
 ```yaml
@@ -57,9 +61,9 @@ compute.images.delete
 compute.images.create
 ```
 
-### DigitalOcean
+### Hetzner Cloud
 
-DigitalOcean does not require additional permissions
+Hetzner Cloud does not require additional permissions.
 
 ## How Server Snapshots work
 
