@@ -1,4 +1,4 @@
-You can automatically provision and deploy to [Hetzner Cloud](https://www.hetzner.com/cloud) servers in any supported location via Cloud 66. We also support Hetzner Cloud's VPC solution - [vSwitch](https://docs.hetzner.com/cloud/networks/connect-dedi-vswitch). 
+You can automatically provision and deploy to [Hetzner Cloud](https://www.hetzner.com/cloud) servers in any supported location via Cloud 66. We also support [Hetzner Cloud's VPC solution](https://docs.hetzner.com/cloud/networks/overview/).
 
 ## How to add your Hetzner API key to Cloud 66
 
@@ -24,7 +24,7 @@ You will be able to choose between API keys (and therefore between your Hetzner 
 
 ## Hetzner Virtual Private Cloud
 
-Cloud 66 supports Hetzner's vSwitch (VPC) feature. You can configure this via your [manifest file](/{{page.collection}}
+Cloud 66 supports Hetzner's VPC feature. You can configure this via your [manifest file](/{{page.collection}}
 /how-to-guides/deployment/building-a-manifest-file.html). 
 
 ## Support for older versions of Ubuntu
