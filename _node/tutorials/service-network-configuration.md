@@ -24,8 +24,8 @@ Before you start, please check you have the following:
 Let’s imagine that for some reason your application needs to use port 8080 rather than port 80 to serve traffic to the web. To achieve this we will need to override the default settings in Nginx. To do this:
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Configuration* in the **Application** panel on the right of the screen
-3. Click on the *Configuration Files* tab and then on the *NGINX* sub-tab
+2. Click on ⚙️*Application Settings* -> *Configuration Files* in the right-hand panel
+3. Click on the *NGINX* sub-tab
 4. Scroll through the configuration file until you find the `listen` and change the value from `80` to `8080`
 5. Click the green *Preview* button to parse your updated configuration
 6. Check the file, then add a commit message and click *Commit to Server*

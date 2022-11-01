@@ -16,8 +16,7 @@ You can find all the CustomConfig templates for your application by:
 
 1. Logging into your Cloud 66 Dashboard
 2. Clicking on your app to open the Overview 
-3. Clicking on *Configuration* in the right-hand column
-4. Clicking on the *Configuration Files* tab at the top of the main panel
+3. Clicking on *Application Settings* -> *Configuration Files*
 
 You will now see all your configuration files as sub-tabs (as well as your Manifest and other config files depending on your app's particular features).
 

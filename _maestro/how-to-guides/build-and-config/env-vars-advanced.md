@@ -18,7 +18,7 @@ This guide assumes you already know the basics of adding and editing environment
 
 Cloud 66 creates a number of default environment variables, which can be used in addition to those that you define. Depending on your application configuration, the environment variables available will differ.
 
-For a full list of environment variables available in your application, visit the *Environment Variables* link in the right sidebar of your Application Overview. If you don’t currently have an application, the environment variables available to you are shown after your code analysis.
+For a full list of environment variables available in your application, click on ⚙️*Application Settings* in the right-hand panel of your Application Overview and then click on *Environment Variables* in the sub-nav that opens. If you don’t currently have an application, the environment variables available to you are shown after your code analysis.
 
 ### Pre-defined environment variables
 
@@ -33,8 +33,9 @@ There are some also special variables that are predefined by Cloud 66:
 For a list of environment variables available in your application:
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Environment Variables* in the **Application** panel on the right of the screen
-3. The initial page displays all the *Editable* variables. You can see all the *Read Only* variables by clicking on that tab.
+2. Click on ⚙️*Application Settings* in the right-hand panel
+3. Click on *Environment Variables* in the sub-nav that opens
+4. The initial page displays all the *Editable* variables. You can see all the *Read Only* variables by clicking on that tab.
 
 ## Assigning environment variables
 
@@ -60,9 +61,10 @@ Once your variables are set, *Save changes* and continue to deployment.
 You can also assign environment variables to an application that has already been built and/or deployed.
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Configuration* in the **Application** panel on the right of the screen
-3. Add or update the variables as required
-4. Save and redeploy
+2. Click on ⚙️*Application Settings* in the right-hand panel
+3. Click on *Environment Variables* in the sub-nav that opens
+4. Add or update the variables as required
+5. Save and redeploy
 
 Be aware of the following while assigning environment variables:
 

@@ -35,7 +35,7 @@ In this example we're going to modify the standard Nginx configuration template 
 To access the Nginx template for your application:
 
 1. Open the Application Overview from your Dashboard
-2. Click on *Configuration files*  in the **Application** panel on the right of the screen
+2. Click on *Application Settings* &rar; *Configuration files*  in the **Application** panel on the right of the screen
 3. Click on the *NGINX* tab at the top of the **Configure Services** 
 
 We will now use the built-in text editor to make our change to the template:

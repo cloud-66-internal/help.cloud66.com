@@ -1,4 +1,6 @@
-You can use Cloud 66 to provision and deploy your code to servers in any Amazon Web Services (AWS) region. Cloud 66 supports both VPC and (for AWS accounts created before 2014) EC2-Classic. We also support reserved instances. To use a VPC, your account must conform with the [default VPC guidelines](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/default-vpc.html#launching-into).
+You can use Cloud 66 to provision and deploy your code to servers in any Amazon Web Services (AWS) region. Cloud 66 supports both VPC and (for AWS accounts created before 2014) EC2-Classic. We also support reserved instances. 
+
+To use a VPC, your account must conform with the [default VPC guidelines](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/default-vpc.html#launching-into).
 
 {% if include.product != 'prepress' %}
 #### Note

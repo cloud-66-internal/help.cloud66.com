@@ -38,11 +38,10 @@ You can enable or disable your WAF via your [Cloud 66 Dashboard](https://app.clo
 If you would like to apply custom rules to your WAF, you can do so by editing the ModSecurity CustomConfig file for that application. To do this:
 
 1. Open your application via your [Dashboard](https://app.cloud66.com/)
-2. Click on Configuration in the right-hand column
-3. Click on the *Configuration Files* tab at the top of the main panel 
-4. Click on *NGINX - ModSecurity* in the secondary tabs
-5. Edit the config as needed and then click the green *Preview* button
-6. Review the resulting (parsed) configuration template and, if it's correct, add a commit message and click *Commit to Server*.  
+2. Click on *Application Settings* -> *Configuration Files*
+3. Click on *NGINX - ModSecurity* in the tabs
+4. Edit the config as needed and then click the green *Preview* button
+5. Review the resulting (parsed) configuration template and, if it's correct, add a commit message and click *Commit to Server*.  
 
 This will immediately apply the new rule to your Nginx server, so we recommend testing the change in a non-production environment beforehand. 
 
@@ -68,10 +67,9 @@ If the rule-set you added does have "relevant configuration sections", you shoul
 This config file is automatically included (nested) in the main ModSecurity config file for your application, so you should treat it with the same level of caution. To edit your OWASP config file: 
 
 1. Open your application via your Dashboard
-2. Click on Configuration in the right-hand column
-3. Click on the *Configuration Files* tab at the top of the main panel 
-4. Click on *NGINX - OWASP* in the secondary tabs
-5. Edit the config as needed and then click the green *Preview* button
-6. Review the resulting (parsed) configuration template and, if it's correct, add a commit message and click *Commit to Server*.  
+2. Click on *Application Settings* -> *Configuration Files* 
+3. Click on *NGINX - OWASP* in the tabs
+4. Edit the config as needed and then click the green *Preview* button
+5. Review the resulting (parsed) configuration template and, if it's correct, add a commit message and click *Commit to Server*.  
 
 This will immediately apply the new rule to your Nginx server, so we recommend testing the change in a non-production environment beforehand.

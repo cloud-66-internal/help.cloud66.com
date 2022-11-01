@@ -32,11 +32,12 @@ Before you start, please check you have the following:
 To add a custom environment variable to your application:
 
 1. Open the Application Overview from your [Dashboard](https://app.cloud66.com/dashboard)
-2. Click on *Environment Variables*  in the **Application** panel on the right of the screen
-3. Scroll down to the **Your Custom Variables** section
-4. Add the key `FOO` and the value `BAR` (don't worry these are dummy entries and won't actually do anything)
-5. Click *Save Changes*
-6. New environment variables are only applied to your application server(s) when you deploy. Do that now by clicking the *Build / Deploy* button.
+2. Click on ⚙️*Application Settings* in the right-hand panel
+3. Click on *Environment Variables* in the sub-nav that opens
+4. Scroll down to the **Your Custom Variables** section
+5. Add the key `FOO` and the value `BAR` (don't worry these are dummy entries and won't actually do anything)
+6. Click *Save Changes*
+7. New environment variables are only applied to your application server(s) when you deploy. Do that now by clicking the *Build / Deploy* button.
 
 ### Testing your change
 
