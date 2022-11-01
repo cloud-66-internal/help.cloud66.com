@@ -49,7 +49,6 @@ Occasionally your service provider may have problems. You can check this by visi
 - Google Cloud ([Status page](https://status.cloud.google.com/), [Twitter](https://twitter.com/googlecloud))
 - Hetzner Cloud ([Status page](https://status.hetzner.com/))
 - Microsoft Azure ([Status page](https://status.azure.com/), [Twitter](https://twitter.com/azure))
-- Maxihost (Status page)
 - Linode ([Status page](http://status.linode.com/))
 - OVHcloud ([Status page](https://www.status-ovhcloud.com/))
 - Rackspace ([Status page](https://rackspace.service-now.com/system_status))

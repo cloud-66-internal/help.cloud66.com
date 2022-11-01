@@ -1,10 +1,10 @@
 ---
 layout: post
 template: one-col
-title: Maxihost
+title: Latitude.sh
 categories: how-to-guides/clouds
 order: 6
-lead: "Configuring Maxihost for use with Cloud 66"
+lead: "Configuring Latitude.sh for use with Cloud 66"
 legacy: false
 tags: ["operations"]
 permalink: /:collection/:path:output_ext

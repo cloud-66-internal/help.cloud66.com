@@ -12,9 +12,9 @@ Your servers are deployed with **Ubuntu 20.04 LTS**.
 * [Amazon Web Services](/{{page.collection}}/how-to-guides/clouds/cloud-aws.html)
 * [DigitalOcean](/{{page.collection}}/how-to-guides/clouds/cloud-do.html)
 * [Google Compute Engine](/{{page.collection}}/how-to-guides/clouds/cloud-gce.html){% if include.product != 'prepress' %}
-* [Hetzner Cloud](/{{page.collection}}/how-to-guides/clouds/cloud-hetzner.html){%endif%}{% if include.product != 'maestro' %}
+* [Hetzner Cloud](/{{page.collection}}/how-to-guides/clouds/cloud-hetzner.html)
+* [Latitude.sh](/{{page.collection}}/how-to-guides/clouds/cloud-maxihost.html){%endif%}{% if include.product != 'maestro' %}
 * [Linode](/{{page.collection}}/how-to-guides/clouds/cloud-linode.html){%endif%}{% if include.product != 'prepress' %}
-* [Maxihost](/{{page.collection}}/how-to-guides/clouds/cloud-maxihost.html)
 * [OVHcloud](/{{page.collection}}/how-to-guides/clouds/cloud-ovh.html){%endif%}
 * [Microsoft Azure](/{{page.collection}}/how-to-guides/clouds/cloud-azure.html){% if include.product != 'prepress' %}
 * [Rackspace](/{{page.collection}}/how-to-guides/clouds/cloud-rackspace.html)
