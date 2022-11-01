@@ -24,7 +24,7 @@ You will be able to choose between API keys (and therefore between your Hetzner 
 
 ## Hetzner Virtual Private Cloud
 
-Cloud 66 supports Hetzner's VPC feature. You can configure this via your [manifest file](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html). 
+Cloud 66 supports Hetzner's VPC feature. You can configure this via your [manifest file](/{{page.collection}}/quickstarts/getting-started-with-manifest.html). 
 
 ## Support for older versions of Ubuntu
 
