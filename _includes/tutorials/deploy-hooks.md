@@ -79,7 +79,7 @@ We're going to use the first method in our tutorial because it's quicker and sim
 To add the hook:
 
 1. Open the Application Overview from your Dashboard
-2. Click on *Configuration files*  in the **Application** panel on the right of the screen
+2. Click on *Application Settings* &rar; *Configuration files*  in the **Application** panel on the right of the screen
 3. Click on the *Deploy Hooks* tab at the top of the **Configure Services** 
 4. Copy and paste the example code above into the text area
 5. Click *Preview* and then check there are no errors in the parsed template file

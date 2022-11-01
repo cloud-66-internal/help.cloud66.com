@@ -34,7 +34,7 @@ To get started:
 To access the manifest file for any Node application:
 
 1. Navigate to the Application Overview for the app in question
-2. Click on *Configuration Files* in the right-hand panel
+2. Click on *Application Settings* -> *Configuration Files* in the right-hand panel
 3. Click on the *Manifest* tab at the top of the main panel
 
 You can now edit the text of your manifest file directly.

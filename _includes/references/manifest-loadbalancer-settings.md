@@ -230,6 +230,48 @@ load_balancer:
 ```
 ---
 
+## Hetzner Cloud Load Balancer
+
+You can use a manifest file to configure Hetzner Cloud Load Balancers deployed by Cloud 66.
+
+The following settings are available via the Manifest file:
+
+<table class='table table-bordered table-striped'>
+<thead>
+  <tr>
+    <th width="34%">Option</th>
+    <th width="16%">Applied on</th>
+    <th>Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><code>balance</code></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The load balancing strategy. Valid values: <code>round_robin</code> or <code>least_connections</code></td>
+  </tr>
+  <tr>
+    <td><code>httpchk</code></td>
+        <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
+    <td>The URL visited to <a href="/{{page.collection}}/how-to-guides/add-ins/load-balancer.html#automatic-endpoint-test">check your server health</a></td>
+  </tr>
+  <tr>
+    <td><code>wait_after_adding_servers</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our <a href="/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag">in-depth guide on configuration lag</a> for more details.</td>
+  </tr>
+  <tr>
+    <td><code>wait_after_removing_servers</code></td>
+    <td><div class="tooltip">Redeploy &#9432;<span class="tooltiptext">Changes to this setting will be applied when you next deploy your application</span></div></td>
+    <td>The time (in seconds) we will wait after adding a server back to the load balancer before we begin routing traffic to that server. Read our <a href="/{{page.collection}}/how-to-guides/deployment/parallel-deployment.html#coping-with-load-balancer-configuration-lag">in-depth guide on configuration lag</a> for more details.</td>
+  </tr>
+</tbody>
+</table>
+
+Refer to the [Hetzner documentation](https://docs.hetzner.com/cloud/load-balancers/overview) for more detail on these settings.
+
+---
+
 ## Linode Nodebalancer
 
 You can use a manifest file to configure Linode Nodebalancers deployed by Cloud 66.

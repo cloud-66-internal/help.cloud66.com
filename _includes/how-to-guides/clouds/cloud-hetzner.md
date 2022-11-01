@@ -1,4 +1,4 @@
-You can automatically provision and deploy to [Hetzner Cloud ](https://www.hetzner.com/cloud)servers in any supported location via Cloud 66. 
+You can automatically provision and deploy to [Hetzner Cloud](https://www.hetzner.com/cloud) servers in any supported location via Cloud 66. We also support [Hetzner Cloud's VPC solution](https://docs.hetzner.com/cloud/networks/overview/).
 
 ## How to add your Hetzner API key to Cloud 66
 
@@ -21,6 +21,10 @@ You will be able to choose between API keys (and therefore between your Hetzner 
 
 #### Custom disk sizes aren't supported
 <div class="notice"><p>Hetzner Cloud does not allow custom disk sizes for new instances. As such any disk size specified in your configuration files or via the Dashboard will be ignored by Hetzner.</p></div>
+
+## Hetzner Virtual Private Cloud
+
+Cloud 66 supports Hetzner's VPC feature. You can configure this via your [manifest file](/{{page.collection}}/quickstarts/getting-started-with-manifest.html). 
 
 ## Support for older versions of Ubuntu
 

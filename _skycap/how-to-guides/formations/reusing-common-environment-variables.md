@@ -49,9 +49,10 @@ To add a set of environment variables to a Stencil in our Hello World applicatio
 To add our variables, we:
 
 1. Open your [Cloud 66 dashboard](https://app.cloud66.com/dashboard) and click on the *Hello World* application
-2. Click on *Environment Variables* in the right-hand panel
-3. Add at least four new dummy Key Value pairs (for best results make them unique and memorable)
-4. Click *Save Changes*
+2. Click on ⚙️*Application Settings* in the right-hand panel
+3. Click on *Environment Variables* in the sub-nav that opens
+4. Add at least four new dummy Key Value pairs (for best results make them unique and memorable)
+5. Click *Save Changes*
 
 (If you need more help, follow our [tutorial](/skycap/tutorials/setting-environment-variables.html#adding-a-custom-variable
 ) on the subject)

@@ -29,8 +29,8 @@ For a full list of available options, see the [table](#service-configuration-opt
 There are three ways to directly edit your `service.yml` file:
 
 1. While you're **building** an application, by clicking on the *Advanced* tab. 
-2. For **existing** apps, by visiting your **Application Overview**, clicking *Configuration* in the right-hand panel and then clicking the *Configuration Files* tab.
-3. By editing your apps **services** or **images** and clicking the *YAML* tab (note that this only edits the portion of the file related to that component)
+2. For **existing** apps, by visiting your **Application Overview**, clicking *Application Settings* -> *Configuration Files* in the right-hand panel.
+3. By editing your apps **services** or **images** and clicking the *YAML* tab (note that this only edits the portion of the file related to that component).
 
 ## Service configuration examples
 
@@ -56,8 +56,7 @@ databases:
 To edit this file: 
 
 1. Open the **Application Overview** from the [Dashboard](https://app.cloud66.com/dashboard).
-2. Click on *Configuration* in the right-hand panel
-3. Click on the the *Configuration Files* tab
+2. Click on *Application Settings* -> *Configuration Files* in the right-hand panel
 
 To add https access, you would modify the *ports* sub-section under the *demo-app* section of *services*, adding `https: 443` on a new line.
 

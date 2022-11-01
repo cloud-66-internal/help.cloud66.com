@@ -21,11 +21,10 @@ Deploy hooks for a Maestro application are managed via the Dashboard. The hooks 
 To add or edit hooks:
 
 1. Open the Application Overview from your Dashboard
-2. Click on *Configuration files* in the **Application** panel on the right of the screen
-3. Click on the *Deploy Hooks* tab at the top of the **Configure Services**
-4. Make your edits
-5. Click *Preview* and check there are no errors
-6. Add a commit message and click *Commit to server*
+2. Click on ⚙️*Application Settings* -> *Deploy Hooks* in the right-hand panel
+3. Make your edits
+4. Click *Preview* and check there are no errors
+5. Add a commit message and click *Commit to server*
 
 {% endif %}
 

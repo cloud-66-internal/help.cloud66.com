@@ -293,6 +293,7 @@ maestro:
     page_anchors:
     - cloud-66-tag-propagation
     - external-links
+    - hetzner-virtual-private-cloud
     - how-to-add-your-hetzner-api-key-to-cloud-66
     - maestro-product-heading
     - support-for-older-versions-of-ubuntu
@@ -1140,6 +1141,7 @@ maestro:
     - example-yaml-for-rackspace-load-balancer
     - gce-load-balancer
     - haproxy
+    - hetzner-cloud-load-balancer
     - key-to-table-headings
     - linode-nodebalancer
     - maestro-product-heading
@@ -1608,6 +1610,7 @@ maestro:
     - enabling-server-snapshots-at-account-level
     - enabling-server-snapshots-per-application
     - google-cloud
+    - hetzner-cloud
     - how-server-snapshots-work
     - how-to-enable-server-snapshots
     - maestro-product-heading
@@ -2049,6 +2052,8 @@ maestro:
     page: maestro/account/two-factor-authentication.html
     page_anchors:
     - adding-a-physical-fido2-security-key
+    - advanced-protection-level
+    - changing-your-apl-settings
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
@@ -2481,6 +2486,7 @@ node:
     page_anchors:
     - cloud-66-tag-propagation
     - external-links
+    - hetzner-virtual-private-cloud
     - how-to-add-your-hetzner-api-key-to-cloud-66
     - node-product-heading
     - support-for-older-versions-of-ubuntu
@@ -3086,6 +3092,7 @@ node:
     - example-yaml-for-rackspace-load-balancer
     - gce-load-balancer
     - haproxy
+    - hetzner-cloud-load-balancer
     - key-to-table-headings
     - linode-nodebalancer
     - more-on-manifest-files
@@ -3483,6 +3490,7 @@ node:
     - enabling-server-snapshots-at-account-level
     - enabling-server-snapshots-per-application
     - google-cloud
+    - hetzner-cloud
     - how-server-snapshots-work
     - how-to-enable-server-snapshots
     - node-product-heading
@@ -3861,6 +3869,8 @@ node:
     page: node/account/two-factor-authentication.html
     page_anchors:
     - adding-a-physical-fido2-security-key
+    - advanced-protection-level
+    - changing-your-apl-settings
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
@@ -4498,6 +4508,8 @@ prepress:
     page: prepress/account/two-factor-authentication.html
     page_anchors:
     - adding-a-physical-fido2-security-key
+    - advanced-protection-level
+    - changing-your-apl-settings
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
@@ -4837,6 +4849,7 @@ rails:
     page_anchors:
     - cloud-66-tag-propagation
     - external-links
+    - hetzner-virtual-private-cloud
     - how-to-add-your-hetzner-api-key-to-cloud-66
     - rails-product-heading
     - support-for-older-versions-of-ubuntu
@@ -5520,6 +5533,7 @@ rails:
     - example-yaml-for-rackspace-load-balancer
     - gce-load-balancer
     - haproxy
+    - hetzner-cloud-load-balancer
     - key-to-table-headings
     - linode-nodebalancer
     - more-on-manifest-files
@@ -6079,6 +6093,7 @@ rails:
     - enabling-server-snapshots-at-account-level
     - enabling-server-snapshots-per-application
     - google-cloud
+    - hetzner-cloud
     - how-server-snapshots-work
     - how-to-enable-server-snapshots
     - overview
@@ -6512,6 +6527,8 @@ rails:
     page: rails/account/two-factor-authentication.html
     page_anchors:
     - adding-a-physical-fido2-security-key
+    - advanced-protection-level
+    - changing-your-apl-settings
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device
@@ -7417,6 +7434,8 @@ skycap:
     page: skycap/account/two-factor-authentication.html
     page_anchors:
     - adding-a-physical-fido2-security-key
+    - advanced-protection-level
+    - changing-your-apl-settings
     - enabling-2fa-on-your-account
     - enforcing-2fa-for-your-team
     - if-youre-using-a-usb-based-device

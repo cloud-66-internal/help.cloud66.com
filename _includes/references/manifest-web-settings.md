@@ -121,8 +121,8 @@ Specifies whether your servers should communicate over <code>private</code> or <
   <tr>
     <td><code>vpc_id</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td><b>ID</b> or <b>name</b> of the AWS VPC in which you would like to create your servers. Note that you must provide subnet_id for all servers in your application.</td>
-    <td>AWS</td>
+    <td><b>ID</b> or <b>name</b> of the VPC in which you would like to create your servers. AWS users must provide subnet_id for all servers in your application.</td>
+    <td>AWS, Hetzner</td>
   </tr>
   <tr>
     <td><code>weave_version</code> <br/>(Maestro V1 only)</td>
@@ -569,11 +569,11 @@ Specifies whether your servers should communicate over <code>private</code> or <
     <td>The name of the Virtual Network in which you would like to create your servers.</td>
     <td>Azure</td>
   </tr>
-  <tr>
+  <tr>AWS users must provide subnet_id for all servers in an application.
     <td><code>vpc_id</code></td>
     <td><div class="tooltip">Build-only &#9432;<span class="tooltiptext">This setting only applies when the app is first built (or cloned) or when new servers are added.</span></div></td>
-    <td><b>ID</b> or <b>name</b> of the AWS VPC in which you would like to create your servers. Note that you must provide subnet_id for all servers in your application.</td>
-    <td>AWS</td>
+    <td><b>ID</b> or <b>name</b> of the VPC in which you would like to create your servers. AWS users must provide subnet_id for all servers in an application.</td>
+    <td>AWS, Hetzner</td>
   </tr>
 </tbody>
 </table>
@@ -581,7 +581,7 @@ Specifies whether your servers should communicate over <code>private</code> or <
 
 #### Important
 <div class="notice notice-warning">
-<p>In order to use a <em>vpc_id</em>, you must provide <em>subnet_id</em> for all servers used by your application.</p>
+<p>In order to use a <em>vpc_id</em> with AWS, you must provide <em>subnet_id</em> for all servers used by your application.</p>
 </div>
 
 ### Example YAML for Rails
