@@ -301,7 +301,7 @@ maestro:
   cloud_maxihost:
     page: maestro/how-to-guides/clouds/cloud-maxihost.html
     page_anchors:
-    - how-to-add-your-maxihost-api-key-to-cloud-66
+    - how-to-add-your-latitudesh-api-key-to-cloud-66
     - maestro-product-heading
     - support-for-older-versions-of-ubuntu
   cloud_ovh:
@@ -2502,7 +2502,7 @@ node:
   cloud_maxihost:
     page: node/how-to-guides/clouds/cloud-maxihost.html
     page_anchors:
-    - how-to-add-your-maxihost-api-key-to-cloud-66
+    - how-to-add-your-latitudesh-api-key-to-cloud-66
     - node-product-heading
     - support-for-older-versions-of-ubuntu
   cloud_ovh:
@@ -3183,10 +3183,6 @@ node:
     - note
   multi_region_stack:
     page: node/how-to-guides/deployment/shells/multi-region-stack.html
-    page_anchors:
-    - node-product-heading
-  multi_tenancy:
-    page: node/how-to-guides/deployment/multi-tenancy.html
     page_anchors:
     - node-product-heading
   network_configuration:
@@ -4865,7 +4861,7 @@ rails:
   cloud_maxihost:
     page: rails/how-to-guides/clouds/cloud-maxihost.html
     page_anchors:
-    - how-to-add-your-maxihost-api-key-to-cloud-66
+    - how-to-add-your-latitudesh-api-key-to-cloud-66
     - rails-product-heading
     - support-for-older-versions-of-ubuntu
   cloud_ovh:
@@ -5654,12 +5650,6 @@ rails:
   multi_region_stack:
     page: rails/how-to-guides/deployment/shells/multi-region-stack.html
     page_anchors:
-    - rails-product-heading
-  multi_tenancy:
-    page: rails/how-to-guides/deployment/multi-tenancy.html
-    page_anchors:
-    - multiple-services
-    - overview
     - rails-product-heading
   network_configuration:
     page: rails/references/network-configuration.html
