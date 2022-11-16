@@ -64,3 +64,18 @@ To see a full list of the environment variables currently in use by your applica
 This will show you a list of the **editable** env_vars - to see a list of r**ead only** variables, click the tab at the top of the panel. 
 
 If your gem needs any custom environment variable you can set them in a number of ways. Please read [our full guide to env-vars](https://help.cloud66.com/rails/tutorials/env-vars.html) to learn more.
+
+## How to install password protected gems
+
+If your application relies on a password protected gem (such as Sidekiq Pro) you can configure your app to fetch the gem securely without adding your password to your repo. This will fix any `unable to install` errors for those gems.
+
+To do this:
+
+1. Add a new [environment variable](/rails/tutorials/env-vars.html) to your application with an appropriate name (e.g `SIDEKIQ_USER_PASS`) - the value of the variable must use the format `username:password` 
+2. Update your Gemfile to use the ENV VAR you created above when it pulls the gem. For example: 
+
+```ruby
+gem "sidekiq-pro", source: "https://#{ENV['SIDEKIQ_USER_PASS']}@gems.contribsys.com"
+```
+
+Finally, redeploy your application and the gem will be fetched correctly.
