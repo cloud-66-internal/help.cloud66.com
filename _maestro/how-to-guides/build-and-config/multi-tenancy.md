@@ -12,7 +12,7 @@ permalink: /:collection/:path:output_ext
 
 ## Overview
 
-Sometimes you need to run multiple applications on the same server. This could be because none of those applications has enough load to justify having a dedicated server for itself or it could be because all the apps on the server share many resources. Whatever the reason, you can achieve multi-tenancy for your application with Maestro.
+Sometimes you need to run multiple applications on the same server. This could be because none of those applications has enough load to justify having a dedicated server for itself or it could be because all the apps on the server share many resources. Whatever the reason, you can achieve multi-tenancy for your application with Maestro. 
 
 ## Multiple Services
 
