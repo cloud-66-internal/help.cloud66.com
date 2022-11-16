@@ -5491,6 +5491,7 @@ rails:
     - cloud-66-permissions
     - configuration-of-gems
     - environment-variables
+    - how-to-install-password-protected-gems
     - linux-users-and-permissions
     - overview
     - permissions-errors
