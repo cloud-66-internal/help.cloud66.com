@@ -2,4 +2,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://help.cloud66.com/sitemap.xml
+Sitemap: https://help.cloud66.com/sitemap.xml 
