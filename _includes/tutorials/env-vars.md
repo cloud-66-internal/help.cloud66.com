@@ -127,6 +127,19 @@ MY_KEY_1=_env(WEB_ADDRESS_EXT:192.168.0.1)
 
 You can add environment variables to your manifest files, either globally or per environment. Read our [manifest guide](/{{page.collection}}/how-to-guides/deployment/building-a-manifest-file.html#environment-variables) for more details.
 
+### Referencing env vars in service.yml commands
+
+You can use environment variables in `service.yml` commands, as long as the variables are wrapped in `$( )`. For example:
+
+```yml
+services:
+ my_service:
+  image: my_image 
+  command: app_start -redis=$(REDIS_ADDRESS) 
+  ports:
+  - container: 80
+```
+
 
 ### Referencing other env vars on the same app
 
