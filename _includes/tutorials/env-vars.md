@@ -140,7 +140,6 @@ services:
   - container: 80
 ```
 
-
 ### Referencing other env vars on the same app
 
 This is useful when referencing an environment variable which you don't control such as a server IP address. To do this you can use:  
