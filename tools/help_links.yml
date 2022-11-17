@@ -746,6 +746,7 @@ maestro:
     - overview
     - pre-defined-environment-variables
     - rb-files
+    - referencing-env-vars-in-serviceyml-commands
     - referencing-existing-variables
     - syntax-examples
     - using-auto-generate
@@ -2776,6 +2777,7 @@ node:
     - node-product-heading
     - pre-defined-environment-variables
     - referencing-env-vars-in-manifest-files
+    - referencing-env-vars-in-serviceyml-commands
     - referencing-env-vars-on-other-apps
     - referencing-environment-variables
     - referencing-other-env-vars-on-the-same-app
@@ -4214,6 +4216,7 @@ prepress:
     - default-env-vars
     - prepress-product-heading
     - referencing-env-vars-in-manifest-files
+    - referencing-env-vars-in-serviceyml-commands
     - referencing-env-vars-on-other-apps
     - referencing-environment-variables
     - referencing-other-env-vars-on-the-same-app
@@ -5166,6 +5169,7 @@ rails:
     - pre-defined-environment-variables
     - rails-product-heading
     - referencing-env-vars-in-manifest-files
+    - referencing-env-vars-in-serviceyml-commands
     - referencing-env-vars-on-other-apps
     - referencing-environment-variables
     - referencing-other-env-vars-on-the-same-app
