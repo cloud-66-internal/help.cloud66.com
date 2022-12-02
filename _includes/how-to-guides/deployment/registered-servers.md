@@ -61,7 +61,7 @@ To add a server behind your gateway:
 - **Connection**: For security reasons, Cloud 66 only connects to your server using your secure keys on **port 22**.
 - **Sudo**: As Cloud 66 connects to your server and provisions applications from scratch, administrator permissions are sometimes necessary. Therefore our script creates a new user to use for deployment that is a member of the sudoers group and that does not require a password to invoke sudo.
 - **Bash**: We currently only support Bourne-again shell (Bash). The error `sh: n: source: not found` during deployment may arise if you are not using the Bash shell.
-- **CPU Architecture**: We only support deploying to 64-bit machines.
+- **CPU Architecture**: We only support deploying to x86 64-bit machines.
 - **Firewalls & security:** Cloud 66 needs the following (TCP) ports open to allow us to deploy and manage your application:
     - `22`
     - Port `3022` set to allow access from `159.89.253.143` (this IP is static)
